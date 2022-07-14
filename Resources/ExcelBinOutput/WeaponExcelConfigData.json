@@ -1153,6 +1153,51 @@
         "rankLevel": 4,
         "weaponBaseExp": 50000,
         "skillAffix": [
+            111417,
+            0
+        ],
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ],
+        "awakenTexture": "ART/Equip/AvatarEquip/Equip_Sword_Youtou/Equip_Sword_Youtou_OverrideTexture/Equip_Sword_Youtou_02_Tex_Diffuse",
+        "awakenLightMapTexture": "ART/Equip/AvatarEquip/Equip_Sword_Youtou/Equip_Sword_Youtou_OverrideTexture/Equip_Sword_Youtou_02_Tex_Lightmap",
+        "awakenIcon": "UI_EquipIcon_Sword_Youtou_Awaken",
+        "weaponPromoteId": 11417,
+        "storyId": 191416,
+        "awakenCosts": [],
+        "gachaCardNameHashSuffix": 1709216277,
+        "gachaCardNameHashPre": 189,
+        "enhanceRule": 1,
+        "destroyReturnMaterial": [
+            0
+        ],
+        "destroyReturnMaterialCount": [
+            0
+        ],
+        "initialLockState": 2,
+        "id": 11417,
+        "nameTextMapHash": 1012170803,
+        "descTextMapHash": 2752898277,
+        "icon": "UI_EquipIcon_Sword_Youtou",
+        "itemType": "ITEM_WEAPON",
+        "weight": 1,
+        "rank": 10,
+        "gadgetId": 50011416
+    },
+    {
+        "weaponType": "WEAPON_SWORD_ONE_HAND",
+        "rankLevel": 4,
+        "weaponBaseExp": 50000,
+        "skillAffix": [
             111419,
             0
         ],
@@ -2813,6 +2858,55 @@
     },
     {
         "weaponType": "WEAPON_CLAYMORE",
+        "rankLevel": 4,
+        "weaponBaseExp": 50000,
+        "skillAffix": [
+            112417,
+            0
+        ],
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.4010009765625,
+                "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.09000000357627869,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ],
+        "awakenTexture": "ART/Equip/AvatarEquip/Equip_Claymore_Maria/Equip_Claymore_Maria_OverrideTexture/Equip_Claymore_Maria_02_Tex_Diffuse",
+        "awakenLightMapTexture": "ART/Equip/AvatarEquip/Equip_Claymore_Maria/Equip_Claymore_Maria_OverrideTexture/Equip_Claymore_Maria_02_Tex_Lightmap",
+        "awakenIcon": "UI_EquipIcon_Claymore_Maria_Awaken",
+        "weaponPromoteId": 12417,
+        "storyId": 192416,
+        "awakenCosts": [
+            1000,
+            2000,
+            4000,
+            8000
+        ],
+        "gachaCardNameHashSuffix": 3929865943,
+        "gachaCardNameHashPre": 218,
+        "destroyReturnMaterial": [
+            0
+        ],
+        "destroyReturnMaterialCount": [
+            0
+        ],
+        "initialLockState": 2,
+        "id": 12417,
+        "nameTextMapHash": 2359799475,
+        "descTextMapHash": 4140001317,
+        "icon": "UI_EquipIcon_Claymore_Maria",
+        "itemType": "ITEM_WEAPON",
+        "weight": 1,
+        "rank": 10,
+        "gadgetId": 50012416
+    },
+    {
+        "weaponType": "WEAPON_CLAYMORE",
         "rankLevel": 5,
         "weaponBaseExp": 300000,
         "skillAffix": [
@@ -4081,6 +4175,55 @@
         ],
         "initialLockState": 2,
         "id": 13416,
+        "nameTextMapHash": 4122509083,
+        "descTextMapHash": 1730885565,
+        "icon": "UI_EquipIcon_Pole_Maria",
+        "itemType": "ITEM_WEAPON",
+        "weight": 1,
+        "rank": 10,
+        "gadgetId": 50013416
+    },
+    {
+        "weaponType": "WEAPON_POLE",
+        "rankLevel": 4,
+        "weaponBaseExp": 50000,
+        "skillAffix": [
+            113417,
+            0
+        ],
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.06869888305664,
+                "type": "GROW_CURVE_ATTACK_203"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.029999999329447746,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ],
+        "awakenTexture": "ART/Equip/AvatarEquip/Equip_Pole_Maria/Equip_Pole_Maria_OverrideTexture/Equip_Pole_Maria_02_Tex_Diffuse",
+        "awakenLightMapTexture": "ART/Equip/AvatarEquip/Equip_Pole_Maria/Equip_Pole_Maria_OverrideTexture/Equip_Pole_Maria_02_Tex_Lightmap",
+        "awakenIcon": "UI_EquipIcon_Pole_Maria_Awaken",
+        "weaponPromoteId": 13417,
+        "storyId": 193416,
+        "awakenCosts": [
+            1000,
+            2000,
+            4000,
+            8000
+        ],
+        "gachaCardNameHashSuffix": 1959921533,
+        "gachaCardNameHashPre": 68,
+        "destroyReturnMaterial": [
+            0
+        ],
+        "destroyReturnMaterialCount": [
+            0
+        ],
+        "initialLockState": 2,
+        "id": 13417,
         "nameTextMapHash": 4122509083,
         "descTextMapHash": 1730885565,
         "icon": "UI_EquipIcon_Pole_Maria",
@@ -5575,6 +5718,56 @@
         ],
         "initialLockState": 2,
         "id": 14415,
+        "nameTextMapHash": 2539208459,
+        "descTextMapHash": 4267791309,
+        "icon": "UI_EquipIcon_Catalyst_Jyanome",
+        "itemType": "ITEM_WEAPON",
+        "weight": 1,
+        "rank": 10,
+        "gadgetId": 50014415
+    },{
+        "weaponType": "WEAPON_CATALYST",
+        "rankLevel": 4,
+        "weaponBaseExp": 50000,
+        "skillAffix": [
+            114417,
+            0
+        ],
+        "awakenMaterial": 200109,
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ],
+        "awakenTexture": "ART/Equip/AvatarEquip/Equip_Catalyst_Jyanome/Equip_Catalyst_Jyanome_OverrideTexture/Equip_Catalyst_Jyanome_02_Tex_Diffuse",
+        "awakenLightMapTexture": "ART/Equip/AvatarEquip/Equip_Catalyst_Jyanome/Equip_Catalyst_Jyanome_OverrideTexture/Equip_Catalyst_Jyanome_02_Tex_Lightmap",
+        "awakenIcon": "UI_EquipIcon_Catalyst_Jyanome_Awaken",
+        "weaponPromoteId": 14417,
+        "storyId": 194415,
+        "awakenCosts": [
+            1000,
+            2000,
+            4000,
+            8000
+        ],
+        "gachaCardNameHashSuffix": 3039288770,
+        "gachaCardNameHashPre": 127,
+        "enhanceRule": 1,
+        "destroyReturnMaterial": [
+            0
+        ],
+        "destroyReturnMaterialCount": [
+            0
+        ],
+        "initialLockState": 2,
+        "id": 14417,
         "nameTextMapHash": 2539208459,
         "descTextMapHash": 4267791309,
         "icon": "UI_EquipIcon_Catalyst_Jyanome",
@@ -7090,7 +7283,105 @@
         "awakenTexture": "ART/Equip/AvatarEquip/Equip_Bow_Maria/Equip_Bow_Maria_OverrideTexture/Equip_Bow_Maria_02_Tex_Diffuse",
         "awakenLightMapTexture": "ART/Equip/AvatarEquip/Equip_Bow_Maria/Equip_Bow_Maria_OverrideTexture/Equip_Bow_Maria_02_Tex_Lightmap",
         "awakenIcon": "UI_EquipIcon_Bow_Maria_Awaken",
-        "weaponPromoteId": 15416,
+        "weaponPromoteId": 15418,
+        "storyId": 195416,
+        "awakenCosts": [
+            1000,
+            2000,
+            4000,
+            8000
+        ],
+        "gachaCardNameHashSuffix": 4164647758,
+        "gachaCardNameHashPre": 181,
+        "destroyReturnMaterial": [
+            0
+        ],
+        "destroyReturnMaterialCount": [
+            0
+        ],
+        "initialLockState": 2,
+        "id": 15418,
+        "nameTextMapHash": 1860795787,
+        "descTextMapHash": 3698523357,
+        "icon": "UI_EquipIcon_Bow_Maria",
+        "itemType": "ITEM_WEAPON",
+        "weight": 1,
+        "rank": 10,
+        "gadgetId": 50015416
+    },
+    {
+        "weaponType": "WEAPON_BOW",
+        "rankLevel": 4,
+        "weaponBaseExp": 50000,
+        "skillAffix": [
+            115417,
+            0
+        ],
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ],
+        "awakenTexture": "ART/Equip/AvatarEquip/Equip_Bow_Maria/Equip_Bow_Maria_OverrideTexture/Equip_Bow_Maria_02_Tex_Diffuse",
+        "awakenLightMapTexture": "ART/Equip/AvatarEquip/Equip_Bow_Maria/Equip_Bow_Maria_OverrideTexture/Equip_Bow_Maria_02_Tex_Lightmap",
+        "awakenIcon": "UI_EquipIcon_Bow_Maria_Awaken",
+        "weaponPromoteId": 15417,
+        "storyId": 195416,
+        "awakenCosts": [
+            1000,
+            2000,
+            4000,
+            8000
+        ],
+        "gachaCardNameHashSuffix": 4164647758,
+        "gachaCardNameHashPre": 181,
+        "destroyReturnMaterial": [
+            0
+        ],
+        "destroyReturnMaterialCount": [
+            0
+        ],
+        "initialLockState": 2,
+        "id": 15417,
+        "nameTextMapHash": 1860795787,
+        "descTextMapHash": 3698523357,
+        "icon": "UI_EquipIcon_Bow_Maria",
+        "itemType": "ITEM_WEAPON",
+        "weight": 1,
+        "rank": 10,
+        "gadgetId": 50015416
+    },
+    {
+        "weaponType": "WEAPON_BOW",
+        "rankLevel": 4,
+        "weaponBaseExp": 50000,
+        "skillAffix": [
+            115418,
+            0
+        ],
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 43.734901428222656,
+                "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+                "propType": "FIGHT_PROP_ATTACK_PERCENT",
+                "initValue": 0.05999999865889549,
+                "type": "GROW_CURVE_CRITICAL_201"
+            }
+        ],
+        "awakenTexture": "ART/Equip/AvatarEquip/Equip_Bow_Maria/Equip_Bow_Maria_OverrideTexture/Equip_Bow_Maria_02_Tex_Diffuse",
+        "awakenLightMapTexture": "ART/Equip/AvatarEquip/Equip_Bow_Maria/Equip_Bow_Maria_OverrideTexture/Equip_Bow_Maria_02_Tex_Lightmap",
+        "awakenIcon": "UI_EquipIcon_Bow_Maria_Awaken",
+        "weaponPromoteId": 15418,
         "storyId": 195416,
         "awakenCosts": [
             1000,
@@ -7476,6 +7767,55 @@
         ],
         "initialLockState": 1,
         "id": 15508,
+        "nameTextMapHash": 4230231107,
+        "descTextMapHash": 954648749,
+        "icon": "UI_EquipIcon_Bow_Kirin",
+        "itemType": "ITEM_WEAPON",
+        "weight": 1,
+        "rank": 10,
+        "gadgetId": 50015508
+    },
+    {
+        "weaponType": "WEAPON_BOW",
+        "rankLevel": 5,
+        "weaponBaseExp": 300000,
+        "skillAffix": [
+            115511,
+            0
+        ],
+        "weaponProp": [
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 44.33580017089844,
+                "type": "GROW_CURVE_ATTACK_304"
+            },
+            {
+                "propType": "FIGHT_PROP_CRITICAL_HURT",
+                "initValue": 0.19200000166893005,
+                "type": "GROW_CURVE_CRITICAL_301"
+            }
+        ],
+        "awakenTexture": "ART/Equip/AvatarEquip/Equip_Bow_Kirin/Equip_Bow_Kirin_OverrideTexture/Equip_Bow_Kirin_02_Tex_Diffuse",
+        "awakenLightMapTexture": "ART/Equip/AvatarEquip/Equip_Bow_Kirin/Equip_Bow_Kirin_OverrideTexture/Equip_Bow_Kirin_02_Tex_Lightmap",
+        "awakenIcon": "UI_EquipIcon_Bow_Kirin_Awaken",
+        "weaponPromoteId": 15511,
+        "storyId": 195508,
+        "awakenCosts": [
+            2000,
+            4000,
+            8000,
+            16000
+        ],
+        "gachaCardNameHashSuffix": 1498805863,
+        "gachaCardNameHashPre": 10,
+        "destroyReturnMaterial": [
+            0
+        ],
+        "destroyReturnMaterialCount": [
+            0
+        ],
+        "initialLockState": 1,
+        "id": 15511,
         "nameTextMapHash": 4230231107,
         "descTextMapHash": 954648749,
         "icon": "UI_EquipIcon_Bow_Kirin",
