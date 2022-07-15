@@ -6,7 +6,7 @@
         "SortOrder": 1,
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
         "descTextMapHash": 3632663572,
-        "modelPath": "Codex_Monster_Slime_Mid_Fire"
+        "modelPath": "Codex_Monster_Slime_MId_Fire"
     },
     {
         "Id": 20011301,
@@ -24,7 +24,7 @@
         "SortOrder": 3,
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
         "descTextMapHash": 2618661588,
-        "modelPath": "Codex_Monster_Slime_Mid_Water"
+        "modelPath": "Codex_Monster_Slime_MId_Water"
     },
     {
         "Id": 20011101,
@@ -42,7 +42,7 @@
         "SortOrder": 5,
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
         "descTextMapHash": 825096204,
-        "modelPath": "Codex_Monster_Slime_Mid_Wind"
+        "modelPath": "Codex_Monster_Slime_MId_Wind"
     },
     {
         "Id": 20010401,
@@ -60,7 +60,7 @@
         "SortOrder": 7,
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
         "descTextMapHash": 2404243964,
-        "modelPath": "Codex_Monster_Slime_Mid_Electric"
+        "modelPath": "Codex_Monster_Slime_MId_Electric"
     },
     {
         "Id": 20010601,
@@ -87,7 +87,7 @@
         "SortOrder": 10,
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
         "descTextMapHash": 783763292,
-        "modelPath": "Codex_Monster_Slime_Mid_Grass"
+        "modelPath": "Codex_Monster_Slime_MId_Grass"
     },
     {
         "Id": 20010201,
@@ -105,7 +105,7 @@
         "SortOrder": 12,
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
         "descTextMapHash": 1711786164,
-        "modelPath": "Codex_Monster_Slime_Mid_Ice"
+        "modelPath": "Codex_Monster_Slime_MId_Ice"
     },
     {
         "Id": 20010901,
@@ -124,7 +124,7 @@
         "SortOrder": 14,
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
         "descTextMapHash": 1145750372,
-        "modelPath": "Codex_Monster_Slime_Mid_Rock"
+        "modelPath": "Codex_Monster_Slime_MId_Rock"
     },
     {
         "Id": 20011501,
@@ -213,7 +213,7 @@
         "SortOrder": 42,
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
         "descTextMapHash": 1798076044,
-        "modelPath": "Codex_Monster_Fairfolk_Oceanid",
+        "modelPath": "Codex_Monster_Fairfolk_OceanId",
         "pushTipsCodexId": 60500026
     },
     {
@@ -265,6 +265,16 @@
         "descTextMapHash": 3971334884,
         "modelPath": "Codex_Monster_Sylph_Electric_01",
         "pushTipsCodexId": 60500048
+    },
+    {
+        "Id": 20060701,
+        "type": "CODEX_MONSTER",
+        "describeId": 607,
+        "SortOrder": 55,
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 3054306004,
+        "modelPath": "Codex_Monster_Sylph_Grass_01",
+        "pushTipsCodexId": 60500059
     },
     {
         "Id": 20060401,
@@ -851,7 +861,7 @@
         "subType": "CODEX_SUBTYPE_FATUI",
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
         "descTextMapHash": 1136311692,
-        "modelPath": "Codex_Monster_Fatuus_Maiden_Water",
+        "modelPath": "Codex_Monster_Fatuus_MaIden_Water",
         "pushTipsCodexId": 60500034
     },
     {
@@ -948,6 +958,28 @@
         "descTextMapHash": 780885388,
         "modelPath": "Codex_Monster_Apparatus_Perpetual",
         "pushTipsCodexId": 60500036
+    },
+    {
+        "Id": 24030201,
+        "type": "CODEX_MONSTER",
+        "describeId": 40302,
+        "SortOrder": 4031,
+        "subType": "CODEX_SUBTYPE_AUTOMATRON",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 4121540020,
+        "modelPath": "Codex_Monster_Gargoyle_Ground",
+        "pushTipsCodexId": 60500062
+    },
+    {
+        "Id": 24030101,
+        "type": "CODEX_MONSTER",
+        "describeId": 40301,
+        "SortOrder": 4032,
+        "subType": "CODEX_SUBTYPE_AUTOMATRON",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 2430809580,
+        "modelPath": "Codex_Monster_Gargoyle_Airborne",
+        "pushTipsCodexId": 60500063
     },
     {
         "Id": 25090101,
@@ -1186,6 +1218,89 @@
         "modelPath": "Codex_Monster_Samurai_Kairagi_Electric"
     },
     {
+        "Id": 25210101,
+        "type": "CODEX_MONSTER",
+        "describeId": 52101,
+        "SortOrder": 5024,
+        "subType": "CODEX_SUBTYPE_HUMAN",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 1578336260,
+        "modelPath": "Codex_Monster_Eremite_Female_Hatchet"
+    },
+    {
+        "Id": 25210201,
+        "type": "CODEX_MONSTER",
+        "describeId": 52102,
+        "SortOrder": 5025,
+        "subType": "CODEX_SUBTYPE_HUMAN",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 1774778268,
+        "modelPath": "Codex_Monster_Eremite_Male_Standard_Crossbow"
+    },
+    {
+        "Id": 25210301,
+        "type": "CODEX_MONSTER",
+        "describeId": 52103,
+        "SortOrder": 5026,
+        "subType": "CODEX_SUBTYPE_HUMAN",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 255350996,
+        "modelPath": "Codex_Monster_Eremite_Male_Standard_Pole"
+    },
+    {
+        "Id": 25210401,
+        "type": "CODEX_MONSTER",
+        "describeId": 52104,
+        "SortOrder": 5027,
+        "subType": "CODEX_SUBTYPE_HUMAN",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 983366940,
+        "modelPath": "Codex_Monster_Eremite_MuscleMan_Gloves"
+    },
+    {
+        "Id": 25210501,
+        "type": "CODEX_MONSTER",
+        "describeId": 52105,
+        "SortOrder": 5028,
+        "subType": "CODEX_SUBTYPE_HUMAN",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 3347785908,
+        "modelPath": "Codex_Monster_Eremite_MuscleMan_Simitar"
+    },
+    {
+        "Id": 25310101,
+        "type": "CODEX_MONSTER",
+        "describeId": 53101,
+        "SortOrder": 5029,
+        "subType": "CODEX_SUBTYPE_HUMAN",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 3875874876,
+        "modelPath": "Codex_Monster_Eremite_Female_Slim_PushDagger",
+        "pushTipsCodexId": 60500064
+    },
+    {
+        "Id": 25310201,
+        "type": "CODEX_MONSTER",
+        "describeId": 53102,
+        "SortOrder": 5030,
+        "subType": "CODEX_SUBTYPE_HUMAN",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 1253615596,
+        "modelPath": "Codex_Monster_Eremite_Male_Standard_Glaive",
+        "pushTipsCodexId": 60500065
+    },
+    {
+        "Id": 25310301,
+        "type": "CODEX_MONSTER",
+        "describeId": 53103,
+        "SortOrder": 5031,
+        "subType": "CODEX_SUBTYPE_HUMAN",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 875112844,
+        "modelPath": "Codex_Monster_Eremite_Male_Standard_Polearm",
+        "pushTipsCodexId": 60500066
+    },
+    {
         "Id": 26010201,
         "type": "CODEX_MONSTER",
         "describeId": 60102,
@@ -1225,6 +1340,17 @@
         "descTextMapHash": 630342340,
         "modelPath": "Codex_Monster_Regisvine_Fire",
         "pushTipsCodexId": 60500024
+    },
+    {
+        "Id": 26020301,
+        "type": "CODEX_MONSTER",
+        "describeId": 60203,
+        "SortOrder": 6014,
+        "subType": "CODEX_SUBTYPE_BEAST",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 581340876,
+        "modelPath": "Codex_Monster_Regisvine_Electric",
+        "pushTipsCodexId": 60500067
     },
     {
         "Id": 26020101,
@@ -1341,7 +1467,118 @@
         "subType": "CODEX_SUBTYPE_BEAST",
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
         "descTextMapHash": 3090106492,
-        "modelPath": "Codex_Monster_Fungus_Un_Gamma_Water"
+        "modelPath": "Codex_Monster_Fungus_Un_Gamma_Water",
+        "pushTipsCodexId": 60500060
+    },
+    {
+        "Id": 26090201,
+        "type": "CODEX_MONSTER",
+        "describeId": 60902,
+        "SortOrder": 6204,
+        "subType": "CODEX_SUBTYPE_BEAST",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 2438004076,
+        "modelPath": "Codex_Monster_Fungus_Un_Delta_Grass",
+        "pushTipsCodexId": 60500060
+    },
+    {
+        "Id": 26090401,
+        "type": "CODEX_MONSTER",
+        "describeId": 60904,
+        "SortOrder": 6206,
+        "subType": "CODEX_SUBTYPE_BEAST",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 2599145508,
+        "modelPath": "Codex_Monster_Fungus_Trois_Epsilon_Electric",
+        "pushTipsCodexId": 60500060
+    },
+    {
+        "Id": 26090501,
+        "type": "CODEX_MONSTER",
+        "describeId": 60905,
+        "SortOrder": 6207,
+        "subType": "CODEX_SUBTYPE_BEAST",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 2638302180,
+        "modelPath": "Codex_Monster_Fungus_Trois_Alpha_Ice",
+        "pushTipsCodexId": 60500060
+    },
+    {
+        "Id": 26090701,
+        "type": "CODEX_MONSTER",
+        "describeId": 60907,
+        "SortOrder": 6208,
+        "subType": "CODEX_SUBTYPE_BEAST",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 881726716,
+        "modelPath": "Codex_Monster_Fungus_Deux_Alpha_Fire",
+        "pushTipsCodexId": 60500060
+    },
+    {
+        "Id": 26090801,
+        "type": "CODEX_MONSTER",
+        "describeId": 60908,
+        "SortOrder": 6209,
+        "subType": "CODEX_SUBTYPE_BEAST",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 995907028,
+        "modelPath": "Codex_Monster_Fungus_Deux_Epsilon_Wind",
+        "pushTipsCodexId": 60500060
+    },
+    {
+        "Id": 26090901,
+        "type": "CODEX_MONSTER",
+        "describeId": 60909,
+        "SortOrder": 6211,
+        "subType": "CODEX_SUBTYPE_BEAST",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 3625713340,
+        "modelPath": "Codex_Monster_Fungus_Deux_Beta_Rock",
+        "pushTipsCodexId": 60500060
+    },
+    {
+        "Id": 26120301,
+        "type": "CODEX_MONSTER",
+        "describeId": 61203,
+        "SortOrder": 6212,
+        "subType": "CODEX_SUBTYPE_BEAST",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 2251298652,
+        "modelPath": "Codex_Monster_Fungus_Amanita_Du_Anudatta_Water",
+        "pushTipsCodexId": 60500060
+    },
+    {
+        "Id": 26120101,
+        "type": "CODEX_MONSTER",
+        "describeId": 61201,
+        "SortOrder": 6213,
+        "subType": "CODEX_SUBTYPE_BEAST",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 3177626116,
+        "modelPath": "Codex_Monster_Fungus_Amanita_Unu_Anudatta_Grass",
+        "pushTipsCodexId": 60500060
+    },
+    {
+        "Id": 26120201,
+        "type": "CODEX_MONSTER",
+        "describeId": 61202,
+        "SortOrder": 6214,
+        "subType": "CODEX_SUBTYPE_BEAST",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 3998939852,
+        "modelPath": "Codex_Monster_Fungus_Amanita_Unu_Svarita_Ice",
+        "pushTipsCodexId": 60500060
+    },
+    {
+        "Id": 26110101,
+        "type": "CODEX_MONSTER",
+        "describeId": 61101,
+        "SortOrder": 6216,
+        "subType": "CODEX_SUBTYPE_BEAST",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_KILL",
+        "descTextMapHash": 607377196,
+        "modelPath": "Codex_Monster_Fungus_Raptor",
+        "pushTipsCodexId": 60500061
     },
     {
         "Id": 29010101,
@@ -1440,7 +1677,7 @@
         "describeId": 28030301,
         "SortOrder": 10005,
         "subType": "CODEX_SUBTYPE_AVIARY",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 4010649780,
         "modelPath": "Codex_Animal_Pigeon_01"
     },
@@ -1449,7 +1686,7 @@
         "describeId": 28030302,
         "SortOrder": 10006,
         "subType": "CODEX_SUBTYPE_AVIARY",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3034101260,
         "modelPath": "Codex_Animal_Pigeon_02"
     },
@@ -1458,7 +1695,7 @@
         "describeId": 28030303,
         "SortOrder": 10007,
         "subType": "CODEX_SUBTYPE_AVIARY",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 377350284,
         "modelPath": "Codex_Animal_Pigeon_03"
     },
@@ -1467,7 +1704,7 @@
         "describeId": 28030304,
         "SortOrder": 10008,
         "subType": "CODEX_SUBTYPE_AVIARY",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3580989828,
         "modelPath": "Codex_Animal_Pigeon_04"
     },
@@ -1476,7 +1713,7 @@
         "describeId": 28030305,
         "SortOrder": 10009,
         "subType": "CODEX_SUBTYPE_AVIARY",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 4011950268,
         "modelPath": "Codex_Animal_Pigeon_05"
     },
@@ -1485,7 +1722,7 @@
         "describeId": 28030401,
         "SortOrder": 10010,
         "subType": "CODEX_SUBTYPE_AVIARY",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3267556180,
         "modelPath": "Codex_Animal_Tit_01"
     },
@@ -1494,7 +1731,7 @@
         "describeId": 28030402,
         "SortOrder": 10011,
         "subType": "CODEX_SUBTYPE_AVIARY",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3064809156,
         "modelPath": "Codex_Animal_Tit_02"
     },
@@ -1503,7 +1740,7 @@
         "describeId": 28030403,
         "SortOrder": 10012,
         "subType": "CODEX_SUBTYPE_AVIARY",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2887369468,
         "modelPath": "Codex_Animal_Tit_03"
     },
@@ -1512,7 +1749,7 @@
         "describeId": 28030404,
         "SortOrder": 10013,
         "subType": "CODEX_SUBTYPE_AVIARY",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3386843732,
         "modelPath": "Codex_Animal_Tit_04"
     },
@@ -1545,7 +1782,7 @@
         "describeId": 28030102,
         "SortOrder": 10018,
         "subType": "CODEX_SUBTYPE_AVIARY",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 686282284,
         "modelPath": "Codex_Animal_Crane_02"
     },
@@ -1554,16 +1791,25 @@
         "describeId": 28030306,
         "SortOrder": 10019,
         "subType": "CODEX_SUBTYPE_AVIARY",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 526707716,
         "modelPath": "Codex_Animal_Crow_01"
+    },
+    {
+        "Id": 28030313,
+        "describeId": 28030313,
+        "SortOrder": 10020,
+        "subType": "CODEX_SUBTYPE_AVIARY",
+        "FEBIEOGMDMF": "UNDEFINED",
+        "descTextMapHash": 3924720076,
+        "modelPath": "Codex_Animal_Pigeon_Beak"
     },
     {
         "Id": 28020101,
         "describeId": 28020101,
         "SortOrder": 11001,
         "subType": "CODEX_SUBTYPE_ANIMAL",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3163587340,
         "modelPath": "Codex_Animal_Fox_01"
     },
@@ -1572,7 +1818,7 @@
         "describeId": 28020102,
         "SortOrder": 11002,
         "subType": "CODEX_SUBTYPE_ANIMAL",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2713753684,
         "modelPath": "Codex_Animal_Fox_02"
     },
@@ -1582,7 +1828,7 @@
         "isSeenActive": true,
         "SortOrder": 11003,
         "subType": "CODEX_SUBTYPE_ANIMAL",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 1235860324,
         "modelPath": "Codex_Animal_Vulpes_01"
     },
@@ -1591,7 +1837,7 @@
         "describeId": 28020201,
         "SortOrder": 11004,
         "subType": "CODEX_SUBTYPE_ANIMAL",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 409299996,
         "modelPath": "Codex_Animal_Squirrel_01"
     },
@@ -1617,7 +1863,7 @@
         "describeId": 28020303,
         "SortOrder": 11007,
         "subType": "CODEX_SUBTYPE_ANIMAL",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2586620676,
         "modelPath": "Codex_Animal_Boar_02"
     },
@@ -1628,6 +1874,23 @@
         "subType": "CODEX_SUBTYPE_ANIMAL",
         "descTextMapHash": 3209357948,
         "modelPath": "Codex_Animal_Boar_03"
+    },
+    {
+        "Id": 28020314,
+        "describeId": 28020314,
+        "SortOrder": 11009,
+        "subType": "CODEX_SUBTYPE_ANIMAL",
+        "descTextMapHash": 3435351308,
+        "modelPath": "Codex_Animal_Boar_Grass_Small"
+    },
+    {
+        "Id": 28020313,
+        "describeId": 28020313,
+        "SortOrder": 11010,
+        "subType": "CODEX_SUBTYPE_ANIMAL",
+        "FEBIEOGMDMF": "UNDEFINED",
+        "descTextMapHash": 1916771356,
+        "modelPath": "Codex_Animal_Boar_Grass"
     },
     {
         "Id": 28020401,
@@ -1671,7 +1934,7 @@
         "isSeenActive": true,
         "SortOrder": 11015,
         "subType": "CODEX_SUBTYPE_ANIMAL",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2510531884,
         "modelPath": "Codex_Animal_Cat_01"
     },
@@ -1690,7 +1953,7 @@
         "isSeenActive": true,
         "SortOrder": 11017,
         "subType": "CODEX_SUBTYPE_ANIMAL",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 1364989956,
         "modelPath": "Codex_Animal_Cat_03"
     },
@@ -1735,7 +1998,7 @@
         "describeId": 28020601,
         "SortOrder": 11022,
         "subType": "CODEX_SUBTYPE_ANIMAL",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 168967340,
         "modelPath": "Codex_Animal_Marten_01"
     },
@@ -1744,7 +2007,7 @@
         "describeId": 28020602,
         "SortOrder": 11023,
         "subType": "CODEX_SUBTYPE_ANIMAL",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3077374988,
         "modelPath": "Codex_Animal_Marten_02"
     },
@@ -1753,7 +2016,7 @@
         "describeId": 28020603,
         "SortOrder": 11024,
         "subType": "CODEX_SUBTYPE_ANIMAL",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2471583364,
         "modelPath": "Codex_Animal_Marten_03"
     },
@@ -1762,7 +2025,7 @@
         "describeId": 28020605,
         "SortOrder": 11026,
         "subType": "CODEX_SUBTYPE_ANIMAL",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2748853220,
         "modelPath": "Codex_Animal_Marten_05"
     },
@@ -1800,6 +2063,30 @@
         "modelPath": "Codex_Animal_Inu_Tanuki_01"
     },
     {
+        "Id": 28060101,
+        "describeId": 28060101,
+        "SortOrder": 11031,
+        "subType": "CODEX_SUBTYPE_ANIMAL",
+        "descTextMapHash": 2621135756,
+        "modelPath": "Codex_Animal_Gator_01"
+    },
+    {
+        "Id": 28060201,
+        "describeId": 28060201,
+        "SortOrder": 11032,
+        "subType": "CODEX_SUBTYPE_ANIMAL",
+        "descTextMapHash": 1357052844,
+        "modelPath": "Codex_Animal_Panther_01"
+    },
+    {
+        "Id": 28060601,
+        "describeId": 28060601,
+        "SortOrder": 11036,
+        "subType": "CODEX_SUBTYPE_ANIMAL",
+        "descTextMapHash": 1160225108,
+        "modelPath": "Codex_Animal_Megamoth_Jungle"
+    },
+    {
         "Id": 28040101,
         "describeId": 28040101,
         "SortOrder": 12001,
@@ -1830,7 +2117,7 @@
         "SortOrder": 12004,
         "subType": "CODEX_SUBTYPE_FISH",
         "descTextMapHash": 1117684060,
-        "modelPath": "Codex_Animal_Fishable_Ray_Stellamarisidae_01"
+        "modelPath": "Codex_Animal_Fishable_Ray_StellamarisIdae_01"
     },
     {
         "Id": 28040201,
@@ -1893,7 +2180,7 @@
         "subType": "CODEX_SUBTYPE_FISH",
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
         "descTextMapHash": 4285796596,
-        "modelPath": "Codex_Animal_Fishable_Maritime_Aspidorhynchus_01"
+        "modelPath": "Codex_Animal_Fishable_Maritime_AspIdorhynchus_01"
     },
     {
         "Id": 28040302,
@@ -1902,7 +2189,7 @@
         "subType": "CODEX_SUBTYPE_FISH",
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
         "descTextMapHash": 1562063228,
-        "modelPath": "Codex_Animal_Fishable_Maritime_Aspidorhynchus_02"
+        "modelPath": "Codex_Animal_Fishable_Maritime_AspIdorhynchus_02"
     },
     {
         "Id": 28040303,
@@ -1911,7 +2198,7 @@
         "subType": "CODEX_SUBTYPE_FISH",
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
         "descTextMapHash": 3804970196,
-        "modelPath": "Codex_Animal_Fishable_Maritime_Aspidorhynchus_03"
+        "modelPath": "Codex_Animal_Fishable_Maritime_AspIdorhynchus_03"
     },
     {
         "Id": 28040304,
@@ -1920,7 +2207,7 @@
         "subType": "CODEX_SUBTYPE_FISH",
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
         "descTextMapHash": 584979076,
-        "modelPath": "Codex_Animal_Fishable_Maritime_Aspidorhynchus_04"
+        "modelPath": "Codex_Animal_Fishable_Maritime_AspIdorhynchus_04"
     },
     {
         "Id": 28040305,
@@ -1929,7 +2216,7 @@
         "subType": "CODEX_SUBTYPE_FISH",
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
         "descTextMapHash": 3520398868,
-        "modelPath": "Codex_Animal_Fishable_Maritime_Aspidorhynchus_05"
+        "modelPath": "Codex_Animal_Fishable_Maritime_AspIdorhynchus_05"
     },
     {
         "Id": 28040401,
@@ -2029,7 +2316,7 @@
         "subType": "CODEX_SUBTYPE_FISH",
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
         "descTextMapHash": 381072868,
-        "modelPath": "Codex_Animal_Fishable_Ray_Stellamarisidae_02"
+        "modelPath": "Codex_Animal_Fishable_Ray_StellamarisIdae_02"
     },
     {
         "Id": 28040702,
@@ -2038,14 +2325,68 @@
         "subType": "CODEX_SUBTYPE_FISH",
         "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
         "descTextMapHash": 3760543388,
-        "modelPath": "Codex_Animal_Fishable_Ray_Stellamarisidae_03"
+        "modelPath": "Codex_Animal_Fishable_Ray_StellamarisIdae_03"
+    },
+    {
+        "Id": 28040801,
+        "describeId": 28040801,
+        "SortOrder": 12224,
+        "subType": "CODEX_SUBTYPE_FISH",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
+        "descTextMapHash": 1339898548,
+        "modelPath": "Codex_Animal_Fishable_Maritime_Batdiodan_01"
+    },
+    {
+        "Id": 28040802,
+        "describeId": 28040802,
+        "SortOrder": 12225,
+        "subType": "CODEX_SUBTYPE_FISH",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
+        "descTextMapHash": 2720760900,
+        "modelPath": "Codex_Animal_Fishable_Maritime_Batdiodan_02"
+    },
+    {
+        "Id": 28040803,
+        "describeId": 28040803,
+        "SortOrder": 12226,
+        "subType": "CODEX_SUBTYPE_FISH",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
+        "descTextMapHash": 1306094332,
+        "modelPath": "Codex_Animal_Fishable_Maritime_Batdiodan_03"
+    },
+    {
+        "Id": 28040804,
+        "describeId": 28040804,
+        "SortOrder": 12227,
+        "subType": "CODEX_SUBTYPE_FISH",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
+        "descTextMapHash": 2682831020,
+        "modelPath": "Codex_Animal_Fishable_Maritime_Batdiodan_04"
+    },
+    {
+        "Id": 28040901,
+        "describeId": 28040901,
+        "SortOrder": 12228,
+        "subType": "CODEX_SUBTYPE_FISH",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
+        "descTextMapHash": 2665565348,
+        "modelPath": "Codex_Animal_Fishable_Maritime_Apsva_01"
+    },
+    {
+        "Id": 28040902,
+        "describeId": 28040902,
+        "SortOrder": 12229,
+        "subType": "CODEX_SUBTYPE_FISH",
+        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_FISH",
+        "descTextMapHash": 196319756,
+        "modelPath": "Codex_Animal_Fishable_Maritime_Apsva_02"
     },
     {
         "Id": 28050101,
         "describeId": 28050101,
         "SortOrder": 13003,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 1371898220,
         "modelPath": "Codex_Animal_Wisp_Wind"
     },
@@ -2054,16 +2395,25 @@
         "describeId": 28050104,
         "SortOrder": 13004,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 4188945588,
         "modelPath": "Codex_Animal_Wisp_Electric"
+    },
+    {
+        "Id": 28050106,
+        "describeId": 28050106,
+        "SortOrder": 13005,
+        "subType": "CODEX_SUBTYPE_CRITTER",
+        "FEBIEOGMDMF": "UNDEFINED",
+        "descTextMapHash": 1880886676,
+        "modelPath": "Codex_Animal_Wisp_Grass"
     },
     {
         "Id": 28050103,
         "describeId": 28050103,
         "SortOrder": 13006,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 1451015284,
         "modelPath": "Codex_Animal_Wisp_Ice"
     },
@@ -2072,7 +2422,7 @@
         "describeId": 28050102,
         "SortOrder": 13007,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2142925788,
         "modelPath": "Codex_Animal_Wisp_Rock"
     },
@@ -2082,7 +2432,7 @@
         "SortOrder": 13009,
         "showOnlyUnlocked": true,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2668560348,
         "modelPath": "Codex_Animal_Wisp_Tokoyo"
     },
@@ -2091,7 +2441,7 @@
         "describeId": 28010204,
         "SortOrder": 13010,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 1731277692,
         "modelPath": "Codex_Animal_Salamander_01"
     },
@@ -2100,7 +2450,7 @@
         "describeId": 28010205,
         "SortOrder": 13012,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3686681332,
         "modelPath": "Codex_Animal_Salamander_02"
     },
@@ -2109,7 +2459,7 @@
         "describeId": 28010206,
         "SortOrder": 13013,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2538996404,
         "modelPath": "Codex_Animal_Salamander_03"
     },
@@ -2118,7 +2468,7 @@
         "describeId": 28010301,
         "SortOrder": 13014,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3774147916,
         "modelPath": "Codex_Animal_Frog_01"
     },
@@ -2127,7 +2477,7 @@
         "describeId": 28010302,
         "SortOrder": 13015,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 1992168004,
         "modelPath": "Codex_Animal_Frog_02"
     },
@@ -2136,16 +2486,25 @@
         "describeId": 28010303,
         "SortOrder": 13016,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3856616956,
         "modelPath": "Codex_Animal_Frog_03"
+    },
+    {
+        "Id": 28010304,
+        "describeId": 28010304,
+        "SortOrder": 13017,
+        "subType": "CODEX_SUBTYPE_CRITTER",
+        "FEBIEOGMDMF": "UNDEFINED",
+        "descTextMapHash": 3617732812,
+        "modelPath": "Codex_Animal_Frog_04"
     },
     {
         "Id": 28010101,
         "describeId": 28010101,
         "SortOrder": 13018,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3098191524,
         "modelPath": "Codex_Animal_Crab_01"
     },
@@ -2154,7 +2513,7 @@
         "describeId": 28010102,
         "SortOrder": 13019,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3855411980,
         "modelPath": "Codex_Animal_Crab_02"
     },
@@ -2163,7 +2522,7 @@
         "describeId": 28010103,
         "SortOrder": 13020,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 1501229244,
         "modelPath": "Codex_Animal_Crab_03"
     },
@@ -2172,7 +2531,7 @@
         "describeId": 28010104,
         "SortOrder": 13021,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 1716680068,
         "modelPath": "Codex_Animal_Crab_04"
     },
@@ -2181,7 +2540,7 @@
         "describeId": 28010105,
         "SortOrder": 13022,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2199690892,
         "modelPath": "Codex_Animal_Crab_05"
     },
@@ -2190,7 +2549,7 @@
         "describeId": 28010201,
         "SortOrder": 13023,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2739906300,
         "modelPath": "Codex_Animal_Lizard_01"
     },
@@ -2199,7 +2558,7 @@
         "describeId": 28010202,
         "SortOrder": 13024,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2751025748,
         "modelPath": "Codex_Animal_Lizard_02"
     },
@@ -2208,7 +2567,7 @@
         "describeId": 28010203,
         "SortOrder": 13025,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 1196248124,
         "modelPath": "Codex_Animal_Lizard_03"
     },
@@ -2217,16 +2576,25 @@
         "describeId": 28010207,
         "SortOrder": 13026,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 57133532,
         "modelPath": "Codex_Animal_Lizard_04"
+    },
+    {
+        "Id": 28010208,
+        "describeId": 28010208,
+        "SortOrder": 13027,
+        "subType": "CODEX_SUBTYPE_CRITTER",
+        "FEBIEOGMDMF": "UNDEFINED",
+        "descTextMapHash": 4090251284,
+        "modelPath": "Codex_Animal_Lizard_05"
     },
     {
         "Id": 28010401,
         "describeId": 28010401,
         "SortOrder": 13028,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 2694393852,
         "modelPath": "Codex_Animal_Eel_01"
     },
@@ -2235,7 +2603,7 @@
         "describeId": 28010402,
         "SortOrder": 13029,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 814289124,
         "modelPath": "Codex_Animal_Eel_02"
     },
@@ -2244,7 +2612,7 @@
         "describeId": 28010403,
         "SortOrder": 13030,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 1921378724,
         "modelPath": "Codex_Animal_Eel_03"
     },
@@ -2253,7 +2621,7 @@
         "describeId": 28050301,
         "SortOrder": 13031,
         "subType": "CODEX_SUBTYPE_CRITTER",
-        "FEBIEOGMDMF": "CODEX_COUNT_TYPE_CAPTURE",
+        "FEBIEOGMDMF": "UNDEFINED",
         "descTextMapHash": 3394957204,
         "modelPath": "Codex_Animal_Boltbug_Lightbug"
     }
