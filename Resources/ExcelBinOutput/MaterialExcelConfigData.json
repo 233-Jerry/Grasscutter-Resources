@@ -6575,127 +6575,7 @@
         "icon": "UI_ItemIcon_1102",
         "itemType": "ITEM_MATERIAL",
         "rank": 30
-        
     },
-    {
-        "interactionTitleTextMapHash": 924082183,
-        "materialType": "MATERIAL_TALENT",
-        "stackLimit": 1000,
-        "itemUse": [
-            {
-                "useParam": [
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                ]
-            },
-            {
-                "useParam": [
-                    "",
-                    ""
-                ]
-            }
-        ],
-        "rankLevel": 5,
-        "effectDescTextMapHash": 3666177247,
-        "specialDescTextMapHash": 1778322977,
-        "typeDescTextMapHash": 2324364822,
-        "effectIcon": "",
-        "effectName": "",
-        "picPath": [],
-        "satiationParams": [],
-        "destroyReturnMaterial": [],
-        "destroyReturnMaterialCount": [],
-        "id": 1169,
-        "nameTextMapHash": 332664092,
-        "descTextMapHash": 961908269,
-        "icon": "UI_ItemIcon_1102",
-        "itemType": "ITEM_MATERIAL",
-        "rank": 30
-        
-    },
-    {
-        "interactionTitleTextMapHash": 924082183,
-        "materialType": "MATERIAL_TALENT",
-        "stackLimit": 1000,
-        "itemUse": [
-            {
-                "useParam": [
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                ]
-            },
-            {
-                "useParam": [
-                    "",
-                    ""
-                ]
-            }
-        ],
-        "rankLevel": 5,
-        "effectDescTextMapHash": 3666177247,
-        "specialDescTextMapHash": 1778322977,
-        "typeDescTextMapHash": 2324364822,
-        "effectIcon": "",
-        "effectName": "",
-        "picPath": [],
-        "satiationParams": [],
-        "destroyReturnMaterial": [],
-        "destroyReturnMaterialCount": [],
-        "id": 1168,
-        "nameTextMapHash": 332664092,
-        "descTextMapHash": 961908269,
-        "icon": "UI_ItemIcon_1102",
-        "itemType": "ITEM_MATERIAL",
-        "rank": 30
-        
-    },
-    {
-        "interactionTitleTextMapHash": 924082183,
-        "materialType": "MATERIAL_TALENT",
-        "stackLimit": 1000,
-        "itemUse": [
-            {
-                "useParam": [
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                ]
-            },
-            {
-                "useParam": [
-                    "",
-                    ""
-                ]
-            }
-        ],
-        "rankLevel": 5,
-        "effectDescTextMapHash": 3666177247,
-        "specialDescTextMapHash": 1778322977,
-        "typeDescTextMapHash": 2324364822,
-        "effectIcon": "",
-        "effectName": "",
-        "picPath": [],
-        "satiationParams": [],
-        "destroyReturnMaterial": [],
-        "destroyReturnMaterialCount": [],
-        "id": 1167,
-        "nameTextMapHash": 332664092,
-        "descTextMapHash": 961908269,
-        "icon": "UI_ItemIcon_1102",
-        "itemType": "ITEM_MATERIAL",
-        "rank": 30
-        
-    },
-    
-    
     {
         "interactionTitleTextMapHash": 2175163815,
         "materialType": "MATERIAL_CONSUME",
@@ -96682,6 +96562,47 @@
         "itemType": "ITEM_MATERIAL"
     },
     {
+        "interactionTitleTextMapHash": 126583287,
+        "materialType": "MATERIAL_FLYCLOAK",
+        "stackLimit": 1000,
+        "maxUseCount": 99,
+        "useOnGain": true,
+        "itemUse": [
+            {
+                "useOp": "ITEM_USE_GAIN_FLYCLOAK",
+                "useParam": [
+                    "140010",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 3266670735,
+        "specialDescTextMapHash": 1112073425,
+        "typeDescTextMapHash": 3978076486,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "isForceGetHint": true,
+        "id": 140010,
+        "nameTextMapHash": 3169914972,
+        "descTextMapHash": 2397270509,
+        "icon": "UI_FlycloakIcon_Ayus",
+        "itemType": "ITEM_MATERIAL"
+    },
+    {
         "interactionTitleTextMapHash": 2921305807,
         "materialType": "MATERIAL_BGM",
         "stackLimit": 1,
@@ -108225,6 +108146,456 @@
         "itemType": "ITEM_MATERIAL"
     },
     {
+        "interactionTitleTextMapHash": 840191735,
+        "materialType": "MATERIAL_NAMECARD",
+        "stackLimit": 1000,
+        "maxUseCount": 99,
+        "useOnGain": true,
+        "noFirstGetHint": true,
+        "itemUse": [
+            {
+                "useOp": "ITEM_USE_GAIN_NAME_CARD",
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 2707529943,
+        "specialDescTextMapHash": 1104647689,
+        "typeDescTextMapHash": 1799001214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [
+            "UI_NameCardPic_Collei_P_Alpha",
+            "UI_NameCardPic_Collei_P"
+        ],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "isForceGetHint": true,
+        "id": 210124,
+        "nameTextMapHash": 2652433876,
+        "descTextMapHash": 2058854573,
+        "icon": "UI_NameCardIcon_Collei",
+        "itemType": "ITEM_MATERIAL"
+    },
+    {
+        "interactionTitleTextMapHash": 840191735,
+        "materialType": "MATERIAL_NAMECARD",
+        "stackLimit": 1000,
+        "maxUseCount": 99,
+        "useOnGain": true,
+        "noFirstGetHint": true,
+        "itemUse": [
+            {
+                "useOp": "ITEM_USE_GAIN_NAME_CARD",
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 2707529943,
+        "specialDescTextMapHash": 1104647689,
+        "typeDescTextMapHash": 1799001214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [
+            "UI_NameCardPic_Dori_P_Alpha",
+            "UI_NameCardPic_Dori_P"
+        ],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "isForceGetHint": true,
+        "id": 210125,
+        "nameTextMapHash": 2652433876,
+        "descTextMapHash": 2058854573,
+        "icon": "UI_NameCardIcon_Dori",
+        "itemType": "ITEM_MATERIAL"
+    },
+    {
+        "interactionTitleTextMapHash": 840191735,
+        "materialType": "MATERIAL_NAMECARD",
+        "stackLimit": 1000,
+        "maxUseCount": 99,
+        "useOnGain": true,
+        "noFirstGetHint": true,
+        "itemUse": [
+            {
+                "useOp": "ITEM_USE_GAIN_NAME_CARD",
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 2707529943,
+        "specialDescTextMapHash": 1104647689,
+        "typeDescTextMapHash": 1799001214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [
+            "UI_NameCardPic_Tighnari_P_Alpha",
+            "UI_NameCardPic_Tighnari_P"
+        ],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "isForceGetHint": true,
+        "id": 210126,
+        "nameTextMapHash": 2652433876,
+        "descTextMapHash": 2058854573,
+        "icon": "UI_NameCardIcon_Tighnari",
+        "itemType": "ITEM_MATERIAL"
+    },
+    {
+        "interactionTitleTextMapHash": 840191735,
+        "materialType": "MATERIAL_NAMECARD",
+        "stackLimit": 1000,
+        "maxUseCount": 99,
+        "useOnGain": true,
+        "noFirstGetHint": true,
+        "itemUse": [
+            {
+                "useOp": "ITEM_USE_GAIN_NAME_CARD",
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 2707529943,
+        "specialDescTextMapHash": 1104647689,
+        "typeDescTextMapHash": 1799001214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [
+            "UI_NameCardPic_Tighnari_P_Alpha",
+            "UI_NameCardPic_Tighnari_P"
+        ],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "isForceGetHint": true,
+        "id": 210127,
+        "nameTextMapHash": 2652433876,
+        "descTextMapHash": 2058854573,
+        "icon": "UI_NameCardIcon_Tighnari",
+        "itemType": "ITEM_MATERIAL"
+    },
+    {
+        "interactionTitleTextMapHash": 840191735,
+        "materialType": "MATERIAL_NAMECARD",
+        "stackLimit": 1000,
+        "maxUseCount": 99,
+        "useOnGain": true,
+        "noFirstGetHint": true,
+        "itemUse": [
+            {
+                "useOp": "ITEM_USE_GAIN_NAME_CARD",
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 2707529943,
+        "specialDescTextMapHash": 1104647689,
+        "typeDescTextMapHash": 1799001214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [
+            "UI_NameCardPic_Tighnari_P_Alpha",
+            "UI_NameCardPic_Tighnari_P"
+        ],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "isForceGetHint": true,
+        "id": 210128,
+        "nameTextMapHash": 2652433876,
+        "descTextMapHash": 2058854573,
+        "icon": "UI_NameCardIcon_Tighnari",
+        "itemType": "ITEM_MATERIAL"
+    },
+    {
+        "interactionTitleTextMapHash": 840191735,
+        "materialType": "MATERIAL_NAMECARD",
+        "stackLimit": 1000,
+        "maxUseCount": 99,
+        "useOnGain": true,
+        "noFirstGetHint": true,
+        "itemUse": [
+            {
+                "useOp": "ITEM_USE_GAIN_NAME_CARD",
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 2707529943,
+        "specialDescTextMapHash": 1104647689,
+        "typeDescTextMapHash": 1799001214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [
+            "UI_NameCardPic_Tighnari_P_Alpha",
+            "UI_NameCardPic_Tighnari_P"
+        ],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "isForceGetHint": true,
+        "id": 210129,
+        "nameTextMapHash": 2652433876,
+        "descTextMapHash": 2058854573,
+        "icon": "UI_NameCardIcon_Tighnari",
+        "itemType": "ITEM_MATERIAL"
+    },
+    {
+        "interactionTitleTextMapHash": 840191735,
+        "materialType": "MATERIAL_NAMECARD",
+        "stackLimit": 1000,
+        "maxUseCount": 99,
+        "useOnGain": true,
+        "noFirstGetHint": true,
+        "itemUse": [
+            {
+                "useOp": "ITEM_USE_GAIN_NAME_CARD",
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 2707529943,
+        "specialDescTextMapHash": 1104647689,
+        "typeDescTextMapHash": 1799001214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [
+            "UI_NameCardPic_Tighnari_P_Alpha",
+            "UI_NameCardPic_Tighnari_P"
+        ],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "isForceGetHint": true,
+        "id": 210130,
+        "nameTextMapHash": 2652433876,
+        "descTextMapHash": 2058854573,
+        "icon": "UI_NameCardIcon_Tighnari",
+        "itemType": "ITEM_MATERIAL"
+    },
+    {
+        "interactionTitleTextMapHash": 840191735,
+        "materialType": "MATERIAL_NAMECARD",
+        "stackLimit": 1000,
+        "maxUseCount": 99,
+        "useOnGain": true,
+        "noFirstGetHint": true,
+        "itemUse": [
+            {
+                "useOp": "ITEM_USE_GAIN_NAME_CARD",
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 2707529943,
+        "specialDescTextMapHash": 1104647689,
+        "typeDescTextMapHash": 1799001214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [
+            "UI_NameCardPic_Tighnari_P_Alpha",
+            "UI_NameCardPic_Tighnari_P"
+        ],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "isForceGetHint": true,
+        "id": 210131,
+        "nameTextMapHash": 2652433876,
+        "descTextMapHash": 2058854573,
+        "icon": "UI_NameCardIcon_Tighnari",
+        "itemType": "ITEM_MATERIAL"
+    },
+    {
+        "interactionTitleTextMapHash": 840191735,
+        "materialType": "MATERIAL_NAMECARD",
+        "stackLimit": 1000,
+        "maxUseCount": 99,
+        "useOnGain": true,
+        "noFirstGetHint": true,
+        "itemUse": [
+            {
+                "useOp": "ITEM_USE_GAIN_NAME_CARD",
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 2707529943,
+        "specialDescTextMapHash": 1104647689,
+        "typeDescTextMapHash": 1799001214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [
+            "UI_NameCardPic_Tighnari_P_Alpha",
+            "UI_NameCardPic_Tighnari_P"
+        ],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "isForceGetHint": true,
+        "id": 210132,
+        "nameTextMapHash": 2652433876,
+        "descTextMapHash": 2058854573,
+        "icon": "UI_NameCardIcon_Tighnari",
+        "itemType": "ITEM_MATERIAL"
+    },
+    {
+        "interactionTitleTextMapHash": 840191735,
+        "materialType": "MATERIAL_NAMECARD",
+        "stackLimit": 1000,
+        "maxUseCount": 99,
+        "useOnGain": true,
+        "noFirstGetHint": true,
+        "itemUse": [
+            {
+                "useOp": "ITEM_USE_GAIN_NAME_CARD",
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 2707529943,
+        "specialDescTextMapHash": 1104647689,
+        "typeDescTextMapHash": 1799001214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [
+            "UI_NameCardPic_Tighnari_P_Alpha",
+            "UI_NameCardPic_Tighnari_P"
+        ],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "isForceGetHint": true,
+        "id": 210133,
+        "nameTextMapHash": 2652433876,
+        "descTextMapHash": 2058854573,
+        "icon": "UI_NameCardIcon_Tighnari",
+        "itemType": "ITEM_MATERIAL"
+    },
+    {
         "interactionTitleTextMapHash": 3499041735,
         "materialType": "MATERIAL_WIDGET",
         "stackLimit": 99,
@@ -109354,6 +109725,45 @@
         "rank": 145002
     },
     {
+        "interactionTitleTextMapHash": 1372901759,
+        "materialType": "MATERIAL_WIDGET",
+        "stackLimit": 99,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 3,
+        "effectDescTextMapHash": 1826888847,
+        "specialDescTextMapHash": 4099938889,
+        "typeDescTextMapHash": 1668170670,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "closeBagAfterUsed": true,
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 220057,
+        "nameTextMapHash": 3519592252,
+        "descTextMapHash": 2356915989,
+        "icon": "UI_ItemIcon_220032",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 145002
+    },
+    {
         "interactionTitleTextMapHash": 2442768463,
         "materialType": "MATERIAL_WIDGET",
         "stackLimit": 1,
@@ -109427,6 +109837,45 @@
         "nameTextMapHash": 3252333372,
         "descTextMapHash": 4054712733,
         "icon": "UI_ItemIcon_220034",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 45002
+    },
+    {
+        "interactionTitleTextMapHash": 638580743,
+        "materialType": "MATERIAL_WIDGET",
+        "stackLimit": 1,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 2048522847,
+        "specialDescTextMapHash": 3746011897,
+        "typeDescTextMapHash": 2362932046,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "closeBagAfterUsed": true,
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 220058,
+        "nameTextMapHash": 3252333372,
+        "descTextMapHash": 4054712733,
+        "icon": "UI_ItemIcon_220058",
         "itemType": "ITEM_MATERIAL",
         "rank": 45002
     },
@@ -109583,6 +110032,45 @@
         "nameTextMapHash": 77129612,
         "descTextMapHash": 2673644981,
         "icon": "UI_ItemIcon_220038",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 65003
+    },
+    {
+        "interactionTitleTextMapHash": 440616847,
+        "materialType": "MATERIAL_WIDGET",
+        "stackLimit": 1,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 1434055183,
+        "specialDescTextMapHash": 549627881,
+        "typeDescTextMapHash": 1367079950,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "closeBagAfterUsed": true,
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 220062,
+        "nameTextMapHash": 77129612,
+        "descTextMapHash": 2673644981,
+        "icon": "UI_ItemIcon_220062",
         "itemType": "ITEM_MATERIAL",
         "rank": 65003
     },
@@ -109973,6 +110461,240 @@
         "nameTextMapHash": 2384311540,
         "descTextMapHash": 2887881813,
         "icon": "UI_ItemIcon_220048_01",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 35020
+    },
+    {
+        "interactionTitleTextMapHash": 923864367,
+        "materialType": "MATERIAL_WIDGET",
+        "stackLimit": 1,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 1723214791,
+        "specialDescTextMapHash": 3383783033,
+        "typeDescTextMapHash": 2816126214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "closeBagAfterUsed": true,
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 120011,
+        "nameTextMapHash": 2384311540,
+        "descTextMapHash": 2887881813,
+        "icon": "UI_ItemIcon_120011_01",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 35020
+    },
+    {
+        "interactionTitleTextMapHash": 923864367,
+        "materialType": "MATERIAL_WIDGET",
+        "stackLimit": 1,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 1723214791,
+        "specialDescTextMapHash": 3383783033,
+        "typeDescTextMapHash": 2816126214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "closeBagAfterUsed": true,
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 220055,
+        "nameTextMapHash": 2384311540,
+        "descTextMapHash": 2887881813,
+        "icon": "UI_ItemIcon_220055_01",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 35020
+    },
+    {
+        "interactionTitleTextMapHash": 923864367,
+        "materialType": "MATERIAL_WIDGET",
+        "stackLimit": 1,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 1723214791,
+        "specialDescTextMapHash": 3383783033,
+        "typeDescTextMapHash": 2816126214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "closeBagAfterUsed": true,
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 220059,
+        "nameTextMapHash": 2384311540,
+        "descTextMapHash": 2887881813,
+        "icon": "UI_ItemIcon_220059_01",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 35020
+    },
+    {
+        "interactionTitleTextMapHash": 923864367,
+        "materialType": "MATERIAL_WIDGET",
+        "stackLimit": 1,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 1723214791,
+        "specialDescTextMapHash": 3383783033,
+        "typeDescTextMapHash": 2816126214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "closeBagAfterUsed": true,
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 220060,
+        "nameTextMapHash": 2384311540,
+        "descTextMapHash": 2887881813,
+        "icon": "UI_ItemIcon_220060_01",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 35020
+    },
+    {
+        "interactionTitleTextMapHash": 923864367,
+        "materialType": "MATERIAL_WIDGET",
+        "stackLimit": 1,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 1723214791,
+        "specialDescTextMapHash": 3383783033,
+        "typeDescTextMapHash": 2816126214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "closeBagAfterUsed": true,
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 220065,
+        "nameTextMapHash": 2384311540,
+        "descTextMapHash": 2887881813,
+        "icon": "UI_ItemIcon_220065_01",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 35020
+    },
+    {
+        "interactionTitleTextMapHash": 923864367,
+        "materialType": "MATERIAL_WIDGET",
+        "stackLimit": 1,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 4,
+        "effectDescTextMapHash": 1723214791,
+        "specialDescTextMapHash": 3383783033,
+        "typeDescTextMapHash": 2816126214,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "closeBagAfterUsed": true,
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 220066,
+        "nameTextMapHash": 2384311540,
+        "descTextMapHash": 2887881813,
+        "icon": "UI_ItemIcon_220066_01",
         "itemType": "ITEM_MATERIAL",
         "rank": 35020
     },
@@ -130944,5 +131666,122 @@
         "icon": "UI_ItemIcon_Home_Common",
         "itemType": "ITEM_MATERIAL",
         "globalItemLimit": 1
+    },
+    {
+        "interactionTitleTextMapHash": 924082183,
+        "materialType": "MATERIAL_TALENT",
+        "stackLimit": 1000,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 5,
+        "effectDescTextMapHash": 3666177247,
+        "specialDescTextMapHash": 1778322977,
+        "typeDescTextMapHash": 2324364822,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 1169,
+        "nameTextMapHash": 332664092,
+        "descTextMapHash": 961908269,
+        "icon": "UI_ItemIcon_1102",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 30
+        
+    },
+    {
+        "interactionTitleTextMapHash": 924082183,
+        "materialType": "MATERIAL_TALENT",
+        "stackLimit": 1000,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 5,
+        "effectDescTextMapHash": 3666177247,
+        "specialDescTextMapHash": 1778322977,
+        "typeDescTextMapHash": 2324364822,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 1168,
+        "nameTextMapHash": 332664092,
+        "descTextMapHash": 961908269,
+        "icon": "UI_ItemIcon_1102",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 30
+        
+    },
+    {
+        "interactionTitleTextMapHash": 924082183,
+        "materialType": "MATERIAL_TALENT",
+        "stackLimit": 1000,
+        "itemUse": [
+            {
+                "useParam": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "useParam": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "rankLevel": 5,
+        "effectDescTextMapHash": 3666177247,
+        "specialDescTextMapHash": 1778322977,
+        "typeDescTextMapHash": 2324364822,
+        "effectIcon": "",
+        "effectName": "",
+        "picPath": [],
+        "satiationParams": [],
+        "destroyReturnMaterial": [],
+        "destroyReturnMaterialCount": [],
+        "id": 1167,
+        "nameTextMapHash": 332664092,
+        "descTextMapHash": 961908269,
+        "icon": "UI_ItemIcon_1102",
+        "itemType": "ITEM_MATERIAL",
+        "rank": 30
+        
     }
 ]
