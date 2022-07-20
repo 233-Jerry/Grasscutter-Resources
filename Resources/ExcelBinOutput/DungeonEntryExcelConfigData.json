@@ -5,7 +5,7 @@
         "dungeonEntryId": 48,
         "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
         "isShowInAdvHandbook": true,
-        "desc": "With the fall of the ancient lost civilization, the once prosperous and magnificent Sommernachtgarten was also buried underground, leaving only its ancient trees and stones to remember its past glory.",
+        "descTextMapHash": 1612886129,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -30,8 +30,294 @@
             [],
             [],
             []
+        ]
+    },
+    {
+        "id": 2,
+        "sceneId": 3,
+        "dungeonEntryId": 50,
+        "type": "DUNGEN_ENTRY_TYPE_WEAPON_PROMOTE",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 3914992809,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": true,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 16,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 38406,
+                "param2": 0
+            }
         ],
-        "descTextMapHash": 1612886129
+        "picPath": "UI_DungeonPic_Water",
+        "systemOpenUiId": 8,
+        "rewardDataId": 220402,
+        "descriptionCycleRewardList": [
+            [
+                114001,
+                114002,
+                114003,
+                114004
+            ],
+            [
+                114005,
+                114006,
+                114007,
+                114008
+            ],
+            [
+                114009,
+                114010,
+                114011,
+                114012
+            ],
+            [
+                114001,
+                114002,
+                114003,
+                114004,
+                114005,
+                114006,
+                114007,
+                114008,
+                114009,
+                114010,
+                114011,
+                114012
+            ]
+        ]
+    },
+    {
+        "id": 3,
+        "sceneId": 3,
+        "dungeonEntryId": 135,
+        "type": "DUNGEN_ENTRY_TYPE_WEAPON_PROMOTE",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 1293176289,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": true,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 16,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 38406,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_Thunder",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220407,
+        "descriptionCycleRewardList": [
+            [
+                114013,
+                114014,
+                114015,
+                114016
+            ],
+            [
+                114017,
+                114018,
+                114019,
+                114020
+            ],
+            [
+                114021,
+                114022,
+                114023,
+                114024
+            ],
+            [
+                114013,
+                114014,
+                114015,
+                114016,
+                114017,
+                114018,
+                114019,
+                114020,
+                114021,
+                114022,
+                114023,
+                114024
+            ]
+        ]
+    },
+    {
+        "id": 4,
+        "sceneId": 3,
+        "dungeonEntryId": 117,
+        "type": "DUNGEON_ENTRY_TYPE_NORMAL",
+        "isShowInAdvHandbook": false,
+        "descTextMapHash": 77310385,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_NONE",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_NONE",
+                "param1": 0,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_NONE",
+                "param1": 0,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_HuZhongTian",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220406,
+        "descriptionCycleRewardList": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": 6,
+        "sceneId": 3,
+        "dungeonEntryId": 42,
+        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 2667941777,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 22,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 39604,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_Cubic_Normal_1",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220405,
+        "descriptionCycleRewardList": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": 7,
+        "sceneId": 3,
+        "dungeonEntryId": 137,
+        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 767933225,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 22,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 39604,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_Cubic_Normal_2",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220409,
+        "descriptionCycleRewardList": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": 8,
+        "sceneId": 3,
+        "dungeonEntryId": 107,
+        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 692041689,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 22,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 39604,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_Cubic_Normal_3",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220410,
+        "descriptionCycleRewardList": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": 9,
+        "sceneId": 3,
+        "dungeonEntryId": 139,
+        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 142290817,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 22,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 39604,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_Cubic_Normal_4",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220411,
+        "descriptionCycleRewardList": [
+            [],
+            [],
+            [],
+            []
+        ]
     },
     {
         "id": 10,
@@ -39,7 +325,7 @@
         "dungeonEntryId": 44,
         "type": "DUNGEN_ENTRY_TYPE_AVATAR_TALENT",
         "isShowInAdvHandbook": true,
-        "desc": "It is said that in ancient times, people would venture into the valley to seek out the ancient tree on the altar. They would whisper their secrets into the tree hollow, relieving themselves of the burden of keeping the secrets to themselves. The Forsaken Rift is filled with such long-forgotten secrets.",
+        "descTextMapHash": 2905358345,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": true,
@@ -86,8 +372,492 @@
                 104308,
                 104309
             ]
+        ]
+    },
+    {
+        "id": 11,
+        "sceneId": 3,
+        "dungeonEntryId": 131,
+        "type": "DUNGEN_ENTRY_TYPE_AVATAR_TALENT",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 2189301337,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": true,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 27,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 101801,
+                "param2": 0
+            }
         ],
-        "descTextMapHash": 2905358345
+        "picPath": "UI_DungeonPic_Fire",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220408,
+        "descriptionCycleRewardList": [
+            [
+                104310,
+                104311,
+                104312
+            ],
+            [
+                104313,
+                104314,
+                104315
+            ],
+            [
+                104316,
+                104317,
+                104318
+            ],
+            [
+                104310,
+                104311,
+                104312,
+                104313,
+                104314,
+                104315,
+                104316,
+                104317,
+                104318
+            ]
+        ]
+    },
+    {
+        "id": 12,
+        "sceneId": 3,
+        "dungeonEntryId": 221,
+        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 4215300953,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 22,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 39604,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_Cubic_Cold_1",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220414,
+        "descriptionCycleRewardList": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": 13,
+        "sceneId": 3,
+        "dungeonEntryId": 282,
+        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 407495801,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 22,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 39604,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_Cubic_Normal_1",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220415,
+        "descriptionCycleRewardList": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": 14,
+        "sceneId": 3,
+        "dungeonEntryId": 368,
+        "type": "DUNGEN_ENTRY_TYPE_WEAPON_PROMOTE",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 3563711113,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": true,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 30,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 201310,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_Rock",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220416,
+        "descriptionCycleRewardList": [
+            [
+                114025,
+                114026,
+                114027,
+                114028
+            ],
+            [
+                114029,
+                114030,
+                114031,
+                114032
+            ],
+            [
+                114033,
+                114034,
+                114035,
+                114036
+            ],
+            [
+                114025,
+                114026,
+                114027,
+                114028,
+                114029,
+                114030,
+                114031,
+                114032,
+                114033,
+                114034,
+                114035,
+                114036
+            ]
+        ]
+    },
+    {
+        "id": 15,
+        "sceneId": 3,
+        "dungeonEntryId": 310,
+        "type": "DUNGEN_ENTRY_TYPE_AVATAR_TALENT",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 1335742113,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": true,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 30,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 201310,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_Thunder_Dq",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220417,
+        "descriptionCycleRewardList": [
+            [
+                104320,
+                104321,
+                104322
+            ],
+            [
+                104323,
+                104324,
+                104325
+            ],
+            [
+                104326,
+                104327,
+                104328
+            ],
+            [
+                104320,
+                104321,
+                104322,
+                104323,
+                104324,
+                104325,
+                104326,
+                104327,
+                104328
+            ]
+        ]
+    },
+    {
+        "id": 16,
+        "sceneId": 3,
+        "dungeonEntryId": 361,
+        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 2252726481,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 30,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 201310,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_ThunderCave_Dq",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220418,
+        "descriptionCycleRewardList": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": 17,
+        "sceneId": 3,
+        "dungeonEntryId": 433,
+        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 831946953,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 30,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 201310,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_ThunderCave_Dq",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220419,
+        "descriptionCycleRewardList": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": 18,
+        "sceneId": 3,
+        "dungeonEntryId": 516,
+        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 2021257257,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 22,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 39604,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_CycleDungeonChasm",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220420,
+        "descriptionCycleRewardList": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": 19,
+        "sceneId": 3,
+        "dungeonEntryId": 505,
+        "type": "DUNGEN_ENTRY_TYPE_AVATAR_TALENT",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 3613595857,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 22,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 101801,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_XMCharacter01",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220422,
+        "descriptionCycleRewardList": [
+            [
+                104329,
+                104330,
+                104331
+            ],
+            [
+                104332,
+                104333,
+                104334
+            ],
+            [
+                104335,
+                104336,
+                104337
+            ],
+            [
+                104329,
+                104330,
+                104331,
+                104332,
+                104333,
+                104334,
+                104335,
+                104336,
+                104337
+            ]
+        ]
+    },
+    {
+        "id": 20,
+        "sceneId": 3,
+        "dungeonEntryId": 507,
+        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 3394002473,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 22,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 39604,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_XMRelic01",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220423,
+        "descriptionCycleRewardList": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": 21,
+        "sceneId": 3,
+        "dungeonEntryId": 509,
+        "type": "DUNGEN_ENTRY_TYPE_WEAPON_PROMOTE",
+        "isShowInAdvHandbook": true,
+        "descTextMapHash": 1711971481,
+        "cooldownTipsDungeonId": [],
+        "isDefaultOpen": false,
+        "isDailyRefresh": false,
+        "condComb": "LOGIC_OR",
+        "satisfiedCond": [
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
+                "param1": 22,
+                "param2": 0
+            },
+            {
+                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
+                "param1": 38406,
+                "param2": 0
+            }
+        ],
+        "picPath": "UI_DungeonPic_XMWeapon01",
+        "systemOpenUiId": 0,
+        "rewardDataId": 220421,
+        "descriptionCycleRewardList": [
+            [
+                114037,
+                114038,
+                114039,
+                114040
+            ],
+            [
+                114041,
+                114042,
+                114043,
+                114044
+            ],
+            [
+                114045,
+                114046,
+                114047,
+                114048
+            ],
+            [
+                114037,
+                114038,
+                114039,
+                114040,
+                114041,
+                114042,
+                114043,
+                114044,
+                114045,
+                114046,
+                114047,
+                114048
+            ]
+        ]
     },
     {
         "id": 1001,
@@ -95,7 +865,7 @@
         "dungeonEntryId": 45,
         "type": "DUNGEON_ENTRY_TYPE_OBSCURAE",
         "isShowInAdvHandbook": false,
-        "desc": "Rumor has it that people who've ascended to Celestia have also witnessed the same helix-shaped divine ladder that can be seen within Visions. Venturing out into the universe and down into the abyss are the same in that both are braving the dark unknown.",
+        "descTextMapHash": 2708589641,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -120,8 +890,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2708589641
+        ]
     },
     {
         "id": 1002,
@@ -129,7 +898,7 @@
         "dungeonEntryId": 1,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "This was once a temple devoted to the Wolf of the North. Now, the priests are gone, and the temple has been seized by monsters. However, they say that the spirit of the Wolf still watches over the endless fields of Mondstadt from someplace else.",
+        "descTextMapHash": 3239234745,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -154,8 +923,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3239234745
+        ]
     },
     {
         "id": 1003,
@@ -163,7 +931,7 @@
         "dungeonEntryId": 20,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "This ruin used to be a temple devoted to the benevolent Falcon of the West. The Temple of the Falcon has watched over Windrise for thousands of years. Perhaps the winds of the past still linger within its halls.",
+        "descTextMapHash": 1162985985,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -188,8 +956,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1162985985
+        ]
     },
     {
         "id": 1004,
@@ -197,7 +964,7 @@
         "dungeonEntryId": 22,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "This used to be a temple devoted to the Lion of the South, but it has long been abandoned. Folklore tells that the dandelions commonly seen riding on the winds across Mondstadt symbolize the blessings of the Lion of the South.",
+        "descTextMapHash": 3920998985,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -222,8 +989,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3920998985
+        ]
     },
     {
         "id": 1005,
@@ -231,7 +997,7 @@
         "dungeonEntryId": 40,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "Both the prideful eagles and noble souls favor transcendent heights apart from the secular world. In days past, those who despised mortal squabbles as the eagles do could find peace of mind in this place.",
+        "descTextMapHash": 1972150497,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -256,8 +1022,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1972150497
+        ]
     },
     {
         "id": 1006,
@@ -265,7 +1030,7 @@
         "dungeonEntryId": 38,
         "type": "DUNGEON_ENTRY_TYPE_TRIAL",
         "isShowInAdvHandbook": true,
-        "desc": "The towering but broken spire tells of its tragic story silently. Its chambers and halls are filled with memories and longing, as well as howling winds.",
+        "descTextMapHash": 792448241,
         "cooldownTipsDungeonId": [
             {
                 "Value": 2020
@@ -309,8 +1074,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 792448241
+        ]
     },
     {
         "id": 1007,
@@ -318,7 +1082,7 @@
         "dungeonEntryId": 52,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 3246634345,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -343,8 +1107,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3246634345
+        ]
     },
     {
         "id": 1008,
@@ -352,7 +1115,7 @@
         "dungeonEntryId": 113,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 332916601,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -377,8 +1140,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 332916601
+        ]
     },
     {
         "id": 1009,
@@ -386,7 +1148,7 @@
         "dungeonEntryId": 102,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 1575215929,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -411,8 +1173,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1575215929
+        ]
     },
     {
         "id": 1010,
@@ -420,7 +1181,7 @@
         "dungeonEntryId": 89,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 2484444193,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -445,8 +1206,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2484444193
+        ]
     },
     {
         "id": 1011,
@@ -454,7 +1214,7 @@
         "dungeonEntryId": 119,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 4121744817,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -479,8 +1239,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 4121744817
+        ]
     },
     {
         "id": 1012,
@@ -488,7 +1247,7 @@
         "dungeonEntryId": 125,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 692976025,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -513,8 +1272,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 692976025
+        ]
     },
     {
         "id": 1013,
@@ -522,7 +1280,7 @@
         "dungeonEntryId": 129,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 2511450889,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -547,8 +1305,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2511450889
+        ]
     },
     {
         "id": 1014,
@@ -556,7 +1313,7 @@
         "dungeonEntryId": 146,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "Although Treasure Hoarders have long heard of treasures hidden here, they have yet to discover its location. In this world, the more one clings to delusions, the more quickly they slip through one's fingers. Only when the heart's desires are finally cast aside can the narrow path to peace be found.",
+        "descTextMapHash": 3994909113,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -581,8 +1338,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3994909113
+        ]
     },
     {
         "id": 1015,
@@ -590,7 +1346,7 @@
         "dungeonEntryId": 133,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "Many of those who come here now do so solely to search for nearby treasure. Just as crowds naturally leave a theater after the curtain falls, this once thriving colony has now been reduced to all but empty remains.",
+        "descTextMapHash": 3007793081,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -615,8 +1371,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3007793081
+        ]
     },
     {
         "id": 1016,
@@ -624,7 +1379,7 @@
         "dungeonEntryId": 218,
         "type": "DUNGEON_ENTRY_TYPE_TRIAL",
         "isShowInAdvHandbook": true,
-        "desc": "The storm clouds gathering over Liyue have finally parted, and the schemes that once gripped this land have been shattered by the combined efforts of the Qixing, the adepti, and yourself.\\nStill, the memories of your duel with Childe of the Fatui in the depths of the Golden House remain fresh in your mind.\\nRelive this duel, and you may yet learn something new...",
+        "descTextMapHash": 1047671777,
         "cooldownTipsDungeonId": [
             {
                 "Value": 103
@@ -662,8 +1417,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1047671777
+        ]
     },
     {
         "id": 1017,
@@ -671,7 +1425,7 @@
         "dungeonEntryId": 223,
         "type": "DUNGEON_ENTRY_TYPE_EFFIGY",
         "isShowInAdvHandbook": false,
-        "desc": "Pure Elemental Hypostases lie dormant within the depths of the world. Draw your blade, and join the sound of ringing steel to the chorus of wind, thunder, and earth.",
+        "descTextMapHash": 2923105409,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": true,
         "isDailyRefresh": false,
@@ -696,8 +1450,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2923105409
+        ]
     },
     {
         "id": 1018,
@@ -705,7 +1458,7 @@
         "dungeonEntryId": 265,
         "type": "DUNGEON_ENTRY_TYPE_FLEUR_FAIR",
         "isShowInAdvHandbook": false,
-        "desc": "The entrance to the Peculiar Wonderland only opens at specific times, and they who enter shall face three random challenges in which they will stand the test of powerful opponents.\\nThe origin of this Domain can no longer be known, but no matter whence it comes, its peculiar pleasures are praised by all.",
+        "descTextMapHash": 3303313457,
         "cooldownTipsDungeonId": [
             {
                 "Value": 5310
@@ -734,8 +1487,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3303313457
+        ]
     },
     {
         "id": 1019,
@@ -743,7 +1495,7 @@
         "dungeonEntryId": 274,
         "type": "DUNGEON_ENTRY_TYPE_CHANNELLER_SLAB_ONE_OFF",
         "isShowInAdvHandbook": false,
-        "desc": "In this Domain, the agitation of the Irminsul Fruit's energies has resulted in a Plasma Field that constantly encroaches upon the challenge area. Those who walk within the Plasma Field shall be subject to the assault of lightning.",
+        "descTextMapHash": 2262718049,
         "cooldownTipsDungeonId": [
             {
                 "Value": 7202
@@ -772,8 +1524,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2262718049
+        ]
     },
     {
         "id": 1020,
@@ -781,7 +1532,7 @@
         "dungeonEntryId": 276,
         "type": "DUNGEON_ENTRY_TYPE_CHANNELLER_SLAB_ONE_OFF",
         "isShowInAdvHandbook": false,
-        "desc": "A Frostarm Lawachurl and the creatures under its command dwell within this Domain. These sniveling supplicants, the Attendants, will likely do everything in their power to defend their lord.",
+        "descTextMapHash": 2797072865,
         "cooldownTipsDungeonId": [
             {
                 "Value": 7203
@@ -810,8 +1561,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2797072865
+        ]
     },
     {
         "id": 1021,
@@ -819,7 +1569,7 @@
         "dungeonEntryId": 278,
         "type": "DUNGEON_ENTRY_TYPE_CHANNELLER_SLAB_ONE_OFF",
         "isShowInAdvHandbook": false,
-        "desc": "A group of vishaps that have consumed an Irminsul Fruit fragment have dominion over this Domain. When defeated, the digested fragments will manifest themselves as volatile High-Energy Crystal Cores...",
+        "descTextMapHash": 2491644225,
         "cooldownTipsDungeonId": [
             {
                 "Value": 7201
@@ -848,8 +1598,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2491644225
+        ]
     },
     {
         "id": 1022,
@@ -857,7 +1606,7 @@
         "dungeonEntryId": 280,
         "type": "DUNGEON_ENTRY_TYPE_CHANNELLER_SLAB_LOOP",
         "isShowInAdvHandbook": false,
-        "desc": "The power of the Irminsul Fruit Fragments have twisted this Domain, creating bizarre traps and constantly attracting powerful enemies to dwell within. If you wish to plumb its depths, you too must possess the power of the Irminsul Fruit...",
+        "descTextMapHash": 350839273,
         "cooldownTipsDungeonId": [
             {
                 "Value": 7204
@@ -886,8 +1635,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 350839273
+        ]
     },
     {
         "id": 1023,
@@ -895,7 +1643,7 @@
         "dungeonEntryId": 271,
         "type": "DUNGEON_ENTRY_TYPE_TRIAL",
         "isShowInAdvHandbook": true,
-        "desc": "Across the long years, this bed of rock, carved into the very heart of the world, has imprisoned Azhdaha like a coffin.",
+        "descTextMapHash": 3790866161,
         "cooldownTipsDungeonId": [
             {
                 "Value": 110
@@ -969,8 +1717,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3790866161
+        ]
     },
     {
         "id": 1024,
@@ -978,7 +1725,7 @@
         "dungeonEntryId": 294,
         "type": "DUNGEON_ENTRY_TYPE_EFFIGY",
         "isShowInAdvHandbook": false,
-        "desc": "Immensely powerful foes await within the depths of this domain. Approach them without fear with a drawn sword and a heart ready to do battle.",
+        "descTextMapHash": 3135140769,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": true,
         "isDailyRefresh": false,
@@ -1003,8 +1750,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3135140769
+        ]
     },
     {
         "id": 1025,
@@ -1012,7 +1758,7 @@
         "dungeonEntryId": 334,
         "type": "DUNGEON_ENTRY_TYPE_BLITZ_RUSH",
         "isShowInAdvHandbook": false,
-        "desc": "The traces of the elemental anomalies point to the final Domain. The Ruin machines of unprecedented power that linger within seem to have resonated with ancient devices! Each time the Perpetual Mechanical Array splits, a random number of Thunder Dwellings and Nimbus Gems will appear throughout the Domain, creating waves of change and chance!\\nUse these additional factors within the Domain to your advantage and defeat your foes in one fell swoop!",
+        "descTextMapHash": 3528534825,
         "cooldownTipsDungeonId": [
             {
                 "Value": 7301
@@ -1041,8 +1787,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3528534825
+        ]
     },
     {
         "id": 1026,
@@ -1050,7 +1795,7 @@
         "dungeonEntryId": 357,
         "type": "DUNGEON_ENTRY_TYPE_SUMO",
         "isShowInAdvHandbook": false,
-        "desc": "It is said that mysterious door near Inazuma City leads to a mysterious guild hall.\\nHere, mortals and monsters who enjoy battle are all welcome to take part in this free-for-all fighting tournament \u00e2\u20ac\u201d also known as the Hyakunin Ikki.",
+        "descTextMapHash": 1657396761,
         "cooldownTipsDungeonId": [
             {
                 "Value": 3011
@@ -1079,8 +1824,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1657396761
+        ]
     },
     {
         "id": 1027,
@@ -1088,7 +1832,7 @@
         "dungeonEntryId": 350,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "This tengu annex dwelling that floats upon the sea like a lonesome boat once played host to the somewhat famous \"Yougou Three,\" and this would later become the cage in which they, having despaired, spent the rest of their days.",
+        "descTextMapHash": 268653081,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1113,8 +1857,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 268653081
+        ]
     },
     {
         "id": 1028,
@@ -1122,7 +1865,7 @@
         "dungeonEntryId": 308,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "This magnificent mansion was built by an ancient ascetic warrior in the depths of the earth using scenery borrowed from the outside world. In latter days, a deeply disheartened eccentric would be discovered within.",
+        "descTextMapHash": 2309605713,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1147,8 +1890,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2309605713
+        ]
     },
     {
         "id": 1029,
@@ -1156,7 +1898,7 @@
         "dungeonEntryId": 359,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "This estate once belonged to a lieutenant of Orobashi no Mikoto, until he, the body of his god, and the sky alike were rent open by a flash of lightning.",
+        "descTextMapHash": 2262274449,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1181,8 +1923,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2262274449
+        ]
     },
     {
         "id": 1030,
@@ -1190,7 +1931,7 @@
         "dungeonEntryId": 396,
         "type": "DUNGEON_ENTRY_TYPE_TRIAL",
         "isShowInAdvHandbook": true,
-        "desc": "This is the dwelling of the Raiden Shogun, who rules over Inazuma.\\nIt is also the perfect place for a \"duel before the throne.\"",
+        "descTextMapHash": 1251280409,
         "cooldownTipsDungeonId": [
             {
                 "Value": 127
@@ -1228,8 +1969,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1251280409
+        ]
     },
     {
         "id": 1031,
@@ -1237,7 +1977,7 @@
         "dungeonEntryId": 351,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "They say that long ago, seawater had yet to fill this pool. The moonlight was brighter back then, and it filled the pool instead, flowing freely like quicksilver.",
+        "descTextMapHash": 2428969633,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1262,8 +2002,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2428969633
+        ]
     },
     {
         "id": 1032,
@@ -1271,7 +2010,7 @@
         "dungeonEntryId": 417,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "The great gates of the bizarre and unpredictable Mystic Onmyou Chamber have swung open. The monsters imprisoned within are fierce indeed, but for those who seek truth and wish to temper their martial might, this Domain is a valuable place to challenge themselves...",
+        "descTextMapHash": 3512394897,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": true,
         "isDailyRefresh": false,
@@ -1296,8 +2035,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3512394897
+        ]
     },
     {
         "id": 1033,
@@ -1305,7 +2043,7 @@
         "dungeonEntryId": 426,
         "type": "DUNGEON_ENTRY_TYPE_HACHI",
         "isShowInAdvHandbook": false,
-        "desc": "Following Kageroumaru, you come across a dwelling.\\nUnexpectedly, Kageroumaru ran into the house, catching everyone unawares and leaving the trail cold.\\nYou'll have to follow him in if you wish to continue this investigation...",
+        "descTextMapHash": 746465721,
         "cooldownTipsDungeonId": [
             {
                 "Value": 7310
@@ -1334,8 +2072,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 746465721
+        ]
     },
     {
         "id": 1034,
@@ -1343,7 +2080,7 @@
         "dungeonEntryId": 424,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "A mansion that was set up somewhere outside the Sea of Fog. No one knows who built this place, but it seems clear that it is now nothing but a den of ravenous wolves.",
+        "descTextMapHash": 2323875993,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1368,8 +2105,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2323875993
+        ]
     },
     {
         "id": 1035,
@@ -1377,7 +2113,7 @@
         "dungeonEntryId": 436,
         "type": "DUNGEON_ENTRY_TYPE_CHANNELLER_SLAB_LOOP",
         "isShowInAdvHandbook": false,
-        "desc": "The entrance to this strange domain only sometimes appears on land. To brave warriors, this is the best training ground possible. As such, it is also the best place to gather data using the Energy Amplifier.",
+        "descTextMapHash": 76103177,
         "cooldownTipsDungeonId": [
             {
                 "Value": 7221
@@ -1406,8 +2142,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 76103177
+        ]
     },
     {
         "id": 1036,
@@ -1415,7 +2150,7 @@
         "dungeonEntryId": 447,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 433396889,
         "cooldownTipsDungeonId": [
             {
                 "Value": 2150
@@ -1444,8 +2179,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 433396889
+        ]
     },
     {
         "id": 1037,
@@ -1453,7 +2187,7 @@
         "dungeonEntryId": 449,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 512326977,
         "cooldownTipsDungeonId": [
             {
                 "Value": 2154
@@ -1482,8 +2216,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 512326977
+        ]
     },
     {
         "id": 1038,
@@ -1491,7 +2224,7 @@
         "dungeonEntryId": 451,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 3872861745,
         "cooldownTipsDungeonId": [
             {
                 "Value": 2158
@@ -1520,8 +2253,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3872861745
+        ]
     },
     {
         "id": 1039,
@@ -1529,7 +2261,7 @@
         "dungeonEntryId": 457,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "In a place that the opulent festivities do not reach, a strange monster named Beisht is on the move. Lying in wait in the waters under Guyun Stone Forest, Beisht is preparing a massive offensive. Step into her hiding place and defeat her preemptively to eliminate this nascent threat and defend the festive Liyue Harbor.",
+        "descTextMapHash": 474765937,
         "cooldownTipsDungeonId": [
             {
                 "Value": 7302
@@ -1558,8 +2290,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 474765937
+        ]
     },
     {
         "id": 1040,
@@ -1567,7 +2298,7 @@
         "dungeonEntryId": 469,
         "type": "DUNGEON_ENTRY_TYPE_SUMO",
         "isShowInAdvHandbook": false,
-        "desc": "Hyakunin Ikki",
+        "descTextMapHash": 916511777,
         "cooldownTipsDungeonId": [
             {
                 "Value": 3027
@@ -1596,8 +2327,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 916511777
+        ]
     },
     {
         "id": 1041,
@@ -1605,7 +2335,7 @@
         "dungeonEntryId": 512,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "The Adventurers' Guild has discovered a strange Domain in the outskirts of Liyue. This Domain seems to change based on the will of the people within it.\\nAt their request, you enter this Domain to begin investigating...",
+        "descTextMapHash": 1872280993,
         "cooldownTipsDungeonId": [
             {
                 "Value": 2122
@@ -1646,8 +2376,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1872280993
+        ]
     },
     {
         "id": 1042,
@@ -1655,7 +2384,7 @@
         "dungeonEntryId": 520,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "This area was cut away on the outskirts of The Chasm to serve as a research facility for studying \"Vibro-Crystal Harmonics.\" Crystals grow on the two ends of the platform. The platform's environs can be affected by the reactions between the crystals.",
+        "descTextMapHash": 3392902889,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": true,
         "isDailyRefresh": false,
@@ -1680,8 +2409,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3392902889
+        ]
     },
     {
         "id": 1043,
@@ -1689,7 +2417,7 @@
         "dungeonEntryId": 503,
         "type": "DUNGEON_ENTRY_TYPE_TRIAL",
         "isShowInAdvHandbook": true,
-        "desc": "???",
+        "descTextMapHash": 1825844521,
         "cooldownTipsDungeonId": [
             {
                 "Value": 131
@@ -1727,8 +2455,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1825844521
+        ]
     },
     {
         "id": 1045,
@@ -1736,7 +2463,7 @@
         "dungeonEntryId": 9,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "You discover a mysterious space while exploring the now-slightly-different Golden Apple Archipelago. This place seems intimately related to the quaint old bonsai that the Kaedehara Clan kept...",
+        "descTextMapHash": 1672606017,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1761,8 +2488,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1672606017
+        ]
     },
     {
         "id": 1046,
@@ -1770,7 +2496,7 @@
         "dungeonEntryId": 48,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "You discover a mysterious space while exploring the now-slightly-different Golden Apple Archipelago. This place seems intimately related to the quaint old bonsai that the Kaedehara Clan kept...",
+        "descTextMapHash": 2432468609,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1795,8 +2521,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2432468609
+        ]
     },
     {
         "id": 1047,
@@ -1804,7 +2529,7 @@
         "dungeonEntryId": 50,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "A mysterious realm that only Fischl's text, the \"Hymn of the Holy Land,\" is able to unlock the path to. An austere and sacred aura surrounds this place, and the borders of common sense begin to blur here.",
+        "descTextMapHash": 3819188313,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1829,8 +2554,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3819188313
+        ]
     },
     {
         "id": 1048,
@@ -1838,7 +2562,7 @@
         "dungeonEntryId": 52,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "This domain looms large as you visit another island shrouded in illusion. The strange plants around this domain resemble instruments. Perhaps this might prove the ideal stage for a certain resident rocker to show her stuff?",
+        "descTextMapHash": 3815529809,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1863,8 +2587,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3815529809
+        ]
     },
     {
         "id": 1049,
@@ -1872,7 +2595,7 @@
         "dungeonEntryId": 54,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "You find this strange realm under Mona's guidance. The way of entering this place is quite unique indeed. You reckon it must have quite the deep association with the genius astrologer...",
+        "descTextMapHash": 1635795273,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1897,8 +2620,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1635795273
+        ]
     },
     {
         "id": 1050,
@@ -1906,7 +2628,7 @@
         "dungeonEntryId": 11,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "You discover a mysterious space while exploring the now-slightly-different Golden Apple Archipelago. This place seems intimately related to the quaint old bonsai that the Kaedehara Clan kept...",
+        "descTextMapHash": 4117405465,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1931,8 +2653,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 4117405465
+        ]
     },
     {
         "id": 1051,
@@ -1940,7 +2661,7 @@
         "dungeonEntryId": 13,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "You discover a mysterious space while exploring the now-slightly-different Golden Apple Archipelago. This place seems intimately related to the quaint old bonsai that the Kaedehara Clan kept...",
+        "descTextMapHash": 3793477353,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1965,8 +2686,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3793477353
+        ]
     },
     {
         "id": 1052,
@@ -1974,7 +2694,7 @@
         "dungeonEntryId": 15,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "A mysterious realm that only Fischl's text, the \"Hymn of the Holy Land,\" is able to unlock the path to. An austere and sacred aura surrounds this place, and the borders of common sense begin to blur here.",
+        "descTextMapHash": 1581179913,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -1999,8 +2719,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1581179913
+        ]
     },
     {
         "id": 1053,
@@ -2008,7 +2727,7 @@
         "dungeonEntryId": 17,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "A mysterious realm that only Fischl's text, the \"Hymn of the Holy Land,\" is able to unlock the path to. An austere and sacred aura surrounds this place, and the borders of common sense begin to blur here.",
+        "descTextMapHash": 3136096641,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -2033,8 +2752,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3136096641
+        ]
     },
     {
         "id": 1054,
@@ -2042,7 +2760,7 @@
         "dungeonEntryId": 19,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "A mysterious realm that only Fischl's text, the \"Hymn of the Holy Land,\" is able to unlock the path to. An austere and sacred aura surrounds this place, and the borders of common sense begin to blur here.",
+        "descTextMapHash": 2666163025,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -2067,8 +2785,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2666163025
+        ]
     },
     {
         "id": 1055,
@@ -2076,7 +2793,7 @@
         "dungeonEntryId": 27,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "This domain looms large as you visit another island shrouded in illusion. The strange plants around this domain resemble instruments. Perhaps this might prove the ideal stage for a certain resident rocker to show her stuff?",
+        "descTextMapHash": 3840739633,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -2101,8 +2818,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 3840739633
+        ]
     },
     {
         "id": 1056,
@@ -2110,7 +2826,7 @@
         "dungeonEntryId": 29,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "You find this strange realm under Mona's guidance. The way of entering this place is quite unique indeed. You reckon it must have quite the deep association with the genius astrologer...",
+        "descTextMapHash": 1305580185,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": false,
         "isDailyRefresh": false,
@@ -2135,8 +2851,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1305580185
+        ]
     },
     {
         "id": 1057,
@@ -2144,7 +2859,7 @@
         "dungeonEntryId": 613,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "Hajanad discovered this Domain during her expedition. There are enemies of varying strength lurking within it. Their specific emergence patterns are suitable for studying the effects of her \"Remelting Tablets\"...",
+        "descTextMapHash": 705732569,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": true,
         "isDailyRefresh": false,
@@ -2169,8 +2884,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 705732569
+        ]
     },
     {
         "id": 1058,
@@ -2178,7 +2892,7 @@
         "dungeonEntryId": 620,
         "type": "DUNGEON_ENTRY_TYPE_ACTIVITY",
         "isShowInAdvHandbook": false,
-        "desc": "A research facility located on the border between Sumeru and Liyue. Monsters from both sides can be lured here, serving as involuntary research subjects.",
+        "descTextMapHash": 2408826137,
         "cooldownTipsDungeonId": [],
         "isDefaultOpen": true,
         "isDailyRefresh": false,
@@ -2203,8 +2917,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2408826137
+        ]
     },
     {
         "id": 1061,
@@ -2212,7 +2925,7 @@
         "dungeonEntryId": 607,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 2522783185,
         "cooldownTipsDungeonId": [
             {
                 "Value": 4044
@@ -2241,8 +2954,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2522783185
+        ]
     },
     {
         "id": 1062,
@@ -2250,7 +2962,7 @@
         "dungeonEntryId": 646,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 2603966985,
         "cooldownTipsDungeonId": [
             {
                 "Value": 4045
@@ -2279,8 +2991,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 2603966985
+        ]
     },
     {
         "id": 1063,
@@ -2288,7 +2999,7 @@
         "dungeonEntryId": 618,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 1453158609,
         "cooldownTipsDungeonId": [
             {
                 "Value": 4046
@@ -2317,8 +3028,7 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1453158609
+        ]
     },
     {
         "id": 1064,
@@ -2326,7 +3036,7 @@
         "dungeonEntryId": 600,
         "type": "DUNGEON_ENTRY_TYPE_NORMAL",
         "isShowInAdvHandbook": false,
-        "desc": "",
+        "descTextMapHash": 1399948745,
         "cooldownTipsDungeonId": [
             {
                 "Value": 4047
@@ -2355,797 +3065,6 @@
             [],
             [],
             []
-        ],
-        "descTextMapHash": 1399948745
-    },
-    {
-        "id": 11,
-        "sceneId": 3,
-        "dungeonEntryId": 131,
-        "type": "DUNGEN_ENTRY_TYPE_AVATAR_TALENT",
-        "isShowInAdvHandbook": true,
-        "desc": "Once, people who sought the path of the adepti had to pass the trials of heaven and earth. Taishan Mansion served as the trial of \"earth.\" Now that the adepti have long departed from this realm, Taishan Mansion has also turned into a common treasure trove.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": true,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 27,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 101801,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_Fire",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220408,
-        "descriptionCycleRewardList": [
-            [
-                104310,
-                104311,
-                104312
-            ],
-            [
-                104313,
-                104314,
-                104315
-            ],
-            [
-                104316,
-                104317,
-                104318
-            ],
-            [
-                104310,
-                104311,
-                104312,
-                104313,
-                104314,
-                104315,
-                104316,
-                104317,
-                104318
-            ]
-        ],
-        "descTextMapHash": 2189301337
-    },
-    {
-        "id": 12,
-        "sceneId": 3,
-        "dungeonEntryId": 221,
-        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
-        "isShowInAdvHandbook": true,
-        "desc": "This city entombed in snow once had a proud, romantic name to call its own, just as the mountain itself was once lush and verdant in the ancient past. But after the nail that froze the skies over descended upon this mountain, the festive site where priests ascended to face the heavens can no longer hear its voice, nor will those priests ever return again.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 22,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 39604,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_Cubic_Cold_1",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220414,
-        "descriptionCycleRewardList": [
-            [],
-            [],
-            [],
-            []
-        ],
-        "descTextMapHash": 4215300953
-    },
-    {
-        "id": 13,
-        "sceneId": 3,
-        "dungeonEntryId": 282,
-        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
-        "isShowInAdvHandbook": true,
-        "desc": "Standing proudly over the start of the ridge, these ancient city ruins overlook both north and south, both mountain and river, like a boundary marker. Legend has it that its gates and blessings are only open to those whose hearts are lit with an eternal blaze.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 22,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 39604,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_Cubic_Normal_1",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220415,
-        "descriptionCycleRewardList": [
-            [],
-            [],
-            [],
-            []
-        ],
-        "descTextMapHash": 407495801
-    },
-    {
-        "id": 14,
-        "sceneId": 3,
-        "dungeonEntryId": 368,
-        "type": "DUNGEN_ENTRY_TYPE_WEAPON_PROMOTE",
-        "isShowInAdvHandbook": true,
-        "desc": "They say that in antediluvian times now lost to history, there was once a foolish ruler who dreamed of building a high garden in honor of the white sacred tree over the primordial sands. Now, dead silence fills the kingdom built on sand, but the obsessions of the past remain.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": true,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 30,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 201310,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_Rock",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220416,
-        "descriptionCycleRewardList": [
-            [
-                114025,
-                114026,
-                114027,
-                114028
-            ],
-            [
-                114029,
-                114030,
-                114031,
-                114032
-            ],
-            [
-                114033,
-                114034,
-                114035,
-                114036
-            ],
-            [
-                114025,
-                114026,
-                114027,
-                114028,
-                114029,
-                114030,
-                114031,
-                114032,
-                114033,
-                114034,
-                114035,
-                114036
-            ]
-        ],
-        "descTextMapHash": 3563711113
-    },
-    {
-        "id": 15,
-        "sceneId": 3,
-        "dungeonEntryId": 310,
-        "type": "DUNGEN_ENTRY_TYPE_AVATAR_TALENT",
-        "isShowInAdvHandbook": true,
-        "desc": "Sometime in the ancient past, the mountains rose higher than the skies, and the earth was larger than heaven's dome. But one day, the mirror shattered, and the oceans arose. In these legends, this caused the court of the primeval sakura to become sundered from the other islands.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": true,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 30,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 201310,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_Thunder_Dq",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220417,
-        "descriptionCycleRewardList": [
-            [
-                104320,
-                104321,
-                104322
-            ],
-            [
-                104323,
-                104324,
-                104325
-            ],
-            [
-                104326,
-                104327,
-                104328
-            ],
-            [
-                104320,
-                104321,
-                104322,
-                104323,
-                104324,
-                104325,
-                104326,
-                104327,
-                104328
-            ]
-        ],
-        "descTextMapHash": 1335742113
-    },
-    {
-        "id": 16,
-        "sceneId": 3,
-        "dungeonEntryId": 361,
-        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
-        "isShowInAdvHandbook": true,
-        "desc": "This court is ever a silent scene of falling red leaves. Perhaps lost causes and unforgettable loves may follow the veins of the earth and coalesce into the fruits of the court's white tree.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 30,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 201310,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_ThunderCave_Dq",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220418,
-        "descriptionCycleRewardList": [
-            [],
-            [],
-            [],
-            []
-        ],
-        "descTextMapHash": 2252726481
-    },
-    {
-        "id": 17,
-        "sceneId": 3,
-        "dungeonEntryId": 433,
-        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
-        "isShowInAdvHandbook": true,
-        "desc": "This great hall stood when Seirai Island neither had the name it has now, nor had it yet been stained with the color of thunder. The scenery within will probably never change, either.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 30,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 201310,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_ThunderCave_Dq",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220419,
-        "descriptionCycleRewardList": [
-            [],
-            [],
-            [],
-            []
-        ],
-        "descTextMapHash": 831946953
-    },
-    {
-        "id": 18,
-        "sceneId": 3,
-        "dungeonEntryId": 516,
-        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
-        "isShowInAdvHandbook": true,
-        "desc": "The ancient ritual grounds were buried beneath the earth amidst a cataclysm that tore heaven and earth asunder before being uplifted by the descent of an alien object, and finally unveiled by a destructive battle that resulted from a betrayal. Nonetheless, those who once frequented this place are no more.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 22,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 39604,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_CycleDungeonChasm",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220420,
-        "descriptionCycleRewardList": [
-            [],
-            [],
-            [],
-            []
-        ],
-        "descTextMapHash": 2021257257
-    },
-    {
-        "id": 19,
-        "sceneId": 3,
-        "dungeonEntryId": 505,
-        "type": "DUNGEN_ENTRY_TYPE_AVATAR_TALENT",
-        "isShowInAdvHandbook": true,
-        "desc": "",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 22,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 101801,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_XMCharacter01",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220422,
-        "descriptionCycleRewardList": [
-            [
-                104329,
-                104330,
-                104331
-            ],
-            [
-                104332,
-                104333,
-                104334
-            ],
-            [
-                104335,
-                104336,
-                104337
-            ],
-            [
-                104329,
-                104330,
-                104331,
-                104332,
-                104333,
-                104334,
-                104335,
-                104336,
-                104337
-            ]
-        ],
-        "descTextMapHash": 3613595857
-    },
-    {
-        "id": 2,
-        "sceneId": 3,
-        "dungeonEntryId": 50,
-        "type": "DUNGEN_ENTRY_TYPE_WEAPON_PROMOTE",
-        "isShowInAdvHandbook": true,
-        "desc": "The Cecilia flowers that only grow on high cliffs once bloomed in the greenhouses here. The ancient civilization that once enjoyed the scent of the Cecilia was lost, and so too was the sea of white flowers.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": true,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 16,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 38406,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_Water",
-        "systemOpenUiId": 8,
-        "rewardDataId": 220402,
-        "descriptionCycleRewardList": [
-            [
-                114001,
-                114002,
-                114003,
-                114004
-            ],
-            [
-                114005,
-                114006,
-                114007,
-                114008
-            ],
-            [
-                114009,
-                114010,
-                114011,
-                114012
-            ],
-            [
-                114001,
-                114002,
-                114003,
-                114004,
-                114005,
-                114006,
-                114007,
-                114008,
-                114009,
-                114010,
-                114011,
-                114012
-            ]
-        ],
-        "descTextMapHash": 3914992809
-    },
-    {
-        "id": 20,
-        "sceneId": 3,
-        "dungeonEntryId": 507,
-        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
-        "isShowInAdvHandbook": true,
-        "desc": "",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 22,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 39604,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_XMRelic01",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220423,
-        "descriptionCycleRewardList": [
-            [],
-            [],
-            [],
-            []
-        ],
-        "descTextMapHash": 3394002473
-    },
-    {
-        "id": 21,
-        "sceneId": 3,
-        "dungeonEntryId": 509,
-        "type": "DUNGEN_ENTRY_TYPE_WEAPON_PROMOTE",
-        "isShowInAdvHandbook": true,
-        "desc": "",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 22,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 38406,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_XMWeapon01",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220421,
-        "descriptionCycleRewardList": [
-            [
-                114037,
-                114038,
-                114039,
-                114040
-            ],
-            [
-                114041,
-                114042,
-                114043,
-                114044
-            ],
-            [
-                114045,
-                114046,
-                114047,
-                114048
-            ],
-            [
-                114037,
-                114038,
-                114039,
-                114040,
-                114041,
-                114042,
-                114043,
-                114044,
-                114045,
-                114046,
-                114047,
-                114048
-            ]
-        ],
-        "descTextMapHash": 1711971481
-    },
-    {
-        "id": 3,
-        "sceneId": 3,
-        "dungeonEntryId": 135,
-        "type": "DUNGEN_ENTRY_TYPE_WEAPON_PROMOTE",
-        "isShowInAdvHandbook": true,
-        "desc": "The operation of the Lianshan Formula created endless thunderstorms within the bowels of the mountain. It is said that the rumbling sounds of thunder that one hears outside the domain's gates call out to curious souls.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": true,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 16,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 38406,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_Thunder",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220407,
-        "descriptionCycleRewardList": [
-            [
-                114013,
-                114014,
-                114015,
-                114016
-            ],
-            [
-                114017,
-                114018,
-                114019,
-                114020
-            ],
-            [
-                114021,
-                114022,
-                114023,
-                114024
-            ],
-            [
-                114013,
-                114014,
-                114015,
-                114016,
-                114017,
-                114018,
-                114019,
-                114020,
-                114021,
-                114022,
-                114023,
-                114024
-            ]
-        ],
-        "descTextMapHash": 1293176289
-    },
-    {
-        "id": 4,
-        "sceneId": 3,
-        "dungeonEntryId": 117,
-        "type": "DUNGEON_ENTRY_TYPE_NORMAL",
-        "isShowInAdvHandbook": false,
-        "desc": "Though it may seem like a clear pond, the amount of treasures hidden below is enough to drive a person mad. Unfortunately, few who can decipher its secrets remain.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_NONE",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_NONE",
-                "param1": 0,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_NONE",
-                "param1": 0,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_HuZhongTian",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220406,
-        "descriptionCycleRewardList": [
-            [],
-            [],
-            [],
-            []
-        ],
-        "descTextMapHash": 77310385
-    },
-    {
-        "id": 6,
-        "sceneId": 3,
-        "dungeonEntryId": 42,
-        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
-        "isShowInAdvHandbook": true,
-        "desc": "After a period of time, the people of the continent lost track of the past. They attempt to explore downwards, searching for the things that they had forgotten. On the other side of the ancient tree's hollow, the secrets of yesterday have become today's treasures.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 22,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 39604,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_Cubic_Normal_1",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220405,
-        "descriptionCycleRewardList": [
-            [],
-            [],
-            [],
-            []
-        ],
-        "descTextMapHash": 2667941777
-    },
-    {
-        "id": 7,
-        "sceneId": 3,
-        "dungeonEntryId": 137,
-        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
-        "isShowInAdvHandbook": true,
-        "desc": "Delusions and disappointments of an ancient ambition to lead humanity are gathered here. It refuses to give up on its lofty ambitions, though it is for now consigned to fester in the cavernous depths of Guyun.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 22,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 39604,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_Cubic_Normal_2",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220409,
-        "descriptionCycleRewardList": [
-            [],
-            [],
-            [],
-            []
-        ],
-        "descTextMapHash": 767933225
-    },
-    {
-        "id": 8,
-        "sceneId": 3,
-        "dungeonEntryId": 107,
-        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
-        "isShowInAdvHandbook": true,
-        "desc": "There is a secret ritual that can conceal one gate out of eight, cutting off the route for evil to escape. This ritual was performed here long ago, sealing demons within this labyrinth. Rumor has it that the Method to fit Pillars with Zhou Formula presently seals an evil Chi.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 22,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 39604,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_Cubic_Normal_3",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220410,
-        "descriptionCycleRewardList": [
-            [],
-            [],
-            [],
-            []
-        ],
-        "descTextMapHash": 692041689
-    },
-    {
-        "id": 9,
-        "sceneId": 3,
-        "dungeonEntryId": 139,
-        "type": "DUNGEN_ENTRY_TYPE_RELIQUARY",
-        "isShowInAdvHandbook": true,
-        "desc": "Mt. Aocang is a place of secret wonders. What at first merely seems like beautiful scenery in fact conceals a stone cave that connects to the heavens and breathes out clouds. Nonetheless, this is not how the saying \"where the clouds emerge\" was derived.",
-        "cooldownTipsDungeonId": [],
-        "isDefaultOpen": false,
-        "isDailyRefresh": false,
-        "condComb": "LOGIC_OR",
-        "satisfiedCond": [
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_LEVEL",
-                "param1": 22,
-                "param2": 0
-            },
-            {
-                "type": "DUNGEON_ENTRY_CONDITION_QUEST",
-                "param1": 39604,
-                "param2": 0
-            }
-        ],
-        "picPath": "UI_DungeonPic_Cubic_Normal_4",
-        "systemOpenUiId": 0,
-        "rewardDataId": 220411,
-        "descriptionCycleRewardList": [
-            [],
-            [],
-            [],
-            []
-        ],
-        "descTextMapHash": 142290817
+        ]
     }
 ]
