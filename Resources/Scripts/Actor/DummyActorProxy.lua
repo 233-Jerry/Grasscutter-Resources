@@ -259,19 +259,6 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2,
   L15_2(L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2)
 end
 L0_1.NpcFollowTaskWithParams = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2
-  if A1_2 == true and A2_2 == nil then
-    A2_2 = 75
-  end
-  L3_2 = actorUtils
-  L3_2 = L3_2.SetNpcDyncToGround
-  L4_2 = A0_2.alias
-  L5_2 = A1_2
-  L6_2 = A2_2
-  L3_2(L4_2, L5_2, L6_2)
-end
-L0_1.SetDynAdapterToGround = L1_1
 function L1_1(A0_2)
   local L1_2
   L1_2 = 0
@@ -1398,13 +1385,12 @@ L0_1.WarningNarratorTable = 0
 L0_1.TaskOnResumeDelay = 0
 L0_1.TaskOnPauseReminder = 0
 L0_1.TaskOnResumeReminder = 0
-L1_1 = "CreateWindLocal"
-function L2_1(A0_2)
+function L1_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1[L1_1] = L2_1
+L0_1.CreateWindLocal = L1_1
 L1_1 = "DestroyWindLocal"
 function L2_1(A0_2)
   local L1_2
