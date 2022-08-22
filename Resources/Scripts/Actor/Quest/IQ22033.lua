@@ -110,9 +110,9 @@ function L7_1(A0_2, A1_2)
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.ShowBlackScreen
-  L4_2 = 0.5
-  L5_2 = 1.5
-  L6_2 = 0.5
+  L4_2 = 0
+  L5_2 = 0
+  L6_2 = 0
   function L7_2(A0_3)
     local L1_3, L2_3, L3_3, L4_3
     L2_3 = A0_3
