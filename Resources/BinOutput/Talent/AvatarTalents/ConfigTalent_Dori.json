@@ -106,8 +106,20 @@
       "talentParam": "Dori_PermanentSkill_2"
     },
     {
+      "$type": "UnlockTalentParam",
+      "abilityName": "Avatar_Dori_ElementalArt_SubBullet_Material",
+      "talentParam": "Dori_PermanentSkill_2"
+    },
+    {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Dori_ElementalArt_Bullet_Material",
+      "paramSpecial": "ReviveEnergy_Ratio",
+      "paramDelta": "%1",
+      "paramRatio": 0.0
+    },
+    {
+      "$type": "ModifyAbility",
+      "abilityName": "Avatar_Dori_ElementalArt_SubBullet_Material",
       "paramSpecial": "ReviveEnergy_Ratio",
       "paramDelta": "%1",
       "paramRatio": 0.0

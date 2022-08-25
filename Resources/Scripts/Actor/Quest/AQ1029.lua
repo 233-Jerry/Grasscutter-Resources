@@ -663,15 +663,10 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFailed102905 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart102906"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.RequestInteraction
-  L4_2 = L6_1.Npc1044Data
-  L4_2 = L4_2.alias
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart102906 = L8_1
 function L8_1(A0_2, A1_2)

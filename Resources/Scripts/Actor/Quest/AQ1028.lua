@@ -398,20 +398,10 @@ function L7_1(A0_2, A1_2)
 end
 L1_1.OnSubStart102807 = L7_1
 function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish102807"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.ActionSafeCall
-  function L4_2(A0_3)
-    local L1_3, L2_3, L3_3
-    L2_3 = A0_3
-    L1_3 = A0_3.ShowTutorialDialog
-    L3_3 = 1148
-    L1_3(L2_3, L3_3)
-  end
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish102807 = L7_1
 return L1_1

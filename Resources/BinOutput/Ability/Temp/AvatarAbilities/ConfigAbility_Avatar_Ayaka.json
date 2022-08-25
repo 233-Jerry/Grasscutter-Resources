@@ -3,13 +3,13 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_ExtraAttack",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "ButtonHoldChargeMixin",
                     "overtime": 10024,
-                    "chargeTime": 0.11999999731779099,
-                    "secondChargeTime": 0.20000000298023224,
-                    "OnBeginUncharged": [
+                    "DBKLMBJJHDP": 0.11999999731779099,
+                    "BLOPHAGIDDP": 0.20000000298023224,
+                    "CBGHBGNKMPO": [
                         {
                             "$type": "SetAnimatorTrigger",
                             "triggerID": "DoSkill"
@@ -22,15 +22,15 @@
                                     "predicates": [
                                         {
                                             "$type": "ByAnimatorInt",
-                                            "logic": "Equal",
+                                            "GMFCOCAJBDM": "Equal",
                                             "value": 0,
-                                            "parameter": "ComboCount"
+                                            "MOCGJNIDDAI": "ComboCount"
                                         },
                                         {
                                             "$type": "ByAnimatorInt",
-                                            "logic": "Equal",
+                                            "GMFCOCAJBDM": "Equal",
                                             "value": 5,
-                                            "parameter": "ComboCount"
+                                            "MOCGJNIDDAI": "ComboCount"
                                         }
                                     ]
                                 }
@@ -40,27 +40,27 @@
                         },
                         {
                             "$type": "SetAnimatorBool",
-                            "boolID": "IsCharging"
+                            "HHFIHBEAPAP": "IsCharging"
                         }
                     ],
-                    "OnReleaseUncharged": [
+                    "CGFPHLEJDMJ": [
                         {
                             "$type": "SetAnimatorInt",
                             "intID": "SkillID",
                             "value": 1.0
                         }
                     ],
-                    "OnBeginCharged": [
+                    "PKNMLLHNOLA": [
                         {
                             "$type": "SetAnimatorBool",
-                            "boolID": "IsCharging",
+                            "HHFIHBEAPAP": "IsCharging",
                             "value": true
                         }
                     ],
-                    "OnReleaseCharged": [
+                    "NFPDHLMEPGB": [
                         {
                             "$type": "SetAnimatorBool",
-                            "boolID": "IsCharging"
+                            "HHFIHBEAPAP": "IsCharging"
                         },
                         {
                             "$type": "SetAnimatorInt",
@@ -68,14 +68,14 @@
                             "value": 1.0
                         }
                     ],
-                    "OnBeginSecondCharged": [
+                    "EGNJLDKPBMI": [
                         {
                             "$type": "SetAnimatorTrigger",
                             "predicates": [
                                 {
                                     "$type": "ByLocalAvatarStamina",
-                                    "logic": "GreaterOrEqual",
-                                    "stamina": [
+                                    "GMFCOCAJBDM": "GreaterOrEqual",
+                                    "JBAKBEFIMBN": [
                                         "ExtraAttack_Sword_Stamina_Cost",
                                         "Flexible_Stamina",
                                         "Add"
@@ -89,8 +89,8 @@
                             "predicates": [
                                 {
                                     "$type": "ByLocalAvatarStamina",
-                                    "logic": "GreaterOrEqual",
-                                    "stamina": [
+                                    "GMFCOCAJBDM": "GreaterOrEqual",
+                                    "JBAKBEFIMBN": [
                                         "ExtraAttack_Sword_Stamina_Cost",
                                         "Flexible_Stamina",
                                         "Add"
@@ -102,10 +102,10 @@
                         },
                         {
                             "$type": "SetAnimatorBool",
-                            "boolID": "IsCharging"
+                            "HHFIHBEAPAP": "IsCharging"
                         }
                     ],
-                    "chargeStateIDs": [
+                    "KBDIHBMGNBC": [
                         "Attack01",
                         "Attack02",
                         "Attack03",
@@ -121,20 +121,20 @@
                     "GAIGOBCNNEE": "ExtraAttack_StaminaCost"
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "ExtraAttack_Sword_Stamina_Cost": 0.0,
                 "Flexible_Stamina": -2.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "ExtraAttack_StaminaCost": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AvatarSkillStart",
                             "overtime": 10001,
-                            "cdRatio": 1.0,
-                            "costStaminaRatio": "ExtraAttack_Sword_Stamina_Cost"
+                            "AFPAPIFKIHK": 1.0,
+                            "JFIJFCKLFCF": "ExtraAttack_Sword_Stamina_Cost"
                         }
                     ]
                 }
@@ -145,14 +145,14 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_ExtraAttack_Damage",
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "SetTargetNumToGlobalValue",
                     "MMPBKJNECFG": {
                         "$type": "SelectTargetsByShape",
-                        "shapeName": "CircleR5",
-                        "campTargetType": "Enemy",
-                        "sizeRatio": 1.0
+                        "JBKKOJLJHDK": "CircleR5",
+                        "ONPOPLLHJLE": "Enemy",
+                        "CJJABKCAIEB": 1.0
                     },
                     "LBEEKCNODDB": [
                         {
@@ -163,24 +163,24 @@
                             ]
                         }
                     ],
-                    "dstTarget": "Self",
-                    "key": "_Ability_Ayaka_ExtarAttack_AttackeeCount",
-                    "maxValue": 0.0,
-                    "minValue": 0.0
+                    "KNAELFCJEPL": "Self",
+                    "HJJEAOMEOFI": "_Ability_Ayaka_ExtarAttack_AttackeeCount",
+                    "JDHHMBHOOEC": 0.0,
+                    "KHAHOELDONA": 0.0
                 },
                 {
                     "$type": "CreateGadget",
-                    "otherTargets": {
+                    "GILFKOBKGLI": {
                         "$type": "SelectTargetsByShape",
-                        "topLimit": 5,
-                        "entityTypePriority": [
+                        "DJLKFLJENEG": 5,
+                        "OOOFAPPEOJK": [
                             "Monster",
                             "Gadget"
                         ],
-                        "shapeName": "CircleR4",
-                        "centerBasedOn": "SelfAttackTarget",
-                        "campTargetType": "Enemy",
-                        "sizeRatio": 1.0
+                        "JBKKOJLJHDK": "CircleR4",
+                        "HGGKBNKCCFA": "SelfAttackTarget",
+                        "ONPOPLLHJLE": "Enemy",
+                        "CJJABKCAIEB": 1.0
                     },
                     "predicates": [
                         {
@@ -195,27 +195,27 @@
                         },
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_Ability_Ayaka_ExtarAttack_AttackeeCount",
+                            "HJJEAOMEOFI": "_Ability_Ayaka_ExtarAttack_AttackeeCount",
                             "value": 0.0,
-                            "forceByCaster": true,
-                            "compareType": "MoreThan"
+                            "EODMLMGMLNP": true,
+                            "ONPJJFKDCED": "MoreThan"
                         }
                     ],
-                    "born": {
+                    "NGDMCBABOJA": {
                         "$type": "ConfigBornBySelectedPoint",
                         "offset": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0
+                            "AEAAJCIDPED": 0.0,
+                            "KAAPLGBEDPM": 0.0,
+                            "PHDCJAHHIOG": 0.0
                         }
                     },
-                    "gadgetID": 41002006,
-                    "campID": 1001,
-                    "campTargetType": "Enemy"
+                    "CABLIPAKCGB": 41002006,
+                    "DOLAJLACEDF": 1001,
+                    "ONPOPLLHJLE": "Enemy"
                 },
                 {
                     "$type": "CreateGadget",
-                    "target": "SelfAttackTarget",
+                    "NPHOOPNDCAC": "SelfAttackTarget",
                     "predicates": [
                         {
                             "$type": "ByEntityTypes",
@@ -229,27 +229,27 @@
                         },
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_Ability_Ayaka_ExtarAttack_AttackeeCount",
+                            "HJJEAOMEOFI": "_Ability_Ayaka_ExtarAttack_AttackeeCount",
                             "value": 0.0,
-                            "forceByCaster": true,
-                            "compareType": "NoneOrEqual"
+                            "EODMLMGMLNP": true,
+                            "ONPJJFKDCED": "NoneOrEqual"
                         }
                     ],
-                    "born": {
+                    "NGDMCBABOJA": {
                         "$type": "ConfigBornBySelf",
                         "offset": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 3.700000047683716
+                            "AEAAJCIDPED": 0.0,
+                            "KAAPLGBEDPM": 0.0,
+                            "PHDCJAHHIOG": 3.700000047683716
                         }
                     },
-                    "gadgetID": 41002006,
-                    "campID": 1001,
-                    "campTargetType": "Enemy"
+                    "CABLIPAKCGB": 41002006,
+                    "DOLAJLACEDF": 1001,
+                    "ONPOPLLHJLE": "Enemy"
                 },
                 {
                     "$type": "CreateGadget",
-                    "target": "SelfAttackTarget",
+                    "NPHOOPNDCAC": "SelfAttackTarget",
                     "predicates": [
                         {
                             "$type": "ByEntityTypes",
@@ -257,23 +257,23 @@
                                 "Gadget",
                                 "Monster"
                             ],
-                            "reject": true
+                            "GDLDGAGGKPN": true
                         },
                         {
                             "$type": "ByHasAttackTarget"
                         }
                     ],
-                    "born": {
+                    "NGDMCBABOJA": {
                         "$type": "ConfigBornBySelf",
                         "offset": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 3.700000047683716
+                            "AEAAJCIDPED": 0.0,
+                            "KAAPLGBEDPM": 0.0,
+                            "PHDCJAHHIOG": 3.700000047683716
                         }
                     },
-                    "gadgetID": 41002006,
-                    "campID": 1001,
-                    "campTargetType": "Enemy"
+                    "CABLIPAKCGB": 41002006,
+                    "DOLAJLACEDF": 1001,
+                    "ONPOPLLHJLE": "Enemy"
                 },
                 {
                     "$type": "CreateGadget",
@@ -287,17 +287,17 @@
                             ]
                         }
                     ],
-                    "born": {
+                    "NGDMCBABOJA": {
                         "$type": "ConfigBornByTarget",
                         "offset": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 3.700000047683716
+                            "AEAAJCIDPED": 0.0,
+                            "KAAPLGBEDPM": 0.0,
+                            "PHDCJAHHIOG": 3.700000047683716
                         }
                     },
-                    "gadgetID": 41002006,
-                    "campID": 1001,
-                    "campTargetType": "Enemy"
+                    "CABLIPAKCGB": 41002006,
+                    "DOLAJLACEDF": 1001,
+                    "ONPOPLLHJLE": "Enemy"
                 }
             ]
         }
@@ -306,32 +306,32 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_ExtraAttack_Damage_Gadget",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "Ayaka_ExtraAttack_Damage": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Avatar_Ayaka_ExtraAttack_Damage_Handler": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.5,
+                    "GMIMMDOGGIO": 0.5,
                     "elementDurability": 100.0,
-                    "thinkInterval": 0.10000000149011612,
-                    "onAdded": [
+                    "IKKMDDLDLIN": 0.10000000149011612,
+                    "KCICDEJLIJD": [
                         {
                             "$type": "TriggerAttackEvent",
-                            "target": "OriginOwner",
-                            "attackEvent": {
+                            "NPHOOPNDCAC": "OriginOwner",
+                            "DMCJDGELKBC": {
                                 "attackPattern": {
                                     "$type": "ConfigAttackSphere",
                                     "lifeTime": "TriggerNoRepeat",
-                                    "born": {
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.5,
-                                            "z": 0.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.5,
+                                            "PHDCJAHHIOG": 0.0
                                         }
                                     },
-                                    "radius": 1.0
+                                    "ICGFCBOFFDI": 1.0
                                 },
                                 "attackInfo": {
                                     "attackTag": "ExtraAttack",
@@ -354,25 +354,25 @@
                                     }
                                 }
                             },
-                            "targetType": "Enemy"
+                            "OJIFKEOCJGB": "Enemy"
                         }
                     ],
-                    "onThinkInterval": [
+                    "PBDDACFFPOE": [
                         {
                             "$type": "AddGlobalValue",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "value": 1.0,
-                            "key": "_ABILITY_Ayaka_ExtraAttack_HitCombo",
-                            "useLimitRange": true,
-                            "maxValue": 5.0,
-                            "minValue": 0.0
+                            "HJJEAOMEOFI": "_ABILITY_Ayaka_ExtraAttack_HitCombo",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 5.0,
+                            "KHAHOELDONA": 0.0
                         },
                         {
                             "$type": "ApplyModifier",
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_Ayaka_ExtraAttack_HitCombo",
+                                    "HJJEAOMEOFI": "_ABILITY_Ayaka_ExtraAttack_HitCombo",
                                     "value": 1.0
                                 }
                             ],
@@ -383,7 +383,7 @@
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_Ayaka_ExtraAttack_HitCombo",
+                                    "HJJEAOMEOFI": "_ABILITY_Ayaka_ExtraAttack_HitCombo",
                                     "value": 2.0
                                 }
                             ],
@@ -393,25 +393,25 @@
                 },
                 "Avatar_Ayaka_ExtraAttack_Damage_Gadget_1": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.10000000149011612,
+                    "GMIMMDOGGIO": 0.10000000149011612,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "TriggerAttackEvent",
-                            "target": "OriginOwner",
-                            "attackEvent": {
+                            "NPHOOPNDCAC": "OriginOwner",
+                            "DMCJDGELKBC": {
                                 "attackPattern": {
                                     "$type": "ConfigAttackSphere",
                                     "lifeTime": "TriggerNoRepeat",
-                                    "born": {
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.5,
-                                            "z": 0.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.5,
+                                            "PHDCJAHHIOG": 0.0
                                         }
                                     },
-                                    "radius": 1.0
+                                    "ICGFCBOFFDI": 1.0
                                 },
                                 "attackInfo": {
                                     "attackTag": "ExtraAttack",
@@ -434,31 +434,31 @@
                                     }
                                 }
                             },
-                            "targetType": "Enemy"
+                            "OJIFKEOCJGB": "Enemy"
                         }
                     ]
                 },
                 "Avatar_Ayaka_ExtraAttack_Damage_Gadget_2": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.10000000149011612,
+                    "GMIMMDOGGIO": 0.10000000149011612,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "TriggerAttackEvent",
-                            "target": "OriginOwner",
-                            "attackEvent": {
+                            "NPHOOPNDCAC": "OriginOwner",
+                            "DMCJDGELKBC": {
                                 "attackPattern": {
                                     "$type": "ConfigAttackSphere",
                                     "lifeTime": "TriggerNoRepeat",
-                                    "born": {
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.5,
-                                            "z": 0.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.5,
+                                            "PHDCJAHHIOG": 0.0
                                         }
                                     },
-                                    "radius": 1.0
+                                    "ICGFCBOFFDI": 1.0
                                 },
                                 "attackInfo": {
                                     "attackTag": "ExtraAttack",
@@ -490,48 +490,48 @@
                                     }
                                 }
                             },
-                            "targetType": "Enemy"
+                            "OJIFKEOCJGB": "Enemy"
                         }
                     ]
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "FireEffect",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "target": "Owner",
-                            "key": "_ABILITY_Ayaka_Constellation_6_IsCharged",
+                            "NPHOOPNDCAC": "Owner",
+                            "HJJEAOMEOFI": "_ABILITY_Ayaka_Constellation_6_IsCharged",
                             "value": 0.0,
-                            "compareType": "NoneOrEqual"
+                            "ONPJJFKDCED": "NoneOrEqual"
                         }
                     ],
-                    "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_ExtraAttack_00"
+                    "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_ExtraAttack_00"
                 },
                 {
                     "$type": "FireEffect",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "target": "Owner",
-                            "key": "_ABILITY_Ayaka_Constellation_6_IsCharged",
+                            "NPHOOPNDCAC": "Owner",
+                            "HJJEAOMEOFI": "_ABILITY_Ayaka_Constellation_6_IsCharged",
                             "value": 1.0
                         },
                         {
                             "$type": "ByUnlockTalentParam",
-                            "talentParam": "Ayaka_Constellation_6"
+                            "GFIJPNMCOGJ": "Ayaka_Constellation_6"
                         }
                     ],
-                    "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_ExtraAttack_Constellation_6"
+                    "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_ExtraAttack_Constellation_6"
                 },
                 {
                     "$type": "SetGlobalValue",
-                    "doOffStage": true,
+                    "ACOKKHADPOJ": true,
                     "value": 0.0,
-                    "key": "_ABILITY_Ayaka_ExtraAttack_HitCombo",
-                    "maxValue": 0.0,
-                    "minValue": 0.0
+                    "HJJEAOMEOFI": "_ABILITY_Ayaka_ExtraAttack_HitCombo",
+                    "JDHHMBHOOEC": 0.0,
+                    "KHAHOELDONA": 0.0
                 },
                 {
                     "$type": "ApplyModifier",
@@ -544,18 +544,18 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_NormalAttack05_CreateBullet",
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "TriggerBullet",
-                    "bulletID": 41002007,
-                    "born": {
+                    "NGAAOMEHOGE": 41002007,
+                    "NGDMCBABOJA": {
                         "$type": "ConfigBornByAttachPoint",
                         "offset": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0
+                            "AEAAJCIDPED": 0.0,
+                            "KAAPLGBEDPM": 0.0,
+                            "PHDCJAHHIOG": 0.0
                         },
-                        "attachPointName": "RootNode"
+                        "KJNJNKLLNCN": "RootNode"
                     }
                 }
             ]
@@ -565,11 +565,11 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_NormalAttack05_Bullet",
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "Predicated",
-                    "target": "Target",
-                    "targetPredicates": [
+                    "NPHOOPNDCAC": "Target",
+                    "ELDBAFHCOBL": [
                         {
                             "$type": "ByEntityTypes",
                             "entityTypes": [
@@ -577,10 +577,10 @@
                             ]
                         }
                     ],
-                    "successActions": [
+                    "NCNDEAPMKCP": [
                         {
                             "$type": "DamageByAttackValue",
-                            "target": "Target",
+                            "NPHOOPNDCAC": "Target",
                             "attackInfo": {
                                 "attackTag": "NormalAttack_05",
                                 "attenuationTag": "ExtraAttack",
@@ -612,24 +612,24 @@
                             }
                         }
                     ],
-                    "failActions": [
+                    "BMIOBLGLPIM": [
                         {
                             "$type": "TriggerAttackEvent",
-                            "target": "OriginOwner",
-                            "attackEvent": {
+                            "NPHOOPNDCAC": "OriginOwner",
+                            "DMCJDGELKBC": {
                                 "attackPattern": {
                                     "$type": "ConfigAttackSphere",
                                     "lifeTime": "TriggerNoRepeat",
-                                    "filterByFrame": true,
-                                    "born": {
+                                    "CFICIECHNKI": true,
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornByCollisionPoint",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.0,
-                                            "z": 0.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.0,
+                                            "PHDCJAHHIOG": 0.0
                                         }
                                     },
-                                    "radius": 0.800000011920929
+                                    "ICGFCBOFFDI": 0.800000011920929
                                 },
                                 "attackInfo": {
                                     "attackTag": "NormalAttack_05",
@@ -661,7 +661,7 @@
                                     "canBeModifiedBy": "OriginOwner"
                                 }
                             },
-                            "targetType": "Enemy"
+                            "OJIFKEOCJGB": "Enemy"
                         }
                     ]
                 }
@@ -672,20 +672,20 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_IceSlash",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "SkillButtonHoldChargeMixin",
                     "overtime": 10024,
-                    "nextLoopTriggerID": "NextLoopTrigger",
-                    "endHoldTrigger": "EndHoldTrigger",
-                    "beforeStateIDs": [
+                    "FBKEKCDNBGA": "NextLoopTrigger",
+                    "FPOECNCOANG": "EndHoldTrigger",
+                    "DALGCIDCLHM": [
                         "Attack01"
                     ],
-                    "chargeLoopStateIDs": [
+                    "DPOLLOHHCHN": [
                         "IceSlash_Charge1",
                         "IceSlash_Charge2"
                     ],
-                    "chargeLoopDurations": [
+                    "FDBPIFFNAND": [
                         1.0
                     ]
                 },
@@ -704,7 +704,7 @@
                     "GAIGOBCNNEE": "Charge2"
                 }
             ],
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Charge1": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0
@@ -716,10 +716,10 @@
                 "AttackDust": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_LiquidStrike_Spray"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_LiquidStrike_Spray"
                         }
                     ]
                 }
@@ -730,21 +730,21 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_Liquid_TriggerAbility",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "SkillButtonHoldChargeMixin",
                     "overtime": 10013,
-                    "nextLoopTriggerID": "NextLoopTrigger",
-                    "endHoldTrigger": "EndHoldTrigger",
-                    "beforeStateIDs": [
+                    "FBKEKCDNBGA": "NextLoopTrigger",
+                    "FPOECNCOANG": "EndHoldTrigger",
+                    "DALGCIDCLHM": [
                         "LiquidStrike_BS"
                     ],
-                    "chargeLoopStateIDs": [
+                    "DPOLLOHHCHN": [
                         "LiquidStrike_BS1",
                         "LiquidStrike_Move",
                         "LiquidStrike_MoveStandby"
                     ],
-                    "chargeLoopDurations": [
+                    "FDBPIFFNAND": [
                         0.009999999776482582,
                         60.0
                     ]
@@ -757,21 +757,21 @@
                     "GAIGOBCNNEE": "LiquidStrike_SetAnimatorTrigger"
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "StaminaStartCost": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "LiquidStrike_SetAnimatorTrigger": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "SetAnimatorTrigger",
                             "predicates": [
                                 {
                                     "$type": "ByLocalAvatarStamina",
-                                    "logic": "LesserOrEqual",
-                                    "stamina": 1.0
+                                    "GMFCOCAJBDM": "LesserOrEqual",
+                                    "JBAKBEFIMBN": 1.0
                                 }
                             ],
                             "triggerID": "EndHoldTrigger"
@@ -779,12 +779,12 @@
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "AvatarSkillStart",
                     "overtime": 10013,
-                    "cdRatio": 1.0,
-                    "costStaminaRatio": "StaminaStartCost"
+                    "AFPAPIFKIHK": 1.0,
+                    "JFIJFCKLFCF": "StaminaStartCost"
                 }
             ]
         }
@@ -793,7 +793,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_LiquidStrike",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AvatarSteerByCameraMixin",
                     "stateIDs": [
@@ -883,7 +883,7 @@
                     "GAIGOBCNNEE": "LiquidStrike_AS_SkinLayer_Controller"
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "HP": 99999.0,
                 "HPRatio": 0.30000001192092896,
                 "LiquidStrike_MoveSpeedRatio": 0.0,
@@ -891,15 +891,15 @@
                 "StaminaCost": 0.0,
                 "IceModifier_Duration": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "MoveLoop": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "CostStaminaMixin",
-                            "costStaminaDelta": "StaminaCost",
-                            "onStaminaEmpty": [
+                            "MBNKHAGNAFE": "StaminaCost",
+                            "GAKLCFHFOLB": [
                                 {
                                     "$type": "SetAnimatorTrigger",
                                     "triggerID": "EndHoldTrigger"
@@ -911,20 +911,20 @@
                 "MoveLoop_SetVisible": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "TriggerSetVisible"
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "TriggerSetVisible",
-                            "doOffStage": true,
-                            "visible": true
+                            "ACOKKHADPOJ": true,
+                            "ACDFJMCPFGH": true
                         },
                         {
                             "$type": "TriggerHideWeapon",
-                            "partNames": [
+                            "FLCNICMDANB": [
                                 "equip03"
                             ]
                         }
@@ -933,11 +933,11 @@
                 "MoveStandby_CostStamina": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "CostStaminaMixin",
-                            "costStaminaDelta": 0.10000000149011612,
-                            "onStaminaEmpty": [
+                            "MBNKHAGNAFE": 0.10000000149011612,
+                            "GAKLCFHFOLB": [
                                 {
                                     "$type": "SetAnimatorTrigger",
                                     "triggerID": "EndHoldTrigger"
@@ -949,43 +949,43 @@
                 "Move_Eff": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Animator_MoveSpeedRatio": "LiquidStrike_MoveSpeedRatio"
                     },
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_LiquidStrike_Spray"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_LiquidStrike_Spray"
                         },
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_LiquidStrike_Spray_Trail"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_LiquidStrike_Spray_Trail"
                         }
                     ],
-                    "isLimitedProperties": true
+                    "FBMJEOALKEJ": true
                 },
                 "MoveStandby_Eff": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_LiquidStrike_Idle"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_LiquidStrike_Idle"
                         }
                     ]
                 },
                 "SetVisible": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "TriggerSetVisible",
-                            "doOffStage": true,
-                            "visible": true
+                            "ACOKKHADPOJ": true,
+                            "ACDFJMCPFGH": true
                         },
                         {
                             "$type": "TriggerHideWeapon",
-                            "partNames": [
+                            "FLCNICMDANB": [
                                 "equip03"
                             ]
                         }
@@ -994,22 +994,22 @@
                 "Ice_Bloom": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "TriggerAttackEvent",
-                            "attackEvent": {
+                            "DMCJDGELKBC": {
                                 "attackPattern": {
                                     "$type": "ConfigAttackCircle",
                                     "lifeTime": "TriggerNoRepeat",
-                                    "born": {
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.0,
-                                            "z": 0.10000000149011612
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.0,
+                                            "PHDCJAHHIOG": 0.10000000149011612
                                         }
                                     },
-                                    "radius": "Ice_Bloom_Radius"
+                                    "ICGFCBOFFDI": "Ice_Bloom_Radius"
                                 },
                                 "attackInfo": {
                                     "attackTag": "Ice_Bloom",
@@ -1030,13 +1030,13 @@
                                     "cameraShake": {}
                                 }
                             },
-                            "targetType": "Enemy"
+                            "OJIFKEOCJGB": "Enemy"
                         },
                         {
                             "$type": "ApplyModifier",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByEquipParts",
-                                "equipPartNames": [
+                                "GNNLGDBFIDI": [
                                     "equip01",
                                     "sheathPoint"
                                 ]
@@ -1048,7 +1048,7 @@
                 "LiquidStrike_SkinLayer_Controller": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "SetAnimatorTrigger",
                             "triggerID": "SkinActive_1"
@@ -1058,7 +1058,7 @@
                 "LiquidStrike_AS_SkinLayer_Controller": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "SetAnimatorTrigger",
                             "triggerID": "SkinActive_2"
@@ -1067,14 +1067,14 @@
                 },
                 "IceModifier": {
                     "GAIGOBCNNEE": "",
-                    "duration": "IceModifier_Duration",
+                    "GMIMMDOGGIO": "IceModifier_Duration",
                     "elementType": "Ice",
                     "elementDurability": 25.0,
-                    "overrideWeaponElement": true,
-                    "onAdded": [
+                    "ONDNPIMNAOC": true,
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_Weapon_Buff"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_Weapon_Buff"
                         }
                     ]
                 }
@@ -1085,25 +1085,25 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_LiquidStrike_YayoiKaeshi",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "FatalStrike_Damage": 3.0
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "TriggerAttackEvent",
-                    "attackEvent": {
+                    "DMCJDGELKBC": {
                         "attackPattern": {
                             "$type": "ConfigAttackSphere",
                             "lifeTime": "TriggerNoRepeat",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 0.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
-                            "radius": 0.10000000149011612
+                            "ICGFCBOFFDI": 0.10000000149011612
                         },
                         "attackInfo": {
                             "attackTag": "ExtraAttack",
@@ -1135,7 +1135,7 @@
                             "canBeModifiedBy": "OriginOwner"
                         }
                     },
-                    "targetType": "Enemy"
+                    "OJIFKEOCJGB": "Enemy"
                 }
             ]
         }
@@ -1144,7 +1144,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_EndLiquidStrike",
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "SetAnimatorTrigger",
                     "triggerID": "NextSkillTrigger"
@@ -1156,7 +1156,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_Icespine",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AttachToStateIDMixin",
                     "stateIDs": [
@@ -1166,43 +1166,43 @@
                     "GAIGOBCNNEE": "Sensu_Appear_Remover"
                 }
             ],
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "UNIQUE_Sensu_Appear": {
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
-                    "duration": 2.799999952316284,
+                    "IEOFBCGJGEK": true,
+                    "GMIMMDOGGIO": 2.799999952316284,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_Icespine_Field_Sensu"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_Icespine_Field_Sensu"
                         }
                     ]
                 },
                 "Sensu_Appear_Remover": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "RemoveUniqueModifier",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "UNIQUE_Sensu_Appear"
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "AvatarSkillStart",
                     "overtime": 10018,
-                    "cdRatio": 1.0,
-                    "costStaminaRatio": 1.0
+                    "AFPAPIFKIHK": 1.0,
+                    "JFIJFCKLFCF": 1.0
                 },
                 {
                     "$type": "AvatarSkillStart",
                     "overtime": 10020,
-                    "cdRatio": 1.0,
-                    "costStaminaRatio": 1.0
+                    "AFPAPIFKIHK": 1.0,
+                    "JFIJFCKLFCF": 1.0
                 },
                 {
                     "$type": "ApplyModifier",
@@ -1210,22 +1210,22 @@
                 },
                 {
                     "$type": "FireEffect",
-                    "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_Icespine_Field"
+                    "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_Icespine_Field"
                 },
                 {
                     "$type": "CreateGadget",
-                    "born": {
+                    "NGDMCBABOJA": {
                         "$type": "ConfigBornByTarget",
                         "offset": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0
+                            "AEAAJCIDPED": 0.0,
+                            "KAAPLGBEDPM": 0.0,
+                            "PHDCJAHHIOG": 0.0
                         },
-                        "onGround": true
+                        "JBPCKOKLHEB": true
                     },
-                    "gadgetID": 41002002,
-                    "campID": 1001,
-                    "campTargetType": "Enemy"
+                    "CABLIPAKCGB": 41002002,
+                    "DOLAJLACEDF": 1001,
+                    "ONPOPLLHJLE": "Enemy"
                 }
             ]
         }
@@ -1234,24 +1234,24 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_Icespine_Sensu_Remover",
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "UNIQUE_Sensu_Appear": {
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
-                    "duration": 2.799999952316284,
+                    "IEOFBCGJGEK": true,
+                    "GMIMMDOGGIO": 2.799999952316284,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_Icespine_Field_Sensu"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_Icespine_Field_Sensu"
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "RemoveUniqueModifier",
-                    "doOffStage": true,
+                    "ACOKKHADPOJ": true,
                     "GAIGOBCNNEE": "UNIQUE_Sensu_Appear"
                 }
             ]
@@ -1261,31 +1261,31 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_Icespine_Strike_New",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "Icespine_Damage": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Icespine_Strike_Delay": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.47999998927116394,
+                    "GMIMMDOGGIO": 0.47999998927116394,
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "TriggerAttackEvent",
-                            "attackEvent": {
+                            "DMCJDGELKBC": {
                                 "attackPattern": {
                                     "$type": "ConfigAttackCircle",
                                     "lifeTime": "TriggerNoRepeat",
-                                    "born": {
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": -0.5,
-                                            "z": 0.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": -0.5,
+                                            "PHDCJAHHIOG": 0.0
                                         }
                                     },
                                     "secondHeight": 2.5,
-                                    "radius": 4.5
+                                    "ICGFCBOFFDI": 4.5
                                 },
                                 "attackInfo": {
                                     "attackTag": "Elemental_Art",
@@ -1308,21 +1308,21 @@
                                     "canBeModifiedBy": "OriginOwner"
                                 }
                             },
-                            "targetType": "Enemy"
+                            "OJIFKEOCJGB": "Enemy"
                         }
                     ]
                 },
                 "GenerateElemBall_Icespine": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAttackLanded": [
+                    "AIJPLNMHBEN": [
                         {
                             "$type": "Predicated",
-                            "target": "Target",
-                            "targetPredicates": [
+                            "NPHOOPNDCAC": "Target",
+                            "ELDBAFHCOBL": [
                                 {
                                     "$type": "ByAttackTags",
-                                    "attackTags": [
+                                    "NMJGDKCDFOJ": [
                                         "Elemental_Art"
                                     ]
                                 },
@@ -1334,12 +1334,12 @@
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ANIMAL_ENTITY_TYPE",
+                                    "HJJEAOMEOFI": "_ANIMAL_ENTITY_TYPE",
                                     "value": 0.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 }
                             ],
-                            "successActions": [
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "ApplyModifier",
                                     "GAIGOBCNNEE": "DropBall_Base"
@@ -1349,51 +1349,51 @@
                     ]
                 },
                 "DropBall_Base": {
-                    "stacking": "Unique",
+                    "FGJPBKGPNJJ": "Unique",
                     "GAIGOBCNNEE": "",
-                    "duration": 0.30000001192092896,
+                    "GMIMMDOGGIO": 0.30000001192092896,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "Randomed",
-                            "chance": 0.5,
-                            "successActions": [
+                            "PLKDGIELEEF": 0.5,
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "GenerateElemBall",
-                                    "configID": 2022,
-                                    "born": {
+                                    "APIAFGPIIHE": 2022,
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornByTarget",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.0,
-                                            "z": 1.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.0,
+                                            "PHDCJAHHIOG": 1.0
                                         }
                                     },
                                     "ratio": 4.0,
-                                    "baseEnergy": 3.0
+                                    "GJNDGIAENMI": 3.0
                                 }
                             ],
-                            "failActions": [
+                            "BMIOBLGLPIM": [
                                 {
                                     "$type": "GenerateElemBall",
-                                    "configID": 2022,
-                                    "born": {
+                                    "APIAFGPIIHE": 2022,
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornByTarget",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.0,
-                                            "z": 1.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.0,
+                                            "PHDCJAHHIOG": 1.0
                                         }
                                     },
                                     "ratio": 5.0,
-                                    "baseEnergy": 3.0
+                                    "GJNDGIAENMI": 3.0
                                 }
                             ]
                         }
                     ]
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "ApplyModifier",
                     "GAIGOBCNNEE": "GenerateElemBall_Icespine"
@@ -1409,18 +1409,18 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FrozenWindmill_SkillStart",
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "AvatarSkillStart",
                     "overtime": 10019,
-                    "cdRatio": 1.0,
-                    "costStaminaRatio": 1.0
+                    "AFPAPIFKIHK": 1.0,
+                    "JFIJFCKLFCF": 1.0
                 },
                 {
                     "$type": "AvatarSkillStart",
                     "overtime": 10021,
-                    "cdRatio": 1.0,
-                    "costStaminaRatio": 1.0
+                    "AFPAPIFKIHK": 1.0,
+                    "JFIJFCKLFCF": 1.0
                 }
             ]
         }
@@ -1429,18 +1429,18 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FrozenWindmill",
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "TriggerBullet",
-                    "bulletID": 41002001,
-                    "born": {
+                    "NGAAOMEHOGE": 41002001,
+                    "NGDMCBABOJA": {
                         "$type": "ConfigBornByTarget",
                         "offset": {
-                            "x": 0.0,
-                            "y": 1.7999999523162842,
-                            "z": 0.800000011920929
+                            "AEAAJCIDPED": 0.0,
+                            "KAAPLGBEDPM": 1.7999999523162842,
+                            "PHDCJAHHIOG": 0.800000011920929
                         },
-                        "onGround": true
+                        "JBPCKOKLHEB": true
                     }
                 },
                 {
@@ -1448,23 +1448,23 @@
                     "predicates": [
                         {
                             "$type": "ByUnlockTalentParam",
-                            "talentParam": "Avatar_Ayaka_Oboro"
+                            "GFIJPNMCOGJ": "Avatar_Ayaka_Oboro"
                         }
                     ],
-                    "bulletID": 41002005,
-                    "born": {
+                    "NGAAOMEHOGE": 41002005,
+                    "NGDMCBABOJA": {
                         "$type": "ConfigBornByTarget",
                         "offset": {
-                            "x": 2.0,
-                            "y": 1.0,
-                            "z": 1.2000000476837158
+                            "AEAAJCIDPED": 2.0,
+                            "KAAPLGBEDPM": 1.0,
+                            "PHDCJAHHIOG": 1.2000000476837158
                         },
-                        "direction": {
+                        "NHPNHKBMAEO": {
                             "$type": "ConfigDirectionByEntity",
-                            "angleOffset": {
-                                "x": 0.0,
-                                "y": 30.0,
-                                "z": 0.0
+                            "LGPBCMEFEJB": {
+                                "AEAAJCIDPED": 0.0,
+                                "KAAPLGBEDPM": 30.0,
+                                "PHDCJAHHIOG": 0.0
                             }
                         }
                     }
@@ -1474,23 +1474,23 @@
                     "predicates": [
                         {
                             "$type": "ByUnlockTalentParam",
-                            "talentParam": "Avatar_Ayaka_Oboro"
+                            "GFIJPNMCOGJ": "Avatar_Ayaka_Oboro"
                         }
                     ],
-                    "bulletID": 41002005,
-                    "born": {
+                    "NGAAOMEHOGE": 41002005,
+                    "NGDMCBABOJA": {
                         "$type": "ConfigBornByTarget",
                         "offset": {
-                            "x": -2.0,
-                            "y": 1.0,
-                            "z": 1.2000000476837158
+                            "AEAAJCIDPED": -2.0,
+                            "KAAPLGBEDPM": 1.0,
+                            "PHDCJAHHIOG": 1.2000000476837158
                         },
-                        "direction": {
+                        "NHPNHKBMAEO": {
                             "$type": "ConfigDirectionByEntity",
-                            "angleOffset": {
-                                "x": 0.0,
-                                "y": -30.0,
-                                "z": 0.0
+                            "LGPBCMEFEJB": {
+                                "AEAAJCIDPED": 0.0,
+                                "KAAPLGBEDPM": -30.0,
+                                "PHDCJAHHIOG": 0.0
                             }
                         }
                     }
@@ -1510,7 +1510,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_Windmill_CameraController",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AttachToStateIDMixin",
                     "stateIDs": [
@@ -1565,14 +1565,14 @@
                     "GAIGOBCNNEE": "Windmill_Sensu_Remover"
                 }
             ],
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Windmill_Camera_Protection_Ghost": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachAbilityStateResistance",
-                            "resistanceListID": 11002
+                            "KPGAIMMIKDA": 11002
                         }
                     ]
                 },
@@ -1584,22 +1584,22 @@
                 "Windmill_Camera_Handler": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "WindZoneMixin",
-                            "shapeName": "CircleR3",
-                            "born": {
+                            "JBKKOJLJHDK": "CircleR3",
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 0.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
-                            "strength": -3.0,
-                            "attenuation": 2.0,
-                            "innerRadius": 0.0,
-                            "targetType": "Enemy",
+                            "BHELOIADOLH": -3.0,
+                            "HBBLBBPBLGE": 2.0,
+                            "IPDEDFHPHPO": 0.0,
+                            "OJIFKEOCJGB": "Enemy",
                             "predicates": [
                                 {
                                     "$type": "ByEntityTypes",
@@ -1610,32 +1610,32 @@
                                 },
                                 {
                                     "$type": "ByTargetWeight",
-                                    "logic": "LesserOrEqual",
-                                    "weight": 250.0
+                                    "GMFCOCAJBDM": "LesserOrEqual",
+                                    "IHCNHDLDFKC": 250.0
                                 }
                             ],
                             "GAIGOBCNNEE": ""
                         }
                     ],
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "DungeonFogEffects",
-                            "muteRemoteAction": true,
+                            "POKMJEIDNJF": true,
                             "enable": true,
-                            "cameraFogEffectName": "Eff_Avatar_Girl_Sword_Ayaka_ElementalBurst_DungeonEffect",
-                            "playerFogEffectName": ""
+                            "CCMDJPGKKBM": "Eff_Avatar_Girl_Sword_Ayaka_ElementalBurst_DungeonEffect",
+                            "IHNBFFJNAKI": ""
                         }
                     ]
                 },
                 "Windmill_Weather_Handler": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "TriggerWeatherMixin",
                             "type": "Skill",
-                            "weatherPattern": "Weather_Ayaka_Windmill",
-                            "transDuration": 0.699999988079071,
+                            "IHMBDACJNDO": "Weather_Ayaka_Windmill",
+                            "DPEJLHDNMOK": 0.699999988079071,
                             "duration": 1.399999976158142
                         }
                     ]
@@ -1643,65 +1643,65 @@
                 "Windmill_Camera_Remover": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ControlEmotion",
-                            "toggleEmoSync": false,
-                            "toggleBlink": false,
-                            "toggleEyeKey": false
+                            "DBOPCOMLILO": false,
+                            "CBIALJFEDDJ": false,
+                            "LCLBKEALNOO": false
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "DungeonFogEffects",
-                            "doOffStage": true,
-                            "cameraFogEffectName": "",
-                            "playerFogEffectName": ""
+                            "ACOKKHADPOJ": true,
+                            "CCMDJPGKKBM": "",
+                            "IHNBFFJNAKI": ""
                         },
                         {
                             "$type": "AvatarExitCameraShot",
-                            "doOffStage": true
+                            "ACOKKHADPOJ": true
                         },
                         {
                             "$type": "AvatarCameraParam",
-                            "doOffStage": true,
-                            "cameraParam": {
-                                "forceRadius": 6.0,
-                                "forceRadiusDuration": 0.0,
-                                "shouldKeepForceRadius": true
+                            "ACOKKHADPOJ": true,
+                            "HBPCGNIGHPH": {
+                                "JABJOOHIIKI": 6.0,
+                                "ENPKPCGKDDH": 0.0,
+                                "MPFLBBFBBGK": true
                             }
                         },
                         {
                             "$type": "ControlEmotion",
-                            "doOffStage": true
+                            "ACOKKHADPOJ": true
                         },
                         {
                             "$type": "EnableHeadControl",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "enable": true
                         }
                     ],
                     "NPEJFLBOAAN": [
                         {
                             "$type": "AvatarExitCameraShot",
-                            "doOffStage": true
+                            "ACOKKHADPOJ": true
                         },
                         {
                             "$type": "AvatarCameraParam",
-                            "doOffStage": true,
-                            "cameraParam": {
-                                "forceRadius": 6.0,
-                                "forceRadiusDuration": 0.0,
-                                "shouldKeepForceRadius": true
+                            "ACOKKHADPOJ": true,
+                            "HBPCGNIGHPH": {
+                                "JABJOOHIIKI": 6.0,
+                                "ENPKPCGKDDH": 0.0,
+                                "MPFLBBFBBGK": true
                             }
                         },
                         {
                             "$type": "ControlEmotion",
-                            "doOffStage": true
+                            "ACOKKHADPOJ": true
                         },
                         {
                             "$type": "EnableHeadControl",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "enable": true
                         }
                     ]
@@ -1709,20 +1709,20 @@
                 "Windmill_HidingWeapon": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "TriggerHideWeapon",
-                            "partNames": [
+                            "FLCNICMDANB": [
                                 "equip01"
                             ]
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "TriggerHideWeapon",
-                            "doOffStage": true,
-                            "visible": true,
-                            "partNames": [
+                            "ACOKKHADPOJ": true,
+                            "ACDFJMCPFGH": true,
+                            "FLCNICMDANB": [
                                 "equip01"
                             ]
                         }
@@ -1730,36 +1730,36 @@
                 },
                 "UNIQUE_Windmill_Sensu_Appear": {
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
-                    "duration": 3.5,
+                    "IEOFBCGJGEK": true,
+                    "GMIMMDOGGIO": 3.5,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_Windmill_Sensu"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_Windmill_Sensu"
                         },
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_Windmill_WeaponDither"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_Windmill_WeaponDither"
                         }
                     ]
                 },
                 "Windmill_Sensu_Remover": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "RemoveUniqueModifier",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "UNIQUE_Windmill_Sensu_Appear"
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "EnableHeadControl",
-                    "blend": false
+                    "IKNLAEPLHHL": false
                 },
                 {
                     "$type": "AvatarEnterCameraShot",
@@ -1769,27 +1769,27 @@
                             "attackPattern": {
                                 "$type": "ConfigAttackCircle",
                                 "lifeTime": "TriggerNoRepeat",
-                                "born": {
+                                "NGDMCBABOJA": {
                                     "$type": "ConfigBornBySelf",
                                     "offset": {
-                                        "x": 0.0,
-                                        "y": 1.5,
-                                        "z": 0.0
+                                        "AEAAJCIDPED": 0.0,
+                                        "KAAPLGBEDPM": 1.5,
+                                        "PHDCJAHHIOG": 0.0
                                     }
                                 },
                                 "secondHeight": 0.4000000059604645,
-                                "fanAngle": 30.0,
-                                "radius": 1.399999976158142
+                                "BDAPFCGNBKA": 30.0,
+                                "ICGFCBOFFDI": 1.399999976158142
                             },
-                            "checkWaterLayer": true
+                            "AKDGLEOGNGO": true
                         },
                         {
                             "$type": "ByAvatarInWaterDepth",
-                            "compareType": "LessAndEqual",
-                            "depth": 0.5
+                            "ONPJJFKDCED": "LessAndEqual",
+                            "KPLJIGIPGMH": 0.5
                         }
                     ],
-                    "cameraMoveCfgPath": "Camera_Ayaka_Windmill"
+                    "LOOLBLCGLBM": "Camera_Ayaka_Windmill"
                 },
                 {
                     "$type": "ApplyModifier",
@@ -1802,28 +1802,28 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_Windmill_Sensu_Remover",
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "UNIQUE_Windmill_Sensu_Appear": {
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
-                    "duration": 3.5,
+                    "IEOFBCGJGEK": true,
+                    "GMIMMDOGGIO": 3.5,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_Windmill_Sensu"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_Windmill_Sensu"
                         },
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_Windmill_WeaponDither"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_Windmill_WeaponDither"
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "RemoveUniqueModifier",
-                    "doOffStage": true,
+                    "ACOKKHADPOJ": true,
                     "GAIGOBCNNEE": "UNIQUE_Windmill_Sensu_Appear"
                 }
             ]
@@ -1833,7 +1833,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FrozenWindmill_Material",
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "FrozenWindmill_Ice": {
                     "GAIGOBCNNEE": "",
                     "elementType": "Frozen",
@@ -1842,18 +1842,18 @@
                 "FrozenWindmill_ResistFrozen": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachAbilityStateResistance",
-                            "resistanceListID": 14002
+                            "KPGAIMMIKDA": 14002
                         }
                     ]
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "AttachEffect",
-                    "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_IceButterfly_Bullet"
+                    "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_IceButterfly_Bullet"
                 },
                 {
                     "$type": "ApplyModifier",
@@ -1870,30 +1870,30 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FrozenWindmillDamage",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "FrozenWindmill_SliceDamage": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "FrozenWindmill_Damage": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "thinkInterval": 0.25,
-                    "onThinkInterval": [
+                    "IKKMDDLDLIN": 0.25,
+                    "PBDDACFFPOE": [
                         {
                             "$type": "TriggerAttackEvent",
-                            "attackEvent": {
+                            "DMCJDGELKBC": {
                                 "attackPattern": {
                                     "$type": "ConfigAttackSphere",
                                     "lifeTime": "TriggerNoRepeat",
-                                    "born": {
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.30000001192092896,
-                                            "z": 0.30000001192092896
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.30000001192092896,
+                                            "PHDCJAHHIOG": 0.30000001192092896
                                         }
                                     },
-                                    "radius": 3.0
+                                    "ICGFCBOFFDI": 3.0
                                 },
                                 "attackInfo": {
                                     "attackTag": "Elemental_Burst",
@@ -1916,12 +1916,12 @@
                                     "canBeModifiedBy": "OriginOwner"
                                 }
                             },
-                            "targetType": "Enemy"
+                            "OJIFKEOCJGB": "Enemy"
                         }
                     ]
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "ApplyModifier",
                     "GAIGOBCNNEE": "FrozenWindmill_Damage"
@@ -1933,30 +1933,30 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FrozenWindmillDissipate",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "FrozenWindmill_BlastDamage": 0.0
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "FireEffect",
-                    "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_IceButterfly_Bullet_AS"
+                    "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_IceButterfly_Bullet_AS"
                 },
                 {
                     "$type": "TriggerAttackEvent",
-                    "attackEvent": {
+                    "DMCJDGELKBC": {
                         "attackPattern": {
                             "$type": "ConfigAttackSphere",
                             "lifeTime": "TriggerNoRepeat",
-                            "ignoreMassive": true,
-                            "born": {
+                            "LCDFJLIEENG": true,
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornBySelf",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": -1.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": -1.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
-                            "radius": 5.0
+                            "ICGFCBOFFDI": 5.0
                         },
                         "attackInfo": {
                             "attackTag": "Elemental_Burst",
@@ -1982,7 +1982,7 @@
                             "canBeModifiedBy": "OriginOwner"
                         }
                     },
-                    "targetType": "Enemy"
+                    "OJIFKEOCJGB": "Enemy"
                 }
             ]
         }
@@ -1991,7 +1991,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FrozenWindmill_Sub_Material",
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "FrozenWindmill_Sub_Ice": {
                     "GAIGOBCNNEE": "",
                     "elementType": "Frozen",
@@ -2000,18 +2000,18 @@
                 "FrozenWindmill_Sub_ResistFrozen": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachAbilityStateResistance",
-                            "resistanceListID": 14002
+                            "KPGAIMMIKDA": 14002
                         }
                     ]
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "AttachEffect",
-                    "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_IceButterfly_Sub_Bullet"
+                    "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_IceButterfly_Sub_Bullet"
                 },
                 {
                     "$type": "ApplyModifier",
@@ -2028,31 +2028,31 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FrozenWindmill_Sub_Damage",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "FrozenWindmill_SliceDamage": 0.0,
                 "FrozenWindmill_SubFactor": 0.20000000298023224
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "FrozenWindmill_Sub_Damage": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "thinkInterval": 0.25,
-                    "onThinkInterval": [
+                    "IKKMDDLDLIN": 0.25,
+                    "PBDDACFFPOE": [
                         {
                             "$type": "TriggerAttackEvent",
-                            "attackEvent": {
+                            "DMCJDGELKBC": {
                                 "attackPattern": {
                                     "$type": "ConfigAttackSphere",
                                     "lifeTime": "TriggerNoRepeat",
-                                    "born": {
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.30000001192092896,
-                                            "z": 0.30000001192092896
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.30000001192092896,
+                                            "PHDCJAHHIOG": 0.30000001192092896
                                         }
                                     },
-                                    "radius": 1.5
+                                    "ICGFCBOFFDI": 1.5
                                 },
                                 "attackInfo": {
                                     "attackTag": "Elemental_Burst",
@@ -2079,15 +2079,15 @@
                                     "canBeModifiedBy": "OriginOwner"
                                 }
                             },
-                            "targetType": "Enemy"
+                            "OJIFKEOCJGB": "Enemy"
                         },
                         {
                             "$type": "DamageByAttackValue",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByShape",
-                                "shapeName": "CircleR1",
-                                "campTargetType": "Enemy",
-                                "sizeRatio": 1.0
+                                "JBKKOJLJHDK": "CircleR1",
+                                "ONPOPLLHJLE": "Enemy",
+                                "CJJABKCAIEB": 1.0
                             },
                             "predicates": [
                                 {
@@ -2121,7 +2121,7 @@
                     ]
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "ApplyModifier",
                     "GAIGOBCNNEE": "FrozenWindmill_Sub_Damage"
@@ -2133,30 +2133,30 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FrozenWindmill_Sub_Dissipate",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "FrozenWindmill_BlastDamage": 0.0,
                 "FrozenWindmill_SubFactor": 0.20000000298023224
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "FireEffect",
-                    "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_IceButterfly_Sub_Bullet_AS"
+                    "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_IceButterfly_Sub_Bullet_AS"
                 },
                 {
                     "$type": "TriggerAttackEvent",
-                    "attackEvent": {
+                    "DMCJDGELKBC": {
                         "attackPattern": {
                             "$type": "ConfigAttackSphere",
                             "lifeTime": "TriggerNoRepeat",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornBySelf",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": -1.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": -1.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
-                            "radius": 3.0
+                            "ICGFCBOFFDI": 3.0
                         },
                         "attackInfo": {
                             "attackTag": "Elemental_Burst",
@@ -2186,7 +2186,7 @@
                             "canBeModifiedBy": "OriginOwner"
                         }
                     },
-                    "targetType": "Enemy"
+                    "OJIFKEOCJGB": "Enemy"
                 }
             ]
         }
@@ -2195,18 +2195,18 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FrozenButterfly_Area",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "ChangeFieldMixin"
                 }
             ],
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "FrozenButterfly_Area_Enchanted": {
                     "GAIGOBCNNEE": "",
-                    "duration": 15.0,
+                    "GMIMMDOGGIO": 15.0,
                     "elementDurability": 100.0,
-                    "thinkInterval": 1.0,
-                    "onThinkInterval": [
+                    "IKKMDDLDLIN": 1.0,
+                    "PBDDACFFPOE": [
                         {
                             "$type": "ApplyModifier",
                             "GAIGOBCNNEE": "Enchanted_Ice"
@@ -2215,17 +2215,17 @@
                 },
                 "Enchanted_Ice": {
                     "GAIGOBCNNEE": "",
-                    "duration": 3.0,
+                    "GMIMMDOGGIO": 3.0,
                     "elementType": "Ice",
                     "elementDurability": 20.0,
-                    "overrideWeaponElement": true
+                    "ONDNPIMNAOC": true
                 },
                 "FrozenButterfly_Area_Debuff": {
                     "GAIGOBCNNEE": "",
-                    "duration": 15.0,
+                    "GMIMMDOGGIO": 15.0,
                     "elementDurability": 100.0,
-                    "thinkInterval": 1.0,
-                    "onThinkInterval": [
+                    "IKKMDDLDLIN": 1.0,
+                    "PBDDACFFPOE": [
                         {
                             "$type": "DamageByAttackValue",
                             "attackInfo": {
@@ -2251,10 +2251,10 @@
                     ]
                 }
             },
-            "onFieldEnter": [
+            "KJKECFBMHKH": [
                 {
                     "$type": "ApplyModifier",
-                    "target": "Target",
+                    "NPHOOPNDCAC": "Target",
                     "predicates": [
                         {
                             "$type": "ByEntityTypes",
@@ -2267,7 +2267,7 @@
                 },
                 {
                     "$type": "ApplyModifier",
-                    "target": "Target",
+                    "NPHOOPNDCAC": "Target",
                     "predicates": [
                         {
                             "$type": "ByEntityTypes",
@@ -2279,10 +2279,10 @@
                     "GAIGOBCNNEE": "FrozenButterfly_Area_Debuff"
                 }
             ],
-            "onFieldExit": [
+            "JPKNDOGGOIN": [
                 {
                     "$type": "RemoveModifier",
-                    "target": "Target",
+                    "NPHOOPNDCAC": "Target",
                     "predicates": [
                         {
                             "$type": "ByEntityTypes",
@@ -2295,7 +2295,7 @@
                 },
                 {
                     "$type": "RemoveModifier",
-                    "target": "Target",
+                    "NPHOOPNDCAC": "Target",
                     "predicates": [
                         {
                             "$type": "ByEntityTypes",
@@ -2313,14 +2313,14 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FrozenButterfly_Area_Material",
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Area_Material": {
                     "GAIGOBCNNEE": "",
-                    "duration": 15.0,
+                    "GMIMMDOGGIO": 15.0,
                     "elementDurability": 100.0
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "ApplyModifier",
                     "GAIGOBCNNEE": "Area_Material"
@@ -2332,7 +2332,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FrostFall",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AttachToStateIDMixin",
                     "stateIDs": [
@@ -2342,42 +2342,42 @@
                     "GAIGOBCNNEE": "InFrostFall"
                 }
             ],
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "InFrostFall": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "TriggerWitchTimeMixin",
-                            "ignoreTargetType": "SelfCamp",
-                            "openEffectPattern": "",
-                            "closeEffectPattern": "",
-                            "weatherPattern": "Weather_Ayaka_FrostFall"
+                            "BFIEAABMLMH": "SelfCamp",
+                            "KHNDNMLKPCO": "",
+                            "DJJGLMGMABI": "",
+                            "IHMBDACJNDO": "Weather_Ayaka_FrostFall"
                         }
                     ],
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AvatarEnterFocus",
-                            "cameraFollowLower": {
+                            "OBGFLLMNMEC": {
                                 "_x": -0.30000001192092896,
                                 "_z": -2.0
                             },
-                            "cameraFollowUpper": {
+                            "JIEOBPNGIMH": {
                                 "_x": -0.30000001192092896
                             },
-                            "cameraFastFocusMode": true,
-                            "dragButtonName": "Skill1",
-                            "assistance": {
+                            "OIAHIMEGJFA": true,
+                            "JCBJMHODNNI": "Skill1",
+                            "OKFIENEGKLC": {
                                 "ps4": {},
                                 "ps5": {},
                                 "other": {
-                                    "useGyro": true
+                                    "DOJPCPNGBBA": true
                                 }
                             },
-                            "canMove": false
+                            "EFEDMKCKAMH": false
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "AvatarExitFocus"
                         }
@@ -2390,7 +2390,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_ReattachWeapon",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AttachToStateIDMixin",
                     "stateIDs": [
@@ -2417,23 +2417,23 @@
                     "GAIGOBCNNEE": "ShowSheath"
                 }
             ],
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "ShowSheath": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "TriggerHideWeapon",
-                            "visible": true,
-                            "partNames": [
+                            "ACDFJMCPFGH": true,
+                            "FLCNICMDANB": [
                                 "equip03"
                             ]
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "TriggerHideWeapon",
-                            "partNames": [
+                            "FLCNICMDANB": [
                                 "equip03"
                             ]
                         }
@@ -2446,21 +2446,21 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_MagicSheathe_Add",
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "UNIQUE_MagicSheathe_Material": {
-                    "stacking": "Unique",
+                    "FGJPBKGPNJJ": "Unique",
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
+                    "IEOFBCGJGEK": true,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_ExtraAttack_Spark_Sheath"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_ExtraAttack_Spark_Sheath"
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "ApplyModifier",
                     "GAIGOBCNNEE": "UNIQUE_MagicSheathe_Material"
@@ -2472,7 +2472,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_MagicSheathe_Remove",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AttachToStateIDMixin",
                     "stateIDs": [
@@ -2482,20 +2482,20 @@
                     "GAIGOBCNNEE": "MagicSheathe_Remover"
                 }
             ],
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "MagicSheathe_Remover": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "RemoveUniqueModifier",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "UNIQUE_MagicSheathe_Material"
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "RemoveUniqueModifier",
                     "GAIGOBCNNEE": "UNIQUE_MagicSheathe_Material"
@@ -2507,21 +2507,21 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_MagicSheathe_Attack05_Add",
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "UNIQUE_MagicSheathe_Attack05_Material": {
-                    "stacking": "Unique",
+                    "FGJPBKGPNJJ": "Unique",
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
+                    "IEOFBCGJGEK": true,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_Attack05_Spark_Sheath"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_Attack05_Spark_Sheath"
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "ApplyModifier",
                     "GAIGOBCNNEE": "UNIQUE_MagicSheathe_Attack05_Material"
@@ -2533,7 +2533,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_MagicSheathe_NormalAttack_Remove",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AttachToStateIDMixin",
                     "stateIDs": [
@@ -2542,20 +2542,20 @@
                     "GAIGOBCNNEE": "MagicSheathe_Attack05_Remover"
                 }
             ],
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "MagicSheathe_Attack05_Remover": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "RemoveUniqueModifier",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "UNIQUE_MagicSheathe_Attack05_Material"
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "RemoveUniqueModifier",
                     "GAIGOBCNNEE": "UNIQUE_MagicSheathe_Attack05_Material"
@@ -2573,18 +2573,18 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_CloseCollider",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AttachToNormalizedTimeMixin",
-                    "stateID": "Attack05",
+                    "EFAJCDMGOHL": "Attack05",
                     "GAIGOBCNNEE": "Ayaka_NormalAttack_CloseCollider",
-                    "normalizeEnd": 0.10000000149011612
+                    "MMHONEIBHNP": 0.10000000149011612
                 },
                 {
                     "$type": "AttachToNormalizedTimeMixin",
-                    "stateID": "LiquidStrike_Strike",
+                    "EFAJCDMGOHL": "LiquidStrike_Strike",
                     "GAIGOBCNNEE": "Ayaka_LiquidStrike_Strike_CloseCollider",
-                    "normalizeEnd": 0.5
+                    "MMHONEIBHNP": 0.5
                 },
                 {
                     "$type": "AttachToStateIDMixin",
@@ -2597,58 +2597,58 @@
                     "GAIGOBCNNEE": "Ayaka_LiquidStrike_CloseCollider"
                 }
             ],
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Ayaka_NormalAttack_CloseCollider": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "TriggerSetPassThrough",
-                            "doOffStage": true,
-                            "passThrough": true
+                            "ACOKKHADPOJ": true,
+                            "PCAEPAFKFNA": true
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "TriggerSetPassThrough",
-                            "doOffStage": true,
-                            "canBeHandledOnRecover": true
+                            "ACOKKHADPOJ": true,
+                            "CFIPAGENGPE": true
                         }
                     ]
                 },
                 "Ayaka_LiquidStrike_Strike_CloseCollider": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "TriggerSetPassThrough",
-                            "doOffStage": true,
-                            "passThrough": true
+                            "ACOKKHADPOJ": true,
+                            "PCAEPAFKFNA": true
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "TriggerSetPassThrough",
-                            "doOffStage": true,
-                            "canBeHandledOnRecover": true
+                            "ACOKKHADPOJ": true,
+                            "CFIPAGENGPE": true
                         }
                     ]
                 },
                 "Ayaka_LiquidStrike_CloseCollider": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "TriggerSetPassThrough",
-                            "doOffStage": true,
-                            "passThrough": true
+                            "ACOKKHADPOJ": true,
+                            "PCAEPAFKFNA": true
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "TriggerSetPassThrough",
-                            "doOffStage": true,
-                            "canBeHandledOnRecover": true
+                            "ACOKKHADPOJ": true,
+                            "CFIPAGENGPE": true
                         }
                     ]
                 }
@@ -2659,19 +2659,19 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_Talent_IceDance",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "IceDance_AttackUp_Duration": 0.0,
                 "IceDance_AttackUp_Ratio": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Ayaka_Talent_IceDance_AttackUp": {
                     "GAIGOBCNNEE": "",
-                    "duration": "IceDance_AttackUp_Duration",
+                    "GMIMMDOGGIO": "IceDance_AttackUp_Duration",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "ModifyDamageMixin",
-                            "attackTags": [
+                            "NMJGDKCDFOJ": [
                                 "NormalAttack_01",
                                 "NormalAttack_02",
                                 "NormalAttack_03",
@@ -2682,21 +2682,21 @@
                             "damagePercentageRatio": "IceDance_AttackUp_Ratio"
                         }
                     ],
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_IceDance_AttackUp"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_IceDance_AttackUp"
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "ApplyModifier",
                     "predicates": [
                         {
                             "$type": "ByUnlockTalentParam",
-                            "talentParam": "Ayaka_Talent_IceDance"
+                            "GFIJPNMCOGJ": "Ayaka_Talent_IceDance"
                         }
                     ],
                     "GAIGOBCNNEE": "Ayaka_Talent_IceDance_AttackUp"
@@ -2708,23 +2708,23 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_PermanentSkill_2",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "ReviveStaminaValue": 0.0,
                 "Actor_IceAddHurtDelta": 0.0,
                 "IceAddHurt_Duration": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Ayaka_PermanentSkill_2_Handler": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAttackLanded": [
+                    "AIJPLNMHBEN": [
                         {
                             "$type": "Predicated",
-                            "target": "Target",
-                            "targetPredicates": [
+                            "NPHOOPNDCAC": "Target",
+                            "ELDBAFHCOBL": [
                                 {
                                     "$type": "ByAttackTags",
-                                    "attackTags": [
+                                    "NMJGDKCDFOJ": [
                                         "Ice_Bloom"
                                     ]
                                 },
@@ -2736,15 +2736,15 @@
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ANIMAL_ENTITY_TYPE",
+                                    "HJJEAOMEOFI": "_ANIMAL_ENTITY_TYPE",
                                     "value": 0.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 }
                             ],
-                            "successActions": [
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "ApplyModifier",
-                                    "doOffStage": true,
+                                    "ACOKKHADPOJ": true,
                                     "GAIGOBCNNEE": "ReviveStamina_CD"
                                 }
                             ]
@@ -2752,11 +2752,11 @@
                     ]
                 },
                 "ReviveStamina_CD": {
-                    "stacking": "Unique",
+                    "FGJPBKGPNJJ": "Unique",
                     "GAIGOBCNNEE": "",
-                    "duration": 0.10000000149011612,
+                    "GMIMMDOGGIO": 0.10000000149011612,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ReviveStamina",
                             "value": "ReviveStaminaValue"
@@ -2769,47 +2769,47 @@
                 },
                 "Ayaka_PermanentSkill_2_IceAddHurt": {
                     "GAIGOBCNNEE": "",
-                    "duration": "IceAddHurt_Duration",
+                    "GMIMMDOGGIO": "IceAddHurt_Duration",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_IceAddHurtDelta": "Actor_IceAddHurtDelta"
                     },
                     "state": "AttackUp",
-                    "isLimitedProperties": true
+                    "FBMJEOALKEJ": true
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "ApplyModifier",
-                    "doOffStage": true,
+                    "ACOKKHADPOJ": true,
                     "GAIGOBCNNEE": "Ayaka_PermanentSkill_2_Handler"
                 }
             ],
-            "isDynamicAbility": true
+            "FEFIHIEHDOM": true
         }
     },
     {
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_Constellation_1",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "Constellation_1_Chance": 0.0,
                 "ReduceElementalArt_CD": 0.0,
                 "cdDelta": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Ayaka_Constellation_1_Handler": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAttackLanded": [
+                    "AIJPLNMHBEN": [
                         {
                             "$type": "Predicated",
-                            "target": "Target",
-                            "doOffStage": true,
-                            "targetPredicates": [
+                            "NPHOOPNDCAC": "Target",
+                            "ACOKKHADPOJ": true,
+                            "ELDBAFHCOBL": [
                                 {
                                     "$type": "ByAttackTags",
-                                    "attackTags": [
+                                    "NMJGDKCDFOJ": [
                                         "NormalAttack_01",
                                         "NormalAttack_02",
                                         "NormalAttack_03",
@@ -2826,23 +2826,23 @@
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ANIMAL_ENTITY_TYPE",
+                                    "HJJEAOMEOFI": "_ANIMAL_ENTITY_TYPE",
                                     "value": 0.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 },
                                 {
                                     "$type": "ByHitElement",
-                                    "element": "Ice"
+                                    "GOMLPAOIKJA": "Ice"
                                 }
                             ],
-                            "successActions": [
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "Randomed",
-                                    "chance": "Constellation_1_Chance",
-                                    "successActions": [
+                                    "PLKDGIELEEF": "Constellation_1_Chance",
+                                    "NCNDEAPMKCP": [
                                         {
                                             "$type": "ApplyModifier",
-                                            "doOffStage": true,
+                                            "ACOKKHADPOJ": true,
                                             "GAIGOBCNNEE": "ReduceElementalArtCD_Handler"
                                         }
                                     ]
@@ -2852,24 +2852,24 @@
                     ]
                 },
                 "ReduceElementalArtCD_Handler": {
-                    "stacking": "Unique",
+                    "FGJPBKGPNJJ": "Unique",
                     "GAIGOBCNNEE": "",
-                    "duration": "ReduceElementalArt_CD",
+                    "GMIMMDOGGIO": "ReduceElementalArt_CD",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ModifyAvatarSkillCD",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "overtime": 10018,
-                            "cdDelta": "cdDelta"
+                            "KHBEPNBNHOI": "cdDelta"
                         }
                     ]
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "ApplyModifier",
-                    "doOffStage": true,
+                    "ACOKKHADPOJ": true,
                     "GAIGOBCNNEE": "Ayaka_Constellation_1_Handler"
                 }
             ]
@@ -2879,19 +2879,19 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_Talent_HyouShin",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "EnergyCostDelta": -10.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "HyouShin_EnergyCostReduction": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_EnergyCostDelta": "EnergyCostDelta"
                     }
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "ApplyModifier",
                     "GAIGOBCNNEE": "HyouShin_EnergyCostReduction"
@@ -2903,23 +2903,23 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_Constellation_4",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "Constellation_4_Duration": 0.0,
                 "Constellation_4_DefenceDown_Ratio": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Ayaka_Constellation_4_DefenceDown_Handler": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAttackLanded": [
+                    "AIJPLNMHBEN": [
                         {
                             "$type": "Predicated",
-                            "target": "Target",
-                            "doOffStage": true,
-                            "targetPredicates": [
+                            "NPHOOPNDCAC": "Target",
+                            "ACOKKHADPOJ": true,
+                            "ELDBAFHCOBL": [
                                 {
                                     "$type": "ByAttackTags",
-                                    "attackTags": [
+                                    "NMJGDKCDFOJ": [
                                         "Elemental_Burst"
                                     ]
                                 },
@@ -2931,26 +2931,26 @@
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ANIMAL_ENTITY_TYPE",
+                                    "HJJEAOMEOFI": "_ANIMAL_ENTITY_TYPE",
                                     "value": 0.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 },
                                 {
                                     "$type": "ByHitDamage",
-                                    "damage": 0.0
+                                    "GOCKFJJFLHN": 0.0
                                 }
                             ],
-                            "successActions": [
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "RemoveUniqueModifier",
-                                    "target": "Target",
-                                    "doOffStage": true,
+                                    "NPHOOPNDCAC": "Target",
+                                    "ACOKKHADPOJ": true,
                                     "GAIGOBCNNEE": "UNIQUE_Ayaka_Constellation_4_DefenceDown"
                                 },
                                 {
                                     "$type": "ApplyModifier",
-                                    "target": "Target",
-                                    "doOffStage": true,
+                                    "NPHOOPNDCAC": "Target",
+                                    "ACOKKHADPOJ": true,
                                     "GAIGOBCNNEE": "UNIQUE_Ayaka_Constellation_4_DefenceDown"
                                 }
                             ]
@@ -2959,51 +2959,51 @@
                 },
                 "UNIQUE_Ayaka_Constellation_4_DefenceDown": {
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
-                    "duration": "Constellation_4_Duration",
+                    "IEOFBCGJGEK": true,
+                    "GMIMMDOGGIO": "Constellation_4_Duration",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_DefenceRatio": "Constellation_4_DefenceDown_Ratio"
                     },
                     "state": "DefenseDown",
-                    "isLimitedProperties": true
+                    "FBMJEOALKEJ": true
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "ApplyModifier",
-                    "doOffStage": true,
+                    "ACOKKHADPOJ": true,
                     "GAIGOBCNNEE": "Ayaka_Constellation_4_DefenceDown_Handler"
                 }
             ],
-            "isDynamicAbility": true
+            "FEFIHIEHDOM": true
         }
     },
     {
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_Constellation_6",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "Constellation_6_Period": 0.0,
                 "Constellation_6_DamagePercentageRatio": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Ayaka_Constellation_6_ExtraAttackDamageUp_Handler": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ApplyModifier",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "Ayaka_Constellation_6_ExtraAttackDamageUp"
                         }
                     ],
-                    "onAttackLanded": [
+                    "AIJPLNMHBEN": [
                         {
                             "$type": "Predicated",
-                            "target": "Target",
-                            "doOffStage": true,
-                            "targetPredicates": [
+                            "NPHOOPNDCAC": "Target",
+                            "ACOKKHADPOJ": true,
+                            "ELDBAFHCOBL": [
                                 {
                                     "$type": "ByEntityTypes",
                                     "entityTypes": [
@@ -3012,27 +3012,27 @@
                                 },
                                 {
                                     "$type": "ByAttackTags",
-                                    "attackTags": [
+                                    "NMJGDKCDFOJ": [
                                         "ExtraAttack"
                                     ]
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ANIMAL_ENTITY_TYPE",
+                                    "HJJEAOMEOFI": "_ANIMAL_ENTITY_TYPE",
                                     "value": 0.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_Ayaka_Constellation_6_IsCharged",
+                                    "HJJEAOMEOFI": "_ABILITY_Ayaka_Constellation_6_IsCharged",
                                     "value": 1.0,
-                                    "forceByCaster": true
+                                    "EODMLMGMLNP": true
                                 }
                             ],
-                            "successActions": [
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "ApplyModifier",
-                                    "doOffStage": true,
+                                    "ACOKKHADPOJ": true,
                                     "GAIGOBCNNEE": "Ayaka_Constellation_6_DamageUp_Remover"
                                 }
                             ]
@@ -3041,59 +3041,59 @@
                 },
                 "Ayaka_Constellation_6_DamageUp_Remover": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.5,
+                    "GMIMMDOGGIO": 0.5,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ApplyModifier",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "Ayaka_Constellation_6_ExtraAttackDamageUp_Timer"
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "RemoveModifier",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "Ayaka_Constellation_6_ExtraAttackDamageUp"
                         }
                     ]
                 },
                 "Ayaka_Constellation_6_ExtraAttackDamageUp_Timer": {
-                    "stacking": "Unique",
+                    "FGJPBKGPNJJ": "Unique",
                     "GAIGOBCNNEE": "",
-                    "duration": "Constellation_6_Period",
+                    "GMIMMDOGGIO": "Constellation_6_Period",
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "ApplyModifier",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "Ayaka_Constellation_6_ExtraAttackDamageUp"
                         }
                     ]
                 },
                 "Ayaka_Constellation_6_ExtraAttackDamageUp": {
-                    "stacking": "Unique",
+                    "FGJPBKGPNJJ": "Unique",
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "thinkInterval": 0.800000011920929,
-                    "modifierMixins": [
+                    "IKKMDDLDLIN": 0.800000011920929,
+                    "FNJKJKACMCH": [
                         {
                             "$type": "ModifyDamageMixin",
-                            "attackTags": [
+                            "NMJGDKCDFOJ": [
                                 "ExtraAttack"
                             ],
                             "damagePercentageRatio": "Constellation_6_DamagePercentageRatio"
                         }
                     ],
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AddGlobalValue",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "value": 1.0,
-                            "key": "_ABILITY_Ayaka_Constellation_6_IsCharged",
-                            "useLimitRange": true,
-                            "maxValue": 1.0,
-                            "minValue": 0.0
+                            "HJJEAOMEOFI": "_ABILITY_Ayaka_Constellation_6_IsCharged",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 1.0,
+                            "KHAHOELDONA": 0.0
                         },
                         {
                             "$type": "AttachModifier",
@@ -3101,28 +3101,28 @@
                         },
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_Constellation_6_Watch"
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_Constellation_6_Watch"
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "AddGlobalValue",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "value": -1.0,
-                            "key": "_ABILITY_Ayaka_Constellation_6_IsCharged",
-                            "useLimitRange": true,
-                            "maxValue": 1.0,
-                            "minValue": 0.0
+                            "HJJEAOMEOFI": "_ABILITY_Ayaka_Constellation_6_IsCharged",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 1.0,
+                            "KHAHOELDONA": 0.0
                         }
                     ],
-                    "onThinkInterval": [
+                    "PBDDACFFPOE": [
                         {
                             "$type": "AttachModifier",
-                            "doOffStage": false,
+                            "ACOKKHADPOJ": false,
                             "GAIGOBCNNEE": "Ayaka_Constellation_6_ExtraAttackDamageUp_Fx"
                         }
                     ],
-                    "onAvatarIn": [
+                    "NDHIFGEGBAC": [
                         {
                             "$type": "AttachModifier",
                             "GAIGOBCNNEE": "Ayaka_Constellation_6_ExtraAttackDamageUp_Fx"
@@ -3131,7 +3131,7 @@
                     "NPEJFLBOAAN": [
                         {
                             "$type": "RemoveModifier",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "Ayaka_Constellation_6_ExtraAttackDamageUp_Fx"
                         }
                     ]
@@ -3139,33 +3139,33 @@
                 "Ayaka_Constellation_6_ExtraAttackDamageUp_Fx": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "doOffStage": true,
-                            "effectPattern": "Eff_Avatar_Girl_Sword_Ayaka_Constellation_6_WatchTrail"
+                            "ACOKKHADPOJ": true,
+                            "JBHFPDMBFHN": "Eff_Avatar_Girl_Sword_Ayaka_Constellation_6_WatchTrail"
                         }
                     ]
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "ApplyModifier",
-                    "doOffStage": true,
+                    "ACOKKHADPOJ": true,
                     "GAIGOBCNNEE": "Ayaka_Constellation_6_ExtraAttackDamageUp_Handler"
                 }
             ],
-            "isDynamicAbility": true
+            "FEFIHIEHDOM": true
         }
     },
     {
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_NormalAttack_DamageHandler",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "ModifyDamageMixin",
-                    "animEventNames": [
+                    "MBGPMKGOEIJ": [
                         "ATK01"
                     ],
                     "bonusCriticalHurt": "NormalAttack_01_DamagePercentage",
@@ -3173,7 +3173,7 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "animEventNames": [
+                    "MBGPMKGOEIJ": [
                         "ATK02"
                     ],
                     "bonusCriticalHurt": "NormalAttack_02_DamagePercentage",
@@ -3181,7 +3181,7 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "animEventNames": [
+                    "MBGPMKGOEIJ": [
                         "ATK03"
                     ],
                     "bonusCriticalHurt": "NormalAttack_03_DamagePercentage",
@@ -3189,7 +3189,7 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "animEventNames": [
+                    "MBGPMKGOEIJ": [
                         "ATK04_1"
                     ],
                     "bonusCriticalHurt": "NormalAttack_04_1_DamagePercentage",
@@ -3197,7 +3197,7 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "animEventNames": [
+                    "MBGPMKGOEIJ": [
                         "ATK04_2"
                     ],
                     "bonusCriticalHurt": "NormalAttack_04_2_DamagePercentage",
@@ -3205,7 +3205,7 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "animEventNames": [
+                    "MBGPMKGOEIJ": [
                         "ATK04_3"
                     ],
                     "bonusCriticalHurt": "NormalAttack_04_3_DamagePercentage",
@@ -3213,14 +3213,14 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "attackTags": [
+                    "NMJGDKCDFOJ": [
                         "NormalAttack_05"
                     ],
                     "bonusCriticalHurt": "NormalAttack_05_DamagePercentage",
                     "damagePercentageRatio": 0.0
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "NormalAttack_01_DamagePercentage": 0.0,
                 "NormalAttack_02_DamagePercentage": 0.0,
                 "NormalAttack_03_DamagePercentage": 0.0,
@@ -3235,11 +3235,11 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Ayaka_FallingAnthem",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AvatarChangeSkillMixin",
-                    "jumpSkillID": 5002010,
-                    "flySkillID": 5002010
+                    "CNPIEDBKHII": 5002010,
+                    "CLJNFKPHGEO": 5002010
                 },
                 {
                     "$type": "AttachToStateIDMixin",
@@ -3340,7 +3340,7 @@
                     "GAIGOBCNNEE": "FallingAnthem_CameraRadialBlur"
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "FallingAnthem_Normal_Loop_Damage": 0.0,
                 "FallingAnthem_Normal_Rank_1_Damage": 0.0,
                 "FallingAnthem_Normal_Rank_2_Damage": 0.0,
@@ -3356,27 +3356,27 @@
                 "FallingAnthem_FallingDamageRatio_Lv4": -0.6000000238418579,
                 "FallingAnthem_FallingDamageRatio": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "FallingAnthem_AttachWeaponEffect": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Sword_FallAnthem_Self_01"
+                            "JBHFPDMBFHN": "Eff_Avatar_Sword_FallAnthem_Self_01"
                         }
                     ]
                 },
                 "FallingAnthem_CameraRadialBlur": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.23000000417232513,
+                    "GMIMMDOGGIO": 0.23000000417232513,
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "CameraBlurMixin",
-                            "cameraRadialBlur": {
-                                "power": 0.30000001192092896,
-                                "fadeTime": 0.15000000596046448
+                            "JDLOKNCEKAE": {
+                                "NPOJMKDPDHI": 0.30000001192092896,
+                                "HMBJAKBLION": 0.15000000596046448
                             }
                         }
                     ]
@@ -3384,20 +3384,20 @@
                 "FallingAnthem_BS_Material": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Sword_FallAnthem_BS"
+                            "JBHFPDMBFHN": "Eff_Avatar_Sword_FallAnthem_BS"
                         }
                     ]
                 },
                 "FallingAnthem_BS_VelocityForce_Initialize": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_AddGravityScale": -2.0
                     },
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "RemoveVelocityForce",
                             "forces": [
@@ -3409,23 +3409,23 @@
                 "FallingAnthem_LoopDamage": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "thinkInterval": 0.30000001192092896,
-                    "onThinkInterval": [
+                    "IKKMDDLDLIN": 0.30000001192092896,
+                    "PBDDACFFPOE": [
                         {
                             "$type": "TriggerAttackEvent",
-                            "attackEvent": {
+                            "DMCJDGELKBC": {
                                 "attackPattern": {
                                     "$type": "ConfigAttackSphere",
                                     "lifeTime": "TriggerNoRepeat",
-                                    "born": {
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.0,
-                                            "z": 1.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.0,
+                                            "PHDCJAHHIOG": 1.0
                                         }
                                     },
-                                    "radius": 1.0
+                                    "ICGFCBOFFDI": 1.0
                                 },
                                 "attackInfo": {
                                     "attackTag": "FallingAttack",
@@ -3447,39 +3447,39 @@
                                     }
                                 }
                             },
-                            "targetType": "Enemy"
+                            "OJIFKEOCJGB": "Enemy"
                         }
                     ]
                 },
                 "FallingAnthem_FallingDamageImmune_01": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ClearGlobalValue",
-                            "key": "_ABILITY_FallingAttack_Altitude"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude"
                         },
                         {
                             "$type": "AddGlobalValue",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": "FallingAnthem_Altitude_Lv0"
                                 }
                             ],
                             "value": "FallingAnthem_FallingDamageRatio_Lv0",
-                            "key": "_ABILITY_FallingAttack_Altitude",
-                            "useLimitRange": true,
-                            "maxValue": "FallingAnthem_FallingDamageRatio_Lv0",
-                            "minValue": "FallingAnthem_FallingDamageRatio_Lv0"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": "FallingAnthem_FallingDamageRatio_Lv0",
+                            "KHAHOELDONA": "FallingAnthem_FallingDamageRatio_Lv0"
                         },
                         {
                             "$type": "AddGlobalValue",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": "FallingAnthem_Altitude_Lv1"
                                 },
                                 {
@@ -3488,17 +3488,17 @@
                                 }
                             ],
                             "value": "FallingAnthem_FallingDamageRatio_Lv1",
-                            "key": "_ABILITY_FallingAttack_Altitude",
-                            "useLimitRange": true,
-                            "maxValue": "FallingAnthem_FallingDamageRatio_Lv1",
-                            "minValue": "FallingAnthem_FallingDamageRatio_Lv1"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": "FallingAnthem_FallingDamageRatio_Lv1",
+                            "KHAHOELDONA": "FallingAnthem_FallingDamageRatio_Lv1"
                         },
                         {
                             "$type": "AddGlobalValue",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": "FallingAnthem_Altitude_Lv2"
                                 },
                                 {
@@ -3507,17 +3507,17 @@
                                 }
                             ],
                             "value": "FallingAnthem_FallingDamageRatio_Lv2",
-                            "key": "_ABILITY_FallingAttack_Altitude",
-                            "useLimitRange": true,
-                            "maxValue": "FallingAnthem_FallingDamageRatio_Lv2",
-                            "minValue": "FallingAnthem_FallingDamageRatio_Lv2"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": "FallingAnthem_FallingDamageRatio_Lv2",
+                            "KHAHOELDONA": "FallingAnthem_FallingDamageRatio_Lv2"
                         },
                         {
                             "$type": "AddGlobalValue",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": "FallingAnthem_Altitude_Lv3"
                                 },
                                 {
@@ -3526,10 +3526,10 @@
                                 }
                             ],
                             "value": "FallingAnthem_FallingDamageRatio_Lv3",
-                            "key": "_ABILITY_FallingAttack_Altitude",
-                            "useLimitRange": true,
-                            "maxValue": "FallingAnthem_FallingDamageRatio_Lv3",
-                            "minValue": "FallingAnthem_FallingDamageRatio_Lv3"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": "FallingAnthem_FallingDamageRatio_Lv3",
+                            "KHAHOELDONA": "FallingAnthem_FallingDamageRatio_Lv3"
                         },
                         {
                             "$type": "AddGlobalValue",
@@ -3540,10 +3540,10 @@
                                 }
                             ],
                             "value": "FallingAnthem_FallingDamageRatio_Lv4",
-                            "key": "_ABILITY_FallingAttack_Altitude",
-                            "useLimitRange": true,
-                            "maxValue": "FallingAnthem_FallingDamageRatio_Lv4",
-                            "minValue": "FallingAnthem_FallingDamageRatio_Lv4"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": "FallingAnthem_FallingDamageRatio_Lv4",
+                            "KHAHOELDONA": "FallingAnthem_FallingDamageRatio_Lv4"
                         },
                         {
                             "$type": "AttachModifier",
@@ -3554,11 +3554,11 @@
                 "FallingAnthem_FallingDamageImmune_02": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "SetGlobalValueToOverrideMap",
-                            "globalValueKey": "_ABILITY_FallingAttack_Altitude",
-                            "overrideMapKey": "FallingAnthem_FallingDamageRatio"
+                            "BPCFCANOMNH": "_ABILITY_FallingAttack_Altitude",
+                            "OGAHELLALBB": "FallingAnthem_FallingDamageRatio"
                         },
                         {
                             "$type": "AttachModifier",
@@ -3569,24 +3569,24 @@
                 "FallingAnthem_FallingDamageImmune_03": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_FallingDamageRatio": "FallingAnthem_FallingDamageRatio"
                     }
                 },
                 "FallingAnthem_Loop_Normal": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "AttachModifierToSelfGlobalValueMixin",
-                            "globalValueKey": "_ABILITY_FallingAnthem_UseCamera",
-                            "defaultGlobalValueOnCreate": 0.0,
-                            "valueSteps": [
+                            "BPCFCANOMNH": "_ABILITY_FallingAnthem_UseCamera",
+                            "FEGIOIGELHB": 0.0,
+                            "CMEDACODLEA": [
                                 -1.0,
                                 0.5,
                                 1.5
                             ],
-                            "modifierNameSteps": [
+                            "MIEPCOONDEM": [
                                 "FallingAnthem_Loop_Normal_Rank_1",
                                 "FallingAnthem_Loop_Normal_Rank_2"
                             ]
@@ -3596,52 +3596,52 @@
                 "FallingAnthem_Loop_Normal_Rank_1": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Sword_FallAnthem_Loop_01"
+                            "JBHFPDMBFHN": "Eff_Avatar_Sword_FallAnthem_Loop_01"
                         }
                     ]
                 },
                 "FallingAnthem_Loop_Normal_Rank_2": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Sword_FallAnthem_Loop_02"
+                            "JBHFPDMBFHN": "Eff_Avatar_Sword_FallAnthem_Loop_02"
                         }
                     ]
                 },
                 "Inertia": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "ApplyInertiaVelocityMixin",
-                            "useXZ": false,
-                            "useY": false
+                            "DOOIAANMOKN": false,
+                            "PJACACNPMJA": false
                         }
                     ]
                 },
                 "FallingAnthem_Height_Detect": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AddGlobalValue",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": 2.4000000953674316
                                 }
                             ],
                             "value": 0.0,
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
-                            "useLimitRange": true,
-                            "maxValue": 0.0,
-                            "minValue": 0.0
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 0.0,
+                            "KHAHOELDONA": 0.0
                         },
                         {
                             "$type": "AddGlobalValue",
@@ -3652,17 +3652,17 @@
                                 }
                             ],
                             "value": 5.0,
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
-                            "useLimitRange": true,
-                            "maxValue": 1.0,
-                            "minValue": 0.0
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 1.0,
+                            "KHAHOELDONA": 0.0
                         },
                         {
                             "$type": "SetAnimatorFloat",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": 2.4000000953674316
                                 }
                             ],
@@ -3681,7 +3681,7 @@
                             "value": 1.0
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "SetAnimatorFloat",
                             "floatID": "FallingAnthem_UseCamera",
@@ -3690,31 +3690,31 @@
                         {
                             "$type": "AddGlobalValue",
                             "value": 0.0,
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
-                            "useLimitRange": true,
-                            "maxValue": 0.0,
-                            "minValue": 0.0
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 0.0,
+                            "KHAHOELDONA": 0.0
                         }
                     ]
                 },
                 "FallingAnthem_OverHead_Camera": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AvatarCameraParam",
                             "predicates": [
                                 {
                                     "$type": "ByAnimatorFloat",
-                                    "logic": "Equal",
+                                    "GMFCOCAJBDM": "Equal",
                                     "value": 1.0,
-                                    "parameter": "FallingAnthem_UseCamera"
+                                    "MOCGJNIDDAI": "FallingAnthem_UseCamera"
                                 }
                             ],
-                            "cameraParam": {
-                                "forceRadius": 4.5,
-                                "forceRadiusDuration": 0.20000000298023224,
-                                "shouldKeepForceRadius": true
+                            "HBPCGNIGHPH": {
+                                "JABJOOHIIKI": 4.5,
+                                "ENPKPCGKDDH": 0.20000000298023224,
+                                "MPFLBBFBBGK": true
                             }
                         }
                     ]
@@ -3722,31 +3722,31 @@
                 "FallingAnthem_OverHead_Camera_Remover": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AvatarExitCameraShot",
-                            "doOffStage": true
+                            "ACOKKHADPOJ": true
                         }
                     ]
                 },
                 "FallingAnthem_Landed_Camera": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AvatarCameraParam",
                             "predicates": [
                                 {
                                     "$type": "ByAnimatorFloat",
-                                    "logic": "Equal",
+                                    "GMFCOCAJBDM": "Equal",
                                     "value": 1.0,
-                                    "parameter": "FallingAnthem_UseCamera"
+                                    "MOCGJNIDDAI": "FallingAnthem_UseCamera"
                                 }
                             ],
-                            "cameraParam": {
-                                "forceRadius": 6.0,
-                                "forceRadiusDuration": 0.10000000149011612,
-                                "shouldKeepForceRadius": true
+                            "HBPCGNIGHPH": {
+                                "JABJOOHIIKI": 6.0,
+                                "ENPKPCGKDDH": 0.10000000149011612,
+                                "MPFLBBFBBGK": true
                             }
                         }
                     ]
@@ -3754,7 +3754,7 @@
                 "FallingAnthem_ClearVelocityForce": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "RemoveVelocityForce",
                             "forces": [
@@ -3767,7 +3767,7 @@
                 "FallingAnthem_ClearVelocityForce_AS": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "RemoveVelocityForce",
                             "forces": [
@@ -3778,32 +3778,32 @@
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "TriggerAttackEvent",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
                             "value": 0.0,
-                            "forceByCaster": true,
-                            "compareType": "NoneOrEqual"
+                            "EODMLMGMLNP": true,
+                            "ONPJJFKDCED": "NoneOrEqual"
                         }
                     ],
-                    "attackEvent": {
+                    "DMCJDGELKBC": {
                         "attackPattern": {
                             "$type": "ConfigAttackCircle",
                             "lifeTime": "TriggerNoRepeat",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": -0.5,
-                                    "z": 1.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": -0.5,
+                                    "PHDCJAHHIOG": 1.0
                                 }
                             },
                             "secondHeight": 2.0,
-                            "radius": 3.0
+                            "ICGFCBOFFDI": 3.0
                         },
                         "attackInfo": {
                             "attackTag": "FallingAttack",
@@ -3840,32 +3840,32 @@
                             }
                         }
                     },
-                    "targetType": "Enemy"
+                    "OJIFKEOCJGB": "Enemy"
                 },
                 {
                     "$type": "TriggerAttackEvent",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
                             "value": 1.0,
-                            "forceByCaster": true
+                            "EODMLMGMLNP": true
                         }
                     ],
-                    "attackEvent": {
+                    "DMCJDGELKBC": {
                         "attackPattern": {
                             "$type": "ConfigAttackCircle",
                             "lifeTime": "TriggerNoRepeat",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": -0.5,
-                                    "z": 1.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": -0.5,
+                                    "PHDCJAHHIOG": 1.0
                                 }
                             },
                             "secondHeight": 2.0,
-                            "radius": 5.0
+                            "ICGFCBOFFDI": 5.0
                         },
                         "attackInfo": {
                             "attackTag": "FallingAttack",
@@ -3903,32 +3903,32 @@
                             }
                         }
                     },
-                    "targetType": "Enemy"
+                    "OJIFKEOCJGB": "Enemy"
                 },
                 {
                     "$type": "FireEffect",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
                             "value": 0.0,
-                            "forceByCaster": true,
-                            "compareType": "NoneOrEqual"
+                            "EODMLMGMLNP": true,
+                            "ONPJJFKDCED": "NoneOrEqual"
                         }
                     ],
-                    "effectPattern": "Eff_Avatar_Sword_FallAnthem_Strike_01"
+                    "JBHFPDMBFHN": "Eff_Avatar_Sword_FallAnthem_Strike_01"
                 },
                 {
                     "$type": "FireEffect",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
                             "value": 1.0,
-                            "forceByCaster": true
+                            "EODMLMGMLNP": true
                         }
                     ],
-                    "effectPattern": "Eff_Avatar_Sword_FallAnthem_Strike_02"
+                    "JBHFPDMBFHN": "Eff_Avatar_Sword_FallAnthem_Strike_02"
                 }
             ]
         }

@@ -104,7 +104,7 @@
     {
         "id": 31001,
         "name": "FreshmeatRegion",
-        "CEBLPEIKLBK": "OPEN_STATE_LIMIT_REGION_FRESHMEAT",
+        "openstate": "OPEN_STATE_LIMIT_REGION_FRESHMEAT",
         "sceneId": 3,
         "type": "LIMIT_REGION_TYPE_BIGWORLD",
         "order": 100
@@ -112,7 +112,7 @@
     {
         "id": 31007,
         "name": "GlobalOpenArea3",
-        "CEBLPEIKLBK": "OPEN_STATE_LIMIT_REGION_GLOBAL",
+        "openstate": "OPEN_STATE_LIMIT_REGION_GLOBAL",
         "sceneId": 3,
         "type": "LIMIT_REGION_TYPE_BIGWORLD",
         "order": 10
@@ -227,8 +227,8 @@
     },
     {
         "id": 33001,
-        "name": "BigWorld_LIMIT_REGION_WITHERED_FOREST",
-        "CEBLPEIKLBK": "OPEN_STATE_LIMIT_REGION_WITHERED_FOREST",
+        "name": "UI_BigWorld_Vinebefore",
+        "openstate": "UNDEFINED",
         "sceneId": 3,
         "type": "LIMIT_REGION_TYPE_BIGWORLD",
         "order": 99

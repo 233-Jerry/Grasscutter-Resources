@@ -9,33 +9,33 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Weapon_Wood_Normal",
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "GrassMaterial": {
                     "GAIGOBCNNEE": "",
                     "elementType": "Grass",
                     "elementDurability": 150.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "ApplyModifier",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "Burned"
                         }
                     ]
                 },
                 "Burned": {
                     "GAIGOBCNNEE": "",
-                    "duration": 5.0,
+                    "GMIMMDOGGIO": 5.0,
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "ApplyModifier",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "GrassMaterial"
                         }
                     ]
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "ApplyModifier",
                     "GAIGOBCNNEE": "GrassMaterial"
@@ -47,12 +47,12 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Weapon_Wood_Hard",
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "GrassMaterial": {
                     "GAIGOBCNNEE": "",
                     "elementType": "Grass",
                     "elementDurability": 150.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "ApplyModifier",
                             "GAIGOBCNNEE": "Burned"
@@ -66,9 +66,9 @@
                 },
                 "Burned": {
                     "GAIGOBCNNEE": "",
-                    "duration": 5.0,
+                    "GMIMMDOGGIO": 5.0,
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "ApplyModifier",
                             "GAIGOBCNNEE": "GrassMaterial"
@@ -80,7 +80,7 @@
                     ]
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "ApplyModifier",
                     "GAIGOBCNNEE": "GrassMaterial"

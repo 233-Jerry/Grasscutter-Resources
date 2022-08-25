@@ -3,13 +3,13 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Beidou_ExtraAttack",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "ButtonHoldChargeMixin",
                     "overtime": 10241,
-                    "chargeTime": 0.25,
-                    "secondChargeTime": "Max_Dura",
-                    "OnBeginUncharged": [
+                    "DBKLMBJJHDP": 0.25,
+                    "BLOPHAGIDDP": "Max_Dura",
+                    "CBGHBGNKMPO": [
                         {
                             "$type": "SetAnimatorTrigger",
                             "triggerID": "DoSkill"
@@ -28,7 +28,7 @@
                             "GAIGOBCNNEE": "SetTrigger"
                         }
                     ],
-                    "OnBeginCharged": [
+                    "PKNMLLHNOLA": [
                         {
                             "$type": "SetAnimatorTrigger",
                             "triggerID": "DoSkill"
@@ -39,7 +39,7 @@
                             "value": 6.0
                         }
                     ],
-                    "OnReleaseCharged": [
+                    "NFPDHLMEPGB": [
                         {
                             "$type": "SetAnimatorTrigger",
                             "triggerID": "EndHoldTrigger"
@@ -49,13 +49,13 @@
                             "GAIGOBCNNEE": "SetTrigger"
                         }
                     ],
-                    "OnBeginSecondCharged": [
+                    "EGNJLDKPBMI": [
                         {
                             "$type": "SetAnimatorTrigger",
                             "triggerID": "EndHoldTrigger"
                         }
                     ],
-                    "chargeStateIDs": [
+                    "KBDIHBMGNBC": [
                         "Attack01_BS",
                         "Attack01",
                         "Attack02",
@@ -90,16 +90,16 @@
                     "GAIGOBCNNEE": "Cost"
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "ExtraAttack_Claymore_Stamina_Cost": 0.0,
                 "Max_Dura": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "SetTrigger": {
                     "GAIGOBCNNEE": "",
-                    "duration": 1.0,
+                    "GMIMMDOGGIO": 1.0,
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "SetAnimatorTrigger",
                             "triggerID": "EndHoldTrigger"
@@ -109,27 +109,27 @@
                 "Camera": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "AvatarExitCameraShot",
-                            "doOffStage": true
+                            "ACOKKHADPOJ": true
                         }
                     ],
                     "NPEJFLBOAAN": [
                         {
                             "$type": "AvatarExitCameraShot",
-                            "doOffStage": true
+                            "ACOKKHADPOJ": true
                         }
                     ]
                 },
                 "Cost": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "CostStaminaMixin",
-                            "costStaminaDelta": "ExtraAttack_Claymore_Stamina_Cost",
-                            "onStaminaEmpty": [
+                            "MBNKHAGNAFE": "ExtraAttack_Claymore_Stamina_Cost",
+                            "GAKLCFHFOLB": [
                                 {
                                     "$type": "SetAnimatorTrigger",
                                     "triggerID": "EndHoldTrigger"
@@ -145,21 +145,21 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Beidou_ThunderCounter_Handler",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "SkillButtonHoldChargeMixin",
                     "overtime": 10242,
-                    "nextLoopTriggerID": "NextLoopTrigger",
-                    "endHoldTrigger": "EndHoldTrigger",
-                    "beforeStateIDs": [
+                    "FBKEKCDNBGA": "NextLoopTrigger",
+                    "FPOECNCOANG": "EndHoldTrigger",
+                    "DALGCIDCLHM": [
                         "Beidou_ThunderCounter_BS"
                     ],
-                    "chargeLoopStateIDs": [
+                    "DPOLLOHHCHN": [
                         "Beidou_ThunderCounter_Loop1",
                         "Beidou_ThunderCounter_Loop2",
                         "Beidou_ThunderCounter_Loop3"
                     ],
-                    "chargeLoopDurations": [
+                    "FDBPIFFNAND": [
                         2.799999952316284,
                         2.799999952316284,
                         2.799999952316284
@@ -232,35 +232,35 @@
                     "GAIGOBCNNEE": "Beidou_ElementalArt_CD_Handler"
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "BlockHP": 0.0,
                 "BlockConst": 0.0,
                 "CounterStage": 1.0,
                 "GetElementRatio": 1.0,
                 "TalentRate": 1.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Skill_Shield": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "EliteShieldMixin",
-                            "shieldType": "Avatar_Electric",
-                            "shieldAngle": 360.0,
-                            "shieldHPRatio": [
+                            "ONOFEELAHJK": "Avatar_Electric",
+                            "KFDBBJLMOKJ": 360.0,
+                            "PDGJDMOFOAO": [
                                 "BlockHP",
                                 "TalentRate",
                                 "Mul"
                             ],
-                            "shieldHP": [
+                            "IDGEOBABPIE": [
                                 "BlockConst",
                                 "TalentRate",
                                 "Mul"
                             ],
-                            "costShieldRatioName": "",
-                            "showDamageText": "INFO_ELITE_DEFENCE",
-                            "onShieldBroken": [
+                            "HBNBIBFHBKM": "",
+                            "FMAPKFDKKPB": "INFO_ELITE_DEFENCE",
+                            "BOCNCNPHCFL": [
                                 {
                                     "$type": "SetAnimatorTrigger",
                                     "triggerID": "EndHoldTrigger"
@@ -272,25 +272,25 @@
                 "Skill_HitCount": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_EndureDelta": 0.0
                     },
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ClearEndura"
                         },
                         {
                             "$type": "AddGlobalValue",
                             "value": 0.0,
-                            "key": "_ABILITY_ThunderCounter_CounterStage",
-                            "useLimitRange": true,
-                            "maxValue": 1.0,
-                            "minValue": 1.0
+                            "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 1.0,
+                            "KHAHOELDONA": 1.0
                         },
                         {
                             "$type": "SetGlobalValueToOverrideMap",
-                            "globalValueKey": "_ABILITY_ThunderCounter_CounterStage",
-                            "overrideMapKey": "CounterStage"
+                            "BPCFCANOMNH": "_ABILITY_ThunderCounter_CounterStage",
+                            "OGAHELLALBB": "CounterStage"
                         },
                         {
                             "$type": "SetAnimatorInt",
@@ -303,14 +303,14 @@
                         },
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Shield"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Shield"
                         },
                         {
                             "$type": "ApplyModifier",
                             "predicates": [
                                 {
                                     "$type": "ByUnlockTalentParam",
-                                    "talentParam": "ExactCounter"
+                                    "GFIJPNMCOGJ": "ExactCounter"
                                 }
                             ],
                             "GAIGOBCNNEE": "ExactCounter"
@@ -320,7 +320,7 @@
                             "GAIGOBCNNEE": "Skill_Shield_ElectricBuff"
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "SetAnimatorTrigger",
                             "triggerID": "SkinReset"
@@ -332,14 +332,14 @@
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "target": "Self",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "NPHOOPNDCAC": "Self",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 2.5,
-                                    "compareType": "LessAndEqual"
+                                    "ONPJJFKDCED": "LessAndEqual"
                                 },
                                 {
                                     "$type": "ByHitEnBreak",
-                                    "enBreak": 0.0
+                                    "DCBBLJKHKCA": 0.0
                                 }
                             ],
                             "GAIGOBCNNEE": "AddGlobal"
@@ -349,14 +349,14 @@
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "target": "Self",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "NPHOOPNDCAC": "Self",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 2.5,
-                                    "compareType": "MoreThanAndEqual"
+                                    "ONPJJFKDCED": "MoreThanAndEqual"
                                 },
                                 {
                                     "$type": "ByHitEnBreak",
-                                    "enBreak": 0.0
+                                    "DCBBLJKHKCA": 0.0
                                 }
                             ],
                             "cameraShake": {
@@ -371,8 +371,8 @@
                         },
                         {
                             "$type": "Predicated",
-                            "target": "Target",
-                            "targetPredicates": [
+                            "NPHOOPNDCAC": "Target",
+                            "ELDBAFHCOBL": [
                                 {
                                     "$type": "ByEntityTypes",
                                     "entityTypes": [
@@ -380,70 +380,70 @@
                                     ]
                                 }
                             ],
-                            "successActions": [
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "SetGlobalDir",
-                                    "target": "Target",
-                                    "key": "_ABILITY_ThunderCounter_Shield_Hit",
-                                    "born": {
+                                    "NPHOOPNDCAC": "Target",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_Shield_Hit",
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
-                                        "direction": {
+                                        "NHPNHKBMAEO": {
                                             "$type": "ConfigDirectionByLookAtEntity"
                                         }
                                     },
-                                    "setTarget": false
+                                    "OGADOPDNBMM": false
                                 }
                             ],
-                            "failActions": [
+                            "BMIOBLGLPIM": [
                                 {
                                     "$type": "SetGlobalDir",
-                                    "target": "TargetOriginOwner",
-                                    "key": "_ABILITY_ThunderCounter_Shield_Hit",
-                                    "born": {
+                                    "NPHOOPNDCAC": "TargetOriginOwner",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_Shield_Hit",
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
-                                        "direction": {
+                                        "NHPNHKBMAEO": {
                                             "$type": "ConfigDirectionByLookAtEntity"
                                         }
                                     },
-                                    "setTarget": false
+                                    "OGADOPDNBMM": false
                                 }
                             ]
                         },
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Shield_Hited",
-                            "born": {
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Shield_Hited",
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
-                                "direction": {
+                                "NHPNHKBMAEO": {
                                     "$type": "ConfigDirectionByGlobalValue",
-                                    "directionKey": "_ABILITY_ThunderCounter_Shield_Hit"
+                                    "MICIJLHMIIH": "_ABILITY_ThunderCounter_Shield_Hit"
                                 }
                             }
                         }
                     ]
                 },
                 "AddGlobal": {
-                    "stacking": "Multiple",
-                    "stackingOption": {
-                        "abilitySpecialName": "",
-                        "maxModifierNumForMultipleType": 2.0
+                    "FGJPBKGPNJJ": "Multiple",
+                    "DGAJIEGBDKP": {
+                        "BOICMOPAIII": "",
+                        "INDGEIJCJAJ": 2.0
                     },
                     "GAIGOBCNNEE": "",
-                    "duration": 1.0,
+                    "GMIMMDOGGIO": 1.0,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AddGlobalValue",
                             "value": 1.0,
-                            "key": "_ABILITY_ThunderCounter_CounterStage",
-                            "useLimitRange": true,
-                            "maxValue": 3.0,
-                            "minValue": 1.0
+                            "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 3.0,
+                            "KHAHOELDONA": 1.0
                         },
                         {
                             "$type": "SetGlobalValueToOverrideMap",
-                            "globalValueKey": "_ABILITY_ThunderCounter_CounterStage",
-                            "overrideMapKey": "CounterStage"
+                            "BPCFCANOMNH": "_ABILITY_ThunderCounter_CounterStage",
+                            "OGAHELLALBB": "CounterStage"
                         },
                         {
                             "$type": "SetAnimatorInt",
@@ -455,31 +455,31 @@
                 "ChargeLoop": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AvatarEnterFocus",
-                            "cameraFollowLower": {
+                            "OBGFLLMNMEC": {
                                 "_z": -3.5
                             },
-                            "dragButtonName": "Skill1",
-                            "canMove": false,
-                            "showCrosshair": false
+                            "JCBJMHODNNI": "Skill1",
+                            "EFEDMKCKAMH": false,
+                            "EJJBEEALCGG": false
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "AvatarExitFocus",
-                            "keepRotation": true
+                            "IAIJCILPPPA": true
                         }
                     ]
                 },
                 "Beidou_ElementalArt_CD_Handler": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "AvatarSkillStart",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "predicates": [
                                 {
                                     "$type": "BySkillReady",
@@ -487,26 +487,26 @@
                                 }
                             ],
                             "overtime": 10242,
-                            "cdRatio": 1.0,
-                            "costStaminaRatio": 1.0
+                            "AFPAPIFKIHK": 1.0,
+                            "JFIJFCKLFCF": 1.0
                         }
                     ]
                 },
                 "ThunderCounter_WeaponEmission_01": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "SetEmissionScaler",
-                            "materialType": "Weapon",
+                            "LFIHLDLEOCI": "Weapon",
                             "weight": 3.0,
                             "duration": 0.10000000149011612
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "SetEmissionScaler",
-                            "materialType": "Weapon",
+                            "LFIHLDLEOCI": "Weapon",
                             "weight": -1.0,
                             "duration": 0.10000000149011612
                         }
@@ -515,18 +515,18 @@
                 "ThunderCounter_WeaponEmission_02": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "SetEmissionScaler",
-                            "materialType": "Weapon",
+                            "LFIHLDLEOCI": "Weapon",
                             "weight": 6.0,
                             "duration": 0.10000000149011612
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "SetEmissionScaler",
-                            "materialType": "Weapon",
+                            "LFIHLDLEOCI": "Weapon",
                             "weight": -1.0,
                             "duration": 0.10000000149011612
                         }
@@ -535,18 +535,18 @@
                 "ThunderCounter_WeaponEmission_03": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "SetEmissionScaler",
-                            "materialType": "Weapon",
+                            "LFIHLDLEOCI": "Weapon",
                             "weight": 8.0,
                             "duration": 0.10000000149011612
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "SetEmissionScaler",
-                            "materialType": "Weapon",
+                            "LFIHLDLEOCI": "Weapon",
                             "weight": -1.0,
                             "duration": 0.10000000149011612
                         }
@@ -555,16 +555,16 @@
                 "ChargeLoop1": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Loop"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Loop"
                         },
                         {
                             "$type": "AttachModifier",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByEquipParts",
-                                "equipPartNames": [
+                                "GNNLGDBFIDI": [
                                     "equip01"
                                 ]
                             },
@@ -579,16 +579,16 @@
                 "ChargeLoop2": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Loop1"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Loop1"
                         },
                         {
                             "$type": "AttachModifier",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByEquipParts",
-                                "equipPartNames": [
+                                "GNNLGDBFIDI": [
                                     "equip01"
                                 ]
                             },
@@ -615,7 +615,7 @@
                 "ChargeLoop3": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ActCameraShake",
                             "cameraShake": {
@@ -630,21 +630,21 @@
                         },
                         {
                             "$type": "ActCameraRadialBlur",
-                            "cameraRadialBlur": {
-                                "power": 1.0,
-                                "blurTime": 0.30000001192092896,
-                                "fadeTime": 0.15000000596046448
+                            "JDLOKNCEKAE": {
+                                "NPOJMKDPDHI": 1.0,
+                                "OMAFLDHOHAC": 0.30000001192092896,
+                                "HMBJAKBLION": 0.15000000596046448
                             }
                         },
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Loop2"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Loop2"
                         },
                         {
                             "$type": "AttachModifier",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByEquipParts",
-                                "equipPartNames": [
+                                "GNNLGDBFIDI": [
                                     "equip01"
                                 ]
                             },
@@ -658,40 +658,40 @@
                 },
                 "ChargeBlade1": {
                     "GAIGOBCNNEE": "",
-                    "duration": 5.0,
+                    "GMIMMDOGGIO": 5.0,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Weapon"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Weapon"
                         }
                     ]
                 },
                 "ChargeBlade2": {
                     "GAIGOBCNNEE": "",
-                    "duration": 5.0,
+                    "GMIMMDOGGIO": 5.0,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Weapon1"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Weapon1"
                         }
                     ]
                 },
                 "ChargeBlade3": {
                     "GAIGOBCNNEE": "",
-                    "duration": 5.0,
+                    "GMIMMDOGGIO": 5.0,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Weapon2"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Weapon2"
                         }
                     ]
                 },
                 "ExactCounter": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.30000001192092896,
+                    "GMIMMDOGGIO": 0.30000001192092896,
                     "elementDurability": 100.0,
                     "onBeingHit": [
                         {
@@ -699,7 +699,7 @@
                             "predicates": [
                                 {
                                     "$type": "ByHitEnBreak",
-                                    "enBreak": 0.0
+                                    "DCBBLJKHKCA": 0.0
                                 }
                             ],
                             "GAIGOBCNNEE": "ExactCounter_Handler"
@@ -708,12 +708,12 @@
                 },
                 "ExactCounter_Handler": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.30000001192092896,
+                    "GMIMMDOGGIO": 0.30000001192092896,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_ExactCounter"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_ExactCounter"
                         },
                         {
                             "$type": "ActCameraShake",
@@ -730,15 +730,15 @@
                         {
                             "$type": "AddGlobalValue",
                             "value": 1.0,
-                            "key": "_ABILITY_ThunderCounter_CounterStage",
-                            "useLimitRange": true,
-                            "maxValue": 3.0,
-                            "minValue": 1.0
+                            "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 3.0,
+                            "KHAHOELDONA": 1.0
                         },
                         {
                             "$type": "SetGlobalValueToOverrideMap",
-                            "globalValueKey": "_ABILITY_ThunderCounter_CounterStage",
-                            "overrideMapKey": "CounterStage"
+                            "BPCFCANOMNH": "_ABILITY_ThunderCounter_CounterStage",
+                            "OGAHELLALBB": "CounterStage"
                         },
                         {
                             "$type": "SetAnimatorInt",
@@ -750,14 +750,14 @@
                 "GenerateElemBall_ThunderCounter_Strike": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAttackLanded": [
+                    "AIJPLNMHBEN": [
                         {
                             "$type": "Predicated",
-                            "target": "Target",
-                            "targetPredicates": [
+                            "NPHOOPNDCAC": "Target",
+                            "ELDBAFHCOBL": [
                                 {
                                     "$type": "ByAttackTags",
-                                    "attackTags": [
+                                    "NMJGDKCDFOJ": [
                                         "Elemental_Art"
                                     ]
                                 },
@@ -769,12 +769,12 @@
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ANIMAL_ENTITY_TYPE",
+                                    "HJJEAOMEOFI": "_ANIMAL_ENTITY_TYPE",
                                     "value": 0.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 }
                             ],
-                            "successActions": [
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "ApplyModifier",
                                     "GAIGOBCNNEE": "Ball"
@@ -784,28 +784,28 @@
                     ]
                 },
                 "Ball": {
-                    "stacking": "Unique",
+                    "FGJPBKGPNJJ": "Unique",
                     "GAIGOBCNNEE": "",
-                    "duration": 0.4000000059604645,
+                    "GMIMMDOGGIO": 0.4000000059604645,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "Randomed",
-                            "chance": 1.0,
-                            "successActions": [
+                            "PLKDGIELEEF": 1.0,
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "GenerateElemBall",
-                                    "configID": 2020,
-                                    "born": {
+                                    "APIAFGPIIHE": 2020,
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornByTarget",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.0,
-                                            "z": 1.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.0,
+                                            "PHDCJAHHIOG": 1.0
                                         }
                                     },
                                     "ratio": "GetElementRatio",
-                                    "baseEnergy": 6.0
+                                    "GJNDGIAENMI": 6.0
                                 }
                             ]
                         },
@@ -814,26 +814,26 @@
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 2.0,
-                                    "compareType": "MoreThanAndEqual"
+                                    "ONPJJFKDCED": "MoreThanAndEqual"
                                 }
                             ],
-                            "chance": 1.0,
-                            "successActions": [
+                            "PLKDGIELEEF": 1.0,
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "GenerateElemBall",
-                                    "configID": 2020,
-                                    "born": {
+                                    "APIAFGPIIHE": 2020,
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornByTarget",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.0,
-                                            "z": 1.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.0,
+                                            "PHDCJAHHIOG": 1.0
                                         }
                                     },
                                     "ratio": "GetElementRatio",
-                                    "baseEnergy": 3.0
+                                    "GJNDGIAENMI": 3.0
                                 }
                             ]
                         },
@@ -842,26 +842,26 @@
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 3.0,
-                                    "compareType": "MoreThanAndEqual"
+                                    "ONPJJFKDCED": "MoreThanAndEqual"
                                 }
                             ],
-                            "chance": 1.0,
-                            "successActions": [
+                            "PLKDGIELEEF": 1.0,
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "GenerateElemBall",
-                                    "configID": 2020,
-                                    "born": {
+                                    "APIAFGPIIHE": 2020,
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornByTarget",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.0,
-                                            "z": 1.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.0,
+                                            "PHDCJAHHIOG": 1.0
                                         }
                                     },
                                     "ratio": "GetElementRatio",
-                                    "baseEnergy": 3.0
+                                    "GJNDGIAENMI": 3.0
                                 }
                             ]
                         }
@@ -869,20 +869,20 @@
                 },
                 "Skill_Shield_ElectricBuff": {
                     "GAIGOBCNNEE": "",
-                    "duration": 2.0,
+                    "GMIMMDOGGIO": 2.0,
                     "elementType": "Electric",
                     "elementDurability": 25.0,
                     "state": "ElementElectric"
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "AddGlobalValue",
                     "value": 1.0,
-                    "key": "_ABILITY_ThunderCounter_CounterStage",
-                    "useLimitRange": true,
-                    "maxValue": 1.0,
-                    "minValue": 1.0
+                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
+                    "EODOIECEPEF": true,
+                    "JDHHMBHOOEC": 1.0,
+                    "KHAHOELDONA": 1.0
                 },
                 {
                     "$type": "AttachModifier",
@@ -895,41 +895,41 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Beidou_ThunderCounter_Strike",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AttachToNormalizedTimeMixin",
-                    "stateID": "ThunderCounter_Cast_Stage1",
+                    "EFAJCDMGOHL": "ThunderCounter_Cast_Stage1",
                     "GAIGOBCNNEE": "StrikeEffect",
-                    "normalizeStart": 0.27000001072883606
+                    "AAIFCLGLOMO": 0.27000001072883606
                 },
                 {
                     "$type": "AttachToNormalizedTimeMixin",
-                    "stateID": "ThunderCounter_Cast_Stage2",
+                    "EFAJCDMGOHL": "ThunderCounter_Cast_Stage2",
                     "GAIGOBCNNEE": "StrikeEffect1",
-                    "normalizeStart": 0.27000001072883606
+                    "AAIFCLGLOMO": 0.27000001072883606
                 },
                 {
                     "$type": "AttachToNormalizedTimeMixin",
-                    "stateID": "ThunderCounter_Cast_Stage3",
+                    "EFAJCDMGOHL": "ThunderCounter_Cast_Stage3",
                     "GAIGOBCNNEE": "StrikeEffect2",
-                    "normalizeStart": 0.27000001072883606
+                    "AAIFCLGLOMO": 0.27000001072883606
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "Damage_Stage1": 0.0,
                 "Damage_PerStage": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "StrikeEffect": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ApplyModifier",
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 3.0
                                 }
                             ],
@@ -940,47 +940,47 @@
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 3.0
                                 }
                             ],
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter2"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter2"
                         },
                         {
                             "$type": "FireEffect",
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 2.0
                                 }
                             ],
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter1"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter1"
                         },
                         {
                             "$type": "FireEffect",
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 1.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 }
                             ],
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter"
                         }
                     ]
                 },
                 "StrikeEffect1": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ApplyModifier",
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 3.0
                                 }
                             ],
@@ -991,47 +991,47 @@
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 3.0
                                 }
                             ],
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter2"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter2"
                         },
                         {
                             "$type": "FireEffect",
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 2.0
                                 }
                             ],
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter1"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter1"
                         },
                         {
                             "$type": "FireEffect",
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 1.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 }
                             ],
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter"
                         }
                     ]
                 },
                 "StrikeEffect2": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ApplyModifier",
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 3.0
                                 }
                             ],
@@ -1042,56 +1042,56 @@
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 3.0
                                 }
                             ],
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter2"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter2"
                         },
                         {
                             "$type": "FireEffect",
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 2.0
                                 }
                             ],
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter1"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter1"
                         },
                         {
                             "$type": "FireEffect",
                             "predicates": [
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ABILITY_ThunderCounter_CounterStage",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                                     "value": 1.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 }
                             ],
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter"
                         }
                     ]
                 },
                 "Weather": {
                     "GAIGOBCNNEE": "",
-                    "duration": 1.5,
+                    "GMIMMDOGGIO": 1.5,
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "TriggerWeatherMixin",
                             "type": "Skill",
-                            "weatherPattern": "Weather_Beidou_ThunderCounter",
-                            "transDuration": 0.30000001192092896,
+                            "IHMBDACJNDO": "Weather_Beidou_ThunderCounter",
+                            "DPEJLHDNMOK": 0.30000001192092896,
                             "duration": 1.0
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "AvatarSkillStart",
-                    "doOffStage": true,
+                    "ACOKKHADPOJ": true,
                     "predicates": [
                         {
                             "$type": "BySkillReady",
@@ -1099,34 +1099,34 @@
                         }
                     ],
                     "overtime": 10242,
-                    "cdRatio": 1.0,
-                    "costStaminaRatio": 1.0
+                    "AFPAPIFKIHK": 1.0,
+                    "JFIJFCKLFCF": 1.0
                 },
                 {
                     "$type": "TriggerAttackEvent",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_ABILITY_ThunderCounter_CounterStage",
+                            "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                             "value": 1.0,
-                            "compareType": "NoneOrEqual"
+                            "ONPJJFKDCED": "NoneOrEqual"
                         }
                     ],
-                    "attackEvent": {
+                    "DMCJDGELKBC": {
                         "attackPattern": {
                             "$type": "ConfigAttackCircle",
                             "lifeTime": "TriggerNoRepeat",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornBySelf",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 0.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
                             "secondHeight": 1.5,
-                            "radius": 6.0,
-                            "detectDirection": "Clockwise"
+                            "ICGFCBOFFDI": 6.0,
+                            "BACAAAFIHEI": "Clockwise"
                         },
                         "attackInfo": {
                             "attackTag": "Elemental_Art",
@@ -1160,32 +1160,32 @@
                             }
                         }
                     },
-                    "targetType": "Enemy"
+                    "OJIFKEOCJGB": "Enemy"
                 },
                 {
                     "$type": "TriggerAttackEvent",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_ABILITY_ThunderCounter_CounterStage",
+                            "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                             "value": 2.0
                         }
                     ],
-                    "attackEvent": {
+                    "DMCJDGELKBC": {
                         "attackPattern": {
                             "$type": "ConfigAttackCircle",
                             "lifeTime": "TriggerNoRepeat",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornBySelf",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 0.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
                             "secondHeight": 1.5,
-                            "radius": 7.0,
-                            "detectDirection": "Clockwise"
+                            "ICGFCBOFFDI": 7.0,
+                            "BACAAAFIHEI": "Clockwise"
                         },
                         "attackInfo": {
                             "attackTag": "Elemental_Art",
@@ -1223,32 +1223,32 @@
                             }
                         }
                     },
-                    "targetType": "Enemy"
+                    "OJIFKEOCJGB": "Enemy"
                 },
                 {
                     "$type": "TriggerAttackEvent",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_ABILITY_ThunderCounter_CounterStage",
+                            "HJJEAOMEOFI": "_ABILITY_ThunderCounter_CounterStage",
                             "value": 3.0
                         }
                     ],
-                    "attackEvent": {
+                    "DMCJDGELKBC": {
                         "attackPattern": {
                             "$type": "ConfigAttackCircle",
                             "lifeTime": "TriggerNoRepeat",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornBySelf",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 0.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
                             "secondHeight": 1.5,
-                            "radius": 8.0,
-                            "detectDirection": "Clockwise"
+                            "ICGFCBOFFDI": 8.0,
+                            "BACAAAFIHEI": "Clockwise"
                         },
                         "attackInfo": {
                             "attackTag": "Elemental_Art",
@@ -1288,7 +1288,7 @@
                             }
                         }
                     },
-                    "targetType": "Enemy"
+                    "OJIFKEOCJGB": "Enemy"
                 }
             ]
         }
@@ -1297,7 +1297,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Beidou_ThunderShield_CameraHandler",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AttachToStateIDMixin",
                     "stateIDs": [
@@ -1322,74 +1322,74 @@
                 },
                 {
                     "$type": "AttachToNormalizedTimeMixin",
-                    "stateID": "ThunderShield",
+                    "EFAJCDMGOHL": "ThunderShield",
                     "GAIGOBCNNEE": "ThunderShield_WeaponEmission",
-                    "normalizeEnd": 0.6340000033378601
+                    "MMHONEIBHNP": 0.6340000033378601
                 },
                 {
                     "$type": "AttachToNormalizedTimeMixin",
-                    "stateID": "ThunderShield",
+                    "EFAJCDMGOHL": "ThunderShield",
                     "GAIGOBCNNEE": "ThunderShield_WeatherHandler",
-                    "normalizeStart": 0.10000000149011612
+                    "AAIFCLGLOMO": 0.10000000149011612
                 },
                 {
                     "$type": "AttachToNormalizedTimeMixin",
-                    "stateID": "ThunderShield",
+                    "EFAJCDMGOHL": "ThunderShield",
                     "GAIGOBCNNEE": "ThunderShield_TriggerBullet",
-                    "normalizeStart": 0.07999999821186066,
-                    "normalizeEnd": 0.20000000298023224
+                    "AAIFCLGLOMO": 0.07999999821186066,
+                    "MMHONEIBHNP": 0.20000000298023224
                 }
             ],
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "ThunderShield_TriggerBullet": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_BS"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_BS"
                         },
                         {
                             "$type": "TriggerBullet",
-                            "bulletID": 41024001,
-                            "born": {
+                            "NGAAOMEHOGE": 41024001,
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByAttachPoint",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 0.0,
+                                    "PHDCJAHHIOG": 0.0
                                 },
-                                "direction": {
+                                "NHPNHKBMAEO": {
                                     "$type": "ConfigDirectionByEntity"
                                 },
-                                "attachPointName": "RootNode"
+                                "KJNJNKLLNCN": "RootNode"
                             },
-                            "lifeByOwnerIsAlive": true
+                            "NJEOPILMKCN": true
                         }
                     ]
                 },
                 "ThunderShield_Protection_Ghost": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "KillGadget",
-                            "gadgetInfo": {
-                                "configID": 41024001
+                            "LBGGIBBMCMF": {
+                                "APIAFGPIIHE": 41024001
                             }
                         },
                         {
                             "$type": "AttachAbilityStateResistance",
-                            "resistanceListID": 11002
+                            "KPGAIMMIKDA": 11002
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "AvatarCameraParam",
-                            "cameraParam": {
-                                "forceRadius": 4.0,
-                                "forceRadiusDuration": 0.6000000238418579,
-                                "shouldKeepForceRadius": true
+                            "HBPCGNIGHPH": {
+                                "JABJOOHIIKI": 4.0,
+                                "ENPKPCGKDDH": 0.6000000238418579,
+                                "MPFLBBFBBGK": true
                             }
                         }
                     ]
@@ -1402,15 +1402,15 @@
                 "ThunderShield_WeaponEmission": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "SetEmissionScaler",
-                            "materialType": "Weapon",
+                            "LFIHLDLEOCI": "Weapon",
                             "weight": 12.0,
                             "duration": 0.30000001192092896
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "ApplyModifier",
                             "GAIGOBCNNEE": "ThunderShield_WeaponEndEmission"
@@ -1420,7 +1420,7 @@
                 "ThunderShield_WeatherHandler": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ApplyModifier",
                             "GAIGOBCNNEE": "ThunderShield_Weather"
@@ -1429,27 +1429,27 @@
                 },
                 "ThunderShield_Weather": {
                     "GAIGOBCNNEE": "",
-                    "duration": 2.0,
+                    "GMIMMDOGGIO": 2.0,
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "TriggerWeatherMixin",
                             "type": "Skill",
-                            "weatherPattern": "Weather_Beidou_ThunderShield",
-                            "transDuration": 0.4000000059604645,
+                            "IHMBDACJNDO": "Weather_Beidou_ThunderShield",
+                            "DPEJLHDNMOK": 0.4000000059604645,
                             "duration": 1.0
                         }
                     ]
                 },
                 "ThunderShield_WeaponEndEmission": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.30000001192092896,
+                    "GMIMMDOGGIO": 0.30000001192092896,
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "SetEmissionScaler",
-                            "doOffStage": true,
-                            "materialType": "Weapon",
+                            "ACOKKHADPOJ": true,
+                            "LFIHLDLEOCI": "Weapon",
                             "weight": -1.0,
                             "duration": 0.30000001192092896
                         }
@@ -1458,15 +1458,15 @@
                 "ThunderShield_CameraHandler": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "EnableHeadControl"
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "AvatarExitCameraShot",
-                            "doOffStage": true
+                            "ACOKKHADPOJ": true
                         },
                         {
                             "$type": "EnableHeadControl",
@@ -1474,41 +1474,41 @@
                         },
                         {
                             "$type": "AvatarCameraParam",
-                            "cameraParam": {
-                                "forceRadius": 4.0,
-                                "forceRadiusDuration": 0.30000001192092896,
-                                "shouldKeepForceRadius": true
+                            "HBPCGNIGHPH": {
+                                "JABJOOHIIKI": 4.0,
+                                "ENPKPCGKDDH": 0.30000001192092896,
+                                "MPFLBBFBBGK": true
                             }
                         }
                     ],
                     "NPEJFLBOAAN": [
                         {
                             "$type": "AvatarExitCameraShot",
-                            "doOffStage": true
+                            "ACOKKHADPOJ": true
                         },
                         {
                             "$type": "EnableHeadControl",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "enable": true
                         },
                         {
                             "$type": "AvatarCameraParam",
-                            "doOffStage": true,
-                            "cameraParam": {
-                                "forceRadius": 4.0,
-                                "forceRadiusDuration": 0.30000001192092896,
-                                "shouldKeepForceRadius": true
+                            "ACOKKHADPOJ": true,
+                            "HBPCGNIGHPH": {
+                                "JABJOOHIIKI": 4.0,
+                                "ENPKPCGKDDH": 0.30000001192092896,
+                                "MPFLBBFBBGK": true
                             }
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "AvatarSkillStart",
                     "overtime": 10245,
-                    "cdRatio": 1.0,
-                    "costStaminaRatio": 1.0
+                    "AFPAPIFKIHK": 1.0,
+                    "JFIJFCKLFCF": 1.0
                 }
             ]
         }
@@ -1517,23 +1517,23 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Beidou_ThunderShield_Gadget",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "ElectricDown": 0.0,
                 "ShieldHP": 0.0,
                 "ChainDamage": 0.0,
                 "Duration": -1.600000023841858,
                 "DamageReduce": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Gadget_Mixin": {
                     "GAIGOBCNNEE": "",
-                    "duration": [
+                    "GMIMMDOGGIO": [
                         "Duration",
                         2.0,
                         "Add"
                     ],
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "CurLocalAvatarMixin",
                             "GAIGOBCNNEE": "UNIQUE_Beidou_ThunderShield"
@@ -1542,22 +1542,22 @@
                 },
                 "UNIQUE_Beidou_ThunderShield": {
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
+                    "IEOFBCGJGEK": true,
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_EndureDelta": 0.5,
                         "Actor_SubHurtDelta": "DamageReduce"
                     },
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ClearEndura"
                         }
                     ],
-                    "onAttackLanded": [
+                    "AIJPLNMHBEN": [
                         {
                             "$type": "Predicated",
-                            "target": "Other",
-                            "targetPredicates": [
+                            "NPHOOPNDCAC": "Other",
+                            "ELDBAFHCOBL": [
                                 {
                                     "$type": "ByEntityTypes",
                                     "entityTypes": [
@@ -1566,27 +1566,27 @@
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ANIMAL_ENTITY_TYPE",
+                                    "HJJEAOMEOFI": "_ANIMAL_ENTITY_TYPE",
                                     "value": 0.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 },
                                 {
                                     "$type": "ByTargetPositionToSelfPosition",
-                                    "logic": "LesserOrEqual",
-                                    "compareType": "XYZ",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
+                                    "ONPJJFKDCED": "XYZ",
                                     "value": 15.0
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "target": "Caster",
-                                    "key": "_ABILITY_ThunderChain_COUNT",
+                                    "NPHOOPNDCAC": "Caster",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderChain_COUNT",
                                     "value": 0.5,
-                                    "forceByCaster": true,
-                                    "compareType": "MoreThan"
+                                    "EODMLMGMLNP": true,
+                                    "ONPJJFKDCED": "MoreThan"
                                 },
                                 {
                                     "$type": "ByAttackTags",
-                                    "attackTags": [
+                                    "NMJGDKCDFOJ": [
                                         "NormalAttack_01",
                                         "NormalAttack_02",
                                         "NormalAttack_03",
@@ -1597,30 +1597,30 @@
                                     ]
                                 }
                             ],
-                            "successActions": [
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "ApplyModifier",
-                                    "target": "Other",
+                                    "NPHOOPNDCAC": "Other",
                                     "predicates": [
                                         {
                                             "$type": "ByUnlockTalentParam",
-                                            "target": "Caster",
-                                            "talentParam": "Beidou_ExtraChain"
+                                            "NPHOOPNDCAC": "Caster",
+                                            "GFIJPNMCOGJ": "Beidou_ExtraChain"
                                         }
                                     ],
                                     "GAIGOBCNNEE": "Beidou_Lightining0"
                                 },
                                 {
                                     "$type": "ApplyModifier",
-                                    "target": "Other",
+                                    "NPHOOPNDCAC": "Other",
                                     "predicates": [
                                         {
                                             "$type": "ByNot",
                                             "predicates": [
                                                 {
                                                     "$type": "ByUnlockTalentParam",
-                                                    "target": "Caster",
-                                                    "talentParam": "Beidou_ExtraChain"
+                                                    "NPHOOPNDCAC": "Caster",
+                                                    "GFIJPNMCOGJ": "Beidou_ExtraChain"
                                                 }
                                             ]
                                         }
@@ -1629,17 +1629,17 @@
                                 },
                                 {
                                     "$type": "ApplyModifier",
-                                    "target": "Caster",
+                                    "NPHOOPNDCAC": "Caster",
                                     "GAIGOBCNNEE": "Beidou_LightiningCD"
                                 },
                                 {
                                     "$type": "AddGlobalValue",
-                                    "target": "Caster",
+                                    "NPHOOPNDCAC": "Caster",
                                     "value": -1.0,
-                                    "key": "_ABILITY_ThunderChain_COUNT",
-                                    "useLimitRange": true,
-                                    "maxValue": 1.0,
-                                    "minValue": 0.0
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderChain_COUNT",
+                                    "EODOIECEPEF": true,
+                                    "JDHHMBHOOEC": 1.0,
+                                    "KHAHOELDONA": 0.0
                                 }
                             ]
                         }
@@ -1647,26 +1647,26 @@
                 },
                 "Beidou_ThunderShield_EffectControl": {
                     "GAIGOBCNNEE": "",
-                    "duration": [
+                    "GMIMMDOGGIO": [
                         "Duration",
                         2.0,
                         "Add"
                     ],
                     "elementDurability": 100.0,
-                    "thinkInterval": "Duration",
-                    "onAdded": [
+                    "IKKMDDLDLIN": "Duration",
+                    "KCICDEJLIJD": [
                         {
                             "$type": "SendEffectTrigger",
-                            "parameter": "Trigger",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield"
+                            "MOCGJNIDDAI": "Trigger",
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield"
                         },
                         {
                             "$type": "AttachModifier",
                             "predicates": [
                                 {
                                     "$type": "ByUnlockTalentParam",
-                                    "target": "Caster",
-                                    "talentParam": "Beidou_ElectricDown"
+                                    "NPHOOPNDCAC": "Caster",
+                                    "GFIJPNMCOGJ": "Beidou_ElectricDown"
                                 }
                             ],
                             "GAIGOBCNNEE": "Beidou_Talent_ElectricDown_Gadget"
@@ -1679,8 +1679,8 @@
                                     "predicates": [
                                         {
                                             "$type": "ByUnlockTalentParam",
-                                            "target": "Caster",
-                                            "talentParam": "Beidou_ElectricDown"
+                                            "NPHOOPNDCAC": "Caster",
+                                            "GFIJPNMCOGJ": "Beidou_ElectricDown"
                                         }
                                     ]
                                 }
@@ -1688,68 +1688,68 @@
                             "GAIGOBCNNEE": "Beidou_Talent_ElectricDown_Gadget"
                         }
                     ],
-                    "onThinkInterval": [
+                    "PBDDACFFPOE": [
                         {
                             "$type": "SendEffectTrigger",
-                            "parameter": "Disappear",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield"
+                            "MOCGJNIDDAI": "Disappear",
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield"
                         },
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Dissipate"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Dissipate"
                         }
                     ]
                 },
                 "UNIQUE_Beidou_TalentShield_TeamHandler": {
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
-                    "duration": [
+                    "IEOFBCGJGEK": true,
+                    "GMIMMDOGGIO": [
                         "Duration",
                         2.0,
                         "Add"
                     ],
                     "elementDurability": 100.0,
-                    "thinkInterval": [
+                    "IKKMDDLDLIN": [
                         "Duration",
                         1.4500000476837158,
                         "Add"
                     ],
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "GlobalMainShieldMixin",
-                            "shieldType": "Avatar_Electric",
-                            "shieldAngle": 360.0,
-                            "shieldHPRatio": "ShieldHP",
-                            "costShieldRatioName": "",
-                            "showDamageText": "INFO_ELITE_DEFENCE",
-                            "onShieldBroken": [
+                            "ONOFEELAHJK": "Avatar_Electric",
+                            "KFDBBJLMOKJ": 360.0,
+                            "PDGJDMOFOAO": "ShieldHP",
+                            "HBNBIBFHBKM": "",
+                            "FMAPKFDKKPB": "INFO_ELITE_DEFENCE",
+                            "BOCNCNPHCFL": [
                                 {
                                     "$type": "FireEffect",
-                                    "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Talent_Destroy"
+                                    "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Talent_Destroy"
                                 },
                                 {
                                     "$type": "RemoveUniqueModifier",
                                     "GAIGOBCNNEE": "UNIQUE_Beidou_TalentShield_TeamHandler"
                                 }
                             ],
-                            "effectPattern": "",
-                            "childShieldModifierName": "UNIQUE_Beidou_TalentShield_Child"
+                            "JBHFPDMBFHN": "",
+                            "NAMCOFPMABJ": "UNIQUE_Beidou_TalentShield_Child"
                         }
                     ],
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Talent",
-                            "born": {
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Talent",
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget"
                             }
                         }
                     ],
-                    "onThinkInterval": [
+                    "PBDDACFFPOE": [
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Talent_AS",
-                            "born": {
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Talent_AS",
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget"
                             }
                         }
@@ -1757,22 +1757,22 @@
                 },
                 "UNIQUE_Beidou_TalentShield_Child": {
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
+                    "IEOFBCGJGEK": true,
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "GlobalSubShieldMixin",
-                            "mainShieldModifierName": "UNIQUE_Beidou_TalentShield_TeamHandler"
+                            "DFKHGPCOINH": "UNIQUE_Beidou_TalentShield_TeamHandler"
                         }
                     ],
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_EndureDelta": 0.0
                     },
                     "onBeingHit": [
                         {
                             "$type": "Predicated",
-                            "target": "Target",
-                            "targetPredicates": [
+                            "NPHOOPNDCAC": "Target",
+                            "ELDBAFHCOBL": [
                                 {
                                     "$type": "ByEntityTypes",
                                     "entityTypes": [
@@ -1780,95 +1780,95 @@
                                     ]
                                 }
                             ],
-                            "successActions": [
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "SetGlobalDir",
-                                    "target": "Target",
-                                    "key": "_ABILITY_ThunderShield_Talent_Hit",
-                                    "born": {
+                                    "NPHOOPNDCAC": "Target",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderShield_Talent_Hit",
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
-                                        "direction": {
+                                        "NHPNHKBMAEO": {
                                             "$type": "ConfigDirectionByLookAtEntity"
                                         }
                                     },
-                                    "setTarget": false
+                                    "OGADOPDNBMM": false
                                 }
                             ],
-                            "failActions": [
+                            "BMIOBLGLPIM": [
                                 {
                                     "$type": "SetGlobalDir",
-                                    "target": "TargetOriginOwner",
-                                    "key": "_ABILITY_ThunderShield_Talent_Hit",
-                                    "born": {
+                                    "NPHOOPNDCAC": "TargetOriginOwner",
+                                    "HJJEAOMEOFI": "_ABILITY_ThunderShield_Talent_Hit",
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
-                                        "direction": {
+                                        "NHPNHKBMAEO": {
                                             "$type": "ConfigDirectionByLookAtEntity"
                                         }
                                     },
-                                    "setTarget": false
+                                    "OGADOPDNBMM": false
                                 }
                             ]
                         },
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Shield_Hited",
-                            "born": {
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Shield_Hited",
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
-                                "direction": {
+                                "NHPNHKBMAEO": {
                                     "$type": "ConfigDirectionByGlobalValue",
-                                    "directionKey": "_ABILITY_ThunderShield_Talent_Hit"
+                                    "MICIJLHMIIH": "_ABILITY_ThunderShield_Talent_Hit"
                                 }
                             }
                         }
                     ]
                 },
                 "Beidou_LightiningCD": {
-                    "stacking": "Unique",
+                    "FGJPBKGPNJJ": "Unique",
                     "GAIGOBCNNEE": "",
-                    "duration": 1.0,
+                    "GMIMMDOGGIO": 1.0,
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "AddGlobalValue",
                             "value": 1.0,
-                            "key": "_ABILITY_ThunderChain_COUNT",
-                            "useLimitRange": true,
-                            "maxValue": 1.0,
-                            "minValue": 1.0
+                            "HJJEAOMEOFI": "_ABILITY_ThunderChain_COUNT",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 1.0,
+                            "KHAHOELDONA": 1.0
                         }
                     ]
                 },
                 "Beidou_Lightining0": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.15000000596046448,
+                    "GMIMMDOGGIO": 0.15000000596046448,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning",
-                            "born": {
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning",
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByAttachPoint",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 0.0,
+                                    "PHDCJAHHIOG": 0.0
                                 },
-                                "attachPointName": "RootNode",
-                                "attachPointTargetType": "Applier"
+                                "KJNJNKLLNCN": "RootNode",
+                                "MMFHENHCBGB": "Applier"
                             }
                         },
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning_Hit"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning_Hit"
                         },
                         {
                             "$type": "DamageByAttackValue",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 1.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 1.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
                             "attackInfo": {
@@ -1892,22 +1892,22 @@
                             }
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "ApplyModifier",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByShape",
-                                "topLimit": 1,
-                                "sortType": "Random",
-                                "shapeName": "CircleR8",
-                                "campTargetType": "Enemy",
-                                "campBasedOn": "Caster",
-                                "sizeRatio": 1.0
+                                "DJLKFLJENEG": 1,
+                                "AKMLOIFOBPO": "Random",
+                                "JBKKOJLJHDK": "CircleR8",
+                                "ONPOPLLHJLE": "Enemy",
+                                "AFLAEMMPLPN": "Caster",
+                                "CJJABKCAIEB": 1.0
                             },
                             "predicates": [
                                 {
                                     "$type": "ByTargetType",
-                                    "isTarget": false
+                                    "GAIGNEFHDBL": false
                                 },
                                 {
                                     "$type": "ByEntityTypes",
@@ -1917,9 +1917,9 @@
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ANIMAL_ENTITY_TYPE",
+                                    "HJJEAOMEOFI": "_ANIMAL_ENTITY_TYPE",
                                     "value": 0.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 }
                             ],
                             "GAIGOBCNNEE": "Beidou_Lightining1"
@@ -1928,35 +1928,35 @@
                 },
                 "Beidou_Lightining1": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.15000000596046448,
+                    "GMIMMDOGGIO": 0.15000000596046448,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning",
-                            "born": {
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning",
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByAttachPoint",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 0.0,
+                                    "PHDCJAHHIOG": 0.0
                                 },
-                                "attachPointName": "RootNode",
-                                "attachPointTargetType": "Applier"
+                                "KJNJNKLLNCN": "RootNode",
+                                "MMFHENHCBGB": "Applier"
                             }
                         },
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning_Hit"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning_Hit"
                         },
                         {
                             "$type": "DamageByAttackValue",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 1.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 1.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
                             "attackInfo": {
@@ -1980,22 +1980,22 @@
                             }
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "ApplyModifier",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByShape",
-                                "topLimit": 1,
-                                "sortType": "Random",
-                                "shapeName": "CircleR8",
-                                "campTargetType": "Enemy",
-                                "campBasedOn": "Caster",
-                                "sizeRatio": 1.0
+                                "DJLKFLJENEG": 1,
+                                "AKMLOIFOBPO": "Random",
+                                "JBKKOJLJHDK": "CircleR8",
+                                "ONPOPLLHJLE": "Enemy",
+                                "AFLAEMMPLPN": "Caster",
+                                "CJJABKCAIEB": 1.0
                             },
                             "predicates": [
                                 {
                                     "$type": "ByTargetType",
-                                    "isTarget": false
+                                    "GAIGNEFHDBL": false
                                 },
                                 {
                                     "$type": "ByEntityTypes",
@@ -2005,9 +2005,9 @@
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ANIMAL_ENTITY_TYPE",
+                                    "HJJEAOMEOFI": "_ANIMAL_ENTITY_TYPE",
                                     "value": 0.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 }
                             ],
                             "GAIGOBCNNEE": "Beidou_Lightining2"
@@ -2016,35 +2016,35 @@
                 },
                 "Beidou_Lightining2": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.15000000596046448,
+                    "GMIMMDOGGIO": 0.15000000596046448,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning",
-                            "born": {
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning",
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByAttachPoint",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 0.0,
+                                    "PHDCJAHHIOG": 0.0
                                 },
-                                "attachPointName": "RootNode",
-                                "attachPointTargetType": "Applier"
+                                "KJNJNKLLNCN": "RootNode",
+                                "MMFHENHCBGB": "Applier"
                             }
                         },
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning_Hit"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning_Hit"
                         },
                         {
                             "$type": "DamageByAttackValue",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 1.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 1.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
                             "attackInfo": {
@@ -2068,22 +2068,22 @@
                             }
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "ApplyModifier",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByShape",
-                                "topLimit": 1,
-                                "sortType": "Random",
-                                "shapeName": "CircleR8",
-                                "campTargetType": "Enemy",
-                                "campBasedOn": "Caster",
-                                "sizeRatio": 1.0
+                                "DJLKFLJENEG": 1,
+                                "AKMLOIFOBPO": "Random",
+                                "JBKKOJLJHDK": "CircleR8",
+                                "ONPOPLLHJLE": "Enemy",
+                                "AFLAEMMPLPN": "Caster",
+                                "CJJABKCAIEB": 1.0
                             },
                             "predicates": [
                                 {
                                     "$type": "ByTargetType",
-                                    "isTarget": false
+                                    "GAIGNEFHDBL": false
                                 },
                                 {
                                     "$type": "ByEntityTypes",
@@ -2093,9 +2093,9 @@
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ANIMAL_ENTITY_TYPE",
+                                    "HJJEAOMEOFI": "_ANIMAL_ENTITY_TYPE",
                                     "value": 0.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 }
                             ],
                             "GAIGOBCNNEE": "Beidou_Lightining3"
@@ -2104,35 +2104,35 @@
                 },
                 "Beidou_Lightining3": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.15000000596046448,
+                    "GMIMMDOGGIO": 0.15000000596046448,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning",
-                            "born": {
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning",
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByAttachPoint",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 0.0,
+                                    "PHDCJAHHIOG": 0.0
                                 },
-                                "attachPointName": "RootNode",
-                                "attachPointTargetType": "Applier"
+                                "KJNJNKLLNCN": "RootNode",
+                                "MMFHENHCBGB": "Applier"
                             }
                         },
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning_Hit"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning_Hit"
                         },
                         {
                             "$type": "DamageByAttackValue",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 1.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 1.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
                             "attackInfo": {
@@ -2156,22 +2156,22 @@
                             }
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "ApplyModifier",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByShape",
-                                "topLimit": 1,
-                                "sortType": "Random",
-                                "shapeName": "CircleR8",
-                                "campTargetType": "Enemy",
-                                "campBasedOn": "Caster",
-                                "sizeRatio": 1.0
+                                "DJLKFLJENEG": 1,
+                                "AKMLOIFOBPO": "Random",
+                                "JBKKOJLJHDK": "CircleR8",
+                                "ONPOPLLHJLE": "Enemy",
+                                "AFLAEMMPLPN": "Caster",
+                                "CJJABKCAIEB": 1.0
                             },
                             "predicates": [
                                 {
                                     "$type": "ByTargetType",
-                                    "isTarget": false
+                                    "GAIGNEFHDBL": false
                                 },
                                 {
                                     "$type": "ByEntityTypes",
@@ -2181,9 +2181,9 @@
                                 },
                                 {
                                     "$type": "ByTargetGlobalValue",
-                                    "key": "_ANIMAL_ENTITY_TYPE",
+                                    "HJJEAOMEOFI": "_ANIMAL_ENTITY_TYPE",
                                     "value": 0.0,
-                                    "compareType": "NoneOrEqual"
+                                    "ONPJJFKDCED": "NoneOrEqual"
                                 }
                             ],
                             "GAIGOBCNNEE": "Beidou_Lightining4"
@@ -2192,35 +2192,35 @@
                 },
                 "Beidou_Lightining4": {
                     "GAIGOBCNNEE": "",
-                    "duration": 0.20000000298023224,
+                    "GMIMMDOGGIO": 0.20000000298023224,
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning",
-                            "born": {
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning",
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByAttachPoint",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 0.0,
+                                    "PHDCJAHHIOG": 0.0
                                 },
-                                "attachPointName": "RootNode",
-                                "attachPointTargetType": "Applier"
+                                "KJNJNKLLNCN": "RootNode",
+                                "MMFHENHCBGB": "Applier"
                             }
                         },
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning_Hit"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield_Lightning_Hit"
                         },
                         {
                             "$type": "DamageByAttackValue",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": 1.0,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": 1.0,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
                             "attackInfo": {
@@ -2248,15 +2248,15 @@
                 "Beidou_Talent_ElectricDown_Gadget": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "thinkInterval": 0.5,
-                    "onThinkInterval": [
+                    "IKKMDDLDLIN": 0.5,
+                    "PBDDACFFPOE": [
                         {
                             "$type": "ApplyModifier",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByShape",
-                                "shapeName": "CircleR5",
-                                "campTargetType": "Enemy",
-                                "sizeRatio": 1.0
+                                "JBKKOJLJHDK": "CircleR5",
+                                "ONPOPLLHJLE": "Enemy",
+                                "CJJABKCAIEB": 1.0
                             },
                             "predicates": [
                                 {
@@ -2272,20 +2272,20 @@
                 },
                 "UNIQUE_Beidou_Talent_ElectricDown_Monster": {
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
-                    "duration": 1.5,
+                    "IEOFBCGJGEK": true,
+                    "GMIMMDOGGIO": 1.5,
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_ElecSubHurtDelta": "ElectricDown"
                     },
                     "state": "DefenseDown",
-                    "isLimitedProperties": true
+                    "FBMJEOALKEJ": true
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "FireEffect",
-                    "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield"
+                    "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderShield"
                 },
                 {
                     "$type": "AttachModifier",
@@ -2294,10 +2294,10 @@
                 {
                     "$type": "AddGlobalValue",
                     "value": 1.0,
-                    "key": "_ABILITY_ThunderChain_COUNT",
-                    "useLimitRange": true,
-                    "maxValue": 1.0,
-                    "minValue": 1.0
+                    "HJJEAOMEOFI": "_ABILITY_ThunderChain_COUNT",
+                    "EODOIECEPEF": true,
+                    "JDHHMBHOOEC": 1.0,
+                    "KHAHOELDONA": 1.0
                 },
                 {
                     "$type": "AttachModifier",
@@ -2305,37 +2305,37 @@
                 },
                 {
                     "$type": "Predicated",
-                    "target": "Caster",
-                    "targetPredicates": [
+                    "NPHOOPNDCAC": "Caster",
+                    "ELDBAFHCOBL": [
                         {
                             "$type": "ByUnlockTalentParam",
-                            "talentParam": "AddShield"
+                            "GFIJPNMCOGJ": "AddShield"
                         }
                     ],
-                    "successActions": [
+                    "NCNDEAPMKCP": [
                         {
                             "$type": "AttachModifier",
-                            "target": "Team",
+                            "NPHOOPNDCAC": "Team",
                             "GAIGOBCNNEE": "UNIQUE_Beidou_TalentShield_TeamHandler"
                         }
                     ]
                 }
             ],
-            "onKill": [
+            "OGFFGLGEOGF": [
                 {
                     "$type": "RemoveUniqueModifier",
-                    "target": "Team",
-                    "doOffStage": true,
+                    "NPHOOPNDCAC": "Team",
+                    "ACOKKHADPOJ": true,
                     "GAIGOBCNNEE": "UNIQUE_Beidou_TalentShield_TeamHandler"
                 },
                 {
                     "$type": "RemoveModifier",
-                    "doOffStage": true,
+                    "ACOKKHADPOJ": true,
                     "GAIGOBCNNEE": "Gadget_Mixin"
                 },
                 {
                     "$type": "RemoveModifier",
-                    "doOffStage": true,
+                    "ACOKKHADPOJ": true,
                     "GAIGOBCNNEE": "Beidou_ThunderShield_EffectControl"
                 }
             ]
@@ -2345,34 +2345,34 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Beidou_ThunderShield",
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "BurstDamage": 0.0
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "ActCameraRadialBlur",
-                    "cameraRadialBlur": {
-                        "power": 1.5,
-                        "blurTime": 0.30000001192092896,
-                        "fadeTime": 0.20000000298023224
+                    "JDLOKNCEKAE": {
+                        "NPOJMKDPDHI": 1.5,
+                        "OMAFLDHOHAC": 0.30000001192092896,
+                        "HMBJAKBLION": 0.20000000298023224
                     }
                 },
                 {
                     "$type": "TriggerAttackEvent",
-                    "attackEvent": {
+                    "DMCJDGELKBC": {
                         "attackPattern": {
                             "$type": "ConfigAttackCircle",
                             "lifeTime": "TriggerNoRepeat",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornBySelf",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": -0.20000000298023224,
-                                    "z": 0.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": -0.20000000298023224,
+                                    "PHDCJAHHIOG": 0.0
                                 }
                             },
                             "secondHeight": 2.0,
-                            "radius": 4.0
+                            "ICGFCBOFFDI": 4.0
                         },
                         "attackInfo": {
                             "attackTag": "Elemental_Burst",
@@ -2409,7 +2409,7 @@
                             }
                         }
                     },
-                    "targetType": "Enemy"
+                    "OJIFKEOCJGB": "Enemy"
                 }
             ]
         }
@@ -2418,10 +2418,10 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Beidou_NormalAttackDamage",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "ModifyDamageMixin",
-                    "attackTags": [
+                    "NMJGDKCDFOJ": [
                         "NormalAttack_01"
                     ],
                     "bonusCriticalHurt": "Attack01",
@@ -2429,7 +2429,7 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "attackTags": [
+                    "NMJGDKCDFOJ": [
                         "NormalAttack_02"
                     ],
                     "bonusCriticalHurt": "Attack02",
@@ -2437,7 +2437,7 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "attackTags": [
+                    "NMJGDKCDFOJ": [
                         "NormalAttack_03"
                     ],
                     "bonusCriticalHurt": "Attack03",
@@ -2445,7 +2445,7 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "attackTags": [
+                    "NMJGDKCDFOJ": [
                         "NormalAttack_04"
                     ],
                     "bonusCriticalHurt": "Attack04",
@@ -2453,7 +2453,7 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "attackTags": [
+                    "NMJGDKCDFOJ": [
                         "NormalAttack_05"
                     ],
                     "bonusCriticalHurt": "Attack05",
@@ -2461,7 +2461,7 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "animEventNames": [
+                    "MBGPMKGOEIJ": [
                         "ExtraAttack1"
                     ],
                     "bonusCriticalHurt": "ExtraAttack1",
@@ -2469,14 +2469,14 @@
                 },
                 {
                     "$type": "ModifyDamageMixin",
-                    "animEventNames": [
+                    "MBGPMKGOEIJ": [
                         "ExtraAttack2"
                     ],
                     "bonusCriticalHurt": "ExtraAttack2",
                     "damagePercentageRatio": 0.0
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "Attack01": 0.0,
                 "Attack02": 0.0,
                 "Attack03": 0.0,
@@ -2491,28 +2491,28 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Beidou_Talent_ElectricAdd",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AttachModifierToSelfGlobalValueMixin",
-                    "globalValueKey": "_ABILITY_Beidou_Talent_ElectricAdd",
-                    "defaultGlobalValueOnCreate": 0.0,
-                    "valueSteps": [
+                    "BPCFCANOMNH": "_ABILITY_Beidou_Talent_ElectricAdd",
+                    "FEGIOIGELHB": 0.0,
+                    "CMEDACODLEA": [
                         -1.5,
                         -0.5,
                         0.5
                     ],
-                    "modifierNameSteps": [
+                    "MIEPCOONDEM": [
                         "Beidou_Talent_ElectricAdd_CheckCD",
                         "Beidou_Talent_ElectricAdd_Check"
                     ]
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "Rate": 0.0,
                 "Time": 0.0,
                 "CDTime": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Beidou_Talent_ElectricAdd_Check": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
@@ -2524,40 +2524,40 @@
                         {
                             "$type": "AddGlobalValue",
                             "value": -1.0,
-                            "key": "_ABILITY_Beidou_Talent_ElectricAdd",
-                            "useLimitRange": true,
-                            "maxValue": -1.0,
-                            "minValue": -1.0
+                            "HJJEAOMEOFI": "_ABILITY_Beidou_Talent_ElectricAdd",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": -1.0,
+                            "KHAHOELDONA": -1.0
                         }
                     ]
                 },
                 "Beidou_Talent_ElectricAdd_CheckCD": {
                     "GAIGOBCNNEE": "",
-                    "duration": "CDTime",
+                    "GMIMMDOGGIO": "CDTime",
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "AddGlobalValue",
-                            "doOffStage": true,
+                            "ACOKKHADPOJ": true,
                             "value": 1.0,
-                            "key": "_ABILITY_Beidou_Talent_ElectricAdd",
-                            "useLimitRange": true,
-                            "maxValue": 0.0,
-                            "minValue": 0.0
+                            "HJJEAOMEOFI": "_ABILITY_Beidou_Talent_ElectricAdd",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 0.0,
+                            "KHAHOELDONA": 0.0
                         }
                     ]
                 },
                 "Beidou_Talent_ElectricAdd": {
                     "GAIGOBCNNEE": "",
-                    "duration": "Time",
+                    "GMIMMDOGGIO": "Time",
                     "elementDurability": 100.0,
-                    "thinkInterval": 1.0,
-                    "onAdded": [
+                    "IKKMDDLDLIN": 1.0,
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachModifier",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByEquipParts",
-                                "equipPartNames": [
+                                "GNNLGDBFIDI": [
                                     "equip01",
                                     "equip02",
                                     "sheathPoint"
@@ -2566,14 +2566,14 @@
                             "GAIGOBCNNEE": "Beidou_Talent_ElectricAdd_WeaponEffect"
                         }
                     ],
-                    "onAttackLanded": [
+                    "AIJPLNMHBEN": [
                         {
                             "$type": "Predicated",
-                            "target": "Target",
-                            "targetPredicates": [
+                            "NPHOOPNDCAC": "Target",
+                            "ELDBAFHCOBL": [
                                 {
                                     "$type": "ByAttackTags",
-                                    "attackTags": [
+                                    "NMJGDKCDFOJ": [
                                         "NormalAttack_01",
                                         "NormalAttack_02",
                                         "NormalAttack_03",
@@ -2590,16 +2590,16 @@
                                     ]
                                 }
                             ],
-                            "successActions": [
+                            "NCNDEAPMKCP": [
                                 {
                                     "$type": "DamageByAttackValue",
-                                    "target": "Target",
-                                    "born": {
+                                    "NPHOOPNDCAC": "Target",
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornByHitPoint",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.699999988079071,
-                                            "z": 0.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.699999988079071,
+                                            "PHDCJAHHIOG": 0.0
                                         }
                                     },
                                     "attackInfo": {
@@ -2623,12 +2623,12 @@
                             ]
                         }
                     ],
-                    "onThinkInterval": [
+                    "PBDDACFFPOE": [
                         {
                             "$type": "AttachModifier",
-                            "otherTargets": {
+                            "GILFKOBKGLI": {
                                 "$type": "SelectTargetsByEquipParts",
-                                "equipPartNames": [
+                                "GNNLGDBFIDI": [
                                     "equip01",
                                     "equip02",
                                     "sheathPoint"
@@ -2640,34 +2640,34 @@
                 },
                 "Beidou_Talent_ElectricAdd_WeaponEffect": {
                     "GAIGOBCNNEE": "",
-                    "duration": "Time",
+                    "GMIMMDOGGIO": "Time",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Weapon"
+                            "JBHFPDMBFHN": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Weapon"
                         }
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "AttachModifier",
                     "GAIGOBCNNEE": "Beidou_Talent_ElectricAdd_Check"
                 }
             ],
-            "isDynamicAbility": true
+            "FEFIHIEHDOM": true
         }
     },
     {
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Beidou_FallingAnthem",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AvatarChangeSkillMixin",
-                    "jumpSkillID": 5024010,
-                    "flySkillID": 5024010
+                    "CNPIEDBKHII": 5024010,
+                    "CLJNFKPHGEO": 5024010
                 },
                 {
                     "$type": "AttachToStateIDMixin",
@@ -2753,7 +2753,7 @@
                     "GAIGOBCNNEE": "FallingAnthem_AttachSelfEffect"
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "FallingAnthem_Normal_Loop_Damage": 0.0,
                 "FallingAnthem_Normal_Rank_1_Damage": 0.0,
                 "FallingAnthem_Normal_Rank_2_Damage": 0.0,
@@ -2769,38 +2769,38 @@
                 "FallingAnthem_FallingDamageRatio_Lv4": -0.6000000238418579,
                 "FallingAnthem_FallingDamageRatio": 0.0
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "FallingAnthem_AttachSelfEffect": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Claymore_FallAnthem_Self_02"
+                            "JBHFPDMBFHN": "Eff_Avatar_Claymore_FallAnthem_Self_02"
                         }
                     ]
                 },
                 "FallingAnthem_BS_Material": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Claymore_FallAnthem_Self"
+                            "JBHFPDMBFHN": "Eff_Avatar_Claymore_FallAnthem_Self"
                         },
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Claymore_FallAnthem_BS"
+                            "JBHFPDMBFHN": "Eff_Avatar_Claymore_FallAnthem_BS"
                         }
                     ]
                 },
                 "FallingAnthem_BS_VelocityForce_Initialize": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_AddGravityScale": -2.0
                     },
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "RemoveVelocityForce",
                             "forces": [
@@ -2812,23 +2812,23 @@
                 "FallingAnthem_LoopDamage": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "thinkInterval": 0.30000001192092896,
-                    "onThinkInterval": [
+                    "IKKMDDLDLIN": 0.30000001192092896,
+                    "PBDDACFFPOE": [
                         {
                             "$type": "TriggerAttackEvent",
-                            "attackEvent": {
+                            "DMCJDGELKBC": {
                                 "attackPattern": {
                                     "$type": "ConfigAttackSphere",
                                     "lifeTime": "TriggerNoRepeat",
-                                    "born": {
+                                    "NGDMCBABOJA": {
                                         "$type": "ConfigBornBySelf",
                                         "offset": {
-                                            "x": 0.0,
-                                            "y": 0.0,
-                                            "z": 1.0
+                                            "AEAAJCIDPED": 0.0,
+                                            "KAAPLGBEDPM": 0.0,
+                                            "PHDCJAHHIOG": 1.0
                                         }
                                     },
-                                    "radius": 1.0
+                                    "ICGFCBOFFDI": 1.0
                                 },
                                 "attackInfo": {
                                     "attackTag": "FallingAttack",
@@ -2850,39 +2850,39 @@
                                     }
                                 }
                             },
-                            "targetType": "Enemy"
+                            "OJIFKEOCJGB": "Enemy"
                         }
                     ]
                 },
                 "FallingAnthem_FallingDamageImmune_01": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "ClearGlobalValue",
-                            "key": "_ABILITY_FallingAttack_Altitude"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude"
                         },
                         {
                             "$type": "AddGlobalValue",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": "FallingAnthem_Altitude_Lv0"
                                 }
                             ],
                             "value": "FallingAnthem_FallingDamageRatio_Lv0",
-                            "key": "_ABILITY_FallingAttack_Altitude",
-                            "useLimitRange": true,
-                            "maxValue": "FallingAnthem_FallingDamageRatio_Lv0",
-                            "minValue": "FallingAnthem_FallingDamageRatio_Lv0"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": "FallingAnthem_FallingDamageRatio_Lv0",
+                            "KHAHOELDONA": "FallingAnthem_FallingDamageRatio_Lv0"
                         },
                         {
                             "$type": "AddGlobalValue",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": "FallingAnthem_Altitude_Lv1"
                                 },
                                 {
@@ -2891,17 +2891,17 @@
                                 }
                             ],
                             "value": "FallingAnthem_FallingDamageRatio_Lv1",
-                            "key": "_ABILITY_FallingAttack_Altitude",
-                            "useLimitRange": true,
-                            "maxValue": "FallingAnthem_FallingDamageRatio_Lv1",
-                            "minValue": "FallingAnthem_FallingDamageRatio_Lv1"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": "FallingAnthem_FallingDamageRatio_Lv1",
+                            "KHAHOELDONA": "FallingAnthem_FallingDamageRatio_Lv1"
                         },
                         {
                             "$type": "AddGlobalValue",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": "FallingAnthem_Altitude_Lv2"
                                 },
                                 {
@@ -2910,17 +2910,17 @@
                                 }
                             ],
                             "value": "FallingAnthem_FallingDamageRatio_Lv2",
-                            "key": "_ABILITY_FallingAttack_Altitude",
-                            "useLimitRange": true,
-                            "maxValue": "FallingAnthem_FallingDamageRatio_Lv2",
-                            "minValue": "FallingAnthem_FallingDamageRatio_Lv2"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": "FallingAnthem_FallingDamageRatio_Lv2",
+                            "KHAHOELDONA": "FallingAnthem_FallingDamageRatio_Lv2"
                         },
                         {
                             "$type": "AddGlobalValue",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": "FallingAnthem_Altitude_Lv3"
                                 },
                                 {
@@ -2929,10 +2929,10 @@
                                 }
                             ],
                             "value": "FallingAnthem_FallingDamageRatio_Lv3",
-                            "key": "_ABILITY_FallingAttack_Altitude",
-                            "useLimitRange": true,
-                            "maxValue": "FallingAnthem_FallingDamageRatio_Lv3",
-                            "minValue": "FallingAnthem_FallingDamageRatio_Lv3"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": "FallingAnthem_FallingDamageRatio_Lv3",
+                            "KHAHOELDONA": "FallingAnthem_FallingDamageRatio_Lv3"
                         },
                         {
                             "$type": "AddGlobalValue",
@@ -2943,10 +2943,10 @@
                                 }
                             ],
                             "value": "FallingAnthem_FallingDamageRatio_Lv4",
-                            "key": "_ABILITY_FallingAttack_Altitude",
-                            "useLimitRange": true,
-                            "maxValue": "FallingAnthem_FallingDamageRatio_Lv4",
-                            "minValue": "FallingAnthem_FallingDamageRatio_Lv4"
+                            "HJJEAOMEOFI": "_ABILITY_FallingAttack_Altitude",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": "FallingAnthem_FallingDamageRatio_Lv4",
+                            "KHAHOELDONA": "FallingAnthem_FallingDamageRatio_Lv4"
                         },
                         {
                             "$type": "AttachModifier",
@@ -2957,11 +2957,11 @@
                 "FallingAnthem_FallingDamageImmune_02": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "SetGlobalValueToOverrideMap",
-                            "globalValueKey": "_ABILITY_FallingAttack_Altitude",
-                            "overrideMapKey": "FallingAnthem_FallingDamageRatio"
+                            "BPCFCANOMNH": "_ABILITY_FallingAttack_Altitude",
+                            "OGAHELLALBB": "FallingAnthem_FallingDamageRatio"
                         },
                         {
                             "$type": "AttachModifier",
@@ -2972,24 +2972,24 @@
                 "FallingAnthem_FallingDamageImmune_03": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_FallingDamageRatio": "FallingAnthem_FallingDamageRatio"
                     }
                 },
                 "FallingAnthem_Loop_Normal": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "AttachModifierToSelfGlobalValueMixin",
-                            "globalValueKey": "_ABILITY_FallingAnthem_UseCamera",
-                            "defaultGlobalValueOnCreate": 0.0,
-                            "valueSteps": [
+                            "BPCFCANOMNH": "_ABILITY_FallingAnthem_UseCamera",
+                            "FEGIOIGELHB": 0.0,
+                            "CMEDACODLEA": [
                                 -1.0,
                                 0.5,
                                 1.5
                             ],
-                            "modifierNameSteps": [
+                            "MIEPCOONDEM": [
                                 "FallingAnthem_Loop_Normal_Rank_1",
                                 "FallingAnthem_Loop_Normal_Rank_2"
                             ]
@@ -2999,52 +2999,52 @@
                 "FallingAnthem_Loop_Normal_Rank_1": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "FireEffect",
-                            "effectPattern": "Eff_Avatar_Claymore_FallAnthem_Loop_01"
+                            "JBHFPDMBFHN": "Eff_Avatar_Claymore_FallAnthem_Loop_01"
                         }
                     ]
                 },
                 "FallingAnthem_Loop_Normal_Rank_2": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AttachEffect",
-                            "effectPattern": "Eff_Avatar_Claymore_FallAnthem_Loop_02"
+                            "JBHFPDMBFHN": "Eff_Avatar_Claymore_FallAnthem_Loop_02"
                         }
                     ]
                 },
                 "Inertia": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "ApplyInertiaVelocityMixin",
-                            "useXZ": false,
-                            "useY": false
+                            "DOOIAANMOKN": false,
+                            "PJACACNPMJA": false
                         }
                     ]
                 },
                 "FallingAnthem_Height_Detect": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AddGlobalValue",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": 2.4000000953674316
                                 }
                             ],
                             "value": 0.0,
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
-                            "useLimitRange": true,
-                            "maxValue": 0.0,
-                            "minValue": 0.0
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 0.0,
+                            "KHAHOELDONA": 0.0
                         },
                         {
                             "$type": "AddGlobalValue",
@@ -3055,17 +3055,17 @@
                                 }
                             ],
                             "value": 5.0,
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
-                            "useLimitRange": true,
-                            "maxValue": 1.0,
-                            "minValue": 0.0
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 1.0,
+                            "KHAHOELDONA": 0.0
                         },
                         {
                             "$type": "SetAnimatorFloat",
                             "predicates": [
                                 {
                                     "$type": "ByTargetAltitude",
-                                    "logic": "LesserOrEqual",
+                                    "GMFCOCAJBDM": "LesserOrEqual",
                                     "value": 2.4000000953674316
                                 }
                             ],
@@ -3084,7 +3084,7 @@
                             "value": 1.0
                         }
                     ],
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "SetAnimatorFloat",
                             "floatID": "FallingAnthem_UseCamera",
@@ -3093,31 +3093,31 @@
                         {
                             "$type": "AddGlobalValue",
                             "value": 0.0,
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
-                            "useLimitRange": true,
-                            "maxValue": 0.0,
-                            "minValue": 0.0
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
+                            "EODOIECEPEF": true,
+                            "JDHHMBHOOEC": 0.0,
+                            "KHAHOELDONA": 0.0
                         }
                     ]
                 },
                 "FallingAnthem_OverHead_Camera": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AvatarCameraParam",
                             "predicates": [
                                 {
                                     "$type": "ByAnimatorFloat",
-                                    "logic": "Equal",
+                                    "GMFCOCAJBDM": "Equal",
                                     "value": 1.0,
-                                    "parameter": "FallingAnthem_UseCamera"
+                                    "MOCGJNIDDAI": "FallingAnthem_UseCamera"
                                 }
                             ],
-                            "cameraParam": {
-                                "forceRadius": 4.5,
-                                "forceRadiusDuration": 0.20000000298023224,
-                                "shouldKeepForceRadius": true
+                            "HBPCGNIGHPH": {
+                                "JABJOOHIIKI": 4.5,
+                                "ENPKPCGKDDH": 0.20000000298023224,
+                                "MPFLBBFBBGK": true
                             }
                         }
                     ]
@@ -3125,31 +3125,31 @@
                 "FallingAnthem_OverHead_Camera_Remover": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AvatarExitCameraShot",
-                            "doOffStage": true
+                            "ACOKKHADPOJ": true
                         }
                     ]
                 },
                 "FallingAnthem_Landed_Camera": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "AvatarCameraParam",
                             "predicates": [
                                 {
                                     "$type": "ByAnimatorFloat",
-                                    "logic": "Equal",
+                                    "GMFCOCAJBDM": "Equal",
                                     "value": 1.0,
-                                    "parameter": "FallingAnthem_UseCamera"
+                                    "MOCGJNIDDAI": "FallingAnthem_UseCamera"
                                 }
                             ],
-                            "cameraParam": {
-                                "forceRadius": 6.0,
-                                "forceRadiusDuration": 0.10000000149011612,
-                                "shouldKeepForceRadius": true
+                            "HBPCGNIGHPH": {
+                                "JABJOOHIIKI": 6.0,
+                                "ENPKPCGKDDH": 0.10000000149011612,
+                                "MPFLBBFBBGK": true
                             }
                         }
                     ]
@@ -3157,7 +3157,7 @@
                 "FallingAnthem_ClearVelocityForce": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onAdded": [
+                    "KCICDEJLIJD": [
                         {
                             "$type": "RemoveVelocityForce",
                             "forces": [
@@ -3168,32 +3168,32 @@
                     ]
                 }
             },
-            "onAbilityStart": [
+            "HKBHLMNEMKM": [
                 {
                     "$type": "TriggerAttackEvent",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
                             "value": 0.0,
-                            "forceByCaster": true,
-                            "compareType": "NoneOrEqual"
+                            "EODMLMGMLNP": true,
+                            "ONPJJFKDCED": "NoneOrEqual"
                         }
                     ],
-                    "attackEvent": {
+                    "DMCJDGELKBC": {
                         "attackPattern": {
                             "$type": "ConfigAttackCircle",
                             "lifeTime": "TriggerNoRepeat",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": -0.5,
-                                    "z": 1.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": -0.5,
+                                    "PHDCJAHHIOG": 1.0
                                 }
                             },
                             "secondHeight": 2.0,
-                            "radius": 3.0
+                            "ICGFCBOFFDI": 3.0
                         },
                         "attackInfo": {
                             "attackTag": "FallingAttack",
@@ -3230,32 +3230,32 @@
                             }
                         }
                     },
-                    "targetType": "Enemy"
+                    "OJIFKEOCJGB": "Enemy"
                 },
                 {
                     "$type": "TriggerAttackEvent",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
                             "value": 1.0,
-                            "forceByCaster": true
+                            "EODMLMGMLNP": true
                         }
                     ],
-                    "attackEvent": {
+                    "DMCJDGELKBC": {
                         "attackPattern": {
                             "$type": "ConfigAttackCircle",
                             "lifeTime": "TriggerNoRepeat",
-                            "born": {
+                            "NGDMCBABOJA": {
                                 "$type": "ConfigBornByTarget",
                                 "offset": {
-                                    "x": 0.0,
-                                    "y": -0.5,
-                                    "z": 1.0
+                                    "AEAAJCIDPED": 0.0,
+                                    "KAAPLGBEDPM": -0.5,
+                                    "PHDCJAHHIOG": 1.0
                                 }
                             },
                             "secondHeight": 2.0,
-                            "radius": 5.0
+                            "ICGFCBOFFDI": 5.0
                         },
                         "attackInfo": {
                             "attackTag": "FallingAttack",
@@ -3293,32 +3293,32 @@
                             }
                         }
                     },
-                    "targetType": "Enemy"
+                    "OJIFKEOCJGB": "Enemy"
                 },
                 {
                     "$type": "FireEffect",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
                             "value": 0.0,
-                            "forceByCaster": true,
-                            "compareType": "NoneOrEqual"
+                            "EODMLMGMLNP": true,
+                            "ONPJJFKDCED": "NoneOrEqual"
                         }
                     ],
-                    "effectPattern": "Eff_Avatar_Claymore_FallAnthem_Strike_01"
+                    "JBHFPDMBFHN": "Eff_Avatar_Claymore_FallAnthem_Strike_01"
                 },
                 {
                     "$type": "FireEffect",
                     "predicates": [
                         {
                             "$type": "ByTargetGlobalValue",
-                            "key": "_ABILITY_FallingAnthem_UseCamera",
+                            "HJJEAOMEOFI": "_ABILITY_FallingAnthem_UseCamera",
                             "value": 1.0,
-                            "forceByCaster": true
+                            "EODMLMGMLNP": true
                         }
                     ],
-                    "effectPattern": "Eff_Avatar_Claymore_FallAnthem_Strike_02"
+                    "JBHFPDMBFHN": "Eff_Avatar_Claymore_FallAnthem_Strike_02"
                 }
             ]
         }
@@ -3327,7 +3327,7 @@
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Beidou_ProudSkill_FlashSlash",
-            "abilityMixins": [
+            "CHBMMFLIIGH": [
                 {
                     "$type": "AttachToStateIDMixin",
                     "stateIDs": [
@@ -3336,17 +3336,17 @@
                     "GAIGOBCNNEE": "ProudSkill_FlashSlash"
                 }
             ],
-            "abilitySpecials": {
+            "EDDGGPMFDGK": {
                 "ProudSkill_FlashSlash_Duration": 10.0,
                 "ProudSkill_FlashSlash_AttackUpRatio": 0.0,
                 "ProudSkill_FlashSlash_AttackSpeedRatio": 0.0,
                 "ProudSkill_FlashSlash_ChargeSpeedRatio": 0.5
             },
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "ProudSkill_FlashSlash": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "onRemoved": [
+                    "ILBIENDPCBG": [
                         {
                             "$type": "ApplyModifier",
                             "GAIGOBCNNEE": "ProudSkill_FlashSlash_Handler"
@@ -3355,9 +3355,9 @@
                 },
                 "ProudSkill_FlashSlash_Handler": {
                     "GAIGOBCNNEE": "",
-                    "duration": "ProudSkill_FlashSlash_Duration",
+                    "GMIMMDOGGIO": "ProudSkill_FlashSlash_Duration",
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "AttachToStateIDMixin",
                             "stateIDs": [
@@ -3376,7 +3376,7 @@
                         },
                         {
                             "$type": "ModifyDamageMixin",
-                            "attackTags": [
+                            "NMJGDKCDFOJ": [
                                 "NormalAttack_01",
                                 "NormalAttack_01",
                                 "NormalAttack_02",
@@ -3388,55 +3388,55 @@
                             "damagePercentageRatio": "ProudSkill_FlashSlash_AttackUpRatio"
                         }
                     ],
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Animator_AttackSpeedRatio": "ProudSkill_FlashSlash_AttackSpeedRatio"
                     },
                     "state": "AttackUp",
-                    "isLimitedProperties": true
+                    "FBMJEOALKEJ": true
                 },
                 "ProudSkill_FlashSlash_Enhancement": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Animator_OverallSpeedRatio": "ProudSkill_FlashSlash_AttackSpeedRatio"
                     },
-                    "isLimitedProperties": true
+                    "FBMJEOALKEJ": true
                 },
                 "ProudSkill_FlashSlash_Pre_Accelerator": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Animator_OverallSpeedRatio": "ProudSkill_FlashSlash_ChargeSpeedRatio"
                     },
-                    "isLimitedProperties": true
+                    "FBMJEOALKEJ": true
                 }
             },
-            "isDynamicAbility": true
+            "FEFIHIEHDOM": true
         }
     },
     {
         "Default": {
             "$type": "ConfigAbility",
             "abilityName": "Avatar_Beidou_SwimStamina_Reduction",
-            "modifiers": {
+            "HNEIEGHMLKH": {
                 "Beidou_SwimStaminaReduction_Handler": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "thinkInterval": 5.0,
-                    "onThinkInterval": [
+                    "IKKMDDLDLIN": 5.0,
+                    "PBDDACFFPOE": [
                         {
                             "$type": "AttachModifier",
-                            "target": "CurTeamAvatars",
-                            "doOffStage": true,
+                            "NPHOOPNDCAC": "CurTeamAvatars",
+                            "ACOKKHADPOJ": true,
                             "GAIGOBCNNEE": "UNIQUE_SwimStaminaReduction"
                         }
                     ]
                 },
                 "UNIQUE_SwimStaminaReduction": {
                     "GAIGOBCNNEE": "",
-                    "isUnique": true,
+                    "IEOFBCGJGEK": true,
                     "elementDurability": 100.0,
-                    "modifierMixins": [
+                    "FNJKJKACMCH": [
                         {
                             "$type": "AttachToStateIDMixin",
                             "stateIDs": [
@@ -3449,25 +3449,25 @@
                 "SwimStamina_Reduction": {
                     "GAIGOBCNNEE": "",
                     "elementDurability": 100.0,
-                    "properties": {
+                    "FFOHEEFOELN": {
                         "Actor_CostStaminaRatio": -0.20000000298023224
                     }
                 }
             },
-            "onAdded": [
+            "KCICDEJLIJD": [
                 {
                     "$type": "AttachModifier",
-                    "target": "CurTeamAvatars",
-                    "doOffStage": true,
+                    "NPHOOPNDCAC": "CurTeamAvatars",
+                    "ACOKKHADPOJ": true,
                     "GAIGOBCNNEE": "UNIQUE_SwimStaminaReduction"
                 },
                 {
                     "$type": "AttachModifier",
-                    "doOffStage": true,
+                    "ACOKKHADPOJ": true,
                     "GAIGOBCNNEE": "Beidou_SwimStaminaReduction_Handler"
                 }
             ],
-            "isDynamicAbility": true
+            "FEFIHIEHDOM": true
         }
     }
 ]

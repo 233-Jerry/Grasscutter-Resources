@@ -2071,4 +2071,17 @@ function L3_1(A0_2)
   L1_2(L2_2)
 end
 L1_1.CancelDefaultEmo = L3_1
+function L3_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2
+  if A1_2 == true and A2_2 == nil then
+    A2_2 = 75
+  end
+  L3_2 = A0_2.uActor
+  L4_2 = L3_2
+  L3_2 = L3_2.SetDynAdapterToGround
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L1_1.SetDynAdapterToGround = L3_1
 return L1_1
