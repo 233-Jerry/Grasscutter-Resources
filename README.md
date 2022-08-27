@@ -1,14 +1,15 @@
 # Grasscutter Resources
 > <em>Resource Version - "Certain Anime Game" 3.0.0</em><br/>
 
-> NOTICE: Source use 2.8.5x beta version, so there might be issues with 3.0 public content.
+> NOTICE: Source use 2.8.5x version, so there might be issues with 3.x public content.
 
-- ExcelBinOutput
-- BinOutput 
+- ExcelBinOutput - [ V2.8 QuestExcelConfigData ]
+- BinOutput
 - Scripts 
 - Readable
 - Subtitle
 - TextMap
+- CutsceneKeys
 
 ## Known Issue
 * Quest not work
