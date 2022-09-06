@@ -4454,7 +4454,7 @@
     "282": {
       "$type": "DungeonEntry",
       "gadgetId": 70120001,
-      "areaId": 10,
+      "areaId": 5,
       "pos": {
         "x": 1467.936,
         "y": 243.6,
@@ -12006,7 +12006,7 @@
     "507": {
       "$type": "DungeonEntry",
       "gadgetId": 70120001,
-      "areaId": 20,
+      "areaId": 24,
       "pos": {
         "x": -564.53,
         "y": 282.4547,
@@ -15264,7 +15264,7 @@
       },
       "unlocked": true,
       "alias": "",
-      "entryPointId": 469
+      "entryPointId": 627
     },
     "63": {
       "$type": "SceneBuildingPoint",
@@ -15481,7 +15481,7 @@
     "656": {
       "$type": "DungeonEntry",
       "gadgetId": 70950059,
-      "areaId": 1,
+      "areaId": 5,
       "pos": {
         "x": 1669.185,
         "y": 268.6654,
@@ -15507,7 +15507,6 @@
         531002
       ],
       "mapVisibility": "OnUnlocked",
-      "showOnLockedArea": true,
       "dungeonIds": [
         8200,
         8201,
@@ -15528,7 +15527,7 @@
     "657": {
       "$type": "DungeonExit",
       "gadgetId": 70010001,
-      "areaId": 1,
+      "areaId": 5,
       "pos": {
         "x": 1672.017,
         "y": 267.9412,
@@ -15845,11 +15844,9 @@
         "z": 0.0
       },
       "alias": "",
-      "isModelHidden": true,
       "cutsceneList": [
         23
       ],
-      "mapVisibility": "OnUnlocked",
       "dungeonIds": [
         1159
       ],
@@ -15942,11 +15939,9 @@
         "z": 0.060504064
       },
       "alias": "",
-      "isModelHidden": true,
       "cutsceneList": [
         23
       ],
-      "mapVisibility": "OnUnlocked",
       "dungeonIds": [
         1160
       ],
@@ -16538,6 +16533,24 @@
         14
       ],
       "npcId": 1205
+    },
+    "726": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 24,
+      "pos": {
+        "x": -428.6309,
+        "y": 236.2603,
+        "z": 2777.993
+      },
+      "tranPos": {
+        "x": -428.6309,
+        "y": 236.26031,
+        "z": 2777.993
+      },
+      "unlocked": true,
+      "alias": "",
+      "buildingType": "GeneralCargo"
     },
     "73": {
       "$type": "SceneTransPoint",
