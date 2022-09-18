@@ -13,7 +13,6 @@
 
 ## Known Issue
 * In future I might delete some Quest that don't work and create my own new Quest since there are no new Quest since 3.0.
-* Because DockerGS use JNLua instead JNA, so we reject (script_fixes) so if you are using original Grasscutter please use original repo from Koko (but in future when we manage to fix "stuck white screen" we will accept it again)
 
 ## Credits 
 
