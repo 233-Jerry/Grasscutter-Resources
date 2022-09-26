@@ -60705,6 +60705,7 @@
     "type": "Bullet",
     "jsonName": "SceneObj_Desert_HeadControlShooter_Bullet",
     "hasMove": true,
+    "visionLevel": "VISION_LEVEL_REMOTE",
     "tags": [
       "item"
     ],
@@ -61660,6 +61661,7 @@
     "type": "Bullet",
     "jsonName": "SceneObj_Desert_GardianUIMode_Bullet",
     "hasMove": true,
+    "visionLevel": "VISION_LEVEL_REMOTE",
     "tags": [
       "item"
     ],
@@ -64296,6 +64298,23 @@
     "itemJsonName": "Default_Item",
     "inteeIconName": "",
     "interactNameTextMapHash": 2099673510
+  },
+  {
+    "id": 70330467,
+    "nameTextMapHash": 1283954601,
+    "prefabPathHashSuffix": 102566960,
+    "prefabPathHashPre": 70,
+    "campID": 5001,
+    "LODPatternName": "Gadget_Special_Middle_01",
+    "type": "Gadget",
+    "jsonName": "",
+    "hasAudio": true,
+    "tags": [
+      "item"
+    ],
+    "itemJsonName": "Default_Item",
+    "inteeIconName": "",
+    "interactNameTextMapHash": 295331510
   },
   {
     "id": 70340011,
@@ -77036,7 +77055,7 @@
       "item"
     ],
     "itemJsonName": "Default_Item",
-    "inteeIconName": "UI_Icon_Intee_Mechanism",
+    "inteeIconName": "UI_Icon_Intee_PickUp",
     "interactNameTextMapHash": 1114297614
   },
   {

@@ -922,8 +922,8 @@
     "physicalSubHurt": 0.1,
     "prefabPathRagdollHashSuffix": 441600274,
     "prefabPathRagdollHashPre": 35,
-    "HOGFCFHBLFHSuffix": 3526571206,
-    "HOGFCFHBLFHPre": 195,
+    "HOGFCFHBLFHSuffix": 629093183,
+    "HOGFCFHBLFHPre": 25,
     "monsterName": "Slime_Grass_02",
     "type": "MONSTER_ORDINARY",
     "scriptDataPathHashSuffix": 299838192,
@@ -994,8 +994,8 @@
     "physicalSubHurt": 0.1,
     "prefabPathRagdollHashSuffix": 2755231967,
     "prefabPathRagdollHashPre": 204,
-    "HOGFCFHBLFHSuffix": 3526571206,
-    "HOGFCFHBLFHPre": 195,
+    "HOGFCFHBLFHSuffix": 629093183,
+    "HOGFCFHBLFHPre": 25,
     "monsterName": "Slime_Grass_03",
     "type": "MONSTER_ORDINARY",
     "scriptDataPathHashSuffix": 299838192,
@@ -1071,8 +1071,8 @@
     "physicalSubHurt": 0.1,
     "prefabPathRagdollHashSuffix": 2755231967,
     "prefabPathRagdollHashPre": 204,
-    "HOGFCFHBLFHSuffix": 3526571206,
-    "HOGFCFHBLFHPre": 195,
+    "HOGFCFHBLFHSuffix": 629093183,
+    "HOGFCFHBLFHPre": 25,
     "monsterName": "Slime_Grass_03_AttackEnhance",
     "type": "MONSTER_ORDINARY",
     "scriptDataPathHashSuffix": 299838192,
@@ -49319,7 +49319,7 @@
     "campID": 3001,
     "LODPatternName": "",
     "hpBase": 40.752,
-    "attackBase": 158.256,
+    "attackBase": 22.0,
     "defenseBase": 500.0,
     "fireSubHurt": 0.1,
     "grassSubHurt": 0.1,
@@ -49331,11 +49331,11 @@
     "propGrowCurves": [
       {
         "type": "FIGHT_PROP_BASE_HP",
-        "growCurve": "GROW_CURVE_HP"
+        "growCurve": "GROW_CURVE_HP_2"
       },
       {
         "type": "FIGHT_PROP_BASE_ATTACK",
-        "growCurve": "GROW_CURVE_ATTACK"
+        "growCurve": "GROW_CURVE_HP"
       },
       {
         "type": "FIGHT_PROP_BASE_DEFENSE",
