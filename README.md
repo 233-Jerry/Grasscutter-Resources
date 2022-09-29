@@ -13,10 +13,10 @@ PR:
 - Make Quest 3.0-3.1 work with modified QuestExcelConfigData which you can get from BinOutput/Quest.
 
 ## Credits 
-
- - [tamilpp25](https://github.com/tamilpp25/Grasscutter_Resources) <br/>
- - [Grasscutter](https://github.com/Grasscutters/Grasscutter) <br/>
- - [Dimbreath](https://github.com/Dimbreath) <br/>
+ - [Dimbreath](https://github.com/Dimbreath) (Everything except Script,BinOutput) <br/>
+ - [tamilpp25](https://github.com/tamilpp25/Grasscutter_Resources) (Script,BinOutput) <br/> 
+ - [timing1337](https://github.com/timing1337/GenshinData) (3.1 BinOutput) <br/>
+ - [Koko-boya](https://github.com/Koko-boya) (Original Owner Grasscutter_Resources) <br/>
+ - [lilmayofuksu](https://github.com/lilmayofuksu/animepython) (Script aka Lua)
  - [radioegor146](https://github.com/radioegor146) <br/>
  - [TheLostTree](https://github.com/TheLostTree) <br/>
- - [lilmayofuksu](https://github.com/lilmayofuksu/animepython)
