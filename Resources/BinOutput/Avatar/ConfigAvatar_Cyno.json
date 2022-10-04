@@ -119,7 +119,7 @@
               "z": 1.0
             }
           },
-          "height": 2.4,
+          "height": 1.8,
           "radius": 2.0,
           "detectDirection": "Counterclockwise"
         },
@@ -210,7 +210,7 @@
               "z": 1.0
             }
           },
-          "height": 2.4,
+          "height": 1.8,
           "radius": 2.0,
           "detectDirection": "Counterclockwise"
         },
@@ -422,11 +422,11 @@
             "$type": "ConfigBornBySelf",
             "offset": {
               "x": 0.0,
-              "y": -0.20000000298023224,
+              "y": 0.0,
               "z": 0.800000011920929
             }
           },
-          "height": 2.0,
+          "height": 1.8,
           "radius": 2.5
         },
         "attackInfo": {
@@ -459,11 +459,11 @@
             "$type": "ConfigBornBySelf",
             "offset": {
               "x": 0.0,
-              "y": -0.20000000298023224,
+              "y": 0.0,
               "z": 0.8999999761581421
             }
           },
-          "height": 2.0,
+          "height": 1.8,
           "radius": 2.5
         },
         "attackInfo": {
@@ -500,7 +500,7 @@
               "z": 1.5
             }
           },
-          "height": 2.4,
+          "height": 2.0,
           "radius": 3.5,
           "detectDirection": "Counterclockwise"
         },
@@ -538,6 +538,102 @@
             "shakeDir": {
               "x": 1.0,
               "y": 0.0,
+              "z": 0.0
+            }
+          }
+        }
+      },
+      "ExtraAttack": {
+        "attackPattern": {
+          "$type": "ConfigAttackCircle",
+          "triggerType": "TriggerNoRepeat",
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "fanAngle": 200.0,
+          "radius": 3.0
+        },
+        "attackInfo": {
+          "attackTag": "ExtraAttack",
+          "attenuationTag": "NormalAttack",
+          "attenuationGroup": "default",
+          "attackProperty": {
+            "damagePercentage": 0.5,
+            "damagePercentageRatio": 0.0,
+            "elementDurability": 25.0,
+            "overrideByWeapon": true,
+            "strikeType": "Slash",
+            "enBreak": 120.0,
+            "attackType": "Melee"
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV7",
+            "hitHaltTime": 0.02,
+            "hitHaltTimeScale": 0.01,
+            "canBeDefenceHalt": true
+          },
+          "cameraShake": {
+            "shakeType": "CustomVector",
+            "shakeRange": 0.36,
+            "shakeTime": 0.12,
+            "shakeDistance": 30.0,
+            "shakeDir": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            }
+          }
+        }
+      },
+      "ExtraAttack_BurstMode": {
+        "attackPattern": {
+          "$type": "ConfigAttackCircle",
+          "triggerType": "TriggerNoRepeat",
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "fanAngle": 200.0,
+          "radius": 3.200000047683716
+        },
+        "attackInfo": {
+          "attackTag": "ExtraAttack",
+          "attenuationTag": "ExtraAttack",
+          "attenuationGroup": "default",
+          "attackProperty": {
+            "damagePercentage": 0.0,
+            "damagePercentageRatio": 0.0,
+            "elementType": "Wind",
+            "elementDurability": 25.0,
+            "strikeType": "Slash",
+            "enBreak": 180.0,
+            "attackType": "Melee"
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV7",
+            "hitHaltTime": 0.04,
+            "hitHaltTimeScale": 0.01,
+            "canBeDefenceHalt": true
+          },
+          "cameraShake": {
+            "shakeType": "CustomVector",
+            "shakeRange": 0.36,
+            "shakeTime": 0.12,
+            "shakeDistance": 30.0,
+            "shakeDir": {
+              "x": 0.0,
+              "y": -1.0,
               "z": 0.0
             }
           }
@@ -619,11 +715,6 @@
     {
       "abilityID": "Avatar_Cyno_Show",
       "abilityName": "Avatar_Cyno_Show",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Cyno_BigArm_DisAppear",
-      "abilityName": "Avatar_Cyno_BigArm_DisAppear",
       "abilityOverride": ""
     }
   ]
