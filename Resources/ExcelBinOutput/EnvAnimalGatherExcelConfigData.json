@@ -1,61 +1,6 @@
 [
     {
-        "animalId": 70590006,//蝴蝶
-        "entityType": "Gadget",
-        "gatherItemId": [
-            {
-                "id": 100072,//蝴蝶翅膀
-                "count": 1
-            },
-            {},
-            {}
-        ],
-        "escapeRadius": 4,
-        "escapeTime": 1,
-        "aliveTime": 60,
-        "excludeWeathers": "\u96e8,\u96f7\u96e8,\u96ea"
-    },
-    {
-        "animalId": 28010101,//黄金蟹
-        "entityType": "Monster",
-        "gatherItemId": [
-            {
-                "id": 100073,//螃蟹
-                "count": 1
-            },
-            {},
-            {}
-        ],
-        "excludeWeathers": ""
-    },
-    {
-        "animalId": 28010102,//太阳蟹
-        "entityType": "Monster",
-        "gatherItemId": [
-            {
-                "id": 100073,//螃蟹
-                "count": 1
-            },
-            {},
-            {}
-        ],
-        "excludeWeathers": ""
-    },
-    {
-        "animalId": 28010103,//海蓝蟹
-        "entityType": "Monster",
-        "gatherItemId": [
-            {
-                "id": 100073,
-                "count": 1
-            },
-            {},
-            {}
-        ],
-        "excludeWeathers": ""
-    },
-    {
-        "animalId": 70590007,//蝴蝶
+        "animalId": 70590006,
         "entityType": "Gadget",
         "gatherItemId": [
             {
@@ -71,11 +16,66 @@
         "excludeWeathers": "\u96e8,\u96f7\u96e8,\u96ea"
     },
     {
-        "animalId": 70590008,//萤火虫
+        "animalId": 28010101,
+        "entityType": "Monster",
+        "gatherItemId": [
+            {
+                "id": 100073,
+                "count": 1
+            },
+            {},
+            {}
+        ],
+        "excludeWeathers": ""
+    },
+    {
+        "animalId": 28010102,
+        "entityType": "Monster",
+        "gatherItemId": [
+            {
+                "id": 100073,
+                "count": 1
+            },
+            {},
+            {}
+        ],
+        "excludeWeathers": ""
+    },
+    {
+        "animalId": 28010103,
+        "entityType": "Monster",
+        "gatherItemId": [
+            {
+                "id": 100073,
+                "count": 1
+            },
+            {},
+            {}
+        ],
+        "excludeWeathers": ""
+    },
+    {
+        "animalId": 70590007,
         "entityType": "Gadget",
         "gatherItemId": [
             {
-                "id": 100082,//发光髓
+                "id": 100072,
+                "count": 1
+            },
+            {},
+            {}
+        ],
+        "escapeRadius": 4,
+        "escapeTime": 1,
+        "aliveTime": 60,
+        "excludeWeathers": "\u96e8,\u96f7\u96e8,\u96ea"
+    },
+    {
+        "animalId": 70590008,
+        "entityType": "Gadget",
+        "gatherItemId": [
+            {
+                "id": 100082,
                 "count": 1
             },
             {},
@@ -87,7 +87,7 @@
         "excludeWeathers": "\u96e8,\u96f7\u96e8,\u96ea"
     },
     {
-        "animalId": 28010201,//蓝角蜥
+        "animalId": 28010201,
         "entityType": "Monster",
         "gatherItemId": [
             {
@@ -113,7 +113,7 @@
         "excludeWeathers": ""
     },
     {
-        "animalId": 28010203,//绿角蜥
+        "animalId": 28010203,
         "entityType": "Monster",
         "gatherItemId": [
             {
@@ -153,19 +153,6 @@
     },
     {
         "animalId": 28010303,
-        "entityType": "Monster",
-        "gatherItemId": [
-            {
-                "id": 100081,
-                "count": 1
-            },
-            {},
-            {}
-        ],
-        "excludeWeathers": ""
-    },
-    {
-        "animalId": 28010304,//丛林树蛙
         "entityType": "Monster",
         "gatherItemId": [
             {
@@ -399,19 +386,6 @@
         "excludeWeathers": ""
     },
     {
-        "animalId": 28010208,//赤尾蜥
-        "entityType": "Monster",
-        "gatherItemId": [
-            {
-                "id": 100083,
-                "count": 1
-            },
-            {},
-            {}
-        ],
-        "excludeWeathers": ""
-    },
-    {
         "animalId": 70590038,
         "entityType": "Gadget",
         "gatherItemId": [
@@ -499,19 +473,6 @@
         "excludeWeathers": ""
     },
     {
-        "animalId": 28010404,
-        "entityType": "Monster",
-        "gatherItemId": [
-            {
-                "id": 100095,
-                "count": 1
-            },
-            {},
-            {}
-        ],
-        "excludeWeathers": ""
-    },
-    {
         "animalId": 28010402,
         "entityType": "Monster",
         "gatherItemId": [
@@ -551,37 +512,18 @@
         "excludeWeathers": ""
     },
     {
-        "animalId": 28050106,//草晶碟
-        "entityType": "Monster",
-        "gatherItemId": [
-            {
-                "id": 100085,
-                "count": 1
-            },
-            {},
-            {}
-        ],
-        "excludeWeathers": ""
-    },
-    {
         "animalId": 28050301,
         "entityType": "Monster",
         "gatherItemId": [
             {
                 "id": 100082,
                 "count": 1
-            }
-        ],
-        "excludeWeathers": ""
-    },
-    {
-        "animalId": 28050401,
-        "entityType": "Monster",
-        "gatherItemId": [
+            },
             {
-                "id": 101225,
+                "id": 101713,
                 "count": 1
-            }
+            },
+            {}
         ],
         "excludeWeathers": ""
     }
