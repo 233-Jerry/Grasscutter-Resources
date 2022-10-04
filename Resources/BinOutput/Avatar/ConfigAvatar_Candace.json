@@ -61,7 +61,7 @@
     "die": {
       "hasAnimatorDie": true,
       "dieEndTime": 1.5,
-      "dieForceDisappearTime": 2.5,
+      "dieForceDisappearTime": 5.0,
       "dieDisappearEffect": "Eff_Death_Avatar_Common",
       "dieShaderData": "AvatarDie",
       "useRagDoll": true,
@@ -149,12 +149,7 @@
           },
           "hitPattern": {
             "onHitEffectName": "default",
-            "hitImpulseType": "",
-            "overrideHitImpulse": {
-              "hitLevel": "Heavy",
-              "hitImpulseX": 550.0,
-              "hitImpulseY": 0.0
-            },
+            "hitImpulseType": "LV3",
             "hitHaltTime": 0.03,
             "hitHaltTimeScale": 0.01,
             "canBeDefenceHalt": true
@@ -197,7 +192,7 @@
             "damagePercentageRatio": 0.0,
             "elementDurability": 25.0,
             "overrideByWeapon": true,
-            "strikeType": "Slash",
+            "strikeType": "Spear",
             "enBreak": 38.08,
             "attackType": "Melee"
           },
@@ -244,7 +239,7 @@
             "damagePercentageRatio": 0.0,
             "elementDurability": 25.0,
             "overrideByWeapon": true,
-            "strikeType": "Slash",
+            "strikeType": "Spear",
             "enBreak": 38.08,
             "attackType": "Melee"
           },
@@ -283,7 +278,7 @@
           "size": {
             "x": 2.200000047683716,
             "y": 3.0,
-            "z": 7.0
+            "z": 5.0
           }
         },
         "attackInfo": {
@@ -295,7 +290,7 @@
             "damagePercentageRatio": 0.0,
             "elementDurability": 25.0,
             "overrideByWeapon": true,
-            "strikeType": "Spear",
+            "strikeType": "Slash",
             "enBreak": 94.8,
             "attackType": "Melee"
           },
