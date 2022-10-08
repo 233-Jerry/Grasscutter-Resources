@@ -1,706 +1,362 @@
 {
+  "id": 72806,
+  "type": "WQ",
   "titleTextMapHash": 3749981687,
   "descTextMapHash": 3511415902,
-  "id": 72806,
-  "ICLLDPJFIMA": 0,
-  "NCLEJIILEGL": 0,
-  "type": "WQ",
-  "COHOCGBOCFH": "MAINQUEST_TAG_NONE",
-  "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-  "NFEGGFJPMJI": "Lời Mời Của \"Nhà Xuất Bản Yae\"",
-  "desc": "Biên tập Aratani của \"Nhà Xuất Bản Yae\" hình như có việc muốn nhờ bạn giúp...",
-  "_luaPath": "Actor/Quest/WQ72806",
-  "recommendLevel": 0,
-  "repeatable": false,
-  "PEOHODAKLNO": [],
-  "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    172806
-  ],
-  "showType": "QUEST_SHOW",
-  "HKNKBANBJPP": [],
-  "LACEJNKJBCG": [],
-  "OFCKAEDMIFA": 0,
-  "chapterId": 0,
-  "taskId": 0,
-  "FCPJIFCLDFI": true,
-  "activityId": 0,
+  "luaPath": "Actor/Quest/WQ72806",
+  "rewardIdList": [172806],
+  "showRedPoint": true,
   "subQuests": [
     {
-      "HDBBFJKKGOM": false,
       "subId": 7280601,
       "mainId": 72806,
       "order": 1,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Nói chuyện với Aratani",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 755056780,
+      "acceptCondComb": "LOGIC_A_AND_B_AND_ETCOR",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [201310, 3, 0, 0, 0]
+        },
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [1200309, 3, 0, 0, 0]
+        },
+        {
+          "type": "QUEST_COND_COMPLETE_TALK",
+          "param": [7280601, 0, 0, 0, 0]
+        },
+        {
+          "type": "QUEST_COND_COMPLETE_TALK",
+          "param": [7280606, 0, 0, 0, 0]
+        }
+      ],
+      "finishCondComb": "LOGIC_OR",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7280601,
-            0
-          ],
-          "count": 0
+          "param": [7280601, 0]
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7280606,
-            0
-          ],
-          "count": 0
+          "param": [7280606, 0]
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "3030"
-        ],
+        "param": ["3030"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
-      "finishExec": [],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "isRewind": true,
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7280602,
       "mainId": 72806,
       "order": 2,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Nói chuyện với Thường Cửu Gia",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 2886502348,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [7280601, 3, 0, 0, 0]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7280602,
-            0
-          ],
-          "count": 0
+          "param": [7280602, 0]
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1624"
-        ],
+        "param": ["1624"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM",
-          "param": [
-            "100875"
-          ]
+          "param": ["100875"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "exclusiveNpcList": [1624],
+      "exclusiveNpcPriority": 1100,
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7280603,
       "mainId": 72806,
       "order": 3,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Đến Vạn Văn Tập tìm Zhenyu",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 3328964300,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [7280602, 3, 0, 0, 0]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7280603,
-            0
-          ],
-          "count": 0
+          "param": [7280603, 0]
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q7280603XQ",
-          "30"
-        ],
+        "param": ["Q7280603XQ", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
-      "finishExec": [],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "isRewind": true,
+      "exclusiveNpcList": [10045],
+      "exclusiveNpcPriority": 1100,
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7280604,
       "mainId": 72806,
       "order": 4,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Nói chuyện với Xingqiu",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 2588861380,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [7280603, 3, 0, 0, 0]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7280604,
-            0
-          ],
-          "count": 0
+          "param": [7280604, 0]
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "10045"
-        ],
+        "param": ["10045"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM",
-          "param": [
-            "100876"
-          ]
+          "param": ["100876"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "exclusiveNpcList": [10045],
+      "exclusiveNpcPriority": 1100,
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7280605,
       "mainId": 72806,
       "order": 5,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Báo cáo với Aratani",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 1932155156,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [7280604, 3, 0, 0, 0]
+        }
+      ],
+      "finishCondComb": "LOGIC_OR",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7280605,
-            0
-          ],
-          "count": 0
+          "param": [7280605, 0]
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7280607,
-            0
-          ],
-          "count": 0
+          "param": [7280607, 0]
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "3030"
-        ],
+        "param": ["3030"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": true,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
-      "finishExec": [],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "finishParent": true,
+      "isRewind": true,
+      "exclusiveNpcList": [10045, 3030],
+      "exclusiveNpcPriority": 1100,
+      "versionBegin": "",
+      "versionEnd": ""
     }
   ],
   "talks": [
     {
-      "KDHKACIEPAP": false,
       "id": 7280602,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-      "OBMJNLIAOPP": "LOGIC_NONE",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "beginCond": [
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280602",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280602", "2"]
         }
       ],
       "priority": 5,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 728060201,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1624
-      ],
-      "GHNCIOJDIEA": "QuestDialogue/WQ/Inazuma_72806/Q7280602",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 728060201,
+      "npcId": [1624],
+      "performCfg": "QuestDialogue/WQ/Inazuma_72806/Q7280602",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 72806,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 934054874529,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 72806,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 934054874529,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 7280604,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-      "OBMJNLIAOPP": "LOGIC_NONE",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "beginCond": [
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280604",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280604", "2"]
         }
       ],
       "priority": 5,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 728060401,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10045
-      ],
-      "GHNCIOJDIEA": "QuestDialogue/WQ/Inazuma_72806/Q7280604",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 728060401,
+      "npcId": [10045],
+      "performCfg": "QuestDialogue/WQ/Inazuma_72806/Q7280604",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 72806,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 336972858509,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 72806,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 336972858509,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 7280605,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-      "OBMJNLIAOPP": "LOGIC_AND",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "beginCondComb": "LOGIC_AND",
+      "beginCond": [
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280605",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280605", "2"]
         },
         {
-          "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
-          "param": [
-            "12042",
-            "0"
-          ]
+          "_type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
+          "_param": ["12042", "0"]
         }
       ],
       "priority": 5,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 728060501,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3030
-      ],
-      "GHNCIOJDIEA": "",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 728060501,
+      "npcId": [3030],
+      "performCfg": "",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 72806,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 593673851205,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 72806,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 593673851205,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 7280607,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-      "OBMJNLIAOPP": "LOGIC_AND",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "beginCondComb": "LOGIC_AND",
+      "beginCond": [
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280605",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280605", "2"]
         },
         {
-          "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
-          "param": [
-            "12042",
-            "1"
-          ]
+          "_type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
+          "_param": ["12042", "1"]
         }
       ],
       "priority": 7,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 728060701,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3030
-      ],
-      "GHNCIOJDIEA": "",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 728060701,
+      "npcId": [3030],
+      "performCfg": "",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 72806,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 272903421518,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 72806,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 272903421518,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 7280610,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-      "OBMJNLIAOPP": "LOGIC_OR",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "beginCondComb": "LOGIC_OR",
+      "beginCond": [
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280602",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280602", "2"]
         },
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280603",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280603", "2"]
         },
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280604",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280604", "2"]
         }
       ],
       "priority": 3,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 728061001,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3030
-      ],
-      "GHNCIOJDIEA": "",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 728061001,
+      "npcId": [3030],
+      "performCfg": "",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 72806,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 1068733308093,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": true,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 72806,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 1068733308093,
+      "prePerformCfg": "",
+      "lowPriority": true
     },
     {
-      "KDHKACIEPAP": false,
       "id": 7280611,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-      "OBMJNLIAOPP": "LOGIC_OR",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "beginCondComb": "LOGIC_OR",
+      "beginCond": [
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280603",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280603", "2"]
         },
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280604",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280604", "2"]
         },
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280605",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280605", "2"]
         }
       ],
       "priority": 3,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 728061101,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1624
-      ],
-      "GHNCIOJDIEA": "",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 728061101,
+      "npcId": [1624],
+      "performCfg": "",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 72806,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 335094587337,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": true,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 72806,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 335094587337,
+      "prePerformCfg": "",
+      "lowPriority": true
     },
     {
-      "KDHKACIEPAP": false,
       "id": 7280612,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-      "OBMJNLIAOPP": "LOGIC_OR",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "beginCondComb": "LOGIC_OR",
+      "beginCond": [
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280604",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280604", "2"]
         },
         {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7280605",
-            "2"
-          ]
+          "_type": "QUEST_COND_STATE_EQUAL",
+          "_param": ["7280605", "2"]
         }
       ],
       "priority": 3,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 728061201,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10045
-      ],
-      "GHNCIOJDIEA": "",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 728061201,
+      "npcId": [10045],
+      "performCfg": "",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 72806,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 531643736156,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": true,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 72806,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 531643736156,
+      "prePerformCfg": "",
+      "lowPriority": true
     }
   ],
-  "LGCLJGGNGBD": [
-    645902683150,
-    472538372607
-  ],
-  "OMKMAOLMNCO": [
-    244875213211
-  ],
-  "KPOKLMBEOBI": {},
-  "MGDNNNGPOGO": 172806
+  "preloadLuaList": [645902683150, 472538372607],
+  "forcePreloadLuaList": [244875213211]
 }
