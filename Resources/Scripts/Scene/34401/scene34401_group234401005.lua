@@ -391,8 +391,8 @@ function L1_1(A0_2, A1_2)
   L4_2 = A0_2
   L5_2 = 2
   L6_2 = 198
-  L7_2 = L2_2
-  L8_2 = 234401005
+  L7_2 = 234401005 -- 5th floor step 3 but still not working
+  L8_2 = 13
   L9_2 = 13
   L10_2 = 0
   L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
@@ -479,7 +479,7 @@ function L1_1(A0_2, A1_2)
     L2_2 = ScriptLib
     L2_2 = L2_2.PrintContextLog
     L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
+    L4_2 = "@@ LUA_WARNING : (bug gc?) remove_gadget_by_configid"
     L2_2(L3_2, L4_2)
     L2_2 = -1
     return L2_2
