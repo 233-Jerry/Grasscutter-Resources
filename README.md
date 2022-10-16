@@ -17,7 +17,8 @@ PR:
  - [tamilpp25](https://github.com/tamilpp25/Grasscutter_Resources) (Script,BinOutput) <br/> 
  - [timing1337](https://github.com/timing1337/GenshinData) (3.1 BinOutput) <br/>
  - [Koko-boya](https://github.com/Koko-boya) (Original Owner Grasscutter_Resources) <br/>
- - [lilmayofuksu](https://github.com/lilmayofuksu/animepython) (Script aka Lua)
+ - [lilmayofuksu](https://github.com/lilmayofuksu/animepython) (Script aka Lua)<br/>
  - [GI-cutscenes](https://github.com/ToaHartor/GI-cutscenes/) (Key Quest) <br/>
+ - [MTAlexKen](https://github.com/MTAlexKen/Genshin-resources) (Routes)<br/>
  - [radioegor146](https://github.com/radioegor146) <br/>
  - [TheLostTree](https://github.com/TheLostTree) <br/>
