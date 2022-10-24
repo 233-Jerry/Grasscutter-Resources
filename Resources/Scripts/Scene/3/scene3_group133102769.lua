@@ -52,9 +52,9 @@ function LF_Get_Array_Pos(table, value)
 		end
 	end
 	if index == 0 then
-		ScriptLib.PrintLog("## LF_Get_Array_Pos Fail!! | value = "..value)
+		ScriptLib.PrintLog(context, "## LF_Get_Array_Pos Fail!! | value = "..value)
 		for i,v in ipairs(table) do
-			ScriptLib.PrintLog("## LF_Get_Array_Pos Fail!! | i="..i.." v="..v)
+			ScriptLib.PrintLog(context, "## LF_Get_Array_Pos Fail!! | i="..i.." v="..v)
 		end
 		index = 1
 	end

@@ -274,7 +274,7 @@ end
 
 -- 触发条件
 function condition_EVENT_ENTER_REGION_147(context, evt)
-	ScriptLib.PrintLog("enter region")
+	ScriptLib.PrintLog(context, "enter region")
 	if ScriptLib.GetEntityType(context, evt.target_eid) == EntityType.AVATAR and ScriptLib.GetQuestState(context, evt.target_eid, 46201) == QuestState.UNFINISHED and evt.param1 == defs.gadget_id_12 then
 	 return true
 	end
@@ -283,7 +283,7 @@ end
 
 -- 触发条件
 function condition_EVENT_ENTER_REGION_463(context, evt)
-	ScriptLib.PrintLog("enter region")
+	ScriptLib.PrintLog(context, "enter region")
 	if ScriptLib.GetEntityType(context, evt.target_eid) == EntityType.AVATAR and ScriptLib.GetQuestState(context, evt.target_eid, 46701) == QuestState.UNFINISHED and evt.param1 == defs.gadget_id_13 then
 	 return true
 	end

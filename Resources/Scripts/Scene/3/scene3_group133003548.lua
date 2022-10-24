@@ -33,13 +33,16 @@ local stage_table = {
 	[7] = { name = "Grass",   suite = {} }
 } 
 
-local timer_table = {
+
+local timer_table = {
 	[1] = {2},
 	[2] = {2},
-	[3] = {2},
+	[3] = {2}
+,
                 [4] = {2},
 	[5] = {2},
-	[6] = {2},
+	[6] = {2}
+,
                 [7] = {2}
 }
 
@@ -58,7 +61,8 @@ function LF_random_stage_suite(table, elem, stage)
 	return array[math.random(1,#array)]
 end
 
-function LF_random_timer_suite(table, stage)
+
+function LF_random_timer_suite(table, stage)
 	local array = table[stage]
 	if #array == 0 or array == nil then
 		return -1
@@ -70,7 +74,7 @@ end
 function LF_set_timer(context)
 	local i = ScriptLib.GetGroupVariableValue(context, timer_counter)
 	if i > #defs.crucible_timer then
-		ScriptLib.PrintLog("## undefined_crucible_timer !")
+		ScriptLib.PrintLog(context, "## undefined_crucible_timer !")
 		return -1
 	elseif i == #defs.crucible_timer then
 		return -1
@@ -85,7 +89,7 @@ function LF_set_timer(context)
 
 	local dur = duration - defs.crucible_timer_prepare
 	if dur <= 0 then 
-		ScriptLib.PrintLog("## crucible_timer_duration_illegal !")
+		ScriptLib.PrintLog(context, "## crucible_timer_duration_illegal !")
 		return -1
 	end
 

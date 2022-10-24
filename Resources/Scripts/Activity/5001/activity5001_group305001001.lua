@@ -109,7 +109,7 @@ end
 function LF_set_timer(context)
 	local i = ScriptLib.GetGroupVariableValue(context, timer_counter)
 	if i > #defs.crucible_timer then
-		ScriptLib.PrintLog("## undefined_crucible_timer !")
+		ScriptLib.PrintLog(context, "## undefined_crucible_timer !")
 		return -1
 	end
 	local duration = 0
@@ -153,7 +153,7 @@ function LF_end_play(context)
 end
 
 function LF_Log(param1, param2)
-	ScriptLib.PrintLog("## "..param1.." = "..param2)
+	ScriptLib.PrintLog(context, "## "..param1.." = "..param2)
 	return 0
 end
 
@@ -301,7 +301,7 @@ function action_EVENT_GADGET_LUA_NOTIFY_1002(context, evt)
 		local su = LF_random_stage_suite(context, stage_table, evt.param1, evt.param3)
 		LF_Log("notify_suite", su)
 		if su == -1 then
-			ScriptLib.PrintLog("## stage_table_overflow != "..evt.param1.." "..evt.param3)
+			ScriptLib.PrintLog(context, "## stage_table_overflow != "..evt.param1.." "..evt.param3)
 			return -1
 		end
 		ScriptLib.RefreshGroup(context, {group_id = su_group, suite = su})
@@ -409,7 +409,7 @@ function action_EVENT_TIMER_EVENT_1011(context, evt)
 		math.randomseed(tostring(ScriptLib.GetServerTime(context)):reverse():sub(1,5))
 		local su = LF_random_stage_suite(context, defs.monster_bonus_suite, el, st)
 		if su == -1 then
-			ScriptLib.PrintLog("## Illegal bonus group")
+			ScriptLib.PrintLog(context, "## Illegal bonus group")
 			return -1
 		end
 		LF_Log("monster_bonus", su)
