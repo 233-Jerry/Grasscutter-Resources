@@ -1,20 +1,5 @@
-local L0_1, L1_1, L2_1, L3_1
-L0_1 = {}
-L1_1 = {}
-L1_1.id = 201005001
-L1_1.refresh_id = 1
-L2_1 = {}
-L2_1.x = -4.216
-L2_1.y = -4.4
-L2_1.z = -37.036
-L1_1.pos = L2_1
-L2_1 = {}
-L2_1.id = 201005901
-L3_1 = {}
-L3_1.x = -4.29
-L3_1.y = -6.4
-L3_1.z = 36.22
-L2_1.pos = L3_1
-L0_1[1] = L1_1
-L0_1[2] = L2_1
-groups = L0_1
+-- 所有的group
+groups = {
+	{ id = 201005001, refresh_id = 1, pos = { x = -4.216, y = -4.400, z = -37.036 }, is_replaceable = { value = false, version = 0, new_bin_only = true }, business = { type = 99 } },
+	{ id = 201005901, pos = { x = -4.290, y = -6.400, z = 36.220 }, is_replaceable = { value = false, version = 0, new_bin_only = true }, business = { type = 99 } }
+}

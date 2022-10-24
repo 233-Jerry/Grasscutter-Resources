@@ -1,128 +1,83 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 111101121
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 121001
-L2_1.gadget_id = 70950076
-L3_1 = {}
-L3_1.x = 2489.489
-L3_1.y = 222.88
-L3_1.z = -1320.0
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.is_use_point_array = true
-L3_1 = {}
-L3_1.config_id = 121002
-L3_1.gadget_id = 70950073
-L4_1 = {}
-L4_1.x = 2489.525
-L4_1.y = 223.151
-L4_1.z = -1315.833
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.is_use_point_array = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 121003
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 2
-L3_1 = {}
-L3_1.x = 2490.991
-L3_1.y = 220.365
-L3_1.z = -1326.38
-L2_1.pos = L3_1
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1121003
-L2_1.name = "ENTER_REGION_121003"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_ENTER_REGION_121003"
-L2_1.trigger_count = 0
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 121001
-L5_1 = 121002
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 121003
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_121003"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformPointArray
-  L3_2 = A0_2
-  L4_2 = 121001
-  L5_2 = 110100009
-  L6_2 = {}
-  L7_2 = 1
-  L8_2 = 2
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L7_2 = {}
-  L7_2.route_type = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformPointArray
-  L3_2 = A0_2
-  L4_2 = 121002
-  L5_2 = 110100008
-  L6_2 = {}
-  L7_2 = 1
-  L8_2 = 2
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L7_2 = {}
-  L7_2.route_type = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 111101121
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 121001, gadget_id = 70950076, pos = { x = 2489.489, y = 222.880, z = -1320.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 121002, gadget_id = 70950073, pos = { x = 2489.525, y = 223.151, z = -1315.833 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true }
+}
+
+-- 区域
+regions = {
+	{ config_id = 121003, shape = RegionShape.SPHERE, radius = 2, pos = { x = 2490.991, y = 220.365, z = -1326.380 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1121003, name = "ENTER_REGION_121003", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "action_EVENT_ENTER_REGION_121003", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 121001, 121002 },
+		regions = { 121003 },
+		triggers = { "ENTER_REGION_121003" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_121003(context, evt)
+	
+	ScriptLib.SetPlatformPointArray(context, 121001, 110100009, { 1,2}, { route_type = 1 })
+	ScriptLib.SetPlatformPointArray(context, 121002, 110100008, { 1,2}, { route_type = 1 })
+	return 0
 end
-action_EVENT_ENTER_REGION_121003 = L1_1

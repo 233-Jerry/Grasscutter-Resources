@@ -1,327 +1,90 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 177008085
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 85003
-L2_1.gadget_id = 70330153
-L3_1 = {}
-L3_1.x = -305.198
-L3_1.y = 258.414
-L3_1.z = 317.279
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 36
-L2_1.persistent = true
-L2_1.is_guest_can_operate = true
-L3_1 = {}
-L3_1.is_persistent = true
-L4_1 = {}
-L5_1 = 700
-L4_1[1] = L5_1
-L3_1.init_options = L4_1
-L2_1.worktop_config = L3_1
-L2_1.area_id = 210
-L3_1 = {}
-L3_1.config_id = 85004
-L3_1.gadget_id = 70330153
-L4_1 = {}
-L4_1.x = -323.934
-L4_1.y = 261.321
-L4_1.z = 303.376
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.persistent = true
-L3_1.is_guest_can_operate = true
-L4_1 = {}
-L4_1.is_persistent = true
-L5_1 = {}
-L6_1 = 700
-L5_1[1] = L6_1
-L4_1.init_options = L5_1
-L3_1.worktop_config = L4_1
-L3_1.area_id = 210
-L4_1 = {}
-L4_1.config_id = 85005
-L4_1.gadget_id = 70330153
-L5_1 = {}
-L5_1.x = -310.312
-L5_1.y = 263.078
-L5_1.z = 351.735
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.persistent = true
-L4_1.is_guest_can_operate = true
-L5_1 = {}
-L5_1.is_persistent = true
-L6_1 = {}
-L7_1 = 700
-L6_1[1] = L7_1
-L5_1.init_options = L6_1
-L4_1.worktop_config = L5_1
-L4_1.area_id = 210
-L5_1 = {}
-L5_1.config_id = 85006
-L5_1.gadget_id = 70330153
-L6_1 = {}
-L6_1.x = -315.669
-L6_1.y = 264.498
-L6_1.z = 352.847
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 36
-L5_1.persistent = true
-L5_1.is_guest_can_operate = true
-L6_1 = {}
-L6_1.is_persistent = true
-L7_1 = {}
-L8_1 = 700
-L7_1[1] = L8_1
-L6_1.init_options = L7_1
-L5_1.worktop_config = L6_1
-L5_1.area_id = 210
-L6_1 = {}
-L6_1.config_id = 85007
-L6_1.gadget_id = 70330153
-L7_1 = {}
-L7_1.x = -316.652
-L7_1.y = 216.12
-L7_1.z = 361.625
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 36
-L6_1.persistent = true
-L6_1.is_guest_can_operate = true
-L7_1 = {}
-L7_1.is_persistent = true
-L8_1 = {}
-L9_1 = 700
-L8_1[1] = L9_1
-L7_1.init_options = L8_1
-L6_1.worktop_config = L7_1
-L6_1.area_id = 210
-L7_1 = {}
-L7_1.config_id = 85008
-L7_1.gadget_id = 70330153
-L8_1 = {}
-L8_1.x = -330.703
-L8_1.y = 216.039
-L8_1.z = 372.143
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 36
-L7_1.persistent = true
-L7_1.is_guest_can_operate = true
-L8_1 = {}
-L8_1.is_persistent = true
-L9_1 = {}
-L10_1 = 700
-L9_1[1] = L10_1
-L8_1.init_options = L9_1
-L7_1.worktop_config = L8_1
-L7_1.area_id = 210
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 85001
-L3_1.gadget_id = 70330153
-L4_1 = {}
-L4_1.x = -300.479
-L4_1.y = 261.514
-L4_1.z = 350.797
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.persistent = true
-L3_1.is_guest_can_operate = true
-L4_1 = {}
-L4_1.is_persistent = true
-L5_1 = {}
-L6_1 = 700
-L5_1[1] = L6_1
-L4_1.init_options = L5_1
-L3_1.worktop_config = L4_1
-L3_1.area_id = 210
-L4_1 = {}
-L4_1.config_id = 85002
-L4_1.gadget_id = 70330153
-L5_1 = {}
-L5_1.x = -298.656
-L5_1.y = 257.541
-L5_1.z = 318.127
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.persistent = true
-L4_1.is_guest_can_operate = true
-L5_1 = {}
-L5_1.is_persistent = true
-L6_1 = {}
-L7_1 = 700
-L6_1[1] = L7_1
-L5_1.init_options = L6_1
-L4_1.worktop_config = L5_1
-L4_1.area_id = 210
-L5_1 = {}
-L5_1.config_id = 85009
-L5_1.gadget_id = 70330153
-L6_1 = {}
-L6_1.x = -332.429
-L6_1.y = 215.731
-L6_1.z = 366.881
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 36
-L5_1.persistent = true
-L5_1.is_guest_can_operate = true
-L6_1 = {}
-L6_1.is_persistent = true
-L7_1 = {}
-L8_1 = 700
-L7_1[1] = L8_1
-L6_1.init_options = L7_1
-L5_1.worktop_config = L6_1
-L5_1.area_id = 210
-L6_1 = {}
-L6_1.config_id = 85010
-L6_1.gadget_id = 70330153
-L7_1 = {}
-L7_1.x = -332.648
-L7_1.y = 216.046
-L7_1.z = 374.47
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 36
-L6_1.persistent = true
-L6_1.is_guest_can_operate = true
-L7_1 = {}
-L7_1.is_persistent = true
-L8_1 = {}
-L9_1 = 700
-L8_1[1] = L9_1
-L7_1.init_options = L8_1
-L6_1.worktop_config = L7_1
-L6_1.area_id = 210
-L7_1 = {}
-L7_1.config_id = 85011
-L7_1.gadget_id = 70330153
-L8_1 = {}
-L8_1.x = -344.254
-L8_1.y = 218.054
-L8_1.z = 378.67
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 36
-L7_1.persistent = true
-L7_1.is_guest_can_operate = true
-L8_1 = {}
-L8_1.is_persistent = true
-L9_1 = {}
-L10_1 = 700
-L9_1[1] = L10_1
-L8_1.init_options = L9_1
-L7_1.worktop_config = L8_1
-L7_1.area_id = 210
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L1_1.gadgets = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 85003
-L5_1 = 85004
-L6_1 = 85005
-L7_1 = 85006
-L8_1 = 85007
-L9_1 = 85008
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-L1_1 = require
-L2_1 = "V2_5/Watcher_Energy"
-L1_1(L2_1)
+-- 基础信息
+local base_info = {
+	group_id = 177008085
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 85003, gadget_id = 70330153, pos = { x = -305.198, y = 258.414, z = 317.279 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, is_guest_can_operate = true, worktop_config = { is_persistent = true, init_options = { 700 } }, area_id = 210 },
+	{ config_id = 85004, gadget_id = 70330153, pos = { x = -323.934, y = 261.321, z = 303.376 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, is_guest_can_operate = true, worktop_config = { is_persistent = true, init_options = { 700 } }, area_id = 210 },
+	{ config_id = 85005, gadget_id = 70330153, pos = { x = -310.312, y = 263.078, z = 351.735 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, is_guest_can_operate = true, worktop_config = { is_persistent = true, init_options = { 700 } }, area_id = 210 },
+	{ config_id = 85006, gadget_id = 70330153, pos = { x = -315.669, y = 264.498, z = 352.847 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, is_guest_can_operate = true, worktop_config = { is_persistent = true, init_options = { 700 } }, area_id = 210 },
+	{ config_id = 85007, gadget_id = 70330153, pos = { x = -316.652, y = 216.120, z = 361.625 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, is_guest_can_operate = true, worktop_config = { is_persistent = true, init_options = { 700 } }, area_id = 210 },
+	{ config_id = 85008, gadget_id = 70330153, pos = { x = -330.703, y = 216.039, z = 372.143 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, is_guest_can_operate = true, worktop_config = { is_persistent = true, init_options = { 700 } }, area_id = 210 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 85001, gadget_id = 70330153, pos = { x = -300.479, y = 261.514, z = 350.797 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, is_guest_can_operate = true, worktop_config = { is_persistent = true, init_options = { 700 } }, area_id = 210 },
+		{ config_id = 85002, gadget_id = 70330153, pos = { x = -298.656, y = 257.541, z = 318.127 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, is_guest_can_operate = true, worktop_config = { is_persistent = true, init_options = { 700 } }, area_id = 210 },
+		{ config_id = 85009, gadget_id = 70330153, pos = { x = -332.429, y = 215.731, z = 366.881 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, is_guest_can_operate = true, worktop_config = { is_persistent = true, init_options = { 700 } }, area_id = 210 },
+		{ config_id = 85010, gadget_id = 70330153, pos = { x = -332.648, y = 216.046, z = 374.470 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, is_guest_can_operate = true, worktop_config = { is_persistent = true, init_options = { 700 } }, area_id = 210 },
+		{ config_id = 85011, gadget_id = 70330153, pos = { x = -344.254, y = 218.054, z = 378.670 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, is_guest_can_operate = true, worktop_config = { is_persistent = true, init_options = { 700 } }, area_id = 210 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 85003, 85004, 85005, 85006, 85007, 85008 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_5/Watcher_Energy"

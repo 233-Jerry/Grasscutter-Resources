@@ -1,297 +1,138 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 155006054
-L1_1 = {}
-L1_1.pointarryRot = 500600004
-L2_1 = {}
-L3_1 = 54002
-L4_1 = 54007
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = 54001
-L4_1[1] = L5_1
-L5_1 = {}
-monsters = L5_1
-L5_1 = {}
-npcs = L5_1
-L5_1 = {}
-L6_1 = {}
-L6_1.config_id = 54001
-L6_1.gadget_id = 70360315
-L7_1 = {}
-L7_1.x = 279.324
-L7_1.y = 132.889
-L7_1.z = -323.833
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 3.266
-L7_1.y = 294.981
-L7_1.z = 358.322
-L6_1.rot = L7_1
-L6_1.level = 36
-L6_1.area_id = 200
-L7_1 = {}
-L7_1.config_id = 54002
-L7_1.gadget_id = 70360309
-L8_1 = {}
-L8_1.x = 281.414
-L8_1.y = 135.239
-L8_1.z = -326.031
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 357.421
-L8_1.y = 356.757
-L8_1.z = 1.937
-L7_1.rot = L8_1
-L7_1.level = 36
-L7_1.area_id = 200
-L8_1 = {}
-L8_1.config_id = 54003
-L8_1.gadget_id = 70290170
-L9_1 = {}
-L9_1.x = 282.138
-L9_1.y = 133.743
-L9_1.z = -319.578
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.515
-L9_1.y = 25.831
-L9_1.z = 4.03
-L8_1.rot = L9_1
-L8_1.level = 36
-L8_1.persistent = true
-L8_1.is_use_point_array = true
-L8_1.area_id = 200
-L9_1 = {}
-L9_1.config_id = 54004
-L9_1.gadget_id = 70211111
-L10_1 = {}
-L10_1.x = 284.658
-L10_1.y = 134.267
-L10_1.z = -314.287
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 356.166
-L10_1.y = 204.111
-L10_1.z = 356.671
-L9_1.rot = L10_1
-L9_1.level = 16
-L9_1.drop_tag = "\232\167\163\232\176\156\228\184\173\231\186\167\231\168\187\229\166\187"
-L9_1.isOneoff = true
-L9_1.persistent = true
-L10_1 = {}
-L10_1.name = "chest"
-L10_1.exp = 1
-L9_1.explore = L10_1
-L9_1.area_id = 200
-L10_1 = {}
-L10_1.config_id = 54007
-L10_1.gadget_id = 70360304
-L11_1 = {}
-L11_1.x = 278.512
-L11_1.y = 136.287
-L11_1.z = -334.461
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 7.239
-L11_1.y = 36.875
-L11_1.z = 7.799
-L10_1.rot = L11_1
-L10_1.level = 36
-L10_1.area_id = 200
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-gadgets = L5_1
-L5_1 = {}
-regions = L5_1
-L5_1 = {}
-L6_1 = {}
-L6_1.config_id = 1054005
-L6_1.name = "GADGET_STATE_CHANGE_54005"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GADGET_STATE_CHANGE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_54005"
-L6_1.action = "action_EVENT_GADGET_STATE_CHANGE_54005"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1054006
-L7_1.name = "GROUP_LOAD_54006"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GROUP_LOAD
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = ""
-L7_1.action = "action_EVENT_GROUP_LOAD_54006"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1054008
-L8_1.name = "GROUP_LOAD_54008"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_GROUP_LOAD
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_GROUP_LOAD_54008"
-L8_1.action = "action_EVENT_GROUP_LOAD_54008"
-L8_1.trigger_count = 0
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-triggers = L5_1
-L5_1 = {}
-L6_1 = {}
-L6_1.configId = 1
-L6_1.name = "Door02"
-L6_1.value = 0
-L6_1.no_refresh = true
-L5_1[1] = L6_1
-variables = L5_1
-L5_1 = {}
-L5_1.suite = 1
-L5_1.end_suite = 0
-L5_1.rand_suite = false
-init_config = L5_1
-L5_1 = {}
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L8_1 = 54002
-L9_1 = 54003
-L10_1 = 54004
-L11_1 = 54007
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L8_1 = "GADGET_STATE_CHANGE_54005"
-L9_1 = "GROUP_LOAD_54006"
-L10_1 = "GROUP_LOAD_54008"
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L5_1[1] = L6_1
-suites = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param2
-  if 54002 == L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = 155006054
-    L5_2 = 54002
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 322 == L2_2 then
-      goto lbl_14
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_14::
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 155006054
+}
+
+-- Trigger变量
+local defs = {
+	pointarryRot = 500600004
+}
+
+-- DEFS_MISCS
+local EnvControlGadgets = {54002,54007}
+local DayAppearGadgets = {}
+local NightAppearGadgets = {54001}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 54001, gadget_id = 70360315, pos = { x = 279.324, y = 132.889, z = -323.833 }, rot = { x = 3.266, y = 294.981, z = 358.322 }, level = 36, area_id = 200 },
+	{ config_id = 54002, gadget_id = 70360309, pos = { x = 281.414, y = 135.239, z = -326.031 }, rot = { x = 357.421, y = 356.757, z = 1.937 }, level = 36, area_id = 200 },
+	{ config_id = 54003, gadget_id = 70290170, pos = { x = 282.138, y = 133.743, z = -319.578 }, rot = { x = 0.515, y = 25.831, z = 4.030 }, level = 36, persistent = true, is_use_point_array = true, area_id = 200 },
+	{ config_id = 54004, gadget_id = 70211111, pos = { x = 284.658, y = 134.267, z = -314.287 }, rot = { x = 356.166, y = 204.111, z = 356.671 }, level = 16, drop_tag = "解谜中级稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 200 },
+	{ config_id = 54007, gadget_id = 70360304, pos = { x = 278.512, y = 136.287, z = -334.461 }, rot = { x = 7.239, y = 36.875, z = 7.799 }, level = 36, area_id = 200 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1054005, name = "GADGET_STATE_CHANGE_54005", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_54005", action = "action_EVENT_GADGET_STATE_CHANGE_54005", trigger_count = 0 },
+	{ config_id = 1054006, name = "GROUP_LOAD_54006", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_54006", trigger_count = 0 },
+	-- Door02
+	{ config_id = 1054008, name = "GROUP_LOAD_54008", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_54008", action = "action_EVENT_GROUP_LOAD_54008", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Door02", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 54002, 54003, 54004, 54007 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_54005", "GROUP_LOAD_54006", "GROUP_LOAD_54008" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_54005(context, evt)
+		if 54002 ~= evt.param2 or 322 ~= ScriptLib.GetGadgetStateByConfigId(context, 155006054, 54002) then
+				return false
+			end
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_54005 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Door02"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "is_daynight_finish"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformPointArray
-  L3_2 = A0_2
-  L4_2 = 54003
-  L5_2 = L1_1.pointarryRot
-  L6_2 = {}
-  L7_2 = 1
-  L6_2[1] = L7_2
-  L7_2 = {}
-  L7_2.route_type = 0
-  L7_2.turn_mode = true
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_54005(context, evt)
+	-- 将本组内变量名为 "Door02" 的变量设置为 1
+	        if 0 ~= ScriptLib.SetGroupVariableValue(context, "Door02", 1) then
+	          ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	          return -1
+	        end
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",1)
+			ScriptLib.SetPlatformPointArray(context, 54003, defs.pointarryRot, { 1 }, { route_type = 0,turn_mode=true })
+	
+	      
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_54005 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = DayNight_Gadget_Unlock
-  L3_2 = A0_2
-  L4_2 = 54002
-  L2_2(L3_2, L4_2)
-  L2_2 = DayNight_Gadget_Unlock
-  L3_2 = A0_2
-  L4_2 = 54007
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_54006(context, evt)
+	DayNight_Gadget_Unlock(context,54002)
+	DayNight_Gadget_Unlock(context,54007)
+	return 0
 end
-action_EVENT_GROUP_LOAD_54006 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "Door02"
-  L5_2 = 155006054
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_54008(context, evt)
+	-- 判断变量"Door02"为1
+	if ScriptLib.GetGroupVariableValueByGroup(context, "Door02", 155006054) ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_54008 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformPointArray
-  L3_2 = A0_2
-  L4_2 = 54003
-  L5_2 = L1_1.pointarryRot
-  L6_2 = {}
-  L7_2 = 1
-  L6_2[1] = L7_2
-  L7_2 = {}
-  L7_2.route_type = 0
-  L7_2.turn_mode = true
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_54008(context, evt)
+			ScriptLib.SetPlatformPointArray(context, 54003, defs.pointarryRot, { 1 }, { route_type = 0,turn_mode=true })
+	return 0
 end
-action_EVENT_GROUP_LOAD_54008 = L5_1
-L5_1 = require
-L6_1 = "V2_4/EnvState"
-L5_1(L6_1)
+
+require "V2_4/EnvState"

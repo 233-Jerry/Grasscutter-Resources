@@ -1,269 +1,155 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 220000034
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 87
-L2_1.gadget_id = 70710002
-L3_1 = {}
-L3_1.x = 81.402
-L3_1.y = 0.5
-L3_1.z = -12.125
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 292.16
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.route_id = 20000007
-L3_1 = {}
-L3_1.config_id = 90
-L3_1.gadget_id = 70211021
-L4_1 = {}
-L4_1.x = 74.286
-L4_1.y = 0.534
-L4_1.z = 32.857
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 181.619
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.drop_tag = "\230\136\152\230\150\151\233\171\152\231\186\167\232\146\153\229\190\183"
-L3_1.showcutscene = true
-L3_1.isOneoff = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 53
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 10.2
-L3_1 = {}
-L3_1.x = 89.079
-L3_1.y = 0.5
-L3_1.z = -11.004
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.config_id = 54
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 5
-L4_1 = {}
-L4_1.x = 96.611
-L4_1.y = 0.5
-L4_1.z = 14.008
-L3_1.pos = L4_1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1000053
-L2_1.name = "ENTER_REGION_53"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_53"
-L2_1.action = "action_EVENT_ENTER_REGION_53"
-L2_1.forbid_guest = false
-L3_1 = {}
-L3_1.config_id = 1000054
-L3_1.name = "ENTER_REGION_54"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_54"
-L3_1.action = "action_EVENT_ENTER_REGION_54"
-L3_1.forbid_guest = false
-L4_1 = {}
-L4_1.config_id = 1000055
-L4_1.name = "PLATFORM_REACH_POINT_55"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_PLATFORM_REACH_POINT
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_PLATFORM_REACH_POINT_55"
-L4_1.action = "action_EVENT_PLATFORM_REACH_POINT_55"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = true
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 87
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 53
-L5_1 = 54
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_53"
-L5_1 = "ENTER_REGION_54"
-L6_1 = "PLATFORM_REACH_POINT_55"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 53 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220000034
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 87, gadget_id = 70710002, pos = { x = 81.402, y = 0.500, z = -12.125 }, rot = { x = 0.000, y = 292.160, z = 0.000 }, level = 1, route_id = 20000007 },
+	{ config_id = 90, gadget_id = 70211021, pos = { x = 74.286, y = 0.534, z = 32.857 }, rot = { x = 0.000, y = 181.619, z = 0.000 }, level = 1, drop_tag = "战斗高级蒙德", showcutscene = true, isOneoff = true }
+}
+
+-- 区域
+regions = {
+	{ config_id = 53, shape = RegionShape.SPHERE, radius = 10.2, pos = { x = 89.079, y = 0.500, z = -11.004 } },
+	{ config_id = 54, shape = RegionShape.SPHERE, radius = 5, pos = { x = 96.611, y = 0.500, z = 14.008 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000053, name = "ENTER_REGION_53", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_53", action = "action_EVENT_ENTER_REGION_53", forbid_guest = false },
+	{ config_id = 1000054, name = "ENTER_REGION_54", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_54", action = "action_EVENT_ENTER_REGION_54", forbid_guest = false },
+	{ config_id = 1000055, name = "PLATFORM_REACH_POINT_55", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_55", action = "action_EVENT_PLATFORM_REACH_POINT_55" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 87 },
+		regions = { 53, 54 },
+		triggers = { "ENTER_REGION_53", "ENTER_REGION_54", "PLATFORM_REACH_POINT_55" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_53(context, evt)
+	if evt.param1 ~= 53 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_53 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformRouteId
-  L3_2 = A0_2
-  L4_2 = 87
-  L5_2 = 20000008
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_platform_routeId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_53(context, evt)
+	-- 设置移动平台路径
+	if 0 ~= ScriptLib.SetPlatformRouteId(context, 87, 20000008) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_routeId")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_53 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 54 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_54(context, evt)
+	if evt.param1 ~= 54 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_54 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformRouteId
-  L3_2 = A0_2
-  L4_2 = 87
-  L5_2 = 20000009
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_platform_routeId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_54(context, evt)
+	-- 设置移动平台路径
+	if 0 ~= ScriptLib.SetPlatformRouteId(context, 87, 20000009) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_routeId")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_54 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 87 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 20000009 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_PLATFORM_REACH_POINT_55(context, evt)
+	-- 判断是gadgetid 为 87的移动平台，是否到达了20000009 的路线中的 1 点
+	
+	if 87 ~= evt.param1 then
+	  return false
+	end
+	
+	if 20000009 ~= evt.param2 then
+	  return false
+	end
+	
+	if 1 ~= evt.param3 then
+	  return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_PLATFORM_REACH_POINT_55 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 90
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : dungeon_settle"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_PLATFORM_REACH_POINT_55(context, evt)
+	-- 创生gadget 90
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 90 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : dungeon_settle")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_PLATFORM_REACH_POINT_55 = L1_1

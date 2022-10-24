@@ -1,980 +1,384 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
-L0_1 = {}
-L0_1.group_id = 244012001
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1001
-L2_1.gadget_id = 70360010
-L3_1 = {}
-L3_1.x = 0.141
-L3_1.y = -0.11
-L3_1.z = 0.016
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 1003
-L3_1.gadget_id = 70350077
-L4_1 = {}
-L4_1.x = 0.078
-L4_1.y = 0.028
-L4_1.z = -24.177
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 1004
-L4_1.gadget_id = 70350077
-L5_1 = {}
-L5_1.x = 0.128
-L5_1.y = 0.041
-L5_1.z = 24.182
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 1020
-L5_1.gadget_id = 44000006
-L6_1 = {}
-L6_1.x = -0.004
-L6_1.y = 0.028
-L6_1.z = 16.713
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1001002
-L2_1.name = "GADGET_CREATE_1002"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGET_CREATE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GADGET_CREATE_1002"
-L2_1.action = "action_EVENT_GADGET_CREATE_1002"
-L3_1 = {}
-L3_1.config_id = 1001005
-L3_1.name = "SELECT_OPTION_1005"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SELECT_OPTION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_SELECT_OPTION_1005"
-L3_1.action = "action_EVENT_SELECT_OPTION_1005"
-L4_1 = {}
-L4_1.config_id = 1001012
-L4_1.name = "POOL_MONSTER_TIDE_DIE_1012"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_POOL_MONSTER_TIDE_DIE
-L4_1.event = L5_1
-L4_1.source = "1"
-L4_1.condition = "condition_EVENT_POOL_MONSTER_TIDE_DIE_1012"
-L4_1.action = "action_EVENT_POOL_MONSTER_TIDE_DIE_1012"
-L5_1 = {}
-L5_1.config_id = 1001014
-L5_1.name = "CHALLENGE_SUCCESS_1014"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_CHALLENGE_SUCCESS
-L5_1.event = L6_1
-L5_1.source = "101"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_CHALLENGE_SUCCESS_1014"
-L6_1 = {}
-L6_1.config_id = 1001015
-L6_1.name = "CHALLENGE_FAIL_1015"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_CHALLENGE_FAIL
-L6_1.event = L7_1
-L6_1.source = "101"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_CHALLENGE_FAIL_1015"
-L7_1 = {}
-L7_1.config_id = 1001016
-L7_1.name = "CHALLENGE_SUCCESS_1016"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_CHALLENGE_SUCCESS
-L7_1.event = L8_1
-L7_1.source = "202"
-L7_1.condition = ""
-L7_1.action = "action_EVENT_CHALLENGE_SUCCESS_1016"
-L8_1 = {}
-L8_1.config_id = 1001017
-L8_1.name = "CHALLENGE_SUCCESS_1017"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_CHALLENGE_SUCCESS
-L8_1.event = L9_1
-L8_1.source = "202"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_CHALLENGE_SUCCESS_1017"
-L9_1 = {}
-L9_1.config_id = 1001018
-L9_1.name = "CHALLENGE_SUCCESS_1018"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_CHALLENGE_SUCCESS
-L9_1.event = L10_1
-L9_1.source = "201"
-L9_1.condition = ""
-L9_1.action = "action_EVENT_CHALLENGE_SUCCESS_1018"
-L10_1 = {}
-L10_1.config_id = 1001019
-L10_1.name = "CHALLENGE_FAIL_1019"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_CHALLENGE_FAIL
-L10_1.event = L11_1
-L10_1.source = "202"
-L10_1.condition = ""
-L10_1.action = "action_EVENT_CHALLENGE_FAIL_1019"
-L11_1 = {}
-L11_1.config_id = 1001021
-L11_1.name = "DUNGEON_ALL_AVATAR_DIE_1021"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_DUNGEON_ALL_AVATAR_DIE
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1021"
-L11_1.action = "action_EVENT_DUNGEON_ALL_AVATAR_DIE_1021"
-L11_1.trigger_count = 0
-L12_1 = {}
-L12_1.config_id = 1001026
-L12_1.name = "TIMER_EVENT_1026"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_TIMER_EVENT
-L12_1.event = L13_1
-L12_1.source = "delay"
-L12_1.condition = ""
-L12_1.action = "action_EVENT_TIMER_EVENT_1026"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1006
-L3_1 = {}
-L3_1.x = -0.004
-L3_1.y = 0.028
-L3_1.z = -14.607
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.tag = 2
-L3_1 = {}
-L3_1.config_id = 1007
-L4_1 = {}
-L4_1.x = 7.328
-L4_1.y = 0.028
-L4_1.z = -9.677
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.tag = 2
-L4_1 = {}
-L4_1.config_id = 1008
-L5_1 = {}
-L5_1.x = -7.266
-L5_1.y = 0.028
-L5_1.z = -9.792
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.tag = 2
-L5_1 = {}
-L5_1.config_id = 1009
-L6_1 = {}
-L6_1.x = 4.895
-L6_1.y = 0.028
-L6_1.z = -12.227
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.tag = 2
-L6_1 = {}
-L6_1.config_id = 1010
-L7_1 = {}
-L7_1.x = -4.62
-L7_1.y = 0.028
-L7_1.z = -12.293
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.tag = 2
-L7_1 = {}
-L7_1.config_id = 1011
-L8_1 = {}
-L8_1.x = -4.646
-L8_1.y = 0.028
-L8_1.z = 12.329
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 180.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.tag = 4
-L8_1 = {}
-L8_1.config_id = 1022
-L9_1 = {}
-L9_1.x = 5.057
-L9_1.y = 0.028
-L9_1.z = 12.293
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 180.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.tag = 4
-L9_1 = {}
-L9_1.config_id = 1023
-L10_1 = {}
-L10_1.x = -9.595
-L10_1.y = 0.028
-L10_1.z = 12.316
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 180.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.tag = 4
-L10_1 = {}
-L10_1.config_id = 1024
-L11_1 = {}
-L11_1.x = 10.204
-L11_1.y = 0.028
-L11_1.z = 12.478
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 180.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.tag = 4
-L11_1 = {}
-L11_1.config_id = 1025
-L12_1 = {}
-L12_1.x = 0.091
-L12_1.y = 0.028
-L12_1.z = 17.075
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 180.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.tag = 4
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-points = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "IS_IN_LIMIT_TIME"
-L2_1.value = 0
-L2_1.no_refresh = false
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "monster_count"
-L3_1.value = 7
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "wave1_count"
-L4_1.value = 3
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 4
-L5_1.name = "wave2_count"
-L5_1.value = 4
-L5_1.no_refresh = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1001013
-L3_1.name = "POOL_MONSTER_TIDE_DIE_1013"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_POOL_MONSTER_TIDE_DIE
-L3_1.event = L4_1
-L3_1.source = "2"
-L3_1.condition = "condition_EVENT_POOL_MONSTER_TIDE_DIE_1013"
-L3_1.action = "action_EVENT_POOL_MONSTER_TIDE_DIE_1013"
-L2_1[1] = L3_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 1001
-L5_1 = 1003
-L6_1 = 1004
-L7_1 = 1020
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GADGET_CREATE_1002"
-L5_1 = "SELECT_OPTION_1005"
-L6_1 = "POOL_MONSTER_TIDE_DIE_1012"
-L7_1 = "CHALLENGE_SUCCESS_1014"
-L8_1 = "CHALLENGE_FAIL_1015"
-L9_1 = "CHALLENGE_SUCCESS_1016"
-L10_1 = "CHALLENGE_SUCCESS_1017"
-L11_1 = "CHALLENGE_FAIL_1019"
-L12_1 = "DUNGEON_ALL_AVATAR_DIE_1021"
-L13_1 = "TIMER_EVENT_1026"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "CHALLENGE_SUCCESS_1018"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 244012001
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 1001, gadget_id = 70360010, pos = { x = 0.141, y = -0.110, z = 0.016 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 1003, gadget_id = 70350077, pos = { x = 0.078, y = 0.028, z = -24.177 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 1004, gadget_id = 70350077, pos = { x = 0.128, y = 0.041, z = 24.182 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 1020, gadget_id = 44000006, pos = { x = -0.004, y = 0.028, z = 16.713 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1001002, name = "GADGET_CREATE_1002", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_1002", action = "action_EVENT_GADGET_CREATE_1002" },
+	{ config_id = 1001005, name = "SELECT_OPTION_1005", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_1005", action = "action_EVENT_SELECT_OPTION_1005" },
+	{ config_id = 1001012, name = "POOL_MONSTER_TIDE_DIE_1012", event = EventType.EVENT_POOL_MONSTER_TIDE_DIE, source = "1", condition = "condition_EVENT_POOL_MONSTER_TIDE_DIE_1012", action = "action_EVENT_POOL_MONSTER_TIDE_DIE_1012" },
+	{ config_id = 1001014, name = "CHALLENGE_SUCCESS_1014", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "101", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_1014" },
+	{ config_id = 1001015, name = "CHALLENGE_FAIL_1015", event = EventType.EVENT_CHALLENGE_FAIL, source = "101", condition = "", action = "action_EVENT_CHALLENGE_FAIL_1015" },
+	{ config_id = 1001016, name = "CHALLENGE_SUCCESS_1016", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "202", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_1016" },
+	{ config_id = 1001017, name = "CHALLENGE_SUCCESS_1017", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "202", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_1017" },
+	{ config_id = 1001018, name = "CHALLENGE_SUCCESS_1018", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "201", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_1018" },
+	{ config_id = 1001019, name = "CHALLENGE_FAIL_1019", event = EventType.EVENT_CHALLENGE_FAIL, source = "202", condition = "", action = "action_EVENT_CHALLENGE_FAIL_1019" },
+	{ config_id = 1001021, name = "DUNGEON_ALL_AVATAR_DIE_1021", event = EventType.EVENT_DUNGEON_ALL_AVATAR_DIE, source = "", condition = "condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1021", action = "action_EVENT_DUNGEON_ALL_AVATAR_DIE_1021", trigger_count = 0 },
+	{ config_id = 1001026, name = "TIMER_EVENT_1026", event = EventType.EVENT_TIMER_EVENT, source = "delay", condition = "", action = "action_EVENT_TIMER_EVENT_1026" }
+}
+
+-- 点位
+points = {
+	{ config_id = 1006, pos = { x = -0.004, y = 0.028, z = -14.607 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 2 },
+	{ config_id = 1007, pos = { x = 7.328, y = 0.028, z = -9.677 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 2 },
+	{ config_id = 1008, pos = { x = -7.266, y = 0.028, z = -9.792 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 2 },
+	{ config_id = 1009, pos = { x = 4.895, y = 0.028, z = -12.227 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 2 },
+	{ config_id = 1010, pos = { x = -4.620, y = 0.028, z = -12.293 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 2 },
+	{ config_id = 1011, pos = { x = -4.646, y = 0.028, z = 12.329 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 4 },
+	{ config_id = 1022, pos = { x = 5.057, y = 0.028, z = 12.293 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 4 },
+	{ config_id = 1023, pos = { x = -9.595, y = 0.028, z = 12.316 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 4 },
+	{ config_id = 1024, pos = { x = 10.204, y = 0.028, z = 12.478 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 4 },
+	{ config_id = 1025, pos = { x = 0.091, y = 0.028, z = 17.075 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 4 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "IS_IN_LIMIT_TIME", value = 0, no_refresh = false },
+	{ config_id = 2, name = "monster_count", value = 7, no_refresh = false },
+	{ config_id = 3, name = "wave1_count", value = 3, no_refresh = false },
+	{ config_id = 4, name = "wave2_count", value = 4, no_refresh = false }
+}
+
+-- 废弃数据
+garbages = {
+	triggers = {
+		{ config_id = 1001013, name = "POOL_MONSTER_TIDE_DIE_1013", event = EventType.EVENT_POOL_MONSTER_TIDE_DIE, source = "2", condition = "condition_EVENT_POOL_MONSTER_TIDE_DIE_1013", action = "action_EVENT_POOL_MONSTER_TIDE_DIE_1013" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1001, 1003, 1004, 1020 },
+		regions = { },
+		triggers = { "GADGET_CREATE_1002", "SELECT_OPTION_1005", "POOL_MONSTER_TIDE_DIE_1012", "CHALLENGE_SUCCESS_1014", "CHALLENGE_FAIL_1015", "CHALLENGE_SUCCESS_1016", "CHALLENGE_SUCCESS_1017", "CHALLENGE_FAIL_1019", "DUNGEON_ALL_AVATAR_DIE_1021", "TIMER_EVENT_1026" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "CHALLENGE_SUCCESS_1018" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_1002(context, evt)
+	if 1001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_1002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 0
-  L5_2 = 1001
-  L6_2 = {}
-  L7_2 = 175
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_1002(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 0, 1001, {175}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_1002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 175 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_1005(context, evt)
+	-- 判断是gadgetid 1001 option_id 175
+	if 1001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 175 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_1005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
-  L2_2 = 0
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "monster_count"
-  L3_2 = L3_2(L4_2, L5_2)
-  L4_2 = ScriptLib
-  L4_2 = L4_2.GetGroupVariableValue
-  L5_2 = A0_2
-  L6_2 = "wave1_count"
-  L4_2 = L4_2(L5_2, L6_2)
-  L5_2 = ScriptLib
-  L5_2 = L5_2.GetChannellerSlabLoopDungeonLimitTime
-  L6_2 = A0_2
-  L5_2 = L5_2(L6_2)
-  if 0 ~= L5_2 then
-    L5_2 = ScriptLib
-    L5_2 = L5_2.GetChannellerSlabLoopDungeonLimitTime
-    L6_2 = A0_2
-    L5_2 = L5_2(L6_2)
-    L2_2 = L5_2
-  end
-  L5_2 = ScriptLib
-  L5_2 = L5_2.IsChannellerSlabLoopDungeonConditionSelected
-  L6_2 = A0_2
-  L7_2 = 313
-  L5_2 = L5_2(L6_2, L7_2)
-  if L5_2 == true then
-    L3_2 = 9
-    L4_2 = 4
-    L5_2 = ScriptLib
-    L5_2 = L5_2.SetGroupVariableValue
-    L6_2 = A0_2
-    L7_2 = "monster_count"
-    L8_2 = 10
-    L5_2(L6_2, L7_2, L8_2)
-    L5_2 = ScriptLib
-    L5_2 = L5_2.SetGroupVariableValue
-    L6_2 = A0_2
-    L7_2 = "wave1_count"
-    L8_2 = 4
-    L5_2(L6_2, L7_2, L8_2)
-  end
-  L5_2 = ScriptLib
-  L5_2 = L5_2.CreateFatherChallenge
-  L6_2 = A0_2
-  L7_2 = 101
-  L8_2 = 2003015
-  L9_2 = 999999
-  L10_2 = {}
-  L10_2.success = 1
-  L10_2.fail = 1
-  L10_2.fail_on_wipe = false
-  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  if 0 ~= L5_2 then
-    L5_2 = -1
-    return L5_2
-  end
-  L5_2 = ScriptLib
-  L5_2 = L5_2.AttachChildChallenge
-  L6_2 = A0_2
-  L7_2 = 101
-  L8_2 = 201
-  L9_2 = 110181
-  L10_2 = {}
-  L11_2 = 244012001
-  L12_2 = L3_2
-  L10_2[1] = L11_2
-  L10_2[2] = L12_2
-  L11_2 = {}
-  L12_2 = {}
-  L12_2.success = 0
-  L12_2.fail = 0
-  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  if 0 ~= L5_2 then
-    L5_2 = -1
-    return L5_2
-  end
-  if 0 ~= L2_2 then
-    L5_2 = ScriptLib
-    L5_2 = L5_2.AttachChildChallenge
-    L6_2 = A0_2
-    L7_2 = 101
-    L8_2 = 202
-    L9_2 = 110182
-    L10_2 = {}
-    L11_2 = L2_2
-    L12_2 = 244012001
-    L13_2 = L3_2
-    L10_2[1] = L11_2
-    L10_2[2] = L12_2
-    L10_2[3] = L13_2
-    L11_2 = {}
-    L12_2 = {}
-    L12_2.success = 0
-    L12_2.fail = 0
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  else
-    L5_2 = ScriptLib
-    L5_2 = L5_2.AddExtraGroupSuite
-    L6_2 = A0_2
-    L7_2 = 244012001
-    L8_2 = 2
-    L5_2(L6_2, L7_2, L8_2)
-  end
-  L5_2 = ScriptLib
-  L5_2 = L5_2.StartFatherChallenge
-  L6_2 = A0_2
-  L7_2 = 101
-  L5_2 = L5_2(L6_2, L7_2)
-  if 0 ~= L5_2 then
-    L5_2 = -1
-    return L5_2
-  end
-  L5_2 = ScriptLib
-  L5_2 = L5_2.IsChannellerSlabLoopDungeonConditionSelected
-  L6_2 = A0_2
-  L7_2 = 314
-  L5_2 = L5_2(L6_2, L7_2)
-  if L5_2 == true then
-    L5_2 = ScriptLib
-    L5_2 = L5_2.AutoPoolMonsterTide
-    L6_2 = A0_2
-    L7_2 = 1
-    L8_2 = 244012001
-    L9_2 = {}
-    L10_2 = 30010
-    L9_2[1] = L10_2
-    L10_2 = 0
-    L11_2 = {}
-    L12_2 = {}
-    L13_2 = {}
-    L13_2.total_count = L4_2
-    L13_2.min_count = 3
-    L13_2.max_count = 3
-    L13_2.tag = 2
-    L13_2.fill_time = 0
-    L13_2.fill_count = 0
-    L13_2.is_ordered = true
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
-  else
-    L5_2 = ScriptLib
-    L5_2 = L5_2.AutoPoolMonsterTide
-    L6_2 = A0_2
-    L7_2 = 1
-    L8_2 = 244012001
-    L9_2 = {}
-    L10_2 = 30001
-    L9_2[1] = L10_2
-    L10_2 = 0
-    L11_2 = {}
-    L12_2 = {}
-    L13_2 = {}
-    L13_2.total_count = L4_2
-    L13_2.min_count = 3
-    L13_2.max_count = 3
-    L13_2.tag = 2
-    L13_2.fill_time = 0
-    L13_2.fill_count = 0
-    L13_2.is_ordered = true
-    L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
-  end
-  L5_2 = ScriptLib
-  L5_2 = L5_2.SetGadgetStateByConfigId
-  L6_2 = A0_2
-  L7_2 = 1004
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L5_2 = L5_2(L6_2, L7_2, L8_2)
-  if 0 ~= L5_2 then
-    L5_2 = -1
-    return L5_2
-  end
-  L5_2 = ScriptLib
-  L5_2 = L5_2.SetGadgetStateByConfigId
-  L6_2 = A0_2
-  L7_2 = 1001
-  L8_2 = GadgetState
-  L8_2 = L8_2.GearStop
-  L5_2 = L5_2(L6_2, L7_2, L8_2)
-  if 0 ~= L5_2 then
-    L5_2 = -1
-    return L5_2
-  end
-  L5_2 = ScriptLib
-  L5_2 = L5_2.DelWorktopOptionByGroupId
-  L6_2 = A0_2
-  L7_2 = 244012001
-  L8_2 = 1001
-  L9_2 = 175
-  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L5_2 then
-    L5_2 = -1
-    return L5_2
-  end
-  L5_2 = ScriptLib
-  L5_2 = L5_2.RemoveEntityByConfigId
-  L6_2 = A0_2
-  L7_2 = 244012001
-  L8_2 = EntityType
-  L8_2 = L8_2.GADGET
-  L9_2 = 1020
-  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L5_2 then
-    L5_2 = ScriptLib
-    L5_2 = L5_2.PrintContextLog
-    L6_2 = A0_2
-    L7_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L5_2(L6_2, L7_2)
-    L5_2 = -1
-    return L5_2
-  end
-  L5_2 = 0
-  return L5_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_1005(context, evt)
+	-- 初始化时间变量
+	local challenge_time = 0
+	local monster_count = ScriptLib.GetGroupVariableValue(context, "monster_count")
+	local wave1_count = ScriptLib.GetGroupVariableValue(context, "wave1_count")
+	
+	-- 判断玩家是否选择了时间挑战因子
+	if 0 ~= ScriptLib.GetChannellerSlabLoopDungeonLimitTime(context) then
+	        challenge_time = ScriptLib.GetChannellerSlabLoopDungeonLimitTime(context)
+	end
+	
+	-- 判断玩家是否选择了刷怪因子
+	if ScriptLib.IsChannellerSlabLoopDungeonConditionSelected(context, 313) == true then
+	        monster_count =9       
+	        wave1_count = 4
+	        ScriptLib.SetGroupVariableValue(context, "monster_count", 10)
+	        ScriptLib.SetGroupVariableValue(context, "wave1_count", 4)
+	end
+	
+	
+	-- 创建编号为110180父挑战，indexID为101
+	if 0 ~= ScriptLib.CreateFatherChallenge(context, 101, 2003015, 999999, {success = 1, fail = 1, fail_on_wipe=false}) then
+	        return -1
+	end
+	
+	
+	-- 创建编号为201的子挑战：杀怪挑战
+	if 0 ~= ScriptLib.AttachChildChallenge(context, 101, 201, 110181, {244012001,monster_count},{},{success=0,fail=0}) then
+	        return -1
+	end
+	
+	
+	-- 创建编号为202的子挑战：限时积分.如果没有选择不会开启
+	
+	if 0 ~= challenge_time then
+	        ScriptLib.AttachChildChallenge(context, 101, 202, 110182, {challenge_time,244012001,monster_count},{},{success=0,fail=0})
+	else
+	        ScriptLib.AddExtraGroupSuite(context, 244012001, 2)
+	end
+	
+	-- 开始父挑战
+	if 0 ~= ScriptLib.StartFatherChallenge(context, 101) then
+	        return -1
+	end
+	
+	
+	
+	--  判断是否选择雷光矩阵
+	
+	if ScriptLib.IsChannellerSlabLoopDungeonConditionSelected(context, 314) == true then 
+	        ScriptLib.AutoPoolMonsterTide(context, 1, 244012001, {30010},0,{},{}, {total_count = wave1_count, min_count = 3, max_count = 3, tag = 2, fill_time= 0, fill_count = 0, is_ordered = true})
+	else
+	        ScriptLib.AutoPoolMonsterTide(context, 1, 244012001, {30001},0,{},{}, {total_count = wave1_count, min_count = 3, max_count = 3, tag = 2, fill_time= 0, fill_count = 0, is_ordered = true})
+	end
+	
+	
+	
+	
+	-- 将configid为 1004 的物件更改为状态 GadgetState.ChestFrozen
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 1004, GadgetState.Default) then
+	                return -1
+	        end 
+	
+	-- 将configid为 1001 的物件更改为状态 GadgetState.ChestFrozen
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 1001, GadgetState.GearStop) then
+	                return -1
+	        end 
+	
+	-- 将configid为 1001 的物件的option删除
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 244012001, 1001, 175) then
+	                return -1
+	        end 
+	
+	-- 卸载回血gadget
+	if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 244012001, EntityType.GADGET, 1020 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+	                return -1
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_1005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "wave1_count"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L3_2 = false
-    return L3_2
-  end
-  L3_2 = true
-  return L3_2
+
+-- 触发条件
+function condition_EVENT_POOL_MONSTER_TIDE_DIE_1012(context, evt)
+	
+	local wave1_count = ScriptLib.GetGroupVariableValue(context, "wave1_count")
+	if wave1_count ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_POOL_MONSTER_TIDE_DIE_1012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 244012001
-  L5_2 = "delay"
-  L6_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_POOL_MONSTER_TIDE_DIE_1012(context, evt)
+	-- 延迟1秒后,向groupId为：244012001的对象,请求一次调用,并将string参数："delay" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 244012001, "delay", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_POOL_MONSTER_TIDE_DIE_1012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 1001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 1004
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 244012001
-  L5_2 = 1001
-  L6_2 = 175
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_1014(context, evt)
+	-- 将configid为 1001 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 1001, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 1004 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 1004, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 删除指定group： 244012001 ；指定config：1001；物件身上指定option：175；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 244012001, 1001, 175) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_1014 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 244012001
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_1015(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 244012001, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_1015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "IS_IN_LIMIT_TIME"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_1016(context, evt)
+	-- 将本组内变量名为 "IS_IN_LIMIT_TIME" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "IS_IN_LIMIT_TIME", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_1016 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_1017(context, evt)
+	-- 终止识别id为101的挑战，并判定成功
+		ScriptLib.StopChallenge(context, 101, 1)
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_1017 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_1018(context, evt)
+	-- 终止识别id为101的挑战，并判定成功
+		ScriptLib.StopChallenge(context, 101, 1)
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_1018 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 244012001
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_1019(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 244012001, 2)
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_1019 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetSceneUidList
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  L3_2 = 0
-  L4_2 = ipairs
-  L5_2 = L2_2
-  L4_2, L5_2, L6_2 = L4_2(L5_2)
-  for L7_2, L8_2 in L4_2, L5_2, L6_2 do
-    L9_2 = ScriptLib
-    L9_2 = L9_2.IsPlayerAllAvatarDie
-    L10_2 = A0_2
-    L11_2 = L8_2
-    L9_2 = L9_2(L10_2, L11_2)
-    if true ~= L9_2 then
-      L3_2 = -1
-      break
-    end
-  end
-  if L3_2 ~= 0 then
-    L4_2 = false
-    return L4_2
-  end
-  L4_2 = true
-  return L4_2
+
+-- 触发条件
+function condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1021(context, evt)
+	local uid_list = ScriptLib.GetSceneUidList(context)
+	
+	local ret = 0
+	
+	for i,v in ipairs(uid_list) do
+	        local is_all_dead = ScriptLib.IsPlayerAllAvatarDie(context, v)
+	        if true ~= is_all_dead then
+	                ret = -1
+	                break
+	        end
+	end
+	
+	if ret ~= 0 then
+	        return false
+	end
+	
+	return true
 end
-condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1021 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CauseDungeonFail
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cause_dungeonfail"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_DUNGEON_ALL_AVATAR_DIE_1021(context, evt)
+	-- 终止识别id为101的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 101, 0)
+	
+	-- 地城失败结算
+	if 0 ~= ScriptLib.CauseDungeonFail(context) then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cause_dungeonfail")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_DUNGEON_ALL_AVATAR_DIE_1021 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L2_2 = 4
-  L3_2 = ScriptLib
-  L3_2 = L3_2.IsChannellerSlabLoopDungeonConditionSelected
-  L4_2 = A0_2
-  L5_2 = 313
-  L3_2 = L3_2(L4_2, L5_2)
-  if L3_2 == true then
-    L2_2 = 5
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.IsChannellerSlabLoopDungeonConditionSelected
-  L4_2 = A0_2
-  L5_2 = 314
-  L3_2 = L3_2(L4_2, L5_2)
-  if L3_2 == true then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.AutoPoolMonsterTide
-    L4_2 = A0_2
-    L5_2 = 2
-    L6_2 = 244012001
-    L7_2 = {}
-    L8_2 = 30011
-    L7_2[1] = L8_2
-    L8_2 = 0
-    L9_2 = {}
-    L10_2 = {}
-    L11_2 = {}
-    L11_2.total_count = L2_2
-    L11_2.min_count = 4
-    L11_2.max_count = 4
-    L11_2.tag = 4
-    L11_2.fill_time = 0
-    L11_2.fill_count = 0
-    L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  else
-    L3_2 = ScriptLib
-    L3_2 = L3_2.AutoPoolMonsterTide
-    L4_2 = A0_2
-    L5_2 = 2
-    L6_2 = 244012001
-    L7_2 = {}
-    L8_2 = 30002
-    L7_2[1] = L8_2
-    L8_2 = 0
-    L9_2 = {}
-    L10_2 = {}
-    L11_2 = {}
-    L11_2.total_count = L2_2
-    L11_2.min_count = 4
-    L11_2.max_count = 4
-    L11_2.tag = 4
-    L11_2.fill_time = 0
-    L11_2.fill_count = 0
-    L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_1026(context, evt)
+	local wave2_count = 4
+	-- 判断玩家是否选择了刷怪因子
+	if ScriptLib.IsChannellerSlabLoopDungeonConditionSelected(context, 313) == true then
+	        wave2_count = 5
+	end
+	
+	
+	--  在Group244012001从怪物潮池{13002}中随机创建一个TideIndex为2的怪物潮，创建怪物总数为2，场上怪物最少2只，最多2只, pointTag 为 4  每0尝试填充一次，填充数量为0
+	
+	if ScriptLib.IsChannellerSlabLoopDungeonConditionSelected(context, 314) == true then 
+		ScriptLib.AutoPoolMonsterTide(context, 2, 244012001, {30011},0,{},{}, {total_count = wave2_count, min_count = 4, max_count = 4, tag = 4, fill_time= 0, fill_count = 0})
+	else
+		ScriptLib.AutoPoolMonsterTide(context, 2, 244012001, {30002},0,{},{}, {total_count = wave2_count, min_count = 4, max_count = 4, tag = 4, fill_time= 0, fill_count = 0})
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_1026 = L1_1

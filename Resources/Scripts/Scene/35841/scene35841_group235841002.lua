@@ -1,615 +1,192 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1
-L0_1 = {}
-L0_1.group_id = 235841002
-L1_1 = {}
-L1_1.play_round = 2
-L1_1.next_play_group = 0
-L1_1.worktop_id = 2049
-L1_1.minion_fever = 5
-L1_1.minion_tide_interval = 75
-L1_1.elite_interval = 30
-L1_1.elite_fever = 50
-L1_1.environment_suite = 4
-L1_1.gallery_id = 16004
-L1_1.elite_tide_interval = 75
-L1_1.elite_preview_reminder_time = 25
-L1_1.elite_preview_reminder = 358400001
-L1_1.buff_fever = 12
-L1_1.add_fever_upper_bound = 6
-L1_1.attenuation_interval = 8
-L1_1.add_fever_check_window = 8
-L1_1.monster_create_min_interval = 0
-L2_1 = {}
-L3_1 = 0
-L4_1 = 40
-L5_1 = 120
-L6_1 = 280
-L7_1 = 600
-L8_1 = 800
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L3_1 = {}
-L4_1 = -2
-L5_1 = -3
-L6_1 = -4
-L7_1 = -6
-L8_1 = -6
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L4_1 = {}
-L5_1 = {}
-L6_1 = 2003
-L7_1 = 2004
-L8_1 = 2005
-L9_1 = 2006
-L10_1 = 2007
-L11_1 = 2008
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L6_1 = {}
-L7_1 = 2023
-L8_1 = 2024
-L9_1 = 2025
-L10_1 = 2026
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L5_1 = {}
-L6_1 = {}
-L7_1 = 2001
-L6_1[1] = L7_1
-L7_1 = {}
-L8_1 = 2002
-L7_1[1] = L8_1
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L6_1 = {}
-L7_1 = {}
-L7_1.min = 1
-L7_1.max = 1
-L8_1 = {}
-L8_1.min = 1
-L8_1.max = 1
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L7_1 = {}
-L8_1 = {}
-L9_1 = 2031
-L8_1[1] = L9_1
-L9_1 = {}
-L10_1 = 2032
-L9_1[1] = L10_1
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L8_1 = {}
-L9_1 = {}
-L10_1 = 2009
-L11_1 = 2013
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L10_1 = {}
-L11_1 = 2010
-L12_1 = 2014
-L10_1[1] = L11_1
-L10_1[2] = L12_1
-L11_1 = {}
-L12_1 = 2011
-L13_1 = 2015
-L11_1[1] = L12_1
-L11_1[2] = L13_1
-L12_1 = {}
-L13_1 = 2012
-L14_1 = 2016
-L12_1[1] = L13_1
-L12_1[2] = L14_1
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L8_1[3] = L11_1
-L8_1[4] = L12_1
-L9_1 = {}
-L10_1 = {}
-L10_1.config_id = 2001
-L10_1.monster_id = 26040102
-L11_1 = {}
-L11_1.x = -2.492
-L11_1.y = 512.069
-L11_1.z = 1.317
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L10_1.disableWander = true
-L11_1 = {}
-L12_1 = 4118
-L11_1[1] = L12_1
-L10_1.affix = L11_1
-L11_1 = {}
-L11_1.config_id = 2002
-L11_1.monster_id = 26040103
-L12_1 = {}
-L12_1.x = -2.492
-L12_1.y = 512.069
-L12_1.z = 1.317
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L11_1.disableWander = true
-L12_1 = {}
-L13_1 = 4118
-L12_1[1] = L13_1
-L11_1.affix = L12_1
-L12_1 = {}
-L12_1.config_id = 2003
-L12_1.monster_id = 21020201
-L13_1 = {}
-L13_1.x = -0.517
-L13_1.y = 512.03
-L13_1.z = -5.266
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 0.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 1
-L12_1.disableWander = true
-L13_1 = {}
-L13_1.config_id = 2004
-L13_1.monster_id = 21020201
-L14_1 = {}
-L14_1.x = 2.353
-L14_1.y = 512.03
-L14_1.z = -5.398
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 0.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L13_1.disableWander = true
-L14_1 = {}
-L14_1.config_id = 2005
-L14_1.monster_id = 21020201
-L15_1 = {}
-L15_1.x = -3.499
-L15_1.y = 512.03
-L15_1.z = -5.327
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 0.0
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 1
-L14_1.disableWander = true
-L15_1 = {}
-L15_1.config_id = 2006
-L15_1.monster_id = 21020201
-L16_1 = {}
-L16_1.x = -0.521
-L16_1.y = 512.069
-L16_1.z = -7.519
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 0.0
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 1
-L15_1.disableWander = true
-L16_1 = {}
-L16_1.config_id = 2007
-L16_1.monster_id = 21020201
-L17_1 = {}
-L17_1.x = 2.331
-L17_1.y = 512.069
-L17_1.z = -7.536
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 0.0
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 1
-L16_1.disableWander = true
-L17_1 = {}
-L17_1.config_id = 2008
-L17_1.monster_id = 21020201
-L18_1 = {}
-L18_1.x = -3.544
-L18_1.y = 512.069
-L18_1.z = -7.563
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 0.0
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 1
-L17_1.disableWander = true
-L18_1 = {}
-L18_1.config_id = 2023
-L18_1.monster_id = 24010101
-L19_1 = {}
-L19_1.x = 2.209
-L19_1.y = 512.003
-L19_1.z = 5.716
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 180.0
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.level = 1
-L18_1.disableWander = true
-L18_1.pose_id = 100
-L19_1 = {}
-L19_1.config_id = 2024
-L19_1.monster_id = 24010101
-L20_1 = {}
-L20_1.x = -2.49
-L20_1.y = 512.0
-L20_1.z = 5.907
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 180.0
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.level = 1
-L19_1.disableWander = true
-L19_1.pose_id = 100
-L20_1 = {}
-L20_1.config_id = 2025
-L20_1.monster_id = 24010101
-L21_1 = {}
-L21_1.x = 2.287
-L21_1.y = 512.075
-L21_1.z = 8.079
-L20_1.pos = L21_1
-L21_1 = {}
-L21_1.x = 0.0
-L21_1.y = 180.0
-L21_1.z = 0.0
-L20_1.rot = L21_1
-L20_1.level = 1
-L20_1.disableWander = true
-L20_1.pose_id = 100
-L21_1 = {}
-L21_1.config_id = 2026
-L21_1.monster_id = 24010101
-L22_1 = {}
-L22_1.x = -2.347
-L22_1.y = 512.075
-L22_1.z = 8.363
-L21_1.pos = L22_1
-L22_1 = {}
-L22_1.x = 0.0
-L22_1.y = 180.0
-L22_1.z = 0.0
-L21_1.rot = L22_1
-L21_1.level = 1
-L21_1.disableWander = true
-L21_1.pose_id = 100
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L9_1[3] = L12_1
-L9_1[4] = L13_1
-L9_1[5] = L14_1
-L9_1[6] = L15_1
-L9_1[7] = L16_1
-L9_1[8] = L17_1
-L9_1[9] = L18_1
-L9_1[10] = L19_1
-L9_1[11] = L20_1
-L9_1[12] = L21_1
-monsters = L9_1
-L9_1 = {}
-npcs = L9_1
-L9_1 = {}
-L10_1 = {}
-L10_1.config_id = 2009
-L10_1.gadget_id = 70290355
-L11_1 = {}
-L11_1.x = 18.53
-L11_1.y = 511.23
-L11_1.z = -15.611
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.581
-L11_1.y = 216.444
-L11_1.z = 359.112
-L10_1.rot = L11_1
-L10_1.level = 1
-L11_1 = {}
-L11_1.config_id = 2010
-L11_1.gadget_id = 70290355
-L12_1 = {}
-L12_1.x = 25.18
-L12_1.y = 511.85
-L12_1.z = 2.37
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 180.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L12_1 = {}
-L12_1.config_id = 2011
-L12_1.gadget_id = 70290355
-L13_1 = {}
-L13_1.x = 18.93
-L13_1.y = 509.43
-L13_1.z = 13.73
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 356.46
-L13_1.y = 143.238
-L13_1.z = 359.343
-L12_1.rot = L13_1
-L12_1.level = 1
-L13_1 = {}
-L13_1.config_id = 2012
-L13_1.gadget_id = 70290355
-L14_1 = {}
-L14_1.x = 8.888
-L14_1.y = 510.58
-L14_1.z = 23.753
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 118.043
-L14_1.z = 350.156
-L13_1.rot = L14_1
-L13_1.level = 1
-L14_1 = {}
-L14_1.config_id = 2013
-L14_1.gadget_id = 70290354
-L15_1 = {}
-L15_1.x = -18.26
-L15_1.y = 510.6
-L15_1.z = 15.08
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 357.672
-L15_1.y = 42.863
-L15_1.z = 352.016
-L14_1.rot = L15_1
-L14_1.level = 1
-L15_1 = {}
-L15_1.config_id = 2014
-L15_1.gadget_id = 70290354
-L16_1 = {}
-L16_1.x = -24.719
-L16_1.y = 512.0
-L16_1.z = 3.657
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 359.193
-L16_1.y = 10.647
-L16_1.z = 353.547
-L15_1.rot = L16_1
-L15_1.level = 1
-L16_1 = {}
-L16_1.config_id = 2015
-L16_1.gadget_id = 70290354
-L17_1 = {}
-L17_1.x = -23.965
-L17_1.y = 510.55
-L17_1.z = -10.905
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 320.35
-L17_1.z = 351.552
-L16_1.rot = L17_1
-L16_1.level = 1
-L17_1 = {}
-L17_1.config_id = 2016
-L17_1.gadget_id = 70290354
-L18_1 = {}
-L18_1.x = -17.15
-L18_1.y = 511.79
-L18_1.z = -17.7
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 314.665
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 1
-L18_1 = {}
-L18_1.config_id = 2035
-L18_1.gadget_id = 70950009
-L19_1 = {}
-L19_1.x = -0.159
-L19_1.y = 512.03
-L19_1.z = -0.278
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 0.0
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.level = 1
-L19_1 = {}
-L19_1.config_id = 2049
-L19_1.gadget_id = 70360010
-L20_1 = {}
-L20_1.x = -0.269
-L20_1.y = 511.931
-L20_1.z = 0.067
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 0.0
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.level = 1
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L9_1[3] = L12_1
-L9_1[4] = L13_1
-L9_1[5] = L14_1
-L9_1[6] = L15_1
-L9_1[7] = L16_1
-L9_1[8] = L17_1
-L9_1[9] = L18_1
-L9_1[10] = L19_1
-gadgets = L9_1
-L9_1 = {}
-regions = L9_1
-L9_1 = {}
-triggers = L9_1
-L9_1 = {}
-L10_1 = {}
-L10_1.config_id = 2031
-L11_1 = {}
-L11_1.x = -7.064
-L11_1.y = 512.03
-L11_1.z = 0.08
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 90.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L11_1 = {}
-L11_1.config_id = 2032
-L12_1 = {}
-L12_1.x = 6.699
-L12_1.y = 512.03
-L12_1.z = 0.294
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 270.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-points = L9_1
-L9_1 = {}
-variables = L9_1
-L9_1 = {}
-L9_1.suite = 1
-L9_1.end_suite = 0
-L9_1.rand_suite = false
-init_config = L9_1
-L9_1 = {}
-L10_1 = {}
-L11_1 = {}
-L10_1.monsters = L11_1
-L11_1 = {}
-L12_1 = 2035
-L11_1[1] = L12_1
-L10_1.gadgets = L11_1
-L11_1 = {}
-L10_1.regions = L11_1
-L11_1 = {}
-L10_1.triggers = L11_1
-L10_1.rand_weight = 100
-L11_1 = {}
-L12_1 = {}
-L13_1 = 2003
-L14_1 = 2004
-L15_1 = 2005
-L16_1 = 2006
-L17_1 = 2007
-L18_1 = 2008
-L19_1 = 2023
-L20_1 = 2024
-L21_1 = 2025
-L22_1 = 2026
-L12_1[1] = L13_1
-L12_1[2] = L14_1
-L12_1[3] = L15_1
-L12_1[4] = L16_1
-L12_1[5] = L17_1
-L12_1[6] = L18_1
-L12_1[7] = L19_1
-L12_1[8] = L20_1
-L12_1[9] = L21_1
-L12_1[10] = L22_1
-L11_1.monsters = L12_1
-L12_1 = {}
-L11_1.gadgets = L12_1
-L12_1 = {}
-L11_1.regions = L12_1
-L12_1 = {}
-L11_1.triggers = L12_1
-L11_1.rand_weight = 100
-L12_1 = {}
-L13_1 = {}
-L14_1 = 2001
-L15_1 = 2002
-L13_1[1] = L14_1
-L13_1[2] = L15_1
-L12_1.monsters = L13_1
-L13_1 = {}
-L12_1.gadgets = L13_1
-L13_1 = {}
-L12_1.regions = L13_1
-L13_1 = {}
-L12_1.triggers = L13_1
-L12_1.rand_weight = 100
-L13_1 = {}
-L14_1 = {}
-L13_1.monsters = L14_1
-L14_1 = {}
-L15_1 = 2009
-L16_1 = 2010
-L17_1 = 2011
-L18_1 = 2012
-L19_1 = 2013
-L20_1 = 2014
-L21_1 = 2015
-L22_1 = 2016
-L14_1[1] = L15_1
-L14_1[2] = L16_1
-L14_1[3] = L17_1
-L14_1[4] = L18_1
-L14_1[5] = L19_1
-L14_1[6] = L20_1
-L14_1[7] = L21_1
-L14_1[8] = L22_1
-L13_1.gadgets = L14_1
-L14_1 = {}
-L13_1.regions = L14_1
-L14_1 = {}
-L13_1.triggers = L14_1
-L13_1.rand_weight = 100
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L9_1[3] = L12_1
-L9_1[4] = L13_1
-suites = L9_1
-L9_1 = require
-L10_1 = "V2_6/CrystalLink"
-L9_1(L10_1)
-L9_1 = require
-L10_1 = "MonsterQuickDeath"
-L9_1(L10_1)
+-- 基础信息
+local base_info = {
+	group_id = 235841002
+}
+
+-- Trigger变量
+local defs = {
+	play_round = 2,
+	next_play_group = 0,
+	worktop_id = 2049,
+	minion_fever = 5,
+	minion_tide_interval = 75,
+	elite_interval = 30,
+	elite_fever = 50,
+	environment_suite = 4,
+	gallery_id = 16004,
+	elite_tide_interval = 75,
+	elite_preview_reminder_time = 25,
+	elite_preview_reminder = 358400001,
+	buff_fever = 12,
+	add_fever_upper_bound = 6,
+	attenuation_interval = 8,
+	add_fever_check_window = 8,
+	monster_create_min_interval = 0
+}
+
+-- DEFS_MISCS
+--fever进度升级节点
+local fever_progress_table = {
+    0,40,120,280,600,800
+}
+--各等级fever的下降速率
+local fever_attenuation = {
+    -2,-3,-4,-6,-6
+}
+
+--怪物潮定义
+local monster_tide = {
+    {2003,2004,2005,2006,2007,2008},
+    {2023,2024,2025,2026},
+}
+--
+--精英怪定义
+local elite = {
+    {2001},
+    {2002}
+}
+--怪物潮最大最小数量定义
+local monster_tide_count = 
+{
+    {min = 1,max = 1},
+    {min = 1,max = 1}
+}
+--精英怪随机创生点列表，请按照每波精英怪最大可能数量填写
+local elite_born_points = 
+{
+    {2031},
+    {2032},
+}
+
+local ReactionGems = 
+{
+    {2009,2013},
+    {2010,2014},
+    {2011,2015},
+    {2012,2016},
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 2001, monster_id = 26040102, pos = { x = -2.492, y = 512.069, z = 1.317 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 4118 } },
+	{ config_id = 2002, monster_id = 26040103, pos = { x = -2.492, y = 512.069, z = 1.317 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 4118 } },
+	{ config_id = 2003, monster_id = 21020201, pos = { x = -0.517, y = 512.030, z = -5.266 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true },
+	{ config_id = 2004, monster_id = 21020201, pos = { x = 2.353, y = 512.030, z = -5.398 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true },
+	{ config_id = 2005, monster_id = 21020201, pos = { x = -3.499, y = 512.030, z = -5.327 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true },
+	{ config_id = 2006, monster_id = 21020201, pos = { x = -0.521, y = 512.069, z = -7.519 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true },
+	{ config_id = 2007, monster_id = 21020201, pos = { x = 2.331, y = 512.069, z = -7.536 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true },
+	{ config_id = 2008, monster_id = 21020201, pos = { x = -3.544, y = 512.069, z = -7.563 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true },
+	{ config_id = 2023, monster_id = 24010101, pos = { x = 2.209, y = 512.003, z = 5.716 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 100 },
+	{ config_id = 2024, monster_id = 24010101, pos = { x = -2.490, y = 512.000, z = 5.907 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 100 },
+	{ config_id = 2025, monster_id = 24010101, pos = { x = 2.287, y = 512.075, z = 8.079 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 100 },
+	{ config_id = 2026, monster_id = 24010101, pos = { x = -2.347, y = 512.075, z = 8.363 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 100 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 2009, gadget_id = 70290355, pos = { x = 18.530, y = 511.230, z = -15.611 }, rot = { x = 0.581, y = 216.444, z = 359.112 }, level = 1 },
+	{ config_id = 2010, gadget_id = 70290355, pos = { x = 25.180, y = 511.850, z = 2.370 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1 },
+	{ config_id = 2011, gadget_id = 70290355, pos = { x = 18.930, y = 509.430, z = 13.730 }, rot = { x = 356.460, y = 143.238, z = 359.343 }, level = 1 },
+	{ config_id = 2012, gadget_id = 70290355, pos = { x = 8.888, y = 510.580, z = 23.753 }, rot = { x = 0.000, y = 118.043, z = 350.156 }, level = 1 },
+	{ config_id = 2013, gadget_id = 70290354, pos = { x = -18.260, y = 510.600, z = 15.080 }, rot = { x = 357.672, y = 42.863, z = 352.016 }, level = 1 },
+	{ config_id = 2014, gadget_id = 70290354, pos = { x = -24.719, y = 512.000, z = 3.657 }, rot = { x = 359.193, y = 10.647, z = 353.547 }, level = 1 },
+	{ config_id = 2015, gadget_id = 70290354, pos = { x = -23.965, y = 510.550, z = -10.905 }, rot = { x = 0.000, y = 320.350, z = 351.552 }, level = 1 },
+	{ config_id = 2016, gadget_id = 70290354, pos = { x = -17.150, y = 511.790, z = -17.700 }, rot = { x = 0.000, y = 314.665, z = 0.000 }, level = 1 },
+	{ config_id = 2035, gadget_id = 70950009, pos = { x = -0.159, y = 512.030, z = -0.278 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2049, gadget_id = 70360010, pos = { x = -0.269, y = 511.931, z = 0.067 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 点位
+points = {
+	{ config_id = 2031, pos = { x = -7.064, y = 512.030, z = 0.080 }, rot = { x = 0.000, y = 90.000, z = 0.000 } },
+	{ config_id = 2032, pos = { x = 6.699, y = 512.030, z = 0.294 }, rot = { x = 0.000, y = 270.000, z = 0.000 } }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 2035 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = 放小怪潮的suite,
+		monsters = { 2003, 2004, 2005, 2006, 2007, 2008, 2023, 2024, 2025, 2026 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = 放精英怪的suite,
+		monsters = { 2001, 2002 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = 环境物件的suite,
+		monsters = { },
+		gadgets = { 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_6/CrystalLink"
+require "MonsterQuickDeath"

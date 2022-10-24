@@ -1,2157 +1,582 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1, L30_1, L31_1, L32_1, L33_1, L34_1
-L0_1 = {}
-L0_1.group_id = 240008002
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 2005
-L2_1.monster_id = 21010201
-L3_1 = {}
-L3_1.x = 340.097
-L3_1.y = -19.2
-L3_1.z = 343.315
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 288.704
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.pose_id = 9012
-L3_1 = {}
-L3_1.config_id = 2006
-L3_1.monster_id = 20010801
-L4_1 = {}
-L4_1.x = 347.863
-L4_1.y = -19.2
-L4_1.z = 346.687
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 2007
-L4_1.monster_id = 20010801
-L5_1 = {}
-L5_1.x = 338.741
-L5_1.y = -19.2
-L5_1.z = 346.894
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 2008
-L5_1.monster_id = 20010801
-L6_1 = {}
-L6_1.x = 343.614
-L6_1.y = -19.2
-L6_1.z = 349.061
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 2009
-L6_1.monster_id = 20010901
-L7_1 = {}
-L7_1.x = 343.558
-L7_1.y = -19.2
-L7_1.z = 345.909
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 2010
-L7_1.monster_id = 21020101
-L8_1 = {}
-L8_1.x = 351.861
-L8_1.y = -19.2
-L8_1.z = 343.368
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 83.252
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.pose_id = 401
-L8_1 = {}
-L8_1.config_id = 2011
-L8_1.monster_id = 21010201
-L9_1 = {}
-L9_1.x = 331.885
-L9_1.y = -19.2
-L9_1.z = 338.709
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 173.459
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.pose_id = 9016
-L9_1 = {}
-L9_1.config_id = 2012
-L9_1.monster_id = 21011002
-L10_1 = {}
-L10_1.x = 333.627
-L10_1.y = -19.2
-L10_1.z = 346.109
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 31.069
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.pose_id = 9013
-L10_1 = {}
-L10_1.config_id = 2013
-L10_1.monster_id = 21011002
-L11_1 = {}
-L11_1.x = 335.127
-L11_1.y = -19.2
-L11_1.z = 337.465
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 255.749
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L10_1.pose_id = 9003
-L11_1 = {}
-L11_1.config_id = 2014
-L11_1.monster_id = 20011201
-L12_1 = {}
-L12_1.x = 346.271
-L12_1.y = -19.2
-L12_1.z = 340.915
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 356.466
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L12_1 = {}
-L12_1.config_id = 2015
-L12_1.monster_id = 20011301
-L13_1 = {}
-L13_1.x = 338.643
-L13_1.y = -19.2
-L13_1.z = 343.277
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 2.614
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 1
-L13_1 = {}
-L13_1.config_id = 2016
-L13_1.monster_id = 20011301
-L14_1 = {}
-L14_1.x = 348.49
-L14_1.y = -19.2
-L14_1.z = 343.369
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 0.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L14_1 = {}
-L14_1.config_id = 2027
-L14_1.monster_id = 20011201
-L15_1 = {}
-L15_1.x = 340.136
-L15_1.y = -19.2
-L15_1.z = 340.834
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 0.0
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 2001
-L2_1.gadget_id = 70360002
-L3_1 = {}
-L3_1.x = 343.298
-L3_1.y = -19.277
-L3_1.z = 343.659
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 2002
-L3_1.gadget_id = 70350003
-L4_1 = {}
-L4_1.x = 353.288
-L4_1.y = -18.351
-L4_1.z = 322.634
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 2003
-L4_1.gadget_id = 70350003
-L5_1 = {}
-L5_1.x = 343.355
-L5_1.y = -18.368
-L5_1.z = 322.652
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 2004
-L5_1.gadget_id = 70350003
-L6_1 = {}
-L6_1.x = 333.379
-L6_1.y = -18.356
-L6_1.z = 322.669
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 2017
-L6_1.gadget_id = 70320002
-L7_1 = {}
-L7_1.x = 353.448
-L7_1.y = -19.221
-L7_1.z = 338.575
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 272.309
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = GadgetState
-L7_1 = L7_1.GearStart
-L6_1.state = L7_1
-L7_1 = {}
-L7_1.config_id = 2023
-L7_1.gadget_id = 70310001
-L8_1 = {}
-L8_1.x = 349.308
-L8_1.y = -19.2
-L8_1.z = 343.385
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 2024
-L8_1.gadget_id = 70310001
-L9_1 = {}
-L9_1.x = 337.739
-L9_1.y = -19.2
-L9_1.z = 343.465
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = GadgetState
-L9_1 = L9_1.GearStart
-L8_1.state = L9_1
-L9_1 = {}
-L9_1.config_id = 2025
-L9_1.gadget_id = 70220025
-L10_1 = {}
-L10_1.x = 351.566
-L10_1.y = -19.271
-L10_1.z = 343.373
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 270.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L10_1 = {}
-L10_1.config_id = 2026
-L10_1.gadget_id = 70320002
-L11_1 = {}
-L11_1.x = 338.182
-L11_1.y = -19.2
-L11_1.z = 348.857
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 266.553
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L11_1 = GadgetState
-L11_1 = L11_1.GearStart
-L10_1.state = L11_1
-L11_1 = {}
-L11_1.config_id = 2028
-L11_1.gadget_id = 70320002
-L12_1 = {}
-L12_1.x = 348.259
-L12_1.y = -19.2
-L12_1.z = 348.675
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 91.966
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L12_1 = GadgetState
-L12_1 = L12_1.GearStart
-L11_1.state = L12_1
-L12_1 = {}
-L12_1.config_id = 2033
-L12_1.gadget_id = 70350003
-L13_1 = {}
-L13_1.x = 353.298
-L13_1.y = -18.828
-L13_1.z = 368.544
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 0.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 1
-L13_1 = {}
-L13_1.config_id = 2034
-L13_1.gadget_id = 70350003
-L14_1 = {}
-L14_1.x = 343.301
-L14_1.y = -18.812
-L14_1.z = 368.496
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 0.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L14_1 = {}
-L14_1.config_id = 2035
-L14_1.gadget_id = 70350003
-L15_1 = {}
-L15_1.x = 333.319
-L15_1.y = -18.835
-L15_1.z = 368.384
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 0.0
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 1
-L15_1 = {}
-L15_1.config_id = 2036
-L15_1.gadget_id = 70320002
-L16_1 = {}
-L16_1.x = 332.372
-L16_1.y = -19.221
-L16_1.z = 338.646
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 88.079
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 1
-L16_1 = GadgetState
-L16_1 = L16_1.GearStart
-L15_1.state = L16_1
-L16_1 = {}
-L16_1.config_id = 2037
-L16_1.gadget_id = 70211011
-L17_1 = {}
-L17_1.x = 359.075
-L17_1.y = -14.284
-L17_1.z = 335.161
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 0.0
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 6
-L16_1.drop_tag = "\230\136\152\230\150\151\228\184\173\231\186\167\232\146\153\229\190\183"
-L16_1.isOneoff = true
-L16_1.persistent = true
-L17_1 = {}
-L17_1.config_id = 2038
-L17_1.gadget_id = 70220013
-L18_1 = {}
-L18_1.x = 366.448
-L18_1.y = -14.283
-L18_1.z = 336.123
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 0.0
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 1
-L18_1 = {}
-L18_1.config_id = 2039
-L18_1.gadget_id = 70220013
-L19_1 = {}
-L19_1.x = 367.988
-L19_1.y = -14.284
-L19_1.z = 334.047
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 307.522
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.level = 1
-L19_1 = {}
-L19_1.config_id = 2040
-L19_1.gadget_id = 70220014
-L20_1 = {}
-L20_1.x = 365.228
-L20_1.y = -14.284
-L20_1.z = 334.498
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 0.0
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.level = 1
-L20_1 = {}
-L20_1.config_id = 2041
-L20_1.gadget_id = 70220014
-L21_1 = {}
-L21_1.x = 369.335
-L21_1.y = -14.283
-L21_1.z = 336.077
-L20_1.pos = L21_1
-L21_1 = {}
-L21_1.x = 0.0
-L21_1.y = 0.0
-L21_1.z = 0.0
-L20_1.rot = L21_1
-L20_1.level = 1
-L21_1 = {}
-L21_1.config_id = 2042
-L21_1.gadget_id = 70220014
-L22_1 = {}
-L22_1.x = 360.472
-L22_1.y = -16.894
-L22_1.z = 343.877
-L21_1.pos = L22_1
-L22_1 = {}
-L22_1.x = 0.0
-L22_1.y = 0.0
-L22_1.z = 0.0
-L21_1.rot = L22_1
-L21_1.level = 1
-L22_1 = {}
-L22_1.config_id = 2043
-L22_1.gadget_id = 70220014
-L23_1 = {}
-L23_1.x = 359.797
-L23_1.y = -16.894
-L23_1.z = 345.121
-L22_1.pos = L23_1
-L23_1 = {}
-L23_1.x = 0.0
-L23_1.y = 0.0
-L23_1.z = 0.0
-L22_1.rot = L23_1
-L22_1.level = 1
-L23_1 = {}
-L23_1.config_id = 2044
-L23_1.gadget_id = 70220013
-L24_1 = {}
-L24_1.x = 360.028
-L24_1.y = -16.893
-L24_1.z = 347.359
-L23_1.pos = L24_1
-L24_1 = {}
-L24_1.x = 0.0
-L24_1.y = 59.385
-L24_1.z = 0.0
-L23_1.rot = L24_1
-L23_1.level = 1
-L24_1 = {}
-L24_1.config_id = 2045
-L24_1.gadget_id = 70220025
-L25_1 = {}
-L25_1.x = 360.049
-L25_1.y = -16.878
-L25_1.z = 344.81
-L24_1.pos = L25_1
-L25_1 = {}
-L25_1.x = 270.0
-L25_1.y = 0.0
-L25_1.z = 0.0
-L24_1.rot = L25_1
-L24_1.level = 1
-L25_1 = {}
-L25_1.config_id = 2046
-L25_1.gadget_id = 70310002
-L26_1 = {}
-L26_1.x = 348.271
-L26_1.y = -8.828
-L26_1.z = 324.309
-L25_1.pos = L26_1
-L26_1 = {}
-L26_1.x = 0.0
-L26_1.y = 0.0
-L26_1.z = 0.0
-L25_1.rot = L26_1
-L25_1.level = 1
-L26_1 = {}
-L26_1.config_id = 2047
-L26_1.gadget_id = 70310002
-L27_1 = {}
-L27_1.x = 338.379
-L27_1.y = -8.828
-L27_1.z = 324.309
-L26_1.pos = L27_1
-L27_1 = {}
-L27_1.x = 0.0
-L27_1.y = 0.0
-L27_1.z = 0.0
-L26_1.rot = L27_1
-L26_1.level = 1
-L27_1 = GadgetState
-L27_1 = L27_1.GearStart
-L26_1.state = L27_1
-L27_1 = {}
-L27_1.config_id = 2049
-L27_1.gadget_id = 70220013
-L28_1 = {}
-L28_1.x = 330.767
-L28_1.y = -19.438
-L28_1.z = 335.253
-L27_1.pos = L28_1
-L28_1 = {}
-L28_1.x = 0.0
-L28_1.y = 307.695
-L28_1.z = 0.0
-L27_1.rot = L28_1
-L27_1.level = 1
-L28_1 = {}
-L28_1.config_id = 2050
-L28_1.gadget_id = 70220013
-L29_1 = {}
-L29_1.x = 332.636
-L29_1.y = -19.292
-L29_1.z = 333.246
-L28_1.pos = L29_1
-L29_1 = {}
-L29_1.x = 0.0
-L29_1.y = 342.013
-L29_1.z = 0.0
-L28_1.rot = L29_1
-L28_1.level = 1
-L29_1 = {}
-L29_1.config_id = 2051
-L29_1.gadget_id = 70220014
-L30_1 = {}
-L30_1.x = 332.563
-L30_1.y = -19.252
-L30_1.z = 336.286
-L29_1.pos = L30_1
-L30_1 = {}
-L30_1.x = 0.0
-L30_1.y = 0.0
-L30_1.z = 0.0
-L29_1.rot = L30_1
-L29_1.level = 1
-L30_1 = {}
-L30_1.config_id = 2052
-L30_1.gadget_id = 70220014
-L31_1 = {}
-L31_1.x = 333.849
-L31_1.y = -19.25
-L31_1.z = 335.145
-L30_1.pos = L31_1
-L31_1 = {}
-L31_1.x = 0.0
-L31_1.y = 0.0
-L31_1.z = 0.0
-L30_1.rot = L31_1
-L30_1.level = 1
-L31_1 = {}
-L31_1.config_id = 2053
-L31_1.gadget_id = 70220015
-L32_1 = {}
-L32_1.x = 329.808
-L32_1.y = -18.582
-L32_1.z = 336.536
-L31_1.pos = L32_1
-L32_1 = {}
-L32_1.x = 0.0
-L32_1.y = 0.0
-L32_1.z = 0.0
-L31_1.rot = L32_1
-L31_1.level = 1
-L32_1 = {}
-L32_1.config_id = 2054
-L32_1.gadget_id = 70220015
-L33_1 = {}
-L33_1.x = 330.486
-L33_1.y = -18.643
-L33_1.z = 332.726
-L32_1.pos = L33_1
-L33_1 = {}
-L33_1.x = 0.0
-L33_1.y = 0.0
-L33_1.z = 0.0
-L32_1.rot = L33_1
-L32_1.level = 1
-L33_1 = {}
-L33_1.config_id = 2058
-L33_1.gadget_id = 70211011
-L34_1 = {}
-L34_1.x = 343.588
-L34_1.y = -19.2
-L34_1.z = 331.753
-L33_1.pos = L34_1
-L34_1 = {}
-L34_1.x = 0.0
-L34_1.y = 0.0
-L34_1.z = 0.0
-L33_1.rot = L34_1
-L33_1.level = 6
-L33_1.drop_tag = "\230\136\152\230\150\151\228\184\173\231\186\167\232\146\153\229\190\183"
-L33_1.isOneoff = true
-L33_1.persistent = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-L1_1[14] = L15_1
-L1_1[15] = L16_1
-L1_1[16] = L17_1
-L1_1[17] = L18_1
-L1_1[18] = L19_1
-L1_1[19] = L20_1
-L1_1[20] = L21_1
-L1_1[21] = L22_1
-L1_1[22] = L23_1
-L1_1[23] = L24_1
-L1_1[24] = L25_1
-L1_1[25] = L26_1
-L1_1[26] = L27_1
-L1_1[27] = L28_1
-L1_1[28] = L29_1
-L1_1[29] = L30_1
-L1_1[30] = L31_1
-L1_1[31] = L32_1
-L1_1[32] = L33_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 2029
-L3_1 = RegionShape
-L3_1 = L3_1.CUBIC
-L2_1.shape = L3_1
-L3_1 = {}
-L3_1.x = 30.0
-L3_1.y = 8.0
-L3_1.z = 3.0
-L2_1.size = L3_1
-L3_1 = {}
-L3_1.x = 341.203
-L3_1.y = -18.968
-L3_1.z = 360.204
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.config_id = 2030
-L4_1 = RegionShape
-L4_1 = L4_1.CUBIC
-L3_1.shape = L4_1
-L4_1 = {}
-L4_1.x = 10.0
-L4_1.y = 5.0
-L4_1.z = 3.0
-L3_1.size = L4_1
-L4_1 = {}
-L4_1.x = 353.233
-L4_1.y = -23.687
-L4_1.z = 384.393
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.config_id = 2031
-L5_1 = RegionShape
-L5_1 = L5_1.CUBIC
-L4_1.shape = L5_1
-L5_1 = {}
-L5_1.x = 10.0
-L5_1.y = 5.0
-L5_1.z = 3.0
-L4_1.size = L5_1
-L5_1 = {}
-L5_1.x = 343.078
-L5_1.y = -23.688
-L5_1.z = 384.374
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.config_id = 2032
-L6_1 = RegionShape
-L6_1 = L6_1.CUBIC
-L5_1.shape = L6_1
-L6_1 = {}
-L6_1.x = 10.0
-L6_1.y = 5.0
-L6_1.z = 3.0
-L5_1.size = L6_1
-L6_1 = {}
-L6_1.x = 332.942
-L6_1.y = -23.801
-L6_1.z = 384.389
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.config_id = 2055
-L7_1 = RegionShape
-L7_1 = L7_1.CUBIC
-L6_1.shape = L7_1
-L7_1 = {}
-L7_1.x = 30.0
-L7_1.y = 8.0
-L7_1.z = 3.0
-L6_1.size = L7_1
-L7_1 = {}
-L7_1.x = 344.651
-L7_1.y = -18.837
-L7_1.z = 358.242
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.config_id = 2056
-L8_1 = RegionShape
-L8_1 = L8_1.CUBIC
-L7_1.shape = L8_1
-L8_1 = {}
-L8_1.x = 30.0
-L8_1.y = 8.0
-L8_1.z = 3.0
-L7_1.size = L8_1
-L8_1 = {}
-L8_1.x = 344.329
-L8_1.y = -19.088
-L8_1.z = 358.196
-L7_1.pos = L8_1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1002019
-L3_1 = "name"
-L4_1 = "ANY_MONSTER_DIE_2019"
-L2_1[L3_1] = L4_1
-L3_1 = "event"
-L4_1 = "EventType"
-L4_1 = _ENV[L4_1]
-L5_1 = "EVENT_ANY_MONSTER_DIE"
-L4_1 = L4_1[L5_1]
-L2_1[L3_1] = L4_1
-L3_1 = "source"
-L4_1 = ""
-L2_1[L3_1] = L4_1
-L3_1 = "condition"
-L4_1 = "condition_EVENT_ANY_MONSTER_DIE_2019"
-L2_1[L3_1] = L4_1
-L3_1 = "action"
-L4_1 = "action_EVENT_ANY_MONSTER_DIE_2019"
-L2_1[L3_1] = L4_1
-L3_1 = {}
-L4_1 = 1002020
-L3_1.config_id = L4_1
-L4_1 = "name"
-L5_1 = "SELECT_OPTION_2020"
-L3_1[L4_1] = L5_1
-L4_1 = "event"
-L5_1 = "EventType"
-L5_1 = _ENV[L5_1]
-L6_1 = "EVENT_SELECT_OPTION"
-L5_1 = L5_1[L6_1]
-L3_1[L4_1] = L5_1
-L4_1 = "source"
-L5_1 = ""
-L3_1[L4_1] = L5_1
-L4_1 = "condition"
-L5_1 = "condition_EVENT_SELECT_OPTION_2020"
-L3_1[L4_1] = L5_1
-L4_1 = "action"
-L5_1 = "action_EVENT_SELECT_OPTION_2020"
-L3_1[L4_1] = L5_1
-L4_1 = {}
-L5_1 = 1002021
-L4_1.config_id = L5_1
-L5_1 = "name"
-L6_1 = "SELECT_OPTION_2021"
-L4_1[L5_1] = L6_1
-L5_1 = "event"
-L6_1 = "EventType"
-L6_1 = _ENV[L6_1]
-L7_1 = "EVENT_SELECT_OPTION"
-L6_1 = L6_1[L7_1]
-L4_1[L5_1] = L6_1
-L5_1 = "source"
-L6_1 = ""
-L4_1[L5_1] = L6_1
-L5_1 = "condition"
-L6_1 = "condition_EVENT_SELECT_OPTION_2021"
-L4_1[L5_1] = L6_1
-L5_1 = "action"
-L6_1 = "action_EVENT_SELECT_OPTION_2021"
-L4_1[L5_1] = L6_1
-L5_1 = {}
-L6_1 = 1002022
-L5_1.config_id = L6_1
-L6_1 = "name"
-L7_1 = "SELECT_OPTION_2022"
-L5_1[L6_1] = L7_1
-L6_1 = "event"
-L7_1 = "EventType"
-L7_1 = _ENV[L7_1]
-L8_1 = "EVENT_SELECT_OPTION"
-L7_1 = L7_1[L8_1]
-L5_1[L6_1] = L7_1
-L6_1 = "source"
-L7_1 = ""
-L5_1[L6_1] = L7_1
-L6_1 = "condition"
-L7_1 = "condition_EVENT_SELECT_OPTION_2022"
-L5_1[L6_1] = L7_1
-L6_1 = "action"
-L7_1 = "action_EVENT_SELECT_OPTION_2022"
-L5_1[L6_1] = L7_1
-L6_1 = {}
-L7_1 = 1002029
-L6_1.config_id = L7_1
-L7_1 = "name"
-L8_1 = "ENTER_REGION_2029"
-L6_1[L7_1] = L8_1
-L7_1 = "event"
-L8_1 = "EventType"
-L8_1 = _ENV[L8_1]
-L9_1 = "EVENT_ENTER_REGION"
-L8_1 = L8_1[L9_1]
-L6_1[L7_1] = L8_1
-L7_1 = "source"
-L8_1 = ""
-L6_1[L7_1] = L8_1
-L7_1 = "condition"
-L8_1 = "condition_EVENT_ENTER_REGION_2029"
-L6_1[L7_1] = L8_1
-L7_1 = "action"
-L8_1 = "action_EVENT_ENTER_REGION_2029"
-L6_1[L7_1] = L8_1
-L7_1 = {}
-L8_1 = 1002030
-L7_1.config_id = L8_1
-L8_1 = "name"
-L9_1 = "ENTER_REGION_2030"
-L7_1[L8_1] = L9_1
-L8_1 = "event"
-L9_1 = "EventType"
-L9_1 = _ENV[L9_1]
-L10_1 = "EVENT_ENTER_REGION"
-L9_1 = L9_1[L10_1]
-L7_1[L8_1] = L9_1
-L8_1 = "source"
-L9_1 = ""
-L7_1[L8_1] = L9_1
-L8_1 = "condition"
-L9_1 = "condition_EVENT_ENTER_REGION_2030"
-L7_1[L8_1] = L9_1
-L8_1 = "action"
-L9_1 = "action_EVENT_ENTER_REGION_2030"
-L7_1[L8_1] = L9_1
-L8_1 = {}
-L9_1 = 1002031
-L8_1.config_id = L9_1
-L9_1 = "name"
-L10_1 = "ENTER_REGION_2031"
-L8_1[L9_1] = L10_1
-L9_1 = "event"
-L10_1 = "EventType"
-L10_1 = _ENV[L10_1]
-L11_1 = "EVENT_ENTER_REGION"
-L10_1 = L10_1[L11_1]
-L8_1[L9_1] = L10_1
-L9_1 = "source"
-L10_1 = ""
-L8_1[L9_1] = L10_1
-L9_1 = "condition"
-L10_1 = "condition_EVENT_ENTER_REGION_2031"
-L8_1[L9_1] = L10_1
-L9_1 = "action"
-L10_1 = "action_EVENT_ENTER_REGION_2031"
-L8_1[L9_1] = L10_1
-L9_1 = {}
-L10_1 = 1002032
-L9_1.config_id = L10_1
-L10_1 = "name"
-L11_1 = "ENTER_REGION_2032"
-L9_1[L10_1] = L11_1
-L10_1 = "event"
-L11_1 = "EventType"
-L11_1 = _ENV[L11_1]
-L12_1 = "EVENT_ENTER_REGION"
-L11_1 = L11_1[L12_1]
-L9_1[L10_1] = L11_1
-L10_1 = "source"
-L11_1 = ""
-L9_1[L10_1] = L11_1
-L10_1 = "condition"
-L11_1 = "condition_EVENT_ENTER_REGION_2032"
-L9_1[L10_1] = L11_1
-L10_1 = "action"
-L11_1 = "action_EVENT_ENTER_REGION_2032"
-L9_1[L10_1] = L11_1
-L10_1 = {}
-L11_1 = 1002055
-L10_1.config_id = L11_1
-L11_1 = "name"
-L12_1 = "ENTER_REGION_2055"
-L10_1[L11_1] = L12_1
-L11_1 = "event"
-L12_1 = "EventType"
-L12_1 = _ENV[L12_1]
-L13_1 = "EVENT_ENTER_REGION"
-L12_1 = L12_1[L13_1]
-L10_1[L11_1] = L12_1
-L11_1 = "source"
-L12_1 = ""
-L10_1[L11_1] = L12_1
-L11_1 = "condition"
-L12_1 = "condition_EVENT_ENTER_REGION_2055"
-L10_1[L11_1] = L12_1
-L11_1 = "action"
-L12_1 = "action_EVENT_ENTER_REGION_2055"
-L10_1[L11_1] = L12_1
-L11_1 = {}
-L12_1 = 1002056
-L11_1.config_id = L12_1
-L12_1 = "name"
-L13_1 = "ENTER_REGION_2056"
-L11_1[L12_1] = L13_1
-L12_1 = "event"
-L13_1 = "EventType"
-L13_1 = _ENV[L13_1]
-L14_1 = "EVENT_ENTER_REGION"
-L13_1 = L13_1[L14_1]
-L11_1[L12_1] = L13_1
-L12_1 = "source"
-L13_1 = ""
-L11_1[L12_1] = L13_1
-L12_1 = "condition"
-L13_1 = "condition_EVENT_ENTER_REGION_2056"
-L11_1[L12_1] = L13_1
-L12_1 = "action"
-L13_1 = "action_EVENT_ENTER_REGION_2056"
-L11_1[L12_1] = L13_1
-L12_1 = {}
-L13_1 = 1002057
-L12_1.config_id = L13_1
-L13_1 = "name"
-L14_1 = "GADGET_STATE_CHANGE_2057"
-L12_1[L13_1] = L14_1
-L13_1 = "event"
-L14_1 = "EventType"
-L14_1 = _ENV[L14_1]
-L15_1 = "EVENT_GADGET_STATE_CHANGE"
-L14_1 = L14_1[L15_1]
-L12_1[L13_1] = L14_1
-L13_1 = "source"
-L14_1 = ""
-L12_1[L13_1] = L14_1
-L13_1 = "condition"
-L14_1 = "condition_EVENT_GADGET_STATE_CHANGE_2057"
-L12_1[L13_1] = L14_1
-L13_1 = "action"
-L14_1 = "action_EVENT_GADGET_STATE_CHANGE_2057"
-L12_1[L13_1] = L14_1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-triggers = L1_1
-L1_1 = "variables"
-L2_1 = {}
-_ENV[L1_1] = L2_1
-L1_1 = "init_config"
-L2_1 = {}
-L3_1 = "suite"
-L2_1[L3_1] = 1
-L3_1 = "end_suite"
-L4_1 = 0
-L2_1[L3_1] = L4_1
-L3_1 = "rand_suite"
-L4_1 = false
-L2_1[L3_1] = L4_1
-_ENV[L1_1] = L2_1
-L1_1 = "suites"
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 2001
-L6_1 = 2002
-L7_1 = 2003
-L8_1 = 2004
-L9_1 = 2033
-L10_1 = 2034
-L11_1 = 2035
-L12_1 = 2037
-L13_1 = 2038
-L14_1 = 2039
-L15_1 = 2040
-L16_1 = 2041
-L17_1 = 2042
-L18_1 = 2043
-L19_1 = 2044
-L20_1 = 2045
-L21_1 = 2046
-L22_1 = 2047
-L23_1 = 2049
-L24_1 = 2050
-L25_1 = 2051
-L26_1 = 2052
-L27_1 = 2053
-L28_1 = 2054
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L4_1[11] = L15_1
-L4_1[12] = L16_1
-L4_1[13] = L17_1
-L4_1[14] = L18_1
-L4_1[15] = L19_1
-L4_1[16] = L20_1
-L4_1[17] = L21_1
-L4_1[18] = L22_1
-L4_1[19] = L23_1
-L4_1[20] = L24_1
-L4_1[21] = L25_1
-L4_1[22] = L26_1
-L4_1[23] = L27_1
-L4_1[24] = L28_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 2029
-L6_1 = 2030
-L7_1 = 2031
-L8_1 = 2032
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ANY_MONSTER_DIE_2019"
-L6_1 = "SELECT_OPTION_2020"
-L7_1 = "SELECT_OPTION_2021"
-L8_1 = "SELECT_OPTION_2022"
-L9_1 = "ENTER_REGION_2029"
-L10_1 = "ENTER_REGION_2030"
-L11_1 = "ENTER_REGION_2031"
-L12_1 = "ENTER_REGION_2032"
-L13_1 = "GADGET_STATE_CHANGE_2057"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L3_1.triggers = L4_1
-L4_1 = "rand_weight"
-L5_1 = 100
-L3_1[L4_1] = L5_1
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L6_1 = 2055
-L5_1[1] = L6_1
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "ENTER_REGION_2055"
-L5_1[1] = L6_1
-L4_1.triggers = L5_1
-L5_1 = "rand_weight"
-L6_1 = 100
-L4_1[L5_1] = L6_1
-L5_1 = {}
-L6_1 = {}
-L7_1 = 2005
-L8_1 = 2010
-L9_1 = 2011
-L10_1 = 2012
-L11_1 = 2013
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 2023
-L8_1 = 2024
-L9_1 = 2025
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L6_1 = "rand_weight"
-L7_1 = 100
-L5_1[L6_1] = L7_1
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L8_1 = 2017
-L9_1 = 2026
-L10_1 = 2028
-L11_1 = 2036
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L6_1.gadgets = L7_1
-L7_1 = {}
-L8_1 = 2056
-L7_1[1] = L8_1
-L6_1.regions = L7_1
-L7_1 = {}
-L8_1 = "ENTER_REGION_2056"
-L7_1[1] = L8_1
-L6_1.triggers = L7_1
-L7_1 = "rand_weight"
-L8_1 = 100
-L6_1[L7_1] = L8_1
-L7_1 = {}
-L8_1 = {}
-L9_1 = 2006
-L10_1 = 2007
-L11_1 = 2008
-L12_1 = 2009
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L8_1[3] = L11_1
-L8_1[4] = L12_1
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L7_1.triggers = L8_1
-L8_1 = "rand_weight"
-L9_1 = 100
-L7_1[L8_1] = L9_1
-L8_1 = {}
-L9_1 = {}
-L10_1 = 2014
-L11_1 = 2015
-L12_1 = 2016
-L13_1 = 2027
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L9_1[3] = L12_1
-L9_1[4] = L13_1
-L8_1.monsters = L9_1
-L9_1 = {}
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L8_1.triggers = L9_1
-L9_1 = "rand_weight"
-L10_1 = 100
-L8_1[L9_1] = L10_1
-L9_1 = {}
-L10_1 = {}
-L9_1.monsters = L10_1
-L10_1 = {}
-L11_1 = 2058
-L10_1[1] = L11_1
-L9_1.gadgets = L10_1
-L10_1 = {}
-L9_1.regions = L10_1
-L10_1 = {}
-L9_1.triggers = L10_1
-L10_1 = "rand_weight"
-L11_1 = 100
-L9_1[L10_1] = L11_1
-L10_1 = {}
-L11_1 = {}
-L10_1.monsters = L11_1
-L11_1 = {}
-L10_1.gadgets = L11_1
-L11_1 = {}
-L10_1.regions = L11_1
-L11_1 = {}
-L10_1.triggers = L11_1
-L11_1 = "rand_weight"
-L12_1 = 100
-L10_1[L11_1] = L12_1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_ANY_MONSTER_DIE_2019"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCount
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 240008002
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 2005, monster_id = 21010201, pos = { x = 340.097, y = -19.200, z = 343.315 }, rot = { x = 0.000, y = 288.704, z = 0.000 }, level = 1, pose_id = 9012 },
+	{ config_id = 2006, monster_id = 20010801, pos = { x = 347.863, y = -19.200, z = 346.687 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2007, monster_id = 20010801, pos = { x = 338.741, y = -19.200, z = 346.894 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2008, monster_id = 20010801, pos = { x = 343.614, y = -19.200, z = 349.061 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2009, monster_id = 20010901, pos = { x = 343.558, y = -19.200, z = 345.909 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2010, monster_id = 21020101, pos = { x = 351.861, y = -19.200, z = 343.368 }, rot = { x = 0.000, y = 83.252, z = 0.000 }, level = 1, pose_id = 401 },
+	{ config_id = 2011, monster_id = 21010201, pos = { x = 331.885, y = -19.200, z = 338.709 }, rot = { x = 0.000, y = 173.459, z = 0.000 }, level = 1, pose_id = 9016 },
+	{ config_id = 2012, monster_id = 21011002, pos = { x = 333.627, y = -19.200, z = 346.109 }, rot = { x = 0.000, y = 31.069, z = 0.000 }, level = 1, pose_id = 9013 },
+	{ config_id = 2013, monster_id = 21011002, pos = { x = 335.127, y = -19.200, z = 337.465 }, rot = { x = 0.000, y = 255.749, z = 0.000 }, level = 1, pose_id = 9003 },
+	{ config_id = 2014, monster_id = 20011201, pos = { x = 346.271, y = -19.200, z = 340.915 }, rot = { x = 0.000, y = 356.466, z = 0.000 }, level = 1 },
+	{ config_id = 2015, monster_id = 20011301, pos = { x = 338.643, y = -19.200, z = 343.277 }, rot = { x = 0.000, y = 2.614, z = 0.000 }, level = 1 },
+	{ config_id = 2016, monster_id = 20011301, pos = { x = 348.490, y = -19.200, z = 343.369 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2027, monster_id = 20011201, pos = { x = 340.136, y = -19.200, z = 340.834 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 2001, gadget_id = 70360002, pos = { x = 343.298, y = -19.277, z = 343.659 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2002, gadget_id = 70350003, pos = { x = 353.288, y = -18.351, z = 322.634 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2003, gadget_id = 70350003, pos = { x = 343.355, y = -18.368, z = 322.652 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2004, gadget_id = 70350003, pos = { x = 333.379, y = -18.356, z = 322.669 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2017, gadget_id = 70320002, pos = { x = 353.448, y = -19.221, z = 338.575 }, rot = { x = 0.000, y = 272.309, z = 0.000 }, level = 1, state = GadgetState.GearStart },
+	{ config_id = 2023, gadget_id = 70310001, pos = { x = 349.308, y = -19.200, z = 343.385 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2024, gadget_id = 70310001, pos = { x = 337.739, y = -19.200, z = 343.465 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart },
+	{ config_id = 2025, gadget_id = 70220025, pos = { x = 351.566, y = -19.271, z = 343.373 }, rot = { x = 270.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2026, gadget_id = 70320002, pos = { x = 338.182, y = -19.200, z = 348.857 }, rot = { x = 0.000, y = 266.553, z = 0.000 }, level = 1, state = GadgetState.GearStart },
+	{ config_id = 2028, gadget_id = 70320002, pos = { x = 348.259, y = -19.200, z = 348.675 }, rot = { x = 0.000, y = 91.966, z = 0.000 }, level = 1, state = GadgetState.GearStart },
+	{ config_id = 2033, gadget_id = 70350003, pos = { x = 353.298, y = -18.828, z = 368.544 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2034, gadget_id = 70350003, pos = { x = 343.301, y = -18.812, z = 368.496 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2035, gadget_id = 70350003, pos = { x = 333.319, y = -18.835, z = 368.384 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2036, gadget_id = 70320002, pos = { x = 332.372, y = -19.221, z = 338.646 }, rot = { x = 0.000, y = 88.079, z = 0.000 }, level = 1, state = GadgetState.GearStart },
+	{ config_id = 2037, gadget_id = 70211011, pos = { x = 359.075, y = -14.284, z = 335.161 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 6, drop_tag = "战斗中级蒙德", isOneoff = true, persistent = true },
+	{ config_id = 2038, gadget_id = 70220013, pos = { x = 366.448, y = -14.283, z = 336.123 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2039, gadget_id = 70220013, pos = { x = 367.988, y = -14.284, z = 334.047 }, rot = { x = 0.000, y = 307.522, z = 0.000 }, level = 1 },
+	{ config_id = 2040, gadget_id = 70220014, pos = { x = 365.228, y = -14.284, z = 334.498 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2041, gadget_id = 70220014, pos = { x = 369.335, y = -14.283, z = 336.077 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2042, gadget_id = 70220014, pos = { x = 360.472, y = -16.894, z = 343.877 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2043, gadget_id = 70220014, pos = { x = 359.797, y = -16.894, z = 345.121 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2044, gadget_id = 70220013, pos = { x = 360.028, y = -16.893, z = 347.359 }, rot = { x = 0.000, y = 59.385, z = 0.000 }, level = 1 },
+	{ config_id = 2045, gadget_id = 70220025, pos = { x = 360.049, y = -16.878, z = 344.810 }, rot = { x = 270.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2046, gadget_id = 70310002, pos = { x = 348.271, y = -8.828, z = 324.309 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2047, gadget_id = 70310002, pos = { x = 338.379, y = -8.828, z = 324.309 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart },
+	{ config_id = 2049, gadget_id = 70220013, pos = { x = 330.767, y = -19.438, z = 335.253 }, rot = { x = 0.000, y = 307.695, z = 0.000 }, level = 1 },
+	{ config_id = 2050, gadget_id = 70220013, pos = { x = 332.636, y = -19.292, z = 333.246 }, rot = { x = 0.000, y = 342.013, z = 0.000 }, level = 1 },
+	{ config_id = 2051, gadget_id = 70220014, pos = { x = 332.563, y = -19.252, z = 336.286 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2052, gadget_id = 70220014, pos = { x = 333.849, y = -19.250, z = 335.145 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2053, gadget_id = 70220015, pos = { x = 329.808, y = -18.582, z = 336.536 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2054, gadget_id = 70220015, pos = { x = 330.486, y = -18.643, z = 332.726 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2058, gadget_id = 70211011, pos = { x = 343.588, y = -19.200, z = 331.753 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 6, drop_tag = "战斗中级蒙德", isOneoff = true, persistent = true }
+}
+
+-- 区域
+regions = {
+	{ config_id = 2029, shape = RegionShape.CUBIC, size = { x = 30.000, y = 8.000, z = 3.000 }, pos = { x = 341.203, y = -18.968, z = 360.204 } },
+	{ config_id = 2030, shape = RegionShape.CUBIC, size = { x = 10.000, y = 5.000, z = 3.000 }, pos = { x = 353.233, y = -23.687, z = 384.393 } },
+	{ config_id = 2031, shape = RegionShape.CUBIC, size = { x = 10.000, y = 5.000, z = 3.000 }, pos = { x = 343.078, y = -23.688, z = 384.374 } },
+	{ config_id = 2032, shape = RegionShape.CUBIC, size = { x = 10.000, y = 5.000, z = 3.000 }, pos = { x = 332.942, y = -23.801, z = 384.389 } },
+	{ config_id = 2055, shape = RegionShape.CUBIC, size = { x = 30.000, y = 8.000, z = 3.000 }, pos = { x = 344.651, y = -18.837, z = 358.242 } },
+	{ config_id = 2056, shape = RegionShape.CUBIC, size = { x = 30.000, y = 8.000, z = 3.000 }, pos = { x = 344.329, y = -19.088, z = 358.196 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1002019, name = "ANY_MONSTER_DIE_2019", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_2019", action = "action_EVENT_ANY_MONSTER_DIE_2019" },
+	{ config_id = 1002020, name = "SELECT_OPTION_2020", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_2020", action = "action_EVENT_SELECT_OPTION_2020" },
+	{ config_id = 1002021, name = "SELECT_OPTION_2021", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_2021", action = "action_EVENT_SELECT_OPTION_2021" },
+	{ config_id = 1002022, name = "SELECT_OPTION_2022", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_2022", action = "action_EVENT_SELECT_OPTION_2022" },
+	{ config_id = 1002029, name = "ENTER_REGION_2029", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_2029", action = "action_EVENT_ENTER_REGION_2029" },
+	{ config_id = 1002030, name = "ENTER_REGION_2030", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_2030", action = "action_EVENT_ENTER_REGION_2030" },
+	{ config_id = 1002031, name = "ENTER_REGION_2031", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_2031", action = "action_EVENT_ENTER_REGION_2031" },
+	{ config_id = 1002032, name = "ENTER_REGION_2032", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_2032", action = "action_EVENT_ENTER_REGION_2032" },
+	{ config_id = 1002055, name = "ENTER_REGION_2055", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_2055", action = "action_EVENT_ENTER_REGION_2055" },
+	{ config_id = 1002056, name = "ENTER_REGION_2056", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_2056", action = "action_EVENT_ENTER_REGION_2056" },
+	{ config_id = 1002057, name = "GADGET_STATE_CHANGE_2057", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_2057", action = "action_EVENT_GADGET_STATE_CHANGE_2057" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 2001, 2002, 2003, 2004, 2033, 2034, 2035, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2049, 2050, 2051, 2052, 2053, 2054 },
+		regions = { 2029, 2030, 2031, 2032 },
+		triggers = { "ANY_MONSTER_DIE_2019", "SELECT_OPTION_2020", "SELECT_OPTION_2021", "SELECT_OPTION_2022", "ENTER_REGION_2029", "ENTER_REGION_2030", "ENTER_REGION_2031", "ENTER_REGION_2032", "GADGET_STATE_CHANGE_2057" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = 冰之试炼,
+		monsters = { },
+		gadgets = { },
+		regions = { 2055 },
+		triggers = { "ENTER_REGION_2055" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = 雷之试炼,
+		monsters = { 2005, 2010, 2011, 2012, 2013 },
+		gadgets = { 2023, 2024, 2025 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = 火之试炼,
+		monsters = { },
+		gadgets = { 2017, 2026, 2028, 2036 },
+		regions = { 2056 },
+		triggers = { "ENTER_REGION_2056" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = 水之挑战怪物,
+		monsters = { 2006, 2007, 2008, 2009 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 6,
+		-- description = 火之挑战怪物,
+		monsters = { 2014, 2015, 2016, 2027 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 7,
+		-- description = 宝箱奖励,
+		monsters = { },
+		gadgets = { 2058 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 8,
+		-- description = 风场,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_2019(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_ANY_MONSTER_DIE_2019"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2001
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 2001
-  L6_2 = {}
-  L7_2 = 178
-  L8_2 = 179
-  L9_2 = 180
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L6_2[3] = L9_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 7
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_2019(context, evt)
+	-- 将configid为 2001 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2001, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 240008002, 2001, {178,179,180}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	-- 添加suite7的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240008002, 7)
+	
+	return 0
 end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_SELECT_OPTION_2020"
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 178 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_2020(context, evt)
+	-- 判断是gadgetid 2001 option_id 178
+	if 2001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 178 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_SELECT_OPTION_2020"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240008003
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2002
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 2001
-  L6_2 = 178
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 2001
-  L6_2 = 179
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 2001
-  L6_2 = 180
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 353
-  L2_2.y = -18
-  L2_2.z = 322
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 2
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_2020(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240008003, 2)
+	
+	-- 将configid为 2002 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2002, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 2001 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2001, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 删除指定group： 240008002 ；指定config：2001；物件身上指定option：178；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240008002, 2001, 178) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 240008002 ；指定config：2001；物件身上指定option：179；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240008002, 2001, 179) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 240008002 ；指定config：2001；物件身上指定option：180；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240008002, 2001, 180) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（353，-18，322），持续时间为2秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=353, y=-18, z=322}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 2, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	return 0
 end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_SELECT_OPTION_2021"
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 179 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_2021(context, evt)
+	-- 判断是gadgetid 2001 option_id 179
+	if 2001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 179 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_SELECT_OPTION_2021"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240008003
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2003
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 2001
-  L6_2 = 178
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 2001
-  L6_2 = 179
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 2001
-  L6_2 = 180
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 343
-  L2_2.y = -18
-  L2_2.z = 322
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 2
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_2021(context, evt)
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240008003, 3)
+	
+	-- 将configid为 2003 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2003, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 2001 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2001, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 删除指定group： 240008002 ；指定config：2001；物件身上指定option：178；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240008002, 2001, 178) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 240008002 ；指定config：2001；物件身上指定option：179；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240008002, 2001, 179) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 240008002 ；指定config：2001；物件身上指定option：180；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240008002, 2001, 180) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（343，-18，322），持续时间为2秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=343, y=-18, z=322}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 2, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	return 0
 end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_SELECT_OPTION_2022"
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 180 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_2022(context, evt)
+	-- 判断是gadgetid 2001 option_id 180
+	if 2001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 180 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_SELECT_OPTION_2022"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240008003
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2004
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 2001
-  L6_2 = 178
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 2001
-  L6_2 = 179
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 2001
-  L6_2 = 180
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 333
-  L2_2.y = -18
-  L2_2.z = 322
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 2
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_2022(context, evt)
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240008003, 4)
+	
+	-- 将configid为 2004 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2004, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 2001 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2001, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 删除指定group： 240008002 ；指定config：2001；物件身上指定option：178；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240008002, 2001, 178) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 240008002 ；指定config：2001；物件身上指定option：179；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240008002, 2001, 179) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 240008002 ；指定config：2001；物件身上指定option：180；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240008002, 2001, 180) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（333，-18，322），持续时间为2秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=333, y=-18, z=322}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 2, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	return 0
 end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_ENTER_REGION_2029"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 2029 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_2029(context, evt)
+	if evt.param1 ~= 2029 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_ENTER_REGION_2029"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2033
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2034
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2035
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_2029(context, evt)
+	-- 将configid为 2001 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2001, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 2033 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2033, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 2034 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2034, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 2035 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2035, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_ENTER_REGION_2030"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 2030 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_2030(context, evt)
+	if evt.param1 ~= 2030 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_ENTER_REGION_2030"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2033
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_2030(context, evt)
+	-- 将configid为 2033 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2033, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_ENTER_REGION_2031"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 2031 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_2031(context, evt)
+	if evt.param1 ~= 2031 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_ENTER_REGION_2031"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2034
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_2031(context, evt)
+	-- 将configid为 2034 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2034, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_ENTER_REGION_2032"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 2032 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_2032(context, evt)
+	if evt.param1 ~= 2032 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_ENTER_REGION_2032"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 2035
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_2032(context, evt)
+	-- 将configid为 2035 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 2035, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_ENTER_REGION_2055"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 2055 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_2055(context, evt)
+	if evt.param1 ~= 2055 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_ENTER_REGION_2055"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_2055(context, evt)
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240008002, 5)
+	
+	return 0
 end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_ENTER_REGION_2056"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 2056 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_2056(context, evt)
+	if evt.param1 ~= 2056 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_ENTER_REGION_2056"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 6
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_2056(context, evt)
+	-- 添加suite6的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240008002, 6)
+	
+	return 0
 end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_GADGET_STATE_CHANGE_2057"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 2046 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_2057(context, evt)
+	if 2046 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_GADGET_STATE_CHANGE_2057"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240008002
-  L5_2 = 8
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_2057(context, evt)
+	-- 添加suite8的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240008002, 8)
+	
+	return 0
 end
-_ENV[L1_1] = L2_1

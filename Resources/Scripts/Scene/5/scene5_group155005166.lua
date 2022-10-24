@@ -1,181 +1,83 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 155005166
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 166002
-L2_1.gadget_id = 70217012
-L3_1 = {}
-L3_1.x = 106.146
-L3_1.y = 257.085
-L3_1.z = 316.474
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 108.321
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 16
-L2_1.drop_tag = "\230\145\169\230\139\137\231\159\179\231\174\177\231\168\187\229\166\187"
-L2_1.isOneoff = true
-L2_1.persistent = true
-L3_1 = {}
-L3_1.name = "chest"
-L3_1.exp = 1
-L2_1.explore = L3_1
-L2_1.area_id = 200
-L3_1 = {}
-L3_1.config_id = 166003
-L3_1.gadget_id = 70217012
-L4_1 = {}
-L4_1.x = 164.397
-L4_1.y = 268.734
-L4_1.z = 364.156
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 255.454
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 16
-L3_1.drop_tag = "\230\145\169\230\139\137\231\159\179\231\174\177\231\168\187\229\166\187"
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.name = "chest"
-L4_1.exp = 1
-L3_1.explore = L4_1
-L3_1.area_id = 200
-L4_1 = {}
-L4_1.config_id = 166006
-L4_1.gadget_id = 70217012
-L5_1 = {}
-L5_1.x = 165.082
-L5_1.y = 268.472
-L5_1.z = 370.356
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 41.728
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 16
-L4_1.drop_tag = "\230\145\169\230\139\137\231\159\179\231\174\177\231\168\187\229\166\187"
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.name = "chest"
-L5_1.exp = 1
-L4_1.explore = L5_1
-L4_1.area_id = 200
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 166001
-L3_1.gadget_id = 70217012
-L4_1 = {}
-L4_1.x = 106.667
-L4_1.y = 257.083
-L4_1.z = 314.288
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 75.924
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 16
-L3_1.drop_tag = "\230\145\169\230\139\137\231\159\179\231\174\177\231\168\187\229\166\187"
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.name = "chest"
-L4_1.exp = 1
-L3_1.explore = L4_1
-L3_1.area_id = 200
-L4_1 = {}
-L4_1.config_id = 166004
-L4_1.gadget_id = 70217012
-L5_1 = {}
-L5_1.x = 150.255
-L5_1.y = 269.85
-L5_1.z = 344.641
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 13.257
-L5_1.y = 355.767
-L5_1.z = 343.645
-L4_1.rot = L5_1
-L4_1.level = 16
-L4_1.drop_tag = "\230\145\169\230\139\137\231\159\179\231\174\177\231\168\187\229\166\187"
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.name = "chest"
-L5_1.exp = 1
-L4_1.explore = L5_1
-L4_1.area_id = 200
-L5_1 = {}
-L5_1.config_id = 166005
-L5_1.gadget_id = 70217012
-L6_1 = {}
-L6_1.x = 163.958
-L6_1.y = 268.327
-L6_1.z = 372.368
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 90.55
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 16
-L5_1.drop_tag = "\230\145\169\230\139\137\231\159\179\231\174\177\231\168\187\229\166\187"
-L5_1.isOneoff = true
-L5_1.persistent = true
-L6_1 = {}
-L6_1.name = "chest"
-L6_1.exp = 1
-L5_1.explore = L6_1
-L5_1.area_id = 200
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L1_1.gadgets = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 166002
-L5_1 = 166003
-L6_1 = 166006
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 155005166
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 166002, gadget_id = 70217012, pos = { x = 106.146, y = 257.085, z = 316.474 }, rot = { x = 0.000, y = 108.321, z = 0.000 }, level = 16, drop_tag = "摩拉石箱稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 200 },
+	{ config_id = 166003, gadget_id = 70217012, pos = { x = 164.397, y = 268.734, z = 364.156 }, rot = { x = 0.000, y = 255.454, z = 0.000 }, level = 16, drop_tag = "摩拉石箱稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 200 },
+	{ config_id = 166006, gadget_id = 70217012, pos = { x = 165.082, y = 268.472, z = 370.356 }, rot = { x = 0.000, y = 41.728, z = 0.000 }, level = 16, drop_tag = "摩拉石箱稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 200 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 166001, gadget_id = 70217012, pos = { x = 106.667, y = 257.083, z = 314.288 }, rot = { x = 0.000, y = 75.924, z = 0.000 }, level = 16, drop_tag = "摩拉石箱稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 200 },
+		{ config_id = 166004, gadget_id = 70217012, pos = { x = 150.255, y = 269.850, z = 344.641 }, rot = { x = 13.257, y = 355.767, z = 343.645 }, level = 16, drop_tag = "摩拉石箱稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 200 },
+		{ config_id = 166005, gadget_id = 70217012, pos = { x = 163.958, y = 268.327, z = 372.368 }, rot = { x = 0.000, y = 90.550, z = 0.000 }, level = 16, drop_tag = "摩拉石箱稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 200 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 166002, 166003, 166006 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

@@ -1,741 +1,367 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1
-L0_1 = {}
-L0_1.group_id = 155005036
-L1_1 = {}
-L2_1 = 36001
-L1_1[1] = L2_1
-L2_1 = {}
-L3_1 = 36002
-L2_1[1] = L3_1
-L3_1 = {}
-L4_1 = {}
-function L5_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = DayNight_Gadget_Lock
-  L2_2 = A0_2
-  L3_2 = 36001
-  L1_2(L2_2, L3_2)
+-- 基础信息
+local base_info = {
+	group_id = 155005036
+}
+
+-- DEFS_MISCS
+local EnvControlGadgets = {36001}
+local DayAppearGadgets = {36002}
+local NightAppearGadgets = {}
+
+
+--[[
+	0 = 没有触发守卫战斗
+	1 = 触发了守卫战斗
+	2 = 战斗完成
+	3 = 机关解除开启大门
+	4 = 玩法完成
+]]
+local gameplayStateFuncitons = 
+{
+	["0"] = function(context)
+		DayNight_Gadget_Lock(context,36001)
+
+		
+	end,
+	["1"] = function(context)
+		ScriptLib.AddExtraGroupSuite(context, 155005036, 2)
+		DayNight_Gadget_Unlock(context,36001)
+
+	end,
+	["2"] = function(context)
+		
+		DayNight_Gadget_Unlock(context,36001)
+
+		
+		
+	end,
+	["3"] = function(context)
+		ScriptLib.AddQuestProgress(context, "72192_DefeatMonster")
+		DayNight_Gadget_Unlock(context,36001)
+
+		
+	end,
+	["4"] = function(context)
+		DayNight_Gadget_Unlock(context,36001)
+
+
+
+	end,
+	["5"] = function(context)
+		ScriptLib.AddQuestProgress(context, "72192_SolvePuzzle")
+		ScriptLib.SetGadgetStateByConfigId(context, 36007, GadgetState.GearStart)
+		DayNight_Gadget_Finish(context,36001)
+
+	end,
+	["6"] = function(context)
+		DayNight_Gadget_Finish(context,36001)
+		ScriptLib.SetGadgetStateByConfigId(context, 36007, GadgetState.GearStart)
+	end
+}
+
+
+function UpdateGamePlayState(context)
+	local state = ScriptLib.GetGroupVariableValue(context, "gameplayState") 
+
+	gameplayStateFuncitons[tostring(state)](context)
+
 end
-L4_1["0"] = L5_1
-function L5_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddExtraGroupSuite
-  L2_2 = A0_2
-  L3_2 = 155005036
-  L4_2 = 2
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = DayNight_Gadget_Unlock
-  L2_2 = A0_2
-  L3_2 = 36001
-  L1_2(L2_2, L3_2)
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 36001, gadget_id = 70360309, pos = { x = 511.507, y = 172.492, z = 652.622 }, rot = { x = 2.654, y = 27.477, z = 0.000 }, level = 36, area_id = 200 },
+	{ config_id = 36002, gadget_id = 70360314, pos = { x = 511.704, y = 170.494, z = 652.134 }, rot = { x = 2.318, y = 28.623, z = 357.320 }, level = 36, area_id = 200 },
+	{ config_id = 36007, gadget_id = 70350006, pos = { x = 514.073, y = 172.248, z = 656.742 }, rot = { x = 0.000, y = 29.971, z = 0.000 }, level = 36, persistent = true, area_id = 200 }
+}
+
+-- 区域
+regions = {
+	-- 夜晚到达狭间密室门前
+	{ config_id = 36021, shape = RegionShape.SPHERE, radius = 8, pos = { x = 499.675, y = 172.976, z = 659.277 }, area_id = 200 },
+	-- 派蒙Reminder提示
+	{ config_id = 36024, shape = RegionShape.SPHERE, radius = 15, pos = { x = 497.004, y = 172.400, z = 661.580 }, area_id = 200 }
+}
+
+-- 触发器
+triggers = {
+	-- 初始化
+	{ config_id = 1036005, name = "GROUP_LOAD_36005", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_36005", trigger_count = 0 },
+	-- 监听震动机关激活
+	{ config_id = 1036006, name = "VARIABLE_CHANGE_36006", event = EventType.EVENT_VARIABLE_CHANGE, source = "activecount", condition = "condition_EVENT_VARIABLE_CHANGE_36006", action = "action_EVENT_VARIABLE_CHANGE_36006", trigger_count = 0 },
+	-- 监听gameplayState
+	{ config_id = 1036008, name = "VARIABLE_CHANGE_36008", event = EventType.EVENT_VARIABLE_CHANGE, source = "gameplayState", condition = "", action = "action_EVENT_VARIABLE_CHANGE_36008", trigger_count = 0 },
+	-- 7219203[3] Start 解除水纹密室的谜题
+	{ config_id = 1036015, name = "QUEST_START_36015", event = EventType.EVENT_QUEST_START, source = "7219203", condition = "", action = "action_EVENT_QUEST_START_36015", trigger_count = 0 },
+	-- 7219204[4] Start 完成解除水纹密室
+	{ config_id = 1036016, name = "QUEST_START_36016", event = EventType.EVENT_QUEST_START, source = "7219204", condition = "", action = "action_EVENT_QUEST_START_36016", trigger_count = 0 },
+	-- 开启震动机关
+	{ config_id = 1036020, name = "GADGET_STATE_CHANGE_36020", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_36020", action = "action_EVENT_GADGET_STATE_CHANGE_36020", trigger_count = 0 },
+	-- 夜晚到达狭间密室门前
+	{ config_id = 1036021, name = "ENTER_REGION_36021", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_36021", action = "action_EVENT_ENTER_REGION_36021", trigger_count = 0 },
+	-- 7219201[1] Start
+	{ config_id = 1036023, name = "QUEST_START_36023", event = EventType.EVENT_QUEST_START, source = "7219201", condition = "", action = "action_EVENT_QUEST_START_36023", trigger_count = 0 },
+	-- 派蒙Reminder提示
+	{ config_id = 1036024, name = "ENTER_REGION_36024", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_36024", action = "action_EVENT_ENTER_REGION_36024", trigger_count = 0 },
+	-- 重置Reminder
+	{ config_id = 1036025, name = "TIME_AXIS_PASS_36025", event = EventType.EVENT_TIME_AXIS_PASS, source = "reactiveReminder", condition = "", action = "action_EVENT_TIME_AXIS_PASS_36025", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "gameplayState", value = 0, no_refresh = true },
+	{ config_id = 2, name = "activecount", value = 0, no_refresh = true },
+	{ config_id = 3, name = "ReminderTimer", value = 0, no_refresh = false }
+}
+
+-- 废弃数据
+garbages = {
+	triggers = {
+		{ config_id = 1036018, name = "GADGET_CREATE_36018", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_36018", action = "action_EVENT_GADGET_CREATE_36018", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 36001, 36007 },
+		regions = { 36021 },
+		triggers = { "GROUP_LOAD_36005", "VARIABLE_CHANGE_36006", "VARIABLE_CHANGE_36008", "QUEST_START_36015", "QUEST_START_36016", "GADGET_STATE_CHANGE_36020", "ENTER_REGION_36021", "QUEST_START_36023" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 36024 },
+		triggers = { "ENTER_REGION_36024", "TIME_AXIS_PASS_36025" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_36005(context, evt)
+	UpdateGamePlayState(context)
+	
+	return 0
 end
-L4_1["1"] = L5_1
-function L5_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = DayNight_Gadget_Unlock
-  L2_2 = A0_2
-  L3_2 = 36001
-  L1_2(L2_2, L3_2)
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_36006(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"activecount"为1
+	if ScriptLib.GetGroupVariableValue(context, "activecount") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-L4_1["2"] = L5_1
-function L5_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddQuestProgress
-  L2_2 = A0_2
-  L3_2 = "72192_DefeatMonster"
-  L1_2(L2_2, L3_2)
-  L1_2 = DayNight_Gadget_Unlock
-  L2_2 = A0_2
-  L3_2 = 36001
-  L1_2(L2_2, L3_2)
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_36006(context, evt)
+	-- 将本组内变量名为 "gameplayState" 的变量设置为 5
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "gameplayState", 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-L4_1["3"] = L5_1
-function L5_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = DayNight_Gadget_Unlock
-  L2_2 = A0_2
-  L3_2 = 36001
-  L1_2(L2_2, L3_2)
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_36008(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	UpdateGamePlayState(context)
+	
+	return 0
 end
-L4_1["4"] = L5_1
-function L5_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddQuestProgress
-  L2_2 = A0_2
-  L3_2 = "72192_SolvePuzzle"
-  L1_2(L2_2, L3_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGadgetStateByConfigId
-  L2_2 = A0_2
-  L3_2 = 36007
-  L4_2 = GadgetState
-  L4_2 = L4_2.GearStart
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = DayNight_Gadget_Finish
-  L2_2 = A0_2
-  L3_2 = 36001
-  L1_2(L2_2, L3_2)
+
+-- 触发操作
+function action_EVENT_QUEST_START_36015(context, evt)
+	-- 将本组内变量名为 "gameplayState" 的变量设置为 4
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "gameplayState", 4) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-L4_1["5"] = L5_1
-function L5_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = DayNight_Gadget_Finish
-  L2_2 = A0_2
-  L3_2 = 36001
-  L1_2(L2_2, L3_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGadgetStateByConfigId
-  L2_2 = A0_2
-  L3_2 = 36007
-  L4_2 = GadgetState
-  L4_2 = L4_2.GearStart
-  L1_2(L2_2, L3_2, L4_2)
+
+-- 触发操作
+function action_EVENT_QUEST_START_36016(context, evt)
+	
+	 ScriptLib.SetGroupVariableValue(context, "gameplayState", 6)
+	return 0
 end
-L4_1["6"] = L5_1
-function L5_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.GetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "gameplayState"
-  L1_2 = L1_2(L2_2, L3_2)
-  L2_2 = tostring
-  L3_2 = L1_2
-  L2_2 = L2_2(L3_2)
-  L2_2 = L4_1[L2_2]
-  L3_2 = A0_2
-  L2_2(L3_2)
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_36020(context, evt)
+	if 322 ~= ScriptLib.GetGadgetStateByConfigId(context, 155005036, 36001) then
+		return false
+	end
+	
+	-- 判断变量"gameplayState"为4
+	if ScriptLib.GetGroupVariableValue(context, "gameplayState") ~= 4 then
+			return false
+	end
+	
+	return true
 end
-UpdateGamePlayState = L5_1
-L5_1 = {}
-monsters = L5_1
-L5_1 = {}
-npcs = L5_1
-L5_1 = {}
-L6_1 = {}
-L6_1.config_id = 36001
-L6_1.gadget_id = 70360309
-L7_1 = {}
-L7_1.x = 511.507
-L7_1.y = 172.492
-L7_1.z = 652.622
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 2.654
-L7_1.y = 27.477
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 36
-L6_1.area_id = 200
-L7_1 = {}
-L7_1.config_id = 36002
-L7_1.gadget_id = 70360314
-L8_1 = {}
-L8_1.x = 511.704
-L8_1.y = 170.494
-L8_1.z = 652.134
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 2.318
-L8_1.y = 28.623
-L8_1.z = 357.32
-L7_1.rot = L8_1
-L7_1.level = 36
-L7_1.area_id = 200
-L8_1 = {}
-L8_1.config_id = 36007
-L8_1.gadget_id = 70350006
-L9_1 = {}
-L9_1.x = 514.073
-L9_1.y = 172.248
-L9_1.z = 656.742
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 29.971
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 36
-L8_1.persistent = true
-L8_1.area_id = 200
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-gadgets = L5_1
-L5_1 = {}
-L6_1 = {}
-L6_1.config_id = 36021
-L7_1 = RegionShape
-L7_1 = L7_1.SPHERE
-L6_1.shape = L7_1
-L6_1.radius = 8
-L7_1 = {}
-L7_1.x = 499.675
-L7_1.y = 172.976
-L7_1.z = 659.277
-L6_1.pos = L7_1
-L6_1.area_id = 200
-L7_1 = {}
-L7_1.config_id = 36024
-L8_1 = RegionShape
-L8_1 = L8_1.SPHERE
-L7_1.shape = L8_1
-L7_1.radius = 15
-L8_1 = {}
-L8_1.x = 497.004
-L8_1.y = 172.4
-L8_1.z = 661.58
-L7_1.pos = L8_1
-L7_1.area_id = 200
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-regions = L5_1
-L5_1 = {}
-L6_1 = {}
-L6_1.config_id = 1036005
-L6_1.name = "GROUP_LOAD_36005"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GROUP_LOAD
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = ""
-L6_1.action = "action_EVENT_GROUP_LOAD_36005"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1036006
-L7_1.name = "VARIABLE_CHANGE_36006"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_VARIABLE_CHANGE
-L7_1.event = L8_1
-L7_1.source = "activecount"
-L7_1.condition = "condition_EVENT_VARIABLE_CHANGE_36006"
-L7_1.action = "action_EVENT_VARIABLE_CHANGE_36006"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1036008
-L8_1.name = "VARIABLE_CHANGE_36008"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_VARIABLE_CHANGE
-L8_1.event = L9_1
-L8_1.source = "gameplayState"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_VARIABLE_CHANGE_36008"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1036015
-L9_1.name = "QUEST_START_36015"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_QUEST_START
-L9_1.event = L10_1
-L9_1.source = "7219203"
-L9_1.condition = ""
-L9_1.action = "action_EVENT_QUEST_START_36015"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1036016
-L10_1.name = "QUEST_START_36016"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_QUEST_START
-L10_1.event = L11_1
-L10_1.source = "7219204"
-L10_1.condition = ""
-L10_1.action = "action_EVENT_QUEST_START_36016"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1036020
-L11_1.name = "GADGET_STATE_CHANGE_36020"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_GADGET_STATE_CHANGE
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_36020"
-L11_1.action = "action_EVENT_GADGET_STATE_CHANGE_36020"
-L11_1.trigger_count = 0
-L12_1 = {}
-L12_1.config_id = 1036021
-L12_1.name = "ENTER_REGION_36021"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_ENTER_REGION
-L12_1.event = L13_1
-L12_1.source = "1"
-L12_1.condition = "condition_EVENT_ENTER_REGION_36021"
-L12_1.action = "action_EVENT_ENTER_REGION_36021"
-L12_1.trigger_count = 0
-L13_1 = {}
-L13_1.config_id = 1036023
-L13_1.name = "QUEST_START_36023"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_QUEST_START
-L13_1.event = L14_1
-L13_1.source = "7219201"
-L13_1.condition = ""
-L13_1.action = "action_EVENT_QUEST_START_36023"
-L13_1.trigger_count = 0
-L14_1 = {}
-L14_1.config_id = 1036024
-L14_1.name = "ENTER_REGION_36024"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_ENTER_REGION
-L14_1.event = L15_1
-L14_1.source = "1"
-L14_1.condition = "condition_EVENT_ENTER_REGION_36024"
-L14_1.action = "action_EVENT_ENTER_REGION_36024"
-L14_1.trigger_count = 0
-L15_1 = {}
-L15_1.config_id = 1036025
-L15_1.name = "TIME_AXIS_PASS_36025"
-L16_1 = EventType
-L16_1 = L16_1.EVENT_TIME_AXIS_PASS
-L15_1.event = L16_1
-L15_1.source = "reactiveReminder"
-L15_1.condition = ""
-L15_1.action = "action_EVENT_TIME_AXIS_PASS_36025"
-L15_1.trigger_count = 0
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L5_1[7] = L12_1
-L5_1[8] = L13_1
-L5_1[9] = L14_1
-L5_1[10] = L15_1
-triggers = L5_1
-L5_1 = {}
-L6_1 = {}
-L6_1.configId = 1
-L6_1.name = "gameplayState"
-L6_1.value = 0
-L6_1.no_refresh = true
-L7_1 = {}
-L7_1.configId = 2
-L7_1.name = "activecount"
-L7_1.value = 0
-L7_1.no_refresh = true
-L8_1 = {}
-L8_1.configId = 3
-L8_1.name = "ReminderTimer"
-L8_1.value = 0
-L8_1.no_refresh = false
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-variables = L5_1
-L5_1 = {}
-L6_1 = {}
-L7_1 = {}
-L7_1.config_id = 1036018
-L7_1.name = "GADGET_CREATE_36018"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GADGET_CREATE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GADGET_CREATE_36018"
-L7_1.action = "action_EVENT_GADGET_CREATE_36018"
-L7_1.trigger_count = 0
-L6_1[1] = L7_1
-L5_1.triggers = L6_1
-garbages = L5_1
-L5_1 = {}
-L5_1.suite = 1
-L5_1.end_suite = 0
-L5_1.rand_suite = false
-init_config = L5_1
-L5_1 = {}
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L8_1 = 36001
-L9_1 = 36007
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L6_1.gadgets = L7_1
-L7_1 = {}
-L8_1 = 36021
-L7_1[1] = L8_1
-L6_1.regions = L7_1
-L7_1 = {}
-L8_1 = "GROUP_LOAD_36005"
-L9_1 = "VARIABLE_CHANGE_36006"
-L10_1 = "VARIABLE_CHANGE_36008"
-L11_1 = "QUEST_START_36015"
-L12_1 = "QUEST_START_36016"
-L13_1 = "GADGET_STATE_CHANGE_36020"
-L14_1 = "ENTER_REGION_36021"
-L15_1 = "QUEST_START_36023"
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L7_1[5] = L12_1
-L7_1[6] = L13_1
-L7_1[7] = L14_1
-L7_1[8] = L15_1
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L9_1 = 36024
-L8_1[1] = L9_1
-L7_1.regions = L8_1
-L8_1 = {}
-L9_1 = "ENTER_REGION_36024"
-L10_1 = "TIME_AXIS_PASS_36025"
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L7_1.triggers = L8_1
-L7_1.rand_weight = 100
-L8_1 = {}
-L9_1 = {}
-L8_1.monsters = L9_1
-L9_1 = {}
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L8_1.triggers = L9_1
-L8_1.rand_weight = 100
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-suites = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_36020(context, evt)
+	-- 针对当前group内变量名为 "activecount" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "activecount", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_36005 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "activecount"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_36021(context, evt)
+	if evt.param1 ~= 36021 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_36006 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gameplayState"
-  L5_2 = 5
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_36021(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "72192_activeEnemy") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_36006 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_36023(context, evt)
+	-- 将本组内变量名为 "gameplayState" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "gameplayState", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_36008 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gameplayState"
-  L5_2 = 4
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_36024(context, evt)
+	if evt.param1 ~= 36024 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	-- 判断变量"gameplayState"为1
+	if ScriptLib.GetGroupVariableValue(context, "gameplayState") ~= 1 then
+			return false
+	end
+	
+	-- 返回渊下宫当前是否为黑夜
+	    local uid_List = ScriptLib.GetSceneUidList(context)
+	    local host_id = uid_List[1]
+	    local current_env_state_id = ScriptLib.GetCurrentLevelTagVec(context, 1)[1]
+	    if (current_env_state_id == 2) then
+	        return false
+	    else
+	        return true
+	    end 
+	
+	return true
 end
-action_EVENT_QUEST_START_36015 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gameplayState"
-  L5_2 = 6
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_36024(context, evt)
+	-- 调用提示id为 7217716 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 7217716) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 将本组内变量名为 "ReminderTimer" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "ReminderTimer", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 创建标识为"reactiveReminder"，时间节点为{10}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "reactiveReminder", {10}, false)
+	
+	
+	return 0
 end
-action_EVENT_QUEST_START_36016 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 155005036
-  L5_2 = 36001
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 322 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gameplayState"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 4 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_36025(context, evt)
+	-- 将本组内变量名为 "ReminderTimer" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "ReminderTimer", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-condition_EVENT_GADGET_STATE_CHANGE_36020 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "activecount"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_36020 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 36021 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_ENTER_REGION_36021 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "72192_activeEnemy"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_ENTER_REGION_36021 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gameplayState"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_QUEST_START_36023 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 36024 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gameplayState"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetSceneUidList
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  L3_2 = L2_2[1]
-  L4_2 = ScriptLib
-  L4_2 = L4_2.GetCurrentLevelTagVec
-  L5_2 = A0_2
-  L6_2 = 1
-  L4_2 = L4_2(L5_2, L6_2)
-  L4_2 = L4_2[1]
-  if L4_2 == 2 then
-    L5_2 = false
-    return L5_2
-  else
-    L5_2 = true
-    return L5_2
-  end
-  L5_2 = true
-  return L5_2
-end
-condition_EVENT_ENTER_REGION_36024 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 7217716
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ReminderTimer"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "reactiveReminder"
-  L5_2 = {}
-  L6_2 = 10
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_ENTER_REGION_36024 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ReminderTimer"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_TIME_AXIS_PASS_36025 = L5_1
-L5_1 = require
-L6_1 = "V2_4/EnvState"
-L5_1(L6_1)
+
+require "V2_4/EnvState"

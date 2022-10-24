@@ -1,190 +1,112 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 155006082
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 82001
-L2_1.monster_id = 20010501
-L3_1 = {}
-L3_1.x = 469.723
-L3_1.y = 149.306
-L3_1.z = -202.995
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 18.062
-L3_1.y = 286.077
-L3_1.z = 3.696
-L2_1.rot = L3_1
-L2_1.level = 36
-L2_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L2_1.isOneoff = true
-L2_1.area_id = 200
-L1_1[1] = L2_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 82002
-L2_1.gadget_id = 70220050
-L3_1 = {}
-L3_1.x = 469.868
-L3_1.y = 149.072
-L3_1.z = -203.051
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 346.382
-L3_1.y = 143.165
-L3_1.z = 348.438
-L2_1.rot = L3_1
-L2_1.level = 36
-L2_1.isOneoff = true
-L2_1.persistent = true
-L2_1.area_id = 200
-L3_1 = {}
-L3_1.config_id = 82003
-L3_1.gadget_id = 70220051
-L4_1 = {}
-L4_1.x = 468.903
-L4_1.y = 148.771
-L4_1.z = -203.337
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 17.332
-L4_1.y = 209.119
-L4_1.z = 26.729
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.isOneoff = true
-L3_1.persistent = true
-L3_1.area_id = 200
-L4_1 = {}
-L4_1.config_id = 82004
-L4_1.gadget_id = 70220052
-L5_1 = {}
-L5_1.x = 469.3
-L5_1.y = 148.725
-L5_1.z = -202.468
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 2.388
-L5_1.y = 4.711
-L5_1.z = 17.637
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.isOneoff = true
-L4_1.persistent = true
-L4_1.area_id = 200
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1082005
-L2_1.name = "ANY_GADGET_DIE_82005"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_GADGET_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_GADGET_DIE_82005"
-L2_1.action = "action_EVENT_ANY_GADGET_DIE_82005"
-L2_1.trigger_count = 0
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1082006
-L3_1.name = "ANY_MONSTER_DIE_82006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_MONSTER_DIE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ANY_MONSTER_DIE_82006"
-L3_1.action = ""
-L3_1.trigger_count = 0
-L2_1[1] = L3_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 2
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 82002
-L5_1 = 82003
-L6_1 = 82004
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ANY_GADGET_DIE_82005"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 82001
-L4_1[1] = L5_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 82002
-L6_1 = 82003
-L7_1 = 82004
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 82002 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 155006082
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 82001, monster_id = 20010501, pos = { x = 469.723, y = 149.306, z = -202.995 }, rot = { x = 18.062, y = 286.077, z = 3.696 }, level = 36, drop_tag = "史莱姆", isOneoff = true, area_id = 200 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 82002, gadget_id = 70220050, pos = { x = 469.868, y = 149.072, z = -203.051 }, rot = { x = 346.382, y = 143.165, z = 348.438 }, level = 36, isOneoff = true, persistent = true, area_id = 200 },
+	{ config_id = 82003, gadget_id = 70220051, pos = { x = 468.903, y = 148.771, z = -203.337 }, rot = { x = 17.332, y = 209.119, z = 26.729 }, level = 36, isOneoff = true, persistent = true, area_id = 200 },
+	{ config_id = 82004, gadget_id = 70220052, pos = { x = 469.300, y = 148.725, z = -202.468 }, rot = { x = 2.388, y = 4.711, z = 17.637 }, level = 36, isOneoff = true, persistent = true, area_id = 200 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1082005, name = "ANY_GADGET_DIE_82005", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_82005", action = "action_EVENT_ANY_GADGET_DIE_82005", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	triggers = {
+		{ config_id = 1082006, name = "ANY_MONSTER_DIE_82006", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_82006", action = "", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 82002, 82003, 82004 },
+		regions = { },
+		triggers = { "ANY_GADGET_DIE_82005" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 82001 },
+		gadgets = { 82002, 82003, 82004 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_82005(context, evt)
+	if 82002 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_GADGET_DIE_82005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToGroupSuite
-  L3_2 = A0_2
-  L4_2 = 155006082
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : goto_groupSuite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_82005(context, evt)
+	-- group调整group进度,只对非randSuite有效
+	if 0 ~= ScriptLib.GoToGroupSuite(context, 155006082, 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : goto_groupSuite")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_82005 = L1_1

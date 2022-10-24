@@ -1,97 +1,90 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 245013005
-L1_1 = {}
-L1_1.group_id = 245013005
-L1_1.challenge_group_id = 245013001
-L1_1.close_cd = 6
-L1_1.reset_cd = 24
-L2_1 = {}
-L3_1 = {}
-L3_1.operatorEffectConfigId = 5002
-L3_1.bridgeConfigId = 5003
-L2_1[5001] = L3_1
-L3_1 = {}
-monsters = L3_1
-L3_1 = {}
-npcs = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 5001
-L4_1.gadget_id = 70360002
-L5_1 = {}
-L5_1.x = 36.155
-L5_1.y = 3.169
-L5_1.z = -32.119
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 5002
-L5_1.gadget_id = 70360140
-L6_1 = {}
-L6_1.x = 36.155
-L6_1.y = 3.169
-L6_1.z = -32.119
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 5003
-L6_1.gadget_id = 70350110
-L7_1 = {}
-L7_1.x = 32.15
-L7_1.y = 3.11
-L7_1.z = -42.48
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 90.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-gadgets = L3_1
-L3_1 = {}
-regions = L3_1
-L3_1 = {}
-triggers = L3_1
-L3_1 = {}
-variables = L3_1
-L3_1 = {}
-L3_1.suite = 1
-L3_1.end_suite = 0
-L3_1.rand_suite = false
-init_config = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 5001
-L7_1 = 5002
-L8_1 = 5003
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L3_1[1] = L4_1
-suites = L3_1
-L3_1 = require
-L4_1 = "V2_6/TowerDefense_SpecialGears_V3.0"
-L3_1(L4_1)
+-- 基础信息
+local base_info = {
+	group_id = 245013005
+}
+
+-- Trigger变量
+local defs = {
+	group_id = 245013005,
+	challenge_group_id = 245013001,
+	close_cd = 6,
+	reset_cd = 24
+}
+
+-- DEFS_MISCS
+local specialGears = 
+        {
+                [5001] = {operatorEffectConfigId = 5002, bridgeConfigId = 5003},
+        }
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 5001, gadget_id = 70360002, pos = { x = 36.155, y = 3.169, z = -32.119 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 5002, gadget_id = 70360140, pos = { x = 36.155, y = 3.169, z = -32.119 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 5003, gadget_id = 70350110, pos = { x = 32.150, y = 3.110, z = -42.480 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 5001, 5002, 5003 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_6/TowerDefense_SpecialGears_V3.0"

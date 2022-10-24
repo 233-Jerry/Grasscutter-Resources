@@ -1,291 +1,180 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
-L0_1 = {}
-L0_1.group_id = 155008739
-L1_1 = {}
-L1_1.group_ID = 155008739
-L1_1.gadget_RuneSeal = 739001
-L1_1.gadget_mask = 739002
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L5_1 = {}
-L6_1 = L1_1.gadget_RuneSeal
-L5_1[1] = L6_1
-L6_1 = {}
-L7_1 = L1_1.gadget_mask
-L6_1[1] = L7_1
-L7_1 = {}
-function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 1
-  L1_2(L2_2, L3_2, L4_2)
+-- 基础信息
+local base_info = {
+	group_id = 155008739
+}
+
+-- Trigger变量
+local defs = {
+	group_ID = 155008739,
+	gadget_RuneSeal = 739001,
+	gadget_mask = 739002
+}
+
+-- DEFS_MISCS
+local Controllers = {}
+local EnvControlGadgets = {}
+local Worktops = {}
+local DayAppearGadgets = {defs.gadget_RuneSeal}
+local NightAppearGadgets = {defs.gadget_mask}
+
+local gameplayStateFuncitons = 
+{
+	["0"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",1)
+	end,
+	["1"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",0)
+		ScriptLib.AddExtraGroupSuite(context, defs.group_ID, 2)
+
+	end,
+	["2"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",1)
+		ScriptLib.AddExtraGroupSuite(context, defs.group_ID, 3)
+
+	end
+
+}
+
+
+function UpdateGamePlayState(context)
+	local state = ScriptLib.GetGroupVariableValue(context, "gameplayState") 
+
+	gameplayStateFuncitons[tostring(state)](context)
+
 end
-L7_1["0"] = L8_1
-function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 0
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddExtraGroupSuite
-  L2_2 = A0_2
-  L3_2 = L1_1.group_ID
-  L4_2 = 2
-  L1_2(L2_2, L3_2, L4_2)
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 739001, gadget_id = 70590045, pos = { x = -271.490, y = 239.298, z = 335.933 }, rot = { x = 17.950, y = 93.036, z = 3.593 }, level = 36, isOneoff = true, persistent = true, interact_id = 57, area_id = 200 },
+	{ config_id = 739002, gadget_id = 70290217, pos = { x = -271.490, y = 239.298, z = 335.933 }, rot = { x = 17.950, y = 93.036, z = 3.593 }, level = 36, area_id = 200 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 初始化
+	{ config_id = 1739003, name = "GROUP_LOAD_739003", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_739003", trigger_count = 0 },
+	-- 监听gameplayState
+	{ config_id = 1739004, name = "VARIABLE_CHANGE_739004", event = EventType.EVENT_VARIABLE_CHANGE, source = "gameplayState", condition = "", action = "action_EVENT_VARIABLE_CHANGE_739004", trigger_count = 0 },
+	-- 解除刻印
+	{ config_id = 1739005, name = "GADGET_STATE_CHANGE_739005", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_739005", action = "action_EVENT_GADGET_STATE_CHANGE_739005" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "gameplayState", value = 1, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_739003", "VARIABLE_CHANGE_739004" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 739001 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_739005" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 739001 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_739003(context, evt)
+	UpdateGamePlayState(context)
+	return 0
 end
-L7_1["1"] = L8_1
-function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 1
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddExtraGroupSuite
-  L2_2 = A0_2
-  L3_2 = L1_1.group_ID
-  L4_2 = 3
-  L1_2(L2_2, L3_2, L4_2)
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_739004(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	UpdateGamePlayState(context)
+	return 0
 end
-L7_1["2"] = L8_1
-function L8_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.GetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "gameplayState"
-  L1_2 = L1_2(L2_2, L3_2)
-  L2_2 = tostring
-  L3_2 = L1_2
-  L2_2 = L2_2(L3_2)
-  L2_2 = L7_1[L2_2]
-  L3_2 = A0_2
-  L2_2(L3_2)
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_739005(context, evt)
+	if GadgetState.GearStart ~= ScriptLib.GetGadgetStateByConfigId(context, 155008739, 739001) then
+		return false
+	end
+	
+	return true
 end
-UpdateGamePlayState = L8_1
-L8_1 = {}
-monsters = L8_1
-L8_1 = {}
-npcs = L8_1
-L8_1 = {}
-L9_1 = {}
-L9_1.config_id = 739001
-L9_1.gadget_id = 70590045
-L10_1 = {}
-L10_1.x = -271.49
-L10_1.y = 239.298
-L10_1.z = 335.933
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 17.95
-L10_1.y = 93.036
-L10_1.z = 3.593
-L9_1.rot = L10_1
-L9_1.level = 36
-L9_1.isOneoff = true
-L9_1.persistent = true
-L9_1.interact_id = 57
-L9_1.area_id = 200
-L10_1 = {}
-L10_1.config_id = 739002
-L10_1.gadget_id = 70290217
-L11_1 = {}
-L11_1.x = -271.49
-L11_1.y = 239.298
-L11_1.z = 335.933
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 17.95
-L11_1.y = 93.036
-L11_1.z = 3.593
-L10_1.rot = L11_1
-L10_1.level = 36
-L10_1.area_id = 200
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-gadgets = L8_1
-L8_1 = {}
-regions = L8_1
-L8_1 = {}
-L9_1 = {}
-L9_1.config_id = 1739003
-L9_1.name = "GROUP_LOAD_739003"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_GROUP_LOAD
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = ""
-L9_1.action = "action_EVENT_GROUP_LOAD_739003"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1739004
-L10_1.name = "VARIABLE_CHANGE_739004"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_VARIABLE_CHANGE
-L10_1.event = L11_1
-L10_1.source = "gameplayState"
-L10_1.condition = ""
-L10_1.action = "action_EVENT_VARIABLE_CHANGE_739004"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1739005
-L11_1.name = "GADGET_STATE_CHANGE_739005"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_GADGET_STATE_CHANGE
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_739005"
-L11_1.action = "action_EVENT_GADGET_STATE_CHANGE_739005"
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L8_1[3] = L11_1
-triggers = L8_1
-L8_1 = {}
-L9_1 = {}
-L9_1.configId = 1
-L9_1.name = "gameplayState"
-L9_1.value = 1
-L9_1.no_refresh = true
-L8_1[1] = L9_1
-variables = L8_1
-L8_1 = {}
-L8_1.suite = 1
-L8_1.end_suite = 0
-L8_1.rand_suite = false
-init_config = L8_1
-L8_1 = {}
-L9_1 = {}
-L10_1 = {}
-L9_1.monsters = L10_1
-L10_1 = {}
-L9_1.gadgets = L10_1
-L10_1 = {}
-L9_1.regions = L10_1
-L10_1 = {}
-L11_1 = "GROUP_LOAD_739003"
-L12_1 = "VARIABLE_CHANGE_739004"
-L10_1[1] = L11_1
-L10_1[2] = L12_1
-L9_1.triggers = L10_1
-L9_1.rand_weight = 100
-L10_1 = {}
-L11_1 = {}
-L10_1.monsters = L11_1
-L11_1 = {}
-L12_1 = 739001
-L11_1[1] = L12_1
-L10_1.gadgets = L11_1
-L11_1 = {}
-L10_1.regions = L11_1
-L11_1 = {}
-L12_1 = "GADGET_STATE_CHANGE_739005"
-L11_1[1] = L12_1
-L10_1.triggers = L11_1
-L10_1.rand_weight = 100
-L11_1 = {}
-L12_1 = {}
-L11_1.monsters = L12_1
-L12_1 = {}
-L13_1 = 739001
-L12_1[1] = L13_1
-L11_1.gadgets = L12_1
-L12_1 = {}
-L11_1.regions = L12_1
-L12_1 = {}
-L11_1.triggers = L12_1
-L11_1.rand_weight = 100
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L8_1[3] = L11_1
-suites = L8_1
-function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_739005(context, evt)
+	-- 将本组内变量名为 "gameplayState" 的变量设置为 2
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "gameplayState", 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "activecount" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "activecount", 1, 155008180) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_739003 = L8_1
-function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_VARIABLE_CHANGE_739004 = L8_1
-function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = GadgetState
-  L2_2 = L2_2.GearStart
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = 155008739
-  L6_2 = 739001
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_739005 = L8_1
-function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gameplayState"
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "activecount"
-  L5_2 = 1
-  L6_2 = 155008180
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_739005 = L8_1
-L8_1 = require
-L9_1 = "V2_4/EnvState"
-L8_1(L9_1)
+
+require "V2_4/EnvState"

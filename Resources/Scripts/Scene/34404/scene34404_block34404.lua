@@ -1,78 +1,8 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L1_1 = {}
-L1_1.id = 234404001
-L1_1.refresh_id = 1
-L2_1 = {}
-L2_1.x = 1.398
-L2_1.y = -0.046
-L2_1.z = 10.851
-L1_1.pos = L2_1
-L2_1 = {}
-L3_1 = "CHANGE_HP_SUB_DRAWN"
-L4_1 = "CHANGE_HP_SUB_ABYSS"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.forbid_monster_die_types = L2_1
-L2_1 = {}
-L2_1.id = 234404002
-L2_1.refresh_id = 1
-L3_1 = {}
-L3_1.x = 0.121
-L3_1.y = -0.046
-L3_1.z = -7.1
-L2_1.pos = L3_1
-L3_1 = {}
-L4_1 = "CHANGE_HP_SUB_DRAWN"
-L5_1 = "CHANGE_HP_SUB_ABYSS"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.forbid_monster_die_types = L3_1
-L3_1 = {}
-L3_1.id = 234404003
-L3_1.refresh_id = 1002
-L4_1 = {}
-L4_1.x = 5.652
-L4_1.y = -0.046
-L4_1.z = 3.655
-L3_1.pos = L4_1
-L4_1 = {}
-L5_1 = "CHANGE_HP_SUB_DRAWN"
-L6_1 = "CHANGE_HP_SUB_ABYSS"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.forbid_monster_die_types = L4_1
-L4_1 = {}
-L4_1.id = 234404004
-L4_1.refresh_id = 1
-L5_1 = {}
-L5_1.x = -1.692
-L5_1.y = 0.003
-L5_1.z = 1.715
-L4_1.pos = L5_1
-L5_1 = {}
-L6_1 = "CHANGE_HP_SUB_DRAWN"
-L7_1 = "CHANGE_HP_SUB_ABYSS"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L4_1.forbid_monster_die_types = L5_1
-L5_1 = {}
-L5_1.id = 234404005
-L5_1.refresh_id = 1002
-L6_1 = {}
-L6_1.x = 5.643
-L6_1.y = 0.082
-L6_1.z = 3.701
-L5_1.pos = L6_1
-L6_1 = {}
-L7_1 = "CHANGE_HP_SUB_DRAWN"
-L8_1 = "CHANGE_HP_SUB_ABYSS"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.forbid_monster_die_types = L6_1
-L0_1[1] = L1_1
-L0_1[2] = L2_1
-L0_1[3] = L3_1
-L0_1[4] = L4_1
-L0_1[5] = L5_1
-groups = L0_1
+-- 所有的group
+groups = {
+	{ id = 234404001, refresh_id = 1, pos = { x = 1.398, y = -0.046, z = 10.851 }, forbid_monster_die_types = { "CHANGE_HP_SUB_DRAWN", "CHANGE_HP_SUB_ABYSS" } },
+	{ id = 234404002, refresh_id = 1, pos = { x = 0.121, y = -0.046, z = -7.100 }, forbid_monster_die_types = { "CHANGE_HP_SUB_DRAWN", "CHANGE_HP_SUB_ABYSS" } },
+	{ id = 234404003, refresh_id = 1002, pos = { x = 5.652, y = -0.046, z = 3.655 }, forbid_monster_die_types = { "CHANGE_HP_SUB_DRAWN", "CHANGE_HP_SUB_ABYSS" } },
+	{ id = 234404004, refresh_id = 1, pos = { x = -1.692, y = 0.003, z = 1.715 }, forbid_monster_die_types = { "CHANGE_HP_SUB_DRAWN", "CHANGE_HP_SUB_ABYSS" } },
+	{ id = 234404005, refresh_id = 1002, pos = { x = 5.643, y = 0.082, z = 3.701 }, forbid_monster_die_types = { "CHANGE_HP_SUB_DRAWN", "CHANGE_HP_SUB_ABYSS" } }
+}

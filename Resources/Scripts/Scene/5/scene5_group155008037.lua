@@ -1,403 +1,210 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.group_id = 155008037
-L1_1 = {}
-L1_1.duration = 60
-L1_1.kill_sum = 3
-L1_1.group_id = 155008037
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 37001
-L3_1.monster_id = 22010401
-L4_1 = {}
-L4_1.x = -330.877
-L4_1.y = 269.322
-L4_1.z = 318.925
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 9.416
-L4_1.y = 20.024
-L4_1.z = 353.063
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.drop_id = 1000100
-L3_1.area_id = 200
-L4_1 = {}
-L4_1.config_id = 37002
-L4_1.monster_id = 22010101
-L5_1 = {}
-L5_1.x = -331.758
-L5_1.y = 268.675
-L5_1.z = 328.662
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 6.187
-L5_1.y = 115.028
-L5_1.z = 9.923
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.drop_id = 1000100
-L4_1.area_id = 200
-L5_1 = {}
-L5_1.config_id = 37004
-L5_1.monster_id = 22010301
-L6_1 = {}
-L6_1.x = -323.649
-L6_1.y = 267.421
-L6_1.z = 325.999
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 350.977
-L6_1.y = 276.456
-L6_1.z = 352.557
-L5_1.rot = L6_1
-L5_1.level = 36
-L5_1.drop_id = 1000100
-L5_1.area_id = 200
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 37003
-L3_1.gadget_id = 70211021
-L4_1 = {}
-L4_1.x = -328.604
-L4_1.y = 268.284
-L4_1.z = 324.806
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 5.705
-L4_1.y = 359.414
-L4_1.z = 348.282
-L3_1.rot = L4_1
-L3_1.level = 16
-L3_1.drop_tag = "\230\136\152\230\150\151\233\171\152\231\186\167\231\168\187\229\166\187"
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.name = "chest"
-L4_1.exp = 1
-L3_1.explore = L4_1
-L3_1.area_id = 200
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1037005
-L3_1.name = "GROUP_LOAD_37005"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GROUP_LOAD
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GROUP_LOAD_37005"
-L3_1.action = "action_EVENT_GROUP_LOAD_37005"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1037006
-L4_1.name = "CHALLENGE_SUCCESS_37006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_CHALLENGE_SUCCESS
-L4_1.event = L5_1
-L4_1.source = "180"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_CHALLENGE_SUCCESS_37006"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1037007
-L5_1.name = "CHALLENGE_FAIL_37007"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_CHALLENGE_FAIL
-L5_1.event = L6_1
-L5_1.source = "180"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_CHALLENGE_FAIL_37007"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1037008
-L6_1.name = "GROUP_LOAD_37008"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GROUP_LOAD
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_GROUP_LOAD_37008"
-L6_1.action = "action_EVENT_GROUP_LOAD_37008"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1037009
-L7_1.name = "QUEST_FINISH_37009"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_QUEST_FINISH
-L7_1.event = L8_1
-L7_1.source = "7224902"
-L7_1.condition = ""
-L7_1.action = "action_EVENT_QUEST_FINISH_37009"
-L7_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "isFinish"
-L3_1.value = 0
-L3_1.no_refresh = true
-L2_1[1] = L3_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 2
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GROUP_LOAD_37005"
-L6_1 = "CHALLENGE_SUCCESS_37006"
-L7_1 = "CHALLENGE_FAIL_37007"
-L8_1 = "GROUP_LOAD_37008"
-L9_1 = "QUEST_FINISH_37009"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 37001
-L7_1 = 37002
-L8_1 = 37004
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 155008037
+}
+
+-- Trigger变量
+local defs = {
+	duration = 60,
+	kill_sum = 3,
+	group_id = 155008037
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 37001, monster_id = 22010401, pos = { x = -330.877, y = 269.322, z = 318.925 }, rot = { x = 9.416, y = 20.024, z = 353.063 }, level = 36, drop_id = 1000100, area_id = 200 },
+	{ config_id = 37002, monster_id = 22010101, pos = { x = -331.758, y = 268.675, z = 328.662 }, rot = { x = 6.187, y = 115.028, z = 9.923 }, level = 36, drop_id = 1000100, area_id = 200 },
+	{ config_id = 37004, monster_id = 22010301, pos = { x = -323.649, y = 267.421, z = 325.999 }, rot = { x = 350.977, y = 276.456, z = 352.557 }, level = 36, drop_id = 1000100, area_id = 200 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	-- 哀歌蛇心之地的挑战宝箱
+	{ config_id = 37003, gadget_id = 70211021, pos = { x = -328.604, y = 268.284, z = 324.806 }, rot = { x = 5.705, y = 359.414, z = 348.282 }, level = 16, drop_tag = "战斗高级稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 200 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 2.0rel加的保底，如果group在挑战中间被卸载了，需要在加载时加个保底置回初始状态
+	{ config_id = 1037005, name = "GROUP_LOAD_37005", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_37005", action = "action_EVENT_GROUP_LOAD_37005", trigger_count = 0 },
+	{ config_id = 1037006, name = "CHALLENGE_SUCCESS_37006", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "180", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_37006", trigger_count = 0 },
+	{ config_id = 1037007, name = "CHALLENGE_FAIL_37007", event = EventType.EVENT_CHALLENGE_FAIL, source = "180", condition = "", action = "action_EVENT_CHALLENGE_FAIL_37007", trigger_count = 0 },
+	-- 成功保底
+	{ config_id = 1037008, name = "GROUP_LOAD_37008", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_37008", action = "action_EVENT_GROUP_LOAD_37008", trigger_count = 0 },
+	{ config_id = 1037009, name = "QUEST_FINISH_37009", event = EventType.EVENT_QUEST_FINISH, source = "7224902", condition = "", action = "action_EVENT_QUEST_FINISH_37009", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "isFinish", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_37005", "CHALLENGE_SUCCESS_37006", "CHALLENGE_FAIL_37007", "GROUP_LOAD_37008", "QUEST_FINISH_37009" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { 37001, 37002, 37004 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_37005(context, evt)
+	-- 判断变量"isFinish"为0
+	if ScriptLib.GetGroupVariableValue(context, "isFinish") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_37005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "72249_ChallengeFaild_C"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 155008037
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_37005(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "72249_ChallengeFaild_C") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 删除suite2的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 155008037, 2)
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_37005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "72249_ChallengeSuccess_C"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinish"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 37003
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_37006(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "72249_ChallengeSuccess_C") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "isFinish" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isFinish", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 创建id为37003的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 37003 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_37006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "72249_ChallengeFaild_C"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 155008037
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_37007(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "72249_ChallengeFaild_C") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 删除suite2的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 155008037, 2)
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_37007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_37008(context, evt)
+	-- 判断变量"isFinish"为1
+	if ScriptLib.GetGroupVariableValue(context, "isFinish") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_37008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "72249_ChallengeSuccess_C"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 37003
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_37008(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "72249_ChallengeSuccess_C") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 创建id为37003的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 37003 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_37008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ActiveChallenge
-  L3_2 = A0_2
-  L4_2 = 180
-  L5_2 = 180
-  L6_2 = L1_1.duration
-  L7_2 = L1_1.group_id
-  L8_2 = L1_1.kill_sum
-  L9_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.MarkPlayerAction
-  L3_2 = A0_2
-  L4_2 = 3001
-  L5_2 = 1
-  L6_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_37009(context, evt)
+	-- 180号挑战,duration内击杀kill_sum的怪物
+	if 0 ~= ScriptLib.ActiveChallenge(context, 180, 180, defs.duration, defs.group_id, defs.kill_sum, 0) then
+	return -1
+	end
+	
+	-- 添加suite2的新内容
+	ScriptLib.AddExtraGroupSuite(context, defs.group_id, 2)
+	
+	
+	
+	
+	-- 运营数据埋点，匹配LD定义的规则使用
+	if 0 ~= ScriptLib.MarkPlayerAction(context, 3001, 1, 1) then
+	return -1
+	end
+	
+	return 0
+	
 end
-action_EVENT_QUEST_FINISH_37009 = L2_1

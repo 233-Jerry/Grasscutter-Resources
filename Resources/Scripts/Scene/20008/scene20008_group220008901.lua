@@ -1,219 +1,108 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 220008901
-L1_1 = {}
-L1_1.gadget_id_1 = 41
-L1_1.gadget_id_2 = 42
-L1_1.gadget_id_3 = 43
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 41
-L4_1 = RegionShape
-L4_1 = L4_1.CUBIC
-L3_1.shape = L4_1
-L4_1 = {}
-L4_1.x = 18.16
-L4_1.y = 3.0
-L4_1.z = 47.08
-L3_1.size = L4_1
-L4_1 = {}
-L4_1.x = 565.43
-L4_1.y = -62.666
-L4_1.z = 206.703
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.config_id = 42
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 5
-L5_1 = {}
-L5_1.x = 517.301
-L5_1.y = -65.573
-L5_1.z = 221.517
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.config_id = 43
-L6_1 = RegionShape
-L6_1 = L6_1.CUBIC
-L5_1.shape = L6_1
-L6_1 = {}
-L6_1.x = 3.88
-L6_1.y = 3.41
-L6_1.z = 50.31
-L5_1.size = L6_1
-L6_1 = {}
-L6_1.x = 471.269
-L6_1.y = -28.506
-L6_1.z = 266.122
-L5_1.pos = L6_1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1000041
-L3_1.name = "ENTER_REGION_41"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_41"
-L3_1.action = ""
-L3_1.trigger_count = 0
-L3_1.forbid_guest = false
-L4_1 = {}
-L4_1.config_id = 1000042
-L4_1.name = "ENTER_REGION_42"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_42"
-L4_1.action = ""
-L4_1.trigger_count = 0
-L4_1.forbid_guest = false
-L5_1 = {}
-L5_1.config_id = 1000043
-L5_1.name = "ENTER_REGION_43"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ENTER_REGION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ENTER_REGION_43"
-L5_1.action = ""
-L5_1.trigger_count = 0
-L5_1.forbid_guest = false
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = true
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 41
-L6_1 = 42
-L7_1 = 43
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ENTER_REGION_41"
-L6_1 = "ENTER_REGION_42"
-L7_1 = "ENTER_REGION_43"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetEntityType
-  L3_2 = A1_2.target_eid
-  L2_2 = L2_2(A0_2, L3_2)
-  L3_2 = EntityType
-  L3_2 = L3_2.AVATAR
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetQuestState
-    L3_2 = A0_2
-    L4_2 = A1_2.target_eid
-    L5_2 = 30707
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    L3_2 = QuestState
-    L3_2 = L3_2.UNFINISHED
-    if L2_2 == L3_2 then
-      L2_2 = A1_2.param1
-      L3_2 = L1_1.gadget_id_1
-      if L2_2 == L3_2 then
-        L2_2 = true
-        return L2_2
-      end
-    end
-  end
-  L2_2 = false
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220008901
+}
+
+-- Trigger变量
+local defs = {
+	gadget_id_1 = 41,
+	gadget_id_2 = 42,
+	gadget_id_3 = 43
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+	{ config_id = 41, shape = RegionShape.CUBIC, size = { x = 18.160, y = 3.000, z = 47.080 }, pos = { x = 565.430, y = -62.666, z = 206.703 } },
+	{ config_id = 42, shape = RegionShape.SPHERE, radius = 5, pos = { x = 517.301, y = -65.573, z = 221.517 } },
+	{ config_id = 43, shape = RegionShape.CUBIC, size = { x = 3.880, y = 3.410, z = 50.310 }, pos = { x = 471.269, y = -28.506, z = 266.122 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000041, name = "ENTER_REGION_41", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_41", action = "", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000042, name = "ENTER_REGION_42", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_42", action = "", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000043, name = "ENTER_REGION_43", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_43", action = "", trigger_count = 0, forbid_guest = false }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 41, 42, 43 },
+		triggers = { "ENTER_REGION_41", "ENTER_REGION_42", "ENTER_REGION_43" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_41(context, evt)
+	if ScriptLib.GetEntityType(evt.target_eid) == EntityType.AVATAR and ScriptLib.GetQuestState(context, evt.target_eid, 30707) == QuestState.UNFINISHED and evt.param1 == defs.gadget_id_1 then
+	  return true
+	 end
+	 return false
 end
-condition_EVENT_ENTER_REGION_41 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetEntityType
-  L3_2 = A1_2.target_eid
-  L2_2 = L2_2(A0_2, L3_2)
-  L3_2 = EntityType
-  L3_2 = L3_2.AVATAR
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetQuestState
-    L3_2 = A0_2
-    L4_2 = A1_2.target_eid
-    L5_2 = 30708
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    L3_2 = QuestState
-    L3_2 = L3_2.UNFINISHED
-    if L2_2 == L3_2 then
-      L2_2 = A1_2.param1
-      L3_2 = L1_1.gadget_id_2
-      if L2_2 == L3_2 then
-        L2_2 = true
-        return L2_2
-      end
-    end
-  end
-  L2_2 = false
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_42(context, evt)
+	if ScriptLib.GetEntityType(evt.target_eid) == EntityType.AVATAR and ScriptLib.GetQuestState(context, evt.target_eid, 30708) == QuestState.UNFINISHED and evt.param1 == defs.gadget_id_2 then
+	  return true
+	 end
+	 return false
 end
-condition_EVENT_ENTER_REGION_42 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetEntityType
-  L3_2 = A1_2.target_eid
-  L2_2 = L2_2(A0_2, L3_2)
-  L3_2 = EntityType
-  L3_2 = L3_2.AVATAR
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetQuestState
-    L3_2 = A0_2
-    L4_2 = A1_2.target_eid
-    L5_2 = 30709
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    L3_2 = QuestState
-    L3_2 = L3_2.UNFINISHED
-    if L2_2 == L3_2 then
-      L2_2 = A1_2.param1
-      L3_2 = L1_1.gadget_id_3
-      if L2_2 == L3_2 then
-        L2_2 = true
-        return L2_2
-      end
-    end
-  end
-  L2_2 = false
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_43(context, evt)
+	if ScriptLib.GetEntityType(evt.target_eid) == EntityType.AVATAR and ScriptLib.GetQuestState(context, evt.target_eid, 30709) == QuestState.UNFINISHED and evt.param1 == defs.gadget_id_3 then
+	  return true
+	 end
+	 return false
 end
-condition_EVENT_ENTER_REGION_43 = L2_1

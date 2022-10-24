@@ -1,443 +1,191 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 111101059
-L1_1 = {}
-L1_1.active_step = 201
-L1_1.inactive_step = 0
-L2_1 = {}
-L3_1 = 59001
-L4_1 = 59002
-L5_1 = 59003
-L6_1 = 59004
-L7_1 = 59005
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L1_1.gadget_array = L2_1
-L2_1 = {}
-L1_1.reset_gear_list = L2_1
-L2_1 = 0
-L3_1 = 0
-L4_1 = L1_1.gadget_array
-L4_1 = #L4_1
-L5_1 = {}
-monsters = L5_1
-L5_1 = {}
-npcs = L5_1
-L5_1 = {}
-L6_1 = {}
-L6_1.config_id = 59001
-L6_1.gadget_id = 70900056
-L7_1 = {}
-L7_1.x = 2791.482
-L7_1.y = 262.211
-L7_1.z = -1687.551
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 59002
-L7_1.gadget_id = 70900056
-L8_1 = {}
-L8_1.x = 2797.614
-L8_1.y = 262.366
-L8_1.z = -1688.897
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 59003
-L8_1.gadget_id = 70900056
-L9_1 = {}
-L9_1.x = 2803.183
-L9_1.y = 262.646
-L9_1.z = -1691.636
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = {}
-L9_1.config_id = 59004
-L9_1.gadget_id = 70900056
-L10_1 = {}
-L10_1.x = 2808.545
-L10_1.y = 263.093
-L10_1.z = -1696.578
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L10_1 = {}
-L10_1.config_id = 59005
-L10_1.gadget_id = 70900056
-L11_1 = {}
-L11_1.x = 2810.821
-L11_1.y = 263.716
-L11_1.z = -1702.131
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-gadgets = L5_1
-L5_1 = {}
-regions = L5_1
-L5_1 = {}
-L6_1 = {}
-L6_1.config_id = 1059006
-L6_1.name = "GADGET_STATE_CHANGE_59006"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GADGET_STATE_CHANGE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_59006"
-L6_1.action = "action_EVENT_GADGET_STATE_CHANGE_59006"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1059007
-L7_1.name = "VARIABLE_CHANGE_59007"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_VARIABLE_CHANGE
-L7_1.event = L8_1
-L7_1.source = "gear_reset"
-L7_1.condition = ""
-L7_1.action = "action_EVENT_VARIABLE_CHANGE_59007"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1059008
-L8_1.name = "VARIABLE_CHANGE_59008"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_VARIABLE_CHANGE
-L8_1.event = L9_1
-L8_1.source = "trigger_output"
-L8_1.condition = "condition_EVENT_VARIABLE_CHANGE_59008"
-L8_1.action = "action_EVENT_VARIABLE_CHANGE_59008"
-L8_1.trigger_count = 0
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-triggers = L5_1
-L5_1 = {}
-L6_1 = {}
-L6_1.configId = 1
-L6_1.name = "sort"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 2
-L7_1.name = "gear_reset"
-L7_1.value = 0
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 3
-L8_1.name = "v_error"
-L8_1.value = 0
-L8_1.no_refresh = false
-L9_1 = {}
-L9_1.configId = 4
-L9_1.name = "trigger_output"
-L9_1.value = 0
-L9_1.no_refresh = false
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-variables = L5_1
-L5_1 = {}
-L5_1.suite = 1
-L5_1.end_suite = 0
-L5_1.rand_suite = false
-init_config = L5_1
-L5_1 = {}
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L8_1 = 59001
-L9_1 = 59002
-L10_1 = 59003
-L11_1 = 59004
-L12_1 = 59005
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L7_1[5] = L12_1
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L8_1 = "GADGET_STATE_CHANGE_59006"
-L9_1 = "VARIABLE_CHANGE_59007"
-L10_1 = "VARIABLE_CHANGE_59008"
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L5_1[1] = L6_1
-suites = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = 1
-  L3_2 = L1_1.gadget_array
-  L3_2 = #L3_2
-  L4_2 = 1
-  for L5_2 = L2_2, L3_2, L4_2 do
-    L6_2 = L1_1.gadget_array
-    L6_2 = L6_2[L5_2]
-    L7_2 = A1_2.param2
-    if L6_2 == L7_2 then
-      L6_2 = true
-      return L6_2
-    end
-  end
-  L2_2 = false
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 111101059
+}
+
+-- Trigger变量
+local defs = {
+	active_step = 201,
+	inactive_step = 0,
+	gadget_array = {59001,59002,59003,59004,59005},
+	reset_gear_list = {}
+}
+
+-- DEFS_MISCS
+local v = 0
+local v_error = 0
+local max_bit = #defs.gadget_array
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 59001, gadget_id = 70900056, pos = { x = 2791.482, y = 262.211, z = -1687.551 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 59002, gadget_id = 70900056, pos = { x = 2797.614, y = 262.366, z = -1688.897 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 59003, gadget_id = 70900056, pos = { x = 2803.183, y = 262.646, z = -1691.636 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 59004, gadget_id = 70900056, pos = { x = 2808.545, y = 263.093, z = -1696.578 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 59005, gadget_id = 70900056, pos = { x = 2810.821, y = 263.716, z = -1702.131 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1059006, name = "GADGET_STATE_CHANGE_59006", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_59006", action = "action_EVENT_GADGET_STATE_CHANGE_59006", trigger_count = 0 },
+	{ config_id = 1059007, name = "VARIABLE_CHANGE_59007", event = EventType.EVENT_VARIABLE_CHANGE, source = "gear_reset", condition = "", action = "action_EVENT_VARIABLE_CHANGE_59007", trigger_count = 0 },
+	{ config_id = 1059008, name = "VARIABLE_CHANGE_59008", event = EventType.EVENT_VARIABLE_CHANGE, source = "trigger_output", condition = "condition_EVENT_VARIABLE_CHANGE_59008", action = "action_EVENT_VARIABLE_CHANGE_59008", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "sort", value = 0, no_refresh = false },
+	{ config_id = 2, name = "gear_reset", value = 0, no_refresh = false },
+	{ config_id = 3, name = "v_error", value = 0, no_refresh = false },
+	{ config_id = 4, name = "trigger_output", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 59001, 59002, 59003, 59004, 59005 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_59006", "VARIABLE_CHANGE_59007", "VARIABLE_CHANGE_59008" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_59006(context, evt)
+	for i=1,#defs.gadget_array do
+		if defs.gadget_array[i] == evt.param2 then
+			return true
+		end
+	end
+	return false
 end
-condition_EVENT_GADGET_STATE_CHANGE_59006 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = L4_1
-  if not (9 < L2_2) then
-    L2_2 = L4_1
-    if not (L2_2 <= 1) then
-      goto lbl_9
-    end
-  end
-  L2_2 = -1
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = A1_2.param1
-  L3_2 = L1_1.active_step
-  if L2_2 == L3_2 then
-    L2_2 = 1
-    L3_2 = L4_1
-    L4_2 = 1
-    for L5_2 = L2_2, L3_2, L4_2 do
-      L6_2 = L1_1.gadget_array
-      L6_2 = L6_2[L5_2]
-      L7_2 = A1_2.param2
-      if L6_2 == L7_2 then
-        L6_2 = ScriptLib
-        L6_2 = L6_2.GetGroupVariableValue
-        L7_2 = A0_2
-        L8_2 = "sort"
-        L6_2 = L6_2(L7_2, L8_2)
-        L2_1 = L6_2
-        L6_2 = L2_1
-        L6_2 = 10 * L6_2
-        L6_2 = L6_2 + L5_2
-        L2_1 = L6_2
-        L6_2 = ScriptLib
-        L6_2 = L6_2.SetGroupVariableValue
-        L7_2 = A0_2
-        L8_2 = "sort"
-        L9_2 = L2_1
-        L6_2(L7_2, L8_2, L9_2)
-        break
-      end
-      L6_2 = L4_1
-      if L5_2 == L6_2 then
-        L6_2 = L1_1.gadget_array
-        L6_2 = L6_2[L5_2]
-        L7_2 = A1_2.param2
-        if L6_2 ~= L7_2 then
-          L6_2 = ScriptLib
-          L6_2 = L6_2.SetGroupVariableValue
-          L7_2 = A0_2
-          L8_2 = "v_error"
-          L9_2 = 1
-          L6_2(L7_2, L8_2, L9_2)
-          L6_2 = L2_1
-          L6_2 = 10 * L6_2
-          L2_1 = L6_2
-        end
-      end
-    end
-  end
-  L2_2 = L2_1
-  L3_2 = L4_1
-  L3_2 = L3_2 - 1
-  L3_2 = 10 ^ L3_2
-  if L2_2 > L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "v_error"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_1 = L2_2
-    L2_2 = L3_1
-    if 0 == L2_2 then
-      L2_2 = L4_1
-      L3_2 = 1
-      L4_2 = -1
-      for L5_2 = L2_2, L3_2, L4_2 do
-        L6_2 = L2_1
-        L6_2 = L6_2 % 10
-        if L6_2 ~= L5_2 then
-          L6_2 = 1
-          L3_1 = L6_2
-          break
-        end
-        L6_2 = math
-        L6_2 = L6_2.floor
-        L7_2 = L2_1
-        L7_2 = L7_2 / 10
-        L6_2 = L6_2(L7_2)
-        L2_1 = L6_2
-      end
-    end
-    L2_2 = 0
-    L2_1 = L2_2
-    L2_2 = L3_1
-    if L2_2 ~= 1 then
-      L2_2 = -1
-      L3_1 = L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "sort"
-    L5_2 = L2_1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "gear_reset"
-    L5_2 = L3_1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "v_error"
-    L5_2 = 0
-    L2_2(L3_2, L4_2, L5_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_59006(context, evt)
+	if max_bit > 9 or max_bit <= 1 then
+		return -1
+	end
+	if evt.param1 == defs.active_step then
+		--操作顺序入栈
+		for i = 1,max_bit do
+			if defs.gadget_array[i] == evt.param2 then
+				v = ScriptLib.GetGroupVariableValue(context, "sort")
+				v = 10*v + i
+				ScriptLib.SetGroupVariableValue(context, "sort", v)
+				break 
+			end
+			if i == max_bit and defs.gadget_array[i] ~= evt.param2 then
+				ScriptLib.SetGroupVariableValue(context, "v_error", 1)
+				v = 10*v
+			end
+		end
+	end
+	--v的位数足够时进行出栈检测
+	if v > 10^(max_bit-1) then
+		v_error = ScriptLib.GetGroupVariableValue(context, "v_error")
+		--v_error有问题时直接清空栈并重置
+		if 0 == v_error then
+			for i=max_bit,1,-1 do
+				if v%10 ~= i then
+					v_error = 1
+					break
+				end
+				v = math.floor(v/10)
+			end
+		end
+		v = 0
+		if v_error ~= 1 then
+			v_error = -1
+		end
+		ScriptLib.SetGroupVariableValue(context, "sort", v) 
+		ScriptLib.SetGroupVariableValue(context, "gear_reset", v_error)
+		ScriptLib.SetGroupVariableValue(context, "v_error", 0)
+	end
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_59006 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = A1_2.param1
-  if L2_2 == 1 then
-    L2_2 = L1_1.reset_gear_list
-    L2_2 = #L2_2
-    if L2_2 == 0 then
-      L2_2 = suites
-      L2_2 = L2_2[1]
-      L2_2 = L2_2.gadgets
-      L1_1.reset_gear_list = L2_2
-    end
-    L2_2 = 1
-    L3_2 = L1_1.reset_gear_list
-    L3_2 = #L3_2
-    L4_2 = 1
-    for L5_2 = L2_2, L3_2, L4_2 do
-      L6_2 = ScriptLib
-      L6_2 = L6_2.SetGroupGadgetStateByConfigId
-      L7_2 = A0_2
-      L8_2 = 0
-      L9_2 = L1_1.reset_gear_list
-      L9_2 = L9_2[L5_2]
-      L10_2 = L1_1.inactive_step
-      L6_2(L7_2, L8_2, L9_2, L10_2)
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "gear_reset"
-    L5_2 = 0
-    L2_2(L3_2, L4_2, L5_2)
-  else
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "trigger_output"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gear_reset"
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_59007(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	if evt.param1 == evt.param2 then
+		return -1
+	end
+	if evt.param1 == 1 then
+		if #defs.reset_gear_list == 0 then
+			defs.reset_gear_list = suites[1].gadgets
+		end
+		for i=1,#defs.reset_gear_list do
+			ScriptLib.SetGroupGadgetStateByConfigId(context, 0, defs.reset_gear_list[i], defs.inactive_step)
+		end
+		ScriptLib.SetGroupVariableValue(context, "gear_reset", 0)
+	else
+		--外接标记
+		ScriptLib.ChangeGroupVariableValue(context, "trigger_output", 1)
+	end
+	--还原标记
+	ScriptLib.SetGroupVariableValue(context, "gear_reset", 0)
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_59007 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param1
-  if 0 < L2_2 then
-    L2_2 = A1_2.param1
-    L3_2 = A1_2.param2
-    if L2_2 ~= L3_2 then
-      L2_2 = true
-      return L2_2
-    end
-  end
-  L2_2 = false
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_59008(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	if evt.param1 > 0 and evt.param1 ~= evt.param2 then
+		return true
+	end
+	return false
 end
-condition_EVENT_VARIABLE_CHANGE_59008 = L5_1
-function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintLog
-  L3_2 = "## trigger_output="
-  L4_2 = A1_2.param1
-  L3_2 = L3_2 .. L4_2
-  L2_2(A0_2, L3_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupDead
-  L3_2 = A0_2
-  L4_2 = 0
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_59008(context, evt)
+	ScriptLib.PrintLog("## trigger_output="..evt.param1)
+	ScriptLib.SetGroupDead(context, 0)
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_59008 = L5_1

@@ -1,1542 +1,548 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1
-L0_1 = {}
-L0_1.group_id = 201011044
-L1_1 = {}
-L1_1.gadget_id_1 = 1021
-L1_1.gadget_id_2 = 7122
-L1_1.gadget_id_3 = 7123
-L1_1.gadget_id_4 = 7124
-L1_1.gadget_id_5 = 7125
-L1_1.gadget_id_6 = 7121
-L1_1.gadget_id_7 = 1022
-L1_1.gadget_id_8 = 7142
-L1_1.gadget_id_9 = 7143
-L1_1.gadget_id_10 = 7144
-L1_1.gadget_id_11 = 7145
-L1_1.gadget_id_12 = 7146
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 156
-L3_1.monster_id = 21010201
-L4_1 = {}
-L4_1.x = 167.874
-L4_1.y = 0.641
-L4_1.z = 50.864
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 276.499
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 7
-L3_1.disableWander = true
-L4_1 = {}
-L4_1.config_id = 157
-L4_1.monster_id = 21010201
-L5_1 = {}
-L5_1.x = 169.971
-L5_1.y = 0.641
-L5_1.z = 53.143
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 269.795
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 7
-L4_1.disableWander = true
-L5_1 = {}
-L5_1.config_id = 158
-L5_1.monster_id = 21010201
-L6_1 = {}
-L6_1.x = 170.324
-L6_1.y = 0.641
-L6_1.z = 49.203
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 280.679
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 7
-L5_1.disableWander = true
-L6_1 = {}
-L6_1.config_id = 159
-L6_1.monster_id = 21010401
-L7_1 = {}
-L7_1.x = 175.011
-L7_1.y = 0.641
-L7_1.z = 51.242
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 275.059
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 7
-L6_1.disableWander = true
-L7_1 = {}
-L7_1.config_id = 160
-L7_1.monster_id = 20011301
-L8_1 = {}
-L8_1.x = 218.643
-L8_1.y = 0.641
-L8_1.z = 52.231
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 270.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 7
-L7_1.disableWander = true
-L8_1 = {}
-L8_1.config_id = 161
-L8_1.monster_id = 20011201
-L9_1 = {}
-L9_1.x = 221.243
-L9_1.y = 0.641
-L9_1.z = 53.35
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 270.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 7
-L8_1.disableWander = true
-L9_1 = {}
-L9_1.config_id = 162
-L9_1.monster_id = 20011201
-L10_1 = {}
-L10_1.x = 221.237
-L10_1.y = 0.641
-L10_1.z = 51.997
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 270.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 7
-L9_1.disableWander = true
-L10_1 = {}
-L10_1.config_id = 163
-L10_1.monster_id = 20011201
-L11_1 = {}
-L11_1.x = 221.226
-L11_1.y = 0.641
-L11_1.z = 50.564
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 270.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 7
-L10_1.disableWander = true
-L11_1 = {}
-L11_1.config_id = 164
-L11_1.monster_id = 20011101
-L12_1 = {}
-L12_1.x = 270.552
-L12_1.y = 0.641
-L12_1.z = 48.327
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 270.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 7
-L11_1.disableWander = true
-L12_1 = {}
-L12_1.config_id = 165
-L12_1.monster_id = 20011001
-L13_1 = {}
-L13_1.x = 268.349
-L13_1.y = 0.641
-L13_1.z = 49.424
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 270.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 7
-L12_1.disableWander = true
-L13_1 = {}
-L13_1.config_id = 166
-L13_1.monster_id = 20011001
-L14_1 = {}
-L14_1.x = 269.953
-L14_1.y = 0.641
-L14_1.z = 50.098
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 270.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 7
-L13_1.disableWander = true
-L14_1 = {}
-L14_1.config_id = 167
-L14_1.monster_id = 20011001
-L15_1 = {}
-L15_1.x = 271.658
-L15_1.y = 0.641
-L15_1.z = 50.21
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 270.0
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 7
-L14_1.disableWander = true
-L15_1 = {}
-L15_1.config_id = 168
-L15_1.monster_id = 20010301
-L16_1 = {}
-L16_1.x = 317.223
-L16_1.y = 0.641
-L16_1.z = 47.567
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 270.0
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 7
-L15_1.disableWander = true
-L16_1 = {}
-L16_1.config_id = 169
-L16_1.monster_id = 20010301
-L17_1 = {}
-L17_1.x = 318.681
-L17_1.y = 0.641
-L17_1.z = 48.398
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 270.0
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 7
-L16_1.disableWander = true
-L17_1 = {}
-L17_1.config_id = 170
-L17_1.monster_id = 20010301
-L18_1 = {}
-L18_1.x = 321.273
-L18_1.y = 0.641
-L18_1.z = 47.808
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 270.0
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 7
-L17_1.disableWander = true
-L18_1 = {}
-L18_1.config_id = 171
-L18_1.monster_id = 20010401
-L19_1 = {}
-L19_1.x = 319.025
-L19_1.y = 0.641
-L19_1.z = 45.669
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 270.0
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.level = 7
-L18_1.disableWander = true
-L19_1 = {}
-L19_1.config_id = 172
-L19_1.monster_id = 20010901
-L20_1 = {}
-L20_1.x = 369.768
-L20_1.y = 0.641
-L20_1.z = 48.651
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 270.0
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.level = 7
-L19_1.disableWander = true
-L20_1 = {}
-L20_1.config_id = 173
-L20_1.monster_id = 20010801
-L21_1 = {}
-L21_1.x = 367.618
-L21_1.y = 0.641
-L21_1.z = 49.474
-L20_1.pos = L21_1
-L21_1 = {}
-L21_1.x = 0.0
-L21_1.y = 270.0
-L21_1.z = 0.0
-L20_1.rot = L21_1
-L20_1.level = 7
-L20_1.disableWander = true
-L21_1 = {}
-L21_1.config_id = 174
-L21_1.monster_id = 20011001
-L22_1 = {}
-L22_1.x = 370.272
-L22_1.y = 0.641
-L22_1.z = 50.088
-L21_1.pos = L22_1
-L22_1 = {}
-L22_1.x = 0.0
-L22_1.y = 270.0
-L22_1.z = 0.0
-L21_1.rot = L22_1
-L21_1.level = 7
-L21_1.disableWander = true
-L22_1 = {}
-L22_1.config_id = 175
-L22_1.monster_id = 20011001
-L23_1 = {}
-L23_1.x = 373.068
-L23_1.y = 0.641
-L23_1.z = 49.662
-L22_1.pos = L23_1
-L23_1 = {}
-L23_1.x = 0.0
-L23_1.y = 270.0
-L23_1.z = 0.0
-L22_1.rot = L23_1
-L22_1.level = 7
-L22_1.disableWander = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-L2_1[13] = L15_1
-L2_1[14] = L16_1
-L2_1[15] = L17_1
-L2_1[16] = L18_1
-L2_1[17] = L19_1
-L2_1[18] = L20_1
-L2_1[19] = L21_1
-L2_1[20] = L22_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 266
-L3_1.gadget_id = 70360002
-L4_1 = {}
-L4_1.x = 157.888
-L4_1.y = 0.641
-L4_1.z = 35.59
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 179.902
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 267
-L4_1.gadget_id = 70360002
-L5_1 = {}
-L5_1.x = 147.728
-L5_1.y = 1.133
-L5_1.z = 7.703
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 102.298
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 270
-L5_1.gadget_id = 70220010
-L6_1 = {}
-L6_1.x = 471.29
-L6_1.y = 2.748
-L6_1.z = 103.818
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 85.569
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 271
-L6_1.gadget_id = 70220010
-L7_1 = {}
-L7_1.x = 470.838
-L7_1.y = 0.633
-L7_1.z = 93.63
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 85.569
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 272
-L7_1.gadget_id = 70220010
-L8_1 = {}
-L8_1.x = 459.433
-L8_1.y = 0.633
-L8_1.z = 93.788
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 85.569
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 273
-L8_1.gadget_id = 70220010
-L9_1 = {}
-L9_1.x = 458.11
-L9_1.y = 0.633
-L9_1.z = 109.143
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 85.569
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 137
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 5
-L4_1 = {}
-L4_1.x = 160.216
-L4_1.y = 0.641
-L4_1.z = 37.783
-L3_1.pos = L4_1
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1000113
-L3_1.name = "GADGET_CREATE_113"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_CREATE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_CREATE_113"
-L3_1.action = "action_EVENT_GADGET_CREATE_113"
-L4_1 = {}
-L4_1.config_id = 1000114
-L4_1.name = "SELECT_OPTION_114"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SELECT_OPTION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SELECT_OPTION_114"
-L4_1.action = "action_EVENT_SELECT_OPTION_114"
-L4_1.trigger_count = 0
-L4_1.forbid_guest = false
-L5_1 = {}
-L5_1.config_id = 1000115
-L5_1.name = "SELECT_OPTION_115"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_SELECT_OPTION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_SELECT_OPTION_115"
-L5_1.action = "action_EVENT_SELECT_OPTION_115"
-L5_1.trigger_count = 0
-L5_1.forbid_guest = false
-L6_1 = {}
-L6_1.config_id = 1000116
-L6_1.name = "SELECT_OPTION_116"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_SELECT_OPTION
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_SELECT_OPTION_116"
-L6_1.action = "action_EVENT_SELECT_OPTION_116"
-L6_1.trigger_count = 0
-L6_1.forbid_guest = false
-L7_1 = {}
-L7_1.config_id = 1000117
-L7_1.name = "SELECT_OPTION_117"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_SELECT_OPTION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_SELECT_OPTION_117"
-L7_1.action = "action_EVENT_SELECT_OPTION_117"
-L7_1.trigger_count = 0
-L7_1.forbid_guest = false
-L8_1 = {}
-L8_1.config_id = 1000118
-L8_1.name = "SELECT_OPTION_118"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_SELECT_OPTION
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_SELECT_OPTION_118"
-L8_1.action = "action_EVENT_SELECT_OPTION_118"
-L8_1.trigger_count = 0
-L8_1.forbid_guest = false
-L9_1 = {}
-L9_1.config_id = 1000119
-L9_1.name = "GADGET_CREATE_119"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_GADGET_CREATE
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_GADGET_CREATE_119"
-L9_1.action = "action_EVENT_GADGET_CREATE_119"
-L10_1 = {}
-L10_1.config_id = 1000120
-L10_1.name = "SELECT_OPTION_120"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_SELECT_OPTION
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_SELECT_OPTION_120"
-L10_1.action = "action_EVENT_SELECT_OPTION_120"
-L10_1.trigger_count = 0
-L10_1.forbid_guest = false
-L11_1 = {}
-L11_1.config_id = 1000121
-L11_1.name = "SELECT_OPTION_121"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_SELECT_OPTION
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_SELECT_OPTION_121"
-L11_1.action = "action_EVENT_SELECT_OPTION_121"
-L11_1.trigger_count = 0
-L11_1.forbid_guest = false
-L12_1 = {}
-L12_1.config_id = 1000122
-L12_1.name = "SELECT_OPTION_122"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_SELECT_OPTION
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = "condition_EVENT_SELECT_OPTION_122"
-L12_1.action = "action_EVENT_SELECT_OPTION_122"
-L12_1.trigger_count = 0
-L12_1.forbid_guest = false
-L13_1 = {}
-L13_1.config_id = 1000123
-L13_1.name = "SELECT_OPTION_123"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_SELECT_OPTION
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_SELECT_OPTION_123"
-L13_1.action = "action_EVENT_SELECT_OPTION_123"
-L13_1.trigger_count = 0
-L13_1.forbid_guest = false
-L14_1 = {}
-L14_1.config_id = 1000124
-L14_1.name = "SELECT_OPTION_124"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_SELECT_OPTION
-L14_1.event = L15_1
-L14_1.source = ""
-L14_1.condition = "condition_EVENT_SELECT_OPTION_124"
-L14_1.action = "action_EVENT_SELECT_OPTION_124"
-L14_1.trigger_count = 0
-L14_1.forbid_guest = false
-L15_1 = {}
-L15_1.config_id = 1000137
-L15_1.name = "ENTER_REGION_137"
-L16_1 = EventType
-L16_1 = L16_1.EVENT_ENTER_REGION
-L15_1.event = L16_1
-L15_1.source = ""
-L15_1.condition = ""
-L15_1.action = ""
-L15_1.forbid_guest = false
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-L2_1[13] = L15_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L5_1 = 156
-L6_1 = 157
-L7_1 = 158
-L8_1 = 159
-L9_1 = 160
-L10_1 = 161
-L11_1 = 162
-L12_1 = 163
-L13_1 = 164
-L14_1 = 165
-L15_1 = 166
-L16_1 = 167
-L17_1 = 168
-L18_1 = 169
-L19_1 = 170
-L20_1 = 171
-L21_1 = 172
-L22_1 = 173
-L23_1 = 174
-L24_1 = 175
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L4_1[11] = L15_1
-L4_1[12] = L16_1
-L4_1[13] = L17_1
-L4_1[14] = L18_1
-L4_1[15] = L19_1
-L4_1[16] = L20_1
-L4_1[17] = L21_1
-L4_1[18] = L22_1
-L4_1[19] = L23_1
-L4_1[20] = L24_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 267
-L6_1 = 270
-L7_1 = 271
-L8_1 = 272
-L9_1 = 273
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 137
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_CREATE_113"
-L6_1 = "SELECT_OPTION_114"
-L7_1 = "SELECT_OPTION_115"
-L8_1 = "SELECT_OPTION_116"
-L9_1 = "SELECT_OPTION_117"
-L10_1 = "SELECT_OPTION_118"
-L11_1 = "GADGET_CREATE_119"
-L12_1 = "SELECT_OPTION_120"
-L13_1 = "SELECT_OPTION_121"
-L14_1 = "SELECT_OPTION_122"
-L15_1 = "SELECT_OPTION_123"
-L16_1 = "SELECT_OPTION_124"
-L17_1 = "ENTER_REGION_137"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L4_1[11] = L15_1
-L4_1[12] = L16_1
-L4_1[13] = L17_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 267
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "GADGET_CREATE_113"
-L7_1 = "SELECT_OPTION_114"
-L8_1 = "SELECT_OPTION_115"
-L9_1 = "SELECT_OPTION_116"
-L10_1 = "SELECT_OPTION_117"
-L11_1 = "SELECT_OPTION_118"
-L12_1 = "GADGET_CREATE_119"
-L13_1 = "SELECT_OPTION_120"
-L14_1 = "SELECT_OPTION_121"
-L15_1 = "SELECT_OPTION_122"
-L16_1 = "SELECT_OPTION_123"
-L17_1 = "SELECT_OPTION_124"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L5_1[7] = L12_1
-L5_1[8] = L13_1
-L5_1[9] = L14_1
-L5_1[10] = L15_1
-L5_1[11] = L16_1
-L5_1[12] = L17_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 0
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 267
-L6_1[1] = L7_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "GADGET_CREATE_113"
-L8_1 = "SELECT_OPTION_114"
-L9_1 = "SELECT_OPTION_115"
-L10_1 = "SELECT_OPTION_116"
-L11_1 = "SELECT_OPTION_117"
-L12_1 = "SELECT_OPTION_118"
-L13_1 = "GADGET_CREATE_119"
-L14_1 = "SELECT_OPTION_120"
-L15_1 = "SELECT_OPTION_121"
-L16_1 = "SELECT_OPTION_122"
-L17_1 = "SELECT_OPTION_123"
-L18_1 = "SELECT_OPTION_124"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L6_1[7] = L13_1
-L6_1[8] = L14_1
-L6_1[9] = L15_1
-L6_1[10] = L16_1
-L6_1[11] = L17_1
-L6_1[12] = L18_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 0
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L8_1 = 267
-L7_1[1] = L8_1
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L8_1 = "GADGET_CREATE_113"
-L9_1 = "SELECT_OPTION_114"
-L10_1 = "SELECT_OPTION_115"
-L11_1 = "SELECT_OPTION_116"
-L12_1 = "SELECT_OPTION_117"
-L13_1 = "SELECT_OPTION_118"
-L14_1 = "GADGET_CREATE_119"
-L15_1 = "SELECT_OPTION_120"
-L16_1 = "SELECT_OPTION_121"
-L17_1 = "SELECT_OPTION_122"
-L18_1 = "SELECT_OPTION_123"
-L19_1 = "SELECT_OPTION_124"
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L7_1[5] = L12_1
-L7_1[6] = L13_1
-L7_1[7] = L14_1
-L7_1[8] = L15_1
-L7_1[9] = L16_1
-L7_1[10] = L17_1
-L7_1[11] = L18_1
-L7_1[12] = L19_1
-L6_1.triggers = L7_1
-L6_1.rand_weight = 0
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L9_1 = 267
-L8_1[1] = L9_1
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L9_1 = "GADGET_CREATE_113"
-L10_1 = "SELECT_OPTION_114"
-L11_1 = "SELECT_OPTION_115"
-L12_1 = "SELECT_OPTION_116"
-L13_1 = "SELECT_OPTION_117"
-L14_1 = "SELECT_OPTION_118"
-L15_1 = "GADGET_CREATE_119"
-L16_1 = "SELECT_OPTION_120"
-L17_1 = "SELECT_OPTION_121"
-L18_1 = "SELECT_OPTION_122"
-L19_1 = "SELECT_OPTION_123"
-L20_1 = "SELECT_OPTION_124"
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L8_1[3] = L11_1
-L8_1[4] = L12_1
-L8_1[5] = L13_1
-L8_1[6] = L14_1
-L8_1[7] = L15_1
-L8_1[8] = L16_1
-L8_1[9] = L17_1
-L8_1[10] = L18_1
-L8_1[11] = L19_1
-L8_1[12] = L20_1
-L7_1.triggers = L8_1
-L7_1.rand_weight = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1021 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 201011044
+}
+
+-- Trigger变量
+local defs = {
+	gadget_id_1 = 1021,
+	gadget_id_2 = 7122,
+	gadget_id_3 = 7123,
+	gadget_id_4 = 7124,
+	gadget_id_5 = 7125,
+	gadget_id_6 = 7121,
+	gadget_id_7 = 1022,
+	gadget_id_8 = 7142,
+	gadget_id_9 = 7143,
+	gadget_id_10 = 7144,
+	gadget_id_11 = 7145,
+	gadget_id_12 = 7146
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 156, monster_id = 21010201, pos = { x = 167.874, y = 0.641, z = 50.864 }, rot = { x = 0.000, y = 276.499, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 157, monster_id = 21010201, pos = { x = 169.971, y = 0.641, z = 53.143 }, rot = { x = 0.000, y = 269.795, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 158, monster_id = 21010201, pos = { x = 170.324, y = 0.641, z = 49.203 }, rot = { x = 0.000, y = 280.679, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 159, monster_id = 21010401, pos = { x = 175.011, y = 0.641, z = 51.242 }, rot = { x = 0.000, y = 275.059, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 160, monster_id = 20011301, pos = { x = 218.643, y = 0.641, z = 52.231 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 161, monster_id = 20011201, pos = { x = 221.243, y = 0.641, z = 53.350 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 162, monster_id = 20011201, pos = { x = 221.237, y = 0.641, z = 51.997 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 163, monster_id = 20011201, pos = { x = 221.226, y = 0.641, z = 50.564 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 164, monster_id = 20011101, pos = { x = 270.552, y = 0.641, z = 48.327 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 165, monster_id = 20011001, pos = { x = 268.349, y = 0.641, z = 49.424 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 166, monster_id = 20011001, pos = { x = 269.953, y = 0.641, z = 50.098 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 167, monster_id = 20011001, pos = { x = 271.658, y = 0.641, z = 50.210 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 168, monster_id = 20010301, pos = { x = 317.223, y = 0.641, z = 47.567 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 169, monster_id = 20010301, pos = { x = 318.681, y = 0.641, z = 48.398 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 170, monster_id = 20010301, pos = { x = 321.273, y = 0.641, z = 47.808 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 171, monster_id = 20010401, pos = { x = 319.025, y = 0.641, z = 45.669 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 172, monster_id = 20010901, pos = { x = 369.768, y = 0.641, z = 48.651 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 173, monster_id = 20010801, pos = { x = 367.618, y = 0.641, z = 49.474 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 174, monster_id = 20011001, pos = { x = 370.272, y = 0.641, z = 50.088 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true },
+	{ config_id = 175, monster_id = 20011001, pos = { x = 373.068, y = 0.641, z = 49.662 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 7, disableWander = true }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 266, gadget_id = 70360002, pos = { x = 157.888, y = 0.641, z = 35.590 }, rot = { x = 0.000, y = 179.902, z = 0.000 }, level = 1 },
+	{ config_id = 267, gadget_id = 70360002, pos = { x = 147.728, y = 1.133, z = 7.703 }, rot = { x = 0.000, y = 102.298, z = 0.000 }, level = 1 },
+	{ config_id = 270, gadget_id = 70220010, pos = { x = 471.290, y = 2.748, z = 103.818 }, rot = { x = 0.000, y = 85.569, z = 0.000 }, level = 1 },
+	{ config_id = 271, gadget_id = 70220010, pos = { x = 470.838, y = 0.633, z = 93.630 }, rot = { x = 0.000, y = 85.569, z = 0.000 }, level = 1 },
+	{ config_id = 272, gadget_id = 70220010, pos = { x = 459.433, y = 0.633, z = 93.788 }, rot = { x = 0.000, y = 85.569, z = 0.000 }, level = 1 },
+	{ config_id = 273, gadget_id = 70220010, pos = { x = 458.110, y = 0.633, z = 109.143 }, rot = { x = 0.000, y = 85.569, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 137, shape = RegionShape.SPHERE, radius = 5, pos = { x = 160.216, y = 0.641, z = 37.783 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000113, name = "GADGET_CREATE_113", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_113", action = "action_EVENT_GADGET_CREATE_113" },
+	{ config_id = 1000114, name = "SELECT_OPTION_114", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_114", action = "action_EVENT_SELECT_OPTION_114", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000115, name = "SELECT_OPTION_115", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_115", action = "action_EVENT_SELECT_OPTION_115", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000116, name = "SELECT_OPTION_116", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_116", action = "action_EVENT_SELECT_OPTION_116", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000117, name = "SELECT_OPTION_117", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_117", action = "action_EVENT_SELECT_OPTION_117", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000118, name = "SELECT_OPTION_118", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_118", action = "action_EVENT_SELECT_OPTION_118", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000119, name = "GADGET_CREATE_119", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_119", action = "action_EVENT_GADGET_CREATE_119" },
+	{ config_id = 1000120, name = "SELECT_OPTION_120", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_120", action = "action_EVENT_SELECT_OPTION_120", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000121, name = "SELECT_OPTION_121", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_121", action = "action_EVENT_SELECT_OPTION_121", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000122, name = "SELECT_OPTION_122", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_122", action = "action_EVENT_SELECT_OPTION_122", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000123, name = "SELECT_OPTION_123", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_123", action = "action_EVENT_SELECT_OPTION_123", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000124, name = "SELECT_OPTION_124", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_124", action = "action_EVENT_SELECT_OPTION_124", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000137, name = "ENTER_REGION_137", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "", forbid_guest = false }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175 },
+		gadgets = { 267, 270, 271, 272, 273 },
+		regions = { 137 },
+		triggers = { "GADGET_CREATE_113", "SELECT_OPTION_114", "SELECT_OPTION_115", "SELECT_OPTION_116", "SELECT_OPTION_117", "SELECT_OPTION_118", "GADGET_CREATE_119", "SELECT_OPTION_120", "SELECT_OPTION_121", "SELECT_OPTION_122", "SELECT_OPTION_123", "SELECT_OPTION_124", "ENTER_REGION_137" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { 267 },
+		regions = { },
+		triggers = { "GADGET_CREATE_113", "SELECT_OPTION_114", "SELECT_OPTION_115", "SELECT_OPTION_116", "SELECT_OPTION_117", "SELECT_OPTION_118", "GADGET_CREATE_119", "SELECT_OPTION_120", "SELECT_OPTION_121", "SELECT_OPTION_122", "SELECT_OPTION_123", "SELECT_OPTION_124" },
+		rand_weight = 0
+	},
+	{
+		-- suite_id = 3,
+		-- description = suite_3,
+		monsters = { },
+		gadgets = { 267 },
+		regions = { },
+		triggers = { "GADGET_CREATE_113", "SELECT_OPTION_114", "SELECT_OPTION_115", "SELECT_OPTION_116", "SELECT_OPTION_117", "SELECT_OPTION_118", "GADGET_CREATE_119", "SELECT_OPTION_120", "SELECT_OPTION_121", "SELECT_OPTION_122", "SELECT_OPTION_123", "SELECT_OPTION_124" },
+		rand_weight = 0
+	},
+	{
+		-- suite_id = 4,
+		-- description = suite_4,
+		monsters = { },
+		gadgets = { 267 },
+		regions = { },
+		triggers = { "GADGET_CREATE_113", "SELECT_OPTION_114", "SELECT_OPTION_115", "SELECT_OPTION_116", "SELECT_OPTION_117", "SELECT_OPTION_118", "GADGET_CREATE_119", "SELECT_OPTION_120", "SELECT_OPTION_121", "SELECT_OPTION_122", "SELECT_OPTION_123", "SELECT_OPTION_124" },
+		rand_weight = 0
+	},
+	{
+		-- suite_id = 5,
+		-- description = suite_5,
+		monsters = { },
+		gadgets = { 267 },
+		regions = { },
+		triggers = { "GADGET_CREATE_113", "SELECT_OPTION_114", "SELECT_OPTION_115", "SELECT_OPTION_116", "SELECT_OPTION_117", "SELECT_OPTION_118", "GADGET_CREATE_119", "SELECT_OPTION_120", "SELECT_OPTION_121", "SELECT_OPTION_122", "SELECT_OPTION_123", "SELECT_OPTION_124" },
+		rand_weight = 0
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_113(context, evt)
+	if 1021 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_113 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptions
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = 130
-  L6_2 = 131
-  L7_2 = 132
-  L8_2 = 133
-  L9_2 = 134
-  L4_2[1] = L5_2
-  L4_2[2] = L6_2
-  L4_2[3] = L7_2
-  L4_2[4] = L8_2
-  L4_2[5] = L9_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_work_options"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_113(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptions(context, {130,131,132,133,134}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_work_options")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_113 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1021 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_114(context, evt)
+	-- 判断是gadgetid 1021
+	if 1021 ~= evt.param1 then
+			return false
+		end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_114 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_id_2
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011001
-    L4_2.suite = 2
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_id_1
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = 0
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_114(context, evt)
+	
+	-- 根据不同的选项做不同的操作
+	if defs.gadget_id_2 == evt.param2 then
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011001, suite = 2 }) then
+			return -1
+		end
+	
+		if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id_1, GadgetState.GearStart) then
+			return -1
+		end 
+		return 0
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_114 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1021 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_115(context, evt)
+	-- 判断是gadgetid 1021
+	if 1021 ~= evt.param1 then
+			return false
+		end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_115 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_id_3
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011001
-    L4_2.suite = 3
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_id_1
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = 0
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_115(context, evt)
+	
+	-- 根据不同的选项做不同的操作
+	if defs.gadget_id_3 == evt.param2 then
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011001, suite = 3 }) then
+			return -1
+		end
+	
+		if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id_1, GadgetState.GearStart) then
+			return -1
+		end 
+		return 0
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_115 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1021 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_116(context, evt)
+	-- 判断是gadgetid 1021
+	if 1021 ~= evt.param1 then
+			return false
+		end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_116 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_id_4
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011001
-    L4_2.suite = 4
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_id_1
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = 0
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_116(context, evt)
+	
+	-- 根据不同的选项做不同的操作
+	if defs.gadget_id_4 == evt.param2 then
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011001, suite = 4 }) then
+			return -1
+		end
+	
+		if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id_1, GadgetState.GearStart) then
+			return -1
+		end 
+		return 0
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_116 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1021 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_117(context, evt)
+	-- 判断是gadgetid 1021
+	if 1021 ~= evt.param1 then
+			return false
+		end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_117 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_id_5
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011001
-    L4_2.suite = 5
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_id_1
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = 0
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_117(context, evt)
+	
+	-- 根据不同的选项做不同的操作
+	if defs.gadget_id_5 == evt.param2 then
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011001, suite = 5 }) then
+			return -1
+		end
+	
+		if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id_1, GadgetState.GearStart) then
+			return -1
+		end 
+		return 0
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_117 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1021 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_118(context, evt)
+	-- 判断是gadgetid 1021
+	if 1021 ~= evt.param1 then
+			return false
+		end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_118 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_id_6
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011001
-    L4_2.suite = 1
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_id_1
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = 0
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_118(context, evt)
+	
+	-- 根据不同的选项做不同的操作
+	if defs.gadget_id_6 == evt.param2 then
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011001, suite = 1 }) then
+			return -1
+		end
+	
+		if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id_1, GadgetState.GearStart) then
+			return -1
+		end 
+		return 0
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_118 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1022 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_119(context, evt)
+	if 1022 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_119 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptions
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = 151
-  L6_2 = 152
-  L7_2 = 153
-  L8_2 = 154
-  L9_2 = 155
-  L4_2[1] = L5_2
-  L4_2[2] = L6_2
-  L4_2[3] = L7_2
-  L4_2[4] = L8_2
-  L4_2[5] = L9_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_work_options"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_119(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptions(context, {151,152,153,154,155}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_work_options")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_119 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1022 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_120(context, evt)
+	-- 判断是gadgetid 1022
+	if 1022 ~= evt.param1 then
+			return false
+		end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_120 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_id_8
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011001
-    L4_2.refresh_level_revise = 1
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011002
-    L4_2.refresh_level_revise = 1
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011003
-    L4_2.refresh_level_revise = 1
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011004
-    L4_2.refresh_level_revise = 1
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_id_7
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = 0
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_120(context, evt)
+	-- 根据不同的选项做不同的操作
+	if defs.gadget_id_8 == evt.param2 then
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011001, refresh_level_revise = 1}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011002, refresh_level_revise = 1}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011003, refresh_level_revise = 1}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011004, refresh_level_revise = 1}) then
+	  return -1
+	end
+		if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id_7, GadgetState.GearStart) then
+			return -1
+		end 
+		return 0
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_120 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1022 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_121(context, evt)
+	-- 判断是gadgetid 1022
+	if 1022 ~= evt.param1 then
+			return false
+		end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_121 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_id_9
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011001
-    L4_2.refresh_level_revise = 5
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011002
-    L4_2.refresh_level_revise = 5
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011003
-    L4_2.refresh_level_revise = 5
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011004
-    L4_2.refresh_level_revise = 5
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_id_7
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = 0
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_121(context, evt)
+	-- 根据不同的选项做不同的操作
+	if defs.gadget_id_9 == evt.param2 then
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011001, refresh_level_revise = 5}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011002, refresh_level_revise = 5}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011003, refresh_level_revise = 5}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011004, refresh_level_revise = 5}) then
+	  return -1
+	end
+		if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id_7, GadgetState.GearStart) then
+			return -1
+		end 
+		return 0
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_121 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1022 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_122(context, evt)
+	-- 判断是gadgetid 1022
+	if 1022 ~= evt.param1 then
+			return false
+		end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_122 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_id_10
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011001
-    L4_2.refresh_level_revise = 10
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011002
-    L4_2.refresh_level_revise = 10
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011003
-    L4_2.refresh_level_revise = 10
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011004
-    L4_2.refresh_level_revise = 10
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_id_7
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = 0
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_122(context, evt)
+	-- 根据不同的选项做不同的操作
+	if defs.gadget_id_10 == evt.param2 then
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011001, refresh_level_revise = 10}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011002, refresh_level_revise = 10}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011003, refresh_level_revise = 10}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011004, refresh_level_revise = 10}) then
+	  return -1
+	end
+		if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id_7, GadgetState.GearStart) then
+			return -1
+		end 
+		return 0
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_122 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1022 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_123(context, evt)
+	-- 判断是gadgetid 1022
+	if 1022 ~= evt.param1 then
+			return false
+		end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_123 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_id_11
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011001
-    L4_2.refresh_level_revise = 15
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011002
-    L4_2.refresh_level_revise = 15
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011003
-    L4_2.refresh_level_revise = 15
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011004
-    L4_2.refresh_level_revise = 15
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_id_7
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = 0
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_123(context, evt)
+	-- 根据不同的选项做不同的操作
+	if defs.gadget_id_11 == evt.param2 then
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011001, refresh_level_revise = 15}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011002, refresh_level_revise = 15}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011003, refresh_level_revise = 15}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011004, refresh_level_revise = 15}) then
+	  return -1
+	end
+		if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id_7, GadgetState.GearStart) then
+			return -1
+		end 
+		return 0
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_123 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1022 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_124(context, evt)
+	-- 判断是gadgetid 1022
+	if 1022 ~= evt.param1 then
+			return false
+		end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_124 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_id_12
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011001
-    L4_2.refresh_level_revise = 20
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011002
-    L4_2.refresh_level_revise = 20
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011003
-    L4_2.refresh_level_revise = 20
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 201011004
-    L4_2.refresh_level_revise = 20
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_id_7
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = 0
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_124(context, evt)
+	-- 根据不同的选项做不同的操作
+	if defs.gadget_id_12 == evt.param2 then
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011001, refresh_level_revise = 20}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011002, refresh_level_revise = 20}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011003, refresh_level_revise = 20}) then
+	  return -1
+	end
+	
+	if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201011004, refresh_level_revise = 20}) then
+	  return -1
+	end
+		if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id_7, GadgetState.GearStart) then
+			return -1
+		end 
+		return 0
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_124 = L2_1

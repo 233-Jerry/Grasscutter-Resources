@@ -1,89 +1,80 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 144001085
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 85001
-L2_1.gadget_id = 70380274
-L3_1 = {}
-L3_1.x = -654.639
-L3_1.y = 120.214
-L3_1.z = -12.98
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.041
-L3_1.y = 0.522
-L3_1.z = 355.533
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.isOneoff = true
-L3_1 = {}
-L4_1 = 19
-L3_1[1] = L4_1
-L2_1.arguments = L3_1
-L2_1.area_id = 103
-L2_1.talk_state = 6800219
-L3_1 = {}
-L3_1.config_id = 85003
-L3_1.gadget_id = 70360001
-L4_1 = {}
-L4_1.x = -655.291
-L4_1.y = 120.264
-L4_1.z = -13.666
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 103
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1085002
-L3_1.name = "GADGETTALK_DONE_85002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGETTALK_DONE
-L3_1.event = L4_1
-L3_1.source = "6800219"
-L3_1.condition = ""
-L3_1.action = "action_EVENT_GADGETTALK_DONE_85002"
-L2_1[1] = L3_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 85001
-L5_1 = 85003
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 144001085
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 85001, gadget_id = 70380274, pos = { x = -654.639, y = 120.214, z = -12.980 }, rot = { x = 0.041, y = 0.522, z = 355.533 }, level = 1, isOneoff = true, arguments = { 19 }, area_id = 103, talk_state = 6800219 },
+	{ config_id = 85003, gadget_id = 70360001, pos = { x = -655.291, y = 120.264, z = -13.666 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 103 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	triggers = {
+		{ config_id = 1085002, name = "GADGETTALK_DONE_85002", event = EventType.EVENT_GADGETTALK_DONE, source = "6800219", condition = "", action = "action_EVENT_GADGETTALK_DONE_85002" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 85001, 85003 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

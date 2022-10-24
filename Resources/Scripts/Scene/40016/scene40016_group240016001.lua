@@ -1,3420 +1,1521 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1, L30_1, L31_1, L32_1, L33_1, L34_1, L35_1, L36_1, L37_1, L38_1, L39_1, L40_1, L41_1, L42_1, L43_1, L44_1, L45_1, L46_1, L47_1, L48_1, L49_1
-L0_1 = {}
-L0_1.group_id = 240016001
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1001
-L2_1.gadget_id = 70360002
-L3_1 = {}
-L3_1.x = -63.529
-L3_1.y = 265.608
-L3_1.z = -74.841
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 299.353
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 1002
-L3_1.gadget_id = 70900051
-L4_1 = {}
-L4_1.x = -55.447
-L4_1.y = 251.944
-L4_1.z = -81.157
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 32.393
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = GadgetState
-L4_1 = L4_1.GearStop
-L3_1.state = L4_1
-L4_1 = {}
-L4_1.config_id = 1003
-L4_1.gadget_id = 70900051
-L5_1 = {}
-L5_1.x = -55.994
-L5_1.y = 251.921
-L5_1.z = -89.233
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 32.393
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = GadgetState
-L5_1 = L5_1.GearStop
-L4_1.state = L5_1
-L5_1 = {}
-L5_1.config_id = 1004
-L5_1.gadget_id = 70900051
-L6_1 = {}
-L6_1.x = -50.206
-L6_1.y = 251.88
-L6_1.z = -84.573
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 32.393
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = GadgetState
-L6_1 = L6_1.GearStop
-L5_1.state = L6_1
-L6_1 = {}
-L6_1.config_id = 1005
-L6_1.gadget_id = 70900051
-L7_1 = {}
-L7_1.x = -48.654
-L7_1.y = 251.86
-L7_1.z = -77.203
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 32.393
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = GadgetState
-L7_1 = L7_1.GearStop
-L6_1.state = L7_1
-L7_1 = {}
-L7_1.config_id = 1006
-L7_1.gadget_id = 70900051
-L8_1 = {}
-L8_1.x = -55.995
-L8_1.y = 251.55
-L8_1.z = -95.616
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 32.393
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = GadgetState
-L8_1 = L8_1.GearStop
-L7_1.state = L8_1
-L8_1 = {}
-L8_1.config_id = 1007
-L8_1.gadget_id = 70900051
-L9_1 = {}
-L9_1.x = -49.676
-L9_1.y = 251.904
-L9_1.z = -93.088
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 32.393
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = GadgetState
-L9_1 = L9_1.GearStop
-L8_1.state = L9_1
-L9_1 = {}
-L9_1.config_id = 1008
-L9_1.gadget_id = 70900051
-L10_1 = {}
-L10_1.x = -43.604
-L10_1.y = 251.869
-L10_1.z = -87.001
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 32.393
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L10_1 = GadgetState
-L10_1 = L10_1.GearStop
-L9_1.state = L10_1
-L10_1 = {}
-L10_1.config_id = 1009
-L10_1.gadget_id = 70900051
-L11_1 = {}
-L11_1.x = -41.665
-L11_1.y = 251.84
-L11_1.z = -80.211
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 32.393
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L11_1 = GadgetState
-L11_1 = L11_1.GearStop
-L10_1.state = L11_1
-L11_1 = {}
-L11_1.config_id = 1010
-L11_1.gadget_id = 70900051
-L12_1 = {}
-L12_1.x = -42.79
-L12_1.y = 251.498
-L12_1.z = -73.077
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 32.393
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L12_1 = GadgetState
-L12_1 = L12_1.GearStop
-L11_1.state = L12_1
-L12_1 = {}
-L12_1.config_id = 1058
-L12_1.gadget_id = 70211011
-L13_1 = {}
-L13_1.x = -60.49
-L13_1.y = 251.944
-L13_1.z = -78.484
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 104.168
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 16
-L12_1.drop_tag = "\230\136\152\230\150\151\228\184\173\231\186\167\231\146\131\230\156\136"
-L12_1.showcutscene = true
-L12_1.isOneoff = true
-L12_1.persistent = true
-L13_1 = {}
-L13_1.config_id = 1059
-L13_1.gadget_id = 70690006
-L14_1 = {}
-L14_1.x = -62.13
-L14_1.y = 251.467
-L14_1.z = -66.001
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 0.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1001011
-L2_1.name = "GADGET_CREATE_1011"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGET_CREATE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GADGET_CREATE_1011"
-L2_1.action = "action_EVENT_GADGET_CREATE_1011"
-L3_1 = {}
-L3_1.config_id = 1001012
-L3_1.name = "SELECT_OPTION_1012"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SELECT_OPTION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_SELECT_OPTION_1012"
-L3_1.action = "action_EVENT_SELECT_OPTION_1012"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1001013
-L4_1.name = "VARIABLE_CHANGE_1013"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_VARIABLE_CHANGE
-L4_1.event = L5_1
-L4_1.source = "count"
-L4_1.condition = "condition_EVENT_VARIABLE_CHANGE_1013"
-L4_1.action = "action_EVENT_VARIABLE_CHANGE_1013"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1001014
-L5_1.name = "VARIABLE_CHANGE_1014"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_VARIABLE_CHANGE
-L5_1.event = L6_1
-L5_1.source = "type"
-L5_1.condition = "condition_EVENT_VARIABLE_CHANGE_1014"
-L5_1.action = "action_EVENT_VARIABLE_CHANGE_1014"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1001015
-L6_1.name = "GADGET_STATE_CHANGE_1015"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GADGET_STATE_CHANGE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1015"
-L6_1.action = "action_EVENT_GADGET_STATE_CHANGE_1015"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1001016
-L7_1.name = "GADGET_STATE_CHANGE_1016"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GADGET_STATE_CHANGE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1016"
-L7_1.action = "action_EVENT_GADGET_STATE_CHANGE_1016"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1001017
-L8_1.name = "GADGET_STATE_CHANGE_1017"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_GADGET_STATE_CHANGE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1017"
-L8_1.action = "action_EVENT_GADGET_STATE_CHANGE_1017"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1001018
-L9_1.name = "GADGET_STATE_CHANGE_1018"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_GADGET_STATE_CHANGE
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1018"
-L9_1.action = "action_EVENT_GADGET_STATE_CHANGE_1018"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1001019
-L10_1.name = "GADGET_STATE_CHANGE_1019"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_GADGET_STATE_CHANGE
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1019"
-L10_1.action = "action_EVENT_GADGET_STATE_CHANGE_1019"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1001020
-L11_1.name = "GADGET_STATE_CHANGE_1020"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_GADGET_STATE_CHANGE
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1020"
-L11_1.action = "action_EVENT_GADGET_STATE_CHANGE_1020"
-L11_1.trigger_count = 0
-L12_1 = {}
-L12_1.config_id = 1001021
-L12_1.name = "VARIABLE_CHANGE_1021"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_VARIABLE_CHANGE
-L12_1.event = L13_1
-L12_1.source = "count"
-L12_1.condition = ""
-L12_1.action = ""
-L12_1.trigger_count = 0
-L12_1.tag = "1021"
-L13_1 = {}
-L13_1.config_id = 1001022
-L13_1.name = "GADGET_STATE_CHANGE_1022"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_GADGET_STATE_CHANGE
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1022"
-L13_1.action = "action_EVENT_GADGET_STATE_CHANGE_1022"
-L13_1.trigger_count = 0
-L14_1 = {}
-L14_1.config_id = 1001023
-L14_1.name = "GADGET_STATE_CHANGE_1023"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_GADGET_STATE_CHANGE
-L14_1.event = L15_1
-L14_1.source = ""
-L14_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1023"
-L14_1.action = "action_EVENT_GADGET_STATE_CHANGE_1023"
-L14_1.trigger_count = 0
-L15_1 = {}
-L15_1.config_id = 1001024
-L15_1.name = "CHALLENGE_SUCCESS_1024"
-L16_1 = EventType
-L16_1 = L16_1.EVENT_CHALLENGE_SUCCESS
-L15_1.event = L16_1
-L15_1.source = "100"
-L15_1.condition = ""
-L15_1.action = "action_EVENT_CHALLENGE_SUCCESS_1024"
-L15_1.trigger_count = 0
-L16_1 = {}
-L16_1.config_id = 1001025
-L16_1.name = "CHALLENGE_FAIL_1025"
-L17_1 = EventType
-L17_1 = L17_1.EVENT_CHALLENGE_FAIL
-L16_1.event = L17_1
-L16_1.source = "100"
-L16_1.condition = ""
-L16_1.action = "action_EVENT_CHALLENGE_FAIL_1025"
-L16_1.trigger_count = 0
-L17_1 = {}
-L17_1.config_id = 1001026
-L17_1.name = "SELECT_OPTION_1026"
-L18_1 = EventType
-L18_1 = L18_1.EVENT_SELECT_OPTION
-L17_1.event = L18_1
-L17_1.source = ""
-L17_1.condition = "condition_EVENT_SELECT_OPTION_1026"
-L17_1.action = "action_EVENT_SELECT_OPTION_1026"
-L17_1.trigger_count = 0
-L18_1 = {}
-L18_1.config_id = 1001027
-L18_1.name = "GADGET_STATE_CHANGE_1027"
-L19_1 = EventType
-L19_1 = L19_1.EVENT_GADGET_STATE_CHANGE
-L18_1.event = L19_1
-L18_1.source = ""
-L18_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1027"
-L18_1.action = "action_EVENT_GADGET_STATE_CHANGE_1027"
-L18_1.trigger_count = 0
-L19_1 = {}
-L19_1.config_id = 1001028
-L19_1.name = "GADGET_STATE_CHANGE_1028"
-L20_1 = EventType
-L20_1 = L20_1.EVENT_GADGET_STATE_CHANGE
-L19_1.event = L20_1
-L19_1.source = ""
-L19_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1028"
-L19_1.action = "action_EVENT_GADGET_STATE_CHANGE_1028"
-L19_1.trigger_count = 0
-L20_1 = {}
-L20_1.config_id = 1001029
-L20_1.name = "GADGET_STATE_CHANGE_1029"
-L21_1 = EventType
-L21_1 = L21_1.EVENT_GADGET_STATE_CHANGE
-L20_1.event = L21_1
-L20_1.source = ""
-L20_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1029"
-L20_1.action = "action_EVENT_GADGET_STATE_CHANGE_1029"
-L20_1.trigger_count = 0
-L21_1 = {}
-L21_1.config_id = 1001030
-L21_1.name = "GADGET_STATE_CHANGE_1030"
-L22_1 = EventType
-L22_1 = L22_1.EVENT_GADGET_STATE_CHANGE
-L21_1.event = L22_1
-L21_1.source = ""
-L21_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1030"
-L21_1.action = "action_EVENT_GADGET_STATE_CHANGE_1030"
-L21_1.trigger_count = 0
-L22_1 = {}
-L22_1.config_id = 1001031
-L22_1.name = "GADGET_STATE_CHANGE_1031"
-L23_1 = EventType
-L23_1 = L23_1.EVENT_GADGET_STATE_CHANGE
-L22_1.event = L23_1
-L22_1.source = ""
-L22_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1031"
-L22_1.action = "action_EVENT_GADGET_STATE_CHANGE_1031"
-L22_1.trigger_count = 0
-L23_1 = {}
-L23_1.config_id = 1001032
-L23_1.name = "GADGET_STATE_CHANGE_1032"
-L24_1 = EventType
-L24_1 = L24_1.EVENT_GADGET_STATE_CHANGE
-L23_1.event = L24_1
-L23_1.source = ""
-L23_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1032"
-L23_1.action = "action_EVENT_GADGET_STATE_CHANGE_1032"
-L23_1.trigger_count = 0
-L24_1 = {}
-L24_1.config_id = 1001033
-L24_1.name = "GADGET_STATE_CHANGE_1033"
-L25_1 = EventType
-L25_1 = L25_1.EVENT_GADGET_STATE_CHANGE
-L24_1.event = L25_1
-L24_1.source = ""
-L24_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1033"
-L24_1.action = "action_EVENT_GADGET_STATE_CHANGE_1033"
-L24_1.trigger_count = 0
-L25_1 = {}
-L25_1.config_id = 1001034
-L25_1.name = "GADGET_STATE_CHANGE_1034"
-L26_1 = EventType
-L26_1 = L26_1.EVENT_GADGET_STATE_CHANGE
-L25_1.event = L26_1
-L25_1.source = ""
-L25_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1034"
-L25_1.action = "action_EVENT_GADGET_STATE_CHANGE_1034"
-L25_1.trigger_count = 0
-L26_1 = {}
-L26_1.config_id = 1001035
-L26_1.name = "GADGET_STATE_CHANGE_1035"
-L27_1 = EventType
-L27_1 = L27_1.EVENT_GADGET_STATE_CHANGE
-L26_1.event = L27_1
-L26_1.source = ""
-L26_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1035"
-L26_1.action = "action_EVENT_GADGET_STATE_CHANGE_1035"
-L26_1.trigger_count = 0
-L27_1 = {}
-L27_1.config_id = 1001036
-L27_1.name = "GADGET_STATE_CHANGE_1036"
-L28_1 = EventType
-L28_1 = L28_1.EVENT_GADGET_STATE_CHANGE
-L27_1.event = L28_1
-L27_1.source = ""
-L27_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1036"
-L27_1.action = "action_EVENT_GADGET_STATE_CHANGE_1036"
-L27_1.trigger_count = 0
-L28_1 = {}
-L28_1.config_id = 1001037
-L28_1.name = "VARIABLE_CHANGE_1037"
-L29_1 = EventType
-L29_1 = L29_1.EVENT_VARIABLE_CHANGE
-L28_1.event = L29_1
-L28_1.source = "type"
-L28_1.condition = "condition_EVENT_VARIABLE_CHANGE_1037"
-L28_1.action = "action_EVENT_VARIABLE_CHANGE_1037"
-L28_1.trigger_count = 0
-L29_1 = {}
-L29_1.config_id = 1001038
-L29_1.name = "VARIABLE_CHANGE_1038"
-L30_1 = EventType
-L30_1 = L30_1.EVENT_VARIABLE_CHANGE
-L29_1.event = L30_1
-L29_1.source = "count"
-L29_1.condition = "condition_EVENT_VARIABLE_CHANGE_1038"
-L29_1.action = "action_EVENT_VARIABLE_CHANGE_1038"
-L29_1.trigger_count = 0
-L30_1 = {}
-L30_1.config_id = 1001039
-L30_1.name = "CHALLENGE_SUCCESS_1039"
-L31_1 = EventType
-L31_1 = L31_1.EVENT_CHALLENGE_SUCCESS
-L30_1.event = L31_1
-L30_1.source = "101"
-L30_1.condition = ""
-L30_1.action = "action_EVENT_CHALLENGE_SUCCESS_1039"
-L30_1.trigger_count = 0
-L31_1 = {}
-L31_1.config_id = 1001040
-L31_1.name = "CHALLENGE_FAIL_1040"
-L32_1 = EventType
-L32_1 = L32_1.EVENT_CHALLENGE_FAIL
-L31_1.event = L32_1
-L31_1.source = "101"
-L31_1.condition = ""
-L31_1.action = "action_EVENT_CHALLENGE_FAIL_1040"
-L31_1.trigger_count = 0
-L32_1 = {}
-L32_1.config_id = 1001041
-L32_1.name = "SELECT_OPTION_1041"
-L33_1 = EventType
-L33_1 = L33_1.EVENT_SELECT_OPTION
-L32_1.event = L33_1
-L32_1.source = ""
-L32_1.condition = "condition_EVENT_SELECT_OPTION_1041"
-L32_1.action = "action_EVENT_SELECT_OPTION_1041"
-L32_1.trigger_count = 0
-L33_1 = {}
-L33_1.config_id = 1001042
-L33_1.name = "VARIABLE_CHANGE_1042"
-L34_1 = EventType
-L34_1 = L34_1.EVENT_VARIABLE_CHANGE
-L33_1.event = L34_1
-L33_1.source = "type"
-L33_1.condition = "condition_EVENT_VARIABLE_CHANGE_1042"
-L33_1.action = "action_EVENT_VARIABLE_CHANGE_1042"
-L33_1.trigger_count = 0
-L34_1 = {}
-L34_1.config_id = 1001043
-L34_1.name = "VARIABLE_CHANGE_1043"
-L35_1 = EventType
-L35_1 = L35_1.EVENT_VARIABLE_CHANGE
-L34_1.event = L35_1
-L34_1.source = "count"
-L34_1.condition = "condition_EVENT_VARIABLE_CHANGE_1043"
-L34_1.action = "action_EVENT_VARIABLE_CHANGE_1043"
-L34_1.trigger_count = 0
-L35_1 = {}
-L35_1.config_id = 1001044
-L35_1.name = "CHALLENGE_SUCCESS_1044"
-L36_1 = EventType
-L36_1 = L36_1.EVENT_CHALLENGE_SUCCESS
-L35_1.event = L36_1
-L35_1.source = "102"
-L35_1.condition = ""
-L35_1.action = "action_EVENT_CHALLENGE_SUCCESS_1044"
-L35_1.trigger_count = 0
-L36_1 = {}
-L36_1.config_id = 1001045
-L36_1.name = "CHALLENGE_FAIL_1045"
-L37_1 = EventType
-L37_1 = L37_1.EVENT_CHALLENGE_FAIL
-L36_1.event = L37_1
-L36_1.source = "102"
-L36_1.condition = ""
-L36_1.action = "action_EVENT_CHALLENGE_FAIL_1045"
-L36_1.trigger_count = 0
-L37_1 = {}
-L37_1.config_id = 1001046
-L37_1.name = "GADGET_STATE_CHANGE_1046"
-L38_1 = EventType
-L38_1 = L38_1.EVENT_GADGET_STATE_CHANGE
-L37_1.event = L38_1
-L37_1.source = ""
-L37_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1046"
-L37_1.action = "action_EVENT_GADGET_STATE_CHANGE_1046"
-L37_1.trigger_count = 0
-L38_1 = {}
-L38_1.config_id = 1001047
-L38_1.name = "GADGET_STATE_CHANGE_1047"
-L39_1 = EventType
-L39_1 = L39_1.EVENT_GADGET_STATE_CHANGE
-L38_1.event = L39_1
-L38_1.source = ""
-L38_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1047"
-L38_1.action = "action_EVENT_GADGET_STATE_CHANGE_1047"
-L38_1.trigger_count = 0
-L39_1 = {}
-L39_1.config_id = 1001048
-L39_1.name = "GADGET_STATE_CHANGE_1048"
-L40_1 = EventType
-L40_1 = L40_1.EVENT_GADGET_STATE_CHANGE
-L39_1.event = L40_1
-L39_1.source = ""
-L39_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1048"
-L39_1.action = "action_EVENT_GADGET_STATE_CHANGE_1048"
-L39_1.trigger_count = 0
-L40_1 = {}
-L40_1.config_id = 1001049
-L40_1.name = "GADGET_STATE_CHANGE_1049"
-L41_1 = EventType
-L41_1 = L41_1.EVENT_GADGET_STATE_CHANGE
-L40_1.event = L41_1
-L40_1.source = ""
-L40_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1049"
-L40_1.action = "action_EVENT_GADGET_STATE_CHANGE_1049"
-L40_1.trigger_count = 0
-L41_1 = {}
-L41_1.config_id = 1001050
-L41_1.name = "GADGET_STATE_CHANGE_1050"
-L42_1 = EventType
-L42_1 = L42_1.EVENT_GADGET_STATE_CHANGE
-L41_1.event = L42_1
-L41_1.source = ""
-L41_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_1050"
-L41_1.action = "action_EVENT_GADGET_STATE_CHANGE_1050"
-L41_1.trigger_count = 0
-L42_1 = {}
-L42_1.config_id = 1001051
-L43_1 = "GADGET_STATE_CHANGE_1051"
-L42_1.name = L43_1
-L43_1 = EventType
-L43_1 = L43_1.EVENT_GADGET_STATE_CHANGE
-L42_1.event = L43_1
-L42_1.source = ""
-L43_1 = "condition_EVENT_GADGET_STATE_CHANGE_1051"
-L42_1.condition = L43_1
-L43_1 = "action_EVENT_GADGET_STATE_CHANGE_1051"
-L42_1.action = L43_1
-L42_1.trigger_count = 0
-L43_1 = {}
-L44_1 = 1001052
-L43_1.config_id = L44_1
-L44_1 = "GADGET_STATE_CHANGE_1052"
-L43_1.name = L44_1
-L44_1 = EventType
-L44_1 = L44_1.EVENT_GADGET_STATE_CHANGE
-L43_1.event = L44_1
-L43_1.source = ""
-L44_1 = "condition_EVENT_GADGET_STATE_CHANGE_1052"
-L43_1.condition = L44_1
-L44_1 = "action_EVENT_GADGET_STATE_CHANGE_1052"
-L43_1.action = L44_1
-L43_1.trigger_count = 0
-L44_1 = {}
-L45_1 = 1001053
-L44_1.config_id = L45_1
-L45_1 = "GADGET_STATE_CHANGE_1053"
-L44_1.name = L45_1
-L45_1 = EventType
-L45_1 = L45_1.EVENT_GADGET_STATE_CHANGE
-L44_1.event = L45_1
-L44_1.source = ""
-L45_1 = "condition_EVENT_GADGET_STATE_CHANGE_1053"
-L44_1.condition = L45_1
-L45_1 = "action_EVENT_GADGET_STATE_CHANGE_1053"
-L44_1.action = L45_1
-L44_1.trigger_count = 0
-L45_1 = {}
-L46_1 = 1001054
-L45_1.config_id = L46_1
-L46_1 = "GADGET_STATE_CHANGE_1054"
-L45_1.name = L46_1
-L46_1 = EventType
-L46_1 = L46_1.EVENT_GADGET_STATE_CHANGE
-L45_1.event = L46_1
-L45_1.source = ""
-L46_1 = "condition_EVENT_GADGET_STATE_CHANGE_1054"
-L45_1.condition = L46_1
-L46_1 = "action_EVENT_GADGET_STATE_CHANGE_1054"
-L45_1.action = L46_1
-L45_1.trigger_count = 0
-L46_1 = {}
-L47_1 = 1001055
-L46_1.config_id = L47_1
-L47_1 = "GADGET_STATE_CHANGE_1055"
-L46_1.name = L47_1
-L47_1 = EventType
-L47_1 = L47_1.EVENT_GADGET_STATE_CHANGE
-L46_1.event = L47_1
-L46_1.source = ""
-L47_1 = "condition_EVENT_GADGET_STATE_CHANGE_1055"
-L46_1.condition = L47_1
-L47_1 = "action_EVENT_GADGET_STATE_CHANGE_1055"
-L46_1.action = L47_1
-L46_1.trigger_count = 0
-L47_1 = {}
-L48_1 = 1001056
-L47_1.config_id = L48_1
-L48_1 = "GADGET_STATE_CHANGE_1056"
-L47_1.name = L48_1
-L48_1 = EventType
-L48_1 = L48_1.EVENT_GADGET_STATE_CHANGE
-L47_1.event = L48_1
-L47_1.source = ""
-L48_1 = "condition_EVENT_GADGET_STATE_CHANGE_1056"
-L47_1.condition = L48_1
-L48_1 = "action_EVENT_GADGET_STATE_CHANGE_1056"
-L47_1.action = L48_1
-L47_1.trigger_count = 0
-L48_1 = {}
-L49_1 = 1001057
-L48_1.config_id = L49_1
-L49_1 = "GADGET_STATE_CHANGE_1057"
-L48_1.name = L49_1
-L49_1 = EventType
-L49_1 = L49_1.EVENT_GADGET_STATE_CHANGE
-L48_1.event = L49_1
-L48_1.source = ""
-L49_1 = "condition_EVENT_GADGET_STATE_CHANGE_1057"
-L48_1.condition = L49_1
-L49_1 = "action_EVENT_GADGET_STATE_CHANGE_1057"
-L48_1.action = L49_1
-L48_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-L1_1[14] = L15_1
-L1_1[15] = L16_1
-L1_1[16] = L17_1
-L1_1[17] = L18_1
-L1_1[18] = L19_1
-L1_1[19] = L20_1
-L1_1[20] = L21_1
-L1_1[21] = L22_1
-L1_1[22] = L23_1
-L1_1[23] = L24_1
-L1_1[24] = L25_1
-L1_1[25] = L26_1
-L1_1[26] = L27_1
-L1_1[27] = L28_1
-L1_1[28] = L29_1
-L1_1[29] = L30_1
-L1_1[30] = L31_1
-L1_1[31] = L32_1
-L1_1[32] = L33_1
-L1_1[33] = L34_1
-L1_1[34] = L35_1
-L1_1[35] = L36_1
-L1_1[36] = L37_1
-L1_1[37] = L38_1
-L1_1[38] = L39_1
-L1_1[39] = L40_1
-L1_1[40] = L41_1
-L1_1[41] = L42_1
-L1_1[42] = L43_1
-L1_1[43] = L44_1
-L1_1[44] = L45_1
-L1_1[45] = L46_1
-L1_1[46] = L47_1
-L1_1[47] = L48_1
-triggers = L1_1
-L1_1 = "variables"
-L2_1 = {}
-L3_1 = {}
-L4_1 = "configId"
-L3_1[L4_1] = 1
-L3_1.name = "type"
-L4_1 = "value"
-L3_1[L4_1] = 0
-L4_1 = "no_refresh"
-L5_1 = false
-L3_1[L4_1] = L5_1
-L4_1 = {}
-L5_1 = "configId"
-L6_1 = 2
-L4_1[L5_1] = L6_1
-L4_1.name = "count"
-L5_1 = "value"
-L4_1[L5_1] = 0
-L5_1 = "no_refresh"
-L6_1 = false
-L4_1[L5_1] = L6_1
-L5_1 = {}
-L6_1 = "configId"
-L7_1 = 3
-L5_1[L6_1] = L7_1
-L6_1 = "step"
-L5_1.name = L6_1
-L6_1 = "value"
-L5_1[L6_1] = 0
-L6_1 = "no_refresh"
-L5_1[L6_1] = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-_ENV[L1_1] = L2_1
-L1_1 = "init_config"
-L2_1 = {}
-L3_1 = "suite"
-L2_1[L3_1] = 1
-L3_1 = "end_suite"
-L2_1[L3_1] = 0
-L3_1 = "rand_suite"
-L4_1 = false
-L2_1[L3_1] = L4_1
-_ENV[L1_1] = L2_1
-L1_1 = "suites"
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L4_1 = "rand_weight"
-L5_1 = 100
-L3_1[L4_1] = L5_1
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "GADGET_STATE_CHANGE_1015"
-L7_1 = "GADGET_STATE_CHANGE_1018"
-L8_1 = "GADGET_STATE_CHANGE_1027"
-L9_1 = "GADGET_STATE_CHANGE_1032"
-L10_1 = "GADGET_STATE_CHANGE_1046"
-L11_1 = "GADGET_STATE_CHANGE_1052"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L4_1.triggers = L5_1
-L5_1 = "rand_weight"
-L6_1 = 100
-L4_1[L5_1] = L6_1
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "GADGET_STATE_CHANGE_1016"
-L8_1 = "GADGET_STATE_CHANGE_1019"
-L9_1 = "GADGET_STATE_CHANGE_1028"
-L10_1 = "GADGET_STATE_CHANGE_1033"
-L11_1 = "GADGET_STATE_CHANGE_1047"
-L12_1 = "GADGET_STATE_CHANGE_1053"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L5_1.triggers = L6_1
-L6_1 = "rand_weight"
-L7_1 = 100
-L5_1[L6_1] = L7_1
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L8_1 = "GADGET_STATE_CHANGE_1017"
-L9_1 = "GADGET_STATE_CHANGE_1020"
-L10_1 = "GADGET_STATE_CHANGE_1029"
-L11_1 = "GADGET_STATE_CHANGE_1034"
-L12_1 = "GADGET_STATE_CHANGE_1048"
-L13_1 = "GADGET_STATE_CHANGE_1054"
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L7_1[5] = L12_1
-L7_1[6] = L13_1
-L6_1.triggers = L7_1
-L7_1 = "rand_weight"
-L8_1 = 100
-L6_1[L7_1] = L8_1
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L9_1 = "GADGET_STATE_CHANGE_1022"
-L10_1 = "GADGET_STATE_CHANGE_1023"
-L11_1 = "GADGET_STATE_CHANGE_1030"
-L12_1 = "GADGET_STATE_CHANGE_1035"
-L13_1 = "GADGET_STATE_CHANGE_1049"
-L14_1 = "GADGET_STATE_CHANGE_1055"
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L8_1[3] = L11_1
-L8_1[4] = L12_1
-L8_1[5] = L13_1
-L8_1[6] = L14_1
-L7_1.triggers = L8_1
-L8_1 = "rand_weight"
-L9_1 = 100
-L7_1[L8_1] = L9_1
-L8_1 = {}
-L9_1 = {}
-L8_1.monsters = L9_1
-L9_1 = {}
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L10_1 = "GADGET_STATE_CHANGE_1031"
-L11_1 = "GADGET_STATE_CHANGE_1036"
-L12_1 = "GADGET_STATE_CHANGE_1050"
-L13_1 = "GADGET_STATE_CHANGE_1056"
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L9_1[3] = L12_1
-L9_1[4] = L13_1
-L8_1.triggers = L9_1
-L9_1 = "rand_weight"
-L10_1 = 100
-L8_1[L9_1] = L10_1
-L9_1 = {}
-L10_1 = {}
-L9_1.monsters = L10_1
-L10_1 = {}
-L9_1.gadgets = L10_1
-L10_1 = {}
-L9_1.regions = L10_1
-L10_1 = {}
-L11_1 = "GADGET_STATE_CHANGE_1051"
-L12_1 = "GADGET_STATE_CHANGE_1057"
-L10_1[1] = L11_1
-L10_1[2] = L12_1
-L9_1.triggers = L10_1
-L10_1 = "rand_weight"
-L11_1 = 100
-L9_1[L10_1] = L11_1
-L10_1 = {}
-L11_1 = {}
-L10_1.monsters = L11_1
-L11_1 = {}
-L12_1 = 1058
-L11_1[1] = L12_1
-L10_1.gadgets = L11_1
-L11_1 = {}
-L10_1.regions = L11_1
-L11_1 = {}
-L10_1.triggers = L11_1
-L11_1 = "rand_weight"
-L12_1 = 100
-L10_1[L11_1] = L12_1
-L11_1 = {}
-L12_1 = {}
-L11_1.monsters = L12_1
-L12_1 = {}
-L13_1 = 1001
-L14_1 = 1002
-L15_1 = 1003
-L16_1 = 1004
-L17_1 = 1005
-L18_1 = 1006
-L19_1 = 1007
-L20_1 = 1008
-L21_1 = 1009
-L22_1 = 1010
-L23_1 = 1059
-L12_1[1] = L13_1
-L12_1[2] = L14_1
-L12_1[3] = L15_1
-L12_1[4] = L16_1
-L12_1[5] = L17_1
-L12_1[6] = L18_1
-L12_1[7] = L19_1
-L12_1[8] = L20_1
-L12_1[9] = L21_1
-L12_1[10] = L22_1
-L12_1[11] = L23_1
-L11_1.gadgets = L12_1
-L12_1 = {}
-L11_1.regions = L12_1
-L12_1 = {}
-L13_1 = "GADGET_CREATE_1011"
-L14_1 = "SELECT_OPTION_1012"
-L15_1 = "VARIABLE_CHANGE_1013"
-L16_1 = "VARIABLE_CHANGE_1014"
-L17_1 = "VARIABLE_CHANGE_1021"
-L18_1 = "CHALLENGE_SUCCESS_1024"
-L19_1 = "CHALLENGE_FAIL_1025"
-L20_1 = "SELECT_OPTION_1026"
-L21_1 = "VARIABLE_CHANGE_1037"
-L22_1 = "VARIABLE_CHANGE_1038"
-L23_1 = "CHALLENGE_SUCCESS_1039"
-L24_1 = "CHALLENGE_FAIL_1040"
-L25_1 = "SELECT_OPTION_1041"
-L26_1 = "VARIABLE_CHANGE_1042"
-L27_1 = "VARIABLE_CHANGE_1043"
-L28_1 = "CHALLENGE_SUCCESS_1044"
-L29_1 = "CHALLENGE_FAIL_1045"
-L12_1[1] = L13_1
-L12_1[2] = L14_1
-L12_1[3] = L15_1
-L12_1[4] = L16_1
-L12_1[5] = L17_1
-L12_1[6] = L18_1
-L12_1[7] = L19_1
-L12_1[8] = L20_1
-L12_1[9] = L21_1
-L12_1[10] = L22_1
-L12_1[11] = L23_1
-L12_1[12] = L24_1
-L12_1[13] = L25_1
-L12_1[14] = L26_1
-L12_1[15] = L27_1
-L12_1[16] = L28_1
-L12_1[17] = L29_1
-L11_1.triggers = L12_1
-L12_1 = "rand_weight"
-L13_1 = 100
-L11_1[L12_1] = L13_1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-_ENV[L1_1] = L2_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_CREATE_1011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptions
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = 177
-  L4_2[1] = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_work_options"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_CREATE_1011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if 1001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 177 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "step"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_OPTION_1012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 1001
-  L6_2 = 177
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -48
-  L2_2.y = 251
-  L2_2.z = -80
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 9
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.RefreshGroup
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.group_id = 240016002
-  L6_2.suite = 1
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.RemoveExtraGroupSuite
-  L5_2 = A0_2
-  L6_2 = 240016009
-  L7_2 = 3
-  L4_2(L5_2, L6_2, L7_2)
-  L4_2 = 0
-  return L4_2
-end
-action_EVENT_SELECT_OPTION_1012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 4 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_VARIABLE_CHANGE_1013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 100
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_VARIABLE_CHANGE_1013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_VARIABLE_CHANGE_1014 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ActiveChallenge
-  L3_2 = A0_2
-  L4_2 = 100
-  L5_2 = 50
-  L6_2 = 100
-  L7_2 = 3
-  L8_2 = 1021
-  L9_2 = 4
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_challenge"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_VARIABLE_CHANGE_1014 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1002 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1006 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1016 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1016 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1010 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1017 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1017 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1002 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1018 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 100
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1018 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1006 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1019 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 100
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1019 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1010 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1020 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 100
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1020 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1004 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1022 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1022 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1004 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1023 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 100
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1023 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "step"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 240016001
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016009
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_CHALLENGE_SUCCESS_1024 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 240016001
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016009
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_CHALLENGE_FAIL_1025 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if 1001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 177 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "step"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_OPTION_1026 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 1001
-  L6_2 = 177
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -48
-  L2_2.y = 251
-  L2_2.z = -80
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 13
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.RefreshGroup
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.group_id = 240016003
-  L6_2.suite = 1
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.RemoveExtraGroupSuite
-  L5_2 = A0_2
-  L6_2 = 240016009
-  L7_2 = 3
-  L4_2(L5_2, L6_2, L7_2)
-  L4_2 = 0
-  return L4_2
-end
-action_EVENT_SELECT_OPTION_1026 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1007 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1027 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1027 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1005 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1028 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1028 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1008 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1029 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1029 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1009 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1030 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 6
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1030 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1002 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 4 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1031 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1031 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1007 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1032 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1032 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1005 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1033 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1033 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1008 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1034 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1034 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1009 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1035 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1035 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1002 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 4 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1036 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1036 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_VARIABLE_CHANGE_1037 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ActiveChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 50
-  L6_2 = 100
-  L7_2 = 3
-  L8_2 = 1021
-  L9_2 = 5
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_challenge"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016009
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_VARIABLE_CHANGE_1037 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 5 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_VARIABLE_CHANGE_1038 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_VARIABLE_CHANGE_1038 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "step"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 240016001
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016009
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_CHALLENGE_SUCCESS_1039 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 240016001
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016009
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_CHALLENGE_FAIL_1040 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if 1001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 177 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "step"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_OPTION_1041 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 1001
-  L6_2 = 177
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -48
-  L2_2.y = 251
-  L2_2.z = -80
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 15
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.RefreshGroup
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.group_id = 240016004
-  L6_2.suite = 1
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.RemoveExtraGroupSuite
-  L5_2 = A0_2
-  L6_2 = 240016009
-  L7_2 = 3
-  L4_2(L5_2, L6_2, L7_2)
-  L4_2 = 0
-  return L4_2
-end
-action_EVENT_SELECT_OPTION_1041 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_VARIABLE_CHANGE_1042 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ActiveChallenge
-  L3_2 = A0_2
-  L4_2 = 102
-  L5_2 = 50
-  L6_2 = 100
-  L7_2 = 3
-  L8_2 = 1021
-  L9_2 = 6
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_challenge"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016009
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_VARIABLE_CHANGE_1042 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 6 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_VARIABLE_CHANGE_1043 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 102
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_VARIABLE_CHANGE_1043 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 8
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L6_2 = 240016007
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_CHALLENGE_SUCCESS_1044 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 240016001
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016009
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_CHALLENGE_FAIL_1045 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1002 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1046 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1046 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1008 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1047 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1047 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1007 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1048 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1048 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1004 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1049 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 6
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1049 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1010 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 4 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_1050 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 240016001
-  L5_2 = 7
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_1050 = L1_1
-L1_1 = "condition_EVENT_GADGET_STATE_CHANGE_1051"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 1009 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 5 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_GADGET_STATE_CHANGE_1051"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_GADGET_STATE_CHANGE_1052"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1002 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_GADGET_STATE_CHANGE_1052"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 102
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_GADGET_STATE_CHANGE_1053"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1008 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_GADGET_STATE_CHANGE_1053"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 102
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_GADGET_STATE_CHANGE_1054"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1007 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_GADGET_STATE_CHANGE_1054"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 102
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_GADGET_STATE_CHANGE_1055"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1004 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_GADGET_STATE_CHANGE_1055"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 102
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_GADGET_STATE_CHANGE_1056"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1010 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 4 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_GADGET_STATE_CHANGE_1056"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 102
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "condition_EVENT_GADGET_STATE_CHANGE_1057"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "type"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1009 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 5 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-_ENV[L1_1] = L2_1
-L1_1 = "action_EVENT_GADGET_STATE_CHANGE_1057"
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 102
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-_ENV[L1_1] = L2_1
+-- 基础信息
+local base_info = {
+	group_id = 240016001
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 1001, gadget_id = 70360002, pos = { x = -63.529, y = 265.608, z = -74.841 }, rot = { x = 0.000, y = 299.353, z = 0.000 }, level = 1 },
+	{ config_id = 1002, gadget_id = 70900051, pos = { x = -55.447, y = 251.944, z = -81.157 }, rot = { x = 0.000, y = 32.393, z = 0.000 }, level = 1, state = GadgetState.GearStop },
+	{ config_id = 1003, gadget_id = 70900051, pos = { x = -55.994, y = 251.921, z = -89.233 }, rot = { x = 0.000, y = 32.393, z = 0.000 }, level = 1, state = GadgetState.GearStop },
+	{ config_id = 1004, gadget_id = 70900051, pos = { x = -50.206, y = 251.880, z = -84.573 }, rot = { x = 0.000, y = 32.393, z = 0.000 }, level = 1, state = GadgetState.GearStop },
+	{ config_id = 1005, gadget_id = 70900051, pos = { x = -48.654, y = 251.860, z = -77.203 }, rot = { x = 0.000, y = 32.393, z = 0.000 }, level = 1, state = GadgetState.GearStop },
+	{ config_id = 1006, gadget_id = 70900051, pos = { x = -55.995, y = 251.550, z = -95.616 }, rot = { x = 0.000, y = 32.393, z = 0.000 }, level = 1, state = GadgetState.GearStop },
+	{ config_id = 1007, gadget_id = 70900051, pos = { x = -49.676, y = 251.904, z = -93.088 }, rot = { x = 0.000, y = 32.393, z = 0.000 }, level = 1, state = GadgetState.GearStop },
+	{ config_id = 1008, gadget_id = 70900051, pos = { x = -43.604, y = 251.869, z = -87.001 }, rot = { x = 0.000, y = 32.393, z = 0.000 }, level = 1, state = GadgetState.GearStop },
+	{ config_id = 1009, gadget_id = 70900051, pos = { x = -41.665, y = 251.840, z = -80.211 }, rot = { x = 0.000, y = 32.393, z = 0.000 }, level = 1, state = GadgetState.GearStop },
+	{ config_id = 1010, gadget_id = 70900051, pos = { x = -42.790, y = 251.498, z = -73.077 }, rot = { x = 0.000, y = 32.393, z = 0.000 }, level = 1, state = GadgetState.GearStop },
+	{ config_id = 1058, gadget_id = 70211011, pos = { x = -60.490, y = 251.944, z = -78.484 }, rot = { x = 0.000, y = 104.168, z = 0.000 }, level = 16, drop_tag = "战斗中级璃月", showcutscene = true, isOneoff = true, persistent = true },
+	{ config_id = 1059, gadget_id = 70690006, pos = { x = -62.130, y = 251.467, z = -66.001 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1001011, name = "GADGET_CREATE_1011", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_1011", action = "action_EVENT_GADGET_CREATE_1011" },
+	{ config_id = 1001012, name = "SELECT_OPTION_1012", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_1012", action = "action_EVENT_SELECT_OPTION_1012", trigger_count = 0 },
+	{ config_id = 1001013, name = "VARIABLE_CHANGE_1013", event = EventType.EVENT_VARIABLE_CHANGE, source = "count", condition = "condition_EVENT_VARIABLE_CHANGE_1013", action = "action_EVENT_VARIABLE_CHANGE_1013", trigger_count = 0 },
+	{ config_id = 1001014, name = "VARIABLE_CHANGE_1014", event = EventType.EVENT_VARIABLE_CHANGE, source = "type", condition = "condition_EVENT_VARIABLE_CHANGE_1014", action = "action_EVENT_VARIABLE_CHANGE_1014", trigger_count = 0 },
+	{ config_id = 1001015, name = "GADGET_STATE_CHANGE_1015", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1015", action = "action_EVENT_GADGET_STATE_CHANGE_1015", trigger_count = 0 },
+	{ config_id = 1001016, name = "GADGET_STATE_CHANGE_1016", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1016", action = "action_EVENT_GADGET_STATE_CHANGE_1016", trigger_count = 0 },
+	{ config_id = 1001017, name = "GADGET_STATE_CHANGE_1017", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1017", action = "action_EVENT_GADGET_STATE_CHANGE_1017", trigger_count = 0 },
+	{ config_id = 1001018, name = "GADGET_STATE_CHANGE_1018", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1018", action = "action_EVENT_GADGET_STATE_CHANGE_1018", trigger_count = 0 },
+	{ config_id = 1001019, name = "GADGET_STATE_CHANGE_1019", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1019", action = "action_EVENT_GADGET_STATE_CHANGE_1019", trigger_count = 0 },
+	{ config_id = 1001020, name = "GADGET_STATE_CHANGE_1020", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1020", action = "action_EVENT_GADGET_STATE_CHANGE_1020", trigger_count = 0 },
+	{ config_id = 1001021, name = "VARIABLE_CHANGE_1021", event = EventType.EVENT_VARIABLE_CHANGE, source = "count", condition = "", action = "", trigger_count = 0, tag = "1021" },
+	{ config_id = 1001022, name = "GADGET_STATE_CHANGE_1022", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1022", action = "action_EVENT_GADGET_STATE_CHANGE_1022", trigger_count = 0 },
+	{ config_id = 1001023, name = "GADGET_STATE_CHANGE_1023", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1023", action = "action_EVENT_GADGET_STATE_CHANGE_1023", trigger_count = 0 },
+	{ config_id = 1001024, name = "CHALLENGE_SUCCESS_1024", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "100", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_1024", trigger_count = 0 },
+	{ config_id = 1001025, name = "CHALLENGE_FAIL_1025", event = EventType.EVENT_CHALLENGE_FAIL, source = "100", condition = "", action = "action_EVENT_CHALLENGE_FAIL_1025", trigger_count = 0 },
+	{ config_id = 1001026, name = "SELECT_OPTION_1026", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_1026", action = "action_EVENT_SELECT_OPTION_1026", trigger_count = 0 },
+	{ config_id = 1001027, name = "GADGET_STATE_CHANGE_1027", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1027", action = "action_EVENT_GADGET_STATE_CHANGE_1027", trigger_count = 0 },
+	{ config_id = 1001028, name = "GADGET_STATE_CHANGE_1028", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1028", action = "action_EVENT_GADGET_STATE_CHANGE_1028", trigger_count = 0 },
+	{ config_id = 1001029, name = "GADGET_STATE_CHANGE_1029", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1029", action = "action_EVENT_GADGET_STATE_CHANGE_1029", trigger_count = 0 },
+	{ config_id = 1001030, name = "GADGET_STATE_CHANGE_1030", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1030", action = "action_EVENT_GADGET_STATE_CHANGE_1030", trigger_count = 0 },
+	{ config_id = 1001031, name = "GADGET_STATE_CHANGE_1031", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1031", action = "action_EVENT_GADGET_STATE_CHANGE_1031", trigger_count = 0 },
+	{ config_id = 1001032, name = "GADGET_STATE_CHANGE_1032", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1032", action = "action_EVENT_GADGET_STATE_CHANGE_1032", trigger_count = 0 },
+	{ config_id = 1001033, name = "GADGET_STATE_CHANGE_1033", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1033", action = "action_EVENT_GADGET_STATE_CHANGE_1033", trigger_count = 0 },
+	{ config_id = 1001034, name = "GADGET_STATE_CHANGE_1034", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1034", action = "action_EVENT_GADGET_STATE_CHANGE_1034", trigger_count = 0 },
+	{ config_id = 1001035, name = "GADGET_STATE_CHANGE_1035", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1035", action = "action_EVENT_GADGET_STATE_CHANGE_1035", trigger_count = 0 },
+	{ config_id = 1001036, name = "GADGET_STATE_CHANGE_1036", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1036", action = "action_EVENT_GADGET_STATE_CHANGE_1036", trigger_count = 0 },
+	{ config_id = 1001037, name = "VARIABLE_CHANGE_1037", event = EventType.EVENT_VARIABLE_CHANGE, source = "type", condition = "condition_EVENT_VARIABLE_CHANGE_1037", action = "action_EVENT_VARIABLE_CHANGE_1037", trigger_count = 0 },
+	{ config_id = 1001038, name = "VARIABLE_CHANGE_1038", event = EventType.EVENT_VARIABLE_CHANGE, source = "count", condition = "condition_EVENT_VARIABLE_CHANGE_1038", action = "action_EVENT_VARIABLE_CHANGE_1038", trigger_count = 0 },
+	{ config_id = 1001039, name = "CHALLENGE_SUCCESS_1039", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "101", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_1039", trigger_count = 0 },
+	{ config_id = 1001040, name = "CHALLENGE_FAIL_1040", event = EventType.EVENT_CHALLENGE_FAIL, source = "101", condition = "", action = "action_EVENT_CHALLENGE_FAIL_1040", trigger_count = 0 },
+	{ config_id = 1001041, name = "SELECT_OPTION_1041", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_1041", action = "action_EVENT_SELECT_OPTION_1041", trigger_count = 0 },
+	{ config_id = 1001042, name = "VARIABLE_CHANGE_1042", event = EventType.EVENT_VARIABLE_CHANGE, source = "type", condition = "condition_EVENT_VARIABLE_CHANGE_1042", action = "action_EVENT_VARIABLE_CHANGE_1042", trigger_count = 0 },
+	{ config_id = 1001043, name = "VARIABLE_CHANGE_1043", event = EventType.EVENT_VARIABLE_CHANGE, source = "count", condition = "condition_EVENT_VARIABLE_CHANGE_1043", action = "action_EVENT_VARIABLE_CHANGE_1043", trigger_count = 0 },
+	{ config_id = 1001044, name = "CHALLENGE_SUCCESS_1044", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "102", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_1044", trigger_count = 0 },
+	{ config_id = 1001045, name = "CHALLENGE_FAIL_1045", event = EventType.EVENT_CHALLENGE_FAIL, source = "102", condition = "", action = "action_EVENT_CHALLENGE_FAIL_1045", trigger_count = 0 },
+	{ config_id = 1001046, name = "GADGET_STATE_CHANGE_1046", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1046", action = "action_EVENT_GADGET_STATE_CHANGE_1046", trigger_count = 0 },
+	{ config_id = 1001047, name = "GADGET_STATE_CHANGE_1047", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1047", action = "action_EVENT_GADGET_STATE_CHANGE_1047", trigger_count = 0 },
+	{ config_id = 1001048, name = "GADGET_STATE_CHANGE_1048", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1048", action = "action_EVENT_GADGET_STATE_CHANGE_1048", trigger_count = 0 },
+	{ config_id = 1001049, name = "GADGET_STATE_CHANGE_1049", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1049", action = "action_EVENT_GADGET_STATE_CHANGE_1049", trigger_count = 0 },
+	{ config_id = 1001050, name = "GADGET_STATE_CHANGE_1050", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1050", action = "action_EVENT_GADGET_STATE_CHANGE_1050", trigger_count = 0 },
+	{ config_id = 1001051, name = "GADGET_STATE_CHANGE_1051", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1051", action = "action_EVENT_GADGET_STATE_CHANGE_1051", trigger_count = 0 },
+	{ config_id = 1001052, name = "GADGET_STATE_CHANGE_1052", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1052", action = "action_EVENT_GADGET_STATE_CHANGE_1052", trigger_count = 0 },
+	{ config_id = 1001053, name = "GADGET_STATE_CHANGE_1053", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1053", action = "action_EVENT_GADGET_STATE_CHANGE_1053", trigger_count = 0 },
+	{ config_id = 1001054, name = "GADGET_STATE_CHANGE_1054", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1054", action = "action_EVENT_GADGET_STATE_CHANGE_1054", trigger_count = 0 },
+	{ config_id = 1001055, name = "GADGET_STATE_CHANGE_1055", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1055", action = "action_EVENT_GADGET_STATE_CHANGE_1055", trigger_count = 0 },
+	{ config_id = 1001056, name = "GADGET_STATE_CHANGE_1056", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1056", action = "action_EVENT_GADGET_STATE_CHANGE_1056", trigger_count = 0 },
+	{ config_id = 1001057, name = "GADGET_STATE_CHANGE_1057", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_1057", action = "action_EVENT_GADGET_STATE_CHANGE_1057", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "type", value = 0, no_refresh = false },
+	{ config_id = 2, name = "count", value = 0, no_refresh = false },
+	{ config_id = 3, name = "step", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_1015", "GADGET_STATE_CHANGE_1018", "GADGET_STATE_CHANGE_1027", "GADGET_STATE_CHANGE_1032", "GADGET_STATE_CHANGE_1046", "GADGET_STATE_CHANGE_1052" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_1016", "GADGET_STATE_CHANGE_1019", "GADGET_STATE_CHANGE_1028", "GADGET_STATE_CHANGE_1033", "GADGET_STATE_CHANGE_1047", "GADGET_STATE_CHANGE_1053" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_1017", "GADGET_STATE_CHANGE_1020", "GADGET_STATE_CHANGE_1029", "GADGET_STATE_CHANGE_1034", "GADGET_STATE_CHANGE_1048", "GADGET_STATE_CHANGE_1054" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_1022", "GADGET_STATE_CHANGE_1023", "GADGET_STATE_CHANGE_1030", "GADGET_STATE_CHANGE_1035", "GADGET_STATE_CHANGE_1049", "GADGET_STATE_CHANGE_1055" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 6,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_1031", "GADGET_STATE_CHANGE_1036", "GADGET_STATE_CHANGE_1050", "GADGET_STATE_CHANGE_1056" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 7,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_1051", "GADGET_STATE_CHANGE_1057" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 8,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1058 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 9,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1059 },
+		regions = { },
+		triggers = { "GADGET_CREATE_1011", "SELECT_OPTION_1012", "VARIABLE_CHANGE_1013", "VARIABLE_CHANGE_1014", "VARIABLE_CHANGE_1021", "CHALLENGE_SUCCESS_1024", "CHALLENGE_FAIL_1025", "SELECT_OPTION_1026", "VARIABLE_CHANGE_1037", "VARIABLE_CHANGE_1038", "CHALLENGE_SUCCESS_1039", "CHALLENGE_FAIL_1040", "SELECT_OPTION_1041", "VARIABLE_CHANGE_1042", "VARIABLE_CHANGE_1043", "CHALLENGE_SUCCESS_1044", "CHALLENGE_FAIL_1045" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_1011(context, evt)
+	if 1001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_1011(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptions(context, {177}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_work_options")
+		return -1
+	end
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_1012(context, evt)
+	-- 判断是gadgetid 1001 option_id 177
+	if 1001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 177 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"step"为0
+	if ScriptLib.GetGroupVariableValue(context, "step") ~= 0 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_1012(context, evt)
+	-- 删除指定group： 240016001 ；指定config：1001；物件身上指定option：177；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240016001, 1001, 177) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-48，251，-80），持续时间为9秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-48, y=251, z=-80}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 9, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 240016002, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 删除suite3的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 240016009, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_1013(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"count"为4
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 4 then
+			return false
+	end
+	
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 1 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_1013(context, evt)
+	-- 终止识别id为100的挑战，并判定成功
+		ScriptLib.StopChallenge(context, 100, 1)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_1014(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 1 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_1014(context, evt)
+	-- 创建编号为100（该挑战的识别id),挑战内容为50的区域挑战，具体参数填写方式，见DungeonChallengeData表中的注释，所有填写的值都必须是int类型
+	if 0 ~= ScriptLib.ActiveChallenge(context, 100, 50, 100, 3, 1021, 4) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_challenge")
+		return -1
+	end
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 2)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1015(context, evt)
+	if 1002 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 1 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1015(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1016(context, evt)
+	if 1006 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"count"为1
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 1 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1016(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 4)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1017(context, evt)
+	if 1010 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"count"为2
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 2 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1017(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 5)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1018(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 1 then
+			return false
+	end
+	
+	
+	if 1002 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 0 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1018(context, evt)
+	-- 终止识别id为100的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 100, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1019(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 1 then
+			return false
+	end
+	
+	
+	if 1006 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 1 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1019(context, evt)
+	-- 终止识别id为100的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 100, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1020(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 1 then
+			return false
+	end
+	
+	
+	if 1010 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 2 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1020(context, evt)
+	-- 终止识别id为100的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 100, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1022(context, evt)
+	if 1004 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"count"为3
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 3 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1022(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1023(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 1 then
+			return false
+	end
+	
+	
+	if 1004 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 3 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1023(context, evt)
+	-- 终止识别id为100的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 100, 0)
+	
+	return 0
+end
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_1024(context, evt)
+	-- 针对当前group内变量名为 "step" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "step", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 240016001, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016009, 3)
+	
+	return 0
+end
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_1025(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 240016001, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016009, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_1026(context, evt)
+	-- 判断是gadgetid 1001 option_id 177
+	if 1001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 177 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"step"为1
+	if ScriptLib.GetGroupVariableValue(context, "step") ~= 1 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_1026(context, evt)
+	-- 删除指定group： 240016001 ；指定config：1001；物件身上指定option：177；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240016001, 1001, 177) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-48，251，-80），持续时间为13秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-48, y=251, z=-80}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 13, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 240016003, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 删除suite3的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 240016009, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1027(context, evt)
+	if 1007 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为2
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1027(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1028(context, evt)
+	if 1005 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为2
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	-- 判断变量"count"为1
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 1 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1028(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 4)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1029(context, evt)
+	if 1008 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为2
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	-- 判断变量"count"为2
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 2 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1029(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 5)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1030(context, evt)
+	if 1009 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为2
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	-- 判断变量"count"为3
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 3 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1030(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite6的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 6)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1031(context, evt)
+	if 1002 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为2
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	-- 判断变量"count"为4
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 4 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1031(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1032(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	
+	if 1007 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 0 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1032(context, evt)
+	-- 终止识别id为101的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 101, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1033(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	
+	if 1005 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 1 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1033(context, evt)
+	-- 终止识别id为101的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 101, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1034(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	
+	if 1008 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 2 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1034(context, evt)
+	-- 终止识别id为101的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 101, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1035(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	
+	if 1009 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 3 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1035(context, evt)
+	-- 终止识别id为101的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 101, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1036(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	
+	if 1002 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 4 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1036(context, evt)
+	-- 终止识别id为101的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 101, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_1037(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"type"为2
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_1037(context, evt)
+	-- 创建编号为101（该挑战的识别id),挑战内容为50的区域挑战，具体参数填写方式，见DungeonChallengeData表中的注释，所有填写的值都必须是int类型
+	if 0 ~= ScriptLib.ActiveChallenge(context, 101, 50, 100, 3, 1021, 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_challenge")
+		return -1
+	end
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 2)
+	
+	-- 删除suite3的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 240016009, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_1038(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"count"为5
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 5 then
+			return false
+	end
+	
+	-- 判断变量"type"为2
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 2 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_1038(context, evt)
+	-- 终止识别id为101的挑战，并判定成功
+		ScriptLib.StopChallenge(context, 101, 1)
+	
+	return 0
+end
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_1039(context, evt)
+	-- 针对当前group内变量名为 "step" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "step", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 240016001, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016009, 3)
+	
+	return 0
+end
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_1040(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 240016001, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016009, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_1041(context, evt)
+	-- 判断是gadgetid 1001 option_id 177
+	if 1001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 177 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"step"为2
+	if ScriptLib.GetGroupVariableValue(context, "step") ~= 2 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_1041(context, evt)
+	-- 删除指定group： 240016001 ；指定config：1001；物件身上指定option：177；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 240016001, 1001, 177) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-48，251，-80），持续时间为15秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-48, y=251, z=-80}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 15, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 240016004, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 删除suite3的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 240016009, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_1042(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"type"为3
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_1042(context, evt)
+	-- 创建编号为102（该挑战的识别id),挑战内容为50的区域挑战，具体参数填写方式，见DungeonChallengeData表中的注释，所有填写的值都必须是int类型
+	if 0 ~= ScriptLib.ActiveChallenge(context, 102, 50, 100, 3, 1021, 6) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_challenge")
+		return -1
+	end
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 2)
+	
+	-- 删除suite3的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 240016009, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_1043(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"count"为6
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 6 then
+			return false
+	end
+	
+	-- 判断变量"type"为3
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_1043(context, evt)
+	-- 终止识别id为102的挑战，并判定成功
+		ScriptLib.StopChallenge(context, 102, 1)
+	
+	return 0
+end
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_1044(context, evt)
+	-- 添加suite8的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 8)
+	
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "count", 1, 240016007) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
+end
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_1045(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 240016001, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016009, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1046(context, evt)
+	if 1002 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为3
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1046(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1047(context, evt)
+	if 1008 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为3
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	-- 判断变量"count"为1
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 1 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1047(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 4)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1048(context, evt)
+	if 1007 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为3
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	-- 判断变量"count"为2
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 2 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1048(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 5)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1049(context, evt)
+	if 1004 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为3
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	-- 判断变量"count"为3
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 3 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1049(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite6的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 6)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1050(context, evt)
+	if 1010 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为3
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	-- 判断变量"count"为4
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 4 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1050(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 添加suite7的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 240016001, 7)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1051(context, evt)
+	if 1009 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"type"为3
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	-- 判断变量"count"为5
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 5 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1051(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1052(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	
+	if 1002 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 0 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1052(context, evt)
+	-- 终止识别id为102的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 102, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1053(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	
+	if 1008 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 1 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1053(context, evt)
+	-- 终止识别id为102的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 102, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1054(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	
+	if 1007 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 2 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1054(context, evt)
+	-- 终止识别id为102的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 102, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1055(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	
+	if 1004 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 3 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1055(context, evt)
+	-- 终止识别id为102的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 102, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1056(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	
+	if 1010 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 4 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1056(context, evt)
+	-- 终止识别id为102的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 102, 0)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_1057(context, evt)
+	-- 判断变量"type"为1
+	if ScriptLib.GetGroupVariableValue(context, "type") ~= 3 then
+			return false
+	end
+	
+	
+	if 1009 == evt.param2 then
+		return false
+	end
+	
+	-- 判断变量"count"为0
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 5 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_1057(context, evt)
+	-- 终止识别id为102的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 102, 0)
+	
+	return 0
+end

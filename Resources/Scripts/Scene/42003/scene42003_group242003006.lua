@@ -1,178 +1,111 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 242003006
-L1_1 = {}
-L1_1.group_id = 242003006
-L1_1.timer = 60
-L1_1.challange_group_id = 242003010
-L2_1 = {}
-L3_1 = {}
-L3_1.operator_id = 6010
-L3_1.effect_id = 6034
-L4_1 = {}
-L5_1 = 6001
-L6_1 = 6002
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.gadget_id = L4_1
-L2_1[1] = L3_1
-L3_1 = {}
-L4_1 = {}
-monsters = L4_1
-L4_1 = {}
-npcs = L4_1
-L4_1 = {}
-L5_1 = {}
-L5_1.config_id = 6001
-L5_1.gadget_id = 70350110
-L6_1 = {}
-L6_1.x = 94.868
-L6_1.y = 2.98
-L6_1.z = -40.74
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 180.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 6002
-L6_1.gadget_id = 70350110
-L7_1 = {}
-L7_1.x = 95.087
-L7_1.y = 2.995
-L7_1.z = -62.704
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 6010
-L7_1.gadget_id = 70360145
-L8_1 = {}
-L8_1.x = 103.96
-L8_1.y = 3.249
-L8_1.z = -50.183
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 270.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.is_guest_can_operate = true
-L8_1 = {}
-L8_1.config_id = 6034
-L8_1.gadget_id = 70360140
-L9_1 = {}
-L9_1.x = 103.96
-L9_1.y = 3.249
-L9_1.z = -50.183
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 270.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-gadgets = L4_1
-L4_1 = {}
-regions = L4_1
-L4_1 = {}
-triggers = L4_1
-L4_1 = {}
-variables = L4_1
-L4_1 = {}
-L5_1 = {}
-L6_1 = {}
-L6_1.config_id = 1006009
-L6_1.name = "GROUP_LOAD_6009"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GROUP_LOAD
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = ""
-L6_1.action = "action_EVENT_GROUP_LOAD_6009"
-L7_1 = {}
-L7_1.config_id = 1006012
-L7_1.name = "GADGET_CREATE_6012"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GADGET_CREATE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GADGET_CREATE_6012"
-L7_1.action = "action_EVENT_GADGET_CREATE_6012"
-L8_1 = {}
-L8_1.config_id = 1006013
-L8_1.name = "SELECT_OPTION_6013"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_SELECT_OPTION
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_SELECT_OPTION_6013"
-L8_1.action = "action_EVENT_SELECT_OPTION_6013"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1006014
-L9_1.name = "TIMER_EVENT_6014"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_TIMER_EVENT
-L9_1.event = L10_1
-L9_1.source = "time1"
-L9_1.condition = ""
-L9_1.action = "action_EVENT_TIMER_EVENT_6014"
-L9_1.trigger_count = 0
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L4_1.triggers = L5_1
-garbages = L4_1
-L4_1 = {}
-L4_1.suite = 1
-L4_1.end_suite = 0
-L4_1.rand_suite = false
-init_config = L4_1
-L4_1 = {}
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 6001
-L8_1 = 6002
-L9_1 = 6010
-L10_1 = 6034
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-suites = L4_1
-L4_1 = require
-L5_1 = "TowerDefense_Trap"
-L4_1(L5_1)
+-- 基础信息
+local base_info = {
+	group_id = 242003006
+}
+
+-- Trigger变量
+local defs = {
+	group_id = 242003006,
+	timer = 60,
+	challange_group_id = 242003010
+}
+
+-- DEFS_MISCS
+local light_bridge={
+	{operator_id=6010,effect_id=6034,gadget_id={6001,6002}}
+}
+local wind_field={
+
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 6001, gadget_id = 70350110, pos = { x = 94.868, y = 2.980, z = -40.740 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1 },
+	{ config_id = 6002, gadget_id = 70350110, pos = { x = 95.087, y = 2.995, z = -62.704 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 6010, gadget_id = 70360145, pos = { x = 103.960, y = 3.249, z = -50.183 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 1, is_guest_can_operate = true },
+	{ config_id = 6034, gadget_id = 70360140, pos = { x = 103.960, y = 3.249, z = -50.183 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	triggers = {
+		{ config_id = 1006009, name = "GROUP_LOAD_6009", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_6009" },
+		{ config_id = 1006012, name = "GADGET_CREATE_6012", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_6012", action = "action_EVENT_GADGET_CREATE_6012" },
+		{ config_id = 1006013, name = "SELECT_OPTION_6013", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_6013", action = "action_EVENT_SELECT_OPTION_6013", trigger_count = 0 },
+		{ config_id = 1006014, name = "TIMER_EVENT_6014", event = EventType.EVENT_TIMER_EVENT, source = "time1", condition = "", action = "action_EVENT_TIMER_EVENT_6014", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 6001, 6002, 6010, 6034 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "TowerDefense_Trap"

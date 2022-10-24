@@ -1,442 +1,237 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 177006090
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 90004
-L2_1.gadget_id = 70360001
-L3_1 = {}
-L3_1.x = 574.733
-L3_1.y = 121.212
-L3_1.z = -512.476
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 36
-L2_1.area_id = 210
-L3_1 = {}
-L3_1.config_id = 90005
-L3_1.gadget_id = 70500000
-L4_1 = {}
-L4_1.x = 584.897
-L4_1.y = 120.44
-L4_1.z = -517.468
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 12.364
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.point_type = 9292
-L3_1.isOneoff = true
-L3_1.area_id = 210
-L4_1 = {}
-L4_1.config_id = 90007
-L4_1.gadget_id = 70500000
-L5_1 = {}
-L5_1.x = 573.076
-L5_1.y = 121.702
-L5_1.z = -521.769
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 40.017
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.point_type = 9293
-L4_1.isOneoff = true
-L4_1.area_id = 210
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1090001
-L2_1.name = "GATHER_90001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GATHER
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GATHER_90001"
-L2_1.action = "action_EVENT_GATHER_90001"
-L3_1 = {}
-L3_1.config_id = 1090002
-L3_1.name = "GATHER_90002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GATHER
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GATHER_90002"
-L3_1.action = "action_EVENT_GATHER_90002"
-L4_1 = {}
-L4_1.config_id = 1090003
-L4_1.name = "QUEST_START_90003"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_QUEST_START
-L4_1.event = L5_1
-L4_1.source = "7227614"
-L4_1.condition = "condition_EVENT_QUEST_START_90003"
-L4_1.action = "action_EVENT_QUEST_START_90003"
-L5_1 = {}
-L5_1.config_id = 1090006
-L5_1.name = "VARIABLE_CHANGE_90006"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_VARIABLE_CHANGE
-L5_1.event = L6_1
-L5_1.source = "count"
-L5_1.condition = "condition_EVENT_VARIABLE_CHANGE_90006"
-L5_1.action = "action_EVENT_VARIABLE_CHANGE_90006"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1090008
-L6_1.name = "QUEST_START_90008"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_QUEST_START
-L6_1.event = L7_1
-L6_1.source = "7227614"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_QUEST_START_90008"
-L7_1 = {}
-L7_1.config_id = 1090009
-L7_1.name = "GATHER_90009"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GATHER
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GATHER_90009"
-L7_1.action = "action_EVENT_GATHER_90009"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1090010
-L8_1.name = "GATHER_90010"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_GATHER
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_GATHER_90010"
-L8_1.action = "action_EVENT_GATHER_90010"
-L8_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "count"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "start"
-L3_1.value = 0
-L3_1.no_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 90004
-L5_1 = 90005
-L6_1 = 90007
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GATHER_90001"
-L5_1 = "GATHER_90002"
-L6_1 = "QUEST_START_90003"
-L7_1 = "VARIABLE_CHANGE_90006"
-L8_1 = "QUEST_START_90008"
-L9_1 = "GATHER_90009"
-L10_1 = "GATHER_90010"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 90005 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 177006090
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 90004, gadget_id = 70360001, pos = { x = 574.733, y = 121.212, z = -512.476 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 210 },
+	{ config_id = 90005, gadget_id = 70500000, pos = { x = 584.897, y = 120.440, z = -517.468 }, rot = { x = 0.000, y = 0.000, z = 12.364 }, level = 36, point_type = 9292, isOneoff = true, area_id = 210 },
+	{ config_id = 90007, gadget_id = 70500000, pos = { x = 573.076, y = 121.702, z = -521.769 }, rot = { x = 40.017, y = 0.000, z = 0.000 }, level = 36, point_type = 9293, isOneoff = true, area_id = 210 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1090001, name = "GATHER_90001", event = EventType.EVENT_GATHER, source = "", condition = "condition_EVENT_GATHER_90001", action = "action_EVENT_GATHER_90001" },
+	{ config_id = 1090002, name = "GATHER_90002", event = EventType.EVENT_GATHER, source = "", condition = "condition_EVENT_GATHER_90002", action = "action_EVENT_GATHER_90002" },
+	{ config_id = 1090003, name = "QUEST_START_90003", event = EventType.EVENT_QUEST_START, source = "7227614", condition = "condition_EVENT_QUEST_START_90003", action = "action_EVENT_QUEST_START_90003" },
+	{ config_id = 1090006, name = "VARIABLE_CHANGE_90006", event = EventType.EVENT_VARIABLE_CHANGE, source = "count", condition = "condition_EVENT_VARIABLE_CHANGE_90006", action = "action_EVENT_VARIABLE_CHANGE_90006", trigger_count = 0 },
+	{ config_id = 1090008, name = "QUEST_START_90008", event = EventType.EVENT_QUEST_START, source = "7227614", condition = "", action = "action_EVENT_QUEST_START_90008" },
+	{ config_id = 1090009, name = "GATHER_90009", event = EventType.EVENT_GATHER, source = "", condition = "condition_EVENT_GATHER_90009", action = "action_EVENT_GATHER_90009", trigger_count = 0 },
+	{ config_id = 1090010, name = "GATHER_90010", event = EventType.EVENT_GATHER, source = "", condition = "condition_EVENT_GATHER_90010", action = "action_EVENT_GATHER_90010", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "count", value = 0, no_refresh = true },
+	{ config_id = 2, name = "start", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 90004, 90005, 90007 },
+		regions = { },
+		triggers = { "GATHER_90001", "GATHER_90002", "QUEST_START_90003", "VARIABLE_CHANGE_90006", "QUEST_START_90008", "GATHER_90009", "GATHER_90010" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GATHER_90001(context, evt)
+	if 90005 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GATHER_90001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GATHER_90001(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GATHER_90001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 90007 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GATHER_90002(context, evt)
+	if 90007 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GATHER_90002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GATHER_90002(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GATHER_90002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_QUEST_START_90003(context, evt)
+	-- 判断变量"count"为3
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 3 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_QUEST_START_90003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7227614"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_90003(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7227614") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_90003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_90006(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"count"为2
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_90006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7227614"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_90006(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7227614") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_90006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "start"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_90008(context, evt)
+	-- 将本组内变量名为 "start" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "start", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_90008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if 90005 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "start"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GATHER_90009(context, evt)
+	if 90005 ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"start"为1
+	if ScriptLib.GetGroupVariableValue(context, "start") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GATHER_90009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 500660244
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GATHER_90009(context, evt)
+	-- 调用提示id为 500660244 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 500660244) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GATHER_90009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if 90007 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "start"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GATHER_90010(context, evt)
+	if 90007 ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"start"为1
+	if ScriptLib.GetGroupVariableValue(context, "start") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GATHER_90010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 500660245
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GATHER_90010(context, evt)
+	-- 调用提示id为 500660245 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 500660245) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GATHER_90010 = L1_1

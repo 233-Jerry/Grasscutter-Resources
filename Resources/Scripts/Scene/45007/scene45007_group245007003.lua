@@ -1,583 +1,188 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1, L30_1, L31_1
-L0_1 = {}
-L0_1.group_id = 245007003
-L1_1 = {}
-L1_1.group_id = 245007003
-L1_1.gear_group_id = 245007002
-L2_1 = require
-L3_1 = "V2_0/TowerDefense_MonsterWaveConfig_V2.0"
-L2_1(L3_1)
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L5_1 = 1
-L6_1 = 2
-L7_1 = 3
-L8_1 = 4
-L9_1 = 5
-L10_1 = 6
-L11_1 = 7
-L12_1 = 8
-L13_1 = 9
-L14_1 = 10
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L3_1.route_points = L4_1
-L3_1.tags = 2
-L2_1[1] = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = 1
-L6_1 = 2
-L7_1 = 3
-L8_1 = 4
-L9_1 = 5
-L10_1 = 6
-L11_1 = 7
-L12_1 = 8
-L13_1 = 9
-L14_1 = 10
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L3_1.route_points = L4_1
-L3_1.tags = 4
-L2_1[2] = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = 1
-L6_1 = 2
-L7_1 = 3
-L8_1 = 4
-L9_1 = 5
-L10_1 = 6
-L11_1 = 7
-L12_1 = 8
-L13_1 = 9
-L14_1 = 10
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L3_1.route_points = L4_1
-L3_1.tags = 8
-L2_1[3] = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = 1
-L6_1 = 2
-L7_1 = 3
-L8_1 = 4
-L9_1 = 5
-L10_1 = 6
-L11_1 = 7
-L12_1 = 8
-L13_1 = 9
-L14_1 = 10
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L3_1.route_points = L4_1
-L3_1.tags = 16
-L2_1[4] = L3_1
-route_map = L2_1
-L2_1 = {}
-L2_1[1] = 18
-L2_1[2] = 19
-L2_1[3] = 20
-L3_1 = {}
-L3_1[2] = 18
-L3_1[4] = 18
-L3_1[8] = 19
-L3_1[16] = 20
-L4_1 = {}
-L5_1 = 21
-L6_1 = 22
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L5_1 = {}
-L6_1 = stage_defender_oneway
-L5_1[1] = L6_1
-L6_1 = stage_dragon_oneway
-L5_1[2] = L6_1
-L6_1 = stage_hunter_oneway
-L5_1[3] = L6_1
-L6_1 = stage_iceking_oneway
-L5_1[4] = L6_1
-L6_1 = stage_rockking_oneway
-L5_1[5] = L6_1
-L6_1 = stage_electricking_oneway
-L5_1[6] = L6_1
-L6_1 = stage_defender_twoway
-L5_1[7] = L6_1
-L6_1 = stage_dragon_twoway
-L5_1[8] = L6_1
-L6_1 = stage_hunter_twoway
-L5_1[9] = L6_1
-L6_1 = stage_iceking_twoway
-L5_1[10] = L6_1
-L6_1 = stage_rockking_twoway
-L5_1[11] = L6_1
-L6_1 = stage_electricking_twoway
-L5_1[12] = L6_1
-L6_1 = stage_defender_threeway
-L5_1[13] = L6_1
-L6_1 = stage_dragon_threeway
-L5_1[14] = L6_1
-L6_1 = stage_hunter_threeway
-L5_1[15] = L6_1
-L6_1 = stage_iceking_threeway
-L5_1[16] = L6_1
-L6_1 = stage_rockking_threeway
-L5_1[17] = L6_1
-L6_1 = stage_electricking_threeway
-L5_1[18] = L6_1
-L6_1 = stage_defender_fourway
-L5_1[19] = L6_1
-L6_1 = stage_dragon_fourway
-L5_1[20] = L6_1
-L6_1 = stage_hunter_fourway
-L5_1[21] = L6_1
-L6_1 = stage_iceking_fourway
-L5_1[22] = L6_1
-L6_1 = stage_rockking_fourway
-L5_1[23] = L6_1
-L6_1 = stage_electricking_fourway
-L5_1[24] = L6_1
-L6_1 = stage_rockking_hil_twoway
-L5_1[25] = L6_1
-L6_1 = stage_iceking_hil_twoway
-L5_1[26] = L6_1
-L6_1 = stage_thug_twoway
-L5_1[27] = L6_1
-L6_1 = stage_electricking_iceking_twoway
-L5_1[28] = L6_1
-L6_1 = stage_electricking_rockking_twoway
-L5_1[29] = L6_1
-L6_1 = stage_iceking_rockking_twoway
-L5_1[30] = L6_1
-L6_1 = stage_thug_threeway
-L5_1[31] = L6_1
-L6_1 = stage_iceking_rockking_fourway
-L5_1[32] = L6_1
-L6_1 = {}
-monsters = L6_1
-L6_1 = {}
-npcs = L6_1
-L6_1 = {}
-gadgets = L6_1
-L6_1 = {}
-regions = L6_1
-L6_1 = {}
-triggers = L6_1
-L6_1 = {}
-L7_1 = {}
-L7_1.config_id = 3001
-L8_1 = {}
-L8_1.x = 82.325
-L8_1.y = -6.24
-L8_1.z = 5.236
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 180.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.tag = 4
-L8_1 = {}
-L8_1.config_id = 3002
-L9_1 = {}
-L9_1.x = 82.281
-L9_1.y = -6.24
-L9_1.z = 3.434
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 180.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.tag = 4
-L9_1 = {}
-L9_1.config_id = 3003
-L10_1 = {}
-L10_1.x = 84.235
-L10_1.y = -6.24
-L10_1.z = 3.627
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 180.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.tag = 4
-L10_1 = {}
-L10_1.config_id = 3004
-L11_1 = {}
-L11_1.x = 82.268
-L11_1.y = -6.234
-L11_1.z = 1.207
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 180.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.tag = 4
-L11_1 = {}
-L11_1.config_id = 3005
-L12_1 = {}
-L12_1.x = 84.958
-L12_1.y = -6.24
-L12_1.z = 1.972
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 180.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.tag = 4
-L12_1 = {}
-L12_1.config_id = 3006
-L13_1 = {}
-L13_1.x = 84.907
-L13_1.y = -6.24
-L13_1.z = 5.797
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 180.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.tag = 4
-L13_1 = {}
-L13_1.config_id = 3013
-L14_1 = {}
-L14_1.x = 86.249
-L14_1.y = -6.241
-L14_1.z = 5.236
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 180.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.tag = 2
-L14_1 = {}
-L14_1.config_id = 3014
-L15_1 = {}
-L15_1.x = 86.205
-L15_1.y = -6.24
-L15_1.z = 3.434
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 180.0
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.tag = 2
-L15_1 = {}
-L15_1.config_id = 3015
-L16_1 = {}
-L16_1.x = 88.159
-L16_1.y = -6.24
-L16_1.z = 3.627
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 180.0
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.tag = 2
-L16_1 = {}
-L16_1.config_id = 3016
-L17_1 = {}
-L17_1.x = 86.191
-L17_1.y = -6.24
-L17_1.z = 1.207
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 180.0
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.tag = 2
-L17_1 = {}
-L17_1.config_id = 3017
-L18_1 = {}
-L18_1.x = 88.882
-L18_1.y = -6.24
-L18_1.z = 1.972
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 180.0
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.tag = 2
-L18_1 = {}
-L18_1.config_id = 3018
-L19_1 = {}
-L19_1.x = 88.831
-L19_1.y = -6.249
-L19_1.z = 5.797
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 180.0
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.tag = 2
-L19_1 = {}
-L19_1.config_id = 3019
-L20_1 = {}
-L20_1.x = 59.262
-L20_1.y = -2.376
-L20_1.z = -9.069
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 180.0
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.tag = 8
-L20_1 = {}
-L20_1.config_id = 3020
-L21_1 = {}
-L21_1.x = 60.721
-L21_1.y = -2.374
-L21_1.z = -6.676
-L20_1.pos = L21_1
-L21_1 = {}
-L21_1.x = 0.0
-L21_1.y = 180.0
-L21_1.z = 0.0
-L20_1.rot = L21_1
-L20_1.tag = 8
-L21_1 = {}
-L21_1.config_id = 3021
-L22_1 = {}
-L22_1.x = 58.933
-L22_1.y = -2.389
-L22_1.z = -4.698
-L21_1.pos = L22_1
-L22_1 = {}
-L22_1.x = 0.0
-L22_1.y = 180.0
-L22_1.z = 0.0
-L21_1.rot = L22_1
-L21_1.tag = 8
-L22_1 = {}
-L22_1.config_id = 3022
-L23_1 = {}
-L23_1.x = 60.695
-L23_1.y = -2.377
-L23_1.z = -9.583
-L22_1.pos = L23_1
-L23_1 = {}
-L23_1.x = 0.0
-L23_1.y = 180.0
-L23_1.z = 0.0
-L22_1.rot = L23_1
-L22_1.tag = 8
-L23_1 = {}
-L23_1.config_id = 3023
-L24_1 = {}
-L24_1.x = 60.955
-L24_1.y = -2.375
-L24_1.z = -3.0
-L23_1.pos = L24_1
-L24_1 = {}
-L24_1.x = 0.0
-L24_1.y = 180.0
-L24_1.z = 0.0
-L23_1.rot = L24_1
-L23_1.tag = 8
-L24_1 = {}
-L24_1.config_id = 3024
-L25_1 = {}
-L25_1.x = 62.109
-L25_1.y = -2.384
-L25_1.z = -8.679
-L24_1.pos = L25_1
-L25_1 = {}
-L25_1.x = 0.0
-L25_1.y = 180.0
-L25_1.z = 0.0
-L24_1.rot = L25_1
-L24_1.tag = 8
-L25_1 = {}
-L25_1.config_id = 3025
-L26_1 = {}
-L26_1.x = 106.907
-L26_1.y = -2.363
-L26_1.z = -58.418
-L25_1.pos = L26_1
-L26_1 = {}
-L26_1.x = 0.0
-L26_1.y = 270.0
-L26_1.z = 0.0
-L25_1.rot = L26_1
-L25_1.tag = 16
-L26_1 = {}
-L26_1.config_id = 3026
-L27_1 = {}
-L27_1.x = 108.366
-L27_1.y = -2.362
-L27_1.z = -56.024
-L26_1.pos = L27_1
-L27_1 = {}
-L27_1.x = 0.0
-L27_1.y = 270.0
-L27_1.z = 0.0
-L26_1.rot = L27_1
-L26_1.tag = 16
-L27_1 = {}
-L27_1.config_id = 3027
-L28_1 = {}
-L28_1.x = 106.578
-L28_1.y = -2.363
-L28_1.z = -54.047
-L27_1.pos = L28_1
-L28_1 = {}
-L28_1.x = 0.0
-L28_1.y = 270.0
-L28_1.z = 0.0
-L27_1.rot = L28_1
-L27_1.tag = 16
-L28_1 = {}
-L28_1.config_id = 3028
-L29_1 = {}
-L29_1.x = 108.34
-L29_1.y = -2.362
-L29_1.z = -58.932
-L28_1.pos = L29_1
-L29_1 = {}
-L29_1.x = 0.0
-L29_1.y = 270.0
-L29_1.z = 0.0
-L28_1.rot = L29_1
-L28_1.tag = 16
-L29_1 = {}
-L29_1.config_id = 3029
-L30_1 = {}
-L30_1.x = 110.433
-L30_1.y = -2.361
-L30_1.z = -54.44
-L29_1.pos = L30_1
-L30_1 = {}
-L30_1.x = 0.0
-L30_1.y = 270.0
-L30_1.z = 0.0
-L29_1.rot = L30_1
-L29_1.tag = 16
-L30_1 = {}
-L30_1.config_id = 3030
-L31_1 = {}
-L31_1.x = 109.754
-L31_1.y = -2.361
-L31_1.z = -58.027
-L30_1.pos = L31_1
-L31_1 = {}
-L31_1.x = 0.0
-L31_1.y = 270.0
-L31_1.z = 0.0
-L30_1.rot = L31_1
-L30_1.tag = 16
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L6_1[7] = L13_1
-L6_1[8] = L14_1
-L6_1[9] = L15_1
-L6_1[10] = L16_1
-L6_1[11] = L17_1
-L6_1[12] = L18_1
-L6_1[13] = L19_1
-L6_1[14] = L20_1
-L6_1[15] = L21_1
-L6_1[16] = L22_1
-L6_1[17] = L23_1
-L6_1[18] = L24_1
-L6_1[19] = L25_1
-L6_1[20] = L26_1
-L6_1[21] = L27_1
-L6_1[22] = L28_1
-L6_1[23] = L29_1
-L6_1[24] = L30_1
-points = L6_1
-L6_1 = {}
-variables = L6_1
-L6_1 = {}
-L6_1.suite = 1
-L6_1.end_suite = 0
-L6_1.rand_suite = false
-init_config = L6_1
-L6_1 = {}
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L7_1.triggers = L8_1
-L7_1.rand_weight = 100
-L8_1 = {}
-L9_1 = {}
-L8_1.monsters = L9_1
-L9_1 = {}
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L8_1.triggers = L9_1
-L8_1.rand_weight = 100
-L9_1 = {}
-L10_1 = {}
-L9_1.monsters = L10_1
-L10_1 = {}
-L9_1.gadgets = L10_1
-L10_1 = {}
-L9_1.regions = L10_1
-L10_1 = {}
-L9_1.triggers = L10_1
-L9_1.rand_weight = 100
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-suites = L6_1
-L6_1 = require
-L7_1 = "V2_0/TowerDefense_Monster_V2.0"
-L6_1(L7_1)
+-- 基础信息
+local base_info = {
+	group_id = 245007003
+}
+
+-- Trigger变量
+local defs = {
+	group_id = 245007003,
+	gear_group_id = 245007002
+}
+
+-- DEFS_MISCS
+require "V2_0/TowerDefense_MonsterWaveConfig_V2.0"
+
+route_map={
+  [1]={route_points={1,2,3,4,5,6,7,8,9,10},tags=2},
+  [2]={route_points={1,2,3,4,5,6,7,8,9,10},tags=4},
+  [3]={route_points={1,2,3,4,5,6,7,8,9,10},tags=8},
+  [4]={route_points={1,2,3,4,5,6,7,8,9,10},tags=16},
+}
+
+local entrance_point_map={
+  [1]=18,
+  [2]=19, 
+  [3]=20,  
+}
+
+
+local entrance_map={
+  [2]=18,
+  [4]=18,
+  [8]=19,
+  [16]=20,   
+}
+
+local exit_point_list={21,22}
+
+
+--对应的刷怪策略
+local monster_programme={
+  [1]=stage_defender_oneway,
+  [2]=stage_dragon_oneway,
+  [3]=stage_hunter_oneway,
+  [4]=stage_iceking_oneway,
+  [5]=stage_rockking_oneway,
+  [6]=stage_electricking_oneway, 
+  [7]=stage_defender_twoway,
+  [8]=stage_dragon_twoway,
+  [9]=stage_hunter_twoway,
+  [10]=stage_iceking_twoway,
+  [11]=stage_rockking_twoway,
+  [12]=stage_electricking_twoway, 
+  [13]=stage_defender_threeway,
+  [14]=stage_dragon_threeway,
+  [15]=stage_hunter_threeway,
+  [16]=stage_iceking_threeway,
+  [17]=stage_rockking_threeway,
+  [18]=stage_electricking_threeway, 
+  [19]=stage_defender_fourway,
+  [20]=stage_dragon_fourway,
+  [21]=stage_hunter_fourway,
+  [22]=stage_iceking_fourway,
+  [23]=stage_rockking_fourway,
+  [24]=stage_electricking_fourway, 
+  [25]=stage_rockking_hil_twoway,
+  [26]=stage_iceking_hil_twoway,
+  [27]=stage_thug_twoway,
+  [28]=stage_electricking_iceking_twoway,
+  [29]=stage_electricking_rockking_twoway,
+  [30]=stage_iceking_rockking_twoway,
+  [31]=stage_thug_threeway,
+  [32]=stage_iceking_rockking_fourway,
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 点位
+points = {
+	{ config_id = 3001, pos = { x = 82.325, y = -6.240, z = 5.236 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 4 },
+	{ config_id = 3002, pos = { x = 82.281, y = -6.240, z = 3.434 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 4 },
+	{ config_id = 3003, pos = { x = 84.235, y = -6.240, z = 3.627 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 4 },
+	{ config_id = 3004, pos = { x = 82.268, y = -6.234, z = 1.207 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 4 },
+	{ config_id = 3005, pos = { x = 84.958, y = -6.240, z = 1.972 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 4 },
+	{ config_id = 3006, pos = { x = 84.907, y = -6.240, z = 5.797 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 4 },
+	{ config_id = 3013, pos = { x = 86.249, y = -6.241, z = 5.236 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 2 },
+	{ config_id = 3014, pos = { x = 86.205, y = -6.240, z = 3.434 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 2 },
+	{ config_id = 3015, pos = { x = 88.159, y = -6.240, z = 3.627 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 2 },
+	{ config_id = 3016, pos = { x = 86.191, y = -6.240, z = 1.207 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 2 },
+	{ config_id = 3017, pos = { x = 88.882, y = -6.240, z = 1.972 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 2 },
+	{ config_id = 3018, pos = { x = 88.831, y = -6.249, z = 5.797 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 2 },
+	{ config_id = 3019, pos = { x = 59.262, y = -2.376, z = -9.069 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 8 },
+	{ config_id = 3020, pos = { x = 60.721, y = -2.374, z = -6.676 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 8 },
+	{ config_id = 3021, pos = { x = 58.933, y = -2.389, z = -4.698 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 8 },
+	{ config_id = 3022, pos = { x = 60.695, y = -2.377, z = -9.583 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 8 },
+	{ config_id = 3023, pos = { x = 60.955, y = -2.375, z = -3.000 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 8 },
+	{ config_id = 3024, pos = { x = 62.109, y = -2.384, z = -8.679 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, tag = 8 },
+	{ config_id = 3025, pos = { x = 106.907, y = -2.363, z = -58.418 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, tag = 16 },
+	{ config_id = 3026, pos = { x = 108.366, y = -2.362, z = -56.024 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, tag = 16 },
+	{ config_id = 3027, pos = { x = 106.578, y = -2.363, z = -54.047 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, tag = 16 },
+	{ config_id = 3028, pos = { x = 108.340, y = -2.362, z = -58.932 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, tag = 16 },
+	{ config_id = 3029, pos = { x = 110.433, y = -2.361, z = -54.440 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, tag = 16 },
+	{ config_id = 3030, pos = { x = 109.754, y = -2.361, z = -58.027 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, tag = 16 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_0/TowerDefense_Monster_V2.0"

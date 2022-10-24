@@ -1,322 +1,98 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1
-L0_1 = {}
-L0_1.group_id = 220000051
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 253
-L2_1.gadget_id = 70900207
-L3_1 = {}
-L3_1.x = 100.346
-L3_1.y = 0.5
-L3_1.z = 275.668
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 141.322
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 254
-L3_1.gadget_id = 70900208
-L4_1 = {}
-L4_1.x = 99.062
-L4_1.y = 0.5
-L4_1.z = 273.528
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 81.885
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 255
-L4_1.gadget_id = 70900208
-L5_1 = {}
-L5_1.x = 97.158
-L5_1.y = 0.5
-L5_1.z = 271.658
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 81.885
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 256
-L5_1.gadget_id = 70900208
-L6_1 = {}
-L6_1.x = 95.012
-L6_1.y = 0.5
-L6_1.z = 269.915
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 45.48
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 257
-L6_1.gadget_id = 70900208
-L7_1 = {}
-L7_1.x = 93.999
-L7_1.y = 0.5
-L7_1.z = 266.833
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 110.915
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 258
-L7_1.gadget_id = 70900208
-L8_1 = {}
-L8_1.x = 93.523
-L8_1.y = 0.5
-L8_1.z = 263.246
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 278.295
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 259
-L8_1.gadget_id = 70900208
-L9_1 = {}
-L9_1.x = 95.4
-L9_1.y = 0.5
-L9_1.z = 261.466
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 51.189
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = {}
-L9_1.config_id = 260
-L9_1.gadget_id = 70900208
-L10_1 = {}
-L10_1.x = 77.557
-L10_1.y = 0.5
-L10_1.z = 285.791
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 81.885
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L10_1 = {}
-L10_1.config_id = 261
-L10_1.gadget_id = 70900208
-L11_1 = {}
-L11_1.x = 75.654
-L11_1.y = 0.5
-L11_1.z = 283.92
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 81.885
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L11_1 = {}
-L11_1.config_id = 262
-L11_1.gadget_id = 70900208
-L12_1 = {}
-L12_1.x = 73.508
-L12_1.y = 0.5
-L12_1.z = 282.177
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 45.48
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L12_1 = {}
-L12_1.config_id = 263
-L12_1.gadget_id = 70900208
-L13_1 = {}
-L13_1.x = 72.495
-L13_1.y = 0.5
-L13_1.z = 279.096
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 110.915
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 1
-L13_1 = {}
-L13_1.config_id = 264
-L13_1.gadget_id = 70900208
-L14_1 = {}
-L14_1.x = 72.019
-L14_1.y = 0.5
-L14_1.z = 275.508
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 278.295
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L14_1 = {}
-L14_1.config_id = 265
-L14_1.gadget_id = 70900208
-L15_1 = {}
-L15_1.x = 73.896
-L15_1.y = 0.5
-L15_1.z = 273.728
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 51.189
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 1
-L15_1 = {}
-L15_1.config_id = 266
-L15_1.gadget_id = 70900224
-L16_1 = {}
-L16_1.x = 74.858
-L16_1.y = 0.5
-L16_1.z = 270.898
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 269.642
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 1
-L16_1 = {}
-L16_1.config_id = 267
-L16_1.gadget_id = 70350004
-L17_1 = {}
-L17_1.x = 69.524
-L17_1.y = 0.767
-L17_1.z = 270.44
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 359.988
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-L1_1[14] = L15_1
-L1_1[15] = L16_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1000083
-L2_1.name = "CLIENT_EXECUTE_83"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_CLIENT_EXECUTE
-L2_1.event = L3_1
-L2_1.source = "ElectricSwitch_Hit"
-L2_1.condition = ""
-L2_1.action = "action_EVENT_CLIENT_EXECUTE_83"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = true
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 253
-L5_1 = 254
-L6_1 = 255
-L7_1 = 256
-L8_1 = 257
-L9_1 = 258
-L10_1 = 259
-L11_1 = 260
-L12_1 = 261
-L13_1 = 262
-L14_1 = 263
-L15_1 = 264
-L16_1 = 265
-L17_1 = 266
-L18_1 = 267
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L3_1[13] = L16_1
-L3_1[14] = L17_1
-L3_1[15] = L18_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "CLIENT_EXECUTE_83"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 267
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220000051
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 253, gadget_id = 70900207, pos = { x = 100.346, y = 0.500, z = 275.668 }, rot = { x = 0.000, y = 141.322, z = 0.000 }, level = 1 },
+	{ config_id = 254, gadget_id = 70900208, pos = { x = 99.062, y = 0.500, z = 273.528 }, rot = { x = 0.000, y = 81.885, z = 0.000 }, level = 1 },
+	{ config_id = 255, gadget_id = 70900208, pos = { x = 97.158, y = 0.500, z = 271.658 }, rot = { x = 0.000, y = 81.885, z = 0.000 }, level = 1 },
+	{ config_id = 256, gadget_id = 70900208, pos = { x = 95.012, y = 0.500, z = 269.915 }, rot = { x = 0.000, y = 45.480, z = 0.000 }, level = 1 },
+	{ config_id = 257, gadget_id = 70900208, pos = { x = 93.999, y = 0.500, z = 266.833 }, rot = { x = 0.000, y = 110.915, z = 0.000 }, level = 1 },
+	{ config_id = 258, gadget_id = 70900208, pos = { x = 93.523, y = 0.500, z = 263.246 }, rot = { x = 0.000, y = 278.295, z = 0.000 }, level = 1 },
+	{ config_id = 259, gadget_id = 70900208, pos = { x = 95.400, y = 0.500, z = 261.466 }, rot = { x = 0.000, y = 51.189, z = 0.000 }, level = 1 },
+	{ config_id = 260, gadget_id = 70900208, pos = { x = 77.557, y = 0.500, z = 285.791 }, rot = { x = 0.000, y = 81.885, z = 0.000 }, level = 1 },
+	{ config_id = 261, gadget_id = 70900208, pos = { x = 75.654, y = 0.500, z = 283.920 }, rot = { x = 0.000, y = 81.885, z = 0.000 }, level = 1 },
+	{ config_id = 262, gadget_id = 70900208, pos = { x = 73.508, y = 0.500, z = 282.177 }, rot = { x = 0.000, y = 45.480, z = 0.000 }, level = 1 },
+	{ config_id = 263, gadget_id = 70900208, pos = { x = 72.495, y = 0.500, z = 279.096 }, rot = { x = 0.000, y = 110.915, z = 0.000 }, level = 1 },
+	{ config_id = 264, gadget_id = 70900208, pos = { x = 72.019, y = 0.500, z = 275.508 }, rot = { x = 0.000, y = 278.295, z = 0.000 }, level = 1 },
+	{ config_id = 265, gadget_id = 70900208, pos = { x = 73.896, y = 0.500, z = 273.728 }, rot = { x = 0.000, y = 51.189, z = 0.000 }, level = 1 },
+	{ config_id = 266, gadget_id = 70900224, pos = { x = 74.858, y = 0.500, z = 270.898 }, rot = { x = 0.000, y = 269.642, z = 0.000 }, level = 1 },
+	{ config_id = 267, gadget_id = 70350004, pos = { x = 69.524, y = 0.767, z = 270.440 }, rot = { x = 0.000, y = 359.988, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000083, name = "CLIENT_EXECUTE_83", event = EventType.EVENT_CLIENT_EXECUTE, source = "ElectricSwitch_Hit", condition = "", action = "action_EVENT_CLIENT_EXECUTE_83" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267 },
+		regions = { },
+		triggers = { "CLIENT_EXECUTE_83" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_CLIENT_EXECUTE_83(context, evt)
+	-- 将configid为 267 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 267, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_CLIENT_EXECUTE_83 = L1_1

@@ -1,471 +1,180 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 250008017
-L1_1 = {}
-L1_1.group_id = 250008017
-L1_1.riddle_hint = 90
-L1_1.riddle_1 = 92
-L1_1.riddle_2 = 93
-L1_1.riddle_3 = 94
-L1_1.riddle_4 = 95
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 90
-L3_1.gadget_id = 70220029
-L4_1 = {}
-L4_1.x = 18.93
-L4_1.y = 4.0
-L4_1.z = -151.949
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 190.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 91
-L4_1.gadget_id = 70220030
-L5_1 = {}
-L5_1.x = 18.93
-L5_1.y = 4.18
-L5_1.z = -151.949
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 182.7
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 92
-L5_1.gadget_id = 70220031
-L6_1 = {}
-L6_1.x = 17.33
-L6_1.y = 4.0
-L6_1.z = -163.049
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 276.1
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L6_1 = {}
-L6_1.config_id = 93
-L6_1.gadget_id = 70220031
-L7_1 = {}
-L7_1.x = 5.23
-L7_1.y = 4.0
-L7_1.z = -148.749
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 317.5
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = GadgetState
-L7_1 = L7_1.GearStart
-L6_1.state = L7_1
-L7_1 = {}
-L7_1.config_id = 94
-L7_1.gadget_id = 70220031
-L8_1 = {}
-L8_1.x = 21.23
-L8_1.y = 4.0
-L8_1.z = -141.949
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 257.6
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = GadgetState
-L8_1 = L8_1.GearStart
-L7_1.state = L8_1
-L8_1 = {}
-L8_1.config_id = 95
-L8_1.gadget_id = 70220031
-L9_1 = {}
-L9_1.x = 32.03
-L9_1.y = 4.0
-L9_1.z = -154.349
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 14.1
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = GadgetState
-L9_1 = L9_1.GearStart
-L8_1.state = L9_1
-L9_1 = {}
-L9_1.config_id = 96
-L9_1.gadget_id = 70211031
-L10_1 = {}
-L10_1.x = 19.53
-L10_1.y = 4.18
-L10_1.z = -151.849
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 270.4
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.drop_tag = "\230\136\152\230\150\151\232\182\133\231\186\167\232\146\153\229\190\183"
-L9_1.isOneoff = true
-L9_1.persistent = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1000052
-L3_1.name = "GADGET_STATE_CHANGE_52"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_52"
-L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_52"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1000053
-L4_1.name = "GADGET_STATE_CHANGE_53"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_53"
-L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_53"
-L5_1 = {}
-L5_1.config_id = 1000054
-L5_1.name = "VARIABLE_CHANGE_54"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_VARIABLE_CHANGE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = ""
-L5_1.action = "action_EVENT_VARIABLE_CHANGE_54"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1000055
-L6_1.name = "NONE_55"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_NONE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = ""
-L6_1.action = "action_EVENT_NONE_55"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "State_Flag"
-L3_1.value = 4
-L3_1.no_refresh = true
-L2_1[1] = L3_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 90
-L6_1 = 91
-L7_1 = 92
-L8_1 = 93
-L9_1 = 94
-L10_1 = 95
-L11_1 = 96
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_STATE_CHANGE_52"
-L6_1 = "GADGET_STATE_CHANGE_53"
-L7_1 = "VARIABLE_CHANGE_54"
-L8_1 = "NONE_55"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 91
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  L3_2 = L1_1.riddle_1
-  if L2_2 ~= L3_2 then
-    L2_2 = A1_2.param2
-    L3_2 = L1_1.riddle_2
-    if L2_2 ~= L3_2 then
-      L2_2 = A1_2.param2
-      L3_2 = L1_1.riddle_3
-      if L2_2 ~= L3_2 then
-        L2_2 = A1_2.param2
-        L3_2 = L1_1.riddle_4
-        if L2_2 ~= L3_2 then
-          L2_2 = false
-          return L2_2
-        end
-      end
-    end
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 250008017
+}
+
+-- Trigger变量
+local defs = {
+	group_id = 250008017,
+	riddle_hint = 90,
+	riddle_1 = 92,
+	riddle_2 = 93,
+	riddle_3 = 94,
+	riddle_4 = 95
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 90, gadget_id = 70220029, pos = { x = 18.930, y = 4.000, z = -151.949 }, rot = { x = 0.000, y = 190.000, z = 0.000 }, level = 1 },
+	{ config_id = 91, gadget_id = 70220030, pos = { x = 18.930, y = 4.180, z = -151.949 }, rot = { x = 0.000, y = 182.700, z = 0.000 }, level = 1 },
+	{ config_id = 92, gadget_id = 70220031, pos = { x = 17.330, y = 4.000, z = -163.049 }, rot = { x = 0.000, y = 276.100, z = 0.000 }, level = 1, state = GadgetState.GearStart },
+	{ config_id = 93, gadget_id = 70220031, pos = { x = 5.230, y = 4.000, z = -148.749 }, rot = { x = 0.000, y = 317.500, z = 0.000 }, level = 1, state = GadgetState.GearStart },
+	{ config_id = 94, gadget_id = 70220031, pos = { x = 21.230, y = 4.000, z = -141.949 }, rot = { x = 0.000, y = 257.600, z = 0.000 }, level = 1, state = GadgetState.GearStart },
+	{ config_id = 95, gadget_id = 70220031, pos = { x = 32.030, y = 4.000, z = -154.349 }, rot = { x = 0.000, y = 14.100, z = 0.000 }, level = 1, state = GadgetState.GearStart },
+	{ config_id = 96, gadget_id = 70211031, pos = { x = 19.530, y = 4.180, z = -151.849 }, rot = { x = 0.000, y = 270.400, z = 0.000 }, level = 1, drop_tag = "战斗超级蒙德", isOneoff = true, persistent = true }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000052, name = "GADGET_STATE_CHANGE_52", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_52", action = "action_EVENT_GADGET_STATE_CHANGE_52", trigger_count = 0 },
+	{ config_id = 1000053, name = "GADGET_STATE_CHANGE_53", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_53", action = "action_EVENT_GADGET_STATE_CHANGE_53" },
+	{ config_id = 1000054, name = "VARIABLE_CHANGE_54", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "", action = "action_EVENT_VARIABLE_CHANGE_54", trigger_count = 0 },
+	{ config_id = 1000055, name = "NONE_55", event = EventType.EVENT_NONE, source = "", condition = "", action = "action_EVENT_NONE_55" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "State_Flag", value = 4, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 90, 91, 92, 93, 94, 95, 96 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_52", "GADGET_STATE_CHANGE_53", "VARIABLE_CHANGE_54", "NONE_55" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { 91 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_52(context, evt)
+	if evt.param2 ~= defs.riddle_1 and evt.param2 ~= defs.riddle_2 and evt.param2 ~= defs.riddle_3 and evt.param2 ~= defs.riddle_4 then
+	return false 
+	end
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_52 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  L3_2 = GadgetState
-  L3_2 = L3_2.GearStart
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "State_Flag"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-  else
-    L2_2 = A1_2.param1
-    L3_2 = GadgetState
-    L3_2 = L3_2.Default
-    if L2_2 == L3_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ChangeGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "State_Flag"
-      L5_2 = -1
-      L2_2(L3_2, L4_2, L5_2)
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_52(context, evt)
+	if evt.param1 == GadgetState.GearStart then
+	ScriptLib.ChangeGroupVariableValue(context, "State_Flag", 1)
+	elseif evt.param1 == GadgetState.Default then
+	ScriptLib.ChangeGroupVariableValue(context, "State_Flag", -1)
+	end
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_52 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = GadgetState
-  L3_2 = L3_2.GearStart
-  if L2_2 == L3_2 then
-    L2_2 = A1_2.param2
-    L3_2 = L1_1.riddle_hint
-    if L2_2 == L3_2 then
-      goto lbl_12
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_12::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_53(context, evt)
+	if evt.param1 ~= GadgetState.GearStart or evt.param2 ~= defs.riddle_hint then
+	return false
+	end
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_53 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_53(context, evt)
+	if 0 ~= ScriptLib.RemoveExtraGroupSuite(context, defs.group_id, 2) then
+	return -1
+	end
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_53 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "State_Flag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 or 4 < L2_2 then
-    L3_2 = -1
-    return L3_2
-  end
-  if L2_2 == 4 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = L1_1.group_id
-    L6_2 = L1_1.riddle_hint
-    L7_2 = GadgetState
-    L7_2 = L7_2.Default
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-  elseif L2_2 == 3 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = L1_1.group_id
-    L6_2 = L1_1.riddle_hint
-    L7_2 = GadgetState
-    L7_2 = L7_2.Action01
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-  elseif L2_2 == 2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = L1_1.group_id
-    L6_2 = L1_1.riddle_hint
-    L7_2 = GadgetState
-    L7_2 = L7_2.Action02
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-  elseif L2_2 == 1 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = L1_1.group_id
-    L6_2 = L1_1.riddle_hint
-    L7_2 = GadgetState
-    L7_2 = L7_2.Action03
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-  elseif L2_2 == 0 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = L1_1.group_id
-    L6_2 = L1_1.riddle_hint
-    L7_2 = GadgetState
-    L7_2 = L7_2.GearStart
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_54(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	local value = ScriptLib.GetGroupVariableValue(context, "State_Flag")
+	if value < 0 or value > 4 then
+	return -1
+	end 
+	if value == 4 then
+	ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.riddle_hint, GadgetState.Default)
+	elseif value == 3 then
+	ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.riddle_hint, GadgetState.Action01)
+	elseif value == 2 then
+	ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.riddle_hint, GadgetState.Action02)
+	elseif value == 1 then
+	ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.riddle_hint, GadgetState.Action03)
+	elseif value == 0 then
+	ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.riddle_hint, GadgetState.GearStart)
+	end
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_54 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = GadgetState
-  L2_2 = L2_2.GearStart
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = L1_1.group_id
-  L6_2 = L1_1.riddle_hint
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = L1_1.group_id
-    L5_2 = 2
-    L2_2(L3_2, L4_2, L5_2)
-  end
-  L2_2 = 0
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = L1_1.group_id
-  L6_2 = L1_1.riddle_1
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  L4_2 = GadgetState
-  L4_2 = L4_2.GearStart
-  if L3_2 == L4_2 then
-    L2_2 = L2_2 + 1
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = L1_1.group_id
-  L6_2 = L1_1.riddle_2
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  L4_2 = GadgetState
-  L4_2 = L4_2.GearStart
-  if L3_2 == L4_2 then
-    L2_2 = L2_2 + 1
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = L1_1.group_id
-  L6_2 = L1_1.riddle_3
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  L4_2 = GadgetState
-  L4_2 = L4_2.GearStart
-  if L3_2 == L4_2 then
-    L2_2 = L2_2 + 1
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = L1_1.group_id
-  L6_2 = L1_1.riddle_4
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  L4_2 = GadgetState
-  L4_2 = L4_2.GearStart
-  if L3_2 == L4_2 then
-    L2_2 = L2_2 + 1
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "State_Flag"
-  L6_2 = L2_2
-  L3_2(L4_2, L5_2, L6_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_NONE_55(context, evt)
+	if GadgetState.GearStart ~= ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.riddle_hint) then
+	ScriptLib.AddExtraGroupSuite(context, defs.group_id, 2)
+	end
+	local sum = 0
+	if ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.riddle_1) == GadgetState.GearStart then
+	sum = sum + 1
+	end
+	if ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.riddle_2) == GadgetState.GearStart then
+	sum = sum + 1
+	end
+	if ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.riddle_3) == GadgetState.GearStart then
+	sum = sum + 1
+	end
+	if ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.riddle_4) == GadgetState.GearStart then
+	sum = sum + 1
+	end
+	ScriptLib.SetGroupVariableValue(context, "State_Flag", sum)
+	return 0
 end
-action_EVENT_NONE_55 = L2_1

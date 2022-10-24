@@ -1,12 +1,4 @@
-local L0_1, L1_1, L2_1
-L0_1 = {}
-L1_1 = {}
-L1_1.id = 250020004
-L1_1.refresh_id = 1001
-L2_1 = {}
-L2_1.x = 24.868
-L2_1.y = 0.0
-L2_1.z = 43.385
-L1_1.pos = L2_1
-L0_1[1] = L1_1
-groups = L0_1
+-- 所有的group
+groups = {
+	{ id = 250020004, refresh_id = 1001, pos = { x = 24.868, y = 0.000, z = 43.385 }, is_replaceable = { value = false, version = 0, new_bin_only = true } }
+}

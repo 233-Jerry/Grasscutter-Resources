@@ -1,255 +1,144 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 155005300
-L1_1 = {}
-L1_1.groupID = 155005300
-L1_1.gadget_gate = 300001
-L1_1.gadget_controller = 300002
-function L2_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2, L7_2
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = L1_1.groupID
-  L6_2 = A1_2
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  L4_2 = A2_2[1]
-  if L3_2 == L4_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = L1_1.groupID
-    L6_2 = A1_2
-    L7_2 = A2_2[2]
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-  else
-    L3_2 = ScriptLib
-    L3_2 = L3_2.GetGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = L1_1.groupID
-    L6_2 = A1_2
-    L3_2 = L3_2(L4_2, L5_2, L6_2)
-    L4_2 = A2_2[2]
-    if L3_2 == L4_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.SetGroupGadgetStateByConfigId
-      L4_2 = A0_2
-      L5_2 = L1_1.groupID
-      L6_2 = A1_2
-      L7_2 = A2_2[1]
-      L3_2(L4_2, L5_2, L6_2, L7_2)
-    end
-  end
+-- 基础信息
+local base_info = {
+	group_id = 155005300
+}
+
+-- Trigger变量
+local defs = {
+	groupID = 155005300,
+	gadget_gate = 300001,
+	gadget_controller = 300002
+}
+
+-- DEFS_MISCS
+function GadgetStateSwitcher(context,gadget_id,state)
+
+	if ScriptLib.GetGadgetStateByConfigId(context, defs.groupID, gadget_id)  == state[1] then 
+		ScriptLib.SetGroupGadgetStateByConfigId(context, defs.groupID, gadget_id, state[2])
+	elseif ScriptLib.GetGadgetStateByConfigId(context, defs.groupID, gadget_id)  == state[2] then 
+		ScriptLib.SetGroupGadgetStateByConfigId(context, defs.groupID, gadget_id, state[1])
+	end 
+
 end
-GadgetStateSwitcher = L2_1
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 300001
-L3_1.gadget_id = 70350006
-L4_1 = {}
-L4_1.x = 382.686
-L4_1.y = 123.77
-L4_1.z = 854.849
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 358.514
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.persistent = true
-L3_1.area_id = 200
-L4_1 = {}
-L4_1.config_id = 300002
-L4_1.gadget_id = 70360170
-L5_1 = {}
-L5_1.x = 378.349
-L5_1.y = 123.815
-L5_1.z = 857.06
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 87.683
-L5_1.y = 270.0
-L5_1.z = 258.349
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.persistent = true
-L4_1.area_id = 200
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1300003
-L3_1.name = "GROUP_LOAD_300003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GROUP_LOAD
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_GROUP_LOAD_300003"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1300004
-L4_1.name = "SELECT_OPTION_300004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SELECT_OPTION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SELECT_OPTION_300004"
-L4_1.action = "action_EVENT_SELECT_OPTION_300004"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1300005
-L5_1.name = "TIME_AXIS_PASS_300005"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_TIME_AXIS_PASS
-L5_1.event = L6_1
-L5_1.source = "reset"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_TIME_AXIS_PASS_300005"
-L5_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 300001
-L6_1 = 300002
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GROUP_LOAD_300003"
-L6_1 = "SELECT_OPTION_300004"
-L7_1 = "TIME_AXIS_PASS_300005"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 155005300
-  L5_2 = 300002
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 300001, gadget_id = 70350006, pos = { x = 382.686, y = 123.770, z = 854.849 }, rot = { x = 0.000, y = 358.514, z = 0.000 }, level = 36, persistent = true, area_id = 200 },
+	{ config_id = 300002, gadget_id = 70360170, pos = { x = 378.349, y = 123.815, z = 857.060 }, rot = { x = 87.683, y = 270.000, z = 258.349 }, level = 36, persistent = true, area_id = 200 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1300003, name = "GROUP_LOAD_300003", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_300003", trigger_count = 0 },
+	{ config_id = 1300004, name = "SELECT_OPTION_300004", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_300004", action = "action_EVENT_SELECT_OPTION_300004", trigger_count = 0 },
+	{ config_id = 1300005, name = "TIME_AXIS_PASS_300005", event = EventType.EVENT_TIME_AXIS_PASS, source = "reset", condition = "", action = "action_EVENT_TIME_AXIS_PASS_300005", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 300001, 300002 },
+		regions = { },
+		triggers = { "GROUP_LOAD_300003", "SELECT_OPTION_300004", "TIME_AXIS_PASS_300005" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_300003(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 155005300, 300002, {7}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_300003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 300002 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 7 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_300004(context, evt)
+	-- 判断是gadgetid 300002 option_id 7
+	if 300002 ~= evt.param1 then
+		return false	
+	end
+	
+	if 7 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_300004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = GadgetStateSwitcher
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_gate
-  L5_2 = {}
-  L6_2 = 0
-  L7_2 = 201
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = GadgetStateSwitcher
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_controller
-  L5_2 = {}
-  L6_2 = 0
-  L7_2 = 201
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 155005300
-  L5_2 = 300002
-  L6_2 = 7
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "reset"
-  L5_2 = {}
-  L6_2 = 1
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_300004(context, evt)
+		GadgetStateSwitcher(context,defs.gadget_gate,{0,201})
+		GadgetStateSwitcher(context,defs.gadget_controller,{0,201})
+		-- 删除指定group： 155005300 ；指定config：300002；物件身上指定option：7；
+		ScriptLib.DelWorktopOptionByGroupId(context, 155005300, 300002, 7)
+		-- 创建标识为"reset"，时间节点为{1}的时间轴，false用于控制该时间轴是否循环
+		ScriptLib.InitTimeAxis(context, "reset", {1}, false)
+		
+		
+		return 0
 end
-action_EVENT_SELECT_OPTION_300004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 155005300
-  L5_2 = 300002
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_300005(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 155005300, 300002, {7}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_300005 = L2_1

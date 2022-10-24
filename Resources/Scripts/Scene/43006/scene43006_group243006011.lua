@@ -1,1373 +1,581 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1
-L0_1 = {}
-L0_1.group_id = 243006011
-L1_1 = {}
-L1_1.group_main = 243006007
-L1_1.group_1 = 243006011
-L1_1.monster_1 = 11003
-L1_1.monster_2 = 11009
-L1_1.challenge1 = 401
-L1_1.Region1 = 11012
-L1_1.Region2 = 11020
-L1_1.challenge_father = 999
-L1_1.group_core = 243006005
-L1_1.galleryid = 7012
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 11003
-L3_1.monster_id = 21010601
-L4_1 = {}
-L4_1.x = 75.695
-L4_1.y = 40.049
-L4_1.z = -21.158
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 11004
-L4_1.monster_id = 21010601
-L5_1 = {}
-L5_1.x = 75.784
-L5_1.y = 40.049
-L5_1.z = -36.494
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 11009
-L5_1.monster_id = 20010601
-L6_1 = {}
-L6_1.x = 71.907
-L6_1.y = 40.0
-L6_1.z = -30.808
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 47.564
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 11010
-L6_1.monster_id = 21020201
-L7_1 = {}
-L7_1.x = 81.447
-L7_1.y = 40.049
-L7_1.z = -28.532
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 260.21
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 11011
-L7_1.monster_id = 20011301
-L8_1 = {}
-L8_1.x = 71.104
-L8_1.y = 40.001
-L8_1.z = -27.01
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 66.34
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 11021
-L8_1.monster_id = 20010701
-L9_1 = {}
-L9_1.x = 73.375
-L9_1.y = 40.049
-L9_1.z = -23.688
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 95.355
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 11019
-L3_1.gadget_id = 70900205
-L4_1 = {}
-L4_1.x = 74.594
-L4_1.y = 39.244
-L4_1.z = -17.247
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 11012
-L4_1 = RegionShape
-L4_1 = L4_1.CUBIC
-L3_1.shape = L4_1
-L4_1 = {}
-L4_1.x = 50.0
-L4_1.y = 40.0
-L4_1.z = 45.0
-L3_1.size = L4_1
-L4_1 = {}
-L4_1.x = 64.0
-L4_1.y = 40.0
-L4_1.z = -32.2
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.config_id = 11020
-L5_1 = RegionShape
-L5_1 = L5_1.CUBIC
-L4_1.shape = L5_1
-L5_1 = {}
-L5_1.x = 50.0
-L5_1.y = 40.0
-L5_1.z = 45.0
-L4_1.size = L5_1
-L5_1 = {}
-L5_1.x = 64.0
-L5_1.y = 40.0
-L5_1.z = -32.2
-L4_1.pos = L5_1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1011001
-L3_1.name = "VARIABLE_CHANGE_11001"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = "key"
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_11001"
-L3_1.action = "action_EVENT_VARIABLE_CHANGE_11001"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1011002
-L4_1.name = "ANY_MONSTER_DIE_11002"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ANY_MONSTER_DIE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ANY_MONSTER_DIE_11002"
-L4_1.action = "action_EVENT_ANY_MONSTER_DIE_11002"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1011006
-L5_1.name = "VARIABLE_CHANGE_11006"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_VARIABLE_CHANGE
-L5_1.event = L6_1
-L5_1.source = "key"
-L5_1.condition = "condition_EVENT_VARIABLE_CHANGE_11006"
-L5_1.action = "action_EVENT_VARIABLE_CHANGE_11006"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1011007
-L6_1.name = "ANY_MONSTER_DIE_11007"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_ANY_MONSTER_DIE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_ANY_MONSTER_DIE_11007"
-L6_1.action = "action_EVENT_ANY_MONSTER_DIE_11007"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1011012
-L7_1.name = "LEAVE_REGION_11012"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_LEAVE_REGION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_LEAVE_REGION_11012"
-L7_1.action = "action_EVENT_LEAVE_REGION_11012"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1011013
-L8_1.name = "CHALLENGE_FAIL_11013"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_CHALLENGE_FAIL
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = ""
-L8_1.action = "action_EVENT_CHALLENGE_FAIL_11013"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1011014
-L9_1.name = "CHALLENGE_SUCCESS_11014"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_CHALLENGE_SUCCESS
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = ""
-L9_1.action = ""
-L10_1 = {}
-L10_1.config_id = 1011015
-L10_1.name = "ANY_MONSTER_LIVE_11015"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_ANY_MONSTER_LIVE
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_ANY_MONSTER_LIVE_11015"
-L10_1.action = "action_EVENT_ANY_MONSTER_LIVE_11015"
-L11_1 = {}
-L11_1.config_id = 1011016
-L11_1.name = "ANY_MONSTER_LIVE_11016"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_ANY_MONSTER_LIVE
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_ANY_MONSTER_LIVE_11016"
-L11_1.action = "action_EVENT_ANY_MONSTER_LIVE_11016"
-L12_1 = {}
-L12_1.config_id = 1011017
-L12_1.name = "CHALLENGE_FAIL_11017"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_CHALLENGE_FAIL
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = ""
-L12_1.action = "action_EVENT_CHALLENGE_FAIL_11017"
-L12_1.trigger_count = 0
-L13_1 = {}
-L13_1.config_id = 1011018
-L13_1.name = "CHALLENGE_SUCCESS_11018"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_CHALLENGE_SUCCESS
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = ""
-L13_1.action = ""
-L14_1 = {}
-L14_1.config_id = 1011020
-L14_1.name = "LEAVE_REGION_11020"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_LEAVE_REGION
-L14_1.event = L15_1
-L14_1.source = ""
-L14_1.condition = "condition_EVENT_LEAVE_REGION_11020"
-L14_1.action = "action_EVENT_LEAVE_REGION_11020"
-L14_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "c4"
-L3_1.value = 0
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "key"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 3
-L5_1.name = "success"
-L5_1.value = 0
-L5_1.no_refresh = false
-L6_1 = {}
-L6_1.configId = 4
-L6_1.name = "Gflag"
-L6_1.value = 0
-L6_1.no_refresh = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 11019
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 0
-L4_1 = {}
-L5_1 = {}
-L6_1 = 11003
-L7_1 = 11004
-L8_1 = 11010
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L6_1 = 11012
-L5_1[1] = L6_1
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "VARIABLE_CHANGE_11001"
-L7_1 = "ANY_MONSTER_DIE_11002"
-L8_1 = "LEAVE_REGION_11012"
-L9_1 = "ANY_MONSTER_LIVE_11015"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L7_1 = 11009
-L8_1 = 11011
-L9_1 = 11021
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L7_1 = 11020
-L6_1[1] = L7_1
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "VARIABLE_CHANGE_11006"
-L8_1 = "ANY_MONSTER_DIE_11007"
-L9_1 = "ANY_MONSTER_LIVE_11016"
-L10_1 = "LEAVE_REGION_11020"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "key"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 243006011
+}
+
+-- Trigger变量
+local defs = {
+	group_main = 243006007,
+	group_1 = 243006011,
+	monster_1 = 11003,
+	monster_2 = 11009,
+	challenge1 = 401,
+	Region1 = 11012,
+	Region2 = 11020,
+	challenge_father = 999,
+	group_core = 243006005,
+	galleryid = 7012
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 11003, monster_id = 21010601, pos = { x = 75.695, y = 40.049, z = -21.158 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 11004, monster_id = 21010601, pos = { x = 75.784, y = 40.049, z = -36.494 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 11009, monster_id = 20010601, pos = { x = 71.907, y = 40.000, z = -30.808 }, rot = { x = 0.000, y = 47.564, z = 0.000 }, level = 1 },
+	{ config_id = 11010, monster_id = 21020201, pos = { x = 81.447, y = 40.049, z = -28.532 }, rot = { x = 0.000, y = 260.210, z = 0.000 }, level = 1 },
+	{ config_id = 11011, monster_id = 20011301, pos = { x = 71.104, y = 40.001, z = -27.010 }, rot = { x = 0.000, y = 66.340, z = 0.000 }, level = 1 },
+	{ config_id = 11021, monster_id = 20010701, pos = { x = 73.375, y = 40.049, z = -23.688 }, rot = { x = 0.000, y = 95.355, z = 0.000 }, level = 1 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 11019, gadget_id = 70900205, pos = { x = 74.594, y = 39.244, z = -17.247 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 11012, shape = RegionShape.CUBIC, size = { x = 50.000, y = 40.000, z = 45.000 }, pos = { x = 64.000, y = 40.000, z = -32.200 } },
+	{ config_id = 11020, shape = RegionShape.CUBIC, size = { x = 50.000, y = 40.000, z = 45.000 }, pos = { x = 64.000, y = 40.000, z = -32.200 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1011001, name = "VARIABLE_CHANGE_11001", event = EventType.EVENT_VARIABLE_CHANGE, source = "key", condition = "condition_EVENT_VARIABLE_CHANGE_11001", action = "action_EVENT_VARIABLE_CHANGE_11001", trigger_count = 0 },
+	{ config_id = 1011002, name = "ANY_MONSTER_DIE_11002", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_11002", action = "action_EVENT_ANY_MONSTER_DIE_11002", trigger_count = 0 },
+	{ config_id = 1011006, name = "VARIABLE_CHANGE_11006", event = EventType.EVENT_VARIABLE_CHANGE, source = "key", condition = "condition_EVENT_VARIABLE_CHANGE_11006", action = "action_EVENT_VARIABLE_CHANGE_11006", trigger_count = 0 },
+	{ config_id = 1011007, name = "ANY_MONSTER_DIE_11007", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_11007", action = "action_EVENT_ANY_MONSTER_DIE_11007", trigger_count = 0 },
+	{ config_id = 1011012, name = "LEAVE_REGION_11012", event = EventType.EVENT_LEAVE_REGION, source = "", condition = "condition_EVENT_LEAVE_REGION_11012", action = "action_EVENT_LEAVE_REGION_11012", trigger_count = 0 },
+	{ config_id = 1011013, name = "CHALLENGE_FAIL_11013", event = EventType.EVENT_CHALLENGE_FAIL, source = "", condition = "", action = "action_EVENT_CHALLENGE_FAIL_11013", trigger_count = 0 },
+	{ config_id = 1011014, name = "CHALLENGE_SUCCESS_11014", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "", condition = "", action = "" },
+	{ config_id = 1011015, name = "ANY_MONSTER_LIVE_11015", event = EventType.EVENT_ANY_MONSTER_LIVE, source = "", condition = "condition_EVENT_ANY_MONSTER_LIVE_11015", action = "action_EVENT_ANY_MONSTER_LIVE_11015" },
+	{ config_id = 1011016, name = "ANY_MONSTER_LIVE_11016", event = EventType.EVENT_ANY_MONSTER_LIVE, source = "", condition = "condition_EVENT_ANY_MONSTER_LIVE_11016", action = "action_EVENT_ANY_MONSTER_LIVE_11016" },
+	{ config_id = 1011017, name = "CHALLENGE_FAIL_11017", event = EventType.EVENT_CHALLENGE_FAIL, source = "", condition = "", action = "action_EVENT_CHALLENGE_FAIL_11017", trigger_count = 0 },
+	{ config_id = 1011018, name = "CHALLENGE_SUCCESS_11018", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "", condition = "", action = "" },
+	{ config_id = 1011020, name = "LEAVE_REGION_11020", event = EventType.EVENT_LEAVE_REGION, source = "", condition = "condition_EVENT_LEAVE_REGION_11020", action = "action_EVENT_LEAVE_REGION_11020", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "c4", value = 0, no_refresh = false },
+	{ config_id = 2, name = "key", value = 0, no_refresh = false },
+	{ config_id = 3, name = "success", value = 0, no_refresh = false },
+	{ config_id = 4, name = "Gflag", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 11019 },
+		regions = { },
+		triggers = { },
+		rand_weight = 0
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 11003, 11004, 11010 },
+		gadgets = { },
+		regions = { 11012 },
+		triggers = { "VARIABLE_CHANGE_11001", "ANY_MONSTER_DIE_11002", "LEAVE_REGION_11012", "ANY_MONSTER_LIVE_11015" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { 11009, 11011, 11021 },
+		gadgets = { },
+		regions = { 11020 },
+		triggers = { "VARIABLE_CHANGE_11006", "ANY_MONSTER_DIE_11007", "ANY_MONSTER_LIVE_11016", "LEAVE_REGION_11020" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_11001(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"key"为3
+	if ScriptLib.GetGroupVariableValue(context, "key") ~= 3 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_11001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "success"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 1 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>1"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValueByGroup
-    L3_2 = A0_2
-    L4_2 = "AddTime"
-    L5_2 = 1
-    L6_2 = L1_1.group_core
-    L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001005
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "\231\136\182\230\140\145\230\136\152\230\151\182\233\151\180\229\183\178\231\187\143\228\191\174\230\148\185"
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 0
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>2"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001006
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 3 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 1
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>3"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001007
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 4 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 2
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>4"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001008
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 5 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 3
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>2"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001006
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 6 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 4
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>3"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001007
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 7 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 5
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>4"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001008
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_11001(context, evt)
+	-- 将本组内变量名为 "success" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "success", 1) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	    return -1
+	  end
+	
+	--【修改父挑战时间】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 1 then
+	    ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>1")
+	
+		if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "AddTime", 1, defs.group_core) then
+	    	ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	    	return -1
+		end
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001005) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+		ScriptLib.PrintContextLog(context, "父挑战时间已经修改")
+	end 
+	
+	
+	--【复活】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 2 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 0)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>2")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001006) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	end
+	
+	--【加攻击】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 3 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 1)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>3")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001007) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+	end
+	
+	--【加移速】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 4 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 2)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>4")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001008) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+	end
+	 
+	--【复活2】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 5 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 3)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>2")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001006) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	end
+	
+	--【加攻击2】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 6 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 4)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>3")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001007) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+	end
+	
+	--【加移速2】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 7 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 5)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>4")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001008) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_11001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if L2_2 <= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_11002(context, evt)
+	--检查configeID是否大于0
+	if 0 >= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_11002 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "key"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ExecuteGroupLua
-  L3_2 = A0_2
-  L4_2 = L1_1.group_core
-  L5_2 = "AddChildChallengeScore"
-  L6_2 = {}
-  L7_2 = 1
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_11002(context, evt)
+	-- 针对当前group内变量名为 "key" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "key", 1) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	    return -1
+	end
+	  
+	--通知父挑战积分+1
+	ScriptLib.ExecuteGroupLua(context, defs.group_core, "AddChildChallengeScore", {1})
+	  
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_11002 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "key"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_11006(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"key"为3
+	if ScriptLib.GetGroupVariableValue(context, "key") ~= 3 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_11006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "success"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 1 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>1"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValueByGroup
-    L3_2 = A0_2
-    L4_2 = "AddTime"
-    L5_2 = 1
-    L6_2 = L1_1.group_core
-    L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001005
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "\231\136\182\230\140\145\230\136\152\230\151\182\233\151\180\229\183\178\231\187\143\228\191\174\230\148\185"
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 0
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>2"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001006
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 3 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 1
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>3"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001007
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 4 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 2
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>4"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001008
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 5 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 3
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>2"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001006
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 6 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 4
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>3"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001007
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Gflag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 7 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AttachGalleryAbilityGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.galleryid
-    L6_2 = 5
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>4"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 43001008
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.PrintContextLog
-      L3_2 = A0_2
-      L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-      L2_2(L3_2, L4_2)
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_11006(context, evt)
+	-- 将本组内变量名为 "success" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "success", 1) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	    return -1
+	  end
+	
+	--【修改父挑战时间】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 1 then
+	    ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>1")
+	
+		if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "AddTime", 1, defs.group_core) then
+	    	ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	    	return -1
+		end
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001005) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+		ScriptLib.PrintContextLog(context, "父挑战时间已经修改")
+	end 
+	
+	
+	--【复活】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 2 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 0)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>2")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001006) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	end
+	
+	--【加攻击】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 3 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 1)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>3")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001007) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+	end
+	
+	--【加移速】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 4 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 2)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>4")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001008) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+	end
+	 
+	--【复活2】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 5 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 3)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>2")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001006) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	end
+	
+	--【加攻击2】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 6 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 4)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>3")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001007) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+	end
+	
+	--【加移速2】
+	if ScriptLib.GetGroupVariableValue(context, "Gflag") == 7 then
+	
+		ScriptLib.AttachGalleryAbilityGroup(context, {}, defs.galleryid, 5)
+		ScriptLib.PrintContextLog(context, "Gflag>>>>>>>>>>>>>>>>>>>>>>>>>>>4")
+	
+		-- 调用提示id为 400021 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001008) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_11006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if L2_2 <= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_11007(context, evt)
+	--检查configeID是否大于0
+	if 0 >= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_11007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "key"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ExecuteGroupLua
-  L3_2 = A0_2
-  L4_2 = L1_1.group_core
-  L5_2 = "AddChildChallengeScore"
-  L6_2 = {}
-  L7_2 = 1
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_11007(context, evt)
+	-- 针对当前group内变量名为 "key" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "key", 1) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	    return -1
+	end
+	  
+	--通知父挑战积分+1
+	ScriptLib.ExecuteGroupLua(context, defs.group_core, "AddChildChallengeScore", {1})
+	  
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_11007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionConfigId
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = L1_1.Region1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "success"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_LEAVE_REGION_11012(context, evt)
+	-- 判断是区域8011
+	if ScriptLib.GetRegionConfigId(context, { region_eid = evt.source_eid }) ~= defs.Region1 then
+		return false
+	end
+	
+	
+	-- 判断变量"success"为0
+	if ScriptLib.GetGroupVariableValue(context, "success") ~= 0 then
+	    return false
+	end
+	
+	return true
 end
-condition_EVENT_LEAVE_REGION_11012 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ExecuteGroupLua
-  L3_2 = A0_2
-  L4_2 = L1_1.group_core
-  L5_2 = "StopChildChallengeFromDiffGroup"
-  L6_2 = {}
-  L7_2 = L1_1.challenge1
-  L8_2 = 0
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintContextLog
-  L3_2 = A0_2
-  L4_2 = "\231\166\187\229\188\128\229\140\186\229\159\159\239\188\140\230\140\145\230\136\152\229\164\177\232\180\165!!!!!!!!!!!"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "f4"
-  L5_2 = 1
-  L6_2 = L1_1.group_main
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = L1_1.group_1
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_LEAVE_REGION_11012(context, evt)
+	--离开区域 挑战失败
+	ScriptLib.ExecuteGroupLua(context, defs.group_core, "StopChildChallengeFromDiffGroup", {defs.challenge1,0})
+	
+	 ScriptLib.PrintContextLog(context, "离开区域，挑战失败!!!!!!!!!!!")
+	
+	
+	-- 针对当前group内变量名为 "f1" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "f4", 1, defs.group_main) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	
+	
+	-- 删除suite2的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, defs.group_1, 2)
+	
+	return 0
 end
-action_EVENT_LEAVE_REGION_11012 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "f4"
-  L5_2 = 1
-  L6_2 = L1_1.group_main
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = L1_1.group_1
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_11013(context, evt)
+	-- 针对当前group内变量名为 "f1" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "f4", 1, defs.group_main) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	
+	
+	-- 删除suite2的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, defs.group_1, 2)
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_11013 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = L1_1.monster_1
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_LIVE_11015(context, evt)
+	if defs.monster_1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_LIVE_11015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ExecuteGroupLua
-  L3_2 = A0_2
-  L4_2 = L1_1.group_core
-  L5_2 = "DefineFatherIndex"
-  L6_2 = {}
-  L7_2 = L1_1.challenge_father
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ExecuteGroupLua
-  L3_2 = A0_2
-  L4_2 = L1_1.group_core
-  L5_2 = "DefineChildChallengeScore"
-  L6_2 = {}
-  L7_2 = 1
-  L8_2 = 1
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ExecuteGroupLua
-  L3_2 = A0_2
-  L4_2 = L1_1.group_core
-  L5_2 = "AttachChildChallengeFromDiffGroup"
-  L6_2 = {}
-  L7_2 = L1_1.challenge1
-  L8_2 = 233
-  L9_2 = 3
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L6_2[3] = L9_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 43001009
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_LIVE_11015(context, evt)
+	--向编号999的父挑战挂接子挑战
+	ScriptLib.ExecuteGroupLua(context, defs.group_core, "DefineFatherIndex",{defs.challenge_father})
+	ScriptLib.ExecuteGroupLua(context, defs.group_core, "DefineChildChallengeScore",{ 1, 1})
+	ScriptLib.ExecuteGroupLua(context, defs.group_core, "AttachChildChallengeFromDiffGroup",{defs.challenge1, 233, 3})
+	
+		-- 调用提示id为 43001009 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001009) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_LIVE_11015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = L1_1.monster_2
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_LIVE_11016(context, evt)
+	if defs.monster_2 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_LIVE_11016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ExecuteGroupLua
-  L3_2 = A0_2
-  L4_2 = L1_1.group_core
-  L5_2 = "DefineFatherIndex"
-  L6_2 = {}
-  L7_2 = L1_1.challenge_father
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ExecuteGroupLua
-  L3_2 = A0_2
-  L4_2 = L1_1.group_core
-  L5_2 = "DefineChildChallengeScore"
-  L6_2 = {}
-  L7_2 = 1
-  L8_2 = 1
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ExecuteGroupLua
-  L3_2 = A0_2
-  L4_2 = L1_1.group_core
-  L5_2 = "AttachChildChallengeFromDiffGroup"
-  L6_2 = {}
-  L7_2 = L1_1.challenge1
-  L8_2 = 233
-  L9_2 = 3
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L6_2[3] = L9_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 43001009
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_LIVE_11016(context, evt)
+	--向编号999的父挑战挂接子挑战
+	ScriptLib.ExecuteGroupLua(context, defs.group_core, "DefineFatherIndex",{defs.challenge_father})
+	ScriptLib.ExecuteGroupLua(context, defs.group_core, "DefineChildChallengeScore",{ 1, 1})
+	ScriptLib.ExecuteGroupLua(context, defs.group_core, "AttachChildChallengeFromDiffGroup",{defs.challenge1, 233, 3})
+	
+		-- 调用提示id为 43001009 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+		if 0 ~= ScriptLib.ShowReminder(context, 43001009) then
+		  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_LIVE_11016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "f4"
-  L5_2 = 1
-  L6_2 = L1_1.group_main
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = L1_1.group_1
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_11017(context, evt)
+	-- 针对当前group内变量名为 "f1" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "f4", 1, defs.group_main) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	
+	
+	-- 删除suite2的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, defs.group_1, 3)
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_11017 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionConfigId
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = L1_1.Region2
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "success"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_LEAVE_REGION_11020(context, evt)
+	-- 判断是区域8011
+	if ScriptLib.GetRegionConfigId(context, { region_eid = evt.source_eid }) ~= defs.Region2 then
+		return false
+	end
+	
+	-- 判断变量"success"为0
+	if ScriptLib.GetGroupVariableValue(context, "success") ~= 0 then
+	    return false
+	end
+	
+	return true
 end
-condition_EVENT_LEAVE_REGION_11020 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ExecuteGroupLua
-  L3_2 = A0_2
-  L4_2 = L1_1.group_core
-  L5_2 = "StopChildChallengeFromDiffGroup"
-  L6_2 = {}
-  L7_2 = L1_1.challenge1
-  L8_2 = 0
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintContextLog
-  L3_2 = A0_2
-  L4_2 = "\231\166\187\229\188\128\229\140\186\229\159\159\239\188\140\230\140\145\230\136\152\229\164\177\232\180\165!!!!!!!!!!!"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "f4"
-  L5_2 = 1
-  L6_2 = L1_1.group_main
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = L1_1.group_1
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_LEAVE_REGION_11020(context, evt)
+	--离开区域 挑战失败
+	ScriptLib.ExecuteGroupLua(context, defs.group_core, "StopChildChallengeFromDiffGroup", {defs.challenge1,0})
+	
+	 ScriptLib.PrintContextLog(context, "离开区域，挑战失败!!!!!!!!!!!")
+	
+	
+	-- 针对当前group内变量名为 "f1" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "f4", 1, defs.group_main) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	
+	
+	-- 删除suite2的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, defs.group_1, 3)
+	
+	return 0
 end
-action_EVENT_LEAVE_REGION_11020 = L2_1

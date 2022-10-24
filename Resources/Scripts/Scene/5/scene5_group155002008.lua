@@ -1,636 +1,294 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1
-L0_1 = {}
-L0_1.group_id = 155002008
-L1_1 = {}
-L1_1.pointarray_route = 500200002
-L1_1.group_ID = 155002008
-L2_1 = {}
-L3_1 = {}
-L4_1 = 8006
-L5_1 = 8009
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L4_1 = {}
-L5_1 = {}
-L6_1 = {}
-function L7_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 1
-  L1_2(L2_2, L3_2, L4_2)
+-- 基础信息
+local base_info = {
+	group_id = 155002008
+}
+
+-- Trigger变量
+local defs = {
+	pointarray_route = 500200002,
+	group_ID = 155002008
+}
+
+-- DEFS_MISCS
+local Controllers = {}
+local EnvControlGadgets = {8006,8009}
+local DayAppearGadgets = {}
+local NightAppearGadgets = {}
+
+local gameplayStateFuncitons = 
+{
+	["0"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",1)
+		
+	end,
+	["1"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",0)
+
+		ScriptLib.AddExtraGroupSuite(context, defs.group_ID, 2)
+		DayNight_Gadget_Unlock(context,8006)
+		DayNight_Gadget_Unlock(context,8009)
+		Restore(context)
+		ScriptLib.SetGroupVariableValue(context, "isMoving", 0) 
+	
+	end,
+	["2"] = function(context)
+		
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",1)
+	end
+}
+
+
+function UpdateGamePlayState(context)
+	local state = ScriptLib.GetGroupVariableValue(context, "gameplayState") 
+
+	gameplayStateFuncitons[tostring(state)](context)
+
 end
-L6_1["0"] = L7_1
-function L7_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 0
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddExtraGroupSuite
-  L2_2 = A0_2
-  L3_2 = L1_1.group_ID
-  L4_2 = 2
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = DayNight_Gadget_Unlock
-  L2_2 = A0_2
-  L3_2 = 8006
-  L1_2(L2_2, L3_2)
-  L1_2 = DayNight_Gadget_Unlock
-  L2_2 = A0_2
-  L3_2 = 8009
-  L1_2(L2_2, L3_2)
-  L1_2 = Restore
-  L2_2 = A0_2
-  L1_2(L2_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "isMoving"
-  L4_2 = 0
-  L1_2(L2_2, L3_2, L4_2)
+
+function GadgetStateSwitcher(context,groupid,gadget_id,state)
+
+	if ScriptLib.GetGadgetStateByConfigId(context, groupid, gadget_id)  == state[1] then 
+		ScriptLib.SetGroupGadgetStateByConfigId(context, groupid, gadget_id, state[2])
+	elseif ScriptLib.GetGadgetStateByConfigId(context, groupid, gadget_id)  == state[2] then 
+		ScriptLib.SetGroupGadgetStateByConfigId(context, groupid, gadget_id, state[1])
+	end 
 end
-L6_1["1"] = L7_1
-function L7_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 1
-  L1_2(L2_2, L3_2, L4_2)
+
+
+function MovePlatform(context,platform_id,pointarray_id,routelist,routemode,turnmode)
+	ScriptLib.SetPlatformPointArray(context, platform_id, pointarray_id, routelist, { route_type = routemode,turn_mode = turnmode } )
+	return 0
 end
-L6_1["2"] = L7_1
-function L7_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.GetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "gameplayState"
-  L1_2 = L1_2(L2_2, L3_2)
-  L2_2 = tostring
-  L3_2 = L1_2
-  L2_2 = L2_2(L3_2)
-  L2_2 = L6_1[L2_2]
-  L3_2 = A0_2
-  L2_2(L3_2)
+
+function PrintLog(context,str)
+
+	local log = "["..defs.group_ID.."] : "..str
+	ScriptLib.PrintContextLog(context,log)
 end
-UpdateGamePlayState = L7_1
-function L7_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2, L7_2, L8_2
-  L4_2 = ScriptLib
-  L4_2 = L4_2.GetGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = A1_2
-  L7_2 = A2_2
-  L4_2 = L4_2(L5_2, L6_2, L7_2)
-  L5_2 = A3_2[1]
-  if L4_2 == L5_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetGroupGadgetStateByConfigId
-    L5_2 = A0_2
-    L6_2 = A1_2
-    L7_2 = A2_2
-    L8_2 = A3_2[2]
-    L4_2(L5_2, L6_2, L7_2, L8_2)
-  else
-    L4_2 = ScriptLib
-    L4_2 = L4_2.GetGadgetStateByConfigId
-    L5_2 = A0_2
-    L6_2 = A1_2
-    L7_2 = A2_2
-    L4_2 = L4_2(L5_2, L6_2, L7_2)
-    L5_2 = A3_2[2]
-    if L4_2 == L5_2 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGroupGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = A1_2
-      L7_2 = A2_2
-      L8_2 = A3_2[1]
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-    end
-  end
+
+function Restore(context)
+	MovePlatform(context,8008,defs.pointarray_route,{ScriptLib.GetGroupVariableValue(context,"wallCurPos")},0,false)
 end
-GadgetStateSwitcher = L7_1
-function L7_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
-  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L6_2 = ScriptLib
-  L6_2 = L6_2.SetPlatformPointArray
-  L7_2 = A0_2
-  L8_2 = A1_2
-  L9_2 = A2_2
-  L10_2 = A3_2
-  L11_2 = {}
-  L11_2.route_type = A4_2
-  L11_2.turn_mode = A5_2
-  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2)
-  L6_2 = 0
-  return L6_2
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 8001, gadget_id = 70290281, pos = { x = 1313.825, y = 186.331, z = 845.558 }, rot = { x = 0.000, y = 90.000, z = 180.000 }, level = 36, persistent = true, area_id = 200 },
+	{ config_id = 8002, gadget_id = 70290281, pos = { x = 1319.097, y = 186.431, z = 851.084 }, rot = { x = 0.000, y = 0.000, z = 180.000 }, level = 36, persistent = true, area_id = 200 },
+	{ config_id = 8006, gadget_id = 70360305, pos = { x = 1318.949, y = 180.499, z = 856.234 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 200 },
+	{ config_id = 8008, gadget_id = 70290170, pos = { x = 1303.538, y = 180.537, z = 846.001 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 36, start_route = false, is_use_point_array = true, area_id = 200 },
+	{ config_id = 8009, gadget_id = 70360309, pos = { x = 1318.924, y = 180.572, z = 845.954 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 200 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 移动铁栅栏
+	{ config_id = 1008005, name = "GADGET_STATE_CHANGE_8005", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_8005", action = "action_EVENT_GADGET_STATE_CHANGE_8005", trigger_count = 0 },
+	-- 激活机关移动墙壁
+	{ config_id = 1008007, name = "GADGET_STATE_CHANGE_8007", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_8007", action = "action_EVENT_GADGET_STATE_CHANGE_8007", trigger_count = 0 },
+	-- 初始化
+	{ config_id = 1008011, name = "GROUP_LOAD_8011", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_8011", trigger_count = 0 },
+	-- 监听gameplayState
+	{ config_id = 1008012, name = "VARIABLE_CHANGE_8012", event = EventType.EVENT_VARIABLE_CHANGE, source = "gameplayState", condition = "condition_EVENT_VARIABLE_CHANGE_8012", action = "action_EVENT_VARIABLE_CHANGE_8012", trigger_count = 0 },
+	-- 移动平台到点后设置i是Moving为0
+	{ config_id = 1008016, name = "TIME_AXIS_PASS_8016", event = EventType.EVENT_TIME_AXIS_PASS, source = "Active_8010", condition = "", action = "action_EVENT_TIME_AXIS_PASS_8016", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "gameplayState", value = 0, no_refresh = true },
+	{ config_id = 2, name = "wallCurPos", value = 1, no_refresh = true },
+	{ config_id = 3, name = "isMoving", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_8011", "VARIABLE_CHANGE_8012", "TIME_AXIS_PASS_8016" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 8001, 8002, 8006, 8008, 8009 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_8005", "GADGET_STATE_CHANGE_8007", "GROUP_LOAD_8011", "VARIABLE_CHANGE_8012" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_8005(context, evt)
+	if 8006 ~= evt.param2 then
+			return false
+		end
+	if 222 ~= ScriptLib.GetGadgetStateByConfigId(context, 155002008, 8006) then
+		return false
+	end
+	
+	return true
 end
-MovePlatform = L7_1
-function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = "["
-  L3_2 = L1_1.group_ID
-  L4_2 = "] : "
-  L5_2 = A1_2
-  L2_2 = L2_2 .. L3_2 .. L4_2 .. L5_2
-  L3_2 = ScriptLib
-  L3_2 = L3_2.PrintContextLog
-  L4_2 = A0_2
-  L5_2 = L2_2
-  L3_2(L4_2, L5_2)
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_8005(context, evt)
+				local blocker = 8001
+				local state = ScriptLib.GetGadgetStateByConfigId(context, defs.group_ID, blocker)
+			
+				GadgetStateSwitcher(context,defs.group_ID,8002,{0,201})
+		
+			
+				
+				if (state == 0) then
+					if (ScriptLib.GetGroupVariableValue(context,"wallCurPos") ~= 2) then
+						ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_ID, blocker, 201)
+					else
+						--ScriptLib.ShowReminder(context, 50050101)
+					end
+		
+				end
+				
+				if (state == 201) then
+					if (ScriptLib.GetGroupVariableValue(context,"wallCurPos") ~= 2) then
+						
+			
+						ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_ID, blocker, 0)
+					else
+		
+						--ScriptLib.ShowReminder(context, 50050101)
+					end
+				end
+				
+				
+		return 0
 end
-PrintLog = L7_1
-function L7_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L1_2 = MovePlatform
-  L2_2 = A0_2
-  L3_2 = 8008
-  L4_2 = L1_1.pointarray_route
-  L5_2 = {}
-  L6_2 = ScriptLib
-  L6_2 = L6_2.GetGroupVariableValue
-  L7_2 = A0_2
-  L8_2 = "wallCurPos"
-  L6_2, L7_2, L8_2 = L6_2(L7_2, L8_2)
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L5_2[3] = L8_2
-  L6_2 = 0
-  L7_2 = false
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_8007(context, evt)
+	if 8009 ~= evt.param2 then
+			return false
+		end
+		if ScriptLib.GetGroupVariableValue(context,"isMoving") ~= 0 then 
+			return false
+		end	
+		
+		return true
 end
-Restore = L7_1
-L7_1 = {}
-monsters = L7_1
-L7_1 = {}
-npcs = L7_1
-L7_1 = {}
-L8_1 = {}
-L8_1.config_id = 8001
-L8_1.gadget_id = 70290281
-L9_1 = {}
-L9_1.x = 1313.825
-L9_1.y = 186.331
-L9_1.z = 845.558
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 90.0
-L9_1.z = 180.0
-L8_1.rot = L9_1
-L8_1.level = 36
-L8_1.persistent = true
-L8_1.area_id = 200
-L9_1 = {}
-L9_1.config_id = 8002
-L9_1.gadget_id = 70290281
-L10_1 = {}
-L10_1.x = 1319.097
-L10_1.y = 186.431
-L10_1.z = 851.084
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 180.0
-L9_1.rot = L10_1
-L9_1.level = 36
-L9_1.persistent = true
-L9_1.area_id = 200
-L10_1 = {}
-L10_1.config_id = 8006
-L10_1.gadget_id = 70360305
-L11_1 = {}
-L11_1.x = 1318.949
-L11_1.y = 180.499
-L11_1.z = 856.234
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 36
-L10_1.area_id = 200
-L11_1 = {}
-L11_1.config_id = 8008
-L11_1.gadget_id = 70290170
-L12_1 = {}
-L12_1.x = 1303.538
-L12_1.y = 180.537
-L12_1.z = 846.001
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 90.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 36
-L11_1.start_route = false
-L11_1.is_use_point_array = true
-L11_1.area_id = 200
-L12_1 = {}
-L12_1.config_id = 8009
-L12_1.gadget_id = 70360309
-L13_1 = {}
-L13_1.x = 1318.924
-L13_1.y = 180.572
-L13_1.z = 845.954
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 0.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 36
-L12_1.area_id = 200
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L7_1[5] = L12_1
-gadgets = L7_1
-L7_1 = {}
-regions = L7_1
-L7_1 = {}
-L8_1 = {}
-L8_1.config_id = 1008005
-L8_1.name = "GADGET_STATE_CHANGE_8005"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_GADGET_STATE_CHANGE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_8005"
-L8_1.action = "action_EVENT_GADGET_STATE_CHANGE_8005"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1008007
-L9_1.name = "GADGET_STATE_CHANGE_8007"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_GADGET_STATE_CHANGE
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_8007"
-L9_1.action = "action_EVENT_GADGET_STATE_CHANGE_8007"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1008011
-L10_1.name = "GROUP_LOAD_8011"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_GROUP_LOAD
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = ""
-L10_1.action = "action_EVENT_GROUP_LOAD_8011"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1008012
-L11_1.name = "VARIABLE_CHANGE_8012"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_VARIABLE_CHANGE
-L11_1.event = L12_1
-L11_1.source = "gameplayState"
-L11_1.condition = "condition_EVENT_VARIABLE_CHANGE_8012"
-L11_1.action = "action_EVENT_VARIABLE_CHANGE_8012"
-L11_1.trigger_count = 0
-L12_1 = {}
-L12_1.config_id = 1008016
-L12_1.name = "TIME_AXIS_PASS_8016"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_TIME_AXIS_PASS
-L12_1.event = L13_1
-L12_1.source = "Active_8010"
-L12_1.condition = ""
-L12_1.action = "action_EVENT_TIME_AXIS_PASS_8016"
-L12_1.trigger_count = 0
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L7_1[5] = L12_1
-triggers = L7_1
-L7_1 = {}
-L8_1 = {}
-L8_1.configId = 1
-L8_1.name = "gameplayState"
-L8_1.value = 0
-L8_1.no_refresh = true
-L9_1 = {}
-L9_1.configId = 2
-L9_1.name = "wallCurPos"
-L9_1.value = 1
-L9_1.no_refresh = true
-L10_1 = {}
-L10_1.configId = 3
-L10_1.name = "isMoving"
-L10_1.value = 0
-L10_1.no_refresh = false
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-variables = L7_1
-L7_1 = {}
-L7_1.suite = 1
-L7_1.end_suite = 0
-L7_1.rand_suite = false
-init_config = L7_1
-L7_1 = {}
-L8_1 = {}
-L9_1 = {}
-L8_1.monsters = L9_1
-L9_1 = {}
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L10_1 = "GROUP_LOAD_8011"
-L11_1 = "VARIABLE_CHANGE_8012"
-L12_1 = "TIME_AXIS_PASS_8016"
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L9_1[3] = L12_1
-L8_1.triggers = L9_1
-L8_1.rand_weight = 100
-L9_1 = {}
-L10_1 = {}
-L9_1.monsters = L10_1
-L10_1 = {}
-L11_1 = 8001
-L12_1 = 8002
-L13_1 = 8006
-L14_1 = 8008
-L15_1 = 8009
-L10_1[1] = L11_1
-L10_1[2] = L12_1
-L10_1[3] = L13_1
-L10_1[4] = L14_1
-L10_1[5] = L15_1
-L9_1.gadgets = L10_1
-L10_1 = {}
-L9_1.regions = L10_1
-L10_1 = {}
-L11_1 = "GADGET_STATE_CHANGE_8005"
-L12_1 = "GADGET_STATE_CHANGE_8007"
-L13_1 = "GROUP_LOAD_8011"
-L14_1 = "VARIABLE_CHANGE_8012"
-L10_1[1] = L11_1
-L10_1[2] = L12_1
-L10_1[3] = L13_1
-L10_1[4] = L14_1
-L9_1.triggers = L10_1
-L9_1.rand_weight = 100
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-suites = L7_1
-function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param2
-  if 8006 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 155002008
-  L5_2 = 8006
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 222 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_8007(context, evt)
+				if evt.param2 == 8009 and 322 == ScriptLib.GetGadgetStateByConfigId(context, defs.group_ID, evt.param2) then 
+					PrintLog(context,"Controller("..evt.param2..") State = "..evt.param1)
+			
+			
+					local blockerstate = ScriptLib.GetGadgetStateByConfigId(context, defs.group_ID, 8001)
+					if blockerstate ~= 201 then 
+						ScriptLib.ShowReminder(context, 50050101)
+						return -1 
+					end
+			
+					MovePlatform(context,8008,defs.pointarray_route,{2},0,false)
+			
+					ScriptLib.SetGroupVariableValue(context,"isMoving",1)
+					ScriptLib.SetGroupVariableValue(context,"wallCurPos",2)
+					--ScriptLib.InitTimeAxis(context, "Active_"..evt.param2, {2}, false)
+				end
+			
+			
+				return 0
 end
-condition_EVENT_GADGET_STATE_CHANGE_8005 = L7_1
-function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L2_2 = 8001
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = L1_1.group_ID
-  L6_2 = L2_2
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  L4_2 = GadgetStateSwitcher
-  L5_2 = A0_2
-  L6_2 = L1_1.group_ID
-  L7_2 = 8002
-  L8_2 = {}
-  L9_2 = 0
-  L10_2 = 201
-  L8_2[1] = L9_2
-  L8_2[2] = L10_2
-  L4_2(L5_2, L6_2, L7_2, L8_2)
-  if L3_2 == 0 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.GetGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "wallCurPos"
-    L4_2 = L4_2(L5_2, L6_2)
-    if L4_2 ~= 2 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGroupGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.group_ID
-      L7_2 = L2_2
-      L8_2 = 201
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-    else
-    end
-  end
-  if L3_2 == 201 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.GetGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "wallCurPos"
-    L4_2 = L4_2(L5_2, L6_2)
-    if L4_2 ~= 2 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGroupGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.group_ID
-      L7_2 = L2_2
-      L8_2 = 0
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-    else
-    end
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_8011(context, evt)
+			local isactive = ScriptLib.GetGroupVariableValueByGroup(context, "IslandActive", 155002001)
+		
+			if isactive == 1 then 
+				if ScriptLib.GetGroupVariableValue(context,"gameplayState") == 0 then 
+					ScriptLib.SetGroupVariableValue(context,"gameplayState", 1)
+				end
+				
+			end
+	UpdateGamePlayState(context)
+		
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_8005 = L7_1
-function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param2
-  if 8009 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isMoving"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_8012(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	
+	
+	
+	-- 判断变量"gameplayState"为0
+	if ScriptLib.GetGroupVariableValue(context, "gameplayState") == 0 then
+			return false
+	end
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_8007 = L7_1
-function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = A1_2.param2
-  if L2_2 == 8009 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.group_ID
-    L5_2 = A1_2.param2
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 322 == L2_2 then
-      L2_2 = PrintLog
-      L3_2 = A0_2
-      L4_2 = "Controller("
-      L5_2 = A1_2.param2
-      L6_2 = ") State = "
-      L7_2 = A1_2.param1
-      L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2
-      L2_2(L3_2, L4_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGadgetStateByConfigId
-      L3_2 = A0_2
-      L4_2 = L1_1.group_ID
-      L5_2 = 8001
-      L2_2 = L2_2(L3_2, L4_2, L5_2)
-      if L2_2 ~= 201 then
-        L3_2 = ScriptLib
-        L3_2 = L3_2.ShowReminder
-        L4_2 = A0_2
-        L5_2 = 50050101
-        L3_2(L4_2, L5_2)
-        L3_2 = -1
-        return L3_2
-      end
-      L3_2 = MovePlatform
-      L4_2 = A0_2
-      L5_2 = 8008
-      L6_2 = L1_1.pointarray_route
-      L7_2 = {}
-      L8_2 = 2
-      L7_2[1] = L8_2
-      L8_2 = 0
-      L9_2 = false
-      L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-      L3_2 = ScriptLib
-      L3_2 = L3_2.SetGroupVariableValue
-      L4_2 = A0_2
-      L5_2 = "isMoving"
-      L6_2 = 1
-      L3_2(L4_2, L5_2, L6_2)
-      L3_2 = ScriptLib
-      L3_2 = L3_2.SetGroupVariableValue
-      L4_2 = A0_2
-      L5_2 = "wallCurPos"
-      L6_2 = 2
-      L3_2(L4_2, L5_2, L6_2)
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_8012(context, evt)
+	UpdateGamePlayState(context)
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_8007 = L7_1
-function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "IslandActive"
-  L5_2 = 155002001
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 == 1 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.GetGroupVariableValue
-    L4_2 = A0_2
-    L5_2 = "gameplayState"
-    L3_2 = L3_2(L4_2, L5_2)
-    if L3_2 == 0 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.SetGroupVariableValue
-      L4_2 = A0_2
-      L5_2 = "gameplayState"
-      L6_2 = 1
-      L3_2(L4_2, L5_2, L6_2)
-    end
-  end
-  L3_2 = UpdateGamePlayState
-  L4_2 = A0_2
-  L3_2(L4_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_8016(context, evt)
+	-- 将本组内变量名为 "isMoving" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isMoving", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_8011 = L7_1
-function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gameplayState"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_VARIABLE_CHANGE_8012 = L7_1
-function L7_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_VARIABLE_CHANGE_8012 = L7_1
-function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isMoving"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_TIME_AXIS_PASS_8016 = L7_1
-L7_1 = require
-L8_1 = "V2_4/EnvState"
-L7_1(L8_1)
+
+require "V2_4/EnvState"

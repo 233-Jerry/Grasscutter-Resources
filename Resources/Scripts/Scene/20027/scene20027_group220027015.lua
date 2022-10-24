@@ -1,201 +1,79 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 220027015
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 100
-L2_1.gadget_id = 70360021
-L3_1 = {}
-L3_1.x = -92.387
-L3_1.y = -80.375
-L3_1.z = -197.96
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 180.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = GadgetState
-L3_1 = L3_1.GearStart
-L2_1.state = L3_1
-L2_1.route_id = 4
-L3_1 = {}
-L3_1.config_id = 101
-L3_1.gadget_id = 70360021
-L4_1 = {}
-L4_1.x = -74.761
-L4_1.y = -80.249
-L4_1.z = -213.07
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = GadgetState
-L4_1 = L4_1.GearStart
-L3_1.state = L4_1
-L3_1.route_id = 5
-L4_1 = {}
-L4_1.config_id = 102
-L4_1.gadget_id = 70360021
-L5_1 = {}
-L5_1.x = -62.762
-L5_1.y = -80.249
-L5_1.z = -213.032
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.route_id = 21
-L5_1 = {}
-L5_1.config_id = 103
-L5_1.gadget_id = 70360021
-L6_1 = {}
-L6_1.x = -62.755
-L6_1.y = -78.237
-L6_1.z = -213.113
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L5_1.route_id = 7
-L6_1 = {}
-L6_1.config_id = 104
-L6_1.gadget_id = 70360021
-L7_1 = {}
-L7_1.x = -55.957
-L7_1.y = -80.249
-L7_1.z = -213.199
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 90.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = GadgetState
-L7_1 = L7_1.GearStart
-L6_1.state = L7_1
-L6_1.route_id = 8
-L7_1 = {}
-L7_1.config_id = 105
-L7_1.gadget_id = 70360021
-L8_1 = {}
-L8_1.x = -50.005
-L8_1.y = -80.249
-L8_1.z = -212.926
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 90.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = GadgetState
-L8_1 = L8_1.GearStart
-L7_1.state = L8_1
-L7_1.route_id = 9
-L8_1 = {}
-L8_1.config_id = 106
-L8_1.gadget_id = 70360021
-L9_1 = {}
-L9_1.x = -42.647
-L9_1.y = -80.249
-L9_1.z = -212.897
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 90.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = GadgetState
-L9_1 = L9_1.GearStart
-L8_1.state = L9_1
-L8_1.route_id = 10
-L9_1 = {}
-L9_1.config_id = 123
-L9_1.gadget_id = 70360021
-L10_1 = {}
-L10_1.x = -80.477
-L10_1.y = -70.721
-L10_1.z = -205.134
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 90.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L10_1 = GadgetState
-L10_1 = L10_1.GearStart
-L9_1.state = L10_1
-L9_1.route_id = 20
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 100
-L5_1 = 101
-L6_1 = 102
-L7_1 = 103
-L8_1 = 104
-L9_1 = 105
-L10_1 = 106
-L11_1 = 123
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 220027015
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 100, gadget_id = 70360021, pos = { x = -92.387, y = -80.375, z = -197.960 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, route_id = 4 },
+	{ config_id = 101, gadget_id = 70360021, pos = { x = -74.761, y = -80.249, z = -213.070 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, route_id = 5 },
+	{ config_id = 102, gadget_id = 70360021, pos = { x = -62.762, y = -80.249, z = -213.032 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, route_id = 21 },
+	{ config_id = 103, gadget_id = 70360021, pos = { x = -62.755, y = -78.237, z = -213.113 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, route_id = 7 },
+	{ config_id = 104, gadget_id = 70360021, pos = { x = -55.957, y = -80.249, z = -213.199 }, rot = { x = 90.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, route_id = 8 },
+	{ config_id = 105, gadget_id = 70360021, pos = { x = -50.005, y = -80.249, z = -212.926 }, rot = { x = 90.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, route_id = 9 },
+	{ config_id = 106, gadget_id = 70360021, pos = { x = -42.647, y = -80.249, z = -212.897 }, rot = { x = 90.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, route_id = 10 },
+	{ config_id = 123, gadget_id = 70360021, pos = { x = -80.477, y = -70.721, z = -205.134 }, rot = { x = 90.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, route_id = 20 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 100, 101, 102, 103, 104, 105, 106, 123 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
