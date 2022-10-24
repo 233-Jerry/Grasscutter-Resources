@@ -1,300 +1,165 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133223339
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 339005
-L2_1.npc_id = 20512
-L3_1 = {}
-L3_1.x = -6315.079
-L3_1.y = 207.153
-L3_1.z = -2693.972
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.area_id = 18
-L1_1[1] = L2_1
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 339002
-L2_1.gadget_id = 70211021
-L3_1 = {}
-L3_1.x = -6316.072
-L3_1.y = 206.901
-L3_1.z = -2692.523
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 190.52
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 26
-L2_1.chest_drop_id = 2003900
-L2_1.drop_count = 1
-L2_1.isOneoff = true
-L2_1.persistent = true
-L3_1 = {}
-L3_1.name = "chest"
-L3_1.exp = 1
-L2_1.explore = L3_1
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 339004
-L3_1.gadget_id = 70300110
-L4_1 = {}
-L4_1.x = -6315.103
-L4_1.y = 207.182
-L4_1.z = -2693.966
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 7.033
-L4_1.y = 19.354
-L4_1.z = 3.302
-L3_1.rot = L4_1
-L3_1.level = 33
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 339007
-L4_1.gadget_id = 70360001
-L5_1 = {}
-L5_1.x = -6314.998
-L5_1.y = 207.181
-L5_1.z = -2694.149
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 7.725
-L5_1.y = 0.054
-L5_1.z = 0.8
-L4_1.rot = L5_1
-L4_1.level = 33
-L4_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1339011
-L2_1.name = "SELECT_OPTION_339011"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_SELECT_OPTION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_SELECT_OPTION_339011"
-L2_1.action = "action_EVENT_SELECT_OPTION_339011"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1339012
-L3_1.name = "GADGET_CREATE_339012"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_CREATE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_CREATE_339012"
-L3_1.action = "action_EVENT_GADGET_CREATE_339012"
-L3_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 339003
-L3_1.gadget_id = 70950101
-L4_1 = {}
-L4_1.x = -6316.14
-L4_1.y = 207.1
-L4_1.z = -2693.906
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 33
-L3_1.area_id = 18
-L2_1[1] = L3_1
-L1_1.gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1339001
-L3_1.name = "QUEST_START_339001"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_QUEST_START
-L3_1.event = L4_1
-L3_1.source = "7220705"
-L3_1.condition = "condition_EVENT_QUEST_START_339001"
-L3_1.action = "action_EVENT_QUEST_START_339001"
-L3_1.trigger_count = 0
-L2_1[1] = L3_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 3
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 339007
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 339007
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "SELECT_OPTION_339011"
-L6_1 = "GADGET_CREATE_339012"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 339002
-L7_1 = 339004
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L5_1 = {}
-L6_1 = 339005
-L5_1[1] = L6_1
-L4_1.npcs = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 339007 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 169 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133223339
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+	{ config_id = 339005, npc_id = 20512, pos = { x = -6315.079, y = 207.153, z = -2693.972 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 18 }
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 339002, gadget_id = 70211021, pos = { x = -6316.072, y = 206.901, z = -2692.523 }, rot = { x = 0.000, y = 190.520, z = 0.000 }, level = 26, chest_drop_id = 2003900, drop_count = 1, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 18 },
+	{ config_id = 339004, gadget_id = 70300110, pos = { x = -6315.103, y = 207.182, z = -2693.966 }, rot = { x = 7.033, y = 19.354, z = 3.302 }, level = 33, area_id = 18 },
+	{ config_id = 339007, gadget_id = 70360001, pos = { x = -6314.998, y = 207.181, z = -2694.149 }, rot = { x = 7.725, y = 0.054, z = 0.800 }, level = 33, area_id = 18 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 7220705_finish
+	{ config_id = 1339011, name = "SELECT_OPTION_339011", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_339011", action = "action_EVENT_SELECT_OPTION_339011", trigger_count = 0 },
+	{ config_id = 1339012, name = "GADGET_CREATE_339012", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_339012", action = "action_EVENT_GADGET_CREATE_339012", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 339003, gadget_id = 70950101, pos = { x = -6316.140, y = 207.100, z = -2693.906 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, area_id = 18 }
+	},
+	triggers = {
+		{ config_id = 1339001, name = "QUEST_START_339001", event = EventType.EVENT_QUEST_START, source = "7220705", condition = "condition_EVENT_QUEST_START_339001", action = "action_EVENT_QUEST_START_339001", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 3,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 339007 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 339007 },
+		regions = { },
+		triggers = { "SELECT_OPTION_339011", "GADGET_CREATE_339012" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 339002, 339004 },
+		regions = { },
+		triggers = { },
+		npcs = { 339005 },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_339011(context, evt)
+	-- 判断是gadgetid 339007 option_id 169
+	if 339007 ~= evt.param1 then
+		return false	
+	end
+	
+	if 169 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_339011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133223339
-  L5_2 = 339007
-  L6_2 = 169
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7220705_finish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133223339
-  L4_2.suite = 3
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_339011(context, evt)
+	-- 删除指定group： 133223339 ；指定config：339007；物件身上指定option：169；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133223339, 339007, 169) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7220705_finish") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133223339, suite = 3 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_339011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 339007 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_339012(context, evt)
+	if 339007 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_339012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133223339
-  L5_2 = 339007
-  L6_2 = {}
-  L7_2 = 169
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_339012(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 133223339, 339007, {169}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_339012 = L1_1

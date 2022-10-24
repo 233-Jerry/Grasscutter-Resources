@@ -1,210 +1,96 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.group_id = 133223398
-L1_1 = {}
-L2_1 = {}
-L3_1 = 0.2
-L4_1 = 0.4
-L5_1 = 0.6
-L6_1 = 0.8
-L7_1 = 1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L1_1.time_axis_decal = L2_1
-L2_1 = {}
-L3_1 = 398001
-L4_1 = 398002
-L5_1 = 398003
-L6_1 = 398004
-L7_1 = 398005
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L1_1.decalsList = L2_1
-defs = L1_1
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 398001
-L2_1.gadget_id = 70230052
-L3_1 = {}
-L3_1.x = -6422.972
-L3_1.y = 220.14
-L3_1.z = -2813.15
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 70.612
-L3_1.y = 214.952
-L3_1.z = 186.179
-L2_1.rot = L3_1
-L2_1.level = 33
-L3_1 = GadgetState
-L3_1 = L3_1.GearStart
-L2_1.state = L3_1
-L2_1.persistent = true
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 398002
-L3_1.gadget_id = 70230054
-L4_1 = {}
-L4_1.x = -6424.388
-L4_1.y = 221.023
-L4_1.z = -2812.601
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 84.583
-L4_1.y = 215.713
-L4_1.z = 222.577
-L3_1.rot = L4_1
-L3_1.level = 33
-L4_1 = GadgetState
-L4_1 = L4_1.GearStart
-L3_1.state = L4_1
-L3_1.persistent = true
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 398003
-L4_1.gadget_id = 70230057
-L5_1 = {}
-L5_1.x = -6425.672
-L5_1.y = 220.598
-L5_1.z = -2812.539
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 82.543
-L5_1.y = 86.961
-L5_1.z = 94.436
-L4_1.rot = L5_1
-L4_1.level = 33
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.persistent = true
-L4_1.area_id = 18
-L5_1 = {}
-L5_1.config_id = 398004
-L5_1.gadget_id = 70230056
-L6_1 = {}
-L6_1.x = -6426.991
-L6_1.y = 220.983
-L6_1.z = -2813.319
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 82.957
-L6_1.y = 32.89
-L6_1.z = 35.886
-L5_1.rot = L6_1
-L5_1.level = 33
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L5_1.persistent = true
-L5_1.area_id = 18
-L6_1 = {}
-L6_1.config_id = 398005
-L6_1.gadget_id = 70230051
-L7_1 = {}
-L7_1.x = -6428.688
-L7_1.y = 220.266
-L7_1.z = -2814.057
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 74.693
-L7_1.y = 73.358
-L7_1.z = 57.201
-L6_1.rot = L7_1
-L6_1.level = 33
-L7_1 = GadgetState
-L7_1 = L7_1.GearStart
-L6_1.state = L7_1
-L6_1.persistent = true
-L6_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 398006
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 5
-L3_1 = {}
-L3_1.x = -6417.075
-L3_1.y = 223.505
-L3_1.z = -2827.073
-L2_1.pos = L3_1
-L2_1.area_id = 18
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "Finished"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "isNeedNotify"
-L3_1.value = 1
-L3_1.no_refresh = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 398006
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 398001
-L6_1 = 398002
-L7_1 = 398003
-L8_1 = 398004
-L9_1 = 398005
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-L1_1 = require
-L2_1 = "V2_2/ShowDecals"
-L1_1(L2_1)
+-- 基础信息
+local base_info = {
+	group_id = 133223398
+}
+
+-- DEFS_MISCS
+defs = {
+        time_axis_decal = {0.2,0.4,0.6,0.8,1}, --decal出现的时间，不用改
+        decalsList = {398001,398002,398003,398004,398005}--decal出现的configID，按顺序填
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 398001, gadget_id = 70230052, pos = { x = -6422.972, y = 220.140, z = -2813.150 }, rot = { x = 70.612, y = 214.952, z = 186.179 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 398002, gadget_id = 70230054, pos = { x = -6424.388, y = 221.023, z = -2812.601 }, rot = { x = 84.583, y = 215.713, z = 222.577 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 398003, gadget_id = 70230057, pos = { x = -6425.672, y = 220.598, z = -2812.539 }, rot = { x = 82.543, y = 86.961, z = 94.436 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 398004, gadget_id = 70230056, pos = { x = -6426.991, y = 220.983, z = -2813.319 }, rot = { x = 82.957, y = 32.890, z = 35.886 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 398005, gadget_id = 70230051, pos = { x = -6428.688, y = 220.266, z = -2814.057 }, rot = { x = 74.693, y = 73.358, z = 57.201 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 398006, shape = RegionShape.SPHERE, radius = 5, pos = { x = -6417.075, y = 223.505, z = -2827.073 }, area_id = 18 }
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Finished", value = 0, no_refresh = true },
+	{ config_id = 2, name = "isNeedNotify", value = 1, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 398006 },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 398001, 398002, 398003, 398004, 398005 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_2/ShowDecals"

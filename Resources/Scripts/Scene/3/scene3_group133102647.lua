@@ -1,121 +1,93 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133102647
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 647006
-L3_1.gadget_id = 70900007
-L4_1 = {}
-L4_1.x = 1736.703
-L4_1.y = 210.972
-L4_1.z = 590.762
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 18
-L3_1.persistent = true
-L3_1.area_id = 5
-L4_1 = {}
-L4_1.config_id = 647021
-L4_1.gadget_id = 70211121
-L5_1 = {}
-L5_1.x = 1754.576
-L5_1.y = 255.933
-L5_1.z = 555.708
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 4.174
-L5_1.y = 32.72
-L5_1.z = 1.879
-L4_1.rot = L5_1
-L4_1.level = 16
-L4_1.drop_tag = "\232\167\163\232\176\156\233\171\152\231\186\167\231\146\131\230\156\136"
-L4_1.showcutscene = true
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.name = "chest"
-L5_1.exp = 1
-L4_1.explore = L5_1
-L4_1.area_id = 5
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1647007
-L3_1.name = "GADGET_STATE_CHANGE_647007"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_647007"
-L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_647007"
-L4_1 = {}
-L4_1.config_id = 1647008
-L4_1.name = "CHALLENGE_FAIL_647008"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_CHALLENGE_FAIL
-L4_1.event = L5_1
-L4_1.source = "647"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_CHALLENGE_FAIL_647008"
-L5_1 = {}
-L5_1.config_id = 1647009
-L5_1.name = "CHALLENGE_SUCCESS_647009"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_CHALLENGE_SUCCESS
-L5_1.event = L6_1
-L5_1.source = "647"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_CHALLENGE_SUCCESS_647009"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133102647
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 647006, gadget_id = 70900007, pos = { x = 1736.703, y = 210.972, z = 590.762 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 18, persistent = true, area_id = 5 },
+		{ config_id = 647021, gadget_id = 70211121, pos = { x = 1754.576, y = 255.933, z = 555.708 }, rot = { x = 4.174, y = 32.720, z = 1.879 }, level = 16, drop_tag = "解谜高级璃月", showcutscene = true, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 5 }
+	},
+	triggers = {
+		{ config_id = 1647007, name = "GADGET_STATE_CHANGE_647007", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_647007", action = "action_EVENT_GADGET_STATE_CHANGE_647007" },
+		{ config_id = 1647008, name = "CHALLENGE_FAIL_647008", event = EventType.EVENT_CHALLENGE_FAIL, source = "647", condition = "", action = "action_EVENT_CHALLENGE_FAIL_647008" },
+		{ config_id = 1647009, name = "CHALLENGE_SUCCESS_647009", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "647", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_647009" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

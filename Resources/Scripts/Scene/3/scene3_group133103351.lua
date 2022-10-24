@@ -1,287 +1,115 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
-L0_1 = {}
-L0_1.group_id = 133103351
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 351001
-L2_1.monster_id = 28020802
-L3_1 = {}
-L3_1.x = 692.128
-L3_1.y = 411.0
-L3_1.z = 1857.156
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 72.665
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 30
-L2_1.drop_tag = "\232\181\176\229\133\189"
-L2_1.pose_id = 1
-L2_1.area_id = 6
-L1_1[1] = L2_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 351002
-L2_1.gadget_id = 70360273
-L3_1 = {}
-L3_1.x = 701.535
-L3_1.y = 409.581
-L3_1.z = 1863.177
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 230.999
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 30
-L2_1.mark_flag = 1
-L2_1.area_id = 6
-L3_1 = {}
-L3_1.config_id = 351003
-L3_1.gadget_id = 70360273
-L4_1 = {}
-L4_1.x = 715.668
-L4_1.y = 405.918
-L4_1.z = 1862.244
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 265.527
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.mark_flag = 2
-L3_1.area_id = 6
-L4_1 = {}
-L4_1.config_id = 351004
-L4_1.gadget_id = 70360274
-L5_1 = {}
-L5_1.x = 801.325
-L5_1.y = 329.815
-L5_1.z = 1829.939
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 318.599
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.mark_flag = 10
-L4_1.area_id = 6
-L5_1 = {}
-L5_1.config_id = 351005
-L5_1.gadget_id = 70360273
-L6_1 = {}
-L6_1.x = 787.281
-L6_1.y = 350.888
-L6_1.z = 1882.145
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 319.113
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.mark_flag = 7
-L5_1.area_id = 6
-L6_1 = {}
-L6_1.config_id = 351007
-L6_1.gadget_id = 70360273
-L7_1 = {}
-L7_1.x = 787.007
-L7_1.y = 345.025
-L7_1.z = 1866.316
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 9.349
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 30
-L6_1.mark_flag = 8
-L6_1.area_id = 6
-L7_1 = {}
-L7_1.config_id = 351008
-L7_1.gadget_id = 70360273
-L8_1 = {}
-L8_1.x = 800.586
-L8_1.y = 337.071
-L8_1.z = 1857.457
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 318.599
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 30
-L7_1.mark_flag = 9
-L7_1.area_id = 6
-L8_1 = {}
-L8_1.config_id = 351011
-L8_1.gadget_id = 70360273
-L9_1 = {}
-L9_1.x = 735.23
-L9_1.y = 398.24
-L9_1.z = 1873.421
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 244.62
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 30
-L8_1.mark_flag = 3
-L8_1.area_id = 6
-L9_1 = {}
-L9_1.config_id = 351012
-L9_1.gadget_id = 70360273
-L10_1 = {}
-L10_1.x = 747.5
-L10_1.y = 388.673
-L10_1.z = 1879.995
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 231.678
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 30
-L9_1.mark_flag = 4
-L9_1.area_id = 6
-L10_1 = {}
-L10_1.config_id = 351013
-L10_1.gadget_id = 70360273
-L11_1 = {}
-L11_1.x = 762.407
-L11_1.y = 369.735
-L11_1.z = 1871.664
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 281.271
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 30
-L10_1.mark_flag = 5
-L10_1.area_id = 6
-L11_1 = {}
-L11_1.config_id = 351014
-L11_1.gadget_id = 70360273
-L12_1 = {}
-L12_1.x = 771.359
-L12_1.y = 361.703
-L12_1.z = 1890.869
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 202.588
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 30
-L11_1.mark_flag = 6
-L11_1.area_id = 6
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1351006
-L2_1.name = "ANY_MONSTER_DIE_351006"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_MONSTER_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_MONSTER_DIE_351006"
-L2_1.action = "action_EVENT_ANY_MONSTER_DIE_351006"
-L2_1.trigger_count = 0
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = 351001
-L3_1[1] = L4_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 351002
-L5_1 = 351003
-L6_1 = 351004
-L7_1 = 351005
-L8_1 = 351007
-L9_1 = 351008
-L10_1 = 351011
-L11_1 = 351012
-L12_1 = 351013
-L13_1 = 351014
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ANY_MONSTER_DIE_351006"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133103351
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 351001, monster_id = 28020802, pos = { x = 692.128, y = 411.000, z = 1857.156 }, rot = { x = 0.000, y = 72.665, z = 0.000 }, level = 30, drop_tag = "走兽", pose_id = 1, area_id = 6 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	-- 这个点是狸猫的第一个闪现点，它的MarkFlag要配成1
+	{ config_id = 351002, gadget_id = 70360273, pos = { x = 701.535, y = 409.581, z = 1863.177 }, rot = { x = 0.000, y = 230.999, z = 0.000 }, level = 30, mark_flag = 1, area_id = 6 },
+	-- 可以增删，按顺序配MarkFlag即可
+	{ config_id = 351003, gadget_id = 70360273, pos = { x = 715.668, y = 405.918, z = 1862.244 }, rot = { x = 0.000, y = 265.527, z = 0.000 }, level = 30, mark_flag = 2, area_id = 6 },
+	-- 所有的过程点和终点的MarkFlag要从1开始按照狸猫走的顺序来配
+	{ config_id = 351004, gadget_id = 70360274, pos = { x = 801.325, y = 329.815, z = 1829.939 }, rot = { x = 0.000, y = 318.599, z = 0.000 }, level = 30, mark_flag = 10, area_id = 6 },
+	-- 可以增删，按顺序配MarkFlag即可
+	{ config_id = 351005, gadget_id = 70360273, pos = { x = 787.281, y = 350.888, z = 1882.145 }, rot = { x = 0.000, y = 319.113, z = 0.000 }, level = 30, mark_flag = 7, area_id = 6 },
+	-- 可以增删，按顺序配MarkFlag即可
+	{ config_id = 351007, gadget_id = 70360273, pos = { x = 787.007, y = 345.025, z = 1866.316 }, rot = { x = 0.000, y = 9.349, z = 0.000 }, level = 30, mark_flag = 8, area_id = 6 },
+	-- 可以增删，按顺序配MarkFlag即可
+	{ config_id = 351008, gadget_id = 70360273, pos = { x = 800.586, y = 337.071, z = 1857.457 }, rot = { x = 0.000, y = 318.599, z = 0.000 }, level = 30, mark_flag = 9, area_id = 6 },
+	-- 可以增删，按顺序配MarkFlag即可
+	{ config_id = 351011, gadget_id = 70360273, pos = { x = 735.230, y = 398.240, z = 1873.421 }, rot = { x = 0.000, y = 244.620, z = 0.000 }, level = 30, mark_flag = 3, area_id = 6 },
+	-- 可以增删，按顺序配MarkFlag即可
+	{ config_id = 351012, gadget_id = 70360273, pos = { x = 747.500, y = 388.673, z = 1879.995 }, rot = { x = 0.000, y = 231.678, z = 0.000 }, level = 30, mark_flag = 4, area_id = 6 },
+	-- 可以增删，按顺序配MarkFlag即可
+	{ config_id = 351013, gadget_id = 70360273, pos = { x = 762.407, y = 369.735, z = 1871.664 }, rot = { x = 0.000, y = 281.271, z = 0.000 }, level = 30, mark_flag = 5, area_id = 6 },
+	-- 可以增删，按顺序配MarkFlag即可
+	{ config_id = 351014, gadget_id = 70360273, pos = { x = 771.359, y = 361.703, z = 1890.869 }, rot = { x = 0.000, y = 202.588, z = 0.000 }, level = 30, mark_flag = 6, area_id = 6 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1351006, name = "ANY_MONSTER_DIE_351006", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_351006", action = "action_EVENT_ANY_MONSTER_DIE_351006", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 351001 },
+		gadgets = { 351002, 351003, 351004, 351005, 351007, 351008, 351011, 351012, 351013, 351014 },
+		regions = { },
+		triggers = { "ANY_MONSTER_DIE_351006" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_351006(context, evt)
+	--判断死亡怪物的死亡类型是否为1，0为普通死亡（比如被击杀），1为普通地被killself杀死，2为消失（比如小动物逃跑消失，北风狼脱战消失）
+	if evt.param2 ~= 1 then
+	    return false
+	 end
+	
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_351006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7226105"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_351006(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7226105") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_351006 = L1_1

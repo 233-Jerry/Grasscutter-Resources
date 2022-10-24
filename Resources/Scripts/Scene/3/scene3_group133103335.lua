@@ -1,385 +1,175 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133103335
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 335004
-L2_1.monster_id = 25030201
-L3_1 = {}
-L3_1.x = 946.124
-L3_1.y = 356.902
-L3_1.z = 1475.564
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 315.147
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 24
-L2_1.drop_tag = "\231\155\151\229\174\157\229\155\162"
-L2_1.area_id = 6
-L3_1 = {}
-L3_1.config_id = 335005
-L3_1.monster_id = 25020201
-L4_1 = {}
-L4_1.x = 943.605
-L4_1.y = 357.107
-L4_1.z = 1477.394
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 112.146
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 24
-L3_1.drop_tag = "\231\155\151\229\174\157\229\155\162"
-L3_1.area_id = 6
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 335001
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 5
-L3_1 = {}
-L3_1.x = 943.897
-L3_1.y = 357.444
-L3_1.z = 1474.749
-L2_1.pos = L3_1
-L2_1.area_id = 6
-L3_1 = {}
-L3_1.config_id = 335002
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 5
-L4_1 = {}
-L4_1.x = 730.046
-L4_1.y = 315.997
-L4_1.z = 1512.775
-L3_1.pos = L4_1
-L3_1.area_id = 6
-L4_1 = {}
-L4_1.config_id = 335003
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 5
-L5_1 = {}
-L5_1.x = 734.829
-L5_1.y = 313.495
-L5_1.z = 1753.137
-L4_1.pos = L5_1
-L4_1.area_id = 6
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1335001
-L2_1.name = "ENTER_REGION_335001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_335001"
-L2_1.action = "action_EVENT_ENTER_REGION_335001"
-L3_1 = {}
-L3_1.config_id = 1335002
-L3_1.name = "ENTER_REGION_335002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_335002"
-L3_1.action = "action_EVENT_ENTER_REGION_335002"
-L4_1 = {}
-L4_1.config_id = 1335003
-L4_1.name = "ENTER_REGION_335003"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_335003"
-L4_1.action = "action_EVENT_ENTER_REGION_335003"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 335001
-L5_1 = 335002
-L6_1 = 335003
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_335001"
-L5_1 = "ENTER_REGION_335002"
-L6_1 = "ENTER_REGION_335003"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 335004
-L6_1 = 335005
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 335001 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133103335
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 335004, monster_id = 25030201, pos = { x = 946.124, y = 356.902, z = 1475.564 }, rot = { x = 0.000, y = 315.147, z = 0.000 }, level = 24, drop_tag = "盗宝团", area_id = 6 },
+	{ config_id = 335005, monster_id = 25020201, pos = { x = 943.605, y = 357.107, z = 1477.394 }, rot = { x = 0.000, y = 112.146, z = 0.000 }, level = 24, drop_tag = "盗宝团", area_id = 6 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+	{ config_id = 335001, shape = RegionShape.SPHERE, radius = 5, pos = { x = 943.897, y = 357.444, z = 1474.749 }, area_id = 6 },
+	{ config_id = 335002, shape = RegionShape.SPHERE, radius = 5, pos = { x = 730.046, y = 315.997, z = 1512.775 }, area_id = 6 },
+	{ config_id = 335003, shape = RegionShape.SPHERE, radius = 5, pos = { x = 734.829, y = 313.495, z = 1753.137 }, area_id = 6 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1335001, name = "ENTER_REGION_335001", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_335001", action = "action_EVENT_ENTER_REGION_335001" },
+	{ config_id = 1335002, name = "ENTER_REGION_335002", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_335002", action = "action_EVENT_ENTER_REGION_335002" },
+	{ config_id = 1335003, name = "ENTER_REGION_335003", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_335003", action = "action_EVENT_ENTER_REGION_335003" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 335001, 335002, 335003 },
+		triggers = { "ENTER_REGION_335001", "ENTER_REGION_335002", "ENTER_REGION_335003" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { 335004, 335005 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_335001(context, evt)
+	if evt.param1 ~= 335001 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_335001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133103335
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonsterFaceAvatar
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.entity_id = 0
-  L5_2 = {}
-  L6_2 = 335004
-  L7_2 = 335005
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.monsters = L5_2
-  L5_2 = {}
-  L6_2 = 5
-  L7_2 = 10
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.ranges = L5_2
-  L4_2.angle = 30
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.PrintLog
-  L4_2 = tostring
-  L5_2 = L2_2
-  L4_2, L5_2, L6_2, L7_2 = L4_2(L5_2)
-  L3_2(A0_2, L4_2, L5_2, L6_2, L7_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_335001(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 133103335, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 在0面前， 5 到 10 范围里，30 角度内，刷{335004,335005}的怪物
+	
+	local ret = ScriptLib.CreateMonsterFaceAvatar(context, { entity_id = 0, monsters = {335004,335005}, ranges = { 5, 10 }, angle = 30 })
+	ScriptLib.PrintLog(tostring(ret))
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_335001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 335002 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_335002(context, evt)
+	if evt.param1 ~= 335002 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_335002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133103335
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonsterFaceAvatar
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.entity_id = 0
-  L5_2 = {}
-  L6_2 = 335004
-  L7_2 = 335005
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.monsters = L5_2
-  L5_2 = {}
-  L6_2 = 5
-  L7_2 = 10
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.ranges = L5_2
-  L4_2.angle = 30
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.PrintLog
-  L4_2 = tostring
-  L5_2 = L2_2
-  L4_2, L5_2, L6_2, L7_2 = L4_2(L5_2)
-  L3_2(A0_2, L4_2, L5_2, L6_2, L7_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_335002(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 133103335, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 在0面前， 5 到 10 范围里，30 角度内，刷{335004,335005}的怪物
+	
+	local ret = ScriptLib.CreateMonsterFaceAvatar(context, { entity_id = 0, monsters = {335004,335005}, ranges = { 5, 10 }, angle = 30 })
+	ScriptLib.PrintLog(tostring(ret))
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_335002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 335003 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_335003(context, evt)
+	if evt.param1 ~= 335003 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_335003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133103335
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonsterFaceAvatar
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.entity_id = 0
-  L5_2 = {}
-  L6_2 = 335004
-  L7_2 = 335005
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.monsters = L5_2
-  L5_2 = {}
-  L6_2 = 5
-  L7_2 = 10
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.ranges = L5_2
-  L4_2.angle = 30
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.PrintLog
-  L4_2 = tostring
-  L5_2 = L2_2
-  L4_2, L5_2, L6_2, L7_2 = L4_2(L5_2)
-  L3_2(A0_2, L4_2, L5_2, L6_2, L7_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_335003(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 133103335, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 在0面前， 5 到 10 范围里，30 角度内，刷{335004,335005}的怪物
+	
+	local ret = ScriptLib.CreateMonsterFaceAvatar(context, { entity_id = 0, monsters = {335004,335005}, ranges = { 5, 10 }, angle = 30 })
+	ScriptLib.PrintLog(tostring(ret))
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_335003 = L1_1

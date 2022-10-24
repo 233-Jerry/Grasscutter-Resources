@@ -1,170 +1,96 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133212091
-L1_1 = {}
-L1_1.operator_1 = 91007
-L1_1.operator_2 = 91008
-L1_1.chest = 91009
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 91001
-L3_1.monster_id = 24020201
-L4_1 = {}
-L4_1.x = -4029.283
-L4_1.y = 263.952
-L4_1.z = -2220.201
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 329.024
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.drop_tag = "\230\139\159\231\148\159\230\156\186\229\133\179"
-L3_1.pose_id = 100
-L3_1.area_id = 13
-L4_1 = {}
-L4_1.config_id = 91002
-L4_1.monster_id = 24020201
-L5_1 = {}
-L5_1.x = -4040.419
-L5_1.y = 264.527
-L5_1.z = -2223.067
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 359.008
-L5_1.y = 355.265
-L5_1.z = 348.19
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.drop_tag = "\230\139\159\231\148\159\230\156\186\229\133\179"
-L4_1.pose_id = 100
-L4_1.area_id = 13
-L5_1 = {}
-L5_1.config_id = 91003
-L5_1.monster_id = 24020201
-L6_1 = {}
-L6_1.x = -4021.619
-L6_1.y = 260.385
-L6_1.z = -2212.734
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 1.416
-L6_1.y = 277.742
-L6_1.z = 1.324
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.drop_tag = "\230\139\159\231\148\159\230\156\186\229\133\179"
-L5_1.pose_id = 100
-L5_1.area_id = 13
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 91007
-L3_1.gadget_id = 70360056
-L4_1 = {}
-L4_1.x = -4033.129
-L4_1.y = 260.911
-L4_1.z = -2210.968
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 13
-L4_1 = {}
-L4_1.config_id = 91008
-L4_1.gadget_id = 70360057
-L5_1 = {}
-L5_1.x = -4033.129
-L5_1.y = 260.911
-L5_1.z = -2210.968
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 13
-L5_1 = {}
-L5_1.config_id = 91009
-L5_1.gadget_id = 70210106
-L6_1 = {}
-L6_1.x = -4033.129
-L6_1.y = 260.911
-L6_1.z = -2210.968
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 26
-L5_1.chest_drop_id = 1000100
-L5_1.drop_count = 1
-L5_1.isOneoff = true
-L5_1.persistent = true
-L5_1.is_blossom_chest = true
-L5_1.area_id = 13
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "GroupCompletion"
-L3_1.value = 0
-L3_1.no_refresh = false
-L2_1[1] = L3_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 91001
-L7_1 = 91002
-L8_1 = 91003
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-L2_1 = require
-L3_1 = "V2_0/BlossomGroup"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133212091
+}
+
+-- Trigger变量
+local defs = {
+	operator_1 = 91007,
+	operator_2 = 91008,
+	chest = 91009
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 91001, monster_id = 24020201, pos = { x = -4029.283, y = 263.952, z = -2220.201 }, rot = { x = 0.000, y = 329.024, z = 0.000 }, level = 1, drop_tag = "拟生机关", pose_id = 100, area_id = 13 },
+	{ config_id = 91002, monster_id = 24020201, pos = { x = -4040.419, y = 264.527, z = -2223.067 }, rot = { x = 359.008, y = 355.265, z = 348.190 }, level = 1, drop_tag = "拟生机关", pose_id = 100, area_id = 13 },
+	{ config_id = 91003, monster_id = 24020201, pos = { x = -4021.619, y = 260.385, z = -2212.734 }, rot = { x = 1.416, y = 277.742, z = 1.324 }, level = 1, drop_tag = "拟生机关", pose_id = 100, area_id = 13 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 91007, gadget_id = 70360056, pos = { x = -4033.129, y = 260.911, z = -2210.968 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 13 },
+	{ config_id = 91008, gadget_id = 70360057, pos = { x = -4033.129, y = 260.911, z = -2210.968 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 13 },
+	{ config_id = 91009, gadget_id = 70210106, pos = { x = -4033.129, y = 260.911, z = -2210.968 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, chest_drop_id = 1000100, drop_count = 1, isOneoff = true, persistent = true, is_blossom_chest = true, area_id = 13 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "GroupCompletion", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 91001, 91002, 91003 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_0/BlossomGroup"

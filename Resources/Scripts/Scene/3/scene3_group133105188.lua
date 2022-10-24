@@ -1,201 +1,79 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 133105188
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 188001
-L2_1.gadget_id = 70310001
-L3_1 = {}
-L3_1.x = 649.372
-L3_1.y = 233.881
-L3_1.z = -452.537
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 25
-L3_1 = GadgetState
-L3_1 = L3_1.GearStart
-L2_1.state = L3_1
-L2_1.area_id = 9
-L3_1 = {}
-L3_1.config_id = 188002
-L3_1.gadget_id = 70310001
-L4_1 = {}
-L4_1.x = 654.968
-L4_1.y = 233.668
-L4_1.z = -462.877
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 25
-L4_1 = GadgetState
-L4_1 = L4_1.GearStart
-L3_1.state = L4_1
-L3_1.area_id = 9
-L4_1 = {}
-L4_1.config_id = 188003
-L4_1.gadget_id = 70310001
-L5_1 = {}
-L5_1.x = 641.28
-L5_1.y = 225.89
-L5_1.z = -455.779
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 19
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.area_id = 9
-L5_1 = {}
-L5_1.config_id = 188004
-L5_1.gadget_id = 70310001
-L6_1 = {}
-L6_1.x = 646.681
-L6_1.y = 225.89
-L6_1.z = -467.435
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 19
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L5_1.area_id = 9
-L6_1 = {}
-L6_1.config_id = 188005
-L6_1.gadget_id = 70310001
-L7_1 = {}
-L7_1.x = 634.373
-L7_1.y = 223.43
-L7_1.z = -460.063
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 19
-L7_1 = GadgetState
-L7_1 = L7_1.GearStart
-L6_1.state = L7_1
-L6_1.area_id = 9
-L7_1 = {}
-L7_1.config_id = 188006
-L7_1.gadget_id = 70310001
-L8_1 = {}
-L8_1.x = 639.724
-L8_1.y = 223.43
-L8_1.z = -470.461
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 19
-L8_1 = GadgetState
-L8_1 = L8_1.GearStart
-L7_1.state = L8_1
-L7_1.area_id = 9
-L8_1 = {}
-L8_1.config_id = 188007
-L8_1.gadget_id = 70310001
-L9_1 = {}
-L9_1.x = 699.98
-L9_1.y = 246.994
-L9_1.z = -429.103
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 25
-L9_1 = GadgetState
-L9_1 = L9_1.GearStart
-L8_1.state = L9_1
-L8_1.area_id = 9
-L9_1 = {}
-L9_1.config_id = 188008
-L9_1.gadget_id = 70310001
-L10_1 = {}
-L10_1.x = 693.721
-L10_1.y = 247.326
-L10_1.z = -423.181
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 25
-L10_1 = GadgetState
-L10_1 = L10_1.GearStart
-L9_1.state = L10_1
-L9_1.area_id = 9
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 188001
-L5_1 = 188002
-L6_1 = 188003
-L7_1 = 188004
-L8_1 = 188005
-L9_1 = 188006
-L10_1 = 188007
-L11_1 = 188008
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133105188
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 188001, gadget_id = 70310001, pos = { x = 649.372, y = 233.881, z = -452.537 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 25, state = GadgetState.GearStart, area_id = 9 },
+	{ config_id = 188002, gadget_id = 70310001, pos = { x = 654.968, y = 233.668, z = -462.877 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 25, state = GadgetState.GearStart, area_id = 9 },
+	{ config_id = 188003, gadget_id = 70310001, pos = { x = 641.280, y = 225.890, z = -455.779 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 19, state = GadgetState.GearStart, area_id = 9 },
+	{ config_id = 188004, gadget_id = 70310001, pos = { x = 646.681, y = 225.890, z = -467.435 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 19, state = GadgetState.GearStart, area_id = 9 },
+	{ config_id = 188005, gadget_id = 70310001, pos = { x = 634.373, y = 223.430, z = -460.063 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 19, state = GadgetState.GearStart, area_id = 9 },
+	{ config_id = 188006, gadget_id = 70310001, pos = { x = 639.724, y = 223.430, z = -470.461 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 19, state = GadgetState.GearStart, area_id = 9 },
+	{ config_id = 188007, gadget_id = 70310001, pos = { x = 699.980, y = 246.994, z = -429.103 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 25, state = GadgetState.GearStart, area_id = 9 },
+	{ config_id = 188008, gadget_id = 70310001, pos = { x = 693.721, y = 247.326, z = -423.181 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 25, state = GadgetState.GearStart, area_id = 9 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 188001, 188002, 188003, 188004, 188005, 188006, 188007, 188008 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

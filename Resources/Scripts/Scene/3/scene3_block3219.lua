@@ -1,33 +1,8 @@
-local L0_1, L1_1, L2_1, L3_1
-L0_1 = {}
-L1_1 = {}
-L1_1.id = 133219001
-L1_1.refresh_id = 1
-L1_1.area = 11
-L2_1 = {}
-L2_1.x = -1789.671
-L2_1.y = 200.408
-L2_1.z = -4127.04
-L1_1.pos = L2_1
-L2_1 = {}
-L2_1.value = false
-L2_1.version = 0
-L2_1.new_bin_only = true
-L1_1.is_replaceable = L2_1
-L2_1 = {}
-L2_1.id = 133219002
-L2_1.refresh_id = 1000
-L2_1.area = 11
-L3_1 = {}
-L3_1.x = -1767.959
-L3_1.y = 226.199
-L3_1.z = -4123.123
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.value = false
-L3_1.version = 0
-L3_1.new_bin_only = true
-L2_1.is_replaceable = L3_1
-L0_1[1] = L1_1
-L0_1[2] = L2_1
-groups = L0_1
+-- 所有的group
+groups = {
+	{ id = 133219001, refresh_id = 1, area = 11, pos = { x = -1789.671, y = 200.408, z = -4127.040 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
+	{ id = 133219002, refresh_id = 1000, area = 11, pos = { x = -1767.959, y = 226.199, z = -4123.123 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
+	{ id = 133219003, area = 11, pos = { x = -1839.751, y = 200.210, z = -4262.260 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
+	{ id = 133219004, area = 11, pos = { x = -1845.055, y = 200.582, z = -4254.018 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
+	{ id = 133219005, area = 11, pos = { x = -1850.248, y = 200.309, z = -4254.972 }, is_replaceable = { value = false, version = 0, new_bin_only = true } }
+}

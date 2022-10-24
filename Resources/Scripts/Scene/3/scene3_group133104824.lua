@@ -1,269 +1,108 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 133104824
-L1_1 = {}
-L1_1.worktop_id = 824001
-L1_1.gallery_id = 18004
-L1_1.region_id = 824002
-L1_1.client_judge_id = 100310004
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 824001
-L3_1.gadget_id = 70290325
-L4_1 = {}
-L4_1.x = 237.914
-L4_1.y = 259.47
-L4_1.z = 138.42
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 9
-L4_1 = {}
-L4_1.config_id = 824003
-L4_1.gadget_id = 70290346
-L5_1 = {}
-L5_1.x = 1149.273
-L5_1.y = 452.067
-L5_1.z = -685.26
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 10
-L5_1 = {}
-L5_1.config_id = 824004
-L5_1.gadget_id = 70290346
-L6_1 = {}
-L6_1.x = 998.304
-L6_1.y = 636.505
-L6_1.z = -897.811
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.area_id = 10
-L6_1 = {}
-L6_1.config_id = 824005
-L6_1.gadget_id = 70290346
-L7_1 = {}
-L7_1.x = 905.451
-L7_1.y = 441.238
-L7_1.z = -964.919
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 10
-L7_1 = {}
-L7_1.config_id = 824006
-L7_1.gadget_id = 70290346
-L8_1 = {}
-L8_1.x = 626.131
-L8_1.y = 203.272
-L8_1.z = -1183.186
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.area_id = 10
-L8_1 = {}
-L8_1.config_id = 824008
-L8_1.gadget_id = 70290346
-L9_1 = {}
-L9_1.x = 1282.842
-L9_1.y = 271.632
-L9_1.z = -1205.811
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.area_id = 10
-L9_1 = {}
-L9_1.config_id = 824009
-L9_1.gadget_id = 70290346
-L10_1 = {}
-L10_1.x = 1431.052
-L10_1.y = 262.889
-L10_1.z = -547.377
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.area_id = 10
-L10_1 = {}
-L10_1.config_id = 824010
-L10_1.gadget_id = 70290346
-L11_1 = {}
-L11_1.x = 749.483
-L11_1.y = 299.836
-L11_1.z = -484.188
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L10_1.area_id = 10
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 824002
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 20
-L4_1 = {}
-L4_1.x = 237.914
-L4_1.y = 259.47
-L4_1.z = 138.42
-L3_1.pos = L4_1
-L3_1.area_id = 9
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1824007
-L3_1.name = "SELECT_OPTION_824007"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SELECT_OPTION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_SELECT_OPTION_824007"
-L3_1.trigger_count = 0
-L2_1[1] = L3_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 824001
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 824002
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "SELECT_OPTION_824007"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 824003
-L7_1 = 824004
-L8_1 = 824005
-L9_1 = 824006
-L10_1 = 824008
-L11_1 = 824009
-L12_1 = 824010
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L5_1[7] = L12_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 == 824001 then
-    L2_2 = A1_2.param2
-    if L2_2 == 190 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.BeginCameraSceneLook
-      L3_2 = A0_2
-      L4_2 = {}
-      L5_2 = {}
-      L5_2.x = 1073.588
-      L5_2.y = 452.2225
-      L5_2.z = -793.2946
-      L4_2.look_pos = L5_2
-      L4_2.duration = 3
-      L4_2.is_force = true
-      L4_2.is_broadcast = false
-      L4_2.is_recover_keep_current = false
-      L4_2.delay = 0
-      L4_2.is_set_follow_pos = false
-      L5_2 = {}
-      L5_2.x = 0
-      L5_2.y = 0
-      L5_2.z = 0
-      L4_2.follow_pos = L5_2
-      L4_2.is_force_walk = false
-      L4_2.is_change_play_mode = false
-      L4_2.screen_x = 0
-      L4_2.screen_y = 0
-      L4_2.is_set_screenXY = false
-      L5_2 = {}
-      L4_2.other_params = L5_2
-      L5_2 = KeepRotType
-      L5_2 = L5_2.Keep_ROT_X
-      L4_2.keep_rot_type = L5_2
-      L4_2.custom_radius = 0
-      L2_2(L3_2, L4_2)
-    else
-    end
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133104824
+}
+
+-- Trigger变量
+local defs = {
+	worktop_id = 824001,
+	gallery_id = 18004,
+	region_id = 824002,
+	client_judge_id = 100310004
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 824001, gadget_id = 70290325, pos = { x = 237.914, y = 259.470, z = 138.420 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 9 },
+	{ config_id = 824003, gadget_id = 70290346, pos = { x = 1149.273, y = 452.067, z = -685.260 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 824004, gadget_id = 70290346, pos = { x = 998.304, y = 636.505, z = -897.811 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 824005, gadget_id = 70290346, pos = { x = 905.451, y = 441.238, z = -964.919 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 824006, gadget_id = 70290346, pos = { x = 626.131, y = 203.272, z = -1183.186 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 824008, gadget_id = 70290346, pos = { x = 1282.842, y = 271.632, z = -1205.811 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 824009, gadget_id = 70290346, pos = { x = 1431.052, y = 262.889, z = -547.377 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 824010, gadget_id = 70290346, pos = { x = 749.483, y = 299.836, z = -484.188 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 10 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 824002, shape = RegionShape.SPHERE, radius = 20, pos = { x = 237.914, y = 259.470, z = 138.420 }, area_id = 9 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1824007, name = "SELECT_OPTION_824007", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "", action = "action_EVENT_SELECT_OPTION_824007", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 824001 },
+		regions = { 824002 },
+		triggers = { "SELECT_OPTION_824007" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 824003, 824004, 824005, 824006, 824008, 824009, 824010 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_824007(context, evt)
+	if evt.param1 == 824001 and evt.param2 == 190 then
+		ScriptLib.BeginCameraSceneLook(context, { look_pos = {x = 1073.588,y = 452.2225,z = -793.2946}, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = false, delay = 0, is_set_follow_pos =false, is_abs_follow_pos=false, follow_pos = {x=0,y=0,z=0}, is_force_walk =false, is_change_play_mode = false, screen_x = 0, screen_y = 0, is_set_screenXY = false, other_params ={}, keep_rot_type = KeepRotType.Keep_ROT_X, custom_radius = 0})
+	end
+	return 0
 end
-action_EVENT_SELECT_OPTION_824007 = L2_1
-L2_1 = require
-L3_1 = "V2_6/PhotographActivity"
-L2_1(L3_1)
+
+require "V2_6/PhotographActivity"

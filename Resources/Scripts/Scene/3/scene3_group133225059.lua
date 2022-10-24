@@ -1,322 +1,100 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133225059
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 59001
-L2_1.gadget_id = 70290159
-L3_1 = {}
-L3_1.x = -6265.558
-L3_1.y = 219.564
-L3_1.z = -2958.381
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 358.974
-L3_1.y = 198.377
-L3_1.z = 356.098
-L2_1.rot = L3_1
-L2_1.level = 33
-L3_1 = GadgetState
-L3_1 = L3_1.GearStart
-L2_1.state = L3_1
-L2_1.persistent = true
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 59003
-L3_1.gadget_id = 70290159
-L4_1 = {}
-L4_1.x = -6268.369
-L4_1.y = 222.711
-L4_1.z = -2908.482
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 354.697
-L4_1.y = 242.649
-L4_1.z = 354.346
-L3_1.rot = L4_1
-L3_1.level = 33
-L4_1 = GadgetState
-L4_1 = L4_1.GearStart
-L3_1.state = L4_1
-L3_1.persistent = true
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 59004
-L4_1.gadget_id = 70290159
-L5_1 = {}
-L5_1.x = -6297.803
-L5_1.y = 216.801
-L5_1.z = -2909.359
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 354.544
-L5_1.y = 131.319
-L5_1.z = 355.667
-L4_1.rot = L5_1
-L4_1.level = 33
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.persistent = true
-L4_1.area_id = 18
-L5_1 = {}
-L5_1.config_id = 59005
-L5_1.gadget_id = 70290159
-L6_1 = {}
-L6_1.x = -6257.632
-L6_1.y = 227.461
-L6_1.z = -2951.242
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 338.659
-L6_1.y = 238.02
-L6_1.z = 343.473
-L5_1.rot = L6_1
-L5_1.level = 33
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L5_1.persistent = true
-L5_1.area_id = 18
-L6_1 = {}
-L6_1.config_id = 59007
-L6_1.gadget_id = 70290159
-L7_1 = {}
-L7_1.x = -6246.343
-L7_1.y = 233.846
-L7_1.z = -2936.665
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 5.007
-L7_1.y = 0.0
-L7_1.z = 348.948
-L6_1.rot = L7_1
-L6_1.level = 33
-L7_1 = GadgetState
-L7_1 = L7_1.GearStart
-L6_1.state = L7_1
-L6_1.persistent = true
-L6_1.area_id = 18
-L7_1 = {}
-L7_1.config_id = 59009
-L7_1.gadget_id = 70290159
-L8_1 = {}
-L8_1.x = -6229.646
-L8_1.y = 237.881
-L8_1.z = -2940.427
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 353.052
-L8_1.y = 263.82
-L8_1.z = 10.145
-L7_1.rot = L8_1
-L7_1.level = 33
-L8_1 = GadgetState
-L8_1 = L8_1.GearStart
-L7_1.state = L8_1
-L7_1.persistent = true
-L7_1.area_id = 18
-L8_1 = {}
-L8_1.config_id = 59010
-L8_1.gadget_id = 70290159
-L9_1 = {}
-L9_1.x = -6265.963
-L9_1.y = 226.029
-L9_1.z = -2935.095
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 3.97
-L9_1.y = 186.702
-L9_1.z = 327.821
-L8_1.rot = L9_1
-L8_1.level = 33
-L9_1 = GadgetState
-L9_1 = L9_1.GearStart
-L8_1.state = L9_1
-L8_1.persistent = true
-L8_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1059008
-L2_1.name = "QUEST_FINISH_59008"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_QUEST_FINISH
-L2_1.event = L3_1
-L2_1.source = "7217230"
-L2_1.condition = ""
-L2_1.action = "action_EVENT_QUEST_FINISH_59008"
-L2_1.trigger_count = 0
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 59002
-L3_1.gadget_id = 70290159
-L4_1 = {}
-L4_1.x = -6260.857
-L4_1.y = 229.028
-L4_1.z = -2935.673
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 353.337
-L4_1.y = 226.493
-L4_1.z = 356.041
-L3_1.rot = L4_1
-L3_1.level = 33
-L4_1 = GadgetState
-L4_1 = L4_1.GearStart
-L3_1.state = L4_1
-L3_1.persistent = true
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 59006
-L4_1.gadget_id = 70290159
-L5_1 = {}
-L5_1.x = -6249.952
-L5_1.y = 231.703
-L5_1.z = -2951.841
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 350.388
-L5_1.y = 336.487
-L5_1.z = 4.155
-L4_1.rot = L5_1
-L4_1.level = 33
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.persistent = true
-L4_1.area_id = 18
-L5_1 = {}
-L5_1.config_id = 59012
-L5_1.gadget_id = 70290159
-L6_1 = {}
-L6_1.x = -6280.666
-L6_1.y = 222.492
-L6_1.z = -2947.838
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 33
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L5_1.persistent = true
-L5_1.area_id = 18
-L6_1 = {}
-L6_1.config_id = 59013
-L6_1.gadget_id = 70290159
-L7_1 = {}
-L7_1.x = -6265.074
-L7_1.y = 223.547
-L7_1.z = -2950.138
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 4.404
-L7_1.y = 28.758
-L7_1.z = 348.146
-L6_1.rot = L7_1
-L6_1.level = 33
-L7_1 = GadgetState
-L7_1 = L7_1.GearStart
-L6_1.state = L7_1
-L6_1.persistent = true
-L6_1.area_id = 18
-L7_1 = {}
-L7_1.config_id = 59014
-L7_1.gadget_id = 70290159
-L8_1 = {}
-L8_1.x = -6238.406
-L8_1.y = 239.374
-L8_1.z = -2929.238
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 208.502
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 33
-L8_1 = GadgetState
-L8_1 = L8_1.GearStart
-L7_1.state = L8_1
-L7_1.persistent = true
-L7_1.area_id = 18
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L1_1.gadgets = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 59001
-L5_1 = 59003
-L6_1 = 59004
-L7_1 = 59005
-L8_1 = 59007
-L9_1 = 59009
-L10_1 = 59010
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_FINISH_59008"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L2_2 = pairs
-  L3_2 = gadgets
-  L2_2, L3_2, L4_2 = L2_2(L3_2)
-  for L5_2, L6_2 in L2_2, L3_2, L4_2 do
-    L7_2 = ScriptLib
-    L7_2 = L7_2.SetGroupGadgetStateByConfigId
-    L8_2 = A0_2
-    L9_2 = 133225059
-    L10_2 = L6_2.config_id
-    L11_2 = 0
-    L7_2(L8_2, L9_2, L10_2, L11_2)
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133225059
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 59001, gadget_id = 70290159, pos = { x = -6265.558, y = 219.564, z = -2958.381 }, rot = { x = 358.974, y = 198.377, z = 356.098 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 59003, gadget_id = 70290159, pos = { x = -6268.369, y = 222.711, z = -2908.482 }, rot = { x = 354.697, y = 242.649, z = 354.346 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 59004, gadget_id = 70290159, pos = { x = -6297.803, y = 216.801, z = -2909.359 }, rot = { x = 354.544, y = 131.319, z = 355.667 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 59005, gadget_id = 70290159, pos = { x = -6257.632, y = 227.461, z = -2951.242 }, rot = { x = 338.659, y = 238.020, z = 343.473 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 59007, gadget_id = 70290159, pos = { x = -6246.343, y = 233.846, z = -2936.665 }, rot = { x = 5.007, y = 0.000, z = 348.948 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 59009, gadget_id = 70290159, pos = { x = -6229.646, y = 237.881, z = -2940.427 }, rot = { x = 353.052, y = 263.820, z = 10.145 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 59010, gadget_id = 70290159, pos = { x = -6265.963, y = 226.029, z = -2935.095 }, rot = { x = 3.970, y = 186.702, z = 327.821 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 任务结束关闭雾灯
+	{ config_id = 1059008, name = "QUEST_FINISH_59008", event = EventType.EVENT_QUEST_FINISH, source = "7217230", condition = "", action = "action_EVENT_QUEST_FINISH_59008", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 59002, gadget_id = 70290159, pos = { x = -6260.857, y = 229.028, z = -2935.673 }, rot = { x = 353.337, y = 226.493, z = 356.041 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+		{ config_id = 59006, gadget_id = 70290159, pos = { x = -6249.952, y = 231.703, z = -2951.841 }, rot = { x = 350.388, y = 336.487, z = 4.155 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+		{ config_id = 59012, gadget_id = 70290159, pos = { x = -6280.666, y = 222.492, z = -2947.838 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+		{ config_id = 59013, gadget_id = 70290159, pos = { x = -6265.074, y = 223.547, z = -2950.138 }, rot = { x = 4.404, y = 28.758, z = 348.146 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+		{ config_id = 59014, gadget_id = 70290159, pos = { x = -6238.406, y = 239.374, z = -2929.238 }, rot = { x = 0.000, y = 208.502, z = 0.000 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 59001, 59003, 59004, 59005, 59007, 59009, 59010 },
+		regions = { },
+		triggers = { "QUEST_FINISH_59008" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_59008(context, evt)
+	for k,v in pairs(gadgets) do
+	                ScriptLib.SetGroupGadgetStateByConfigId(context, 133225059, v.config_id, 0)
+	        end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_59008 = L1_1

@@ -1,127 +1,110 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133210463
-L1_1 = {}
-L1_1.group_ID = 133210463
-L1_1.gadget_fundation01 = 463001
-L1_1.gadget_hand01 = 463003
-L1_1.gadget_fundation02 = 0
-L1_1.gadget_hand02 = 0
-L1_1.gadget_fundation03 = 0
-L1_1.gadget_hand03 = 0
-L1_1.gadget_fundation04 = 0
-L1_1.gadget_hand04 = 0
-L1_1.gadget_fundation05 = 0
-L1_1.gadget_hand05 = 0
-L1_1.minDiscrapancy = 15
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 463001
-L4_1.gadget_id = 70950084
-L5_1 = {}
-L5_1.x = -3871.896
-L5_1.y = 250.836
-L5_1.z = -539.761
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 119.059
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.area_id = 17
-L5_1 = {}
-L5_1.config_id = 463002
-L5_1.gadget_id = 70360276
-L6_1 = {}
-L6_1.x = -3871.896
-L6_1.y = 250.836
-L6_1.z = -539.761
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 106.481
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.area_id = 17
-L6_1 = {}
-L6_1.config_id = 463003
-L6_1.gadget_id = 70950085
-L7_1 = {}
-L7_1.x = -3871.896
-L7_1.y = 250.836
-L7_1.z = -539.761
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 330.436
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 30
-L7_1 = GadgetState
-L7_1 = L7_1.GearStop
-L6_1.state = L7_1
-L6_1.area_id = 17
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1463006
-L4_1.name = "VARIABLE_CHANGE_463006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_VARIABLE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_VARIABLE_CHANGE_463006"
-L4_1.action = "action_EVENT_VARIABLE_CHANGE_463006"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 2
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-L2_1 = require
-L3_1 = "BlackBoxPlay/MagneticGear"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133210463
+}
+
+-- Trigger变量
+local defs = {
+	group_ID = 133210463,
+	gadget_fundation01 = 463001,
+	gadget_hand01 = 463003,
+	gadget_fundation02 = 0,
+	gadget_hand02 = 0,
+	gadget_fundation03 = 0,
+	gadget_hand03 = 0,
+	gadget_fundation04 = 0,
+	gadget_hand04 = 0,
+	gadget_fundation05 = 0,
+	gadget_hand05 = 0,
+	minDiscrapancy = 15
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 463001, gadget_id = 70950084, pos = { x = -3871.896, y = 250.836, z = -539.761 }, rot = { x = 0.000, y = 119.059, z = 0.000 }, level = 30, area_id = 17 },
+		{ config_id = 463002, gadget_id = 70360276, pos = { x = -3871.896, y = 250.836, z = -539.761 }, rot = { x = 0.000, y = 106.481, z = 0.000 }, level = 30, area_id = 17 },
+		{ config_id = 463003, gadget_id = 70950085, pos = { x = -3871.896, y = 250.836, z = -539.761 }, rot = { x = 0.000, y = 330.436, z = 0.000 }, level = 30, state = GadgetState.GearStop, area_id = 17 }
+	},
+	triggers = {
+		{ config_id = 1463006, name = "VARIABLE_CHANGE_463006", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_463006", action = "action_EVENT_VARIABLE_CHANGE_463006" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "BlackBoxPlay/MagneticGear"

@@ -1,208 +1,90 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133210201
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 201001
-L2_1.gadget_id = 70900393
-L3_1 = {}
-L3_1.x = -4024.136
-L3_1.y = 201.525
-L3_1.z = -718.037
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = GadgetState
-L3_1 = L3_1.GearStart
-L2_1.state = L3_1
-L2_1.area_id = 17
-L3_1 = {}
-L3_1.config_id = 201002
-L3_1.gadget_id = 70710497
-L4_1 = {}
-L4_1.x = -4049.705
-L4_1.y = 200.705
-L4_1.z = -769.511
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.202
-L4_1.z = 0.019
-L3_1.rot = L4_1
-L3_1.level = 30
-L4_1 = GadgetState
-L4_1 = L4_1.GearStart
-L3_1.state = L4_1
-L3_1.area_id = 17
-L4_1 = {}
-L4_1.config_id = 201003
-L4_1.gadget_id = 70900393
-L5_1 = {}
-L5_1.x = -4043.915
-L5_1.y = 200.671
-L5_1.z = -776.446
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.area_id = 17
-L5_1 = {}
-L5_1.config_id = 201004
-L5_1.gadget_id = 70710482
-L6_1 = {}
-L6_1.x = -4026.835
-L6_1.y = 201.13
-L6_1.z = -726.318
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L5_1.area_id = 17
-L6_1 = {}
-L6_1.config_id = 201005
-L6_1.gadget_id = 70900393
-L7_1 = {}
-L7_1.x = -4039.904
-L7_1.y = 200.421
-L7_1.z = -774.107
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 17
-L7_1 = {}
-L7_1.config_id = 201006
-L7_1.gadget_id = 70900393
-L8_1 = {}
-L8_1.x = -4034.279
-L8_1.y = 200.466
-L8_1.z = -736.052
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = GadgetState
-L8_1 = L8_1.GearStart
-L7_1.state = L8_1
-L7_1.area_id = 17
-L8_1 = {}
-L8_1.config_id = 201007
-L8_1.gadget_id = 70710485
-L9_1 = {}
-L9_1.x = -4045.078
-L9_1.y = 203.34
-L9_1.z = -772.006
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.area_id = 17
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1201008
-L2_1.name = "QUEST_START_201008"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_QUEST_START
-L2_1.event = L3_1
-L2_1.source = "1202302"
-L2_1.condition = ""
-L2_1.action = "action_EVENT_QUEST_START_201008"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 201001
-L5_1 = 201002
-L6_1 = 201003
-L7_1 = 201004
-L8_1 = 201005
-L9_1 = 201006
-L10_1 = 201007
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_START_201008"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 201002
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133210201
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 201001, gadget_id = 70900393, pos = { x = -4024.136, y = 201.525, z = -718.037 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, area_id = 17 },
+	{ config_id = 201002, gadget_id = 70710497, pos = { x = -4049.705, y = 200.705, z = -769.511 }, rot = { x = 0.000, y = 0.202, z = 0.019 }, level = 30, state = GadgetState.GearStart, area_id = 17 },
+	{ config_id = 201003, gadget_id = 70900393, pos = { x = -4043.915, y = 200.671, z = -776.446 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, area_id = 17 },
+	{ config_id = 201004, gadget_id = 70710482, pos = { x = -4026.835, y = 201.130, z = -726.318 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, area_id = 17 },
+	{ config_id = 201005, gadget_id = 70900393, pos = { x = -4039.904, y = 200.421, z = -774.107 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 17 },
+	{ config_id = 201006, gadget_id = 70900393, pos = { x = -4034.279, y = 200.466, z = -736.052 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, area_id = 17 },
+	{ config_id = 201007, gadget_id = 70710485, pos = { x = -4045.078, y = 203.340, z = -772.006 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 17 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1201008, name = "QUEST_START_201008", event = EventType.EVENT_QUEST_START, source = "1202302", condition = "", action = "action_EVENT_QUEST_START_201008" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 201001, 201002, 201003, 201004, 201005, 201006, 201007 },
+		regions = { },
+		triggers = { "QUEST_START_201008" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_START_201008(context, evt)
+	-- 将configid为 201002 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 201002, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_QUEST_START_201008 = L1_1

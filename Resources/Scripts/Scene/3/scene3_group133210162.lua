@@ -1,99 +1,85 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1
-L0_1 = {}
-L0_1.group_id = 133210162
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 162002
-L2_1.gadget_id = 70330064
-L3_1 = {}
-L3_1.x = -3999.087
-L3_1.y = 205.636
-L3_1.z = -986.081
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 3.145
-L3_1.y = 12.37
-L3_1.z = 355.858
-L2_1.rot = L3_1
-L2_1.level = 30
-L2_1.interact_id = 35
-L2_1.area_id = 17
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 162001
-L3_1.gadget_id = 70330090
-L4_1 = {}
-L4_1.x = -4031.352
-L4_1.y = 200.361
-L4_1.z = -998.993
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 358.829
-L4_1.y = 62.385
-L4_1.z = 1.623
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.area_id = 17
-L2_1[1] = L3_1
-L1_1.gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 162003
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 10
-L4_1 = {}
-L4_1.x = -4032.808
-L4_1.y = 200.367
-L4_1.z = -998.533
-L3_1.pos = L4_1
-L3_1.area_id = 17
-L2_1[1] = L3_1
-L1_1.regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1162003
-L3_1.name = "ENTER_REGION_162003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = ""
-L2_1[1] = L3_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 162002
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133210162
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 162002, gadget_id = 70330064, pos = { x = -3999.087, y = 205.636, z = -986.081 }, rot = { x = 3.145, y = 12.370, z = 355.858 }, level = 30, interact_id = 35, area_id = 17 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 162001, gadget_id = 70330090, pos = { x = -4031.352, y = 200.361, z = -998.993 }, rot = { x = 358.829, y = 62.385, z = 1.623 }, level = 30, area_id = 17 }
+	},
+	regions = {
+		{ config_id = 162003, shape = RegionShape.SPHERE, radius = 10, pos = { x = -4032.808, y = 200.367, z = -998.533 }, area_id = 17 }
+	},
+	triggers = {
+		{ config_id = 1162003, name = "ENTER_REGION_162003", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 162002 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

@@ -1,200 +1,101 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133001006
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 6004
-L2_1.monster_id = 21010301
-L3_1 = {}
-L3_1.x = 1434.95
-L3_1.y = 239.135
-L3_1.z = -1432.683
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 180.83
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 26
-L2_1.drop_id = 1000100
-L2_1.area_id = 2
-L3_1 = {}
-L3_1.config_id = 6006
-L3_1.monster_id = 21010101
-L4_1 = {}
-L4_1.x = 1429.854
-L4_1.y = 238.397
-L4_1.z = -1443.809
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 327.6
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 26
-L3_1.drop_id = 1000100
-L3_1.disableWander = true
-L3_1.pose_id = 9012
-L3_1.area_id = 2
-L4_1 = {}
-L4_1.config_id = 6007
-L4_1.monster_id = 21010901
-L5_1 = {}
-L5_1.x = 1446.826
-L5_1.y = 257.115
-L5_1.z = -1445.275
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 300.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 26
-L4_1.drop_id = 1000100
-L4_1.disableWander = true
-L4_1.pose_id = 32
-L4_1.area_id = 2
-L5_1 = {}
-L5_1.config_id = 6008
-L5_1.monster_id = 21010901
-L6_1 = {}
-L6_1.x = 1430.855
-L6_1.y = 241.713
-L6_1.z = -1429.425
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 150.9
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 26
-L5_1.drop_id = 1000100
-L5_1.disableWander = true
-L5_1.pose_id = 32
-L5_1.area_id = 2
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 6002
-L2_1.gadget_id = 70300091
-L3_1 = {}
-L3_1.x = 1438.032
-L3_1.y = 239.275
-L3_1.z = -1443.304
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.area_id = 2
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1006003
-L2_1.name = "ANY_GADGET_DIE_6003"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_GADGET_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_ANY_GADGET_DIE_6003"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1006020
-L3_1.name = "MONSTER_BATTLE_6020"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_MONSTER_BATTLE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_MONSTER_BATTLE_6020"
-L3_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = 6004
-L5_1 = 6006
-L6_1 = 6007
-L7_1 = 6008
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 6002
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ANY_GADGET_DIE_6003"
-L5_1 = "MONSTER_BATTLE_6020"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L2_1.ban_refresh = true
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "133001006"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133001006
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 6004, monster_id = 21010301, pos = { x = 1434.950, y = 239.135, z = -1432.683 }, rot = { x = 0.000, y = 180.830, z = 0.000 }, level = 26, drop_id = 1000100, area_id = 2 },
+	{ config_id = 6006, monster_id = 21010101, pos = { x = 1429.854, y = 238.397, z = -1443.809 }, rot = { x = 0.000, y = 327.600, z = 0.000 }, level = 26, drop_id = 1000100, disableWander = true, pose_id = 9012, area_id = 2 },
+	{ config_id = 6007, monster_id = 21010901, pos = { x = 1446.826, y = 257.115, z = -1445.275 }, rot = { x = 0.000, y = 300.000, z = 0.000 }, level = 26, drop_id = 1000100, disableWander = true, pose_id = 32, area_id = 2 },
+	{ config_id = 6008, monster_id = 21010901, pos = { x = 1430.855, y = 241.713, z = -1429.425 }, rot = { x = 0.000, y = 150.900, z = 0.000 }, level = 26, drop_id = 1000100, disableWander = true, pose_id = 32, area_id = 2 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 6002, gadget_id = 70300091, pos = { x = 1438.032, y = 239.275, z = -1443.304 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 2 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1006003, name = "ANY_GADGET_DIE_6003", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "", action = "action_EVENT_ANY_GADGET_DIE_6003", trigger_count = 0 },
+	{ config_id = 1006020, name = "MONSTER_BATTLE_6020", event = EventType.EVENT_MONSTER_BATTLE, source = "", condition = "", action = "action_EVENT_MONSTER_BATTLE_6020", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 6004, 6006, 6007, 6008 },
+		gadgets = { 6002 },
+		regions = { },
+		triggers = { "ANY_GADGET_DIE_6003", "MONSTER_BATTLE_6020" },
+		rand_weight = 100,
+		ban_refresh = true
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_6003(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "133001006") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_6003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "133001006"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_MONSTER_BATTLE_6020(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "133001006") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_MONSTER_BATTLE_6020 = L1_1

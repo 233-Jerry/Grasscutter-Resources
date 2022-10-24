@@ -1,247 +1,109 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133004006
-L1_1 = {}
-L1_1.gadget_id_1 = 31
-L1_1.gadget_id_2 = 32
-L1_1.gadget_id_3 = 33
-L1_1.gadget_id_4 = 34
-L1_1.gadget_id_5 = 35
-L1_1.gadget_id_6 = 36
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 31
-L3_1.gadget_id = 70680001
-L4_1 = {}
-L4_1.x = 2801.539
-L4_1.y = 210.33
-L4_1.z = -45.69
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 158.618
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 23
-L4_1 = {}
-L5_1 = 0
-L6_1 = 10
-L7_1 = 5
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.arguments = L4_1
-L3_1.area_id = 4
-L4_1 = {}
-L4_1.config_id = 32
-L4_1.gadget_id = 70690006
-L5_1 = {}
-L5_1.x = 2793.66
-L5_1.y = 222.0
-L5_1.z = -53.118
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 276.058
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 23
-L4_1.area_id = 4
-L5_1 = {}
-L5_1.config_id = 33
-L5_1.gadget_id = 70690006
-L6_1 = {}
-L6_1.x = 2809.018
-L6_1.y = 222.0
-L6_1.z = -35.897
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 133.091
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 23
-L5_1.area_id = 4
-L6_1 = {}
-L6_1.config_id = 34
-L6_1.gadget_id = 70680003
-L7_1 = {}
-L7_1.x = 2812.387
-L7_1.y = 236.0
-L7_1.z = -31.288
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 244.528
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 23
-L6_1.area_id = 4
-L7_1 = {}
-L7_1.config_id = 35
-L7_1.gadget_id = 70690006
-L8_1 = {}
-L8_1.x = 2809.947
-L8_1.y = 248.0
-L8_1.z = -26.613
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 131.94
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 23
-L7_1.area_id = 4
-L8_1 = {}
-L8_1.config_id = 36
-L8_1.gadget_id = 70680003
-L9_1 = {}
-L9_1.x = 2788.634
-L9_1.y = 236.0
-L9_1.z = -59.089
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 35.72
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 23
-L8_1.area_id = 4
-L9_1 = {}
-L9_1.config_id = 37
-L9_1.gadget_id = 70690006
-L10_1 = {}
-L10_1.x = 2784.123
-L10_1.y = 248.0
-L10_1.z = -62.035
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 246.157
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 23
-L9_1.area_id = 4
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1000027
-L3_1.name = "GADGET_CREATE_27"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_CREATE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_CREATE_27"
-L3_1.action = "action_EVENT_GADGET_CREATE_27"
-L2_1[1] = L3_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = true
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 31
-L6_1 = 32
-L7_1 = 33
-L8_1 = 34
-L9_1 = 36
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = L1_1.gadget_id_1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  else
-    L2_2 = true
-    return L2_2
-  end
+-- 基础信息
+local base_info = {
+	group_id = 133004006
+}
+
+-- Trigger变量
+local defs = {
+	gadget_id_1 = 31,
+	gadget_id_2 = 32,
+	gadget_id_3 = 33,
+	gadget_id_4 = 34,
+	gadget_id_5 = 35,
+	gadget_id_6 = 36
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 31, gadget_id = 70680001, pos = { x = 2801.539, y = 210.330, z = -45.690 }, rot = { x = 0.000, y = 158.618, z = 0.000 }, level = 23, arguments = { 0, 10, 5 }, area_id = 4 },
+	{ config_id = 32, gadget_id = 70690006, pos = { x = 2793.660, y = 222.000, z = -53.118 }, rot = { x = 0.000, y = 276.058, z = 0.000 }, level = 23, area_id = 4 },
+	{ config_id = 33, gadget_id = 70690006, pos = { x = 2809.018, y = 222.000, z = -35.897 }, rot = { x = 0.000, y = 133.091, z = 0.000 }, level = 23, area_id = 4 },
+	{ config_id = 34, gadget_id = 70680003, pos = { x = 2812.387, y = 236.000, z = -31.288 }, rot = { x = 0.000, y = 244.528, z = 0.000 }, level = 23, area_id = 4 },
+	{ config_id = 35, gadget_id = 70690006, pos = { x = 2809.947, y = 248.000, z = -26.613 }, rot = { x = 0.000, y = 131.940, z = 0.000 }, level = 23, area_id = 4 },
+	{ config_id = 36, gadget_id = 70680003, pos = { x = 2788.634, y = 236.000, z = -59.089 }, rot = { x = 0.000, y = 35.720, z = 0.000 }, level = 23, area_id = 4 },
+	{ config_id = 37, gadget_id = 70690006, pos = { x = 2784.123, y = 248.000, z = -62.035 }, rot = { x = 0.000, y = 246.157, z = 0.000 }, level = 23, area_id = 4 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000027, name = "GADGET_CREATE_27", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_27", action = "action_EVENT_GADGET_CREATE_27" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 31, 32, 33, 34, 36 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_27(context, evt)
+	if evt.param1 ~= defs.gadget_id_1 then
+			return false
+		else 
+			return true
+		end
 end
-condition_EVENT_GADGET_CREATE_27 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133004006
-  L5_2 = L1_1.gadget_id_1
-  L6_2 = GadgetState
-  L6_2 = L6_2.Default
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133004006
-  L5_2 = L1_1.gadget_id_2
-  L6_2 = GadgetState
-  L6_2 = L6_2.Default
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133004006
-  L5_2 = L1_1.gadget_id_3
-  L6_2 = GadgetState
-  L6_2 = L6_2.Default
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133004006
-  L5_2 = L1_1.gadget_id_4
-  L6_2 = GadgetState
-  L6_2 = L6_2.Default
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133004006
-  L5_2 = L1_1.gadget_id_5
-  L6_2 = GadgetState
-  L6_2 = L6_2.Default
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133004006
-  L5_2 = L1_1.gadget_id_6
-  L6_2 = GadgetState
-  L6_2 = L6_2.Default
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_27(context, evt)
+		ScriptLib.SetGroupGadgetStateByConfigId(context, 133004006, defs.gadget_id_1, GadgetState.Default)
+		ScriptLib.SetGroupGadgetStateByConfigId(context, 133004006, defs.gadget_id_2, GadgetState.Default)
+		ScriptLib.SetGroupGadgetStateByConfigId(context, 133004006, defs.gadget_id_3, GadgetState.Default)
+		ScriptLib.SetGroupGadgetStateByConfigId(context, 133004006, defs.gadget_id_4, GadgetState.Default)
+		ScriptLib.SetGroupGadgetStateByConfigId(context, 133004006, defs.gadget_id_5, GadgetState.Default)
+		ScriptLib.SetGroupGadgetStateByConfigId(context, 133004006, defs.gadget_id_6, GadgetState.Default)
+		return 0
 end
-action_EVENT_GADGET_CREATE_27 = L2_1

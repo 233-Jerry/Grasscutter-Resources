@@ -1,148 +1,101 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133108195
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 195001
-L2_1.gadget_id = 70220066
-L3_1 = {}
-L3_1.x = -82.307
-L3_1.y = 203.112
-L3_1.z = -692.807
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.area_id = 7
-L3_1 = {}
-L3_1.config_id = 195002
-L3_1.gadget_id = 70710578
-L4_1 = {}
-L4_1.x = -137.811
-L4_1.y = 199.43
-L4_1.z = -642.084
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 10.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 7
-L4_1 = {}
-L4_1.config_id = 195005
-L4_1.gadget_id = 70710549
-L5_1 = {}
-L5_1.x = -110.625
-L5_1.y = 200.392
-L5_1.z = -636.828
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 12.77
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 7
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1195003
-L2_1.name = "QUEST_START_195003"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_QUEST_START
-L2_1.event = L3_1
-L2_1.source = "1905212"
-L2_1.condition = ""
-L2_1.action = "action_EVENT_QUEST_START_195003"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1195004
-L3_1.name = "QUEST_FINISH_195004"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_QUEST_FINISH
-L3_1.event = L4_1
-L3_1.source = "1905212"
-L3_1.condition = ""
-L3_1.action = "action_EVENT_QUEST_FINISH_195004"
-L3_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 195001
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_START_195003"
-L5_1 = "QUEST_FINISH_195004"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 195002
-L6_1 = 195005
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133108195
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133108195
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 195001, gadget_id = 70220066, pos = { x = -82.307, y = 203.112, z = -692.807 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 7 },
+	{ config_id = 195002, gadget_id = 70710578, pos = { x = -137.811, y = 199.430, z = -642.084 }, rot = { x = 0.000, y = 10.000, z = 0.000 }, level = 1, area_id = 7 },
+	{ config_id = 195005, gadget_id = 70710549, pos = { x = -110.625, y = 200.392, z = -636.828 }, rot = { x = 0.000, y = 0.000, z = 12.770 }, level = 1, area_id = 7 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1195003, name = "QUEST_START_195003", event = EventType.EVENT_QUEST_START, source = "1905212", condition = "", action = "action_EVENT_QUEST_START_195003", trigger_count = 0 },
+	{ config_id = 1195004, name = "QUEST_FINISH_195004", event = EventType.EVENT_QUEST_FINISH, source = "1905212", condition = "", action = "action_EVENT_QUEST_FINISH_195004", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 195001 },
+		regions = { },
+		triggers = { "QUEST_START_195003", "QUEST_FINISH_195004" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 195002, 195005 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_START_195003(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133108195, 2)
+	
+	return 0
 end
-action_EVENT_QUEST_START_195003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133108195
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_195004(context, evt)
+	-- 删除suite2的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 133108195, 2)
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_195004 = L1_1

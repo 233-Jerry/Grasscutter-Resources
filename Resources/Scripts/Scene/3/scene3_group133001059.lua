@@ -1,72 +1,80 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 133001059
-L1_1 = {}
-L1_1.guide_regionID = 59005
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 59002
-L3_1.gadget_id = 70290197
-L4_1 = {}
-L4_1.x = 1568.302
-L4_1.y = 276.524
-L4_1.z = -1028.794
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 231.945
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.persistent = true
-L3_1.area_id = 10
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 59005
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 10
-L4_1 = {}
-L4_1.x = 1563.115
-L4_1.y = 276.819
-L4_1.z = -1028.131
-L3_1.pos = L4_1
-L3_1.area_id = 10
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 59002
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 59005
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-L2_1 = require
-L3_1 = "V2_3/WinterCampSnowman"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133001059
+}
+
+-- Trigger变量
+local defs = {
+	guide_regionID = 59005
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 59002, gadget_id = 70290197, pos = { x = 1568.302, y = 276.524, z = -1028.794 }, rot = { x = 0.000, y = 231.945, z = 0.000 }, level = 1, persistent = true, area_id = 10 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 59005, shape = RegionShape.SPHERE, radius = 10, pos = { x = 1563.115, y = 276.819, z = -1028.131 }, area_id = 10 }
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 59002 },
+		regions = { 59005 },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_3/WinterCampSnowman"

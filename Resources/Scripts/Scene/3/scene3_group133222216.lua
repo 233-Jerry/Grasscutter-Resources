@@ -1,237 +1,138 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133222216
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 216001
-L2_1.gadget_id = 70330064
-L3_1 = {}
-L3_1.x = -4552.43
-L3_1.y = 358.619
-L3_1.z = -4264.149
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.657
-L3_1.y = 191.66
-L3_1.z = 356.584
-L2_1.rot = L3_1
-L2_1.level = 30
-L2_1.interact_id = 35
-L2_1.area_id = 14
-L3_1 = {}
-L3_1.config_id = 216002
-L3_1.gadget_id = 70900380
-L4_1 = {}
-L4_1.x = -4556.97
-L4_1.y = 361.877
-L4_1.z = -4258.375
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.area_id = 14
-L4_1 = {}
-L4_1.config_id = 216003
-L4_1.gadget_id = 70900380
-L5_1 = {}
-L5_1.x = -4561.988
-L5_1.y = 369.567
-L5_1.z = -4247.106
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.area_id = 14
-L5_1 = {}
-L5_1.config_id = 216004
-L5_1.gadget_id = 70900380
-L6_1 = {}
-L6_1.x = -4566.051
-L6_1.y = 378.288
-L6_1.z = -4236.519
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.area_id = 14
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1216005
-L2_1.name = "GADGET_STATE_CHANGE_216005"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGET_STATE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_216005"
-L2_1.action = "action_EVENT_GADGET_STATE_CHANGE_216005"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1216006
-L3_1.name = "GADGET_STATE_CHANGE_216006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_216006"
-L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_216006"
-L3_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 216007
-L3_1.gadget_id = 70900380
-L4_1 = {}
-L4_1.x = -4557.817
-L4_1.y = 400.966
-L4_1.z = -4258.472
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.area_id = 14
-L2_1[1] = L3_1
-L1_1.gadgets = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 216001
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_STATE_CHANGE_216005"
-L6_1 = "GADGET_STATE_CHANGE_216006"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 216002
-L7_1 = 216003
-L8_1 = 216004
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 216001 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133222216
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 216001, gadget_id = 70330064, pos = { x = -4552.430, y = 358.619, z = -4264.149 }, rot = { x = 0.657, y = 191.660, z = 356.584 }, level = 30, interact_id = 35, area_id = 14 },
+	{ config_id = 216002, gadget_id = 70900380, pos = { x = -4556.970, y = 361.877, z = -4258.375 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 14 },
+	{ config_id = 216003, gadget_id = 70900380, pos = { x = -4561.988, y = 369.567, z = -4247.106 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 14 },
+	{ config_id = 216004, gadget_id = 70900380, pos = { x = -4566.051, y = 378.288, z = -4236.519 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 14 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1216005, name = "GADGET_STATE_CHANGE_216005", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_216005", action = "action_EVENT_GADGET_STATE_CHANGE_216005", trigger_count = 0 },
+	{ config_id = 1216006, name = "GADGET_STATE_CHANGE_216006", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_216006", action = "action_EVENT_GADGET_STATE_CHANGE_216006", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 216007, gadget_id = 70900380, pos = { x = -4557.817, y = 400.966, z = -4258.472 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 14 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 216001 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_216005", "GADGET_STATE_CHANGE_216006" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 216002, 216003, 216004 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_216005(context, evt)
+	if 216001 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_216005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133222216
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_216005(context, evt)
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133222216, 3)
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_216005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 216001 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.Default
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_216006(context, evt)
+	if 216001 ~= evt.param2 or GadgetState.Default ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_216006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133222216
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_216006(context, evt)
+	-- 删除suite3的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 133222216, 3)
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_216006 = L1_1
-L1_1 = require
-L2_1 = "V2_0/ElectricCore"
-L1_1(L2_1)
+
+require "V2_0/ElectricCore"

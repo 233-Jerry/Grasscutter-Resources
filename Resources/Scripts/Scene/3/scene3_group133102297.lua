@@ -1,940 +1,321 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
-L0_1 = {}
-L0_1.group_id = 133102297
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 297001
-L2_1.monster_id = 21011201
-L3_1 = {}
-L3_1.x = 1186.828
-L3_1.y = 200.119
-L3_1.z = 125.869
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 113.786
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 18
-L2_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L2_1.disableWander = true
-L2_1.area_id = 5
-L3_1 = {}
-L3_1.config_id = 297002
-L3_1.monster_id = 21011201
-L4_1 = {}
-L4_1.x = 1188.437
-L4_1.y = 200.171
-L4_1.z = 118.09
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 9.555
-L4_1.y = 73.918
-L4_1.z = 345.225
-L3_1.rot = L4_1
-L3_1.level = 18
-L3_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L3_1.disableWander = true
-L3_1.area_id = 5
-L4_1 = {}
-L4_1.config_id = 297004
-L4_1.monster_id = 21010601
-L5_1 = {}
-L5_1.x = 1179.459
-L5_1.y = 201.644
-L5_1.z = 128.157
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 116.557
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 18
-L4_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L4_1.disableWander = true
-L4_1.area_id = 5
-L5_1 = {}
-L5_1.config_id = 297005
-L5_1.monster_id = 21010601
-L6_1 = {}
-L6_1.x = 1178.554
-L6_1.y = 201.624
-L6_1.z = 119.149
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 66.432
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 18
-L5_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L5_1.disableWander = true
-L5_1.area_id = 5
-L6_1 = {}
-L6_1.config_id = 297010
-L6_1.monster_id = 21030401
-L7_1 = {}
-L7_1.x = 1174.81
-L7_1.y = 202.871
-L7_1.z = 120.137
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 353.686
-L7_1.y = 42.366
-L7_1.z = 334.421
-L6_1.rot = L7_1
-L6_1.level = 18
-L6_1.drop_tag = "\228\184\152\228\184\152\232\144\168\230\187\161"
-L6_1.disableWander = true
-L6_1.area_id = 5
-L7_1 = {}
-L7_1.config_id = 297024
-L7_1.monster_id = 21020301
-L8_1 = {}
-L8_1.x = 1176.44
-L8_1.y = 203.366
-L8_1.z = 123.588
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 77.723
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 18
-L7_1.drop_tag = "\228\184\152\228\184\152\230\154\180\229\190\146"
-L7_1.disableWander = true
-L7_1.pose_id = 401
-L7_1.area_id = 5
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 297011
-L2_1.gadget_id = 70211012
-L3_1 = {}
-L3_1.x = 1174.686
-L3_1.y = 203.681
-L3_1.z = 123.127
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 7.103
-L3_1.y = 88.81
-L3_1.z = 0.323
-L2_1.rot = L3_1
-L2_1.level = 16
-L2_1.drop_tag = "\230\136\152\230\150\151\228\184\173\231\186\167\231\146\131\230\156\136"
-L3_1 = GadgetState
-L3_1 = L3_1.ChestLocked
-L2_1.state = L3_1
-L2_1.isOneoff = true
-L2_1.persistent = true
-L3_1 = {}
-L3_1.name = "chest"
-L3_1.exp = 1
-L2_1.explore = L3_1
-L2_1.area_id = 5
-L3_1 = {}
-L3_1.config_id = 297012
-L3_1.gadget_id = 70220013
-L4_1 = {}
-L4_1.x = 1174.114
-L4_1.y = 200.695
-L4_1.z = 135.393
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 17.425
-L4_1.y = 82.487
-L4_1.z = 348.921
-L3_1.rot = L4_1
-L3_1.level = 16
-L3_1.persistent = true
-L3_1.area_id = 5
-L4_1 = {}
-L4_1.config_id = 297014
-L4_1.gadget_id = 70300089
-L5_1 = {}
-L5_1.x = 1181.726
-L5_1.y = 201.058
-L5_1.z = 119.273
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 350.887
-L5_1.y = 13.516
-L5_1.z = 352.408
-L4_1.rot = L5_1
-L4_1.level = 16
-L4_1.persistent = true
-L4_1.area_id = 5
-L5_1 = {}
-L5_1.config_id = 297015
-L5_1.gadget_id = 70300089
-L6_1 = {}
-L6_1.x = 1181.264
-L6_1.y = 201.682
-L6_1.z = 125.961
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 347.846
-L6_1.y = 306.177
-L6_1.z = 347.066
-L5_1.rot = L6_1
-L5_1.level = 16
-L5_1.persistent = true
-L5_1.area_id = 5
-L6_1 = {}
-L6_1.config_id = 297016
-L6_1.gadget_id = 70300081
-L7_1 = {}
-L7_1.x = 1189.291
-L7_1.y = 199.376
-L7_1.z = 128.601
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 3.684
-L7_1.y = 321.492
-L7_1.z = 359.86
-L6_1.rot = L7_1
-L6_1.level = 16
-L6_1.persistent = true
-L6_1.area_id = 5
-L7_1 = {}
-L7_1.config_id = 297017
-L7_1.gadget_id = 70220026
-L8_1 = {}
-L8_1.x = 1178.112
-L8_1.y = 200.0
-L8_1.z = 134.271
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 3.876
-L8_1.y = 311.234
-L8_1.z = 351.577
-L7_1.rot = L8_1
-L7_1.level = 16
-L7_1.persistent = true
-L7_1.area_id = 5
-L8_1 = {}
-L8_1.config_id = 297018
-L8_1.gadget_id = 70300081
-L9_1 = {}
-L9_1.x = 1189.953
-L9_1.y = 199.749
-L9_1.z = 116.11
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 353.94
-L9_1.y = 36.984
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 16
-L8_1.persistent = true
-L8_1.area_id = 5
-L9_1 = {}
-L9_1.config_id = 297019
-L9_1.gadget_id = 70220035
-L10_1 = {}
-L10_1.x = 1181.256
-L10_1.y = 200.778
-L10_1.z = 130.093
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 9.788
-L10_1.y = 100.473
-L10_1.z = 14.913
-L9_1.rot = L10_1
-L9_1.level = 16
-L9_1.persistent = true
-L9_1.area_id = 5
-L10_1 = {}
-L10_1.config_id = 297020
-L10_1.gadget_id = 70220035
-L11_1 = {}
-L11_1.x = 1186.533
-L11_1.y = 200.31
-L11_1.z = 117.77
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 347.702
-L11_1.y = 0.401
-L11_1.z = 353.815
-L10_1.rot = L11_1
-L10_1.level = 16
-L10_1.persistent = true
-L10_1.area_id = 5
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 297006
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 40
-L3_1 = {}
-L3_1.x = 1180.665
-L3_1.y = 200.0
-L3_1.z = 124.648
-L2_1.pos = L3_1
-L2_1.area_id = 5
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1297003
-L2_1.name = "ANY_MONSTER_DIE_297003"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_MONSTER_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_MONSTER_DIE_297003"
-L2_1.action = "action_EVENT_ANY_MONSTER_DIE_297003"
-L3_1 = {}
-L3_1.config_id = 1297006
-L3_1.name = "ENTER_REGION_297006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = "1"
-L3_1.condition = "condition_EVENT_ENTER_REGION_297006"
-L3_1.action = "action_EVENT_ENTER_REGION_297006"
-L4_1 = {}
-L4_1.config_id = 1297007
-L4_1.name = "QUEST_FINISH_297007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_QUEST_FINISH
-L4_1.event = L5_1
-L4_1.source = "2100301"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_QUEST_FINISH_297007"
-L5_1 = {}
-L5_1.config_id = 1297008
-L5_1.name = "QUEST_FINISH_297008"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_QUEST_FINISH
-L5_1.event = L6_1
-L5_1.source = "2100302"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_QUEST_FINISH_297008"
-L6_1 = {}
-L6_1.config_id = 1297009
-L6_1.name = "QUEST_FINISH_297009"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_QUEST_FINISH
-L6_1.event = L7_1
-L6_1.source = "2100399"
-L6_1.condition = "condition_EVENT_QUEST_FINISH_297009"
-L6_1.action = "action_EVENT_QUEST_FINISH_297009"
-L7_1 = {}
-L7_1.config_id = 1297013
-L7_1.name = "GROUP_LOAD_297013"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GROUP_LOAD
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = ""
-L7_1.action = "action_EVENT_GROUP_LOAD_297013"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1297021
-L8_1.name = "ANY_MONSTER_DIE_297021"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_ANY_MONSTER_DIE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_ANY_MONSTER_DIE_297021"
-L8_1.action = "action_EVENT_ANY_MONSTER_DIE_297021"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1297022
-L9_1.name = "GROUP_LOAD_297022"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_GROUP_LOAD
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = ""
-L9_1.action = "action_EVENT_GROUP_LOAD_297022"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1297023
-L10_1.name = "QUEST_START_297023"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_QUEST_START
-L10_1.event = L11_1
-L10_1.source = "2100320"
-L10_1.condition = ""
-L10_1.action = "action_EVENT_QUEST_START_297023"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1297025
-L11_1.name = "QUEST_START_297025"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_QUEST_START
-L11_1.event = L12_1
-L11_1.source = "2100311"
-L11_1.condition = ""
-L11_1.action = "action_EVENT_QUEST_START_297025"
-L11_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "isAcceptQuest"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "isFindBridge"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "isDefeatEnemies"
-L4_1.value = 0
-L4_1.no_refresh = true
-L5_1 = {}
-L5_1.configId = 4
-L5_1.name = "isFinished"
-L5_1.value = 0
-L5_1.no_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 3
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_FINISH_297007"
-L5_1 = "QUEST_FINISH_297008"
-L6_1 = "QUEST_START_297025"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L2_1.ban_refresh = true
-L3_1 = {}
-L4_1 = {}
-L5_1 = 297001
-L6_1 = 297002
-L7_1 = 297004
-L8_1 = 297005
-L9_1 = 297010
-L10_1 = 297024
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 297011
-L6_1 = 297012
-L7_1 = 297014
-L8_1 = 297015
-L9_1 = 297016
-L10_1 = 297017
-L11_1 = 297018
-L12_1 = 297019
-L13_1 = 297020
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 297006
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ANY_MONSTER_DIE_297003"
-L6_1 = "ENTER_REGION_297006"
-L7_1 = "QUEST_FINISH_297007"
-L8_1 = "QUEST_FINISH_297008"
-L9_1 = "QUEST_FINISH_297009"
-L10_1 = "GROUP_LOAD_297013"
-L11_1 = "ANY_MONSTER_DIE_297021"
-L12_1 = "QUEST_START_297023"
-L13_1 = "QUEST_START_297025"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L3_1.ban_refresh = true
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "GROUP_LOAD_297022"
-L5_1[1] = L6_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L4_1.ban_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCount
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133102297
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 297001, monster_id = 21011201, pos = { x = 1186.828, y = 200.119, z = 125.869 }, rot = { x = 0.000, y = 113.786, z = 0.000 }, level = 18, drop_tag = "丘丘人", disableWander = true, area_id = 5 },
+	{ config_id = 297002, monster_id = 21011201, pos = { x = 1188.437, y = 200.171, z = 118.090 }, rot = { x = 9.555, y = 73.918, z = 345.225 }, level = 18, drop_tag = "丘丘人", disableWander = true, area_id = 5 },
+	{ config_id = 297004, monster_id = 21010601, pos = { x = 1179.459, y = 201.644, z = 128.157 }, rot = { x = 0.000, y = 116.557, z = 0.000 }, level = 18, drop_tag = "丘丘人", disableWander = true, area_id = 5 },
+	{ config_id = 297005, monster_id = 21010601, pos = { x = 1178.554, y = 201.624, z = 119.149 }, rot = { x = 0.000, y = 66.432, z = 0.000 }, level = 18, drop_tag = "丘丘人", disableWander = true, area_id = 5 },
+	{ config_id = 297010, monster_id = 21030401, pos = { x = 1174.810, y = 202.871, z = 120.137 }, rot = { x = 353.686, y = 42.366, z = 334.421 }, level = 18, drop_tag = "丘丘萨满", disableWander = true, area_id = 5 },
+	{ config_id = 297024, monster_id = 21020301, pos = { x = 1176.440, y = 203.366, z = 123.588 }, rot = { x = 0.000, y = 77.723, z = 0.000 }, level = 18, drop_tag = "丘丘暴徒", disableWander = true, pose_id = 401, area_id = 5 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 297011, gadget_id = 70211012, pos = { x = 1174.686, y = 203.681, z = 123.127 }, rot = { x = 7.103, y = 88.810, z = 0.323 }, level = 16, drop_tag = "战斗中级璃月", state = GadgetState.ChestLocked, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 5 },
+	{ config_id = 297012, gadget_id = 70220013, pos = { x = 1174.114, y = 200.695, z = 135.393 }, rot = { x = 17.425, y = 82.487, z = 348.921 }, level = 16, persistent = true, area_id = 5 },
+	{ config_id = 297014, gadget_id = 70300089, pos = { x = 1181.726, y = 201.058, z = 119.273 }, rot = { x = 350.887, y = 13.516, z = 352.408 }, level = 16, persistent = true, area_id = 5 },
+	{ config_id = 297015, gadget_id = 70300089, pos = { x = 1181.264, y = 201.682, z = 125.961 }, rot = { x = 347.846, y = 306.177, z = 347.066 }, level = 16, persistent = true, area_id = 5 },
+	{ config_id = 297016, gadget_id = 70300081, pos = { x = 1189.291, y = 199.376, z = 128.601 }, rot = { x = 3.684, y = 321.492, z = 359.860 }, level = 16, persistent = true, area_id = 5 },
+	{ config_id = 297017, gadget_id = 70220026, pos = { x = 1178.112, y = 200.000, z = 134.271 }, rot = { x = 3.876, y = 311.234, z = 351.577 }, level = 16, persistent = true, area_id = 5 },
+	{ config_id = 297018, gadget_id = 70300081, pos = { x = 1189.953, y = 199.749, z = 116.110 }, rot = { x = 353.940, y = 36.984, z = 0.000 }, level = 16, persistent = true, area_id = 5 },
+	{ config_id = 297019, gadget_id = 70220035, pos = { x = 1181.256, y = 200.778, z = 130.093 }, rot = { x = 9.788, y = 100.473, z = 14.913 }, level = 16, persistent = true, area_id = 5 },
+	{ config_id = 297020, gadget_id = 70220035, pos = { x = 1186.533, y = 200.310, z = 117.770 }, rot = { x = 347.702, y = 0.401, z = 353.815 }, level = 16, persistent = true, area_id = 5 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 297006, shape = RegionShape.SPHERE, radius = 40, pos = { x = 1180.665, y = 200.000, z = 124.648 }, area_id = 5 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1297003, name = "ANY_MONSTER_DIE_297003", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_297003", action = "action_EVENT_ANY_MONSTER_DIE_297003" },
+	{ config_id = 1297006, name = "ENTER_REGION_297006", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_297006", action = "action_EVENT_ENTER_REGION_297006" },
+	{ config_id = 1297007, name = "QUEST_FINISH_297007", event = EventType.EVENT_QUEST_FINISH, source = "2100301", condition = "", action = "action_EVENT_QUEST_FINISH_297007" },
+	{ config_id = 1297008, name = "QUEST_FINISH_297008", event = EventType.EVENT_QUEST_FINISH, source = "2100302", condition = "", action = "action_EVENT_QUEST_FINISH_297008" },
+	{ config_id = 1297009, name = "QUEST_FINISH_297009", event = EventType.EVENT_QUEST_FINISH, source = "2100399", condition = "condition_EVENT_QUEST_FINISH_297009", action = "action_EVENT_QUEST_FINISH_297009" },
+	{ config_id = 1297013, name = "GROUP_LOAD_297013", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_297013", trigger_count = 0 },
+	{ config_id = 1297021, name = "ANY_MONSTER_DIE_297021", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_297021", action = "action_EVENT_ANY_MONSTER_DIE_297021", trigger_count = 0 },
+	{ config_id = 1297022, name = "GROUP_LOAD_297022", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_297022", trigger_count = 0 },
+	{ config_id = 1297023, name = "QUEST_START_297023", event = EventType.EVENT_QUEST_START, source = "2100320", condition = "", action = "action_EVENT_QUEST_START_297023", trigger_count = 0 },
+	{ config_id = 1297025, name = "QUEST_START_297025", event = EventType.EVENT_QUEST_START, source = "2100311", condition = "", action = "action_EVENT_QUEST_START_297025", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "isAcceptQuest", value = 0, no_refresh = true },
+	{ config_id = 2, name = "isFindBridge", value = 0, no_refresh = true },
+	{ config_id = 3, name = "isDefeatEnemies", value = 0, no_refresh = true },
+	{ config_id = 4, name = "isFinished", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 3,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "QUEST_FINISH_297007", "QUEST_FINISH_297008", "QUEST_START_297025" },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 297001, 297002, 297004, 297005, 297010, 297024 },
+		gadgets = { 297011, 297012, 297014, 297015, 297016, 297017, 297018, 297019, 297020 },
+		regions = { 297006 },
+		triggers = { "ANY_MONSTER_DIE_297003", "ENTER_REGION_297006", "QUEST_FINISH_297007", "QUEST_FINISH_297008", "QUEST_FINISH_297009", "GROUP_LOAD_297013", "ANY_MONSTER_DIE_297021", "QUEST_START_297023", "QUEST_START_297025" },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_297022" },
+		rand_weight = 100,
+		ban_refresh = true
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_297003(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	-- 判断变量"isAcceptQuest"为1
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_297003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "defeat_with_quest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isDefeatEnemies"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 297011
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_297003(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "defeat_with_quest") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "isDefeatEnemies" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isDefeatEnemies", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 将configid为 297011 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 297011, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_297003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 297006 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_297006(context, evt)
+	if evt.param1 ~= 297006 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	-- 判断变量"isAcceptQuest"为1
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_297006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "find_bridge"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFindBridge"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_297006(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "find_bridge") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "isFindBridge" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isFindBridge", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_297006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_297007(context, evt)
+	-- 将本组内变量名为 "isAcceptQuest" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isAcceptQuest", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_297007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_297008(context, evt)
+	-- 将本组内变量名为 "isAcceptQuest" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isAcceptQuest", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_297008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_QUEST_FINISH_297009(context, evt)
+	-- 判断变量"isAcceptQuest"为1
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_QUEST_FINISH_297009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinished"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133102297
-  L5_2 = 3
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : goto_groupSuite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_297009(context, evt)
+	-- 将本组内变量名为 "isFinished" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isFinished", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- group调整group进度,只对非randSuite有效
+	if 0 ~= ScriptLib.GoToGroupSuite(context, 133102297, 3) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : goto_groupSuite")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_297009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 133102297
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupSuite
-    L3_2 = A0_2
-    L4_2 = 133102297
-    L2_2 = L2_2(L3_2, L4_2)
-    if L2_2 == 2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "isAcceptQuest"
-      L5_2 = 1
-      L2_2(L3_2, L4_2, L5_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "isDefeatEnemies"
-      L5_2 = 1
-      L2_2(L3_2, L4_2, L5_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "isFindBridge"
-      L5_2 = 1
-      L2_2(L3_2, L4_2, L5_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGadgetStateByConfigId
-      L3_2 = A0_2
-      L4_2 = 297011
-      L5_2 = GadgetState
-      L5_2 = L5_2.Default
-      L2_2 = L2_2(L3_2, L4_2, L5_2)
-      if 0 ~= L2_2 then
-        L2_2 = -1
-        return L2_2
-      end
-      L2_2 = ScriptLib
-      L2_2 = L2_2.AddQuestProgress
-      L3_2 = A0_2
-      L4_2 = "already_defeat"
-      L2_2(L3_2, L4_2)
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_297013(context, evt)
+				if  ScriptLib.GetGroupMonsterCountByGroupId(context, 133102297) == 0 and ScriptLib.GetGroupSuite(context, 133102297) == 2 then
+					ScriptLib.SetGroupVariableValue(context, "isAcceptQuest", 1)
+					ScriptLib.SetGroupVariableValue(context, "isDefeatEnemies",1)
+					ScriptLib.SetGroupVariableValue(context, "isFindBridge",1)
+					-- 将configid为 297011 的物件更改为状态 GadgetState.Default
+					if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 297011, GadgetState.Default) then
+						return -1
+			
+					end 
+					ScriptLib.AddQuestProgress(context, "already_defeat")
+			
+				end
+			
+				return 0
 end
-action_EVENT_GROUP_LOAD_297013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCount
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_297021(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_297021 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isDefeatEnemies"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 297011
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_297021(context, evt)
+	-- 将本组内变量名为 "isDefeatEnemies" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isDefeatEnemies", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 将configid为 297011 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 297011, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_297021 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 297011
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_297022(context, evt)
+	-- 将configid为 297011 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 297011, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_297022 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isDefeatEnemies"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 1 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddQuestProgress
-    L3_2 = A0_2
-    L4_2 = "already_defeat"
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_297023(context, evt)
+		-- 将本组内变量名为 "isAcceptQuest" 的变量设置为 1
+		ScriptLib.SetGroupVariableValue(context, "isAcceptQuest", 1)
+		if ScriptLib.GetGroupVariableValue(context, "isDefeatEnemies") == 1 then
+			ScriptLib.AddQuestProgress(context, "already_defeat")
+		end
+		
+		return 0
 end
-action_EVENT_QUEST_START_297023 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isDefeatEnemies"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 1 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddQuestProgress
-    L3_2 = A0_2
-    L4_2 = "already_defeat"
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_297025(context, evt)
+		-- 将本组内变量名为 "isAcceptQuest" 的变量设置为 1
+		ScriptLib.SetGroupVariableValue(context, "isAcceptQuest", 1)
+		if ScriptLib.GetGroupVariableValue(context, "isDefeatEnemies") == 1 then
+			ScriptLib.AddQuestProgress(context, "already_defeat")
+		end
+		
+		return 0
 end
-action_EVENT_QUEST_START_297025 = L1_1

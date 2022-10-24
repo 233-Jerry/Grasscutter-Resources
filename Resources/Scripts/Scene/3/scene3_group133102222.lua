@@ -1,77 +1,75 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 133102222
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 222001
-L2_1.gadget_id = 70217013
-L3_1 = {}
-L3_1.x = 1741.36
-L3_1.y = 275.962
-L3_1.z = 465.655
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.015
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 16
-L2_1.chest_drop_id = 21920015
-L2_1.drop_count = 1
-L2_1.isOneoff = true
-L2_1.persistent = true
-L2_1.area_id = 5
-L3_1 = {}
-L3_1.config_id = 222002
-L3_1.gadget_id = 70217013
-L4_1 = {}
-L4_1.x = 1687.696
-L4_1.y = 248.017
-L4_1.z = 623.144
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 16
-L3_1.chest_drop_id = 21920016
-L3_1.drop_count = 1
-L3_1.isOneoff = true
-L3_1.persistent = true
-L3_1.area_id = 5
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 222001
-L5_1 = 222002
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133102222
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	-- 道具141038
+	{ config_id = 222001, gadget_id = 70217013, pos = { x = 1741.360, y = 275.962, z = 465.655 }, rot = { x = 0.000, y = 0.015, z = 0.000 }, level = 16, chest_drop_id = 21920015, drop_count = 1, isOneoff = true, persistent = true, area_id = 5 },
+	-- 道具141039
+	{ config_id = 222002, gadget_id = 70217013, pos = { x = 1687.696, y = 248.017, z = 623.144 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 16, chest_drop_id = 21920016, drop_count = 1, isOneoff = true, persistent = true, area_id = 5 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 222001, 222002 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

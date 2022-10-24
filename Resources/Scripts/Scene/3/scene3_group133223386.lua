@@ -1,128 +1,101 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133223386
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 386001
-L3_1.gadget_id = 70950055
-L4_1 = {}
-L4_1.x = -6186.99
-L4_1.y = 221.519
-L4_1.z = -2929.736
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 8.443
-L4_1.y = 205.73
-L4_1.z = 3.666
-L3_1.rot = L4_1
-L3_1.level = 30
-L4_1 = GadgetState
-L4_1 = L4_1.Action01
-L3_1.state = L4_1
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 386002
-L4_1.gadget_id = 70950055
-L5_1 = {}
-L5_1.x = -6190.0
-L5_1.y = 221.991
-L5_1.z = -2926.188
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 7.321
-L5_1.y = 85.399
-L5_1.z = 9.779
-L4_1.rot = L5_1
-L4_1.level = 30
-L5_1 = GadgetState
-L5_1 = L5_1.Action02
-L4_1.state = L5_1
-L4_1.area_id = 18
-L5_1 = {}
-L5_1.config_id = 386003
-L5_1.gadget_id = 70950055
-L6_1 = {}
-L6_1.x = -6189.303
-L6_1.y = 222.279
-L6_1.z = -2920.291
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 7.246
-L6_1.y = 145.101
-L6_1.z = 3.537
-L5_1.rot = L6_1
-L5_1.level = 30
-L6_1 = GadgetState
-L6_1 = L6_1.Action03
-L5_1.state = L6_1
-L5_1.area_id = 18
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L1_1.gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1386007
-L3_1.name = "VARIABLE_CHANGE_386007"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_386007"
-L3_1.action = ""
-L2_1[1] = L3_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 3
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133223386
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 386001, gadget_id = 70950055, pos = { x = -6186.990, y = 221.519, z = -2929.736 }, rot = { x = 8.443, y = 205.730, z = 3.666 }, level = 30, state = GadgetState.Action01, area_id = 18 },
+		{ config_id = 386002, gadget_id = 70950055, pos = { x = -6190.000, y = 221.991, z = -2926.188 }, rot = { x = 7.321, y = 85.399, z = 9.779 }, level = 30, state = GadgetState.Action02, area_id = 18 },
+		{ config_id = 386003, gadget_id = 70950055, pos = { x = -6189.303, y = 222.279, z = -2920.291 }, rot = { x = 7.246, y = 145.101, z = 3.537 }, level = 30, state = GadgetState.Action03, area_id = 18 }
+	},
+	triggers = {
+		{ config_id = 1386007, name = "VARIABLE_CHANGE_386007", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_386007", action = "" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 3,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = 雷鸟雕像用suit,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

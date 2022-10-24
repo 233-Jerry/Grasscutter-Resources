@@ -1,255 +1,130 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133217279
-L1_1 = {}
-L1_1.gadget_Teleport_1 = 279001
-L1_1.gadget_Teleport_2 = 279002
-L1_1.gadget_Teleport_3 = 0
-L1_1.gadget_Teleport_4 = 0
-L1_1.pointarray_1 = 321700023
-L1_1.pointarray_2 = 0
-L1_1.pointarray_3 = 0
-L1_1.pointarray_4 = 0
-L1_1.gadget_TeleportOperator_1 = 279005
-L1_1.gadget_TeleportOperator_2 = 279006
-L1_1.gadget_TeleportOperator_3 = 0
-L1_1.gadget_TeleportOperator_4 = 0
-L1_1.group_ID = 133217279
-L1_1.pointarray_Rotate = 321700026
-L1_1.rotStep = 180
-L2_1 = {}
-L3_1 = {}
-L4_1 = L1_1.gadget_Teleport_1
-L5_1 = L1_1.gadget_Teleport_2
-L6_1 = L1_1.pointarray_1
-L7_1 = 10
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1[1] = L3_1
-connectInfo = L2_1
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 279001
-L4_1.gadget_id = 70950095
-L5_1 = {}
-L5_1.x = -4433.086
-L5_1.y = 267.163
-L5_1.z = -4207.67
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 280.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 2
-L4_1.persistent = true
-L4_1.is_use_point_array = true
-L4_1.area_id = 14
-L5_1 = {}
-L5_1.config_id = 279002
-L5_1.gadget_id = 70950095
-L6_1 = {}
-L6_1.x = -4575.115
-L6_1.y = 417.762
-L6_1.z = -4167.859
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 100.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 2
-L5_1.persistent = true
-L5_1.is_use_point_array = true
-L5_1.area_id = 14
-L6_1 = {}
-L6_1.config_id = 279005
-L6_1.gadget_id = 70950145
-L7_1 = {}
-L7_1.x = -4429.846
-L7_1.y = 90.0
-L7_1.z = -4208.083
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 337.984
-L7_1.y = 275.079
-L7_1.z = 353.171
-L6_1.rot = L7_1
-L6_1.level = 2
-L6_1.persistent = true
-L6_1.area_id = 14
-L7_1 = {}
-L7_1.config_id = 279006
-L7_1.gadget_id = 70950145
-L8_1 = {}
-L8_1.x = -4575.974
-L8_1.y = 90.0
-L8_1.z = -4167.645
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 104.657
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 2
-L7_1.persistent = true
-L7_1.area_id = 14
-L8_1 = {}
-L8_1.config_id = 279009
-L8_1.gadget_id = 70330114
-L9_1 = {}
-L9_1.x = -4433.162
-L9_1.y = 265.836
-L9_1.z = -4207.771
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 270.494
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 2
-L8_1.area_id = 14
-L9_1 = {}
-L9_1.config_id = 279010
-L9_1.gadget_id = 70330114
-L10_1 = {}
-L10_1.x = -4574.957
-L10_1.y = 418.644
-L10_1.z = -4167.869
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 91.214
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 2
-L9_1.area_id = 14
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 279015
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 1.5
-L5_1 = {}
-L5_1.x = -4432.829
-L5_1.y = 267.053
-L5_1.z = -4207.646
-L4_1.pos = L5_1
-L4_1.area_id = 14
-L5_1 = {}
-L5_1.config_id = 279016
-L6_1 = RegionShape
-L6_1 = L6_1.SPHERE
-L5_1.shape = L6_1
-L5_1.radius = 1.5
-L6_1 = {}
-L6_1.x = -4575.376
-L6_1.y = 417.793
-L6_1.z = -4167.839
-L5_1.pos = L6_1
-L5_1.area_id = 14
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1279003
-L4_1.name = "GADGET_CREATE_279003"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_CREATE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_CREATE_279003"
-L4_1.action = "action_EVENT_GADGET_CREATE_279003"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1279004
-L5_1.name = "TIME_AXIS_PASS_279004"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_TIME_AXIS_PASS
-L5_1.event = L6_1
-L5_1.source = "Start"
-L5_1.condition = "condition_EVENT_TIME_AXIS_PASS_279004"
-L5_1.action = "action_EVENT_TIME_AXIS_PASS_279004"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1279015
-L6_1.name = "ENTER_REGION_279015"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_ENTER_REGION
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_ENTER_REGION_279015"
-L6_1.action = "action_EVENT_ENTER_REGION_279015"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1279016
-L7_1.name = "ENTER_REGION_279016"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_ENTER_REGION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_ENTER_REGION_279016"
-L7_1.action = "action_EVENT_ENTER_REGION_279016"
-L7_1.trigger_count = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 2
-L2_1.end_suite = 1
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-L2_1 = require
-L3_1 = "BlackBoxPlay/TeleportHighway"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133217279
+}
+
+-- Trigger变量
+local defs = {
+	gadget_Teleport_1 = 279001,
+	gadget_Teleport_2 = 279002,
+	gadget_Teleport_3 = 0,
+	gadget_Teleport_4 = 0,
+	pointarray_1 = 321700023,
+	pointarray_2 = 0,
+	pointarray_3 = 0,
+	pointarray_4 = 0,
+	gadget_TeleportOperator_1 = 279005,
+	gadget_TeleportOperator_2 = 279006,
+	gadget_TeleportOperator_3 = 0,
+	gadget_TeleportOperator_4 = 0,
+	group_ID = 133217279,
+	pointarray_Rotate = 321700026,
+	rotStep = 180
+}
+
+-- DEFS_MISCS
+connectInfo = 
+{
+	{defs.gadget_Teleport_1,defs.gadget_Teleport_2,defs.pointarray_1,10}
+
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 279001, gadget_id = 70950095, pos = { x = -4433.086, y = 267.163, z = -4207.670 }, rot = { x = 0.000, y = 280.000, z = 0.000 }, level = 2, persistent = true, is_use_point_array = true, area_id = 14 },
+		{ config_id = 279002, gadget_id = 70950095, pos = { x = -4575.115, y = 417.762, z = -4167.859 }, rot = { x = 0.000, y = 100.000, z = 0.000 }, level = 2, persistent = true, is_use_point_array = true, area_id = 14 },
+		{ config_id = 279005, gadget_id = 70950145, pos = { x = -4429.846, y = 90.000, z = -4208.083 }, rot = { x = 337.984, y = 275.079, z = 353.171 }, level = 2, persistent = true, area_id = 14 },
+		{ config_id = 279006, gadget_id = 70950145, pos = { x = -4575.974, y = 90.000, z = -4167.645 }, rot = { x = 0.000, y = 104.657, z = 0.000 }, level = 2, persistent = true, area_id = 14 },
+		{ config_id = 279009, gadget_id = 70330114, pos = { x = -4433.162, y = 265.836, z = -4207.771 }, rot = { x = 0.000, y = 270.494, z = 0.000 }, level = 2, area_id = 14 },
+		{ config_id = 279010, gadget_id = 70330114, pos = { x = -4574.957, y = 418.644, z = -4167.869 }, rot = { x = 0.000, y = 91.214, z = 0.000 }, level = 2, area_id = 14 }
+	},
+	regions = {
+		{ config_id = 279015, shape = RegionShape.SPHERE, radius = 1.5, pos = { x = -4432.829, y = 267.053, z = -4207.646 }, area_id = 14 },
+		{ config_id = 279016, shape = RegionShape.SPHERE, radius = 1.5, pos = { x = -4575.376, y = 417.793, z = -4167.839 }, area_id = 14 }
+	},
+	triggers = {
+		{ config_id = 1279003, name = "GADGET_CREATE_279003", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_279003", action = "action_EVENT_GADGET_CREATE_279003", trigger_count = 0 },
+		{ config_id = 1279004, name = "TIME_AXIS_PASS_279004", event = EventType.EVENT_TIME_AXIS_PASS, source = "Start", condition = "condition_EVENT_TIME_AXIS_PASS_279004", action = "action_EVENT_TIME_AXIS_PASS_279004", trigger_count = 0 },
+		{ config_id = 1279015, name = "ENTER_REGION_279015", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_279015", action = "action_EVENT_ENTER_REGION_279015", trigger_count = 0 },
+		{ config_id = 1279016, name = "ENTER_REGION_279016", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_279016", action = "action_EVENT_ENTER_REGION_279016", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 2,
+	end_suite = 1,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "BlackBoxPlay/TeleportHighway"

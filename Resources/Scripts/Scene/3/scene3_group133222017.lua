@@ -1,284 +1,130 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133222017
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 17004
-L2_1.monster_id = 25010301
-L3_1 = {}
-L3_1.x = -4405.941
-L3_1.y = 200.578
-L3_1.z = -4213.304
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 166.519
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 30
-L2_1.drop_tag = "\231\155\151\229\174\157\229\155\162"
-L2_1.climate_area_id = 10
-L2_1.area_id = 14
-L3_1 = {}
-L3_1.config_id = 17005
-L3_1.monster_id = 25010301
-L4_1 = {}
-L4_1.x = -4411.052
-L4_1.y = 200.42
-L4_1.z = -4218.733
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 89.262
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.drop_tag = "\231\155\151\229\174\157\229\155\162"
-L3_1.climate_area_id = 10
-L3_1.area_id = 14
-L4_1 = {}
-L4_1.config_id = 17006
-L4_1.monster_id = 25010301
-L5_1 = {}
-L5_1.x = -4398.793
-L5_1.y = 200.46
-L5_1.z = -4227.866
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 322.067
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.drop_tag = "\231\155\151\229\174\157\229\155\162"
-L4_1.climate_area_id = 10
-L4_1.area_id = 14
-L5_1 = {}
-L5_1.config_id = 17007
-L5_1.monster_id = 25030201
-L6_1 = {}
-L6_1.x = -4403.229
-L6_1.y = 200.242
-L6_1.z = -4218.387
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 99.634
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.drop_tag = "\231\155\151\229\174\157\229\155\162"
-L5_1.disableWander = true
-L5_1.pose_id = 9003
-L5_1.climate_area_id = 10
-L5_1.area_id = 14
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 17002
-L2_1.gadget_id = 70211002
-L3_1 = {}
-L3_1.x = -4411.645
-L3_1.y = 201.947
-L3_1.z = -4222.27
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 350.306
-L3_1.y = 50.031
-L3_1.z = 359.91
-L2_1.rot = L3_1
-L2_1.level = 26
-L2_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\231\168\187\229\166\187"
-L3_1 = GadgetState
-L3_1 = L3_1.ChestLocked
-L2_1.state = L3_1
-L2_1.isOneoff = true
-L2_1.persistent = true
-L3_1 = {}
-L3_1.name = "chest"
-L3_1.exp = 1
-L2_1.explore = L3_1
-L2_1.area_id = 14
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1017003
-L2_1.name = "ANY_MONSTER_DIE_17003"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_MONSTER_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_MONSTER_DIE_17003"
-L2_1.action = "action_EVENT_ANY_MONSTER_DIE_17003"
-L3_1 = {}
-L3_1.config_id = 1017008
-L3_1.name = "MONSTER_BATTLE_17008"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_MONSTER_BATTLE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_MONSTER_BATTLE_17008"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 17001
-L3_1.monster_id = 25100101
-L4_1 = {}
-L4_1.x = -4389.669
-L4_1.y = 201.425
-L4_1.z = -4228.224
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 279.625
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.drop_tag = "\233\171\152\233\152\182\230\173\166\229\163\171"
-L3_1.pose_id = 1001
-L3_1.climate_area_id = 10
-L3_1.area_id = 14
-L4_1 = {}
-L4_1.config_id = 17009
-L4_1.monster_id = 25100201
-L5_1 = {}
-L5_1.x = -4400.893
-L5_1.y = 200.311
-L5_1.z = -4233.522
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 349.352
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.drop_tag = "\233\171\152\233\152\182\230\173\166\229\163\171"
-L4_1.pose_id = 1001
-L4_1.climate_area_id = 10
-L4_1.area_id = 14
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.monsters = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = 17007
-L3_1[1] = L4_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 17002
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ANY_MONSTER_DIE_17003"
-L5_1 = "MONSTER_BATTLE_17008"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 17004
-L6_1 = 17005
-L7_1 = 17006
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCount
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133222017
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 17004, monster_id = 25010301, pos = { x = -4405.941, y = 200.578, z = -4213.304 }, rot = { x = 0.000, y = 166.519, z = 0.000 }, level = 30, drop_tag = "盗宝团", climate_area_id = 10, area_id = 14 },
+	{ config_id = 17005, monster_id = 25010301, pos = { x = -4411.052, y = 200.420, z = -4218.733 }, rot = { x = 0.000, y = 89.262, z = 0.000 }, level = 30, drop_tag = "盗宝团", climate_area_id = 10, area_id = 14 },
+	{ config_id = 17006, monster_id = 25010301, pos = { x = -4398.793, y = 200.460, z = -4227.866 }, rot = { x = 0.000, y = 322.067, z = 0.000 }, level = 30, drop_tag = "盗宝团", climate_area_id = 10, area_id = 14 },
+	{ config_id = 17007, monster_id = 25030201, pos = { x = -4403.229, y = 200.242, z = -4218.387 }, rot = { x = 0.000, y = 99.634, z = 0.000 }, level = 30, drop_tag = "盗宝团", disableWander = true, pose_id = 9003, climate_area_id = 10, area_id = 14 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 17002, gadget_id = 70211002, pos = { x = -4411.645, y = 201.947, z = -4222.270 }, rot = { x = 350.306, y = 50.031, z = 359.910 }, level = 26, drop_tag = "战斗低级稻妻", state = GadgetState.ChestLocked, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 14 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1017003, name = "ANY_MONSTER_DIE_17003", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_17003", action = "action_EVENT_ANY_MONSTER_DIE_17003" },
+	{ config_id = 1017008, name = "MONSTER_BATTLE_17008", event = EventType.EVENT_MONSTER_BATTLE, source = "", condition = "", action = "action_EVENT_MONSTER_BATTLE_17008" }
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	monsters = {
+		{ config_id = 17001, monster_id = 25100101, pos = { x = -4389.669, y = 201.425, z = -4228.224 }, rot = { x = 0.000, y = 279.625, z = 0.000 }, level = 30, drop_tag = "高阶武士", pose_id = 1001, climate_area_id = 10, area_id = 14 },
+		{ config_id = 17009, monster_id = 25100201, pos = { x = -4400.893, y = 200.311, z = -4233.522 }, rot = { x = 0.000, y = 349.352, z = 0.000 }, level = 30, drop_tag = "高阶武士", pose_id = 1001, climate_area_id = 10, area_id = 14 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 17007 },
+		gadgets = { 17002 },
+		regions = { },
+		triggers = { "ANY_MONSTER_DIE_17003", "MONSTER_BATTLE_17008" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 17004, 17005, 17006 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_17003(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_17003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 17002
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.MarkPlayerAction
-  L3_2 = A0_2
-  L4_2 = 4000
-  L5_2 = 3
-  L6_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : mark_playerAction"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_17003(context, evt)
+	-- 将configid为 17002 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 17002, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 运营数据埋点，匹配LD定义的规则使用
+	    if 0 ~= ScriptLib.MarkPlayerAction(context, 4000, 3, 1) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : mark_playerAction")
+	      return -1
+	    end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_17003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133222017
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_MONSTER_BATTLE_17008(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133222017, 2)
+	
+	return 0
 end
-action_EVENT_MONSTER_BATTLE_17008 = L1_1

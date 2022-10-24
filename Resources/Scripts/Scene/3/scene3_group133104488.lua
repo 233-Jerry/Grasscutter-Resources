@@ -1,1443 +1,429 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
-L0_1 = {}
-L0_1.group_id = 133104488
-L1_1 = {}
-L1_1.gadget_1 = 488006
-L1_1.gadget_2 = 488007
-L1_1.gadget_3 = 488008
-L1_1.gadget_4 = 488009
-L1_1.gadget_5 = 488010
-L1_1.gadget_6 = 488011
-L1_1.gadget_7 = 488012
-L1_1.gadget_8 = 488013
-L1_1.gadget_seal = 488002
-L1_1.gadget_switch = 488001
-L1_1.isInital = 0
-L1_1.switch_type = 1
-L1_1.total_count = 6
-L1_1.correct_count = 3
-L1_1.reset_count = 4
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 488001
-L3_1.gadget_id = 70360028
-L4_1 = {}
-L4_1.x = 117.623
-L4_1.y = 202.448
-L4_1.z = 542.649
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 19
-L3_1.persistent = true
-L3_1.area_id = 9
-L4_1 = {}
-L4_1.config_id = 488002
-L4_1.gadget_id = 70800021
-L5_1 = {}
-L5_1.x = 105.7
-L5_1.y = 202.3
-L5_1.z = 527.5
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 19
-L4_1.persistent = true
-L4_1.area_id = 9
-L5_1 = {}
-L5_1.config_id = 488006
-L5_1.gadget_id = 70900007
-L6_1 = {}
-L6_1.x = 95.031
-L6_1.y = 201.673
-L6_1.z = 536.253
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 359.761
-L6_1.y = 0.0
-L6_1.z = 359.894
-L5_1.rot = L6_1
-L5_1.level = 19
-L6_1 = GadgetState
-L6_1 = L6_1.GearStop
-L5_1.state = L6_1
-L5_1.persistent = true
-L5_1.area_id = 9
-L6_1 = {}
-L6_1.config_id = 488007
-L6_1.gadget_id = 70900007
-L7_1 = {}
-L7_1.x = 93.027
-L7_1.y = 201.759
-L7_1.z = 522.089
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 358.02
-L7_1.y = 0.028
-L7_1.z = 358.613
-L6_1.rot = L7_1
-L6_1.level = 19
-L7_1 = GadgetState
-L7_1 = L7_1.GearStop
-L6_1.state = L7_1
-L6_1.persistent = true
-L6_1.area_id = 9
-L7_1 = {}
-L7_1.config_id = 488008
-L7_1.gadget_id = 70900007
-L8_1 = {}
-L8_1.x = 104.543
-L8_1.y = 201.762
-L8_1.z = 513.593
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.106
-L8_1.y = 0.0
-L8_1.z = 359.817
-L7_1.rot = L8_1
-L7_1.level = 19
-L8_1 = GadgetState
-L8_1 = L8_1.GearStop
-L7_1.state = L8_1
-L7_1.persistent = true
-L7_1.area_id = 9
-L8_1 = {}
-L8_1.config_id = 488009
-L8_1.gadget_id = 70900007
-L9_1 = {}
-L9_1.x = 116.931
-L9_1.y = 201.724
-L9_1.z = 519.47
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.961
-L9_1.y = 359.988
-L9_1.z = 358.599
-L8_1.rot = L9_1
-L8_1.level = 19
-L9_1 = GadgetState
-L9_1 = L9_1.GearStop
-L8_1.state = L9_1
-L8_1.persistent = true
-L8_1.area_id = 9
-L9_1 = {}
-L9_1.config_id = 488010
-L9_1.gadget_id = 70900007
-L10_1 = {}
-L10_1.x = 118.303
-L10_1.y = 201.683
-L10_1.z = 532.877
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.183
-L10_1.y = 0.0
-L10_1.z = 0.106
-L9_1.rot = L10_1
-L9_1.level = 19
-L10_1 = GadgetState
-L10_1 = L10_1.GearStop
-L9_1.state = L10_1
-L9_1.persistent = true
-L9_1.area_id = 9
-L10_1 = {}
-L10_1.config_id = 488011
-L10_1.gadget_id = 70900007
-L11_1 = {}
-L11_1.x = 107.989
-L11_1.y = 201.736
-L11_1.z = 540.937
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.32
-L11_1.y = 0.002
-L11_1.z = 0.831
-L10_1.rot = L11_1
-L10_1.level = 19
-L11_1 = GadgetState
-L11_1 = L11_1.GearStop
-L10_1.state = L11_1
-L10_1.persistent = true
-L10_1.area_id = 9
-L11_1 = {}
-L11_1.config_id = 488012
-L11_1.gadget_id = 70900007
-L12_1 = {}
-L12_1.x = 136.665
-L12_1.y = 201.553
-L12_1.z = 561.677
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.426
-L12_1.y = 0.0
-L12_1.z = 0.116
-L11_1.rot = L12_1
-L11_1.level = 19
-L12_1 = GadgetState
-L12_1 = L12_1.GearStop
-L11_1.state = L12_1
-L11_1.persistent = true
-L11_1.area_id = 9
-L12_1 = {}
-L12_1.config_id = 488013
-L12_1.gadget_id = 70900007
-L13_1 = {}
-L13_1.x = 119.744
-L13_1.y = 201.551
-L13_1.z = 565.614
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 359.192
-L13_1.y = 359.971
-L13_1.z = 4.105
-L12_1.rot = L13_1
-L12_1.level = 19
-L13_1 = GadgetState
-L13_1 = L13_1.GearStop
-L12_1.state = L13_1
-L12_1.persistent = true
-L12_1.area_id = 9
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1488003
-L3_1.name = "GADGET_CREATE_488003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_CREATE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_CREATE_488003"
-L3_1.action = "action_EVENT_GADGET_CREATE_488003"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1488014
-L4_1.name = "SELECT_OPTION_488014"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SELECT_OPTION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SELECT_OPTION_488014"
-L4_1.action = "action_EVENT_SELECT_OPTION_488014"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1488015
-L5_1.name = "SELECT_OPTION_488015"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_SELECT_OPTION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_SELECT_OPTION_488015"
-L5_1.action = "action_EVENT_SELECT_OPTION_488015"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1488016
-L6_1.name = "GADGET_STATE_CHANGE_488016"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GADGET_STATE_CHANGE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_488016"
-L6_1.action = "action_EVENT_GADGET_STATE_CHANGE_488016"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1488017
-L7_1.name = "VARIABLE_CHANGE_488017"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_VARIABLE_CHANGE
-L7_1.event = L8_1
-L7_1.source = "activeCount"
-L7_1.condition = "condition_EVENT_VARIABLE_CHANGE_488017"
-L7_1.action = "action_EVENT_VARIABLE_CHANGE_488017"
-L7_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "isActive"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "incorrect"
-L4_1.value = 0
-L4_1.no_refresh = true
-L5_1 = {}
-L5_1.configId = 3
-L5_1.name = "correct"
-L5_1.value = 0
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 4
-L6_1.name = "activeCount"
-L6_1.value = 0
-L6_1.no_refresh = true
-L7_1 = {}
-L7_1.configId = 5
-L7_1.name = "isFinished"
-L7_1.value = 0
-L7_1.no_refresh = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 2
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 488001
-L6_1 = 488002
-L7_1 = 488006
-L8_1 = 488007
-L9_1 = 488008
-L10_1 = 488009
-L11_1 = 488010
-L12_1 = 488011
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_CREATE_488003"
-L6_1 = "SELECT_OPTION_488014"
-L7_1 = "SELECT_OPTION_488015"
-L8_1 = "GADGET_STATE_CHANGE_488016"
-L9_1 = "VARIABLE_CHANGE_488017"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L3_1.ban_refresh = true
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 488002
-L7_1 = 488006
-L8_1 = 488007
-L9_1 = 488008
-L10_1 = 488009
-L11_1 = 488010
-L12_1 = 488011
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L5_1[7] = L12_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "GADGET_CREATE_488003"
-L5_1[1] = L6_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L4_1.ban_refresh = true
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L8_1 = 488012
-L9_1 = 488013
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 488001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133104488
+}
+
+-- Trigger变量
+local defs = {
+	gadget_1 = 488006,
+	gadget_2 = 488007,
+	gadget_3 = 488008,
+	gadget_4 = 488009,
+	gadget_5 = 488010,
+	gadget_6 = 488011,
+	gadget_7 = 488012,
+	gadget_8 = 488013,
+	gadget_seal = 488002,
+	gadget_switch = 488001,
+	isInital = 0,
+	switch_type = 1,
+	total_count = 6,
+	correct_count = 3,
+	reset_count = 4
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 488001, gadget_id = 70360028, pos = { x = 117.623, y = 202.448, z = 542.649 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 19, persistent = true, area_id = 9 },
+	{ config_id = 488002, gadget_id = 70800021, pos = { x = 105.700, y = 202.300, z = 527.500 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 19, persistent = true, area_id = 9 },
+	{ config_id = 488006, gadget_id = 70900007, pos = { x = 95.031, y = 201.673, z = 536.253 }, rot = { x = 359.761, y = 0.000, z = 359.894 }, level = 19, state = GadgetState.GearStop, persistent = true, area_id = 9 },
+	{ config_id = 488007, gadget_id = 70900007, pos = { x = 93.027, y = 201.759, z = 522.089 }, rot = { x = 358.020, y = 0.028, z = 358.613 }, level = 19, state = GadgetState.GearStop, persistent = true, area_id = 9 },
+	{ config_id = 488008, gadget_id = 70900007, pos = { x = 104.543, y = 201.762, z = 513.593 }, rot = { x = 0.106, y = 0.000, z = 359.817 }, level = 19, state = GadgetState.GearStop, persistent = true, area_id = 9 },
+	{ config_id = 488009, gadget_id = 70900007, pos = { x = 116.931, y = 201.724, z = 519.470 }, rot = { x = 0.961, y = 359.988, z = 358.599 }, level = 19, state = GadgetState.GearStop, persistent = true, area_id = 9 },
+	{ config_id = 488010, gadget_id = 70900007, pos = { x = 118.303, y = 201.683, z = 532.877 }, rot = { x = 0.183, y = 0.000, z = 0.106 }, level = 19, state = GadgetState.GearStop, persistent = true, area_id = 9 },
+	{ config_id = 488011, gadget_id = 70900007, pos = { x = 107.989, y = 201.736, z = 540.937 }, rot = { x = 0.320, y = 0.002, z = 0.831 }, level = 19, state = GadgetState.GearStop, persistent = true, area_id = 9 },
+	{ config_id = 488012, gadget_id = 70900007, pos = { x = 136.665, y = 201.553, z = 561.677 }, rot = { x = 0.426, y = 0.000, z = 0.116 }, level = 19, state = GadgetState.GearStop, persistent = true, area_id = 9 },
+	{ config_id = 488013, gadget_id = 70900007, pos = { x = 119.744, y = 201.551, z = 565.614 }, rot = { x = 359.192, y = 359.971, z = 4.105 }, level = 19, state = GadgetState.GearStop, persistent = true, area_id = 9 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1488003, name = "GADGET_CREATE_488003", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_488003", action = "action_EVENT_GADGET_CREATE_488003", trigger_count = 0 },
+	{ config_id = 1488014, name = "SELECT_OPTION_488014", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_488014", action = "action_EVENT_SELECT_OPTION_488014", trigger_count = 0 },
+	{ config_id = 1488015, name = "SELECT_OPTION_488015", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_488015", action = "action_EVENT_SELECT_OPTION_488015", trigger_count = 0 },
+	{ config_id = 1488016, name = "GADGET_STATE_CHANGE_488016", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_488016", action = "action_EVENT_GADGET_STATE_CHANGE_488016", trigger_count = 0 },
+	{ config_id = 1488017, name = "VARIABLE_CHANGE_488017", event = EventType.EVENT_VARIABLE_CHANGE, source = "activeCount", condition = "condition_EVENT_VARIABLE_CHANGE_488017", action = "action_EVENT_VARIABLE_CHANGE_488017", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "isActive", value = 0, no_refresh = true },
+	{ config_id = 2, name = "incorrect", value = 0, no_refresh = true },
+	{ config_id = 3, name = "correct", value = 0, no_refresh = true },
+	{ config_id = 4, name = "activeCount", value = 0, no_refresh = true },
+	{ config_id = 5, name = "isFinished", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 488001, 488002, 488006, 488007, 488008, 488009, 488010, 488011 },
+		regions = { },
+		triggers = { "GADGET_CREATE_488003", "SELECT_OPTION_488014", "SELECT_OPTION_488015", "GADGET_STATE_CHANGE_488016", "VARIABLE_CHANGE_488017" },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { 488002, 488006, 488007, 488008, 488009, 488010, 488011 },
+		regions = { },
+		triggers = { "GADGET_CREATE_488003" },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 3,
+		-- description = suite_3,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = ,
+		monsters = { },
+		gadgets = { 488012, 488013 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_488003(context, evt)
+	if 488001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_488003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isActive"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetWorktopOptionsByGroupId
-    L3_2 = A0_2
-    L4_2 = 133104488
-    L5_2 = 488001
-    L6_2 = {}
-    L7_2 = 7
-    L6_2[1] = L7_2
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L1_1.isInital = 1
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "isFinished"
-    L5_2 = 0
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "activeCount"
-    L5_2 = 0
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "correct"
-    L5_2 = 0
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "incorrect"
-    L5_2 = 0
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_1
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStop
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_2
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStop
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_3
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStop
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_4
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStop
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_5
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStop
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_6
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStop
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_7
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStop
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_8
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStop
-    L2_2(L3_2, L4_2, L5_2)
-    L1_1.isInital = 0
-  else
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "isActive"
-    L2_2 = L2_2(L3_2, L4_2)
-    if L2_2 == 1 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "isFinished"
-      L2_2 = L2_2(L3_2, L4_2)
-      if L2_2 == 1 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = 488001
-        L5_2 = GadgetState
-        L5_2 = L5_2.GearStart
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = L1_1.gadget_1
-        L5_2 = GadgetState
-        L5_2 = L5_2.GearStart
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = L1_1.gadget_2
-        L5_2 = GadgetState
-        L5_2 = L5_2.GearStart
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = L1_1.gadget_3
-        L5_2 = GadgetState
-        L5_2 = L5_2.GearStart
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = L1_1.gadget_4
-        L5_2 = GadgetState
-        L5_2 = L5_2.GearStart
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = L1_1.gadget_5
-        L5_2 = GadgetState
-        L5_2 = L5_2.GearStart
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = L1_1.gadget_6
-        L5_2 = GadgetState
-        L5_2 = L5_2.GearStart
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = L1_1.gadget_7
-        L5_2 = GadgetState
-        L5_2 = L5_2.GearStart
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = L1_1.gadget_8
-        L5_2 = GadgetState
-        L5_2 = L5_2.GearStart
-        L2_2(L3_2, L4_2, L5_2)
-      else
-        L2_2 = ScriptLib
-        L2_2 = L2_2.GetGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "isFinished"
-        L2_2 = L2_2(L3_2, L4_2)
-        if L2_2 == 0 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = 488001
-          L5_2 = GadgetState
-          L5_2 = L5_2.GearStart
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetWorktopOptionsByGroupId
-          L3_2 = A0_2
-          L4_2 = 133104488
-          L5_2 = 488001
-          L6_2 = {}
-          L7_2 = 171
-          L6_2[1] = L7_2
-          L2_2(L3_2, L4_2, L5_2, L6_2)
-          L1_1.isInital = 1
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGroupVariableValue
-          L3_2 = A0_2
-          L4_2 = "isFinished"
-          L5_2 = 0
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGroupVariableValue
-          L3_2 = A0_2
-          L4_2 = "activeCount"
-          L5_2 = 0
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGroupVariableValue
-          L3_2 = A0_2
-          L4_2 = "correct"
-          L5_2 = 0
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGroupVariableValue
-          L3_2 = A0_2
-          L4_2 = "incorrect"
-          L5_2 = 0
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = L1_1.gadget_1
-          L5_2 = GadgetState
-          L5_2 = L5_2.Default
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = L1_1.gadget_2
-          L5_2 = GadgetState
-          L5_2 = L5_2.Default
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = L1_1.gadget_3
-          L5_2 = GadgetState
-          L5_2 = L5_2.Default
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = L1_1.gadget_4
-          L5_2 = GadgetState
-          L5_2 = L5_2.Default
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = L1_1.gadget_5
-          L5_2 = GadgetState
-          L5_2 = L5_2.Default
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = L1_1.gadget_6
-          L5_2 = GadgetState
-          L5_2 = L5_2.Default
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = L1_1.gadget_7
-          L5_2 = GadgetState
-          L5_2 = L5_2.Default
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = L1_1.gadget_8
-          L5_2 = GadgetState
-          L5_2 = L5_2.Default
-          L2_2(L3_2, L4_2, L5_2)
-          L1_1.isInital = 0
-        end
-      end
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_488003(context, evt)
+					 if ScriptLib.GetGroupVariableValue(context, "isActive") == 0 then 
+					 	--没有激活开关
+					 	ScriptLib.SetWorktopOptionsByGroupId(context, 133104488, 488001, {7})
+					 	defs.isInital = 1
+					 		ScriptLib.SetGroupVariableValue(context, "isFinished",0)
+							ScriptLib.SetGroupVariableValue(context, "activeCount",0)
+							ScriptLib.SetGroupVariableValue(context, "correct",0)
+							ScriptLib.SetGroupVariableValue(context, "incorrect",0)
+						ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_1, GadgetState.GearStop)	
+						ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_2, GadgetState.GearStop)
+						ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_3, GadgetState.GearStop) 
+						ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_4, GadgetState.GearStop)	
+						ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_5, GadgetState.GearStop)
+						ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_6, GadgetState.GearStop)
+						ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_7, GadgetState.GearStop)
+						ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_8, GadgetState.GearStop)
+						defs.isInital = 0
+				
+					 elseif ScriptLib.GetGroupVariableValue(context, "isActive") == 1 then
+					 	--已经激活开关
+					 	if ScriptLib.GetGroupVariableValue(context, "isFinished") == 1 then
+					 		ScriptLib.SetGadgetStateByConfigId(context, 488001, GadgetState.GearStart)
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_1, GadgetState.GearStart)	
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_2, GadgetState.GearStart)
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_3, GadgetState.GearStart) 
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_4, GadgetState.GearStart)	
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_5, GadgetState.GearStart)
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_6, GadgetState.GearStart)
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_7, GadgetState.GearStart)
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_8, GadgetState.GearStart)
+					 	elseif ScriptLib.GetGroupVariableValue(context, "isFinished") == 0 then
+						 	ScriptLib.SetGadgetStateByConfigId(context, 488001, GadgetState.GearStart)
+				 			ScriptLib.SetWorktopOptionsByGroupId(context, 133104488, 488001, {171})
+				 			defs.isInital = 1
+				 			ScriptLib.SetGroupVariableValue(context, "isFinished",0)
+							ScriptLib.SetGroupVariableValue(context, "activeCount",0)
+							ScriptLib.SetGroupVariableValue(context, "correct",0)
+							ScriptLib.SetGroupVariableValue(context, "incorrect",0)
+							
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_1, GadgetState.Default)	
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_2, GadgetState.Default)
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_3, GadgetState.Default) 
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_4, GadgetState.Default)	
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_5, GadgetState.Default)
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_6, GadgetState.Default)
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_7, GadgetState.Default)
+							ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_8, GadgetState.Default)
+							defs.isInital = 0
+					 	end
+			
+			
+				
+				
+					 end
+				
+					return 0
 end
-action_EVENT_GADGET_CREATE_488003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 488001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 7 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_488014(context, evt)
+	-- 判断是gadgetid 488001 option_id 7
+	if 488001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 7 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_488014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104488
-  L5_2 = 488001
-  L6_2 = 7
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 31040601
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 488001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104488
-  L5_2 = 488001
-  L6_2 = {}
-  L7_2 = 171
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L1_1.isInital = 1
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isActive"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinished"
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "activeCount"
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "correct"
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "incorrect"
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_1
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_2
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_3
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_4
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_5
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_6
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_7
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_8
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2(L3_2, L4_2, L5_2)
-  L1_1.isInital = 0
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_488014(context, evt)
+				ScriptLib.DelWorktopOptionByGroupId(context, 133104488, 488001, 7)
+				ScriptLib.ShowReminder(context, 31040601)
+				ScriptLib.SetGadgetStateByConfigId(context, 488001, GadgetState.GearStart)
+				ScriptLib.SetWorktopOptionsByGroupId(context, 133104488, 488001, {171})
+				defs.isInital = 1
+				ScriptLib.SetGroupVariableValue(context, "isActive", 1)
+				ScriptLib.SetGroupVariableValue(context, "isFinished",0)
+				ScriptLib.SetGroupVariableValue(context, "activeCount",0)
+				ScriptLib.SetGroupVariableValue(context, "correct",0)
+				ScriptLib.SetGroupVariableValue(context, "incorrect",0)
+				ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_1, GadgetState.Default)	
+				ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_2, GadgetState.Default)
+				ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_3, GadgetState.Default) 
+				ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_4, GadgetState.Default)	
+				ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_5, GadgetState.Default)
+				ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_6, GadgetState.Default)
+				ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_7, GadgetState.Default)
+				ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_8, GadgetState.Default)
+				defs.isInital = 0
+				return 0
 end
-action_EVENT_SELECT_OPTION_488014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if 488001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 171 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinished"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_488015(context, evt)
+	-- 判断是gadgetid 488001 option_id 171
+	if 488001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 171 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"isFinished"为0
+	if ScriptLib.GetGroupVariableValue(context, "isFinished") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_488015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 31040601
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_488015(context, evt)
+	-- 调用提示id为 31040601 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 31040601) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_488015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = L1_1.isInital
-  if L2_2 == 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.gadget_1
-  L3_2 = A1_2.param2
-  if L2_2 ~= L3_2 then
-    L2_2 = L1_1.gadget_2
-    L3_2 = A1_2.param2
-    if L2_2 ~= L3_2 then
-      L2_2 = L1_1.gadget_3
-      L3_2 = A1_2.param2
-      if L2_2 ~= L3_2 then
-        L2_2 = L1_1.gadget_4
-        L3_2 = A1_2.param2
-        if L2_2 ~= L3_2 then
-          L2_2 = L1_1.gadget_5
-          L3_2 = A1_2.param2
-          if L2_2 ~= L3_2 then
-            L2_2 = L1_1.gadget_6
-            L3_2 = A1_2.param2
-            if L2_2 ~= L3_2 then
-              L2_2 = L1_1.gadget_7
-              L3_2 = A1_2.param2
-              if L2_2 ~= L3_2 then
-                L2_2 = L1_1.gadget_8
-                L3_2 = A1_2.param2
-                if L2_2 ~= L3_2 then
-                  L2_2 = false
-                  return L2_2
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinished"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_488016(context, evt)
+				if defs.isInital == 1 then
+					return false
+				end
+	
+				if defs.gadget_1 ~= evt.param2 and
+				defs.gadget_2 ~= evt.param2 and
+				defs.gadget_3 ~= evt.param2 and
+				defs.gadget_4 ~= evt.param2 and
+				defs.gadget_5 ~= evt.param2 and
+				defs.gadget_6 ~= evt.param2 and
+				defs.gadget_7 ~= evt.param2 and
+				defs.gadget_8 ~= evt.param2 then
+					return false
+				end
+			
+				if ScriptLib.GetGroupVariableValue(context, "isFinished") ~= 0 then
+					return false
+				end
+				
+				return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_488016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = GadgetState
-  L2_2 = L2_2.Default
-  L3_2 = A1_2.param1
-  if L2_2 == L3_2 then
-    L2_2 = L1_1.gadget_1
-    L3_2 = A1_2.param2
-    if L2_2 ~= L3_2 then
-      L2_2 = L1_1.gadget_2
-      L3_2 = A1_2.param2
-      if L2_2 ~= L3_2 then
-        L2_2 = L1_1.gadget_3
-        L3_2 = A1_2.param2
-        if L2_2 ~= L3_2 then
-          goto lbl_32
-        end
-      end
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "correct"
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 < L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ChangeGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "correct"
-      L5_2 = -1
-      L2_2(L3_2, L4_2, L5_2)
-      goto lbl_65
-      ::lbl_32::
-      L2_2 = L1_1.gadget_4
-      L3_2 = A1_2.param2
-      if L2_2 ~= L3_2 then
-        L2_2 = L1_1.gadget_5
-        L3_2 = A1_2.param2
-        if L2_2 ~= L3_2 then
-          L2_2 = L1_1.gadget_6
-          L3_2 = A1_2.param2
-          if L2_2 ~= L3_2 then
-            L2_2 = L1_1.gadget_7
-            L3_2 = A1_2.param2
-            if L2_2 ~= L3_2 then
-              L2_2 = L1_1.gadget_8
-              L3_2 = A1_2.param2
-              if L2_2 ~= L3_2 then
-                goto lbl_65
-              end
-            end
-          end
-        end
-      end
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "incorrect"
-      L2_2 = L2_2(L3_2, L4_2)
-      if 0 < L2_2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ChangeGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "incorrect"
-        L5_2 = -1
-        L2_2(L3_2, L4_2, L5_2)
-      end
-    end
-    ::lbl_65::
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "activeCount"
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 < L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ChangeGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "activeCount"
-      L5_2 = -1
-      L2_2(L3_2, L4_2, L5_2)
-    end
-  else
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      L2_2 = L1_1.gadget_1
-      L3_2 = A1_2.param2
-      if L2_2 ~= L3_2 then
-        L2_2 = L1_1.gadget_2
-        L3_2 = A1_2.param2
-        if L2_2 ~= L3_2 then
-          L2_2 = L1_1.gadget_3
-          L3_2 = A1_2.param2
-          if L2_2 ~= L3_2 then
-            goto lbl_111
-          end
-        end
-      end
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "correct"
-      L2_2 = L2_2(L3_2, L4_2)
-      L3_2 = L1_1.correct_count
-      if L2_2 < L3_2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ChangeGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "correct"
-        L5_2 = 1
-        L2_2(L3_2, L4_2, L5_2)
-        goto lbl_147
-        ::lbl_111::
-        L2_2 = L1_1.gadget_4
-        L3_2 = A1_2.param2
-        if L2_2 ~= L3_2 then
-          L2_2 = L1_1.gadget_5
-          L3_2 = A1_2.param2
-          if L2_2 ~= L3_2 then
-            L2_2 = L1_1.gadget_6
-            L3_2 = A1_2.param2
-            if L2_2 ~= L3_2 then
-              L2_2 = L1_1.gadget_7
-              L3_2 = A1_2.param2
-              if L2_2 ~= L3_2 then
-                L2_2 = L1_1.gadget_8
-                L3_2 = A1_2.param2
-                if L2_2 ~= L3_2 then
-                  goto lbl_147
-                end
-              end
-            end
-          end
-        end
-        L2_2 = ScriptLib
-        L2_2 = L2_2.GetGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "incorrect"
-        L2_2 = L2_2(L3_2, L4_2)
-        L3_2 = L1_1.total_count
-        L4_2 = L1_1.correct_count
-        L3_2 = L3_2 - L4_2
-        if L2_2 < L3_2 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.ChangeGroupVariableValue
-          L3_2 = A0_2
-          L4_2 = "incorrect"
-          L5_2 = 1
-          L2_2(L3_2, L4_2, L5_2)
-        end
-      end
-      ::lbl_147::
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "activeCount"
-      L2_2 = L2_2(L3_2, L4_2)
-      L3_2 = L1_1.reset_count
-      if L2_2 < L3_2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ChangeGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "activeCount"
-        L5_2 = 1
-        L2_2(L3_2, L4_2, L5_2)
-      end
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_488016(context, evt)
+				if GadgetState.Default == evt.param1 then --如果Gadget改变状态为Default
+						if defs.gadget_1 == evt.param2 or defs.gadget_2 == evt.param2 or defs.gadget_3 == evt.param2 then --如果改变的gadget是正确的其中一个
+								if ScriptLib.GetGroupVariableValue(context, "correct") > 0 then
+									ScriptLib.ChangeGroupVariableValue(context, "correct", -1)
+								end
+								
+						elseif defs.gadget_4 == evt.param2 or --如果改变的gadget是错误的其中一个
+							defs.gadget_5 == evt.param2 or
+							defs.gadget_6 == evt.param2 or
+							defs.gadget_7 == evt.param2 or
+							defs.gadget_8 == evt.param2 then
+								if ScriptLib.GetGroupVariableValue(context, "incorrect") > 0 then
+									ScriptLib.ChangeGroupVariableValue(context, "incorrect", -1)
+								end
+						end
+						if ScriptLib.GetGroupVariableValue(context, "activeCount") > 0 then --总的激活数量-1
+							ScriptLib.ChangeGroupVariableValue(context, "activeCount", -1)
+						end
+				elseif GadgetState.GearStart == evt.param1 then --如果Gadget改变状态为GearStart
+						if defs.gadget_1 == evt.param2 or defs.gadget_2 == evt.param2 or defs.gadget_3 == evt.param2 then --如果改变的gadget是正确的其中一个
+							if ScriptLib.GetGroupVariableValue(context, "correct") < defs.correct_count then
+								ScriptLib.ChangeGroupVariableValue(context, "correct", 1)
+							end
+						elseif defs.gadget_4 == evt.param2 or --如果改变的gadget是错误的其中一个
+							defs.gadget_5 == evt.param2 or
+							defs.gadget_6 == evt.param2 or
+							defs.gadget_7 == evt.param2 or
+							defs.gadget_8 == evt.param2 then
+							if ScriptLib.GetGroupVariableValue(context, "incorrect") < defs.total_count - defs.correct_count then
+								ScriptLib.ChangeGroupVariableValue(context, "incorrect", 1)
+							end
+						end
+						if ScriptLib.GetGroupVariableValue(context, "activeCount") < defs.reset_count then --总的激活数量+1，总激活数量不会超过reset_count
+							ScriptLib.ChangeGroupVariableValue(context, "activeCount", 1)
+						end
+				end
+				return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_488016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.isInital
-  if L2_2 == 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinished"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_488017(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+			if defs.isInital == 1 then
+				return false
+			end
+			
+			if ScriptLib.GetGroupVariableValue(context, "isFinished") ~= 0 then
+				return false
+			end
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_488017 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "correct"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "incorrect"
-  L3_2 = L3_2(L4_2, L5_2)
-  L4_2 = L1_1.switch_type
-  if L4_2 == 0 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.GetGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "activeCount"
-    L4_2 = L4_2(L5_2, L6_2)
-    if L4_2 == 3 and L2_2 == 3 and L3_2 == 0 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGroupVariableValue
-      L5_2 = A0_2
-      L6_2 = "isFinished"
-      L7_2 = 1
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_seal
-      L7_2 = GadgetState
-      L7_2 = L7_2.GearStart
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.DelWorktopOptionByGroupId
-      L5_2 = A0_2
-      L6_2 = 133104488
-      L7_2 = 488001
-      L8_2 = 171
-      L4_2(L5_2, L6_2, L7_2, L8_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_1
-      L7_2 = GadgetState
-      L7_2 = L7_2.GearStart
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_2
-      L7_2 = GadgetState
-      L7_2 = L7_2.GearStart
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_3
-      L7_2 = GadgetState
-      L7_2 = L7_2.GearStart
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_4
-      L7_2 = GadgetState
-      L7_2 = L7_2.GearStart
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_5
-      L7_2 = GadgetState
-      L7_2 = L7_2.GearStart
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_6
-      L7_2 = GadgetState
-      L7_2 = L7_2.GearStart
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_7
-      L7_2 = GadgetState
-      L7_2 = L7_2.GearStart
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_8
-      L7_2 = GadgetState
-      L7_2 = L7_2.GearStart
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.GoToGroupSuite
-      L5_2 = A0_2
-      L6_2 = 133104488
-      L7_2 = 2
-      L4_2(L5_2, L6_2, L7_2)
-    end
-  else
-    L4_2 = L1_1.switch_type
-    if L4_2 == 1 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.GetGroupVariableValue
-      L5_2 = A0_2
-      L6_2 = "activeCount"
-      L4_2 = L4_2(L5_2, L6_2)
-      if L4_2 == 3 then
-        if L2_2 == 3 and L3_2 == 0 then
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGroupVariableValue
-          L5_2 = A0_2
-          L6_2 = "isFinished"
-          L7_2 = 1
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_seal
-          L7_2 = GadgetState
-          L7_2 = L7_2.GearStart
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.DelWorktopOptionByGroupId
-          L5_2 = A0_2
-          L6_2 = 133104488
-          L7_2 = 488001
-          L8_2 = 171
-          L4_2(L5_2, L6_2, L7_2, L8_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_1
-          L7_2 = GadgetState
-          L7_2 = L7_2.GearStart
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_2
-          L7_2 = GadgetState
-          L7_2 = L7_2.GearStart
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_3
-          L7_2 = GadgetState
-          L7_2 = L7_2.GearStart
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_4
-          L7_2 = GadgetState
-          L7_2 = L7_2.GearStart
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_5
-          L7_2 = GadgetState
-          L7_2 = L7_2.GearStart
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_6
-          L7_2 = GadgetState
-          L7_2 = L7_2.GearStart
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_7
-          L7_2 = GadgetState
-          L7_2 = L7_2.GearStart
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_8
-          L7_2 = GadgetState
-          L7_2 = L7_2.GearStart
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.GoToGroupSuite
-          L5_2 = A0_2
-          L6_2 = 133104488
-          L7_2 = 2
-          L4_2(L5_2, L6_2, L7_2)
-        end
-      else
-        L4_2 = ScriptLib
-        L4_2 = L4_2.GetGroupVariableValue
-        L5_2 = A0_2
-        L6_2 = "activeCount"
-        L4_2 = L4_2(L5_2, L6_2)
-        if 4 <= L4_2 then
-          L4_2 = ScriptLib
-          L4_2 = L4_2.ShowReminder
-          L5_2 = A0_2
-          L6_2 = 31040602
-          L4_2(L5_2, L6_2)
-          L1_1.isInital = 1
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGroupVariableValue
-          L5_2 = A0_2
-          L6_2 = "isFinished"
-          L7_2 = 0
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGroupVariableValue
-          L5_2 = A0_2
-          L6_2 = "activeCount"
-          L7_2 = 0
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGroupVariableValue
-          L5_2 = A0_2
-          L6_2 = "correct"
-          L7_2 = 0
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGroupVariableValue
-          L5_2 = A0_2
-          L6_2 = "incorrect"
-          L7_2 = 0
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_1
-          L7_2 = GadgetState
-          L7_2 = L7_2.Default
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_2
-          L7_2 = GadgetState
-          L7_2 = L7_2.Default
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_3
-          L7_2 = GadgetState
-          L7_2 = L7_2.Default
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_4
-          L7_2 = GadgetState
-          L7_2 = L7_2.Default
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_5
-          L7_2 = GadgetState
-          L7_2 = L7_2.Default
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_6
-          L7_2 = GadgetState
-          L7_2 = L7_2.Default
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_7
-          L7_2 = GadgetState
-          L7_2 = L7_2.Default
-          L4_2(L5_2, L6_2, L7_2)
-          L4_2 = ScriptLib
-          L4_2 = L4_2.SetGadgetStateByConfigId
-          L5_2 = A0_2
-          L6_2 = L1_1.gadget_8
-          L7_2 = GadgetState
-          L7_2 = L7_2.Default
-          L4_2(L5_2, L6_2, L7_2)
-          L1_1.isInital = 0
-        end
-      end
-    end
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_488017(context, evt)
+	local x = ScriptLib.GetGroupVariableValue(context,"correct")
+								local y = ScriptLib.GetGroupVariableValue(context,"incorrect")
+							
+								if defs.switch_type == 0 then--0为火把类有两个可控状态的Gadget
+									if ScriptLib.GetGroupVariableValue(context, "activeCount") == 3 then
+											if x == 3 and y == 0 then
+												ScriptLib.SetGroupVariableValue(context, "isFinished",1)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_seal, GadgetState.GearStart)
+												ScriptLib.DelWorktopOptionByGroupId(context, 133104488, 488001, 171)
+												--ScriptLib.PlayCutScene(context, 133104488, 0)
+												
+			
+												
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_1, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_2, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_3, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_4, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_5, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_6, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_7, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_8, GadgetState.GearStart)
+												
+												--ScriptLib.RemoveEntityByConfigId(context, 133104488, EntityType.GADGET, 488002 )
+												ScriptLib.GoToGroupSuite(context,133104488, 2)
+											end 
+									end
+								elseif defs.switch_type ==1 then--1为元素机关类有1个不可控状态的Gadget
+									if ScriptLib.GetGroupVariableValue(context, "activeCount") == 3 then
+											if x == 3 and y == 0 then
+												ScriptLib.SetGroupVariableValue(context, "isFinished",1)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_seal, GadgetState.GearStart)
+												ScriptLib.DelWorktopOptionByGroupId(context, 133104488, 488001, 171)
+												--ScriptLib.PlayCutScene(context, 133104488, 0)
+												
+			
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_1, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_2, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_3, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_4, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_5, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_6, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_7, GadgetState.GearStart)
+												ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_8, GadgetState.GearStart)
+			
+												--ScriptLib.RemoveEntityByConfigId(context, 133104488, EntityType.GADGET, 488002 )
+												ScriptLib.GoToGroupSuite(context,133104488, 2)
+											end 
+											--如果为元素机关类，则到达4个最大激活数量后，会复位
+									elseif ScriptLib.GetGroupVariableValue(context, "activeCount") >= 4 then
+											ScriptLib.ShowReminder(context, 31040602)
+											defs.isInital = 1
+											ScriptLib.SetGroupVariableValue(context, "isFinished",0)
+											ScriptLib.SetGroupVariableValue(context, "activeCount",0)
+											ScriptLib.SetGroupVariableValue(context, "correct",0)
+											ScriptLib.SetGroupVariableValue(context, "incorrect",0)
+											
+											ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_1, GadgetState.Default)
+											ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_2, GadgetState.Default)
+											ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_3, GadgetState.Default)
+											ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_4, GadgetState.Default)
+											ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_5, GadgetState.Default)
+											ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_6, GadgetState.Default)
+											ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_7, GadgetState.Default)
+											ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_8, GadgetState.Default)
+											defs.isInital = 0
+									end	
+								end
+								return 0
 end
-action_EVENT_VARIABLE_CHANGE_488017 = L2_1

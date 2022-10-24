@@ -1,104 +1,83 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 133106546
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 546001
-L3_1.gadget_id = 70211101
-L4_1 = {}
-L4_1.x = -776.096
-L4_1.y = 101.875
-L4_1.z = 1794.059
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 346.889
-L4_1.y = 56.015
-L4_1.z = 14.937
-L3_1.rot = L4_1
-L3_1.level = 26
-L3_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\231\146\131\230\156\136"
-L4_1 = GadgetState
-L4_1 = L4_1.ChestLocked
-L3_1.state = L4_1
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.name = "chest"
-L4_1.exp = 1
-L3_1.explore = L4_1
-L3_1.area_id = 19
-L4_1 = {}
-L4_1.config_id = 546002
-L4_1.gadget_id = 70220024
-L5_1 = {}
-L5_1.x = -777.21
-L5_1.y = 102.888
-L5_1.z = 1792.505
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 355.836
-L5_1.y = 229.57
-L5_1.z = 1.953
-L4_1.rot = L5_1
-L4_1.level = 19
-L4_1.isOneoff = true
-L4_1.persistent = true
-L4_1.area_id = 19
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1546003
-L3_1.name = "ANY_GADGET_DIE_546003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_GADGET_DIE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ANY_GADGET_DIE_546003"
-L3_1.action = "action_EVENT_ANY_GADGET_DIE_546003"
-L4_1 = {}
-L4_1.config_id = 1546004
-L4_1.name = "GADGET_STATE_CHANGE_546004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_546004"
-L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_546004"
-L4_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133106546
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 546001, gadget_id = 70211101, pos = { x = -776.096, y = 101.875, z = 1794.059 }, rot = { x = 346.889, y = 56.015, z = 14.937 }, level = 26, drop_tag = "解谜低级璃月", state = GadgetState.ChestLocked, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 19 },
+		{ config_id = 546002, gadget_id = 70220024, pos = { x = -777.210, y = 102.888, z = 1792.505 }, rot = { x = 355.836, y = 229.570, z = 1.953 }, level = 19, isOneoff = true, persistent = true, area_id = 19 }
+	},
+	triggers = {
+		{ config_id = 1546003, name = "ANY_GADGET_DIE_546003", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_546003", action = "action_EVENT_ANY_GADGET_DIE_546003" },
+		{ config_id = 1546004, name = "GADGET_STATE_CHANGE_546004", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_546004", action = "action_EVENT_GADGET_STATE_CHANGE_546004", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

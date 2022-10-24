@@ -1,142 +1,98 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 133220086
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 86005
-L2_1.gadget_id = 71700288
-L3_1 = {}
-L3_1.x = -2410.125
-L3_1.y = 246.103
-L3_1.z = -4461.197
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 27
-L2_1.area_id = 11
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 86004
-L3_1.npc_id = 20229
-L4_1 = {}
-L4_1.x = -2410.049
-L4_1.y = 246.115
-L4_1.z = -4460.741
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 24.399
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.area_id = 11
-L2_1[1] = L3_1
-L1_1.npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 86002
-L3_1.gadget_id = 70210104
-L4_1 = {}
-L4_1.x = -2409.972
-L4_1.y = 244.506
-L4_1.z = -4459.485
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 26
-L3_1.chest_drop_id = 1000100
-L3_1.drop_count = 1
-L3_1.isOneoff = true
-L3_1.persistent = true
-L3_1.area_id = 11
-L2_1[1] = L3_1
-L1_1.gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 86001
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 4
-L4_1 = {}
-L4_1.x = -2411.31
-L4_1.y = 246.369
-L4_1.z = -4463.326
-L3_1.pos = L4_1
-L3_1.area_id = 11
-L2_1[1] = L3_1
-L1_1.regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1086001
-L3_1.name = "ENTER_REGION_86001"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_86001"
-L3_1.action = "action_EVENT_ENTER_REGION_86001"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1086003
-L4_1.name = "GADGET_STATE_CHANGE_86003"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_86003"
-L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_86003"
-L4_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 2
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 86005
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133220086
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 86005, gadget_id = 71700288, pos = { x = -2410.125, y = 246.103, z = -4461.197 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, area_id = 11 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	npcs = {
+		{ config_id = 86004, npc_id = 20229, pos = { x = -2410.049, y = 246.115, z = -4460.741 }, rot = { x = 0.000, y = 24.399, z = 0.000 }, area_id = 11 }
+	},
+	gadgets = {
+		{ config_id = 86002, gadget_id = 70210104, pos = { x = -2409.972, y = 244.506, z = -4459.485 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, chest_drop_id = 1000100, drop_count = 1, isOneoff = true, persistent = true, area_id = 11 }
+	},
+	regions = {
+		{ config_id = 86001, shape = RegionShape.SPHERE, radius = 4, pos = { x = -2411.310, y = 246.369, z = -4463.326 }, area_id = 11 }
+	},
+	triggers = {
+		{ config_id = 1086001, name = "ENTER_REGION_86001", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_86001", action = "action_EVENT_ENTER_REGION_86001", trigger_count = 0 },
+		{ config_id = 1086003, name = "GADGET_STATE_CHANGE_86003", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_86003", action = "action_EVENT_GADGET_STATE_CHANGE_86003", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 86005 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

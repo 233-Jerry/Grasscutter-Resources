@@ -1,542 +1,258 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133225272
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 272001
-L2_1.gadget_id = 70330114
-L3_1 = {}
-L3_1.x = -6229.516
-L3_1.y = 234.642
-L3_1.z = -2468.391
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 339.256
-L3_1.y = 236.277
-L3_1.z = 79.264
-L2_1.rot = L3_1
-L2_1.level = 33
-L2_1.persistent = true
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 272002
-L3_1.gadget_id = 70330114
-L4_1 = {}
-L4_1.x = -6243.277
-L4_1.y = 235.898
-L4_1.z = -2478.577
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 356.048
-L4_1.y = 250.918
-L4_1.z = 32.38
-L3_1.rot = L4_1
-L3_1.level = 33
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 272003
-L4_1.gadget_id = 70330114
-L5_1 = {}
-L5_1.x = -6219.352
-L5_1.y = 233.155
-L5_1.z = -2469.643
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 9.485
-L5_1.y = 164.954
-L5_1.z = 100.387
-L4_1.rot = L5_1
-L4_1.level = 33
-L4_1.area_id = 18
-L5_1 = {}
-L5_1.config_id = 272004
-L5_1.gadget_id = 70330114
-L6_1 = {}
-L6_1.x = -6212.072
-L6_1.y = 235.605
-L6_1.z = -2456.323
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 27.211
-L6_1.y = 107.962
-L6_1.z = 89.757
-L5_1.rot = L6_1
-L5_1.level = 33
-L5_1.area_id = 18
-L6_1 = {}
-L6_1.config_id = 272011
-L6_1.gadget_id = 70330114
-L7_1 = {}
-L7_1.x = -6193.405
-L7_1.y = 225.637
-L7_1.z = -2456.429
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 10.435
-L7_1.y = 80.776
-L7_1.z = 77.354
-L6_1.rot = L7_1
-L6_1.level = 33
-L6_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1272005
-L2_1.name = "VARIABLE_CHANGE_272005"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_VARIABLE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_VARIABLE_CHANGE_272005"
-L2_1.action = "action_EVENT_VARIABLE_CHANGE_272005"
-L3_1 = {}
-L3_1.config_id = 1272006
-L3_1.name = "GROUP_REFRESH_272006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GROUP_REFRESH
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GROUP_REFRESH_272006"
-L3_1.action = "action_EVENT_GROUP_REFRESH_272006"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1272007
-L4_1.name = "VARIABLE_CHANGE_272007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_VARIABLE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_VARIABLE_CHANGE_272007"
-L4_1.action = "action_EVENT_VARIABLE_CHANGE_272007"
-L5_1 = {}
-L5_1.config_id = 1272008
-L5_1.name = "GROUP_REFRESH_272008"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GROUP_REFRESH
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_GROUP_REFRESH_272008"
-L5_1.action = "action_EVENT_GROUP_REFRESH_272008"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1272009
-L6_1.name = "VARIABLE_CHANGE_272009"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_VARIABLE_CHANGE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_VARIABLE_CHANGE_272009"
-L6_1.action = "action_EVENT_VARIABLE_CHANGE_272009"
-L7_1 = {}
-L7_1.config_id = 1272010
-L7_1.name = "GROUP_REFRESH_272010"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GROUP_REFRESH
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GROUP_REFRESH_272010"
-L7_1.action = "action_EVENT_GROUP_REFRESH_272010"
-L7_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "group_1_progress"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "group_2_progress"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "group_3_progress"
-L4_1.value = 0
-L4_1.no_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 272001
-L6_1 = 272002
-L7_1 = 272003
-L8_1 = 272004
-L9_1 = 272011
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "VARIABLE_CHANGE_272005"
-L6_1 = "GROUP_REFRESH_272006"
-L7_1 = "VARIABLE_CHANGE_272007"
-L8_1 = "GROUP_REFRESH_272008"
-L9_1 = "VARIABLE_CHANGE_272009"
-L10_1 = "GROUP_REFRESH_272010"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "group_1_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133225272
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	-- 1
+	{ config_id = 272001, gadget_id = 70330114, pos = { x = -6229.516, y = 234.642, z = -2468.391 }, rot = { x = 339.256, y = 236.277, z = 79.264 }, level = 33, persistent = true, area_id = 18 },
+	-- 1
+	{ config_id = 272002, gadget_id = 70330114, pos = { x = -6243.277, y = 235.898, z = -2478.577 }, rot = { x = 356.048, y = 250.918, z = 32.380 }, level = 33, area_id = 18 },
+	-- 2
+	{ config_id = 272003, gadget_id = 70330114, pos = { x = -6219.352, y = 233.155, z = -2469.643 }, rot = { x = 9.485, y = 164.954, z = 100.387 }, level = 33, area_id = 18 },
+	-- 3
+	{ config_id = 272004, gadget_id = 70330114, pos = { x = -6212.072, y = 235.605, z = -2456.323 }, rot = { x = 27.211, y = 107.962, z = 89.757 }, level = 33, area_id = 18 },
+	-- 3
+	{ config_id = 272011, gadget_id = 70330114, pos = { x = -6193.405, y = 225.637, z = -2456.429 }, rot = { x = 10.435, y = 80.776, z = 77.354 }, level = 33, area_id = 18 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 清除组1
+	{ config_id = 1272005, name = "VARIABLE_CHANGE_272005", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_272005", action = "action_EVENT_VARIABLE_CHANGE_272005" },
+	{ config_id = 1272006, name = "GROUP_REFRESH_272006", event = EventType.EVENT_GROUP_REFRESH, source = "", condition = "condition_EVENT_GROUP_REFRESH_272006", action = "action_EVENT_GROUP_REFRESH_272006", trigger_count = 0 },
+	-- 清除组2
+	{ config_id = 1272007, name = "VARIABLE_CHANGE_272007", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_272007", action = "action_EVENT_VARIABLE_CHANGE_272007" },
+	{ config_id = 1272008, name = "GROUP_REFRESH_272008", event = EventType.EVENT_GROUP_REFRESH, source = "", condition = "condition_EVENT_GROUP_REFRESH_272008", action = "action_EVENT_GROUP_REFRESH_272008", trigger_count = 0 },
+	-- 清除组3
+	{ config_id = 1272009, name = "VARIABLE_CHANGE_272009", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_272009", action = "action_EVENT_VARIABLE_CHANGE_272009" },
+	{ config_id = 1272010, name = "GROUP_REFRESH_272010", event = EventType.EVENT_GROUP_REFRESH, source = "", condition = "condition_EVENT_GROUP_REFRESH_272010", action = "action_EVENT_GROUP_REFRESH_272010", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "group_1_progress", value = 0, no_refresh = true },
+	{ config_id = 2, name = "group_2_progress", value = 0, no_refresh = true },
+	{ config_id = 3, name = "group_3_progress", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 272001, 272002, 272003, 272004, 272011 },
+		regions = { },
+		triggers = { "VARIABLE_CHANGE_272005", "GROUP_REFRESH_272006", "VARIABLE_CHANGE_272007", "GROUP_REFRESH_272008", "VARIABLE_CHANGE_272009", "GROUP_REFRESH_272010" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_272005(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"group_1_progress"为2
+	if ScriptLib.GetGroupVariableValue(context, "group_1_progress") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_272005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133225272
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 272001
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133225272
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 272002
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_272005(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133225272, EntityType.GADGET, 272001 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133225272, EntityType.GADGET, 272002 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_272005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "group_1_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_REFRESH_272006(context, evt)
+	-- 判断变量"group_1_progress"为2
+	if ScriptLib.GetGroupVariableValue(context, "group_1_progress") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_REFRESH_272006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133225272
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 272001
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133225272
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 272002
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_REFRESH_272006(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133225272, EntityType.GADGET, 272001 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133225272, EntityType.GADGET, 272002 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GROUP_REFRESH_272006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "group_2_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_272007(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"group_2_progress"为2
+	if ScriptLib.GetGroupVariableValue(context, "group_2_progress") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_272007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133225272
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 272003
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_272007(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133225272, EntityType.GADGET, 272003 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_272007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "group_2_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_REFRESH_272008(context, evt)
+	-- 判断变量"group_2_progress"为2
+	if ScriptLib.GetGroupVariableValue(context, "group_2_progress") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_REFRESH_272008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133225272
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 272003
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_REFRESH_272008(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133225272, EntityType.GADGET, 272003 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GROUP_REFRESH_272008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "group_3_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_272009(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"group_3_progress"为2
+	if ScriptLib.GetGroupVariableValue(context, "group_3_progress") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_272009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133225272
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 272004
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133225272
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 272011
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_272009(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133225272, EntityType.GADGET, 272004 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133225272, EntityType.GADGET, 272011 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_272009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "group_3_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_REFRESH_272010(context, evt)
+	-- 判断变量"group_3_progress"为2
+	if ScriptLib.GetGroupVariableValue(context, "group_3_progress") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_REFRESH_272010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133225272
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 272004
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133225272
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 272011
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_REFRESH_272010(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133225272, EntityType.GADGET, 272004 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133225272, EntityType.GADGET, 272011 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GROUP_REFRESH_272010 = L1_1

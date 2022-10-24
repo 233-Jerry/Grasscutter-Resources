@@ -1,137 +1,92 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133001436
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1436001
-L2_1.name = "GROUP_LOAD_436001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GROUP_LOAD
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_GROUP_LOAD_436001"
-L2_1.trigger_count = -1
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 436002
-L3_1 = {}
-L3_1.x = 1392.336
-L3_1.y = 277.151
-L3_1.z = -1432.255
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.area_id = 2
-L3_1 = {}
-L3_1.config_id = 436003
-L4_1 = {}
-L4_1.x = 1399.601
-L4_1.y = 276.708
-L4_1.z = -1431.873
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.area_id = 2
-L4_1 = {}
-L4_1.config_id = 436004
-L5_1 = {}
-L5_1.x = 1393.196
-L5_1.y = 277.421
-L5_1.z = -1424.048
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.area_id = 2
-L5_1 = {}
-L5_1.config_id = 436005
-L6_1 = {}
-L6_1.x = 1385.036
-L6_1.y = 277.711
-L6_1.z = -1428.487
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.area_id = 2
-L6_1 = {}
-L6_1.config_id = 436006
-L7_1 = {}
-L7_1.x = 1393.512
-L7_1.y = 276.776
-L7_1.z = -1439.408
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.area_id = 2
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-points = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GROUP_LOAD_436001"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshHuntingClueGroup
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_hunting_clue_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133001436
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1436001, name = "GROUP_LOAD_436001", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_436001", trigger_count = -1 }
+}
+
+-- 点位
+points = {
+	{ config_id = 436002, pos = { x = 1392.336, y = 277.151, z = -1432.255 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 2 },
+	{ config_id = 436003, pos = { x = 1399.601, y = 276.708, z = -1431.873 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 2 },
+	{ config_id = 436004, pos = { x = 1393.196, y = 277.421, z = -1424.048 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 2 },
+	{ config_id = 436005, pos = { x = 1385.036, y = 277.711, z = -1428.487 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 2 },
+	{ config_id = 436006, pos = { x = 1393.512, y = 276.776, z = -1439.408 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 2 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_436001" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_436001(context, evt)
+	-- 需要在group创建时调用，该函数会通过context的groupid读取HuntingData表，来创建entity填充points
+	    if 0~= ScriptLib.RefreshHuntingClueGroup(context) then
+	    	ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_hunting_clue_group")
+	    	return -1
+		end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_436001 = L1_1

@@ -1,191 +1,112 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133225038
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 38001
-L2_1.monster_id = 20010501
-L3_1 = {}
-L3_1.x = -6257.387
-L3_1.y = 246.533
-L3_1.z = -2521.632
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 344.731
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 33
-L2_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L2_1.climate_area_id = 7
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 38003
-L3_1.monster_id = 20010501
-L4_1 = {}
-L4_1.x = -6260.792
-L4_1.y = 247.498
-L4_1.z = -2522.2
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 346.992
-L4_1.y = 289.616
-L4_1.z = 357.434
-L3_1.rot = L4_1
-L3_1.level = 33
-L3_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L3_1.climate_area_id = 7
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 38005
-L4_1.monster_id = 20010601
-L5_1 = {}
-L5_1.x = -6258.132
-L5_1.y = 246.794
-L5_1.z = -2518.965
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 33
-L4_1.drop_tag = "\229\164\167\229\143\178\232\142\177\229\167\134"
-L4_1.climate_area_id = 7
-L4_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 38004
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 5
-L3_1 = {}
-L3_1.x = -6255.798
-L3_1.y = 245.792
-L3_1.z = -2517.812
-L2_1.pos = L3_1
-L2_1.area_id = 18
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1038004
-L2_1.name = "ENTER_REGION_38004"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_38004"
-L2_1.action = "action_EVENT_ENTER_REGION_38004"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 38002
-L3_1.monster_id = 22040201
-L4_1 = {}
-L4_1.x = -6260.614
-L4_1.y = 248.027
-L4_1.z = -2515.716
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 134.962
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 33
-L3_1.drop_tag = "\229\133\189\229\162\131\229\185\188\229\133\189"
-L3_1.pose_id = 101
-L3_1.climate_area_id = 7
-L3_1.area_id = 18
-L2_1[1] = L3_1
-L1_1.monsters = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 38004
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_38004"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 38001
-L6_1 = 38003
-L7_1 = 38005
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 38004 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133225038
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 38001, monster_id = 20010501, pos = { x = -6257.387, y = 246.533, z = -2521.632 }, rot = { x = 0.000, y = 344.731, z = 0.000 }, level = 33, drop_tag = "史莱姆", climate_area_id = 7, area_id = 18 },
+	{ config_id = 38003, monster_id = 20010501, pos = { x = -6260.792, y = 247.498, z = -2522.200 }, rot = { x = 346.992, y = 289.616, z = 357.434 }, level = 33, drop_tag = "史莱姆", climate_area_id = 7, area_id = 18 },
+	{ config_id = 38005, monster_id = 20010601, pos = { x = -6258.132, y = 246.794, z = -2518.965 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, drop_tag = "大史莱姆", climate_area_id = 7, area_id = 18 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+	{ config_id = 38004, shape = RegionShape.SPHERE, radius = 5, pos = { x = -6255.798, y = 245.792, z = -2517.812 }, area_id = 18 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1038004, name = "ENTER_REGION_38004", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_38004", action = "action_EVENT_ENTER_REGION_38004" }
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	monsters = {
+		{ config_id = 38002, monster_id = 22040201, pos = { x = -6260.614, y = 248.027, z = -2515.716 }, rot = { x = 0.000, y = 134.962, z = 0.000 }, level = 33, drop_tag = "兽境幼兽", pose_id = 101, climate_area_id = 7, area_id = 18 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 38004 },
+		triggers = { "ENTER_REGION_38004" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 38001, 38003, 38005 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_38004(context, evt)
+	if evt.param1 ~= 38004 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_38004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133225038
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_38004(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133225038, 2)
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_38004 = L1_1

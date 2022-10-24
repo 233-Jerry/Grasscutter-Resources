@@ -1,425 +1,180 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.group_id = 133106455
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 455001
-L2_1.gadget_id = 70360179
-L3_1 = {}
-L3_1.x = -943.969
-L3_1.y = 207.92
-L3_1.z = 1680.006
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 224.31
-L3_1.z = 5.522
-L2_1.rot = L3_1
-L2_1.level = 36
-L2_1.persistent = true
-L2_1.area_id = 19
-L3_1 = {}
-L3_1.config_id = 455002
-L3_1.gadget_id = 70220025
-L4_1 = {}
-L4_1.x = -943.237
-L4_1.y = 207.974
-L4_1.z = 1678.487
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 84.071
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.persistent = true
-L3_1.area_id = 19
-L4_1 = {}
-L4_1.config_id = 455003
-L4_1.gadget_id = 70220025
-L5_1 = {}
-L5_1.x = -943.989
-L5_1.y = 208.041
-L5_1.z = 1679.675
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 84.405
-L5_1.y = 306.191
-L5_1.z = 196.582
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.persistent = true
-L4_1.area_id = 19
-L5_1 = {}
-L5_1.config_id = 455006
-L5_1.gadget_id = 70360001
-L6_1 = {}
-L6_1.x = -943.558
-L6_1.y = 207.912
-L6_1.z = 1679.317
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 36
-L5_1.persistent = true
-L6_1 = {}
-L6_1.is_persistent = true
-L7_1 = {}
-L8_1 = 751
-L7_1[1] = L8_1
-L6_1.init_options = L7_1
-L5_1.worktop_config = L6_1
-L5_1.area_id = 19
-L6_1 = {}
-L6_1.config_id = 455007
-L6_1.gadget_id = 70220025
-L7_1 = {}
-L7_1.x = -942.416
-L7_1.y = 208.02
-L7_1.z = 1679.925
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 85.82
-L7_1.y = 324.776
-L7_1.z = 214.249
-L6_1.rot = L7_1
-L6_1.level = 36
-L6_1.persistent = true
-L6_1.area_id = 19
-L7_1 = {}
-L7_1.config_id = 455010
-L7_1.gadget_id = 70220005
-L8_1 = {}
-L8_1.x = -938.419
-L8_1.y = 207.551
-L8_1.z = 1679.15
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 36
-L7_1.isOneoff = true
-L7_1.persistent = true
-L7_1.area_id = 19
-L8_1 = {}
-L8_1.config_id = 455011
-L8_1.gadget_id = 70220005
-L9_1 = {}
-L9_1.x = -937.661
-L9_1.y = 207.754
-L9_1.z = 1678.377
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 80.703
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 36
-L8_1.isOneoff = true
-L8_1.persistent = true
-L8_1.area_id = 19
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 455008
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 30
-L3_1 = {}
-L3_1.x = -940.124
-L3_1.y = 206.087
-L3_1.z = 1675.859
-L2_1.pos = L3_1
-L2_1.area_id = 19
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1455004
-L2_1.name = "ANY_GADGET_DIE_455004"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_GADGET_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_ANY_GADGET_DIE_455004"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1455005
-L3_1.name = "SELECT_OPTION_455005"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SELECT_OPTION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_SELECT_OPTION_455005"
-L3_1.action = "action_EVENT_SELECT_OPTION_455005"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1455008
-L4_1.name = "ENTER_REGION_455008"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_455008"
-L4_1.action = "action_EVENT_ENTER_REGION_455008"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1455009
-L5_1.name = "GROUP_LOAD_455009"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GROUP_LOAD
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_GROUP_LOAD_455009"
-L5_1.action = "action_EVENT_GROUP_LOAD_455009"
-L5_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "questfinish"
-L2_1.value = 0
-L2_1.no_refresh = true
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 3
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 455008
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_455008"
-L5_1 = "GROUP_LOAD_455009"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 455002
-L6_1 = 455003
-L7_1 = 455007
-L8_1 = 455010
-L9_1 = 455011
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ANY_GADGET_DIE_455004"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 455001
-L7_1 = 455006
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "SELECT_OPTION_455005"
-L5_1[1] = L6_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 455002 then
-    L2_2 = A1_2.param1
-    if L2_2 ~= 455003 then
-      L2_2 = A1_2.param1
-      if L2_2 ~= 455007 then
-        goto lbl_17
-      end
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133106455
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  goto lbl_17
-  ::lbl_17::
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133106455
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 455001, gadget_id = 70360179, pos = { x = -943.969, y = 207.920, z = 1680.006 }, rot = { x = 0.000, y = 224.310, z = 5.522 }, level = 36, persistent = true, area_id = 19 },
+	{ config_id = 455002, gadget_id = 70220025, pos = { x = -943.237, y = 207.974, z = 1678.487 }, rot = { x = 84.071, y = 0.000, z = 0.000 }, level = 36, persistent = true, area_id = 19 },
+	{ config_id = 455003, gadget_id = 70220025, pos = { x = -943.989, y = 208.041, z = 1679.675 }, rot = { x = 84.405, y = 306.191, z = 196.582 }, level = 36, persistent = true, area_id = 19 },
+	{ config_id = 455006, gadget_id = 70360001, pos = { x = -943.558, y = 207.912, z = 1679.317 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, worktop_config = { is_persistent = true, init_options = { 751 } }, area_id = 19 },
+	{ config_id = 455007, gadget_id = 70220025, pos = { x = -942.416, y = 208.020, z = 1679.925 }, rot = { x = 85.820, y = 324.776, z = 214.249 }, level = 36, persistent = true, area_id = 19 },
+	{ config_id = 455010, gadget_id = 70220005, pos = { x = -938.419, y = 207.551, z = 1679.150 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, isOneoff = true, persistent = true, area_id = 19 },
+	{ config_id = 455011, gadget_id = 70220005, pos = { x = -937.661, y = 207.754, z = 1678.377 }, rot = { x = 80.703, y = 0.000, z = 0.000 }, level = 36, isOneoff = true, persistent = true, area_id = 19 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 455008, shape = RegionShape.SPHERE, radius = 30, pos = { x = -940.124, y = 206.087, z = 1675.859 }, area_id = 19 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1455004, name = "ANY_GADGET_DIE_455004", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "", action = "action_EVENT_ANY_GADGET_DIE_455004", trigger_count = 0 },
+	{ config_id = 1455005, name = "SELECT_OPTION_455005", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_455005", action = "action_EVENT_SELECT_OPTION_455005", trigger_count = 0 },
+	{ config_id = 1455008, name = "ENTER_REGION_455008", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_455008", action = "action_EVENT_ENTER_REGION_455008", trigger_count = 0 },
+	-- 保底
+	{ config_id = 1455009, name = "GROUP_LOAD_455009", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_455009", action = "action_EVENT_GROUP_LOAD_455009", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "questfinish", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 3,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 455008 },
+		triggers = { "ENTER_REGION_455008", "GROUP_LOAD_455009" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 455002, 455003, 455007, 455010, 455011 },
+		regions = { },
+		triggers = { "ANY_GADGET_DIE_455004" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 455001, 455006 },
+		regions = { },
+		triggers = { "SELECT_OPTION_455005" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_455004(context, evt)
+	if evt.param1 == 455002 or evt.param1 == 455003 or evt.param1 == 455007 then
+		ScriptLib.AddExtraGroupSuite(context, 133106455, 3)
+	end
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_455004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 455006 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 751 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_455005(context, evt)
+	-- 判断是gadgetid 455006 option_id 751
+	if 455006 ~= evt.param1 then
+		return false	
+	end
+	
+	if 751 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_455005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.TransPlayerToPos
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = {}
-  L6_2 = A0_2.uid
-  L5_2[1] = L6_2
-  L4_2.uid_list = L5_2
-  L5_2 = {}
-  L5_2.x = 1056.20728
-  L5_2.y = 743.530762
-  L5_2.z = 236.784058
-  L4_2.pos = L5_2
-  L4_2.radius = 2
-  L5_2 = {}
-  L5_2.x = 0
-  L5_2.y = 303.887543
-  L5_2.z = 0
-  L4_2.rot = L5_2
-  L4_2.scene_id = 6
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_455005(context, evt)
+	ScriptLib.TransPlayerToPos(context, {uid_list = {context.uid}, pos = {x=1056.20728, y= 743.530762, z=236.784058}, radius = 2, rot = {x=0, y=303.887543, z=0},scene_id=6}) 
+	return 0
 end
-action_EVENT_SELECT_OPTION_455005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 455008 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetHostQuestState
-  L3_2 = A0_2
-  L4_2 = 7107701
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 3 then
-    L2_2 = true
-    return L2_2
-  end
-  L2_2 = false
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_455008(context, evt)
+	if evt.param1 ~= 455008 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	if ScriptLib.GetHostQuestState(context,7107701) == 3 then
+		return true
+	end
+	
+	return false
 end
-condition_EVENT_ENTER_REGION_455008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "questfinish"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133106455
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_455008(context, evt)
+	-- 将本组内变量名为 "questfinish" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "questfinish", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133106455, 2)
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_455008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "questfinish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_455009(context, evt)
+	-- 判断变量"questfinish"为1
+	if ScriptLib.GetGroupVariableValue(context, "questfinish") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_455009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133106455
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_455009(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133106455, 2)
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_455009 = L1_1

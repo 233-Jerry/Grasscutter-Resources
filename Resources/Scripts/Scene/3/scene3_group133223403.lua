@@ -1,643 +1,202 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1
-L0_1 = {}
-L0_1.group_id = 133223403
-L1_1 = {}
-L1_1.group_id = 133223403
-L1_1.pointarray_id = 322300053
-L1_1.pillar_num = 5
-L1_1.suite_opts = 2
-L2_1 = {}
-L3_1 = {}
-L3_1.preNode = 0
-L3_1.nextNode = 0
-L3_1.outNode = 0
-L3_1.inNode = 2
-L3_1.selfSigil = 0
-L2_1[1] = L3_1
-L3_1 = {}
-L3_1.preNode = 7
-L3_1.nextNode = 3
-L3_1.outNode = 1
-L3_1.inNode = 0
-L3_1.selfSigil = 3
-L2_1[2] = L3_1
-L3_1 = {}
-L3_1.preNode = 2
-L3_1.nextNode = 4
-L3_1.outNode = 0
-L3_1.inNode = 0
-L3_1.selfSigil = 1
-L2_1[3] = L3_1
-L3_1 = {}
-L3_1.preNode = 3
-L3_1.nextNode = 6
-L3_1.outNode = 5
-L3_1.inNode = 0
-L3_1.selfSigil = 4
-L2_1[4] = L3_1
-L3_1 = {}
-L3_1.preNode = 0
-L3_1.nextNode = 0
-L3_1.outNode = 0
-L3_1.inNode = 4
-L3_1.selfSigil = 0
-L2_1[5] = L3_1
-L3_1 = {}
-L3_1.preNode = 4
-L3_1.nextNode = 7
-L3_1.outNode = 0
-L3_1.inNode = 0
-L3_1.selfSigil = 7
-L2_1[6] = L3_1
-L3_1 = {}
-L3_1.preNode = 6
-L3_1.nextNode = 2
-L3_1.outNode = 8
-L3_1.inNode = 0
-L3_1.selfSigil = 6
-L2_1[7] = L3_1
-L3_1 = {}
-L3_1.preNode = 0
-L3_1.nextNode = 0
-L3_1.outNode = 0
-L3_1.inNode = 7
-L3_1.selfSigil = 0
-L2_1[8] = L3_1
-L1_1.Graph = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.name = "Pillar01"
-L3_1.initPos = 1
-L3_1.finPos = 2
-L2_1[403001] = L3_1
-L3_1 = {}
-L3_1.name = "Pillar02"
-L3_1.initPos = 7
-L3_1.finPos = 3
-L2_1[403002] = L3_1
-L3_1 = {}
-L3_1.name = "Pillar03"
-L3_1.initPos = 8
-L3_1.finPos = 7
-L2_1[403003] = L3_1
-L3_1 = {}
-L3_1.name = "Pillar04"
-L3_1.initPos = 5
-L3_1.finPos = 4
-L2_1[403004] = L3_1
-L3_1 = {}
-L3_1.name = "Pillar05"
-L3_1.initPos = 4
-L3_1.finPos = 6
-L2_1[403005] = L3_1
-L1_1.PillarInfo = L2_1
-L2_1 = {}
-L2_1[403006] = 1
-L2_1[403007] = 2
-L2_1[403008] = 3
-L2_1[403009] = 4
-L2_1[403010] = 5
-L2_1[403011] = 6
-L2_1[403012] = 7
-L2_1[403013] = 8
-L1_1.OperatorPos = L2_1
-defs = L1_1
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 403001
-L2_1.gadget_id = 70380289
-L3_1 = {}
-L3_1.x = -6128.452
-L3_1.y = 200.22
-L3_1.z = -2595.432
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 33
-L2_1.is_use_point_array = true
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 403002
-L3_1.gadget_id = 70380287
-L4_1 = {}
-L4_1.x = -6132.574
-L4_1.y = 200.668
-L4_1.z = -2583.455
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 33
-L3_1.is_use_point_array = true
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 403003
-L4_1.gadget_id = 70380292
-L5_1 = {}
-L5_1.x = -6130.598
-L5_1.y = 200.547
-L5_1.z = -2577.147
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 33
-L4_1.is_use_point_array = true
-L4_1.area_id = 18
-L5_1 = {}
-L5_1.config_id = 403004
-L5_1.gadget_id = 70380290
-L6_1 = {}
-L6_1.x = -6149.03
-L6_1.y = 200.124
-L6_1.z = -2590.147
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 33
-L5_1.is_use_point_array = true
-L5_1.area_id = 18
-L6_1 = {}
-L6_1.config_id = 403005
-L6_1.gadget_id = 70380293
-L7_1 = {}
-L7_1.x = -6144.176
-L7_1.y = 200.29
-L7_1.z = -2585.483
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 33
-L6_1.is_use_point_array = true
-L6_1.area_id = 18
-L7_1 = {}
-L7_1.config_id = 403006
-L7_1.gadget_id = 70360001
-L8_1 = {}
-L8_1.x = -6128.367
-L8_1.y = 200.27
-L8_1.z = -2595.485
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 33
-L7_1.area_id = 18
-L8_1 = {}
-L8_1.config_id = 403007
-L8_1.gadget_id = 70360001
-L9_1 = {}
-L9_1.x = -6133.873
-L9_1.y = 200.412
-L9_1.z = -2590.853
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 33
-L8_1.area_id = 18
-L9_1 = {}
-L9_1.config_id = 403008
-L9_1.gadget_id = 70360001
-L10_1 = {}
-L10_1.x = -6140.72
-L10_1.y = 200.746
-L10_1.z = -2591.848
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 33
-L9_1.area_id = 18
-L10_1 = {}
-L10_1.config_id = 403009
-L10_1.gadget_id = 70360001
-L11_1 = {}
-L11_1.x = -6144.173
-L11_1.y = 200.445
-L11_1.z = -2585.513
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 33
-L10_1.area_id = 18
-L11_1 = {}
-L11_1.config_id = 403010
-L11_1.gadget_id = 70360001
-L12_1 = {}
-L12_1.x = -6149.01
-L12_1.y = 200.162
-L12_1.z = -2590.138
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 33
-L11_1.area_id = 18
-L12_1 = {}
-L12_1.config_id = 403011
-L12_1.gadget_id = 70360001
-L13_1 = {}
-L13_1.x = -6138.764
-L13_1.y = 200.937
-L13_1.z = -2580.283
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 0.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 33
-L12_1.area_id = 18
-L13_1 = {}
-L13_1.config_id = 403012
-L13_1.gadget_id = 70360001
-L14_1 = {}
-L14_1.x = -6132.601
-L14_1.y = 200.676
-L14_1.z = -2583.43
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 0.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 33
-L13_1.area_id = 18
-L14_1 = {}
-L14_1.config_id = 403013
-L14_1.gadget_id = 70360001
-L15_1 = {}
-L15_1.x = -6131.038
-L15_1.y = 200.608
-L15_1.z = -2577.406
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 0.0
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 33
-L14_1.area_id = 18
-L15_1 = {}
-L15_1.config_id = 403016
-L15_1.gadget_id = 70380287
-L16_1 = {}
-L16_1.x = -6140.93
-L16_1.y = 200.295
-L16_1.z = -2591.834
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 0.0
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 33
-L16_1 = GadgetState
-L16_1 = L16_1.GearStart
-L15_1.state = L16_1
-L15_1.is_use_point_array = true
-L15_1.area_id = 18
-L16_1 = {}
-L16_1.config_id = 403017
-L16_1.gadget_id = 70380289
-L17_1 = {}
-L17_1.x = -6133.767
-L17_1.y = 200.425
-L17_1.z = -2590.826
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 0.0
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 33
-L17_1 = GadgetState
-L17_1 = L17_1.GearStart
-L16_1.state = L17_1
-L16_1.is_use_point_array = true
-L16_1.area_id = 18
-L17_1 = {}
-L17_1.config_id = 403018
-L17_1.gadget_id = 70380290
-L18_1 = {}
-L18_1.x = -6144.191
-L18_1.y = 200.29
-L18_1.z = -2585.451
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 0.0
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 33
-L18_1 = GadgetState
-L18_1 = L18_1.GearStart
-L17_1.state = L18_1
-L17_1.is_use_point_array = true
-L17_1.area_id = 18
-L18_1 = {}
-L18_1.config_id = 403019
-L18_1.gadget_id = 70380292
-L19_1 = {}
-L19_1.x = -6132.584
-L19_1.y = 200.638
-L19_1.z = -2583.459
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 0.0
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.level = 33
-L19_1 = GadgetState
-L19_1 = L19_1.GearStart
-L18_1.state = L19_1
-L18_1.is_use_point_array = true
-L18_1.area_id = 18
-L19_1 = {}
-L19_1.config_id = 403020
-L19_1.gadget_id = 70380293
-L20_1 = {}
-L20_1.x = -6138.752
-L20_1.y = 200.848
-L20_1.z = -2580.447
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 0.0
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.level = 33
-L20_1 = GadgetState
-L20_1 = L20_1.GearStart
-L19_1.state = L20_1
-L19_1.is_use_point_array = true
-L19_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-L1_1[14] = L15_1
-L1_1[15] = L16_1
-L1_1[16] = L17_1
-L1_1[17] = L18_1
-L1_1[18] = L19_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1403014
-L2_1.name = "VARIABLE_CHANGE_403014"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_VARIABLE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_VARIABLE_CHANGE_403014"
-L2_1.action = "action_EVENT_VARIABLE_CHANGE_403014"
-L3_1 = {}
-L3_1.config_id = 1403015
-L3_1.name = "QUEST_START_403015"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_QUEST_START
-L3_1.event = L4_1
-L3_1.source = "7216614"
-L3_1.condition = "condition_EVENT_QUEST_START_403015"
-L3_1.action = "action_EVENT_QUEST_START_403015"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "Finished"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "isNeedNotify"
-L3_1.value = 1
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "isQuestNotify"
-L4_1.value = 0
-L4_1.no_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 3
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 403001
-L5_1 = 403002
-L6_1 = 403003
-L7_1 = 403004
-L8_1 = 403005
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "VARIABLE_CHANGE_403014"
-L5_1 = "QUEST_START_403015"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 403006
-L6_1 = 403007
-L7_1 = 403008
-L8_1 = 403009
-L9_1 = 403010
-L10_1 = 403011
-L11_1 = 403012
-L12_1 = 403013
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 403016
-L7_1 = 403017
-L8_1 = 403018
-L9_1 = 403019
-L10_1 = 403020
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Finished"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133223403
+}
+
+-- DEFS_MISCS
+defs = {
+group_id = 133223403, 
+pointarray_id = 322300053, --使用的移动点阵ID
+pillar_num = 5, --移动石柱的数量
+suite_opts = 2, --操作台在的Suite
+Graph = {       --定义符文石和移动点之间的位置关系
+[1]={preNode= 0, nextNode= 0, outNode= 0, inNode= 2, selfSigil= 0},
+[2]={preNode= 7, nextNode= 3, outNode= 1, inNode= 0, selfSigil= 3},
+[3]={preNode= 2, nextNode= 4, outNode= 0, inNode= 0, selfSigil= 1},
+[4]={preNode= 3, nextNode= 6, outNode= 5, inNode= 0, selfSigil= 4},
+[5]={preNode= 0, nextNode= 0, outNode= 0, inNode= 4, selfSigil= 0},
+[6]={preNode= 4, nextNode= 7, outNode= 0, inNode= 0, selfSigil= 7},
+[7]={preNode= 6, nextNode= 2, outNode= 8, inNode= 0, selfSigil= 6},
+[8]={preNode= 0, nextNode= 0, outNode= 0, inNode= 7, selfSigil= 0},
+},
+--每个桩的存储id
+PillarInfo = {
+[403001] = { name = "Pillar01", initPos = 1, finPos = 2},
+[403002] = { name = "Pillar02", initPos = 7, finPos = 3},
+[403003] = { name = "Pillar03", initPos = 8, finPos = 7},
+[403004] = { name = "Pillar04", initPos = 5, finPos = 4},
+[403005] = { name = "Pillar05", initPos = 4, finPos = 6},
+        },
+--每个操作台对应的位置
+OperatorPos = {
+[403006] = 1,
+[403007] = 2,
+[403008] = 3,
+[403009] = 4,
+[403010] = 5,
+[403011] = 6,
+[403012] = 7,
+[403013] = 8,
+        },
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 403001, gadget_id = 70380289, pos = { x = -6128.452, y = 200.220, z = -2595.432 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, is_use_point_array = true, area_id = 18 },
+	{ config_id = 403002, gadget_id = 70380287, pos = { x = -6132.574, y = 200.668, z = -2583.455 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, is_use_point_array = true, area_id = 18 },
+	{ config_id = 403003, gadget_id = 70380292, pos = { x = -6130.598, y = 200.547, z = -2577.147 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, is_use_point_array = true, area_id = 18 },
+	{ config_id = 403004, gadget_id = 70380290, pos = { x = -6149.030, y = 200.124, z = -2590.147 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, is_use_point_array = true, area_id = 18 },
+	{ config_id = 403005, gadget_id = 70380293, pos = { x = -6144.176, y = 200.290, z = -2585.483 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, is_use_point_array = true, area_id = 18 },
+	{ config_id = 403006, gadget_id = 70360001, pos = { x = -6128.367, y = 200.270, z = -2595.485 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, area_id = 18 },
+	{ config_id = 403007, gadget_id = 70360001, pos = { x = -6133.873, y = 200.412, z = -2590.853 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, area_id = 18 },
+	{ config_id = 403008, gadget_id = 70360001, pos = { x = -6140.720, y = 200.746, z = -2591.848 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, area_id = 18 },
+	{ config_id = 403009, gadget_id = 70360001, pos = { x = -6144.173, y = 200.445, z = -2585.513 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, area_id = 18 },
+	{ config_id = 403010, gadget_id = 70360001, pos = { x = -6149.010, y = 200.162, z = -2590.138 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, area_id = 18 },
+	{ config_id = 403011, gadget_id = 70360001, pos = { x = -6138.764, y = 200.937, z = -2580.283 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, area_id = 18 },
+	{ config_id = 403012, gadget_id = 70360001, pos = { x = -6132.601, y = 200.676, z = -2583.430 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, area_id = 18 },
+	{ config_id = 403013, gadget_id = 70360001, pos = { x = -6131.038, y = 200.608, z = -2577.406 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, area_id = 18 },
+	{ config_id = 403016, gadget_id = 70380287, pos = { x = -6140.930, y = 200.295, z = -2591.834 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, state = GadgetState.GearStart, is_use_point_array = true, area_id = 18 },
+	{ config_id = 403017, gadget_id = 70380289, pos = { x = -6133.767, y = 200.425, z = -2590.826 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, state = GadgetState.GearStart, is_use_point_array = true, area_id = 18 },
+	{ config_id = 403018, gadget_id = 70380290, pos = { x = -6144.191, y = 200.290, z = -2585.451 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, state = GadgetState.GearStart, is_use_point_array = true, area_id = 18 },
+	{ config_id = 403019, gadget_id = 70380292, pos = { x = -6132.584, y = 200.638, z = -2583.459 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, state = GadgetState.GearStart, is_use_point_array = true, area_id = 18 },
+	{ config_id = 403020, gadget_id = 70380293, pos = { x = -6138.752, y = 200.848, z = -2580.447 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, state = GadgetState.GearStart, is_use_point_array = true, area_id = 18 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1403014, name = "VARIABLE_CHANGE_403014", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_403014", action = "action_EVENT_VARIABLE_CHANGE_403014" },
+	-- 任务设置启动
+	{ config_id = 1403015, name = "QUEST_START_403015", event = EventType.EVENT_QUEST_START, source = "7216614", condition = "condition_EVENT_QUEST_START_403015", action = "action_EVENT_QUEST_START_403015" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Finished", value = 0, no_refresh = true },
+	{ config_id = 2, name = "isNeedNotify", value = 1, no_refresh = false },
+	{ config_id = 3, name = "isQuestNotify", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 3,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 403001, 403002, 403003, 403004, 403005 },
+		regions = { },
+		triggers = { "VARIABLE_CHANGE_403014", "QUEST_START_403015" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 403006, 403007, 403008, 403009, 403010, 403011, 403012, 403013 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 403016, 403017, 403018, 403019, 403020 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_403014(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"Finished"为1
+	if ScriptLib.GetGroupVariableValue(context, "Finished") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_403014 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "D2_AreaB_Puzzle_Finish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_403014(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "D2_AreaB_Puzzle_Finish") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_403014 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isQuestNotify"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_QUEST_START_403015(context, evt)
+	-- 判断变量"isQuestNotify"为0
+	if ScriptLib.GetGroupVariableValue(context, "isQuestNotify") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_QUEST_START_403015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isQuestNotify"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "Decal_Start"
-  L5_2 = 1
-  L6_2 = 133223372
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_403015(context, evt)
+	-- 将本组内变量名为 "isQuestNotify" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isQuestNotify", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "Decal_Start" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "Decal_Start", 1, 133223372) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_403015 = L1_1
-L1_1 = require
-L2_1 = "V2_2/PillarMove"
-L1_1(L2_1)
+
+require "V2_2/PillarMove"

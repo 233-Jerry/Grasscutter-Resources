@@ -1,167 +1,130 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133225275
-L1_1 = {}
-L1_1.gadget_starter = 275001
-L1_1.start_region = 275003
-L2_1 = {}
-L3_1 = 2
-L2_1[1] = L3_1
-L1_1.init_on_battle = L2_1
-L1_1.battle_radius = 40
-L1_1.battle_regionID = 275004
-L1_1.optimize_regionID = 275005
-L1_1.monster_configID = 275002
-L1_1.group_id = 133225275
-L1_1.weather_ID = 3321
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 275002
-L3_1.monster_id = 22060101
-L4_1 = {}
-L4_1.x = -6657.731
-L4_1.y = 193.481
-L4_1.z = -2661.144
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.drop_id = 1000100
-L3_1.area_id = 18
-L2_1[275002] = L3_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 275007
-L3_1.gadget_id = 70210106
-L4_1 = {}
-L4_1.x = -6643.583
-L4_1.y = 193.512
-L4_1.z = -2648.322
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 26
-L3_1.drop_tag = "\233\187\132\233\135\145\231\142\139\229\133\189"
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.monster_config_id = 275002
-L4_1.resin = 40
-L4_1.life_time = 600
-L4_1.take_num = 100
-L3_1.boss_chest = L4_1
-L3_1.area_id = 18
-L2_1[275007] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 275004
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 40
-L4_1 = {}
-L4_1.x = -6657.744
-L4_1.y = 193.481
-L4_1.z = -2661.123
-L3_1.pos = L4_1
-L3_1.area_id = 18
-L2_1[275004] = L3_1
-L3_1 = {}
-L3_1.config_id = 275005
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 30
-L4_1 = {}
-L4_1.x = -6657.744
-L4_1.y = 193.481
-L4_1.z = -2661.123
-L3_1.pos = L4_1
-L3_1.area_id = 18
-L2_1[275005] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1275006
-L3_1.name = "ANY_MONSTER_DIE_275006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_MONSTER_DIE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_ANY_MONSTER_DIE_275006"
-L2_1[1] = L3_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L5_1 = 275002
-L4_1[1] = L5_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ANY_MONSTER_DIE_275006"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L6_1 = 275004
-L7_1 = 275005
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 275007
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133225275
+}
+
+-- DEFS_MISCS
+local defs = {
+
+	--开启怪物用的特效gadget--废弃
+	gadget_starter = 275001,
+
+	--开启怪物用的region--废弃
+	start_region = 275003,
+	--战斗开启后，加载哪些suit
+	init_on_battle = {2},
+
+	--场地范围半径
+	battle_radius = 40,
+
+	--场地范围Region/中心点
+	battle_regionID = 275004,
+	--优化圈
+	optimize_regionID = 275005,
+
+	--怪物configID
+	monster_configID = 275002,
+
+	--groupID
+	group_id = 133225275,
+
+	--战斗天气ID
+	weather_ID = 3321,
+
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	[275002] = { config_id = 275002, monster_id = 22060101, pos = { x = -6657.731, y = 193.481, z = -2661.144 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, drop_id = 1000100, area_id = 18 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	[275007] = { config_id = 275007, gadget_id = 70210106, pos = { x = -6643.583, y = 193.512, z = -2648.322 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, drop_tag = "黄金王兽", isOneoff = true, persistent = true, boss_chest = {monster_config_id=275002, resin=40, life_time=600,take_num=100}, area_id = 18 }
+}
+
+-- 区域
+regions = {
+	-- 战斗区域  1.eyePoint优化大圈 2.玩家出圈时尝试会切auth（废弃）
+	[275004] = { config_id = 275004, shape = RegionShape.SPHERE, radius = 40, pos = { x = -6657.744, y = 193.481, z = -2661.123 }, area_id = 18 },
+	-- eyePoint优化圈
+	[275005] = { config_id = 275005, shape = RegionShape.SPHERE, radius = 30, pos = { x = -6657.744, y = 193.481, z = -2661.123 }, area_id = 18 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1275006, name = "ANY_MONSTER_DIE_275006", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "", action = "action_EVENT_ANY_MONSTER_DIE_275006" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 275002 },
+		gadgets = { },
+		regions = { },
+		triggers = { "ANY_MONSTER_DIE_275006" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = 此suite在战斗开启后加载,
+		monsters = { },
+		gadgets = { },
+		regions = { 275004, 275005 },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_275006(context, evt)
+	-- 创建id为275007的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 275007 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_275006 = L2_1
-L2_1 = require
-L3_1 = "V2_3/Boss_Hound"
-L2_1(L3_1)
+
+require "V2_3/Boss_Hound"

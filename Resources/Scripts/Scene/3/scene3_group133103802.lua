@@ -1,537 +1,92 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1
-L0_1 = {}
-L0_1.group_id = 133103802
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 349
-L2_1.gadget_id = 70500000
-L3_1 = {}
-L3_1.x = 746.325
-L3_1.y = 323.865
-L3_1.z = 1753.153
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 24
-L2_1.point_type = 4002
-L2_1.isOneoff = true
-L3_1 = {}
-L3_1.name = "gather"
-L3_1.exp = 3
-L2_1.explore = L3_1
-L2_1.area_id = 6
-L3_1 = {}
-L3_1.config_id = 351
-L3_1.gadget_id = 70500000
-L4_1 = {}
-L4_1.x = 773.238
-L4_1.y = 305.487
-L4_1.z = 1848.415
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 24
-L3_1.point_type = 4002
-L3_1.isOneoff = true
-L4_1 = {}
-L4_1.name = "gather"
-L4_1.exp = 3
-L3_1.explore = L4_1
-L3_1.area_id = 6
-L4_1 = {}
-L4_1.config_id = 802001
-L4_1.gadget_id = 70500000
-L5_1 = {}
-L5_1.x = 719.343
-L5_1.y = 237.583
-L5_1.z = 1660.541
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 24
-L4_1.point_type = 4002
-L4_1.isOneoff = true
-L5_1 = {}
-L5_1.name = "gather"
-L5_1.exp = 3
-L4_1.explore = L5_1
-L4_1.area_id = 6
-L5_1 = {}
-L5_1.config_id = 802002
-L5_1.gadget_id = 70500000
-L6_1 = {}
-L6_1.x = 982.7
-L6_1.y = 300.084
-L6_1.z = 1619.0
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 314.323
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 24
-L5_1.point_type = 4002
-L5_1.isOneoff = true
-L6_1 = {}
-L6_1.name = "gather"
-L6_1.exp = 3
-L5_1.explore = L6_1
-L5_1.area_id = 6
-L6_1 = {}
-L6_1.config_id = 802003
-L6_1.gadget_id = 70500000
-L7_1 = {}
-L7_1.x = 720.484
-L7_1.y = 319.275
-L7_1.z = 1682.64
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 314.323
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 24
-L6_1.point_type = 4002
-L6_1.isOneoff = true
-L7_1 = {}
-L7_1.name = "gather"
-L7_1.exp = 3
-L6_1.explore = L7_1
-L6_1.area_id = 6
-L7_1 = {}
-L7_1.config_id = 802004
-L7_1.gadget_id = 70500000
-L8_1 = {}
-L8_1.x = 987.842
-L8_1.y = 269.897
-L8_1.z = 1319.474
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 314.323
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 24
-L7_1.point_type = 4002
-L7_1.isOneoff = true
-L8_1 = {}
-L8_1.name = "gather"
-L8_1.exp = 3
-L7_1.explore = L8_1
-L7_1.area_id = 6
-L8_1 = {}
-L8_1.config_id = 802005
-L8_1.gadget_id = 70500000
-L9_1 = {}
-L9_1.x = 1104.792
-L9_1.y = 237.372
-L9_1.z = 1639.079
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 314.323
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 24
-L8_1.point_type = 4002
-L8_1.isOneoff = true
-L9_1 = {}
-L9_1.name = "gather"
-L9_1.exp = 3
-L8_1.explore = L9_1
-L8_1.area_id = 6
-L9_1 = {}
-L9_1.config_id = 802006
-L9_1.gadget_id = 70500000
-L10_1 = {}
-L10_1.x = 891.179
-L10_1.y = 316.756
-L10_1.z = 1610.122
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 314.323
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 24
-L9_1.point_type = 4002
-L9_1.isOneoff = true
-L10_1 = {}
-L10_1.name = "gather"
-L10_1.exp = 3
-L9_1.explore = L10_1
-L9_1.area_id = 6
-L10_1 = {}
-L10_1.config_id = 802007
-L10_1.gadget_id = 70500000
-L11_1 = {}
-L11_1.x = 950.254
-L11_1.y = 395.259
-L11_1.z = 1646.649
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 314.323
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 24
-L10_1.point_type = 4002
-L10_1.isOneoff = true
-L11_1 = {}
-L11_1.name = "gather"
-L11_1.exp = 3
-L10_1.explore = L11_1
-L10_1.area_id = 6
-L11_1 = {}
-L11_1.config_id = 802008
-L11_1.gadget_id = 70500000
-L12_1 = {}
-L12_1.x = 663.15
-L12_1.y = 442.067
-L12_1.z = 1844.049
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 314.323
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 24
-L11_1.point_type = 4002
-L11_1.isOneoff = true
-L12_1 = {}
-L12_1.name = "gather"
-L12_1.exp = 3
-L11_1.explore = L12_1
-L11_1.area_id = 6
-L12_1 = {}
-L12_1.config_id = 802009
-L12_1.gadget_id = 70500000
-L13_1 = {}
-L13_1.x = 675.735
-L13_1.y = 380.578
-L13_1.z = 1789.922
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 0.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 24
-L12_1.point_type = 4002
-L12_1.isOneoff = true
-L13_1 = {}
-L13_1.name = "gather"
-L13_1.exp = 3
-L12_1.explore = L13_1
-L12_1.area_id = 6
-L13_1 = {}
-L13_1.config_id = 802010
-L13_1.gadget_id = 70500000
-L14_1 = {}
-L14_1.x = 957.941
-L14_1.y = 351.44
-L14_1.z = 1748.487
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 0.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 24
-L13_1.point_type = 4002
-L13_1.isOneoff = true
-L14_1 = {}
-L14_1.name = "gather"
-L14_1.exp = 3
-L13_1.explore = L14_1
-L13_1.area_id = 6
-L14_1 = {}
-L14_1.config_id = 802011
-L14_1.gadget_id = 70500000
-L15_1 = {}
-L15_1.x = 1237.54
-L15_1.y = 351.035
-L15_1.z = 1588.851
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 0.0
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 24
-L14_1.point_type = 4002
-L14_1.isOneoff = true
-L15_1 = {}
-L15_1.name = "gather"
-L15_1.exp = 3
-L14_1.explore = L15_1
-L14_1.area_id = 6
-L15_1 = {}
-L15_1.config_id = 802012
-L15_1.gadget_id = 70500000
-L16_1 = {}
-L16_1.x = 1016.106
-L16_1.y = 364.223
-L16_1.z = 1201.376
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 0.0
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 24
-L15_1.point_type = 4002
-L15_1.isOneoff = true
-L16_1 = {}
-L16_1.name = "gather"
-L16_1.exp = 3
-L15_1.explore = L16_1
-L15_1.area_id = 6
-L16_1 = {}
-L16_1.config_id = 802014
-L16_1.gadget_id = 70500000
-L17_1 = {}
-L17_1.x = 885.597
-L17_1.y = 333.049
-L17_1.z = 1535.031
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 0.0
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 24
-L16_1.point_type = 4002
-L16_1.isOneoff = true
-L17_1 = {}
-L17_1.name = "gather"
-L17_1.exp = 3
-L16_1.explore = L17_1
-L16_1.area_id = 6
-L17_1 = {}
-L17_1.config_id = 802015
-L17_1.gadget_id = 70500000
-L18_1 = {}
-L18_1.x = 838.631
-L18_1.y = 543.381
-L18_1.z = 1426.269
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 0.0
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 24
-L17_1.point_type = 4002
-L17_1.isOneoff = true
-L18_1 = {}
-L18_1.name = "gather"
-L18_1.exp = 3
-L17_1.explore = L18_1
-L17_1.area_id = 6
-L18_1 = {}
-L18_1.config_id = 802016
-L18_1.gadget_id = 70500000
-L19_1 = {}
-L19_1.x = 624.013
-L19_1.y = 279.931
-L19_1.z = 1390.217
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 0.0
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.level = 24
-L18_1.point_type = 4002
-L18_1.isOneoff = true
-L19_1 = {}
-L19_1.name = "gather"
-L19_1.exp = 3
-L18_1.explore = L19_1
-L18_1.area_id = 6
-L19_1 = {}
-L19_1.config_id = 802018
-L19_1.gadget_id = 70500000
-L20_1 = {}
-L20_1.x = 732.222
-L20_1.y = 133.02
-L20_1.z = 1292.34
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 0.0
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.level = 24
-L19_1.point_type = 4002
-L19_1.isOneoff = true
-L20_1 = {}
-L20_1.name = "gather"
-L20_1.exp = 3
-L19_1.explore = L20_1
-L19_1.area_id = 6
-L20_1 = {}
-L20_1.config_id = 802019
-L20_1.gadget_id = 70500000
-L21_1 = {}
-L21_1.x = 733.3
-L21_1.y = 155.563
-L21_1.z = 1210.988
-L20_1.pos = L21_1
-L21_1 = {}
-L21_1.x = 0.0
-L21_1.y = 0.0
-L21_1.z = 0.0
-L20_1.rot = L21_1
-L20_1.level = 24
-L20_1.point_type = 4002
-L20_1.isOneoff = true
-L21_1 = {}
-L21_1.name = "gather"
-L21_1.exp = 3
-L20_1.explore = L21_1
-L20_1.area_id = 6
-L21_1 = {}
-L21_1.config_id = 802020
-L21_1.gadget_id = 70500000
-L22_1 = {}
-L22_1.x = 649.453
-L22_1.y = 206.498
-L22_1.z = 1257.964
-L21_1.pos = L22_1
-L22_1 = {}
-L22_1.x = 0.0
-L22_1.y = 0.0
-L22_1.z = 0.0
-L21_1.rot = L22_1
-L21_1.level = 24
-L21_1.point_type = 4002
-L21_1.isOneoff = true
-L22_1 = {}
-L22_1.name = "gather"
-L22_1.exp = 3
-L21_1.explore = L22_1
-L21_1.area_id = 6
-L22_1 = {}
-L22_1.config_id = 802021
-L22_1.gadget_id = 70500000
-L23_1 = {}
-L23_1.x = 747.813
-L23_1.y = 225.444
-L23_1.z = 1308.634
-L22_1.pos = L23_1
-L23_1 = {}
-L23_1.x = 0.0
-L23_1.y = 132.57
-L23_1.z = 0.0
-L22_1.rot = L23_1
-L22_1.level = 24
-L22_1.point_type = 4002
-L22_1.isOneoff = true
-L23_1 = {}
-L23_1.name = "gather"
-L23_1.exp = 3
-L22_1.explore = L23_1
-L22_1.area_id = 6
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-L1_1[14] = L15_1
-L1_1[15] = L16_1
-L1_1[16] = L17_1
-L1_1[17] = L18_1
-L1_1[18] = L19_1
-L1_1[19] = L20_1
-L1_1[20] = L21_1
-L1_1[21] = L22_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 349
-L5_1 = 351
-L6_1 = 802001
-L7_1 = 802002
-L8_1 = 802003
-L9_1 = 802004
-L10_1 = 802005
-L11_1 = 802006
-L12_1 = 802007
-L13_1 = 802008
-L14_1 = 802009
-L15_1 = 802010
-L16_1 = 802011
-L17_1 = 802012
-L18_1 = 802014
-L19_1 = 802015
-L20_1 = 802016
-L21_1 = 802018
-L22_1 = 802019
-L23_1 = 802020
-L24_1 = 802021
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L3_1[13] = L16_1
-L3_1[14] = L17_1
-L3_1[15] = L18_1
-L3_1[16] = L19_1
-L3_1[17] = L20_1
-L3_1[18] = L21_1
-L3_1[19] = L22_1
-L3_1[20] = L23_1
-L3_1[21] = L24_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133103802
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 349, gadget_id = 70500000, pos = { x = 746.325, y = 323.865, z = 1753.153 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 351, gadget_id = 70500000, pos = { x = 773.238, y = 305.487, z = 1848.415 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802001, gadget_id = 70500000, pos = { x = 719.343, y = 237.583, z = 1660.541 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802002, gadget_id = 70500000, pos = { x = 982.700, y = 300.084, z = 1619.000 }, rot = { x = 0.000, y = 314.323, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802003, gadget_id = 70500000, pos = { x = 720.484, y = 319.275, z = 1682.640 }, rot = { x = 0.000, y = 314.323, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802004, gadget_id = 70500000, pos = { x = 987.842, y = 269.897, z = 1319.474 }, rot = { x = 0.000, y = 314.323, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802005, gadget_id = 70500000, pos = { x = 1104.792, y = 237.372, z = 1639.079 }, rot = { x = 0.000, y = 314.323, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802006, gadget_id = 70500000, pos = { x = 891.179, y = 316.756, z = 1610.122 }, rot = { x = 0.000, y = 314.323, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802007, gadget_id = 70500000, pos = { x = 950.254, y = 395.259, z = 1646.649 }, rot = { x = 0.000, y = 314.323, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802008, gadget_id = 70500000, pos = { x = 663.150, y = 442.067, z = 1844.049 }, rot = { x = 0.000, y = 314.323, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802009, gadget_id = 70500000, pos = { x = 675.735, y = 380.578, z = 1789.922 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802010, gadget_id = 70500000, pos = { x = 957.941, y = 351.440, z = 1748.487 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802011, gadget_id = 70500000, pos = { x = 1237.540, y = 351.035, z = 1588.851 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802012, gadget_id = 70500000, pos = { x = 1016.106, y = 364.223, z = 1201.376 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802014, gadget_id = 70500000, pos = { x = 885.597, y = 333.049, z = 1535.031 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802015, gadget_id = 70500000, pos = { x = 838.631, y = 543.381, z = 1426.269 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802016, gadget_id = 70500000, pos = { x = 624.013, y = 279.931, z = 1390.217 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802018, gadget_id = 70500000, pos = { x = 732.222, y = 133.020, z = 1292.340 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802019, gadget_id = 70500000, pos = { x = 733.300, y = 155.563, z = 1210.988 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802020, gadget_id = 70500000, pos = { x = 649.453, y = 206.498, z = 1257.964 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 },
+	{ config_id = 802021, gadget_id = 70500000, pos = { x = 747.813, y = 225.444, z = 1308.634 }, rot = { x = 0.000, y = 132.570, z = 0.000 }, level = 24, point_type = 4002, isOneoff = true, explore = { name = "gather", exp = 3 }, area_id = 6 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 349, 351, 802001, 802002, 802003, 802004, 802005, 802006, 802007, 802008, 802009, 802010, 802011, 802012, 802014, 802015, 802016, 802018, 802019, 802020, 802021 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

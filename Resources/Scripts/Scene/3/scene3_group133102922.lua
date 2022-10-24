@@ -1,134 +1,77 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133102922
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 922001
-L2_1.monster_id = 20011001
-L3_1 = {}
-L3_1.x = 1825.419
-L3_1.y = 210.901
-L3_1.z = 666.624
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 260.05
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 26
-L2_1.drop_id = 1000100
-L2_1.disableWander = true
-L2_1.area_id = 5
-L3_1 = {}
-L3_1.config_id = 922002
-L3_1.monster_id = 20011001
-L4_1 = {}
-L4_1.x = 1824.63
-L4_1.y = 210.911
-L4_1.z = 664.98
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 26
-L3_1.drop_id = 1000100
-L3_1.disableWander = true
-L3_1.area_id = 5
-L4_1 = {}
-L4_1.config_id = 922003
-L4_1.monster_id = 20011103
-L5_1 = {}
-L5_1.x = 1823.834
-L5_1.y = 210.95
-L5_1.z = 666.258
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 104.695
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 26
-L4_1.drop_id = 1000100
-L4_1.disableWander = true
-L4_1.area_id = 5
-L5_1 = {}
-L5_1.config_id = 922004
-L5_1.monster_id = 20010901
-L6_1 = {}
-L6_1.x = 1825.519
-L6_1.y = 210.856
-L6_1.z = 665.571
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 314.501
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 26
-L5_1.drop_id = 1000100
-L5_1.disableWander = true
-L5_1.area_id = 5
-L6_1 = {}
-L6_1.config_id = 922005
-L6_1.monster_id = 20010801
-L7_1 = {}
-L7_1.x = 1824.682
-L7_1.y = 210.95
-L7_1.z = 667.057
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 179.15
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 26
-L6_1.drop_id = 1000100
-L6_1.disableWander = true
-L6_1.area_id = 5
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = 922001
-L5_1 = 922002
-L6_1 = 922003
-L7_1 = 922004
-L8_1 = 922005
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L2_1.ban_refresh = true
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133102922
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 922001, monster_id = 20011001, pos = { x = 1825.419, y = 210.901, z = 666.624 }, rot = { x = 0.000, y = 260.050, z = 0.000 }, level = 26, drop_id = 1000100, disableWander = true, area_id = 5 },
+	{ config_id = 922002, monster_id = 20011001, pos = { x = 1824.630, y = 210.911, z = 664.980 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, drop_id = 1000100, disableWander = true, area_id = 5 },
+	{ config_id = 922003, monster_id = 20011103, pos = { x = 1823.834, y = 210.950, z = 666.258 }, rot = { x = 0.000, y = 104.695, z = 0.000 }, level = 26, drop_id = 1000100, disableWander = true, area_id = 5 },
+	{ config_id = 922004, monster_id = 20010901, pos = { x = 1825.519, y = 210.856, z = 665.571 }, rot = { x = 0.000, y = 314.501, z = 0.000 }, level = 26, drop_id = 1000100, disableWander = true, area_id = 5 },
+	{ config_id = 922005, monster_id = 20010801, pos = { x = 1824.682, y = 210.950, z = 667.057 }, rot = { x = 0.000, y = 179.150, z = 0.000 }, level = 26, drop_id = 1000100, disableWander = true, area_id = 5 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 922001, 922002, 922003, 922004, 922005 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

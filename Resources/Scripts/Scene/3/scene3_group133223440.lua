@@ -1,288 +1,131 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133223440
-L1_1 = {}
-L1_1.group_id = 133223440
-L1_1.isRandom = false
-L2_1 = {}
-L2_1[0] = 0
-L1_1.child_group = L2_1
-L1_1.notifyQuest = false
-L1_1.hasChild = false
-L1_1.selfSuiteId = 2
-L1_1.hasMultiStatues = false
-L2_1 = {}
-L2_1[10001] = 2
-L1_1.statuesMap = L2_1
-defs = L1_1
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 440001
-L2_1.gadget_id = 70230049
-L3_1 = {}
-L3_1.x = -5893.192
-L3_1.y = 201.963
-L3_1.z = -2516.361
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.143
-L3_1.y = 60.473
-L3_1.z = 0.164
-L2_1.rot = L3_1
-L2_1.level = 33
-L3_1 = GadgetState
-L3_1 = L3_1.GearStop
-L2_1.state = L3_1
-L2_1.persistent = true
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 440002
-L3_1.gadget_id = 70230044
-L4_1 = {}
-L4_1.x = -5895.13
-L4_1.y = 202.005
-L4_1.z = -2507.219
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.125
-L4_1.y = 97.472
-L4_1.z = 356.486
-L3_1.rot = L4_1
-L3_1.level = 33
-L4_1 = GadgetState
-L4_1 = L4_1.GearStop
-L3_1.state = L4_1
-L3_1.persistent = true
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 440003
-L4_1.gadget_id = 70230048
-L5_1 = {}
-L5_1.x = -5886.963
-L5_1.y = 202.102
-L5_1.z = -2498.954
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 359.792
-L5_1.y = 174.305
-L5_1.z = 0.064
-L4_1.rot = L5_1
-L4_1.level = 33
-L5_1 = GadgetState
-L5_1 = L5_1.GearStop
-L4_1.state = L5_1
-L4_1.persistent = true
-L4_1.area_id = 18
-L5_1 = {}
-L5_1.config_id = 440004
-L5_1.gadget_id = 70230046
-L6_1 = {}
-L6_1.x = -5877.065
-L6_1.y = 202.138
-L6_1.z = -2501.844
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 359.825
-L6_1.y = 227.965
-L6_1.z = 359.871
-L5_1.rot = L6_1
-L5_1.level = 33
-L6_1 = GadgetState
-L6_1 = L6_1.GearStop
-L5_1.state = L6_1
-L5_1.persistent = true
-L5_1.area_id = 18
-L6_1 = {}
-L6_1.config_id = 440005
-L6_1.gadget_id = 70230050
-L7_1 = {}
-L7_1.x = -5873.748
-L7_1.y = 202.094
-L7_1.z = -2513.079
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.096
-L7_1.y = 307.657
-L7_1.z = 359.805
-L6_1.rot = L7_1
-L6_1.level = 33
-L7_1 = GadgetState
-L7_1 = L7_1.GearStop
-L6_1.state = L7_1
-L6_1.persistent = true
-L6_1.area_id = 18
-L7_1 = {}
-L7_1.config_id = 440006
-L7_1.gadget_id = 70230045
-L8_1 = {}
-L8_1.x = -5884.393
-L8_1.y = 201.85
-L8_1.z = -2519.08
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.213
-L8_1.y = 359.829
-L8_1.z = 359.956
-L7_1.rot = L8_1
-L7_1.level = 33
-L8_1 = GadgetState
-L8_1 = L8_1.GearStop
-L7_1.state = L8_1
-L7_1.persistent = true
-L7_1.area_id = 18
-L8_1 = {}
-L8_1.config_id = 440007
-L8_1.gadget_id = 70290160
-L9_1 = {}
-L9_1.x = -5886.043
-L9_1.y = 201.406
-L9_1.z = -2509.74
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.213
-L9_1.y = 359.829
-L9_1.z = 359.956
-L8_1.rot = L9_1
-L8_1.level = 33
-L9_1 = GadgetState
-L9_1 = L9_1.GearStart
-L8_1.state = L9_1
-L8_1.persistent = true
-L8_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1440008
-L2_1.name = "VARIABLE_CHANGE_440008"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_VARIABLE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_VARIABLE_CHANGE_440008"
-L2_1.action = "action_EVENT_VARIABLE_CHANGE_440008"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "Seed"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "Notified"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "Finish"
-L4_1.value = 0
-L4_1.no_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 440007
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "VARIABLE_CHANGE_440008"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 440001
-L6_1 = 440002
-L7_1 = 440003
-L8_1 = 440004
-L9_1 = 440005
-L10_1 = 440006
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Finish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133223440
+}
+
+-- DEFS_MISCS
+defs = {
+        group_id = 133223440,        --当前Group的ID
+        isRandom = false,--定义这个组是否会随机取
+        child_group = {[0] = 0}, --groupid和需要切到的SuiteID，一一对应
+        notifyQuest = false, --修改Group里一个变量
+        hasChild = false, --表示是否切当前Group的suite，true表示切自己的
+        selfSuiteId = 2, --需要切的自己的suite
+        hasMultiStatues = false, --是否有多个雷鸟雕像
+        statuesMap = 
+        {
+                [10001] = 2, --雷鸟雕像和需要切出来的Suite的对应表
+        },
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 440001, gadget_id = 70230049, pos = { x = -5893.192, y = 201.963, z = -2516.361 }, rot = { x = 0.143, y = 60.473, z = 0.164 }, level = 33, state = GadgetState.GearStop, persistent = true, area_id = 18 },
+	{ config_id = 440002, gadget_id = 70230044, pos = { x = -5895.130, y = 202.005, z = -2507.219 }, rot = { x = 0.125, y = 97.472, z = 356.486 }, level = 33, state = GadgetState.GearStop, persistent = true, area_id = 18 },
+	{ config_id = 440003, gadget_id = 70230048, pos = { x = -5886.963, y = 202.102, z = -2498.954 }, rot = { x = 359.792, y = 174.305, z = 0.064 }, level = 33, state = GadgetState.GearStop, persistent = true, area_id = 18 },
+	{ config_id = 440004, gadget_id = 70230046, pos = { x = -5877.065, y = 202.138, z = -2501.844 }, rot = { x = 359.825, y = 227.965, z = 359.871 }, level = 33, state = GadgetState.GearStop, persistent = true, area_id = 18 },
+	{ config_id = 440005, gadget_id = 70230050, pos = { x = -5873.748, y = 202.094, z = -2513.079 }, rot = { x = 0.096, y = 307.657, z = 359.805 }, level = 33, state = GadgetState.GearStop, persistent = true, area_id = 18 },
+	{ config_id = 440006, gadget_id = 70230045, pos = { x = -5884.393, y = 201.850, z = -2519.080 }, rot = { x = 0.213, y = 359.829, z = 359.956 }, level = 33, state = GadgetState.GearStop, persistent = true, area_id = 18 },
+	{ config_id = 440007, gadget_id = 70290160, pos = { x = -5886.043, y = 201.406, z = -2509.740 }, rot = { x = 0.213, y = 359.829, z = 359.956 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1440008, name = "VARIABLE_CHANGE_440008", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_440008", action = "action_EVENT_VARIABLE_CHANGE_440008" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Seed", value = 0, no_refresh = true },
+	{ config_id = 2, name = "Notified", value = 0, no_refresh = true },
+	{ config_id = 3, name = "Finish", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 440007 },
+		regions = { },
+		triggers = { "VARIABLE_CHANGE_440008" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 440001, 440002, 440003, 440004, 440005, 440006 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_440008(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"Finish"为1
+	if ScriptLib.GetGroupVariableValue(context, "Finish") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_440008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 440007
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_440008(context, evt)
+	-- 将configid为 440007 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 440007, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_440008 = L1_1
-L1_1 = require
-L2_1 = "V2_2/TsurumiBirdFather"
-L1_1(L2_1)
+
+require "V2_2/TsurumiBirdFather"

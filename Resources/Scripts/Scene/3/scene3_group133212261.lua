@@ -1,174 +1,113 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133212261
-L1_1 = {}
-L1_1.loop_mode = 0
-L1_1.group_ID = 133212261
-L1_1.gadget_1 = 261001
-L1_1.gadget_2 = 261002
-L1_1.gadget_3 = 261003
-L1_1.gadget_4 = 0
-L1_1.gadget_5 = 0
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 261001
-L3_1.gadget_id = 70330073
-L4_1 = {}
-L4_1.x = -3517.635
-L4_1.y = 201.058
-L4_1.z = -2899.753
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 125.286
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 30
-L4_1 = GadgetState
-L4_1 = L4_1.Action01
-L3_1.state = L4_1
-L3_1.area_id = 12
-L2_1[261001] = L3_1
-L3_1 = {}
-L3_1.config_id = 261002
-L3_1.gadget_id = 70330073
-L4_1 = {}
-L4_1.x = -3512.107
-L4_1.y = 200.559
-L4_1.z = -2896.557
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 358.158
-L4_1.y = 189.334
-L4_1.z = 359.296
-L3_1.rot = L4_1
-L3_1.level = 30
-L4_1 = GadgetState
-L4_1 = L4_1.Action02
-L3_1.state = L4_1
-L3_1.area_id = 12
-L2_1[261002] = L3_1
-L3_1 = {}
-L3_1.config_id = 261003
-L3_1.gadget_id = 70330073
-L4_1 = {}
-L4_1.x = -3508.453
-L4_1.y = 200.305
-L4_1.z = -2899.287
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 357.686
-L4_1.y = 243.027
-L4_1.z = 1.467
-L3_1.rot = L4_1
-L3_1.level = 30
-L4_1 = GadgetState
-L4_1 = L4_1.Action03
-L3_1.state = L4_1
-L3_1.area_id = 12
-L2_1[261003] = L3_1
-L3_1 = {}
-L3_1.config_id = 261006
-L3_1.gadget_id = 70211101
-L4_1 = {}
-L4_1.x = -3514.771
-L4_1.y = 201.135
-L4_1.z = -2898.625
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 1.19
-L4_1.y = 149.606
-L4_1.z = 6.242
-L3_1.rot = L4_1
-L3_1.level = 26
-L3_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\231\168\187\229\166\187"
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.name = "chest"
-L4_1.exp = 1
-L3_1.explore = L4_1
-L3_1.area_id = 12
-L2_1[261006] = L3_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1261007
-L3_1.name = "VARIABLE_CHANGE_261007"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_261007"
-L3_1.action = ""
-L2_1[1] = L3_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 261001
-L6_1 = 261002
-L7_1 = 261003
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 261006
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "successed"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133212261
+}
+
+-- Trigger变量
+local defs = {
+	loop_mode = 0,
+	group_ID = 133212261,
+	gadget_1 = 261001,
+	gadget_2 = 261002,
+	gadget_3 = 261003,
+	gadget_4 = 0,
+	gadget_5 = 0
+}
+
+-- DEFS_MISCS
+
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	[261001] = { config_id = 261001, gadget_id = 70330073, pos = { x = -3517.635, y = 201.058, z = -2899.753 }, rot = { x = 0.000, y = 125.286, z = 0.000 }, level = 30, state = GadgetState.Action01, area_id = 12 },
+	[261002] = { config_id = 261002, gadget_id = 70330073, pos = { x = -3512.107, y = 200.559, z = -2896.557 }, rot = { x = 358.158, y = 189.334, z = 359.296 }, level = 30, state = GadgetState.Action02, area_id = 12 },
+	[261003] = { config_id = 261003, gadget_id = 70330073, pos = { x = -3508.453, y = 200.305, z = -2899.287 }, rot = { x = 357.686, y = 243.027, z = 1.467 }, level = 30, state = GadgetState.Action03, area_id = 12 },
+	[261006] = { config_id = 261006, gadget_id = 70211101, pos = { x = -3514.771, y = 201.135, z = -2898.625 }, rot = { x = 1.190, y = 149.606, z = 6.242 }, level = 26, drop_tag = "解谜低级稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 12 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1261007, name = "VARIABLE_CHANGE_261007", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_261007", action = "" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 261001, 261002, 261003 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 261006 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_261007(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"successed"为1
+	if ScriptLib.GetGroupVariableValue(context, "successed") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_261007 = L2_1
-L2_1 = require
-L3_1 = "BlackBoxPlay/LightResonanceStone"
-L2_1(L3_1)
+
+require "BlackBoxPlay/LightResonanceStone"

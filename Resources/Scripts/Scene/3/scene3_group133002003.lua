@@ -1,193 +1,79 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 133002003
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 3001
-L2_1.monster_id = 28040104
-L3_1 = {}
-L3_1.x = 1823.381
-L3_1.y = 233.2
-L3_1.z = -902.877
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 10
-L2_1.drop_id = 1050127
-L2_1.ban_excel_drop = true
-L2_1.area_id = 3
-L3_1 = {}
-L3_1.config_id = 3002
-L3_1.monster_id = 28040104
-L4_1 = {}
-L4_1.x = 1825.587
-L4_1.y = 233.2
-L4_1.z = -908.752
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 10
-L3_1.drop_id = 1050127
-L3_1.ban_excel_drop = true
-L3_1.area_id = 3
-L4_1 = {}
-L4_1.config_id = 3003
-L4_1.monster_id = 28040104
-L5_1 = {}
-L5_1.x = 1819.956
-L5_1.y = 233.2
-L5_1.z = -907.339
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 10
-L4_1.drop_id = 1050127
-L4_1.ban_excel_drop = true
-L4_1.area_id = 3
-L5_1 = {}
-L5_1.config_id = 3004
-L5_1.monster_id = 28040104
-L6_1 = {}
-L6_1.x = 1821.342
-L6_1.y = 233.2
-L6_1.z = -910.645
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 10
-L5_1.drop_id = 1050127
-L5_1.ban_excel_drop = true
-L5_1.area_id = 3
-L6_1 = {}
-L6_1.config_id = 3005
-L6_1.monster_id = 28040104
-L7_1 = {}
-L7_1.x = 1815.738
-L7_1.y = 233.2
-L7_1.z = -908.371
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 10
-L6_1.drop_id = 1050127
-L6_1.ban_excel_drop = true
-L6_1.area_id = 3
-L7_1 = {}
-L7_1.config_id = 3006
-L7_1.monster_id = 28040104
-L8_1 = {}
-L8_1.x = 1818.372
-L8_1.y = 233.2
-L8_1.z = -916.594
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 10
-L7_1.drop_id = 1050127
-L7_1.ban_excel_drop = true
-L7_1.area_id = 3
-L8_1 = {}
-L8_1.config_id = 3007
-L8_1.monster_id = 28040104
-L9_1 = {}
-L9_1.x = 1823.449
-L9_1.y = 233.2
-L9_1.z = -911.07
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 10
-L8_1.drop_id = 1050127
-L8_1.ban_excel_drop = true
-L8_1.area_id = 3
-L9_1 = {}
-L9_1.config_id = 3008
-L9_1.monster_id = 28040104
-L10_1 = {}
-L10_1.x = 1821.708
-L10_1.y = 233.2
-L10_1.z = -907.729
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 10
-L9_1.drop_id = 1050127
-L9_1.ban_excel_drop = true
-L9_1.area_id = 3
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = 3001
-L5_1 = 3002
-L6_1 = 3003
-L7_1 = 3004
-L8_1 = 3005
-L9_1 = 3006
-L10_1 = 3007
-L11_1 = 3008
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133002003
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 3001, monster_id = 28040104, pos = { x = 1823.381, y = 233.200, z = -902.877 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 10, drop_id = 1050127, ban_excel_drop = true, area_id = 3 },
+	{ config_id = 3002, monster_id = 28040104, pos = { x = 1825.587, y = 233.200, z = -908.752 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 10, drop_id = 1050127, ban_excel_drop = true, area_id = 3 },
+	{ config_id = 3003, monster_id = 28040104, pos = { x = 1819.956, y = 233.200, z = -907.339 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 10, drop_id = 1050127, ban_excel_drop = true, area_id = 3 },
+	{ config_id = 3004, monster_id = 28040104, pos = { x = 1821.342, y = 233.200, z = -910.645 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 10, drop_id = 1050127, ban_excel_drop = true, area_id = 3 },
+	{ config_id = 3005, monster_id = 28040104, pos = { x = 1815.738, y = 233.200, z = -908.371 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 10, drop_id = 1050127, ban_excel_drop = true, area_id = 3 },
+	{ config_id = 3006, monster_id = 28040104, pos = { x = 1818.372, y = 233.200, z = -916.594 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 10, drop_id = 1050127, ban_excel_drop = true, area_id = 3 },
+	{ config_id = 3007, monster_id = 28040104, pos = { x = 1823.449, y = 233.200, z = -911.070 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 10, drop_id = 1050127, ban_excel_drop = true, area_id = 3 },
+	{ config_id = 3008, monster_id = 28040104, pos = { x = 1821.708, y = 233.200, z = -907.729 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 10, drop_id = 1050127, ban_excel_drop = true, area_id = 3 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

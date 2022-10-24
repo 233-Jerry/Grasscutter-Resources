@@ -1,583 +1,250 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133222241
-L1_1 = {}
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 241001
-L3_1.gadget_id = 70360183
-L4_1 = {}
-L4_1.x = -4436.752
-L4_1.y = 205.804
-L4_1.z = -3744.638
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 4.232
-L4_1.y = 85.25
-L4_1.z = 354.787
-L3_1.rot = L4_1
-L3_1.level = 30
-L4_1 = GadgetState
-L4_1 = L4_1.GearStart
-L3_1.state = L4_1
-L3_1.persistent = true
-L3_1.area_id = 14
-L4_1 = {}
-L4_1.config_id = 241002
-L4_1.gadget_id = 70360182
-L5_1 = {}
-L5_1.x = -4427.282
-L5_1.y = 205.105
-L5_1.z = -3744.089
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 4.575
-L5_1.y = 174.845
-L5_1.z = 4.468
-L4_1.rot = L5_1
-L4_1.level = 30
-L5_1 = GadgetState
-L5_1 = L5_1.GearStop
-L4_1.state = L5_1
-L4_1.persistent = true
-L4_1.area_id = 14
-L5_1 = {}
-L5_1.config_id = 241003
-L5_1.gadget_id = 70360181
-L6_1 = {}
-L6_1.x = -4436.337
-L6_1.y = 205.381
-L6_1.z = -3749.031
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 354.737
-L6_1.y = 354.898
-L6_1.z = 355.787
-L5_1.rot = L6_1
-L5_1.level = 30
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L5_1.persistent = true
-L5_1.area_id = 14
-L6_1 = {}
-L6_1.config_id = 241004
-L6_1.gadget_id = 70360181
-L7_1 = {}
-L7_1.x = -4426.838
-L7_1.y = 204.656
-L7_1.z = -3748.37
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 355.799
-L7_1.y = 264.055
-L7_1.z = 5.276
-L6_1.rot = L7_1
-L6_1.level = 30
-L7_1 = GadgetState
-L7_1 = L7_1.GearAction1
-L6_1.state = L7_1
-L6_1.persistent = true
-L6_1.area_id = 14
-L7_1 = {}
-L7_1.config_id = 241005
-L7_1.gadget_id = 70211112
-L8_1 = {}
-L8_1.x = -4433.881
-L8_1.y = 205.606
-L8_1.z = -3744.04
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 4.137
-L8_1.y = 188.355
-L8_1.z = 5.289
-L7_1.rot = L8_1
-L7_1.level = 26
-L7_1.drop_tag = "\232\167\163\232\176\156\228\184\173\231\186\167\231\168\187\229\166\187"
-L8_1 = GadgetState
-L8_1 = L8_1.ChestLocked
-L7_1.state = L8_1
-L7_1.isOneoff = true
-L7_1.persistent = true
-L8_1 = {}
-L8_1.name = "chest"
-L8_1.exp = 1
-L7_1.explore = L8_1
-L7_1.area_id = 14
-L8_1 = {}
-L8_1.config_id = 241010
-L8_1.gadget_id = 70360040
-L9_1 = {}
-L9_1.x = -4432.251
-L9_1.y = 206.337
-L9_1.z = -3743.013
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 30
-L8_1.area_id = 14
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1241006
-L3_1.name = "GADGET_STATE_CHANGE_241006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_241006"
-L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_241006"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1241007
-L4_1.name = "GADGET_STATE_CHANGE_241007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_241007"
-L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_241007"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1241008
-L5_1.name = "GROUP_LOAD_241008"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GROUP_LOAD
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_GROUP_LOAD_241008"
-L5_1.action = "action_EVENT_GROUP_LOAD_241008"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1241009
-L6_1.name = "TIME_AXIS_PASS_241009"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_TIME_AXIS_PASS
-L6_1.event = L7_1
-L6_1.source = "CutScene"
-L6_1.condition = "condition_EVENT_TIME_AXIS_PASS_241009"
-L6_1.action = "action_EVENT_TIME_AXIS_PASS_241009"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1241011
-L7_1.name = "GROUP_LOAD_241011"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GROUP_LOAD
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GROUP_LOAD_241011"
-L7_1.action = "action_EVENT_GROUP_LOAD_241011"
-L7_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "Finish"
-L3_1.value = 0
-L3_1.no_refresh = true
-L2_1[1] = L3_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 241001
-L6_1 = 241002
-L7_1 = 241003
-L8_1 = 241004
-L9_1 = 241005
-L10_1 = 241010
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_STATE_CHANGE_241006"
-L6_1 = "GADGET_STATE_CHANGE_241007"
-L7_1 = "GROUP_LOAD_241008"
-L8_1 = "TIME_AXIS_PASS_241009"
-L9_1 = "GROUP_LOAD_241011"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = GadgetState
-  L2_2 = L2_2.Default
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = 133222241
-  L6_2 = 241001
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = GadgetState
-  L2_2 = L2_2.Default
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = 133222241
-  L6_2 = 241002
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = GadgetState
-  L2_2 = L2_2.Default
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = 133222241
-  L6_2 = 241003
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = GadgetState
-  L2_2 = L2_2.Default
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = 133222241
-  L6_2 = 241004
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Finish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133222241
+}
+
+-- DEFS_MISCS
+local connection = {
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 241001, gadget_id = 70360183, pos = { x = -4436.752, y = 205.804, z = -3744.638 }, rot = { x = 4.232, y = 85.250, z = 354.787 }, level = 30, state = GadgetState.GearStart, persistent = true, area_id = 14 },
+	{ config_id = 241002, gadget_id = 70360182, pos = { x = -4427.282, y = 205.105, z = -3744.089 }, rot = { x = 4.575, y = 174.845, z = 4.468 }, level = 30, state = GadgetState.GearStop, persistent = true, area_id = 14 },
+	{ config_id = 241003, gadget_id = 70360181, pos = { x = -4436.337, y = 205.381, z = -3749.031 }, rot = { x = 354.737, y = 354.898, z = 355.787 }, level = 30, state = GadgetState.GearStart, persistent = true, area_id = 14 },
+	{ config_id = 241004, gadget_id = 70360181, pos = { x = -4426.838, y = 204.656, z = -3748.370 }, rot = { x = 355.799, y = 264.055, z = 5.276 }, level = 30, state = GadgetState.GearAction1, persistent = true, area_id = 14 },
+	{ config_id = 241005, gadget_id = 70211112, pos = { x = -4433.881, y = 205.606, z = -3744.040 }, rot = { x = 4.137, y = 188.355, z = 5.289 }, level = 26, drop_tag = "解谜中级稻妻", state = GadgetState.ChestLocked, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 14 },
+	{ config_id = 241010, gadget_id = 70360040, pos = { x = -4432.251, y = 206.337, z = -3743.013 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 14 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 成就
+	{ config_id = 1241006, name = "GADGET_STATE_CHANGE_241006", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_241006", action = "action_EVENT_GADGET_STATE_CHANGE_241006", trigger_count = 0 },
+	-- 完成和播放CS
+	{ config_id = 1241007, name = "GADGET_STATE_CHANGE_241007", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_241007", action = "action_EVENT_GADGET_STATE_CHANGE_241007", trigger_count = 0 },
+	-- 如果没有完成则重置
+	{ config_id = 1241008, name = "GROUP_LOAD_241008", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_241008", action = "action_EVENT_GROUP_LOAD_241008", trigger_count = 0 },
+	-- 延时干掉
+	{ config_id = 1241009, name = "TIME_AXIS_PASS_241009", event = EventType.EVENT_TIME_AXIS_PASS, source = "CutScene", condition = "condition_EVENT_TIME_AXIS_PASS_241009", action = "action_EVENT_TIME_AXIS_PASS_241009", trigger_count = 0 },
+	-- 完成了 要是没有删除则再删除一遍门
+	{ config_id = 1241011, name = "GROUP_LOAD_241011", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_241011", action = "action_EVENT_GROUP_LOAD_241011", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Finish", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 241001, 241002, 241003, 241004, 241005, 241010 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_241006", "GADGET_STATE_CHANGE_241007", "GROUP_LOAD_241008", "TIME_AXIS_PASS_241009", "GROUP_LOAD_241011" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_241006(context, evt)
+	if GadgetState.Default ~= ScriptLib.GetGadgetStateByConfigId(context, 133222241, 241001) then
+		return false
+	end
+	
+	if GadgetState.Default ~= ScriptLib.GetGadgetStateByConfigId(context, 133222241, 241002) then
+		return false
+	end
+	
+	if GadgetState.Default ~= ScriptLib.GetGadgetStateByConfigId(context, 133222241, 241003) then
+		return false
+	end
+	
+	if GadgetState.Default ~= ScriptLib.GetGadgetStateByConfigId(context, 133222241, 241004) then
+		return false
+	end
+	
+	-- 判断变量"Finish"为0
+	if ScriptLib.GetGroupVariableValue(context, "Finish") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_241006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "Finish"
-  L5_2 = 1
-  L6_2 = 133217260
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_241006(context, evt)
+	-- 针对当前group内变量名为 "" 的变量，进行修改，变化值为 0
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "Finish", 1, 133217260 ) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_241006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = GadgetState
-  L2_2 = L2_2.Default
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = 133222241
-  L6_2 = 241001
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = GadgetState
-  L2_2 = L2_2.Default
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = 133222241
-  L6_2 = 241002
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = GadgetState
-  L2_2 = L2_2.Default
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = 133222241
-  L6_2 = 241003
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = GadgetState
-  L2_2 = L2_2.Default
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = 133222241
-  L6_2 = 241004
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Finish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_241007(context, evt)
+	if GadgetState.Default ~= ScriptLib.GetGadgetStateByConfigId(context, 133222241, 241001) then
+		return false
+	end
+	
+	if GadgetState.Default ~= ScriptLib.GetGadgetStateByConfigId(context, 133222241, 241002) then
+		return false
+	end
+	
+	if GadgetState.Default ~= ScriptLib.GetGadgetStateByConfigId(context, 133222241, 241003) then
+		return false
+	end
+	
+	if GadgetState.Default ~= ScriptLib.GetGadgetStateByConfigId(context, 133222241, 241004) then
+		return false
+	end
+	
+	-- 判断变量"Finish"为0
+	if ScriptLib.GetGroupVariableValue(context, "Finish") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_241007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 241005
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Finish"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "IsFinished"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PlayCutScene
-  L3_2 = A0_2
-  L4_2 = 33
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : play_cutscene"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "CutScene"
-  L5_2 = {}
-  L6_2 = 2
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_241007(context, evt)
+	-- 将configid为 241005 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 241005, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将本组内变量名为 "Finish" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "Finish", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "IsFinished" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "IsFinished", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 通知场景上的所有玩家播放名字为33 的cutscene
+	if 0 ~= ScriptLib.PlayCutScene(context, 33, 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : play_cutscene")
+			return -1
+		end 
+	
+	-- 创建标识为"CutScene"，时间节点为{2}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "CutScene", {2}, false)
+	
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_241007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Finish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_241008(context, evt)
+	-- 判断变量"Finish"为0
+	if ScriptLib.GetGroupVariableValue(context, "Finish") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_241008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133222241
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_241008(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133222241, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_241008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_241009(context, evt)
+	if 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_241009 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133217176
-  L5_2 = {}
-  L4_2.monsters = L5_2
-  L5_2 = {}
-  L6_2 = 176001
-  L5_2[1] = L6_2
-  L4_2.gadgets = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monsters_and_gadgets_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_241009(context, evt)
+	-- 杀死Group内指定的monster和gadget
+	if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 133217176, monsters = {}, gadgets = {176001} }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monsters_and_gadgets_by_group")
+			return -1
+		end
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_241009 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Finish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_241011(context, evt)
+	-- 判断变量"Finish"为1
+	if ScriptLib.GetGroupVariableValue(context, "Finish") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_241011 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133217176
-  L5_2 = {}
-  L4_2.monsters = L5_2
-  L5_2 = {}
-  L6_2 = 176001
-  L5_2[1] = L6_2
-  L4_2.gadgets = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monsters_and_gadgets_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_241011(context, evt)
+	-- 杀死Group内指定的monster和gadget
+	if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 133217176, monsters = {}, gadgets = {176001} }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monsters_and_gadgets_by_group")
+			return -1
+		end
+	return 0
 end
-action_EVENT_GROUP_LOAD_241011 = L2_1
-L2_1 = require
-L3_1 = "V2_1/PirateHelm"
-L2_1(L3_1)
+
+require "V2_1/PirateHelm"

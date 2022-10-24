@@ -1,324 +1,142 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133212143
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 143002
-L2_1.npc_id = 20237
-L3_1 = {}
-L3_1.x = -3695.585
-L3_1.y = 201.125
-L3_1.z = -1759.62
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.581
-L3_1.y = 169.296
-L3_1.z = 359.047
-L2_1.rot = L3_1
-L2_1.area_id = 13
-L3_1 = {}
-L3_1.config_id = 143003
-L3_1.npc_id = 20258
-L4_1 = {}
-L4_1.x = -3695.585
-L4_1.y = 201.125
-L4_1.z = -1759.62
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.581
-L4_1.y = 169.296
-L4_1.z = 359.047
-L3_1.rot = L4_1
-L3_1.area_id = 13
-L4_1 = {}
-L4_1.config_id = 143004
-L4_1.npc_id = 20259
-L5_1 = {}
-L5_1.x = -3695.585
-L5_1.y = 201.125
-L5_1.z = -1759.62
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.581
-L5_1.y = 169.296
-L5_1.z = 359.047
-L4_1.rot = L5_1
-L4_1.area_id = 13
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 143001
-L2_1.gadget_id = 70290122
-L3_1 = {}
-L3_1.x = -3695.713
-L3_1.y = 199.304
-L3_1.z = -1759.215
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.321
-L3_1.y = 154.604
-L3_1.z = 358.931
-L2_1.rot = L3_1
-L2_1.level = 27
-L3_1 = GadgetState
-L3_1 = L3_1.GearStop
-L2_1.state = L3_1
-L2_1.persistent = true
-L2_1.area_id = 13
-L3_1 = {}
-L3_1.config_id = 143008
-L3_1.gadget_id = 70950114
-L4_1 = {}
-L4_1.x = -3672.863
-L4_1.y = 200.725
-L4_1.z = -1754.999
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 276.524
-L4_1.y = 339.875
-L4_1.z = 285.007
-L3_1.rot = L4_1
-L3_1.level = 27
-L3_1.area_id = 13
-L4_1 = {}
-L4_1.config_id = 143009
-L4_1.gadget_id = 70290135
-L5_1 = {}
-L5_1.x = -3698.607
-L5_1.y = 200.0
-L5_1.z = -1754.45
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 345.821
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 27
-L4_1.area_id = 13
-L5_1 = {}
-L5_1.config_id = 143010
-L5_1.gadget_id = 70290135
-L6_1 = {}
-L6_1.x = -3700.766
-L6_1.y = 200.0
-L6_1.z = -1745.904
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 345.821
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 27
-L5_1.area_id = 13
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1143005
-L2_1.name = "QUEST_START_143005"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_QUEST_START
-L2_1.event = L3_1
-L2_1.source = "7213202"
-L2_1.condition = ""
-L2_1.action = "action_EVENT_QUEST_START_143005"
-L3_1 = {}
-L3_1.config_id = 1143006
-L3_1.name = "QUEST_FINISH_143006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_QUEST_FINISH
-L3_1.event = L4_1
-L3_1.source = "7213206"
-L3_1.condition = ""
-L3_1.action = "action_EVENT_QUEST_FINISH_143006"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1143007
-L4_1.name = "QUEST_FINISH_143007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_QUEST_FINISH
-L4_1.event = L5_1
-L4_1.source = "7212905"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_QUEST_FINISH_143007"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1143011
-L5_1.name = "QUEST_FINISH_143011"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_QUEST_FINISH
-L5_1.event = L6_1
-L5_1.source = "7213204"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_QUEST_FINISH_143011"
-L5_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 143001
-L6_1 = 143008
-L7_1 = 143009
-L8_1 = 143010
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "QUEST_START_143005"
-L6_1 = "QUEST_FINISH_143006"
-L7_1 = "QUEST_FINISH_143007"
-L8_1 = "QUEST_FINISH_143011"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.triggers = L4_1
-L4_1 = {}
-L5_1 = 143002
-L6_1 = 143003
-L7_1 = 143004
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.npcs = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 321234011
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133212143
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+	{ config_id = 143002, npc_id = 20237, pos = { x = -3695.585, y = 201.125, z = -1759.620 }, rot = { x = 0.581, y = 169.296, z = 359.047 }, area_id = 13 },
+	{ config_id = 143003, npc_id = 20258, pos = { x = -3695.585, y = 201.125, z = -1759.620 }, rot = { x = 0.581, y = 169.296, z = 359.047 }, area_id = 13 },
+	{ config_id = 143004, npc_id = 20259, pos = { x = -3695.585, y = 201.125, z = -1759.620 }, rot = { x = 0.581, y = 169.296, z = 359.047 }, area_id = 13 }
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 143001, gadget_id = 70290122, pos = { x = -3695.713, y = 199.304, z = -1759.215 }, rot = { x = 0.321, y = 154.604, z = 358.931 }, level = 27, state = GadgetState.GearStop, persistent = true, area_id = 13 },
+	{ config_id = 143008, gadget_id = 70950114, pos = { x = -3672.863, y = 200.725, z = -1754.999 }, rot = { x = 276.524, y = 339.875, z = 285.007 }, level = 27, area_id = 13 },
+	{ config_id = 143009, gadget_id = 70290135, pos = { x = -3698.607, y = 200.000, z = -1754.450 }, rot = { x = 0.000, y = 345.821, z = 0.000 }, level = 27, area_id = 13 },
+	{ config_id = 143010, gadget_id = 70290135, pos = { x = -3700.766, y = 200.000, z = -1745.904 }, rot = { x = 0.000, y = 345.821, z = 0.000 }, level = 27, area_id = 13 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1143005, name = "QUEST_START_143005", event = EventType.EVENT_QUEST_START, source = "7213202", condition = "", action = "action_EVENT_QUEST_START_143005" },
+	{ config_id = 1143006, name = "QUEST_FINISH_143006", event = EventType.EVENT_QUEST_FINISH, source = "7213206", condition = "", action = "action_EVENT_QUEST_FINISH_143006", trigger_count = 0 },
+	{ config_id = 1143007, name = "QUEST_FINISH_143007", event = EventType.EVENT_QUEST_FINISH, source = "7212905", condition = "", action = "action_EVENT_QUEST_FINISH_143007", trigger_count = 0 },
+	{ config_id = 1143011, name = "QUEST_FINISH_143011", event = EventType.EVENT_QUEST_FINISH, source = "7213204", condition = "", action = "action_EVENT_QUEST_FINISH_143011", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 143001, 143008, 143009, 143010 },
+		regions = { },
+		triggers = { "QUEST_START_143005", "QUEST_FINISH_143006", "QUEST_FINISH_143007", "QUEST_FINISH_143011" },
+		npcs = { 143002, 143003, 143004 },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_START_143005(context, evt)
+	-- 调用提示id为 321234011 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 321234011) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_143005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 321234041
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 143001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_143006(context, evt)
+	-- 调用提示id为 321234041 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 321234041) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 将configid为 143001 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 143001, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_143006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 143001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_143007(context, evt)
+	-- 将configid为 143001 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 143001, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_143007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 143001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_143011(context, evt)
+	-- 将configid为 143001 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 143001, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_143011 = L1_1

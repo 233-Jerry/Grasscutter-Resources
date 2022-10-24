@@ -1,493 +1,258 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133107249
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 249005
-L2_1.gadget_id = 70710690
-L3_1 = {}
-L3_1.x = -788.555
-L3_1.y = 230.511
-L3_1.z = 233.826
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.drop_id = 1000100
-L2_1.drop_count = 1
-L2_1.persistent = true
-L2_1.area_id = 7
-L3_1 = {}
-L3_1.config_id = 249006
-L3_1.gadget_id = 70710692
-L4_1 = {}
-L4_1.x = -793.985
-L4_1.y = 231.529
-L4_1.z = 233.87
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.drop_id = 1000100
-L3_1.drop_count = 1
-L3_1.persistent = true
-L3_1.area_id = 7
-L4_1 = {}
-L4_1.config_id = 249007
-L4_1.gadget_id = 70310004
-L5_1 = {}
-L5_1.x = -793.953
-L5_1.y = 231.498
-L5_1.z = 233.823
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 352.702
-L5_1.y = 303.614
-L5_1.z = 346.616
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.drop_id = 1000100
-L4_1.drop_count = 1
-L4_1.persistent = true
-L4_1.area_id = 7
-L5_1 = {}
-L5_1.config_id = 249008
-L5_1.gadget_id = 70710691
-L6_1 = {}
-L6_1.x = -792.369
-L6_1.y = 230.938
-L6_1.z = 235.879
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.drop_id = 1000100
-L5_1.drop_count = 1
-L5_1.persistent = true
-L5_1.area_id = 7
-L6_1 = {}
-L6_1.config_id = 249009
-L6_1.gadget_id = 70710717
-L7_1 = {}
-L7_1.x = -792.575
-L7_1.y = 233.004
-L7_1.z = 225.721
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 12.702
-L7_1.y = 356.513
-L7_1.z = 351.422
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.drop_id = 1000100
-L6_1.drop_count = 1
-L6_1.persistent = true
-L6_1.area_id = 7
-L7_1 = {}
-L7_1.config_id = 249011
-L7_1.gadget_id = 70220001
-L8_1 = {}
-L8_1.x = -792.575
-L8_1.y = 233.004
-L8_1.z = 225.721
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 12.702
-L8_1.y = 356.513
-L8_1.z = 351.422
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.drop_id = 1000100
-L7_1.drop_count = 1
-L7_1.area_id = 7
-L8_1 = {}
-L8_1.config_id = 249014
-L8_1.gadget_id = 70710682
-L9_1 = {}
-L9_1.x = -792.575
-L9_1.y = 233.004
-L9_1.z = 225.721
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 12.702
-L9_1.y = 356.513
-L9_1.z = 351.422
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.drop_id = 1000100
-L8_1.drop_count = 1
-L8_1.persistent = true
-L8_1.area_id = 7
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1249002
-L2_1.name = "GADGETTALK_DONE_249002"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGETTALK_DONE
-L2_1.event = L3_1
-L2_1.source = "1101929"
-L2_1.condition = ""
-L2_1.action = "action_EVENT_GADGETTALK_DONE_249002"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1249003
-L3_1.name = "GADGETTALK_DONE_249003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGETTALK_DONE
-L3_1.event = L4_1
-L3_1.source = "1101926"
-L3_1.condition = ""
-L3_1.action = "action_EVENT_GADGETTALK_DONE_249003"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1249012
-L4_1.name = "GADGETTALK_DONE_249012"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGETTALK_DONE
-L4_1.event = L5_1
-L4_1.source = "1101928"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_GADGETTALK_DONE_249012"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1249013
-L5_1.name = "ANY_GADGET_DIE_249013"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ANY_GADGET_DIE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ANY_GADGET_DIE_249013"
-L5_1.action = "action_EVENT_ANY_GADGET_DIE_249013"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1249015
-L6_1.name = "GADGETTALK_DONE_249015"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GADGETTALK_DONE
-L6_1.event = L7_1
-L6_1.source = "1101925"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_GADGETTALK_DONE_249015"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1249016
-L7_1.name = "GADGETTALK_DONE_249016"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GADGETTALK_DONE
-L7_1.event = L8_1
-L7_1.source = "1101927"
-L7_1.condition = ""
-L7_1.action = "action_EVENT_GADGETTALK_DONE_249016"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1249017
-L8_1.name = "ANY_GADGET_DIE_249017"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_ANY_GADGET_DIE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_ANY_GADGET_DIE_249017"
-L8_1.action = "action_EVENT_ANY_GADGET_DIE_249017"
-L8_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "Leaftalkfinish"
-L2_1.value = 0
-L2_1.no_refresh = true
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 249005
-L5_1 = 249006
-L6_1 = 249007
-L7_1 = 249008
-L8_1 = 249011
-L9_1 = 249014
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GADGETTALK_DONE_249002"
-L5_1 = "GADGETTALK_DONE_249003"
-L6_1 = "GADGETTALK_DONE_249012"
-L7_1 = "ANY_GADGET_DIE_249013"
-L8_1 = "GADGETTALK_DONE_249015"
-L9_1 = "GADGETTALK_DONE_249016"
-L10_1 = "ANY_GADGET_DIE_249017"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 249009
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133107249
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 249014
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Leaftalkfinish"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133107249
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	-- 打斗的痕迹
+	{ config_id = 249005, gadget_id = 70710690, pos = { x = -788.555, y = 230.511, z = 233.826 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_id = 1000100, drop_count = 1, persistent = true, area_id = 7, is_enable_interact = false },
+	-- 燃尽的火堆交互点
+	{ config_id = 249006, gadget_id = 70710692, pos = { x = -793.985, y = 231.529, z = 233.870 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_id = 1000100, drop_count = 1, persistent = true, area_id = 7, is_enable_interact = false },
+	-- 火堆
+	{ config_id = 249007, gadget_id = 70310004, pos = { x = -793.953, y = 231.498, z = 233.823 }, rot = { x = 352.702, y = 303.614, z = 346.616 }, level = 1, drop_id = 1000100, drop_count = 1, persistent = true, area_id = 7 },
+	-- 竹席的痕迹
+	{ config_id = 249008, gadget_id = 70710691, pos = { x = -792.369, y = 230.938, z = 235.879 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_id = 1000100, drop_count = 1, persistent = true, area_id = 7, is_enable_interact = false },
+	-- 果核
+	{ config_id = 249009, gadget_id = 70710717, pos = { x = -792.575, y = 233.004, z = 225.721 }, rot = { x = 12.702, y = 356.513, z = 351.422 }, level = 1, drop_id = 1000100, drop_count = 1, persistent = true, area_id = 7, is_enable_interact = false },
+	-- 落叶堆
+	{ config_id = 249011, gadget_id = 70220001, pos = { x = -792.575, y = 233.004, z = 225.721 }, rot = { x = 12.702, y = 356.513, z = 351.422 }, level = 1, drop_id = 1000100, drop_count = 1, area_id = 7 },
+	-- 调查落叶堆
+	{ config_id = 249014, gadget_id = 70710682, pos = { x = -792.575, y = 233.004, z = 225.721 }, rot = { x = 12.702, y = 356.513, z = 351.422 }, level = 1, drop_id = 1000100, drop_count = 1, persistent = true, area_id = 7, is_enable_interact = false }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1249001, name = "QUEST_START_249001", event = EventType.EVENT_QUEST_START, source = "1101923", condition = "", action = "action_EVENT_QUEST_START_249001", trigger_count = 0 },
+	-- 删掉落叶堆调查点
+	{ config_id = 1249002, name = "GADGETTALK_DONE_249002", event = EventType.EVENT_GADGETTALK_DONE, source = "1101929", condition = "", action = "action_EVENT_GADGETTALK_DONE_249002", trigger_count = 0 },
+	-- 删掉果核调查点
+	{ config_id = 1249003, name = "GADGETTALK_DONE_249003", event = EventType.EVENT_GADGETTALK_DONE, source = "1101926", condition = "", action = "action_EVENT_GADGETTALK_DONE_249003", trigger_count = 0 },
+	-- 删掉火堆调查点
+	{ config_id = 1249012, name = "GADGETTALK_DONE_249012", event = EventType.EVENT_GADGETTALK_DONE, source = "1101928", condition = "", action = "action_EVENT_GADGETTALK_DONE_249012", trigger_count = 0 },
+	-- 落叶堆死亡时，移除调查点
+	{ config_id = 1249013, name = "ANY_GADGET_DIE_249013", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_249013", action = "action_EVENT_ANY_GADGET_DIE_249013", trigger_count = 0 },
+	-- 删掉打斗痕迹调查点
+	{ config_id = 1249015, name = "GADGETTALK_DONE_249015", event = EventType.EVENT_GADGETTALK_DONE, source = "1101925", condition = "", action = "action_EVENT_GADGETTALK_DONE_249015", trigger_count = 0 },
+	-- 删掉压痕的调查点
+	{ config_id = 1249016, name = "GADGETTALK_DONE_249016", event = EventType.EVENT_GADGETTALK_DONE, source = "1101927", condition = "", action = "action_EVENT_GADGETTALK_DONE_249016", trigger_count = 0 },
+	-- 如果没有完成过物件对话，则创建果核
+	{ config_id = 1249017, name = "ANY_GADGET_DIE_249017", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_249017", action = "action_EVENT_ANY_GADGET_DIE_249017", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Leaftalkfinish", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 249005, 249006, 249007, 249008, 249011, 249014 },
+		regions = { },
+		triggers = { "QUEST_START_249001", "GADGETTALK_DONE_249002", "GADGETTALK_DONE_249003", "GADGETTALK_DONE_249012", "ANY_GADGET_DIE_249013", "GADGETTALK_DONE_249015", "GADGETTALK_DONE_249016", "ANY_GADGET_DIE_249017" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 249009 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_START_249001(context, evt)
+	        if 2 == ScriptLib.GetHostQuestState(context,1101925)  then
+	                if 0 == ScriptLib.CreateGadget(context, {config_id=249005}) then
+	                        ScriptLib.PrintGroupWarning(context, "## YeLan Quest : ReCreate 249005")
+	                end
+	        end
+	
+	        if 2 == ScriptLib.GetHostQuestState(context,1101926) and ScriptLib.GetGroupVariableValueByGroup(context, "Leaftalkfinish", 133107249) ~= 0 then
+	                if 0 == ScriptLib.CreateGadget(context, {config_id=249009}) then
+	                        ScriptLib.PrintGroupWarning(context, "## YeLan Quest : ReCreate 249009")
+	                end
+	        end
+	
+	        if 2 == ScriptLib.GetHostQuestState(context,1101926) and 0 == ScriptLib.GetGroupVariableValueByGroup(context, "Leaftalkfinish", 133107249) then
+	        -- 卸载已创建的果核
+	        if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133107249, EntityType.GADGET, 249009 ) then
+	                ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+	        end
+	                if 0 == ScriptLib.CreateGadget(context, {config_id=249011}) then
+	                        --ScriptLib.PrintGroupWarning(context, "## YeLan Quest : ReCreate 249011")
+	                end
+	                if 0 == ScriptLib.CreateGadget(context, {config_id=249014}) then
+	                        --ScriptLib.PrintGroupWarning(context, "## YeLan Quest : ReCreate 249014")
+	                end
+	        end
+	
+	        if 2 == ScriptLib.GetHostQuestState(context,1101927)  then
+	                if 0 == ScriptLib.CreateGadget(context, {config_id=249008}) then
+	                        ScriptLib.PrintGroupWarning(context, "## YeLan Quest : ReCreate 249008")
+	                end
+	        end
+	
+	        if 2 == ScriptLib.GetHostQuestState(context,1101928)  then
+	                if 0 == ScriptLib.CreateGadget(context, {config_id=249006}) then
+	                        ScriptLib.PrintGroupWarning(context, "## YeLan Quest : ReCreate 249006")
+	                end
+	        end
+	
+	return 0
 end
-action_EVENT_GADGETTALK_DONE_249002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133107249
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 249009
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGETTALK_DONE_249002(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133107249, EntityType.GADGET, 249014 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	-- 将本组内变量名为 "Leaftalkfinish" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "Leaftalkfinish", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGETTALK_DONE_249003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133107249
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 249006
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGETTALK_DONE_249003(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133107249, EntityType.GADGET, 249009 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GADGETTALK_DONE_249012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 249011 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGETTALK_DONE_249012(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133107249, EntityType.GADGET, 249006 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-condition_EVENT_ANY_GADGET_DIE_249013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133107249
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 249014
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_249013(context, evt)
+	if 249011 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-action_EVENT_ANY_GADGET_DIE_249013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133107249
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 249005
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_249013(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133107249, EntityType.GADGET, 249014 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GADGETTALK_DONE_249015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133107249
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 249008
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGETTALK_DONE_249015(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133107249, EntityType.GADGET, 249005 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GADGETTALK_DONE_249016 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if 249011 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "Leaftalkfinish"
-  L5_2 = 133107249
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGETTALK_DONE_249016(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133107249, EntityType.GADGET, 249008 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-condition_EVENT_ANY_GADGET_DIE_249017 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 249009
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_249017(context, evt)
+	if 249011 ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"Leaftalkfinish"为0
+	if ScriptLib.GetGroupVariableValueByGroup(context, "Leaftalkfinish", 133107249) ~= 0 then
+			return false
+	end
+	
+	return true
 end
-action_EVENT_ANY_GADGET_DIE_249017 = L1_1
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_249017(context, evt)
+	-- 创建id为249009的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 249009 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	return 0
+end

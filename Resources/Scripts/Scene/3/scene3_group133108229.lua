@@ -1,1155 +1,493 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1
-L0_1 = {}
-L0_1.group_id = 133108229
-L1_1 = {}
-L1_1.group_id = 133108229
-L1_1.num_monster = 3
-L1_1.monster_id_boss = 229004
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 229002
-L3_1.monster_id = 25010301
-L4_1 = {}
-L4_1.x = -76.149
-L4_1.y = 206.39
-L4_1.z = -648.343
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 160.879
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.drop_id = 1000100
-L3_1.disableWander = true
-L3_1.pose_id = 4
-L3_1.area_id = 7
-L4_1 = {}
-L4_1.config_id = 229003
-L4_1.monster_id = 25030201
-L5_1 = {}
-L5_1.x = -74.433
-L5_1.y = 206.514
-L5_1.z = -650.015
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 306.195
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.drop_id = 1000100
-L4_1.disableWander = true
-L4_1.pose_id = 4
-L4_1.area_id = 7
-L5_1 = {}
-L5_1.config_id = 229004
-L5_1.monster_id = 25010105
-L6_1 = {}
-L6_1.x = -75.899
-L6_1.y = 207.348
-L6_1.z = -652.137
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 350.7
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.drop_id = 1000100
-L5_1.disableWander = true
-L5_1.area_id = 7
-L6_1 = {}
-L6_1.config_id = 229005
-L6_1.monster_id = 25030301
-L7_1 = {}
-L7_1.x = -77.486
-L7_1.y = 207.485
-L7_1.z = -650.061
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 36.052
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 30
-L6_1.drop_id = 1000100
-L6_1.disableWander = true
-L6_1.pose_id = 4
-L6_1.area_id = 7
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 229007
-L3_1.gadget_id = 70800056
-L4_1 = {}
-L4_1.x = -69.962
-L4_1.y = 205.17
-L4_1.z = -648.678
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 2.285
-L4_1.y = 286.486
-L4_1.z = 352.326
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 7
-L4_1 = {}
-L4_1.config_id = 229008
-L4_1.gadget_id = 70800056
-L5_1 = {}
-L5_1.x = -74.981
-L5_1.y = 207.893
-L5_1.z = -656.103
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 357.165
-L5_1.y = 174.791
-L5_1.z = 358.463
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 7
-L5_1 = {}
-L5_1.config_id = 229009
-L5_1.gadget_id = 70300092
-L6_1 = {}
-L6_1.x = -71.434
-L6_1.y = 206.441
-L6_1.z = -652.032
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 351.101
-L6_1.y = 109.648
-L6_1.z = 21.175
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.area_id = 7
-L6_1 = {}
-L6_1.config_id = 229010
-L6_1.gadget_id = 70800102
-L7_1 = {}
-L7_1.x = -73.39
-L7_1.y = 205.192
-L7_1.z = -645.058
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.628
-L7_1.y = 250.421
-L7_1.z = 2.18
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 7
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 229011
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 30
-L4_1 = {}
-L4_1.x = -76.001
-L4_1.y = 206.995
-L4_1.z = -649.816
-L3_1.pos = L4_1
-L3_1.area_id = 7
-L4_1 = {}
-L4_1.config_id = 229012
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 50
-L5_1 = {}
-L5_1.x = -75.922
-L5_1.y = 206.982
-L5_1.z = -649.831
-L4_1.pos = L5_1
-L4_1.area_id = 7
-L5_1 = {}
-L5_1.config_id = 229013
-L6_1 = RegionShape
-L6_1 = L6_1.SPHERE
-L5_1.shape = L6_1
-L5_1.radius = 50
-L6_1 = {}
-L6_1.x = -75.922
-L6_1.y = 206.982
-L6_1.z = -649.831
-L5_1.pos = L6_1
-L5_1.area_id = 7
-L6_1 = {}
-L7_1 = "Firecracker_Play"
-L6_1[1] = L7_1
-L5_1.team_ability_group_list = L6_1
-L6_1 = {}
-L6_1.config_id = 229020
-L7_1 = RegionShape
-L7_1 = L7_1.SPHERE
-L6_1.shape = L7_1
-L6_1.radius = 50
-L7_1 = {}
-L7_1.x = -75.922
-L7_1.y = 206.982
-L7_1.z = -649.831
-L6_1.pos = L7_1
-L6_1.area_id = 7
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1229001
-L3_1.name = "GROUP_LOAD_229001"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GROUP_LOAD
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GROUP_LOAD_229001"
-L3_1.action = "action_EVENT_GROUP_LOAD_229001"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1229006
-L4_1.name = "TIME_AXIS_PASS_229006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_TIME_AXIS_PASS
-L4_1.event = L5_1
-L4_1.source = "started"
-L4_1.condition = "condition_EVENT_TIME_AXIS_PASS_229006"
-L4_1.action = "action_EVENT_TIME_AXIS_PASS_229006"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1229011
-L5_1.name = "ENTER_REGION_229011"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ENTER_REGION
-L5_1.event = L6_1
-L5_1.source = "1"
-L5_1.condition = "condition_EVENT_ENTER_REGION_229011"
-L5_1.action = "action_EVENT_ENTER_REGION_229011"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1229012
-L6_1.name = "LEAVE_REGION_229012"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_LEAVE_REGION
-L6_1.event = L7_1
-L6_1.source = "1"
-L6_1.condition = "condition_EVENT_LEAVE_REGION_229012"
-L6_1.action = "action_EVENT_LEAVE_REGION_229012"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1229014
-L7_1.name = "SELECT_OPTION_229014"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_SELECT_OPTION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_SELECT_OPTION_229014"
-L7_1.action = "action_EVENT_SELECT_OPTION_229014"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1229015
-L8_1.name = "VARIABLE_CHANGE_229015"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_VARIABLE_CHANGE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_VARIABLE_CHANGE_229015"
-L8_1.action = "action_EVENT_VARIABLE_CHANGE_229015"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1229016
-L9_1.name = "CHALLENGE_SUCCESS_229016"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_CHALLENGE_SUCCESS
-L9_1.event = L10_1
-L9_1.source = "2040"
-L9_1.condition = ""
-L9_1.action = "action_EVENT_CHALLENGE_SUCCESS_229016"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1229017
-L10_1.name = "CHALLENGE_FAIL_229017"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_CHALLENGE_FAIL
-L10_1.event = L11_1
-L10_1.source = "2040"
-L10_1.condition = ""
-L10_1.action = "action_EVENT_CHALLENGE_FAIL_229017"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1229018
-L11_1.name = "ANY_MONSTER_DIE_229018"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_ANY_MONSTER_DIE
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_ANY_MONSTER_DIE_229018"
-L11_1.action = ""
-L11_1.trigger_count = 0
-L11_1.tag = "20492"
-L12_1 = {}
-L12_1.config_id = 1229019
-L12_1.name = "ANY_MONSTER_DIE_229019"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_ANY_MONSTER_DIE
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = "condition_EVENT_ANY_MONSTER_DIE_229019"
-L12_1.action = ""
-L12_1.trigger_count = 0
-L12_1.tag = "20491"
-L13_1 = {}
-L13_1.config_id = 1229020
-L13_1.name = "ENTER_REGION_229020"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_ENTER_REGION
-L13_1.event = L14_1
-L13_1.source = "1"
-L13_1.condition = "condition_EVENT_ENTER_REGION_229020"
-L13_1.action = "action_EVENT_ENTER_REGION_229020"
-L13_1.trigger_count = 0
-L14_1 = {}
-L14_1.config_id = 1229021
-L14_1.name = "GROUP_LOAD_229021"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_GROUP_LOAD
-L14_1.event = L15_1
-L14_1.source = ""
-L14_1.condition = "condition_EVENT_GROUP_LOAD_229021"
-L14_1.action = "action_EVENT_GROUP_LOAD_229021"
-L14_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "challengeStart"
-L3_1.value = 0
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "challengeSuccess"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 3
-L5_1.name = "hasReward"
-L5_1.value = 0
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 4
-L6_1.name = "giveReward"
-L6_1.value = 0
-L6_1.no_refresh = false
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 2
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 229007
-L6_1 = 229008
-L7_1 = 229009
-L8_1 = 229010
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 229011
-L6_1 = 229012
-L7_1 = 229013
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GROUP_LOAD_229001"
-L6_1 = "TIME_AXIS_PASS_229006"
-L7_1 = "ENTER_REGION_229011"
-L8_1 = "LEAVE_REGION_229012"
-L9_1 = "VARIABLE_CHANGE_229015"
-L10_1 = "CHALLENGE_SUCCESS_229016"
-L11_1 = "CHALLENGE_FAIL_229017"
-L12_1 = "ANY_MONSTER_DIE_229018"
-L13_1 = "ANY_MONSTER_DIE_229019"
-L14_1 = "GROUP_LOAD_229021"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 229002
-L7_1 = 229003
-L8_1 = 229004
-L9_1 = 229005
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "SELECT_OPTION_229014"
-L6_1[1] = L7_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L9_1 = 229020
-L8_1[1] = L9_1
-L7_1.regions = L8_1
-L8_1 = {}
-L9_1 = "ENTER_REGION_229020"
-L8_1[1] = L9_1
-L7_1.triggers = L8_1
-L7_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "challengeSuccess"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133108229
+}
+
+-- Trigger变量
+local defs = {
+	group_id = 133108229,
+	num_monster = 3,
+	monster_id_boss = 229004
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 229002, monster_id = 25010301, pos = { x = -76.149, y = 206.390, z = -648.343 }, rot = { x = 0.000, y = 160.879, z = 0.000 }, level = 30, drop_id = 1000100, disableWander = true, pose_id = 4, area_id = 7 },
+	{ config_id = 229003, monster_id = 25030201, pos = { x = -74.433, y = 206.514, z = -650.015 }, rot = { x = 0.000, y = 306.195, z = 0.000 }, level = 30, drop_id = 1000100, disableWander = true, pose_id = 4, area_id = 7 },
+	{ config_id = 229004, monster_id = 25010105, pos = { x = -75.899, y = 207.348, z = -652.137 }, rot = { x = 0.000, y = 350.700, z = 0.000 }, level = 30, drop_id = 1000100, disableWander = true, area_id = 7 },
+	{ config_id = 229005, monster_id = 25030301, pos = { x = -77.486, y = 207.485, z = -650.061 }, rot = { x = 0.000, y = 36.052, z = 0.000 }, level = 30, drop_id = 1000100, disableWander = true, pose_id = 4, area_id = 7 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 229007, gadget_id = 70800056, pos = { x = -69.962, y = 205.170, z = -648.678 }, rot = { x = 2.285, y = 286.486, z = 352.326 }, level = 1, area_id = 7 },
+	{ config_id = 229008, gadget_id = 70800056, pos = { x = -74.981, y = 207.893, z = -656.103 }, rot = { x = 357.165, y = 174.791, z = 358.463 }, level = 1, area_id = 7 },
+	{ config_id = 229009, gadget_id = 70300092, pos = { x = -71.434, y = 206.441, z = -652.032 }, rot = { x = 351.101, y = 109.648, z = 21.175 }, level = 1, area_id = 7 },
+	{ config_id = 229010, gadget_id = 70800102, pos = { x = -73.390, y = 205.192, z = -645.058 }, rot = { x = 0.628, y = 250.421, z = 2.180 }, level = 1, area_id = 7 }
+}
+
+-- 区域
+regions = {
+	-- 1 挑战2040开始
+	{ config_id = 229011, shape = RegionShape.SPHERE, radius = 30, pos = { x = -76.001, y = 206.995, z = -649.816 }, area_id = 7 },
+	-- 2 超出范围, flag还原，挑战失败
+	{ config_id = 229012, shape = RegionShape.SPHERE, radius = 50, pos = { x = -75.922, y = 206.982, z = -649.831 }, area_id = 7 },
+	-- ## 烟花箱交互
+	{ config_id = 229013, shape = RegionShape.SPHERE, radius = 50, pos = { x = -75.922, y = 206.982, z = -649.831 }, area_id = 7, team_ability_group_list = { "Firecracker_Play" } },
+	-- 确认玩家还在区域内并弹出reminder
+	{ config_id = 229020, shape = RegionShape.SPHERE, radius = 50, pos = { x = -75.922, y = 206.982, z = -649.831 }, area_id = 7 }
+}
+
+-- 触发器
+triggers = {
+	-- 保底 - 挑战完成解锁宝箱
+	{ config_id = 1229001, name = "GROUP_LOAD_229001", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_229001", action = "action_EVENT_GROUP_LOAD_229001", trigger_count = 0 },
+	-- 挑战横幅计时
+	{ config_id = 1229006, name = "TIME_AXIS_PASS_229006", event = EventType.EVENT_TIME_AXIS_PASS, source = "started", condition = "condition_EVENT_TIME_AXIS_PASS_229006", action = "action_EVENT_TIME_AXIS_PASS_229006", trigger_count = 0 },
+	-- 1 挑战2040开始
+	{ config_id = 1229011, name = "ENTER_REGION_229011", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_229011", action = "action_EVENT_ENTER_REGION_229011", trigger_count = 0 },
+	-- 2 超出范围, flag还原，挑战失败
+	{ config_id = 1229012, name = "LEAVE_REGION_229012", event = EventType.EVENT_LEAVE_REGION, source = "1", condition = "condition_EVENT_LEAVE_REGION_229012", action = "action_EVENT_LEAVE_REGION_229012", trigger_count = 0 },
+	-- 6 宝箱交互
+	{ config_id = 1229014, name = "SELECT_OPTION_229014", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_229014", action = "action_EVENT_SELECT_OPTION_229014", trigger_count = 0 },
+	-- 7 giveReward为1给奖励，事件结束
+	{ config_id = 1229015, name = "VARIABLE_CHANGE_229015", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_229015", action = "action_EVENT_VARIABLE_CHANGE_229015", trigger_count = 0 },
+	-- 5 挑战成功
+	{ config_id = 1229016, name = "CHALLENGE_SUCCESS_229016", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "2040", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_229016", trigger_count = 0 },
+	-- 3 挑战失败
+	{ config_id = 1229017, name = "CHALLENGE_FAIL_229017", event = EventType.EVENT_CHALLENGE_FAIL, source = "2040", condition = "", action = "action_EVENT_CHALLENGE_FAIL_229017", trigger_count = 0 },
+	-- 4#2 挑战2042计数，盗宝团死亡检查，tag 20492
+	{ config_id = 1229018, name = "ANY_MONSTER_DIE_229018", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_229018", action = "", trigger_count = 0, tag = "20492" },
+	-- 4#1 挑战2041计数，boss死亡检查，tag 20491
+	{ config_id = 1229019, name = "ANY_MONSTER_DIE_229019", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_229019", action = "", trigger_count = 0, tag = "20491" },
+	-- 确认玩家还在区域内并弹出reminder
+	{ config_id = 1229020, name = "ENTER_REGION_229020", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_229020", action = "action_EVENT_ENTER_REGION_229020", trigger_count = 0 },
+	-- 重置challengestart
+	{ config_id = 1229021, name = "GROUP_LOAD_229021", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_229021", action = "action_EVENT_GROUP_LOAD_229021", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "challengeStart", value = 0, no_refresh = false },
+	{ config_id = 2, name = "challengeSuccess", value = 0, no_refresh = false },
+	{ config_id = 3, name = "hasReward", value = 0, no_refresh = true },
+	{ config_id = 4, name = "giveReward", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 229007, 229008, 229009, 229010 },
+		regions = { 229011, 229012, 229013 },
+		triggers = { "GROUP_LOAD_229001", "TIME_AXIS_PASS_229006", "ENTER_REGION_229011", "LEAVE_REGION_229012", "VARIABLE_CHANGE_229015", "CHALLENGE_SUCCESS_229016", "CHALLENGE_FAIL_229017", "ANY_MONSTER_DIE_229018", "ANY_MONSTER_DIE_229019", "GROUP_LOAD_229021" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 229002, 229003, 229004, 229005 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "SELECT_OPTION_229014" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 229020 },
+		triggers = { "ENTER_REGION_229020" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_229001(context, evt)
+	-- 判断变量"challengeSuccess"为1
+	if ScriptLib.GetGroupVariableValue(context, "challengeSuccess") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_229001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133108229
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133108229
-  L5_2 = 229010
-  L6_2 = {}
-  L7_2 = 68
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 229010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_229001(context, evt)
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133108229, 3)
+	
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 133108229, 229010, {68}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	-- 将configid为 229010 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 229010, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_229001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "started" == L2_2 then
-    L2_2 = A1_2.param1
-    if 1 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_229006(context, evt)
+	if "started" ~= evt.source_name or 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_229006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133108229
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_229006(context, evt)
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133108229, 5)
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_229006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 229011 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "challengeStart"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "challengeSuccess"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetLanternRiteValue
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_229011(context, evt)
+	if evt.param1 ~= 229011 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	-- 判断变量"challengeStart"为0
+	if ScriptLib.GetGroupVariableValue(context, "challengeStart") ~= 0 then
+			return false
+	end
+	
+	-- 判断变量"challengeSuccess"为0
+	if ScriptLib.GetGroupVariableValue(context, "challengeSuccess") ~= 0 then
+			return false
+	end
+	
+	if ScriptLib.GetLanternRiteValue(context) ~=0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_229011 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "challengeStart"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Variable_StartWatcherCountDown"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateFatherChallenge
-  L3_2 = A0_2
-  L4_2 = 2040
-  L5_2 = 2004001
-  L6_2 = 99999999
-  L7_2 = {}
-  L7_2.success = 2
-  L7_2.fail = 100
-  L7_2.fail_on_wipe = true
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetSceneUidList
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.AttachChildChallenge
-  L4_2 = A0_2
-  L5_2 = 2040
-  L6_2 = 2041
-  L7_2 = 2004002
-  L8_2 = {}
-  L9_2 = 1
-  L10_2 = 20491
-  L11_2 = 1
-  L8_2[1] = L9_2
-  L8_2[2] = L10_2
-  L8_2[3] = L11_2
-  L9_2 = {}
-  L10_2 = L2_2[1]
-  L9_2[1] = L10_2
-  L10_2 = {}
-  L10_2.success = 1
-  L10_2.fail = 100
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.AttachChildChallenge
-  L4_2 = A0_2
-  L5_2 = 2040
-  L6_2 = 2042
-  L7_2 = 2004003
-  L8_2 = {}
-  L9_2 = 1
-  L10_2 = 20492
-  L11_2 = L1_1.num_monster
-  L8_2[1] = L9_2
-  L8_2[2] = L10_2
-  L8_2[3] = L11_2
-  L9_2 = {}
-  L10_2 = L2_2[1]
-  L9_2[1] = L10_2
-  L10_2 = {}
-  L10_2.success = 1
-  L10_2.fail = 100
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.StartFatherChallenge
-  L4_2 = A0_2
-  L5_2 = 2040
-  L3_2(L4_2, L5_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.AddExtraGroupSuite
-  L4_2 = A0_2
-  L5_2 = 133108229
-  L6_2 = 2
-  L3_2(L4_2, L5_2, L6_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.InitTimeAxis
-  L4_2 = A0_2
-  L5_2 = "started"
-  L6_2 = {}
-  L7_2 = 5
-  L6_2[1] = L7_2
-  L7_2 = false
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_229011(context, evt)
+	-- 将本组内变量名为 "challengeStart" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "challengeStart", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 开启时将本组内变量名为 "Variable_StartWatcherCountDown" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "Variable_StartWatcherCountDown", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 开始父挑战2004001，识别号2040，全灭时失败
+	ScriptLib.CreateFatherChallenge(context,2040,2004001,99999999, {success=2, fail=100,fail_on_wipe=true})
+	
+	local uid = ScriptLib.GetSceneUidList(context)
+	
+	-- #1 boss，子挑战2004002，识别号2041，触发1次，tag20491
+	ScriptLib.AttachChildChallenge(context,2040,2041,2004002,{1,20491,1},{uid[1]},{success=1, fail=100})
+	
+	-- #2 小怪，子挑战2004003，识别号2042，小怪，触发defs次，tag20492
+	ScriptLib.AttachChildChallenge(context,2040,2042,2004003,{1,20492,defs.num_monster},{uid[1]},{success=1, fail=100})
+	
+	-- 开始识别号2040的挑战
+	ScriptLib.StartFatherChallenge(context, 2040)
+	
+	-- 刷出suite2怪物
+	ScriptLib.AddExtraGroupSuite(context, 133108229, 2)
+	
+	-- 创建标识为"started"，时间节点为{5}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "started", {5}, false)
+	
+	
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_229011 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "challengeStart"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "challengeSuccess"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionConfigId
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 229012 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_LEAVE_REGION_229012(context, evt)
+	-- 判断变量"challengeStart"为1
+	if ScriptLib.GetGroupVariableValue(context, "challengeStart") ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"challengeSuccess"为0
+	if ScriptLib.GetGroupVariableValue(context, "challengeSuccess") ~= 0 then
+			return false
+	end
+	
+	-- 判断是区域229012
+	if ScriptLib.GetRegionConfigId(context, { region_eid = evt.source_eid }) ~= 229012 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_LEAVE_REGION_229012 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 2040
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133108229
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_LEAVE_REGION_229012(context, evt)
+	-- 终止识别id为2040的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 2040, 0)
+	
+	-- 删除suite2的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 133108229, 2)
+	
+	return 0
 end
-action_EVENT_LEAVE_REGION_229012 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 229010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 68 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_229014(context, evt)
+	-- 判断是gadgetid 229010 option_id 68
+	if 229010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 68 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_229014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133108229
-  L5_2 = 229010
-  L6_2 = 68
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133108229
-  L5_2 = 229010
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "giveReward"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_229014(context, evt)
+	-- 删除指定group： 133108229 ；指定config：229010；物件身上指定option：68；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133108229, 229010, 68) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 改变指定group组133108229中， configid为229010的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133108229, 229010, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 将本组内变量名为 "giveReward" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "giveReward", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_229014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "giveReward"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "hasReward"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_229015(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"giveReward"为1
+	if ScriptLib.GetGroupVariableValue(context, "giveReward") ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"hasReward"为0
+	if ScriptLib.GetGroupVariableValue(context, "hasReward") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_229015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "hasReward"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.FinishGroupLinkBundle
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133108229
-  L5_2 = 4
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : goto_groupSuite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_229015(context, evt)
+	-- 将本组内变量名为 "hasReward" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "hasReward", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	ScriptLib.FinishGroupLinkBundle(context, defs.group_id)
+	
+	-- group调整group进度,只对非randSuite有效
+	if 0 ~= ScriptLib.GoToGroupSuite(context, 133108229, 4) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : goto_groupSuite")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_229015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "challengeSuccess"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Variable_EndGame"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133108229
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133108229
-  L5_2 = 229010
-  L6_2 = {}
-  L7_2 = 68
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 229010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_229016(context, evt)
+	-- 将本组内变量名为 "challengeSuccess" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "challengeSuccess", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "Variable_EndGame" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "Variable_EndGame", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133108229, 3)
+	
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 133108229, 229010, {68}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	-- 将configid为 229010 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 229010, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_229016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "challengeStart"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133108229
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_229017(context, evt)
+	-- 将本组内变量名为 "challengeStart" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "challengeStart", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133108229, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_229017 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = L1_1.monster_id_boss
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_229018(context, evt)
+	--判断死亡怪物的configid是否为小怪，不是boss
+	if evt.param1 == defs.monster_id_boss then
+	    return false
+	 end
+	  
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_229018 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = L1_1.monster_id_boss
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_229019(context, evt)
+	--判断死亡怪物的configid是否为 204004
+	if evt.param1 ~= defs.monster_id_boss then
+	    return false
+	 end
+	  
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_229019 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 229020 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_229020(context, evt)
+	if evt.param1 ~= 229020 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_229020 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AssignPlayerShowTemplateReminder
-  L3_2 = A0_2
-  L4_2 = 160
-  L5_2 = {}
-  L6_2 = {}
-  L5_2.param_uid_vec = L6_2
-  L6_2 = {}
-  L5_2.param_vec = L6_2
-  L6_2 = {}
-  L7_2 = A0_2.uid
-  L6_2[1] = L7_2
-  L5_2.uid_vec = L6_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_229020(context, evt)
+	-- 显示id为160的reminder
+	if 0 ~= ScriptLib.AssignPlayerShowTemplateReminder(context,160,{param_uid_vec={},param_vec={},uid_vec={context.uid}}) then
+	  return -1
+	end
+	
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_229020 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "challengeSuccess"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_229021(context, evt)
+	-- 判断变量"challengeSuccess"为0
+	if ScriptLib.GetGroupVariableValue(context, "challengeSuccess") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_229021 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "challengeStart"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_229021(context, evt)
+	-- 将本组内变量名为 "challengeStart" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "challengeStart", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_229021 = L2_1
-L2_1 = require
-L3_1 = "V2_4/Firecracker"
-L2_1(L3_1)
-L2_1 = require
-L3_1 = "V2_4/SeaLamp_Challenge_Manager"
-L2_1(L3_1)
+
+require "V2_4/Firecracker"
+require "V2_4/SeaLamp_Challenge_Manager"

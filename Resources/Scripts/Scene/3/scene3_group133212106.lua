@@ -1,219 +1,117 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.group_id = 133212106
-L1_1 = {}
-L1_1.group_ID = 133212106
-L1_1.gadget_fundation01 = 106001
-L1_1.gadget_hand01 = 106003
-L1_1.gadget_fundation02 = 106002
-L1_1.gadget_hand02 = 106004
-L1_1.gadget_fundation03 = 0
-L1_1.gadget_hand03 = 0
-L1_1.gadget_fundation04 = 0
-L1_1.gadget_hand04 = 0
-L1_1.gadget_fundation05 = 0
-L1_1.gadget_hand05 = 0
-L1_1.minDiscrapancy = 15
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 106007
-L4_1.monster_id = 20010501
-L5_1 = {}
-L5_1.x = -4226.636
-L5_1.y = 201.334
-L5_1.z = -2527.705
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 27
-L4_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L4_1.disableWander = true
-L4_1.area_id = 13
-L5_1 = {}
-L5_1.config_id = 106008
-L5_1.monster_id = 20010501
-L6_1 = {}
-L6_1.x = -4229.474
-L6_1.y = 201.359
-L6_1.z = -2533.675
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 27
-L5_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L5_1.disableWander = true
-L5_1.area_id = 13
-L6_1 = {}
-L6_1.config_id = 106009
-L6_1.monster_id = 20010501
-L7_1 = {}
-L7_1.x = -4221.384
-L7_1.y = 200.392
-L7_1.z = -2531.487
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 27
-L6_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L6_1.disableWander = true
-L6_1.area_id = 13
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 106001
-L4_1.gadget_id = 70950084
-L5_1 = {}
-L5_1.x = -4222.261
-L5_1.y = 200.506
-L5_1.z = -2528.004
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 256.453
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.area_id = 13
-L5_1 = {}
-L5_1.config_id = 106002
-L5_1.gadget_id = 70950084
-L6_1 = {}
-L6_1.x = -4230.071
-L6_1.y = 201.451
-L6_1.z = -2531.419
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.area_id = 13
-L6_1 = {}
-L6_1.config_id = 106003
-L6_1.gadget_id = 70950085
-L7_1 = {}
-L7_1.x = -4222.258
-L7_1.y = 200.506
-L7_1.z = -2528.0
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 326.453
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 30
-L6_1.area_id = 13
-L7_1 = {}
-L7_1.config_id = 106004
-L7_1.gadget_id = 70950085
-L8_1 = {}
-L8_1.x = -4230.067
-L8_1.y = 201.325
-L8_1.z = -2531.415
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 90.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 30
-L7_1.area_id = 13
-L8_1 = {}
-L8_1.config_id = 106005
-L8_1.gadget_id = 70211101
-L9_1 = {}
-L9_1.x = -4225.601
-L9_1.y = 200.886
-L9_1.z = -2532.841
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 353.337
-L9_1.y = 335.798
-L9_1.z = 354.374
-L8_1.rot = L9_1
-L8_1.level = 26
-L8_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\231\168\187\229\166\187"
-L8_1.isOneoff = true
-L8_1.persistent = true
-L9_1 = {}
-L9_1.name = "chest"
-L9_1.exp = 1
-L8_1.explore = L9_1
-L8_1.area_id = 13
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1106006
-L4_1.name = "VARIABLE_CHANGE_106006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_VARIABLE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_VARIABLE_CHANGE_106006"
-L4_1.action = ""
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-L2_1 = require
-L3_1 = "BlackBoxPlay/MagneticGear"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133212106
+}
+
+-- Trigger变量
+local defs = {
+	group_ID = 133212106,
+	gadget_fundation01 = 106001,
+	gadget_hand01 = 106003,
+	gadget_fundation02 = 106002,
+	gadget_hand02 = 106004,
+	gadget_fundation03 = 0,
+	gadget_hand03 = 0,
+	gadget_fundation04 = 0,
+	gadget_hand04 = 0,
+	gadget_fundation05 = 0,
+	gadget_hand05 = 0,
+	minDiscrapancy = 15
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	monsters = {
+		{ config_id = 106007, monster_id = 20010501, pos = { x = -4226.636, y = 201.334, z = -2527.705 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, drop_tag = "史莱姆", disableWander = true, area_id = 13 },
+		{ config_id = 106008, monster_id = 20010501, pos = { x = -4229.474, y = 201.359, z = -2533.675 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, drop_tag = "史莱姆", disableWander = true, area_id = 13 },
+		{ config_id = 106009, monster_id = 20010501, pos = { x = -4221.384, y = 200.392, z = -2531.487 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, drop_tag = "史莱姆", disableWander = true, area_id = 13 }
+	},
+	gadgets = {
+		{ config_id = 106001, gadget_id = 70950084, pos = { x = -4222.261, y = 200.506, z = -2528.004 }, rot = { x = 0.000, y = 256.453, z = 0.000 }, level = 30, area_id = 13 },
+		{ config_id = 106002, gadget_id = 70950084, pos = { x = -4230.071, y = 201.451, z = -2531.419 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 13 },
+		{ config_id = 106003, gadget_id = 70950085, pos = { x = -4222.258, y = 200.506, z = -2528.000 }, rot = { x = 0.000, y = 326.453, z = 0.000 }, level = 30, area_id = 13 },
+		{ config_id = 106004, gadget_id = 70950085, pos = { x = -4230.067, y = 201.325, z = -2531.415 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 30, area_id = 13 },
+		{ config_id = 106005, gadget_id = 70211101, pos = { x = -4225.601, y = 200.886, z = -2532.841 }, rot = { x = 353.337, y = 335.798, z = 354.374 }, level = 26, drop_tag = "解谜低级稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 13 }
+	},
+	triggers = {
+		{ config_id = 1106006, name = "VARIABLE_CHANGE_106006", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_106006", action = "" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "BlackBoxPlay/MagneticGear"

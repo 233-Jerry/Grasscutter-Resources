@@ -1,1374 +1,752 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1
-L0_1 = {}
-L0_1.group_id = 133001575
-L1_1 = {}
-L1_1.RegionID = 575001
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 575010
-L3_1.gadget_id = 70360146
-L4_1 = {}
-L4_1.x = 1564.328
-L4_1.y = 252.197
-L4_1.z = -1641.672
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 15
-L3_1.persistent = true
-L3_1.area_id = 2
-L2_1[575010] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 575001
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 27
-L4_1 = {}
-L4_1.x = 1564.328
-L4_1.y = 252.197
-L4_1.z = -1641.672
-L3_1.pos = L4_1
-L3_1.area_id = 2
-L2_1[575001] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1575011
-L3_1.name = "SELECT_DIFFICULTY_575011"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SELECT_DIFFICULTY
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575011"
-L3_1.action = "action_EVENT_SELECT_DIFFICULTY_575011"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1575012
-L4_1.name = "SELECT_DIFFICULTY_575012"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SELECT_DIFFICULTY
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575012"
-L4_1.action = "action_EVENT_SELECT_DIFFICULTY_575012"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1575013
-L5_1.name = "SELECT_DIFFICULTY_575013"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_SELECT_DIFFICULTY
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575013"
-L5_1.action = "action_EVENT_SELECT_DIFFICULTY_575013"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1575014
-L6_1.name = "SELECT_DIFFICULTY_575014"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_SELECT_DIFFICULTY
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575014"
-L6_1.action = "action_EVENT_SELECT_DIFFICULTY_575014"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1575015
-L7_1.name = "SELECT_DIFFICULTY_575015"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_SELECT_DIFFICULTY
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575015"
-L7_1.action = "action_EVENT_SELECT_DIFFICULTY_575015"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1575016
-L8_1.name = "SELECT_DIFFICULTY_575016"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_SELECT_DIFFICULTY
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575016"
-L8_1.action = "action_EVENT_SELECT_DIFFICULTY_575016"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1575017
-L9_1.name = "SELECT_DIFFICULTY_575017"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_SELECT_DIFFICULTY
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575017"
-L9_1.action = "action_EVENT_SELECT_DIFFICULTY_575017"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1575018
-L10_1.name = "SELECT_DIFFICULTY_575018"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_SELECT_DIFFICULTY
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575018"
-L10_1.action = "action_EVENT_SELECT_DIFFICULTY_575018"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1575019
-L11_1.name = "SELECT_DIFFICULTY_575019"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_SELECT_DIFFICULTY
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575019"
-L11_1.action = "action_EVENT_SELECT_DIFFICULTY_575019"
-L11_1.trigger_count = 0
-L12_1 = {}
-L12_1.config_id = 1575020
-L12_1.name = "SELECT_DIFFICULTY_575020"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_SELECT_DIFFICULTY
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575020"
-L12_1.action = "action_EVENT_SELECT_DIFFICULTY_575020"
-L12_1.trigger_count = 0
-L13_1 = {}
-L13_1.config_id = 1575021
-L13_1.name = "SELECT_DIFFICULTY_575021"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_SELECT_DIFFICULTY
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575021"
-L13_1.action = "action_EVENT_SELECT_DIFFICULTY_575021"
-L13_1.trigger_count = 0
-L14_1 = {}
-L14_1.config_id = 1575022
-L14_1.name = "SELECT_DIFFICULTY_575022"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_SELECT_DIFFICULTY
-L14_1.event = L15_1
-L14_1.source = ""
-L14_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575022"
-L14_1.action = "action_EVENT_SELECT_DIFFICULTY_575022"
-L14_1.trigger_count = 0
-L15_1 = {}
-L15_1.config_id = 1575023
-L15_1.name = "SELECT_DIFFICULTY_575023"
-L16_1 = EventType
-L16_1 = L16_1.EVENT_SELECT_DIFFICULTY
-L15_1.event = L16_1
-L15_1.source = ""
-L15_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575023"
-L15_1.action = "action_EVENT_SELECT_DIFFICULTY_575023"
-L15_1.trigger_count = 0
-L16_1 = {}
-L16_1.config_id = 1575024
-L16_1.name = "SELECT_DIFFICULTY_575024"
-L17_1 = EventType
-L17_1 = L17_1.EVENT_SELECT_DIFFICULTY
-L16_1.event = L17_1
-L16_1.source = ""
-L16_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575024"
-L16_1.action = "action_EVENT_SELECT_DIFFICULTY_575024"
-L16_1.trigger_count = 0
-L17_1 = {}
-L17_1.config_id = 1575025
-L17_1.name = "SELECT_DIFFICULTY_575025"
-L18_1 = EventType
-L18_1 = L18_1.EVENT_SELECT_DIFFICULTY
-L17_1.event = L18_1
-L17_1.source = ""
-L17_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575025"
-L17_1.action = "action_EVENT_SELECT_DIFFICULTY_575025"
-L17_1.trigger_count = 0
-L18_1 = {}
-L18_1.config_id = 1575026
-L18_1.name = "SELECT_DIFFICULTY_575026"
-L19_1 = EventType
-L19_1 = L19_1.EVENT_SELECT_DIFFICULTY
-L18_1.event = L19_1
-L18_1.source = ""
-L18_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575026"
-L18_1.action = "action_EVENT_SELECT_DIFFICULTY_575026"
-L18_1.trigger_count = 0
-L19_1 = {}
-L19_1.config_id = 1575027
-L19_1.name = "SELECT_DIFFICULTY_575027"
-L20_1 = EventType
-L20_1 = L20_1.EVENT_SELECT_DIFFICULTY
-L19_1.event = L20_1
-L19_1.source = ""
-L19_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575027"
-L19_1.action = "action_EVENT_SELECT_DIFFICULTY_575027"
-L19_1.trigger_count = 0
-L20_1 = {}
-L20_1.config_id = 1575028
-L20_1.name = "SELECT_DIFFICULTY_575028"
-L21_1 = EventType
-L21_1 = L21_1.EVENT_SELECT_DIFFICULTY
-L20_1.event = L21_1
-L20_1.source = ""
-L20_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575028"
-L20_1.action = "action_EVENT_SELECT_DIFFICULTY_575028"
-L20_1.trigger_count = 0
-L21_1 = {}
-L21_1.config_id = 1575029
-L21_1.name = "SELECT_DIFFICULTY_575029"
-L22_1 = EventType
-L22_1 = L22_1.EVENT_SELECT_DIFFICULTY
-L21_1.event = L22_1
-L21_1.source = ""
-L21_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575029"
-L21_1.action = "action_EVENT_SELECT_DIFFICULTY_575029"
-L21_1.trigger_count = 0
-L22_1 = {}
-L22_1.config_id = 1575030
-L22_1.name = "SELECT_DIFFICULTY_575030"
-L23_1 = EventType
-L23_1 = L23_1.EVENT_SELECT_DIFFICULTY
-L22_1.event = L23_1
-L22_1.source = ""
-L22_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575030"
-L22_1.action = "action_EVENT_SELECT_DIFFICULTY_575030"
-L22_1.trigger_count = 0
-L23_1 = {}
-L23_1.config_id = 1575031
-L23_1.name = "SELECT_DIFFICULTY_575031"
-L24_1 = EventType
-L24_1 = L24_1.EVENT_SELECT_DIFFICULTY
-L23_1.event = L24_1
-L23_1.source = ""
-L23_1.condition = "condition_EVENT_SELECT_DIFFICULTY_575031"
-L23_1.action = "action_EVENT_SELECT_DIFFICULTY_575031"
-L23_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-L2_1[13] = L15_1
-L2_1[14] = L16_1
-L2_1[15] = L17_1
-L2_1[16] = L18_1
-L2_1[17] = L19_1
-L2_1[18] = L20_1
-L2_1[19] = L21_1
-L2_1[20] = L22_1
-L2_1[21] = L23_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 575010
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 575001
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "SELECT_DIFFICULTY_575011"
-L6_1 = "SELECT_DIFFICULTY_575012"
-L7_1 = "SELECT_DIFFICULTY_575013"
-L8_1 = "SELECT_DIFFICULTY_575014"
-L9_1 = "SELECT_DIFFICULTY_575015"
-L10_1 = "SELECT_DIFFICULTY_575016"
-L11_1 = "SELECT_DIFFICULTY_575017"
-L12_1 = "SELECT_DIFFICULTY_575018"
-L13_1 = "SELECT_DIFFICULTY_575019"
-L14_1 = "SELECT_DIFFICULTY_575020"
-L15_1 = "SELECT_DIFFICULTY_575021"
-L16_1 = "SELECT_DIFFICULTY_575022"
-L17_1 = "SELECT_DIFFICULTY_575023"
-L18_1 = "SELECT_DIFFICULTY_575024"
-L19_1 = "SELECT_DIFFICULTY_575025"
-L20_1 = "SELECT_DIFFICULTY_575026"
-L21_1 = "SELECT_DIFFICULTY_575027"
-L22_1 = "SELECT_DIFFICULTY_575028"
-L23_1 = "SELECT_DIFFICULTY_575029"
-L24_1 = "SELECT_DIFFICULTY_575030"
-L25_1 = "SELECT_DIFFICULTY_575031"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L4_1[11] = L15_1
-L4_1[12] = L16_1
-L4_1[13] = L17_1
-L4_1[14] = L18_1
-L4_1[15] = L19_1
-L4_1[16] = L20_1
-L4_1[17] = L21_1
-L4_1[18] = L22_1
-L4_1[19] = L23_1
-L4_1[20] = L24_1
-L4_1[21] = L25_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133001575
+}
+
+-- DEFS_MISCS
+local defs = {
+	RegionID =  575001
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	[575010] = { config_id = 575010, gadget_id = 70360146, pos = { x = 1564.328, y = 252.197, z = -1641.672 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 15, persistent = true, area_id = 2 }
+}
+
+-- 区域
+regions = {
+	[575001] = { config_id = 575001, shape = RegionShape.SPHERE, radius = 27, pos = { x = 1564.328, y = 252.197, z = -1641.672 }, area_id = 2 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1575011, name = "SELECT_DIFFICULTY_575011", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575011", action = "action_EVENT_SELECT_DIFFICULTY_575011", trigger_count = 0 },
+	{ config_id = 1575012, name = "SELECT_DIFFICULTY_575012", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575012", action = "action_EVENT_SELECT_DIFFICULTY_575012", trigger_count = 0 },
+	{ config_id = 1575013, name = "SELECT_DIFFICULTY_575013", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575013", action = "action_EVENT_SELECT_DIFFICULTY_575013", trigger_count = 0 },
+	{ config_id = 1575014, name = "SELECT_DIFFICULTY_575014", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575014", action = "action_EVENT_SELECT_DIFFICULTY_575014", trigger_count = 0 },
+	{ config_id = 1575015, name = "SELECT_DIFFICULTY_575015", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575015", action = "action_EVENT_SELECT_DIFFICULTY_575015", trigger_count = 0 },
+	{ config_id = 1575016, name = "SELECT_DIFFICULTY_575016", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575016", action = "action_EVENT_SELECT_DIFFICULTY_575016", trigger_count = 0 },
+	{ config_id = 1575017, name = "SELECT_DIFFICULTY_575017", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575017", action = "action_EVENT_SELECT_DIFFICULTY_575017", trigger_count = 0 },
+	{ config_id = 1575018, name = "SELECT_DIFFICULTY_575018", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575018", action = "action_EVENT_SELECT_DIFFICULTY_575018", trigger_count = 0 },
+	{ config_id = 1575019, name = "SELECT_DIFFICULTY_575019", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575019", action = "action_EVENT_SELECT_DIFFICULTY_575019", trigger_count = 0 },
+	{ config_id = 1575020, name = "SELECT_DIFFICULTY_575020", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575020", action = "action_EVENT_SELECT_DIFFICULTY_575020", trigger_count = 0 },
+	{ config_id = 1575021, name = "SELECT_DIFFICULTY_575021", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575021", action = "action_EVENT_SELECT_DIFFICULTY_575021", trigger_count = 0 },
+	{ config_id = 1575022, name = "SELECT_DIFFICULTY_575022", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575022", action = "action_EVENT_SELECT_DIFFICULTY_575022", trigger_count = 0 },
+	{ config_id = 1575023, name = "SELECT_DIFFICULTY_575023", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575023", action = "action_EVENT_SELECT_DIFFICULTY_575023", trigger_count = 0 },
+	{ config_id = 1575024, name = "SELECT_DIFFICULTY_575024", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575024", action = "action_EVENT_SELECT_DIFFICULTY_575024", trigger_count = 0 },
+	{ config_id = 1575025, name = "SELECT_DIFFICULTY_575025", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575025", action = "action_EVENT_SELECT_DIFFICULTY_575025", trigger_count = 0 },
+	{ config_id = 1575026, name = "SELECT_DIFFICULTY_575026", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575026", action = "action_EVENT_SELECT_DIFFICULTY_575026", trigger_count = 0 },
+	{ config_id = 1575027, name = "SELECT_DIFFICULTY_575027", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575027", action = "action_EVENT_SELECT_DIFFICULTY_575027", trigger_count = 0 },
+	{ config_id = 1575028, name = "SELECT_DIFFICULTY_575028", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575028", action = "action_EVENT_SELECT_DIFFICULTY_575028", trigger_count = 0 },
+	{ config_id = 1575029, name = "SELECT_DIFFICULTY_575029", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575029", action = "action_EVENT_SELECT_DIFFICULTY_575029", trigger_count = 0 },
+	{ config_id = 1575030, name = "SELECT_DIFFICULTY_575030", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575030", action = "action_EVENT_SELECT_DIFFICULTY_575030", trigger_count = 0 },
+	{ config_id = 1575031, name = "SELECT_DIFFICULTY_575031", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_575031", action = "action_EVENT_SELECT_DIFFICULTY_575031", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 575010 },
+		regions = { 575001 },
+		triggers = { "SELECT_DIFFICULTY_575011", "SELECT_DIFFICULTY_575012", "SELECT_DIFFICULTY_575013", "SELECT_DIFFICULTY_575014", "SELECT_DIFFICULTY_575015", "SELECT_DIFFICULTY_575016", "SELECT_DIFFICULTY_575017", "SELECT_DIFFICULTY_575018", "SELECT_DIFFICULTY_575019", "SELECT_DIFFICULTY_575020", "SELECT_DIFFICULTY_575021", "SELECT_DIFFICULTY_575022", "SELECT_DIFFICULTY_575023", "SELECT_DIFFICULTY_575024", "SELECT_DIFFICULTY_575025", "SELECT_DIFFICULTY_575026", "SELECT_DIFFICULTY_575027", "SELECT_DIFFICULTY_575028", "SELECT_DIFFICULTY_575029", "SELECT_DIFFICULTY_575030", "SELECT_DIFFICULTY_575031" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575011(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 1 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575011 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001576
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575011(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001576, 2)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575011 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575012(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 1 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575012 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001576
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575012(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001576, 3)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575012 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575013(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 1 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575013 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001576
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575013(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001576, 4)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575013 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575014(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 2 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001577
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575014(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001577, 2)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575015(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 2 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001577
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575015(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001577, 3)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575016(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 2 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001577
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575016(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001577, 4)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575017(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 4 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575017 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001578
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575017(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001578, 2)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575017 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575018(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 4 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575018 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001578
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575018(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001578, 3)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575018 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575019(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 4 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575019 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001578
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575019(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001578, 4)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575019 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 5 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575020(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 5 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575020 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001579
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575020(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001579, 2)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575020 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 5 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575021(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 5 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575021 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001579
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575021(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001579, 3)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575021 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 5 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575022(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 5 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575022 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001579
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575022(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001579, 4)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575022 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 7 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575023(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 7 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575023 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001580
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575023(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001580, 2)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575023 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 7 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575024(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 7 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575024 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001580
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575024(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001580, 3)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575024 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 7 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575025(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 7 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575025 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001580
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575025(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001580, 4)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575025 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 6 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575026(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 6 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575026 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001581
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575026(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001581, 2)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575026 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 6 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575027(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 6 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575027 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001581
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575027(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001581, 3)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575027 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 6 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575028(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 6 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575028 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001581
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575028(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001581, 4)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575028 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575029(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 3 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575029 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001582
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575029(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001582, 2)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575029 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575030(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 3 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575030 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001582
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575030(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001582, 3)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575030 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 575010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_575031(context, evt)
+	if 575010 ~= evt.param1 then
+		return false	
+	end
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 3 ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_575031 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 575010
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001582
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_575031(context, evt)
+	-- 将configid为 575010 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 575010, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001582, 4)
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_575031 = L2_1
-L2_1 = require
-L3_1 = "Activity_ArenaChallengeMain"
-L2_1(L3_1)
+
+require "Activity_ArenaChallengeMain"

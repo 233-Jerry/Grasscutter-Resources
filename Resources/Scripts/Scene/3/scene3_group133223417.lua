@@ -1,114 +1,101 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 133223417
-L1_1 = {}
-L1_1.group_id = 133223417
-L1_1.isRandom = false
-L2_1 = {}
-L2_1[0] = 0
-L1_1.child_group = L2_1
-L1_1.notifyQuest = false
-L1_1.hasChild = false
-L1_1.selfSuiteId = 2
-L1_1.hasMultiStatues = false
-L2_1 = {}
-L2_1[10001] = 2
-L1_1.statuesMap = L2_1
-defs = L1_1
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 417001
-L2_1.gadget_id = 70290160
-L3_1 = {}
-L3_1.x = -5892.213
-L3_1.y = 165.642
-L3_1.z = -2678.961
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 1.408
-L3_1.y = 35.523
-L3_1.z = 1.005
-L2_1.rot = L3_1
-L2_1.level = 33
-L3_1 = GadgetState
-L3_1 = L3_1.GearStart
-L2_1.state = L3_1
-L2_1.persistent = true
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 417002
-L3_1.gadget_id = 70330137
-L4_1 = {}
-L4_1.x = -5890.723
-L4_1.y = 166.086
-L4_1.z = -2675.556
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 10.608
-L4_1.y = 2.056
-L4_1.z = 11.032
-L3_1.rot = L4_1
-L3_1.level = 33
-L3_1.interact_id = 35
-L3_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "Notified"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "Seed"
-L3_1.value = 0
-L3_1.no_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 417001
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 417002
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-L1_1 = require
-L2_1 = "V2_2/TsurumiBirdFather"
-L1_1(L2_1)
+-- 基础信息
+local base_info = {
+	group_id = 133223417
+}
+
+-- DEFS_MISCS
+defs = {
+        group_id = 133223417,        --当前Group的ID
+        isRandom = false,--定义这个组是否会随机取
+        child_group = {[0] = 0}, --groupid和需要切到的SuiteID，一一对应
+        notifyQuest = false, --修改Group里一个变量
+        hasChild = false, --表示是否切当前Group的suite，true表示切自己的
+        selfSuiteId = 2, --需要切的自己的suite
+        hasMultiStatues = false, --是否有多个雷鸟雕像
+        statuesMap = 
+        {
+                [10001] = 2, --雷鸟雕像和需要切出来的Suite的对应表
+        },
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 417001, gadget_id = 70290160, pos = { x = -5892.213, y = 165.642, z = -2678.961 }, rot = { x = 1.408, y = 35.523, z = 1.005 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 417002, gadget_id = 70330137, pos = { x = -5890.723, y = 166.086, z = -2675.556 }, rot = { x = 10.608, y = 2.056, z = 11.032 }, level = 33, interact_id = 35, area_id = 18 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Notified", value = 0, no_refresh = true },
+	{ config_id = 2, name = "Seed", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 417001 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 417002 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_2/TsurumiBirdFather"

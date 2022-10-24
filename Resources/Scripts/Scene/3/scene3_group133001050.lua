@@ -1,102 +1,96 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 133001050
-L1_1 = {}
-L1_1.gallery_id = 11003
-L1_1.group_id = 133001050
-L1_1.fishing_type = 1
-L1_1.challenge_id = 111179
-L2_1 = {}
-L3_1 = 1
-L4_1 = 1001
-L5_1 = 4
-L6_1 = 1004
-L7_1 = 21
-L8_1 = 1000
-L9_1 = 16
-L10_1 = 1016
-L11_1 = 9
-L12_1 = 1009
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L1_1.target_fish_id = L2_1
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 50001
-L3_1.gadget_id = 70800039
-L4_1 = {}
-L4_1.x = 1700.327
-L4_1.y = 194.6
-L4_1.z = -1613.051
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.persistent = true
-L3_1.fishing_id = 10005
-L4_1 = {}
-L5_1 = 300003
-L4_1[1] = L5_1
-L3_1.fishing_areas = L4_1
-L3_1.area_id = 2
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 50002
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 15
-L4_1 = {}
-L4_1.x = 1696.535
-L4_1.y = 195.364
-L4_1.z = -1602.328
-L3_1.pos = L4_1
-L3_1.area_id = 2
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 50001
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 50002
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-L2_1 = require
-L3_1 = "V2_1/FishingChallenge"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133001050
+}
+
+-- DEFS_MISCS
+local defs = {
+
+        --对应GalleryID
+        gallery_id = 11003,
+
+        --GroupID
+        group_id = 133001050,
+
+        --挑战方式 0-指定ID的鱼钓起计数 1-记录指定ID的鱼最大连续成功数
+        fishing_type = 1,
+
+        --这个Group对应的挑战ID
+        challenge_id = 111179,
+
+        --本挑战中，算作计数目标的鱼IDs 鱼ID在FishData表
+        target_fish_id = 
+        {1,1001,4,1004,21,1000,16,1016,9,1009},
+
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 50001, gadget_id = 70800039, pos = { x = 1700.327, y = 194.600, z = -1613.051 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, persistent = true, fishing_id = 10005, fishing_areas = { 300003 }, area_id = 2 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 50002, shape = RegionShape.SPHERE, radius = 15, pos = { x = 1696.535, y = 195.364, z = -1602.328 }, area_id = 2 }
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 50001 },
+		regions = { 50002 },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_1/FishingChallenge"

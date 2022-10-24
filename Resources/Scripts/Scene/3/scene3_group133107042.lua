@@ -1,232 +1,144 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133107042
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 42001
-L2_1.gadget_id = 70710342
-L3_1 = {}
-L3_1.x = -629.244
-L3_1.y = 219.789
-L3_1.z = 258.281
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 331.86
-L3_1.z = 2.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.area_id = 7
-L3_1 = {}
-L3_1.config_id = 42002
-L3_1.gadget_id = 71700226
-L4_1 = {}
-L4_1.x = -629.624
-L4_1.y = 219.813
-L4_1.z = 259.733
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 349.176
-L4_1.y = 72.698
-L4_1.z = 1.184
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 7
-L4_1 = {}
-L4_1.config_id = 42003
-L4_1.gadget_id = 70710341
-L5_1 = {}
-L5_1.x = -629.367
-L5_1.y = 220.495
-L5_1.z = 258.218
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 2.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 7
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1042004
-L2_1.name = "QUEST_FINISH_42004"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_QUEST_FINISH
-L2_1.event = L3_1
-L2_1.source = "1100808"
-L2_1.condition = ""
-L2_1.action = "action_EVENT_QUEST_FINISH_42004"
-L2_1.trigger_count = 0
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.io_type = 1
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-L1_1.father_quest = 11008
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.state = 2
-L4_1.suite = 1
-L3_1[1] = L4_1
-L2_1[1100806] = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.state = 2
-L4_1.suite = 1
-L3_1[1] = L4_1
-L2_1[1100813] = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.state = 2
-L4_1.suite = 1
-L3_1[1] = L4_1
-L2_1[1100815] = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.state = 2
-L4_1.suite = 2
-L3_1[1] = L4_1
-L2_1[1100814] = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.state = 2
-L4_1.suite = 1
-L3_1[1] = L4_1
-L2_1[1100812] = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.state = 2
-L4_1.suite = 2
-L3_1[1] = L4_1
-L2_1[1100807] = L3_1
-L1_1.quest_config = L2_1
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 42001
-L4_1.state = 0
-L5_1 = {}
-L5_1.config_id = 42002
-L5_1.state = 0
-L6_1 = {}
-L6_1.config_id = 42003
-L6_1.state = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_FINISH_42004"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L2_1.variables = L3_1
-L1_1[1] = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 42001
-L4_1.state = 0
-L5_1 = {}
-L5_1.config_id = 42002
-L5_1.state = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L2_1.variables = L3_1
-L1_1[2] = L2_1
-suite_disk = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 42001
-L5_1 = 42002
-L6_1 = 42003
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_FINISH_42004"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L2_1.ban_refresh = true
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 42001
-L6_1 = 42002
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L3_1.ban_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133107042
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 42003
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133107042
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 42001, gadget_id = 70710342, pos = { x = -629.244, y = 219.789, z = 258.281 }, rot = { x = 0.000, y = 331.860, z = 2.000 }, level = 1, area_id = 7 },
+	{ config_id = 42002, gadget_id = 71700226, pos = { x = -629.624, y = 219.813, z = 259.733 }, rot = { x = 349.176, y = 72.698, z = 1.184 }, level = 1, area_id = 7 },
+	{ config_id = 42003, gadget_id = 70710341, pos = { x = -629.367, y = 220.495, z = 258.218 }, rot = { x = 0.000, y = 0.000, z = 2.000 }, level = 1, area_id = 7 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1042004, name = "QUEST_FINISH_42004", event = EventType.EVENT_QUEST_FINISH, source = "1100808", condition = "", action = "action_EVENT_QUEST_FINISH_42004", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	io_type = 1,
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false,
+	father_quest = 11008,
+	quest_config = {
+		[1100806] = {
+			{
+				state = 2,
+				suite = 1
+			}
+		},
+		[1100813] = {
+			{
+				state = 2,
+				suite = 1
+			}
+		},
+		[1100815] = {
+			{
+				state = 2,
+				suite = 1
+			}
+		},
+		[1100814] = {
+			{
+				state = 2,
+				suite = 2
+			}
+		},
+		[1100812] = {
+			{
+				state = 2,
+				suite = 1
+			}
+		},
+		[1100807] = {
+			{
+				state = 2,
+				suite = 2
+			}
+		}
+	}
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suite_disk = {
+	[1] = {
+		gadgets = {
+			{ config_id = 42001, state = 0 },
+			{ config_id = 42002, state = 0 },
+			{ config_id = 42003, state = 0 }
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { "QUEST_FINISH_42004" },
+		npcs = { },
+		variables = {
+		}
+	},
+	[2] = {
+		gadgets = {
+			{ config_id = 42001, state = 0 },
+			{ config_id = 42002, state = 0 }
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { },
+		npcs = { },
+		variables = {
+		}
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_42004(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133107042, EntityType.GADGET, 42003 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_42004 = L1_1

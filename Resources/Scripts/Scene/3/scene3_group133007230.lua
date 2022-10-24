@@ -1,996 +1,312 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133007230
-L1_1 = {}
-L1_1.group_id = 133007230
-L1_1.battle_radius = 15
-L1_1.battle_time = 120
-L1_1.battle_progress = 3
-L1_1.seal_model = 973
-L1_1.seal_id = 976
-L1_1.light_1 = 230002
-L1_1.light_2 = 230003
-L1_1.light_3 = 230004
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 422
-L3_1.monster_id = 22010101
-L4_1 = {}
-L4_1.x = 2561.086
-L4_1.y = 208.524
-L4_1.z = 311.213
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 24
-L3_1.drop_id = 1000100
-L3_1.area_id = 4
-L4_1 = {}
-L4_1.config_id = 423
-L4_1.monster_id = 21030201
-L5_1 = {}
-L5_1.x = 2569.039
-L5_1.y = 208.202
-L5_1.z = 305.856
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 22
-L4_1.drop_id = 1000100
-L4_1.area_id = 4
-L5_1 = {}
-L5_1.config_id = 424
-L5_1.monster_id = 21030201
-L6_1 = {}
-L6_1.x = 2567.324
-L6_1.y = 208.108
-L6_1.z = 319.888
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 22
-L5_1.drop_id = 1000100
-L5_1.area_id = 4
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 973
-L3_1.gadget_id = 70950008
-L4_1 = {}
-L4_1.x = 2566.507
-L4_1.y = 208.411
-L4_1.z = 311.177
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 81.978
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 28
-L3_1.persistent = true
-L3_1.area_id = 4
-L4_1 = {}
-L4_1.config_id = 976
-L4_1.gadget_id = 70950007
-L5_1 = {}
-L5_1.x = 2566.5
-L5_1.y = 208.4
-L5_1.z = 311.2
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 278.917
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 28
-L5_1 = GadgetState
-L5_1 = L5_1.GearStop
-L4_1.state = L5_1
-L4_1.area_id = 4
-L5_1 = {}
-L5_1.config_id = 230002
-L5_1.gadget_id = 70950006
-L6_1 = {}
-L6_1.x = 2561.456
-L6_1.y = 208.793
-L6_1.z = 337.677
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.area_id = 4
-L6_1 = {}
-L6_1.config_id = 230003
-L6_1.gadget_id = 70950006
-L7_1 = {}
-L7_1.x = 2589.25
-L7_1.y = 206.739
-L7_1.z = 299.651
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 4
-L7_1 = {}
-L7_1.config_id = 230004
-L7_1.gadget_id = 70950006
-L8_1 = {}
-L8_1.x = 2555.736
-L8_1.y = 208.002
-L8_1.z = 289.801
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.area_id = 4
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 230001
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 15
-L4_1 = {}
-L4_1.x = 2566.5
-L4_1.y = 210.716
-L4_1.z = 311.2
-L3_1.pos = L4_1
-L3_1.area_id = 4
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1000302
-L3_1.name = "SELECT_OPTION_302"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SELECT_OPTION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_SELECT_OPTION_302"
-L3_1.action = "action_EVENT_SELECT_OPTION_302"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1000303
-L4_1.name = "SEAL_BATTLE_END_303"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SEAL_BATTLE_END
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SEAL_BATTLE_END_303"
-L4_1.action = "action_EVENT_SEAL_BATTLE_END_303"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1000315
-L5_1.name = "QUEST_FINISH_315"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_QUEST_FINISH
-L5_1.event = L6_1
-L5_1.source = "39004"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_QUEST_FINISH_315"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1000318
-L6_1.name = "GROUP_LOAD_318"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GROUP_LOAD
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = ""
-L6_1.action = "action_EVENT_GROUP_LOAD_318"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1230001
-L7_1.name = "ENTER_REGION_230001"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_ENTER_REGION
-L7_1.event = L8_1
-L7_1.source = "1"
-L7_1.condition = "condition_EVENT_ENTER_REGION_230001"
-L7_1.action = "action_EVENT_ENTER_REGION_230001"
-L8_1 = {}
-L8_1.config_id = 1230005
-L8_1.name = "GADGET_CREATE_230005"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_GADGET_CREATE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_GADGET_CREATE_230005"
-L8_1.action = "action_EVENT_GADGET_CREATE_230005"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1230006
-L9_1.name = "GADGET_STATE_CHANGE_230006"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_GADGET_STATE_CHANGE
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = ""
-L9_1.action = "action_EVENT_GADGET_STATE_CHANGE_230006"
-L9_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "Quest_Flag"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "first_touch_done"
-L4_1.value = 0
-L4_1.no_refresh = true
-L5_1 = {}
-L5_1.configId = 3
-L5_1.name = "seal_battle_done"
-L5_1.value = 0
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 4
-L6_1.name = "Point_Value"
-L6_1.value = 0
-L6_1.no_refresh = true
-L7_1 = {}
-L7_1.configId = 5
-L7_1.name = "Temp_Point_Value"
-L7_1.value = 0
-L7_1.no_refresh = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 973
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "QUEST_FINISH_315"
-L6_1 = "GROUP_LOAD_318"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 976
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L6_1 = 230001
-L5_1[1] = L6_1
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "SELECT_OPTION_302"
-L7_1 = "SEAL_BATTLE_END_303"
-L8_1 = "ENTER_REGION_230001"
-L9_1 = "GADGET_CREATE_230005"
-L10_1 = "GADGET_STATE_CHANGE_230006"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L7_1 = 422
-L8_1 = 423
-L9_1 = 424
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = L1_1.seal_model
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if L2_2 ~= 24 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133007230
+}
+
+-- Trigger变量
+local defs = {
+	group_id = 133007230,
+	battle_radius = 15,
+	battle_time = 120,
+	battle_progress = 3,
+	seal_model = 973,
+	seal_id = 976,
+	light_1 = 230002,
+	light_2 = 230003,
+	light_3 = 230004
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 422, monster_id = 22010101, pos = { x = 2561.086, y = 208.524, z = 311.213 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, drop_id = 1000100, area_id = 4 },
+	{ config_id = 423, monster_id = 21030201, pos = { x = 2569.039, y = 208.202, z = 305.856 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 22, drop_id = 1000100, area_id = 4 },
+	{ config_id = 424, monster_id = 21030201, pos = { x = 2567.324, y = 208.108, z = 319.888 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 22, drop_id = 1000100, area_id = 4 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 973, gadget_id = 70950008, pos = { x = 2566.507, y = 208.411, z = 311.177 }, rot = { x = 0.000, y = 81.978, z = 0.000 }, level = 28, persistent = true, area_id = 4 },
+	{ config_id = 976, gadget_id = 70950007, pos = { x = 2566.500, y = 208.400, z = 311.200 }, rot = { x = 0.000, y = 278.917, z = 0.000 }, level = 28, state = GadgetState.GearStop, area_id = 4 },
+	{ config_id = 230002, gadget_id = 70950006, pos = { x = 2561.456, y = 208.793, z = 337.677 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 4 },
+	{ config_id = 230003, gadget_id = 70950006, pos = { x = 2589.250, y = 206.739, z = 299.651 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 4 },
+	{ config_id = 230004, gadget_id = 70950006, pos = { x = 2555.736, y = 208.002, z = 289.801 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 4 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 230001, shape = RegionShape.SPHERE, radius = 15, pos = { x = 2566.500, y = 210.716, z = 311.200 }, area_id = 4 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000302, name = "SELECT_OPTION_302", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_302", action = "action_EVENT_SELECT_OPTION_302", trigger_count = 0 },
+	{ config_id = 1000303, name = "SEAL_BATTLE_END_303", event = EventType.EVENT_SEAL_BATTLE_END, source = "", condition = "condition_EVENT_SEAL_BATTLE_END_303", action = "action_EVENT_SEAL_BATTLE_END_303", trigger_count = 0 },
+	{ config_id = 1000315, name = "QUEST_FINISH_315", event = EventType.EVENT_QUEST_FINISH, source = "39004", condition = "", action = "action_EVENT_QUEST_FINISH_315", trigger_count = 0 },
+	{ config_id = 1000318, name = "GROUP_LOAD_318", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_318", trigger_count = 0 },
+	{ config_id = 1230001, name = "ENTER_REGION_230001", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_230001", action = "action_EVENT_ENTER_REGION_230001" },
+	{ config_id = 1230005, name = "GADGET_CREATE_230005", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_230005", action = "action_EVENT_GADGET_CREATE_230005", trigger_count = 0 },
+	{ config_id = 1230006, name = "GADGET_STATE_CHANGE_230006", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "", action = "action_EVENT_GADGET_STATE_CHANGE_230006", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Quest_Flag", value = 0, no_refresh = true },
+	{ config_id = 2, name = "first_touch_done", value = 0, no_refresh = true },
+	{ config_id = 3, name = "seal_battle_done", value = 0, no_refresh = true },
+	{ config_id = 4, name = "Point_Value", value = 0, no_refresh = true },
+	{ config_id = 5, name = "Temp_Point_Value", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 973 },
+		regions = { },
+		triggers = { "QUEST_FINISH_315", "GROUP_LOAD_318" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { 976 },
+		regions = { 230001 },
+		triggers = { "SELECT_OPTION_302", "SEAL_BATTLE_END_303", "ENTER_REGION_230001", "GADGET_CREATE_230005", "GADGET_STATE_CHANGE_230006" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = suite_3,
+		monsters = { 422, 423, 424 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_302(context, evt)
+	if evt.param1 ~= defs.seal_model then 
+		return false
+	end
+	if evt.param2 ~= 24 then
+		return false
+	end 
+	return true
 end
-condition_EVENT_SELECT_OPTION_302 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.seal_model
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearAction1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartSealBattle
-  L3_2 = A0_2
-  L4_2 = L1_1.seal_model
-  L5_2 = {}
-  L6_2 = L1_1.battle_radius
-  L5_2.radius = L6_2
-  L6_2 = L1_1.battle_time
-  L5_2.kill_time = L6_2
-  L6_2 = L1_1.group_id
-  L5_2.monster_group_id = L6_2
-  L6_2 = L1_1.battle_progress
-  L5_2.max_progress = L6_2
-  L6_2 = SealBattleType
-  L6_2 = L6_2.KILL_MONSTER
-  L5_2.battle_type = L6_2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 1109001
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOption
-  L3_2 = A0_2
-  L4_2 = A1_2.param2
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_302(context, evt)
+	ScriptLib.SetGadgetStateByConfigId(context, defs.seal_model, GadgetState.GearAction1)
+	ScriptLib.AddExtraGroupSuite(context, defs.group_id, 3)
+	ScriptLib.StartSealBattle(context, defs.seal_model, {radius = defs.battle_radius, kill_time = defs.battle_time, monster_group_id = defs.group_id, max_progress = defs.battle_progress, battle_type = SealBattleType.KILL_MONSTER})
+	ScriptLib.ShowReminder(context, 1109001)
+	ScriptLib.DelWorktopOption(context, evt.param2)
+	return 0
 end
-action_EVENT_SELECT_OPTION_302 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = L1_1.seal_model
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SEAL_BATTLE_END_303(context, evt)
+	if evt.param1 ~= defs.seal_model then
+		return false
+	end
+	return true
 end
-condition_EVENT_SEAL_BATTLE_END_303 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = A1_2.param2
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 1109004
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RemoveExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = L1_1.group_id
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.seal_model
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = L1_1.group_id
-    L5_2 = 2
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetWorktopOptionsByGroupId
-    L3_2 = A0_2
-    L4_2 = L1_1.group_id
-    L5_2 = L1_1.seal_model
-    L6_2 = {}
-    L7_2 = 24
-    L6_2[1] = L7_2
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-  else
-    L2_2 = A1_2.param2
-    if L2_2 == 1 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "seal_battle_done"
-      L5_2 = 1
-      L2_2(L3_2, L4_2, L5_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGadgetStateByConfigId
-      L3_2 = A0_2
-      L4_2 = L1_1.seal_model
-      L5_2 = GadgetState
-      L5_2 = L5_2.Default
-      L2_2(L3_2, L4_2, L5_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGadgetStateByConfigId
-      L3_2 = A0_2
-      L4_2 = L1_1.seal_id
-      L5_2 = GadgetState
-      L5_2 = L5_2.Default
-      L2_2(L3_2, L4_2, L5_2)
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SEAL_BATTLE_END_303(context, evt)
+	if evt.param2 == 0 then
+		ScriptLib.ShowReminder(context, 1109004)
+		ScriptLib.RemoveExtraGroupSuite(context, defs.group_id, 3)
+		ScriptLib.SetGadgetStateByConfigId(context, defs.seal_model, GadgetState.GearStart)
+		ScriptLib.AddExtraGroupSuite(context, defs.group_id, 2)
+		ScriptLib.SetWorktopOptionsByGroupId(context, defs.group_id, defs.seal_model, {24})
+	elseif evt.param2 == 1 then
+		ScriptLib.SetGroupVariableValue(context, "seal_battle_done", 1)
+		ScriptLib.SetGadgetStateByConfigId(context, defs.seal_model, GadgetState.Default)
+		ScriptLib.SetGadgetStateByConfigId(context, defs.seal_id, GadgetState.Default)
+	end
+	return 0
 end
-action_EVENT_SEAL_BATTLE_END_303 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Quest_Flag"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_315(context, evt)
+	ScriptLib.AddExtraGroupSuite(context, defs.group_id, 2)
+	ScriptLib.SetGroupVariableValue(context, "Quest_Flag", 1)
+	return 0
 end
-action_EVENT_QUEST_FINISH_315 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Point_Value"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 7 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.group_id
-    L5_2 = L1_1.seal_model
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    L3_2 = GadgetState
-    L3_2 = L3_2.Action03
-    if L2_2 ~= L3_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "Point_Value"
-      L5_2 = 3
-      L2_2(L3_2, L4_2, L5_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "Temp_Point_Value"
-      L5_2 = 3
-      L2_2(L3_2, L4_2, L5_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGroupGadgetStateByConfigId
-      L3_2 = A0_2
-      L4_2 = L1_1.group_id
-      L5_2 = L1_1.seal_model
-      L6_2 = GadgetState
-      L6_2 = L6_2.Action02
-      L2_2(L3_2, L4_2, L5_2, L6_2)
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Quest_Flag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 1 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.AddExtraGroupSuite
-    L4_2 = A0_2
-    L5_2 = L1_1.group_id
-    L6_2 = 2
-    L3_2(L4_2, L5_2, L6_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.GetGroupVariableValue
-    L4_2 = A0_2
-    L5_2 = "first_touch_done"
-    L3_2 = L3_2(L4_2, L5_2)
-    if L3_2 == 1 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.SetWorktopOptionsByGroupId
-      L4_2 = A0_2
-      L5_2 = L1_1.group_id
-      L6_2 = L1_1.seal_model
-      L7_2 = {}
-      L8_2 = 24
-      L7_2[1] = L8_2
-      L3_2(L4_2, L5_2, L6_2, L7_2)
-    end
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_318(context, evt)
+	if ScriptLib.GetGroupVariableValue(context, "Point_Value") == 7 and ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.seal_model) ~= GadgetState.Action03 then
+		ScriptLib.SetGroupVariableValue(context, "Point_Value", 3)
+		ScriptLib.SetGroupVariableValue(context, "Temp_Point_Value", 3)
+		ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.seal_model, GadgetState.Action02)
+	end
+	local qf = ScriptLib.GetGroupVariableValue(context, "Quest_Flag")
+	if qf == 1 then
+		ScriptLib.AddExtraGroupSuite(context, defs.group_id, 2)
+		if ScriptLib.GetGroupVariableValue(context, "first_touch_done") == 1 then
+			ScriptLib.SetWorktopOptionsByGroupId(context, defs.group_id, defs.seal_model, {24})
+		end
+	end
+	return 0
 end
-action_EVENT_GROUP_LOAD_318 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 230001 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "first_touch_done"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 1 == L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_230001(context, evt)
+	if evt.param1 ~= 230001 then 
+		return false 
+	end
+	if 1 == ScriptLib.GetGroupVariableValue(context, "first_touch_done") then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_230001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "first_touch_done"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartSealBattle
-  L3_2 = A0_2
-  L4_2 = L1_1.seal_model
-  L5_2 = {}
-  L6_2 = L1_1.battle_radius
-  L5_2.radius = L6_2
-  L6_2 = L1_1.battle_time
-  L5_2.kill_time = L6_2
-  L6_2 = L1_1.group_id
-  L5_2.monster_group_id = L6_2
-  L6_2 = L1_1.battle_progress
-  L5_2.max_progress = L6_2
-  L6_2 = SealBattleType
-  L6_2 = L6_2.KILL_MONSTER
-  L5_2.battle_type = L6_2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = L1_1.seal_model
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStart
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_230001(context, evt)
+	ScriptLib.SetGroupVariableValue(context, "first_touch_done", 1)
+	ScriptLib.AddExtraGroupSuite(context, defs.group_id, 3)
+	ScriptLib.StartSealBattle(context, defs.seal_model, {radius = defs.battle_radius, kill_time = defs.battle_time, monster_group_id = defs.group_id, max_progress = defs.battle_progress, battle_type = SealBattleType.KILL_MONSTER})
+	ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.seal_model, GadgetState.GearStart)
+	return 0
 end
-action_EVENT_ENTER_REGION_230001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = L1_1.seal_id
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_230005(context, evt)
+	if evt.param1 ~= defs.seal_id then
+		return false
+	end
+	return true
 end
-condition_EVENT_GADGET_CREATE_230005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = L1_1.seal_model
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "seal_battle_done"
-  L3_2 = L3_2(L4_2, L5_2)
-  if 1 == L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = L1_1.group_id
-    L6_2 = L1_1.seal_id
-    L7_2 = L2_2
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-  else
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = L1_1.group_id
-    L6_2 = L1_1.seal_id
-    L7_2 = GadgetState
-    L7_2 = L7_2.GearAction2
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-  end
-  L3_2 = GadgetState
-  L3_2 = L3_2.Default
-  if L2_2 == L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupVariableValue
-    L4_2 = A0_2
-    L5_2 = "Point_Value"
-    L6_2 = 0
-    L3_2(L4_2, L5_2, L6_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupVariableValue
-    L4_2 = A0_2
-    L5_2 = "Temp_Point_Value"
-    L6_2 = 0
-    L3_2(L4_2, L5_2, L6_2)
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "Point_Value"
-  L3_2 = L3_2(L4_2, L5_2)
-  if L3_2 ~= 7 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "Temp_Point_Value"
-    L7_2 = L3_2
-    L4_2(L5_2, L6_2, L7_2)
-    L4_2 = L3_2 % 2
-    if L4_2 == 0 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.CreateGadget
-      L5_2 = A0_2
-      L6_2 = {}
-      L7_2 = L1_1.light_1
-      L6_2.config_id = L7_2
-      L4_2(L5_2, L6_2)
-    end
-    L4_2 = L3_2 % 4
-    if L4_2 < 2 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.CreateGadget
-      L5_2 = A0_2
-      L6_2 = {}
-      L7_2 = L1_1.light_2
-      L6_2.config_id = L7_2
-      L4_2(L5_2, L6_2)
-    end
-    if L3_2 < 4 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.CreateGadget
-      L5_2 = A0_2
-      L6_2 = {}
-      L7_2 = L1_1.light_3
-      L6_2.config_id = L7_2
-      L4_2(L5_2, L6_2)
-    end
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_230005(context, evt)
+	local state_info = ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.seal_model)
+	if 1 == ScriptLib.GetGroupVariableValue(context, "seal_battle_done") then
+		ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.seal_id, state_info)
+	else 
+		ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.seal_id, GadgetState.GearAction2)
+	end
+	if state_info == GadgetState.Default then
+		ScriptLib.SetGroupVariableValue(context, "Point_Value", 0)
+		ScriptLib.SetGroupVariableValue(context, "Temp_Point_Value", 0)
+	end
+	local p_value = ScriptLib.GetGroupVariableValue(context, "Point_Value")
+	if p_value ~= 7 then
+		-- 重置临时数据
+		ScriptLib.SetGroupVariableValue(context, "Temp_Point_Value", p_value)
+		if p_value%2 == 0 then
+			ScriptLib.CreateGadget(context, {config_id = defs.light_1})
+		end
+		if p_value%4 < 2 then
+			ScriptLib.CreateGadget(context, {config_id = defs.light_2})
+		end
+		if p_value < 4 then
+			ScriptLib.CreateGadget(context, {config_id = defs.light_3})
+		end
+	end
+	return 0
 end
-action_EVENT_GADGET_CREATE_230005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = 0
-  L3_2 = A1_2.param2
-  L4_2 = L1_1.light_1
-  if L3_2 ~= L4_2 then
-    L3_2 = A1_2.param2
-    L4_2 = L1_1.light_2
-    if L3_2 ~= L4_2 then
-      L3_2 = A1_2.param2
-      L4_2 = L1_1.light_3
-      if L3_2 ~= L4_2 then
-        goto lbl_66
-      end
-    end
-  end
-  L3_2 = A1_2.param1
-  L4_2 = GadgetState
-  L4_2 = L4_2.GearStart
-  if L3_2 == L4_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.GetGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = L1_1.group_id
-    L6_2 = L1_1.seal_id
-    L3_2 = L3_2(L4_2, L5_2, L6_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetGroupGadgetStateByConfigId
-    L5_2 = A0_2
-    L6_2 = L1_1.group_id
-    L7_2 = L1_1.seal_id
-    L8_2 = GadgetState
-    L8_2 = L8_2.ChestTrap
-    L4_2(L5_2, L6_2, L7_2, L8_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetGroupGadgetStateByConfigId
-    L5_2 = A0_2
-    L6_2 = L1_1.group_id
-    L7_2 = L1_1.seal_id
-    L8_2 = L3_2
-    L4_2(L5_2, L6_2, L7_2, L8_2)
-    L4_2 = A1_2.param2
-    L5_2 = L1_1.light_1
-    if L4_2 == L5_2 then
-      L2_2 = 1
-    else
-      L4_2 = A1_2.param2
-      L5_2 = L1_1.light_2
-      if L4_2 == L5_2 then
-        L2_2 = 2
-      else
-        L4_2 = A1_2.param2
-        L5_2 = L1_1.light_3
-        if L4_2 == L5_2 then
-          L2_2 = 4
-        end
-      end
-    end
-    L4_2 = ScriptLib
-    L4_2 = L4_2.ChangeGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "Temp_Point_Value"
-    L7_2 = L2_2
-    L4_2(L5_2, L6_2, L7_2)
-    L4_2 = 0
-    do return L4_2 end
-    goto lbl_241
-    ::lbl_66::
-    L3_2 = A1_2.param2
-    L4_2 = L1_1.seal_id
-    if L3_2 == L4_2 then
-      L3_2 = A1_2.param1
-      L4_2 = GadgetState
-      L4_2 = L4_2.ChestLocked
-      if L3_2 ~= L4_2 then
-        L3_2 = A1_2.param3
-        L4_2 = GadgetState
-        L4_2 = L4_2.ChestLocked
-        if L3_2 ~= L4_2 then
-          goto lbl_121
-        end
-      end
-      L3_2 = ScriptLib
-      L3_2 = L3_2.GetGroupVariableValue
-      L4_2 = A0_2
-      L5_2 = "Point_Value"
-      L3_2 = L3_2(L4_2, L5_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGroupVariableValue
-      L5_2 = A0_2
-      L6_2 = "Temp_Point_Value"
-      L7_2 = L3_2
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = L3_2 % 2
-      if L4_2 == 0 then
-        L4_2 = ScriptLib
-        L4_2 = L4_2.CreateGadget
-        L5_2 = A0_2
-        L6_2 = {}
-        L7_2 = L1_1.light_1
-        L6_2.config_id = L7_2
-        L4_2(L5_2, L6_2)
-      end
-      L4_2 = L3_2 % 4
-      if L4_2 < 2 then
-        L4_2 = ScriptLib
-        L4_2 = L4_2.CreateGadget
-        L5_2 = A0_2
-        L6_2 = {}
-        L7_2 = L1_1.light_2
-        L6_2.config_id = L7_2
-        L4_2(L5_2, L6_2)
-      end
-      if L3_2 < 4 then
-        L4_2 = ScriptLib
-        L4_2 = L4_2.CreateGadget
-        L5_2 = A0_2
-        L6_2 = {}
-        L7_2 = L1_1.light_3
-        L6_2.config_id = L7_2
-        L4_2(L5_2, L6_2)
-        goto lbl_236
-        ::lbl_121::
-        L3_2 = ScriptLib
-        L3_2 = L3_2.GetGroupVariableValue
-        L4_2 = A0_2
-        L5_2 = "seal_battle_done"
-        L3_2 = L3_2(L4_2, L5_2)
-        if 1 == L3_2 then
-          L3_2 = A1_2.param1
-          L4_2 = GadgetState
-          L4_2 = L4_2.Action01
-          if L3_2 ~= L4_2 then
-            L3_2 = A1_2.param1
-            L4_2 = GadgetState
-            L4_2 = L4_2.Action02
-            if L3_2 ~= L4_2 then
-              goto lbl_168
-            end
-          end
-          L3_2 = A1_2.param1
-          L4_2 = GadgetState
-          L4_2 = L4_2.ChestTrap
-          if L3_2 ~= L4_2 then
-            L3_2 = A1_2.param3
-            L4_2 = GadgetState
-            L4_2 = L4_2.ChestTrap
-            if L3_2 ~= L4_2 then
-              L3_2 = ScriptLib
-              L3_2 = L3_2.GetGroupVariableValue
-              L4_2 = A0_2
-              L5_2 = "Temp_Point_Value"
-              L3_2 = L3_2(L4_2, L5_2)
-              L2_2 = L3_2
-              L3_2 = ScriptLib
-              L3_2 = L3_2.SetGroupVariableValue
-              L4_2 = A0_2
-              L5_2 = "Point_Value"
-              L6_2 = L2_2
-              L3_2(L4_2, L5_2, L6_2)
-              L3_2 = ScriptLib
-              L3_2 = L3_2.SetGroupGadgetStateByConfigId
-              L4_2 = A0_2
-              L5_2 = L1_1.group_id
-              L6_2 = L1_1.seal_model
-              L7_2 = A1_2.param1
-              L3_2(L4_2, L5_2, L6_2, L7_2)
-              goto lbl_236
-              ::lbl_168::
-              L3_2 = A1_2.param1
-              L4_2 = GadgetState
-              L4_2 = L4_2.Action03
-              if L3_2 == L4_2 then
-                L3_2 = ScriptLib
-                L3_2 = L3_2.SetGroupGadgetStateByConfigId
-                L4_2 = A0_2
-                L5_2 = L1_1.group_id
-                L6_2 = L1_1.seal_model
-                L7_2 = A1_2.param1
-                L3_2(L4_2, L5_2, L6_2, L7_2)
-                L3_2 = ScriptLib
-                L3_2 = L3_2.GetGroupVariableValue
-                L4_2 = A0_2
-                L5_2 = "Temp_Point_Value"
-                L3_2 = L3_2(L4_2, L5_2)
-                L2_2 = L3_2
-                L3_2 = ScriptLib
-                L3_2 = L3_2.SetGroupVariableValue
-                L4_2 = A0_2
-                L5_2 = "Point_Value"
-                L6_2 = L2_2
-                L3_2(L4_2, L5_2, L6_2)
-                L3_2 = ScriptLib
-                L3_2 = L3_2.AddQuestProgress
-                L4_2 = A0_2
-                L5_2 = "39007_success"
-                L3_2(L4_2, L5_2)
-                L3_2 = ScriptLib
-                L3_2 = L3_2.SetGroupVariableValue
-                L4_2 = A0_2
-                L5_2 = "Quest_Flag"
-                L6_2 = 0
-                L3_2(L4_2, L5_2, L6_2)
-                L3_2 = ScriptLib
-                L3_2 = L3_2.KillEntityByConfigId
-                L4_2 = A0_2
-                L5_2 = {}
-                L6_2 = L1_1.group_id
-                L5_2.group_id = L6_2
-                L6_2 = L1_1.seal_id
-                L5_2.config_id = L6_2
-                L3_2(L4_2, L5_2)
-                L3_2 = ScriptLib
-                L3_2 = L3_2.RemoveExtraGroupSuite
-                L4_2 = A0_2
-                L5_2 = L1_1.group_id
-                L6_2 = 2
-                L3_2(L4_2, L5_2, L6_2)
-              else
-                L3_2 = A1_2.param3
-                L4_2 = GadgetState
-                L4_2 = L4_2.GearAction2
-                if L3_2 == L4_2 then
-                  L3_2 = A1_2.param1
-                  L4_2 = GadgetState
-                  L4_2 = L4_2.Default
-                  if L3_2 == L4_2 then
-                    L3_2 = ScriptLib
-                    L3_2 = L3_2.SetGroupGadgetStateByConfigId
-                    L4_2 = A0_2
-                    L5_2 = L1_1.group_id
-                    L6_2 = L1_1.seal_model
-                    L7_2 = A1_2.param1
-                    L3_2(L4_2, L5_2, L6_2, L7_2)
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-      ::lbl_236::
-      L3_2 = 0
-      return L3_2
-    else
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  ::lbl_241::
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_230006(context, evt)
+	local t_p_value = 0
+	if evt.param2 == defs.light_1 or evt.param2 == defs.light_2 or evt.param2 == defs.light_3 then
+		-- 光柱触发信息令封印激活玩家身上的子弹
+		if evt.param1 == GadgetState.GearStart then
+			local cur_state = ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.seal_id)
+			ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.seal_id, GadgetState.ChestTrap)
+			ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.seal_id, cur_state)
+			-- 记录光柱触碰状况
+			if evt.param2 == defs.light_1 then
+				t_p_value = 1
+			elseif evt.param2 == defs.light_2 then
+				t_p_value = 2
+			elseif evt.param2 == defs.light_3 then
+				t_p_value = 4
+			end	
+			ScriptLib.ChangeGroupVariableValue(context, "Temp_Point_Value", t_p_value)
+			return 0
+		end
+	elseif evt.param2 == defs.seal_id then 
+		if evt.param1 == GadgetState.ChestLocked or evt.param3 == GadgetState.ChestLocked then
+			-- 玩家出界，group数据清理
+			local p_value = ScriptLib.GetGroupVariableValue(context, "Point_Value")
+			-- 重置临时数据
+			ScriptLib.SetGroupVariableValue(context, "Temp_Point_Value", p_value)
+			if p_value%2 == 0 then
+				ScriptLib.CreateGadget(context, {config_id = defs.light_1})
+			end
+			if p_value%4 < 2 then
+				ScriptLib.CreateGadget(context, {config_id = defs.light_2})
+			end
+			if p_value < 4 then
+				ScriptLib.CreateGadget(context, {config_id = defs.light_3})
+			end
+		elseif 1 == ScriptLib.GetGroupVariableValue(context, "seal_battle_done") then
+			-- 封印103时处理光柱逻辑
+			if evt.param1 == GadgetState.Action01 or evt.param1 == GadgetState.Action02 then
+				if evt.param1 ~= GadgetState.ChestTrap and evt.param3 ~= GadgetState.ChestTrap then
+					t_p_value = ScriptLib.GetGroupVariableValue(context, "Temp_Point_Value")
+					ScriptLib.SetGroupVariableValue(context, "Point_Value", t_p_value)
+					ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.seal_model, evt.param1)
+				end
+			elseif evt.param1 == GadgetState.Action03 then
+				ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.seal_model, evt.param1)
+				-- 封印解除
+				t_p_value = ScriptLib.GetGroupVariableValue(context, "Temp_Point_Value")
+				ScriptLib.SetGroupVariableValue(context, "Point_Value", t_p_value)
+				ScriptLib.AddQuestProgress(context, "39007_success")
+				ScriptLib.SetGroupVariableValue(context, "Quest_Flag", 0)
+				ScriptLib.KillEntityByConfigId(context, { group_id = defs.group_id, config_id = defs.seal_id })
+				ScriptLib.RemoveExtraGroupSuite(context, defs.group_id, 2)
+			elseif evt.param3 == GadgetState.GearAction2 and evt.param1 == GadgetState.Default then
+				ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.seal_model, evt.param1)
+			end
+		end
+		return 0
+	else
+		return -1
+	end
 end
-action_EVENT_GADGET_STATE_CHANGE_230006 = L2_1

@@ -1,164 +1,110 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133103472
-L1_1 = {}
-L1_1.duration = 15
-L1_1.group_id = 133103472
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 472001
-L4_1.gadget_id = 70211111
-L5_1 = {}
-L5_1.x = 371.296
-L5_1.y = 272.017
-L5_1.z = 1768.896
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 3.55
-L5_1.y = 164.63
-L5_1.z = 345.78
-L4_1.rot = L5_1
-L4_1.level = 21
-L4_1.drop_tag = "\232\167\163\232\176\156\228\184\173\231\186\167\231\146\131\230\156\136"
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.name = "chest"
-L5_1.exp = 1
-L4_1.explore = L5_1
-L4_1.area_id = 6
-L5_1 = {}
-L5_1.config_id = 472002
-L5_1.gadget_id = 70900039
-L6_1 = {}
-L6_1.x = 359.014
-L6_1.y = 251.897
-L6_1.z = 1655.37
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 24
-L5_1.isOneoff = true
-L5_1.persistent = true
-L5_1.area_id = 6
-L6_1 = {}
-L6_1.config_id = 472003
-L6_1.gadget_id = 70900201
-L7_1 = {}
-L7_1.x = 371.3
-L7_1.y = 272.0
-L7_1.z = 1768.9
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 24
-L6_1.area_id = 6
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1472005
-L4_1.name = "CHALLENGE_SUCCESS_472005"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_CHALLENGE_SUCCESS
-L4_1.event = L5_1
-L4_1.source = "666"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_CHALLENGE_SUCCESS_472005"
-L5_1 = {}
-L5_1.config_id = 1472006
-L5_1.name = "CHALLENGE_FAIL_472006"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_CHALLENGE_FAIL
-L5_1.event = L6_1
-L5_1.source = "666"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_CHALLENGE_FAIL_472006"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1472007
-L6_1.name = "GADGET_STATE_CHANGE_472007"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GADGET_STATE_CHANGE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_472007"
-L6_1.action = "action_EVENT_GADGET_STATE_CHANGE_472007"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1472008
-L7_1.name = "GADGET_STATE_CHANGE_472008"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GADGET_STATE_CHANGE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_472008"
-L7_1.action = ""
-L7_1.tag = "202"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 3
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-suites = L2_1
+-- 基础信息
+local base_info = {
+	group_id = 133103472
+}
+
+-- Trigger变量
+local defs = {
+	duration = 15,
+	group_id = 133103472
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 472001, gadget_id = 70211111, pos = { x = 371.296, y = 272.017, z = 1768.896 }, rot = { x = 3.550, y = 164.630, z = 345.780 }, level = 21, drop_tag = "解谜中级璃月", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 6 },
+		{ config_id = 472002, gadget_id = 70900039, pos = { x = 359.014, y = 251.897, z = 1655.370 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, isOneoff = true, persistent = true, area_id = 6 },
+		{ config_id = 472003, gadget_id = 70900201, pos = { x = 371.300, y = 272.000, z = 1768.900 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, area_id = 6 }
+	},
+	triggers = {
+		{ config_id = 1472005, name = "CHALLENGE_SUCCESS_472005", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "666", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_472005" },
+		{ config_id = 1472006, name = "CHALLENGE_FAIL_472006", event = EventType.EVENT_CHALLENGE_FAIL, source = "666", condition = "", action = "action_EVENT_CHALLENGE_FAIL_472006", trigger_count = 0 },
+		{ config_id = 1472007, name = "GADGET_STATE_CHANGE_472007", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_472007", action = "action_EVENT_GADGET_STATE_CHANGE_472007", trigger_count = 0 },
+		{ config_id = 1472008, name = "GADGET_STATE_CHANGE_472008", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_472008", action = "", tag = "202" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 3,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

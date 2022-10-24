@@ -1,234 +1,119 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133108125
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 125001
-L2_1.monster_id = 21010101
-L3_1 = {}
-L3_1.x = -118.97
-L3_1.y = 252.745
-L3_1.z = -105.64
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L2_1.area_id = 7
-L3_1 = {}
-L3_1.config_id = 125002
-L3_1.monster_id = 21010101
-L4_1 = {}
-L4_1.x = -122.311
-L4_1.y = 252.289
-L4_1.z = -106.312
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L3_1.area_id = 7
-L4_1 = {}
-L4_1.config_id = 125003
-L4_1.monster_id = 21010101
-L5_1 = {}
-L5_1.x = -129.48
-L5_1.y = 253.843
-L5_1.z = -90.707
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L4_1.area_id = 7
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 125004
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 30
-L3_1 = {}
-L3_1.x = -120.933
-L3_1.y = 252.505
-L3_1.z = -104.097
-L2_1.pos = L3_1
-L2_1.area_id = 7
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1125004
-L2_1.name = "ENTER_REGION_125004"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_ENTER_REGION_125004"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1125005
-L3_1.name = "ANY_MONSTER_DIE_125005"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_MONSTER_DIE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_ANY_MONSTER_DIE_125005"
-L3_1.trigger_count = 0
-L3_1.tag = "125005"
-L4_1 = {}
-L4_1.config_id = 1125006
-L4_1.name = "CHALLENGE_SUCCESS_125006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_CHALLENGE_SUCCESS
-L4_1.event = L5_1
-L4_1.source = "11116801"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_CHALLENGE_SUCCESS_125006"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "save"
-L2_1.value = 0
-L2_1.no_refresh = true
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = 125001
-L5_1 = 125002
-L6_1 = 125003
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 125004
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_125004"
-L5_1 = "ANY_MONSTER_DIE_125005"
-L6_1 = "CHALLENGE_SUCCESS_125006"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ActiveChallenge
-  L3_2 = A0_2
-  L4_2 = 11116801
-  L5_2 = 111168
-  L6_2 = 1
-  L7_2 = 125005
-  L8_2 = 3
-  L9_2 = ScriptLib
-  L9_2 = L9_2.GetGroupVariableValue
-  L10_2 = A0_2
-  L11_2 = "save"
-  L9_2, L10_2, L11_2 = L9_2(L10_2, L11_2)
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_challenge"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ActivateGroupLinkBundle
-  L3_2 = A0_2
-  L4_2 = 133108125
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : ActivateGroupLinkBundle"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133108125
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 125001, monster_id = 21010101, pos = { x = -118.970, y = 252.745, z = -105.640 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_tag = "丘丘人", area_id = 7 },
+	{ config_id = 125002, monster_id = 21010101, pos = { x = -122.311, y = 252.289, z = -106.312 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_tag = "丘丘人", area_id = 7 },
+	{ config_id = 125003, monster_id = 21010101, pos = { x = -129.480, y = 253.843, z = -90.707 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_tag = "丘丘人", area_id = 7 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+	{ config_id = 125004, shape = RegionShape.SPHERE, radius = 30, pos = { x = -120.933, y = 252.505, z = -104.097 }, area_id = 7 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1125004, name = "ENTER_REGION_125004", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "action_EVENT_ENTER_REGION_125004", trigger_count = 0 },
+	{ config_id = 1125005, name = "ANY_MONSTER_DIE_125005", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "", action = "action_EVENT_ANY_MONSTER_DIE_125005", trigger_count = 0, tag = "125005" },
+	{ config_id = 1125006, name = "CHALLENGE_SUCCESS_125006", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "11116801", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_125006" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "save", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 125001, 125002, 125003 },
+		gadgets = { },
+		regions = { 125004 },
+		triggers = { "ENTER_REGION_125004", "ANY_MONSTER_DIE_125005", "CHALLENGE_SUCCESS_125006" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_125004(context, evt)
+	--[[
+	起一个challenge，数量读variable 创建编号为0（该挑战的识别id),挑战内容为0的区域挑战，具体参数填写方式，见DungeonChallengeData表中的注释，所有填写的值都必须是int类型
+	]]--
+	if 0 ~= ScriptLib.ActiveChallenge(context, 11116801, 111168, 1, 125005, 3, ScriptLib.GetGroupVariableValue(context,"save")) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_challenge")
+		return -1
+	end
+	
+	-- 告知服务器，该显示黄圈了
+	if 0 ~= ScriptLib.ActivateGroupLinkBundle(context, 133108125) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : ActivateGroupLinkBundle")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_125004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "save"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_125005(context, evt)
+	-- 针对当前group内变量名为 "save" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "save", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_125005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.FinishGroupLinkBundle
-  L3_2 = A0_2
-  L4_2 = 133108125
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : FinishGroupLinkBundle"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_125006(context, evt)
+	-- 告知服务器挑战完成
+	if 0 ~= ScriptLib.FinishGroupLinkBundle(context, 133108125) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : FinishGroupLinkBundle")
+	  return -1
+	end
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_125006 = L1_1

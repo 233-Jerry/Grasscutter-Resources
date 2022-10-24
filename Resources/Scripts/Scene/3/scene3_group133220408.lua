@@ -1,304 +1,156 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133220408
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 408001
-L2_1.gadget_id = 70290107
-L3_1 = {}
-L3_1.x = -2479.097
-L3_1.y = 216.672
-L3_1.z = -4625.76
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 4.846
-L3_1.y = 55.741
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 27
-L2_1.persistent = true
-L2_1.area_id = 11
-L3_1 = {}
-L3_1.config_id = 408002
-L3_1.gadget_id = 70500000
-L4_1 = {}
-L4_1.x = -2478.346
-L4_1.y = 216.824
-L4_1.z = -4625.251
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 27
-L3_1.point_type = 9143
-L3_1.isOneoff = true
-L3_1.persistent = true
-L3_1.area_id = 11
-L4_1 = {}
-L4_1.config_id = 408003
-L4_1.gadget_id = 70330092
-L5_1 = {}
-L5_1.x = -2479.558
-L5_1.y = 216.821
-L5_1.z = -4624.201
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 357.324
-L5_1.y = 102.98
-L5_1.z = 357.585
-L4_1.rot = L5_1
-L4_1.level = 27
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.persistent = true
-L4_1.area_id = 11
-L5_1 = {}
-L5_1.config_id = 408006
-L5_1.gadget_id = 71700288
-L6_1 = {}
-L6_1.x = -2478.34
-L6_1.y = 216.825
-L6_1.z = -4625.248
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 27
-L5_1.isOneoff = true
-L5_1.persistent = true
-L5_1.area_id = 11
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1408004
-L2_1.name = "USE_WIDGET_TOY_FOX_CAMERA_408004"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_USE_WIDGET_TOY_FOX_CAMERA
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_USE_WIDGET_TOY_FOX_CAMERA_408004"
-L2_1.action = "action_EVENT_USE_WIDGET_TOY_FOX_CAMERA_408004"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1408005
-L3_1.name = "GADGET_STATE_CHANGE_408005"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_408005"
-L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_408005"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1408007
-L4_1.name = "GATHER_408007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GATHER
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GATHER_408007"
-L4_1.action = "action_EVENT_GATHER_408007"
-L4_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 408003
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "USE_WIDGET_TOY_FOX_CAMERA_408004"
-L5_1 = "GADGET_STATE_CHANGE_408005"
-L6_1 = "GATHER_408007"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGadgetConfigId
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.gadget_eid = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 408003 then
-    L3_2 = true
-    return L3_2
-  end
-  L3_2 = false
-  return L3_2
+-- 基础信息
+local base_info = {
+	group_id = 133220408
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 408001, gadget_id = 70290107, pos = { x = -2479.097, y = 216.672, z = -4625.760 }, rot = { x = 4.846, y = 55.741, z = 0.000 }, level = 27, persistent = true, area_id = 11 },
+	{ config_id = 408002, gadget_id = 70500000, pos = { x = -2478.346, y = 216.824, z = -4625.251 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, point_type = 9143, isOneoff = true, persistent = true, area_id = 11 },
+	{ config_id = 408003, gadget_id = 70330092, pos = { x = -2479.558, y = 216.821, z = -4624.201 }, rot = { x = 357.324, y = 102.980, z = 357.585 }, level = 27, state = GadgetState.GearStart, persistent = true, area_id = 11 },
+	{ config_id = 408006, gadget_id = 71700288, pos = { x = -2478.340, y = 216.825, z = -4625.248 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, isOneoff = true, persistent = true, area_id = 11 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1408004, name = "USE_WIDGET_TOY_FOX_CAMERA_408004", event = EventType.EVENT_USE_WIDGET_TOY_FOX_CAMERA, source = "", condition = "condition_EVENT_USE_WIDGET_TOY_FOX_CAMERA_408004", action = "action_EVENT_USE_WIDGET_TOY_FOX_CAMERA_408004", trigger_count = 0 },
+	{ config_id = 1408005, name = "GADGET_STATE_CHANGE_408005", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_408005", action = "action_EVENT_GADGET_STATE_CHANGE_408005", trigger_count = 0 },
+	{ config_id = 1408007, name = "GATHER_408007", event = EventType.EVENT_GATHER, source = "", condition = "condition_EVENT_GATHER_408007", action = "action_EVENT_GATHER_408007", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 408003 },
+		regions = { },
+		triggers = { "USE_WIDGET_TOY_FOX_CAMERA_408004", "GADGET_STATE_CHANGE_408005", "GATHER_408007" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_USE_WIDGET_TOY_FOX_CAMERA_408004(context, evt)
+	 local configId=ScriptLib.GetGadgetConfigId(context, { gadget_eid =evt.source_eid })
+	if configId==408003 then
+	return true
+	end
+	return false
 end
-condition_EVENT_USE_WIDGET_TOY_FOX_CAMERA_408004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 408001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 408003
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 322072611
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_USE_WIDGET_TOY_FOX_CAMERA_408004(context, evt)
+	-- 创建id为408001的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 408001 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 将configid为 408003 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 408003, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 调用提示id为 322072611 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 322072611) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_USE_WIDGET_TOY_FOX_CAMERA_408004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 408001 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_408005(context, evt)
+	if 408001 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_408005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 408002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 408006
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_408005(context, evt)
+	-- 创建id为408002的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 408002 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 创建id为408006的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 408006 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_408005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 408002 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GATHER_408007(context, evt)
+	if 408002 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GATHER_408007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133220408
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 408006
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GATHER_408007(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133220408, EntityType.GADGET, 408006 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GATHER_408007 = L1_1

@@ -1,99 +1,75 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 133210508
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 508001
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 30
-L3_1 = {}
-L3_1.x = -4046.155
-L3_1.y = 200.921
-L3_1.z = -682.372
-L2_1.pos = L3_1
-L2_1.area_id = 17
-L3_1 = {}
-L4_1 = 32100001
-L3_1[1] = L4_1
-L2_1.vision_type_list = L3_1
-L3_1 = {}
-L3_1.config_id = 508002
-L4_1 = RegionShape
-L4_1 = L4_1.CUBIC
-L3_1.shape = L4_1
-L4_1 = {}
-L4_1.x = 150.0
-L4_1.y = 50.0
-L4_1.z = 150.0
-L3_1.size = L4_1
-L4_1 = {}
-L4_1.x = -3784.335
-L4_1.y = 216.365
-L4_1.z = -478.796
-L3_1.pos = L4_1
-L3_1.area_id = 17
-L4_1 = {}
-L5_1 = 32100002
-L4_1[1] = L5_1
-L3_1.vision_type_list = L4_1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1508001
-L2_1.name = "ENTER_REGION_508001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = ""
-L3_1 = {}
-L3_1.config_id = 1508002
-L3_1.name = "ENTER_REGION_508002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = ""
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 508001
-L5_1 = 508002
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_508001"
-L5_1 = "ENTER_REGION_508002"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133210508
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+	{ config_id = 508001, shape = RegionShape.SPHERE, radius = 30, pos = { x = -4046.155, y = 200.921, z = -682.372 }, area_id = 17, vision_type_list = { 32100001 } },
+	{ config_id = 508002, shape = RegionShape.CUBIC, size = { x = 150.000, y = 50.000, z = 150.000 }, pos = { x = -3784.335, y = 216.365, z = -478.796 }, area_id = 17, vision_type_list = { 32100002 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1508001, name = "ENTER_REGION_508001", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "" },
+	{ config_id = 1508002, name = "ENTER_REGION_508002", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 508001, 508002 },
+		triggers = { "ENTER_REGION_508001", "ENTER_REGION_508002" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

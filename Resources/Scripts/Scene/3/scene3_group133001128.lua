@@ -1,308 +1,82 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1
-L0_1 = {}
-L0_1.group_id = 133001128
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1881
-L2_1.gadget_id = 70211001
-L3_1 = {}
-L3_1.x = 1295.423
-L3_1.y = 255.516
-L3_1.z = -1512.474
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 314.543
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 11
-L2_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\232\146\153\229\190\183"
-L2_1.isOneoff = true
-L2_1.persistent = true
-L3_1 = {}
-L3_1.name = "chest"
-L3_1.exp = 1
-L2_1.explore = L3_1
-L2_1.area_id = 2
-L3_1 = {}
-L3_1.config_id = 1882
-L3_1.gadget_id = 70211001
-L4_1 = {}
-L4_1.x = 1263.444
-L4_1.y = 255.144
-L4_1.z = -1534.751
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 311.314
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 11
-L3_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\232\146\153\229\190\183"
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.name = "chest"
-L4_1.exp = 1
-L3_1.explore = L4_1
-L3_1.area_id = 2
-L4_1 = {}
-L4_1.config_id = 1883
-L4_1.gadget_id = 70211001
-L5_1 = {}
-L5_1.x = 1458.345
-L5_1.y = 242.119
-L5_1.z = -1609.446
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 103.135
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 11
-L4_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\232\146\153\229\190\183"
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.name = "chest"
-L5_1.exp = 1
-L4_1.explore = L5_1
-L4_1.area_id = 2
-L5_1 = {}
-L5_1.config_id = 1884
-L5_1.gadget_id = 70211001
-L6_1 = {}
-L6_1.x = 1490.703
-L6_1.y = 244.062
-L6_1.z = -1578.707
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 167.556
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 11
-L5_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\232\146\153\229\190\183"
-L5_1.isOneoff = true
-L5_1.persistent = true
-L6_1 = {}
-L6_1.name = "chest"
-L6_1.exp = 1
-L5_1.explore = L6_1
-L5_1.area_id = 2
-L6_1 = {}
-L6_1.config_id = 1885
-L6_1.gadget_id = 70211101
-L7_1 = {}
-L7_1.x = 1586.8
-L7_1.y = 258.845
-L7_1.z = -1538.04
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 183.35
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 11
-L6_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\232\146\153\229\190\183"
-L6_1.isOneoff = true
-L6_1.persistent = true
-L7_1 = {}
-L7_1.name = "chest"
-L7_1.exp = 1
-L6_1.explore = L7_1
-L6_1.area_id = 2
-L7_1 = {}
-L7_1.config_id = 1886
-L7_1.gadget_id = 70211001
-L8_1 = {}
-L8_1.x = 1299.045
-L8_1.y = 267.469
-L8_1.z = -1702.357
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 289.226
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 11
-L7_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\232\146\153\229\190\183"
-L7_1.isOneoff = true
-L7_1.persistent = true
-L8_1 = {}
-L8_1.name = "chest"
-L8_1.exp = 1
-L7_1.explore = L8_1
-L7_1.area_id = 2
-L8_1 = {}
-L8_1.config_id = 1887
-L8_1.gadget_id = 70211001
-L9_1 = {}
-L9_1.x = 1246.858
-L9_1.y = 263.177
-L9_1.z = -1723.071
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 36.425
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 11
-L8_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\232\146\153\229\190\183"
-L8_1.isOneoff = true
-L8_1.persistent = true
-L9_1 = {}
-L9_1.name = "chest"
-L9_1.exp = 1
-L8_1.explore = L9_1
-L8_1.area_id = 2
-L9_1 = {}
-L9_1.config_id = 1912
-L9_1.gadget_id = 70211001
-L10_1 = {}
-L10_1.x = 1356.083
-L10_1.y = 256.151
-L10_1.z = -1675.384
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 188.176
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 11
-L9_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\232\146\153\229\190\183"
-L9_1.isOneoff = true
-L9_1.persistent = true
-L10_1 = {}
-L10_1.name = "chest"
-L10_1.exp = 1
-L9_1.explore = L10_1
-L9_1.area_id = 2
-L10_1 = {}
-L10_1.config_id = 2102
-L10_1.gadget_id = 70211101
-L11_1 = {}
-L11_1.x = 1493.67
-L11_1.y = 269.189
-L11_1.z = -1774.752
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 262.256
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 11
-L10_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\232\146\153\229\190\183"
-L10_1.isOneoff = true
-L10_1.persistent = true
-L11_1 = {}
-L11_1.name = "chest"
-L11_1.exp = 1
-L10_1.explore = L11_1
-L10_1.area_id = 2
-L11_1 = {}
-L11_1.config_id = 2412
-L11_1.gadget_id = 70211001
-L12_1 = {}
-L12_1.x = 1312.866
-L12_1.y = 271.495
-L12_1.z = -1501.028
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 323.884
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 11
-L11_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\232\146\153\229\190\183"
-L11_1.isOneoff = true
-L11_1.persistent = true
-L12_1 = {}
-L12_1.name = "chest"
-L12_1.exp = 1
-L11_1.explore = L12_1
-L11_1.area_id = 2
-L12_1 = {}
-L12_1.config_id = 2600
-L12_1.gadget_id = 70211101
-L13_1 = {}
-L13_1.x = 1486.669
-L13_1.y = 330.926
-L13_1.z = -1985.244
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 4.438
-L13_1.y = 200.715
-L13_1.z = 357.006
-L12_1.rot = L13_1
-L12_1.level = 11
-L12_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\232\146\153\229\190\183"
-L12_1.isOneoff = true
-L12_1.persistent = true
-L13_1 = {}
-L13_1.name = "chest"
-L13_1.exp = 1
-L12_1.explore = L13_1
-L12_1.area_id = 2
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = true
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 1881
-L5_1 = 1882
-L6_1 = 1883
-L7_1 = 1884
-L8_1 = 1885
-L9_1 = 1886
-L10_1 = 1887
-L11_1 = 1912
-L12_1 = 2102
-L13_1 = 2412
-L14_1 = 2600
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133001128
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 1881, gadget_id = 70211001, pos = { x = 1295.423, y = 255.516, z = -1512.474 }, rot = { x = 0.000, y = 314.543, z = 0.000 }, level = 11, drop_tag = "战斗低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 2 },
+	{ config_id = 1882, gadget_id = 70211001, pos = { x = 1263.444, y = 255.144, z = -1534.751 }, rot = { x = 0.000, y = 311.314, z = 0.000 }, level = 11, drop_tag = "战斗低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 2 },
+	{ config_id = 1883, gadget_id = 70211001, pos = { x = 1458.345, y = 242.119, z = -1609.446 }, rot = { x = 0.000, y = 103.135, z = 0.000 }, level = 11, drop_tag = "战斗低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 2 },
+	{ config_id = 1884, gadget_id = 70211001, pos = { x = 1490.703, y = 244.062, z = -1578.707 }, rot = { x = 0.000, y = 167.556, z = 0.000 }, level = 11, drop_tag = "战斗低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 2 },
+	{ config_id = 1885, gadget_id = 70211101, pos = { x = 1586.800, y = 258.845, z = -1538.040 }, rot = { x = 0.000, y = 183.350, z = 0.000 }, level = 11, drop_tag = "解谜低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 2 },
+	{ config_id = 1886, gadget_id = 70211001, pos = { x = 1299.045, y = 267.469, z = -1702.357 }, rot = { x = 0.000, y = 289.226, z = 0.000 }, level = 11, drop_tag = "战斗低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 2 },
+	{ config_id = 1887, gadget_id = 70211001, pos = { x = 1246.858, y = 263.177, z = -1723.071 }, rot = { x = 0.000, y = 36.425, z = 0.000 }, level = 11, drop_tag = "战斗低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 2 },
+	{ config_id = 1912, gadget_id = 70211001, pos = { x = 1356.083, y = 256.151, z = -1675.384 }, rot = { x = 0.000, y = 188.176, z = 0.000 }, level = 11, drop_tag = "战斗低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 2 },
+	{ config_id = 2102, gadget_id = 70211101, pos = { x = 1493.670, y = 269.189, z = -1774.752 }, rot = { x = 0.000, y = 262.256, z = 0.000 }, level = 11, drop_tag = "解谜低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 2 },
+	{ config_id = 2412, gadget_id = 70211001, pos = { x = 1312.866, y = 271.495, z = -1501.028 }, rot = { x = 0.000, y = 323.884, z = 0.000 }, level = 11, drop_tag = "战斗低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 2 },
+	{ config_id = 2600, gadget_id = 70211101, pos = { x = 1486.669, y = 330.926, z = -1985.244 }, rot = { x = 4.438, y = 200.715, z = 357.006 }, level = 11, drop_tag = "解谜低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 2 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1881, 1882, 1883, 1884, 1885, 1886, 1887, 1912, 2102, 2412, 2600 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

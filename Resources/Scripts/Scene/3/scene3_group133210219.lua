@@ -1,904 +1,319 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133210219
-L1_1 = {}
-L1_1.group_ID = 133210219
-L1_1.gadget_thunderThelfID = 219001
-L1_1.pointarray_ID = 321000067
-L1_1.maxPointCount = 14
-L1_1.gadget_Reward_1 = 219004
-L2_1 = {}
-L3_1 = 5
-L4_1 = 8
-L5_1 = 10
-L6_1 = 12
-L7_1 = 14
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L1_1.pointInfo = L2_1
-function L2_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L1_2 = {}
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "nextRouteIndex"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = L1_1.pointInfo
-  L3_2 = L3_2[L2_2]
-  L4_2 = ScriptLib
-  L4_2 = L4_2.PrintLog
-  L5_2 = "stop point : "
-  L6_2 = L3_2
-  L5_2 = L5_2 .. L6_2
-  L4_2(A0_2, L5_2)
-  L4_2 = ScriptLib
-  L4_2 = L4_2.GetGroupVariableValue
-  L5_2 = A0_2
-  L6_2 = "currentPathNodeIndex"
-  L4_2 = L4_2(L5_2, L6_2)
-  L5_2 = L4_2 + 1
-  L6_2 = L3_2
-  L7_2 = 1
-  for L8_2 = L5_2, L6_2, L7_2 do
-    L9_2 = table
-    L9_2 = L9_2.insert
-    L10_2 = L1_2
-    L11_2 = L8_2
-    L9_2(L10_2, L11_2)
-  end
-  return L1_2
+-- 基础信息
+local base_info = {
+	group_id = 133210219
+}
+
+-- Trigger变量
+local defs = {
+	group_ID = 133210219,
+	gadget_thunderThelfID = 219001,
+	pointarray_ID = 321000067,
+	maxPointCount = 14,
+	gadget_Reward_1 = 219004,
+	pointInfo = {5,8,10,12,14} 
+}
+
+-- DEFS_MISCS
+function GetNextPath(context)
+	local path = {}
+	local index = ScriptLib.GetGroupVariableValue(context,"nextRouteIndex")
+	local stoppoint = defs.pointInfo[index]
+	ScriptLib.PrintLog("stop point : "..stoppoint)
+	local currentNodeIndex = ScriptLib.GetGroupVariableValue(context,"currentPathNodeIndex")
+	for i=currentNodeIndex + 1,stoppoint do
+		table.insert(path,i)
+	end
+	return path
 end
-GetNextPath = L2_1
-function L2_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.PrintLog
-  L2_2 = "platform to move"
-  L1_2(A0_2, L2_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "isMoving"
-  L4_2 = 1
-  L1_2 = L1_2(L2_2, L3_2, L4_2)
-  if 0 ~= L1_2 then
-    L1_2 = ScriptLib
-    L1_2 = L1_2.PrintContextLog
-    L2_2 = A0_2
-    L3_2 = "@@ LUA_WARNING : set_groupVariable"
-    L1_2(L2_2, L3_2)
-    L1_2 = -1
-    return L1_2
-  end
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetPlatformPointArray
-  L2_2 = A0_2
-  L3_2 = L1_1.gadget_thunderThelfID
-  L4_2 = L1_1.pointarray_ID
-  L5_2 = GetNextPath
-  L6_2 = A0_2
-  L5_2 = L5_2(L6_2)
-  L6_2 = {}
-  L6_2.route_type = 0
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.PrintLog
-  L2_2 = "platform to move : start platform"
-  L1_2(A0_2, L2_2)
-  L1_2 = 0
-  return L1_2
+
+
+function MovePlatform(context)
+	ScriptLib.PrintLog("platform to move")
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isMoving", 1) then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+		return -1
+	end
+
+
+	ScriptLib.SetPlatformPointArray(context, defs.gadget_thunderThelfID, defs.pointarray_ID, GetNextPath(context), { route_type = 0 })
+	ScriptLib.PrintLog("platform to move : start platform")
+	return 0
 end
-MovePlatform = L2_1
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 219001
-L3_1.gadget_id = 70350292
-L4_1 = {}
-L4_1.x = -3837.283
-L4_1.y = 110.701
-L4_1.z = -747.704
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 2
-L3_1.start_route = false
-L3_1.persistent = true
-L3_1.is_use_point_array = true
-L3_1.area_id = 17
-L4_1 = {}
-L4_1.config_id = 219002
-L4_1.gadget_id = 70350292
-L5_1 = {}
-L5_1.x = -3788.812
-L5_1.y = 154.51
-L5_1.z = -757.437
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 18.363
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 2
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.start_route = false
-L4_1.persistent = true
-L4_1.is_use_point_array = true
-L4_1.area_id = 17
-L5_1 = {}
-L5_1.config_id = 219004
-L5_1.gadget_id = 70211101
-L6_1 = {}
-L6_1.x = -3791.26
-L6_1.y = 154.465
-L6_1.z = -754.608
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 7.065
-L6_1.y = 127.289
-L6_1.z = 1.062
-L5_1.rot = L6_1
-L5_1.level = 26
-L5_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\231\168\187\229\166\187"
-L5_1.showcutscene = true
-L5_1.isOneoff = true
-L5_1.persistent = true
-L6_1 = {}
-L6_1.name = "chest"
-L6_1.exp = 1
-L5_1.explore = L6_1
-L5_1.area_id = 17
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 219006
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 5
-L4_1 = {}
-L4_1.x = -3837.51
-L4_1.y = 109.972
-L4_1.z = -747.814
-L3_1.pos = L4_1
-L3_1.area_id = 17
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1219003
-L3_1.name = "PLATFORM_REACH_POINT_219003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_PLATFORM_REACH_POINT
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_PLATFORM_REACH_POINT_219003"
-L3_1.action = "action_EVENT_PLATFORM_REACH_POINT_219003"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1219005
-L4_1.name = "AVATAR_NEAR_PLATFORM_219005"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_AVATAR_NEAR_PLATFORM
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_AVATAR_NEAR_PLATFORM_219005"
-L4_1.action = "action_EVENT_AVATAR_NEAR_PLATFORM_219005"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1219006
-L5_1.name = "ENTER_REGION_219006"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ENTER_REGION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ENTER_REGION_219006"
-L5_1.action = "action_EVENT_ENTER_REGION_219006"
-L6_1 = {}
-L6_1.config_id = 1219007
-L6_1.name = "QUEST_START_219007"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_QUEST_START
-L6_1.event = L7_1
-L6_1.source = "7216506"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_QUEST_START_219007"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1219008
-L7_1.name = "GADGET_STATE_CHANGE_219008"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GADGET_STATE_CHANGE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_219008"
-L7_1.action = "action_EVENT_GADGET_STATE_CHANGE_219008"
-L8_1 = {}
-L8_1.config_id = 1219009
-L8_1.name = "QUEST_START_219009"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_QUEST_START
-L8_1.event = L9_1
-L8_1.source = "7216506"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_QUEST_START_219009"
-L8_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "isFinished"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "isMoving"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 3
-L5_1.name = "currentRouteIndex"
-L5_1.value = 0
-L5_1.no_refresh = false
-L6_1 = {}
-L6_1.configId = 4
-L6_1.name = "nextRouteIndex"
-L6_1.value = 1
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 5
-L7_1.name = "isstart"
-L7_1.value = 0
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 6
-L8_1.name = "currentPathNodeIndex"
-L8_1.value = 0
-L8_1.no_refresh = false
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-variables = L2_1
-L2_1 = {}
-L2_1.io_type = 1
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "QUEST_START_219007"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L4_1 = {}
-L3_1.npcs = L4_1
-L4_1 = {}
-L5_1 = {}
-L5_1.configId = 1
-L5_1.name = "isFinished"
-L5_1.value = 0
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 2
-L6_1.name = "isMoving"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 3
-L7_1.name = "currentRouteIndex"
-L7_1.value = 0
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 4
-L8_1.name = "nextRouteIndex"
-L8_1.value = 1
-L8_1.no_refresh = false
-L9_1 = {}
-L9_1.configId = 5
-L9_1.name = "isstart"
-L9_1.value = 0
-L9_1.no_refresh = false
-L10_1 = {}
-L10_1.configId = 6
-L10_1.name = "currentPathNodeIndex"
-L10_1.value = 0
-L10_1.no_refresh = false
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L3_1.variables = L4_1
-L2_1[1] = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = {}
-L5_1.config_id = 219001
-L5_1.state = 0
-L6_1 = {}
-L6_1.point_id = 0
-L6_1.move_type = 1
-L6_1.route_id = 0
-L6_1.route_index = 0
-L6_1.is_started = false
-L5_1.platform_info = L6_1
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 219006
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "PLATFORM_REACH_POINT_219003"
-L6_1 = "AVATAR_NEAR_PLATFORM_219005"
-L7_1 = "ENTER_REGION_219006"
-L8_1 = "GADGET_STATE_CHANGE_219008"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.triggers = L4_1
-L4_1 = {}
-L3_1.npcs = L4_1
-L4_1 = {}
-L5_1 = {}
-L5_1.configId = 1
-L5_1.name = "isFinished"
-L5_1.value = 0
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 2
-L6_1.name = "isMoving"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 3
-L7_1.name = "currentRouteIndex"
-L7_1.value = 0
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 4
-L8_1.name = "nextRouteIndex"
-L8_1.value = 1
-L8_1.no_refresh = false
-L9_1 = {}
-L9_1.configId = 5
-L9_1.name = "isstart"
-L9_1.value = 0
-L9_1.no_refresh = false
-L10_1 = {}
-L10_1.configId = 6
-L10_1.name = "currentPathNodeIndex"
-L10_1.value = 0
-L10_1.no_refresh = false
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L3_1.variables = L4_1
-L2_1[2] = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = {}
-L5_1.config_id = 219002
-L5_1.state = 201
-L6_1 = {}
-L6_1.point_id = 0
-L6_1.move_type = 1
-L6_1.route_id = 0
-L6_1.route_index = 0
-L6_1.is_started = false
-L5_1.platform_info = L6_1
-L6_1 = {}
-L6_1.config_id = 219004
-L6_1.state = 0
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_STATE_CHANGE_219008"
-L6_1 = "QUEST_START_219009"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.triggers = L4_1
-L4_1 = {}
-L3_1.npcs = L4_1
-L4_1 = {}
-L5_1 = {}
-L5_1.configId = 1
-L5_1.name = "isFinished"
-L5_1.value = 0
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 2
-L6_1.name = "isMoving"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 3
-L7_1.name = "currentRouteIndex"
-L7_1.value = 0
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 4
-L8_1.name = "nextRouteIndex"
-L8_1.value = 1
-L8_1.no_refresh = false
-L9_1 = {}
-L9_1.configId = 5
-L9_1.name = "isstart"
-L9_1.value = 0
-L9_1.no_refresh = false
-L10_1 = {}
-L10_1.configId = 6
-L10_1.name = "currentPathNodeIndex"
-L10_1.value = 0
-L10_1.no_refresh = false
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L3_1.variables = L4_1
-L2_1[3] = L3_1
-L3_1 = {}
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "QUEST_START_219009"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L4_1 = {}
-L3_1.npcs = L4_1
-L4_1 = {}
-L5_1 = {}
-L5_1.configId = 1
-L5_1.name = "isFinished"
-L5_1.value = 0
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 2
-L6_1.name = "isMoving"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 3
-L7_1.name = "currentRouteIndex"
-L7_1.value = 0
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 4
-L8_1.name = "nextRouteIndex"
-L8_1.value = 1
-L8_1.no_refresh = false
-L9_1 = {}
-L9_1.configId = 5
-L9_1.name = "isstart"
-L9_1.value = 0
-L9_1.no_refresh = false
-L10_1 = {}
-L10_1.configId = 6
-L10_1.name = "currentPathNodeIndex"
-L10_1.value = 0
-L10_1.no_refresh = false
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L3_1.variables = L4_1
-L2_1[4] = L3_1
-suite_disk = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "QUEST_START_219007"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 219001
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L6_1 = 219006
-L5_1[1] = L6_1
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "PLATFORM_REACH_POINT_219003"
-L7_1 = "AVATAR_NEAR_PLATFORM_219005"
-L8_1 = "ENTER_REGION_219006"
-L9_1 = "GADGET_STATE_CHANGE_219008"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 219002
-L8_1 = 219004
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "GADGET_STATE_CHANGE_219008"
-L8_1 = "QUEST_START_219009"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L8_1 = "QUEST_START_219009"
-L7_1[1] = L8_1
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 219001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 219001, gadget_id = 70350292, pos = { x = -3837.283, y = 110.701, z = -747.704 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 2, start_route = false, persistent = true, is_use_point_array = true, area_id = 17 },
+	{ config_id = 219002, gadget_id = 70350292, pos = { x = -3788.812, y = 154.510, z = -757.437 }, rot = { x = 0.000, y = 18.363, z = 0.000 }, level = 2, state = GadgetState.GearStart, start_route = false, persistent = true, is_use_point_array = true, area_id = 17 },
+	{ config_id = 219004, gadget_id = 70211101, pos = { x = -3791.260, y = 154.465, z = -754.608 }, rot = { x = 7.065, y = 127.289, z = 1.062 }, level = 26, drop_tag = "解谜低级稻妻", showcutscene = true, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 17 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 219006, shape = RegionShape.SPHERE, radius = 5, pos = { x = -3837.510, y = 109.972, z = -747.814 }, area_id = 17 }
+}
+
+-- 触发器
+triggers = {
+	-- 到达中断点停止
+	{ config_id = 1219003, name = "PLATFORM_REACH_POINT_219003", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_219003", action = "action_EVENT_PLATFORM_REACH_POINT_219003", trigger_count = 0 },
+	-- 玩家接近雷仙灵后触发移动
+	{ config_id = 1219005, name = "AVATAR_NEAR_PLATFORM_219005", event = EventType.EVENT_AVATAR_NEAR_PLATFORM, source = "", condition = "condition_EVENT_AVATAR_NEAR_PLATFORM_219005", action = "action_EVENT_AVATAR_NEAR_PLATFORM_219005", trigger_count = 0 },
+	{ config_id = 1219006, name = "ENTER_REGION_219006", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_219006", action = "action_EVENT_ENTER_REGION_219006" },
+	{ config_id = 1219007, name = "QUEST_START_219007", event = EventType.EVENT_QUEST_START, source = "7216506", condition = "", action = "action_EVENT_QUEST_START_219007", trigger_count = 0 },
+	{ config_id = 1219008, name = "GADGET_STATE_CHANGE_219008", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_219008", action = "action_EVENT_GADGET_STATE_CHANGE_219008" },
+	-- 保底完成
+	{ config_id = 1219009, name = "QUEST_START_219009", event = EventType.EVENT_QUEST_START, source = "7216506", condition = "", action = "action_EVENT_QUEST_START_219009", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "isFinished", value = 0, no_refresh = true },
+	{ config_id = 2, name = "isMoving", value = 0, no_refresh = false },
+	{ config_id = 3, name = "currentRouteIndex", value = 0, no_refresh = false },
+	{ config_id = 4, name = "nextRouteIndex", value = 1, no_refresh = false },
+	{ config_id = 5, name = "isstart", value = 0, no_refresh = false },
+	{ config_id = 6, name = "currentPathNodeIndex", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	io_type = 1,
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suite_disk = {
+	[1] = {
+		gadgets = {
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { "QUEST_START_219007" },
+		npcs = { },
+		variables = {
+			{ config_id = 1, name = "isFinished", value = 0, no_refresh = true },
+			{ config_id = 2, name = "isMoving", value = 0, no_refresh = false },
+			{ config_id = 3, name = "currentRouteIndex", value = 0, no_refresh = false },
+			{ config_id = 4, name = "nextRouteIndex", value = 1, no_refresh = false },
+			{ config_id = 5, name = "isstart", value = 0, no_refresh = false },
+			{ config_id = 6, name = "currentPathNodeIndex", value = 0, no_refresh = false }
+		}
+	},
+	[2] = {
+		gadgets = {
+			{ config_id = 219001, state = 0, platform_info = { point_id = 0, move_type = 1, route_id = 0, route_index = 0, is_started = false } }
+		},
+		monsters = {
+		},
+		regions = { 219006 },
+		triggers = { "PLATFORM_REACH_POINT_219003", "AVATAR_NEAR_PLATFORM_219005", "ENTER_REGION_219006", "GADGET_STATE_CHANGE_219008" },
+		npcs = { },
+		variables = {
+			{ config_id = 1, name = "isFinished", value = 0, no_refresh = true },
+			{ config_id = 2, name = "isMoving", value = 0, no_refresh = false },
+			{ config_id = 3, name = "currentRouteIndex", value = 0, no_refresh = false },
+			{ config_id = 4, name = "nextRouteIndex", value = 1, no_refresh = false },
+			{ config_id = 5, name = "isstart", value = 0, no_refresh = false },
+			{ config_id = 6, name = "currentPathNodeIndex", value = 0, no_refresh = false }
+		}
+	},
+	[3] = {
+		gadgets = {
+			{ config_id = 219002, state = 201, platform_info = { point_id = 0, move_type = 1, route_id = 0, route_index = 0, is_started = false } },
+			{ config_id = 219004, state = 0 }
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_219008", "QUEST_START_219009" },
+		npcs = { },
+		variables = {
+			{ config_id = 1, name = "isFinished", value = 0, no_refresh = true },
+			{ config_id = 2, name = "isMoving", value = 0, no_refresh = false },
+			{ config_id = 3, name = "currentRouteIndex", value = 0, no_refresh = false },
+			{ config_id = 4, name = "nextRouteIndex", value = 1, no_refresh = false },
+			{ config_id = 5, name = "isstart", value = 0, no_refresh = false },
+			{ config_id = 6, name = "currentPathNodeIndex", value = 0, no_refresh = false }
+		}
+	},
+	[4] = {
+		gadgets = {
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { "QUEST_START_219009" },
+		npcs = { },
+		variables = {
+			{ config_id = 1, name = "isFinished", value = 0, no_refresh = true },
+			{ config_id = 2, name = "isMoving", value = 0, no_refresh = false },
+			{ config_id = 3, name = "currentRouteIndex", value = 0, no_refresh = false },
+			{ config_id = 4, name = "nextRouteIndex", value = 1, no_refresh = false },
+			{ config_id = 5, name = "isstart", value = 0, no_refresh = false },
+			{ config_id = 6, name = "currentPathNodeIndex", value = 0, no_refresh = false }
+		}
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_PLATFORM_REACH_POINT_219003(context, evt)
+	if 219001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_PLATFORM_REACH_POINT_219003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintLog
-  L3_2 = "Reach Point : "
-  L4_2 = " configID = "
-  L5_2 = A1_2.param1
-  L6_2 = ", pointarray_ID = "
-  L7_2 = A1_2.param2
-  L8_2 = ", pointID = "
-  L9_2 = A1_2.param3
-  L3_2 = L3_2 .. L4_2 .. L5_2 .. L6_2 .. L7_2 .. L8_2 .. L9_2
-  L2_2(A0_2, L3_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isMoving"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopPlatform
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_thunderThelfID
-  L2_2(L3_2, L4_2)
-  L2_2 = A1_2.param3
-  L3_2 = L1_1.maxPointCount
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "isFinished"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.CreateGadget
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.gadget_Reward_1
-    L4_2.config_id = L5_2
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_thunderThelfID
-    L5_2 = GadgetState
-    L5_2 = L5_2.GearStart
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.MarkPlayerAction
-    L3_2 = A0_2
-    L4_2 = 2014
-    L5_2 = 3
-    L6_2 = 1
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetFlowSuite
-    L3_2 = A0_2
-    L4_2 = L1_1.group_ID
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = 0
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "nextRouteIndex"
-  L2_2 = L2_2(L3_2, L4_2)
-  L2_2 = L2_2 + 1
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "nextRouteIndex"
-  L6_2 = L2_2
-  L3_2(L4_2, L5_2, L6_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "currentPathNodeIndex"
-  L6_2 = A1_2.param3
-  L3_2(L4_2, L5_2, L6_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_PLATFORM_REACH_POINT_219003(context, evt)
+	ScriptLib.PrintLog("Reach Point : ".. " configID = "..evt.param1 .. ", pointarray_ID = "..evt.param2..", pointID = "..evt.param3)		
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isMoving", 0) then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+		return -1
+	end	
+	ScriptLib.StopPlatform(context, defs.gadget_thunderThelfID)
+	if evt.param3 == defs.maxPointCount then
+		ScriptLib.SetGroupVariableValue(context, "isFinished", 1)
+		ScriptLib.CreateGadget(context, { config_id = defs.gadget_Reward_1 }) 
+		ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_thunderThelfID, GadgetState.GearStart)
+		ScriptLib.MarkPlayerAction(context, 2014, 3, 1)
+		ScriptLib.SetFlowSuite(context, defs.group_ID, 3)		
+		
+		return 0
+	end
+			
+	local next = ScriptLib.GetGroupVariableValue(context, "nextRouteIndex")
+	next = next + 1
+	ScriptLib.SetGroupVariableValue(context,"nextRouteIndex", next)
+	ScriptLib.SetGroupVariableValue(context,"currentPathNodeIndex",evt.param3)
+	return 0
 end
-action_EVENT_PLATFORM_REACH_POINT_219003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintLog
-  L3_2 = "Near Platform condition : "
-  L4_2 = A1_2.param1
-  L5_2 = " | RouteID = "
-  L6_2 = A1_2.param2
-  L7_2 = " | Point = "
-  L8_2 = A1_2.param3
-  L3_2 = L3_2 .. L4_2 .. L5_2 .. L6_2 .. L7_2 .. L8_2
-  L2_2(A0_2, L3_2)
-  L2_2 = L1_1.gadget_thunderThelfID
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.group_ID
-  L5_2 = L1_1.gadget_thunderThelfID
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.PrintLog
-  L4_2 = "Near Platform condition : "
-  L5_2 = " State = "
-  L6_2 = L2_2
-  L4_2 = L4_2 .. L5_2 .. L6_2
-  L3_2(A0_2, L4_2)
-  if L2_2 == 201 then
-    L3_2 = false
-    return L3_2
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "isMoving"
-  L3_2 = L3_2(L4_2, L5_2)
-  if L3_2 ~= 0 then
-    L3_2 = false
-    return L3_2
-  end
-  L3_2 = true
-  return L3_2
+
+-- 触发条件
+function condition_EVENT_AVATAR_NEAR_PLATFORM_219005(context, evt)
+			ScriptLib.PrintLog("Near Platform condition : ".. evt.param1.." | RouteID = " .. evt.param2 .. " | Point = ".. evt.param3)
+			if defs.gadget_thunderThelfID ~= evt.param1 then
+				return false
+			end
+			local state = ScriptLib.GetGadgetStateByConfigId(context, defs.group_ID, defs.gadget_thunderThelfID)
+			ScriptLib.PrintLog("Near Platform condition : ".." State = "..state) 
+			if state == 201 then 
+				return false
+			end
+			if ScriptLib.GetGroupVariableValue(context, "isMoving") ~= 0 then 
+				return false
+			end
+			
+			return true
 end
-condition_EVENT_AVATAR_NEAR_PLATFORM_219005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = MovePlatform
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_AVATAR_NEAR_PLATFORM_219005(context, evt)
+		MovePlatform(context)
+		return 0
 end
-action_EVENT_AVATAR_NEAR_PLATFORM_219005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 219006 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_219006(context, evt)
+	if evt.param1 ~= 219006 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_219006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 32100186
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_219006(context, evt)
+	-- 调用提示id为 32100186 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 32100186) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_219006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToFlowSuite
-  L3_2 = A0_2
-  L4_2 = 133210219
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_219007(context, evt)
+		-- 将指定flowGroup的进度和要素属性都改为目标suite（缺的创建，多的移除）
+	  ScriptLib.GoToFlowSuite(context, 133210219, 2)
+	
+	return 0
 end
-action_EVENT_QUEST_START_219007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 219004 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.ChestOpened
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_219008(context, evt)
+	if 219004 ~= evt.param2 or GadgetState.ChestOpened ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_219008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 32100139
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7216506"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetFlowSuite
-  L3_2 = A0_2
-  L4_2 = 133210219
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_219008(context, evt)
+	-- 调用提示id为 32100139 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 32100139) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7216506") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+		-- 将指定group的suiteIndex设为指定suite
+	  ScriptLib.SetFlowSuite(context, 133210219, 4)
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_219008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7216506"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_219009(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7216506") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_219009 = L2_1

@@ -1,229 +1,106 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
-L0_1 = {}
-L0_1.group_id = 133212368
-L1_1 = {}
-L1_1.active_step = 201
-L1_1.inactive_step = 0
-L2_1 = {}
-L3_1 = 368005
-L4_1 = 368002
-L5_1 = 368004
-L6_1 = 368001
-L7_1 = 368003
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L1_1.gadget_array = L2_1
-L2_1 = {}
-L1_1.reset_gear_list = L2_1
-L2_1 = 0
-L3_1 = 0
-L4_1 = L1_1.gadget_array
-L4_1 = #L4_1
-L5_1 = {}
-monsters = L5_1
-L5_1 = {}
-npcs = L5_1
-L5_1 = {}
-gadgets = L5_1
-L5_1 = {}
-regions = L5_1
-L5_1 = {}
-triggers = L5_1
-L5_1 = {}
-L6_1 = {}
-L6_1.configId = 1
-L6_1.name = "sort"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 2
-L7_1.name = "gear_reset"
-L7_1.value = 0
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 3
-L8_1.name = "v_error"
-L8_1.value = 0
-L8_1.no_refresh = false
-L9_1 = {}
-L9_1.configId = 4
-L9_1.name = "trigger_output"
-L9_1.value = 0
-L9_1.no_refresh = false
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-variables = L5_1
-L5_1 = {}
-L6_1 = {}
-L7_1 = {}
-L7_1.config_id = 368001
-L7_1.gadget_id = 70310001
-L8_1 = {}
-L8_1.x = -4164.641
-L8_1.y = 191.866
-L8_1.z = -2179.956
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 30
-L7_1.area_id = 13
-L8_1 = {}
-L8_1.config_id = 368002
-L8_1.gadget_id = 70310001
-L9_1 = {}
-L9_1.x = -4162.159
-L9_1.y = 196.749
-L9_1.z = -2213.845
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 30
-L8_1.area_id = 13
-L9_1 = {}
-L9_1.config_id = 368003
-L9_1.gadget_id = 70310001
-L10_1 = {}
-L10_1.x = -4167.048
-L10_1.y = 196.879
-L10_1.z = -2219.934
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 30
-L9_1.area_id = 13
-L10_1 = {}
-L10_1.config_id = 368004
-L10_1.gadget_id = 70310001
-L11_1 = {}
-L11_1.x = -4200.412
-L11_1.y = 208.275
-L11_1.z = -2220.371
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 30
-L10_1.area_id = 13
-L11_1 = {}
-L11_1.config_id = 368005
-L11_1.gadget_id = 70310001
-L12_1 = {}
-L12_1.x = -4196.695
-L12_1.y = 203.369
-L12_1.z = -2193.74
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 30
-L11_1.area_id = 13
-L12_1 = {}
-L12_1.config_id = 368006
-L12_1.gadget_id = 70350081
-L13_1 = {}
-L13_1.x = -4216.569
-L13_1.y = 139.9
-L13_1.z = -2596.287
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 266.462
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 30
-L13_1 = GadgetState
-L13_1 = L13_1.GearStop
-L12_1.state = L13_1
-L12_1.isOneoff = true
-L12_1.persistent = true
-L12_1.area_id = 13
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L7_1 = {}
-L7_1.config_id = 1368007
-L7_1.name = "GADGET_STATE_CHANGE_368007"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GADGET_STATE_CHANGE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_368007"
-L7_1.action = "action_EVENT_GADGET_STATE_CHANGE_368007"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1368008
-L8_1.name = "VARIABLE_CHANGE_368008"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_VARIABLE_CHANGE
-L8_1.event = L9_1
-L8_1.source = "gear_reset"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_VARIABLE_CHANGE_368008"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1368009
-L9_1.name = "VARIABLE_CHANGE_368009"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_VARIABLE_CHANGE
-L9_1.event = L10_1
-L9_1.source = "trigger_output"
-L9_1.condition = "condition_EVENT_VARIABLE_CHANGE_368009"
-L9_1.action = ""
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1368010
-L10_1.name = "VARIABLE_CHANGE_368010"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_VARIABLE_CHANGE
-L10_1.event = L11_1
-L10_1.source = "trigger_output"
-L10_1.condition = "condition_EVENT_VARIABLE_CHANGE_368010"
-L10_1.action = "action_EVENT_VARIABLE_CHANGE_368010"
-L10_1.trigger_count = 0
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L5_1.triggers = L6_1
-garbages = L5_1
-L5_1 = {}
-L5_1.suite = 1
-L5_1.end_suite = 0
-L5_1.rand_suite = false
-init_config = L5_1
-L5_1 = {}
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L5_1[1] = L6_1
-suites = L5_1
+-- 基础信息
+local base_info = {
+	group_id = 133212368
+}
+
+-- Trigger变量
+local defs = {
+	active_step = 201,
+	inactive_step = 0,
+	gadget_array = {368005,368002,368004,368001,368003},
+	reset_gear_list = {}
+}
+
+-- DEFS_MISCS
+local v = 0
+local v_error = 0
+local max_bit = #defs.gadget_array
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "sort", value = 0, no_refresh = false },
+	{ config_id = 2, name = "gear_reset", value = 0, no_refresh = false },
+	{ config_id = 3, name = "v_error", value = 0, no_refresh = false },
+	{ config_id = 4, name = "trigger_output", value = 0, no_refresh = false }
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 368001, gadget_id = 70310001, pos = { x = -4164.641, y = 191.866, z = -2179.956 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 13 },
+		{ config_id = 368002, gadget_id = 70310001, pos = { x = -4162.159, y = 196.749, z = -2213.845 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 13 },
+		{ config_id = 368003, gadget_id = 70310001, pos = { x = -4167.048, y = 196.879, z = -2219.934 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 13 },
+		{ config_id = 368004, gadget_id = 70310001, pos = { x = -4200.412, y = 208.275, z = -2220.371 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 13 },
+		{ config_id = 368005, gadget_id = 70310001, pos = { x = -4196.695, y = 203.369, z = -2193.740 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 13 },
+		{ config_id = 368006, gadget_id = 70350081, pos = { x = -4216.569, y = 139.900, z = -2596.287 }, rot = { x = 0.000, y = 266.462, z = 0.000 }, level = 30, state = GadgetState.GearStop, isOneoff = true, persistent = true, area_id = 13 }
+	},
+	triggers = {
+		{ config_id = 1368007, name = "GADGET_STATE_CHANGE_368007", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_368007", action = "action_EVENT_GADGET_STATE_CHANGE_368007", trigger_count = 0 },
+		{ config_id = 1368008, name = "VARIABLE_CHANGE_368008", event = EventType.EVENT_VARIABLE_CHANGE, source = "gear_reset", condition = "", action = "action_EVENT_VARIABLE_CHANGE_368008", trigger_count = 0 },
+		{ config_id = 1368009, name = "VARIABLE_CHANGE_368009", event = EventType.EVENT_VARIABLE_CHANGE, source = "trigger_output", condition = "condition_EVENT_VARIABLE_CHANGE_368009", action = "", trigger_count = 0 },
+		{ config_id = 1368010, name = "VARIABLE_CHANGE_368010", event = EventType.EVENT_VARIABLE_CHANGE, source = "trigger_output", condition = "condition_EVENT_VARIABLE_CHANGE_368010", action = "action_EVENT_VARIABLE_CHANGE_368010", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

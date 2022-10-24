@@ -1,531 +1,161 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1
-L0_1 = {}
-L0_1.group_id = 133210124
-L1_1 = {}
-L1_1.group_ID = 133210124
-L1_1.gadget_11 = 124001
-L1_1.gadget_12 = 124002
-L1_1.gadget_13 = 124003
-L1_1.gadget_14 = 124004
-L1_1.gadget_15 = 124005
-L1_1.gadget_21 = 124006
-L1_1.gadget_22 = 124007
-L1_1.gadget_23 = 124008
-L1_1.gadget_24 = 124009
-L1_1.gadget_25 = 124010
-L1_1.gadget_31 = 124011
-L1_1.gadget_32 = 124012
-L1_1.gadget_33 = 124013
-L1_1.gadget_34 = 124014
-L1_1.gadget_35 = 124015
-L1_1.gadget_41 = 124016
-L1_1.gadget_42 = 124017
-L1_1.gadget_43 = 124018
-L1_1.gadget_44 = 124019
-L1_1.gadget_45 = 124020
-L1_1.gadget_51 = 124021
-L1_1.gadget_52 = 124022
-L1_1.gadget_53 = 124023
-L1_1.gadget_54 = 124024
-L1_1.gadget_55 = 124025
-L1_1.trigger_boarder = 124027
-L1_1.gadget_starter = 124015
-L1_1.gadget_ender = 124018
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 124001
-L4_1.gadget_id = 70360186
-L5_1 = {}
-L5_1.x = -3991.046
-L5_1.y = 213.986
-L5_1.z = -720.658
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 17.953
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 10
-L4_1.area_id = 17
-L5_1 = {}
-L5_1.config_id = 124002
-L5_1.gadget_id = 70360186
-L6_1 = {}
-L6_1.x = -3991.695
-L6_1.y = 213.777
-L6_1.z = -722.657
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 17.953
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 10
-L5_1.area_id = 17
-L6_1 = {}
-L6_1.config_id = 124003
-L6_1.gadget_id = 70360186
-L7_1 = {}
-L7_1.x = -3992.341
-L7_1.y = 213.567
-L7_1.z = -724.655
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 17.953
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 10
-L6_1.area_id = 17
-L7_1 = {}
-L7_1.config_id = 124004
-L7_1.gadget_id = 70360186
-L8_1 = {}
-L8_1.x = -3992.99
-L8_1.y = 213.353
-L8_1.z = -726.653
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 17.953
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 10
-L7_1.area_id = 17
-L8_1 = {}
-L8_1.config_id = 124005
-L8_1.gadget_id = 70360186
-L9_1 = {}
-L9_1.x = -3993.636
-L9_1.y = 213.199
-L9_1.z = -728.65
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 17.953
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 10
-L8_1.area_id = 17
-L9_1 = {}
-L9_1.config_id = 124006
-L9_1.gadget_id = 70360186
-L10_1 = {}
-L10_1.x = -3993.002
-L10_1.y = 214.05
-L10_1.z = -720.03
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 17.953
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 10
-L9_1.area_id = 17
-L10_1 = {}
-L10_1.config_id = 124007
-L10_1.gadget_id = 70360186
-L11_1 = {}
-L11_1.x = -3993.648
-L11_1.y = 213.874
-L11_1.z = -722.025
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 17.953
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 10
-L10_1.area_id = 17
-L11_1 = {}
-L11_1.config_id = 124008
-L11_1.gadget_id = 70360186
-L12_1 = {}
-L12_1.x = -3994.295
-L12_1.y = 213.698
-L12_1.z = -724.024
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 17.953
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 10
-L11_1.area_id = 17
-L12_1 = {}
-L12_1.config_id = 124009
-L12_1.gadget_id = 70360186
-L13_1 = {}
-L13_1.x = -3994.943
-L13_1.y = 213.521
-L13_1.z = -726.022
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 17.953
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 10
-L12_1.area_id = 17
-L13_1 = {}
-L13_1.config_id = 124010
-L13_1.gadget_id = 70360186
-L14_1 = {}
-L14_1.x = -3995.589
-L14_1.y = 213.341
-L14_1.z = -728.02
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 17.953
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 10
-L13_1.area_id = 17
-L14_1 = {}
-L14_1.config_id = 124011
-L14_1.gadget_id = 70360186
-L15_1 = {}
-L15_1.x = -3994.98
-L15_1.y = 214.109
-L15_1.z = -719.391
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 17.953
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 10
-L14_1.area_id = 17
-L15_1 = {}
-L15_1.config_id = 124012
-L15_1.gadget_id = 70360186
-L16_1 = {}
-L16_1.x = -3995.626
-L16_1.y = 213.933
-L16_1.z = -721.388
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 17.953
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 10
-L16_1 = GadgetState
-L16_1 = L16_1.Action03
-L15_1.state = L16_1
-L15_1.area_id = 17
-L16_1 = {}
-L16_1.config_id = 124013
-L16_1.gadget_id = 70360186
-L17_1 = {}
-L17_1.x = -3996.274
-L17_1.y = 213.759
-L17_1.z = -723.387
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 17.953
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 10
-L17_1 = GadgetState
-L17_1 = L17_1.Action03
-L16_1.state = L17_1
-L16_1.area_id = 17
-L17_1 = {}
-L17_1.config_id = 124014
-L17_1.gadget_id = 70360186
-L18_1 = {}
-L18_1.x = -3996.92
-L18_1.y = 213.59
-L18_1.z = -725.385
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 17.953
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 10
-L17_1.area_id = 17
-L18_1 = {}
-L18_1.config_id = 124015
-L18_1.gadget_id = 70360186
-L19_1 = {}
-L19_1.x = -3997.566
-L19_1.y = 213.45
-L19_1.z = -727.381
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 17.953
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.level = 10
-L19_1 = GadgetState
-L19_1 = L19_1.GearStart
-L18_1.state = L19_1
-L18_1.area_id = 17
-L19_1 = {}
-L19_1.config_id = 124016
-L19_1.gadget_id = 70360186
-L20_1 = {}
-L20_1.x = -3996.976
-L20_1.y = 214.17
-L20_1.z = -718.746
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 17.953
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.level = 10
-L19_1.area_id = 17
-L20_1 = {}
-L20_1.config_id = 124017
-L20_1.gadget_id = 70360186
-L21_1 = {}
-L21_1.x = -3997.621
-L21_1.y = 214.001
-L21_1.z = -720.745
-L20_1.pos = L21_1
-L21_1 = {}
-L21_1.x = 0.0
-L21_1.y = 17.953
-L21_1.z = 0.0
-L20_1.rot = L21_1
-L20_1.level = 10
-L21_1 = GadgetState
-L21_1 = L21_1.Action03
-L20_1.state = L21_1
-L20_1.area_id = 17
-L21_1 = {}
-L21_1.config_id = 124018
-L21_1.gadget_id = 70360186
-L22_1 = {}
-L22_1.x = -3998.273
-L22_1.y = 213.832
-L22_1.z = -722.741
-L21_1.pos = L22_1
-L22_1 = {}
-L22_1.x = 0.0
-L22_1.y = 17.953
-L22_1.z = 0.0
-L21_1.rot = L22_1
-L21_1.level = 10
-L21_1.area_id = 17
-L22_1 = {}
-L22_1.config_id = 124019
-L22_1.gadget_id = 70360186
-L23_1 = {}
-L23_1.x = -3998.919
-L23_1.y = 213.663
-L23_1.z = -724.74
-L22_1.pos = L23_1
-L23_1 = {}
-L23_1.x = 0.0
-L23_1.y = 17.953
-L23_1.z = 0.0
-L22_1.rot = L23_1
-L22_1.level = 10
-L22_1.area_id = 17
-L23_1 = {}
-L23_1.config_id = 124020
-L23_1.gadget_id = 70360186
-L24_1 = {}
-L24_1.x = -3999.566
-L24_1.y = 213.526
-L24_1.z = -726.737
-L23_1.pos = L24_1
-L24_1 = {}
-L24_1.x = 0.0
-L24_1.y = 17.953
-L24_1.z = 0.0
-L23_1.rot = L24_1
-L23_1.level = 10
-L23_1.area_id = 17
-L24_1 = {}
-L24_1.config_id = 124021
-L24_1.gadget_id = 70360186
-L25_1 = {}
-L25_1.x = -3998.941
-L25_1.y = 214.231
-L25_1.z = -718.12
-L24_1.pos = L25_1
-L25_1 = {}
-L25_1.x = 0.0
-L25_1.y = 17.953
-L25_1.z = 0.0
-L24_1.rot = L25_1
-L24_1.level = 10
-L24_1.area_id = 17
-L25_1 = {}
-L25_1.config_id = 124022
-L25_1.gadget_id = 70360186
-L26_1 = {}
-L26_1.x = -3999.589
-L26_1.y = 214.066
-L26_1.z = -720.117
-L25_1.pos = L26_1
-L26_1 = {}
-L26_1.x = 0.0
-L26_1.y = 17.953
-L26_1.z = 0.0
-L25_1.rot = L26_1
-L25_1.level = 10
-L25_1.area_id = 17
-L26_1 = {}
-L26_1.config_id = 124023
-L26_1.gadget_id = 70360186
-L27_1 = {}
-L27_1.x = -4000.237
-L27_1.y = 213.901
-L27_1.z = -722.114
-L26_1.pos = L27_1
-L27_1 = {}
-L27_1.x = 0.0
-L27_1.y = 17.953
-L27_1.z = 0.0
-L26_1.rot = L27_1
-L26_1.level = 10
-L26_1.area_id = 17
-L27_1 = {}
-L27_1.config_id = 124024
-L27_1.gadget_id = 70360186
-L28_1 = {}
-L28_1.x = -4000.865
-L28_1.y = 213.735
-L28_1.z = -724.102
-L27_1.pos = L28_1
-L28_1 = {}
-L28_1.x = 0.0
-L28_1.y = 17.953
-L28_1.z = 0.0
-L27_1.rot = L28_1
-L27_1.level = 10
-L27_1.area_id = 17
-L28_1 = {}
-L28_1.config_id = 124025
-L28_1.gadget_id = 70360186
-L29_1 = {}
-L29_1.x = -4001.531
-L29_1.y = 213.598
-L29_1.z = -726.11
-L28_1.pos = L29_1
-L29_1 = {}
-L29_1.x = 0.0
-L29_1.y = 17.953
-L29_1.z = 0.0
-L28_1.rot = L29_1
-L28_1.level = 10
-L28_1.area_id = 17
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L3_1[13] = L16_1
-L3_1[14] = L17_1
-L3_1[15] = L18_1
-L3_1[16] = L19_1
-L3_1[17] = L20_1
-L3_1[18] = L21_1
-L3_1[19] = L22_1
-L3_1[20] = L23_1
-L3_1[21] = L24_1
-L3_1[22] = L25_1
-L3_1[23] = L26_1
-L3_1[24] = L27_1
-L3_1[25] = L28_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 124027
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 7.07
-L5_1 = {}
-L5_1.x = -3996.254
-L5_1.y = 213.553
-L5_1.z = -723.383
-L4_1.pos = L5_1
-L4_1.area_id = 17
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1124028
-L4_1.name = "VARIABLE_CHANGE_124028"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_VARIABLE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_VARIABLE_CHANGE_124028"
-L4_1.action = "action_EVENT_VARIABLE_CHANGE_124028"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 3
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-suites = L2_1
-L2_1 = require
-L3_1 = "BlackBoxPlay/DrawOneLine"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133210124
+}
+
+-- Trigger变量
+local defs = {
+	group_ID = 133210124,
+	gadget_11 = 124001,
+	gadget_12 = 124002,
+	gadget_13 = 124003,
+	gadget_14 = 124004,
+	gadget_15 = 124005,
+	gadget_21 = 124006,
+	gadget_22 = 124007,
+	gadget_23 = 124008,
+	gadget_24 = 124009,
+	gadget_25 = 124010,
+	gadget_31 = 124011,
+	gadget_32 = 124012,
+	gadget_33 = 124013,
+	gadget_34 = 124014,
+	gadget_35 = 124015,
+	gadget_41 = 124016,
+	gadget_42 = 124017,
+	gadget_43 = 124018,
+	gadget_44 = 124019,
+	gadget_45 = 124020,
+	gadget_51 = 124021,
+	gadget_52 = 124022,
+	gadget_53 = 124023,
+	gadget_54 = 124024,
+	gadget_55 = 124025,
+	trigger_boarder = 124027,
+	gadget_starter = 124015,
+	gadget_ender = 124018
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 124001, gadget_id = 70360186, pos = { x = -3991.046, y = 213.986, z = -720.658 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124002, gadget_id = 70360186, pos = { x = -3991.695, y = 213.777, z = -722.657 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124003, gadget_id = 70360186, pos = { x = -3992.341, y = 213.567, z = -724.655 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124004, gadget_id = 70360186, pos = { x = -3992.990, y = 213.353, z = -726.653 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124005, gadget_id = 70360186, pos = { x = -3993.636, y = 213.199, z = -728.650 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124006, gadget_id = 70360186, pos = { x = -3993.002, y = 214.050, z = -720.030 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124007, gadget_id = 70360186, pos = { x = -3993.648, y = 213.874, z = -722.025 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124008, gadget_id = 70360186, pos = { x = -3994.295, y = 213.698, z = -724.024 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124009, gadget_id = 70360186, pos = { x = -3994.943, y = 213.521, z = -726.022 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124010, gadget_id = 70360186, pos = { x = -3995.589, y = 213.341, z = -728.020 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124011, gadget_id = 70360186, pos = { x = -3994.980, y = 214.109, z = -719.391 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124012, gadget_id = 70360186, pos = { x = -3995.626, y = 213.933, z = -721.388 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, state = GadgetState.Action03, area_id = 17 },
+		{ config_id = 124013, gadget_id = 70360186, pos = { x = -3996.274, y = 213.759, z = -723.387 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, state = GadgetState.Action03, area_id = 17 },
+		{ config_id = 124014, gadget_id = 70360186, pos = { x = -3996.920, y = 213.590, z = -725.385 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124015, gadget_id = 70360186, pos = { x = -3997.566, y = 213.450, z = -727.381 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, state = GadgetState.GearStart, area_id = 17 },
+		{ config_id = 124016, gadget_id = 70360186, pos = { x = -3996.976, y = 214.170, z = -718.746 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124017, gadget_id = 70360186, pos = { x = -3997.621, y = 214.001, z = -720.745 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, state = GadgetState.Action03, area_id = 17 },
+		{ config_id = 124018, gadget_id = 70360186, pos = { x = -3998.273, y = 213.832, z = -722.741 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124019, gadget_id = 70360186, pos = { x = -3998.919, y = 213.663, z = -724.740 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124020, gadget_id = 70360186, pos = { x = -3999.566, y = 213.526, z = -726.737 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124021, gadget_id = 70360186, pos = { x = -3998.941, y = 214.231, z = -718.120 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124022, gadget_id = 70360186, pos = { x = -3999.589, y = 214.066, z = -720.117 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124023, gadget_id = 70360186, pos = { x = -4000.237, y = 213.901, z = -722.114 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124024, gadget_id = 70360186, pos = { x = -4000.865, y = 213.735, z = -724.102 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 },
+		{ config_id = 124025, gadget_id = 70360186, pos = { x = -4001.531, y = 213.598, z = -726.110 }, rot = { x = 0.000, y = 17.953, z = 0.000 }, level = 10, area_id = 17 }
+	},
+	regions = {
+		{ config_id = 124027, shape = RegionShape.SPHERE, radius = 7.07, pos = { x = -3996.254, y = 213.553, z = -723.383 }, area_id = 17 }
+	},
+	triggers = {
+		{ config_id = 1124028, name = "VARIABLE_CHANGE_124028", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_124028", action = "action_EVENT_VARIABLE_CHANGE_124028" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 3,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "BlackBoxPlay/DrawOneLine"

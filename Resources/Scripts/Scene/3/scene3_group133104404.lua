@@ -1,449 +1,131 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 133104404
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 404001
-L2_1.monster_id = 21011201
-L3_1 = {}
-L3_1.x = 188.203
-L3_1.y = 238.231
-L3_1.z = 108.372
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 354.378
-L3_1.y = 21.184
-L3_1.z = 353.244
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L2_1.disableWander = true
-L2_1.pose_id = 9013
-L2_1.area_id = 9
-L3_1 = {}
-L3_1.config_id = 404002
-L3_1.monster_id = 21011201
-L4_1 = {}
-L4_1.x = 178.766
-L4_1.y = 238.28
-L4_1.z = 114.222
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 356.092
-L4_1.y = 97.629
-L4_1.z = 15.251
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L3_1.disableWander = true
-L3_1.pose_id = 9013
-L3_1.area_id = 9
-L4_1 = {}
-L4_1.config_id = 404003
-L4_1.monster_id = 21011201
-L5_1 = {}
-L5_1.x = 194.724
-L5_1.y = 237.886
-L5_1.z = 108.516
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 321.789
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L4_1.disableWander = true
-L4_1.pose_id = 9013
-L4_1.area_id = 9
-L5_1 = {}
-L5_1.config_id = 404006
-L5_1.monster_id = 20011301
-L6_1 = {}
-L6_1.x = 185.383
-L6_1.y = 240.089
-L6_1.z = 100.118
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 11.967
-L6_1.y = 1.915
-L6_1.z = 4.283
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.drop_tag = "\229\164\167\229\143\178\232\142\177\229\167\134"
-L5_1.disableWander = true
-L5_1.area_id = 9
-L6_1 = {}
-L6_1.config_id = 404007
-L6_1.monster_id = 21020301
-L7_1 = {}
-L7_1.x = 180.235
-L7_1.y = 238.801
-L7_1.z = 107.758
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 2.946
-L7_1.y = 78.49
-L7_1.z = 8.276
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.drop_tag = "\228\184\152\228\184\152\230\154\180\229\190\146"
-L6_1.area_id = 9
-L7_1 = {}
-L7_1.config_id = 404008
-L7_1.monster_id = 21020301
-L8_1 = {}
-L8_1.x = 184.686
-L8_1.y = 235.09
-L8_1.z = 131.881
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 353.322
-L8_1.y = 190.648
-L8_1.z = 356.941
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.drop_tag = "\228\184\152\228\184\152\230\154\180\229\190\146"
-L7_1.area_id = 9
-L8_1 = {}
-L8_1.config_id = 404009
-L8_1.monster_id = 21011201
-L9_1 = {}
-L9_1.x = 183.02
-L9_1.y = 235.242
-L9_1.z = 131.613
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 353.48
-L9_1.y = 193.465
-L9_1.z = 356.617
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L8_1.area_id = 9
-L9_1 = {}
-L9_1.config_id = 404010
-L9_1.monster_id = 21011201
-L10_1 = {}
-L10_1.x = 186.611
-L10_1.y = 235.137
-L10_1.z = 131.297
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 354.813
-L10_1.y = 193.94
-L10_1.z = 354.796
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L9_1.area_id = 9
-L10_1 = {}
-L10_1.config_id = 404011
-L10_1.monster_id = 21011201
-L11_1 = {}
-L11_1.x = 182.031
-L11_1.y = 235.431
-L11_1.z = 131.013
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 352.871
-L11_1.y = 179.869
-L11_1.z = 358.24
-L10_1.rot = L11_1
-L10_1.level = 1
-L10_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L10_1.area_id = 9
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 404012
-L2_1.gadget_id = 70300089
-L3_1 = {}
-L3_1.x = 188.526
-L3_1.y = 237.669
-L3_1.z = 110.314
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 72.96
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.isOneoff = true
-L2_1.area_id = 9
-L3_1 = {}
-L3_1.config_id = 404013
-L3_1.gadget_id = 70300089
-L4_1 = {}
-L4_1.x = 192.458
-L4_1.y = 237.678
-L4_1.z = 110.335
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 72.96
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.isOneoff = true
-L3_1.area_id = 9
-L4_1 = {}
-L4_1.config_id = 404014
-L4_1.gadget_id = 70300089
-L5_1 = {}
-L5_1.x = 180.168
-L5_1.y = 238.292
-L5_1.z = 113.593
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 72.96
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.isOneoff = true
-L4_1.area_id = 9
-L5_1 = {}
-L5_1.config_id = 404017
-L5_1.gadget_id = 70300102
-L6_1 = {}
-L6_1.x = 185.415
-L6_1.y = 239.641
-L6_1.z = 99.882
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.747
-L6_1.y = 255.016
-L6_1.z = 356.444
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.area_id = 9
-L6_1 = {}
-L6_1.config_id = 404018
-L6_1.gadget_id = 70300075
-L7_1 = {}
-L7_1.x = 190.816
-L7_1.y = 236.401
-L7_1.z = 119.308
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 3.919
-L7_1.y = 288.081
-L7_1.z = 353.786
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 9
-L7_1 = {}
-L7_1.config_id = 404019
-L7_1.gadget_id = 70300075
-L8_1 = {}
-L8_1.x = 199.238
-L8_1.y = 238.558
-L8_1.z = 104.739
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 4.837
-L8_1.y = 27.23
-L8_1.z = 8.825
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.area_id = 9
-L8_1 = {}
-L8_1.config_id = 404020
-L8_1.gadget_id = 70220005
-L9_1 = {}
-L9_1.x = 193.195
-L9_1.y = 237.156
-L9_1.z = 115.258
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 7.988
-L9_1.y = 0.545
-L9_1.z = 1.848
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.area_id = 9
-L9_1 = {}
-L9_1.config_id = 404021
-L9_1.gadget_id = 70220005
-L10_1 = {}
-L10_1.x = 199.765
-L10_1.y = 238.262
-L10_1.z = 107.893
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 6.181
-L10_1.y = 347.652
-L10_1.z = 3.202
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.area_id = 9
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1404022
-L2_1.name = "ANY_MONSTER_DIE_404022"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_MONSTER_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_MONSTER_DIE_404022"
-L2_1.action = "action_EVENT_ANY_MONSTER_DIE_404022"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = 404001
-L5_1 = 404002
-L6_1 = 404003
-L7_1 = 404006
-L8_1 = 404007
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 404012
-L5_1 = 404013
-L6_1 = 404014
-L7_1 = 404017
-L8_1 = 404018
-L9_1 = 404019
-L10_1 = 404020
-L11_1 = 404021
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ANY_MONSTER_DIE_404022"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 404008
-L6_1 = 404009
-L7_1 = 404010
-L8_1 = 404011
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCount
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133104404
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 404001, monster_id = 21011201, pos = { x = 188.203, y = 238.231, z = 108.372 }, rot = { x = 354.378, y = 21.184, z = 353.244 }, level = 1, drop_tag = "丘丘人", disableWander = true, pose_id = 9013, area_id = 9 },
+	{ config_id = 404002, monster_id = 21011201, pos = { x = 178.766, y = 238.280, z = 114.222 }, rot = { x = 356.092, y = 97.629, z = 15.251 }, level = 1, drop_tag = "丘丘人", disableWander = true, pose_id = 9013, area_id = 9 },
+	{ config_id = 404003, monster_id = 21011201, pos = { x = 194.724, y = 237.886, z = 108.516 }, rot = { x = 0.000, y = 321.789, z = 0.000 }, level = 1, drop_tag = "丘丘人", disableWander = true, pose_id = 9013, area_id = 9 },
+	{ config_id = 404006, monster_id = 20011301, pos = { x = 185.383, y = 240.089, z = 100.118 }, rot = { x = 11.967, y = 1.915, z = 4.283 }, level = 1, drop_tag = "大史莱姆", disableWander = true, area_id = 9 },
+	{ config_id = 404007, monster_id = 21020301, pos = { x = 180.235, y = 238.801, z = 107.758 }, rot = { x = 2.946, y = 78.490, z = 8.276 }, level = 1, drop_tag = "丘丘暴徒", area_id = 9 },
+	{ config_id = 404008, monster_id = 21020301, pos = { x = 184.686, y = 235.090, z = 131.881 }, rot = { x = 353.322, y = 190.648, z = 356.941 }, level = 1, drop_tag = "丘丘暴徒", area_id = 9 },
+	{ config_id = 404009, monster_id = 21011201, pos = { x = 183.020, y = 235.242, z = 131.613 }, rot = { x = 353.480, y = 193.465, z = 356.617 }, level = 1, drop_tag = "丘丘人", area_id = 9 },
+	{ config_id = 404010, monster_id = 21011201, pos = { x = 186.611, y = 235.137, z = 131.297 }, rot = { x = 354.813, y = 193.940, z = 354.796 }, level = 1, drop_tag = "丘丘人", area_id = 9 },
+	{ config_id = 404011, monster_id = 21011201, pos = { x = 182.031, y = 235.431, z = 131.013 }, rot = { x = 352.871, y = 179.869, z = 358.240 }, level = 1, drop_tag = "丘丘人", area_id = 9 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 404012, gadget_id = 70300089, pos = { x = 188.526, y = 237.669, z = 110.314 }, rot = { x = 0.000, y = 72.960, z = 0.000 }, level = 1, isOneoff = true, area_id = 9 },
+	{ config_id = 404013, gadget_id = 70300089, pos = { x = 192.458, y = 237.678, z = 110.335 }, rot = { x = 0.000, y = 72.960, z = 0.000 }, level = 1, isOneoff = true, area_id = 9 },
+	{ config_id = 404014, gadget_id = 70300089, pos = { x = 180.168, y = 238.292, z = 113.593 }, rot = { x = 0.000, y = 72.960, z = 0.000 }, level = 1, isOneoff = true, area_id = 9 },
+	{ config_id = 404017, gadget_id = 70300102, pos = { x = 185.415, y = 239.641, z = 99.882 }, rot = { x = 0.747, y = 255.016, z = 356.444 }, level = 1, area_id = 9 },
+	{ config_id = 404018, gadget_id = 70300075, pos = { x = 190.816, y = 236.401, z = 119.308 }, rot = { x = 3.919, y = 288.081, z = 353.786 }, level = 1, area_id = 9 },
+	{ config_id = 404019, gadget_id = 70300075, pos = { x = 199.238, y = 238.558, z = 104.739 }, rot = { x = 4.837, y = 27.230, z = 8.825 }, level = 1, area_id = 9 },
+	{ config_id = 404020, gadget_id = 70220005, pos = { x = 193.195, y = 237.156, z = 115.258 }, rot = { x = 7.988, y = 0.545, z = 1.848 }, level = 1, area_id = 9 },
+	{ config_id = 404021, gadget_id = 70220005, pos = { x = 199.765, y = 238.262, z = 107.893 }, rot = { x = 6.181, y = 347.652, z = 3.202 }, level = 1, area_id = 9 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1404022, name = "ANY_MONSTER_DIE_404022", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_404022", action = "action_EVENT_ANY_MONSTER_DIE_404022" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { 404001, 404002, 404003, 404006, 404007 },
+		gadgets = { 404012, 404013, 404014, 404017, 404018, 404019, 404020, 404021 },
+		regions = { },
+		triggers = { "ANY_MONSTER_DIE_404022" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { 404008, 404009, 404010, 404011 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_404022(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_404022 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = {}
-  L2_2.x = 183
-  L2_2.y = 238
-  L2_2.z = 108
-  L3_2 = ScriptLib
-  L3_2 = L3_2.ScenePlaySound
-  L4_2 = A0_2
-  L5_2 = {}
-  L5_2.play_pos = L2_2
-  L5_2.sound_name = "LevelHornSound001"
-  L5_2.play_type = 1
-  L5_2.is_broadcast = false
-  L3_2 = L3_2(L4_2, L5_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : active_soundplay"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.AddExtraGroupSuite
-  L4_2 = A0_2
-  L5_2 = 133104404
-  L6_2 = 2
-  L3_2(L4_2, L5_2, L6_2)
-  L3_2 = {}
-  L3_2.x = 183
-  L3_2.y = 238
-  L3_2.z = 108
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminderRadius
-  L5_2 = A0_2
-  L6_2 = 400004
-  L7_2 = L3_2
-  L8_2 = 50
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui_bypos"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_404022(context, evt)
+	-- play_type含义：1·代表开始播放； 2·代表停止播放
+	-- 在指定位置播放或停止音效资源
+		local pos = {x=183, y=238, z=108}
+	    if 0 ~= ScriptLib.ScenePlaySound(context, {play_pos = pos, sound_name = "LevelHornSound001", play_type= 1, is_broadcast = false }) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_soundplay")
+					return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133104404, 2)
+	
+	-- 在指定位置对应半径范围播放reminder
+	local pos = {x=183,y=238,z=108}
+	if 0 ~= ScriptLib.ShowReminderRadius(context, 400004, pos, 50) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui_bypos")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_404022 = L1_1

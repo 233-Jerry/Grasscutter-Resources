@@ -1,124 +1,87 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133008279
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 279001
-L2_1.gadget_id = 70220047
-L3_1 = {}
-L3_1.x = 894.961
-L3_1.y = 350.334
-L3_1.z = -784.805
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 355.281
-L3_1.y = 283.397
-L3_1.z = 22.423
-L2_1.rot = L3_1
-L2_1.level = 30
-L2_1.isOneoff = true
-L2_1.persistent = true
-L2_1.area_id = 10
-L3_1 = {}
-L3_1.config_id = 279002
-L3_1.gadget_id = 70590025
-L4_1 = {}
-L4_1.x = 918.558
-L4_1.y = 360.365
-L4_1.z = -774.695
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 353.179
-L4_1.y = 0.76
-L4_1.z = 337.952
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.area_id = 10
-L4_1 = {}
-L4_1.config_id = 279003
-L4_1.gadget_id = 70360118
-L5_1 = {}
-L5_1.x = 861.906
-L5_1.y = 345.87
-L5_1.z = -789.771
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 19.079
-L5_1.y = 80.463
-L5_1.z = 357.658
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.isOneoff = true
-L4_1.persistent = true
-L4_1.area_id = 10
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1279004
-L2_1.name = "QUEST_FINISH_279004"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_QUEST_FINISH
-L2_1.event = L3_1
-L2_1.source = "7014119"
-L2_1.condition = ""
-L2_1.action = "action_EVENT_QUEST_FINISH_279004"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 279001
-L5_1 = 279002
-L6_1 = 279003
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_FINISH_279004"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 279003
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_entity_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133008279
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 279001, gadget_id = 70220047, pos = { x = 894.961, y = 350.334, z = -784.805 }, rot = { x = 355.281, y = 283.397, z = 22.423 }, level = 30, isOneoff = true, persistent = true, area_id = 10 },
+	{ config_id = 279002, gadget_id = 70590025, pos = { x = 918.558, y = 360.365, z = -774.695 }, rot = { x = 353.179, y = 0.760, z = 337.952 }, level = 30, area_id = 10 },
+	{ config_id = 279003, gadget_id = 70360118, pos = { x = 861.906, y = 345.870, z = -789.771 }, rot = { x = 19.079, y = 80.463, z = 357.658 }, level = 30, isOneoff = true, persistent = true, area_id = 10 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1279004, name = "QUEST_FINISH_279004", event = EventType.EVENT_QUEST_FINISH, source = "7014119", condition = "", action = "action_EVENT_QUEST_FINISH_279004" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 279001, 279002, 279003 },
+		regions = { },
+		triggers = { "QUEST_FINISH_279004" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_279004(context, evt)
+		-- 永久关闭CongfigId的Gadget，需要和Groups的RefreshWithBlock标签搭配
+		if 0 ~= ScriptLib.KillEntityByConfigId(context, { config_id = 279003 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_entity_by_configId")
+		    return -1
+		end
+		
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_279004 = L1_1

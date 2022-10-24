@@ -1,3137 +1,831 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1, L30_1, L31_1, L32_1, L33_1, L34_1, L35_1, L36_1, L37_1, L38_1, L39_1, L40_1, L41_1, L42_1, L43_1, L44_1, L45_1, L46_1, L47_1, L48_1, L49_1, L50_1, L51_1, L52_1, L53_1, L54_1, L55_1, L56_1, L57_1
-L0_1 = {}
-L0_1.group_id = 133105041
-L1_1 = {}
-L1_1.ButtonLeftConfig = 41001
-L1_1.ButtonRightConfig = 41002
-L1_1.StoveConfig = 41003
-L1_1.PotConfigIDA = 41004
-L1_1.PotConfigIDB = 41005
-L1_1.PotConfigIDC = 41006
-L1_1.targetColdTime = 14
-L1_1.targetHeatTime = 14
-L1_1.BeHitByFireTemp = 5
-L1_1.BeHitByIceWaterTemp = -5
-L2_1 = {}
-L3_1 = 7
-L4_1 = -3
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.SecondTempChange = L2_1
-L2_1 = {}
-L3_1 = 40
-L4_1 = 50
-L5_1 = 65
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L1_1.StartTemp = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.curPos = 2
-L3_1.reachPos = 2
-L4_1 = {}
-L5_1 = 2
-L6_1 = 1
-L7_1 = 2
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.tempDirs = L4_1
-L3_1.log = "\228\187\142\228\184\173\233\151\180\231\167\187\229\138\168\229\136\176\228\184\173\233\151\180\239\188\140\229\156\168\228\184\173\233\151\180\229\190\152\229\190\138"
-L2_1[310500138] = L3_1
-L3_1 = {}
-L3_1.curPos = 1
-L3_1.reachPos = 2
-L4_1 = {}
-L5_1 = 2
-L6_1 = 1
-L7_1 = 2
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.tempDirs = L4_1
-L3_1.log = "\228\187\142\229\183\166\232\190\185\231\167\187\229\138\168\229\136\176\228\184\173\233\151\180"
-L2_1[310500139] = L3_1
-L3_1 = {}
-L3_1.curPos = 2
-L3_1.reachPos = 3
-L4_1 = {}
-L5_1 = 2
-L6_1 = 2
-L7_1 = 1
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.tempDirs = L4_1
-L3_1.log = "\228\187\142\228\184\173\233\151\180\231\167\187\229\138\168\229\136\176\229\143\179\232\190\185"
-L2_1[310500140] = L3_1
-L3_1 = {}
-L3_1.curPos = 3
-L3_1.reachPos = 2
-L4_1 = {}
-L5_1 = 2
-L6_1 = 1
-L7_1 = 2
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.tempDirs = L4_1
-L3_1.log = "\228\187\142\229\143\179\232\190\185\231\167\187\229\138\168\229\136\176\228\184\173\233\151\180"
-L2_1[310500141] = L3_1
-L3_1 = {}
-L3_1.curPos = 2
-L3_1.reachPos = 1
-L4_1 = {}
-L5_1 = 1
-L6_1 = 2
-L7_1 = 2
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.tempDirs = L4_1
-L3_1.log = "\228\187\142\228\184\173\233\151\180\231\167\187\229\138\168\229\136\176\229\183\166\232\190\185"
-L2_1[310500142] = L3_1
-L1_1.PlatFormRoute = L2_1
-L2_1 = {}
-L3_1 = 90
-L4_1 = 72
-L5_1 = 666
-L6_1 = 1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L3_1 = {}
-monsters = L3_1
-L3_1 = {}
-npcs = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 41001
-L4_1.gadget_id = 70310079
-L5_1 = {}
-L5_1.x = 1098.377
-L5_1.y = 409.811
-L5_1.z = -704.127
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 4.608
-L5_1.y = 359.094
-L5_1.z = 8.783
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.area_id = 10
-L3_1[41001] = L4_1
-L4_1 = {}
-L4_1.config_id = 41002
-L4_1.gadget_id = 70310079
-L5_1 = {}
-L5_1.x = 1095.938
-L5_1.y = 409.382
-L5_1.z = -704.266
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 352.87
-L5_1.y = 177.885
-L5_1.z = 349.463
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.area_id = 10
-L3_1[41002] = L4_1
-L4_1 = {}
-L4_1.config_id = 41003
-L4_1.gadget_id = 70310080
-L5_1 = {}
-L5_1.x = 1097.081
-L5_1.y = 411.084
-L5_1.z = -710.29
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.273
-L5_1.y = 183.382
-L5_1.z = 0.016
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.route_id = 310500138
-L4_1.area_id = 10
-L3_1[41003] = L4_1
-L4_1 = {}
-L4_1.config_id = 41004
-L4_1.gadget_id = 70310078
-L5_1 = {}
-L5_1.x = 1100.605
-L5_1.y = 412.338
-L5_1.z = -709.466
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 338.226
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L5_1 = {}
-L5_1.SGV_Thermometer_Value = 40
-L5_1.SGV_Thermometer_SafeFrom = 0.1
-L5_1.SGV_Thermometer_SafeTo = 0.7
-L5_1.SGV_Is_Taunting = 0
-L4_1.server_global_value_config = L5_1
-L4_1.area_id = 10
-L3_1[41004] = L4_1
-L4_1 = {}
-L4_1.config_id = 41005
-L4_1.gadget_id = 70310078
-L5_1 = {}
-L5_1.x = 1097.13
-L5_1.y = 412.397
-L5_1.z = -710.293
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L5_1 = {}
-L5_1.SGV_Thermometer_Value = 50
-L5_1.SGV_Thermometer_SafeFrom = 0.3
-L5_1.SGV_Thermometer_SafeTo = 0.9
-L5_1.SGV_Is_Taunting = 0
-L4_1.server_global_value_config = L5_1
-L4_1.area_id = 10
-L3_1[41005] = L4_1
-L4_1 = {}
-L4_1.config_id = 41006
-L4_1.gadget_id = 70310078
-L5_1 = {}
-L5_1.x = 1093.612
-L5_1.y = 412.338
-L5_1.z = -709.466
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 29.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L5_1 = {}
-L5_1.SGV_Thermometer_Value = 65
-L5_1.SGV_Thermometer_SafeFrom = 0.2
-L5_1.SGV_Thermometer_SafeTo = 0.8
-L5_1.SGV_Is_Taunting = 0
-L4_1.server_global_value_config = L5_1
-L4_1.area_id = 10
-L3_1[41006] = L4_1
-L4_1 = {}
-L4_1.config_id = 41050
-L4_1.gadget_id = 70310084
-L5_1 = {}
-L5_1.x = 1093.599
-L5_1.y = 409.818
-L5_1.z = -709.478
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 4.707
-L5_1.y = 26.909
-L5_1.z = 14.102
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 10
-L3_1[41050] = L4_1
-L4_1 = {}
-L4_1.config_id = 41081
-L4_1.gadget_id = 70310084
-L5_1 = {}
-L5_1.x = 1097.203
-L5_1.y = 410.376
-L5_1.z = -710.228
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 6.206
-L5_1.y = 0.339
-L5_1.z = 6.242
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 10
-L3_1[41081] = L4_1
-L4_1 = {}
-L4_1.config_id = 41082
-L4_1.gadget_id = 70310084
-L5_1 = {}
-L5_1.x = 1100.617
-L5_1.y = 410.678
-L5_1.z = -709.466
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 3.266
-L5_1.y = 340.593
-L5_1.z = 9.186
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 10
-L3_1[41082] = L4_1
-gadgets = L3_1
-L3_1 = {}
-regions = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1041007
-L4_1.name = "TIME_AXIS_PASS_41007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_TIME_AXIS_PASS
-L4_1.event = L5_1
-L4_1.source = "monstercreate3"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_TIME_AXIS_PASS_41007"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1041012
-L5_1.name = "QUEST_START_41012"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_QUEST_START
-L5_1.event = L6_1
-L5_1.source = "7050004"
-L5_1.condition = "condition_EVENT_QUEST_START_41012"
-L5_1.action = "action_EVENT_QUEST_START_41012"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1041014
-L6_1.name = "TIME_AXIS_PASS_41014"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_TIME_AXIS_PASS
-L6_1.event = L7_1
-L6_1.source = "monstercreate1"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_TIME_AXIS_PASS_41014"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1041051
-L7_1.name = "QUEST_START_41051"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_QUEST_START
-L7_1.event = L8_1
-L7_1.source = "7050004"
-L7_1.condition = ""
-L7_1.action = "action_EVENT_QUEST_START_41051"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1041052
-L8_1.name = "TIME_AXIS_PASS_41052"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_TIME_AXIS_PASS
-L8_1.event = L9_1
-L8_1.source = "ovenADOWN"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_TIME_AXIS_PASS_41052"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1041053
-L9_1.name = "CHALLENGE_FAIL_41053"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_CHALLENGE_FAIL
-L9_1.event = L10_1
-L9_1.source = "888"
-L9_1.condition = ""
-L9_1.action = "action_EVENT_CHALLENGE_FAIL_41053"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1041067
-L10_1.name = "CHALLENGE_SUCCESS_41067"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_CHALLENGE_SUCCESS
-L10_1.event = L11_1
-L10_1.source = "888"
-L10_1.condition = ""
-L10_1.action = "action_EVENT_CHALLENGE_SUCCESS_41067"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1041068
-L11_1.name = "TIME_AXIS_PASS_41068"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_TIME_AXIS_PASS
-L11_1.event = L12_1
-L11_1.source = "ovenBDOWN"
-L11_1.condition = ""
-L11_1.action = "action_EVENT_TIME_AXIS_PASS_41068"
-L11_1.trigger_count = 0
-L12_1 = {}
-L12_1.config_id = 1041069
-L12_1.name = "TIME_AXIS_PASS_41069"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_TIME_AXIS_PASS
-L12_1.event = L13_1
-L12_1.source = "ovenCDOWN"
-L12_1.condition = ""
-L12_1.action = "action_EVENT_TIME_AXIS_PASS_41069"
-L12_1.trigger_count = 0
-L13_1 = {}
-L13_1.config_id = 1041070
-L13_1.name = "VARIABLE_CHANGE_41070"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_VARIABLE_CHANGE
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_VARIABLE_CHANGE_41070"
-L13_1.action = "action_EVENT_VARIABLE_CHANGE_41070"
-L13_1.trigger_count = 0
-L14_1 = {}
-L14_1.config_id = 1041071
-L14_1.name = "TIME_AXIS_PASS_41071"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_TIME_AXIS_PASS
-L14_1.event = L15_1
-L14_1.source = "ovenAUP"
-L14_1.condition = ""
-L14_1.action = "action_EVENT_TIME_AXIS_PASS_41071"
-L14_1.trigger_count = 0
-L15_1 = {}
-L15_1.config_id = 1041072
-L15_1.name = "VARIABLE_CHANGE_41072"
-L16_1 = EventType
-L16_1 = L16_1.EVENT_VARIABLE_CHANGE
-L15_1.event = L16_1
-L15_1.source = ""
-L15_1.condition = "condition_EVENT_VARIABLE_CHANGE_41072"
-L15_1.action = "action_EVENT_VARIABLE_CHANGE_41072"
-L15_1.trigger_count = 0
-L16_1 = {}
-L16_1.config_id = 1041073
-L16_1.name = "VARIABLE_CHANGE_41073"
-L17_1 = EventType
-L17_1 = L17_1.EVENT_VARIABLE_CHANGE
-L16_1.event = L17_1
-L16_1.source = ""
-L16_1.condition = "condition_EVENT_VARIABLE_CHANGE_41073"
-L16_1.action = "action_EVENT_VARIABLE_CHANGE_41073"
-L16_1.trigger_count = 0
-L17_1 = {}
-L17_1.config_id = 1041074
-L17_1.name = "TIME_AXIS_PASS_41074"
-L18_1 = EventType
-L18_1 = L18_1.EVENT_TIME_AXIS_PASS
-L17_1.event = L18_1
-L17_1.source = "ovenBUP"
-L17_1.condition = ""
-L17_1.action = "action_EVENT_TIME_AXIS_PASS_41074"
-L17_1.trigger_count = 0
-L18_1 = {}
-L18_1.config_id = 1041075
-L18_1.name = "VARIABLE_CHANGE_41075"
-L19_1 = EventType
-L19_1 = L19_1.EVENT_VARIABLE_CHANGE
-L18_1.event = L19_1
-L18_1.source = ""
-L18_1.condition = "condition_EVENT_VARIABLE_CHANGE_41075"
-L18_1.action = "action_EVENT_VARIABLE_CHANGE_41075"
-L18_1.trigger_count = 0
-L19_1 = {}
-L19_1.config_id = 1041076
-L19_1.name = "VARIABLE_CHANGE_41076"
-L20_1 = EventType
-L20_1 = L20_1.EVENT_VARIABLE_CHANGE
-L19_1.event = L20_1
-L19_1.source = ""
-L19_1.condition = "condition_EVENT_VARIABLE_CHANGE_41076"
-L19_1.action = "action_EVENT_VARIABLE_CHANGE_41076"
-L19_1.trigger_count = 0
-L20_1 = {}
-L20_1.config_id = 1041077
-L20_1.name = "TIME_AXIS_PASS_41077"
-L21_1 = EventType
-L21_1 = L21_1.EVENT_TIME_AXIS_PASS
-L20_1.event = L21_1
-L20_1.source = "ovenAUP"
-L20_1.condition = ""
-L20_1.action = "action_EVENT_TIME_AXIS_PASS_41077"
-L20_1.trigger_count = 0
-L21_1 = {}
-L21_1.config_id = 1041078
-L21_1.name = "VARIABLE_CHANGE_41078"
-L22_1 = EventType
-L22_1 = L22_1.EVENT_VARIABLE_CHANGE
-L21_1.event = L22_1
-L21_1.source = ""
-L21_1.condition = "condition_EVENT_VARIABLE_CHANGE_41078"
-L21_1.action = "action_EVENT_VARIABLE_CHANGE_41078"
-L21_1.trigger_count = 0
-L22_1 = {}
-L22_1.config_id = 1041079
-L22_1.name = "TIME_AXIS_PASS_41079"
-L23_1 = EventType
-L23_1 = L23_1.EVENT_TIME_AXIS_PASS
-L22_1.event = L23_1
-L22_1.source = "monstercreate2"
-L22_1.condition = ""
-L22_1.action = "action_EVENT_TIME_AXIS_PASS_41079"
-L22_1.trigger_count = 0
-L23_1 = {}
-L23_1.config_id = 1041080
-L23_1.name = "GROUP_LOAD_41080"
-L24_1 = EventType
-L24_1 = L24_1.EVENT_GROUP_LOAD
-L23_1.event = L24_1
-L23_1.source = ""
-L23_1.condition = ""
-L23_1.action = "action_EVENT_GROUP_LOAD_41080"
-L23_1.trigger_count = 0
-L24_1 = {}
-L24_1.config_id = 1041094
-L24_1.name = "QUEST_START_41094"
-L25_1 = EventType
-L25_1 = L25_1.EVENT_QUEST_START
-L24_1.event = L25_1
-L24_1.source = "7050002"
-L24_1.condition = ""
-L24_1.action = "action_EVENT_QUEST_START_41094"
-L24_1.trigger_count = 0
-L25_1 = {}
-L25_1.config_id = 1041095
-L25_1.name = "QUEST_FINISH_41095"
-L26_1 = EventType
-L26_1 = L26_1.EVENT_QUEST_FINISH
-L25_1.event = L26_1
-L25_1.source = "7050002"
-L25_1.condition = ""
-L25_1.action = "action_EVENT_QUEST_FINISH_41095"
-L25_1.trigger_count = 0
-L26_1 = {}
-L26_1.config_id = 1041096
-L26_1.name = "QUEST_FINISH_41096"
-L27_1 = EventType
-L27_1 = L27_1.EVENT_QUEST_FINISH
-L26_1.event = L27_1
-L26_1.source = "7050006"
-L26_1.condition = ""
-L26_1.action = "action_EVENT_QUEST_FINISH_41096"
-L26_1.trigger_count = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L3_1[13] = L16_1
-L3_1[14] = L17_1
-L3_1[15] = L18_1
-L3_1[16] = L19_1
-L3_1[17] = L20_1
-L3_1[18] = L21_1
-L3_1[19] = L22_1
-L3_1[20] = L23_1
-L3_1[21] = L24_1
-L3_1[22] = L25_1
-L3_1[23] = L26_1
-triggers = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.configId = 1
-L4_1.name = "ovenATemp"
-L4_1.value = 40
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 2
-L5_1.name = "ovenBTemp"
-L5_1.value = 50
-L5_1.no_refresh = false
-L6_1 = {}
-L6_1.configId = 3
-L6_1.name = "ovenCTemp"
-L6_1.value = 65
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 4
-L7_1.name = "curPos"
-L7_1.value = 2
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 5
-L8_1.name = "fireDirection"
-L8_1.value = 0
-L8_1.no_refresh = false
-L9_1 = {}
-L9_1.configId = 6
-L9_1.name = "ovenATempDirection"
-L9_1.value = 0
-L9_1.no_refresh = false
-L10_1 = {}
-L10_1.configId = 7
-L10_1.name = "ovenBTempDirection"
-L10_1.value = 0
-L10_1.no_refresh = false
-L11_1 = {}
-L11_1.configId = 8
-L11_1.name = "ovenCTempDirection"
-L11_1.value = 0
-L11_1.no_refresh = false
-L12_1 = {}
-L12_1.configId = 9
-L12_1.name = "start"
-L12_1.value = 0
-L12_1.no_refresh = false
-L13_1 = {}
-L13_1.configId = 10
-L13_1.name = "fail"
-L13_1.value = 0
-L13_1.no_refresh = true
-L14_1 = {}
-L14_1.configId = 11
-L14_1.name = "isRightBtnPressed"
-L14_1.value = 0
-L14_1.no_refresh = false
-L15_1 = {}
-L15_1.configId = 12
-L15_1.name = "isLeftBtnPressed"
-L15_1.value = 0
-L15_1.no_refresh = false
-L16_1 = {}
-L17_1 = 13
-L16_1.configId = L17_1
-L17_1 = "startOrNot"
-L16_1.name = L17_1
-L16_1.value = 0
-L16_1.no_refresh = false
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L3_1[13] = L16_1
-variables = L3_1
-L3_1 = "garbages"
-L4_1 = {}
-L5_1 = {}
-L6_1 = {}
-L7_1 = 1041008
-L6_1.config_id = L7_1
-L7_1 = "GADGET_STATE_CHANGE_41008"
-L6_1.name = L7_1
-L7_1 = EventType
-L8_1 = "EVENT_GADGET_STATE_CHANGE"
-L7_1 = L7_1[L8_1]
-L6_1.event = L7_1
-L6_1.source = ""
-L7_1 = "condition_EVENT_GADGET_STATE_CHANGE_41008"
-L6_1.condition = L7_1
-L7_1 = "action_EVENT_GADGET_STATE_CHANGE_41008"
-L6_1.action = L7_1
-L6_1.trigger_count = 0
-L7_1 = {}
-L8_1 = 1041009
-L7_1.config_id = L8_1
-L8_1 = "GADGET_STATE_CHANGE_41009"
-L7_1.name = L8_1
-L8_1 = EventType
-L9_1 = "EVENT_GADGET_STATE_CHANGE"
-L8_1 = L8_1[L9_1]
-L7_1.event = L8_1
-L7_1.source = ""
-L8_1 = "condition_EVENT_GADGET_STATE_CHANGE_41009"
-L7_1.condition = L8_1
-L8_1 = "action_EVENT_GADGET_STATE_CHANGE_41009"
-L7_1.action = L8_1
-L7_1.trigger_count = 0
-L8_1 = {}
-L9_1 = 1041010
-L8_1.config_id = L9_1
-L9_1 = "GADGET_STATE_CHANGE_41010"
-L8_1.name = L9_1
-L9_1 = EventType
-L10_1 = "EVENT_GADGET_STATE_CHANGE"
-L9_1 = L9_1[L10_1]
-L8_1.event = L9_1
-L8_1.source = ""
-L9_1 = "condition_EVENT_GADGET_STATE_CHANGE_41010"
-L8_1.condition = L9_1
-L9_1 = "action_EVENT_GADGET_STATE_CHANGE_41010"
-L8_1.action = L9_1
-L8_1.trigger_count = 0
-L9_1 = {}
-L10_1 = 1041011
-L9_1.config_id = L10_1
-L10_1 = "GADGET_STATE_CHANGE_41011"
-L9_1.name = L10_1
-L10_1 = EventType
-L11_1 = "EVENT_GADGET_STATE_CHANGE"
-L10_1 = L10_1[L11_1]
-L9_1.event = L10_1
-L9_1.source = ""
-L10_1 = "condition_EVENT_GADGET_STATE_CHANGE_41011"
-L9_1.condition = L10_1
-L10_1 = "action_EVENT_GADGET_STATE_CHANGE_41011"
-L9_1.action = L10_1
-L9_1.trigger_count = 0
-L10_1 = {}
-L11_1 = 1041013
-L10_1.config_id = L11_1
-L11_1 = "PLATFORM_REACH_POINT_41013"
-L10_1.name = L11_1
-L11_1 = EventType
-L12_1 = "EVENT_PLATFORM_REACH_POINT"
-L11_1 = L11_1[L12_1]
-L10_1.event = L11_1
-L10_1.source = ""
-L11_1 = "condition_EVENT_PLATFORM_REACH_POINT_41013"
-L10_1.condition = L11_1
-L11_1 = "action_EVENT_PLATFORM_REACH_POINT_41013"
-L10_1.action = L11_1
-L10_1.trigger_count = 0
-L11_1 = {}
-L12_1 = 1041015
-L11_1.config_id = L12_1
-L12_1 = "PLATFORM_REACH_POINT_41015"
-L11_1.name = L12_1
-L12_1 = EventType
-L13_1 = "EVENT_PLATFORM_REACH_POINT"
-L12_1 = L12_1[L13_1]
-L11_1.event = L12_1
-L11_1.source = ""
-L12_1 = "condition_EVENT_PLATFORM_REACH_POINT_41015"
-L11_1.condition = L12_1
-L12_1 = "action_EVENT_PLATFORM_REACH_POINT_41015"
-L11_1.action = L12_1
-L11_1.trigger_count = 0
-L12_1 = {}
-L13_1 = 1041016
-L12_1.config_id = L13_1
-L13_1 = "PLATFORM_REACH_POINT_41016"
-L12_1.name = L13_1
-L13_1 = EventType
-L14_1 = "EVENT_PLATFORM_REACH_POINT"
-L13_1 = L13_1[L14_1]
-L12_1.event = L13_1
-L12_1.source = ""
-L13_1 = "condition_EVENT_PLATFORM_REACH_POINT_41016"
-L12_1.condition = L13_1
-L13_1 = "action_EVENT_PLATFORM_REACH_POINT_41016"
-L12_1.action = L13_1
-L12_1.trigger_count = 0
-L13_1 = {}
-L14_1 = 1041017
-L13_1.config_id = L14_1
-L14_1 = "PLATFORM_REACH_POINT_41017"
-L13_1.name = L14_1
-L14_1 = EventType
-L15_1 = "EVENT_PLATFORM_REACH_POINT"
-L14_1 = L14_1[L15_1]
-L13_1.event = L14_1
-L13_1.source = ""
-L14_1 = "condition_EVENT_PLATFORM_REACH_POINT_41017"
-L13_1.condition = L14_1
-L14_1 = "action_EVENT_PLATFORM_REACH_POINT_41017"
-L13_1.action = L14_1
-L13_1.trigger_count = 0
-L14_1 = {}
-L15_1 = 1041018
-L14_1.config_id = L15_1
-L15_1 = "PLATFORM_REACH_POINT_41018"
-L14_1.name = L15_1
-L15_1 = EventType
-L16_1 = "EVENT_PLATFORM_REACH_POINT"
-L15_1 = L15_1[L16_1]
-L14_1.event = L15_1
-L14_1.source = ""
-L15_1 = "condition_EVENT_PLATFORM_REACH_POINT_41018"
-L14_1.condition = L15_1
-L15_1 = "action_EVENT_PLATFORM_REACH_POINT_41018"
-L14_1.action = L15_1
-L14_1.trigger_count = 0
-L15_1 = {}
-L16_1 = 1041019
-L15_1.config_id = L16_1
-L16_1 = "GADGET_STATE_CHANGE_41019"
-L15_1.name = L16_1
-L16_1 = EventType
-L17_1 = "EVENT_GADGET_STATE_CHANGE"
-L16_1 = L16_1[L17_1]
-L15_1.event = L16_1
-L15_1.source = ""
-L16_1 = "condition_EVENT_GADGET_STATE_CHANGE_41019"
-L15_1.condition = L16_1
-L16_1 = "action_EVENT_GADGET_STATE_CHANGE_41019"
-L15_1.action = L16_1
-L15_1.trigger_count = 0
-L16_1 = {}
-L17_1 = 1041020
-L16_1.config_id = L17_1
-L17_1 = "GADGET_STATE_CHANGE_41020"
-L16_1.name = L17_1
-L17_1 = EventType
-L18_1 = "EVENT_GADGET_STATE_CHANGE"
-L17_1 = L17_1[L18_1]
-L16_1.event = L17_1
-L16_1.source = ""
-L17_1 = "condition_EVENT_GADGET_STATE_CHANGE_41020"
-L16_1.condition = L17_1
-L17_1 = "action_EVENT_GADGET_STATE_CHANGE_41020"
-L16_1.action = L17_1
-L16_1.trigger_count = 0
-L17_1 = {}
-L18_1 = 1041021
-L17_1.config_id = L18_1
-L18_1 = "GADGET_STATE_CHANGE_41021"
-L17_1.name = L18_1
-L18_1 = EventType
-L19_1 = "EVENT_GADGET_STATE_CHANGE"
-L18_1 = L18_1[L19_1]
-L17_1.event = L18_1
-L17_1.source = ""
-L18_1 = "condition_EVENT_GADGET_STATE_CHANGE_41021"
-L17_1.condition = L18_1
-L18_1 = "action_EVENT_GADGET_STATE_CHANGE_41021"
-L17_1.action = L18_1
-L17_1.trigger_count = 0
-L18_1 = {}
-L19_1 = 1041022
-L18_1.config_id = L19_1
-L19_1 = "GADGET_STATE_CHANGE_41022"
-L18_1.name = L19_1
-L19_1 = EventType
-L20_1 = "EVENT_GADGET_STATE_CHANGE"
-L19_1 = L19_1[L20_1]
-L18_1.event = L19_1
-L18_1.source = ""
-L19_1 = "condition_EVENT_GADGET_STATE_CHANGE_41022"
-L18_1.condition = L19_1
-L19_1 = "action_EVENT_GADGET_STATE_CHANGE_41022"
-L18_1.action = L19_1
-L18_1.trigger_count = 0
-L19_1 = {}
-L20_1 = 1041023
-L19_1.config_id = L20_1
-L20_1 = "PLATFORM_REACH_POINT_41023"
-L19_1.name = L20_1
-L20_1 = EventType
-L21_1 = "EVENT_PLATFORM_REACH_POINT"
-L20_1 = L20_1[L21_1]
-L19_1.event = L20_1
-L19_1.source = ""
-L20_1 = "condition_EVENT_PLATFORM_REACH_POINT_41023"
-L19_1.condition = L20_1
-L20_1 = "action_EVENT_PLATFORM_REACH_POINT_41023"
-L19_1.action = L20_1
-L19_1.trigger_count = 0
-L20_1 = {}
-L21_1 = 1041024
-L20_1.config_id = L21_1
-L21_1 = "PLATFORM_REACH_POINT_41024"
-L20_1.name = L21_1
-L21_1 = EventType
-L22_1 = "EVENT_PLATFORM_REACH_POINT"
-L21_1 = L21_1[L22_1]
-L20_1.event = L21_1
-L20_1.source = ""
-L21_1 = "condition_EVENT_PLATFORM_REACH_POINT_41024"
-L20_1.condition = L21_1
-L21_1 = "action_EVENT_PLATFORM_REACH_POINT_41024"
-L20_1.action = L21_1
-L20_1.trigger_count = 0
-L21_1 = {}
-L22_1 = 1041025
-L21_1.config_id = L22_1
-L22_1 = "PLATFORM_REACH_POINT_41025"
-L21_1.name = L22_1
-L22_1 = EventType
-L23_1 = "EVENT_PLATFORM_REACH_POINT"
-L22_1 = L22_1[L23_1]
-L21_1.event = L22_1
-L21_1.source = ""
-L22_1 = "condition_EVENT_PLATFORM_REACH_POINT_41025"
-L21_1.condition = L22_1
-L22_1 = "action_EVENT_PLATFORM_REACH_POINT_41025"
-L21_1.action = L22_1
-L21_1.trigger_count = 0
-L22_1 = {}
-L23_1 = 1041026
-L22_1.config_id = L23_1
-L23_1 = "VARIABLE_CHANGE_41026"
-L22_1.name = L23_1
-L23_1 = EventType
-L23_1 = L23_1.EVENT_VARIABLE_CHANGE
-L22_1.event = L23_1
-L22_1.source = "ovenATempDirection"
-L23_1 = "condition_EVENT_VARIABLE_CHANGE_41026"
-L22_1.condition = L23_1
-L23_1 = "action_EVENT_VARIABLE_CHANGE_41026"
-L22_1.action = L23_1
-L22_1.trigger_count = 0
-L23_1 = {}
-L24_1 = 1041027
-L23_1.config_id = L24_1
-L24_1 = "TIMER_EVENT_41027"
-L23_1.name = L24_1
-L24_1 = EventType
-L25_1 = "EVENT_TIMER_EVENT"
-L24_1 = L24_1[L25_1]
-L23_1.event = L24_1
-L24_1 = "ovenATempRise"
-L23_1.source = L24_1
-L24_1 = "condition_EVENT_TIMER_EVENT_41027"
-L23_1.condition = L24_1
-L24_1 = "action_EVENT_TIMER_EVENT_41027"
-L23_1.action = L24_1
-L23_1.trigger_count = 0
-L24_1 = {}
-L25_1 = 1041028
-L24_1.config_id = L25_1
-L25_1 = "VARIABLE_CHANGE_41028"
-L24_1.name = L25_1
-L25_1 = EventType
-L25_1 = L25_1.EVENT_VARIABLE_CHANGE
-L24_1.event = L25_1
-L24_1.source = "ovenATemp"
-L25_1 = "condition_EVENT_VARIABLE_CHANGE_41028"
-L24_1.condition = L25_1
-L25_1 = "action_EVENT_VARIABLE_CHANGE_41028"
-L24_1.action = L25_1
-L24_1.trigger_count = 0
-L25_1 = {}
-L26_1 = 1041029
-L25_1.config_id = L26_1
-L26_1 = "TIMER_EVENT_41029"
-L25_1.name = L26_1
-L26_1 = EventType
-L27_1 = "EVENT_TIMER_EVENT"
-L26_1 = L26_1[L27_1]
-L25_1.event = L26_1
-L26_1 = "ovenATempOverHeat"
-L25_1.source = L26_1
-L25_1.condition = ""
-L26_1 = "action_EVENT_TIMER_EVENT_41029"
-L25_1.action = L26_1
-L25_1.trigger_count = 0
-L26_1 = {}
-L27_1 = 1041030
-L26_1.config_id = L27_1
-L27_1 = "VARIABLE_CHANGE_41030"
-L26_1.name = L27_1
-L27_1 = EventType
-L27_1 = L27_1.EVENT_VARIABLE_CHANGE
-L26_1.event = L27_1
-L26_1.source = "ovenATempDirection"
-L27_1 = "condition_EVENT_VARIABLE_CHANGE_41030"
-L26_1.condition = L27_1
-L27_1 = "action_EVENT_VARIABLE_CHANGE_41030"
-L26_1.action = L27_1
-L26_1.trigger_count = 0
-L27_1 = {}
-L28_1 = 1041031
-L27_1.config_id = L28_1
-L28_1 = "TIMER_EVENT_41031"
-L27_1.name = L28_1
-L28_1 = EventType
-L29_1 = "EVENT_TIMER_EVENT"
-L28_1 = L28_1[L29_1]
-L27_1.event = L28_1
-L28_1 = "ovenATempFall"
-L27_1.source = L28_1
-L28_1 = "condition_EVENT_TIMER_EVENT_41031"
-L27_1.condition = L28_1
-L28_1 = "action_EVENT_TIMER_EVENT_41031"
-L27_1.action = L28_1
-L27_1.trigger_count = 0
-L28_1 = {}
-L29_1 = 1041032
-L28_1.config_id = L29_1
-L29_1 = "VARIABLE_CHANGE_41032"
-L28_1.name = L29_1
-L29_1 = EventType
-L29_1 = L29_1.EVENT_VARIABLE_CHANGE
-L28_1.event = L29_1
-L28_1.source = "ovenATemp"
-L29_1 = "condition_EVENT_VARIABLE_CHANGE_41032"
-L28_1.condition = L29_1
-L29_1 = "action_EVENT_VARIABLE_CHANGE_41032"
-L28_1.action = L29_1
-L28_1.trigger_count = 0
-L29_1 = {}
-L30_1 = 1041033
-L29_1.config_id = L30_1
-L30_1 = "TIMER_EVENT_41033"
-L29_1.name = L30_1
-L30_1 = EventType
-L31_1 = "EVENT_TIMER_EVENT"
-L30_1 = L30_1[L31_1]
-L29_1.event = L30_1
-L30_1 = "ovenATempOverCool"
-L29_1.source = L30_1
-L29_1.condition = ""
-L30_1 = "action_EVENT_TIMER_EVENT_41033"
-L29_1.action = L30_1
-L29_1.trigger_count = 0
-L30_1 = {}
-L31_1 = 1041034
-L30_1.config_id = L31_1
-L31_1 = "VARIABLE_CHANGE_41034"
-L30_1.name = L31_1
-L31_1 = EventType
-L31_1 = L31_1.EVENT_VARIABLE_CHANGE
-L30_1.event = L31_1
-L30_1.source = "ovenBTempDirection"
-L31_1 = "condition_EVENT_VARIABLE_CHANGE_41034"
-L30_1.condition = L31_1
-L31_1 = "action_EVENT_VARIABLE_CHANGE_41034"
-L30_1.action = L31_1
-L30_1.trigger_count = 0
-L31_1 = {}
-L32_1 = 1041035
-L31_1.config_id = L32_1
-L32_1 = "TIMER_EVENT_41035"
-L31_1.name = L32_1
-L32_1 = EventType
-L33_1 = "EVENT_TIMER_EVENT"
-L32_1 = L32_1[L33_1]
-L31_1.event = L32_1
-L32_1 = "ovenBTempRise"
-L31_1.source = L32_1
-L32_1 = "condition_EVENT_TIMER_EVENT_41035"
-L31_1.condition = L32_1
-L32_1 = "action_EVENT_TIMER_EVENT_41035"
-L31_1.action = L32_1
-L31_1.trigger_count = 0
-L32_1 = {}
-L33_1 = 1041036
-L32_1.config_id = L33_1
-L33_1 = "VARIABLE_CHANGE_41036"
-L32_1.name = L33_1
-L33_1 = EventType
-L33_1 = L33_1.EVENT_VARIABLE_CHANGE
-L32_1.event = L33_1
-L32_1.source = "ovenBTemp"
-L33_1 = "condition_EVENT_VARIABLE_CHANGE_41036"
-L32_1.condition = L33_1
-L33_1 = "action_EVENT_VARIABLE_CHANGE_41036"
-L32_1.action = L33_1
-L32_1.trigger_count = 0
-L33_1 = {}
-L34_1 = 1041037
-L33_1.config_id = L34_1
-L34_1 = "TIMER_EVENT_41037"
-L33_1.name = L34_1
-L34_1 = EventType
-L35_1 = "EVENT_TIMER_EVENT"
-L34_1 = L34_1[L35_1]
-L33_1.event = L34_1
-L34_1 = "ovenBTempOverHeat"
-L33_1.source = L34_1
-L33_1.condition = ""
-L34_1 = "action_EVENT_TIMER_EVENT_41037"
-L33_1.action = L34_1
-L33_1.trigger_count = 0
-L34_1 = {}
-L35_1 = 1041038
-L34_1.config_id = L35_1
-L35_1 = "VARIABLE_CHANGE_41038"
-L34_1.name = L35_1
-L35_1 = EventType
-L35_1 = L35_1.EVENT_VARIABLE_CHANGE
-L34_1.event = L35_1
-L34_1.source = "ovenBTempDirection"
-L35_1 = "condition_EVENT_VARIABLE_CHANGE_41038"
-L34_1.condition = L35_1
-L35_1 = "action_EVENT_VARIABLE_CHANGE_41038"
-L34_1.action = L35_1
-L34_1.trigger_count = 0
-L35_1 = {}
-L36_1 = 1041039
-L35_1.config_id = L36_1
-L36_1 = "TIMER_EVENT_41039"
-L35_1.name = L36_1
-L36_1 = EventType
-L37_1 = "EVENT_TIMER_EVENT"
-L36_1 = L36_1[L37_1]
-L35_1.event = L36_1
-L36_1 = "ovenBTempFall"
-L35_1.source = L36_1
-L36_1 = "condition_EVENT_TIMER_EVENT_41039"
-L35_1.condition = L36_1
-L36_1 = "action_EVENT_TIMER_EVENT_41039"
-L35_1.action = L36_1
-L35_1.trigger_count = 0
-L36_1 = {}
-L37_1 = 1041040
-L36_1.config_id = L37_1
-L37_1 = "VARIABLE_CHANGE_41040"
-L36_1.name = L37_1
-L37_1 = EventType
-L37_1 = L37_1.EVENT_VARIABLE_CHANGE
-L36_1.event = L37_1
-L36_1.source = "ovenBTemp"
-L37_1 = "condition_EVENT_VARIABLE_CHANGE_41040"
-L36_1.condition = L37_1
-L37_1 = "action_EVENT_VARIABLE_CHANGE_41040"
-L36_1.action = L37_1
-L36_1.trigger_count = 0
-L37_1 = {}
-L38_1 = 1041041
-L37_1.config_id = L38_1
-L38_1 = "TIMER_EVENT_41041"
-L37_1.name = L38_1
-L38_1 = EventType
-L39_1 = "EVENT_TIMER_EVENT"
-L38_1 = L38_1[L39_1]
-L37_1.event = L38_1
-L38_1 = "ovenBTempOverCool"
-L37_1.source = L38_1
-L37_1.condition = ""
-L38_1 = "action_EVENT_TIMER_EVENT_41041"
-L37_1.action = L38_1
-L37_1.trigger_count = 0
-L38_1 = {}
-L39_1 = 1041042
-L38_1.config_id = L39_1
-L39_1 = "VARIABLE_CHANGE_41042"
-L38_1.name = L39_1
-L39_1 = EventType
-L39_1 = L39_1.EVENT_VARIABLE_CHANGE
-L38_1.event = L39_1
-L38_1.source = "ovenCTempDirection"
-L39_1 = "condition_EVENT_VARIABLE_CHANGE_41042"
-L38_1.condition = L39_1
-L39_1 = "action_EVENT_VARIABLE_CHANGE_41042"
-L38_1.action = L39_1
-L38_1.trigger_count = 0
-L39_1 = {}
-L40_1 = 1041043
-L39_1.config_id = L40_1
-L40_1 = "TIMER_EVENT_41043"
-L39_1.name = L40_1
-L40_1 = EventType
-L41_1 = "EVENT_TIMER_EVENT"
-L40_1 = L40_1[L41_1]
-L39_1.event = L40_1
-L40_1 = "ovenCTempRise"
-L39_1.source = L40_1
-L40_1 = "condition_EVENT_TIMER_EVENT_41043"
-L39_1.condition = L40_1
-L40_1 = "action_EVENT_TIMER_EVENT_41043"
-L39_1.action = L40_1
-L39_1.trigger_count = 0
-L40_1 = {}
-L41_1 = 1041044
-L40_1.config_id = L41_1
-L41_1 = "VARIABLE_CHANGE_41044"
-L40_1.name = L41_1
-L41_1 = EventType
-L41_1 = L41_1.EVENT_VARIABLE_CHANGE
-L40_1.event = L41_1
-L40_1.source = "ovenCTemp"
-L41_1 = "condition_EVENT_VARIABLE_CHANGE_41044"
-L40_1.condition = L41_1
-L41_1 = "action_EVENT_VARIABLE_CHANGE_41044"
-L40_1.action = L41_1
-L40_1.trigger_count = 0
-L41_1 = {}
-L42_1 = 1041045
-L41_1.config_id = L42_1
-L42_1 = "TIMER_EVENT_41045"
-L41_1.name = L42_1
-L42_1 = EventType
-L43_1 = "EVENT_TIMER_EVENT"
-L42_1 = L42_1[L43_1]
-L41_1.event = L42_1
-L42_1 = "ovenCTempOverHeat"
-L41_1.source = L42_1
-L41_1.condition = ""
-L42_1 = "action_EVENT_TIMER_EVENT_41045"
-L41_1.action = L42_1
-L41_1.trigger_count = 0
-L42_1 = {}
-L43_1 = 1041046
-L42_1.config_id = L43_1
-L43_1 = "VARIABLE_CHANGE_41046"
-L42_1.name = L43_1
-L43_1 = EventType
-L43_1 = L43_1.EVENT_VARIABLE_CHANGE
-L42_1.event = L43_1
-L42_1.source = "ovenCTempDirection"
-L43_1 = "condition_EVENT_VARIABLE_CHANGE_41046"
-L42_1.condition = L43_1
-L43_1 = "action_EVENT_VARIABLE_CHANGE_41046"
-L42_1.action = L43_1
-L42_1.trigger_count = 0
-L43_1 = {}
-L44_1 = 1041047
-L43_1.config_id = L44_1
-L44_1 = "TIMER_EVENT_41047"
-L43_1.name = L44_1
-L44_1 = EventType
-L45_1 = "EVENT_TIMER_EVENT"
-L44_1 = L44_1[L45_1]
-L43_1.event = L44_1
-L44_1 = "ovenCTempFall"
-L43_1.source = L44_1
-L44_1 = "condition_EVENT_TIMER_EVENT_41047"
-L43_1.condition = L44_1
-L44_1 = "action_EVENT_TIMER_EVENT_41047"
-L43_1.action = L44_1
-L43_1.trigger_count = 0
-L44_1 = {}
-L45_1 = 1041048
-L44_1.config_id = L45_1
-L45_1 = "VARIABLE_CHANGE_41048"
-L44_1.name = L45_1
-L45_1 = EventType
-L45_1 = L45_1.EVENT_VARIABLE_CHANGE
-L44_1.event = L45_1
-L44_1.source = "ovenCTemp"
-L45_1 = "condition_EVENT_VARIABLE_CHANGE_41048"
-L44_1.condition = L45_1
-L45_1 = "action_EVENT_VARIABLE_CHANGE_41048"
-L44_1.action = L45_1
-L44_1.trigger_count = 0
-L45_1 = {}
-L46_1 = 1041049
-L45_1.config_id = L46_1
-L46_1 = "TIMER_EVENT_41049"
-L45_1.name = L46_1
-L46_1 = EventType
-L47_1 = "EVENT_TIMER_EVENT"
-L46_1 = L46_1[L47_1]
-L45_1.event = L46_1
-L46_1 = "ovenCTempOverCool"
-L45_1.source = L46_1
-L45_1.condition = ""
-L46_1 = "action_EVENT_TIMER_EVENT_41049"
-L45_1.action = L46_1
-L45_1.trigger_count = 0
-L46_1 = {}
-L47_1 = 1041054
-L46_1.config_id = L47_1
-L47_1 = "VARIABLE_CHANGE_41054"
-L46_1.name = L47_1
-L47_1 = EventType
-L47_1 = L47_1.EVENT_VARIABLE_CHANGE
-L46_1.event = L47_1
-L46_1.source = "ovenATemp"
-L47_1 = "condition_EVENT_VARIABLE_CHANGE_41054"
-L46_1.condition = L47_1
-L47_1 = "action_EVENT_VARIABLE_CHANGE_41054"
-L46_1.action = L47_1
-L46_1.trigger_count = 0
-L47_1 = {}
-L48_1 = 1041055
-L47_1.config_id = L48_1
-L48_1 = "VARIABLE_CHANGE_41055"
-L47_1.name = L48_1
-L48_1 = EventType
-L48_1 = L48_1.EVENT_VARIABLE_CHANGE
-L47_1.event = L48_1
-L47_1.source = "ovenBTemp"
-L48_1 = "condition_EVENT_VARIABLE_CHANGE_41055"
-L47_1.condition = L48_1
-L48_1 = "action_EVENT_VARIABLE_CHANGE_41055"
-L47_1.action = L48_1
-L47_1.trigger_count = 0
-L48_1 = {}
-L49_1 = 1041056
-L48_1.config_id = L49_1
-L49_1 = "VARIABLE_CHANGE_41056"
-L48_1.name = L49_1
-L49_1 = EventType
-L49_1 = L49_1.EVENT_VARIABLE_CHANGE
-L48_1.event = L49_1
-L48_1.source = "ovenCTemp"
-L49_1 = "condition_EVENT_VARIABLE_CHANGE_41056"
-L48_1.condition = L49_1
-L49_1 = "action_EVENT_VARIABLE_CHANGE_41056"
-L48_1.action = L49_1
-L48_1.trigger_count = 0
-L49_1 = {}
-L50_1 = 1041057
-L49_1.config_id = L50_1
-L50_1 = "VARIABLE_CHANGE_41057"
-L49_1.name = L50_1
-L50_1 = EventType
-L50_1 = L50_1.EVENT_VARIABLE_CHANGE
-L49_1.event = L50_1
-L49_1.source = "ovenATemp"
-L50_1 = "condition_EVENT_VARIABLE_CHANGE_41057"
-L49_1.condition = L50_1
-L50_1 = "action_EVENT_VARIABLE_CHANGE_41057"
-L49_1.action = L50_1
-L49_1.trigger_count = 0
-L50_1 = {}
-L51_1 = 1041058
-L50_1.config_id = L51_1
-L51_1 = "VARIABLE_CHANGE_41058"
-L50_1.name = L51_1
-L51_1 = EventType
-L51_1 = L51_1.EVENT_VARIABLE_CHANGE
-L50_1.event = L51_1
-L50_1.source = "ovenBTemp"
-L51_1 = "condition_EVENT_VARIABLE_CHANGE_41058"
-L50_1.condition = L51_1
-L51_1 = "action_EVENT_VARIABLE_CHANGE_41058"
-L50_1.action = L51_1
-L50_1.trigger_count = 0
-L51_1 = {}
-L52_1 = 1041059
-L51_1.config_id = L52_1
-L52_1 = "VARIABLE_CHANGE_41059"
-L51_1.name = L52_1
-L52_1 = EventType
-L52_1 = L52_1.EVENT_VARIABLE_CHANGE
-L51_1.event = L52_1
-L51_1.source = "ovenCTemp"
-L52_1 = "condition_EVENT_VARIABLE_CHANGE_41059"
-L51_1.condition = L52_1
-L52_1 = "action_EVENT_VARIABLE_CHANGE_41059"
-L51_1.action = L52_1
-L51_1.trigger_count = 0
-L52_1 = {}
-L53_1 = 1041060
-L52_1.config_id = L53_1
-L53_1 = "VARIABLE_CHANGE_41060"
-L52_1.name = L53_1
-L53_1 = EventType
-L53_1 = L53_1.EVENT_VARIABLE_CHANGE
-L52_1.event = L53_1
-L52_1.source = "ovenATemp"
-L53_1 = "condition_EVENT_VARIABLE_CHANGE_41060"
-L52_1.condition = L53_1
-L53_1 = "action_EVENT_VARIABLE_CHANGE_41060"
-L52_1.action = L53_1
-L52_1.trigger_count = 0
-L53_1 = {}
-L54_1 = 1041061
-L53_1.config_id = L54_1
-L54_1 = "VARIABLE_CHANGE_41061"
-L53_1.name = L54_1
-L54_1 = EventType
-L54_1 = L54_1.EVENT_VARIABLE_CHANGE
-L53_1.event = L54_1
-L53_1.source = "ovenBTemp"
-L54_1 = "condition_EVENT_VARIABLE_CHANGE_41061"
-L53_1.condition = L54_1
-L54_1 = "action_EVENT_VARIABLE_CHANGE_41061"
-L53_1.action = L54_1
-L53_1.trigger_count = 0
-L54_1 = {}
-L55_1 = 1041062
-L54_1.config_id = L55_1
-L55_1 = "VARIABLE_CHANGE_41062"
-L54_1.name = L55_1
-L55_1 = EventType
-L55_1 = L55_1.EVENT_VARIABLE_CHANGE
-L54_1.event = L55_1
-L54_1.source = "ovenCTemp"
-L55_1 = "condition_EVENT_VARIABLE_CHANGE_41062"
-L54_1.condition = L55_1
-L55_1 = "action_EVENT_VARIABLE_CHANGE_41062"
-L54_1.action = L55_1
-L54_1.trigger_count = 0
-L55_1 = {}
-L56_1 = 1041063
-L55_1.config_id = L56_1
-L56_1 = "TIMER_EVENT_41063"
-L55_1.name = L56_1
-L56_1 = EventType
-L57_1 = "EVENT_TIMER_EVENT"
-L56_1 = L56_1[L57_1]
-L55_1.event = L56_1
-L56_1 = "challengeTimer"
-L55_1.source = L56_1
-L55_1.condition = ""
-L55_1.action = ""
-L55_1.trigger_count = 0
-L56_1 = "tag"
-L57_1 = "666"
-L55_1[L56_1] = L57_1
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L5_1[7] = L12_1
-L5_1[8] = L13_1
-L5_1[9] = L14_1
-L5_1[10] = L15_1
-L5_1[11] = L16_1
-L5_1[12] = L17_1
-L5_1[13] = L18_1
-L5_1[14] = L19_1
-L5_1[15] = L20_1
-L5_1[16] = L21_1
-L5_1[17] = L22_1
-L5_1[18] = L23_1
-L5_1[19] = L24_1
-L5_1[20] = L25_1
-L5_1[21] = L26_1
-L5_1[22] = L27_1
-L5_1[23] = L28_1
-L5_1[24] = L29_1
-L5_1[25] = L30_1
-L5_1[26] = L31_1
-L5_1[27] = L32_1
-L5_1[28] = L33_1
-L5_1[29] = L34_1
-L5_1[30] = L35_1
-L5_1[31] = L36_1
-L5_1[32] = L37_1
-L5_1[33] = L38_1
-L5_1[34] = L39_1
-L5_1[35] = L40_1
-L5_1[36] = L41_1
-L5_1[37] = L42_1
-L5_1[38] = L43_1
-L5_1[39] = L44_1
-L5_1[40] = L45_1
-L5_1[41] = L46_1
-L5_1[42] = L47_1
-L5_1[43] = L48_1
-L5_1[44] = L49_1
-L5_1[45] = L50_1
-L5_1[46] = L51_1
-L5_1[47] = L52_1
-L5_1[48] = L53_1
-L5_1[49] = L54_1
-L5_1[50] = L55_1
-L6_1 = {}
-L7_1 = 1041064
-L6_1.config_id = L7_1
-L7_1 = "GADGET_STATE_CHANGE_41064"
-L6_1.name = L7_1
-L7_1 = EventType
-L8_1 = "EVENT_GADGET_STATE_CHANGE"
-L7_1 = L7_1[L8_1]
-L6_1.event = L7_1
-L6_1.source = ""
-L7_1 = "condition_EVENT_GADGET_STATE_CHANGE_41064"
-L6_1.condition = L7_1
-L7_1 = "action_EVENT_GADGET_STATE_CHANGE_41064"
-L6_1.action = L7_1
-L6_1.trigger_count = 0
-L7_1 = {}
-L8_1 = 1041065
-L7_1.config_id = L8_1
-L8_1 = "PLATFORM_REACH_POINT_41065"
-L7_1.name = L8_1
-L8_1 = EventType
-L9_1 = "EVENT_PLATFORM_REACH_POINT"
-L8_1 = L8_1[L9_1]
-L7_1.event = L8_1
-L7_1.source = ""
-L8_1 = "condition_EVENT_PLATFORM_REACH_POINT_41065"
-L7_1.condition = L8_1
-L8_1 = "action_EVENT_PLATFORM_REACH_POINT_41065"
-L7_1.action = L8_1
-L7_1.trigger_count = 0
-L8_1 = {}
-L9_1 = 1041066
-L8_1.config_id = L9_1
-L9_1 = "PLATFORM_REACH_POINT_41066"
-L8_1.name = L9_1
-L9_1 = EventType
-L10_1 = "EVENT_PLATFORM_REACH_POINT"
-L9_1 = L9_1[L10_1]
-L8_1.event = L9_1
-L8_1.source = ""
-L9_1 = "condition_EVENT_PLATFORM_REACH_POINT_41066"
-L8_1.condition = L9_1
-L9_1 = "action_EVENT_PLATFORM_REACH_POINT_41066"
-L8_1.action = L9_1
-L8_1.trigger_count = 0
-L9_1 = {}
-L10_1 = 1041083
-L9_1.config_id = L10_1
-L10_1 = "GADGET_STATE_CHANGE_41083"
-L9_1.name = L10_1
-L10_1 = EventType
-L11_1 = "EVENT_GADGET_STATE_CHANGE"
-L10_1 = L10_1[L11_1]
-L9_1.event = L10_1
-L9_1.source = ""
-L10_1 = "condition_EVENT_GADGET_STATE_CHANGE_41083"
-L9_1.condition = L10_1
-L10_1 = "action_EVENT_GADGET_STATE_CHANGE_41083"
-L9_1.action = L10_1
-L9_1.trigger_count = 0
-L10_1 = {}
-L11_1 = 1041084
-L10_1.config_id = L11_1
-L11_1 = "GADGET_STATE_CHANGE_41084"
-L10_1.name = L11_1
-L11_1 = EventType
-L12_1 = "EVENT_GADGET_STATE_CHANGE"
-L11_1 = L11_1[L12_1]
-L10_1.event = L11_1
-L10_1.source = ""
-L11_1 = "condition_EVENT_GADGET_STATE_CHANGE_41084"
-L10_1.condition = L11_1
-L11_1 = "action_EVENT_GADGET_STATE_CHANGE_41084"
-L10_1.action = L11_1
-L10_1.trigger_count = 0
-L11_1 = {}
-L12_1 = 1041085
-L11_1.config_id = L12_1
-L12_1 = "GADGET_STATE_CHANGE_41085"
-L11_1.name = L12_1
-L12_1 = EventType
-L13_1 = "EVENT_GADGET_STATE_CHANGE"
-L12_1 = L12_1[L13_1]
-L11_1.event = L12_1
-L11_1.source = ""
-L12_1 = "condition_EVENT_GADGET_STATE_CHANGE_41085"
-L11_1.condition = L12_1
-L12_1 = "action_EVENT_GADGET_STATE_CHANGE_41085"
-L11_1.action = L12_1
-L11_1.trigger_count = 0
-L12_1 = {}
-L13_1 = 1041086
-L12_1.config_id = L13_1
-L13_1 = "GADGET_STATE_CHANGE_41086"
-L12_1.name = L13_1
-L13_1 = EventType
-L14_1 = "EVENT_GADGET_STATE_CHANGE"
-L13_1 = L13_1[L14_1]
-L12_1.event = L13_1
-L12_1.source = ""
-L13_1 = "condition_EVENT_GADGET_STATE_CHANGE_41086"
-L12_1.condition = L13_1
-L13_1 = "action_EVENT_GADGET_STATE_CHANGE_41086"
-L12_1.action = L13_1
-L12_1.trigger_count = 0
-L13_1 = {}
-L14_1 = 1041087
-L13_1.config_id = L14_1
-L14_1 = "GADGET_STATE_CHANGE_41087"
-L13_1.name = L14_1
-L14_1 = EventType
-L15_1 = "EVENT_GADGET_STATE_CHANGE"
-L14_1 = L14_1[L15_1]
-L13_1.event = L14_1
-L13_1.source = ""
-L14_1 = "condition_EVENT_GADGET_STATE_CHANGE_41087"
-L13_1.condition = L14_1
-L14_1 = "action_EVENT_GADGET_STATE_CHANGE_41087"
-L13_1.action = L14_1
-L13_1.trigger_count = 0
-L14_1 = {}
-L15_1 = 1041088
-L14_1.config_id = L15_1
-L15_1 = "VARIABLE_CHANGE_41088"
-L14_1.name = L15_1
-L15_1 = EventType
-L15_1 = L15_1.EVENT_VARIABLE_CHANGE
-L14_1.event = L15_1
-L14_1.source = "ovenATemp"
-L15_1 = "condition_EVENT_VARIABLE_CHANGE_41088"
-L14_1.condition = L15_1
-L15_1 = "action_EVENT_VARIABLE_CHANGE_41088"
-L14_1.action = L15_1
-L14_1.trigger_count = 0
-L15_1 = {}
-L16_1 = 1041089
-L15_1.config_id = L16_1
-L16_1 = "VARIABLE_CHANGE_41089"
-L15_1.name = L16_1
-L16_1 = EventType
-L16_1 = L16_1.EVENT_VARIABLE_CHANGE
-L15_1.event = L16_1
-L15_1.source = "ovenATemp"
-L16_1 = "condition_EVENT_VARIABLE_CHANGE_41089"
-L15_1.condition = L16_1
-L16_1 = "action_EVENT_VARIABLE_CHANGE_41089"
-L15_1.action = L16_1
-L15_1.trigger_count = 0
-L16_1 = {}
-L17_1 = 1041090
-L16_1.config_id = L17_1
-L17_1 = "VARIABLE_CHANGE_41090"
-L16_1.name = L17_1
-L17_1 = EventType
-L17_1 = L17_1.EVENT_VARIABLE_CHANGE
-L16_1.event = L17_1
-L16_1.source = "ovenBTemp"
-L17_1 = "condition_EVENT_VARIABLE_CHANGE_41090"
-L16_1.condition = L17_1
-L17_1 = "action_EVENT_VARIABLE_CHANGE_41090"
-L16_1.action = L17_1
-L16_1.trigger_count = 0
-L17_1 = {}
-L18_1 = 1041091
-L17_1.config_id = L18_1
-L18_1 = "VARIABLE_CHANGE_41091"
-L17_1.name = L18_1
-L18_1 = EventType
-L18_1 = L18_1.EVENT_VARIABLE_CHANGE
-L17_1.event = L18_1
-L17_1.source = "ovenBTemp"
-L18_1 = "condition_EVENT_VARIABLE_CHANGE_41091"
-L17_1.condition = L18_1
-L18_1 = "action_EVENT_VARIABLE_CHANGE_41091"
-L17_1.action = L18_1
-L17_1.trigger_count = 0
-L18_1 = {}
-L19_1 = 1041092
-L18_1.config_id = L19_1
-L19_1 = "VARIABLE_CHANGE_41092"
-L18_1.name = L19_1
-L19_1 = EventType
-L19_1 = L19_1.EVENT_VARIABLE_CHANGE
-L18_1.event = L19_1
-L18_1.source = "ovenCTemp"
-L19_1 = "condition_EVENT_VARIABLE_CHANGE_41092"
-L18_1.condition = L19_1
-L19_1 = "action_EVENT_VARIABLE_CHANGE_41092"
-L18_1.action = L19_1
-L18_1.trigger_count = 0
-L19_1 = {}
-L20_1 = 1041093
-L19_1.config_id = L20_1
-L20_1 = "VARIABLE_CHANGE_41093"
-L19_1.name = L20_1
-L20_1 = EventType
-L20_1 = L20_1.EVENT_VARIABLE_CHANGE
-L19_1.event = L20_1
-L19_1.source = "ovenCTemp"
-L20_1 = "condition_EVENT_VARIABLE_CHANGE_41093"
-L19_1.condition = L20_1
-L20_1 = "action_EVENT_VARIABLE_CHANGE_41093"
-L19_1.action = L20_1
-L19_1.trigger_count = 0
-L20_1 = {}
-L21_1 = 1041097
-L20_1.config_id = L21_1
-L21_1 = "GADGET_STATE_CHANGE_41097"
-L20_1.name = L21_1
-L21_1 = EventType
-L22_1 = "EVENT_GADGET_STATE_CHANGE"
-L21_1 = L21_1[L22_1]
-L20_1.event = L21_1
-L20_1.source = ""
-L21_1 = "condition_EVENT_GADGET_STATE_CHANGE_41097"
-L20_1.condition = L21_1
-L21_1 = "action_EVENT_GADGET_STATE_CHANGE_41097"
-L20_1.action = L21_1
-L20_1.trigger_count = 0
-L21_1 = {}
-L22_1 = 1041098
-L21_1.config_id = L22_1
-L22_1 = "GADGET_STATE_CHANGE_41098"
-L21_1.name = L22_1
-L22_1 = EventType
-L23_1 = "EVENT_GADGET_STATE_CHANGE"
-L22_1 = L22_1[L23_1]
-L21_1.event = L22_1
-L21_1.source = ""
-L22_1 = "condition_EVENT_GADGET_STATE_CHANGE_41098"
-L21_1.condition = L22_1
-L22_1 = "action_EVENT_GADGET_STATE_CHANGE_41098"
-L21_1.action = L22_1
-L21_1.trigger_count = 0
-L22_1 = {}
-L23_1 = 1041099
-L22_1.config_id = L23_1
-L23_1 = "GADGET_STATE_CHANGE_41099"
-L22_1.name = L23_1
-L23_1 = EventType
-L24_1 = "EVENT_GADGET_STATE_CHANGE"
-L23_1 = L23_1[L24_1]
-L22_1.event = L23_1
-L22_1.source = ""
-L23_1 = "condition_EVENT_GADGET_STATE_CHANGE_41099"
-L22_1.condition = L23_1
-L23_1 = "action_EVENT_GADGET_STATE_CHANGE_41099"
-L22_1.action = L23_1
-L22_1.trigger_count = 0
-L23_1 = {}
-L24_1 = 1041100
-L23_1.config_id = L24_1
-L24_1 = "GADGET_STATE_CHANGE_41100"
-L23_1.name = L24_1
-L24_1 = EventType
-L25_1 = "EVENT_GADGET_STATE_CHANGE"
-L24_1 = L24_1[L25_1]
-L23_1.event = L24_1
-L23_1.source = ""
-L24_1 = "condition_EVENT_GADGET_STATE_CHANGE_41100"
-L23_1.condition = L24_1
-L24_1 = "action_EVENT_GADGET_STATE_CHANGE_41100"
-L23_1.action = L24_1
-L23_1.trigger_count = 0
-L24_1 = {}
-L25_1 = 1041101
-L24_1.config_id = L25_1
-L25_1 = "PLATFORM_REACH_POINT_41101"
-L24_1.name = L25_1
-L25_1 = EventType
-L26_1 = "EVENT_PLATFORM_REACH_POINT"
-L25_1 = L25_1[L26_1]
-L24_1.event = L25_1
-L24_1.source = ""
-L25_1 = "condition_EVENT_PLATFORM_REACH_POINT_41101"
-L24_1.condition = L25_1
-L25_1 = "action_EVENT_PLATFORM_REACH_POINT_41101"
-L24_1.action = L25_1
-L24_1.trigger_count = 0
-L25_1 = {}
-L26_1 = 1041102
-L25_1.config_id = L26_1
-L26_1 = "PLATFORM_REACH_POINT_41102"
-L25_1.name = L26_1
-L26_1 = EventType
-L27_1 = "EVENT_PLATFORM_REACH_POINT"
-L26_1 = L26_1[L27_1]
-L25_1.event = L26_1
-L25_1.source = ""
-L26_1 = "condition_EVENT_PLATFORM_REACH_POINT_41102"
-L25_1.condition = L26_1
-L26_1 = "action_EVENT_PLATFORM_REACH_POINT_41102"
-L25_1.action = L26_1
-L25_1.trigger_count = 0
-L26_1 = {}
-L27_1 = 1041103
-L26_1.config_id = L27_1
-L27_1 = "TIME_AXIS_PASS_41103"
-L26_1.name = L27_1
-L27_1 = EventType
-L27_1 = L27_1.EVENT_TIME_AXIS_PASS
-L26_1.event = L27_1
-L27_1 = "ovenATempRise"
-L26_1.source = L27_1
-L26_1.condition = ""
-L27_1 = "action_EVENT_TIME_AXIS_PASS_41103"
-L26_1.action = L27_1
-L26_1.trigger_count = 0
-L27_1 = {}
-L28_1 = 1041104
-L27_1.config_id = L28_1
-L28_1 = "TIME_AXIS_PASS_41104"
-L27_1.name = L28_1
-L28_1 = EventType
-L28_1 = L28_1.EVENT_TIME_AXIS_PASS
-L27_1.event = L28_1
-L28_1 = "ovenATempFall"
-L27_1.source = L28_1
-L27_1.condition = ""
-L28_1 = "action_EVENT_TIME_AXIS_PASS_41104"
-L27_1.action = L28_1
-L27_1.trigger_count = 0
-L28_1 = {}
-L29_1 = 1041105
-L28_1.config_id = L29_1
-L29_1 = "TIME_AXIS_PASS_41105"
-L28_1.name = L29_1
-L29_1 = EventType
-L29_1 = L29_1.EVENT_TIME_AXIS_PASS
-L28_1.event = L29_1
-L29_1 = "ovenBTempRise"
-L28_1.source = L29_1
-L28_1.condition = ""
-L29_1 = "action_EVENT_TIME_AXIS_PASS_41105"
-L28_1.action = L29_1
-L28_1.trigger_count = 0
-L29_1 = {}
-L30_1 = 1041106
-L29_1.config_id = L30_1
-L30_1 = "TIME_AXIS_PASS_41106"
-L29_1.name = L30_1
-L30_1 = EventType
-L30_1 = L30_1.EVENT_TIME_AXIS_PASS
-L29_1.event = L30_1
-L30_1 = "ovenBTempFall"
-L29_1.source = L30_1
-L29_1.condition = ""
-L30_1 = "action_EVENT_TIME_AXIS_PASS_41106"
-L29_1.action = L30_1
-L29_1.trigger_count = 0
-L30_1 = {}
-L31_1 = 1041107
-L30_1.config_id = L31_1
-L31_1 = "TIME_AXIS_PASS_41107"
-L30_1.name = L31_1
-L31_1 = EventType
-L31_1 = L31_1.EVENT_TIME_AXIS_PASS
-L30_1.event = L31_1
-L31_1 = "ovenCTempRise"
-L30_1.source = L31_1
-L30_1.condition = ""
-L31_1 = "action_EVENT_TIME_AXIS_PASS_41107"
-L30_1.action = L31_1
-L30_1.trigger_count = 0
-L31_1 = {}
-L32_1 = 1041108
-L31_1.config_id = L32_1
-L32_1 = "TIME_AXIS_PASS_41108"
-L31_1.name = L32_1
-L32_1 = EventType
-L32_1 = L32_1.EVENT_TIME_AXIS_PASS
-L31_1.event = L32_1
-L32_1 = "ovenCTempFall"
-L31_1.source = L32_1
-L31_1.condition = ""
-L32_1 = "action_EVENT_TIME_AXIS_PASS_41108"
-L31_1.action = L32_1
-L31_1.trigger_count = 0
-L32_1 = {}
-L33_1 = 1041109
-L32_1.config_id = L33_1
-L33_1 = "GADGET_STATE_CHANGE_41109"
-L32_1.name = L33_1
-L33_1 = EventType
-L34_1 = "EVENT_GADGET_STATE_CHANGE"
-L33_1 = L33_1[L34_1]
-L32_1.event = L33_1
-L32_1.source = ""
-L33_1 = "condition_EVENT_GADGET_STATE_CHANGE_41109"
-L32_1.condition = L33_1
-L33_1 = "action_EVENT_GADGET_STATE_CHANGE_41109"
-L32_1.action = L33_1
-L32_1.trigger_count = 0
-L33_1 = {}
-L34_1 = 1041110
-L33_1.config_id = L34_1
-L34_1 = "GADGET_STATE_CHANGE_41110"
-L33_1.name = L34_1
-L34_1 = EventType
-L35_1 = "EVENT_GADGET_STATE_CHANGE"
-L34_1 = L34_1[L35_1]
-L33_1.event = L34_1
-L33_1.source = ""
-L34_1 = "condition_EVENT_GADGET_STATE_CHANGE_41110"
-L33_1.condition = L34_1
-L34_1 = "action_EVENT_GADGET_STATE_CHANGE_41110"
-L33_1.action = L34_1
-L33_1.trigger_count = 0
-L34_1 = {}
-L35_1 = 1041111
-L34_1.config_id = L35_1
-L35_1 = "GADGET_STATE_CHANGE_41111"
-L34_1.name = L35_1
-L35_1 = EventType
-L36_1 = "EVENT_GADGET_STATE_CHANGE"
-L35_1 = L35_1[L36_1]
-L34_1.event = L35_1
-L34_1.source = ""
-L35_1 = "condition_EVENT_GADGET_STATE_CHANGE_41111"
-L34_1.condition = L35_1
-L35_1 = "action_EVENT_GADGET_STATE_CHANGE_41111"
-L34_1.action = L35_1
-L34_1.trigger_count = 0
-L35_1 = {}
-L36_1 = 1041112
-L35_1.config_id = L36_1
-L36_1 = "GADGET_STATE_CHANGE_41112"
-L35_1.name = L36_1
-L36_1 = EventType
-L37_1 = "EVENT_GADGET_STATE_CHANGE"
-L36_1 = L36_1[L37_1]
-L35_1.event = L36_1
-L35_1.source = ""
-L36_1 = "condition_EVENT_GADGET_STATE_CHANGE_41112"
-L35_1.condition = L36_1
-L36_1 = "action_EVENT_GADGET_STATE_CHANGE_41112"
-L35_1.action = L36_1
-L35_1.trigger_count = 0
-L5_1[51] = L6_1
-L5_1[52] = L7_1
-L5_1[53] = L8_1
-L5_1[54] = L9_1
-L5_1[55] = L10_1
-L5_1[56] = L11_1
-L5_1[57] = L12_1
-L5_1[58] = L13_1
-L5_1[59] = L14_1
-L5_1[60] = L15_1
-L5_1[61] = L16_1
-L5_1[62] = L17_1
-L5_1[63] = L18_1
-L5_1[64] = L19_1
-L5_1[65] = L20_1
-L5_1[66] = L21_1
-L5_1[67] = L22_1
-L5_1[68] = L23_1
-L5_1[69] = L24_1
-L5_1[70] = L25_1
-L5_1[71] = L26_1
-L5_1[72] = L27_1
-L5_1[73] = L28_1
-L5_1[74] = L29_1
-L5_1[75] = L30_1
-L5_1[76] = L31_1
-L5_1[77] = L32_1
-L5_1[78] = L33_1
-L5_1[79] = L34_1
-L5_1[80] = L35_1
-L4_1.triggers = L5_1
-_ENV[L3_1] = L4_1
-L3_1 = "init_config"
-L4_1 = {}
-L5_1 = "suite"
-L4_1[L5_1] = 1
-L5_1 = "end_suite"
-L4_1[L5_1] = 0
-L5_1 = "rand_suite"
-L4_1[L5_1] = false
-_ENV[L3_1] = L4_1
-L3_1 = "suites"
-L4_1 = {}
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 41001
-L8_1 = 41002
-L9_1 = 41003
-L10_1 = 41004
-L11_1 = 41005
-L12_1 = 41006
-L13_1 = 41050
-L14_1 = 41081
-L15_1 = 41082
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L6_1[7] = L13_1
-L6_1[8] = L14_1
-L6_1[9] = L15_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "TIME_AXIS_PASS_41007"
-L8_1 = "QUEST_START_41012"
-L9_1 = "TIME_AXIS_PASS_41014"
-L10_1 = "QUEST_START_41051"
-L11_1 = "CHALLENGE_FAIL_41053"
-L12_1 = "CHALLENGE_SUCCESS_41067"
-L13_1 = "TIME_AXIS_PASS_41079"
-L14_1 = "GROUP_LOAD_41080"
-L15_1 = "QUEST_START_41094"
-L16_1 = "QUEST_FINISH_41095"
-L17_1 = "QUEST_FINISH_41096"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L6_1[7] = L13_1
-L6_1[8] = L14_1
-L6_1[9] = L15_1
-L6_1[10] = L16_1
-L6_1[11] = L17_1
-L5_1.triggers = L6_1
-L6_1 = "rand_weight"
-L7_1 = 100
-L5_1[L6_1] = L7_1
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L7_1 = "rand_weight"
-L8_1 = 100
-L6_1[L7_1] = L8_1
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L7_1.triggers = L8_1
-L8_1 = "rand_weight"
-L9_1 = 100
-L7_1[L8_1] = L9_1
-L8_1 = {}
-L9_1 = {}
-L8_1.monsters = L9_1
-L9_1 = {}
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L8_1.triggers = L9_1
-L9_1 = "rand_weight"
-L10_1 = 100
-L8_1[L9_1] = L10_1
-L9_1 = {}
-L10_1 = {}
-L9_1.monsters = L10_1
-L10_1 = {}
-L9_1.gadgets = L10_1
-L10_1 = {}
-L9_1.regions = L10_1
-L10_1 = {}
-L9_1.triggers = L10_1
-L10_1 = "rand_weight"
-L11_1 = 100
-L9_1[L10_1] = L11_1
-L10_1 = {}
-L11_1 = {}
-L10_1.monsters = L11_1
-L11_1 = {}
-L10_1.gadgets = L11_1
-L11_1 = {}
-L10_1.regions = L11_1
-L11_1 = {}
-L10_1.triggers = L11_1
-L11_1 = "rand_weight"
-L12_1 = 100
-L10_1[L11_1] = L12_1
-L11_1 = {}
-L12_1 = {}
-L11_1.monsters = L12_1
-L12_1 = {}
-L11_1.gadgets = L12_1
-L12_1 = {}
-L11_1.regions = L12_1
-L12_1 = {}
-L11_1.triggers = L12_1
-L12_1 = "rand_weight"
-L13_1 = 100
-L11_1[L12_1] = L13_1
-L12_1 = {}
-L13_1 = {}
-L12_1.monsters = L13_1
-L13_1 = {}
-L12_1.gadgets = L13_1
-L13_1 = {}
-L12_1.regions = L13_1
-L13_1 = {}
-L12_1.triggers = L13_1
-L13_1 = "rand_weight"
-L14_1 = 100
-L12_1[L13_1] = L14_1
-L13_1 = {}
-L14_1 = {}
-L13_1.monsters = L14_1
-L14_1 = {}
-L13_1.gadgets = L14_1
-L14_1 = {}
-L13_1.regions = L14_1
-L14_1 = {}
-L15_1 = "TIME_AXIS_PASS_41052"
-L16_1 = "TIME_AXIS_PASS_41068"
-L17_1 = "TIME_AXIS_PASS_41069"
-L18_1 = "VARIABLE_CHANGE_41070"
-L19_1 = "TIME_AXIS_PASS_41071"
-L20_1 = "VARIABLE_CHANGE_41072"
-L21_1 = "VARIABLE_CHANGE_41073"
-L22_1 = "TIME_AXIS_PASS_41074"
-L23_1 = "VARIABLE_CHANGE_41075"
-L24_1 = "VARIABLE_CHANGE_41076"
-L25_1 = "TIME_AXIS_PASS_41077"
-L26_1 = "VARIABLE_CHANGE_41078"
-L14_1[1] = L15_1
-L14_1[2] = L16_1
-L14_1[3] = L17_1
-L14_1[4] = L18_1
-L14_1[5] = L19_1
-L14_1[6] = L20_1
-L14_1[7] = L21_1
-L14_1[8] = L22_1
-L14_1[9] = L23_1
-L14_1[10] = L24_1
-L14_1[11] = L25_1
-L14_1[12] = L26_1
-L13_1.triggers = L14_1
-L14_1 = "rand_weight"
-L15_1 = 100
-L13_1[L14_1] = L15_1
-L14_1 = {}
-L15_1 = {}
-L14_1.monsters = L15_1
-L15_1 = {}
-L14_1.gadgets = L15_1
-L15_1 = {}
-L14_1.regions = L15_1
-L15_1 = {}
-L16_1 = "QUEST_START_41012"
-L17_1 = "TIME_AXIS_PASS_41014"
-L18_1 = "TIME_AXIS_PASS_41079"
-L15_1[1] = L16_1
-L15_1[2] = L17_1
-L15_1[3] = L18_1
-L14_1.triggers = L15_1
-L15_1 = "rand_weight"
-L16_1 = 100
-L14_1[L15_1] = L16_1
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-_ENV[L3_1] = L4_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133105043
-  L4_2.suite = 6
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = "StartPotTaunt"
-  L3_2 = "StartPotTaunt"
-  L4_2 = "Param1"
-  L3_2 = L3_2 .. L4_2
-  L4_2 = "StartPotTaunt"
-  L5_2 = "Param2"
-  L4_2 = L4_2 .. L5_2
-  L5_2 = "StartPotTaunt"
-  L6_2 = "Param3"
-  L5_2 = L5_2 .. L6_2
-  L6_2 = "StartPotTaunt"
-  L7_2 = "Param4"
-  L6_2 = L6_2 .. L7_2
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L3_2
-  L10_2 = 41006
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L4_2
-  L10_2 = 1
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L5_2
-  L10_2 = 0
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L6_2
-  L10_2 = 0
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.GetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L2_2
-  L10_2 = {}
-  L7_2 = L7_2(L8_2, L9_2, L10_2)
-  L8_2 = ScriptLib
-  L8_2 = L8_2.SetGroupTempValue
-  L9_2 = A0_2
-  L10_2 = L2_2
-  L11_2 = L7_2 + 1
-  L12_2 = {}
-  L8_2(L9_2, L10_2, L11_2, L12_2)
-  L8_2 = "StartPotTaunt"
-  L9_2 = "StartPotTaunt"
-  L10_2 = "Param1"
-  L9_2 = L9_2 .. L10_2
-  L10_2 = "StartPotTaunt"
-  L11_2 = "Param2"
-  L10_2 = L10_2 .. L11_2
-  L11_2 = "StartPotTaunt"
-  L12_2 = "Param3"
-  L11_2 = L11_2 .. L12_2
-  L12_2 = "StartPotTaunt"
-  L13_2 = "Param4"
-  L12_2 = L12_2 .. L13_2
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L9_2
-  L16_2 = 41004
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L10_2
-  L16_2 = 0
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L11_2
-  L16_2 = 0
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L12_2
-  L16_2 = 0
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.GetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L8_2
-  L16_2 = {}
-  L13_2 = L13_2(L14_2, L15_2, L16_2)
-  L14_2 = ScriptLib
-  L14_2 = L14_2.SetGroupTempValue
-  L15_2 = A0_2
-  L16_2 = L8_2
-  L17_2 = L13_2 + 1
-  L18_2 = {}
-  L14_2(L15_2, L16_2, L17_2, L18_2)
-  L14_2 = 0
-  return L14_2
+-- 基础信息
+local base_info = {
+	group_id = 133105041
+}
+
+-- DEFS_MISCS
+local defs = {
+    ButtonLeftConfig = 41001,
+    ButtonRightConfig = 41002,
+    StoveConfig = 41003,
+    PotConfigIDA =41004,
+    PotConfigIDB =41005,
+    PotConfigIDC =41006,
+    targetColdTime = 14,
+    targetHeatTime = 14,
+    BeHitByFireTemp = 5,
+    BeHitByIceWaterTemp = -5,
+    SecondTempChange = { 7, -3}, -- 每秒对应上升或下降的温度变化
+    StartTemp = {40,50,65},      -- ABC三壶的初始温度
+    PlatFormRoute ={             -- 定义各个Route的功能，只需对应Log修改数据即可
+        [310500138] = {curPos = 2,reachPos = 2,tempDirs = {2,1,2},log = "从中间移动到中间，在中间徘徊"},
+        [310500139] = {curPos = 1,reachPos = 2,tempDirs = {2,1,2},log = "从左边移动到中间"},
+        [310500140] = {curPos = 2,reachPos = 3,tempDirs = {2,2,1},log = "从中间移动到右边"},
+        [310500141] = {curPos = 3,reachPos = 2,tempDirs = {2,1,2},log = "从右边移动到中间"},
+        [310500142] = {curPos = 2,reachPos = 1,tempDirs = {1,2,2},log = "从中间移动到左边"}
+    }
+}
+
+local challengeParam = {
+    90, -- Time
+    72, -- 72//EVENT_TIME_AXIS_PASS
+    666,-- TAG
+    1   -- 触发次数
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	-- 左按钮
+	[41001] = { config_id = 41001, gadget_id = 70310079, pos = { x = 1098.377, y = 409.811, z = -704.127 }, rot = { x = 4.608, y = 359.094, z = 8.783 }, level = 30, area_id = 10 },
+	-- 右按钮
+	[41002] = { config_id = 41002, gadget_id = 70310079, pos = { x = 1095.938, y = 409.382, z = -704.266 }, rot = { x = 352.870, y = 177.885, z = 349.463 }, level = 30, area_id = 10 },
+	-- 火炉
+	[41003] = { config_id = 41003, gadget_id = 70310080, pos = { x = 1097.081, y = 411.084, z = -710.290 }, rot = { x = 0.273, y = 183.382, z = 0.016 }, level = 30, route_id = 310500138, area_id = 10 },
+	-- 锅A左
+	[41004] = { config_id = 41004, gadget_id = 70310078, pos = { x = 1100.605, y = 412.338, z = -709.466 }, rot = { x = 0.000, y = 338.226, z = 0.000 }, level = 30, server_global_value_config = { ["SGV_Thermometer_Value"]= 40,["SGV_Thermometer_SafeFrom"]= 0.1,["SGV_Thermometer_SafeTo"]= 0.7,["SGV_Is_Taunting"] = 0}, area_id = 10 },
+	-- 锅B中
+	[41005] = { config_id = 41005, gadget_id = 70310078, pos = { x = 1097.130, y = 412.397, z = -710.293 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, server_global_value_config = { ["SGV_Thermometer_Value"]= 50,["SGV_Thermometer_SafeFrom"]= 0.3,["SGV_Thermometer_SafeTo"]= 0.9,["SGV_Is_Taunting"] = 0}, area_id = 10 },
+	-- 锅C右
+	[41006] = { config_id = 41006, gadget_id = 70310078, pos = { x = 1093.612, y = 412.338, z = -709.466 }, rot = { x = 0.000, y = 29.000, z = 0.000 }, level = 30, server_global_value_config = { ["SGV_Thermometer_Value"]= 65,["SGV_Thermometer_SafeFrom"]= 0.2,["SGV_Thermometer_SafeTo"]= 0.8,["SGV_Is_Taunting"] = 0}, area_id = 10 },
+	[41050] = { config_id = 41050, gadget_id = 70310084, pos = { x = 1093.599, y = 409.818, z = -709.478 }, rot = { x = 4.707, y = 26.909, z = 14.102 }, level = 1, area_id = 10 },
+	[41081] = { config_id = 41081, gadget_id = 70310084, pos = { x = 1097.203, y = 410.376, z = -710.228 }, rot = { x = 6.206, y = 0.339, z = 6.242 }, level = 1, area_id = 10 },
+	[41082] = { config_id = 41082, gadget_id = 70310084, pos = { x = 1100.617, y = 410.678, z = -709.466 }, rot = { x = 3.266, y = 340.593, z = 9.186 }, level = 1, area_id = 10 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 当挑战开始60s时召唤第二波怪物
+	{ config_id = 1041007, name = "TIME_AXIS_PASS_41007", event = EventType.EVENT_TIME_AXIS_PASS, source = "monstercreate3", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41007", trigger_count = 0 },
+	-- 开启挑战时开始时间轴
+	{ config_id = 1041012, name = "QUEST_START_41012", event = EventType.EVENT_QUEST_START, source = "7050004", condition = "condition_EVENT_QUEST_START_41012", action = "action_EVENT_QUEST_START_41012", trigger_count = 0 },
+	-- 当挑战开始20s时召唤第一波怪物
+	{ config_id = 1041014, name = "TIME_AXIS_PASS_41014", event = EventType.EVENT_TIME_AXIS_PASS, source = "monstercreate1", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41014", trigger_count = 0 },
+	-- 任务开始加载挑战
+	{ config_id = 1041051, name = "QUEST_START_41051", event = EventType.EVENT_QUEST_START, source = "7050004", condition = "", action = "action_EVENT_QUEST_START_41051", trigger_count = 0 },
+	-- A锅降温时间轴
+	{ config_id = 1041052, name = "TIME_AXIS_PASS_41052", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenADOWN", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41052", trigger_count = 0 },
+	-- 监听挑战失败，1）刷新Group至Suite1；2）重置物件状态；3）移除全部的计时器；
+	{ config_id = 1041053, name = "CHALLENGE_FAIL_41053", event = EventType.EVENT_CHALLENGE_FAIL, source = "888", condition = "", action = "action_EVENT_CHALLENGE_FAIL_41053", trigger_count = 0 },
+	-- 监听挑战成功，1）刷新Group至Suite1；2）重置物件状态；3）移除全部的计时器；
+	{ config_id = 1041067, name = "CHALLENGE_SUCCESS_41067", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "888", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_41067", trigger_count = 0 },
+	-- B锅降温时间轴
+	{ config_id = 1041068, name = "TIME_AXIS_PASS_41068", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenBDOWN", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41068", trigger_count = 0 },
+	-- C锅降温时间轴
+	{ config_id = 1041069, name = "TIME_AXIS_PASS_41069", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenCDOWN", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41069", trigger_count = 0 },
+	-- A锅判定升温时创建时间轴
+	{ config_id = 1041070, name = "VARIABLE_CHANGE_41070", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_41070", action = "action_EVENT_VARIABLE_CHANGE_41070", trigger_count = 0 },
+	-- A锅升温时间轴
+	{ config_id = 1041071, name = "TIME_AXIS_PASS_41071", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenAUP", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41071", trigger_count = 0 },
+	-- A锅判定降温时启用降温轴暂停升温轴
+	{ config_id = 1041072, name = "VARIABLE_CHANGE_41072", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_41072", action = "action_EVENT_VARIABLE_CHANGE_41072", trigger_count = 0 },
+	-- B锅判定升温时创建时间轴
+	{ config_id = 1041073, name = "VARIABLE_CHANGE_41073", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_41073", action = "action_EVENT_VARIABLE_CHANGE_41073", trigger_count = 0 },
+	-- B锅升温时间轴
+	{ config_id = 1041074, name = "TIME_AXIS_PASS_41074", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenBUP", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41074", trigger_count = 0 },
+	-- B锅判定降温时启用降温轴暂停升温轴
+	{ config_id = 1041075, name = "VARIABLE_CHANGE_41075", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_41075", action = "action_EVENT_VARIABLE_CHANGE_41075", trigger_count = 0 },
+	-- C锅判定升温时创建时间轴
+	{ config_id = 1041076, name = "VARIABLE_CHANGE_41076", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_41076", action = "action_EVENT_VARIABLE_CHANGE_41076", trigger_count = 0 },
+	-- C锅升温时间轴
+	{ config_id = 1041077, name = "TIME_AXIS_PASS_41077", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenAUP", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41077", trigger_count = 0 },
+	-- C锅判定降温时启用降温轴暂停升温轴
+	{ config_id = 1041078, name = "VARIABLE_CHANGE_41078", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_41078", action = "action_EVENT_VARIABLE_CHANGE_41078", trigger_count = 0 },
+	-- 当挑战开始40s时召唤第二波怪物
+	{ config_id = 1041079, name = "TIME_AXIS_PASS_41079", event = EventType.EVENT_TIME_AXIS_PASS, source = "monstercreate2", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41079", trigger_count = 0 },
+	-- 确保加载怪物group为suite1
+	{ config_id = 1041080, name = "GROUP_LOAD_41080", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_41080", trigger_count = 0 },
+	-- 对话完成切901
+	{ config_id = 1041094, name = "QUEST_START_41094", event = EventType.EVENT_QUEST_START, source = "7050002", condition = "", action = "action_EVENT_QUEST_START_41094", trigger_count = 0 },
+	-- 对话结束切回来
+	{ config_id = 1041095, name = "QUEST_FINISH_41095", event = EventType.EVENT_QUEST_FINISH, source = "7050002", condition = "", action = "action_EVENT_QUEST_FINISH_41095", trigger_count = 0 },
+	-- 任务重置group
+	{ config_id = 1041096, name = "QUEST_FINISH_41096", event = EventType.EVENT_QUEST_FINISH, source = "7050006", condition = "", action = "action_EVENT_QUEST_FINISH_41096", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "ovenATemp", value = 40, no_refresh = false },
+	{ config_id = 2, name = "ovenBTemp", value = 50, no_refresh = false },
+	{ config_id = 3, name = "ovenCTemp", value = 65, no_refresh = false },
+	{ config_id = 4, name = "curPos", value = 2, no_refresh = false },
+	{ config_id = 5, name = "fireDirection", value = 0, no_refresh = false },
+	{ config_id = 6, name = "ovenATempDirection", value = 0, no_refresh = false },
+	{ config_id = 7, name = "ovenBTempDirection", value = 0, no_refresh = false },
+	{ config_id = 8, name = "ovenCTempDirection", value = 0, no_refresh = false },
+	{ config_id = 9, name = "start", value = 0, no_refresh = false },
+	{ config_id = 10, name = "fail", value = 0, no_refresh = true },
+	{ config_id = 11, name = "isRightBtnPressed", value = 0, no_refresh = false },
+	{ config_id = 12, name = "isLeftBtnPressed", value = 0, no_refresh = false },
+	{ config_id = 13, name = "startOrNot", value = 0, no_refresh = false }
+}
+
+-- 废弃数据
+garbages = {
+	triggers = {
+		{ config_id = 1041008, name = "GADGET_STATE_CHANGE_41008", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41008", action = "action_EVENT_GADGET_STATE_CHANGE_41008", trigger_count = 0 },
+		{ config_id = 1041009, name = "GADGET_STATE_CHANGE_41009", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41009", action = "action_EVENT_GADGET_STATE_CHANGE_41009", trigger_count = 0 },
+		{ config_id = 1041010, name = "GADGET_STATE_CHANGE_41010", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41010", action = "action_EVENT_GADGET_STATE_CHANGE_41010", trigger_count = 0 },
+		{ config_id = 1041011, name = "GADGET_STATE_CHANGE_41011", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41011", action = "action_EVENT_GADGET_STATE_CHANGE_41011", trigger_count = 0 },
+		{ config_id = 1041013, name = "PLATFORM_REACH_POINT_41013", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41013", action = "action_EVENT_PLATFORM_REACH_POINT_41013", trigger_count = 0 },
+		{ config_id = 1041015, name = "PLATFORM_REACH_POINT_41015", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41015", action = "action_EVENT_PLATFORM_REACH_POINT_41015", trigger_count = 0 },
+		{ config_id = 1041016, name = "PLATFORM_REACH_POINT_41016", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41016", action = "action_EVENT_PLATFORM_REACH_POINT_41016", trigger_count = 0 },
+		{ config_id = 1041017, name = "PLATFORM_REACH_POINT_41017", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41017", action = "action_EVENT_PLATFORM_REACH_POINT_41017", trigger_count = 0 },
+		{ config_id = 1041018, name = "PLATFORM_REACH_POINT_41018", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41018", action = "action_EVENT_PLATFORM_REACH_POINT_41018", trigger_count = 0 },
+		{ config_id = 1041019, name = "GADGET_STATE_CHANGE_41019", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41019", action = "action_EVENT_GADGET_STATE_CHANGE_41019", trigger_count = 0 },
+		{ config_id = 1041020, name = "GADGET_STATE_CHANGE_41020", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41020", action = "action_EVENT_GADGET_STATE_CHANGE_41020", trigger_count = 0 },
+		{ config_id = 1041021, name = "GADGET_STATE_CHANGE_41021", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41021", action = "action_EVENT_GADGET_STATE_CHANGE_41021", trigger_count = 0 },
+		{ config_id = 1041022, name = "GADGET_STATE_CHANGE_41022", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41022", action = "action_EVENT_GADGET_STATE_CHANGE_41022", trigger_count = 0 },
+		{ config_id = 1041023, name = "PLATFORM_REACH_POINT_41023", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41023", action = "action_EVENT_PLATFORM_REACH_POINT_41023", trigger_count = 0 },
+		{ config_id = 1041024, name = "PLATFORM_REACH_POINT_41024", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41024", action = "action_EVENT_PLATFORM_REACH_POINT_41024", trigger_count = 0 },
+		{ config_id = 1041025, name = "PLATFORM_REACH_POINT_41025", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41025", action = "action_EVENT_PLATFORM_REACH_POINT_41025", trigger_count = 0 },
+		{ config_id = 1041026, name = "VARIABLE_CHANGE_41026", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenATempDirection", condition = "condition_EVENT_VARIABLE_CHANGE_41026", action = "action_EVENT_VARIABLE_CHANGE_41026", trigger_count = 0 },
+		{ config_id = 1041027, name = "TIMER_EVENT_41027", event = EventType.EVENT_TIMER_EVENT, source = "ovenATempRise", condition = "condition_EVENT_TIMER_EVENT_41027", action = "action_EVENT_TIMER_EVENT_41027", trigger_count = 0 },
+		{ config_id = 1041028, name = "VARIABLE_CHANGE_41028", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenATemp", condition = "condition_EVENT_VARIABLE_CHANGE_41028", action = "action_EVENT_VARIABLE_CHANGE_41028", trigger_count = 0 },
+		{ config_id = 1041029, name = "TIMER_EVENT_41029", event = EventType.EVENT_TIMER_EVENT, source = "ovenATempOverHeat", condition = "", action = "action_EVENT_TIMER_EVENT_41029", trigger_count = 0 },
+		{ config_id = 1041030, name = "VARIABLE_CHANGE_41030", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenATempDirection", condition = "condition_EVENT_VARIABLE_CHANGE_41030", action = "action_EVENT_VARIABLE_CHANGE_41030", trigger_count = 0 },
+		{ config_id = 1041031, name = "TIMER_EVENT_41031", event = EventType.EVENT_TIMER_EVENT, source = "ovenATempFall", condition = "condition_EVENT_TIMER_EVENT_41031", action = "action_EVENT_TIMER_EVENT_41031", trigger_count = 0 },
+		{ config_id = 1041032, name = "VARIABLE_CHANGE_41032", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenATemp", condition = "condition_EVENT_VARIABLE_CHANGE_41032", action = "action_EVENT_VARIABLE_CHANGE_41032", trigger_count = 0 },
+		{ config_id = 1041033, name = "TIMER_EVENT_41033", event = EventType.EVENT_TIMER_EVENT, source = "ovenATempOverCool", condition = "", action = "action_EVENT_TIMER_EVENT_41033", trigger_count = 0 },
+		{ config_id = 1041034, name = "VARIABLE_CHANGE_41034", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenBTempDirection", condition = "condition_EVENT_VARIABLE_CHANGE_41034", action = "action_EVENT_VARIABLE_CHANGE_41034", trigger_count = 0 },
+		{ config_id = 1041035, name = "TIMER_EVENT_41035", event = EventType.EVENT_TIMER_EVENT, source = "ovenBTempRise", condition = "condition_EVENT_TIMER_EVENT_41035", action = "action_EVENT_TIMER_EVENT_41035", trigger_count = 0 },
+		{ config_id = 1041036, name = "VARIABLE_CHANGE_41036", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenBTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41036", action = "action_EVENT_VARIABLE_CHANGE_41036", trigger_count = 0 },
+		{ config_id = 1041037, name = "TIMER_EVENT_41037", event = EventType.EVENT_TIMER_EVENT, source = "ovenBTempOverHeat", condition = "", action = "action_EVENT_TIMER_EVENT_41037", trigger_count = 0 },
+		{ config_id = 1041038, name = "VARIABLE_CHANGE_41038", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenBTempDirection", condition = "condition_EVENT_VARIABLE_CHANGE_41038", action = "action_EVENT_VARIABLE_CHANGE_41038", trigger_count = 0 },
+		{ config_id = 1041039, name = "TIMER_EVENT_41039", event = EventType.EVENT_TIMER_EVENT, source = "ovenBTempFall", condition = "condition_EVENT_TIMER_EVENT_41039", action = "action_EVENT_TIMER_EVENT_41039", trigger_count = 0 },
+		{ config_id = 1041040, name = "VARIABLE_CHANGE_41040", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenBTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41040", action = "action_EVENT_VARIABLE_CHANGE_41040", trigger_count = 0 },
+		{ config_id = 1041041, name = "TIMER_EVENT_41041", event = EventType.EVENT_TIMER_EVENT, source = "ovenBTempOverCool", condition = "", action = "action_EVENT_TIMER_EVENT_41041", trigger_count = 0 },
+		{ config_id = 1041042, name = "VARIABLE_CHANGE_41042", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenCTempDirection", condition = "condition_EVENT_VARIABLE_CHANGE_41042", action = "action_EVENT_VARIABLE_CHANGE_41042", trigger_count = 0 },
+		{ config_id = 1041043, name = "TIMER_EVENT_41043", event = EventType.EVENT_TIMER_EVENT, source = "ovenCTempRise", condition = "condition_EVENT_TIMER_EVENT_41043", action = "action_EVENT_TIMER_EVENT_41043", trigger_count = 0 },
+		{ config_id = 1041044, name = "VARIABLE_CHANGE_41044", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenCTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41044", action = "action_EVENT_VARIABLE_CHANGE_41044", trigger_count = 0 },
+		{ config_id = 1041045, name = "TIMER_EVENT_41045", event = EventType.EVENT_TIMER_EVENT, source = "ovenCTempOverHeat", condition = "", action = "action_EVENT_TIMER_EVENT_41045", trigger_count = 0 },
+		{ config_id = 1041046, name = "VARIABLE_CHANGE_41046", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenCTempDirection", condition = "condition_EVENT_VARIABLE_CHANGE_41046", action = "action_EVENT_VARIABLE_CHANGE_41046", trigger_count = 0 },
+		{ config_id = 1041047, name = "TIMER_EVENT_41047", event = EventType.EVENT_TIMER_EVENT, source = "ovenCTempFall", condition = "condition_EVENT_TIMER_EVENT_41047", action = "action_EVENT_TIMER_EVENT_41047", trigger_count = 0 },
+		{ config_id = 1041048, name = "VARIABLE_CHANGE_41048", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenCTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41048", action = "action_EVENT_VARIABLE_CHANGE_41048", trigger_count = 0 },
+		{ config_id = 1041049, name = "TIMER_EVENT_41049", event = EventType.EVENT_TIMER_EVENT, source = "ovenCTempOverCool", condition = "", action = "action_EVENT_TIMER_EVENT_41049", trigger_count = 0 },
+		{ config_id = 1041054, name = "VARIABLE_CHANGE_41054", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenATemp", condition = "condition_EVENT_VARIABLE_CHANGE_41054", action = "action_EVENT_VARIABLE_CHANGE_41054", trigger_count = 0 },
+		{ config_id = 1041055, name = "VARIABLE_CHANGE_41055", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenBTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41055", action = "action_EVENT_VARIABLE_CHANGE_41055", trigger_count = 0 },
+		{ config_id = 1041056, name = "VARIABLE_CHANGE_41056", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenCTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41056", action = "action_EVENT_VARIABLE_CHANGE_41056", trigger_count = 0 },
+		{ config_id = 1041057, name = "VARIABLE_CHANGE_41057", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenATemp", condition = "condition_EVENT_VARIABLE_CHANGE_41057", action = "action_EVENT_VARIABLE_CHANGE_41057", trigger_count = 0 },
+		{ config_id = 1041058, name = "VARIABLE_CHANGE_41058", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenBTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41058", action = "action_EVENT_VARIABLE_CHANGE_41058", trigger_count = 0 },
+		{ config_id = 1041059, name = "VARIABLE_CHANGE_41059", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenCTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41059", action = "action_EVENT_VARIABLE_CHANGE_41059", trigger_count = 0 },
+		{ config_id = 1041060, name = "VARIABLE_CHANGE_41060", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenATemp", condition = "condition_EVENT_VARIABLE_CHANGE_41060", action = "action_EVENT_VARIABLE_CHANGE_41060", trigger_count = 0 },
+		{ config_id = 1041061, name = "VARIABLE_CHANGE_41061", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenBTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41061", action = "action_EVENT_VARIABLE_CHANGE_41061", trigger_count = 0 },
+		{ config_id = 1041062, name = "VARIABLE_CHANGE_41062", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenCTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41062", action = "action_EVENT_VARIABLE_CHANGE_41062", trigger_count = 0 },
+		{ config_id = 1041063, name = "TIMER_EVENT_41063", event = EventType.EVENT_TIMER_EVENT, source = "challengeTimer", condition = "", action = "", trigger_count = 0, tag = "666" },
+		{ config_id = 1041064, name = "GADGET_STATE_CHANGE_41064", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41064", action = "action_EVENT_GADGET_STATE_CHANGE_41064", trigger_count = 0 },
+		{ config_id = 1041065, name = "PLATFORM_REACH_POINT_41065", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41065", action = "action_EVENT_PLATFORM_REACH_POINT_41065", trigger_count = 0 },
+		{ config_id = 1041066, name = "PLATFORM_REACH_POINT_41066", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41066", action = "action_EVENT_PLATFORM_REACH_POINT_41066", trigger_count = 0 },
+		{ config_id = 1041083, name = "GADGET_STATE_CHANGE_41083", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41083", action = "action_EVENT_GADGET_STATE_CHANGE_41083", trigger_count = 0 },
+		{ config_id = 1041084, name = "GADGET_STATE_CHANGE_41084", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41084", action = "action_EVENT_GADGET_STATE_CHANGE_41084", trigger_count = 0 },
+		{ config_id = 1041085, name = "GADGET_STATE_CHANGE_41085", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41085", action = "action_EVENT_GADGET_STATE_CHANGE_41085", trigger_count = 0 },
+		{ config_id = 1041086, name = "GADGET_STATE_CHANGE_41086", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41086", action = "action_EVENT_GADGET_STATE_CHANGE_41086", trigger_count = 0 },
+		{ config_id = 1041087, name = "GADGET_STATE_CHANGE_41087", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41087", action = "action_EVENT_GADGET_STATE_CHANGE_41087", trigger_count = 0 },
+		{ config_id = 1041088, name = "VARIABLE_CHANGE_41088", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenATemp", condition = "condition_EVENT_VARIABLE_CHANGE_41088", action = "action_EVENT_VARIABLE_CHANGE_41088", trigger_count = 0 },
+		{ config_id = 1041089, name = "VARIABLE_CHANGE_41089", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenATemp", condition = "condition_EVENT_VARIABLE_CHANGE_41089", action = "action_EVENT_VARIABLE_CHANGE_41089", trigger_count = 0 },
+		{ config_id = 1041090, name = "VARIABLE_CHANGE_41090", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenBTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41090", action = "action_EVENT_VARIABLE_CHANGE_41090", trigger_count = 0 },
+		{ config_id = 1041091, name = "VARIABLE_CHANGE_41091", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenBTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41091", action = "action_EVENT_VARIABLE_CHANGE_41091", trigger_count = 0 },
+		{ config_id = 1041092, name = "VARIABLE_CHANGE_41092", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenCTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41092", action = "action_EVENT_VARIABLE_CHANGE_41092", trigger_count = 0 },
+		{ config_id = 1041093, name = "VARIABLE_CHANGE_41093", event = EventType.EVENT_VARIABLE_CHANGE, source = "ovenCTemp", condition = "condition_EVENT_VARIABLE_CHANGE_41093", action = "action_EVENT_VARIABLE_CHANGE_41093", trigger_count = 0 },
+		{ config_id = 1041097, name = "GADGET_STATE_CHANGE_41097", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41097", action = "action_EVENT_GADGET_STATE_CHANGE_41097", trigger_count = 0 },
+		{ config_id = 1041098, name = "GADGET_STATE_CHANGE_41098", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41098", action = "action_EVENT_GADGET_STATE_CHANGE_41098", trigger_count = 0 },
+		{ config_id = 1041099, name = "GADGET_STATE_CHANGE_41099", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41099", action = "action_EVENT_GADGET_STATE_CHANGE_41099", trigger_count = 0 },
+		{ config_id = 1041100, name = "GADGET_STATE_CHANGE_41100", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41100", action = "action_EVENT_GADGET_STATE_CHANGE_41100", trigger_count = 0 },
+		{ config_id = 1041101, name = "PLATFORM_REACH_POINT_41101", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41101", action = "action_EVENT_PLATFORM_REACH_POINT_41101", trigger_count = 0 },
+		{ config_id = 1041102, name = "PLATFORM_REACH_POINT_41102", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_41102", action = "action_EVENT_PLATFORM_REACH_POINT_41102", trigger_count = 0 },
+		{ config_id = 1041103, name = "TIME_AXIS_PASS_41103", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenATempRise", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41103", trigger_count = 0 },
+		{ config_id = 1041104, name = "TIME_AXIS_PASS_41104", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenATempFall", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41104", trigger_count = 0 },
+		{ config_id = 1041105, name = "TIME_AXIS_PASS_41105", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenBTempRise", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41105", trigger_count = 0 },
+		{ config_id = 1041106, name = "TIME_AXIS_PASS_41106", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenBTempFall", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41106", trigger_count = 0 },
+		{ config_id = 1041107, name = "TIME_AXIS_PASS_41107", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenCTempRise", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41107", trigger_count = 0 },
+		{ config_id = 1041108, name = "TIME_AXIS_PASS_41108", event = EventType.EVENT_TIME_AXIS_PASS, source = "ovenCTempFall", condition = "", action = "action_EVENT_TIME_AXIS_PASS_41108", trigger_count = 0 },
+		{ config_id = 1041109, name = "GADGET_STATE_CHANGE_41109", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41109", action = "action_EVENT_GADGET_STATE_CHANGE_41109", trigger_count = 0 },
+		{ config_id = 1041110, name = "GADGET_STATE_CHANGE_41110", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41110", action = "action_EVENT_GADGET_STATE_CHANGE_41110", trigger_count = 0 },
+		{ config_id = 1041111, name = "GADGET_STATE_CHANGE_41111", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41111", action = "action_EVENT_GADGET_STATE_CHANGE_41111", trigger_count = 0 },
+		{ config_id = 1041112, name = "GADGET_STATE_CHANGE_41112", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_41112", action = "action_EVENT_GADGET_STATE_CHANGE_41112", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = [默认加载的entities],
+		monsters = { },
+		gadgets = { 41001, 41002, 41003, 41004, 41005, 41006, 41050, 41081, 41082 },
+		regions = { },
+		triggers = { "TIME_AXIS_PASS_41007", "QUEST_START_41012", "TIME_AXIS_PASS_41014", "QUEST_START_41051", "CHALLENGE_FAIL_41053", "CHALLENGE_SUCCESS_41067", "TIME_AXIS_PASS_41079", "GROUP_LOAD_41080", "QUEST_START_41094", "QUEST_FINISH_41095", "QUEST_FINISH_41096" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = [踩踏按钮后改变火炉的移动方向的变量],
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = [火炉每到达一个point时判明下一目的地],
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = [锅的升温和降温逻辑],
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = [锅A的升降温逻辑],
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 6,
+		-- description = [锅B的升降温逻辑],
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 7,
+		-- description = [锅C的升降温逻辑],
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 8,
+		-- description = [根据锅的温度切换锅的物件状态],
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 9,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "TIME_AXIS_PASS_41052", "TIME_AXIS_PASS_41068", "TIME_AXIS_PASS_41069", "VARIABLE_CHANGE_41070", "TIME_AXIS_PASS_41071", "VARIABLE_CHANGE_41072", "VARIABLE_CHANGE_41073", "TIME_AXIS_PASS_41074", "VARIABLE_CHANGE_41075", "VARIABLE_CHANGE_41076", "TIME_AXIS_PASS_41077", "VARIABLE_CHANGE_41078" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 10,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "QUEST_START_41012", "TIME_AXIS_PASS_41014", "TIME_AXIS_PASS_41079" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_41007(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133105043, suite = 6 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 发起一个针对Td的LuaFunction "StartPotTaunt" 的请求
+	local functionKey = "StartPotTaunt"
+	local functionParam1 = "StartPotTaunt" .. "Param1"
+	local functionParam2 = "StartPotTaunt" .. "Param2"
+	local functionParam3 = "StartPotTaunt" .. "Param3"
+	local functionParam4 = "StartPotTaunt" .. "Param4"
+	
+	ScriptLib.SetGroupTempValue(context, functionParam1, 41006, {})
+	ScriptLib.SetGroupTempValue(context, functionParam2, 1, {})
+	ScriptLib.SetGroupTempValue(context, functionParam3, 0, {})
+	ScriptLib.SetGroupTempValue(context, functionParam4, 0, {})
+	local currentValue = ScriptLib.GetGroupTempValue(context,functionKey,{})
+	ScriptLib.SetGroupTempValue(context, functionKey, currentValue+1, {})
+	
+	-- 发起一个针对Td的LuaFunction "StartPotTaunt" 的请求
+	local functionKey = "StartPotTaunt"
+	local functionParam1 = "StartPotTaunt" .. "Param1"
+	local functionParam2 = "StartPotTaunt" .. "Param2"
+	local functionParam3 = "StartPotTaunt" .. "Param3"
+	local functionParam4 = "StartPotTaunt" .. "Param4"
+	
+	ScriptLib.SetGroupTempValue(context, functionParam1, 41004, {})
+	ScriptLib.SetGroupTempValue(context, functionParam2, 0, {})
+	ScriptLib.SetGroupTempValue(context, functionParam3, 0, {})
+	ScriptLib.SetGroupTempValue(context, functionParam4, 0, {})
+	local currentValue = ScriptLib.GetGroupTempValue(context,functionKey,{})
+	ScriptLib.SetGroupTempValue(context, functionKey, currentValue+1, {})
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_41007 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "fail"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 5 <= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_QUEST_START_41012(context, evt)
+	-- 判断变量"fail"为5
+	if ScriptLib.GetGroupVariableValue(context, "fail") >= 5 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_QUEST_START_41012 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "monstercreate1"
-  L5_2 = {}
-  L6_2 = 40
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "monstercreate2"
-  L5_2 = {}
-  L6_2 = 20
-  L7_2 = 60
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "monstercreate3"
-  L5_2 = {}
-  L6_2 = 75
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_41012(context, evt)
+	-- 创建标识为"monstercreate1"，时间节点为{40}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "monstercreate1", {40}, false)
+	
+	
+	-- 创建标识为"monstercreate2"，时间节点为{20,60}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "monstercreate2", {20,60}, false)
+	
+	
+	-- 创建标识为"monstercreate3"，时间节点为{75}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "monstercreate3", {75}, false)
+	
+	
+	return 0
 end
-action_EVENT_QUEST_START_41012 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133105043
-  L4_2.exclude_prev = true
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randRest"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = "StartPotTaunt"
-  L3_2 = "StartPotTaunt"
-  L4_2 = "Param1"
-  L3_2 = L3_2 .. L4_2
-  L4_2 = "StartPotTaunt"
-  L5_2 = "Param2"
-  L4_2 = L4_2 .. L5_2
-  L5_2 = "StartPotTaunt"
-  L6_2 = "Param3"
-  L5_2 = L5_2 .. L6_2
-  L6_2 = "StartPotTaunt"
-  L7_2 = "Param4"
-  L6_2 = L6_2 .. L7_2
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L3_2
-  L10_2 = 41004
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L4_2
-  L10_2 = 1
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L5_2
-  L10_2 = 0
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L6_2
-  L10_2 = 0
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.GetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L2_2
-  L10_2 = {}
-  L7_2 = L7_2(L8_2, L9_2, L10_2)
-  L8_2 = ScriptLib
-  L8_2 = L8_2.SetGroupTempValue
-  L9_2 = A0_2
-  L10_2 = L2_2
-  L11_2 = L7_2 + 1
-  L12_2 = {}
-  L8_2(L9_2, L10_2, L11_2, L12_2)
-  L8_2 = "StartPotTaunt"
-  L9_2 = "StartPotTaunt"
-  L10_2 = "Param1"
-  L9_2 = L9_2 .. L10_2
-  L10_2 = "StartPotTaunt"
-  L11_2 = "Param2"
-  L10_2 = L10_2 .. L11_2
-  L11_2 = "StartPotTaunt"
-  L12_2 = "Param3"
-  L11_2 = L11_2 .. L12_2
-  L12_2 = "StartPotTaunt"
-  L13_2 = "Param4"
-  L12_2 = L12_2 .. L13_2
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L9_2
-  L16_2 = 41006
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L10_2
-  L16_2 = 0
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L11_2
-  L16_2 = 0
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L12_2
-  L16_2 = 0
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.GetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L8_2
-  L16_2 = {}
-  L13_2 = L13_2(L14_2, L15_2, L16_2)
-  L14_2 = ScriptLib
-  L14_2 = L14_2.SetGroupTempValue
-  L15_2 = A0_2
-  L16_2 = L8_2
-  L17_2 = L13_2 + 1
-  L18_2 = {}
-  L14_2(L15_2, L16_2, L17_2, L18_2)
-  L14_2 = 0
-  return L14_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_41014(context, evt)
+		-- 重新生成指定group，排除之前选择的suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133105043, exclude_prev = true }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randRest")
+			return -1
+		end
+	
+	-- 发起一个针对Td的LuaFunction "StartPotTaunt" 的请求
+	local functionKey = "StartPotTaunt"
+	local functionParam1 = "StartPotTaunt" .. "Param1"
+	local functionParam2 = "StartPotTaunt" .. "Param2"
+	local functionParam3 = "StartPotTaunt" .. "Param3"
+	local functionParam4 = "StartPotTaunt" .. "Param4"
+	
+	ScriptLib.SetGroupTempValue(context, functionParam1, 41004, {})
+	ScriptLib.SetGroupTempValue(context, functionParam2, 1, {})
+	ScriptLib.SetGroupTempValue(context, functionParam3, 0, {})
+	ScriptLib.SetGroupTempValue(context, functionParam4, 0, {})
+	local currentValue = ScriptLib.GetGroupTempValue(context,functionKey,{})
+	ScriptLib.SetGroupTempValue(context, functionKey, currentValue+1, {})
+	
+	-- 发起一个针对Td的LuaFunction "StartPotTaunt" 的请求
+	local functionKey = "StartPotTaunt"
+	local functionParam1 = "StartPotTaunt" .. "Param1"
+	local functionParam2 = "StartPotTaunt" .. "Param2"
+	local functionParam3 = "StartPotTaunt" .. "Param3"
+	local functionParam4 = "StartPotTaunt" .. "Param4"
+	
+	ScriptLib.SetGroupTempValue(context, functionParam1, 41006, {})
+	ScriptLib.SetGroupTempValue(context, functionParam2, 0, {})
+	ScriptLib.SetGroupTempValue(context, functionParam3, 0, {})
+	ScriptLib.SetGroupTempValue(context, functionParam4, 0, {})
+	local currentValue = ScriptLib.GetGroupTempValue(context,functionKey,{})
+	ScriptLib.SetGroupTempValue(context, functionKey, currentValue+1, {})
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_41014 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "startOrNot"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_41051(context, evt)
+	-- 将本组内变量名为 "startOrNot" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "startOrNot", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_41051 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenATemp"
-  L5_2 = -1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_41052(context, evt)
+	-- 针对当前group内变量名为 "ovenATemp" 的变量，进行修改，变化值为 -1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ovenATemp", -1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_41052 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7050004fail"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 70500051
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "monstercreate1"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "monstercreate2"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "monstercreate3"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "fail"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133105043
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_41053(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7050004fail") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 调用提示id为 70500051 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 70500051) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 停止标识为"monstercreate1"的时间轴
+	ScriptLib.EndTimeAxis(context, "monstercreate1")
+	
+	
+	-- 停止标识为"monstercreate2"的时间轴
+	ScriptLib.EndTimeAxis(context, "monstercreate2")
+	
+	
+	-- 停止标识为"monstercreate3"的时间轴
+	ScriptLib.EndTimeAxis(context, "monstercreate3")
+	
+	
+	-- 针对当前group内变量名为 "fail" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "fail", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133105043, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_41053 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7050004finish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 70500041
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133105043
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "monstercreate1"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "monstercreate2"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "monstercreate3"
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_41067(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7050004finish") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 调用提示id为 70500041 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 70500041) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133105043, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 停止标识为"monstercreate1"的时间轴
+	ScriptLib.EndTimeAxis(context, "monstercreate1")
+	
+	
+	-- 停止标识为"monstercreate2"的时间轴
+	ScriptLib.EndTimeAxis(context, "monstercreate2")
+	
+	
+	-- 停止标识为"monstercreate3"的时间轴
+	ScriptLib.EndTimeAxis(context, "monstercreate3")
+	
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_41067 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenBTemp"
-  L5_2 = -1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_41068(context, evt)
+	-- 针对当前group内变量名为 "ovenBTemp" 的变量，进行修改，变化值为 -1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ovenBTemp", -1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_41068 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenCTemp"
-  L5_2 = -1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_41069(context, evt)
+	-- 针对当前group内变量名为 "ovenCTemp" 的变量，进行修改，变化值为 -1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ovenCTemp", -1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_41069 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenATempDirection"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_41070(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"ovenATempDirection"为1
+	if ScriptLib.GetGroupVariableValue(context, "ovenATempDirection") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_41070 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "ovenAUP"
-  L5_2 = {}
-  L6_2 = 1
-  L5_2[1] = L6_2
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_41070(context, evt)
+	-- 创建标识为"ovenAUP"，时间节点为{1}的时间轴，true用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "ovenAUP", {1}, true)
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_41070 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenATemp"
-  L5_2 = 3
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_41071(context, evt)
+	-- 针对当前group内变量名为 "ovenATemp" 的变量，进行修改，变化值为 3
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ovenATemp", 3) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_41071 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenATempDirection"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_41072(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"ovenATempDirection"为2
+	if ScriptLib.GetGroupVariableValue(context, "ovenATempDirection") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_41072 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ContinueTimeAxis
-  L3_2 = A0_2
-  L4_2 = "ovenADOWN"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PauseTimeAxis
-  L3_2 = A0_2
-  L4_2 = "ovenAUP"
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_41072(context, evt)
+	-- 重启标识为"ovenADOWN"的时间轴
+	ScriptLib.ContinueTimeAxis(context, "ovenADOWN")
+	
+	
+	-- 暂停标识为"ovenAUP"的时间轴
+	ScriptLib.PauseTimeAxis(context, "ovenAUP")
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_41072 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenBTempDirection"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_41073(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"ovenBTempDirection"为1
+	if ScriptLib.GetGroupVariableValue(context, "ovenBTempDirection") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_41073 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PauseTimeAxis
-  L3_2 = A0_2
-  L4_2 = "ovenBDOWN"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "ovenBUP"
-  L5_2 = {}
-  L6_2 = 1
-  L5_2[1] = L6_2
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_41073(context, evt)
+	-- 暂停标识为"ovenBDOWN"的时间轴
+	ScriptLib.PauseTimeAxis(context, "ovenBDOWN")
+	
+	
+	-- 创建标识为"ovenBUP"，时间节点为{1}的时间轴，true用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "ovenBUP", {1}, true)
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_41073 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenBTemp"
-  L5_2 = 3
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_41074(context, evt)
+	-- 针对当前group内变量名为 "ovenBTemp" 的变量，进行修改，变化值为 3
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ovenBTemp", 3) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_41074 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenBTempDirection"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_41075(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"ovenBTempDirection"为2
+	if ScriptLib.GetGroupVariableValue(context, "ovenBTempDirection") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_41075 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ContinueTimeAxis
-  L3_2 = A0_2
-  L4_2 = "ovenBDOWN"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PauseTimeAxis
-  L3_2 = A0_2
-  L4_2 = "ovenBUP"
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_41075(context, evt)
+	-- 重启标识为"ovenBDOWN"的时间轴
+	ScriptLib.ContinueTimeAxis(context, "ovenBDOWN")
+	
+	
+	-- 暂停标识为"ovenBUP"的时间轴
+	ScriptLib.PauseTimeAxis(context, "ovenBUP")
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_41075 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenCTempDirection"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_41076(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"ovenCTempDirection"为1
+	if ScriptLib.GetGroupVariableValue(context, "ovenCTempDirection") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_41076 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "ovenCDOWN"
-  L5_2 = {}
-  L6_2 = 1
-  L5_2[1] = L6_2
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PauseTimeAxis
-  L3_2 = A0_2
-  L4_2 = "ovenCTemp"
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_41076(context, evt)
+	-- 创建标识为"ovenCDOWN"，时间节点为{1}的时间轴，true用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "ovenCDOWN", {1}, true)
+	
+	
+	-- 暂停标识为"ovenCTemp"的时间轴
+	ScriptLib.PauseTimeAxis(context, "ovenCTemp")
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_41076 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenCTemp"
-  L5_2 = 3
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_41077(context, evt)
+	-- 针对当前group内变量名为 "ovenCTemp" 的变量，进行修改，变化值为 3
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ovenCTemp", 3) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_41077 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ovenCTempDirection"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_41078(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"ovenCTempDirection"为2
+	if ScriptLib.GetGroupVariableValue(context, "ovenCTempDirection") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_41078 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ContinueTimeAxis
-  L3_2 = A0_2
-  L4_2 = "ovenCDOWN"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PauseTimeAxis
-  L3_2 = A0_2
-  L4_2 = "ovenCUP"
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_41078(context, evt)
+	-- 重启标识为"ovenCDOWN"的时间轴
+	ScriptLib.ContinueTimeAxis(context, "ovenCDOWN")
+	
+	
+	-- 暂停标识为"ovenCUP"的时间轴
+	ScriptLib.PauseTimeAxis(context, "ovenCUP")
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_41078 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133105043
-  L4_2.exclude_prev = true
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randRest"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = "StartPotTaunt"
-  L3_2 = "StartPotTaunt"
-  L4_2 = "Param1"
-  L3_2 = L3_2 .. L4_2
-  L4_2 = "StartPotTaunt"
-  L5_2 = "Param2"
-  L4_2 = L4_2 .. L5_2
-  L5_2 = "StartPotTaunt"
-  L6_2 = "Param3"
-  L5_2 = L5_2 .. L6_2
-  L6_2 = "StartPotTaunt"
-  L7_2 = "Param4"
-  L6_2 = L6_2 .. L7_2
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L3_2
-  L10_2 = 41006
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L4_2
-  L10_2 = 1
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L5_2
-  L10_2 = 0
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L6_2
-  L10_2 = 0
-  L11_2 = {}
-  L7_2(L8_2, L9_2, L10_2, L11_2)
-  L7_2 = ScriptLib
-  L7_2 = L7_2.GetGroupTempValue
-  L8_2 = A0_2
-  L9_2 = L2_2
-  L10_2 = {}
-  L7_2 = L7_2(L8_2, L9_2, L10_2)
-  L8_2 = ScriptLib
-  L8_2 = L8_2.SetGroupTempValue
-  L9_2 = A0_2
-  L10_2 = L2_2
-  L11_2 = L7_2 + 1
-  L12_2 = {}
-  L8_2(L9_2, L10_2, L11_2, L12_2)
-  L8_2 = "StartPotTaunt"
-  L9_2 = "StartPotTaunt"
-  L10_2 = "Param1"
-  L9_2 = L9_2 .. L10_2
-  L10_2 = "StartPotTaunt"
-  L11_2 = "Param2"
-  L10_2 = L10_2 .. L11_2
-  L11_2 = "StartPotTaunt"
-  L12_2 = "Param3"
-  L11_2 = L11_2 .. L12_2
-  L12_2 = "StartPotTaunt"
-  L13_2 = "Param4"
-  L12_2 = L12_2 .. L13_2
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L9_2
-  L16_2 = 41004
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L10_2
-  L16_2 = 0
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L11_2
-  L16_2 = 0
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.SetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L12_2
-  L16_2 = 0
-  L17_2 = {}
-  L13_2(L14_2, L15_2, L16_2, L17_2)
-  L13_2 = ScriptLib
-  L13_2 = L13_2.GetGroupTempValue
-  L14_2 = A0_2
-  L15_2 = L8_2
-  L16_2 = {}
-  L13_2 = L13_2(L14_2, L15_2, L16_2)
-  L14_2 = ScriptLib
-  L14_2 = L14_2.SetGroupTempValue
-  L15_2 = A0_2
-  L16_2 = L8_2
-  L17_2 = L13_2 + 1
-  L18_2 = {}
-  L14_2(L15_2, L16_2, L17_2, L18_2)
-  L14_2 = 0
-  return L14_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_41079(context, evt)
+		-- 重新生成指定group，排除之前选择的suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133105043, exclude_prev = true }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randRest")
+			return -1
+		end
+	
+	-- 发起一个针对Td的LuaFunction "StartPotTaunt" 的请求
+	local functionKey = "StartPotTaunt"
+	local functionParam1 = "StartPotTaunt" .. "Param1"
+	local functionParam2 = "StartPotTaunt" .. "Param2"
+	local functionParam3 = "StartPotTaunt" .. "Param3"
+	local functionParam4 = "StartPotTaunt" .. "Param4"
+	
+	ScriptLib.SetGroupTempValue(context, functionParam1, 41006, {})
+	ScriptLib.SetGroupTempValue(context, functionParam2, 1, {})
+	ScriptLib.SetGroupTempValue(context, functionParam3, 0, {})
+	ScriptLib.SetGroupTempValue(context, functionParam4, 0, {})
+	local currentValue = ScriptLib.GetGroupTempValue(context,functionKey,{})
+	ScriptLib.SetGroupTempValue(context, functionKey, currentValue+1, {})
+	
+	-- 发起一个针对Td的LuaFunction "StartPotTaunt" 的请求
+	local functionKey = "StartPotTaunt"
+	local functionParam1 = "StartPotTaunt" .. "Param1"
+	local functionParam2 = "StartPotTaunt" .. "Param2"
+	local functionParam3 = "StartPotTaunt" .. "Param3"
+	local functionParam4 = "StartPotTaunt" .. "Param4"
+	
+	ScriptLib.SetGroupTempValue(context, functionParam1, 41004, {})
+	ScriptLib.SetGroupTempValue(context, functionParam2, 0, {})
+	ScriptLib.SetGroupTempValue(context, functionParam3, 0, {})
+	ScriptLib.SetGroupTempValue(context, functionParam4, 0, {})
+	local currentValue = ScriptLib.GetGroupTempValue(context,functionKey,{})
+	ScriptLib.SetGroupTempValue(context, functionKey, currentValue+1, {})
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_41079 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133105043
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_41080(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133105043, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_41080 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 41005
-  L5_2 = GadgetState
-  L5_2 = L5_2.Action01
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_41094(context, evt)
+	-- 将configid为 41005 的物件更改为状态 GadgetState.Action01
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 41005, GadgetState.Action01) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_QUEST_START_41094 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 41005
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_41095(context, evt)
+	-- 将configid为 41005 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 41005, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_41095 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133105041
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_41096(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133105041, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_41096 = L3_1
-L3_1 = "require"
-L3_1 = _ENV[L3_1]
-L4_1 = "V2_1/ImmortalPotEx"
-L3_1(L4_1)
+
+require "V2_1/ImmortalPotEx"

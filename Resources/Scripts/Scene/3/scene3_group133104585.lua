@@ -1,850 +1,295 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 133104585
-L1_1 = {}
-L1_1.gadget_seal_id = 585005
-L1_1.gadget_light_1 = 585002
-L1_1.gadget_light_2 = 585003
-L1_1.gadget_light_3 = 585004
-L1_1.group_id = 133104585
-L1_1.gadget_seal_model = 585001
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 585001
-L3_1.gadget_id = 70950008
-L4_1 = {}
-L4_1.x = 911.974
-L4_1.y = 227.192
-L4_1.z = 939.551
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.046
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 24
-L3_1.persistent = true
-L3_1.area_id = 6
-L4_1 = {}
-L4_1.config_id = 585002
-L4_1.gadget_id = 70950006
-L5_1 = {}
-L5_1.x = 885.401
-L5_1.y = 240.753
-L5_1.z = 858.456
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 24
-L4_1.area_id = 6
-L5_1 = {}
-L5_1.config_id = 585003
-L5_1.gadget_id = 70950006
-L6_1 = {}
-L6_1.x = 993.865
-L6_1.y = 240.486
-L6_1.z = 932.411
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 24
-L5_1.area_id = 6
-L6_1 = {}
-L6_1.config_id = 585004
-L6_1.gadget_id = 70950006
-L7_1 = {}
-L7_1.x = 754.224
-L7_1.y = 270.571
-L7_1.z = 938.764
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 24
-L6_1.area_id = 6
-L7_1 = {}
-L7_1.config_id = 585005
-L7_1.gadget_id = 70950007
-L8_1 = {}
-L8_1.x = 906.135
-L8_1.y = 227.573
-L8_1.z = 939.486
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 48.729
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 24
-L8_1 = GadgetState
-L8_1 = L8_1.GearStop
-L7_1.state = L8_1
-L7_1.area_id = 6
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1585006
-L3_1.name = "GADGET_STATE_CHANGE_585006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_585006"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1585007
-L4_1.name = "GADGET_CREATE_585007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_CREATE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_CREATE_585007"
-L4_1.action = "action_EVENT_GADGET_CREATE_585007"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1585008
-L5_1.name = "QUEST_FINISH_585008"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_QUEST_FINISH
-L5_1.event = L6_1
-L5_1.source = "2102501"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_QUEST_FINISH_585008"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1585009
-L6_1.name = "GROUP_LOAD_585009"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GROUP_LOAD
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = ""
-L6_1.action = "action_EVENT_GROUP_LOAD_585009"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1585010
-L7_1.name = "VARIABLE_CHANGE_585010"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_VARIABLE_CHANGE
-L7_1.event = L8_1
-L7_1.source = "Point_Value"
-L7_1.condition = ""
-L7_1.action = "action_EVENT_VARIABLE_CHANGE_585010"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1585011
-L8_1.name = "QUEST_FINISH_585011"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_QUEST_FINISH
-L8_1.event = L9_1
-L8_1.source = "2102501"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_QUEST_FINISH_585011"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1585012
-L9_1.name = "TIMER_EVENT_585012"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_TIMER_EVENT
-L9_1.event = L10_1
-L9_1.source = "ActiveReminder"
-L9_1.condition = ""
-L9_1.action = "action_EVENT_TIMER_EVENT_585012"
-L10_1 = {}
-L10_1.config_id = 1585013
-L10_1.name = "TIMER_EVENT_585013"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_TIMER_EVENT
-L10_1.event = L11_1
-L10_1.source = "QuestFinish"
-L10_1.condition = ""
-L10_1.action = "action_EVENT_TIMER_EVENT_585013"
-L11_1 = {}
-L11_1.config_id = 1585014
-L11_1.name = "VARIABLE_CHANGE_585014"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_VARIABLE_CHANGE
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = ""
-L11_1.action = "action_EVENT_VARIABLE_CHANGE_585014"
-L11_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "Point_Value"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "Temp_Point_Value"
-L4_1.value = 0
-L4_1.no_refresh = true
-L5_1 = {}
-L5_1.configId = 3
-L5_1.name = "Quest_Flag"
-L5_1.value = 0
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 4
-L6_1.name = "check"
-L6_1.value = 0
-L6_1.no_refresh = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 585001
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "QUEST_FINISH_585008"
-L6_1 = "GROUP_LOAD_585009"
-L7_1 = "VARIABLE_CHANGE_585010"
-L8_1 = "QUEST_FINISH_585011"
-L9_1 = "TIMER_EVENT_585012"
-L10_1 = "TIMER_EVENT_585013"
-L11_1 = "VARIABLE_CHANGE_585014"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 585005
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "GADGET_STATE_CHANGE_585006"
-L7_1 = "GADGET_CREATE_585007"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintContextLog
-  L3_2 = A0_2
-  L4_2 = "## SEAL_STATE | "
-  L5_2 = A1_2.param2
-  L6_2 = " : "
-  L7_2 = A1_2.param3
-  L8_2 = "->"
-  L9_2 = A1_2.param1
-  L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2 .. L8_2 .. L9_2
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  L3_2 = A1_2.param2
-  L4_2 = L1_1.gadget_light_1
-  if L3_2 ~= L4_2 then
-    L3_2 = A1_2.param2
-    L4_2 = L1_1.gadget_light_2
-    if L3_2 ~= L4_2 then
-      L3_2 = A1_2.param2
-      L4_2 = L1_1.gadget_light_3
-      if L3_2 ~= L4_2 then
-        goto lbl_77
-      end
-    end
-  end
-  L3_2 = A1_2.param1
-  L4_2 = GadgetState
-  L4_2 = L4_2.GearStart
-  if L3_2 == L4_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.GetGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = L1_1.group_id
-    L6_2 = L1_1.gadget_seal_id
-    L3_2 = L3_2(L4_2, L5_2, L6_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetGroupGadgetStateByConfigId
-    L5_2 = A0_2
-    L6_2 = L1_1.group_id
-    L7_2 = L1_1.gadget_seal_id
-    L8_2 = GadgetState
-    L8_2 = L8_2.ChestTrap
-    L4_2(L5_2, L6_2, L7_2, L8_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetGroupGadgetStateByConfigId
-    L5_2 = A0_2
-    L6_2 = L1_1.group_id
-    L7_2 = L1_1.gadget_seal_id
-    L8_2 = L3_2
-    L4_2(L5_2, L6_2, L7_2, L8_2)
-    L4_2 = A1_2.param2
-    L5_2 = L1_1.gadget_light_1
-    if L4_2 == L5_2 then
-      L2_2 = 1
-    else
-      L4_2 = A1_2.param2
-      L5_2 = L1_1.gadget_light_2
-      if L4_2 == L5_2 then
-        L2_2 = 2
-      else
-        L4_2 = A1_2.param2
-        L5_2 = L1_1.gadget_light_3
-        if L4_2 == L5_2 then
-          L2_2 = 4
-        end
-      end
-    end
-    L4_2 = ScriptLib
-    L4_2 = L4_2.ChangeGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "Temp_Point_Value"
-    L7_2 = L2_2
-    L4_2(L5_2, L6_2, L7_2)
-    L4_2 = 0
-    do return L4_2 end
-    goto lbl_237
-    ::lbl_77::
-    L3_2 = A1_2.param2
-    L4_2 = L1_1.gadget_seal_id
-    if L3_2 == L4_2 then
-      L3_2 = A1_2.param1
-      L4_2 = GadgetState
-      L4_2 = L4_2.Action01
-      if L3_2 ~= L4_2 then
-        L3_2 = A1_2.param1
-        L4_2 = GadgetState
-        L4_2 = L4_2.Action02
-        if L3_2 ~= L4_2 then
-          goto lbl_121
-        end
-      end
-      L3_2 = A1_2.param1
-      L4_2 = GadgetState
-      L4_2 = L4_2.ChestTrap
-      if L3_2 ~= L4_2 then
-        L3_2 = A1_2.param3
-        L4_2 = GadgetState
-        L4_2 = L4_2.ChestTrap
-        if L3_2 ~= L4_2 then
-          L3_2 = ScriptLib
-          L3_2 = L3_2.GetGroupVariableValue
-          L4_2 = A0_2
-          L5_2 = "Temp_Point_Value"
-          L3_2 = L3_2(L4_2, L5_2)
-          L2_2 = L3_2
-          L3_2 = ScriptLib
-          L3_2 = L3_2.SetGroupVariableValue
-          L4_2 = A0_2
-          L5_2 = "Point_Value"
-          L6_2 = L2_2
-          L3_2(L4_2, L5_2, L6_2)
-          L3_2 = ScriptLib
-          L3_2 = L3_2.SetGroupGadgetStateByConfigId
-          L4_2 = A0_2
-          L5_2 = L1_1.group_id
-          L6_2 = L1_1.gadget_seal_model
-          L7_2 = A1_2.param1
-          L3_2(L4_2, L5_2, L6_2, L7_2)
-          goto lbl_232
-          ::lbl_121::
-          L3_2 = A1_2.param1
-          L4_2 = GadgetState
-          L4_2 = L4_2.ChestLocked
-          if L3_2 == L4_2 then
-            L3_2 = ScriptLib
-            L3_2 = L3_2.GetGroupVariableValue
-            L4_2 = A0_2
-            L5_2 = "Point_Value"
-            L3_2 = L3_2(L4_2, L5_2)
-            L4_2 = ScriptLib
-            L4_2 = L4_2.SetGroupVariableValue
-            L5_2 = A0_2
-            L6_2 = "Temp_Point_Value"
-            L7_2 = L3_2
-            L4_2(L5_2, L6_2, L7_2)
-            L4_2 = L3_2 % 2
-            if L4_2 == 0 then
-              L4_2 = ScriptLib
-              L4_2 = L4_2.CreateGadget
-              L5_2 = A0_2
-              L6_2 = {}
-              L7_2 = L1_1.gadget_light_1
-              L6_2.config_id = L7_2
-              L4_2(L5_2, L6_2)
-            end
-            L4_2 = L3_2 % 4
-            if L4_2 < 2 then
-              L4_2 = ScriptLib
-              L4_2 = L4_2.CreateGadget
-              L5_2 = A0_2
-              L6_2 = {}
-              L7_2 = L1_1.gadget_light_2
-              L6_2.config_id = L7_2
-              L4_2(L5_2, L6_2)
-            end
-            if L3_2 < 4 then
-              L4_2 = ScriptLib
-              L4_2 = L4_2.CreateGadget
-              L5_2 = A0_2
-              L6_2 = {}
-              L7_2 = L1_1.gadget_light_3
-              L6_2.config_id = L7_2
-              L4_2(L5_2, L6_2)
-            end
-          else
-            L3_2 = A1_2.param1
-            L4_2 = GadgetState
-            L4_2 = L4_2.Action03
-            if L3_2 == L4_2 then
-              L3_2 = ScriptLib
-              L3_2 = L3_2.SetGroupGadgetStateByConfigId
-              L4_2 = A0_2
-              L5_2 = L1_1.group_id
-              L6_2 = L1_1.gadget_seal_model
-              L7_2 = A1_2.param1
-              L3_2(L4_2, L5_2, L6_2, L7_2)
-              L3_2 = ScriptLib
-              L3_2 = L3_2.GetGroupVariableValue
-              L4_2 = A0_2
-              L5_2 = "Temp_Point_Value"
-              L3_2 = L3_2(L4_2, L5_2)
-              L2_2 = L3_2
-              L3_2 = ScriptLib
-              L3_2 = L3_2.SetGroupVariableValue
-              L4_2 = A0_2
-              L5_2 = "Point_Value"
-              L6_2 = L2_2
-              L3_2(L4_2, L5_2, L6_2)
-              L3_2 = ScriptLib
-              L3_2 = L3_2.SetGroupVariableValue
-              L4_2 = A0_2
-              L5_2 = "Quest_Flag"
-              L6_2 = 1
-              L3_2(L4_2, L5_2, L6_2)
-              L3_2 = ScriptLib
-              L3_2 = L3_2.KillEntityByConfigId
-              L4_2 = A0_2
-              L5_2 = {}
-              L6_2 = L1_1.group_id
-              L5_2.group_id = L6_2
-              L6_2 = L1_1.gadget_seal_id
-              L5_2.config_id = L6_2
-              L3_2(L4_2, L5_2)
-              L3_2 = ScriptLib
-              L3_2 = L3_2.CreateGroupTimerEvent
-              L4_2 = A0_2
-              L5_2 = 133104585
-              L6_2 = "QuestFinish"
-              L7_2 = 4
-              L3_2(L4_2, L5_2, L6_2, L7_2)
-              L3_2 = ScriptLib
-              L3_2 = L3_2.SetGroupGadgetStateByConfigId
-              L4_2 = A0_2
-              L5_2 = 133104440
-              L6_2 = 440008
-              L7_2 = GadgetState
-              L7_2 = L7_2.GearStart
-              L3_2(L4_2, L5_2, L6_2, L7_2)
-              L3_2 = ScriptLib
-              L3_2 = L3_2.AddQuestProgress
-              L4_2 = A0_2
-              L5_2 = "QuestFinish21025"
-              L3_2(L4_2, L5_2)
-              L3_2 = ScriptLib
-              L3_2 = L3_2.RemoveExtraGroupSuite
-              L4_2 = A0_2
-              L5_2 = L1_1.group_id
-              L6_2 = 2
-              L3_2(L4_2, L5_2, L6_2)
-            end
-          end
-        end
-      end
-      ::lbl_232::
-      L3_2 = 0
-      return L3_2
-    else
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  ::lbl_237::
+-- 基础信息
+local base_info = {
+	group_id = 133104585
+}
+
+-- Trigger变量
+local defs = {
+	gadget_seal_id = 585005,
+	gadget_light_1 = 585002,
+	gadget_light_2 = 585003,
+	gadget_light_3 = 585004,
+	group_id = 133104585,
+	gadget_seal_model = 585001
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 585001, gadget_id = 70950008, pos = { x = 911.974, y = 227.192, z = 939.551 }, rot = { x = 0.000, y = 0.046, z = 0.000 }, level = 24, persistent = true, area_id = 6 },
+	{ config_id = 585002, gadget_id = 70950006, pos = { x = 885.401, y = 240.753, z = 858.456 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, area_id = 6 },
+	{ config_id = 585003, gadget_id = 70950006, pos = { x = 993.865, y = 240.486, z = 932.411 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, area_id = 6 },
+	{ config_id = 585004, gadget_id = 70950006, pos = { x = 754.224, y = 270.571, z = 938.764 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, area_id = 6 },
+	{ config_id = 585005, gadget_id = 70950007, pos = { x = 906.135, y = 227.573, z = 939.486 }, rot = { x = 0.000, y = 48.729, z = 0.000 }, level = 24, state = GadgetState.GearStop, area_id = 6 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1585006, name = "GADGET_STATE_CHANGE_585006", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "", action = "action_EVENT_GADGET_STATE_CHANGE_585006", trigger_count = 0 },
+	{ config_id = 1585007, name = "GADGET_CREATE_585007", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_585007", action = "action_EVENT_GADGET_CREATE_585007", trigger_count = 0 },
+	{ config_id = 1585008, name = "QUEST_FINISH_585008", event = EventType.EVENT_QUEST_FINISH, source = "2102501", condition = "", action = "action_EVENT_QUEST_FINISH_585008", trigger_count = 0 },
+	{ config_id = 1585009, name = "GROUP_LOAD_585009", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_585009", trigger_count = 0 },
+	{ config_id = 1585010, name = "VARIABLE_CHANGE_585010", event = EventType.EVENT_VARIABLE_CHANGE, source = "Point_Value", condition = "", action = "action_EVENT_VARIABLE_CHANGE_585010", trigger_count = 0 },
+	{ config_id = 1585011, name = "QUEST_FINISH_585011", event = EventType.EVENT_QUEST_FINISH, source = "2102501", condition = "", action = "action_EVENT_QUEST_FINISH_585011", trigger_count = 0 },
+	{ config_id = 1585012, name = "TIMER_EVENT_585012", event = EventType.EVENT_TIMER_EVENT, source = "ActiveReminder", condition = "", action = "action_EVENT_TIMER_EVENT_585012" },
+	{ config_id = 1585013, name = "TIMER_EVENT_585013", event = EventType.EVENT_TIMER_EVENT, source = "QuestFinish", condition = "", action = "action_EVENT_TIMER_EVENT_585013" },
+	{ config_id = 1585014, name = "VARIABLE_CHANGE_585014", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "", action = "action_EVENT_VARIABLE_CHANGE_585014", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Point_Value", value = 0, no_refresh = true },
+	{ config_id = 2, name = "Temp_Point_Value", value = 0, no_refresh = true },
+	{ config_id = 3, name = "Quest_Flag", value = 0, no_refresh = true },
+	{ config_id = 4, name = "check", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 585001 },
+		regions = { },
+		triggers = { "QUEST_FINISH_585008", "GROUP_LOAD_585009", "VARIABLE_CHANGE_585010", "QUEST_FINISH_585011", "TIMER_EVENT_585012", "TIMER_EVENT_585013", "VARIABLE_CHANGE_585014" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { 585005 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_585006", "GADGET_CREATE_585007" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_585006(context, evt)
+	ScriptLib.PrintContextLog(context, "## SEAL_STATE | "..evt.param2.." : "..evt.param3.."->"..evt.param1)
+	
+	local t_p_value = 0
+	if evt.param2 == defs.gadget_light_1 or evt.param2 == defs.gadget_light_2 or evt.param2 == defs.gadget_light_3 then
+		-- 光柱触发信息令封印激活玩家身上的子弹
+		if evt.param1 == GadgetState.GearStart then
+			local cur_state = ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.gadget_seal_id)
+			ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.gadget_seal_id, GadgetState.ChestTrap)
+			ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.gadget_seal_id, cur_state)
+			-- 记录光柱触碰状况
+			if evt.param2 == defs.gadget_light_1 then
+				t_p_value = 1
+			elseif evt.param2 == defs.gadget_light_2 then
+				t_p_value = 2
+			elseif evt.param2 == defs.gadget_light_3 then
+				t_p_value = 4
+			end	
+			ScriptLib.ChangeGroupVariableValue(context, "Temp_Point_Value", t_p_value)
+			return 0
+		end
+	elseif evt.param2 == defs.gadget_seal_id then
+		-- 封印103时处理光柱逻辑
+		if evt.param1 == GadgetState.Action01 or evt.param1 == GadgetState.Action02 then
+			if evt.param1 ~= GadgetState.ChestTrap and evt.param3 ~= GadgetState.ChestTrap then
+				t_p_value = ScriptLib.GetGroupVariableValue(context, "Temp_Point_Value")
+				ScriptLib.SetGroupVariableValue(context, "Point_Value", t_p_value)
+				ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.gadget_seal_model, evt.param1)
+			end	
+		elseif evt.param1 == GadgetState.ChestLocked then
+			-- 玩家出界，group数据清理
+			local p_value = ScriptLib.GetGroupVariableValue(context, "Point_Value")
+			-- 重置临时数据
+			ScriptLib.SetGroupVariableValue(context, "Temp_Point_Value", p_value)
+			if p_value%2 == 0 then
+				ScriptLib.CreateGadget(context, {config_id = defs.gadget_light_1})
+			end
+			if p_value%4 < 2 then
+				ScriptLib.CreateGadget(context, {config_id = defs.gadget_light_2})
+			end
+			if p_value < 4 then
+				ScriptLib.CreateGadget(context, {config_id = defs.gadget_light_3})
+			end
+		elseif evt.param1 == GadgetState.Action03 then
+			ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.gadget_seal_model, evt.param1)
+			-- 封印解除
+			t_p_value = ScriptLib.GetGroupVariableValue(context, "Temp_Point_Value")
+			ScriptLib.SetGroupVariableValue(context, "Point_Value", t_p_value)
+			ScriptLib.SetGroupVariableValue(context, "Quest_Flag", 1)
+			ScriptLib.KillEntityByConfigId(context, { group_id = defs.group_id, config_id = defs.gadget_seal_id })
+			ScriptLib.CreateGroupTimerEvent(context, 133104585, "QuestFinish", 4)
+			ScriptLib.SetGroupGadgetStateByConfigId(context, 133104440, 440008, GadgetState.GearStart)
+			ScriptLib.AddQuestProgress(context, "QuestFinish21025")
+			ScriptLib.RemoveExtraGroupSuite(context, defs.group_id, 2)
+		
+		end
+		return 0
+	else
+		return -1
+	end
 end
-action_EVENT_GADGET_STATE_CHANGE_585006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = L1_1.gadget_seal_id
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_585007(context, evt)
+	if evt.param1 ~= defs.gadget_seal_id then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_585007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = L1_1.gadget_seal_model
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetGroupGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = L1_1.group_id
-  L6_2 = L1_1.gadget_seal_id
-  L7_2 = L2_2
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = GadgetState
-  L3_2 = L3_2.Default
-  if L2_2 == L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupVariableValue
-    L4_2 = A0_2
-    L5_2 = "Point_Value"
-    L6_2 = 0
-    L3_2(L4_2, L5_2, L6_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupVariableValue
-    L4_2 = A0_2
-    L5_2 = "Temp_Point_Value"
-    L6_2 = 0
-    L3_2(L4_2, L5_2, L6_2)
-  else
-    L3_2 = GadgetState
-    L3_2 = L3_2.GearStart
-    if L2_2 == L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.SetWorktopOptionsByGroupId
-      L4_2 = A0_2
-      L5_2 = L1_1.group_id
-      L6_2 = L1_1.gadget_seal_id
-      L7_2 = {}
-      L8_2 = 24
-      L7_2[1] = L8_2
-      L3_2(L4_2, L5_2, L6_2, L7_2)
-      L3_2 = 0
-      return L3_2
-    end
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "Point_Value"
-  L3_2 = L3_2(L4_2, L5_2)
-  if L3_2 ~= 7 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "Temp_Point_Value"
-    L7_2 = L3_2
-    L4_2(L5_2, L6_2, L7_2)
-    L4_2 = L3_2 % 2
-    if L4_2 == 0 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.CreateGadget
-      L5_2 = A0_2
-      L6_2 = {}
-      L7_2 = L1_1.gadget_light_1
-      L6_2.config_id = L7_2
-      L4_2(L5_2, L6_2)
-    end
-    L4_2 = L3_2 % 4
-    if L4_2 < 2 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.CreateGadget
-      L5_2 = A0_2
-      L6_2 = {}
-      L7_2 = L1_1.gadget_light_2
-      L6_2.config_id = L7_2
-      L4_2(L5_2, L6_2)
-    end
-    if L3_2 < 4 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.CreateGadget
-      L5_2 = A0_2
-      L6_2 = {}
-      L7_2 = L1_1.gadget_light_3
-      L6_2.config_id = L7_2
-      L4_2(L5_2, L6_2)
-    end
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_585007(context, evt)
+	local state_info = ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.gadget_seal_model)
+	ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.gadget_seal_id, state_info)
+	if state_info == GadgetState.Default then
+		ScriptLib.SetGroupVariableValue(context, "Point_Value", 0)
+		ScriptLib.SetGroupVariableValue(context, "Temp_Point_Value", 0)
+	elseif state_info == GadgetState.GearStart then
+		ScriptLib.SetWorktopOptionsByGroupId(context, defs.group_id, defs.gadget_seal_id, {24})
+		return 0
+	end
+	local p_value = ScriptLib.GetGroupVariableValue(context, "Point_Value")
+	if p_value ~= 7 then
+		-- 重置临时数据
+		ScriptLib.SetGroupVariableValue(context, "Temp_Point_Value", p_value)
+		if p_value%2 == 0 then
+			ScriptLib.CreateGadget(context, {config_id = defs.gadget_light_1})
+		end
+		if p_value%4 < 2 then
+			ScriptLib.CreateGadget(context, {config_id = defs.gadget_light_2})
+		end
+		if p_value < 4 then
+			ScriptLib.CreateGadget(context, {config_id = defs.gadget_light_3})
+		end
+	end
+	return 0
 end
-action_EVENT_GADGET_CREATE_585007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Quest_Flag"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_585008(context, evt)
+	ScriptLib.AddExtraGroupSuite(context, defs.group_id, 2)
+	ScriptLib.SetGroupVariableValue(context, "Quest_Flag", 1)
+	return 0
 end
-action_EVENT_QUEST_FINISH_585008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Point_Value"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 7 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.group_id
-    L5_2 = L1_1.gadget_seal_model
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    L3_2 = GadgetState
-    L3_2 = L3_2.Action03
-    if L2_2 ~= L3_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "Point_Value"
-      L5_2 = 3
-      L2_2(L3_2, L4_2, L5_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "Temp_Point_Value"
-      L5_2 = 3
-      L2_2(L3_2, L4_2, L5_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGroupGadgetStateByConfigId
-      L3_2 = A0_2
-      L4_2 = L1_1.group_id
-      L5_2 = L1_1.gadget_seal_model
-      L6_2 = GadgetState
-      L6_2 = L6_2.Action02
-      L2_2(L3_2, L4_2, L5_2, L6_2)
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Quest_Flag"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 1 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.AddExtraGroupSuite
-    L4_2 = A0_2
-    L5_2 = L1_1.group_id
-    L6_2 = 2
-    L3_2(L4_2, L5_2, L6_2)
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_585009(context, evt)
+	if ScriptLib.GetGroupVariableValue(context, "Point_Value") == 7 and ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.gadget_seal_model) ~= GadgetState.Action03 then
+		ScriptLib.SetGroupVariableValue(context, "Point_Value", 3)
+		ScriptLib.SetGroupVariableValue(context, "Temp_Point_Value", 3)
+		ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_id, defs.gadget_seal_model, GadgetState.Action02)
+	end
+	local qf = ScriptLib.GetGroupVariableValue(context, "Quest_Flag")
+	if qf == 1 then
+		ScriptLib.AddExtraGroupSuite(context, defs.group_id, 2)
+	end
+	return 0
 end
-action_EVENT_GROUP_LOAD_585009 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 > L3_2 then
-    L2_2 = A1_2.param1
-    L3_2 = A1_2.param2
-    L2_2 = L2_2 - L3_2
-    L3_2 = L2_2 % 2
-    if 1 <= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.AddQuestProgress
-      L4_2 = A0_2
-      L5_2 = "21025_progress1"
-      L3_2(L4_2, L5_2)
-      L3_2 = ScriptLib
-      L3_2 = L3_2.ChangeGroupVariableValue
-      L4_2 = A0_2
-      L5_2 = "check"
-      L6_2 = 1
-      L3_2(L4_2, L5_2, L6_2)
-    end
-    L3_2 = L2_2 % 4
-    if 2 <= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.AddQuestProgress
-      L4_2 = A0_2
-      L5_2 = "21025_progress2"
-      L3_2(L4_2, L5_2)
-      L3_2 = ScriptLib
-      L3_2 = L3_2.ChangeGroupVariableValue
-      L4_2 = A0_2
-      L5_2 = "check"
-      L6_2 = 10
-      L3_2(L4_2, L5_2, L6_2)
-    end
-    L3_2 = L2_2 % 8
-    if 4 <= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.AddQuestProgress
-      L4_2 = A0_2
-      L5_2 = "21025_progress3"
-      L3_2(L4_2, L5_2)
-      L3_2 = ScriptLib
-      L3_2 = L3_2.ChangeGroupVariableValue
-      L4_2 = A0_2
-      L5_2 = "check"
-      L6_2 = 100
-      L3_2(L4_2, L5_2, L6_2)
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_585010(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	-- Point_Value变化时判断值的变化
+	
+	 if evt.param1 > evt.param2 then
+	                local step = evt.param1 - evt.param2
+	                if step%2 >= 1 then
+	                        ScriptLib.AddQuestProgress(context, "21025_progress1")
+	                ScriptLib.ChangeGroupVariableValue(context, "check", 1)
+	                end
+	                if step%4 >= 2 then
+	                        ScriptLib.AddQuestProgress(context, "21025_progress2")
+	                ScriptLib.ChangeGroupVariableValue(context, "check", 10)
+	                end
+	                if step%8 >= 4 then
+	                        ScriptLib.AddQuestProgress(context, "21025_progress3")
+	                ScriptLib.ChangeGroupVariableValue(context, "check", 100)
+	                end
+	        end
+	        return 0
 end
-action_EVENT_VARIABLE_CHANGE_585010 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 133104585
-  L5_2 = "ActiveReminder"
-  L6_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_585011(context, evt)
+	-- 延迟1秒后,向groupId为：133104585的对象,请求一次调用,并将string参数："ActiveReminder" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 133104585, "ActiveReminder", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_585011 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 31044401
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_585012(context, evt)
+	-- 调用提示id为 31044401 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 31044401) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_585012 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PlayCutScene
-  L3_2 = A0_2
-  L4_2 = 133104585
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : play_cutscene"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_585013(context, evt)
+	-- 通知场景上的所有玩家播放名字为133104585 的cutscene
+	if 0 ~= ScriptLib.PlayCutScene(context, 133104585, 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : play_cutscene")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_585013 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintContextLog
-  L3_2 = A0_2
-  L4_2 = "## SEAL_VALUE | "
-  L5_2 = A1_2.source_name
-  L6_2 = " : "
-  L7_2 = A1_2.param2
-  L8_2 = "->"
-  L9_2 = A1_2.param1
-  L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2 .. L8_2 .. L9_2
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_585014(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	ScriptLib.PrintContextLog(context, "## SEAL_VALUE | "..evt.source_name.." : "..evt.param2.."->"..evt.param1)
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_585014 = L2_1
