@@ -1,16 +1,17 @@
 # Grasscutter Resources
 > <em>Resource Version - "Certain Anime Game" 3.1</em><br/>
 
-- ExcelBinOutput (QuestExcelConfigData 2.8)
-- BinOutput (2.7, Quest 3.1)
-- Scripts (2.7)
+- ExcelBinOutput (QuestExcelConfigData 2.8, LevelDesign\Routes ??)
+- BinOutput (2.7)
+- Scripts (2.6.x) (Scene,Quest Shareconfig,Activity 3.1)
 - Readable
 - Subtitle
 - TextMap
 - QuestEncryptionKeys (3.1)
 
-PR:
+Problem:
 - Make Quest 3.0-3.1 work with modified QuestExcelConfigData which you can get from BinOutput/Quest.
+- Natural Spawn for Sumeru area is available but due to this update (Lua Scene) it makes Quest unstable.
 
 ## Credits 
  - [Dimbreath](https://github.com/Dimbreath) (Everything except Script,BinOutput) <br/>
