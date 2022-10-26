@@ -1,17 +1,20 @@
 # Grasscutter Resources
 > <em>Resource Version - "Certain Anime Game" 3.1</em><br/>
 
-- ExcelBinOutput (QuestExcelConfigData 2.8, LevelDesign\Routes ??)
-- BinOutput (2.7)
-- Scripts (2.6.x) (Scene,Quest Shareconfig,Activity 3.1)
-- Readable
-- Subtitle
-- TextMap
+- ExcelBinOutput (QuestExcelConfigData 2.7)
+- BinOutput (2.7 all, LevelDesign\Routes ??)
+- Scripts (2.6.x) (Scene,Quest Shareconfig,Activity,Common 3.1)
+- Readable (??)
+- Subtitle (??)
+- TextMap (??)
 - QuestEncryptionKeys (3.1)
 
-Problem:
-- Make Quest 3.0-3.1 work with modified QuestExcelConfigData which you can get from BinOutput/Quest.
-- Natural Spawn for Sumeru area is available but due to this update (Lua Scene) it makes Quest unstable.
+## Problem:
+- Make Quest 2.8-3.1 work with modified QuestExcelConfigData which you can get from BinOutput/Quest. [use binout instead of excelconfig](https://github.com/Hartie95/Grasscutter/commit/0284de81563d30afb81733d7a3523a97419eb977)
+- [Missing Scripts](https://github.com/Hartie95/Grasscutter/wiki/missing-scripts) should have been resolved by using latest data from "Script/Common" folder so let's wait for the latest update from him ;).
+## Problem Solved:
+- Natural Spawn for Sumeru area is available.
+- Quest should have worked automatically continued when quest was completed (if using [Hartie95 fork](https://github.com/Hartie95/Grasscutter/wiki/The-Outlander-Who-Caught-the-Wind-(Prologue-Act-1)))
 
 ## Credits 
  - [Dimbreath](https://github.com/Dimbreath) (Everything except Script,BinOutput) <br/>
