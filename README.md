@@ -9,6 +9,9 @@
 - TextMap (??)
 - QuestEncryptionKeys (3.1)
 
+## Learn LUA
+ How Dungeons work:
+- [Spire of Solitary Enlightenment - LV 4](Resources/Scripts/Scene/40653/scene40653_group240653001.lua)
 ## Problem:
 - Make Quest 2.8-3.1 work with modified QuestExcelConfigData which you can get from BinOutput/Quest. [use binout instead of excelconfig](https://github.com/Hartie95/Grasscutter/commit/0284de81563d30afb81733d7a3523a97419eb977)
 - [Missing Scripts](https://github.com/Hartie95/Grasscutter/wiki/missing-scripts) should have been resolved by using latest data from "Script/Common" folder so let's wait for the latest update from him ;).
