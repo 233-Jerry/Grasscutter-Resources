@@ -7,7 +7,7 @@
       "mesh": "EffectMesh",
       "normalOffset": 0.02
     },
-    "height": 1.8647,
+    "height": 1.86,
     "modelHeight": 1.86,
     "mass": 10.0,
     "affectedByWorld": true,
@@ -38,9 +38,7 @@
       "NormalMoveWeapon/RunWeapon",
       "NormalMoveWeapon/RunToIdleWeapon",
       "NormalMoveWeapon/WalkToIdleWeapon",
-      "NormalMoveWeapon/RunningTurnWeapon",
-      "Sit/SitLoop",
-      "SitB/SitBLoop"
+      "NormalMoveWeapon/RunningTurnWeapon"
     ]
   },
   "equipController": {
@@ -51,9 +49,7 @@
     },
     "sheathPoint": "WeaponBackPut",
     "dissolveSheathFadeDelay": 0.075,
-    "dissolveSheathFadeTime": 2.1,
-    "patternSheathFadeDelay": 0.075,
-    "patternSheathFadeTime": 2.1
+    "dissolveSheathFadeTime": 2.1
   },
   "specialPoint": {
     "elementAbsorb": "PRIVATE_Pendant",
@@ -61,11 +57,16 @@
   },
   "combat": {
     "property": {
-      "endure": 0,
       "weight": 75,
-      "lockShape": "CircleLockEnemy",
       "endureType": "Avatar_Sword",
       "endureShake": 0
+    },
+    "combatLock": {
+      "denyLockOn": false,
+      "lockShape": "CircleLockEnemyClose",
+      "lockWeightYaxisParam": 0.2,
+      "lockWeightYaxisThreshold": 2,
+      "lockType": "Avatar&Monster_Lv4"
     },
     "beHit": {
       "hitBloodEffect": "",
@@ -77,9 +78,9 @@
       "hasAnimatorDie": true,
       "muteAllShaderDieEff": false,
       "dieShaderData": "AvatarDie",
-      "dieDisappearEffect": "Death_Avatar_Common",
-      "dieEndTime": 1.5,
-      "dieForceDisappearTime": 2.5,
+      "dieDisappearEffect": "Eff_Death_Avatar_Common",
+      "dieEndTime": 3.0,
+      "dieForceDisappearTime": 5.0,
       "useRagDoll": true,
       "ragDollDieEndTimeDelay": 0.4
     },
@@ -588,6 +589,7 @@
       }
     }
   },
+  "abilities": [],
   "audio": {
     "$type": "ConfigAvatarAudio",
     "animAudio": {
@@ -910,11 +912,13 @@
       ]
     },
     "voiceSwitch": {
-      "text": "Switch_Dainslaif"
+      "text": "Switch_Alhatham"
     },
     "bodyTypeSwitch": {
       "text": "Switch_Male"
-    }
+    },
+    "listenerLiftup": 1.5,
+    "surfaceProberLiftup": 1.5
   },
   "moveStateEffect": {
     "footprint": {
@@ -973,8 +977,15 @@
             "effect": "Eff_FootGround_Cloud_01",
             "deformation": ""
           }
+        },
+        "TransparentBrick": {
+          "all": {
+            "effect": "Eff_SceneObj_InvisibleWall_01",
+            "deformation": ""
+          }
         }
       }
     }
-  }
+  },
+  "perform": {}
 }
