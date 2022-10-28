@@ -1,326 +1,294 @@
 [
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Homeworld_Standard_Cooking_Ability",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "HomeworldEnterEditorMixin",
-                    "FLAAONCEBCF": [
-                        "OnHomeEditor"
-                    ],
-                    "FJAFNIKIOJM": [
-                        "OnHomeWorld"
-                    ]
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "OnHomeEditor": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0
-                },
-                "OnHomeWorld": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_Homeworld_Cooking",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "AttachModifier",
-                            "GAIGOBCNNEE": "Fire_State"
-                        }
-                    ]
-                },
-                "Fire_State": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "AttachModifierToSelfGlobalValueMixin",
-                            "BPCFCANOMNH": "_Homeworld_Cooking",
-                            "FEGIOIGELHB": 0.0,
-                            "CMEDACODLEA": [
-                                -0.5,
-                                0.5,
-                                1.5
-                            ],
-                            "MIEPCOONDEM": [
-                                "Fire_Off",
-                                "Fire_On"
-                            ]
-                        }
-                    ]
-                },
-                "Fire_Off": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 5.0,
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_Homeworld_Cooking",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "predicates": [
-                                {
-                                    "$type": "ByHitElement",
-                                    "GOMLPAOIKJA": "Fire"
-                                }
-                            ],
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_Homeworld_Cooking",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                },
-                "Fire_On": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Fire",
-                    "elementDurability": 25.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_Griller_FireCook_01",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "FirePoint"
-                            }
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "FireBasin_Smoke",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "FirePoint"
-                            }
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_Homeworld_Cooking",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                }
-            }
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // 家园 厨房模板
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Homeworld_Standard_Cooking_Ability",
+      "abilityMixins": [
+        {
+          "$type": "HomeworldEnterEditorMixin",
+          "editorModifierNames": ["OnHomeEditor"],
+          "worldModifierNames": ["OnHomeWorld"]
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Homeworld_Standard_Cooking_Ability02",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "HomeworldEnterEditorMixin",
-                    "FLAAONCEBCF": [
-                        "OnHomeEditor"
-                    ],
-                    "FJAFNIKIOJM": [
-                        "OnHomeWorld"
-                    ]
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "OnHomeEditor": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0
-                },
-                "OnHomeWorld": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_Homeworld_Cooking",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "AttachModifier",
-                            "GAIGOBCNNEE": "Fire_State"
-                        }
-                    ]
-                },
-                "Fire_State": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "AttachModifierToSelfGlobalValueMixin",
-                            "BPCFCANOMNH": "_Homeworld_Cooking",
-                            "FEGIOIGELHB": 0.0,
-                            "CMEDACODLEA": [
-                                -0.5,
-                                0.5,
-                                1.5
-                            ],
-                            "MIEPCOONDEM": [
-                                "Fire_Off",
-                                "Fire_On"
-                            ]
-                        }
-                    ]
-                },
-                "Fire_Off": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 5.0,
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_Homeworld_Cooking",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "predicates": [
-                                {
-                                    "$type": "ByHitElement",
-                                    "GOMLPAOIKJA": "Fire"
-                                }
-                            ],
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_Homeworld_Cooking",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                },
-                "Fire_On": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Fire",
-                    "elementDurability": 25.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_Homeworld_Stoves_01_CookingFire"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "FireBasin_Smoke",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "FirePoint"
-                            }
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_Homeworld_Cooking",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                }
-            }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Homeworld_Standard_Candlelight_Ability",
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachEffect",
-                    "JBHFPDMBFHN": "Eff_SceneObj_LYG_Common_Candlestick01_01"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Homeworld_Standard_Bush_Ability",
-            "HNEIEGHMLKH": {
-                "Restart": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 10.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "FireBasin_Smoke",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornType",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": -0.20000000298023224,
-                                    "PHDCJAHHIOG": 0.0
-                                },
-                                "JBPCKOKLHEB": true
-                            }
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "GrassMaterial"
-                        }
-                    ]
-                },
-                "GrassMaterial": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Grass",
-                    "elementDurability": 30.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_ABILITY_BURNING_IGNITE_ONLY",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 1.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Restart"
-                        }
-                    ]
-                }
+      ],
+      "modifiers": {
+        "OnHomeEditor": {
+          "onAdded": []
+        },
+        "OnHomeWorld": {
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_Homeworld_Cooking",
+              "value": 1
             },
-            "KCICDEJLIJD": [
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Fire_State"
+            }
+          ]
+        },
+        "Fire_State": {
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin", // 计数到0时,移除WindBlade这个modifier
+              "globalValueKey": "_Homeworld_Cooking",
+              "valueSteps": [-0.5, 0.5, 1.5],
+              "modifierNameSteps": ["Fire_Off", "Fire_On"]
+            }
+          ]
+        },
+        "Fire_Off": {
+          "duration": 5,
+          "onBeingHit": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_Homeworld_Cooking",
+              "value": 1,
+              "predicates": [
                 {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "GrassMaterial"
+                  "$type": "ByHitElement",
+                  "element": "Fire"
                 }
-            ],
-            "FEFIHIEHDOM": true
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_Homeworld_Cooking",
+              "value": 1
+            }
+          ]
+        },
+        "Fire_On": {
+          "elementType": "Fire",
+          "elementDurability": 25,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_Griller_FireCook_01",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "FirePoint"
+              }
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "FireBasin_Smoke",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "FirePoint"
+              }
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_Homeworld_Cooking",
+              "value": 0
+            }
+          ]
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Homeworld_Standard_MainBuilding_Ability",
-            "KCICDEJLIJD": [
-                {
-                    "$type": "ChangeTag",
-                    "tag": "Homeworld_Standard_MainBuilding"
-                }
-            ]
-        }
+      }
     }
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // 家园 厨房模板02
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Homeworld_Standard_Cooking_Ability02",
+      "abilityMixins": [
+        {
+          "$type": "HomeworldEnterEditorMixin",
+          "editorModifierNames": ["OnHomeEditor"],
+          "worldModifierNames": ["OnHomeWorld"]
+        }
+      ],
+      "modifiers": {
+        "OnHomeEditor": {
+          "onAdded": []
+        },
+        "OnHomeWorld": {
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_Homeworld_Cooking",
+              "value": 1
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Fire_State"
+            }
+          ]
+        },
+        "Fire_State": {
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin", // 计数到0时,移除WindBlade这个modifier
+              "globalValueKey": "_Homeworld_Cooking",
+              "valueSteps": [-0.5, 0.5, 1.5],
+              "modifierNameSteps": ["Fire_Off", "Fire_On"]
+            }
+          ]
+        },
+        "Fire_Off": {
+          "duration": 5,
+          "onBeingHit": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_Homeworld_Cooking",
+              "value": 1,
+              "predicates": [
+                {
+                  "$type": "ByHitElement",
+                  "element": "Fire"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_Homeworld_Cooking",
+              "value": 1
+            }
+          ]
+        },
+        "Fire_On": {
+          "elementType": "Fire",
+          "elementDurability": 25,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_Homeworld_Stoves_01_CookingFire"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "FireBasin_Smoke",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "FirePoint"
+              }
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_Homeworld_Cooking",
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // 家园 烛光模板
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Homeworld_Standard_Candlelight_Ability",
+      "onAdded": [
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_SceneObj_LYG_Common_Candlestick01_01"
+        }
+      ]
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  家园 灌木模板
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Homeworld_Standard_Bush_Ability",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "GrassMaterial"
+        }
+      ],
+      "modifiers": {
+        "Restart": {
+          "duration": 10,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "FireBasin_Smoke",
+              "born": {
+                "$type": "ConfigBornType",
+                "offset": {
+                  "x": 0.0,
+                  "y": -0.2,
+                  "z": 0.0
+                },
+                "onGround": true
+              }
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "GrassMaterial"
+            }
+          ]
+        },
+        "GrassMaterial": {
+          "elementType": "Wood",
+          "elementDurability": 30,
+          "onAdded": [
+            {
+              //燃烧时免疫其余燃烧攻击
+              "$type": "AddGlobalValue",
+              "key": "_ABILITY_BURNING_IGNITE_ONLY",
+              "value": 1,
+              "useLimitRange": true,
+              "maxValue": 1,
+              "minValue": 1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Restart"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  家园 主建筑模板
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Homeworld_Standard_MainBuilding_Ability",
+      "onAdded": [
+        {
+          "$type": "ChangeTag",
+          "isAdd": false,
+          "tag": "Homeworld_Standard_MainBuilding"
+        }
+      ]
+    }
+  }
 ]

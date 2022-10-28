@@ -1,917 +1,1105 @@
 [
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_StonePillar",
-            "HNEIEGHMLKH": {
-                "BeHitBlunt": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Rock",
-                    "elementDurability": 10.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_StonePillar_01_Destroy",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByNot",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByHitStrikeType"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "Pierce"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "None"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_SceneObj_StonePillar_01_Broken",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "BeHitBlunt"
-                }
-            ]
+  //////////////////////////////////////////////////////////////
+  //
+  // 石柱
+  //
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_StonePillar",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "BeHitBlunt",
+          "target": "Self"
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_StoneWall",
-            "HNEIEGHMLKH": {
-                "BeHitBlunt": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Rock",
-                    "elementDurability": 10.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_StoneWall_01_Destroy",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByNot",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByHitStrikeType"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "Pierce"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "None"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_SceneObj_StoneWall_01_Broken",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "BeHitBlunt"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_StonePile",
-            "HNEIEGHMLKH": {
-                "BeHitBlunt": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Rock",
-                    "elementDurability": 10.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_StonePile_01_Destroy",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByNot",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByHitStrikeType"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "Pierce"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "None"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_SceneObj_StonePillar_01_Broken",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "AttachPoint"
-                            }
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "BeHitBlunt"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_Stone",
-            "HNEIEGHMLKH": {
-                "StoneHit": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "GOGIPDEDKAN": [
-                        {
-                            "$type": "TriggerAttackEvent",
-                            "DMCJDGELKBC": {
-                                "attackPattern": {
-                                    "$type": "ConfigAttackSphere",
-                                    "lifeTime": "TriggerNoRepeat",
-                                    "NGDMCBABOJA": {
-                                        "$type": "ConfigBornByTarget",
-                                        "offset": {
-                                            "AEAAJCIDPED": 0.0,
-                                            "KAAPLGBEDPM": 0.0,
-                                            "PHDCJAHHIOG": 0.0
-                                        }
-                                    },
-                                    "ICGFCBOFFDI": 1.0
-                                },
-                                "attackInfo": {
-                                    "attackTag": "",
-                                    "attenuationTag": "",
-                                    "attenuationGroup": "default",
-                                    "attackProperty": {
-                                        "bonusCriticalHurt": 1.0,
-                                        "damagePercentageRatio": 0.0,
-                                        "elementType": "Rock",
-                                        "elementDurability": 50.0
-                                    },
-                                    "hitPattern": {
-                                        "onHitEffectName": "default",
-                                        "hitImpulseType": "LV6",
-                                        "overrideHitImpulse": {
-                                            "hitLevel": "Air",
-                                            "HPOPMELEPEB": 10.0,
-                                            "hitImpulseY": 10.0
-                                        },
-                                        "hitHaltTimeScale": 0.05000000074505806
-                                    },
-                                    "cameraShake": {
-                                        "shakeRange": 0.36000001430511475,
-                                        "shakeTime": 0.36000001430511475
-                                    }
-                                }
-                            },
-                            "OJIFKEOCJGB": "All"
-                        },
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Stone_Destroy",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "AttachPoint"
-                            }
-                        },
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "AttachPoint"
-                            }
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "StoneHit"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_StonePileWorld",
-            "HNEIEGHMLKH": {
-                "BeHitBlunt": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Rock",
-                    "elementDurability": 25.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_StoneWall_01_Destroy",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByNot",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByHitStrikeType"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "Pierce"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "None"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_SceneObj_StoneWall_01_Broken",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "BeHitBlunt"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_StonePileWorld01",
-            "HNEIEGHMLKH": {
-                "BeHitBlunt1": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Rock",
-                    "elementDurability": 500.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_StoneWall_01_Destroy",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByNot",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByHitStrikeType"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "Pierce"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "None"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_SceneObj_StoneWall_01_Broken",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "BeHitBlunt1"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Broken_StonePile",
-            "HNEIEGHMLKH": {
-                "Broken_StonePile": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "onBeingHit": [
-                        {
-                            "$type": "SetAnimatorInt",
-                            "intID": "gadgetState",
-                            "value": 201.0
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "Broken_StonePile"
-                }
-            ],
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackBox",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "offset": {
-                                    "AEAAJCIDPED": -4.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 0.0
-                                },
-                                "NHPNHKBMAEO": {
-                                    "$type": "ConfigDirectionByEntity",
-                                    "LGPBCMEFEJB": {
-                                        "AEAAJCIDPED": 0.0,
-                                        "KAAPLGBEDPM": 0.0,
-                                        "PHDCJAHHIOG": 0.0
-                                    }
-                                },
-                                "KJNJNKLLNCN": "RootNode"
-                            },
-                            "size": {
-                                "AEAAJCIDPED": 8.0,
-                                "KAAPLGBEDPM": 1.5,
-                                "PHDCJAHHIOG": 1.5
-                            },
-                            "KHMHAACCLDD": true
-                        },
-                        "attackInfo": {
-                            "attackTag": "",
-                            "attenuationTag": "",
-                            "attenuationGroup": "default",
-                            "attackProperty": {
-                                "bonusCriticalHurt": 1.0,
-                                "damagePercentageRatio": 0.0,
-                                "elementDurability": 30.0,
-                                "strikeType": "Default",
-                                "enBreak": 900.0
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "default",
-                                "hitImpulseType": "LV4",
-                                "overrideHitImpulse": {
-                                    "hitLevel": "Air",
-                                    "HPOPMELEPEB": 800.0,
-                                    "hitImpulseY": 0.0
-                                },
-                                "retreatType": "ByHitDirection",
-                                "hitHaltTimeScale": 0.05000000074505806
-                            }
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_StonePileDungeon",
-            "HNEIEGHMLKH": {
-                "BeHitBlunt": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Rock",
-                    "elementDurability": 25.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_Dungeon_StonePillar_Destory",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByNot",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByHitStrikeType"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "Pierce"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "None"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_SceneObj_StoneWall_01_Broken",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 0.0
-                                }
-                            }
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "BeHitBlunt"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_StoneStackDungeon",
-            "HNEIEGHMLKH": {
-                "BeHitBlunt": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Rock",
-                    "elementDurability": 25.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_Dungeon_StoneStack01_Destory",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByNot",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByHitStrikeType"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "Pierce"
-                                        },
-                                        {
-                                            "$type": "ByHitStrikeType",
-                                            "strikeType": "None"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_SceneObj_StoneWall_01_Broken",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": -3.0,
-                                    "PHDCJAHHIOG": 0.0
-                                }
-                            }
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "BeHitBlunt"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_FlyFloor",
-            "HNEIEGHMLKH": {
-                "Floor": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "OGFFGLGEOGF": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_FlyingStone_Disapear"
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "SetAnimatorInt",
-                    "intID": "Has_Born",
-                    "value": 1.0
-                },
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_FlyingStone_Appear"
-                },
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "Floor"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_FlyFloorBlue",
-            "HNEIEGHMLKH": {
-                "Floor": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "OGFFGLGEOGF": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_FlyingStoneBlue_Disapear"
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "SetAnimatorInt",
-                    "intID": "Has_Born",
-                    "value": 1.0
-                },
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_FlyingStoneBlue_Appear"
-                },
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "Floor"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Task_Rock_Pierce",
-            "HNEIEGHMLKH": {
-                "BeHitPierce": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Rock",
-                    "elementDurability": 10.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_StonePillar_01_Destroy",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByHitStrikeType",
-                                    "strikeType": "Pierce"
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_SceneObj_StonePillar_01_Broken",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget"
-                            }
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "BeHitPierce"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_SaviorStone",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "GAIGOBCNNEE": "Default_0"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 201,
-                    "GAIGOBCNNEE": "GearStart_201"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 202,
-                    "GAIGOBCNNEE": "GearStop_202"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 203,
-                    "GAIGOBCNNEE": "GearAction01_203"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "Default_0": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0
-                },
-                "GearStart_201": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "TriggerBullet",
-                            "NGAAOMEHOGE": 70360072,
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 0.0
-                                },
-                                "NHPNHKBMAEO": {
-                                    "$type": "ConfigDirectionByEntity",
-                                    "LGPBCMEFEJB": {
-                                        "AEAAJCIDPED": 0.0,
-                                        "KAAPLGBEDPM": 180.0,
-                                        "PHDCJAHHIOG": 0.0
-                                    }
-                                },
-                                "KJNJNKLLNCN": "ShootPoint1"
-                            }
-                        }
-                    ]
-                },
-                "GearStop_202": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "TriggerBullet",
-                            "NGAAOMEHOGE": 70360072,
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 0.0
-                                },
-                                "NHPNHKBMAEO": {
-                                    "$type": "ConfigDirectionByEntity",
-                                    "LGPBCMEFEJB": {
-                                        "AEAAJCIDPED": 0.0,
-                                        "KAAPLGBEDPM": 0.0,
-                                        "PHDCJAHHIOG": 0.0
-                                    }
-                                },
-                                "KJNJNKLLNCN": "ShootPoint2"
-                            }
-                        }
-                    ]
-                },
-                "GearAction01_203": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "TriggerBullet",
-                            "NGAAOMEHOGE": 70360072,
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 0.0
-                                },
-                                "NHPNHKBMAEO": {
-                                    "$type": "ConfigDirectionByEntity",
-                                    "LGPBCMEFEJB": {
-                                        "AEAAJCIDPED": 0.0,
-                                        "KAAPLGBEDPM": 0.0,
-                                        "PHDCJAHHIOG": 0.0
-                                    }
-                                },
-                                "KJNJNKLLNCN": "ShootPoint3"
-                            }
-                        }
-                    ]
-                }
+      ],
+      "modifiers": {
+        "BeHitBlunt": {
+          "elementType": "Rock",
+          "elementDurability": 10,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
             }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Environment_Rock_SaviorStone_Fragment",
-            "HKBHLMNEMKM": [
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StonePillar_01_Broken",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              },
+              "predicates": [
                 {
-                    "$type": "FireEffect",
-                    "predicates": [
-                        {
-                            "$type": "ByNot",
-                            "predicates": [
-                                {
-                                    "$type": "ByAttackNotHitScene",
-                                    "attackPattern": {
-                                        "$type": "ConfigAttackSphere",
-                                        "lifeTime": "TriggerNoRepeat",
-                                        "NGDMCBABOJA": {
-                                            "$type": "ConfigBornBySelf"
-                                        },
-                                        "ICGFCBOFFDI": 2.0
-                                    },
-                                    "AKDGLEOGNGO": true
-                                }
-                            ]
-                        }
-                    ],
-                    "JBHFPDMBFHN": "Eff_Drop_Rock_Hit",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByAttachPoint",
-                        "JBPCKOKLHEB": true,
-                        "KJNJNKLLNCN": "attachPoint"
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Default"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Pierce"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "None"
                     }
-                },
-                {
-                    "$type": "KillSelf",
-                    "predicates": [
-                        {
-                            "$type": "ByNot",
-                            "predicates": [
-                                {
-                                    "$type": "ByAttackNotHitScene",
-                                    "attackPattern": {
-                                        "$type": "ConfigAttackSphere",
-                                        "lifeTime": "TriggerNoRepeat",
-                                        "NGDMCBABOJA": {
-                                            "$type": "ConfigBornBySelf"
-                                        },
-                                        "ICGFCBOFFDI": 2.0
-                                    },
-                                    "AKDGLEOGNGO": true
-                                }
-                            ]
-                        }
-                    ]
+                  ]
                 }
-            ]
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StonePillar_01_Destroy",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              }
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
         }
+      }
     }
+  },
+  //////////////////////////////////////////////////////////////
+  //
+  // 石墙
+  //
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_StoneWall",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "BeHitBlunt",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "BeHitBlunt": {
+          "elementType": "Rock",
+          "elementDurability": 10,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StoneWall_01_Broken",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              },
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Default"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Pierce"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "None"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StoneWall_01_Destroy",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              }
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////////////
+  //
+  // 碎石堆
+  //
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_StonePile",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "BeHitBlunt"
+        }
+      ],
+      "modifiers": {
+        "BeHitBlunt": {
+          "elementType": "Rock",
+          "elementDurability": 10,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StonePillar_01_Broken",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPoint"
+              },
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Default"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Pierce"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "None"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StonePile_01_Destroy",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              }
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  //////////////////////////////////////////////////////////////
+  //
+  // 石块
+  // 关联ID：70220009
+  //
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_Stone",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "StoneHit"
+        }
+      ],
+      "modifiers": {
+        "StoneHit": {
+          "onCrash": [
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "All",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "duration": 0.0,
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 1,
+                  "born": {
+                    "$type": "ConfigBornByTarget",
+                    //"attachPointName" : "RootNode",
+                    "offset": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                },
+                "attackInfo": {
+                  "attackProperty": {
+                    "damagePercentage": 1,
+                    "elementType": "Rock",
+                    "elementDurability": 50
+                  },
+                  "hitPattern": {
+                    "hitImpulseType": "LV6",
+                    "overrideHitImpulse": {
+                      "hitLevel": "Air",
+                      "hitImpulseX": 10,
+                      "hitImpulseY": 10
+                    },
+                    "reboundRatio": 0,
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.05,
+                    "muteHitText": false
+                  },
+                  "forceCameraShake": false,
+                  "cameraShake": {
+                    "shakeRange": 0.36,
+                    "shakeTime": 0.36
+                  }
+                }
+              }
+            },
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Stone_Destroy",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPoint"
+              }
+            },
+            {
+              "$type": "FireEffect",
+              "effectPattern": "",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPoint"
+              }
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////////////
+  //
+  // 遗迹碎石堆
+  //
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Common_Property_Stone_RuinStonePile_02",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "BeHitBlunt"
+        }
+      ],
+      "modifiers": {
+        "BeHitBlunt": {
+          "elementType": "Rock",
+          "elementDurability": 25,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StoneWall_01_Broken",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              },
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Default"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Pierce"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "None"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_RuinStonePile_01_Destroy",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              }
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////////////
+  //
+  // 碎石堆_大世界
+  //
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_StonePileWorld",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "BeHitBlunt"
+        }
+      ],
+      "modifiers": {
+        "BeHitBlunt": {
+          "elementType": "Rock",
+          "elementDurability": 25,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StoneWall_01_Broken",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              },
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Default"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Pierce"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "None"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StoneWall_01_Destroy",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              }
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////////////
+  //
+  // 护送玩法路途障碍_大世界
+  //
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_StonePileWorld01",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "BeHitBlunt1"
+        }
+      ],
+      "modifiers": {
+        "BeHitBlunt1": {
+          "elementType": "Rock",
+          "elementDurability": 500,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StoneWall_01_Broken",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              },
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Default"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Pierce"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "None"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StoneWall_01_Destroy",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              }
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////////////
+  //
+  //  侵蚀石柱
+  //	关联ID：70900301
+  //
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Broken_StonePile",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "Broken_StonePile"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackBox",
+              "triggerType": "TriggerNoRepeat",
+              "muteHitBehindScene": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "RootNode",
+                "offset": {
+                  "x": -4.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 0.0, //角度偏移
+                    "z": 0.0
+                  }
+                }
+              },
+              "size": {
+                "x": 8.0,
+                "y": 1.5,
+                "z": 1.5
+              }
+            },
+            "attackInfo": {
+              "attackProperty": {
+                "damagePercentage": 1,
+                "elementType": "None",
+                "elementDurability": 30,
+                "strikeType": "Default",
+                "enBreak": 900
+              },
+              "hitPattern": {
+                "retreatType": "ByHitDirection",
+                "hitImpulseType": "LV4",
+                "overrideHitImpulse": {
+                  "hitLevel": "Air", //hitlevel = 2
+                  "hitImpulseX": 800, //hitlevel = 2
+                  "hitImpulseY": 0 //hitlevel = 2
+                },
+                "reboundRatio": 0,
+                "hitHaltTime": 0.0,
+                "hitHaltTimeScale": 0.05,
+                "muteHitText": false
+              }
+            }
+          }
+        }
+      ],
+      "modifiers": {
+        "Broken_StonePile": {
+          "onBeingHit": [
+            {
+              "$type": "SetAnimatorInt",
+              "intID": "gadgetState",
+              "value": 201
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////////////
+  //
+  // 断裂石柱地城
+  //
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_StonePileDungeon",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "BeHitBlunt"
+        }
+      ],
+      "modifiers": {
+        "BeHitBlunt": {
+          "elementType": "Rock",
+          "elementDurability": 25,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StoneWall_01_Broken",
+              "born": {
+                "$type": "ConfigBornByTarget",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Default"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Pierce"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "None"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_Dungeon_StonePillar_Destory",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              }
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////////////
+  //
+  // 断裂石墙地城
+  //
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_StoneStackDungeon",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "BeHitBlunt"
+        }
+      ],
+      "modifiers": {
+        "BeHitBlunt": {
+          "elementType": "Rock",
+          "elementDurability": 25,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StoneWall_01_Broken",
+              "born": {
+                "$type": "ConfigBornByTarget",
+                "offset": {
+                  "x": 0.0,
+                  "y": -3.0,
+                  "z": 0.0
+                }
+              },
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Default"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Pierce"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "None"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_Dungeon_StoneStack01_Destory",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              }
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ///////////////////////////////////////
+  //
+  // 岩浮板
+  //
+  ////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_FlyFloor",
+      "onAdded": [
+        {
+          "$type": "SetAnimatorInt",
+          "intID": "Has_Born",
+          "value": 1
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_FlyingStone_Appear"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Floor"
+        }
+      ],
+      "modifiers": {
+        "Floor": {
+          "onKill": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_FlyingStone_Disapear"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ///////////////////////////////////////
+  //
+  // 岩浮板（蓝色）
+  //
+  ////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_FlyFloorBlue",
+      "onAdded": [
+        {
+          "$type": "SetAnimatorInt",
+          "intID": "Has_Born",
+          "value": 1
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_FlyingStoneBlue_Appear"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Floor"
+        }
+      ],
+      "modifiers": {
+        "Floor": {
+          "onKill": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_FlyingStoneBlue_Disapear"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ///////////////////////////////////////
+  //
+  // 魈任务线————受Pierce触发
+  //
+  ////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Task_Rock_Pierce",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "BeHitPierce",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "BeHitPierce": {
+          "elementType": "Rock",
+          "elementDurability": 10,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StonePillar_01_Broken",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              },
+              "predicates": [
+                {
+                  "$type": "ByHitStrikeType",
+                  "strikeType": "Pierce"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_StonePillar_01_Destroy",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              }
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  ///////////////////////////////////////
+  //
+  //  靖世九柱
+  //
+  ////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_SaviorStone",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "Default_0"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "GearStart_201"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 202,
+          "modifierName": "GearStop_202"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 203,
+          "modifierName": "GearAction01_203"
+        }
+      ],
+      "modifiers": {
+        "Default_0": {},
+        "GearStart_201": {
+          "onAdded": [
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 70360072,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "ShootPoint1",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 180.0, //角度偏移
+                    "z": 0.0
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "GearStop_202": {
+          "onAdded": [
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 70360072,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "ShootPoint2",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 0.0, //角度偏移
+                    "z": 0.0
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "GearAction01_203": {
+          "onAdded": [
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 70360072,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "ShootPoint3",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 0.0, //角度偏移
+                    "z": 0.0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  ////////////////////////////////////////////
+  //
+  //  靖世碎片
+  //
+  /////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Environment_Rock_SaviorStone_Fragment",
+      "onAdded": [],
+      "onAbilityStart": [
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Drop_Rock_Hit",
+          "born": {
+            "$type": "ConfigBornByAttachPoint",
+            "attachPointName": "attachPoint",
+            "onGround": true
+          },
+          "predicates": [
+            {
+              "$type": "ByNot",
+              "predicates": [
+                {
+                  "$type": "ByAttackNotHitScene",
+                  "attackPattern": {
+                    "$type": "ConfigAttackSphere",
+                    "triggerType": "TriggerNoRepeat",
+                    "radius": 2,
+                    "born": {
+                      "$type": "ConfigBornBySelf"
+                    }
+                  },
+                  "checkWaterLayer": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$type": "KillSelf",
+          "predicates": [
+            {
+              "$type": "ByNot",
+              "predicates": [
+                {
+                  "$type": "ByAttackNotHitScene",
+                  "attackPattern": {
+                    "$type": "ConfigAttackSphere",
+                    "triggerType": "TriggerNoRepeat",
+                    "radius": 2,
+                    "born": {
+                      "$type": "ConfigBornBySelf"
+                    }
+                  },
+                  "checkWaterLayer": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  //////////////////////////////////////////////////////////////
+  //
+  // 水脉碎石堆
+  //
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Common_Property_Prop_WaterStoneObstacle_01",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "BeHitBlunt"
+        }
+      ],
+      "modifiers": {
+        "BeHitBlunt": {
+          "elementType": "Rock",
+          "elementDurability": 10,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_ScenObj_WaterStoneObstacle_01_Broken",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPoint"
+              },
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Default"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "Pierce"
+                    },
+                    {
+                      "$type": "ByHitStrikeType",
+                      "strikeType": "None"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_ScenObj_WaterStoneObstacle_01"
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  }
 ]

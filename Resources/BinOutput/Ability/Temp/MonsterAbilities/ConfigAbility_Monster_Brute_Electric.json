@@ -1,2390 +1,2343 @@
 [
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_Pose",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachModifierToSelfGlobalValueMixin",
-                    "BPCFCANOMNH": "_POSE_TAG_",
-                    "FEGIOIGELHB": 0.0,
-                    "CMEDACODLEA": [
-                        -0.5,
-                        0.5,
-                        1.5,
-                        2.5,
-                        3.5
-                    ],
-                    "MIEPCOONDEM": [
-                        "Pose_NoPower",
-                        "Pose_Power",
-                        "Pose_Weak",
-                        "Pose_ExitPower"
-                    ]
-                },
-                {
-                    "$type": "AttachToPoseIDMixin",
-                    "poseIDs": [
-                        901,
-                        902,
-                        903
-                    ],
-                    "GAIGOBCNNEE": "ExitBattle"
-                },
-                {
-                    "$type": "ServerFinishWatcherMixin",
-                    "GPGMPHIIAMD": 82095,
-                    "predicates": [
-                        {
-                            "$type": "ByTargetGlobalValue",
-                            "NPHOOPNDCAC": "Self",
-                            "HJJEAOMEOFI": "_WATCHER_82095_",
-                            "value": 1.0
-                        }
-                    ]
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "Pose_NoPower": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetPoseInt",
-                            "intID": "CoreState"
-                        },
-                        {
-                            "$type": "SetAISkillGCD",
-                            "CFIPAGENGPE": true,
-                            "weight": 4.0
-                        }
-                    ]
-                },
-                "Pose_Power": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetPoseInt",
-                            "intID": "CoreState",
-                            "weight": 1
-                        },
-                        {
-                            "$type": "SetAnimatorBool",
-                            "HHFIHBEAPAP": "PowerState",
-                            "value": true
-                        },
-                        {
-                            "$type": "SetAISkillGCD",
-                            "weight": 1.7000000476837158
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Brute_Electric_HandEffect"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Brute_Electric_ElementShield"
-                        },
-                        {
-                            "$type": "AttachModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Brute_Electric_SoundEffect"
-                        },
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_POWERUP_COUNT_",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 2.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                },
-                "Pose_Weak": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetPoseInt",
-                            "intID": "CoreState",
-                            "weight": 2
-                        }
-                    ]
-                },
-                "Pose_ExitPower": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetPoseInt",
-                            "intID": "CoreState",
-                            "weight": 3
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetAISkillCDAvailableNow",
-                            "FJNGOGJOBEE": [
-                                11
-                            ]
-                        }
-                    ]
-                },
-                "UNIQUE_Monster_Brute_Electric_ElementShield": {
-                    "FGJPBKGPNJJ": "Unique",
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "GMIMMDOGGIO": 90.0,
-                    "elementType": "Electric",
-                    "elementDurability": 450.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        },
-                        {
-                            "$type": "VelocityForceMixin",
-                            "MPGPCCEHFGL": [
-                                "WindZoneType"
-                            ]
-                        }
-                    ],
-                    "FFOHEEFOELN": {
-                        "Actor_EndureDelta": 0.0
-                    },
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_ELEMENTSHIELD_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_WATCHER_82095_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 3.0,
-                            "HJJEAOMEOFI": "_POSE_TAG_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_ELEMENTSHIELD_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_WATCHER_82095_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                },
-                "UNIQUE_Monster_Brute_Electric_HandEffect": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_LeftHand"
-                        },
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_RightHand"
-                        }
-                    ]
-                },
-                "UNIQUE_Monster_Brute_Electric_SoundEffect": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_PowerSound",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "RootNode"
-                            }
-                        }
-                    ]
-                },
-                "ExitBattle": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Brute_Electric_ElementShield"
-                        },
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Brute_Electric_SoundEffect"
-                        },
-                        {
-                            "$type": "SetAISkillCDAvailableNow",
-                            "FJNGOGJOBEE": [
-                                1
-                            ]
-                        },
-                        {
-                            "$type": "SetPoseInt",
-                            "intID": "CoreState"
-                        },
-                        {
-                            "$type": "SetAISkillGCD",
-                            "weight": 7.0
-                        },
-                        {
-                            "$type": "SetAnimatorBool",
-                            "HHFIHBEAPAP": "PowerState"
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_POSE_TAG_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "SetAnimatorBool",
-                            "HHFIHBEAPAP": "PowerState"
-                        },
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Brute_Electric_HandEffect"
-                        }
-                    ]
-                }
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Pose
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_Pose",
+      "abilityMixins": [
+        // 0 : 未强化
+        // 1 : 强化
+        // 2 : 虚弱
+        // 3 : 退出强化
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_POSE_TAG_",
+          "valueSteps": [-0.5, 0.5, 1.5, 2.5, 3.5],
+          "modifierNameSteps": [
+            "Pose_NoPower",
+            "Pose_Power",
+            "Pose_Weak",
+            "Pose_ExitPower"
+          ]
+        },
+        {
+          "$type": "AttachToPoseIDMixin",
+          "poseIDs": [901, 902, 903],
+          "modifierName": "ExitBattle"
+        },
+        {
+          "$type": "ServerFinishWatcherMixin",
+          "watcherId": 82095,
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_WATCHER_82095_",
+              "value": 1,
+              "compareType": "Equal"
             }
+          ]
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_PowerUp",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachModifierToSelfGlobalValueMixin",
-                    "BPCFCANOMNH": "_POWERUP_COUNT_",
-                    "FEGIOIGELHB": 0.0,
-                    "CMEDACODLEA": [
-                        -0.5,
-                        0.5,
-                        99.0
-                    ],
-                    "MIEPCOONDEM": [
-                        "FirstPowerUp",
-                        "Empty"
-                    ]
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "FirstPowerUp": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetAISkillCDAvailableNow",
-                            "CFIPAGENGPE": true,
-                            "FJNGOGJOBEE": [
-                                1
-                            ]
-                        }
-                    ]
-                },
-                "Empty": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0
-                }
+      ],
+      "modifiers": {
+        "Pose_NoPower": {
+          "onAdded": [
+            {
+              "$type": "SetPoseInt",
+              "intID": "CoreState",
+              "value": 0
             },
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "SetGlobalValue",
-                    "value": 1.0,
-                    "HJJEAOMEOFI": "_POSE_TAG_",
-                    "JDHHMBHOOEC": 0.0,
-                    "KHAHOELDONA": 0.0
-                }
-            ],
-            "OGFFGLGEOGF": [
-                {
-                    "$type": "RemoveUniqueModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Brute_Electric_ElementShield"
-                },
-                {
-                    "$type": "RemoveUniqueModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Brute_Electric_SoundEffect"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_HeadCountrol",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToAnimatorStateIDMixin",
-                    "stateIDs": [
-                        "Born"
-                    ],
-                    "GAIGOBCNNEE": "HeadControl_Disable"
-                },
-                {
-                    "$type": "AttachToAnimatorStateIDMixin",
-                    "stateIDs": [
-                        "PowerUp"
-                    ],
-                    "GAIGOBCNNEE": "HeadControl_Enable"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "HeadControl_Disable": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "EnableHeadControl"
-                        }
-                    ]
-                },
-                "HeadControl_Enable": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "EnableHeadControl",
-                            "enable": true
-                        }
-                    ]
-                }
+            {
+              "$type": "SetAISkillGCD",
+              "value": 4,
+              "canBeHandledOnRecover": true
             }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_PowerUp_ShakeCamera",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "ActCameraShake",
-                    "cameraShake": {
-                        "shakeRange": 4.0,
-                        "shakeTime": 0.4000000059604645,
-                        "shakeDistance": 40.0,
-                        "extension": {}
-                    },
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf"
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_PowerDown",
-            "HNEIEGHMLKH": {
-                "Brute_Electric_ExitPower_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.800000011920929,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Brute_Electric_ExitPower_ForSure"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Brute_Electric_ExitPower"
-                        }
-                    ]
-                },
-                "Brute_Electric_ExitPower_ForSure": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 5.0,
-                    "elementDurability": 100.0,
-                    "AMJKBHJBBGN": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Brute_Electric_ExitPower"
-                        }
-                    ],
-                    "HNOLIHHLCOO": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Brute_Electric_ExitPower"
-                        }
-                    ]
-                },
-                "Brute_Electric_ExitPower": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetAnimatorBool",
-                            "HHFIHBEAPAP": "PowerState"
-                        },
-                        {
-                            "$type": "SetAISkillGCD",
-                            "weight": 4.0
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_POSE_TAG_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Brute_Electric_HandEffect"
-                        }
-                    ]
-                }
+          ]
+        },
+        "Pose_Power": {
+          "onAdded": [
+            {
+              "$type": "SetPoseInt",
+              "intID": "CoreState",
+              "value": 1
             },
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "Brute_Electric_ExitPower_Handler"
-                }
-            ],
-            "OGFFGLGEOGF": [
-                {
-                    "$type": "RemoveUniqueModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Brute_Electric_HandEffect"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Brute_Electric_Crystal_ElementShield",
-            "HNEIEGHMLKH": {
-                "UNIQUE_Crystal_Eff": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_ElectricCrystal"
-                        }
-                    ]
-                },
-                "Crystal_ElementShield": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Electric",
-                    "elementDurability": 75.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ElementShieldMixin",
-                            "elementType": "Electric",
-                            "FMAPKFDKKPB": "",
-                            "KFDBBJLMOKJ": 360.0,
-                            "PDGJDMOFOAO": 1.0,
-                            "damageRatio": 0.0
-                        }
-                    ],
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_KILLDELAY_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "TriggerAbility",
-                            "abilityName": "Brute_Electric_Crystal_Kill"
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_ElectricCrystal_BeHit"
-                        },
-                        {
-                            "$type": "Predicated",
-                            "NPHOOPNDCAC": "Target",
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByAttackTags",
-                                    "NMJGDKCDFOJ": [
-                                        "Brute_Electric_None_ActivateCrystal"
-                                    ]
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "SetGlobalValue",
-                                    "value": 1.0,
-                                    "HJJEAOMEOFI": "_KILLDELAY_",
-                                    "JDHHMBHOOEC": 0.0,
-                                    "KHAHOELDONA": 0.0
-                                },
-                                {
-                                    "$type": "RemoveModifier",
-                                    "GAIGOBCNNEE": "Crystal_ElementShield"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "Crystal_KillTimer": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 20.0,
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_KILLDELAY_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "RemoveModifier",
-                            "GAIGOBCNNEE": "Crystal_ElementShield"
-                        }
-                    ]
-                }
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "PowerState",
+              "value": true
             },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Crystal_Eff"
-                },
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "Crystal_ElementShield"
-                },
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "Crystal_KillTimer"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Brute_Electric_Crystal_Kill",
-            "HNEIEGHMLKH": {
-                "Crystal_Kill_Delay": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 2.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "HideUIBillBoard",
-                            "COCENMAFJGD": true
-                        },
-                        {
-                            "$type": "EnableHitBoxByName",
-                            "EACGOCFODIC": [
-                                "CoreHitBox"
-                            ]
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "DenyLockOn"
-                        },
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_ElectricCrystal_DamageAlert"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Crystal_Eff"
-                        },
-                        {
-                            "$type": "TriggerAttackEvent",
-                            "DMCJDGELKBC": {
-                                "attackPattern": {
-                                    "$type": "ConfigAttackSphere",
-                                    "lifeTime": "TriggerNoRepeat",
-                                    "NGDMCBABOJA": {
-                                        "$type": "ConfigBornBySelf",
-                                        "offset": {
-                                            "AEAAJCIDPED": 0.0,
-                                            "KAAPLGBEDPM": 0.0,
-                                            "PHDCJAHHIOG": 0.0
-                                        }
-                                    },
-                                    "ICGFCBOFFDI": 3.0
-                                },
-                                "attackInfo": {
-                                    "attackTag": "",
-                                    "attenuationTag": "",
-                                    "attenuationGroup": "default",
-                                    "attackProperty": {
-                                        "bonusCriticalHurt": 1.0,
-                                        "damagePercentageRatio": 0.0,
-                                        "elementType": "Electric",
-                                        "elementDurability": 25.0,
-                                        "enBreak": 50.0
-                                    },
-                                    "hitPattern": {
-                                        "onHitEffectName": "default",
-                                        "hitImpulseType": "LV4",
-                                        "hitHaltTimeScale": 0.10000000149011612
-                                    },
-                                    "canBeModifiedBy": "OriginOwner"
-                                }
-                            },
-                            "OJIFKEOCJGB": "Enemy"
-                        },
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_ElectricCrystal_Damage"
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ]
-                },
-                "DenyLockOn": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "state": "DenyLockOn"
-                },
-                "Crystal_Kill_Immediately": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.20000000298023224,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_ElectricCrystal_AS"
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ]
-                }
+            {
+              "$type": "SetAISkillGCD",
+              "value": 1.7
             },
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "ApplyModifier",
-                    "predicates": [
-                        {
-                            "$type": "ByTargetGlobalValue",
-                            "NPHOOPNDCAC": "Self",
-                            "HJJEAOMEOFI": "_KILLDELAY_",
-                            "value": 1.0
-                        }
-                    ],
-                    "GAIGOBCNNEE": "Crystal_Kill_Delay"
-                },
-                {
-                    "$type": "ApplyModifier",
-                    "predicates": [
-                        {
-                            "$type": "ByTargetGlobalValue",
-                            "NPHOOPNDCAC": "Self",
-                            "HJJEAOMEOFI": "_KILLDELAY_",
-                            "value": 0.0
-                        }
-                    ],
-                    "GAIGOBCNNEE": "Crystal_Kill_Immediately"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_DoubleSmash_CreateCrystal",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "CreateGadget",
-                    "NJEOPILMKCN": true,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 3.0,
-                            "KAAPLGBEDPM": 0.0,
-                            "PHDCJAHHIOG": 3.0
-                        },
-                        "HAGMNJAHNLG": {
-                            "$type": "BornRandomFromCenter",
-                            "LJCNOPEIJEF": 0.5,
-                            "MFBOELKCPDP": 1.5
-                        },
-                        "JBPCKOKLHEB": true,
-                        "CGHFADKHNKK": true
-                    },
-                    "CABLIPAKCGB": 42102019,
-                    "DOLAJLACEDF": 5005,
-                    "CEBMHIFOHJM": true
-                },
-                {
-                    "$type": "Randomed",
-                    "PLKDGIELEEF": 0.5,
-                    "NCNDEAPMKCP": [
-                        {
-                            "$type": "CreateGadget",
-                            "NJEOPILMKCN": true,
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": -3.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 3.0
-                                },
-                                "HAGMNJAHNLG": {
-                                    "$type": "BornRandomFromCenter",
-                                    "LJCNOPEIJEF": 0.5,
-                                    "MFBOELKCPDP": 1.5
-                                },
-                                "JBPCKOKLHEB": true,
-                                "CGHFADKHNKK": true
-                            },
-                            "CABLIPAKCGB": 42102019,
-                            "DOLAJLACEDF": 5005,
-                            "CEBMHIFOHJM": true
-                        }
-                    ]
-                },
-                {
-                    "$type": "SetAISkillCDAvailableNow",
-                    "FJNGOGJOBEE": [
-                        502
-                    ]
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_JumpRange",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "Predicated",
-                    "NPHOOPNDCAC": "SelfAttackTarget",
-                    "ELDBAFHCOBL": [
-                        {
-                            "$type": "ByTargetPositionToSelfPosition",
-                            "GMFCOCAJBDM": "LesserOrEqual",
-                            "value": 5.0
-                        }
-                    ],
-                    "BMIOBLGLPIM": [
-                        {
-                            "$type": "TryFindBlinkPointByBorn",
-                            "NPHOOPNDCAC": "SelfAttackTarget",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByTarget",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": -2.0
-                                }
-                            },
-                            "GIEHOPEJIMK": "BlinkHitSceneTestByThreeSegments",
-                            "ILELFGNFDLO": 2.5
-                        },
-                        {
-                            "$type": "FixedMonsterRushMove",
-                            "FJCBIPKOKMF": {
-                                "$type": "ConfigBornByTeleportToPoint"
-                            },
-                            "FPIJACIKJKL": 0.8100000023841858,
-                            "MPOEADACOHO": [
-                                "JumpAttack",
-                                "JumpAttackPower",
-                                "DeadlyCombo_JumpAttack"
-                            ],
-                            "AGIKEIFOMLO": "",
-                            "POGPMFFDEMG": true
-                        }
-                    ]
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_JumpAttack_Alert",
-            "HNEIEGHMLKH": {
-                "JumpAttackAlertEffect": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "Predicated",
-                            "NPHOOPNDCAC": "SelfAttackTarget",
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetPositionToSelfPosition",
-                                    "GMFCOCAJBDM": "LesserOrEqual",
-                                    "value": 5.0
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "FireEffect",
-                                    "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_JumpAttack_Alert",
-                                    "NGDMCBABOJA": {
-                                        "$type": "ConfigBornBySelf",
-                                        "offset": {
-                                            "AEAAJCIDPED": 0.0,
-                                            "KAAPLGBEDPM": 0.0,
-                                            "PHDCJAHHIOG": 3.1500000953674316
-                                        }
-                                    }
-                                }
-                            ],
-                            "BMIOBLGLPIM": [
-                                {
-                                    "$type": "FireEffect",
-                                    "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_JumpAttack_Alert",
-                                    "NGDMCBABOJA": {
-                                        "$type": "ConfigBornByRushToPoint",
-                                        "offset": {
-                                            "AEAAJCIDPED": 0.0,
-                                            "KAAPLGBEDPM": 0.0,
-                                            "PHDCJAHHIOG": 0.0
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "JumpCollider": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.800000011920929,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "TriggerSetCastShadow"
-                        },
-                        {
-                            "$type": "EnablePushColliderName",
-                            "LEHFIPJFKBC": [
-                                "PushCollider"
-                            ]
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "TriggerSetCastShadow",
-                            "BGJPIMFBHDP": true
-                        },
-                        {
-                            "$type": "EnablePushColliderName",
-                            "LEHFIPJFKBC": [
-                                "PushCollider"
-                            ],
-                            "PAHBCOACBAI": true
-                        }
-                    ]
-                }
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_Monster_Brute_Electric_HandEffect"
             },
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "JumpAttackAlertEffect"
-                },
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "JumpCollider"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_JumpAttack_Damage",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackCircle",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 2.0
-                                }
-                            },
-                            "secondHeight": 2.5,
-                            "ICGFCBOFFDI": 5.0
-                        },
-                        "attackInfo": {
-                            "attackTag": "",
-                            "attenuationTag": "",
-                            "attenuationGroup": "default",
-                            "attackProperty": {
-                                "bonusCriticalHurt": 2.0,
-                                "damagePercentageRatio": 0.0,
-                                "elementDurability": 100.0,
-                                "strikeType": "Blunt",
-                                "enBreak": 200.0
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "default",
-                                "hitImpulseType": "LV8",
-                                "hitHaltTimeScale": 0.009999999776482582
-                            },
-                            "forceCameraShake": true,
-                            "cameraShake": {
-                                "shakeType": "CustomVector",
-                                "shakeRange": 5.0,
-                                "shakeTime": 0.20000000298023224,
-                                "shakeDistance": 35.0,
-                                "shakeDir": {
-                                    "_y": 2.0
-                                },
-                                "extension": {}
-                            }
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_JumpAttack_Lightning",
-            "HNEIEGHMLKH": {
-                "JumpAttack_CreateLightningArea": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.20000000298023224,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "CreateGadget",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 10.5
-                                },
-                                "JBPCKOKLHEB": true,
-                                "CGHFADKHNKK": true
-                            },
-                            "CABLIPAKCGB": 42102020,
-                            "DOLAJLACEDF": 4001
-                        }
-                    ]
-                },
-                "JumpAttack_CreateLightningArea_Power": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.20000000298023224,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "CreateGadget",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 10.5
-                                },
-                                "JBPCKOKLHEB": true,
-                                "CGHFADKHNKK": true
-                            },
-                            "CABLIPAKCGB": 42102020,
-                            "DOLAJLACEDF": 4001
-                        },
-                        {
-                            "$type": "CreateGadget",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 8.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": -5.0
-                                },
-                                "JBPCKOKLHEB": true,
-                                "CGHFADKHNKK": true
-                            },
-                            "CABLIPAKCGB": 42102020,
-                            "DOLAJLACEDF": 4001
-                        },
-                        {
-                            "$type": "CreateGadget",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": -8.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": -5.0
-                                },
-                                "JBPCKOKLHEB": true,
-                                "CGHFADKHNKK": true
-                            },
-                            "CABLIPAKCGB": 42102020,
-                            "DOLAJLACEDF": 4001
-                        }
-                    ]
-                }
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_Monster_Brute_Electric_ElementShield"
             },
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "ApplyModifier",
-                    "predicates": [
-                        {
-                            "$type": "ByTargetGlobalValue",
-                            "NPHOOPNDCAC": "Self",
-                            "HJJEAOMEOFI": "_POSE_TAG_",
-                            "value": 0.0
-                        }
-                    ],
-                    "GAIGOBCNNEE": "JumpAttack_CreateLightningArea"
-                },
-                {
-                    "$type": "ApplyModifier",
-                    "predicates": [
-                        {
-                            "$type": "ByTargetGlobalValue",
-                            "NPHOOPNDCAC": "Self",
-                            "HJJEAOMEOFI": "_POSE_TAG_",
-                            "value": 1.0
-                        }
-                    ],
-                    "GAIGOBCNNEE": "JumpAttack_CreateLightningArea_Power"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Brute_Electric_LightningArea",
-            "HNEIEGHMLKH": {
-                "LightningArea_Eff": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_JumpAttack_LightningAlert",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 0.0
-                                },
-                                "JBPCKOKLHEB": true,
-                                "ANAGBFPADIE": true
-                            }
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "CreateGadget",
-                            "NPHOOPNDCAC": "Owner",
-                            "OAKAJFOAANM": true,
-                            "NJEOPILMKCN": true,
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 0.0
-                                },
-                                "JBPCKOKLHEB": true,
-                                "CGHFADKHNKK": true
-                            },
-                            "CABLIPAKCGB": 42102019,
-                            "DOLAJLACEDF": 5005,
-                            "CEBMHIFOHJM": true
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "LightningArea_Damage"
-                        }
-                    ]
-                },
-                "LightningArea_Damage": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.30000001192092896,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "TriggerAttackEvent",
-                            "DMCJDGELKBC": {
-                                "attackPattern": {
-                                    "$type": "ConfigAttackCircle",
-                                    "lifeTime": "TriggerNoRepeat",
-                                    "LCDFJLIEENG": true,
-                                    "NGDMCBABOJA": {
-                                        "$type": "ConfigBornBySelf",
-                                        "offset": {
-                                            "AEAAJCIDPED": 0.0,
-                                            "KAAPLGBEDPM": 0.0,
-                                            "PHDCJAHHIOG": 0.0
-                                        }
-                                    },
-                                    "secondHeight": 6.0,
-                                    "ICGFCBOFFDI": 1.75
-                                },
-                                "attackInfo": {
-                                    "attackTag": "",
-                                    "attenuationTag": "",
-                                    "attenuationGroup": "default",
-                                    "attackProperty": {
-                                        "bonusCriticalHurt": 1.0,
-                                        "damagePercentageRatio": 0.0,
-                                        "elementType": "Electric",
-                                        "elementDurability": 25.0,
-                                        "strikeType": "Blunt",
-                                        "enBreak": 1.0
-                                    },
-                                    "hitPattern": {
-                                        "onHitEffectName": "default",
-                                        "hitImpulseType": "LV3",
-                                        "hitHaltTimeScale": 0.009999999776482582
-                                    },
-                                    "canBeModifiedBy": "OriginOwner"
-                                }
-                            },
-                            "OJIFKEOCJGB": "Enemy"
-                        },
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_JumpAttack_Lightning",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 0.0
-                                }
-                            }
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ]
-                }
+            {
+              "$type": "AttachModifier",
+              "modifierName": "UNIQUE_Monster_Brute_Electric_SoundEffect"
             },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "LightningArea_Eff"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_ThumpEarth",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_ThumpAttack_Explode",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 0.0,
-                            "PHDCJAHHIOG": 2.0
-                        },
-                        "JBPCKOKLHEB": true
-                    }
-                },
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackCircle",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": -0.5,
-                                    "PHDCJAHHIOG": 2.0
-                                }
-                            },
-                            "secondHeight": 3.0,
-                            "ICGFCBOFFDI": 4.5
-                        },
-                        "attackInfo": {
-                            "attackTag": "",
-                            "attenuationTag": "",
-                            "attenuationGroup": "default",
-                            "attackProperty": {
-                                "bonusCriticalHurt": 1.0,
-                                "damagePercentageRatio": 0.0,
-                                "elementType": "Electric",
-                                "elementDurability": 25.0,
-                                "strikeType": "Blunt",
-                                "enBreak": 101.0,
-                                "attackType": "Melee"
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "default",
-                                "hitImpulseType": "LV5",
-                                "retreatType": "ByHitDirection"
-                            },
-                            "forceCameraShake": true,
-                            "cameraShake": {
-                                "shakeType": "CustomVector",
-                                "shakeRange": 4.0,
-                                "shakeTime": 0.20000000298023224,
-                                "shakeDir": {
-                                    "_y": 5.0
-                                }
-                            }
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_ThumpEarthFinal",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_None_ThumpAttack_ExplodeFinal",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 0.0,
-                            "PHDCJAHHIOG": 2.0
-                        },
-                        "JBPCKOKLHEB": true
-                    }
-                },
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackCircle",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": -0.5,
-                                    "PHDCJAHHIOG": 2.0
-                                }
-                            },
-                            "secondHeight": 3.0,
-                            "ICGFCBOFFDI": 6.5
-                        },
-                        "attackInfo": {
-                            "attackTag": "",
-                            "attenuationTag": "",
-                            "attenuationGroup": "default",
-                            "attackProperty": {
-                                "bonusCriticalHurt": 1.25,
-                                "damagePercentageRatio": 0.0,
-                                "elementType": "Electric",
-                                "elementDurability": 50.0,
-                                "strikeType": "Blunt",
-                                "enBreak": 101.0,
-                                "attackType": "Melee"
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "default",
-                                "hitImpulseType": "LV5",
-                                "retreatType": "ByHitDirection"
-                            },
-                            "forceCameraShake": true,
-                            "cameraShake": {
-                                "shakeType": "CustomVector",
-                                "shakeRange": 4.0,
-                                "shakeTime": 0.20000000298023224,
-                                "shakeDir": {
-                                    "_y": 5.0
-                                }
-                            }
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                },
-                {
-                    "$type": "CreateGadget",
-                    "NJEOPILMKCN": true,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 4.5,
-                            "KAAPLGBEDPM": 0.0,
-                            "PHDCJAHHIOG": 4.5
-                        },
-                        "HAGMNJAHNLG": {
-                            "$type": "BornRandomFromCenter",
-                            "LJCNOPEIJEF": 0.0,
-                            "MFBOELKCPDP": 1.0
-                        },
-                        "JBPCKOKLHEB": true,
-                        "CGHFADKHNKK": true
-                    },
-                    "CABLIPAKCGB": 42102019,
-                    "DOLAJLACEDF": 5005,
-                    "CEBMHIFOHJM": true
-                },
-                {
-                    "$type": "CreateGadget",
-                    "NJEOPILMKCN": true,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": -4.5,
-                            "KAAPLGBEDPM": 0.0,
-                            "PHDCJAHHIOG": 4.5
-                        },
-                        "HAGMNJAHNLG": {
-                            "$type": "BornRandomFromCenter",
-                            "LJCNOPEIJEF": 0.0,
-                            "MFBOELKCPDP": 1.0
-                        },
-                        "JBPCKOKLHEB": true,
-                        "CGHFADKHNKK": true
-                    },
-                    "CABLIPAKCGB": 42102019,
-                    "DOLAJLACEDF": 5005,
-                    "CEBMHIFOHJM": true
-                },
-                {
-                    "$type": "Randomed",
-                    "PLKDGIELEEF": 0.5,
-                    "NCNDEAPMKCP": [
-                        {
-                            "$type": "CreateGadget",
-                            "NJEOPILMKCN": true,
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": -5.5
-                                },
-                                "HAGMNJAHNLG": {
-                                    "$type": "BornRandomFromCenter",
-                                    "LJCNOPEIJEF": 0.0,
-                                    "MFBOELKCPDP": 1.0
-                                },
-                                "JBPCKOKLHEB": true,
-                                "CGHFADKHNKK": true
-                            },
-                            "CABLIPAKCGB": 42102019,
-                            "DOLAJLACEDF": 5005,
-                            "CEBMHIFOHJM": true
-                        }
-                    ]
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_Swoop",
-            "HNEIEGHMLKH": {
-                "Swoop_RushMove": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.20000000298023224,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FixedMonsterRushMove",
-                            "FJCBIPKOKMF": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 10.0
-                                }
-                            },
-                            "FPIJACIKJKL": 0.699999988079071,
-                            "GLALMCMAFJF": 12.5,
-                            "MPOEADACOHO": [
-                                "Swoop",
-                                "DeadlyCombo_Swoop"
-                            ],
-                            "AGIKEIFOMLO": ""
-                        }
-                    ]
-                }
-            },
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "Swoop_RushMove"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_DeadlyCombo_Weak",
-            "HNEIEGHMLKH": {
-                "DeadlyCombo_Weak": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 8.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 2.0,
-                            "HJJEAOMEOFI": "_POSE_TAG_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "SetAISkillGCD",
-                            "CFIPAGENGPE": true,
-                            "weight": 7.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "predicates": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_ELEMENTSHIELD_",
-                                    "value": 0.0,
-                                    "ONPJJFKDCED": "NoneOrEqual"
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_POSE_TAG_",
-                                    "value": 0.0,
-                                    "ONPJJFKDCED": "MoreThan"
-                                }
-                            ],
-                            "value": 3.0,
-                            "HJJEAOMEOFI": "_POSE_TAG_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "predicates": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_ELEMENTSHIELD_",
-                                    "value": 1.0
-                                }
-                            ],
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_POSE_TAG_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                }
-            },
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "ApplyModifier",
-                    "predicates": [
-                        {
-                            "$type": "ByTargetGlobalValue",
-                            "HJJEAOMEOFI": "_ELEMENTSHIELD_",
-                            "value": 1.0
-                        }
-                    ],
-                    "GAIGOBCNNEE": "DeadlyCombo_Weak"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_ThrowSlime",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "TriggerBullet",
-                    "NGAAOMEHOGE": 42102021,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByTarget",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 0.10000000149011612,
-                            "PHDCJAHHIOG": 1.0
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_ThrowPositiveSlime",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "TriggerBullet",
-                    "NGAAOMEHOGE": 42102022,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 0.10000000149011612,
-                            "PHDCJAHHIOG": 1.0
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_ThrowBigSlime",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "TriggerBullet",
-                    "NGAAOMEHOGE": 42102023,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByTarget",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 0.10000000149011612,
-                            "PHDCJAHHIOG": 1.0
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_ThrowBigPositiveSlime",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "TriggerBullet",
-                    "NGAAOMEHOGE": 42102024,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 0.10000000149011612,
-                            "PHDCJAHHIOG": 1.0
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Brute_Electric_None_ElectricSlime_Explode",
-            "HNEIEGHMLKH": {
-                "Trail": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Electric",
-                    "elementDurability": 75.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_SlimeThrow_Trail"
-                        }
-                    ]
-                },
-                "OpenColliderDelay": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.20000000298023224,
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "EnableBulletCollisionPluginTrigger",
-                            "PAHBCOACBAI": true
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "Trail"
-                },
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "OpenColliderDelay"
-                }
-            ],
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "RemoveModifier",
-                    "GAIGOBCNNEE": "Trail"
-                },
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackSphere",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByCollisionPoint"
-                            },
-                            "ICGFCBOFFDI": 2.5
-                        },
-                        "attackInfo": {
-                            "attackTag": "",
-                            "attenuationTag": "",
-                            "attenuationGroup": "default",
-                            "attackProperty": {
-                                "bonusCriticalHurt": 1.0,
-                                "damagePercentageRatio": 0.0,
-                                "elementType": "Electric",
-                                "elementDurability": 25.0,
-                                "strikeType": "Blunt",
-                                "enBreak": 200.0
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "default",
-                                "hitImpulseType": "LV6",
-                                "retreatType": "ByHitDirection",
-                                "hitHaltTimeScale": 0.05000000074505806
-                            },
-                            "forceCameraShake": true,
-                            "cameraShake": {
-                                "shakeRange": 3.0,
-                                "shakeTime": 0.10000000149011612,
-                                "shakeDistance": 15.0,
-                                "extension": {
-                                    "baseCycle": 0.07999999821186066,
-                                    "cycleDamping": 0.03999999910593033,
-                                    "rangeAttenuation": 0.8999999761581421
-                                }
-                            },
-                            "canBeModifiedBy": "OriginOwner"
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                },
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_SlimeThrow_Explode",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByCollisionPoint",
-                        "NHPNHKBMAEO": {
-                            "$type": "ConfigDirectionByEntity"
-                        },
-                        "ANAGBFPADIE": true
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Brute_Electric_None_ElectricSlime_Positive_Explode",
-            "HNEIEGHMLKH": {
-                "Trail": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Electric",
-                    "elementDurability": 75.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_SlimeThrow_Trail_Positive"
-                        }
-                    ]
-                },
-                "OpenColliderDelay": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.20000000298023224,
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "EnableBulletCollisionPluginTrigger",
-                            "PAHBCOACBAI": true
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "Trail"
-                },
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "OpenColliderDelay"
-                }
-            ],
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "RemoveModifier",
-                    "GAIGOBCNNEE": "Trail"
-                },
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackSphere",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByCollisionPoint"
-                            },
-                            "ICGFCBOFFDI": 2.5
-                        },
-                        "attackInfo": {
-                            "attackTag": "",
-                            "attenuationTag": "",
-                            "attenuationGroup": "default",
-                            "attackProperty": {
-                                "bonusCriticalHurt": 1.0,
-                                "damagePercentageRatio": 0.0,
-                                "elementType": "Electric",
-                                "elementDurability": 25.0,
-                                "strikeType": "Blunt",
-                                "enBreak": 200.0
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "default",
-                                "hitImpulseType": "LV6",
-                                "retreatType": "ByHitDirection",
-                                "hitHaltTimeScale": 0.05000000074505806
-                            },
-                            "forceCameraShake": true,
-                            "cameraShake": {
-                                "shakeRange": 3.0,
-                                "shakeTime": 0.10000000149011612,
-                                "shakeDistance": 15.0,
-                                "extension": {
-                                    "baseCycle": 0.07999999821186066,
-                                    "cycleDamping": 0.03999999910593033,
-                                    "rangeAttenuation": 0.8999999761581421
-                                }
-                            },
-                            "canBeModifiedBy": "OriginOwner"
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                },
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_SlimeThrow_Explode_Positive",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByCollisionPoint",
-                        "NHPNHKBMAEO": {
-                            "$type": "ConfigDirectionByEntity"
-                        },
-                        "ANAGBFPADIE": true
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Brute_Electric_None_ElectricSlime_Big_Explode",
-            "HNEIEGHMLKH": {
-                "Trail": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Electric",
-                    "elementDurability": 75.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_SlimeThrow_Trail_Big"
-                        }
-                    ]
-                },
-                "OpenColliderDelay": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.20000000298023224,
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "EnableBulletCollisionPluginTrigger",
-                            "PAHBCOACBAI": true
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "Trail"
-                },
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "OpenColliderDelay"
-                }
-            ],
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "RemoveModifier",
-                    "GAIGOBCNNEE": "Trail"
-                },
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackSphere",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByCollisionPoint"
-                            },
-                            "ICGFCBOFFDI": 4.0
-                        },
-                        "attackInfo": {
-                            "attackTag": "",
-                            "attenuationTag": "",
-                            "attenuationGroup": "default",
-                            "attackProperty": {
-                                "bonusCriticalHurt": 1.25,
-                                "damagePercentageRatio": 0.0,
-                                "elementType": "Electric",
-                                "elementDurability": 50.0,
-                                "strikeType": "Blunt",
-                                "enBreak": 200.0
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "default",
-                                "hitImpulseType": "LV6",
-                                "retreatType": "ByHitDirection",
-                                "hitHaltTimeScale": 0.05000000074505806
-                            },
-                            "forceCameraShake": true,
-                            "cameraShake": {
-                                "shakeRange": 5.0,
-                                "shakeTime": 0.10000000149011612,
-                                "shakeDistance": 25.0,
-                                "extension": {
-                                    "baseCycle": 0.07999999821186066,
-                                    "cycleDamping": 0.03999999910593033,
-                                    "rangeAttenuation": 0.8999999761581421
-                                }
-                            },
-                            "canBeModifiedBy": "OriginOwner"
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                },
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_SlimeThrow_Explode_Big",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByCollisionPoint",
-                        "NHPNHKBMAEO": {
-                            "$type": "ConfigDirectionByEntity"
-                        },
-                        "ANAGBFPADIE": true
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Brute_Electric_None_ElectricSlime_Positive_Big_Explode",
-            "HNEIEGHMLKH": {
-                "Trail": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Electric",
-                    "elementDurability": 75.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_SlimeThrow_Trail_Positive_Big"
-                        }
-                    ]
-                },
-                "OpenColliderDelay": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.20000000298023224,
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "EnableBulletCollisionPluginTrigger",
-                            "PAHBCOACBAI": true
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "Trail"
-                },
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "OpenColliderDelay"
-                }
-            ],
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "RemoveModifier",
-                    "GAIGOBCNNEE": "Trail"
-                },
-                {
-                    "$type": "CreateGadget",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByCollisionPoint",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 0.0,
-                            "PHDCJAHHIOG": 0.0
-                        },
-                        "ANAGBFPADIE": true
-                    },
-                    "CABLIPAKCGB": 42102026,
-                    "DOLAJLACEDF": 4001,
-                    "CEBMHIFOHJM": true
-                },
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackSphere",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByCollisionPoint"
-                            },
-                            "ICGFCBOFFDI": 4.0
-                        },
-                        "attackInfo": {
-                            "attackTag": "",
-                            "attenuationTag": "",
-                            "attenuationGroup": "default",
-                            "attackProperty": {
-                                "bonusCriticalHurt": 1.25,
-                                "damagePercentageRatio": 0.0,
-                                "elementType": "Electric",
-                                "elementDurability": 50.0,
-                                "strikeType": "Blunt",
-                                "enBreak": 200.0
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "default",
-                                "hitImpulseType": "LV6",
-                                "retreatType": "ByHitDirection",
-                                "hitHaltTimeScale": 0.05000000074505806
-                            },
-                            "forceCameraShake": true,
-                            "cameraShake": {
-                                "shakeRange": 5.0,
-                                "shakeTime": 0.10000000149011612,
-                                "shakeDistance": 25.0,
-                                "extension": {
-                                    "baseCycle": 0.07999999821186066,
-                                    "cycleDamping": 0.03999999910593033,
-                                    "rangeAttenuation": 0.8999999761581421
-                                }
-                            },
-                            "canBeModifiedBy": "OriginOwner"
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                },
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_SlimeThrow_Explode_Positive_Big",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByCollisionPoint",
-                        "NHPNHKBMAEO": {
-                            "$type": "ConfigDirectionByEntity"
-                        },
-                        "ANAGBFPADIE": true
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Brute_Electric_None_ElectricSlime_Positive_Shrapnel",
-            "HNEIEGHMLKH": {
-                "Eff_Shrapnel": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_SlimeThrow_Shrapnel_Loop"
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "Eff_Shrapnel"
-                }
-            ],
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "RemoveModifier",
-                    "GAIGOBCNNEE": "Eff_Shrapnel"
-                },
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackSphere",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByCollisionPoint"
-                            },
-                            "ICGFCBOFFDI": 1.5
-                        },
-                        "attackInfo": {
-                            "attackTag": "",
-                            "attenuationTag": "",
-                            "attenuationGroup": "default",
-                            "attackProperty": {
-                                "bonusCriticalHurt": 1.0,
-                                "damagePercentageRatio": 0.0,
-                                "elementType": "Electric",
-                                "elementDurability": 50.0,
-                                "strikeType": "Blunt",
-                                "enBreak": 50.0
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "default",
-                                "hitImpulseType": "LV4",
-                                "hitHaltTimeScale": 0.05000000074505806
-                            },
-                            "forceCameraShake": true,
-                            "canBeModifiedBy": "OriginOwner"
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                },
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_Monster_Brute_Electric_SlimeThrow_Shrapnel_Explode",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByCollisionPoint"
-                    }
-                },
-                {
-                    "$type": "KillSelf"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Brute_Electric_None_ElectricSlime_Positive_ShrapnelPosition",
-            "KCICDEJLIJD": [
-                {
-                    "$type": "TriggerBullet",
-                    "NGAAOMEHOGE": 42102025,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 0.20000000298023224,
-                            "PHDCJAHHIOG": 0.5
-                        },
-                        "NHPNHKBMAEO": {
-                            "$type": "ConfigDirectionByDefault",
-                            "LGPBCMEFEJB": {
-                                "AEAAJCIDPED": 0.0,
-                                "KAAPLGBEDPM": 0.0,
-                                "PHDCJAHHIOG": 0.0
-                            }
-                        }
-                    }
-                },
-                {
-                    "$type": "TriggerBullet",
-                    "NGAAOMEHOGE": 42102025,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 0.4000000059604645,
-                            "KAAPLGBEDPM": 0.20000000298023224,
-                            "PHDCJAHHIOG": -0.4000000059604645
-                        },
-                        "NHPNHKBMAEO": {
-                            "$type": "ConfigDirectionByDefault",
-                            "LGPBCMEFEJB": {
-                                "AEAAJCIDPED": 0.0,
-                                "KAAPLGBEDPM": 100.0,
-                                "PHDCJAHHIOG": 0.0
-                            }
-                        }
-                    }
-                },
-                {
-                    "$type": "TriggerBullet",
-                    "NGAAOMEHOGE": 42102025,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": -0.4000000059604645,
-                            "KAAPLGBEDPM": 0.20000000298023224,
-                            "PHDCJAHHIOG": -0.4000000059604645
-                        },
-                        "NHPNHKBMAEO": {
-                            "$type": "ConfigDirectionByDefault",
-                            "LGPBCMEFEJB": {
-                                "AEAAJCIDPED": 0.0,
-                                "KAAPLGBEDPM": -100.0,
-                                "PHDCJAHHIOG": 0.0
-                            }
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_Steer",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToPoseIDMixin",
-                    "poseIDs": [
-                        111,
-                        113,
-                        114,
-                        115
-                    ],
-                    "GAIGOBCNNEE": "NoWeapon_Steer"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "NoWeapon_Steer": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "NormalIdle"
-                            ],
-                            "NCAENFOANAG": ""
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "NormalMove"
-                            ],
-                            "HENDIIJFPCI": 150.0,
-                            "NCAENFOANAG": ""
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "TurnRight"
-                            ],
-                            "IMHBEGIKDKB": 0.20000000298023224,
-                            "HENDIIJFPCI": 100.0,
-                            "NCAENFOANAG": ""
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "TurnRight"
-                            ],
-                            "EOOBFBGMGLD": 0.15000000596046448,
-                            "IMHBEGIKDKB": 0.6000000238418579,
-                            "HENDIIJFPCI": 250.0,
-                            "NCAENFOANAG": ""
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "TurnLeft"
-                            ],
-                            "IMHBEGIKDKB": 0.20000000298023224,
-                            "HENDIIJFPCI": 100.0,
-                            "NCAENFOANAG": ""
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "TurnLeft"
-                            ],
-                            "EOOBFBGMGLD": 0.15000000596046448,
-                            "IMHBEGIKDKB": 0.6000000238418579,
-                            "HENDIIJFPCI": 250.0,
-                            "NCAENFOANAG": ""
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "Smash"
-                            ],
-                            "IMHBEGIKDKB": 0.30000001192092896,
-                            "HENDIIJFPCI": 700.0,
-                            "NCAENFOANAG": "",
-                            "BBHBLAIEHAJ": 2.0
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "SmashHeavy"
-                            ],
-                            "IMHBEGIKDKB": 0.20000000298023224,
-                            "HENDIIJFPCI": 400.0,
-                            "NCAENFOANAG": "",
-                            "BBHBLAIEHAJ": 2.0
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "DoubleSmash"
-                            ],
-                            "IMHBEGIKDKB": 0.10000000149011612,
-                            "HENDIIJFPCI": 400.0,
-                            "NCAENFOANAG": "",
-                            "BBHBLAIEHAJ": 2.0
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "BurstStrike"
-                            ],
-                            "IMHBEGIKDKB": 0.20000000298023224,
-                            "HENDIIJFPCI": 400.0,
-                            "NCAENFOANAG": "",
-                            "BBHBLAIEHAJ": 2.0
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "JumpAttack"
-                            ],
-                            "IMHBEGIKDKB": 0.15000000596046448,
-                            "HENDIIJFPCI": 400.0,
-                            "NCAENFOANAG": "",
-                            "BBHBLAIEHAJ": 10.0,
-                            "PMNNPDNNMMP": false
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "Swoop"
-                            ],
-                            "IMHBEGIKDKB": 0.10000000149011612,
-                            "HENDIIJFPCI": 400.0,
-                            "NCAENFOANAG": "",
-                            "BBHBLAIEHAJ": 10.0,
-                            "PMNNPDNNMMP": false
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "Swoop"
-                            ],
-                            "EOOBFBGMGLD": 0.3400000035762787,
-                            "IMHBEGIKDKB": 0.4000000059604645,
-                            "HENDIIJFPCI": 400.0,
-                            "NCAENFOANAG": "",
-                            "BBHBLAIEHAJ": 10.0,
-                            "PMNNPDNNMMP": false
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "DeadlyCombo_Swoop"
-                            ],
-                            "IMHBEGIKDKB": 0.11999999731779099,
-                            "HENDIIJFPCI": 400.0,
-                            "NCAENFOANAG": "",
-                            "BBHBLAIEHAJ": 10.0,
-                            "PMNNPDNNMMP": false
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "ThumpEarth"
-                            ],
-                            "EOOBFBGMGLD": 0.10000000149011612,
-                            "IMHBEGIKDKB": 0.20000000298023224,
-                            "HENDIIJFPCI": 600.0,
-                            "NCAENFOANAG": "",
-                            "BBHBLAIEHAJ": 10.0
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "ThrowSlime"
-                            ],
-                            "IMHBEGIKDKB": 0.1599999964237213,
-                            "HENDIIJFPCI": 360.0,
-                            "NCAENFOANAG": "",
-                            "BBHBLAIEHAJ": 10.0
-                        },
-                        {
-                            "$type": "SteerAttackMixin",
-                            "EHNAPMMMNFI": [
-                                "ThrowPositiveSlime"
-                            ],
-                            "IMHBEGIKDKB": 0.1599999964237213,
-                            "HENDIIJFPCI": 360.0,
-                            "NCAENFOANAG": "",
-                            "BBHBLAIEHAJ": 10.0
-                        }
-                    ]
-                }
+            {
+              "$type": "AddGlobalValue",
+              "key": "_POWERUP_COUNT_",
+              "value": 1,
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": 2
             }
+          ]
+        },
+        "Pose_Weak": {
+          "onAdded": [
+            {
+              "$type": "SetPoseInt",
+              "intID": "CoreState",
+              "value": 2
+            }
+          ]
+        },
+        "Pose_ExitPower": {
+          "onAdded": [
+            {
+              "$type": "SetPoseInt",
+              "intID": "CoreState",
+              "value": 3
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetAISkillCDAvailableNow",
+              "skillIDs": [11]
+            }
+          ]
+        },
+        "UNIQUE_Monster_Brute_Electric_ElementShield": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": 90,
+          "elementType": "Electric",
+          "elementDurability": 450,
+          "properties": {
+            "Actor_EndureDelta": 0
+          },
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            },
+            {
+              "$type": "VelocityForceMixin",
+              "excludeForces": ["WindZoneType"]
+            }
+          ],
+          "onAdded": [
+            // 标记有盾没盾，用来在weak结束后，决定回到哪个pose
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ELEMENTSHIELD_",
+              "value": 1
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_WATCHER_82095_",
+              "value": 1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_POSE_TAG_",
+              "value": 3
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ELEMENTSHIELD_",
+              "value": 0
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_WATCHER_82095_",
+              "value": 0
+            }
+          ]
+        },
+        "UNIQUE_Monster_Brute_Electric_HandEffect": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_None_LeftHand"
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_None_RightHand"
+            }
+          ]
+        },
+        "UNIQUE_Monster_Brute_Electric_SoundEffect": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_None_PowerSound",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "RootNode"
+              }
+            }
+          ]
+        },
+        "ExitBattle": {
+          "onAdded": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Monster_Brute_Electric_ElementShield"
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Monster_Brute_Electric_SoundEffect"
+            },
+            {
+              "$type": "SetAISkillCDAvailableNow",
+              "skillIDs": [1]
+            },
+            {
+              "$type": "SetPoseInt",
+              "intID": "CoreState",
+              "value": 0
+            },
+            {
+              "$type": "SetAISkillGCD",
+              "value": 7,
+              "target": "Self"
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "PowerState",
+              "value": false
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_POSE_TAG_",
+              "value": 0
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "PowerState",
+              "value": false
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "target": "Self",
+              "modifierName": "UNIQUE_Monster_Brute_Electric_HandEffect"
+            }
+          ]
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Brute_Electric_KillEvent",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "RemoveUniqueModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Brute_Electric_SoundEffect"
-                }
-            ]
-        }
+      }
     }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Power
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_PowerUp",
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_POWERUP_COUNT_",
+          "valueSteps": [-0.5, 0.5, 99],
+          "modifierNameSteps": ["FirstPowerUp", "Empty"]
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "SetGlobalValue",
+          "key": "_POSE_TAG_",
+          "value": 1
+        }
+      ],
+      "onKill": [
+        {
+          "$type": "RemoveUniqueModifier",
+          "modifierName": "UNIQUE_Monster_Brute_Electric_ElementShield"
+        },
+        {
+          "$type": "RemoveUniqueModifier",
+          "modifierName": "UNIQUE_Monster_Brute_Electric_SoundEffect"
+        }
+      ],
+      "modifiers": {
+        "FirstPowerUp": {
+          "onAdded": [
+            {
+              "$type": "SetAISkillCDAvailableNow",
+              "skillIDs": [1],
+              "canBeHandledOnRecover": true
+            }
+          ]
+        },
+        "Empty": {}
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_HeadCountrol",
+      "abilityMixins": [
+        {
+          "$type": "AttachToAnimatorStateIDMixin",
+          "stateIDs": ["Born"],
+          "modifierName": "HeadControl_Disable",
+          "target": "Self"
+        },
+        {
+          "$type": "AttachToAnimatorStateIDMixin",
+          "stateIDs": ["PowerUp"],
+          "modifierName": "HeadControl_Enable",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "HeadControl_Disable": {
+          "onAdded": [
+            {
+              "$type": "EnableHeadControl",
+              "enable": false
+            }
+          ]
+        },
+        "HeadControl_Enable": {
+          "onRemoved": [
+            {
+              "$type": "EnableHeadControl",
+              "enable": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_PowerUp_ShakeCamera",
+      "onAbilityStart": [
+        {
+          "$type": "ActCameraShake",
+          "cameraShake": {
+            "shakeRange": 4,
+            "shakeTime": 0.4,
+            "shakeDistance": 40,
+            "extension": {
+              "baseOnCamera": false
+            }
+          },
+          "born": {
+            "$type": "ConfigBornBySelf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_PowerDown",
+      "onKill": [
+        // 死亡时特效有残留，所以在onkill移除
+        {
+          "$type": "RemoveUniqueModifier",
+          "target": "Self",
+          "modifierName": "UNIQUE_Monster_Brute_Electric_HandEffect"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Brute_Electric_ExitPower_Handler"
+        }
+      ],
+      "modifiers": {
+        "Brute_Electric_ExitPower_Handler": {
+          "duration": 0.8,
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Brute_Electric_ExitPower_ForSure"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Brute_Electric_ExitPower"
+            }
+          ]
+        },
+        "Brute_Electric_ExitPower_ForSure": {
+          "duration": 5,
+          "onChangeAuthority": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Brute_Electric_ExitPower"
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Brute_Electric_ExitPower"
+            }
+          ]
+        },
+        "Brute_Electric_ExitPower": {
+          "duration": 1,
+          "onAdded": [
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "PowerState",
+              "value": false
+            },
+            {
+              "$type": "SetAISkillGCD",
+              "value": 4.0
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_POSE_TAG_",
+              "value": 0
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "target": "Self",
+              "modifierName": "UNIQUE_Monster_Brute_Electric_HandEffect"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Crystal
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Brute_Electric_Crystal_ElementShield",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_Crystal_Eff",
+          "target": "Self"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Crystal_ElementShield",
+          "target": "Self"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Crystal_KillTimer",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_Crystal_Eff": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_None_ElectricCrystal"
+            }
+          ]
+        },
+        "Crystal_ElementShield": {
+          "elementType": "Electric",
+          "elementDurability": 75,
+          "modifierMixins": [
+            {
+              "$type": "ElementShieldMixin",
+              "elementType": "Electric",
+              "shieldHPRatio": 1.0,
+              // 这个地方有个问题，怪物campID是5005，意味着会被其他怪物反应掉电气水晶
+              // 布设的时候可以尽量避免一下，即使难免出现不同元素类型感觉也可以接受
+              "damageRatio": 0.0
+            }
+          ],
+          "onAdded": [
+            // 初始化破碎方式
+            {
+              "$type": "SetGlobalValue",
+              "target": "Self",
+              "key": "_KILLDELAY_",
+              "value": 0
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_None_ElectricCrystal_BeHit"
+            },
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "targetPredicates": [
+                {
+                  "$type": "ByAttackTags",
+                  "attackTags": ["Brute_Electric_None_ActivateCrystal"]
+                }
+              ],
+              "successActions": [
+                // 怪物激活：延迟破碎
+                {
+                  "$type": "SetGlobalValue",
+                  "target": "Self",
+                  "key": "_KILLDELAY_",
+                  "value": 1
+                },
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Crystal_ElementShield",
+                  "target": "Self"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            // 玩家击破、其他怪物打掉：直接碎掉，保持_KILLDELAY_为0即可
+            {
+              "$type": "TriggerAbility",
+              "abilityName": "Brute_Electric_Crystal_Kill"
+            }
+          ]
+        },
+        "Crystal_KillTimer": {
+          "duration": 20.0,
+          "onRemoved": [
+            // 自然死亡会爆炸
+            {
+              "$type": "SetGlobalValue",
+              "target": "Self",
+              "key": "_KILLDELAY_",
+              "value": 1
+            },
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "Crystal_ElementShield",
+              "target": "Self"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Brute_Electric_Crystal_Kill",
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Crystal_Kill_Delay",
+          "target": "Self",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_KILLDELAY_",
+              "value": 1,
+              "compareType": "Equal"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Crystal_Kill_Immediately",
+          "target": "Self",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_KILLDELAY_",
+              "value": 0,
+              "compareType": "Equal"
+            }
+          ]
+        }
+      ],
+      "modifiers": {
+        "Crystal_Kill_Delay": {
+          "duration": 2.0,
+          "onAdded": [
+            {
+              "$type": "HideUIBillBoard",
+              "hide": true
+            },
+            {
+              "$type": "EnableHitBoxByName",
+              "hitBoxNames": ["CoreHitBox"],
+              "setEnable": false
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "DenyLockOn",
+              "target": "Self"
+            },
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_None_ElectricCrystal_DamageAlert"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Crystal_Eff"
+            },
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "Enemy",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 3.0,
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                },
+                "attackInfo": {
+                  "canBeModifiedBy": "OriginOwner",
+                  "attackProperty": {
+                    "damagePercentage": 0.5,
+                    "elementType": "Electric",
+                    "elementDurability": 25,
+                    "enBreak": 50
+                  },
+                  "hitPattern": {
+                    "hitImpulseType": "LV4",
+                    "retreatType": "ByAttacker",
+                    "hitHaltTime": 0,
+                    "hitHaltTimeScale": 0.1,
+                    "muteHitText": false
+                  },
+                  "forceCameraShake": false
+                }
+              }
+            },
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_None_ElectricCrystal_Damage"
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "DenyLockOn": {
+          "state": "DenyLockOn"
+        },
+        "Crystal_Kill_Immediately": {
+          "duration": 0.2,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_None_ElectricCrystal_AS"
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Smash
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_DoubleSmash_CreateCrystal",
+      "onAbilityStart": [
+        {
+          "$type": "CreateGadget",
+          "gadgetID": 42102019,
+          "campID": 5005,
+          "byServer": true,
+          "lifeByOwnerIsAlive": true,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": 3.0
+            },
+            "bornRandom": {
+              "$type": "BornRandomFromCenter",
+              "minRandomRange": 0.5,
+              "maxRandomRange": 1.5
+            },
+            "onGround": true,
+            "onGroundIgnoreWater": true
+          }
+        },
+        {
+          "$type": "Randomed",
+          "chance": 0.5,
+          "successActions": [
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42102019,
+              "byServer": true,
+              "campID": 5005,
+              "lifeByOwnerIsAlive": true,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": -3.0,
+                  "y": 0.0,
+                  "z": 3.0
+                },
+                "bornRandom": {
+                  "$type": "BornRandomFromCenter",
+                  "minRandomRange": 0.5,
+                  "maxRandomRange": 1.5
+                },
+                "onGround": true,
+                "onGroundIgnoreWater": true
+              }
+            }
+          ]
+        },
+        {
+          "$type": "SetAISkillCDAvailableNow",
+          "skillIDs": [502]
+        }
+      ]
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  // JumpAttack
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_JumpRange",
+      "onAbilityStart": [
+        {
+          "$type": "Predicated",
+          "target": "SelfAttackTarget",
+          "targetPredicates": [
+            {
+              "$type": "ByTargetPositionToSelfPosition",
+              "compareType": "XZ",
+              "value": 5,
+              "logic": "LesserOrEqual"
+            }
+          ],
+          "successActions": [],
+          "failActions": [
+            {
+              "$type": "TryFindBlinkPointByBorn",
+              "target": "SelfAttackTarget",
+              "hitSceneTest": true,
+              "hitSceneType": "BlinkHitSceneTestByThreeSegments",
+              "born": {
+                "$type": "ConfigBornByTarget",
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": -2
+                }
+              }
+            },
+            {
+              "$type": "FixedMonsterRushMove",
+              "timeRange": 0.81,
+              "animatorStateIDs": [
+                "JumpAttack",
+                "JumpAttackPower",
+                "DeadlyCombo_JumpAttack"
+              ],
+              "target": "Self",
+              "isInAir": true,
+              "toPos": {
+                "$type": "ConfigBornByTeleportToPoint"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_JumpAttack_Alert",
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "JumpAttackAlertEffect",
+          "target": "Self"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "JumpCollider",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "JumpAttackAlertEffect": {
+          "duration": 1,
+          "onAdded": [
+            {
+              "$type": "Predicated",
+              "target": "SelfAttackTarget",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetPositionToSelfPosition",
+                  "compareType": "XZ",
+                  "value": 5,
+                  "logic": "LesserOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Brute_Electric_None_JumpAttack_Alert",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 3.15
+                    }
+                  }
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Brute_Electric_None_JumpAttack_Alert",
+                  "born": {
+                    "$type": "ConfigBornByRushToPoint",
+                    "offset": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "JumpCollider": {
+          "duration": 0.8,
+          "onAdded": [
+            {
+              "$type": "TriggerSetCastShadow",
+              "castShadow": false
+            },
+            {
+              "$type": "EnablePushColliderName",
+              "pushColliderNames": ["PushCollider"],
+              "setEnable": false
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "TriggerSetCastShadow",
+              "castShadow": true
+            },
+            {
+              "$type": "EnablePushColliderName",
+              "pushColliderNames": ["PushCollider"],
+              "setEnable": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_JumpAttack_Damage",
+      "onAbilityStart": [
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackCircle",
+              "radius": 5,
+              "height": 2.5,
+              "fanAngle": 360,
+              "triggerType": "TriggerNoRepeat",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 2
+                }
+              }
+            },
+            "attackInfo": {
+              "attackProperty": {
+                "damagePercentage": 1,
+                "elementType": "None",
+                "strikeType": "Blunt",
+                "enBreak": 200.0
+              },
+              "hitPattern": {
+                "onHitEffectName": "default",
+                "hitImpulseType": "LV8",
+                "hitHaltTime": 0,
+                "hitHaltTimeScale": 0.01,
+                "muteHitText": false
+              },
+              "forceCameraShake": true,
+              "cameraShake": {
+                "shakeType": "CustomVector",
+                "shakeRange": 5,
+                "shakeTime": 0.2,
+                "shakeDistance": 35,
+                "extension": {
+                  "baseCycle": 0.12,
+                  "rangeAttenuation": 0.5
+                },
+                "shakeDir": {
+                  "x": 0,
+                  "y": 2,
+                  "z": 0
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_JumpAttack_Lightning",
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "JumpAttack_CreateLightningArea",
+          "target": "Self",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_POSE_TAG_",
+              "value": 0,
+              "compareType": "Equal"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "JumpAttack_CreateLightningArea_Power",
+          "target": "Self",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_POSE_TAG_",
+              "value": 1,
+              "compareType": "Equal"
+            }
+          ]
+        }
+      ],
+      "modifiers": {
+        "JumpAttack_CreateLightningArea": {
+          "duration": 0.2,
+          "onAdded": [
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42102020,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 10.5
+                },
+                "onGround": true,
+                "onGroundIgnoreWater": true
+              }
+            }
+          ]
+        },
+        "JumpAttack_CreateLightningArea_Power": {
+          "duration": 0.2,
+          "onAdded": [
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42102020,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 10.5
+                },
+                "onGround": true,
+                "onGroundIgnoreWater": true
+              }
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42102020,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 8.0,
+                  "y": 0.0,
+                  "z": -5.0
+                },
+                "onGround": true,
+                "onGroundIgnoreWater": true
+              }
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42102020,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": -8.0,
+                  "y": 0.0,
+                  "z": -5.0
+                },
+                "onGround": true,
+                "onGroundIgnoreWater": true
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Brute_Electric_LightningArea",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "target": "Self",
+          "modifierName": "LightningArea_Eff"
+        }
+      ],
+      "modifiers": {
+        "LightningArea_Eff": {
+          "duration": 1.0,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_None_JumpAttack_LightningAlert",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "onGround": true,
+                "alongGround": true
+              }
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42102019,
+              "target": "Owner",
+              "ownerIsTarget": true,
+              "byServer": true,
+              "lifeByOwnerIsAlive": true,
+              "campID": 5005,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "onGround": true,
+                "onGroundIgnoreWater": true
+              }
+            },
+            {
+              "$type": "ApplyModifier",
+              "target": "Self",
+              "modifierName": "LightningArea_Damage"
+            }
+          ]
+        },
+        "LightningArea_Damage": {
+          "duration": 0.3,
+          "onAdded": [
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "Enemy",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackCircle",
+                  "triggerType": "TriggerNoRepeat",
+                  "height": 6.0,
+                  "fanAngle": 360.0,
+                  "radius": 1.75,
+                  "ignoreMassive": true,
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                },
+                "attackInfo": {
+                  "canBeModifiedBy": "OriginOwner",
+                  "attackProperty": {
+                    "damagePercentage": 0.5,
+                    "strikeType": "Blunt",
+                    "enBreak": 1.0,
+                    "elementDurability": 25,
+                    "elementType": "Electric"
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV3",
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.01,
+                    "muteHitText": false
+                  },
+                  "forceCameraShake": false
+                }
+              }
+            },
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_None_JumpAttack_Lightning",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  ThumpEarth
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_ThumpEarth",
+      "onAbilityStart": [
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Brute_Electric_None_ThumpAttack_Explode",
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 2
+            },
+            "onGround": true
+          }
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackCircle",
+              "triggerType": "TriggerNoRepeat",
+              "height": 3,
+              "radius": 4.5,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": -0.5,
+                  "z": 2
+                }
+              }
+            },
+            "attackInfo": {
+              "attackProperty": {
+                "damagePercentage": 0.5,
+                "strikeType": "Blunt",
+                "attackType": "Melee",
+                "elementType": "Electric",
+                "elementDurability": 25,
+                "enBreak": 101.0
+              },
+              "hitPattern": {
+                "onHitEffectName": "default",
+                "hitImpulseType": "LV5",
+                "hitHaltTime": 0,
+                "hitHaltTimeScale": 0,
+                "muteHitText": false,
+                "retreatType": "ByHitDirection"
+              },
+              "forceCameraShake": true,
+              "cameraShake": {
+                "shakeType": "CustomVector",
+                "shakeRange": 4,
+                "shakeTime": 0.2,
+                "shakeDir": {
+                  "x": 0,
+                  "y": 5,
+                  "z": 0
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_ThumpEarthFinal",
+      "onAbilityStart": [
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Brute_Electric_None_ThumpAttack_ExplodeFinal",
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 2
+            },
+            "onGround": true
+          }
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackCircle",
+              "triggerType": "TriggerNoRepeat",
+              "height": 3,
+              "radius": 6.5,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": -0.5,
+                  "z": 2
+                }
+              }
+            },
+            "attackInfo": {
+              "attackProperty": {
+                "damagePercentage": 0.625,
+                "strikeType": "Blunt",
+                "attackType": "Melee",
+                "elementType": "Electric",
+                "elementDurability": 50,
+                "enBreak": 101.0
+              },
+              "hitPattern": {
+                "onHitEffectName": "default",
+                "hitImpulseType": "LV5",
+                "hitHaltTime": 0,
+                "hitHaltTimeScale": 0,
+                "muteHitText": false,
+                "retreatType": "ByHitDirection"
+              },
+              "forceCameraShake": true,
+              "cameraShake": {
+                "shakeType": "CustomVector",
+                "shakeRange": 4,
+                "shakeTime": 0.2,
+                "shakeDir": {
+                  "x": 0,
+                  "y": 5,
+                  "z": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "$type": "CreateGadget",
+          "gadgetID": 42102019,
+          "byServer": true,
+          "lifeByOwnerIsAlive": true,
+          "campID": 5005,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 4.5,
+              "y": 0.0,
+              "z": 4.5
+            },
+            "bornRandom": {
+              "$type": "BornRandomFromCenter",
+              "minRandomRange": 0.0,
+              "maxRandomRange": 1.0
+            },
+            "onGround": true,
+            "onGroundIgnoreWater": true
+          }
+        },
+        {
+          "$type": "CreateGadget",
+          "gadgetID": 42102019,
+          "byServer": true,
+          "lifeByOwnerIsAlive": true,
+          "campID": 5005,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": -4.5,
+              "y": 0.0,
+              "z": 4.5
+            },
+            "bornRandom": {
+              "$type": "BornRandomFromCenter",
+              "minRandomRange": 0.0,
+              "maxRandomRange": 1.0
+            },
+            "onGround": true,
+            "onGroundIgnoreWater": true
+          }
+        },
+        {
+          "$type": "Randomed",
+          "chance": 0.5,
+          "successActions": [
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42102019,
+              "byServer": true,
+              "lifeByOwnerIsAlive": true,
+              "campID": 5005,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": -5.5
+                },
+                "bornRandom": {
+                  "$type": "BornRandomFromCenter",
+                  "minRandomRange": 0.0,
+                  "maxRandomRange": 1.0
+                },
+                "onGround": true,
+                "onGroundIgnoreWater": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Swoop
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_Swoop",
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Swoop_RushMove"
+        }
+      ],
+      "modifiers": {
+        "Swoop_RushMove": {
+          "duration": 0.2,
+          "onAdded": [
+            {
+              "$type": "FixedMonsterRushMove",
+              "target": "Self",
+              "animatorStateIDs": ["Swoop", "DeadlyCombo_Swoop"],
+              "toPos": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 10
+                }
+              },
+              "maxRange": 12.5,
+              "timeRange": 0.7
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  DeadlyCombo
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_DeadlyCombo_Weak",
+      "onAbilityStart": [
+        // 进入weak的情况分类：
+        // 如果当前没盾→不进weak
+        // 如果当前有盾→进入weak
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "DeadlyCombo_Weak",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_ELEMENTSHIELD_",
+              "value": 1,
+              "compareType": "Equal"
+            }
+          ]
+        }
+      ],
+      "modifiers": {
+        "DeadlyCombo_Weak": {
+          "duration": 8,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_POSE_TAG_",
+              "value": 2
+            },
+            {
+              "$type": "SetAISkillGCD",
+              "value": 7,
+              "canBeHandledOnRecover": true
+            }
+          ],
+          // 退出weak的情况分类：
+          // 如果当前没盾→不进进入ExitPower
+          // 如果当前有盾→进入PowerUp
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_POSE_TAG_",
+              "value": 3,
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_ELEMENTSHIELD_",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                },
+                // b1237593 加个保护
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_POSE_TAG_",
+                  "value": 0,
+                  "compareType": "MoreThan"
+                }
+              ]
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_POSE_TAG_",
+              "value": 1,
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_ELEMENTSHIELD_",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  ThrowSlime
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_ThrowSlime",
+      "onAbilityStart": [
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42102021,
+          "born": {
+            "$type": "ConfigBornByTarget",
+            "offset": {
+              "x": 0.0,
+              "y": 0.1,
+              "z": 1.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_ThrowPositiveSlime",
+      "onAbilityStart": [
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42102022,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 0.1,
+              "z": 1
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_ThrowBigSlime",
+      "onAbilityStart": [
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42102023,
+          "born": {
+            "$type": "ConfigBornByTarget",
+            "offset": {
+              "x": 0.0,
+              "y": 0.1,
+              "z": 1.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_ThrowBigPositiveSlime",
+      "onAbilityStart": [
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42102024,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 0.1,
+              "z": 1
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Brute_Electric_None_ElectricSlime_Explode",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "Trail",
+          "target": "Self"
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "OpenColliderDelay"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "Trail"
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackSphere",
+              "triggerType": "TriggerNoRepeat",
+              "radius": 2.5,
+              "born": {
+                "$type": "ConfigBornByCollisionPoint"
+              }
+            },
+            "attackInfo": {
+              "canBeModifiedBy": "OriginOwner",
+              "attackProperty": {
+                "damagePercentage": 0.5,
+                "strikeType": "Blunt",
+                "attackType": "Default",
+                "elementType": "Electric",
+                "elementDurability": 25,
+                "enBreak": 200.0
+              },
+              "hitPattern": {
+                "hitImpulseType": "LV6",
+                "hitHaltTime": 0.0,
+                "hitHaltTimeScale": 0.05,
+                "muteHitText": false,
+                "retreatType": "ByHitDirection"
+              },
+              "forceCameraShake": true,
+              "cameraShake": {
+                "shakeType": "Center",
+                "shakeRange": 3,
+                "shakeTime": 0.1,
+                "shakeDistance": 15,
+                "extension": {
+                  "baseCycle": 0.08,
+                  "cycleDamping": 0.04,
+                  "rangeAttenuation": 0.9
+                }
+              }
+            }
+          }
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Brute_Electric_SlimeThrow_Explode",
+          "born": {
+            "$type": "ConfigBornByCollisionPoint",
+            "alongGround": true,
+            "direction": {
+              "$type": "ConfigDirectionByEntity"
+            }
+          }
+        }
+      ],
+      "modifiers": {
+        "Trail": {
+          "elementType": "Electric",
+          "elementDurability": 75,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_SlimeThrow_Trail"
+            }
+          ]
+        },
+        "OpenColliderDelay": {
+          "duration": 0.2,
+          "onRemoved": [
+            {
+              "$type": "EnableBulletCollisionPluginTrigger",
+              "target": "Self",
+              "setEnable": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Brute_Electric_None_ElectricSlime_Positive_Explode",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "Trail",
+          "target": "Self"
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "OpenColliderDelay"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "Trail"
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackSphere",
+              "triggerType": "TriggerNoRepeat",
+              "radius": 2.5,
+              "born": {
+                "$type": "ConfigBornByCollisionPoint"
+              }
+            },
+            "attackInfo": {
+              "canBeModifiedBy": "OriginOwner",
+              "attackProperty": {
+                "damagePercentage": 0.5,
+                "strikeType": "Blunt",
+                "attackType": "Default",
+                "elementType": "Electric",
+                "elementDurability": 25,
+                "enBreak": 200.0
+              },
+              "hitPattern": {
+                "hitImpulseType": "LV6",
+                "hitHaltTime": 0.0,
+                "hitHaltTimeScale": 0.05,
+                "muteHitText": false,
+                "retreatType": "ByHitDirection"
+              },
+              "forceCameraShake": true,
+              "cameraShake": {
+                "shakeType": "Center",
+                "shakeRange": 3,
+                "shakeTime": 0.1,
+                "shakeDistance": 15,
+                "extension": {
+                  "baseCycle": 0.08,
+                  "cycleDamping": 0.04,
+                  "rangeAttenuation": 0.9
+                }
+              }
+            }
+          }
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Brute_Electric_SlimeThrow_Explode_Positive",
+          "born": {
+            "$type": "ConfigBornByCollisionPoint",
+            "alongGround": true,
+            "direction": {
+              "$type": "ConfigDirectionByEntity"
+            }
+          }
+        }
+      ],
+      "modifiers": {
+        "Trail": {
+          "elementType": "Electric",
+          "elementDurability": 75,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_SlimeThrow_Trail_Positive"
+            }
+          ]
+        },
+        "OpenColliderDelay": {
+          "duration": 0.2,
+          "onRemoved": [
+            {
+              "$type": "EnableBulletCollisionPluginTrigger",
+              "target": "Self",
+              "setEnable": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Brute_Electric_None_ElectricSlime_Big_Explode",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "Trail",
+          "target": "Self"
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "OpenColliderDelay"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "Trail"
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackSphere",
+              "triggerType": "TriggerNoRepeat",
+              "radius": 4,
+              "born": {
+                "$type": "ConfigBornByCollisionPoint"
+              }
+            },
+            "attackInfo": {
+              "canBeModifiedBy": "OriginOwner",
+              "attackProperty": {
+                "damagePercentage": 0.625,
+                "strikeType": "Blunt",
+                "attackType": "Default",
+                "elementType": "Electric",
+                "elementDurability": 50,
+                "enBreak": 200.0
+              },
+              "hitPattern": {
+                "hitImpulseType": "LV6",
+                "hitHaltTime": 0.0,
+                "hitHaltTimeScale": 0.05,
+                "muteHitText": false,
+                "retreatType": "ByHitDirection"
+              },
+              "forceCameraShake": true,
+              "cameraShake": {
+                "shakeType": "Center",
+                "shakeRange": 5,
+                "shakeTime": 0.1,
+                "shakeDistance": 25,
+                "extension": {
+                  "baseCycle": 0.08,
+                  "cycleDamping": 0.04,
+                  "rangeAttenuation": 0.9
+                }
+              }
+            }
+          }
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Brute_Electric_SlimeThrow_Explode_Big",
+          "born": {
+            "$type": "ConfigBornByCollisionPoint",
+            "alongGround": true,
+            "direction": {
+              "$type": "ConfigDirectionByEntity"
+            }
+          }
+        }
+      ],
+      "modifiers": {
+        "Trail": {
+          "elementType": "Electric",
+          "elementDurability": 75,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_SlimeThrow_Trail_Big"
+            }
+          ]
+        },
+        "OpenColliderDelay": {
+          "duration": 0.2,
+          "onRemoved": [
+            {
+              "$type": "EnableBulletCollisionPluginTrigger",
+              "target": "Self",
+              "setEnable": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Brute_Electric_None_ElectricSlime_Positive_Big_Explode",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "Trail",
+          "target": "Self"
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "OpenColliderDelay"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "Trail"
+        },
+        {
+          "$type": "CreateGadget",
+          "gadgetID": 42102026,
+          "byServer": true,
+          "campID": 4001,
+          "born": {
+            "$type": "ConfigBornByCollisionPoint",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "alongGround": true
+          }
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackSphere",
+              "triggerType": "TriggerNoRepeat",
+              "radius": 4,
+              "born": {
+                "$type": "ConfigBornByCollisionPoint"
+              }
+            },
+            "attackInfo": {
+              "canBeModifiedBy": "OriginOwner",
+              "attackProperty": {
+                "damagePercentage": 0.625,
+                "strikeType": "Blunt",
+                "attackType": "Default",
+                "elementType": "Electric",
+                "elementDurability": 50,
+                "enBreak": 200.0
+              },
+              "hitPattern": {
+                "hitImpulseType": "LV6",
+                "hitHaltTime": 0.0,
+                "hitHaltTimeScale": 0.05,
+                "muteHitText": false,
+                "retreatType": "ByHitDirection"
+              },
+              "forceCameraShake": true,
+              "cameraShake": {
+                "shakeType": "Center",
+                "shakeRange": 5,
+                "shakeTime": 0.1,
+                "shakeDistance": 25,
+                "extension": {
+                  "baseCycle": 0.08,
+                  "cycleDamping": 0.04,
+                  "rangeAttenuation": 0.9
+                }
+              }
+            }
+          }
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Brute_Electric_SlimeThrow_Explode_Positive_Big",
+          "born": {
+            "$type": "ConfigBornByCollisionPoint",
+            "alongGround": true,
+            "direction": {
+              "$type": "ConfigDirectionByEntity"
+            }
+          }
+        }
+      ],
+      "modifiers": {
+        "Trail": {
+          "elementType": "Electric",
+          "elementDurability": 75,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_SlimeThrow_Trail_Positive_Big"
+            }
+          ]
+        },
+        "OpenColliderDelay": {
+          "duration": 0.2,
+          "onRemoved": [
+            {
+              "$type": "EnableBulletCollisionPluginTrigger",
+              "target": "Self",
+              "setEnable": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Brute_Electric_None_ElectricSlime_Positive_Shrapnel",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "Eff_Shrapnel",
+          "target": "Self"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "Eff_Shrapnel"
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackSphere",
+              "triggerType": "TriggerNoRepeat",
+              "radius": 1.5,
+              "born": {
+                "$type": "ConfigBornByCollisionPoint"
+              }
+            },
+            "attackInfo": {
+              "canBeModifiedBy": "OriginOwner",
+              "attackProperty": {
+                "damagePercentage": 0.5,
+                "strikeType": "Blunt",
+                "attackType": "Default",
+                "elementType": "Electric",
+                "elementDurability": 50,
+                "enBreak": 50.0
+              },
+              "hitPattern": {
+                "hitImpulseType": "LV4",
+                "hitHaltTime": 0.0,
+                "hitHaltTimeScale": 0.05,
+                "muteHitText": false
+              },
+              "forceCameraShake": true
+            }
+          }
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Brute_Electric_SlimeThrow_Shrapnel_Explode",
+          "born": {
+            "$type": "ConfigBornByCollisionPoint"
+          }
+        },
+        {
+          "$type": "KillSelf"
+        }
+      ],
+      "modifiers": {
+        "Eff_Shrapnel": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Brute_Electric_SlimeThrow_Shrapnel_Loop"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Brute_Electric_None_ElectricSlime_Positive_ShrapnelPosition",
+      "onAdded": [
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42102025,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 0.2,
+              "z": 0.5
+            },
+            "direction": {
+              "$type": "ConfigDirectionByDefault",
+              "angleOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          }
+        },
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42102025,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.4,
+              "y": 0.2,
+              "z": -0.4
+            },
+            "direction": {
+              "$type": "ConfigDirectionByDefault",
+              "angleOffset": {
+                "x": 0.0,
+                "y": 100.0,
+                "z": 0.0
+              }
+            }
+          }
+        },
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42102025,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": -0.4,
+              "y": 0.2,
+              "z": -0.4
+            },
+            "direction": {
+              "$type": "ConfigDirectionByDefault",
+              "angleOffset": {
+                "x": 0.0,
+                "y": -100.0,
+                "z": 0.0
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Common Config
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_Steer",
+      "abilityMixins": [
+        {
+          "$type": "AttachToPoseIDMixin",
+          "poseIDs": [111, 113, 114, 115],
+          "modifierName": "NoWeapon_Steer",
+          "isUnique": false
+        }
+      ],
+      "modifiers": {
+        "NoWeapon_Steer": {
+          "modifierMixins": [
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["NormalIdle"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 1,
+              "angularSpeed": 0,
+              "attackTrigger": "",
+              "attackDistance": 0
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["NormalMove"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 1,
+              "angularSpeed": 150,
+              "attackTrigger": "",
+              "attackDistance": 0
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["TurnRight"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 0.2,
+              "angularSpeed": 100,
+              "attackTrigger": "",
+              "attackDistance": 0
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["TurnRight"],
+              "startNormalizedTime": 0.15,
+              "endNormalizedTime": 0.6,
+              "angularSpeed": 250,
+              "attackTrigger": "",
+              "attackDistance": 0
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["TurnLeft"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 0.2,
+              "angularSpeed": 100,
+              "attackTrigger": "",
+              "attackDistance": 0
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["TurnLeft"],
+              "startNormalizedTime": 0.15,
+              "endNormalizedTime": 0.6,
+              "angularSpeed": 250,
+              "attackTrigger": "",
+              "attackDistance": 0
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["Smash"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 0.3,
+              "angularSpeed": 700,
+              "attackTrigger": "",
+              "attackDistance": 2
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["SmashHeavy"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 0.2,
+              "angularSpeed": 400,
+              "attackTrigger": "",
+              "attackDistance": 2
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["DoubleSmash"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 0.1,
+              "angularSpeed": 400,
+              "attackTrigger": "",
+              "attackDistance": 2
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["BurstStrike"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 0.2,
+              "angularSpeed": 400,
+              "attackTrigger": "",
+              "attackDistance": 2
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["JumpAttack"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 0.15,
+              "angularSpeed": 400,
+              "attackTrigger": "",
+              "attackDistance": 10,
+              "remoteSteerToLocalTarget": false
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["Swoop"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 0.1,
+              "angularSpeed": 400,
+              "attackTrigger": "",
+              "attackDistance": 10,
+              "remoteSteerToLocalTarget": false
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["Swoop"],
+              "startNormalizedTime": 0.34,
+              "endNormalizedTime": 0.4,
+              "angularSpeed": 400,
+              "attackTrigger": "",
+              "attackDistance": 10,
+              "remoteSteerToLocalTarget": false
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["DeadlyCombo_Swoop"],
+              "startNormalizedTime": 0.0,
+              "endNormalizedTime": 0.12,
+              "angularSpeed": 400,
+              "attackTrigger": "",
+              "attackDistance": 10,
+              "remoteSteerToLocalTarget": false
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["ThumpEarth"],
+              "startNormalizedTime": 0.1,
+              "endNormalizedTime": 0.2,
+              "angularSpeed": 600,
+              "attackTrigger": "",
+              "attackDistance": 10
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["ThrowSlime"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 0.16,
+              "angularSpeed": 360,
+              "attackTrigger": "",
+              "attackDistance": 10
+            },
+            {
+              "$type": "SteerAttackMixin",
+              "steerStateIDs": ["ThrowPositiveSlime"],
+              "startNormalizedTime": 0,
+              "endNormalizedTime": 0.16,
+              "angularSpeed": 360,
+              "attackTrigger": "",
+              "attackDistance": 10
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Brute_Electric_KillEvent",
+      "onAbilityStart": [
+        {
+          "$type": "RemoveUniqueModifier",
+          "modifierName": "UNIQUE_Monster_Brute_Electric_SoundEffect"
+        }
+      ]
+    }
+  }
 ]

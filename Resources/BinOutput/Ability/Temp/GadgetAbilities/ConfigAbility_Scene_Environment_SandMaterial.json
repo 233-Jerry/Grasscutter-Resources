@@ -1,115 +1,119 @@
 [
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_SandStacks_Interact",
-            "HNEIEGHMLKH": {
-                "NormalModifier": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "onBeingHit": [
-                        {
-                            "$type": "AttachModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByHitElement",
-                                    "GOMLPAOIKJA": "Wind"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "ElementWindModifier"
-                        }
-                    ]
-                },
-                "ElementWindModifier": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 2.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_SandStacks_01_BlowOff",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "AttachPoint"
-                            }
-                        },
-                        {
-                            "$type": "SetAnimatorTrigger",
-                            "triggerID": "DieTrigger"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachAbilityStateResistance",
-                    "KPGAIMMIKDA": 14005
-                },
-                {
-                    "$type": "AttachAbilityStateResistance",
-                    "KPGAIMMIKDA": 14002
-                },
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "NormalModifier"
-                },
-                {
-                    "$type": "AddGlobalValue",
-                    "value": 1.0,
-                    "HJJEAOMEOFI": "_ABILITY_BURNING_IGNITE_ONLY",
-                    "EODOIECEPEF": true,
-                    "JDHHMBHOOEC": 1.0,
-                    "KHAHOELDONA": 1.0
-                }
-            ]
+  //////////////////////////////////////////////////////////////////
+  //
+  // 沙堆吹散（70710211）
+  //
+  //////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_SandStacks_Interact",
+      "onAdded": [
+        {
+          "$type": "AttachAbilityStateResistance",
+          "resistanceListID": 14005
+        },
+        {
+          "$type": "AttachAbilityStateResistance",
+          "resistanceListID": 14002
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "NormalModifier"
+        },
+        {
+          //燃烧时免疫其余燃烧攻击
+          "$type": "AddGlobalValue",
+          "key": "_ABILITY_BURNING_IGNITE_ONLY",
+          "value": 1,
+          "useLimitRange": true,
+          "maxValue": 1,
+          "minValue": 1
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_SandStacksInteraction_01",
-            "CHBMMFLIIGH": [
+      ],
+      "modifiers": {
+        "NormalModifier": {
+          "onBeingHit": [
+            {
+              "$type": "AttachModifier",
+              "modifierName": "ElementWindModifier",
+              "predicates": [
                 {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 201,
-                    "GAIGOBCNNEE": "ElementWindModifier"
+                  "$type": "ByHitElement",
+                  "element": "Wind"
                 }
-            ],
-            "HNEIEGHMLKH": {
-                "NormalModifier": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0
-                },
-                "ElementWindModifier": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 2.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_SandStacks_01_BlowOff",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "AttachPoint"
-                            }
-                        },
-                        {
-                            "$type": "SetAnimatorTrigger",
-                            "triggerID": "DieTrigger"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ]
-                }
+              ]
             }
+          ]
+        },
+        "ElementWindModifier": {
+          "duration": 2,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_SandStacks_01_BlowOff",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPoint"
+              }
+            },
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "DieTrigger"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
         }
+      }
     }
+  },
+  //////////////////////////////////////////////////////////////////
+  //
+  // 沙堆交互
+  //
+  //////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_SandStacksInteraction_01",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "ElementWindModifier"
+        }
+      ],
+      "modifiers": {
+        "NormalModifier": {
+          "onBeingHit": []
+        },
+        "ElementWindModifier": {
+          "duration": 2,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_SandStacks_01_BlowOff",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPoint"
+              }
+            },
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "DieTrigger"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  }
 ]

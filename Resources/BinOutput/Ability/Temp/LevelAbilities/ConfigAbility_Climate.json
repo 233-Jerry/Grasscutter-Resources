@@ -1,1687 +1,1657 @@
 [
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "ClimateAbility_TsurumiMist",
-            "HNEIEGHMLKH": {
-                "SERVER_ClimateAbility_TsurumiMist_Area": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler"
-                        }
-                    ],
-                    "NDHIFGEGBAC": [
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler"
-                        }
-                    ],
-                    "NPEJFLBOAAN": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.5,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "Predicated",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "CircleR12H10",
-                                "ONPOPLLHJLE": "All",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "IS_TSURUMIMIST_POINT",
-                                    "value": 1.0
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "CurLocalAvatar",
-                                    "GAIGOBCNNEE": "UNIQUE_TsurumiMistBuff"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "UNIQUE_TsurumiMistBuff": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.20000000298023224,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "TsurumiRegionalMist"
-                            ],
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": -999.0,
-                            "type": "Current"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddClimateMeter",
-                            "LFLNMOIEOGI": "TsurumiRegionalMist",
-                            "value": -25.0
-                        }
-                    ]
+  //ServerUploadTool Save to [/root/env/data/json/ability/Temp/LevelAbilities]
+
+  /////////////////////////////////////////////////////////
+  //
+  // TsurumiMist
+  //
+  /////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "ClimateAbility_TsurumiMist",
+      "modifiers": {
+        "SERVER_ClimateAbility_TsurumiMist_Area": {
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
                 }
+              ]
             }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "ClimateAbility_TatariRegion",
-            "HNEIEGHMLKH": {
-                "SERVER_ClimateAbility_TatariRegion_Area": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler"
-                        }
-                    ],
-                    "NDHIFGEGBAC": [
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler"
-                        }
-                    ],
-                    "NPEJFLBOAAN": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.5,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "Predicated",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "CircleR5H10",
-                                "ONPOPLLHJLE": "All",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "IS_TATAERIREGION_POINT",
-                                    "value": 1.0
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "CurLocalAvatar",
-                                    "GAIGOBCNNEE": "UNIQUE_TatariRegionBuff"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "UNIQUE_TatariRegionBuff": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.20000000298023224,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "TatariRegion"
-                            ],
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": -999.0,
-                            "type": "Current"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddClimateMeter",
-                            "LFLNMOIEOGI": "TatariRegion",
-                            "value": -50.0
-                        }
-                    ]
-                },
-                "SERVER_ClimateAbility_TatariRegion_Lv1": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0
-                },
-                "UNIQUE_MinusElectricReject": {
-                    "FGJPBKGPNJJ": "Unique",
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "GMIMMDOGGIO": 0.5,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": -1.0,
-                            "HJJEAOMEOFI": "_ABILITY_SceneObj_Electric_Fairy_Immunity_Time",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 100.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                },
-                "SERVER_ClimateAbility_TatariRegion_Lv2": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 2.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "NPHOOPNDCAC": "Team",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_TatariRegionLoseHp",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "NPHOOPNDCAC": "Team",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_TatariRegionLoseHp",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "NPHOOPNDCAC": "Team",
-                            "ACOKKHADPOJ": false,
-                            "predicates": [
-                                {
-                                    "$type": "ByGameTimeIsLocked"
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "NPHOOPNDCAC": "Self",
-                                    "HJJEAOMEOFI": "HAS_ELECTRIC_FAIRY_BUFF",
-                                    "value": 1.0
-                                }
-                            ],
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_TatariRegionLoseHp",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "AddGlobalValue",
-                            "NPHOOPNDCAC": "Team",
-                            "ACOKKHADPOJ": false,
-                            "predicates": [
-                                {
-                                    "$type": "ByGameTimeIsLocked"
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "NPHOOPNDCAC": "Self",
-                                    "HJJEAOMEOFI": "HAS_ELECTRIC_FAIRY_BUFF",
-                                    "value": 0.0,
-                                    "ONPJJFKDCED": "NoneOrEqual"
-                                }
-                            ],
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_TatariRegionLoseHp",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 35.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "CopyGlobalValue",
-                            "ACOKKHADPOJ": true,
-                            "IGKNCNDCLOO": "Team",
-                            "KNAELFCJEPL": "Self",
-                            "DHPMANPAAFN": "_TatariRegionLoseHp",
-                            "CGMMPCHEGIH": "_TatariRegionLoseHp"
-                        },
-                        {
-                            "$type": "Predicated",
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_TatariRegionLoseHp",
-                                    "value": 30.0,
-                                    "ONPJJFKDCED": "MoreThan"
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "LoseHP",
-                                    "NPHOOPNDCAC": "CurLocalAvatar",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByGameTimeIsLocked"
-                                        },
-                                        {
-                                            "$type": "ByNot",
-                                            "predicates": [
-                                                {
-                                                    "$type": "ByTargetGlobalValue",
-                                                    "HJJEAOMEOFI": "HAS_ELECTRIC_FAIRY_BUFF",
-                                                    "value": 1.0
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$type": "ByIsLocalAvatar"
-                                        }
-                                    ],
-                                    "PDLLIFICICJ": 450.0,
-                                    "AJAHODOGLMH": 0.029999999329447746,
-                                    "IMKEAGOJBPA": true,
-                                    "LCEHMPAGCPL": true,
-                                    "GPDAKLCBNFI": true
-                                },
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "Team",
-                                    "ACOKKHADPOJ": false,
-                                    "GAIGOBCNNEE": "UNIQUE_MinusElectricReject"
-                                }
-                            ],
-                            "BMIOBLGLPIM": [
-                                {
-                                    "$type": "LoseHP",
-                                    "NPHOOPNDCAC": "CurLocalAvatar",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByGameTimeIsLocked"
-                                        },
-                                        {
-                                            "$type": "ByNot",
-                                            "predicates": [
-                                                {
-                                                    "$type": "ByTargetGlobalValue",
-                                                    "HJJEAOMEOFI": "HAS_ELECTRIC_FAIRY_BUFF",
-                                                    "value": 1.0
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$type": "ByIsLocalAvatar"
-                                        }
-                                    ],
-                                    "PDLLIFICICJ": 150.0,
-                                    "AJAHODOGLMH": 0.009999999776482582,
-                                    "IMKEAGOJBPA": true,
-                                    "LCEHMPAGCPL": true,
-                                    "GPDAKLCBNFI": true
-                                },
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "Team",
-                                    "ACOKKHADPOJ": false,
-                                    "GAIGOBCNNEE": "UNIQUE_MinusElectricReject"
-                                }
-                            ]
-                        }
-                    ]
+          ],
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
                 }
+              ]
             }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "ClimateAbility_SeiraiStorm",
-            "HNEIEGHMLKH": {
-                "SERVER_ClimateAbility_SeiraiStorm_Area": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler"
-                        }
-                    ],
-                    "NDHIFGEGBAC": [
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler"
-                        }
-                    ],
-                    "NPEJFLBOAAN": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0
-                },
-                "SERVER_ClimateAbility_SeiraiStorm_Lv1": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0
-                },
-                "SERVER_ClimateAbility_SeiraiStorm_Lv2": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 2.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "NPHOOPNDCAC": "Team",
-                            "value": -20.0,
-                            "HJJEAOMEOFI": "_SeiraiStormLoseHp",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 20.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "NPHOOPNDCAC": "Team",
-                            "value": -20.0,
-                            "HJJEAOMEOFI": "_SeiraiStormLoseHp",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 20.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "NPHOOPNDCAC": "Team",
-                            "ACOKKHADPOJ": false,
-                            "predicates": [
-                                {
-                                    "$type": "ByGameTimeIsLocked"
-                                }
-                            ],
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_SeiraiStormLoseHp",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 20.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                }
-            },
-            "FEFIHIEHDOM": true
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "ClimateAbility_SeaMist",
-            "HNEIEGHMLKH": {
-                "SERVER_ClimateAbility_Cold_Area": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler"
-                        }
-                    ],
-                    "NDHIFGEGBAC": [
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler"
-                        }
-                    ],
-                    "NPEJFLBOAAN": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.5,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "Predicated",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "CircleR6.5H5",
-                                "ONPOPLLHJLE": "All",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "IS_SEAMIST_POINT",
-                                    "value": 1.0
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "CurLocalAvatar",
-                                    "GAIGOBCNNEE": "UNIQUE_SeaMistBuff"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "UNIQUE_SeaMistBuff": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.20000000298023224,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "SeaMist"
-                            ],
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": -999.0,
-                            "type": "Current"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddClimateMeter",
-                            "LFLNMOIEOGI": "SeaMist",
-                            "value": -5.0
-                        }
-                    ]
-                }
+          ],
+          "onAvatarIn": [
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler"
             }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "ClimateAbility_Cold",
-            "HNEIEGHMLKH": {
-                "SERVER_ClimateAbility_Cold_Area": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveServerBuff",
-                            "NPHOOPNDCAC": "CurTeamAvatars",
-                            "FNAMNHEHKCG": 500101,
-                            "AGFADPIAIIP": true
-                        },
-                        {
-                            "$type": "RemoveServerBuff",
-                            "NPHOOPNDCAC": "CurTeamAvatars",
-                            "FNAMNHEHKCG": 500102,
-                            "AGFADPIAIIP": true
-                        },
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler"
-                        }
-                    ],
-                    "NDHIFGEGBAC": [
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler"
-                        }
-                    ],
-                    "NPEJFLBOAAN": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.5,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "Predicated",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "CircleR6.5H5",
-                                "ONPOPLLHJLE": "All",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "IS_WARM_POINT",
-                                    "value": 1.0
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "CurLocalAvatar",
-                                    "GAIGOBCNNEE": "UNIQUE_WarmBuff"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "UNIQUE_WarmBuff": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.20000000298023224,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "Cold"
-                            ],
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": -999.0,
-                            "type": "Current"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddClimateMeter",
-                            "LFLNMOIEOGI": "Cold",
-                            "value": -5.0
-                        }
-                    ]
-                },
-                "SERVER_ClimateAbility_Cold_Lv1": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "ClimateAbility_Cold_Lv1_Handler"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "ClimateAbility_Avatar_Perform_Handler"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_Cold_Lv1_Handler"
-                        },
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_Avatar_Perform_Handler"
-                        }
-                    ],
-                    "NDHIFGEGBAC": [
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_Cold_Lv1_Handler"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_Avatar_Perform_Handler"
-                        }
-                    ],
-                    "NPEJFLBOAAN": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_Cold_Lv1_Handler"
-                        },
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_Avatar_Perform_Handler"
-                        }
-                    ]
-                },
-                "ClimateAbility_Cold_Lv1_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "AttachToAbilityStateMixin",
-                            "ELJGGBDOPIL": [
-                                "ElementWet",
-                                "ElementFrozen",
-                                "ElementIce",
-                                "ElementFreeze"
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_IceAndWater"
-                        },
-                        {
-                            "$type": "AttachToAbilityStateMixin",
-                            "ELJGGBDOPIL": [
-                                "ElementFire",
-                                "ElementBurning"
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_FireAndBurning"
-                        },
-                        {
-                            "$type": "AttachToStateIDMixin",
-                            "stateIDs": [
-                                "Swim"
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_Swiming",
-                            "PJOHJMEEANH": true
-                        }
-                    ]
-                },
-                "SERVER_ClimateAbility_Cold_Lv2": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "LoseHP",
-                            "NPHOOPNDCAC": "CurLocalAvatar",
-                            "predicates": [
-                                {
-                                    "$type": "ByGameTimeIsLocked"
-                                }
-                            ],
-                            "PDLLIFICICJ": 150.0,
-                            "AJAHODOGLMH": 0.009999999776482582,
-                            "IMKEAGOJBPA": true,
-                            "LCEHMPAGCPL": true,
-                            "GPDAKLCBNFI": true
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_Flag_Element": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_ABILITY_CLIMATE_COLD_ACCELERATOR_FLAG",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": -1.0,
-                            "HJJEAOMEOFI": "_ABILITY_CLIMATE_COLD_ACCELERATOR_FLAG",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                },
-                "ClimateAbility_Cold_Lv1_Accelerator_Blank": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0
-                },
-                "ClimateAbility_Cold_Lv1_Accelerator": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "Cold"
-                            ],
-                            "BOJNGLBFNMC": "Climate",
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": 0.5,
-                            "type": "Current"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_IceAndWater": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "Cold"
-                            ],
-                            "BOJNGLBFNMC": "Climate",
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": 0.20000000298023224,
-                            "type": "Current"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_FireAndBurning": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "Cold"
-                            ],
-                            "BOJNGLBFNMC": "Climate",
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": -0.20000000298023224,
-                            "type": "Current"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_Swiming": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "Cold"
-                            ],
-                            "BOJNGLBFNMC": "Climate",
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": 1.7999999523162842,
-                            "type": "Current"
-                        }
-                    ]
-                },
-                "ClimateAbility_Avatar_Perform_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "AttachToStateIDMixin",
-                            "stateIDs": [
-                                "NormalStandby"
-                            ],
-                            "GAIGOBCNNEE": "NormalStandby_Avatar_Perform_Cold_Breath"
-                        },
-                        {
-                            "$type": "AttachToStateIDMixin",
-                            "stateIDs": [
-                                "Climb",
-                                "Sprint",
-                                "Fly"
-                            ],
-                            "GAIGOBCNNEE": "Move_Avatar_Perform_Cold_Breath"
-                        },
-                        {
-                            "$type": "AttachToNormalizedTimeMixin",
-                            "EFAJCDMGOHL": "Walk",
-                            "GAIGOBCNNEE": "Walk_Avatar_Perform_Cold_Breath"
-                        },
-                        {
-                            "$type": "AttachToNormalizedTimeMixin",
-                            "EFAJCDMGOHL": "Run",
-                            "GAIGOBCNNEE": "Run_Avatar_Perform_Cold_Breath"
-                        }
-                    ]
-                },
-                "NormalStandby_Avatar_Perform_Cold_Breath": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 3.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByNot",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByHasFeatureTag",
-                                            "AMIONINAMLE": [
-                                                10052
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_Character_Cold_Breath"
-                        }
-                    ]
-                },
-                "Move_Avatar_Perform_Cold_Breath": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 3.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByNot",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByHasFeatureTag",
-                                            "AMIONINAMLE": [
-                                                10052
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_Character_Cold_Breath_Move"
-                        }
-                    ]
-                },
-                "Walk_Avatar_Perform_Cold_Breath": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 3.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByNot",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByHasFeatureTag",
-                                            "AMIONINAMLE": [
-                                                10052
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_Character_Cold_Breath_Move"
-                        }
-                    ]
-                },
-                "Run_Avatar_Perform_Cold_Breath": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 2.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "FireEffect",
-                            "predicates": [
-                                {
-                                    "$type": "ByNot",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByHasFeatureTag",
-                                            "AMIONINAMLE": [
-                                                10052
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "JBHFPDMBFHN": "Eff_Character_Cold_Breath_Move"
-                        }
-                    ]
-                }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler"
             }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "ClimateAbility_ColdMonster",
-            "HNEIEGHMLKH": {
-                "SERVER_ClimateAbility_ColdMonster_Area": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler"
-                        }
-                    ],
-                    "NDHIFGEGBAC": [
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler"
-                        }
-                    ],
-                    "NPEJFLBOAAN": [
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.5,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "Predicated",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "CircleR3H5",
-                                "ONPOPLLHJLE": "All",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "IS_HOTMONSTER_POINT",
-                                    "value": 1.0
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "CurLocalAvatar",
-                                    "GAIGOBCNNEE": "UNIQUE_ColdMonster_ColdBuff"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "UNIQUE_ColdMonster_ColdBuff": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.20000000298023224,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddClimateMeter",
-                            "LFLNMOIEOGI": "ColdMonster",
-                            "value": -4.0
-                        }
-                    ],
-                    "NHFJDDBKNCM": true
-                },
-                "SERVER_ClimateAbility_ColdMonster_Lv1": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "ClimateAbility_ColdMonster_Lv1_Handler"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "ClimateAbility_Avatar_Perform_Handler"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_ColdMonster_Lv1_Handler"
-                        },
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_Avatar_Perform_Handler"
-                        }
-                    ],
-                    "NDHIFGEGBAC": [
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_ColdMonster_Lv1_Handler"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_Avatar_Perform_Handler"
-                        }
-                    ],
-                    "NPEJFLBOAAN": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_ColdMonster_Lv1_Handler"
-                        },
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_Avatar_Perform_Handler"
-                        }
-                    ]
-                },
-                "ClimateAbility_ColdMonster_Lv1_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "AttachToAbilityStateMixin",
-                            "ELJGGBDOPIL": [
-                                "ElementWet",
-                                "ElementFrozen",
-                                "ElementIce",
-                                "ElementFreeze"
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_ColdMonster_Lv1_Accelerator_IceAndWater"
-                        },
-                        {
-                            "$type": "AttachToAbilityStateMixin",
-                            "ELJGGBDOPIL": [
-                                "ElementFire",
-                                "ElementBurning"
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_ColdMonster_Lv1_Accelerator_FireAndBurning"
-                        }
-                    ]
-                },
-                "SERVER_ClimateAbility_ColdMonster_Lv2": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "LoseHP",
-                            "NPHOOPNDCAC": "CurLocalAvatar",
-                            "predicates": [
-                                {
-                                    "$type": "ByGameTimeIsLocked"
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_MONSTER_LASIGNORA_CLIMATE_QUESTADJUST",
-                                    "value": 0.0,
-                                    "ONPJJFKDCED": "NoneOrEqual"
-                                }
-                            ],
-                            "PDLLIFICICJ": 150.0,
-                            "AJAHODOGLMH": 0.029999999329447746,
-                            "IMKEAGOJBPA": true,
-                            "LCEHMPAGCPL": true,
-                            "GPDAKLCBNFI": true
-                        },
-                        {
-                            "$type": "LoseHP",
-                            "NPHOOPNDCAC": "CurLocalAvatar",
-                            "predicates": [
-                                {
-                                    "$type": "ByGameTimeIsLocked"
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_MONSTER_LASIGNORA_CLIMATE_QUESTADJUST",
-                                    "value": 1.0
-                                }
-                            ],
-                            "PDLLIFICICJ": 150.0,
-                            "AJAHODOGLMH": 0.009999999776482582,
-                            "IMKEAGOJBPA": true,
-                            "LCEHMPAGCPL": true,
-                            "GPDAKLCBNFI": true
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_ColdMonster_Lv1_Accelerator_IceAndWater": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "ColdMonster"
-                            ],
-                            "BOJNGLBFNMC": "Climate",
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": 0.20000000298023224,
-                            "type": "Current"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_ColdMonster_Lv1_Accelerator_FireAndBurning": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "ColdMonster"
-                            ],
-                            "BOJNGLBFNMC": "Climate",
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": -0.20000000298023224,
-                            "type": "Current"
-                        }
-                    ]
-                },
-                "ClimateAbility_Avatar_Perform_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "AttachToStateIDMixin",
-                            "stateIDs": [
-                                "NormalStandby"
-                            ],
-                            "GAIGOBCNNEE": "NormalStandby_Avatar_Perform_Cold_Breath"
-                        },
-                        {
-                            "$type": "AttachToStateIDMixin",
-                            "stateIDs": [
-                                "Climb",
-                                "Sprint",
-                                "Fly"
-                            ],
-                            "GAIGOBCNNEE": "Move_Avatar_Perform_Cold_Breath"
-                        },
-                        {
-                            "$type": "AttachToNormalizedTimeMixin",
-                            "EFAJCDMGOHL": "Walk",
-                            "GAIGOBCNNEE": "Walk_Avatar_Perform_Cold_Breath"
-                        },
-                        {
-                            "$type": "AttachToNormalizedTimeMixin",
-                            "EFAJCDMGOHL": "Run",
-                            "GAIGOBCNNEE": "Run_Avatar_Perform_Cold_Breath"
-                        }
-                    ]
-                },
-                "NormalStandby_Avatar_Perform_Cold_Breath": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 3.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Character_Cold_Breath"
-                        }
-                    ]
-                },
-                "Move_Avatar_Perform_Cold_Breath": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 3.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Character_Cold_Breath_Move"
-                        }
-                    ]
-                },
-                "Walk_Avatar_Perform_Cold_Breath": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 3.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Character_Cold_Breath_Move"
-                        }
-                    ]
-                },
-                "Run_Avatar_Perform_Cold_Breath": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 2.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Character_Cold_Breath_Move"
-                        }
-                    ]
-                }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler"
             }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "ClimateAbility_HotMonster",
-            "HNEIEGHMLKH": {
-                "SERVER_ClimateAbility_HotMonster_Area": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler"
-                        }
-                    ],
-                    "NDHIFGEGBAC": [
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler"
-                        }
-                    ],
-                    "NPEJFLBOAAN": [
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.5,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "Predicated",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "CircleR3H5",
-                                "ONPOPLLHJLE": "All",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "IS_COLDMONSTER_POINT",
-                                    "value": 1.0
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "CurLocalAvatar",
-                                    "GAIGOBCNNEE": "UNIQUE_HotMonster_ColdBuff"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "UNIQUE_HotMonster_ColdBuff": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.20000000298023224,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddClimateMeter",
-                            "LFLNMOIEOGI": "HotMonster",
-                            "value": -4.0
-                        }
-                    ],
-                    "NHFJDDBKNCM": true
-                },
-                "SERVER_ClimateAbility_HotMonster_Lv1": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByIsLocalAvatar"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "ClimateAbility_HotMonster_Lv1_Handler"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_HotMonster_Lv1_Handler"
-                        }
-                    ],
-                    "NDHIFGEGBAC": [
-                        {
-                            "$type": "ApplyModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_HotMonster_Lv1_Handler"
-                        }
-                    ],
-                    "NPEJFLBOAAN": [
-                        {
-                            "$type": "RemoveModifier",
-                            "ACOKKHADPOJ": true,
-                            "GAIGOBCNNEE": "ClimateAbility_HotMonster_Lv1_Handler"
-                        }
-                    ]
-                },
-                "ClimateAbility_HotMonster_Lv1_Handler": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "AttachToAbilityStateMixin",
-                            "ELJGGBDOPIL": [
-                                "ElementWet",
-                                "ElementFrozen",
-                                "ElementIce",
-                                "ElementFreeze"
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_HotMonster_Lv1_Accelerator_IceAndWater"
-                        },
-                        {
-                            "$type": "AttachToAbilityStateMixin",
-                            "ELJGGBDOPIL": [
-                                "ElementFire",
-                                "ElementBurning"
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_ClimateAbility_HotMonster_Lv1_Accelerator_FireAndBurning"
-                        }
-                    ]
-                },
-                "SERVER_ClimateAbility_HotMonster_Lv2": {
-                    "FGJPBKGPNJJ": "Multiple",
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "LoseHP",
-                            "NPHOOPNDCAC": "CurLocalAvatar",
-                            "predicates": [
-                                {
-                                    "$type": "ByGameTimeIsLocked"
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_MONSTER_LASIGNORA_HARBINGER_CLIMATE_QUESTADJUST",
-                                    "value": 0.0,
-                                    "ONPJJFKDCED": "NoneOrEqual"
-                                }
-                            ],
-                            "PDLLIFICICJ": 150.0,
-                            "AJAHODOGLMH": 0.029999999329447746,
-                            "IMKEAGOJBPA": true,
-                            "LCEHMPAGCPL": true,
-                            "GPDAKLCBNFI": true
-                        },
-                        {
-                            "$type": "LoseHP",
-                            "NPHOOPNDCAC": "CurLocalAvatar",
-                            "predicates": [
-                                {
-                                    "$type": "ByGameTimeIsLocked"
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_MONSTER_LASIGNORA_HARBINGER_CLIMATE_QUESTADJUST",
-                                    "value": 1.0
-                                }
-                            ],
-                            "PDLLIFICICJ": 150.0,
-                            "AJAHODOGLMH": 0.009999999776482582,
-                            "IMKEAGOJBPA": true,
-                            "LCEHMPAGCPL": true,
-                            "GPDAKLCBNFI": true
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_HotMonster_Lv1_Accelerator_IceAndWater": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "HotMonster"
-                            ],
-                            "BOJNGLBFNMC": "Climate",
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": -0.20000000298023224,
-                            "type": "Current"
-                        }
-                    ]
-                },
-                "UNIQUE_ClimateAbility_HotMonster_Lv1_Accelerator_FireAndBurning": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "HotMonster"
-                            ],
-                            "BOJNGLBFNMC": "Climate",
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": 0.20000000298023224,
-                            "type": "Current"
-                        }
-                    ]
+          ]
+        },
+        "UNIQUE_ClimateAbility_Avatar_TsurumiMistPoint_Search_Handler": {
+          "isUnique": true,
+          "thinkInterval": 0.5,
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR12H10",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self"
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "IS_TSURUMIMIST_POINT",
+                  "value": 1,
+                  "compareType": "Equal"
                 }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "CurLocalAvatar",
+                  "modifierName": "UNIQUE_TsurumiMistBuff"
+                }
+              ]
             }
+          ]
+        },
+        "UNIQUE_TsurumiMistBuff": {
+          "duration": 1.0,
+          "isUnique": true,
+          "stacking": "Refresh",
+          "thinkInterval": 0.2,
+          "onThinkInterval": [
+            {
+              "$type": "AddClimateMeter",
+              "climateType": "TsurumiRegionalMist",
+              "value": -25.0,
+              "target": "Self"
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["TsurumiRegionalMist"],
+              "source": "All",
+              "trend": "Rise",
+              "ratio": -999.0
+            }
+          ]
         }
+      }
     }
+  },
+  /////////////////////////////////////////////////////////
+  //
+  // TatariRegion
+  //
+  /////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "ClimateAbility_TatariRegion",
+      "modifiers": {
+        "SERVER_ClimateAbility_TatariRegion_Area": {
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "onAvatarIn": [
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler"
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler"
+            }
+          ]
+        },
+        "UNIQUE_ClimateAbility_Avatar_TatariRegionPoint_Search_Handler": {
+          "isUnique": true,
+          "thinkInterval": 0.5,
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR5H10",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self"
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "IS_TATAERIREGION_POINT",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "CurLocalAvatar",
+                  "modifierName": "UNIQUE_TatariRegionBuff"
+                }
+              ]
+            }
+            /*
+						{
+							"$type":"ApplyModifier",
+							"target":"CurLocalAvatar",
+							"modifierName":"UNIQUE_TatariRegionBuff",
+							"predicates":
+							[
+								{
+									"$type":"ByTargetGlobalValue",
+									"key":"HAS_ELECTRIC_FAIRY_BUFF",
+									"value":1,
+									"compareType":"Equal"
+								}
+							],
+						}	
+						*/
+          ]
+        },
+        "UNIQUE_TatariRegionBuff": {
+          "duration": 1.0,
+          "isUnique": true,
+          "stacking": "Refresh",
+          "thinkInterval": 0.2,
+          "onThinkInterval": [
+            {
+              "$type": "AddClimateMeter",
+              "climateType": "TatariRegion",
+              "value": -50.0,
+              "target": "Self"
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["TatariRegion"],
+              "source": "All",
+              "trend": "Rise",
+              "ratio": -999.0
+            }
+          ]
+        },
+        "SERVER_ClimateAbility_TatariRegion_Lv1": {
+          "stacking": "Multiple"
+        },
+        "UNIQUE_MinusElectricReject": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": 0.5,
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "key": "_ABILITY_SceneObj_Electric_Fairy_Immunity_Time",
+              "value": -1,
+              "useLimitRange": true,
+              "maxValue": 100,
+              "minValue": 0
+            }
+          ]
+        },
+        "SERVER_ClimateAbility_TatariRegion_Lv2": {
+          "stacking": "Multiple",
+          "thinkInterval": 2,
+          "onThinkInterval": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": false,
+              "target": "Team",
+              "key": "_TatariRegionLoseHp",
+              "value": 0,
+              "predicates": [
+                {
+                  "$type": "ByGameTimeIsLocked",
+                  "isLocked": false
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "HAS_ELECTRIC_FAIRY_BUFF",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            {
+              "$type": "AddGlobalValue",
+              "doOffStage": false,
+              "target": "Team",
+              "key": "_TatariRegionLoseHp",
+              "useLimitRange": true,
+              "value": 1,
+              "maxValue": 35,
+              "minValue": 0,
+              "predicates": [
+                {
+                  "$type": "ByGameTimeIsLocked",
+                  "isLocked": false
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "HAS_ELECTRIC_FAIRY_BUFF",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ]
+            },
+            {
+              "$type": "CopyGlobalValue",
+              "srcTarget": "Team",
+              "doOffStage": true,
+              "dstTarget": "Self",
+              "srcKey": "_TatariRegionLoseHp",
+              "dstKey": "_TatariRegionLoseHp"
+            },
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_TatariRegionLoseHp",
+                  "value": 30,
+                  "compareType": "MoreThan"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "LoseHP",
+                  "target": "CurLocalAvatar",
+                  "amountByTargetMaxHPRatio": 0.03, //每秒低温的扣血百分比
+                  "amount": 450,
+                  "enableInvincible": true, //无敌可以抵挡这个扣血行为
+                  "enableLockHP": true, //锁血可以抵挡这个扣血行为
+                  "lethal": true, //低温扣血的致死性
+                  "disableWhenLoading": true,
+                  "predicates": [
+                    {
+                      "$type": "ByGameTimeIsLocked",
+                      "isLocked": false
+                    },
+                    {
+                      "$type": "ByNot",
+                      "predicates": [
+                        {
+                          "$type": "ByTargetGlobalValue",
+                          "key": "HAS_ELECTRIC_FAIRY_BUFF",
+                          "value": 1,
+                          "compareType": "Equal"
+                        }
+                      ]
+                    },
+                    {
+                      "$type": "ByIsLocalAvatar"
+                    }
+                  ]
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "doOffStage": false,
+                  "modifierName": "UNIQUE_MinusElectricReject",
+                  "target": "Team"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "LoseHP",
+                  "target": "CurLocalAvatar",
+                  "amountByTargetMaxHPRatio": 0.01, //每秒低温的扣血百分比
+                  "amount": 150,
+                  "enableInvincible": true, //无敌可以抵挡这个扣血行为
+                  "enableLockHP": true, //锁血可以抵挡这个扣血行为
+                  "lethal": true, //低温扣血的致死性
+                  "disableWhenLoading": true,
+                  "predicates": [
+                    {
+                      "$type": "ByGameTimeIsLocked",
+                      "isLocked": false
+                    },
+                    {
+                      "$type": "ByNot",
+                      "predicates": [
+                        {
+                          "$type": "ByTargetGlobalValue",
+                          "key": "HAS_ELECTRIC_FAIRY_BUFF",
+                          "value": 1,
+                          "compareType": "Equal"
+                        }
+                      ]
+                    },
+                    {
+                      "$type": "ByIsLocalAvatar"
+                    }
+                  ]
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "doOffStage": false,
+                  "modifierName": "UNIQUE_MinusElectricReject",
+                  "target": "Team"
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "target": "Team",
+              "key": "_TatariRegionLoseHp",
+              "value": 0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "target": "Team",
+              "key": "_TatariRegionLoseHp",
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  /////////////////////////////////////////////////////////
+  //
+  // SeiraiStorm
+  //
+  /////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "ClimateAbility_SeiraiStorm",
+      "isDynamicAbility": true,
+      "modifiers": {
+        "SERVER_ClimateAbility_SeiraiStorm_Area": {
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "onAvatarIn": [
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler"
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler"
+            }
+          ]
+        },
+        "UNIQUE_ClimateAbility_Avatar_SeiraiStorm_Thunder_Handler": {
+          "isUnique": true
+        },
+        //低阈值无效果
+        "SERVER_ClimateAbility_SeiraiStorm_Lv1": {
+          "stacking": "Multiple"
+        },
+        //高阈值有效果
+        "SERVER_ClimateAbility_SeiraiStorm_Lv2": {
+          "stacking": "Multiple",
+          "thinkInterval": 2,
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "target": "Team",
+              "key": "_SeiraiStormLoseHp",
+              "useLimitRange": true,
+              "value": -20,
+              "maxValue": 20,
+              "minValue": 0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "AddGlobalValue",
+              "target": "Team",
+              "key": "_SeiraiStormLoseHp",
+              "useLimitRange": true,
+              "value": -20,
+              "maxValue": 20,
+              "minValue": 0
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "AddGlobalValue",
+              "doOffStage": false,
+              "target": "Team",
+              "key": "_SeiraiStormLoseHp",
+              "useLimitRange": true,
+              "value": 1,
+              "maxValue": 20,
+              "minValue": 0,
+              "predicates": [
+                {
+                  "$type": "ByGameTimeIsLocked",
+                  "isLocked": false
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  /////////////////////////////////////////////////////////
+  //
+  // SeaMist
+  //
+  /////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "ClimateAbility_SeaMist",
+      "modifiers": {
+        "SERVER_ClimateAbility_Cold_Area": {
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "onAvatarIn": [
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler"
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler"
+            }
+          ]
+        },
+        "UNIQUE_ClimateAbility_Avatar_SeaMistPoint_Search_Handler": {
+          "isUnique": true,
+          "thinkInterval": 0.5,
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR6.5H5",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self"
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "IS_SEAMIST_POINT",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "CurLocalAvatar",
+                  "modifierName": "UNIQUE_SeaMistBuff"
+                }
+              ]
+            }
+          ]
+        },
+        "UNIQUE_SeaMistBuff": {
+          "duration": 1.0,
+          "isUnique": true,
+          "stacking": "Refresh",
+          "thinkInterval": 0.2,
+          "onThinkInterval": [
+            {
+              "$type": "AddClimateMeter",
+              "climateType": "SeaMist",
+              "value": -5.0,
+              "target": "Self"
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["SeaMist"],
+              "source": "All",
+              "trend": "Rise",
+              "ratio": -999.0
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  /////////////////////////////////////////////////////////
+  //
+  // Cold
+  //
+  /////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "ClimateAbility_Cold",
+      "modifiers": {
+        "SERVER_ClimateAbility_Cold_Area": {
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "onAvatarIn": [
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler"
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveServerBuff",
+              "isTeamBuff": true,
+              "target": "CurTeamAvatars",
+              "sBuffId": 500101
+            },
+            {
+              "$type": "RemoveServerBuff",
+              "isTeamBuff": true,
+              "target": "CurTeamAvatars",
+              "sBuffId": 500102
+            },
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler"
+            }
+          ]
+        },
+        "UNIQUE_ClimateAbility_Avatar_Warmpoint_Search_Handler": {
+          "isUnique": true,
+          "thinkInterval": 0.5,
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR6.5H5",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self"
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "IS_WARM_POINT",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "CurLocalAvatar",
+                  "modifierName": "UNIQUE_WarmBuff"
+                }
+              ]
+            }
+          ]
+        },
+        "UNIQUE_WarmBuff": {
+          "duration": 1.0,
+          "isUnique": true,
+          "stacking": "Refresh",
+          "thinkInterval": 0.2,
+          "onThinkInterval": [
+            {
+              "$type": "AddClimateMeter",
+              "climateType": "Cold",
+              "value": -5.0,
+              "target": "Self"
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["Cold"],
+              "source": "All",
+              "trend": "Rise",
+              "ratio": -999.0
+            }
+          ]
+        },
+
+        "SERVER_ClimateAbility_Cold_Lv1": {
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "ClimateAbility_Cold_Lv1_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "ClimateAbility_Avatar_Perform_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "onAvatarIn": [
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_Cold_Lv1_Handler"
+            },
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_Avatar_Perform_Handler"
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_Cold_Lv1_Handler"
+            },
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_Avatar_Perform_Handler"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_Cold_Lv1_Handler"
+            },
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_Avatar_Perform_Handler"
+            }
+          ]
+        },
+        "ClimateAbility_Cold_Lv1_Handler": {
+          "modifierMixins": [
+            {
+              "$type": "AttachToAbilityStateMixin",
+              "abilityStates": [
+                "ElementWet",
+                "ElementFrozen",
+                "ElementIce",
+                "ElementFreeze"
+              ],
+              "modifierName": "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_IceAndWater"
+            },
+            {
+              "$type": "AttachToAbilityStateMixin",
+              "abilityStates": ["ElementFire", "ElementBurning"],
+              "modifierName": "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_FireAndBurning"
+            },
+            {
+              "$type": "AttachToStateIDMixin",
+              "stateIDs": ["Swim"],
+              "modifierName": "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_Swiming",
+              "isCheckOnAttach": true
+            }
+          ]
+        },
+        "SERVER_ClimateAbility_Cold_Lv2": {
+          "stacking": "Multiple",
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "LoseHP",
+              "target": "CurLocalAvatar",
+              "amountByTargetMaxHPRatio": 0.01, //每秒低温的扣血百分比
+              "amount": 150,
+              "enableInvincible": true, //无敌可以抵挡这个扣血行为
+              "enableLockHP": true, //锁血可以抵挡这个扣血行为
+              "lethal": true, //低温扣血的致死性
+              "disableWhenLoading": true,
+              "predicates": [
+                {
+                  "$type": "ByGameTimeIsLocked",
+                  "isLocked": false
+                }
+              ]
+            }
+          ]
+        },
+        "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_Flag_Element": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              //flag value, dont set range.
+              "$type": "AddGlobalValue",
+              "key": "_ABILITY_CLIMATE_COLD_ACCELERATOR_FLAG",
+              "value": 1,
+              "useLimitRange": false
+            }
+          ],
+          "onRemoved": [
+            {
+              //flag value, dont set range.
+              "$type": "AddGlobalValue",
+              "key": "_ABILITY_CLIMATE_COLD_ACCELERATOR_FLAG",
+              "value": -1,
+              "useLimitRange": false
+            }
+          ]
+        },
+        "ClimateAbility_Cold_Lv1_Accelerator_Blank": {},
+        "ClimateAbility_Cold_Lv1_Accelerator": {
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["Cold"],
+              "source": "Climate",
+              "trend": "Rise",
+              "ratio": 0.5
+            }
+          ]
+        },
+        //冰水附着会改变低温增速
+        "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_IceAndWater": {
+          "isUnique": true,
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["Cold"],
+              "source": "Climate",
+              "trend": "Rise",
+              "ratio": 0.2
+            }
+          ]
+        },
+        //火附着会改变低温增速
+        "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_FireAndBurning": {
+          "isUnique": true,
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["Cold"],
+              "source": "Climate",
+              "trend": "Rise",
+              "ratio": -0.2
+            }
+          ]
+        },
+        //游泳状态会改变低温增速，因为游泳时必潮湿，所以玩家游泳时实际的低温增速要加上潮湿的增速。
+        "UNIQUE_ClimateAbility_Cold_Lv1_Accelerator_Swiming": {
+          "isUnique": true,
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["Cold"],
+              "source": "Climate",
+              "trend": "Rise",
+              "ratio": 1.8
+            }
+          ]
+        },
+        //角色在寒冷区域哈气表现，不再有动作表现，只播特效的话就实现的轻量级一些。
+        "ClimateAbility_Avatar_Perform_Handler": {
+          "modifierMixins": [
+            {
+              "$type": "AttachToStateIDMixin",
+              "stateIDs": ["NormalStandby"],
+              "modifierName": "NormalStandby_Avatar_Perform_Cold_Breath"
+            },
+            {
+              "$type": "AttachToStateIDMixin",
+              "stateIDs": ["Climb", "Sprint", "Fly"],
+              "modifierName": "Move_Avatar_Perform_Cold_Breath"
+            },
+            {
+              "$type": "AttachToNormalizedTimeMixin", //不想在state频繁切换时表现鬼畜，每个拎出来写
+              "stateID": "Walk",
+              "modifierName": "Walk_Avatar_Perform_Cold_Breath",
+              "normalizeStart": 0.0,
+              "normalizeEnd": 1.0
+            },
+            {
+              "$type": "AttachToNormalizedTimeMixin",
+              "stateID": "Run",
+              "modifierName": "Run_Avatar_Perform_Cold_Breath",
+              "normalizeStart": 0.0,
+              "normalizeEnd": 1.0
+            }
+          ]
+        },
+        "NormalStandby_Avatar_Perform_Cold_Breath": {
+          "thinkInterval": 3,
+          "onThinkInterval": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Character_Cold_Breath",
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHasFeatureTag",
+                      "featureTagIDs": [10052]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        //特效完全跟隨角色移動時，粒子生命周期太長，看起來特效像是長在人臉上的，很奇怪。所以角色移動時用短粒子生命周期的特效
+        "Move_Avatar_Perform_Cold_Breath": {
+          "thinkInterval": 3,
+          "onThinkInterval": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Character_Cold_Breath_Move",
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHasFeatureTag",
+                      "featureTagIDs": [10052]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "Walk_Avatar_Perform_Cold_Breath": {
+          "thinkInterval": 3,
+          "onThinkInterval": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Character_Cold_Breath_Move",
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHasFeatureTag",
+                      "featureTagIDs": [10052]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "Run_Avatar_Perform_Cold_Breath": {
+          "thinkInterval": 2, //跑起來呼吸急促 （冲起來要深呼吸，所以還是3秒）
+          "onThinkInterval": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Character_Cold_Breath_Move",
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByHasFeatureTag",
+                      "featureTagIDs": [10052]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  /////////////////////////////////////////////////////////
+  //
+  // ColdMonster
+  //
+  /////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "ClimateAbility_ColdMonster",
+      "modifiers": {
+        //新开serverBuffID用于调节数值难度
+        "SERVER_ClimateAbility_ColdMonster_Area": {
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "onAvatarIn": [
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler"
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler"
+            }
+          ]
+        },
+        //新开serverBuffID用于调节数值难度
+        "UNIQUE_ClimateAbility_ColdMonster_Avatar_HotPoint_Search_Handler": {
+          "isUnique": true,
+          "thinkInterval": 0.5,
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR3H5",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self"
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "IS_HOTMONSTER_POINT",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "CurLocalAvatar",
+                  "modifierName": "UNIQUE_ColdMonster_ColdBuff"
+                }
+              ]
+            }
+          ]
+        },
+        //新开serverBuffID用于调节数值难度
+        "UNIQUE_ColdMonster_ColdBuff": {
+          "duration": 1.0,
+          "isUnique": true,
+          "stacking": "Refresh",
+          "onThinkIntervalIsFixedUpdate": true,
+          "thinkInterval": 0.2,
+          "onThinkInterval": [
+            {
+              "$type": "AddClimateMeter",
+              "climateType": "ColdMonster",
+              "value": -4.0,
+              "target": "Self"
+            }
+          ]
+        },
+        //新开serverBuffID用于调节数值难度
+        "SERVER_ClimateAbility_ColdMonster_Lv1": {
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "ClimateAbility_ColdMonster_Lv1_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "ClimateAbility_Avatar_Perform_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "onAvatarIn": [
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_ColdMonster_Lv1_Handler"
+            },
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_Avatar_Perform_Handler"
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_ColdMonster_Lv1_Handler"
+            },
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_Avatar_Perform_Handler"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_ColdMonster_Lv1_Handler"
+            },
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_Avatar_Perform_Handler"
+            }
+          ]
+        },
+        "ClimateAbility_ColdMonster_Lv1_Handler": {
+          "modifierMixins": [
+            {
+              "$type": "AttachToAbilityStateMixin",
+              "abilityStates": [
+                "ElementWet",
+                "ElementFrozen",
+                "ElementIce",
+                "ElementFreeze"
+              ],
+              "modifierName": "UNIQUE_ClimateAbility_ColdMonster_Lv1_Accelerator_IceAndWater"
+            },
+            {
+              "$type": "AttachToAbilityStateMixin",
+              "abilityStates": ["ElementFire", "ElementBurning"],
+              "modifierName": "UNIQUE_ClimateAbility_ColdMonster_Lv1_Accelerator_FireAndBurning"
+            }
+          ]
+        },
+        //新开serverBuffID用于调节数值难度
+        "SERVER_ClimateAbility_ColdMonster_Lv2": {
+          "stacking": "Multiple",
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "LoseHP",
+              "target": "CurLocalAvatar",
+              "amountByTargetMaxHPRatio": 0.03, //每秒低温的扣血百分比
+              "amount": 150,
+              "enableInvincible": true, //无敌可以抵挡这个扣血行为
+              "enableLockHP": true, //锁血可以抵挡这个扣血行为
+              "lethal": true, //低温扣血的致死性
+              "disableWhenLoading": true,
+              "predicates": [
+                {
+                  "$type": "ByGameTimeIsLocked",
+                  "isLocked": false
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_LASIGNORA_CLIMATE_QUESTADJUST",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ]
+            },
+            //剧情数值难度降低
+            {
+              "$type": "LoseHP",
+              "target": "CurLocalAvatar",
+              "amountByTargetMaxHPRatio": 0.01, //每秒低温的扣血百分比
+              "amount": 150,
+              "enableInvincible": true, //无敌可以抵挡这个扣血行为
+              "enableLockHP": true, //锁血可以抵挡这个扣血行为
+              "lethal": true, //低温扣血的致死性
+              "disableWhenLoading": true,
+              "predicates": [
+                {
+                  "$type": "ByGameTimeIsLocked",
+                  "isLocked": false
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_LASIGNORA_CLIMATE_QUESTADJUST",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            }
+          ]
+        },
+        //冰水附着会改变低温增速
+        "UNIQUE_ClimateAbility_ColdMonster_Lv1_Accelerator_IceAndWater": {
+          "isUnique": true,
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["ColdMonster"],
+              "source": "Climate",
+              "trend": "Rise",
+              "ratio": 0.2
+            }
+          ]
+        },
+        //火附着会改变低温增速
+        "UNIQUE_ClimateAbility_ColdMonster_Lv1_Accelerator_FireAndBurning": {
+          "isUnique": true,
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["ColdMonster"],
+              "source": "Climate",
+              "trend": "Rise",
+              "ratio": -0.2
+            }
+          ]
+        },
+        //角色在寒冷区域哈气表现，不再有动作表现，只播特效的话就实现的轻量级一些。
+        "ClimateAbility_Avatar_Perform_Handler": {
+          "modifierMixins": [
+            {
+              "$type": "AttachToStateIDMixin",
+              "stateIDs": ["NormalStandby"],
+              "modifierName": "NormalStandby_Avatar_Perform_Cold_Breath"
+            },
+            {
+              "$type": "AttachToStateIDMixin",
+              "stateIDs": ["Climb", "Sprint", "Fly"],
+              "modifierName": "Move_Avatar_Perform_Cold_Breath"
+            },
+            {
+              "$type": "AttachToNormalizedTimeMixin", //不想在state频繁切换时表现鬼畜，每个拎出来写
+              "stateID": "Walk",
+              "modifierName": "Walk_Avatar_Perform_Cold_Breath",
+              "normalizeStart": 0.0,
+              "normalizeEnd": 1.0
+            },
+            {
+              "$type": "AttachToNormalizedTimeMixin",
+              "stateID": "Run",
+              "modifierName": "Run_Avatar_Perform_Cold_Breath",
+              "normalizeStart": 0.0,
+              "normalizeEnd": 1.0
+            }
+          ]
+        },
+        "NormalStandby_Avatar_Perform_Cold_Breath": {
+          "thinkInterval": 3,
+          "onThinkInterval": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Character_Cold_Breath"
+            }
+          ]
+        },
+        //特效完全跟隨角色移動時，粒子生命周期太長，看起來特效像是長在人臉上的，很奇怪。所以角色移動時用短粒子生命周期的特效
+        "Move_Avatar_Perform_Cold_Breath": {
+          "thinkInterval": 3,
+          "onThinkInterval": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Character_Cold_Breath_Move"
+            }
+          ]
+        },
+        "Walk_Avatar_Perform_Cold_Breath": {
+          "thinkInterval": 3,
+          "onThinkInterval": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Character_Cold_Breath_Move"
+            }
+          ]
+        },
+        "Run_Avatar_Perform_Cold_Breath": {
+          "thinkInterval": 2, //跑起來呼吸急促 （冲起來要深呼吸，所以還是3秒）
+          "onThinkInterval": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Character_Cold_Breath_Move"
+            }
+          ]
+        }
+      }
+    }
+  },
+  /////////////////////////////////////////////////////////
+  //
+  // HotMonster
+  //
+  /////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "ClimateAbility_HotMonster",
+      "modifiers": {
+        //新开serverBuffID用于调节数值难度
+        "SERVER_ClimateAbility_HotMonster_Area": {
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "onAvatarIn": [
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler"
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler"
+            }
+          ]
+        },
+        //新开serverBuffID用于调节数值难度
+        "UNIQUE_ClimateAbility_HotMonster_Avatar_ColdPoint_Search_Handler": {
+          "isUnique": true,
+          "thinkInterval": 0.5,
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR3H5",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self"
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "IS_COLDMONSTER_POINT",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "CurLocalAvatar",
+                  "modifierName": "UNIQUE_HotMonster_ColdBuff"
+                }
+              ]
+            }
+          ]
+        },
+        //新开serverBuffID用于调节数值难度
+        "UNIQUE_HotMonster_ColdBuff": {
+          "duration": 1.0,
+          "isUnique": true,
+          "stacking": "Refresh",
+          "onThinkIntervalIsFixedUpdate": true,
+          "thinkInterval": 0.2,
+          "onThinkInterval": [
+            {
+              "$type": "AddClimateMeter",
+              "climateType": "HotMonster",
+              "value": -4.0,
+              "target": "Self"
+            }
+          ]
+        },
+        //新开serverBuffID用于调节数值难度
+        "SERVER_ClimateAbility_HotMonster_Lv1": {
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "ClimateAbility_HotMonster_Lv1_Handler",
+              "predicates": [
+                {
+                  "$type": "ByIsLocalAvatar"
+                }
+              ]
+            }
+          ],
+          "onAvatarIn": [
+            {
+              "$type": "ApplyModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_HotMonster_Lv1_Handler"
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_HotMonster_Lv1_Handler"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "ClimateAbility_HotMonster_Lv1_Handler"
+            }
+          ]
+        },
+        "ClimateAbility_HotMonster_Lv1_Handler": {
+          "modifierMixins": [
+            {
+              "$type": "AttachToAbilityStateMixin",
+              "abilityStates": [
+                "ElementWet",
+                "ElementFrozen",
+                "ElementIce",
+                "ElementFreeze"
+              ],
+              "modifierName": "UNIQUE_ClimateAbility_HotMonster_Lv1_Accelerator_IceAndWater"
+            },
+            {
+              "$type": "AttachToAbilityStateMixin",
+              "abilityStates": ["ElementFire", "ElementBurning"],
+              "modifierName": "UNIQUE_ClimateAbility_HotMonster_Lv1_Accelerator_FireAndBurning"
+            }
+          ]
+        },
+        //新开serverBuffID用于调节数值难度
+        "SERVER_ClimateAbility_HotMonster_Lv2": {
+          "stacking": "Multiple",
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "LoseHP",
+              "target": "CurLocalAvatar",
+              "amountByTargetMaxHPRatio": 0.03, //每秒高温的扣血百分比
+              "amount": 150,
+              "enableInvincible": true, //无敌可以抵挡这个扣血行为
+              "enableLockHP": true, //锁血可以抵挡这个扣血行为
+              "lethal": true, //高温扣血的致死性
+              "disableWhenLoading": true,
+              "predicates": [
+                {
+                  "$type": "ByGameTimeIsLocked",
+                  "isLocked": false
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_LASIGNORA_HARBINGER_CLIMATE_QUESTADJUST",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ]
+            },
+            //剧情数值难度降低
+            {
+              "$type": "LoseHP",
+              "target": "CurLocalAvatar",
+              "amountByTargetMaxHPRatio": 0.01, //每秒高温的扣血百分比
+              "amount": 150,
+              "enableInvincible": true, //无敌可以抵挡这个扣血行为
+              "enableLockHP": true, //锁血可以抵挡这个扣血行为
+              "lethal": true, //高温扣血的致死性
+              "disableWhenLoading": true,
+              "predicates": [
+                {
+                  "$type": "ByGameTimeIsLocked",
+                  "isLocked": false
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_LASIGNORA_HARBINGER_CLIMATE_QUESTADJUST",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            }
+          ]
+        },
+        //冰水附着会改变高温增速
+        "UNIQUE_ClimateAbility_HotMonster_Lv1_Accelerator_IceAndWater": {
+          "isUnique": true,
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["HotMonster"],
+              "source": "Climate",
+              "trend": "Rise",
+              "ratio": -0.2
+            }
+          ]
+        },
+        //火附着会改变高温增速
+        "UNIQUE_ClimateAbility_HotMonster_Lv1_Accelerator_FireAndBurning": {
+          "isUnique": true,
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["HotMonster"],
+              "source": "Climate",
+              "trend": "Rise",
+              "ratio": 0.2
+            }
+          ]
+        }
+      }
+    }
+  }
 ]

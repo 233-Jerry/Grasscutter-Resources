@@ -1,200 +1,196 @@
 [
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_ForlornVessel_EndureDelta_Add",
-            "EDDGGPMFDGK": {
-                "ForlornVessel_Endure": 0.5
-            },
-            "HNEIEGHMLKH": {
-                "UNIQUE_ForlornVessel_EndureDelta": {
-                    "FGJPBKGPNJJ": "Unique",
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "FFOHEEFOELN": {
-                        "Actor_EndureDelta": "ForlornVessel_Endure"
-                    }
-                }
-            },
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "ApplyModifier",
-                    "predicates": [
-                        {
-                            "$type": "ByTargetGlobalValue",
-                            "HJJEAOMEOFI": "ForlornVessel_ElementShield",
-                            "value": 0.0,
-                            "ONPJJFKDCED": "NoneOrEqual"
-                        }
-                    ],
-                    "GAIGOBCNNEE": "UNIQUE_ForlornVessel_EndureDelta"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_ForlornVessel_EndureDelta_Remove",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "RemoveUniqueModifier",
-                    "GAIGOBCNNEE": "UNIQUE_ForlornVessel_EndureDelta"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_ForlornVessel_BeHitThrow",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToStateIDMixin",
-                    "stateIDs": [
-                        "BeHitThrow"
-                    ],
-                    "GAIGOBCNNEE": "ForlornVessel_HitThrowHandler"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "ForlornVessel_HitThrowHandler": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ClearEndura"
-                        },
-                        {
-                            "$type": "RemoveVelocityForce",
-                            "forces": [
-                                "WindZoneType"
-                            ]
-                        }
-                    ]
-                }
+  ////////////////////////////////////////////////////////////////
+  //
+  //  EndureDelta
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_ForlornVessel_EndureDelta_Add",
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_ForlornVessel_EndureDelta",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "ForlornVessel_ElementShield",
+              "value": 0,
+              "compareType": "NoneOrEqual"
             }
+          ]
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_ForlornVessel_BeHeal",
-            "KCICDEJLIJD": [
-                {
-                    "$type": "SetGlobalValue",
-                    "value": 0.0,
-                    "HJJEAOMEOFI": "ForlornVessel_Lance_Heal",
-                    "JDHHMBHOOEC": 0.0,
-                    "KHAHOELDONA": 0.0
-                }
-            ]
+      ],
+      "modifiers": {
+        "UNIQUE_ForlornVessel_EndureDelta": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "properties": {
+            "Actor_EndureDelta": "%ForlornVessel_Endure"
+          }
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_ForlornVessel_Strong_Salute",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToAnimatorStateIDMixin",
-                    "stateIDs": [
-                        "Salute"
-                    ],
-                    "GAIGOBCNNEE": "ForlornVessel_Strong_SaluteAction"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "ForlornVessel_Strong_SaluteAction": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "SteerAttackTraceToPosMixin",
-                            "EHNAPMMMNFI": [
-                                "Salute"
-                            ],
-                            "HENDIIJFPCI": 720.0,
-                            "NCAENFOANAG": "",
-                            "KMAHNNHLKPP": "_FORLORNVESSEL_SALUTE_POS_"
-                        }
-                    ],
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_FORLORNVESSEL_SALUTE_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "Predicated",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "AKMLOIFOBPO": "Nearest",
-                                "JBKKOJLJHDK": "CircleR15",
-                                "ONPOPLLHJLE": "Alliance",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByEntityTypes",
-                                    "entityTypes": [
-                                        "Monster"
-                                    ]
-                                },
-                                {
-                                    "$type": "ByHasFeatureTag",
-                                    "AMIONINAMLE": [
-                                        4014
-                                    ]
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "Target",
-                                    "GAIGOBCNNEE": "ForlornVessel_Strong_SalutePos"
-                                }
-                            ]
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_FORLORNVESSEL_SALUTE_",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                },
-                "ForlornVessel_Strong_SalutePos": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalPos",
-                            "HJJEAOMEOFI": "_FORLORNVESSEL_SALUTE_POS_",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf"
-                            },
-                            "OGADOPDNBMM": false
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "SetGlobalValue",
-                    "value": 0.0,
-                    "HJJEAOMEOFI": "_FORLORNVESSEL_SALUTE_",
-                    "JDHHMBHOOEC": 0.0,
-                    "KHAHOELDONA": 0.0
-                }
-            ]
-        }
+      },
+      "abilitySpecials": {
+        "ForlornVessel_Endure": 0.5
+      }
     }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_ForlornVessel_EndureDelta_Remove",
+      "onAbilityStart": [
+        {
+          "$type": "RemoveUniqueModifier",
+          "modifierName": "UNIQUE_ForlornVessel_EndureDelta"
+        }
+      ]
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  BeHitThrow
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_ForlornVessel_BeHitThrow",
+      "abilityMixins": [
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["BeHitThrow"],
+          "modifierName": "ForlornVessel_HitThrowHandler"
+        }
+      ],
+      "modifiers": {
+        "ForlornVessel_HitThrowHandler": {
+          "onAdded": [
+            {
+              "$type": "ClearEndura"
+            },
+            {
+              "$type": "RemoveVelocityForce",
+              "forces": ["WindZoneType"]
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Lance Heal
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_ForlornVessel_BeHeal",
+      "onAdded": [
+        {
+          "$type": "SetGlobalValue",
+          "key": "ForlornVessel_Lance_Heal",
+          "value": 0
+        }
+      ]
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Salute
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_ForlornVessel_Strong_Salute",
+      "onAdded": [
+        {
+          "$type": "SetGlobalValue",
+          "key": "_FORLORNVESSEL_SALUTE_",
+          "value": 0
+        }
+      ],
+      "abilityMixins": [
+        {
+          "$type": "AttachToAnimatorStateIDMixin",
+          "stateIDs": ["Salute"],
+          "modifierName": "ForlornVessel_Strong_SaluteAction"
+        }
+      ],
+      "modifiers": {
+        "ForlornVessel_Strong_SaluteAction": {
+          "modifierMixins": [
+            {
+              "$type": "SteerAttackTraceToPosMixin",
+              "steerStateIDs": ["Salute"],
+              "startNormalizedTime": 0.0,
+              "endNormalizedTime": 1.0,
+              "angularSpeed": 720,
+              "globalPosKey": "_FORLORNVESSEL_SALUTE_POS_"
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_FORLORNVESSEL_SALUTE_",
+              "value": 1
+            },
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR15",
+                "centerBasedOn": "Self",
+                "campTargetType": "Alliance",
+                "campBasedOn": "Self",
+                "sortType": "Nearest"
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByHasFeatureTag",
+                  "featureTagIDs": [4014]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "ForlornVessel_Strong_SalutePos",
+                  "target": "Target"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_FORLORNVESSEL_SALUTE_",
+              "value": 0
+            }
+          ]
+        },
+        "ForlornVessel_Strong_SalutePos": {
+          "duration": 1.0,
+          "onAdded": [
+            // 壳敬礼方向
+            {
+              "$type": "SetGlobalPos",
+              "target": "Self",
+              "key": "_FORLORNVESSEL_SALUTE_POS_",
+              "born": {
+                "$type": "ConfigBornBySelf"
+              },
+              "setTarget": false
+            }
+          ]
+        }
+      }
+    }
+  }
 ]
