@@ -25,12 +25,29 @@
     }
   ],
   "Tohma_Constellation_2": [
+    // {
+    // 	"$type": "UnlockTalentParam",
+    // 	"abilityName": "Avatar_Tohma_ElementalBurst_Buff_Handler",
+    // 	"talentParam": "Tohma_Talent2_ResistDown",
+    // },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Tohma_ElementalBurst_Buff_Handler",
-      "paramSpecial": "Dura",
+      "paramSpecial": "Dura", //增加了时长
       "paramDelta": "%1"
     }
+    // {
+    // 	"$type": "ModifyAbility",
+    // 	"abilityName": "Avatar_Tohma_ElementalBurst_Buff_Handler",
+    // 	"paramSpecial": "Tohma_Talent2_Value",//减火抗效果
+    // 	"paramDelta": "-%2",
+    // },
+    // {
+    // 	"$type": "ModifyAbility",
+    // 	"abilityName": "Avatar_Tohma_ElementalBurst_Buff_Handler",
+    // 	"paramSpecial": "Tohma_Talent2_Time",//debuff持续时长
+    // 	"paramDelta": "%3",
+    // },
   ],
   "Tohma_Constellation_3": [
     {
@@ -52,6 +69,12 @@
       "paramSpecial": "Tohma_Talent4_Value",
       "paramDelta": "%1"
     }
+    // {
+    // 	"$type": "ModifyAbility",
+    // 	"abilityName": "Avatar_Tohma_ElementalBurst_Buff_Handler",
+    // 	"paramSpecial": "Tohma_Talent4_CDTime",
+    // 	"paramDelta": "%2",
+    // },
   ],
   "Tohma_Constellation_5": [
     {
@@ -112,6 +135,11 @@
     }
   ],
   "Tohma_PermanentSkill_2": [
+    // { //未解锁的话系数本来就是0，所以不需要解锁去分支了。
+    // 	"$type": "UnlockTalentParam",
+    // 	"abilityName": "Avatar_Tohma_ElementalBurst_TriggerAttack",
+    // 	"talentParam": "Tohma_PermanentSkill_2_HP2Damage",
+    // },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Tohma_ElementalBurst_TriggerAttack",
@@ -203,7 +231,7 @@
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Tohma_ElementalArt_Handler",
-      "paramSpecial": "ArtDura",
+      "paramSpecial": "ArtDura", //叠加功能只有刷新时长，需要和大招盾时长一致。
       "paramDelta": "%4"
     },
     {
@@ -247,14 +275,14 @@
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Tohma_ElementalArt_Handler",
-      "paramSpecial": "BurstDura",
+      "paramSpecial": "BurstDura", //这个时长建议要等于小技能的。不然叠加功能会有刷新时长问题。
       "paramDelta": "%5"
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Tohma_ElementalBurst_Buff_Handler",
       "paramSpecial": "CDTime",
-      "paramDelta": "%6"
+      "paramDelta": "%6" //改成固定值了
     },
     {
       "$type": "ModifyAbility",

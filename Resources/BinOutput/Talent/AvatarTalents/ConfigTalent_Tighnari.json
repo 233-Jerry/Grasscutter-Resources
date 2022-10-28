@@ -30,6 +30,7 @@
       "paramDelta": "%2"
     }
   ],
+  //大招+3
   "Tighnari_Constellation_3": [
     {
       "$type": "AddTalentExtraLevel",
@@ -71,6 +72,7 @@
       "talentParam": "Tighnari_Constellation_4_Param"
     }
   ],
+  //小技能+3
   "Tighnari_Constellation_5": [
     {
       "$type": "AddTalentExtraLevel",
@@ -81,7 +83,7 @@
   ],
   "Tighnari_Constellation_6": [
     {
-      "$type": "UnlockTalentParam",
+      "$type": "UnlockTalentParam", //控制多1箭
       "abilityName": "Tighnari_AimingArrow_BeforeFission_Material",
       "talentParam": "Tighnari_Constellation_6_Param"
     },
@@ -89,7 +91,7 @@
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Tighnari_ShootAimingArrow_Charge",
       "paramSpecial": "Talent6",
-      "paramDelta": "%1"
+      "paramDelta": "%1" //填写时说明每0.3一档
     },
     {
       "$type": "ModifyAbility",
@@ -99,17 +101,18 @@
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Tighnari_AimingArrow_Fission_Material_Talent",
+      "abilityName": "Tighnari_AimingArrow_Fission_Material_Talent", //2段命6跟踪箭
       "paramSpecial": "Damage_Talent",
       "paramDelta": "%2"
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Tighnari_AimingArrow_Fission_LifeOver_Talent",
+      "abilityName": "Tighnari_AimingArrow_Fission_LifeOver_Talent", //2段命6跟踪箭
       "paramSpecial": "Damage_Talent",
       "paramDelta": "%2"
     }
   ],
+  //二段重击后，提升精通。
   "Tighnari_PermanentSkill_1": [
     {
       "$type": "UnlockTalentParam",
@@ -157,6 +160,7 @@
       "abilityName": "Avatar_Tighnari_Radar_Collectables_Sumeru"
     }
   ],
+  //普攻强度，重击，下落攻击
   "Tighnari_SkillUpgrade_1": [
     {
       "$type": "ModifyAbility",
@@ -196,19 +200,19 @@
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Tighnari_AimingArrow_BeforeFission_Material",
+      "abilityName": "Tighnari_AimingArrow_BeforeFission_Material", //2段箭
       "paramSpecial": "Damage",
       "paramDelta": "%7"
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Tighnari_AimingArrow_Fission_Material",
+      "abilityName": "Tighnari_AimingArrow_Fission_Material", //2段爆炸跟踪箭
       "paramSpecial": "Damage",
       "paramDelta": "%8"
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Tighnari_AimingArrow_Fission_LifeOver",
+      "abilityName": "Tighnari_AimingArrow_Fission_LifeOver", //2段爆炸跟踪箭
       "paramSpecial": "Damage",
       "paramDelta": "%8"
     },
@@ -231,6 +235,7 @@
       "paramDelta": "%11"
     }
   ],
+  //小技能效果。
   "Tighnari_SkillUpgrade_2": [
     {
       "$type": "ModifyAbility",
@@ -263,6 +268,7 @@
       "paramDelta": "%3"
     }
   ],
+  //元素爆发强度
   "Tighnari_SkillUpgrade_3": [
     {
       "$type": "ModifyAbility",
