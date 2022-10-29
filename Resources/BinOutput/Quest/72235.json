@@ -1,59 +1,83 @@
 {
-  "id": 72235,
-  "type": "WQ",
-  "activeMode": "PLAY_MODE_ALL",
   "titleTextMapHash": 2871776039,
   "descTextMapHash": 1473910422,
-  "luaPath": "Actor/Quest/WQ72235",
+  "id": 72235,
+  "ICLLDPJFIMA": 0,
+  "NCLEJIILEGL": 0,
+  "type": "WQ",
+  "COHOCGBOCFH": "MAINQUEST_TAG_NONE",
+  "PIMPBFFBLNL": "PLAY_MODE_ALL",
+  "NFEGGFJPMJI": "Long Xà Tập Lục",
+  "desc": "Bạn quyết định giúp Ema tìm lại 5 quyển sách bị mất...",
+  "_luaPath": "Actor/Quest/WQ72235",
+  "recommendLevel": 0,
+  "repeatable": false,
+  "PEOHODAKLNO": [],
+  "FEHAEKNGFBP": false,
   "rewardIdList": [172235],
+  "showType": "QUEST_SHOW",
+  "HKNKBANBJPP": [],
+  "LACEJNKJBCG": [],
+  "OFCKAEDMIFA": 0,
+  "chapterId": 0,
+  "taskId": 0,
+  "FCPJIFCLDFI": false,
+  "activityId": 0,
   "subQuests": [
     {
+      "HDBBFJKKGOM": false,
       "subId": 7223501,
       "mainId": 72235,
       "order": 1,
-      "descTextMapHash": 2579933596,
-      "acceptCondComb": "LOGIC_AND",
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7217716, 3, 0, 0, 0]
-        },
-        {
-          "type": "QUEST_COND_COMPLETE_TALK",
-          "param": [7223501, 0, 0, 0, 0]
-        }
-      ],
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Nói chuyện với ảo ảnh trong Thư Viện",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7223501, 0]
+          "param": [7223501, 0],
+          "count": 0
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["20476"],
         "guideScene": 5,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": true,
       "subId": 7223502,
       "mainId": 72235,
       "order": 2,
       "subIdSet": 1,
-      "descTextMapHash": 4274092364,
-      "stepDescTextMapHash": 3077839165,
-      "guideTipsTextMapHash": 3848702006,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223501, 3, 0, 0, 0]
-        }
-      ],
+      "isMpBlock": false,
+      "desc": "Thu thập 5 quyển sách thất lạc",
+      "LBPMFJBNGGG": "Bạn quyết định giúp Ema tìm lại 5 quyển sách bị mất, gồm có: \"Nhật Nguyệt Tiền Truyện\", \"Truyền Thuyết Long Xà Của Vương Quốc Tokoyo\", \"Trong Ánh Sáng, Dưới Bóng Tối\", \"Địa Lý Thủy Văn Học Vương Quốc Đêm Trắng\" và ghi chép thí nghiệm của một ai đó...",
+      "AGIIGKJNLIG": "\"Linh Hồn Tokoyo\" chỉ xuất hiện trong Đêm Đen",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
@@ -61,30 +85,41 @@
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_SHOW_OR_HIDE_NPC",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["20476", "11", "2"],
         "guideScene": 5,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": false,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": true,
       "subId": 7223503,
       "mainId": 72235,
       "order": 3,
       "subIdSet": 1,
-      "descTextMapHash": 1240290460,
-      "stepDescTextMapHash": 289176309,
-      "guideTipsTextMapHash": 3568284470,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223501, 3, 0, 0, 0]
-        }
-      ],
+      "isMpBlock": false,
+      "desc": "Thu thập 5 quyển sách thất lạc",
+      "LBPMFJBNGGG": "Bạn quyết định giúp Ema tìm lại 5 quyển sách bị mất, gồm có: \"Nhật Nguyệt Tiền Truyện\", \"Truyền Thuyết Long Xà Của Vương Quốc Tokoyo\", \"Trong Ánh Sáng, Dưới Bóng Tối\", \"Địa Lý Thủy Văn Học Vương Quốc Đêm Trắng\" và ghi chép thí nghiệm của một ai đó...",
+      "AGIIGKJNLIG": "\"Linh Hồn Tokoyo\" chỉ xuất hiện trong Đêm Đen",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
@@ -92,30 +127,41 @@
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_SHOW_OR_HIDE_NPC",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["20476", "11", "2"],
         "guideScene": 5,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": false,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": true,
       "subId": 7223504,
       "mainId": 72235,
       "order": 4,
       "subIdSet": 1,
-      "descTextMapHash": 2430108964,
-      "stepDescTextMapHash": 3422684021,
-      "guideTipsTextMapHash": 2619172454,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223501, 3, 0, 0, 0]
-        }
-      ],
+      "isMpBlock": false,
+      "desc": "Thu thập 5 quyển sách thất lạc",
+      "LBPMFJBNGGG": "Bạn quyết định giúp Ema tìm lại 5 quyển sách bị mất, gồm có: \"Nhật Nguyệt Tiền Truyện\", \"Truyền Thuyết Long Xà Của Vương Quốc Tokoyo\", \"Trong Ánh Sáng, Dưới Bóng Tối\", \"Địa Lý Thủy Văn Học Vương Quốc Đêm Trắng\" và ghi chép thí nghiệm của một ai đó...",
+      "AGIIGKJNLIG": "\"Linh Hồn Tokoyo\" chỉ xuất hiện trong Đêm Đen",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
@@ -123,30 +169,41 @@
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_SHOW_OR_HIDE_NPC",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["20476", "11", "2"],
         "guideScene": 5,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": false,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": true,
       "subId": 7223505,
       "mainId": 72235,
       "order": 5,
       "subIdSet": 1,
-      "descTextMapHash": 2684409476,
-      "stepDescTextMapHash": 2580941829,
-      "guideTipsTextMapHash": 1591006214,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223501, 3, 0, 0, 0]
-        }
-      ],
+      "isMpBlock": false,
+      "desc": "Thu thập 5 quyển sách thất lạc",
+      "LBPMFJBNGGG": "Bạn quyết định giúp Ema tìm lại 5 quyển sách bị mất, gồm có: \"Nhật Nguyệt Tiền Truyện\", \"Truyền Thuyết Long Xà Của Vương Quốc Tokoyo\", \"Trong Ánh Sáng, Dưới Bóng Tối\", \"Địa Lý Thủy Văn Học Vương Quốc Đêm Trắng\" và ghi chép thí nghiệm của một ai đó...",
+      "AGIIGKJNLIG": "\"Linh Hồn Tokoyo\" chỉ xuất hiện trong Đêm Đen",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
@@ -154,30 +211,41 @@
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_SHOW_OR_HIDE_NPC",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["20476", "11", "2"],
         "guideScene": 5,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": false,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": true,
       "subId": 7223506,
       "mainId": 72235,
       "order": 6,
       "subIdSet": 1,
-      "descTextMapHash": 1234305484,
-      "stepDescTextMapHash": 3033182069,
-      "guideTipsTextMapHash": 1993371062,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223501, 3, 0, 0, 0]
-        }
-      ],
+      "isMpBlock": false,
+      "desc": "Thu thập 5 quyển sách thất lạc",
+      "LBPMFJBNGGG": "Bạn quyết định giúp Ema tìm lại 5 quyển sách bị mất, gồm có: \"Nhật Nguyệt Tiền Truyện\", \"Truyền Thuyết Long Xà Của Vương Quốc Tokoyo\", \"Trong Ánh Sáng, Dưới Bóng Tối\", \"Địa Lý Thủy Văn Học Vương Quốc Đêm Trắng\" và ghi chép thí nghiệm của một ai đó...",
+      "AGIIGKJNLIG": "\"Linh Hồn Tokoyo\" chỉ xuất hiện trong Đêm Đen",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
@@ -185,76 +253,83 @@
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_SHOW_OR_HIDE_NPC",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["20476", "11", "2"],
         "guideScene": 5,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": true,
       "subId": 7223507,
       "mainId": 72235,
       "order": 7,
-      "descTextMapHash": 3036057452,
-      "guideTipsTextMapHash": 2484238542,
-      "acceptCondComb": "LOGIC_AND",
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223502, 3, 0, 0, 0]
-        },
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223503, 3, 0, 0, 0]
-        },
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223504, 3, 0, 0, 0]
-        },
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223505, 3, 0, 0, 0]
-        },
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223506, 3, 0, 0, 0]
-        }
-      ],
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Đưa sách cho Ema xem",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "\"Linh Hồn Tokoyo\" chỉ xuất hiện trong Đêm Đen",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7223502, 0]
+          "param": [7223502, 0],
+          "count": 0
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_SHOW_OR_HIDE_NPC",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["20476", "11", "2"],
         "guideScene": 5,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "isRewind": true,
-      "exclusiveNpcList": [20476],
-      "exclusiveNpcPriority": 1100,
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 7223508,
       "mainId": 72235,
       "order": 8,
-      "descTextMapHash": 2505942628,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223507, 3, 0, 0, 0]
-        }
-      ],
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Trả sách lên kệ",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
@@ -262,14 +337,24 @@
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["Q7223508Gate", "10"],
         "guideScene": 5,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "isRewind": true,
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
@@ -280,51 +365,61 @@
           "param": ["5", "155005086,2"]
         }
       ],
-      "beginExec": [
-        {
-          "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": ["5", "155005110,2"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 7223509,
       "mainId": 72235,
       "order": 9,
-      "descTextMapHash": 3875936548,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7223508, 3, 0, 0, 0]
-        }
-      ],
-      "finishCondComb": "LOGIC_OR",
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Điều tra khung hình bị thay đổi",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_MY_WORLD_SCENE",
-          "param": [7, 0]
+          "param": [7, 0],
+          "count": 0
         },
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [7223509, 0]
+          "param": [7223509, 0],
+          "count": 0
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["Q7223508Gate"],
         "guideScene": 5,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "finishParent": true,
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": true,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     }
   ],
-  "preloadLuaList": [286762926221],
-  "forcePreloadLuaList": [944853264498]
+  "talks": [],
+  "LGCLJGGNGBD": [286762926221],
+  "OMKMAOLMNCO": [944853264498],
+  "KPOKLMBEOBI": {},
+  "MGDNNNGPOGO": 172235
 }

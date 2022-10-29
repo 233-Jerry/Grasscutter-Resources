@@ -1,24 +1,41 @@
 {
-  "id": 71047,
-  "type": "WQ",
-  "activeMode": "PLAY_MODE_ALL",
   "titleTextMapHash": 1732957999,
-  "luaPath": "Actor/Quest/WQ71047",
+  
+  "id": 71047,
+  "ICLLDPJFIMA": 0,
+  "NCLEJIILEGL": 0,
+  "type": "WQ",
+  "COHOCGBOCFH": "MAINQUEST_TAG_NONE",
+  "PIMPBFFBLNL": "PLAY_MODE_ALL",
+  "NFEGGFJPMJI": "",
+  "desc": "",
+  "_luaPath": "Actor/Quest/WQ71047",
+  "recommendLevel": 0,
+  "repeatable": false,
+  "PEOHODAKLNO": [],
+  "FEHAEKNGFBP": false,
+  "rewardIdList": [],
   "showType": "QUEST_HIDDEN",
+  "HKNKBANBJPP": [],
+  "LACEJNKJBCG": [],
+  "OFCKAEDMIFA": 0,
+  "chapterId": 0,
+  "taskId": 0,
+  "FCPJIFCLDFI": false,
+  "activityId": 0,
   "subQuests": [
     {
+      "HDBBFJKKGOM": false,
       "subId": 7104701,
       "mainId": 71047,
       "order": 1,
-      "descTextMapHash": 2541877828,
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
       "showType": "QUEST_HIDDEN",
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7103701, 3, 0, 0, 0]
-        }
-      ],
-      "finishCondComb": "LOGIC_AND",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
@@ -29,52 +46,85 @@
       "failCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [7103709, 3]
+          "param": [7103709, 3],
+          "count": 0
         }
       ],
-      "guide": {},
-      "isRewind": true,
+      "guide": {
+        "type": "QUEST_GUIDE_NONE",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
+        "param": [],
+        "guideScene": 0,
+        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
+        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      },
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
       "failExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
           "param": ["6", "166001013,2"]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 7104702,
       "mainId": 71047,
       "order": 2,
-      "descTextMapHash": 1420908524,
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
       "showType": "QUEST_HIDDEN",
-      "acceptCondComb": "LOGIC_AND",
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [7104701, 3, 0, 0, 0]
-        }
-      ],
-      "finishCondComb": "LOGIC_OR",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [7103705, 3]
+          "param": [7103705, 3],
+          "count": 0
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [7103709, 3]
+          "param": [7103709, 3],
+          "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [7103709, 3]
+          "param": [7103709, 3],
+          "count": 0
         }
       ],
-      "guide": {},
-      "finishParent": true,
+      "guide": {
+        "type": "QUEST_GUIDE_NONE",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
+        "param": [],
+        "guideScene": 0,
+        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
+        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      },
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": true,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": false,
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
@@ -87,14 +137,13 @@
           "param": ["6", "166001013,2"]
         }
       ],
-      "beginExec": [
-        {
-          "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": ["7104701"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     }
-  ]
+  ],
+  "talks": [],
+  "LGCLJGGNGBD": [],
+  "OMKMAOLMNCO": [],
+  "KPOKLMBEOBI": {},
+  "MGDNNNGPOGO": 0
 }

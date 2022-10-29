@@ -1,279 +1,393 @@
 {
-  "id": 2013,
-  "ICLLDPJFIMA": 1009,
   "titleTextMapHash": 1388933119,
   "descTextMapHash": 2476400902,
-  "luaPath": "Actor/Quest/AQ2013",
-  "suggestTrackMainQuestList": [2003],
+  "id": 2013,
+  "ICLLDPJFIMA": 1009,
+  "NCLEJIILEGL": 0,
+  "type": "AQ",
+  "COHOCGBOCFH": "MAINQUEST_TAG_NONE",
+  "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
+  "NFEGGFJPMJI": "Kế Hoạch Thoát Khỏi Đảo Ritou",
+  "desc": "Làm sao thoát khỏi Đảo Ritou bằng chính sức mình, đây là thử thách kế tiếp mà Thoma đưa ra cho bạn, bằng không cuộc lữ hành chỉ đành dừng lại ở đây...",
+  "_luaPath": "Actor/Quest/AQ2013",
+  "recommendLevel": 0,
+  "repeatable": false,
+  "PEOHODAKLNO": [2003],
+  "FEHAEKNGFBP": false,
   "rewardIdList": [102013],
+  "showType": "QUEST_SHOW",
+  "HKNKBANBJPP": [],
+  "LACEJNKJBCG": [],
+  "OFCKAEDMIFA": 0,
   "chapterId": 1202,
-  "showRedPoint": true,
+  "taskId": 0,
+  "FCPJIFCLDFI": true,
+  "activityId": 0,
   "subQuests": [
     {
+      "HDBBFJKKGOM": false,
       "subId": 201301,
       "mainId": 2013,
       "order": 1,
-      "descTextMapHash": 1786725396,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [201215, 3, 0, 0, 0]
-        }
-      ],
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Thử rời khỏi Đảo Ritou",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [201301, 0]
+          "param": [201301, 0],
+          "count": 0
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["Q2013Guard01", "20"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "isRewind": true,
-      "exclusiveNpcList": [3069, 3073, 3074],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 201302,
       "mainId": 2013,
       "order": 3,
-      "descTextMapHash": 1743099124,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [201311, 3, 0, 0, 0]
-        }
-      ],
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Nói chuyện với Shinsuke ở Hiệp Hội Kanjou",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [201302, 0]
+          "param": [201302, 0],
+          "count": 0
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["3085"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "isRewind": true,
-      "exclusiveNpcList": [3085, 3086],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 201303,
       "mainId": 2013,
       "order": 4,
-      "descTextMapHash": 3468278908,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [201302, 3, 0, 0, 0]
-        }
-      ],
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Rời khỏi Hiệp Hội Kanjou",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [201303, 0]
+          "param": [201303, 0],
+          "count": 0
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["Q2013Puren01"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "isRewind": true,
-      "exclusiveNpcList": [3016, 3086],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 201304,
       "mainId": 2013,
       "order": 5,
-      "descTextMapHash": 789119236,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [201303, 3, 0, 0, 0]
-        }
-      ],
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Nói chuyện với Shinnojou",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [201304, 0]
+          "param": [201304, 0],
+          "count": 0
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["3016"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "exclusiveNpcList": [3016, 3086],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": false,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 201305,
       "mainId": 2013,
       "order": 6,
-      "descTextMapHash": 312395772,
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Đợi đến hôm sau (18h-24h) để gặp mặt tiểu thư Hiiragi",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
       "showType": "QUEST_HIDDEN",
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [99902, 3, 0, 0, 0]
-        }
-      ],
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [0, 0]
+          "param": [0, 0],
+          "count": 0
         }
       ],
-      "guide": {},
-      "isRewind": true,
-      "exclusiveNpcList": [3086],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "failCond": [],
+      "guide": {
+        "type": "QUEST_GUIDE_NONE",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
+        "param": [],
+        "guideScene": 0,
+        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
+        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      },
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 201306,
       "mainId": 2013,
       "order": 7,
-      "descTextMapHash": 2557114524,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [201304, 3, 0, 0, 0]
-        }
-      ],
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Đợi đến thời gian chỉ định (18h-24h) để gặp mặt tiểu thư Hiiragi",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [0, 0]
+          "param": [0, 0],
+          "count": 0
         }
       ],
-      "guide": {},
-      "isRewind": true,
-      "exclusiveNpcList": [3086],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "failCond": [],
+      "guide": {
+        "type": "QUEST_GUIDE_NONE",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
+        "param": [],
+        "guideScene": 0,
+        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
+        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      },
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 201307,
       "mainId": 2013,
       "order": 8,
-      "descTextMapHash": 1153198380,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [201306, 3, 0, 0, 0]
-        }
-      ],
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Gặp Hiiragi Chisato",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [201307, 0]
+          "param": [201307, 0],
+          "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [0, 0]
+          "param": [0, 0],
+          "count": 0
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["Q2013Qianli01", "15"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "isRewind": true,
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": ["201306"]
         }
       ],
-      "exclusiveNpcList": [3086],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 201308,
       "mainId": 2013,
       "order": 9,
+      "subIdSet": 0,
       "isMpBlock": true,
-      "descTextMapHash": 702384804,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [201307, 3, 0, 0, 0]
-        }
-      ],
+      "desc": "Đến biên giới Đảo Ritou để thực hiện kế hoạch",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [201308, 0]
+          "param": [201308, 0],
+          "count": 0
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["Q2013Guard01", "15"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "isRewind": true,
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": ["133209037"]
         }
       ],
-      "beginExec": [
-        {
-          "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP_ONLY",
-          "param": ["133209037"]
-        }
-      ],
-      "exclusiveNpcList": [3086, 3016, 12054],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 201309,
       "mainId": 2013,
       "order": 10,
+      "subIdSet": 0,
       "isMpBlock": true,
-      "descTextMapHash": 1126796300,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [201308, 3, 0, 0, 0]
-        }
-      ],
+      "desc": "Hộ tống hàng hóa khỏi Đảo Ritou",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
@@ -281,16 +395,21 @@
           "count": 1
         }
       ],
-      "failCondComb": "LOGIC_OR",
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [201309, 0]
+          "param": [201309, 0],
+          "count": 0
         },
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
           "param": [0, 0],
           "count": 1
+        },
+        {
+          "type": "QUEST_CONTENT_TEAM_DEAD",
+          "param": [0, 0],
+          "count": 0
         }
       ],
       "guide": {
@@ -301,45 +420,57 @@
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
       },
-      "isRewind": true,
-      "beginExec": [
-        {
-          "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
-          "param": ["3", "133209024"]
-        }
-      ],
-      "exclusiveNpcList": [3086, 3016, 12054],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 201310,
       "mainId": 2013,
       "order": 12,
+      "subIdSet": 0,
       "isMpBlock": true,
-      "descTextMapHash": 2451095932,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [201309, 3, 0, 0, 0]
-        }
-      ],
+      "desc": "Chào tạm biệt với Hiiragi Chisato",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [201310, 0]
+          "param": [201310, 0],
+          "count": 0
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["Q2013Stop01"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "finishParent": true,
-      "isRewind": true,
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": true,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
@@ -350,63 +481,89 @@
           "param": ["3", "133220200"]
         }
       ],
-      "exclusiveNpcList": [3086, 3016, 12054],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 201311,
       "mainId": 2013,
       "order": 2,
-      "descTextMapHash": 3533877508,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [201301, 3, 0, 0, 0]
-        }
-      ],
+      "subIdSet": 0,
+      "isMpBlock": false,
+      "desc": "Đến Hiệp Hội Kanjou, hỏi cách để rời khỏi Đảo Ritou",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
+      "showType": "QUEST_SHOW",
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [201311, 0]
+          "param": [201311, 0],
+          "count": 0
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["Q2013Gate01", "15"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "isRewind": true,
-      "exclusiveNpcList": [3085, 3093, 3086],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
+      "failParentShow": "QUEST_SHOW",
+      "EFIFPBKMMAA": true,
+      "finishExec": [],
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     },
     {
+      "HDBBFJKKGOM": false,
       "subId": 201312,
       "mainId": 2013,
       "order": 11,
+      "subIdSet": 0,
       "isMpBlock": true,
-      "descTextMapHash": 3016999076,
+      "desc": "",
+      "LBPMFJBNGGG": "",
+      "AGIIGKJNLIG": "",
       "showType": "QUEST_HIDDEN",
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_STATE_EQUAL",
-          "param": [201309, 4, 0, 0, 0]
-        }
-      ],
+      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [201312, 0]
+          "param": [201312, 0],
+          "count": 0
         }
       ],
-      "guide": {},
+      "failCond": [],
+      "guide": {
+        "type": "QUEST_GUIDE_NONE",
+        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
+        "param": [],
+        "guideScene": 0,
+        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
+        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      },
+      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
+      "LPNIEFEBKGK": {
+        "type": "QUEST_GUIDE_HINT_NONE",
+        "param1": ""
+      },
+      "NKDLEHHCADL": false,
+      "HKLAHKJAHJC": false,
       "failParentShow": "QUEST_HIDDEN",
-      "isRewind": true,
+      "EFIFPBKMMAA": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
@@ -417,163 +574,378 @@
           "param": ["201308"]
         }
       ],
-      "exclusiveNpcList": [3086, 3016, 12054],
-      "exclusiveNpcPriority": 1000,
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "LKPOHELCGKA": "",
+      "PBFCIDGHHHE": ""
     }
   ],
   "talks": [
     {
+      "KDHKACIEPAP": false,
       "id": 201301,
-      "beginWay": "TALK_BEGIN_MANUAL",
-      "beginCond": [
+      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
+      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
+      "OBMJNLIAOPP": "LOGIC_NONE",
+      "acceptCond": [
         {
-          "_type": "QUEST_COND_STATE_EQUAL",
-          "_param": ["201301", "2"]
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": ["201301", "2"]
         }
       ],
       "priority": 5,
-      "initDialog": 20130101,
-      "npcId": [3069, 1005],
-      "performCfg": "QuestDialogue/AQ/Inazuma1_2013/Q201301",
-      "heroTalk": "TALK_HERO_MAIN",
+      "GLHPILEDCIH": [],
+      "OPAEHKHBKHL": [],
+      "KGCBFKLPGDB": 0,
+      "DOGCHABLIOA": 20130101,
+      "FEGHBCNNPLB": 0,
+      "npcIdRawNum": [3069, 1005],
+      "GHNCIOJDIEA": "QuestDialogue/AQ/Inazuma1_2013/Q201301",
+      "MABMOKMFNJP": "TALK_HERO_MAIN",
+      "BBNAABABCKM": "TALK_NORMAL_QUEST",
       "questId": 2013,
-      "assetIndex": 997048543231,
-      "prePerformCfg": ""
+      "JMICBAGFMDA": [],
+      "JMIFGMHBKGK": 997048543231,
+      "BHPOEKFGMHB": false,
+      "HGKKDMCIOGH": [],
+      "MOLOPNJEPGH": "",
+      "INALKPHPENP": false,
+      "JMBGJBPFDJG": false,
+      "FDNMFCPGFFI": false,
+      "AAHFEPCHGBB": "TALK_MARK_NONE",
+      "ACLCONLCKGI": false,
+      "NPKDNLBININ": false,
+      "finishExec": [],
+      "CEAIKCLNACM": [],
+      "MCFDNAFKMGJ": [],
+      "LEJMLPCIBPD": [],
+      "ABEPKKIBGCG": [],
+      "NINNIKGFJGP": false,
+      "FONNGGHHMMC": 2013,
+      "EEIJODMHMMM": null,
+      "EBNNFCOIECM": null,
+      "POCLCIKJDPI": 0
     },
     {
+      "KDHKACIEPAP": false,
       "id": 201302,
-      "beginWay": "TALK_BEGIN_MANUAL",
-      "beginCond": [
+      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
+      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
+      "OBMJNLIAOPP": "LOGIC_NONE",
+      "acceptCond": [
         {
-          "_type": "QUEST_COND_STATE_EQUAL",
-          "_param": ["201302", "2"]
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": ["201302", "2"]
         }
       ],
       "priority": 5,
-      "initDialog": 20130201,
-      "npcId": [3085, 1005],
-      "performCfg": "QuestDialogue/AQ/Inazuma1_2013/Q201302",
-      "heroTalk": "TALK_HERO_MAIN",
+      "GLHPILEDCIH": [],
+      "OPAEHKHBKHL": [],
+      "KGCBFKLPGDB": 0,
+      "DOGCHABLIOA": 20130201,
+      "FEGHBCNNPLB": 0,
+      "npcIdRawNum": [3085, 1005],
+      "GHNCIOJDIEA": "QuestDialogue/AQ/Inazuma1_2013/Q201302",
+      "MABMOKMFNJP": "TALK_HERO_MAIN",
+      "BBNAABABCKM": "TALK_NORMAL_QUEST",
       "questId": 2013,
-      "assetIndex": 224915699454,
-      "prePerformCfg": ""
+      "JMICBAGFMDA": [],
+      "JMIFGMHBKGK": 224915699454,
+      "BHPOEKFGMHB": false,
+      "HGKKDMCIOGH": [],
+      "MOLOPNJEPGH": "",
+      "INALKPHPENP": false,
+      "JMBGJBPFDJG": false,
+      "FDNMFCPGFFI": false,
+      "AAHFEPCHGBB": "TALK_MARK_NONE",
+      "ACLCONLCKGI": false,
+      "NPKDNLBININ": false,
+      "finishExec": [],
+      "CEAIKCLNACM": [],
+      "MCFDNAFKMGJ": [],
+      "LEJMLPCIBPD": [],
+      "ABEPKKIBGCG": [],
+      "NINNIKGFJGP": false,
+      "FONNGGHHMMC": 2013,
+      "EEIJODMHMMM": null,
+      "EBNNFCOIECM": null,
+      "POCLCIKJDPI": 0
     },
     {
+      "KDHKACIEPAP": false,
       "id": 201304,
-      "beginWay": "TALK_BEGIN_MANUAL",
-      "beginCond": [
+      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
+      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
+      "OBMJNLIAOPP": "LOGIC_NONE",
+      "acceptCond": [
         {
-          "_type": "QUEST_COND_STATE_EQUAL",
-          "_param": ["201304", "2"]
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": ["201304", "2"]
         }
       ],
       "priority": 5,
-      "initDialog": 20130401,
-      "npcId": [3016],
-      "performCfg": "QuestDialogue/AQ/Inazuma1_2013/Q201304",
-      "heroTalk": "TALK_HERO_MAIN",
+      "GLHPILEDCIH": [],
+      "OPAEHKHBKHL": [],
+      "KGCBFKLPGDB": 0,
+      "DOGCHABLIOA": 20130401,
+      "FEGHBCNNPLB": 0,
+      "npcIdRawNum": [3016],
+      "GHNCIOJDIEA": "QuestDialogue/AQ/Inazuma1_2013/Q201304",
+      "MABMOKMFNJP": "TALK_HERO_MAIN",
+      "BBNAABABCKM": "TALK_NORMAL_QUEST",
       "questId": 2013,
-      "assetIndex": 44610807784,
-      "prePerformCfg": ""
+      "JMICBAGFMDA": [],
+      "JMIFGMHBKGK": 44610807784,
+      "BHPOEKFGMHB": false,
+      "HGKKDMCIOGH": [],
+      "MOLOPNJEPGH": "",
+      "INALKPHPENP": false,
+      "JMBGJBPFDJG": false,
+      "FDNMFCPGFFI": false,
+      "AAHFEPCHGBB": "TALK_MARK_NONE",
+      "ACLCONLCKGI": false,
+      "NPKDNLBININ": false,
+      "finishExec": [],
+      "CEAIKCLNACM": [],
+      "MCFDNAFKMGJ": [],
+      "LEJMLPCIBPD": [],
+      "ABEPKKIBGCG": [],
+      "NINNIKGFJGP": false,
+      "FONNGGHHMMC": 2013,
+      "EEIJODMHMMM": null,
+      "EBNNFCOIECM": null,
+      "POCLCIKJDPI": 0
     },
     {
+      "KDHKACIEPAP": false,
       "id": 201307,
-      "beginWay": "TALK_BEGIN_MANUAL",
-      "beginCond": [
+      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
+      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
+      "OBMJNLIAOPP": "LOGIC_NONE",
+      "acceptCond": [
         {
-          "_type": "QUEST_COND_STATE_EQUAL",
-          "_param": ["201307", "2"]
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": ["201307", "2"]
         }
       ],
       "priority": 5,
-      "initDialog": 20130701,
-      "npcId": [3086, 1005],
-      "performCfg": "QuestDialogue/AQ/Inazuma1_2013/Q201307",
-      "heroTalk": "TALK_HERO_MAIN",
+      "GLHPILEDCIH": [],
+      "OPAEHKHBKHL": [],
+      "KGCBFKLPGDB": 0,
+      "DOGCHABLIOA": 20130701,
+      "FEGHBCNNPLB": 0,
+      "npcIdRawNum": [3086, 1005],
+      "GHNCIOJDIEA": "QuestDialogue/AQ/Inazuma1_2013/Q201307",
+      "MABMOKMFNJP": "TALK_HERO_MAIN",
+      "BBNAABABCKM": "TALK_NORMAL_QUEST",
       "questId": 2013,
-      "assetIndex": 419266896031,
-      "prePerformCfg": "",
-      "lockGameTime": true
+      "JMICBAGFMDA": [],
+      "JMIFGMHBKGK": 419266896031,
+      "BHPOEKFGMHB": false,
+      "HGKKDMCIOGH": [],
+      "MOLOPNJEPGH": "",
+      "INALKPHPENP": false,
+      "JMBGJBPFDJG": false,
+      "FDNMFCPGFFI": true,
+      "AAHFEPCHGBB": "TALK_MARK_NONE",
+      "ACLCONLCKGI": false,
+      "NPKDNLBININ": false,
+      "finishExec": [],
+      "CEAIKCLNACM": [],
+      "MCFDNAFKMGJ": [],
+      "LEJMLPCIBPD": [],
+      "ABEPKKIBGCG": [],
+      "NINNIKGFJGP": false,
+      "FONNGGHHMMC": 2013,
+      "EEIJODMHMMM": null,
+      "EBNNFCOIECM": null,
+      "POCLCIKJDPI": 0
     },
     {
+      "KDHKACIEPAP": false,
       "id": 201308,
-      "beginWay": "TALK_BEGIN_MANUAL",
-      "beginCond": [
+      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
+      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
+      "OBMJNLIAOPP": "LOGIC_NONE",
+      "acceptCond": [
         {
-          "_type": "QUEST_COND_STATE_EQUAL",
-          "_param": ["201308", "2"]
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": ["201308", "2"]
         }
       ],
       "priority": 5,
-      "initDialog": 20130801,
-      "npcId": [3086, 3016],
-      "performCfg": "QuestDialogue/AQ/Inazuma1_2013/Q201308",
-      "heroTalk": "TALK_HERO_MAIN",
+      "GLHPILEDCIH": [],
+      "OPAEHKHBKHL": [],
+      "KGCBFKLPGDB": 0,
+      "DOGCHABLIOA": 20130801,
+      "FEGHBCNNPLB": 0,
+      "npcIdRawNum": [3086, 3016],
+      "GHNCIOJDIEA": "QuestDialogue/AQ/Inazuma1_2013/Q201308",
+      "MABMOKMFNJP": "TALK_HERO_MAIN",
+      "BBNAABABCKM": "TALK_NORMAL_QUEST",
       "questId": 2013,
-      "assetIndex": 642458161161,
-      "prePerformCfg": "",
-      "enableCameraDisplacement": true
+      "JMICBAGFMDA": [],
+      "JMIFGMHBKGK": 642458161161,
+      "BHPOEKFGMHB": false,
+      "HGKKDMCIOGH": [],
+      "MOLOPNJEPGH": "",
+      "INALKPHPENP": false,
+      "JMBGJBPFDJG": true,
+      "FDNMFCPGFFI": false,
+      "AAHFEPCHGBB": "TALK_MARK_NONE",
+      "ACLCONLCKGI": false,
+      "NPKDNLBININ": false,
+      "finishExec": [],
+      "CEAIKCLNACM": [],
+      "MCFDNAFKMGJ": [],
+      "LEJMLPCIBPD": [],
+      "ABEPKKIBGCG": [],
+      "NINNIKGFJGP": false,
+      "FONNGGHHMMC": 2013,
+      "EEIJODMHMMM": null,
+      "EBNNFCOIECM": null,
+      "POCLCIKJDPI": 0
     },
     {
+      "KDHKACIEPAP": false,
       "id": 201310,
-      "beginWay": "TALK_BEGIN_MANUAL",
-      "beginCond": [
+      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
+      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
+      "OBMJNLIAOPP": "LOGIC_NONE",
+      "acceptCond": [
         {
-          "_type": "QUEST_COND_STATE_EQUAL",
-          "_param": ["201310", "2"]
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": ["201310", "2"]
         }
       ],
       "priority": 5,
-      "initDialog": 20131001,
-      "npcId": [3086],
-      "performCfg": "QuestDialogue/AQ/Inazuma1_2013/Q201310",
-      "heroTalk": "TALK_HERO_MAIN",
+      "GLHPILEDCIH": [],
+      "OPAEHKHBKHL": [],
+      "KGCBFKLPGDB": 0,
+      "DOGCHABLIOA": 20131001,
+      "FEGHBCNNPLB": 0,
+      "npcIdRawNum": [3086],
+      "GHNCIOJDIEA": "QuestDialogue/AQ/Inazuma1_2013/Q201310",
+      "MABMOKMFNJP": "TALK_HERO_MAIN",
+      "BBNAABABCKM": "TALK_NORMAL_QUEST",
       "questId": 2013,
-      "assetIndex": 332226305066,
-      "prePerformCfg": ""
+      "JMICBAGFMDA": [],
+      "JMIFGMHBKGK": 332226305066,
+      "BHPOEKFGMHB": false,
+      "HGKKDMCIOGH": [],
+      "MOLOPNJEPGH": "",
+      "INALKPHPENP": false,
+      "JMBGJBPFDJG": false,
+      "FDNMFCPGFFI": false,
+      "AAHFEPCHGBB": "TALK_MARK_NONE",
+      "ACLCONLCKGI": false,
+      "NPKDNLBININ": false,
+      "finishExec": [],
+      "CEAIKCLNACM": [],
+      "MCFDNAFKMGJ": [],
+      "LEJMLPCIBPD": [],
+      "ABEPKKIBGCG": [],
+      "NINNIKGFJGP": false,
+      "FONNGGHHMMC": 2013,
+      "EEIJODMHMMM": null,
+      "EBNNFCOIECM": null,
+      "POCLCIKJDPI": 0
     },
     {
+      "KDHKACIEPAP": false,
       "id": 201311,
-      "beginWay": "TALK_BEGIN_MANUAL",
-      "beginCond": [
+      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
+      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
+      "OBMJNLIAOPP": "LOGIC_NONE",
+      "acceptCond": [
         {
-          "_type": "QUEST_COND_STATE_EQUAL",
-          "_param": ["201311", "2"]
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": ["201311", "2"]
         }
       ],
       "priority": 5,
-      "initDialog": 20131101,
-      "npcId": [3093, 1005, 3085],
-      "performCfg": "QuestDialogue/AQ/Inazuma1_2013/Q201311",
-      "heroTalk": "TALK_HERO_MAIN",
+      "GLHPILEDCIH": [],
+      "OPAEHKHBKHL": [],
+      "KGCBFKLPGDB": 0,
+      "DOGCHABLIOA": 20131101,
+      "FEGHBCNNPLB": 0,
+      "npcIdRawNum": [3093, 1005, 3085],
+      "GHNCIOJDIEA": "QuestDialogue/AQ/Inazuma1_2013/Q201311",
+      "MABMOKMFNJP": "TALK_HERO_MAIN",
+      "BBNAABABCKM": "TALK_NORMAL_QUEST",
       "questId": 2013,
-      "assetIndex": 766745161977,
-      "prePerformCfg": ""
+      "JMICBAGFMDA": [],
+      "JMIFGMHBKGK": 766745161977,
+      "BHPOEKFGMHB": false,
+      "HGKKDMCIOGH": [],
+      "MOLOPNJEPGH": "",
+      "INALKPHPENP": false,
+      "JMBGJBPFDJG": false,
+      "FDNMFCPGFFI": false,
+      "AAHFEPCHGBB": "TALK_MARK_NONE",
+      "ACLCONLCKGI": false,
+      "NPKDNLBININ": false,
+      "finishExec": [],
+      "CEAIKCLNACM": [],
+      "MCFDNAFKMGJ": [],
+      "LEJMLPCIBPD": [],
+      "ABEPKKIBGCG": [],
+      "NINNIKGFJGP": false,
+      "FONNGGHHMMC": 2013,
+      "EEIJODMHMMM": null,
+      "EBNNFCOIECM": null,
+      "POCLCIKJDPI": 0
     },
     {
+      "KDHKACIEPAP": false,
       "id": 201391,
-      "beginWay": "TALK_BEGIN_MANUAL",
-      "beginCond": [
+      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
+      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
+      "OBMJNLIAOPP": "LOGIC_NONE",
+      "acceptCond": [
         {
-          "_type": "QUEST_COND_STATE_EQUAL",
-          "_param": ["201303", "2"]
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": ["201303", "2"]
         }
       ],
       "priority": 5,
-      "initDialog": 20139101,
-      "npcId": [3085],
-      "performCfg": "QuestDialogue/AQ/Inazuma1_2013/Q201391",
-      "heroTalk": "TALK_HERO_MAIN",
+      "GLHPILEDCIH": [],
+      "OPAEHKHBKHL": [],
+      "KGCBFKLPGDB": 0,
+      "DOGCHABLIOA": 20139101,
+      "FEGHBCNNPLB": 0,
+      "npcIdRawNum": [3085],
+      "GHNCIOJDIEA": "QuestDialogue/AQ/Inazuma1_2013/Q201391",
+      "MABMOKMFNJP": "TALK_HERO_MAIN",
+      "BBNAABABCKM": "TALK_NORMAL_QUEST",
       "questId": 2013,
-      "assetIndex": 706753180969,
-      "prePerformCfg": ""
+      "JMICBAGFMDA": [],
+      "JMIFGMHBKGK": 706753180969,
+      "BHPOEKFGMHB": false,
+      "HGKKDMCIOGH": [],
+      "MOLOPNJEPGH": "",
+      "INALKPHPENP": false,
+      "JMBGJBPFDJG": false,
+      "FDNMFCPGFFI": false,
+      "AAHFEPCHGBB": "TALK_MARK_NONE",
+      "ACLCONLCKGI": false,
+      "NPKDNLBININ": false,
+      "finishExec": [],
+      "CEAIKCLNACM": [],
+      "MCFDNAFKMGJ": [],
+      "LEJMLPCIBPD": [],
+      "ABEPKKIBGCG": [],
+      "NINNIKGFJGP": false,
+      "FONNGGHHMMC": 2013,
+      "EEIJODMHMMM": null,
+      "EBNNFCOIECM": null,
+      "POCLCIKJDPI": 0
     }
   ],
-  "preloadLuaList": [
+  "LGCLJGGNGBD": [
     117089250914, 748334744703, 888201556364, 1009705260054, 711449207529,
     272201957622, 247244924890, 896764175202
   ],
-  "forcePreloadLuaList": [1027588027291]
+  "OMKMAOLMNCO": [1027588027291],
+  "KPOKLMBEOBI": {},
+  "MGDNNNGPOGO": 102013
 }
