@@ -1498,6 +1498,7 @@
           "attackInfo": {
             "canBeModifiedBy": "OriginOwner",
             "attenuationTag": "Elemental_Art",
+            "attenuationGroup": "Barbara_WetShield",
             "attackProperty": {
               "damagePercentage": 0,
               "strikeType": "Default",
@@ -6085,6 +6086,197 @@
       }
     ]
   },
+
+  //420000024  3.2蕈兽活动集火技能瞄准驱动器
+  "Activity_Gadget_CatchMushroomMonster_Aim_Driver": {
+    "$type": "ConfigGadget",
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      }
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": true, // 是否继承创造者的数值
+        "useCreatorBuffedProperty": true, // 继承的数值是否使用创造者身上的buff带来的property进行计算，仅在useCreatorProperty为true，或useCreatorPropertyPartly有值时生效，说白了就是创生时主人的临时buff对它起不起效
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true,
+        "isInvincible": true,
+        "HP": 99999,
+        "defense": 99999
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1",
+        "overrideRange": -1,
+        "overrideNormalPri": -1,
+        "overrideCombatPri": -1
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "muteAllHit": true,
+        "muteAllHitEffect": true,
+        "muteAllHitText": true
+      }
+    },
+    // 生命周期管理
+    "timer": {
+      "lifeInfinite": true //如果未触发是否一致存在
+    },
+    "move": {
+      "$type": "ConfigFollowMove",
+      "target": "LocalAvatar",
+      "attachPoint": "RootNode",
+      "followRotation": true,
+      "offset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "forward": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "ActivityAbility_CatchMushroomMonster_Aim_Driver",
+        "abilityName": "ActivityAbility_CatchMushroomMonster_Aim_Driver"
+      }
+    ]
+  },
+  //420000020  蕈兽捕捉器(点按)
+  "ActivityAbility_CatchMushroomBeast_Bullet_Short": {
+    "$type": "ConfigGadget",
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "affectedByWorld": true
+    },
+    "combat": {
+      "property": {
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      }
+    },
+
+    "move": {
+      "$type": "ConfigParabolaBulletMove",
+      "speed": 10,
+      "angleOffHor": 30,
+      "gravityOfAcceleration": 25,
+      "syncToRemote": true
+    },
+    "timer": {
+      "lifeInfinite": false,
+      "lifeTime": 1.0
+    },
+    "gadget": {
+      "$type": "ConfigBulletPattern",
+      "collision": {
+        "targetType": "Enemy",
+        "triggerType": "TriggerOnce",
+        "ccd": {
+          "type": "Always"
+        }
+      },
+      "triggerActions": [
+        {
+          "$type": "ConfigGadgetTriggerAbility",
+          "abilityName": "ActivityAbility_CatchMushroomBeast_Bullet"
+        }
+      ],
+      "fireAISoundEvent": true
+    },
+    "abilities": [
+      {
+        "abilityID": "ActivityAbility_CatchMushroomBeast_Bullet",
+        "abilityName": "ActivityAbility_CatchMushroomBeast_Bullet"
+      }
+    ]
+  },
+
+  //420000021  蕈兽捕捉器(长按)
+  "ActivityAbility_CatchMushroomBeast_Bullet_Long": {
+    "$type": "ConfigGadget",
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "affectedByWorld": true
+    },
+    "combat": {
+      "property": {
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      }
+    },
+    "move": {
+      "$type": "ConfigLinerParabolaBulletMove",
+      "speed": 30.0,
+      "straightRange": 20.0,
+      "gravityOfAcceleration": 5.5,
+      "airResistance": 0.01,
+      "updateAngle": {
+        "$type": "ConfigBulletMoveAngleByVelocity"
+      }
+    },
+    "timer": {
+      "lifeInfinite": false,
+      "lifeTime": 1.0
+    },
+    "gadget": {
+      "$type": "ConfigBulletPattern",
+      "collision": {
+        "targetType": "Enemy",
+        "triggerType": "TriggerOnce",
+        "ccd": {
+          "type": "Always"
+        }
+      },
+      "triggerActions": [
+        {
+          "$type": "ConfigGadgetTriggerAbility",
+          "abilityName": "ActivityAbility_CatchMushroomBeast_Bullet"
+        }
+      ],
+      "fireAISoundEvent": true
+    },
+    "abilities": [
+      {
+        "abilityID": "ActivityAbility_CatchMushroomBeast_Bullet",
+        "abilityName": "ActivityAbility_CatchMushroomBeast_Bullet"
+      }
+    ]
+  },
   //420000019  捕猎野猪抛投子弹
   "ActivityAbility_CatchAnimal_Bullet_Throw": {
     "$type": "ConfigGadget",
@@ -6700,6 +6892,34 @@
       {
         "abilityID": "ActivityAbility_Lannaluo_Gadget",
         "abilityName": "ActivityAbility_Lannaluo_Gadget"
+      }
+    ]
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //	 3.2关卡清理能量球
+  //
+  ////////////////////////////////////////////////////////////////
+
+  "SceneObj_ClearLocalGadget": {
+    "$type": "ConfigGadget",
+    "combat": {
+      "property": {
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "LevelAbility_SceneObj_ClearLocalGadget",
+        "abilityName": "LevelAbility_SceneObj_ClearLocalGadget"
       }
     ]
   }

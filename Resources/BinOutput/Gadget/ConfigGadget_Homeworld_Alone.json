@@ -303,7 +303,43 @@
         "useCreatorProperty": false,
         "HP": 99999,
         "isLockHP": true,
-        "ignoreDamageToSelf": true
+        "ignoreDamageToSelf": true,
+        "isGhostToEnemy": true
+      },
+      "combatLock": {
+        "denyLockOn": true
+      }
+    }
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // 家园 鱼塘/鱼池/池塘 ScenePoint版
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Homeworld_Exterior_Common_Thing_Fishpond_02": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "uiInteract": {
+      "gadgetUIBtnCfgPath": "UI/open_homeworld_fishes_dialog",
+      "uiName": "UI_HOMEWORLD_FISH_BUTTON"
+    },
+    "intee": {
+      "$type": "ConfigIntee",
+      "triggerRadius": 6,
+      "triggerHeight": 3,
+      "triggerOffset": { "x": -11.42, "y": 1.15, "z": 2.97 }
+    },
+    "keepModifierOutSight": false,
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 99999,
+        "isLockHP": true,
+        "ignoreDamageToSelf": true,
+        "isGhostToEnemy": true
+      },
+      "combatLock": {
+        "denyLockOn": true
       }
     }
   },
@@ -424,6 +460,42 @@
   },
   //////////////////////////////////////////////////////////////////////////////////////////////////
   //
+  //  意智宝珠
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Homeworld_Ani_Interior_Xm_Decoration_Prop_Baozhu_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "uiInteract": {
+      "onTouch": "WidgetMPSupport",
+      "uiName": "UI_HOMEWORLD_BAOZHU_TURN_ON_BUTTON",
+      "icon": "UI_Icon_Intee_Mechanism",
+      "touchParams": [
+        "SceneObj_Homeworld_Ani_Interior_Xm_Decoration_Prop_Baozhu_01"
+      ]
+    },
+    "intee": {
+      "$type": "ConfigIntee",
+      "triggerRadius": 1,
+      "triggerHeight": 2
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 99999,
+        "isLockHP": true,
+        "ignoreDamageToSelf": true
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "SceneObj_Homeworld_Ani_Interior_Xm_Decoration_Prop_Baozhu_01",
+        "abilityName": "SceneObj_Homeworld_Ani_Interior_Xm_Decoration_Prop_Baozhu_01"
+      }
+    ]
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
   //  紫阳花/紫阳花团
   //
   //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -495,7 +567,45 @@
       }
     }
   },
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // 家园 锻造 须弥 主城铁匠铺
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Homeworld_Exterior_Xm_Build_Tiejiangpu_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    /*"model": 
+	{
+		"attachEffect": "Eff_SceneObj_Homeworld_Fire_Basin_Vo",
+	},*/
+    "lowPriorityIntee": true,
+    "uiInteract": {
+      "gadgetUIBtnCfgPath": "UI/open_forging_page",
+      "uiName": "UI_FORGE_PAGE_TITLE"
+    },
+    "intee": {
+      "$type": "ConfigIntee",
+      "triggerRadius": 7.0,
+      "triggerHeight": 2
+    },
+    "keepModifierOutSight": false,
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 99999,
+        "isLockHP": true,
+        "ignoreDamageToSelf": true
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "Ability_01",
 
+        "abilityName": "SceneObj_Homeworld_Exterior_Xm_Build_Tiejiangpu_01"
+      }
+    ]
+  },
   //////////////////////////////////////////////////////////////////////////////////////////////////
   //
   //  盔甲特效
@@ -1139,6 +1249,36 @@
   },
   /////////////////////////////////////////////////////////////
   //
+  //  烤肉店烤肉炉
+  //
+  /////////////////////////////////////////////////////////////
+  "SceneObj_Homeworld_Interior_Xm_Thing_Prop_BarbecueOven_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "abilities": [
+      {
+        "abilityID": "Ability_01",
+        "abilityName": "SceneObj_Homeworld_Interior_Xm_Thing_Prop_BarbecueOven_01_Ability"
+      }
+    ]
+  },
+  /////////////////////////////////////////////////////////////
+  //
+  //  烤肉店烤肉架
+  //
+  /////////////////////////////////////////////////////////////
+  "SceneObj_Homeworld_Interior_Xm_Thing_Prop_BarbecueOven_02": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "abilities": [
+      {
+        "abilityID": "Ability_01",
+        "abilityName": "SceneObj_Homeworld_Interior_Xm_Thing_Prop_BarbecueOven_02_Ability"
+      }
+    ]
+  },
+  /////////////////////////////////////////////////////////////
+  //
   //  传音花
   //
   /////////////////////////////////////////////////////////////
@@ -1275,6 +1415,40 @@
   },
   //////////////////////////////////////////////////////////////////////////////////////////////////
   //
+  // 须弥生长桥
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Homeworld_Exterior_Common_Prop_Thing_XmGrownBridge_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true,
+        "isGhostToEnemy": true,
+        "ignoreDamageToSelf": true
+      }
+    },
+    "field": {
+      "concernType": "AllAvatars",
+      "shape": "", //形状，不填为collider
+      "checkInterval": 0.5, //触发间隔
+      "triggerInfinite": true, //是否永远触发
+      "lifeInfinite": true, //如果未触发是否一致存在
+      "overwriteCampType": true,
+      "campType": "All"
+    },
+    "abilities": [
+      {
+        "abilityID": "SceneObj_Homeworld_Exterior_Common_Prop_Thing_XmGrownBridge_01",
+        "abilityName": "SceneObj_Homeworld_Exterior_Common_Prop_Thing_XmGrownBridge_01"
+      }
+    ]
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
   // 稻妻烟花发射器
   //
   //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1365,6 +1539,94 @@
     ]
   },
 
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // 家园 厨房 温暖的味道
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Homeworld_Exterior_Xm_Thing_Prop_Claypot_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "lowPriorityIntee": true,
+    "uiInteract": {
+      "gadgetUIBtnCfgPath": "UI/open_cooking_page",
+      "uiName": "UI_COOKING_QTE_TITLE"
+    },
+    "intee": {
+      "$type": "ConfigIntee",
+      "triggerRadius": 1.5,
+      "triggerHeight": 2
+    },
+    "keepModifierOutSight": false,
+    "combat": {
+      //combat property 默认值一览
+      "property": {
+        "useCreatorProperty": false, // useCreatorProperty 默认值为true
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true, //默认为false
+        "ignoreDamageToSelf": true //默认值为False
+        //"isInvincible":false,  //isInvincible 默认为false
+        //"isGhostToAllied" : false,  // isGhostToAllied默认值为false
+        //"isGhostToEnemy" : false,  // isGhostToEnemy 默认值为false
+        //"canTriggerBullet" : true,// canTriggerBullet 默认值为true
+      },
+      "beHit": {
+        "hitAutoRedirect": false
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "Ability_01",
+
+        "abilityName": "SceneObj_Homeworld_Exterior_Xm_Thing_Prop_Claypot_01"
+      }
+    ]
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // 家园 厨房 柯莱火炉与厨具
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Homeworld_Interior_Xm_Thing_Prop_SumeruStove_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "lowPriorityIntee": true,
+    "uiInteract": {
+      "gadgetUIBtnCfgPath": "UI/open_cooking_page",
+      "uiName": "UI_COOKING_QTE_TITLE"
+    },
+    "intee": {
+      "$type": "ConfigIntee",
+      "triggerRadius": 1.5,
+      "triggerHeight": 2
+    },
+    "keepModifierOutSight": false,
+    "combat": {
+      //combat property 默认值一览
+      "property": {
+        "useCreatorProperty": false, // useCreatorProperty 默认值为true
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true, //默认为false
+        "ignoreDamageToSelf": true //默认值为False
+        //"isInvincible":false,  //isInvincible 默认为false
+        //"isGhostToAllied" : false,  // isGhostToAllied默认值为false
+        //"isGhostToEnemy" : false,  // isGhostToEnemy 默认值为false
+        //"canTriggerBullet" : true,// canTriggerBullet 默认值为true
+      },
+      "beHit": {
+        "hitAutoRedirect": false
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "Ability_01",
+
+        "abilityName": "SceneObj_Homeworld_Interior_Xm_Thing_Prop_SumeruStove_01"
+      }
+    ]
+  },
   //////////////////////////////////////////////////////////////////////////////////////////////////
   //
   //  自定义家具 木刻身体

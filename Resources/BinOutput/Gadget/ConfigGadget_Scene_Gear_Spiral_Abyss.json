@@ -1028,6 +1028,82 @@
       }
     ]
   },
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //  冰风暴 R30(技能和特效沿用R25)
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Gear_Spiral_Abyss_IceStormR30": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "model": {
+      "attachEffect": "Eff_SceneObj_IceStormR25_01"
+    },
+    "common": {
+      "affectedByWorld": true
+    },
+    "gadgetAction": {
+      "gadgetStateActionList": [
+        {
+          "$type": "ConfigGadgetStateSendEffectTrigger",
+          "parameter": "gadgetState",
+          "type": "Int",
+          "value": 0,
+          "effectPattern": "Eff_SceneObj_IceStormR25_01",
+          "gadgetState": "Default"
+        },
+        {
+          "$type": "ConfigGadgetStateSendEffectTrigger",
+          "parameter": "gadgetState",
+          "type": "Int",
+          "value": 202,
+          "effectPattern": "Eff_SceneObj_IceStormR25_01",
+          "gadgetState": "GearStop"
+        }
+      ]
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 99999,
+        "attack": 20,
+        "defense": 0,
+        "weight": 50,
+        "isInvincible": false,
+        "isLockHP": true,
+        "isGhostToAllied": false,
+        "isGhostToEnemy": false,
+        "canTriggerBullet": true,
+        "ignoreDamageToSelf": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "hitAutoRedirect": false,
+        "muteAllHit": false,
+        "muteAllHitEffect": false,
+        "muteAllHitText": true
+      }
+    },
+    "field": {
+      "concernType": "AllAvatars",
+      "shape": "CircleR30", //形状，不填为collider
+      "checkInterval": 0.5, //触发间隔
+      "triggerInfinite": true, //是否永远触发
+      "lifeInfinite": true, //如果未触发是否一致存在
+      "overwriteCampType": true,
+      "campType": "All"
+    },
+    "abilities": [
+      {
+        "abilityID": "SceneObj_Gear_Spiral_Abyss_IceStormR25",
+        "abilityName": "SceneObj_Gear_Spiral_Abyss_IceStormR25"
+      }
+    ]
+  },
   ///////////////////////////////////////////////////////////////
   //
   // 火仙灵

@@ -720,5 +720,74 @@
         }
       ]
     }
+  },
+  // 蕈兽大活动开启操作台
+  "SceneObj_Gear_ElementDungeon_Operator_FungusActivity": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "uiInteract": {
+      "gadgetUIBtnCfgPath": "UI/open_fungus_fighter_organize_page",
+      "uiName": "UI_ACTIVITY_FUNGUSFIGHTER_FIGHT_START"
+    },
+    "model": {
+      "attachEffect": "Eff_Gear_ElementDungeon_Operator"
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 99999,
+        "attack": 200,
+        "defense": 0,
+        "weight": 50,
+        "isInvincible": false,
+        "isLockHP": true,
+        "endure": 99,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true,
+        "canTriggerBullet": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "hitAutoRedirect": false,
+        "muteAllHit": false,
+        "muteAllHitEffect": false,
+        "muteAllHitText": true
+      }
+    },
+    "gadgetAction": {
+      "gadgetStateActionList": [
+        {
+          "$type": "ConfigGadgetStateSendEffectTrigger",
+          "parameter": "gadgetState",
+          "type": "Int",
+          "value": 0,
+          "effectPattern": "Eff_Gear_ElementDungeon_Operator",
+          "gadgetState": "Default"
+        },
+        {
+          "$type": "ConfigGadgetStateSendEffectTrigger",
+          "parameter": "gadgetState",
+          "type": "Int",
+          "value": 202,
+          "effectPattern": "Eff_Gear_ElementDungeon_Operator",
+          "gadgetState": "GearStop"
+        },
+        //Default时可以交互
+        {
+          "$type": "ConfigGadgetStateEnableGadgetIntee",
+          "enable": true,
+          "gadgetState": "Default"
+        },
+        {
+          "$type": "ConfigGadgetStateEnableGadgetIntee",
+          "enable": false,
+          "gadgetState": "GearStop"
+        }
+      ]
+    }
   }
 }

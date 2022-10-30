@@ -785,6 +785,7 @@
       }
     ]
   },
+
   ///////////////////////////////////////////////////////////
   //
   // 守护玩法(雷雨)
@@ -908,6 +909,65 @@
         "abilityID": "SceneObj_Gear_Operator_Mamolu_Entity",
 
         "abilityName": "SceneObj_Gear_Operator_Mamolu_Entity"
+      }
+    ]
+  },
+  ///////////////////////////////////////////////////////////
+  //
+  // 守护玩法实体-蕈兽大活动
+  //
+  ///////////////////////////////////////////////////////////
+  "SceneObj_Gear_Operator_Mamolu_FungusActivity": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "billboard": {
+      "$type": "ConfigCombatBillboard",
+      "attachPoint": "RootNode",
+      "offset": {
+        "x": 0,
+        "y": 2.5,
+        "z": 0
+      },
+      "radiusOffset": 3.0,
+      "enableSelfAdapt": false,
+      "showDistance": 48,
+      "showHPBar": true,
+      "size": "Grand"
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 5000,
+        "attack": 200,
+        "defense": 0,
+        "weight": 50,
+        "isInvincible": false,
+        "isLockHP": false,
+        "endure": 99,
+        "isGhostToAllied": false,
+        "isGhostToEnemy": false,
+        "canTriggerBullet": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "hitAutoRedirect": false,
+        "muteAllHit": false,
+        "muteAllHitEffect": false,
+        "muteAllHitText": false
+      }
+    },
+    "specialPoint": {
+      "bulletAim": "bulletAim"
+    },
+    "abilities": [
+      {
+        "abilityID": "SceneObj_Gear_Operator_Mamolu_FungusActivity",
+
+        "abilityName": "SceneObj_Gear_Operator_Mamolu_FungusActivity"
       }
     ]
   },

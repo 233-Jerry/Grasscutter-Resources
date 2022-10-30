@@ -3648,6 +3648,366 @@
   },
   //////////////////////////////////////////////////////////////////////////////////////////////////
   //
+  //  3.2虚空探索目标点
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "Quest_VoidSearching_Target": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "combat": {
+      "property": {
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "Quest_VoidSearching_Target",
+        "abilityName": "Quest_VoidSearching_Target"
+      }
+    ]
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //  3.2象征草神意识的树枝
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Indoor_Xm_Property_Ani_Prop_SoulBranch_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "combat": {
+      "property": {
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true
+      }
+    },
+    "gadgetAction": {
+      "gadgetStateActionList": [
+        {
+          "$type": "ConfigGadgetStateSetAnimInt",
+          "intID": "GadgetState",
+          "syncState": true
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "abilityID": "SceneObj_Indoor_Xm_Property_Ani_Prop_SoulBranch_01",
+        "abilityName": "SceneObj_Indoor_Xm_Property_Ani_Prop_SoulBranch_01"
+      }
+    ]
+  },
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //  3.2散兵转阶段音乐物件
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "Sanbin_Music": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "combat": {
+      "property": {
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "Sanbin_Music",
+        "abilityName": "Sanbin_Music"
+      }
+    ]
+  },
+
+  ///////////////////////////////////////////////////////////////////////
+  //
+  // 草神线npc受击盒1
+  //
+  ///////////////////////////////////////////////////////////////////////
+  "Nahida_Quest_Hitbox_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "move": {
+      "$type": "ConfigFollowMove",
+      "target": "NpcEntity",
+      "attachPoint": "MoveCollider",
+      "followTargetEx": {
+        "$type": "ConfigMoveFollowNpc",
+        "configId": 12848,
+        "questId": 13014
+      },
+
+      "followRotation": true,
+      "offset": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "forward": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 1.0
+      },
+      "followOwnerInvisible": true
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 50,
+        "attack": 50,
+        "defense": 0,
+        "weight": 50,
+        "isInvincible": false,
+        "isLockHP": true,
+        "isGhostToAllied": false,
+        "isGhostToEnemy": false,
+        "canTriggerBullet": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "hitAutoRedirect": false,
+        "muteAllHit": false,
+        "muteAllHitEffect": false,
+        "muteAllHitText": true
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "Nahida_Quest_Hitbox_01",
+        "abilityName": "Nahida_Quest_Hitbox_01"
+      }
+    ]
+  },
+
+  ///////////////////////////////////////////////////////////////////////
+  //
+  // 草神线npc受击盒2
+  //
+  ///////////////////////////////////////////////////////////////////////
+  "Nahida_Quest_Hitbox_02": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "move": {
+      "$type": "ConfigFollowMove",
+      "target": "NpcEntity",
+      "attachPoint": "MoveCollider",
+      "followTargetEx": {
+        "$type": "ConfigMoveFollowNpc",
+        "configId": 12843,
+        "questId": 13014
+      },
+
+      "followRotation": true,
+      "offset": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "forward": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 1.0
+      },
+      "followOwnerInvisible": true
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 50,
+        "attack": 50,
+        "defense": 0,
+        "weight": 50,
+        "isInvincible": false,
+        "isLockHP": true,
+        "isGhostToAllied": false,
+        "isGhostToEnemy": false,
+        "canTriggerBullet": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "hitAutoRedirect": false,
+        "muteAllHit": false,
+        "muteAllHitEffect": false,
+        "muteAllHitText": true
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "Nahida_Quest_Hitbox_02",
+        "abilityName": "Nahida_Quest_Hitbox_02"
+      }
+    ]
+  },
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //  3.2教令院禁闭室门
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Indoor_Xm_Property_Ani_Prop_PrisonDoor_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "combat": {
+      "property": {
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true
+      }
+    },
+    "gadgetAction": {
+      "gadgetStateActionList": [
+        {
+          "$type": "ConfigGadgetStateSetAnimInt",
+          "intID": "GadgetState",
+          "syncState": true
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "abilityID": "SceneObj_Indoor_Xm_Property_Ani_Prop_PrisonDoor_01",
+        "abilityName": "SceneObj_Indoor_Xm_Property_Ani_Prop_PrisonDoor_01"
+      }
+    ]
+  },
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //  3.2阿茹村村长家
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Area_Xm_Property_Prop_VillageRoom_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "combat": {
+      "property": {
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "SceneObj_Area_Xm_Property_Prop_VillageRoom_01",
+        "abilityName": "SceneObj_Area_Xm_Property_Prop_VillageRoom_01"
+      }
+    ]
+  },
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //  3.2意志宝珠
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Area_Xm_Property_Ani_Prop_TrainerCompetitionBead_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "combat": {
+      "property": {
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "SceneObj_Area_Xm_Property_Ani_Prop_TrainerCompetitionBead_01",
+        "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_TrainerCompetitionBead_01"
+      }
+    ]
+  },
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //  3.2意志宝珠
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Area_Xm_Property_Ani_Prop_TrainerCompetitionBead_02": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "combat": {
+      "property": {
+        "HP": 99999,
+        "isInvincible": true,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "SceneObj_Area_Xm_Property_Ani_Prop_TrainerCompetitionBead_02",
+        "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_TrainerCompetitionBead_02"
+      }
+    ]
+  },
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //蕈兽培养容器
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Area_Xm_Property_Prop_CultivatingBox_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "lowPriorityIntee": true,
+    "uiInteract": {
+      "gadgetUIBtnCfgPath": "UI/open_fungus_fighter_cultivate_page"
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 99999,
+        "attack": 20,
+        "defense": 0,
+        "weight": 50,
+        "isInvincible": false,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true,
+        "canTriggerBullet": true,
+        "ignoreDamageToSelf": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "hitAutoRedirect": false,
+        "muteAllHit": false,
+        "muteAllHitEffect": false,
+        "muteAllHitText": true
+      }
+    }
+  },
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
   //  3.1 特效沙墙 大
   //
   //////////////////////////////////////////////////////////////////////////////////////////////////

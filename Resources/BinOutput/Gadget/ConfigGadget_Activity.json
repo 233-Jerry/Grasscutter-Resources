@@ -1566,5 +1566,190 @@
         "abilityName": "Activity_WindFiled_Challenge_WindZone_Gadget"
       }
     ]
+  },
+  //--------------3.2闪电冲击波Gadget-------------------
+  "CharAmusement_Thunder": {
+    "$type": "ConfigGadget",
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      }
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false, // 是否继承创造者的数值
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true,
+        "isInvincible": true,
+        "HP": 99999,
+        "defense": 99999
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1",
+        "overrideRange": -1,
+        "overrideNormalPri": -1,
+        "overrideCombatPri": -1
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "muteAllHit": true,
+        "muteAllHitEffect": true,
+        "muteAllHitText": true
+      }
+    },
+    // 生命周期管理
+    "timer": {
+      "lifeInfinite": false, //如果未触发是否一致存在
+      "lifeTime": 20 //存在时间
+    },
+    "abilities": [
+      {
+        "abilityID": "ActivityAbility_CharAmusement_Thunder_Gadget",
+        "abilityName": "ActivityAbility_CharAmusement_Thunder_Gadget"
+      }
+    ]
+  },
+  "CharAmusement_Thunder_Plus": {
+    "$type": "ConfigGadget",
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      }
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false, // 是否继承创造者的数值
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true,
+        "isInvincible": true,
+        "HP": 99999,
+        "defense": 99999
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1",
+        "overrideRange": -1,
+        "overrideNormalPri": -1,
+        "overrideCombatPri": -1
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "muteAllHit": true,
+        "muteAllHitEffect": true,
+        "muteAllHitText": true
+      }
+    },
+    // 生命周期管理
+    "timer": {
+      "lifeInfinite": false, //如果未触发是否一致存在
+      "lifeTime": 20 //存在时间
+    },
+    "abilities": [
+      {
+        "abilityID": "ActivityAbility_CharAmusement_Thunder_Plus_Gadget",
+        "abilityName": "ActivityAbility_CharAmusement_Thunder_Plus_Gadget"
+      }
+    ]
+  },
+  "CharAmusement_Impact": {
+    "$type": "ConfigGadget",
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      }
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false, // 是否继承创造者的数值
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true,
+        "isInvincible": true,
+        "HP": 99999,
+        "defense": 99999
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1",
+        "overrideRange": -1,
+        "overrideNormalPri": -1,
+        "overrideCombatPri": -1
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "muteAllHit": true,
+        "muteAllHitEffect": true,
+        "muteAllHitText": true
+      }
+    },
+    // 生命周期管理
+    "timer": {
+      "lifeInfinite": false, //如果未触发是否一致存在
+      "lifeTime": 20 //存在时间
+    },
+    "abilities": [
+      {
+        "abilityID": "ActivityAbility_CharAmusement_Impact_Gadget",
+        "abilityName": "ActivityAbility_CharAmusement_Impact_Gadget"
+      }
+    ]
+  },
+  "CharAmusement_Impact_Plus": {
+    "$type": "ConfigGadget",
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      }
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false, // 是否继承创造者的数值
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true,
+        "isInvincible": true,
+        "HP": 99999,
+        "defense": 99999
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1",
+        "overrideRange": -1,
+        "overrideNormalPri": -1,
+        "overrideCombatPri": -1
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "muteAllHit": true,
+        "muteAllHitEffect": true,
+        "muteAllHitText": true
+      }
+    },
+    // 生命周期管理
+    "timer": {
+      "lifeInfinite": false, //如果未触发是否一致存在
+      "lifeTime": 20 //存在时间
+    },
+    "abilities": [
+      {
+        "abilityID": "ActivityAbility_CharAmusement_Impact_Plus_Gadget",
+        "abilityName": "ActivityAbility_CharAmusement_Impact_Plus_Gadget"
+      }
+    ]
   }
 }

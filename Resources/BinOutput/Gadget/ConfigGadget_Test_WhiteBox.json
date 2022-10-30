@@ -579,6 +579,58 @@
       }
     ]
   },
+  ////////////////////////////////////////////////////////////////
+  //
+  //	抓捕蕈兽白盒
+  //
+  ////////////////////////////////////////////////////////////////
+  "SceneObj_Gear_MushRoom_Catch": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "move": {
+      "$type": "ConfigPlatformMove"
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 99999,
+        "attack": 0,
+        "defense": 0,
+        "weight": 10,
+        "isInvincible": false,
+        "isLockHP": true,
+        "isGhostToAllied": false,
+        "isGhostToEnemy": false,
+        "canTriggerBullet": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "hitAutoRedirect": false,
+        "muteAllHit": false,
+        "muteAllHitEffect": false,
+        "muteAllHitText": true
+      }
+    },
+    "field": {
+      "concernType": "AllAvatars",
+      "shape": "CircleR5H4", //形状，不填为collider
+      "checkInterval": 0.5, //触发间隔
+      "triggerInfinite": true, //是否永远触发
+      "lifeInfinite": true, //如果未触发是否一致存在
+      "overwriteCampType": true,
+      "campType": "All"
+    },
+    "abilities": [
+      {
+        "abilityID": "SceneObj_Gear_MushRoom_Catch",
+        "abilityName": "SceneObj_Gear_MushRoom_Catch"
+      }
+    ]
+  },
   //////////////////////////////////////////////
   //
   //  位运算机关测试

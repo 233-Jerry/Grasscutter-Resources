@@ -4089,6 +4089,54 @@
   },
   ///////////////////////////////////////////////////////////
   //
+  // 3.2蕈兽大活动复活物件
+  //
+  ///////////////////////////////////////////////////////////
+  "SceneObj_Level_Common_Property_Prop_ReviveGear_01": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "intee": {
+      "triggerHeight": 4
+    },
+    "uiInteract": {
+      "gadgetUIBtnCfgPath": "UI/open_fungus_fighter_backup_dialog",
+      "uiName": "UI_ACTIVITY_FUNGUSFIGHTER_FIGHT_REBORN"
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 99999,
+        "attack": 200,
+        "defense": 0,
+        "weight": 50,
+        "isInvincible": false,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true,
+        "canTriggerBullet": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "hitAutoRedirect": false,
+        "muteAllHit": false,
+        "muteAllHitEffect": false,
+        "muteAllHitText": true
+      }
+    },
+    "abilities": [
+      {
+        "abilityID": "SceneObj_Level_Common_Property_Prop_ReviveGear_01",
+
+        "abilityName": "SceneObj_Level_Common_Property_Prop_ReviveGear_01"
+      }
+    ]
+  },
+  ///////////////////////////////////////////////////////////
+  //
   // 操作台（开怪 ）
   //
   ///////////////////////////////////////////////////////////

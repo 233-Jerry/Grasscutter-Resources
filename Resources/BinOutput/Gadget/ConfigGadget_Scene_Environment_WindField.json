@@ -1732,6 +1732,54 @@
       }
     }
   },
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // 大树地城隐形风场
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  "SceneObj_Other_Property_Prop_WindField_BigTree_01": {
+    "$type": "ConfigGadget",
+    "keepModifierOutSight": false,
+    "hasModel": true,
+    "common": {
+      "disableTickDistance": 150000
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": false,
+        "HP": 5000,
+        "attack": 10,
+        "defense": 0,
+        "weight": 0,
+        "isLockHP": true,
+        "isGhostToAllied": false,
+        "isGhostToEnemy": false,
+        "canTriggerBullet": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
+      "die": {
+        "hasAnimatorDie": true,
+        "dieEndTime": 2,
+        "dieForceDisappearTime": 2
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "muteAllHit": true,
+        "muteAllHitEffect": true,
+        "muteAllHitText": true
+      }
+    },
+    "misc": {
+      "forceField": {
+        "$type": "ConfigAirflowField",
+        "velocity": 3, //风力配置
+        "scale": 1
+      }
+    }
+  },
   ////////////////////////////////////////////////////////////////
   //
   //  风精华

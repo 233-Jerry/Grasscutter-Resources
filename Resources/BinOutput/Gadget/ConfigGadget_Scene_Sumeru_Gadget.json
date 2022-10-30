@@ -1743,6 +1743,26 @@
   },
   ////////////////////////////////////////////////////////////////
   //
+  //	琥珀门-台座2 （可外部修改GV）
+  //
+  ////////////////////////////////////////////////////////////////
+  "SceneObj_Level_Xm_Property_Prop_AmberKeyPedestal_02": {
+    "$type": "ConfigGadget",
+    "hasModel": true,
+    "combatTemplate": "default",
+    "abilities": [
+      {
+        "abilityID": "ability_01",
+        "abilityName": "SceneObj_Level_Xm_Property_Prop_AmberKeyPedestal_02_Ability"
+      },
+      {
+        "abilityID": "ability_02",
+        "abilityName": "Scene_RockGadget_Summon_Detect"
+      }
+    ]
+  },
+  ////////////////////////////////////////////////////////////////
+  //
   //	琥珀门
   //
   ////////////////////////////////////////////////////////////////
