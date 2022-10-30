@@ -559,6 +559,16 @@
     "HLKDAIPGHGO": []
   },
   {
+    "id": 2005,
+    "type": "SCENE_HOME_WORLD",
+    "scriptData": "Homeworld_Exterior_Sumeru",
+    "overrideDefaultProfile": "",
+    "levelEntityConfig": "",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
     "id": 2201,
     "type": "SCENE_HOME_ROOM",
     "scriptData": "Homeworld_Interior_Md_Apartment_01",
@@ -589,6 +599,16 @@
     "HLKDAIPGHGO": []
   },
   {
+    "id": 2204,
+    "type": "SCENE_HOME_ROOM",
+    "scriptData": "Homeworld_Interior_Xm_Apt_01",
+    "overrideDefaultProfile": "",
+    "levelEntityConfig": "",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
     "id": 1,
     "type": "SCENE_WORLD",
     "scriptData": "BigWorld_LevelStreaming",
@@ -611,14 +631,14 @@
   {
     "id": 3,
     "type": "SCENE_WORLD",
-    "LIIICMJEHLG": true,
+    "KEIMODLPBLG": true,
     "scriptData": "BigWorld_LevelStreaming",
     "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/BigWorld/ESP_Md_General",
     "levelEntityConfig": "Level_BigWorld",
     "specifiedAvatarList": [],
     "comment": "\u6b63\u5f0f",
-    "LLBGGMJAGIE": 15,
-    "ILGKOJFHOKJ": true,
+    "FJBJFILBPND": 15,
+    "KKPHDMLHKOL": true,
     "HLKDAIPGHGO": []
   },
   {
@@ -629,9 +649,9 @@
     "levelEntityConfig": "Level_BigWorld",
     "specifiedAvatarList": [],
     "comment": "\u6b63\u5f0f",
-    "LLBGGMJAGIE": 1,
-    "ILGKOJFHOKJ": true,
+    "FJBJFILBPND": 1,
     "KKPHDMLHKOL": true,
+    "ILGKOJFHOKJ": true,
     "HLKDAIPGHGO": []
   },
   {
@@ -642,8 +662,8 @@
     "levelEntityConfig": "Level_BigWorld",
     "specifiedAvatarList": [],
     "comment": "\u6b63\u5f0f",
-    "LLBGGMJAGIE": 1,
-    "ILGKOJFHOKJ": true,
+    "FJBJFILBPND": 1,
+    "KKPHDMLHKOL": true,
     "HLKDAIPGHGO": []
   },
   {
@@ -653,10 +673,10 @@
     "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/BigWorld/ESP_LP_General",
     "levelEntityConfig": "Level_BigWorld",
     "specifiedAvatarList": [],
-    "BDDELKPADBA": 0.75,
+    "FHKMMBMIEHF": 0.75,
     "comment": "\u6b63\u5f0f",
-    "LLBGGMJAGIE": 1,
-    "ILGKOJFHOKJ": true,
+    "FJBJFILBPND": 1,
+    "KKPHDMLHKOL": true,
     "HLKDAIPGHGO": []
   },
   {
@@ -667,23 +687,23 @@
     "levelEntityConfig": "Level_BigWorld",
     "specifiedAvatarList": [],
     "comment": "\u6b63\u5f0f",
-    "LLBGGMJAGIE": 2,
-    "ILGKOJFHOKJ": true,
+    "FJBJFILBPND": 2,
     "KKPHDMLHKOL": true,
+    "ILGKOJFHOKJ": true,
     "HLKDAIPGHGO": []
   },
   {
     "id": 9,
     "type": "SCENE_WORLD",
-    "KHNIPCAPJFJ": "NAVMESH_MODE_POLYGON",
+    "JFMBFIACJAB": "NAVMESH_MODE_POLYGON",
     "scriptData": "DreamIsland_LevelStreaming",
     "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/BigWorld/ESP_LP_General",
     "levelEntityConfig": "Level_BigWorld",
     "specifiedAvatarList": [],
     "comment": "\u6b63\u5f0f",
-    "LLBGGMJAGIE": 33,
-    "ILGKOJFHOKJ": true,
+    "FJBJFILBPND": 33,
     "KKPHDMLHKOL": true,
+    "ILGKOJFHOKJ": true,
     "HLKDAIPGHGO": []
   },
   {
@@ -1515,11 +1535,71 @@
     "HLKDAIPGHGO": []
   },
   {
+    "id": 20152,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ScaramoucheBoss",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Xm_ScaramoucheBoss01",
+    "levelEntityConfig": "Level_Monster_Nada_Setting",
+    "specifiedAvatarList": [],
+    "comment": "\u6d4b\u8bd5",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 20153,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ScaramoucheBoss",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Xm_ScaramoucheBoss01",
+    "levelEntityConfig": "Level_Monster_Nada_Setting",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 20154,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ScaramoucheBoss",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Xm_ScaramoucheBoss01",
+    "levelEntityConfig": "Level_Monster_Nada_Setting",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 20155,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ScaramoucheBoss",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Xm_ScaramoucheBoss01",
+    "levelEntityConfig": "Level_Monster_Nada_Setting",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 20156,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ScaramoucheBoss",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Xm_ScaramoucheBoss01",
+    "levelEntityConfig": "Level_Monster_Nada_Setting",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
     "id": 20157,
     "type": "SCENE_DUNGEON",
     "scriptData": "Level_SmrDungeon_Cyno",
     "overrideDefaultProfile": "",
     "levelEntityConfig": "",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 20158,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_FCdungeon_BigTree",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_FCdungeon_BigTree_01",
+    "levelEntityConfig": "Level_Dungeon",
     "specifiedAvatarList": [],
     "comment": "\u6b63\u5f0f",
     "HLKDAIPGHGO": []
@@ -1550,6 +1630,56 @@
     "scriptData": "Level_FC_DeshretTemple",
     "overrideDefaultProfile": "",
     "levelEntityConfig": "Level_Dungeon",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 20162,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "IndoorScene_Xm_Biglibrary",
+    "overrideDefaultProfile": "",
+    "levelEntityConfig": "",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 20163,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ScaramoucheFactory",
+    "overrideDefaultProfile": "",
+    "levelEntityConfig": "Level_Dungeon",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 20164,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_VoidWorldTree",
+    "overrideDefaultProfile": "",
+    "levelEntityConfig": "",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 20165,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_NahidaDungeon_01",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_NahidaDungeon_01",
+    "levelEntityConfig": "Level_Dungeon",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 20168,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ScaramoucheBoss",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Xm_ScaramoucheBoss01",
+    "levelEntityConfig": "Level_Monster_Nada_Setting",
     "specifiedAvatarList": [],
     "comment": "\u6b63\u5f0f",
     "HLKDAIPGHGO": []
@@ -3335,6 +3465,26 @@
     "HLKDAIPGHGO": []
   },
   {
+    "id": 33743,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_Tower_Moon_01",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "LevelEntity_ClearLocalGadgets",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 33744,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_Tower_Universe_01",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Universe_01",
+    "levelEntityConfig": "LevelEntity_ClearLocalGadgets",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
     "id": 34700,
     "type": "SCENE_DUNGEON",
     "scriptData": "Level_Tower_Moon_01",
@@ -3765,6 +3915,26 @@
     "HLKDAIPGHGO": []
   },
   {
+    "id": 34743,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_Tower_Moon_01",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "LevelEntity_ClearLocalGadgets",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 34744,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_Tower_Universe_01",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Universe_01",
+    "levelEntityConfig": "LevelEntity_ClearLocalGadgets",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
     "id": 35700,
     "type": "SCENE_DUNGEON",
     "scriptData": "Level_Tower_Moon_01",
@@ -4186,6 +4356,26 @@
   },
   {
     "id": 35742,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_Tower_Universe_01",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Universe_01",
+    "levelEntityConfig": "LevelEntity_ClearLocalGadgets",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 35743,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_Tower_Moon_01",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "LevelEntity_ClearLocalGadgets",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 35744,
     "type": "SCENE_DUNGEON",
     "scriptData": "Level_Tower_Universe_01",
     "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Universe_01",
@@ -5210,6 +5400,86 @@
     "scriptData": "Level_XMDungeon_WQ04",
     "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_XMdungeon_WQ01_02",
     "levelEntityConfig": "Level_Dungeon",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 40055,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ActivityBoss01_Wind",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "Level_EffigyChallenge",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 40056,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ActivityBoss01_Wind",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "Level_EffigyChallenge",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 40057,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ActivityBoss01_Wind",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "Level_EffigyChallenge",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 40058,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ActivityBoss01_Wind",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "Level_EffigyChallenge",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 40059,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ActivityBoss01_Wind",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "Level_EffigyChallenge",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 40060,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ActivityBoss01_Wind",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "Level_EffigyChallenge",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 40061,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ActivityBoss01_Wind",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "Level_EffigyChallenge",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 40062,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_ActivityBoss01_Wind",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "Level_EffigyChallenge",
     "specifiedAvatarList": [],
     "comment": "\u6b63\u5f0f",
     "HLKDAIPGHGO": []
@@ -6765,6 +7035,26 @@
     "HLKDAIPGHGO": []
   },
   {
+    "id": 41057,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_Tower_01_Open",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 41058,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_Tower_01_Open",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_Tower_Night_01",
+    "levelEntityConfig": "",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
     "id": 42001,
     "type": "SCENE_DUNGEON",
     "scriptData": "Level_PFDungeon02_Active01",
@@ -7815,6 +8105,36 @@
     "HLKDAIPGHGO": []
   },
   {
+    "id": 47101,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_FungusFighter",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/BigWorld/ESP_XM_FungusFighter",
+    "levelEntityConfig": "LevelEntity_Activity_V3_2_MushroomBeastBattle",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 47102,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_FungusFighter",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/BigWorld/ESP_XM_FungusFighter",
+    "levelEntityConfig": "LevelEntity_Activity_V3_2_MushroomBeastBattle",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 47103,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_FungusFighter",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/BigWorld/ESP_XM_FungusFighter",
+    "levelEntityConfig": "LevelEntity_Activity_V3_2_MushroomBeastBattle",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
     "id": 50002,
     "type": "SCENE_DUNGEON",
     "scriptData": "TestLevel_Cold_LYX",
@@ -8657,6 +8977,16 @@
     "HLKDAIPGHGO": []
   },
   {
+    "id": 50091,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_DahakaBoss01",
+    "overrideDefaultProfile": "",
+    "levelEntityConfig": "",
+    "specifiedAvatarList": [],
+    "comment": "\u6d4b\u8bd5",
+    "HLKDAIPGHGO": []
+  },
+  {
     "id": 50092,
     "type": "SCENE_DUNGEON",
     "scriptData": "WindPuzzle_WhiteboxSll01",
@@ -8807,11 +9137,32 @@
     "HLKDAIPGHGO": []
   },
   {
-    "id": 51014,
+    "id": 51007,
     "type": "SCENE_DUNGEON",
-    "scriptData": "Level_Cycle01_XM03",
+    "scriptData": "BigWorld_LevelStreaming",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/BigWorld/ESP_Md_General",
+    "levelEntityConfig": "Level_BigWorld",
+    "specifiedAvatarList": [],
+    "comment": "\u6d4b\u8bd5",
+    "HLKDAIPGHGO": [],
+    "CHLHMELKOMN": 3
+  },
+  {
+    "id": 51008,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_Carnival",
     "overrideDefaultProfile": "",
-    "levelEntityConfig": "",
+    "levelEntityConfig": "Level_CharAmusement_Dungeon",
+    "specifiedAvatarList": [],
+    "comment": "\u6b63\u5f0f",
+    "HLKDAIPGHGO": []
+  },
+  {
+    "id": 51009,
+    "type": "SCENE_DUNGEON",
+    "scriptData": "Level_SmrDungeon_BigTree",
+    "overrideDefaultProfile": "Data/Environment/EnviroSystemProfile/Dungeon/ESP_SmrDungeon_BigTree_Flower",
+    "levelEntityConfig": "LevelEntity_Activity_V3_2_MushroomBeastBattle",
     "specifiedAvatarList": [],
     "comment": "\u6d4b\u8bd5",
     "HLKDAIPGHGO": []
