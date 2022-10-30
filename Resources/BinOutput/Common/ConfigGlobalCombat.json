@@ -672,8 +672,8 @@
     "maxForceDistance": 5.0
   },
   "elemUI": {
-    "showIconEntityTypes": ["Monster", "Gadget"],
-    "showReactionEntityTypes": ["Avatar", "Monster"],
+    "showIconEntityTypes": ["Monster", "Gadget", "Partner"],
+    "showReactionEntityTypes": ["Avatar", "Monster", "Partner"],
     "iconRecoverTime": 0.5,
     "iconDisappearTime": 2.0,
     "iconDisappearRound": 2,
@@ -850,14 +850,14 @@
     "headCtrlDisableAngle": 135
   },
   "tempComponentBudget": {
-    "268492800": 4.5, //MoleMole.HumanoidMoveFSM,0x1000E000
+    "268496896": 4.5, //MoleMole.HumanoidMoveFSM,0x1000F000
     "16801792": 1.5, //MoleMole.LCAIBeta,0x01006000
     "69654": 1.2, //MoleMole.VCPlatformMove,0x00011016
     "94208": 0.8, //MoleMole.VCCameraCharacterAmbientSensors,0x00017000
     "8192": 0.7, //MoleMole.VCAnimatorEvent,0x00002000
-    "268595205": 0.7, //MoleMole.LevelSceneWaterPlugin,0x10027005
-    "268550144": 0.6, //MoleMole.LevelSceneColliderChangePlugin,0x1001C000
-    "268513280": 0.6, //MoleMole.LevelChangeAvatarPlugin,0x10013000
+    "268599301": 0.7, //MoleMole.LevelSceneWaterPlugin,0x10028005
+    "268554240": 0.6, //MoleMole.LevelSceneColliderChangePlugin,0x1001D000
+    "268517376": 0.6, //MoleMole.LevelChangeAvatarPlugin,0x10014000
     "16818176": 0.6, //MoleMole.LCAvatarAutoPickup,0x0100A000
     "16805888": 0.6, //MoleMole.LCAIManager,0x01007000
     "69635": 0.5, //MoleMole.VCFollowMove,0x00011003
@@ -867,38 +867,38 @@
     "49153": 0.3, //MoleMole.VCAvatarEquipController,0x0000C001
     "73729": 0.3, //MoleMole.VCAvatarPerform,0x00012001
     "65542": 0.3, //MoleMole.VCAvatarModel,0x00010006
-    "268595203": 0.3, //MoleMole.LevelSceneGrassPlugin,0x10027003
+    "268599299": 0.3, //MoleMole.LevelSceneGrassPlugin,0x10028003
     "20480": 0.3, //MoleMole.VCAvatarFocus,0x00005000
     "53252": 0.3, //MoleMole.VCAvatarHeadController,0x0000D004
-    "268578816": 0.3, //MoleMole.LevelSceneIcePlugin,0x10023000
+    "268582912": 0.3, //MoleMole.LevelSceneIcePlugin,0x10024000
     "16826374": 0.2, //MoleMole.LCMonsterCombat,0x0100C006
     "16826370": 0.2, //MoleMole.LCGadgetCombat,0x0100C002
     "268455951": 0.2, //MoleMole.AudioAvatarMovePlugin,0x1000500F
     "268455949": 0.2, //MoleMole.AudioWeatherPlugin,0x1000500D
     "16834561": 0.2, //MoleMole.LCBaseInter,0x0100E001
-    "268546048": 0.2, //MoleMole.LevelSceneAirflowFieldPlugin,0x1001B000
+    "268550144": 0.2, //MoleMole.LevelSceneAirflowFieldPlugin,0x1001C000
     "65537": 0.2, //MoleMole.VCEquipModel,0x00010001
     "53255": 0.2, //MoleMole.VCMonsterHeadController,0x0000D007
     "86016": 0.2, //MoleMole.VCBillboard,0x00015000
-    "268701697": 0.2, //MoleMole.VCCombatBillboardPlugin,0x10041001
+    "268705793": 0.2, //MoleMole.VCCombatBillboardPlugin,0x10042001
     "16826371": 0.2, //MoleMole.LCAvatarCombat,0x0100C003
-    "268619776": 0.2, //MoleMole.LevelSceneSurfacePlugin,0x1002D000
-    "268468225": 0.2, //MoleMole.HumanoidMoveEffectPlugin,0x10008001
-    "268681216": 0.1, //MoleMole.ShaderLerpPlugin,0x1003C000
+    "268623872": 0.2, //MoleMole.LevelSceneSurfacePlugin,0x1002E000
+    "268472321": 0.2, //MoleMole.HumanoidMoveEffectPlugin,0x10009001
+    "268685312": 0.1, //MoleMole.ShaderLerpPlugin,0x1003D000
     "268455957": 0.1, //MoleMole.AudioMonsterMovePlugin,0x10005015
     "77829": 0.1, //MoleMole.VCGroupAutoPickable,0x00013005
     "268455945": 0.1, //MoleMole.AudioPatrollerPlugin,0x10005009
     "16785408": 0.1, //MoleMole.LCAbilityElement,0x01002000
     "49154": 0.1, //MoleMole.VCMonsterEquipController,0x0000C002
-    "268472322": 0.1, //MoleMole.HumanoidMoveSyncPlugin,0x10009002
+    "268476418": 0.1, //MoleMole.HumanoidMoveSyncPlugin,0x1000A002
     "81923": 0.1, //MoleMole.VCEquipSetDitherValue,0x00014003
     "81925": 0.1, //MoleMole.VCMonsterSetDitherValue,0x00014005
     "16826376": 0.1, //MoleMole.LCScenePropCombat,0x0100C008
-    "268472321": 0.1, //MoleMole.AnimatorMoveSyncPlugin,0x10009001
+    "268476417": 0.1, //MoleMole.AnimatorMoveSyncPlugin,0x1000A001
     "229376": 0.1, //MoleMole.VCSyncAnimator,0x00038000
     "268455944": 0.1, //MoleMole.AudioMusicStatePlugin,0x10005008
-    "268677120": 0.1, //MoleMole.PushColliderPlugin,0x1003B000
-    "268480512": 0.1, //MoleMole.CollisionPlugin,0x1000B000
+    "268681216": 0.1, //MoleMole.PushColliderPlugin,0x1003C000
+    "268484608": 0.1, //MoleMole.CollisionPlugin,0x1000C000
     "16957440": 0.1, //MoleMole.LCTimer,0x0102C000
     "69661": 0.1, //MoleMole.VCWindmillMove,0x0001101D
     "268455958": 0.1, //MoleMole.AudioNpcMovePlugin,0x10005016
@@ -913,7 +913,7 @@
     "16859137": 0.1, //MoleMole.LCAirflowField,0x01014001
     "40966": 0.1, //MoleMole.VCMonsterCombat,0x0000A006
     "16830466": 0.1, //MoleMole.LCMonsterEquipController,0x0100D002
-    "268558336": 0.1, //MoleMole.LevelSceneDebugPlugin,0x1001E000
+    "268562432": 0.1, //MoleMole.LevelSceneDebugPlugin,0x1001F000
     "16797698": 0.1, //MoleMole.LCActorTrigger,0x01005002
     "268455961": 0.1, //MoleMole.AudioTeamVoiceStreamPlugin,0x10005019
     "53256": 0.1, //MoleMole.VCNpcHeadController,0x0000D008
@@ -923,7 +923,7 @@
     "16904192": 0.1, //MoleMole.LCPose,0x0101F000
     "200704": 0.1, //MoleMole.VCPartController,0x00031000
     "57346": 0.1, //MoleMole.VCLocalInputController,0x0000E002
-    "268595201": 0.1, //MoleMole.LevelSceneBushPlugin,0x10027001
+    "268599297": 0.1, //MoleMole.LevelSceneBushPlugin,0x10028001
     "45056": 0.1, //MoleMole.VCBaseEmotion,0x0000B000
     "77827": 0.1, //MoleMole.VCNormalPickable,0x00013003
     "16945152": 0.1 //MoleMole.LCTalent,0x01029000
@@ -2017,5 +2017,24 @@
     {
       "key": "COLLISION_POINT_TRIGGER_ID_2"
     }
-  ]
+  ],
+  "attacktagToElementreactionDictionary": {
+    "BurningDamage": "Burning",
+    "ShockDamage": "Shock",
+    "ExplodeDamage": "Explode",
+    "SuperconductorDamage": "Superconductor",
+    "FrozenBrokenDamage": "FrozenBroken",
+    "Swirl_FireDamage": "SwirlFire",
+    "Self_Swirl_FireDamage": "SwirlFire",
+    "Swirl_ElectricDamage": "SwirlElectric",
+    "Self_Swirl_ElectricDamage": "SwirlElectric",
+    "Swirl_WaterDamage": "SwirlWater",
+    "Self_Swirl_WaterDamage": "SwirlWater",
+    "Swirl_IceDamage": "SwirlIce",
+    "Self_Swirl_IceDamage": "SwirlIce",
+    "OverGrowDamage": "Overgrow",
+    "OverGrow_Alter_Damage": "Overgrow",
+    "OverGrow_Fire_Damage": "OvergrowMushroomFire",
+    "OverGrow_Electric_Damage": "OvergrowMushroomElectric"
+  }
 }
