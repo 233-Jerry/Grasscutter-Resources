@@ -30,37 +30,31 @@
   "Cyno_Constellation_2": [
     {
       "$type": "AddAbility",
-      "abilityName": "Avatar_Cyno_Constellation_2_BuffNormalAttack"
+      "abilityName": "Avatar_Cyno_Constellation_2_BuffElecAddHurt"
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Cyno_Constellation_2_BuffNormalAttack",
-      "paramSpecial": "Cyno_Constellation_2_BonusCritical",
+      "abilityName": "Avatar_Cyno_Constellation_2_BuffElecAddHurt",
+      "paramSpecial": "Cyno_Constellation_2_ElecAddHurtDelta",
       "paramDelta": "%1"
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Cyno_Constellation_2_BuffNormalAttack",
-      "paramSpecial": "Cyno_Constellation_2_BonusCriticalHurt",
+      "abilityName": "Avatar_Cyno_Constellation_2_BuffElecAddHurt",
+      "paramSpecial": "Cyno_Constellation_2_BuffTime",
       "paramDelta": "%2"
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Cyno_Constellation_2_BuffNormalAttack",
-      "paramSpecial": "Cyno_Constellation_2_BuffTime",
+      "abilityName": "Avatar_Cyno_Constellation_2_BuffElecAddHurt",
+      "paramSpecial": "Cyno_Constellation_2_MaxLevel",
       "paramDelta": "%3"
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Cyno_Constellation_2_BuffNormalAttack",
-      "paramSpecial": "Cyno_Constellation_2_MaxLevel",
-      "paramDelta": "%4"
-    },
-    {
-      "$type": "ModifyAbility",
-      "abilityName": "Avatar_Cyno_Constellation_2_BuffNormalAttack",
+      "abilityName": "Avatar_Cyno_Constellation_2_BuffElecAddHurt",
       "paramSpecial": "Cyno_Constellation_2_CD",
-      "paramDelta": "%5"
+      "paramDelta": "%4"
     }
   ],
   "Cyno_Constellation_3": [

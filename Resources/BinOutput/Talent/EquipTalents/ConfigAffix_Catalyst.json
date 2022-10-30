@@ -1181,18 +1181,6 @@
   ],
   ////////////////////////////////////////////////////////////////
   //
-  //  14511 草神法器 Equip_Catalyst_Ayus
-  //  技能未定，但有常驻特效
-  //
-  ////////////////////////////////////////////////////////////////
-  "Weapon_Catalyst_Ayus": [
-    {
-      "$type": "AddAbility",
-      "abilityName": "Weapon_Catalyst_Ayus"
-    }
-  ],
-  ////////////////////////////////////////////////////////////////
-  //
   //  14417 须弥锻造法器 Equip_Catalyst_Arakalari
   //
   //
@@ -1268,6 +1256,38 @@
       "abilityName": "Weapon_Catalyst_Pleroma",
       "paramSpecial": "TeamInheritRatio",
       "paramDelta": "%4",
+      "paramRatio": 0
+    }
+  ],
+  ////////////////////////////////////////////////////////////////
+  //
+  //  14511 草神法器 Equip_Catalyst_Ayus
+  //
+  ////////////////////////////////////////////////////////////////
+  "Weapon_Catalyst_Ayus": [
+    {
+      "$type": "AddAbility",
+      "abilityName": "Weapon_Catalyst_Ayus"
+    },
+    {
+      "$type": "ModifyAbility",
+      "abilityName": "Weapon_Catalyst_Ayus",
+      "paramSpecial": "MasteryRate",
+      "paramDelta": "%1",
+      "paramRatio": 0
+    },
+    {
+      "$type": "ModifyAbility",
+      "abilityName": "Weapon_Catalyst_Ayus",
+      "paramSpecial": "DamageRate",
+      "paramDelta": "%2",
+      "paramRatio": 0
+    },
+    {
+      "$type": "ModifyAbility",
+      "abilityName": "Weapon_Catalyst_Ayus",
+      "paramSpecial": "ElemMastery",
+      "paramDelta": "%3",
       "paramRatio": 0
     }
   ]
