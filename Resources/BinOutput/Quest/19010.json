@@ -12,11 +12,7 @@
   "_luaPath": "Actor/Quest/LQ19010",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    19013,
-    19014,
-    19015
-  ],
+  "PEOHODAKLNO": [19013, 19014, 19015],
   "FEHAEKNGFBP": true,
   "rewardIdList": [],
   "showType": "QUEST_SHOW",
@@ -43,26 +39,17 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105301,
-            19010011
-          ],
+          "param": [105301, 19010011],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105301,
-            19010012
-          ],
+          "param": [105301, 19010012],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105301,
-            19010013
-          ],
+          "param": [105301, 19010013],
           "count": 0
         }
       ],
@@ -70,9 +57,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q19010_Player_Pos"
-        ],
+        "param": ["Q19010_Player_Pos"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"

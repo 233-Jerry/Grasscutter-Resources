@@ -1,1143 +1,399 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 133210209
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 209016
-L2_1.monster_id = 20011001
-L3_1 = {}
-L3_1.x = -3507.718
-L3_1.y = 116.5
-L3_1.z = -988.354
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 173.811
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 30
-L2_1.drop_id = 1000100
-L2_1.area_id = 17
-L3_1 = {}
-L3_1.config_id = 209017
-L3_1.monster_id = 20060101
-L4_1 = {}
-L4_1.x = -3502.594
-L4_1.y = 116.5
-L4_1.z = -993.529
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 269.247
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.drop_id = 1000100
-L3_1.pose_id = 101
-L3_1.area_id = 17
-L4_1 = {}
-L4_1.config_id = 209018
-L4_1.monster_id = 20060101
-L5_1 = {}
-L5_1.x = -3504.003
-L5_1.y = 116.5
-L5_1.z = -996.942
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 313.284
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.drop_id = 1000100
-L4_1.pose_id = 101
-L4_1.area_id = 17
-L5_1 = {}
-L5_1.config_id = 209019
-L5_1.monster_id = 20011001
-L6_1 = {}
-L6_1.x = -3510.514
-L6_1.y = 116.5
-L6_1.z = -992.326
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 102.095
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.drop_id = 1000100
-L5_1.area_id = 17
-L6_1 = {}
-L6_1.config_id = 209020
-L6_1.monster_id = 20011001
-L7_1 = {}
-L7_1.x = -3509.034
-L7_1.y = 116.732
-L7_1.z = -996.101
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 49.564
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 30
-L6_1.drop_id = 1000100
-L6_1.area_id = 17
-L7_1 = {}
-L7_1.config_id = 209021
-L7_1.monster_id = 20011101
-L8_1 = {}
-L8_1.x = -3581.02
-L8_1.y = 116.5
-L8_1.z = -996.901
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 242.531
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 30
-L7_1.drop_id = 1000100
-L7_1.area_id = 17
-L8_1 = {}
-L8_1.config_id = 209022
-L8_1.monster_id = 20011101
-L9_1 = {}
-L9_1.x = -3586.175
-L9_1.y = 116.5
-L9_1.z = -995.205
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 151.806
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 30
-L8_1.drop_id = 1000100
-L8_1.area_id = 17
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 209003
-L2_1.gadget_id = 70210102
-L3_1 = {}
-L3_1.x = -3527.136
-L3_1.y = 115.66
-L3_1.z = -1025.425
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 26
-L2_1.chest_drop_id = 1000100
-L2_1.drop_count = 1
-L2_1.persistent = true
-L2_1.area_id = 17
-L3_1 = {}
-L3_1.config_id = 209004
-L3_1.gadget_id = 70210102
-L4_1 = {}
-L4_1.x = -3507.348
-L4_1.y = 116.288
-L4_1.z = -993.864
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 26
-L3_1.chest_drop_id = 1000100
-L3_1.drop_count = 1
-L3_1.persistent = true
-L3_1.area_id = 17
-L4_1 = {}
-L4_1.config_id = 209005
-L4_1.gadget_id = 70210102
-L5_1 = {}
-L5_1.x = -3584.51
-L5_1.y = 116.268
-L5_1.z = -998.584
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 26
-L4_1.chest_drop_id = 1000100
-L4_1.drop_count = 1
-L4_1.persistent = true
-L4_1.area_id = 17
-L5_1 = {}
-L5_1.config_id = 209006
-L5_1.gadget_id = 70210102
-L6_1 = {}
-L6_1.x = -3592.05
-L6_1.y = 116.288
-L6_1.z = -945.921
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 26
-L5_1.chest_drop_id = 1000100
-L5_1.drop_count = 1
-L5_1.persistent = true
-L5_1.area_id = 17
-L6_1 = {}
-L6_1.config_id = 209013
-L6_1.gadget_id = 70900388
-L7_1 = {}
-L7_1.x = -3593.21
-L7_1.y = 116.263
-L7_1.z = -947.416
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 42.781
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 30
-L6_1.area_id = 17
-L7_1 = {}
-L7_1.config_id = 209014
-L7_1.gadget_id = 70900388
-L8_1 = {}
-L8_1.x = -3593.267
-L8_1.y = 116.288
-L8_1.z = -944.252
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 42.781
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 30
-L7_1.area_id = 17
-L8_1 = {}
-L8_1.config_id = 209015
-L8_1.gadget_id = 70900388
-L9_1 = {}
-L9_1.x = -3590.508
-L9_1.y = 116.226
-L9_1.z = -946.711
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 67.34
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 30
-L8_1.area_id = 17
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 209001
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 60
-L3_1 = {}
-L3_1.x = -3550.146
-L3_1.y = 116.858
-L3_1.z = -965.372
-L2_1.pos = L3_1
-L2_1.area_id = 17
-L3_1 = {}
-L3_1.config_id = 209023
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 10
-L4_1 = {}
-L4_1.x = -3599.384
-L4_1.y = 120.131
-L4_1.z = -870.356
-L3_1.pos = L4_1
-L3_1.area_id = 17
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1209001
-L2_1.name = "ENTER_REGION_209001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_209001"
-L2_1.action = "action_EVENT_ENTER_REGION_209001"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1209002
-L3_1.name = "QUEST_START_209002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_QUEST_START
-L3_1.event = L4_1
-L3_1.source = "7215006"
-L3_1.condition = ""
-L3_1.action = "action_EVENT_QUEST_START_209002"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1209007
-L4_1.name = "GADGET_STATE_CHANGE_209007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_209007"
-L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_209007"
-L5_1 = {}
-L5_1.config_id = 1209008
-L5_1.name = "VARIABLE_CHANGE_209008"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_VARIABLE_CHANGE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_VARIABLE_CHANGE_209008"
-L5_1.action = "action_EVENT_VARIABLE_CHANGE_209008"
-L6_1 = {}
-L6_1.config_id = 1209009
-L6_1.name = "VARIABLE_CHANGE_209009"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_VARIABLE_CHANGE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_VARIABLE_CHANGE_209009"
-L6_1.action = "action_EVENT_VARIABLE_CHANGE_209009"
-L7_1 = {}
-L7_1.config_id = 1209010
-L7_1.name = "GADGET_STATE_CHANGE_209010"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GADGET_STATE_CHANGE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_209010"
-L7_1.action = "action_EVENT_GADGET_STATE_CHANGE_209010"
-L8_1 = {}
-L8_1.config_id = 1209011
-L8_1.name = "GADGET_STATE_CHANGE_209011"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_GADGET_STATE_CHANGE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_209011"
-L8_1.action = "action_EVENT_GADGET_STATE_CHANGE_209011"
-L9_1 = {}
-L9_1.config_id = 1209012
-L9_1.name = "GADGET_STATE_CHANGE_209012"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_GADGET_STATE_CHANGE
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_209012"
-L9_1.action = "action_EVENT_GADGET_STATE_CHANGE_209012"
-L10_1 = {}
-L10_1.config_id = 1209023
-L10_1.name = "ENTER_REGION_209023"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_ENTER_REGION
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_ENTER_REGION_209023"
-L10_1.action = "action_EVENT_ENTER_REGION_209023"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1209024
-L11_1.name = "QUEST_START_209024"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_QUEST_START
-L11_1.event = L12_1
-L11_1.source = "7215006"
-L11_1.condition = ""
-L11_1.action = "action_EVENT_QUEST_START_209024"
-L11_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "Chest_Open"
-L2_1.value = 0
-L2_1.no_refresh = true
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.io_type = 1
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 209001
-L5_1 = 209023
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_209001"
-L5_1 = "QUEST_START_209002"
-L6_1 = "ENTER_REGION_209023"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.configId = 1
-L4_1.name = "Chest_Open"
-L4_1.value = 0
-L4_1.no_refresh = true
-L3_1[1] = L4_1
-L2_1.variables = L3_1
-L1_1[1] = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 209003
-L4_1.state = 0
-L5_1 = {}
-L5_1.config_id = 209004
-L5_1.state = 0
-L6_1 = {}
-L6_1.config_id = 209005
-L6_1.state = 0
-L7_1 = {}
-L7_1.config_id = 209006
-L7_1.state = 0
-L8_1 = {}
-L8_1.config_id = 209013
-L8_1.state = 0
-L9_1 = {}
-L9_1.config_id = 209014
-L9_1.state = 0
-L10_1 = {}
-L10_1.config_id = 209015
-L10_1.state = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GADGET_STATE_CHANGE_209007"
-L5_1 = "VARIABLE_CHANGE_209009"
-L6_1 = "GADGET_STATE_CHANGE_209010"
-L7_1 = "GADGET_STATE_CHANGE_209011"
-L8_1 = "GADGET_STATE_CHANGE_209012"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.configId = 1
-L4_1.name = "Chest_Open"
-L4_1.value = 0
-L4_1.no_refresh = true
-L3_1[1] = L4_1
-L2_1.variables = L3_1
-L1_1[2] = L2_1
-L2_1 = {}
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 209016
-L5_1 = {}
-L5_1.config_id = 209017
-L6_1 = {}
-L6_1.config_id = 209018
-L7_1 = {}
-L7_1.config_id = 209019
-L8_1 = {}
-L8_1.config_id = 209020
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.configId = 1
-L4_1.name = "Chest_Open"
-L4_1.value = 0
-L4_1.no_refresh = true
-L3_1[1] = L4_1
-L2_1.variables = L3_1
-L1_1[3] = L2_1
-L2_1 = {}
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 209021
-L5_1 = {}
-L5_1.config_id = 209022
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.configId = 1
-L4_1.name = "Chest_Open"
-L4_1.value = 0
-L4_1.no_refresh = true
-L3_1[1] = L4_1
-L2_1.variables = L3_1
-L1_1[4] = L2_1
-L2_1 = {}
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_START_209024"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.configId = 1
-L4_1.name = "Chest_Open"
-L4_1.value = 0
-L4_1.no_refresh = true
-L3_1[1] = L4_1
-L2_1.variables = L3_1
-L1_1[5] = L2_1
-suite_disk = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 209001
-L5_1 = 209023
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_209001"
-L5_1 = "QUEST_START_209002"
-L6_1 = "ENTER_REGION_209023"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 209003
-L6_1 = 209004
-L7_1 = 209005
-L8_1 = 209006
-L9_1 = 209013
-L10_1 = 209014
-L11_1 = 209015
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_STATE_CHANGE_209007"
-L6_1 = "VARIABLE_CHANGE_209009"
-L7_1 = "GADGET_STATE_CHANGE_209010"
-L8_1 = "GADGET_STATE_CHANGE_209011"
-L9_1 = "GADGET_STATE_CHANGE_209012"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 209016
-L7_1 = 209017
-L8_1 = 209018
-L9_1 = 209019
-L10_1 = 209020
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L7_1 = 209021
-L8_1 = 209022
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L8_1 = "QUEST_START_209024"
-L7_1[1] = L8_1
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 209001 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133210209
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 209016, monster_id = 20011001, pos = { x = -3507.718, y = 116.500, z = -988.354 }, rot = { x = 0.000, y = 173.811, z = 0.000 }, level = 30, drop_id = 1000100, area_id = 17 },
+	{ config_id = 209017, monster_id = 20060101, pos = { x = -3502.594, y = 116.500, z = -993.529 }, rot = { x = 0.000, y = 269.247, z = 0.000 }, level = 30, drop_id = 1000100, pose_id = 101, area_id = 17 },
+	{ config_id = 209018, monster_id = 20060101, pos = { x = -3504.003, y = 116.500, z = -996.942 }, rot = { x = 0.000, y = 313.284, z = 0.000 }, level = 30, drop_id = 1000100, pose_id = 101, area_id = 17 },
+	{ config_id = 209019, monster_id = 20011001, pos = { x = -3510.514, y = 116.500, z = -992.326 }, rot = { x = 0.000, y = 102.095, z = 0.000 }, level = 30, drop_id = 1000100, area_id = 17 },
+	{ config_id = 209020, monster_id = 20011001, pos = { x = -3509.034, y = 116.732, z = -996.101 }, rot = { x = 0.000, y = 49.564, z = 0.000 }, level = 30, drop_id = 1000100, area_id = 17 },
+	{ config_id = 209021, monster_id = 20011101, pos = { x = -3581.020, y = 116.500, z = -996.901 }, rot = { x = 0.000, y = 242.531, z = 0.000 }, level = 30, drop_id = 1000100, area_id = 17 },
+	{ config_id = 209022, monster_id = 20011101, pos = { x = -3586.175, y = 116.500, z = -995.205 }, rot = { x = 0.000, y = 151.806, z = 0.000 }, level = 30, drop_id = 1000100, area_id = 17 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 209003, gadget_id = 70210102, pos = { x = -3527.136, y = 115.660, z = -1025.425 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, chest_drop_id = 1000100, drop_count = 1, persistent = true, area_id = 17 },
+	{ config_id = 209004, gadget_id = 70210102, pos = { x = -3507.348, y = 116.288, z = -993.864 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, chest_drop_id = 1000100, drop_count = 1, persistent = true, area_id = 17 },
+	{ config_id = 209005, gadget_id = 70210102, pos = { x = -3584.510, y = 116.268, z = -998.584 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, chest_drop_id = 1000100, drop_count = 1, persistent = true, area_id = 17 },
+	{ config_id = 209006, gadget_id = 70210102, pos = { x = -3592.050, y = 116.288, z = -945.921 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, chest_drop_id = 1000100, drop_count = 1, persistent = true, area_id = 17 },
+	{ config_id = 209013, gadget_id = 70900388, pos = { x = -3593.210, y = 116.263, z = -947.416 }, rot = { x = 0.000, y = 42.781, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 209014, gadget_id = 70900388, pos = { x = -3593.267, y = 116.288, z = -944.252 }, rot = { x = 0.000, y = 42.781, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 209015, gadget_id = 70900388, pos = { x = -3590.508, y = 116.226, z = -946.711 }, rot = { x = 0.000, y = 67.340, z = 0.000 }, level = 30, area_id = 17 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 209001, shape = RegionShape.SPHERE, radius = 60, pos = { x = -3550.146, y = 116.858, z = -965.372 }, area_id = 17 },
+	{ config_id = 209023, shape = RegionShape.SPHERE, radius = 10, pos = { x = -3599.384, y = 120.131, z = -870.356 }, area_id = 17 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1209001, name = "ENTER_REGION_209001", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_209001", action = "action_EVENT_ENTER_REGION_209001", trigger_count = 0 },
+	{ config_id = 1209002, name = "QUEST_START_209002", event = EventType.EVENT_QUEST_START, source = "7215006", condition = "", action = "action_EVENT_QUEST_START_209002", trigger_count = 0 },
+	{ config_id = 1209007, name = "GADGET_STATE_CHANGE_209007", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_209007", action = "action_EVENT_GADGET_STATE_CHANGE_209007" },
+	{ config_id = 1209008, name = "VARIABLE_CHANGE_209008", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_209008", action = "action_EVENT_VARIABLE_CHANGE_209008" },
+	{ config_id = 1209009, name = "VARIABLE_CHANGE_209009", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_209009", action = "action_EVENT_VARIABLE_CHANGE_209009" },
+	{ config_id = 1209010, name = "GADGET_STATE_CHANGE_209010", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_209010", action = "action_EVENT_GADGET_STATE_CHANGE_209010" },
+	{ config_id = 1209011, name = "GADGET_STATE_CHANGE_209011", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_209011", action = "action_EVENT_GADGET_STATE_CHANGE_209011" },
+	{ config_id = 1209012, name = "GADGET_STATE_CHANGE_209012", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_209012", action = "action_EVENT_GADGET_STATE_CHANGE_209012" },
+	{ config_id = 1209023, name = "ENTER_REGION_209023", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_209023", action = "action_EVENT_ENTER_REGION_209023", trigger_count = 0 },
+	{ config_id = 1209024, name = "QUEST_START_209024", event = EventType.EVENT_QUEST_START, source = "7215006", condition = "", action = "action_EVENT_QUEST_START_209024", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Chest_Open", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	io_type = 1,
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suite_disk = {
+	[1] = {
+		gadgets = {
+		},
+		monsters = {
+		},
+		regions = { 209001, 209023 },
+		triggers = { "ENTER_REGION_209001", "QUEST_START_209002", "ENTER_REGION_209023" },
+		npcs = { },
+		variables = {
+			{ config_id = 1, name = "Chest_Open", value = 0, no_refresh = true }
+		}
+	},
+	[2] = {
+		gadgets = {
+			{ config_id = 209003, state = 0 },
+			{ config_id = 209004, state = 0 },
+			{ config_id = 209005, state = 0 },
+			{ config_id = 209006, state = 0 },
+			{ config_id = 209013, state = 0 },
+			{ config_id = 209014, state = 0 },
+			{ config_id = 209015, state = 0 }
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_209007", "VARIABLE_CHANGE_209009", "GADGET_STATE_CHANGE_209010", "GADGET_STATE_CHANGE_209011", "GADGET_STATE_CHANGE_209012" },
+		npcs = { },
+		variables = {
+			{ config_id = 1, name = "Chest_Open", value = 0, no_refresh = true }
+		}
+	},
+	[3] = {
+		gadgets = {
+		},
+		monsters = {
+			{ config_id = 209016 },
+			{ config_id = 209017 },
+			{ config_id = 209018 },
+			{ config_id = 209019 },
+			{ config_id = 209020 }
+		},
+		regions = { },
+		triggers = { },
+		npcs = { },
+		variables = {
+			{ config_id = 1, name = "Chest_Open", value = 0, no_refresh = true }
+		}
+	},
+	[4] = {
+		gadgets = {
+		},
+		monsters = {
+			{ config_id = 209021 },
+			{ config_id = 209022 }
+		},
+		regions = { },
+		triggers = { },
+		npcs = { },
+		variables = {
+			{ config_id = 1, name = "Chest_Open", value = 0, no_refresh = true }
+		}
+	},
+	[5] = {
+		gadgets = {
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { "QUEST_START_209024" },
+		npcs = { },
+		variables = {
+			{ config_id = 1, name = "Chest_Open", value = 0, no_refresh = true }
+		}
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_209001(context, evt)
+	if evt.param1 ~= 209001 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_209001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7215005"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_209001(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7215005") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_209001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToFlowSuite
-  L3_2 = A0_2
-  L4_2 = 133210209
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_209002(context, evt)
+		-- 将指定flowGroup的进度和要素属性都改为目标suite（缺的创建，多的移除）
+	  ScriptLib.GoToFlowSuite(context, 133210209, 2)
+	
+	return 0
 end
-action_EVENT_QUEST_START_209002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 209003 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.ChestOpened
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_209007(context, evt)
+	if 209003 ~= evt.param2 or GadgetState.ChestOpened ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_209007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Chest_Open"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_209007(context, evt)
+	-- 将本组内变量名为 "Chest_Open" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "Chest_Open", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_209007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Chest_Open"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 133210210
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_209008(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"Chest_Open"为1
+	if ScriptLib.GetGroupVariableValue(context, "Chest_Open") ~= 1 then
+			return false
+	end
+	
+	-- 判断指定group组剩余怪物数量是否是1 
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 133210210) ~= 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_209008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 210001
-  L5_2 = 133210210
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 32100122
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7215006"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Chest_Open"
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_209008(context, evt)
+	-- 通知groupid为133210210中,configid为：210001的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 210001, 133210210) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 调用提示id为 32100122 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 32100122) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7215006") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "Chest_Open" 的变量设置为 2
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "Chest_Open", 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_209008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Chest_Open"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_209009(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"Chest_Open"为1
+	if ScriptLib.GetGroupVariableValue(context, "Chest_Open") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_209009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 32100121
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7215006"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Chest_Open"
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToFlowSuite
-  L3_2 = A0_2
-  L4_2 = 133210209
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_209009(context, evt)
+	-- 调用提示id为 32100121 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 32100121) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7215006") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "Chest_Open" 的变量设置为 2
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "Chest_Open", 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+		-- 将指定flowGroup的进度和要素属性都改为目标suite（缺的创建，多的移除）
+	  ScriptLib.GoToFlowSuite(context, 133210209, 5)
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_209009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 209004 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.ChestOpened
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_209010(context, evt)
+	if 209004 ~= evt.param2 or GadgetState.ChestOpened ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_209010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 32100124
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraFlowSuite
-  L3_2 = A0_2
-  L4_2 = 133210209
-  L5_2 = 3
-  L6_2 = FlowSuiteOperatePolicy
-  L6_2 = L6_2.COMPLETE
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_209010(context, evt)
+	-- 调用提示id为 32100124 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 32100124) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+		-- 添加某个flowSuite里的要素，如果当前与目标suite属性不一样，会纠正为目标属性，同时触发相应Trigger
+	  ScriptLib.AddExtraFlowSuite(context, 133210209, 3, FlowSuiteOperatePolicy.COMPLETE)
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_209010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 209005 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.ChestOpened
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_209011(context, evt)
+	if 209005 ~= evt.param2 or GadgetState.ChestOpened ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_209011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 32100125
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraFlowSuite
-  L3_2 = A0_2
-  L4_2 = 133210209
-  L5_2 = 4
-  L6_2 = FlowSuiteOperatePolicy
-  L6_2 = L6_2.COMPLETE
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_209011(context, evt)
+	-- 调用提示id为 32100125 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 32100125) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+		-- 添加某个flowSuite里的要素，如果当前与目标suite属性不一样，会纠正为目标属性，同时触发相应Trigger
+	  ScriptLib.AddExtraFlowSuite(context, 133210209, 4, FlowSuiteOperatePolicy.COMPLETE)
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_209011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 209006 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.ChestOpened
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_209012(context, evt)
+	if 209006 ~= evt.param2 or GadgetState.ChestOpened ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_209012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 32100126
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_209012(context, evt)
+	-- 调用提示id为 32100126 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 32100126) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_209012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 209023 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_209023(context, evt)
+	if evt.param1 ~= 209023 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_209023 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7215005"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_209023(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7215005") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_209023 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7215006"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_209024(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7215006") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_209024 = L1_1

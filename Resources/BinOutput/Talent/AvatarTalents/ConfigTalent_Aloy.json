@@ -37,12 +37,6 @@
       "paramDelta": "%1"
     }
   ],
-  "Aloy_ProudSkill_NonCombat_1": [
-    {
-      "$type": "AddAbility",
-      "abilityName": "Avatar_Aloy_Talent_Stealth_Animal_BeastAndBird"
-    }
-  ],
   "Aloy_SkillUpgrade_1": [
     {
       "$type": "ModifyAbility",
@@ -167,6 +161,12 @@
       "abilityName": "Avatar_AloyGadgetSkill_ElementalBurst",
       "paramSpecial": "ElementalBurst_Damage",
       "paramDelta": "%1"
+    }
+  ],
+  "Aloy_ProudSkill_NonCombat_1": [
+    {
+      "$type": "AddAbility",
+      "abilityName": "Avatar_Aloy_Talent_Stealth_Animal_BeastAndBird"
     }
   ]
 }

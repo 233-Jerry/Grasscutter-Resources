@@ -1,1489 +1,607 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1
-L0_1 = {}
-L0_1.group_id = 220019002
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 2001
-L2_1.monster_id = 20010601
-L3_1 = {}
-L3_1.x = 3.089
-L3_1.y = 13.529
-L3_1.z = 40.959
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 32.624
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L4_1 = 1007
-L3_1[1] = L4_1
-L2_1.affix = L3_1
-L2_1.isElite = true
-L3_1 = {}
-L3_1.config_id = 2002
-L3_1.monster_id = 20010701
-L4_1 = {}
-L4_1.x = 11.473
-L4_1.y = 13.576
-L4_1.z = 41.634
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 353.593
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L5_1 = 1007
-L4_1[1] = L5_1
-L3_1.affix = L4_1
-L3_1.isElite = true
-L4_1 = {}
-L4_1.config_id = 2003
-L4_1.monster_id = 20010901
-L5_1 = {}
-L5_1.x = 18.111
-L5_1.y = 13.518
-L5_1.z = 37.991
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 339.936
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L6_1 = 1007
-L5_1[1] = L6_1
-L4_1.affix = L5_1
-L4_1.isElite = true
-L5_1 = {}
-L5_1.config_id = 2004
-L5_1.monster_id = 22010301
-L6_1 = {}
-L6_1.x = 28.237
-L6_1.y = 13.452
-L6_1.z = 48.351
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 269.972
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L7_1 = 1008
-L8_1 = 1011
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.affix = L6_1
-L5_1.isElite = true
-L5_1.special_name_id = 10003
-L6_1 = {}
-L6_1.config_id = 2005
-L6_1.monster_id = 20010601
-L7_1 = {}
-L7_1.x = 13.728
-L7_1.y = 13.25
-L7_1.z = 48.419
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 2006
-L7_1.monster_id = 20010701
-L8_1 = {}
-L8_1.x = 9.01
-L8_1.y = 13.25
-L8_1.z = 48.143
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 2007
-L8_1.monster_id = 20010801
-L9_1 = {}
-L9_1.x = 22.954
-L9_1.y = 13.059
-L9_1.z = 39.867
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = {}
-L9_1.config_id = 2008
-L9_1.monster_id = 20010801
-L10_1 = {}
-L10_1.x = 18.323
-L10_1.y = 13.059
-L10_1.z = 39.996
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L10_1 = {}
-L10_1.config_id = 2009
-L10_1.monster_id = 20010801
-L11_1 = {}
-L11_1.x = 18.713
-L11_1.y = 13.059
-L11_1.z = 42.612
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L11_1 = {}
-L11_1.config_id = 2010
-L11_1.monster_id = 20010501
-L12_1 = {}
-L12_1.x = 5.249
-L12_1.y = 13.059
-L12_1.z = 41.135
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L12_1 = {}
-L12_1.config_id = 2011
-L12_1.monster_id = 20010501
-L13_1 = {}
-L13_1.x = 1.212
-L13_1.y = 13.059
-L13_1.z = 41.198
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 0.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 1
-L13_1 = {}
-L13_1.config_id = 2012
-L13_1.monster_id = 20010501
-L14_1 = {}
-L14_1.x = 4.987
-L14_1.y = 13.059
-L14_1.z = 43.358
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 0.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 2013
-L2_1.gadget_id = 70310001
-L3_1 = {}
-L3_1.x = 11.487
-L3_1.y = 13.35
-L3_1.z = 48.645
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 106.91
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 18
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 10.3
-L3_1 = {}
-L3_1.x = 11.5
-L3_1.y = 13.35
-L3_1.z = 49.119
-L2_1.pos = L3_1
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1000018
-L2_1.name = "ENTER_REGION_18"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_18"
-L2_1.action = "action_EVENT_ENTER_REGION_18"
-L2_1.forbid_guest = false
-L3_1 = {}
-L3_1.config_id = 1000019
-L3_1.name = "ANY_MONSTER_DIE_19"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_MONSTER_DIE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ANY_MONSTER_DIE_19"
-L3_1.action = "action_EVENT_ANY_MONSTER_DIE_19"
-L4_1 = {}
-L4_1.config_id = 1000020
-L4_1.name = "ANY_MONSTER_DIE_20"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ANY_MONSTER_DIE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ANY_MONSTER_DIE_20"
-L4_1.action = "action_EVENT_ANY_MONSTER_DIE_20"
-L5_1 = {}
-L5_1.config_id = 1000021
-L5_1.name = "ANY_MONSTER_DIE_21"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ANY_MONSTER_DIE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ANY_MONSTER_DIE_21"
-L5_1.action = "action_EVENT_ANY_MONSTER_DIE_21"
-L6_1 = {}
-L6_1.config_id = 1000022
-L6_1.name = "ANY_MONSTER_DIE_22"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_ANY_MONSTER_DIE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_ANY_MONSTER_DIE_22"
-L6_1.action = "action_EVENT_ANY_MONSTER_DIE_22"
-L7_1 = {}
-L7_1.config_id = 1000023
-L7_1.name = "ANY_MONSTER_DIE_23"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_ANY_MONSTER_DIE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_ANY_MONSTER_DIE_23"
-L7_1.action = "action_EVENT_ANY_MONSTER_DIE_23"
-L8_1 = {}
-L8_1.config_id = 1000024
-L8_1.name = "SPECIFIC_MONSTER_HP_CHANGE_24"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_SPECIFIC_MONSTER_HP_CHANGE
-L8_1.event = L9_1
-L8_1.source = "2004"
-L8_1.condition = "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_24"
-L8_1.action = "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_24"
-L9_1 = {}
-L9_1.config_id = 1000051
-L9_1.name = "SPECIFIC_MONSTER_HP_CHANGE_51"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_SPECIFIC_MONSTER_HP_CHANGE
-L9_1.event = L10_1
-L9_1.source = "2004"
-L9_1.condition = "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_51"
-L9_1.action = "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_51"
-L10_1 = {}
-L10_1.config_id = 1000057
-L10_1.name = "ANY_MONSTER_DIE_57"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_ANY_MONSTER_DIE
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_ANY_MONSTER_DIE_57"
-L10_1.action = "action_EVENT_ANY_MONSTER_DIE_57"
-L11_1 = {}
-L11_1.config_id = 1000058
-L11_1.name = "ANY_MONSTER_DIE_58"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_ANY_MONSTER_DIE
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_ANY_MONSTER_DIE_58"
-L11_1.action = "action_EVENT_ANY_MONSTER_DIE_58"
-L12_1 = {}
-L12_1.config_id = 1000059
-L12_1.name = "ANY_MONSTER_DIE_59"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_ANY_MONSTER_DIE
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = "condition_EVENT_ANY_MONSTER_DIE_59"
-L12_1.action = "action_EVENT_ANY_MONSTER_DIE_59"
-L13_1 = {}
-L13_1.config_id = 1000061
-L13_1.name = "VARIABLE_CHANGE_61"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_VARIABLE_CHANGE
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_VARIABLE_CHANGE_61"
-L13_1.action = "action_EVENT_VARIABLE_CHANGE_61"
-L14_1 = {}
-L14_1.config_id = 1000062
-L14_1.name = "VARIABLE_CHANGE_62"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_VARIABLE_CHANGE
-L14_1.event = L15_1
-L14_1.source = ""
-L14_1.condition = "condition_EVENT_VARIABLE_CHANGE_62"
-L14_1.action = "action_EVENT_VARIABLE_CHANGE_62"
-L15_1 = {}
-L15_1.config_id = 1000064
-L15_1.name = "ANY_MONSTER_DIE_64"
-L16_1 = EventType
-L16_1 = L16_1.EVENT_ANY_MONSTER_DIE
-L15_1.event = L16_1
-L15_1.source = ""
-L15_1.condition = "condition_EVENT_ANY_MONSTER_DIE_64"
-L15_1.action = "action_EVENT_ANY_MONSTER_DIE_64"
-L16_1 = {}
-L16_1.config_id = 1000065
-L16_1.name = "ANY_MONSTER_DIE_65"
-L17_1 = EventType
-L17_1 = L17_1.EVENT_ANY_MONSTER_DIE
-L16_1.event = L17_1
-L16_1.source = ""
-L16_1.condition = "condition_EVENT_ANY_MONSTER_DIE_65"
-L16_1.action = "action_EVENT_ANY_MONSTER_DIE_65"
-L17_1 = {}
-L17_1.config_id = 1000066
-L17_1.name = "ANY_MONSTER_DIE_66"
-L18_1 = EventType
-L18_1 = L18_1.EVENT_ANY_MONSTER_DIE
-L17_1.event = L18_1
-L17_1.source = ""
-L17_1.condition = "condition_EVENT_ANY_MONSTER_DIE_66"
-L17_1.action = "action_EVENT_ANY_MONSTER_DIE_66"
-L18_1 = {}
-L18_1.config_id = 1000067
-L18_1.name = "VARIABLE_CHANGE_67"
-L19_1 = EventType
-L19_1 = L19_1.EVENT_VARIABLE_CHANGE
-L18_1.event = L19_1
-L18_1.source = ""
-L18_1.condition = "condition_EVENT_VARIABLE_CHANGE_67"
-L18_1.action = "action_EVENT_VARIABLE_CHANGE_67"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-L1_1[14] = L15_1
-L1_1[15] = L16_1
-L1_1[16] = L17_1
-L1_1[17] = L18_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "Boss"
-L2_1.value = 0
-L2_1.no_refresh = false
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "Badass_Lighting"
-L3_1.value = 0
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "Badass_Ice"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 4
-L5_1.name = "Badass_Lighting2"
-L5_1.value = 0
-L5_1.no_refresh = false
-L6_1 = {}
-L6_1.configId = 5
-L6_1.name = "Badass_Ice2"
-L6_1.value = 0
-L6_1.no_refresh = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = 2007
-L5_1 = 2008
-L6_1 = 2009
-L7_1 = 2010
-L8_1 = 2011
-L9_1 = 2012
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 2013
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 18
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_18"
-L5_1 = "ANY_MONSTER_DIE_19"
-L6_1 = "ANY_MONSTER_DIE_20"
-L7_1 = "ANY_MONSTER_DIE_21"
-L8_1 = "ANY_MONSTER_DIE_22"
-L9_1 = "ANY_MONSTER_DIE_23"
-L10_1 = "SPECIFIC_MONSTER_HP_CHANGE_24"
-L11_1 = "SPECIFIC_MONSTER_HP_CHANGE_51"
-L12_1 = "ANY_MONSTER_DIE_57"
-L13_1 = "ANY_MONSTER_DIE_58"
-L14_1 = "ANY_MONSTER_DIE_59"
-L15_1 = "VARIABLE_CHANGE_61"
-L16_1 = "VARIABLE_CHANGE_62"
-L17_1 = "ANY_MONSTER_DIE_64"
-L18_1 = "ANY_MONSTER_DIE_65"
-L19_1 = "ANY_MONSTER_DIE_66"
-L20_1 = "VARIABLE_CHANGE_67"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L3_1[13] = L16_1
-L3_1[14] = L17_1
-L3_1[15] = L18_1
-L3_1[16] = L19_1
-L3_1[17] = L20_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 18 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220019002
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 2001, monster_id = 20010601, pos = { x = 3.089, y = 13.529, z = 40.959 }, rot = { x = 0.000, y = 32.624, z = 0.000 }, level = 1, affix = { 1007 }, isElite = true },
+	{ config_id = 2002, monster_id = 20010701, pos = { x = 11.473, y = 13.576, z = 41.634 }, rot = { x = 0.000, y = 353.593, z = 0.000 }, level = 1, affix = { 1007 }, isElite = true },
+	{ config_id = 2003, monster_id = 20010901, pos = { x = 18.111, y = 13.518, z = 37.991 }, rot = { x = 0.000, y = 339.936, z = 0.000 }, level = 1, affix = { 1007 }, isElite = true },
+	{ config_id = 2004, monster_id = 22010301, pos = { x = 28.237, y = 13.452, z = 48.351 }, rot = { x = 0.000, y = 269.972, z = 0.000 }, level = 1, affix = { 1008, 1011 }, isElite = true, special_name_id = 10003 },
+	{ config_id = 2005, monster_id = 20010601, pos = { x = 13.728, y = 13.250, z = 48.419 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2006, monster_id = 20010701, pos = { x = 9.010, y = 13.250, z = 48.143 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2007, monster_id = 20010801, pos = { x = 22.954, y = 13.059, z = 39.867 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2008, monster_id = 20010801, pos = { x = 18.323, y = 13.059, z = 39.996 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2009, monster_id = 20010801, pos = { x = 18.713, y = 13.059, z = 42.612 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2010, monster_id = 20010501, pos = { x = 5.249, y = 13.059, z = 41.135 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2011, monster_id = 20010501, pos = { x = 1.212, y = 13.059, z = 41.198 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 2012, monster_id = 20010501, pos = { x = 4.987, y = 13.059, z = 43.358 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 2013, gadget_id = 70310001, pos = { x = 11.487, y = 13.350, z = 48.645 }, rot = { x = 0.000, y = 106.910, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 18, shape = RegionShape.SPHERE, radius = 10.3, pos = { x = 11.500, y = 13.350, z = 49.119 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000018, name = "ENTER_REGION_18", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_18", action = "action_EVENT_ENTER_REGION_18", forbid_guest = false },
+	{ config_id = 1000019, name = "ANY_MONSTER_DIE_19", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_19", action = "action_EVENT_ANY_MONSTER_DIE_19" },
+	{ config_id = 1000020, name = "ANY_MONSTER_DIE_20", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_20", action = "action_EVENT_ANY_MONSTER_DIE_20" },
+	{ config_id = 1000021, name = "ANY_MONSTER_DIE_21", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_21", action = "action_EVENT_ANY_MONSTER_DIE_21" },
+	{ config_id = 1000022, name = "ANY_MONSTER_DIE_22", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_22", action = "action_EVENT_ANY_MONSTER_DIE_22" },
+	{ config_id = 1000023, name = "ANY_MONSTER_DIE_23", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_23", action = "action_EVENT_ANY_MONSTER_DIE_23" },
+	{ config_id = 1000024, name = "SPECIFIC_MONSTER_HP_CHANGE_24", event = EventType.EVENT_SPECIFIC_MONSTER_HP_CHANGE, source = "2004", condition = "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_24", action = "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_24" },
+	{ config_id = 1000051, name = "SPECIFIC_MONSTER_HP_CHANGE_51", event = EventType.EVENT_SPECIFIC_MONSTER_HP_CHANGE, source = "2004", condition = "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_51", action = "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_51" },
+	{ config_id = 1000057, name = "ANY_MONSTER_DIE_57", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_57", action = "action_EVENT_ANY_MONSTER_DIE_57" },
+	{ config_id = 1000058, name = "ANY_MONSTER_DIE_58", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_58", action = "action_EVENT_ANY_MONSTER_DIE_58" },
+	{ config_id = 1000059, name = "ANY_MONSTER_DIE_59", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_59", action = "action_EVENT_ANY_MONSTER_DIE_59" },
+	{ config_id = 1000061, name = "VARIABLE_CHANGE_61", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_61", action = "action_EVENT_VARIABLE_CHANGE_61" },
+	{ config_id = 1000062, name = "VARIABLE_CHANGE_62", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_62", action = "action_EVENT_VARIABLE_CHANGE_62" },
+	{ config_id = 1000064, name = "ANY_MONSTER_DIE_64", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_64", action = "action_EVENT_ANY_MONSTER_DIE_64" },
+	{ config_id = 1000065, name = "ANY_MONSTER_DIE_65", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_65", action = "action_EVENT_ANY_MONSTER_DIE_65" },
+	{ config_id = 1000066, name = "ANY_MONSTER_DIE_66", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_66", action = "action_EVENT_ANY_MONSTER_DIE_66" },
+	{ config_id = 1000067, name = "VARIABLE_CHANGE_67", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_67", action = "action_EVENT_VARIABLE_CHANGE_67" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Boss", value = 0, no_refresh = false },
+	{ config_id = 2, name = "Badass_Lighting", value = 0, no_refresh = false },
+	{ config_id = 3, name = "Badass_Ice", value = 0, no_refresh = false },
+	{ config_id = 4, name = "Badass_Lighting2", value = 0, no_refresh = false },
+	{ config_id = 5, name = "Badass_Ice2", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 2007, 2008, 2009, 2010, 2011, 2012 },
+		gadgets = { 2013 },
+		regions = { 18 },
+		triggers = { "ENTER_REGION_18", "ANY_MONSTER_DIE_19", "ANY_MONSTER_DIE_20", "ANY_MONSTER_DIE_21", "ANY_MONSTER_DIE_22", "ANY_MONSTER_DIE_23", "SPECIFIC_MONSTER_HP_CHANGE_24", "SPECIFIC_MONSTER_HP_CHANGE_51", "ANY_MONSTER_DIE_57", "ANY_MONSTER_DIE_58", "ANY_MONSTER_DIE_59", "VARIABLE_CHANGE_61", "VARIABLE_CHANGE_62", "ANY_MONSTER_DIE_64", "ANY_MONSTER_DIE_65", "ANY_MONSTER_DIE_66", "VARIABLE_CHANGE_67" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_18(context, evt)
+	if evt.param1 ~= 18 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_18 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 67
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2007
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2008
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2009
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2010
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2011
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2012
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 74
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_18(context, evt)
+	-- 通知groupid为220019002中,configid为：67的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 67, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2007的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2007, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2008的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2008, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2009的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2009, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2010的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2010, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2011的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2011, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2012的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2012, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：74的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 74, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_18 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCount
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_19(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_19 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 220019005
-  L5_2 = 27
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonster
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 2004
-  L4_2.delay_time = 2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_monster"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2004
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 26
-  L2_2.y = 17
-  L2_2.z = 48
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 2
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_19(context, evt)
+	-- 改变指定group组220019005中， configid为27的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 220019005, 27, GadgetState.GearStart) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 延迟2秒刷怪
+	if 0 ~= ScriptLib.CreateMonster(context, { config_id = 2004, delay_time = 2 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_monster")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2004的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2004, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（26，17，48），持续时间为2秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=26, y=17, z=48}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 2, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_19 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_20(context, evt)
+	if 2001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_20 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Boss"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_20(context, evt)
+	-- 针对当前group内变量名为 "Boss" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Boss", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_20 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2002 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_21(context, evt)
+	if 2002 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_21 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Boss"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_21(context, evt)
+	-- 针对当前group内变量名为 "Boss" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Boss", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_21 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2003 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_22(context, evt)
+	if 2003 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_22 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Boss"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_22(context, evt)
+	-- 针对当前group内变量名为 "Boss" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Boss", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_22 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_23(context, evt)
+	if 2004 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_23 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "DLK_Finish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 220019002
-  L4_2.suite = 2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_23(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "DLK_Finish") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 220019002, suite = 2 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_23 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.type
-  L3_2 = EventType
-  L3_2 = L3_2.EVENT_SPECIFIC_MONSTER_HP_CHANGE
-  if L2_2 == L3_2 then
-    L2_2 = A1_2.param3
-    if not (66 < L2_2) then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_24(context, evt)
+	--[[判断指定configid的怪物的血量小于%66时触发指定后续操作]]--
+	if evt.type ~= EventType.EVENT_SPECIFIC_MONSTER_HP_CHANGE or evt.param3 > 66 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_24 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonster
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 2005
-  L4_2.delay_time = 0
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_monster"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2005
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_24(context, evt)
+	-- 延迟0秒刷怪
+	if 0 ~= ScriptLib.CreateMonster(context, { config_id = 2005, delay_time = 0 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_monster")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2005的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2005, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_24 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.type
-  L3_2 = EventType
-  L3_2 = L3_2.EVENT_SPECIFIC_MONSTER_HP_CHANGE
-  if L2_2 == L3_2 then
-    L2_2 = A1_2.param3
-    if not (33 < L2_2) then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_51(context, evt)
+	--[[判断指定configid的怪物的血量小于%33时触发指定后续操作]]--
+	if evt.type ~= EventType.EVENT_SPECIFIC_MONSTER_HP_CHANGE or evt.param3 > 33 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_51 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonster
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 2006
-  L4_2.delay_time = 0
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_monster"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2006
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_51(context, evt)
+	-- 延迟0秒刷怪
+	if 0 ~= ScriptLib.CreateMonster(context, { config_id = 2006, delay_time = 0 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_monster")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2006的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2006, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_51 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2010 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_57(context, evt)
+	if 2010 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_57 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Lighting"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Lighting2"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_57(context, evt)
+	-- 针对当前group内变量名为 "Badass_Lighting" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Lighting", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "Badass_Lighting2" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Lighting2", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_57 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2011 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_58(context, evt)
+	if 2011 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_58 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Lighting"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Lighting2"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_58(context, evt)
+	-- 针对当前group内变量名为 "Badass_Lighting" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Lighting", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "Badass_Lighting2" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Lighting2", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_58 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2012 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_59(context, evt)
+	if 2012 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_59 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Lighting"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Lighting2"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_59(context, evt)
+	-- 针对当前group内变量名为 "Badass_Lighting" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Lighting", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "Badass_Lighting2" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Lighting2", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_59 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Lighting"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_61(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"Badass_Lighting"为2
+	if ScriptLib.GetGroupVariableValue(context, "Badass_Lighting") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_61 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonster
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 2001
-  L4_2.delay_time = 0
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_monster"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2001
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_61(context, evt)
+	-- 延迟0秒刷怪
+	if 0 ~= ScriptLib.CreateMonster(context, { config_id = 2001, delay_time = 0 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_monster")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2001的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2001, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_61 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Lighting2"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 6 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_62(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"Badass_Lighting2"为6
+	if ScriptLib.GetGroupVariableValue(context, "Badass_Lighting2") ~= 6 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_62 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonster
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 2002
-  L4_2.delay_time = 3
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_monster"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2002
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_62(context, evt)
+	-- 延迟3秒刷怪
+	if 0 ~= ScriptLib.CreateMonster(context, { config_id = 2002, delay_time = 3 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_monster")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2002的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2002, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_62 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2007 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_64(context, evt)
+	if 2007 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_64 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Ice"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Lighting2"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_64(context, evt)
+	-- 针对当前group内变量名为 "Badass_Ice" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Ice", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "Badass_Lighting2" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Lighting2", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_64 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2008 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_65(context, evt)
+	if 2008 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_65 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Ice"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Lighting2"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_65(context, evt)
+	-- 针对当前group内变量名为 "Badass_Ice" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Ice", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "Badass_Lighting2" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Lighting2", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_65 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2009 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_66(context, evt)
+	if 2009 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_66 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Ice"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Lighting2"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_66(context, evt)
+	-- 针对当前group内变量名为 "Badass_Ice" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Ice", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "Badass_Lighting2" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Badass_Lighting2", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_66 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Badass_Ice"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_67(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"Badass_Ice"为2
+	if ScriptLib.GetGroupVariableValue(context, "Badass_Ice") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_67 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonster
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 2003
-  L4_2.delay_time = 0
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_monster"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 2003
-  L5_2 = 220019002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_67(context, evt)
+	-- 延迟0秒刷怪
+	if 0 ~= ScriptLib.CreateMonster(context, { config_id = 2003, delay_time = 0 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_monster")
+	  return -1
+	end
+	
+	-- 通知groupid为220019002中,configid为：2003的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 2003, 220019002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_67 = L1_1

@@ -1,54 +1,92 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1
-L0_1 = {}
-L0_1.group_id = 166001687
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 687049
-L2_1.gadget_id = 70800189
-L3_1 = {}
-L3_1.x = 984.516
-L3_1.y = 1017.689
-L3_1.z = 854.579
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = GadgetState
-L3_1 = L3_1.GearStart
-L2_1.state = L3_1
-L2_1.area_id = 300
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 687049
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 166001687
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 687001, gadget_id = 70350453, pos = { x = 984.516, y = 1017.689, z = 854.580 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 300 },
+	{ config_id = 687049, gadget_id = 70800189, pos = { x = 984.516, y = 1017.689, z = 854.579 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, area_id = 300 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 166001150 和166001533切换至suite2
+	{ config_id = 1687002, name = "GROUP_LOAD_687002", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_687002", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 687001, 687049 },
+		regions = { },
+		triggers = { "GROUP_LOAD_687002" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_687002(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 166001150, suite = 2 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 166001533, suite = 2 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
+end

@@ -1,274 +1,136 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 240001003
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 7
-L2_1.monster_id = 21010301
-L3_1 = {}
-L3_1.x = 58.906
-L3_1.y = 42.017
-L3_1.z = 123.707
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 287.737
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 8
-L3_1.monster_id = 21010301
-L4_1 = {}
-L4_1.x = 58.996
-L4_1.y = 42.017
-L4_1.z = 121.315
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 314.832
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 9
-L4_1.monster_id = 21010301
-L5_1 = {}
-L5_1.x = 1.09
-L5_1.y = 47.0
-L5_1.z = 62.156
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 10
-L5_1.monster_id = 21010301
-L6_1 = {}
-L6_1.x = -1.806
-L6_1.y = 47.0
-L6_1.z = 60.207
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 33
-L6_1.monster_id = 21010201
-L7_1 = {}
-L7_1.x = 58.136
-L7_1.y = 42.016
-L7_1.z = 121.864
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 263.441
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 34
-L7_1.monster_id = 21010601
-L8_1 = {}
-L8_1.x = 58.493
-L8_1.y = 42.017
-L8_1.z = 120.308
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 273.689
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 36
-L8_1.monster_id = 21010201
-L9_1 = {}
-L9_1.x = 2.167
-L9_1.y = 47.0
-L9_1.z = 60.677
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = {}
-L9_1.config_id = 37
-L9_1.monster_id = 21010601
-L10_1 = {}
-L10_1.x = 3.778
-L10_1.y = 47.016
-L10_1.z = 59.054
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1000002
-L2_1.name = "ANY_MONSTER_DIE_2"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_MONSTER_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_MONSTER_DIE_2"
-L2_1.action = "action_EVENT_ANY_MONSTER_DIE_2"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 7
-L6_1 = 8
-L7_1 = 9
-L8_1 = 10
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ANY_MONSTER_DIE_2"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 7
-L7_1 = 8
-L8_1 = 9
-L9_1 = 10
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "ANY_MONSTER_DIE_2"
-L5_1[1] = L6_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L7_1 = 33
-L8_1 = 34
-L9_1 = 36
-L10_1 = 37
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "ANY_MONSTER_DIE_2"
-L6_1[1] = L7_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCount
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 240001003
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 7, monster_id = 21010301, pos = { x = 58.906, y = 42.017, z = 123.707 }, rot = { x = 0.000, y = 287.737, z = 0.000 }, level = 1 },
+	{ config_id = 8, monster_id = 21010301, pos = { x = 58.996, y = 42.017, z = 121.315 }, rot = { x = 0.000, y = 314.832, z = 0.000 }, level = 1 },
+	{ config_id = 9, monster_id = 21010301, pos = { x = 1.090, y = 47.000, z = 62.156 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 10, monster_id = 21010301, pos = { x = -1.806, y = 47.000, z = 60.207 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 33, monster_id = 21010201, pos = { x = 58.136, y = 42.016, z = 121.864 }, rot = { x = 0.000, y = 263.441, z = 0.000 }, level = 1 },
+	{ config_id = 34, monster_id = 21010601, pos = { x = 58.493, y = 42.017, z = 120.308 }, rot = { x = 0.000, y = 273.689, z = 0.000 }, level = 1 },
+	{ config_id = 36, monster_id = 21010201, pos = { x = 2.167, y = 47.000, z = 60.677 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 37, monster_id = 21010601, pos = { x = 3.778, y = 47.016, z = 59.054 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000002, name = "ANY_MONSTER_DIE_2", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_2", action = "action_EVENT_ANY_MONSTER_DIE_2" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { 7, 8, 9, 10 },
+		gadgets = { },
+		regions = { },
+		triggers = { "ANY_MONSTER_DIE_2" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = suite_3,
+		monsters = { 7, 8, 9, 10 },
+		gadgets = { },
+		regions = { },
+		triggers = { "ANY_MONSTER_DIE_2" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = suite_4,
+		monsters = { 33, 34, 36, 37 },
+		gadgets = { },
+		regions = { },
+		triggers = { "ANY_MONSTER_DIE_2" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_2(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_2 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 240001004
-  L4_2.suite = 2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 7
-  L2_2.y = 42
-  L2_2.z = 96
-  L3_2 = ScriptLib
-  L3_2 = L3_2.ScenePlaySound
-  L4_2 = A0_2
-  L5_2 = {}
-  L5_2.play_pos = L2_2
-  L5_2.sound_name = "LevelHornSound001"
-  L5_2.play_type = 1
-  L5_2.is_broadcast = false
-  L3_2 = L3_2(L4_2, L5_2)
-  if 0 ~= L3_2 then
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_2(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 240001004, suite = 2 }) then
+			return -1
+		end
+	
+	
+	-- play_type含义：1·代表开始播放； 2·代表停止播放
+	-- 在指定位置播放或停止音效资源
+		local pos = {x=7, y=42, z=96}
+	    if 0 ~= ScriptLib.ScenePlaySound(context, {play_pos = pos, sound_name = "LevelHornSound001", play_type= 1, is_broadcast = false }) then
+					return -1
+		end 
+	
+	return 0
+	
 end
-action_EVENT_ANY_MONSTER_DIE_2 = L1_1

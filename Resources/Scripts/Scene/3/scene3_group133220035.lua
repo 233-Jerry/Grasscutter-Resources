@@ -1,124 +1,93 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133220035
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 35001
-L3_1.gadget_id = 70360001
-L4_1 = {}
-L4_1.x = -3404.605
-L4_1.y = 200.073
-L4_1.z = -4240.874
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 354.143
-L4_1.y = 249.468
-L4_1.z = 322.228
-L3_1.rot = L4_1
-L3_1.level = 19
-L3_1.isOneoff = true
-L3_1.persistent = true
-L3_1.area_id = 11
-L4_1 = {}
-L4_1.config_id = 35002
-L4_1.gadget_id = 70211111
-L5_1 = {}
-L5_1.x = -3404.699
-L5_1.y = 199.54
-L5_1.z = -4241.351
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 323.284
-L5_1.y = 148.633
-L5_1.z = 11.208
-L4_1.rot = L5_1
-L4_1.level = 26
-L4_1.drop_tag = "\232\167\163\232\176\156\228\184\173\231\186\167\231\168\187\229\166\187"
-L4_1.showcutscene = true
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.name = "chest"
-L5_1.exp = 1
-L4_1.explore = L5_1
-L4_1.area_id = 11
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1035003
-L3_1.name = "GADGET_CREATE_35003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_CREATE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_CREATE_35003"
-L3_1.action = "action_EVENT_GADGET_CREATE_35003"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1035004
-L4_1.name = "SELECT_OPTION_35004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SELECT_OPTION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SELECT_OPTION_35004"
-L4_1.action = "action_EVENT_SELECT_OPTION_35004"
-L5_1 = {}
-L5_1.config_id = 1035005
-L5_1.name = "GADGET_STATE_CHANGE_35005"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GADGET_STATE_CHANGE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_35005"
-L5_1.action = "action_EVENT_GADGET_STATE_CHANGE_35005"
-L5_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 2
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133220035
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 35001, gadget_id = 70360001, pos = { x = -3404.605, y = 200.073, z = -4240.874 }, rot = { x = 354.143, y = 249.468, z = 322.228 }, level = 19, isOneoff = true, persistent = true, area_id = 11 },
+		{ config_id = 35002, gadget_id = 70211111, pos = { x = -3404.699, y = 199.540, z = -4241.351 }, rot = { x = 323.284, y = 148.633, z = 11.208 }, level = 26, drop_tag = "解谜中级稻妻", showcutscene = true, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 11 }
+	},
+	triggers = {
+		{ config_id = 1035003, name = "GADGET_CREATE_35003", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_35003", action = "action_EVENT_GADGET_CREATE_35003", trigger_count = 0 },
+		{ config_id = 1035004, name = "SELECT_OPTION_35004", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_35004", action = "action_EVENT_SELECT_OPTION_35004" },
+		{ config_id = 1035005, name = "GADGET_STATE_CHANGE_35005", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_35005", action = "action_EVENT_GADGET_STATE_CHANGE_35005", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

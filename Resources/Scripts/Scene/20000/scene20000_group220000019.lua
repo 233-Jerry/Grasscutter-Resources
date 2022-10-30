@@ -1,603 +1,203 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1
-L0_1 = {}
-L0_1.group_id = 220000019
-L1_1 = {}
-L1_1.gadget_id_1 = 118
-L1_1.gadget_id_2 = 119
-L1_1.gadget_id_3 = 120
-L1_1.gadget_id_4 = 121
-L1_1.gadget_id_5 = 122
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 118
-L3_1.gadget_id = 70900207
-L4_1 = {}
-L4_1.x = 188.12
-L4_1.y = 0.573
-L4_1.z = 46.994
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 240.985
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 119
-L4_1.gadget_id = 70900207
-L5_1 = {}
-L5_1.x = 192.278
-L5_1.y = 0.61
-L5_1.z = 44.452
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 328.79
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 120
-L5_1.gadget_id = 70900207
-L6_1 = {}
-L6_1.x = 196.118
-L6_1.y = 0.598
-L6_1.z = 42.574
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 301.372
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 121
-L6_1.gadget_id = 70900207
-L7_1 = {}
-L7_1.x = 199.894
-L7_1.y = 0.58
-L7_1.z = 40.925
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 204.239
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 122
-L7_1.gadget_id = 70900207
-L8_1 = {}
-L8_1.x = 201.772
-L8_1.y = 0.551
-L8_1.z = 44.581
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 327.318
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 123
-L8_1.gadget_id = 70380003
-L9_1 = {}
-L9_1.x = 188.256
-L9_1.y = -1.516
-L9_1.z = 46.985
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.route_id = 20000012
-L8_1.start_route = false
-L9_1 = {}
-L9_1.config_id = 124
-L9_1.gadget_id = 70380003
-L10_1 = {}
-L10_1.x = 192.095
-L10_1.y = -1.521
-L10_1.z = 44.214
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.route_id = 20000013
-L9_1.start_route = false
-L10_1 = {}
-L10_1.config_id = 125
-L10_1.gadget_id = 70380003
-L11_1 = {}
-L11_1.x = 195.916
-L11_1.y = -1.494
-L11_1.z = 42.392
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L10_1.route_id = 20000014
-L10_1.start_route = false
-L11_1 = {}
-L11_1.config_id = 126
-L11_1.gadget_id = 70380003
-L12_1 = {}
-L12_1.x = 199.876
-L12_1.y = -1.502
-L12_1.z = 40.865
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L11_1.route_id = 20000015
-L11_1.start_route = false
-L12_1 = {}
-L12_1.config_id = 127
-L12_1.gadget_id = 70380003
-L13_1 = {}
-L13_1.x = 202.128
-L13_1.y = -1.421
-L13_1.z = 44.236
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 0.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 1
-L12_1.route_id = 20000016
-L12_1.start_route = false
-L13_1 = {}
-L13_1.config_id = 132
-L13_1.gadget_id = 70510009
-L14_1 = {}
-L14_1.x = 108.756
-L14_1.y = 0.5
-L14_1.z = 64.307
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 272.23
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L14_1 = {}
-L14_1.config_id = 133
-L14_1.gadget_id = 70510009
-L15_1 = {}
-L15_1.x = 106.86
-L15_1.y = 0.5
-L15_1.z = 65.912
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 48.179
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 1
-L15_1 = {}
-L15_1.config_id = 134
-L15_1.gadget_id = 70510009
-L16_1 = {}
-L16_1.x = 104.632
-L16_1.y = 0.5
-L16_1.z = 67.467
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 94.809
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 1
-L16_1 = {}
-L16_1.config_id = 135
-L16_1.gadget_id = 70510009
-L17_1 = {}
-L17_1.x = 105.345
-L17_1.y = 0.5
-L17_1.z = 65.575
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 66.433
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 1
-L17_1 = {}
-L17_1.config_id = 136
-L17_1.gadget_id = 70510009
-L18_1 = {}
-L18_1.x = 103.009
-L18_1.y = 0.5
-L18_1.z = 68.924
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 55.099
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 1
-L18_1 = {}
-L18_1.config_id = 137
-L18_1.gadget_id = 70510009
-L19_1 = {}
-L19_1.x = 100.697
-L19_1.y = 0.5
-L19_1.z = 70.31
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 53.943
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.level = 1
-L19_1 = {}
-L19_1.config_id = 138
-L19_1.gadget_id = 70510009
-L20_1 = {}
-L20_1.x = 103.1
-L20_1.y = 0.5
-L20_1.z = 67.16
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 270.424
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.level = 1
-L20_1 = {}
-L20_1.config_id = 139
-L20_1.gadget_id = 70510009
-L21_1 = {}
-L21_1.x = 106.191
-L21_1.y = 0.5
-L21_1.z = 68.207
-L20_1.pos = L21_1
-L21_1 = {}
-L21_1.x = 0.0
-L21_1.y = 259.872
-L21_1.z = 0.0
-L20_1.rot = L21_1
-L20_1.level = 1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-L2_1[13] = L15_1
-L2_1[14] = L16_1
-L2_1[15] = L17_1
-L2_1[16] = L18_1
-L2_1[17] = L19_1
-L2_1[18] = L20_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1000070
-L3_1.name = "CLIENT_EXECUTE_70"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_CLIENT_EXECUTE
-L3_1.event = L4_1
-L3_1.source = "ElectricPile"
-L3_1.condition = "condition_EVENT_CLIENT_EXECUTE_70"
-L3_1.action = "action_EVENT_CLIENT_EXECUTE_70"
-L4_1 = {}
-L4_1.config_id = 1000071
-L4_1.name = "CLIENT_EXECUTE_71"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_CLIENT_EXECUTE
-L4_1.event = L5_1
-L4_1.source = "ElectricPile"
-L4_1.condition = "condition_EVENT_CLIENT_EXECUTE_71"
-L4_1.action = "action_EVENT_CLIENT_EXECUTE_71"
-L5_1 = {}
-L5_1.config_id = 1000072
-L5_1.name = "CLIENT_EXECUTE_72"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_CLIENT_EXECUTE
-L5_1.event = L6_1
-L5_1.source = "ElectricPile"
-L5_1.condition = "condition_EVENT_CLIENT_EXECUTE_72"
-L5_1.action = "action_EVENT_CLIENT_EXECUTE_72"
-L6_1 = {}
-L6_1.config_id = 1000073
-L6_1.name = "CLIENT_EXECUTE_73"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_CLIENT_EXECUTE
-L6_1.event = L7_1
-L6_1.source = "ElectricPile"
-L6_1.condition = "condition_EVENT_CLIENT_EXECUTE_73"
-L6_1.action = "action_EVENT_CLIENT_EXECUTE_73"
-L7_1 = {}
-L7_1.config_id = 1000074
-L7_1.name = "CLIENT_EXECUTE_74"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_CLIENT_EXECUTE
-L7_1.event = L8_1
-L7_1.source = "ElectricPile"
-L7_1.condition = "condition_EVENT_CLIENT_EXECUTE_74"
-L7_1.action = "action_EVENT_CLIENT_EXECUTE_74"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = true
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 118
-L6_1 = 119
-L7_1 = 120
-L8_1 = 121
-L9_1 = 122
-L10_1 = 123
-L11_1 = 124
-L12_1 = 125
-L13_1 = 126
-L14_1 = 127
-L15_1 = 132
-L16_1 = 133
-L17_1 = 134
-L18_1 = 135
-L19_1 = 136
-L20_1 = 137
-L21_1 = 138
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L4_1[11] = L15_1
-L4_1[12] = L16_1
-L4_1[13] = L17_1
-L4_1[14] = L18_1
-L4_1[15] = L19_1
-L4_1[16] = L20_1
-L4_1[17] = L21_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "CLIENT_EXECUTE_70"
-L6_1 = "CLIENT_EXECUTE_71"
-L7_1 = "CLIENT_EXECUTE_72"
-L8_1 = "CLIENT_EXECUTE_73"
-L9_1 = "CLIENT_EXECUTE_74"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = L1_1.gadget_id_1
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetConfigId
-  L4_2 = A0_2
-  L5_2 = {}
-  L6_2 = A1_2.source_eid
-  L5_2.gadget_eid = L6_2
-  L3_2 = L3_2(L4_2, L5_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220000019
+}
+
+-- Trigger变量
+local defs = {
+	gadget_id_1 = 118,
+	gadget_id_2 = 119,
+	gadget_id_3 = 120,
+	gadget_id_4 = 121,
+	gadget_id_5 = 122
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 118, gadget_id = 70900207, pos = { x = 188.120, y = 0.573, z = 46.994 }, rot = { x = 0.000, y = 240.985, z = 0.000 }, level = 1 },
+	{ config_id = 119, gadget_id = 70900207, pos = { x = 192.278, y = 0.610, z = 44.452 }, rot = { x = 0.000, y = 328.790, z = 0.000 }, level = 1 },
+	{ config_id = 120, gadget_id = 70900207, pos = { x = 196.118, y = 0.598, z = 42.574 }, rot = { x = 0.000, y = 301.372, z = 0.000 }, level = 1 },
+	{ config_id = 121, gadget_id = 70900207, pos = { x = 199.894, y = 0.580, z = 40.925 }, rot = { x = 0.000, y = 204.239, z = 0.000 }, level = 1 },
+	{ config_id = 122, gadget_id = 70900207, pos = { x = 201.772, y = 0.551, z = 44.581 }, rot = { x = 0.000, y = 327.318, z = 0.000 }, level = 1 },
+	{ config_id = 123, gadget_id = 70380003, pos = { x = 188.256, y = -1.516, z = 46.985 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, route_id = 20000012, start_route = false },
+	{ config_id = 124, gadget_id = 70380003, pos = { x = 192.095, y = -1.521, z = 44.214 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, route_id = 20000013, start_route = false },
+	{ config_id = 125, gadget_id = 70380003, pos = { x = 195.916, y = -1.494, z = 42.392 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, route_id = 20000014, start_route = false },
+	{ config_id = 126, gadget_id = 70380003, pos = { x = 199.876, y = -1.502, z = 40.865 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, route_id = 20000015, start_route = false },
+	{ config_id = 127, gadget_id = 70380003, pos = { x = 202.128, y = -1.421, z = 44.236 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, route_id = 20000016, start_route = false },
+	{ config_id = 132, gadget_id = 70510009, pos = { x = 108.756, y = 0.500, z = 64.307 }, rot = { x = 0.000, y = 272.230, z = 0.000 }, level = 1 },
+	{ config_id = 133, gadget_id = 70510009, pos = { x = 106.860, y = 0.500, z = 65.912 }, rot = { x = 0.000, y = 48.179, z = 0.000 }, level = 1 },
+	{ config_id = 134, gadget_id = 70510009, pos = { x = 104.632, y = 0.500, z = 67.467 }, rot = { x = 0.000, y = 94.809, z = 0.000 }, level = 1 },
+	{ config_id = 135, gadget_id = 70510009, pos = { x = 105.345, y = 0.500, z = 65.575 }, rot = { x = 0.000, y = 66.433, z = 0.000 }, level = 1 },
+	{ config_id = 136, gadget_id = 70510009, pos = { x = 103.009, y = 0.500, z = 68.924 }, rot = { x = 0.000, y = 55.099, z = 0.000 }, level = 1 },
+	{ config_id = 137, gadget_id = 70510009, pos = { x = 100.697, y = 0.500, z = 70.310 }, rot = { x = 0.000, y = 53.943, z = 0.000 }, level = 1 },
+	{ config_id = 138, gadget_id = 70510009, pos = { x = 103.100, y = 0.500, z = 67.160 }, rot = { x = 0.000, y = 270.424, z = 0.000 }, level = 1 },
+	{ config_id = 139, gadget_id = 70510009, pos = { x = 106.191, y = 0.500, z = 68.207 }, rot = { x = 0.000, y = 259.872, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000070, name = "CLIENT_EXECUTE_70", event = EventType.EVENT_CLIENT_EXECUTE, source = "ElectricPile", condition = "condition_EVENT_CLIENT_EXECUTE_70", action = "action_EVENT_CLIENT_EXECUTE_70" },
+	{ config_id = 1000071, name = "CLIENT_EXECUTE_71", event = EventType.EVENT_CLIENT_EXECUTE, source = "ElectricPile", condition = "condition_EVENT_CLIENT_EXECUTE_71", action = "action_EVENT_CLIENT_EXECUTE_71" },
+	{ config_id = 1000072, name = "CLIENT_EXECUTE_72", event = EventType.EVENT_CLIENT_EXECUTE, source = "ElectricPile", condition = "condition_EVENT_CLIENT_EXECUTE_72", action = "action_EVENT_CLIENT_EXECUTE_72" },
+	{ config_id = 1000073, name = "CLIENT_EXECUTE_73", event = EventType.EVENT_CLIENT_EXECUTE, source = "ElectricPile", condition = "condition_EVENT_CLIENT_EXECUTE_73", action = "action_EVENT_CLIENT_EXECUTE_73" },
+	{ config_id = 1000074, name = "CLIENT_EXECUTE_74", event = EventType.EVENT_CLIENT_EXECUTE, source = "ElectricPile", condition = "condition_EVENT_CLIENT_EXECUTE_74", action = "action_EVENT_CLIENT_EXECUTE_74" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 132, 133, 134, 135, 136, 137, 138 },
+		regions = { },
+		triggers = { "CLIENT_EXECUTE_70", "CLIENT_EXECUTE_71", "CLIENT_EXECUTE_72", "CLIENT_EXECUTE_73", "CLIENT_EXECUTE_74" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_CLIENT_EXECUTE_70(context, evt)
+	if defs.gadget_id_1 ~= ScriptLib.GetGadgetConfigId(context, { gadget_eid = evt.source_eid }) then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_CLIENT_EXECUTE_70 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 123
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CLIENT_EXECUTE_70(context, evt)
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 123) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_CLIENT_EXECUTE_70 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = L1_1.gadget_id_2
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetConfigId
-  L4_2 = A0_2
-  L5_2 = {}
-  L6_2 = A1_2.source_eid
-  L5_2.gadget_eid = L6_2
-  L3_2 = L3_2(L4_2, L5_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_CLIENT_EXECUTE_71(context, evt)
+	if defs.gadget_id_2 ~= ScriptLib.GetGadgetConfigId(context, { gadget_eid = evt.source_eid }) then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_CLIENT_EXECUTE_71 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 124
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CLIENT_EXECUTE_71(context, evt)
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 124) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_CLIENT_EXECUTE_71 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = L1_1.gadget_id_3
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetConfigId
-  L4_2 = A0_2
-  L5_2 = {}
-  L6_2 = A1_2.source_eid
-  L5_2.gadget_eid = L6_2
-  L3_2 = L3_2(L4_2, L5_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_CLIENT_EXECUTE_72(context, evt)
+	if defs.gadget_id_3 ~= ScriptLib.GetGadgetConfigId(context, { gadget_eid = evt.source_eid }) then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_CLIENT_EXECUTE_72 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 125
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CLIENT_EXECUTE_72(context, evt)
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 125) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_CLIENT_EXECUTE_72 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = L1_1.gadget_id_4
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetConfigId
-  L4_2 = A0_2
-  L5_2 = {}
-  L6_2 = A1_2.source_eid
-  L5_2.gadget_eid = L6_2
-  L3_2 = L3_2(L4_2, L5_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_CLIENT_EXECUTE_73(context, evt)
+	if defs.gadget_id_4 ~= ScriptLib.GetGadgetConfigId(context, { gadget_eid = evt.source_eid }) then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_CLIENT_EXECUTE_73 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 126
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CLIENT_EXECUTE_73(context, evt)
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 126) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_CLIENT_EXECUTE_73 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = L1_1.gadget_id_5
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetConfigId
-  L4_2 = A0_2
-  L5_2 = {}
-  L6_2 = A1_2.source_eid
-  L5_2.gadget_eid = L6_2
-  L3_2 = L3_2(L4_2, L5_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_CLIENT_EXECUTE_74(context, evt)
+	if defs.gadget_id_5 ~= ScriptLib.GetGadgetConfigId(context, { gadget_eid = evt.source_eid }) then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_CLIENT_EXECUTE_74 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 127
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CLIENT_EXECUTE_74(context, evt)
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 127) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_CLIENT_EXECUTE_74 = L2_1

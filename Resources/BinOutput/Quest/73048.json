@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 3408854103,
-  "descTextMapHash": 0,
+  
   "id": 73048,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 73032,
@@ -12,9 +12,7 @@
   "_luaPath": "Actor/Quest/WQ73048",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    73032
-  ],
+  "PEOHODAKLNO": [73032],
   "FEHAEKNGFBP": false,
   "rewardIdList": [],
   "showType": "QUEST_HIDDEN",
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7304801,
-            0
-          ],
+          "param": [7304801, 0],
           "count": 0
         }
       ],
@@ -82,10 +77,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7304801",
-            "2"
-          ]
+          "param": ["7304801", "2"]
         }
       ],
       "priority": 5,
@@ -94,10 +86,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 730480101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20711,
-        1005
-      ],
+      "npcIdRawNum": [20711, 1005],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Sumeru_73048/Q7304801",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

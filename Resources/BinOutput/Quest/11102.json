@@ -12,13 +12,9 @@
   "_luaPath": "Actor/Quest/LQ11102",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    11103
-  ],
+  "PEOHODAKLNO": [11103],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    111102
-  ],
+  "rewardIdList": [111102],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -43,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1110201,
-            0
-          ],
+          "param": [1110201, 0],
           "count": 0
         }
       ],
@@ -54,10 +47,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q1110202Xiao",
-          "40"
-        ],
+        "param": ["Q1110202Xiao", "40"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -91,10 +81,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1110202,
-            0
-          ],
+          "param": [1110202, 0],
           "count": 0
         }
       ],
@@ -102,9 +89,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "10204"
-        ],
+        "param": ["10204"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -138,10 +123,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_ENTER_DUNGEON",
-          "param": [
-            1102,
-            173
-          ],
+          "param": [1102, 173],
           "count": 0
         }
       ],
@@ -149,9 +131,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q1110203Guild"
-        ],
+        "param": ["Q1110203Guild"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -168,9 +148,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_GRANT_TRIAL_AVATAR",
-          "param": [
-            "16"
-          ]
+          "param": ["16"]
         }
       ],
       "failExec": [],
@@ -192,28 +170,19 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1110204,
-            0
-          ],
+          "param": [1110204, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "_type": "QUEST_CONTENT_FAIL_DUNGEON",
-          "param": [
-            1102,
-            0
-          ],
+          "param": [1102, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_ENTER_MY_WORLD",
-          "param": [
-            3,
-            0
-          ],
+          "param": [3, 0],
           "count": 0
         }
       ],
@@ -237,24 +206,17 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "1032",
-            "201032001"
-          ]
+          "param": ["1032", "201032001"]
         },
         {
           "_type": "QUEST_EXEC_LOCK_AVATAR_TEAM",
-          "param": [
-            "10000026"
-          ]
+          "param": ["10000026"]
         }
       ],
       "failExec": [
         {
           "_type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "1110203"
-          ]
+          "param": ["1110203"]
         },
         {
           "_type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM",
@@ -262,9 +224,7 @@
         },
         {
           "_type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
-          "param": [
-            "16"
-          ]
+          "param": ["16"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -285,28 +245,19 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1110206,
-            0
-          ],
+          "param": [1110206, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "_type": "QUEST_CONTENT_FAIL_DUNGEON",
-          "param": [
-            1102,
-            0
-          ],
+          "param": [1102, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_ENTER_MY_WORLD",
-          "param": [
-            3,
-            0
-          ],
+          "param": [3, 0],
           "count": 0
         }
       ],
@@ -334,25 +285,17 @@
         },
         {
           "_type": "QUEST_EXEC_LOCK_POINT",
-          "param": [
-            "3",
-            "173"
-          ]
+          "param": ["3", "173"]
         },
         {
           "_type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "1032",
-            "201032007"
-          ]
+          "param": ["1032", "201032007"]
         }
       ],
       "failExec": [
         {
           "_type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "1110203"
-          ]
+          "param": ["1110203"]
         },
         {
           "_type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM",
@@ -360,9 +303,7 @@
         },
         {
           "_type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
-          "param": [
-            "16"
-          ]
+          "param": ["16"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -383,28 +324,19 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
       "failCond": [
         {
           "_type": "QUEST_CONTENT_FAIL_DUNGEON",
-          "param": [
-            1102,
-            0
-          ],
+          "param": [1102, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_ENTER_MY_WORLD",
-          "param": [
-            3,
-            0
-          ],
+          "param": [3, 0],
           "count": 0
         }
       ],
@@ -429,9 +361,7 @@
       "failExec": [
         {
           "_type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "1110203"
-          ]
+          "param": ["1110203"]
         },
         {
           "_type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM",
@@ -439,9 +369,7 @@
         },
         {
           "_type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
-          "param": [
-            "16"
-          ]
+          "param": ["16"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -462,28 +390,19 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
       "failCond": [
         {
           "_type": "QUEST_CONTENT_FAIL_DUNGEON",
-          "param": [
-            1102,
-            0
-          ],
+          "param": [1102, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_ENTER_MY_WORLD",
-          "param": [
-            3,
-            0
-          ],
+          "param": [3, 0],
           "count": 0
         }
       ],
@@ -508,9 +427,7 @@
       "failExec": [
         {
           "_type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "1110203"
-          ]
+          "param": ["1110203"]
         },
         {
           "_type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM",
@@ -518,9 +435,7 @@
         },
         {
           "_type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
-          "param": [
-            "16"
-          ]
+          "param": ["16"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -537,10 +452,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1110202",
-            "2"
-          ]
+          "param": ["1110202", "2"]
         }
       ],
       "priority": 5,
@@ -549,9 +461,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 111020201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10204
-      ],
+      "npcIdRawNum": [10204],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Xiao1_11102/Q1110202",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -587,10 +497,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1110204",
-            "2"
-          ]
+          "param": ["1110204", "2"]
         }
       ],
       "priority": 5,
@@ -599,9 +506,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 111020401,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1005
-      ],
+      "npcIdRawNum": [1005],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Xiao1_11102/Q1110204",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -637,10 +542,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1110205",
-            "2"
-          ]
+          "param": ["1110205", "2"]
         }
       ],
       "priority": 5,
@@ -649,9 +551,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 111020601,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1005
-      ],
+      "npcIdRawNum": [1005],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Xiao1_11102/Q1110206",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -687,10 +587,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1110201",
-            "2"
-          ]
+          "param": ["1110201", "2"]
         }
       ],
       "priority": 5,
@@ -699,9 +596,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 111022001,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10217
-      ],
+      "npcIdRawNum": [10217],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Xiao1_11102/Q1110220",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -737,10 +632,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1110201",
-            "2"
-          ]
+          "param": ["1110201", "2"]
         }
       ],
       "priority": 5,
@@ -749,9 +641,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 111022101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10219
-      ],
+      "npcIdRawNum": [10219],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Xiao1_11102/Q1110221",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -787,10 +677,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1110201",
-            "2"
-          ]
+          "param": ["1110201", "2"]
         }
       ],
       "priority": 5,
@@ -799,9 +686,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 111022201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10218
-      ],
+      "npcIdRawNum": [10218],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Xiao1_11102/Q1110222",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -837,10 +722,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1110201",
-            "2"
-          ]
+          "param": ["1110201", "2"]
         }
       ],
       "priority": 5,
@@ -849,9 +731,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 111022301,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10202
-      ],
+      "npcIdRawNum": [10202],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Xiao1_11102/Q1110223",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -887,10 +767,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1110203",
-            "2"
-          ]
+          "param": ["1110203", "2"]
         }
       ],
       "priority": 5,
@@ -899,9 +776,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 111022401,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10204
-      ],
+      "npcIdRawNum": [10204],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Xiao1_11102/Q1110224",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -929,16 +804,8 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    645902683150,
-    797627420075,
-    310307973113,
-    153597659108
-  ],
-  "OMKMAOLMNCO": [
-    677872610654,
-    1094601141835
-  ],
+  "LGCLJGGNGBD": [645902683150, 797627420075, 310307973113, 153597659108],
+  "OMKMAOLMNCO": [677872610654, 1094601141835],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 111102
 }

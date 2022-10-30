@@ -12,13 +12,9 @@
   "_luaPath": "Actor/Quest/AQ354",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    360
-  ],
+  "PEOHODAKLNO": [360],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    100354
-  ],
+  "rewardIdList": [100354],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -43,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TRIGGER_FIRE",
-          "param": [
-            1018,
-            0
-          ],
+          "param": [1018, 0],
           "count": 0
         }
       ],
@@ -54,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q354DummySafe"
-        ],
+        "param": ["Q354DummySafe"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -90,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            35404,
-            0
-          ],
+          "param": [35404, 0],
           "count": 0
         }
       ],
@@ -101,9 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1002"
-        ],
+        "param": ["1002"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -137,10 +123,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TRIGGER_FIRE",
-          "param": [
-            1103,
-            0
-          ],
+          "param": [1103, 0],
           "count": 0
         }
       ],
@@ -148,9 +131,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q360qq1"
-        ],
+        "param": ["Q360qq1"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -184,10 +165,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -195,9 +173,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q354Center"
-        ],
+        "param": ["Q354Center"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
@@ -231,10 +207,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            35405,
-            0
-          ],
+          "param": [35405, 0],
           "count": 0
         }
       ],
@@ -272,10 +245,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "35402",
-            "2"
-          ]
+          "param": ["35402", "2"]
         }
       ],
       "priority": 5,
@@ -284,9 +254,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 3540401,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1002
-      ],
+      "npcIdRawNum": [1002],
       "GHNCIOJDIEA": "QuestDialogue/AQ/Mengde1_354/Q35404",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -314,14 +282,8 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    40205056658,
-    645902683150,
-    272548383197
-  ],
-  "OMKMAOLMNCO": [
-    550584498293
-  ],
+  "LGCLJGGNGBD": [40205056658, 645902683150, 272548383197],
+  "OMKMAOLMNCO": [550584498293],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 100354
 }

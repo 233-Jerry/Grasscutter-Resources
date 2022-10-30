@@ -1,607 +1,244 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133001152
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 779
-L2_1.monster_id = 20011001
-L3_1 = {}
-L3_1.x = 1839.939
-L3_1.y = 226.298
-L3_1.z = -1103.226
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 3
-L2_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L2_1.area_id = 3
-L3_1 = {}
-L3_1.config_id = 780
-L3_1.monster_id = 20011001
-L4_1 = {}
-L4_1.x = 1840.267
-L4_1.y = 226.527
-L4_1.z = -1107.635
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 3
-L3_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L3_1.area_id = 3
-L4_1 = {}
-L4_1.config_id = 781
-L4_1.monster_id = 20011001
-L5_1 = {}
-L5_1.x = 1836.412
-L5_1.y = 226.635
-L5_1.z = -1101.103
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 3
-L4_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L4_1.area_id = 3
-L5_1 = {}
-L5_1.config_id = 1076
-L5_1.monster_id = 20011101
-L6_1 = {}
-L6_1.x = 1834.778
-L6_1.y = 225.752
-L6_1.z = -1099.379
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 3
-L5_1.drop_tag = "\229\164\167\229\143\178\232\142\177\229\167\134"
-L5_1.area_id = 3
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 190
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 27.7
-L3_1 = {}
-L3_1.x = 1999.754
-L3_1.y = 197.271
-L3_1.z = -1281.554
-L2_1.pos = L3_1
-L2_1.area_id = 2
-L3_1 = {}
-L3_1.config_id = 191
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 18.4
-L4_1 = {}
-L4_1.x = 2004.913
-L4_1.y = 199.856
-L4_1.z = -1214.684
-L3_1.pos = L4_1
-L3_1.area_id = 2
-L4_1 = {}
-L4_1.config_id = 262
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 46.3
-L5_1 = {}
-L5_1.x = 1925.659
-L5_1.y = 197.189
-L5_1.z = -1391.112
-L4_1.pos = L5_1
-L4_1.area_id = 2
-L5_1 = {}
-L5_1.config_id = 324
-L6_1 = RegionShape
-L6_1 = L6_1.SPHERE
-L5_1.shape = L6_1
-L5_1.radius = 23.1
-L6_1 = {}
-L6_1.x = 1954.803
-L6_1.y = 193.661
-L6_1.z = -1220.576
-L5_1.pos = L6_1
-L5_1.area_id = 2
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1000190
-L2_1.name = "ENTER_REGION_190"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_190"
-L2_1.action = "action_EVENT_ENTER_REGION_190"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1000191
-L3_1.name = "ENTER_REGION_191"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_191"
-L3_1.action = "action_EVENT_ENTER_REGION_191"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1000262
-L4_1.name = "ENTER_REGION_262"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_262"
-L4_1.action = "action_EVENT_ENTER_REGION_262"
-L5_1 = {}
-L5_1.config_id = 1000324
-L5_1.name = "ENTER_REGION_324"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ENTER_REGION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ENTER_REGION_324"
-L5_1.action = "action_EVENT_ENTER_REGION_324"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1000325
-L6_1.name = "TIMER_EVENT_325"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_TIMER_EVENT
-L6_1.event = L7_1
-L6_1.source = "s_unlock"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_TIMER_EVENT_325"
-L6_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "lock"
-L2_1.value = 0
-L2_1.no_refresh = false
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 190
-L5_1 = 191
-L6_1 = 324
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_190"
-L5_1 = "ENTER_REGION_191"
-L6_1 = "ENTER_REGION_324"
-L7_1 = "TIMER_EVENT_325"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 190 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "lock"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133001152
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 779, monster_id = 20011001, pos = { x = 1839.939, y = 226.298, z = -1103.226 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 3, drop_tag = "史莱姆", area_id = 3 },
+	{ config_id = 780, monster_id = 20011001, pos = { x = 1840.267, y = 226.527, z = -1107.635 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 3, drop_tag = "史莱姆", area_id = 3 },
+	{ config_id = 781, monster_id = 20011001, pos = { x = 1836.412, y = 226.635, z = -1101.103 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 3, drop_tag = "史莱姆", area_id = 3 },
+	{ config_id = 1076, monster_id = 20011101, pos = { x = 1834.778, y = 225.752, z = -1099.379 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 3, drop_tag = "大史莱姆", area_id = 3 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+	{ config_id = 190, shape = RegionShape.SPHERE, radius = 27.7, pos = { x = 1999.754, y = 197.271, z = -1281.554 }, area_id = 2 },
+	{ config_id = 191, shape = RegionShape.SPHERE, radius = 18.4, pos = { x = 2004.913, y = 199.856, z = -1214.684 }, area_id = 2 },
+	{ config_id = 262, shape = RegionShape.SPHERE, radius = 46.3, pos = { x = 1925.659, y = 197.189, z = -1391.112 }, area_id = 2 },
+	{ config_id = 324, shape = RegionShape.SPHERE, radius = 23.1, pos = { x = 1954.803, y = 193.661, z = -1220.576 }, area_id = 2 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000190, name = "ENTER_REGION_190", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_190", action = "action_EVENT_ENTER_REGION_190", trigger_count = 0 },
+	{ config_id = 1000191, name = "ENTER_REGION_191", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_191", action = "action_EVENT_ENTER_REGION_191", trigger_count = 0 },
+	{ config_id = 1000262, name = "ENTER_REGION_262", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_262", action = "action_EVENT_ENTER_REGION_262" },
+	{ config_id = 1000324, name = "ENTER_REGION_324", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_324", action = "action_EVENT_ENTER_REGION_324", trigger_count = 0 },
+	{ config_id = 1000325, name = "TIMER_EVENT_325", event = EventType.EVENT_TIMER_EVENT, source = "s_unlock", condition = "", action = "action_EVENT_TIMER_EVENT_325", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "lock", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 190, 191, 324 },
+		triggers = { "ENTER_REGION_190", "ENTER_REGION_191", "ENTER_REGION_324", "TIMER_EVENT_325" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_190(context, evt)
+	if evt.param1 ~= 190 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	-- 判断变量"lock"为0
+	if ScriptLib.GetGroupVariableValue(context, "lock") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_190 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonsterFaceAvatar
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.entity_id = 0
-  L5_2 = {}
-  L6_2 = 780
-  L7_2 = 781
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.monsters = L5_2
-  L5_2 = {}
-  L6_2 = 5
-  L7_2 = 10
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.ranges = L5_2
-  L4_2.angle = 15
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.PrintLog
-  L4_2 = tostring
-  L5_2 = L2_2
-  L4_2 = L4_2(L5_2)
-  L3_2(A0_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "lock"
-  L6_2 = 1
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : set_groupVariable"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.CreateGroupTimerEvent
-  L4_2 = A0_2
-  L5_2 = 133001152
-  L6_2 = "s_unlock"
-  L7_2 = 3600
-  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_190(context, evt)
+	-- 在0面前， 5 到 10 范围里，15 角度内，刷{780,781}的怪物
+	
+	local ret = ScriptLib.CreateMonsterFaceAvatar(context, { entity_id = 0, monsters = {780,781}, ranges = { 5, 10 }, angle = 15 })
+	ScriptLib.PrintLog(context, tostring(ret))
+	
+	-- 将本组内变量名为 "lock" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "lock", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 延迟3600秒后,向groupId为：133001152的对象,请求一次调用,并将string参数："s_unlock" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 133001152, "s_unlock", 3600) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_190 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 191 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "lock"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_191(context, evt)
+	if evt.param1 ~= 191 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	-- 判断变量"lock"为0
+	if ScriptLib.GetGroupVariableValue(context, "lock") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_191 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonsterFaceAvatar
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.entity_id = 0
-  L5_2 = {}
-  L6_2 = 781
-  L7_2 = 779
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.monsters = L5_2
-  L5_2 = {}
-  L6_2 = 5
-  L7_2 = 10
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.ranges = L5_2
-  L4_2.angle = 15
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.PrintLog
-  L4_2 = tostring
-  L5_2 = L2_2
-  L4_2 = L4_2(L5_2)
-  L3_2(A0_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "lock"
-  L6_2 = 1
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : set_groupVariable"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.CreateGroupTimerEvent
-  L4_2 = A0_2
-  L5_2 = 133001152
-  L6_2 = "s_unlock"
-  L7_2 = 3600
-  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_191(context, evt)
+	-- 在0面前， 5 到 10 范围里，15 角度内，刷{781,779}的怪物
+	
+	local ret = ScriptLib.CreateMonsterFaceAvatar(context, { entity_id = 0, monsters = {781,779}, ranges = { 5, 10 }, angle = 15 })
+	ScriptLib.PrintLog(context, tostring(ret))
+	
+	-- 将本组内变量名为 "lock" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "lock", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 延迟3600秒后,向groupId为：133001152的对象,请求一次调用,并将string参数："s_unlock" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 133001152, "s_unlock", 3600) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_191 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 262 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_262(context, evt)
+	if evt.param1 ~= 262 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_262 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonsterFaceAvatar
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.entity_id = 0
-  L5_2 = {}
-  L6_2 = 781
-  L7_2 = 779
-  L8_2 = 780
-  L9_2 = 1076
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L5_2[3] = L8_2
-  L5_2[4] = L9_2
-  L4_2.monsters = L5_2
-  L5_2 = {}
-  L6_2 = 5
-  L7_2 = 10
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.ranges = L5_2
-  L4_2.angle = 15
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.PrintLog
-  L4_2 = tostring
-  L5_2 = L2_2
-  L4_2 = L4_2(L5_2)
-  L3_2(A0_2, L4_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_262(context, evt)
+	-- 在0面前， 5 到 10 范围里，15 角度内，刷{781,779,780,1076}的怪物
+	
+	local ret = ScriptLib.CreateMonsterFaceAvatar(context, { entity_id = 0, monsters = {781,779,780,1076}, ranges = { 5, 10 }, angle = 15 })
+	ScriptLib.PrintLog(context, tostring(ret))
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_262 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 324 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "lock"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_324(context, evt)
+	if evt.param1 ~= 324 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	-- 判断变量"lock"为0
+	if ScriptLib.GetGroupVariableValue(context, "lock") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_324 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonsterFaceAvatar
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.entity_id = 0
-  L5_2 = {}
-  L6_2 = 780
-  L7_2 = 781
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.monsters = L5_2
-  L5_2 = {}
-  L6_2 = 5
-  L7_2 = 10
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L4_2.ranges = L5_2
-  L4_2.angle = 15
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.PrintLog
-  L4_2 = tostring
-  L5_2 = L2_2
-  L4_2 = L4_2(L5_2)
-  L3_2(A0_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "lock"
-  L6_2 = 1
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : set_groupVariable"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.CreateGroupTimerEvent
-  L4_2 = A0_2
-  L5_2 = 133001152
-  L6_2 = "s_unlock"
-  L7_2 = 3600
-  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_324(context, evt)
+	-- 在0面前， 5 到 10 范围里，15 角度内，刷{780,781}的怪物
+	
+	local ret = ScriptLib.CreateMonsterFaceAvatar(context, { entity_id = 0, monsters = {780,781}, ranges = { 5, 10 }, angle = 15 })
+	ScriptLib.PrintLog(context, tostring(ret))
+	
+	-- 将本组内变量名为 "lock" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "lock", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 延迟3600秒后,向groupId为：133001152的对象,请求一次调用,并将string参数："s_unlock" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 133001152, "s_unlock", 3600) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_324 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "lock"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_325(context, evt)
+	-- 将本组内变量名为 "lock" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "lock", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_325 = L1_1

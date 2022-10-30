@@ -1,280 +1,170 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 220104002
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 2005
-L2_1.monster_id = 22020102
-L3_1 = {}
-L3_1.x = -28.317
-L3_1.y = 44.815
-L3_1.z = -67.518
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 157.474
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.pose_id = 101
-L2_1.title_id = 10009
-L2_1.special_name_id = 10025
-L1_1[1] = L2_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 2004
-L2_1.gadget_id = 70211121
-L3_1 = {}
-L3_1.x = -18.823
-L3_1.y = 44.827
-L3_1.z = -66.702
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 270.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 11
-L2_1.drop_tag = "\232\167\163\232\176\156\233\171\152\231\186\167\231\146\131\230\156\136"
-L2_1.isOneoff = true
-L2_1.persistent = true
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 2001
-L3_1 = RegionShape
-L3_1 = L3_1.CUBIC
-L2_1.shape = L3_1
-L3_1 = {}
-L3_1.x = 8.0
-L3_1.y = 10.0
-L3_1.z = 4.0
-L2_1.size = L3_1
-L3_1 = {}
-L3_1.x = -28.074
-L3_1.y = 49.983
-L3_1.z = -82.124
-L2_1.pos = L3_1
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1002001
-L2_1.name = "ENTER_REGION_2001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_2001"
-L2_1.action = "action_EVENT_ENTER_REGION_2001"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1002003
-L3_1.name = "SPECIFIC_MONSTER_HP_CHANGE_2003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SPECIFIC_MONSTER_HP_CHANGE
-L3_1.event = L4_1
-L3_1.source = "2005"
-L3_1.condition = "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_2003"
-L3_1.action = "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_2003"
-L4_1 = {}
-L4_1.config_id = 1002006
-L4_1.name = "ANY_MONSTER_LIVE_2006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ANY_MONSTER_LIVE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ANY_MONSTER_LIVE_2006"
-L4_1.action = "action_EVENT_ANY_MONSTER_LIVE_2006"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 2001
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_2001"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L2_1.ban_refresh = true
-L3_1 = {}
-L4_1 = {}
-L5_1 = 2005
-L4_1[1] = L5_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "SPECIFIC_MONSTER_HP_CHANGE_2003"
-L6_1 = "ANY_MONSTER_LIVE_2006"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L3_1.ban_refresh = true
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 2004
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 2001 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220104002
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 2005, monster_id = 22020102, pos = { x = -28.317, y = 44.815, z = -67.518 }, rot = { x = 0.000, y = 157.474, z = 0.000 }, level = 1, pose_id = 101, title_id = 10009, special_name_id = 10025 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	-- 废弃了,不招
+	{ config_id = 2004, gadget_id = 70211121, pos = { x = -18.823, y = 44.827, z = -66.702 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 11, drop_tag = "解谜高级璃月", isOneoff = true, persistent = true }
+}
+
+-- 区域
+regions = {
+	{ config_id = 2001, shape = RegionShape.CUBIC, size = { x = 8.000, y = 10.000, z = 4.000 }, pos = { x = -28.074, y = 49.983, z = -82.124 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1002001, name = "ENTER_REGION_2001", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_2001", action = "action_EVENT_ENTER_REGION_2001", trigger_count = 0 },
+	{ config_id = 1002003, name = "SPECIFIC_MONSTER_HP_CHANGE_2003", event = EventType.EVENT_SPECIFIC_MONSTER_HP_CHANGE, source = "2005", condition = "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_2003", action = "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_2003" },
+	{ config_id = 1002006, name = "ANY_MONSTER_LIVE_2006", event = EventType.EVENT_ANY_MONSTER_LIVE, source = "", condition = "condition_EVENT_ANY_MONSTER_LIVE_2006", action = "action_EVENT_ANY_MONSTER_LIVE_2006" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 2001 },
+		triggers = { "ENTER_REGION_2001" },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 2005 },
+		gadgets = { },
+		regions = { },
+		triggers = { "SPECIFIC_MONSTER_HP_CHANGE_2003", "ANY_MONSTER_LIVE_2006" },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 2004 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_2001(context, evt)
+	if evt.param1 ~= 2001 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_2001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "22010400201"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 220104003
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_2001(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "22010400201") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 220104003, 3)
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_2001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.type
-  L3_2 = EventType
-  L3_2 = L3_2.EVENT_SPECIFIC_MONSTER_HP_CHANGE
-  if L2_2 == L3_2 then
-    L2_2 = A1_2.param3
-    if not (30 < L2_2) then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_2003(context, evt)
+	--[[判断指定configid的怪物的血量小于%30时触发指定后续操作]]--
+	if evt.type ~= EventType.EVENT_SPECIFIC_MONSTER_HP_CHANGE or evt.param3 > 30 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_2003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "22010400202"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 220104002
-  L5_2 = EntityType
-  L5_2 = L5_2.MONSTER
-  L6_2 = 2005
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_2003(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "22010400202") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+		-- 移除指定monster
+		ScriptLib.RemoveEntityByConfigId(context, 220104002, EntityType.MONSTER, 2005)
+	
+		
+	
+	return 0
 end
-action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_2003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2005 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_LIVE_2006(context, evt)
+	if 2005 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_LIVE_2006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 201040109
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_LIVE_2006(context, evt)
+	-- 调用提示id为 201040109 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 201040109) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_LIVE_2006 = L1_1

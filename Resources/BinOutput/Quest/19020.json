@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1902001,
-            0
-          ],
+          "param": [1902001, 0],
           "count": 0
         }
       ],
@@ -50,9 +47,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q19020_Wulang1"
-        ],
+        "param": ["Q19020_Wulang1"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -86,10 +81,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902001
-          ],
+          "param": [105501, 1902001],
           "count": 0
         }
       ],
@@ -97,9 +89,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "505"
-        ],
+        "param": ["505"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -133,10 +123,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1902003,
-            0
-          ],
+          "param": [1902003, 0],
           "count": 0
         }
       ],
@@ -144,9 +131,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q19020_Wulang2"
-        ],
+        "param": ["Q19020_Wulang2"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -180,10 +165,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902002
-          ],
+          "param": [105501, 1902002],
           "count": 0
         }
       ],
@@ -191,9 +173,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "505"
-        ],
+        "param": ["505"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -227,46 +207,31 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
       "failCond": [
         {
           "_type": "QUEST_CONTENT_ANY_MANUAL_TRANSPORT",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            1902099,
-            0
-          ],
+          "param": [1902099, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_TEAM_DEAD",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         }
       ],
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q19020_Wulang2",
-          "30"
-        ],
+        "param": ["Q19020_Wulang2", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -283,30 +248,21 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
-          "param": [
-            "503"
-          ]
+          "param": ["503"]
         },
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133220679",
-            "1"
-          ]
+          "param": ["133220679", "1"]
         }
       ],
       "failExec": [
         {
           "_type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
-          "param": [
-            "503"
-          ]
+          "param": ["503"]
         },
         {
           "_type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "1902003"
-          ]
+          "param": ["1902003"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -327,10 +283,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902003
-          ],
+          "param": [105501, 1902003],
           "count": 0
         }
       ],
@@ -338,9 +291,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "505"
-        ],
+        "param": ["505"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -374,10 +325,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1902007,
-            0
-          ],
+          "param": [1902007, 0],
           "count": 0
         }
       ],
@@ -385,9 +333,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q19020_Wulang4"
-        ],
+        "param": ["Q19020_Wulang4"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -421,10 +367,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902004
-          ],
+          "param": [105501, 1902004],
           "count": 0
         }
       ],
@@ -432,9 +375,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "505"
-        ],
+        "param": ["505"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -468,10 +409,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1902009,
-            0
-          ],
+          "param": [1902009, 0],
           "count": 0
         }
       ],
@@ -479,9 +417,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q19020_WulangWalk1"
-        ],
+        "param": ["Q19020_WulangWalk1"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -515,10 +451,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902005
-          ],
+          "param": [105501, 1902005],
           "count": 0
         }
       ],
@@ -526,9 +459,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "505"
-        ],
+        "param": ["505"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -550,15 +481,9 @@
   ],
   "talks": [],
   "LGCLJGGNGBD": [
-    1008208438916,
-    174415879111,
-    940739485377,
-    1015974920010,
-    534520842136
+    1008208438916, 174415879111, 940739485377, 1015974920010, 534520842136
   ],
-  "OMKMAOLMNCO": [
-    421996120088
-  ],
+  "OMKMAOLMNCO": [421996120088],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 0
 }

@@ -1,1640 +1,676 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1
-L0_1 = {}
-L0_1.group_id = 144001187
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 187001
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 0.7
-L3_1 = {}
-L3_1.x = 192.26
-L3_1.y = 217.244
-L3_1.z = 300.288
-L2_1.pos = L3_1
-L2_1.area_id = 102
-L3_1 = {}
-L3_1.config_id = 187002
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 0.7
-L4_1 = {}
-L4_1.x = 194.205
-L4_1.y = 217.244
-L4_1.z = 301.924
-L3_1.pos = L4_1
-L3_1.area_id = 102
-L4_1 = {}
-L4_1.config_id = 187003
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 0.7
-L5_1 = {}
-L5_1.x = 216.307
-L5_1.y = 197.886
-L5_1.z = 163.609
-L4_1.pos = L5_1
-L4_1.area_id = 102
-L5_1 = {}
-L5_1.config_id = 187004
-L6_1 = RegionShape
-L6_1 = L6_1.SPHERE
-L5_1.shape = L6_1
-L5_1.radius = 0.7
-L6_1 = {}
-L6_1.x = 214.402
-L6_1.y = 197.549
-L6_1.z = 164.038
-L5_1.pos = L6_1
-L5_1.area_id = 102
-L6_1 = {}
-L6_1.config_id = 187005
-L7_1 = RegionShape
-L7_1 = L7_1.SPHERE
-L6_1.shape = L7_1
-L6_1.radius = 0.7
-L7_1 = {}
-L7_1.x = 318.554
-L7_1.y = 202.645
-L7_1.z = 158.507
-L6_1.pos = L7_1
-L6_1.area_id = 102
-L7_1 = {}
-L7_1.config_id = 187006
-L8_1 = RegionShape
-L8_1 = L8_1.SPHERE
-L7_1.shape = L8_1
-L7_1.radius = 0.7
-L8_1 = {}
-L8_1.x = 316.786
-L8_1.y = 202.645
-L8_1.z = 159.426
-L7_1.pos = L8_1
-L7_1.area_id = 102
-L8_1 = {}
-L8_1.config_id = 187007
-L9_1 = RegionShape
-L9_1 = L9_1.SPHERE
-L8_1.shape = L9_1
-L8_1.radius = 0.7
-L9_1 = {}
-L9_1.x = 223.017
-L9_1.y = 191.612
-L9_1.z = 437.707
-L8_1.pos = L9_1
-L8_1.area_id = 102
-L9_1 = {}
-L9_1.config_id = 187008
-L10_1 = RegionShape
-L10_1 = L10_1.SPHERE
-L9_1.shape = L10_1
-L9_1.radius = 0.7
-L10_1 = {}
-L10_1.x = 221.996
-L10_1.y = 191.531
-L10_1.z = 435.513
-L9_1.pos = L10_1
-L9_1.area_id = 102
-L10_1 = {}
-L10_1.config_id = 187009
-L11_1 = RegionShape
-L11_1 = L11_1.SPHERE
-L10_1.shape = L11_1
-L10_1.radius = 0.7
-L11_1 = {}
-L11_1.x = 352.907
-L11_1.y = 184.15
-L11_1.z = 420.131
-L10_1.pos = L11_1
-L10_1.area_id = 102
-L11_1 = {}
-L11_1.config_id = 187010
-L12_1 = RegionShape
-L12_1 = L12_1.SPHERE
-L11_1.shape = L12_1
-L11_1.radius = 0.7
-L12_1 = {}
-L12_1.x = 353.876
-L12_1.y = 184.225
-L12_1.z = 417.243
-L11_1.pos = L12_1
-L11_1.area_id = 102
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1187001
-L2_1.name = "ENTER_REGION_187001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_187001"
-L2_1.action = "action_EVENT_ENTER_REGION_187001"
-L3_1 = {}
-L3_1.config_id = 1187002
-L3_1.name = "ENTER_REGION_187002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_187002"
-L3_1.action = "action_EVENT_ENTER_REGION_187002"
-L4_1 = {}
-L4_1.config_id = 1187003
-L4_1.name = "ENTER_REGION_187003"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_187003"
-L4_1.action = "action_EVENT_ENTER_REGION_187003"
-L5_1 = {}
-L5_1.config_id = 1187004
-L5_1.name = "ENTER_REGION_187004"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ENTER_REGION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ENTER_REGION_187004"
-L5_1.action = "action_EVENT_ENTER_REGION_187004"
-L6_1 = {}
-L6_1.config_id = 1187005
-L6_1.name = "ENTER_REGION_187005"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_ENTER_REGION
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_ENTER_REGION_187005"
-L6_1.action = "action_EVENT_ENTER_REGION_187005"
-L7_1 = {}
-L7_1.config_id = 1187006
-L7_1.name = "ENTER_REGION_187006"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_ENTER_REGION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_ENTER_REGION_187006"
-L7_1.action = "action_EVENT_ENTER_REGION_187006"
-L8_1 = {}
-L8_1.config_id = 1187007
-L8_1.name = "ENTER_REGION_187007"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_ENTER_REGION
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_ENTER_REGION_187007"
-L8_1.action = "action_EVENT_ENTER_REGION_187007"
-L9_1 = {}
-L9_1.config_id = 1187008
-L9_1.name = "ENTER_REGION_187008"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_ENTER_REGION
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_ENTER_REGION_187008"
-L9_1.action = "action_EVENT_ENTER_REGION_187008"
-L10_1 = {}
-L10_1.config_id = 1187009
-L10_1.name = "ENTER_REGION_187009"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_ENTER_REGION
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_ENTER_REGION_187009"
-L10_1.action = "action_EVENT_ENTER_REGION_187009"
-L11_1 = {}
-L11_1.config_id = 1187010
-L11_1.name = "ENTER_REGION_187010"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_ENTER_REGION
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_ENTER_REGION_187010"
-L11_1.action = "action_EVENT_ENTER_REGION_187010"
-L12_1 = {}
-L12_1.config_id = 1187012
-L12_1.name = "VARIABLE_CHANGE_187012"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_VARIABLE_CHANGE
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = "condition_EVENT_VARIABLE_CHANGE_187012"
-L12_1.action = "action_EVENT_VARIABLE_CHANGE_187012"
-L13_1 = {}
-L13_1.config_id = 1187013
-L13_1.name = "VARIABLE_CHANGE_187013"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_VARIABLE_CHANGE
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_VARIABLE_CHANGE_187013"
-L13_1.action = "action_EVENT_VARIABLE_CHANGE_187013"
-L13_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "ifreachedhilltop"
-L2_1.value = 0
-L2_1.no_refresh = false
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 187011
-L3_1.gadget_id = 40000001
-L4_1 = {}
-L4_1.x = 232.058
-L4_1.y = 185.344
-L4_1.z = 435.727
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 102
-L2_1[1] = L3_1
-L1_1.gadgets = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 187001
-L5_1 = 187002
-L6_1 = 187003
-L7_1 = 187004
-L8_1 = 187005
-L9_1 = 187006
-L10_1 = 187007
-L11_1 = 187008
-L12_1 = 187009
-L13_1 = 187010
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_187001"
-L5_1 = "ENTER_REGION_187002"
-L6_1 = "ENTER_REGION_187003"
-L7_1 = "ENTER_REGION_187004"
-L8_1 = "ENTER_REGION_187005"
-L9_1 = "ENTER_REGION_187006"
-L10_1 = "ENTER_REGION_187007"
-L11_1 = "ENTER_REGION_187008"
-L12_1 = "ENTER_REGION_187009"
-L13_1 = "ENTER_REGION_187010"
-L14_1 = "VARIABLE_CHANGE_187012"
-L15_1 = "VARIABLE_CHANGE_187013"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 187001 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 144001187
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+	-- 3号山顶左键
+	{ config_id = 187001, shape = RegionShape.SPHERE, radius = 0.7, pos = { x = 192.260, y = 217.244, z = 300.288 }, area_id = 102 },
+	-- 3号山顶右键
+	{ config_id = 187002, shape = RegionShape.SPHERE, radius = 0.7, pos = { x = 194.205, y = 217.244, z = 301.924 }, area_id = 102 },
+	-- 2号山顶左键
+	{ config_id = 187003, shape = RegionShape.SPHERE, radius = 0.7, pos = { x = 216.307, y = 197.886, z = 163.609 }, area_id = 102 },
+	-- 2号山顶右键
+	{ config_id = 187004, shape = RegionShape.SPHERE, radius = 0.7, pos = { x = 214.402, y = 197.549, z = 164.038 }, area_id = 102 },
+	-- 1号山顶右键
+	{ config_id = 187005, shape = RegionShape.SPHERE, radius = 0.7, pos = { x = 318.554, y = 202.645, z = 158.507 }, area_id = 102 },
+	-- 1号山顶左键
+	{ config_id = 187006, shape = RegionShape.SPHERE, radius = 0.7, pos = { x = 316.786, y = 202.645, z = 159.426 }, area_id = 102 },
+	-- 4号山顶左键
+	{ config_id = 187007, shape = RegionShape.SPHERE, radius = 0.7, pos = { x = 223.017, y = 191.612, z = 437.707 }, area_id = 102 },
+	-- 4号山顶右键
+	{ config_id = 187008, shape = RegionShape.SPHERE, radius = 0.7, pos = { x = 221.996, y = 191.531, z = 435.513 }, area_id = 102 },
+	-- 5号山顶左键
+	{ config_id = 187009, shape = RegionShape.SPHERE, radius = 0.7, pos = { x = 352.907, y = 184.150, z = 420.131 }, area_id = 102 },
+	-- 5号山顶左键
+	{ config_id = 187010, shape = RegionShape.SPHERE, radius = 0.7, pos = { x = 353.876, y = 184.225, z = 417.243 }, area_id = 102 }
+}
+
+-- 触发器
+triggers = {
+	-- 3号山顶左键
+	{ config_id = 1187001, name = "ENTER_REGION_187001", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_187001", action = "action_EVENT_ENTER_REGION_187001" },
+	-- 3号山顶右键
+	{ config_id = 1187002, name = "ENTER_REGION_187002", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_187002", action = "action_EVENT_ENTER_REGION_187002" },
+	-- 2号山顶左键
+	{ config_id = 1187003, name = "ENTER_REGION_187003", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_187003", action = "action_EVENT_ENTER_REGION_187003" },
+	-- 2号山顶右键
+	{ config_id = 1187004, name = "ENTER_REGION_187004", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_187004", action = "action_EVENT_ENTER_REGION_187004" },
+	-- 1号山顶右键
+	{ config_id = 1187005, name = "ENTER_REGION_187005", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_187005", action = "action_EVENT_ENTER_REGION_187005" },
+	-- 1号山顶左键
+	{ config_id = 1187006, name = "ENTER_REGION_187006", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_187006", action = "action_EVENT_ENTER_REGION_187006" },
+	-- 4号山顶左键
+	{ config_id = 1187007, name = "ENTER_REGION_187007", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_187007", action = "action_EVENT_ENTER_REGION_187007" },
+	-- 4号山顶右键
+	{ config_id = 1187008, name = "ENTER_REGION_187008", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_187008", action = "action_EVENT_ENTER_REGION_187008" },
+	-- 5号山顶左键
+	{ config_id = 1187009, name = "ENTER_REGION_187009", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_187009", action = "action_EVENT_ENTER_REGION_187009" },
+	-- 5号山顶左键
+	{ config_id = 1187010, name = "ENTER_REGION_187010", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_187010", action = "action_EVENT_ENTER_REGION_187010" },
+	{ config_id = 1187012, name = "VARIABLE_CHANGE_187012", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_187012", action = "action_EVENT_VARIABLE_CHANGE_187012" },
+	{ config_id = 1187013, name = "VARIABLE_CHANGE_187013", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_187013", action = "action_EVENT_VARIABLE_CHANGE_187013", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "ifreachedhilltop", value = 0, no_refresh = false }
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 187011, gadget_id = 40000001, pos = { x = 232.058, y = 185.344, z = 435.727 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 102 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 187001, 187002, 187003, 187004, 187005, 187006, 187007, 187008, 187009, 187010 },
+		triggers = { "ENTER_REGION_187001", "ENTER_REGION_187002", "ENTER_REGION_187003", "ENTER_REGION_187004", "ENTER_REGION_187005", "ENTER_REGION_187006", "ENTER_REGION_187007", "ENTER_REGION_187008", "ENTER_REGION_187009", "ENTER_REGION_187010", "VARIABLE_CHANGE_187012", "VARIABLE_CHANGE_187013" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_187001(context, evt)
+	if evt.param1 ~= 187001 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	-- 判断变量"ifreachedhilltop"为0
+	if ScriptLib.GetGroupVariableValue(context, "ifreachedhilltop") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_187001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 188.2132
-  L2_2.y = 210.9843
-  L2_2.z = 314.1208
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 3
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 1110260
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.AddQuestProgress
-  L5_2 = A0_2
-  L6_2 = "7901505"
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : add_quest_progress"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_187001(context, evt)
+	-- 针对当前group内变量名为 "ifreachedhilltop" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ifreachedhilltop", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（188.2132，210.9843，314.1208），持续时间为3秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=188.2132, y=210.9843, z=314.1208}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 1110260 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1110260) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7901505") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_187001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 187002 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_187002(context, evt)
+	if evt.param1 ~= 187002 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	-- 判断变量"ifreachedhilltop"为0
+	if ScriptLib.GetGroupVariableValue(context, "ifreachedhilltop") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_187002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 188.2132
-  L2_2.y = 210.9843
-  L2_2.z = 314.1208
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 3
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 1110260
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.AddQuestProgress
-  L5_2 = A0_2
-  L6_2 = "7901505"
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : add_quest_progress"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_187002(context, evt)
+	-- 针对当前group内变量名为 "ifreachedhilltop" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ifreachedhilltop", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（188.2132，210.9843，314.1208），持续时间为3秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=188.2132, y=210.9843, z=314.1208}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 1110260 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1110260) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7901505") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_187002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 187003 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_187003(context, evt)
+	if evt.param1 ~= 187003 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	-- 判断变量"ifreachedhilltop"为0
+	if ScriptLib.GetGroupVariableValue(context, "ifreachedhilltop") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_187003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 214.9878
-  L2_2.y = 195.25
-  L2_2.z = 155.428
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 3
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 1110260
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.AddQuestProgress
-  L5_2 = A0_2
-  L6_2 = "7901505"
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : add_quest_progress"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_187003(context, evt)
+	-- 针对当前group内变量名为 "ifreachedhilltop" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ifreachedhilltop", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（214.9878，195.25，155.428），持续时间为3秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=214.9878, y=195.25, z=155.428}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 1110260 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1110260) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7901505") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_187003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 187004 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_187004(context, evt)
+	if evt.param1 ~= 187004 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	-- 判断变量"ifreachedhilltop"为0
+	if ScriptLib.GetGroupVariableValue(context, "ifreachedhilltop") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_187004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 214.9878
-  L2_2.y = 195.25
-  L2_2.z = 155.428
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 3
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 1110260
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.AddQuestProgress
-  L5_2 = A0_2
-  L6_2 = "7901505"
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : add_quest_progress"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_187004(context, evt)
+	-- 针对当前group内变量名为 "ifreachedhilltop" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ifreachedhilltop", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（214.9878，195.25，155.428），持续时间为3秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=214.9878, y=195.25, z=155.428}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 1110260 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1110260) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7901505") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_187004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 187005 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_187005(context, evt)
+	if evt.param1 ~= 187005 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	-- 判断变量"ifreachedhilltop"为0
+	if ScriptLib.GetGroupVariableValue(context, "ifreachedhilltop") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_187005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 320.4826
-  L2_2.y = 200.9229
-  L2_2.z = 167.1213
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 3
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 1110260
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.AddQuestProgress
-  L5_2 = A0_2
-  L6_2 = "7901505"
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : add_quest_progress"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_187005(context, evt)
+	-- 针对当前group内变量名为 "ifreachedhilltop" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ifreachedhilltop", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（320.4826，200.9229，167.1213），持续时间为3秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=320.4826, y=200.9229, z=167.1213}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 1110260 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1110260) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7901505") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_187005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 187006 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_187006(context, evt)
+	if evt.param1 ~= 187006 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	-- 判断变量"ifreachedhilltop"为0
+	if ScriptLib.GetGroupVariableValue(context, "ifreachedhilltop") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_187006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 320.4826
-  L2_2.y = 200.9229
-  L2_2.z = 167.1213
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 3
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 1110260
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.AddQuestProgress
-  L5_2 = A0_2
-  L6_2 = "7901505"
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : add_quest_progress"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_187006(context, evt)
+	-- 针对当前group内变量名为 "ifreachedhilltop" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ifreachedhilltop", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（320.4826，200.9229，167.1213），持续时间为3秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=320.4826, y=200.9229, z=167.1213}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 1110260 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1110260) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7901505") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_187006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 187007 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_187007(context, evt)
+	if evt.param1 ~= 187007 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	-- 判断变量"ifreachedhilltop"为0
+	if ScriptLib.GetGroupVariableValue(context, "ifreachedhilltop") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_187007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 232.3025
-  L2_2.y = 185.7886
-  L2_2.z = 435.674
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 3
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 1110260
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.AddQuestProgress
-  L5_2 = A0_2
-  L6_2 = "7901505"
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : add_quest_progress"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_187007(context, evt)
+	-- 针对当前group内变量名为 "ifreachedhilltop" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ifreachedhilltop", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（232.3025，185.7886，435.674），持续时间为3秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=232.3025, y=185.7886, z=435.674}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 1110260 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1110260) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7901505") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_187007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 187008 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_187008(context, evt)
+	if evt.param1 ~= 187008 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	-- 判断变量"ifreachedhilltop"为0
+	if ScriptLib.GetGroupVariableValue(context, "ifreachedhilltop") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_187008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 232.3025
-  L2_2.y = 185.7886
-  L2_2.z = 435.674
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 3
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 1110260
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.AddQuestProgress
-  L5_2 = A0_2
-  L6_2 = "7901505"
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : add_quest_progress"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_187008(context, evt)
+	-- 针对当前group内变量名为 "ifreachedhilltop" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ifreachedhilltop", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（232.3025，185.7886，435.674），持续时间为3秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=232.3025, y=185.7886, z=435.674}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 1110260 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1110260) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7901505") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_187008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 187009 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_187009(context, evt)
+	if evt.param1 ~= 187009 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	-- 判断变量"ifreachedhilltop"为0
+	if ScriptLib.GetGroupVariableValue(context, "ifreachedhilltop") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_187009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 359.2453
-  L2_2.y = 181.1207
-  L2_2.z = 421.2856
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 3
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 1110260
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.AddQuestProgress
-  L5_2 = A0_2
-  L6_2 = "7901505"
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : add_quest_progress"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_187009(context, evt)
+	-- 针对当前group内变量名为 "ifreachedhilltop" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ifreachedhilltop", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（359.2453，181.1207，421.2856），持续时间为3秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=359.2453, y=181.1207, z=421.2856}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 1110260 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1110260) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7901505") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_187009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 187010 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_187010(context, evt)
+	if evt.param1 ~= 187010 then return false end
+	
+	-- 判断角色数量不少于0
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 0 then
+		return false
+	end
+	
+	-- 判断变量"ifreachedhilltop"为0
+	if ScriptLib.GetGroupVariableValue(context, "ifreachedhilltop") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_187010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 359.2453
-  L2_2.y = 181.1207
-  L2_2.z = 421.2856
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 3
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 1110260
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.AddQuestProgress
-  L5_2 = A0_2
-  L6_2 = "7901505"
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : add_quest_progress"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_187010(context, evt)
+	-- 针对当前group内变量名为 "ifreachedhilltop" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "ifreachedhilltop", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（359.2453，181.1207，421.2856），持续时间为3秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=359.2453, y=181.1207, z=421.2856}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 1110260 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1110260) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7901505") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_187010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "complete"
-  L5_2 = 144001004
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_187012(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"complete"为1
+	if ScriptLib.GetGroupVariableValueByGroup(context, "complete", 144001004) ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_187012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 144001187
-  L4_2.suite = 2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_187012(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 144001187, suite = 2 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_187012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ifreachedhilltop"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_187013(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"ifreachedhilltop"为1
+	if ScriptLib.GetGroupVariableValue(context, "ifreachedhilltop") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_187013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7901504"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_187013(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7901504") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_187013 = L1_1

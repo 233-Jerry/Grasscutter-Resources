@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         }
       ],
@@ -84,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -112,10 +106,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
-          "param": [
-            "710020601",
-            "1"
-          ]
+          "param": ["710020601", "1"]
         }
       ],
       "failExec": [],
@@ -137,10 +128,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -165,10 +153,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
-          "param": [
-            "710020601",
-            "1"
-          ]
+          "param": ["710020601", "1"]
         }
       ],
       "failExec": [],
@@ -190,10 +175,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -218,10 +200,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
-          "param": [
-            "710020601",
-            "1"
-          ]
+          "param": ["710020601", "1"]
         }
       ],
       "failExec": [],
@@ -243,10 +222,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         }
       ],
@@ -271,10 +247,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
-          "param": [
-            "710020601",
-            "1"
-          ]
+          "param": ["710020601", "1"]
         }
       ],
       "failExec": [],
@@ -296,10 +269,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            710020601,
-            0
-          ],
+          "param": [710020601, 0],
           "count": 3
         }
       ],
@@ -324,17 +294,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133103334"
-          ]
+          "param": ["3", "133103334"]
         },
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
-          "param": [
-            "7100208",
-            "1"
-          ]
+          "param": ["7100208", "1"]
         }
       ],
       "failExec": [],
@@ -356,10 +320,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         }
       ],
@@ -367,9 +328,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q7100202_Target"
-        ],
+        "param": ["Q7100202_Target"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -386,10 +345,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133103334"
-          ]
+          "param": ["3", "133103334"]
         }
       ],
       "failExec": [],
@@ -411,10 +367,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            7100208,
-            0
-          ],
+          "param": [7100208, 0],
           "count": 1
         }
       ],

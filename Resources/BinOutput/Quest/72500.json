@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7250001,
-            0
-          ],
+          "param": [7250001, 0],
           "count": 0
         }
       ],
@@ -50,10 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q7250001_N12278",
-          "0"
-        ],
+        "param": ["Q7250001_N12278", "0"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -83,10 +77,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7250001",
-            "2"
-          ]
+          "param": ["7250001", "2"]
         }
       ],
       "priority": 5,
@@ -95,11 +86,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 725000101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30189,
-        30190,
-        30188
-      ],
+      "npcIdRawNum": [30189, 30190, 30188],
       "GHNCIOJDIEA": "QuestDialogue/WQ/MusicGameGu_ide_72500/Q7250001",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

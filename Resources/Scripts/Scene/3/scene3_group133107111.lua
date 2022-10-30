@@ -1,281 +1,139 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133107111
-L1_1 = {}
-L1_1.gadget_id = 111004
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 111001
-L3_1.gadget_id = 70330019
-L4_1 = {}
-L4_1.x = -663.216
-L4_1.y = 305.548
-L4_1.z = 596.128
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 61.045
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 24
-L3_1.persistent = true
-L3_1.area_id = 7
-L4_1 = {}
-L4_1.config_id = 111002
-L4_1.gadget_id = 70330019
-L5_1 = {}
-L5_1.x = -680.793
-L5_1.y = 305.898
-L5_1.z = 591.505
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 2.713
-L5_1.y = 86.778
-L5_1.z = 358.664
-L4_1.rot = L5_1
-L4_1.level = 24
-L4_1.persistent = true
-L4_1.area_id = 7
-L5_1 = {}
-L5_1.config_id = 111003
-L5_1.gadget_id = 70330019
-L6_1 = {}
-L6_1.x = -676.573
-L6_1.y = 309.029
-L6_1.z = 612.795
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 359.258
-L6_1.y = 30.299
-L6_1.z = 356.963
-L5_1.rot = L6_1
-L5_1.level = 24
-L5_1.persistent = true
-L5_1.area_id = 7
-L6_1 = {}
-L6_1.config_id = 111004
-L6_1.gadget_id = 70211121
-L7_1 = {}
-L7_1.x = -668.192
-L7_1.y = 307.247
-L7_1.z = 620.123
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.683
-L7_1.y = 181.123
-L7_1.z = 3.051
-L6_1.rot = L7_1
-L6_1.level = 21
-L6_1.drop_tag = "\232\167\163\232\176\156\233\171\152\231\186\167\231\146\131\230\156\136"
-L6_1.showcutscene = true
-L6_1.isOneoff = true
-L6_1.persistent = true
-L7_1 = {}
-L7_1.name = "chest"
-L7_1.exp = 1
-L6_1.explore = L7_1
-L6_1.area_id = 7
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1111005
-L3_1.name = "GADGET_STATE_CHANGE_111005"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_111005"
-L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_111005"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1111006
-L4_1.name = "GADGET_STATE_CHANGE_111006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = ""
-L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_111006"
-L5_1 = {}
-L5_1.config_id = 1111007
-L5_1.name = "GADGET_CREATE_111007"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GADGET_CREATE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_GADGET_CREATE_111007"
-L5_1.action = "action_EVENT_GADGET_CREATE_111007"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "start"
-L3_1.value = 0
-L3_1.no_refresh = true
-L2_1[1] = L3_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 111001
-L6_1 = 111002
-L7_1 = 111003
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_STATE_CHANGE_111005"
-L6_1 = "GADGET_STATE_CHANGE_111006"
-L7_1 = "GADGET_CREATE_111007"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "start"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = suites
-  L3_2 = L3_2[1]
-  L3_2 = L3_2.gadgets
-  L3_2 = #L3_2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133107111
+}
+
+-- Trigger变量
+local defs = {
+	gadget_id = 111004
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 111001, gadget_id = 70330019, pos = { x = -663.216, y = 305.548, z = 596.128 }, rot = { x = 0.000, y = 61.045, z = 0.000 }, level = 24, persistent = true, area_id = 7 },
+	{ config_id = 111002, gadget_id = 70330019, pos = { x = -680.793, y = 305.898, z = 591.505 }, rot = { x = 2.713, y = 86.778, z = 358.664 }, level = 24, persistent = true, area_id = 7 },
+	{ config_id = 111003, gadget_id = 70330019, pos = { x = -676.573, y = 309.029, z = 612.795 }, rot = { x = 359.258, y = 30.299, z = 356.963 }, level = 24, persistent = true, area_id = 7 },
+	{ config_id = 111004, gadget_id = 70211121, pos = { x = -668.192, y = 307.247, z = 620.123 }, rot = { x = 0.683, y = 181.123, z = 3.051 }, level = 21, drop_tag = "解谜高级璃月", showcutscene = true, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 7 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1111005, name = "GADGET_STATE_CHANGE_111005", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_111005", action = "action_EVENT_GADGET_STATE_CHANGE_111005", trigger_count = 0 },
+	{ config_id = 1111006, name = "GADGET_STATE_CHANGE_111006", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "", action = "action_EVENT_GADGET_STATE_CHANGE_111006" },
+	{ config_id = 1111007, name = "GADGET_CREATE_111007", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_111007", action = "action_EVENT_GADGET_CREATE_111007" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "start", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 111001, 111002, 111003 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_111005", "GADGET_STATE_CHANGE_111006", "GADGET_CREATE_111007" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_111005(context, evt)
+	if ScriptLib.GetGroupVariableValue(context, "start") == #suites[1].gadgets then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_111005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  L3_2 = GadgetState
-  L3_2 = L3_2.GearStart
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "start"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-  else
-    L2_2 = A1_2.param1
-    L3_2 = GadgetState
-    L3_2 = L3_2.Default
-    if L2_2 == L3_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ChangeGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "start"
-      L5_2 = -1
-      L2_2(L3_2, L4_2, L5_2)
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "start"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = suites
-  L3_2 = L3_2[1]
-  L3_2 = L3_2.gadgets
-  L3_2 = #L3_2
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.CreateGadget
-    L3_2 = A0_2
-    L4_2 = {}
-    L5_2 = L1_1.gadget_id
-    L4_2.config_id = L5_2
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_111005(context, evt)
+	if evt.param1 == GadgetState.GearStart then
+		ScriptLib.ChangeGroupVariableValue(context,"start",1)
+	elseif evt.param1 == GadgetState.Default then
+		ScriptLib.ChangeGroupVariableValue(context,"start",-1)
+	end
+	
+	if ScriptLib.GetGroupVariableValue(context, "start") == #suites[1].gadgets then
+		ScriptLib.CreateGadget(context, { config_id = defs.gadget_id })
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_111005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.MarkPlayerAction
-  L3_2 = A0_2
-  L4_2 = 1008
-  L5_2 = 1
-  L6_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : mark_playerAction"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_111006(context, evt)
+	-- 运营数据埋点，匹配LD定义的规则使用
+	    if 0 ~= ScriptLib.MarkPlayerAction(context, 1008, 1, 1) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : mark_playerAction")
+	      return -1
+	    end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_111006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = L1_1.gadget_id
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_111007(context, evt)
+	if defs.gadget_id ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_111007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.MarkPlayerAction
-  L3_2 = A0_2
-  L4_2 = 1008
-  L5_2 = 3
-  L6_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : mark_playerAction"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_111007(context, evt)
+	-- 运营数据埋点，匹配LD定义的规则使用
+	    if 0 ~= ScriptLib.MarkPlayerAction(context, 1008, 3, 1) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : mark_playerAction")
+	      return -1
+	    end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_111007 = L2_1

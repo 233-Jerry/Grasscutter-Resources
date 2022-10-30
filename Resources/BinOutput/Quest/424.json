@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 3021578617,
-  "descTextMapHash": 0,
+  
   "id": 424,
   "ICLLDPJFIMA": 8001,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_ROOM",
-          "param": [
-            1013,
-            0
-          ],
+          "param": [1013, 0],
           "count": 0
         }
       ],
@@ -84,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            42404,
-            0
-          ],
+          "param": [42404, 0],
           "count": 0
         }
       ],
@@ -129,20 +123,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            42404,
-            0
-          ],
+          "param": [42404, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            42403,
-            0
-          ],
+          "param": [42403, 0],
           "count": 0
         }
       ],
@@ -183,20 +171,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            42404,
-            0
-          ],
+          "param": [42404, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            42404,
-            0
-          ],
+          "param": [42404, 0],
           "count": 0
         }
       ],
@@ -221,9 +203,7 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "42402"
-          ]
+          "param": ["42402"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -244,10 +224,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            42406,
-            0
-          ],
+          "param": [42406, 0],
           "count": 0
         }
       ],
@@ -289,10 +266,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            42404,
-            0
-          ],
+          "param": [42404, 0],
           "count": 0
         }
       ],
@@ -334,10 +308,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            42404,
-            0
-          ],
+          "param": [42404, 0],
           "count": 0
         }
       ],
@@ -366,12 +337,8 @@
     }
   ],
   "talks": [],
-  "LGCLJGGNGBD": [
-    950991834204
-  ],
-  "OMKMAOLMNCO": [
-    152352986623
-  ],
+  "LGCLJGGNGBD": [950991834204],
+  "OMKMAOLMNCO": [152352986623],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 0
 }

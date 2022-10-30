@@ -1,184 +1,113 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.group_id = 133212024
-L1_1 = {}
-L1_1.group_ID = 133212024
-L1_1.trigger_playRegion = 24006
-L1_1.gadget_1 = 24002
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 24001
-L4_1.gadget_id = 70950068
-L5_1 = {}
-L5_1.x = -4072.889
-L5_1.y = 203.659
-L5_1.z = -2660.426
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 10
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.area_id = 13
-L5_1 = {}
-L5_1.config_id = 24002
-L5_1.gadget_id = 70950070
-L6_1 = {}
-L6_1.x = -4052.26
-L6_1.y = 200.062
-L6_1.z = -2663.707
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 10
-L5_1.area_id = 13
-L6_1 = {}
-L6_1.config_id = 24003
-L6_1.gadget_id = 70950069
-L7_1 = {}
-L7_1.x = -4044.155
-L7_1.y = 214.076
-L7_1.z = -2687.192
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 10
-L6_1.area_id = 13
-L7_1 = {}
-L7_1.config_id = 24005
-L7_1.gadget_id = 70211101
-L8_1 = {}
-L8_1.x = -4049.132
-L8_1.y = 199.755
-L8_1.z = -2661.638
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 350.544
-L8_1.y = 265.905
-L8_1.z = 6.91
-L7_1.rot = L8_1
-L7_1.level = 26
-L7_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\231\168\187\229\166\187"
-L7_1.isOneoff = true
-L7_1.persistent = true
-L8_1 = {}
-L8_1.name = "chest"
-L8_1.exp = 1
-L7_1.explore = L8_1
-L7_1.area_id = 13
-L8_1 = {}
-L8_1.config_id = 24008
-L8_1.gadget_id = 70900387
-L9_1 = {}
-L9_1.x = -4043.282
-L9_1.y = 213.607
-L9_1.z = -2687.964
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 144.646
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 27
-L8_1.area_id = 13
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 24006
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 30
-L5_1 = {}
-L5_1.x = -4045.233
-L5_1.y = 200.637
-L5_1.z = -2660.892
-L4_1.pos = L5_1
-L4_1.area_id = 13
-L5_1 = {}
-L6_1 = "Move_Electric_Stake_Play"
-L5_1[1] = L6_1
-L4_1.team_ability_group_list = L5_1
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1024007
-L4_1.name = "VARIABLE_CHANGE_24007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_VARIABLE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = ""
-L4_1.action = ""
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-suites = L2_1
+-- 基础信息
+local base_info = {
+	group_id = 133212024
+}
+
+-- Trigger变量
+local defs = {
+	group_ID = 133212024,
+	trigger_playRegion = 24006,
+	gadget_1 = 24002
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 24001, gadget_id = 70950068, pos = { x = -4072.889, y = 203.659, z = -2660.426 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 10, state = GadgetState.GearStart, area_id = 13 },
+		{ config_id = 24002, gadget_id = 70950070, pos = { x = -4052.260, y = 200.062, z = -2663.707 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 10, area_id = 13 },
+		{ config_id = 24003, gadget_id = 70950069, pos = { x = -4044.155, y = 214.076, z = -2687.192 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 10, area_id = 13 },
+		{ config_id = 24005, gadget_id = 70211101, pos = { x = -4049.132, y = 199.755, z = -2661.638 }, rot = { x = 350.544, y = 265.905, z = 6.910 }, level = 26, drop_tag = "解谜低级稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 13 },
+		{ config_id = 24008, gadget_id = 70900387, pos = { x = -4043.282, y = 213.607, z = -2687.964 }, rot = { x = 0.000, y = 144.646, z = 0.000 }, level = 27, area_id = 13 }
+	},
+	regions = {
+		{ config_id = 24006, shape = RegionShape.SPHERE, radius = 30, pos = { x = -4045.233, y = 200.637, z = -2660.892 }, area_id = 13, team_ability_group_list = { "Move_Electric_Stake_Play" } }
+	},
+	triggers = {
+		{ config_id = 1024007, name = "VARIABLE_CHANGE_24007", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "", action = "" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

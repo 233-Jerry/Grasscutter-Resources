@@ -36,13 +36,13 @@
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Zhongli_GeoOrder",
       "paramSpecial": "Radius",
-      "paramRatio": "%1"
+      "paramRatio": "%1" //20%
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Zhongli_GeoOrder",
       "paramSpecial": "Petrifaction_Duration",
-      "paramDelta": "%2"
+      "paramDelta": "%2" //2.0
     }
   ],
   "Zhongli_Constellation_5": [
@@ -63,15 +63,28 @@
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Zhongli_RockShield",
       "paramSpecial": "HealRatio",
-      "paramDelta": "%1"
+      "paramDelta": "%1" //0.4
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Zhongli_RockShield",
       "paramSpecial": "healLimitedByLocalCreatureMaxHPRatio",
-      "paramDelta": "%2"
+      "paramDelta": "%2" //0.08
     }
   ],
+  // "Zhongli_CoreSkill":
+  // [
+  // 	{
+  // 		"$type": "AddAbility",
+  // 		"abilityName": "Avatar_Zhongli_RockFever",
+  // 	},
+  // 	{
+  // 		"$type" : "ModifyAbility",
+  // 		"abilityName" : "Avatar_Zhongli_RockFever",
+  // 		"paramSpecial" : "DPRatio",
+  // 		"paramDelta" : "%1",
+  // 	},
+  // ],
   "Zhongli_PermanentSkill_1": [
     {
       "$type": "UnlockTalentParam",
@@ -82,10 +95,11 @@
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Zhongli_RockShield",
       "paramSpecial": "ShieldCostMinusRatio",
-      "paramDelta": "%1"
+      "paramDelta": "%1" //0.05
     }
   ],
   "Zhongli_PermanentSkill_2": [
+    //	普攻/重击/下落攻击
     {
       "$type": "UnlockTalentParam",
       "abilityName": "Avatar_Zhongli_NormalAttack",
@@ -110,26 +124,27 @@
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Zhongli_NormalAttack",
       "paramSpecial": "HP2ATK_Ratio1",
-      "paramDelta": "%1"
+      "paramDelta": "%1" //0.01
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "SkillObj_Zhongli_Attack05",
       "paramSpecial": "HP2ATK_Ratio1",
-      "paramDelta": "%1"
+      "paramDelta": "%1" //0.01
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "SkillObj_Zhongli_ExtraAttack",
       "paramSpecial": "HP2ATK_Ratio1",
-      "paramDelta": "%1"
+      "paramDelta": "%1" //0.01
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Zhongli_FallingAnthem",
       "paramSpecial": "HP2ATK_Ratio1",
-      "paramDelta": "%1"
+      "paramDelta": "%1" //0.01
     },
+    //	小技能
     {
       "$type": "UnlockTalentParam",
       "abilityName": "SkillObj_Zhongli_PrimoPillar",
@@ -144,14 +159,15 @@
       "$type": "ModifyAbility",
       "abilityName": "SkillObj_Zhongli_PrimoPillar",
       "paramSpecial": "HP2ATK_Ratio2",
-      "paramDelta": "%2"
+      "paramDelta": "%2" //0.014
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Zhongli_RockShield",
       "paramSpecial": "HP2ATK_Ratio2",
-      "paramDelta": "%2"
+      "paramDelta": "%2" //0.014
     },
+    // 充能技
     {
       "$type": "UnlockTalentParam",
       "abilityName": "Avatar_Zhongli_GeoOrder",
@@ -161,7 +177,7 @@
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Zhongli_GeoOrder",
       "paramSpecial": "HP2ATK_Ratio3",
-      "paramDelta": "%3"
+      "paramDelta": "%3" //0.33
     }
   ],
   "Zhongli_SkillUpgrade_1": [

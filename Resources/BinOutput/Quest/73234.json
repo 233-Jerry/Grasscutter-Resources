@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 3898714615,
-  "descTextMapHash": 0,
+  
   "id": 73234,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7301303,
-            3
-          ],
+          "param": [7301303, 3],
           "count": 0
         }
       ],
@@ -67,19 +64,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_MODIFY_ARANARA_COLLECTION_STATE",
-          "param": [
-            "1",
-            "9",
-            "1"
-          ]
+          "param": ["1", "9", "1"]
         },
         {
           "type": "QUEST_EXEC_MODIFY_ARANARA_COLLECTION_STATE",
-          "param": [
-            "1",
-            "10",
-            "1"
-          ]
+          "param": ["1", "10", "1"]
         }
       ],
       "failExec": [],
@@ -101,10 +90,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [
-            101643,
-            0
-          ],
+          "param": [101643, 0],
           "count": 1
         }
       ],
@@ -129,11 +115,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_MODIFY_ARANARA_COLLECTION_STATE",
-          "param": [
-            "1",
-            "10",
-            "3"
-          ]
+          "param": ["1", "10", "3"]
         }
       ],
       "failExec": [],
@@ -155,20 +137,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ITEM_LESS_THAN",
-          "param": [
-            101643,
-            1
-          ],
+          "param": [101643, 1],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7323402,
-            3
-          ],
+          "param": [7323402, 3],
           "count": 0
         }
       ],

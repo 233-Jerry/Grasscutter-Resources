@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    170143
-  ],
+  "rewardIdList": [170143],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7014301,
-            0
-          ],
+          "param": [7014301, 0],
           "count": 0
         }
       ],
@@ -52,10 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1665",
-          "SELECT_NPC_NONE"
-        ],
+        "param": ["1665", "SELECT_NPC_NONE"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_FINISH",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -89,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7014302,
-            0
-          ],
+          "param": [7014302, 0],
           "count": 0
         }
       ],
@@ -100,10 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1512",
-          "SELECT_NPC_NONE"
-        ],
+        "param": ["1512", "SELECT_NPC_NONE"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -133,10 +119,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7014301",
-            "2"
-          ]
+          "param": ["7014301", "2"]
         }
       ],
       "priority": 5,
@@ -145,9 +128,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 701430101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1665
-      ],
+      "npcIdRawNum": [1665],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -183,10 +164,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7014302",
-            "2"
-          ]
+          "param": ["7014302", "2"]
         }
       ],
       "priority": 5,
@@ -195,9 +173,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 701430201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1512
-      ],
+      "npcIdRawNum": [1512],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

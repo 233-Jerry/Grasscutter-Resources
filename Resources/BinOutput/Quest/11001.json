@@ -12,13 +12,9 @@
   "_luaPath": "Actor/Quest/LQ11001",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    11002
-  ],
+  "PEOHODAKLNO": [11002],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    111001
-  ],
+  "rewardIdList": [111001],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -43,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1100101,
-            0
-          ],
+          "param": [1100101, 0],
           "count": 0
         }
       ],
@@ -54,9 +47,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "153701"
-        ],
+        "param": ["153701"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -73,10 +64,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133002317,1"
-          ]
+          "param": ["3", "133002317,1"]
         }
       ],
       "failExec": [],
@@ -98,10 +86,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1100102,
-            0
-          ],
+          "param": [1100102, 0],
           "count": 0
         }
       ],
@@ -109,9 +94,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "153701"
-        ],
+        "param": ["153701"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -145,20 +128,14 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1100103,
-            0
-          ],
+          "param": [1100103, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "_type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            1100103,
-            0
-          ],
+          "param": [1100103, 0],
           "count": 0
         }
       ],
@@ -183,9 +160,7 @@
       "failExec": [
         {
           "_type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "1100101"
-          ]
+          "param": ["1100101"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -206,10 +181,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1100104,
-            0
-          ],
+          "param": [1100104, 0],
           "count": 0
         }
       ],
@@ -217,9 +189,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1012"
-        ],
+        "param": ["1012"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -249,10 +219,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1100102",
-            "2"
-          ]
+          "param": ["1100102", "2"]
         }
       ],
       "priority": 5,
@@ -261,9 +228,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 110010201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        153701
-      ],
+      "npcIdRawNum": [153701],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Xiangling1_11001/Q1100102",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -299,10 +264,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1100104",
-            "2"
-          ]
+          "param": ["1100104", "2"]
         }
       ],
       "priority": 5,
@@ -311,9 +273,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 110010401,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1012
-      ],
+      "npcIdRawNum": [1012],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Xiangling1_11001/Q1100104",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -341,33 +301,12 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    645902683150,
-    469536908432,
-    451268085616
-  ],
-  "OMKMAOLMNCO": [
-    577643403332
-  ],
+  "LGCLJGGNGBD": [645902683150, 469536908432, 451268085616],
+  "OMKMAOLMNCO": [577643403332],
   "KPOKLMBEOBI": {
-    "1012": [
-      1090,
-      1120,
-      1180,
-      1220
-    ],
-    "153701": [
-      1090,
-      1120,
-      1180,
-      1220
-    ],
-    "154101": [
-      1090,
-      1120,
-      1180,
-      1220
-    ]
+    "1012": [1090, 1120, 1180, 1220],
+    "153701": [1090, 1120, 1180, 1220],
+    "154101": [1090, 1120, 1180, 1220]
   },
   "MGDNNNGPOGO": 111001
 }

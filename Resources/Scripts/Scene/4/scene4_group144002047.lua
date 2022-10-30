@@ -1,835 +1,163 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1
-L0_1 = {}
-L0_1.group_id = 144002047
-L1_1 = {}
-L1_1.group_id = 144002047
-L1_1.monster_shaman = 0
-L2_1 = {}
-L1_1.gadget_barrier = L2_1
-L2_1 = {}
-L1_1.TowerBridges = L2_1
-L2_1 = {}
-L2_1.x = 285
-L2_1.y = 200
-L2_1.z = -276
-L1_1.point = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 47001
-L3_1.monster_id = 21010401
-L4_1 = {}
-L4_1.x = 310.51
-L4_1.y = 203.761
-L4_1.z = -298.966
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 52.372
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.drop_id = 1000100
-L3_1.disableWander = true
-L3_1.area_id = 101
-L4_1 = {}
-L4_1.config_id = 47002
-L4_1.monster_id = 21010502
-L5_1 = {}
-L5_1.x = 308.604
-L5_1.y = 203.645
-L5_1.z = -296.871
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 47.626
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.drop_id = 1000100
-L4_1.disableWander = true
-L4_1.pose_id = 32
-L4_1.area_id = 101
-L5_1 = {}
-L5_1.config_id = 47003
-L5_1.monster_id = 21011001
-L6_1 = {}
-L6_1.x = 273.145
-L6_1.y = 205.99
-L6_1.z = -240.164
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 160.499
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.drop_id = 1000100
-L5_1.disableWander = true
-L5_1.pose_id = 32
-L5_1.area_id = 101
-L6_1 = {}
-L6_1.config_id = 47004
-L6_1.monster_id = 21010401
-L7_1 = {}
-L7_1.x = 284.222
-L7_1.y = 203.641
-L7_1.z = -279.685
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 58.916
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.drop_id = 1000100
-L6_1.disableWander = true
-L6_1.area_id = 101
-L7_1 = {}
-L7_1.config_id = 47005
-L7_1.monster_id = 21010502
-L8_1 = {}
-L8_1.x = 282.718
-L8_1.y = 203.737
-L8_1.z = -277.043
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 58.89
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.drop_id = 1000100
-L7_1.disableWander = true
-L7_1.area_id = 101
-L8_1 = {}
-L8_1.config_id = 47006
-L8_1.monster_id = 21010401
-L9_1 = {}
-L9_1.x = 271.792
-L9_1.y = 206.066
-L9_1.z = -246.1
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 161.772
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.drop_id = 1000100
-L8_1.disableWander = true
-L8_1.area_id = 101
-L9_1 = {}
-L9_1.config_id = 47007
-L9_1.monster_id = 21010401
-L10_1 = {}
-L10_1.x = 277.36
-L10_1.y = 206.018
-L10_1.z = -244.797
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 163.327
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.drop_id = 1000100
-L9_1.disableWander = true
-L9_1.area_id = 101
-L10_1 = {}
-L10_1.config_id = 47008
-L10_1.monster_id = 21010501
-L11_1 = {}
-L11_1.x = 270.936
-L11_1.y = 206.025
-L11_1.z = -241.675
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 128.881
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L10_1.drop_id = 1000100
-L10_1.disableWander = true
-L10_1.area_id = 101
-L11_1 = {}
-L11_1.config_id = 47009
-L11_1.monster_id = 21010301
-L12_1 = {}
-L12_1.x = 271.479
-L12_1.y = 206.056
-L12_1.z = -243.782
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 58.495
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L11_1.drop_id = 1000100
-L11_1.disableWander = true
-L11_1.area_id = 101
-L12_1 = {}
-L12_1.config_id = 47010
-L12_1.monster_id = 21010401
-L13_1 = {}
-L13_1.x = 276.479
-L13_1.y = 206.02
-L13_1.z = -243.393
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 252.382
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 1
-L12_1.drop_id = 1000100
-L12_1.disableWander = true
-L12_1.area_id = 101
-L13_1 = {}
-L13_1.config_id = 47011
-L13_1.monster_id = 21010201
-L14_1 = {}
-L14_1.x = 275.776
-L14_1.y = 206.189
-L14_1.z = -240.53
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 199.349
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L13_1.drop_id = 1000100
-L13_1.disableWander = true
-L13_1.area_id = 101
-L14_1 = {}
-L14_1.config_id = 47012
-L14_1.monster_id = 21010301
-L15_1 = {}
-L15_1.x = 274.091
-L15_1.y = 206.183
-L15_1.z = -242.801
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 162.587
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 1
-L14_1.drop_id = 1000100
-L14_1.disableWander = true
-L14_1.area_id = 101
-L15_1 = {}
-L15_1.config_id = 47018
-L15_1.monster_id = 21010501
-L16_1 = {}
-L16_1.x = 277.086
-L16_1.y = 205.968
-L16_1.z = -244.812
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 309.394
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 1
-L15_1.disableWander = true
-L15_1.area_id = 101
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-L2_1[13] = L15_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 47015
-L3_1.gadget_id = 70950092
-L4_1 = {}
-L4_1.x = 308.615
-L4_1.y = 200.0
-L4_1.z = -298.665
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 50.954
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = GadgetState
-L4_1 = L4_1.GearStart
-L3_1.state = L4_1
-L3_1.area_id = 101
-L4_1 = {}
-L4_1.config_id = 47016
-L4_1.gadget_id = 70950092
-L5_1 = {}
-L5_1.x = 282.564
-L5_1.y = 200.0
-L5_1.z = -278.784
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 238.373
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.area_id = 101
-L5_1 = {}
-L5_1.config_id = 47017
-L5_1.gadget_id = 70290059
-L6_1 = {}
-L6_1.x = 273.049
-L6_1.y = 200.0
-L6_1.z = -243.457
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 207.8
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L5_1.area_id = 101
-L6_1 = {}
-L6_1.config_id = 47020
-L6_1.gadget_id = 70290057
-L7_1 = {}
-L7_1.x = 281.969
-L7_1.y = 199.407
-L7_1.z = -284.913
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 6.825
-L7_1.y = 190.046
-L7_1.z = 10.439
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 101
-L7_1 = {}
-L7_1.config_id = 47021
-L7_1.gadget_id = 70290056
-L8_1 = {}
-L8_1.x = 293.343
-L8_1.y = 200.0
-L8_1.z = -270.876
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 96.806
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.area_id = 101
-L8_1 = {}
-L8_1.config_id = 47022
-L8_1.gadget_id = 70290057
-L9_1 = {}
-L9_1.x = 277.229
-L9_1.y = 200.0
-L9_1.z = -276.924
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 105.346
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.area_id = 101
-L9_1 = {}
-L9_1.config_id = 47023
-L9_1.gadget_id = 70290057
-L10_1 = {}
-L10_1.x = 308.403
-L10_1.y = 200.0
-L10_1.z = -303.726
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 15.905
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.area_id = 101
-L10_1 = {}
-L10_1.config_id = 47024
-L10_1.gadget_id = 70290057
-L11_1 = {}
-L11_1.x = 302.885
-L11_1.y = 200.0
-L11_1.z = -297.193
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 97.705
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L10_1.area_id = 101
-L11_1 = {}
-L11_1.config_id = 47025
-L11_1.gadget_id = 70290061
-L12_1 = {}
-L12_1.x = 265.004
-L12_1.y = 200.0
-L12_1.z = -244.388
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 88.1
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L11_1.area_id = 101
-L12_1 = {}
-L12_1.config_id = 47026
-L12_1.gadget_id = 70290057
-L13_1 = {}
-L13_1.x = 272.619
-L13_1.y = 200.0
-L13_1.z = -233.664
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 169.6
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 1
-L12_1.area_id = 101
-L13_1 = {}
-L13_1.config_id = 47048
-L13_1.gadget_id = 70290056
-L14_1 = {}
-L14_1.x = 288.06
-L14_1.y = 200.0
-L14_1.z = -296.969
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 96.806
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L13_1.area_id = 101
-L14_1 = {}
-L14_1.config_id = 47049
-L14_1.gadget_id = 70290056
-L15_1 = {}
-L15_1.x = 265.052
-L15_1.y = 200.0
-L15_1.z = -265.565
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 96.806
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 1
-L14_1.area_id = 101
-L15_1 = {}
-L15_1.config_id = 47050
-L15_1.gadget_id = 70290061
-L16_1 = {}
-L16_1.x = 281.486
-L16_1.y = 200.0
-L16_1.z = -239.836
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 71.741
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 1
-L15_1.area_id = 101
-L16_1 = {}
-L16_1.config_id = 47051
-L16_1.gadget_id = 70350254
-L17_1 = {}
-L17_1.x = 318.422
-L17_1.y = 200.0
-L17_1.z = -300.996
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 348.977
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 1
-L16_1.area_id = 101
-L17_1 = {}
-L17_1.config_id = 47052
-L17_1.gadget_id = 70350254
-L18_1 = {}
-L18_1.x = 316.664
-L18_1.y = 200.0
-L18_1.z = -291.97
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 290.193
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 1
-L17_1.area_id = 101
-L18_1 = {}
-L18_1.config_id = 47053
-L18_1.gadget_id = 70350254
-L19_1 = {}
-L19_1.x = 308.019
-L19_1.y = 200.0
-L19_1.z = -288.79
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 290.193
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.level = 1
-L18_1.area_id = 101
-L19_1 = {}
-L19_1.config_id = 47054
-L19_1.gadget_id = 70350254
-L20_1 = {}
-L20_1.x = 292.207
-L20_1.y = 200.0
-L20_1.z = -282.434
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 0.0
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.level = 1
-L19_1.area_id = 101
-L20_1 = {}
-L20_1.config_id = 47055
-L20_1.gadget_id = 70350254
-L21_1 = {}
-L21_1.x = 281.619
-L21_1.y = 200.0
-L21_1.z = -266.999
-L20_1.pos = L21_1
-L21_1 = {}
-L21_1.x = 0.0
-L21_1.y = 0.0
-L21_1.z = 0.0
-L20_1.rot = L21_1
-L20_1.level = 1
-L20_1.area_id = 101
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-L2_1[13] = L15_1
-L2_1[14] = L16_1
-L2_1[15] = L17_1
-L2_1[16] = L18_1
-L2_1[17] = L19_1
-L2_1[18] = L20_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 47013
-L4_1.gadget_id = 70360128
-L5_1 = {}
-L5_1.x = 271.578
-L5_1.y = 200.356
-L5_1.z = -244.16
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 96.806
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.persistent = true
-L4_1.area_id = 101
-L5_1 = {}
-L5_1.config_id = 47014
-L5_1.gadget_id = 70210113
-L6_1 = {}
-L6_1.x = 271.578
-L6_1.y = 200.356
-L6_1.z = -244.16
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 96.806
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 16
-L5_1.chest_drop_id = 1000100
-L5_1.drop_count = 1
-L5_1.showcutscene = true
-L5_1.persistent = true
-L5_1.is_blossom_chest = true
-L5_1.area_id = 101
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1047038
-L4_1.name = "ANY_MONSTER_DIE_47038"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ANY_MONSTER_DIE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = ""
-L4_1.action = "action_EVENT_ANY_MONSTER_DIE_47038"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1047039
-L5_1.name = "CHALLENGE_FAIL_47039"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_CHALLENGE_FAIL
-L5_1.event = L6_1
-L5_1.source = "1"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_CHALLENGE_FAIL_47039"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1047040
-L6_1.name = "GADGET_CREATE_47040"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GADGET_CREATE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_GADGET_CREATE_47040"
-L6_1.action = "action_EVENT_GADGET_CREATE_47040"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1047041
-L7_1.name = "GROUP_REFRESH_47041"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GROUP_REFRESH
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = ""
-L7_1.action = "action_EVENT_GROUP_REFRESH_47041"
-L8_1 = {}
-L8_1.config_id = 1047042
-L8_1.name = "BLOSSOM_CHEST_DIE_47042"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_BLOSSOM_CHEST_DIE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_BLOSSOM_CHEST_DIE_47042"
-L8_1.action = "action_EVENT_BLOSSOM_CHEST_DIE_47042"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1047043
-L9_1.name = "SELECT_OPTION_47043"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_SELECT_OPTION
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_SELECT_OPTION_47043"
-L9_1.action = "action_EVENT_SELECT_OPTION_47043"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1047044
-L10_1.name = "BLOSSOM_PROGRESS_FINISH_47044"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_BLOSSOM_PROGRESS_FINISH
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = ""
-L10_1.action = "action_EVENT_BLOSSOM_PROGRESS_FINISH_47044"
-L11_1 = {}
-L11_1.config_id = 1047045
-L11_1.name = "GROUP_LOAD_47045"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_GROUP_LOAD
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = ""
-L11_1.action = "action_EVENT_GROUP_LOAD_47045"
-L12_1 = {}
-L12_1.config_id = 1047046
-L12_1.name = "ANY_MONSTER_DIE_47046"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_ANY_MONSTER_DIE
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = "condition_EVENT_ANY_MONSTER_DIE_47046"
-L12_1.action = "action_EVENT_ANY_MONSTER_DIE_47046"
-L13_1 = {}
-L13_1.config_id = 1047047
-L13_1.name = "ANY_MONSTER_DIE_47047"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_ANY_MONSTER_DIE
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_ANY_MONSTER_DIE_47047"
-L13_1.action = "action_EVENT_ANY_MONSTER_DIE_47047"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L3_1 = false
-L2_1.rand_suite = L3_1
-init_config = L2_1
-L2_1 = "suites"
-L3_1 = {}
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 47015
-L7_1 = 47016
-L8_1 = 47017
-L9_1 = 47020
-L10_1 = 47021
-L11_1 = 47022
-L12_1 = 47023
-L13_1 = 47024
-L14_1 = 47025
-L15_1 = 47026
-L16_1 = 47048
-L17_1 = 47049
-L18_1 = 47050
-L19_1 = 47051
-L20_1 = 47052
-L21_1 = 47053
-L22_1 = 47054
-L23_1 = 47055
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L5_1[7] = L12_1
-L5_1[8] = L13_1
-L5_1[9] = L14_1
-L5_1[10] = L15_1
-L5_1[11] = L16_1
-L5_1[12] = L17_1
-L5_1[13] = L18_1
-L5_1[14] = L19_1
-L5_1[15] = L20_1
-L5_1[16] = L21_1
-L5_1[17] = L22_1
-L5_1[18] = L23_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L5_1 = "rand_weight"
-L6_1 = 100
-L4_1[L5_1] = L6_1
-L5_1 = {}
-L6_1 = {}
-L7_1 = 47001
-L8_1 = 47002
-L9_1 = 47004
-L10_1 = 47005
-L11_1 = 47006
-L12_1 = 47007
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L6_1 = "rand_weight"
-L7_1 = 100
-L5_1[L6_1] = L7_1
-L6_1 = {}
-L7_1 = {}
-L8_1 = 47003
-L9_1 = 47009
-L10_1 = 47010
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L7_1 = "rand_weight"
-L8_1 = 100
-L6_1[L7_1] = L8_1
-L7_1 = {}
-L8_1 = {}
-L9_1 = 47008
-L10_1 = 47011
-L11_1 = 47012
-L12_1 = 47018
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L8_1[3] = L11_1
-L8_1[4] = L12_1
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L7_1.triggers = L8_1
-L8_1 = "rand_weight"
-L9_1 = 100
-L7_1[L8_1] = L9_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-_ENV[L2_1] = L3_1
-L2_1 = "require"
-L2_1 = _ENV[L2_1]
-L3_1 = "V1_6/VehicleBattle"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 144002047
+}
+
+-- Trigger变量
+local defs = {
+	group_id = 144002047,
+	monster_shaman = 0,
+	gadget_barrier  = {},
+	TowerBridges = {},
+	point = {x=285,y=200,z=-276}
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 47001, monster_id = 21010401, pos = { x = 310.510, y = 203.761, z = -298.966 }, rot = { x = 0.000, y = 52.372, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, area_id = 101 },
+	{ config_id = 47002, monster_id = 21010502, pos = { x = 308.604, y = 203.645, z = -296.871 }, rot = { x = 0.000, y = 47.626, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, pose_id = 32, area_id = 101 },
+	{ config_id = 47003, monster_id = 21011001, pos = { x = 273.145, y = 205.990, z = -240.164 }, rot = { x = 0.000, y = 160.499, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, pose_id = 32, area_id = 101 },
+	{ config_id = 47004, monster_id = 21010401, pos = { x = 284.222, y = 203.641, z = -279.685 }, rot = { x = 0.000, y = 58.916, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, area_id = 101 },
+	{ config_id = 47005, monster_id = 21010502, pos = { x = 282.718, y = 203.737, z = -277.043 }, rot = { x = 0.000, y = 58.890, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, area_id = 101 },
+	{ config_id = 47006, monster_id = 21010401, pos = { x = 271.792, y = 206.066, z = -246.100 }, rot = { x = 0.000, y = 161.772, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, area_id = 101 },
+	{ config_id = 47007, monster_id = 21010401, pos = { x = 277.360, y = 206.018, z = -244.797 }, rot = { x = 0.000, y = 163.327, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, area_id = 101 },
+	{ config_id = 47008, monster_id = 21010501, pos = { x = 270.936, y = 206.025, z = -241.675 }, rot = { x = 0.000, y = 128.881, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, area_id = 101 },
+	{ config_id = 47009, monster_id = 21010301, pos = { x = 271.479, y = 206.056, z = -243.782 }, rot = { x = 0.000, y = 58.495, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, area_id = 101 },
+	{ config_id = 47010, monster_id = 21010401, pos = { x = 276.479, y = 206.020, z = -243.393 }, rot = { x = 0.000, y = 252.382, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, area_id = 101 },
+	{ config_id = 47011, monster_id = 21010201, pos = { x = 275.776, y = 206.189, z = -240.530 }, rot = { x = 0.000, y = 199.349, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, area_id = 101 },
+	{ config_id = 47012, monster_id = 21010301, pos = { x = 274.091, y = 206.183, z = -242.801 }, rot = { x = 0.000, y = 162.587, z = 0.000 }, level = 1, drop_id = 1000100, disableWander = true, area_id = 101 },
+	{ config_id = 47018, monster_id = 21010501, pos = { x = 277.086, y = 205.968, z = -244.812 }, rot = { x = 0.000, y = 309.394, z = 0.000 }, level = 1, disableWander = true, area_id = 101 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	-- 可摧毁小哨塔A
+	{ config_id = 47015, gadget_id = 70950092, pos = { x = 308.615, y = 200.000, z = -298.665 }, rot = { x = 0.000, y = 50.954, z = 0.000 }, level = 1, state = GadgetState.GearStart, area_id = 101 },
+	-- 可摧毁小哨塔B
+	{ config_id = 47016, gadget_id = 70950092, pos = { x = 282.564, y = 200.000, z = -278.784 }, rot = { x = 0.000, y = 238.373, z = 0.000 }, level = 1, state = GadgetState.GearStart, area_id = 101 },
+	-- 不可摧毁大哨塔A
+	{ config_id = 47017, gadget_id = 70290059, pos = { x = 273.049, y = 200.000, z = -243.457 }, rot = { x = 0.000, y = 207.800, z = 0.000 }, level = 1, state = GadgetState.GearStart, area_id = 101 },
+	{ config_id = 47020, gadget_id = 70290057, pos = { x = 281.969, y = 199.407, z = -284.913 }, rot = { x = 6.825, y = 190.046, z = 10.439 }, level = 1, area_id = 101 },
+	{ config_id = 47021, gadget_id = 70290056, pos = { x = 293.343, y = 200.000, z = -270.876 }, rot = { x = 0.000, y = 96.806, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47022, gadget_id = 70290057, pos = { x = 277.229, y = 200.000, z = -276.924 }, rot = { x = 0.000, y = 105.346, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47023, gadget_id = 70290057, pos = { x = 308.403, y = 200.000, z = -303.726 }, rot = { x = 0.000, y = 15.905, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47024, gadget_id = 70290057, pos = { x = 302.885, y = 200.000, z = -297.193 }, rot = { x = 0.000, y = 97.705, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47025, gadget_id = 70290061, pos = { x = 265.004, y = 200.000, z = -244.388 }, rot = { x = 0.000, y = 88.100, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47026, gadget_id = 70290057, pos = { x = 272.619, y = 200.000, z = -233.664 }, rot = { x = 0.000, y = 169.600, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47048, gadget_id = 70290056, pos = { x = 288.060, y = 200.000, z = -296.969 }, rot = { x = 0.000, y = 96.806, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47049, gadget_id = 70290056, pos = { x = 265.052, y = 200.000, z = -265.565 }, rot = { x = 0.000, y = 96.806, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47050, gadget_id = 70290061, pos = { x = 281.486, y = 200.000, z = -239.836 }, rot = { x = 0.000, y = 71.741, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47051, gadget_id = 70350254, pos = { x = 318.422, y = 200.000, z = -300.996 }, rot = { x = 0.000, y = 348.977, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47052, gadget_id = 70350254, pos = { x = 316.664, y = 200.000, z = -291.970 }, rot = { x = 0.000, y = 290.193, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47053, gadget_id = 70350254, pos = { x = 308.019, y = 200.000, z = -288.790 }, rot = { x = 0.000, y = 290.193, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47054, gadget_id = 70350254, pos = { x = 292.207, y = 200.000, z = -282.434 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 101 },
+	{ config_id = 47055, gadget_id = 70350254, pos = { x = 281.619, y = 200.000, z = -266.999 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 101 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 47013, gadget_id = 70360128, pos = { x = 271.578, y = 200.356, z = -244.160 }, rot = { x = 0.000, y = 96.806, z = 0.000 }, level = 1, persistent = true, area_id = 101 },
+		{ config_id = 47014, gadget_id = 70210113, pos = { x = 271.578, y = 200.356, z = -244.160 }, rot = { x = 0.000, y = 96.806, z = 0.000 }, level = 16, chest_drop_id = 1000100, drop_count = 1, showcutscene = true, persistent = true, is_blossom_chest = true, area_id = 101 }
+	},
+	triggers = {
+		{ config_id = 1047038, name = "ANY_MONSTER_DIE_47038", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "", action = "action_EVENT_ANY_MONSTER_DIE_47038", trigger_count = 0 },
+		{ config_id = 1047039, name = "CHALLENGE_FAIL_47039", event = EventType.EVENT_CHALLENGE_FAIL, source = "1", condition = "", action = "action_EVENT_CHALLENGE_FAIL_47039", trigger_count = 0 },
+		{ config_id = 1047040, name = "GADGET_CREATE_47040", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_47040", action = "action_EVENT_GADGET_CREATE_47040", trigger_count = 0 },
+		{ config_id = 1047041, name = "GROUP_REFRESH_47041", event = EventType.EVENT_GROUP_REFRESH, source = "", condition = "", action = "action_EVENT_GROUP_REFRESH_47041" },
+		{ config_id = 1047042, name = "BLOSSOM_CHEST_DIE_47042", event = EventType.EVENT_BLOSSOM_CHEST_DIE, source = "", condition = "condition_EVENT_BLOSSOM_CHEST_DIE_47042", action = "action_EVENT_BLOSSOM_CHEST_DIE_47042", trigger_count = 0 },
+		{ config_id = 1047043, name = "SELECT_OPTION_47043", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_47043", action = "action_EVENT_SELECT_OPTION_47043", trigger_count = 0 },
+		{ config_id = 1047044, name = "BLOSSOM_PROGRESS_FINISH_47044", event = EventType.EVENT_BLOSSOM_PROGRESS_FINISH, source = "", condition = "", action = "action_EVENT_BLOSSOM_PROGRESS_FINISH_47044" },
+		{ config_id = 1047045, name = "GROUP_LOAD_47045", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_47045" },
+		{ config_id = 1047046, name = "ANY_MONSTER_DIE_47046", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_47046", action = "action_EVENT_ANY_MONSTER_DIE_47046" },
+		{ config_id = 1047047, name = "ANY_MONSTER_DIE_47047", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_47047", action = "action_EVENT_ANY_MONSTER_DIE_47047" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 47015, 47016, 47017, 47020, 47021, 47022, 47023, 47024, 47025, 47026, 47048, 47049, 47050, 47051, 47052, 47053, 47054, 47055 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = [默认在场的第一组魔物],
+		monsters = { 47001, 47002, 47004, 47005, 47006, 47007 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = [第二波怪物],
+		monsters = { 47003, 47009, 47010 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = [第三波怪物],
+		monsters = { 47008, 47011, 47012, 47018 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V1_6/VehicleBattle"

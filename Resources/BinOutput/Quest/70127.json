@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 2300022351,
-  "descTextMapHash": 0,
+  
   "id": 70127,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7012701,
-            0
-          ],
+          "param": [7012701, 0],
           "count": 0
         }
       ],
@@ -67,17 +64,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133008597"
-          ]
+          "param": ["3", "133008597"]
         },
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
-          "param": [
-            "7012704",
-            "1"
-          ]
+          "param": ["7012704", "1"]
         }
       ],
       "failExec": [],
@@ -99,10 +90,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7012702,
-            0
-          ],
+          "param": [7012702, 0],
           "count": 0
         }
       ],
@@ -127,17 +115,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133008598"
-          ]
+          "param": ["3", "133008598"]
         },
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
-          "param": [
-            "7012704",
-            "1"
-          ]
+          "param": ["7012704", "1"]
         }
       ],
       "failExec": [],
@@ -159,10 +141,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            7012704,
-            0
-          ],
+          "param": [7012704, 0],
           "count": 2
         }
       ],
@@ -204,9 +183,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 701270101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20214
-      ],
+      "npcIdRawNum": [20214],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -246,9 +223,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 701270201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20215
-      ],
+      "npcIdRawNum": [20215],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

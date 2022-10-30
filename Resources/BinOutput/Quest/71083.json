@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 3887537215,
-  "descTextMapHash": 0,
+  
   "id": 71083,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,18 +39,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7108301,
-            0
-          ],
+          "param": [7108301, 0],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7103711,
-            3
-          ],
+          "param": [7103711, 3],
           "count": 0
         }
       ],
@@ -92,10 +86,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7104520,
-            3
-          ],
+          "param": [7104520, 3],
           "count": 0
         }
       ],
@@ -133,17 +124,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7108301",
-            "2"
-          ]
+          "param": ["7108301", "2"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7107403",
-            "3"
-          ]
+          "param": ["7107403", "3"]
         }
       ],
       "priority": 7,
@@ -152,9 +137,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 710830101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        2061
-      ],
+      "npcIdRawNum": [2061],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -190,24 +173,15 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7108302",
-            "2"
-          ]
+          "param": ["7108302", "2"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7109702",
-            "3"
-          ]
+          "param": ["7109702", "3"]
         },
         {
           "type": "QUEST_COND_QUEST_NOT_RECEIVE",
-          "param": [
-            "7104520",
-            "1"
-          ]
+          "param": ["7104520", "1"]
         }
       ],
       "priority": 5,
@@ -216,9 +190,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 710830201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        2061
-      ],
+      "npcIdRawNum": [2061],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

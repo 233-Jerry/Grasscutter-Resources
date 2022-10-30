@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 3812184511,
-  "descTextMapHash": 0,
+  
   "id": 72251,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -84,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7225102,
-            0
-          ],
+          "param": [7225102, 0],
           "count": 0
         }
       ],
@@ -129,10 +123,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7225101,
-            0
-          ],
+          "param": [7225101, 0],
           "count": 0
         }
       ],
@@ -170,17 +161,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7225101",
-            "3"
-          ]
+          "param": ["7225101", "3"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7225103",
-            "2"
-          ]
+          "param": ["7225103", "2"]
         }
       ],
       "priority": 0,
@@ -189,9 +174,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 722510101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1005
-      ],
+      "npcIdRawNum": [1005],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Inazuma_72251/Q7225101",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -219,9 +202,7 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    645902683150
-  ],
+  "LGCLJGGNGBD": [645902683150],
   "OMKMAOLMNCO": [],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 0

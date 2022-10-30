@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    140023
-  ],
+  "rewardIdList": [140023],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            4002301,
-            0
-          ],
+          "param": [4002301, 0],
           "count": 0
         }
       ],
@@ -52,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "30067"
-        ],
+        "param": ["30067"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -71,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "40023",
-            "1"
-          ]
+          "param": ["40023", "1"]
         }
       ],
       "failExec": [],
@@ -128,10 +118,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4002301",
-            "2"
-          ]
+          "param": ["4002301", "2"]
         }
       ],
       "priority": 5,
@@ -140,9 +127,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 400230101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30067
-      ],
+      "npcIdRawNum": [30067],
       "GHNCIOJDIEA": "QuestDialogue/EQ/OnmyoMaze_40023/Q4002301",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

@@ -1,418 +1,274 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 155008187
-L1_1 = {}
-L1_1.group_ID = 155008187
-L1_1.CallCheckFunction = 0
-L2_1 = {}
-L3_1 = {}
-L4_1 = 155008201
-L5_1 = 1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1[1] = L3_1
-L3_1 = {}
-function L4_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 1
-  L1_2(L2_2, L3_2, L4_2)
+-- 基础信息
+local base_info = {
+	group_id = 155008187
+}
+
+-- Trigger变量
+local defs = {
+	group_ID = 155008187,
+	CallCheckFunction = 0
+}
+
+-- DEFS_MISCS
+local pairsgrouplist = 
+{
+	{155008201,1}
+}
+--[[
+	Variable:
+	ScriptLib.GetGroupVariableValue(context, name)
+	ScriptLib.GetGroupVariableValueByGroup(context, name, group_id)
+	ScriptLib.SetGroupVariableValue(context, name, value)
+	ScriptLib.SetGroupVariableValueByGroup(context, name, value, group_id)
+
+	GadgetState:
+	ScriptLib.GetGadgetStateByConfigId(context, group_id, config_id)
+	ScriptLib.SetGroupGadgetStateByConfigId(context, group_id, config_id, gadget_state)
+
+	Option:
+	ScriptLib.SetWorktopOptionsByGroupId(context, group_id, config_id, {option_table})
+	ScriptLib.DelWorktopOptionByGroupId(context, group_id, config_id, option_id)
+
+	SuiteControll:
+	ScriptLib.GoToGroupSuite(context, group_id, suite_index)
+	ScriptLib.AddExtraGroupSuite(context, group_id, suite_index)
+
+	TimeAxis:
+	ScriptLib.InitTimeAxis(context, key, timer, is_loop)
+	ScriptLib.EndTimeAxis(context, key)
+	ScriptLib.PauseTimeAxis(context, key)
+	ScriptLib.ContinueTimeAxis(context, key)
+
+	ScriptLib.SetPlatformPointArray(context, gadget_id, pointarray_id, {pointarrayindexlist}, { route_type = 0 })
+]]
+local gameplayStateFuncitons = 
+{
+	["0"] = function(context)
+		
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",1)
+		
+	end,
+	["1"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",0)
+		ScriptLib.AddExtraGroupSuite(context, defs.group_ID, 2)
+		
+		
+	end,
+	["2"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",0)
+		ScriptLib.AddExtraGroupSuite(context, defs.group_ID, 2)
+
+		ScriptLib.SetGroupVariableValueByGroup(context, "gameplayState", 2, 155008189) 
+		
+		
+	end
+
+}
+
+
+function UpdateGamePlayState(context)
+	local state = ScriptLib.GetGroupVariableValue(context, "gameplayState") 
+
+	gameplayStateFuncitons[tostring(state)](context)
+
 end
-L3_1["0"] = L4_1
-function L4_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 0
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddExtraGroupSuite
-  L2_2 = A0_2
-  L3_2 = L1_1.group_ID
-  L4_2 = 2
-  L1_2(L2_2, L3_2, L4_2)
+
+function GetGroup(context,unid)
+
+	for i=1,#pairsgrouplist do
+		if pairsgrouplist[i] == unid then 
+			return pairsgrouplist[i][1]
+		end
+	end
+	return -1
 end
-L3_1["1"] = L4_1
-function L4_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 0
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddExtraGroupSuite
-  L2_2 = A0_2
-  L3_2 = L1_1.group_ID
-  L4_2 = 2
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValueByGroup
-  L2_2 = A0_2
-  L3_2 = "gameplayState"
-  L4_2 = 2
-  L5_2 = 155008189
-  L1_2(L2_2, L3_2, L4_2, L5_2)
+
+function ResetUniqeID(context,pair)
+	ScriptLib.SetGroupVariableValue(context,"uniqe_id_01",0)
+	ScriptLib.SetGroupVariableValue(context,"uniqe_id_02",0)
 end
-L3_1["2"] = L4_1
-function L4_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.GetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "gameplayState"
-  L1_2 = L1_2(L2_2, L3_2)
-  L2_2 = tostring
-  L3_2 = L1_2
-  L2_2 = L2_2(L3_2)
-  L2_2 = L3_1[L2_2]
-  L3_2 = A0_2
-  L2_2(L3_2)
+
+function ResetPairGroup(context)
+
+
+
 end
-UpdateGamePlayState = L4_1
-function L4_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = 1
-  L3_2 = L2_1
-  L3_2 = #L3_2
-  L4_2 = 1
-  for L5_2 = L2_2, L3_2, L4_2 do
-    L6_2 = L2_1[L5_2]
-    if L6_2 == A1_2 then
-      L6_2 = L2_1[L5_2]
-      L6_2 = L6_2[1]
-      return L6_2
-    end
-  end
-  L2_2 = -1
-  return L2_2
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 初始化
+	{ config_id = 1187001, name = "GROUP_LOAD_187001", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_187001", trigger_count = 0 },
+	-- 监听gameplayState变化
+	{ config_id = 1187002, name = "VARIABLE_CHANGE_187002", event = EventType.EVENT_VARIABLE_CHANGE, source = "gameplayState", condition = "condition_EVENT_VARIABLE_CHANGE_187002", action = "action_EVENT_VARIABLE_CHANGE_187002", trigger_count = 0 },
+	-- 监听玩法对的情况
+	{ config_id = 1187003, name = "VARIABLE_CHANGE_187003", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_187003", action = "action_EVENT_VARIABLE_CHANGE_187003", trigger_count = 0 },
+	-- 确定全部激活
+	{ config_id = 1187004, name = "VARIABLE_CHANGE_187004", event = EventType.EVENT_VARIABLE_CHANGE, source = "activepairscount", condition = "condition_EVENT_VARIABLE_CHANGE_187004", action = "action_EVENT_VARIABLE_CHANGE_187004", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "gameplayState", value = 1, no_refresh = true },
+	{ config_id = 2, name = "activepairscount", value = 0, no_refresh = true },
+	{ config_id = 3, name = "uniqe_id_01", value = 0, no_refresh = false },
+	{ config_id = 4, name = "uniqe_id_02", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = 静态逻辑,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_187001", "VARIABLE_CHANGE_187002", "VARIABLE_CHANGE_187003", "VARIABLE_CHANGE_187004" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = 玩法开启,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = 玩法完成,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_187001(context, evt)
+	UpdateGamePlayState(context)
+	return 0
 end
-GetGroup = L4_1
-function L4_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "uniqe_id_01"
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "uniqe_id_02"
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_187002(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+		-- 判断变量"gameplayState"为0
+		if ScriptLib.GetGroupVariableValue(context, "gameplayState") == 0 then
+				return false
+		end
+	return true
 end
-ResetUniqeID = L4_1
-function L4_1(A0_2)
-  local L1_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_187002(context, evt)
+	UpdateGamePlayState(context)
+	return 0
 end
-ResetPairGroup = L4_1
-L4_1 = {}
-monsters = L4_1
-L4_1 = {}
-npcs = L4_1
-L4_1 = {}
-gadgets = L4_1
-L4_1 = {}
-regions = L4_1
-L4_1 = {}
-L5_1 = {}
-L5_1.config_id = 1187001
-L5_1.name = "GROUP_LOAD_187001"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GROUP_LOAD
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = ""
-L5_1.action = "action_EVENT_GROUP_LOAD_187001"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1187002
-L6_1.name = "VARIABLE_CHANGE_187002"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_VARIABLE_CHANGE
-L6_1.event = L7_1
-L6_1.source = "gameplayState"
-L6_1.condition = "condition_EVENT_VARIABLE_CHANGE_187002"
-L6_1.action = "action_EVENT_VARIABLE_CHANGE_187002"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1187003
-L7_1.name = "VARIABLE_CHANGE_187003"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_VARIABLE_CHANGE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_VARIABLE_CHANGE_187003"
-L7_1.action = "action_EVENT_VARIABLE_CHANGE_187003"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1187004
-L8_1.name = "VARIABLE_CHANGE_187004"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_VARIABLE_CHANGE
-L8_1.event = L9_1
-L8_1.source = "activepairscount"
-L8_1.condition = "condition_EVENT_VARIABLE_CHANGE_187004"
-L8_1.action = "action_EVENT_VARIABLE_CHANGE_187004"
-L8_1.trigger_count = 0
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-triggers = L4_1
-L4_1 = {}
-L5_1 = {}
-L5_1.configId = 1
-L5_1.name = "gameplayState"
-L5_1.value = 1
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 2
-L6_1.name = "activepairscount"
-L6_1.value = 0
-L6_1.no_refresh = true
-L7_1 = {}
-L7_1.configId = 3
-L7_1.name = "uniqe_id_01"
-L7_1.value = 0
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 4
-L8_1.name = "uniqe_id_02"
-L8_1.value = 0
-L8_1.no_refresh = false
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-variables = L4_1
-L4_1 = {}
-L4_1.suite = 1
-L4_1.end_suite = 0
-L4_1.rand_suite = false
-init_config = L4_1
-L4_1 = {}
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "GROUP_LOAD_187001"
-L8_1 = "VARIABLE_CHANGE_187002"
-L9_1 = "VARIABLE_CHANGE_187003"
-L10_1 = "VARIABLE_CHANGE_187004"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L7_1.triggers = L8_1
-L7_1.rand_weight = 100
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-suites = L4_1
-function L4_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_187003(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+		if evt.source_name ~= "uniqe_id_01" and evt.source_name ~= "uniqe_id_02" then 
+			return false
+		end
+	
+		if ScriptLib.GetGroupVariableValue(context, "uniqe_id_01") == 0 or ScriptLib.GetGroupVariableValue(context, "uniqe_id_02") == 0 then 
+			return false
+		end
+		return true
 end
-action_EVENT_GROUP_LOAD_187001 = L4_1
-function L4_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gameplayState"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_187003(context, evt)
+		local unid_01 = ScriptLib.GetGroupVariableValue(context, "uniqe_id_01")
+		local unid_02 = ScriptLib.GetGroupVariableValue(context, "uniqe_id_02")
+	
+		local group_01 = GetGroup(context,unid_01)
+		local group_02 = GetGroup(context,unid_02)
+	
+		if unid_01 == unid_02 then 
+			ScriptLib.SetGroupVariableValueByGroup(context, "CallOnFunction", 2 , group_01)
+				
+			ScriptLib.ChangeGroupVariableValue(context, "activepairscount", 1)
+	
+		else
+	
+			ScriptLib.SetGroupVariableValueByGroup(context, "CallOnFunction", 1 , group_01)
+			ScriptLib.SetGroupVariableValueByGroup(context, "CallOnFunction", 1 , group_02)
+	
+		end
+		return 0
 end
-condition_EVENT_VARIABLE_CHANGE_187002 = L4_1
-function L4_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_187004(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"activepairscount"为2
+	if ScriptLib.GetGroupVariableValue(context, "activepairscount") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-action_EVENT_VARIABLE_CHANGE_187002 = L4_1
-function L4_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.source_name
-  if L2_2 ~= "uniqe_id_01" then
-    L2_2 = A1_2.source_name
-    if L2_2 ~= "uniqe_id_02" then
-      L2_2 = false
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "uniqe_id_01"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "uniqe_id_02"
-    L2_2 = L2_2(L3_2, L4_2)
-    if L2_2 ~= 0 then
-      goto lbl_31
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_31::
-  L2_2 = true
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_187004(context, evt)
+	-- 将本组内变量名为 "gameplayState" 的变量设置为 2
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "gameplayState", 2, 155008189) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-condition_EVENT_VARIABLE_CHANGE_187003 = L4_1
-function L4_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "uniqe_id_01"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "uniqe_id_02"
-  L3_2 = L3_2(L4_2, L5_2)
-  L4_2 = GetGroup
-  L5_2 = A0_2
-  L6_2 = L2_2
-  L4_2 = L4_2(L5_2, L6_2)
-  L5_2 = GetGroup
-  L6_2 = A0_2
-  L7_2 = L3_2
-  L5_2 = L5_2(L6_2, L7_2)
-  if L2_2 == L3_2 then
-    L6_2 = ScriptLib
-    L6_2 = L6_2.SetGroupVariableValueByGroup
-    L7_2 = A0_2
-    L8_2 = "CallOnFunction"
-    L9_2 = 2
-    L10_2 = L4_2
-    L6_2(L7_2, L8_2, L9_2, L10_2)
-    L6_2 = ScriptLib
-    L6_2 = L6_2.ChangeGroupVariableValue
-    L7_2 = A0_2
-    L8_2 = "activepairscount"
-    L9_2 = 1
-    L6_2(L7_2, L8_2, L9_2)
-  else
-    L6_2 = ScriptLib
-    L6_2 = L6_2.SetGroupVariableValueByGroup
-    L7_2 = A0_2
-    L8_2 = "CallOnFunction"
-    L9_2 = 1
-    L10_2 = L4_2
-    L6_2(L7_2, L8_2, L9_2, L10_2)
-    L6_2 = ScriptLib
-    L6_2 = L6_2.SetGroupVariableValueByGroup
-    L7_2 = A0_2
-    L8_2 = "CallOnFunction"
-    L9_2 = 1
-    L10_2 = L5_2
-    L6_2(L7_2, L8_2, L9_2, L10_2)
-  end
-  L6_2 = 0
-  return L6_2
-end
-action_EVENT_VARIABLE_CHANGE_187003 = L4_1
-function L4_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "activepairscount"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_VARIABLE_CHANGE_187004 = L4_1
-function L4_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "gameplayState"
-  L5_2 = 2
-  L6_2 = 155008189
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_VARIABLE_CHANGE_187004 = L4_1

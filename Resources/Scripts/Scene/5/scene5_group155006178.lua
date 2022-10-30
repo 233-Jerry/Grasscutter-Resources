@@ -1,411 +1,223 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 155006178
-L1_1 = {}
-L1_1.point_sum = 11
-L1_1.route_2 = 500600026
-L1_1.gadget_seelie = 178002
-L1_1.group_ID = 155006178
-L1_1.gadget_footprint = 178003
-L1_1.gadget_seeliehome = 178001
-L2_1 = L1_1.point_sum
-L2_1 = L2_1 - 1
-L1_1.final_point = L2_1
-L2_1 = {}
-function L3_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.CreateGadget
-  L2_2 = A0_2
-  L3_2 = {}
-  L4_2 = L1_1.gadget_footprint
-  L3_2.config_id = L4_2
-  L1_2(L2_2, L3_2)
+-- 基础信息
+local base_info = {
+	group_id = 155006178
+}
+
+-- Trigger变量
+local defs = {
+	point_sum = 11,
+	route_2 = 500600026,
+	gadget_seelie = 178002,
+	group_ID = 155006178,
+	gadget_footprint = 178003,
+	gadget_seeliehome = 178001
+}
+
+-- DEFS_MISCS
+defs.final_point = defs.point_sum - 1
+local gameplayStateFuncitons = 
+{
+	["0"] = function(context)
+		ScriptLib.CreateGadget(context, { config_id = defs.gadget_footprint })
+	end,
+	["1"] = function(context)
+	
+		ScriptLib.AddExtraGroupSuite(context, defs.group_ID, 2)
+		-- 设置移动平台路径
+		ScriptLib.SetPlatformRouteId(context, defs.gadget_seelie, defs.route_2)
+		-- 永久关闭CongfigId的Gadget，需要和Groups的RefreshWithBlock标签搭配
+		ScriptLib.KillEntityByConfigId(context, { config_id = defs.gadget_footprint })
+		
+	end,
+	["2"] = function(context)
+	
+		ScriptLib.AddExtraGroupSuite(context, defs.group_ID, 3)
+		ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_seeliehome, GadgetState.GearAction1) 
+	
+	
+	end
+
+}
+
+
+function UpdateGamePlayState(context)
+	local state = ScriptLib.GetGroupVariableValue(context, "gameplayState") 
+
+	gameplayStateFuncitons[tostring(state)](context)
+
 end
-L2_1["0"] = L3_1
-function L3_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddExtraGroupSuite
-  L2_2 = A0_2
-  L3_2 = L1_1.group_ID
-  L4_2 = 2
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetPlatformRouteId
-  L2_2 = A0_2
-  L3_2 = L1_1.gadget_seelie
-  L4_2 = L1_1.route_2
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.KillEntityByConfigId
-  L2_2 = A0_2
-  L3_2 = {}
-  L4_2 = L1_1.gadget_footprint
-  L3_2.config_id = L4_2
-  L1_2(L2_2, L3_2)
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 178001, gadget_id = 70290293, pos = { x = 410.961, y = 173.813, z = -220.896 }, rot = { x = 0.000, y = 107.871, z = 0.000 }, level = 36, area_id = 200 },
+	{ config_id = 178002, gadget_id = 70710010, pos = { x = 376.049, y = 186.413, z = -178.781 }, rot = { x = 0.000, y = 92.034, z = 0.000 }, level = 36, route_id = 500600026, area_id = 200 },
+	{ config_id = 178003, gadget_id = 70710007, pos = { x = 410.645, y = 175.036, z = -220.919 }, rot = { x = 0.000, y = 326.360, z = 0.000 }, level = 36, area_id = 200 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1178004, name = "PLATFORM_REACH_POINT_178004", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_178004", action = "action_EVENT_PLATFORM_REACH_POINT_178004", trigger_count = 0 },
+	{ config_id = 1178005, name = "GADGET_STATE_CHANGE_178005", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_178005", action = "action_EVENT_GADGET_STATE_CHANGE_178005" },
+	{ config_id = 1178006, name = "GROUP_LOAD_178006", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_178006", trigger_count = 0 },
+	{ config_id = 1178007, name = "VARIABLE_CHANGE_178007", event = EventType.EVENT_VARIABLE_CHANGE, source = "gameplayState", condition = "", action = "action_EVENT_VARIABLE_CHANGE_178007", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "gameplayState", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { 178001 },
+		regions = { },
+		triggers = { "GROUP_LOAD_178006", "VARIABLE_CHANGE_178007" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { 178001, 178002 },
+		regions = { },
+		triggers = { "PLATFORM_REACH_POINT_178004", "GADGET_STATE_CHANGE_178005" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 178001 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_PLATFORM_REACH_POINT_178004(context, evt)
+		ScriptLib.PrintContextLog(context, "seelie : "..evt.param1.." route : "..evt.param2.." finalPoint : "..evt.param3)
+		if defs.gadget_seelie ~= evt.param1 then
+		return false
+		end
+		
+		if defs.route_2 ~= evt.param2 then
+		return false
+		end
+		
+		if  defs.final_point ~= evt.param3 then
+		return false
+		end
+		
+		return true
 end
-L2_1["1"] = L3_1
-function L3_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddExtraGroupSuite
-  L2_2 = A0_2
-  L3_2 = L1_1.group_ID
-  L4_2 = 3
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGadgetStateByConfigId
-  L2_2 = A0_2
-  L3_2 = L1_1.gadget_seeliehome
-  L4_2 = GadgetState
-  L4_2 = L4_2.GearAction1
-  L1_2(L2_2, L3_2, L4_2)
+
+-- 触发操作
+function action_EVENT_PLATFORM_REACH_POINT_178004(context, evt)
+	-- 针对当前group内变量名为 "activecount" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "activecount", 1, 155006205) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	-- 将configid为 178001 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 178001, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 停止移动平台
+	if 0 ~= ScriptLib.StopPlatform(context, 178002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : stop_platform")
+	  return -1
+	end
+	
+		-- 永久关闭CongfigId的Gadget，需要和Groups的RefreshWithBlock标签搭配
+		if 0 ~= ScriptLib.KillEntityByConfigId(context, { config_id = 178002 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_entity_by_configId")
+		    return -1
+		end
+		
+	
+	return 0
 end
-L2_1["2"] = L3_1
-function L3_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.GetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "gameplayState"
-  L1_2 = L1_2(L2_2, L3_2)
-  L2_2 = tostring
-  L3_2 = L1_2
-  L2_2 = L2_2(L3_2)
-  L2_2 = L2_1[L2_2]
-  L3_2 = A0_2
-  L2_2(L3_2)
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_178005(context, evt)
+	if 178001 ~= evt.param2 or GadgetState.GearAction1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-UpdateGamePlayState = L3_1
-L3_1 = {}
-monsters = L3_1
-L3_1 = {}
-npcs = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 178001
-L4_1.gadget_id = 70290293
-L5_1 = {}
-L5_1.x = 410.961
-L5_1.y = 173.813
-L5_1.z = -220.896
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 107.871
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.area_id = 200
-L5_1 = {}
-L5_1.config_id = 178002
-L5_1.gadget_id = 70710010
-L6_1 = {}
-L6_1.x = 376.049
-L6_1.y = 186.413
-L6_1.z = -178.781
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 92.034
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 36
-L5_1.route_id = 500600026
-L5_1.area_id = 200
-L6_1 = {}
-L6_1.config_id = 178003
-L6_1.gadget_id = 70710007
-L7_1 = {}
-L7_1.x = 410.645
-L7_1.y = 175.036
-L7_1.z = -220.919
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 326.36
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 36
-L6_1.area_id = 200
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-gadgets = L3_1
-L3_1 = {}
-regions = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1178004
-L4_1.name = "PLATFORM_REACH_POINT_178004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_PLATFORM_REACH_POINT
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_PLATFORM_REACH_POINT_178004"
-L4_1.action = "action_EVENT_PLATFORM_REACH_POINT_178004"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1178005
-L5_1.name = "GADGET_STATE_CHANGE_178005"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GADGET_STATE_CHANGE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_178005"
-L5_1.action = "action_EVENT_GADGET_STATE_CHANGE_178005"
-L6_1 = {}
-L6_1.config_id = 1178006
-L6_1.name = "GROUP_LOAD_178006"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GROUP_LOAD
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = ""
-L6_1.action = "action_EVENT_GROUP_LOAD_178006"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1178007
-L7_1.name = "VARIABLE_CHANGE_178007"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_VARIABLE_CHANGE
-L7_1.event = L8_1
-L7_1.source = "gameplayState"
-L7_1.condition = ""
-L7_1.action = "action_EVENT_VARIABLE_CHANGE_178007"
-L7_1.trigger_count = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-triggers = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.configId = 1
-L4_1.name = "gameplayState"
-L4_1.value = 0
-L4_1.no_refresh = true
-L3_1[1] = L4_1
-variables = L3_1
-L3_1 = {}
-L3_1.suite = 1
-L3_1.end_suite = 2
-L3_1.rand_suite = false
-init_config = L3_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 178001
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "GROUP_LOAD_178006"
-L7_1 = "VARIABLE_CHANGE_178007"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 178001
-L8_1 = 178002
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "PLATFORM_REACH_POINT_178004"
-L8_1 = "GADGET_STATE_CHANGE_178005"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L8_1 = 178001
-L7_1[1] = L8_1
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-suites = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintContextLog
-  L3_2 = A0_2
-  L4_2 = "seelie : "
-  L5_2 = A1_2.param1
-  L6_2 = " route : "
-  L7_2 = A1_2.param2
-  L8_2 = " finalPoint : "
-  L9_2 = A1_2.param3
-  L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2 .. L8_2 .. L9_2
-  L2_2(L3_2, L4_2)
-  L2_2 = L1_1.gadget_seelie
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.route_2
-  L3_2 = A1_2.param2
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.final_point
-  L3_2 = A1_2.param3
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_178005(context, evt)
+	-- 将本组内变量名为 "gameplayState" 的变量设置为 2
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "gameplayState", 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-condition_EVENT_PLATFORM_REACH_POINT_178004 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "activecount"
-  L5_2 = 1
-  L6_2 = 155006205
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 178001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopPlatform
-  L3_2 = A0_2
-  L4_2 = 178002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : stop_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 178002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_entity_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_178006(context, evt)
+	UpdateGamePlayState(context)
+	return 0
 end
-action_EVENT_PLATFORM_REACH_POINT_178004 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 178001 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearAction1
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_178007(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	UpdateGamePlayState(context)
+	return 0
 end
-condition_EVENT_GADGET_STATE_CHANGE_178005 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gameplayState"
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GADGET_STATE_CHANGE_178005 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GROUP_LOAD_178006 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_VARIABLE_CHANGE_178007 = L3_1

@@ -1,672 +1,314 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 133001088
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1715
-L2_1.gadget_id = 70800004
-L3_1 = {}
-L3_1.x = 1374.3
-L3_1.y = 235.54
-L3_1.z = -1569.1
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 71.93
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 15
-L2_1.area_id = 2
-L3_1 = {}
-L3_1.config_id = 1775
-L3_1.gadget_id = 70800008
-L4_1 = {}
-L4_1.x = 1374.3
-L4_1.y = 235.14
-L4_1.z = -1569.1
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 169.074
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 15
-L3_1.area_id = 2
-L4_1 = {}
-L4_1.config_id = 1776
-L4_1.gadget_id = 70800009
-L5_1 = {}
-L5_1.x = 1374.3
-L5_1.y = 234.98
-L5_1.z = -1569.1
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 55.499
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 15
-L4_1.area_id = 2
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 438
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 60
-L3_1 = {}
-L3_1.x = 1574.87
-L3_1.y = 248.856
-L3_1.z = -1620.645
-L2_1.pos = L3_1
-L2_1.area_id = 2
-L3_1 = {}
-L3_1.config_id = 439
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 60
-L4_1 = {}
-L4_1.x = 1269.628
-L4_1.y = 259.065
-L4_1.z = -1690.53
-L3_1.pos = L4_1
-L3_1.area_id = 2
-L4_1 = {}
-L4_1.config_id = 440
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 60
-L5_1 = {}
-L5_1.x = 1239.927
-L5_1.y = 255.248
-L5_1.z = -1469.177
-L4_1.pos = L5_1
-L4_1.area_id = 2
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1000387
-L2_1.name = "ANY_GADGET_DIE_387"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_GADGET_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_GADGET_DIE_387"
-L2_1.action = "action_EVENT_ANY_GADGET_DIE_387"
-L3_1 = {}
-L3_1.config_id = 1000388
-L3_1.name = "ANY_GADGET_DIE_388"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_GADGET_DIE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ANY_GADGET_DIE_388"
-L3_1.action = "action_EVENT_ANY_GADGET_DIE_388"
-L4_1 = {}
-L4_1.config_id = 1000389
-L4_1.name = "ANY_GADGET_DIE_389"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ANY_GADGET_DIE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ANY_GADGET_DIE_389"
-L4_1.action = "action_EVENT_ANY_GADGET_DIE_389"
-L5_1 = {}
-L5_1.config_id = 1000390
-L5_1.name = "VARIABLE_CHANGE_390"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_VARIABLE_CHANGE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_VARIABLE_CHANGE_390"
-L5_1.action = "action_EVENT_VARIABLE_CHANGE_390"
-L6_1 = {}
-L6_1.config_id = 1000391
-L6_1.name = "TIMER_EVENT_391"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_TIMER_EVENT
-L6_1.event = L7_1
-L6_1.source = "questfinish"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_TIMER_EVENT_391"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1000438
-L7_1.name = "ENTER_REGION_438"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_ENTER_REGION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_ENTER_REGION_438"
-L7_1.action = "action_EVENT_ENTER_REGION_438"
-L8_1 = {}
-L8_1.config_id = 1000439
-L8_1.name = "ENTER_REGION_439"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_ENTER_REGION
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_ENTER_REGION_439"
-L8_1.action = "action_EVENT_ENTER_REGION_439"
-L9_1 = {}
-L9_1.config_id = 1000440
-L9_1.name = "ENTER_REGION_440"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_ENTER_REGION
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_ENTER_REGION_440"
-L9_1.action = "action_EVENT_ENTER_REGION_440"
-L10_1 = {}
-L10_1.config_id = 1088001
-L10_1.name = "GROUP_LOAD_88001"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_GROUP_LOAD
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_GROUP_LOAD_88001"
-L10_1.action = "action_EVENT_GROUP_LOAD_88001"
-L10_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "Key"
-L2_1.value = 0
-L2_1.no_refresh = false
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "JZbegin"
-L3_1.value = 0
-L3_1.no_refresh = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = true
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 1715
-L5_1 = 1775
-L6_1 = 1776
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 438
-L5_1 = 439
-L6_1 = 440
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ANY_GADGET_DIE_387"
-L5_1 = "ANY_GADGET_DIE_388"
-L6_1 = "ANY_GADGET_DIE_389"
-L7_1 = "VARIABLE_CHANGE_390"
-L8_1 = "TIMER_EVENT_391"
-L9_1 = "ENTER_REGION_438"
-L10_1 = "ENTER_REGION_439"
-L11_1 = "ENTER_REGION_440"
-L12_1 = "GROUP_LOAD_88001"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1715 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133001088
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 1715, gadget_id = 70800004, pos = { x = 1374.300, y = 235.540, z = -1569.100 }, rot = { x = 0.000, y = 71.930, z = 0.000 }, level = 15, area_id = 2 },
+	{ config_id = 1775, gadget_id = 70800008, pos = { x = 1374.300, y = 235.140, z = -1569.100 }, rot = { x = 0.000, y = 169.074, z = 0.000 }, level = 15, area_id = 2 },
+	{ config_id = 1776, gadget_id = 70800009, pos = { x = 1374.300, y = 234.980, z = -1569.100 }, rot = { x = 0.000, y = 55.499, z = 0.000 }, level = 15, area_id = 2 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 438, shape = RegionShape.SPHERE, radius = 60, pos = { x = 1574.870, y = 248.856, z = -1620.645 }, area_id = 2 },
+	{ config_id = 439, shape = RegionShape.SPHERE, radius = 60, pos = { x = 1269.628, y = 259.065, z = -1690.530 }, area_id = 2 },
+	{ config_id = 440, shape = RegionShape.SPHERE, radius = 60, pos = { x = 1239.927, y = 255.248, z = -1469.177 }, area_id = 2 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000387, name = "ANY_GADGET_DIE_387", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_387", action = "action_EVENT_ANY_GADGET_DIE_387" },
+	{ config_id = 1000388, name = "ANY_GADGET_DIE_388", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_388", action = "action_EVENT_ANY_GADGET_DIE_388" },
+	{ config_id = 1000389, name = "ANY_GADGET_DIE_389", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_389", action = "action_EVENT_ANY_GADGET_DIE_389" },
+	{ config_id = 1000390, name = "VARIABLE_CHANGE_390", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_390", action = "action_EVENT_VARIABLE_CHANGE_390" },
+	{ config_id = 1000391, name = "TIMER_EVENT_391", event = EventType.EVENT_TIMER_EVENT, source = "questfinish", condition = "", action = "action_EVENT_TIMER_EVENT_391", trigger_count = 0 },
+	{ config_id = 1000438, name = "ENTER_REGION_438", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_438", action = "action_EVENT_ENTER_REGION_438" },
+	{ config_id = 1000439, name = "ENTER_REGION_439", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_439", action = "action_EVENT_ENTER_REGION_439" },
+	{ config_id = 1000440, name = "ENTER_REGION_440", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_440", action = "action_EVENT_ENTER_REGION_440" },
+	{ config_id = 1088001, name = "GROUP_LOAD_88001", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_88001", action = "action_EVENT_GROUP_LOAD_88001", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Key", value = 0, no_refresh = false },
+	{ config_id = 2, name = "JZbegin", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1715, 1775, 1776 },
+		regions = { 438, 439, 440 },
+		triggers = { "ANY_GADGET_DIE_387", "ANY_GADGET_DIE_388", "ANY_GADGET_DIE_389", "VARIABLE_CHANGE_390", "TIMER_EVENT_391", "ENTER_REGION_438", "ENTER_REGION_439", "ENTER_REGION_440", "GROUP_LOAD_88001" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_387(context, evt)
+	if 1715 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_GADGET_DIE_387 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Key"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "13300108801"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_387(context, evt)
+	-- 针对当前group内变量名为 "Key" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Key", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "13300108801") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_387 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1775 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_388(context, evt)
+	if 1775 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_GADGET_DIE_388 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Key"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "13300108801"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_388(context, evt)
+	-- 针对当前group内变量名为 "Key" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Key", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "13300108801") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_388 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1776 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_389(context, evt)
+	if 1776 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_GADGET_DIE_389 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Key"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "13300108801"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_389(context, evt)
+	-- 针对当前group内变量名为 "Key" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "Key", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "13300108801") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_389 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Key"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_390(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"Key"为3
+	if ScriptLib.GetGroupVariableValue(context, "Key") ~= 3 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_390 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 133001088
-  L5_2 = "questfinish"
-  L6_2 = 5
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 133001109
-  L5_2 = "chest"
-  L6_2 = 1.4
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_390(context, evt)
+	-- 延迟5秒后,向groupId为：133001088的对象,请求一次调用,并将string参数："questfinish" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 133001088, "questfinish", 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 延迟1.4秒后,向groupId为：133001109的对象,请求一次调用,并将string参数："chest" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 133001109, "chest", 1.4) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_390 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "jianzhong"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_391(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "jianzhong") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_391 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 438 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "JZbegin"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_438(context, evt)
+	if evt.param1 ~= 438 then return false end
+	
+	-- 判断变量"JZbegin"为0
+	if ScriptLib.GetGroupVariableValue(context, "JZbegin") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_438 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "JZ"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "JZbegin"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_438(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "JZ") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "JZbegin" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "JZbegin", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_438 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 439 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "JZbegin"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_439(context, evt)
+	if evt.param1 ~= 439 then return false end
+	
+	-- 判断变量"JZbegin"为0
+	if ScriptLib.GetGroupVariableValue(context, "JZbegin") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_439 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "JZ"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "JZbegin"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_439(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "JZ") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "JZbegin" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "JZbegin", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_439 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 440 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "JZbegin"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_440(context, evt)
+	if evt.param1 ~= 440 then return false end
+	
+	-- 判断变量"JZbegin"为0
+	if ScriptLib.GetGroupVariableValue(context, "JZbegin") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_440 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "JZ"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "JZbegin"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_440(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "JZ") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "JZbegin" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "JZbegin", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_440 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CheckRemainGadgetCountByGroupId
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133001088
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_88001(context, evt)
+	-- 判断指定group组剩余gadget数量是否是0 
+	if ScriptLib.CheckRemainGadgetCountByGroupId(context, {group_id = 133001088}) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_88001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "jianzhong"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_88001(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "jianzhong") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_88001 = L1_1

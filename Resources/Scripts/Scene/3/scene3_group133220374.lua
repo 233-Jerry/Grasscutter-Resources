@@ -1,196 +1,119 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 133220374
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 374001
-L2_1.gadget_id = 70290155
-L3_1 = {}
-L3_1.x = -2114.548
-L3_1.y = 150.473
-L3_1.z = -4491.009
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 337.407
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 27
-L2_1.area_id = 11
-L3_1 = {}
-L3_1.config_id = 374002
-L3_1.gadget_id = 70290156
-L4_1 = {}
-L4_1.x = -2125.34
-L4_1.y = 160.12
-L4_1.z = -4460.24
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 338.093
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 27
-L3_1.area_id = 11
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1374003
-L2_1.name = "VARIABLE_CHANGE_374003"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_VARIABLE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_VARIABLE_CHANGE_374003"
-L2_1.action = "action_EVENT_VARIABLE_CHANGE_374003"
-L2_1.trigger_count = 0
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "waterdown"
-L2_1.value = 0
-L2_1.no_refresh = true
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 374005
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 15
-L4_1 = {}
-L4_1.x = -2185.813
-L4_1.y = 180.776
-L4_1.z = -4344.747
-L3_1.pos = L4_1
-L3_1.area_id = 11
-L4_1 = {}
-L4_1.config_id = 374006
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 15
-L5_1 = {}
-L5_1.x = -2210.477
-L5_1.y = 187.378
-L5_1.z = -4316.298
-L4_1.pos = L5_1
-L4_1.area_id = 11
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1374005
-L3_1.name = "ENTER_REGION_374005"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_374005"
-L3_1.action = "action_EVENT_ENTER_REGION_374005"
-L4_1 = {}
-L4_1.config_id = 1374006
-L4_1.name = "ENTER_REGION_374006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_374006"
-L4_1.action = "action_EVENT_ENTER_REGION_374006"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 2
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 374001
-L5_1 = 374002
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "VARIABLE_CHANGE_374003"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "VARIABLE_CHANGE_374003"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "waterdown"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133220374
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 374001, gadget_id = 70290155, pos = { x = -2114.548, y = 150.473, z = -4491.009 }, rot = { x = 0.000, y = 337.407, z = 0.000 }, level = 27, area_id = 11 },
+	{ config_id = 374002, gadget_id = 70290156, pos = { x = -2125.340, y = 160.120, z = -4460.240 }, rot = { x = 0.000, y = 338.093, z = 0.000 }, level = 27, area_id = 11 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1374003, name = "VARIABLE_CHANGE_374003", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_374003", action = "action_EVENT_VARIABLE_CHANGE_374003", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "waterdown", value = 0, no_refresh = true }
+}
+
+-- 废弃数据
+garbages = {
+	regions = {
+		{ config_id = 374005, shape = RegionShape.SPHERE, radius = 15, pos = { x = -2185.813, y = 180.776, z = -4344.747 }, area_id = 11 },
+		{ config_id = 374006, shape = RegionShape.SPHERE, radius = 15, pos = { x = -2210.477, y = 187.378, z = -4316.298 }, area_id = 11 }
+	},
+	triggers = {
+		{ config_id = 1374005, name = "ENTER_REGION_374005", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_374005", action = "action_EVENT_ENTER_REGION_374005" },
+		{ config_id = 1374006, name = "ENTER_REGION_374006", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_374006", action = "action_EVENT_ENTER_REGION_374006" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 374001, 374002 },
+		regions = { },
+		triggers = { "VARIABLE_CHANGE_374003" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "VARIABLE_CHANGE_374003" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_374003(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"waterdown"为1
+	if ScriptLib.GetGroupVariableValue(context, "waterdown") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_374003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133220374
-  L4_2.suite = 2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_374003(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133220374, suite = 2 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_374003 = L1_1

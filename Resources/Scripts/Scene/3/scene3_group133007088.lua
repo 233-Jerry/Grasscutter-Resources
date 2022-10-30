@@ -1,1639 +1,357 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1, L30_1, L31_1, L32_1, L33_1, L34_1, L35_1, L36_1, L37_1, L38_1, L39_1, L40_1, L41_1, L42_1
-L0_1 = {}
-L0_1.group_id = 133007088
-L1_1 = {}
-L1_1.region_Enter = 88008
-L1_1.region_Leave = 88009
-L1_1.group_id = 133007088
-L1_1.gallery_id = 12002
-L2_1 = {}
-L3_1 = 18004
-L4_1 = 18006
-L5_1 = 18004
-L6_1 = 18004
-L7_1 = 18006
-L8_1 = 18004
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L1_1.monsterWave = L2_1
-L2_1 = {}
-L3_1 = 88002
-L4_1 = 88003
-L5_1 = 88004
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L1_1.prospect_id = L2_1
-L1_1.gadget_1 = 0
-L2_1 = {}
-L3_1 = {}
-L4_1 = 88002
-L5_1 = 88005
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L4_1 = {}
-L5_1 = 88003
-L6_1 = 88006
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L5_1 = {}
-L6_1 = 88004
-L7_1 = 88007
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L3_1 = {}
-monsters = L3_1
-L3_1 = {}
-npcs = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 88001
-L4_1.gadget_id = 70800054
-L5_1 = {}
-L5_1.x = 2856.005
-L5_1.y = 207.398
-L5_1.z = -26.577
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 4
-L5_1 = {}
-L5_1.config_id = 88002
-L5_1.gadget_id = 70800044
-L6_1 = {}
-L6_1.x = 2863.915
-L6_1.y = 207.2
-L6_1.z = -18.305
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.area_id = 4
-L6_1 = {}
-L6_1.config_id = 88003
-L6_1.gadget_id = 70800044
-L7_1 = {}
-L7_1.x = 2843.24
-L7_1.y = 211.256
-L7_1.z = -43.206
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 4
-L7_1 = {}
-L7_1.config_id = 88004
-L7_1.gadget_id = 70800044
-L8_1 = {}
-L8_1.x = 2839.095
-L8_1.y = 207.214
-L8_1.z = -23.758
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.area_id = 4
-L8_1 = {}
-L8_1.config_id = 88005
-L8_1.gadget_id = 70800047
-L9_1 = {}
-L9_1.x = 2863.915
-L9_1.y = 208.626
-L9_1.z = -18.305
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 30
-L8_1.area_id = 4
-L9_1 = {}
-L9_1.config_id = 88006
-L9_1.gadget_id = 70800048
-L10_1 = {}
-L10_1.x = 2843.24
-L10_1.y = 212.725
-L10_1.z = -43.206
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 30
-L9_1.area_id = 4
-L10_1 = {}
-L10_1.config_id = 88007
-L10_1.gadget_id = 70800049
-L11_1 = {}
-L11_1.x = 2839.095
-L11_1.y = 208.634
-L11_1.z = -23.758
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 30
-L10_1.area_id = 4
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 88008
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 50
-L5_1 = {}
-L5_1.x = 2856.012
-L5_1.y = 208.383
-L5_1.z = -26.571
-L4_1.pos = L5_1
-L4_1.area_id = 4
-L5_1 = {}
-L5_1.config_id = 88009
-L6_1 = RegionShape
-L6_1 = L6_1.SPHERE
-L5_1.shape = L6_1
-L5_1.radius = 50
-L6_1 = {}
-L6_1.x = 2856.012
-L6_1.y = 208.383
-L6_1.z = -26.571
-L5_1.pos = L6_1
-L5_1.area_id = 4
-L6_1 = {}
-L6_1.config_id = 88057
-L7_1 = RegionShape
-L7_1 = L7_1.SPHERE
-L6_1.shape = L7_1
-L6_1.radius = 12
-L7_1 = {}
-L7_1.x = 2856.012
-L7_1.y = 208.383
-L7_1.z = -26.571
-L6_1.pos = L7_1
-L6_1.area_id = 4
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-regions = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1088010
-L4_1.name = "SELECT_OPTION_88010"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SELECT_OPTION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SELECT_OPTION_88010"
-L4_1.action = "action_EVENT_SELECT_OPTION_88010"
-L5_1 = {}
-L5_1.config_id = 1088011
-L5_1.name = "TIME_AXIS_PASS_88011"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_TIME_AXIS_PASS
-L5_1.event = L6_1
-L5_1.source = "looptime"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_TIME_AXIS_PASS_88011"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1088012
-L6_1.name = "VARIABLE_CHANGE_88012"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_VARIABLE_CHANGE
-L6_1.event = L7_1
-L6_1.source = "refreshMonster"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_VARIABLE_CHANGE_88012"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1088019
-L7_1.name = "VARIABLE_CHANGE_88019"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_VARIABLE_CHANGE
-L7_1.event = L8_1
-L7_1.source = "IsFinished"
-L7_1.condition = "condition_EVENT_VARIABLE_CHANGE_88019"
-L7_1.action = "action_EVENT_VARIABLE_CHANGE_88019"
-L8_1 = {}
-L8_1.config_id = 1088056
-L8_1.name = "TIMER_EVENT_88056"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_TIMER_EVENT
-L8_1.event = L9_1
-L8_1.source = "starttime"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_TIMER_EVENT_88056"
-L9_1 = {}
-L9_1.config_id = 1088057
-L9_1.name = "ENTER_REGION_88057"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_ENTER_REGION
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_ENTER_REGION_88057"
-L9_1.action = "action_EVENT_ENTER_REGION_88057"
-L10_1 = {}
-L10_1.config_id = 1088058
-L10_1.name = "GADGET_STATE_CHANGE_88058"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_GADGET_STATE_CHANGE
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_88058"
-L10_1.action = "action_EVENT_GADGET_STATE_CHANGE_88058"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-triggers = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 88020
-L5_1 = {}
-L5_1.x = 2877.008
-L5_1.y = 207.2
-L5_1.z = -15.329
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 248.643
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.area_id = 4
-L4_1.tag = 2
-L5_1 = {}
-L5_1.config_id = 88021
-L6_1 = {}
-L6_1.x = 2874.839
-L6_1.y = 207.2
-L6_1.z = -11.68
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 205.619
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.area_id = 4
-L5_1.tag = 2
-L6_1 = {}
-L6_1.config_id = 88022
-L7_1 = {}
-L7_1.x = 2876.912
-L7_1.y = 207.2
-L7_1.z = -10.24
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 226.659
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.area_id = 4
-L6_1.tag = 2
-L7_1 = {}
-L7_1.config_id = 88023
-L8_1 = {}
-L8_1.x = 2879.046
-L8_1.y = 207.2
-L8_1.z = -15.046
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 248.643
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.area_id = 4
-L7_1.tag = 2
-L8_1 = {}
-L8_1.config_id = 88024
-L9_1 = {}
-L9_1.x = 2873.685
-L9_1.y = 207.2
-L9_1.z = -10.178
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 204.197
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.area_id = 4
-L8_1.tag = 2
-L9_1 = {}
-L9_1.config_id = 88025
-L10_1 = {}
-L10_1.x = 2879.105
-L10_1.y = 207.2
-L10_1.z = -12.629
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 248.643
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.area_id = 4
-L9_1.tag = 2
-L10_1 = {}
-L10_1.config_id = 88026
-L11_1 = {}
-L11_1.x = 2844.365
-L11_1.y = 212.603
-L11_1.z = -61.399
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 357.51
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.area_id = 4
-L10_1.tag = 4
-L11_1 = {}
-L11_1.config_id = 88027
-L12_1 = {}
-L12_1.x = 2844.756
-L12_1.y = 212.408
-L12_1.z = -58.766
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.578
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.area_id = 4
-L11_1.tag = 4
-L12_1 = {}
-L12_1.config_id = 88028
-L13_1 = {}
-L13_1.x = 2841.158
-L13_1.y = 212.735
-L13_1.z = -59.917
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 30.99
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.area_id = 4
-L12_1.tag = 4
-L13_1 = {}
-L13_1.config_id = 88029
-L14_1 = {}
-L14_1.x = 2837.898
-L14_1.y = 212.884
-L14_1.z = -60.557
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 30.99
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.area_id = 4
-L13_1.tag = 4
-L14_1 = {}
-L14_1.config_id = 88030
-L15_1 = {}
-L15_1.x = 2840.55
-L15_1.y = 212.603
-L15_1.z = -57.488
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 30.99
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.area_id = 4
-L14_1.tag = 4
-L15_1 = {}
-L15_1.config_id = 88031
-L16_1 = {}
-L16_1.x = 2837.575
-L16_1.y = 212.557
-L16_1.z = -55.657
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 30.99
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.area_id = 4
-L15_1.tag = 4
-L16_1 = {}
-L16_1.config_id = 88032
-L17_1 = {}
-L17_1.x = 2828.704
-L17_1.y = 207.2
-L17_1.z = -6.014
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 145.642
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.area_id = 4
-L16_1.tag = 8
-L17_1 = {}
-L17_1.config_id = 88033
-L18_1 = {}
-L18_1.x = 2831.288
-L18_1.y = 207.2
-L18_1.z = -3.921
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 174.053
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.area_id = 4
-L17_1.tag = 8
-L18_1 = {}
-L18_1.config_id = 88034
-L19_1 = {}
-L19_1.x = 2827.688
-L19_1.y = 207.2
-L19_1.z = -9.152
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 145.642
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.area_id = 4
-L18_1.tag = 8
-L19_1 = {}
-L19_1.config_id = 88035
-L20_1 = {}
-L20_1.x = 2830.896
-L20_1.y = 207.2
-L20_1.z = -6.72
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 175.454
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.area_id = 4
-L19_1.tag = 8
-L20_1 = {}
-L20_1.config_id = 88036
-L21_1 = {}
-L21_1.x = 2829.36
-L21_1.y = 207.2
-L21_1.z = -10.256
-L20_1.pos = L21_1
-L21_1 = {}
-L21_1.x = 0.0
-L21_1.y = 145.642
-L21_1.z = 0.0
-L20_1.rot = L21_1
-L20_1.area_id = 4
-L20_1.tag = 8
-L21_1 = {}
-L21_1.config_id = 88037
-L22_1 = {}
-L22_1.x = 2833.305
-L22_1.y = 207.2
-L22_1.z = -10.431
-L21_1.pos = L22_1
-L22_1 = {}
-L22_1.x = 0.0
-L22_1.y = 189.233
-L22_1.z = 0.0
-L21_1.rot = L22_1
-L21_1.area_id = 4
-L21_1.tag = 8
-L22_1 = {}
-L22_1.config_id = 88038
-L23_1 = {}
-L23_1.x = 2869.894
-L23_1.y = 207.2
-L23_1.z = -16.612
-L22_1.pos = L23_1
-L23_1 = {}
-L23_1.x = 0.0
-L23_1.y = 207.38
-L23_1.z = 0.0
-L22_1.rot = L23_1
-L22_1.area_id = 4
-L22_1.tag = 16
-L23_1 = {}
-L23_1.config_id = 88039
-L24_1 = {}
-L24_1.x = 2862.74
-L24_1.y = 207.2
-L24_1.z = -14.323
-L23_1.pos = L24_1
-L24_1 = {}
-L24_1.x = 0.0
-L24_1.y = 207.38
-L24_1.z = 0.0
-L23_1.rot = L24_1
-L23_1.area_id = 4
-L23_1.tag = 16
-L24_1 = {}
-L24_1.config_id = 88040
-L25_1 = {}
-L25_1.x = 2842.505
-L25_1.y = 212.204
-L25_1.z = -53.951
-L24_1.pos = L25_1
-L25_1 = {}
-L25_1.x = 0.0
-L25_1.y = 0.0
-L25_1.z = 0.0
-L24_1.rot = L25_1
-L24_1.area_id = 4
-L24_1.tag = 16
-L25_1 = {}
-L25_1.config_id = 88041
-L26_1 = {}
-L26_1.x = 2834.984
-L26_1.y = 212.137
-L26_1.z = -50.883
-L25_1.pos = L26_1
-L26_1 = {}
-L26_1.x = 0.0
-L26_1.y = 27.499
-L26_1.z = 0.0
-L25_1.rot = L26_1
-L25_1.area_id = 4
-L25_1.tag = 16
-L26_1 = {}
-L26_1.config_id = 88042
-L27_1 = {}
-L27_1.x = 2839.266
-L27_1.y = 211.803
-L27_1.z = -48.543
-L26_1.pos = L27_1
-L27_1 = {}
-L27_1.x = 0.0
-L27_1.y = 0.0
-L27_1.z = 0.0
-L26_1.rot = L27_1
-L26_1.area_id = 4
-L26_1.tag = 16
-L27_1 = {}
-L27_1.config_id = 88043
-L28_1 = {}
-L28_1.x = 2846.471
-L28_1.y = 211.823
-L28_1.z = -52.528
-L27_1.pos = L28_1
-L28_1 = {}
-L28_1.x = 0.0
-L28_1.y = 0.0
-L28_1.z = 0.0
-L27_1.rot = L28_1
-L27_1.area_id = 4
-L27_1.tag = 16
-L28_1 = {}
-L28_1.config_id = 88044
-L29_1 = {}
-L29_1.x = 2843.532
-L29_1.y = 211.9
-L29_1.z = -51.048
-L28_1.pos = L29_1
-L29_1 = {}
-L29_1.x = 0.0
-L29_1.y = 0.0
-L29_1.z = 0.0
-L28_1.rot = L29_1
-L28_1.area_id = 4
-L28_1.tag = 32
-L29_1 = {}
-L29_1.config_id = 88045
-L30_1 = {}
-L30_1.x = 2837.908
-L30_1.y = 212.267
-L30_1.z = -52.682
-L29_1.pos = L30_1
-L30_1 = {}
-L30_1.x = 0.0
-L30_1.y = 0.0
-L30_1.z = 0.0
-L29_1.rot = L30_1
-L29_1.area_id = 4
-L29_1.tag = 32
-L30_1 = {}
-L30_1.config_id = 88046
-L31_1 = {}
-L31_1.x = 2843.152
-L31_1.y = 207.2
-L31_1.z = -14.131
-L30_1.pos = L31_1
-L31_1 = {}
-L31_1.x = 0.0
-L31_1.y = 146.835
-L31_1.z = 0.0
-L30_1.rot = L31_1
-L30_1.area_id = 4
-L30_1.tag = 32
-L31_1 = {}
-L31_1.config_id = 88047
-L32_1 = {}
-L32_1.x = 2835.74
-L32_1.y = 207.2
-L32_1.z = -15.238
-L31_1.pos = L32_1
-L32_1 = {}
-L32_1.x = 0.0
-L32_1.y = 146.835
-L32_1.z = 0.0
-L31_1.rot = L32_1
-L31_1.area_id = 4
-L31_1.tag = 32
-L32_1 = {}
-L32_1.config_id = 88048
-L33_1 = {}
-L33_1.x = 2836.964
-L33_1.y = 207.2
-L33_1.z = -20.558
-L32_1.pos = L33_1
-L33_1 = {}
-L33_1.x = 0.0
-L33_1.y = 146.835
-L33_1.z = 0.0
-L32_1.rot = L33_1
-L32_1.area_id = 4
-L32_1.tag = 32
-L33_1 = {}
-L33_1.config_id = 88049
-L34_1 = {}
-L34_1.x = 2834.308
-L34_1.y = 207.2
-L34_1.z = -21.426
-L33_1.pos = L34_1
-L34_1 = {}
-L34_1.x = 0.0
-L34_1.y = 118.533
-L34_1.z = 0.0
-L33_1.rot = L34_1
-L33_1.area_id = 4
-L33_1.tag = 32
-L34_1 = {}
-L34_1.config_id = 88050
-L35_1 = {}
-L35_1.x = 2841.037
-L35_1.y = 207.2
-L35_1.z = -18.091
-L34_1.pos = L35_1
-L35_1 = {}
-L35_1.x = 0.0
-L35_1.y = 190.629
-L35_1.z = 0.0
-L34_1.rot = L35_1
-L34_1.area_id = 4
-L34_1.tag = 64
-L35_1 = {}
-L35_1.config_id = 88051
-L36_1 = {}
-L36_1.x = 2834.316
-L36_1.y = 207.2
-L36_1.z = -17.733
-L35_1.pos = L36_1
-L36_1 = {}
-L36_1.x = 0.0
-L36_1.y = 151.257
-L36_1.z = 0.0
-L35_1.rot = L36_1
-L35_1.area_id = 4
-L35_1.tag = 64
-L36_1 = {}
-L36_1.config_id = 88052
-L37_1 = {}
-L37_1.x = 2869.294
-L37_1.y = 207.2
-L37_1.z = -20.503
-L36_1.pos = L37_1
-L37_1 = {}
-L37_1.x = 0.0
-L37_1.y = 234.976
-L37_1.z = 0.0
-L36_1.rot = L37_1
-L36_1.area_id = 4
-L36_1.tag = 64
-L37_1 = {}
-L37_1.config_id = 88053
-L38_1 = {}
-L38_1.x = 2873.883
-L38_1.y = 207.2
-L38_1.z = -15.783
-L37_1.pos = L38_1
-L38_1 = {}
-L38_1.x = 0.0
-L38_1.y = 234.976
-L38_1.z = 0.0
-L37_1.rot = L38_1
-L37_1.area_id = 4
-L37_1.tag = 64
-L38_1 = {}
-L38_1.config_id = 88054
-L39_1 = {}
-L39_1.x = 2868.865
-L39_1.y = 207.2
-L39_1.z = -12.566
-L38_1.pos = L39_1
-L39_1 = {}
-L39_1.x = 0.0
-L39_1.y = 234.976
-L39_1.z = 0.0
-L38_1.rot = L39_1
-L38_1.area_id = 4
-L38_1.tag = 64
-L39_1 = {}
-L39_1.config_id = 88055
-L40_1 = {}
-L40_1.x = 2862.024
-L40_1.y = 207.2
-L40_1.z = -9.93
-L39_1.pos = L40_1
-L40_1 = {}
-L40_1.x = 0.0
-L40_1.y = 234.976
-L40_1.z = 0.0
-L39_1.rot = L40_1
-L39_1.area_id = 4
-L39_1.tag = 64
-L40_1 = {}
-L41_1 = 88059
-L40_1.config_id = L41_1
-L41_1 = {}
-L42_1 = 2852.296
-L41_1.x = L42_1
-L42_1 = 207.161
-L41_1.y = L42_1
-L42_1 = -22.756
-L41_1.z = L42_1
-L40_1.pos = L41_1
-L41_1 = {}
-L41_1.x = 0.0
-L42_1 = 131.123
-L41_1.y = L42_1
-L41_1.z = 0.0
-L40_1.rot = L41_1
-L40_1.area_id = 4
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L3_1[13] = L16_1
-L3_1[14] = L17_1
-L3_1[15] = L18_1
-L3_1[16] = L19_1
-L3_1[17] = L20_1
-L3_1[18] = L21_1
-L3_1[19] = L22_1
-L3_1[20] = L23_1
-L3_1[21] = L24_1
-L3_1[22] = L25_1
-L3_1[23] = L26_1
-L3_1[24] = L27_1
-L3_1[25] = L28_1
-L3_1[26] = L29_1
-L3_1[27] = L30_1
-L3_1[28] = L31_1
-L3_1[29] = L32_1
-L3_1[30] = L33_1
-L3_1[31] = L34_1
-L3_1[32] = L35_1
-L3_1[33] = L36_1
-L3_1[34] = L37_1
-L3_1[35] = L38_1
-L3_1[36] = L39_1
-L3_1[37] = L40_1
-points = L3_1
-L3_1 = "variables"
-L4_1 = {}
-L5_1 = {}
-L6_1 = "configId"
-L5_1[L6_1] = 1
-L6_1 = "finalWave"
-L5_1.name = L6_1
-L6_1 = "value"
-L7_1 = 3
-L5_1[L6_1] = L7_1
-L6_1 = "no_refresh"
-L7_1 = false
-L5_1[L6_1] = L7_1
-L6_1 = {}
-L7_1 = "configId"
-L6_1[L7_1] = 2
-L6_1.name = "refreshMonster"
-L7_1 = "value"
-L6_1[L7_1] = 0
-L7_1 = "no_refresh"
-L8_1 = false
-L6_1[L7_1] = L8_1
-L7_1 = {}
-L8_1 = "configId"
-L9_1 = 3
-L7_1[L8_1] = L9_1
-L8_1 = "isTimeout"
-L7_1.name = L8_1
-L8_1 = "value"
-L7_1[L8_1] = 0
-L8_1 = "no_refresh"
-L9_1 = false
-L7_1[L8_1] = L9_1
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-_ENV[L3_1] = L4_1
-L3_1 = "garbages"
-L4_1 = {}
-L5_1 = {}
-L6_1 = {}
-L7_1 = 1088013
-L6_1.config_id = L7_1
-L7_1 = "POOL_MONSTER_TIDE_DIE_88013"
-L6_1.name = L7_1
-L7_1 = EventType
-L8_1 = "EVENT_POOL_MONSTER_TIDE_DIE"
-L7_1 = L7_1[L8_1]
-L6_1.event = L7_1
-L7_1 = "1"
-L6_1.source = L7_1
-L7_1 = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88013"
-L6_1.condition = L7_1
-L7_1 = "action_EVENT_POOL_MONSTER_TIDE_DIE_88013"
-L6_1.action = L7_1
-L6_1.trigger_count = 0
-L7_1 = {}
-L8_1 = 1088014
-L7_1.config_id = L8_1
-L8_1 = "POOL_MONSTER_TIDE_DIE_88014"
-L7_1.name = L8_1
-L8_1 = EventType
-L9_1 = "EVENT_POOL_MONSTER_TIDE_DIE"
-L8_1 = L8_1[L9_1]
-L7_1.event = L8_1
-L8_1 = "2"
-L7_1.source = L8_1
-L8_1 = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88014"
-L7_1.condition = L8_1
-L8_1 = "action_EVENT_POOL_MONSTER_TIDE_DIE_88014"
-L7_1.action = L8_1
-L7_1.trigger_count = 0
-L8_1 = {}
-L9_1 = 1088015
-L8_1.config_id = L9_1
-L9_1 = "POOL_MONSTER_TIDE_DIE_88015"
-L8_1.name = L9_1
-L9_1 = EventType
-L10_1 = "EVENT_POOL_MONSTER_TIDE_DIE"
-L9_1 = L9_1[L10_1]
-L8_1.event = L9_1
-L9_1 = "3"
-L8_1.source = L9_1
-L9_1 = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88015"
-L8_1.condition = L9_1
-L9_1 = "action_EVENT_POOL_MONSTER_TIDE_DIE_88015"
-L8_1.action = L9_1
-L8_1.trigger_count = 0
-L9_1 = {}
-L10_1 = 1088016
-L9_1.config_id = L10_1
-L10_1 = "POOL_MONSTER_TIDE_DIE_88016"
-L9_1.name = L10_1
-L10_1 = EventType
-L11_1 = "EVENT_POOL_MONSTER_TIDE_DIE"
-L10_1 = L10_1[L11_1]
-L9_1.event = L10_1
-L10_1 = "4"
-L9_1.source = L10_1
-L10_1 = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88016"
-L9_1.condition = L10_1
-L10_1 = "action_EVENT_POOL_MONSTER_TIDE_DIE_88016"
-L9_1.action = L10_1
-L9_1.trigger_count = 0
-L10_1 = {}
-L11_1 = 1088017
-L10_1.config_id = L11_1
-L11_1 = "POOL_MONSTER_TIDE_DIE_88017"
-L10_1.name = L11_1
-L11_1 = EventType
-L12_1 = "EVENT_POOL_MONSTER_TIDE_DIE"
-L11_1 = L11_1[L12_1]
-L10_1.event = L11_1
-L11_1 = "5"
-L10_1.source = L11_1
-L11_1 = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88017"
-L10_1.condition = L11_1
-L11_1 = "action_EVENT_POOL_MONSTER_TIDE_DIE_88017"
-L10_1.action = L11_1
-L10_1.trigger_count = 0
-L11_1 = {}
-L12_1 = 1088018
-L11_1.config_id = L12_1
-L12_1 = "POOL_MONSTER_TIDE_DIE_88018"
-L11_1.name = L12_1
-L12_1 = EventType
-L13_1 = "EVENT_POOL_MONSTER_TIDE_DIE"
-L12_1 = L12_1[L13_1]
-L11_1.event = L12_1
-L12_1 = "6"
-L11_1.source = L12_1
-L12_1 = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88018"
-L11_1.condition = L12_1
-L12_1 = "action_EVENT_POOL_MONSTER_TIDE_DIE_88018"
-L11_1.action = L12_1
-L11_1.trigger_count = 0
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L4_1.triggers = L5_1
-_ENV[L3_1] = L4_1
-L3_1 = "sight_groups"
-L4_1 = {}
-L5_1 = {}
-L6_1 = 88002
-L7_1 = 88003
-L8_1 = 88004
-L9_1 = 88005
-L10_1 = 88006
-L11_1 = 88007
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L4_1[1] = L5_1
-_ENV[L3_1] = L4_1
-L3_1 = "init_config"
-L4_1 = {}
-L5_1 = "suite"
-L4_1[L5_1] = 1
-L5_1 = "end_suite"
-L4_1[L5_1] = 0
-L5_1 = "rand_suite"
-L6_1 = false
-L4_1[L5_1] = L6_1
-_ENV[L3_1] = L4_1
-L3_1 = "suites"
-L4_1 = {}
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 88001
-L8_1 = 88002
-L9_1 = 88003
-L10_1 = 88004
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L7_1 = 88008
-L8_1 = 88009
-L9_1 = 88057
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "SELECT_OPTION_88010"
-L8_1 = "TIME_AXIS_PASS_88011"
-L9_1 = "VARIABLE_CHANGE_88012"
-L10_1 = "VARIABLE_CHANGE_88019"
-L11_1 = "TIMER_EVENT_88056"
-L12_1 = "ENTER_REGION_88057"
-L13_1 = "GADGET_STATE_CHANGE_88058"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L6_1[7] = L13_1
-L5_1.triggers = L6_1
-L6_1 = "rand_weight"
-L7_1 = 100
-L5_1[L6_1] = L7_1
-L4_1[1] = L5_1
-_ENV[L3_1] = L4_1
-function L3_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 88001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 175 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133007088
+}
+
+-- Trigger变量
+local defs = {
+	region_Enter = 88008,
+	region_Leave = 88009,
+	group_id = 133007088,
+	gallery_id = 12002,
+	monsterWave = {18004,18006,18004,18004,18006,18004},
+	prospect_id = {88002,88003,88004},
+	gadget_1 = 0
+}
+
+-- DEFS_MISCS
+local Pursina = {
+	{88002,88005},	
+	{88003,88006},
+	{88004,88007},
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 88001, gadget_id = 70800054, pos = { x = 2856.005, y = 207.398, z = -26.577 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 4 },
+	{ config_id = 88002, gadget_id = 70800044, pos = { x = 2863.915, y = 207.200, z = -18.305 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 4 },
+	{ config_id = 88003, gadget_id = 70800044, pos = { x = 2843.240, y = 211.256, z = -43.206 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 4 },
+	{ config_id = 88004, gadget_id = 70800044, pos = { x = 2839.095, y = 207.214, z = -23.758 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 4 },
+	{ config_id = 88005, gadget_id = 70800047, pos = { x = 2863.915, y = 208.626, z = -18.305 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 4 },
+	{ config_id = 88006, gadget_id = 70800048, pos = { x = 2843.240, y = 212.725, z = -43.206 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 4 },
+	{ config_id = 88007, gadget_id = 70800049, pos = { x = 2839.095, y = 208.634, z = -23.758 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 4 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 88008, shape = RegionShape.SPHERE, radius = 50, pos = { x = 2856.012, y = 208.383, z = -26.571 }, area_id = 4 },
+	{ config_id = 88009, shape = RegionShape.SPHERE, radius = 50, pos = { x = 2856.012, y = 208.383, z = -26.571 }, area_id = 4 },
+	{ config_id = 88057, shape = RegionShape.SPHERE, radius = 12, pos = { x = 2856.012, y = 208.383, z = -26.571 }, area_id = 4 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1088010, name = "SELECT_OPTION_88010", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_88010", action = "action_EVENT_SELECT_OPTION_88010" },
+	{ config_id = 1088011, name = "TIME_AXIS_PASS_88011", event = EventType.EVENT_TIME_AXIS_PASS, source = "looptime", condition = "", action = "action_EVENT_TIME_AXIS_PASS_88011", trigger_count = 0 },
+	{ config_id = 1088012, name = "VARIABLE_CHANGE_88012", event = EventType.EVENT_VARIABLE_CHANGE, source = "refreshMonster", condition = "", action = "action_EVENT_VARIABLE_CHANGE_88012", trigger_count = 0 },
+	{ config_id = 1088019, name = "VARIABLE_CHANGE_88019", event = EventType.EVENT_VARIABLE_CHANGE, source = "IsFinished", condition = "condition_EVENT_VARIABLE_CHANGE_88019", action = "action_EVENT_VARIABLE_CHANGE_88019" },
+	{ config_id = 1088056, name = "TIMER_EVENT_88056", event = EventType.EVENT_TIMER_EVENT, source = "starttime", condition = "", action = "action_EVENT_TIMER_EVENT_88056" },
+	{ config_id = 1088057, name = "ENTER_REGION_88057", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_88057", action = "action_EVENT_ENTER_REGION_88057" },
+	{ config_id = 1088058, name = "GADGET_STATE_CHANGE_88058", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_88058", action = "action_EVENT_GADGET_STATE_CHANGE_88058" }
+}
+
+-- 点位
+points = {
+	{ config_id = 88020, pos = { x = 2877.008, y = 207.200, z = -15.329 }, rot = { x = 0.000, y = 248.643, z = 0.000 }, area_id = 4, tag = 2 },
+	{ config_id = 88021, pos = { x = 2874.839, y = 207.200, z = -11.680 }, rot = { x = 0.000, y = 205.619, z = 0.000 }, area_id = 4, tag = 2 },
+	{ config_id = 88022, pos = { x = 2876.912, y = 207.200, z = -10.240 }, rot = { x = 0.000, y = 226.659, z = 0.000 }, area_id = 4, tag = 2 },
+	{ config_id = 88023, pos = { x = 2879.046, y = 207.200, z = -15.046 }, rot = { x = 0.000, y = 248.643, z = 0.000 }, area_id = 4, tag = 2 },
+	{ config_id = 88024, pos = { x = 2873.685, y = 207.200, z = -10.178 }, rot = { x = 0.000, y = 204.197, z = 0.000 }, area_id = 4, tag = 2 },
+	{ config_id = 88025, pos = { x = 2879.105, y = 207.200, z = -12.629 }, rot = { x = 0.000, y = 248.643, z = 0.000 }, area_id = 4, tag = 2 },
+	{ config_id = 88026, pos = { x = 2844.365, y = 212.603, z = -61.399 }, rot = { x = 0.000, y = 357.510, z = 0.000 }, area_id = 4, tag = 4 },
+	{ config_id = 88027, pos = { x = 2844.756, y = 212.408, z = -58.766 }, rot = { x = 0.000, y = 0.578, z = 0.000 }, area_id = 4, tag = 4 },
+	{ config_id = 88028, pos = { x = 2841.158, y = 212.735, z = -59.917 }, rot = { x = 0.000, y = 30.990, z = 0.000 }, area_id = 4, tag = 4 },
+	{ config_id = 88029, pos = { x = 2837.898, y = 212.884, z = -60.557 }, rot = { x = 0.000, y = 30.990, z = 0.000 }, area_id = 4, tag = 4 },
+	{ config_id = 88030, pos = { x = 2840.550, y = 212.603, z = -57.488 }, rot = { x = 0.000, y = 30.990, z = 0.000 }, area_id = 4, tag = 4 },
+	{ config_id = 88031, pos = { x = 2837.575, y = 212.557, z = -55.657 }, rot = { x = 0.000, y = 30.990, z = 0.000 }, area_id = 4, tag = 4 },
+	{ config_id = 88032, pos = { x = 2828.704, y = 207.200, z = -6.014 }, rot = { x = 0.000, y = 145.642, z = 0.000 }, area_id = 4, tag = 8 },
+	{ config_id = 88033, pos = { x = 2831.288, y = 207.200, z = -3.921 }, rot = { x = 0.000, y = 174.053, z = 0.000 }, area_id = 4, tag = 8 },
+	{ config_id = 88034, pos = { x = 2827.688, y = 207.200, z = -9.152 }, rot = { x = 0.000, y = 145.642, z = 0.000 }, area_id = 4, tag = 8 },
+	{ config_id = 88035, pos = { x = 2830.896, y = 207.200, z = -6.720 }, rot = { x = 0.000, y = 175.454, z = 0.000 }, area_id = 4, tag = 8 },
+	{ config_id = 88036, pos = { x = 2829.360, y = 207.200, z = -10.256 }, rot = { x = 0.000, y = 145.642, z = 0.000 }, area_id = 4, tag = 8 },
+	{ config_id = 88037, pos = { x = 2833.305, y = 207.200, z = -10.431 }, rot = { x = 0.000, y = 189.233, z = 0.000 }, area_id = 4, tag = 8 },
+	{ config_id = 88038, pos = { x = 2869.894, y = 207.200, z = -16.612 }, rot = { x = 0.000, y = 207.380, z = 0.000 }, area_id = 4, tag = 16 },
+	{ config_id = 88039, pos = { x = 2862.740, y = 207.200, z = -14.323 }, rot = { x = 0.000, y = 207.380, z = 0.000 }, area_id = 4, tag = 16 },
+	{ config_id = 88040, pos = { x = 2842.505, y = 212.204, z = -53.951 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 4, tag = 16 },
+	{ config_id = 88041, pos = { x = 2834.984, y = 212.137, z = -50.883 }, rot = { x = 0.000, y = 27.499, z = 0.000 }, area_id = 4, tag = 16 },
+	{ config_id = 88042, pos = { x = 2839.266, y = 211.803, z = -48.543 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 4, tag = 16 },
+	{ config_id = 88043, pos = { x = 2846.471, y = 211.823, z = -52.528 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 4, tag = 16 },
+	{ config_id = 88044, pos = { x = 2843.532, y = 211.900, z = -51.048 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 4, tag = 32 },
+	{ config_id = 88045, pos = { x = 2837.908, y = 212.267, z = -52.682 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 4, tag = 32 },
+	{ config_id = 88046, pos = { x = 2843.152, y = 207.200, z = -14.131 }, rot = { x = 0.000, y = 146.835, z = 0.000 }, area_id = 4, tag = 32 },
+	{ config_id = 88047, pos = { x = 2835.740, y = 207.200, z = -15.238 }, rot = { x = 0.000, y = 146.835, z = 0.000 }, area_id = 4, tag = 32 },
+	{ config_id = 88048, pos = { x = 2836.964, y = 207.200, z = -20.558 }, rot = { x = 0.000, y = 146.835, z = 0.000 }, area_id = 4, tag = 32 },
+	{ config_id = 88049, pos = { x = 2834.308, y = 207.200, z = -21.426 }, rot = { x = 0.000, y = 118.533, z = 0.000 }, area_id = 4, tag = 32 },
+	{ config_id = 88050, pos = { x = 2841.037, y = 207.200, z = -18.091 }, rot = { x = 0.000, y = 190.629, z = 0.000 }, area_id = 4, tag = 64 },
+	{ config_id = 88051, pos = { x = 2834.316, y = 207.200, z = -17.733 }, rot = { x = 0.000, y = 151.257, z = 0.000 }, area_id = 4, tag = 64 },
+	{ config_id = 88052, pos = { x = 2869.294, y = 207.200, z = -20.503 }, rot = { x = 0.000, y = 234.976, z = 0.000 }, area_id = 4, tag = 64 },
+	{ config_id = 88053, pos = { x = 2873.883, y = 207.200, z = -15.783 }, rot = { x = 0.000, y = 234.976, z = 0.000 }, area_id = 4, tag = 64 },
+	{ config_id = 88054, pos = { x = 2868.865, y = 207.200, z = -12.566 }, rot = { x = 0.000, y = 234.976, z = 0.000 }, area_id = 4, tag = 64 },
+	{ config_id = 88055, pos = { x = 2862.024, y = 207.200, z = -9.930 }, rot = { x = 0.000, y = 234.976, z = 0.000 }, area_id = 4, tag = 64 },
+	{ config_id = 88059, pos = { x = 2852.296, y = 207.161, z = -22.756 }, rot = { x = 0.000, y = 131.123, z = 0.000 }, area_id = 4 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "finalWave", value = 3, no_refresh = false },
+	{ config_id = 2, name = "refreshMonster", value = 0, no_refresh = false },
+	{ config_id = 3, name = "isTimeout", value = 0, no_refresh = false }
+}
+
+-- 废弃数据
+garbages = {
+	triggers = {
+		{ config_id = 1088013, name = "POOL_MONSTER_TIDE_DIE_88013", event = EventType.EVENT_POOL_MONSTER_TIDE_DIE, source = "1", condition = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88013", action = "action_EVENT_POOL_MONSTER_TIDE_DIE_88013", trigger_count = 0 },
+		{ config_id = 1088014, name = "POOL_MONSTER_TIDE_DIE_88014", event = EventType.EVENT_POOL_MONSTER_TIDE_DIE, source = "2", condition = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88014", action = "action_EVENT_POOL_MONSTER_TIDE_DIE_88014", trigger_count = 0 },
+		{ config_id = 1088015, name = "POOL_MONSTER_TIDE_DIE_88015", event = EventType.EVENT_POOL_MONSTER_TIDE_DIE, source = "3", condition = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88015", action = "action_EVENT_POOL_MONSTER_TIDE_DIE_88015", trigger_count = 0 },
+		{ config_id = 1088016, name = "POOL_MONSTER_TIDE_DIE_88016", event = EventType.EVENT_POOL_MONSTER_TIDE_DIE, source = "4", condition = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88016", action = "action_EVENT_POOL_MONSTER_TIDE_DIE_88016", trigger_count = 0 },
+		{ config_id = 1088017, name = "POOL_MONSTER_TIDE_DIE_88017", event = EventType.EVENT_POOL_MONSTER_TIDE_DIE, source = "5", condition = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88017", action = "action_EVENT_POOL_MONSTER_TIDE_DIE_88017", trigger_count = 0 },
+		{ config_id = 1088018, name = "POOL_MONSTER_TIDE_DIE_88018", event = EventType.EVENT_POOL_MONSTER_TIDE_DIE, source = "6", condition = "condition_EVENT_POOL_MONSTER_TIDE_DIE_88018", action = "action_EVENT_POOL_MONSTER_TIDE_DIE_88018", trigger_count = 0 }
+	}
+}
+
+-- 视野组
+sight_groups = {
+	{ 88002, 88003, 88004, 88005, 88006, 88007 }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 88001, 88002, 88003, 88004 },
+		regions = { 88008, 88009, 88057 },
+		triggers = { "SELECT_OPTION_88010", "TIME_AXIS_PASS_88011", "VARIABLE_CHANGE_88012", "VARIABLE_CHANGE_88019", "TIMER_EVENT_88056", "ENTER_REGION_88057", "GADGET_STATE_CHANGE_88058" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_88010(context, evt)
+	-- 判断是gadgetid 88001 option_id 175
+	if 88001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 175 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_88010 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 88001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_88010(context, evt)
+	-- 将configid为 88001 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 88001, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_88010 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "refreshMonster"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "finalWave"
-  L3_2 = L3_2(L4_2, L5_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "refreshMonster"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-  else
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "refreshMonster"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_88011(context, evt)
+	-- 判断剩余怪物数量是否是0.
+	
+	-- 如果不为0设置超时标记，返回0
+	--if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+	--	ScriptLib.SetGroupVariableValue(context, "isTimeout", 1)
+	--	return 0
+	-- 如果为0通知刷新下一波怪物
+	--else
+		--如果不是最后一波，设置至下一波，否则循环到第一波
+	if ScriptLib.GetGroupVariableValue(context, "refreshMonster") ~= ScriptLib.GetGroupVariableValue(context, "finalWave") then
+		ScriptLib.ChangeGroupVariableValue(context, "refreshMonster", 1)
+	else
+		ScriptLib.SetGroupVariableValue(context, "refreshMonster", 1)	
+	end
+	--end
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_88011 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGalleryProgressScore
-  L3_2 = A0_2
-  L4_2 = "digProgress0"
-  L5_2 = L1_1.gallery_id
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 100 <= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGalleryProgressScore
-    L3_2 = A0_2
-    L4_2 = "digProgress1"
-    L5_2 = L1_1.gallery_id
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if 100 <= L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGalleryProgressScore
-      L3_2 = A0_2
-      L4_2 = "digProgress2"
-      L5_2 = L1_1.gallery_id
-      L2_2 = L2_2(L3_2, L4_2, L5_2)
-      if 100 <= L2_2 then
-        L2_2 = 0
-        return L2_2
-      end
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = L1_1.prospect_id
-  L5_2 = L5_2[1]
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  L3_2 = GadgetState
-  L3_2 = L3_2.GearStop
-  if L2_2 ~= L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = L1_1.group_id
-    L5_2 = L1_1.prospect_id
-    L5_2 = L5_2[2]
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    L3_2 = GadgetState
-    L3_2 = L3_2.GearStop
-    if L2_2 ~= L3_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGadgetStateByConfigId
-      L3_2 = A0_2
-      L4_2 = L1_1.group_id
-      L5_2 = L1_1.prospect_id
-      L5_2 = L5_2[3]
-      L2_2 = L2_2(L3_2, L4_2, L5_2)
-      L3_2 = GadgetState
-      L3_2 = L3_2.GearStop
-      if L2_2 ~= L3_2 then
-        L2_2 = 0
-        return L2_2
-      end
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 6
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "refreshMonster"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 1 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGalleryProgressScore
-    L3_2 = A0_2
-    L4_2 = "digProgress0"
-    L5_2 = L1_1.gallery_id
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if not (100 <= L2_2) then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGadgetStateByConfigId
-      L3_2 = A0_2
-      L4_2 = L1_1.group_id
-      L5_2 = L1_1.prospect_id
-      L5_2 = L5_2[1]
-      L2_2 = L2_2(L3_2, L4_2, L5_2)
-      L3_2 = GadgetState
-      L3_2 = L3_2.GearStop
-      if L2_2 == L3_2 then
-        goto lbl_140
-      end
-    end
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValueByGroup
-    L3_2 = A0_2
-    L4_2 = "refreshMonster"
-    L5_2 = 1
-    L6_2 = L1_1.group_id
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-    L2_2 = 0
-    do return L2_2 end
-    goto lbl_294
-    ::lbl_140::
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 600082
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AutoPoolMonsterTide
-    L3_2 = A0_2
-    L4_2 = 1
-    L5_2 = L1_1.group_id
-    L6_2 = {}
-    L7_2 = L1_1.monsterWave
-    L7_2 = L7_2[1]
-    L6_2[1] = L7_2
-    L7_2 = 0
-    L8_2 = {}
-    L9_2 = {}
-    L10_2 = {}
-    L10_2.total_count = 10
-    L10_2.min_count = 3
-    L10_2.max_count = 5
-    L10_2.tag = 2
-    L10_2.fill_time = 0
-    L10_2.fill_count = 0
-    L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-    L2_2 = 0
-    return L2_2
-  else
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "refreshMonster"
-    L2_2 = L2_2(L3_2, L4_2)
-    if L2_2 == 2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGalleryProgressScore
-      L3_2 = A0_2
-      L4_2 = "digProgress1"
-      L5_2 = L1_1.gallery_id
-      L2_2 = L2_2(L3_2, L4_2, L5_2)
-      if not (100 <= L2_2) then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.GetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = L1_1.group_id
-        L5_2 = L1_1.prospect_id
-        L5_2 = L5_2[2]
-        L2_2 = L2_2(L3_2, L4_2, L5_2)
-        L3_2 = GadgetState
-        L3_2 = L3_2.GearStop
-        if L2_2 == L3_2 then
-          goto lbl_204
-        end
-      end
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ChangeGroupVariableValueByGroup
-      L3_2 = A0_2
-      L4_2 = "refreshMonster"
-      L5_2 = 1
-      L6_2 = L1_1.group_id
-      L2_2(L3_2, L4_2, L5_2, L6_2)
-      L2_2 = 0
-      do return L2_2 end
-      goto lbl_294
-      ::lbl_204::
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ShowReminder
-      L3_2 = A0_2
-      L4_2 = 600082
-      L2_2(L3_2, L4_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.AutoPoolMonsterTide
-      L3_2 = A0_2
-      L4_2 = 2
-      L5_2 = L1_1.group_id
-      L6_2 = {}
-      L7_2 = L1_1.monsterWave
-      L7_2 = L7_2[2]
-      L6_2[1] = L7_2
-      L7_2 = 0
-      L8_2 = {}
-      L9_2 = {}
-      L10_2 = {}
-      L10_2.total_count = 10
-      L10_2.min_count = 3
-      L10_2.max_count = 5
-      L10_2.tag = 4
-      L10_2.fill_time = 0
-      L10_2.fill_count = 0
-      L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-      L2_2 = 0
-      return L2_2
-    else
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "refreshMonster"
-      L2_2 = L2_2(L3_2, L4_2)
-      if L2_2 == 3 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.GetGalleryProgressScore
-        L3_2 = A0_2
-        L4_2 = "digProgress2"
-        L5_2 = L1_1.gallery_id
-        L2_2 = L2_2(L3_2, L4_2, L5_2)
-        if not (100 <= L2_2) then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.GetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = L1_1.group_id
-          L5_2 = L1_1.prospect_id
-          L5_2 = L5_2[3]
-          L2_2 = L2_2(L3_2, L4_2, L5_2)
-          L3_2 = GadgetState
-          L3_2 = L3_2.GearStop
-          if L2_2 == L3_2 then
-            goto lbl_267
-          end
-        end
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "refreshMonster"
-        L5_2 = 1
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = 0
-        do return L2_2 end
-        goto lbl_294
-        ::lbl_267::
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ShowReminder
-        L3_2 = A0_2
-        L4_2 = 600082
-        L2_2(L3_2, L4_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.AutoPoolMonsterTide
-        L3_2 = A0_2
-        L4_2 = 3
-        L5_2 = L1_1.group_id
-        L6_2 = {}
-        L7_2 = L1_1.monsterWave
-        L7_2 = L7_2[3]
-        L6_2[1] = L7_2
-        L7_2 = 0
-        L8_2 = {}
-        L9_2 = {}
-        L10_2 = {}
-        L10_2.total_count = 10
-        L10_2.min_count = 3
-        L10_2.max_count = 5
-        L10_2.tag = 8
-        L10_2.fill_time = 0
-        L10_2.fill_count = 0
-        L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-        L2_2 = 0
-        return L2_2
-      end
-    end
-  end
-  ::lbl_294::
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_88012(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	
+	
+	
+	--三个电桩进度全满跳出
+	if ScriptLib.GetGalleryProgressScore(context, "digProgress0", defs.gallery_id)>=100 and ScriptLib.GetGalleryProgressScore(context, "digProgress1", defs.gallery_id)>=100 and ScriptLib.GetGalleryProgressScore(context, "digProgress2", defs.gallery_id)>=100 then
+		return 0
+	end
+	--三个电桩全部没有激活跳出
+	if ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.prospect_id[1]) ~= GadgetState.GearStop and ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.prospect_id[2]) ~= GadgetState.GearStop and ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.prospect_id[3]) ~= GadgetState.GearStop then
+		return 0
+	end
+	
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 1)
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 2)
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 3)
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 4)
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 5)
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 6)
+	
+	-- refreshMonster=1，刷第1波.A点刷新
+	if ScriptLib.GetGroupVariableValue(context, "refreshMonster") == 1 then
+		if ScriptLib.GetGalleryProgressScore(context, "digProgress0", defs.gallery_id)>=100 or ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.prospect_id[1]) ~= GadgetState.GearStop then
+			ScriptLib.ChangeGroupVariableValueByGroup(context, "refreshMonster", 1,defs.group_id )
+			return 0
+		else
+			ScriptLib.ShowReminder(context, 600082)
+			ScriptLib.AutoPoolMonsterTide(context, 1, defs.group_id, {defs.monsterWave[1]}, 0, {}, {}, {total_count=10, min_count=3, max_count=5, tag=2, fill_time=0, fill_count=0})
+			return 0
+		end
+	-- refreshMonster=2，刷第2波.B点刷新
+	elseif ScriptLib.GetGroupVariableValue(context, "refreshMonster") == 2  then
+		if ScriptLib.GetGalleryProgressScore(context, "digProgress1", defs.gallery_id)>=100 or ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.prospect_id[2]) ~= GadgetState.GearStop then
+			ScriptLib.ChangeGroupVariableValueByGroup(context, "refreshMonster", 1,defs.group_id )
+			return 0
+		else
+			ScriptLib.ShowReminder(context, 600082)
+			ScriptLib.AutoPoolMonsterTide(context, 2, defs.group_id, {defs.monsterWave[2]}, 0, {}, {},  {total_count=10, min_count=3, max_count=5, tag=4, fill_time=0, fill_count=0})
+			return 0
+		end
+	-- refreshMonster=5，刷第3波.C点刷新
+	elseif ScriptLib.GetGroupVariableValue(context, "refreshMonster") == 3  then
+		if ScriptLib.GetGalleryProgressScore(context, "digProgress2", defs.gallery_id)>=100 or ScriptLib.GetGadgetStateByConfigId(context, defs.group_id, defs.prospect_id[3]) ~= GadgetState.GearStop then
+			ScriptLib.SetGroupVariableValue(context, "refreshMonster", 1)
+			return 0
+		else
+			ScriptLib.ShowReminder(context, 600082)
+			ScriptLib.AutoPoolMonsterTide(context, 3, defs.group_id, {defs.monsterWave[3]}, 0, {}, {}, {total_count=10, min_count=3, max_count=5, tag=8, fill_time=0, fill_count=0})
+			return 0
+		end
+	end
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_88012 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "IsFinished"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_88019(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"IsFinished"为1
+	if ScriptLib.GetGroupVariableValue(context, "IsFinished") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_88019 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "looptime"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ClearPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = 6
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_88019(context, evt)
+	-- 停止标识为"looptime"的时间轴
+	ScriptLib.EndTimeAxis(context, "looptime")
+	-- 删除所有怪物
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 1)
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 2)
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 3)
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 4)
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 5)
+	ScriptLib.ClearPoolMonsterTide(context, defs.group_id, 6)
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_88019 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "looptime"
-  L5_2 = {}
-  L6_2 = 60
-  L7_2 = 120
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "refreshMonster"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_88056(context, evt)
+	-- 创建标识为"looptime"，时间节点为{60,120}的时间轴，true用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "looptime", {60,120}, true)
+	
+	
+	-- 针对当前group内变量名为 "refreshMonster" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "refreshMonster", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_88056 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 88057 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_88057(context, evt)
+	if evt.param1 ~= 88057 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_88057 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AssignPlayerShowTemplateReminder
-  L3_2 = A0_2
-  L4_2 = 146
-  L5_2 = {}
-  L6_2 = {}
-  L5_2.param_uid_vec = L6_2
-  L6_2 = {}
-  L5_2.param_vec = L6_2
-  L6_2 = {}
-  L7_2 = A0_2.uid
-  L6_2[1] = L7_2
-  L5_2.uid_vec = L6_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_88057(context, evt)
+	-- 显示id为137的reminder
+	if 0 ~= ScriptLib.AssignPlayerShowTemplateReminder(context,146,{param_uid_vec={},param_vec={},uid_vec={context.uid}}) then
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_88057 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  L3_2 = L1_1.prospect_id
-  L3_2 = L3_2[1]
-  if L2_2 ~= L3_2 then
-    L2_2 = A1_2.param2
-    L3_2 = L1_1.prospect_id
-    L3_2 = L3_2[2]
-    if L2_2 ~= L3_2 then
-      L2_2 = A1_2.param2
-      L3_2 = L1_1.prospect_id
-      L3_2 = L3_2[3]
-      if L2_2 ~= L3_2 then
-        goto lbl_23
-      end
-    end
-  end
-  L2_2 = A1_2.param1
-  L3_2 = GadgetState
-  L3_2 = L3_2.GearStop
-  if L2_2 == L3_2 then
-    L2_2 = true
-    return L2_2
-  end
-  ::lbl_23::
-  L2_2 = false
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_88058(context, evt)
+	if (evt.param2 == defs.prospect_id[1] or evt.param2 == defs.prospect_id[2] or evt.param2 == defs.prospect_id[3]) and evt.param1 == GadgetState.GearStop then
+		return true
+	end
+	
+	return false
 end
-condition_EVENT_GADGET_STATE_CHANGE_88058 = L3_1
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 133007088
-  L5_2 = "starttime"
-  L6_2 = 10
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_88058(context, evt)
+	-- 延迟10秒后,向groupId为：133007088的对象,请求一次调用,并将string参数："starttime" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 133007088, "starttime", 10) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_88058 = L3_1
-L3_1 = "require"
-L3_1 = _ENV[L3_1]
-L4_1 = "V2_2/Dig"
-L3_1(L4_1)
+
+require "V2_2/Dig"

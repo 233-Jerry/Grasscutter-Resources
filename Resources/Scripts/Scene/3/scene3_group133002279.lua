@@ -1,351 +1,223 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.group_id = 133002279
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 2337
-L2_1.gadget_id = 70380004
-L3_1 = {}
-L3_1.x = 2018.115
-L3_1.y = 204.925
-L3_1.z = -926.919
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 5.316
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 25
-L2_1.route_id = 300200210
-L2_1.start_route = false
-L2_1.persistent = true
-L2_1.area_id = 3
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1000367
-L2_1.name = "ANY_GADGET_DIE_367"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_GADGET_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_GADGET_DIE_367"
-L2_1.action = "action_EVENT_ANY_GADGET_DIE_367"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1000368
-L3_1.name = "QUEST_FINISH_368"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_QUEST_FINISH
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_QUEST_FINISH_368"
-L3_1.action = "action_EVENT_QUEST_FINISH_368"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1000369
-L4_1.name = "PLATFORM_REACH_POINT_369"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_PLATFORM_REACH_POINT
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_PLATFORM_REACH_POINT_369"
-L4_1.action = "action_EVENT_PLATFORM_REACH_POINT_369"
-L5_1 = {}
-L5_1.config_id = 1000370
-L5_1.name = "GADGET_CREATE_370"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GADGET_CREATE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_GADGET_CREATE_370"
-L5_1.action = "action_EVENT_GADGET_CREATE_370"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1279001
-L6_1.name = "GROUP_LOAD_279001"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GROUP_LOAD
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_GROUP_LOAD_279001"
-L6_1.action = "action_EVENT_GROUP_LOAD_279001"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "ison"
-L2_1.value = 0
-L2_1.no_refresh = false
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 2337
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ANY_GADGET_DIE_367"
-L6_1 = "QUEST_FINISH_368"
-L7_1 = "PLATFORM_REACH_POINT_369"
-L8_1 = "GADGET_CREATE_370"
-L9_1 = "GROUP_LOAD_279001"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2337 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133002279
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 2337, gadget_id = 70380004, pos = { x = 2018.115, y = 204.925, z = -926.919 }, rot = { x = 0.000, y = 5.316, z = 0.000 }, level = 25, route_id = 300200210, start_route = false, persistent = true, area_id = 3 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000367, name = "ANY_GADGET_DIE_367", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_367", action = "action_EVENT_ANY_GADGET_DIE_367", trigger_count = 0 },
+	{ config_id = 1000368, name = "QUEST_FINISH_368", event = EventType.EVENT_QUEST_FINISH, source = "", condition = "condition_EVENT_QUEST_FINISH_368", action = "action_EVENT_QUEST_FINISH_368", trigger_count = 0 },
+	{ config_id = 1000369, name = "PLATFORM_REACH_POINT_369", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_369", action = "action_EVENT_PLATFORM_REACH_POINT_369" },
+	{ config_id = 1000370, name = "GADGET_CREATE_370", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_370", action = "action_EVENT_GADGET_CREATE_370", trigger_count = 0 },
+	{ config_id = 1279001, name = "GROUP_LOAD_279001", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_279001", action = "action_EVENT_GROUP_LOAD_279001" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "ison", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { 2337 },
+		regions = { },
+		triggers = { "ANY_GADGET_DIE_367", "QUEST_FINISH_368", "PLATFORM_REACH_POINT_369", "GADGET_CREATE_370", "GROUP_LOAD_279001" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_367(context, evt)
+	if 2337 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_GADGET_DIE_367 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "1330022791"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_367(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "1330022791") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_367 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2001808 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_QUEST_FINISH_368(context, evt)
+	--检查ID为2001808的任务的完成状态是否为1（1=完成，0=失败）
+	--此事件需要配合Quest表使用，在Quest表里的完成执行中配置“通知group脚本”，则该任务完成后服务端会向对应的group发送通知，参数1填写场景ID，参数2填写group ID（如果不填则会通知所有group）
+	
+	--检查任务ID
+	if 2001808 ~= evt.param1 then
+		return false
+	end
+	
+	--检查任务成功状态
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_QUEST_FINISH_368 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 2337
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetHp
-  L3_2 = A0_2
-  L4_2 = 133002279
-  L5_2 = 2337
-  L6_2 = 100
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_hp_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ison"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_368(context, evt)
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 2337) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	-- 将group 133002279 中config id为 2337 的物件血量设为 100 %（血量百分比不能填0，如果掉血，则走通用的掉血流程，如果加血，直接设置新的血量）。
+	if 0 ~= ScriptLib.SetGadgetHp(context, 133002279, 2337, 100) then
+			    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_hp_by_group")
+	    return -1
+		end
+	
+	-- 将本组内变量名为 "ison" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "ison", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_368 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2337 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 300200210 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_PLATFORM_REACH_POINT_369(context, evt)
+	-- 判断是gadgetid 为 2337的移动平台，是否到达了300200210 的路线中的 3 点
+	
+	if 2337 ~= evt.param1 then
+	  return false
+	end
+	
+	if 300200210 ~= evt.param2 then
+	  return false
+	end
+	
+	if 3 ~= evt.param3 then
+	  return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_PLATFORM_REACH_POINT_369 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133002279
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ison"
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_PLATFORM_REACH_POINT_369(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133002279, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 变量"ison"赋值为0
+	ScriptLib.SetGroupVariableValue(context, "ison", 0)
+	
+	return 0
 end
-action_EVENT_PLATFORM_REACH_POINT_369 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 2337 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_370(context, evt)
+	if 2337 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_370 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetHp
-  L3_2 = A0_2
-  L4_2 = 133002279
-  L5_2 = 2337
-  L6_2 = 50
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_hp_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_370(context, evt)
+	-- 将group 133002279 中config id为 2337 的物件血量设为 50 %（血量百分比不能填0，如果掉血，则走通用的掉血流程，如果加血，直接设置新的血量）。
+	if 0 ~= ScriptLib.SetGadgetHp(context, 133002279, 2337, 50) then
+			    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_hp_by_group")
+	    return -1
+		end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_370 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ison"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_279001(context, evt)
+	-- 判断变量"ison"为1
+	if ScriptLib.GetGroupVariableValue(context, "ison") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_279001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133002279
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_279001(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133002279, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_279001 = L1_1

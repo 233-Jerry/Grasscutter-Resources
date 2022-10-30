@@ -1,481 +1,179 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 220119006
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 6001
-L2_1.gadget_id = 70360280
-L3_1 = {}
-L3_1.x = 23.617
-L3_1.y = 1.336
-L3_1.z = -49.142
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 6002
-L3_1.gadget_id = 70360280
-L4_1 = {}
-L4_1.x = 18.077
-L4_1.y = 1.336
-L4_1.z = -49.166
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 6003
-L4_1.gadget_id = 70360280
-L5_1 = {}
-L5_1.x = 15.248
-L5_1.y = 1.716
-L5_1.z = -40.981
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 270.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 6004
-L5_1.gadget_id = 70360280
-L6_1 = {}
-L6_1.x = 10.739
-L6_1.y = 1.804
-L6_1.z = -29.045
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 180.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 6009
-L6_1.gadget_id = 70360291
-L7_1 = {}
-L7_1.x = 23.617
-L7_1.y = 1.038
-L7_1.z = -40.733
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 6010
-L7_1.gadget_id = 70360291
-L8_1 = {}
-L8_1.x = 18.077
-L8_1.y = 1.87
-L8_1.z = -40.776
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 6011
-L8_1.gadget_id = 70360291
-L9_1 = {}
-L9_1.x = 5.463
-L9_1.y = 1.544
-L9_1.z = -40.981
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 90.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = {}
-L9_1.config_id = 6012
-L9_1.gadget_id = 70360291
-L10_1 = {}
-L10_1.x = 10.739
-L10_1.y = 1.655
-L10_1.z = -49.506
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 6005
-L3_1 = RegionShape
-L3_1 = L3_1.CUBIC
-L2_1.shape = L3_1
-L3_1 = {}
-L3_1.x = 2.0
-L3_1.y = 10.0
-L3_1.z = 10.0
-L2_1.size = L3_1
-L3_1 = {}
-L3_1.x = 23.573
-L3_1.y = 0.44
-L3_1.z = -45.828
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.config_id = 6006
-L4_1 = RegionShape
-L4_1 = L4_1.CUBIC
-L3_1.shape = L4_1
-L4_1 = {}
-L4_1.x = 2.0
-L4_1.y = 10.0
-L4_1.z = 10.0
-L3_1.size = L4_1
-L4_1 = {}
-L4_1.x = 18.003
-L4_1.y = 2.95
-L4_1.z = -45.386
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.config_id = 6007
-L5_1 = RegionShape
-L5_1 = L5_1.CUBIC
-L4_1.shape = L5_1
-L5_1 = {}
-L5_1.x = 10.0
-L5_1.y = 10.0
-L5_1.z = 2.0
-L4_1.size = L5_1
-L5_1 = {}
-L5_1.x = 10.328
-L5_1.y = 3.67
-L5_1.z = -40.925
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.config_id = 6008
-L6_1 = RegionShape
-L6_1 = L6_1.CUBIC
-L5_1.shape = L6_1
-L6_1 = {}
-L6_1.x = 2.0
-L6_1.y = 10.0
-L6_1.z = 30.0
-L5_1.size = L6_1
-L6_1 = {}
-L6_1.x = 10.739
-L6_1.y = 1.805
-L6_1.z = -39.709
-L5_1.pos = L6_1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1006005
-L2_1.name = "ENTER_REGION_6005"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_6005"
-L2_1.action = "action_EVENT_ENTER_REGION_6005"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1006006
-L3_1.name = "ENTER_REGION_6006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_6006"
-L3_1.action = "action_EVENT_ENTER_REGION_6006"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1006007
-L4_1.name = "ENTER_REGION_6007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_6007"
-L4_1.action = "action_EVENT_ENTER_REGION_6007"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1006008
-L5_1.name = "ENTER_REGION_6008"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ENTER_REGION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ENTER_REGION_6008"
-L5_1.action = "action_EVENT_ENTER_REGION_6008"
-L5_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 6001
-L5_1 = 6002
-L6_1 = 6003
-L7_1 = 6004
-L8_1 = 6009
-L9_1 = 6010
-L10_1 = 6011
-L11_1 = 6012
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 6005
-L5_1 = 6006
-L6_1 = 6007
-L7_1 = 6008
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_6005"
-L5_1 = "ENTER_REGION_6006"
-L6_1 = "ENTER_REGION_6007"
-L7_1 = "ENTER_REGION_6008"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 6005 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220119006
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 6001, gadget_id = 70360280, pos = { x = 23.617, y = 1.336, z = -49.142 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 6002, gadget_id = 70360280, pos = { x = 18.077, y = 1.336, z = -49.166 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 6003, gadget_id = 70360280, pos = { x = 15.248, y = 1.716, z = -40.981 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 1 },
+	{ config_id = 6004, gadget_id = 70360280, pos = { x = 10.739, y = 1.804, z = -29.045 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1 },
+	{ config_id = 6009, gadget_id = 70360291, pos = { x = 23.617, y = 1.038, z = -40.733 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 6010, gadget_id = 70360291, pos = { x = 18.077, y = 1.870, z = -40.776 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 6011, gadget_id = 70360291, pos = { x = 5.463, y = 1.544, z = -40.981 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 },
+	{ config_id = 6012, gadget_id = 70360291, pos = { x = 10.739, y = 1.655, z = -49.506 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 6005, shape = RegionShape.CUBIC, size = { x = 2.000, y = 10.000, z = 10.000 }, pos = { x = 23.573, y = 0.440, z = -45.828 } },
+	{ config_id = 6006, shape = RegionShape.CUBIC, size = { x = 2.000, y = 10.000, z = 10.000 }, pos = { x = 18.003, y = 2.950, z = -45.386 } },
+	{ config_id = 6007, shape = RegionShape.CUBIC, size = { x = 10.000, y = 10.000, z = 2.000 }, pos = { x = 10.328, y = 3.670, z = -40.925 } },
+	{ config_id = 6008, shape = RegionShape.CUBIC, size = { x = 2.000, y = 10.000, z = 30.000 }, pos = { x = 10.739, y = 1.805, z = -39.709 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1006005, name = "ENTER_REGION_6005", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_6005", action = "action_EVENT_ENTER_REGION_6005", trigger_count = 0 },
+	{ config_id = 1006006, name = "ENTER_REGION_6006", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_6006", action = "action_EVENT_ENTER_REGION_6006", trigger_count = 0 },
+	{ config_id = 1006007, name = "ENTER_REGION_6007", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_6007", action = "action_EVENT_ENTER_REGION_6007", trigger_count = 0 },
+	{ config_id = 1006008, name = "ENTER_REGION_6008", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_6008", action = "action_EVENT_ENTER_REGION_6008", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 6001, 6002, 6003, 6004, 6009, 6010, 6011, 6012 },
+		regions = { 6005, 6006, 6007, 6008 },
+		triggers = { "ENTER_REGION_6005", "ENTER_REGION_6006", "ENTER_REGION_6007", "ENTER_REGION_6008" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_6005(context, evt)
+	if evt.param1 ~= 6005 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_6005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 6001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_6005(context, evt)
+	-- 将configid为 6001 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 6001, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_6005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 6006 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_6006(context, evt)
+	if evt.param1 ~= 6006 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_6006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 6002
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_6006(context, evt)
+	-- 将configid为 6002 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 6002, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_6006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 6007 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_6007(context, evt)
+	if evt.param1 ~= 6007 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_6007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 6003
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_6007(context, evt)
+	-- 将configid为 6003 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 6003, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_6007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 6008 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_6008(context, evt)
+	if evt.param1 ~= 6008 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_6008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 6004
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_6008(context, evt)
+	-- 将configid为 6004 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 6004, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_6008 = L1_1

@@ -12,13 +12,9 @@
   "_luaPath": "Actor/Quest/MQ370",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    371
-  ],
+  "PEOHODAKLNO": [371],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    100370
-  ],
+  "rewardIdList": [100370],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -43,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            37001,
-            0
-          ],
+          "param": [37001, 0],
           "count": 0
         }
       ],
@@ -54,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q37001Qin"
-        ],
+        "param": ["Q37001Qin"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -90,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            37002,
-            0
-          ],
+          "param": [37002, 0],
           "count": 0
         }
       ],
@@ -101,9 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1006"
-        ],
+        "param": ["1006"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -137,10 +123,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TRIGGER_FIRE",
-          "param": [
-            1067,
-            0
-          ],
+          "param": [1067, 0],
           "count": 0
         }
       ],
@@ -182,10 +165,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_ROOM",
-          "param": [
-            1004,
-            0
-          ],
+          "param": [1004, 0],
           "count": 0
         }
       ],
@@ -193,9 +173,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "QuestKnighthood"
-        ],
+        "param": ["QuestKnighthood"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -229,10 +207,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            37005,
-            0
-          ],
+          "param": [37005, 0],
           "count": 0
         }
       ],
@@ -240,9 +215,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "QuestDoorin"
-        ],
+        "param": ["QuestDoorin"],
         "guideScene": 1004,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -272,10 +245,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "37002",
-            "2"
-          ]
+          "param": ["37002", "2"]
         }
       ],
       "priority": 1,
@@ -284,9 +254,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 3700201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1006
-      ],
+      "npcIdRawNum": [1006],
       "GHNCIOJDIEA": "QuestDialogue/AQ/Mengde2_370/Q37002",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -322,10 +290,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "37005",
-            "2"
-          ]
+          "param": ["37005", "2"]
         }
       ],
       "priority": 1,
@@ -334,9 +299,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 3700401,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1006
-      ],
+      "npcIdRawNum": [1006],
       "GHNCIOJDIEA": "QuestDialogue/AQ/Mengde2_370/Q37004",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -364,15 +327,8 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    416160962149,
-    686006686643,
-    645902683150,
-    984275547923
-  ],
-  "OMKMAOLMNCO": [
-    188170359314
-  ],
+  "LGCLJGGNGBD": [416160962149, 686006686643, 645902683150, 984275547923],
+  "OMKMAOLMNCO": [188170359314],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 100370
 }

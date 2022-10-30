@@ -1,164 +1,125 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 155009001
-L1_1 = {}
-L2_1 = 155009025
-L3_1 = 155009026
-L4_1 = 155009027
-L5_1 = 155009028
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-function L2_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L1_2 = 1
-  L2_2 = L1_1
-  L2_2 = #L2_2
-  L3_2 = 1
-  for L4_2 = L1_2, L2_2, L3_2 do
-    L5_2 = ScriptLib
-    L5_2 = L5_2.GetGroupVariableValueByGroup
-    L6_2 = A0_2
-    L7_2 = "gameplayState"
-    L8_2 = L1_1[L4_2]
-    L5_2 = L5_2(L6_2, L7_2, L8_2)
-    if L5_2 == 0 then
-      L5_2 = ScriptLib
-      L5_2 = L5_2.SetGroupVariableValueByGroup
-      L6_2 = A0_2
-      L7_2 = "gameplayState"
-      L8_2 = 1
-      L9_2 = L1_1[L4_2]
-      L5_2(L6_2, L7_2, L8_2, L9_2)
-    end
-  end
+-- 基础信息
+local base_info = {
+	group_id = 155009001
+}
+
+-- DEFS_MISCS
+local grouplist = 
+{
+	155009025,
+	155009026,
+	155009027,
+	155009028
+}
+
+function GroupNotify(context)
+	for i=1,#grouplist do
+		if ScriptLib.GetGroupVariableValueByGroup(context, "gameplayState", grouplist[i]) == 0 then 
+			ScriptLib.SetGroupVariableValueByGroup(context, "gameplayState", 1, grouplist[i])
+		end
+		
+	end
 end
-GroupNotify = L2_1
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1001001
-L3_1.name = "GROUP_LOAD_1001"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GROUP_LOAD
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GROUP_LOAD_1001"
-L3_1.action = "action_EVENT_GROUP_LOAD_1001"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1001002
-L4_1.name = "QUEST_START_1002"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_QUEST_START
-L4_1.event = L5_1
-L4_1.source = "7227505"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_QUEST_START_1002"
-L4_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "IslandActive"
-L3_1.value = 0
-L3_1.no_refresh = true
-L2_1[1] = L3_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GROUP_LOAD_1001"
-L6_1 = "QUEST_START_1002"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "IslandActive"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1001001, name = "GROUP_LOAD_1001", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_1001", action = "action_EVENT_GROUP_LOAD_1001", trigger_count = 0 },
+	{ config_id = 1001002, name = "QUEST_START_1002", event = EventType.EVENT_QUEST_START, source = "7227505", condition = "", action = "action_EVENT_QUEST_START_1002", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "IslandActive", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_1001", "QUEST_START_1002" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_1001(context, evt)
+	-- 判断变量"IslandActive"为1
+	if ScriptLib.GetGroupVariableValue(context, "IslandActive") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_1001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.UnhideScenePoint
-  L3_2 = A0_2
-  L4_2 = 35
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.UnhideScenePoint
-  L3_2 = A0_2
-  L4_2 = 38
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_1001(context, evt)
+	ScriptLib.UnhideScenePoint(context, 35)
+	ScriptLib.UnhideScenePoint(context, 38)
+	return 0
 end
-action_EVENT_GROUP_LOAD_1001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "IslandActive"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.UnhideScenePoint
-  L3_2 = A0_2
-  L4_2 = 35
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.UnhideScenePoint
-  L3_2 = A0_2
-  L4_2 = 38
-  L2_2(L3_2, L4_2)
-  L2_2 = GroupNotify
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_1002(context, evt)
+	-- 将本组内变量名为 "IslandActive" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "IslandActive", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	 --ScriptLib.UnlockScenePoint(context, 35)
+	ScriptLib.UnhideScenePoint(context, 35)
+	ScriptLib.UnhideScenePoint(context, 38)
+	
+	GroupNotify(context)
+	return 0
 end
-action_EVENT_QUEST_START_1002 = L2_1

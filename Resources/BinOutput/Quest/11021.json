@@ -12,13 +12,9 @@
   "_luaPath": "Actor/Quest/LQ11021",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    11022
-  ],
+  "PEOHODAKLNO": [11022],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    111021
-  ],
+  "rewardIdList": [111021],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -43,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1102101,
-            0
-          ],
+          "param": [1102101, 0],
           "count": 0
         }
       ],
@@ -54,9 +47,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q11021ZL1"
-        ],
+        "param": ["Q11021ZL1"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -90,10 +81,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1102102,
-            0
-          ],
+          "param": [1102102, 0],
           "count": 0
         }
       ],
@@ -101,9 +89,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "10232"
-        ],
+        "param": ["10232"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -137,10 +123,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_INTERACT_GADGET",
-          "param": [
-            71700097,
-            0
-          ],
+          "param": [71700097, 0],
           "count": 0
         }
       ],
@@ -148,10 +131,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q11021Gadget1",
-          "15"
-        ],
+        "param": ["Q11021Gadget1", "15"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -185,10 +165,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         }
       ],
@@ -196,10 +173,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q11021Mark2",
-          "30"
-        ],
+        "param": ["Q11021Mark2", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -216,9 +190,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133108901"
-          ]
+          "param": ["133108901"]
         }
       ],
       "failExec": [],
@@ -240,10 +212,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         }
       ],
@@ -251,10 +220,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q11021Gadget3",
-          "20"
-        ],
+        "param": ["Q11021Gadget3", "20"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -271,9 +237,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133108902"
-          ]
+          "param": ["133108902"]
         }
       ],
       "failExec": [],
@@ -295,10 +259,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1102106,
-            0
-          ],
+          "param": [1102106, 0],
           "count": 0
         }
       ],
@@ -306,9 +267,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "10302"
-        ],
+        "param": ["10302"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -325,15 +284,11 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_DEL_PACK_ITEM_BATCH",
-          "param": [
-            "100627:1,100628:1,100629:1"
-          ]
+          "param": ["100627:1,100628:1,100629:1"]
         },
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133108903"
-          ]
+          "param": ["133108903"]
         }
       ],
       "failExec": [],
@@ -355,10 +310,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1102107,
-            0
-          ],
+          "param": [1102107, 0],
           "count": 0
         }
       ],
@@ -366,10 +318,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q11021Mark1",
-          "55"
-        ],
+        "param": ["Q11021Mark1", "55"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -403,10 +352,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -414,10 +360,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q11021Battle1",
-          "40"
-        ],
+        "param": ["Q11021Battle1", "40"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -451,10 +394,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1102109,
-            0
-          ],
+          "param": [1102109, 0],
           "count": 0
         }
       ],
@@ -462,10 +402,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q11021Mark3",
-          "30"
-        ],
+        "param": ["Q11021Mark3", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -495,10 +432,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1102102",
-            "2"
-          ]
+          "param": ["1102102", "2"]
         }
       ],
       "priority": 0,
@@ -507,9 +441,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 110210201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10232
-      ],
+      "npcIdRawNum": [10232],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Zhongli1_11021/Q1102102",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -545,10 +477,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1102106",
-            "2"
-          ]
+          "param": ["1102106", "2"]
         }
       ],
       "priority": 0,
@@ -557,9 +486,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 110210601,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10302
-      ],
+      "npcIdRawNum": [10302],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Zhongli1_11021/Q1102106",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -587,15 +514,8 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    437730085877,
-    1002348719409,
-    280625525516,
-    472887314532
-  ],
-  "OMKMAOLMNCO": [
-    910902410052
-  ],
+  "LGCLJGGNGBD": [437730085877, 1002348719409, 280625525516, 472887314532],
+  "OMKMAOLMNCO": [910902410052],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 111021
 }

@@ -1,716 +1,319 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133102319
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 319004
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 2
-L3_1 = {}
-L3_1.x = 1458.191
-L3_1.y = 241.555
-L3_1.z = 581.295
-L2_1.pos = L3_1
-L2_1.area_id = 5
-L3_1 = {}
-L3_1.config_id = 319005
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 2
-L4_1 = {}
-L4_1.x = 1512.435
-L4_1.y = 233.085
-L4_1.z = 540.293
-L3_1.pos = L4_1
-L3_1.area_id = 5
-L4_1 = {}
-L4_1.config_id = 319006
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 2
-L5_1 = {}
-L5_1.x = 1519.386
-L5_1.y = 246.694
-L5_1.z = 653.549
-L4_1.pos = L5_1
-L4_1.area_id = 5
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1319001
-L2_1.name = "VARIABLE_CHANGE_319001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_VARIABLE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_VARIABLE_CHANGE_319001"
-L2_1.action = "action_EVENT_VARIABLE_CHANGE_319001"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1319002
-L3_1.name = "VARIABLE_CHANGE_319002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_319002"
-L3_1.action = "action_EVENT_VARIABLE_CHANGE_319002"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1319003
-L4_1.name = "VARIABLE_CHANGE_319003"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_VARIABLE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_VARIABLE_CHANGE_319003"
-L4_1.action = "action_EVENT_VARIABLE_CHANGE_319003"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1319004
-L5_1.name = "ENTER_REGION_319004"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ENTER_REGION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ENTER_REGION_319004"
-L5_1.action = "action_EVENT_ENTER_REGION_319004"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1319005
-L6_1.name = "ENTER_REGION_319005"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_ENTER_REGION
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_ENTER_REGION_319005"
-L6_1.action = "action_EVENT_ENTER_REGION_319005"
-L7_1 = {}
-L7_1.config_id = 1319006
-L7_1.name = "ENTER_REGION_319006"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_ENTER_REGION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_ENTER_REGION_319006"
-L7_1.action = "action_EVENT_ENTER_REGION_319006"
-L8_1 = {}
-L8_1.config_id = 1319007
-L8_1.name = "TIMER_EVENT_319007"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_TIMER_EVENT
-L8_1.event = L9_1
-L8_1.source = "reminderdelay"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_TIMER_EVENT_319007"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "showControllerUI"
-L2_1.value = 0
-L2_1.no_refresh = false
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "showClueUI"
-L3_1.value = 0
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "showTreeUI"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 4
-L5_1.name = "showShapeUI"
-L5_1.value = 0
-L5_1.no_refresh = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 319004
-L5_1 = 319005
-L6_1 = 319006
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "VARIABLE_CHANGE_319001"
-L5_1 = "VARIABLE_CHANGE_319002"
-L6_1 = "VARIABLE_CHANGE_319003"
-L7_1 = "ENTER_REGION_319004"
-L8_1 = "ENTER_REGION_319005"
-L9_1 = "ENTER_REGION_319006"
-L10_1 = "TIMER_EVENT_319007"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "showControllerUI"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133102319
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+	{ config_id = 319004, shape = RegionShape.SPHERE, radius = 2, pos = { x = 1458.191, y = 241.555, z = 581.295 }, area_id = 5 },
+	{ config_id = 319005, shape = RegionShape.SPHERE, radius = 2, pos = { x = 1512.435, y = 233.085, z = 540.293 }, area_id = 5 },
+	{ config_id = 319006, shape = RegionShape.SPHERE, radius = 2, pos = { x = 1519.386, y = 246.694, z = 653.549 }, area_id = 5 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1319001, name = "VARIABLE_CHANGE_319001", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_319001", action = "action_EVENT_VARIABLE_CHANGE_319001", trigger_count = 0 },
+	{ config_id = 1319002, name = "VARIABLE_CHANGE_319002", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_319002", action = "action_EVENT_VARIABLE_CHANGE_319002", trigger_count = 0 },
+	{ config_id = 1319003, name = "VARIABLE_CHANGE_319003", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_319003", action = "action_EVENT_VARIABLE_CHANGE_319003", trigger_count = 0 },
+	{ config_id = 1319004, name = "ENTER_REGION_319004", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_319004", action = "action_EVENT_ENTER_REGION_319004", trigger_count = 0 },
+	{ config_id = 1319005, name = "ENTER_REGION_319005", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_319005", action = "action_EVENT_ENTER_REGION_319005" },
+	{ config_id = 1319006, name = "ENTER_REGION_319006", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_319006", action = "action_EVENT_ENTER_REGION_319006" },
+	{ config_id = 1319007, name = "TIMER_EVENT_319007", event = EventType.EVENT_TIMER_EVENT, source = "reminderdelay", condition = "", action = "action_EVENT_TIMER_EVENT_319007" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "showControllerUI", value = 0, no_refresh = false },
+	{ config_id = 2, name = "showClueUI", value = 0, no_refresh = false },
+	{ config_id = 3, name = "showTreeUI", value = 0, no_refresh = false },
+	{ config_id = 4, name = "showShapeUI", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 319004, 319005, 319006 },
+		triggers = { "VARIABLE_CHANGE_319001", "VARIABLE_CHANGE_319002", "VARIABLE_CHANGE_319003", "ENTER_REGION_319004", "ENTER_REGION_319005", "ENTER_REGION_319006", "TIMER_EVENT_319007" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_319001(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"showControllerUI"为1
+	if ScriptLib.GetGroupVariableValue(context, "showControllerUI") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_319001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "showControllerUI"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 133102319
-  L5_2 = "reminderdelay"
-  L6_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_319001(context, evt)
+	-- 针对当前group内变量名为 "showControllerUI" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "showControllerUI", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 延迟1秒后,向groupId为：133102319的对象,请求一次调用,并将string参数："reminderdelay" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 133102319, "reminderdelay", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_319001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "showClueUI"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_319002(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"showClueUI"为1
+	if ScriptLib.GetGroupVariableValue(context, "showClueUI") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_319002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 31020103
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_319002(context, evt)
+	-- 调用提示id为 31020103 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 31020103) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_319002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "showClueUI"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_319003(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"showClueUI"为2
+	if ScriptLib.GetGroupVariableValue(context, "showClueUI") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_319003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 31020106
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "showClueUI"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = 1461
-  L2_2.y = 243
-  L2_2.z = 586
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 4
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_319003(context, evt)
+	-- 调用提示id为 31020106 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 31020106) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 针对当前group内变量名为 "showClueUI" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "showClueUI", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（1461，243，586），持续时间为4秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=1461, y=243, z=586}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 4, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_319003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 319004 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "showClueUI"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_319004(context, evt)
+	if evt.param1 ~= 319004 then return false end
+	
+	-- 判断变量"showClueUI"为3
+	if ScriptLib.GetGroupVariableValue(context, "showClueUI") ~= 3 then
+			return false
+	end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_319004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = {}
-  L2_2.x = 1525
-  L2_2.y = 222
-  L2_2.z = 597
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 2
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 31020109
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ChangeGroupVariableValue
-  L5_2 = A0_2
-  L6_2 = "showClueUI"
-  L7_2 = 1
-  L4_2 = L4_2(L5_2, L6_2, L7_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_319004(context, evt)
+	-- 触发镜头注目，注目位置为坐标（1525，222，597），持续时间为2秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=1525, y=222, z=597}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 2, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 31020109 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 31020109) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 针对当前group内变量名为 "showClueUI" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "showClueUI", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_319004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 319005 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "showClueUI"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_319005(context, evt)
+	if evt.param1 ~= 319005 then return false end
+	
+	-- 判断变量"showClueUI"为3
+	if ScriptLib.GetGroupVariableValue(context, "showClueUI") ~= 3 then
+			return false
+	end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_319005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = {}
-  L2_2.x = 1480
-  L2_2.y = 219
-  L2_2.z = 580
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 2
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 31020109
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ChangeGroupVariableValue
-  L5_2 = A0_2
-  L6_2 = "showClueUI"
-  L7_2 = 1
-  L4_2 = L4_2(L5_2, L6_2, L7_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_319005(context, evt)
+	-- 触发镜头注目，注目位置为坐标（1480，219，580），持续时间为2秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=1480, y=219, z=580}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 2, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 31020109 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 31020109) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 针对当前group内变量名为 "showClueUI" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "showClueUI", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_319005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 319006 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "showClueUI"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_319006(context, evt)
+	if evt.param1 ~= 319006 then return false end
+	
+	-- 判断变量"showClueUI"为3
+	if ScriptLib.GetGroupVariableValue(context, "showClueUI") ~= 3 then
+			return false
+	end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_319006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = {}
-  L2_2.x = 1490
-  L2_2.y = 221
-  L2_2.z = 545
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 2
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 31020109
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ChangeGroupVariableValue
-  L5_2 = A0_2
-  L6_2 = "showClueUI"
-  L7_2 = 1
-  L4_2 = L4_2(L5_2, L6_2, L7_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_319006(context, evt)
+	-- 触发镜头注目，注目位置为坐标（1490，221，545），持续时间为2秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=1490, y=221, z=545}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 2, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 31020109 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 31020109) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 针对当前group内变量名为 "showClueUI" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "showClueUI", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_319006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 31020101
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_319007(context, evt)
+	-- 调用提示id为 31020101 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 31020101) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_319007 = L1_1

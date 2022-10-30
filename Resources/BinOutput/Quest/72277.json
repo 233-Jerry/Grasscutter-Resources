@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7227701,
-            0
-          ],
+          "param": [7227701, 0],
           "count": 0
         }
       ],
@@ -67,16 +64,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "7227701"
-          ]
+          "param": ["7227701"]
         },
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "5",
-            "155005024"
-          ]
+          "param": ["5", "155005024"]
         }
       ],
       "failExec": [],
@@ -98,10 +90,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7224214,
-            3
-          ],
+          "param": [7224214, 3],
           "count": 0
         }
       ],

@@ -1,185 +1,141 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 250006006
-L1_1 = {}
-L1_1.gadget_id_1 = 18
-L1_1.gadget_id_2 = 13
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 18
-L3_1.gadget_id = 70360002
-L4_1 = {}
-L4_1.x = 343.273
-L4_1.y = -12.793
-L4_1.z = 272.084
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 358.997
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1000015
-L3_1.name = "GADGET_CREATE_15"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_CREATE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_CREATE_15"
-L3_1.action = "action_EVENT_GADGET_CREATE_15"
-L4_1 = {}
-L4_1.config_id = 1000025
-L4_1.name = "SELECT_OPTION_25"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SELECT_OPTION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SELECT_OPTION_25"
-L4_1.action = "action_EVENT_SELECT_OPTION_25"
-L4_1.trigger_count = 0
-L4_1.forbid_guest = false
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 1
-L2_1.rand_suite = true
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 18
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_CREATE_15"
-L6_1 = "SELECT_OPTION_25"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 18 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 250006006
+}
+
+-- Trigger变量
+local defs = {
+	gadget_id_1 = 18,
+	gadget_id_2 = 13
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 18, gadget_id = 70360002, pos = { x = 343.273, y = -12.793, z = 272.084 }, rot = { x = 0.000, y = 358.997, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000015, name = "GADGET_CREATE_15", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_15", action = "action_EVENT_GADGET_CREATE_15" },
+	{ config_id = 1000025, name = "SELECT_OPTION_25", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_25", action = "action_EVENT_SELECT_OPTION_25", trigger_count = 0, forbid_guest = false }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 1,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 18 },
+		regions = { },
+		triggers = { "GADGET_CREATE_15", "SELECT_OPTION_25" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_15(context, evt)
+	if 18 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_15 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptions
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = 103
-  L4_2[1] = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_work_options"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_15(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptions(context, {103}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_work_options")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_15 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 18 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_25(context, evt)
+	if 18 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_25 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = L1_1.gadget_id_1
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 250006001
-  L5_2 = L1_1.gadget_id_2
-  L6_2 = GadgetState
-  L6_2 = L6_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 250006007
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 250006008
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 250006006
-  L5_2 = L1_1.gadget_id_1
-  L6_2 = 103
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_25(context, evt)
+	-- 根据不同的选项做不同的操作
+	
+		if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id_1, GadgetState.GearStart) then
+			return -1
+		end 
+		
+	
+	-- 改变指定group组250006001中， configid为13的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 250006001, defs.gadget_id_2, GadgetState.Default) then
+			return -1
+		end 
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 250006007, suite = 1 }) then
+			return -1
+		end
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 250006008, suite = 1 }) then
+			return -1
+		end
+	
+	-- 删除指定group： 250006006 ；指定config：18；物件身上指定option：103；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 250006006, defs.gadget_id_1, 103) then
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_25 = L2_1

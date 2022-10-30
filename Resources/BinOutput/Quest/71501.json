@@ -12,9 +12,7 @@
   "_luaPath": "Actor/Quest/WQ71501",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    71506
-  ],
+  "PEOHODAKLNO": [71506],
   "FEHAEKNGFBP": false,
   "rewardIdList": [],
   "showType": "QUEST_SHOW",
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7150101,
-            0
-          ],
+          "param": [7150101, 0],
           "count": 0
         }
       ],
@@ -52,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "2078"
-        ],
+        "param": ["2078"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -88,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7150102,
-            0
-          ],
+          "param": [7150102, 0],
           "count": 0
         }
       ],
@@ -99,9 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "30181"
-        ],
+        "param": ["30181"],
         "guideScene": 6,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -118,10 +106,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "166001687",
-            "0"
-          ]
+          "param": ["166001687", "0"]
         }
       ],
       "failExec": [],
@@ -143,10 +128,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -191,10 +173,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7150104,
-            0
-          ],
+          "param": [7150104, 0],
           "count": 0
         }
       ],
@@ -202,9 +181,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "30181"
-        ],
+        "param": ["30181"],
         "guideScene": 6,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -234,10 +211,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7150101",
-            "2"
-          ]
+          "param": ["7150101", "2"]
         }
       ],
       "priority": 15,
@@ -246,9 +220,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 715010101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        2078
-      ],
+      "npcIdRawNum": [2078],
       "GHNCIOJDIEA": "QuestDialogue/WQ/TheChasmChallenge/Q7150101",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -284,10 +256,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7150102",
-            "2"
-          ]
+          "param": ["7150102", "2"]
         }
       ],
       "priority": 15,
@@ -296,9 +265,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 715010201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30181
-      ],
+      "npcIdRawNum": [30181],
       "GHNCIOJDIEA": "QuestDialogue/WQ/TheChasmChallenge/Q7150102",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

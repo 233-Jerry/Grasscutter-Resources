@@ -1,218 +1,107 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133103654
-L1_1 = {}
-L1_1.timer_region = 654010
-L1_1.challenge_region = 654002
-L1_1.monster_hilichurl = 654001
-L2_1 = {}
-L3_1 = 18
-L4_1 = 24
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.exist_hour = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 654001
-L3_1.monster_id = 21011501
-L4_1 = {}
-L4_1.x = 157.06
-L4_1.y = 188.488
-L4_1.z = 1323.411
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 355.947
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 15
-L3_1.drop_id = 200050005
-L4_1 = {}
-L5_1 = 4117
-L6_1 = 1035
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.affix = L4_1
-L3_1.pose_id = 9005
-L3_1.guest_ban_drop = 63
-L3_1.area_id = 6
-L3_1.guest_ban_drop = 63
-L4_1 = {}
-L4_1.config_id = 654003
-L4_1.monster_id = 21010901
-L5_1 = {}
-L5_1.x = 154.367
-L5_1.y = 188.416
-L5_1.z = 1335.2
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 147.437
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 15
-L4_1.drop_id = 1000100
-L4_1.area_id = 6
-L5_1 = {}
-L5_1.config_id = 654004
-L5_1.monster_id = 21030101
-L6_1 = {}
-L6_1.x = 157.327
-L6_1.y = 188.488
-L6_1.z = 1321.347
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 7.711
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 15
-L5_1.drop_id = 1000100
-L5_1.area_id = 6
-L6_1 = {}
-L6_1.config_id = 654005
-L6_1.monster_id = 21010901
-L7_1 = {}
-L7_1.x = 159.738
-L7_1.y = 188.416
-L7_1.z = 1335.506
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 210.447
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 15
-L6_1.drop_id = 1000100
-L6_1.area_id = 6
-L7_1 = {}
-L7_1.config_id = 654006
-L7_1.monster_id = 21020501
-L8_1 = {}
-L8_1.x = 157.471
-L8_1.y = 188.488
-L8_1.z = 1320.04
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 15
-L7_1.drop_id = 1000100
-L7_1.area_id = 6
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 654007
-L3_1.gadget_id = 70360001
-L4_1 = {}
-L4_1.x = 159.648
-L4_1.y = 188.488
-L4_1.z = 1322.239
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 6
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 654002
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 45
-L4_1 = {}
-L4_1.x = 156.619
-L4_1.y = 185.894
-L4_1.z = 1303.515
-L3_1.pos = L4_1
-L3_1.area_id = 6
-L4_1 = {}
-L4_1.config_id = 654010
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 55
-L5_1 = {}
-L5_1.x = 156.619
-L5_1.y = 185.894
-L5_1.z = 1303.515
-L4_1.pos = L5_1
-L4_1.area_id = 6
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 654007
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 654002
-L6_1 = 654010
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 654003
-L7_1 = 654004
-L8_1 = 654005
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L7_1 = 654006
-L6_1[1] = L7_1
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-suites = L2_1
-L2_1 = require
-L3_1 = "V1_5/HilichurlLevel"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133103654
+}
+
+-- Trigger变量
+local defs = {
+	timer_region = 654010,
+	challenge_region = 654002,
+	monster_hilichurl = 654001,
+	exist_hour = {18,24}
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 654001, monster_id = 21011501, pos = { x = 157.060, y = 188.488, z = 1323.411 }, rot = { x = 0.000, y = 355.947, z = 0.000 }, level = 15, drop_id = 200050005, affix = { 4117, 1035 }, pose_id = 9005, guest_ban_drop = 63, area_id = 6, guest_ban_drop = 63 },
+	{ config_id = 654003, monster_id = 21010901, pos = { x = 154.367, y = 188.416, z = 1335.200 }, rot = { x = 0.000, y = 147.437, z = 0.000 }, level = 15, drop_id = 1000100, area_id = 6 },
+	{ config_id = 654004, monster_id = 21030101, pos = { x = 157.327, y = 188.488, z = 1321.347 }, rot = { x = 0.000, y = 7.711, z = 0.000 }, level = 15, drop_id = 1000100, area_id = 6 },
+	{ config_id = 654005, monster_id = 21010901, pos = { x = 159.738, y = 188.416, z = 1335.506 }, rot = { x = 0.000, y = 210.447, z = 0.000 }, level = 15, drop_id = 1000100, area_id = 6 },
+	{ config_id = 654006, monster_id = 21020501, pos = { x = 157.471, y = 188.488, z = 1320.040 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 15, drop_id = 1000100, area_id = 6 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 654007, gadget_id = 70360001, pos = { x = 159.648, y = 188.488, z = 1322.239 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 6 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 654002, shape = RegionShape.SPHERE, radius = 45, pos = { x = 156.619, y = 185.894, z = 1303.515 }, area_id = 6 },
+	{ config_id = 654010, shape = RegionShape.SPHERE, radius = 55, pos = { x = 156.619, y = 185.894, z = 1303.515 }, area_id = 6 }
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 654007 },
+		regions = { 654002, 654010 },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 654003, 654004, 654005 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { 654006 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V1_5/HilichurlLevel"

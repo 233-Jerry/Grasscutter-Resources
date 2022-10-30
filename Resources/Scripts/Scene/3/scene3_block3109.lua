@@ -1,60 +1,9 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L1_1 = {}
-L1_1.id = 133109001
-L1_1.refresh_id = 1000
-L1_1.area = 8
-L2_1 = {}
-L2_1.x = -1152.0
-L2_1.y = 200.0
-L2_1.z = 1152.0
-L1_1.pos = L2_1
-L2_1 = {}
-L2_1.value = false
-L2_1.version = 0
-L2_1.new_bin_only = true
-L1_1.is_replaceable = L2_1
-L2_1 = {}
-L2_1.id = 133109002
-L2_1.refresh_id = 999999
-L3_1 = {}
-L3_1.x = -1152.0
-L3_1.y = 200.0
-L3_1.z = 1408.0
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.value = false
-L3_1.version = 0
-L3_1.new_bin_only = true
-L2_1.is_replaceable = L3_1
-L3_1 = {}
-L3_1.id = 133109003
-L3_1.refresh_id = 999999
-L4_1 = {}
-L4_1.x = -1152.0
-L4_1.y = 285.361
-L4_1.z = 1664.0
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.value = false
-L4_1.version = 0
-L4_1.new_bin_only = true
-L3_1.is_replaceable = L4_1
-L4_1 = {}
-L4_1.id = 133109004
-L4_1.refresh_id = 999999
-L5_1 = {}
-L5_1.x = -1152.0
-L5_1.y = 206.606
-L5_1.z = 1920.0
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.value = false
-L5_1.version = 0
-L5_1.new_bin_only = true
-L4_1.is_replaceable = L5_1
-L0_1[1] = L1_1
-L0_1[2] = L2_1
-L0_1[3] = L3_1
-L0_1[4] = L4_1
-groups = L0_1
+-- 所有的group
+groups = {
+	{ id = 133109001, refresh_id = 1000, area = 8, pos = { x = -1152.000, y = 200.000, z = 1152.000 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
+	{ id = 133109002, refresh_id = 999999, pos = { x = -1152.000, y = 200.000, z = 1408.000 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
+	{ id = 133109003, refresh_id = 999999, pos = { x = -1152.000, y = 285.361, z = 1664.000 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
+	{ id = 133109004, refresh_id = 999999, area = 21, pos = { x = -1152.000, y = 206.606, z = 1920.000 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
+	{ id = 133109005, area = 21, pos = { x = -1370.548, y = 313.282, z = 2002.341 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
+	{ id = 133109006, refresh_id = 999999, area = 21, pos = { x = -1408.001, y = 419.928, z = 1920.000 }, is_replaceable = { value = false, version = 0, new_bin_only = true } }
+}

@@ -1,732 +1,343 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
-L0_1 = {}
-L0_1.group_id = 235720005
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 5001
-L2_1.monster_id = 24010101
-L3_1 = {}
-L3_1.x = 0.136
-L3_1.y = -0.102
-L3_1.z = -10.005
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.disableWander = true
-L2_1.pose_id = 100
-L3_1 = {}
-L3_1.config_id = 5002
-L3_1.monster_id = 24020401
-L4_1 = {}
-L4_1.x = 0.025
-L4_1.y = -0.102
-L4_1.z = -17.141
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.disableWander = true
-L3_1.pose_id = 100
-L4_1 = {}
-L4_1.config_id = 5005
-L4_1.monster_id = 24020201
-L5_1 = {}
-L5_1.x = -10.013
-L5_1.y = -0.102
-L5_1.z = -0.04
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 90.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.disableWander = true
-L4_1.pose_id = 100
-L5_1 = {}
-L5_1.config_id = 5006
-L5_1.monster_id = 24020201
-L6_1 = {}
-L6_1.x = 10.169
-L6_1.y = -0.102
-L6_1.z = -0.247
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 270.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.disableWander = true
-L5_1.pose_id = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 5011
-L2_1.gadget_id = 70900205
-L3_1 = {}
-L3_1.x = 6.204
-L3_1.y = -1.386
-L3_1.z = 3.136
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1005003
-L2_1.name = "TIME_AXIS_PASS_5003"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_TIME_AXIS_PASS
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_TIME_AXIS_PASS_5003"
-L2_1.action = "action_EVENT_TIME_AXIS_PASS_5003"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1005004
-L3_1.name = "ANY_MONSTER_LIVE_5004"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_MONSTER_LIVE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ANY_MONSTER_LIVE_5004"
-L3_1.action = "action_EVENT_ANY_MONSTER_LIVE_5004"
-L4_1 = {}
-L4_1.config_id = 1005007
-L4_1.name = "TIME_AXIS_PASS_5007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_TIME_AXIS_PASS
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_TIME_AXIS_PASS_5007"
-L4_1.action = "action_EVENT_TIME_AXIS_PASS_5007"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1005008
-L5_1.name = "TIME_AXIS_PASS_5008"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_TIME_AXIS_PASS
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_TIME_AXIS_PASS_5008"
-L5_1.action = "action_EVENT_TIME_AXIS_PASS_5008"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1005009
-L6_1.name = "TIME_AXIS_PASS_5009"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_TIME_AXIS_PASS
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_TIME_AXIS_PASS_5009"
-L6_1.action = "action_EVENT_TIME_AXIS_PASS_5009"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1005010
-L7_1.name = "TIME_AXIS_PASS_5010"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_TIME_AXIS_PASS
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_TIME_AXIS_PASS_5010"
-L7_1.action = "action_EVENT_TIME_AXIS_PASS_5010"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1005012
-L8_1.name = "ANY_MONSTER_DIE_5012"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_ANY_MONSTER_DIE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_ANY_MONSTER_DIE_5012"
-L8_1.action = "action_EVENT_ANY_MONSTER_DIE_5012"
-L9_1 = {}
-L9_1.config_id = 1005015
-L9_1.name = "CHALLENGE_SUCCESS_5015"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_CHALLENGE_SUCCESS
-L9_1.event = L10_1
-L9_1.source = "2"
-L9_1.condition = ""
-L9_1.action = "action_EVENT_CHALLENGE_SUCCESS_5015"
-L10_1 = {}
-L10_1.config_id = 1005016
-L10_1.name = "CHALLENGE_FAIL_5016"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_CHALLENGE_FAIL
-L10_1.event = L11_1
-L10_1.source = "2"
-L10_1.condition = ""
-L10_1.action = "action_EVENT_CHALLENGE_FAIL_5016"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "monster_wave"
-L2_1.value = 0
-L2_1.no_refresh = false
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 5011
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 5001
-L4_1[1] = L5_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 5011
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "TIME_AXIS_PASS_5003"
-L6_1 = "ANY_MONSTER_LIVE_5004"
-L7_1 = "TIME_AXIS_PASS_5007"
-L8_1 = "TIME_AXIS_PASS_5008"
-L9_1 = "TIME_AXIS_PASS_5009"
-L10_1 = "TIME_AXIS_PASS_5010"
-L11_1 = "ANY_MONSTER_DIE_5012"
-L12_1 = "CHALLENGE_SUCCESS_5015"
-L13_1 = "CHALLENGE_FAIL_5016"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 5002
-L7_1 = 5005
-L8_1 = 5006
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "CHALLENGE_SUCCESS_5015"
-L7_1 = "CHALLENGE_FAIL_5016"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "timer1_gv" == L2_2 then
-    L2_2 = A1_2.param1
-    if 1 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 235720005
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 5001, monster_id = 24010101, pos = { x = 0.136, y = -0.102, z = -10.005 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 100 },
+	{ config_id = 5002, monster_id = 24020401, pos = { x = 0.025, y = -0.102, z = -17.141 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 100 },
+	{ config_id = 5005, monster_id = 24020201, pos = { x = -10.013, y = -0.102, z = -0.040 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 100 },
+	{ config_id = 5006, monster_id = 24020201, pos = { x = 10.169, y = -0.102, z = -0.247 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 100 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 5011, gadget_id = 70900205, pos = { x = 6.204, y = -1.386, z = 3.136 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1005003, name = "TIME_AXIS_PASS_5003", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_5003", action = "action_EVENT_TIME_AXIS_PASS_5003", trigger_count = 0 },
+	{ config_id = 1005004, name = "ANY_MONSTER_LIVE_5004", event = EventType.EVENT_ANY_MONSTER_LIVE, source = "", condition = "condition_EVENT_ANY_MONSTER_LIVE_5004", action = "action_EVENT_ANY_MONSTER_LIVE_5004" },
+	{ config_id = 1005007, name = "TIME_AXIS_PASS_5007", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_5007", action = "action_EVENT_TIME_AXIS_PASS_5007", trigger_count = 0 },
+	{ config_id = 1005008, name = "TIME_AXIS_PASS_5008", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_5008", action = "action_EVENT_TIME_AXIS_PASS_5008", trigger_count = 0 },
+	{ config_id = 1005009, name = "TIME_AXIS_PASS_5009", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_5009", action = "action_EVENT_TIME_AXIS_PASS_5009", trigger_count = 0 },
+	{ config_id = 1005010, name = "TIME_AXIS_PASS_5010", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_5010", action = "action_EVENT_TIME_AXIS_PASS_5010", trigger_count = 0 },
+	{ config_id = 1005012, name = "ANY_MONSTER_DIE_5012", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_5012", action = "action_EVENT_ANY_MONSTER_DIE_5012" },
+	{ config_id = 1005015, name = "CHALLENGE_SUCCESS_5015", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "2", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_5015" },
+	{ config_id = 1005016, name = "CHALLENGE_FAIL_5016", event = EventType.EVENT_CHALLENGE_FAIL, source = "2", condition = "", action = "action_EVENT_CHALLENGE_FAIL_5016" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "monster_wave", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 5011 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { 5001 },
+		gadgets = { 5011 },
+		regions = { },
+		triggers = { "TIME_AXIS_PASS_5003", "ANY_MONSTER_LIVE_5004", "TIME_AXIS_PASS_5007", "TIME_AXIS_PASS_5008", "TIME_AXIS_PASS_5009", "TIME_AXIS_PASS_5010", "ANY_MONSTER_DIE_5012", "CHALLENGE_SUCCESS_5015", "CHALLENGE_FAIL_5016" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { 5002, 5005, 5006 },
+		gadgets = { },
+		regions = { },
+		triggers = { "CHALLENGE_SUCCESS_5015", "CHALLENGE_FAIL_5016" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_5003(context, evt)
+	if "timer1_gv" ~= evt.source_name or 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_5003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer1_gv"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetSceneUidList
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.AddTeamEntityGlobalFloatValue
-  L4_2 = A0_2
-  L5_2 = L2_2
-  L6_2 = "LevelEntityTowerBuff_EnergyChangeMode"
-  L7_2 = 1
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.InitTimeAxis
-  L4_2 = A0_2
-  L5_2 = "timer2_reminder"
-  L6_2 = {}
-  L7_2 = 8.8
-  L6_2[1] = L7_2
-  L7_2 = false
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_5003(context, evt)
+	ScriptLib.EndTimeAxis(context, "timer1_gv")
+	
+	local uid = ScriptLib.GetSceneUidList(context)
+	
+	ScriptLib.AddTeamEntityGlobalFloatValue(context, uid, "LevelEntityTowerBuff_EnergyChangeMode", 1)
+	
+	ScriptLib.InitTimeAxis(context, "timer2_reminder", {8.8}, false)
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_5003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 5001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_LIVE_5004(context, evt)
+	if 5001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_LIVE_5004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "TPL_TIME"
-  L5_2 = 235720002
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 == nil or L2_2 < 0 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : active_challenge_by_remainTime"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  elseif L2_2 < 1 then
-    L2_2 = 0
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.ActiveChallenge
-  L4_2 = A0_2
-  L5_2 = 2
-  L6_2 = 198
-  L7_2 = L2_2
-  L8_2 = 235720005
-  L9_2 = 4
-  L10_2 = 0
-  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : active_challenge_by_remainTime"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.InitTimeAxis
-  L4_2 = A0_2
-  L5_2 = "timer_init"
-  L6_2 = {}
-  L7_2 = 1
-  L6_2[1] = L7_2
-  L7_2 = false
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.ChangeGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "monster_wave"
-  L6_2 = 1
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_LIVE_5004(context, evt)
+	-- 创建编号为2（该挑战的识别id),挑战内容为198的区域挑战，param1必须为时间
+	-- 从235720002的变量TPL_TIME中取出对应值并开启挑战
+	  local tpl_time = ScriptLib.GetGroupVariableValueByGroup(context, "TPL_TIME", 235720002)
+	  if tpl_time == nil or tpl_time < 0 then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_challenge_by_remainTime")
+	    return -1
+	  elseif tpl_time < 1 then
+	    tpl_time = 0
+	  end
+	  if 0 ~= ScriptLib.ActiveChallenge(context, 2, 198, tpl_time, 235720005, 4, 0) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_challenge_by_remainTime")
+	    return -1
+	  end
+	
+	-- 创建标识为"timer_init"，时间节点为{1}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "timer_init", {1}, false)
+	
+	
+	-- 针对当前group内变量名为 "monster_wave" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "monster_wave", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_LIVE_5004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "timer1_reminder" == L2_2 then
-    L2_2 = A1_2.param1
-    if 1 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_5007(context, evt)
+	if "timer1_reminder" ~= evt.source_name or 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_5007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer1_reminder"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 337200102
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer1_gv"
-  L5_2 = {}
-  L6_2 = 0.8
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_5007(context, evt)
+	ScriptLib.EndTimeAxis(context, "timer1_reminder")
+	
+	ScriptLib.ShowReminder(context, 337200102)
+	
+	ScriptLib.InitTimeAxis(context, "timer1_gv", {0.8}, false)
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_5007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "timer2_reminder" == L2_2 then
-    L2_2 = A1_2.param1
-    if 1 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_5008(context, evt)
+	if "timer2_reminder" ~= evt.source_name or 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_5008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer2_reminder"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 337200101
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer2_gv"
-  L5_2 = {}
-  L6_2 = 0.8
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_5008(context, evt)
+	ScriptLib.EndTimeAxis(context, "timer2_reminder")
+	
+	ScriptLib.ShowReminder(context, 337200101)
+	
+	ScriptLib.InitTimeAxis(context, "timer2_gv", {0.8}, false)
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_5008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "timer_init" == L2_2 then
-    L2_2 = A1_2.param1
-    if 1 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_5009(context, evt)
+	if "timer_init" ~= evt.source_name or 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_5009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer_init"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetSceneUidList
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.AddTeamEntityGlobalFloatValue
-  L4_2 = A0_2
-  L5_2 = L2_2
-  L6_2 = "LevelEntityTowerBuff_EnergyChangeMode"
-  L7_2 = 1
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.InitTimeAxis
-  L4_2 = A0_2
-  L5_2 = "timer2_reminder"
-  L6_2 = {}
-  L7_2 = 8.8
-  L6_2[1] = L7_2
-  L7_2 = false
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_5009(context, evt)
+	ScriptLib.EndTimeAxis(context, "timer_init")
+	
+	local uid = ScriptLib.GetSceneUidList(context)
+	
+	ScriptLib.AddTeamEntityGlobalFloatValue(context, uid, "LevelEntityTowerBuff_EnergyChangeMode", 1)
+	
+	ScriptLib.InitTimeAxis(context, "timer2_reminder", {8.8}, false)
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_5009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "timer2_gv" == L2_2 then
-    L2_2 = A1_2.param1
-    if 1 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_5010(context, evt)
+	if "timer2_gv" ~= evt.source_name or 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_5010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer2_gv"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetSceneUidList
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.AddTeamEntityGlobalFloatValue
-  L4_2 = A0_2
-  L5_2 = L2_2
-  L6_2 = "LevelEntityTowerBuff_EnergyChangeMode"
-  L7_2 = -1
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.InitTimeAxis
-  L4_2 = A0_2
-  L5_2 = "timer1_reminder"
-  L6_2 = {}
-  L7_2 = 8.8
-  L6_2[1] = L7_2
-  L7_2 = false
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_5010(context, evt)
+	ScriptLib.EndTimeAxis(context, "timer2_gv")
+	
+	local uid = ScriptLib.GetSceneUidList(context)
+	
+	ScriptLib.AddTeamEntityGlobalFloatValue(context, uid, "LevelEntityTowerBuff_EnergyChangeMode", -1)
+	
+	ScriptLib.InitTimeAxis(context, "timer1_reminder", {8.8}, false)
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_5010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCount
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "monster_wave"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_5012(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	-- 判断变量"monster_wave"为1
+	if ScriptLib.GetGroupVariableValue(context, "monster_wave") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_5012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 235720005
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "monster_wave"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_5012(context, evt)
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 235720005, 3)
+	
+	-- 针对当前group内变量名为 "monster_wave" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "monster_wave", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_5012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "stage"
-  L5_2 = 2
-  L6_2 = 235720002
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 235720003
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer1_reminder"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer2_reminder"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer1_gv"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer2_gv"
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_5015(context, evt)
+	-- 将本组内变量名为 "stage" 的变量设置为 2
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "stage", 2, 235720002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 删除suite2的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 235720003, 2)
+	
+	-- 停止标识为"timer1_reminder"的时间轴
+	ScriptLib.EndTimeAxis(context, "timer1_reminder")
+	
+	
+	-- 停止标识为"timer2_reminder"的时间轴
+	ScriptLib.EndTimeAxis(context, "timer2_reminder")
+	
+	
+	-- 停止标识为"timer1_gv"的时间轴
+	ScriptLib.EndTimeAxis(context, "timer1_gv")
+	
+	
+	-- 停止标识为"timer2_gv"的时间轴
+	ScriptLib.EndTimeAxis(context, "timer2_gv")
+	
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_5015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 235720005
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 235720003
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer1_reminder"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer2_reminder"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer1_gv"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "timer2_gv"
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CauseDungeonFail
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cause_dungeonfail"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_5016(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 235720005, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 删除suite2的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 235720003, 2)
+	
+	-- 停止标识为"timer1_reminder"的时间轴
+	ScriptLib.EndTimeAxis(context, "timer1_reminder")
+	
+	
+	-- 停止标识为"timer2_reminder"的时间轴
+	ScriptLib.EndTimeAxis(context, "timer2_reminder")
+	
+	
+	-- 停止标识为"timer1_gv"的时间轴
+	ScriptLib.EndTimeAxis(context, "timer1_gv")
+	
+	
+	-- 停止标识为"timer2_gv"的时间轴
+	ScriptLib.EndTimeAxis(context, "timer2_gv")
+	
+	
+	-- 地城失败结算
+	if 0 ~= ScriptLib.CauseDungeonFail(context) then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cause_dungeonfail")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_5016 = L1_1

@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 1476741887,
-  "descTextMapHash": 0,
+  
   "id": 71071,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            1112308,
-            3
-          ],
+          "param": [1112308, 3],
           "count": 0
         }
       ],
@@ -67,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "71071",
-            "1"
-          ]
+          "param": ["71071", "1"]
         }
       ],
       "failExec": [],
@@ -92,18 +86,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7104429,
-            3
-          ],
+          "param": [7104429, 3],
           "count": 0
         }
       ],
@@ -128,10 +116,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133106439,1"
-          ]
+          "param": ["3", "133106439,1"]
         }
       ],
       "failExec": [],
@@ -153,18 +138,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7104429,
-            3
-          ],
+          "param": [7104429, 3],
           "count": 0
         }
       ],
@@ -189,10 +168,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133106439,1"
-          ]
+          "param": ["3", "133106439,1"]
         }
       ],
       "failExec": [],

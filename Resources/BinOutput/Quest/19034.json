@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1903401,
-            0
-          ],
+          "param": [1903401, 0],
           "count": 0
         }
       ],
@@ -50,10 +47,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q1903201male",
-          "20"
-        ],
+        "param": ["Q1903201male", "20"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -87,10 +81,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            103601,
-            1903110
-          ],
+          "param": [103601, 1903110],
           "count": 0
         }
       ],
@@ -98,9 +89,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "1023"
-        ],
+        "param": ["1023"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -130,10 +119,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903401",
-            "2"
-          ]
+          "param": ["1903401", "2"]
         }
       ],
       "priority": 5,
@@ -142,9 +128,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 1903201201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10918
-      ],
+      "npcIdRawNum": [10918],
       "GHNCIOJDIEA": "QuestDialogue/COOP/CoopChongyun/coop_1903301",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

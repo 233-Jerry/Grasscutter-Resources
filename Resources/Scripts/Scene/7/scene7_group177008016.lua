@@ -1,249 +1,115 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.group_id = 177008016
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "isFinished"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "isMoving"
-L3_1.value = 0
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "currentRouteIndex"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 4
-L5_1.name = "nextRouteIndex"
-L5_1.value = 1
-L5_1.no_refresh = false
-L6_1 = {}
-L6_1.configId = 5
-L6_1.name = "isstart"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 6
-L7_1.name = "currentPathNodeIndex"
-L7_1.value = 0
-L7_1.no_refresh = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 16001
-L3_1.gadget_id = 70350292
-L4_1 = {}
-L4_1.x = -202.45
-L4_1.y = 254.944
-L4_1.z = 437.513
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.start_route = false
-L3_1.persistent = true
-L3_1.is_use_point_array = true
-L3_1.area_id = 210
-L4_1 = {}
-L4_1.config_id = 16003
-L4_1.gadget_id = 70350292
-L5_1 = {}
-L5_1.x = -187.812
-L5_1.y = 242.634
-L5_1.z = 485.532
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.start_route = false
-L4_1.persistent = true
-L4_1.is_use_point_array = true
-L4_1.area_id = 210
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1016004
-L3_1.name = "PLATFORM_REACH_POINT_16004"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_PLATFORM_REACH_POINT
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = ""
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1016005
-L4_1.name = "AVATAR_NEAR_PLATFORM_16005"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_AVATAR_NEAR_PLATFORM
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = ""
-L4_1.action = ""
-L4_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.io_type = 1
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.configId = 1
-L4_1.name = "isFinished"
-L4_1.value = 0
-L4_1.no_refresh = true
-L5_1 = {}
-L5_1.configId = 2
-L5_1.name = "isMoving"
-L5_1.value = 0
-L5_1.no_refresh = false
-L6_1 = {}
-L6_1.configId = 3
-L6_1.name = "currentRouteIndex"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 4
-L7_1.name = "nextRouteIndex"
-L7_1.value = 1
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 5
-L8_1.name = "isstart"
-L8_1.value = 0
-L8_1.no_refresh = false
-L9_1 = {}
-L9_1.configId = 6
-L9_1.name = "currentPathNodeIndex"
-L9_1.value = 0
-L9_1.no_refresh = false
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L2_1.variables = L3_1
-L1_1[1] = L2_1
-L2_1 = {}
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.configId = 1
-L4_1.name = "isFinished"
-L4_1.value = 1
-L4_1.no_refresh = true
-L5_1 = {}
-L5_1.configId = 2
-L5_1.name = "isMoving"
-L5_1.value = 0
-L5_1.no_refresh = false
-L6_1 = {}
-L6_1.configId = 3
-L6_1.name = "currentRouteIndex"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 4
-L7_1.name = "nextRouteIndex"
-L7_1.value = 1
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 5
-L8_1.name = "isstart"
-L8_1.value = 0
-L8_1.no_refresh = false
-L9_1 = {}
-L9_1.configId = 6
-L9_1.name = "currentPathNodeIndex"
-L9_1.value = 0
-L9_1.no_refresh = false
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L2_1.variables = L3_1
-L1_1[2] = L2_1
-suite_disk = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 177008016
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "isFinished", value = 0, no_refresh = true },
+	{ config_id = 2, name = "isMoving", value = 0, no_refresh = false },
+	{ config_id = 3, name = "currentRouteIndex", value = 0, no_refresh = false },
+	{ config_id = 4, name = "nextRouteIndex", value = 1, no_refresh = false },
+	{ config_id = 5, name = "isstart", value = 0, no_refresh = false },
+	{ config_id = 6, name = "currentPathNodeIndex", value = 0, no_refresh = false }
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 16001, gadget_id = 70350292, pos = { x = -202.450, y = 254.944, z = 437.513 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, start_route = false, persistent = true, is_use_point_array = true, area_id = 210 },
+		{ config_id = 16003, gadget_id = 70350292, pos = { x = -187.812, y = 242.634, z = 485.532 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, start_route = false, persistent = true, is_use_point_array = true, area_id = 210 }
+	},
+	triggers = {
+		{ config_id = 1016004, name = "PLATFORM_REACH_POINT_16004", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "", action = "", trigger_count = 0 },
+		{ config_id = 1016005, name = "AVATAR_NEAR_PLATFORM_16005", event = EventType.EVENT_AVATAR_NEAR_PLATFORM, source = "", condition = "", action = "", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	io_type = 1,
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suite_disk = {
+	[1] = {
+		gadgets = {
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { },
+		npcs = { },
+		variables = {
+			{ config_id = 1, name = "isFinished", value = 0, no_refresh = true },
+			{ config_id = 2, name = "isMoving", value = 0, no_refresh = false },
+			{ config_id = 3, name = "currentRouteIndex", value = 0, no_refresh = false },
+			{ config_id = 4, name = "nextRouteIndex", value = 1, no_refresh = false },
+			{ config_id = 5, name = "isstart", value = 0, no_refresh = false },
+			{ config_id = 6, name = "currentPathNodeIndex", value = 0, no_refresh = false }
+		}
+	},
+	[2] = {
+		gadgets = {
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { },
+		npcs = { },
+		variables = {
+			{ config_id = 1, name = "isFinished", value = 1, no_refresh = true },
+			{ config_id = 2, name = "isMoving", value = 0, no_refresh = false },
+			{ config_id = 3, name = "currentRouteIndex", value = 0, no_refresh = false },
+			{ config_id = 4, name = "nextRouteIndex", value = 1, no_refresh = false },
+			{ config_id = 5, name = "isstart", value = 0, no_refresh = false },
+			{ config_id = 6, name = "currentPathNodeIndex", value = 0, no_refresh = false }
+		}
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

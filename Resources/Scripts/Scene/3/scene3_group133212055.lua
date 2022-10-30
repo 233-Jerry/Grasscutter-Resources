@@ -1,137 +1,93 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133212055
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 55001
-L3_1.monster_id = 25010201
-L4_1 = {}
-L4_1.x = -4086.999
-L4_1.y = 202.686
-L4_1.z = -2651.323
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 172.972
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 27
-L3_1.drop_tag = "\231\155\151\229\174\157\229\155\162"
-L3_1.disableWander = true
-L4_1 = {}
-L5_1 = 1101
-L4_1[1] = L5_1
-L3_1.affix = L4_1
-L3_1.pose_id = 9003
-L3_1.area_id = 13
-L4_1 = {}
-L4_1.config_id = 55004
-L4_1.monster_id = 25010701
-L5_1 = {}
-L5_1.x = -4083.274
-L5_1.y = 202.056
-L5_1.z = -2644.002
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 163.14
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 27
-L4_1.drop_tag = "\231\155\151\229\174\157\229\155\162"
-L5_1 = {}
-L6_1 = 1101
-L5_1[1] = L6_1
-L4_1.affix = L5_1
-L4_1.pose_id = 9002
-L4_1.area_id = 13
-L5_1 = {}
-L5_1.config_id = 55007
-L5_1.monster_id = 25010201
-L6_1 = {}
-L6_1.x = -4091.836
-L6_1.y = 203.812
-L6_1.z = -2651.96
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 133.709
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 27
-L5_1.drop_tag = "\231\155\151\229\174\157\229\155\162"
-L6_1 = {}
-L7_1 = 1101
-L6_1[1] = L7_1
-L5_1.affix = L6_1
-L5_1.pose_id = 9003
-L5_1.area_id = 13
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L1_1.monsters = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1055003
-L3_1.name = "ANY_MONSTER_DIE_55003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_MONSTER_DIE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ANY_MONSTER_DIE_55003"
-L3_1.action = "action_EVENT_ANY_MONSTER_DIE_55003"
-L4_1 = {}
-L4_1.config_id = 1055006
-L4_1.name = "MONSTER_BATTLE_55006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_MONSTER_BATTLE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_MONSTER_BATTLE_55006"
-L4_1.action = "action_EVENT_MONSTER_BATTLE_55006"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133212055
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	monsters = {
+		{ config_id = 55001, monster_id = 25010201, pos = { x = -4086.999, y = 202.686, z = -2651.323 }, rot = { x = 0.000, y = 172.972, z = 0.000 }, level = 27, drop_tag = "盗宝团", disableWander = true, affix = { 1101 }, pose_id = 9003, area_id = 13 },
+		{ config_id = 55004, monster_id = 25010701, pos = { x = -4083.274, y = 202.056, z = -2644.002 }, rot = { x = 0.000, y = 163.140, z = 0.000 }, level = 27, drop_tag = "盗宝团", affix = { 1101 }, pose_id = 9002, area_id = 13 },
+		{ config_id = 55007, monster_id = 25010201, pos = { x = -4091.836, y = 203.812, z = -2651.960 }, rot = { x = 0.000, y = 133.709, z = 0.000 }, level = 27, drop_tag = "盗宝团", affix = { 1101 }, pose_id = 9003, area_id = 13 }
+	},
+	triggers = {
+		{ config_id = 1055003, name = "ANY_MONSTER_DIE_55003", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_55003", action = "action_EVENT_ANY_MONSTER_DIE_55003" },
+		{ config_id = 1055006, name = "MONSTER_BATTLE_55006", event = EventType.EVENT_MONSTER_BATTLE, source = "", condition = "condition_EVENT_MONSTER_BATTLE_55006", action = "action_EVENT_MONSTER_BATTLE_55006" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

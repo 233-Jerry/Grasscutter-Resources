@@ -1,124 +1,100 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 111101188
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 188001
-L2_1.gadget_id = 70900008
-L3_1 = {}
-L3_1.x = 2748.676
-L3_1.y = 258.524
-L3_1.z = -1294.484
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.persistent = true
-L3_1 = {}
-L3_1.config_id = 188002
-L3_1.gadget_id = 70211001
-L4_1 = {}
-L4_1.x = 2750.242
-L4_1.y = 258.874
-L4_1.z = -1291.274
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 32.968
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 26
-L3_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\232\146\153\229\190\183"
-L3_1.isOneoff = true
-L3_1.persistent = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1188003
-L2_1.name = "GADGET_STATE_CHANGE_188003"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGET_STATE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_188003"
-L2_1.action = "action_EVENT_GADGET_STATE_CHANGE_188003"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 188001
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GADGET_STATE_CHANGE_188003"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 188002
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = GadgetState
-  L2_2 = L2_2.GearStart
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = 111101188
-  L6_2 = 188001
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 111101188
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 188001, gadget_id = 70900008, pos = { x = 2748.676, y = 258.524, z = -1294.484 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, persistent = true },
+	{ config_id = 188002, gadget_id = 70211001, pos = { x = 2750.242, y = 258.874, z = -1291.274 }, rot = { x = 0.000, y = 32.968, z = 0.000 }, level = 26, drop_tag = "战斗低级蒙德", isOneoff = true, persistent = true }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1188003, name = "GADGET_STATE_CHANGE_188003", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_188003", action = "action_EVENT_GADGET_STATE_CHANGE_188003" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 188001 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_188003" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 188002 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_188003(context, evt)
+	if GadgetState.GearStart ~= ScriptLib.GetGadgetStateByConfigId(context, 111101188, 188001) then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_188003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 111101188
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_188003(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 111101188, 2)
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_188003 = L1_1

@@ -1,324 +1,136 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 133107177
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 177001
-L2_1.gadget_id = 70310014
-L3_1 = {}
-L3_1.x = -553.462
-L3_1.y = 248.212
-L3_1.z = 444.524
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.area_id = 7
-L3_1 = {}
-L3_1.config_id = 177003
-L3_1.gadget_id = 70710509
-L4_1 = {}
-L4_1.x = -559.771
-L4_1.y = 248.25
-L4_1.z = 448.03
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 51.28
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 7
-L4_1 = {}
-L4_1.config_id = 177004
-L4_1.gadget_id = 70710510
-L5_1 = {}
-L5_1.x = -559.771
-L5_1.y = 248.25
-L5_1.z = 448.03
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 51.28
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 7
-L5_1 = {}
-L5_1.config_id = 177005
-L5_1.gadget_id = 70710511
-L6_1 = {}
-L6_1.x = -559.771
-L6_1.y = 248.25
-L6_1.z = 448.03
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 51.28
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.area_id = 7
-L6_1 = {}
-L6_1.config_id = 177006
-L6_1.gadget_id = 70710512
-L7_1 = {}
-L7_1.x = -557.233
-L7_1.y = 248.977
-L7_1.z = 445.053
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 7
-L7_1 = {}
-L7_1.config_id = 177007
-L7_1.gadget_id = 70710512
-L8_1 = {}
-L8_1.x = -557.761
-L8_1.y = 248.956
-L8_1.z = 443.489
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 83.363
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.area_id = 7
-L8_1 = {}
-L8_1.config_id = 177008
-L8_1.gadget_id = 70710512
-L9_1 = {}
-L9_1.x = -559.997
-L9_1.y = 248.55
-L9_1.z = 440.726
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 134.194
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.area_id = 7
-L9_1 = {}
-L9_1.config_id = 177009
-L9_1.gadget_id = 70310014
-L10_1 = {}
-L10_1.x = -561.993
-L10_1.y = 248.212
-L10_1.z = 454.951
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L10_1 = GadgetState
-L10_1 = L10_1.GearStart
-L9_1.state = L10_1
-L9_1.area_id = 7
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1177002
-L2_1.name = "GADGET_STATE_CHANGE_177002"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGET_STATE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_177002"
-L2_1.action = "action_EVENT_GADGET_STATE_CHANGE_177002"
-L3_1 = {}
-L3_1.config_id = 1177010
-L3_1.name = "GROUP_REFRESH_177010"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GROUP_REFRESH
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_GROUP_REFRESH_177010"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 177001
-L5_1 = 177003
-L6_1 = 177004
-L7_1 = 177005
-L8_1 = 177006
-L9_1 = 177007
-L10_1 = 177008
-L11_1 = 177009
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L2_1.ban_refresh = true
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 177001
-L6_1 = 177003
-L7_1 = 177004
-L8_1 = 177005
-L9_1 = 177006
-L10_1 = 177007
-L11_1 = 177008
-L12_1 = 177009
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_STATE_CHANGE_177002"
-L6_1 = "GROUP_REFRESH_177010"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L3_1.ban_refresh = true
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 177001
-L7_1 = 177004
-L8_1 = 177005
-L9_1 = 177006
-L10_1 = 177007
-L11_1 = 177008
-L12_1 = 177009
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L5_1[7] = L12_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L4_1.ban_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 177001 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      L2_2 = GadgetState
-      L2_2 = L2_2.Default
-      L3_2 = A1_2.param3
-      if L2_2 == L3_2 then
-        goto lbl_16
-      end
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_16::
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133107177
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 177001, gadget_id = 70310014, pos = { x = -553.462, y = 248.212, z = 444.524 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 7 },
+	{ config_id = 177003, gadget_id = 70710509, pos = { x = -559.771, y = 248.250, z = 448.030 }, rot = { x = 0.000, y = 51.280, z = 0.000 }, level = 1, area_id = 7 },
+	{ config_id = 177004, gadget_id = 70710510, pos = { x = -559.771, y = 248.250, z = 448.030 }, rot = { x = 0.000, y = 51.280, z = 0.000 }, level = 1, area_id = 7 },
+	{ config_id = 177005, gadget_id = 70710511, pos = { x = -559.771, y = 248.250, z = 448.030 }, rot = { x = 0.000, y = 51.280, z = 0.000 }, level = 1, area_id = 7 },
+	{ config_id = 177006, gadget_id = 70710512, pos = { x = -557.233, y = 248.977, z = 445.053 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 7 },
+	{ config_id = 177007, gadget_id = 70710512, pos = { x = -557.761, y = 248.956, z = 443.489 }, rot = { x = 0.000, y = 83.363, z = 0.000 }, level = 1, area_id = 7 },
+	{ config_id = 177008, gadget_id = 70710512, pos = { x = -559.997, y = 248.550, z = 440.726 }, rot = { x = 0.000, y = 134.194, z = 0.000 }, level = 1, area_id = 7 },
+	{ config_id = 177009, gadget_id = 70310014, pos = { x = -561.993, y = 248.212, z = 454.951 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart, area_id = 7 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 判断点火
+	{ config_id = 1177002, name = "GADGET_STATE_CHANGE_177002", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_177002", action = "action_EVENT_GADGET_STATE_CHANGE_177002" },
+	-- 刷新group的时候把香菱锅的火灭了
+	{ config_id = 1177010, name = "GROUP_REFRESH_177010", event = EventType.EVENT_GROUP_REFRESH, source = "", condition = "", action = "action_EVENT_GROUP_REFRESH_177010" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 177001, 177003, 177004, 177005, 177006, 177007, 177008, 177009 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 2,
+		-- description = 有trigger,
+		monsters = { },
+		gadgets = { 177001, 177003, 177004, 177005, 177006, 177007, 177008, 177009 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_177002", "GROUP_REFRESH_177010" },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 3,
+		-- description = 无评委席,
+		monsters = { },
+		gadgets = { 177001, 177004, 177005, 177006, 177007, 177008, 177009 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_177002(context, evt)
+	-- 检测config_id为177001的gadget是否从GadgetState.Default变为GadgetState.GearStart
+	if 177001 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 or GadgetState.Default ~= evt.param3 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_177002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "133107177"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_177002(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "133107177") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_177002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 177001
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_REFRESH_177010(context, evt)
+	-- 将configid为 177001 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 177001, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_GROUP_REFRESH_177010 = L1_1

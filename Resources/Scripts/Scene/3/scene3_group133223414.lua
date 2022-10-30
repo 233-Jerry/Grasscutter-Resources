@@ -1,84 +1,91 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1
-L0_1 = {}
-L0_1.group_id = 133223414
-L1_1 = {}
-L1_1.group_id = 133223414
-L1_1.isRandom = false
-L2_1 = {}
-L2_1[133223220] = 1
-L1_1.child_group = L2_1
-L1_1.notifyQuest = false
-L1_1.hasChild = true
-L1_1.selfSuiteId = 2
-L1_1.hasMultiStatues = false
-L2_1 = {}
-L2_1[1001] = 1
-L1_1.statuesMap = L2_1
-defs = L1_1
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 414001
-L2_1.gadget_id = 70290160
-L3_1 = {}
-L3_1.x = -6008.989
-L3_1.y = 183.13
-L3_1.z = -2544.598
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 191.256
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 33
-L3_1 = GadgetState
-L3_1 = L3_1.GearStart
-L2_1.state = L3_1
-L2_1.persistent = true
-L2_1.area_id = 18
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "Seed"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "Notified"
-L3_1.value = 0
-L3_1.no_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 414001
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-L1_1 = require
-L2_1 = "V2_2/TsurumiBirdFather"
-L1_1(L2_1)
+-- 基础信息
+local base_info = {
+	group_id = 133223414
+}
+
+-- DEFS_MISCS
+defs = {
+	group_id = 133223414,	--当前Group的ID
+	isRandom = false,--定义这个组是否会随机取
+	child_group = {[133223220] = 1}, --groupid和需要切到的SuiteID，一一对应
+	notifyQuest = false, --修改Group里一个变量
+	hasChild = true, --表示是否有子Group，true表示有
+	selfSuiteId = 2, --需要切的自己的suite
+	hasMultiStatues = false, --是否有多个雷鸟雕像
+	statuesMap = 
+	{
+		[1001] = 1, --雷鸟雕像和需要切出来的Suite的对应表
+	},
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 414001, gadget_id = 70290160, pos = { x = -6008.989, y = 183.130, z = -2544.598 }, rot = { x = 0.000, y = 191.256, z = 0.000 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Seed", value = 0, no_refresh = true },
+	{ config_id = 2, name = "Notified", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 414001 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_2/TsurumiBirdFather"

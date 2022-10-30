@@ -1,887 +1,462 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
-L0_1 = {}
-L0_1.group_id = 250015062
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 62001
-L2_1.monster_id = 21010101
-L3_1 = {}
-L3_1.x = 55.757
-L3_1.y = 0.5
-L3_1.z = 4.535
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 62002
-L3_1.monster_id = 21020201
-L4_1 = {}
-L4_1.x = 55.757
-L4_1.y = 0.5
-L4_1.z = 4.535
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 62003
-L4_1.monster_id = 21020501
-L5_1 = {}
-L5_1.x = 55.757
-L5_1.y = 0.5
-L5_1.z = 4.535
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 62007
-L5_1.monster_id = 21010101
-L6_1 = {}
-L6_1.x = 55.757
-L6_1.y = 0.5
-L6_1.z = 4.535
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 62008
-L6_1.monster_id = 21020201
-L7_1 = {}
-L7_1.x = 55.757
-L7_1.y = 0.5
-L7_1.z = 4.535
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 62009
-L7_1.monster_id = 21020501
-L8_1 = {}
-L8_1.x = 55.757
-L8_1.y = 0.5
-L8_1.z = 4.535
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 62010
-L8_1.monster_id = 21010101
-L9_1 = {}
-L9_1.x = 55.757
-L9_1.y = 0.5
-L9_1.z = 4.535
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = {}
-L9_1.config_id = 62011
-L9_1.monster_id = 21020201
-L10_1 = {}
-L10_1.x = 55.757
-L10_1.y = 0.5
-L10_1.z = 4.535
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L10_1 = {}
-L10_1.config_id = 62012
-L10_1.monster_id = 21020501
-L11_1 = {}
-L11_1.x = 55.757
-L11_1.y = 0.5
-L11_1.z = 4.535
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 62004
-L2_1.gadget_id = 70360002
-L3_1 = {}
-L3_1.x = 55.757
-L3_1.y = 0.5
-L3_1.z = 36.541
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1062005
-L2_1.name = "SELECT_OPTION_62005"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_SELECT_OPTION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_SELECT_OPTION_62005"
-L2_1.action = "action_EVENT_SELECT_OPTION_62005"
-L3_1 = {}
-L3_1.config_id = 1062006
-L3_1.name = "GADGET_CREATE_62006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_CREATE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_CREATE_62006"
-L3_1.action = "action_EVENT_GADGET_CREATE_62006"
-L4_1 = {}
-L4_1.config_id = 1062013
-L4_1.name = "SELECT_OPTION_62013"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SELECT_OPTION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SELECT_OPTION_62013"
-L4_1.action = "action_EVENT_SELECT_OPTION_62013"
-L5_1 = {}
-L5_1.config_id = 1062014
-L5_1.name = "SELECT_OPTION_62014"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_SELECT_OPTION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_SELECT_OPTION_62014"
-L5_1.action = "action_EVENT_SELECT_OPTION_62014"
-L6_1 = {}
-L6_1.config_id = 1062015
-L6_1.name = "SELECT_OPTION_62015"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_SELECT_OPTION
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_SELECT_OPTION_62015"
-L6_1.action = "action_EVENT_SELECT_OPTION_62015"
-L7_1 = {}
-L7_1.config_id = 1062016
-L7_1.name = "SELECT_OPTION_62016"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_SELECT_OPTION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_SELECT_OPTION_62016"
-L7_1.action = "action_EVENT_SELECT_OPTION_62016"
-L8_1 = {}
-L8_1.config_id = 1062017
-L8_1.name = "SELECT_OPTION_62017"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_SELECT_OPTION
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_SELECT_OPTION_62017"
-L8_1.action = "action_EVENT_SELECT_OPTION_62017"
-L9_1 = {}
-L9_1.config_id = 1062018
-L9_1.name = "SELECT_OPTION_62018"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_SELECT_OPTION
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_SELECT_OPTION_62018"
-L9_1.action = "action_EVENT_SELECT_OPTION_62018"
-L10_1 = {}
-L10_1.config_id = 1062019
-L10_1.name = "SELECT_OPTION_62019"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_SELECT_OPTION
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_SELECT_OPTION_62019"
-L10_1.action = "action_EVENT_SELECT_OPTION_62019"
-L11_1 = {}
-L11_1.config_id = 1062020
-L11_1.name = "SELECT_OPTION_62020"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_SELECT_OPTION
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_SELECT_OPTION_62020"
-L11_1.action = "action_EVENT_SELECT_OPTION_62020"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 62004
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "SELECT_OPTION_62005"
-L5_1 = "GADGET_CREATE_62006"
-L6_1 = "SELECT_OPTION_62013"
-L7_1 = "SELECT_OPTION_62014"
-L8_1 = "SELECT_OPTION_62015"
-L9_1 = "SELECT_OPTION_62016"
-L10_1 = "SELECT_OPTION_62017"
-L11_1 = "SELECT_OPTION_62018"
-L12_1 = "SELECT_OPTION_62019"
-L13_1 = "SELECT_OPTION_62020"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 62001
-L4_1[1] = L5_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 62002
-L5_1[1] = L6_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L7_1 = 62003
-L6_1[1] = L7_1
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L8_1 = 62007
-L7_1[1] = L8_1
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L7_1 = {}
-L8_1 = {}
-L9_1 = 62008
-L8_1[1] = L9_1
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L7_1.triggers = L8_1
-L7_1.rand_weight = 100
-L8_1 = {}
-L9_1 = {}
-L10_1 = 62009
-L9_1[1] = L10_1
-L8_1.monsters = L9_1
-L9_1 = {}
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L8_1.triggers = L9_1
-L8_1.rand_weight = 100
-L9_1 = {}
-L10_1 = {}
-L11_1 = 62010
-L10_1[1] = L11_1
-L9_1.monsters = L10_1
-L10_1 = {}
-L9_1.gadgets = L10_1
-L10_1 = {}
-L9_1.regions = L10_1
-L10_1 = {}
-L9_1.triggers = L10_1
-L9_1.rand_weight = 100
-L10_1 = {}
-L11_1 = {}
-L12_1 = 62011
-L11_1[1] = L12_1
-L10_1.monsters = L11_1
-L11_1 = {}
-L10_1.gadgets = L11_1
-L11_1 = {}
-L10_1.regions = L11_1
-L11_1 = {}
-L10_1.triggers = L11_1
-L10_1.rand_weight = 100
-L11_1 = {}
-L12_1 = {}
-L13_1 = 62012
-L12_1[1] = L13_1
-L11_1.monsters = L12_1
-L12_1 = {}
-L11_1.gadgets = L12_1
-L12_1 = {}
-L11_1.regions = L12_1
-L12_1 = {}
-L11_1.triggers = L12_1
-L11_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 62004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 184 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 250015062
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 62001, monster_id = 21010101, pos = { x = 55.757, y = 0.500, z = 4.535 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 62002, monster_id = 21020201, pos = { x = 55.757, y = 0.500, z = 4.535 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 62003, monster_id = 21020501, pos = { x = 55.757, y = 0.500, z = 4.535 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 62007, monster_id = 21010101, pos = { x = 55.757, y = 0.500, z = 4.535 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 62008, monster_id = 21020201, pos = { x = 55.757, y = 0.500, z = 4.535 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 62009, monster_id = 21020501, pos = { x = 55.757, y = 0.500, z = 4.535 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 62010, monster_id = 21010101, pos = { x = 55.757, y = 0.500, z = 4.535 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 62011, monster_id = 21020201, pos = { x = 55.757, y = 0.500, z = 4.535 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 62012, monster_id = 21020501, pos = { x = 55.757, y = 0.500, z = 4.535 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 62004, gadget_id = 70360002, pos = { x = 55.757, y = 0.500, z = 36.541 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1062005, name = "SELECT_OPTION_62005", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_62005", action = "action_EVENT_SELECT_OPTION_62005" },
+	{ config_id = 1062006, name = "GADGET_CREATE_62006", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_62006", action = "action_EVENT_GADGET_CREATE_62006" },
+	{ config_id = 1062013, name = "SELECT_OPTION_62013", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_62013", action = "action_EVENT_SELECT_OPTION_62013" },
+	{ config_id = 1062014, name = "SELECT_OPTION_62014", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_62014", action = "action_EVENT_SELECT_OPTION_62014" },
+	{ config_id = 1062015, name = "SELECT_OPTION_62015", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_62015", action = "action_EVENT_SELECT_OPTION_62015" },
+	{ config_id = 1062016, name = "SELECT_OPTION_62016", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_62016", action = "action_EVENT_SELECT_OPTION_62016" },
+	{ config_id = 1062017, name = "SELECT_OPTION_62017", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_62017", action = "action_EVENT_SELECT_OPTION_62017" },
+	{ config_id = 1062018, name = "SELECT_OPTION_62018", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_62018", action = "action_EVENT_SELECT_OPTION_62018" },
+	{ config_id = 1062019, name = "SELECT_OPTION_62019", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_62019", action = "action_EVENT_SELECT_OPTION_62019" },
+	{ config_id = 1062020, name = "SELECT_OPTION_62020", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_62020", action = "action_EVENT_SELECT_OPTION_62020" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 62004 },
+		regions = { },
+		triggers = { "SELECT_OPTION_62005", "GADGET_CREATE_62006", "SELECT_OPTION_62013", "SELECT_OPTION_62014", "SELECT_OPTION_62015", "SELECT_OPTION_62016", "SELECT_OPTION_62017", "SELECT_OPTION_62018", "SELECT_OPTION_62019", "SELECT_OPTION_62020" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 62001 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { 62002 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = ,
+		monsters = { 62003 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = ,
+		monsters = { 62007 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 6,
+		-- description = ,
+		monsters = { 62008 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 7,
+		-- description = ,
+		monsters = { 62009 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 8,
+		-- description = ,
+		monsters = { 62010 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 9,
+		-- description = ,
+		monsters = { 62011 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 10,
+		-- description = ,
+		monsters = { 62012 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_62005(context, evt)
+	-- 判断是gadgetid 62004 option_id 184
+	if 62004 ~= evt.param1 then
+		return false	
+	end
+	
+	if 184 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_62005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 250015062
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 250015062
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_62005(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 250015062, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 250015062, 2)
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_62005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 62004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_62006(context, evt)
+	if 62004 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_62006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 250015062
-  L5_2 = 62004
-  L6_2 = {}
-  L7_2 = 184
-  L8_2 = 185
-  L9_2 = 186
-  L10_2 = 201
-  L11_2 = 202
-  L12_2 = 203
-  L13_2 = 181
-  L14_2 = 182
-  L15_2 = 183
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L6_2[3] = L9_2
-  L6_2[4] = L10_2
-  L6_2[5] = L11_2
-  L6_2[6] = L12_2
-  L6_2[7] = L13_2
-  L6_2[8] = L14_2
-  L6_2[9] = L15_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_62006(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 250015062, 62004, {184,185,186,201,202,203,181,182,183}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_62006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 62004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 185 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_62013(context, evt)
+	-- 判断是gadgetid 62004 option_id 185
+	if 62004 ~= evt.param1 then
+		return false	
+	end
+	
+	if 185 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_62013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 250015062
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 250015062
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_62013(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 250015062, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 250015062, 3)
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_62013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 62004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 186 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_62014(context, evt)
+	-- 判断是gadgetid 62004 option_id 186
+	if 62004 ~= evt.param1 then
+		return false	
+	end
+	
+	if 186 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_62014 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 250015062
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 250015062
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_62014(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 250015062, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 250015062, 4)
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_62014 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 62004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 201 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_62015(context, evt)
+	-- 判断是gadgetid 62004 option_id 201
+	if 62004 ~= evt.param1 then
+		return false	
+	end
+	
+	if 201 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_62015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 250015062
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 250015062
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_62015(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 250015062, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 250015062, 5)
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_62015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 62004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 202 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_62016(context, evt)
+	-- 判断是gadgetid 62004 option_id 202
+	if 62004 ~= evt.param1 then
+		return false	
+	end
+	
+	if 202 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_62016 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 250015062
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 250015062
-  L5_2 = 6
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_62016(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 250015062, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 添加suite6的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 250015062, 6)
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_62016 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 62004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 203 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_62017(context, evt)
+	-- 判断是gadgetid 62004 option_id 203
+	if 62004 ~= evt.param1 then
+		return false	
+	end
+	
+	if 203 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_62017 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 250015062
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 250015062
-  L5_2 = 7
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_62017(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 250015062, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 添加suite7的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 250015062, 7)
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_62017 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 62004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 181 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_62018(context, evt)
+	-- 判断是gadgetid 62004 option_id 181
+	if 62004 ~= evt.param1 then
+		return false	
+	end
+	
+	if 181 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_62018 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 250015062
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 250015062
-  L5_2 = 8
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_62018(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 250015062, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 添加suite8的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 250015062, 8)
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_62018 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 62004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 182 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_62019(context, evt)
+	-- 判断是gadgetid 62004 option_id 182
+	if 62004 ~= evt.param1 then
+		return false	
+	end
+	
+	if 182 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_62019 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 250015062
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 250015062
-  L5_2 = 9
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_62019(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 250015062, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 添加suite9的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 250015062, 9)
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_62019 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 62004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 183 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_62020(context, evt)
+	-- 判断是gadgetid 62004 option_id 183
+	if 62004 ~= evt.param1 then
+		return false	
+	end
+	
+	if 183 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_62020 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 250015062
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 250015062
-  L5_2 = 10
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_62020(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 250015062, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	-- 添加suite10的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 250015062, 10)
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_62020 = L1_1

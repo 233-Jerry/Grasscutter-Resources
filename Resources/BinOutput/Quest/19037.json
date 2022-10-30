@@ -12,10 +12,7 @@
   "_luaPath": "Actor/Quest/LQ19037",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    19038,
-    19040
-  ],
+  "PEOHODAKLNO": [19038, 19040],
   "FEHAEKNGFBP": true,
   "rewardIdList": [],
   "showType": "QUEST_SHOW",
@@ -42,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [
-            1,
-            0
-          ],
+          "param": [1, 0],
           "count": 0
         }
       ],
@@ -87,10 +81,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106401,
-            1903701
-          ],
+          "param": [106401, 1903701],
           "count": 0
         }
       ],
@@ -98,9 +89,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "509"
-        ],
+        "param": ["509"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -134,10 +123,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1903703,
-            0
-          ],
+          "param": [1903703, 0],
           "count": 0
         }
       ],
@@ -145,9 +131,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q1903703_gu_ide"
-        ],
+        "param": ["Q1903703_gu_ide"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -164,10 +148,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133107232",
-            "0"
-          ]
+          "param": ["133107232", "0"]
         }
       ],
       "failExec": [],
@@ -189,18 +170,12 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106401,
-            19037021
-          ],
+          "param": [106401, 19037021],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106401,
-            19037022
-          ],
+          "param": [106401, 19037022],
           "count": 0
         }
       ],
@@ -208,9 +183,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "12319"
-        ],
+        "param": ["12319"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -240,17 +213,11 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903702",
-            "2"
-          ]
+          "param": ["1903702", "2"]
         },
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903703",
-            "2"
-          ]
+          "param": ["1903703", "2"]
         }
       ],
       "priority": 5,
@@ -259,10 +226,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 190375101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        12319,
-        12320
-      ],
+      "npcIdRawNum": [12319, 12320],
       "GHNCIOJDIEA": "QuestDialogue/COOP/CoopYunjin/Q1903751",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -290,29 +254,14 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    975648625572,
-    628285722475
-  ],
-  "OMKMAOLMNCO": [
-    776321775490
-  ],
+  "LGCLJGGNGBD": [975648625572, 628285722475],
+  "OMKMAOLMNCO": [776321775490],
   "KPOKLMBEOBI": {
-    "509": [
-      1190
-    ],
-    "1626": [
-      1170
-    ],
-    "2444": [
-      1120
-    ],
-    "12319": [
-      1090
-    ],
-    "12320": [
-      1190
-    ]
+    "509": [1190],
+    "1626": [1170],
+    "2444": [1120],
+    "12319": [1090],
+    "12320": [1190]
   },
   "MGDNNNGPOGO": 0
 }

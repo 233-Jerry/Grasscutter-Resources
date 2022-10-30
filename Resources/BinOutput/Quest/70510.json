@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    170510
-  ],
+  "rewardIdList": [170510],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7051004,
-            0
-          ],
+          "param": [7051004, 0],
           "count": 0
         }
       ],
@@ -52,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "30112"
-        ],
+        "param": ["30112"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_FINISH",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -88,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7051002,
-            0
-          ],
+          "param": [7051002, 0],
           "count": 0
         }
       ],
@@ -117,9 +107,7 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "7051001"
-          ]
+          "param": ["7051001"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -136,10 +124,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7051001",
-            "2"
-          ]
+          "param": ["7051001", "2"]
         }
       ],
       "priority": 5,
@@ -148,9 +133,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 705100401,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30112
-      ],
+      "npcIdRawNum": [30112],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Mengde_70510/Q7051004",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

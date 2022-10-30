@@ -1,267 +1,152 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133220389
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 389001
-L2_1.monster_id = 24020101
-L3_1 = {}
-L3_1.x = -2324.005
-L3_1.y = 240.713
-L3_1.z = -4190.094
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 17
-L2_1.drop_tag = "\230\139\159\231\148\159\230\156\186\229\133\179"
-L2_1.disableWander = true
-L2_1.pose_id = 100
-L2_1.area_id = 11
-L3_1 = {}
-L3_1.config_id = 389002
-L3_1.monster_id = 24020201
-L4_1 = {}
-L4_1.x = -2313.863
-L4_1.y = 239.918
-L4_1.z = -4180.239
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 17
-L3_1.drop_tag = "\230\139\159\231\148\159\230\156\186\229\133\179"
-L3_1.disableWander = true
-L3_1.pose_id = 100
-L3_1.area_id = 11
-L4_1 = {}
-L4_1.config_id = 389003
-L4_1.monster_id = 24020301
-L5_1 = {}
-L5_1.x = -2340.506
-L5_1.y = 238.937
-L5_1.z = -4184.394
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 17
-L4_1.drop_tag = "\230\139\159\231\148\159\230\156\186\229\133\179"
-L4_1.disableWander = true
-L4_1.pose_id = 100
-L4_1.area_id = 11
-L5_1 = {}
-L5_1.config_id = 389004
-L5_1.monster_id = 24020401
-L6_1 = {}
-L6_1.x = -2327.772
-L6_1.y = 237.722
-L6_1.z = -4171.875
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 17
-L5_1.drop_tag = "\230\139\159\231\148\159\230\156\186\229\133\179"
-L5_1.disableWander = true
-L5_1.pose_id = 100
-L5_1.area_id = 11
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1389005
-L2_1.name = "GROUP_LOAD_389005"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GROUP_LOAD
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_GROUP_LOAD_389005"
-L3_1 = {}
-L3_1.config_id = 1389006
-L3_1.name = "HUNTING_FINISH_FINAL_389006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_HUNTING_FINISH_FINAL
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_HUNTING_FINISH_FINAL_389006"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 389007
-L3_1 = {}
-L3_1.x = -2326.053
-L3_1.y = 239.204
-L3_1.z = -4181.576
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.area_id = 11
-L1_1[1] = L2_1
-points = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GROUP_LOAD_389005"
-L5_1 = "HUNTING_FINISH_FINAL_389006"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 389001
-L4_1[1] = L5_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 389002
-L5_1[1] = L6_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L7_1 = 389003
-L6_1[1] = L7_1
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L8_1 = 389004
-L7_1[1] = L8_1
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L2_2 = {}
-  L3_2 = ScriptLib
-  L3_2 = L3_2.RefreshHuntingClueGroup
-  L4_2 = A0_2
-  L3_2 = L3_2(L4_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : refresh_hunting_clue_group"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetHuntingMonsterExtraSuiteIndexVec
-  L4_2 = A0_2
-  L3_2 = L3_2(L4_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.GetHuntingMonsterExtraSuiteIndexVec
-    L4_2 = A0_2
-    L3_2 = L3_2(L4_2)
-    L2_2 = L3_2
-    L3_2 = ipairs
-    L4_2 = L2_2
-    L3_2, L4_2, L5_2 = L3_2(L4_2)
-    for L6_2, L7_2 in L3_2, L4_2, L5_2 do
-      L8_2 = ScriptLib
-      L8_2 = L8_2.AddExtraGroupSuite
-      L9_2 = A0_2
-      L10_2 = 133220389
-      L11_2 = L7_2
-      L8_2(L9_2, L10_2, L11_2)
-    end
-  end
-  L3_2 = 0
-  return L3_2
+-- 基础信息
+local base_info = {
+	group_id = 133220389
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 389001, monster_id = 24020101, pos = { x = -2324.005, y = 240.713, z = -4190.094 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 17, drop_tag = "拟生机关", disableWander = true, pose_id = 100, area_id = 11 },
+	{ config_id = 389002, monster_id = 24020201, pos = { x = -2313.863, y = 239.918, z = -4180.239 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 17, drop_tag = "拟生机关", disableWander = true, pose_id = 100, area_id = 11 },
+	{ config_id = 389003, monster_id = 24020301, pos = { x = -2340.506, y = 238.937, z = -4184.394 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 17, drop_tag = "拟生机关", disableWander = true, pose_id = 100, area_id = 11 },
+	{ config_id = 389004, monster_id = 24020401, pos = { x = -2327.772, y = 237.722, z = -4171.875 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 17, drop_tag = "拟生机关", disableWander = true, pose_id = 100, area_id = 11 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1389005, name = "GROUP_LOAD_389005", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_389005" },
+	{ config_id = 1389006, name = "HUNTING_FINISH_FINAL_389006", event = EventType.EVENT_HUNTING_FINISH_FINAL, source = "", condition = "", action = "action_EVENT_HUNTING_FINISH_FINAL_389006" }
+}
+
+-- 点位
+points = {
+	{ config_id = 389007, pos = { x = -2326.053, y = 239.204, z = -4181.576 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 11 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_389005", "HUNTING_FINISH_FINAL_389006" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = 雄蜂,
+		monsters = { 389001 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = 藤蔓,
+		monsters = { 389002 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = 蜘蛛,
+		monsters = { 389003 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = 水母,
+		monsters = { 389004 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_389005(context, evt)
+	-- 初始化table
+	    local suite_table = {}
+	
+	-- 需要在group创建时调用，该函数会通过context的groupid读取HuntingData表，来创建entity填充points
+	    if 0~= ScriptLib.RefreshHuntingClueGroup(context) then
+	        ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_hunting_clue_group")
+	        return -1
+	    end
+	
+	-- 根据HuntingData表的配置来激活对应的suite
+	    if 0~= ScriptLib.GetHuntingMonsterExtraSuiteIndexVec(context) then
+	        suite_table = ScriptLib.GetHuntingMonsterExtraSuiteIndexVec(context)
+	        for i,suite_id in ipairs (suite_table) do
+	            ScriptLib.AddExtraGroupSuite(context, 133220389, suite_id)
+	        end
+	    end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_389005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133220389
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_HUNTING_FINISH_FINAL_389006(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 133220389, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+	return 0
 end
-action_EVENT_HUNTING_FINISH_FINAL_389006 = L1_1

@@ -1,1050 +1,477 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1
-L0_1 = {}
-L0_1.group_id = 133225163
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 163001
-L2_1.gadget_id = 70230051
-L3_1 = {}
-L3_1.x = -6274.066
-L3_1.y = 224.494
-L3_1.z = -2663.283
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 78.44
-L3_1.y = 147.055
-L3_1.z = 314.763
-L2_1.rot = L3_1
-L2_1.level = 33
-L3_1 = GadgetState
-L3_1 = L3_1.GearStart
-L2_1.state = L3_1
-L2_1.persistent = true
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 163002
-L3_1.gadget_id = 70230052
-L4_1 = {}
-L4_1.x = -6272.801
-L4_1.y = 224.592
-L4_1.z = -2663.794
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 63.104
-L4_1.y = 58.772
-L4_1.z = 243.37
-L3_1.rot = L4_1
-L3_1.level = 33
-L4_1 = GadgetState
-L4_1 = L4_1.GearStart
-L3_1.state = L4_1
-L3_1.persistent = true
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 163003
-L4_1.gadget_id = 70230056
-L5_1 = {}
-L5_1.x = -6271.782
-L5_1.y = 224.865
-L5_1.z = -2663.832
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 67.829
-L5_1.y = 149.968
-L5_1.z = 297.441
-L4_1.rot = L5_1
-L4_1.level = 33
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.persistent = true
-L4_1.area_id = 18
-L5_1 = {}
-L5_1.config_id = 163004
-L5_1.gadget_id = 70230053
-L6_1 = {}
-L6_1.x = -6270.697
-L6_1.y = 225.234
-L6_1.z = -2664.046
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 71.44
-L6_1.y = 132.485
-L6_1.z = 297.406
-L5_1.rot = L6_1
-L5_1.level = 33
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L5_1.persistent = true
-L5_1.area_id = 18
-L6_1 = {}
-L6_1.config_id = 163005
-L6_1.gadget_id = 70230055
-L7_1 = {}
-L7_1.x = -6269.406
-L7_1.y = 225.527
-L7_1.z = -2664.542
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 49.719
-L7_1.y = 158.012
-L7_1.z = 317.687
-L6_1.rot = L7_1
-L6_1.level = 33
-L7_1 = GadgetState
-L7_1 = L7_1.GearStart
-L6_1.state = L7_1
-L6_1.persistent = true
-L6_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1163006
-L2_1.name = "TIME_AXIS_PASS_163006"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_TIME_AXIS_PASS
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_TIME_AXIS_PASS_163006"
-L2_1.action = "action_EVENT_TIME_AXIS_PASS_163006"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1163007
-L3_1.name = "VARIABLE_CHANGE_163007"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_163007"
-L3_1.action = "action_EVENT_VARIABLE_CHANGE_163007"
-L4_1 = {}
-L4_1.config_id = 1163008
-L4_1.name = "VARIABLE_CHANGE_163008"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_VARIABLE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_VARIABLE_CHANGE_163008"
-L4_1.action = "action_EVENT_VARIABLE_CHANGE_163008"
-L5_1 = {}
-L5_1.config_id = 1163009
-L5_1.name = "TIME_AXIS_PASS_163009"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_TIME_AXIS_PASS
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_TIME_AXIS_PASS_163009"
-L5_1.action = "action_EVENT_TIME_AXIS_PASS_163009"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1163010
-L6_1.name = "VARIABLE_CHANGE_163010"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_VARIABLE_CHANGE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_VARIABLE_CHANGE_163010"
-L6_1.action = "action_EVENT_VARIABLE_CHANGE_163010"
-L7_1 = {}
-L7_1.config_id = 1163011
-L7_1.name = "TIME_AXIS_PASS_163011"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_TIME_AXIS_PASS
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_TIME_AXIS_PASS_163011"
-L7_1.action = "action_EVENT_TIME_AXIS_PASS_163011"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1163012
-L8_1.name = "VARIABLE_CHANGE_163012"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_VARIABLE_CHANGE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_VARIABLE_CHANGE_163012"
-L8_1.action = "action_EVENT_VARIABLE_CHANGE_163012"
-L9_1 = {}
-L9_1.config_id = 1163013
-L9_1.name = "TIME_AXIS_PASS_163013"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_TIME_AXIS_PASS
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_TIME_AXIS_PASS_163013"
-L9_1.action = "action_EVENT_TIME_AXIS_PASS_163013"
-L10_1 = {}
-L10_1.config_id = 1163014
-L10_1.name = "GROUP_LOAD_163014"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_GROUP_LOAD
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_GROUP_LOAD_163014"
-L10_1.action = "action_EVENT_GROUP_LOAD_163014"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1163015
-L11_1.name = "GROUP_LOAD_163015"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_GROUP_LOAD
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_GROUP_LOAD_163015"
-L11_1.action = "action_EVENT_GROUP_LOAD_163015"
-L11_1.trigger_count = 0
-L12_1 = {}
-L12_1.config_id = 1163016
-L12_1.name = "GROUP_LOAD_163016"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_GROUP_LOAD
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = "condition_EVENT_GROUP_LOAD_163016"
-L12_1.action = "action_EVENT_GROUP_LOAD_163016"
-L12_1.trigger_count = 0
-L13_1 = {}
-L13_1.config_id = 1163017
-L13_1.name = "GROUP_LOAD_163017"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_GROUP_LOAD
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_GROUP_LOAD_163017"
-L13_1.action = "action_EVENT_GROUP_LOAD_163017"
-L13_1.trigger_count = 0
-L14_1 = {}
-L14_1.config_id = 1163018
-L14_1.name = "TIME_AXIS_PASS_163018"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_TIME_AXIS_PASS
-L14_1.event = L15_1
-L14_1.source = ""
-L14_1.condition = "condition_EVENT_TIME_AXIS_PASS_163018"
-L14_1.action = "action_EVENT_TIME_AXIS_PASS_163018"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "decal_finish_1"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "decal_finish_2"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "decal_finish_3"
-L4_1.value = 0
-L4_1.no_refresh = true
-L5_1 = {}
-L5_1.configId = 4
-L5_1.name = "total_progress"
-L5_1.value = 0
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 5
-L6_1.name = "decal_create_1"
-L6_1.value = 0
-L6_1.no_refresh = true
-L7_1 = {}
-L7_1.configId = 6
-L7_1.name = "decal_create_2"
-L7_1.value = 0
-L7_1.no_refresh = true
-L8_1 = {}
-L8_1.configId = 7
-L8_1.name = "decal_create_3"
-L8_1.value = 0
-L8_1.no_refresh = true
-L9_1 = {}
-L9_1.configId = 8
-L9_1.name = "decal_create_all"
-L9_1.value = 0
-L9_1.no_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "TIME_AXIS_PASS_163006"
-L5_1 = "VARIABLE_CHANGE_163007"
-L6_1 = "VARIABLE_CHANGE_163008"
-L7_1 = "TIME_AXIS_PASS_163009"
-L8_1 = "VARIABLE_CHANGE_163010"
-L9_1 = "TIME_AXIS_PASS_163011"
-L10_1 = "VARIABLE_CHANGE_163012"
-L11_1 = "TIME_AXIS_PASS_163013"
-L12_1 = "GROUP_LOAD_163014"
-L13_1 = "GROUP_LOAD_163015"
-L14_1 = "GROUP_LOAD_163016"
-L15_1 = "GROUP_LOAD_163017"
-L16_1 = "TIME_AXIS_PASS_163018"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L3_1[13] = L16_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "Decal_Start" == L2_2 then
-    L2_2 = A1_2.param1
-    if 1 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133225163
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 163001, gadget_id = 70230051, pos = { x = -6274.066, y = 224.494, z = -2663.283 }, rot = { x = 78.440, y = 147.055, z = 314.763 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 163002, gadget_id = 70230052, pos = { x = -6272.801, y = 224.592, z = -2663.794 }, rot = { x = 63.104, y = 58.772, z = 243.370 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 163003, gadget_id = 70230056, pos = { x = -6271.782, y = 224.865, z = -2663.832 }, rot = { x = 67.829, y = 149.968, z = 297.441 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 163004, gadget_id = 70230053, pos = { x = -6270.697, y = 225.234, z = -2664.046 }, rot = { x = 71.440, y = 132.485, z = 297.406 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 163005, gadget_id = 70230055, pos = { x = -6269.406, y = 225.527, z = -2664.542 }, rot = { x = 49.719, y = 158.012, z = 317.687 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 显示符文1
+	{ config_id = 1163006, name = "TIME_AXIS_PASS_163006", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_163006", action = "action_EVENT_TIME_AXIS_PASS_163006", trigger_count = 0 },
+	{ config_id = 1163007, name = "VARIABLE_CHANGE_163007", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_163007", action = "action_EVENT_VARIABLE_CHANGE_163007" },
+	{ config_id = 1163008, name = "VARIABLE_CHANGE_163008", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_163008", action = "action_EVENT_VARIABLE_CHANGE_163008" },
+	-- 显示符文2
+	{ config_id = 1163009, name = "TIME_AXIS_PASS_163009", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_163009", action = "action_EVENT_TIME_AXIS_PASS_163009", trigger_count = 0 },
+	{ config_id = 1163010, name = "VARIABLE_CHANGE_163010", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_163010", action = "action_EVENT_VARIABLE_CHANGE_163010" },
+	-- 显示符文6
+	{ config_id = 1163011, name = "TIME_AXIS_PASS_163011", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_163011", action = "action_EVENT_TIME_AXIS_PASS_163011", trigger_count = 0 },
+	-- 显示所有符文
+	{ config_id = 1163012, name = "VARIABLE_CHANGE_163012", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_163012", action = "action_EVENT_VARIABLE_CHANGE_163012" },
+	{ config_id = 1163013, name = "TIME_AXIS_PASS_163013", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_163013", action = "action_EVENT_TIME_AXIS_PASS_163013" },
+	-- 符文创建保底
+	{ config_id = 1163014, name = "GROUP_LOAD_163014", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_163014", action = "action_EVENT_GROUP_LOAD_163014", trigger_count = 0 },
+	-- 符文创建保底
+	{ config_id = 1163015, name = "GROUP_LOAD_163015", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_163015", action = "action_EVENT_GROUP_LOAD_163015", trigger_count = 0 },
+	-- 符文创建保底
+	{ config_id = 1163016, name = "GROUP_LOAD_163016", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_163016", action = "action_EVENT_GROUP_LOAD_163016", trigger_count = 0 },
+	-- 符文创建保底
+	{ config_id = 1163017, name = "GROUP_LOAD_163017", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_163017", action = "action_EVENT_GROUP_LOAD_163017", trigger_count = 0 },
+	{ config_id = 1163018, name = "TIME_AXIS_PASS_163018", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_163018", action = "action_EVENT_TIME_AXIS_PASS_163018" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "decal_finish_1", value = 0, no_refresh = true },
+	{ config_id = 2, name = "decal_finish_2", value = 0, no_refresh = true },
+	{ config_id = 3, name = "decal_finish_3", value = 0, no_refresh = true },
+	{ config_id = 4, name = "total_progress", value = 0, no_refresh = true },
+	{ config_id = 5, name = "decal_create_1", value = 0, no_refresh = true },
+	{ config_id = 6, name = "decal_create_2", value = 0, no_refresh = true },
+	{ config_id = 7, name = "decal_create_3", value = 0, no_refresh = true },
+	{ config_id = 8, name = "decal_create_all", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "TIME_AXIS_PASS_163006", "VARIABLE_CHANGE_163007", "VARIABLE_CHANGE_163008", "TIME_AXIS_PASS_163009", "VARIABLE_CHANGE_163010", "TIME_AXIS_PASS_163011", "VARIABLE_CHANGE_163012", "TIME_AXIS_PASS_163013", "GROUP_LOAD_163014", "GROUP_LOAD_163015", "GROUP_LOAD_163016", "GROUP_LOAD_163017", "TIME_AXIS_PASS_163018" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_163006(context, evt)
+	if "Decal_Start" ~= evt.source_name or 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_163006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 163001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_1"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "Decal_Start"
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_163006(context, evt)
+	-- 创建id为163001的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 163001 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "decal_create_1" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "decal_create_1", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 停止标识为"Decal_Start"的时间轴
+	ScriptLib.EndTimeAxis(context, "Decal_Start")
+	
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_163006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_finish_1"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_163007(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"decal_finish_1"为1
+	if ScriptLib.GetGroupVariableValue(context, "decal_finish_1") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_163007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "total_progress"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "Decal_Start"
-  L5_2 = {}
-  L6_2 = 3
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_163007(context, evt)
+	-- 针对当前group内变量名为 "total_progress" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "total_progress", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 创建标识为"Decal_Start"，时间节点为{3}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "Decal_Start", {3}, false)
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_163007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_finish_2"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_163008(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"decal_finish_2"为1
+	if ScriptLib.GetGroupVariableValue(context, "decal_finish_2") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_163008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "total_progress"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "Decal_Start_2"
-  L5_2 = {}
-  L6_2 = 3
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_163008(context, evt)
+	-- 针对当前group内变量名为 "total_progress" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "total_progress", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 创建标识为"Decal_Start_2"，时间节点为{3}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "Decal_Start_2", {3}, false)
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_163008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "Decal_Start_2" == L2_2 then
-    L2_2 = A1_2.param1
-    if 1 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_163009(context, evt)
+	if "Decal_Start_2" ~= evt.source_name or 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_163009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 163002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_2"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "Decal_Start_2"
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_163009(context, evt)
+	-- 创建id为163002的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 163002 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "decal_create_2" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "decal_create_2", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 停止标识为"Decal_Start_2"的时间轴
+	ScriptLib.EndTimeAxis(context, "Decal_Start_2")
+	
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_163009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_finish_3"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_163010(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"decal_finish_3"为1
+	if ScriptLib.GetGroupVariableValue(context, "decal_finish_3") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_163010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "total_progress"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "Decal_Start_3"
-  L5_2 = {}
-  L6_2 = 3
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_163010(context, evt)
+	-- 针对当前group内变量名为 "total_progress" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "total_progress", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	-- 创建标识为"Decal_Start_3"，时间节点为{3}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "Decal_Start_3", {3}, false)
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_163010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "Decal_Start_3" == L2_2 then
-    L2_2 = A1_2.param1
-    if 1 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_163011(context, evt)
+	if "Decal_Start_3" ~= evt.source_name or 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_163011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 163003
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_3"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "Decal_Start_3"
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_163011(context, evt)
+	-- 创建id为163003的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 163003 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "decal_create_3" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "decal_create_3", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 停止标识为"Decal_Start_3"的时间轴
+	ScriptLib.EndTimeAxis(context, "Decal_Start_3")
+	
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_163011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "total_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_163012(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"total_progress"为3
+	if ScriptLib.GetGroupVariableValue(context, "total_progress") ~= 3 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_163012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "Decal_Show_All"
-  L5_2 = {}
-  L6_2 = 4
-  L7_2 = 5
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_163012(context, evt)
+	-- 创建标识为"Decal_Show_All"，时间节点为{4,5}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "Decal_Show_All", {4,5}, false)
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_163012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "Decal_Show_All" == L2_2 then
-    L2_2 = A1_2.param1
-    if 1 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_163013(context, evt)
+	if "Decal_Show_All" ~= evt.source_name or 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_163013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 163004
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_163013(context, evt)
+	-- 创建id为163004的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 163004 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_163013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_finish_1"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_1"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_163014(context, evt)
+	-- 判断变量"decal_finish_1"为1
+	if ScriptLib.GetGroupVariableValue(context, "decal_finish_1") ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"decal_create_1"为0
+	if ScriptLib.GetGroupVariableValue(context, "decal_create_1") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_163014 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 163001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_1"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_163014(context, evt)
+	-- 创建id为163001的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 163001 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "decal_create_1" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "decal_create_1", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_163014 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_finish_2"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_2"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_163015(context, evt)
+	-- 判断变量"decal_finish_2"为1
+	if ScriptLib.GetGroupVariableValue(context, "decal_finish_2") ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"decal_create_2"为0
+	if ScriptLib.GetGroupVariableValue(context, "decal_create_2") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_163015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 163002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_2"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_163015(context, evt)
+	-- 创建id为163002的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 163002 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "decal_create_2" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "decal_create_2", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_163015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_finish_3"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_3"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_163016(context, evt)
+	-- 判断变量"decal_finish_3"为1
+	if ScriptLib.GetGroupVariableValue(context, "decal_finish_3") ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"decal_create_3"为0
+	if ScriptLib.GetGroupVariableValue(context, "decal_create_3") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_163016 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 163003
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_3"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_163016(context, evt)
+	-- 创建id为163003的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 163003 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "decal_create_3" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "decal_create_3", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_163016 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_all"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "total_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_163017(context, evt)
+	-- 判断变量"decal_create_all"为0
+	if ScriptLib.GetGroupVariableValue(context, "decal_create_all") ~= 0 then
+			return false
+	end
+	
+	-- 判断变量"total_progress"为3
+	if ScriptLib.GetGroupVariableValue(context, "total_progress") ~= 3 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_163017 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 163004
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 163005
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_all"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_163017(context, evt)
+	-- 创建id为163004的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 163004 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 创建id为163005的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 163005 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "decal_create_all" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "decal_create_all", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_163017 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "Decal_Show_All" == L2_2 then
-    L2_2 = A1_2.param1
-    if 2 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_163018(context, evt)
+	if "Decal_Show_All" ~= evt.source_name or 2 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_163018 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "decal_create_all"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 163005
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_163018(context, evt)
+	-- 将本组内变量名为 "decal_create_all" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "decal_create_all", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 创建id为163005的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 163005 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_163018 = L1_1

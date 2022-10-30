@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 0,
-  "descTextMapHash": 0,
+  
   "id": 13012,
   "ICLLDPJFIMA": 8010,
   "NCLEJIILEGL": 2032,
@@ -39,26 +39,17 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LEAVE_SCENE_RANGE",
-          "param": [
-            3,
-            80
-          ],
+          "param": [3, 80],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_ANY_MANUAL_TRANSPORT",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7380021,
-            2
-          ],
+          "param": [7380021, 2],
           "count": 0
         }
       ],
@@ -100,10 +91,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1301202,
-            0
-          ],
+          "param": [1301202, 0],
           "count": 0
         }
       ],
@@ -141,10 +129,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1301201",
-            "2"
-          ]
+          "param": ["1301201", "2"]
         }
       ],
       "priority": 5,
@@ -153,9 +138,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 130120201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1058
-      ],
+      "npcIdRawNum": [1058],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Cyno_13012/Q1301202",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -186,9 +169,7 @@
   "LGCLJGGNGBD": [],
   "OMKMAOLMNCO": [],
   "KPOKLMBEOBI": {
-    "1058": [
-      1190
-    ]
+    "1058": [1190]
   },
   "MGDNNNGPOGO": 0
 }

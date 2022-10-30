@@ -1,474 +1,203 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133223361
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 361009
-L2_1.monster_id = 20010501
-L3_1 = {}
-L3_1.x = -6276.324
-L3_1.y = 222.154
-L3_1.z = -2947.115
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 33
-L2_1.drop_id = 1000100
-L2_1.climate_area_id = 7
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 361010
-L3_1.monster_id = 20010501
-L4_1 = {}
-L4_1.x = -6279.47
-L4_1.y = 221.598
-L4_1.z = -2941.101
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 33
-L3_1.drop_id = 1000100
-L3_1.climate_area_id = 7
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 361011
-L4_1.monster_id = 20010501
-L5_1 = {}
-L5_1.x = -6273.184
-L5_1.y = 223.639
-L5_1.z = -2944.006
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 33
-L4_1.drop_id = 1000100
-L4_1.climate_area_id = 7
-L4_1.area_id = 18
-L5_1 = {}
-L5_1.config_id = 361012
-L5_1.monster_id = 20010601
-L6_1 = {}
-L6_1.x = -6277.951
-L6_1.y = 221.929
-L6_1.z = -2943.721
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 33
-L5_1.drop_id = 1000100
-L5_1.climate_area_id = 7
-L5_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 361001
-L2_1.gadget_id = 70220089
-L3_1 = {}
-L3_1.x = -6253.522
-L3_1.y = 232.848
-L3_1.z = -2954.664
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.isOneoff = true
-L2_1.persistent = true
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 361005
-L3_1.gadget_id = 70220091
-L4_1 = {}
-L4_1.x = -6278.052
-L4_1.y = 223.764
-L4_1.z = -2946.55
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.isOneoff = true
-L3_1.persistent = true
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 361014
-L4_1.gadget_id = 70220089
-L5_1 = {}
-L5_1.x = -6248.868
-L5_1.y = 233.291
-L5_1.z = -2948.857
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.isOneoff = true
-L4_1.persistent = true
-L4_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 361008
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 8
-L3_1 = {}
-L3_1.x = -6277.854
-L3_1.y = 222.044
-L3_1.z = -2947.316
-L2_1.pos = L3_1
-L2_1.area_id = 18
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1361003
-L2_1.name = "ANY_GADGET_DIE_361003"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_GADGET_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_GADGET_DIE_361003"
-L2_1.action = "action_EVENT_ANY_GADGET_DIE_361003"
-L3_1 = {}
-L3_1.config_id = 1361006
-L3_1.name = "ANY_GADGET_DIE_361006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_GADGET_DIE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ANY_GADGET_DIE_361006"
-L3_1.action = "action_EVENT_ANY_GADGET_DIE_361006"
-L4_1 = {}
-L4_1.config_id = 1361008
-L4_1.name = "ENTER_REGION_361008"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_361008"
-L4_1.action = "action_EVENT_ENTER_REGION_361008"
-L5_1 = {}
-L5_1.config_id = 1361015
-L5_1.name = "ANY_GADGET_DIE_361015"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ANY_GADGET_DIE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ANY_GADGET_DIE_361015"
-L5_1.action = "action_EVENT_ANY_GADGET_DIE_361015"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 361002
-L3_1.gadget_id = 70330114
-L4_1 = {}
-L4_1.x = -6251.221
-L4_1.y = 231.866
-L4_1.z = -2948.186
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 14.487
-L4_1.y = 270.855
-L4_1.z = 287.365
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 18
-L2_1[1] = L3_1
-L1_1.gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1361004
-L3_1.name = "GROUP_LOAD_361004"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GROUP_LOAD
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GROUP_LOAD_361004"
-L3_1.action = "action_EVENT_GROUP_LOAD_361004"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1361007
-L4_1.name = "ANY_GADGET_DIE_361007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ANY_GADGET_DIE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = ""
-L4_1.action = "action_EVENT_ANY_GADGET_DIE_361007"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 361001
-L5_1 = 361005
-L6_1 = 361014
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 361008
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ANY_GADGET_DIE_361003"
-L5_1 = "ANY_GADGET_DIE_361006"
-L6_1 = "ENTER_REGION_361008"
-L7_1 = "ANY_GADGET_DIE_361015"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 361009
-L6_1 = 361010
-L7_1 = 361011
-L8_1 = 361012
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 361001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133223361
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 361009, monster_id = 20010501, pos = { x = -6276.324, y = 222.154, z = -2947.115 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, drop_id = 1000100, climate_area_id = 7, area_id = 18 },
+	{ config_id = 361010, monster_id = 20010501, pos = { x = -6279.470, y = 221.598, z = -2941.101 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, drop_id = 1000100, climate_area_id = 7, area_id = 18 },
+	{ config_id = 361011, monster_id = 20010501, pos = { x = -6273.184, y = 223.639, z = -2944.006 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, drop_id = 1000100, climate_area_id = 7, area_id = 18 },
+	{ config_id = 361012, monster_id = 20010601, pos = { x = -6277.951, y = 221.929, z = -2943.721 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, drop_id = 1000100, climate_area_id = 7, area_id = 18 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 361001, gadget_id = 70220089, pos = { x = -6253.522, y = 232.848, z = -2954.664 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, isOneoff = true, persistent = true, area_id = 18 },
+	{ config_id = 361005, gadget_id = 70220091, pos = { x = -6278.052, y = 223.764, z = -2946.550 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, isOneoff = true, persistent = true, area_id = 18 },
+	{ config_id = 361014, gadget_id = 70220089, pos = { x = -6248.868, y = 233.291, z = -2948.857 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, isOneoff = true, persistent = true, area_id = 18 }
+}
+
+-- 区域
+regions = {
+	-- 伏击怪
+	{ config_id = 361008, shape = RegionShape.SPHERE, radius = 8, pos = { x = -6277.854, y = 222.044, z = -2947.316 }, area_id = 18 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1361003, name = "ANY_GADGET_DIE_361003", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_361003", action = "action_EVENT_ANY_GADGET_DIE_361003" },
+	{ config_id = 1361006, name = "ANY_GADGET_DIE_361006", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_361006", action = "action_EVENT_ANY_GADGET_DIE_361006" },
+	-- 伏击怪
+	{ config_id = 1361008, name = "ENTER_REGION_361008", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_361008", action = "action_EVENT_ENTER_REGION_361008" },
+	{ config_id = 1361015, name = "ANY_GADGET_DIE_361015", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_361015", action = "action_EVENT_ANY_GADGET_DIE_361015" }
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 361002, gadget_id = 70330114, pos = { x = -6251.221, y = 231.866, z = -2948.186 }, rot = { x = 14.487, y = 270.855, z = 287.365 }, level = 1, area_id = 18 }
+	},
+	triggers = {
+		{ config_id = 1361004, name = "GROUP_LOAD_361004", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_361004", action = "action_EVENT_GROUP_LOAD_361004", trigger_count = 0 },
+		{ config_id = 1361007, name = "ANY_GADGET_DIE_361007", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "", action = "action_EVENT_ANY_GADGET_DIE_361007" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 361001, 361005, 361014 },
+		regions = { 361008 },
+		triggers = { "ANY_GADGET_DIE_361003", "ANY_GADGET_DIE_361006", "ENTER_REGION_361008", "ANY_GADGET_DIE_361015" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = 无掉落,
+		monsters = { 361009, 361010, 361011, 361012 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_361003(context, evt)
+	if 361001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_GADGET_DIE_361003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "EnergyBall_Succ_Count"
-  L5_2 = 1
-  L6_2 = 133223001
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "group_1_progress"
-  L5_2 = 1
-  L6_2 = 133223500
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_361003(context, evt)
+	-- 针对当前group内变量名为 "EnergyBall_Succ_Count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "EnergyBall_Succ_Count", 1, 133223001) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "group_1_progress" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "group_1_progress", 1, 133223500) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_361003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 361005 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_361006(context, evt)
+	if 361005 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_GADGET_DIE_361006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "EnergyBall_Succ_Count"
-  L5_2 = 1
-  L6_2 = 133223001
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "group_1_progress"
-  L5_2 = 1
-  L6_2 = 133223500
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_361006(context, evt)
+	-- 针对当前group内变量名为 "EnergyBall_Succ_Count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "EnergyBall_Succ_Count", 1, 133223001) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "group_1_progress" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "group_1_progress", 1, 133223500) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_361006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 361008 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_361008(context, evt)
+	if evt.param1 ~= 361008 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_361008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133223361
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_361008(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133223361, 2)
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_361008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 361014 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_361015(context, evt)
+	if 361014 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_GADGET_DIE_361015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "EnergyBall_Succ_Count"
-  L5_2 = 1
-  L6_2 = 133223001
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "group_1_progress"
-  L5_2 = 1
-  L6_2 = 133223500
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_361015(context, evt)
+	-- 针对当前group内变量名为 "EnergyBall_Succ_Count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "EnergyBall_Succ_Count", 1, 133223001) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "group_1_progress" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "group_1_progress", 1, 133223500) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_361015 = L1_1

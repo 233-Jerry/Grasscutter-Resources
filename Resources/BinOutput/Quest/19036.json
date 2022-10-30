@@ -12,10 +12,7 @@
   "_luaPath": "Actor/Quest/LQ19036",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    19039,
-    19056
-  ],
+  "PEOHODAKLNO": [19039, 19056],
   "FEHAEKNGFBP": true,
   "rewardIdList": [],
   "showType": "QUEST_SHOW",
@@ -42,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1903614,
-            0
-          ],
+          "param": [1903614, 0],
           "count": 0
         }
       ],
@@ -53,9 +47,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "3041"
-        ],
+        "param": ["3041"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -89,26 +81,17 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            1903604,
-            3
-          ],
+          "param": [1903604, 3],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         },
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -116,10 +99,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q1903605_N511",
-          "30"
-        ],
+        "param": ["Q1903605_N511", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -153,18 +133,12 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         },
         {
           "_type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            1903604,
-            3
-          ],
+          "param": [1903604, 3],
           "count": 0
         }
       ],
@@ -172,10 +146,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q1903605_N511",
-          "30"
-        ],
+        "param": ["Q1903605_N511", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -209,10 +180,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -254,34 +222,22 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105901,
-            190360601
-          ],
+          "param": [105901, 190360601],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105901,
-            190360602
-          ],
+          "param": [105901, 190360602],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105901,
-            190360603
-          ],
+          "param": [105901, 190360603],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105901,
-            190360604
-          ],
+          "param": [105901, 190360604],
           "count": 0
         }
       ],
@@ -289,9 +245,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "511"
-        ],
+        "param": ["511"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -308,10 +262,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133211023",
-            "0"
-          ]
+          "param": ["133211023", "0"]
         }
       ],
       "failExec": [],
@@ -333,10 +284,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1903617,
-            0
-          ],
+          "param": [1903617, 0],
           "count": 0
         }
       ],
@@ -344,9 +292,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "3142"
-        ],
+        "param": ["3142"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -380,10 +326,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105901,
-            190360501
-          ],
+          "param": [105901, 190360501],
           "count": 0
         }
       ],
@@ -391,9 +334,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "511"
-        ],
+        "param": ["511"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -410,10 +351,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133211022",
-            "0"
-          ]
+          "param": ["133211022", "0"]
         }
       ],
       "failExec": [],
@@ -431,10 +369,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903601",
-            "2"
-          ]
+          "param": ["1903601", "2"]
         }
       ],
       "priority": 5,
@@ -443,10 +378,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 190361401,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3042,
-        3041
-      ],
+      "npcIdRawNum": [3042, 3041],
       "GHNCIOJDIEA": "QuestDialogue/COOP/Coop105901SimpleTalk/Q1903614",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -482,10 +414,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903606",
-            "2"
-          ]
+          "param": ["1903606", "2"]
         }
       ],
       "priority": 5,
@@ -494,9 +423,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 190361501,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3042
-      ],
+      "npcIdRawNum": [3042],
       "GHNCIOJDIEA": "QuestDialogue/COOP/Coop105901SimpleTalk/Q1903615",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -532,10 +459,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903606",
-            "2"
-          ]
+          "param": ["1903606", "2"]
         }
       ],
       "priority": 5,
@@ -544,9 +468,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 190361601,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3041
-      ],
+      "npcIdRawNum": [3041],
       "GHNCIOJDIEA": "QuestDialogue/COOP/Coop105901SimpleTalk/Q1903616",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -582,10 +504,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903606",
-            "2"
-          ]
+          "param": ["1903606", "2"]
         }
       ],
       "priority": 5,
@@ -594,9 +513,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 190361701,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3142
-      ],
+      "npcIdRawNum": [3142],
       "GHNCIOJDIEA": "QuestDialogue/COOP/Coop105901SimpleTalk/Q1903617",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -632,24 +549,15 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903602",
-            "2"
-          ]
+          "param": ["1903602", "2"]
         },
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903603",
-            "2"
-          ]
+          "param": ["1903603", "2"]
         },
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903604",
-            "2"
-          ]
+          "param": ["1903604", "2"]
         }
       ],
       "priority": 5,
@@ -658,9 +566,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 190361801,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3142
-      ],
+      "npcIdRawNum": [3142],
       "GHNCIOJDIEA": "QuestDialogue/COOP/Coop105901SimpleTalk/Q1903618",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -696,38 +602,23 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903602",
-            "2"
-          ]
+          "param": ["1903602", "2"]
         },
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903603",
-            "2"
-          ]
+          "param": ["1903603", "2"]
         },
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903604",
-            "2"
-          ]
+          "param": ["1903604", "2"]
         },
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903605",
-            "2"
-          ]
+          "param": ["1903605", "2"]
         },
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1903607",
-            "2"
-          ]
+          "param": ["1903607", "2"]
         }
       ],
       "priority": 5,
@@ -736,9 +627,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 190361901,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3041
-      ],
+      "npcIdRawNum": [3041],
       "GHNCIOJDIEA": "QuestDialogue/COOP/Coop105901SimpleTalk/Q1903619",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -766,21 +655,11 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    403651126661,
-    434392444219
-  ],
-  "OMKMAOLMNCO": [
-    534918097625
-  ],
+  "LGCLJGGNGBD": [403651126661, 434392444219],
+  "OMKMAOLMNCO": [534918097625],
   "KPOKLMBEOBI": {
-    "3041": [
-      1120,
-      1190
-    ],
-    "3042": [
-      1050
-    ]
+    "3041": [1120, 1190],
+    "3042": [1050]
   },
   "MGDNNNGPOGO": 0
 }

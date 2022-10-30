@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 1767644623,
-  "descTextMapHash": 0,
+  
   "id": 10001,
   "ICLLDPJFIMA": 2005,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            45406,
-            3
-          ],
+          "param": [45406, 3],
           "count": 0
         }
       ],
@@ -67,10 +64,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133004058,2"
-          ]
+          "param": ["3", "133004058,2"]
         }
       ],
       "failExec": [],

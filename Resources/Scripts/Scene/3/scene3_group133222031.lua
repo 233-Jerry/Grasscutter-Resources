@@ -1,108 +1,74 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133222031
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 31001
-L2_1.gadget_id = 70500000
-L3_1 = {}
-L3_1.x = -4360.221
-L3_1.y = 296.322
-L3_1.z = -4230.145
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 29.92
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 30
-L2_1.point_type = 4005
-L2_1.isOneoff = true
-L2_1.persistent = true
-L3_1 = {}
-L3_1.name = "gather"
-L3_1.exp = 3
-L2_1.explore = L3_1
-L2_1.area_id = 14
-L3_1 = {}
-L3_1.config_id = 31002
-L3_1.gadget_id = 70500000
-L4_1 = {}
-L4_1.x = -4311.222
-L4_1.y = 244.586
-L4_1.z = -4161.875
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 97.633
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.point_type = 4005
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.name = "gather"
-L4_1.exp = 3
-L3_1.explore = L4_1
-L3_1.area_id = 14
-L4_1 = {}
-L4_1.config_id = 31003
-L4_1.gadget_id = 70500000
-L5_1 = {}
-L5_1.x = -4350.837
-L5_1.y = 207.285
-L5_1.z = -4265.583
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 97.633
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.point_type = 4005
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.name = "gather"
-L5_1.exp = 3
-L4_1.explore = L5_1
-L4_1.area_id = 14
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 31001
-L5_1 = 31002
-L6_1 = 31003
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133222031
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 31001, gadget_id = 70500000, pos = { x = -4360.221, y = 296.322, z = -4230.145 }, rot = { x = 0.000, y = 29.920, z = 0.000 }, level = 30, point_type = 4005, isOneoff = true, persistent = true, explore = { name = "gather", exp = 3 }, area_id = 14 },
+	{ config_id = 31002, gadget_id = 70500000, pos = { x = -4311.222, y = 244.586, z = -4161.875 }, rot = { x = 0.000, y = 97.633, z = 0.000 }, level = 30, point_type = 4005, isOneoff = true, persistent = true, explore = { name = "gather", exp = 3 }, area_id = 14 },
+	{ config_id = 31003, gadget_id = 70500000, pos = { x = -4350.837, y = 207.285, z = -4265.583 }, rot = { x = 0.000, y = 97.633, z = 0.000 }, level = 30, point_type = 4005, isOneoff = true, persistent = true, explore = { name = "gather", exp = 3 }, area_id = 14 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 31001, 31002, 31003 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

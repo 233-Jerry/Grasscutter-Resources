@@ -1,31 +1,6 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1
-L0_1 = {}
-L1_1 = {}
-L1_1.id = 241016004
-L1_1.refresh_id = 1002
-L2_1 = {}
-L2_1.x = 5.781
-L2_1.y = -0.059
-L2_1.z = 3.767
-L1_1.pos = L2_1
-L1_1.is_ignore_world_level_revise = true
-L2_1 = {}
-L2_1.id = 241016005
-L2_1.refresh_id = 1
-L3_1 = {}
-L3_1.x = 0.206
-L3_1.y = 0.018
-L3_1.z = -9.25
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.id = 241016006
-L3_1.refresh_id = 1
-L4_1 = {}
-L4_1.x = 1.483
-L4_1.y = 0.018
-L4_1.z = 8.701
-L3_1.pos = L4_1
-L0_1[1] = L1_1
-L0_1[2] = L2_1
-L0_1[3] = L3_1
-groups = L0_1
+-- 所有的group
+groups = {
+	{ id = 241016004, refresh_id = 1002, pos = { x = 5.781, y = -0.059, z = 3.767 }, is_ignore_world_level_revise = true },
+	{ id = 241016005, refresh_id = 1, pos = { x = 0.206, y = 0.018, z = -9.250 } },
+	{ id = 241016006, refresh_id = 1, pos = { x = 1.483, y = 0.018, z = 8.701 } }
+}

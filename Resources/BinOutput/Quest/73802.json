@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    173802
-  ],
+  "rewardIdList": [173802],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7380201,
-            0
-          ],
+          "param": [7380201, 0],
           "count": 0
         }
       ],
@@ -52,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "4019"
-        ],
+        "param": ["4019"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_START",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -71,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_CLEAR_TIME_VAR",
-          "param": [
-            "3013",
-            "0"
-          ]
+          "param": ["3013", "0"]
         }
       ],
       "failExec": [],
@@ -92,10 +82,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7380201",
-            "2"
-          ]
+          "param": ["7380201", "2"]
         }
       ],
       "priority": 5,
@@ -104,10 +91,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 738020101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        4019,
-        1005
-      ],
+      "npcIdRawNum": [4019, 1005],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Sumeru_73802/Q7380201",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

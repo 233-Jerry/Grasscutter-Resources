@@ -1,171 +1,106 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133222300
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 300001
-L2_1.gadget_id = 70290086
-L3_1 = {}
-L3_1.x = -4494.523
-L3_1.y = 364.004
-L3_1.z = -4247.602
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 299.43
-L3_1.y = 347.537
-L3_1.z = 304.557
-L2_1.rot = L3_1
-L2_1.level = 30
-L2_1.area_id = 14
-L3_1 = {}
-L3_1.config_id = 300002
-L3_1.gadget_id = 70330064
-L4_1 = {}
-L4_1.x = -4489.836
-L4_1.y = 366.648
-L4_1.z = -4250.27
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 358.071
-L4_1.y = 0.161
-L4_1.z = 350.441
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.interact_id = 35
-L3_1.area_id = 14
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 300005
-L3_1.gadget_id = 70900380
-L4_1 = {}
-L4_1.x = -4483.578
-L4_1.y = 371.952
-L4_1.z = -4253.187
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.area_id = 14
-L4_1 = {}
-L4_1.config_id = 300006
-L4_1.gadget_id = 70900380
-L5_1 = {}
-L5_1.x = -4472.901
-L5_1.y = 379.999
-L5_1.z = -4256.885
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.area_id = 14
-L5_1 = {}
-L5_1.config_id = 300007
-L5_1.gadget_id = 70900380
-L6_1 = {}
-L6_1.x = -4463.214
-L6_1.y = 388.431
-L6_1.z = -4259.131
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.area_id = 14
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L1_1.gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1300003
-L3_1.name = "GADGET_STATE_CHANGE_300003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_300003"
-L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_300003"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1300004
-L4_1.name = "GADGET_STATE_CHANGE_300004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_300004"
-L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_300004"
-L4_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 2
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 300001
-L6_1 = 300002
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-L1_1 = require
-L2_1 = "V2_0/ElectricCore"
-L1_1(L2_1)
+-- 基础信息
+local base_info = {
+	group_id = 133222300
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 300001, gadget_id = 70290086, pos = { x = -4494.523, y = 364.004, z = -4247.602 }, rot = { x = 299.430, y = 347.537, z = 304.557 }, level = 30, area_id = 14 },
+	{ config_id = 300002, gadget_id = 70330064, pos = { x = -4489.836, y = 366.648, z = -4250.270 }, rot = { x = 358.071, y = 0.161, z = 350.441 }, level = 30, interact_id = 35, area_id = 14 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 300005, gadget_id = 70900380, pos = { x = -4483.578, y = 371.952, z = -4253.187 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 14 },
+		{ config_id = 300006, gadget_id = 70900380, pos = { x = -4472.901, y = 379.999, z = -4256.885 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 14 },
+		{ config_id = 300007, gadget_id = 70900380, pos = { x = -4463.214, y = 388.431, z = -4259.131 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 14 }
+	},
+	triggers = {
+		{ config_id = 1300003, name = "GADGET_STATE_CHANGE_300003", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_300003", action = "action_EVENT_GADGET_STATE_CHANGE_300003", trigger_count = 0 },
+		{ config_id = 1300004, name = "GADGET_STATE_CHANGE_300004", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_300004", action = "action_EVENT_GADGET_STATE_CHANGE_300004", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 300001, 300002 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_0/ElectricCore"

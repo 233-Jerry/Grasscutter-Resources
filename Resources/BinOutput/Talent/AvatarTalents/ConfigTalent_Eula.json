@@ -1,4 +1,61 @@
 {
+  ///使用方法注释：
+  ///		1、调整能力
+  ///		{
+  ///			"$type" : "ModifyAbility",               不一定是talent拥有角色的ability，可以调整gadget的ability里的参数，可以调整别人abiltiy里的参数。
+  ///			"abilityName" : "Avatar_Beidou_Captain",
+  ///			"paramSpecial" : "CriticalHurt_Up",      需要修改的参数名字，只能填1个。所以多个的话需要多个ModifierAbiltiy
+  ///			"paramDelta" : 0.01,                     加上指定数值
+  ///			"paramRatio" : 0,                        提升指定比例
+  ///		}
+  ///		ConfigAbilityCommon.cs中有AbilityProperty，可以修改param来调整角色全局的攻击，攻速，攻击，血量，防御，抵抗等等。
+  ///		2、添加能力
+  ///		{
+  ///			"$type" : "AddAbility",
+  ///			"abilityName": "Avatar_Beidou_Captain", 仅有一个参数，abiltiyName
+  ///		}
+  ///		3、替换攻击
+  ///		{
+  ///			"$type": "ReplaceEventPatternMixin",
+  ///  		"oldPatterns": ["Monster_Slime_Fire_02_NormalAttack"],
+  ///			"newPatterns": ["Monster_Slime_Fire_02_NormalAttack_Fire"],
+  ///		}
+  ///		4、解锁参数
+  ///		{
+  ///			"$type" : "UnlockTalentParam",
+  ///			"abilityName" : "Avatar_Beidou_IceShield_ImpactTriggerBack_L",
+  ///			"talentParam" : "Beidou_TriggerBack",
+  ///		}
+  ///		5、解锁controller内容
+  ///		{
+  ///			"$type" : "UnlockControllerConditions",
+  ///			"conditionName" : "XXXX",
+  ///		}
+  ///		会解锁controller中的一个bool参数。变成true。
+  ///		6、调整技能cd
+  ///		public partial class ModifySkillCD : ConfigTalentMixin
+  ///	{
+  ///		public uint skillID; // skillID
+  ///		public float cdDelta; // cdDelta
+  ///		public float cdRatio; // cdRatio
+  ///
+  ///		7、调整技能消耗
+  ///		public partial class ModifySkillCost : ConfigTalentMixin
+  ///	{
+  ///		public uint skillID; // skillID
+  ///		public float costDelta; // costDelta
+  ///		public float costRatio; // costRatio
+  ///
+  ///		8、调整技能充能次数
+  ///			public partial class ModifySkillPoint : ConfigTalentMixin
+  ///	{
+  ///		public uint skillID; // skillID
+  ///		public int pointDelta; // pointDelta
+  ///
+  ///		需要修改MetaConfig，将对应的talent加入这个表。
+  ///
+
+  //消耗审判印记后，可以使优菈造成的物理伤害提升0.3%，每消耗一层印记，使这个效果的持续时间延长6秒，最多延长至18秒。
   "Eula_Constellation_1": [
     {
       "$type": "UnlockTalentParam",
@@ -29,7 +86,7 @@
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Eula_ElementalArt_Burst",
       "paramSpecial": "SkillStart_Ratio",
-      "paramDelta": -1.5
+      "paramDelta": -1.5 //4
     }
   ],
   "Eula_Constellation_3": [
@@ -105,6 +162,7 @@
       "talentParam": "Eula_PermanentSkill_2"
     }
   ],
+
   "Eula_SkillUpgrade_1": [
     {
       "$type": "ModifyAbility",
@@ -204,6 +262,7 @@
       "paramSpecial": "ElementalArt_Extra_Damage",
       "paramDelta": "%3"
     },
+
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Eula_ElementalArt",

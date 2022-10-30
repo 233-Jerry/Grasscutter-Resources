@@ -12,9 +12,7 @@
   "_luaPath": "Actor/Quest/EQ40053",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    72106
-  ],
+  "PEOHODAKLNO": [72106],
   "FEHAEKNGFBP": false,
   "rewardIdList": [],
   "showType": "QUEST_SHOW",
@@ -41,26 +39,17 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7210601,
-            0
-          ],
+          "param": [7210601, 0],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7210602,
-            0
-          ],
+          "param": [7210602, 0],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7210604,
-            0
-          ],
+          "param": [7210604, 0],
           "count": 0
         }
       ],
@@ -68,9 +57,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005301_gu_ide"
-        ],
+        "param": ["Q4005301_gu_ide"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"

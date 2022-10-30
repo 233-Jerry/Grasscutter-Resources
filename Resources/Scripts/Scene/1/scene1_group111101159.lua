@@ -1,166 +1,113 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 111101159
-L1_1 = {}
-L1_1.loop_mode = 0
-L1_1.group_ID = 111101159
-L1_1.gadget_1 = 159001
-L1_1.gadget_2 = 159002
-L1_1.gadget_3 = 159003
-L1_1.gadget_4 = 0
-L1_1.gadget_5 = 0
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 159001
-L3_1.gadget_id = 70330073
-L4_1 = {}
-L4_1.x = 2891.015
-L4_1.y = 269.875
-L4_1.z = -1301.554
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 280.16
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = GadgetState
-L4_1 = L4_1.Action01
-L3_1.state = L4_1
-L2_1[159001] = L3_1
-L3_1 = {}
-L3_1.config_id = 159002
-L3_1.gadget_id = 70330074
-L4_1 = {}
-L4_1.x = 2890.427
-L4_1.y = 269.874
-L4_1.z = -1296.692
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 235.959
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = GadgetState
-L4_1 = L4_1.Action02
-L3_1.state = L4_1
-L2_1[159002] = L3_1
-L3_1 = {}
-L3_1.config_id = 159003
-L3_1.gadget_id = 70330075
-L4_1 = {}
-L4_1.x = 2886.517
-L4_1.y = 269.871
-L4_1.z = -1293.414
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 208.061
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = GadgetState
-L4_1 = L4_1.Action03
-L3_1.state = L4_1
-L2_1[159003] = L3_1
-L3_1 = {}
-L3_1.config_id = 159006
-L3_1.gadget_id = 70211111
-L4_1 = {}
-L4_1.x = 2882.721
-L4_1.y = 269.958
-L4_1.z = -1298.804
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 26
-L3_1.drop_tag = "\232\167\163\232\176\156\228\184\173\231\186\167\232\146\153\229\190\183"
-L3_1.isOneoff = true
-L3_1.persistent = true
-L2_1[159006] = L3_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1159007
-L3_1.name = "VARIABLE_CHANGE_159007"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_159007"
-L3_1.action = ""
-L2_1[1] = L3_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 159001
-L6_1 = 159002
-L7_1 = 159003
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 159006
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "successed"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 111101159
+}
+
+-- Trigger变量
+local defs = {
+	loop_mode = 0,
+	group_ID = 111101159,
+	gadget_1 = 159001,
+	gadget_2 = 159002,
+	gadget_3 = 159003,
+	gadget_4 = 0,
+	gadget_5 = 0
+}
+
+-- DEFS_MISCS
+
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	[159001] = { config_id = 159001, gadget_id = 70330073, pos = { x = 2891.015, y = 269.875, z = -1301.554 }, rot = { x = 0.000, y = 280.160, z = 0.000 }, level = 1, state = GadgetState.Action01 },
+	[159002] = { config_id = 159002, gadget_id = 70330074, pos = { x = 2890.427, y = 269.874, z = -1296.692 }, rot = { x = 0.000, y = 235.959, z = 0.000 }, level = 1, state = GadgetState.Action02 },
+	[159003] = { config_id = 159003, gadget_id = 70330075, pos = { x = 2886.517, y = 269.871, z = -1293.414 }, rot = { x = 0.000, y = 208.061, z = 0.000 }, level = 1, state = GadgetState.Action03 },
+	[159006] = { config_id = 159006, gadget_id = 70211111, pos = { x = 2882.721, y = 269.958, z = -1298.804 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, drop_tag = "解谜中级蒙德", isOneoff = true, persistent = true }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1159007, name = "VARIABLE_CHANGE_159007", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_159007", action = "" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 159001, 159002, 159003 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 159006 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_159007(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"successed"为1
+	if ScriptLib.GetGroupVariableValue(context, "successed") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_159007 = L2_1
-L2_1 = require
-L3_1 = "BlackBoxPlay/LightResonanceStone"
-L2_1(L3_1)
+
+require "BlackBoxPlay/LightResonanceStone"

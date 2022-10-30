@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7003501,
-            0
-          ],
+          "param": [7003501, 0],
           "count": 0
         }
       ],
@@ -50,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "30072"
-        ],
+        "param": ["30072"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -82,10 +77,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7003501",
-            "2"
-          ]
+          "param": ["7003501", "2"]
         }
       ],
       "priority": 5,
@@ -94,9 +86,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 700350101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30072
-      ],
+      "npcIdRawNum": [30072],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Inazuma_70035/Q7003501",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

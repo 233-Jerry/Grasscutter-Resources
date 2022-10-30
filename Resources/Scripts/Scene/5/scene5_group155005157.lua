@@ -1,164 +1,99 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 155005157
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 157001
-L3_1.monster_id = 20011501
-L4_1 = {}
-L4_1.x = 655.6
-L4_1.y = 196.624
-L4_1.z = 319.571
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.drop_tag = "\229\164\167\229\143\178\232\142\177\229\167\134"
-L3_1.area_id = 200
-L4_1 = {}
-L4_1.config_id = 157002
-L4_1.monster_id = 20011401
-L5_1 = {}
-L5_1.x = 657.362
-L5_1.y = 197.27
-L5_1.z = 317.25
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L4_1.area_id = 200
-L5_1 = {}
-L5_1.config_id = 157003
-L5_1.monster_id = 20011401
-L6_1 = {}
-L6_1.x = 653.769
-L6_1.y = 195.921
-L6_1.z = 316.615
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 36
-L5_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L5_1.area_id = 200
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L1_1.monsters = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 157004
-L3_1.gadget_id = 70211102
-L4_1 = {}
-L4_1.x = 655.718
-L4_1.y = 196.652
-L4_1.z = 316.198
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 16
-L3_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\231\168\187\229\166\187"
-L4_1 = GadgetState
-L4_1 = L4_1.ChestTrap
-L3_1.state = L4_1
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.name = "chest"
-L4_1.exp = 1
-L3_1.explore = L4_1
-L3_1.area_id = 200
-L2_1[1] = L3_1
-L1_1.gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 157005
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 5
-L4_1 = {}
-L4_1.x = 655.492
-L4_1.y = 196.614
-L4_1.z = 317.834
-L3_1.pos = L4_1
-L3_1.area_id = 200
-L2_1[1] = L3_1
-L1_1.regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1157005
-L3_1.name = "ENTER_REGION_157005"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_157005"
-L3_1.action = "action_EVENT_ENTER_REGION_157005"
-L4_1 = {}
-L4_1.config_id = 1157006
-L4_1.name = "ANY_MONSTER_DIE_157006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ANY_MONSTER_DIE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ANY_MONSTER_DIE_157006"
-L4_1.action = "action_EVENT_ANY_MONSTER_DIE_157006"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 155005157
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	monsters = {
+		{ config_id = 157001, monster_id = 20011501, pos = { x = 655.600, y = 196.624, z = 319.571 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, drop_tag = "大史莱姆", area_id = 200 },
+		{ config_id = 157002, monster_id = 20011401, pos = { x = 657.362, y = 197.270, z = 317.250 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, drop_tag = "史莱姆", area_id = 200 },
+		{ config_id = 157003, monster_id = 20011401, pos = { x = 653.769, y = 195.921, z = 316.615 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, drop_tag = "史莱姆", area_id = 200 }
+	},
+	gadgets = {
+		{ config_id = 157004, gadget_id = 70211102, pos = { x = 655.718, y = 196.652, z = 316.198 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 16, drop_tag = "解谜低级稻妻", state = GadgetState.ChestTrap, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 200 }
+	},
+	regions = {
+		{ config_id = 157005, shape = RegionShape.SPHERE, radius = 5, pos = { x = 655.492, y = 196.614, z = 317.834 }, area_id = 200 }
+	},
+	triggers = {
+		{ config_id = 1157005, name = "ENTER_REGION_157005", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_157005", action = "action_EVENT_ENTER_REGION_157005" },
+		{ config_id = 1157006, name = "ANY_MONSTER_DIE_157006", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_157006", action = "action_EVENT_ANY_MONSTER_DIE_157006" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

@@ -1,1560 +1,1695 @@
 [
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Staff_Rock_ForceImprove_Pose",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToPoseIDMixin",
-                    "poseIDs": [
-                        101
-                    ],
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Staff_Rock_TickHP"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "Monster_Skirmisher_Staff_Rock_TickHP": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "Predicated",
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetHPRatio",
-                                    "GMFCOCAJBDM": "LesserOrEqual",
-                                    "BCJJBMJKHED": 0.5
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_STAFF_ROCK_IMPROVENUM",
-                                    "value": 0.0
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "SetPoseBool",
-                                    "HHFIHBEAPAP": "ForceImprove",
-                                    "value": true
-                                }
-                            ],
-                            "BMIOBLGLPIM": [
-                                {
-                                    "$type": "SetPoseBool",
-                                    "HHFIHBEAPAP": "ForceImprove"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AddGlobalValue",
-                    "value": 0.0,
-                    "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_STAFF_ROCK_IMPROVENUM",
-                    "EODOIECEPEF": true,
-                    "JDHHMBHOOEC": 10.0,
-                    "KHAHOELDONA": 0.0
-                }
-            ]
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Change Pose
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Staff_Rock_ForceImprove_Pose",
+      "abilityMixins": [
+        {
+          "$type": "AttachToPoseIDMixin",
+          "poseIDs": [101],
+          "modifierName": "Monster_Skirmisher_Staff_Rock_TickHP"
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_EyeEffect",
-            "HNEIEGHMLKH": {
-                "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_NormalEffect": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_EyeNormal",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "EyeEffect"
-                            }
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_NormalEffect"
-                }
-            ],
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_NormalEffect"
-                }
-            ]
+      ],
+      "onAdded": [
+        {
+          "$type": "AddGlobalValue",
+          "key": "_MONSTER_SKIRMISHER_STAFF_ROCK_IMPROVENUM",
+          "value": 0,
+          "useLimitRange": true,
+          "maxValue": 10
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponOriginal",
-            "HNEIEGHMLKH": {
-                "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectOriginal": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_WeaponLoop",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "Head"
-                            }
-                        }
-                    ],
-                    "OGFFGLGEOGF": [
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectOriginal"
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
+      ],
+      "modifiers": {
+        "Monster_Skirmisher_Staff_Rock_TickHP": {
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
                 {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectOriginal"
-                }
-            ],
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectOriginal"
+                  "$type": "ByTargetHPRatio",
+                  "HPRatio": 0.5,
+                  "logic": "LesserOrEqual"
                 },
                 {
-                    "$type": "RemoveUniqueModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectPower"
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_SKIRMISHER_STAFF_ROCK_IMPROVENUM",
+                  "value": 0,
+                  "compareType": "Equal"
                 }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponPower",
-            "HNEIEGHMLKH": {
-                "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectPower": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_WeaponPowerUp",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "Head"
-                            }
-                        }
-                    ],
-                    "OGFFGLGEOGF": [
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectPower"
-                        }
-                    ]
-                }
-            },
-            "HKBHLMNEMKM": [
+              ],
+              "successActions": [
                 {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectPower"
-                },
-                {
-                    "$type": "RemoveUniqueModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectOriginal"
+                  "$type": "SetPoseBool",
+                  "boolID": "ForceImprove",
+                  "value": true
                 }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_Hide",
-            "CHBMMFLIIGH": [
+              ],
+              "failActions": [
                 {
-                    "$type": "AttachToNormalizedTimeMixin",
-                    "EFAJCDMGOHL": "BlinkBS",
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Male_Standard_Staff_Rock_HideSelf",
-                    "AAIFCLGLOMO": 0.9700000286102295
-                },
-                {
-                    "$type": "AttachToNormalizedTimeMixin",
-                    "EFAJCDMGOHL": "Standby",
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Male_Standard_Staff_Rock_ShowSelfForSure",
-                    "AAIFCLGLOMO": 0.009999999776482582
+                  "$type": "SetPoseBool",
+                  "boolID": "ForceImprove",
+                  "value": false
                 }
-            ],
-            "HNEIEGHMLKH": {
-                "Monster_Skirmisher_Male_Standard_Staff_Rock_ShowSelf": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.5,
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "HideUIBillBoard",
-                            "CFIPAGENGPE": true
-                        },
-                        {
-                            "$type": "TriggerSetVisible",
-                            "CFIPAGENGPE": true,
-                            "ACDFJMCPFGH": true
-                        },
-                        {
-                            "$type": "EnablePushColliderName",
-                            "CFIPAGENGPE": true,
-                            "LEHFIPJFKBC": [
-                                "PushCollider"
-                            ],
-                            "PAHBCOACBAI": true
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Male_Standard_Staff_Rock_ShowSelfForSure": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "HideUIBillBoard",
-                            "CFIPAGENGPE": true
-                        },
-                        {
-                            "$type": "TriggerSetVisible",
-                            "CFIPAGENGPE": true,
-                            "ACDFJMCPFGH": true
-                        },
-                        {
-                            "$type": "EnablePushColliderName",
-                            "CFIPAGENGPE": true,
-                            "LEHFIPJFKBC": [
-                                "PushCollider"
-                            ],
-                            "PAHBCOACBAI": true
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Male_Standard_Staff_Rock_HideSelf_Timer": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.5,
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetAnimatorTrigger",
-                            "CFIPAGENGPE": true,
-                            "triggerID": "BlinkOver"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Male_Standard_Staff_Rock_ShowSelf"
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Male_Standard_Staff_Rock_HideSelf": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Male_Standard_Staff_Rock_HideSelf_Timer"
-                        },
-                        {
-                            "$type": "HideUIBillBoard",
-                            "COCENMAFJGD": true
-                        },
-                        {
-                            "$type": "TriggerSetVisible"
-                        },
-                        {
-                            "$type": "EnablePushColliderName",
-                            "LEHFIPJFKBC": [
-                                "PushCollider"
-                            ]
-                        }
-                    ]
-                }
+              ]
             }
+          ]
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_ReturnToBorn",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToPoseIDMixin",
-                    "poseIDs": [
-                        901,
-                        902,
-                        903
-                    ],
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_ReturnToBorn_Invincible"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "Monster_Skirmisher_Standard_Staff_Rock_ReturnToBorn_Invincible": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "state": "Invincible",
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_ReturnToBorn_RemoveImproveDelay"
-                        },
-                        {
-                            "$type": "ReTriggerAISkillInitialCD",
-                            "FJNGOGJOBEE": [
-                                401,
-                                403
-                            ]
-                        },
-                        {
-                            "$type": "SetAISkillCDAvailableNow",
-                            "FJNGOGJOBEE": [
-                                401,
-                                403
-                            ]
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Standard_Staff_Rock_ReturnToBorn_RemoveImproveDelay": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Element"
-                        },
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": -11.0,
-                            "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_STAFF_ROCK_IMPROVENUM",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 10.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                }
-            }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_Improve",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToNormalizedTimeMixin",
-                    "EFAJCDMGOHL": "Improve",
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Staff_Rock_ChangePose",
-                    "AAIFCLGLOMO": 0.4000000059604645
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "Monster_Skirmisher_Staff_Rock_ChangePose": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetAnimatorBool",
-                            "HHFIHBEAPAP": "InWeak"
-                        },
-                        {
-                            "$type": "SetPoseBool",
-                            "HHFIHBEAPAP": "ImprovedState",
-                            "value": true
-                        },
-                        {
-                            "$type": "SetPoseBool",
-                            "HHFIHBEAPAP": "WeakState"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Element"
-                        }
-                    ]
-                },
-                "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_Improve": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_EyeToImprove",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "EyeEffect"
-                            }
-                        },
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_EyeImprove",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "EyeEffect"
-                            }
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_EyeToNormal",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "EyeEffect"
-                            }
-                        }
-                    ]
-                },
-                "UNIQUE_Monster_Skirmisher_Staff_Rock_Element": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementType": "Rock",
-                    "elementDurability": 200.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "FFOHEEFOELN": {
-                        "Actor_EndureDelta": 0.0,
-                        "Entity_WeightRatio": 5.0,
-                        "Actor_PhysicalSubHurtDelta": 1.0,
-                        "Actor_FireSubHurtDelta": 1.0,
-                        "Actor_ElecSubHurtDelta": 1.0,
-                        "Actor_WaterSubHurtDelta": 1.0,
-                        "Actor_GrassSubHurtDelta": 1.0,
-                        "Actor_WindSubHurtDelta": 1.0,
-                        "Actor_IceSubHurtDelta": 1.0,
-                        "Actor_RockSubHurtDelta": 1.0
-                    },
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetPoseBool",
-                            "HHFIHBEAPAP": "ForceImprove"
-                        },
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_STAFF_ROCK_IMPROVENUM",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 10.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "TriggerAbility",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByChildren",
-                                "APIAFGPIIHE": 50004045
-                            },
-                            "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponPower"
-                        },
-                        {
-                            "$type": "SetAnimatorBool",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByChildren",
-                                "APIAFGPIIHE": 50004045
-                            },
-                            "HHFIHBEAPAP": "PowerUp",
-                            "value": true
-                        },
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_NormalEffect"
-                        },
-                        {
-                            "$type": "AttachModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_Improve"
-                        },
-                        {
-                            "$type": "SetPoseBool",
-                            "HHFIHBEAPAP": "WeakState"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetPoseBool",
-                            "HHFIHBEAPAP": "ImprovedState"
-                        },
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Shield_Loop"
-                        },
-                        {
-                            "$type": "TriggerAbility",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByChildren",
-                                "APIAFGPIIHE": 50004045
-                            },
-                            "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponOriginal"
-                        },
-                        {
-                            "$type": "SetAnimatorBool",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByChildren",
-                                "APIAFGPIIHE": 50004045
-                            },
-                            "HHFIHBEAPAP": "PowerUp"
-                        },
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_Improve"
-                        },
-                        {
-                            "$type": "TriggerAbility",
-                            "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_EyeEffect"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "predicates": [
-                                {
-                                    "$type": "ByAnimatorFloat",
-                                    "GMFCOCAJBDM": "Equal",
-                                    "value": 201.0,
-                                    "MOCGJNIDDAI": "PoseID"
-                                }
-                            ],
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Staff_Rock_EnterWeak"
-                        }
-                    ],
-                    "OGFFGLGEOGF": [
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_Improve"
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Staff_Rock_EnterWeak": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 3.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetAnimatorBool",
-                            "HHFIHBEAPAP": "InWeak",
-                            "value": true
-                        },
-                        {
-                            "$type": "SetAnimatorTrigger",
-                            "triggerID": "WeakStart"
-                        },
-                        {
-                            "$type": "SetPoseBool",
-                            "HHFIHBEAPAP": "WeakState",
-                            "value": true
-                        },
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_WEAK_",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "SetAnimatorBool",
-                            "CFIPAGENGPE": true,
-                            "HHFIHBEAPAP": "ImprovedState"
-                        }
-                    ]
-                }
-            }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_ExitWeak",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToNormalizedTimeMixin",
-                    "EFAJCDMGOHL": "Weak_BS",
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakModifier"
-                },
-                {
-                    "$type": "AttachModifierToSelfGlobalValueMixin",
-                    "BPCFCANOMNH": "_MONSTER_SKIRMISHER_RECOVER",
-                    "FEGIOIGELHB": 0.0,
-                    "CMEDACODLEA": [
-                        -0.5,
-                        0.5,
-                        1.5
-                    ],
-                    "MIEPCOONDEM": [
-                        "Empty",
-                        "Skirmisher_RecoverFromWeak"
-                    ]
-                },
-                {
-                    "$type": "AttachToStateIDMixin",
-                    "stateIDs": [
-                        "NormalIdle"
-                    ],
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakForSure"
-                },
-                {
-                    "$type": "AttachToStateIDMixin",
-                    "stateIDs": [
-                        "Weak"
-                    ],
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_ExitImproveForSure"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "Empty": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0
-                },
-                "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakModifier": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakDelay"
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakDelay": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 10.0,
-                    "elementDurability": 100.0,
-                    "FFOHEEFOELN": {
-                        "Actor_EndureDelta": 0.0,
-                        "Entity_MassRatio": 100.0,
-                        "Entity_WeightRatio": 5.0
-                    },
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetAnimatorBool",
-                            "HHFIHBEAPAP": "InWeak",
-                            "value": true
-                        },
-                        {
-                            "$type": "SetPoseBool",
-                            "HHFIHBEAPAP": "WeakState",
-                            "value": true
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "Predicated",
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_RECOVER",
-                                    "value": 1.0
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "SetAISkillCDAvailableNow",
-                                    "FJNGOGJOBEE": [
-                                        401,
-                                        403
-                                    ]
-                                }
-                            ],
-                            "BMIOBLGLPIM": [
-                                {
-                                    "$type": "ReTriggerAISkillInitialCD",
-                                    "FJNGOGJOBEE": [
-                                        401,
-                                        403
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Skirmisher_RecoverFromWeak"
-                        },
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": -2.0,
-                            "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_RECOVER",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "OGFFGLGEOGF": [
-                        {
-                            "$type": "RemoveModifier",
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakDelay"
-                        }
-                    ]
-                },
-                "Skirmisher_RecoverFromWeak": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetAnimatorBool",
-                            "HHFIHBEAPAP": "InWeak"
-                        },
-                        {
-                            "$type": "SetPoseBool",
-                            "HHFIHBEAPAP": "WeakState"
-                        },
-                        {
-                            "$type": "SetPoseBool",
-                            "HHFIHBEAPAP": "AfterFirstImprove",
-                            "value": true
-                        },
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": -2.0,
-                            "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_WEAK_",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakForSure": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetPoseBool",
-                            "CFIPAGENGPE": true,
-                            "HHFIHBEAPAP": "WeakState"
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Standard_Staff_Rock_ExitImproveForSure": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetPoseBool",
-                            "CFIPAGENGPE": true,
-                            "HHFIHBEAPAP": "ImprovedState"
-                        }
-                    ]
-                }
-            }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_Bullet",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "TriggerBullet",
-                    "NGAAOMEHOGE": 42301002,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 0.30000001192092896,
-                            "KAAPLGBEDPM": 1.7999999523162842,
-                            "PHDCJAHHIOG": 1.7999999523162842
-                        },
-                        "NHPNHKBMAEO": {
-                            "$type": "ConfigDirectionByAttackTarget",
-                            "IHHIKIACOML": "Vertical",
-                            "INCAGGBCJNF": 10.0
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Skirmisher_Staff_Rock_RockBullet_Explode",
-            "HNEIEGHMLKH": {
-                "RockBullet_Effect": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_Bullet"
-                        },
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_Bullet_Trail"
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "RockBullet_Effect"
-                }
-            ],
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "RemoveModifier",
-                    "GAIGOBCNNEE": "RockBullet_Effect"
-                },
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_Explode"
-                },
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackSphere",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf"
-                            },
-                            "ICGFCBOFFDI": 0.699999988079071
-                        },
-                        "attackInfo": {
-                            "attackTag": "",
-                            "attenuationTag": "",
-                            "attenuationGroup": "default",
-                            "attackProperty": {
-                                "bonusCriticalHurt": 1.0,
-                                "damagePercentageRatio": 0.0,
-                                "elementType": "Rock",
-                                "elementDurability": 50.0,
-                                "strikeType": "Blunt",
-                                "enBreak": 100.0,
-                                "attackType": "Range"
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "none",
-                                "hitImpulseType": "LV2"
-                            },
-                            "canBeModifiedBy": "OriginOwner"
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_ThreeBullet",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "TriggerBullet",
-                    "NGAAOMEHOGE": 42301003,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 1.7999999523162842,
-                            "PHDCJAHHIOG": 1.7999999523162842
-                        },
-                        "NHPNHKBMAEO": {
-                            "$type": "ConfigDirectionByAttackTarget",
-                            "LGPBCMEFEJB": {
-                                "AEAAJCIDPED": 0.0,
-                                "KAAPLGBEDPM": 0.0,
-                                "PHDCJAHHIOG": 0.0
-                            },
-                            "IHHIKIACOML": "Horizontal",
-                            "INCAGGBCJNF": 30.0
-                        }
-                    }
-                },
-                {
-                    "$type": "TriggerBullet",
-                    "NGAAOMEHOGE": 42301003,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 1.7999999523162842,
-                            "PHDCJAHHIOG": 1.7999999523162842
-                        },
-                        "NHPNHKBMAEO": {
-                            "$type": "ConfigDirectionByAttackTarget",
-                            "LGPBCMEFEJB": {
-                                "AEAAJCIDPED": 0.0,
-                                "KAAPLGBEDPM": 20.0,
-                                "PHDCJAHHIOG": 0.0
-                            },
-                            "IHHIKIACOML": "Horizontal",
-                            "INCAGGBCJNF": 30.0
-                        }
-                    }
-                },
-                {
-                    "$type": "TriggerBullet",
-                    "NGAAOMEHOGE": 42301003,
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 1.7999999523162842,
-                            "PHDCJAHHIOG": 1.7999999523162842
-                        },
-                        "NHPNHKBMAEO": {
-                            "$type": "ConfigDirectionByAttackTarget",
-                            "LGPBCMEFEJB": {
-                                "AEAAJCIDPED": 0.0,
-                                "KAAPLGBEDPM": -20.0,
-                                "PHDCJAHHIOG": 0.0
-                            },
-                            "IHHIKIACOML": "Horizontal",
-                            "INCAGGBCJNF": 30.0
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Skirmisher_Staff_Rock_RockBullet_ExplodePower",
-            "HNEIEGHMLKH": {
-                "Skirmisher_Staff_Rock_RockBullet_Effect": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_BulletPower"
-                        },
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_BulletPower_Trail"
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "Skirmisher_Staff_Rock_RockBullet_Effect"
-                }
-            ],
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "RemoveModifier",
-                    "GAIGOBCNNEE": "Skirmisher_Staff_Rock_RockBullet_Effect"
-                },
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_ExplodePower"
-                },
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackSphere",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf"
-                            },
-                            "ICGFCBOFFDI": 1.0
-                        },
-                        "attackInfo": {
-                            "attackTag": "Rock3Bullet",
-                            "attenuationTag": "Rock3Bullet",
-                            "attenuationGroup": "Skirmisher_Fat_SprayGun_Ice",
-                            "attackProperty": {
-                                "bonusCriticalHurt": 1.5,
-                                "damagePercentageRatio": 0.0,
-                                "elementType": "Rock",
-                                "elementDurability": 50.0,
-                                "strikeType": "Blunt",
-                                "enBreak": 100.0,
-                                "attackType": "Range"
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "none",
-                                "hitImpulseType": "LV2"
-                            },
-                            "canBeModifiedBy": "OriginOwner"
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_FindBlinkPoint",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "TryFindBlinkPoint",
-                    "DGICDMAKHOJ": -180.0,
-                    "JLCCGHLNHOI": 2.0,
-                    "GLALMCMAFJF": 10.0,
-                    "KCIAHJGFPBB": true
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_Blink",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "DoBlink"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_FindBlinkToAlliance",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "SetGlobalPos",
-                    "NPHOOPNDCAC": "SelfAttackTarget",
-                    "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_MALE_BLINK_TO_ALLIANCE_POS",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByTarget"
-                    },
-                    "OGADOPDNBMM": false
-                },
-                {
-                    "$type": "TryFindBlinkPointByBorn",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByGlobalValue",
-                        "offset": {
-                            "AEAAJCIDPED": 0.0,
-                            "KAAPLGBEDPM": 0.0,
-                            "PHDCJAHHIOG": -2.0
-                        },
-                        "GDENJEFPMGC": "_MONSTER_SKIRMISHER_MALE_BLINK_TO_ALLIANCE_POS",
-                        "MICIJLHMIIH": ""
-                    },
-                    "GIEHOPEJIMK": "BlinkHitSceneTestByThreeSegments",
-                    "ILELFGNFDLO": 2.5
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponEffect",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "AttachEffect",
-                    "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWallBS",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByAttachPoint",
-                        "KJNJNKLLNCN": "WeaponR"
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Staff_Rock_CreatShield",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToStateIDMixin",
-                    "stateIDs": [
-                        "DefendArea_Loop"
-                    ],
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Shield_Loop"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "Monster_Skirmisher_Staff_Rock_KillShield": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.30000001192092896,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_STAFF_ROCK_KILLSHIELD",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Staff_Rock_Shield_Timer": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 10.0,
-                    "elementDurability": 100.0,
-                    "FFOHEEFOELN": {
-                        "Entity_MassRatio": 100.0
-                    },
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetAnimatorTrigger",
-                            "triggerID": "EndShield"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByChildren",
-                                "APIAFGPIIHE": 42301001
-                            },
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Staff_Rock_KillShield"
-                        }
-                    ],
-                    "OGFFGLGEOGF": [
-                        {
-                            "$type": "SetAnimatorTrigger",
-                            "triggerID": "EndShield"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByChildren",
-                                "APIAFGPIIHE": 42301001
-                            },
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Staff_Rock_KillShield"
-                        }
-                    ]
-                },
-                "UNIQUE_Monster_Skirmisher_Staff_Rock_Shield_Loop": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "CreateGadget",
-                            "NJEOPILMKCN": true,
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 0.7699999809265137
-                                }
-                            },
-                            "JCAMCEOBIFG": true,
-                            "CABLIPAKCGB": 42301001,
-                            "DOLAJLACEDF": 4001,
-                            "CEBMHIFOHJM": true
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "CircleR10",
-                                "ONPOPLLHJLE": "Alliance",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "GAIGOBCNNEE": "Monster_Skirmisher_RockWall_Broadcast"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Staff_Rock_Shield_Timer"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "RemoveModifier",
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Staff_Rock_Shield_Timer"
-                        }
-                    ],
-                    "OGFFGLGEOGF": [
-                        {
-                            "$type": "RemoveUniqueModifier",
-                            "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Shield_Loop"
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_RockWall_Broadcast": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 10.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_ROCKWALL_BROADCAST",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_ROCKWALL_BROADCAST",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Male_Standard_Staff_Rock_RockWall_Effect": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 13.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWall",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 0.7699999809265137
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Staff_Rock_RockWallHit",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachModifierToSelfGlobalValueMixin",
-                    "BPCFCANOMNH": "_MONSTER_SKIRMISHER_STAFF_ROCK_KILLSHIELD",
-                    "FEGIOIGELHB": 0.0,
-                    "CMEDACODLEA": [
-                        -0.5,
-                        0.5,
-                        1.5
-                    ],
-                    "MIEPCOONDEM": [
-                        "Skirmisher_Shield_Empty",
-                        "Skirmisher_Shield_Die"
-                    ]
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "Monster_Skirmisher_Staff_Rock_RockWall_Eff": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 13.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWall",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornBySelf",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": 0.0,
-                                    "PHDCJAHHIOG": 0.0
-                                }
-                            }
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ]
-                },
-                "BeHitEffect": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 10.0,
-                    "elementDurability": 100.0,
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "EnableHitBoxByName",
-                            "EACGOCFODIC": [
-                                "HitBox"
-                            ]
-                        },
-                        {
-                            "$type": "SendEffectTrigger",
-                            "MOCGJNIDDAI": "SheildIsClosed",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWall"
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWallHit",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByHitPoint"
-                            }
-                        }
-                    ]
-                },
-                "Skirmisher_Shield_Empty": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0
-                },
-                "Skirmisher_Shield_Die": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "RemoveModifier",
-                            "GAIGOBCNNEE": "BeHitEffect"
-                        },
-                        {
-                            "$type": "KillSelf",
-                            "duration": 3.0
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "BeHitEffect"
-                },
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Staff_Rock_RockWall_Eff"
-                },
-                {
-                    "$type": "EnableHitBoxByName",
-                    "EACGOCFODIC": [
-                        "HitBox"
-                    ],
-                    "PAHBCOACBAI": true
-                },
-                {
-                    "$type": "SetGlobalValue",
-                    "value": 0.0,
-                    "HJJEAOMEOFI": "_MONSTER_SKIRMISHER_STAFF_ROCK_KILLSHIELD",
-                    "JDHHMBHOOEC": 0.0,
-                    "KHAHOELDONA": 0.0
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Staff_Rock_RiseAllianceAtk",
-            "HNEIEGHMLKH": {
-                "Monster_Skirmisher_Staff_Rock_RiseAllianceAtk_Interval": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 1.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "CircleR10",
-                                "ONPOPLLHJLE": "All",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "predicates": [
-                                {
-                                    "$type": "ByEntityTypes",
-                                    "entityTypes": [
-                                        "Monster"
-                                    ]
-                                }
-                            ],
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Staff_Rock_RiseAtkValue"
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Staff_Rock_RiseAtkValue": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 1.5,
-                    "elementDurability": 100.0,
-                    "FFOHEEFOELN": {
-                        "Actor_AttackRatio": 0.20000000298023224
-                    },
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_BodyRockPowerLoop"
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Staff_Rock_RiseAllianceAtk_Interval"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_Steer",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "SteerAttackMixin",
-                    "EHNAPMMMNFI": [
-                        "Turn"
-                    ],
-                    "HENDIIJFPCI": 120.0,
-                    "NCAENFOANAG": "",
-                    "BBHBLAIEHAJ": 2.0
-                },
-                {
-                    "$type": "SteerAttackMixin",
-                    "EHNAPMMMNFI": [
-                        "RangeAtk"
-                    ],
-                    "IMHBEGIKDKB": 0.27000001072883606,
-                    "HENDIIJFPCI": 300.0,
-                    "NCAENFOANAG": "",
-                    "BBHBLAIEHAJ": 2.0
-                },
-                {
-                    "$type": "SteerAttackMixin",
-                    "EHNAPMMMNFI": [
-                        "MeleeAtk"
-                    ],
-                    "IMHBEGIKDKB": 0.2800000011920929,
-                    "HENDIIJFPCI": 90.0,
-                    "NCAENFOANAG": "",
-                    "BBHBLAIEHAJ": 2.0
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_StruggleHideWeapon",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToNormalizedTimeMixin",
-                    "EFAJCDMGOHL": "Struggle",
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_StruggleHideWeapon"
-                },
-                {
-                    "$type": "AttachToNormalizedTimeMixin",
-                    "EFAJCDMGOHL": "SwimDie",
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_StruggleHideWeapon"
-                },
-                {
-                    "$type": "AttachToNormalizedTimeMixin",
-                    "EFAJCDMGOHL": "SwimDie_AS",
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_StruggleHideWeapon"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "Monster_Skirmisher_Standard_Staff_Rock_StruggleHideWeapon": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "TriggerHideWeapon",
-                            "FLCNICMDANB": [
-                                "equip01"
-                            ]
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "TriggerHideWeapon",
-                            "ACDFJMCPFGH": true,
-                            "FLCNICMDANB": [
-                                "equip01"
-                            ]
-                        }
-                    ]
-                }
-            }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_WeaponSpecialState",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToAbilityStateMixin",
-                    "ELJGGBDOPIL": [
-                        "ElementFreeze"
-                    ],
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_WeaponFrozen"
-                },
-                {
-                    "$type": "AttachToAbilityStateMixin",
-                    "ELJGGBDOPIL": [
-                        "ElementPetrifaction"
-                    ],
-                    "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_WeaponPetrifaction"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "Monster_Skirmisher_Standard_Staff_Rock_WeaponFrozen": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachModifier",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByEquipParts",
-                                "GNNLGDBFIDI": [
-                                    "equip01"
-                                ]
-                            },
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_WeaponBeFrozen"
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Standard_Staff_Rock_WeaponPetrifaction": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachModifier",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByEquipParts",
-                                "GNNLGDBFIDI": [
-                                    "equip01"
-                                ]
-                            },
-                            "GAIGOBCNNEE": "Monster_Skirmisher_Standard_Staff_Rock_WeaponBePetrifaction"
-                        }
-                    ]
-                },
-                "Monster_Skirmisher_Standard_Staff_Rock_WeaponBeFrozen": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "state": "ElementFreeze"
-                },
-                "Monster_Skirmisher_Standard_Staff_Rock_WeaponBePetrifaction": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "state": "ElementPetrifaction"
-                }
-            }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_Die",
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "RemoveUniqueModifier",
-                    "GAIGOBCNNEE": "UNIQUE_Monster_Skirmisher_Staff_Rock_Element"
-                }
-            ]
-        }
+      }
     }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Eye Effect
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_EyeEffect",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_NormalEffect"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_NormalEffect"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_NormalEffect": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_EyeNormal",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "EyeEffect"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Weapon Effect
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponOriginal",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectOriginal"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectOriginal"
+        },
+        {
+          "$type": "RemoveUniqueModifier",
+          "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectPower"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectOriginal": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_WeaponLoop",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "Head"
+              }
+            }
+          ],
+          "onKill": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectOriginal"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponPower",
+      "onAbilityStart": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectPower"
+        },
+        {
+          "$type": "RemoveUniqueModifier",
+          "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectOriginal"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectPower": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_WeaponPowerUp",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "Head"
+              }
+            }
+          ],
+          "onKill": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_WeaponEffectPower"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  ShowSelf
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_Hide",
+      // "onAbilityStart":
+      // [
+      // 	{
+      // 		"$type":"AttachModifier",
+      // 		"modifierName":"Monster_Skirmisher_Male_Standard_Staff_Rock_HideSelf"
+      // 	}
+      // ],
+      "abilityMixins": [
+        {
+          "$type": "AttachToNormalizedTimeMixin",
+          "target": "Self",
+          "stateID": "BlinkBS",
+          "modifierName": "Monster_Skirmisher_Male_Standard_Staff_Rock_HideSelf",
+          "normalizeStart": 0.97
+        },
+        {
+          "$type": "AttachToNormalizedTimeMixin",
+          "target": "Self",
+          "stateID": "Standby",
+          "modifierName": "Monster_Skirmisher_Male_Standard_Staff_Rock_ShowSelfForSure",
+          "normalizeStart": 0.01
+        }
+      ],
+      "modifiers": {
+        "Monster_Skirmisher_Male_Standard_Staff_Rock_ShowSelf": {
+          "duration": 0.5,
+          "onRemoved": [
+            {
+              "$type": "HideUIBillBoard",
+              "hide": false,
+              "canBeHandledOnRecover": true
+            },
+            {
+              "$type": "TriggerSetVisible",
+              "visible": true,
+              "canBeHandledOnRecover": true
+            },
+            {
+              "$type": "EnablePushColliderName",
+              "pushColliderNames": ["PushCollider"],
+              "setEnable": true,
+              "canBeHandledOnRecover": true
+            }
+          ]
+        },
+        "Monster_Skirmisher_Male_Standard_Staff_Rock_ShowSelfForSure": {
+          "onAdded": [
+            {
+              "$type": "HideUIBillBoard",
+              "hide": false,
+              "canBeHandledOnRecover": true
+            },
+            {
+              "$type": "TriggerSetVisible",
+              "visible": true,
+              "canBeHandledOnRecover": true
+            },
+            {
+              "$type": "EnablePushColliderName",
+              "pushColliderNames": ["PushCollider"],
+              "setEnable": true,
+              "canBeHandledOnRecover": true
+            }
+          ]
+        },
+        "Monster_Skirmisher_Male_Standard_Staff_Rock_HideSelf_Timer": {
+          "duration": 0.5,
+          "onRemoved": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "BlinkOver",
+              "canBeHandledOnRecover": true
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Skirmisher_Male_Standard_Staff_Rock_ShowSelf"
+            }
+          ]
+        },
+        "Monster_Skirmisher_Male_Standard_Staff_Rock_HideSelf": {
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Skirmisher_Male_Standard_Staff_Rock_HideSelf_Timer"
+            },
+            {
+              "$type": "HideUIBillBoard",
+              "hide": true
+            },
+            {
+              "$type": "TriggerSetVisible",
+              "visible": false
+            },
+            {
+              "$type": "EnablePushColliderName",
+              "pushColliderNames": ["PushCollider"],
+              "setEnable": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  // {
+  // 	"Default":
+  // 	{
+  // 		"$type":"ConfigAbility",
+  // 		"abilityName":"Monster_Skirmisher_Male_Standard_Staff_Rock_Show",
+  // 		"onAbilityStart":
+  // 		[
+  // 			{
+  // 				"$type":"HideUIBillBoard",
+  // 				"hide":false
+  // 			},
+  // 			{
+  // 				"$type":"TriggerSetVisible",
+  // 				"visible":true
+  // 			},
+  // 			{
+  // 				"$type": "EnablePushColliderName",
+  // 				"pushColliderNames": ["PushCollider"],
+  // 				"setEnable": true,
+  // 			}
+  // 		]
+  // 	}
+  // },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Return to birth Invincible and Remove ImproveState
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_ReturnToBorn",
+      "abilityMixins": [
+        {
+          "$type": "AttachToPoseIDMixin",
+          "poseIDs": [901, 902, 903],
+          "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_ReturnToBorn_Invincible"
+        }
+      ],
+      "modifiers": {
+        "Monster_Skirmisher_Standard_Staff_Rock_ReturnToBorn_Invincible": {
+          "state": "Invincible",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_ReturnToBorn_RemoveImproveDelay"
+            },
+            {
+              "$type": "ReTriggerAISkillInitialCD",
+              "skillIDs": [401, 403]
+            },
+            {
+              "$type": "SetAISkillCDAvailableNow",
+              "skillIDs": [401, 403]
+            }
+          ]
+        },
+        "Monster_Skirmisher_Standard_Staff_Rock_ReturnToBorn_RemoveImproveDelay": {
+          "duration": 1,
+          "onRemoved": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Element"
+            },
+            {
+              "$type": "AddGlobalValue",
+              "key": "_MONSTER_SKIRMISHER_STAFF_ROCK_IMPROVENUM",
+              "value": -11,
+              "useLimitRange": true,
+              "maxValue": 10
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Improve And Weak
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_Improve",
+      "abilityMixins": [
+        {
+          "$type": "AttachToNormalizedTimeMixin",
+          "stateID": "Improve",
+          "normalizeStart": 0.4,
+          "modifierName": "Monster_Skirmisher_Staff_Rock_ChangePose"
+        }
+      ],
+      "modifiers": {
+        "Monster_Skirmisher_Staff_Rock_ChangePose": {
+          "onAdded": [
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "InWeak",
+              "value": false
+            },
+            {
+              "$type": "SetPoseBool",
+              "boolID": "ImprovedState",
+              "value": true
+            },
+            {
+              "$type": "SetPoseBool",
+              "boolID": "WeakState",
+              "value": false
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Element"
+            }
+          ]
+        },
+        "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_Improve": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_EyeToImprove",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "EyeEffect"
+              }
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_EyeImprove",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "EyeEffect"
+              }
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_EyeToNormal",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "EyeEffect"
+              }
+            }
+          ]
+        },
+        "UNIQUE_Monster_Skirmisher_Staff_Rock_Element": {
+          "isUnique": true,
+          "elementType": "Rock",
+          "elementDurability": 200,
+          "properties": {
+            "Actor_EndureDelta": 0,
+            "Entity_WeightRatio": 5.0,
+            "Actor_PhysicalSubHurtDelta": 1,
+            "Actor_FireSubHurtDelta": 1,
+            "Actor_ElecSubHurtDelta": 1,
+            "Actor_WaterSubHurtDelta": 1,
+            "Actor_GrassSubHurtDelta": 1,
+            "Actor_WindSubHurtDelta": 1,
+            "Actor_IceSubHurtDelta": 1,
+            "Actor_RockSubHurtDelta": 1
+          },
+          "onKill": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_Improve"
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "SetPoseBool",
+              "boolID": "ForceImprove",
+              "value": false
+            },
+            {
+              "$type": "AddGlobalValue",
+              "key": "_MONSTER_SKIRMISHER_STAFF_ROCK_IMPROVENUM",
+              "value": 1,
+              "useLimitRange": true,
+              "maxValue": 10
+            },
+            {
+              "$type": "TriggerAbility",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 50004045
+              },
+              "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponPower",
+              "abilityID": "WeaponUp"
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 50004045
+              },
+              "boolID": "PowerUp",
+              "value": true
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_NormalEffect"
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_Improve"
+            },
+            {
+              "$type": "SetPoseBool",
+              "boolID": "WeakState",
+              "value": false
+            }
+            // {
+            // 	"$type":"AttachEffect",
+            // 	"effectPattern":"Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_BodyRockPowerLoop",
+            // 	"born":
+            // 	{
+            // 		"$type":"ConfigBornByAttachPoint",
+            // 		"attachPointName":"RootZero"
+            // 	}
+            // }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetPoseBool",
+              "boolID": "ImprovedState",
+              "value": false
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Shield_Loop"
+            },
+            {
+              "$type": "TriggerAbility",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 50004045
+              },
+              "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponOriginal",
+              "abilityID": "WeaponDown"
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 50004045
+              },
+              "boolID": "PowerUp",
+              "value": false
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Eye_Improve"
+            },
+            {
+              "$type": "TriggerAbility",
+              "abilityID": "EyeEffect",
+              "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_EyeEffect"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Skirmisher_Staff_Rock_EnterWeak",
+              "predicates": [
+                {
+                  "$type": "ByAnimatorFloat",
+                  "parameter": "PoseID",
+                  "value": 201,
+                  "logic": "Equal"
+                }
+              ]
+            }
+          ]
+        },
+        "Monster_Skirmisher_Staff_Rock_EnterWeak": {
+          "duration": 3,
+          "onAdded": [
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "InWeak",
+              "value": true
+            },
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "WeakStart"
+            },
+            {
+              "$type": "SetPoseBool",
+              "boolID": "WeakState",
+              "value": true
+            },
+            {
+              "$type": "AddGlobalValue",
+              "target": "Self",
+              "key": "_MONSTER_SKIRMISHER_WEAK_",
+              "value": 1,
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": 1
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "ImprovedState",
+              "value": false,
+              "canBeHandledOnRecover": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_ExitWeak",
+      "abilityMixins": [
+        {
+          "$type": "AttachToNormalizedTimeMixin",
+          "stateID": "Weak_BS",
+          "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakModifier",
+          "normalizeStart": 0
+        },
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_MONSTER_SKIRMISHER_RECOVER",
+          "defaultGlobalValueOnCreate": 0,
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "modifierNameSteps": ["Empty", "Skirmisher_RecoverFromWeak"],
+          "removeAppliedModifier": true
+        },
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["NormalIdle"],
+          "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakForSure"
+        },
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["Weak"],
+          "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_ExitImproveForSure"
+        }
+      ],
+      "onAbilityStart": [],
+      "modifiers": {
+        "Empty": {},
+        "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakModifier": {
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakDelay"
+            }
+          ]
+        },
+        "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakDelay": {
+          "duration": 10,
+          "onAdded": [
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "InWeak",
+              "value": true
+            },
+            {
+              "$type": "SetPoseBool",
+              "boolID": "WeakState",
+              "value": true
+            }
+          ],
+          "onKill": [
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakDelay"
+            }
+          ],
+          "properties": {
+            "Actor_EndureDelta": 0,
+            "Entity_MassRatio": 100,
+            "Entity_WeightRatio": 5
+          },
+          "onRemoved": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_SKIRMISHER_RECOVER",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetAISkillCDAvailableNow",
+                  "skillIDs": [401, 403]
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "ReTriggerAISkillInitialCD",
+                  "skillIDs": [401, 403]
+                }
+              ]
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Skirmisher_RecoverFromWeak"
+            },
+            {
+              "$type": "AddGlobalValue",
+              "target": "Self",
+              "key": "_MONSTER_SKIRMISHER_RECOVER",
+              "value": -2,
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": 1
+            }
+          ]
+        },
+        "Skirmisher_RecoverFromWeak": {
+          "duration": 1,
+          "onAdded": [
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "InWeak",
+              "value": false
+            },
+            {
+              "$type": "SetPoseBool",
+              "boolID": "WeakState",
+              "value": false
+            },
+            {
+              "$type": "SetPoseBool",
+              "boolID": "AfterFirstImprove",
+              "value": true
+            },
+            {
+              "$type": "AddGlobalValue",
+              "target": "Self",
+              "key": "_MONSTER_SKIRMISHER_WEAK_",
+              "value": -2,
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": 1
+            }
+          ]
+        },
+        "Monster_Skirmisher_Standard_Staff_Rock_ExitWeakForSure": {
+          "onAdded": [
+            {
+              "$type": "SetPoseBool",
+              "boolID": "WeakState",
+              "value": false,
+              "canBeHandledOnRecover": true
+            }
+          ]
+        },
+        "Monster_Skirmisher_Standard_Staff_Rock_ExitImproveForSure": {
+          "onAdded": [
+            {
+              "$type": "SetPoseBool",
+              "boolID": "ImprovedState",
+              "value": false,
+              "canBeHandledOnRecover": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  RangeAtk Bullet
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_Bullet",
+      "onAbilityStart": [
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42301002,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.3,
+              "y": 1.8,
+              "z": 1.8
+            },
+            "direction": {
+              "$type": "ConfigDirectionByAttackTarget",
+              "maxAngleType": "Vertical",
+              "maxAngle": 10
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Skirmisher_Staff_Rock_RockBullet_Explode",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "RockBullet_Effect"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "RockBullet_Effect"
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_Explode"
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackSphere",
+              "radius": 0.7,
+              "triggerType": "TriggerNoRepeat",
+              "born": {
+                "$type": "ConfigBornBySelf"
+              }
+            },
+            "attackInfo": {
+              "canBeModifiedBy": "OriginOwner",
+              "attackProperty": {
+                "damagePercentage": 0.666,
+                "strikeType": "Blunt",
+                "overrideByWeapon": false,
+                "attackType": "Range",
+                "enBreak": 100,
+                "elementType": "Rock",
+                "elementDurability": 50
+              },
+              "hitPattern": {
+                "onHitEffectName": "none",
+                "hitImpulseType": "LV2",
+                "muteHitText": false
+              }
+            }
+          }
+        }
+      ],
+      "modifiers": {
+        "RockBullet_Effect": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_Bullet"
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_Bullet_Trail"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  RangeAtk 3 Bullet
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_ThreeBullet",
+      "onAbilityStart": [
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42301003,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 1.8,
+              "z": 1.8
+            },
+            "direction": {
+              "$type": "ConfigDirectionByAttackTarget",
+              "maxAngleType": "Horizontal",
+              "maxAngle": 30,
+              "angleOffset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            }
+          }
+        },
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42301003,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 1.8,
+              "z": 1.8
+            },
+            "direction": {
+              "$type": "ConfigDirectionByAttackTarget",
+              "maxAngleType": "Horizontal",
+              "maxAngle": 30,
+              "angleOffset": {
+                "x": 0,
+                "y": 20,
+                "z": 0
+              }
+            }
+          }
+        },
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42301003,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 1.8,
+              "z": 1.8
+            },
+            "direction": {
+              "$type": "ConfigDirectionByAttackTarget",
+              "maxAngleType": "Horizontal",
+              "maxAngle": 30,
+              "angleOffset": {
+                "x": 0,
+                "y": -20,
+                "z": 0
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Skirmisher_Staff_Rock_RockBullet_ExplodePower",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "Skirmisher_Staff_Rock_RockBullet_Effect"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "Skirmisher_Staff_Rock_RockBullet_Effect"
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_ExplodePower"
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackSphere",
+              "radius": 1,
+              "triggerType": "TriggerNoRepeat",
+              "born": {
+                "$type": "ConfigBornBySelf"
+              }
+            },
+            "attackInfo": {
+              "attackTag": "Rock3Bullet",
+              "attenuationTag": "Rock3Bullet",
+              "attenuationGroup": "Skirmisher_Fat_SprayGun_Ice",
+              "canBeModifiedBy": "OriginOwner",
+              "attackProperty": {
+                "damagePercentage": 1.0,
+                "strikeType": "Blunt",
+                "overrideByWeapon": false,
+                "attackType": "Range",
+                "enBreak": 100,
+                "elementType": "Rock",
+                "elementDurability": 50
+              },
+              "hitPattern": {
+                "onHitEffectName": "none",
+                "hitImpulseType": "LV2",
+                "muteHitText": false
+              }
+            }
+          }
+        }
+      ],
+      "modifiers": {
+        "Skirmisher_Staff_Rock_RockBullet_Effect": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_BulletPower"
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RangeAtk_BulletPower_Trail"
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Blink
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_FindBlinkPoint",
+      "onAbilityStart": [
+        // {
+        // 	"$type":"SetGlobalDir",
+        // 	"key":"_MONSTER_SKIRMISHER_MALE_BLINK_DIRECTION",
+        // 	"setTarget":true,
+        // 	"target":"SelfAttackTarget",
+        // 	"born":
+        // 	{
+        // 		"$type":"ConfigBornBySelf",
+        // 	}
+        // },
+        // {
+        // 	"$type":"Predicated",
+        // 	"targetPredicates":
+        // 	[
+        // 		{
+        // 			"$type":"ByAttackNotHitScene",
+        // 			"attackPattern":
+        // 			{
+        // 				"$type": "ConfigAttackBox",
+        // 				"CheckHitLayerType":"OnlyHitScene",
+        // 				"size":
+        // 				{
+        // 					"x": 3,
+        // 					"y": 3,
+        // 					"z": 3,
+        // 				},
+        // 				"born":
+        // 				{
+        // 					"$type": "ConfigBornBySelf",
+        // 					"offset" :
+        // 					{
+        // 						"x" : 0,
+        // 						"y" : -2,
+        // 						"z" : -16,
+        // 					}
+        // 				}
+        // 			},
+        // 			"checkWaterLayer":true
+        // 		}
+        // 	],
+        // 	"successActions":
+        // 	[
+        // 		{
+        // 			"$type":"TryFindBlinkPointByBorn",
+        // 			"target":"SelfAttackTarget",
+        // 			"hitSceneTest":true,
+        // 			"hitSceneType":"BlinkHitSceneTestByThreeSegments",
+        // 			"born":
+        // 			{
+        // 				"$type":"ConfigBornByTargetLinearPoint",
+        // 				"baseOnTarget":false,
+        // 				"linearXZ":true,
+        // 				"linearOffset":-15,
+        // 			}
+        // 		}
+        // 	],
+        // 	"failActions":
+        // 	[
+        // 		{
+        // 			"$type":"Predicated",
+        // 			"targetPredicates":
+        // 			[
+        // 				{
+        // 					"$type":"ByAttackNotHitScene",
+        // 					"attackPattern":
+        // 					{
+        // 						"$type": "ConfigAttackBox",
+        // 						"CheckHitLayerType":"OnlyHitScene",
+        // 						"size":
+        // 						{
+        // 							"x": 3,
+        // 							"y": 3,
+        // 							"z": 3,
+        // 						},
+        // 						"born":
+        // 						{
+        // 							"$type": "ConfigBornBySelf",
+        // 							"offset" :
+        // 							{
+        // 								"x" : 0,
+        // 								"y" : -2,
+        // 								"z" : -8,
+        // 							}
+        // 						}
+        // 					},
+        // 					"checkWaterLayer":true
+        // 				}
+        // 			],
+        // 			"successActions":
+        // 			[
+        // 				{
+        // 					"$type":"TryFindBlinkPointByBorn",
+        // 					"target":"SelfAttackTarget",
+        // 					"hitSceneTest":true,
+        // 					"hitSceneType":"BlinkHitSceneTestByThreeSegments",
+        // 					"born":
+        // 					{
+        // 						"$type":"ConfigBornByTargetLinearPoint",
+        // 						"baseOnTarget":false,
+        // 						"linearXZ":true,
+        // 						"linearOffset":-7,
+        // 					}
+        // 				}
+        // 			],
+        // 			"failActions":
+        // 			[
+        // 				{
+        // 					"$type":"TryFindBlinkPointByBorn",
+        // 					"target":"SelfAttackTarget",
+        // 					"hitSceneTest":true,
+        // 					"hitSceneType":"BlinkHitSceneTestByThreeSegments",
+        // 					"born":
+        // 					{
+        // 						"$type":"ConfigBornByTargetLinearPoint",
+        // 						"baseOnTarget":false,
+        // 						"linearXZ":true,
+        // 						"linearOffset":0,
+        // 					}
+        // 				}
+        // 			]
+        // 		}
+        // 	]
+        // }
+        {
+          "$type": "TryFindBlinkPoint",
+          "forwardAngle": -180,
+          "minRange": 2,
+          "maxRange": 10,
+          "ignoreWater": true
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_Blink",
+      "onAbilityStart": [
+        {
+          "$type": "DoBlink"
+        }
+      ]
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Alliance Defend Sheild
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Male_Standard_Staff_Rock_FindBlinkToAlliance",
+      "onAbilityStart": [
+        {
+          "$type": "SetGlobalPos",
+          "key": "_MONSTER_SKIRMISHER_MALE_BLINK_TO_ALLIANCE_POS",
+          "target": "SelfAttackTarget",
+          "born": {
+            "$type": "ConfigBornByTarget"
+          },
+          "setTarget": false
+        },
+        {
+          "$type": "TryFindBlinkPointByBorn",
+          "hitSceneTest": true,
+          "hitSceneType": "BlinkHitSceneTestByThreeSegments",
+          "born": {
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_SKIRMISHER_MALE_BLINK_TO_ALLIANCE_POS",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": -2
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponEffect",
+      "onAbilityStart": [
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWallBS",
+          "born": {
+            "$type": "ConfigBornByAttachPoint",
+            "attachPointName": "WeaponR"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Staff_Rock_CreatShield",
+      "abilityMixins": [
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["DefendArea_Loop"],
+          "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Shield_Loop"
+        }
+      ],
+      "modifiers": {
+        "Monster_Skirmisher_Staff_Rock_KillShield": {
+          "duration": 0.3,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_MONSTER_SKIRMISHER_STAFF_ROCK_KILLSHIELD",
+              "value": 1
+            }
+          ]
+        },
+        "Monster_Skirmisher_Staff_Rock_Shield_Timer": {
+          "duration": 10,
+          "properties": {
+            "Entity_MassRatio": 100
+          },
+          "onKill": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "EndShield"
+            },
+            // {
+            // 	"$type":"SendEffectTrigger",
+            // 	"parameter":"SheildIsClosed",
+            // 	"effectPattern":"Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWall"
+            // },
+            {
+              "$type": "ApplyModifier",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42301001
+              },
+              "modifierName": "Monster_Skirmisher_Staff_Rock_KillShield"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "EndShield"
+            },
+            // {
+            // 	"$type":"SendEffectTrigger",
+            // 	"parameter":"SheildIsClosed",
+            // 	"effectPattern":"Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWall"
+            // },
+            {
+              "$type": "ApplyModifier",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42301001
+              },
+              "modifierName": "Monster_Skirmisher_Staff_Rock_KillShield"
+            }
+          ]
+        },
+        "UNIQUE_Monster_Skirmisher_Staff_Rock_Shield_Loop": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42301001,
+              "campID": 4001,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "sightGroupWithOwner": true,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0.77
+                }
+              }
+            },
+            {
+              "$type": "ApplyModifier",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR10",
+                "centerBasedOn": "Self",
+                "campTargetType": "Alliance",
+                "campBasedOn": "Self"
+              },
+              "modifierName": "Monster_Skirmisher_RockWall_Broadcast"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Skirmisher_Staff_Rock_Shield_Timer"
+            }
+            // {
+            // 	"$type":"ApplyModifier",
+            // 	"modifierName":"Monster_Skirmisher_Male_Standard_Staff_Rock_RockWall_Effect"
+            // },
+            //Add Atk to alliance
+            // {
+            // 	"$type":"TriggerAbility",
+            // 	"abilityID":"RiseAtk",
+            // 	"abilityName":"Monster_Skirmisher_Staff_Rock_RiseAllianceAtk"
+            // }
+          ],
+          "onKill": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Shield_Loop"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "Monster_Skirmisher_Staff_Rock_Shield_Timer"
+            }
+          ]
+        },
+        "Monster_Skirmisher_RockWall_Broadcast": {
+          "duration": 10,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_MONSTER_SKIRMISHER_ROCKWALL_BROADCAST",
+              "value": 1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_MONSTER_SKIRMISHER_ROCKWALL_BROADCAST",
+              "value": 0
+            }
+          ]
+        },
+        "Monster_Skirmisher_Male_Standard_Staff_Rock_RockWall_Effect": {
+          "duration": 13,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWall",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0.77
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Staff_Rock_RockWallHit",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "BeHitEffect"
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "Monster_Skirmisher_Staff_Rock_RockWall_Eff"
+        },
+        {
+          "$type": "EnableHitBoxByName",
+          "hitBoxNames": ["HitBox"],
+          "setEnable": true
+        },
+        {
+          "$type": "SetGlobalValue",
+          "key": "_MONSTER_SKIRMISHER_STAFF_ROCK_KILLSHIELD",
+          "value": 0
+        }
+      ],
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_MONSTER_SKIRMISHER_STAFF_ROCK_KILLSHIELD",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "modifierNameSteps": [
+            "Skirmisher_Shield_Empty",
+            "Skirmisher_Shield_Die"
+          ]
+        }
+      ],
+      "modifiers": {
+        "Monster_Skirmisher_Staff_Rock_RockWall_Eff": {
+          "duration": 13,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWall",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              }
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "BeHitEffect": {
+          "duration": 10,
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWallHit",
+              "born": {
+                "$type": "ConfigBornByHitPoint"
+              }
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "EnableHitBoxByName",
+              "hitBoxNames": ["HitBox"],
+              "setEnable": false
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "parameter": "SheildIsClosed",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_RockWall"
+            }
+          ]
+        },
+        "Skirmisher_Shield_Empty": {},
+        "Skirmisher_Shield_Die": {
+          "onAdded": [
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "BeHitEffect"
+            },
+            {
+              "$type": "KillSelf",
+              "duration": 3
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Staff_Rock_RiseAllianceAtk",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "Monster_Skirmisher_Staff_Rock_RiseAllianceAtk_Interval"
+        }
+      ],
+      "modifiers": {
+        "Monster_Skirmisher_Staff_Rock_RiseAllianceAtk_Interval": {
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "ApplyModifier",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR10",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self"
+              },
+              "modifierName": "Monster_Skirmisher_Staff_Rock_RiseAtkValue",
+              "predicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                }
+              ]
+            }
+          ]
+        },
+        "Monster_Skirmisher_Staff_Rock_RiseAtkValue": {
+          "duration": 1.5,
+          "stacking": "Refresh",
+          "properties": {
+            "Actor_AttackRatio": 0.2
+          },
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Skirmisher_Male_Standard_Staff_Rock_BodyRockPowerLoop"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Steer
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_Steer",
+      "abilityMixins": [
+        {
+          "$type": "SteerAttackMixin",
+          "steerStateIDs": ["Turn"],
+          "startNormalizedTime": 0,
+          "endNormalizedTime": 1,
+          "angularSpeed": 120,
+          "attackTrigger": "",
+          "attackDistance": 2
+        },
+        {
+          "$type": "SteerAttackMixin",
+          "steerStateIDs": ["RangeAtk"],
+          "startNormalizedTime": 0,
+          "endNormalizedTime": 0.27,
+          "angularSpeed": 300,
+          "attackTrigger": "",
+          "attackDistance": 2
+        },
+        {
+          "$type": "SteerAttackMixin",
+          "steerStateIDs": ["MeleeAtk"],
+          "startNormalizedTime": 0,
+          "endNormalizedTime": 0.28,
+          "angularSpeed": 90,
+          "attackTrigger": "",
+          "attackDistance": 2
+        }
+      ]
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Struggle Hide Weapon
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_StruggleHideWeapon",
+      "abilityMixins": [
+        {
+          "$type": "AttachToNormalizedTimeMixin",
+          "stateID": "Struggle",
+          "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_StruggleHideWeapon"
+        },
+        {
+          "$type": "AttachToNormalizedTimeMixin",
+          "stateID": "SwimDie",
+          "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_StruggleHideWeapon"
+        },
+        {
+          "$type": "AttachToNormalizedTimeMixin",
+          "stateID": "SwimDie_AS",
+          "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_StruggleHideWeapon"
+        }
+      ],
+      "modifiers": {
+        "Monster_Skirmisher_Standard_Staff_Rock_StruggleHideWeapon": {
+          "onAdded": [
+            {
+              "$type": "TriggerHideWeapon",
+              "visible": false,
+              "partNames": ["equip01"]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "TriggerHideWeapon",
+              "visible": true,
+              "partNames": ["equip01"]
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Frozen Weapon
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_WeaponSpecialState",
+      "abilityMixins": [
+        {
+          "$type": "AttachToAbilityStateMixin",
+          "abilityStates": ["ElementFreeze"],
+          "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_WeaponFrozen"
+        },
+        {
+          "$type": "AttachToAbilityStateMixin",
+          "abilityStates": ["ElementPetrifaction"],
+          "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_WeaponPetrifaction"
+        }
+      ],
+      "modifiers": {
+        "Monster_Skirmisher_Standard_Staff_Rock_WeaponFrozen": {
+          "onAdded": [
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_WeaponBeFrozen",
+              "otherTargets": {
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
+              }
+            }
+          ]
+        },
+        "Monster_Skirmisher_Standard_Staff_Rock_WeaponPetrifaction": {
+          "onAdded": [
+            {
+              "$type": "AttachModifier",
+              "otherTargets": {
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
+              },
+              "modifierName": "Monster_Skirmisher_Standard_Staff_Rock_WeaponBePetrifaction"
+            }
+          ]
+        },
+        "Monster_Skirmisher_Standard_Staff_Rock_WeaponBeFrozen": {
+          "state": "ElementFreeze"
+        },
+        "Monster_Skirmisher_Standard_Staff_Rock_WeaponBePetrifaction": {
+          "state": "ElementPetrifaction"
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  // Die Ability
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Skirmisher_Standard_Staff_Rock_Die",
+      "onAbilityStart": [
+        {
+          "$type": "RemoveUniqueModifier",
+          "modifierName": "UNIQUE_Monster_Skirmisher_Staff_Rock_Element"
+        }
+      ]
+    }
+  }
 ]

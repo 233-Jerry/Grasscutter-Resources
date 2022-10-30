@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 797114329,
-  "descTextMapHash": 0,
+  
   "id": 492,
   "ICLLDPJFIMA": 2006,
   "NCLEJIILEGL": 2006,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            49010,
-            0
-          ],
+          "param": [49010, 0],
           "count": 0
         }
       ],
@@ -50,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1008"
-        ],
+        "param": ["1008"],
         "guideScene": 1008,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"

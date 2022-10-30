@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    170655
-  ],
+  "rewardIdList": [170655],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,20 +39,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7065501,
-            0
-          ],
+          "param": [7065501, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            7065501,
-            0
-          ],
+          "param": [7065501, 0],
           "count": 0
         }
       ],
@@ -95,18 +87,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            7065502,
-            0
-          ],
+          "param": [7065502, 0],
           "count": 1
         },
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7065502,
-            0
-          ],
+          "param": [7065502, 0],
           "count": 0
         }
       ],
@@ -114,9 +100,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1563"
-        ],
+        "param": ["1563"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -150,10 +134,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7065501,
-            0
-          ],
+          "param": [7065501, 0],
           "count": 0
         }
       ],
@@ -161,9 +142,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1563"
-        ],
+        "param": ["1563"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"

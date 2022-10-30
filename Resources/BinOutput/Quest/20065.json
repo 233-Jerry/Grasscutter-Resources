@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            2006501,
-            0
-          ],
+          "param": [2006501, 0],
           "count": 0
         }
       ],
@@ -50,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1605"
-        ],
+        "param": ["1605"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_START",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
@@ -86,30 +81,21 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Event_21600_01",
-          "10"
-        ],
+        "param": ["Event_21600_01", "10"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -127,16 +113,11 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133004270,1"
-          ]
+          "param": ["3", "133004270,1"]
         },
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "2006502"
-          ]
+          "param": ["2006502"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -157,10 +138,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            2006503,
-            0
-          ],
+          "param": [2006503, 0],
           "count": 0
         }
       ],
@@ -168,9 +146,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1605"
-        ],
+        "param": ["1605"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_FINISH",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -187,25 +163,17 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133004270,1"
-          ]
+          "param": ["3", "133004270,1"]
         },
         {
           "type": "QUEST_EXEC_NOTIFY_DAILY_TASK",
-          "param": [
-            "21603"
-          ]
+          "param": ["21603"]
         }
       ],
       "failExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133004270,1"
-          ]
+          "param": ["3", "133004270,1"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -222,10 +190,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2006501",
-            "2"
-          ]
+          "param": ["2006501", "2"]
         }
       ],
       "priority": 6,
@@ -234,9 +199,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 200650101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1605
-      ],
+      "npcIdRawNum": [1605],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -272,17 +235,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2006501",
-            "3"
-          ]
+          "param": ["2006501", "3"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2006502",
-            "2"
-          ]
+          "param": ["2006502", "2"]
         }
       ],
       "priority": 6,
@@ -291,9 +248,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 200650201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1605
-      ],
+      "npcIdRawNum": [1605],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -329,17 +284,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2006502",
-            "3"
-          ]
+          "param": ["2006502", "3"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2006503",
-            "2"
-          ]
+          "param": ["2006503", "2"]
         }
       ],
       "priority": 6,
@@ -348,9 +297,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 200650301,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1605
-      ],
+      "npcIdRawNum": [1605],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

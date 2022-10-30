@@ -1,861 +1,394 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 133102217
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 217001
-L2_1.gadget_id = 70800104
-L3_1 = {}
-L3_1.x = 1708.828
-L3_1.y = 245.252
-L3_1.z = 635.756
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.area_id = 5
-L3_1 = {}
-L3_1.config_id = 217002
-L3_1.gadget_id = 70800104
-L4_1 = {}
-L4_1.x = 1718.505
-L4_1.y = 241.347
-L4_1.z = 672.808
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 5
-L4_1 = {}
-L4_1.config_id = 217003
-L4_1.gadget_id = 70800104
-L5_1 = {}
-L5_1.x = 1820.018
-L5_1.y = 215.857
-L5_1.z = 688.536
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 5
-L5_1 = {}
-L5_1.config_id = 217004
-L5_1.gadget_id = 70800104
-L6_1 = {}
-L6_1.x = 1705.84
-L6_1.y = 248.645
-L6_1.z = 631.06
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.area_id = 5
-L6_1 = {}
-L6_1.config_id = 217005
-L6_1.gadget_id = 70800104
-L7_1 = {}
-L7_1.x = 1731.07
-L7_1.y = 237.489
-L7_1.z = 674.378
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 5
-L7_1 = {}
-L7_1.config_id = 217012
-L7_1.gadget_id = 70220013
-L8_1 = {}
-L8_1.x = 1707.925
-L8_1.y = 244.741
-L8_1.z = 638.14
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.area_id = 5
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 217006
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 100
-L3_1 = {}
-L3_1.x = 1744.968
-L3_1.y = 234.203
-L3_1.z = 684.893
-L2_1.pos = L3_1
-L2_1.area_id = 5
-L3_1 = {}
-L3_1.config_id = 217008
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 150
-L4_1 = {}
-L4_1.x = 1744.922
-L4_1.y = 234.203
-L4_1.z = 688.42
-L3_1.pos = L4_1
-L3_1.area_id = 5
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1217006
-L2_1.name = "ENTER_REGION_217006"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_217006"
-L2_1.action = "action_EVENT_ENTER_REGION_217006"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1217007
-L3_1.name = "QUEST_FINISH_217007"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_QUEST_FINISH
-L3_1.event = L4_1
-L3_1.source = "4003712"
-L3_1.condition = "condition_EVENT_QUEST_FINISH_217007"
-L3_1.action = "action_EVENT_QUEST_FINISH_217007"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1217008
-L4_1.name = "LEAVE_REGION_217008"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_LEAVE_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_LEAVE_REGION_217008"
-L4_1.action = "action_EVENT_LEAVE_REGION_217008"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1217009
-L5_1.name = "VARIABLE_CHANGE_217009"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_VARIABLE_CHANGE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_VARIABLE_CHANGE_217009"
-L5_1.action = "action_EVENT_VARIABLE_CHANGE_217009"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1217010
-L6_1.name = "TIME_AXIS_PASS_217010"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_TIME_AXIS_PASS
-L6_1.event = L7_1
-L6_1.source = "fireTime"
-L6_1.condition = "condition_EVENT_TIME_AXIS_PASS_217010"
-L6_1.action = "action_EVENT_TIME_AXIS_PASS_217010"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1217011
-L7_1.name = "VARIABLE_CHANGE_217011"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_VARIABLE_CHANGE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_VARIABLE_CHANGE_217011"
-L7_1.action = "action_EVENT_VARIABLE_CHANGE_217011"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1217013
-L8_1.name = "VARIABLE_CHANGE_217013"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_VARIABLE_CHANGE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_VARIABLE_CHANGE_217013"
-L8_1.action = "action_EVENT_VARIABLE_CHANGE_217013"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1217014
-L9_1.name = "GROUP_LOAD_217014"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_GROUP_LOAD
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = ""
-L9_1.action = "action_EVENT_GROUP_LOAD_217014"
-L9_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "hasOpen"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "isAvailable"
-L3_1.value = 1
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "openFire"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 4
-L5_1.name = "closeFire"
-L5_1.value = 0
-L5_1.no_refresh = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 217001
-L5_1 = 217002
-L6_1 = 217003
-L7_1 = 217004
-L8_1 = 217005
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 217006
-L5_1 = 217008
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_217006"
-L5_1 = "QUEST_FINISH_217007"
-L6_1 = "LEAVE_REGION_217008"
-L7_1 = "VARIABLE_CHANGE_217009"
-L8_1 = "TIME_AXIS_PASS_217010"
-L9_1 = "VARIABLE_CHANGE_217011"
-L10_1 = "VARIABLE_CHANGE_217013"
-L11_1 = "GROUP_LOAD_217014"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 217012
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 217006 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "hasOpen"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAvailable"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133102217
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 217001, gadget_id = 70800104, pos = { x = 1708.828, y = 245.252, z = 635.756 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5 },
+	{ config_id = 217002, gadget_id = 70800104, pos = { x = 1718.505, y = 241.347, z = 672.808 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5 },
+	{ config_id = 217003, gadget_id = 70800104, pos = { x = 1820.018, y = 215.857, z = 688.536 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5 },
+	{ config_id = 217004, gadget_id = 70800104, pos = { x = 1705.840, y = 248.645, z = 631.060 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5 },
+	{ config_id = 217005, gadget_id = 70800104, pos = { x = 1731.070, y = 237.489, z = 674.378 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5 },
+	{ config_id = 217012, gadget_id = 70220013, pos = { x = 1707.925, y = 244.741, z = 638.140 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5 }
+}
+
+-- 区域
+regions = {
+	-- 2 小圈，烟花喷射
+	{ config_id = 217006, shape = RegionShape.SPHERE, radius = 100, pos = { x = 1744.968, y = 234.203, z = 684.893 }, area_id = 5 },
+	-- 4 大圈，烟花结束
+	{ config_id = 217008, shape = RegionShape.SPHERE, radius = 150, pos = { x = 1744.922, y = 234.203, z = 688.420 }, area_id = 5 }
+}
+
+-- 触发器
+triggers = {
+	-- 2 小圈，烟花喷射
+	{ config_id = 1217006, name = "ENTER_REGION_217006", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_217006", action = "action_EVENT_ENTER_REGION_217006", trigger_count = 0 },
+	-- 1 任务完成传递参数
+	{ config_id = 1217007, name = "QUEST_FINISH_217007", event = EventType.EVENT_QUEST_FINISH, source = "4003712", condition = "condition_EVENT_QUEST_FINISH_217007", action = "action_EVENT_QUEST_FINISH_217007", trigger_count = 0 },
+	-- 4 大圈，烟花结束
+	{ config_id = 1217008, name = "LEAVE_REGION_217008", event = EventType.EVENT_LEAVE_REGION, source = "", condition = "condition_EVENT_LEAVE_REGION_217008", action = "action_EVENT_LEAVE_REGION_217008", trigger_count = 0 },
+	-- 打开烟花，openFire
+	{ config_id = 1217009, name = "VARIABLE_CHANGE_217009", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_217009", action = "action_EVENT_VARIABLE_CHANGE_217009", trigger_count = 0 },
+	-- 3 时间轴，fireTime
+	{ config_id = 1217010, name = "TIME_AXIS_PASS_217010", event = EventType.EVENT_TIME_AXIS_PASS, source = "fireTime", condition = "condition_EVENT_TIME_AXIS_PASS_217010", action = "action_EVENT_TIME_AXIS_PASS_217010", trigger_count = 0 },
+	-- 关闭烟花，closeFire
+	{ config_id = 1217011, name = "VARIABLE_CHANGE_217011", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_217011", action = "action_EVENT_VARIABLE_CHANGE_217011", trigger_count = 0 },
+	-- 保底 任务参数变化
+	{ config_id = 1217013, name = "VARIABLE_CHANGE_217013", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_217013", action = "action_EVENT_VARIABLE_CHANGE_217013", trigger_count = 0 },
+	-- 重置
+	{ config_id = 1217014, name = "GROUP_LOAD_217014", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_217014", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "hasOpen", value = 0, no_refresh = true },
+	{ config_id = 2, name = "isAvailable", value = 1, no_refresh = false },
+	{ config_id = 3, name = "openFire", value = 0, no_refresh = false },
+	{ config_id = 4, name = "closeFire", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 217001, 217002, 217003, 217004, 217005 },
+		regions = { 217006, 217008 },
+		triggers = { "ENTER_REGION_217006", "QUEST_FINISH_217007", "LEAVE_REGION_217008", "VARIABLE_CHANGE_217009", "TIME_AXIS_PASS_217010", "VARIABLE_CHANGE_217011", "VARIABLE_CHANGE_217013", "GROUP_LOAD_217014" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 217012 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_217006(context, evt)
+	if evt.param1 ~= 217006 then return false end
+	
+	-- 判断变量"hasOpen"为1
+	if ScriptLib.GetGroupVariableValue(context, "hasOpen") ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"isAvailable"为1
+	if ScriptLib.GetGroupVariableValue(context, "isAvailable") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_217006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "openFire"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAvailable"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "fireTime"
-  L5_2 = {}
-  L6_2 = 60
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_217006(context, evt)
+	-- 将本组内变量名为 "openFire" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "openFire", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "isAvailable" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isAvailable", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 创建标识为"fireTime"，时间节点为{60}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "fireTime", {60}, false)
+	
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_217006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 4003712 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_QUEST_FINISH_217007(context, evt)
+	--检查ID为4003712的任务的完成状态是否为1（1=完成，0=失败）
+	--此事件需要配合Quest表使用，在Quest表里的完成执行中配置“通知group脚本”，则该任务完成后服务端会向对应的group发送通知，参数1填写场景ID，参数2填写group ID（如果不填则会通知所有group）
+	
+	--检查任务ID
+	if 4003712 ~= evt.param1 then
+		return false
+	end
+	
+	--检查任务成功状态
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_QUEST_FINISH_217007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "hasOpen"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_217007(context, evt)
+	-- 将本组内变量名为 "hasOpen" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "hasOpen", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_217007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "hasOpen"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionConfigId
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 217008 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_LEAVE_REGION_217008(context, evt)
+	-- 判断变量"hasOpen"为1
+	if ScriptLib.GetGroupVariableValue(context, "hasOpen") ~= 1 then
+			return false
+	end
+	
+	-- 判断是区域217008
+	if ScriptLib.GetRegionConfigId(context, { region_eid = evt.source_eid }) ~= 217008 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_LEAVE_REGION_217008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "closeFire"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "fireTime"
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_LEAVE_REGION_217008(context, evt)
+	-- 将本组内变量名为 "closeFire" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "closeFire", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 停止标识为"fireTime"的时间轴
+	ScriptLib.EndTimeAxis(context, "fireTime")
+	
+	
+	return 0
 end
-action_EVENT_LEAVE_REGION_217008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "openFire"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_217009(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"openFire"为1
+	if ScriptLib.GetGroupVariableValue(context, "openFire") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_217009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "openFire"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 217001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 217002
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 217003
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 217004
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 217005
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_217009(context, evt)
+	-- 将本组内变量名为 "openFire" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "openFire", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 将configid为 217001 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 217001, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 217002 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 217002, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 217003 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 217003, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 217004 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 217004, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 217005 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 217005, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_217009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_217010(context, evt)
+	if evt.param1 ~= 1 then
+	   return false
+	end
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_217010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "closeFire"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.EndTimeAxis
-  L3_2 = A0_2
-  L4_2 = "fireTime"
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_217010(context, evt)
+	-- 将本组内变量名为 "closeFire" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "closeFire", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 停止标识为"fireTime"的时间轴
+	ScriptLib.EndTimeAxis(context, "fireTime")
+	
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_217010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "closeFire"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_217011(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"closeFire"为1
+	if ScriptLib.GetGroupVariableValue(context, "closeFire") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_217011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "closeFire"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 217001
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 217002
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 217003
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 217004
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 217005
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_217011(context, evt)
+	-- 将本组内变量名为 "closeFire" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "closeFire", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 将configid为 217001 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 217001, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 217002 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 217002, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 217003 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 217003, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 217004 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 217004, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 217005 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 217005, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_217011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "hasOpen"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAvailable"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_217013(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"hasOpen"为1
+	if ScriptLib.GetGroupVariableValue(context, "hasOpen") ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"isAvailable"为1
+	if ScriptLib.GetGroupVariableValue(context, "isAvailable") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_217013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "openFire"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAvailable"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "fireTime"
-  L5_2 = {}
-  L6_2 = 60
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_217013(context, evt)
+	-- 将本组内变量名为 "openFire" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "openFire", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "isAvailable" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isAvailable", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 创建标识为"fireTime"，时间节点为{60}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "fireTime", {60}, false)
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_217013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAvailable"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_217014(context, evt)
+	-- 将本组内变量名为 "isAvailable" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isAvailable", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_217014 = L1_1

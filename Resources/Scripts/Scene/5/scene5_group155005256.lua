@@ -1,229 +1,157 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 155005256
-L1_1 = {}
-L1_1.group_ID = 155005256
-L1_1.gadget_sealday = 256001
-L1_1.gadget_sealnight = 256002
-L2_1 = {}
-L3_1 = {}
-L4_1 = L1_1.gadget_sealday
-L3_1[1] = L4_1
-L4_1 = {}
-L5_1 = L1_1.gadget_sealnight
-L4_1[1] = L5_1
-L5_1 = {}
-function L6_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 1
-  L1_2(L2_2, L3_2, L4_2)
+-- 基础信息
+local base_info = {
+	group_id = 155005256
+}
+
+-- Trigger变量
+local defs = {
+	group_ID = 155005256,
+	gadget_sealday = 256001,
+	gadget_sealnight = 256002
+}
+
+-- DEFS_MISCS
+local EnvControlGadgets = {}
+local DayAppearGadgets = {defs.gadget_sealday}
+local NightAppearGadgets = {defs.gadget_sealnight}
+
+
+
+
+local gameplayStateFuncitons = 
+{
+	["0"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",1)
+		
+	end,
+	["1"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",0)
+
+		ScriptLib.AddExtraGroupSuite(context, defs.group_ID, 2)
+
+
+	
+	end,
+	["2"] = function(context)
+		
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",1)
+		ScriptLib.AddExtraGroupSuite(context, defs.group_ID, 3)
+		ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_ID, defs.gadget_sealday, 202)
+		ScriptLib.SetGroupGadgetStateByConfigId(context, defs.group_ID, defs.gadget_sealnight, 202)
+	end
+}
+
+
+function UpdateGamePlayState(context)
+	local state = ScriptLib.GetGroupVariableValue(context, "gameplayState") 
+
+	gameplayStateFuncitons[tostring(state)](context)
+
 end
-L5_1["0"] = L6_1
-function L6_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 0
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddExtraGroupSuite
-  L2_2 = A0_2
-  L3_2 = L1_1.group_ID
-  L4_2 = 2
-  L1_2(L2_2, L3_2, L4_2)
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 256001, gadget_id = 70360314, pos = { x = 402.077, y = 293.475, z = 273.629 }, rot = { x = 0.000, y = 319.838, z = 0.000 }, level = 36, area_id = 200 },
+	{ config_id = 256002, gadget_id = 70360315, pos = { x = 395.578, y = 293.570, z = 281.330 }, rot = { x = 0.000, y = 319.838, z = 0.000 }, level = 36, area_id = 200 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1256003, name = "GROUP_LOAD_256003", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_256003", trigger_count = 0 },
+	{ config_id = 1256004, name = "VARIABLE_CHANGE_256004", event = EventType.EVENT_VARIABLE_CHANGE, source = "gameplayState", condition = "", action = "action_EVENT_VARIABLE_CHANGE_256004", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "gameplayState", value = 1, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_256003", "VARIABLE_CHANGE_256004" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_256003(context, evt)
+	
+	UpdateGamePlayState(context)
+	return 0
 end
-L5_1["1"] = L6_1
-function L6_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 1
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.AddExtraGroupSuite
-  L2_2 = A0_2
-  L3_2 = L1_1.group_ID
-  L4_2 = 3
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupGadgetStateByConfigId
-  L2_2 = A0_2
-  L3_2 = L1_1.group_ID
-  L4_2 = L1_1.gadget_sealday
-  L5_2 = 202
-  L1_2(L2_2, L3_2, L4_2, L5_2)
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupGadgetStateByConfigId
-  L2_2 = A0_2
-  L3_2 = L1_1.group_ID
-  L4_2 = L1_1.gadget_sealnight
-  L5_2 = 202
-  L1_2(L2_2, L3_2, L4_2, L5_2)
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_256004(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	UpdateGamePlayState(context)
+	return 0
 end
-L5_1["2"] = L6_1
-function L6_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.GetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "gameplayState"
-  L1_2 = L1_2(L2_2, L3_2)
-  L2_2 = tostring
-  L3_2 = L1_2
-  L2_2 = L2_2(L3_2)
-  L2_2 = L5_1[L2_2]
-  L3_2 = A0_2
-  L2_2(L3_2)
-end
-UpdateGamePlayState = L6_1
-L6_1 = {}
-monsters = L6_1
-L6_1 = {}
-npcs = L6_1
-L6_1 = {}
-L7_1 = {}
-L7_1.config_id = 256001
-L7_1.gadget_id = 70360314
-L8_1 = {}
-L8_1.x = 402.077
-L8_1.y = 293.475
-L8_1.z = 273.629
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 319.838
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 36
-L7_1.area_id = 200
-L8_1 = {}
-L8_1.config_id = 256002
-L8_1.gadget_id = 70360315
-L9_1 = {}
-L9_1.x = 395.578
-L9_1.y = 293.57
-L9_1.z = 281.33
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 319.838
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 36
-L8_1.area_id = 200
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-gadgets = L6_1
-L6_1 = {}
-regions = L6_1
-L6_1 = {}
-L7_1 = {}
-L7_1.config_id = 1256003
-L7_1.name = "GROUP_LOAD_256003"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GROUP_LOAD
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = ""
-L7_1.action = "action_EVENT_GROUP_LOAD_256003"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1256004
-L8_1.name = "VARIABLE_CHANGE_256004"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_VARIABLE_CHANGE
-L8_1.event = L9_1
-L8_1.source = "gameplayState"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_VARIABLE_CHANGE_256004"
-L8_1.trigger_count = 0
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-triggers = L6_1
-L6_1 = {}
-L7_1 = {}
-L7_1.configId = 1
-L7_1.name = "gameplayState"
-L7_1.value = 1
-L7_1.no_refresh = true
-L6_1[1] = L7_1
-variables = L6_1
-L6_1 = {}
-L6_1.suite = 1
-L6_1.end_suite = 0
-L6_1.rand_suite = false
-init_config = L6_1
-L6_1 = {}
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L9_1 = "GROUP_LOAD_256003"
-L10_1 = "VARIABLE_CHANGE_256004"
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L7_1.triggers = L8_1
-L7_1.rand_weight = 100
-L8_1 = {}
-L9_1 = {}
-L8_1.monsters = L9_1
-L9_1 = {}
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L8_1.triggers = L9_1
-L8_1.rand_weight = 100
-L9_1 = {}
-L10_1 = {}
-L9_1.monsters = L10_1
-L10_1 = {}
-L9_1.gadgets = L10_1
-L10_1 = {}
-L9_1.regions = L10_1
-L10_1 = {}
-L9_1.triggers = L10_1
-L9_1.rand_weight = 100
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-suites = L6_1
-function L6_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_GROUP_LOAD_256003 = L6_1
-function L6_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_VARIABLE_CHANGE_256004 = L6_1
-L6_1 = require
-L7_1 = "V2_4/EnvState"
-L6_1(L7_1)
+
+require "V2_4/EnvState"

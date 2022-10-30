@@ -1,119 +1,83 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133008565
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 565001
-L2_1.gadget_id = 70211145
-L3_1 = {}
-L3_1.x = 901.832
-L3_1.y = 198.767
-L3_1.z = -1155.122
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 208.428
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 26
-L2_1.drop_tag = "\233\155\170\229\177\177\231\142\137\233\171\147\233\171\152\231\186\167\232\146\153\229\190\183"
-L2_1.isOneoff = true
-L2_1.persistent = true
-L3_1 = {}
-L3_1.name = "chest"
-L3_1.exp = 4
-L2_1.explore = L3_1
-L2_1.area_id = 10
-L3_1 = {}
-L3_1.config_id = 565002
-L3_1.gadget_id = 70211101
-L4_1 = {}
-L4_1.x = 900.409
-L4_1.y = 198.821
-L4_1.z = -1154.337
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 206.609
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 26
-L3_1.drop_tag = "\233\155\170\229\177\177\232\167\163\232\176\156\228\189\142\231\186\167\232\146\153\229\190\183"
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.name = "chest"
-L4_1.exp = 1
-L3_1.explore = L4_1
-L3_1.area_id = 10
-L4_1 = {}
-L4_1.config_id = 565003
-L4_1.gadget_id = 70211101
-L5_1 = {}
-L5_1.x = 903.309
-L5_1.y = 198.763
-L5_1.z = -1155.814
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 208.944
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 26
-L4_1.drop_tag = "\233\155\170\229\177\177\232\167\163\232\176\156\228\189\142\231\186\167\232\146\153\229\190\183"
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.name = "chest"
-L5_1.exp = 1
-L4_1.explore = L5_1
-L4_1.area_id = 10
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 565001
-L6_1 = 565002
-L7_1 = 565003
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133008565
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 565001, gadget_id = 70211145, pos = { x = 901.832, y = 198.767, z = -1155.122 }, rot = { x = 0.000, y = 208.428, z = 0.000 }, level = 26, drop_tag = "雪山玉髓高级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 4 }, area_id = 10 },
+	{ config_id = 565002, gadget_id = 70211101, pos = { x = 900.409, y = 198.821, z = -1154.337 }, rot = { x = 0.000, y = 206.609, z = 0.000 }, level = 26, drop_tag = "雪山解谜低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 10 },
+	{ config_id = 565003, gadget_id = 70211101, pos = { x = 903.309, y = 198.763, z = -1155.814 }, rot = { x = 0.000, y = 208.944, z = 0.000 }, level = 26, drop_tag = "雪山解谜低级蒙德", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 10 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 565001, 565002, 565003 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

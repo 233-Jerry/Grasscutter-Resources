@@ -1,102 +1,91 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 250032038
-L1_1 = {}
-L1_1.timer = 30
-L1_1.group_id = 250032038
-L1_1.challange_group_id = 250032031
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.operator_id = 38001
-L4_1.effect_id = 38002
-L5_1 = {}
-L6_1 = 38003
-L5_1[1] = L6_1
-L4_1.gadget_id = L5_1
-L3_1[1] = L4_1
-L4_1 = {}
-monsters = L4_1
-L4_1 = {}
-npcs = L4_1
-L4_1 = {}
-L5_1 = {}
-L5_1.config_id = 38001
-L5_1.gadget_id = 70360145
-L6_1 = {}
-L6_1.x = 36.018
-L6_1.y = -4.153
-L6_1.z = -68.185
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 90.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 38002
-L6_1.gadget_id = 70360140
-L7_1 = {}
-L7_1.x = 36.018
-L7_1.y = -4.153
-L7_1.z = -68.185
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 90.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 38003
-L7_1.gadget_id = 70690011
-L8_1 = {}
-L8_1.x = 27.0
-L8_1.y = -9.572
-L8_1.z = -68.678
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = GadgetState
-L8_1 = L8_1.GearStart
-L7_1.state = L8_1
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-gadgets = L4_1
-L4_1 = {}
-regions = L4_1
-L4_1 = {}
-triggers = L4_1
-L4_1 = {}
-variables = L4_1
-L4_1 = {}
-L4_1.suite = 1
-L4_1.end_suite = 0
-L4_1.rand_suite = false
-init_config = L4_1
-L4_1 = {}
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 38001
-L8_1 = 38002
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L4_1[1] = L5_1
-suites = L4_1
-L4_1 = require
-L5_1 = "TowerDefense_Trap"
-L4_1(L5_1)
+-- 基础信息
+local base_info = {
+	group_id = 250032038
+}
+
+-- Trigger变量
+local defs = {
+	timer = 30,
+	group_id = 250032038,
+	challange_group_id = 250032031
+}
+
+-- DEFS_MISCS
+local light_bridge={
+
+}
+local wind_field={
+	{operator_id=38001,effect_id=38002,gadget_id={38003}}
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 38001, gadget_id = 70360145, pos = { x = 36.018, y = -4.153, z = -68.185 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 },
+	{ config_id = 38002, gadget_id = 70360140, pos = { x = 36.018, y = -4.153, z = -68.185 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 },
+	{ config_id = 38003, gadget_id = 70690011, pos = { x = 27.000, y = -9.572, z = -68.678 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearStart }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 38001, 38002 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "TowerDefense_Trap"

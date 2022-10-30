@@ -1,303 +1,119 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 177008081
-L1_1 = {}
-L1_1.groupID = 177008081
-L1_1.challenge_gadget = 81006
-L1_1.duration = 240
-L1_1.regionID = 81008
-L1_1.challengeID = 111195
-L2_1 = {}
-L3_1 = 81001
-L4_1 = 81002
-L5_1 = 81003
-L6_1 = 81004
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L1_1.monster_array = L2_1
-L1_1.monster_min = 2
-L1_1.monster_max = 2
-L1_1.monster_count = 4
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 81001
-L3_1.monster_id = 22040101
-L4_1 = {}
-L4_1.x = -225.474
-L4_1.y = 244.346
-L4_1.z = 162.426
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 197.749
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.drop_id = 1000100
-L3_1.disableWander = true
-L4_1 = {}
-L5_1 = 1040
-L4_1[1] = L5_1
-L3_1.affix = L4_1
-L3_1.pose_id = 101
-L3_1.area_id = 210
-L4_1 = {}
-L4_1.config_id = 81002
-L4_1.monster_id = 22040201
-L5_1 = {}
-L5_1.x = -232.234
-L5_1.y = 245.141
-L5_1.z = 162.802
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 153.56
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.drop_id = 1000100
-L4_1.disableWander = true
-L5_1 = {}
-L6_1 = 1040
-L5_1[1] = L6_1
-L4_1.affix = L5_1
-L4_1.pose_id = 101
-L4_1.area_id = 210
-L5_1 = {}
-L5_1.config_id = 81003
-L5_1.monster_id = 22040201
-L6_1 = {}
-L6_1.x = -223.155
-L6_1.y = 243.803
-L6_1.z = 158.683
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 239.886
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 36
-L5_1.drop_id = 1000100
-L5_1.disableWander = true
-L6_1 = {}
-L7_1 = 1040
-L6_1[1] = L7_1
-L5_1.affix = L6_1
-L5_1.pose_id = 101
-L5_1.area_id = 210
-L6_1 = {}
-L6_1.config_id = 81004
-L6_1.monster_id = 22050101
-L7_1 = {}
-L7_1.x = -222.178
-L7_1.y = 243.971
-L7_1.z = 151.587
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 309.152
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 36
-L6_1.drop_id = 1000100
-L6_1.disableWander = true
-L7_1 = {}
-L8_1 = 1040
-L7_1[1] = L8_1
-L6_1.affix = L7_1
-L6_1.pose_id = 101
-L6_1.area_id = 210
-L7_1 = {}
-L7_1.config_id = 81005
-L7_1.monster_id = 22040101
-L8_1 = {}
-L8_1.x = -229.324
-L8_1.y = 245.71
-L8_1.z = 151.188
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 16.634
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 36
-L7_1.drop_id = 1000100
-L7_1.disableWander = true
-L8_1 = {}
-L9_1 = 1040
-L8_1[1] = L9_1
-L7_1.affix = L8_1
-L7_1.pose_id = 101
-L7_1.area_id = 210
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 81006
-L3_1.gadget_id = 70330160
-L4_1 = {}
-L4_1.x = -227.355
-L4_1.y = 244.696
-L4_1.z = 155.233
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 19
-L3_1.persistent = true
-L3_1.area_id = 210
-L4_1 = {}
-L4_1.config_id = 81007
-L4_1.gadget_id = 70360001
-L5_1 = {}
-L5_1.x = -226.341
-L5_1.y = 245.689
-L5_1.z = 155.234
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 19
-L4_1.persistent = true
-L4_1.area_id = 210
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 81008
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 50
-L4_1 = {}
-L4_1.x = -228.504
-L4_1.y = 244.946
-L4_1.z = 157.466
-L3_1.pos = L4_1
-L3_1.area_id = 210
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "hasFinished"
-L3_1.value = 0
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "isUnlock"
-L4_1.value = 0
-L4_1.no_refresh = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1081009
-L4_1.name = "SELECT_OPTION_81009"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SELECT_OPTION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SELECT_OPTION_81009"
-L4_1.action = "action_EVENT_SELECT_OPTION_81009"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1081010
-L5_1.name = "CHALLENGE_SUCCESS_81010"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_CHALLENGE_SUCCESS
-L5_1.event = L6_1
-L5_1.source = "1"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_CHALLENGE_SUCCESS_81010"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1081011
-L6_1.name = "CHALLENGE_FAIL_81011"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_CHALLENGE_FAIL
-L6_1.event = L7_1
-L6_1.source = "1"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_CHALLENGE_FAIL_81011"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1081012
-L7_1.name = "GADGET_STATE_CHANGE_81012"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GADGET_STATE_CHANGE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_81012"
-L7_1.action = "action_EVENT_GADGET_STATE_CHANGE_81012"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1081013
-L8_1.name = "GADGET_CREATE_81013"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_GADGET_CREATE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_GADGET_CREATE_81013"
-L8_1.action = "action_EVENT_GADGET_CREATE_81013"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1081014
-L9_1.name = "GROUP_LOAD_81014"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_GROUP_LOAD
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_GROUP_LOAD_81014"
-L9_1.action = "action_EVENT_GROUP_LOAD_81014"
-L9_1.trigger_count = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 81006
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 81008
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-L2_1 = require
-L3_1 = "V2_5/RecircleChallenge"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 177008081
+}
+
+-- DEFS_MISCS
+local defs = {
+	--groupID
+	groupID = 177008081,
+
+	--挑战操作台
+	challenge_gadget = 81006,
+
+	--挑战时间
+	duration = 240,
+
+	--出范围失败region
+	regionID = 81008,
+
+	--挑战ID
+	challengeID = 111195,
+
+	--怪物列表
+	monster_array = {81001,81002,81003,81004},
+	monster_min = 2,
+	monster_max = 2,
+	monster_count = 4
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 81001, monster_id = 22040101, pos = { x = -225.474, y = 244.346, z = 162.426 }, rot = { x = 0.000, y = 197.749, z = 0.000 }, level = 36, drop_id = 1000100, disableWander = true, affix = { 1040 }, pose_id = 101, area_id = 210 },
+	{ config_id = 81002, monster_id = 22040201, pos = { x = -232.234, y = 245.141, z = 162.802 }, rot = { x = 0.000, y = 153.560, z = 0.000 }, level = 36, drop_id = 1000100, disableWander = true, affix = { 1040 }, pose_id = 101, area_id = 210 },
+	{ config_id = 81003, monster_id = 22040201, pos = { x = -223.155, y = 243.803, z = 158.683 }, rot = { x = 0.000, y = 239.886, z = 0.000 }, level = 36, drop_id = 1000100, disableWander = true, affix = { 1040 }, pose_id = 101, area_id = 210 },
+	{ config_id = 81004, monster_id = 22050101, pos = { x = -222.178, y = 243.971, z = 151.587 }, rot = { x = 0.000, y = 309.152, z = 0.000 }, level = 36, drop_id = 1000100, disableWander = true, affix = { 1040 }, pose_id = 101, area_id = 210 },
+	{ config_id = 81005, monster_id = 22040101, pos = { x = -229.324, y = 245.710, z = 151.188 }, rot = { x = 0.000, y = 16.634, z = 0.000 }, level = 36, drop_id = 1000100, disableWander = true, affix = { 1040 }, pose_id = 101, area_id = 210 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 81006, gadget_id = 70330160, pos = { x = -227.355, y = 244.696, z = 155.233 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 19, persistent = true, area_id = 210 },
+	{ config_id = 81007, gadget_id = 70360001, pos = { x = -226.341, y = 245.689, z = 155.234 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 19, persistent = true, area_id = 210 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 81008, shape = RegionShape.SPHERE, radius = 50, pos = { x = -228.504, y = 244.946, z = 157.466 }, area_id = 210 }
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "hasFinished", value = 0, no_refresh = false },
+	{ config_id = 2, name = "isUnlock", value = 0, no_refresh = true }
+}
+
+-- 废弃数据
+garbages = {
+	triggers = {
+		{ config_id = 1081009, name = "SELECT_OPTION_81009", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_81009", action = "action_EVENT_SELECT_OPTION_81009", trigger_count = 0 },
+		{ config_id = 1081010, name = "CHALLENGE_SUCCESS_81010", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "1", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_81010", trigger_count = 0 },
+		{ config_id = 1081011, name = "CHALLENGE_FAIL_81011", event = EventType.EVENT_CHALLENGE_FAIL, source = "1", condition = "", action = "action_EVENT_CHALLENGE_FAIL_81011", trigger_count = 0 },
+		{ config_id = 1081012, name = "GADGET_STATE_CHANGE_81012", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_81012", action = "action_EVENT_GADGET_STATE_CHANGE_81012", trigger_count = 0 },
+		{ config_id = 1081013, name = "GADGET_CREATE_81013", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_81013", action = "action_EVENT_GADGET_CREATE_81013", trigger_count = 0 },
+		{ config_id = 1081014, name = "GROUP_LOAD_81014", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_81014", action = "action_EVENT_GROUP_LOAD_81014", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { 81006 },
+		regions = { 81008 },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_5/RecircleChallenge"

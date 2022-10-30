@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    170520
-  ],
+  "rewardIdList": [170520],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7052001,
-            0
-          ],
+          "param": [7052001, 0],
           "count": 0
         }
       ],
@@ -52,10 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q7052001_N30234",
-          "0"
-        ],
+        "param": ["Q7052001_N30234", "0"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -85,10 +77,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7052001",
-            "2"
-          ]
+          "param": ["7052001", "2"]
         }
       ],
       "priority": 5,
@@ -97,12 +86,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 705200101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30234,
-        30243,
-        30244,
-        1018
-      ],
+      "npcIdRawNum": [30234, 30243, 30244, 1018],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Vintage_70520/Q7052001",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -138,10 +122,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7052001",
-            "2"
-          ]
+          "param": ["7052001", "2"]
         }
       ],
       "priority": 7,
@@ -150,9 +131,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 705200201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30234
-      ],
+      "npcIdRawNum": [30234],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

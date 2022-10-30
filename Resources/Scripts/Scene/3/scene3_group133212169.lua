@@ -1,107 +1,83 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133212169
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 169001
-L2_1.monster_id = 25100101
-L3_1 = {}
-L3_1.x = -3453.713
-L3_1.y = 200.548
-L3_1.z = -2648.15
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 310.624
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 27
-L2_1.drop_id = 1000100
-L2_1.disableWander = true
-L2_1.pose_id = 1001
-L2_1.area_id = 13
-L3_1 = {}
-L3_1.config_id = 169002
-L3_1.monster_id = 25080101
-L4_1 = {}
-L4_1.x = -3452.987
-L4_1.y = 200.649
-L4_1.z = -2651.793
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 317.639
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 27
-L3_1.drop_id = 1000100
-L3_1.disableWander = true
-L3_1.pose_id = 1
-L3_1.area_id = 13
-L4_1 = {}
-L4_1.config_id = 169003
-L4_1.monster_id = 25080101
-L5_1 = {}
-L5_1.x = -3450.901
-L5_1.y = 200.477
-L5_1.z = -2647.251
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 308.749
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 27
-L4_1.drop_id = 1000100
-L4_1.disableWander = true
-L4_1.pose_id = 1
-L4_1.area_id = 13
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 169001
-L6_1 = 169002
-L7_1 = 169003
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133212169
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 169001, monster_id = 25100101, pos = { x = -3453.713, y = 200.548, z = -2648.150 }, rot = { x = 0.000, y = 310.624, z = 0.000 }, level = 27, drop_id = 1000100, disableWander = true, pose_id = 1001, area_id = 13 },
+	{ config_id = 169002, monster_id = 25080101, pos = { x = -3452.987, y = 200.649, z = -2651.793 }, rot = { x = 0.000, y = 317.639, z = 0.000 }, level = 27, drop_id = 1000100, disableWander = true, pose_id = 1, area_id = 13 },
+	{ config_id = 169003, monster_id = 25080101, pos = { x = -3450.901, y = 200.477, z = -2647.251 }, rot = { x = 0.000, y = 308.749, z = 0.000 }, level = 27, drop_id = 1000100, disableWander = true, pose_id = 1, area_id = 13 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 169001, 169002, 169003 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

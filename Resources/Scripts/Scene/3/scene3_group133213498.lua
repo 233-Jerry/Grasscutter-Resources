@@ -1,155 +1,102 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133213498
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 498001
-L2_1.gadget_id = 70360050
-L3_1 = {}
-L3_1.x = -3915.056
-L3_1.y = 205.679
-L3_1.z = -3296.745
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 1.621
-L3_1.y = 7.429
-L3_1.z = 350.8
-L2_1.rot = L3_1
-L2_1.level = 27
-L2_1.area_id = 12
-L3_1 = {}
-L3_1.config_id = 498002
-L3_1.gadget_id = 70900384
-L4_1 = {}
-L4_1.x = -3914.908
-L4_1.y = 207.422
-L4_1.z = -3298.253
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 27
-L3_1.area_id = 12
-L4_1 = {}
-L4_1.config_id = 498003
-L4_1.gadget_id = 70210101
-L5_1 = {}
-L5_1.x = -3917.928
-L5_1.y = 202.885
-L5_1.z = -3299.004
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 26
-L4_1.drop_tag = "\230\144\156\229\136\174\231\130\185\232\167\163\232\176\156\230\173\166\229\153\168\231\168\187\229\166\187"
-L4_1.persistent = true
-L4_1.area_id = 12
-L5_1 = {}
-L5_1.config_id = 498004
-L5_1.gadget_id = 70210101
-L6_1 = {}
-L6_1.x = -3918.908
-L6_1.y = 203.16
-L6_1.z = -3297.243
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 9.68
-L6_1.y = 193.05
-L6_1.z = 22.738
-L5_1.rot = L6_1
-L5_1.level = 26
-L5_1.drop_tag = "\230\144\156\229\136\174\231\130\185\232\167\163\232\176\156\233\129\151\231\137\169\231\168\187\229\166\187"
-L5_1.persistent = true
-L5_1.area_id = 12
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1498005
-L2_1.name = "ANY_GADGET_DIE_498005"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_GADGET_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_GADGET_DIE_498005"
-L2_1.action = "action_EVENT_ANY_GADGET_DIE_498005"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 498002
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ANY_GADGET_DIE_498005"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 498001
-L6_1 = 498003
-L7_1 = 498004
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 498002 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133213498
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 498001, gadget_id = 70360050, pos = { x = -3915.056, y = 205.679, z = -3296.745 }, rot = { x = 1.621, y = 7.429, z = 350.800 }, level = 27, area_id = 12 },
+	{ config_id = 498002, gadget_id = 70900384, pos = { x = -3914.908, y = 207.422, z = -3298.253 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, area_id = 12 },
+	{ config_id = 498003, gadget_id = 70210101, pos = { x = -3917.928, y = 202.885, z = -3299.004 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, drop_tag = "搜刮点解谜武器稻妻", persistent = true, area_id = 12 },
+	{ config_id = 498004, gadget_id = 70210101, pos = { x = -3918.908, y = 203.160, z = -3297.243 }, rot = { x = 9.680, y = 193.050, z = 22.738 }, level = 26, drop_tag = "搜刮点解谜遗物稻妻", persistent = true, area_id = 12 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1498005, name = "ANY_GADGET_DIE_498005", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_498005", action = "action_EVENT_ANY_GADGET_DIE_498005" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 498002 },
+		regions = { },
+		triggers = { "ANY_GADGET_DIE_498005" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 498001, 498003, 498004 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_498005(context, evt)
+	if 498002 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_GADGET_DIE_498005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133213498
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_498005(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133213498, 2)
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_498005 = L1_1

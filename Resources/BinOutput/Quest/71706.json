@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_ITEM_GIVING",
-          "param": [
-            7170601,
-            0
-          ],
+          "param": [7170601, 0],
           "count": 0
         }
       ],
@@ -50,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "2204"
-        ],
+        "param": ["2204"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -86,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7170602,
-            0
-          ],
+          "param": [7170602, 0],
           "count": 0
         }
       ],
@@ -97,9 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "2204"
-        ],
+        "param": ["2204"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -129,16 +119,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7170601",
-            "2"
-          ]
+          "param": ["7170601", "2"]
         },
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
-          "param": [
-            "7170601"
-          ]
+          "param": ["7170601"]
         }
       ],
       "priority": 1,
@@ -147,9 +132,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 717060101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        2204
-      ],
+      "npcIdRawNum": [2204],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -185,10 +168,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7170602",
-            "2"
-          ]
+          "param": ["7170602", "2"]
         }
       ],
       "priority": 1,
@@ -197,9 +177,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 717060201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        2204
-      ],
+      "npcIdRawNum": [2204],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

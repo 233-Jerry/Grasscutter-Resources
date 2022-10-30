@@ -1,164 +1,117 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 144003059
-L1_1 = {}
-L1_1.group_id = 144003059
-L1_1.gadget_signal_id = 59001
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 59001
-L3_1.gadget_id = 70360001
-L4_1 = {}
-L4_1.x = -620.117
-L4_1.y = 207.578
-L4_1.z = 32.411
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 103
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 59003
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 10
-L4_1 = {}
-L4_1.x = -624.327
-L4_1.y = 207.62
-L4_1.z = 32.061
-L3_1.pos = L4_1
-L3_1.area_id = 103
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1059003
-L3_1.name = "ENTER_REGION_59003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_59003"
-L3_1.action = "action_EVENT_ENTER_REGION_59003"
-L3_1.trigger_count = 0
-L2_1[1] = L3_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 59004
-L4_1 = {}
-L4_1.x = -613.557
-L4_1.y = 206.32
-L4_1.z = 36.772
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 53.872
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.area_id = 103
-L2_1[1] = L3_1
-points = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 59002
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 5
-L5_1 = {}
-L5_1.x = -620.117
-L5_1.y = 207.578
-L5_1.z = 32.411
-L4_1.pos = L5_1
-L4_1.area_id = 103
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1059002
-L4_1.name = "ENTER_REGION_59002"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_59002"
-L4_1.action = "action_EVENT_ENTER_REGION_59002"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 59001
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 59003
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ENTER_REGION_59003"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 59003 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 144003059
+}
+
+-- Trigger变量
+local defs = {
+	group_id = 144003059,
+	gadget_signal_id = 59001
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 59001, gadget_id = 70360001, pos = { x = -620.117, y = 207.578, z = 32.411 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 103 }
+}
+
+-- 区域
+regions = {
+	-- 靠近海上浮标后更新信号源
+	{ config_id = 59003, shape = RegionShape.SPHERE, radius = 10, pos = { x = -624.327, y = 207.620, z = 32.061 }, area_id = 103 }
+}
+
+-- 触发器
+triggers = {
+	-- 靠近海上浮标后更新信号源
+	{ config_id = 1059003, name = "ENTER_REGION_59003", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_59003", action = "action_EVENT_ENTER_REGION_59003", trigger_count = 0 }
+}
+
+-- 点位
+points = {
+	-- 声明创建船只的transform
+	{ config_id = 59004, pos = { x = -613.557, y = 206.320, z = 36.772 }, rot = { x = 0.000, y = 53.872, z = 0.000 }, area_id = 103 }
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	regions = {
+		{ config_id = 59002, shape = RegionShape.SPHERE, radius = 5, pos = { x = -620.117, y = 207.578, z = 32.411 }, area_id = 103 }
+	},
+	triggers = {
+		{ config_id = 1059002, name = "ENTER_REGION_59002", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_59002", action = "action_EVENT_ENTER_REGION_59002" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 59001 },
+		regions = { 59003 },
+		triggers = { "ENTER_REGION_59003" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_59003(context, evt)
+	if evt.param1 ~= 59003 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_59003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.UnlockFloatSignal
-  L3_2 = A0_2
-  L4_2 = L1_1.group_id
-  L5_2 = L1_1.gadget_signal_id
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_59003(context, evt)
+	ScriptLib.UnlockFloatSignal(context, defs.group_id, defs.gadget_signal_id)
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_59003 = L2_1

@@ -1,293 +1,147 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 133212078
-L1_1 = {}
-L1_1.group_ID = 133212078
-L1_1.gadget_1 = 78001
-L1_1.rotation_1 = 0
-L1_1.gadget_2 = 78002
-L1_1.rotation_2 = 90
-L1_1.gadget_3 = 78003
-L1_1.rotation_3 = 180
-L1_1.gadget_4 = 78006
-L1_1.rotation_4 = 270
-L1_1.gadget_5 = 0
-L1_1.rotation_5 = 0
-L2_1 = {}
-L1_1.gadget_connect1 = L2_1
-L2_1 = {}
-L1_1.gadget_connect2 = L2_1
-L2_1 = {}
-L1_1.gadget_connect3 = L2_1
-L2_1 = {}
-L1_1.gadget_connect4 = L2_1
-L2_1 = {}
-L1_1.gadget_connect5 = L2_1
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 78001
-L3_1.gadget_id = 70330081
-L4_1 = {}
-L4_1.x = -3468.332
-L4_1.y = 200.761
-L4_1.z = -1968.643
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 359.708
-L4_1.y = 115.644
-L4_1.z = 2.424
-L3_1.rot = L4_1
-L3_1.level = 2
-L3_1.is_use_point_array = true
-L3_1.area_id = 13
-L4_1 = {}
-L4_1.config_id = 78002
-L4_1.gadget_id = 70330081
-L5_1 = {}
-L5_1.x = -3473.844
-L5_1.y = 201.363
-L5_1.z = -1974.356
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 113.868
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 2
-L4_1.is_use_point_array = true
-L4_1.area_id = 13
-L5_1 = {}
-L5_1.config_id = 78003
-L5_1.gadget_id = 70330081
-L6_1 = {}
-L6_1.x = -3475.834
-L6_1.y = 201.643
-L6_1.z = -1968.592
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 116.732
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 2
-L5_1.is_use_point_array = true
-L5_1.area_id = 13
-L6_1 = {}
-L6_1.config_id = 78004
-L6_1.gadget_id = 70330084
-L7_1 = {}
-L7_1.x = -3468.249
-L7_1.y = 200.523
-L7_1.z = -1968.648
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 113.385
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 2
-L6_1.area_id = 13
-L7_1 = {}
-L7_1.config_id = 78006
-L7_1.gadget_id = 70330081
-L8_1 = {}
-L8_1.x = -3466.522
-L8_1.y = 200.433
-L8_1.z = -1973.359
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 116.732
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 27
-L7_1.is_use_point_array = true
-L7_1.area_id = 13
-L8_1 = {}
-L8_1.config_id = 78008
-L8_1.gadget_id = 70330084
-L9_1 = {}
-L9_1.x = -3466.426
-L9_1.y = 200.383
-L9_1.z = -1973.405
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 113.385
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 27
-L8_1.area_id = 13
-L9_1 = {}
-L9_1.config_id = 78009
-L9_1.gadget_id = 70330084
-L10_1 = {}
-L10_1.x = -3473.704
-L10_1.y = 201.074
-L10_1.z = -1974.416
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 113.385
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 27
-L9_1.area_id = 13
-L10_1 = {}
-L10_1.config_id = 78010
-L10_1.gadget_id = 70330084
-L11_1 = {}
-L11_1.x = -3475.908
-L11_1.y = 201.441
-L11_1.z = -1968.519
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 113.385
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 27
-L10_1.area_id = 13
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1078007
-L3_1.name = "VARIABLE_CHANGE_78007"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_78007"
-L3_1.action = "action_EVENT_VARIABLE_CHANGE_78007"
-L2_1[1] = L3_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 78005
-L4_1.gadget_id = 70330085
-L5_1 = {}
-L5_1.x = -3475.834
-L5_1.y = 203.764
-L5_1.z = -1968.592
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 114.476
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 2
-L4_1.area_id = 13
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 78001
-L6_1 = 78002
-L7_1 = 78003
-L8_1 = 78004
-L9_1 = 78006
-L10_1 = 78008
-L11_1 = 78009
-L12_1 = 78010
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "VARIABLE_CHANGE_78007"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "successed"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133212078
+}
+
+-- Trigger变量
+local defs = {
+	group_ID = 133212078,
+	gadget_1 = 78001,
+	rotation_1 = 0,
+	gadget_2 = 78002,
+	rotation_2 = 90,
+	gadget_3 = 78003,
+	rotation_3 = 180,
+	gadget_4 = 78006,
+	rotation_4 = 270,
+	gadget_5 = 0,
+	rotation_5 = 0,
+	gadget_connect1 = {},
+	gadget_connect2 = {},
+	gadget_connect3 = {},
+	gadget_connect4 = {},
+	gadget_connect5 = {}
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	-- 失踪冒险家
+	{ config_id = 78001, gadget_id = 70330081, pos = { x = -3468.332, y = 200.761, z = -1968.643 }, rot = { x = 359.708, y = 115.644, z = 2.424 }, level = 2, is_use_point_array = true, area_id = 13 },
+	{ config_id = 78002, gadget_id = 70330081, pos = { x = -3473.844, y = 201.363, z = -1974.356 }, rot = { x = 0.000, y = 113.868, z = 0.000 }, level = 2, is_use_point_array = true, area_id = 13 },
+	{ config_id = 78003, gadget_id = 70330081, pos = { x = -3475.834, y = 201.643, z = -1968.592 }, rot = { x = 0.000, y = 116.732, z = 0.000 }, level = 2, is_use_point_array = true, area_id = 13 },
+	-- 失踪冒险家
+	{ config_id = 78004, gadget_id = 70330084, pos = { x = -3468.249, y = 200.523, z = -1968.648 }, rot = { x = 0.000, y = 113.385, z = 0.000 }, level = 2, area_id = 13 },
+	-- 失踪冒险家
+	{ config_id = 78006, gadget_id = 70330081, pos = { x = -3466.522, y = 200.433, z = -1973.359 }, rot = { x = 0.000, y = 116.732, z = 0.000 }, level = 27, is_use_point_array = true, area_id = 13 },
+	-- 失踪冒险家
+	{ config_id = 78008, gadget_id = 70330084, pos = { x = -3466.426, y = 200.383, z = -1973.405 }, rot = { x = 0.000, y = 113.385, z = 0.000 }, level = 27, area_id = 13 },
+	-- 失踪冒险家
+	{ config_id = 78009, gadget_id = 70330084, pos = { x = -3473.704, y = 201.074, z = -1974.416 }, rot = { x = 0.000, y = 113.385, z = 0.000 }, level = 27, area_id = 13 },
+	-- 失踪冒险家
+	{ config_id = 78010, gadget_id = 70330084, pos = { x = -3475.908, y = 201.441, z = -1968.519 }, rot = { x = 0.000, y = 113.385, z = 0.000 }, level = 27, area_id = 13 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1078007, name = "VARIABLE_CHANGE_78007", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_78007", action = "action_EVENT_VARIABLE_CHANGE_78007" }
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 78005, gadget_id = 70330085, pos = { x = -3475.834, y = 203.764, z = -1968.592 }, rot = { x = 0.000, y = 114.476, z = 0.000 }, level = 2, area_id = 13 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 78001, 78002, 78003, 78004, 78006, 78008, 78009, 78010 },
+		regions = { },
+		triggers = { "VARIABLE_CHANGE_78007" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_78007(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"successed"为1
+	if ScriptLib.GetGroupVariableValue(context, "successed") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_78007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133212159
-  L5_2 = 159001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_78007(context, evt)
+	-- 改变指定group组133212159中， configid为159001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133212159, 159001, GadgetState.GearStart) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_78007 = L2_1
-L2_1 = require
-L3_1 = "BlackBoxPlay/LightSquare"
-L2_1(L3_1)
+
+require "BlackBoxPlay/LightSquare"

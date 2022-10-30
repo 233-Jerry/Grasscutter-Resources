@@ -1,365 +1,200 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.group_id = 133225081
-L1_1 = {}
-L1_1.BossConfigID = 81001
-L1_1.regionID = 81006
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 81001
-L3_1.monster_id = 20070101
-L4_1 = {}
-L4_1.x = -6345.258
-L4_1.y = 205.962
-L4_1.z = -2707.524
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 51.599
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 31
-L3_1.drop_id = 1000100
-L4_1 = {}
-L5_1 = 5125
-L4_1[1] = L5_1
-L3_1.affix = L4_1
-L3_1.special_name_id = 10076
-L3_1.climate_area_id = 7
-L3_1.area_id = 18
-L2_1[1] = L3_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 81003
-L3_1.gadget_id = 42007013
-L4_1 = {}
-L4_1.x = -6344.653
-L4_1.y = 201.262
-L4_1.z = -2707.125
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 357.74
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.area_id = 18
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 81006
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 45
-L4_1 = {}
-L4_1.x = -6337.17
-L4_1.y = 205.976
-L4_1.z = -2702.869
-L3_1.pos = L4_1
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 81007
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 60
-L5_1 = {}
-L5_1.x = -6327.314
-L5_1.y = 205.976
-L5_1.z = -2699.448
-L4_1.pos = L5_1
-L4_1.area_id = 18
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1081002
-L3_1.name = "ANY_MONSTER_LIVE_81002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_MONSTER_LIVE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_ANY_MONSTER_LIVE_81002"
-L4_1 = {}
-L4_1.config_id = 1081004
-L4_1.name = "MONSTER_BATTLE_81004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_MONSTER_BATTLE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_MONSTER_BATTLE_81004"
-L4_1.action = "action_EVENT_MONSTER_BATTLE_81004"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1081005
-L5_1.name = "ANY_MONSTER_DIE_81005"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ANY_MONSTER_DIE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ANY_MONSTER_DIE_81005"
-L5_1.action = "action_EVENT_ANY_MONSTER_DIE_81005"
-L6_1 = {}
-L6_1.config_id = 1081006
-L6_1.name = "ENTER_REGION_81006"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_ENTER_REGION
-L6_1.event = L7_1
-L6_1.source = "1"
-L6_1.condition = "condition_EVENT_ENTER_REGION_81006"
-L6_1.action = "action_EVENT_ENTER_REGION_81006"
-L6_1.trigger_count = 0
-L6_1.forbid_guest = false
-L7_1 = {}
-L7_1.config_id = 1081007
-L7_1.name = "LEAVE_REGION_81007"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_LEAVE_REGION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_LEAVE_REGION_81007"
-L7_1.action = "action_EVENT_LEAVE_REGION_81007"
-L7_1.trigger_count = 0
-L7_1.forbid_guest = false
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "Quest"
-L3_1.value = 0
-L3_1.no_refresh = true
-L2_1[1] = L3_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L5_1 = 81001
-L4_1[1] = L5_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 81006
-L6_1 = 81007
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ANY_MONSTER_LIVE_81002"
-L6_1 = "MONSTER_BATTLE_81004"
-L7_1 = "ANY_MONSTER_DIE_81005"
-L8_1 = "ENTER_REGION_81006"
-L9_1 = "LEAVE_REGION_81007"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 81003
-L6_1[1] = L7_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 81001
-  L5_2 = 133225081
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133225081
+}
+
+-- DEFS_MISCS
+local defs = {
+	BossConfigID = 81001,
+	regionID = 81006,
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 81001, monster_id = 20070101, pos = { x = -6345.258, y = 205.962, z = -2707.524 }, rot = { x = 0.000, y = 51.599, z = 0.000 }, level = 31, drop_id = 1000100, affix = { 5125 }, special_name_id = 10076, climate_area_id = 7, area_id = 18 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 81003, gadget_id = 42007013, pos = { x = -6344.653, y = 201.262, z = -2707.125 }, rot = { x = 0.000, y = 357.740, z = 0.000 }, level = 30, area_id = 18 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 81006, shape = RegionShape.SPHERE, radius = 45, pos = { x = -6337.170, y = 205.976, z = -2702.869 }, area_id = 18 },
+	{ config_id = 81007, shape = RegionShape.SPHERE, radius = 60, pos = { x = -6327.314, y = 205.976, z = -2699.448 }, area_id = 18 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1081002, name = "ANY_MONSTER_LIVE_81002", event = EventType.EVENT_ANY_MONSTER_LIVE, source = "", condition = "", action = "action_EVENT_ANY_MONSTER_LIVE_81002" },
+	{ config_id = 1081004, name = "MONSTER_BATTLE_81004", event = EventType.EVENT_MONSTER_BATTLE, source = "", condition = "condition_EVENT_MONSTER_BATTLE_81004", action = "action_EVENT_MONSTER_BATTLE_81004", trigger_count = 0 },
+	{ config_id = 1081005, name = "ANY_MONSTER_DIE_81005", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_81005", action = "action_EVENT_ANY_MONSTER_DIE_81005" },
+	{ config_id = 1081006, name = "ENTER_REGION_81006", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_81006", action = "action_EVENT_ENTER_REGION_81006", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1081007, name = "LEAVE_REGION_81007", event = EventType.EVENT_LEAVE_REGION, source = "", condition = "condition_EVENT_LEAVE_REGION_81007", action = "action_EVENT_LEAVE_REGION_81007", trigger_count = 0, forbid_guest = false }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Quest", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 81001 },
+		gadgets = { },
+		regions = { 81006, 81007 },
+		triggers = { "ANY_MONSTER_LIVE_81002", "MONSTER_BATTLE_81004", "ANY_MONSTER_DIE_81005", "ENTER_REGION_81006", "LEAVE_REGION_81007" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 81003 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_LIVE_81002(context, evt)
+	-- 通知groupid为133225081中,configid为：81001的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 81001, 133225081) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_LIVE_81002 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 81001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_MONSTER_BATTLE_81004(context, evt)
+	if 81001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_MONSTER_BATTLE_81004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133225081
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_MONSTER_BATTLE_81004(context, evt)
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133225081, 3)
+	
+	return 0
 end
-action_EVENT_MONSTER_BATTLE_81004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 81001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_81005(context, evt)
+	if 81001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_81005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "7217310_finish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133225081
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_81005(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "7217310_finish") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 删除suite3的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 133225081, 3)
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_81005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 181005 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_81006(context, evt)
+	if evt.param1 ~= 181005 then return false end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_81006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L2_2 = A0_2.uid
-  if L2_2 ~= 0 then
-    L2_2 = {}
-    L3_2 = {}
-    L4_2 = 1
-    L5_2 = regions
-    L5_2 = #L5_2
-    L6_2 = 1
-    for L7_2 = L4_2, L5_2, L6_2 do
-      L8_2 = regions
-      L8_2 = L8_2[L7_2]
-      L8_2 = L8_2.config_id
-      if L8_2 == 81006 then
-        L8_2 = regions
-        L2_2 = L8_2[L7_2]
-      end
-      L8_2 = regions
-      L8_2 = L8_2[L7_2]
-      L8_2 = L8_2.config_id
-      if L8_2 == 81007 then
-        L8_2 = regions
-        L3_2 = L8_2[L7_2]
-      end
-    end
-    L4_2 = TrySetPlayerEyePoint
-    L5_2 = A0_2
-    L6_2 = L2_2
-    L7_2 = L3_2
-    L8_2 = 0
-    L9_2 = {}
-    L10_2 = 0
-    L9_2[1] = L10_2
-    L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_81006(context, evt)
+	     	if context.uid~=0 then
+			local small_region={}
+			local big_region={}
+			for i=1,#regions do
+				if regions[i].config_id==81006 then
+					small_region=regions[i]
+				end
+				if regions[i].config_id==81007 then
+					big_region=regions[i]
+				end
+			end
+			TrySetPlayerEyePoint(context, small_region, big_region, 0, {0})
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_81006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 181006 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_LEAVE_REGION_81007(context, evt)
+	if evt.param1 ~= 181006 then return false end
+	return true
 end
-condition_EVENT_LEAVE_REGION_81007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A0_2.uid
-  if L2_2 ~= 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ClearPlayerEyePoint
-    L3_2 = A0_2
-    L4_2 = 81006
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_LEAVE_REGION_81007(context, evt)
+	     	if context.uid~=0 then
+			ScriptLib.ClearPlayerEyePoint(context, 81006)
+		end
+	
+	return 0
 end
-action_EVENT_LEAVE_REGION_81007 = L2_1
-L2_1 = require
-L3_1 = "TD_Lib"
-L2_1(L3_1)
-L2_1 = require
-L3_1 = "V2_1/Boss_Raijin"
-L2_1(L3_1)
+
+require "TD_Lib"
+require "V2_1/Boss_Raijin"

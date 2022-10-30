@@ -1,27 +1,29 @@
 [
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Task_FreezeBoar",
-            "HNEIEGHMLKH": {
-                "Freeze": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "state": "ElementFreeze",
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_Element_Frozen"
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "Freeze"
-                }
-            ]
+  {
+    //创建时上冰冻modifer
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Task_FreezeBoar",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Freeze",
+          "target": "Self"
         }
+      ],
+      "modifiers": {
+        "Freeze": {
+          "state": "ElementFreeze",
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Element_Frozen"
+              //"target": "Self",
+              //"scale" : 0.2,
+            }
+          ]
+        }
+      }
     }
+  }
 ]

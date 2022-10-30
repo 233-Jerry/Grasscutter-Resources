@@ -14,13 +14,9 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    179035
-  ],
+  "rewardIdList": [179035],
   "showType": "QUEST_SHOW",
-  "HKNKBANBJPP": [
-    0
-  ],
+  "HKNKBANBJPP": [0],
   "LACEJNKJBCG": [],
   "OFCKAEDMIFA": 0,
   "chapterId": 0,
@@ -43,18 +39,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7903501,
-            0
-          ],
+          "param": [7903501, 0],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7903502,
-            0
-          ],
+          "param": [7903502, 0],
           "count": 0
         }
       ],
@@ -62,9 +52,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1512"
-        ],
+        "param": ["1512"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -81,10 +69,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_CLEAR_TIME_VAR",
-          "param": [
-            "79025",
-            "2"
-          ]
+          "param": ["79025", "2"]
         }
       ],
       "failExec": [],
@@ -102,17 +87,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7903501",
-            "2"
-          ]
+          "param": ["7903501", "2"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7267811",
-            "3"
-          ]
+          "param": ["7267811", "3"]
         }
       ],
       "priority": 5,
@@ -121,10 +100,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 790350101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1512,
-        1005
-      ],
+      "npcIdRawNum": [1512, 1005],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Island_79035/Q7903501",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -160,23 +136,15 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7903501",
-            "2"
-          ]
+          "param": ["7903501", "2"]
         },
         {
           "type": "QUEST_COND_STATE_NOT_EQUAL",
-          "param": [
-            "7267811",
-            "3"
-          ]
+          "param": ["7267811", "3"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7267811"
-          ]
+          "param": ["7267811"]
         }
       ],
       "priority": 5,
@@ -185,10 +153,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 790350201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1512,
-        1005
-      ],
+      "npcIdRawNum": [1512, 1005],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Island_79035/Q7903502",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

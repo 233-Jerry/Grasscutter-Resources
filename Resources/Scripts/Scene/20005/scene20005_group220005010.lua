@@ -1,948 +1,372 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1
-L0_1 = {}
-L0_1.group_id = 220005010
-L1_1 = {}
-L1_1.max_gear = 4
-L1_1.timer = 10
-L1_1.group_id = 220005010
-L1_1.gadget_1 = 10001
-L1_1.gadget_2 = 10002
-L1_1.gadget_3 = 10003
-L1_1.gadget_4 = 10005
-L1_1.gadget_chest = 0
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 10001
-L3_1.gadget_id = 70900007
-L4_1 = {}
-L4_1.x = -234.114
-L4_1.y = 27.813
-L4_1.z = 168.074
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = GadgetState
-L4_1 = L4_1.Action01
-L3_1.state = L4_1
-L3_1.persistent = true
-L4_1 = {}
-L4_1.config_id = 10002
-L4_1.gadget_id = 70900007
-L5_1 = {}
-L5_1.x = -227.356
-L5_1.y = 27.813
-L5_1.z = 174.72
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 270.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = GadgetState
-L5_1 = L5_1.Action01
-L4_1.state = L5_1
-L4_1.persistent = true
-L5_1 = {}
-L5_1.config_id = 10003
-L5_1.gadget_id = 70900007
-L6_1 = {}
-L6_1.x = -234.085
-L6_1.y = 27.813
-L6_1.z = 174.57
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = GadgetState
-L6_1 = L6_1.Action01
-L5_1.state = L6_1
-L5_1.persistent = true
-L6_1 = {}
-L6_1.config_id = 10005
-L6_1.gadget_id = 70900007
-L7_1 = {}
-L7_1.x = -227.421
-L7_1.y = 27.813
-L7_1.z = 168.056
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = GadgetState
-L7_1 = L7_1.Action01
-L6_1.state = L7_1
-L6_1.persistent = true
-L7_1 = {}
-L7_1.config_id = 10009
-L7_1.gadget_id = 70350025
-L8_1 = {}
-L8_1.x = -257.591
-L8_1.y = 31.412
-L8_1.z = 171.546
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 90.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 10010
-L8_1.gadget_id = 70900201
-L9_1 = {}
-L9_1.x = -289.577
-L9_1.y = 32.986
-L9_1.z = 171.626
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 87.592
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = {}
-L9_1.config_id = 10011
-L9_1.gadget_id = 70350019
-L10_1 = {}
-L10_1.x = -216.913
-L10_1.y = 25.323
-L10_1.z = 160.57
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L10_1 = GadgetState
-L10_1 = L10_1.GearAction1
-L9_1.state = L10_1
-L10_1 = {}
-L10_1.config_id = 10012
-L10_1.gadget_id = 70350019
-L11_1 = {}
-L11_1.x = -239.733
-L11_1.y = 25.467
-L11_1.z = 184.172
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L11_1 = GadgetState
-L11_1 = L11_1.GearAction1
-L10_1.state = L11_1
-L11_1 = {}
-L11_1.config_id = 10013
-L11_1.gadget_id = 70350019
-L12_1 = {}
-L12_1.x = -218.668
-L12_1.y = 25.438
-L12_1.z = 182.493
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L12_1 = GadgetState
-L12_1 = L12_1.GearAction1
-L11_1.state = L12_1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1010004
-L3_1.name = "GADGET_STATE_CHANGE_10004"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_10004"
-L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_10004"
-L4_1 = {}
-L4_1.config_id = 1010006
-L4_1.name = "GADGET_STATE_CHANGE_10006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_10006"
-L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_10006"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1010007
-L5_1.name = "TIMER_EVENT_10007"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_TIMER_EVENT
-L5_1.event = L6_1
-L5_1.source = "time1"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_TIMER_EVENT_10007"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1010008
-L6_1.name = "VARIABLE_CHANGE_10008"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_VARIABLE_CHANGE
-L6_1.event = L7_1
-L6_1.source = "active_count"
-L6_1.condition = "condition_EVENT_VARIABLE_CHANGE_10008"
-L6_1.action = "action_EVENT_VARIABLE_CHANGE_10008"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1010014
-L7_1.name = "GADGET_STATE_CHANGE_10014"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GADGET_STATE_CHANGE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_10014"
-L7_1.action = "action_EVENT_GADGET_STATE_CHANGE_10014"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1010015
-L8_1.name = "GADGET_STATE_CHANGE_10015"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_GADGET_STATE_CHANGE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_10015"
-L8_1.action = "action_EVENT_GADGET_STATE_CHANGE_10015"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1010016
-L9_1.name = "GADGET_STATE_CHANGE_10016"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_GADGET_STATE_CHANGE
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_10016"
-L9_1.action = "action_EVENT_GADGET_STATE_CHANGE_10016"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1010017
-L10_1.name = "TIMER_EVENT_10017"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_TIMER_EVENT
-L10_1.event = L11_1
-L10_1.source = "time2"
-L10_1.condition = ""
-L10_1.action = "action_EVENT_TIMER_EVENT_10017"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1010018
-L11_1.name = "TIMER_EVENT_10018"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_TIMER_EVENT
-L11_1.event = L12_1
-L11_1.source = "time3"
-L11_1.condition = ""
-L11_1.action = "action_EVENT_TIMER_EVENT_10018"
-L11_1.trigger_count = 0
-L12_1 = {}
-L12_1.config_id = 1010019
-L12_1.name = "TIMER_EVENT_10019"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_TIMER_EVENT
-L12_1.event = L13_1
-L12_1.source = "time4"
-L12_1.condition = ""
-L12_1.action = "action_EVENT_TIMER_EVENT_10019"
-L12_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "active_count"
-L3_1.value = 0
-L3_1.no_refresh = false
-L2_1[1] = L3_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 10001
-L6_1 = 10002
-L7_1 = 10003
-L8_1 = 10005
-L9_1 = 10009
-L10_1 = 10011
-L11_1 = 10012
-L12_1 = 10013
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_STATE_CHANGE_10004"
-L6_1 = "GADGET_STATE_CHANGE_10006"
-L7_1 = "TIMER_EVENT_10007"
-L8_1 = "VARIABLE_CHANGE_10008"
-L9_1 = "GADGET_STATE_CHANGE_10014"
-L10_1 = "GADGET_STATE_CHANGE_10015"
-L11_1 = "GADGET_STATE_CHANGE_10016"
-L12_1 = "TIMER_EVENT_10017"
-L13_1 = "TIMER_EVENT_10018"
-L14_1 = "TIMER_EVENT_10019"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 10009 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220005010
+}
+
+-- Trigger变量
+local defs = {
+	max_gear = 4,
+	timer = 10,
+	group_id = 220005010,
+	gadget_1 = 10001,
+	gadget_2 = 10002,
+	gadget_3 = 10003,
+	gadget_4 = 10005,
+	gadget_chest = 0
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 10001, gadget_id = 70900007, pos = { x = -234.114, y = 27.813, z = 168.074 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.Action01, persistent = true },
+	{ config_id = 10002, gadget_id = 70900007, pos = { x = -227.356, y = 27.813, z = 174.720 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 1, state = GadgetState.Action01, persistent = true },
+	{ config_id = 10003, gadget_id = 70900007, pos = { x = -234.085, y = 27.813, z = 174.570 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.Action01, persistent = true },
+	{ config_id = 10005, gadget_id = 70900007, pos = { x = -227.421, y = 27.813, z = 168.056 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.Action01, persistent = true },
+	{ config_id = 10009, gadget_id = 70350025, pos = { x = -257.591, y = 31.412, z = 171.546 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 },
+	{ config_id = 10010, gadget_id = 70900201, pos = { x = -289.577, y = 32.986, z = 171.626 }, rot = { x = 0.000, y = 87.592, z = 0.000 }, level = 1 },
+	{ config_id = 10011, gadget_id = 70350019, pos = { x = -216.913, y = 25.323, z = 160.570 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearAction1 },
+	{ config_id = 10012, gadget_id = 70350019, pos = { x = -239.733, y = 25.467, z = 184.172 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearAction1 },
+	{ config_id = 10013, gadget_id = 70350019, pos = { x = -218.668, y = 25.438, z = 182.493 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, state = GadgetState.GearAction1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1010004, name = "GADGET_STATE_CHANGE_10004", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_10004", action = "action_EVENT_GADGET_STATE_CHANGE_10004" },
+	{ config_id = 1010006, name = "GADGET_STATE_CHANGE_10006", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_10006", action = "action_EVENT_GADGET_STATE_CHANGE_10006", trigger_count = 0 },
+	{ config_id = 1010007, name = "TIMER_EVENT_10007", event = EventType.EVENT_TIMER_EVENT, source = "time1", condition = "", action = "action_EVENT_TIMER_EVENT_10007", trigger_count = 0 },
+	{ config_id = 1010008, name = "VARIABLE_CHANGE_10008", event = EventType.EVENT_VARIABLE_CHANGE, source = "active_count", condition = "condition_EVENT_VARIABLE_CHANGE_10008", action = "action_EVENT_VARIABLE_CHANGE_10008", trigger_count = 0 },
+	{ config_id = 1010014, name = "GADGET_STATE_CHANGE_10014", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_10014", action = "action_EVENT_GADGET_STATE_CHANGE_10014", trigger_count = 0 },
+	{ config_id = 1010015, name = "GADGET_STATE_CHANGE_10015", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_10015", action = "action_EVENT_GADGET_STATE_CHANGE_10015", trigger_count = 0 },
+	{ config_id = 1010016, name = "GADGET_STATE_CHANGE_10016", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_10016", action = "action_EVENT_GADGET_STATE_CHANGE_10016", trigger_count = 0 },
+	{ config_id = 1010017, name = "TIMER_EVENT_10017", event = EventType.EVENT_TIMER_EVENT, source = "time2", condition = "", action = "action_EVENT_TIMER_EVENT_10017", trigger_count = 0 },
+	{ config_id = 1010018, name = "TIMER_EVENT_10018", event = EventType.EVENT_TIMER_EVENT, source = "time3", condition = "", action = "action_EVENT_TIMER_EVENT_10018", trigger_count = 0 },
+	{ config_id = 1010019, name = "TIMER_EVENT_10019", event = EventType.EVENT_TIMER_EVENT, source = "time4", condition = "", action = "action_EVENT_TIMER_EVENT_10019", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "active_count", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { 10001, 10002, 10003, 10005, 10009, 10011, 10012, 10013 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_10004", "GADGET_STATE_CHANGE_10006", "TIMER_EVENT_10007", "VARIABLE_CHANGE_10008", "GADGET_STATE_CHANGE_10014", "GADGET_STATE_CHANGE_10015", "GADGET_STATE_CHANGE_10016", "TIMER_EVENT_10017", "TIMER_EVENT_10018", "TIMER_EVENT_10019" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_10004(context, evt)
+	if 10009 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_10004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 10010
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 220005006
-  L5_2 = {}
-  L4_2.monsters = L5_2
-  L5_2 = {}
-  L6_2 = 6002
-  L5_2[1] = L6_2
-  L4_2.gadgets = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monsters_and_gadgets_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_10004(context, evt)
+	-- 创建id为10010的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 10010 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+		-- 杀死Group内指定的monster和gadget
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 220005006, monsters = {}, gadgets = {6002} }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monsters_and_gadgets_by_group")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_10004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 10001 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.Action02
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_10006(context, evt)
+	if 10001 ~= evt.param2 or GadgetState.Action02 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_10006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 220005010
-  L5_2 = "time1"
-  L6_2 = 4
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "active_count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_10006(context, evt)
+	-- 延迟4秒后,向groupId为：220005010的对象,请求一次调用,并将string参数："time1" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 220005010, "time1", 4) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "active_count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "active_count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_10006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 10001
-  L5_2 = GadgetState
-  L5_2 = L5_2.Action01
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "active_count"
-  L5_2 = -1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_10007(context, evt)
+	-- 将configid为 10001 的物件更改为状态 GadgetState.Action01
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 10001, GadgetState.Action01) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 针对当前group内变量名为 "active_count" 的变量，进行修改，变化值为 -1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "active_count", -1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_10007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "active_count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 4 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_10008(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"active_count"为4
+	if ScriptLib.GetGroupVariableValue(context, "active_count") ~= 4 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_10008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 10001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 10002
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 10003
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 10005
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 10009
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CancelGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 220005010
-  L5_2 = "time1"
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cancel_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CancelGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 220005010
-  L5_2 = "time2"
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cancel_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CancelGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 220005010
-  L5_2 = "time3"
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cancel_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CancelGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 220005010
-  L5_2 = "time4"
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cancel_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_10008(context, evt)
+	-- 将configid为 10001 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 10001, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 10002 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 10002, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 10003 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 10003, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 10005 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 10005, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 10009 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 10009, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 取消group中对应名称的TimerEvent
+	if 0 ~= ScriptLib.CancelGroupTimerEvent(context, 220005010, "time1") then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cancel_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 取消group中对应名称的TimerEvent
+	if 0 ~= ScriptLib.CancelGroupTimerEvent(context, 220005010, "time2") then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cancel_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 取消group中对应名称的TimerEvent
+	if 0 ~= ScriptLib.CancelGroupTimerEvent(context, 220005010, "time3") then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cancel_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 取消group中对应名称的TimerEvent
+	if 0 ~= ScriptLib.CancelGroupTimerEvent(context, 220005010, "time4") then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cancel_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_10008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 10002 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.Action02
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_10014(context, evt)
+	if 10002 ~= evt.param2 or GadgetState.Action02 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_10014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 220005010
-  L5_2 = "time2"
-  L6_2 = 4
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "active_count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_10014(context, evt)
+	-- 延迟4秒后,向groupId为：220005010的对象,请求一次调用,并将string参数："time2" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 220005010, "time2", 4) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "active_count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "active_count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_10014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 10003 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.Action02
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_10015(context, evt)
+	if 10003 ~= evt.param2 or GadgetState.Action02 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_10015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 220005010
-  L5_2 = "time3"
-  L6_2 = 4
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "active_count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_10015(context, evt)
+	-- 延迟4秒后,向groupId为：220005010的对象,请求一次调用,并将string参数："time3" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 220005010, "time3", 4) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "active_count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "active_count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_10015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 10005 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.Action02
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_10016(context, evt)
+	if 10005 ~= evt.param2 or GadgetState.Action02 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_10016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 220005010
-  L5_2 = "time4"
-  L6_2 = 4
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "active_count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_10016(context, evt)
+	-- 延迟4秒后,向groupId为：220005010的对象,请求一次调用,并将string参数："time4" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 220005010, "time4", 4) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "active_count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "active_count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_10016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 10002
-  L5_2 = GadgetState
-  L5_2 = L5_2.Action01
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "active_count"
-  L5_2 = -1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_10017(context, evt)
+	-- 将configid为 10002 的物件更改为状态 GadgetState.Action01
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 10002, GadgetState.Action01) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 针对当前group内变量名为 "active_count" 的变量，进行修改，变化值为 -1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "active_count", -1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_10017 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 10003
-  L5_2 = GadgetState
-  L5_2 = L5_2.Action01
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "active_count"
-  L5_2 = -1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_10018(context, evt)
+	-- 将configid为 10003 的物件更改为状态 GadgetState.Action01
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 10003, GadgetState.Action01) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 针对当前group内变量名为 "active_count" 的变量，进行修改，变化值为 -1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "active_count", -1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_10018 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 10005
-  L5_2 = GadgetState
-  L5_2 = L5_2.Action01
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "active_count"
-  L5_2 = -1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_10019(context, evt)
+	-- 将configid为 10005 的物件更改为状态 GadgetState.Action01
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 10005, GadgetState.Action01) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 针对当前group内变量名为 "active_count" 的变量，进行修改，变化值为 -1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "active_count", -1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_10019 = L2_1

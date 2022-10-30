@@ -1,151 +1,109 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133212282
-L1_1 = {}
-L1_1.loop_mode = 0
-L1_1.group_ID = 133212282
-L1_1.gadget_1 = 282001
-L1_1.gadget_2 = 282002
-L1_1.gadget_3 = 282003
-L1_1.gadget_4 = 0
-L1_1.gadget_5 = 0
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 282001
-L4_1.gadget_id = 70330075
-L5_1 = {}
-L5_1.x = -4024.738
-L5_1.y = 199.019
-L5_1.z = -2705.51
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 5.322
-L5_1.y = 359.267
-L5_1.z = 358.871
-L4_1.rot = L5_1
-L4_1.level = 30
-L5_1 = GadgetState
-L5_1 = L5_1.Action01
-L4_1.state = L5_1
-L4_1.area_id = 13
-L5_1 = {}
-L5_1.config_id = 282002
-L5_1.gadget_id = 70330075
-L6_1 = {}
-L6_1.x = -4029.531
-L6_1.y = 199.406
-L6_1.z = -2711.804
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 57.318
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L6_1 = GadgetState
-L6_1 = L6_1.Action02
-L5_1.state = L6_1
-L5_1.area_id = 13
-L6_1 = {}
-L6_1.config_id = 282003
-L6_1.gadget_id = 70330075
-L7_1 = {}
-L7_1.x = -4021.067
-L7_1.y = 199.592
-L7_1.z = -2710.946
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 1.885
-L7_1.y = 103.628
-L7_1.z = 5.153
-L6_1.rot = L7_1
-L6_1.level = 30
-L7_1 = GadgetState
-L7_1 = L7_1.Action03
-L6_1.state = L7_1
-L6_1.area_id = 13
-L7_1 = {}
-L7_1.config_id = 282006
-L7_1.gadget_id = 70211111
-L8_1 = {}
-L8_1.x = -4023.737
-L8_1.y = 199.321
-L8_1.z = -2708.311
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 353.335
-L8_1.y = 223.4
-L8_1.z = 353.966
-L7_1.rot = L8_1
-L7_1.level = 26
-L7_1.drop_tag = "\232\167\163\232\176\156\228\184\173\231\186\167\231\168\187\229\166\187"
-L7_1.isOneoff = true
-L7_1.persistent = true
-L8_1 = {}
-L8_1.name = "chest"
-L8_1.exp = 1
-L7_1.explore = L8_1
-L7_1.area_id = 13
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1282007
-L4_1.name = "VARIABLE_CHANGE_282007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_VARIABLE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_VARIABLE_CHANGE_282007"
-L4_1.action = ""
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-L2_1 = require
-L3_1 = "BlackBoxPlay/LightResonanceStone"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133212282
+}
+
+-- Trigger变量
+local defs = {
+	loop_mode = 0,
+	group_ID = 133212282,
+	gadget_1 = 282001,
+	gadget_2 = 282002,
+	gadget_3 = 282003,
+	gadget_4 = 0,
+	gadget_5 = 0
+}
+
+-- DEFS_MISCS
+
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 282001, gadget_id = 70330075, pos = { x = -4024.738, y = 199.019, z = -2705.510 }, rot = { x = 5.322, y = 359.267, z = 358.871 }, level = 30, state = GadgetState.Action01, area_id = 13 },
+		{ config_id = 282002, gadget_id = 70330075, pos = { x = -4029.531, y = 199.406, z = -2711.804 }, rot = { x = 0.000, y = 57.318, z = 0.000 }, level = 30, state = GadgetState.Action02, area_id = 13 },
+		{ config_id = 282003, gadget_id = 70330075, pos = { x = -4021.067, y = 199.592, z = -2710.946 }, rot = { x = 1.885, y = 103.628, z = 5.153 }, level = 30, state = GadgetState.Action03, area_id = 13 },
+		{ config_id = 282006, gadget_id = 70211111, pos = { x = -4023.737, y = 199.321, z = -2708.311 }, rot = { x = 353.335, y = 223.400, z = 353.966 }, level = 26, drop_tag = "解谜中级稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 13 }
+	},
+	triggers = {
+		{ config_id = 1282007, name = "VARIABLE_CHANGE_282007", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_282007", action = "" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "BlackBoxPlay/LightResonanceStone"

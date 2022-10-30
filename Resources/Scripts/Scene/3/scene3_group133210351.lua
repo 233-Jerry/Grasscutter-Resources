@@ -1,298 +1,156 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133210351
-L1_1 = {}
-L1_1.gadget_Teleport_1 = 351001
-L1_1.gadget_Teleport_2 = 351002
-L1_1.gadget_Teleport_3 = 0
-L1_1.gadget_Teleport_4 = 0
-L1_1.pointarray_1 = 321000060
-L1_1.pointarray_2 = 0
-L1_1.pointarray_3 = 0
-L1_1.pointarray_4 = 0
-L1_1.gadget_TeleportOperator_1 = 351005
-L1_1.gadget_TeleportOperator_2 = 351006
-L1_1.gadget_TeleportOperator_3 = 0
-L1_1.gadget_TeleportOperator_4 = 0
-L1_1.group_ID = 133210351
-L1_1.pointarray_Rotate = 321000063
-L1_1.rotStep = 180
-L2_1 = {}
-L3_1 = {}
-L4_1 = L1_1.gadget_Teleport_1
-L5_1 = L1_1.gadget_Teleport_2
-L6_1 = L1_1.pointarray_1
-L7_1 = 10
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1[1] = L3_1
-connectInfo = L2_1
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 351001
-L3_1.gadget_id = 70950095
-L4_1 = {}
-L4_1.x = -3541.743
-L4_1.y = 176.13
-L4_1.z = -1147.699
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 13.354
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 2
-L3_1.persistent = true
-L3_1.is_use_point_array = true
-L3_1.area_id = 17
-L4_1 = {}
-L4_1.config_id = 351002
-L4_1.gadget_id = 70950095
-L5_1 = {}
-L5_1.x = -3549.626
-L5_1.y = 187.377
-L5_1.z = -1167.511
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 13.354
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 2
-L4_1.persistent = true
-L4_1.is_use_point_array = true
-L4_1.area_id = 17
-L5_1 = {}
-L5_1.config_id = 351003
-L5_1.gadget_id = 70330114
-L6_1 = {}
-L6_1.x = -3541.684
-L6_1.y = 177.754
-L6_1.z = -1147.741
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 347.594
-L6_1.y = 193.69
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.area_id = 17
-L6_1 = {}
-L6_1.config_id = 351004
-L6_1.gadget_id = 70330114
-L7_1 = {}
-L7_1.x = -3549.685
-L7_1.y = 188.863
-L7_1.z = -1167.595
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 16.185
-L7_1.y = 12.309
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 30
-L6_1.area_id = 17
-L7_1 = {}
-L7_1.config_id = 351005
-L7_1.gadget_id = 70950145
-L8_1 = {}
-L8_1.x = -3541.743
-L8_1.y = 176.13
-L8_1.z = -1147.699
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 2
-L7_1.persistent = true
-L7_1.area_id = 17
-L8_1 = {}
-L8_1.config_id = 351006
-L8_1.gadget_id = 70950145
-L9_1 = {}
-L9_1.x = -3549.626
-L9_1.y = 187.377
-L9_1.z = -1167.511
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 2
-L8_1.persistent = true
-L8_1.area_id = 17
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 351009
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 1.5
-L4_1 = {}
-L4_1.x = -3541.743
-L4_1.y = 176.623
-L4_1.z = -1147.699
-L3_1.pos = L4_1
-L3_1.area_id = 17
-L4_1 = {}
-L4_1.config_id = 351010
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 1.5
-L5_1 = {}
-L5_1.x = -3549.626
-L5_1.y = 188.171
-L5_1.z = -1167.511
-L4_1.pos = L5_1
-L4_1.area_id = 17
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1351009
-L3_1.name = "ENTER_REGION_351009"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_351009"
-L3_1.action = "action_EVENT_ENTER_REGION_351009"
-L3_1.trigger_count = 0
-L3_1.forbid_guest = false
-L4_1 = {}
-L4_1.config_id = 1351010
-L4_1.name = "ENTER_REGION_351010"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_351010"
-L4_1.action = "action_EVENT_ENTER_REGION_351010"
-L4_1.trigger_count = 0
-L4_1.forbid_guest = false
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 351001
-L6_1 = 351002
-L7_1 = 351003
-L8_1 = 351004
-L9_1 = 351005
-L10_1 = 351006
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 351009
-L6_1 = 351010
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ENTER_REGION_351009"
-L6_1 = "ENTER_REGION_351010"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 351009 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gadget_Teleport_1_isActive"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133210351
+}
+
+-- Trigger变量
+local defs = {
+	gadget_Teleport_1 = 351001,
+	gadget_Teleport_2 = 351002,
+	gadget_Teleport_3 = 0,
+	gadget_Teleport_4 = 0,
+	pointarray_1 = 321000060,
+	pointarray_2 = 0,
+	pointarray_3 = 0,
+	pointarray_4 = 0,
+	gadget_TeleportOperator_1 = 351005,
+	gadget_TeleportOperator_2 = 351006,
+	gadget_TeleportOperator_3 = 0,
+	gadget_TeleportOperator_4 = 0,
+	group_ID = 133210351,
+	pointarray_Rotate = 321000063,
+	rotStep = 180
+}
+
+-- DEFS_MISCS
+connectInfo = 
+{
+	{defs.gadget_Teleport_1,defs.gadget_Teleport_2,defs.pointarray_1,10}
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	-- Teleport #1
+	{ config_id = 351001, gadget_id = 70950095, pos = { x = -3541.743, y = 176.130, z = -1147.699 }, rot = { x = 0.000, y = 13.354, z = 0.000 }, level = 2, persistent = true, is_use_point_array = true, area_id = 17 },
+	-- Teleport #2
+	{ config_id = 351002, gadget_id = 70950095, pos = { x = -3549.626, y = 187.377, z = -1167.511 }, rot = { x = 0.000, y = 13.354, z = 0.000 }, level = 2, persistent = true, is_use_point_array = true, area_id = 17 },
+	{ config_id = 351003, gadget_id = 70330114, pos = { x = -3541.684, y = 177.754, z = -1147.741 }, rot = { x = 347.594, y = 193.690, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 351004, gadget_id = 70330114, pos = { x = -3549.685, y = 188.863, z = -1167.595 }, rot = { x = 16.185, y = 12.309, z = 0.000 }, level = 30, area_id = 17 },
+	-- Operator #1
+	{ config_id = 351005, gadget_id = 70950145, pos = { x = -3541.743, y = 176.130, z = -1147.699 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 2, persistent = true, area_id = 17 },
+	-- Operator #2
+	{ config_id = 351006, gadget_id = 70950145, pos = { x = -3549.626, y = 187.377, z = -1167.511 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 2, persistent = true, area_id = 17 }
+}
+
+-- 区域
+regions = {
+	-- Trigger #1
+	{ config_id = 351009, shape = RegionShape.SPHERE, radius = 1.5, pos = { x = -3541.743, y = 176.623, z = -1147.699 }, area_id = 17 },
+	-- Trigger #2
+	{ config_id = 351010, shape = RegionShape.SPHERE, radius = 1.5, pos = { x = -3549.626, y = 188.171, z = -1167.511 }, area_id = 17 }
+}
+
+-- 触发器
+triggers = {
+	-- Trigger #1
+	{ config_id = 1351009, name = "ENTER_REGION_351009", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_351009", action = "action_EVENT_ENTER_REGION_351009", trigger_count = 0, forbid_guest = false },
+	-- Trigger #2
+	{ config_id = 1351010, name = "ENTER_REGION_351010", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_351010", action = "action_EVENT_ENTER_REGION_351010", trigger_count = 0, forbid_guest = false }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 351001, 351002, 351003, 351004, 351005, 351006 },
+		regions = { 351009, 351010 },
+		triggers = { "ENTER_REGION_351009", "ENTER_REGION_351010" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_351009(context, evt)
+	if evt.param1 ~= 351009 then return false end
+	
+	-- 判断变量"gadget_Teleport_1_isActive"为1
+	if ScriptLib.GetGroupVariableValue(context, "gadget_Teleport_1_isActive") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_351009 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_Teleport_1
-  L3_2 = TeleportAction
-  L4_2 = A0_2
-  L5_2 = L2_2
-  L3_2(L4_2, L5_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_351009(context, evt)
+			--gadget_Teleport_1 trigger
+			local teleportid = defs["gadget_Teleport_1"]
+			TeleportAction(context, teleportid)
+			return 0
 end
-action_EVENT_ENTER_REGION_351009 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 351010 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "gadget_Teleport_2_isActive"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_351010(context, evt)
+	if evt.param1 ~= 351010 then return false end
+	
+	-- 判断变量"gadget_Teleport_2_isActive"为1
+	if ScriptLib.GetGroupVariableValue(context, "gadget_Teleport_2_isActive") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_351010 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = L1_1.gadget_Teleport_2
-  L3_2 = TeleportAction
-  L4_2 = A0_2
-  L5_2 = L2_2
-  L3_2(L4_2, L5_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_351010(context, evt)
+			--gadget_Teleport_2 trigger
+			local teleportid = defs["gadget_Teleport_2"]
+			TeleportAction(context, teleportid)
+			return 0
 end
-action_EVENT_ENTER_REGION_351010 = L2_1
-L2_1 = require
-L3_1 = "BlackBoxPlay/TeleportHighway"
-L2_1(L3_1)
+
+require "BlackBoxPlay/TeleportHighway"

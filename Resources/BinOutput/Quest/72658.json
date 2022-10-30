@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7265801,
-            0
-          ],
+          "param": [7265801, 0],
           "count": 0
         }
       ],
@@ -50,10 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q72658_NPC_Pos",
-          "15"
-        ],
+        "param": ["Q72658_NPC_Pos", "15"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -70,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "72658",
-            "1"
-          ]
+          "param": ["72658", "1"]
         }
       ],
       "failExec": [],
@@ -91,10 +82,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7265801",
-            "2"
-          ]
+          "param": ["7265801", "2"]
         }
       ],
       "priority": 5,
@@ -103,9 +91,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726580101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30083
-      ],
+      "npcIdRawNum": [30083],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Inazuma_72658/Q7265801",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

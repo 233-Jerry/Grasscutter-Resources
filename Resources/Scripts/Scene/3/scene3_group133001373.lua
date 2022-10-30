@@ -1,1018 +1,429 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1
-L0_1 = {}
-L0_1.group_id = 133001373
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 373001
-L2_1.monster_id = 21020201
-L3_1 = {}
-L3_1.x = 1698.94
-L3_1.y = 264.205
-L3_1.z = -1315.305
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 229.3
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 3
-L2_1.drop_tag = "\228\184\152\228\184\152\230\154\180\229\190\146"
-L2_1.area_id = 2
-L3_1 = {}
-L3_1.config_id = 373002
-L3_1.monster_id = 21011001
-L4_1 = {}
-L4_1.x = 1697.324
-L4_1.y = 264.836
-L4_1.z = -1325.604
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 344.4
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 2
-L3_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
-L3_1.area_id = 2
-L4_1 = {}
-L4_1.config_id = 373003
-L4_1.monster_id = 21011001
-L5_1 = {}
-L5_1.x = 1689.692
-L5_1.y = 263.728
-L5_1.z = -1310.838
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 141.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 2
-L4_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
-L4_1.area_id = 2
-L5_1 = {}
-L5_1.config_id = 373018
-L5_1.monster_id = 21010501
-L6_1 = {}
-L6_1.x = 1699.912
-L6_1.y = 265.255
-L6_1.z = -1319.752
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 259.856
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 2
-L5_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
-L5_1.pose_id = 32
-L5_1.area_id = 2
-L6_1 = {}
-L6_1.config_id = 373019
-L6_1.monster_id = 21010501
-L7_1 = {}
-L7_1.x = 1687.801
-L7_1.y = 264.352
-L7_1.z = -1319.813
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 66.027
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 2
-L6_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
-L6_1.pose_id = 32
-L6_1.area_id = 2
-L7_1 = {}
-L7_1.config_id = 373020
-L7_1.monster_id = 21030201
-L8_1 = {}
-L8_1.x = 1698.781
-L8_1.y = 264.204
-L8_1.z = -1315.321
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 229.3
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 3
-L7_1.drop_tag = "\228\184\152\228\184\152\232\144\168\230\187\161"
-L7_1.isElite = true
-L7_1.area_id = 2
-L8_1 = {}
-L8_1.config_id = 373021
-L8_1.monster_id = 21010501
-L9_1 = {}
-L9_1.x = 1691.771
-L9_1.y = 264.907
-L9_1.z = -1328.176
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 17.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 2
-L8_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
-L8_1.pose_id = 32
-L8_1.area_id = 2
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 373004
-L2_1.gadget_id = 70360056
-L3_1 = {}
-L3_1.x = 1693.7
-L3_1.y = 264.338
-L3_1.z = -1318.554
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 3.819
-L3_1.y = 359.862
-L3_1.z = 0.775
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.persistent = true
-L2_1.area_id = 2
-L3_1 = {}
-L3_1.config_id = 373005
-L3_1.gadget_id = 70360057
-L4_1 = {}
-L4_1.x = 1693.7
-L4_1.y = 264.338
-L4_1.z = -1318.554
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 3.819
-L4_1.y = 359.862
-L4_1.z = 0.775
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.persistent = true
-L3_1.area_id = 2
-L4_1 = {}
-L4_1.config_id = 373006
-L4_1.gadget_id = 70210106
-L5_1 = {}
-L5_1.x = 1694.353
-L5_1.y = 264.411
-L5_1.z = -1319.509
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 228.664
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 6
-L4_1.chest_drop_id = 1000100
-L4_1.drop_count = 1
-L4_1.showcutscene = true
-L4_1.persistent = true
-L4_1.is_blossom_chest = true
-L4_1.area_id = 2
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1373007
-L2_1.name = "GADGET_STATE_CHANGE_373007"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGET_STATE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_373007"
-L2_1.action = "action_EVENT_GADGET_STATE_CHANGE_373007"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1373008
-L3_1.name = "GADGET_STATE_CHANGE_373008"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_373008"
-L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_373008"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1373009
-L4_1.name = "GADGET_CREATE_373009"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_CREATE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_CREATE_373009"
-L4_1.action = "action_EVENT_GADGET_CREATE_373009"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1373010
-L5_1.name = "GROUP_REFRESH_373010"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GROUP_REFRESH
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = ""
-L5_1.action = "action_EVENT_GROUP_REFRESH_373010"
-L6_1 = {}
-L6_1.config_id = 1373011
-L6_1.name = "BLOSSOM_CHEST_DIE_373011"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_BLOSSOM_CHEST_DIE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_BLOSSOM_CHEST_DIE_373011"
-L6_1.action = "action_EVENT_BLOSSOM_CHEST_DIE_373011"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1373012
-L7_1.name = "GADGET_CREATE_373012"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GADGET_CREATE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_GADGET_CREATE_373012"
-L7_1.action = "action_EVENT_GADGET_CREATE_373012"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1373013
-L8_1.name = "SELECT_OPTION_373013"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_SELECT_OPTION
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_SELECT_OPTION_373013"
-L8_1.action = "action_EVENT_SELECT_OPTION_373013"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1373014
-L9_1.name = "SELECT_OPTION_373014"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_SELECT_OPTION
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_SELECT_OPTION_373014"
-L9_1.action = "action_EVENT_SELECT_OPTION_373014"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1373015
-L10_1.name = "ANY_MONSTER_DIE_373015"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_ANY_MONSTER_DIE
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = ""
-L10_1.action = "action_EVENT_ANY_MONSTER_DIE_373015"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1373016
-L11_1.name = "BLOSSOM_PROGRESS_FINISH_373016"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_BLOSSOM_PROGRESS_FINISH
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = ""
-L11_1.action = "action_EVENT_BLOSSOM_PROGRESS_FINISH_373016"
-L12_1 = {}
-L12_1.config_id = 1373017
-L12_1.name = "GROUP_LOAD_373017"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_GROUP_LOAD
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = ""
-L12_1.action = "action_EVENT_GROUP_LOAD_373017"
-L13_1 = {}
-L13_1.config_id = 1373022
-L13_1.name = "ANY_MONSTER_DIE_373022"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_ANY_MONSTER_DIE
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_ANY_MONSTER_DIE_373022"
-L13_1.action = "action_EVENT_ANY_MONSTER_DIE_373022"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "GroupCompletion"
-L2_1.value = 0
-L2_1.no_refresh = false
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GROUP_LOAD_373017"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_STATE_CHANGE_373007"
-L6_1 = "GADGET_STATE_CHANGE_373008"
-L7_1 = "GADGET_CREATE_373009"
-L8_1 = "GROUP_REFRESH_373010"
-L9_1 = "BLOSSOM_CHEST_DIE_373011"
-L10_1 = "GADGET_CREATE_373012"
-L11_1 = "SELECT_OPTION_373013"
-L12_1 = "SELECT_OPTION_373014"
-L13_1 = "ANY_MONSTER_DIE_373015"
-L14_1 = "BLOSSOM_PROGRESS_FINISH_373016"
-L15_1 = "ANY_MONSTER_DIE_373022"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L4_1[11] = L15_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 373001
-L7_1 = 373002
-L8_1 = 373003
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L7_1 = 373018
-L8_1 = 373019
-L9_1 = 373020
-L10_1 = 373021
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 373004 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearAction2
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133001373
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 373001, monster_id = 21020201, pos = { x = 1698.940, y = 264.205, z = -1315.305 }, rot = { x = 0.000, y = 229.300, z = 0.000 }, level = 3, drop_tag = "丘丘暴徒", area_id = 2 },
+	{ config_id = 373002, monster_id = 21011001, pos = { x = 1697.324, y = 264.836, z = -1325.604 }, rot = { x = 0.000, y = 344.400, z = 0.000 }, level = 2, drop_tag = "远程丘丘人", area_id = 2 },
+	{ config_id = 373003, monster_id = 21011001, pos = { x = 1689.692, y = 263.728, z = -1310.838 }, rot = { x = 0.000, y = 141.000, z = 0.000 }, level = 2, drop_tag = "远程丘丘人", area_id = 2 },
+	{ config_id = 373018, monster_id = 21010501, pos = { x = 1699.912, y = 265.255, z = -1319.752 }, rot = { x = 0.000, y = 259.856, z = 0.000 }, level = 2, drop_tag = "远程丘丘人", pose_id = 32, area_id = 2 },
+	{ config_id = 373019, monster_id = 21010501, pos = { x = 1687.801, y = 264.352, z = -1319.813 }, rot = { x = 0.000, y = 66.027, z = 0.000 }, level = 2, drop_tag = "远程丘丘人", pose_id = 32, area_id = 2 },
+	{ config_id = 373020, monster_id = 21030201, pos = { x = 1698.781, y = 264.204, z = -1315.321 }, rot = { x = 0.000, y = 229.300, z = 0.000 }, level = 3, drop_tag = "丘丘萨满", isElite = true, area_id = 2 },
+	{ config_id = 373021, monster_id = 21010501, pos = { x = 1691.771, y = 264.907, z = -1328.176 }, rot = { x = 0.000, y = 17.000, z = 0.000 }, level = 2, drop_tag = "远程丘丘人", pose_id = 32, area_id = 2 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	-- 摩拉机关
+	{ config_id = 373004, gadget_id = 70360056, pos = { x = 1693.700, y = 264.338, z = -1318.554 }, rot = { x = 3.819, y = 359.862, z = 0.775 }, level = 1, persistent = true, area_id = 2 },
+	-- 武器机关
+	{ config_id = 373005, gadget_id = 70360057, pos = { x = 1693.700, y = 264.338, z = -1318.554 }, rot = { x = 3.819, y = 359.862, z = 0.775 }, level = 1, persistent = true, area_id = 2 },
+	-- 地脉之花通用
+	{ config_id = 373006, gadget_id = 70210106, pos = { x = 1694.353, y = 264.411, z = -1319.509 }, rot = { x = 0.000, y = 228.664, z = 0.000 }, level = 6, chest_drop_id = 1000100, drop_count = 1, showcutscene = true, persistent = true, is_blossom_chest = true, area_id = 2 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1373007, name = "GADGET_STATE_CHANGE_373007", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_373007", action = "action_EVENT_GADGET_STATE_CHANGE_373007", trigger_count = 0 },
+	{ config_id = 1373008, name = "GADGET_STATE_CHANGE_373008", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_373008", action = "action_EVENT_GADGET_STATE_CHANGE_373008", trigger_count = 0 },
+	{ config_id = 1373009, name = "GADGET_CREATE_373009", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_373009", action = "action_EVENT_GADGET_CREATE_373009", trigger_count = 0 },
+	{ config_id = 1373010, name = "GROUP_REFRESH_373010", event = EventType.EVENT_GROUP_REFRESH, source = "", condition = "", action = "action_EVENT_GROUP_REFRESH_373010" },
+	{ config_id = 1373011, name = "BLOSSOM_CHEST_DIE_373011", event = EventType.EVENT_BLOSSOM_CHEST_DIE, source = "", condition = "condition_EVENT_BLOSSOM_CHEST_DIE_373011", action = "action_EVENT_BLOSSOM_CHEST_DIE_373011", trigger_count = 0 },
+	{ config_id = 1373012, name = "GADGET_CREATE_373012", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_373012", action = "action_EVENT_GADGET_CREATE_373012", trigger_count = 0 },
+	{ config_id = 1373013, name = "SELECT_OPTION_373013", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_373013", action = "action_EVENT_SELECT_OPTION_373013", trigger_count = 0 },
+	{ config_id = 1373014, name = "SELECT_OPTION_373014", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_373014", action = "action_EVENT_SELECT_OPTION_373014", trigger_count = 0 },
+	{ config_id = 1373015, name = "ANY_MONSTER_DIE_373015", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "", action = "action_EVENT_ANY_MONSTER_DIE_373015", trigger_count = 0 },
+	{ config_id = 1373016, name = "BLOSSOM_PROGRESS_FINISH_373016", event = EventType.EVENT_BLOSSOM_PROGRESS_FINISH, source = "", condition = "", action = "action_EVENT_BLOSSOM_PROGRESS_FINISH_373016" },
+	{ config_id = 1373017, name = "GROUP_LOAD_373017", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_373017" },
+	{ config_id = 1373022, name = "ANY_MONSTER_DIE_373022", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_373022", action = "action_EVENT_ANY_MONSTER_DIE_373022" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "GroupCompletion", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_373017" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = 开关suite,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_373007", "GADGET_STATE_CHANGE_373008", "GADGET_CREATE_373009", "GROUP_REFRESH_373010", "BLOSSOM_CHEST_DIE_373011", "GADGET_CREATE_373012", "SELECT_OPTION_373013", "SELECT_OPTION_373014", "ANY_MONSTER_DIE_373015", "BLOSSOM_PROGRESS_FINISH_373016", "ANY_MONSTER_DIE_373022" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = 战斗suite,
+		monsters = { 373001, 373002, 373003 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = ,
+		monsters = { 373018, 373019, 373020, 373021 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_373007(context, evt)
+	if 373004 ~= evt.param2 or GadgetState.GearAction2 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_373007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetBlossomScheduleStateByGroupId
-  L3_2 = A0_2
-  L4_2 = 0
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 == L2_2 or 1 == L2_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetWorktopOptions
-    L4_2 = A0_2
-    L5_2 = {}
-    L6_2 = 187
-    L5_2[1] = L6_2
-    L3_2(L4_2, L5_2)
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.RefreshBlossomDropRewardByGroupId
-  L4_2 = A0_2
-  L5_2 = 133001373
-  L3_2 = L3_2(L4_2, L5_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_373007(context, evt)
+	-- 设置操作台选项
+	local schedule = ScriptLib.GetBlossomScheduleStateByGroupId(context, 0)
+	if 0 == schedule or 1 == schedule then
+		  ScriptLib.SetWorktopOptions(context, {187})
+	end
+	
+	-- 刷新循环营地的掉落奖励
+	if 0 ~= ScriptLib.RefreshBlossomDropRewardByGroupId(context, 133001373) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+		return -1
+	end 
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_373007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 373005 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearAction2
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_373008(context, evt)
+	if 373005 ~= evt.param2 or GadgetState.GearAction2 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_373008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetBlossomScheduleStateByGroupId
-  L3_2 = A0_2
-  L4_2 = 0
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 == L2_2 or 1 == L2_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetWorktopOptions
-    L4_2 = A0_2
-    L5_2 = {}
-    L6_2 = 187
-    L5_2[1] = L6_2
-    L3_2(L4_2, L5_2)
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.RefreshBlossomDropRewardByGroupId
-  L4_2 = A0_2
-  L5_2 = 133001373
-  L3_2 = L3_2(L4_2, L5_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_373008(context, evt)
+	-- 设置操作台选项
+	local schedule = ScriptLib.GetBlossomScheduleStateByGroupId(context, 0)
+	if 0 == schedule or 1 == schedule then
+		  ScriptLib.SetWorktopOptions(context, {187})
+	end
+	
+	-- 刷新循环营地的掉落奖励
+	if 0 ~= ScriptLib.RefreshBlossomDropRewardByGroupId(context, 133001373) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+		return -1
+	end 
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_373008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = A1_2.param1
-  if 373004 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearAction2
-    L3_2 = ScriptLib
-    L3_2 = L3_2.GetGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = 0
-    L6_2 = A1_2.param1
-    L3_2 = L3_2(L4_2, L5_2, L6_2)
-    if L2_2 == L3_2 then
-      goto lbl_16
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_16::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_373009(context, evt)
+	if 373004 ~= evt.param1 or GadgetState.GearAction2 ~= ScriptLib.GetGadgetStateByConfigId(context, 0, evt.param1) then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_373009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetBlossomScheduleStateByGroupId
-  L3_2 = A0_2
-  L4_2 = 0
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 == L2_2 or 1 == L2_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetWorktopOptions
-    L4_2 = A0_2
-    L5_2 = {}
-    L6_2 = 187
-    L5_2[1] = L6_2
-    L3_2(L4_2, L5_2)
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.RefreshBlossomDropRewardByGroupId
-  L4_2 = A0_2
-  L5_2 = 133001373
-  L3_2 = L3_2(L4_2, L5_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_373009(context, evt)
+	-- 设置操作台选项
+	local schedule = ScriptLib.GetBlossomScheduleStateByGroupId(context, 0)
+	if 0 == schedule or 1 == schedule then
+		  ScriptLib.SetWorktopOptions(context, {187})
+	end
+	
+	-- 刷新循环营地的掉落奖励
+	if 0 ~= ScriptLib.RefreshBlossomDropRewardByGroupId(context, 133001373) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+		return -1
+	end 
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_373009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = {}
-  L2_2[1] = 373004
-  L2_2[2] = nil
-  L2_2[3] = 373005
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetBlossomRefreshTypeByGroupId
-  L4_2 = A0_2
-  L5_2 = 133001373
-  L3_2 = L3_2(L4_2, L5_2)
-  if L3_2 == nil then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : create_blossomOperator_byGroupId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  else
-    L4_2 = ScriptLib
-    L4_2 = L4_2.CreateGadget
-    L5_2 = A0_2
-    L6_2 = {}
-    L7_2 = L2_2[L3_2]
-    L6_2.config_id = L7_2
-    L4_2(L5_2, L6_2)
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetBlossomScheduleStateByGroupId
-  L5_2 = A0_2
-  L6_2 = 133001373
-  L7_2 = 1
-  L4_2 = L4_2(L5_2, L6_2, L7_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_blossomscehedule_byGroupId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.RefreshBlossomDropRewardByGroupId
-  L5_2 = A0_2
-  L6_2 = 133001373
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_GROUP_REFRESH_373010(context, evt)
+	-- 指定group的循环玩法进度加1
+	  local operator = {[1]=373004,[2]=nil,[3]=373005}
+	  local r_Type = ScriptLib.GetBlossomRefreshTypeByGroupId(context, 133001373)
+		if r_Type == nil then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_blossomOperator_byGroupId")
+	    return -1
+	  else
+	    ScriptLib.CreateGadget(context, {config_id = operator[r_Type]})
+	  end
+	
+	-- 指定group的循环玩法进度加1
+	if 0 ~= ScriptLib.SetBlossomScheduleStateByGroupId(context, 133001373, 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_blossomscehedule_byGroupId")
+		return -1
+	end
+	
+	-- 刷新循环营地的掉落奖励
+	if 0 ~= ScriptLib.RefreshBlossomDropRewardByGroupId(context, 133001373) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+		return -1
+	end 
+	
+	return 0
 end
-action_EVENT_GROUP_REFRESH_373010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 373006 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_BLOSSOM_CHEST_DIE_373011(context, evt)
+	if 373006 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_BLOSSOM_CHEST_DIE_373011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshBlossomGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 0
-  L4_2.suite = 2
-  L4_2.exclude_prev = true
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_blossom_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_BLOSSOM_CHEST_DIE_373011(context, evt)
+		-- 刷新本group,指定suite与等级修正,自动通知对应循环玩法的进度
+		if 0 ~= ScriptLib.RefreshBlossomGroup(context, { group_id = 0, suite = 2, exclude_prev = true }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_blossom_group")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_BLOSSOM_CHEST_DIE_373011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = A1_2.param1
-  if 373005 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearAction2
-    L3_2 = ScriptLib
-    L3_2 = L3_2.GetGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = 0
-    L6_2 = A1_2.param1
-    L3_2 = L3_2(L4_2, L5_2, L6_2)
-    if L2_2 == L3_2 then
-      goto lbl_16
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_16::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_373012(context, evt)
+	if 373005 ~= evt.param1 or GadgetState.GearAction2 ~= ScriptLib.GetGadgetStateByConfigId(context, 0, evt.param1) then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_373012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetBlossomScheduleStateByGroupId
-  L3_2 = A0_2
-  L4_2 = 0
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 == L2_2 or 1 == L2_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetWorktopOptions
-    L4_2 = A0_2
-    L5_2 = {}
-    L6_2 = 187
-    L5_2[1] = L6_2
-    L3_2(L4_2, L5_2)
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.RefreshBlossomDropRewardByGroupId
-  L4_2 = A0_2
-  L5_2 = 133001373
-  L3_2 = L3_2(L4_2, L5_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_373012(context, evt)
+	-- 设置操作台选项
+	local schedule = ScriptLib.GetBlossomScheduleStateByGroupId(context, 0)
+	if 0 == schedule or 1 == schedule then
+		  ScriptLib.SetWorktopOptions(context, {187})
+	end
+	
+	-- 刷新循环营地的掉落奖励
+	if 0 ~= ScriptLib.RefreshBlossomDropRewardByGroupId(context, 133001373) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+		return -1
+	end 
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_373012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 373004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 187 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_373013(context, evt)
+	-- 判断是gadgetid 373004 option_id 187
+	if 373004 ~= evt.param1 then
+		return false	
+	end
+	
+	if 187 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_373013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L5_2 = 373004
-  L6_2 = 187
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 373004
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetBlossomScheduleStateByGroupId
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_blossomscehedule_byGroupId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshBlossomDropRewardByGroupId
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_373013(context, evt)
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001373, 3)
+	
+	-- 删除指定group： 133001373 ；指定config：373004；物件身上指定option：187；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133001373, 373004, 187) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 将configid为 373004 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 373004, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 指定group的循环玩法进度加1
+	if 0 ~= ScriptLib.SetBlossomScheduleStateByGroupId(context, 133001373, 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_blossomscehedule_byGroupId")
+		return -1
+	end
+	
+	-- 刷新循环营地的掉落奖励
+	if 0 ~= ScriptLib.RefreshBlossomDropRewardByGroupId(context, 133001373) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+		return -1
+	end 
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_373013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 373005 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 187 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_373014(context, evt)
+	-- 判断是gadgetid 373005 option_id 187
+	if 373005 ~= evt.param1 then
+		return false	
+	end
+	
+	if 187 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_373014 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L5_2 = 373005
-  L6_2 = 187
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 373005
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetBlossomScheduleStateByGroupId
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_blossomscehedule_byGroupId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshBlossomDropRewardByGroupId
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_373014(context, evt)
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001373, 3)
+	
+	-- 删除指定group： 133001373 ；指定config：373005；物件身上指定option：187；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133001373, 373005, 187) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 将configid为 373005 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 373005, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 指定group的循环玩法进度加1
+	if 0 ~= ScriptLib.SetBlossomScheduleStateByGroupId(context, 133001373, 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_blossomscehedule_byGroupId")
+		return -1
+	end
+	
+	-- 刷新循环营地的掉落奖励
+	if 0 ~= ScriptLib.RefreshBlossomDropRewardByGroupId(context, 133001373) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+		return -1
+	end 
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_373014 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddBlossomScheduleProgressByGroupId
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_373015(context, evt)
+	-- 指定group的循环玩法进度加1
+	ScriptLib.AddBlossomScheduleProgressByGroupId(context, 133001373)
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_373015 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateBlossomChestByGroupId
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L5_2 = 373006
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_blossomChest_bygroupid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetBlossomScheduleStateByGroupId
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L5_2 = 3
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_blossomscehedule_byGroupId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "GroupCompletion"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_BLOSSOM_PROGRESS_FINISH_373016(context, evt)
+	-- 创建循环玩法的地脉之花奖励
+	if 0 ~= ScriptLib.CreateBlossomChestByGroupId(context, 133001373,373006) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_blossomChest_bygroupid")
+			return -1
+		end 
+	
+	-- 指定group的循环玩法进度加1
+	if 0 ~= ScriptLib.SetBlossomScheduleStateByGroupId(context, 133001373, 3) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_blossomscehedule_byGroupId")
+		return -1
+	end
+	
+	-- 将本组内变量名为 "GroupCompletion" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "GroupCompletion", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_BLOSSOM_PROGRESS_FINISH_373016 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshBlossomGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 0
-  L4_2.suite = 2
-  L4_2.exclude_prev = true
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_blossom_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_373017(context, evt)
+		-- 刷新本group,指定suite与等级修正,自动通知对应循环玩法的进度
+		if 0 ~= ScriptLib.RefreshBlossomGroup(context, { group_id = 0, suite = 2, exclude_prev = true }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_blossom_group")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_373017 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCount
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_373022(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_373022 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001373
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_373022(context, evt)
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001373, 4)
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_373022 = L1_1

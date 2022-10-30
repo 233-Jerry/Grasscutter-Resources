@@ -1,117 +1,75 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 247003029
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 29001
-L2_1.gadget_id = 70211101
-L3_1 = {}
-L3_1.x = 264.434
-L3_1.y = -0.562
-L3_1.z = 171.288
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 90.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.chest_drop_id = 21600008
-L2_1.drop_count = 1
-L2_1.isOneoff = true
-L2_1.persistent = true
-L3_1 = {}
-L3_1.config_id = 29002
-L3_1.gadget_id = 70211101
-L4_1 = {}
-L4_1.x = 76.705
-L4_1.y = -1.976
-L4_1.z = 38.582
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.chest_drop_id = 21600008
-L3_1.drop_count = 1
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.config_id = 29003
-L4_1.gadget_id = 70211101
-L5_1 = {}
-L5_1.x = 268.536
-L5_1.y = -2.173
-L5_1.z = 137.153
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.chest_drop_id = 21600008
-L4_1.drop_count = 1
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.config_id = 29004
-L5_1.gadget_id = 70211101
-L6_1 = {}
-L6_1.x = 236.905
-L6_1.y = 1.114
-L6_1.z = 285.786
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 90.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.chest_drop_id = 21600008
-L5_1.drop_count = 1
-L5_1.isOneoff = true
-L5_1.persistent = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 29001
-L5_1 = 29002
-L6_1 = 29003
-L7_1 = 29004
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 247003029
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 29001, gadget_id = 70211101, pos = { x = 264.434, y = -0.562, z = 171.288 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1, chest_drop_id = 21600008, drop_count = 1, isOneoff = true, persistent = true },
+	{ config_id = 29002, gadget_id = 70211101, pos = { x = 76.705, y = -1.976, z = 38.582 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, chest_drop_id = 21600008, drop_count = 1, isOneoff = true, persistent = true },
+	{ config_id = 29003, gadget_id = 70211101, pos = { x = 268.536, y = -2.173, z = 137.153 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, chest_drop_id = 21600008, drop_count = 1, isOneoff = true, persistent = true },
+	{ config_id = 29004, gadget_id = 70211101, pos = { x = 236.905, y = 1.114, z = 285.786 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1, chest_drop_id = 21600008, drop_count = 1, isOneoff = true, persistent = true }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 29001, 29002, 29003, 29004 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

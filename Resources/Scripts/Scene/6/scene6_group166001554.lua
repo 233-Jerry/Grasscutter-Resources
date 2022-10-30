@@ -1,196 +1,78 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 166001554
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 554001
-L2_1.gadget_id = 70217014
-L3_1 = {}
-L3_1.x = 518.996
-L3_1.y = 378.43
-L3_1.z = 756.043
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 338.664
-L3_1.y = 359.831
-L3_1.z = 0.895
-L2_1.rot = L3_1
-L2_1.level = 26
-L2_1.drop_tag = "\230\145\169\230\139\137\231\159\179\231\174\177\231\146\131\230\156\136"
-L2_1.isOneoff = true
-L2_1.persistent = true
-L3_1 = {}
-L3_1.name = "chest"
-L3_1.exp = 1
-L2_1.explore = L3_1
-L2_1.area_id = 300
-L3_1 = {}
-L3_1.config_id = 554002
-L3_1.gadget_id = 70500000
-L4_1 = {}
-L4_1.x = 510.291
-L4_1.y = 369.763
-L4_1.z = 737.885
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.point_type = 1010
-L3_1.area_id = 300
-L4_1 = {}
-L4_1.config_id = 554003
-L4_1.gadget_id = 70500000
-L5_1 = {}
-L5_1.x = 503.347
-L5_1.y = 370.876
-L5_1.z = 738.097
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 41.115
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.point_type = 1010
-L4_1.area_id = 300
-L5_1 = {}
-L5_1.config_id = 554004
-L5_1.gadget_id = 70217014
-L6_1 = {}
-L6_1.x = 448.478
-L6_1.y = 350.803
-L6_1.z = 742.897
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 26
-L5_1.drop_tag = "\230\145\169\230\139\137\231\159\179\231\174\177\231\146\131\230\156\136"
-L5_1.isOneoff = true
-L5_1.persistent = true
-L6_1 = {}
-L6_1.name = "chest"
-L6_1.exp = 1
-L5_1.explore = L6_1
-L5_1.area_id = 300
-L6_1 = {}
-L6_1.config_id = 554005
-L6_1.gadget_id = 70217014
-L7_1 = {}
-L7_1.x = 518.973
-L7_1.y = 401.448
-L7_1.z = 553.629
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 222.697
-L7_1.z = 9.696
-L6_1.rot = L7_1
-L6_1.level = 26
-L6_1.drop_tag = "\230\145\169\230\139\137\231\159\179\231\174\177\231\146\131\230\156\136"
-L6_1.isOneoff = true
-L6_1.persistent = true
-L7_1 = {}
-L7_1.name = "chest"
-L7_1.exp = 1
-L6_1.explore = L7_1
-L6_1.area_id = 300
-L7_1 = {}
-L7_1.config_id = 554006
-L7_1.gadget_id = 70217014
-L8_1 = {}
-L8_1.x = 313.967
-L8_1.y = 406.373
-L8_1.z = 557.278
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 15.153
-L8_1.y = 354.918
-L8_1.z = 343.522
-L7_1.rot = L8_1
-L7_1.level = 26
-L7_1.drop_tag = "\230\145\169\230\139\137\231\159\179\231\174\177\231\146\131\230\156\136"
-L7_1.isOneoff = true
-L7_1.persistent = true
-L8_1 = {}
-L8_1.name = "chest"
-L8_1.exp = 1
-L7_1.explore = L8_1
-L7_1.area_id = 300
-L8_1 = {}
-L8_1.config_id = 554007
-L8_1.gadget_id = 70217014
-L9_1 = {}
-L9_1.x = 139.265
-L9_1.y = 242.062
-L9_1.z = 627.589
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 357.724
-L9_1.y = 184.868
-L9_1.z = 356.132
-L8_1.rot = L9_1
-L8_1.level = 26
-L8_1.drop_tag = "\230\145\169\230\139\137\231\159\179\231\174\177\231\146\131\230\156\136"
-L8_1.isOneoff = true
-L8_1.persistent = true
-L9_1 = {}
-L9_1.name = "chest"
-L9_1.exp = 1
-L8_1.explore = L9_1
-L8_1.area_id = 300
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 554001
-L5_1 = 554002
-L6_1 = 554003
-L7_1 = 554004
-L8_1 = 554005
-L9_1 = 554006
-L10_1 = 554007
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 166001554
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 554001, gadget_id = 70217014, pos = { x = 518.996, y = 378.430, z = 756.043 }, rot = { x = 338.664, y = 359.831, z = 0.895 }, level = 26, drop_tag = "摩拉石箱璃月", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 300 },
+	{ config_id = 554002, gadget_id = 70500000, pos = { x = 510.291, y = 369.763, z = 737.885 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, point_type = 1010, area_id = 300 },
+	{ config_id = 554003, gadget_id = 70500000, pos = { x = 503.347, y = 370.876, z = 738.097 }, rot = { x = 0.000, y = 41.115, z = 0.000 }, level = 36, point_type = 1010, area_id = 300 },
+	{ config_id = 554004, gadget_id = 70217014, pos = { x = 448.478, y = 350.803, z = 742.897 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, drop_tag = "摩拉石箱璃月", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 300 },
+	{ config_id = 554005, gadget_id = 70217014, pos = { x = 518.973, y = 401.448, z = 553.629 }, rot = { x = 0.000, y = 222.697, z = 9.696 }, level = 26, drop_tag = "摩拉石箱璃月", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 300 },
+	{ config_id = 554006, gadget_id = 70217014, pos = { x = 313.967, y = 406.373, z = 557.278 }, rot = { x = 15.153, y = 354.918, z = 343.522 }, level = 26, drop_tag = "摩拉石箱璃月", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 300 },
+	{ config_id = 554007, gadget_id = 70217014, pos = { x = 139.265, y = 242.062, z = 627.589 }, rot = { x = 357.724, y = 184.868, z = 356.132 }, level = 26, drop_tag = "摩拉石箱璃月", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 300 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 554001, 554002, 554003, 554004, 554005, 554006, 554007 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

@@ -1,126 +1,95 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133217327
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 327002
-L3_1.monster_id = 20011101
-L4_1 = {}
-L4_1.x = -4413.046
-L4_1.y = 212.067
-L4_1.z = -4002.114
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 359.282
-L4_1.y = 171.75
-L4_1.z = 4.706
-L3_1.rot = L4_1
-L3_1.level = 30
-L3_1.drop_tag = "\229\164\167\229\143\178\232\142\177\229\167\134"
-L3_1.area_id = 14
-L4_1 = {}
-L4_1.config_id = 327004
-L4_1.monster_id = 20011001
-L5_1 = {}
-L5_1.x = -4415.639
-L5_1.y = 212.987
-L5_1.z = -4001.219
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 162.819
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L4_1.area_id = 14
-L5_1 = {}
-L5_1.config_id = 327005
-L5_1.monster_id = 20011001
-L6_1 = {}
-L6_1.x = -4411.24
-L6_1.y = 211.6
-L6_1.z = -3999.326
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 184.117
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.drop_tag = "\229\143\178\232\142\177\229\167\134"
-L5_1.area_id = 14
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L1_1.monsters = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 327003
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 5
-L4_1 = {}
-L4_1.x = -4418.279
-L4_1.y = 212.589
-L4_1.z = -4002.35
-L3_1.pos = L4_1
-L3_1.area_id = 14
-L2_1[1] = L3_1
-L1_1.regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1327003
-L3_1.name = "ENTER_REGION_327003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_327003"
-L3_1.action = "action_EVENT_ENTER_REGION_327003"
-L2_1[1] = L3_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133217327
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	monsters = {
+		{ config_id = 327002, monster_id = 20011101, pos = { x = -4413.046, y = 212.067, z = -4002.114 }, rot = { x = 359.282, y = 171.750, z = 4.706 }, level = 30, drop_tag = "大史莱姆", area_id = 14 },
+		{ config_id = 327004, monster_id = 20011001, pos = { x = -4415.639, y = 212.987, z = -4001.219 }, rot = { x = 0.000, y = 162.819, z = 0.000 }, level = 30, drop_tag = "史莱姆", area_id = 14 },
+		{ config_id = 327005, monster_id = 20011001, pos = { x = -4411.240, y = 211.600, z = -3999.326 }, rot = { x = 0.000, y = 184.117, z = 0.000 }, level = 30, drop_tag = "史莱姆", area_id = 14 }
+	},
+	regions = {
+		{ config_id = 327003, shape = RegionShape.SPHERE, radius = 5, pos = { x = -4418.279, y = 212.589, z = -4002.350 }, area_id = 14 }
+	},
+	triggers = {
+		{ config_id = 1327003, name = "ENTER_REGION_327003", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_327003", action = "action_EVENT_ENTER_REGION_327003" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

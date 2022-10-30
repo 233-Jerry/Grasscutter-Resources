@@ -1,1742 +1,739 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
-L0_1 = {}
-L0_1.group_id = 201058003
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 3001
-L2_1.gadget_id = 70360002
-L3_1 = {}
-L3_1.x = -68.559
-L3_1.y = 95.555
-L3_1.z = 125.553
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 130.973
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1003002
-L2_1.name = "GADGET_CREATE_3002"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGET_CREATE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GADGET_CREATE_3002"
-L2_1.action = "action_EVENT_GADGET_CREATE_3002"
-L3_1 = {}
-L3_1.config_id = 1003003
-L3_1.name = "SELECT_OPTION_3003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SELECT_OPTION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_SELECT_OPTION_3003"
-L3_1.action = "action_EVENT_SELECT_OPTION_3003"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1003004
-L4_1.name = "SELECT_OPTION_3004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SELECT_OPTION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SELECT_OPTION_3004"
-L4_1.action = "action_EVENT_SELECT_OPTION_3004"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1003007
-L5_1.name = "SELECT_OPTION_3007"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_SELECT_OPTION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_SELECT_OPTION_3007"
-L5_1.action = "action_EVENT_SELECT_OPTION_3007"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1003008
-L6_1.name = "SELECT_OPTION_3008"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_SELECT_OPTION
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_SELECT_OPTION_3008"
-L6_1.action = "action_EVENT_SELECT_OPTION_3008"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1003009
-L7_1.name = "SELECT_OPTION_3009"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_SELECT_OPTION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_SELECT_OPTION_3009"
-L7_1.action = "action_EVENT_SELECT_OPTION_3009"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1003010
-L8_1.name = "SELECT_OPTION_3010"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_SELECT_OPTION
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_SELECT_OPTION_3010"
-L8_1.action = "action_EVENT_SELECT_OPTION_3010"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1003011
-L9_1.name = "SELECT_OPTION_3011"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_SELECT_OPTION
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_SELECT_OPTION_3011"
-L9_1.action = "action_EVENT_SELECT_OPTION_3011"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1003012
-L10_1.name = "SELECT_OPTION_3012"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_SELECT_OPTION
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_SELECT_OPTION_3012"
-L10_1.action = "action_EVENT_SELECT_OPTION_3012"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1003013
-L11_1.name = "TIMER_EVENT_3013"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_TIMER_EVENT
-L11_1.event = L12_1
-L11_1.source = "finish"
-L11_1.condition = ""
-L11_1.action = "action_EVENT_TIMER_EVENT_3013"
-L11_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 3001
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GADGET_CREATE_3002"
-L5_1 = "SELECT_OPTION_3003"
-L6_1 = "SELECT_OPTION_3004"
-L7_1 = "SELECT_OPTION_3007"
-L8_1 = "SELECT_OPTION_3008"
-L9_1 = "SELECT_OPTION_3009"
-L10_1 = "SELECT_OPTION_3010"
-L11_1 = "SELECT_OPTION_3011"
-L12_1 = "SELECT_OPTION_3012"
-L13_1 = "TIMER_EVENT_3013"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 3001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 201058003
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 3001, gadget_id = 70360002, pos = { x = -68.559, y = 95.555, z = 125.553 }, rot = { x = 0.000, y = 130.973, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1003002, name = "GADGET_CREATE_3002", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_3002", action = "action_EVENT_GADGET_CREATE_3002" },
+	{ config_id = 1003003, name = "SELECT_OPTION_3003", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_3003", action = "action_EVENT_SELECT_OPTION_3003", trigger_count = 0 },
+	{ config_id = 1003004, name = "SELECT_OPTION_3004", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_3004", action = "action_EVENT_SELECT_OPTION_3004", trigger_count = 0 },
+	{ config_id = 1003007, name = "SELECT_OPTION_3007", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_3007", action = "action_EVENT_SELECT_OPTION_3007", trigger_count = 0 },
+	{ config_id = 1003008, name = "SELECT_OPTION_3008", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_3008", action = "action_EVENT_SELECT_OPTION_3008", trigger_count = 0 },
+	{ config_id = 1003009, name = "SELECT_OPTION_3009", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_3009", action = "action_EVENT_SELECT_OPTION_3009", trigger_count = 0 },
+	{ config_id = 1003010, name = "SELECT_OPTION_3010", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_3010", action = "action_EVENT_SELECT_OPTION_3010", trigger_count = 0 },
+	{ config_id = 1003011, name = "SELECT_OPTION_3011", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_3011", action = "action_EVENT_SELECT_OPTION_3011", trigger_count = 0 },
+	{ config_id = 1003012, name = "SELECT_OPTION_3012", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_3012", action = "action_EVENT_SELECT_OPTION_3012", trigger_count = 0 },
+	{ config_id = 1003013, name = "TIMER_EVENT_3013", event = EventType.EVENT_TIMER_EVENT, source = "finish", condition = "", action = "action_EVENT_TIMER_EVENT_3013", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 3001 },
+		regions = { },
+		triggers = { "GADGET_CREATE_3002", "SELECT_OPTION_3003", "SELECT_OPTION_3004", "SELECT_OPTION_3007", "SELECT_OPTION_3008", "SELECT_OPTION_3009", "SELECT_OPTION_3010", "SELECT_OPTION_3011", "SELECT_OPTION_3012", "TIMER_EVENT_3013" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_3002(context, evt)
+	if 3001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_3002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = {}
-  L7_2 = 210
-  L8_2 = 211
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -68
-  L2_2.y = 95
-  L2_2.z = 125
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 1.5
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_3002(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 201058003, 3001, {210,211}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-68，95，125），持续时间为1.5秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-68, y=95, z=125}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 1.5, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_3002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if 3001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 210 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "stage3state"
-  L5_2 = 201058008
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_3003(context, evt)
+	-- 判断是gadgetid 3001 option_id 210
+	if 3001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 210 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"stage3state"为1
+	if ScriptLib.GetGroupVariableValueByGroup(context, "stage3state", 201058008) ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_3003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 210
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 211
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -104
-  L2_2.y = 71
-  L2_2.z = 154
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 5
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupVariableValueByGroup
-  L5_2 = A0_2
-  L6_2 = "stage3"
-  L7_2 = 102
-  L8_2 = 201058008
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.CreateGroupTimerEvent
-  L5_2 = A0_2
-  L6_2 = 201058003
-  L7_2 = "finish"
-  L8_2 = 5
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8003
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8004
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8005
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_3003(context, evt)
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：210；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 210) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：211；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 211) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-104，71，154），持续时间为5秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-104, y=71, z=154}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 5, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 将本组内变量名为 "stage3" 的变量设置为 102
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "stage3", 102, 201058008) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 延迟5秒后,向groupId为：201058003的对象,请求一次调用,并将string参数："finish" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 201058003, "finish", 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 改变指定group组201058008中， configid为8003的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8003, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8004的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8004, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8005的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8005, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_3003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if 3001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 210 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "stage3state"
-  L5_2 = 201058008
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_3004(context, evt)
+	-- 判断是gadgetid 3001 option_id 210
+	if 3001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 210 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"stage3state"为2
+	if ScriptLib.GetGroupVariableValueByGroup(context, "stage3state", 201058008) ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_3004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 210
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 211
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -104
-  L2_2.y = 71
-  L2_2.z = 154
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 5
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupVariableValueByGroup
-  L5_2 = A0_2
-  L6_2 = "stage3"
-  L7_2 = 203
-  L8_2 = 201058008
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.CreateGroupTimerEvent
-  L5_2 = A0_2
-  L6_2 = 201058003
-  L7_2 = "finish"
-  L8_2 = 5
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8003
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8004
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8005
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_3004(context, evt)
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：210；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 210) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：211；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 211) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-104，71，154），持续时间为5秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-104, y=71, z=154}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 5, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 将本组内变量名为 "stage3" 的变量设置为 203
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "stage3", 203, 201058008) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 延迟5秒后,向groupId为：201058003的对象,请求一次调用,并将string参数："finish" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 201058003, "finish", 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 改变指定group组201058008中， configid为8003的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8003, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8004的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8004, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8005的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8005, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_3004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if 3001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 210 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "stage3state"
-  L5_2 = 201058008
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_3007(context, evt)
+	-- 判断是gadgetid 3001 option_id 210
+	if 3001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 210 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"stage3state"为3
+	if ScriptLib.GetGroupVariableValueByGroup(context, "stage3state", 201058008) ~= 3 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_3007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 210
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 211
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -104
-  L2_2.y = 71
-  L2_2.z = 154
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 5
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupVariableValueByGroup
-  L5_2 = A0_2
-  L6_2 = "stage3"
-  L7_2 = 304
-  L8_2 = 201058008
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.CreateGroupTimerEvent
-  L5_2 = A0_2
-  L6_2 = 201058003
-  L7_2 = "finish"
-  L8_2 = 5
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8003
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8004
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8005
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_3007(context, evt)
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：210；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 210) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：211；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 211) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-104，71，154），持续时间为5秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-104, y=71, z=154}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 5, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 将本组内变量名为 "stage3" 的变量设置为 304
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "stage3", 304, 201058008) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 延迟5秒后,向groupId为：201058003的对象,请求一次调用,并将string参数："finish" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 201058003, "finish", 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 改变指定group组201058008中， configid为8003的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8003, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8004的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8004, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8005的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8005, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_3007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if 3001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 210 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "stage3state"
-  L5_2 = 201058008
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 4 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_3008(context, evt)
+	-- 判断是gadgetid 3001 option_id 210
+	if 3001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 210 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"stage3state"为4
+	if ScriptLib.GetGroupVariableValueByGroup(context, "stage3state", 201058008) ~= 4 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_3008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 210
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 211
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -104
-  L2_2.y = 71
-  L2_2.z = 154
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 5
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupVariableValueByGroup
-  L5_2 = A0_2
-  L6_2 = "stage3"
-  L7_2 = 401
-  L8_2 = 201058008
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.CreateGroupTimerEvent
-  L5_2 = A0_2
-  L6_2 = 201058003
-  L7_2 = "finish"
-  L8_2 = 5
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8003
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8004
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8005
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_3008(context, evt)
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：210；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 210) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：211；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 211) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-104，71，154），持续时间为5秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-104, y=71, z=154}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 5, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 将本组内变量名为 "stage3" 的变量设置为 401
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "stage3", 401, 201058008) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 延迟5秒后,向groupId为：201058003的对象,请求一次调用,并将string参数："finish" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 201058003, "finish", 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 改变指定group组201058008中， configid为8003的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8003, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8004的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8004, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8005的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8005, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_3008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if 3001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 211 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "stage3state"
-  L5_2 = 201058008
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_3009(context, evt)
+	-- 判断是gadgetid 3001 option_id 211
+	if 3001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 211 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"stage3state"为1
+	if ScriptLib.GetGroupVariableValueByGroup(context, "stage3state", 201058008) ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_3009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 210
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 211
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -104
-  L2_2.y = 71
-  L2_2.z = 154
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 5
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupVariableValueByGroup
-  L5_2 = A0_2
-  L6_2 = "stage3"
-  L7_2 = 104
-  L8_2 = 201058008
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.CreateGroupTimerEvent
-  L5_2 = A0_2
-  L6_2 = 201058003
-  L7_2 = "finish"
-  L8_2 = 5
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8003
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8004
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8005
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_3009(context, evt)
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：210；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 210) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：211；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 211) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-104，71，154），持续时间为5秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-104, y=71, z=154}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 5, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 将本组内变量名为 "stage3" 的变量设置为 104
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "stage3", 104, 201058008) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 延迟5秒后,向groupId为：201058003的对象,请求一次调用,并将string参数："finish" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 201058003, "finish", 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 改变指定group组201058008中， configid为8003的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8003, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8004的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8004, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8005的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8005, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_3009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if 3001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 211 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "stage3state"
-  L5_2 = 201058008
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_3010(context, evt)
+	-- 判断是gadgetid 3001 option_id 211
+	if 3001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 211 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"stage3state"为2
+	if ScriptLib.GetGroupVariableValueByGroup(context, "stage3state", 201058008) ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_3010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 210
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 211
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -104
-  L2_2.y = 71
-  L2_2.z = 154
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 5
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupVariableValueByGroup
-  L5_2 = A0_2
-  L6_2 = "stage3"
-  L7_2 = 201
-  L8_2 = 201058008
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.CreateGroupTimerEvent
-  L5_2 = A0_2
-  L6_2 = 201058003
-  L7_2 = "finish"
-  L8_2 = 5
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8003
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8004
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8005
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_3010(context, evt)
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：210；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 210) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：211；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 211) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-104，71，154），持续时间为5秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-104, y=71, z=154}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 5, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 将本组内变量名为 "stage3" 的变量设置为 201
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "stage3", 201, 201058008) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 延迟5秒后,向groupId为：201058003的对象,请求一次调用,并将string参数："finish" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 201058003, "finish", 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 改变指定group组201058008中， configid为8003的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8003, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8004的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8004, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8005的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8005, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_3010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if 3001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 211 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "stage3state"
-  L5_2 = 201058008
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 3 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_3011(context, evt)
+	-- 判断是gadgetid 3001 option_id 211
+	if 3001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 211 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"stage3state"为3
+	if ScriptLib.GetGroupVariableValueByGroup(context, "stage3state", 201058008) ~= 3 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_3011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 210
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 211
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -104
-  L2_2.y = 71
-  L2_2.z = 154
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 5
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupVariableValueByGroup
-  L5_2 = A0_2
-  L6_2 = "stage3"
-  L7_2 = 302
-  L8_2 = 201058008
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.CreateGroupTimerEvent
-  L5_2 = A0_2
-  L6_2 = 201058003
-  L7_2 = "finish"
-  L8_2 = 5
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8003
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8004
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8005
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_3011(context, evt)
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：210；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 210) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：211；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 211) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-104，71，154），持续时间为5秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-104, y=71, z=154}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 5, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 将本组内变量名为 "stage3" 的变量设置为 302
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "stage3", 302, 201058008) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 延迟5秒后,向groupId为：201058003的对象,请求一次调用,并将string参数："finish" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 201058003, "finish", 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 改变指定group组201058008中， configid为8003的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8003, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8004的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8004, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8005的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8005, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_3011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if 3001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 211 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "stage3state"
-  L5_2 = 201058008
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 4 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_3012(context, evt)
+	-- 判断是gadgetid 3001 option_id 211
+	if 3001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 211 ~= evt.param2 then
+		return false
+	end
+	
+	
+	-- 判断变量"stage3state"为4
+	if ScriptLib.GetGroupVariableValueByGroup(context, "stage3state", 201058008) ~= 4 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_3012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 210
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = 211
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -104
-  L2_2.y = 71
-  L2_2.z = 154
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 5
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupVariableValueByGroup
-  L5_2 = A0_2
-  L6_2 = "stage3"
-  L7_2 = 403
-  L8_2 = 201058008
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.CreateGroupTimerEvent
-  L5_2 = A0_2
-  L6_2 = 201058003
-  L7_2 = "finish"
-  L8_2 = 5
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8003
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8004
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupGadgetStateByConfigId
-  L5_2 = A0_2
-  L6_2 = 201058008
-  L7_2 = 8005
-  L8_2 = GadgetState
-  L8_2 = L8_2.Default
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_3012(context, evt)
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：210；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 210) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201058003 ；指定config：3001；物件身上指定option：211；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201058003, 3001, 211) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-104，71，154），持续时间为5秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-104, y=71, z=154}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 5, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 将本组内变量名为 "stage3" 的变量设置为 403
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "stage3", 403, 201058008) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 延迟5秒后,向groupId为：201058003的对象,请求一次调用,并将string参数："finish" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 201058003, "finish", 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 改变指定group组201058008中， configid为8003的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8003, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8004的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8004, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组201058008中， configid为8005的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201058008, 8005, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_3012 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 201058003
-  L5_2 = 3001
-  L6_2 = {}
-  L7_2 = 210
-  L8_2 = 211
-  L6_2[1] = L7_2
-  L6_2[2] = L8_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_3013(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 201058003, 3001, {210,211}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_3013 = L1_1

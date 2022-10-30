@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 3994721311,
-  "descTextMapHash": 0,
+  
   "id": 73277,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,20 +39,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7327701,
-            0
-          ],
+          "param": [7327701, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            7327701,
-            0
-          ],
+          "param": [7327701, 0],
           "count": 0
         }
       ],
@@ -77,9 +71,7 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "7327701"
-          ]
+          "param": ["7327701"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -96,10 +88,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7303709",
-            "3"
-          ]
+          "param": ["7303709", "3"]
         }
       ],
       "priority": 5,
@@ -108,9 +97,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 732770101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20791
-      ],
+      "npcIdRawNum": [20791],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -139,16 +126,10 @@
     }
   ],
   "LGCLJGGNGBD": [
-    903465734428,
-    414021237615,
-    17312917509,
-    281832265128,
-    158888283091,
+    903465734428, 414021237615, 17312917509, 281832265128, 158888283091,
     341255082544
   ],
-  "OMKMAOLMNCO": [
-    384199101593
-  ],
+  "OMKMAOLMNCO": [384199101593],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 0
 }

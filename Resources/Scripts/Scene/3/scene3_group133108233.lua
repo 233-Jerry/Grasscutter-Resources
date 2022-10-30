@@ -1,368 +1,139 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 133108233
-L1_1 = {}
-L1_1.group_id = 133108233
-L1_1.num_monster = 2
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "challengeStart"
-L3_1.value = 0
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "challengeSuccess"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 3
-L5_1.name = "hasReward"
-L5_1.value = 0
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 4
-L6_1.name = "giveReward"
-L6_1.value = 0
-L6_1.no_refresh = false
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 233001
-L4_1.monster_id = 25020201
-L5_1 = {}
-L5_1.x = -584.094
-L5_1.y = 200.138
-L5_1.z = -908.434
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 308.08
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.drop_id = 1000100
-L4_1.disableWander = true
-L4_1.pose_id = 9005
-L4_1.area_id = 7
-L5_1 = {}
-L5_1.config_id = 233002
-L5_1.monster_id = 25010601
-L6_1 = {}
-L6_1.x = -586.554
-L6_1.y = 200.158
-L6_1.z = -908.329
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 288.797
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.drop_id = 1000100
-L5_1.disableWander = true
-L5_1.pose_id = 9003
-L5_1.area_id = 7
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 233003
-L4_1.gadget_id = 70800056
-L5_1 = {}
-L5_1.x = -583.952
-L5_1.y = 200.164
-L5_1.z = -910.542
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 359.657
-L5_1.y = 336.047
-L5_1.z = 358.504
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 7
-L5_1 = {}
-L5_1.config_id = 233004
-L5_1.gadget_id = 70800060
-L6_1 = {}
-L6_1.x = -589.136
-L6_1.y = 200.0
-L6_1.z = -908.01
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.area_id = 7
-L6_1 = {}
-L6_1.config_id = 233005
-L6_1.gadget_id = 70800088
-L7_1 = {}
-L7_1.x = -584.062
-L7_1.y = 200.03
-L7_1.z = -908.837
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 358.272
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 7
-L7_1 = {}
-L7_1.config_id = 233006
-L7_1.gadget_id = 70800088
-L8_1 = {}
-L8_1.x = -586.262
-L8_1.y = 200.03
-L8_1.z = -908.917
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 178.272
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.area_id = 7
-L8_1 = {}
-L8_1.config_id = 233016
-L8_1.gadget_id = 70800105
-L9_1 = {}
-L9_1.x = -582.088
-L9_1.y = 200.0
-L9_1.z = -909.687
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.area_id = 7
-L9_1 = {}
-L9_1.config_id = 233017
-L9_1.gadget_id = 70800105
-L10_1 = {}
-L10_1.x = -588.259
-L10_1.y = 200.0
-L10_1.z = -906.63
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.area_id = 7
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 233007
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 50
-L5_1 = {}
-L5_1.x = -585.439
-L5_1.y = 199.848
-L5_1.z = -908.724
-L4_1.pos = L5_1
-L4_1.area_id = 7
-L5_1 = {}
-L5_1.config_id = 233008
-L6_1 = RegionShape
-L6_1 = L6_1.SPHERE
-L5_1.shape = L6_1
-L5_1.radius = 70
-L6_1 = {}
-L6_1.x = -585.397
-L6_1.y = 199.848
-L6_1.z = -908.793
-L5_1.pos = L6_1
-L5_1.area_id = 7
-L6_1 = {}
-L6_1.config_id = 233009
-L7_1 = RegionShape
-L7_1 = L7_1.SPHERE
-L6_1.shape = L7_1
-L6_1.radius = 70
-L7_1 = {}
-L7_1.x = -585.285
-L7_1.y = 199.848
-L7_1.z = -908.816
-L6_1.pos = L7_1
-L6_1.area_id = 7
-L7_1 = {}
-L8_1 = "Firecracker_Play"
-L7_1[1] = L8_1
-L6_1.team_ability_group_list = L7_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1233007
-L4_1.name = "ENTER_REGION_233007"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = "1"
-L4_1.condition = "condition_EVENT_ENTER_REGION_233007"
-L4_1.action = "action_EVENT_ENTER_REGION_233007"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1233008
-L5_1.name = "LEAVE_REGION_233008"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_LEAVE_REGION
-L5_1.event = L6_1
-L5_1.source = "1"
-L5_1.condition = "condition_EVENT_LEAVE_REGION_233008"
-L5_1.action = "action_EVENT_LEAVE_REGION_233008"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1233010
-L6_1.name = "SELECT_OPTION_233010"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_SELECT_OPTION
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_SELECT_OPTION_233010"
-L6_1.action = "action_EVENT_SELECT_OPTION_233010"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1233011
-L7_1.name = "VARIABLE_CHANGE_233011"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_VARIABLE_CHANGE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_VARIABLE_CHANGE_233011"
-L7_1.action = "action_EVENT_VARIABLE_CHANGE_233011"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1233012
-L8_1.name = "CHALLENGE_FAIL_233012"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_CHALLENGE_FAIL
-L8_1.event = L9_1
-L8_1.source = "2200"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_CHALLENGE_FAIL_233012"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1233013
-L9_1.name = "CHALLENGE_SUCCESS_233013"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_CHALLENGE_SUCCESS
-L9_1.event = L10_1
-L9_1.source = "2200"
-L9_1.condition = ""
-L9_1.action = "action_EVENT_CHALLENGE_SUCCESS_233013"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1233014
-L10_1.name = "GROUP_LOAD_233014"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_GROUP_LOAD
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_GROUP_LOAD_233014"
-L10_1.action = "action_EVENT_GROUP_LOAD_233014"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1233015
-L11_1.name = "GROUP_LOAD_233015"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_GROUP_LOAD
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_GROUP_LOAD_233015"
-L11_1.action = "action_EVENT_GROUP_LOAD_233015"
-L11_1.trigger_count = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 2
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-suites = L2_1
+-- 基础信息
+local base_info = {
+	group_id = 133108233
+}
+
+-- Trigger变量
+local defs = {
+	group_id = 133108233,
+	num_monster = 2
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "challengeStart", value = 0, no_refresh = false },
+	{ config_id = 2, name = "challengeSuccess", value = 0, no_refresh = false },
+	{ config_id = 3, name = "hasReward", value = 0, no_refresh = true },
+	{ config_id = 4, name = "giveReward", value = 0, no_refresh = false }
+}
+
+-- 废弃数据
+garbages = {
+	monsters = {
+		{ config_id = 233001, monster_id = 25020201, pos = { x = -584.094, y = 200.138, z = -908.434 }, rot = { x = 0.000, y = 308.080, z = 0.000 }, level = 30, drop_id = 1000100, disableWander = true, pose_id = 9005, area_id = 7 },
+		{ config_id = 233002, monster_id = 25010601, pos = { x = -586.554, y = 200.158, z = -908.329 }, rot = { x = 0.000, y = 288.797, z = 0.000 }, level = 30, drop_id = 1000100, disableWander = true, pose_id = 9003, area_id = 7 }
+	},
+	gadgets = {
+		{ config_id = 233003, gadget_id = 70800056, pos = { x = -583.952, y = 200.164, z = -910.542 }, rot = { x = 359.657, y = 336.047, z = 358.504 }, level = 1, area_id = 7 },
+		{ config_id = 233004, gadget_id = 70800060, pos = { x = -589.136, y = 200.000, z = -908.010 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 7 },
+		{ config_id = 233005, gadget_id = 70800088, pos = { x = -584.062, y = 200.030, z = -908.837 }, rot = { x = 0.000, y = 358.272, z = 0.000 }, level = 1, area_id = 7 },
+		{ config_id = 233006, gadget_id = 70800088, pos = { x = -586.262, y = 200.030, z = -908.917 }, rot = { x = 0.000, y = 178.272, z = 0.000 }, level = 1, area_id = 7 },
+		{ config_id = 233016, gadget_id = 70800105, pos = { x = -582.088, y = 200.000, z = -909.687 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 7 },
+		{ config_id = 233017, gadget_id = 70800105, pos = { x = -588.259, y = 200.000, z = -906.630 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 7 }
+	},
+	regions = {
+		{ config_id = 233007, shape = RegionShape.SPHERE, radius = 50, pos = { x = -585.439, y = 199.848, z = -908.724 }, area_id = 7 },
+		{ config_id = 233008, shape = RegionShape.SPHERE, radius = 70, pos = { x = -585.397, y = 199.848, z = -908.793 }, area_id = 7 },
+		{ config_id = 233009, shape = RegionShape.SPHERE, radius = 70, pos = { x = -585.285, y = 199.848, z = -908.816 }, area_id = 7, team_ability_group_list = { "Firecracker_Play" } }
+	},
+	triggers = {
+		{ config_id = 1233007, name = "ENTER_REGION_233007", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_233007", action = "action_EVENT_ENTER_REGION_233007", trigger_count = 0 },
+		{ config_id = 1233008, name = "LEAVE_REGION_233008", event = EventType.EVENT_LEAVE_REGION, source = "1", condition = "condition_EVENT_LEAVE_REGION_233008", action = "action_EVENT_LEAVE_REGION_233008", trigger_count = 0 },
+		{ config_id = 1233010, name = "SELECT_OPTION_233010", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_233010", action = "action_EVENT_SELECT_OPTION_233010", trigger_count = 0 },
+		{ config_id = 1233011, name = "VARIABLE_CHANGE_233011", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_233011", action = "action_EVENT_VARIABLE_CHANGE_233011", trigger_count = 0 },
+		{ config_id = 1233012, name = "CHALLENGE_FAIL_233012", event = EventType.EVENT_CHALLENGE_FAIL, source = "2200", condition = "", action = "action_EVENT_CHALLENGE_FAIL_233012", trigger_count = 0 },
+		{ config_id = 1233013, name = "CHALLENGE_SUCCESS_233013", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "2200", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_233013", trigger_count = 0 },
+		{ config_id = 1233014, name = "GROUP_LOAD_233014", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_233014", action = "action_EVENT_GROUP_LOAD_233014", trigger_count = 0 },
+		{ config_id = 1233015, name = "GROUP_LOAD_233015", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_233015", action = "action_EVENT_GROUP_LOAD_233015", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

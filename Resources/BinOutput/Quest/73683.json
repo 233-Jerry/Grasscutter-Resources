@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 2840451079,
-  "descTextMapHash": 0,
+  
   "id": 73683,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,18 +39,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7066108,
-            3
-          ],
+          "param": [7066108, 3],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7066109,
-            3
-          ],
+          "param": [7066109, 3],
           "count": 0
         }
       ],
@@ -75,10 +69,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNLOCK_POINT",
-          "param": [
-            "3",
-            "528"
-          ]
+          "param": ["3", "528"]
         }
       ],
       "failExec": [],

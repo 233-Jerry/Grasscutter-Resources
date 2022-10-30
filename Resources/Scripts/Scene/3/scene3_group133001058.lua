@@ -1,690 +1,208 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1
-L0_1 = {}
-L0_1.group_id = 133001058
-L1_1 = {}
-L1_1.group_id = 133001058
-L1_1.challenge_id = 255
-L1_1.region_id = 58014
-L1_1.target_count = 8
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 58007
-L3_1.monster_id = 28030403
-L4_1 = {}
-L4_1.x = 1371.414
-L4_1.y = 268.402
-L4_1.z = -1150.762
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.drop_tag = "\233\184\159\231\177\187"
-L3_1.isOneoff = true
-L3_1.climate_area_id = 1
-L3_1.area_id = 10
-L4_1 = {}
-L4_1.config_id = 58008
-L4_1.monster_id = 28020601
-L5_1 = {}
-L5_1.x = 1365.018
-L5_1.y = 270.036
-L5_1.z = -1123.223
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 252.208
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.drop_tag = "\232\181\176\229\133\189"
-L4_1.isOneoff = true
-L4_1.climate_area_id = 1
-L4_1.area_id = 10
-L5_1 = {}
-L5_1.config_id = 58009
-L5_1.monster_id = 28050103
-L6_1 = {}
-L6_1.x = 1340.209
-L6_1.y = 269.271
-L6_1.z = -1166.381
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 58.232
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.drop_tag = "\233\173\148\230\179\149\231\148\159\231\137\169"
-L5_1.isOneoff = true
-L5_1.climate_area_id = 1
-L5_1.area_id = 10
-L6_1 = {}
-L6_1.config_id = 58010
-L6_1.monster_id = 28050103
-L7_1 = {}
-L7_1.x = 1340.36
-L7_1.y = 268.276
-L7_1.z = -1167.114
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 58.232
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.drop_tag = "\233\173\148\230\179\149\231\148\159\231\137\169"
-L6_1.isOneoff = true
-L6_1.climate_area_id = 1
-L6_1.area_id = 10
-L7_1 = {}
-L7_1.config_id = 58011
-L7_1.monster_id = 28020601
-L8_1 = {}
-L8_1.x = 1381.312
-L8_1.y = 275.142
-L8_1.z = -1136.346
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 63.161
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.drop_tag = "\232\181\176\229\133\189"
-L7_1.isOneoff = true
-L7_1.climate_area_id = 1
-L7_1.area_id = 10
-L8_1 = {}
-L8_1.config_id = 58012
-L8_1.monster_id = 28030403
-L9_1 = {}
-L9_1.x = 1370.698
-L9_1.y = 268.015
-L9_1.z = -1151.107
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.drop_tag = "\233\184\159\231\177\187"
-L8_1.isOneoff = true
-L8_1.climate_area_id = 1
-L8_1.area_id = 10
-L9_1 = {}
-L9_1.config_id = 58013
-L9_1.monster_id = 28050103
-L10_1 = {}
-L10_1.x = 1380.089
-L10_1.y = 269.165
-L10_1.z = -1176.186
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 339.883
-L10_1.y = 193.789
-L10_1.z = 355.175
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.drop_tag = "\233\173\148\230\179\149\231\148\159\231\137\169"
-L9_1.isOneoff = true
-L9_1.climate_area_id = 1
-L9_1.area_id = 10
-L10_1 = {}
-L10_1.config_id = 58015
-L10_1.monster_id = 28020303
-L11_1 = {}
-L11_1.x = 1393.617
-L11_1.y = 270.506
-L11_1.z = -1176.57
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 30
-L10_1.drop_tag = "\232\181\176\229\133\189"
-L10_1.isOneoff = true
-L10_1.climate_area_id = 1
-L10_1.area_id = 10
-L11_1 = {}
-L11_1.config_id = 58018
-L11_1.monster_id = 28020303
-L12_1 = {}
-L12_1.x = 1357.265
-L12_1.y = 267.953
-L12_1.z = -1130.114
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 64.576
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 30
-L11_1.drop_tag = "\232\181\176\229\133\189"
-L11_1.isOneoff = true
-L11_1.climate_area_id = 1
-L11_1.area_id = 10
-L12_1 = {}
-L12_1.config_id = 58019
-L12_1.monster_id = 28030403
-L13_1 = {}
-L13_1.x = 1396.885
-L13_1.y = 271.022
-L13_1.z = -1138.036
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 0.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 1
-L12_1.drop_tag = "\233\184\159\231\177\187"
-L12_1.isOneoff = true
-L12_1.climate_area_id = 1
-L12_1.area_id = 10
-L13_1 = {}
-L13_1.config_id = 58020
-L13_1.monster_id = 28030403
-L14_1 = {}
-L14_1.x = 1397.601
-L14_1.y = 271.409
-L14_1.z = -1137.691
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 0.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L13_1.drop_tag = "\233\184\159\231\177\187"
-L13_1.isOneoff = true
-L13_1.climate_area_id = 1
-L13_1.area_id = 10
-L14_1 = {}
-L14_1.config_id = 58021
-L14_1.monster_id = 21011401
-L15_1 = {}
-L15_1.x = 1382.449
-L15_1.y = 274.961
-L15_1.z = -1133.926
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 209.067
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 30
-L14_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L14_1.isOneoff = true
-L14_1.pose_id = 9010
-L14_1.climate_area_id = 1
-L14_1.area_id = 10
-L15_1 = {}
-L15_1.config_id = 58022
-L15_1.monster_id = 21011401
-L16_1 = {}
-L16_1.x = 1379.685
-L16_1.y = 274.845
-L16_1.z = -1134.272
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 132.939
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 30
-L15_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L15_1.isOneoff = true
-L15_1.pose_id = 9003
-L15_1.climate_area_id = 1
-L15_1.area_id = 10
-L16_1 = {}
-L16_1.config_id = 58024
-L16_1.monster_id = 21010901
-L17_1 = {}
-L17_1.x = 1375.082
-L17_1.y = 268.387
-L17_1.z = -1176.585
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 0.0
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 30
-L16_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
-L16_1.isOneoff = true
-L16_1.pose_id = 32
-L16_1.climate_area_id = 1
-L16_1.area_id = 10
-L17_1 = {}
-L17_1.config_id = 58025
-L17_1.monster_id = 21010901
-L18_1 = {}
-L18_1.x = 1383.212
-L18_1.y = 269.021
-L18_1.z = -1174.339
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 300.038
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 30
-L17_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
-L17_1.isOneoff = true
-L17_1.pose_id = 32
-L17_1.climate_area_id = 1
-L17_1.area_id = 10
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-L2_1[13] = L15_1
-L2_1[14] = L16_1
-L2_1[15] = L17_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 58001
-L3_1.gadget_id = 70220083
-L4_1 = {}
-L4_1.x = 1365.64
-L4_1.y = 269.954
-L4_1.z = -1122.826
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 349.69
-L4_1.y = 358.727
-L4_1.z = 14.037
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.isOneoff = true
-L3_1.area_id = 10
-L4_1 = {}
-L4_1.config_id = 58002
-L4_1.gadget_id = 70220083
-L5_1 = {}
-L5_1.x = 1370.727
-L5_1.y = 268.348
-L5_1.z = -1150.975
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.isOneoff = true
-L4_1.area_id = 10
-L5_1 = {}
-L5_1.config_id = 58003
-L5_1.gadget_id = 70220083
-L6_1 = {}
-L6_1.x = 1380.326
-L6_1.y = 268.309
-L6_1.z = -1176.094
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 20.664
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.isOneoff = true
-L5_1.area_id = 10
-L6_1 = {}
-L6_1.config_id = 58004
-L6_1.gadget_id = 70220083
-L7_1 = {}
-L7_1.x = 1393.746
-L7_1.y = 270.523
-L7_1.z = -1176.536
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.isOneoff = true
-L6_1.area_id = 10
-L7_1 = {}
-L7_1.config_id = 58005
-L7_1.gadget_id = 70220083
-L8_1 = {}
-L8_1.x = 1381.351
-L8_1.y = 274.31
-L8_1.z = -1136.431
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 63.161
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.isOneoff = true
-L7_1.area_id = 10
-L8_1 = {}
-L8_1.config_id = 58006
-L8_1.gadget_id = 70220083
-L9_1 = {}
-L9_1.x = 1340.073
-L9_1.y = 267.837
-L9_1.z = -1166.596
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 58.232
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.isOneoff = true
-L8_1.area_id = 10
-L9_1 = {}
-L9_1.config_id = 58016
-L9_1.gadget_id = 70220083
-L10_1 = {}
-L10_1.x = 1396.651
-L10_1.y = 271.392
-L10_1.z = -1137.66
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.isOneoff = true
-L9_1.area_id = 10
-L10_1 = {}
-L10_1.config_id = 58017
-L10_1.gadget_id = 70220083
-L11_1 = {}
-L11_1.x = 1357.249
-L11_1.y = 267.936
-L11_1.z = -1129.97
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 359.203
-L11_1.y = 94.6
-L11_1.z = 359.935
-L10_1.rot = L11_1
-L10_1.level = 1
-L10_1.isOneoff = true
-L10_1.area_id = 10
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 58014
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 50
-L4_1 = {}
-L4_1.x = 1378.076
-L4_1.y = 270.147
-L4_1.z = -1154.379
-L3_1.pos = L4_1
-L3_1.area_id = 10
-L4_1 = {}
-L4_1.config_id = 58023
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 8
-L5_1 = {}
-L5_1.x = 1379.585
-L5_1.y = 268.0
-L5_1.z = -1174.568
-L4_1.pos = L5_1
-L4_1.area_id = 10
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1058023
-L3_1.name = "ENTER_REGION_58023"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_58023"
-L3_1.action = "action_EVENT_ENTER_REGION_58023"
-L2_1[1] = L3_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L5_1 = 58021
-L6_1 = 58022
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 58001
-L6_1 = 58002
-L7_1 = 58003
-L8_1 = 58004
-L9_1 = 58005
-L10_1 = 58006
-L11_1 = 58016
-L12_1 = 58017
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 58014
-L6_1 = 58023
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ENTER_REGION_58023"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 58008
-L5_1[1] = L6_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L7_1 = 58007
-L8_1 = 58012
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L8_1 = 58013
-L7_1[1] = L8_1
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L7_1 = {}
-L8_1 = {}
-L9_1 = 58015
-L8_1[1] = L9_1
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L7_1.triggers = L8_1
-L7_1.rand_weight = 100
-L8_1 = {}
-L9_1 = {}
-L10_1 = 58011
-L9_1[1] = L10_1
-L8_1.monsters = L9_1
-L9_1 = {}
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L8_1.triggers = L9_1
-L8_1.rand_weight = 100
-L9_1 = {}
-L10_1 = {}
-L11_1 = 58009
-L12_1 = 58010
-L10_1[1] = L11_1
-L10_1[2] = L12_1
-L9_1.monsters = L10_1
-L10_1 = {}
-L9_1.gadgets = L10_1
-L10_1 = {}
-L9_1.regions = L10_1
-L10_1 = {}
-L9_1.triggers = L10_1
-L9_1.rand_weight = 100
-L10_1 = {}
-L11_1 = {}
-L12_1 = 58019
-L13_1 = 58020
-L11_1[1] = L12_1
-L11_1[2] = L13_1
-L10_1.monsters = L11_1
-L11_1 = {}
-L10_1.gadgets = L11_1
-L11_1 = {}
-L10_1.regions = L11_1
-L11_1 = {}
-L10_1.triggers = L11_1
-L10_1.rand_weight = 100
-L11_1 = {}
-L12_1 = {}
-L13_1 = 58018
-L12_1[1] = L13_1
-L11_1.monsters = L12_1
-L12_1 = {}
-L11_1.gadgets = L12_1
-L12_1 = {}
-L11_1.regions = L12_1
-L12_1 = {}
-L11_1.triggers = L12_1
-L11_1.rand_weight = 100
-L12_1 = {}
-L13_1 = {}
-L14_1 = 58024
-L15_1 = 58025
-L13_1[1] = L14_1
-L13_1[2] = L15_1
-L12_1.monsters = L13_1
-L13_1 = {}
-L12_1.gadgets = L13_1
-L13_1 = {}
-L12_1.regions = L13_1
-L13_1 = {}
-L12_1.triggers = L13_1
-L12_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 58023 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133001058
+}
+
+-- Trigger变量
+local defs = {
+	group_id = 133001058,
+	challenge_id = 255,
+	region_id = 58014,
+	target_count = 8
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 58007, monster_id = 28030403, pos = { x = 1371.414, y = 268.402, z = -1150.762 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_tag = "鸟类", isOneoff = true, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58008, monster_id = 28020601, pos = { x = 1365.018, y = 270.036, z = -1123.223 }, rot = { x = 0.000, y = 252.208, z = 0.000 }, level = 1, drop_tag = "走兽", isOneoff = true, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58009, monster_id = 28050103, pos = { x = 1340.209, y = 269.271, z = -1166.381 }, rot = { x = 0.000, y = 58.232, z = 0.000 }, level = 1, drop_tag = "魔法生物", isOneoff = true, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58010, monster_id = 28050103, pos = { x = 1340.360, y = 268.276, z = -1167.114 }, rot = { x = 0.000, y = 58.232, z = 0.000 }, level = 1, drop_tag = "魔法生物", isOneoff = true, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58011, monster_id = 28020601, pos = { x = 1381.312, y = 275.142, z = -1136.346 }, rot = { x = 0.000, y = 63.161, z = 0.000 }, level = 1, drop_tag = "走兽", isOneoff = true, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58012, monster_id = 28030403, pos = { x = 1370.698, y = 268.015, z = -1151.107 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_tag = "鸟类", isOneoff = true, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58013, monster_id = 28050103, pos = { x = 1380.089, y = 269.165, z = -1176.186 }, rot = { x = 339.883, y = 193.789, z = 355.175 }, level = 1, drop_tag = "魔法生物", isOneoff = true, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58015, monster_id = 28020303, pos = { x = 1393.617, y = 270.506, z = -1176.570 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, drop_tag = "走兽", isOneoff = true, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58018, monster_id = 28020303, pos = { x = 1357.265, y = 267.953, z = -1130.114 }, rot = { x = 0.000, y = 64.576, z = 0.000 }, level = 30, drop_tag = "走兽", isOneoff = true, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58019, monster_id = 28030403, pos = { x = 1396.885, y = 271.022, z = -1138.036 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_tag = "鸟类", isOneoff = true, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58020, monster_id = 28030403, pos = { x = 1397.601, y = 271.409, z = -1137.691 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_tag = "鸟类", isOneoff = true, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58021, monster_id = 21011401, pos = { x = 1382.449, y = 274.961, z = -1133.926 }, rot = { x = 0.000, y = 209.067, z = 0.000 }, level = 30, drop_tag = "丘丘人", isOneoff = true, pose_id = 9010, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58022, monster_id = 21011401, pos = { x = 1379.685, y = 274.845, z = -1134.272 }, rot = { x = 0.000, y = 132.939, z = 0.000 }, level = 30, drop_tag = "丘丘人", isOneoff = true, pose_id = 9003, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58024, monster_id = 21010901, pos = { x = 1375.082, y = 268.387, z = -1176.585 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, drop_tag = "远程丘丘人", isOneoff = true, pose_id = 32, climate_area_id = 1, area_id = 10 },
+	{ config_id = 58025, monster_id = 21010901, pos = { x = 1383.212, y = 269.021, z = -1174.339 }, rot = { x = 0.000, y = 300.038, z = 0.000 }, level = 30, drop_tag = "远程丘丘人", isOneoff = true, pose_id = 32, climate_area_id = 1, area_id = 10 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 58001, gadget_id = 70220083, pos = { x = 1365.640, y = 269.954, z = -1122.826 }, rot = { x = 349.690, y = 358.727, z = 14.037 }, level = 1, isOneoff = true, area_id = 10 },
+	{ config_id = 58002, gadget_id = 70220083, pos = { x = 1370.727, y = 268.348, z = -1150.975 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, isOneoff = true, area_id = 10 },
+	{ config_id = 58003, gadget_id = 70220083, pos = { x = 1380.326, y = 268.309, z = -1176.094 }, rot = { x = 20.664, y = 0.000, z = 0.000 }, level = 1, isOneoff = true, area_id = 10 },
+	{ config_id = 58004, gadget_id = 70220083, pos = { x = 1393.746, y = 270.523, z = -1176.536 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, isOneoff = true, area_id = 10 },
+	{ config_id = 58005, gadget_id = 70220083, pos = { x = 1381.351, y = 274.310, z = -1136.431 }, rot = { x = 0.000, y = 63.161, z = 0.000 }, level = 1, isOneoff = true, area_id = 10 },
+	{ config_id = 58006, gadget_id = 70220083, pos = { x = 1340.073, y = 267.837, z = -1166.596 }, rot = { x = 0.000, y = 58.232, z = 0.000 }, level = 1, isOneoff = true, area_id = 10 },
+	{ config_id = 58016, gadget_id = 70220083, pos = { x = 1396.651, y = 271.392, z = -1137.660 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, isOneoff = true, area_id = 10 },
+	{ config_id = 58017, gadget_id = 70220083, pos = { x = 1357.249, y = 267.936, z = -1129.970 }, rot = { x = 359.203, y = 94.600, z = 359.935 }, level = 1, isOneoff = true, area_id = 10 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 58014, shape = RegionShape.SPHERE, radius = 50, pos = { x = 1378.076, y = 270.147, z = -1154.379 }, area_id = 10 },
+	{ config_id = 58023, shape = RegionShape.SPHERE, radius = 8, pos = { x = 1379.585, y = 268.000, z = -1174.568 }, area_id = 10 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1058023, name = "ENTER_REGION_58023", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_58023", action = "action_EVENT_ENTER_REGION_58023" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 58021, 58022 },
+		gadgets = { 58001, 58002, 58003, 58004, 58005, 58006, 58016, 58017 },
+		regions = { 58014, 58023 },
+		triggers = { "ENTER_REGION_58023" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { 58008 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { 58007, 58012 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = ,
+		monsters = { 58013 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = ,
+		monsters = { 58015 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 6,
+		-- description = ,
+		monsters = { 58011 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 7,
+		-- description = ,
+		monsters = { 58009, 58010 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 8,
+		-- description = ,
+		monsters = { 58019, 58020 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 9,
+		-- description = ,
+		monsters = { 58018 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 10,
+		-- description = ,
+		monsters = { 58024, 58025 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_58023(context, evt)
+	if evt.param1 ~= 58023 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_58023 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133001058
-  L5_2 = 10
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_58023(context, evt)
+	-- 添加suite10的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133001058, 10)
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_58023 = L2_1
-L2_1 = require
-L3_1 = "V2_3/WinterCampGacha"
-L2_1(L3_1)
+
+require "V2_3/WinterCampGacha"

@@ -12,9 +12,7 @@
   "_luaPath": "Actor/Quest/LQ482",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    427
-  ],
+  "PEOHODAKLNO": [427],
   "FEHAEKNGFBP": false,
   "rewardIdList": [],
   "showType": "QUEST_SHOW",
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            48201,
-            0
-          ],
+          "param": [48201, 0],
           "count": 0
         }
       ],
@@ -52,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q48202Ambor"
-        ],
+        "param": ["Q48202Ambor"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -88,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            48202,
-            0
-          ],
+          "param": [48202, 0],
           "count": 0
         }
       ],
@@ -99,9 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1002"
-        ],
+        "param": ["1002"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -135,10 +123,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            48203,
-            0
-          ],
+          "param": [48203, 0],
           "count": 0
         }
       ],
@@ -180,10 +165,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            4820403,
-            0
-          ],
+          "param": [4820403, 0],
           "count": 0
         }
       ],
@@ -191,9 +173,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1002"
-        ],
+        "param": ["1002"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -210,9 +190,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "48203"
-          ]
+          "param": ["48203"]
         }
       ],
       "failExec": [],
@@ -234,10 +212,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            48205,
-            0
-          ],
+          "param": [48205, 0],
           "count": 0
         }
       ],
@@ -245,9 +220,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1002"
-        ],
+        "param": ["1002"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -281,10 +254,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            48207,
-            0
-          ],
+          "param": [48207, 0],
           "count": 0
         }
       ],
@@ -326,10 +296,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            48208,
-            0
-          ],
+          "param": [48208, 0],
           "count": 0
         }
       ],
@@ -371,28 +338,19 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_CLEAR_GROUP_MONSTER",
-          "param": [
-            201015001,
-            0
-          ],
+          "param": [201015001, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            48209,
-            0
-          ],
+          "param": [48209, 0],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_TEAM_DEAD",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         }
       ],
@@ -420,13 +378,8 @@
     }
   ],
   "talks": [],
-  "LGCLJGGNGBD": [
-    40205056658,
-    770694093171
-  ],
-  "OMKMAOLMNCO": [
-    870244633405
-  ],
+  "LGCLJGGNGBD": [40205056658, 770694093171],
+  "OMKMAOLMNCO": [870244633405],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 0
 }

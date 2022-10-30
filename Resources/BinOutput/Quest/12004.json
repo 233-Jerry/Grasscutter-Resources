@@ -12,13 +12,9 @@
   "_luaPath": "Actor/Quest/LQ12004",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    12005
-  ],
+  "PEOHODAKLNO": [12005],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    112004
-  ],
+  "rewardIdList": [112004],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -43,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_ENTER_MY_WORLD",
-          "param": [
-            3,
-            0
-          ],
+          "param": [3, 0],
           "count": 0
         }
       ],
@@ -54,9 +47,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q1200401Ayaka"
-        ],
+        "param": ["Q1200401Ayaka"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -90,10 +81,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1200401,
-            0
-          ],
+          "param": [1200401, 0],
           "count": 0
         }
       ],
@@ -101,9 +89,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q1200401Ayaka"
-        ],
+        "param": ["Q1200401Ayaka"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -137,10 +123,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1200403,
-            0
-          ],
+          "param": [1200403, 0],
           "count": 0
         }
       ],
@@ -148,9 +131,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q1200401Ayaka"
-        ],
+        "param": ["Q1200401Ayaka"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -180,10 +161,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1200402",
-            "2"
-          ]
+          "param": ["1200402", "2"]
         }
       ],
       "priority": 5,
@@ -192,9 +170,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 120040101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1013
-      ],
+      "npcIdRawNum": [1013],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Ayaka1_12004/Q1200401",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -222,13 +198,8 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    645902683150,
-    665788376885
-  ],
-  "OMKMAOLMNCO": [
-    131362737430
-  ],
+  "LGCLJGGNGBD": [645902683150, 665788376885],
+  "OMKMAOLMNCO": [131362737430],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 112004
 }

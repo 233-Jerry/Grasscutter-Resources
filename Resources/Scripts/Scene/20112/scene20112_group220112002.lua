@@ -1,116 +1,105 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 220112002
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1002001
-L2_1.name = "QUEST_START_2001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_QUEST_START
-L2_1.event = L3_1
-L2_1.source = "200804"
-L2_1.condition = "condition_EVENT_QUEST_START_2001"
-L2_1.action = "action_EVENT_QUEST_START_2001"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1002002
-L3_1.name = "TIMER_EVENT_2002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_TIMER_EVENT
-L3_1.event = L4_1
-L3_1.source = "1"
-L3_1.condition = ""
-L3_1.action = "action_EVENT_TIMER_EVENT_2002"
-L3_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "point"
-L2_1.value = 0
-L2_1.no_refresh = false
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_START_2001"
-L5_1 = "TIMER_EVENT_2002"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "point"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220112002
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1002001, name = "QUEST_START_2001", event = EventType.EVENT_QUEST_START, source = "200804", condition = "condition_EVENT_QUEST_START_2001", action = "action_EVENT_QUEST_START_2001", trigger_count = 0 },
+	{ config_id = 1002002, name = "TIMER_EVENT_2002", event = EventType.EVENT_TIMER_EVENT, source = "1", condition = "", action = "action_EVENT_TIMER_EVENT_2002", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "point", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "QUEST_START_2001", "TIMER_EVENT_2002" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_QUEST_START_2001(context, evt)
+	-- 判断变量"point"为1
+	if ScriptLib.GetGroupVariableValue(context, "point") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_QUEST_START_2001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 220112002
-  L5_2 = "1"
-  L6_2 = 0.5
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_2001(context, evt)
+	-- 延迟0.5秒后,向groupId为：220112002的对象,请求一次调用,并将string参数："1" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 220112002, "1", 0.5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_2001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 220112001
-  L5_2 = EntityType
-  L5_2 = L5_2.MONSTER
-  L6_2 = 1001
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_2002(context, evt)
+		-- 移除指定monster
+		ScriptLib.RemoveEntityByConfigId(context, 220112001, EntityType.MONSTER, 1001)
+	
+		
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_2002 = L1_1

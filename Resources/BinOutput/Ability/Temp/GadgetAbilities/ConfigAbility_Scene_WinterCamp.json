@@ -1,1698 +1,1599 @@
 [
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Gear_Common_Property_Prop_JumpUp_01",
-            "HNEIEGHMLKH": {
-                "EffectBall": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_JumpUp_01"
-                        }
-                    ]
-                },
-                "UNIQUE_WinterCamp_RocketJump_GV": {
-                    "FGJPBKGPNJJ": "RefreshUniqueDurability",
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "GMIMMDOGGIO": 8.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "WinterCamp_RocketJump",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "ACOKKHADPOJ": true,
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "WinterCamp_RocketJump",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "EffectBall"
-                }
-            ],
-            "KJKECFBMHKH": [
-                {
-                    "$type": "ApplyModifier",
-                    "NPHOOPNDCAC": "TargetTeam",
-                    "GAIGOBCNNEE": "UNIQUE_WinterCamp_RocketJump_GV"
-                },
-                {
-                    "$type": "ServerLuaCall",
-                    "MINNFFNDCJH": "CurChallengeGroup",
-                    "PDFANJKMFNK": "SLC_ReportBuffGet",
-                    "MPBMJIGLEMJ": 1,
-                    "LIOGECEPJAH": 2.0,
-                    "FDDPMCCJIKN": 0.0,
-                    "KNJMHMKNCKF": 0.0
-                },
-                {
-                    "$type": "RemoveModifier",
-                    "GAIGOBCNNEE": "EffectBall"
-                },
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_SceneObj_JumpUp_01_Dis"
-                },
-                {
-                    "$type": "KillSelf",
-                    "BKFHCBOLIFL": true
-                }
-            ]
+  ///////////////////////////////////////////////////////////////
+  //
+  // 雪山冬令营 跑酷 大跳球
+  //
+  ///////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Gear_Common_Property_Prop_JumpUp_01",
+      "onFieldEnter": [
+        {
+          "$type": "ApplyModifier",
+          "target": "TargetTeam",
+          "modifierName": "UNIQUE_WinterCamp_RocketJump_GV"
+          //"doOffStage":true,
+        },
+        {
+          "$type": "ServerLuaCall",
+          "funcName": "SLC_ReportBuffGet", //通知服务器统计吃球数量
+          "luaCallType": "CurChallengeGroup",
+          "paramNum": 1,
+          "param1": 2
+        },
+        {
+          "$type": "RemoveModifier",
+          "target": "Self",
+          "modifierName": "EffectBall"
+        },
+        {
+          //吃球特效
+          "$type": "FireEffect",
+          "effectPattern": "Eff_SceneObj_JumpUp_01_Dis"
+        },
+        {
+          "$type": "KillSelf",
+          "hideEntity": true
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Gear_Common_Property_Prop_ShieldPower_01",
-            "HNEIEGHMLKH": {
-                "EffectBall": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_ShieldPower_01"
-                        }
-                    ]
-                },
-                "UNIQUE_WinterCamp_Shield_GV": {
-                    "FGJPBKGPNJJ": "RefreshUniqueDurability",
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "GMIMMDOGGIO": 8.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "WinterCamp_Shield",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "ACOKKHADPOJ": true,
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "WinterCamp_Shield",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "EffectBall"
-                }
-            ],
-            "KJKECFBMHKH": [
-                {
-                    "$type": "ApplyModifier",
-                    "NPHOOPNDCAC": "TargetTeam",
-                    "GAIGOBCNNEE": "UNIQUE_WinterCamp_Shield_GV"
-                },
-                {
-                    "$type": "ServerLuaCall",
-                    "MINNFFNDCJH": "CurChallengeGroup",
-                    "PDFANJKMFNK": "SLC_ReportBuffGet",
-                    "MPBMJIGLEMJ": 1,
-                    "LIOGECEPJAH": 3.0,
-                    "FDDPMCCJIKN": 0.0,
-                    "KNJMHMKNCKF": 0.0
-                },
-                {
-                    "$type": "RemoveModifier",
-                    "GAIGOBCNNEE": "EffectBall"
-                },
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_Tower_Ball_Active_01"
-                },
-                {
-                    "$type": "KillSelf",
-                    "BKFHCBOLIFL": true
-                }
-            ]
+      ],
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "target": "Self",
+          "modifierName": "EffectBall"
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Gear_Common_Property_Prop_BreakableIce_01",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "GAIGOBCNNEE": "BreakableIce"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 201,
-                    "GAIGOBCNNEE": "IceHide"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "BreakableIce": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Frozen",
-                    "elementDurability": 150.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_BreakableIce_02_Born",
-                            "EMHHMJIMJML": true
-                        },
-                        {
-                            "$type": "EnableSceneTransformByName",
-                            "DODBNEDGHLA": [
-                                "IceModel"
-                            ],
-                            "PAHBCOACBAI": true
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_IS_PARKOUR_BREAKABLE",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "Predicated",
-                            "NPHOOPNDCAC": "Target",
-                            "predicates": [
-                                {
-                                    "$type": "ByAttackTags",
-                                    "NMJGDKCDFOJ": [
-                                        "WinterCamp_ShieldAttack"
-                                    ]
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "FireEffect",
-                                    "ACOKKHADPOJ": true,
-                                    "JBHFPDMBFHN": "Eff_SceneObj_BreakableIce_02_Broken"
-                                },
-                                {
-                                    "$type": "KillSelf",
-                                    "BKFHCBOLIFL": true
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "IceHide": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "EnableSceneTransformByName",
-                            "DODBNEDGHLA": [
-                                "IceModel"
-                            ]
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "SetGlobalValue",
-                    "value": 1.0,
-                    "HJJEAOMEOFI": "_IS_PARKOUR_BREAKABLE",
-                    "JDHHMBHOOEC": 0.0,
-                    "KHAHOELDONA": 0.0
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Gear_Common_Property_Prop_BreakableIceWithCoin_01",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "GAIGOBCNNEE": "BreakableIce"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 201,
-                    "GAIGOBCNNEE": "IceHide"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "BreakableIce": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Frozen",
-                    "elementDurability": 150.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_BreakableIce_02_Born",
-                            "EMHHMJIMJML": true
-                        },
-                        {
-                            "$type": "EnableSceneTransformByName",
-                            "DODBNEDGHLA": [
-                                "IceModel"
-                            ],
-                            "PAHBCOACBAI": true
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_IS_PARKOUR_BREAKABLE",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "Predicated",
-                            "NPHOOPNDCAC": "Target",
-                            "predicates": [
-                                {
-                                    "$type": "ByAttackTags",
-                                    "NMJGDKCDFOJ": [
-                                        "WinterCamp_ShieldAttack"
-                                    ]
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ServerLuaCall",
-                                    "MINNFFNDCJH": "CurChallengeGroup",
-                                    "PDFANJKMFNK": "SLC_SpecialIcePillarBreak",
-                                    "LIOGECEPJAH": 0.0,
-                                    "FDDPMCCJIKN": 0.0,
-                                    "KNJMHMKNCKF": 0.0
-                                },
-                                {
-                                    "$type": "FireEffect",
-                                    "JBHFPDMBFHN": "Eff_SceneObj_BreakableIce_02_Broken"
-                                },
-                                {
-                                    "$type": "KillSelf",
-                                    "BKFHCBOLIFL": true
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "IceHide": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "EnableSceneTransformByName",
-                            "DODBNEDGHLA": [
-                                "IceModel"
-                            ]
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "SetGlobalValue",
-                    "value": 1.0,
-                    "HJJEAOMEOFI": "_IS_PARKOUR_BREAKABLE",
-                    "JDHHMBHOOEC": 0.0,
-                    "KHAHOELDONA": 0.0
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Gear_Common_Property_Prop_BreakableIce_02",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "GAIGOBCNNEE": "BreakableIce"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 201,
-                    "GAIGOBCNNEE": "IceHide"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "BreakableIce": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Frozen",
-                    "elementDurability": 150.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_BreakableIce_01_Born",
-                            "EMHHMJIMJML": true
-                        },
-                        {
-                            "$type": "EnableSceneTransformByName",
-                            "DODBNEDGHLA": [
-                                "IceModel"
-                            ],
-                            "PAHBCOACBAI": true
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_IS_PARKOUR_BREAKABLE",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "Predicated",
-                            "NPHOOPNDCAC": "Target",
-                            "predicates": [
-                                {
-                                    "$type": "ByAttackTags",
-                                    "NMJGDKCDFOJ": [
-                                        "WinterCamp_ShieldAttack"
-                                    ]
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "FireEffect",
-                                    "JBHFPDMBFHN": "Eff_SceneObj_BreakableIce_01_Broken"
-                                },
-                                {
-                                    "$type": "KillSelf",
-                                    "BKFHCBOLIFL": true
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "IceHide": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "EnableSceneTransformByName",
-                            "DODBNEDGHLA": [
-                                "IceModel"
-                            ]
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "SetGlobalValue",
-                    "value": 1.0,
-                    "HJJEAOMEOFI": "_IS_PARKOUR_BREAKABLE",
-                    "JDHHMBHOOEC": 0.0,
-                    "KHAHOELDONA": 0.0
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Gear_Common_Property_Prop_BreakableIceWithCoin_02",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "GAIGOBCNNEE": "BreakableIce"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 201,
-                    "GAIGOBCNNEE": "IceHide"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "BreakableIce": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Frozen",
-                    "elementDurability": 150.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ShieldBarMixin",
-                            "FMAPKFDKKPB": ""
-                        }
-                    ],
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "EnableSceneTransformByName",
-                            "DODBNEDGHLA": [
-                                "IceModel"
-                            ],
-                            "PAHBCOACBAI": true
-                        },
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_IS_PARKOUR_BREAKABLE",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_BreakableIce_01_Born",
-                            "EMHHMJIMJML": true
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "Predicated",
-                            "NPHOOPNDCAC": "Target",
-                            "predicates": [
-                                {
-                                    "$type": "ByAttackTags",
-                                    "NMJGDKCDFOJ": [
-                                        "WinterCamp_ShieldAttack"
-                                    ]
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ServerLuaCall",
-                                    "MINNFFNDCJH": "CurChallengeGroup",
-                                    "PDFANJKMFNK": "SLC_SpecialIcePillarBreak",
-                                    "LIOGECEPJAH": 0.0,
-                                    "FDDPMCCJIKN": 0.0,
-                                    "KNJMHMKNCKF": 0.0
-                                },
-                                {
-                                    "$type": "FireEffect",
-                                    "JBHFPDMBFHN": "Eff_SceneObj_BreakableIce_01_Broken"
-                                },
-                                {
-                                    "$type": "KillSelf",
-                                    "BKFHCBOLIFL": true
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "IceHide": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "EnableSceneTransformByName",
-                            "DODBNEDGHLA": [
-                                "IceModel"
-                            ]
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "SetGlobalValue",
-                    "value": 1.0,
-                    "HJJEAOMEOFI": "_IS_PARKOUR_BREAKABLE",
-                    "JDHHMBHOOEC": 0.0,
-                    "KHAHOELDONA": 0.0
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Area_Ljxs_Property_Ani_Prop_TriathlonCoin_01",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 201,
-                    "GAIGOBCNNEE": "CoinLocked"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "GAIGOBCNNEE": "CoinDefault"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "AddCoin": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_GetGlideChampCoin"
-                        }
-                    ]
-                },
-                "FindPlayerAfterBreak": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.10000000149011612,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "Predicated",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "OOOFAPPEOJK": [
-                                    "Avatar"
-                                ],
-                                "AKMLOIFOBPO": "Nearest",
-                                "JBKKOJLJHDK": "CircleR10H10",
-                                "ONPOPLLHJLE": "AllExceptSelf",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByEntityTypes",
-                                    "entityTypes": [
-                                        "Avatar"
-                                    ]
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ServerLuaCall",
-                                    "MINNFFNDCJH": "CurChallengeGroup",
-                                    "PDFANJKMFNK": "SLC_WinterCampCoinGet",
-                                    "MPBMJIGLEMJ": 1,
-                                    "LIOGECEPJAH": 0.0,
-                                    "FDDPMCCJIKN": 0.0,
-                                    "KNJMHMKNCKF": 0.0
-                                },
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "Other",
-                                    "GAIGOBCNNEE": "AddCoin"
-                                },
-                                {
-                                    "$type": "KillSelf"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "CoinLocked": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "TriathlonCoin_Locked",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "FindPlayerAfterBreak"
-                        }
-                    ]
-                },
-                "CoinDefault": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "SetGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "TriathlonCoin_Locked",
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                }
-            },
-            "KJKECFBMHKH": [
-                {
-                    "$type": "Predicated",
-                    "ELDBAFHCOBL": [
-                        {
-                            "$type": "ByTargetGlobalValue",
-                            "NPHOOPNDCAC": "Self",
-                            "HJJEAOMEOFI": "TriathlonCoin_Locked",
-                            "value": 0.0
-                        }
-                    ],
-                    "NCNDEAPMKCP": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_GlideChampCoin_Hit"
-                        },
-                        {
-                            "$type": "ServerLuaCall",
-                            "MINNFFNDCJH": "CurChallengeGroup",
-                            "PDFANJKMFNK": "SLC_WinterCampCoinGet",
-                            "MPBMJIGLEMJ": 1,
-                            "LIOGECEPJAH": 0.0,
-                            "FDDPMCCJIKN": 0.0,
-                            "KNJMHMKNCKF": 0.0
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "NPHOOPNDCAC": "Target",
-                            "GAIGOBCNNEE": "AddCoin"
-                        },
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ]
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Area_Ljxs_Property_Ani_Prop_TriathlonCoin_02",
-            "HNEIEGHMLKH": {
-                "CoinEffect_Idle": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 7.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_TriathlonCoin_02_01"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "CoinEffect_Dying"
-                        }
-                    ]
-                },
-                "CoinEffect_Dying": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 3.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_TriathlonCoin_02_02"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "KillSelf"
-                        }
-                    ]
-                },
-                "AddCoin": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_GetGlideChampCoin"
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "CoinEffect_Idle"
-                }
-            ],
-            "KJKECFBMHKH": [
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_SceneObj_GlideChampCoin_Hit"
-                },
-                {
-                    "$type": "ApplyModifier",
-                    "NPHOOPNDCAC": "Target",
-                    "GAIGOBCNNEE": "AddCoin"
-                },
-                {
-                    "$type": "ServerLuaCall",
-                    "MINNFFNDCJH": "CurChallengeGroup",
-                    "PDFANJKMFNK": "SLC_WinterCampCoinGet",
-                    "MPBMJIGLEMJ": 1,
-                    "LIOGECEPJAH": 1.0,
-                    "FDDPMCCJIKN": 0.0,
-                    "KNJMHMKNCKF": 0.0
-                },
-                {
-                    "$type": "KillSelf"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LargeFloatingIce_01",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "GAIGOBCNNEE": "Default"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 201,
-                    "GAIGOBCNNEE": "phase1"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 202,
-                    "GAIGOBCNNEE": "phase2"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "Default": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.5,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "TRIGGERED",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "TOTAL_WEIGHT",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "SumTargetWeightToSelfGlobalValue",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "RectW2L5_FloatIce",
-                                "ONPOPLLHJLE": "AllExceptSelf",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "HJJEAOMEOFI": "TOTAL_WEIGHT"
-                        },
-                        {
-                            "$type": "Predicated",
-                            "NPHOOPNDCAC": "Caster",
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "TOTAL_WEIGHT",
-                                    "value": 19.0,
-                                    "ONPJJFKDCED": "MoreThan"
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "TRIGGERED",
-                                    "value": 0.0,
-                                    "ONPJJFKDCED": "MoreThan"
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ExecuteGadgetLua",
-                                    "JFOEGBAHFAC": 201
-                                },
-                                {
-                                    "$type": "AddGlobalValue",
-                                    "value": -1.0,
-                                    "HJJEAOMEOFI": "TRIGGERED",
-                                    "EODOIECEPEF": true,
-                                    "JDHHMBHOOEC": 1.0,
-                                    "KHAHOELDONA": 0.0
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "phase1": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 3.0,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.5,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_FloatingIce_01",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornType",
-                                "offset": {
-                                    "AEAAJCIDPED": 0.0,
-                                    "KAAPLGBEDPM": -0.25,
-                                    "PHDCJAHHIOG": 0.0
-                                }
-                            }
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "ExecuteGadgetLua",
-                            "JFOEGBAHFAC": 202
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "TOTAL_WEIGHT",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "SumTargetWeightToSelfGlobalValue",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "RectW2L5_FloatIce",
-                                "ONPOPLLHJLE": "AllExceptSelf",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "HJJEAOMEOFI": "TOTAL_WEIGHT"
-                        },
-                        {
-                            "$type": "Predicated",
-                            "NPHOOPNDCAC": "Caster",
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "TOTAL_WEIGHT",
-                                    "value": 19.0,
-                                    "ONPJJFKDCED": "MoreThan"
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "TRIGGERED",
-                                    "value": 0.0,
-                                    "ONPJJFKDCED": "MoreThan"
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ExecuteGadgetLua",
-                                    "JFOEGBAHFAC": 201
-                                },
-                                {
-                                    "$type": "AddGlobalValue",
-                                    "value": -1.0,
-                                    "HJJEAOMEOFI": "TRIGGERED",
-                                    "EODOIECEPEF": true,
-                                    "JDHHMBHOOEC": 1.0,
-                                    "KHAHOELDONA": 0.0
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "phase2": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 10.0,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.5,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_FloatingIce_02_Large"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "ApplyModifier",
-                            "GAIGOBCNNEE": "Reborn"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "TOTAL_WEIGHT",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "SumTargetWeightToSelfGlobalValue",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "RectW2L5_FloatIce",
-                                "ONPOPLLHJLE": "AllExceptSelf",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "HJJEAOMEOFI": "TOTAL_WEIGHT"
-                        },
-                        {
-                            "$type": "Predicated",
-                            "NPHOOPNDCAC": "Caster",
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "TOTAL_WEIGHT",
-                                    "value": 19.0,
-                                    "ONPJJFKDCED": "MoreThan"
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "TRIGGERED",
-                                    "value": 0.0,
-                                    "ONPJJFKDCED": "MoreThan"
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ExecuteGadgetLua",
-                                    "JFOEGBAHFAC": 201
-                                },
-                                {
-                                    "$type": "AddGlobalValue",
-                                    "value": -1.0,
-                                    "HJJEAOMEOFI": "TRIGGERED",
-                                    "EODOIECEPEF": true,
-                                    "JDHHMBHOOEC": 1.0,
-                                    "KHAHOELDONA": 0.0
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "Reborn": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 2.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "TRIGGERED",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 0.0,
-                            "HJJEAOMEOFI": "CAN_REBORN",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "Predicated",
-                            "NPHOOPNDCAC": "AllPlayerAvatars",
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetPositionToSelfPosition",
-                                    "GMFCOCAJBDM": "LesserOrEqual",
-                                    "ONPJJFKDCED": "XYZ",
-                                    "value": 1.600000023841858
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "AddGlobalValue",
-                                    "value": 1.0,
-                                    "HJJEAOMEOFI": "CAN_REBORN",
-                                    "EODOIECEPEF": true,
-                                    "JDHHMBHOOEC": 1.0,
-                                    "KHAHOELDONA": 0.0
-                                }
-                            ]
-                        },
-                        {
-                            "$type": "Predicated",
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "CAN_REBORN",
-                                    "value": 0.0,
-                                    "ONPJJFKDCED": "MoreThan"
-                                }
-                            ],
-                            "BMIOBLGLPIM": [
-                                {
-                                    "$type": "ExecuteGadgetLua"
-                                },
-                                {
-                                    "$type": "RemoveModifier",
-                                    "GAIGOBCNNEE": "Reborn"
-                                }
-                            ]
-                        }
-                    ]
-                }
+      ],
+      "modifiers": {
+        "EffectBall": {
+          "onAdded": [
+            {
+              //球待机特效
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_JumpUp_01"
             }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Area_Ljxs_Property_Prop_LjxsCampMainDevice_01",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "GAIGOBCNNEE": "MainDeviceOff"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 201,
-                    "GAIGOBCNNEE": "MainDeviceOn"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "FindPlayer": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.5,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "Predicated",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "CircleR15H10",
-                                "ONPOPLLHJLE": "All",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByEntityTypes",
-                                    "entityTypes": [
-                                        "Avatar"
-                                    ]
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "Other",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByTargetGadgetState",
-                                            "NPHOOPNDCAC": "Self"
-                                        }
-                                    ],
-                                    "GAIGOBCNNEE": "ColdBuff_WinterCamp"
-                                },
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "Other",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByTargetGadgetState",
-                                            "NPHOOPNDCAC": "Self",
-                                            "IJNIFFOPHNJ": 201
-                                        }
-                                    ],
-                                    "GAIGOBCNNEE": "WarmBuff_WinterCamp"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "ColdBuff_WinterCamp": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "Cold"
-                            ],
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": 2.0,
-                            "type": "Current"
-                        }
-                    ]
-                },
-                "WarmBuff_WinterCamp": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 1.0,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 0.20000000298023224,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ResistClimateMixin",
-                            "BJICCKMFOII": [
-                                "Cold"
-                            ],
-                            "KOJIMGFIHNP": "Rise",
-                            "ratio": -999.0,
-                            "type": "Current"
-                        }
-                    ],
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AddClimateMeter",
-                            "LFLNMOIEOGI": "Cold",
-                            "value": -5.0
-                        }
-                    ]
-                },
-                "MainDeviceOff": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_LjxsCampMainDevice_01_Cold"
-                        }
-                    ]
-                },
-                "MainDeviceOn": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "IS_WARM_POINT",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_LjxsCampMainDevice_01_Warm"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "ExecuteGadgetLua"
-                        },
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": -1.0,
-                            "HJJEAOMEOFI": "IS_WARM_POINT",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "AttachModifier",
-                    "GAIGOBCNNEE": "FindPlayer"
-                },
-                {
-                    "$type": "SetGlobalValue",
-                    "value": 1.0,
-                    "HJJEAOMEOFI": "IS_MAIN_DEVICE",
-                    "JDHHMBHOOEC": 0.0,
-                    "KHAHOELDONA": 0.0
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "LjxsCampMainDevice_01_Explode",
-            "EDDGGPMFDGK": {
-                "DamagePercentage": 23.5,
-                "LevelEntity_AvatarDot_SystemValue": 1.0
-            },
-            "HKBHLMNEMKM": [
-                {
-                    "$type": "FireEffect",
-                    "JBHFPDMBFHN": "Eff_Avatar_ShockWave_Expand_Fire_Level_02",
-                    "NGDMCBABOJA": {
-                        "$type": "ConfigBornByGlobalValue",
-                        "GDENJEFPMGC": "_Ability_WinterCamp_AoePos_Final",
-                        "MICIJLHMIIH": ""
-                    }
-                },
-                {
-                    "$type": "TriggerAttackEvent",
-                    "DMCJDGELKBC": {
-                        "attackPattern": {
-                            "$type": "ConfigAttackSphere",
-                            "lifeTime": "TriggerNoRepeat",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByGlobalValue",
-                                "GDENJEFPMGC": "_Ability_WinterCamp_AoePos_Final",
-                                "MICIJLHMIIH": ""
-                            },
-                            "ICGFCBOFFDI": 10.0
-                        },
-                        "attackInfo": {
-                            "attackTag": "",
-                            "attenuationTag": "",
-                            "attenuationGroup": "default",
-                            "attackProperty": {
-                                "damagePercentageRatio": 0.0,
-                                "elementType": "Fire",
-                                "elementDurability": 100.0,
-                                "ignoreAttackerProperty": true,
-                                "enBreak": 0.0,
-                                "damageExtra": [
-                                    "LevelEntity_AvatarDot_SystemValue",
-                                    "DamagePercentage",
-                                    "Mul"
-                                ],
-                                "trueDamage": true,
-                                "damagePercentage": true
-                            },
-                            "hitPattern": {
-                                "onHitEffectName": "",
-                                "hitImpulseType": "LV1"
-                            }
-                        }
-                    },
-                    "OJIFKEOCJGB": "Enemy"
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "LjxsCampMainDevice_01_MonsterPowerUp",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IEOFBCGJGEK": true,
-                    "GAIGOBCNNEE": "UNIQUE_LjxsCampMainDevice_Amplifier_Ice"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "UNIQUE_LjxsCampMainDevice_Amplifier_Ice": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "elementDurability": 100.0,
-                    "IKKMDDLDLIN": 15.0,
-                    "PBDDACFFPOE": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_ElementWave_01_Ice"
-                        },
-                        {
-                            "$type": "ApplyModifier",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "CircleR30",
-                                "ONPOPLLHJLE": "AllExceptSelf",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "predicates": [
-                                {
-                                    "$type": "ByEntityTypes",
-                                    "entityTypes": [
-                                        "Monster"
-                                    ]
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_AMPLIFIER_ICE_SLAVE",
-                                    "value": 0.0,
-                                    "ONPJJFKDCED": "NoneOrEqual"
-                                },
-                                {
-                                    "$type": "ByTargetGlobalValue",
-                                    "HJJEAOMEOFI": "_AMPLIFIER_COOLDOWN",
-                                    "value": 0.0,
-                                    "ONPJJFKDCED": "NoneOrEqual"
-                                },
-                                {
-                                    "$type": "ByAny",
-                                    "predicates": [
-                                        {
-                                            "$type": "ByNot",
-                                            "predicates": [
-                                                {
-                                                    "$type": "ByHasFeatureTag",
-                                                    "AMIONINAMLE": [
-                                                        3005
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$type": "ByHasElement",
-                                            "GOMLPAOIKJA": "Frozen"
-                                        },
-                                        {
-                                            "$type": "ByHasElement",
-                                            "GOMLPAOIKJA": "Ice"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "GAIGOBCNNEE": "UNIQUE_LjxsCampMainDevice_Amplifier_Ice_MonsterBuff"
-                        },
-                        {
-                            "$type": "Predicated",
-                            "GILFKOBKGLI": {
-                                "$type": "SelectTargetsByShape",
-                                "JBKKOJLJHDK": "CircleR30",
-                                "ONPOPLLHJLE": "All",
-                                "CJJABKCAIEB": 1.0
-                            },
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByEntityTypes",
-                                    "entityTypes": [
-                                        "Monster"
-                                    ]
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "AddElementDurability",
-                                    "NPHOOPNDCAC": "Target",
-                                    "value": 200.0,
-                                    "GAIGOBCNNEE": "UNIQUE_LjxsCampMainDevice_Amplifier_Ice_MonsterBuff",
-                                    "elementType": "Ice",
-                                    "EODOIECEPEF": true,
-                                    "JDHHMBHOOEC": 200.0,
-                                    "KHAHOELDONA": 0.0
-                                },
-                                {
-                                    "$type": "ApplyModifier",
-                                    "NPHOOPNDCAC": "Target",
-                                    "GAIGOBCNNEE": "LjxsCampMainDevice_Amplifier_Ice_MonsterBuff_GV"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "LjxsCampMainDevice_Amplifier_Ice_MonsterBuff_GV": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.5,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_AMPLIFIER_COOLDOWN",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": -2.0
-                        }
-                    ]
-                },
-                "UNIQUE_LjxsCampMainDevice_Amplifier_Ice_MonsterBuff": {
-                    "GAIGOBCNNEE": "",
-                    "IEOFBCGJGEK": true,
-                    "GMIMMDOGGIO": 20.0,
-                    "elementType": "Ice",
-                    "elementDurability": 200.0,
-                    "FNJKJKACMCH": [
-                        {
-                            "$type": "ElementOuterGlowEffectMixin"
-                        }
-                    ],
-                    "FFOHEEFOELN": {
-                        "Actor_DefenceRatio": 1.0,
-                        "Actor_EndureDelta": 0.009999999776482582,
-                        "Actor_PhysicalSubHurtDelta": 0.5,
-                        "Actor_FireSubHurtDelta": 0.5,
-                        "Actor_ElecSubHurtDelta": 0.5,
-                        "Actor_IceSubHurtDelta": 1.0,
-                        "Actor_WaterSubHurtDelta": 0.5,
-                        "Actor_GrassSubHurtDelta": 0.5,
-                        "Actor_WindSubHurtDelta": 0.5,
-                        "Actor_RockSubHurtDelta": 0.5
-                    },
-                    "state": "DefenseUp",
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "_AMPLIFIER_ICE_SLAVE",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": -2.0,
-                            "HJJEAOMEOFI": "_AMPLIFIER_COOLDOWN",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 0.0,
-                            "KHAHOELDONA": -2.0
-                        },
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": -1.0,
-                            "HJJEAOMEOFI": "_AMPLIFIER_ICE_SLAVE",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                }
+          ]
+        },
+        "UNIQUE_WinterCamp_RocketJump_GV": {
+          "duration": 8,
+          "isUnique": true,
+          "stacking": "RefreshUniqueDurability",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "WinterCamp_RocketJump",
+              "target": "Self",
+              "value": 1
             }
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Area_Ljxs_Property_Prop_LjxsCampBranchDevice_01",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "GAIGOBCNNEE": "BranchDeviceOff"
-                },
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 201,
-                    "GAIGOBCNNEE": "BranchDeviceOn"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "BranchDeviceOff": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_LjxsCampBranchDevice_Cold"
-                        },
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_LjxsCampBranchDevice_Idle"
-                        }
-                    ],
-                    "onBeingHit": [
-                        {
-                            "$type": "Predicated",
-                            "NPHOOPNDCAC": "Target",
-                            "ELDBAFHCOBL": [
-                                {
-                                    "$type": "ByAttackTags",
-                                    "NMJGDKCDFOJ": [
-                                        "BloodSmash"
-                                    ]
-                                }
-                            ],
-                            "NCNDEAPMKCP": [
-                                {
-                                    "$type": "ExecuteGadgetLua",
-                                    "JFOEGBAHFAC": 201
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "BranchDeviceOn": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": 1.0,
-                            "HJJEAOMEOFI": "IS_WARM_POINT",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 0.0
-                        },
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_LjxsCampBranchDevice_Warm"
-                        }
-                    ],
-                    "ILBIENDPCBG": [
-                        {
-                            "$type": "ExecuteGadgetLua"
-                        },
-                        {
-                            "$type": "AddGlobalValue",
-                            "value": -1.0,
-                            "HJJEAOMEOFI": "IS_WARM_POINT",
-                            "EODOIECEPEF": true,
-                            "JDHHMBHOOEC": 1.0,
-                            "KHAHOELDONA": 0.0
-                        }
-                    ]
-                }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "doAfterDie": true,
+              "key": "WinterCamp_RocketJump",
+              "target": "Self",
+              "value": 0
             }
+          ]
         }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Stages_Property_Ani_Prop_SnowPile_02",
-            "CHBMMFLIIGH": [
-                {
-                    "$type": "AttachToGadgetStateMixin",
-                    "IJNIFFOPHNJ": 201,
-                    "GAIGOBCNNEE": "SnowPileInteracted"
-                }
-            ],
-            "HNEIEGHMLKH": {
-                "SnowPile": {
-                    "GAIGOBCNNEE": "",
-                    "elementType": "Ice",
-                    "elementDurability": 30.0,
-                    "DDLOLBGNLEF": false,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "AttachEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_Hint_01_Big",
-                            "NGDMCBABOJA": {
-                                "$type": "ConfigBornByAttachPoint",
-                                "KJNJNKLLNCN": "AttachPoint"
-                            }
-                        }
-                    ],
-                    "OGFFGLGEOGF": [
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_SnowPile_02"
-                        }
-                    ]
-                },
-                "SnowPileInteracted": {
-                    "GAIGOBCNNEE": "",
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ServerLuaCall",
-                            "MINNFFNDCJH": "FromGroup",
-                            "PDFANJKMFNK": "GadgetCall_SnowPile_Interact",
-                            "LIOGECEPJAH": 0.0,
-                            "FDDPMCCJIKN": 0.0,
-                            "KNJMHMKNCKF": 0.0
-                        }
-                    ]
-                }
-            },
-            "KCICDEJLIJD": [
-                {
-                    "$type": "ApplyModifier",
-                    "GAIGOBCNNEE": "SnowPile"
-                },
-                {
-                    "$type": "AttachAbilityStateResistance",
-                    "KPGAIMMIKDA": 11001
-                }
-            ]
-        }
-    },
-    {
-        "Default": {
-            "$type": "ConfigAbility",
-            "abilityName": "SceneObj_Gear_Common_Property_Prop_ParkourStamina_01",
-            "HNEIEGHMLKH": {
-                "WinterCamp_Stamina": {
-                    "GAIGOBCNNEE": "",
-                    "GMIMMDOGGIO": 0.5,
-                    "elementDurability": 100.0,
-                    "KCICDEJLIJD": [
-                        {
-                            "$type": "ReviveStamina",
-                            "ACOKKHADPOJ": true,
-                            "value": 300.0
-                        }
-                    ]
-                }
-            },
-            "KJKECFBMHKH": [
-                {
-                    "$type": "Predicated",
-                    "NPHOOPNDCAC": "TargetTeam",
-                    "ELDBAFHCOBL": [
-                        {
-                            "$type": "ByTargetGlobalValue",
-                            "HJJEAOMEOFI": "WinterCamp_Stamina",
-                            "value": 0.0
-                        }
-                    ],
-                    "NCNDEAPMKCP": [
-                        {
-                            "$type": "ApplyModifier",
-                            "NPHOOPNDCAC": "CurLocalAvatar",
-                            "GAIGOBCNNEE": "WinterCamp_Stamina"
-                        },
-                        {
-                            "$type": "ServerLuaCall",
-                            "MINNFFNDCJH": "CurChallengeGroup",
-                            "PDFANJKMFNK": "SLC_ReportBuffGet",
-                            "MPBMJIGLEMJ": 1,
-                            "LIOGECEPJAH": 4.0,
-                            "FDDPMCCJIKN": 0.0,
-                            "KNJMHMKNCKF": 0.0
-                        },
-                        {
-                            "$type": "FireEffect",
-                            "JBHFPDMBFHN": "Eff_SceneObj_FleurStamina_Smash"
-                        },
-                        {
-                            "$type": "KillSelf",
-                            "BKFHCBOLIFL": true
-                        }
-                    ]
-                }
-            ]
-        }
+      }
     }
+  },
+  ///////////////////////////////////////////////////////////////
+  //
+  // 雪山冬令营 跑酷 护盾球
+  //
+  ///////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Gear_Common_Property_Prop_ShieldPower_01",
+      "onFieldEnter": [
+        {
+          "$type": "ApplyModifier",
+          "target": "TargetTeam",
+          "modifierName": "UNIQUE_WinterCamp_Shield_GV"
+          //"doOffStage":true,
+        },
+        {
+          "$type": "ServerLuaCall",
+          "paramNum": 1,
+          "funcName": "SLC_ReportBuffGet", //通知服务器统计吃球数量
+          "luaCallType": "CurChallengeGroup",
+          "param1": 3
+        },
+        {
+          "$type": "RemoveModifier",
+          "target": "Self",
+          "modifierName": "EffectBall"
+        },
+        {
+          //吃球特效
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Tower_Ball_Active_01"
+        },
+        {
+          "$type": "KillSelf",
+          "hideEntity": true
+        }
+      ],
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "target": "Self",
+          "modifierName": "EffectBall"
+        }
+      ],
+      "modifiers": {
+        "EffectBall": {
+          "onAdded": [
+            {
+              //球待机特效
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_ShieldPower_01"
+            }
+          ]
+        },
+        "UNIQUE_WinterCamp_Shield_GV": {
+          "duration": 8,
+          "isUnique": true,
+          "stacking": "RefreshUniqueDurability",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "WinterCamp_Shield",
+              "target": "Self",
+              "value": 1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "doAfterDie": true,
+              "key": "WinterCamp_Shield",
+              "target": "Self",
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  ///////////////////////////////////////////////////////////////
+  //
+  // 雪山冬令营 跑酷 可破坏冰柱 纵向 无金币版
+  //
+  ///////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Gear_Common_Property_Prop_BreakableIce_01",
+      "abilityMixins": [
+        {
+          //常规态，可击破
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "BreakableIce"
+        },
+        {
+          //隐藏状态无交互，由LD配置何时切状态
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "IceHide"
+        }
+      ],
+      "onAdded": [
+        {
+          //_IS_PARKOUR_BREAKABLE = 1：可以被护盾球撞破
+          "$type": "SetGlobalValue",
+          "key": "_IS_PARKOUR_BREAKABLE",
+          "value": 1
+        }
+      ],
+      "modifiers": {
+        "BreakableIce": {
+          "elementType": "Frozen",
+          "elementDurability": 150,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            /*{
+						"$type": "FireEffect",
+						"effectPattern": "Eff_Common_IceHit_01_EffectMesh",
+					},*/
+
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "predicates": [
+                {
+                  "$type": "ByAttackTags",
+                  "attackTags": ["WinterCamp_ShieldAttack"]
+                }
+              ],
+              "successActions": [
+                {
+                  //破碎特效 因为既要HideEntity，又要播特效，所以不能在onKill里
+                  "$type": "FireEffect",
+                  "doOffStage": true,
+                  "effectPattern": "Eff_SceneObj_BreakableIce_02_Broken"
+                },
+                {
+                  "$type": "KillSelf",
+                  "hideEntity": true
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "ownedByLevel": true,
+              "effectPattern": "Eff_SceneObj_BreakableIce_02_Born"
+            },
+            {
+              "$type": "EnableSceneTransformByName",
+              "transformNames": ["IceModel"],
+              "setEnable": true
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_IS_PARKOUR_BREAKABLE",
+              "value": 1
+            }
+          ]
+        },
+        "IceHide": {
+          "onAdded": [
+            {
+              "$type": "EnableSceneTransformByName",
+              "transformNames": ["IceModel"],
+              "setEnable": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  ///////////////////////////////////////////////////////////////
+  //
+  // 雪山冬令营 跑酷 可破坏冰柱 纵向 内藏金币版
+  //
+  ///////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Gear_Common_Property_Prop_BreakableIceWithCoin_01",
+      "abilityMixins": [
+        {
+          //常规态，可击破
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "BreakableIce"
+        },
+        {
+          //隐藏状态无交互，由LD配置何时切状态
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "IceHide"
+        }
+      ],
+      "onAdded": [
+        {
+          //_IS_PARKOUR_BREAKABLE = 1：可以被护盾球撞破
+          "$type": "SetGlobalValue",
+          "key": "_IS_PARKOUR_BREAKABLE",
+          "value": 1
+        }
+      ],
+      "modifiers": {
+        "BreakableIce": {
+          "elementType": "Frozen",
+          "elementDurability": 150,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            /*{
+							"$type": "FireEffect",
+							"effectPattern": "Eff_Common_IceHit_01_EffectMesh",
+						},*/
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "predicates": [
+                {
+                  "$type": "ByAttackTags",
+                  "attackTags": ["WinterCamp_ShieldAttack"]
+                }
+              ],
+              "successActions": [
+                {
+                  //含金币冰柱破碎，通知对应的金币gadget切状态
+                  "$type": "ServerLuaCall",
+                  "luaCallType": "CurChallengeGroup",
+                  "funcName": "SLC_SpecialIcePillarBreak"
+                },
+                {
+                  //破碎特效 因为既要HideEntity，又要播特效，所以不能在onKill里
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_SceneObj_BreakableIce_02_Broken"
+                },
+                {
+                  "$type": "KillSelf",
+                  "hideEntity": true
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "ownedByLevel": true,
+              "effectPattern": "Eff_SceneObj_BreakableIce_02_Born"
+            },
+            {
+              "$type": "EnableSceneTransformByName",
+              "transformNames": ["IceModel"],
+              "setEnable": true
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_IS_PARKOUR_BREAKABLE",
+              "value": 1
+            }
+          ]
+        },
+        "IceHide": {
+          "onAdded": [
+            {
+              "$type": "EnableSceneTransformByName",
+              "transformNames": ["IceModel"],
+              "setEnable": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  ///////////////////////////////////////////////////////////////
+  //
+  // 雪山冬令营 跑酷 可破坏冰柱 横向 无金币版
+  //
+  ///////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Gear_Common_Property_Prop_BreakableIce_02",
+      "abilityMixins": [
+        {
+          //常规态，可击破
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "BreakableIce"
+        },
+        {
+          //隐藏状态无交互，由LD配置何时切状态
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "IceHide"
+        }
+      ],
+      "onAdded": [
+        {
+          //_IS_PARKOUR_BREAKABLE = 1：可以被护盾球撞破
+          "$type": "SetGlobalValue",
+          "key": "_IS_PARKOUR_BREAKABLE",
+          "value": 1
+        }
+      ],
+      "modifiers": {
+        "BreakableIce": {
+          "elementType": "Frozen",
+          "elementDurability": 150,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            /*{
+						"$type": "FireEffect",
+						"effectPattern": "Eff_Common_IceHit_01_EffectMesh",
+					},*/
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "predicates": [
+                {
+                  "$type": "ByAttackTags",
+                  "attackTags": ["WinterCamp_ShieldAttack"]
+                }
+              ],
+              "successActions": [
+                {
+                  //破碎特效 因为既要HideEntity，又要播特效，所以不能在onKill里
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_SceneObj_BreakableIce_01_Broken"
+                },
+                {
+                  "$type": "KillSelf",
+                  "hideEntity": true
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "ownedByLevel": true,
+              "effectPattern": "Eff_SceneObj_BreakableIce_01_Born"
+            },
+            {
+              "$type": "EnableSceneTransformByName",
+              "transformNames": ["IceModel"],
+              "setEnable": true
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_IS_PARKOUR_BREAKABLE",
+              "value": 1
+            }
+          ]
+        },
+        "IceHide": {
+          "onAdded": [
+            {
+              "$type": "EnableSceneTransformByName",
+              "transformNames": ["IceModel"],
+              "setEnable": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  ///////////////////////////////////////////////////////////////
+  //
+  // 雪山冬令营 跑酷 可破坏冰柱 横向 内藏金币版
+  //
+  ///////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Gear_Common_Property_Prop_BreakableIceWithCoin_02",
+      "abilityMixins": [
+        {
+          //常规态，可击破
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "BreakableIce"
+        },
+        {
+          //隐藏状态无交互，由LD配置何时切状态
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "IceHide"
+        }
+      ],
+      "onAdded": [
+        {
+          //_IS_PARKOUR_BREAKABLE = 1：可以被护盾球撞破
+          "$type": "SetGlobalValue",
+          "key": "_IS_PARKOUR_BREAKABLE",
+          "value": 1
+        }
+      ],
+      "modifiers": {
+        "BreakableIce": {
+          "elementType": "Frozen",
+          "elementDurability": 150,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            }
+          ],
+          "onBeingHit": [
+            /*{
+							"$type": "FireEffect",
+							"effectPattern": "Eff_Common_IceHit_01_EffectMesh",
+						},*/
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "predicates": [
+                {
+                  "$type": "ByAttackTags",
+                  "attackTags": ["WinterCamp_ShieldAttack"]
+                }
+              ],
+              "successActions": [
+                {
+                  //含金币冰柱破碎，通知对应的金币gadget切状态
+                  "$type": "ServerLuaCall",
+                  "luaCallType": "CurChallengeGroup",
+                  "funcName": "SLC_SpecialIcePillarBreak"
+                },
+                {
+                  //破碎特效 因为既要HideEntity，又要播特效，所以不能在onKill里
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_SceneObj_BreakableIce_01_Broken"
+                },
+                {
+                  "$type": "KillSelf",
+                  "hideEntity": true
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "EnableSceneTransformByName",
+              "transformNames": ["IceModel"],
+              "setEnable": true
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_IS_PARKOUR_BREAKABLE",
+              "value": 1
+            },
+            {
+              "$type": "FireEffect",
+              "ownedByLevel": true,
+              "effectPattern": "Eff_SceneObj_BreakableIce_01_Born"
+            }
+          ]
+        },
+        "IceHide": {
+          "onAdded": [
+            {
+              "$type": "EnableSceneTransformByName",
+              "transformNames": ["IceModel"],
+              "setEnable": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////
+  //
+  //	雪山纹章-普通
+  //
+  //////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Ljxs_Property_Ani_Prop_TriathlonCoin_01",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201, //冰冻锁定状态
+          "modifierName": "CoinLocked"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "CoinDefault"
+        }
+      ],
+      "onFieldEnter": [
+        {
+          "$type": "Predicated",
+          "target": "Self",
+          "targetPredicates": [
+            {
+              //金币在非锁定状态可以被吃
+              "$type": "ByTargetGlobalValue",
+              "key": "TriathlonCoin_Locked",
+              "target": "Self",
+              "value": 0,
+              "compareType": "Equal"
+            }
+          ],
+          "successActions": [
+            {
+              //金币被吃特效 通用
+              "$type": "FireEffect",
+              "target": "Self",
+              "effectPattern": "Eff_SceneObj_GlideChampCoin_Hit"
+            },
+            {
+              //统计纹章。0普通 1限时
+              "$type": "ServerLuaCall",
+              "luaCallType": "CurChallengeGroup",
+              "funcName": "SLC_WinterCampCoinGet",
+              "paramNum": 1,
+              "param1": 0
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "AddCoin",
+              "target": "Target"
+            },
+            {
+              "$type": "KillSelf",
+              "target": "Self"
+            }
+          ]
+        }
+      ],
+      "modifiers": {
+        "AddCoin": {
+          "duration": 1.0,
+          "onAdded": [
+            {
+              //吃金币特效 通用
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_GetGlideChampCoin"
+            }
+          ]
+        },
+        "FindPlayerAfterBreak": {
+          "thinkInterval": 0.1,
+          "onThinkInterval": [
+            {
+              //切出状态，立即搜一下附近有没有玩家
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR10H10",
+                "centerBasedOn": "Self",
+                "campTargetType": "AllExceptSelf",
+                "entityTypePriority": ["Avatar"],
+                "campBasedOn": "Self",
+                "sortType": "Nearest"
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  //统计纹章。0普通 1限时
+                  "$type": "ServerLuaCall",
+                  "luaCallType": "CurChallengeGroup",
+                  "funcName": "SLC_WinterCampCoinGet",
+                  "paramNum": 1,
+                  "param1": 0
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "AddCoin",
+                  "target": "Other"
+                },
+                {
+                  "$type": "KillSelf",
+                  "target": "Self"
+                }
+              ]
+            }
+          ]
+        },
+        "CoinLocked": {
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "TriathlonCoin_Locked",
+              "target": "Self",
+              "value": 1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "FindPlayerAfterBreak"
+            }
+          ]
+        },
+        "CoinDefault": {
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "TriathlonCoin_Locked",
+              "target": "Self",
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////
+  //
+  //	雪山纹章-限时
+  //
+  //////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Ljxs_Property_Ani_Prop_TriathlonCoin_02",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "CoinEffect_Idle"
+        }
+      ],
+      //限时金币没有冰冻态
+      "onFieldEnter": [
+        {
+          //金币被吃特效 通用
+          "$type": "FireEffect",
+          "target": "Self",
+          "effectPattern": "Eff_SceneObj_GlideChampCoin_Hit"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "AddCoin",
+          "target": "Target"
+        },
+        {
+          //统计纹章。0普通 1限时
+          "$type": "ServerLuaCall",
+          "luaCallType": "CurChallengeGroup",
+          "funcName": "SLC_WinterCampCoinGet",
+          "paramNum": 1,
+          "param1": 1
+        },
+        {
+          "$type": "KillSelf",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        //特效表现 待机阶段
+        "CoinEffect_Idle": {
+          "duration": 7.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_TriathlonCoin_02_01"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "CoinEffect_Dying"
+            }
+          ]
+        },
+        //特效表现 快要消失阶段
+        "CoinEffect_Dying": {
+          "duration": 3.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_TriathlonCoin_02_02"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf",
+              "target": "Self"
+            }
+          ]
+        },
+        "AddCoin": {
+          "duration": 1.0,
+          "onAdded": [
+            {
+              //吃金币特效 通用
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_GetGlideChampCoin"
+            }
+          ]
+        }
+      }
+    }
+  },
+  /////////////////////////////////////////////////////////////////
+  //
+  //  雪山冬令营 跑酷 大型浮冰（复用雪山浮冰机制）
+  //
+  /////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LargeFloatingIce_01",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "Default"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "phase1"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 202,
+          "modifierName": "phase2"
+        }
+      ],
+      "modifiers": {
+        "Default": {
+          "thinkInterval": 0.5,
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "key": "TRIGGERED",
+              "value": 1,
+              "useLimitRange": true,
+              "maxValue": 1,
+              "minValue": 0
+            }
+          ],
+          "onThinkInterval": [
+            //每次计算前先清零
+            {
+              "$type": "AddGlobalValue",
+              "key": "TOTAL_WEIGHT",
+              "value": 0,
+              "useLimitRange": true,
+              "maxValue": 0,
+              "minValue": 0
+            },
+            {
+              "$type": "SumTargetWeightToSelfGlobalValue",
+              "key": "TOTAL_WEIGHT",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "RectW2L5_FloatIce",
+                "centerBasedOn": "Self",
+                "campTargetType": "AllExceptSelf",
+                "campBasedOn": "Self"
+              }
+            },
+            {
+              "$type": "Predicated",
+              "target": "Caster",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "TOTAL_WEIGHT",
+                  "value": 19,
+                  "compareType": "MoreThan"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "TRIGGERED",
+                  "value": 0,
+                  "compareType": "MoreThan"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ExecuteGadgetLua",
+                  "param1": 201
+                },
+                {
+                  "$type": "AddGlobalValue",
+                  "key": "TRIGGERED",
+                  "value": -1,
+                  "useLimitRange": true,
+                  "maxValue": 1,
+                  "minValue": 0
+                }
+              ]
+            }
+          ]
+        },
+        "phase1": {
+          "duration": 3.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_FloatingIce_01",
+              "born": {
+                "$type": "ConfigBornType",
+                "offset": {
+                  "x": 0.0,
+                  "y": -0.25,
+                  "z": 0.0
+                }
+              }
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ExecuteGadgetLua",
+              "param1": 202
+            }
+          ]
+        },
+        "phase2": {
+          "duration": 10.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_FloatingIce_02_Large"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Reborn"
+            }
+          ]
+        },
+        "Reborn": {
+          "thinkInterval": 2,
+          "onThinkInterval": [
+            {
+              "$type": "AddGlobalValue",
+              "key": "CAN_REBORN",
+              "value": 0,
+              "useLimitRange": true,
+              "maxValue": 0,
+              "minValue": 0
+            },
+            {
+              "$type": "Predicated",
+              "target": "AllPlayerAvatars",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetPositionToSelfPosition",
+                  "compareType": "XYZ",
+                  "value": 1.6,
+                  "logic": "LesserOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "AddGlobalValue",
+                  "key": "CAN_REBORN",
+                  "value": 1,
+                  "useLimitRange": true,
+                  "maxValue": 1,
+                  "minValue": 0
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "CAN_REBORN",
+                  "value": 0,
+                  "compareType": "MoreThan"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "ExecuteGadgetLua",
+                  "param1": 0
+                },
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Reborn"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////
+  //
+  //	雪山营地装置 冷暖源机关 主装置
+  //
+  //////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Ljxs_Property_Prop_LjxsCampMainDevice_01",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "MainDeviceOff"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "MainDeviceOn"
+        }
+      ],
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "FindPlayer"
+        },
+        {
+          "$type": "SetGlobalValue",
+          "target": "Self",
+          "key": "IS_MAIN_DEVICE",
+          "value": 1
+        }
+      ],
+      "modifiers": {
+        "FindPlayer": {
+          //每0.5秒找一次附近玩家，给他续一下冷暖Buff
+          "thinkInterval": 0.5,
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR15H10",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self"
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "ColdBuff_WinterCamp",
+                  "target": "Other",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGadgetState",
+                      "target": "Self",
+                      "gadgetState": 0
+                    }
+                  ]
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "WarmBuff_WinterCamp",
+                  "target": "Other",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGadgetState",
+                      "target": "Self",
+                      "gadgetState": 201
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "ColdBuff_WinterCamp": {
+          "duration": 1,
+          "stacking": "Refresh",
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["Cold"],
+              "source": "All",
+              "trend": "Rise",
+              "ratio": 2
+            }
+          ]
+        },
+        "WarmBuff_WinterCamp": {
+          "duration": 1,
+          "stacking": "Refresh",
+          "thinkInterval": 0.2,
+          "onThinkInterval": [
+            {
+              "$type": "AddClimateMeter",
+              "climateType": "Cold",
+              "value": -5.0,
+              "target": "Self"
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "ResistClimateMixin",
+              "type": "Current",
+              "climateTypes": ["Cold"],
+              "source": "All",
+              "trend": "Rise",
+              "ratio": -999.0
+            }
+          ]
+        },
+        "MainDeviceOff": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_LjxsCampMainDevice_01_Cold"
+            }
+          ]
+        },
+        "MainDeviceOn": {
+          "onAdded": [
+            {
+              //暖源标记
+              "$type": "AddGlobalValue",
+              "key": "IS_WARM_POINT",
+              "value": 1,
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": 1
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_LjxsCampMainDevice_01_Warm"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ExecuteGadgetLua",
+              "param1": 0
+            },
+            {
+              "$type": "AddGlobalValue",
+              "key": "IS_WARM_POINT",
+              "value": -1,
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////
+  //
+  //	雪山营地装置 冷暖源机关 主装置 冲击波
+  //
+  //////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "LjxsCampMainDevice_01_Explode",
+      "onAbilityStart": [
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Avatar_ShockWave_Expand_Fire_Level_02",
+          "born": {
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_Ability_WinterCamp_AoePos_Final"
+          }
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackSphere",
+              "triggerType": "TriggerNoRepeat",
+              "radius": 10,
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_Ability_WinterCamp_AoePos_Final"
+              }
+            },
+            "attackInfo": {
+              "attackProperty": {
+                "damageExtra": "%LevelEntity_AvatarDot_SystemValue*%DamagePercentage",
+                "ignoreAttackerProperty": true,
+                "elementDurability": 100,
+                "elementType": "Fire",
+                "enBreak": 0,
+                "trueDamage": true,
+                "ignoreModifyDamage": true
+              },
+              "hitPattern": {
+                "onHitEffectName": "",
+                "hitImpulseType": "LV1", //Light x200 y0
+                "reboundRatio": 0,
+                "hitHaltTime": 0.0,
+                "hitHaltTimeScale": 0.0,
+                "muteHitText": false
+              },
+              "forceCameraShake": false
+            }
+          }
+        }
+      ],
+      "abilitySpecials": {
+        "DamagePercentage": 23.5, //冲击波环境反应系数
+        "LevelEntity_AvatarDot_SystemValue": 1
+      }
+    }
+  },
+  //////////////////////////////////////////////////////
+  //
+  //	雪山营地装置 冷暖源机关 主装置 Buff效果（元素增幅器-冰）
+  //
+  //////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "LjxsCampMainDevice_01_MonsterPowerUp",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "UNIQUE_LjxsCampMainDevice_Amplifier_Ice",
+          "isUnique": true
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_LjxsCampMainDevice_Amplifier_Ice": {
+          "isUnique": true,
+          "thinkInterval": 15,
+          "onThinkInterval": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_ElementWave_01_Ice"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_LjxsCampMainDevice_Amplifier_Ice_MonsterBuff",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR30",
+                "centerBasedOn": "Self",
+                "campTargetType": "AllExceptSelf",
+                "campBasedOn": "Self"
+              },
+              "predicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_AMPLIFIER_ICE_SLAVE",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_AMPLIFIER_COOLDOWN",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                },
+                {
+                  "$type": "ByAny",
+                  "predicates": [
+                    {
+                      "$type": "ByNot",
+                      "predicates": [
+                        {
+                          "$type": "ByHasFeatureTag",
+                          "featureTagIDs": [3005]
+                        }
+                      ]
+                    },
+                    {
+                      "$type": "ByHasElement",
+                      "element": "Frozen"
+                    },
+                    {
+                      "$type": "ByHasElement",
+                      "element": "Ice"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR30",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self"
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "AddElementDurability",
+                  "target": "Target",
+                  "value": 200,
+                  "elementType": "Ice",
+                  "modifierName": "UNIQUE_LjxsCampMainDevice_Amplifier_Ice_MonsterBuff",
+                  "useLimitRange": true,
+                  "maxValue": 200.0,
+                  "minValue": 0.0
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "LjxsCampMainDevice_Amplifier_Ice_MonsterBuff_GV",
+                  "target": "Target"
+                }
+              ]
+            }
+          ]
+        },
+        "LjxsCampMainDevice_Amplifier_Ice_MonsterBuff_GV": {
+          "duration": 0.5,
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "target": "Self",
+              "value": 1,
+              "key": "_AMPLIFIER_COOLDOWN",
+              "useLimitRange": true,
+              "maxValue": 0,
+              "minValue": -2
+            }
+          ]
+        },
+        "UNIQUE_LjxsCampMainDevice_Amplifier_Ice_MonsterBuff": {
+          "isUnique": true,
+          "state": "DefenseUp",
+          "elementType": "Ice",
+          "elementDurability": 200,
+          "duration": 20, //避免无法移除
+          "stacking": "Refresh",
+          "properties": {
+            "Actor_DefenceRatio": 1.0, //提高100%防御力
+            "Actor_EndureDelta": 0.01, //霸体系数0.01
+            "Actor_PhysicalSubHurtDelta": 0.5,
+            "Actor_FireSubHurtDelta": 0.5,
+            "Actor_ElecSubHurtDelta": 0.5,
+            "Actor_IceSubHurtDelta": 1,
+            "Actor_WaterSubHurtDelta": 0.5,
+            "Actor_GrassSubHurtDelta": 0.5,
+            "Actor_WindSubHurtDelta": 0.5,
+            "Actor_RockSubHurtDelta": 0.5
+          },
+          "modifierMixins": [
+            {
+              "$type": "ElementOuterGlowEffectMixin"
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "value": 1,
+              "key": "_AMPLIFIER_ICE_SLAVE",
+              "useLimitRange": true,
+              "maxValue": 1,
+              "minValue": 0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "AddGlobalValue",
+              "value": -2,
+              "key": "_AMPLIFIER_COOLDOWN",
+              "useLimitRange": true,
+              "maxValue": 0,
+              "minValue": -2
+            },
+            {
+              "$type": "AddGlobalValue",
+              "value": -1,
+              "key": "_AMPLIFIER_ICE_SLAVE",
+              "useLimitRange": true,
+              "maxValue": 1,
+              "minValue": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////
+  //
+  //	雪山营地装置 冷暖源机关 分装置
+  //
+  //////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Ljxs_Property_Prop_LjxsCampBranchDevice_01",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "BranchDeviceOff"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "BranchDeviceOn"
+        }
+      ],
+      "modifiers": {
+        "BranchDeviceOff": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_LjxsCampBranchDevice_Cold"
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_LjxsCampBranchDevice_Idle"
+            }
+          ],
+          "onBeingHit": [
+            {
+              //被龙血buff攻击，切状态
+              "$type": "Predicated",
+              "target": "Target",
+              "targetPredicates": [
+                {
+                  "$type": "ByAttackTags",
+                  "attackTags": ["BloodSmash"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ExecuteGadgetLua",
+                  "param1": 201
+                }
+              ]
+            }
+          ]
+        },
+        "BranchDeviceOn": {
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "key": "IS_WARM_POINT",
+              "value": 1,
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": 1
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_LjxsCampBranchDevice_Warm"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ExecuteGadgetLua",
+              "param1": 0
+            },
+            {
+              "$type": "AddGlobalValue",
+              "key": "IS_WARM_POINT",
+              "value": -1,
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  ///////////////////////////////////////
+  //
+  // 2.3雪山大活动 盲盒雪堆
+  //
+  ////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Stages_Property_Ani_Prop_SnowPile_02",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "SnowPileInteracted"
+        }
+      ],
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "SnowPile"
+        },
+        {
+          "$type": "AttachAbilityStateResistance",
+          "resistanceListID": 11001
+        }
+      ],
+      "modifiers": {
+        "SnowPile": {
+          "elementType": "Ice",
+          "elementDurability": 30,
+          "isElementDurabilityMutable": false,
+          "onKill": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_SnowPile_02"
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_Hint_01_Big",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPoint"
+              }
+            }
+          ]
+        },
+        "SnowPileInteracted": {
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "funcName": "GadgetCall_SnowPile_Interact",
+              "luaCallType": "FromGroup"
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////
+  //
+  //	跑酷 体力球
+  //
+  //////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Gear_Common_Property_Prop_ParkourStamina_01",
+      "onFieldEnter": [
+        {
+          "$type": "Predicated",
+          "target": "TargetTeam",
+          "targetPredicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "WinterCamp_Stamina",
+              "value": 0,
+              "compareType": "Equal"
+            }
+          ],
+          "successActions": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "WinterCamp_Stamina",
+              "target": "CurLocalAvatar"
+            },
+            {
+              "$type": "ServerLuaCall",
+              "funcName": "SLC_ReportBuffGet", //通知服务器统计吃球数量
+              "luaCallType": "CurChallengeGroup",
+              "paramNum": 1,
+              "param1": 4
+            },
+            {
+              "$type": "FireEffect",
+              "target": "Self",
+              "effectPattern": "Eff_SceneObj_FleurStamina_Smash"
+            },
+            {
+              "$type": "KillSelf",
+              "hideEntity": true
+            }
+          ]
+        }
+      ],
+      "modifiers": {
+        "WinterCamp_Stamina": {
+          "duration": 0.5,
+          "onAdded": [
+            {
+              "$type": "ReviveStamina",
+              "value": 300,
+              "doOffStage": true
+            }
+          ]
+        }
+      }
+    }
+  }
 ]

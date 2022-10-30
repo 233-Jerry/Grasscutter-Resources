@@ -1,110 +1,101 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 155008011
-L1_1 = {}
-L1_1.group_id = 155008011
-L1_1.gadget_trigger_1 = 11001
-L1_1.gadget_gate_1 = 11006
-L1_1.pointarray_1 = 500800001
-L1_1.gadget_trigger_2 = 11002
-L1_1.gadget_gate_2 = 11007
-L1_1.pointarray_2 = 500800002
-L1_1.gadget_trigger_3 = 11003
-L1_1.gadget_gate_3 = 11008
-L1_1.pointarray_3 = 500800003
-L1_1.gadget_trigger_4 = 11004
-L1_1.gadget_gate_4 = 11009
-L1_1.pointarray_4 = 500800004
-L1_1.gadget_trigger_5 = 11005
-L1_1.gadget_gate_5 = 11010
-L1_1.pointarray_5 = 500800005
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "currentChamber"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "altarState"
-L4_1.value = 0
-L4_1.no_refresh = true
-L5_1 = {}
-L5_1.configId = 3
-L5_1.name = "CurIndex"
-L5_1.value = 1
-L5_1.no_refresh = false
-L6_1 = {}
-L6_1.configId = 4
-L6_1.name = "CurSequence"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 5
-L7_1.name = "Chamber_1_State"
-L7_1.value = 0
-L7_1.no_refresh = true
-L8_1 = {}
-L8_1.configId = 6
-L8_1.name = "Chamber_1_Valid"
-L8_1.value = 1
-L8_1.no_refresh = false
-L9_1 = {}
-L9_1.configId = 7
-L9_1.name = "Chamber_2_State"
-L9_1.value = 0
-L9_1.no_refresh = true
-L10_1 = {}
-L10_1.configId = 8
-L10_1.name = "Chamber_2_Valid"
-L10_1.value = 1
-L10_1.no_refresh = false
-L11_1 = {}
-L11_1.configId = 9
-L11_1.name = "Chamber_3_State"
-L11_1.value = 0
-L11_1.no_refresh = true
-L12_1 = {}
-L12_1.configId = 10
-L12_1.name = "Chamber_3_Valid"
-L12_1.value = 1
-L12_1.no_refresh = false
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
+-- 基础信息
+local base_info = {
+	group_id = 155008011
+}
+
+-- Trigger变量
+local defs = {
+	group_id = 155008011,
+	gadget_trigger_1 = 11001,
+	gadget_gate_1 = 11006,
+	pointarray_1 = 500800001,
+	gadget_trigger_2 = 11002,
+	gadget_gate_2 = 11007,
+	pointarray_2 = 500800002,
+	gadget_trigger_3 = 11003,
+	gadget_gate_3 = 11008,
+	pointarray_3 = 500800003,
+	gadget_trigger_4 = 11004,
+	gadget_gate_4 = 11009,
+	pointarray_4 = 500800004,
+	gadget_trigger_5 = 11005,
+	gadget_gate_5 = 11010,
+	pointarray_5 = 500800005
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "currentChamber", value = 0, no_refresh = true },
+	{ config_id = 2, name = "altarState", value = 0, no_refresh = true },
+	{ config_id = 3, name = "CurIndex", value = 1, no_refresh = false },
+	{ config_id = 4, name = "CurSequence", value = 0, no_refresh = false },
+	{ config_id = 5, name = "Chamber_1_State", value = 0, no_refresh = true },
+	{ config_id = 6, name = "Chamber_1_Valid", value = 1, no_refresh = false },
+	{ config_id = 7, name = "Chamber_2_State", value = 0, no_refresh = true },
+	{ config_id = 8, name = "Chamber_2_Valid", value = 1, no_refresh = false },
+	{ config_id = 9, name = "Chamber_3_State", value = 0, no_refresh = true },
+	{ config_id = 10, name = "Chamber_3_Valid", value = 1, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

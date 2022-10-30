@@ -1,531 +1,230 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 201032010
-function L1_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.GetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "isFirstEntry"
-  L1_2 = L1_2(L2_2, L3_2)
-  if L1_2 == 1 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetPlayerInteractOption
-    L3_2 = A0_2
-    L4_2 = "false DisableXiaoDungeon"
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 201032010
+}
+
+-- DEFS_MISCS
+function stage_ready(context)
+        local flag = ScriptLib.GetGroupVariableValue(context, "isFirstEntry")
+        if flag == 1 then
+                ScriptLib.SetPlayerInteractOption(context, "false DisableXiaoDungeon")
+        end
+        return 0
 end
-stage_ready = L1_1
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 10003
-L2_1.gadget_id = 70900205
-L3_1 = {}
-L3_1.x = -57.642
-L3_1.y = 250.328
-L3_1.z = -79.853
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 10007
-L3_1.gadget_id = 70350106
-L4_1 = {}
-L4_1.x = -28.76
-L4_1.y = 246.1
-L4_1.z = -63.081
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 10005
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 400
-L3_1 = {}
-L3_1.x = 12.212
-L3_1.y = 256.747
-L3_1.z = 11.591
-L2_1.pos = L3_1
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1010001
-L2_1.name = "DUNGEON_ALL_AVATAR_DIE_10001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_DUNGEON_ALL_AVATAR_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_DUNGEON_ALL_AVATAR_DIE_10001"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1010002
-L3_1.name = "DUNGEON_REVIVE_10002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_DUNGEON_REVIVE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_DUNGEON_REVIVE_10002"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1010004
-L4_1.name = "TIMER_EVENT_10004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_TIMER_EVENT
-L4_1.event = L5_1
-L4_1.source = "xiao_skill"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_TIMER_EVENT_10004"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1010005
-L5_1.name = "ENTER_REGION_10005"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ENTER_REGION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ENTER_REGION_10005"
-L5_1.action = "action_EVENT_ENTER_REGION_10005"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1010006
-L6_1.name = "TIMER_EVENT_10006"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_TIMER_EVENT
-L6_1.event = L7_1
-L6_1.source = "xiao_skill_re"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_TIMER_EVENT_10006"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1010008
-L7_1.name = "DUNGEON_AVATAR_SLIP_DIE_10008"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_DUNGEON_AVATAR_SLIP_DIE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = ""
-L7_1.action = "action_EVENT_DUNGEON_AVATAR_SLIP_DIE_10008"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1010009
-L8_1.name = "TIMER_EVENT_10009"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_TIMER_EVENT
-L8_1.event = L9_1
-L8_1.source = "unlock_input"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_TIMER_EVENT_10009"
-L8_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "test"
-L2_1.value = 0
-L2_1.no_refresh = false
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "isFirstEntry"
-L3_1.value = 1
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "test_re"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 4
-L5_1.name = "test_enter_region"
-L5_1.value = 0
-L5_1.no_refresh = false
-L6_1 = {}
-L6_1.configId = 5
-L6_1.name = "isSlipDie"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 6
-L7_1.name = "test_slip_enter_region"
-L7_1.value = 0
-L7_1.no_refresh = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 10003
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 10005
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "DUNGEON_ALL_AVATAR_DIE_10001"
-L5_1 = "DUNGEON_REVIVE_10002"
-L6_1 = "TIMER_EVENT_10004"
-L7_1 = "ENTER_REGION_10005"
-L8_1 = "TIMER_EVENT_10006"
-L9_1 = "DUNGEON_AVATAR_SLIP_DIE_10008"
-L10_1 = "TIMER_EVENT_10009"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlayerInteractOption
-  L3_2 = A0_2
-  L4_2 = "false DisableXiaoDungeon"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_player_interact_option"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "test_re"
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 10003, gadget_id = 70900205, pos = { x = -57.642, y = 250.328, z = -79.853 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 10007, gadget_id = 70350106, pos = { x = -28.760, y = 246.100, z = -63.081 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 10005, shape = RegionShape.SPHERE, radius = 400, pos = { x = 12.212, y = 256.747, z = 11.591 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1010001, name = "DUNGEON_ALL_AVATAR_DIE_10001", event = EventType.EVENT_DUNGEON_ALL_AVATAR_DIE, source = "", condition = "", action = "action_EVENT_DUNGEON_ALL_AVATAR_DIE_10001", trigger_count = 0 },
+	{ config_id = 1010002, name = "DUNGEON_REVIVE_10002", event = EventType.EVENT_DUNGEON_REVIVE, source = "", condition = "", action = "action_EVENT_DUNGEON_REVIVE_10002", trigger_count = 0 },
+	{ config_id = 1010004, name = "TIMER_EVENT_10004", event = EventType.EVENT_TIMER_EVENT, source = "xiao_skill", condition = "", action = "action_EVENT_TIMER_EVENT_10004", trigger_count = 0 },
+	{ config_id = 1010005, name = "ENTER_REGION_10005", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_10005", action = "action_EVENT_ENTER_REGION_10005", trigger_count = 0 },
+	{ config_id = 1010006, name = "TIMER_EVENT_10006", event = EventType.EVENT_TIMER_EVENT, source = "xiao_skill_re", condition = "", action = "action_EVENT_TIMER_EVENT_10006", trigger_count = 0 },
+	{ config_id = 1010008, name = "DUNGEON_AVATAR_SLIP_DIE_10008", event = EventType.EVENT_DUNGEON_AVATAR_SLIP_DIE, source = "", condition = "", action = "action_EVENT_DUNGEON_AVATAR_SLIP_DIE_10008", trigger_count = 0 },
+	{ config_id = 1010009, name = "TIMER_EVENT_10009", event = EventType.EVENT_TIMER_EVENT, source = "unlock_input", condition = "", action = "action_EVENT_TIMER_EVENT_10009", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "test", value = 0, no_refresh = false },
+	{ config_id = 2, name = "isFirstEntry", value = 1, no_refresh = false },
+	{ config_id = 3, name = "test_re", value = 0, no_refresh = false },
+	{ config_id = 4, name = "test_enter_region", value = 0, no_refresh = false },
+	{ config_id = 5, name = "isSlipDie", value = 0, no_refresh = false },
+	{ config_id = 6, name = "test_slip_enter_region", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 10003 },
+		regions = { 10005 },
+		triggers = { "DUNGEON_ALL_AVATAR_DIE_10001", "DUNGEON_REVIVE_10002", "TIMER_EVENT_10004", "ENTER_REGION_10005", "TIMER_EVENT_10006", "DUNGEON_AVATAR_SLIP_DIE_10008", "TIMER_EVENT_10009" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_DUNGEON_ALL_AVATAR_DIE_10001(context, evt)
+	-- 屏蔽战斗主界面UI模块,参数传字符串,参数内容为"bool 屏蔽ui组key"
+	if 0 ~= ScriptLib.SetPlayerInteractOption(context, "false DisableXiaoDungeon") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_player_interact_option")
+		return -1
+	end
+	
+	-- 将本组内变量名为 "test_re" 的变量设置为 2
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "test_re", 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_DUNGEON_ALL_AVATAR_DIE_10001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 201032010
-  L5_2 = "xiao_skill"
-  L6_2 = 4
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_DUNGEON_REVIVE_10002(context, evt)
+	-- 延迟4秒后,向groupId为：201032010的对象,请求一次调用,并将string参数："xiao_skill" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 201032010, "xiao_skill", 4) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_DUNGEON_REVIVE_10002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 201032001
-  L5_2 = 1001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 201032010
-  L5_2 = "unlock_input"
-  L6_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "test_re"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_10004(context, evt)
+	-- 改变指定group组201032001中， configid为1001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201032001, 1001, GadgetState.GearStart) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 延迟2秒后,向groupId为：201032010的对象,请求一次调用,并将string参数："unlock_input" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 201032010, "unlock_input", 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "test_re" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "test_re", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_10004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 10005 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_10005(context, evt)
+	if evt.param1 ~= 10005 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_10005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "test_re"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "isSlipDie"
-  L3_2 = L3_2(L4_2, L5_2)
-  if L2_2 == 1 and L3_2 == 0 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetPlayerInteractOption
-    L5_2 = A0_2
-    L6_2 = "false DisableXiaoDungeon"
-    L4_2(L5_2, L6_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.CreateGroupTimerEvent
-    L5_2 = A0_2
-    L6_2 = 201032010
-    L7_2 = "xiao_skill_re"
-    L8_2 = 1
-    L4_2(L5_2, L6_2, L7_2, L8_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.ChangeGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "test_enter_region"
-    L7_2 = 1
-    L4_2(L5_2, L6_2, L7_2)
-  elseif L2_2 == 1 and L3_2 == 1 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetPlayerInteractOption
-    L5_2 = A0_2
-    L6_2 = "false DisableXiaoDungeon"
-    L4_2(L5_2, L6_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.CreateGroupTimerEvent
-    L5_2 = A0_2
-    L6_2 = 201032010
-    L7_2 = "xiao_skill_re"
-    L8_2 = 1
-    L4_2(L5_2, L6_2, L7_2, L8_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "isSlipDie"
-    L7_2 = 0
-    L4_2(L5_2, L6_2, L7_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.ChangeGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "test_slip_enter_region"
-    L7_2 = 1
-    L4_2(L5_2, L6_2, L7_2)
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_10005(context, evt)
+	--断线重连后重放大招
+	local flag_re = ScriptLib.GetGroupVariableValue(context, "test_re")
+	local slip_die = ScriptLib.GetGroupVariableValue(context, "isSlipDie")
+	if flag_re == 1 and slip_die == 0 then
+	        ScriptLib.SetPlayerInteractOption(context, "false DisableXiaoDungeon")
+	        ScriptLib.CreateGroupTimerEvent(context, 201032010, "xiao_skill_re", 1)
+	        ScriptLib.ChangeGroupVariableValue(context, "test_enter_region", 1)
+	elseif flag_re == 1 and slip_die == 1 then
+	        ScriptLib.SetPlayerInteractOption(context, "false DisableXiaoDungeon")
+	        ScriptLib.CreateGroupTimerEvent(context, 201032010, "xiao_skill_re", 1)
+	        ScriptLib.SetGroupVariableValue(context, "isSlipDie", 0)
+		
+	        ScriptLib.ChangeGroupVariableValue(context, "test_slip_enter_region", 1)
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_10005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 201032001
-  L5_2 = 1001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 201032010
-  L5_2 = "unlock_input"
-  L6_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "test"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_10006(context, evt)
+	-- 改变指定group组201032001中， configid为1001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 201032001, 1001, GadgetState.GearStart) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 延迟2秒后,向groupId为：201032010的对象,请求一次调用,并将string参数："unlock_input" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 201032010, "unlock_input", 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 针对当前group内变量名为 "test" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "test", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_10006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "isSlipDie"
-  L5_2 = 1
-  L6_2 = 201032010
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlayerInteractOption
-  L3_2 = A0_2
-  L4_2 = "false DisableXiaoDungeon"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_player_interact_option"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_DUNGEON_AVATAR_SLIP_DIE_10008(context, evt)
+	-- 将本组内变量名为 "isSlipDie" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "isSlipDie", 1, 201032010) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 屏蔽战斗主界面UI模块,参数传字符串,参数内容为"bool 屏蔽ui组key"
+	if 0 ~= ScriptLib.SetPlayerInteractOption(context, "false DisableXiaoDungeon") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_player_interact_option")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_DUNGEON_AVATAR_SLIP_DIE_10008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlayerInteractOption
-  L3_2 = A0_2
-  L4_2 = "true DisableXiaoDungeon"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_player_interact_option"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_10009(context, evt)
+	-- 屏蔽战斗主界面UI模块,参数传字符串,参数内容为"bool 屏蔽ui组key"
+	if 0 ~= ScriptLib.SetPlayerInteractOption(context, "true DisableXiaoDungeon") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_player_interact_option")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_10009 = L1_1

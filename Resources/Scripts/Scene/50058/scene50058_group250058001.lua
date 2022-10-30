@@ -1,102 +1,101 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 250058001
-L1_1 = {}
-L1_1.BossConfigID = 1001
-L1_1.GroupID = 250058001
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1001
-L3_1.monster_id = 29060102
-L4_1 = {}
-L4_1.x = 492.312
-L4_1.y = 100.542
-L4_1.z = 488.196
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 70.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.title_id = 152
-L3_1.special_name_id = 9
-L2_1[1] = L3_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1001002
-L3_1.name = "SPECIFIC_MONSTER_HP_CHANGE_1002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SPECIFIC_MONSTER_HP_CHANGE
-L3_1.event = L4_1
-L3_1.source = "1001"
-L3_1.condition = "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_1002"
-L3_1.action = "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_1002"
-L2_1[1] = L3_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L5_1 = 1001
-L4_1[1] = L5_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "SPECIFIC_MONSTER_HP_CHANGE_1002"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.type
-  L3_2 = EventType
-  L3_2 = L3_2.EVENT_SPECIFIC_MONSTER_HP_CHANGE
-  if L2_2 == L3_2 then
-    L2_2 = A1_2.param3
-    if not (2 < L2_2) then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 250058001
+}
+
+-- DEFS_MISCS
+local defs = {
+    BossConfigID = 1001,
+    GroupID = 250058001,
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 1001, monster_id = 29060102, pos = { x = 492.312, y = 100.542, z = 488.196 }, rot = { x = 0.000, y = 70.000, z = 0.000 }, level = 1, title_id = 152, special_name_id = 9 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1001002, name = "SPECIFIC_MONSTER_HP_CHANGE_1002", event = EventType.EVENT_SPECIFIC_MONSTER_HP_CHANGE, source = "1001", condition = "condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_1002", action = "action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_1002" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 1001 },
+		gadgets = { },
+		regions = { },
+		triggers = { "SPECIFIC_MONSTER_HP_CHANGE_1002" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_1002(context, evt)
+	--[[判断指定configid的怪物的血量小于%2时触发指定后续操作]]--
+	if evt.type ~= EventType.EVENT_SPECIFIC_MONSTER_HP_CHANGE or evt.param3 > 2 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SPECIFIC_MONSTER_HP_CHANGE_1002 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 250058001
-  L5_2 = EntityType
-  L5_2 = L5_2.MONSTER
-  L6_2 = 1001
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_1002(context, evt)
+		-- 移除指定monster
+		ScriptLib.RemoveEntityByConfigId(context, 250058001, EntityType.MONSTER, 1001)
+	
+		
+	
+	return 0
 end
-action_EVENT_SPECIFIC_MONSTER_HP_CHANGE_1002 = L2_1
-L2_1 = require
-L3_1 = "V2_1/Boss_Shougun_Beta"
-L2_1(L3_1)
+
+require "V2_1/Boss_Shougun_Beta"

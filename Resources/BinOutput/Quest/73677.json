@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    173677
-  ],
+  "rewardIdList": [173677],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7367701,
-            0
-          ],
+          "param": [7367701, 0],
           "count": 0
         }
       ],
@@ -52,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "30245"
-        ],
+        "param": ["30245"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -88,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ACTIVITY_TRIGGER_UPDATE",
-          "param": [
-            2016,
-            101
-          ],
+          "param": [2016, 101],
           "count": 1
         }
       ],
@@ -99,9 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "30245"
-        ],
+        "param": ["30245"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -131,18 +119,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7367701",
-            "2"
-          ]
+          "param": ["7367701", "2"]
         },
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2016",
-            "2016015",
-            "1"
-          ]
+          "param": ["2016", "2016015", "1"]
         }
       ],
       "priority": 5,
@@ -151,9 +132,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 736770101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30245
-      ],
+      "npcIdRawNum": [30245],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Mengde_73677/Q7367701",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -184,12 +163,8 @@
   "LGCLJGGNGBD": [],
   "OMKMAOLMNCO": [],
   "KPOKLMBEOBI": {
-    "30245": [
-      1050
-    ],
-    "30247": [
-      1250
-    ]
+    "30245": [1050],
+    "30247": [1250]
   },
   "MGDNNNGPOGO": 173677
 }

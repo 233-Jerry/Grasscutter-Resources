@@ -12,15 +12,9 @@
   "_luaPath": "Actor/Quest/MQ382",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    380,
-    381,
-    383
-  ],
+  "PEOHODAKLNO": [380, 381, 383],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    100382
-  ],
+  "rewardIdList": [100382],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -45,18 +39,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TRIGGER_FIRE",
-          "param": [
-            1065,
-            0
-          ],
+          "param": [1065, 0],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_TRIGGER_FIRE",
-          "param": [
-            1066,
-            0
-          ],
+          "param": [1066, 0],
           "count": 0
         }
       ],
@@ -64,9 +52,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q382DragonTill"
-        ],
+        "param": ["Q382DragonTill"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -100,10 +86,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [
-            100159,
-            0
-          ],
+          "param": [100159, 0],
           "count": 0
         }
       ],
@@ -111,9 +94,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q382DragonTillChest"
-        ],
+        "param": ["Q382DragonTillChest"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
@@ -130,10 +111,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133001249,1"
-          ]
+          "param": ["3", "133001249,1"]
         }
       ],
       "failExec": [],
@@ -155,10 +133,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            38203,
-            0
-          ],
+          "param": [38203, 0],
           "count": 0
         }
       ],
@@ -187,12 +162,8 @@
     }
   ],
   "talks": [],
-  "LGCLJGGNGBD": [
-    850367596000
-  ],
-  "OMKMAOLMNCO": [
-    902918321606
-  ],
+  "LGCLJGGNGBD": [850367596000],
+  "OMKMAOLMNCO": [902918321606],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 100382
 }

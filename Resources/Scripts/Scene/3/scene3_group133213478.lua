@@ -1,176 +1,133 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133213478
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 478001
-L2_1.gadget_id = 70360050
-L3_1 = {}
-L3_1.x = -3838.076
-L3_1.y = 238.833
-L3_1.z = -3229.349
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 27
-L2_1.area_id = 12
-L3_1 = {}
-L3_1.config_id = 478002
-L3_1.gadget_id = 70900384
-L4_1 = {}
-L4_1.x = -3838.305
-L4_1.y = 236.784
-L4_1.z = -3228.819
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 27
-L3_1.area_id = 12
-L4_1 = {}
-L4_1.config_id = 478004
-L4_1.gadget_id = 70211101
-L5_1 = {}
-L5_1.x = -3838.142
-L5_1.y = 236.983
-L5_1.z = -3227.641
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 357.001
-L5_1.y = 190.407
-L5_1.z = 26.019
-L4_1.rot = L5_1
-L4_1.level = 26
-L4_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\231\168\187\229\166\187"
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.name = "chest"
-L5_1.exp = 1
-L4_1.explore = L5_1
-L4_1.area_id = 12
-L5_1 = {}
-L5_1.config_id = 478005
-L5_1.gadget_id = 70210101
-L6_1 = {}
-L6_1.x = -3839.417
-L6_1.y = 237.106
-L6_1.z = -3228.376
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 357.001
-L6_1.y = 190.407
-L6_1.z = 26.019
-L5_1.rot = L6_1
-L5_1.level = 26
-L5_1.drop_tag = "\230\144\156\229\136\174\231\130\185\232\167\163\232\176\156\233\129\151\231\137\169\231\168\187\229\166\187"
-L5_1.persistent = true
-L5_1.area_id = 12
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1478003
-L2_1.name = "ANY_GADGET_DIE_478003"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_GADGET_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_GADGET_DIE_478003"
-L2_1.action = "action_EVENT_ANY_GADGET_DIE_478003"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 478002
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ANY_GADGET_DIE_478003"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 478001
-L6_1 = 478004
-L7_1 = 478005
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 478002 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133213478
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 478001, gadget_id = 70360050, pos = { x = -3838.076, y = 238.833, z = -3229.349 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, area_id = 12 },
+	{ config_id = 478002, gadget_id = 70900384, pos = { x = -3838.305, y = 236.784, z = -3228.819 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, area_id = 12 },
+	{ config_id = 478004, gadget_id = 70211101, pos = { x = -3838.142, y = 236.983, z = -3227.641 }, rot = { x = 357.001, y = 190.407, z = 26.019 }, level = 26, drop_tag = "解谜低级稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 12 },
+	{ config_id = 478005, gadget_id = 70210101, pos = { x = -3839.417, y = 237.106, z = -3228.376 }, rot = { x = 357.001, y = 190.407, z = 26.019 }, level = 26, drop_tag = "搜刮点解谜遗物稻妻", persistent = true, area_id = 12 },
+	{ config_id = 478006, gadget_id = 70900384, pos = { x = -3843.000, y = 225.000, z = -3215.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, area_id = 12 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1478003, name = "ANY_GADGET_DIE_478003", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_478003", action = "action_EVENT_ANY_GADGET_DIE_478003" },
+	{ config_id = 1478007, name = "ANY_GADGET_DIE_478007", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_478007", action = "action_EVENT_ANY_GADGET_DIE_478007" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 478002, 478006 },
+		regions = { },
+		triggers = { "ANY_GADGET_DIE_478003", "ANY_GADGET_DIE_478007" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 478001, 478004, 478005 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_478003(context, evt)
+	if 478002 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_GADGET_DIE_478003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133213478
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.MarkPlayerAction
-  L3_2 = A0_2
-  L4_2 = 6047
-  L5_2 = 3
-  L6_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : mark_playerAction"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_478003(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133213478, 2)
+	
+	-- 运营数据埋点，匹配LD定义的规则使用
+	    if 0 ~= ScriptLib.MarkPlayerAction(context, 6047, 3, 1) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : mark_playerAction")
+	      return -1
+	    end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_478003 = L1_1
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_478007(context, evt)
+	if 478006 ~= evt.param1 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_478007(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133213478, 2)
+	
+	-- 运营数据埋点，匹配LD定义的规则使用
+	    if 0 ~= ScriptLib.MarkPlayerAction(context, 6047, 3, 1) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : mark_playerAction")
+	      return -1
+	    end
+	
+	return 0
+end

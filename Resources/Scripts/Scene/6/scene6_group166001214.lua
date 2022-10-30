@@ -1,436 +1,206 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1
-L0_1 = {}
-L0_1.group_id = 166001214
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 214001
-L2_1.npc_id = 2214
-L3_1 = {}
-L3_1.x = 346.44
-L3_1.y = 475.954
-L3_1.z = 512.528
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.area_id = 300
-L3_1 = {}
-L3_1.config_id = 214002
-L3_1.npc_id = 2215
-L4_1 = {}
-L4_1.x = 346.499
-L4_1.y = 475.866
-L4_1.z = 512.569
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.area_id = 300
-L4_1 = {}
-L4_1.config_id = 214003
-L4_1.npc_id = 2216
-L5_1 = {}
-L5_1.x = 346.48
-L5_1.y = 475.962
-L5_1.z = 512.501
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.area_id = 300
-L5_1 = {}
-L5_1.config_id = 214004
-L5_1.npc_id = 2217
-L6_1 = {}
-L6_1.x = 346.367
-L6_1.y = 475.975
-L6_1.z = 512.589
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.area_id = 300
-L6_1 = {}
-L6_1.config_id = 214005
-L6_1.npc_id = 2218
-L7_1 = {}
-L7_1.x = 346.336
-L7_1.y = 476.051
-L7_1.z = 512.521
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.area_id = 300
-L7_1 = {}
-L7_1.config_id = 214006
-L7_1.npc_id = 2219
-L8_1 = {}
-L8_1.x = 346.444
-L8_1.y = 476.055
-L8_1.z = 512.431
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.area_id = 300
-L8_1 = {}
-L8_1.config_id = 214007
-L8_1.npc_id = 2220
-L9_1 = {}
-L9_1.x = 346.375
-L9_1.y = 476.052
-L9_1.z = 512.505
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.area_id = 300
-L9_1 = {}
-L9_1.config_id = 214008
-L9_1.npc_id = 2221
-L10_1 = {}
-L10_1.x = 346.484
-L10_1.y = 476.042
-L10_1.z = 512.427
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.area_id = 300
-L10_1 = {}
-L10_1.config_id = 214009
-L10_1.npc_id = 2222
-L11_1 = {}
-L11_1.x = 346.348
-L11_1.y = 475.974
-L11_1.z = 512.607
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.area_id = 300
-L11_1 = {}
-L11_1.config_id = 214010
-L11_1.npc_id = 2223
-L12_1 = {}
-L12_1.x = 346.431
-L12_1.y = 475.995
-L12_1.z = 512.516
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.area_id = 300
-L12_1 = {}
-L12_1.config_id = 214011
-L12_1.npc_id = 2224
-L13_1 = {}
-L13_1.x = 346.371
-L13_1.y = 476.023
-L13_1.z = 512.544
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 0.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.area_id = 300
-L13_1 = {}
-L13_1.config_id = 214012
-L13_1.npc_id = 2225
-L14_1 = {}
-L14_1.x = 346.422
-L14_1.y = 476.054
-L14_1.z = 512.464
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 0.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.area_id = 300
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 214013
-L2_1.gadget_id = 70360089
-L3_1 = {}
-L3_1.x = 346.384
-L3_1.y = 476.053
-L3_1.z = 512.483
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 36
-L2_1.area_id = 300
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 214013
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L4_1 = {}
-L5_1 = 214001
-L4_1[1] = L5_1
-L3_1.npcs = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 214013
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L5_1 = {}
-L6_1 = 214002
-L5_1[1] = L6_1
-L4_1.npcs = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 214013
-L6_1[1] = L7_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L6_1 = {}
-L7_1 = 214003
-L6_1[1] = L7_1
-L5_1.npcs = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L8_1 = 214013
-L7_1[1] = L8_1
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L7_1 = {}
-L8_1 = 214004
-L7_1[1] = L8_1
-L6_1.npcs = L7_1
-L6_1.rand_weight = 100
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L9_1 = 214013
-L8_1[1] = L9_1
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L7_1.triggers = L8_1
-L8_1 = {}
-L9_1 = 214005
-L8_1[1] = L9_1
-L7_1.npcs = L8_1
-L7_1.rand_weight = 100
-L8_1 = {}
-L9_1 = {}
-L8_1.monsters = L9_1
-L9_1 = {}
-L10_1 = 214013
-L9_1[1] = L10_1
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L8_1.triggers = L9_1
-L9_1 = {}
-L10_1 = 214006
-L9_1[1] = L10_1
-L8_1.npcs = L9_1
-L8_1.rand_weight = 100
-L9_1 = {}
-L10_1 = {}
-L9_1.monsters = L10_1
-L10_1 = {}
-L11_1 = 214013
-L10_1[1] = L11_1
-L9_1.gadgets = L10_1
-L10_1 = {}
-L9_1.regions = L10_1
-L10_1 = {}
-L9_1.triggers = L10_1
-L10_1 = {}
-L11_1 = 214007
-L10_1[1] = L11_1
-L9_1.npcs = L10_1
-L9_1.rand_weight = 100
-L10_1 = {}
-L11_1 = {}
-L10_1.monsters = L11_1
-L11_1 = {}
-L12_1 = 214013
-L11_1[1] = L12_1
-L10_1.gadgets = L11_1
-L11_1 = {}
-L10_1.regions = L11_1
-L11_1 = {}
-L10_1.triggers = L11_1
-L11_1 = {}
-L12_1 = 214008
-L11_1[1] = L12_1
-L10_1.npcs = L11_1
-L10_1.rand_weight = 100
-L11_1 = {}
-L12_1 = {}
-L11_1.monsters = L12_1
-L12_1 = {}
-L13_1 = 214013
-L12_1[1] = L13_1
-L11_1.gadgets = L12_1
-L12_1 = {}
-L11_1.regions = L12_1
-L12_1 = {}
-L11_1.triggers = L12_1
-L12_1 = {}
-L13_1 = 214009
-L12_1[1] = L13_1
-L11_1.npcs = L12_1
-L11_1.rand_weight = 100
-L12_1 = {}
-L13_1 = {}
-L12_1.monsters = L13_1
-L13_1 = {}
-L14_1 = 214013
-L13_1[1] = L14_1
-L12_1.gadgets = L13_1
-L13_1 = {}
-L12_1.regions = L13_1
-L13_1 = {}
-L12_1.triggers = L13_1
-L13_1 = {}
-L14_1 = 214010
-L13_1[1] = L14_1
-L12_1.npcs = L13_1
-L12_1.rand_weight = 100
-L13_1 = {}
-L14_1 = {}
-L13_1.monsters = L14_1
-L14_1 = {}
-L15_1 = 214013
-L14_1[1] = L15_1
-L13_1.gadgets = L14_1
-L14_1 = {}
-L13_1.regions = L14_1
-L14_1 = {}
-L13_1.triggers = L14_1
-L14_1 = {}
-L15_1 = 214011
-L14_1[1] = L15_1
-L13_1.npcs = L14_1
-L13_1.rand_weight = 100
-L14_1 = {}
-L15_1 = {}
-L14_1.monsters = L15_1
-L15_1 = {}
-L16_1 = 214013
-L15_1[1] = L16_1
-L14_1.gadgets = L15_1
-L15_1 = {}
-L14_1.regions = L15_1
-L15_1 = {}
-L14_1.triggers = L15_1
-L15_1 = {}
-L16_1 = 214012
-L15_1[1] = L16_1
-L14_1.npcs = L15_1
-L14_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-suites = L1_1
-L1_1 = require
-L2_1 = "V2_6/BW_RandomLoadSuite"
-L1_1(L2_1)
+-- 基础信息
+local base_info = {
+	group_id = 166001214
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+	{ config_id = 214001, npc_id = 2214, pos = { x = 346.440, y = 475.954, z = 512.528 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 },
+	{ config_id = 214002, npc_id = 2215, pos = { x = 346.499, y = 475.866, z = 512.569 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 },
+	{ config_id = 214003, npc_id = 2216, pos = { x = 346.480, y = 475.962, z = 512.501 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 },
+	{ config_id = 214004, npc_id = 2217, pos = { x = 346.367, y = 475.975, z = 512.589 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 },
+	{ config_id = 214005, npc_id = 2218, pos = { x = 346.336, y = 476.051, z = 512.521 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 },
+	{ config_id = 214006, npc_id = 2219, pos = { x = 346.444, y = 476.055, z = 512.431 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 },
+	{ config_id = 214007, npc_id = 2220, pos = { x = 346.375, y = 476.052, z = 512.505 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 },
+	{ config_id = 214008, npc_id = 2221, pos = { x = 346.484, y = 476.042, z = 512.427 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 },
+	{ config_id = 214009, npc_id = 2222, pos = { x = 346.348, y = 475.974, z = 512.607 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 },
+	{ config_id = 214010, npc_id = 2223, pos = { x = 346.431, y = 475.995, z = 512.516 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 },
+	{ config_id = 214011, npc_id = 2224, pos = { x = 346.371, y = 476.023, z = 512.544 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 },
+	{ config_id = 214012, npc_id = 2225, pos = { x = 346.422, y = 476.054, z = 512.464 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 300 }
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 214013, gadget_id = 70360089, pos = { x = 346.384, y = 476.053, z = 512.483 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 300 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214001 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214002 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214003 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214004 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 6,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214005 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 7,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214006 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 8,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214007 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 9,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214008 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 10,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214009 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 11,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214010 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 12,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214011 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 13,
+		-- description = ,
+		monsters = { },
+		gadgets = { 214013 },
+		regions = { },
+		triggers = { },
+		npcs = { 214012 },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_6/BW_RandomLoadSuite"

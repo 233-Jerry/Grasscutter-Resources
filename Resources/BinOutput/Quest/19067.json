@@ -12,10 +12,7 @@
   "_luaPath": "Actor/Quest/LQ19067",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    19068,
-    19069
-  ],
+  "PEOHODAKLNO": [19068, 19069],
   "FEHAEKNGFBP": false,
   "rewardIdList": [],
   "showType": "QUEST_SHOW",
@@ -42,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -53,10 +47,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q19067BeiyaStart",
-          "15"
-        ],
+        "param": ["Q19067BeiyaStart", "15"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -90,10 +81,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_ANY_SAVE_POINT",
-          "param": [
-            103401,
-            0
-          ],
+          "param": [103401, 0],
           "count": 0
         }
       ],
@@ -101,9 +89,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "140101"
-        ],
+        "param": ["140101"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -120,9 +106,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133004448"
-          ]
+          "param": ["133004448"]
         }
       ],
       "failExec": [],

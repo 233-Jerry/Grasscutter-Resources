@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 0,
-  "descTextMapHash": 0,
+  
   "id": 11124,
   "ICLLDPJFIMA": 8006,
   "NCLEJIILEGL": 1112,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1112401,
-            0
-          ],
+          "param": [1112401, 0],
           "count": 0
         }
       ],
@@ -84,10 +81,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1112402,
-            0
-          ],
+          "param": [1112402, 0],
           "count": 0
         }
       ],
@@ -125,18 +119,11 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1112401",
-            "2"
-          ]
+          "param": ["1112401", "2"]
         },
         {
           "_type": "QUEST_COND_QUEST_VAR_EQUAL",
-          "param": [
-            "0",
-            "0",
-            "11124"
-          ]
+          "param": ["0", "0", "11124"]
         }
       ],
       "priority": 5,
@@ -145,9 +132,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 111240101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10232
-      ],
+      "npcIdRawNum": [10232],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Zhongli2_11124/Q1112401",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -183,18 +168,11 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1112401",
-            "2"
-          ]
+          "param": ["1112401", "2"]
         },
         {
           "_type": "QUEST_COND_QUEST_VAR_GREATER",
-          "param": [
-            "0",
-            "1",
-            "11124"
-          ]
+          "param": ["0", "1", "11124"]
         }
       ],
       "priority": 5,
@@ -203,9 +181,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 111240104,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10232
-      ],
+      "npcIdRawNum": [10232],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Zhongli2_11124/Q1112402",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -233,12 +209,8 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    308648186476
-  ],
-  "OMKMAOLMNCO": [
-    192797482667
-  ],
+  "LGCLJGGNGBD": [308648186476],
+  "OMKMAOLMNCO": [192797482667],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 0
 }

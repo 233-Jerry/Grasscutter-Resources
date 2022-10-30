@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    140040
-  ],
+  "rewardIdList": [140040],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            4004001,
-            0
-          ],
+          "param": [4004001, 0],
           "count": 0
         }
       ],
@@ -52,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "30085"
-        ],
+        "param": ["30085"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -71,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "40040",
-            "1"
-          ]
+          "param": ["40040", "1"]
         }
       ],
       "failExec": [],
@@ -164,10 +154,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4004001",
-            "2"
-          ]
+          "param": ["4004001", "2"]
         }
       ],
       "priority": 5,
@@ -176,9 +163,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 400400101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30085
-      ],
+      "npcIdRawNum": [30085],
       "GHNCIOJDIEA": "QuestDialogue/EQ/Ver2.4Sealamp_40040/Q4004001",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -206,16 +191,10 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    551792101041
-  ],
-  "OMKMAOLMNCO": [
-    331336740738
-  ],
+  "LGCLJGGNGBD": [551792101041],
+  "OMKMAOLMNCO": [331336740738],
   "KPOKLMBEOBI": {
-    "30085": [
-      4010
-    ]
+    "30085": [4010]
   },
   "MGDNNNGPOGO": 140040
 }

@@ -1,581 +1,246 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133002912
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 912002
-L2_1.gadget_id = 70360102
-L3_1 = {}
-L3_1.x = 946.359
-L3_1.y = 365.031
-L3_1.z = -689.903
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 100.3
-L3_1.z = 357.035
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.area_id = 10
-L3_1 = {}
-L3_1.config_id = 912003
-L3_1.gadget_id = 70710236
-L4_1 = {}
-L4_1.x = 945.234
-L4_1.y = 364.925
-L4_1.z = -690.782
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 10
-L4_1 = {}
-L4_1.config_id = 912014
-L4_1.gadget_id = 70710234
-L5_1 = {}
-L5_1.x = 944.569
-L5_1.y = 364.915
-L5_1.z = -688.383
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 281.1
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 10
-L5_1 = {}
-L5_1.config_id = 912015
-L5_1.gadget_id = 70710234
-L6_1 = {}
-L6_1.x = 945.409
-L6_1.y = 364.933
-L6_1.z = -689.145
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 261.5
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.area_id = 10
-L6_1 = {}
-L6_1.config_id = 912016
-L6_1.gadget_id = 70710234
-L7_1 = {}
-L7_1.x = 941.419
-L7_1.y = 365.005
-L7_1.z = -690.002
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 250.4
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 10
-L7_1 = {}
-L7_1.config_id = 912017
-L7_1.gadget_id = 70710234
-L8_1 = {}
-L8_1.x = 930.262
-L8_1.y = 367.579
-L8_1.z = -691.001
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 248.4
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.area_id = 10
-L8_1 = {}
-L8_1.config_id = 912018
-L8_1.gadget_id = 70710234
-L9_1 = {}
-L9_1.x = 928.918
-L9_1.y = 367.95
-L9_1.z = -690.784
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 277.9
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.area_id = 10
-L9_1 = {}
-L9_1.config_id = 912019
-L9_1.gadget_id = 70710234
-L10_1 = {}
-L10_1.x = 923.696
-L10_1.y = 369.996
-L10_1.z = -692.192
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 258.2
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.area_id = 10
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 912010
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 5
-L3_1 = {}
-L3_1.x = 938.865
-L3_1.y = 365.402
-L3_1.z = -690.54
-L2_1.pos = L3_1
-L2_1.area_id = 10
-L3_1 = {}
-L3_1.config_id = 912021
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 6.1
-L4_1 = {}
-L4_1.x = 926.799
-L4_1.y = 370.49
-L4_1.z = -694.215
-L3_1.pos = L4_1
-L3_1.area_id = 10
-L4_1 = {}
-L4_1.config_id = 912022
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 13.3
-L5_1 = {}
-L5_1.x = 915.626
-L5_1.y = 375.183
-L5_1.z = -698.115
-L4_1.pos = L5_1
-L4_1.area_id = 10
-L5_1 = {}
-L5_1.config_id = 912023
-L6_1 = RegionShape
-L6_1 = L6_1.SPHERE
-L5_1.shape = L6_1
-L5_1.radius = 8
-L6_1 = {}
-L6_1.x = 946.106
-L6_1.y = 367.64
-L6_1.z = -689.967
-L5_1.pos = L6_1
-L5_1.area_id = 10
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1912004
-L2_1.name = "ANY_GADGET_DIE_912004"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_GADGET_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ANY_GADGET_DIE_912004"
-L2_1.action = "action_EVENT_ANY_GADGET_DIE_912004"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1912010
-L3_1.name = "ENTER_REGION_912010"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_912010"
-L3_1.action = "action_EVENT_ENTER_REGION_912010"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1912021
-L4_1.name = "ENTER_REGION_912021"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_912021"
-L4_1.action = "action_EVENT_ENTER_REGION_912021"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1912022
-L5_1.name = "ENTER_REGION_912022"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ENTER_REGION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ENTER_REGION_912022"
-L5_1.action = "action_EVENT_ENTER_REGION_912022"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1912023
-L6_1.name = "ENTER_REGION_912023"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_ENTER_REGION
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_ENTER_REGION_912023"
-L6_1.action = "action_EVENT_ENTER_REGION_912023"
-L6_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 5
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 912014
-L5_1 = 912015
-L6_1 = 912016
-L7_1 = 912017
-L8_1 = 912018
-L9_1 = 912019
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 912010
-L5_1 = 912021
-L6_1 = 912022
-L7_1 = 912023
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_912010"
-L5_1 = "ENTER_REGION_912021"
-L6_1 = "ENTER_REGION_912022"
-L7_1 = "ENTER_REGION_912023"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L2_1.ban_refresh = true
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L3_1.ban_refresh = true
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 912002
-L7_1 = 912003
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "ANY_GADGET_DIE_912004"
-L5_1[1] = L6_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L4_1.ban_refresh = true
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L5_1.ban_refresh = true
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L6_1.ban_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintContextLog
-  L3_2 = A0_2
-  L4_2 = "## TEMPLE_LOG : Gadget_Die | "
-  L5_2 = A1_2.param1
-  L4_2 = L4_2 .. L5_2
-  L2_2(L3_2, L4_2)
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133002912
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 912002, gadget_id = 70360102, pos = { x = 946.359, y = 365.031, z = -689.903 }, rot = { x = 0.000, y = 100.300, z = 357.035 }, level = 1, area_id = 10 },
+	{ config_id = 912003, gadget_id = 70710236, pos = { x = 945.234, y = 364.925, z = -690.782 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 912014, gadget_id = 70710234, pos = { x = 944.569, y = 364.915, z = -688.383 }, rot = { x = 0.000, y = 281.100, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 912015, gadget_id = 70710234, pos = { x = 945.409, y = 364.933, z = -689.145 }, rot = { x = 0.000, y = 261.500, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 912016, gadget_id = 70710234, pos = { x = 941.419, y = 365.005, z = -690.002 }, rot = { x = 0.000, y = 250.400, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 912017, gadget_id = 70710234, pos = { x = 930.262, y = 367.579, z = -691.001 }, rot = { x = 0.000, y = 248.400, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 912018, gadget_id = 70710234, pos = { x = 928.918, y = 367.950, z = -690.784 }, rot = { x = 0.000, y = 277.900, z = 0.000 }, level = 1, area_id = 10 },
+	{ config_id = 912019, gadget_id = 70710234, pos = { x = 923.696, y = 369.996, z = -692.192 }, rot = { x = 0.000, y = 258.200, z = 0.000 }, level = 1, area_id = 10 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 912010, shape = RegionShape.SPHERE, radius = 5, pos = { x = 938.865, y = 365.402, z = -690.540 }, area_id = 10 },
+	{ config_id = 912021, shape = RegionShape.SPHERE, radius = 6.1, pos = { x = 926.799, y = 370.490, z = -694.215 }, area_id = 10 },
+	{ config_id = 912022, shape = RegionShape.SPHERE, radius = 13.3, pos = { x = 915.626, y = 375.183, z = -698.115 }, area_id = 10 },
+	{ config_id = 912023, shape = RegionShape.SPHERE, radius = 8, pos = { x = 946.106, y = 367.640, z = -689.967 }, area_id = 10 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1912004, name = "ANY_GADGET_DIE_912004", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_912004", action = "action_EVENT_ANY_GADGET_DIE_912004", trigger_count = 0 },
+	{ config_id = 1912010, name = "ENTER_REGION_912010", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_912010", action = "action_EVENT_ENTER_REGION_912010", trigger_count = 0 },
+	{ config_id = 1912021, name = "ENTER_REGION_912021", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_912021", action = "action_EVENT_ENTER_REGION_912021", trigger_count = 0 },
+	{ config_id = 1912022, name = "ENTER_REGION_912022", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_912022", action = "action_EVENT_ENTER_REGION_912022", trigger_count = 0 },
+	{ config_id = 1912023, name = "ENTER_REGION_912023", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_912023", action = "action_EVENT_ENTER_REGION_912023", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 5,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 912014, 912015, 912016, 912017, 912018, 912019 },
+		regions = { 912010, 912021, 912022, 912023 },
+		triggers = { "ENTER_REGION_912010", "ENTER_REGION_912021", "ENTER_REGION_912022", "ENTER_REGION_912023" },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 3,
+		-- description = 正常回收_雪堆可交互,
+		monsters = { },
+		gadgets = { 912002, 912003 },
+		regions = { },
+		triggers = { "ANY_GADGET_DIE_912004" },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 4,
+		-- description = 正常回收_交互后雪堆和点消失,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 5,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_912004(context, evt)
+	-- 打印死亡日志
+	    ScriptLib.PrintContextLog(context, "## TEMPLE_LOG : Gadget_Die | "..evt.param1)
+	
+	return true
 end
-condition_EVENT_ANY_GADGET_DIE_912004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = 133002912
-  L5_2 = EntityType
-  L5_2 = L5_2.GADGET
-  L6_2 = 912003
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "1330291299"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_912004(context, evt)
+		-- 卸载指定gadget
+		if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 133002912, EntityType.GADGET, 912003 ) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+			return -1
+		end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "1330291299") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_912004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 912010 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_912010(context, evt)
+	if evt.param1 ~= 912010 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_912010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "13300291201"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_912010(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "13300291201") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_912010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 912021 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_912021(context, evt)
+	if evt.param1 ~= 912021 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_912021 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "13300291203"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_912021(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "13300291203") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_912021 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 912022 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_912022(context, evt)
+	if evt.param1 ~= 912022 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_912022 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "13300291204"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_912022(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "13300291204") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_912022 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 912023 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_912023(context, evt)
+	if evt.param1 ~= 912023 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_912023 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "13300291299"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_912023(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "13300291299") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_912023 = L1_1

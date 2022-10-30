@@ -39,18 +39,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7367601,
-            2
-          ],
+          "param": [7367601, 2],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7367601,
-            3
-          ],
+          "param": [7367601, 3],
           "count": 0
         }
       ],
@@ -75,10 +69,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133303650",
-            "0"
-          ]
+          "param": ["133303650", "0"]
         }
       ],
       "failExec": [],

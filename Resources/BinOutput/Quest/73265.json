@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 2694692863,
-  "descTextMapHash": 0,
+  
   "id": 73265,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    173265
-  ],
+  "rewardIdList": [173265],
   "showType": "QUEST_HIDDEN",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [
-            133301694,
-            694001
-          ],
+          "param": [133301694, 694001],
           "count": 0
         }
       ],
@@ -69,9 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133301694"
-          ]
+          "param": ["133301694"]
         }
       ],
       "failExec": [],

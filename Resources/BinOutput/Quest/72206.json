@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 706651223,
-  "descTextMapHash": 0,
+  
   "id": 72206,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -84,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7220601,
-            0
-          ],
+          "param": [7220601, 0],
           "count": 0
         }
       ],
@@ -129,10 +123,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7220602,
-            0
-          ],
+          "param": [7220602, 0],
           "count": 0
         }
       ],
@@ -174,10 +165,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -219,10 +207,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7220603,
-            0
-          ],
+          "param": [7220603, 0],
           "count": 0
         }
       ],
@@ -264,10 +249,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_ITEM_GIVING",
-          "param": [
-            7220606,
-            0
-          ],
+          "param": [7220606, 0],
           "count": 0
         }
       ],
@@ -309,10 +291,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7220605,
-            0
-          ],
+          "param": [7220605, 0],
           "count": 0
         }
       ],
@@ -337,24 +316,15 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "72206",
-            "1"
-          ]
+          "param": ["72206", "1"]
         },
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
-          "param": [
-            "72174",
-            "1"
-          ]
+          "param": ["72174", "1"]
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133223486,2"
-          ]
+          "param": ["3", "133223486,2"]
         }
       ],
       "failExec": [],
@@ -372,17 +342,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7220601",
-            "3"
-          ]
+          "param": ["7220601", "3"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7220602",
-            "2"
-          ]
+          "param": ["7220602", "2"]
         }
       ],
       "priority": 5,
@@ -391,9 +355,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 722060101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20428
-      ],
+      "npcIdRawNum": [20428],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -429,17 +391,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7220602",
-            "3"
-          ]
+          "param": ["7220602", "3"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7220603",
-            "2"
-          ]
+          "param": ["7220603", "2"]
         }
       ],
       "priority": 5,
@@ -448,9 +404,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 722060201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1005
-      ],
+      "npcIdRawNum": [1005],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -486,17 +440,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7220604",
-            "3"
-          ]
+          "param": ["7220604", "3"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7220605",
-            "2"
-          ]
+          "param": ["7220605", "2"]
         }
       ],
       "priority": 5,
@@ -505,9 +453,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 722060301,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20428
-      ],
+      "npcIdRawNum": [20428],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -543,16 +489,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7220605",
-            "3"
-          ]
+          "param": ["7220605", "3"]
         },
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
-          "param": [
-            "7220606"
-          ]
+          "param": ["7220606"]
         }
       ],
       "priority": 5,
@@ -561,9 +502,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 722060401,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20428
-      ],
+      "npcIdRawNum": [20428],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -599,10 +538,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7220607",
-            "2"
-          ]
+          "param": ["7220607", "2"]
         }
       ],
       "priority": 5,
@@ -611,9 +547,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 722060501,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20428
-      ],
+      "npcIdRawNum": [20428],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -641,9 +575,7 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    645902683150
-  ],
+  "LGCLJGGNGBD": [645902683150],
   "OMKMAOLMNCO": [],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 0

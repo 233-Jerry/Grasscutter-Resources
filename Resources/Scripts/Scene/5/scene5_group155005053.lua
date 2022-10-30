@@ -1,169 +1,108 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 155005053
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 53001
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 5
-L3_1 = {}
-L3_1.x = 640.893
-L3_1.y = 161.022
-L3_1.z = 761.74
-L2_1.pos = L3_1
-L2_1.area_id = 200
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1053001
-L2_1.name = "ENTER_REGION_53001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_ENTER_REGION_53001"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1053002
-L3_1.name = "QUEST_START_53002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_QUEST_START
-L3_1.event = L4_1
-L3_1.source = "7224301"
-L3_1.condition = ""
-L3_1.action = ""
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1053003
-L4_1.name = "QUEST_FINISH_53003"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_QUEST_FINISH
-L4_1.event = L5_1
-L4_1.source = "7224301"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_QUEST_FINISH_53003"
-L4_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.io_type = 1
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 53001
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_53001"
-L5_1 = "QUEST_START_53002"
-L6_1 = "QUEST_FINISH_53003"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L2_1.variables = L3_1
-L1_1[1] = L2_1
-L2_1 = {}
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L2_1.variables = L3_1
-L1_1[2] = L2_1
-suite_disk = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 53001
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_53001"
-L5_1 = "QUEST_START_53002"
-L6_1 = "QUEST_FINISH_53003"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "72243_EnterChamber"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 155005053
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+	{ config_id = 53001, shape = RegionShape.SPHERE, radius = 5, pos = { x = 640.893, y = 161.022, z = 761.740 }, area_id = 200 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1053001, name = "ENTER_REGION_53001", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "action_EVENT_ENTER_REGION_53001", trigger_count = 0 },
+	{ config_id = 1053002, name = "QUEST_START_53002", event = EventType.EVENT_QUEST_START, source = "7224301", condition = "", action = "", trigger_count = 0 },
+	{ config_id = 1053003, name = "QUEST_FINISH_53003", event = EventType.EVENT_QUEST_FINISH, source = "7224301", condition = "", action = "action_EVENT_QUEST_FINISH_53003", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	io_type = 1,
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suite_disk = {
+	[1] = {
+		gadgets = {
+		},
+		monsters = {
+		},
+		regions = { 53001 },
+		triggers = { "ENTER_REGION_53001", "QUEST_START_53002", "QUEST_FINISH_53003" },
+		npcs = { },
+		variables = {
+		}
+	},
+	[2] = {
+		gadgets = {
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { },
+		npcs = { },
+		variables = {
+		}
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_53001(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "72243_EnterChamber") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_53001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToFlowSuite
-  L3_2 = A0_2
-  L4_2 = 155005053
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_53003(context, evt)
+		-- 将指定flowGroup的进度和要素属性都改为目标suite（缺的创建，多的移除）
+	  ScriptLib.GoToFlowSuite(context, 155005053, 2)
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_53003 = L1_1

@@ -1,224 +1,82 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
-L0_1 = {}
-L0_1.group_id = 133102094
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 94001
-L2_1.gadget_id = 70710266
-L3_1 = {}
-L3_1.x = 1790.454
-L3_1.y = 304.905
-L3_1.z = 596.3
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.area_id = 5
-L2_1.is_enable_interact = false
-L3_1 = {}
-L3_1.config_id = 94002
-L3_1.gadget_id = 70710266
-L4_1 = {}
-L4_1.x = 1812.138
-L4_1.y = 290.617
-L4_1.z = 606.851
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 5
-L3_1.is_enable_interact = false
-L4_1 = {}
-L4_1.config_id = 94003
-L4_1.gadget_id = 70710266
-L5_1 = {}
-L5_1.x = 1784.343
-L5_1.y = 287.525
-L5_1.z = 666.703
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.area_id = 5
-L4_1.is_enable_interact = false
-L5_1 = {}
-L5_1.config_id = 94004
-L5_1.gadget_id = 70710266
-L6_1 = {}
-L6_1.x = 1757.453
-L6_1.y = 296.476
-L6_1.z = 685.12
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.area_id = 5
-L5_1.is_enable_interact = false
-L6_1 = {}
-L6_1.config_id = 94005
-L6_1.gadget_id = 70710266
-L7_1 = {}
-L7_1.x = 1670.738
-L7_1.y = 296.21
-L7_1.z = 698.43
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.area_id = 5
-L6_1.is_enable_interact = false
-L7_1 = {}
-L7_1.config_id = 94006
-L7_1.gadget_id = 70710266
-L8_1 = {}
-L8_1.x = 1798.237
-L8_1.y = 323.836
-L8_1.z = 650.52
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.area_id = 5
-L7_1.is_enable_interact = false
-L8_1 = {}
-L8_1.config_id = 94007
-L8_1.gadget_id = 70710266
-L9_1 = {}
-L9_1.x = 1793.129
-L9_1.y = 321.651
-L9_1.z = 537.09
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.area_id = 5
-L8_1.is_enable_interact = false
-L9_1 = {}
-L9_1.config_id = 94008
-L9_1.gadget_id = 70710266
-L10_1 = {}
-L10_1.x = 1748.161
-L10_1.y = 267.227
-L10_1.z = 722.959
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.area_id = 5
-L9_1.is_enable_interact = false
-L10_1 = {}
-L10_1.config_id = 94009
-L10_1.gadget_id = 70710266
-L11_1 = {}
-L11_1.x = 1723.313
-L11_1.y = 293.442
-L11_1.z = 501.594
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L10_1.area_id = 5
-L10_1.is_enable_interact = false
-L11_1 = {}
-L11_1.config_id = 94010
-L11_1.gadget_id = 70710266
-L12_1 = {}
-L12_1.x = 1790.043
-L12_1.y = 279.603
-L12_1.z = 694.659
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L11_1.area_id = 5
-L11_1.is_enable_interact = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 94001
-L5_1 = 94002
-L6_1 = 94003
-L7_1 = 94004
-L8_1 = 94005
-L9_1 = 94006
-L10_1 = 94007
-L11_1 = 94008
-L12_1 = 94009
-L13_1 = 94010
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L2_1.ban_refresh = true
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133102094
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 94001, gadget_id = 70710266, pos = { x = 1790.454, y = 304.905, z = 596.300 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5, is_enable_interact = false },
+	{ config_id = 94002, gadget_id = 70710266, pos = { x = 1812.138, y = 290.617, z = 606.851 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5, is_enable_interact = false },
+	{ config_id = 94003, gadget_id = 70710266, pos = { x = 1784.343, y = 287.525, z = 666.703 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5, is_enable_interact = false },
+	{ config_id = 94004, gadget_id = 70710266, pos = { x = 1757.453, y = 296.476, z = 685.120 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5, is_enable_interact = false },
+	{ config_id = 94005, gadget_id = 70710266, pos = { x = 1670.738, y = 296.210, z = 698.430 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5, is_enable_interact = false },
+	{ config_id = 94006, gadget_id = 70710266, pos = { x = 1798.237, y = 323.836, z = 650.520 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5, is_enable_interact = false },
+	{ config_id = 94007, gadget_id = 70710266, pos = { x = 1793.129, y = 321.651, z = 537.090 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5, is_enable_interact = false },
+	{ config_id = 94008, gadget_id = 70710266, pos = { x = 1748.161, y = 267.227, z = 722.959 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5, is_enable_interact = false },
+	{ config_id = 94009, gadget_id = 70710266, pos = { x = 1723.313, y = 293.442, z = 501.594 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5, is_enable_interact = false },
+	{ config_id = 94010, gadget_id = 70710266, pos = { x = 1790.043, y = 279.603, z = 694.659 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 5, is_enable_interact = false }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 94001, 94002, 94003, 94004, 94005, 94006, 94007, 94008, 94009, 94010 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

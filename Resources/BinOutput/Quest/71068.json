@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 2350240431,
-  "descTextMapHash": 0,
+  
   "id": 71068,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            6216402,
-            0
-          ],
+          "param": [6216402, 0],
           "count": 0
         }
       ],
@@ -67,9 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "7106801"
-          ]
+          "param": ["7106801"]
         }
       ],
       "failExec": [],

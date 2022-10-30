@@ -1,647 +1,266 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 155005030
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 30001
-L2_1.gadget_id = 70290234
-L3_1 = {}
-L3_1.x = 269.504
-L3_1.y = 347.5
-L3_1.z = 212.45
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 66.529
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 36
-L2_1.route_id = 500500013
-L2_1.start_route = false
-L2_1.area_id = 200
-L3_1 = {}
-L3_1.config_id = 30006
-L3_1.gadget_id = 70360001
-L4_1 = {}
-L4_1.x = 269.482
-L4_1.y = 348.54
-L4_1.z = 212.401
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.area_id = 200
-L4_1 = {}
-L4_1.config_id = 30008
-L4_1.gadget_id = 70290302
-L5_1 = {}
-L5_1.x = 269.504
-L5_1.y = 224.271
-L5_1.z = 212.45
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 66.529
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.area_id = 200
-L5_1 = {}
-L5_1.config_id = 30012
-L5_1.gadget_id = 70360340
-L6_1 = {}
-L6_1.x = 269.49
-L6_1.y = 226.96
-L6_1.z = 212.46
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 6.419
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 36
-L5_1.area_id = 200
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 30003
-L3_1 = RegionShape
-L3_1 = L3_1.CUBIC
-L2_1.shape = L3_1
-L3_1 = {}
-L3_1.x = 65.0
-L3_1.y = 5.0
-L3_1.z = 65.0
-L2_1.size = L3_1
-L3_1 = {}
-L3_1.x = 268.099
-L3_1.y = 225.443
-L3_1.z = 212.462
-L2_1.pos = L3_1
-L2_1.area_id = 200
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1030002
-L2_1.name = "QUEST_START_30002"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_QUEST_START
-L2_1.event = L3_1
-L2_1.source = "7217732"
-L2_1.condition = ""
-L2_1.action = "action_EVENT_QUEST_START_30002"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1030003
-L3_1.name = "ENTER_REGION_30003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_ENTER_REGION_30003"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1030004
-L4_1.name = "QUEST_FINISH_30004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_QUEST_FINISH
-L4_1.event = L5_1
-L4_1.source = "7217741"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_QUEST_FINISH_30004"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1030005
-L5_1.name = "SELECT_OPTION_30005"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_SELECT_OPTION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_SELECT_OPTION_30005"
-L5_1.action = "action_EVENT_SELECT_OPTION_30005"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1030007
-L6_1.name = "QUEST_START_30007"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_QUEST_START
-L6_1.event = L7_1
-L6_1.source = "7217747"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_QUEST_START_30007"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1030009
-L7_1.name = "TIME_AXIS_PASS_30009"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_TIME_AXIS_PASS
-L7_1.event = L8_1
-L7_1.source = "wait"
-L7_1.condition = ""
-L7_1.action = "action_EVENT_TIME_AXIS_PASS_30009"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1030010
-L8_1.name = "GADGET_CREATE_30010"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_GADGET_CREATE
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_GADGET_CREATE_30010"
-L8_1.action = "action_EVENT_GADGET_CREATE_30010"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1030011
-L9_1.name = "QUEST_START_30011"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_QUEST_START
-L9_1.event = L10_1
-L9_1.source = "7217734"
-L9_1.condition = ""
-L9_1.action = "action_EVENT_QUEST_START_30011"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1030013
-L10_1.name = "QUEST_START_30013"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_QUEST_START
-L10_1.event = L11_1
-L10_1.source = "7217740"
-L10_1.condition = ""
-L10_1.action = "action_EVENT_QUEST_START_30013"
-L10_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.io_type = 1
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 30001
-L4_1.state = 0
-L5_1 = {}
-L5_1.point_id = 0
-L5_1.move_type = 1
-L5_1.route_id = 500500013
-L5_1.route_index = 0
-L5_1.is_started = false
-L4_1.platform_info = L5_1
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_FINISH_30004"
-L5_1 = "QUEST_START_30007"
-L6_1 = "QUEST_START_30013"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L2_1.variables = L3_1
-L1_1[1] = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 30001
-L4_1.state = 201
-L5_1 = {}
-L5_1.point_id = 0
-L5_1.move_type = 1
-L5_1.route_id = 500500013
-L5_1.route_index = 0
-L5_1.is_started = false
-L4_1.platform_info = L5_1
-L5_1 = {}
-L5_1.config_id = 30006
-L5_1.state = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_START_30002"
-L5_1 = "SELECT_OPTION_30005"
-L6_1 = "GADGET_CREATE_30010"
-L7_1 = "QUEST_START_30013"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L2_1.variables = L3_1
-L1_1[2] = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 30001
-L4_1.state = 101
-L5_1 = {}
-L5_1.point_id = 0
-L5_1.move_type = 1
-L5_1.route_id = 500500013
-L5_1.route_index = 0
-L5_1.is_started = true
-L4_1.platform_info = L5_1
-L5_1 = {}
-L5_1.config_id = 30012
-L5_1.state = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 30003
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_30003"
-L5_1 = "TIME_AXIS_PASS_30009"
-L6_1 = "QUEST_START_30011"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L2_1.variables = L3_1
-L1_1[3] = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 30008
-L4_1.state = 0
-L5_1 = {}
-L5_1.point_id = 0
-L5_1.move_type = 1
-L5_1.route_id = 0
-L5_1.route_index = 0
-L5_1.is_started = false
-L4_1.platform_info = L5_1
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "TIME_AXIS_PASS_30009"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L3_1 = {}
-L2_1.npcs = L3_1
-L3_1 = {}
-L2_1.variables = L3_1
-L1_1[4] = L2_1
-suite_disk = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 30001
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_FINISH_30004"
-L5_1 = "QUEST_START_30007"
-L6_1 = "QUEST_START_30013"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 30001
-L6_1 = 30006
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "QUEST_START_30002"
-L6_1 = "SELECT_OPTION_30005"
-L7_1 = "GADGET_CREATE_30010"
-L8_1 = "QUEST_START_30013"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 30001
-L7_1 = 30012
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L6_1 = 30003
-L5_1[1] = L6_1
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "ENTER_REGION_30003"
-L7_1 = "TIME_AXIS_PASS_30009"
-L8_1 = "QUEST_START_30011"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 30008
-L6_1[1] = L7_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "TIME_AXIS_PASS_30009"
-L6_1[1] = L7_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToFlowSuite
-  L3_2 = A0_2
-  L4_2 = 155005030
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 155005030
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 30001, gadget_id = 70290234, pos = { x = 269.504, y = 347.500, z = 212.450 }, rot = { x = 0.000, y = 66.529, z = 0.000 }, level = 36, route_id = 500500013, start_route = false, area_id = 200 },
+	{ config_id = 30006, gadget_id = 70360001, pos = { x = 269.482, y = 348.540, z = 212.401 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 200 },
+	{ config_id = 30008, gadget_id = 70290302, pos = { x = 269.504, y = 224.271, z = 212.450 }, rot = { x = 0.000, y = 66.529, z = 0.000 }, level = 36, area_id = 200 },
+	{ config_id = 30012, gadget_id = 70360340, pos = { x = 269.490, y = 226.960, z = 212.460 }, rot = { x = 0.000, y = 6.419, z = 0.000 }, level = 36, area_id = 200 }
+}
+
+-- 区域
+regions = {
+	-- 到达Boss平台底部
+	{ config_id = 30003, shape = RegionShape.CUBIC, size = { x = 65.000, y = 5.000, z = 65.000 }, pos = { x = 268.099, y = 225.443, z = 212.462 }, area_id = 200 }
+}
+
+-- 触发器
+triggers = {
+	-- 7217732[48] Start 跳转
+	{ config_id = 1030002, name = "QUEST_START_30002", event = EventType.EVENT_QUEST_START, source = "7217732", condition = "", action = "action_EVENT_QUEST_START_30002", trigger_count = 0 },
+	-- 到达Boss平台底部
+	{ config_id = 1030003, name = "ENTER_REGION_30003", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "action_EVENT_ENTER_REGION_30003", trigger_count = 0 },
+	-- 7217741[39] Start 跳转
+	{ config_id = 1030004, name = "QUEST_FINISH_30004", event = EventType.EVENT_QUEST_FINISH, source = "7217741", condition = "", action = "action_EVENT_QUEST_FINISH_30004", trigger_count = 0 },
+	-- 开启大门
+	{ config_id = 1030005, name = "SELECT_OPTION_30005", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_30005", action = "action_EVENT_SELECT_OPTION_30005", trigger_count = 0 },
+	-- 7217747[40] Start 跳转
+	{ config_id = 1030007, name = "QUEST_START_30007", event = EventType.EVENT_QUEST_START, source = "7217747", condition = "", action = "action_EVENT_QUEST_START_30007", trigger_count = 0 },
+	-- 到达底部等3秒,完成7217732
+	{ config_id = 1030009, name = "TIME_AXIS_PASS_30009", event = EventType.EVENT_TIME_AXIS_PASS, source = "wait", condition = "", action = "action_EVENT_TIME_AXIS_PASS_30009", trigger_count = 0 },
+	-- 上Option
+	{ config_id = 1030010, name = "GADGET_CREATE_30010", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_30010", action = "action_EVENT_GADGET_CREATE_30010", trigger_count = 0 },
+	{ config_id = 1030011, name = "QUEST_START_30011", event = EventType.EVENT_QUEST_START, source = "7217734", condition = "", action = "action_EVENT_QUEST_START_30011", trigger_count = 0 },
+	-- 回滚Suite1
+	{ config_id = 1030013, name = "QUEST_START_30013", event = EventType.EVENT_QUEST_START, source = "7217740", condition = "", action = "action_EVENT_QUEST_START_30013", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	io_type = 1,
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suite_disk = {
+	[1] = {
+		gadgets = {
+			{ config_id = 30001, state = 0, platform_info = { point_id = 0, move_type = 1, route_id = 500500013, route_index = 0, is_started = false } }
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { "QUEST_FINISH_30004", "QUEST_START_30007", "QUEST_START_30013" },
+		npcs = { },
+		variables = {
+		}
+	},
+	[2] = {
+		gadgets = {
+			{ config_id = 30001, state = 201, platform_info = { point_id = 0, move_type = 1, route_id = 500500013, route_index = 0, is_started = false } },
+			{ config_id = 30006, state = 0 }
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { "QUEST_START_30002", "SELECT_OPTION_30005", "GADGET_CREATE_30010", "QUEST_START_30013" },
+		npcs = { },
+		variables = {
+		}
+	},
+	[3] = {
+		gadgets = {
+			{ config_id = 30001, state = 101, platform_info = { point_id = 0, move_type = 1, route_id = 500500013, route_index = 0, is_started = true } },
+			{ config_id = 30012, state = 0 }
+		},
+		monsters = {
+		},
+		regions = { 30003 },
+		triggers = { "ENTER_REGION_30003", "TIME_AXIS_PASS_30009", "QUEST_START_30011" },
+		npcs = { },
+		variables = {
+		}
+	},
+	[4] = {
+		gadgets = {
+			{ config_id = 30008, state = 0 }
+		},
+		monsters = {
+		},
+		regions = { },
+		triggers = { "TIME_AXIS_PASS_30009" },
+		npcs = { },
+		variables = {
+		}
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_START_30002(context, evt)
+		-- 将指定flowGroup的进度和要素属性都改为目标suite（缺的创建，多的移除）
+	  ScriptLib.GoToFlowSuite(context, 155005030, 3)
+	
+	return 0
 end
-action_EVENT_QUEST_START_30002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 30012
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.InitTimeAxis
-  L3_2 = A0_2
-  L4_2 = "wait"
-  L5_2 = {}
-  L6_2 = 1
-  L5_2[1] = L6_2
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_30003(context, evt)
+	-- 将configid为 30012 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 30012, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 创建标识为"wait"，时间节点为{1}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "wait", {1}, false)
+	
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_30003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToFlowSuite
-  L3_2 = A0_2
-  L4_2 = 155005030
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_30004(context, evt)
+		-- 将指定flowGroup的进度和要素属性都改为目标suite（缺的创建，多的移除）
+	  ScriptLib.GoToFlowSuite(context, 155005030, 2)
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_30004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 30006 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 7 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_30005(context, evt)
+	-- 判断是gadgetid 30006 option_id 7
+	if 30006 ~= evt.param1 then
+		return false	
+	end
+	
+	if 7 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_30005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "72177_OpenHell"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 155005030
-  L5_2 = 30006
-  L6_2 = 7
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 30001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_30005(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "72177_OpenHell") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 删除指定group： 155005030 ；指定config：30006；物件身上指定option：7；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 155005030, 30006, 7) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 30001) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_30005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToFlowSuite
-  L3_2 = A0_2
-  L4_2 = 155005030
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_30007(context, evt)
+		-- 将指定flowGroup的进度和要素属性都改为目标suite（缺的创建，多的移除）
+	  ScriptLib.GoToFlowSuite(context, 155005030, 2)
+	
+	return 0
 end
-action_EVENT_QUEST_START_30007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "72177_SearchHell"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_30009(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "72177_SearchHell") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_30009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 30006 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_30010(context, evt)
+	if 30006 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_30010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 155005030
-  L5_2 = 30006
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_30010(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 155005030, 30006, {7}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_30010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToFlowSuite
-  L3_2 = A0_2
-  L4_2 = 155005030
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_30011(context, evt)
+		-- 将指定flowGroup的进度和要素属性都改为目标suite（缺的创建，多的移除）
+	  ScriptLib.GoToFlowSuite(context, 155005030, 4)
+	
+	return 0
 end
-action_EVENT_QUEST_START_30011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToFlowSuite
-  L3_2 = A0_2
-  L4_2 = 155005030
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 155005030
-  L5_2 = 30006
-  L6_2 = 7
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_30013(context, evt)
+		-- 将指定flowGroup的进度和要素属性都改为目标suite（缺的创建，多的移除）
+	  ScriptLib.GoToFlowSuite(context, 155005030, 1)
+	
+	-- 删除指定group： 155005030 ；指定config：30006；物件身上指定option：7；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 155005030, 30006, 7) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_30013 = L1_1

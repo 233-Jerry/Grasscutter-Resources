@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 1424662343,
-  "descTextMapHash": 0,
+  
   "id": 73094,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -58,11 +58,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_MODIFY_ARANARA_COLLECTION_STATE",
-          "param": [
-            "1",
-            "5",
-            "1"
-          ]
+          "param": ["1", "5", "1"]
         }
       ],
       "failExec": [],
@@ -84,18 +80,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [
-            133301169,
-            169002
-          ],
+          "param": [133301169, 169002],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [
-            133301169,
-            169001
-          ],
+          "param": [133301169, 169001],
           "count": 0
         }
       ],
@@ -120,18 +110,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_MODIFY_ARANARA_COLLECTION_STATE",
-          "param": [
-            "1",
-            "5",
-            "3"
-          ]
+          "param": ["1", "5", "3"]
         },
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133301169",
-            "1"
-          ]
+          "param": ["133301169", "1"]
         }
       ],
       "failExec": [],

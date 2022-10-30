@@ -1,172 +1,95 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133222240
-L1_1 = {}
-L2_1 = {}
-L3_1 = 240003
-L4_1 = 1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1[240001] = L2_1
-L2_1 = {}
-L3_1 = 240001
-L4_1 = 1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1[240002] = L2_1
-L2_1 = {}
-L3_1 = 240002
-L4_1 = 1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1[240003] = L2_1
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "Finish"
-L3_1.value = 0
-L3_1.no_refresh = true
-L2_1[1] = L3_1
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 240001
-L4_1.gadget_id = 70360180
-L5_1 = {}
-L5_1.x = -5058.063
-L5_1.y = 197.68
-L5_1.z = -3781.31
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 350.832
-L5_1.y = 50.961
-L5_1.z = 357.164
-L4_1.rot = L5_1
-L4_1.level = 30
-L5_1 = GadgetState
-L5_1 = L5_1.GearAction1
-L4_1.state = L5_1
-L4_1.persistent = true
-L4_1.area_id = 14
-L5_1 = {}
-L5_1.config_id = 240002
-L5_1.gadget_id = 70360180
-L6_1 = {}
-L6_1.x = -5051.83
-L6_1.y = 197.864
-L6_1.z = -3783.473
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 349.38
-L6_1.y = 0.085
-L6_1.z = 359.984
-L5_1.rot = L6_1
-L5_1.level = 30
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L5_1.persistent = true
-L5_1.area_id = 14
-L6_1 = {}
-L6_1.config_id = 240003
-L6_1.gadget_id = 70360180
-L7_1 = {}
-L7_1.x = -5059.843
-L7_1.y = 197.881
-L7_1.z = -3774.308
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 347.816
-L7_1.y = 126.779
-L7_1.z = 349.971
-L6_1.rot = L7_1
-L6_1.level = 30
-L6_1.persistent = true
-L6_1.area_id = 14
-L7_1 = {}
-L7_1.config_id = 240004
-L7_1.gadget_id = 70211102
-L8_1 = {}
-L8_1.x = -5053.843
-L8_1.y = 201.079
-L8_1.z = -3777.447
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 11.224
-L8_1.y = 82.307
-L8_1.z = 4.354
-L7_1.rot = L8_1
-L7_1.level = 26
-L7_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\231\168\187\229\166\187"
-L8_1 = GadgetState
-L8_1 = L8_1.ChestLocked
-L7_1.state = L8_1
-L7_1.isOneoff = true
-L7_1.persistent = true
-L8_1 = {}
-L8_1.name = "chest"
-L8_1.exp = 1
-L7_1.explore = L8_1
-L7_1.area_id = 14
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 1240005
-L4_1.name = "GADGET_STATE_CHANGE_240005"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_240005"
-L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_240005"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1240006
-L5_1.name = "GROUP_LOAD_240006"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GROUP_LOAD
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_GROUP_LOAD_240006"
-L5_1.action = "action_EVENT_GROUP_LOAD_240006"
-L5_1.trigger_count = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-L2_1 = require
-L3_1 = "V2_1/PirateHelm"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133222240
+}
+
+-- DEFS_MISCS
+local connection = {
+	[240001] = {240003,1},
+	[240002] = {240001,1},
+	[240003] = {240002,1},
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Finish", value = 0, no_refresh = true }
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 240001, gadget_id = 70360180, pos = { x = -5058.063, y = 197.680, z = -3781.310 }, rot = { x = 350.832, y = 50.961, z = 357.164 }, level = 30, state = GadgetState.GearAction1, persistent = true, area_id = 14 },
+		{ config_id = 240002, gadget_id = 70360180, pos = { x = -5051.830, y = 197.864, z = -3783.473 }, rot = { x = 349.380, y = 0.085, z = 359.984 }, level = 30, state = GadgetState.GearStart, persistent = true, area_id = 14 },
+		{ config_id = 240003, gadget_id = 70360180, pos = { x = -5059.843, y = 197.881, z = -3774.308 }, rot = { x = 347.816, y = 126.779, z = 349.971 }, level = 30, persistent = true, area_id = 14 },
+		{ config_id = 240004, gadget_id = 70211102, pos = { x = -5053.843, y = 201.079, z = -3777.447 }, rot = { x = 11.224, y = 82.307, z = 4.354 }, level = 26, drop_tag = "解谜低级稻妻", state = GadgetState.ChestLocked, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 14 }
+	},
+	triggers = {
+		{ config_id = 1240005, name = "GADGET_STATE_CHANGE_240005", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_240005", action = "action_EVENT_GADGET_STATE_CHANGE_240005", trigger_count = 0 },
+		{ config_id = 1240006, name = "GROUP_LOAD_240006", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_240006", action = "action_EVENT_GROUP_LOAD_240006", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_1/PirateHelm"

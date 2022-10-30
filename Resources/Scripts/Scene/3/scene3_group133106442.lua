@@ -1,200 +1,142 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133106442
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 442001
-L2_1.gadget_id = 70290395
-L3_1 = {}
-L3_1.x = -471.918
-L3_1.y = 135.504
-L3_1.z = 1878.792
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 139.265
-L3_1.z = 348.918
-L2_1.rot = L3_1
-L2_1.level = 36
-L2_1.area_id = 19
-L3_1 = {}
-L3_1.config_id = 442002
-L3_1.gadget_id = 70290323
-L4_1 = {}
-L4_1.x = -469.274
-L4_1.y = 139.577
-L4_1.z = 1882.608
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 356.003
-L4_1.y = 359.056
-L4_1.z = 26.567
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.persistent = true
-L3_1.area_id = 19
-L4_1 = {}
-L4_1.config_id = 442003
-L4_1.gadget_id = 70290324
-L5_1 = {}
-L5_1.x = -471.731
-L5_1.y = 138.49
-L5_1.z = 1882.718
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 349.853
-L5_1.y = 358.447
-L5_1.z = 2.025
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.persistent = true
-L4_1.area_id = 19
-L5_1 = {}
-L5_1.config_id = 442004
-L5_1.gadget_id = 70690013
-L6_1 = {}
-L6_1.x = -478.183
-L6_1.y = 127.279
-L6_1.z = 1911.605
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 36
-L5_1.area_id = 19
-L6_1 = {}
-L6_1.config_id = 442006
-L6_1.gadget_id = 70290200
-L7_1 = {}
-L7_1.x = -478.408
-L7_1.y = 145.299
-L7_1.z = 1910.346
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 36
-L6_1.area_id = 19
-L7_1 = {}
-L7_1.config_id = 442009
-L7_1.gadget_id = 70211131
-L8_1 = {}
-L8_1.x = -470.389
-L8_1.y = 139.142
-L8_1.z = 1883.232
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 353.324
-L8_1.y = 358.788
-L8_1.z = 20.557
-L7_1.rot = L8_1
-L7_1.level = 26
-L7_1.drop_tag = "\232\167\163\232\176\156\232\182\133\231\186\167\231\146\131\230\156\136"
-L7_1.isOneoff = true
-L7_1.persistent = true
-L8_1 = {}
-L8_1.name = "chest"
-L8_1.exp = 1
-L7_1.explore = L8_1
-L7_1.area_id = 19
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 442005
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 8
-L3_1 = {}
-L3_1.x = -479.435
-L3_1.y = 146.257
-L3_1.z = 1911.423
-L2_1.pos = L3_1
-L2_1.area_id = 19
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1442005
-L2_1.name = "ENTER_REGION_442005"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_ENTER_REGION_442005"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 442001
-L5_1 = 442004
-L6_1 = 442006
-L7_1 = 442009
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 442005
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_442005"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 442002
-L6_1 = 442003
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133106442
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133106442
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 442001, gadget_id = 70290395, pos = { x = -471.918, y = 135.504, z = 1878.792 }, rot = { x = 0.000, y = 139.265, z = 348.918 }, level = 36, area_id = 19 },
+	{ config_id = 442002, gadget_id = 70290323, pos = { x = -469.274, y = 139.577, z = 1882.608 }, rot = { x = 356.003, y = 359.056, z = 26.567 }, level = 36, persistent = true, area_id = 19 },
+	{ config_id = 442003, gadget_id = 70290324, pos = { x = -471.731, y = 138.490, z = 1882.718 }, rot = { x = 349.853, y = 358.447, z = 2.025 }, level = 36, persistent = true, area_id = 19 },
+	{ config_id = 442004, gadget_id = 70690013, pos = { x = -478.183, y = 127.279, z = 1911.605 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 19 },
+	{ config_id = 442006, gadget_id = 70290200, pos = { x = -478.408, y = 145.299, z = 1910.346 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 19 },
+	{ config_id = 442009, gadget_id = 70211131, pos = { x = -470.389, y = 139.142, z = 1883.232 }, rot = { x = 353.324, y = 358.788, z = 20.557 }, level = 26, drop_tag = "解谜超级璃月", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 19 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 442005, shape = RegionShape.SPHERE, radius = 8, pos = { x = -479.435, y = 146.257, z = 1911.423 }, area_id = 19 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1442005, name = "ENTER_REGION_442005", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "action_EVENT_ENTER_REGION_442005" },
+	-- 2.7加的专属保底trigger，如果group Load时检测物件剩余3个（应该只有可能是风场、喷气岩和坍塌墙壁），那就强制杀一下墙壁
+	{ config_id = 1442007, name = "GROUP_LOAD_442007", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_442007", action = "action_EVENT_GROUP_LOAD_442007", trigger_count = 0 },
+	{ config_id = 1442008, name = "ANY_GADGET_DIE_442008", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_442008", action = "action_EVENT_ANY_GADGET_DIE_442008", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 442001, 442004, 442006, 442009 },
+		regions = { 442005 },
+		triggers = { "ENTER_REGION_442005", "GROUP_LOAD_442007" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 442002, 442003 },
+		regions = { },
+		triggers = { "ANY_GADGET_DIE_442008" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_442005(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133106442, 2)
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_442005 = L1_1
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_442007(context, evt)
+	-- 判断指定group组剩余gadget数量是否是3 
+	if ScriptLib.CheckRemainGadgetCountByGroupId(context, {group_id = 133106442}) ~= 3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_442007(context, evt)
+		-- 永久关闭CongfigId的Gadget，需要和Groups的RefreshWithBlock标签搭配
+		if 0 ~= ScriptLib.KillEntityByConfigId(context, { config_id = 442001 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_entity_by_configId")
+		    return -1
+		end
+		
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_ANY_GADGET_DIE_442008(context, evt)
+	if 442003 ~= evt.param1 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_442008(context, evt)
+		-- 永久关闭CongfigId的Gadget，需要和Groups的RefreshWithBlock标签搭配
+		if 0 ~= ScriptLib.KillEntityByConfigId(context, { config_id = 442001 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_entity_by_configId")
+		    return -1
+		end
+		
+	
+	return 0
+end

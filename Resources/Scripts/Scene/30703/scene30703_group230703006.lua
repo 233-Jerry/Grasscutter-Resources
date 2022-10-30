@@ -1,524 +1,198 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1
-L0_1 = {}
-L0_1.group_id = 230703006
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 6001
-L2_1.monster_id = 21010201
-L3_1 = {}
-L3_1.x = 3.73
-L3_1.y = 0.057
-L3_1.z = -10.694
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 6002
-L3_1.monster_id = 21010201
-L4_1 = {}
-L4_1.x = -3.433
-L4_1.y = 0.003
-L4_1.z = -10.811
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 6003
-L4_1.monster_id = 20011101
-L5_1 = {}
-L5_1.x = -8.63
-L5_1.y = 0.355
-L5_1.z = -5.913
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 51.5
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 6004
-L5_1.monster_id = 20011101
-L6_1 = {}
-L6_1.x = 7.108
-L6_1.y = 0.355
-L6_1.z = -6.654
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 316.5
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 6005
-L6_1.monster_id = 21011001
-L7_1 = {}
-L7_1.x = 10.936
-L7_1.y = -0.038
-L7_1.z = 1.127
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 270.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.pose_id = 32
-L7_1 = {}
-L7_1.config_id = 6006
-L7_1.monster_id = 21011001
-L8_1 = {}
-L8_1.x = -10.71
-L8_1.y = 0.011
-L8_1.z = -3.621
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 90.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.pose_id = 32
-L8_1 = {}
-L8_1.config_id = 6007
-L8_1.monster_id = 21010201
-L9_1 = {}
-L9_1.x = 3.716
-L9_1.y = 0.001
-L9_1.z = 8.601
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 180.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = {}
-L9_1.config_id = 6008
-L9_1.monster_id = 21010201
-L10_1 = {}
-L10_1.x = -3.544
-L10_1.y = -0.023
-L10_1.z = 8.542
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 180.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L10_1 = {}
-L10_1.config_id = 6011
-L10_1.monster_id = 20011101
-L11_1 = {}
-L11_1.x = 7.486
-L11_1.y = -0.035
-L11_1.z = 6.792
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 181.949
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L11_1 = {}
-L11_1.config_id = 6012
-L11_1.monster_id = 20011101
-L12_1 = {}
-L12_1.x = -7.233
-L12_1.y = -0.071
-L12_1.z = 6.815
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 149.804
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L12_1 = {}
-L12_1.config_id = 6013
-L12_1.monster_id = 21011001
-L13_1 = {}
-L13_1.x = 11.082
-L13_1.y = -0.038
-L13_1.z = -3.744
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 270.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 1
-L12_1.pose_id = 32
-L13_1 = {}
-L13_1.config_id = 6014
-L13_1.monster_id = 21011001
-L14_1 = {}
-L14_1.x = -10.732
-L14_1.y = 0.011
-L14_1.z = 1.371
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 90.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L13_1.pose_id = 32
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 6009
-L2_1.gadget_id = 70900205
-L3_1 = {}
-L3_1.x = 6.213
-L3_1.y = -1.104
-L3_1.z = 3.143
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1006010
-L2_1.name = "MONSTER_TIDE_DIE_6010"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_MONSTER_TIDE_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_MONSTER_TIDE_DIE_6010"
-L2_1.action = "action_EVENT_MONSTER_TIDE_DIE_6010"
-L3_1 = {}
-L3_1.config_id = 1006018
-L3_1.name = "ANY_MONSTER_LIVE_6018"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_MONSTER_LIVE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ANY_MONSTER_LIVE_6018"
-L3_1.action = "action_EVENT_ANY_MONSTER_LIVE_6018"
-L4_1 = {}
-L4_1.config_id = 1006021
-L4_1.name = "CHALLENGE_SUCCESS_6021"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_CHALLENGE_SUCCESS
-L4_1.event = L5_1
-L4_1.source = "1"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_CHALLENGE_SUCCESS_6021"
-L5_1 = {}
-L5_1.config_id = 1006022
-L5_1.name = "CHALLENGE_FAIL_6022"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_CHALLENGE_FAIL
-L5_1.event = L6_1
-L5_1.source = "1"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_CHALLENGE_FAIL_6022"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 6009
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "MONSTER_TIDE_DIE_6010"
-L5_1 = "ANY_MONSTER_LIVE_6018"
-L6_1 = "CHALLENGE_SUCCESS_6021"
-L7_1 = "CHALLENGE_FAIL_6022"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 16 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 230703006
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 6001, monster_id = 21010201, pos = { x = 3.730, y = 0.057, z = -10.694 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 6002, monster_id = 21010201, pos = { x = -3.433, y = 0.003, z = -10.811 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 6003, monster_id = 20011101, pos = { x = -8.630, y = 0.355, z = -5.913 }, rot = { x = 0.000, y = 51.500, z = 0.000 }, level = 1 },
+	{ config_id = 6004, monster_id = 20011101, pos = { x = 7.108, y = 0.355, z = -6.654 }, rot = { x = 0.000, y = 316.500, z = 0.000 }, level = 1 },
+	{ config_id = 6005, monster_id = 21011001, pos = { x = 10.936, y = -0.038, z = 1.127 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 1, pose_id = 32 },
+	{ config_id = 6006, monster_id = 21011001, pos = { x = -10.710, y = 0.011, z = -3.621 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1, pose_id = 32 },
+	{ config_id = 6007, monster_id = 21010201, pos = { x = 3.716, y = 0.001, z = 8.601 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1 },
+	{ config_id = 6008, monster_id = 21010201, pos = { x = -3.544, y = -0.023, z = 8.542 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1 },
+	{ config_id = 6011, monster_id = 20011101, pos = { x = 7.486, y = -0.035, z = 6.792 }, rot = { x = 0.000, y = 181.949, z = 0.000 }, level = 1 },
+	{ config_id = 6012, monster_id = 20011101, pos = { x = -7.233, y = -0.071, z = 6.815 }, rot = { x = 0.000, y = 149.804, z = 0.000 }, level = 1 },
+	{ config_id = 6013, monster_id = 21011001, pos = { x = 11.082, y = -0.038, z = -3.744 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 1, pose_id = 32 },
+	{ config_id = 6014, monster_id = 21011001, pos = { x = -10.732, y = 0.011, z = 1.371 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1, pose_id = 32 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 6009, gadget_id = 70900205, pos = { x = 6.213, y = -1.104, z = 3.143 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1006010, name = "MONSTER_TIDE_DIE_6010", event = EventType.EVENT_MONSTER_TIDE_DIE, source = "", condition = "condition_EVENT_MONSTER_TIDE_DIE_6010", action = "action_EVENT_MONSTER_TIDE_DIE_6010" },
+	{ config_id = 1006018, name = "ANY_MONSTER_LIVE_6018", event = EventType.EVENT_ANY_MONSTER_LIVE, source = "", condition = "condition_EVENT_ANY_MONSTER_LIVE_6018", action = "action_EVENT_ANY_MONSTER_LIVE_6018" },
+	{ config_id = 1006021, name = "CHALLENGE_SUCCESS_6021", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "1", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_6021" },
+	{ config_id = 1006022, name = "CHALLENGE_FAIL_6022", event = EventType.EVENT_CHALLENGE_FAIL, source = "1", condition = "", action = "action_EVENT_CHALLENGE_FAIL_6022" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 6009 },
+		regions = { },
+		triggers = { "MONSTER_TIDE_DIE_6010", "ANY_MONSTER_LIVE_6018", "CHALLENGE_SUCCESS_6021", "CHALLENGE_FAIL_6022" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_MONSTER_TIDE_DIE_6010(context, evt)
+	if 16~= evt.param1 then
+		return false	
+	end
+	
+	return true
 end
-condition_EVENT_MONSTER_TIDE_DIE_6010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonster
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 6008
-  L4_2.delay_time = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_monster"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_MONSTER_TIDE_DIE_6010(context, evt)
+	-- 延迟1秒刷怪
+	if 0 ~= ScriptLib.CreateMonster(context, { config_id = 6008, delay_time = 1 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_monster")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_MONSTER_TIDE_DIE_6010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 6001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_LIVE_6018(context, evt)
+	if 6001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_LIVE_6018 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ActiveChallenge
-  L3_2 = A0_2
-  L4_2 = 1
-  L5_2 = 197
-  L6_2 = 600
-  L7_2 = 230703006
-  L8_2 = 26
-  L9_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_challenge"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_LIVE_6018(context, evt)
+	-- 创建编号为1（该挑战的识别id),挑战内容为197的区域挑战，具体参数填写方式，见DungeonChallengeData表中的注释，所有填写的值都必须是int类型
+	if 0 ~= ScriptLib.ActiveChallenge(context, 1, 197, 600, 230703006, 26, 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_challenge")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_LIVE_6018 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "TPL_TIME"
-  L5_2 = A1_2.param2
-  L6_2 = 230703004
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : save_challenge_remainTime"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "stage"
-  L5_2 = 1
-  L6_2 = 230703004
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.TowerMirrorTeamSetUp
-  L3_2 = A0_2
-  L4_2 = 2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : tower_team_setup"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 230703005
-  L5_2 = 5001
-  L6_2 = GadgetState
-  L6_2 = L6_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 230703005
-  L5_2 = 5001
-  L6_2 = {}
-  L7_2 = 176
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 230703004
-  L5_2 = 4001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 230703008
-  L5_2 = 8001
-  L6_2 = GadgetState
-  L6_2 = L6_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 230703008
-  L5_2 = 8002
-  L6_2 = GadgetState
-  L6_2 = L6_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_6021(context, evt)
+	-- 将剩余时间记录在触发此challenge的group变量TPL_TIME中
+	    if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "TPL_TIME", evt.param2, 230703004) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : save_challenge_remainTime")
+	      return -1
+	    end
+	
+	-- 将本组内变量名为 "stage" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "stage", 1, 230703004) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 爬塔更换队伍2
+	if 0 ~= ScriptLib.TowerMirrorTeamSetUp(context, 2) then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : tower_team_setup")
+		return -1
+	end
+	
+	-- 改变指定group组230703005中， configid为5001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 230703005, 5001, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 230703005, 5001, {176}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	-- 改变指定group组230703004中， configid为4001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 230703004, 4001, GadgetState.GearStart) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组230703008中， configid为8001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 230703008, 8001, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 改变指定group组230703008中， configid为8002的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 230703008, 8002, GadgetState.Default) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_6021 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230703006
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CauseDungeonFail
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cause_dungeonfail"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_6022(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230703006, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 地城失败结算
+	if 0 ~= ScriptLib.CauseDungeonFail(context) then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cause_dungeonfail")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_6022 = L1_1

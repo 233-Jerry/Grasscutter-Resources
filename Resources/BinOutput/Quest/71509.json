@@ -12,9 +12,7 @@
   "_luaPath": "Actor/Quest/WQ71509",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    71505
-  ],
+  "PEOHODAKLNO": [71505],
   "FEHAEKNGFBP": false,
   "rewardIdList": [],
   "showType": "QUEST_SHOW",
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7150901,
-            0
-          ],
+          "param": [7150901, 0],
           "count": 0
         }
       ],
@@ -52,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q7150901_N30181"
-        ],
+        "param": ["Q7150901_N30181"],
         "guideScene": 6,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -84,10 +77,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7150901",
-            "2"
-          ]
+          "param": ["7150901", "2"]
         }
       ],
       "priority": 15,
@@ -96,9 +86,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 715090101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30181
-      ],
+      "npcIdRawNum": [30181],
       "GHNCIOJDIEA": "QuestDialogue/WQ/TheChasmChallenge/Q7150901",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

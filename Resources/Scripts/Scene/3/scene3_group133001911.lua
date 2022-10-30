@@ -1,124 +1,86 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133001911
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 911001
-L2_1.gadget_id = 70220014
-L3_1 = {}
-L3_1.x = 1480.633
-L3_1.y = 261.205
-L3_1.z = -1701.128
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 8.42
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 15
-L2_1.area_id = 2
-L3_1 = {}
-L3_1.config_id = 911002
-L3_1.gadget_id = 70220026
-L4_1 = {}
-L4_1.x = 1483.392
-L4_1.y = 262.3
-L4_1.z = -1704.317
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 9.58
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 15
-L3_1.area_id = 2
-L4_1 = {}
-L4_1.config_id = 911003
-L4_1.gadget_id = 70310001
-L5_1 = {}
-L5_1.x = 1488.461
-L5_1.y = 261.211
-L5_1.z = -1698.801
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 15
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.area_id = 2
-L5_1 = {}
-L5_1.config_id = 911004
-L5_1.gadget_id = 70310001
-L6_1 = {}
-L6_1.x = 1475.285
-L6_1.y = 263.842
-L6_1.z = -1710.96
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 15
-L6_1 = GadgetState
-L6_1 = L6_1.GearStart
-L5_1.state = L6_1
-L5_1.area_id = 2
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 2
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 911001
-L5_1 = 911002
-L6_1 = 911003
-L7_1 = 911004
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L2_1.ban_refresh = true
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L3_1.ban_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133001911
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 911001, gadget_id = 70220014, pos = { x = 1480.633, y = 261.205, z = -1701.128 }, rot = { x = 8.420, y = 0.000, z = 0.000 }, level = 15, area_id = 2 },
+	{ config_id = 911002, gadget_id = 70220026, pos = { x = 1483.392, y = 262.300, z = -1704.317 }, rot = { x = 9.580, y = 0.000, z = 0.000 }, level = 15, area_id = 2 },
+	{ config_id = 911003, gadget_id = 70310001, pos = { x = 1488.461, y = 261.211, z = -1698.801 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 15, state = GadgetState.GearStart, area_id = 2 },
+	{ config_id = 911004, gadget_id = 70310001, pos = { x = 1475.285, y = 263.842, z = -1710.960 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 15, state = GadgetState.GearStart, area_id = 2 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 2,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 911001, 911002, 911003, 911004 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

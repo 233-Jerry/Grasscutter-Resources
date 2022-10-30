@@ -1,156 +1,109 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133225176
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 176004
-L2_1.gadget_id = 70360001
-L3_1 = {}
-L3_1.x = -6132.0
-L3_1.y = 212.514
-L3_1.z = -3270.0
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 33
-L2_1.area_id = 18
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1176001
-L2_1.name = "QUEST_START_176001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_QUEST_START
-L2_1.event = L3_1
-L2_1.source = "7216630"
-L2_1.condition = ""
-L2_1.action = "action_EVENT_QUEST_START_176001"
-L3_1 = {}
-L3_1.config_id = 1176002
-L3_1.name = "QUEST_START_176002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_QUEST_START
-L3_1.event = L4_1
-L3_1.source = "7217219"
-L3_1.condition = ""
-L3_1.action = "action_EVENT_QUEST_START_176002"
-L4_1 = {}
-L4_1.config_id = 1176003
-L4_1.name = "QUEST_START_176003"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_QUEST_START
-L4_1.event = L5_1
-L4_1.source = "7217316"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_QUEST_START_176003"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "suiteByDay"
-L2_1.value = 1
-L2_1.no_refresh = true
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 176004
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "QUEST_START_176001"
-L5_1 = "QUEST_START_176002"
-L6_1 = "QUEST_START_176003"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "suiteByDay"
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133225176
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 176004, gadget_id = 70360001, pos = { x = -6132.000, y = 212.514, z = -3270.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, area_id = 18 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1176001, name = "QUEST_START_176001", event = EventType.EVENT_QUEST_START, source = "7216630", condition = "", action = "action_EVENT_QUEST_START_176001" },
+	{ config_id = 1176002, name = "QUEST_START_176002", event = EventType.EVENT_QUEST_START, source = "7217219", condition = "", action = "action_EVENT_QUEST_START_176002" },
+	{ config_id = 1176003, name = "QUEST_START_176003", event = EventType.EVENT_QUEST_START, source = "7217316", condition = "", action = "action_EVENT_QUEST_START_176003" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "suiteByDay", value = 1, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 176004 },
+		regions = { },
+		triggers = { "QUEST_START_176001", "QUEST_START_176002", "QUEST_START_176003" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_START_176001(context, evt)
+	-- 将本组内变量名为 "suiteByDay" 的变量设置为 2
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "suiteByDay", 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_176001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "suiteByDay"
-  L5_2 = 3
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_176002(context, evt)
+	-- 将本组内变量名为 "suiteByDay" 的变量设置为 3
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "suiteByDay", 3) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_176002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "suiteByDay"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_176003(context, evt)
+	-- 将本组内变量名为 "suiteByDay" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "suiteByDay", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_176003 = L1_1

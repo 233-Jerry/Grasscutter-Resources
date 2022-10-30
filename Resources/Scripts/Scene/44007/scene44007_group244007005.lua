@@ -1,409 +1,175 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 244007005
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 5009
-L2_1.gadget_id = 70900205
-L3_1 = {}
-L3_1.x = 6.422
-L3_1.y = -5.01
-L3_1.z = 0.504
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 5008
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 30
-L3_1 = {}
-L3_1.x = -0.015
-L3_1.y = -0.102
-L3_1.z = -2.926
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.config_id = 5011
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 30
-L4_1 = {}
-L4_1.x = 0.265
-L4_1.y = -0.083
-L4_1.z = -0.287
-L3_1.pos = L4_1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1005008
-L2_1.name = "ENTER_REGION_5008"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_5008"
-L2_1.action = "action_EVENT_ENTER_REGION_5008"
-L2_1.forbid_guest = false
-L3_1 = {}
-L3_1.config_id = 1005011
-L3_1.name = "ENTER_REGION_5011"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_5011"
-L3_1.action = "action_EVENT_ENTER_REGION_5011"
-L3_1.forbid_guest = false
-L4_1 = {}
-L4_1.config_id = 1005012
-L4_1.name = "TIMER_EVENT_5012"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_TIMER_EVENT
-L4_1.event = L5_1
-L4_1.source = "T5"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_TIMER_EVENT_5012"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 5001
-L3_1 = {}
-L3_1.x = -8.17
-L3_1.y = -0.102
-L3_1.z = -4.685
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.tag = 4
-L3_1 = {}
-L3_1.config_id = 5002
-L4_1 = {}
-L4_1.x = -7.313
-L4_1.y = -0.102
-L4_1.z = -1.091
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.tag = 4
-L4_1 = {}
-L4_1.config_id = 5003
-L5_1 = {}
-L5_1.x = -8.053
-L5_1.y = -0.102
-L5_1.z = 1.863
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.tag = 4
-L5_1 = {}
-L5_1.config_id = 5004
-L6_1 = {}
-L6_1.x = -12.662
-L6_1.y = -0.102
-L6_1.z = -4.019
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.tag = 4
-L6_1 = {}
-L6_1.config_id = 5005
-L7_1 = {}
-L7_1.x = -12.211
-L7_1.y = -0.102
-L7_1.z = -0.631
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.tag = 4
-L7_1 = {}
-L7_1.config_id = 5006
-L8_1 = {}
-L8_1.x = -12.775
-L8_1.y = -0.102
-L8_1.z = 2.684
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.tag = 4
-L8_1 = {}
-L8_1.config_id = 5007
-L9_1 = {}
-L9_1.x = -16.973
-L9_1.y = -0.102
-L9_1.z = -1.281
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.tag = 4
-L9_1 = {}
-L9_1.config_id = 5010
-L10_1 = {}
-L10_1.x = -5.115
-L10_1.y = -0.102
-L10_1.z = -8.58
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.tag = 8
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-points = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 5009
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 5009
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 5008
-L6_1 = 5011
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ENTER_REGION_5008"
-L6_1 = "ENTER_REGION_5011"
-L7_1 = "TIMER_EVENT_5012"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 5008 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "IS_BOSS_DEAD"
-  L5_2 = 244007001
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 244007005
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 5009, gadget_id = 70900205, pos = { x = 6.422, y = -5.010, z = 0.504 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 5008, shape = RegionShape.SPHERE, radius = 30, pos = { x = -0.015, y = -0.102, z = -2.926 } },
+	-- 额外多刷小怪
+	{ config_id = 5011, shape = RegionShape.SPHERE, radius = 30, pos = { x = 0.265, y = -0.083, z = -0.287 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1005008, name = "ENTER_REGION_5008", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_5008", action = "action_EVENT_ENTER_REGION_5008", forbid_guest = false },
+	-- 额外多刷小怪
+	{ config_id = 1005011, name = "ENTER_REGION_5011", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_5011", action = "action_EVENT_ENTER_REGION_5011", forbid_guest = false },
+	{ config_id = 1005012, name = "TIMER_EVENT_5012", event = EventType.EVENT_TIMER_EVENT, source = "T5", condition = "", action = "action_EVENT_TIMER_EVENT_5012" }
+}
+
+-- 点位
+points = {
+	{ config_id = 5001, pos = { x = -8.170, y = -0.102, z = -4.685 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 4 },
+	{ config_id = 5002, pos = { x = -7.313, y = -0.102, z = -1.091 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 4 },
+	{ config_id = 5003, pos = { x = -8.053, y = -0.102, z = 1.863 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 4 },
+	{ config_id = 5004, pos = { x = -12.662, y = -0.102, z = -4.019 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 4 },
+	{ config_id = 5005, pos = { x = -12.211, y = -0.102, z = -0.631 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 4 },
+	{ config_id = 5006, pos = { x = -12.775, y = -0.102, z = 2.684 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 4 },
+	{ config_id = 5007, pos = { x = -16.973, y = -0.102, z = -1.281 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 4 },
+	{ config_id = 5010, pos = { x = -5.115, y = -0.102, z = -8.580 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 8 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 5009 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 5009 },
+		regions = { 5008, 5011 },
+		triggers = { "ENTER_REGION_5008", "ENTER_REGION_5011", "TIMER_EVENT_5012" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_5008(context, evt)
+	if evt.param1 ~= 5008 then return false end
+	
+	-- 判断变量"IS_BOSS_DEAD"为0
+	if ScriptLib.GetGroupVariableValueByGroup(context, "IS_BOSS_DEAD", 244007001) ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_5008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AutoPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = 5
-  L5_2 = 244007005
-  L6_2 = {}
-  L7_2 = 13035
-  L6_2[1] = L7_2
-  L7_2 = 0
-  L8_2 = {}
-  L9_2 = {}
-  L10_2 = {}
-  L10_2.total_count = 5
-  L10_2.min_count = 5
-  L10_2.max_count = 5
-  L10_2.tag = 4
-  L10_2.fill_time = 0
-  L10_2.fill_count = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 244007005
-  L5_2 = "T5"
-  L6_2 = 30
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_5008(context, evt)
+	
+	--  在Group244007005从怪物潮池{13035}中随机创建一个TideIndex为5的怪物潮，创建怪物总数为5，场上怪物最少5只，最多5只, pointTag 为 4  每0尝试填充一次，填充数量为0
+	if 0 ~= ScriptLib.AutoPoolMonsterTide(context, 5, 244007005, {13035},0,{},{}, {total_count = 5, min_count = 5, max_count = 5, tag = 4, fill_time= 0, fill_count = 0}) then
+		return -1
+	end
+	
+	-- 延迟30秒后,向groupId为：244007005的对象,请求一次调用,并将string参数："T5" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 244007005, "T5", 30) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_5008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 5011 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "EXTRA_MONSTER"
-  L5_2 = 244007001
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "IS_BOSS_DEAD"
-  L5_2 = 244007001
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_5011(context, evt)
+	if evt.param1 ~= 5011 then return false end
+	
+	-- 判断变量"EXTRA_MONSTER"为1
+	if ScriptLib.GetGroupVariableValueByGroup(context, "EXTRA_MONSTER", 244007001) ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"IS_BOSS_DEAD"为0
+	if ScriptLib.GetGroupVariableValueByGroup(context, "IS_BOSS_DEAD", 244007001) ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_5011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AutoPoolMonsterTide
-  L3_2 = A0_2
-  L4_2 = 51
-  L5_2 = 244007005
-  L6_2 = {}
-  L7_2 = 13040
-  L6_2[1] = L7_2
-  L7_2 = 0
-  L8_2 = {}
-  L9_2 = {}
-  L10_2 = {}
-  L10_2.total_count = 1
-  L10_2.min_count = 1
-  L10_2.max_count = 1
-  L10_2.tag = 8
-  L10_2.fill_time = 0
-  L10_2.fill_count = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_5011(context, evt)
+	
+	--  在Group244007005从怪物潮池{13040}中随机创建一个TideIndex为51的怪物潮，创建怪物总数为1，场上怪物最少1只，最多1只, pointTag 为 8  每0尝试填充一次，填充数量为0
+	if 0 ~= ScriptLib.AutoPoolMonsterTide(context, 51, 244007005, {13040},0,{},{}, {total_count = 1, min_count = 1, max_count = 1, tag = 8, fill_time= 0, fill_count = 0}) then
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_5011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 244007005
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_MONSTER
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_monster_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 244007005
-  L4_2.suite = 2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_5012(context, evt)
+	-- 杀死Group内所有monster
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 244007005, kill_policy = GroupKillPolicy.GROUP_KILL_MONSTER }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_monster_by_group")
+			return -1
+		end
+		
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 244007005, suite = 2 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_TIMER_EVENT_5012 = L1_1

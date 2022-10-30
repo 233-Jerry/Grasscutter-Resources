@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         }
       ],
@@ -67,38 +64,23 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2150",
-            "1"
-          ]
+          "param": ["2150", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2145",
-            "1"
-          ]
+          "param": ["2145", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2146",
-            "1"
-          ]
+          "param": ["2146", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2147",
-            "1"
-          ]
+          "param": ["2147", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2149",
-            "1"
-          ]
+          "param": ["2149", "1"]
         }
       ],
       "failExec": [],
@@ -120,10 +102,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -131,9 +110,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q40010Island"
-        ],
+        "param": ["Q40010Island"],
         "guideScene": 4,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -150,10 +127,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "144001901",
-            "0"
-          ]
+          "param": ["144001901", "0"]
         }
       ],
       "failExec": [],
@@ -175,10 +149,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -186,9 +157,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q40010BoardingPoint"
-        ],
+        "param": ["Q40010BoardingPoint"],
         "guideScene": 4,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -205,10 +174,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "144004003",
-            "0"
-          ]
+          "param": ["144004003", "0"]
         }
       ],
       "failExec": [],
@@ -230,10 +196,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_UNLOCK_TRANS_POINT",
-          "param": [
-            4,
-            8
-          ],
+          "param": [4, 8],
           "count": 0
         }
       ],
@@ -258,24 +221,15 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
-          "param": [
-            "4001607",
-            "1"
-          ]
+          "param": ["4001607", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2147",
-            "0"
-          ]
+          "param": ["2147", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2154",
-            "1"
-          ]
+          "param": ["2154", "1"]
         }
       ],
       "failExec": [],
@@ -297,10 +251,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_UNLOCK_TRANS_POINT",
-          "param": [
-            4,
-            9
-          ],
+          "param": [4, 9],
           "count": 0
         }
       ],
@@ -325,24 +276,15 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
-          "param": [
-            "4001607",
-            "1"
-          ]
+          "param": ["4001607", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2149",
-            "0"
-          ]
+          "param": ["2149", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2156",
-            "1"
-          ]
+          "param": ["2156", "1"]
         }
       ],
       "failExec": [],
@@ -364,10 +306,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_UNLOCK_TRANS_POINT",
-          "param": [
-            4,
-            10
-          ],
+          "param": [4, 10],
           "count": 0
         }
       ],
@@ -392,24 +331,15 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
-          "param": [
-            "4001607",
-            "1"
-          ]
+          "param": ["4001607", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2150",
-            "0"
-          ]
+          "param": ["2150", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2157",
-            "1"
-          ]
+          "param": ["2157", "1"]
         }
       ],
       "failExec": [],
@@ -431,10 +361,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         }
       ],
@@ -459,17 +386,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
-          "param": [
-            "4001608",
-            "1"
-          ]
+          "param": ["4001608", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2162",
-            "1"
-          ]
+          "param": ["2162", "1"]
         }
       ],
       "failExec": [],
@@ -491,10 +412,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            4001608,
-            0
-          ],
+          "param": [4001608, 0],
           "count": 1
         }
       ],
@@ -519,38 +437,23 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2157",
-            "0"
-          ]
+          "param": ["2157", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2145",
-            "0"
-          ]
+          "param": ["2145", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2153",
-            "0"
-          ]
+          "param": ["2153", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2154",
-            "0"
-          ]
+          "param": ["2154", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "2156",
-            "0"
-          ]
+          "param": ["2156", "0"]
         }
       ],
       "failExec": [],

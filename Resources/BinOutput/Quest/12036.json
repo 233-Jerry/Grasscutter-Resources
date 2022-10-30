@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 0,
-  "descTextMapHash": 0,
+  
   "id": 12036,
   "ICLLDPJFIMA": 2027,
   "NCLEJIILEGL": 2028,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_QUEST_VAR_EQUAL",
-          "param": [
-            0,
-            1
-          ],
+          "param": [0, 1],
           "count": 0
         }
       ],
@@ -67,31 +64,19 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "1061",
-            "201061002,1"
-          ]
+          "param": ["1061", "201061002,1"]
         },
         {
           "_type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133221002,1"
-          ]
+          "param": ["3", "133221002,1"]
         },
         {
           "_type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133221003,1"
-          ]
+          "param": ["3", "133221003,1"]
         },
         {
           "_type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133209015,1"
-          ]
+          "param": ["3", "133209015,1"]
         }
       ],
       "failExec": [],
@@ -109,10 +94,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1203601",
-            "2"
-          ]
+          "param": ["1203601", "2"]
         }
       ],
       "priority": 5,
@@ -121,10 +103,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 120360101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1047,
-        1033
-      ],
+      "npcIdRawNum": [1047, 1033],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Ayato1_12035/Q1203601",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -160,10 +139,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1203601",
-            "2"
-          ]
+          "param": ["1203601", "2"]
         }
       ],
       "priority": 5,
@@ -172,12 +148,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 120360201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        12451,
-        12523,
-        12528,
-        12529
-      ],
+      "npcIdRawNum": [12451, 12523, 12528, 12529],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

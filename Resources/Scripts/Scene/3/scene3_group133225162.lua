@@ -1,679 +1,379 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 133225162
-L1_1 = {}
-L1_1.point_sum = 23
-L1_1.route_2 = 322500058
-L1_1.gadget_seelie = 162001
-L1_1.route_decal = 322500060
-L1_1.route_back = 322500059
-L2_1 = L1_1.point_sum
-L2_1 = L2_1 - 1
-L1_1.final_point = L2_1
-L1_1.decal_final_point = 4
-L1_1.back_point = 10
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 162001
-L3_1.gadget_id = 70710010
-L4_1 = {}
-L4_1.x = -6280.698
-L4_1.y = 224.154
-L4_1.z = -2678.873
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 342.463
-L4_1.y = 200.021
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 33
-L3_1.route_id = 322500058
-L3_1.start_route = false
-L3_1.area_id = 18
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1162002
-L3_1.name = "VARIABLE_CHANGE_162002"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_162002"
-L3_1.action = "action_EVENT_VARIABLE_CHANGE_162002"
-L4_1 = {}
-L4_1.config_id = 1162003
-L4_1.name = "PLATFORM_REACH_POINT_162003"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_PLATFORM_REACH_POINT
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_PLATFORM_REACH_POINT_162003"
-L4_1.action = "action_EVENT_PLATFORM_REACH_POINT_162003"
-L5_1 = {}
-L5_1.config_id = 1162004
-L5_1.name = "PLATFORM_REACH_POINT_162004"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_PLATFORM_REACH_POINT
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_PLATFORM_REACH_POINT_162004"
-L5_1.action = ""
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1162005
-L6_1.name = "AVATAR_NEAR_PLATFORM_162005"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_AVATAR_NEAR_PLATFORM
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_AVATAR_NEAR_PLATFORM_162005"
-L6_1.action = "action_EVENT_AVATAR_NEAR_PLATFORM_162005"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1162006
-L7_1.name = "VARIABLE_CHANGE_162006"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_VARIABLE_CHANGE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_VARIABLE_CHANGE_162006"
-L7_1.action = "action_EVENT_VARIABLE_CHANGE_162006"
-L8_1 = {}
-L8_1.config_id = 1162007
-L8_1.name = "GROUP_LOAD_162007"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_GROUP_LOAD
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_GROUP_LOAD_162007"
-L8_1.action = "action_EVENT_GROUP_LOAD_162007"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1162008
-L9_1.name = "VARIABLE_CHANGE_162008"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_VARIABLE_CHANGE
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_VARIABLE_CHANGE_162008"
-L9_1.action = "action_EVENT_VARIABLE_CHANGE_162008"
-L10_1 = {}
-L10_1.config_id = 1162009
-L10_1.name = "GADGET_CREATE_162009"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_GADGET_CREATE
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_GADGET_CREATE_162009"
-L10_1.action = "action_EVENT_GADGET_CREATE_162009"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1162010
-L11_1.name = "GADGET_CREATE_162010"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_GADGET_CREATE
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_GADGET_CREATE_162010"
-L11_1.action = "action_EVENT_GADGET_CREATE_162010"
-L11_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "stone_progress"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "start"
-L4_1.value = 0
-L4_1.no_refresh = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 3
-L2_1.end_suite = 2
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 162001
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "VARIABLE_CHANGE_162002"
-L6_1 = "PLATFORM_REACH_POINT_162003"
-L7_1 = "PLATFORM_REACH_POINT_162004"
-L8_1 = "AVATAR_NEAR_PLATFORM_162005"
-L9_1 = "VARIABLE_CHANGE_162008"
-L10_1 = "GADGET_CREATE_162009"
-L11_1 = "GADGET_CREATE_162010"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "VARIABLE_CHANGE_162006"
-L8_1 = "GROUP_LOAD_162007"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "stone_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133225162
+}
+
+-- Trigger变量
+local defs = {
+	point_sum = 23,
+	route_2 = 322500058,
+	gadget_seelie = 162001,
+	route_decal = 322500060,
+	route_back = 322500059
+}
+
+-- DEFS_MISCS
+defs.final_point = defs.point_sum - 1
+defs.decal_final_point = 4
+defs.back_point = 10
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 162001, gadget_id = 70710010, pos = { x = -6280.698, y = 224.154, z = -2678.873 }, rot = { x = 342.463, y = 200.021, z = 0.000 }, level = 33, route_id = 322500058, start_route = false, area_id = 18 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 底座提交
+	{ config_id = 1162002, name = "VARIABLE_CHANGE_162002", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_162002", action = "action_EVENT_VARIABLE_CHANGE_162002" },
+	-- 显示符文
+	{ config_id = 1162003, name = "PLATFORM_REACH_POINT_162003", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_162003", action = "action_EVENT_PLATFORM_REACH_POINT_162003" },
+	{ config_id = 1162004, name = "PLATFORM_REACH_POINT_162004", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_162004", action = "", trigger_count = 0 },
+	{ config_id = 1162005, name = "AVATAR_NEAR_PLATFORM_162005", event = EventType.EVENT_AVATAR_NEAR_PLATFORM, source = "", condition = "condition_EVENT_AVATAR_NEAR_PLATFORM_162005", action = "action_EVENT_AVATAR_NEAR_PLATFORM_162005", trigger_count = 0 },
+	{ config_id = 1162006, name = "VARIABLE_CHANGE_162006", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_162006", action = "action_EVENT_VARIABLE_CHANGE_162006" },
+	{ config_id = 1162007, name = "GROUP_LOAD_162007", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_162007", action = "action_EVENT_GROUP_LOAD_162007", trigger_count = 0 },
+	-- 石头获得，返回
+	{ config_id = 1162008, name = "VARIABLE_CHANGE_162008", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_162008", action = "action_EVENT_VARIABLE_CHANGE_162008" },
+	-- 如果已经拿过石头，设置路径为符文
+	{ config_id = 1162009, name = "GADGET_CREATE_162009", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_162009", action = "action_EVENT_GADGET_CREATE_162009", trigger_count = 0 },
+	-- 已经放置石头，直接开启符文
+	{ config_id = 1162010, name = "GADGET_CREATE_162010", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_162010", action = "action_EVENT_GADGET_CREATE_162010", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "stone_progress", value = 0, no_refresh = true },
+	{ config_id = 2, name = "start", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 3,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { 162001 },
+		regions = { },
+		triggers = { "VARIABLE_CHANGE_162002", "PLATFORM_REACH_POINT_162003", "PLATFORM_REACH_POINT_162004", "AVATAR_NEAR_PLATFORM_162005", "VARIABLE_CHANGE_162008", "GADGET_CREATE_162009", "GADGET_CREATE_162010" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = 最终空suit,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "VARIABLE_CHANGE_162006", "GROUP_LOAD_162007" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_162002(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"stone_progress"为2
+	if ScriptLib.GetGroupVariableValue(context, "stone_progress") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_162002 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformRouteId
-  L3_2 = A0_2
-  L4_2 = 162001
-  L5_2 = 322500060
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_platform_routeId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 162001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_162002(context, evt)
+	-- 设置移动平台路径
+	if 0 ~= ScriptLib.SetPlatformRouteId(context, 162001, 322500060) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_routeId")
+	  return -1
+	end
+	
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 162001) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_162002 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = L1_1.gadget_seelie
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.route_decal
-  L3_2 = A1_2.param2
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.decal_final_point
-  L3_2 = A1_2.param3
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_PLATFORM_REACH_POINT_162003(context, evt)
+	if defs.gadget_seelie ~= evt.param1 then
+	return false
+	end
+	
+	if defs.route_decal ~= evt.param2 then
+	return false
+	end
+	
+	if  defs.decal_final_point ~= evt.param3 then
+	return false
+	end
+	
+	return true
 end
-condition_EVENT_PLATFORM_REACH_POINT_162003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopPlatform
-  L3_2 = A0_2
-  L4_2 = 162001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : stop_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 162001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_entity_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "decal_finish_2"
-  L5_2 = 1
-  L6_2 = 133225163
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GoToGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133225162
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : goto_groupSuite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_PLATFORM_REACH_POINT_162003(context, evt)
+	-- 停止移动平台
+	if 0 ~= ScriptLib.StopPlatform(context, 162001) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : stop_platform")
+	  return -1
+	end
+	
+		-- 永久关闭CongfigId的Gadget，需要和Groups的RefreshWithBlock标签搭配
+		if 0 ~= ScriptLib.KillEntityByConfigId(context, { config_id = 162001 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_entity_by_configId")
+		    return -1
+		end
+		
+	
+	-- 将本组内变量名为 "decal_finish_2" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "decal_finish_2", 1, 133225163) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- group调整group进度,只对非randSuite有效
+	if 0 ~= ScriptLib.GoToGroupSuite(context, 133225162, 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : goto_groupSuite")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_PLATFORM_REACH_POINT_162003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = L1_1.gadget_seelie
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.route_2
-  L3_2 = A1_2.param2
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.final_point
-  L3_2 = A1_2.param3
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_PLATFORM_REACH_POINT_162004(context, evt)
+	if defs.gadget_seelie ~= evt.param1 then
+	return false
+	end
+	
+	if defs.route_2 ~= evt.param2 then
+	return false
+	end
+	
+	if  defs.final_point ~= evt.param3 then
+	return false
+	end
+	
+	return true
 end
-condition_EVENT_PLATFORM_REACH_POINT_162004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = L1_1.gadget_seelie
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.route_2
-  L3_2 = A1_2.param2
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.final_point
-  L3_2 = A1_2.param3
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_AVATAR_NEAR_PLATFORM_162005(context, evt)
+	if defs.gadget_seelie ~= evt.param1 then
+	return false
+	end
+	
+	if defs.route_2 ~= evt.param2 then
+	return false
+	end
+	
+	if defs.final_point == evt.param3 then
+	return false
+	end
+	
+	return true
 end
-condition_EVENT_AVATAR_NEAR_PLATFORM_162005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 162001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.MarkPlayerAction
-    L3_2 = A0_2
-    L4_2 = 2005
-    L5_2 = 2
-    L6_2 = A1_2.param3
-    L6_2 = L6_2 + 1
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_AVATAR_NEAR_PLATFORM_162005(context, evt)
+	if 0 ~= ScriptLib.StartPlatform(context, 162001) then
+	return -1
+	end
+	
+	-- 运营数据埋点，匹配LD定义的规则使用
+	if 0 ~= evt.param3 then
+	ScriptLib.MarkPlayerAction(context, 2005, 2, evt.param3 + 1)
+	end
+	
+	return 0
 end
-action_EVENT_AVATAR_NEAR_PLATFORM_162005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "start"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_162006(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"start"为1
+	if ScriptLib.GetGroupVariableValue(context, "start") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_162006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133225162
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_162006(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133225162, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_162006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "start"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_162007(context, evt)
+	-- 判断变量"start"为1
+	if ScriptLib.GetGroupVariableValue(context, "start") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_162007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133225162
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_162007(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133225162, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_162007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "stone_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_162008(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"stone_progress"为1
+	if ScriptLib.GetGroupVariableValue(context, "stone_progress") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_162008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformRouteId
-  L3_2 = A0_2
-  L4_2 = 162001
-  L5_2 = 322500059
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_platform_routeId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 162001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_162008(context, evt)
+	-- 设置移动平台路径
+	if 0 ~= ScriptLib.SetPlatformRouteId(context, 162001, 322500059) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_routeId")
+	  return -1
+	end
+	
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 162001) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_162008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if 162001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "stone_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_162009(context, evt)
+	if 162001 ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"stone_progress"为1
+	if ScriptLib.GetGroupVariableValue(context, "stone_progress") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_162009 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformRouteId
-  L3_2 = A0_2
-  L4_2 = 162001
-  L5_2 = 322500060
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_platform_routeId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "StoneCanPlace_C"
-  L5_2 = 1
-  L6_2 = 133225094
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_162009(context, evt)
+	-- 设置移动平台路径
+	if 0 ~= ScriptLib.SetPlatformRouteId(context, 162001, 322500060) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_routeId")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "StoneCanPlace_C" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "StoneCanPlace_C", 1, 133225094) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_162009 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if 162001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "stone_progress"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_162010(context, evt)
+	if 162001 ~= evt.param1 then
+		return false
+	end
+	
+	-- 判断变量"stone_progress"为2
+	if ScriptLib.GetGroupVariableValue(context, "stone_progress") ~= 2 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_162010 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformRouteId
-  L3_2 = A0_2
-  L4_2 = 162001
-  L5_2 = 322500060
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_platform_routeId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 162001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_162010(context, evt)
+	-- 设置移动平台路径
+	if 0 ~= ScriptLib.SetPlatformRouteId(context, 162001, 322500060) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_routeId")
+	  return -1
+	end
+	
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 162001) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_162010 = L2_1

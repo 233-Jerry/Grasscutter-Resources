@@ -12,13 +12,9 @@
   "_luaPath": "Actor/Quest/MQ373",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    374
-  ],
+  "PEOHODAKLNO": [374],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    100373
-  ],
+  "rewardIdList": [100373],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -43,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            37301,
-            0
-          ],
+          "param": [37301, 0],
           "count": 0
         }
       ],
@@ -54,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1001"
-        ],
+        "param": ["1001"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_START",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
@@ -90,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            37302,
-            0
-          ],
+          "param": [37302, 0],
           "count": 0
         }
       ],
@@ -101,9 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1001"
-        ],
+        "param": ["1001"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
@@ -137,10 +123,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_CLEAR_GROUP_MONSTER",
-          "param": [
-            133001305,
-            0
-          ],
+          "param": [133001305, 0],
           "count": 0
         }
       ],
@@ -148,10 +131,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q373WindBoss",
-          "30"
-        ],
+        "param": ["Q373WindBoss", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -185,10 +165,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            37304,
-            0
-          ],
+          "param": [37304, 0],
           "count": 0
         }
       ],
@@ -196,9 +173,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "1001"
-        ],
+        "param": ["1001"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_FINISH",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
@@ -228,10 +203,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "37302",
-            "2"
-          ]
+          "param": ["37302", "2"]
         }
       ],
       "priority": 0,
@@ -240,9 +212,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 3730201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1001
-      ],
+      "npcIdRawNum": [1001],
       "GHNCIOJDIEA": "QuestDialogue/AQ/Mengde2_373/Q37302",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -278,10 +248,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "37304",
-            "2"
-          ]
+          "param": ["37304", "2"]
         }
       ],
       "priority": 0,
@@ -290,9 +257,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 3730401,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1001
-      ],
+      "npcIdRawNum": [1001],
       "GHNCIOJDIEA": "QuestDialogue/AQ/Mengde2_373/Q37304",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -320,13 +285,8 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    1054951330040,
-    646986559807
-  ],
-  "OMKMAOLMNCO": [
-    560493373186
-  ],
+  "LGCLJGGNGBD": [1054951330040, 646986559807],
+  "OMKMAOLMNCO": [560493373186],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 100373
 }

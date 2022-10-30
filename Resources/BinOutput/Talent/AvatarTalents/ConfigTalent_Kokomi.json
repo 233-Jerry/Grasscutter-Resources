@@ -1,4 +1,9 @@
 {
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座1
+  //
+  ////////////////////////////////////////////////////////////////
   "Kokomi_Constellation_1": [
     {
       "$type": "UnlockTalentParam",
@@ -12,6 +17,12 @@
       "paramDelta": "%1"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座2
+  //
+  ////////////////////////////////////////////////////////////////
   "Kokomi_Constellation_2": [
     {
       "$type": "UnlockTalentParam",
@@ -48,6 +59,12 @@
       "paramDelta": "%3"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座3
+  //
+  ////////////////////////////////////////////////////////////////
   "Kokomi_Constellation_3": [
     {
       "$type": "AddTalentExtraLevel",
@@ -56,6 +73,12 @@
       "extraLevel": 3
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座4
+  //
+  ////////////////////////////////////////////////////////////////
   "Kokomi_Constellation_4": [
     {
       "$type": "UnlockTalentParam",
@@ -90,6 +113,12 @@
       "paramDelta": "%2"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座5
+  //
+  ////////////////////////////////////////////////////////////////
   "Kokomi_Constellation_5": [
     {
       "$type": "AddTalentExtraLevel",
@@ -98,6 +127,12 @@
       "extraLevel": 3
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座6
+  //
+  ////////////////////////////////////////////////////////////////
   "Kokomi_Constellation_6": [
     {
       "$type": "UnlockTalentParam",
@@ -123,6 +158,12 @@
       "paramDelta": "%3"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  天赋1
+  //
+  ////////////////////////////////////////////////////////////////
   "Kokomi_PermanentSkill_1": [
     {
       "$type": "UnlockTalentParam",
@@ -130,6 +171,12 @@
       "talentParam": "Avatar_Kokomi_Talent_ElementalBurstRefreshGadget"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  天赋2
+  //
+  ////////////////////////////////////////////////////////////////
   "Kokomi_PermanentSkill_2": [
     {
       "$type": "UnlockTalentParam",
@@ -143,30 +190,12 @@
       "paramDelta": "%1"
     }
   ],
-  "Kokomi_PermanentSkill_3": [
-    {
-      "$type": "AddAbility",
-      "abilityName": "Avatar_Kokomi_CritRateDown"
-    },
-    {
-      "$type": "ModifyAbility",
-      "abilityName": "Avatar_Kokomi_CritRateDown",
-      "paramSpecial": "Avatar_Kokomi_CritRate_Delta",
-      "paramDelta": "%1"
-    },
-    {
-      "$type": "ModifyAbility",
-      "abilityName": "Avatar_Kokomi_CritRateDown",
-      "paramSpecial": "Avatar_Kokomi_HealAdd_Delta",
-      "paramDelta": "%2"
-    }
-  ],
-  "Kokomi_ProudSkill_SwimStamina_Reduction": [
-    {
-      "$type": "AddAbility",
-      "abilityName": "Avatar_Kokomi_SwimStamina_Reduction"
-    }
-  ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  技能升级1
+  //
+  ////////////////////////////////////////////////////////////////
   "Kokomi_SkillUpgrade_1": [
     {
       "$type": "ModifyAbility",
@@ -235,6 +264,11 @@
       "paramDelta": "%8"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  技能升级2
+  ////////////////////////////////////////////////////////////////
   "Kokomi_SkillUpgrade_2": [
     {
       "$type": "ModifyAbility",
@@ -261,6 +295,11 @@
       "paramDelta": "%4"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  技能升级3
+  ////////////////////////////////////////////////////////////////
   "Kokomi_SkillUpgrade_3": [
     {
       "$type": "ModifyAbility",
@@ -304,6 +343,7 @@
       "paramSpecial": "ExtraAttack_MaxHP_Percentage",
       "paramDelta": "%5"
     },
+
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Kokomi_ElementalBurst_Initiate",
@@ -315,6 +355,38 @@
       "abilityName": "Kokomi_ElementalArt_Gadget_Controller",
       "paramSpecial": "ElementalArt_Damage_MaxHP_Percentage",
       "paramDelta": "%9"
+    }
+  ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  游泳体力消耗降低
+  //
+  ////////////////////////////////////////////////////////////////
+
+  "Kokomi_PermanentSkill_3": [
+    {
+      "$type": "AddAbility",
+      "abilityName": "Avatar_Kokomi_CritRateDown"
+    },
+    {
+      "$type": "ModifyAbility",
+      "abilityName": "Avatar_Kokomi_CritRateDown",
+      "paramSpecial": "Avatar_Kokomi_CritRate_Delta",
+      "paramDelta": "%1"
+    },
+    {
+      "$type": "ModifyAbility",
+      "abilityName": "Avatar_Kokomi_CritRateDown",
+      "paramSpecial": "Avatar_Kokomi_HealAdd_Delta",
+      "paramDelta": "%2"
+    }
+  ],
+
+  "Kokomi_ProudSkill_SwimStamina_Reduction": [
+    {
+      "$type": "AddAbility",
+      "abilityName": "Avatar_Kokomi_SwimStamina_Reduction"
     }
   ]
 }

@@ -1,597 +1,221 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1
-L0_1 = {}
-L0_1.group_id = 220131004
-L1_1 = {}
-L1_1.box_gadget_id_1 = 70290378
-L1_1.box_gadget_id_2 = 70290377
-L2_1 = {}
-L3_1 = 1
-L2_1[1] = L3_1
-L1_1.config_suites = L2_1
-L1_1.point_array_id = 1
-L1_1.option_id = 193
-L1_1.reminder_level_boarder = 201310102
-L1_1.reminder_array_boarder = 201310102
-L1_1.reminder_box_conflict = 201310102
-L1_1.reminder_right_pos = 201310101
-L2_1 = {}
-L3_1 = {}
-L4_1 = 0
-L5_1 = 0
-L6_1 = 0
-L7_1 = 0
-L8_1 = 0
-L9_1 = 0
-L10_1 = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L4_1 = {}
-L5_1 = 0
-L6_1 = 1
-L7_1 = 1
-L8_1 = 1
-L9_1 = 1
-L10_1 = 0
-L11_1 = 0
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L5_1 = {}
-L6_1 = 0
-L7_1 = 1
-L8_1 = 1
-L9_1 = 1
-L10_1 = 1
-L11_1 = 1
-L12_1 = 0
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L5_1[7] = L12_1
-L6_1 = {}
-L7_1 = 0
-L8_1 = 1
-L9_1 = 1
-L10_1 = 1
-L11_1 = 1
-L12_1 = 1
-L13_1 = 0
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L6_1[7] = L13_1
-L7_1 = {}
-L8_1 = 0
-L9_1 = 0
-L10_1 = 0
-L11_1 = 0
-L12_1 = 0
-L13_1 = 0
-L14_1 = 0
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L7_1[5] = L12_1
-L7_1[6] = L13_1
-L7_1[7] = L14_1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = 0
-L6_1 = 0
-L7_1 = 0
-L8_1 = 0
-L9_1 = 0
-L10_1 = 0
-L11_1 = 0
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L5_1 = {}
-L6_1 = 0
-L7_1 = 1
-L8_1 = 2
-L9_1 = 3
-L10_1 = 4
-L11_1 = 0
-L12_1 = 0
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L5_1[7] = L12_1
-L6_1 = {}
-L7_1 = 0
-L8_1 = 6
-L9_1 = 7
-L10_1 = 8
-L11_1 = 9
-L12_1 = 10
-L13_1 = 0
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L6_1[7] = L13_1
-L7_1 = {}
-L8_1 = 0
-L9_1 = 11
-L10_1 = 12
-L11_1 = 13
-L12_1 = 14
-L13_1 = 15
-L14_1 = 0
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L7_1[5] = L12_1
-L7_1[6] = L13_1
-L7_1[7] = L14_1
-L8_1 = {}
-L9_1 = 0
-L10_1 = 0
-L11_1 = 0
-L12_1 = 0
-L13_1 = 0
-L14_1 = 0
-L15_1 = 0
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L8_1[3] = L11_1
-L8_1[4] = L12_1
-L8_1[5] = L13_1
-L8_1[6] = L14_1
-L8_1[7] = L15_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L4_1 = {}
-L5_1 = {}
-L5_1.config_id = 4001
-L6_1 = {}
-L6_1.x = 2
-L6_1.z = 2
-L5_1.pos = L6_1
-L4_1[1] = L5_1
-L5_1 = {}
-L5_1.config_id = 4002
-L6_1 = {}
-L6_1.x = 4
-L6_1.z = 2
-L5_1.pos = L6_1
-L4_1[2] = L5_1
-L5_1 = {}
-L5_1.config_id = 4003
-L6_1 = {}
-L6_1.x = 6
-L6_1.z = 4
-L5_1.pos = L6_1
-L4_1[3] = L5_1
-L5_1 = {}
-L5_1.config_id = 4004
-L6_1 = {}
-L6_1.x = 3
-L6_1.z = 2
-L5_1.pos = L6_1
-L4_1[4] = L5_1
-L5_1 = {}
-L5_1.config_id = 4005
-L6_1 = {}
-L6_1.x = 5
-L6_1.z = 2
-L5_1.pos = L6_1
-L4_1[5] = L5_1
-L5_1 = {}
-L5_1.config_id = 4006
-L6_1 = {}
-L6_1.x = 2
-L6_1.z = 3
-L5_1.pos = L6_1
-L4_1[6] = L5_1
-L5_1 = {}
-L5_1.config_id = 4007
-L6_1 = {}
-L6_1.x = 3
-L6_1.z = 3
-L5_1.pos = L6_1
-L4_1[7] = L5_1
-L5_1 = {}
-L5_1.config_id = 4008
-L6_1 = {}
-L6_1.x = 4
-L6_1.z = 3
-L5_1.pos = L6_1
-L4_1[8] = L5_1
-L5_1 = {}
-L5_1.config_id = 4009
-L6_1 = {}
-L6_1.x = 5
-L6_1.z = 3
-L5_1.pos = L6_1
-L4_1[9] = L5_1
-L5_1 = {}
-L6_1 = {}
-L7_1 = 1
-L8_1 = 2
-L9_1 = 3
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L5_1.box_config_id = L6_1
-L6_1 = {}
-L7_1 = 12
-L8_1 = 13
-L9_1 = 14
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L5_1.target_point_id = L6_1
-L6_1 = {}
-L7_1 = {}
-L8_1 = 2
-L9_1 = 3
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L8_1 = {}
-L9_1 = 7
-L10_1 = 8
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L9_1 = {}
-L10_1 = 6
-L11_1 = 11
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L10_1 = {}
-L11_1 = 9
-L12_1 = 14
-L10_1[1] = L11_1
-L10_1[2] = L12_1
-L11_1 = {}
-L12_1 = 13
-L13_1 = 14
-L11_1[1] = L12_1
-L11_1[2] = L13_1
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L7_1 = {}
-monsters = L7_1
-L7_1 = {}
-npcs = L7_1
-L7_1 = {}
-L8_1 = {}
-L8_1.config_id = 4001
-L8_1.gadget_id = 70290378
-L9_1 = {}
-L9_1.x = 114.782
-L9_1.y = -3.245
-L9_1.z = 12.0
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L7_1[4001] = L8_1
-L8_1 = {}
-L8_1.config_id = 4002
-L8_1.gadget_id = 70290378
-L9_1 = {}
-L9_1.x = 114.782
-L9_1.y = -3.245
-L9_1.z = 0.0
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L7_1[4002] = L8_1
-L8_1 = {}
-L8_1.config_id = 4003
-L8_1.gadget_id = 70290378
-L9_1 = {}
-L9_1.x = 102.725
-L9_1.y = -3.245
-L9_1.z = -12.0
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L7_1[4003] = L8_1
-L8_1 = {}
-L8_1.config_id = 4004
-L8_1.gadget_id = 70290377
-L9_1 = {}
-L9_1.x = 114.782
-L9_1.y = -3.245
-L9_1.z = 6.0
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L7_1[4004] = L8_1
-L8_1 = {}
-L8_1.config_id = 4005
-L8_1.gadget_id = 70290377
-L9_1 = {}
-L9_1.x = 114.782
-L9_1.y = -3.245
-L9_1.z = -6.0
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L7_1[4005] = L8_1
-L8_1 = {}
-L8_1.config_id = 4006
-L8_1.gadget_id = 70290377
-L9_1 = {}
-L9_1.x = 108.782
-L9_1.y = -3.245
-L9_1.z = 12.0
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L7_1[4006] = L8_1
-L8_1 = {}
-L8_1.config_id = 4007
-L8_1.gadget_id = 70290377
-L9_1 = {}
-L9_1.x = 108.782
-L9_1.y = -3.245
-L9_1.z = 6.0
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L7_1[4007] = L8_1
-L8_1 = {}
-L8_1.config_id = 4008
-L8_1.gadget_id = 70290377
-L9_1 = {}
-L9_1.x = 108.782
-L9_1.y = -3.245
-L9_1.z = 0.0
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L7_1[4008] = L8_1
-L8_1 = {}
-L8_1.config_id = 4009
-L8_1.gadget_id = 70290377
-L9_1 = {}
-L9_1.x = 108.782
-L9_1.y = -3.245
-L9_1.z = -6.0
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L7_1[4009] = L8_1
-gadgets = L7_1
-L7_1 = {}
-regions = L7_1
-L7_1 = {}
-L8_1 = {}
-L8_1.config_id = 1004011
-L8_1.name = "VARIABLE_CHANGE_4011"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_VARIABLE_CHANGE
-L8_1.event = L9_1
-L8_1.source = "level_finish"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_VARIABLE_CHANGE_4011"
-L7_1[1] = L8_1
-triggers = L7_1
-L7_1 = {}
-L8_1 = {}
-L8_1.configId = 1
-L8_1.name = "level_start"
-L8_1.value = 0
-L8_1.no_refresh = false
-L7_1[1] = L8_1
-variables = L7_1
-L7_1 = {}
-L7_1.suite = 1
-L7_1.end_suite = 0
-L7_1.rand_suite = false
-init_config = L7_1
-L7_1 = {}
-L8_1 = {}
-L9_1 = {}
-L8_1.monsters = L9_1
-L9_1 = {}
-L10_1 = 4001
-L11_1 = 4002
-L12_1 = 4003
-L13_1 = 4004
-L14_1 = 4005
-L15_1 = 4006
-L16_1 = 4007
-L17_1 = 4008
-L18_1 = 4009
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L9_1[3] = L12_1
-L9_1[4] = L13_1
-L9_1[5] = L14_1
-L9_1[6] = L15_1
-L9_1[7] = L16_1
-L9_1[8] = L17_1
-L9_1[9] = L18_1
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L10_1 = "VARIABLE_CHANGE_4011"
-L9_1[1] = L10_1
-L8_1.triggers = L9_1
-L8_1.rand_weight = 100
-L9_1 = {}
-L10_1 = {}
-L9_1.monsters = L10_1
-L10_1 = {}
-L9_1.gadgets = L10_1
-L10_1 = {}
-L9_1.regions = L10_1
-L10_1 = {}
-L9_1.triggers = L10_1
-L9_1.rand_weight = 100
-L10_1 = {}
-L11_1 = {}
-L10_1.monsters = L11_1
-L11_1 = {}
-L10_1.gadgets = L11_1
-L11_1 = {}
-L10_1.regions = L11_1
-L11_1 = {}
-L10_1.triggers = L11_1
-L10_1.rand_weight = 100
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-suites = L7_1
-function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 400020
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "Open"
-  L5_2 = 1
-  L6_2 = 220131010
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "110262201"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "Stage"
-  L5_2 = 5
-  L6_2 = 220131016
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220131004
+}
+
+-- DEFS_MISCS
+--设置var: level_start为1以开启推箱子流程
+--用var_change接source为"level_finish"即可响应箱子推完的结果
+local defs = {
+        box_gadget_id_1 = 70290378,
+        box_gadget_id_2 = 70290377,
+        config_suites = {1}, 
+        point_array_id = 1,
+        option_id = 193,
+        reminder_level_boarder = 201310102,
+        reminder_array_boarder = 201310102,
+        reminder_box_conflict = 201310102,
+        reminder_right_pos = 201310101
+}
+
+--地形信息：0-墙面,1-地面,2-空气墙
+local level_map = {
+	{ 0, 0, 0, 0, 0, 0, 0},
+	{ 0, 1, 1, 1, 1, 0, 0},
+	{ 0, 1, 1, 1, 1, 1, 0},
+	{ 0, 1, 1, 1, 1, 1, 0},
+	{ 0, 0, 0, 0, 0, 0, 0},
+}
+
+--[[local level_map = {
+	{ 0, 0, 0, 0, 0},
+	{ 0, 0, 1, 1, 0},
+	{ 0, 1, 1, 1, 0},
+	{ 0, 1, 1, 1, 0},
+	{ 0, 1, 1, 1, 0},
+	{ 0, 1, 1, 1, 0},
+	{ 0, 0, 0, 0, 0},
+}]]--
+
+--点阵id信息
+local point_map = {
+	{ 0, 0, 0, 0, 0, 0, 0},
+	{ 0, 1, 2, 3, 4, 0, 0},
+	{ 0, 6, 7, 8, 9,10, 0},
+	{ 0, 11,12,13,14,15, 0},
+	{ 0, 0, 0, 0, 0, 0, 0}
+}
+
+--[[local point_map = {
+	{ 0, 0,   0, 0, 0},
+	{ 0, 0,   6, 1, 0},
+	{ 0, 12,  7, 2, 0},
+	{ 0, 13,  8, 3, 0},
+	{ 0, 14,  9, 4, 0},
+	{ 0, 15, 10, 5, 0},
+	{ 0,  0,  0, 0, 0},
+}]]--
+
+--箱子起始信息
+--[[local box_config = {
+	[1] = {config_id = 4001, pos = {x=4,z=2}},
+	[2] = {config_id = 4002, pos = {x=2,z=4}},
+	[3] = {config_id = 4003, pos = {x=2,z=6}},
+	[4] = {config_id = 4004, pos = {x=3,z=6}},
+	[5] = {config_id = 4005, pos = {x=3,z=3}},
+	[6] = {config_id = 4006, pos = {x=2,z=3}},
+	[7] = {config_id = 4007, pos = {x=3,z=4}},
+	[8] = {config_id = 4008, pos = {x=3,z=5}},
+	[9] = {config_id = 4009, pos = {x=2,z=5}},
+}]]--
+
+local box_config = {
+	[1] = {config_id = 4001, pos = {x=2,z=2}},
+	[2] = {config_id = 4002, pos = {x=4,z=2}},
+	[3] = {config_id = 4003, pos = {x=6,z=4}},
+	[4] = {config_id = 4004, pos = {x=3,z=2}},
+	[5] = {config_id = 4005, pos = {x=5,z=2}},
+	[6] = {config_id = 4006, pos = {x=2,z=3}},
+	[7] = {config_id = 4007, pos = {x=3,z=3}},
+	[8] = {config_id = 4008, pos = {x=4,z=3}},
+	[9] = {config_id = 4009, pos = {x=5,z=3}},
+}
+
+--关卡结算信息
+local level_finish_config = {
+        box_config_id = {1,2,3}, --box_config中序列
+        target_point_id = {12,13,14} --点阵id
+}
+
+--路径摘除信息(pont_id)
+local illegal_path = {
+        {2,3},
+        {7,8},
+        {6,11},
+        {9,14},
+        {13,14},
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	[4001] = { config_id = 4001, gadget_id = 70290378, pos = { x = 114.782, y = -3.245, z = 12.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	[4002] = { config_id = 4002, gadget_id = 70290378, pos = { x = 114.782, y = -3.245, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	[4003] = { config_id = 4003, gadget_id = 70290378, pos = { x = 102.725, y = -3.245, z = -12.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	[4004] = { config_id = 4004, gadget_id = 70290377, pos = { x = 114.782, y = -3.245, z = 6.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	[4005] = { config_id = 4005, gadget_id = 70290377, pos = { x = 114.782, y = -3.245, z = -6.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	[4006] = { config_id = 4006, gadget_id = 70290377, pos = { x = 108.782, y = -3.245, z = 12.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	[4007] = { config_id = 4007, gadget_id = 70290377, pos = { x = 108.782, y = -3.245, z = 6.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	[4008] = { config_id = 4008, gadget_id = 70290377, pos = { x = 108.782, y = -3.245, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	[4009] = { config_id = 4009, gadget_id = 70290377, pos = { x = 108.782, y = -3.245, z = -6.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 挑战成功开大门group10；增加任务进度；切目标点group16
+	{ config_id = 1004011, name = "VARIABLE_CHANGE_4011", event = EventType.EVENT_VARIABLE_CHANGE, source = "level_finish", condition = "", action = "action_EVENT_VARIABLE_CHANGE_4011" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "level_start", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009 },
+		regions = { },
+		triggers = { "VARIABLE_CHANGE_4011" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_4011(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	-- 将本组内变量名为 "Open" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "Open", 1, 220131010) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "110262201") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "Stage" 的变量设置为 5
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "Stage", 5, 220131016) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_4011 = L7_1
-L7_1 = require
-L8_1 = "V2_7/YeLan_BoxPusher"
-L7_1(L8_1)
+
+require "V2_7/YeLan_BoxPusher"

@@ -1,2762 +1,928 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1
-L0_1 = {}
-L0_1.group_id = 230001019
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1
-L2_1.npc_id = 86
-L3_1 = {}
-L3_1.x = -5.657
-L3_1.y = 0.017
-L3_1.z = -9.214
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L1_1[1] = L2_1
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 74
-L2_1.gadget_id = 70211001
-L3_1 = {}
-L3_1.x = -5.256
-L3_1.y = 0.016
-L3_1.z = -78.658
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\232\146\153\229\190\183"
-L2_1.showcutscene = true
-L2_1.isOneoff = true
-L2_1.persistent = true
-L3_1 = {}
-L3_1.config_id = 75
-L3_1.gadget_id = 70211001
-L4_1 = {}
-L4_1.x = -5.308
-L4_1.y = 0.017
-L4_1.z = -76.79
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\232\146\153\229\190\183"
-L3_1.showcutscene = true
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.config_id = 76
-L4_1.gadget_id = 70211011
-L5_1 = {}
-L5_1.x = -5.329
-L5_1.y = 0.016
-L5_1.z = -74.912
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.drop_tag = "\230\136\152\230\150\151\228\184\173\231\186\167\232\146\153\229\190\183"
-L4_1.showcutscene = true
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.config_id = 77
-L5_1.gadget_id = 70350002
-L6_1 = {}
-L6_1.x = -4.9
-L6_1.y = -0.24
-L6_1.z = -83.906
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 177.663
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 126
-L6_1.gadget_id = 70211012
-L7_1 = {}
-L7_1.x = 1.28
-L7_1.y = 7.517
-L7_1.z = -119.299
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 269.4
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.drop_tag = "\230\136\152\230\150\151\228\184\173\231\186\167\232\146\153\229\190\183"
-L7_1 = GadgetState
-L7_1 = L7_1.ChestLocked
-L6_1.state = L7_1
-L6_1.isOneoff = true
-L6_1.persistent = true
-L7_1 = {}
-L7_1.config_id = 127
-L7_1.gadget_id = 70211012
-L8_1 = {}
-L8_1.x = -2.734
-L8_1.y = 7.517
-L8_1.z = -122.953
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 359.2
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.drop_tag = "\230\136\152\230\150\151\228\184\173\231\186\167\232\146\153\229\190\183"
-L8_1 = GadgetState
-L8_1 = L8_1.ChestLocked
-L7_1.state = L8_1
-L7_1.isOneoff = true
-L7_1.persistent = true
-L8_1 = {}
-L8_1.config_id = 128
-L8_1.gadget_id = 70211012
-L9_1 = {}
-L9_1.x = -9.135
-L9_1.y = 7.517
-L9_1.z = -122.652
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 359.9
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.drop_tag = "\230\136\152\230\150\151\228\184\173\231\186\167\232\146\153\229\190\183"
-L9_1 = GadgetState
-L9_1 = L9_1.ChestLocked
-L8_1.state = L9_1
-L8_1.isOneoff = true
-L8_1.persistent = true
-L9_1 = {}
-L9_1.config_id = 129
-L9_1.gadget_id = 70211012
-L10_1 = {}
-L10_1.x = -11.642
-L10_1.y = 7.517
-L10_1.z = -118.448
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 93.49
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.drop_tag = "\230\136\152\230\150\151\228\184\173\231\186\167\232\146\153\229\190\183"
-L10_1 = GadgetState
-L10_1 = L10_1.ChestLocked
-L9_1.state = L10_1
-L9_1.isOneoff = true
-L9_1.persistent = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 5
-L3_1 = RegionShape
-L3_1 = L3_1.CUBIC
-L2_1.shape = L3_1
-L3_1 = {}
-L3_1.x = 2.53
-L3_1.y = 5.91
-L3_1.z = 10.38
-L2_1.size = L3_1
-L3_1 = {}
-L3_1.x = 37.816
-L3_1.y = 1.516
-L3_1.z = -106.2
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.config_id = 6
-L4_1 = RegionShape
-L4_1 = L4_1.CUBIC
-L3_1.shape = L4_1
-L4_1 = {}
-L4_1.x = 3.02
-L4_1.y = 9.36
-L4_1.z = 17.84
-L3_1.size = L4_1
-L4_1 = {}
-L4_1.x = 13.8
-L4_1.y = 2.899
-L4_1.z = -75.214
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.config_id = 8
-L5_1 = RegionShape
-L5_1 = L5_1.CUBIC
-L4_1.shape = L5_1
-L5_1 = {}
-L5_1.x = 2.69
-L5_1.y = 18.81
-L5_1.z = 8.74
-L4_1.size = L5_1
-L5_1 = {}
-L5_1.x = 74.62
-L5_1.y = -0.484
-L5_1.z = -114.557
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.config_id = 9
-L6_1 = RegionShape
-L6_1 = L6_1.CUBIC
-L5_1.shape = L6_1
-L6_1 = {}
-L6_1.x = 2.46
-L6_1.y = 15.38
-L6_1.z = 10.11
-L5_1.size = L6_1
-L6_1 = {}
-L6_1.x = 142.004
-L6_1.y = -0.484
-L6_1.z = -114.956
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.config_id = 10
-L7_1 = RegionShape
-L7_1 = L7_1.CUBIC
-L6_1.shape = L7_1
-L7_1 = {}
-L7_1.x = 2.46
-L7_1.y = 15.24
-L7_1.z = 8.06
-L6_1.size = L7_1
-L7_1 = {}
-L7_1.x = 65.265
-L7_1.y = -0.483
-L7_1.z = -156.546
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.config_id = 11
-L8_1 = RegionShape
-L8_1 = L8_1.CUBIC
-L7_1.shape = L8_1
-L8_1 = {}
-L8_1.x = 2.14
-L8_1.y = 13.44
-L8_1.z = 8.65
-L7_1.size = L8_1
-L8_1 = {}
-L8_1.x = 37.776
-L8_1.y = -0.484
-L8_1.z = -154.862
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.config_id = 12
-L9_1 = RegionShape
-L9_1 = L9_1.CUBIC
-L8_1.shape = L9_1
-L9_1 = {}
-L9_1.x = 9.09
-L9_1.y = 15.54
-L9_1.z = 2.3
-L8_1.size = L9_1
-L9_1 = {}
-L9_1.x = 55.62
-L9_1.y = -0.484
-L9_1.z = -124.911
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.config_id = 13
-L10_1 = RegionShape
-L10_1 = L10_1.CUBIC
-L9_1.shape = L10_1
-L10_1 = {}
-L10_1.x = 11.93
-L10_1.y = 17.26
-L10_1.z = 3.18
-L9_1.size = L10_1
-L10_1 = {}
-L10_1.x = 11.789
-L10_1.y = -0.484
-L10_1.z = -192.948
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.config_id = 14
-L11_1 = RegionShape
-L11_1 = L11_1.CUBIC
-L10_1.shape = L11_1
-L11_1 = {}
-L11_1.x = 10.13
-L11_1.y = 24.11
-L11_1.z = 3.09
-L10_1.size = L11_1
-L11_1 = {}
-L11_1.x = -20.194
-L11_1.y = -0.568
-L11_1.z = -234.308
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.config_id = 15
-L12_1 = RegionShape
-L12_1 = L12_1.CUBIC
-L11_1.shape = L12_1
-L12_1 = {}
-L12_1.x = 17.5
-L12_1.y = 14.63
-L12_1.z = 2.79
-L11_1.size = L12_1
-L12_1 = {}
-L12_1.x = -66.6
-L12_1.y = 5.425
-L12_1.z = -179.311
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.config_id = 16
-L13_1 = RegionShape
-L13_1 = L13_1.CUBIC
-L12_1.shape = L13_1
-L13_1 = {}
-L13_1.x = 8.8
-L13_1.y = 12.31
-L13_1.z = 2.5
-L12_1.size = L13_1
-L13_1 = {}
-L13_1.x = -45.998
-L13_1.y = 2.017
-L13_1.z = -120.205
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.config_id = 17
-L14_1 = RegionShape
-L14_1 = L14_1.CUBIC
-L13_1.shape = L14_1
-L14_1 = {}
-L14_1.x = 3.89
-L14_1.y = 14.97
-L14_1.z = 13.13
-L13_1.size = L14_1
-L14_1 = {}
-L14_1.x = -22.903
-L14_1.y = 0.016
-L14_1.z = -74.02
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.config_id = 18
-L15_1 = RegionShape
-L15_1 = L15_1.SPHERE
-L14_1.shape = L15_1
-L14_1.radius = 5
-L15_1 = {}
-L15_1.x = -4.733
-L15_1.y = 0.016
-L15_1.z = -12.288
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.config_id = 50
-L16_1 = RegionShape
-L16_1 = L16_1.SPHERE
-L15_1.shape = L16_1
-L15_1.radius = 5
-L16_1 = {}
-L16_1.x = -5.324
-L16_1.y = 0.016
-L16_1.z = -23.993
-L15_1.pos = L16_1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-L1_1[14] = L15_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1000005
-L2_1.name = "ENTER_REGION_5"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ENTER_REGION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_ENTER_REGION_5"
-L2_1.action = "action_EVENT_ENTER_REGION_5"
-L2_1.trigger_count = 0
-L2_1.forbid_guest = false
-L3_1 = {}
-L3_1.config_id = 1000006
-L3_1.name = "ENTER_REGION_6"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_6"
-L3_1.action = "action_EVENT_ENTER_REGION_6"
-L3_1.trigger_count = 0
-L3_1.forbid_guest = false
-L4_1 = {}
-L4_1.config_id = 1000008
-L4_1.name = "ENTER_REGION_8"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_8"
-L4_1.action = "action_EVENT_ENTER_REGION_8"
-L4_1.trigger_count = 0
-L4_1.forbid_guest = false
-L5_1 = {}
-L5_1.config_id = 1000009
-L5_1.name = "ENTER_REGION_9"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ENTER_REGION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ENTER_REGION_9"
-L5_1.action = "action_EVENT_ENTER_REGION_9"
-L5_1.trigger_count = 0
-L5_1.forbid_guest = false
-L6_1 = {}
-L6_1.config_id = 1000010
-L6_1.name = "ENTER_REGION_10"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_ENTER_REGION
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_ENTER_REGION_10"
-L6_1.action = "action_EVENT_ENTER_REGION_10"
-L6_1.trigger_count = 0
-L6_1.forbid_guest = false
-L7_1 = {}
-L7_1.config_id = 1000011
-L7_1.name = "ENTER_REGION_11"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_ENTER_REGION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_ENTER_REGION_11"
-L7_1.action = "action_EVENT_ENTER_REGION_11"
-L7_1.trigger_count = 0
-L7_1.forbid_guest = false
-L8_1 = {}
-L8_1.config_id = 1000012
-L8_1.name = "ENTER_REGION_12"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_ENTER_REGION
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_ENTER_REGION_12"
-L8_1.action = "action_EVENT_ENTER_REGION_12"
-L8_1.trigger_count = 0
-L8_1.forbid_guest = false
-L9_1 = {}
-L9_1.config_id = 1000013
-L9_1.name = "ENTER_REGION_13"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_ENTER_REGION
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_ENTER_REGION_13"
-L9_1.action = "action_EVENT_ENTER_REGION_13"
-L9_1.trigger_count = 0
-L9_1.forbid_guest = false
-L10_1 = {}
-L10_1.config_id = 1000014
-L10_1.name = "ENTER_REGION_14"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_ENTER_REGION
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_ENTER_REGION_14"
-L10_1.action = "action_EVENT_ENTER_REGION_14"
-L10_1.trigger_count = 0
-L10_1.forbid_guest = false
-L11_1 = {}
-L11_1.config_id = 1000015
-L11_1.name = "ENTER_REGION_15"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_ENTER_REGION
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_ENTER_REGION_15"
-L11_1.action = "action_EVENT_ENTER_REGION_15"
-L11_1.trigger_count = 0
-L11_1.forbid_guest = false
-L12_1 = {}
-L12_1.config_id = 1000016
-L12_1.name = "ENTER_REGION_16"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_ENTER_REGION
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = "condition_EVENT_ENTER_REGION_16"
-L12_1.action = "action_EVENT_ENTER_REGION_16"
-L12_1.trigger_count = 0
-L12_1.forbid_guest = false
-L13_1 = {}
-L13_1.config_id = 1000017
-L13_1.name = "ENTER_REGION_17"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_ENTER_REGION
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_ENTER_REGION_17"
-L13_1.action = "action_EVENT_ENTER_REGION_17"
-L13_1.trigger_count = 0
-L13_1.forbid_guest = false
-L14_1 = {}
-L14_1.config_id = 1000018
-L14_1.name = "ENTER_REGION_18"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_ENTER_REGION
-L14_1.event = L15_1
-L14_1.source = ""
-L14_1.condition = "condition_EVENT_ENTER_REGION_18"
-L14_1.action = "action_EVENT_ENTER_REGION_18"
-L14_1.trigger_count = 0
-L14_1.forbid_guest = false
-L15_1 = {}
-L15_1.config_id = 1000050
-L15_1.name = "ENTER_REGION_50"
-L16_1 = EventType
-L16_1 = L16_1.EVENT_ENTER_REGION
-L15_1.event = L16_1
-L15_1.source = ""
-L15_1.condition = "condition_EVENT_ENTER_REGION_50"
-L15_1.action = "action_EVENT_ENTER_REGION_50"
-L15_1.forbid_guest = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-L1_1[14] = L15_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "grouplevel1"
-L2_1.value = 0
-L2_1.no_refresh = false
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "grouplevel3"
-L3_1.value = 0
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "grouplevel5"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 4
-L5_1.name = "grouplevel7"
-L5_1.value = 0
-L5_1.no_refresh = false
-L6_1 = {}
-L6_1.configId = 5
-L6_1.name = "grouplevel9"
-L6_1.value = 0
-L6_1.no_refresh = false
-L7_1 = {}
-L7_1.configId = 6
-L7_1.name = "grouplevel12"
-L7_1.value = 0
-L7_1.no_refresh = false
-L8_1 = {}
-L8_1.configId = 7
-L8_1.name = "grouplevel14"
-L8_1.value = 0
-L8_1.no_refresh = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = true
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 77
-L5_1 = 126
-L6_1 = 127
-L7_1 = 128
-L8_1 = 129
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 5
-L5_1 = 6
-L6_1 = 8
-L7_1 = 9
-L8_1 = 10
-L9_1 = 11
-L10_1 = 12
-L11_1 = 13
-L12_1 = 14
-L13_1 = 15
-L14_1 = 16
-L15_1 = 17
-L16_1 = 18
-L17_1 = 50
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L3_1[13] = L16_1
-L3_1[14] = L17_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ENTER_REGION_5"
-L5_1 = "ENTER_REGION_6"
-L6_1 = "ENTER_REGION_8"
-L7_1 = "ENTER_REGION_9"
-L8_1 = "ENTER_REGION_10"
-L9_1 = "ENTER_REGION_11"
-L10_1 = "ENTER_REGION_12"
-L11_1 = "ENTER_REGION_13"
-L12_1 = "ENTER_REGION_14"
-L13_1 = "ENTER_REGION_15"
-L14_1 = "ENTER_REGION_16"
-L15_1 = "ENTER_REGION_17"
-L16_1 = "ENTER_REGION_18"
-L17_1 = "ENTER_REGION_50"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L3_1[13] = L16_1
-L3_1[14] = L17_1
-L2_1.triggers = L3_1
-L3_1 = {}
-L4_1 = 1
-L3_1[1] = L4_1
-L2_1.npcs = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 5 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 230001019
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+	{ config_id = 1, npc_id = 86, pos = { x = -5.657, y = 0.017, z = -9.214 }, rot = { x = 0.000, y = 0.000, z = 0.000 } }
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 74, gadget_id = 70211001, pos = { x = -5.256, y = 0.016, z = -78.658 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_tag = "战斗低级蒙德", showcutscene = true, isOneoff = true, persistent = true },
+	{ config_id = 75, gadget_id = 70211001, pos = { x = -5.308, y = 0.017, z = -76.790 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_tag = "战斗低级蒙德", showcutscene = true, isOneoff = true, persistent = true },
+	{ config_id = 76, gadget_id = 70211011, pos = { x = -5.329, y = 0.016, z = -74.912 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, drop_tag = "战斗中级蒙德", showcutscene = true, isOneoff = true, persistent = true },
+	{ config_id = 77, gadget_id = 70350002, pos = { x = -4.900, y = -0.240, z = -83.906 }, rot = { x = 0.000, y = 177.663, z = 0.000 }, level = 1 },
+	{ config_id = 126, gadget_id = 70211012, pos = { x = 1.280, y = 7.517, z = -119.299 }, rot = { x = 0.000, y = 269.400, z = 0.000 }, level = 1, drop_tag = "战斗中级蒙德", state = GadgetState.ChestLocked, isOneoff = true, persistent = true },
+	{ config_id = 127, gadget_id = 70211012, pos = { x = -2.734, y = 7.517, z = -122.953 }, rot = { x = 0.000, y = 359.200, z = 0.000 }, level = 1, drop_tag = "战斗中级蒙德", state = GadgetState.ChestLocked, isOneoff = true, persistent = true },
+	{ config_id = 128, gadget_id = 70211012, pos = { x = -9.135, y = 7.517, z = -122.652 }, rot = { x = 0.000, y = 359.900, z = 0.000 }, level = 1, drop_tag = "战斗中级蒙德", state = GadgetState.ChestLocked, isOneoff = true, persistent = true },
+	{ config_id = 129, gadget_id = 70211012, pos = { x = -11.642, y = 7.517, z = -118.448 }, rot = { x = 0.000, y = 93.490, z = 0.000 }, level = 1, drop_tag = "战斗中级蒙德", state = GadgetState.ChestLocked, isOneoff = true, persistent = true }
+}
+
+-- 区域
+regions = {
+	{ config_id = 5, shape = RegionShape.CUBIC, size = { x = 2.530, y = 5.910, z = 10.380 }, pos = { x = 37.816, y = 1.516, z = -106.200 } },
+	{ config_id = 6, shape = RegionShape.CUBIC, size = { x = 3.020, y = 9.360, z = 17.840 }, pos = { x = 13.800, y = 2.899, z = -75.214 } },
+	{ config_id = 8, shape = RegionShape.CUBIC, size = { x = 2.690, y = 18.810, z = 8.740 }, pos = { x = 74.620, y = -0.484, z = -114.557 } },
+	{ config_id = 9, shape = RegionShape.CUBIC, size = { x = 2.460, y = 15.380, z = 10.110 }, pos = { x = 142.004, y = -0.484, z = -114.956 } },
+	{ config_id = 10, shape = RegionShape.CUBIC, size = { x = 2.460, y = 15.240, z = 8.060 }, pos = { x = 65.265, y = -0.483, z = -156.546 } },
+	{ config_id = 11, shape = RegionShape.CUBIC, size = { x = 2.140, y = 13.440, z = 8.650 }, pos = { x = 37.776, y = -0.484, z = -154.862 } },
+	{ config_id = 12, shape = RegionShape.CUBIC, size = { x = 9.090, y = 15.540, z = 2.300 }, pos = { x = 55.620, y = -0.484, z = -124.911 } },
+	{ config_id = 13, shape = RegionShape.CUBIC, size = { x = 11.930, y = 17.260, z = 3.180 }, pos = { x = 11.789, y = -0.484, z = -192.948 } },
+	{ config_id = 14, shape = RegionShape.CUBIC, size = { x = 10.130, y = 24.110, z = 3.090 }, pos = { x = -20.194, y = -0.568, z = -234.308 } },
+	{ config_id = 15, shape = RegionShape.CUBIC, size = { x = 17.500, y = 14.630, z = 2.790 }, pos = { x = -66.600, y = 5.425, z = -179.311 } },
+	{ config_id = 16, shape = RegionShape.CUBIC, size = { x = 8.800, y = 12.310, z = 2.500 }, pos = { x = -45.998, y = 2.017, z = -120.205 } },
+	{ config_id = 17, shape = RegionShape.CUBIC, size = { x = 3.890, y = 14.970, z = 13.130 }, pos = { x = -22.903, y = 0.016, z = -74.020 } },
+	{ config_id = 18, shape = RegionShape.SPHERE, radius = 5, pos = { x = -4.733, y = 0.016, z = -12.288 } },
+	{ config_id = 50, shape = RegionShape.SPHERE, radius = 5, pos = { x = -5.324, y = 0.016, z = -23.993 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000005, name = "ENTER_REGION_5", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_5", action = "action_EVENT_ENTER_REGION_5", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000006, name = "ENTER_REGION_6", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_6", action = "action_EVENT_ENTER_REGION_6", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000008, name = "ENTER_REGION_8", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_8", action = "action_EVENT_ENTER_REGION_8", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000009, name = "ENTER_REGION_9", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_9", action = "action_EVENT_ENTER_REGION_9", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000010, name = "ENTER_REGION_10", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_10", action = "action_EVENT_ENTER_REGION_10", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000011, name = "ENTER_REGION_11", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_11", action = "action_EVENT_ENTER_REGION_11", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000012, name = "ENTER_REGION_12", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_12", action = "action_EVENT_ENTER_REGION_12", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000013, name = "ENTER_REGION_13", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_13", action = "action_EVENT_ENTER_REGION_13", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000014, name = "ENTER_REGION_14", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_14", action = "action_EVENT_ENTER_REGION_14", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000015, name = "ENTER_REGION_15", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_15", action = "action_EVENT_ENTER_REGION_15", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000016, name = "ENTER_REGION_16", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_16", action = "action_EVENT_ENTER_REGION_16", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000017, name = "ENTER_REGION_17", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_17", action = "action_EVENT_ENTER_REGION_17", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000018, name = "ENTER_REGION_18", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_18", action = "action_EVENT_ENTER_REGION_18", trigger_count = 0, forbid_guest = false },
+	{ config_id = 1000050, name = "ENTER_REGION_50", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_50", action = "action_EVENT_ENTER_REGION_50", forbid_guest = false }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "grouplevel1", value = 0, no_refresh = false },
+	{ config_id = 2, name = "grouplevel3", value = 0, no_refresh = false },
+	{ config_id = 3, name = "grouplevel5", value = 0, no_refresh = false },
+	{ config_id = 4, name = "grouplevel7", value = 0, no_refresh = false },
+	{ config_id = 5, name = "grouplevel9", value = 0, no_refresh = false },
+	{ config_id = 6, name = "grouplevel12", value = 0, no_refresh = false },
+	{ config_id = 7, name = "grouplevel14", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 77, 126, 127, 128, 129 },
+		regions = { 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 50 },
+		triggers = { "ENTER_REGION_5", "ENTER_REGION_6", "ENTER_REGION_8", "ENTER_REGION_9", "ENTER_REGION_10", "ENTER_REGION_11", "ENTER_REGION_12", "ENTER_REGION_13", "ENTER_REGION_14", "ENTER_REGION_15", "ENTER_REGION_16", "ENTER_REGION_17", "ENTER_REGION_18", "ENTER_REGION_50" },
+		npcs = { 1 },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_5(context, evt)
+	if evt.param1 ~= 5 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_5 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001001
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel1"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel1"
-    L2_2 = L2_2(L3_2, L4_2)
-    c_grouplevel1 = L2_2
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 230001001
-    L5_2 = c_grouplevel1
-    L4_2.refresh_level_revise = L5_2
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel1"
-    L2_2 = L2_2(L3_2, L4_2)
-    c_grouplevel1 = L2_2
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 230001001
-    L5_2 = c_grouplevel1
-    L4_2.refresh_level_revise = L5_2
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001004
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001006
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001008
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001016
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_5(context, evt)
+	-- 重新生成指定group，默认为独立随机
+	-- 判断如果group1中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001001) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel1", 1)
+	   c_grouplevel1 = ScriptLib.GetGroupVariableValue(context, "grouplevel1")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001001, refresh_level_revise = c_grouplevel1}) then
+			return -1
+		end
+	
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001001) > 0 then
+	c_grouplevel1 = ScriptLib.GetGroupVariableValue(context, "grouplevel1")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001001, refresh_level_revise = c_grouplevel1}) then
+			return -1
+		end
+	
+	end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001004 }) then
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001006 }) then
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001008 }) then
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001016 }) then
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_5 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 6 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_6(context, evt)
+	if evt.param1 ~= 6 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_6 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001003
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L2_2 = L2_2(L3_2, L4_2)
-    c_grouplevel3 = L2_2
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 230001003
-    L5_2 = c_grouplevel3
-    L4_2.refresh_level_revise = L5_2
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001003
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L2_2 = L2_2(L3_2, L4_2)
-    c_grouplevel3 = L2_2
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RefreshGroup
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.group_id = 230001003
-    L5_2 = c_grouplevel3
-    L4_2.refresh_level_revise = L5_2
-    L2_2 = L2_2(L3_2, L4_2)
-    if 0 ~= L2_2 then
-      L2_2 = -1
-      return L2_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001016
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001004
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_6(context, evt)
+	-- 重新生成指定group，默认为独立随机
+	-- 判断如果group3中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001003) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel3", 1)
+	   c_grouplevel3 = ScriptLib.GetGroupVariableValue(context, "grouplevel3")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001003, refresh_level_revise = c_grouplevel3}) then
+			return -1
+		end
+	end
+	-- 判断如果group3中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001003) > 0 then
+	c_grouplevel3 = ScriptLib.GetGroupVariableValue(context, "grouplevel3")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001003, refresh_level_revise = c_grouplevel3}) then
+			return -1
+		end
+	
+	end
+	
+	
+	
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001016 }) then
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001004 }) then
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_6 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 8 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_8(context, evt)
+	if evt.param1 ~= 8 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_8 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001005
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel5"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel5"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001005
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001005
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel5"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001005
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001006
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001014
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_8(context, evt)
+	-- 判断如果230001005中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001005) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel5", 1)
+	   local c_grouplevel5 = ScriptLib.GetGroupVariableValue(context, "grouplevel5")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001005, refresh_level_revise = c_grouplevel5}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001005) > 0 then
+	local c_grouplevel5 = ScriptLib.GetGroupVariableValue(context, "grouplevel5")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001005, refresh_level_revise = c_grouplevel5}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001006 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001002 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001014 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_8 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 9 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_9(context, evt)
+	if evt.param1 ~= 9 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_9 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001003
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001003
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001003
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001003
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_9(context, evt)
+	-- 判断如果230001003中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001003) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel3", 1)
+	   local c_grouplevel3 = ScriptLib.GetGroupVariableValue(context, "grouplevel3")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001003, refresh_level_revise = c_grouplevel3}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001003) > 0 then
+	local c_grouplevel3 = ScriptLib.GetGroupVariableValue(context, "grouplevel3")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001003, refresh_level_revise = c_grouplevel3}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_9 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 10 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_10(context, evt)
+	if evt.param1 ~= 10 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_10 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001007
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001007
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001007
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001007
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001009
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel9"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel9"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001009
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001009
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel9"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001009
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001003
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001003
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001003
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001003
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001006
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001010
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001011
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_10(context, evt)
+	-- 判断如果230001007中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001007) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel7", 1)
+	   local c_grouplevel7 = ScriptLib.GetGroupVariableValue(context, "grouplevel7")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001007, refresh_level_revise = c_grouplevel7}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001007) > 0 then
+	local c_grouplevel7 = ScriptLib.GetGroupVariableValue(context, "grouplevel7")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001007, refresh_level_revise = c_grouplevel7}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 判断如果230001009中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001009) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel9", 1)
+	   local c_grouplevel9 = ScriptLib.GetGroupVariableValue(context, "grouplevel9")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001009, refresh_level_revise = c_grouplevel9}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001009) > 0 then
+	local c_grouplevel9 = ScriptLib.GetGroupVariableValue(context, "grouplevel9")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001009, refresh_level_revise = c_grouplevel9}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 判断如果230001003中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001003) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel3", 1)
+	   local c_grouplevel3 = ScriptLib.GetGroupVariableValue(context, "grouplevel3")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001003, refresh_level_revise = c_grouplevel3}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001003) > 0 then
+	local c_grouplevel3 = ScriptLib.GetGroupVariableValue(context, "grouplevel3")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001003, refresh_level_revise = c_grouplevel3}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001006 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001010 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001011 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_10 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 11 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_11(context, evt)
+	if evt.param1 ~= 11 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_11 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001003
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001003
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001003
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel3"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001003
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001009
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel9"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel9"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001009
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001009
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel9"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001009
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001010
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001015
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001004
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_11(context, evt)
+	-- 判断如果230001003中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001003) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel3", 1)
+	   local c_grouplevel3 = ScriptLib.GetGroupVariableValue(context, "grouplevel3")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001003, refresh_level_revise = c_grouplevel3}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001003) > 0 then
+	local c_grouplevel3 = ScriptLib.GetGroupVariableValue(context, "grouplevel3")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001003, refresh_level_revise = c_grouplevel3}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 判断如果230001009中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001009) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel9", 1)
+	   local c_grouplevel9 = ScriptLib.GetGroupVariableValue(context, "grouplevel9")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001009, refresh_level_revise = c_grouplevel9}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001009) > 0 then
+	local c_grouplevel9 = ScriptLib.GetGroupVariableValue(context, "grouplevel9")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001009, refresh_level_revise = c_grouplevel9}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001010 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001015 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001004 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001002 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_11 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 12 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_12(context, evt)
+	if evt.param1 ~= 12 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_12 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001007
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001007
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001007
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001007
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001009
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel9"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel9"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001009
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001009
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel9"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001009
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001008
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001004
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_12(context, evt)
+	-- 判断如果230001007中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001007) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel7", 1)
+	   local c_grouplevel7 = ScriptLib.GetGroupVariableValue(context, "grouplevel7")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001007, refresh_level_revise = c_grouplevel7}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001007) > 0 then
+	local c_grouplevel7 = ScriptLib.GetGroupVariableValue(context, "grouplevel7")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001007, refresh_level_revise = c_grouplevel7}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 判断如果230001009中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001009) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel9", 1)
+	   local c_grouplevel9 = ScriptLib.GetGroupVariableValue(context, "grouplevel9")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001009, refresh_level_revise = c_grouplevel9}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001009) > 0 then
+	local c_grouplevel9 = ScriptLib.GetGroupVariableValue(context, "grouplevel9")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001009, refresh_level_revise = c_grouplevel9}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001008 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001002 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001004 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_12 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 13 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_13(context, evt)
+	if evt.param1 ~= 13 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_13 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001012
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel12"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel12"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001012
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001012
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel12"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001012
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001013
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001015
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001006
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_13(context, evt)
+	-- 判断如果230001012中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001012) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel12", 1)
+	   local c_grouplevel12 = ScriptLib.GetGroupVariableValue(context, "grouplevel12")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001012, refresh_level_revise = c_grouplevel12}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001012) > 0 then
+	local c_grouplevel12 = ScriptLib.GetGroupVariableValue(context, "grouplevel12")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001012, refresh_level_revise = c_grouplevel12}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001013 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001015 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001006 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_13 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 14 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_14(context, evt)
+	if evt.param1 ~= 14 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_14 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001007
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001007
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001007
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001007
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001014
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel14"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel14"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001014
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001014
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel14"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001014
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001013
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001015
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_14(context, evt)
+	-- 判断如果230001007中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001007) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel7", 1)
+	   local c_grouplevel7 = ScriptLib.GetGroupVariableValue(context, "grouplevel7")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001007, refresh_level_revise = c_grouplevel7}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001007) > 0 then
+	local c_grouplevel7 = ScriptLib.GetGroupVariableValue(context, "grouplevel7")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001007, refresh_level_revise = c_grouplevel7}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 判断如果230001014中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001014) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel14", 1)
+	   local c_grouplevel14 = ScriptLib.GetGroupVariableValue(context, "grouplevel14")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001014, refresh_level_revise = c_grouplevel14}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001014) > 0 then
+	local c_grouplevel14 = ScriptLib.GetGroupVariableValue(context, "grouplevel14")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001014, refresh_level_revise = c_grouplevel14}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001013 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001015 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_14 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 15 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_15(context, evt)
+	if evt.param1 ~= 15 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_15 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001007
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001007
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001007
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel7"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001007
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001012
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel12"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel12"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001012
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001012
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel12"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001012
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001015
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001016
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001010
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_15(context, evt)
+	-- 判断如果230001007中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001007) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel7", 1)
+	   local c_grouplevel7 = ScriptLib.GetGroupVariableValue(context, "grouplevel7")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001007, refresh_level_revise = c_grouplevel7}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001007) > 0 then
+	local c_grouplevel7 = ScriptLib.GetGroupVariableValue(context, "grouplevel7")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001007, refresh_level_revise = c_grouplevel7}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 判断如果230001012中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001012) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel12", 1)
+	   local c_grouplevel12 = ScriptLib.GetGroupVariableValue(context, "grouplevel12")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001012, refresh_level_revise = c_grouplevel12}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001012) > 0 then
+	local c_grouplevel12 = ScriptLib.GetGroupVariableValue(context, "grouplevel12")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001012, refresh_level_revise = c_grouplevel12}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001015 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001016 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001010 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_15 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 16 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_16(context, evt)
+	if evt.param1 ~= 16 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_16 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001001
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel1"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel1"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001001
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel1"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001001
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001011
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001010
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_16(context, evt)
+	-- 判断如果230001001中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001001) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel1", 1)
+	   local c_grouplevel1 = ScriptLib.GetGroupVariableValue(context, "grouplevel1")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001001, refresh_level_revise = c_grouplevel1}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001001) > 0 then
+	local c_grouplevel1 = ScriptLib.GetGroupVariableValue(context, "grouplevel1")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001001, refresh_level_revise = c_grouplevel1}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001002 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001011 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001010 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_16 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 17 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_17(context, evt)
+	if evt.param1 ~= 17 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_17 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001014
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel14"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel14"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001014
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001014
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel14"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001014
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001015
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 230001002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_randall"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_17(context, evt)
+	-- 判断如果230001014中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001014) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel14", 1)
+	   local c_grouplevel14 = ScriptLib.GetGroupVariableValue(context, "grouplevel14")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001014, refresh_level_revise = c_grouplevel14}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001014) > 0 then
+	local c_grouplevel14 = ScriptLib.GetGroupVariableValue(context, "grouplevel14")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001014, refresh_level_revise = c_grouplevel14}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001015 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	-- 重新生成指定group，默认为独立随机
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001002 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_randall")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_17 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 18 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_18(context, evt)
+	if evt.param1 ~= 18 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_18 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001001
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ChangeGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel1"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel1"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001001
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCountByGroupId
-  L3_2 = A0_2
-  L4_2 = 230001001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 < L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "grouplevel1"
-    L2_2 = L2_2(L3_2, L4_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.RefreshGroup
-    L4_2 = A0_2
-    L5_2 = {}
-    L5_2.group_id = 230001001
-    L5_2.refresh_level_revise = L2_2
-    L3_2 = L3_2(L4_2, L5_2)
-    if 0 ~= L3_2 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.PrintContextLog
-      L4_2 = A0_2
-      L5_2 = "@@ LUA_WARNING : test_curseMaze_groupLevel"
-      L3_2(L4_2, L5_2)
-      L3_2 = -1
-      return L3_2
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_18(context, evt)
+	-- 判断如果230001001中怪物已经被清除完，那么再次刷新会递增其level等级，提高group的数值强度
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001001) == 0 then
+	
+	   ScriptLib.ChangeGroupVariableValue(context, "grouplevel1", 1)
+	   local c_grouplevel1 = ScriptLib.GetGroupVariableValue(context, "grouplevel1")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001001, refresh_level_revise = c_grouplevel1}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	end
+	-- 判断如果group1中怪物没有清除完，那么单纯刷新
+	if ScriptLib.GetGroupMonsterCountByGroupId(context, 230001001) > 0 then
+	local c_grouplevel1 = ScriptLib.GetGroupVariableValue(context, "grouplevel1")
+	   if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 230001001, refresh_level_revise = c_grouplevel1}) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : test_curseMaze_groupLevel")
+			return -1
+		end
+	
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_18 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 50 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_50(context, evt)
+	if evt.param1 ~= 50 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_50 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 20010101
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_50(context, evt)
+	-- 调用提示id为 20010101 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 20010101) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_50 = L1_1

@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 3810169769,
-  "descTextMapHash": 0,
+  
   "id": 318,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            31801,
-            0
-          ],
+          "param": [31801, 0],
           "count": 1
         }
       ],
@@ -84,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            31802,
-            0
-          ],
+          "param": [31802, 0],
           "count": 0
         }
       ],
@@ -125,10 +119,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "31802",
-            "2"
-          ]
+          "param": ["31802", "2"]
         }
       ],
       "priority": 0,
@@ -137,9 +128,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 3180201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10092
-      ],
+      "npcIdRawNum": [10092],
       "GHNCIOJDIEA": "QuestDialogue/Q318/InterContainer_Q31802",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

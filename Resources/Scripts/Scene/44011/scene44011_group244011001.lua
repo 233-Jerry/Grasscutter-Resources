@@ -1,1508 +1,564 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1
-L0_1 = {}
-L0_1.group_id = 244011001
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1001
-L2_1.gadget_id = 70360010
-L3_1 = {}
-L3_1.x = -0.055
-L3_1.y = -0.225
-L3_1.z = 2.536
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 1009
-L3_1.gadget_id = 44000006
-L4_1 = {}
-L4_1.x = -0.003
-L4_1.y = -0.102
-L4_1.z = 12.848
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 1010
-L4_1.gadget_id = 49001017
-L5_1 = {}
-L5_1.x = 12.5
-L5_1.y = -0.102
-L5_1.z = 8.7
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.is_use_point_array = true
-L5_1 = {}
-L5_1.config_id = 1011
-L5_1.gadget_id = 49001017
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = -0.102
-L6_1.z = -13.0
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.is_use_point_array = true
-L6_1 = {}
-L6_1.config_id = 1012
-L6_1.gadget_id = 49001017
-L7_1 = {}
-L7_1.x = -12.5
-L7_1.y = -0.102
-L7_1.z = 8.7
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.is_use_point_array = true
-L7_1 = {}
-L7_1.config_id = 1013
-L7_1.gadget_id = 49001019
-L8_1 = {}
-L8_1.x = 12.5
-L8_1.y = -0.102
-L8_1.z = 8.7
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.is_use_point_array = true
-L8_1 = {}
-L8_1.config_id = 1014
-L8_1.gadget_id = 49001019
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = -0.102
-L9_1.z = -13.0
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L9_1 = {}
-L9_1.config_id = 1015
-L9_1.gadget_id = 49001019
-L10_1 = {}
-L10_1.x = -12.5
-L10_1.y = -0.102
-L10_1.z = 8.7
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L9_1.is_use_point_array = true
-L10_1 = {}
-L10_1.config_id = 1016
-L10_1.gadget_id = 49001017
-L11_1 = {}
-L11_1.x = 8.0
-L11_1.y = -0.102
-L11_1.z = -8.0
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 1
-L10_1.is_use_point_array = true
-L11_1 = {}
-L11_1.config_id = 1017
-L11_1.gadget_id = 49001017
-L12_1 = {}
-L12_1.x = -8.0
-L12_1.y = -0.102
-L12_1.z = -8.0
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 1
-L11_1.is_use_point_array = true
-L12_1 = {}
-L12_1.config_id = 1018
-L12_1.gadget_id = 49001017
-L13_1 = {}
-L13_1.x = -8.0
-L13_1.y = -0.102
-L13_1.z = 7.0
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 0.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 1
-L12_1.is_use_point_array = true
-L13_1 = {}
-L13_1.config_id = 1019
-L13_1.gadget_id = 49001017
-L14_1 = {}
-L14_1.x = 8.0
-L14_1.y = -0.102
-L14_1.z = 7.0
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 0.0
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 1
-L13_1.is_use_point_array = true
-L14_1 = {}
-L14_1.config_id = 1020
-L14_1.gadget_id = 49001019
-L15_1 = {}
-L15_1.x = 8.0
-L15_1.y = -0.102
-L15_1.z = -8.0
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 0.0
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 1
-L14_1.is_use_point_array = true
-L15_1 = {}
-L15_1.config_id = 1021
-L15_1.gadget_id = 49001019
-L16_1 = {}
-L16_1.x = -8.0
-L16_1.y = -0.102
-L16_1.z = -8.0
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 0.0
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 1
-L15_1.is_use_point_array = true
-L16_1 = {}
-L16_1.config_id = 1022
-L16_1.gadget_id = 49001019
-L17_1 = {}
-L17_1.x = -8.0
-L17_1.y = -0.102
-L17_1.z = 7.0
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 0.0
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 1
-L16_1.is_use_point_array = true
-L17_1 = {}
-L17_1.config_id = 1023
-L17_1.gadget_id = 49001019
-L18_1 = {}
-L18_1.x = 8.0
-L18_1.y = -0.102
-L18_1.z = 7.0
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 0.0
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 1
-L17_1.is_use_point_array = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-L1_1[12] = L13_1
-L1_1[13] = L14_1
-L1_1[14] = L15_1
-L1_1[15] = L16_1
-L1_1[16] = L17_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1024
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 30
-L3_1 = {}
-L3_1.x = 0.561
-L3_1.y = 0.398
-L3_1.z = 0.512
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.config_id = 1025
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 30
-L4_1 = {}
-L4_1.x = 0.561
-L4_1.y = 0.398
-L4_1.z = 0.512
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.config_id = 1026
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 30
-L5_1 = {}
-L5_1.x = 0.561
-L5_1.y = 0.398
-L5_1.z = 0.512
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.config_id = 1027
-L6_1 = RegionShape
-L6_1 = L6_1.SPHERE
-L5_1.shape = L6_1
-L5_1.radius = 30
-L6_1 = {}
-L6_1.x = 0.561
-L6_1.y = 0.398
-L6_1.z = 0.512
-L5_1.pos = L6_1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1001002
-L2_1.name = "GADGET_CREATE_1002"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGET_CREATE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GADGET_CREATE_1002"
-L2_1.action = "action_EVENT_GADGET_CREATE_1002"
-L3_1 = {}
-L3_1.config_id = 1001003
-L3_1.name = "SELECT_OPTION_1003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SELECT_OPTION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_SELECT_OPTION_1003"
-L3_1.action = "action_EVENT_SELECT_OPTION_1003"
-L4_1 = {}
-L4_1.config_id = 1001004
-L4_1.name = "CHALLENGE_SUCCESS_1004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_CHALLENGE_SUCCESS
-L4_1.event = L5_1
-L4_1.source = "202"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_CHALLENGE_SUCCESS_1004"
-L5_1 = {}
-L5_1.config_id = 1001005
-L5_1.name = "CHALLENGE_FAIL_1005"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_CHALLENGE_FAIL
-L5_1.event = L6_1
-L5_1.source = "202"
-L5_1.condition = ""
-L5_1.action = "action_EVENT_CHALLENGE_FAIL_1005"
-L6_1 = {}
-L6_1.config_id = 1001006
-L6_1.name = "CHALLENGE_FAIL_1006"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_CHALLENGE_FAIL
-L6_1.event = L7_1
-L6_1.source = "101"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_CHALLENGE_FAIL_1006"
-L7_1 = {}
-L7_1.config_id = 1001007
-L7_1.name = "DUNGEON_ALL_AVATAR_DIE_1007"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_DUNGEON_ALL_AVATAR_DIE
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1007"
-L7_1.action = "action_EVENT_DUNGEON_ALL_AVATAR_DIE_1007"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1001008
-L8_1.name = "CHALLENGE_SUCCESS_1008"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_CHALLENGE_SUCCESS
-L8_1.event = L9_1
-L8_1.source = "201"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_CHALLENGE_SUCCESS_1008"
-L9_1 = {}
-L9_1.config_id = 1001024
-L9_1.name = "ENTER_REGION_1024"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_ENTER_REGION
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = ""
-L9_1.action = "action_EVENT_ENTER_REGION_1024"
-L10_1 = {}
-L10_1.config_id = 1001025
-L10_1.name = "ENTER_REGION_1025"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_ENTER_REGION
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = ""
-L10_1.action = "action_EVENT_ENTER_REGION_1025"
-L11_1 = {}
-L11_1.config_id = 1001026
-L11_1.name = "ENTER_REGION_1026"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_ENTER_REGION
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = ""
-L11_1.action = "action_EVENT_ENTER_REGION_1026"
-L12_1 = {}
-L12_1.config_id = 1001027
-L12_1.name = "ENTER_REGION_1027"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_ENTER_REGION
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = ""
-L12_1.action = "action_EVENT_ENTER_REGION_1027"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-L1_1[11] = L12_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1028
-L3_1 = {}
-L3_1.x = 0.031
-L3_1.y = -0.102
-L3_1.z = -7.151
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.tag = 2
-L1_1[1] = L2_1
-points = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "IS_IN_LIMIT_TIME"
-L2_1.value = 0
-L2_1.no_refresh = false
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 1001
-L5_1 = 1009
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GADGET_CREATE_1002"
-L5_1 = "SELECT_OPTION_1003"
-L6_1 = "CHALLENGE_SUCCESS_1004"
-L7_1 = "CHALLENGE_FAIL_1005"
-L8_1 = "CHALLENGE_FAIL_1006"
-L9_1 = "DUNGEON_ALL_AVATAR_DIE_1007"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "CHALLENGE_SUCCESS_1008"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 1010
-L7_1 = 1011
-L8_1 = 1012
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L6_1 = 1024
-L5_1[1] = L6_1
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "ENTER_REGION_1024"
-L5_1[1] = L6_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 1013
-L8_1 = 1014
-L9_1 = 1015
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L7_1 = 1025
-L6_1[1] = L7_1
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "ENTER_REGION_1025"
-L6_1[1] = L7_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L8_1 = 1016
-L9_1 = 1017
-L10_1 = 1018
-L11_1 = 1019
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L6_1.gadgets = L7_1
-L7_1 = {}
-L8_1 = 1026
-L7_1[1] = L8_1
-L6_1.regions = L7_1
-L7_1 = {}
-L8_1 = "ENTER_REGION_1026"
-L7_1[1] = L8_1
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L9_1 = 1020
-L10_1 = 1021
-L11_1 = 1022
-L12_1 = 1023
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L8_1[3] = L11_1
-L8_1[4] = L12_1
-L7_1.gadgets = L8_1
-L8_1 = {}
-L9_1 = 1027
-L8_1[1] = L9_1
-L7_1.regions = L8_1
-L8_1 = {}
-L9_1 = "ENTER_REGION_1027"
-L8_1[1] = L9_1
-L7_1.triggers = L8_1
-L7_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 244011001
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 1001, gadget_id = 70360010, pos = { x = -0.055, y = -0.225, z = 2.536 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	-- 出生区域回能回血物件
+	{ config_id = 1009, gadget_id = 44000006, pos = { x = -0.003, y = -0.102, z = 12.848 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 1010, gadget_id = 49001017, pos = { x = 12.500, y = -0.102, z = 8.700 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1011, gadget_id = 49001017, pos = { x = 0.000, y = -0.102, z = -13.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1012, gadget_id = 49001017, pos = { x = -12.500, y = -0.102, z = 8.700 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1013, gadget_id = 49001019, pos = { x = 12.500, y = -0.102, z = 8.700 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1014, gadget_id = 49001019, pos = { x = 0.000, y = -0.102, z = -13.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1015, gadget_id = 49001019, pos = { x = -12.500, y = -0.102, z = 8.700 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1016, gadget_id = 49001017, pos = { x = 8.000, y = -0.102, z = -8.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1017, gadget_id = 49001017, pos = { x = -8.000, y = -0.102, z = -8.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1018, gadget_id = 49001017, pos = { x = -8.000, y = -0.102, z = 7.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1019, gadget_id = 49001017, pos = { x = 8.000, y = -0.102, z = 7.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1020, gadget_id = 49001019, pos = { x = 8.000, y = -0.102, z = -8.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1021, gadget_id = 49001019, pos = { x = -8.000, y = -0.102, z = -8.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1022, gadget_id = 49001019, pos = { x = -8.000, y = -0.102, z = 7.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	{ config_id = 1023, gadget_id = 49001019, pos = { x = 8.000, y = -0.102, z = 7.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true }
+}
+
+-- 区域
+regions = {
+	{ config_id = 1024, shape = RegionShape.SPHERE, radius = 30, pos = { x = 0.561, y = 0.398, z = 0.512 } },
+	{ config_id = 1025, shape = RegionShape.SPHERE, radius = 30, pos = { x = 0.561, y = 0.398, z = 0.512 } },
+	{ config_id = 1026, shape = RegionShape.SPHERE, radius = 30, pos = { x = 0.561, y = 0.398, z = 0.512 } },
+	{ config_id = 1027, shape = RegionShape.SPHERE, radius = 30, pos = { x = 0.561, y = 0.398, z = 0.512 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1001002, name = "GADGET_CREATE_1002", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_1002", action = "action_EVENT_GADGET_CREATE_1002" },
+	{ config_id = 1001003, name = "SELECT_OPTION_1003", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_1003", action = "action_EVENT_SELECT_OPTION_1003" },
+	-- 限时子挑战成功，父挑战直接成功
+	{ config_id = 1001004, name = "CHALLENGE_SUCCESS_1004", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "202", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_1004" },
+	-- 限时子挑战失败，切到suite2继续判定父挑战
+	{ config_id = 1001005, name = "CHALLENGE_FAIL_1005", event = EventType.EVENT_CHALLENGE_FAIL, source = "202", condition = "", action = "action_EVENT_CHALLENGE_FAIL_1005" },
+	-- 父挑战失败，地城重置
+	{ config_id = 1001006, name = "CHALLENGE_FAIL_1006", event = EventType.EVENT_CHALLENGE_FAIL, source = "101", condition = "", action = "action_EVENT_CHALLENGE_FAIL_1006" },
+	-- 全角色死亡，父挑战直接失败
+	{ config_id = 1001007, name = "DUNGEON_ALL_AVATAR_DIE_1007", event = EventType.EVENT_DUNGEON_ALL_AVATAR_DIE, source = "", condition = "condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1007", action = "action_EVENT_DUNGEON_ALL_AVATAR_DIE_1007", trigger_count = 0 },
+	-- 普通子挑战成功，父挑战直接成功
+	{ config_id = 1001008, name = "CHALLENGE_SUCCESS_1008", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "201", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_1008" },
+	{ config_id = 1001024, name = "ENTER_REGION_1024", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "action_EVENT_ENTER_REGION_1024" },
+	{ config_id = 1001025, name = "ENTER_REGION_1025", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "action_EVENT_ENTER_REGION_1025" },
+	{ config_id = 1001026, name = "ENTER_REGION_1026", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "action_EVENT_ENTER_REGION_1026" },
+	{ config_id = 1001027, name = "ENTER_REGION_1027", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "action_EVENT_ENTER_REGION_1027" }
+}
+
+-- 点位
+points = {
+	{ config_id = 1028, pos = { x = 0.031, y = -0.102, z = -7.151 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, tag = 2 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "IS_IN_LIMIT_TIME", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1001, 1009 },
+		regions = { },
+		triggers = { "GADGET_CREATE_1002", "SELECT_OPTION_1003", "CHALLENGE_SUCCESS_1004", "CHALLENGE_FAIL_1005", "CHALLENGE_FAIL_1006", "DUNGEON_ALL_AVATAR_DIE_1007" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "CHALLENGE_SUCCESS_1008" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = 三个轰炸区域,
+		monsters = { },
+		gadgets = { 1010, 1011, 1012 },
+		regions = { 1024 },
+		triggers = { "ENTER_REGION_1024" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = 三个轰炸区域-强化版,
+		monsters = { },
+		gadgets = { 1013, 1014, 1015 },
+		regions = { 1025 },
+		triggers = { "ENTER_REGION_1025" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = 四个轰炸区域,
+		monsters = { },
+		gadgets = { 1016, 1017, 1018, 1019 },
+		regions = { 1026 },
+		triggers = { "ENTER_REGION_1026" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 6,
+		-- description = 四个轰炸区域-强化版,
+		monsters = { },
+		gadgets = { 1020, 1021, 1022, 1023 },
+		regions = { 1027 },
+		triggers = { "ENTER_REGION_1027" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_1002(context, evt)
+	if 1001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_1002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 244011001
-  L5_2 = 1001
-  L6_2 = {}
-  L7_2 = 175
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_1002(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 244011001, 1001, {175}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_1002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 175 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_1003(context, evt)
+	-- 判断是gadgetid 1001 option_id 175
+	if 1001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 175 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_1003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2
-  L2_2 = 0
-  L3_2 = 0
-  L4_2 = 0
-  L5_2 = 0
-  L6_2 = 0
-  L7_2 = 0
-  if not L7_2 then
-    L7_2 = -1
-  end
-  L8_2 = ScriptLib
-  L8_2 = L8_2.GetChannellerSlabLoopDungeonLimitTime
-  L9_2 = A0_2
-  L8_2 = L8_2(L9_2)
-  if L7_2 ~= L8_2 then
-    L7_2 = ScriptLib
-    L7_2 = L7_2.GetChannellerSlabLoopDungeonLimitTime
-    L8_2 = A0_2
-    L7_2 = L7_2(L8_2)
-    L2_2 = L7_2
-  end
-  L7_2 = ScriptLib
-  L7_2 = L7_2.IsChannellerSlabLoopDungeonConditionSelected
-  L8_2 = A0_2
-  L9_2 = 301
-  L7_2 = L7_2(L8_2, L9_2)
-  if false ~= L7_2 then
-    L4_2 = 1
-  end
-  L7_2 = ScriptLib
-  L7_2 = L7_2.IsChannellerSlabLoopDungeonConditionSelected
-  L8_2 = A0_2
-  L9_2 = 302
-  L7_2 = L7_2(L8_2, L9_2)
-  if false ~= L7_2 then
-    L3_2 = 1
-  end
-  L7_2 = ScriptLib
-  L7_2 = L7_2.IsChannellerSlabLoopDungeonConditionSelected
-  L8_2 = A0_2
-  L9_2 = 303
-  L7_2 = L7_2(L8_2, L9_2)
-  if false ~= L7_2 then
-    L5_2 = 1
-  end
-  L7_2 = ScriptLib
-  L7_2 = L7_2.IsChannellerSlabLoopDungeonConditionSelected
-  L8_2 = A0_2
-  L9_2 = 304
-  L7_2 = L7_2(L8_2, L9_2)
-  if false ~= L7_2 then
-    L6_2 = 1
-  end
-  L7_2 = ScriptLib
-  L7_2 = L7_2.SetGadgetStateByConfigId
-  L8_2 = A0_2
-  L9_2 = 1001
-  L10_2 = GadgetState
-  L10_2 = L10_2.GearStop
-  L7_2 = L7_2(L8_2, L9_2, L10_2)
-  if 0 ~= L7_2 then
-    L7_2 = ScriptLib
-    L7_2 = L7_2.PrintContextLog
-    L8_2 = A0_2
-    L9_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L7_2(L8_2, L9_2)
-    L7_2 = -1
-    return L7_2
-  end
-  L7_2 = ScriptLib
-  L7_2 = L7_2.DelWorktopOptionByGroupId
-  L8_2 = A0_2
-  L9_2 = 244011001
-  L10_2 = 1001
-  L11_2 = 175
-  L7_2 = L7_2(L8_2, L9_2, L10_2, L11_2)
-  if 0 ~= L7_2 then
-    L7_2 = ScriptLib
-    L7_2 = L7_2.PrintContextLog
-    L8_2 = A0_2
-    L9_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L7_2(L8_2, L9_2)
-    L7_2 = -1
-    return L7_2
-  end
-  L7_2 = ScriptLib
-  L7_2 = L7_2.RemoveEntityByConfigId
-  L8_2 = A0_2
-  L9_2 = 244011001
-  L10_2 = EntityType
-  L10_2 = L10_2.GADGET
-  L11_2 = 1009
-  L7_2 = L7_2(L8_2, L9_2, L10_2, L11_2)
-  if 0 ~= L7_2 then
-    L7_2 = ScriptLib
-    L7_2 = L7_2.PrintContextLog
-    L8_2 = A0_2
-    L9_2 = "@@ LUA_WARNING : remove_gadget_by_configid"
-    L7_2(L8_2, L9_2)
-    L7_2 = -1
-    return L7_2
-  end
-  if L3_2 == 0 then
-    if L4_2 == 0 then
-      L7_2 = ScriptLib
-      L7_2 = L7_2.AddExtraGroupSuite
-      L8_2 = A0_2
-      L9_2 = 244011001
-      L10_2 = 3
-      L7_2(L8_2, L9_2, L10_2)
-    else
-      L7_2 = ScriptLib
-      L7_2 = L7_2.AddExtraGroupSuite
-      L8_2 = A0_2
-      L9_2 = 244011001
-      L10_2 = 4
-      L7_2(L8_2, L9_2, L10_2)
-    end
-  elseif L4_2 == 0 then
-    L7_2 = ScriptLib
-    L7_2 = L7_2.AddExtraGroupSuite
-    L8_2 = A0_2
-    L9_2 = 244011001
-    L10_2 = 5
-    L7_2(L8_2, L9_2, L10_2)
-  else
-    L7_2 = ScriptLib
-    L7_2 = L7_2.AddExtraGroupSuite
-    L8_2 = A0_2
-    L9_2 = 244011001
-    L10_2 = 6
-    L7_2(L8_2, L9_2, L10_2)
-  end
-  if L5_2 == 0 then
-    L7_2 = ScriptLib
-    L7_2 = L7_2.PrintContextLog
-    L8_2 = A0_2
-    L9_2 = "@@ LUA_WARNING : \229\188\128\229\167\139\229\136\183\230\128\170\228\186\134"
-    L7_2(L8_2, L9_2)
-    if L6_2 == 0 then
-      L7_2 = ScriptLib
-      L7_2 = L7_2.AutoPoolMonsterTide
-      L8_2 = A0_2
-      L9_2 = 1
-      L10_2 = 244011001
-      L11_2 = {}
-      L12_2 = 30003
-      L11_2[1] = L12_2
-      L12_2 = 0
-      L13_2 = {}
-      L14_2 = {}
-      L15_2 = {}
-      L15_2.total_count = 1
-      L15_2.min_count = 1
-      L15_2.max_count = 1
-      L15_2.tag = 2
-      L15_2.fill_time = 0
-      L15_2.fill_count = 0
-      L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
-    else
-      L7_2 = ScriptLib
-      L7_2 = L7_2.AutoPoolMonsterTide
-      L8_2 = A0_2
-      L9_2 = 1
-      L10_2 = 244011001
-      L11_2 = {}
-      L12_2 = 30003
-      L11_2[1] = L12_2
-      L12_2 = 0
-      L13_2 = {}
-      L14_2 = {}
-      L15_2 = 4157
-      L14_2[1] = L15_2
-      L15_2 = {}
-      L15_2.total_count = 1
-      L15_2.min_count = 1
-      L15_2.max_count = 1
-      L15_2.tag = 2
-      L15_2.fill_time = 0
-      L15_2.fill_count = 0
-      L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
-    end
-  elseif L6_2 == 0 then
-    L7_2 = ScriptLib
-    L7_2 = L7_2.AutoPoolMonsterTide
-    L8_2 = A0_2
-    L9_2 = 1
-    L10_2 = 244011001
-    L11_2 = {}
-    L12_2 = 30003
-    L11_2[1] = L12_2
-    L12_2 = 0
-    L13_2 = {}
-    L14_2 = {}
-    L15_2 = 4156
-    L14_2[1] = L15_2
-    L15_2 = {}
-    L15_2.total_count = 1
-    L15_2.min_count = 1
-    L15_2.max_count = 1
-    L15_2.tag = 2
-    L15_2.fill_time = 0
-    L15_2.fill_count = 0
-    L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
-  else
-    L7_2 = ScriptLib
-    L7_2 = L7_2.AutoPoolMonsterTide
-    L8_2 = A0_2
-    L9_2 = 1
-    L10_2 = 244011001
-    L11_2 = {}
-    L12_2 = 30003
-    L11_2[1] = L12_2
-    L12_2 = 0
-    L13_2 = {}
-    L14_2 = {}
-    L15_2 = 4156
-    L16_2 = 4157
-    L14_2[1] = L15_2
-    L14_2[2] = L16_2
-    L15_2 = {}
-    L15_2.total_count = 1
-    L15_2.min_count = 1
-    L15_2.max_count = 1
-    L15_2.tag = 2
-    L15_2.fill_time = 0
-    L15_2.fill_count = 0
-    L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
-  end
-  L7_2 = ScriptLib
-  L7_2 = L7_2.CreateFatherChallenge
-  L8_2 = A0_2
-  L9_2 = 101
-  L10_2 = 2003015
-  L11_2 = 999999
-  L12_2 = {}
-  L12_2.success = 1
-  L12_2.fail = 1
-  L12_2.fail_on_wipe = false
-  L7_2 = L7_2(L8_2, L9_2, L10_2, L11_2, L12_2)
-  if 0 ~= L7_2 then
-    L7_2 = -1
-    return L7_2
-  end
-  L7_2 = ScriptLib
-  L7_2 = L7_2.AttachChildChallenge
-  L8_2 = A0_2
-  L9_2 = 101
-  L10_2 = 201
-  L11_2 = 110181
-  L12_2 = {}
-  L13_2 = 244011001
-  L14_2 = 1
-  L12_2[1] = L13_2
-  L12_2[2] = L14_2
-  L13_2 = {}
-  L14_2 = {}
-  L14_2.success = 0
-  L14_2.fail = 0
-  L7_2 = L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
-  if 0 ~= L7_2 then
-    L7_2 = -1
-    return L7_2
-  end
-  if 0 ~= L2_2 then
-    L7_2 = ScriptLib
-    L7_2 = L7_2.AttachChildChallenge
-    L8_2 = A0_2
-    L9_2 = 101
-    L10_2 = 202
-    L11_2 = 110182
-    L12_2 = {}
-    L13_2 = L2_2
-    L14_2 = 244011001
-    L15_2 = 1
-    L12_2[1] = L13_2
-    L12_2[2] = L14_2
-    L12_2[3] = L15_2
-    L13_2 = {}
-    L14_2 = {}
-    L14_2.success = 0
-    L14_2.fail = 0
-    L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
-  else
-    L7_2 = ScriptLib
-    L7_2 = L7_2.AddExtraGroupSuite
-    L8_2 = A0_2
-    L9_2 = 244011001
-    L10_2 = 2
-    L7_2(L8_2, L9_2, L10_2)
-  end
-  L7_2 = ScriptLib
-  L7_2 = L7_2.StartFatherChallenge
-  L8_2 = A0_2
-  L9_2 = 101
-  L7_2 = L7_2(L8_2, L9_2)
-  if 0 ~= L7_2 then
-    L7_2 = -1
-    return L7_2
-  end
-  L7_2 = 0
-  return L7_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_1003(context, evt)
+	-- 初始化变量
+	local challenge_time = 0
+	local gadget_number_up = 0
+	local gadget_damage_up = 0
+	local boss_affix_1 = 0
+	local boss_affix_2 = 0
+	
+	
+	--------------------------------------------------------------------------------
+	-- 以下部分为接口读取玩家选择的因子，记录在对应变量中
+	--------------------------------------------------------------------------------
+	--判断玩家是否选择了时间因子
+	if (0 or -1) ~= ScriptLib.GetChannellerSlabLoopDungeonLimitTime(context) then
+	        challenge_time = ScriptLib.GetChannellerSlabLoopDungeonLimitTime(context)
+	end
+	
+	-- 判断玩家是否选择轰炸范围提升，如果是的话改变变量
+	if false ~= ScriptLib.IsChannellerSlabLoopDungeonConditionSelected(context, 301) then
+	        gadget_damage_up = 1
+	end
+	
+	-- 判断玩家是否选择多一个轰炸区域，如果是的话改变变量
+	if false ~= ScriptLib.IsChannellerSlabLoopDungeonConditionSelected(context, 302) then
+	        gadget_number_up = 1
+	end
+	
+	-- 判断玩家是否选择恒长机关瘫痪时间减半词缀
+	if false ~= ScriptLib.IsChannellerSlabLoopDungeonConditionSelected(context, 303) then
+	        boss_affix_1 = 1
+	end
+	
+	-- 判断玩家是否选择恒长机关起死回生词缀
+	if false ~= ScriptLib.IsChannellerSlabLoopDungeonConditionSelected(context, 304) then
+	        boss_affix_2 = 1
+	end
+	
+	
+	
+	--------------------------------------------------------------------------------
+	-- 以下部分为改操作台状态，删除option id，删除回血泉水之类
+	--------------------------------------------------------------------------------
+	
+	-- 将操作台物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 1001, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+	        return -1
+	    end 
+	
+	-- 删除操作台物件身上指定option
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 244011001, 1001, 175) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+	    return -1
+	end
+	
+	-- 卸载回血gadget
+	if 0 ~= ScriptLib.RemoveEntityByConfigId(context, 244011001, EntityType.GADGET, 1009) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : remove_gadget_by_configid")
+	        return -1
+	end
+	
+	
+	--------------------------------------------------------------------------------
+	-- 以下部分为刷怪相关的操作
+	--------------------------------------------------------------------------------
+	
+	
+	-- 根据参数判断刷哪个轰炸区域的suite
+	--
+	if gadget_number_up == 0 then
+	        if gadget_damage_up == 0 then
+	            ScriptLib.AddExtraGroupSuite(context, 244011001, 3)
+	        else
+	            ScriptLib.AddExtraGroupSuite(context, 244011001, 4)
+	        end
+	    else
+	        if gadget_damage_up == 0 then
+	            ScriptLib.AddExtraGroupSuite(context, 244011001, 5)
+	        else
+	            ScriptLib.AddExtraGroupSuite(context, 244011001, 6)
+	        end
+	end
+	--
+	
+	
+	-- 根据参数判断boss挂什么词缀
+	--
+	if boss_affix_1 == 0 then
+	        ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : 开始刷怪了")
+	        if boss_affix_2 == 0 then
+	            ScriptLib.AutoPoolMonsterTide(context, 1, 244011001, {30003},0,{},{}, {total_count = 1, min_count = 1, max_count = 1, tag = 2, fill_time= 0, fill_count = 0})
+	        else
+	            ScriptLib.AutoPoolMonsterTide(context, 1, 244011001, {30003},0,{},{4157}, {total_count = 1, min_count = 1, max_count = 1, tag = 2, fill_time= 0, fill_count = 0})
+	        end
+	    else
+	        if boss_affix_2 == 0 then
+	            ScriptLib.AutoPoolMonsterTide(context, 1, 244011001, {30003},0,{},{4156}, {total_count = 1, min_count = 1, max_count = 1, tag = 2, fill_time= 0, fill_count = 0})
+	        else
+	            ScriptLib.AutoPoolMonsterTide(context, 1, 244011001, {30003},0,{},{4156,4157}, {total_count = 1, min_count = 1, max_count = 1, tag = 2, fill_time= 0, fill_count = 0})
+	        end
+	end
+	--
+	
+	
+	--------------------------------------------------------------------------------
+	-- 以下部分开启挑战相关部分
+	--------------------------------------------------------------------------------
+	
+	-- 创建编号为2003015父挑战，indexID为101
+	if 0 ~= ScriptLib.CreateFatherChallenge(context, 101, 2003015, 999999, {success = 1, fail = 1, fail_on_wipe=false}) then
+	        return -1
+	end
+	
+	
+	-- 创建编号为201的普通子挑战
+	if 0 ~= ScriptLib.AttachChildChallenge(context, 101, 201, 110181, {244011001,1},{},{success=0,fail=0}) then
+	        return -1
+	end
+	
+	
+	-- 创建编号为202的限时子挑战，如果没有选择不会开启，并且直接用suite2的trigger判断
+	if 0 ~= challenge_time then
+	        ScriptLib.AttachChildChallenge(context, 101, 202, 110182, {challenge_time,244011001,1},{},{success=0,fail=0})
+	    else
+	        ScriptLib.AddExtraGroupSuite(context, 244011001, 2)
+	end
+	
+	-- 开始父挑战
+	if 0 ~= ScriptLib.StartFatherChallenge(context, 101) then
+	        return -1
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_1003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "IS_IN_LIMIT_TIME"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 244011001
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_GADGET
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_gadget_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_1004(context, evt)
+	-- 将本组内变量名为 "IS_IN_LIMIT_TIME" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "IS_IN_LIMIT_TIME", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 终止识别id为101的挑战，并判定成功
+		ScriptLib.StopChallenge(context, 101, 1)
+	
+		-- 杀死Group内所有gadget
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 244011001, kill_policy = GroupKillPolicy.GROUP_KILL_GADGET }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_gadget_by_group")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_1004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 244011001
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_1005(context, evt)
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 244011001, 2)
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_1005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 244011001
-  L4_2.suite = 1
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_1006(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 244011001, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_1006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetSceneUidList
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  L3_2 = 0
-  L4_2 = ipairs
-  L5_2 = L2_2
-  L4_2, L5_2, L6_2 = L4_2(L5_2)
-  for L7_2, L8_2 in L4_2, L5_2, L6_2 do
-    L9_2 = ScriptLib
-    L9_2 = L9_2.IsPlayerAllAvatarDie
-    L10_2 = A0_2
-    L11_2 = L8_2
-    L9_2 = L9_2(L10_2, L11_2)
-    if true ~= L9_2 then
-      L3_2 = -1
-      break
-    end
-  end
-  if L3_2 ~= 0 then
-    L4_2 = false
-    return L4_2
-  end
-  L4_2 = true
-  return L4_2
+
+-- 触发条件
+function condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1007(context, evt)
+	local uid_list = ScriptLib.GetSceneUidList(context)
+	
+	local ret = 0
+	
+	for i,v in ipairs(uid_list) do
+	        local is_all_dead = ScriptLib.IsPlayerAllAvatarDie(context, v)
+	        if true ~= is_all_dead then
+	                ret = -1
+	                break
+	        end
+	end
+	
+	if ret ~= 0 then
+	        return false
+	end
+	
+	return true
 end
-condition_EVENT_DUNGEON_ALL_AVATAR_DIE_1007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CauseDungeonFail
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cause_dungeonfail"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_DUNGEON_ALL_AVATAR_DIE_1007(context, evt)
+	-- 终止识别id为101的挑战，并判定失败
+		ScriptLib.StopChallenge(context, 101, 0)
+	
+	-- 地城失败结算
+	if 0 ~= ScriptLib.CauseDungeonFail(context) then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cause_dungeonfail")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_DUNGEON_ALL_AVATAR_DIE_1007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopChallenge
-  L3_2 = A0_2
-  L4_2 = 101
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillGroupEntity
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 244011001
-  L5_2 = GroupKillPolicy
-  L5_2 = L5_2.GROUP_KILL_GADGET
-  L4_2.kill_policy = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_gadget_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_1008(context, evt)
+	-- 终止识别id为101的挑战，并判定成功
+		ScriptLib.StopChallenge(context, 101, 1)
+	
+		-- 杀死Group内所有gadget
+		if 0 ~= ScriptLib.KillGroupEntity(context, { group_id = 244011001, kill_policy = GroupKillPolicy.GROUP_KILL_GADGET }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_gadget_by_group")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_1008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
-  L2_2 = {}
-  L2_2.route_type = 2
-  L2_2.turn_mode = false
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetPlatformPointArray
-  L4_2 = A0_2
-  L5_2 = 1011
-  L6_2 = 1
-  L7_2 = {}
-  L8_2 = 1
-  L9_2 = 2
-  L10_2 = 3
-  L7_2[1] = L8_2
-  L7_2[2] = L9_2
-  L7_2[3] = L10_2
-  L8_2 = L2_2
-  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = {}
-  L3_2.route_type = 2
-  L3_2.turn_mode = false
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetPlatformPointArray
-  L5_2 = A0_2
-  L6_2 = 1012
-  L7_2 = 1
-  L8_2 = {}
-  L9_2 = 2
-  L10_2 = 3
-  L11_2 = 1
-  L8_2[1] = L9_2
-  L8_2[2] = L10_2
-  L8_2[3] = L11_2
-  L9_2 = L3_2
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = {}
-  L4_2.route_type = 2
-  L4_2.turn_mode = false
-  L5_2 = ScriptLib
-  L5_2 = L5_2.SetPlatformPointArray
-  L6_2 = A0_2
-  L7_2 = 1010
-  L8_2 = 1
-  L9_2 = {}
-  L10_2 = 3
-  L11_2 = 1
-  L12_2 = 2
-  L9_2[1] = L10_2
-  L9_2[2] = L11_2
-  L9_2[3] = L12_2
-  L10_2 = L4_2
-  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  if 0 ~= L5_2 then
-    L5_2 = ScriptLib
-    L5_2 = L5_2.PrintContextLog
-    L6_2 = A0_2
-    L7_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L5_2(L6_2, L7_2)
-    L5_2 = -1
-    return L5_2
-  end
-  L5_2 = 0
-  return L5_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_1024(context, evt)
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1011, 1, {1,2,3}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1012, 1, {2,3,1}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1010, 1, {3,1,2}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_1024 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
-  L2_2 = {}
-  L2_2.route_type = 2
-  L2_2.turn_mode = false
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetPlatformPointArray
-  L4_2 = A0_2
-  L5_2 = 1014
-  L6_2 = 1
-  L7_2 = {}
-  L8_2 = 1
-  L9_2 = 2
-  L10_2 = 3
-  L7_2[1] = L8_2
-  L7_2[2] = L9_2
-  L7_2[3] = L10_2
-  L8_2 = L2_2
-  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = {}
-  L3_2.route_type = 2
-  L3_2.turn_mode = false
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetPlatformPointArray
-  L5_2 = A0_2
-  L6_2 = 1015
-  L7_2 = 1
-  L8_2 = {}
-  L9_2 = 2
-  L10_2 = 3
-  L11_2 = 1
-  L8_2[1] = L9_2
-  L8_2[2] = L10_2
-  L8_2[3] = L11_2
-  L9_2 = L3_2
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = {}
-  L4_2.route_type = 2
-  L4_2.turn_mode = false
-  L5_2 = ScriptLib
-  L5_2 = L5_2.SetPlatformPointArray
-  L6_2 = A0_2
-  L7_2 = 1013
-  L8_2 = 1
-  L9_2 = {}
-  L10_2 = 3
-  L11_2 = 1
-  L12_2 = 2
-  L9_2[1] = L10_2
-  L9_2[2] = L11_2
-  L9_2[3] = L12_2
-  L10_2 = L4_2
-  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  if 0 ~= L5_2 then
-    L5_2 = ScriptLib
-    L5_2 = L5_2.PrintContextLog
-    L6_2 = A0_2
-    L7_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L5_2(L6_2, L7_2)
-    L5_2 = -1
-    return L5_2
-  end
-  L5_2 = 0
-  return L5_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_1025(context, evt)
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1014, 1, {1,2,3}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1015, 1, {2,3,1}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1013, 1, {3,1,2}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_1025 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
-  L2_2 = {}
-  L2_2.route_type = 2
-  L2_2.turn_mode = false
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetPlatformPointArray
-  L4_2 = A0_2
-  L5_2 = 1017
-  L6_2 = 2
-  L7_2 = {}
-  L8_2 = 1
-  L9_2 = 2
-  L10_2 = 3
-  L11_2 = 4
-  L7_2[1] = L8_2
-  L7_2[2] = L9_2
-  L7_2[3] = L10_2
-  L7_2[4] = L11_2
-  L8_2 = L2_2
-  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = {}
-  L3_2.route_type = 2
-  L3_2.turn_mode = false
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetPlatformPointArray
-  L5_2 = A0_2
-  L6_2 = 1018
-  L7_2 = 2
-  L8_2 = {}
-  L9_2 = 2
-  L10_2 = 3
-  L11_2 = 4
-  L12_2 = 1
-  L8_2[1] = L9_2
-  L8_2[2] = L10_2
-  L8_2[3] = L11_2
-  L8_2[4] = L12_2
-  L9_2 = L3_2
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = {}
-  L4_2.route_type = 2
-  L4_2.turn_mode = false
-  L5_2 = ScriptLib
-  L5_2 = L5_2.SetPlatformPointArray
-  L6_2 = A0_2
-  L7_2 = 1019
-  L8_2 = 2
-  L9_2 = {}
-  L10_2 = 3
-  L11_2 = 4
-  L12_2 = 1
-  L13_2 = 2
-  L9_2[1] = L10_2
-  L9_2[2] = L11_2
-  L9_2[3] = L12_2
-  L9_2[4] = L13_2
-  L10_2 = L4_2
-  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  if 0 ~= L5_2 then
-    L5_2 = ScriptLib
-    L5_2 = L5_2.PrintContextLog
-    L6_2 = A0_2
-    L7_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L5_2(L6_2, L7_2)
-    L5_2 = -1
-    return L5_2
-  end
-  L5_2 = {}
-  L5_2.route_type = 2
-  L5_2.turn_mode = false
-  L6_2 = ScriptLib
-  L6_2 = L6_2.SetPlatformPointArray
-  L7_2 = A0_2
-  L8_2 = 1016
-  L9_2 = 2
-  L10_2 = {}
-  L11_2 = 4
-  L12_2 = 1
-  L13_2 = 2
-  L14_2 = 3
-  L10_2[1] = L11_2
-  L10_2[2] = L12_2
-  L10_2[3] = L13_2
-  L10_2[4] = L14_2
-  L11_2 = L5_2
-  L6_2 = L6_2(L7_2, L8_2, L9_2, L10_2, L11_2)
-  if 0 ~= L6_2 then
-    L6_2 = ScriptLib
-    L6_2 = L6_2.PrintContextLog
-    L7_2 = A0_2
-    L8_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L6_2(L7_2, L8_2)
-    L6_2 = -1
-    return L6_2
-  end
-  L6_2 = 0
-  return L6_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_1026(context, evt)
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1017, 2, {1,2,3,4}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1018, 2, {2,3,4,1}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1019, 2, {3,4,1,2}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1016, 2, {4,1,2,3}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_1026 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
-  L2_2 = {}
-  L2_2.route_type = 2
-  L2_2.turn_mode = false
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetPlatformPointArray
-  L4_2 = A0_2
-  L5_2 = 1021
-  L6_2 = 2
-  L7_2 = {}
-  L8_2 = 1
-  L9_2 = 2
-  L10_2 = 3
-  L11_2 = 4
-  L7_2[1] = L8_2
-  L7_2[2] = L9_2
-  L7_2[3] = L10_2
-  L7_2[4] = L11_2
-  L8_2 = L2_2
-  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
-  if 0 ~= L3_2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PrintContextLog
-    L4_2 = A0_2
-    L5_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L3_2(L4_2, L5_2)
-    L3_2 = -1
-    return L3_2
-  end
-  L3_2 = {}
-  L3_2.route_type = 2
-  L3_2.turn_mode = false
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetPlatformPointArray
-  L5_2 = A0_2
-  L6_2 = 1022
-  L7_2 = 2
-  L8_2 = {}
-  L9_2 = 2
-  L10_2 = 3
-  L11_2 = 4
-  L12_2 = 1
-  L8_2[1] = L9_2
-  L8_2[2] = L10_2
-  L8_2[3] = L11_2
-  L8_2[4] = L12_2
-  L9_2 = L3_2
-  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = {}
-  L4_2.route_type = 2
-  L4_2.turn_mode = false
-  L5_2 = ScriptLib
-  L5_2 = L5_2.SetPlatformPointArray
-  L6_2 = A0_2
-  L7_2 = 1023
-  L8_2 = 2
-  L9_2 = {}
-  L10_2 = 3
-  L11_2 = 4
-  L12_2 = 1
-  L13_2 = 2
-  L9_2[1] = L10_2
-  L9_2[2] = L11_2
-  L9_2[3] = L12_2
-  L9_2[4] = L13_2
-  L10_2 = L4_2
-  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
-  if 0 ~= L5_2 then
-    L5_2 = ScriptLib
-    L5_2 = L5_2.PrintContextLog
-    L6_2 = A0_2
-    L7_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L5_2(L6_2, L7_2)
-    L5_2 = -1
-    return L5_2
-  end
-  L5_2 = {}
-  L5_2.route_type = 2
-  L5_2.turn_mode = false
-  L6_2 = ScriptLib
-  L6_2 = L6_2.SetPlatformPointArray
-  L7_2 = A0_2
-  L8_2 = 1020
-  L9_2 = 2
-  L10_2 = {}
-  L11_2 = 4
-  L12_2 = 1
-  L13_2 = 2
-  L14_2 = 3
-  L10_2[1] = L11_2
-  L10_2[2] = L12_2
-  L10_2[3] = L13_2
-  L10_2[4] = L14_2
-  L11_2 = L5_2
-  L6_2 = L6_2(L7_2, L8_2, L9_2, L10_2, L11_2)
-  if 0 ~= L6_2 then
-    L6_2 = ScriptLib
-    L6_2 = L6_2.PrintContextLog
-    L7_2 = A0_2
-    L8_2 = "@@ LUA_WARNING : set_platform_pointArray"
-    L6_2(L7_2, L8_2)
-    L6_2 = -1
-    return L6_2
-  end
-  L6_2 = 0
-  return L6_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_1027(context, evt)
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1021, 2, {1,2,3,4}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1022, 2, {2,3,4,1}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1023, 2, {3,4,1,2}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 2, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 1020, 2, {4,1,2,3}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_1027 = L1_1

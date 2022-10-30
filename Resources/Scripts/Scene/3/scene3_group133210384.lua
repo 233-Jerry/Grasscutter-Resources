@@ -1,767 +1,274 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1
-L0_1 = {}
-L0_1.group_id = 133210384
-L1_1 = {}
-L1_1.group_ID = 133210384
-L1_1.gadget_1 = 384001
-L1_1.rotation_1 = 270
-L1_1.gadget_2 = 384004
-L1_1.rotation_2 = 90
-L1_1.gadget_3 = 384009
-L1_1.rotation_3 = 180
-L1_1.gadget_4 = 384012
-L1_1.rotation_4 = 90
-L1_1.gadget_5 = 384015
-L1_1.rotation_5 = 0
-L2_1 = {}
-L1_1.gadget_connect1 = L2_1
-L2_1 = {}
-L1_1.gadget_connect2 = L2_1
-L2_1 = {}
-L1_1.gadget_connect3 = L2_1
-L2_1 = {}
-L1_1.gadget_connect4 = L2_1
-L2_1 = {}
-L1_1.gadget_connect5 = L2_1
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 384001
-L3_1.gadget_id = 70330081
-L4_1 = {}
-L4_1.x = -3900.918
-L4_1.y = 202.774
-L4_1.z = -1056.344
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 11.092
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 2
-L3_1.is_use_point_array = true
-L3_1.area_id = 17
-L4_1 = {}
-L4_1.config_id = 384002
-L4_1.gadget_id = 70330085
-L5_1 = {}
-L5_1.x = -3902.086
-L5_1.y = 205.998
-L5_1.z = -1063.709
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 11.092
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 30
-L4_1.area_id = 17
-L5_1 = {}
-L5_1.config_id = 384003
-L5_1.gadget_id = 70330084
-L6_1 = {}
-L6_1.x = -3900.918
-L6_1.y = 202.774
-L6_1.z = -1056.345
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 11.092
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 30
-L5_1.area_id = 17
-L6_1 = {}
-L6_1.config_id = 384004
-L6_1.gadget_id = 70330081
-L7_1 = {}
-L7_1.x = -3909.991
-L7_1.y = 204.359
-L7_1.z = -1058.187
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 281.092
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 30
-L6_1.is_use_point_array = true
-L6_1.area_id = 17
-L7_1 = {}
-L7_1.config_id = 384005
-L7_1.gadget_id = 70330085
-L8_1 = {}
-L8_1.x = -3909.984
-L8_1.y = 206.199
-L8_1.z = -1058.171
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 11.092
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 30
-L7_1.area_id = 17
-L8_1 = {}
-L8_1.config_id = 384006
-L8_1.gadget_id = 70211111
-L9_1 = {}
-L9_1.x = -3911.717
-L9_1.y = 204.199
-L9_1.z = -1051.889
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.007
-L9_1.y = 147.009
-L9_1.z = 0.025
-L8_1.rot = L9_1
-L8_1.level = 26
-L8_1.drop_tag = "\232\167\163\232\176\156\228\184\173\231\186\167\231\168\187\229\166\187"
-L8_1.isOneoff = true
-L8_1.persistent = true
-L9_1 = {}
-L9_1.name = "chest"
-L9_1.exp = 1
-L8_1.explore = L9_1
-L8_1.area_id = 17
-L9_1 = {}
-L9_1.config_id = 384008
-L9_1.gadget_id = 70330084
-L10_1 = {}
-L10_1.x = -3909.991
-L10_1.y = 204.359
-L10_1.z = -1058.187
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 11.092
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 30
-L9_1.area_id = 17
-L10_1 = {}
-L10_1.config_id = 384009
-L10_1.gadget_id = 70330081
-L11_1 = {}
-L11_1.x = -3910.917
-L11_1.y = 204.359
-L11_1.z = -1062.09
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 191.092
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 30
-L10_1.is_use_point_array = true
-L10_1.area_id = 17
-L11_1 = {}
-L11_1.config_id = 384010
-L11_1.gadget_id = 70330085
-L12_1 = {}
-L12_1.x = -3910.916
-L12_1.y = 206.202
-L12_1.z = -1062.089
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 11.092
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 30
-L11_1.area_id = 17
-L12_1 = {}
-L12_1.config_id = 384011
-L12_1.gadget_id = 70330084
-L13_1 = {}
-L13_1.x = -3910.917
-L13_1.y = 204.359
-L13_1.z = -1062.09
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 11.092
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 30
-L12_1.area_id = 17
-L13_1 = {}
-L13_1.config_id = 384012
-L13_1.gadget_id = 70330081
-L14_1 = {}
-L14_1.x = -3905.763
-L14_1.y = 204.311
-L14_1.z = -1059.107
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 101.092
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 30
-L13_1.is_use_point_array = true
-L13_1.area_id = 17
-L14_1 = {}
-L14_1.config_id = 384013
-L14_1.gadget_id = 70330085
-L15_1 = {}
-L15_1.x = -3905.762
-L15_1.y = 206.136
-L15_1.z = -1059.106
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 11.092
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 30
-L14_1.area_id = 17
-L15_1 = {}
-L15_1.config_id = 384014
-L15_1.gadget_id = 70330084
-L16_1 = {}
-L16_1.x = -3905.763
-L16_1.y = 204.311
-L16_1.z = -1059.107
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 11.092
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 30
-L15_1.area_id = 17
-L16_1 = {}
-L16_1.config_id = 384015
-L16_1.gadget_id = 70330083
-L17_1 = {}
-L17_1.x = -3906.63
-L17_1.y = 204.203
-L17_1.z = -1062.735
-L16_1.pos = L17_1
-L17_1 = {}
-L17_1.x = 0.0
-L17_1.y = 101.092
-L17_1.z = 0.0
-L16_1.rot = L17_1
-L16_1.level = 30
-L16_1.is_use_point_array = true
-L16_1.area_id = 17
-L17_1 = {}
-L17_1.config_id = 384016
-L17_1.gadget_id = 70330083
-L18_1 = {}
-L18_1.x = -3902.085
-L18_1.y = 204.203
-L18_1.z = -1063.709
-L17_1.pos = L18_1
-L18_1 = {}
-L18_1.x = 0.0
-L18_1.y = 11.092
-L18_1.z = 0.0
-L17_1.rot = L18_1
-L17_1.level = 30
-L17_1.area_id = 17
-L18_1 = {}
-L18_1.config_id = 384017
-L18_1.gadget_id = 70330083
-L19_1 = {}
-L19_1.x = -3901.301
-L19_1.y = 203.917
-L19_1.z = -1059.912
-L18_1.pos = L19_1
-L19_1 = {}
-L19_1.x = 0.0
-L19_1.y = 281.092
-L19_1.z = 0.0
-L18_1.rot = L19_1
-L18_1.level = 30
-L18_1.area_id = 17
-L19_1 = {}
-L19_1.config_id = 384018
-L19_1.gadget_id = 70330083
-L20_1 = {}
-L20_1.x = -3908.997
-L20_1.y = 204.202
-L20_1.z = -1053.865
-L19_1.pos = L20_1
-L20_1 = {}
-L20_1.x = 0.0
-L20_1.y = 191.092
-L20_1.z = 0.0
-L19_1.rot = L20_1
-L19_1.level = 30
-L19_1.area_id = 17
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-L2_1[13] = L15_1
-L2_1[14] = L16_1
-L2_1[15] = L17_1
-L2_1[16] = L18_1
-L2_1[17] = L19_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 384021
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 10
-L4_1 = {}
-L4_1.x = -3905.556
-L4_1.y = 204.177
-L4_1.z = -1059.142
-L3_1.pos = L4_1
-L3_1.area_id = 17
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1384007
-L3_1.name = "VARIABLE_CHANGE_384007"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_384007"
-L3_1.action = "action_EVENT_VARIABLE_CHANGE_384007"
-L4_1 = {}
-L4_1.config_id = 1384019
-L4_1.name = "GADGET_STATE_CHANGE_384019"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_384019"
-L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_384019"
-L5_1 = {}
-L5_1.config_id = 1384020
-L5_1.name = "GROUP_LOAD_384020"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GROUP_LOAD
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_GROUP_LOAD_384020"
-L5_1.action = "action_EVENT_GROUP_LOAD_384020"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1384021
-L6_1.name = "ENTER_REGION_384021"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_ENTER_REGION
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_ENTER_REGION_384021"
-L6_1.action = "action_EVENT_ENTER_REGION_384021"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "Success"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "StartTalk"
-L4_1.value = 0
-L4_1.no_refresh = true
-L5_1 = {}
-L5_1.configId = 3
-L5_1.name = "EndTalk"
-L5_1.value = 0
-L5_1.no_refresh = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 3
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 384001
-L6_1 = 384002
-L7_1 = 384003
-L8_1 = 384004
-L9_1 = 384005
-L10_1 = 384008
-L11_1 = 384009
-L12_1 = 384010
-L13_1 = 384011
-L14_1 = 384012
-L15_1 = 384013
-L16_1 = 384014
-L17_1 = 384015
-L18_1 = 384016
-L19_1 = 384017
-L20_1 = 384018
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L4_1[11] = L15_1
-L4_1[12] = L16_1
-L4_1[13] = L17_1
-L4_1[14] = L18_1
-L4_1[15] = L19_1
-L4_1[16] = L20_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 384021
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "VARIABLE_CHANGE_384007"
-L6_1 = "GADGET_STATE_CHANGE_384019"
-L7_1 = "ENTER_REGION_384021"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 384006
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "GROUP_LOAD_384020"
-L6_1[1] = L7_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "successed"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "EndTalk"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133210384
+}
+
+-- Trigger变量
+local defs = {
+	group_ID = 133210384,
+	gadget_1 = 384001,
+	rotation_1 = 270,
+	gadget_2 = 384004,
+	rotation_2 = 90,
+	gadget_3 = 384009,
+	rotation_3 = 180,
+	gadget_4 = 384012,
+	rotation_4 = 90,
+	gadget_5 = 384015,
+	rotation_5 = 0,
+	gadget_connect1 = {},
+	gadget_connect2 = {},
+	gadget_connect3 = {},
+	gadget_connect4 = {},
+	gadget_connect5 = {}
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 384001, gadget_id = 70330081, pos = { x = -3900.918, y = 202.774, z = -1056.344 }, rot = { x = 0.000, y = 11.092, z = 0.000 }, level = 2, is_use_point_array = true, area_id = 17 },
+	{ config_id = 384002, gadget_id = 70330085, pos = { x = -3902.086, y = 205.998, z = -1063.709 }, rot = { x = 0.000, y = 11.092, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 384003, gadget_id = 70330084, pos = { x = -3900.918, y = 202.774, z = -1056.345 }, rot = { x = 0.000, y = 11.092, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 384004, gadget_id = 70330081, pos = { x = -3909.991, y = 204.359, z = -1058.187 }, rot = { x = 0.000, y = 281.092, z = 0.000 }, level = 30, is_use_point_array = true, area_id = 17 },
+	{ config_id = 384005, gadget_id = 70330085, pos = { x = -3909.984, y = 206.199, z = -1058.171 }, rot = { x = 0.000, y = 11.092, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 384006, gadget_id = 70211111, pos = { x = -3911.717, y = 204.199, z = -1051.889 }, rot = { x = 0.007, y = 147.009, z = 0.025 }, level = 26, drop_tag = "解谜中级稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 17 },
+	{ config_id = 384008, gadget_id = 70330084, pos = { x = -3909.991, y = 204.359, z = -1058.187 }, rot = { x = 0.000, y = 11.092, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 384009, gadget_id = 70330081, pos = { x = -3910.917, y = 204.359, z = -1062.090 }, rot = { x = 0.000, y = 191.092, z = 0.000 }, level = 30, is_use_point_array = true, area_id = 17 },
+	{ config_id = 384010, gadget_id = 70330085, pos = { x = -3910.916, y = 206.202, z = -1062.089 }, rot = { x = 0.000, y = 11.092, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 384011, gadget_id = 70330084, pos = { x = -3910.917, y = 204.359, z = -1062.090 }, rot = { x = 0.000, y = 11.092, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 384012, gadget_id = 70330081, pos = { x = -3905.763, y = 204.311, z = -1059.107 }, rot = { x = 0.000, y = 101.092, z = 0.000 }, level = 30, is_use_point_array = true, area_id = 17 },
+	{ config_id = 384013, gadget_id = 70330085, pos = { x = -3905.762, y = 206.136, z = -1059.106 }, rot = { x = 0.000, y = 11.092, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 384014, gadget_id = 70330084, pos = { x = -3905.763, y = 204.311, z = -1059.107 }, rot = { x = 0.000, y = 11.092, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 384015, gadget_id = 70330083, pos = { x = -3906.630, y = 204.203, z = -1062.735 }, rot = { x = 0.000, y = 101.092, z = 0.000 }, level = 30, is_use_point_array = true, area_id = 17 },
+	{ config_id = 384016, gadget_id = 70330083, pos = { x = -3902.085, y = 204.203, z = -1063.709 }, rot = { x = 0.000, y = 11.092, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 384017, gadget_id = 70330083, pos = { x = -3901.301, y = 203.917, z = -1059.912 }, rot = { x = 0.000, y = 281.092, z = 0.000 }, level = 30, area_id = 17 },
+	{ config_id = 384018, gadget_id = 70330083, pos = { x = -3908.997, y = 204.202, z = -1053.865 }, rot = { x = 0.000, y = 191.092, z = 0.000 }, level = 30, area_id = 17 }
+}
+
+-- 区域
+regions = {
+	-- 开始时一次性对话
+	{ config_id = 384021, shape = RegionShape.SPHERE, radius = 10, pos = { x = -3905.556, y = 204.177, z = -1059.142 }, area_id = 17 }
+}
+
+-- 触发器
+triggers = {
+	-- 玩法成功Trigger：结束时一次性对话
+	{ config_id = 1384007, name = "VARIABLE_CHANGE_384007", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_384007", action = "action_EVENT_VARIABLE_CHANGE_384007" },
+	{ config_id = 1384019, name = "GADGET_STATE_CHANGE_384019", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_384019", action = "action_EVENT_GADGET_STATE_CHANGE_384019" },
+	{ config_id = 1384020, name = "GROUP_LOAD_384020", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_384020", action = "action_EVENT_GROUP_LOAD_384020", trigger_count = 0 },
+	-- 开始时一次性对话
+	{ config_id = 1384021, name = "ENTER_REGION_384021", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_384021", action = "action_EVENT_ENTER_REGION_384021" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Success", value = 0, no_refresh = true },
+	{ config_id = 2, name = "StartTalk", value = 0, no_refresh = true },
+	{ config_id = 3, name = "EndTalk", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 3,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 384001, 384002, 384003, 384004, 384005, 384008, 384009, 384010, 384011, 384012, 384013, 384014, 384015, 384016, 384017, 384018 },
+		regions = { 384021 },
+		triggers = { "VARIABLE_CHANGE_384007", "GADGET_STATE_CHANGE_384019", "ENTER_REGION_384021" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 384006 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_384020" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_384007(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"successed"为1
+	if ScriptLib.GetGroupVariableValue(context, "successed") ~= 1 then
+			return false
+	end
+	
+	-- 判断变量"EndTalk"为0
+	if ScriptLib.GetGroupVariableValue(context, "EndTalk") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_384007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "EndTalk"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 32100196
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 384016
-  L5_2 = GadgetState
-  L5_2 = L5_2.Action01
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 384017
-  L5_2 = GadgetState
-  L5_2 = L5_2.Action01
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 384018
-  L5_2 = GadgetState
-  L5_2 = L5_2.Action01
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_384007(context, evt)
+	-- 将本组内变量名为 "EndTalk" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "EndTalk", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 调用提示id为 32100196 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 32100196) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 将configid为 384016 的物件更改为状态 GadgetState.Action01
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 384016, GadgetState.Action01) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 384017 的物件更改为状态 GadgetState.Action01
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 384017, GadgetState.Action01) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 384018 的物件更改为状态 GadgetState.Action01
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 384018, GadgetState.Action01) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_384007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 384006 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.ChestOpened
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_384019(context, evt)
+	if 384006 ~= evt.param2 or GadgetState.ChestOpened ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_384019 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "Success"
-  L5_2 = 1
-  L6_2 = 133210422
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "Success"
-  L5_2 = 1
-  L6_2 = 133210384
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_384019(context, evt)
+	-- 将本组内变量名为 "Success" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "Success", 1, 133210422) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "Success" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "Success", 1, 133210384) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_384019 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Success"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_384020(context, evt)
+	-- 判断变量"Success"为0
+	if ScriptLib.GetGroupVariableValue(context, "Success") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_384020 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133210384
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_384020(context, evt)
+	-- 添加suite1的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133210384, 1)
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_384020 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 384021 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "StartTalk"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_384021(context, evt)
+	if evt.param1 ~= 384021 then return false end
+	
+	-- 判断变量"StartTalk"为0
+	if ScriptLib.GetGroupVariableValue(context, "StartTalk") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_384021 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "StartTalk"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = {}
-  L2_2.x = -3905.762
-  L2_2.y = 206.244
-  L2_2.z = -1059.106
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = true
-  L6_2.duration = 2
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.ShowReminder
-  L5_2 = A0_2
-  L6_2 = 32100194
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_384021(context, evt)
+	-- 将本组内变量名为 "StartTalk" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "StartTalk", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 触发镜头注目，注目位置为坐标（-3905.762，206.244，-1059.106），持续时间为2秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-3905.762, y=206.244, z=-1059.106}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = true, duration = 2, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 调用提示id为 32100194 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 32100194) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_384021 = L2_1
-L2_1 = require
-L3_1 = "BlackBoxPlay/LightSquare_V2"
-L2_1(L3_1)
+
+require "BlackBoxPlay/LightSquare_V2"

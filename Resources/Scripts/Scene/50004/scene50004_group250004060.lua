@@ -1,219 +1,100 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 250004060
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 591
-L2_1.gadget_id = 70350004
-L3_1 = {}
-L3_1.x = -603.431
-L3_1.y = -11.246
-L3_1.z = -508.541
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 592
-L3_1.gadget_id = 70900249
-L4_1 = {}
-L4_1.x = -600.0
-L4_1.y = -11.0
-L4_1.z = -524.463
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 9.513
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 593
-L4_1.gadget_id = 70900249
-L5_1 = {}
-L5_1.x = -600.0
-L5_1.y = -11.0
-L5_1.z = -521.844
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 9.513
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 594
-L5_1.gadget_id = 70900249
-L6_1 = {}
-L6_1.x = -600.0
-L6_1.y = -11.0
-L6_1.z = -519.203
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 9.513
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 595
-L6_1.gadget_id = 70900249
-L7_1 = {}
-L7_1.x = -600.0
-L7_1.y = -11.0
-L7_1.z = -516.497
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 9.513
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 596
-L7_1.gadget_id = 70900249
-L8_1 = {}
-L8_1.x = -600.0
-L8_1.y = -11.0
-L8_1.z = -513.689
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 9.513
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 597
-L8_1.gadget_id = 70900249
-L9_1 = {}
-L9_1.x = -599.829
-L9_1.y = -11.0
-L9_1.z = -510.774
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 9.513
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = {}
-L9_1.config_id = 598
-L9_1.gadget_id = 70900224
-L10_1 = {}
-L10_1.x = -599.802
-L10_1.y = -7.544
-L10_1.z = -509.382
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 270.0
-L10_1.y = 0.0
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1000106
-L2_1.name = "CLIENT_EXECUTE_106"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_CLIENT_EXECUTE
-L2_1.event = L3_1
-L2_1.source = "ElectricSwitch_Hit"
-L2_1.condition = "condition_EVENT_CLIENT_EXECUTE_106"
-L2_1.action = "action_EVENT_CLIENT_EXECUTE_106"
-L2_1.trigger_count = 0
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = true
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 591
-L5_1 = 592
-L6_1 = 593
-L7_1 = 594
-L8_1 = 595
-L9_1 = 596
-L10_1 = 597
-L11_1 = 598
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "CLIENT_EXECUTE_106"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGadgetConfigId
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.gadget_eid = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 598 == L2_2 then
-    L2_2 = true
-    return L2_2
-  end
+-- 基础信息
+local base_info = {
+	group_id = 250004060
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 591, gadget_id = 70350004, pos = { x = -603.431, y = -11.246, z = -508.541 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	{ config_id = 592, gadget_id = 70900249, pos = { x = -600.000, y = -11.000, z = -524.463 }, rot = { x = 0.000, y = 9.513, z = 0.000 }, level = 1 },
+	{ config_id = 593, gadget_id = 70900249, pos = { x = -600.000, y = -11.000, z = -521.844 }, rot = { x = 0.000, y = 9.513, z = 0.000 }, level = 1 },
+	{ config_id = 594, gadget_id = 70900249, pos = { x = -600.000, y = -11.000, z = -519.203 }, rot = { x = 0.000, y = 9.513, z = 0.000 }, level = 1 },
+	{ config_id = 595, gadget_id = 70900249, pos = { x = -600.000, y = -11.000, z = -516.497 }, rot = { x = 0.000, y = 9.513, z = 0.000 }, level = 1 },
+	{ config_id = 596, gadget_id = 70900249, pos = { x = -600.000, y = -11.000, z = -513.689 }, rot = { x = 0.000, y = 9.513, z = 0.000 }, level = 1 },
+	{ config_id = 597, gadget_id = 70900249, pos = { x = -599.829, y = -11.000, z = -510.774 }, rot = { x = 0.000, y = 9.513, z = 0.000 }, level = 1 },
+	{ config_id = 598, gadget_id = 70900224, pos = { x = -599.802, y = -7.544, z = -509.382 }, rot = { x = 270.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000106, name = "CLIENT_EXECUTE_106", event = EventType.EVENT_CLIENT_EXECUTE, source = "ElectricSwitch_Hit", condition = "condition_EVENT_CLIENT_EXECUTE_106", action = "action_EVENT_CLIENT_EXECUTE_106", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 591, 592, 593, 594, 595, 596, 597, 598 },
+		regions = { },
+		triggers = { "CLIENT_EXECUTE_106" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_CLIENT_EXECUTE_106(context, evt)
+	if 598 == ScriptLib.GetGadgetConfigId(context, { gadget_eid = evt.source_eid }) then
+	
+	return true
+	
+	end
 end
-condition_EVENT_CLIENT_EXECUTE_106 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 591
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStart
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CLIENT_EXECUTE_106(context, evt)
+	-- 将configid为 591 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 591, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
 end
-action_EVENT_CLIENT_EXECUTE_106 = L1_1

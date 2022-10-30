@@ -1,2114 +1,1143 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1, L30_1, L31_1, L32_1, L33_1, L34_1, L35_1, L36_1
-L0_1 = {}
-L0_1.group_id = 133209014
-L1_1 = {}
-L1_1.inner_region = 14023
-L1_1.outer_region = 14023
-L1_1.related_region = 14023
-L1_1.group_id = 133209014
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 14040
-L3_1.gadget_id = 70310008
-L4_1 = {}
-L4_1.x = -2184.93
-L4_1.y = 198.658
-L4_1.z = -3493.47
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 11
-L2_1[14040] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 14023
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 27
-L4_1 = {}
-L4_1.x = -2187.972
-L4_1.y = 200.425
-L4_1.z = -3479.096
-L3_1.pos = L4_1
-L3_1.area_id = 11
-L2_1[14023] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1014001
-L3_1.name = "SELECT_DIFFICULTY_14001"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SELECT_DIFFICULTY
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14001"
-L3_1.action = "action_EVENT_SELECT_DIFFICULTY_14001"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1014002
-L4_1.name = "SELECT_DIFFICULTY_14002"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SELECT_DIFFICULTY
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14002"
-L4_1.action = "action_EVENT_SELECT_DIFFICULTY_14002"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1014003
-L5_1.name = "SELECT_DIFFICULTY_14003"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_SELECT_DIFFICULTY
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14003"
-L5_1.action = "action_EVENT_SELECT_DIFFICULTY_14003"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1014004
-L6_1.name = "SELECT_DIFFICULTY_14004"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_SELECT_DIFFICULTY
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14004"
-L6_1.action = "action_EVENT_SELECT_DIFFICULTY_14004"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1014005
-L7_1.name = "SELECT_DIFFICULTY_14005"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_SELECT_DIFFICULTY
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14005"
-L7_1.action = "action_EVENT_SELECT_DIFFICULTY_14005"
-L7_1.trigger_count = 0
-L8_1 = {}
-L8_1.config_id = 1014006
-L8_1.name = "SELECT_DIFFICULTY_14006"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_SELECT_DIFFICULTY
-L8_1.event = L9_1
-L8_1.source = ""
-L8_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14006"
-L8_1.action = "action_EVENT_SELECT_DIFFICULTY_14006"
-L8_1.trigger_count = 0
-L9_1 = {}
-L9_1.config_id = 1014007
-L9_1.name = "SELECT_DIFFICULTY_14007"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_SELECT_DIFFICULTY
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14007"
-L9_1.action = "action_EVENT_SELECT_DIFFICULTY_14007"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1014008
-L10_1.name = "SELECT_DIFFICULTY_14008"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_SELECT_DIFFICULTY
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14008"
-L10_1.action = "action_EVENT_SELECT_DIFFICULTY_14008"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1014009
-L11_1.name = "SELECT_DIFFICULTY_14009"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_SELECT_DIFFICULTY
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14009"
-L11_1.action = "action_EVENT_SELECT_DIFFICULTY_14009"
-L11_1.trigger_count = 0
-L12_1 = {}
-L12_1.config_id = 1014010
-L12_1.name = "SELECT_DIFFICULTY_14010"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_SELECT_DIFFICULTY
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14010"
-L12_1.action = "action_EVENT_SELECT_DIFFICULTY_14010"
-L12_1.trigger_count = 0
-L13_1 = {}
-L13_1.config_id = 1014011
-L13_1.name = "SELECT_DIFFICULTY_14011"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_SELECT_DIFFICULTY
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14011"
-L13_1.action = "action_EVENT_SELECT_DIFFICULTY_14011"
-L13_1.trigger_count = 0
-L14_1 = {}
-L14_1.config_id = 1014012
-L14_1.name = "SELECT_DIFFICULTY_14012"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_SELECT_DIFFICULTY
-L14_1.event = L15_1
-L14_1.source = ""
-L14_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14012"
-L14_1.action = "action_EVENT_SELECT_DIFFICULTY_14012"
-L14_1.trigger_count = 0
-L15_1 = {}
-L15_1.config_id = 1014013
-L15_1.name = "SELECT_DIFFICULTY_14013"
-L16_1 = EventType
-L16_1 = L16_1.EVENT_SELECT_DIFFICULTY
-L15_1.event = L16_1
-L15_1.source = ""
-L15_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14013"
-L15_1.action = "action_EVENT_SELECT_DIFFICULTY_14013"
-L15_1.trigger_count = 0
-L16_1 = {}
-L16_1.config_id = 1014014
-L16_1.name = "SELECT_DIFFICULTY_14014"
-L17_1 = EventType
-L17_1 = L17_1.EVENT_SELECT_DIFFICULTY
-L16_1.event = L17_1
-L16_1.source = ""
-L16_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14014"
-L16_1.action = "action_EVENT_SELECT_DIFFICULTY_14014"
-L16_1.trigger_count = 0
-L17_1 = {}
-L17_1.config_id = 1014015
-L17_1.name = "SELECT_DIFFICULTY_14015"
-L18_1 = EventType
-L18_1 = L18_1.EVENT_SELECT_DIFFICULTY
-L17_1.event = L18_1
-L17_1.source = ""
-L17_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14015"
-L17_1.action = "action_EVENT_SELECT_DIFFICULTY_14015"
-L17_1.trigger_count = 0
-L18_1 = {}
-L18_1.config_id = 1014016
-L18_1.name = "SELECT_DIFFICULTY_14016"
-L19_1 = EventType
-L19_1 = L19_1.EVENT_SELECT_DIFFICULTY
-L18_1.event = L19_1
-L18_1.source = ""
-L18_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14016"
-L18_1.action = "action_EVENT_SELECT_DIFFICULTY_14016"
-L18_1.trigger_count = 0
-L19_1 = {}
-L19_1.config_id = 1014017
-L19_1.name = "SELECT_DIFFICULTY_14017"
-L20_1 = EventType
-L20_1 = L20_1.EVENT_SELECT_DIFFICULTY
-L19_1.event = L20_1
-L19_1.source = ""
-L19_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14017"
-L19_1.action = "action_EVENT_SELECT_DIFFICULTY_14017"
-L19_1.trigger_count = 0
-L20_1 = {}
-L20_1.config_id = 1014018
-L20_1.name = "SELECT_DIFFICULTY_14018"
-L21_1 = EventType
-L21_1 = L21_1.EVENT_SELECT_DIFFICULTY
-L20_1.event = L21_1
-L20_1.source = ""
-L20_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14018"
-L20_1.action = "action_EVENT_SELECT_DIFFICULTY_14018"
-L20_1.trigger_count = 0
-L21_1 = {}
-L21_1.config_id = 1014019
-L21_1.name = "SELECT_DIFFICULTY_14019"
-L22_1 = EventType
-L22_1 = L22_1.EVENT_SELECT_DIFFICULTY
-L21_1.event = L22_1
-L21_1.source = ""
-L21_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14019"
-L21_1.action = "action_EVENT_SELECT_DIFFICULTY_14019"
-L21_1.trigger_count = 0
-L22_1 = {}
-L22_1.config_id = 1014020
-L22_1.name = "SELECT_DIFFICULTY_14020"
-L23_1 = EventType
-L23_1 = L23_1.EVENT_SELECT_DIFFICULTY
-L22_1.event = L23_1
-L22_1.source = ""
-L22_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14020"
-L22_1.action = "action_EVENT_SELECT_DIFFICULTY_14020"
-L22_1.trigger_count = 0
-L23_1 = {}
-L23_1.config_id = 1014021
-L23_1.name = "SELECT_DIFFICULTY_14021"
-L24_1 = EventType
-L24_1 = L24_1.EVENT_SELECT_DIFFICULTY
-L23_1.event = L24_1
-L23_1.source = ""
-L23_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14021"
-L23_1.action = "action_EVENT_SELECT_DIFFICULTY_14021"
-L23_1.trigger_count = 0
-L24_1 = {}
-L24_1.config_id = 1014022
-L24_1.name = "SELECT_DIFFICULTY_14022"
-L25_1 = EventType
-L25_1 = L25_1.EVENT_SELECT_DIFFICULTY
-L24_1.event = L25_1
-L24_1.source = ""
-L24_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14022"
-L24_1.action = "action_EVENT_SELECT_DIFFICULTY_14022"
-L24_1.trigger_count = 0
-L25_1 = {}
-L25_1.config_id = 1014025
-L25_1.name = "SELECT_DIFFICULTY_14025"
-L26_1 = EventType
-L26_1 = L26_1.EVENT_SELECT_DIFFICULTY
-L25_1.event = L26_1
-L25_1.source = ""
-L25_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14025"
-L25_1.action = "action_EVENT_SELECT_DIFFICULTY_14025"
-L25_1.trigger_count = 0
-L26_1 = {}
-L26_1.config_id = 1014026
-L26_1.name = "SELECT_DIFFICULTY_14026"
-L27_1 = EventType
-L27_1 = L27_1.EVENT_SELECT_DIFFICULTY
-L26_1.event = L27_1
-L26_1.source = ""
-L26_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14026"
-L26_1.action = "action_EVENT_SELECT_DIFFICULTY_14026"
-L26_1.trigger_count = 0
-L27_1 = {}
-L27_1.config_id = 1014027
-L27_1.name = "SELECT_OPTION_14027"
-L28_1 = EventType
-L28_1 = L28_1.EVENT_SELECT_OPTION
-L27_1.event = L28_1
-L27_1.source = ""
-L27_1.condition = "condition_EVENT_SELECT_OPTION_14027"
-L27_1.action = "action_EVENT_SELECT_OPTION_14027"
-L28_1 = {}
-L28_1.config_id = 1014028
-L28_1.name = "SELECT_OPTION_14028"
-L29_1 = EventType
-L29_1 = L29_1.EVENT_SELECT_OPTION
-L28_1.event = L29_1
-L28_1.source = ""
-L28_1.condition = "condition_EVENT_SELECT_OPTION_14028"
-L28_1.action = "action_EVENT_SELECT_OPTION_14028"
-L29_1 = {}
-L29_1.config_id = 1014029
-L29_1.name = "SELECT_OPTION_14029"
-L30_1 = EventType
-L30_1 = L30_1.EVENT_SELECT_OPTION
-L29_1.event = L30_1
-L29_1.source = ""
-L29_1.condition = "condition_EVENT_SELECT_OPTION_14029"
-L29_1.action = "action_EVENT_SELECT_OPTION_14029"
-L30_1 = {}
-L30_1.config_id = 1014030
-L30_1.name = "SELECT_OPTION_14030"
-L31_1 = EventType
-L31_1 = L31_1.EVENT_SELECT_OPTION
-L30_1.event = L31_1
-L30_1.source = ""
-L30_1.condition = "condition_EVENT_SELECT_OPTION_14030"
-L30_1.action = "action_EVENT_SELECT_OPTION_14030"
-L31_1 = {}
-L31_1.config_id = 1014031
-L31_1.name = "SELECT_DIFFICULTY_14031"
-L32_1 = EventType
-L32_1 = L32_1.EVENT_SELECT_DIFFICULTY
-L31_1.event = L32_1
-L31_1.source = ""
-L31_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14031"
-L31_1.action = "action_EVENT_SELECT_DIFFICULTY_14031"
-L31_1.trigger_count = 0
-L32_1 = {}
-L32_1.config_id = 1014032
-L32_1.name = "SELECT_DIFFICULTY_14032"
-L33_1 = EventType
-L33_1 = L33_1.EVENT_SELECT_DIFFICULTY
-L32_1.event = L33_1
-L32_1.source = ""
-L32_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14032"
-L32_1.action = "action_EVENT_SELECT_DIFFICULTY_14032"
-L32_1.trigger_count = 0
-L33_1 = {}
-L33_1.config_id = 1014033
-L33_1.name = "SELECT_DIFFICULTY_14033"
-L34_1 = EventType
-L34_1 = L34_1.EVENT_SELECT_DIFFICULTY
-L33_1.event = L34_1
-L33_1.source = ""
-L33_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14033"
-L33_1.action = "action_EVENT_SELECT_DIFFICULTY_14033"
-L33_1.trigger_count = 0
-L34_1 = {}
-L34_1.config_id = 1014034
-L34_1.name = "SELECT_DIFFICULTY_14034"
-L35_1 = EventType
-L35_1 = L35_1.EVENT_SELECT_DIFFICULTY
-L34_1.event = L35_1
-L34_1.source = ""
-L34_1.condition = "condition_EVENT_SELECT_DIFFICULTY_14034"
-L34_1.action = "action_EVENT_SELECT_DIFFICULTY_14034"
-L34_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-L2_1[13] = L15_1
-L2_1[14] = L16_1
-L2_1[15] = L17_1
-L2_1[16] = L18_1
-L2_1[17] = L19_1
-L2_1[18] = L20_1
-L2_1[19] = L21_1
-L2_1[20] = L22_1
-L2_1[21] = L23_1
-L2_1[22] = L24_1
-L2_1[23] = L25_1
-L2_1[24] = L26_1
-L2_1[25] = L27_1
-L2_1[26] = L28_1
-L2_1[27] = L29_1
-L2_1[28] = L30_1
-L2_1[29] = L31_1
-L2_1[30] = L32_1
-L2_1[31] = L33_1
-L2_1[32] = L34_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 14040
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 14023
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "SELECT_DIFFICULTY_14001"
-L6_1 = "SELECT_DIFFICULTY_14002"
-L7_1 = "SELECT_DIFFICULTY_14003"
-L8_1 = "SELECT_DIFFICULTY_14004"
-L9_1 = "SELECT_DIFFICULTY_14005"
-L10_1 = "SELECT_DIFFICULTY_14006"
-L11_1 = "SELECT_DIFFICULTY_14007"
-L12_1 = "SELECT_DIFFICULTY_14008"
-L13_1 = "SELECT_DIFFICULTY_14009"
-L14_1 = "SELECT_DIFFICULTY_14010"
-L15_1 = "SELECT_DIFFICULTY_14011"
-L16_1 = "SELECT_DIFFICULTY_14012"
-L17_1 = "SELECT_DIFFICULTY_14013"
-L18_1 = "SELECT_DIFFICULTY_14014"
-L19_1 = "SELECT_DIFFICULTY_14015"
-L20_1 = "SELECT_DIFFICULTY_14016"
-L21_1 = "SELECT_DIFFICULTY_14017"
-L22_1 = "SELECT_DIFFICULTY_14018"
-L23_1 = "SELECT_DIFFICULTY_14019"
-L24_1 = "SELECT_DIFFICULTY_14020"
-L25_1 = "SELECT_DIFFICULTY_14021"
-L26_1 = "SELECT_DIFFICULTY_14022"
-L27_1 = "SELECT_DIFFICULTY_14025"
-L28_1 = "SELECT_DIFFICULTY_14026"
-L29_1 = "SELECT_OPTION_14027"
-L30_1 = "SELECT_OPTION_14028"
-L31_1 = "SELECT_OPTION_14029"
-L32_1 = "SELECT_OPTION_14030"
-L33_1 = "SELECT_DIFFICULTY_14031"
-L34_1 = "SELECT_DIFFICULTY_14032"
-L35_1 = "SELECT_DIFFICULTY_14033"
-L36_1 = "SELECT_DIFFICULTY_14034"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L4_1[9] = L13_1
-L4_1[10] = L14_1
-L4_1[11] = L15_1
-L4_1[12] = L16_1
-L4_1[13] = L17_1
-L4_1[14] = L18_1
-L4_1[15] = L19_1
-L4_1[16] = L20_1
-L4_1[17] = L21_1
-L4_1[18] = L22_1
-L4_1[19] = L23_1
-L4_1[20] = L24_1
-L4_1[21] = L25_1
-L4_1[22] = L26_1
-L4_1[23] = L27_1
-L4_1[24] = L28_1
-L4_1[25] = L29_1
-L4_1[26] = L30_1
-L4_1[27] = L31_1
-L4_1[28] = L32_1
-L4_1[29] = L33_1
-L4_1[30] = L34_1
-L4_1[31] = L35_1
-L4_1[32] = L36_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209010
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 5 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14002 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209013
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14002 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 5 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209013
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 5 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209013
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 7 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209012
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 7 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209012
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 7 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209012
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209011
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14009 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209011
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14009 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14010 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209011
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14010 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14011 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209010
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14011 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14012 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209010
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14012 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14013 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209010
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14013 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 6 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209009
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 6 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209009
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 6 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209009
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14017 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209008
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14017 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14018 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209008
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14018 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14019 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209008
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14019 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14020 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209007
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14020 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14021 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209007
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14021 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 3 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14022 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209007
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14022 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 6 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14025 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209009
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14025 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14026 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209008
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14026 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 14025 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 4100 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_OPTION_14027 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4100
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4101
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4102
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4103
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209007
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_OPTION_14027 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 14025 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 4101 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_OPTION_14028 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4100
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4101
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4102
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4103
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209007
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_OPTION_14028 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 14025 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 4102 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_OPTION_14029 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4100
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4101
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4102
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4103
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209007
-  L5_2 = 4
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_OPTION_14029 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 14025 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 4103 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_OPTION_14030 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4100
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4101
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4102
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133209014
-  L5_2 = 14025
-  L6_2 = 4103
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209007
-  L5_2 = 9
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_OPTION_14030 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 2 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14031 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209007
-  L5_2 = 9
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14031 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 7 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14032 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209012
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14032 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 5 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14033 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209013
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14033 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param2
-  if 4 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param3
-  if 1 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_SELECT_DIFFICULTY_14034 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 133209029
-  L5_2 = 29001
-  L6_2 = GadgetState
-  L6_2 = L6_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133209011
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_SELECT_DIFFICULTY_14034 = L2_1
-L2_1 = require
-L3_1 = "V2_0/SetPerformanceOptimizationWithRegion_V2.0"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133209014
+}
+
+-- DEFS_MISCS
+local defs = {
+        inner_region = 14023,
+        outer_region = 14023,
+        related_region = 14023,
+        group_id = 133209014
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	[14040] = { config_id = 14040, gadget_id = 70310008, pos = { x = -2184.930, y = 198.658, z = -3493.470 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 11 }
+}
+
+-- 区域
+regions = {
+	[14023] = { config_id = 14023, shape = RegionShape.SPHERE, radius = 27, pos = { x = -2187.972, y = 200.425, z = -3479.096 }, area_id = 11 }
+}
+
+-- 触发器
+triggers = {
+	-- 击飞挑战-Extra
+	{ config_id = 1014001, name = "SELECT_DIFFICULTY_14001", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14001", action = "action_EVENT_SELECT_DIFFICULTY_14001", trigger_count = 0 },
+	-- 遗迹怪-简单难度
+	{ config_id = 1014002, name = "SELECT_DIFFICULTY_14002", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14002", action = "action_EVENT_SELECT_DIFFICULTY_14002", trigger_count = 0 },
+	-- 遗迹怪-普通难度
+	{ config_id = 1014003, name = "SELECT_DIFFICULTY_14003", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14003", action = "action_EVENT_SELECT_DIFFICULTY_14003", trigger_count = 0 },
+	-- 遗迹怪-困难难度
+	{ config_id = 1014004, name = "SELECT_DIFFICULTY_14004", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14004", action = "action_EVENT_SELECT_DIFFICULTY_14004", trigger_count = 0 },
+	-- 深渊使徒/深渊咏者-简单难度
+	{ config_id = 1014005, name = "SELECT_DIFFICULTY_14005", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14005", action = "action_EVENT_SELECT_DIFFICULTY_14005", trigger_count = 0 },
+	-- 深渊使徒/深渊咏者-普通难度
+	{ config_id = 1014006, name = "SELECT_DIFFICULTY_14006", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14006", action = "action_EVENT_SELECT_DIFFICULTY_14006", trigger_count = 0 },
+	-- 深渊使徒/深渊咏者-困难难度
+	{ config_id = 1014007, name = "SELECT_DIFFICULTY_14007", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14007", action = "action_EVENT_SELECT_DIFFICULTY_14007", trigger_count = 0 },
+	-- 雷电力场-简单难度
+	{ config_id = 1014008, name = "SELECT_DIFFICULTY_14008", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14008", action = "action_EVENT_SELECT_DIFFICULTY_14008", trigger_count = 0 },
+	-- 雷电力场-普通难度
+	{ config_id = 1014009, name = "SELECT_DIFFICULTY_14009", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14009", action = "action_EVENT_SELECT_DIFFICULTY_14009", trigger_count = 0 },
+	-- 雷电力场-困难难度
+	{ config_id = 1014010, name = "SELECT_DIFFICULTY_14010", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14010", action = "action_EVENT_SELECT_DIFFICULTY_14010", trigger_count = 0 },
+	-- 击飞挑战-简单难度
+	{ config_id = 1014011, name = "SELECT_DIFFICULTY_14011", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14011", action = "action_EVENT_SELECT_DIFFICULTY_14011", trigger_count = 0 },
+	-- 击飞挑战-普通难度
+	{ config_id = 1014012, name = "SELECT_DIFFICULTY_14012", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14012", action = "action_EVENT_SELECT_DIFFICULTY_14012", trigger_count = 0 },
+	-- 击飞挑战-困难难度
+	{ config_id = 1014013, name = "SELECT_DIFFICULTY_14013", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14013", action = "action_EVENT_SELECT_DIFFICULTY_14013", trigger_count = 0 },
+	-- 雷暴石挑战-简单难度
+	{ config_id = 1014014, name = "SELECT_DIFFICULTY_14014", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14014", action = "action_EVENT_SELECT_DIFFICULTY_14014", trigger_count = 0 },
+	-- 雷暴石挑战-普通难度
+	{ config_id = 1014015, name = "SELECT_DIFFICULTY_14015", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14015", action = "action_EVENT_SELECT_DIFFICULTY_14015", trigger_count = 0 },
+	-- 雷暴石挑战-困难难度
+	{ config_id = 1014016, name = "SELECT_DIFFICULTY_14016", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14016", action = "action_EVENT_SELECT_DIFFICULTY_14016", trigger_count = 0 },
+	-- 电桩挑战-简单难度
+	{ config_id = 1014017, name = "SELECT_DIFFICULTY_14017", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14017", action = "action_EVENT_SELECT_DIFFICULTY_14017", trigger_count = 0 },
+	-- 电桩挑战-普通难度
+	{ config_id = 1014018, name = "SELECT_DIFFICULTY_14018", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14018", action = "action_EVENT_SELECT_DIFFICULTY_14018", trigger_count = 0 },
+	-- 电桩挑战-困难难度
+	{ config_id = 1014019, name = "SELECT_DIFFICULTY_14019", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14019", action = "action_EVENT_SELECT_DIFFICULTY_14019", trigger_count = 0 },
+	-- 飞雷核挑战-简单难度
+	{ config_id = 1014020, name = "SELECT_DIFFICULTY_14020", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14020", action = "action_EVENT_SELECT_DIFFICULTY_14020", trigger_count = 0 },
+	-- 飞雷核挑战-普通难度
+	{ config_id = 1014021, name = "SELECT_DIFFICULTY_14021", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14021", action = "action_EVENT_SELECT_DIFFICULTY_14021", trigger_count = 0 },
+	-- 飞雷核挑战-困难难度
+	{ config_id = 1014022, name = "SELECT_DIFFICULTY_14022", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14022", action = "action_EVENT_SELECT_DIFFICULTY_14022", trigger_count = 0 },
+	-- 雷暴石挑战-Extra
+	{ config_id = 1014025, name = "SELECT_DIFFICULTY_14025", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14025", action = "action_EVENT_SELECT_DIFFICULTY_14025", trigger_count = 0 },
+	-- 电桩挑战-Extra
+	{ config_id = 1014026, name = "SELECT_DIFFICULTY_14026", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14026", action = "action_EVENT_SELECT_DIFFICULTY_14026", trigger_count = 0 },
+	{ config_id = 1014027, name = "SELECT_OPTION_14027", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_14027", action = "action_EVENT_SELECT_OPTION_14027" },
+	{ config_id = 1014028, name = "SELECT_OPTION_14028", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_14028", action = "action_EVENT_SELECT_OPTION_14028" },
+	{ config_id = 1014029, name = "SELECT_OPTION_14029", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_14029", action = "action_EVENT_SELECT_OPTION_14029" },
+	{ config_id = 1014030, name = "SELECT_OPTION_14030", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_14030", action = "action_EVENT_SELECT_OPTION_14030" },
+	-- 飞雷核挑战-Extra
+	{ config_id = 1014031, name = "SELECT_DIFFICULTY_14031", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14031", action = "action_EVENT_SELECT_DIFFICULTY_14031", trigger_count = 0 },
+	-- 深渊使徒/深渊咏者-Extra
+	{ config_id = 1014032, name = "SELECT_DIFFICULTY_14032", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14032", action = "action_EVENT_SELECT_DIFFICULTY_14032", trigger_count = 0 },
+	-- 遗迹怪-Extra
+	{ config_id = 1014033, name = "SELECT_DIFFICULTY_14033", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14033", action = "action_EVENT_SELECT_DIFFICULTY_14033", trigger_count = 0 },
+	-- 雷电力场-Extra
+	{ config_id = 1014034, name = "SELECT_DIFFICULTY_14034", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_14034", action = "action_EVENT_SELECT_DIFFICULTY_14034", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 14040 },
+		regions = { 14023 },
+		triggers = { "SELECT_DIFFICULTY_14001", "SELECT_DIFFICULTY_14002", "SELECT_DIFFICULTY_14003", "SELECT_DIFFICULTY_14004", "SELECT_DIFFICULTY_14005", "SELECT_DIFFICULTY_14006", "SELECT_DIFFICULTY_14007", "SELECT_DIFFICULTY_14008", "SELECT_DIFFICULTY_14009", "SELECT_DIFFICULTY_14010", "SELECT_DIFFICULTY_14011", "SELECT_DIFFICULTY_14012", "SELECT_DIFFICULTY_14013", "SELECT_DIFFICULTY_14014", "SELECT_DIFFICULTY_14015", "SELECT_DIFFICULTY_14016", "SELECT_DIFFICULTY_14017", "SELECT_DIFFICULTY_14018", "SELECT_DIFFICULTY_14019", "SELECT_DIFFICULTY_14020", "SELECT_DIFFICULTY_14021", "SELECT_DIFFICULTY_14022", "SELECT_DIFFICULTY_14025", "SELECT_DIFFICULTY_14026", "SELECT_OPTION_14027", "SELECT_OPTION_14028", "SELECT_OPTION_14029", "SELECT_OPTION_14030", "SELECT_DIFFICULTY_14031", "SELECT_DIFFICULTY_14032", "SELECT_DIFFICULTY_14033", "SELECT_DIFFICULTY_14034" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14001(context, evt)
+	
+	
+	if 4 ~= evt.param2 then
+		return false
+	end
+	
+	if 3 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14001(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209010, 5)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14002(context, evt)
+	
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 5 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14002(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209013, 2)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14003(context, evt)
+	
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 5 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14003(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209013, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14004(context, evt)
+	
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 5 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14004(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209013, 4)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14005(context, evt)
+	
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 7 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14005(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209012, 2)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14006(context, evt)
+	
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 7 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14006(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209012, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14007(context, evt)
+	
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 7 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14007(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209012, 4)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14008(context, evt)
+	
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 1 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14008(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209011, 2)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14009(context, evt)
+	
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 1 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14009(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209011, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14010(context, evt)
+	
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 1 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14010(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209011, 4)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14011(context, evt)
+	
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 3 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14011(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209010, 2)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14012(context, evt)
+	
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 3 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14012(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209010, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14013(context, evt)
+	
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 3 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14013(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209010, 4)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14014(context, evt)
+	
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 6 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14014(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209009, 2)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14015(context, evt)
+	
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 6 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14015(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209009, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14016(context, evt)
+	
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 6 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14016(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209009, 4)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14017(context, evt)
+	
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 4 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14017(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209008, 2)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14018(context, evt)
+	
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 4 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14018(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209008, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14019(context, evt)
+	
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 4 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14019(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209008, 4)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14020(context, evt)
+	
+	
+	if 1 ~= evt.param2 then
+		return false
+	end
+	
+	if 2 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14020(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209007, 2)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14021(context, evt)
+	
+	
+	if 2 ~= evt.param2 then
+		return false
+	end
+	
+	if 2 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14021(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209007, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14022(context, evt)
+	
+	
+	if 3 ~= evt.param2 then
+		return false
+	end
+	
+	if 2 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14022(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	 
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209007, 4)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14025(context, evt)
+	
+	
+	if 4 ~= evt.param2 then
+		return false
+	end
+	
+	if 6 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14025(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209009, 5)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14026(context, evt)
+	
+	if 4 ~= evt.param2 then
+		return false
+	end
+	
+	if 4 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14026(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209008, 5)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_14027(context, evt)
+	-- 判断是gadgetid 14025 option_id 4100
+	if 14025 ~= evt.param1 then
+		return false	
+	end
+	
+	if 4100 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_14027(context, evt)
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4100；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4100) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4101；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4101) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4102；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4102) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4103；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4103) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209007, 2)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_14028(context, evt)
+	-- 判断是gadgetid 14025 option_id 4101
+	if 14025 ~= evt.param1 then
+		return false	
+	end
+	
+	if 4101 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_14028(context, evt)
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4100；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4100) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4101；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4101) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4102；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4102) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4103；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4103) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209007, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_14029(context, evt)
+	-- 判断是gadgetid 14025 option_id 4102
+	if 14025 ~= evt.param1 then
+		return false	
+	end
+	
+	if 4102 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_14029(context, evt)
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4100；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4100) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4101；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4101) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4102；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4102) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4103；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4103) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209007, 4)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_14030(context, evt)
+	-- 判断是gadgetid 14025 option_id 4103
+	if 14025 ~= evt.param1 then
+		return false	
+	end
+	
+	if 4103 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_14030(context, evt)
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4100；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4100) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4101；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4101) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4102；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4102) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 133209014 ；指定config：14025；物件身上指定option：4103；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 133209014, 14025, 4103) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 添加suite9的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209007, 9)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14031(context, evt)
+	
+	
+	if 4 ~= evt.param2 then
+		return false
+	end
+	
+	if 2 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14031(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite9的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209007, 9)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14032(context, evt)
+	
+	
+	if 4 ~= evt.param2 then
+		return false
+	end
+	
+	if 7 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14032(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209012, 5)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14033(context, evt)
+	
+	
+	if 4 ~= evt.param2 then
+		return false
+	end
+	
+	if 5 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14033(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209013, 5)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_14034(context, evt)
+	
+	
+	if 4 ~= evt.param2 then
+		return false
+	end
+	
+	if 1 ~= evt.param3 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_14034(context, evt)
+	-- 改变指定group组133209029中， configid为29001的gadget的state
+	if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 133209029, 29001, GadgetState.GearStop) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
+			return -1
+		end 
+	
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133209011, 5)
+	
+	return 0
+end
+
+require "V2_0/SetPerformanceOptimizationWithRegion_V2.0"

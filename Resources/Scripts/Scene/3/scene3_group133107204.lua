@@ -1,284 +1,185 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133107204
-L1_1 = {}
-L1_1.point_sum = 17
-L1_1.route_2 = 310700070
-L1_1.gadget_seelie = 204002
-L2_1 = L1_1.point_sum
-L2_1 = L2_1 - 1
-L1_1.final_point = L2_1
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 204002
-L3_1.gadget_id = 70710010
-L4_1 = {}
-L4_1.x = -671.48
-L4_1.y = 306.519
-L4_1.z = 595.812
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 32
-L3_1.route_id = 310700069
-L3_1.area_id = 7
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 204007
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 4
-L4_1 = {}
-L4_1.x = -671.088
-L4_1.y = 307.407
-L4_1.z = 598.603
-L3_1.pos = L4_1
-L3_1.area_id = 7
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1204005
-L3_1.name = "PLATFORM_REACH_POINT_204005"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_PLATFORM_REACH_POINT
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_PLATFORM_REACH_POINT_204005"
-L3_1.action = "action_EVENT_PLATFORM_REACH_POINT_204005"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1204006
-L4_1.name = "AVATAR_NEAR_PLATFORM_204006"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_AVATAR_NEAR_PLATFORM
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_AVATAR_NEAR_PLATFORM_204006"
-L4_1.action = "action_EVENT_AVATAR_NEAR_PLATFORM_204006"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1204007
-L5_1.name = "ENTER_REGION_204007"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ENTER_REGION
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ENTER_REGION_204007"
-L5_1.action = "action_EVENT_ENTER_REGION_204007"
-L5_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 204002
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 204002
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L6_1 = 204007
-L5_1[1] = L6_1
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "PLATFORM_REACH_POINT_204005"
-L7_1 = "AVATAR_NEAR_PLATFORM_204006"
-L8_1 = "ENTER_REGION_204007"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = L1_1.gadget_seelie
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.route_2
-  L3_2 = A1_2.param2
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.final_point
-  L3_2 = A1_2.param3
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133107204
+}
+
+-- Trigger变量
+local defs = {
+	point_sum = 17,
+	route_2 = 310700070,
+	gadget_seelie = 204002
+}
+
+-- DEFS_MISCS
+defs.final_point = defs.point_sum - 1
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 204002, gadget_id = 70710010, pos = { x = -671.480, y = 306.519, z = 595.812 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 32, route_id = 310700069, area_id = 7 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 204007, shape = RegionShape.SPHERE, radius = 4, pos = { x = -671.088, y = 307.407, z = 598.603 }, area_id = 7 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1204005, name = "PLATFORM_REACH_POINT_204005", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_204005", action = "action_EVENT_PLATFORM_REACH_POINT_204005", trigger_count = 0 },
+	{ config_id = 1204006, name = "AVATAR_NEAR_PLATFORM_204006", event = EventType.EVENT_AVATAR_NEAR_PLATFORM, source = "", condition = "condition_EVENT_AVATAR_NEAR_PLATFORM_204006", action = "action_EVENT_AVATAR_NEAR_PLATFORM_204006", trigger_count = 0 },
+	{ config_id = 1204007, name = "ENTER_REGION_204007", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_204007", action = "action_EVENT_ENTER_REGION_204007", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { 204002 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 204002 },
+		regions = { 204007 },
+		triggers = { "PLATFORM_REACH_POINT_204005", "AVATAR_NEAR_PLATFORM_204006", "ENTER_REGION_204007" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_PLATFORM_REACH_POINT_204005(context, evt)
+	if defs.gadget_seelie ~= evt.param1 then
+	return false
+	end
+	
+	if defs.route_2 ~= evt.param2 then
+	return false
+	end
+	
+	if  defs.final_point ~= evt.param3 then
+	return false
+	end
+	
+	return true
 end
-condition_EVENT_PLATFORM_REACH_POINT_204005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StopPlatform
-  L3_2 = A0_2
-  L4_2 = 204002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : stop_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 204002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_entity_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "1331072041"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_PLATFORM_REACH_POINT_204005(context, evt)
+	-- 停止移动平台
+	if 0 ~= ScriptLib.StopPlatform(context, 204002) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : stop_platform")
+	  return -1
+	end
+	
+		-- 永久关闭CongfigId的Gadget，需要和Groups的RefreshWithBlock标签搭配
+		if 0 ~= ScriptLib.KillEntityByConfigId(context, { config_id = 204002 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_entity_by_configId")
+		    return -1
+		end
+		
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "1331072041") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_PLATFORM_REACH_POINT_204005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = L1_1.gadget_seelie
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.route_2
-  L3_2 = A1_2.param2
-  if L2_2 ~= L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = L1_1.final_point
-  L3_2 = A1_2.param3
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_AVATAR_NEAR_PLATFORM_204006(context, evt)
+	if defs.gadget_seelie ~= evt.param1 then
+	return false
+	end
+	
+	if defs.route_2 ~= evt.param2 then
+	return false
+	end
+	
+	if defs.final_point == evt.param3 then
+	return false
+	end
+	
+	return true
 end
-condition_EVENT_AVATAR_NEAR_PLATFORM_204006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 204002
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_AVATAR_NEAR_PLATFORM_204006(context, evt)
+	if 0 ~= ScriptLib.StartPlatform(context, 204002) then
+	return -1
+	end
+	
+	return 0
 end
-action_EVENT_AVATAR_NEAR_PLATFORM_204006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 204007 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_204007(context, evt)
+	if evt.param1 ~= 204007 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_204007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformRouteId
-  L3_2 = A0_2
-  L4_2 = 204002
-  L5_2 = 310700070
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_platform_routeId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_204007(context, evt)
+	-- 设置移动平台路径
+	if 0 ~= ScriptLib.SetPlatformRouteId(context, 204002, 310700070) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_routeId")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_204007 = L2_1

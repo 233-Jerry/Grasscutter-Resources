@@ -1,143 +1,107 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133107010
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 10004
-L2_1.npc_id = 2003007
-L3_1 = {}
-L3_1.x = -618.0
-L3_1.y = 252.4
-L3_1.z = 395.14
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.area_id = 7
-L1_1[1] = L2_1
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 10001
-L2_1.gadget_id = 71700075
-L3_1 = {}
-L3_1.x = -619.98
-L3_1.y = 251.04
-L3_1.z = 395.398
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 321.574
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 18
-L2_1.area_id = 7
-L3_1 = {}
-L3_1.config_id = 10002
-L3_1.gadget_id = 71700076
-L4_1 = {}
-L4_1.x = -619.98
-L4_1.y = 251.04
-L4_1.z = 395.398
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 321.574
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 18
-L3_1.area_id = 7
-L4_1 = {}
-L4_1.config_id = 10003
-L4_1.gadget_id = 70710044
-L5_1 = {}
-L5_1.x = -620.0
-L5_1.y = 251.49
-L5_1.z = 395.4
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 18
-L4_1.area_id = 7
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 10003
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L2_1.ban_refresh = true
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 10001
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L3_1.ban_refresh = true
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 10002
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L5_1 = {}
-L6_1 = 10004
-L5_1[1] = L6_1
-L4_1.npcs = L5_1
-L4_1.rand_weight = 100
-L4_1.ban_refresh = true
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L5_1.ban_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 133107010
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+	{ config_id = 10004, npc_id = 2003007, pos = { x = -618.000, y = 252.400, z = 395.140 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, area_id = 7 }
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 10001, gadget_id = 71700075, pos = { x = -619.980, y = 251.040, z = 395.398 }, rot = { x = 0.000, y = 321.574, z = 0.000 }, level = 18, area_id = 7 },
+	{ config_id = 10002, gadget_id = 71700076, pos = { x = -619.980, y = 251.040, z = 395.398 }, rot = { x = 0.000, y = 321.574, z = 0.000 }, level = 18, area_id = 7 },
+	{ config_id = 10003, gadget_id = 70710044, pos = { x = -620.000, y = 251.490, z = 395.400 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 18, area_id = 7 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 10003 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { 10001 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 3,
+		-- description = suite_3,
+		monsters = { },
+		gadgets = { 10002 },
+		regions = { },
+		triggers = { },
+		npcs = { 10004 },
+		rand_weight = 100,
+		ban_refresh = true
+	},
+	{
+		-- suite_id = 4,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100,
+		ban_refresh = true
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

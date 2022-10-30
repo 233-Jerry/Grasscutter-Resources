@@ -1,583 +1,478 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 201070001
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1004
-L2_1.monster_id = 22070101
-L3_1 = {}
-L3_1.x = -0.015
-L3_1.y = -0.102
-L3_1.z = -7.056
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 11
-L2_1.disableWander = true
-L2_1.pose_id = 101
-L3_1 = {}
-L3_1.config_id = 1005
-L3_1.monster_id = 22070301
-L4_1 = {}
-L4_1.x = -4.078
-L4_1.y = -0.102
-L4_1.z = -10.039
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 11
-L3_1.disableWander = true
-L3_1.pose_id = 101
-L4_1 = {}
-L4_1.config_id = 1006
-L4_1.monster_id = 22070201
-L5_1 = {}
-L5_1.x = 4.067
-L5_1.y = -0.102
-L5_1.z = -10.039
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 11
-L4_1.disableWander = true
-L4_1.pose_id = 101
-L5_1 = {}
-L5_1.config_id = 1007
-L5_1.monster_id = 22080101
-L6_1 = {}
-L6_1.x = -0.015
-L6_1.y = -0.102
-L6_1.z = -14.168
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 11
-L5_1.disableWander = true
-L5_1.pose_id = 101
-L6_1 = {}
-L6_1.config_id = 1008
-L6_1.monster_id = 22080101
-L7_1 = {}
-L7_1.x = -4.078
-L7_1.y = -0.102
-L7_1.z = -10.039
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 11
-L6_1.disableWander = true
-L6_1.pose_id = 101
-L7_1 = {}
-L7_1.config_id = 1009
-L7_1.monster_id = 22080101
-L8_1 = {}
-L8_1.x = 4.067
-L8_1.y = -0.102
-L8_1.z = -10.039
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 11
-L7_1.disableWander = true
-L7_1.pose_id = 101
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1001
-L2_1.gadget_id = 70360010
-L3_1 = {}
-L3_1.x = 0.018
-L3_1.y = -0.153
-L3_1.z = -0.073
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L4_1 = {}
-L5_1 = 184
-L6_1 = 185
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.init_options = L4_1
-L2_1.worktop_config = L3_1
-L3_1 = {}
-L3_1.config_id = 1016
-L3_1.gadget_id = 70900205
-L4_1 = {}
-L4_1.x = 0.018
-L4_1.y = -1.221
-L4_1.z = -0.073
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1001002
-L2_1.name = "SELECT_OPTION_1002"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_SELECT_OPTION
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_SELECT_OPTION_1002"
-L2_1.action = "action_EVENT_SELECT_OPTION_1002"
-L3_1 = {}
-L3_1.config_id = 1001003
-L3_1.name = "SELECT_OPTION_1003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SELECT_OPTION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_SELECT_OPTION_1003"
-L3_1.action = "action_EVENT_SELECT_OPTION_1003"
-L4_1 = {}
-L4_1.config_id = 1001010
-L4_1.name = "ANY_MONSTER_LIVE_1010"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ANY_MONSTER_LIVE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ANY_MONSTER_LIVE_1010"
-L4_1.action = "action_EVENT_ANY_MONSTER_LIVE_1010"
-L5_1 = {}
-L5_1.config_id = 1001011
-L5_1.name = "ANY_MONSTER_LIVE_1011"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_ANY_MONSTER_LIVE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_ANY_MONSTER_LIVE_1011"
-L5_1.action = "action_EVENT_ANY_MONSTER_LIVE_1011"
-L6_1 = {}
-L6_1.config_id = 1001013
-L6_1.name = "CHALLENGE_SUCCESS_1013"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_CHALLENGE_SUCCESS
-L6_1.event = L7_1
-L6_1.source = "1"
-L6_1.condition = ""
-L6_1.action = "action_EVENT_CHALLENGE_SUCCESS_1013"
-L7_1 = {}
-L7_1.config_id = 1001014
-L7_1.name = "CHALLENGE_FAIL_1014"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_CHALLENGE_FAIL
-L7_1.event = L8_1
-L7_1.source = "1"
-L7_1.condition = ""
-L7_1.action = "action_EVENT_CHALLENGE_FAIL_1014"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 1001
-L5_1 = 1016
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "SELECT_OPTION_1002"
-L5_1 = "SELECT_OPTION_1003"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L5_1 = 1004
-L6_1 = 1005
-L7_1 = 1006
-L8_1 = 1007
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 1016
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ANY_MONSTER_LIVE_1010"
-L6_1 = "CHALLENGE_SUCCESS_1013"
-L7_1 = "CHALLENGE_FAIL_1014"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L6_1 = 1008
-L7_1 = 1009
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 1016
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "ANY_MONSTER_LIVE_1011"
-L7_1 = "CHALLENGE_SUCCESS_1013"
-L8_1 = "CHALLENGE_FAIL_1014"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 184 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 201070001
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 1001, gadget_id = 70360010, pos = { x = 0.018, y = -0.153, z = -0.073 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, worktop_config = { init_options = { 184, 185, 186, 10, 11 } } },
+	{ config_id = 1016, gadget_id = 70900205, pos = { x = 0.018, y = -1.221, z = -0.073 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1001002, name = "SELECT_OPTION_1002", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_1002", action = "action_EVENT_SELECT_OPTION_1002" },
+	{ config_id = 1001003, name = "SELECT_OPTION_1003", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_1003", action = "action_EVENT_SELECT_OPTION_1003" },
+	{ config_id = 1001010, name = "ANY_MONSTER_LIVE_1010", event = EventType.EVENT_ANY_MONSTER_LIVE, source = "", condition = "condition_EVENT_ANY_MONSTER_LIVE_1010", action = "action_EVENT_ANY_MONSTER_LIVE_1010" },
+	{ config_id = 1001013, name = "CHALLENGE_SUCCESS_1013", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "1", condition = "", action = "action_EVENT_CHALLENGE_SUCCESS_1013" },
+	{ config_id = 1001014, name = "CHALLENGE_FAIL_1014", event = EventType.EVENT_CHALLENGE_FAIL, source = "1", condition = "", action = "action_EVENT_CHALLENGE_FAIL_1014" },
+	{ config_id = 1001044, name = "SELECT_OPTION_1044", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_1044", action = "action_EVENT_SELECT_OPTION_1044" },
+	{ config_id = 1001045, name = "SELECT_OPTION_1045", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_1045", action = "action_EVENT_SELECT_OPTION_1045" },
+	{ config_id = 1001046, name = "SELECT_OPTION_1046", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_1046", action = "action_EVENT_SELECT_OPTION_1046" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 7,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1001, 1016 },
+		regions = { },
+		triggers = { "SELECT_OPTION_1002", "SELECT_OPTION_1003", "ANY_MONSTER_LIVE_1010", "CHALLENGE_SUCCESS_1013", "CHALLENGE_FAIL_1014", "SELECT_OPTION_1044", "SELECT_OPTION_1045", "SELECT_OPTION_1046" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1016 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1016 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1016 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1016 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 6,
+		-- description = ,
+		monsters = { },
+		gadgets = { 1016 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 7,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_1002(context, evt)
+	-- 判断是gadgetid 1001 option_id 184
+	if 1001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 184 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_1002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 1001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201070001
-  L5_2 = 1001
-  L6_2 = 184
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201070001
-  L5_2 = 1001
-  L6_2 = 185
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 201070001
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_1002(context, evt)
+	-- 将configid为 1001 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 1001, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：184；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 184) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：185；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 185) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：186；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 186) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：10；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 10) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：11；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 11) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 添加suite2的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 201070001, 2)
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_1002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = A1_2.param2
-  if 185 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_1003(context, evt)
+	-- 判断是gadgetid 1001 option_id 185
+	if 1001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 185 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_1003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 1001
-  L5_2 = GadgetState
-  L5_2 = L5_2.GearStop
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201070001
-  L5_2 = 1001
-  L6_2 = 185
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 201070001
-  L5_2 = 1001
-  L6_2 = 184
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : del_work_options_by_group_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 201070001
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_1003(context, evt)
+	-- 将configid为 1001 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 1001, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：185；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 185) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：184；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 184) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：186；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 186) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：10；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 10) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：11；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 11) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 201070001, 3)
+	
+	return 0
 end
-action_EVENT_SELECT_OPTION_1003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1004 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_LIVE_1010(context, evt)
+	if 1004 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_LIVE_1010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ActiveChallenge
-  L3_2 = A0_2
-  L4_2 = 1
-  L5_2 = 166
-  L6_2 = 180
-  L7_2 = 201070001
-  L8_2 = 4
-  L9_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_challenge"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_LIVE_1010(context, evt)
+	-- 创建编号为1（该挑战的识别id),挑战内容为166的区域挑战，具体参数填写方式，见DungeonChallengeData表中的注释，所有填写的值都必须是int类型
+	if 0 ~= ScriptLib.ActiveChallenge(context, 1, 166, 180, 201070001, 6, 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_challenge")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_LIVE_1010 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 1008 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_1013(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201070001, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-condition_EVENT_ANY_MONSTER_LIVE_1011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ActiveChallenge
-  L3_2 = A0_2
-  L4_2 = 1
-  L5_2 = 166
-  L6_2 = 180
-  L7_2 = 201070001
-  L8_2 = 2
-  L9_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_challenge"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_1014(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 201070001, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	-- 地城失败结算
+	if 0 ~= ScriptLib.CauseDungeonFail(context) then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cause_dungeonfail")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_LIVE_1011 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 201070001
-  L4_2.suite = 4
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_1044(context, evt)
+	-- 判断是gadgetid 1001 option_id 186
+	if 1001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 186 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
 end
-action_EVENT_CHALLENGE_SUCCESS_1013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 201070001
-  L4_2.suite = 4
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CauseDungeonFail
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cause_dungeonfail"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_1044(context, evt)
+	-- 将configid为 1001 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 1001, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：186；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 186) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：185；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 185) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：184；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 184) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：10；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 10) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：11；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 11) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 添加suite4的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 201070001, 4)
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_1014 = L1_1
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_1045(context, evt)
+	-- 判断是gadgetid 1001 option_id 10
+	if 1001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 10 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_1045(context, evt)
+	-- 将configid为 1001 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 1001, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：185；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 185) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：184；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 184) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：10；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 10) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：11；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 11) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：186；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 186) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 添加suite5的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 201070001, 5)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_1046(context, evt)
+	-- 判断是gadgetid 1001 option_id 11
+	if 1001 ~= evt.param1 then
+		return false	
+	end
+	
+	if 11 ~= evt.param2 then
+		return false
+	end
+	
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_1046(context, evt)
+	-- 将configid为 1001 的物件更改为状态 GadgetState.GearStop
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 1001, GadgetState.GearStop) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：185；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 185) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：184；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 184) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：186；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 186) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：10；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 10) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 删除指定group： 201070001 ；指定config：1001；物件身上指定option：11；
+	if 0 ~= ScriptLib.DelWorktopOptionByGroupId(context, 201070001, 1001, 11) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : del_work_options_by_group_configId")
+		return -1
+	end
+	
+	-- 添加suite6的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 201070001, 6)
+	
+	return 0
+end

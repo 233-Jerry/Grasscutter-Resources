@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    172684
-  ],
+  "rewardIdList": [172684],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7268401,
-            0
-          ],
+          "param": [7268401, 0],
           "count": 0
         }
       ],
@@ -86,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7268402,
-            0
-          ],
+          "param": [7268402, 0],
           "count": 0
         }
       ],
@@ -97,10 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q7268402_gu_ide",
-          "18"
-        ],
+        "param": ["Q7268402_gu_ide", "18"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -134,10 +123,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7268403,
-            0
-          ],
+          "param": [7268403, 0],
           "count": 0
         }
       ],
@@ -145,9 +131,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "20567"
-        ],
+        "param": ["20567"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -181,30 +165,21 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7268404,
-            0
-          ],
+          "param": [7268404, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            7268404,
-            0
-          ],
+          "param": [7268404, 0],
           "count": 0
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q7268404_gu_ide",
-          "40"
-        ],
+        "param": ["Q7268404_gu_ide", "40"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -238,29 +213,21 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7268405,
-            0
-          ],
+          "param": [7268405, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            7268405,
-            0
-          ],
+          "param": [7268405, 0],
           "count": 0
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "3150"
-        ],
+        "param": ["3150"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -277,19 +244,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_VAR",
-          "param": [
-            "1",
-            "1",
-            "7268404"
-          ]
+          "param": ["1", "1", "7268404"]
         },
         {
           "type": "QUEST_EXEC_SET_QUEST_VAR",
-          "param": [
-            "2",
-            "1",
-            "7268404"
-          ]
+          "param": ["2", "1", "7268404"]
         }
       ],
       "failExec": [],
@@ -311,10 +270,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7268430,
-            0
-          ],
+          "param": [7268430, 0],
           "count": 0
         }
       ],
@@ -322,9 +278,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "1044"
-        ],
+        "param": ["1044"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -358,10 +312,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7268407,
-            0
-          ],
+          "param": [7268407, 0],
           "count": 0
         }
       ],
@@ -369,9 +320,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "30188"
-        ],
+        "param": ["30188"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -388,10 +337,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNLOCK_POINT",
-          "param": [
-            "3",
-            "570"
-          ]
+          "param": ["3", "570"]
         }
       ],
       "failExec": [],
@@ -409,10 +355,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268403",
-            "2"
-          ]
+          "param": ["7268403", "2"]
         }
       ],
       "priority": 5,
@@ -421,9 +364,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726840301,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20567
-      ],
+      "npcIdRawNum": [20567],
       "GHNCIOJDIEA": "QuestDialogue/WQ/MusicGameGu_ide_72684/Q7268403",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -459,10 +400,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268404",
-            "2"
-          ]
+          "param": ["7268404", "2"]
         }
       ],
       "priority": 5,
@@ -471,9 +409,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726840401,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20567
-      ],
+      "npcIdRawNum": [20567],
       "GHNCIOJDIEA": "QuestDialogue/WQ/MusicGameGu_ide_72684/Q7268404",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -509,10 +445,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268405",
-            "2"
-          ]
+          "param": ["7268405", "2"]
         }
       ],
       "priority": 5,
@@ -521,9 +454,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726840501,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3150
-      ],
+      "npcIdRawNum": [3150],
       "GHNCIOJDIEA": "QuestDialogue/WQ/MusicGameGu_ide_72684/Q7268405",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -559,25 +490,16 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268406",
-            "2"
-          ]
+          "param": ["7268406", "2"]
         }
       ],
       "priority": 5,
-      "GLHPILEDCIH": [
-        7268430,
-        7268431,
-        7268432
-      ],
+      "GLHPILEDCIH": [7268430, 7268431, 7268432],
       "OPAEHKHBKHL": [],
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726840601,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1044
-      ],
+      "npcIdRawNum": [1044],
       "GHNCIOJDIEA": "QuestDialogue/WQ/MusicGameGu_ide_72684/Q7268406",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -613,10 +535,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268407",
-            "2"
-          ]
+          "param": ["7268407", "2"]
         }
       ],
       "priority": 5,
@@ -625,9 +544,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726840701,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30188
-      ],
+      "npcIdRawNum": [30188],
       "GHNCIOJDIEA": "QuestDialogue/WQ/MusicGameGu_ide_72684/Q7268407",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -663,10 +580,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268406",
-            "2"
-          ]
+          "param": ["7268406", "2"]
         }
       ],
       "priority": 3,
@@ -675,9 +589,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726840632,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1044
-      ],
+      "npcIdRawNum": [1044],
       "GHNCIOJDIEA": "QuestDialogue/WQ/MusicGameGu_ide_72684/Q7268430",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -713,32 +625,20 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268406",
-            "2"
-          ]
+          "param": ["7268406", "2"]
         },
         {
           "type": "QUEST_COND_QUEST_VAR_EQUAL",
-          "param": [
-            "1",
-            "1",
-            "72684"
-          ]
+          "param": ["1", "1", "72684"]
         }
       ],
       "priority": 3,
-      "GLHPILEDCIH": [
-        7268430,
-        7268432
-      ],
+      "GLHPILEDCIH": [7268430, 7268432],
       "OPAEHKHBKHL": [],
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726840654,
       "FEGHBCNNPLB": 3,
-      "npcIdRawNum": [
-        1044
-      ],
+      "npcIdRawNum": [1044],
       "GHNCIOJDIEA": "QuestDialogue/WQ/MusicGameGu_ide_72684/Q7268431",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -757,11 +657,7 @@
       "finishExec": [
         {
           "type": "TALK_EXEC_SET_QUEST_VAR",
-          "param": [
-            "1",
-            "2",
-            "72684"
-          ]
+          "param": ["1", "2", "72684"]
         }
       ],
       "CEAIKCLNACM": [],
@@ -783,32 +679,20 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268406",
-            "2"
-          ]
+          "param": ["7268406", "2"]
         },
         {
           "type": "QUEST_COND_QUEST_VAR_EQUAL",
-          "param": [
-            "2",
-            "1",
-            "72684"
-          ]
+          "param": ["2", "1", "72684"]
         }
       ],
       "priority": 3,
-      "GLHPILEDCIH": [
-        7268430,
-        7268431
-      ],
+      "GLHPILEDCIH": [7268430, 7268431],
       "OPAEHKHBKHL": [],
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726840660,
       "FEGHBCNNPLB": 3,
-      "npcIdRawNum": [
-        1044
-      ],
+      "npcIdRawNum": [1044],
       "GHNCIOJDIEA": "QuestDialogue/WQ/MusicGameGu_ide_72684/Q7268432",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -827,11 +711,7 @@
       "finishExec": [
         {
           "type": "TALK_EXEC_SET_QUEST_VAR",
-          "param": [
-            "2",
-            "2",
-            "72684"
-          ]
+          "param": ["2", "2", "72684"]
         }
       ],
       "CEAIKCLNACM": [],
@@ -853,10 +733,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268407",
-            "2"
-          ]
+          "param": ["7268407", "2"]
         }
       ],
       "priority": 3,
@@ -865,9 +742,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726847101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30190
-      ],
+      "npcIdRawNum": [30190],
       "GHNCIOJDIEA": "QuestDialogue/WQ/MusicGameGu_ide_72684/Q7268433",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -903,10 +778,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268407",
-            "2"
-          ]
+          "param": ["7268407", "2"]
         }
       ],
       "priority": 3,
@@ -915,9 +787,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726847201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30189
-      ],
+      "npcIdRawNum": [30189],
       "GHNCIOJDIEA": "QuestDialogue/WQ/MusicGameGu_ide_72684/Q7268434",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -946,37 +816,17 @@
     }
   ],
   "LGCLJGGNGBD": [
-    645902683150,
-    517353580062,
-    238906159053,
-    1057828258059,
-    274695406362
+    645902683150, 517353580062, 238906159053, 1057828258059, 274695406362
   ],
-  "OMKMAOLMNCO": [
-    1075981205356
-  ],
+  "OMKMAOLMNCO": [1075981205356],
   "KPOKLMBEOBI": {
-    "1044": [
-      1120
-    ],
-    "12276": [
-      1280
-    ],
-    "12277": [
-      1280
-    ],
-    "12278": [
-      1190
-    ],
-    "30188": [
-      1230
-    ],
-    "30189": [
-      1270
-    ],
-    "30190": [
-      1050
-    ]
+    "1044": [1120],
+    "12276": [1280],
+    "12277": [1280],
+    "12278": [1190],
+    "30188": [1230],
+    "30189": [1270],
+    "30190": [1050]
   },
   "MGDNNNGPOGO": 172684
 }

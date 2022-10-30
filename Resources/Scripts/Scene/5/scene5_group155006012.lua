@@ -1,670 +1,291 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1
-L0_1 = {}
-L0_1.group_id = 155006012
-L1_1 = {}
-L1_1.groupID = 155006012
-L1_1.gadget_1 = 12003
-L1_1.gadget_2 = 12004
-L1_1.gadget_3 = 0
-L1_1.gadget_operator_1 = 12006
-L1_1.gadget_operator_2 = 12007
-L1_1.gadget_operator_3 = 0
-L1_1.pointarray_Rotate_1 = 500600013
-L1_1.pointarray_Rotate_2 = 500600001
-L2_1 = {}
-L3_1 = {}
-L4_1 = 12001
-L5_1 = 12006
-L6_1 = 12007
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L4_1 = {}
-L5_1 = {}
-L6_1 = {}
-L7_1 = 12013
-L6_1[1] = L7_1
-L7_1 = {}
-function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 1
-  L1_2(L2_2, L3_2, L4_2)
+-- 基础信息
+local base_info = {
+	group_id = 155006012
+}
+
+-- Trigger变量
+local defs = {
+	groupID = 155006012,
+	gadget_1 = 12003,
+	gadget_2 = 12004,
+	gadget_3 = 0,
+	gadget_operator_1 = 12006,
+	gadget_operator_2 = 12007,
+	gadget_operator_3 = 0,
+	pointarray_Rotate_1 = 500600013,
+	pointarray_Rotate_2 = 500600001
+}
+
+-- DEFS_MISCS
+local Controllers = {}
+local EnvControlGadgets =  {12001,12006,12007}
+local Worktops = {}
+local DayAppearGadgets = {}
+local NightAppearGadgets = {12013}
+
+local gameplayStateFuncitons = 
+{
+	["0"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",1)
+	end,
+	["1"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",0)
+	
+		DayNight_Gadget_Unlock(context,12006)
+		DayNight_Gadget_Unlock(context,12007)
+
+	end,
+	["2"] = function(context)
+		ScriptLib.SetGroupVariableValue(context,"is_daynight_finish",0)
+		
+		DayNight_Gadget_Unlock(context,12006)
+		DayNight_Gadget_Unlock(context,12007)
+	end
+
+}
+function UpdateGamePlayState(context)
+	local state = ScriptLib.GetGroupVariableValue(context, "gameplayState") 
+
+	gameplayStateFuncitons[tostring(state)](context)
+
 end
-L7_1["0"] = L8_1
-function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 0
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = DayNight_Gadget_Unlock
-  L2_2 = A0_2
-  L3_2 = 12006
-  L1_2(L2_2, L3_2)
-  L1_2 = DayNight_Gadget_Unlock
-  L2_2 = A0_2
-  L3_2 = 12007
-  L1_2(L2_2, L3_2)
+
+local mazzinfo = 
+{
+	mid = {wall = defs.gadget_1, operator = defs.gadget_operator_1, sotrevarname = "RotWall_1", rotstate = "isStartRot_Wall_1", pointarray = defs.pointarray_Rotate_1 },
+	inside = {wall = defs.gadget_2, operator = defs.gadget_operator_2, sotrevarname = "RotWall_2", rotstate = "isStartRot_Wall_2", pointarray = defs.pointarray_Rotate_2}
+}
+
+
+function GetMazzInfoByConfigID(context,config_id)
+	
+	if config_id == defs.gadget_1 or config_id == defs.gadget_operator_1 then 
+		return mazzinfo.mid
+	elseif config_id == defs.gadget_2 or config_id == defs.gadget_operator_2 then 
+		return mazzinfo.inside
+	end
+
 end
-L7_1["1"] = L8_1
-function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.SetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "is_daynight_finish"
-  L4_2 = 0
-  L1_2(L2_2, L3_2, L4_2)
-  L1_2 = DayNight_Gadget_Unlock
-  L2_2 = A0_2
-  L3_2 = 12006
-  L1_2(L2_2, L3_2)
-  L1_2 = DayNight_Gadget_Unlock
-  L2_2 = A0_2
-  L3_2 = 12007
-  L1_2(L2_2, L3_2)
+
+
+function RotateWall(context, gadgetID)
+	if gadgetID == 0 then return end
+	info = GetMazzInfoByConfigID(context,gadgetID)
+
+	ScriptLib.SetPlatformPointArray(context, gadgetID, info.pointarray, { 1 }, { route_type = 0,turn_mode=true })
 end
-L7_1["2"] = L8_1
-function L8_1(A0_2)
-  local L1_2, L2_2, L3_2
-  L1_2 = ScriptLib
-  L1_2 = L1_2.GetGroupVariableValue
-  L2_2 = A0_2
-  L3_2 = "gameplayState"
-  L1_2 = L1_2(L2_2, L3_2)
-  L2_2 = tostring
-  L3_2 = L1_2
-  L2_2 = L2_2(L3_2)
-  L2_2 = L7_1[L2_2]
-  L3_2 = A0_2
-  L2_2(L3_2)
+
+function InitialRotY(context)
+	local gadgetname 
+	local varname
+	local gadgetid
+	local rot
+
+	for k,v in pairs(mazzinfo) do
+		ScriptLib.SetGroupVariableValue(context,v.rotstate,0)
+		rot = math.floor(ScriptLib.GetGroupVariableValue(context,v.sotrevarname)/90)
+		if rot ~= 0 then
+			ScriptLib.SetPlatformPointArray(context, v.wall, defs.pointarray_Rotate_2, {rot}, { route_type = 0,turn_mode=true })
+		end 
+	end
+	--[[for i = 1, 2 do 
+		gadgetname = "gadget_"..i
+		varname = "RotWall_"..i
+		rot = ScriptLib.GetGroupVariableValue(context,varname)
+		rot = math.floor(rot/90)
+		if rot ~= 0 then
+			ScriptLib.SetPlatformPointArray(context, defs[gadgetname], defs.pointarray_Rotate, {rot}, { route_type = 0,turn_mode=true })
+		end
+	end]]
 end
-UpdateGamePlayState = L8_1
-L8_1 = {}
-L9_1 = {}
-L10_1 = L1_1.gadget_1
-L9_1.wall = L10_1
-L10_1 = L1_1.gadget_operator_1
-L9_1.operator = L10_1
-L9_1.sotrevarname = "RotWall_1"
-L9_1.rotstate = "isStartRot_Wall_1"
-L10_1 = L1_1.pointarray_Rotate_1
-L9_1.pointarray = L10_1
-L8_1.mid = L9_1
-L9_1 = {}
-L10_1 = L1_1.gadget_2
-L9_1.wall = L10_1
-L10_1 = L1_1.gadget_operator_2
-L9_1.operator = L10_1
-L9_1.sotrevarname = "RotWall_2"
-L9_1.rotstate = "isStartRot_Wall_2"
-L10_1 = L1_1.pointarray_Rotate_2
-L9_1.pointarray = L10_1
-L8_1.inside = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = L1_1.gadget_1
-  if A1_2 ~= L2_2 then
-    L2_2 = L1_1.gadget_operator_1
-    if A1_2 ~= L2_2 then
-      goto lbl_10
-    end
-  end
-  L2_2 = L8_1.mid
-  do return L2_2 end
-  goto lbl_18
-  ::lbl_10::
-  L2_2 = L1_1.gadget_2
-  if A1_2 ~= L2_2 then
-    L2_2 = L1_1.gadget_operator_2
-    if A1_2 ~= L2_2 then
-      goto lbl_18
-    end
-  end
-  L2_2 = L8_1.inside
-  do return L2_2 end
-  ::lbl_18::
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 12001, gadget_id = 70290189, pos = { x = 573.038, y = 150.913, z = -469.807 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 200 },
+	{ config_id = 12003, gadget_id = 70290187, pos = { x = 573.038, y = 150.913, z = -469.807 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, is_use_point_array = true, area_id = 200 },
+	{ config_id = 12004, gadget_id = 70290186, pos = { x = 573.038, y = 150.913, z = -469.807 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, is_use_point_array = true, area_id = 200 },
+	{ config_id = 12006, gadget_id = 70360305, pos = { x = 565.959, y = 178.432, z = -424.753 }, rot = { x = 0.000, y = 359.211, z = 0.000 }, level = 36, state = GadgetState.GearStop, area_id = 200 },
+	{ config_id = 12007, gadget_id = 70360305, pos = { x = 555.644, y = 178.354, z = -425.625 }, rot = { x = 356.840, y = 354.000, z = 356.176 }, level = 36, state = GadgetState.GearStop, area_id = 200 },
+	{ config_id = 12013, gadget_id = 70360322, pos = { x = 573.033, y = 153.898, z = -469.815 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 200 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 中圈转动
+	{ config_id = 1012005, name = "TIME_AXIS_PASS_12005", event = EventType.EVENT_TIME_AXIS_PASS, source = "Rotating_12003", condition = "", action = "action_EVENT_TIME_AXIS_PASS_12005", trigger_count = 0 },
+	-- Group初始化
+	{ config_id = 1012008, name = "GROUP_LOAD_12008", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_12008", trigger_count = 0 },
+	-- 旋转到点后的处理
+	{ config_id = 1012009, name = "PLATFORM_REACH_POINT_12009", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "", action = "action_EVENT_PLATFORM_REACH_POINT_12009", trigger_count = 0 },
+	-- 玩家选择机关旋转对应的迷宫墙壁
+	{ config_id = 1012010, name = "GADGET_STATE_CHANGE_12010", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_12010", action = "action_EVENT_GADGET_STATE_CHANGE_12010", trigger_count = 0 },
+	-- 内圈转动
+	{ config_id = 1012014, name = "TIME_AXIS_PASS_12014", event = EventType.EVENT_TIME_AXIS_PASS, source = "Rotating_12004", condition = "", action = "action_EVENT_TIME_AXIS_PASS_12014", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "RotWall_1", value = 180, no_refresh = true },
+	{ config_id = 2, name = "RotWall_2", value = 180, no_refresh = true },
+	{ config_id = 3, name = "RotWall_3", value = 0, no_refresh = true },
+	{ config_id = 4, name = "isStartRot_Wall_1", value = 0, no_refresh = false },
+	{ config_id = 5, name = "isStartRot_Wall_2", value = 0, no_refresh = false },
+	{ config_id = 6, name = "isStartRot_Wall_3", value = 0, no_refresh = false },
+	{ config_id = 7, name = "gameplayState", value = 1, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 12001, 12003, 12004, 12006, 12007 },
+		regions = { },
+		triggers = { "TIME_AXIS_PASS_12005", "GROUP_LOAD_12008", "PLATFORM_REACH_POINT_12009", "GADGET_STATE_CHANGE_12010", "TIME_AXIS_PASS_12014" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_12005(context, evt)
+		ScriptLib.PrintContextLog(context,"Active Time Axis : evtname = "..evt.source_name..", axisindex = "..evt.param1)
+		if evt.param1 == 1 then 
+			ScriptLib.PrintContextLog(context,"Rotation : "..defs.gadget_1)
+			RotateWall(context, defs.gadget_1)
+		elseif evt.param1 == 2 then 
+			local temprot
+			local tempmazzinfo = {}
+		
+			tempmazzinfo = GetMazzInfoByConfigID(context,defs.gadget_1)
+			temprot = ScriptLib.GetGroupVariableValue(context,tempmazzinfo.sotrevarname)
+			temprot = temprot + 90
+			if temprot == 360 then 
+				temprot = 0
+			end
+			ScriptLib.SetGroupVariableValue(context,tempmazzinfo.sotrevarname,temprot)
+			ScriptLib.SetGroupVariableValue(context,tempmazzinfo.rotstate,0)
+		end
+		return 0
 end
-GetMazzInfoByConfigID = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  if A1_2 == 0 then
-    return
-  end
-  L2_2 = GetMazzInfoByConfigID
-  L3_2 = A0_2
-  L4_2 = A1_2
-  L2_2 = L2_2(L3_2, L4_2)
-  info = L2_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetPlatformPointArray
-  L3_2 = A0_2
-  L4_2 = A1_2
-  L5_2 = info
-  L5_2 = L5_2.pointarray
-  L6_2 = {}
-  L7_2 = 1
-  L6_2[1] = L7_2
-  L7_2 = {}
-  L7_2.route_type = 0
-  L7_2.turn_mode = true
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_12008(context, evt)
+		UpdateGamePlayState(context)
+		
+		InitialRotY(context)
+		
+		return 0
 end
-RotateWall = L9_1
-function L9_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
-  L1_2 = nil
-  L2_2 = nil
-  L3_2 = nil
-  L4_2 = nil
-  L5_2 = pairs
-  L6_2 = L8_1
-  L5_2, L6_2, L7_2 = L5_2(L6_2)
-  for L8_2, L9_2 in L5_2, L6_2, L7_2 do
-    L10_2 = ScriptLib
-    L10_2 = L10_2.SetGroupVariableValue
-    L11_2 = A0_2
-    L12_2 = L9_2.rotstate
-    L13_2 = 0
-    L10_2(L11_2, L12_2, L13_2)
-    L10_2 = math
-    L10_2 = L10_2.floor
-    L11_2 = ScriptLib
-    L11_2 = L11_2.GetGroupVariableValue
-    L12_2 = A0_2
-    L13_2 = L9_2.sotrevarname
-    L11_2 = L11_2(L12_2, L13_2)
-    L11_2 = L11_2 / 90
-    L10_2 = L10_2(L11_2)
-    L4_2 = L10_2
-    if L4_2 ~= 0 then
-      L10_2 = ScriptLib
-      L10_2 = L10_2.SetPlatformPointArray
-      L11_2 = A0_2
-      L12_2 = L9_2.wall
-      L13_2 = L1_1.pointarray_Rotate_2
-      L14_2 = {}
-      L15_2 = L4_2
-      L14_2[1] = L15_2
-      L15_2 = {}
-      L15_2.route_type = 0
-      L15_2.turn_mode = true
-      L10_2(L11_2, L12_2, L13_2, L14_2, L15_2)
-    end
-  end
+
+-- 触发操作
+function action_EVENT_PLATFORM_REACH_POINT_12009(context, evt)
+		--[[ScriptLib.PrintContextLog(context,"ReachPoint : PlatformConfigID = "..evt.param1..", PointArrayID = "..evt.param2..", PointIndex = "..evt.param3)
+		local temprot
+		local tempmazzinfo = {}
+	
+		tempmazzinfo = GetMazzInfoByConfigID(context,evt.param1)
+		ScriptLib.PrintContextLog(context,"ReachPoint : {wall = "..tempmazzinfo.wall..", operator = "..tempmazzinfo.operator..", initialRot = "..tempmazzinfo.initialRot..", targetRot = "..tempmazzinfo.targetRot..", sotrevarname = "..tempmazzinfo.sotrevarname..", rotstate = "..tempmazzinfo.rotstate.. "}")
+		
+		temprot = ScriptLib.GetGroupVariableValue(context,tempmazzinfo.sotrevarname)
+		temprot = temprot + 90
+		if temprot == 360 then 
+			temprot = 0
+		end
+		ScriptLib.SetGroupVariableValue(context,tempmazzinfo.sotrevarname,temprot)
+		ScriptLib.SetGroupVariableValue(context,tempmazzinfo.rotstate,0)
+	]]
+		return 0
 end
-InitialRotY = L9_1
-L9_1 = {}
-monsters = L9_1
-L9_1 = {}
-npcs = L9_1
-L9_1 = {}
-L10_1 = {}
-L10_1.config_id = 12001
-L10_1.gadget_id = 70290189
-L11_1 = {}
-L11_1.x = 573.038
-L11_1.y = 150.913
-L11_1.z = -469.807
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 0.0
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 36
-L10_1.area_id = 200
-L11_1 = {}
-L11_1.config_id = 12003
-L11_1.gadget_id = 70290187
-L12_1 = {}
-L12_1.x = 573.038
-L12_1.y = 150.913
-L12_1.z = -469.807
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 36
-L11_1.is_use_point_array = true
-L11_1.area_id = 200
-L12_1 = {}
-L12_1.config_id = 12004
-L12_1.gadget_id = 70290186
-L13_1 = {}
-L13_1.x = 573.038
-L13_1.y = 150.913
-L13_1.z = -469.807
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 0.0
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 36
-L12_1.is_use_point_array = true
-L12_1.area_id = 200
-L13_1 = {}
-L13_1.config_id = 12006
-L13_1.gadget_id = 70360305
-L14_1 = {}
-L14_1.x = 565.959
-L14_1.y = 178.432
-L14_1.z = -424.753
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 359.211
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 36
-L14_1 = GadgetState
-L14_1 = L14_1.GearStop
-L13_1.state = L14_1
-L13_1.area_id = 200
-L14_1 = {}
-L14_1.config_id = 12007
-L14_1.gadget_id = 70360305
-L15_1 = {}
-L15_1.x = 555.644
-L15_1.y = 178.354
-L15_1.z = -425.625
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 356.84
-L15_1.y = 354.0
-L15_1.z = 356.176
-L14_1.rot = L15_1
-L14_1.level = 36
-L15_1 = GadgetState
-L15_1 = L15_1.GearStop
-L14_1.state = L15_1
-L14_1.area_id = 200
-L15_1 = {}
-L15_1.config_id = 12013
-L15_1.gadget_id = 70360322
-L16_1 = {}
-L16_1.x = 573.033
-L16_1.y = 153.898
-L16_1.z = -469.815
-L15_1.pos = L16_1
-L16_1 = {}
-L16_1.x = 0.0
-L16_1.y = 0.0
-L16_1.z = 0.0
-L15_1.rot = L16_1
-L15_1.level = 36
-L15_1.area_id = 200
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L9_1[3] = L12_1
-L9_1[4] = L13_1
-L9_1[5] = L14_1
-L9_1[6] = L15_1
-gadgets = L9_1
-L9_1 = {}
-regions = L9_1
-L9_1 = {}
-L10_1 = {}
-L10_1.config_id = 1012005
-L10_1.name = "TIME_AXIS_PASS_12005"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_TIME_AXIS_PASS
-L10_1.event = L11_1
-L10_1.source = "Rotating_12003"
-L10_1.condition = ""
-L10_1.action = "action_EVENT_TIME_AXIS_PASS_12005"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1012008
-L11_1.name = "GROUP_LOAD_12008"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_GROUP_LOAD
-L11_1.event = L12_1
-L11_1.source = ""
-L11_1.condition = ""
-L11_1.action = "action_EVENT_GROUP_LOAD_12008"
-L11_1.trigger_count = 0
-L12_1 = {}
-L12_1.config_id = 1012009
-L12_1.name = "PLATFORM_REACH_POINT_12009"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_PLATFORM_REACH_POINT
-L12_1.event = L13_1
-L12_1.source = ""
-L12_1.condition = ""
-L12_1.action = "action_EVENT_PLATFORM_REACH_POINT_12009"
-L12_1.trigger_count = 0
-L13_1 = {}
-L13_1.config_id = 1012010
-L13_1.name = "GADGET_STATE_CHANGE_12010"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_GADGET_STATE_CHANGE
-L13_1.event = L14_1
-L13_1.source = ""
-L13_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_12010"
-L13_1.action = "action_EVENT_GADGET_STATE_CHANGE_12010"
-L13_1.trigger_count = 0
-L14_1 = {}
-L14_1.config_id = 1012014
-L14_1.name = "TIME_AXIS_PASS_12014"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_TIME_AXIS_PASS
-L14_1.event = L15_1
-L14_1.source = "Rotating_12004"
-L14_1.condition = ""
-L14_1.action = "action_EVENT_TIME_AXIS_PASS_12014"
-L14_1.trigger_count = 0
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L9_1[3] = L12_1
-L9_1[4] = L13_1
-L9_1[5] = L14_1
-triggers = L9_1
-L9_1 = {}
-L10_1 = {}
-L10_1.configId = 1
-L10_1.name = "RotWall_1"
-L10_1.value = 180
-L10_1.no_refresh = true
-L11_1 = {}
-L11_1.configId = 2
-L11_1.name = "RotWall_2"
-L11_1.value = 180
-L11_1.no_refresh = true
-L12_1 = {}
-L12_1.configId = 3
-L12_1.name = "RotWall_3"
-L12_1.value = 0
-L12_1.no_refresh = true
-L13_1 = {}
-L13_1.configId = 4
-L13_1.name = "isStartRot_Wall_1"
-L13_1.value = 0
-L13_1.no_refresh = false
-L14_1 = {}
-L14_1.configId = 5
-L14_1.name = "isStartRot_Wall_2"
-L14_1.value = 0
-L14_1.no_refresh = false
-L15_1 = {}
-L15_1.configId = 6
-L15_1.name = "isStartRot_Wall_3"
-L15_1.value = 0
-L15_1.no_refresh = false
-L16_1 = {}
-L16_1.configId = 7
-L16_1.name = "gameplayState"
-L16_1.value = 1
-L16_1.no_refresh = true
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L9_1[3] = L12_1
-L9_1[4] = L13_1
-L9_1[5] = L14_1
-L9_1[6] = L15_1
-L9_1[7] = L16_1
-variables = L9_1
-L9_1 = {}
-L9_1.suite = 1
-L9_1.end_suite = 0
-L9_1.rand_suite = false
-init_config = L9_1
-L9_1 = {}
-L10_1 = {}
-L11_1 = {}
-L10_1.monsters = L11_1
-L11_1 = {}
-L12_1 = 12001
-L13_1 = 12003
-L14_1 = 12004
-L15_1 = 12006
-L16_1 = 12007
-L11_1[1] = L12_1
-L11_1[2] = L13_1
-L11_1[3] = L14_1
-L11_1[4] = L15_1
-L11_1[5] = L16_1
-L10_1.gadgets = L11_1
-L11_1 = {}
-L10_1.regions = L11_1
-L11_1 = {}
-L12_1 = "TIME_AXIS_PASS_12005"
-L13_1 = "GROUP_LOAD_12008"
-L14_1 = "PLATFORM_REACH_POINT_12009"
-L15_1 = "GADGET_STATE_CHANGE_12010"
-L16_1 = "TIME_AXIS_PASS_12014"
-L11_1[1] = L12_1
-L11_1[2] = L13_1
-L11_1[3] = L14_1
-L11_1[4] = L15_1
-L11_1[5] = L16_1
-L10_1.triggers = L11_1
-L10_1.rand_weight = 100
-L9_1[1] = L10_1
-suites = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintContextLog
-  L3_2 = A0_2
-  L4_2 = "Active Time Axis : evtname = "
-  L5_2 = A1_2.source_name
-  L6_2 = ", axisindex = "
-  L7_2 = A1_2.param1
-  L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2
-  L2_2(L3_2, L4_2)
-  L2_2 = A1_2.param1
-  if L2_2 == 1 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Rotation : "
-    L5_2 = L1_1.gadget_1
-    L4_2 = L4_2 .. L5_2
-    L2_2(L3_2, L4_2)
-    L2_2 = RotateWall
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_1
-    L2_2(L3_2, L4_2)
-  else
-    L2_2 = A1_2.param1
-    if L2_2 == 2 then
-      L2_2 = nil
-      L3_2 = {}
-      L4_2 = GetMazzInfoByConfigID
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_1
-      L4_2 = L4_2(L5_2, L6_2)
-      L3_2 = L4_2
-      L4_2 = ScriptLib
-      L4_2 = L4_2.GetGroupVariableValue
-      L5_2 = A0_2
-      L6_2 = L3_2.sotrevarname
-      L4_2 = L4_2(L5_2, L6_2)
-      L2_2 = L4_2
-      L2_2 = L2_2 + 90
-      if L2_2 == 360 then
-        L2_2 = 0
-      end
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGroupVariableValue
-      L5_2 = A0_2
-      L6_2 = L3_2.sotrevarname
-      L7_2 = L2_2
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGroupVariableValue
-      L5_2 = A0_2
-      L6_2 = L3_2.rotstate
-      L7_2 = 0
-      L4_2(L5_2, L6_2, L7_2)
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_12010(context, evt)
+		ScriptLib.PrintContextLog(context,"Active Controller is "..evt.param2.." with state = "..evt.param1)
+		if 12006 ~= evt.param2 and 12007 ~= evt.param2 then
+			return false	
+		end
+		
+		if evt.param1 ~= 222 then 
+			return false
+		end
+		return true
 end
-action_EVENT_TIME_AXIS_PASS_12005 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = UpdateGamePlayState
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = InitialRotY
-  L3_2 = A0_2
-  L2_2(L3_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_12010(context, evt)
+				local tempmazzinfo = {}
+				tempmazzinfo = GetMazzInfoByConfigID(context,evt.param2)
+				--ScriptLib.PrintContextLog(context,"StateChange : {wall = "..tempmazzinfo.wall..", operator = "..tempmazzinfo.operator..", sotrevarname = "..tempmazzinfo.sotrevarname..", rotstate = "..tempmazzinfo.rotstate.. "}")	
+				if ScriptLib.GetGroupVariableValue(context,tempmazzinfo.rotstate) == 0 then
+					ScriptLib.SetGroupVariableValue(context,tempmazzinfo.rotstate,1)
+					ScriptLib.InitTimeAxis(context, "Rotating_"..tempmazzinfo.wall, {1,4}, false)
+					ScriptLib.PlayCutScene(context, 48, 0)
+				end
+					return 0
 end
-action_EVENT_GROUP_LOAD_12008 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_12014(context, evt)
+		ScriptLib.PrintContextLog(context,"Active Time Axis : evtname = "..evt.source_name..", axisindex = "..evt.param1)
+		if evt.param1 == 1 then 
+			ScriptLib.PrintContextLog(context,"Rotation : "..defs.gadget_2)
+			RotateWall(context, defs.gadget_2)
+		elseif evt.param1 == 2 then 
+			local temprot
+			local tempmazzinfo = {}
+		
+			tempmazzinfo = GetMazzInfoByConfigID(context,defs.gadget_2)
+			temprot = ScriptLib.GetGroupVariableValue(context,tempmazzinfo.sotrevarname)
+			temprot = temprot + 90
+			if temprot == 360 then 
+				temprot = 0
+			end
+			ScriptLib.SetGroupVariableValue(context,tempmazzinfo.sotrevarname,temprot)
+			ScriptLib.SetGroupVariableValue(context,tempmazzinfo.rotstate,0)
+		end
+		return 0
 end
-action_EVENT_PLATFORM_REACH_POINT_12009 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintContextLog
-  L3_2 = A0_2
-  L4_2 = "Active Controller is "
-  L5_2 = A1_2.param2
-  L6_2 = " with state = "
-  L7_2 = A1_2.param1
-  L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2
-  L2_2(L3_2, L4_2)
-  L2_2 = A1_2.param2
-  if 12006 ~= L2_2 then
-    L2_2 = A1_2.param2
-    if 12007 ~= L2_2 then
-      L2_2 = false
-      return L2_2
-    end
-  end
-  L2_2 = A1_2.param1
-  if L2_2 ~= 222 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
-end
-condition_EVENT_GADGET_STATE_CHANGE_12010 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = {}
-  L3_2 = GetMazzInfoByConfigID
-  L4_2 = A0_2
-  L5_2 = A1_2.param2
-  L3_2 = L3_2(L4_2, L5_2)
-  L2_2 = L3_2
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = L2_2.rotstate
-  L3_2 = L3_2(L4_2, L5_2)
-  if L3_2 == 0 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.SetGroupVariableValue
-    L4_2 = A0_2
-    L5_2 = L2_2.rotstate
-    L6_2 = 1
-    L3_2(L4_2, L5_2, L6_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.InitTimeAxis
-    L4_2 = A0_2
-    L5_2 = "Rotating_"
-    L6_2 = L2_2.wall
-    L5_2 = L5_2 .. L6_2
-    L6_2 = {}
-    L7_2 = 1
-    L8_2 = 4
-    L6_2[1] = L7_2
-    L6_2[2] = L8_2
-    L7_2 = false
-    L3_2(L4_2, L5_2, L6_2, L7_2)
-    L3_2 = ScriptLib
-    L3_2 = L3_2.PlayCutScene
-    L4_2 = A0_2
-    L5_2 = 48
-    L6_2 = 0
-    L3_2(L4_2, L5_2, L6_2)
-  end
-  L3_2 = 0
-  return L3_2
-end
-action_EVENT_GADGET_STATE_CHANGE_12010 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintContextLog
-  L3_2 = A0_2
-  L4_2 = "Active Time Axis : evtname = "
-  L5_2 = A1_2.source_name
-  L6_2 = ", axisindex = "
-  L7_2 = A1_2.param1
-  L4_2 = L4_2 .. L5_2 .. L6_2 .. L7_2
-  L2_2(L3_2, L4_2)
-  L2_2 = A1_2.param1
-  if L2_2 == 1 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "Rotation : "
-    L5_2 = L1_1.gadget_2
-    L4_2 = L4_2 .. L5_2
-    L2_2(L3_2, L4_2)
-    L2_2 = RotateWall
-    L3_2 = A0_2
-    L4_2 = L1_1.gadget_2
-    L2_2(L3_2, L4_2)
-  else
-    L2_2 = A1_2.param1
-    if L2_2 == 2 then
-      L2_2 = nil
-      L3_2 = {}
-      L4_2 = GetMazzInfoByConfigID
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_2
-      L4_2 = L4_2(L5_2, L6_2)
-      L3_2 = L4_2
-      L4_2 = ScriptLib
-      L4_2 = L4_2.GetGroupVariableValue
-      L5_2 = A0_2
-      L6_2 = L3_2.sotrevarname
-      L4_2 = L4_2(L5_2, L6_2)
-      L2_2 = L4_2
-      L2_2 = L2_2 + 90
-      if L2_2 == 360 then
-        L2_2 = 0
-      end
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGroupVariableValue
-      L5_2 = A0_2
-      L6_2 = L3_2.sotrevarname
-      L7_2 = L2_2
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGroupVariableValue
-      L5_2 = A0_2
-      L6_2 = L3_2.rotstate
-      L7_2 = 0
-      L4_2(L5_2, L6_2, L7_2)
-    end
-  end
-  L2_2 = 0
-  return L2_2
-end
-action_EVENT_TIME_AXIS_PASS_12014 = L9_1
-L9_1 = require
-L10_1 = "V2_4/EnvState"
-L9_1(L10_1)
+
+require "V2_4/EnvState"

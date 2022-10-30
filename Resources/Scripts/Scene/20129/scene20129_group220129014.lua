@@ -1,566 +1,235 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.group_id = 220129014
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 14001
-L2_1.gadget_id = 70800135
-L3_1 = {}
-L3_1.x = 302.975
-L3_1.y = 205.439
-L3_1.z = 721.333
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 85.683
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 14002
-L3_1.gadget_id = 70800136
-L4_1 = {}
-L4_1.x = 302.8
-L4_1.y = 205.424
-L4_1.z = 491.802
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 92.182
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 14003
-L4_1.gadget_id = 70800137
-L5_1 = {}
-L5_1.x = 302.991
-L5_1.y = 205.469
-L5_1.z = 269.913
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 86.138
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 14004
-L5_1.gadget_id = 70800138
-L6_1 = {}
-L6_1.x = 302.847
-L6_1.y = 205.428
-L6_1.z = 68.287
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 91.963
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 14005
-L6_1.gadget_id = 70800139
-L7_1 = {}
-L7_1.x = -457.264
-L7_1.y = -47.164
-L7_1.z = 974.0
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 85.077
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 14006
-L7_1.gadget_id = 70800159
-L8_1 = {}
-L8_1.x = -458.293
-L8_1.y = -1.921
-L8_1.z = -75.525
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 14013
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 100
-L3_1 = {}
-L3_1.x = -373.185
-L3_1.y = -29.19
-L3_1.z = 977.199
-L2_1.pos = L3_1
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1014007
-L2_1.name = "VARIABLE_CHANGE_14007"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_VARIABLE_CHANGE
-L2_1.event = L3_1
-L2_1.source = "time"
-L2_1.condition = ""
-L2_1.action = "action_EVENT_VARIABLE_CHANGE_14007"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1014013
-L3_1.name = "ENTER_REGION_14013"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_14013"
-L3_1.action = "action_EVENT_ENTER_REGION_14013"
-L3_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "time"
-L2_1.value = 2
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "min_time"
-L3_1.value = 2
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "max_time"
-L4_1.value = 3
-L4_1.no_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 14012
-L4_1 = RegionShape
-L4_1 = L4_1.CUBIC
-L3_1.shape = L4_1
-L4_1 = {}
-L4_1.x = 300.0
-L4_1.y = 400.0
-L4_1.z = 1000.0
-L3_1.size = L4_1
-L4_1 = {}
-L4_1.x = 331.414
-L4_1.y = 290.277
-L4_1.z = 491.542
-L3_1.pos = L4_1
-L2_1[1] = L3_1
-L1_1.regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1014008
-L3_1.name = "VARIABLE_CHANGE_14008"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = "time"
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_14008"
-L3_1.action = "action_EVENT_VARIABLE_CHANGE_14008"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1014009
-L4_1.name = "VARIABLE_CHANGE_14009"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_VARIABLE_CHANGE
-L4_1.event = L5_1
-L4_1.source = "time"
-L4_1.condition = "condition_EVENT_VARIABLE_CHANGE_14009"
-L4_1.action = "action_EVENT_VARIABLE_CHANGE_14009"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1014010
-L5_1.name = "VARIABLE_CHANGE_14010"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_VARIABLE_CHANGE
-L5_1.event = L6_1
-L5_1.source = "time"
-L5_1.condition = "condition_EVENT_VARIABLE_CHANGE_14010"
-L5_1.action = "action_EVENT_VARIABLE_CHANGE_14010"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1014011
-L6_1.name = "VARIABLE_CHANGE_14011"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_VARIABLE_CHANGE
-L6_1.event = L7_1
-L6_1.source = "time"
-L6_1.condition = "condition_EVENT_VARIABLE_CHANGE_14011"
-L6_1.action = "action_EVENT_VARIABLE_CHANGE_14011"
-L6_1.trigger_count = 0
-L7_1 = {}
-L7_1.config_id = 1014012
-L7_1.name = "ENTER_REGION_14012"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_ENTER_REGION
-L7_1.event = L8_1
-L7_1.source = ""
-L7_1.condition = "condition_EVENT_ENTER_REGION_14012"
-L7_1.action = "action_EVENT_ENTER_REGION_14012"
-L7_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 14013
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "VARIABLE_CHANGE_14007"
-L5_1 = "ENTER_REGION_14013"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 14001
-L6_1 = 14002
-L7_1 = 14003
-L8_1 = 14004
-L9_1 = 14006
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 14005
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 220129014
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 14005
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220129014
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 14001, gadget_id = 70800135, pos = { x = 302.975, y = 205.439, z = 721.333 }, rot = { x = 0.000, y = 85.683, z = 0.000 }, level = 1 },
+	{ config_id = 14002, gadget_id = 70800136, pos = { x = 302.800, y = 205.424, z = 491.802 }, rot = { x = 0.000, y = 92.182, z = 0.000 }, level = 1 },
+	{ config_id = 14003, gadget_id = 70800137, pos = { x = 302.991, y = 205.469, z = 269.913 }, rot = { x = 0.000, y = 86.138, z = 0.000 }, level = 1 },
+	{ config_id = 14004, gadget_id = 70800138, pos = { x = 302.847, y = 205.428, z = 68.287 }, rot = { x = 0.000, y = 91.963, z = 0.000 }, level = 1 },
+	{ config_id = 14005, gadget_id = 70800139, pos = { x = -457.264, y = -47.164, z = 974.000 }, rot = { x = 0.000, y = 85.077, z = 0.000 }, level = 1 },
+	{ config_id = 14006, gadget_id = 70800159, pos = { x = -458.293, y = -1.921, z = -75.525 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 14007, shape = RegionShape.CUBIC, size = { x = 400.000, y = 400.000, z = 1200.000 }, pos = { x = 331.334, y = 200.072, z = 491.685 } },
+	{ config_id = 14013, shape = RegionShape.SPHERE, radius = 100, pos = { x = -373.185, y = -29.190, z = 977.199 } },
+	{ config_id = 14014, shape = RegionShape.SPHERE, radius = 200, pos = { x = -456.181, y = -0.195, z = -51.985 } }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1014007, name = "ENTER_REGION_14007", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_14007", action = "action_EVENT_ENTER_REGION_14007", trigger_count = 0 },
+	{ config_id = 1014013, name = "ENTER_REGION_14013", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_14013", action = "action_EVENT_ENTER_REGION_14013", trigger_count = 0 },
+	{ config_id = 1014014, name = "ENTER_REGION_14014", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_14014", action = "action_EVENT_ENTER_REGION_14014", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "time", value = 2, no_refresh = true },
+	{ config_id = 2, name = "min_time", value = 2, no_refresh = true },
+	{ config_id = 3, name = "max_time", value = 3, no_refresh = true }
+}
+
+-- 废弃数据
+garbages = {
+	regions = {
+		{ config_id = 14012, shape = RegionShape.CUBIC, size = { x = 300.000, y = 400.000, z = 1000.000 }, pos = { x = 331.414, y = 290.277, z = 491.542 } }
+	},
+	triggers = {
+		{ config_id = 1014008, name = "VARIABLE_CHANGE_14008", event = EventType.EVENT_VARIABLE_CHANGE, source = "time", condition = "condition_EVENT_VARIABLE_CHANGE_14008", action = "action_EVENT_VARIABLE_CHANGE_14008", trigger_count = 0 },
+		{ config_id = 1014009, name = "VARIABLE_CHANGE_14009", event = EventType.EVENT_VARIABLE_CHANGE, source = "time", condition = "condition_EVENT_VARIABLE_CHANGE_14009", action = "action_EVENT_VARIABLE_CHANGE_14009", trigger_count = 0 },
+		{ config_id = 1014010, name = "VARIABLE_CHANGE_14010", event = EventType.EVENT_VARIABLE_CHANGE, source = "time", condition = "condition_EVENT_VARIABLE_CHANGE_14010", action = "action_EVENT_VARIABLE_CHANGE_14010", trigger_count = 0 },
+		{ config_id = 1014011, name = "VARIABLE_CHANGE_14011", event = EventType.EVENT_VARIABLE_CHANGE, source = "time", condition = "condition_EVENT_VARIABLE_CHANGE_14011", action = "action_EVENT_VARIABLE_CHANGE_14011", trigger_count = 0 },
+		{ config_id = 1014012, name = "ENTER_REGION_14012", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_14012", action = "action_EVENT_ENTER_REGION_14012", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 14007, 14013, 14014 },
+		triggers = { "ENTER_REGION_14007", "ENTER_REGION_14013", "ENTER_REGION_14014" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 14001, 14002, 14003, 14004, 14006 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 14005 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_14007(context, evt)
+	if evt.param1 ~= 14007 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-action_EVENT_VARIABLE_CHANGE_14007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 14013 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_14007(context, evt)
+	ScriptLib.RemoveExtraGroupSuite(context, 220129014, 2)
+	ScriptLib.CreateGadget(context, { config_id = 14005 })
+	
+	return 0
 end
-condition_EVENT_ENTER_REGION_14013 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 220129016
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 220129017
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 220129018
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 220129019
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 220129016
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 220129017
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 220129018
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 220129019
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RemoveExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 220129020
-  L5_2 = 2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "time"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 1 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RemoveExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = 220129014
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.CreateGadget
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.config_id = 14001
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = 220129016
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = 220129020
-    L5_2 = 20007
-    L6_2 = GadgetState
-    L6_2 = L6_2.ChestLocked
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "time"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RemoveExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = 220129014
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.CreateGadget
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.config_id = 14002
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = 220129017
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = 220129020
-    L5_2 = 20007
-    L6_2 = GadgetState
-    L6_2 = L6_2.ChestOpened
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "time"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 3 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RemoveExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = 220129014
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.CreateGadget
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.config_id = 14003
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = 220129018
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = 220129020
-    L5_2 = 20007
-    L6_2 = GadgetState
-    L6_2 = L6_2.ChestTrap
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "time"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 4 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RemoveExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = 220129014
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.CreateGadget
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.config_id = 14004
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = 220129019
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = 220129020
-    L5_2 = 20007
-    L6_2 = GadgetState
-    L6_2 = L6_2.ChestBramble
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "time"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 5 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.RemoveExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = 220129014
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.CreateGadget
-    L3_2 = A0_2
-    L4_2 = {}
-    L4_2.config_id = 14006
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddExtraGroupSuite
-    L3_2 = A0_2
-    L4_2 = 220129016
-    L5_2 = 3
-    L2_2(L3_2, L4_2, L5_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = 220129020
-    L5_2 = 20007
-    L6_2 = GadgetState
-    L6_2 = L6_2.ChestFrozen
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_14013(context, evt)
+	if evt.param1 ~= 14013 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-action_EVENT_ENTER_REGION_14013 = L1_1
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_14013(context, evt)
+	
+	
+	ScriptLib.RemoveExtraGroupSuite(context, 220129016, 2)
+	ScriptLib.RemoveExtraGroupSuite(context, 220129017, 2)
+	ScriptLib.RemoveExtraGroupSuite(context, 220129018, 2)
+	ScriptLib.RemoveExtraGroupSuite(context, 220129019, 2)
+	
+	ScriptLib.RemoveExtraGroupSuite(context, 220129016, 3)
+	ScriptLib.RemoveExtraGroupSuite(context, 220129017, 3)
+	ScriptLib.RemoveExtraGroupSuite(context, 220129018, 3)
+	ScriptLib.RemoveExtraGroupSuite(context, 220129019, 3)
+	ScriptLib.RemoveExtraGroupSuite(context, 220129011, 3)
+	
+	ScriptLib.RemoveExtraGroupSuite(context, 220129020, 2)
+	-- 判断变量"time"为5
+	if ScriptLib.GetGroupVariableValue(context, "time") == 1 then
+	  ScriptLib.RemoveExtraGroupSuite(context, 220129014, 3)
+	  ScriptLib.CreateGadget(context, { config_id = 14001 })
+	  ScriptLib.AddExtraGroupSuite(context, 220129016, 3)
+	  ScriptLib.SetGroupGadgetStateByConfigId(context, 220129020, 20007, GadgetState.ChestLocked)
+	end
+	
+	-- 判断变量"time"为5
+	if ScriptLib.GetGroupVariableValue(context, "time") == 2 then
+	  ScriptLib.RemoveExtraGroupSuite(context, 220129014, 3)
+	  ScriptLib.CreateGadget(context, { config_id = 14002 })
+	  ScriptLib.AddExtraGroupSuite(context, 220129017, 3)
+	  ScriptLib.SetGroupGadgetStateByConfigId(context, 220129020, 20007, GadgetState.ChestOpened)
+	end
+	
+	-- 判断变量"time"为5
+	if ScriptLib.GetGroupVariableValue(context, "time") == 3 then
+	  ScriptLib.RemoveExtraGroupSuite(context, 220129014, 3)
+	  ScriptLib.CreateGadget(context, { config_id = 14003 })
+	  ScriptLib.AddExtraGroupSuite(context, 220129018, 3)
+	  ScriptLib.SetGroupGadgetStateByConfigId(context, 220129020, 20007, GadgetState.ChestTrap)
+	end
+	
+	-- 判断变量"time"为5
+	if ScriptLib.GetGroupVariableValue(context, "time") == 4 then
+	  ScriptLib.RemoveExtraGroupSuite(context, 220129014, 3)
+	  ScriptLib.CreateGadget(context, { config_id = 14004 })
+	  ScriptLib.AddExtraGroupSuite(context, 220129019, 3)
+	  ScriptLib.SetGroupGadgetStateByConfigId(context, 220129020, 20007, GadgetState.ChestBramble)
+	end
+	
+	-- 判断变量"time"为5
+	if ScriptLib.GetGroupVariableValue(context, "time") == 5 then
+	  ScriptLib.RemoveExtraGroupSuite(context, 220129014, 3)
+	  ScriptLib.CreateGadget(context, { config_id = 14006 })
+	  ScriptLib.AddExtraGroupSuite(context, 220129016, 3)
+	  ScriptLib.SetGroupGadgetStateByConfigId(context, 220129020, 20007, GadgetState.ChestFrozen)
+	end
+	
+	return 0
+	
+	
+	
+	
+	
+	
+end
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_14014(context, evt)
+	if evt.param1 ~= 14014 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_14014(context, evt)
+	ScriptLib.RemoveExtraGroupSuite(context, 220129014, 2)
+	ScriptLib.CreateGadget(context, { config_id = 14005 })
+	
+	return 0
+end

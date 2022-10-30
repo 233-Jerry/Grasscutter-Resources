@@ -12,19 +12,12 @@
   "_luaPath": "Actor/Quest/EQ40050",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    40051
-  ],
+  "PEOHODAKLNO": [40051],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    140050
-  ],
+  "rewardIdList": [140050],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
-  "LACEJNKJBCG": [
-    4,
-    5
-  ],
+  "LACEJNKJBCG": [4, 5],
   "OFCKAEDMIFA": 4005006,
   "chapterId": 10050,
   "taskId": 0,
@@ -46,26 +39,17 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            4005010,
-            3
-          ],
+          "param": [4005010, 3],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            4005011,
-            3
-          ],
+          "param": [4005011, 3],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            4005012,
-            3
-          ],
+          "param": [4005012, 3],
           "count": 0
         }
       ],
@@ -107,10 +91,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -118,10 +99,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005001_operator",
-          "25"
-        ],
+        "param": ["Q4005001_operator", "25"],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -155,10 +133,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -166,10 +141,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005001_tower",
-          "0"
-        ],
+        "param": ["Q4005001_tower", "0"],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -203,20 +175,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            4005002,
-            3
-          ],
+          "param": [4005002, 3],
           "count": 0
         }
       ],
@@ -257,18 +223,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            4004814,
-            3
-          ],
+          "param": [4004814, 3],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            4004914,
-            3
-          ],
+          "param": [4004914, 3],
           "count": 0
         }
       ],
@@ -310,30 +270,21 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4005006,
-            0
-          ],
+          "param": [4005006, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_UNLOCK_TRANS_POINT",
-          "param": [
-            7,
-            17
-          ],
+          "param": [7, 17],
           "count": 0
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005006_gu_ide",
-          "30"
-        ],
+        "param": ["Q4005006_gu_ide", "30"],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -367,30 +318,21 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4005007,
-            0
-          ],
+          "param": [4005007, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_UNLOCK_TRANS_POINT",
-          "param": [
-            7,
-            17
-          ],
+          "param": [7, 17],
           "count": 0
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005007_gu_ide",
-          "0"
-        ],
+        "param": ["Q4005007_gu_ide", "0"],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -424,10 +366,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4005008,
-            0
-          ],
+          "param": [4005008, 0],
           "count": 0
         }
       ],
@@ -435,10 +374,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005008_gu_ide",
-          "30"
-        ],
+        "param": ["Q4005008_gu_ide", "30"],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -472,10 +408,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4005009,
-            0
-          ],
+          "param": [4005009, 0],
           "count": 0
         }
       ],
@@ -483,10 +416,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005009_gu_ide",
-          "0"
-        ],
+        "param": ["Q4005009_gu_ide", "0"],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -520,10 +450,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -531,9 +458,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005010_gu_ide"
-        ],
+        "param": ["Q4005010_gu_ide"],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -567,10 +492,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -578,9 +500,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005011_gu_ide"
-        ],
+        "param": ["Q4005011_gu_ide"],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -614,10 +534,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -625,9 +542,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005012_gu_ide"
-        ],
+        "param": ["Q4005012_gu_ide"],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -661,10 +576,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4005013,
-            0
-          ],
+          "param": [4005013, 0],
           "count": 0
         }
       ],
@@ -672,10 +584,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005001_tower",
-          "50"
-        ],
+        "param": ["Q4005001_tower", "50"],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -709,18 +618,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            4005003,
-            3
-          ],
+          "param": [4005003, 3],
           "count": 0
         }
       ],
@@ -745,38 +648,23 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3370",
-            "1"
-          ]
+          "param": ["3370", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3373",
-            "1"
-          ]
+          "param": ["3373", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "4004701",
-            "3"
-          ]
+          "param": ["4004701", "3"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3375",
-            "1"
-          ]
+          "param": ["3375", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3475",
-            "1"
-          ]
+          "param": ["3475", "1"]
         }
       ],
       "failExec": [],
@@ -786,16 +674,10 @@
   ],
   "talks": [],
   "LGCLJGGNGBD": [
-    326171760782,
-    916760154356,
-    207120778777,
-    649892530447,
-    479073017414,
+    326171760782, 916760154356, 207120778777, 649892530447, 479073017414,
     679045271829
   ],
-  "OMKMAOLMNCO": [
-    925743248239
-  ],
+  "OMKMAOLMNCO": [925743248239],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 140050
 }

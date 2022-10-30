@@ -1,274 +1,119 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 220000058
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 269
-L2_1.gadget_id = 70900236
-L3_1 = {}
-L3_1.x = -68.988
-L3_1.y = 13.891
-L3_1.z = 290.325
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 82.808
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L3_1 = {}
-L3_1.config_id = 270
-L3_1.gadget_id = 70900236
-L4_1 = {}
-L4_1.x = -74.767
-L4_1.y = 11.887
-L4_1.z = 290.729
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 37.867
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L4_1 = {}
-L4_1.config_id = 271
-L4_1.gadget_id = 70900236
-L5_1 = {}
-L5_1.x = -78.546
-L5_1.y = 9.74
-L5_1.z = 290.328
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 77.422
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L5_1 = {}
-L5_1.config_id = 272
-L5_1.gadget_id = 70900236
-L6_1 = {}
-L6_1.x = -87.187
-L6_1.y = 2.182
-L6_1.z = 285.778
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 229.784
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 1
-L6_1 = {}
-L6_1.config_id = 273
-L6_1.gadget_id = 70900236
-L7_1 = {}
-L7_1.x = -86.561
-L7_1.y = 2.217
-L7_1.z = 281.665
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 48.293
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L7_1 = {}
-L7_1.config_id = 274
-L7_1.gadget_id = 70900236
-L8_1 = {}
-L8_1.x = -86.634
-L8_1.y = 12.175
-L8_1.z = 281.484
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 180.279
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 1
-L8_1 = {}
-L8_1.config_id = 275
-L8_1.gadget_id = 70900236
-L9_1 = {}
-L9_1.x = -86.666
-L9_1.y = 15.442
-L9_1.z = 281.606
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 83.813
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L9_1 = {}
-L9_1.config_id = 276
-L9_1.gadget_id = 70900236
-L10_1 = {}
-L10_1.x = -86.714
-L10_1.y = 13.28
-L10_1.z = 281.456
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 300.623
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 1
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1000086
-L2_1.name = "GADGET_STATE_CHANGE_86"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGET_STATE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_GADGET_STATE_CHANGE_86"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1000105
-L3_1.name = "ANY_GADGET_DIE_105"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_GADGET_DIE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_ANY_GADGET_DIE_105"
-L3_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "count"
-L2_1.value = 0
-L2_1.no_refresh = true
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 269
-L6_1 = 270
-L7_1 = 271
-L8_1 = 272
-L9_1 = 273
-L10_1 = 274
-L11_1 = 275
-L12_1 = 276
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L4_1[8] = L12_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_STATE_CHANGE_86"
-L6_1 = "ANY_GADGET_DIE_105"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = L2_2 + 1
-  L4_2 = ScriptLib
-  L4_2 = L4_2.SetGroupVariableValue
-  L5_2 = A0_2
-  L6_2 = "count"
-  L7_2 = L3_2
-  L4_2 = L4_2(L5_2, L6_2, L7_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintLog
-    L5_2 = "c_num="
-    L6_2 = L3_2
-    L5_2 = L5_2 .. L6_2
-    L4_2(A0_2, L5_2)
-    L4_2 = -1
-    return L4_2
-  end
-  if L3_2 == 8 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.RefreshGroup
-    L5_2 = A0_2
-    L6_2 = {}
-    L6_2.group_id = 220000059
-    L6_2.suite = 2
-    L4_2 = L4_2(L5_2, L6_2)
-    if 0 ~= L4_2 then
-      L4_2 = -1
-      return L4_2
-    end
-  end
-  L4_2 = 0
-  return L4_2
+-- 基础信息
+local base_info = {
+	group_id = 220000058
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 269, gadget_id = 70900236, pos = { x = -68.988, y = 13.891, z = 290.325 }, rot = { x = 0.000, y = 82.808, z = 0.000 }, level = 1 },
+	{ config_id = 270, gadget_id = 70900236, pos = { x = -74.767, y = 11.887, z = 290.729 }, rot = { x = 0.000, y = 37.867, z = 0.000 }, level = 1 },
+	{ config_id = 271, gadget_id = 70900236, pos = { x = -78.546, y = 9.740, z = 290.328 }, rot = { x = 0.000, y = 77.422, z = 0.000 }, level = 1 },
+	{ config_id = 272, gadget_id = 70900236, pos = { x = -87.187, y = 2.182, z = 285.778 }, rot = { x = 0.000, y = 229.784, z = 0.000 }, level = 1 },
+	{ config_id = 273, gadget_id = 70900236, pos = { x = -86.561, y = 2.217, z = 281.665 }, rot = { x = 0.000, y = 48.293, z = 0.000 }, level = 1 },
+	{ config_id = 274, gadget_id = 70900236, pos = { x = -86.634, y = 12.175, z = 281.484 }, rot = { x = 0.000, y = 180.279, z = 0.000 }, level = 1 },
+	{ config_id = 275, gadget_id = 70900236, pos = { x = -86.666, y = 15.442, z = 281.606 }, rot = { x = 0.000, y = 83.813, z = 0.000 }, level = 1 },
+	{ config_id = 276, gadget_id = 70900236, pos = { x = -86.714, y = 13.280, z = 281.456 }, rot = { x = 0.000, y = 300.623, z = 0.000 }, level = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000086, name = "GADGET_STATE_CHANGE_86", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "", action = "action_EVENT_GADGET_STATE_CHANGE_86", trigger_count = 0 },
+	{ config_id = 1000105, name = "ANY_GADGET_DIE_105", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "", action = "action_EVENT_ANY_GADGET_DIE_105", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "count", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { 269, 270, 271, 272, 273, 274, 275, 276 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_86", "ANY_GADGET_DIE_105" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_86(context, evt)
+	local c_num_1 = ScriptLib.GetGroupVariableValue(context, "count")
+	local c_num = c_num_1 + 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "count", c_num) then
+	ScriptLib.PrintLog(context, "c_num="..c_num)
+	    return -1
+	end
+	
+	if c_num == 8 then
+	 if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 220000059, suite = 2 }) then
+			return -1
+		end
+	end
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_86 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_105(context, evt)
+	-- 将本组内变量名为 "count" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "count", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_105 = L1_1

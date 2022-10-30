@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 860151839,
-  "descTextMapHash": 0,
+  
   "id": 12032,
   "ICLLDPJFIMA": 2026,
   "NCLEJIILEGL": 2027,
@@ -39,34 +39,22 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1203201,
-            0
-          ],
+          "param": [1203201, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_LEAVE_SCENE_RANGE",
-          "param": [
-            3,
-            60
-          ],
+          "param": [3, 60],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            1914201,
-            2
-          ],
+          "param": [1914201, 2],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            1914511,
-            2
-          ],
+          "param": [1914511, 2],
           "count": 0
         }
       ],
@@ -104,10 +92,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1203201",
-            "2"
-          ]
+          "param": ["1203201", "2"]
         }
       ],
       "priority": 5,
@@ -116,10 +101,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 120320101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1036,
-        1034
-      ],
+      "npcIdRawNum": [1036, 1034],
       "GHNCIOJDIEA": "QuestDialogue/LQ/Shougun2_12032/Q1203201",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -147,19 +129,11 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    1054718943911
-  ],
-  "OMKMAOLMNCO": [
-    714799774803
-  ],
+  "LGCLJGGNGBD": [1054718943911],
+  "OMKMAOLMNCO": [714799774803],
   "KPOKLMBEOBI": {
-    "1034": [
-      1120
-    ],
-    "1036": [
-      1130
-    ]
+    "1034": [1120],
+    "1036": [1130]
   },
   "MGDNNNGPOGO": 0
 }

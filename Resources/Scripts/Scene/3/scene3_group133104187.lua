@@ -1,312 +1,187 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133104187
-L1_1 = {}
-L1_1.gadget_lift = 709
-L1_1.route_down = 310400076
-L1_1.route_up = 310400077
-L1_1.group_id = 133104187
-L1_1.lift_wait_time = 4
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 709
-L3_1.gadget_id = 70380011
-L4_1 = {}
-L4_1.x = 871.77
-L4_1.y = 215.729
-L4_1.z = 340.35
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 315.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 16
-L3_1.route_id = 310400076
-L3_1.start_route = false
-L3_1.persistent = true
-L3_1.area_id = 5
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 187001
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 3
-L4_1 = {}
-L4_1.x = 871.312
-L4_1.y = 216.073
-L4_1.z = 341.057
-L3_1.pos = L4_1
-L3_1.area_id = 5
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1187001
-L3_1.name = "ENTER_REGION_187001"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = "1"
-L3_1.condition = "condition_EVENT_ENTER_REGION_187001"
-L3_1.action = "action_EVENT_ENTER_REGION_187001"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1187002
-L4_1.name = "VARIABLE_CHANGE_187002"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_VARIABLE_CHANGE
-L4_1.event = L5_1
-L4_1.source = "switch"
-L4_1.condition = ""
-L4_1.action = "action_EVENT_VARIABLE_CHANGE_187002"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1187003
-L5_1.name = "GADGET_CREATE_187003"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GADGET_CREATE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_GADGET_CREATE_187003"
-L5_1.action = "action_EVENT_GADGET_CREATE_187003"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1187004
-L6_1.name = "VARIABLE_CHANGE_187004"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_VARIABLE_CHANGE
-L6_1.event = L7_1
-L6_1.source = "isActive"
-L6_1.condition = "condition_EVENT_VARIABLE_CHANGE_187004"
-L6_1.action = "action_EVENT_VARIABLE_CHANGE_187004"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "switch"
-L3_1.value = 1
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "isActive"
-L4_1.value = 0
-L4_1.no_refresh = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 709
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 187001
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "ENTER_REGION_187001"
-L6_1 = "VARIABLE_CHANGE_187002"
-L7_1 = "GADGET_CREATE_187003"
-L8_1 = "VARIABLE_CHANGE_187004"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 187001 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isActive"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133104187
+}
+
+-- Trigger变量
+local defs = {
+	gadget_lift = 709,
+	route_down = 310400076,
+	route_up = 310400077,
+	group_id = 133104187,
+	lift_wait_time = 4
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 709, gadget_id = 70380011, pos = { x = 871.770, y = 215.729, z = 340.350 }, rot = { x = 0.000, y = 315.000, z = 0.000 }, level = 16, route_id = 310400076, start_route = false, persistent = true, area_id = 5 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 187001, shape = RegionShape.SPHERE, radius = 3, pos = { x = 871.312, y = 216.073, z = 341.057 }, area_id = 5 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1187001, name = "ENTER_REGION_187001", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_187001", action = "action_EVENT_ENTER_REGION_187001", trigger_count = 0 },
+	{ config_id = 1187002, name = "VARIABLE_CHANGE_187002", event = EventType.EVENT_VARIABLE_CHANGE, source = "switch", condition = "", action = "action_EVENT_VARIABLE_CHANGE_187002", trigger_count = 0 },
+	{ config_id = 1187003, name = "GADGET_CREATE_187003", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_187003", action = "action_EVENT_GADGET_CREATE_187003", trigger_count = 0 },
+	{ config_id = 1187004, name = "VARIABLE_CHANGE_187004", event = EventType.EVENT_VARIABLE_CHANGE, source = "isActive", condition = "condition_EVENT_VARIABLE_CHANGE_187004", action = "action_EVENT_VARIABLE_CHANGE_187004" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "switch", value = 1, no_refresh = false },
+	{ config_id = 2, name = "isActive", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { 709 },
+		regions = { 187001 },
+		triggers = { "ENTER_REGION_187001", "VARIABLE_CHANGE_187002", "GADGET_CREATE_187003", "VARIABLE_CHANGE_187004" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_187001(context, evt)
+	if evt.param1 ~= 187001 then return false end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	-- 判断变量"isActive"为0
+	if ScriptLib.GetGroupVariableValue(context, "isActive") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_187001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "switch"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 1 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "isActive"
-    L5_2 = 1
-    L2_2(L3_2, L4_2, L5_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_187001(context, evt)
+	
+	
+	if ScriptLib.GetGroupVariableValue(context, "switch") == 1 then
+			ScriptLib.SetGroupVariableValue(context, "isActive", 1) 
+		end
+	return 0
 end
-action_EVENT_ENTER_REGION_187001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isActive"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 1 then
-    L3_2 = A1_2.param1
-    if L3_2 == 1 then
-      L3_2 = ScriptLib
-      L3_2 = L3_2.StartPlatform
-      L4_2 = A0_2
-      L5_2 = 709
-      L3_2(L4_2, L5_2)
-    else
-      L3_2 = A1_2.param1
-      if L3_2 == 0 then
-        L3_2 = ScriptLib
-        L3_2 = L3_2.StopPlatform
-        L4_2 = A0_2
-        L5_2 = 709
-        L3_2(L4_2, L5_2)
-      end
-    end
-  end
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_187002(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	-- 启动移动平台
+	local y = ScriptLib.GetGroupVariableValue(context, "isActive")
+	if y == 1 then
+		if evt.param1 == 1 then
+			ScriptLib.StartPlatform(context, 709)
+		elseif evt.param1 == 0 then
+			ScriptLib.StopPlatform(context, 709)
+		end
+	end
+		
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_187002 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 709 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_187003(context, evt)
+	if 709 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_187003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "switch"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "isActive"
-  L3_2 = L3_2(L4_2, L5_2)
-  if L3_2 == 1 then
-    if L2_2 == 1 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.StartPlatform
-      L5_2 = A0_2
-      L6_2 = 709
-      L4_2(L5_2, L6_2)
-    elseif L2_2 == 0 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.StopPlatform
-      L5_2 = A0_2
-      L6_2 = 709
-      L4_2(L5_2, L6_2)
-    end
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_187003(context, evt)
+	local x = ScriptLib.GetGroupVariableValue(context, "switch")
+	local y = ScriptLib.GetGroupVariableValue(context, "isActive")
+	
+	if y == 1 then
+	
+		if x == 1 then
+			ScriptLib.StartPlatform(context, 709)
+		elseif x == 0 then
+			ScriptLib.StopPlatform(context, 709)
+		end
+	end
+	return 0
 end
-action_EVENT_GADGET_CREATE_187003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isActive"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_187004(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"isActive"为1
+	if ScriptLib.GetGroupVariableValue(context, "isActive") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_187004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 709
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_187004(context, evt)
+	ScriptLib.StartPlatform(context, 709)
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_187004 = L2_1

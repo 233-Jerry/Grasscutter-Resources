@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 3929062919,
-  "descTextMapHash": 0,
+  
   "id": 71000,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -12,9 +12,7 @@
   "_luaPath": "Actor/Quest/WQ71000",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    71024
-  ],
+  "PEOHODAKLNO": [71024],
   "FEHAEKNGFBP": false,
   "rewardIdList": [],
   "showType": "QUEST_SHOW",
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -52,10 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q133101248zhiyin",
-          "45"
-        ],
+        "param": ["Q133101248zhiyin", "45"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -89,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -100,10 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q133101248wanfa",
-          "25"
-        ],
+        "param": ["Q133101248wanfa", "25"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"

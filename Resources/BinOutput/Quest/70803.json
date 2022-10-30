@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    170803
-  ],
+  "rewardIdList": [170803],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TIME_VAR_PASS_DAY",
-          "param": [
-            70802,
-            1
-          ],
+          "param": [70802, 1],
           "count": 0
         }
       ],
@@ -69,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_CLEAR_TIME_VAR",
-          "param": [
-            "70802",
-            "1"
-          ]
+          "param": ["70802", "1"]
         }
       ],
       "failExec": [],
@@ -94,10 +86,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7080301,
-            0
-          ],
+          "param": [7080301, 0],
           "count": 0
         }
       ],
@@ -105,10 +94,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q7080302_gu_ide",
-          "20"
-        ],
+        "param": ["Q7080302_gu_ide", "20"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -125,10 +111,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "40029",
-            "1"
-          ]
+          "param": ["40029", "1"]
         }
       ],
       "failExec": [],
@@ -146,10 +129,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7080302",
-            "2"
-          ]
+          "param": ["7080302", "2"]
         }
       ],
       "priority": 5,
@@ -158,12 +138,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 708030101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1577,
-        1668,
-        1674,
-        1409
-      ],
+      "npcIdRawNum": [1577, 1668, 1674, 1409],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Mengde_70803/Q7080301",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -191,12 +166,8 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    891278171837
-  ],
-  "OMKMAOLMNCO": [
-    679365093515
-  ],
+  "LGCLJGGNGBD": [891278171837],
+  "OMKMAOLMNCO": [679365093515],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 170803
 }

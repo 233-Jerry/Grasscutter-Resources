@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    172158
-  ],
+  "rewardIdList": [172158],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -52,10 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "WQ72158_Panzuo42",
-          "15"
-        ],
+        "param": ["WQ72158_Panzuo42", "15"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -72,25 +64,15 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_MODIFY_CLIMATE_AREA",
-          "param": [
-            "3",
-            "13",
-            "0"
-          ]
+          "param": ["3", "13", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3100",
-            "0"
-          ]
+          "param": ["3100", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3012",
-            "1"
-          ]
+          "param": ["3012", "1"]
         }
       ],
       "failExec": [],
@@ -112,10 +94,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7215802,
-            0
-          ],
+          "param": [7215802, 0],
           "count": 0
         }
       ],
@@ -140,17 +119,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ADD_SCENE_TAG",
-          "param": [
-            "3",
-            "112"
-          ]
+          "param": ["3", "112"]
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133222181,1"
-          ]
+          "param": ["3", "133222181,1"]
         }
       ],
       "failExec": [],
@@ -172,10 +145,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -183,10 +153,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "WQ72158_ZhanDou",
-          "60"
-        ],
+        "param": ["WQ72158_ZhanDou", "60"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -203,10 +170,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133222228,2;133222229,2"
-          ]
+          "param": ["3", "133222228,2;133222229,2"]
         }
       ],
       "failExec": [],
@@ -228,10 +192,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [
-            100950,
-            0
-          ],
+          "param": [100950, 0],
           "count": 1
         }
       ],
@@ -239,10 +200,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "WQ72158_Last",
-          "15"
-        ],
+        "param": ["WQ72158_Last", "15"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -312,10 +270,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7215801,
-            0
-          ],
+          "param": [7215801, 0],
           "count": 0
         }
       ],
@@ -323,9 +278,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "3180"
-        ],
+        "param": ["3180"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -359,10 +312,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 3
         }
       ],
@@ -370,10 +320,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "WQ72158_PanZuo4",
-          "20"
-        ],
+        "param": ["WQ72158_PanZuo4", "20"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -390,10 +337,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133222312"
-          ]
+          "param": ["3", "133222312"]
         }
       ],
       "failExec": [],
@@ -415,10 +359,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7215807,
-            0
-          ],
+          "param": [7215807, 0],
           "count": 0
         }
       ],
@@ -426,10 +367,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "WQ72158_Zhandouqian",
-          "60"
-        ],
+        "param": ["WQ72158_Zhandouqian", "60"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -463,10 +401,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7215808,
-            0
-          ],
+          "param": [7215808, 0],
           "count": 0
         }
       ],
@@ -474,10 +409,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "WQ72158_PlayerDao",
-          "20"
-        ],
+        "param": ["WQ72158_PlayerDao", "20"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -511,10 +443,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7215809,
-            0
-          ],
+          "param": [7215809, 0],
           "count": 0
         }
       ],
@@ -522,10 +451,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "WQ72158_LastFirst",
-          "10"
-        ],
+        "param": ["WQ72158_LastFirst", "10"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -559,10 +485,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7215801,
-            3
-          ],
+          "param": [7215801, 3],
           "count": 0
         }
       ],
@@ -587,24 +510,15 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3101",
-            "0"
-          ]
+          "param": ["3101", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3201",
-            "0"
-          ]
+          "param": ["3201", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3301",
-            "0"
-          ]
+          "param": ["3301", "0"]
         }
       ],
       "failExec": [],
@@ -626,10 +540,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7215801,
-            3
-          ],
+          "param": [7215801, 3],
           "count": 0
         }
       ],
@@ -654,31 +565,19 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3119",
-            "0"
-          ]
+          "param": ["3119", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3219",
-            "0"
-          ]
+          "param": ["3219", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3065",
-            "1"
-          ]
+          "param": ["3065", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3165",
-            "1"
-          ]
+          "param": ["3165", "1"]
         }
       ],
       "failExec": [],
@@ -700,10 +599,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7215801,
-            3
-          ],
+          "param": [7215801, 3],
           "count": 0
         }
       ],
@@ -728,31 +624,19 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3118",
-            "0"
-          ]
+          "param": ["3118", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3218",
-            "0"
-          ]
+          "param": ["3218", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3066",
-            "1"
-          ]
+          "param": ["3066", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3166",
-            "1"
-          ]
+          "param": ["3166", "1"]
         }
       ],
       "failExec": [],
@@ -774,10 +658,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7215801,
-            3
-          ],
+          "param": [7215801, 3],
           "count": 0
         }
       ],
@@ -802,24 +683,15 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3086",
-            "1"
-          ]
+          "param": ["3086", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3186",
-            "1"
-          ]
+          "param": ["3186", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3286",
-            "1"
-          ]
+          "param": ["3286", "1"]
         }
       ],
       "failExec": [],
@@ -841,10 +713,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7215801,
-            3
-          ],
+          "param": [7215801, 3],
           "count": 0
         }
       ],
@@ -869,31 +738,19 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3117",
-            "0"
-          ]
+          "param": ["3117", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3217",
-            "0"
-          ]
+          "param": ["3217", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3096",
-            "1"
-          ]
+          "param": ["3096", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3196",
-            "1"
-          ]
+          "param": ["3196", "1"]
         }
       ],
       "failExec": [],
@@ -915,10 +772,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7215801,
-            3
-          ],
+          "param": [7215801, 3],
           "count": 0
         }
       ],
@@ -943,31 +797,19 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3120",
-            "0"
-          ]
+          "param": ["3120", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3220",
-            "0"
-          ]
+          "param": ["3220", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3093",
-            "1"
-          ]
+          "param": ["3093", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3193",
-            "1"
-          ]
+          "param": ["3193", "1"]
         }
       ],
       "failExec": [],
@@ -989,10 +831,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7215801,
-            3
-          ],
+          "param": [7215801, 3],
           "count": 0
         }
       ],
@@ -1017,31 +856,19 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3121",
-            "0"
-          ]
+          "param": ["3121", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3221",
-            "0"
-          ]
+          "param": ["3221", "0"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3094",
-            "1"
-          ]
+          "param": ["3094", "1"]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3194",
-            "1"
-          ]
+          "param": ["3194", "1"]
         }
       ],
       "failExec": [],
@@ -1059,10 +886,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7215805",
-            "2"
-          ]
+          "param": ["7215805", "2"]
         }
       ],
       "priority": 5,
@@ -1071,10 +895,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 721580101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3180,
-        3181
-      ],
+      "npcIdRawNum": [3180, 3181],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Inazuma_72158/Q7215801",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -1102,15 +923,8 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    206741173280,
-    916070772441,
-    27995310828,
-    833127927307
-  ],
-  "OMKMAOLMNCO": [
-    575658029445
-  ],
+  "LGCLJGGNGBD": [206741173280, 916070772441, 27995310828, 833127927307],
+  "OMKMAOLMNCO": [575658029445],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 172158
 }

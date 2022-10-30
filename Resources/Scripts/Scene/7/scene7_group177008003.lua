@@ -1,176 +1,84 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 177008003
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 3001
-L2_1.monster_id = 21010201
-L3_1 = {}
-L3_1.x = -102.36
-L3_1.y = 238.418
-L3_1.z = 167.772
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 36
-L2_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L2_1.disableWander = true
-L3_1 = {}
-L4_1 = 1040
-L3_1[1] = L4_1
-L2_1.affix = L3_1
-L2_1.pose_id = 9012
-L2_1.area_id = 210
-L3_1 = {}
-L3_1.config_id = 3004
-L3_1.monster_id = 21010901
-L4_1 = {}
-L4_1.x = -99.471
-L4_1.y = 237.206
-L4_1.z = 171.554
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 225.339
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
-L3_1.disableWander = true
-L4_1 = {}
-L5_1 = 1040
-L4_1[1] = L5_1
-L3_1.affix = L4_1
-L3_1.pose_id = 32
-L3_1.area_id = 210
-L4_1 = {}
-L4_1.config_id = 3005
-L4_1.monster_id = 21010901
-L5_1 = {}
-L5_1.x = -105.207
-L5_1.y = 237.879
-L5_1.z = 172.254
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 128.077
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.drop_tag = "\232\191\156\231\168\139\228\184\152\228\184\152\228\186\186"
-L4_1.disableWander = true
-L5_1 = {}
-L6_1 = 1040
-L5_1[1] = L6_1
-L4_1.affix = L5_1
-L4_1.pose_id = 32
-L4_1.area_id = 210
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 3006
-L2_1.gadget_id = 70220014
-L3_1 = {}
-L3_1.x = -98.325
-L3_1.y = 237.97
-L3_1.z = 165.388
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 36
-L2_1.area_id = 210
-L3_1 = {}
-L3_1.config_id = 3007
-L3_1.gadget_id = 70220014
-L4_1 = {}
-L4_1.x = -98.25
-L4_1.y = 237.778
-L4_1.z = 166.391
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.area_id = 210
-L4_1 = {}
-L4_1.config_id = 3008
-L4_1.gadget_id = 70220014
-L5_1 = {}
-L5_1.x = -99.068
-L5_1.y = 237.985
-L5_1.z = 165.876
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.area_id = 210
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1003003
-L3_1.name = "ANY_MONSTER_DIE_3003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_MONSTER_DIE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ANY_MONSTER_DIE_3003"
-L3_1.action = "action_EVENT_ANY_MONSTER_DIE_3003"
-L2_1[1] = L3_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = 3001
-L5_1 = 3004
-L6_1 = 3005
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 3006
-L5_1 = 3007
-L6_1 = 3008
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
+-- 基础信息
+local base_info = {
+	group_id = 177008003
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 3001, monster_id = 21010201, pos = { x = -102.360, y = 238.418, z = 167.772 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, drop_tag = "丘丘人", disableWander = true, affix = { 1040 }, pose_id = 9012, area_id = 210 },
+	{ config_id = 3004, monster_id = 21010901, pos = { x = -99.471, y = 237.206, z = 171.554 }, rot = { x = 0.000, y = 225.339, z = 0.000 }, level = 36, drop_tag = "远程丘丘人", disableWander = true, affix = { 1040 }, pose_id = 32, area_id = 210 },
+	{ config_id = 3005, monster_id = 21010901, pos = { x = -105.207, y = 237.879, z = 172.254 }, rot = { x = 0.000, y = 128.077, z = 0.000 }, level = 36, drop_tag = "远程丘丘人", disableWander = true, affix = { 1040 }, pose_id = 32, area_id = 210 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 3006, gadget_id = 70220014, pos = { x = -98.325, y = 237.970, z = 165.388 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 210 },
+	{ config_id = 3007, gadget_id = 70220014, pos = { x = -98.250, y = 237.778, z = 166.391 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 210 },
+	{ config_id = 3008, gadget_id = 70220014, pos = { x = -99.068, y = 237.985, z = 165.876 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, area_id = 210 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+-- 废弃数据
+garbages = {
+	triggers = {
+		{ config_id = 1003003, name = "ANY_MONSTER_DIE_3003", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_3003", action = "action_EVENT_ANY_MONSTER_DIE_3003" }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 3001, 3004, 3005 },
+		gadgets = { 3006, 3007, 3008 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================

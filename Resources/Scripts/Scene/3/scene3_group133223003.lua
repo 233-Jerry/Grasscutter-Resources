@@ -1,237 +1,132 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1
-L0_1 = {}
-L0_1.group_id = 133223003
-L1_1 = {}
-L1_1.group_id = 133223003
-L1_1.seelie_id = 3001
-L1_1.region_id = 3003
-L1_1.selfLoopPointArray = 322300062
-L2_1 = {}
-L3_1 = 1
-L4_1 = 2
-L5_1 = 3
-L6_1 = 4
-L7_1 = 5
-L8_1 = 6
-L9_1 = 7
-L10_1 = 8
-L11_1 = 9
-L12_1 = 10
-L13_1 = 11
-L14_1 = 12
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-L1_1.selfLoopRoute = L2_1
-L1_1.chaseLoopPointArray = 322300013
-L2_1 = {}
-L3_1 = 3
-L4_1 = 4
-L5_1 = 5
-L6_1 = 6
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L1_1.chaseLoopRoute = L2_1
-defs = L1_1
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 3001
-L2_1.gadget_id = 70350292
-L3_1 = {}
-L3_1.x = -5870.271
-L3_1.y = 159.11
-L3_1.z = -2675.187
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 2
-L2_1.start_route = false
-L2_1.persistent = true
-L2_1.is_use_point_array = true
-L2_1.area_id = 18
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 3003
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 4
-L3_1 = {}
-L3_1.x = -5871.34
-L3_1.y = 160.554
-L3_1.z = -2677.142
-L2_1.pos = L3_1
-L2_1.area_id = 18
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1003002
-L2_1.name = "VARIABLE_CHANGE_3002"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_VARIABLE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_VARIABLE_CHANGE_3002"
-L2_1.action = "action_EVENT_VARIABLE_CHANGE_3002"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "isMoving"
-L2_1.value = 0
-L2_1.no_refresh = false
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "currentPathNodeID"
-L3_1.value = 0
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 3
-L4_1.name = "isstart"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 4
-L5_1.name = "selfLooping"
-L5_1.value = 1
-L5_1.no_refresh = false
-L6_1 = {}
-L6_1.configId = 5
-L6_1.name = "markFinish"
-L6_1.value = 0
-L6_1.no_refresh = true
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-variables = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1003004
-L3_1.name = "PLATFORM_REACH_POINT_3004"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_PLATFORM_REACH_POINT
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_PLATFORM_REACH_POINT_3004"
-L3_1.action = "action_EVENT_PLATFORM_REACH_POINT_3004"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1003005
-L4_1.name = "AVATAR_NEAR_PLATFORM_3005"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_AVATAR_NEAR_PLATFORM
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_AVATAR_NEAR_PLATFORM_3005"
-L4_1.action = "action_EVENT_AVATAR_NEAR_PLATFORM_3005"
-L4_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L1_1.triggers = L2_1
-garbages = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 2
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 3001
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L4_1 = 3003
-L3_1[1] = L4_1
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "VARIABLE_CHANGE_3002"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "markFinish"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133223003
+}
+
+-- DEFS_MISCS
+defs = {
+	group_id = 133223003,
+	seelie_id = 3001,
+	region_id = 3003,
+	selfLoopPointArray = 322300062,
+	selfLoopRoute = {1,2,3,4,5,6,7,8,9,10,11,12},
+	chaseLoopPointArray = 322300013,
+	chaseLoopRoute = {3,4,5,6},
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 3001, gadget_id = 70350292, pos = { x = -5870.271, y = 159.110, z = -2675.187 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 2, start_route = false, persistent = true, is_use_point_array = true, area_id = 18 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 3003, shape = RegionShape.SPHERE, radius = 4, pos = { x = -5871.340, y = 160.554, z = -2677.142 }, area_id = 18 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1003002, name = "VARIABLE_CHANGE_3002", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_3002", action = "action_EVENT_VARIABLE_CHANGE_3002" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "isMoving", value = 0, no_refresh = false },
+	{ config_id = 2, name = "currentPathNodeID", value = 0, no_refresh = false },
+	{ config_id = 3, name = "isstart", value = 0, no_refresh = false },
+	{ config_id = 4, name = "selfLooping", value = 1, no_refresh = false },
+	{ config_id = 5, name = "markFinish", value = 0, no_refresh = true }
+}
+
+-- 废弃数据
+garbages = {
+	triggers = {
+		{ config_id = 1003004, name = "PLATFORM_REACH_POINT_3004", event = EventType.EVENT_PLATFORM_REACH_POINT, source = "", condition = "condition_EVENT_PLATFORM_REACH_POINT_3004", action = "action_EVENT_PLATFORM_REACH_POINT_3004", trigger_count = 0 },
+		{ config_id = 1003005, name = "AVATAR_NEAR_PLATFORM_3005", event = EventType.EVENT_AVATAR_NEAR_PLATFORM, source = "", condition = "condition_EVENT_AVATAR_NEAR_PLATFORM_3005", action = "action_EVENT_AVATAR_NEAR_PLATFORM_3005", trigger_count = 0 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 3001 },
+		regions = { 3003 },
+		triggers = { "VARIABLE_CHANGE_3002" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_3002(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"markFinish"为1
+	if ScriptLib.GetGroupVariableValue(context, "markFinish") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_3002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133223003
-  L4_2.suite = 2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_group_to_suite"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_3002(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133223003, suite = 2 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_3002 = L1_1
-L1_1 = require
-L2_1 = "V2_2/SelfLoopSeelie"
-L1_1(L2_1)
+
+require "V2_2/SelfLoopSeelie"

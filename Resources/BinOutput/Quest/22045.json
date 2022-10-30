@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            2204501,
-            0
-          ],
+          "param": [2204501, 0],
           "count": 0
         }
       ],
@@ -50,9 +47,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "3182"
-        ],
+        "param": ["3182"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
@@ -86,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            2204502,
-            0
-          ],
+          "param": [2204502, 0],
           "count": 0
         }
       ],
@@ -97,9 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q22045Target1"
-        ],
+        "param": ["Q22045Target1"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -133,10 +123,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            2204503,
-            0
-          ],
+          "param": [2204503, 0],
           "count": 0
         }
       ],
@@ -144,9 +131,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q22045Target2"
-        ],
+        "param": ["Q22045Target2"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -180,10 +165,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            2204504,
-            0
-          ],
+          "param": [2204504, 0],
           "count": 0
         }
       ],
@@ -191,9 +173,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "3182"
-        ],
+        "param": ["3182"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -210,15 +190,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_DAILY_TASK",
-          "param": [
-            "41320"
-          ]
+          "param": ["41320"]
         },
         {
           "type": "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM",
-          "param": [
-            "100995,100996"
-          ]
+          "param": ["100995,100996"]
         }
       ],
       "failExec": [],
@@ -236,10 +212,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2204501",
-            "2"
-          ]
+          "param": ["2204501", "2"]
         }
       ],
       "priority": 5,
@@ -248,9 +221,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 220450101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3182
-      ],
+      "npcIdRawNum": [3182],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -286,10 +257,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2204502",
-            "2"
-          ]
+          "param": ["2204502", "2"]
         }
       ],
       "priority": 5,
@@ -298,9 +266,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 220450201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3182
-      ],
+      "npcIdRawNum": [3182],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -336,24 +302,15 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2204502",
-            "2"
-          ]
+          "param": ["2204502", "2"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2204503",
-            "2"
-          ]
+          "param": ["2204503", "2"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2204504",
-            "2"
-          ]
+          "param": ["2204504", "2"]
         }
       ],
       "priority": 5,
@@ -362,9 +319,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 220450301,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3189
-      ],
+      "npcIdRawNum": [3189],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -400,10 +355,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2204504",
-            "2"
-          ]
+          "param": ["2204504", "2"]
         }
       ],
       "priority": 5,
@@ -412,9 +364,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 220450401,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3182
-      ],
+      "npcIdRawNum": [3182],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -450,10 +400,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2204502",
-            "2"
-          ]
+          "param": ["2204502", "2"]
         }
       ],
       "priority": 5,
@@ -462,9 +409,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 0,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        12130
-      ],
+      "npcIdRawNum": [12130],
       "GHNCIOJDIEA": "QuestDialogue/IQ/Inazuma_22045/Q2204505",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -500,10 +445,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2204503",
-            "2"
-          ]
+          "param": ["2204503", "2"]
         }
       ],
       "priority": 5,
@@ -512,9 +454,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 0,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        12130
-      ],
+      "npcIdRawNum": [12130],
       "GHNCIOJDIEA": "QuestDialogue/IQ/Inazuma_22045/Q2204506",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

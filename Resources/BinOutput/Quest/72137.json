@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 4043321415,
-  "descTextMapHash": 0,
+  
   "id": 72137,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7213701,
-            0
-          ],
+          "param": [7213701, 0],
           "count": 0
         }
       ],
@@ -67,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133220036"
-          ]
+          "param": ["3", "133220036"]
         }
       ],
       "failExec": [],
@@ -92,10 +86,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7213702,
-            0
-          ],
+          "param": [7213702, 0],
           "count": 0
         }
       ],
@@ -120,10 +111,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133220036"
-          ]
+          "param": ["3", "133220036"]
         }
       ],
       "failExec": [],
@@ -145,20 +133,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7213703,
-            0
-          ],
+          "param": [7213703, 0],
           "count": 0
         }
       ],
@@ -182,18 +164,13 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133220036"
-          ]
+          "param": ["3", "133220036"]
         }
       ],
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "7213701"
-          ]
+          "param": ["7213701"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -214,10 +191,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -259,10 +233,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7213705,
-            0
-          ],
+          "param": [7213705, 0],
           "count": 0
         }
       ],
@@ -300,17 +271,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7213705",
-            "3"
-          ]
+          "param": ["7213705", "3"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7213701",
-            "2"
-          ]
+          "param": ["7213701", "2"]
         }
       ],
       "priority": 5,
@@ -319,9 +284,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 721370101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20278
-      ],
+      "npcIdRawNum": [20278],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Inazuma_72107/Q7213701",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -357,17 +320,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7213705",
-            "3"
-          ]
+          "param": ["7213705", "3"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7213702",
-            "2"
-          ]
+          "param": ["7213702", "2"]
         }
       ],
       "priority": 5,
@@ -376,9 +333,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 721370201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20279
-      ],
+      "npcIdRawNum": [20279],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Inazuma_72137/Q7213702",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -414,17 +369,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7213705",
-            "3"
-          ]
+          "param": ["7213705", "3"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7213703",
-            "2"
-          ]
+          "param": ["7213703", "2"]
         }
       ],
       "priority": 5,
@@ -433,9 +382,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 721370301,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20280
-      ],
+      "npcIdRawNum": [20280],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Inazuma_72137/Q7213703",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

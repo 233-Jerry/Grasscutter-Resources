@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TIME_VAR_PASS_DAY",
-          "param": [
-            71045,
-            0
-          ],
+          "param": [71045, 0],
           "count": 0
         }
       ],
@@ -67,17 +64,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "6",
-            "166001054,1"
-          ]
+          "param": ["6", "166001054,1"]
         },
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "710452617",
-            "3"
-          ]
+          "param": ["710452617", "3"]
         }
       ],
       "failExec": [],

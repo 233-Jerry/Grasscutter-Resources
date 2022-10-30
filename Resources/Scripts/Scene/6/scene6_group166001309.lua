@@ -1,223 +1,110 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.group_id = 166001309
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 309002
-L2_1.gadget_id = 70310004
-L3_1 = {}
-L3_1.x = 370.67
-L3_1.y = 109.222
-L3_1.z = 1245.214
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 12.991
-L3_1.y = 357.851
-L3_1.z = 354.298
-L2_1.rot = L3_1
-L2_1.level = 36
-L3_1 = GadgetState
-L3_1 = L3_1.GearStart
-L2_1.state = L3_1
-L2_1.persistent = true
-L2_1.area_id = 300
-L3_1 = {}
-L3_1.config_id = 309003
-L3_1.gadget_id = 70710397
-L4_1 = {}
-L4_1.x = 368.605
-L4_1.y = 109.345
-L4_1.z = 1245.038
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 358.476
-L4_1.y = 55.458
-L4_1.z = 3.795
-L3_1.rot = L4_1
-L3_1.level = 36
-L3_1.area_id = 300
-L4_1 = {}
-L4_1.config_id = 309004
-L4_1.gadget_id = 70950135
-L5_1 = {}
-L5_1.x = 368.349
-L5_1.y = 109.257
-L5_1.z = 1245.999
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 6.77
-L5_1.y = 90.964
-L5_1.z = 8.266
-L4_1.rot = L5_1
-L4_1.level = 36
-L4_1.area_id = 300
-L5_1 = {}
-L5_1.config_id = 309005
-L5_1.gadget_id = 70500000
-L6_1 = {}
-L6_1.x = 368.847
-L6_1.y = 109.276
-L6_1.z = 1246.327
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 341.101
-L5_1.rot = L6_1
-L5_1.level = 36
-L5_1.point_type = 9289
-L5_1.isOneoff = true
-L5_1.persistent = true
-L5_1.area_id = 300
-L6_1 = {}
-L6_1.config_id = 309007
-L6_1.gadget_id = 70290353
-L7_1 = {}
-L7_1.x = 380.754
-L7_1.y = 106.08
-L7_1.z = 1262.597
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 36
-L6_1.persistent = true
-L6_1.area_id = 300
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-gadgets = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 309006
-L3_1 = RegionShape
-L3_1 = L3_1.SPHERE
-L2_1.shape = L3_1
-L2_1.radius = 5
-L3_1 = {}
-L3_1.x = 369.651
-L3_1.y = 108.615
-L3_1.z = 1245.672
-L2_1.pos = L3_1
-L2_1.area_id = 300
-L1_1[1] = L2_1
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1309001
-L2_1.name = "QUEST_FINISH_309001"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_QUEST_FINISH
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_QUEST_FINISH_309001"
-L3_1 = {}
-L3_1.config_id = 1309006
-L3_1.name = "ENTER_REGION_309006"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_ENTER_REGION_309006"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 309007
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 309002
-L6_1 = 309003
-L7_1 = 309004
-L8_1 = 309005
-L9_1 = 309007
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 309006
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "QUEST_FINISH_309001"
-L6_1 = "ENTER_REGION_309006"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 60010290
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 166001309
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 309002, gadget_id = 70310004, pos = { x = 370.670, y = 109.222, z = 1245.214 }, rot = { x = 12.991, y = 357.851, z = 354.298 }, level = 36, state = GadgetState.GearStart, persistent = true, area_id = 300 },
+	{ config_id = 309003, gadget_id = 70710397, pos = { x = 368.605, y = 109.345, z = 1245.038 }, rot = { x = 358.476, y = 55.458, z = 3.795 }, level = 36, area_id = 300 },
+	{ config_id = 309004, gadget_id = 70950135, pos = { x = 368.349, y = 109.257, z = 1245.999 }, rot = { x = 6.770, y = 90.964, z = 8.266 }, level = 36, area_id = 300 },
+	{ config_id = 309005, gadget_id = 70500000, pos = { x = 368.847, y = 109.276, z = 1246.327 }, rot = { x = 0.000, y = 0.000, z = 341.101 }, level = 36, point_type = 9289, isOneoff = true, persistent = true, area_id = 300 },
+	{ config_id = 309007, gadget_id = 70290353, pos = { x = 380.754, y = 106.080, z = 1262.597 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 36, persistent = true, area_id = 300 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 309006, shape = RegionShape.SPHERE, radius = 5, pos = { x = 369.651, y = 108.615, z = 1245.672 }, area_id = 300 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1309001, name = "QUEST_FINISH_309001", event = EventType.EVENT_QUEST_FINISH, source = "", condition = "", action = "action_EVENT_QUEST_FINISH_309001" },
+	{ config_id = 1309006, name = "ENTER_REGION_309006", event = EventType.EVENT_ENTER_REGION, source = "", condition = "", action = "action_EVENT_ENTER_REGION_309006" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 309007 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 309002, 309003, 309004, 309005, 309007 },
+		regions = { 309006 },
+		triggers = { "QUEST_FINISH_309001", "ENTER_REGION_309006" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_309001(context, evt)
+	-- 调用提示id为 60010290 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 60010290) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_309001 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 60010320
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_309006(context, evt)
+	-- 调用提示id为 60010320 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 60010320) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_ENTER_REGION_309006 = L1_1

@@ -1,326 +1,150 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 133103523
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 523001
-L2_1.gadget_id = 70500000
-L3_1 = {}
-L3_1.x = 1115.497
-L3_1.y = 233.798
-L3_1.z = 1648.396
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 5.656
-L3_1.y = 1.261
-L3_1.z = 25.116
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.point_type = 1003
-L2_1.persistent = true
-L2_1.area_id = 6
-L3_1 = {}
-L3_1.config_id = 523002
-L3_1.gadget_id = 70500000
-L4_1 = {}
-L4_1.x = 1115.246
-L4_1.y = 232.779
-L4_1.z = 1639.519
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 356.157
-L4_1.y = 358.945
-L4_1.z = 30.701
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.point_type = 1003
-L3_1.persistent = true
-L3_1.area_id = 6
-L4_1 = {}
-L4_1.config_id = 523003
-L4_1.gadget_id = 70360001
-L5_1 = {}
-L5_1.x = 1115.198
-L5_1.y = 234.121
-L5_1.z = 1642.286
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.persistent = true
-L4_1.area_id = 6
-L5_1 = {}
-L5_1.config_id = 523004
-L5_1.gadget_id = 70500000
-L6_1 = {}
-L6_1.x = 1111.963
-L6_1.y = 233.117
-L6_1.z = 1651.178
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 349.027
-L6_1.y = 358.32
-L6_1.z = 17.355
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.point_type = 1005
-L5_1.persistent = true
-L5_1.area_id = 6
-L6_1 = {}
-L6_1.config_id = 523005
-L6_1.gadget_id = 70500000
-L7_1 = {}
-L7_1.x = 1116.573
-L7_1.y = 233.078
-L7_1.z = 1633.608
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 355.906
-L7_1.y = 359.143
-L7_1.z = 23.631
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.point_type = 1005
-L6_1.persistent = true
-L6_1.area_id = 6
-L7_1 = {}
-L7_1.config_id = 523010
-L7_1.gadget_id = 70500000
-L8_1 = {}
-L8_1.x = 1118.11
-L8_1.y = 235.229
-L8_1.z = 1640.258
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 355.805
-L8_1.y = 359.755
-L8_1.z = 6.695
-L7_1.rot = L8_1
-L7_1.level = 1
-L7_1.point_type = 1005
-L7_1.persistent = true
-L7_1.area_id = 6
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1523006
-L2_1.name = "GROUP_REFRESH_523006"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GROUP_REFRESH
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_GROUP_REFRESH_523006"
-L3_1 = {}
-L3_1.config_id = 1523007
-L3_1.name = "ANY_GADGET_DIE_523007"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ANY_GADGET_DIE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = ""
-L3_1.action = "action_EVENT_ANY_GADGET_DIE_523007"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1523008
-L4_1.name = "BLOSSOM_PROGRESS_FINISH_523008"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_BLOSSOM_PROGRESS_FINISH
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = ""
-L4_1.action = "action_EVENT_BLOSSOM_PROGRESS_FINISH_523008"
-L5_1 = {}
-L5_1.config_id = 1523009
-L5_1.name = "GROUP_LOAD_523009"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GROUP_LOAD
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = ""
-L5_1.action = "action_EVENT_GROUP_LOAD_523009"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "GroupCompletion"
-L2_1.value = 0
-L2_1.no_refresh = false
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GROUP_LOAD_523009"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GROUP_REFRESH_523006"
-L6_1 = "ANY_GADGET_DIE_523007"
-L7_1 = "BLOSSOM_PROGRESS_FINISH_523008"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 523001
-L7_1 = 523002
-L8_1 = 523003
-L9_1 = 523004
-L10_1 = 523005
-L11_1 = 523010
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetBlossomScheduleStateByGroupId
-  L3_2 = A0_2
-  L4_2 = 133103523
-  L5_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_blossomscehedule_byGroupId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133103523
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133103523
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 523001, gadget_id = 70500000, pos = { x = 1115.497, y = 233.798, z = 1648.396 }, rot = { x = 5.656, y = 1.261, z = 25.116 }, level = 1, point_type = 1003, persistent = true, area_id = 6 },
+	{ config_id = 523002, gadget_id = 70500000, pos = { x = 1115.246, y = 232.779, z = 1639.519 }, rot = { x = 356.157, y = 358.945, z = 30.701 }, level = 1, point_type = 1003, persistent = true, area_id = 6 },
+	{ config_id = 523003, gadget_id = 70360001, pos = { x = 1115.198, y = 234.121, z = 1642.286 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, persistent = true, area_id = 6 },
+	{ config_id = 523004, gadget_id = 70500000, pos = { x = 1111.963, y = 233.117, z = 1651.178 }, rot = { x = 349.027, y = 358.320, z = 17.355 }, level = 1, point_type = 1005, persistent = true, area_id = 6 },
+	{ config_id = 523005, gadget_id = 70500000, pos = { x = 1116.573, y = 233.078, z = 1633.608 }, rot = { x = 355.906, y = 359.143, z = 23.631 }, level = 1, point_type = 1005, persistent = true, area_id = 6 },
+	{ config_id = 523010, gadget_id = 70500000, pos = { x = 1118.110, y = 235.229, z = 1640.258 }, rot = { x = 355.805, y = 359.755, z = 6.695 }, level = 1, point_type = 1005, persistent = true, area_id = 6 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1523006, name = "GROUP_REFRESH_523006", event = EventType.EVENT_GROUP_REFRESH, source = "", condition = "", action = "action_EVENT_GROUP_REFRESH_523006" },
+	{ config_id = 1523007, name = "ANY_GADGET_DIE_523007", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "", action = "action_EVENT_ANY_GADGET_DIE_523007", trigger_count = 0 },
+	{ config_id = 1523008, name = "BLOSSOM_PROGRESS_FINISH_523008", event = EventType.EVENT_BLOSSOM_PROGRESS_FINISH, source = "", condition = "", action = "action_EVENT_BLOSSOM_PROGRESS_FINISH_523008" },
+	{ config_id = 1523009, name = "GROUP_LOAD_523009", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_523009" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "GroupCompletion", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_LOAD_523009" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = 开关suite,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "GROUP_REFRESH_523006", "ANY_GADGET_DIE_523007", "BLOSSOM_PROGRESS_FINISH_523008" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = 战斗suite,
+		monsters = { },
+		gadgets = { 523001, 523002, 523003, 523004, 523005, 523010 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_GROUP_REFRESH_523006(context, evt)
+	-- 指定group的循环玩法进度加1
+	if 0 ~= ScriptLib.SetBlossomScheduleStateByGroupId(context, 133103523, 2) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_blossomscehedule_byGroupId")
+		return -1
+	end
+	
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133103523, 3)
+	
+	return 0
 end
-action_EVENT_GROUP_REFRESH_523006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddBlossomScheduleProgressByGroupId
-  L3_2 = A0_2
-  L4_2 = 133103523
-  L2_2(L3_2, L4_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_523007(context, evt)
+	-- 指定group的循环玩法进度加1
+	ScriptLib.AddBlossomScheduleProgressByGroupId(context, 133103523)
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_523007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetBlossomScheduleStateByGroupId
-  L3_2 = A0_2
-  L4_2 = 133103523
-  L5_2 = 3
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_blossomscehedule_byGroupId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "GroupCompletion"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_BLOSSOM_PROGRESS_FINISH_523008(context, evt)
+	-- 指定group的循环玩法进度加1
+	if 0 ~= ScriptLib.SetBlossomScheduleStateByGroupId(context, 133103523, 3) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_blossomscehedule_byGroupId")
+		return -1
+	end
+	
+	-- 将本组内变量名为 "GroupCompletion" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "GroupCompletion", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_BLOSSOM_PROGRESS_FINISH_523008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshBlossomGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 0
-  L4_2.suite = 2
-  L4_2.exclude_prev = true
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : refresh_blossom_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_523009(context, evt)
+		-- 刷新本group,指定suite与等级修正,自动通知对应循环玩法的进度
+		if 0 ~= ScriptLib.RefreshBlossomGroup(context, { group_id = 0, suite = 2, exclude_prev = true }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_blossom_group")
+			return -1
+		end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_523009 = L1_1

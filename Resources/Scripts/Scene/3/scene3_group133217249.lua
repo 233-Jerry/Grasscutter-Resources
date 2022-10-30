@@ -1,282 +1,156 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
-L0_1 = {}
-L0_1.group_id = 133217249
-L1_1 = {}
-L1_1.FatherQuest = 72220
-L1_1.group_id = 133217249
-L1_1.temari_gadget_id = 249004
-L1_1.chest_1 = 0
-L1_1.chest_2 = 0
-L1_1.chest_3 = 249003
-L1_1.temari_1 = 249006
-L1_1.temari_2 = 249007
-L1_1.temari_3 = 249008
-L1_1.temari_online = 249005
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 249001
-L3_1.npc_id = 20433
-L4_1 = {}
-L4_1.x = -4337.325
-L4_1.y = 215.223
-L4_1.z = -3832.11
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 216.925
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.area_id = 14
-L2_1[1] = L3_1
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 249003
-L3_1.gadget_id = 70211121
-L4_1 = {}
-L4_1.x = -4336.142
-L4_1.y = 214.95
-L4_1.z = -3833.321
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 352.224
-L4_1.y = 237.987
-L4_1.z = 7.734
-L3_1.rot = L4_1
-L3_1.level = 26
-L3_1.drop_tag = "\232\167\163\232\176\156\233\171\152\231\186\167\231\168\187\229\166\187"
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.name = "chest"
-L4_1.exp = 1
-L3_1.explore = L4_1
-L3_1.area_id = 14
-L4_1 = {}
-L4_1.config_id = 249004
-L4_1.gadget_id = 70290113
-L5_1 = {}
-L5_1.x = -4338.398
-L5_1.y = 216.269
-L5_1.z = -3831.779
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 2
-L4_1.persistent = true
-L4_1.is_guest_can_operate = true
-L4_1.area_id = 14
-L5_1 = {}
-L5_1.config_id = 249005
-L5_1.gadget_id = 70290072
-L6_1 = {}
-L6_1.x = -4338.417
-L6_1.y = 216.159
-L6_1.z = -3831.768
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 0.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 2
-L5_1.persistent = true
-L5_1.area_id = 14
-L6_1 = {}
-L6_1.config_id = 249006
-L6_1.gadget_id = 70290072
-L7_1 = {}
-L7_1.x = -4373.692
-L7_1.y = 197.65
-L7_1.z = -3852.073
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 2
-L6_1.area_id = 14
-L7_1 = {}
-L7_1.config_id = 249007
-L7_1.gadget_id = 70290072
-L8_1 = {}
-L8_1.x = -4385.435
-L8_1.y = 187.833
-L8_1.z = -3779.559
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 2
-L7_1.area_id = 14
-L8_1 = {}
-L8_1.config_id = 249008
-L8_1.gadget_id = 70290072
-L9_1 = {}
-L9_1.x = -4384.335
-L9_1.y = 160.917
-L9_1.z = -3823.574
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 2
-L8_1.area_id = 14
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "ChallengeState"
-L3_1.value = 0
-L3_1.no_refresh = true
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "ChallengeLevel"
-L4_1.value = 1
-L4_1.no_refresh = true
-L5_1 = {}
-L5_1.configId = 3
-L5_1.name = "pos_x"
-L5_1.value = 0
-L5_1.no_refresh = true
-L6_1 = {}
-L6_1.configId = 4
-L6_1.name = "pos_y"
-L6_1.value = 0
-L6_1.no_refresh = true
-L7_1 = {}
-L7_1.configId = 5
-L7_1.name = "pos_z"
-L7_1.value = 0
-L7_1.no_refresh = true
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-variables = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L4_1.config_id = 249009
-L4_1.npc_id = 20433
-L5_1 = {}
-L5_1.x = -4337.325
-L5_1.y = 215.223
-L5_1.z = -3832.11
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 216.925
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.area_id = 14
-L3_1[1] = L4_1
-L2_1.npcs = L3_1
-garbages = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 2
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L5_1 = {}
-L6_1 = 249001
-L5_1[1] = L6_1
-L4_1.npcs = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 249006
-L6_1[1] = L7_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L6_1 = {}
-L7_1 = {}
-L6_1.monsters = L7_1
-L7_1 = {}
-L8_1 = 249007
-L7_1[1] = L8_1
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L6_1.rand_weight = 100
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L9_1 = 249008
-L8_1[1] = L9_1
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L7_1.triggers = L8_1
-L7_1.rand_weight = 100
-L8_1 = {}
-L9_1 = {}
-L8_1.monsters = L9_1
-L9_1 = {}
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L8_1.triggers = L9_1
-L8_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-suites = L2_1
-L2_1 = require
-L3_1 = "V2_0/TemariChallenge"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133217249
+}
+
+-- Trigger变量
+local defs = {
+	FatherQuest = 72220,
+	group_id = 133217249,
+	temari_gadget_id = 249004,
+	chest_1 = 0,
+	chest_2 = 0,
+	chest_3 = 249003,
+	temari_1 = 249006,
+	temari_2 = 249007,
+	temari_3 = 249008,
+	temari_online = 249005
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+	{ config_id = 249001, npc_id = 20433, pos = { x = -4337.325, y = 215.223, z = -3832.110 }, rot = { x = 0.000, y = 216.925, z = 0.000 }, area_id = 14 }
+}
+
+-- 装置
+gadgets = {
+	-- 单机挑战关卡3宝箱
+	{ config_id = 249003, gadget_id = 70211121, pos = { x = -4336.142, y = 214.950, z = -3833.321 }, rot = { x = 352.224, y = 237.987, z = 7.734 }, level = 26, drop_tag = "解谜高级稻妻", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 14 },
+	-- 奥博伦球机关操作台
+	{ config_id = 249004, gadget_id = 70290113, pos = { x = -4338.398, y = 216.269, z = -3831.779 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 2, persistent = true, is_guest_can_operate = true, area_id = 14 },
+	-- 真正用来藏的球
+	{ config_id = 249005, gadget_id = 70290072, pos = { x = -4338.417, y = 216.159, z = -3831.768 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 2, persistent = true, area_id = 14 },
+	-- 手鞠球group，suite3、4、5分别用于布设三个单机关卡（如果希望增加或减少同步TD），suite6为联机挑战用的关卡
+	{ config_id = 249006, gadget_id = 70290072, pos = { x = -4373.692, y = 197.650, z = -3852.073 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 2, area_id = 14 },
+	{ config_id = 249007, gadget_id = 70290072, pos = { x = -4385.435, y = 187.833, z = -3779.559 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 2, area_id = 14 },
+	{ config_id = 249008, gadget_id = 70290072, pos = { x = -4384.335, y = 160.917, z = -3823.574 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 2, area_id = 14 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "ChallengeState", value = 0, no_refresh = true },
+	{ config_id = 2, name = "ChallengeLevel", value = 1, no_refresh = true },
+	{ config_id = 3, name = "pos_x", value = 0, no_refresh = true },
+	{ config_id = 4, name = "pos_y", value = 0, no_refresh = true },
+	{ config_id = 5, name = "pos_z", value = 0, no_refresh = true }
+}
+
+-- 废弃数据
+garbages = {
+	npcs = {
+		{ config_id = 249009, npc_id = 20433, pos = { x = -4337.325, y = 215.223, z = -3832.110 }, rot = { x = 0.000, y = 216.925, z = 0.000 }, area_id = 14 }
+	}
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		npcs = { 249001 },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = 单机挑战关卡1,
+		monsters = { },
+		gadgets = { 249006 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = 单机挑战关卡2,
+		monsters = { },
+		gadgets = { 249007 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = 单机挑战关卡3,
+		monsters = { },
+		gadgets = { 249008 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 6,
+		-- description = 联机挑战关卡,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_0/TemariChallenge"

@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 4152027151,
-  "descTextMapHash": 0,
+  
   "id": 73299,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7305503,
-            3
-          ],
+          "param": [7305503, 3],
           "count": 0
         }
       ],
@@ -67,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133310266",
-            "1"
-          ]
+          "param": ["133310266", "1"]
         }
       ],
       "failExec": [],

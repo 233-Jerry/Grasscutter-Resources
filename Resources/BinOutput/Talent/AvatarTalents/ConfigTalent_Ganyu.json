@@ -9,19 +9,19 @@
       "$type": "ModifyAbility",
       "abilityName": "Bullet_Ganyu_ShootArrow_WithIce_BeforeFission",
       "paramSpecial": "Ganyu_IceSubHurt",
-      "paramDelta": "%1"
+      "paramDelta": "%1" //-0.15
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Bullet_Ganyu_ShootArrow_WithIce_BeforeFission",
       "paramSpecial": "Ganyu_IceSubHurtTime",
-      "paramDelta": "%2"
+      "paramDelta": "%2" //6
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Ganyu_Fission_GainEnergy",
       "paramSpecial": "Ganyu_Fission_GainEnergy",
-      "paramDelta": "%3"
+      "paramDelta": "%3" //2
     }
   ],
   "Ganyu_Constellation_2": [
@@ -61,6 +61,19 @@
       "talentParam": "QuickBloom"
     }
   ],
+  // "Ganyu_CoreSkill":
+  // [
+  // 	{
+  // 		"$type": "AddAbility",
+  // 		"abilityName": "Avatar_Ganyu_CoreSkill",
+  // 	},
+  // 	{
+  // 		"$type" : "ModifyAbility",
+  // 		"abilityName" : "Avatar_Ganyu_CoreSkill",
+  // 		"paramSpecial" : "Ganyu_CoreSkill_ElementDamageUpRate",
+  // 		"paramDelta" : "%1",
+  // 	},
+  // ],
   "Ganyu_PermanentSkill_1": [
     {
       "$type": "UnlockTalentParam",
@@ -96,7 +109,7 @@
       "$type": "ModifyAbility",
       "abilityName": "SkillObj_Ganyu_UnbreakableIce_Dummy",
       "paramSpecial": "Ganyu_IceAdd",
-      "paramDelta": "%1"
+      "paramDelta": "%1" //0.2
     }
   ],
   "Ganyu_SkillUpgrade_1": [

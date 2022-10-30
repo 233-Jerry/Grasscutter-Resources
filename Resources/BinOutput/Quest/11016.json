@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LEAVE_SCENE_RANGE",
-          "param": [
-            3,
-            150
-          ],
+          "param": [3, 150],
           "count": 0
         }
       ],
@@ -67,17 +64,11 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_DEL_SCENE_TAG",
-          "param": [
-            "3",
-            "133"
-          ]
+          "param": ["3", "133"]
         },
         {
           "_type": "QUEST_EXEC_ADD_SCENE_TAG",
-          "param": [
-            "3",
-            "102"
-          ]
+          "param": ["3", "102"]
         }
       ],
       "failExec": [],

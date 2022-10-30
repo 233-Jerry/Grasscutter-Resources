@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    172667
-  ],
+  "rewardIdList": [172667],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ITEM_LESS_THAN",
-          "param": [
-            111027,
-            1
-          ],
+          "param": [111027, 1],
           "count": 0
         }
       ],
@@ -86,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7266701,
-            0
-          ],
+          "param": [7266701, 0],
           "count": 0
         }
       ],
@@ -97,9 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "3200"
-        ],
+        "param": ["3200"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -133,10 +123,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [
-            111027,
-            0
-          ],
+          "param": [111027, 0],
           "count": 1
         }
       ],
@@ -161,9 +148,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "7266701"
-          ]
+          "param": ["7266701"]
         }
       ],
       "failExec": [],
@@ -181,17 +166,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7266702",
-            "2"
-          ]
+          "param": ["7266702", "2"]
         },
         {
           "type": "QUEST_COND_ITEM_NUM_LESS_THAN",
-          "param": [
-            "111027",
-            "1"
-          ]
+          "param": ["111027", "1"]
         }
       ],
       "priority": 5,
@@ -200,9 +179,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726670102,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3200
-      ],
+      "npcIdRawNum": [3200],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

@@ -1,27 +1,11 @@
-local L0_1, L1_1
-L0_1 = {}
-L1_1 = {}
-L1_1.x = -2500
-L1_1.z = -2500
-L0_1.begin_pos = L1_1
-L1_1 = {}
-L1_1.x = 5000
-L1_1.z = 5000
-L0_1.size = L1_1
-L1_1 = {}
-L1_1.x = 0
-L1_1.y = 0
-L1_1.z = 0
-L0_1.born_pos = L1_1
-L1_1 = {}
-L1_1.x = 0
-L1_1.y = 0
-L1_1.z = 0
-L0_1.born_rot = L1_1
-L1_1 = {}
-L1_1.x = -2500.0
-L1_1.z = -2500.0
-L0_1.vision_anchor = L1_1
-scene_config = L0_1
-L0_1 = {}
-blocks = L0_1
+
+-- 地图配置
+scene_config = {
+	begin_pos = { x = -2500, z = -2500 },	-- 地图开始的坐标
+	size = { x = 5000, z = 5000 },			-- 地图大小
+	born_pos = { x = 0, y = 0, z = 0 },			-- 出生点
+	born_rot = { x = 0, y = 0, z = 0 },					-- 出生朝向
+	vision_anchor = { x = -2500.0, z = -2500.0 }
+}
+
+blocks = {}

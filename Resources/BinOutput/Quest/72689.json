@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    172689
-  ],
+  "rewardIdList": [172689],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [
-            1,
-            0
-          ],
+          "param": [1, 0],
           "count": 0
         }
       ],
@@ -86,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7268902,
-            0
-          ],
+          "param": [7268902, 0],
           "count": 0
         }
       ],
@@ -97,9 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "30171"
-        ],
+        "param": ["30171"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -133,10 +123,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_IRODORI_FINISH_FLOWER_COMBINATION",
-          "param": [
-            3,
-            0
-          ],
+          "param": [3, 0],
           "count": 0
         }
       ],
@@ -144,9 +131,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q72689"
-        ],
+        "param": ["Q72689"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -180,10 +165,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7268902,
-            0
-          ],
+          "param": [7268902, 0],
           "count": 0
         }
       ],
@@ -191,9 +173,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "30171"
-        ],
+        "param": ["30171"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_FINISH",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -223,10 +203,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268902",
-            "2"
-          ]
+          "param": ["7268902", "2"]
         }
       ],
       "priority": 5,
@@ -235,9 +212,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726890101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30171
-      ],
+      "npcIdRawNum": [30171],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Inazuma_72689/Q7268901",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -273,17 +248,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268903",
-            "2"
-          ]
+          "param": ["7268903", "2"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7268901",
-            "2"
-          ]
+          "param": ["7268901", "2"]
         }
       ],
       "priority": 5,
@@ -292,9 +261,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 726870201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        30171
-      ],
+      "npcIdRawNum": [30171],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Inazuma_72687/Q7268702",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

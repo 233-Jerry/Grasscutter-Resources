@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 2870703041,
-  "descTextMapHash": 0,
+  
   "id": 426,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            42601,
-            0
-          ],
+          "param": [42601, 0],
           "count": 0
         }
       ],
@@ -84,20 +81,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            42602,
-            0
-          ],
+          "param": [42602, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            42602,
-            0
-          ],
+          "param": [42602, 0],
           "count": 0
         }
       ],
@@ -121,17 +112,13 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "42601"
-          ]
+          "param": ["42601"]
         }
       ],
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "42601"
-          ]
+          "param": ["42601"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -148,10 +135,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "42602",
-            "2"
-          ]
+          "param": ["42602", "2"]
         }
       ],
       "priority": 0,
@@ -160,9 +144,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 4260101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1005
-      ],
+      "npcIdRawNum": [1005],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -190,9 +172,7 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    645902683150
-  ],
+  "LGCLJGGNGBD": [645902683150],
   "OMKMAOLMNCO": [],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 0

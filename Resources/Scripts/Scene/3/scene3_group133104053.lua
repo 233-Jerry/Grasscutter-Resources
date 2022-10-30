@@ -1,3428 +1,1208 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1, L30_1
-L0_1 = {}
-L0_1.group_id = 133104053
-L1_1 = {}
-L1_1.ClueFire = 108
-L1_1.ClueWater = 109
-L1_1.ClueWind = 110
-L1_1.ClueThunder = 111
-L1_1.WaterSwitch = 116
-L1_1.Gurdian2 = 53010
-L1_1.Gurdian1 = 53012
-L1_1.Gurdian3 = 53009
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 53009
-L3_1.monster_id = 24010101
-L4_1 = {}
-L4_1.x = 455.1
-L4_1.y = 196.8
-L4_1.z = 225.1
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 42.514
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 15
-L3_1.drop_id = 1000100
-L3_1.pose_id = 100
-L3_1.area_id = 9
-L4_1 = {}
-L4_1.config_id = 53010
-L4_1.monster_id = 24010101
-L5_1 = {}
-L5_1.x = 433.28
-L5_1.y = 197.144
-L5_1.z = 257.72
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 119.156
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 15
-L4_1.drop_id = 1000100
-L4_1.pose_id = 100
-L4_1.area_id = 9
-L5_1 = {}
-L5_1.config_id = 53012
-L5_1.monster_id = 24010101
-L6_1 = {}
-L6_1.x = 422.71
-L6_1.y = 196.779
-L6_1.z = 224.14
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 53.9
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 15
-L5_1.drop_id = 1000100
-L5_1.pose_id = 100
-L5_1.area_id = 9
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 108
-L3_1.gadget_id = 70360028
-L4_1 = {}
-L4_1.x = 308.375
-L4_1.y = 227.095
-L4_1.z = 452.109
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 19
-L3_1.persistent = true
-L3_1.area_id = 9
-L4_1 = {}
-L4_1.config_id = 109
-L4_1.gadget_id = 70360028
-L5_1 = {}
-L5_1.x = 490.739
-L5_1.y = 207.593
-L5_1.z = 143.383
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 1.277
-L5_1.y = 0.005
-L5_1.z = 0.404
-L4_1.rot = L5_1
-L4_1.level = 19
-L4_1.persistent = true
-L4_1.area_id = 9
-L5_1 = {}
-L5_1.config_id = 110
-L5_1.gadget_id = 70360028
-L6_1 = {}
-L6_1.x = 686.775
-L6_1.y = 213.432
-L6_1.z = 399.425
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 359.606
-L6_1.y = 0.002
-L6_1.z = 359.292
-L5_1.rot = L6_1
-L5_1.level = 19
-L5_1.persistent = true
-L5_1.area_id = 9
-L6_1 = {}
-L6_1.config_id = 111
-L6_1.gadget_id = 70360028
-L7_1 = {}
-L7_1.x = 185.73
-L7_1.y = 246.948
-L7_1.z = 76.587
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.393
-L7_1.y = 359.531
-L7_1.z = 358.72
-L6_1.rot = L7_1
-L6_1.level = 19
-L6_1.persistent = true
-L6_1.area_id = 9
-L7_1 = {}
-L7_1.config_id = 116
-L7_1.gadget_id = 70360028
-L8_1 = {}
-L8_1.x = 467.388
-L8_1.y = 199.379
-L8_1.z = 236.81
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.0
-L8_1.y = 0.0
-L8_1.z = 0.0
-L7_1.rot = L8_1
-L7_1.level = 19
-L7_1.persistent = true
-L7_1.area_id = 9
-L8_1 = {}
-L8_1.config_id = 142
-L8_1.gadget_id = 70380010
-L9_1 = {}
-L9_1.x = 437.88
-L9_1.y = 195.931
-L9_1.z = 236.341
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 19
-L8_1.route_id = 310400029
-L8_1.start_route = false
-L8_1.persistent = true
-L8_1.area_id = 9
-L9_1 = {}
-L9_1.config_id = 639
-L9_1.gadget_id = 70211032
-L10_1 = {}
-L10_1.x = 433.915
-L10_1.y = 185.107
-L10_1.z = 237.997
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 0.0
-L10_1.y = 107.877
-L10_1.z = 0.0
-L9_1.rot = L10_1
-L9_1.level = 16
-L9_1.chest_drop_id = 2000100
-L9_1.drop_count = 1
-L10_1 = GadgetState
-L10_1 = L10_1.ChestLocked
-L9_1.state = L10_1
-L9_1.isOneoff = true
-L9_1.persistent = true
-L10_1 = {}
-L10_1.name = "chest"
-L10_1.exp = 1
-L9_1.explore = L10_1
-L9_1.area_id = 9
-L10_1 = {}
-L10_1.config_id = 640
-L10_1.gadget_id = 70211122
-L11_1 = {}
-L11_1.x = 444.095
-L11_1.y = 185.107
-L11_1.z = 231.173
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.0
-L11_1.y = 325.298
-L11_1.z = 0.0
-L10_1.rot = L11_1
-L10_1.level = 16
-L10_1.drop_tag = "\232\167\163\232\176\156\233\171\152\231\186\167\231\146\131\230\156\136"
-L11_1 = GadgetState
-L11_1 = L11_1.ChestLocked
-L10_1.state = L11_1
-L10_1.isOneoff = true
-L10_1.persistent = true
-L11_1 = {}
-L11_1.name = "chest"
-L11_1.exp = 1
-L10_1.explore = L11_1
-L10_1.area_id = 9
-L11_1 = {}
-L11_1.config_id = 641
-L11_1.gadget_id = 70211122
-L12_1 = {}
-L12_1.x = 443.499
-L12_1.y = 185.107
-L12_1.z = 241.126
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 211.776
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 16
-L11_1.drop_tag = "\232\167\163\232\176\156\233\171\152\231\186\167\231\146\131\230\156\136"
-L12_1 = GadgetState
-L12_1 = L12_1.ChestLocked
-L11_1.state = L12_1
-L11_1.isOneoff = true
-L11_1.persistent = true
-L12_1 = {}
-L12_1.name = "chest"
-L12_1.exp = 1
-L11_1.explore = L12_1
-L11_1.area_id = 9
-L12_1 = {}
-L12_1.config_id = 53019
-L12_1.gadget_id = 70310007
-L13_1 = {}
-L13_1.x = 433.28
-L13_1.y = 197.144
-L13_1.z = 257.72
-L12_1.pos = L13_1
-L13_1 = {}
-L13_1.x = 0.0
-L13_1.y = 132.814
-L13_1.z = 0.0
-L12_1.rot = L13_1
-L12_1.level = 19
-L12_1.persistent = true
-L12_1.area_id = 9
-L13_1 = {}
-L13_1.config_id = 53020
-L13_1.gadget_id = 70310007
-L14_1 = {}
-L14_1.x = 422.71
-L14_1.y = 196.779
-L14_1.z = 224.14
-L13_1.pos = L14_1
-L14_1 = {}
-L14_1.x = 0.0
-L14_1.y = 53.9
-L14_1.z = 0.0
-L13_1.rot = L14_1
-L13_1.level = 19
-L13_1.persistent = true
-L13_1.area_id = 9
-L14_1 = {}
-L14_1.config_id = 53021
-L14_1.gadget_id = 70310007
-L15_1 = {}
-L15_1.x = 455.1
-L15_1.y = 196.8
-L15_1.z = 225.1
-L14_1.pos = L15_1
-L15_1 = {}
-L15_1.x = 0.0
-L15_1.y = 323.28
-L15_1.z = 0.0
-L14_1.rot = L15_1
-L14_1.level = 19
-L14_1.persistent = true
-L14_1.area_id = 9
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 80
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 11
-L4_1 = {}
-L4_1.x = 438.766
-L4_1.y = 197.213
-L4_1.z = 235.964
-L3_1.pos = L4_1
-L3_1.area_id = 9
-L4_1 = {}
-L4_1.config_id = 53007
-L5_1 = RegionShape
-L5_1 = L5_1.SPHERE
-L4_1.shape = L5_1
-L4_1.radius = 5
-L5_1 = {}
-L5_1.x = 467.43
-L5_1.y = 200.055
-L5_1.z = 237.257
-L4_1.pos = L5_1
-L4_1.area_id = 9
-L5_1 = {}
-L5_1.config_id = 53011
-L6_1 = RegionShape
-L6_1 = L6_1.SPHERE
-L5_1.shape = L6_1
-L5_1.radius = 10
-L6_1 = {}
-L6_1.x = 686.719
-L6_1.y = 212.857
-L6_1.z = 399.641
-L5_1.pos = L6_1
-L5_1.area_id = 9
-L6_1 = {}
-L6_1.config_id = 53014
-L7_1 = RegionShape
-L7_1 = L7_1.SPHERE
-L6_1.shape = L7_1
-L6_1.radius = 10
-L7_1 = {}
-L7_1.x = 308.521
-L7_1.y = 226.738
-L7_1.z = 452.229
-L6_1.pos = L7_1
-L6_1.area_id = 9
-L7_1 = {}
-L7_1.config_id = 53017
-L8_1 = RegionShape
-L8_1 = L8_1.SPHERE
-L7_1.shape = L8_1
-L7_1.radius = 10
-L8_1 = {}
-L8_1.x = 185.686
-L8_1.y = 246.588
-L8_1.z = 76.721
-L7_1.pos = L8_1
-L7_1.area_id = 9
-L8_1 = {}
-L8_1.config_id = 53018
-L9_1 = RegionShape
-L9_1 = L9_1.SPHERE
-L8_1.shape = L9_1
-L8_1.radius = 10
-L9_1 = {}
-L9_1.x = 489.755
-L9_1.y = 208.278
-L9_1.z = 142.996
-L8_1.pos = L9_1
-L8_1.area_id = 9
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1000079
-L3_1.name = "VARIABLE_CHANGE_79"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = "findAllClue"
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_79"
-L3_1.action = "action_EVENT_VARIABLE_CHANGE_79"
-L4_1 = {}
-L4_1.config_id = 1000080
-L4_1.name = "ENTER_REGION_80"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_ENTER_REGION
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_ENTER_REGION_80"
-L4_1.action = "action_EVENT_ENTER_REGION_80"
-L5_1 = {}
-L5_1.config_id = 1000081
-L5_1.name = "GADGET_STATE_CHANGE_81"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_GADGET_STATE_CHANGE
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_81"
-L5_1.action = "action_EVENT_GADGET_STATE_CHANGE_81"
-L6_1 = {}
-L6_1.config_id = 1000302
-L6_1.name = "GADGET_STATE_CHANGE_302"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GADGET_STATE_CHANGE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_302"
-L6_1.action = "action_EVENT_GADGET_STATE_CHANGE_302"
-L7_1 = {}
-L7_1.config_id = 1000303
-L7_1.name = "QUEST_FINISH_303"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_QUEST_FINISH
-L7_1.event = L8_1
-L7_1.source = "2100450"
-L7_1.condition = ""
-L7_1.action = "action_EVENT_QUEST_FINISH_303"
-L8_1 = {}
-L8_1.config_id = 1053001
-L8_1.name = "QUEST_START_53001"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_QUEST_START
-L8_1.event = L9_1
-L8_1.source = "2100403"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_QUEST_START_53001"
-L9_1 = {}
-L9_1.config_id = 1053002
-L9_1.name = "GADGET_CREATE_53002"
-L10_1 = EventType
-L10_1 = L10_1.EVENT_GADGET_CREATE
-L9_1.event = L10_1
-L9_1.source = ""
-L9_1.condition = "condition_EVENT_GADGET_CREATE_53002"
-L9_1.action = "action_EVENT_GADGET_CREATE_53002"
-L9_1.trigger_count = 0
-L10_1 = {}
-L10_1.config_id = 1053003
-L10_1.name = "SELECT_OPTION_53003"
-L11_1 = EventType
-L11_1 = L11_1.EVENT_SELECT_OPTION
-L10_1.event = L11_1
-L10_1.source = ""
-L10_1.condition = "condition_EVENT_SELECT_OPTION_53003"
-L10_1.action = "action_EVENT_SELECT_OPTION_53003"
-L10_1.trigger_count = 0
-L11_1 = {}
-L11_1.config_id = 1053004
-L11_1.name = "VARIABLE_CHANGE_53004"
-L12_1 = EventType
-L12_1 = L12_1.EVENT_VARIABLE_CHANGE
-L11_1.event = L12_1
-L11_1.source = "count"
-L11_1.condition = ""
-L11_1.action = "action_EVENT_VARIABLE_CHANGE_53004"
-L11_1.trigger_count = 0
-L12_1 = {}
-L12_1.config_id = 1053005
-L12_1.name = "TIMER_EVENT_53005"
-L13_1 = EventType
-L13_1 = L13_1.EVENT_TIMER_EVENT
-L12_1.event = L13_1
-L12_1.source = "playerReminder"
-L12_1.condition = ""
-L12_1.action = "action_EVENT_TIMER_EVENT_53005"
-L12_1.trigger_count = 0
-L13_1 = {}
-L13_1.config_id = 1053006
-L13_1.name = "QUEST_FINISH_53006"
-L14_1 = EventType
-L14_1 = L14_1.EVENT_QUEST_FINISH
-L13_1.event = L14_1
-L13_1.source = "2100420"
-L13_1.condition = ""
-L13_1.action = "action_EVENT_QUEST_FINISH_53006"
-L14_1 = {}
-L14_1.config_id = 1053007
-L14_1.name = "ENTER_REGION_53007"
-L15_1 = EventType
-L15_1 = L15_1.EVENT_ENTER_REGION
-L14_1.event = L15_1
-L14_1.source = "1"
-L14_1.condition = "condition_EVENT_ENTER_REGION_53007"
-L14_1.action = "action_EVENT_ENTER_REGION_53007"
-L15_1 = {}
-L15_1.config_id = 1053008
-L15_1.name = "QUEST_START_53008"
-L16_1 = EventType
-L16_1 = L16_1.EVENT_QUEST_START
-L15_1.event = L16_1
-L15_1.source = "2100420"
-L15_1.condition = ""
-L15_1.action = "action_EVENT_QUEST_START_53008"
-L16_1 = {}
-L16_1.config_id = 1053011
-L16_1.name = "ENTER_REGION_53011"
-L17_1 = EventType
-L17_1 = L17_1.EVENT_ENTER_REGION
-L16_1.event = L17_1
-L16_1.source = "1"
-L16_1.condition = "condition_EVENT_ENTER_REGION_53011"
-L16_1.action = "action_EVENT_ENTER_REGION_53011"
-L17_1 = {}
-L17_1.config_id = 1053013
-L17_1.name = "ANY_MONSTER_DIE_53013"
-L18_1 = EventType
-L18_1 = L18_1.EVENT_ANY_MONSTER_DIE
-L17_1.event = L18_1
-L17_1.source = ""
-L17_1.condition = "condition_EVENT_ANY_MONSTER_DIE_53013"
-L17_1.action = "action_EVENT_ANY_MONSTER_DIE_53013"
-L18_1 = {}
-L18_1.config_id = 1053014
-L18_1.name = "ENTER_REGION_53014"
-L19_1 = EventType
-L19_1 = L19_1.EVENT_ENTER_REGION
-L18_1.event = L19_1
-L18_1.source = "1"
-L18_1.condition = "condition_EVENT_ENTER_REGION_53014"
-L18_1.action = "action_EVENT_ENTER_REGION_53014"
-L19_1 = {}
-L19_1.config_id = 1053015
-L19_1.name = "SELECT_OPTION_53015"
-L20_1 = EventType
-L20_1 = L20_1.EVENT_SELECT_OPTION
-L19_1.event = L20_1
-L19_1.source = ""
-L19_1.condition = "condition_EVENT_SELECT_OPTION_53015"
-L19_1.action = "action_EVENT_SELECT_OPTION_53015"
-L19_1.trigger_count = 0
-L20_1 = {}
-L20_1.config_id = 1053016
-L20_1.name = "GADGET_CREATE_53016"
-L21_1 = EventType
-L21_1 = L21_1.EVENT_GADGET_CREATE
-L20_1.event = L21_1
-L20_1.source = ""
-L20_1.condition = "condition_EVENT_GADGET_CREATE_53016"
-L20_1.action = "action_EVENT_GADGET_CREATE_53016"
-L20_1.trigger_count = 0
-L21_1 = {}
-L21_1.config_id = 1053017
-L21_1.name = "ENTER_REGION_53017"
-L22_1 = EventType
-L22_1 = L22_1.EVENT_ENTER_REGION
-L21_1.event = L22_1
-L21_1.source = "1"
-L21_1.condition = "condition_EVENT_ENTER_REGION_53017"
-L21_1.action = "action_EVENT_ENTER_REGION_53017"
-L22_1 = {}
-L22_1.config_id = 1053018
-L22_1.name = "ENTER_REGION_53018"
-L23_1 = EventType
-L23_1 = L23_1.EVENT_ENTER_REGION
-L22_1.event = L23_1
-L22_1.source = "1"
-L22_1.condition = "condition_EVENT_ENTER_REGION_53018"
-L22_1.action = "action_EVENT_ENTER_REGION_53018"
-L23_1 = {}
-L23_1.config_id = 1053022
-L24_1 = "TIMER_EVENT_53022"
-L23_1.name = L24_1
-L24_1 = EventType
-L24_1 = L24_1.EVENT_TIMER_EVENT
-L23_1.event = L24_1
-L24_1 = "ActiveGurdian"
-L23_1.source = L24_1
-L23_1.condition = ""
-L24_1 = "action_EVENT_TIMER_EVENT_53022"
-L23_1.action = L24_1
-L24_1 = {}
-L25_1 = 1053023
-L24_1.config_id = L25_1
-L25_1 = "TIMER_EVENT_53023"
-L24_1.name = L25_1
-L25_1 = EventType
-L25_1 = L25_1.EVENT_TIMER_EVENT
-L24_1.event = L25_1
-L25_1 = "SetMonsterBattle"
-L24_1.source = L25_1
-L24_1.condition = ""
-L25_1 = "action_EVENT_TIMER_EVENT_53023"
-L24_1.action = L25_1
-L25_1 = {}
-L26_1 = 1053024
-L25_1.config_id = L26_1
-L26_1 = "TIMER_EVENT_53024"
-L25_1.name = L26_1
-L26_1 = EventType
-L26_1 = L26_1.EVENT_TIMER_EVENT
-L25_1.event = L26_1
-L26_1 = "DisableFakeGurdian"
-L25_1.source = L26_1
-L25_1.condition = ""
-L26_1 = "action_EVENT_TIMER_EVENT_53024"
-L25_1.action = L26_1
-L26_1 = {}
-L27_1 = 1053025
-L26_1.config_id = L27_1
-L27_1 = "QUEST_FINISH_53025"
-L26_1.name = L27_1
-L27_1 = EventType
-L27_1 = L27_1.EVENT_QUEST_FINISH
-L26_1.event = L27_1
-L27_1 = "2100481"
-L26_1.source = L27_1
-L27_1 = "condition_EVENT_QUEST_FINISH_53025"
-L26_1.condition = L27_1
-L27_1 = "action_EVENT_QUEST_FINISH_53025"
-L26_1.action = L27_1
-L26_1.trigger_count = 0
-L27_1 = {}
-L28_1 = 1053026
-L27_1.config_id = L28_1
-L28_1 = "GADGET_CREATE_53026"
-L27_1.name = L28_1
-L28_1 = EventType
-L28_1 = L28_1.EVENT_GADGET_CREATE
-L27_1.event = L28_1
-L27_1.source = ""
-L28_1 = "condition_EVENT_GADGET_CREATE_53026"
-L27_1.condition = L28_1
-L28_1 = "action_EVENT_GADGET_CREATE_53026"
-L27_1.action = L28_1
-L27_1.trigger_count = 0
-L28_1 = {}
-L29_1 = 1053027
-L28_1.config_id = L29_1
-L29_1 = "ANY_MONSTER_DIE_53027"
-L28_1.name = L29_1
-L29_1 = EventType
-L29_1 = L29_1.EVENT_ANY_MONSTER_DIE
-L28_1.event = L29_1
-L28_1.source = ""
-L29_1 = "condition_EVENT_ANY_MONSTER_DIE_53027"
-L28_1.condition = L29_1
-L29_1 = "action_EVENT_ANY_MONSTER_DIE_53027"
-L28_1.action = L29_1
-L28_1.trigger_count = 0
-L29_1 = {}
-L30_1 = 1053028
-L29_1.config_id = L30_1
-L30_1 = "QUEST_START_53028"
-L29_1.name = L30_1
-L30_1 = EventType
-L30_1 = L30_1.EVENT_QUEST_START
-L29_1.event = L30_1
-L30_1 = "2100414"
-L29_1.source = L30_1
-L29_1.condition = ""
-L30_1 = "action_EVENT_QUEST_START_53028"
-L29_1.action = L30_1
-L29_1.trigger_count = 0
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-L2_1[6] = L8_1
-L2_1[7] = L9_1
-L2_1[8] = L10_1
-L2_1[9] = L11_1
-L2_1[10] = L12_1
-L2_1[11] = L13_1
-L2_1[12] = L14_1
-L2_1[13] = L15_1
-L2_1[14] = L16_1
-L2_1[15] = L17_1
-L2_1[16] = L18_1
-L2_1[17] = L19_1
-L2_1[18] = L20_1
-L2_1[19] = L21_1
-L2_1[20] = L22_1
-L2_1[21] = L23_1
-L2_1[22] = L24_1
-L2_1[23] = L25_1
-L2_1[24] = L26_1
-L2_1[25] = L27_1
-L2_1[26] = L28_1
-L2_1[27] = L29_1
-triggers = L2_1
-L2_1 = "variables"
-L3_1 = {}
-L4_1 = {}
-L5_1 = "configId"
-L4_1[L5_1] = 1
-L4_1.name = "count"
-L5_1 = "value"
-L4_1[L5_1] = 0
-L5_1 = "no_refresh"
-L4_1[L5_1] = true
-L5_1 = {}
-L6_1 = "configId"
-L7_1 = 2
-L5_1[L6_1] = L7_1
-L6_1 = "DefeatGurdian"
-L5_1.name = L6_1
-L6_1 = "value"
-L5_1[L6_1] = 0
-L6_1 = "no_refresh"
-L5_1[L6_1] = true
-L6_1 = {}
-L7_1 = "configId"
-L8_1 = 3
-L6_1[L7_1] = L8_1
-L7_1 = "isAcceptQuest"
-L6_1.name = L7_1
-L7_1 = "value"
-L6_1[L7_1] = 0
-L7_1 = "no_refresh"
-L6_1[L7_1] = true
-L7_1 = {}
-L8_1 = "configId"
-L9_1 = 4
-L7_1[L8_1] = L9_1
-L8_1 = "noQuestCount"
-L7_1.name = L8_1
-L8_1 = "value"
-L7_1[L8_1] = 0
-L8_1 = "no_refresh"
-L7_1[L8_1] = true
-L8_1 = {}
-L9_1 = "configId"
-L8_1[L9_1] = 5
-L8_1.name = "findAllClue"
-L9_1 = "value"
-L8_1[L9_1] = 0
-L9_1 = "no_refresh"
-L8_1[L9_1] = true
-L9_1 = {}
-L10_1 = "configId"
-L11_1 = 6
-L9_1[L10_1] = L11_1
-L10_1 = "ActiveGurdian"
-L9_1.name = L10_1
-L10_1 = "value"
-L9_1[L10_1] = 0
-L10_1 = "no_refresh"
-L9_1[L10_1] = true
-L10_1 = {}
-L11_1 = "configId"
-L12_1 = 7
-L10_1[L11_1] = L12_1
-L11_1 = "findAllClueAndFinishTalk"
-L10_1.name = L11_1
-L11_1 = "value"
-L10_1[L11_1] = 0
-L11_1 = "no_refresh"
-L10_1[L11_1] = true
-L11_1 = {}
-L12_1 = "configId"
-L13_1 = 8
-L11_1[L12_1] = L13_1
-L12_1 = "isFinished"
-L11_1.name = L12_1
-L12_1 = "value"
-L11_1[L12_1] = 0
-L12_1 = "no_refresh"
-L11_1[L12_1] = true
-L12_1 = {}
-L13_1 = "configId"
-L12_1[L13_1] = 9
-L13_1 = "Region_Fire"
-L12_1.name = L13_1
-L13_1 = "value"
-L12_1[L13_1] = 0
-L13_1 = "no_refresh"
-L12_1[L13_1] = true
-L13_1 = {}
-L14_1 = "configId"
-L13_1[L14_1] = 10
-L14_1 = "Region_Wind"
-L13_1.name = L14_1
-L14_1 = "value"
-L13_1[L14_1] = 0
-L14_1 = "no_refresh"
-L13_1[L14_1] = true
-L14_1 = {}
-L15_1 = "configId"
-L14_1[L15_1] = 11
-L15_1 = "Region_Water"
-L14_1.name = L15_1
-L15_1 = "value"
-L14_1[L15_1] = 0
-L15_1 = "no_refresh"
-L14_1[L15_1] = true
-L15_1 = {}
-L16_1 = "configId"
-L17_1 = 12
-L15_1[L16_1] = L17_1
-L16_1 = "Region_Thunder"
-L15_1.name = L16_1
-L16_1 = "value"
-L15_1[L16_1] = 0
-L16_1 = "no_refresh"
-L15_1[L16_1] = true
-L16_1 = {}
-L17_1 = "configId"
-L18_1 = 13
-L16_1[L17_1] = L18_1
-L17_1 = "Region_Center"
-L16_1.name = L17_1
-L17_1 = "value"
-L16_1[L17_1] = 0
-L17_1 = "no_refresh"
-L16_1[L17_1] = true
-L17_1 = {}
-L18_1 = "configId"
-L19_1 = 14
-L17_1[L18_1] = L19_1
-L18_1 = "TurnOffTrigger"
-L17_1.name = L18_1
-L18_1 = "value"
-L19_1 = 99
-L17_1[L18_1] = L19_1
-L18_1 = "no_refresh"
-L17_1[L18_1] = true
-L18_1 = {}
-L19_1 = "configId"
-L18_1[L19_1] = 15
-L19_1 = "Temp_GadgetID"
-L18_1.name = L19_1
-L19_1 = "value"
-L18_1[L19_1] = 0
-L19_1 = "no_refresh"
-L18_1[L19_1] = true
-L19_1 = {}
-L20_1 = "configId"
-L19_1[L20_1] = 16
-L20_1 = "Unlock_Water"
-L19_1.name = L20_1
-L20_1 = "value"
-L19_1[L20_1] = 0
-L20_1 = "no_refresh"
-L19_1[L20_1] = true
-L20_1 = {}
-L21_1 = "configId"
-L22_1 = 17
-L20_1[L21_1] = L22_1
-L21_1 = "AnyGurdianDie"
-L20_1.name = L21_1
-L21_1 = "value"
-L20_1[L21_1] = 0
-L21_1 = "no_refresh"
-L20_1[L21_1] = true
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L3_1[10] = L13_1
-L3_1[11] = L14_1
-L3_1[12] = L15_1
-L3_1[13] = L16_1
-L3_1[14] = L17_1
-L3_1[15] = L18_1
-L3_1[16] = L19_1
-L3_1[17] = L20_1
-_ENV[L2_1] = L3_1
-L2_1 = "init_config"
-L3_1 = {}
-L4_1 = "suite"
-L3_1[L4_1] = 1
-L4_1 = "end_suite"
-L5_1 = 2
-L3_1[L4_1] = L5_1
-L4_1 = "rand_suite"
-L3_1[L4_1] = false
-_ENV[L2_1] = L3_1
-L2_1 = "suites"
-L3_1 = {}
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 108
-L7_1 = 109
-L8_1 = 110
-L9_1 = 111
-L10_1 = 116
-L11_1 = 142
-L12_1 = 53019
-L13_1 = 53020
-L14_1 = 53021
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L5_1[6] = L11_1
-L5_1[7] = L12_1
-L5_1[8] = L13_1
-L5_1[9] = L14_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "QUEST_START_53001"
-L7_1 = "SELECT_OPTION_53015"
-L8_1 = "GADGET_CREATE_53016"
-L9_1 = "QUEST_FINISH_53025"
-L10_1 = "QUEST_START_53028"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L4_1.triggers = L5_1
-L5_1 = "rand_weight"
-L4_1[L5_1] = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 108
-L8_1 = 109
-L9_1 = 110
-L10_1 = 111
-L11_1 = 116
-L12_1 = 142
-L13_1 = 53019
-L14_1 = 53020
-L15_1 = 53021
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L6_1[7] = L13_1
-L6_1[8] = L14_1
-L6_1[9] = L15_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L7_1 = 80
-L8_1 = 53007
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "VARIABLE_CHANGE_79"
-L8_1 = "ENTER_REGION_80"
-L9_1 = "GADGET_STATE_CHANGE_81"
-L10_1 = "GADGET_STATE_CHANGE_302"
-L11_1 = "QUEST_FINISH_303"
-L12_1 = "QUEST_START_53001"
-L13_1 = "GADGET_CREATE_53002"
-L14_1 = "SELECT_OPTION_53003"
-L15_1 = "VARIABLE_CHANGE_53004"
-L16_1 = "TIMER_EVENT_53005"
-L17_1 = "QUEST_FINISH_53006"
-L18_1 = "ENTER_REGION_53007"
-L19_1 = "QUEST_START_53008"
-L20_1 = "ANY_MONSTER_DIE_53013"
-L21_1 = "TIMER_EVENT_53022"
-L22_1 = "TIMER_EVENT_53023"
-L23_1 = "TIMER_EVENT_53024"
-L24_1 = "QUEST_FINISH_53025"
-L25_1 = "GADGET_CREATE_53026"
-L26_1 = "ANY_MONSTER_DIE_53027"
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L6_1[5] = L11_1
-L6_1[6] = L12_1
-L6_1[7] = L13_1
-L6_1[8] = L14_1
-L6_1[9] = L15_1
-L6_1[10] = L16_1
-L6_1[11] = L17_1
-L6_1[12] = L18_1
-L6_1[13] = L19_1
-L6_1[14] = L20_1
-L6_1[15] = L21_1
-L6_1[16] = L22_1
-L6_1[17] = L23_1
-L6_1[18] = L24_1
-L6_1[19] = L25_1
-L6_1[20] = L26_1
-L5_1.triggers = L6_1
-L6_1 = "rand_weight"
-L5_1[L6_1] = 100
-L6_1 = {}
-L7_1 = {}
-L8_1 = 53009
-L9_1 = 53010
-L10_1 = 53012
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L6_1.monsters = L7_1
-L7_1 = {}
-L6_1.gadgets = L7_1
-L7_1 = {}
-L6_1.regions = L7_1
-L7_1 = {}
-L6_1.triggers = L7_1
-L7_1 = "rand_weight"
-L6_1[L7_1] = 100
-L7_1 = {}
-L8_1 = {}
-L7_1.monsters = L8_1
-L8_1 = {}
-L7_1.gadgets = L8_1
-L8_1 = {}
-L7_1.regions = L8_1
-L8_1 = {}
-L7_1.triggers = L8_1
-L8_1 = "rand_weight"
-L7_1[L8_1] = 100
-L8_1 = {}
-L9_1 = {}
-L8_1.monsters = L9_1
-L9_1 = {}
-L10_1 = 53019
-L11_1 = 53020
-L12_1 = 53021
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L9_1[3] = L12_1
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L8_1.triggers = L9_1
-L9_1 = "rand_weight"
-L8_1[L9_1] = 100
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-_ENV[L2_1] = L3_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "findAllClue"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133104053
+}
+
+-- Trigger变量
+local defs = {
+	ClueFire = 108,
+	ClueWater = 109,
+	ClueWind = 110,
+	ClueThunder = 111,
+	WaterSwitch = 116,
+	Gurdian2 = 53010,
+	Gurdian1 = 53012,
+	Gurdian3 = 53009
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 53009, monster_id = 24010101, pos = { x = 455.100, y = 196.800, z = 225.100 }, rot = { x = 0.000, y = 42.514, z = 0.000 }, level = 15, drop_id = 1000100, pose_id = 100, area_id = 9 },
+	{ config_id = 53010, monster_id = 24010101, pos = { x = 433.280, y = 197.144, z = 257.720 }, rot = { x = 0.000, y = 119.156, z = 0.000 }, level = 15, drop_id = 1000100, pose_id = 100, area_id = 9 },
+	{ config_id = 53012, monster_id = 24010101, pos = { x = 422.710, y = 196.779, z = 224.140 }, rot = { x = 0.000, y = 53.900, z = 0.000 }, level = 15, drop_id = 1000100, pose_id = 100, area_id = 9 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 108, gadget_id = 70360028, pos = { x = 308.375, y = 227.095, z = 452.109 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 19, persistent = true, area_id = 9 },
+	{ config_id = 109, gadget_id = 70360028, pos = { x = 490.739, y = 207.593, z = 143.383 }, rot = { x = 1.277, y = 0.005, z = 0.404 }, level = 19, persistent = true, area_id = 9 },
+	{ config_id = 110, gadget_id = 70360028, pos = { x = 686.775, y = 213.432, z = 399.425 }, rot = { x = 359.606, y = 0.002, z = 359.292 }, level = 19, persistent = true, area_id = 9 },
+	{ config_id = 111, gadget_id = 70360028, pos = { x = 185.730, y = 246.948, z = 76.587 }, rot = { x = 0.393, y = 359.531, z = 358.720 }, level = 19, persistent = true, area_id = 9 },
+	{ config_id = 116, gadget_id = 70360028, pos = { x = 467.388, y = 199.379, z = 236.810 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 19, persistent = true, area_id = 9 },
+	{ config_id = 142, gadget_id = 70380010, pos = { x = 437.880, y = 195.931, z = 236.341 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 19, route_id = 310400029, start_route = false, persistent = true, area_id = 9 },
+	{ config_id = 639, gadget_id = 70211032, pos = { x = 433.915, y = 185.107, z = 237.997 }, rot = { x = 0.000, y = 107.877, z = 0.000 }, level = 16, chest_drop_id = 2000100, drop_count = 1, state = GadgetState.ChestLocked, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 9 },
+	{ config_id = 640, gadget_id = 70211122, pos = { x = 444.095, y = 185.107, z = 231.173 }, rot = { x = 0.000, y = 325.298, z = 0.000 }, level = 16, drop_tag = "解谜高级璃月", state = GadgetState.ChestLocked, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 9 },
+	{ config_id = 641, gadget_id = 70211122, pos = { x = 443.499, y = 185.107, z = 241.126 }, rot = { x = 0.000, y = 211.776, z = 0.000 }, level = 16, drop_tag = "解谜高级璃月", state = GadgetState.ChestLocked, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 9 },
+	{ config_id = 53019, gadget_id = 70310007, pos = { x = 433.280, y = 197.144, z = 257.720 }, rot = { x = 0.000, y = 132.814, z = 0.000 }, level = 19, persistent = true, area_id = 9 },
+	{ config_id = 53020, gadget_id = 70310007, pos = { x = 422.710, y = 196.779, z = 224.140 }, rot = { x = 0.000, y = 53.900, z = 0.000 }, level = 19, persistent = true, area_id = 9 },
+	{ config_id = 53021, gadget_id = 70310007, pos = { x = 455.100, y = 196.800, z = 225.100 }, rot = { x = 0.000, y = 323.280, z = 0.000 }, level = 19, persistent = true, area_id = 9 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 80, shape = RegionShape.SPHERE, radius = 11, pos = { x = 438.766, y = 197.213, z = 235.964 }, area_id = 9 },
+	{ config_id = 53007, shape = RegionShape.SPHERE, radius = 5, pos = { x = 467.430, y = 200.055, z = 237.257 }, area_id = 9 },
+	{ config_id = 53011, shape = RegionShape.SPHERE, radius = 10, pos = { x = 686.719, y = 212.857, z = 399.641 }, area_id = 9 },
+	{ config_id = 53014, shape = RegionShape.SPHERE, radius = 10, pos = { x = 308.521, y = 226.738, z = 452.229 }, area_id = 9 },
+	{ config_id = 53017, shape = RegionShape.SPHERE, radius = 10, pos = { x = 185.686, y = 246.588, z = 76.721 }, area_id = 9 },
+	{ config_id = 53018, shape = RegionShape.SPHERE, radius = 10, pos = { x = 489.755, y = 208.278, z = 142.996 }, area_id = 9 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000079, name = "VARIABLE_CHANGE_79", event = EventType.EVENT_VARIABLE_CHANGE, source = "findAllClue", condition = "condition_EVENT_VARIABLE_CHANGE_79", action = "action_EVENT_VARIABLE_CHANGE_79" },
+	{ config_id = 1000080, name = "ENTER_REGION_80", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_80", action = "action_EVENT_ENTER_REGION_80" },
+	{ config_id = 1000081, name = "GADGET_STATE_CHANGE_81", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_81", action = "action_EVENT_GADGET_STATE_CHANGE_81" },
+	{ config_id = 1000302, name = "GADGET_STATE_CHANGE_302", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_302", action = "action_EVENT_GADGET_STATE_CHANGE_302" },
+	{ config_id = 1000303, name = "QUEST_FINISH_303", event = EventType.EVENT_QUEST_FINISH, source = "2100450", condition = "", action = "action_EVENT_QUEST_FINISH_303" },
+	{ config_id = 1053001, name = "QUEST_START_53001", event = EventType.EVENT_QUEST_START, source = "2100403", condition = "", action = "action_EVENT_QUEST_START_53001" },
+	{ config_id = 1053002, name = "GADGET_CREATE_53002", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_53002", action = "action_EVENT_GADGET_CREATE_53002", trigger_count = 0 },
+	{ config_id = 1053003, name = "SELECT_OPTION_53003", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_53003", action = "action_EVENT_SELECT_OPTION_53003", trigger_count = 0 },
+	{ config_id = 1053004, name = "VARIABLE_CHANGE_53004", event = EventType.EVENT_VARIABLE_CHANGE, source = "count", condition = "", action = "action_EVENT_VARIABLE_CHANGE_53004", trigger_count = 0 },
+	{ config_id = 1053005, name = "TIMER_EVENT_53005", event = EventType.EVENT_TIMER_EVENT, source = "playerReminder", condition = "", action = "action_EVENT_TIMER_EVENT_53005", trigger_count = 0 },
+	{ config_id = 1053006, name = "QUEST_FINISH_53006", event = EventType.EVENT_QUEST_FINISH, source = "2100420", condition = "", action = "action_EVENT_QUEST_FINISH_53006" },
+	{ config_id = 1053007, name = "ENTER_REGION_53007", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_53007", action = "action_EVENT_ENTER_REGION_53007" },
+	{ config_id = 1053008, name = "QUEST_START_53008", event = EventType.EVENT_QUEST_START, source = "2100420", condition = "", action = "action_EVENT_QUEST_START_53008" },
+	{ config_id = 1053011, name = "ENTER_REGION_53011", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_53011", action = "action_EVENT_ENTER_REGION_53011" },
+	{ config_id = 1053013, name = "ANY_MONSTER_DIE_53013", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_53013", action = "action_EVENT_ANY_MONSTER_DIE_53013" },
+	{ config_id = 1053014, name = "ENTER_REGION_53014", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_53014", action = "action_EVENT_ENTER_REGION_53014" },
+	{ config_id = 1053015, name = "SELECT_OPTION_53015", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_53015", action = "action_EVENT_SELECT_OPTION_53015", trigger_count = 0 },
+	{ config_id = 1053016, name = "GADGET_CREATE_53016", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_53016", action = "action_EVENT_GADGET_CREATE_53016", trigger_count = 0 },
+	{ config_id = 1053017, name = "ENTER_REGION_53017", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_53017", action = "action_EVENT_ENTER_REGION_53017" },
+	{ config_id = 1053018, name = "ENTER_REGION_53018", event = EventType.EVENT_ENTER_REGION, source = "1", condition = "condition_EVENT_ENTER_REGION_53018", action = "action_EVENT_ENTER_REGION_53018" },
+	{ config_id = 1053022, name = "TIMER_EVENT_53022", event = EventType.EVENT_TIMER_EVENT, source = "ActiveGurdian", condition = "", action = "action_EVENT_TIMER_EVENT_53022" },
+	{ config_id = 1053023, name = "TIMER_EVENT_53023", event = EventType.EVENT_TIMER_EVENT, source = "SetMonsterBattle", condition = "", action = "action_EVENT_TIMER_EVENT_53023" },
+	{ config_id = 1053024, name = "TIMER_EVENT_53024", event = EventType.EVENT_TIMER_EVENT, source = "DisableFakeGurdian", condition = "", action = "action_EVENT_TIMER_EVENT_53024" },
+	{ config_id = 1053025, name = "QUEST_FINISH_53025", event = EventType.EVENT_QUEST_FINISH, source = "2100481", condition = "condition_EVENT_QUEST_FINISH_53025", action = "action_EVENT_QUEST_FINISH_53025", trigger_count = 0 },
+	{ config_id = 1053026, name = "GADGET_CREATE_53026", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_53026", action = "action_EVENT_GADGET_CREATE_53026", trigger_count = 0 },
+	{ config_id = 1053027, name = "ANY_MONSTER_DIE_53027", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_53027", action = "action_EVENT_ANY_MONSTER_DIE_53027", trigger_count = 0 },
+	{ config_id = 1053028, name = "QUEST_START_53028", event = EventType.EVENT_QUEST_START, source = "2100414", condition = "", action = "action_EVENT_QUEST_START_53028", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "count", value = 0, no_refresh = true },
+	{ config_id = 2, name = "DefeatGurdian", value = 0, no_refresh = true },
+	{ config_id = 3, name = "isAcceptQuest", value = 0, no_refresh = true },
+	{ config_id = 4, name = "noQuestCount", value = 0, no_refresh = true },
+	{ config_id = 5, name = "findAllClue", value = 0, no_refresh = true },
+	{ config_id = 6, name = "ActiveGurdian", value = 0, no_refresh = true },
+	{ config_id = 7, name = "findAllClueAndFinishTalk", value = 0, no_refresh = true },
+	{ config_id = 8, name = "isFinished", value = 0, no_refresh = true },
+	{ config_id = 9, name = "Region_Fire", value = 0, no_refresh = true },
+	{ config_id = 10, name = "Region_Wind", value = 0, no_refresh = true },
+	{ config_id = 11, name = "Region_Water", value = 0, no_refresh = true },
+	{ config_id = 12, name = "Region_Thunder", value = 0, no_refresh = true },
+	{ config_id = 13, name = "Region_Center", value = 0, no_refresh = true },
+	{ config_id = 14, name = "TurnOffTrigger", value = 99, no_refresh = true },
+	{ config_id = 15, name = "Temp_GadgetID", value = 0, no_refresh = true },
+	{ config_id = 16, name = "Unlock_Water", value = 0, no_refresh = true },
+	{ config_id = 17, name = "AnyGurdianDie", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 108, 109, 110, 111, 116, 142, 53019, 53020, 53021 },
+		regions = { },
+		triggers = { "QUEST_START_53001", "SELECT_OPTION_53015", "GADGET_CREATE_53016", "QUEST_FINISH_53025", "QUEST_START_53028" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { 108, 109, 110, 111, 116, 142, 53019, 53020, 53021 },
+		regions = { 80, 53007 },
+		triggers = { "VARIABLE_CHANGE_79", "ENTER_REGION_80", "GADGET_STATE_CHANGE_81", "GADGET_STATE_CHANGE_302", "QUEST_FINISH_303", "QUEST_START_53001", "GADGET_CREATE_53002", "SELECT_OPTION_53003", "VARIABLE_CHANGE_53004", "TIMER_EVENT_53005", "QUEST_FINISH_53006", "ENTER_REGION_53007", "QUEST_START_53008", "ANY_MONSTER_DIE_53013", "TIMER_EVENT_53022", "TIMER_EVENT_53023", "TIMER_EVENT_53024", "QUEST_FINISH_53025", "GADGET_CREATE_53026", "ANY_MONSTER_DIE_53027" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = suite_3,
+		monsters = { 53009, 53010, 53012 },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 4,
+		-- description = suite_4,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 5,
+		-- description = ,
+		monsters = { },
+		gadgets = { 53019, 53020, 53021 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_79(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"findAllClue"为1
+	if ScriptLib.GetGroupVariableValue(context, "findAllClue") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_79 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 639
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 640
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 641
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = 116
-  L6_2 = {}
-  L7_2 = 171
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_79(context, evt)
+	-- 创建id为639的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 639 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 创建id为640的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 640 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 创建id为641的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 641 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, 116, {171}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_79 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 80 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 4 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "findAllClue"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_80(context, evt)
+	if evt.param1 ~= 80 then return false end
+	
+	-- 判断变量"count"为4
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 4 then
+			return false
+	end
+	
+	-- 判断变量"findAllClue"为1
+	if ScriptLib.GetGroupVariableValue(context, "findAllClue") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_80 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ActiveGurdian"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddQuestProgress
-    L3_2 = A0_2
-    L4_2 = "find_secret"
-    L2_2(L3_2, L4_2)
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 31040141
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_80(context, evt)
+		if ScriptLib.GetGroupVariableValue(context, "ActiveGurdian") == 0 then
+			ScriptLib.AddQuestProgress(context, "find_secret")
+			ScriptLib.ShowReminder(context, 31040141)
+		end
+		return 0
 end
-action_EVENT_ENTER_REGION_80 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 116 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_81(context, evt)
+	if 116 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_81 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Unlock_Water"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 142
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "unlock_dungeon"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 640
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 639
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 641
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PlayCutScene
-  L3_2 = A0_2
-  L4_2 = 310405301
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : play_cutscene"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 31040160
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_81(context, evt)
+	-- 将本组内变量名为 "Unlock_Water" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "Unlock_Water", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 142) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "unlock_dungeon") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 将configid为 640 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 640, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 639 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 639, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 641 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 641, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 通知场景上的所有玩家播放名字为310405301 的cutscene
+	if 0 ~= ScriptLib.PlayCutScene(context, 310405301, 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : play_cutscene")
+			return -1
+		end 
+	
+	-- 调用提示id为 31040160 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 31040160) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_81 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 639 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.ChestOpened
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_302(context, evt)
+	if 639 ~= evt.param2 or GadgetState.ChestOpened ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_302 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowReminder
-  L3_2 = A0_2
-  L4_2 = 31040170
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : active_reminder_ui"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "get_reward"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.MarkPlayerAction
-  L3_2 = A0_2
-  L4_2 = 5001
-  L5_2 = 3
-  L6_2 = 2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : mark_playerAction"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_302(context, evt)
+	-- 调用提示id为 31040170 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 31040170) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "get_reward") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "isAcceptQuest" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isAcceptQuest", 0) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 运营数据埋点，匹配LD定义的规则使用
+	    if 0 ~= ScriptLib.MarkPlayerAction(context, 5001, 3, 2) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : mark_playerAction")
+	      return -1
+	    end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_302 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinished"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_303(context, evt)
+	-- 将本组内变量名为 "isFinished" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "isFinished", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_303 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.MarkPlayerAction
-  L3_2 = A0_2
-  L4_2 = 5001
-  L5_2 = 1
-  L6_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133104053
-  L4_2.suite = 2
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueFire
-  L6_2 = 171
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueWind
-  L6_2 = 171
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueWater
-  L6_2 = 171
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueThunder
-  L6_2 = 171
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.WaterSwitch
-  L6_2 = 171
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueFire
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueWind
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueWater
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueThunder
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.WaterSwitch
-  L6_2 = {}
-  L7_2 = 171
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_53001(context, evt)
+							-- 将本组内变量名为 "isAcceptQuest" 的变量设置为 1
+						if 0 ~= ScriptLib.SetGroupVariableValue(context, "isAcceptQuest", 1) then
+						  return -1
+						end
+					
+						ScriptLib.MarkPlayerAction(context, 5001, 1, 1)
+						--刷新到GroupSuite2
+						ScriptLib.RefreshGroup(context,{group_id = 133104053, suite = 2})
+						ScriptLib.DelWorktopOptionByGroupId(context, 133104053, defs.ClueFire, 171)
+						ScriptLib.DelWorktopOptionByGroupId(context, 133104053, defs.ClueWind, 171)
+						ScriptLib.DelWorktopOptionByGroupId(context, 133104053, defs.ClueWater, 171)
+						ScriptLib.DelWorktopOptionByGroupId(context, 133104053, defs.ClueThunder, 171)
+						ScriptLib.DelWorktopOptionByGroupId(context, 133104053, defs.WaterSwitch, 171)
+						ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, defs.ClueFire, {7})
+						ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, defs.ClueWind, {7})
+						ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, defs.ClueWater, {7})
+						ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, defs.ClueThunder, {7})
+						ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, defs.WaterSwitch, {171})
+	
+						return 0
 end
-action_EVENT_QUEST_START_53001 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinished"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_53002(context, evt)
+	-- 判断变量"isFinished"为0
+	if ScriptLib.GetGroupVariableValue(context, "isFinished") ~= 0 then
+			return false
+	end
+	
+	-- 判断变量"isAcceptQuest"为1
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_53002 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = L1_1.ClueFire
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = L1_1.ClueWind
-    L3_2 = A1_2.param1
-    if L2_2 ~= L3_2 then
-      L2_2 = L1_1.ClueWater
-      L3_2 = A1_2.param1
-      if L2_2 ~= L3_2 then
-        L2_2 = L1_1.ClueThunder
-        L3_2 = A1_2.param1
-        if L2_2 ~= L3_2 then
-          goto lbl_56
-        end
-      end
-    end
-  end
-  L2_2 = GadgetState
-  L2_2 = L2_2.Default
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGadgetStateByConfigId
-  L4_2 = A0_2
-  L5_2 = 133104053
-  L6_2 = A1_2.param1
-  L3_2 = L3_2(L4_2, L5_2, L6_2)
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.SetWorktopOptionsByGroupId
-    L3_2 = A0_2
-    L4_2 = 133104053
-    L5_2 = A1_2.param1
-    L6_2 = {}
-    L7_2 = 7
-    L6_2[1] = L7_2
-    L2_2(L3_2, L4_2, L5_2, L6_2)
-  else
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = ScriptLib
-    L3_2 = L3_2.GetGadgetStateByConfigId
-    L4_2 = A0_2
-    L5_2 = 133104053
-    L6_2 = A1_2.param1
-    L3_2 = L3_2(L4_2, L5_2, L6_2)
-    if L2_2 == L3_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetWorktopOptionsByGroupId
-      L3_2 = A0_2
-      L4_2 = 133104053
-      L5_2 = A1_2.param1
-      L6_2 = {}
-      L7_2 = 171
-      L6_2[1] = L7_2
-      L2_2(L3_2, L4_2, L5_2, L6_2)
-    end
-  end
-  ::lbl_56::
-  L2_2 = L1_1.WaterSwitch
-  L3_2 = A1_2.param1
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGroupVariableValue
-    L3_2 = A0_2
-    L4_2 = "ActiveGurdian"
-    L2_2 = L2_2(L3_2, L4_2)
-    if 1 == L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "DefeatGurdian"
-      L2_2 = L2_2(L3_2, L4_2)
-      if 1 == L2_2 then
-        L2_2 = GadgetState
-        L2_2 = L2_2.Default
-        L3_2 = ScriptLib
-        L3_2 = L3_2.GetGadgetStateByConfigId
-        L4_2 = A0_2
-        L5_2 = 133104053
-        L6_2 = A1_2.param1
-        L3_2 = L3_2(L4_2, L5_2, L6_2)
-        if L2_2 == L3_2 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetWorktopOptionsByGroupId
-          L3_2 = A0_2
-          L4_2 = 133104053
-          L5_2 = A1_2.param1
-          L6_2 = {}
-          L7_2 = 7
-          L6_2[1] = L7_2
-          L2_2(L3_2, L4_2, L5_2, L6_2)
-        end
-      else
-        L2_2 = ScriptLib
-        L2_2 = L2_2.GetGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "DefeatGurdian"
-        L2_2 = L2_2(L3_2, L4_2)
-        if 0 == L2_2 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = A1_2.param1
-          L5_2 = GadgetState
-          L5_2 = L5_2.GearStop
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.AddExtraGroupSuite
-          L3_2 = A0_2
-          L4_2 = 133104053
-          L5_2 = 3
-          L2_2(L3_2, L4_2, L5_2)
-        end
-      end
-    else
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "ActiveGurdian"
-      L2_2 = L2_2(L3_2, L4_2)
-      if 0 == L2_2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.RemoveExtraGroupSuite
-        L3_2 = A0_2
-        L4_2 = 133104053
-        L5_2 = 3
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetWorktopOptionsByGroupId
-        L3_2 = A0_2
-        L4_2 = 133104053
-        L5_2 = A1_2.param1
-        L6_2 = {}
-        L7_2 = 171
-        L6_2[1] = L7_2
-        L2_2(L3_2, L4_2, L5_2, L6_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.GetGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "findAllClue"
-        L2_2 = L2_2(L3_2, L4_2)
-        if 1 == L2_2 then
-          L2_2 = GadgetState
-          L2_2 = L2_2.Default
-          L3_2 = ScriptLib
-          L3_2 = L3_2.GetGadgetStateByConfigId
-          L4_2 = A0_2
-          L5_2 = 133104053
-          L6_2 = A1_2.param1
-          L3_2 = L3_2(L4_2, L5_2, L6_2)
-          if L2_2 == L3_2 then
-            L2_2 = ScriptLib
-            L2_2 = L2_2.SetWorktopOptionsByGroupId
-            L3_2 = A0_2
-            L4_2 = 133104053
-            L5_2 = A1_2.param1
-            L6_2 = {}
-            L7_2 = 171
-            L6_2[1] = L7_2
-            L2_2(L3_2, L4_2, L5_2, L6_2)
-          end
-        end
-      end
-    end
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "AnyGurdianDie"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 1 == L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddQuestProgress
-    L3_2 = A0_2
-    L4_2 = "any_gurdian_die"
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_53002(context, evt)
+				-- 设置操作台选项
+		-- 如果机关没有开启添加开启按钮，如果已经开启则添加调查按钮
+			--如果是4个线索的其中一个则给他们添加按钮
+		if defs.ClueFire == evt.param1 or defs.ClueWind == evt.param1 or defs.ClueWater == evt.param1 or defs.ClueThunder == evt.param1 then
+			if GadgetState.Default == ScriptLib.GetGadgetStateByConfigId(context, 133104053, evt.param1) then
+				ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, evt.param1, {7})
+			elseif GadgetState.GearStart == ScriptLib.GetGadgetStateByConfigId(context, 133104053, evt.param1) then
+				ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, evt.param1, {171})
+			end
+		end
+		--如果创生的Gadget是WaterSwitch的话
+		if defs.WaterSwitch == evt.param1 then
+				--如果已经激活了守卫
+			if 1 == ScriptLib.GetGroupVariableValue(context, "ActiveGurdian") then
+				--查看是否已经击败了守卫，给机关添加Option171
+				if 1 == ScriptLib.GetGroupVariableValue(context,"DefeatGurdian") then
+					if GadgetState.Default == ScriptLib.GetGadgetStateByConfigId(context, 133104053, evt.param1) then
+						ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, evt.param1, {7})
+					end
+					--如果没有击败守卫，
+				elseif 0 == ScriptLib.GetGroupVariableValue(context,"DefeatGurdian") then 
+					ScriptLib.SetGadgetStateByConfigId(context, evt.param1,GadgetState.GearStop)
+					ScriptLib.AddExtraGroupSuite(context, 133104053, 3)
+		
+				end
+			--如果没有激活守卫		
+			elseif 0 == ScriptLib.GetGroupVariableValue(context, "ActiveGurdian") then
+				ScriptLib.RemoveExtraGroupSuite(context, 133104053, 3)
+				--查看是否找到了所有线索，给机关添加Option171
+				ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, evt.param1, {171})
+				if 1 == ScriptLib.GetGroupVariableValue(context,"findAllClue") and GadgetState.Default == ScriptLib.GetGadgetStateByConfigId(context, 133104053, evt.param1) then
+					ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, evt.param1, {171})
+				end
+			end
+		end
+	
+		if 1 == ScriptLib.GetGroupVariableValue(context,"AnyGurdianDie") then
+			ScriptLib.AddQuestProgress(context,"any_gurdian_die")
+		end
+		
+		return 0
 end
-action_EVENT_GADGET_CREATE_53002 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinished"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_53003(context, evt)
+	-- 判断变量"isFinished"为0
+	if ScriptLib.GetGroupVariableValue(context, "isFinished") ~= 0 then
+			return false
+	end
+	
+	-- 判断变量"isAcceptQuest"为1
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_53003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = L1_1.ClueFire
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = L1_1.ClueWind
-    L3_2 = A1_2.param1
-    if L2_2 ~= L3_2 then
-      L2_2 = L1_1.ClueWater
-      L3_2 = A1_2.param1
-      if L2_2 ~= L3_2 then
-        L2_2 = L1_1.ClueThunder
-        L3_2 = A1_2.param1
-        if L2_2 ~= L3_2 then
-          goto lbl_245
-        end
-      end
-    end
-  end
-  L2_2 = A1_2.param2
-  if 7 == L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = 133104053
-    L5_2 = A1_2.param1
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if L2_2 then
-      L2_2 = L1_1.ClueThunder
-      L3_2 = A1_2.param1
-      if L2_2 == L3_2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ShowReminder
-        L3_2 = A0_2
-        L4_2 = 31040104
-        L2_2(L3_2, L4_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = A1_2.param1
-        L5_2 = GadgetState
-        L5_2 = L5_2.GearStart
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ChangeGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "count"
-        L5_2 = 1
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.AddQuestProgress
-        L3_2 = A0_2
-        L4_2 = "133104053_progress1"
-        L2_2(L3_2, L4_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetWorktopOptionsByGroupId
-        L3_2 = A0_2
-        L4_2 = 133104053
-        L5_2 = A1_2.param1
-        L6_2 = {}
-        L7_2 = 171
-        L6_2[1] = L7_2
-        L2_2(L3_2, L4_2, L5_2, L6_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.DelWorktopOptionByGroupId
-        L3_2 = A0_2
-        L4_2 = 133104053
-        L5_2 = A1_2.param1
-        L6_2 = 7
-        L2_2(L3_2, L4_2, L5_2, L6_2)
-      else
-        L2_2 = L1_1.ClueFire
-        L3_2 = A1_2.param1
-        if L2_2 == L3_2 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.ShowReminder
-          L3_2 = A0_2
-          L4_2 = 31040103
-          L2_2(L3_2, L4_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = A1_2.param1
-          L5_2 = GadgetState
-          L5_2 = L5_2.GearStart
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.ChangeGroupVariableValue
-          L3_2 = A0_2
-          L4_2 = "count"
-          L5_2 = 1
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.AddQuestProgress
-          L3_2 = A0_2
-          L4_2 = "133104053_progress2"
-          L2_2(L3_2, L4_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetWorktopOptionsByGroupId
-          L3_2 = A0_2
-          L4_2 = 133104053
-          L5_2 = A1_2.param1
-          L6_2 = {}
-          L7_2 = 171
-          L6_2[1] = L7_2
-          L2_2(L3_2, L4_2, L5_2, L6_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.DelWorktopOptionByGroupId
-          L3_2 = A0_2
-          L4_2 = 133104053
-          L5_2 = A1_2.param1
-          L6_2 = 7
-          L2_2(L3_2, L4_2, L5_2, L6_2)
-        else
-          L2_2 = L1_1.ClueWind
-          L3_2 = A1_2.param1
-          if L2_2 == L3_2 then
-            L2_2 = ScriptLib
-            L2_2 = L2_2.ShowReminder
-            L3_2 = A0_2
-            L4_2 = 31040101
-            L2_2(L3_2, L4_2)
-            L2_2 = ScriptLib
-            L2_2 = L2_2.SetGadgetStateByConfigId
-            L3_2 = A0_2
-            L4_2 = A1_2.param1
-            L5_2 = GadgetState
-            L5_2 = L5_2.GearStart
-            L2_2(L3_2, L4_2, L5_2)
-            L2_2 = ScriptLib
-            L2_2 = L2_2.ChangeGroupVariableValue
-            L3_2 = A0_2
-            L4_2 = "count"
-            L5_2 = 1
-            L2_2(L3_2, L4_2, L5_2)
-            L2_2 = ScriptLib
-            L2_2 = L2_2.AddQuestProgress
-            L3_2 = A0_2
-            L4_2 = "133104053_progress3"
-            L2_2(L3_2, L4_2)
-            L2_2 = ScriptLib
-            L2_2 = L2_2.SetWorktopOptionsByGroupId
-            L3_2 = A0_2
-            L4_2 = 133104053
-            L5_2 = A1_2.param1
-            L6_2 = {}
-            L7_2 = 171
-            L6_2[1] = L7_2
-            L2_2(L3_2, L4_2, L5_2, L6_2)
-            L2_2 = ScriptLib
-            L2_2 = L2_2.DelWorktopOptionByGroupId
-            L3_2 = A0_2
-            L4_2 = 133104053
-            L5_2 = A1_2.param1
-            L6_2 = 7
-            L2_2(L3_2, L4_2, L5_2, L6_2)
-          else
-            L2_2 = L1_1.ClueWater
-            L3_2 = A1_2.param1
-            if L2_2 == L3_2 then
-              L2_2 = ScriptLib
-              L2_2 = L2_2.ShowReminder
-              L3_2 = A0_2
-              L4_2 = 31040102
-              L2_2(L3_2, L4_2)
-              L2_2 = ScriptLib
-              L2_2 = L2_2.SetGadgetStateByConfigId
-              L3_2 = A0_2
-              L4_2 = A1_2.param1
-              L5_2 = GadgetState
-              L5_2 = L5_2.GearStart
-              L2_2(L3_2, L4_2, L5_2)
-              L2_2 = ScriptLib
-              L2_2 = L2_2.ChangeGroupVariableValue
-              L3_2 = A0_2
-              L4_2 = "count"
-              L5_2 = 1
-              L2_2(L3_2, L4_2, L5_2)
-              L2_2 = ScriptLib
-              L2_2 = L2_2.AddQuestProgress
-              L3_2 = A0_2
-              L4_2 = "133104053_progress4"
-              L2_2(L3_2, L4_2)
-              L2_2 = ScriptLib
-              L2_2 = L2_2.SetWorktopOptionsByGroupId
-              L3_2 = A0_2
-              L4_2 = 133104053
-              L5_2 = A1_2.param1
-              L6_2 = {}
-              L7_2 = 171
-              L6_2[1] = L7_2
-              L2_2(L3_2, L4_2, L5_2, L6_2)
-              L2_2 = ScriptLib
-              L2_2 = L2_2.DelWorktopOptionByGroupId
-              L3_2 = A0_2
-              L4_2 = 133104053
-              L5_2 = A1_2.param1
-              L6_2 = 7
-              L2_2(L3_2, L4_2, L5_2, L6_2)
-            end
-          end
-        end
-      end
-    end
-  end
-  L2_2 = A1_2.param2
-  if 171 == L2_2 then
-    L2_2 = L1_1.ClueThunder
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ShowReminder
-      L3_2 = A0_2
-      L4_2 = 31040104
-      L2_2(L3_2, L4_2)
-    else
-      L2_2 = L1_1.ClueFire
-      L3_2 = A1_2.param1
-      if L2_2 == L3_2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ShowReminder
-        L3_2 = A0_2
-        L4_2 = 31040103
-        L2_2(L3_2, L4_2)
-      else
-        L2_2 = L1_1.ClueWind
-        L3_2 = A1_2.param1
-        if L2_2 == L3_2 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.ShowReminder
-          L3_2 = A0_2
-          L4_2 = 31040101
-          L2_2(L3_2, L4_2)
-        else
-          L2_2 = L1_1.ClueWater
-          L3_2 = A1_2.param1
-          if L2_2 == L3_2 then
-            L2_2 = ScriptLib
-            L2_2 = L2_2.ShowReminder
-            L3_2 = A0_2
-            L4_2 = 31040102
-            L2_2(L3_2, L4_2)
-          end
-        end
-      end
-    end
-  end
-  ::lbl_245::
-  L2_2 = L1_1.WaterSwitch
-  L3_2 = A1_2.param1
-  if L2_2 == L3_2 then
-    L2_2 = A1_2.param2
-    if 171 == L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "findAllClue"
-      L2_2 = L2_2(L3_2, L4_2)
-      if 0 == L2_2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ShowReminder
-        L3_2 = A0_2
-        L4_2 = 31040202
-        L2_2(L3_2, L4_2)
-      else
-        L2_2 = ScriptLib
-        L2_2 = L2_2.GetGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "ActiveGurdian"
-        L2_2 = L2_2(L3_2, L4_2)
-        if 0 == L2_2 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGroupVariableValue
-          L3_2 = A0_2
-          L4_2 = "ActiveGurdian"
-          L5_2 = 1
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.AddQuestProgress
-          L3_2 = A0_2
-          L4_2 = "active_gurdian"
-          L2_2(L3_2, L4_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGadgetStateByConfigId
-          L3_2 = A0_2
-          L4_2 = A1_2.param1
-          L5_2 = GadgetState
-          L5_2 = L5_2.GearStop
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.DelWorktopOptionByGroupId
-          L3_2 = A0_2
-          L4_2 = 133104053
-          L5_2 = A1_2.param1
-          L6_2 = 171
-          L2_2(L3_2, L4_2, L5_2, L6_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.AddQuestProgress
-          L3_2 = A0_2
-          L4_2 = "find_secret"
-          L2_2(L3_2, L4_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.CreateGroupTimerEvent
-          L3_2 = A0_2
-          L4_2 = 133104053
-          L5_2 = "DisableFakeGurdian"
-          L6_2 = 2
-          L2_2(L3_2, L4_2, L5_2, L6_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.CreateGroupTimerEvent
-          L3_2 = A0_2
-          L4_2 = 133104053
-          L5_2 = "ActiveGurdian"
-          L6_2 = 8
-          L2_2(L3_2, L4_2, L5_2, L6_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.PlayCutScene
-          L3_2 = A0_2
-          L4_2 = 310405302
-          L5_2 = 0
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.ShowReminder
-          L3_2 = A0_2
-          L4_2 = 31040150
-          L2_2(L3_2, L4_2)
-        end
-      end
-    end
-    L2_2 = A1_2.param2
-    if 7 == L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.GetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "DefeatGurdian"
-      L2_2 = L2_2(L3_2, L4_2)
-      if 1 == L2_2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGadgetStateByConfigId
-        L3_2 = A0_2
-        L4_2 = A1_2.param1
-        L5_2 = GadgetState
-        L5_2 = L5_2.GearStart
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.DelWorktopOptionByGroupId
-        L3_2 = A0_2
-        L4_2 = 133104053
-        L5_2 = A1_2.param1
-        L6_2 = 7
-        L2_2(L3_2, L4_2, L5_2, L6_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.MarkPlayerAction
-        L3_2 = A0_2
-        L4_2 = 5001
-        L5_2 = 2
-        L6_2 = 2
-        L2_2(L3_2, L4_2, L5_2, L6_2)
-      end
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_53003(context, evt)
+		if defs.ClueFire == evt.param1 or defs.ClueWind == evt.param1 or defs.ClueWater == evt.param1 or defs.ClueThunder == evt.param1 then
+							--如果选择了启动按钮7，则会在启动后删除自身，并且添加调查171按钮
+							if 7 == evt.param2 and ScriptLib.GetGadgetStateByConfigId(context, 133104053, evt.param1) then
+									--第一次开启雷机关
+								if defs.ClueThunder == evt.param1 then
+									ScriptLib.ShowReminder(context, 31040104)
+									ScriptLib.SetGadgetStateByConfigId(context, evt.param1, GadgetState.GearStart)
+									ScriptLib.ChangeGroupVariableValue(context, "count", 1)
+									ScriptLib.AddQuestProgress(context, "133104053_progress1")
+									ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, evt.param1, {171})
+									ScriptLib.DelWorktopOptionByGroupId(context, 133104053, evt.param1, 7)
+									
+									--第一次开启火机关
+								elseif defs.ClueFire == evt.param1 then
+									ScriptLib.ShowReminder(context, 31040103)
+									ScriptLib.SetGadgetStateByConfigId(context, evt.param1, GadgetState.GearStart)
+									ScriptLib.ChangeGroupVariableValue(context, "count", 1)
+									ScriptLib.AddQuestProgress(context, "133104053_progress2")
+									ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, evt.param1, {171})
+									ScriptLib.DelWorktopOptionByGroupId(context, 133104053, evt.param1, 7)
+					
+									--第一次开启风机关
+								elseif defs.ClueWind == evt.param1 then
+									ScriptLib.ShowReminder(context, 31040101)
+									ScriptLib.SetGadgetStateByConfigId(context, evt.param1, GadgetState.GearStart)
+									ScriptLib.ChangeGroupVariableValue(context, "count", 1)
+									ScriptLib.AddQuestProgress(context, "133104053_progress3")
+									ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, evt.param1, {171})
+									ScriptLib.DelWorktopOptionByGroupId(context, 133104053, evt.param1, 7)
+					
+									--第一次开启水机关
+								elseif defs.ClueWater == evt.param1 then
+									ScriptLib.ShowReminder(context, 31040102)
+									ScriptLib.SetGadgetStateByConfigId(context, evt.param1, GadgetState.GearStart)
+									ScriptLib.ChangeGroupVariableValue(context, "count", 1)
+									ScriptLib.AddQuestProgress(context, "133104053_progress4")
+									ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, evt.param1, {171})
+									ScriptLib.DelWorktopOptionByGroupId(context, 133104053, evt.param1, 7)
+					
+								end
+							end
+							--如果选择了调查按钮171，则会反复触发 reminder
+							if 171 == evt.param2 then
+								--反复调查雷机关
+								if defs.ClueThunder == evt.param1 then
+									ScriptLib.ShowReminder(context, 31040104)
+									--反复调查火机关
+								elseif defs.ClueFire == evt.param1 then
+										ScriptLib.ShowReminder(context, 31040103)
+									--反复调查风机关
+								elseif defs.ClueWind == evt.param1 then
+										ScriptLib.ShowReminder(context, 31040101)
+									--反复调查水机关
+								elseif defs.ClueWater == evt.param1 then
+										ScriptLib.ShowReminder(context, 31040102)
+								end
+							end
+						end
+						--如果玩家开启了移动水面机关，则会开启遗迹守卫怪物的AI和血量，并且解锁无敌状态，和玩家战斗
+						if defs.WaterSwitch == evt.param1 then
+							if 171 == evt.param2 then
+								if 0 == ScriptLib.GetGroupVariableValue(context, "findAllClue") then
+									ScriptLib.ShowReminder(context, 31040202)
+								else 
+									if 0 == ScriptLib.GetGroupVariableValue(context,"ActiveGurdian") then
+										ScriptLib.SetGroupVariableValue(context, "ActiveGurdian", 1)
+										ScriptLib.AddQuestProgress(context, "active_gurdian")
+										ScriptLib.SetGadgetStateByConfigId(context, evt.param1,GadgetState.GearStop)
+										ScriptLib.DelWorktopOptionByGroupId(context, 133104053, evt.param1, 171)
+										ScriptLib.AddQuestProgress(context, "find_secret")
+										-- 开启或者关闭groupid为133104053中,configid为：53012的怪物的ai，set为1是开启，为0是关闭
+										--ScriptLib.SetMonsterAIByGroup(context, 1, defs.GurdianPowerOff, 133104053)
+										-- 通知groupid为133104053中,configid为：53012的怪物入战或者脱战，set为1是入战，为0是脱战
+										
+										--解锁configid 为 53012 的怪物的血量
+										ScriptLib.CreateGroupTimerEvent(context, 133104053, "DisableFakeGurdian", 2)
+										ScriptLib.CreateGroupTimerEvent(context, 133104053, "ActiveGurdian", 8)
+										ScriptLib.PlayCutScene(context, 310405302, 0)
+										--ScriptLib.AddExtraGroupSuite(context, 133104053, 3)
+										--ScriptLib.RemoveExtraGroupSuite(context, 133104053, 5)
+										--ScriptLib.SetMonsterBattleByGroup(context, 1, defs.Gurdian1, 133104053)
+										--ScriptLib.SetMonsterBattleByGroup(context, 1, defs.Gurdian2, 133104053)
+										--ScriptLib.SetMonsterBattleByGroup(context, 1, defs.Gurdian3, 133104053)
+										
+			
+										ScriptLib.ShowReminder(context, 31040150)
+									end
+								end
+	
+							end
+	
+							if 7 == evt.param2 then
+								--如果玩家是打败守卫之后开启了机关的话，
+								if 1 == ScriptLib.GetGroupVariableValue(context,"DefeatGurdian") then
+									ScriptLib.SetGadgetStateByConfigId(context, evt.param1,GadgetState.GearStart)
+									ScriptLib.DelWorktopOptionByGroupId(context, 133104053, evt.param1, 7)
+									ScriptLib.MarkPlayerAction(context, 5001, 2, 2)
+					
+								end
+					
+							end
+					
+						end
+							
+							return 0
 end
-action_EVENT_SELECT_OPTION_53003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = "playerReminder"
-  L6_2 = 5
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_53004(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	-- 延迟5秒后,向groupId为：133104053的对象,请求一次调用,并将string参数："playerReminder" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 133104053, "playerReminder", 5) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_53004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 1 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.ShowReminder
-    L4_2 = A0_2
-    L5_2 = 31040111
-    L3_2(L4_2, L5_2)
-  elseif L2_2 == 2 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.ShowReminder
-    L4_2 = A0_2
-    L5_2 = 31040121
-    L3_2(L4_2, L5_2)
-  elseif L2_2 == 3 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.ShowReminder
-    L4_2 = A0_2
-    L5_2 = 31040120
-    L3_2(L4_2, L5_2)
-  elseif L2_2 == 4 then
-    L3_2 = ScriptLib
-    L3_2 = L3_2.ShowReminder
-    L4_2 = A0_2
-    L5_2 = 31040131
-    L3_2(L4_2, L5_2)
-  end
-  L3_2 = ScriptLib
-  L3_2 = L3_2.CancelGroupTimerEvent
-  L4_2 = A0_2
-  L5_2 = 133104053
-  L6_2 = "playerReminder"
-  L3_2(L4_2, L5_2, L6_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_53005(context, evt)
+					local loccount = ScriptLib.GetGroupVariableValue(context,"count")
+					if loccount == 1 then
+						ScriptLib.ShowReminder(context, 31040111)
+					elseif loccount == 2 then
+						ScriptLib.ShowReminder(context, 31040121)
+					elseif loccount == 3 then
+						ScriptLib.ShowReminder(context, 31040120)
+					elseif loccount == 4 then
+						ScriptLib.ShowReminder(context, 31040131)
+					end
+				
+					ScriptLib.CancelGroupTimerEvent(context, 133104053, "playerReminder")
+					return 0
 end
-action_EVENT_TIMER_EVENT_53005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "findAllClueAndFinishTalk"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_53006(context, evt)
+	-- 将本组内变量名为 "findAllClueAndFinishTalk" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "findAllClueAndFinishTalk", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_FINISH_53006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 53007 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 4 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "findAllClue"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_53007(context, evt)
+	if evt.param1 ~= 53007 then return false end
+	
+	-- 判断变量"count"为4
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 4 then
+			return false
+	end
+	
+	-- 判断变量"findAllClue"为1
+	if ScriptLib.GetGroupVariableValue(context, "findAllClue") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_53007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "ActiveGurdian"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.AddQuestProgress
-    L3_2 = A0_2
-    L4_2 = "find_secret"
-    L2_2(L3_2, L4_2)
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_53007(context, evt)
+	--[[ 	if ScriptLib.GetGroupVariableValue(context,"isAcceptQuest") == 0 then
+	
+			if ScriptLib.GetGroupVariableValue(context,"Region_Center") == 0 then
+				ScriptLib.SetGroupVariableValue(context, "Region_Center", 1)
+				if ScriptLib.GetGroupVariableValue(context,"noQuestCount") < 5 then 
+					ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+				end
+			end
+			local loccount = ScriptLib.GetGroupVariableValue(context,"noQuestCount")
+	
+			if loccount == 1 then
+				ScriptLib.ShowReminder(context, 31040190)
+			elseif loccount == 2 then
+				ScriptLib.ShowReminder(context, 31040195)
+			elseif loccount == 3 then
+				ScriptLib.ShowReminder(context, 31040204)
+			elseif loccount == 4 then
+				ScriptLib.ShowReminder(context, 31040205)
+			elseif loccount == 5 then
+				ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+				ScriptLib.ShowReminder(context, 31040206)
+			elseif loccount == 6 then
+				ScriptLib.ShowReminder(context, 31040201)				
+			end
+	
+	
+		elseif ScriptLib.GetGroupVariableValue(context,"isAcceptQuest") == 1 then
+			ScriptLib.ShowReminder(context, 31040202)
+		end
+		return 0 ]]
+		if ScriptLib.GetGroupVariableValue(context, "ActiveGurdian") == 0 then
+			ScriptLib.AddQuestProgress(context, "find_secret")
+			--ScriptLib.ShowReminder(context, 31040141)
+		end
+		return 0
 end
-action_EVENT_ENTER_REGION_53007 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "findAllClue"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_53008(context, evt)
+	-- 将本组内变量名为 "findAllClue" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "findAllClue", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_53008 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 53011 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_53011(context, evt)
+	if evt.param1 ~= 53011 then return false end
+	
+	-- 判断变量"isAcceptQuest"为1
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 1 then
+			return false
+	end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_53011 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Region_Wind"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = count
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 31040111
-    L2_2(L3_2, L4_2)
-  else
-    L2_2 = count
-    if L2_2 == 1 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ShowReminder
-      L3_2 = A0_2
-      L4_2 = 31040121
-      L2_2(L3_2, L4_2)
-    else
-      L2_2 = count
-      if L2_2 == 2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ShowReminder
-        L3_2 = A0_2
-        L4_2 = 31040120
-        L2_2(L3_2, L4_2)
-      else
-        L2_2 = count
-        if L2_2 == 3 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.ShowReminder
-          L3_2 = A0_2
-          L4_2 = 31040131
-          L2_2(L3_2, L4_2)
-        end
-      end
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_53011(context, evt)
+	--[[ 	if ScriptLib.GetGroupVariableValue(context,"Region_Wind") == 0 then
+							ScriptLib.SetGroupVariableValue(context, "Region_Wind", 1)
+							if ScriptLib.GetGroupVariableValue(context,"noQuestCount") < 5 then 
+								ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+							end
+						end
+						local loccount = ScriptLib.GetGroupVariableValue(context,"noQuestCount")
+						if loccount == 1 then
+							ScriptLib.ShowReminder(context, 31040190)
+						elseif loccount == 2 then
+							ScriptLib.ShowReminder(context, 31040195)
+						elseif loccount == 3 then
+							ScriptLib.ShowReminder(context, 31040204)
+						elseif loccount == 4 then
+							ScriptLib.ShowReminder(context, 31040205)
+						elseif loccount == 5 then
+							ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+							ScriptLib.ShowReminder(context, 31040206)
+						elseif loccount == 6 then
+							ScriptLib.ShowReminder(context, 31040201)				
+						end
+						 ]]
+		ScriptLib.SetGroupVariableValue(context, "Region_Wind", 1)
+		if count == 0 then
+			ScriptLib.ShowReminder(context, 31040111)
+		elseif count == 1 then
+			ScriptLib.ShowReminder(context, 31040121)
+		elseif count == 2 then
+			ScriptLib.ShowReminder(context, 31040120)
+		elseif count == 3 then
+			ScriptLib.ShowReminder(context, 31040131)
+		end
+		
+		return 0
 end
-action_EVENT_ENTER_REGION_53011 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupMonsterCount
-  L3_2 = A0_2
-  L2_2 = L2_2(L3_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_53013(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ANY_MONSTER_DIE_53013 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGadgetStateByConfigId
-  L3_2 = A0_2
-  L4_2 = 116
-  L5_2 = GadgetState
-  L5_2 = L5_2.Default
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_gadget_state_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = 116
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "DefeatGurdian"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "defeat_gurdian"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_53013(context, evt)
+	-- 将configid为 116 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 116, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, 116, {7}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	-- 将本组内变量名为 "DefeatGurdian" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "DefeatGurdian", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "defeat_gurdian") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_MONSTER_DIE_53013 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 53014 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_53014(context, evt)
+	if evt.param1 ~= 53014 then return false end
+	
+	-- 判断变量"isAcceptQuest"为1
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 1 then
+			return false
+	end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_53014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Region_Fire"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = count
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 31040111
-    L2_2(L3_2, L4_2)
-  else
-    L2_2 = count
-    if L2_2 == 1 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ShowReminder
-      L3_2 = A0_2
-      L4_2 = 31040121
-      L2_2(L3_2, L4_2)
-    else
-      L2_2 = count
-      if L2_2 == 2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ShowReminder
-        L3_2 = A0_2
-        L4_2 = 31040120
-        L2_2(L3_2, L4_2)
-      else
-        L2_2 = count
-        if L2_2 == 3 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.ShowReminder
-          L3_2 = A0_2
-          L4_2 = 31040131
-          L2_2(L3_2, L4_2)
-        end
-      end
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_53014(context, evt)
+	--[[ 					if ScriptLib.GetGroupVariableValue(context,"Region_Fire") == 0 then
+							ScriptLib.SetGroupVariableValue(context, "Region_Fire", 1)
+							if ScriptLib.GetGroupVariableValue(context,"noQuestCount") < 5 then 
+								ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+							end
+						end
+						local loccount = ScriptLib.GetGroupVariableValue(context,"noQuestCount")
+						
+						if loccount == 1 then
+							ScriptLib.ShowReminder(context, 31040190)
+						elseif loccount == 2 then
+							ScriptLib.ShowReminder(context, 31040195)
+						elseif loccount == 3 then
+							ScriptLib.ShowReminder(context, 31040204)
+						elseif loccount == 4 then
+							ScriptLib.ShowReminder(context, 31040205)
+						elseif loccount == 5 then
+							ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+							ScriptLib.ShowReminder(context, 31040206)
+						elseif loccount == 6 then
+							ScriptLib.ShowReminder(context, 31040201)				
+						end ]]
+						ScriptLib.SetGroupVariableValue(context, "Region_Fire", 1)
+						if count == 0 then
+							ScriptLib.ShowReminder(context, 31040111)
+						elseif count == 1 then
+							ScriptLib.ShowReminder(context, 31040121)
+						elseif count == 2 then
+							ScriptLib.ShowReminder(context, 31040120)
+						elseif count == 3 then
+							ScriptLib.ShowReminder(context, 31040131)
+						end
+			
+						return 0
 end
-action_EVENT_ENTER_REGION_53014 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinished"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_OPTION_53015(context, evt)
+	-- 判断变量"isFinished"为0
+	if ScriptLib.GetGroupVariableValue(context, "isFinished") ~= 0 then
+			return false
+	end
+	
+	-- 判断变量"isAcceptQuest"为0
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_OPTION_53015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = L1_1.ClueFire
-  L3_2 = A1_2.param1
-  if L2_2 ~= L3_2 then
-    L2_2 = L1_1.ClueWind
-    L3_2 = A1_2.param1
-    if L2_2 ~= L3_2 then
-      L2_2 = L1_1.ClueWater
-      L3_2 = A1_2.param1
-      if L2_2 ~= L3_2 then
-        L2_2 = L1_1.ClueThunder
-        L3_2 = A1_2.param1
-        if L2_2 ~= L3_2 then
-          goto lbl_143
-        end
-      end
-    end
-  end
-  L2_2 = A1_2.param2
-  if 171 == L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetGadgetStateByConfigId
-    L3_2 = A0_2
-    L4_2 = 133104053
-    L5_2 = A1_2.param1
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    if L2_2 then
-      L2_2 = L1_1.ClueThunder
-      L3_2 = A1_2.param1
-      if L2_2 == L3_2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ChangeGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "noQuestCount"
-        L5_2 = 1
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.AddQuestProgress
-        L3_2 = A0_2
-        L4_2 = "whitout_quest"
-        L2_2(L3_2, L4_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.SetGroupVariableValue
-        L3_2 = A0_2
-        L4_2 = "Temp_GadgetID"
-        L5_2 = A1_2.param1
-        L2_2(L3_2, L4_2, L5_2)
-        L2_2 = ScriptLib
-        L2_2 = L2_2.DelWorktopOptionByGroupId
-        L3_2 = A0_2
-        L4_2 = 133104053
-        L5_2 = A1_2.param1
-        L6_2 = 171
-        L2_2(L3_2, L4_2, L5_2, L6_2)
-      else
-        L2_2 = L1_1.ClueFire
-        L3_2 = A1_2.param1
-        if L2_2 == L3_2 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.ChangeGroupVariableValue
-          L3_2 = A0_2
-          L4_2 = "noQuestCount"
-          L5_2 = 1
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.AddQuestProgress
-          L3_2 = A0_2
-          L4_2 = "whitout_quest"
-          L2_2(L3_2, L4_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.SetGroupVariableValue
-          L3_2 = A0_2
-          L4_2 = "Temp_GadgetID"
-          L5_2 = A1_2.param1
-          L2_2(L3_2, L4_2, L5_2)
-          L2_2 = ScriptLib
-          L2_2 = L2_2.DelWorktopOptionByGroupId
-          L3_2 = A0_2
-          L4_2 = 133104053
-          L5_2 = A1_2.param1
-          L6_2 = 171
-          L2_2(L3_2, L4_2, L5_2, L6_2)
-        else
-          L2_2 = L1_1.ClueWind
-          L3_2 = A1_2.param1
-          if L2_2 == L3_2 then
-            L2_2 = ScriptLib
-            L2_2 = L2_2.ChangeGroupVariableValue
-            L3_2 = A0_2
-            L4_2 = "noQuestCount"
-            L5_2 = 1
-            L2_2(L3_2, L4_2, L5_2)
-            L2_2 = ScriptLib
-            L2_2 = L2_2.AddQuestProgress
-            L3_2 = A0_2
-            L4_2 = "whitout_quest"
-            L2_2(L3_2, L4_2)
-            L2_2 = ScriptLib
-            L2_2 = L2_2.SetGroupVariableValue
-            L3_2 = A0_2
-            L4_2 = "Temp_GadgetID"
-            L5_2 = A1_2.param1
-            L2_2(L3_2, L4_2, L5_2)
-            L2_2 = ScriptLib
-            L2_2 = L2_2.DelWorktopOptionByGroupId
-            L3_2 = A0_2
-            L4_2 = 133104053
-            L5_2 = A1_2.param1
-            L6_2 = 171
-            L2_2(L3_2, L4_2, L5_2, L6_2)
-          else
-            L2_2 = L1_1.ClueWater
-            L3_2 = A1_2.param1
-            if L2_2 == L3_2 then
-              L2_2 = ScriptLib
-              L2_2 = L2_2.ChangeGroupVariableValue
-              L3_2 = A0_2
-              L4_2 = "noQuestCount"
-              L5_2 = 1
-              L2_2(L3_2, L4_2, L5_2)
-              L2_2 = ScriptLib
-              L2_2 = L2_2.AddQuestProgress
-              L3_2 = A0_2
-              L4_2 = "whitout_quest"
-              L2_2(L3_2, L4_2)
-              L2_2 = ScriptLib
-              L2_2 = L2_2.SetGroupVariableValue
-              L3_2 = A0_2
-              L4_2 = "Temp_GadgetID"
-              L5_2 = A1_2.param1
-              L2_2(L3_2, L4_2, L5_2)
-              L2_2 = ScriptLib
-              L2_2 = L2_2.DelWorktopOptionByGroupId
-              L3_2 = A0_2
-              L4_2 = 133104053
-              L5_2 = A1_2.param1
-              L6_2 = 171
-              L2_2(L3_2, L4_2, L5_2, L6_2)
-            end
-          end
-        end
-      end
-    end
-  end
-  ::lbl_143::
-  L2_2 = L1_1.WaterSwitch
-  L3_2 = A1_2.param1
-  if L2_2 == L3_2 then
-    L2_2 = A1_2.param2
-    if 171 == L2_2 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ChangeGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "noQuestCount"
-      L5_2 = 1
-      L2_2(L3_2, L4_2, L5_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.AddQuestProgress
-      L3_2 = A0_2
-      L4_2 = "whitout_quest"
-      L2_2(L3_2, L4_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.SetGroupVariableValue
-      L3_2 = A0_2
-      L4_2 = "Temp_GadgetID"
-      L5_2 = A1_2.param1
-      L2_2(L3_2, L4_2, L5_2)
-      L2_2 = ScriptLib
-      L2_2 = L2_2.DelWorktopOptionByGroupId
-      L3_2 = A0_2
-      L4_2 = 133104053
-      L5_2 = A1_2.param1
-      L6_2 = 171
-      L2_2(L3_2, L4_2, L5_2, L6_2)
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SELECT_OPTION_53015(context, evt)
+					if defs.ClueFire == evt.param1 or defs.ClueWind == evt.param1 or defs.ClueWater == evt.param1 or defs.ClueThunder == evt.param1 then
+						--如果选择了启动按钮7，则会在启动后删除自身，并且添加调查171按钮
+						if 171 == evt.param2 and ScriptLib.GetGadgetStateByConfigId(context, 133104053, evt.param1) then
+								--第一次开启雷机关
+							if defs.ClueThunder == evt.param1 then
+								ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+								ScriptLib.AddQuestProgress(context, "whitout_quest")
+								ScriptLib.SetGroupVariableValue(context,"Temp_GadgetID",evt.param1)
+								ScriptLib.DelWorktopOptionByGroupId(context, 133104053, evt.param1, 171)
+								--第一次开启火机关
+							elseif defs.ClueFire == evt.param1 then
+								ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+								ScriptLib.AddQuestProgress(context, "whitout_quest")
+								ScriptLib.SetGroupVariableValue(context,"Temp_GadgetID",evt.param1)
+								ScriptLib.DelWorktopOptionByGroupId(context, 133104053, evt.param1, 171)
+								--第一次开启风机关
+							elseif defs.ClueWind == evt.param1 then
+								ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+								ScriptLib.AddQuestProgress(context, "whitout_quest")
+								ScriptLib.SetGroupVariableValue(context,"Temp_GadgetID",evt.param1)
+								ScriptLib.DelWorktopOptionByGroupId(context, 133104053, evt.param1, 171)
+								--第一次开启水机关
+							elseif defs.ClueWater == evt.param1 then
+								ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+								ScriptLib.AddQuestProgress(context, "whitout_quest")
+								ScriptLib.SetGroupVariableValue(context,"Temp_GadgetID",evt.param1)
+								ScriptLib.DelWorktopOptionByGroupId(context, 133104053, evt.param1, 171)
+							end
+						end
+					end
+					--如果玩家开启了移动水面机关，则会开启遗迹守卫怪物的AI和血量，并且解锁无敌状态，和玩家战斗
+					if defs.WaterSwitch == evt.param1 then
+						if 171 == evt.param2 then
+							ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+							ScriptLib.AddQuestProgress(context, "whitout_quest")
+							ScriptLib.SetGroupVariableValue(context,"Temp_GadgetID",evt.param1)
+							ScriptLib.DelWorktopOptionByGroupId(context, 133104053, evt.param1, 171)
+						end
+				
+					end
+						
+					return 0
 end
-action_EVENT_SELECT_OPTION_53015 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinished"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_53016(context, evt)
+	-- 判断变量"isAcceptQuest"为0
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 0 then
+			return false
+	end
+	
+	-- 判断变量"isFinished"为0
+	if ScriptLib.GetGroupVariableValue(context, "isFinished") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_CREATE_53016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = 108
-  L6_2 = {}
-  L7_2 = 171
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = 109
-  L6_2 = {}
-  L7_2 = 171
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = 110
-  L6_2 = {}
-  L7_2 = 171
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = 111
-  L6_2 = {}
-  L7_2 = 171
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = 116
-  L6_2 = {}
-  L7_2 = 171
-  L6_2[1] = L7_2
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_wok_options_by_configid"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_53016(context, evt)
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, 108, {171}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, 109, {171}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, 110, {171}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, 111, {171}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	-- 设置操作台选项
+	if 0 ~= ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, 116, {171}) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_wok_options_by_configid")
+		return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_CREATE_53016 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 53017 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_53017(context, evt)
+	if evt.param1 ~= 53017 then return false end
+	
+	-- 判断变量"isAcceptQuest"为1
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 1 then
+			return false
+	end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_53017 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Region_Thunder"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = count
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 31040111
-    L2_2(L3_2, L4_2)
-  else
-    L2_2 = count
-    if L2_2 == 1 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ShowReminder
-      L3_2 = A0_2
-      L4_2 = 31040121
-      L2_2(L3_2, L4_2)
-    else
-      L2_2 = count
-      if L2_2 == 2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ShowReminder
-        L3_2 = A0_2
-        L4_2 = 31040120
-        L2_2(L3_2, L4_2)
-      else
-        L2_2 = count
-        if L2_2 == 3 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.ShowReminder
-          L3_2 = A0_2
-          L4_2 = 31040131
-          L2_2(L3_2, L4_2)
-        end
-      end
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_53017(context, evt)
+	--[[ 					if ScriptLib.GetGroupVariableValue(context,"Region_Thunder") == 0 then
+							ScriptLib.SetGroupVariableValue(context, "Region_Thunder", 1)
+							if ScriptLib.GetGroupVariableValue(context,"noQuestCount") < 5 then 
+								ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+							end
+						end
+						local loccount = ScriptLib.GetGroupVariableValue(context,"noQuestCount")
+						
+						if loccount == 1 then
+							ScriptLib.ShowReminder(context, 31040190)
+						elseif loccount == 2 then
+							ScriptLib.ShowReminder(context, 31040195)
+						elseif loccount == 3 then
+							ScriptLib.ShowReminder(context, 31040204)
+						elseif loccount == 4 then
+							ScriptLib.ShowReminder(context, 31040205)
+						elseif loccount == 5 then
+							ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+							ScriptLib.ShowReminder(context, 31040206)
+						elseif loccount == 6 then
+							ScriptLib.ShowReminder(context, 31040201)				
+						end
+		ScriptLib.AddQuestProgress(context, "thunder_whitout_quest") ]]
+		ScriptLib.SetGroupVariableValue(context, "Region_Thunder", 1)
+		if count == 0 then
+			ScriptLib.ShowReminder(context, 31040111)
+		elseif count == 1 then
+			ScriptLib.ShowReminder(context, 31040121)
+		elseif count == 2 then
+			ScriptLib.ShowReminder(context, 31040120)
+		elseif count == 3 then
+			ScriptLib.ShowReminder(context, 31040131)
+		end
+			
+						return 0
 end
-action_EVENT_ENTER_REGION_53017 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 53018 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetRegionEntityCount
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = A1_2.source_eid
-  L4_2.region_eid = L5_2
-  L5_2 = EntityType
-  L5_2 = L5_2.AVATAR
-  L4_2.entity_type = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 < 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_53018(context, evt)
+	if evt.param1 ~= 53018 then return false end
+	
+	-- 判断变量"isAcceptQuest"为1
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 1 then
+			return false
+	end
+	
+	-- 判断角色数量不少于1
+	if ScriptLib.GetRegionEntityCount(context, { region_eid = evt.source_eid, entity_type = EntityType.AVATAR }) < 1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_ENTER_REGION_53018 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Region_Water"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = count
-  if L2_2 == 0 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.ShowReminder
-    L3_2 = A0_2
-    L4_2 = 31040111
-    L2_2(L3_2, L4_2)
-  else
-    L2_2 = count
-    if L2_2 == 1 then
-      L2_2 = ScriptLib
-      L2_2 = L2_2.ShowReminder
-      L3_2 = A0_2
-      L4_2 = 31040121
-      L2_2(L3_2, L4_2)
-    else
-      L2_2 = count
-      if L2_2 == 2 then
-        L2_2 = ScriptLib
-        L2_2 = L2_2.ShowReminder
-        L3_2 = A0_2
-        L4_2 = 31040120
-        L2_2(L3_2, L4_2)
-      else
-        L2_2 = count
-        if L2_2 == 3 then
-          L2_2 = ScriptLib
-          L2_2 = L2_2.ShowReminder
-          L3_2 = A0_2
-          L4_2 = 31040131
-          L2_2(L3_2, L4_2)
-        end
-      end
-    end
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ENTER_REGION_53018(context, evt)
+	--[[ 		if ScriptLib.GetGroupVariableValue(context,"Region_Water") == 0 then
+							ScriptLib.SetGroupVariableValue(context, "Region_Water", 1)
+							if ScriptLib.GetGroupVariableValue(context,"noQuestCount") < 5 then 
+								ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+							end
+						end
+						local loccount = ScriptLib.GetGroupVariableValue(context,"noQuestCount")
+						
+						if loccount == 1 then
+							ScriptLib.ShowReminder(context, 31040190)
+						elseif loccount == 2 then
+							ScriptLib.ShowReminder(context, 31040195)
+						elseif loccount == 3 then
+							ScriptLib.ShowReminder(context, 31040204)
+						elseif loccount == 4 then
+							ScriptLib.ShowReminder(context, 31040205)
+						elseif loccount == 5 then
+							ScriptLib.ChangeGroupVariableValue(context, "noQuestCount", 1)
+							ScriptLib.ShowReminder(context, 31040206)
+						elseif loccount == 6 then
+							ScriptLib.ShowReminder(context, 31040201)				
+						end
+			
+						return 0 ]]
+						ScriptLib.SetGroupVariableValue(context, "Region_Water", 1)
+						if count == 0 then
+							ScriptLib.ShowReminder(context, 31040111)
+						elseif count == 1 then
+							ScriptLib.ShowReminder(context, 31040121)
+						elseif count == 2 then
+							ScriptLib.ShowReminder(context, 31040120)
+						elseif count == 3 then
+							ScriptLib.ShowReminder(context, 31040131)
+						end
+	
+						return 0
 end
-action_EVENT_ENTER_REGION_53018 = L2_1
-L2_1 = "action_EVENT_TIMER_EVENT_53022"
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = "SetMonsterBattle"
-  L6_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CancelGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = "ActiveGurdian"
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cancel_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_53022(context, evt)
+	-- 添加suite3的新内容
+	    ScriptLib.AddExtraGroupSuite(context, 133104053, 3)
+	
+	-- 延迟1秒后,向groupId为：133104053的对象,请求一次调用,并将string参数："SetMonsterBattle" 传递过去
+	if 0 ~= ScriptLib.CreateGroupTimerEvent(context, 133104053, "SetMonsterBattle", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_timerevent_by_group")
+	  return -1
+	end
+	
+	-- 取消group中对应名称的TimerEvent
+	if 0 ~= ScriptLib.CancelGroupTimerEvent(context, 133104053, "ActiveGurdian") then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cancel_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-_ENV[L2_1] = L3_1
-L2_1 = "action_EVENT_TIMER_EVENT_53023"
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 53009
-  L5_2 = 133104053
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 53010
-  L5_2 = 133104053
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetMonsterBattleByGroup
-  L3_2 = A0_2
-  L4_2 = 53012
-  L5_2 = 133104053
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_monster_battle_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CancelGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = "SetMonsterBattle"
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cancel_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_53023(context, evt)
+	-- 通知groupid为133104053中,configid为：53009的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 53009, 133104053) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 通知groupid为133104053中,configid为：53010的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 53010, 133104053) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 通知groupid为133104053中,configid为：53012的怪物入战或者脱战，set为1是入战，为0是脱战
+	if 0 ~= ScriptLib.SetMonsterBattleByGroup(context, 53012, 133104053) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_monster_battle_by_group")
+	  return -1
+	end
+	
+	-- 取消group中对应名称的TimerEvent
+	if 0 ~= ScriptLib.CancelGroupTimerEvent(context, 133104053, "SetMonsterBattle") then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cancel_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-_ENV[L2_1] = L3_1
-L2_1 = "action_EVENT_TIMER_EVENT_53024"
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillExtraGroupSuite
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CancelGroupTimerEvent
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = "DisableFakeGurdian"
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : cancel_timerevent_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_TIMER_EVENT_53024(context, evt)
+	    -- 杀死指定group内的gadget和monster,移除其它东西
+	    ScriptLib.KillExtraGroupSuite(context, 133104053, 5)
+	
+	-- 取消group中对应名称的TimerEvent
+	if 0 ~= ScriptLib.CancelGroupTimerEvent(context, 133104053, "DisableFakeGurdian") then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : cancel_timerevent_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-_ENV[L2_1] = L3_1
-L2_1 = "condition_EVENT_QUEST_FINISH_53025"
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isFinished"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_QUEST_FINISH_53025(context, evt)
+	-- 判断变量"isFinished"为0
+	if ScriptLib.GetGroupVariableValue(context, "isFinished") ~= 0 then
+			return false
+	end
+	
+	-- 判断变量"isAcceptQuest"为0
+	if ScriptLib.GetGroupVariableValue(context, "isAcceptQuest") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-_ENV[L2_1] = L3_1
-L2_1 = "action_EVENT_QUEST_FINISH_53025"
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Temp_GadgetID"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.SetWorktopOptionsByGroupId
-  L4_2 = A0_2
-  L5_2 = 133104053
-  L6_2 = L2_2
-  L7_2 = {}
-  L8_2 = 171
-  L7_2[1] = L8_2
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = 0
-  return L3_2
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_53025(context, evt)
+	local id = ScriptLib.GetGroupVariableValue(context, "Temp_GadgetID")
+	ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, id, {171})
+	
+	return 0
 end
-_ENV[L2_1] = L3_1
-L2_1 = "condition_EVENT_GADGET_CREATE_53026"
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Unlock_Water"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_CREATE_53026(context, evt)
+	-- 判断变量"Unlock_Water"为1
+	if ScriptLib.GetGroupVariableValue(context, "Unlock_Water") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-_ENV[L2_1] = L3_1
-L2_1 = "action_EVENT_GADGET_CREATE_53026"
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.StartPlatform
-  L3_2 = A0_2
-  L4_2 = 142
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : start_platform"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_CREATE_53026(context, evt)
+	-- 启动移动平台
+	if 0 ~= ScriptLib.StartPlatform(context, 142) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : start_platform")
+	  return -1
+	end
+	
+	return 0
 end
-_ENV[L2_1] = L3_1
-L2_1 = "condition_EVENT_ANY_MONSTER_DIE_53027"
-function L3_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if L2_2 ~= 53009 then
-    L2_2 = A1_2.param1
-    if L2_2 ~= 53010 then
-      L2_2 = A1_2.param1
-      if L2_2 ~= 53012 then
-        goto lbl_12
-      end
-    end
-  end
-  L2_2 = true
-  do return L2_2 end
-  ::lbl_12::
-  L2_2 = false
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_ANY_MONSTER_DIE_53027(context, evt)
+		--判断任意一只遗迹守卫死亡
+		if evt.param1 == 53009 or evt.param1 == 53010 or evt.param1 == 53012 then
+		    return true
+		 end
+		return false
 end
-_ENV[L2_1] = L3_1
-L2_1 = "action_EVENT_ANY_MONSTER_DIE_53027"
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.AddQuestProgress
-  L3_2 = A0_2
-  L4_2 = "any_gurdian_die"
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : add_quest_progress"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "AnyGurdianDie"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_ANY_MONSTER_DIE_53027(context, evt)
+	-- 通知任务系统完成条件类型"LUA通知"，复杂参数为quest_param的进度+1
+	if 0 ~= ScriptLib.AddQuestProgress(context, "any_gurdian_die") then
+		ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : add_quest_progress")
+	  return -1
+	end
+	
+	-- 将本组内变量名为 "AnyGurdianDie" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "AnyGurdianDie", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-_ENV[L2_1] = L3_1
-L2_1 = "action_EVENT_QUEST_START_53028"
-function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isAcceptQuest"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.MarkPlayerAction
-  L3_2 = A0_2
-  L4_2 = 5001
-  L5_2 = 1
-  L6_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133104053
-  L4_2.suite = 2
-  L2_2(L3_2, L4_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueFire
-  L6_2 = 171
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueWind
-  L6_2 = 171
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueWater
-  L6_2 = 171
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueThunder
-  L6_2 = 171
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.DelWorktopOptionByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.WaterSwitch
-  L6_2 = 171
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueFire
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueWind
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueWater
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.ClueThunder
-  L6_2 = {}
-  L7_2 = 7
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetWorktopOptionsByGroupId
-  L3_2 = A0_2
-  L4_2 = 133104053
-  L5_2 = L1_1.WaterSwitch
-  L6_2 = {}
-  L7_2 = 171
-  L6_2[1] = L7_2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_53028(context, evt)
+							-- 将本组内变量名为 "isAcceptQuest" 的变量设置为 1
+						if 0 ~= ScriptLib.SetGroupVariableValue(context, "isAcceptQuest", 1) then
+						  return -1
+						end
+					
+						ScriptLib.MarkPlayerAction(context, 5001, 1, 1)
+						--刷新到GroupSuite2
+						ScriptLib.RefreshGroup(context,{group_id = 133104053, suite = 2})
+						ScriptLib.DelWorktopOptionByGroupId(context, 133104053, defs.ClueFire, 171)
+						ScriptLib.DelWorktopOptionByGroupId(context, 133104053, defs.ClueWind, 171)
+						ScriptLib.DelWorktopOptionByGroupId(context, 133104053, defs.ClueWater, 171)
+						ScriptLib.DelWorktopOptionByGroupId(context, 133104053, defs.ClueThunder, 171)
+						ScriptLib.DelWorktopOptionByGroupId(context, 133104053, defs.WaterSwitch, 171)
+						ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, defs.ClueFire, {7})
+						ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, defs.ClueWind, {7})
+						ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, defs.ClueWater, {7})
+						ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, defs.ClueThunder, {7})
+						ScriptLib.SetWorktopOptionsByGroupId(context, 133104053, defs.WaterSwitch, {171})
+	
+						return 0
 end
-_ENV[L2_1] = L3_1

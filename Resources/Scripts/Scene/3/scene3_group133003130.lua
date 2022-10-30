@@ -1,407 +1,215 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133003130
-L1_1 = {}
-L1_1.gadget_id_1 = 2609
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 2601
-L3_1.gadget_id = 70500000
-L4_1 = {}
-L4_1.x = 2517.542
-L4_1.y = 271.076
-L4_1.z = -1472.93
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 3.916
-L4_1.y = 359.918
-L4_1.z = 359.468
-L3_1.rot = L4_1
-L3_1.level = 10
-L3_1.point_type = 3011
-L3_1.oneoff_reset_version = 2
-L3_1.area_id = 1
-L4_1 = {}
-L4_1.config_id = 2602
-L4_1.gadget_id = 70900019
-L5_1 = {}
-L5_1.x = 2517.551
-L5_1.y = 265.558
-L5_1.z = -1473.11
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 88.12
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 10
-L4_1.area_id = 1
-L5_1 = {}
-L5_1.config_id = 2609
-L5_1.gadget_id = 70211101
-L6_1 = {}
-L6_1.x = 2518.487
-L6_1.y = 268.248
-L6_1.z = -1458.692
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 181.905
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 6
-L5_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\232\146\153\229\190\183"
-L5_1.showcutscene = true
-L5_1.isOneoff = true
-L5_1.persistent = true
-L6_1 = {}
-L6_1.name = "chest"
-L6_1.exp = 1
-L5_1.explore = L6_1
-L5_1.area_id = 1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1000103
-L3_1.name = "GATHER_103"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GATHER
-L3_1.event = L4_1
-L3_1.source = "2601"
-L3_1.condition = "condition_EVENT_GATHER_103"
-L3_1.action = "action_EVENT_GATHER_103"
-L4_1 = {}
-L4_1.config_id = 1000119
-L4_1.name = "GATHER_119"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GATHER
-L4_1.event = L5_1
-L4_1.source = "2603"
-L4_1.condition = "condition_EVENT_GATHER_119"
-L4_1.action = "action_EVENT_GATHER_119"
-L4_1.tag = "9"
-L5_1 = {}
-L5_1.config_id = 1000120
-L5_1.name = "CHALLENGE_SUCCESS_120"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_CHALLENGE_SUCCESS
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_CHALLENGE_SUCCESS_120"
-L5_1.action = "action_EVENT_CHALLENGE_SUCCESS_120"
-L5_1.tag = "9"
-L6_1 = {}
-L6_1.config_id = 1000121
-L6_1.name = "CHALLENGE_FAIL_121"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_CHALLENGE_FAIL
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_CHALLENGE_FAIL_121"
-L6_1.action = "action_EVENT_CHALLENGE_FAIL_121"
-L6_1.tag = "9"
-L7_1 = {}
-L7_1.config_id = 1000141
-L7_1.name = "GATHER_141"
-L8_1 = EventType
-L8_1 = L8_1.EVENT_GATHER
-L7_1.event = L8_1
-L7_1.source = "2601"
-L7_1.condition = ""
-L7_1.action = "action_EVENT_GATHER_141"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L2_1[5] = L7_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "get1"
-L3_1.value = 1
-L3_1.no_refresh = false
-L2_1[1] = L3_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 2601
-L6_1 = 2602
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GATHER_141"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 2602
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "GATHER_119"
-L7_1 = "CHALLENGE_SUCCESS_120"
-L8_1 = "CHALLENGE_FAIL_121"
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L5_1 = {}
-L6_1 = {}
-L5_1.monsters = L6_1
-L6_1 = {}
-L7_1 = 2602
-L6_1[1] = L7_1
-L5_1.gadgets = L6_1
-L6_1 = {}
-L5_1.regions = L6_1
-L6_1 = {}
-L7_1 = "GATHER_103"
-L6_1[1] = L7_1
-L5_1.triggers = L6_1
-L5_1.rand_weight = 100
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "get1"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133003130
+}
+
+-- Trigger变量
+local defs = {
+	gadget_id_1 = 2609
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 2601, gadget_id = 70500000, pos = { x = 2517.542, y = 271.076, z = -1472.930 }, rot = { x = 3.916, y = 359.918, z = 359.468 }, level = 10, point_type = 3011, oneoff_reset_version = 2, area_id = 1 },
+	{ config_id = 2602, gadget_id = 70900019, pos = { x = 2517.551, y = 265.558, z = -1473.110 }, rot = { x = 0.000, y = 88.120, z = 0.000 }, level = 10, area_id = 1 },
+	{ config_id = 2609, gadget_id = 70211101, pos = { x = 2518.487, y = 268.248, z = -1458.692 }, rot = { x = 0.000, y = 181.905, z = 0.000 }, level = 6, drop_tag = "解谜低级蒙德", showcutscene = true, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000103, name = "GATHER_103", event = EventType.EVENT_GATHER, source = "2601", condition = "condition_EVENT_GATHER_103", action = "action_EVENT_GATHER_103" },
+	{ config_id = 1000119, name = "GATHER_119", event = EventType.EVENT_GATHER, source = "2603", condition = "condition_EVENT_GATHER_119", action = "action_EVENT_GATHER_119", tag = "9" },
+	{ config_id = 1000120, name = "CHALLENGE_SUCCESS_120", event = EventType.EVENT_CHALLENGE_SUCCESS, source = "", condition = "condition_EVENT_CHALLENGE_SUCCESS_120", action = "action_EVENT_CHALLENGE_SUCCESS_120", tag = "9" },
+	{ config_id = 1000121, name = "CHALLENGE_FAIL_121", event = EventType.EVENT_CHALLENGE_FAIL, source = "", condition = "condition_EVENT_CHALLENGE_FAIL_121", action = "action_EVENT_CHALLENGE_FAIL_121", tag = "9" },
+	{ config_id = 1000141, name = "GATHER_141", event = EventType.EVENT_GATHER, source = "2601", condition = "", action = "action_EVENT_GATHER_141" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "get1", value = 1, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 2601, 2602 },
+		regions = { },
+		triggers = { "GATHER_141" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = suite_2,
+		monsters = { },
+		gadgets = { 2602 },
+		regions = { },
+		triggers = { "GATHER_119", "CHALLENGE_SUCCESS_120", "CHALLENGE_FAIL_121" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = suite_3,
+		monsters = { },
+		gadgets = { 2602 },
+		regions = { },
+		triggers = { "GATHER_103" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GATHER_103(context, evt)
+	-- 判断变量"get1"为1
+	if ScriptLib.GetGroupVariableValue(context, "get1") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GATHER_103 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintLog
-  L3_2 = "Enter Trigger 103"
-  L2_2(A0_2, L3_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ActiveChallenge
-  L3_2 = A0_2
-  L4_2 = 2601
-  L5_2 = 128
-  L6_2 = 50
-  L7_2 = 20
-  L8_2 = 9
-  L9_2 = 5
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintLog
-    L3_2 = "Create fail"
-    L2_2(A0_2, L3_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintLog
-  L3_2 = "Create Success"
-  L2_2(A0_2, L3_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133003130
-  L4_2.suite = 2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintLog
-    L3_2 = "refresh 133003130  fail"
-    L2_2(A0_2, L3_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintLog
-  L3_2 = "refresh 133003130 Success"
-  L2_2(A0_2, L3_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "get1"
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GATHER_103(context, evt)
+	-- 创建编号为2601（该挑战的识别id),挑战内容为128的区域挑战，具体参数填写方式，见DungeonChallengeData表中的注释，所有填写的值都必须是int类型
+	ScriptLib.PrintLog(context, "Enter Trigger 103")
+	if 0 ~= ScriptLib.ActiveChallenge(context, 2601, 128, 50, 20, 9, 5) then
+	ScriptLib.PrintLog(context, "Create fail")
+		return -1
+	end
+	ScriptLib.PrintLog(context, "Create Success")
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133003130, suite = 2 }) then
+	ScriptLib.PrintLog(context, "refresh 133003130  fail")
+			return -1
+		end
+	ScriptLib.PrintLog(context, "refresh 133003130 Success")
+	
+	-- 变量"get1"赋值为0
+	ScriptLib.SetGroupVariableValue(context, "get1", 0)
+	
+	return 0
 end
-action_EVENT_GATHER_103 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintLog
-  L3_2 = "Enter 119"
-  L2_2(A0_2, L3_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "get1"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GATHER_119(context, evt)
+	-- 判断变量"get1"为0
+	ScriptLib.PrintLog(context, "Enter 119")
+	if ScriptLib.GetGroupVariableValue(context, "get1") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_GATHER_119 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "get1"
-  L5_2 = 0
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GATHER_119(context, evt)
+	-- 变量"get1"赋值为0
+	ScriptLib.SetGroupVariableValue(context, "get1", 0)
+	
+	return 0
 end
-action_EVENT_GATHER_119 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "get1"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_CHALLENGE_SUCCESS_120(context, evt)
+	-- 判断变量"get1"为0
+	if ScriptLib.GetGroupVariableValue(context, "get1") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_CHALLENGE_SUCCESS_120 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintLog
-  L3_2 = "challenge success"
-  L2_2(A0_2, L3_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133003130
-  L4_2.suite = 3
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintLog
-  L3_2 = "refresh 133003130  to 3 suc"
-  L2_2(A0_2, L3_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L5_2 = L1_1.gadget_id_1
-  L4_2.config_id = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_SUCCESS_120(context, evt)
+		-- 重新生成指定group，指定suite
+	ScriptLib.PrintLog(context, "challenge success")
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133003130, suite = 3 }) then
+			return -1
+		end
+	ScriptLib.PrintLog(context, "refresh 133003130  to 3 suc")
+	
+	-- 创建id为2609的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = defs.gadget_id_1 }) then
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_CHALLENGE_SUCCESS_120 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "get1"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_CHALLENGE_FAIL_121(context, evt)
+	-- 判断变量"get1"为0
+	if ScriptLib.GetGroupVariableValue(context, "get1") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_CHALLENGE_FAIL_121 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintLog
-  L3_2 = "Challenge fail"
-  L2_2(A0_2, L3_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.RefreshGroup
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133003130
-  L4_2.suite = 3
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.PrintLog
-  L3_2 = "challenge fail cause refresh to 3"
-  L2_2(A0_2, L3_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_CHALLENGE_FAIL_121(context, evt)
+		-- 重新生成指定group，指定suite
+	ScriptLib.PrintLog(context, "Challenge fail")
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133003130, suite = 3 }) then
+			return -1
+		end
+	ScriptLib.PrintLog(context, "challenge fail cause refresh to 3")
+	
+	return 0
 end
-action_EVENT_CHALLENGE_FAIL_121 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 2609
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GATHER_141(context, evt)
+	-- 创建id为2609的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 2609 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GATHER_141 = L2_1

@@ -39,20 +39,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4000701,
-            0
-          ],
+          "param": [4000701, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            4000701,
-            0
-          ],
+          "param": [4000701, 0],
           "count": 0
         }
       ],
@@ -93,20 +87,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4000702,
-            0
-          ],
+          "param": [4000702, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            4000702,
-            0
-          ],
+          "param": [4000702, 0],
           "count": 0
         }
       ],
@@ -130,9 +118,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "4000701"
-          ]
+          "param": ["4000701"]
         }
       ],
       "failExec": [],
@@ -154,10 +140,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4000703,
-            0
-          ],
+          "param": [4000703, 0],
           "count": 0
         }
       ],
@@ -199,20 +182,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4000704,
-            0
-          ],
+          "param": [4000704, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            4000701,
-            0
-          ],
+          "param": [4000701, 0],
           "count": 0
         }
       ],
@@ -249,17 +226,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4000701",
-            "2"
-          ]
+          "param": ["4000701", "2"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4000702",
-            "2"
-          ]
+          "param": ["4000702", "2"]
         }
       ],
       "priority": 5,
@@ -268,9 +239,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 400020801,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        10205
-      ],
+      "npcIdRawNum": [10205],
       "GHNCIOJDIEA": "QuestDialogue/EQ/Sealamp1_40002/Q4000208",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -298,18 +267,10 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    236615439593,
-    192925756827
-  ],
-  "OMKMAOLMNCO": [
-    663176600734,
-    950957919918
-  ],
+  "LGCLJGGNGBD": [236615439593, 192925756827],
+  "OMKMAOLMNCO": [663176600734, 950957919918],
   "KPOKLMBEOBI": {
-    "10205": [
-      1280
-    ]
+    "10205": [1280]
   },
   "MGDNNNGPOGO": 0
 }

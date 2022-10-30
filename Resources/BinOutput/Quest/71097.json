@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 4098730455,
-  "descTextMapHash": 0,
+  
   "id": 71097,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    171097
-  ],
+  "rewardIdList": [171097],
   "showType": "QUEST_HIDDEN",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_ITEM_GIVING",
-          "param": [
-            7107403,
-            0
-          ],
+          "param": [7107403, 0],
           "count": 0
         }
       ],
@@ -86,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7109702,
-            0
-          ],
+          "param": [7109702, 0],
           "count": 0
         }
       ],
@@ -127,9 +119,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
-          "param": [
-            "7107403"
-          ]
+          "param": ["7107403"]
         }
       ],
       "priority": 6,
@@ -138,9 +128,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 710970101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        2061
-      ],
+      "npcIdRawNum": [2061],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Liyue_71097/Q7109701",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -176,10 +164,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7109702",
-            "2"
-          ]
+          "param": ["7109702", "2"]
         }
       ],
       "priority": 6,
@@ -188,10 +173,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 710970201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        2061,
-        1005
-      ],
+      "npcIdRawNum": [2061, 1005],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Liyue_71097/Q7109702",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

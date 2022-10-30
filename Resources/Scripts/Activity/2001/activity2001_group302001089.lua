@@ -1,433 +1,203 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 302001089
-L1_1 = {}
-L1_1.radius = 10
-L1_1.group_id = 302001034
-L1_1.gadget_id = 89001
-L1_1.battle_time = 600
-L1_1.auto_decline = 30
-L1_1.max_energy = 300
-L1_1.reward_gadget_id = 89002
-L1_1.difficulty1_suite = 2
-L1_1.difficulty2_suite = 4
-L1_1.empty_suite = 1
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 89001
-L3_1.gadget_id = 70950015
-L4_1 = {}
-L4_1.x = 2612.404
-L4_1.y = 226.675
-L4_1.z = -1118.507
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 15
-L3_1.persistent = true
-L3_1.area_id = 1
-L4_1 = {}
-L4_1.config_id = 89002
-L4_1.gadget_id = 70950021
-L5_1 = {}
-L5_1.x = 2612.404
-L5_1.y = 226.675
-L5_1.z = -1118.507
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 0.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 15
-L4_1.persistent = true
-L4_1.autopick = true
-L4_1.area_id = 1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-gadgets = L2_1
-L2_1 = {}
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1089003
-L3_1.name = "SEAL_BATTLE_PROGRESS_DECREASE_89003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_SEAL_BATTLE_PROGRESS_DECREASE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_89003"
-L3_1.action = "action_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_89003"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1089004
-L4_1.name = "SEAL_BATTLE_END_89004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_SEAL_BATTLE_END
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_SEAL_BATTLE_END_89004"
-L4_1.action = "action_EVENT_SEAL_BATTLE_END_89004"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1089005
-L5_1.name = "SELECT_DIFFICULTY_89005"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_SELECT_DIFFICULTY
-L5_1.event = L6_1
-L5_1.source = ""
-L5_1.condition = "condition_EVENT_SELECT_DIFFICULTY_89005"
-L5_1.action = "action_EVENT_SELECT_DIFFICULTY_89005"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1089006
-L6_1.name = "GENERAL_REWARD_DIE_89006"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_GENERAL_REWARD_DIE
-L6_1.event = L7_1
-L6_1.source = ""
-L6_1.condition = "condition_EVENT_GENERAL_REWARD_DIE_89006"
-L6_1.action = "action_EVENT_GENERAL_REWARD_DIE_89006"
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.configId = 1
-L3_1.name = "isDone"
-L3_1.value = 0
-L3_1.no_refresh = false
-L4_1 = {}
-L4_1.configId = 2
-L4_1.name = "difficulty"
-L4_1.value = 0
-L4_1.no_refresh = false
-L5_1 = {}
-L5_1.configId = 3
-L5_1.name = "isShow"
-L5_1.value = 0
-L5_1.no_refresh = false
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 89001
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "SEAL_BATTLE_PROGRESS_DECREASE_89003"
-L6_1 = "SEAL_BATTLE_END_89004"
-L7_1 = "SELECT_DIFFICULTY_89005"
-L8_1 = "GENERAL_REWARD_DIE_89006"
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isShow"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 302001089
+}
+
+-- Trigger变量
+local defs = {
+	radius = 10,
+	group_id = 302001034,
+	gadget_id = 89001,
+	battle_time = 600,
+	auto_decline = 30,
+	max_energy = 300,
+	reward_gadget_id = 89002,
+	difficulty1_suite = 2,
+	difficulty2_suite = 4,
+	empty_suite = 1
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 89001, gadget_id = 70950015, pos = { x = 2612.404, y = 226.675, z = -1118.507 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 15, persistent = true, area_id = 1 },
+	{ config_id = 89002, gadget_id = 70950021, pos = { x = 2612.404, y = 226.675, z = -1118.507 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 15, persistent = true, autopick = true, area_id = 1 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1089003, name = "SEAL_BATTLE_PROGRESS_DECREASE_89003", event = EventType.EVENT_SEAL_BATTLE_PROGRESS_DECREASE, source = "", condition = "condition_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_89003", action = "action_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_89003", trigger_count = 0 },
+	{ config_id = 1089004, name = "SEAL_BATTLE_END_89004", event = EventType.EVENT_SEAL_BATTLE_END, source = "", condition = "condition_EVENT_SEAL_BATTLE_END_89004", action = "action_EVENT_SEAL_BATTLE_END_89004", trigger_count = 0 },
+	{ config_id = 1089005, name = "SELECT_DIFFICULTY_89005", event = EventType.EVENT_SELECT_DIFFICULTY, source = "", condition = "condition_EVENT_SELECT_DIFFICULTY_89005", action = "action_EVENT_SELECT_DIFFICULTY_89005", trigger_count = 0 },
+	{ config_id = 1089006, name = "GENERAL_REWARD_DIE_89006", event = EventType.EVENT_GENERAL_REWARD_DIE, source = "", condition = "condition_EVENT_GENERAL_REWARD_DIE_89006", action = "action_EVENT_GENERAL_REWARD_DIE_89006" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "isDone", value = 0, no_refresh = false },
+	{ config_id = 2, name = "difficulty", value = 0, no_refresh = false },
+	{ config_id = 3, name = "isShow", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 89001 },
+		regions = { },
+		triggers = { "SEAL_BATTLE_PROGRESS_DECREASE_89003", "SEAL_BATTLE_END_89004", "SELECT_DIFFICULTY_89005", "GENERAL_REWARD_DIE_89006" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_89003(context, evt)
+	-- 判断变量"isShow"为0
+	if ScriptLib.GetGroupVariableValue(context, "isShow") ~= 0 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_89003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ShowTemplateReminder
-  L3_2 = A0_2
-  L4_2 = 4
-  L5_2 = {}
-  L6_2 = 10
-  L7_2 = 5
-  L5_2[1] = L6_2
-  L5_2[2] = L7_2
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "isShow"
-  L5_2 = 1
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_89003(context, evt)
+	ScriptLib.ShowTemplateReminder(context, 4,{10,5})
+	
+	ScriptLib.SetGroupVariableValue(context, "isShow", 1)
+	
+	
+	return 0
 end
-action_EVENT_SEAL_BATTLE_PROGRESS_DECREASE_89003 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 89001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SEAL_BATTLE_END_89004(context, evt)
+	if 89001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SEAL_BATTLE_END_89004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "difficulty"
-  L2_2 = L2_2(L3_2, L4_2)
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "isDone"
-  L3_2 = L3_2(L4_2, L5_2)
-  L4_2 = A1_2.param2
-  if L4_2 == 0 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "isDone"
-    L7_2 = 2
-    L4_2(L5_2, L6_2, L7_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetGroupVariableValue
-    L5_2 = A0_2
-    L6_2 = "isShow"
-    L7_2 = 0
-    L4_2(L5_2, L6_2, L7_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.RefreshGroup
-    L5_2 = A0_2
-    L6_2 = {}
-    L7_2 = L1_1.group_id
-    L6_2.group_id = L7_2
-    L7_2 = L1_1.empty_suite
-    L6_2.suite = L7_2
-    L4_2(L5_2, L6_2)
-    L4_2 = ScriptLib
-    L4_2 = L4_2.SetGadgetStateByConfigId
-    L5_2 = A0_2
-    L6_2 = L1_1.gadget_id
-    L7_2 = GadgetState
-    L7_2 = L7_2.Default
-    L4_2(L5_2, L6_2, L7_2)
-  else
-    L4_2 = A1_2.param2
-    if L4_2 == 1 then
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGroupVariableValue
-      L5_2 = A0_2
-      L6_2 = "isDone"
-      L7_2 = 1
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.RefreshGroup
-      L5_2 = A0_2
-      L6_2 = {}
-      L7_2 = L1_1.group_id
-      L6_2.group_id = L7_2
-      L7_2 = L1_1.empty_suite
-      L6_2.suite = L7_2
-      L4_2(L5_2, L6_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.SetGadgetStateByConfigId
-      L5_2 = A0_2
-      L6_2 = L1_1.gadget_id
-      L7_2 = GadgetState
-      L7_2 = L7_2.GearStop
-      L4_2(L5_2, L6_2, L7_2)
-      L4_2 = ScriptLib
-      L4_2 = L4_2.CreateAsterMidGeneralRewardGadget
-      L5_2 = A0_2
-      L6_2 = {}
-      L7_2 = L1_1.reward_gadget_id
-      L6_2.config_id = L7_2
-      L6_2.difficulty_id = L2_2
-      L4_2(L5_2, L6_2)
-    end
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_SEAL_BATTLE_END_89004(context, evt)
+	--SealBattle结束后，处理成功和失败逻辑
+	local diff = ScriptLib.GetGroupVariableValue(context, "difficulty")
+	local state = ScriptLib.GetGroupVariableValue(context, "isDone")
+	
+	if evt.param2 == 0 then
+	        ScriptLib.SetGroupVariableValue(context, "isDone", 2)   
+	        ScriptLib.SetGroupVariableValue(context, "isShow", 0)
+	        ScriptLib.RefreshGroup(context, { group_id = defs.group_id, suite = defs.empty_suite})
+	        ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id, GadgetState.Default)
+	elseif evt.param2 == 1 then
+	        ScriptLib.SetGroupVariableValue(context, "isDone", 1)   
+	        ScriptLib.RefreshGroup(context, { group_id = defs.group_id, suite = defs.empty_suite})
+	        ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id, GadgetState.GearStop)
+	        ScriptLib.CreateAsterMidGeneralRewardGadget(context, {config_id=defs.reward_gadget_id, difficulty_id=diff})
+	end
+	
+	return 0
 end
-action_EVENT_SEAL_BATTLE_END_89004 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 89001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_SELECT_DIFFICULTY_89005(context, evt)
+	if 89001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_SELECT_DIFFICULTY_89005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = A1_2.param2
-  L3_2 = ScriptLib
-  L3_2 = L3_2.GetGroupVariableValue
-  L4_2 = A0_2
-  L5_2 = "isDone"
-  L3_2 = L3_2(L4_2, L5_2)
-  L4_2 = A1_2.param3
-  L5_2 = ScriptLib
-  L5_2 = L5_2.SetGroupVariableValue
-  L6_2 = A0_2
-  L7_2 = "difficulty"
-  L8_2 = L2_2
-  L5_2(L6_2, L7_2, L8_2)
-  if L3_2 == 2 then
-    L5_2 = ScriptLib
-    L5_2 = L5_2.SetGroupVariableValue
-    L6_2 = A0_2
-    L7_2 = "isDone"
-    L8_2 = 0
-    L5_2(L6_2, L7_2, L8_2)
-  end
-  if L2_2 < 5 then
-    L5_2 = ScriptLib
-    L5_2 = L5_2.SetGadgetStateByConfigId
-    L6_2 = A0_2
-    L7_2 = L1_1.gadget_id
-    L8_2 = GadgetState
-    L8_2 = L8_2.GearStart
-    L5_2(L6_2, L7_2, L8_2)
-    L5_2 = ScriptLib
-    L5_2 = L5_2.RefreshGroup
-    L6_2 = A0_2
-    L7_2 = {}
-    L8_2 = L1_1.group_id
-    L7_2.group_id = L8_2
-    L8_2 = L1_1.difficulty1_suite
-    L7_2.suite = L8_2
-    L7_2.refresh_level_revise = L4_2
-    L7_2.exclude_prev = true
-    L5_2(L6_2, L7_2)
-    L5_2 = ScriptLib
-    L5_2 = L5_2.StartSealBattle
-    L6_2 = A0_2
-    L7_2 = L1_1.gadget_id
-    L8_2 = {}
-    L9_2 = L1_1.radius
-    L8_2.radius = L9_2
-    L9_2 = L1_1.battle_time
-    L8_2.battle_time = L9_2
-    L9_2 = L1_1.group_id
-    L8_2.monster_group_id = L9_2
-    L8_2.default_kill_charge = 0
-    L8_2.auto_charge = 0
-    L9_2 = L1_1.auto_decline
-    L8_2.auto_decline = L9_2
-    L9_2 = L1_1.max_energy
-    L8_2.max_energy = L9_2
-    L9_2 = SealBattleType
-    L9_2 = L9_2.ENERGY_CHARGE
-    L8_2.battle_type = L9_2
-    L5_2 = L5_2(L6_2, L7_2, L8_2)
-  else
-    L5_2 = ScriptLib
-    L5_2 = L5_2.SetGadgetStateByConfigId
-    L6_2 = A0_2
-    L7_2 = L1_1.gadget_id
-    L8_2 = GadgetState
-    L8_2 = L8_2.GearStart
-    L5_2(L6_2, L7_2, L8_2)
-    L5_2 = ScriptLib
-    L5_2 = L5_2.RefreshGroup
-    L6_2 = A0_2
-    L7_2 = {}
-    L8_2 = L1_1.group_id
-    L7_2.group_id = L8_2
-    L8_2 = L1_1.difficulty2_suite
-    L7_2.suite = L8_2
-    L7_2.refresh_level_revise = L4_2
-    L7_2.exclude_prev = true
-    L5_2(L6_2, L7_2)
-    L5_2 = ScriptLib
-    L5_2 = L5_2.StartSealBattle
-    L6_2 = A0_2
-    L7_2 = L1_1.gadget_id
-    L8_2 = {}
-    L9_2 = L1_1.radius
-    L8_2.radius = L9_2
-    L9_2 = L1_1.battle_time
-    L8_2.battle_time = L9_2
-    L9_2 = L1_1.group_id
-    L8_2.monster_group_id = L9_2
-    L8_2.default_kill_charge = 0
-    L8_2.auto_charge = 0
-    L9_2 = L1_1.auto_decline
-    L8_2.auto_decline = L9_2
-    L9_2 = L1_1.max_energy
-    L8_2.max_energy = L9_2
-    L9_2 = SealBattleType
-    L9_2 = L9_2.ENERGY_CHARGE
-    L8_2.battle_type = L9_2
-    L5_2 = L5_2(L6_2, L7_2, L8_2)
-  end
-  L5_2 = 0
-  return L5_2
+
+-- 触发操作
+function action_EVENT_SELECT_DIFFICULTY_89005(context, evt)
+	--选难度后开启SealBattle，创建怪物Group
+	
+	local diff = evt.param2
+	local state = ScriptLib.GetGroupVariableValue(context, "isDone")
+	local monster_level = evt.param3
+	
+	ScriptLib.SetGroupVariableValue(context, "difficulty", diff)
+	
+	if state == 2 then
+	        ScriptLib.SetGroupVariableValue(context, "isDone", 0)
+	end
+	
+	if diff < 5 then
+	        ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id, GadgetState.GearStart)
+	        ScriptLib.RefreshGroup(context, { group_id = defs.group_id, suite = defs.difficulty1_suite, refresh_level_revise = monster_level, exclude_prev = true })
+	        local ret = ScriptLib.StartSealBattle(context,defs.gadget_id, {radius = defs.radius, battle_time = defs.battle_time, monster_group_id = defs.group_id, default_kill_charge = 0, auto_charge = 0, auto_decline= defs.auto_decline, max_energy = defs.max_energy, battle_type = SealBattleType.ENERGY_CHARGE})
+	else
+	        ScriptLib.SetGadgetStateByConfigId(context, defs.gadget_id, GadgetState.GearStart)
+	        ScriptLib.RefreshGroup(context, { group_id = defs.group_id, suite = defs.difficulty2_suite, refresh_level_revise = monster_level, exclude_prev = true })
+	        local ret = ScriptLib.StartSealBattle(context,defs.gadget_id, {radius = defs.radius, battle_time = defs.battle_time, monster_group_id = defs.group_id, default_kill_charge = 0, auto_charge = 0, auto_decline= defs.auto_decline, max_energy = defs.max_energy, battle_type = SealBattleType.ENERGY_CHARGE})
+	end
+	
+	return 0
 end
-action_EVENT_SELECT_DIFFICULTY_89005 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 89002 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GENERAL_REWARD_DIE_89006(context, evt)
+	if 89002 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GENERAL_REWARD_DIE_89006 = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.KillEntityByConfigId
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 89001
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : kill_entity_by_configId"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GENERAL_REWARD_DIE_89006(context, evt)
+		-- 永久关闭CongfigId的Gadget，需要和Groups的RefreshWithBlock标签搭配
+		if 0 ~= ScriptLib.KillEntityByConfigId(context, { config_id = 89001 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : kill_entity_by_configId")
+		    return -1
+		end
+		
+	
+	return 0
 end
-action_EVENT_GENERAL_REWARD_DIE_89006 = L2_1
-L2_1 = require
-L3_1 = "AsterMiddle"
-L2_1(L3_1)
+
+require "AsterMiddle"

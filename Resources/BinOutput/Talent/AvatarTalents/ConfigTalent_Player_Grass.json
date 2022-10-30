@@ -135,6 +135,12 @@
       "paramDelta": "%11"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座1
+  //
+  ////////////////////////////////////////////////////////////////
   "Player_Grass_Constellation_1": [
     {
       "$type": "UnlockTalentParam",
@@ -148,6 +154,12 @@
       "paramDelta": "%1"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座2
+  //
+  ////////////////////////////////////////////////////////////////
   "Player_Grass_Constellation_2": [
     {
       "$type": "UnlockTalentParam",
@@ -161,6 +173,12 @@
       "paramDelta": "%1"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座3
+  //
+  ////////////////////////////////////////////////////////////////
   "Player_Grass_Constellation_3": [
     {
       "$type": "AddTalentExtraLevel",
@@ -169,6 +187,12 @@
       "extraLevel": 3
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座4
+  //
+  ////////////////////////////////////////////////////////////////
   "Player_Grass_Constellation_4": [
     {
       "$type": "UnlockTalentParam",
@@ -176,6 +200,12 @@
       "talentParam": "Player_Grass_Seed_Aura_Up_Talent_4"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座5
+  //
+  ////////////////////////////////////////////////////////////////
   "Player_Grass_Constellation_5": [
     {
       "$type": "AddTalentExtraLevel",
@@ -184,6 +214,12 @@
       "extraLevel": 3
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  命之座6
+  //
+  ////////////////////////////////////////////////////////////////
   "Player_Grass_Constellation_6": [
     {
       "$type": "UnlockTalentParam",
@@ -197,6 +233,12 @@
       "paramDelta": "%1"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  天赋1
+  //
+  ////////////////////////////////////////////////////////////////
   "Player_Grass_PermanentSkill_1": [
     {
       "$type": "UnlockTalentParam",
@@ -210,6 +252,12 @@
       "paramDelta": "%1"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  天赋2
+  //
+  ////////////////////////////////////////////////////////////////
   "Player_Grass_PermanentSkill_2": [
     {
       "$type": "AddAbility",
@@ -228,6 +276,12 @@
       "paramDelta": "%2"
     }
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  技能升级1
+  //
+  ////////////////////////////////////////////////////////////////
   "Player_Grass_SkillUpgrade_1": [
     {
       "$type": "ModifyAbility",
@@ -235,7 +289,55 @@
       "paramSpecial": "ElementArt_Damage",
       "paramDelta": "%1"
     }
+
+    // {
+    //   	"$type" : "ModifyAbility",
+    //   	"abilityName" : "Player_Electric_ElementalArt_Bullet_1",
+    //   	"paramSpecial" : "ElementalArt_Damage",
+    //   	"paramDelta" :"%1",
+    // },
+    // {
+    //   	"$type" : "ModifyAbility",
+    //   	"abilityName" : "Player_Electric_ElementalArt_Bullet_2",
+    //   	"paramSpecial" : "ElementalArt_Damage",
+    //   	"paramDelta" :"%1",
+    // },
+    // {
+    //   	"$type" : "ModifyAbility",
+    //   	"abilityName" : "Player_Electric_ElementalArt_Bullet_3",
+    //   	"paramSpecial" : "ElementalArt_Damage",
+    //   	"paramDelta" :"%1",
+    // },
+    // {
+    //   	"$type" : "ModifyAbility",
+    //   	"abilityName" : "Player_Electric_ElementalArt_Magatama_Pickable",
+    //   	"paramSpecial" : "ElementalArt_Magatama_ReviveElemEnergy",
+    //   	"paramDelta" :"%2",
+    // },
+    // {
+    //   	"$type" : "ModifyAbility",
+    //   	"abilityName" : "Player_Electric_ElementalArt_Magatama_Pickable",
+    //   	"paramSpecial" : "ElementalArt_Magatama_Life_Duration",
+    //   	"paramDelta" :"%3",
+    // },
+    // {
+    //   	"$type" : "ModifyAbility",
+    //   	"abilityName" : "Player_Electric_ElementalArt_Magatama_Pickable",
+    //   	"paramSpecial" : "ElementalArt_Magatama_EfficiencyUp",
+    //   	"paramDelta" :"%4",
+    // },
+    // {
+    //   	"$type" : "ModifyAbility",
+    //   	"abilityName" : "Player_Electric_ElementalArt_Magatama_Pickable",
+    //   	"paramSpecial" : "ElementalArt_Magatama_EfficiencyUp_Duration",
+    //   	"paramDelta" :"%5",
+    // },
   ],
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  技能升级2
+  ////////////////////////////////////////////////////////////////
   "Player_Grass_SkillUpgrade_2": [
     {
       "$type": "ModifyAbility",
@@ -255,5 +357,30 @@
       "paramSpecial": "Grass_Seed_Duration",
       "paramDelta": "%5"
     }
+
+    // {
+    //   	"$type" : "ModifyAbility",
+    //   	"abilityName" : "Avatar_Player_Electric_ElementalBurst_Initiate",
+    //   	"paramSpecial" : "ElementalBurst_InitiateDamage",
+    //   	"paramDelta" :"%1",
+    // },
+    // {
+    //   	"$type" : "ModifyAbility",
+    //   	"abilityName" : "Avatar_Player_Electric_ElementalBurst_Bullet",
+    //   	"paramSpecial" : "ElementalBurst_ThunderAttack_Default_Damage",
+    //   	"paramDelta" :"%2",
+    // },
+    // {
+    //   	"$type" : "ModifyAbility",
+    //   	"abilityName" : "Avatar_Player_Electric_ElementalBurst_Bullet",
+    //   	"paramSpecial" : "ElementalBurst_ReviveEnergy_Default",
+    //   	"paramDelta" :"%3",
+    // },
+    // {
+    //   	"$type" : "ModifyAbility",
+    //   	"abilityName" : "Avatar_Player_Electric_ElementalBurst_Bullet",
+    //   	"paramSpecial" : "ElementalBurst_Duration",
+    //   	"paramDelta" :"%4",
+    // },
   ]
 }

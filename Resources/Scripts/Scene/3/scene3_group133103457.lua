@@ -1,165 +1,96 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 133103457
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 457005
-L2_1.monster_id = 28050102
-L3_1 = {}
-L3_1.x = 523.391
-L3_1.y = 175.221
-L3_1.z = 1100.553
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 24
-L2_1.drop_tag = "\233\173\148\230\179\149\231\148\159\231\137\169"
-L2_1.area_id = 6
-L1_1[1] = L2_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 457001
-L2_1.gadget_id = 70330019
-L3_1 = {}
-L3_1.x = 519.316
-L3_1.y = 172.948
-L3_1.z = 1092.633
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 24
-L2_1.isOneoff = true
-L2_1.persistent = true
-L2_1.area_id = 6
-L3_1 = {}
-L3_1.config_id = 457002
-L3_1.gadget_id = 70330021
-L4_1 = {}
-L4_1.x = 521.664
-L4_1.y = 173.264
-L4_1.z = 1100.364
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 250.998
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 24
-L3_1.area_id = 6
-L4_1 = {}
-L4_1.config_id = 457003
-L4_1.gadget_id = 70211001
-L5_1 = {}
-L5_1.x = 519.523
-L5_1.y = 173.112
-L5_1.z = 1090.769
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 5.356
-L5_1.y = 270.038
-L5_1.z = 0.004
-L4_1.rot = L5_1
-L4_1.level = 21
-L4_1.drop_tag = "\230\136\152\230\150\151\228\189\142\231\186\167\231\146\131\230\156\136"
-L4_1.showcutscene = true
-L4_1.isOneoff = true
-L4_1.persistent = true
-L5_1 = {}
-L5_1.name = "chest"
-L5_1.exp = 1
-L4_1.explore = L5_1
-L4_1.area_id = 6
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1457004
-L2_1.name = "GADGET_STATE_CHANGE_457004"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGET_STATE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_457004"
-L2_1.action = "action_EVENT_GADGET_STATE_CHANGE_457004"
-L1_1[1] = L2_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L4_1 = 457005
-L3_1[1] = L4_1
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 457001
-L5_1 = 457002
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GADGET_STATE_CHANGE_457004"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 457001 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133103457
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 457005, monster_id = 28050102, pos = { x = 523.391, y = 175.221, z = 1100.553 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, drop_tag = "魔法生物", area_id = 6 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 457001, gadget_id = 70330019, pos = { x = 519.316, y = 172.948, z = 1092.633 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 24, isOneoff = true, persistent = true, area_id = 6 },
+	{ config_id = 457002, gadget_id = 70330021, pos = { x = 521.664, y = 173.264, z = 1100.364 }, rot = { x = 0.000, y = 250.998, z = 0.000 }, level = 24, area_id = 6 },
+	{ config_id = 457003, gadget_id = 70211001, pos = { x = 519.523, y = 173.112, z = 1090.769 }, rot = { x = 5.356, y = 270.038, z = 0.004 }, level = 21, drop_tag = "战斗低级璃月", showcutscene = true, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 6 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1457004, name = "GADGET_STATE_CHANGE_457004", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_457004", action = "action_EVENT_GADGET_STATE_CHANGE_457004" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { 457005 },
+		gadgets = { 457001, 457002 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_457004" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_457004(context, evt)
+	if 457001 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_457004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 457003
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_457004(context, evt)
+	-- 创建id为457003的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 457003 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_457004 = L1_1

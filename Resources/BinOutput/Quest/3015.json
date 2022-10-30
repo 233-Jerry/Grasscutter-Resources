@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            300710,
-            0
-          ],
+          "param": [300710, 0],
           "count": 0
         }
       ],
@@ -67,9 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
-          "param": [
-            "0"
-          ]
+          "param": ["0"]
         }
       ],
       "failExec": [],
@@ -91,20 +86,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LEAVE_SCENE_RANGE_AND_ROOM",
-          "param": [
-            3,
-            230
-          ],
+          "param": [3, 230],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            300710,
-            0
-          ],
+          "param": [300710, 0],
           "count": 0
         }
       ],
@@ -128,9 +117,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
-          "param": [
-            "0"
-          ]
+          "param": ["0"]
         }
       ],
       "failExec": [],
@@ -152,20 +139,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            301503,
-            0
-          ],
+          "param": [301503, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            300710,
-            0
-          ],
+          "param": [300710, 0],
           "count": 0
         }
       ],
@@ -189,15 +170,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
-          "param": [
-            "1"
-          ]
+          "param": ["1"]
         },
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "301502"
-          ]
+          "param": ["301502"]
         }
       ],
       "failExec": [],
@@ -206,12 +183,8 @@
     }
   ],
   "talks": [],
-  "LGCLJGGNGBD": [
-    897472364268
-  ],
-  "OMKMAOLMNCO": [
-    30919844661
-  ],
+  "LGCLJGGNGBD": [897472364268],
+  "OMKMAOLMNCO": [30919844661],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 0
 }

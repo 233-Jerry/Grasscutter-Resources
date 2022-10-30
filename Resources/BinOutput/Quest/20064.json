@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -84,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            2006401,
-            0
-          ],
+          "param": [2006401, 0],
           "count": 0
         }
       ],
@@ -125,17 +119,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2006401",
-            "3"
-          ]
+          "param": ["2006401", "3"]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2006402",
-            "2"
-          ]
+          "param": ["2006402", "2"]
         }
       ],
       "priority": 8,
@@ -144,9 +132,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 200640101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1605
-      ],
+      "npcIdRawNum": [1605],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

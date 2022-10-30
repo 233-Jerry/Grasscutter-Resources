@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106501,
-            191480101
-          ],
+          "param": [106501, 191480101],
           "count": 0
         }
       ],
@@ -50,10 +47,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q1914801_gu_ide",
-          "25"
-        ],
+        "param": ["Q1914801_gu_ide", "25"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -70,9 +64,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133220769"
-          ]
+          "param": ["133220769"]
         }
       ],
       "failExec": [],
@@ -94,10 +86,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106501,
-            191480201
-          ],
+          "param": [106501, 191480201],
           "count": 0
         }
       ],
@@ -105,10 +94,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q1914802_gu_ide",
-          "25"
-        ],
+        "param": ["Q1914802_gu_ide", "25"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -142,18 +128,12 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1914803,
-            0
-          ],
+          "param": [1914803, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            1914808,
-            3
-          ],
+          "param": [1914808, 3],
           "count": 0
         }
       ],
@@ -161,10 +141,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q1914803_gu_ide",
-          "30"
-        ],
+        "param": ["Q1914803_gu_ide", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -198,18 +175,12 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1914804,
-            0
-          ],
+          "param": [1914804, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            1914808,
-            3
-          ],
+          "param": [1914808, 3],
           "count": 0
         }
       ],
@@ -217,10 +188,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q1914804_gu_ide",
-          "30"
-        ],
+        "param": ["Q1914804_gu_ide", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -254,10 +222,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106501,
-            191480501
-          ],
+          "param": [106501, 191480501],
           "count": 0
         }
       ],
@@ -265,9 +230,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "12512"
-        ],
+        "param": ["12512"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -284,9 +247,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_GRANT_TRIAL_AVATAR",
-          "param": [
-            "505"
-          ]
+          "param": ["505"]
         }
       ],
       "failExec": [],
@@ -308,46 +269,31 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
       "failCond": [
         {
           "_type": "QUEST_CONTENT_TEAM_DEAD",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_ANY_MANUAL_TRANSPORT",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_LEAVE_SCENE_RANGE",
-          "param": [
-            3,
-            50
-          ],
+          "param": [3, 50],
           "count": 0
         }
       ],
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q1914807_C1914807_N510",
-          "30"
-        ],
+        "param": ["Q1914807_C1914807_N510", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -364,35 +310,25 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133220748"
-          ]
+          "param": ["133220748"]
         },
         {
           "_type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
-          "param": [
-            "505"
-          ]
+          "param": ["505"]
         }
       ],
       "failExec": [
         {
           "_type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "1914805"
-          ]
+          "param": ["1914805"]
         },
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133220748"
-          ]
+          "param": ["133220748"]
         },
         {
           "_type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
-          "param": [
-            "505"
-          ]
+          "param": ["505"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -413,10 +349,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106501,
-            191480601
-          ],
+          "param": [106501, 191480601],
           "count": 0
         }
       ],
@@ -424,10 +357,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q1914807_C1914807_N510",
-          "25"
-        ],
+        "param": ["Q1914807_C1914807_N510", "25"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -444,9 +374,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133220760"
-          ]
+          "param": ["133220760"]
         }
       ],
       "failExec": [],
@@ -468,18 +396,12 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1914808,
-            0
-          ],
+          "param": [1914808, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            1914804,
-            3
-          ],
+          "param": [1914804, 3],
           "count": 0
         }
       ],
@@ -517,10 +439,7 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1914801",
-            "2"
-          ]
+          "param": ["1914801", "2"]
         }
       ],
       "priority": 5,
@@ -529,9 +448,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 191480501,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        12536
-      ],
+      "npcIdRawNum": [12536],
       "GHNCIOJDIEA": "QuestDialogue/COOP/CoopShinobu/Q1914805",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -560,23 +477,13 @@
     }
   ],
   "LGCLJGGNGBD": [
-    417713847670,
-    323967690041,
-    858487001636,
-    509897378704,
-    980746369794,
+    417713847670, 323967690041, 858487001636, 509897378704, 980746369794,
     824928453804
   ],
-  "OMKMAOLMNCO": [
-    63719843166
-  ],
+  "OMKMAOLMNCO": [63719843166],
   "KPOKLMBEOBI": {
-    "510": [
-      1120
-    ],
-    "12276": [
-      1040
-    ]
+    "510": [1120],
+    "12276": [1040]
   },
   "MGDNNNGPOGO": 0
 }

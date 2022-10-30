@@ -1,123 +1,95 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133222196
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 196001
-L2_1.gadget_id = 70360001
-L3_1 = {}
-L3_1.x = -4981.484
-L3_1.y = 202.252
-L3_1.z = -4340.131
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.persistent = true
-L2_1.area_id = 14
-L3_1 = {}
-L3_1.config_id = 196002
-L3_1.gadget_id = 70500000
-L4_1 = {}
-L4_1.x = -4984.591
-L4_1.y = 203.345
-L4_1.z = -4337.03
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 355.167
-L4_1.y = 13.078
-L4_1.z = 311.463
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.point_type = 1008
-L3_1.persistent = true
-L3_1.area_id = 14
-L4_1 = {}
-L4_1.config_id = 196004
-L4_1.gadget_id = 70500000
-L5_1 = {}
-L5_1.x = -4978.078
-L5_1.y = 202.113
-L5_1.z = -4344.436
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 37.57
-L5_1.y = 38.514
-L5_1.z = 341.748
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.point_type = 1008
-L4_1.persistent = true
-L4_1.area_id = 14
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "GroupCompletion"
-L2_1.value = 0
-L2_1.no_refresh = false
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 196001
-L7_1 = 196002
-L8_1 = 196004
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-L1_1 = require
-L2_1 = "V2_0/OreBlossomGroup"
-L1_1(L2_1)
+-- 基础信息
+local base_info = {
+	group_id = 133222196
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 196001, gadget_id = 70360001, pos = { x = -4981.484, y = 202.252, z = -4340.131 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, persistent = true, area_id = 14 },
+	{ config_id = 196002, gadget_id = 70500000, pos = { x = -4984.591, y = 203.345, z = -4337.030 }, rot = { x = 355.167, y = 13.078, z = 311.463 }, level = 1, point_type = 1008, persistent = true, area_id = 14 },
+	{ config_id = 196004, gadget_id = 70500000, pos = { x = -4978.078, y = 202.113, z = -4344.436 }, rot = { x = 37.570, y = 38.514, z = 341.748 }, level = 1, point_type = 1008, persistent = true, area_id = 14 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "GroupCompletion", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = 在suite3内添加魔晶矿,
+		monsters = { },
+		gadgets = { 196001, 196002, 196004 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_0/OreBlossomGroup"

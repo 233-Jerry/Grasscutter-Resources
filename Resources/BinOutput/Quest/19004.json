@@ -12,9 +12,7 @@
   "_luaPath": "Actor/Quest/LQ19004",
   "recommendLevel": 0,
   "repeatable": false,
-  "PEOHODAKLNO": [
-    19005
-  ],
+  "PEOHODAKLNO": [19005],
   "FEHAEKNGFBP": true,
   "rewardIdList": [],
   "showType": "QUEST_SHOW",
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1900401,
-            0
-          ],
+          "param": [1900401, 0],
           "count": 0
         }
       ],
@@ -52,10 +47,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "COOP101401_Play_Pos_03",
-          "30"
-        ],
+        "param": ["COOP101401_Play_Pos_03", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -89,10 +81,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [
-            100745,
-            0
-          ],
+          "param": [100745, 0],
           "count": 6
         }
       ],
@@ -100,10 +89,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "COOP101401_Play_Pos_05",
-          "5"
-        ],
+        "param": ["COOP101401_Play_Pos_05", "5"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -137,10 +123,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            101401,
-            40101
-          ],
+          "param": [101401, 40101],
           "count": 0
         }
       ],
@@ -148,9 +131,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "COOP101401Paimeng05"
-        ],
+        "param": ["COOP101401Paimeng05"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -167,9 +148,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133004459"
-          ]
+          "param": ["133004459"]
         }
       ],
       "failExec": [],
@@ -191,10 +170,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1900404,
-            0
-          ],
+          "param": [1900404, 0],
           "count": 0
         }
       ],
@@ -202,10 +178,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "COOP101401_Play_Pos_04",
-          "50"
-        ],
+        "param": ["COOP101401_Play_Pos_04", "50"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -239,10 +212,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            101401,
-            40201
-          ],
+          "param": [101401, 40201],
           "count": 0
         }
       ],
@@ -250,10 +220,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "COOP101401Babala07",
-          "30"
-        ],
+        "param": ["COOP101401Babala07", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_NONE",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -270,9 +237,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM",
-          "param": [
-            "100745"
-          ]
+          "param": ["100745"]
         }
       ],
       "failExec": [],
@@ -282,16 +247,10 @@
   ],
   "talks": [],
   "LGCLJGGNGBD": [
-    645902683150,
-    388704287032,
-    517871703815,
-    968212379959,
-    328279722222,
+    645902683150, 388704287032, 517871703815, 968212379959, 328279722222,
     874757251722
   ],
-  "OMKMAOLMNCO": [
-    1065157176024
-  ],
+  "OMKMAOLMNCO": [1065157176024],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 0
 }

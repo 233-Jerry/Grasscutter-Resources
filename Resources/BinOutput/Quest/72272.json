@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 47155231,
-  "descTextMapHash": 0,
+  
   "id": 72272,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    172272
-  ],
+  "rewardIdList": [172272],
   "showType": "QUEST_HIDDEN",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,28 +39,19 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7227201,
-            0
-          ],
+          "param": [7227201, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7224301,
-            3
-          ],
+          "param": [7224301, 3],
           "count": 0
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7227101,
-            3
-          ],
+          "param": [7227101, 3],
           "count": 0
         }
       ],
@@ -86,9 +75,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM",
-          "param": [
-            "100945"
-          ]
+          "param": ["100945"]
         }
       ],
       "failExec": [],
@@ -106,18 +93,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7227201",
-            "2"
-          ]
+          "param": ["7227201", "2"]
         },
         {
           "type": "QUEST_COND_QUEST_VAR_EQUAL",
-          "param": [
-            "1",
-            "0",
-            "72272"
-          ]
+          "param": ["1", "0", "72272"]
         }
       ],
       "priority": 5,
@@ -126,9 +106,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 722720102,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3003
-      ],
+      "npcIdRawNum": [3003],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -164,18 +142,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7227201",
-            "2"
-          ]
+          "param": ["7227201", "2"]
         },
         {
           "type": "QUEST_COND_QUEST_VAR_EQUAL",
-          "param": [
-            "1",
-            "1",
-            "72272"
-          ]
+          "param": ["1", "1", "72272"]
         }
       ],
       "priority": 5,
@@ -184,9 +155,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 722720201,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3003
-      ],
+      "npcIdRawNum": [3003],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

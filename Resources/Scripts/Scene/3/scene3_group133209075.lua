@@ -1,178 +1,106 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
-L0_1 = {}
-L0_1.group_id = 133209075
-L1_1 = {}
-L1_1.challenge_time = 180
-L1_1.hard_challenge_time = 75
-L1_1.father_challenge_id = 2005016
-L1_1.normal_challenge_id = 2005017
-L1_1.hard_challenge_id = 2005018
-L1_1.gallery_id = 17001
-L1_1.airwall_id = 75003
-L1_1.region_id = 75002
-L1_1.NPC_group_id = 133209079
-L1_1.weather_id = 3500
-L1_1.swordmaster_reminder_id = 1110471
-L2_1 = {}
-L3_1 = 75004
-L4_1 = 75005
-L5_1 = 75006
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-swordmaster_id = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 75004
-L3_1.monster_id = 25080202
-L4_1 = {}
-L4_1.x = -2182.269
-L4_1.y = 200.368
-L4_1.z = -3487.95
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 310.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 70
-L3_1.drop_id = 1000100
-L3_1.disableWander = true
-L4_1 = {}
-L5_1 = 5162
-L4_1[1] = L5_1
-L3_1.affix = L4_1
-L3_1.pose_id = 1
-L3_1.title_id = 10093
-L3_1.special_name_id = 10126
-L3_1.area_id = 11
-L4_1 = {}
-L4_1.config_id = 75005
-L4_1.monster_id = 25080202
-L5_1 = {}
-L5_1.x = -2182.269
-L5_1.y = 200.368
-L5_1.z = -3487.95
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 310.0
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.level = 80
-L4_1.drop_id = 1000100
-L4_1.disableWander = true
-L5_1 = {}
-L6_1 = 5163
-L5_1[1] = L6_1
-L4_1.affix = L5_1
-L4_1.pose_id = 1
-L4_1.title_id = 10093
-L4_1.special_name_id = 10126
-L4_1.area_id = 11
-L5_1 = {}
-L5_1.config_id = 75006
-L5_1.monster_id = 25080202
-L6_1 = {}
-L6_1.x = -2182.269
-L6_1.y = 200.368
-L6_1.z = -3487.95
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 310.0
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.level = 90
-L5_1.drop_id = 1000100
-L5_1.disableWander = true
-L6_1 = {}
-L7_1 = 5164
-L6_1[1] = L7_1
-L5_1.affix = L6_1
-L5_1.pose_id = 1
-L5_1.title_id = 10093
-L5_1.special_name_id = 10126
-L5_1.area_id = 11
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 75003
-L3_1.gadget_id = 70950060
-L4_1 = {}
-L4_1.x = -2188.346
-L4_1.y = 196.425
-L4_1.z = -3480.211
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 0.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.area_id = 11
-L2_1[1] = L3_1
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 75002
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 30
-L4_1 = {}
-L4_1.x = -2186.786
-L4_1.y = 200.404
-L4_1.z = -3480.135
-L3_1.pos = L4_1
-L3_1.area_id = 11
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 75001
-L4_1 = {}
-L4_1.x = -2193.967
-L4_1.y = 200.323
-L4_1.z = -3477.926
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 130.0
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.area_id = 11
-L2_1[1] = L3_1
-points = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 75002
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-L2_1 = require
-L3_1 = "V2_6/IrodoriMaster"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133209075
+}
+
+-- Trigger变量
+local defs = {
+	challenge_time = 180,
+	hard_challenge_time = 75,
+	father_challenge_id = 2005016,
+	normal_challenge_id = 2005017,
+	hard_challenge_id = 2005018,
+	gallery_id = 17001,
+	airwall_id = 75003,
+	region_id = 75002,
+	NPC_group_id = 133209079,
+	weather_id = 3500,
+	swordmaster_reminder_id = 1110471
+}
+
+-- DEFS_MISCS
+swordmaster_id = {
+75004,75005,75006
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	-- 难度1
+	{ config_id = 75004, monster_id = 25080202, pos = { x = -2182.269, y = 200.368, z = -3487.950 }, rot = { x = 0.000, y = 310.000, z = 0.000 }, level = 70, drop_id = 1000100, disableWander = true, affix = { 5162 }, pose_id = 1, title_id = 10093, special_name_id = 10126, area_id = 11 },
+	-- 难度2
+	{ config_id = 75005, monster_id = 25080202, pos = { x = -2182.269, y = 200.368, z = -3487.950 }, rot = { x = 0.000, y = 310.000, z = 0.000 }, level = 80, drop_id = 1000100, disableWander = true, affix = { 5163 }, pose_id = 1, title_id = 10093, special_name_id = 10126, area_id = 11 },
+	-- 难度3
+	{ config_id = 75006, monster_id = 25080202, pos = { x = -2182.269, y = 200.368, z = -3487.950 }, rot = { x = 0.000, y = 310.000, z = 0.000 }, level = 90, drop_id = 1000100, disableWander = true, affix = { 5164 }, pose_id = 1, title_id = 10093, special_name_id = 10126, area_id = 11 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 75003, gadget_id = 70950060, pos = { x = -2188.346, y = 196.425, z = -3480.211 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 11 }
+}
+
+-- 区域
+regions = {
+	{ config_id = 75002, shape = RegionShape.SPHERE, radius = 30, pos = { x = -2186.786, y = 200.404, z = -3480.135 }, area_id = 11 }
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 点位
+points = {
+	{ config_id = 75001, pos = { x = -2193.967, y = 200.323, z = -3477.926 }, rot = { x = 0.000, y = 130.000, z = 0.000 }, area_id = 11 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 75002 },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_6/IrodoriMaster"

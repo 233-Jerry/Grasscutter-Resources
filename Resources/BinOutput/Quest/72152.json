@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 3291995511,
-  "descTextMapHash": 0,
+  
   "id": 72152,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7215201,
-            0
-          ],
+          "param": [7215201, 0],
           "count": 0
         }
       ],
@@ -67,31 +64,19 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133210226"
-          ]
+          "param": ["3", "133210226"]
         },
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133210227"
-          ]
+          "param": ["3", "133210227"]
         },
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133210228"
-          ]
+          "param": ["3", "133210228"]
         },
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133210229"
-          ]
+          "param": ["3", "133210229"]
         }
       ],
       "failExec": [],
@@ -113,10 +98,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -158,10 +140,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -186,10 +165,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_DEL_PACK_ITEM",
-          "param": [
-            "100899",
-            "1"
-          ]
+          "param": ["100899", "1"]
         }
       ],
       "failExec": [],
@@ -207,10 +183,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_QUEST_NOT_RECEIVE",
-          "param": [
-            "7215203",
-            "1"
-          ]
+          "param": ["7215203", "1"]
         }
       ],
       "priority": 5,
@@ -219,9 +192,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 721520101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20336
-      ],
+      "npcIdRawNum": [20336],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Daoqi_72152/Q7215201",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

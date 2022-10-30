@@ -1,321 +1,198 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133220669
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 669001
-L2_1.gadget_id = 70500000
-L3_1 = {}
-L3_1.x = -2811.826
-L3_1.y = 190.263
-L3_1.z = -4058.793
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 0.0
-L3_1.z = 0.0
-L2_1.rot = L3_1
-L2_1.level = 27
-L2_1.point_type = 9144
-L2_1.isOneoff = true
-L2_1.area_id = 11
-L1_1[1] = L2_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1669002
-L2_1.name = "GATHER_669002"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GATHER
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GATHER_669002"
-L2_1.action = "action_EVENT_GATHER_669002"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1669003
-L3_1.name = "VARIABLE_CHANGE_669003"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_669003"
-L3_1.action = "action_EVENT_VARIABLE_CHANGE_669003"
-L3_1.trigger_count = 0
-L4_1 = {}
-L4_1.config_id = 1669004
-L4_1.name = "GROUP_LOAD_669004"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GROUP_LOAD
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GROUP_LOAD_669004"
-L4_1.action = "action_EVENT_GROUP_LOAD_669004"
-L4_1.trigger_count = 0
-L5_1 = {}
-L5_1.config_id = 1669005
-L5_1.name = "QUEST_START_669005"
-L6_1 = EventType
-L6_1 = L6_1.EVENT_QUEST_START
-L5_1.event = L6_1
-L5_1.source = "7219909"
-L5_1.condition = "condition_EVENT_QUEST_START_669005"
-L5_1.action = "action_EVENT_QUEST_START_669005"
-L5_1.trigger_count = 0
-L6_1 = {}
-L6_1.config_id = 1669006
-L6_1.name = "QUEST_START_669006"
-L7_1 = EventType
-L7_1 = L7_1.EVENT_QUEST_START
-L6_1.event = L7_1
-L6_1.source = "7219923"
-L6_1.condition = "condition_EVENT_QUEST_START_669006"
-L6_1.action = "action_EVENT_QUEST_START_669006"
-L6_1.trigger_count = 0
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "slabstone1"
-L2_1.value = 0
-L2_1.no_refresh = true
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 2
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 669001
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GATHER_669002"
-L5_1 = "VARIABLE_CHANGE_669003"
-L6_1 = "GROUP_LOAD_669004"
-L7_1 = "QUEST_START_669005"
-L8_1 = "QUEST_START_669006"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.param1
-  if 669001 ~= L2_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133220669
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 669001, gadget_id = 70500000, pos = { x = -2811.826, y = 190.263, z = -4058.793 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, point_type = 9144, isOneoff = true, area_id = 11 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	-- 第一块：拾取后slabstone=1
+	{ config_id = 1669002, name = "GATHER_669002", event = EventType.EVENT_GATHER, source = "", condition = "condition_EVENT_GATHER_669002", action = "action_EVENT_GATHER_669002", trigger_count = 0 },
+	-- 第一块：当slabstone1=1的时候给290发消息
+	{ config_id = 1669003, name = "VARIABLE_CHANGE_669003", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_669003", action = "action_EVENT_VARIABLE_CHANGE_669003", trigger_count = 0 },
+	-- 第一块：保底load：当slabstone=1的时候给290发消息
+	{ config_id = 1669004, name = "GROUP_LOAD_669004", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_669004", action = "action_EVENT_GROUP_LOAD_669004", trigger_count = 0 },
+	-- 第一块：任务09调取时改变变量
+	{ config_id = 1669005, name = "QUEST_START_669005", event = EventType.EVENT_QUEST_START, source = "7219909", condition = "condition_EVENT_QUEST_START_669005", action = "action_EVENT_QUEST_START_669005", trigger_count = 0 },
+	-- 第一块：任务23调取时改变变量
+	{ config_id = 1669006, name = "QUEST_START_669006", event = EventType.EVENT_QUEST_START, source = "7219923", condition = "condition_EVENT_QUEST_START_669006", action = "action_EVENT_QUEST_START_669006", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "slabstone1", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 2,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 669001 },
+		regions = { },
+		triggers = { "GATHER_669002", "VARIABLE_CHANGE_669003", "GROUP_LOAD_669004", "QUEST_START_669005", "QUEST_START_669006" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GATHER_669002(context, evt)
+	if 669001 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GATHER_669002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "slabstone1"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GATHER_669002(context, evt)
+	-- 将本组内变量名为 "slabstone1" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "slabstone1", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GATHER_669002 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "slabstone1"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_669003(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"slabstone1"为1
+	if ScriptLib.GetGroupVariableValue(context, "slabstone1") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_669003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "slabcount"
-  L5_2 = 1
-  L6_2 = 133220290
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_669003(context, evt)
+	-- 针对当前group内变量名为 "slabcount" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValueByGroup(context, "slabcount", 1, 133220290) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_669003 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CheckRemainGadgetCountByGroupId
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133220669
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_669004(context, evt)
+	-- 判断指定group组剩余gadget数量是否是0 
+	if ScriptLib.CheckRemainGadgetCountByGroupId(context, {group_id = 133220669}) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GROUP_LOAD_669004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "slabstone1"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_669004(context, evt)
+	-- 将本组内变量名为 "slabstone1" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "slabstone1", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GROUP_LOAD_669004 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CheckRemainGadgetCountByGroupId
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133220669
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_QUEST_START_669005(context, evt)
+	-- 判断指定group组剩余gadget数量是否是0 
+	if ScriptLib.CheckRemainGadgetCountByGroupId(context, {group_id = 133220669}) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_QUEST_START_669005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "slabstone1"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_669005(context, evt)
+	-- 将本组内变量名为 "slabstone1" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "slabstone1", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_669005 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CheckRemainGadgetCountByGroupId
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.group_id = 133220669
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 0 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_QUEST_START_669006(context, evt)
+	-- 判断指定group组剩余gadget数量是否是0 
+	if ScriptLib.CheckRemainGadgetCountByGroupId(context, {group_id = 133220669}) ~= 0 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_QUEST_START_669006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "slabstone1"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_QUEST_START_669006(context, evt)
+	-- 将本组内变量名为 "slabstone1" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "slabstone1", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_QUEST_START_669006 = L1_1

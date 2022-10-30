@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 1978060311,
-  "descTextMapHash": 0,
+  
   "id": 72180,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
@@ -67,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_LOCK_POINT",
-          "param": [
-            "3",
-            "354"
-          ]
+          "param": ["3", "354"]
         }
       ],
       "failExec": [],

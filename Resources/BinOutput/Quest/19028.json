@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902801
-          ],
+          "param": [105501, 1902801],
           "count": 0
         }
       ],
@@ -50,9 +47,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "3004"
-        ],
+        "param": ["3004"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -86,10 +81,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1902802,
-            0
-          ],
+          "param": [1902802, 0],
           "count": 0
         }
       ],
@@ -97,10 +89,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q19028_Shao",
-          "20"
-        ],
+        "param": ["Q19028_Shao", "20"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -134,10 +123,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902802
-          ],
+          "param": [105501, 1902802],
           "count": 0
         }
       ],
@@ -179,10 +165,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902802
-          ],
+          "param": [105501, 1902802],
           "count": 0
         }
       ],
@@ -224,10 +207,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902802
-          ],
+          "param": [105501, 1902802],
           "count": 0
         }
       ],
@@ -269,10 +249,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902802
-          ],
+          "param": [105501, 1902802],
           "count": 0
         }
       ],
@@ -314,10 +291,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902802
-          ],
+          "param": [105501, 1902802],
           "count": 0
         }
       ],
@@ -359,10 +333,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902802
-          ],
+          "param": [105501, 1902802],
           "count": 0
         }
       ],
@@ -404,10 +375,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902802
-          ],
+          "param": [105501, 1902802],
           "count": 0
         }
       ],
@@ -415,9 +383,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "3010"
-        ],
+        "param": ["3010"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -451,29 +417,21 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1902810,
-            0
-          ],
+          "param": [1902810, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q19028_Daobaotuan"
-        ],
+        "param": ["Q19028_Daobaotuan"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -491,10 +449,7 @@
       "failExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133221064",
-            "0"
-          ]
+          "param": ["133221064", "0"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -515,46 +470,31 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 1
         }
       ],
       "failCond": [
         {
           "_type": "QUEST_CONTENT_ANY_MANUAL_TRANSPORT",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            1902899,
-            0
-          ],
+          "param": [1902899, 0],
           "count": 0
         },
         {
           "_type": "QUEST_CONTENT_TEAM_DEAD",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         }
       ],
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q19028_Daobaotuan",
-          "30"
-        ],
+        "param": ["Q19028_Daobaotuan", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -571,18 +511,13 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133221064",
-            "0"
-          ]
+          "param": ["133221064", "0"]
         }
       ],
       "failExec": [
         {
           "_type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "1902810"
-          ]
+          "param": ["1902810"]
         }
       ],
       "LKPOHELCGKA": "",
@@ -603,10 +538,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902803
-          ],
+          "param": [105501, 1902803],
           "count": 0
         }
       ],
@@ -614,9 +546,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "505"
-        ],
+        "param": ["505"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -650,10 +580,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902804
-          ],
+          "param": [105501, 1902804],
           "count": 0
         }
       ],
@@ -661,9 +588,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "3004"
-        ],
+        "param": ["3004"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -680,10 +605,7 @@
       "finishExec": [
         {
           "_type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133221067",
-            "0"
-          ]
+          "param": ["133221067", "0"]
         }
       ],
       "failExec": [],
@@ -705,10 +627,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1902814,
-            0
-          ],
+          "param": [1902814, 0],
           "count": 0
         }
       ],
@@ -716,9 +635,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "Q19028_WulangEnd"
-        ],
+        "param": ["Q19028_WulangEnd"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -752,10 +669,7 @@
       "finishCond": [
         {
           "_type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105501,
-            1902805
-          ],
+          "param": [105501, 1902805],
           "count": 0
         }
       ],
@@ -763,9 +677,7 @@
       "guide": {
         "_type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [
-          "505"
-        ],
+        "param": ["505"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_NONE"
@@ -795,24 +707,15 @@
       "acceptCond": [
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1902810",
-            "2"
-          ]
+          "param": ["1902810", "2"]
         },
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1902811",
-            "2"
-          ]
+          "param": ["1902811", "2"]
         },
         {
           "_type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1902812",
-            "2"
-          ]
+          "param": ["1902812", "2"]
         }
       ],
       "priority": 5,
@@ -821,9 +724,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 190280801,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        3010
-      ],
+      "npcIdRawNum": [3010],
       "GHNCIOJDIEA": "QuestDialogue/COOP/CoopGorou/Q1902808",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -851,19 +752,10 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    574498610357,
-    935782991660,
-    1033375700978,
-    456633841269
-  ],
-  "OMKMAOLMNCO": [
-    964696423006
-  ],
+  "LGCLJGGNGBD": [574498610357, 935782991660, 1033375700978, 456633841269],
+  "OMKMAOLMNCO": [964696423006],
   "KPOKLMBEOBI": {
-    "3010": [
-      1190
-    ]
+    "3010": [1190]
   },
   "MGDNNNGPOGO": 0
 }

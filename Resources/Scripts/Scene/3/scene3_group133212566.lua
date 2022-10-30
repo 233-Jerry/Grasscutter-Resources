@@ -1,55 +1,81 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
-L0_1 = {}
-L0_1.group_id = 133212566
-L1_1 = {}
-L1_1.inner_region = 566001
-L1_1.related_region = 566001
-L1_1.outer_region = 566001
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 566001
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 20
-L4_1 = {}
-L4_1.x = -3507.351
-L4_1.y = 198.237
-L4_1.z = -2666.55
-L3_1.pos = L4_1
-L3_1.area_id = 13
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = false
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L5_1 = 566001
-L4_1[1] = L5_1
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-L2_1 = require
-L3_1 = "V2_0/SetPerformanceOptimizationWithRegion_V2.0"
-L2_1(L3_1)
+-- 基础信息
+local base_info = {
+	group_id = 133212566
+}
+
+-- Trigger变量
+local defs = {
+	inner_region = 566001,
+	related_region = 566001,
+	outer_region = 566001
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+	{ config_id = 566001, shape = RegionShape.SPHERE, radius = 20, pos = { x = -3507.351, y = 198.237, z = -2666.550 }, area_id = 13 }
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { 566001 },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_0/SetPerformanceOptimizationWithRegion_V2.0"

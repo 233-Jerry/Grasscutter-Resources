@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_ITEM_GIVING",
-          "param": [
-            7224404,
-            0
-          ],
+          "param": [7224404, 0],
           "count": 0
         }
       ],
@@ -67,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "5",
-            "155006043"
-          ]
+          "param": ["5", "155006043"]
         }
       ],
       "failExec": [],
@@ -88,16 +82,11 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7225501",
-            "2"
-          ]
+          "param": ["7225501", "2"]
         },
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
-          "param": [
-            "7224404"
-          ]
+          "param": ["7224404"]
         }
       ],
       "priority": 5,
@@ -106,9 +95,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 722550101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20500
-      ],
+      "npcIdRawNum": [20500],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",

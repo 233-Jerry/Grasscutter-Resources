@@ -1,163 +1,91 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
-L0_1 = {}
-L0_1.group_id = 133004001
-L1_1 = {}
-L1_1.gadget_id_1 = 8
-L2_1 = {}
-monsters = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 6
-L3_1.npc_id = 1202
-L4_1 = {}
-L4_1.x = 1859.34
-L4_1.y = 258.08
-L4_1.z = -575.6
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 0.0
-L4_1.y = 241.793
-L4_1.z = 0.0
-L3_1.rot = L4_1
-L3_1.pointID = 3
-L3_1.area_id = 3
-L4_1 = {}
-L4_1.config_id = 7
-L4_1.npc_id = 1203
-L5_1 = {}
-L5_1.x = 1928.381
-L5_1.y = 196.139
-L5_1.z = -1265.917
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 0.0
-L5_1.y = 94.064
-L5_1.z = 0.0
-L4_1.rot = L5_1
-L4_1.pointID = 4
-L4_1.area_id = 2
-L5_1 = {}
-L5_1.config_id = 16
-L5_1.npc_id = 1201
-L6_1 = {}
-L6_1.x = 2566.115
-L6_1.y = 214.087
-L6_1.z = -1323.474
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 0.0
-L6_1.y = 193.97
-L6_1.z = 0.0
-L5_1.rot = L6_1
-L5_1.pointID = 7
-L5_1.area_id = 1
-L6_1 = {}
-L6_1.config_id = 55
-L6_1.npc_id = 1204
-L7_1 = {}
-L7_1.x = 2642.847
-L7_1.y = 262.116
-L7_1.z = 176.326
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 76.917
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.pointID = 29
-L6_1.area_id = 4
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-npcs = L2_1
-L2_1 = {}
-gadgets = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 8
-L4_1 = RegionShape
-L4_1 = L4_1.SPHERE
-L3_1.shape = L4_1
-L3_1.radius = 10
-L4_1 = {}
-L4_1.x = 2290.692
-L4_1.y = 229.99
-L4_1.z = -822.145
-L3_1.pos = L4_1
-L3_1.area_id = 1
-L2_1[1] = L3_1
-regions = L2_1
-L2_1 = {}
-L3_1 = {}
-L3_1.config_id = 1000008
-L3_1.name = "ENTER_REGION_8"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_ENTER_REGION
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_ENTER_REGION_8"
-L3_1.action = ""
-L3_1.trigger_count = 0
-L2_1[1] = L3_1
-triggers = L2_1
-L2_1 = {}
-variables = L2_1
-L2_1 = {}
-L2_1.suite = 1
-L2_1.end_suite = 0
-L2_1.rand_suite = true
-init_config = L2_1
-L2_1 = {}
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L4_1 = {}
-L5_1 = 6
-L6_1 = 7
-L7_1 = 16
-L8_1 = 55
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L3_1.npcs = L4_1
-L3_1.rand_weight = 100
-L2_1[1] = L3_1
-suites = L2_1
-function L2_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetEntityType
-  L3_2 = A1_2.target_eid
-  L2_2 = L2_2(A0_2, L3_2)
-  L3_2 = EntityType
-  L3_2 = L3_2.AVATAR
-  if L2_2 == L3_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.GetQuestState
-    L3_2 = A0_2
-    L4_2 = A1_2.target_eid
-    L5_2 = 37001
-    L2_2 = L2_2(L3_2, L4_2, L5_2)
-    L3_2 = QuestState
-    L3_2 = L3_2.UNFINISHED
-    if L2_2 == L3_2 then
-      L2_2 = A1_2.param1
-      L3_2 = L1_1.gadget_id_1
-      if L2_2 == L3_2 then
-        L2_2 = true
-        return L2_2
-      end
-    end
-  end
-  L2_2 = false
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133004001
+}
+
+-- Trigger变量
+local defs = {
+	gadget_id_1 = 8
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+	{ config_id = 6, npc_id = 1202, pos = { x = 1859.340, y = 258.080, z = -575.600 }, rot = { x = 0.000, y = 241.793, z = 0.000 }, pointID = 3, area_id = 3 },
+	{ config_id = 7, npc_id = 1203, pos = { x = 1928.381, y = 196.139, z = -1265.917 }, rot = { x = 0.000, y = 94.064, z = 0.000 }, pointID = 4, area_id = 2 },
+	{ config_id = 16, npc_id = 1201, pos = { x = 2566.115, y = 214.087, z = -1323.474 }, rot = { x = 0.000, y = 193.970, z = 0.000 }, pointID = 7, area_id = 1 },
+	{ config_id = 55, npc_id = 1204, pos = { x = 2642.847, y = 262.116, z = 176.326 }, rot = { x = 0.000, y = 76.917, z = 0.000 }, pointID = 29, area_id = 4 }
+}
+
+-- 装置
+gadgets = {
+}
+
+-- 区域
+regions = {
+	{ config_id = 8, shape = RegionShape.SPHERE, radius = 10, pos = { x = 2290.692, y = 229.990, z = -822.145 }, area_id = 1 }
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000008, name = "ENTER_REGION_8", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_8", action = "", trigger_count = 0 }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = suite_1,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		npcs = { 6, 7, 16, 55 },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_ENTER_REGION_8(context, evt)
+	if ScriptLib.GetEntityType(context, evt.target_eid) == EntityType.AVATAR and ScriptLib.GetQuestState(context, evt.target_eid, 37001) == QuestState.UNFINISHED and evt.param1 == defs.gadget_id_1 then
+		return true
+	end
+	return false
 end
-condition_EVENT_ENTER_REGION_8 = L2_1

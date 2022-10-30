@@ -1,321 +1,118 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
-L0_1 = {}
-L0_1.group_id = 133104131
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 414
-L2_1.gadget_id = 70220001
-L3_1 = {}
-L3_1.x = 18.59
-L3_1.y = 272.015
-L3_1.z = 178.101
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 354.594
-L3_1.y = 0.468
-L3_1.z = 350.103
-L2_1.rot = L3_1
-L2_1.level = 19
-L2_1.isOneoff = true
-L2_1.area_id = 7
-L3_1 = {}
-L3_1.config_id = 415
-L3_1.gadget_id = 70220001
-L4_1 = {}
-L4_1.x = 18.572
-L4_1.y = 271.942
-L4_1.z = 183.551
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 2.173
-L4_1.y = 359.921
-L4_1.z = 355.857
-L3_1.rot = L4_1
-L3_1.level = 19
-L3_1.isOneoff = true
-L3_1.area_id = 7
-L4_1 = {}
-L4_1.config_id = 416
-L4_1.gadget_id = 70220001
-L5_1 = {}
-L5_1.x = 23.697
-L5_1.y = 271.466
-L5_1.z = 178.644
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 359.562
-L5_1.y = 0.023
-L5_1.z = 354.116
-L4_1.rot = L5_1
-L4_1.level = 19
-L4_1.isOneoff = true
-L4_1.area_id = 7
-L5_1 = {}
-L5_1.config_id = 417
-L5_1.gadget_id = 70220001
-L6_1 = {}
-L6_1.x = 23.335
-L6_1.y = 271.51
-L6_1.z = 179.534
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 359.562
-L6_1.y = 0.023
-L6_1.z = 354.116
-L5_1.rot = L6_1
-L5_1.level = 19
-L5_1.isOneoff = true
-L5_1.area_id = 7
-L6_1 = {}
-L6_1.config_id = 418
-L6_1.gadget_id = 70220001
-L7_1 = {}
-L7_1.x = 23.497
-L7_1.y = 271.545
-L7_1.z = 183.986
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 356.488
-L7_1.y = 0.111
-L7_1.z = 356.385
-L6_1.rot = L7_1
-L6_1.level = 19
-L6_1.isOneoff = true
-L6_1.area_id = 7
-L7_1 = {}
-L7_1.config_id = 419
-L7_1.gadget_id = 70220001
-L8_1 = {}
-L8_1.x = 20.936
-L8_1.y = 271.756
-L8_1.z = 182.265
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 0.526
-L8_1.y = 359.975
-L8_1.z = 354.456
-L7_1.rot = L8_1
-L7_1.level = 19
-L7_1.isOneoff = true
-L7_1.area_id = 7
-L8_1 = {}
-L8_1.config_id = 420
-L8_1.gadget_id = 70220001
-L9_1 = {}
-L9_1.x = 20.719
-L9_1.y = 271.749
-L9_1.z = 186.02
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 359.719
-L9_1.y = 0.003
-L9_1.z = 358.909
-L8_1.rot = L9_1
-L8_1.level = 19
-L8_1.isOneoff = true
-L8_1.area_id = 7
-L9_1 = {}
-L9_1.config_id = 421
-L9_1.gadget_id = 70220001
-L10_1 = {}
-L10_1.x = 18.674
-L10_1.y = 271.898
-L10_1.z = 184.534
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 2.173
-L10_1.y = 359.921
-L10_1.z = 355.857
-L9_1.rot = L10_1
-L9_1.level = 19
-L9_1.isOneoff = true
-L9_1.area_id = 7
-L10_1 = {}
-L10_1.config_id = 422
-L10_1.gadget_id = 70220001
-L11_1 = {}
-L11_1.x = 20.061
-L11_1.y = 271.877
-L11_1.z = 179.467
-L10_1.pos = L11_1
-L11_1 = {}
-L11_1.x = 0.783
-L11_1.y = 359.962
-L11_1.z = 354.459
-L10_1.rot = L11_1
-L10_1.level = 19
-L10_1.isOneoff = true
-L10_1.area_id = 7
-L11_1 = {}
-L11_1.config_id = 423
-L11_1.gadget_id = 70211111
-L12_1 = {}
-L12_1.x = 21.425
-L12_1.y = 271.612
-L12_1.z = 183.971
-L11_1.pos = L12_1
-L12_1 = {}
-L12_1.x = 0.0
-L12_1.y = 0.0
-L12_1.z = 0.0
-L11_1.rot = L12_1
-L11_1.level = 16
-L11_1.drop_tag = "\232\167\163\232\176\156\228\184\173\231\186\167\231\146\131\230\156\136"
-L11_1.isOneoff = true
-L11_1.persistent = true
-L12_1 = {}
-L12_1.name = "chest"
-L12_1.exp = 1
-L11_1.explore = L12_1
-L11_1.area_id = 7
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-L1_1[9] = L10_1
-L1_1[10] = L11_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1000219
-L2_1.name = "ANY_GADGET_DIE_219"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_ANY_GADGET_DIE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = ""
-L2_1.action = "action_EVENT_ANY_GADGET_DIE_219"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1000353
-L3_1.name = "VARIABLE_CHANGE_353"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_VARIABLE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_VARIABLE_CHANGE_353"
-L3_1.action = "action_EVENT_VARIABLE_CHANGE_353"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "count"
-L2_1.value = 0
-L2_1.no_refresh = true
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 414
-L5_1 = 415
-L6_1 = 416
-L7_1 = 417
-L8_1 = 418
-L9_1 = 419
-L10_1 = 420
-L11_1 = 421
-L12_1 = 422
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L3_1[5] = L8_1
-L3_1[6] = L9_1
-L3_1[7] = L10_1
-L3_1[8] = L11_1
-L3_1[9] = L12_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "ANY_GADGET_DIE_219"
-L5_1 = "VARIABLE_CHANGE_353"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L1_1[1] = L2_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.ChangeGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L5_2 = 1
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : change_GroupVariable"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133104131
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 414, gadget_id = 70220001, pos = { x = 18.590, y = 272.015, z = 178.101 }, rot = { x = 354.594, y = 0.468, z = 350.103 }, level = 19, isOneoff = true, area_id = 7 },
+	{ config_id = 415, gadget_id = 70220001, pos = { x = 18.572, y = 271.942, z = 183.551 }, rot = { x = 2.173, y = 359.921, z = 355.857 }, level = 19, isOneoff = true, area_id = 7 },
+	{ config_id = 416, gadget_id = 70220001, pos = { x = 23.697, y = 271.466, z = 178.644 }, rot = { x = 359.562, y = 0.023, z = 354.116 }, level = 19, isOneoff = true, area_id = 7 },
+	{ config_id = 417, gadget_id = 70220001, pos = { x = 23.335, y = 271.510, z = 179.534 }, rot = { x = 359.562, y = 0.023, z = 354.116 }, level = 19, isOneoff = true, area_id = 7 },
+	{ config_id = 418, gadget_id = 70220001, pos = { x = 23.497, y = 271.545, z = 183.986 }, rot = { x = 356.488, y = 0.111, z = 356.385 }, level = 19, isOneoff = true, area_id = 7 },
+	{ config_id = 419, gadget_id = 70220001, pos = { x = 20.936, y = 271.756, z = 182.265 }, rot = { x = 0.526, y = 359.975, z = 354.456 }, level = 19, isOneoff = true, area_id = 7 },
+	{ config_id = 420, gadget_id = 70220001, pos = { x = 20.719, y = 271.749, z = 186.020 }, rot = { x = 359.719, y = 0.003, z = 358.909 }, level = 19, isOneoff = true, area_id = 7 },
+	{ config_id = 421, gadget_id = 70220001, pos = { x = 18.674, y = 271.898, z = 184.534 }, rot = { x = 2.173, y = 359.921, z = 355.857 }, level = 19, isOneoff = true, area_id = 7 },
+	{ config_id = 422, gadget_id = 70220001, pos = { x = 20.061, y = 271.877, z = 179.467 }, rot = { x = 0.783, y = 359.962, z = 354.459 }, level = 19, isOneoff = true, area_id = 7 },
+	{ config_id = 423, gadget_id = 70211111, pos = { x = 21.425, y = 271.612, z = 183.971 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 16, drop_tag = "解谜中级璃月", isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 7 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1000219, name = "ANY_GADGET_DIE_219", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "", action = "action_EVENT_ANY_GADGET_DIE_219", trigger_count = 0 },
+	{ config_id = 1000353, name = "VARIABLE_CHANGE_353", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_353", action = "action_EVENT_VARIABLE_CHANGE_353" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "count", value = 0, no_refresh = true }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 414, 415, 416, 417, 418, 419, 420, 421, 422 },
+		regions = { },
+		triggers = { "ANY_GADGET_DIE_219", "VARIABLE_CHANGE_353" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_ANY_GADGET_DIE_219(context, evt)
+	-- 针对当前group内变量名为 "count" 的变量，进行修改，变化值为 1
+	if 0 ~= ScriptLib.ChangeGroupVariableValue(context, "count", 1) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : change_GroupVariable")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_ANY_GADGET_DIE_219 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "count"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 9 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_353(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"count"为9
+	if ScriptLib.GetGroupVariableValue(context, "count") ~= 9 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_353 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 423
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_353(context, evt)
+	-- 创建id为423的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 423 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_353 = L1_1

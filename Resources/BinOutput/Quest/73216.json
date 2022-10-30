@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 1897231023,
-  "descTextMapHash": 0,
+  
   "id": 73216,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [
-            101989,
-            0
-          ],
+          "param": [101989, 0],
           "count": 1
         }
       ],
@@ -67,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
-          "param": [
-            "73110",
-            "1"
-          ]
+          "param": ["73110", "1"]
         }
       ],
       "failExec": [],
@@ -79,12 +73,8 @@
     }
   ],
   "talks": [],
-  "LGCLJGGNGBD": [
-    1060996867895
-  ],
-  "OMKMAOLMNCO": [
-    229996688055
-  ],
+  "LGCLJGGNGBD": [1060996867895],
+  "OMKMAOLMNCO": [229996688055],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 0
 }

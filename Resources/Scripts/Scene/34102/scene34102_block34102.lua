@@ -1,55 +1,7 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L1_1 = {}
-L1_1.id = 234102001
-L1_1.refresh_id = 1
-L2_1 = {}
-L2_1.x = 1.031
-L2_1.y = 0.003
-L2_1.z = 8.245
-L1_1.pos = L2_1
-L2_1 = {}
-L3_1 = "CHANGE_HP_SUB_DRAWN"
-L2_1[1] = L3_1
-L1_1.forbid_monster_die_types = L2_1
-L2_1 = {}
-L2_1.id = 234102002
-L2_1.refresh_id = 1
-L3_1 = {}
-L3_1.x = -0.246
-L3_1.y = 0.003
-L3_1.z = -9.706
-L2_1.pos = L3_1
-L3_1 = {}
-L4_1 = "CHANGE_HP_SUB_DRAWN"
-L3_1[1] = L4_1
-L2_1.forbid_monster_die_types = L3_1
-L3_1 = {}
-L3_1.id = 234102003
-L3_1.refresh_id = 1001
-L4_1 = {}
-L4_1.x = 5.285
-L4_1.y = 0.003
-L4_1.z = 1.05
-L3_1.pos = L4_1
-L4_1 = {}
-L5_1 = "CHANGE_HP_SUB_DRAWN"
-L4_1[1] = L5_1
-L3_1.forbid_monster_die_types = L4_1
-L4_1 = {}
-L4_1.id = 234102004
-L4_1.refresh_id = 1
-L5_1 = {}
-L5_1.x = -2.093
-L5_1.y = -0.006
-L5_1.z = -0.71
-L4_1.pos = L5_1
-L5_1 = {}
-L6_1 = "CHANGE_HP_SUB_DRAWN"
-L5_1[1] = L6_1
-L4_1.forbid_monster_die_types = L5_1
-L0_1[1] = L1_1
-L0_1[2] = L2_1
-L0_1[3] = L3_1
-L0_1[4] = L4_1
-groups = L0_1
+-- 所有的group
+groups = {
+	{ id = 234102001, refresh_id = 1, pos = { x = 1.031, y = 0.003, z = 8.245 }, forbid_monster_die_types = { "CHANGE_HP_SUB_DRAWN" } },
+	{ id = 234102002, refresh_id = 1, pos = { x = -0.246, y = 0.003, z = -9.706 }, forbid_monster_die_types = { "CHANGE_HP_SUB_DRAWN" } },
+	{ id = 234102003, refresh_id = 1001, pos = { x = 5.285, y = 0.003, z = 1.050 }, forbid_monster_die_types = { "CHANGE_HP_SUB_DRAWN" } },
+	{ id = 234102004, refresh_id = 1, pos = { x = -2.093, y = -0.006, z = -0.710 }, forbid_monster_die_types = { "CHANGE_HP_SUB_DRAWN" } }
+}

@@ -1,163 +1,97 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
-L0_1 = {}
-L0_1.group_id = 133222178
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 178001
-L2_1.gadget_id = 70500000
-L3_1 = {}
-L3_1.x = -4301.741
-L3_1.y = 201.355
-L3_1.z = -4308.355
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 1.025
-L3_1.y = 328.542
-L3_1.z = 2.176
-L2_1.rot = L3_1
-L2_1.level = 1
-L2_1.point_type = 1005
-L2_1.persistent = true
-L2_1.area_id = 14
-L3_1 = {}
-L3_1.config_id = 178002
-L3_1.gadget_id = 70500000
-L4_1 = {}
-L4_1.x = -4305.492
-L4_1.y = 201.788
-L4_1.z = -4304.475
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 2.24
-L4_1.y = 7.101
-L4_1.z = 7.664
-L3_1.rot = L4_1
-L3_1.level = 1
-L3_1.point_type = 1008
-L3_1.persistent = true
-L3_1.area_id = 14
-L4_1 = {}
-L4_1.config_id = 178003
-L4_1.gadget_id = 70500000
-L5_1 = {}
-L5_1.x = -4307.913
-L5_1.y = 201.328
-L5_1.z = -4297.75
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 359.798
-L5_1.y = 303.909
-L5_1.z = 24.459
-L4_1.rot = L5_1
-L4_1.level = 1
-L4_1.point_type = 1005
-L4_1.persistent = true
-L4_1.area_id = 14
-L5_1 = {}
-L5_1.config_id = 178004
-L5_1.gadget_id = 70500000
-L6_1 = {}
-L6_1.x = -4305.564
-L6_1.y = 200.994
-L6_1.z = -4308.315
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 340.456
-L6_1.y = 6.443
-L6_1.z = 355.777
-L5_1.rot = L6_1
-L5_1.level = 1
-L5_1.point_type = 1008
-L5_1.persistent = true
-L5_1.area_id = 14
-L6_1 = {}
-L6_1.config_id = 178005
-L6_1.gadget_id = 70360001
-L7_1 = {}
-L7_1.x = -4302.612
-L7_1.y = 201.302
-L7_1.z = -4306.502
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 0.0
-L7_1.y = 0.0
-L7_1.z = 0.0
-L6_1.rot = L7_1
-L6_1.level = 1
-L6_1.persistent = true
-L6_1.area_id = 14
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "GroupCompletion"
-L2_1.value = 0
-L2_1.no_refresh = false
-L1_1[1] = L2_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 178001
-L7_1 = 178002
-L8_1 = 178003
-L9_1 = 178004
-L10_1 = 178005
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L5_1[5] = L10_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-L1_1 = require
-L2_1 = "V2_0/OreBlossomGroup"
-L1_1(L2_1)
+-- 基础信息
+local base_info = {
+	group_id = 133222178
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 178001, gadget_id = 70500000, pos = { x = -4301.741, y = 201.355, z = -4308.355 }, rot = { x = 1.025, y = 328.542, z = 2.176 }, level = 1, point_type = 1005, persistent = true, area_id = 14 },
+	{ config_id = 178002, gadget_id = 70500000, pos = { x = -4305.492, y = 201.788, z = -4304.475 }, rot = { x = 2.240, y = 7.101, z = 7.664 }, level = 1, point_type = 1008, persistent = true, area_id = 14 },
+	{ config_id = 178003, gadget_id = 70500000, pos = { x = -4307.913, y = 201.328, z = -4297.750 }, rot = { x = 359.798, y = 303.909, z = 24.459 }, level = 1, point_type = 1005, persistent = true, area_id = 14 },
+	{ config_id = 178004, gadget_id = 70500000, pos = { x = -4305.564, y = 200.994, z = -4308.315 }, rot = { x = 340.456, y = 6.443, z = 355.777 }, level = 1, point_type = 1008, persistent = true, area_id = 14 },
+	{ config_id = 178005, gadget_id = 70360001, pos = { x = -4302.612, y = 201.302, z = -4306.502 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, persistent = true, area_id = 14 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "GroupCompletion", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = 在suite3内添加魔晶矿,
+		monsters = { },
+		gadgets = { 178001, 178002, 178003, 178004, 178005 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+require "V2_0/OreBlossomGroup"

@@ -1,325 +1,163 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
-L0_1 = {}
-L0_1.group_id = 133103303
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 303001
-L2_1.monster_id = 21011201
-L3_1 = {}
-L3_1.x = 765.315
-L3_1.y = 318.263
-L3_1.z = 1791.112
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 356.167
-L3_1.y = 321.696
-L3_1.z = 8.831
-L2_1.rot = L3_1
-L2_1.level = 24
-L2_1.drop_tag = "\228\184\152\228\184\152\228\186\186"
-L2_1.area_id = 6
-L3_1 = {}
-L3_1.config_id = 303002
-L3_1.monster_id = 28020301
-L4_1 = {}
-L4_1.x = 765.399
-L4_1.y = 318.426
-L4_1.z = 1791.297
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 356.167
-L4_1.y = 321.696
-L4_1.z = 8.831
-L3_1.rot = L4_1
-L3_1.level = 24
-L3_1.drop_tag = "\232\181\176\229\133\189"
-L3_1.area_id = 6
-L4_1 = {}
-L4_1.config_id = 303003
-L4_1.monster_id = 28020102
-L5_1 = {}
-L5_1.x = 765.356
-L5_1.y = 318.436
-L5_1.z = 1791.273
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 356.167
-L5_1.y = 321.696
-L5_1.z = 8.831
-L4_1.rot = L5_1
-L4_1.level = 24
-L4_1.drop_tag = "\232\181\176\229\133\189"
-L4_1.area_id = 6
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 303004
-L2_1.gadget_id = 70360045
-L3_1 = {}
-L3_1.x = 765.321
-L3_1.y = 317.796
-L3_1.z = 1791.035
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 356.167
-L3_1.y = 321.696
-L3_1.z = 8.831
-L2_1.rot = L3_1
-L2_1.level = 24
-L2_1.persistent = true
-L2_1.area_id = 6
-L3_1 = {}
-L3_1.config_id = 303005
-L3_1.gadget_id = 70211101
-L4_1 = {}
-L4_1.x = 765.275
-L4_1.y = 318.329
-L4_1.z = 1791.166
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 356.167
-L4_1.y = 321.696
-L4_1.z = 8.831
-L3_1.rot = L4_1
-L3_1.level = 21
-L3_1.drop_tag = "\232\167\163\232\176\156\228\189\142\231\186\167\231\146\131\230\156\136"
-L3_1.showcutscene = true
-L3_1.isOneoff = true
-L3_1.persistent = true
-L4_1 = {}
-L4_1.name = "chest"
-L4_1.exp = 1
-L3_1.explore = L4_1
-L3_1.area_id = 6
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1303006
-L2_1.name = "GADGET_STATE_CHANGE_303006"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_GADGET_STATE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_303006"
-L2_1.action = "action_EVENT_GADGET_STATE_CHANGE_303006"
-L2_1.trigger_count = 0
-L3_1 = {}
-L3_1.config_id = 1303007
-L3_1.name = "GADGET_STATE_CHANGE_303007"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_GADGET_STATE_CHANGE
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_303007"
-L3_1.action = "action_EVENT_GADGET_STATE_CHANGE_303007"
-L4_1 = {}
-L4_1.config_id = 1303008
-L4_1.name = "GADGET_STATE_CHANGE_303008"
-L5_1 = EventType
-L5_1 = L5_1.EVENT_GADGET_STATE_CHANGE
-L4_1.event = L5_1
-L4_1.source = ""
-L4_1.condition = "condition_EVENT_GADGET_STATE_CHANGE_303008"
-L4_1.action = "action_EVENT_GADGET_STATE_CHANGE_303008"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-triggers = L1_1
-L1_1 = {}
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = true
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 303004
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "GADGET_STATE_CHANGE_303006"
-L3_1[1] = L4_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 303004
-L4_1[1] = L5_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L5_1 = "GADGET_STATE_CHANGE_303007"
-L4_1[1] = L5_1
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L4_1 = {}
-L5_1 = {}
-L4_1.monsters = L5_1
-L5_1 = {}
-L6_1 = 303004
-L5_1[1] = L6_1
-L4_1.gadgets = L5_1
-L5_1 = {}
-L4_1.regions = L5_1
-L5_1 = {}
-L6_1 = "GADGET_STATE_CHANGE_303008"
-L5_1[1] = L6_1
-L4_1.triggers = L5_1
-L4_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 303004 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133103303
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+	{ config_id = 303001, monster_id = 21011201, pos = { x = 765.315, y = 318.263, z = 1791.112 }, rot = { x = 356.167, y = 321.696, z = 8.831 }, level = 24, drop_tag = "丘丘人", area_id = 6 },
+	{ config_id = 303002, monster_id = 28020301, pos = { x = 765.399, y = 318.426, z = 1791.297 }, rot = { x = 356.167, y = 321.696, z = 8.831 }, level = 24, drop_tag = "走兽", area_id = 6 },
+	{ config_id = 303003, monster_id = 28020102, pos = { x = 765.356, y = 318.436, z = 1791.273 }, rot = { x = 356.167, y = 321.696, z = 8.831 }, level = 24, drop_tag = "走兽", area_id = 6 }
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 303004, gadget_id = 70360045, pos = { x = 765.321, y = 317.796, z = 1791.035 }, rot = { x = 356.167, y = 321.696, z = 8.831 }, level = 24, persistent = true, area_id = 6 },
+	{ config_id = 303005, gadget_id = 70211101, pos = { x = 765.275, y = 318.329, z = 1791.166 }, rot = { x = 356.167, y = 321.696, z = 8.831 }, level = 21, drop_tag = "解谜低级璃月", showcutscene = true, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 6 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1303006, name = "GADGET_STATE_CHANGE_303006", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_303006", action = "action_EVENT_GADGET_STATE_CHANGE_303006", trigger_count = 0 },
+	{ config_id = 1303007, name = "GADGET_STATE_CHANGE_303007", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_303007", action = "action_EVENT_GADGET_STATE_CHANGE_303007" },
+	{ config_id = 1303008, name = "GADGET_STATE_CHANGE_303008", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_303008", action = "action_EVENT_GADGET_STATE_CHANGE_303008" }
+}
+
+-- 变量
+variables = {
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = true
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 303004 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_303006" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 303004 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_303007" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 3,
+		-- description = ,
+		monsters = { },
+		gadgets = { 303004 },
+		regions = { },
+		triggers = { "GADGET_STATE_CHANGE_303008" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_303006(context, evt)
+	if 303004 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_303006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateGadget
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 303005
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_gadget"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonster
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 303003
-  L4_2.delay_time = 0
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_monster"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_303006(context, evt)
+	-- 创建id为303005的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 303005 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 延迟0秒刷怪
+	if 0 ~= ScriptLib.CreateMonster(context, { config_id = 303003, delay_time = 0 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_monster")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_303006 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 303004 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_303007(context, evt)
+	if 303004 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_303007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonster
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 303001
-  L4_2.delay_time = 0
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_monster"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_303007(context, evt)
+	-- 延迟0秒刷怪
+	if 0 ~= ScriptLib.CreateMonster(context, { config_id = 303001, delay_time = 0 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_monster")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_303007 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = A1_2.param2
-  if 303004 == L2_2 then
-    L2_2 = GadgetState
-    L2_2 = L2_2.GearStart
-    L3_2 = A1_2.param1
-    if L2_2 == L3_2 then
-      goto lbl_11
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_11::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_GADGET_STATE_CHANGE_303008(context, evt)
+	if 303004 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_GADGET_STATE_CHANGE_303008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = ScriptLib
-  L2_2 = L2_2.CreateMonster
-  L3_2 = A0_2
-  L4_2 = {}
-  L4_2.config_id = 303002
-  L4_2.delay_time = 0
-  L2_2 = L2_2(L3_2, L4_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : create_monster"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+
+-- 触发操作
+function action_EVENT_GADGET_STATE_CHANGE_303008(context, evt)
+	-- 延迟0秒刷怪
+	if 0 ~= ScriptLib.CreateMonster(context, { config_id = 303002, delay_time = 0 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_monster")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_GADGET_STATE_CHANGE_303008 = L1_1

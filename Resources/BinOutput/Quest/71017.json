@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 2990568047,
-  "descTextMapHash": 0,
+  
   "id": 71017,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            2200901,
-            0
-          ],
+          "param": [2200901, 0],
           "count": 1
         }
       ],
@@ -67,10 +64,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133113002,1"
-          ]
+          "param": ["3", "133113002,1"]
         }
       ],
       "failExec": [],
@@ -92,10 +86,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7101702,
-            0
-          ],
+          "param": [7101702, 0],
           "count": 0
         }
       ],

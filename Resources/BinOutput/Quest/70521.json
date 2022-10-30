@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    170521
-  ],
+  "rewardIdList": [170521],
   "showType": "QUEST_SHOW",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7052101,
-            0
-          ],
+          "param": [7052101, 0],
           "count": 0
         }
       ],
@@ -86,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7052101,
-            0
-          ],
+          "param": [7052101, 0],
           "count": 0
         }
       ],
@@ -97,10 +89,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q7052101_N1002",
-          "0"
-        ],
+        "param": ["Q7052101_N1002", "0"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -117,17 +106,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "7052102",
-            "1"
-          ]
+          "param": ["7052102", "1"]
         },
         {
           "type": "QUEST_EXEC_LOCK_POINT",
-          "param": [
-            "3",
-            "695,696"
-          ]
+          "param": ["3", "695,696"]
         }
       ],
       "failExec": [],
@@ -145,10 +128,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7052102",
-            "2"
-          ]
+          "param": ["7052102", "2"]
         }
       ],
       "priority": 5,
@@ -157,11 +137,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 705210101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        1029,
-        1002,
-        30234
-      ],
+      "npcIdRawNum": [1029, 1002, 30234],
       "GHNCIOJDIEA": "QuestDialogue/WQ/Vintage_70521/Q7052101",
       "MABMOKMFNJP": "TALK_HERO_LOCAL",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -189,9 +165,7 @@
       "POCLCIKJDPI": 0
     }
   ],
-  "LGCLJGGNGBD": [
-    40205056658
-  ],
+  "LGCLJGGNGBD": [40205056658],
   "OMKMAOLMNCO": [],
   "KPOKLMBEOBI": {},
   "MGDNNNGPOGO": 170521

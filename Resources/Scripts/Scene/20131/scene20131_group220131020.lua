@@ -1,253 +1,171 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 220131020
-L1_1 = {}
-L1_1.box_gadget_id_1 = 70290405
-L2_1 = {}
-L3_1 = 1
-L2_1[1] = L3_1
-L1_1.config_suites = L2_1
-L1_1.point_array_id = 4
-L1_1.option_id = 193
-L1_1.reminder_level_boarder = 400119
-L1_1.reminder_array_boarder = 400119
-L1_1.reminder_box_conflict = 400119
-L1_1.reminder_right_pos = 201310107
-L2_1 = {}
-L3_1 = {}
-L4_1 = 0
-L5_1 = 0
-L6_1 = 0
-L7_1 = 0
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L4_1 = {}
-L5_1 = 0
-L6_1 = 1
-L7_1 = 1
-L8_1 = 0
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L5_1 = {}
-L6_1 = 0
-L7_1 = 1
-L8_1 = 1
-L9_1 = 0
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L6_1 = {}
-L7_1 = 0
-L8_1 = 0
-L9_1 = 0
-L10_1 = 0
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L2_1[1] = L3_1
-L2_1[2] = L4_1
-L2_1[3] = L5_1
-L2_1[4] = L6_1
-L3_1 = {}
-L4_1 = {}
-L5_1 = 0
-L6_1 = 0
-L7_1 = 0
-L8_1 = 0
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L5_1 = {}
-L6_1 = 0
-L7_1 = 4
-L8_1 = 3
-L9_1 = 0
-L5_1[1] = L6_1
-L5_1[2] = L7_1
-L5_1[3] = L8_1
-L5_1[4] = L9_1
-L6_1 = {}
-L7_1 = 0
-L8_1 = 2
-L9_1 = 1
-L10_1 = 0
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L6_1[3] = L9_1
-L6_1[4] = L10_1
-L7_1 = {}
-L8_1 = 0
-L9_1 = 0
-L10_1 = 0
-L11_1 = 0
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L7_1[3] = L10_1
-L7_1[4] = L11_1
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L3_1[3] = L6_1
-L3_1[4] = L7_1
-L4_1 = {}
-L5_1 = {}
-L5_1.config_id = 20001
-L6_1 = {}
-L6_1.x = 3
-L6_1.z = 3
-L5_1.pos = L6_1
-L4_1[1] = L5_1
-L5_1 = {}
-L5_1.config_id = 20002
-L6_1 = {}
-L6_1.x = 2
-L6_1.z = 3
-L5_1.pos = L6_1
-L4_1[2] = L5_1
-L5_1 = {}
-L6_1 = {}
-L7_1 = 1
-L8_1 = 2
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.box_config_id = L6_1
-L6_1 = {}
-L7_1 = 3
-L8_1 = 4
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L5_1.target_point_id = L6_1
-L6_1 = {}
-L7_1 = {}
-L8_1 = 1
-L9_1 = 2
-L7_1[1] = L8_1
-L7_1[2] = L9_1
-L8_1 = {}
-L9_1 = 3
-L10_1 = 4
-L8_1[1] = L9_1
-L8_1[2] = L10_1
-L6_1[1] = L7_1
-L6_1[2] = L8_1
-L7_1 = {}
-monsters = L7_1
-L7_1 = {}
-npcs = L7_1
-L7_1 = {}
-L8_1 = {}
-L8_1.config_id = 20001
-L8_1.gadget_id = 70290405
-L9_1 = {}
-L9_1.x = 64.877
-L9_1.y = 10.836
-L9_1.z = -44.168
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L7_1[20001] = L8_1
-L8_1 = {}
-L8_1.config_id = 20002
-L8_1.gadget_id = 70290405
-L9_1 = {}
-L9_1.x = 64.877
-L9_1.y = 10.836
-L9_1.z = -39.662
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 0.0
-L9_1.y = 0.0
-L9_1.z = 0.0
-L8_1.rot = L9_1
-L8_1.level = 1
-L8_1.is_use_point_array = true
-L7_1[20002] = L8_1
-gadgets = L7_1
-L7_1 = {}
-regions = L7_1
-L7_1 = {}
-L8_1 = {}
-L8_1.config_id = 1020003
-L8_1.name = "VARIABLE_CHANGE_20003"
-L9_1 = EventType
-L9_1 = L9_1.EVENT_VARIABLE_CHANGE
-L8_1.event = L9_1
-L8_1.source = "level_finish"
-L8_1.condition = ""
-L8_1.action = "action_EVENT_VARIABLE_CHANGE_20003"
-L7_1[1] = L8_1
-triggers = L7_1
-L7_1 = {}
-L8_1 = {}
-L8_1.configId = 1
-L8_1.name = "level_start"
-L8_1.value = 1
-L8_1.no_refresh = false
-L7_1[1] = L8_1
-variables = L7_1
-L7_1 = {}
-L7_1.suite = 1
-L7_1.end_suite = 0
-L7_1.rand_suite = false
-init_config = L7_1
-L7_1 = {}
-L8_1 = {}
-L9_1 = {}
-L8_1.monsters = L9_1
-L9_1 = {}
-L10_1 = 20001
-L11_1 = 20002
-L9_1[1] = L10_1
-L9_1[2] = L11_1
-L8_1.gadgets = L9_1
-L9_1 = {}
-L8_1.regions = L9_1
-L9_1 = {}
-L10_1 = "VARIABLE_CHANGE_20003"
-L9_1[1] = L10_1
-L8_1.triggers = L9_1
-L8_1.rand_weight = 100
-L7_1[1] = L8_1
-suites = L7_1
-function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.SetGroupVariableValueByGroup
-  L3_2 = A0_2
-  L4_2 = "A"
-  L5_2 = 1
-  L6_2 = 220131011
-  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  if 0 ~= L2_2 then
-    L2_2 = ScriptLib
-    L2_2 = L2_2.PrintContextLog
-    L3_2 = A0_2
-    L4_2 = "@@ LUA_WARNING : set_groupVariable_by_group"
-    L2_2(L3_2, L4_2)
-    L2_2 = -1
-    return L2_2
-  end
-  L2_2 = 0
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 220131020
+}
+
+-- DEFS_MISCS
+--设置var: level_start为1以开启推箱子流程
+--用var_change接source为"level_finish"即可响应箱子推完的结果
+local defs = {
+        box_gadget_id_1 = 70290405,
+        --box_gadget_id_2 = 70290377,
+        config_suites = {1}, 
+        point_array_id = 4,
+        option_id = 193,
+        reminder_level_boarder = 400119,
+        reminder_array_boarder = 400119,
+        reminder_box_conflict = 400119,
+        reminder_right_pos = 201310107
+}
+
+--地形信息：0-墙面,1-地面,2-空气墙
+local level_map = {
+	{ 0, 0, 0, 0},
+	{ 0, 1, 1, 0},
+	{ 0, 1, 1, 0},
+	{ 0, 0, 0, 0},
+}
+
+--[[local level_map = {
+	{ 0, 0, 0, 0, 0},
+	{ 0, 0, 1, 1, 0},
+	{ 0, 1, 1, 1, 0},
+	{ 0, 1, 1, 1, 0},
+	{ 0, 1, 1, 1, 0},
+	{ 0, 1, 1, 1, 0},
+	{ 0, 0, 0, 0, 0},
+}]]--
+
+--点阵id信息
+local point_map = {
+	{ 0, 0, 0, 0},
+	{ 0, 4, 3, 0},
+	{ 0, 2, 1, 0},
+	{ 0, 0, 0, 0},
+}
+
+--[[local point_map = {
+	{ 0, 0,   0, 0, 0},
+	{ 0, 0,   6, 1, 0},
+	{ 0, 12,  7, 2, 0},
+	{ 0, 13,  8, 3, 0},
+	{ 0, 14,  9, 4, 0},
+	{ 0, 15, 10, 5, 0},
+	{ 0,  0,  0, 0, 0},
+}]]--
+
+--箱子起始信息
+--[[local box_config = {
+	[1] = {config_id = 4001, pos = {x=4,z=2}},
+	[2] = {config_id = 4002, pos = {x=2,z=4}},
+	[3] = {config_id = 4003, pos = {x=2,z=6}},
+	[4] = {config_id = 4004, pos = {x=3,z=6}},
+	[5] = {config_id = 4005, pos = {x=3,z=3}},
+	[6] = {config_id = 4006, pos = {x=2,z=3}},
+	[7] = {config_id = 4007, pos = {x=3,z=4}},
+	[8] = {config_id = 4008, pos = {x=3,z=5}},
+	[9] = {config_id = 4009, pos = {x=2,z=5}},
+}]]--
+
+local box_config = {
+	[1] = {config_id = 20001, pos = {x=3,z=3}},
+	[2] = {config_id = 20002, pos = {x=2,z=3}},
+}
+
+--关卡结算信息
+local level_finish_config = {
+        box_config_id = {1,2}, --box_config中序列
+        target_point_id = {3,4} --点阵id
+}
+
+--路径摘除信息(pont_id)
+local illegal_path = {
+        {1,2},
+        {3,4},
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	[20001] = { config_id = 20001, gadget_id = 70290405, pos = { x = 64.877, y = 10.836, z = -44.168 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	[20002] = { config_id = 20002, gadget_id = 70290405, pos = { x = 64.877, y = 10.836, z = -39.662 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1020003, name = "VARIABLE_CHANGE_20003", event = EventType.EVENT_VARIABLE_CHANGE, source = "level_finish", condition = "", action = "action_EVENT_VARIABLE_CHANGE_20003" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "level_start", value = 1, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 20001, 20002 },
+		regions = { },
+		triggers = { "VARIABLE_CHANGE_20003" },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_20003(context, evt)
+	if evt.param1 == evt.param2 then return -1 end
+	
+	-- 将本组内变量名为 "A" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "A", 1, 220131011) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_20003 = L7_1
-L7_1 = require
-L8_1 = "V2_7/YeLan_BoxPusher"
-L7_1(L8_1)
+
+require "V2_7/YeLan_BoxPusher"

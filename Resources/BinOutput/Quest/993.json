@@ -39,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_ROOM",
-          "param": [
-            1023,
-            0
-          ],
+          "param": [1023, 0],
           "count": 0
         }
       ],
@@ -84,20 +81,14 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            99302,
-            0
-          ],
+          "param": [99302, 0],
           "count": 0
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            99302,
-            0
-          ],
+          "param": [99302, 0],
           "count": 0
         }
       ],
@@ -138,10 +129,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            99303,
-            0
-          ],
+          "param": [99303, 0],
           "count": 0
         }
       ],
@@ -166,9 +154,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "99302"
-          ]
+          "param": ["99302"]
         }
       ],
       "failExec": [],
@@ -190,10 +176,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            99304,
-            0
-          ],
+          "param": [99304, 0],
           "count": 0
         }
       ],

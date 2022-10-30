@@ -1,402 +1,164 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
-L0_1 = {}
-L0_1.group_id = 133225168
-L1_1 = {}
-L1_1.group_id = 133225168
-L1_1.isRandom = false
-L2_1 = {}
-L1_1.child_group = L2_1
-L1_1.notifyQuest = true
-L1_1.hasChild = false
-L1_1.selfSuiteId = 2
-L1_1.hasMultiStatues = false
-L2_1 = {}
-L2_1[10001] = 2
-L1_1.statuesMap = L2_1
-defs = L1_1
-L1_1 = {}
-monsters = L1_1
-L1_1 = {}
-npcs = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 168001
-L2_1.gadget_id = 70290160
-L3_1 = {}
-L3_1.x = -6320.909
-L3_1.y = 297.346
-L3_1.z = -2732.858
-L2_1.pos = L3_1
-L3_1 = {}
-L3_1.x = 0.0
-L3_1.y = 202.743
-L3_1.z = 0.332
-L2_1.rot = L3_1
-L2_1.level = 33
-L3_1 = GadgetState
-L3_1 = L3_1.GearStart
-L2_1.state = L3_1
-L2_1.persistent = true
-L2_1.area_id = 18
-L3_1 = {}
-L3_1.config_id = 168002
-L3_1.gadget_id = 70230053
-L4_1 = {}
-L4_1.x = -6332.349
-L4_1.y = 298.017
-L4_1.z = -2731.076
-L3_1.pos = L4_1
-L4_1 = {}
-L4_1.x = 87.118
-L4_1.y = 30.937
-L4_1.z = 313.725
-L3_1.rot = L4_1
-L3_1.level = 33
-L4_1 = GadgetState
-L4_1 = L4_1.GearStart
-L3_1.state = L4_1
-L3_1.persistent = true
-L3_1.area_id = 18
-L4_1 = {}
-L4_1.config_id = 168003
-L4_1.gadget_id = 70230055
-L5_1 = {}
-L5_1.x = -6331.782
-L5_1.y = 299.683
-L5_1.z = -2725.388
-L4_1.pos = L5_1
-L5_1 = {}
-L5_1.x = 64.989
-L5_1.y = 328.402
-L5_1.z = 216.415
-L4_1.rot = L5_1
-L4_1.level = 33
-L5_1 = GadgetState
-L5_1 = L5_1.GearStart
-L4_1.state = L5_1
-L4_1.persistent = true
-L4_1.area_id = 18
-L5_1 = {}
-L5_1.config_id = 168004
-L5_1.gadget_id = 70230052
-L6_1 = {}
-L6_1.x = -6331.886
-L6_1.y = 301.844
-L6_1.z = -2726.906
-L5_1.pos = L6_1
-L6_1 = {}
-L6_1.x = 74.618
-L6_1.y = 283.18
-L6_1.z = 192.335
-L5_1.rot = L6_1
-L5_1.level = 33
-L6_1 = GadgetState
-L6_1 = L6_1.GearStop
-L5_1.state = L6_1
-L5_1.persistent = true
-L5_1.area_id = 18
-L6_1 = {}
-L6_1.config_id = 168005
-L6_1.gadget_id = 70230056
-L7_1 = {}
-L7_1.x = -6332.153
-L7_1.y = 302.159
-L7_1.z = -2729.179
-L6_1.pos = L7_1
-L7_1 = {}
-L7_1.x = 74.618
-L7_1.y = 291.184
-L7_1.z = 192.335
-L6_1.rot = L7_1
-L6_1.level = 33
-L7_1 = GadgetState
-L7_1 = L7_1.GearStop
-L6_1.state = L7_1
-L6_1.persistent = true
-L6_1.area_id = 18
-L7_1 = {}
-L7_1.config_id = 168006
-L7_1.gadget_id = 70230051
-L8_1 = {}
-L8_1.x = -6332.274
-L8_1.y = 296.694
-L8_1.z = -2728.917
-L7_1.pos = L8_1
-L8_1 = {}
-L8_1.x = 77.163
-L8_1.y = 108.446
-L8_1.z = 349.274
-L7_1.rot = L8_1
-L7_1.level = 33
-L8_1 = GadgetState
-L8_1 = L8_1.GearStart
-L7_1.state = L8_1
-L7_1.persistent = true
-L7_1.area_id = 18
-L8_1 = {}
-L8_1.config_id = 168007
-L8_1.gadget_id = 70230057
-L9_1 = {}
-L9_1.x = -6331.941
-L9_1.y = 297.442
-L9_1.z = -2726.302
-L8_1.pos = L9_1
-L9_1 = {}
-L9_1.x = 71.778
-L9_1.y = 293.035
-L9_1.z = 213.063
-L8_1.rot = L9_1
-L8_1.level = 33
-L9_1 = GadgetState
-L9_1 = L9_1.GearStop
-L8_1.state = L9_1
-L8_1.persistent = true
-L8_1.area_id = 18
-L9_1 = {}
-L9_1.config_id = 168010
-L9_1.gadget_id = 70230054
-L10_1 = {}
-L10_1.x = -6332.402
-L10_1.y = 300.361
-L10_1.z = -2730.704
-L9_1.pos = L10_1
-L10_1 = {}
-L10_1.x = 68.706
-L10_1.y = 352.585
-L10_1.z = 242.632
-L9_1.rot = L10_1
-L9_1.level = 33
-L10_1 = GadgetState
-L10_1 = L10_1.GearStart
-L9_1.state = L10_1
-L9_1.persistent = true
-L9_1.area_id = 18
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-L1_1[3] = L4_1
-L1_1[4] = L5_1
-L1_1[5] = L6_1
-L1_1[6] = L7_1
-L1_1[7] = L8_1
-L1_1[8] = L9_1
-gadgets = L1_1
-L1_1 = {}
-regions = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.config_id = 1168008
-L2_1.name = "VARIABLE_CHANGE_168008"
-L3_1 = EventType
-L3_1 = L3_1.EVENT_VARIABLE_CHANGE
-L2_1.event = L3_1
-L2_1.source = ""
-L2_1.condition = "condition_EVENT_VARIABLE_CHANGE_168008"
-L2_1.action = "action_EVENT_VARIABLE_CHANGE_168008"
-L3_1 = {}
-L3_1.config_id = 1168009
-L3_1.name = "TIME_AXIS_PASS_168009"
-L4_1 = EventType
-L4_1 = L4_1.EVENT_TIME_AXIS_PASS
-L3_1.event = L4_1
-L3_1.source = ""
-L3_1.condition = "condition_EVENT_TIME_AXIS_PASS_168009"
-L3_1.action = "action_EVENT_TIME_AXIS_PASS_168009"
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-triggers = L1_1
-L1_1 = {}
-L2_1 = {}
-L2_1.configId = 1
-L2_1.name = "Seed"
-L2_1.value = 0
-L2_1.no_refresh = true
-L3_1 = {}
-L3_1.configId = 2
-L3_1.name = "Notified"
-L3_1.value = 0
-L3_1.no_refresh = false
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-variables = L1_1
-L1_1 = {}
-L1_1.suite = 1
-L1_1.end_suite = 0
-L1_1.rand_suite = false
-init_config = L1_1
-L1_1 = {}
-L2_1 = {}
-L3_1 = {}
-L2_1.monsters = L3_1
-L3_1 = {}
-L4_1 = 168001
-L3_1[1] = L4_1
-L2_1.gadgets = L3_1
-L3_1 = {}
-L2_1.regions = L3_1
-L3_1 = {}
-L4_1 = "VARIABLE_CHANGE_168008"
-L5_1 = "TIME_AXIS_PASS_168009"
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.triggers = L3_1
-L2_1.rand_weight = 100
-L3_1 = {}
-L4_1 = {}
-L3_1.monsters = L4_1
-L4_1 = {}
-L5_1 = 168002
-L6_1 = 168003
-L7_1 = 168004
-L8_1 = 168005
-L9_1 = 168006
-L10_1 = 168007
-L11_1 = 168010
-L4_1[1] = L5_1
-L4_1[2] = L6_1
-L4_1[3] = L7_1
-L4_1[4] = L8_1
-L4_1[5] = L9_1
-L4_1[6] = L10_1
-L4_1[7] = L11_1
-L3_1.gadgets = L4_1
-L4_1 = {}
-L3_1.regions = L4_1
-L4_1 = {}
-L3_1.triggers = L4_1
-L3_1.rand_weight = 100
-L1_1[1] = L2_1
-L1_1[2] = L3_1
-suites = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = A1_2.param1
-  L3_2 = A1_2.param2
-  if L2_2 == L3_2 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = ScriptLib
-  L2_2 = L2_2.GetGroupVariableValue
-  L3_2 = A0_2
-  L4_2 = "Notified"
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= 1 then
-    L2_2 = false
-    return L2_2
-  end
-  L2_2 = true
-  return L2_2
+-- 基础信息
+local base_info = {
+	group_id = 133225168
+}
+
+-- DEFS_MISCS
+defs = {
+        group_id = 133225168,        --当前Group的ID
+        isRandom = false,--定义这个组是否会随机取
+        child_group = {}, --groupid和需要切到的SuiteID，一一对应
+        notifyQuest = true, --修改Group里一个变量
+        hasChild = false, --表示是否切当前Group的suite，true表示切自己的
+        selfSuiteId = 2, --需要切的自己的suite
+        hasMultiStatues = false, --是否有多个雷鸟雕像
+        statuesMap = 
+        {
+                [10001] = 2, --雷鸟雕像和需要切出来的Suite的对应表
+        },
+}
+
+--================================================================
+-- 
+-- 配置
+-- 
+--================================================================
+
+-- 怪物
+monsters = {
+}
+
+-- NPC
+npcs = {
+}
+
+-- 装置
+gadgets = {
+	{ config_id = 168001, gadget_id = 70290160, pos = { x = -6320.909, y = 297.346, z = -2732.858 }, rot = { x = 0.000, y = 202.743, z = 0.332 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 168002, gadget_id = 70230053, pos = { x = -6332.349, y = 298.017, z = -2731.076 }, rot = { x = 87.118, y = 30.937, z = 313.725 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 168003, gadget_id = 70230055, pos = { x = -6331.782, y = 299.683, z = -2725.388 }, rot = { x = 64.989, y = 328.402, z = 216.415 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 168004, gadget_id = 70230052, pos = { x = -6331.886, y = 301.844, z = -2726.906 }, rot = { x = 74.618, y = 283.180, z = 192.335 }, level = 33, state = GadgetState.GearStop, persistent = true, area_id = 18 },
+	{ config_id = 168005, gadget_id = 70230056, pos = { x = -6332.153, y = 302.159, z = -2729.179 }, rot = { x = 74.618, y = 291.184, z = 192.335 }, level = 33, state = GadgetState.GearStop, persistent = true, area_id = 18 },
+	{ config_id = 168006, gadget_id = 70230051, pos = { x = -6332.274, y = 296.694, z = -2728.917 }, rot = { x = 77.163, y = 108.446, z = 349.274 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 },
+	{ config_id = 168007, gadget_id = 70230057, pos = { x = -6331.941, y = 297.442, z = -2726.302 }, rot = { x = 71.778, y = 293.035, z = 213.063 }, level = 33, state = GadgetState.GearStop, persistent = true, area_id = 18 },
+	{ config_id = 168010, gadget_id = 70230054, pos = { x = -6332.402, y = 300.361, z = -2730.704 }, rot = { x = 68.706, y = 352.585, z = 242.632 }, level = 33, state = GadgetState.GearStart, persistent = true, area_id = 18 }
+}
+
+-- 区域
+regions = {
+}
+
+-- 触发器
+triggers = {
+	{ config_id = 1168008, name = "VARIABLE_CHANGE_168008", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_168008", action = "action_EVENT_VARIABLE_CHANGE_168008" },
+	{ config_id = 1168009, name = "TIME_AXIS_PASS_168009", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_168009", action = "action_EVENT_TIME_AXIS_PASS_168009" }
+}
+
+-- 变量
+variables = {
+	{ config_id = 1, name = "Seed", value = 0, no_refresh = true },
+	{ config_id = 2, name = "Notified", value = 0, no_refresh = false }
+}
+
+--================================================================
+-- 
+-- 初始化配置
+-- 
+--================================================================
+
+-- 初始化时创建
+init_config = {
+	suite = 1,
+	end_suite = 0,
+	rand_suite = false
+}
+
+--================================================================
+-- 
+-- 小组配置
+-- 
+--================================================================
+
+suites = {
+	{
+		-- suite_id = 1,
+		-- description = ,
+		monsters = { },
+		gadgets = { 168001 },
+		regions = { },
+		triggers = { "VARIABLE_CHANGE_168008", "TIME_AXIS_PASS_168009" },
+		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { 168002, 168003, 168004, 168005, 168006, 168007, 168010 },
+		regions = { },
+		triggers = { },
+		rand_weight = 100
+	}
+}
+
+--================================================================
+-- 
+-- 触发器
+-- 
+--================================================================
+
+-- 触发条件
+function condition_EVENT_VARIABLE_CHANGE_168008(context, evt)
+	if evt.param1 == evt.param2 then return false end
+	
+	-- 判断变量"Notified"为1
+	if ScriptLib.GetGroupVariableValue(context, "Notified") ~= 1 then
+			return false
+	end
+	
+	return true
 end
-condition_EVENT_VARIABLE_CHANGE_168008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = {}
-  L2_2.x = -6332.153
-  L2_2.y = 300
-  L2_2.z = -2729
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 4
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = ScriptLib
-  L4_2 = L4_2.InitTimeAxis
-  L5_2 = A0_2
-  L6_2 = "Camera_Look"
-  L7_2 = {}
-  L8_2 = 3
-  L7_2[1] = L8_2
-  L8_2 = false
-  L4_2(L5_2, L6_2, L7_2, L8_2)
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_VARIABLE_CHANGE_168008(context, evt)
+	-- 触发镜头注目，注目位置为坐标（-6332.153，300，-2729），持续时间为4秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-6332.153, y=300, z=-2729}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 4, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	-- 创建标识为"Camera_Look"，时间节点为{3}的时间轴，false用于控制该时间轴是否循环
+	ScriptLib.InitTimeAxis(context, "Camera_Look", {3}, false)
+	
+	
+	return 0
 end
-action_EVENT_VARIABLE_CHANGE_168008 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2
-  L2_2 = A1_2.source_name
-  if "Camera_Look" == L2_2 then
-    L2_2 = A1_2.param1
-    if 1 == L2_2 then
-      goto lbl_9
-    end
-  end
-  L2_2 = false
-  do return L2_2 end
-  ::lbl_9::
-  L2_2 = true
-  return L2_2
+
+-- 触发条件
+function condition_EVENT_TIME_AXIS_PASS_168009(context, evt)
+	if "Camera_Look" ~= evt.source_name or 1 ~= evt.param1 then
+		return false
+	end
+	
+	return true
 end
-condition_EVENT_TIME_AXIS_PASS_168009 = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = {}
-  L2_2.x = -6335
-  L2_2.y = 292
-  L2_2.z = -2682
-  L3_2 = {}
-  L3_2.x = 0
-  L3_2.y = 0
-  L3_2.z = 0
-  L4_2 = ScriptLib
-  L4_2 = L4_2.BeginCameraSceneLook
-  L5_2 = A0_2
-  L6_2 = {}
-  L6_2.look_pos = L2_2
-  L6_2.is_allow_input = false
-  L6_2.duration = 3
-  L6_2.is_force = true
-  L6_2.is_broadcast = false
-  L6_2.is_recover_keep_current = true
-  L6_2.delay = 0
-  L6_2.is_set_follow_pos = false
-  L6_2.follow_pos = L3_2
-  L6_2.is_force_walk = false
-  L6_2.is_change_play_mode = false
-  L6_2.is_set_screen_XY = false
-  L6_2.screen_x = 0
-  L6_2.screen_y = 0
-  L4_2 = L4_2(L5_2, L6_2)
-  if 0 ~= L4_2 then
-    L4_2 = ScriptLib
-    L4_2 = L4_2.PrintContextLog
-    L5_2 = A0_2
-    L6_2 = "@@ LUA_WARNING : active_cameraLook_Begin"
-    L4_2(L5_2, L6_2)
-    L4_2 = -1
-    return L4_2
-  end
-  L4_2 = 0
-  return L4_2
+
+-- 触发操作
+function action_EVENT_TIME_AXIS_PASS_168009(context, evt)
+	-- 触发镜头注目，注目位置为坐标（-6335，292，-2682），持续时间为3秒，并且为强制注目形式，不广播其他玩家
+		local pos = {x=-6335, y=292, z=-2682}
+	  local pos_follow = {x=0, y=0, z=0}
+	    if 0 ~= ScriptLib.BeginCameraSceneLook(context, { look_pos = pos, is_allow_input = false, duration = 3, is_force = true, is_broadcast = false, is_recover_keep_current = true, delay = 0,
+	                                                      is_set_follow_pos = false, follow_pos = pos_follow, is_force_walk = false, is_change_play_mode = false,
+	                                                      is_set_screen_XY = false, screen_x = 0, screen_y = 0 }) then
+					ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_cameraLook_Begin")
+	        return -1
+				end 
+	
+	return 0
 end
-action_EVENT_TIME_AXIS_PASS_168009 = L1_1
-L1_1 = require
-L2_1 = "V2_2/TsurumiBirdFather"
-L1_1(L2_1)
+
+require "V2_2/TsurumiBirdFather"

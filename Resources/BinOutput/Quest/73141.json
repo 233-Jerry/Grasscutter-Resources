@@ -1,6 +1,6 @@
 {
   "titleTextMapHash": 2085421575,
-  "descTextMapHash": 0,
+  
   "id": 73141,
   "ICLLDPJFIMA": 0,
   "NCLEJIILEGL": 0,
@@ -14,9 +14,7 @@
   "repeatable": false,
   "PEOHODAKLNO": [],
   "FEHAEKNGFBP": false,
-  "rewardIdList": [
-    210012
-  ],
+  "rewardIdList": [210012],
   "showType": "QUEST_HIDDEN",
   "HKNKBANBJPP": [],
   "LACEJNKJBCG": [],
@@ -41,10 +39,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "count": 0
         }
       ],
@@ -86,10 +81,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [
-            133303317,
-            317001
-          ],
+          "param": [133303317, 317001],
           "count": 0
         }
       ],
@@ -131,10 +123,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7314101,
-            0
-          ],
+          "param": [7314101, 0],
           "count": 0
         }
       ],
@@ -159,17 +148,11 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
-          "param": [
-            "73100",
-            "1"
-          ]
+          "param": ["73100", "1"]
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133303317,3"
-          ]
+          "param": ["3", "133303317,3"]
         }
       ],
       "failExec": [],
@@ -187,10 +170,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7314102",
-            "3"
-          ]
+          "param": ["7314102", "3"]
         }
       ],
       "priority": 5,
@@ -199,9 +179,7 @@
       "KGCBFKLPGDB": 0,
       "DOGCHABLIOA": 731410101,
       "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [
-        20681
-      ],
+      "npcIdRawNum": [20681],
       "GHNCIOJDIEA": "",
       "MABMOKMFNJP": "TALK_HERO_MAIN",
       "BBNAABABCKM": "TALK_NORMAL_QUEST",
@@ -232,10 +210,7 @@
   "LGCLJGGNGBD": [],
   "OMKMAOLMNCO": [],
   "KPOKLMBEOBI": {
-    "20681": [
-      1010,
-      1020
-    ]
+    "20681": [1010, 1020]
   },
   "MGDNNNGPOGO": 210012
 }
