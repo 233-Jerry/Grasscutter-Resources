@@ -11351,14 +11351,26 @@
       "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_JunkChest_02",
       "onAdded": [
         {
-          "$type": "AttachEffect",
-          "effectPattern": "Eff_SceneObj_Hint_01_Big",
-          "born": {
-            "$type": "ConfigBornByAttachPoint",
-            "attachPointName": "EffectNode"
-          }
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_AttachEffect02"
         }
-      ]
+      ],
+      "modifiers": {
+        "UNIQUE_AttachEffect02": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_Hint_01_Big",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "EffectNode"
+              }
+            }
+          ]
+        }
+      }
     }
   },
   ///////////////////////////////////////////////////////////////

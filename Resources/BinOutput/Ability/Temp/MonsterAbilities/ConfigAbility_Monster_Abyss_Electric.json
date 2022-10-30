@@ -279,7 +279,7 @@
                   "targetPredicates": [
                     {
                       "$type": "ByEntityTypes",
-                      "entityTypes": ["Avatar"]
+                      "entityTypes": ["Avatar", "Partner"]
                     }
                   ],
                   "successActions": [
@@ -335,7 +335,7 @@
                   "targetPredicates": [
                     {
                       "$type": "ByEntityTypes",
-                      "entityTypes": ["Avatar"]
+                      "entityTypes": ["Avatar", "Partner"]
                     }
                   ],
                   "successActions": [
@@ -447,6 +447,17 @@
             {
               "$type": "RemoveUniqueModifier",
               "modifierName": "UNIQUE_Abyss_Electric_ElementShield_Effect"
+            },
+            {
+              "$type": "KillSelf",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_ForCharAmusement_Shield",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
             }
           ]
         },

@@ -647,6 +647,20 @@
                   "$type": "AttachModifier",
                   "modifierName": "UNIQUE_Xingqiu_PhantomShield_FakerEnd",
                   "target": "Team"
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "Xingqiu_PhantomShield_FakerEnd_Mark",
+                  "target": "Team",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "key": "_ABILITY_Xingqiu_PhantomShield_FakeEnd_Mark",
+                      "value": 1,
+                      "compareType": "Equal",
+                      "target": "Team"
+                    }
+                  ]
                 }
               ]
             }
@@ -722,6 +736,11 @@
             {
               "$type": "AttachModifier",
               "modifierName": "UNIQUE_Xingqiu_PhantomShield_FXHandler"
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ABILITY_Xingqiu_PhantomShield_FakeEnd_Mark",
+              "value": 0
             }
           ],
           "onRemoved": [
@@ -734,6 +753,11 @@
               "$type": "SetGlobalValueToOverrideMap",
               "globalValueKey": "_ABILITY_Xingqiu_PhantomShield_ShieldLevel",
               "overrideMapKey": "ShieldLevel"
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ABILITY_Xingqiu_PhantomShield_FakeEnd_Mark",
+              "value": 0
             }
           ],
           "modifierMixins": [
@@ -837,6 +861,74 @@
               "$type": "SetGlobalValueToOverrideMap",
               "globalValueKey": "_ABILITY_Xingqiu_PhantomShield_ShieldLevel",
               "overrideMapKey": "ShieldLevel"
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ABILITY_Xingqiu_PhantomShield_FakeEnd_Mark",
+              "value": 1
+            }
+          ]
+        },
+        "Xingqiu_PhantomShield_FakerEnd_Mark": {
+          "duration": 0.5,
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ABILITY_Xingqiu_PhantomShield_FakeEnd_Mark",
+              "value": 0
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "effectPattern": "Eff_Xingqiu_ElementalArt_PhantomShield_L1",
+              "parameter": "Born"
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "effectPattern": "Eff_Xingqiu_ElementalArt_PhantomShield_L2",
+              "parameter": "Born"
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "effectPattern": "Eff_Xingqiu_ElementalArt_PhantomShield_L3",
+              "parameter": "Born"
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "effectPattern": "Eff_Xingqiu_ElementalArt_PhantomShield_L4",
+              "parameter": "Born",
+              "predicates": [
+                {
+                  "$type": "ByUnlockTalentParam",
+                  "talentParam": "OneMoreChance"
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Caster",
+              "targetPredicates": [
+                {
+                  "$type": "ByUnlockTalentParam",
+                  "talentParam": "OneMoreChance"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetGlobalValue",
+                  "key": "_ABILITY_Xingqiu_PhantomShield_ShieldLevel",
+                  "value": 4,
+                  "target": "Team"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "SetGlobalValue",
+                  "key": "_ABILITY_Xingqiu_PhantomShield_ShieldLevel",
+                  "value": 3,
+                  "target": "Team"
+                }
+              ]
             }
           ]
         },
@@ -1977,6 +2069,11 @@
               "$type": "SetGlobalValueToOverrideMap",
               "globalValueKey": "_ABILITY_Xingqiu_PhantomShield_ShieldLevel",
               "overrideMapKey": "ShieldLevel"
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ABILITY_Xingqiu_PhantomShield_FakeEnd_Mark",
+              "value": 1
             }
           ]
         },
@@ -2090,7 +2187,7 @@
               "doOffStage": true
             },
             {
-              "$type": "AttachModifier",
+              "$type": "ApplyModifier",
               "modifierName": "Xingqiu_PhantomShield_FullBack",
               "target": "Team",
               "doOffStage": true

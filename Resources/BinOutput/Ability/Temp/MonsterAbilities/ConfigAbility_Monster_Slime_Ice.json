@@ -116,11 +116,15 @@
           "abilityFormula": "None",
           "globalValueKey": "_MONSTERAFFIX_ELEMENTSHIELD_GAPREDUCE",
           "overrideMapKey": "ElementShield_GapReduce"
-        },
+        }
+      ],
+      "abilityMixins": [
+        //根据是否活动版本上不同的modifier
         {
-          "$type": "AttachModifier",
-          "modifierName": "UNIQUE_Shield",
-          "target": "Self"
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_MONSTER_Slime_SimpleStick",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "modifierNameSteps": ["UNIQUE_Shield", "UNIQUE_Shield_SimpleStick"]
         }
       ],
       "onAbilityStart": [
@@ -223,6 +227,61 @@
               "$type": "ApplyModifier",
               "modifierName": "ShieldReborn",
               "target": "Self"
+            }
+          ]
+        },
+        "UNIQUE_Shield_SimpleStick": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "elementType": "Frozen",
+          "elementDurability": 200,
+          "isElementDurabilityMutable": false,
+          "state": "LockHP",
+          "properties": {
+            "Actor_EndureDelta": 0.4
+            //"Actor_SubHurtDelta": 0.7
+          },
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin"
+            },
+            {
+              "$type": "RigidBodyFreezeMixin"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Slime_Ice_ShieldHit"
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "SetPoseBool",
+              "boolID": "ShieldState",
+              "value": true
+            },
+            {
+              "$type": "EnableHitBoxByName",
+              "hitBoxNames": ["HitBoxShield"],
+              "setEnable": true
+            },
+            {
+              "$type": "EnableHitBoxByName",
+              "hitBoxNames": ["HitBox"],
+              "setEnable": false
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Shield_Stage01"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Shield_Stage02"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Shield_Stage03"
             }
           ]
         },

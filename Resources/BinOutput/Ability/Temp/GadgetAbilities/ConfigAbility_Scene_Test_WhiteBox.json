@@ -30,6 +30,94 @@
   },
   ////////////////////////////////////////////////
   //
+  // 抓捕蕈兽白盒
+  //
+  ////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Gear_MushRoom_Catch",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "CatchCheck"
+        }
+      ],
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+          "globalValueKey": "SGV_MushroomMonster_Alert",
+          "valueSteps": [-1, 0.5, 1.5],
+          "modifierNameSteps": ["PhaseOne", "PhaseTwo"]
+        }
+      ],
+      "onFieldEnter": [
+        {
+          "$type": "ServerLuaCall",
+          "luaCallType": "FromGroup",
+          "funcName": "SLC_MushroomMonsterAlert",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "SGV_MushroomMonster_Alert",
+              "target": "Self",
+              "value": 0,
+              "compareType": "Equal"
+            }
+          ]
+        }
+      ],
+      "modifiers": {
+        "CatchCheck": {
+          "onBeingHit": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_MushroomMonsterCatch",
+              "predicates": [
+                {
+                  "$type": "ByAttackTags",
+                  "attackTags": ["Mushroom_Monster_Catch"]
+                }
+              ]
+            }
+          ]
+        },
+        "PhaseOne": {
+          "onAdded": [
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "SphereR5",
+                "centerBasedOn": "Self",
+                "campTargetType": "Enemy",
+                "campBasedOn": "Self",
+                "topLimit": 1,
+                "sortType": "Nearest"
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ServerLuaCall",
+                  "luaCallType": "FromGroup",
+                  "funcName": "SLC_MushroomMonsterAlert"
+                }
+              ]
+            }
+          ]
+        },
+        "PhaseTwo": {}
+      }
+    }
+  },
+  ////////////////////////////////////////////////
+  //
   // 炼金种子生成器
   //
   ////////////////////////////////////////////////

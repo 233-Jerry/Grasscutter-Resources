@@ -537,7 +537,1288 @@
       }
     }
   },
+  //////////////////////////////////////////////////////////////
+  ///
+  ///   Ver3.2  大世界小道具————抓蕈兽
+  ///
+  //////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "ActivityAbility_CatchMushroomMonster_Shoot",
+      "isDynamicAbility": true,
+      "abilityMixins": [
+        {
+          "$type": "AttachToWidgetStateMixin",
+          "targetWidgetMaterialId": 220073,
+          "onActive": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "ActivityAbility_CatchAnimal_AddSkillInfo",
+              "doOffStage": true
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "ActivityAbility_CatchAnimal_SwitchSkill",
+              "doOffStage": true
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "ActivityAbility_CatchAnimal_Aim_Handler",
+              "doOffStage": true
+            }
+          ],
+          "onDisable": [
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "ActivityAbility_CatchAnimal_AddSkillInfo",
+              "doOffStage": true
+            },
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "ActivityAbility_CatchAnimal_SwitchSkill",
+              "doOffStage": true
+            },
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "ActivityAbility_CatchAnimal_Aim_Handler",
+              "doOffStage": true
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "ActivityAbility_CatchAnimal_AddSkillInfo",
+              "doOffStage": true
+            },
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "ActivityAbility_CatchAnimal_SwitchSkill",
+              "doOffStage": true
+            },
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "ActivityAbility_CatchAnimal_Aim_Handler",
+              "doOffStage": true
+            }
+          ]
+        }
+      ],
+      "modifiers": {
+        //增添抓捕专用技能
+        "ActivityAbility_CatchAnimal_AddSkillInfo": {
+          "onAdded": [
+            {
+              "$type": "AddAvatarSkillInfo",
+              "skillID": 20049,
+              "doOffStage": true
+            },
+            {
+              "$type": "AvatarSkillStart", //这是用来让它装备瞬间闪一下
+              "skillID": 20049,
+              "cdRatio": 0.1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveAvatarSkillInfo",
+              "skillID": 20049,
+              "refreshAfterRemove": true,
+              "doOffStage": true
+            }
+          ]
+        },
+        //替换小技能按钮
+        "ActivityAbility_CatchAnimal_SwitchSkill": {
+          "modifierMixins": [
+            {
+              "$type": "SwitchSkillIDMixin",
+              "priority": "Playmode",
+              "skillIndex": 1,
+              "skillID": 20049
+            },
+            {
+              "$type": "WidgetCDSyncMixin",
+              "itemId": 220073,
+              "skillId": 20049,
+              "syncOnCDChange": true,
+              "syncOnChangeAvatar": true,
+              "skillCDOffset": 0.5
+            }
+          ]
+        },
+        //处理瞄准的主要按键逻辑
+        "ActivityAbility_CatchAnimal_Aim_Handler": {
+          "modifierMixins": [
+            {
+              "$type": "AttachToStateIDMixin",
+              "stateIDs": ["Channel_BS", "Channel_Loop", "Channel_AS"],
+              "modifierName": "Trigger_OnExit"
+            },
+            {
+              "$type": "ButtonHoldChargeMixin",
+              "skillID": 20049,
+              "chargeTime": 0.0,
+              "secondChargeTime": 0.12,
+              "OnBeginCharged": [
+                {
+                  "$type": "SetGlobalValue",
+                  "key": "_ABILITY_Common_Channel_IsTrigger", //每次点按重置Trigger
+                  "value": 0,
+                  "doOffStage": true
+                }
+              ],
+              //点按释放
+              "OnReleaseCharged": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "Shoot_Short",
+                  "doOffStage": true
+                }
+              ],
+              "OnBeginSecondCharged": [
+                {
+                  "$type": "SetAnimatorTrigger",
+                  "triggerID": "StartChannelTrigger"
+                }
+              ],
+              //长按释放
+              "OnReleaseSecondCharged": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "Shoot_Long",
+                  "doOffStage": true,
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "key": "_ABILITY_Common_Channel_IsTrigger",
+                      "value": 0,
+                      "compareType": "Equal"
+                    }
+                  ]
+                },
+                {
+                  "$type": "SetGlobalValue",
+                  "key": "_ABILITY_Common_Channel_IsTrigger",
+                  "value": 1,
+                  "doOffStage": true
+                }
+              ],
+              "chargeStateIDs": ["Channel_Loop"],
+              "OnCancelCharged": [
+                {
+                  "$type": "SetAnimatorTrigger",
+                  "triggerID": "EndChannelTrigger"
+                }
+              ]
+            },
 
+            {
+              "$type": "AttachToStateIDMixin",
+              "stateIDs": ["Channel_BS", "Channel_Loop"],
+              "modifierName": "Focus"
+            }
+          ]
+        },
+        //替换操控面板
+        "ActivityAbility_CatchAnimal_ChangePlayMode": {
+          "onAdded": [
+            {
+              "$type": "ChangePlayMode",
+              "muteRemoteAction": true,
+              "toPlayMode": "ActivityAimState",
+              "doOffStage": true
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ChangePlayMode",
+              "muteRemoteAction": true,
+              "toPlayMode": "Normal",
+              "doOffStage": true
+            }
+          ]
+        },
+        //强制退出时需要TriggerCD
+        "Trigger_OnExit": {
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier", //没松手被打断时强制发射子弹
+              "modifierName": "Shoot_Short",
+              "doOffStage": true,
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_ABILITY_Common_Channel_IsTrigger",
+                  "value": 0,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ABILITY_Common_Channel_IsTrigger",
+              "value": 1,
+              "doOffStage": true
+            }
+          ]
+        },
+        //瞄准镜头
+        "Focus": {
+          "onAdded": [
+            {
+              "$type": "AvatarEnterFocus",
+              "cameraFollowLower": {
+                "x": 0.6,
+                "y": 0.2,
+                "z": -1.8
+              },
+              "cameraFollowUpper": {
+                "x": 0.5,
+                "y": -0.2,
+                "z": -1.8
+              },
+              "canMove": false,
+              "dragButtonName": "Skill2",
+              "showCrosshair": true,
+              "disableAnim": true,
+              "assistance": {
+                "ps4": { "useGyro": true },
+                "ps5": { "useGyro": true },
+                "other": { "useGyro": true }
+              },
+              "vcam_fov": 30,
+              "cameraFollowMaxDegree": 40,
+              "cameraFollowMinDegree": -40
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "LockMotionFlagExitChannel", //需要保证Focus阶段不能移动
+              "value": true
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_CatchAnimal_Charge_FungusFighter"
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "ActivityAbility_CatchAnimal_ChangePlayMode"
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ABILITY_Common_IsChannelState",
+              "value": 1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "AvatarExitFocus",
+              "keepRotation": true,
+              "doOffStage": true
+            },
+            // {
+            // 	"$type": "SetAnimatorTrigger",
+            // 	"triggerID": "EndChannelTrigger",
+            // 	"doOffStage": true,
+            // },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "LockMotionFlagExitChannel",
+              "value": false,
+              "doOffStage": true
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ABILITY_Common_IsChannelState",
+              "value": 0,
+              "doOffStage": true
+            }
+          ]
+        },
+        //点按发射捕捉器
+        "Shoot_Short": {
+          "duration": 0.2,
+          "onAdded": [
+            {
+              "$type": "AvatarSkillStart",
+              "skillID": 20049,
+              "cdRatio": 1
+            },
+            {
+              "$type": "WidgetSkillStart",
+              "itemId": 220073
+            },
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_CatchAnimal_Shoot_FungusFighter",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "FocusAnchor",
+                "attachPointTargetType": "Self",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.5,
+                  "z": 1.2
+                }
+              }
+            },
+            {
+              "$type": "ServerLuaCall",
+              "doOffStage": true,
+              "funcName": "SLC_AvatarUseCatchWidget",
+              "luaCallType": "CurGalleryControlGroup"
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 420000020,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "FocusAnchor",
+                "attachPointTargetType": "Self",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.5,
+                  "z": 1.2
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByAttachPoint",
+                  "attachPointName": "FocusAnchor",
+                  "attachPointTargetType": "Self",
+                  "angleOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  }
+                }
+              }
+            }
+          ]
+        },
+        //长按发射捕捉器
+        "Shoot_Long": {
+          "duration": 0.1,
+          "onAdded": [
+            {
+              "$type": "AvatarSkillStart",
+              "skillID": 20049,
+              "cdRatio": 1
+            },
+            {
+              "$type": "WidgetSkillStart",
+              "itemId": 220073
+            },
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_CatchAnimal_Shoot_FungusFighter",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "WeaponR",
+                "attachPointTargetType": "Self",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            },
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByAvatarWeaponType",
+                  "weaponTypes": ["WEAPON_BOW"]
+                }
+              ],
+              //弓手弹道
+              "successActions": [
+                {
+                  "$type": "ServerLuaCall",
+                  "doOffStage": true,
+                  "funcName": "SLC_AvatarUseCatchWidget",
+                  "luaCallType": "CurGalleryControlGroup"
+                },
+                {
+                  "$type": "TriggerBullet",
+                  "bulletID": 420000021,
+                  "born": {
+                    "$type": "ConfigBornByAttachPoint",
+                    "attachPointName": "FocusAnchor",
+                    "attachPointTargetType": "Self",
+                    "offset": {
+                      "x": 0.3,
+                      "y": 0.0,
+                      "z": 1.2
+                    },
+                    "direction": {
+                      "$type": "ConfigDirectionByAttachPoint",
+                      "attachPointName": "FocusAnchor",
+                      "attachPointTargetType": "Self",
+                      "angleOffset": {
+                        "x": -1.5,
+                        "y": 0,
+                        "z": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              //非弓手弹道
+              "failActions": [
+                {
+                  "$type": "Predicated",
+                  "targetPredicates": [
+                    {
+                      "$type": "ByAny",
+                      "predicates": [
+                        {
+                          "$type": "ByAvatarBodyType",
+                          "bodyType": "BODY_MALE"
+                        },
+                        {
+                          "$type": "ByAvatarBodyType",
+                          "bodyType": "BODY_LADY"
+                        }
+                      ]
+                    }
+                  ],
+                  "successActions": [
+                    {
+                      "$type": "ServerLuaCall",
+                      "doOffStage": true,
+                      "funcName": "SLC_AvatarUseCatchWidget",
+                      "luaCallType": "CurGalleryControlGroup"
+                    },
+                    {
+                      "$type": "TriggerBullet",
+                      "bulletID": 420000021,
+                      "born": {
+                        "$type": "ConfigBornByAttachPoint",
+                        "attachPointName": "FocusAnchor",
+                        "attachPointTargetType": "Self",
+                        "offset": {
+                          "x": 0.0,
+                          "y": 0.1,
+                          "z": 1.2
+                        },
+                        "direction": {
+                          "$type": "ConfigDirectionByAttachPoint",
+                          "attachPointName": "FocusAnchor",
+                          "attachPointTargetType": "Self",
+                          "angleOffset": {
+                            "x": -1.5,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "failActions": [
+                    {
+                      "$type": "Predicated",
+                      "targetPredicates": [
+                        {
+                          "$type": "ByAny",
+                          "predicates": [
+                            {
+                              "$type": "ByAvatarBodyType",
+                              "bodyType": "BODY_BOY"
+                            },
+                            {
+                              "$type": "ByAvatarBodyType",
+                              "bodyType": "BODY_GIRL"
+                            }
+                          ]
+                        }
+                      ],
+                      "successActions": [
+                        {
+                          "$type": "ServerLuaCall",
+                          "doOffStage": true,
+                          "funcName": "SLC_AvatarUseCatchWidget",
+                          "luaCallType": "CurGalleryControlGroup"
+                        },
+                        {
+                          "$type": "TriggerBullet",
+                          "bulletID": 420000021,
+                          "born": {
+                            "$type": "ConfigBornByAttachPoint",
+                            "attachPointName": "FocusAnchor",
+                            "attachPointTargetType": "Self",
+                            "offset": {
+                              "x": 0.0,
+                              "y": 0.25,
+                              "z": 1.2
+                            },
+                            "direction": {
+                              "$type": "ConfigDirectionByAttachPoint",
+                              "attachPointName": "FocusAnchor",
+                              "attachPointTargetType": "Self",
+                              "angleOffset": {
+                                "x": -1.5,
+                                "y": 0,
+                                "z": 0
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "failActions": [
+                        {
+                          "$type": "ServerLuaCall",
+                          "doOffStage": true,
+                          "funcName": "SLC_AvatarUseCatchWidget",
+                          "luaCallType": "CurGalleryControlGroup"
+                        },
+                        {
+                          "$type": "TriggerBullet",
+                          "bulletID": 420000021,
+                          "born": {
+                            "$type": "ConfigBornByAttachPoint",
+                            "attachPointName": "FocusAnchor",
+                            "attachPointTargetType": "Self",
+                            "offset": {
+                              "x": 0.0,
+                              "y": 0.5,
+                              "z": 1.2
+                            },
+                            "direction": {
+                              "$type": "ConfigDirectionByAttachPoint",
+                              "attachPointName": "FocusAnchor",
+                              "attachPointTargetType": "Self",
+                              "angleOffset": {
+                                "x": -1.5,
+                                "y": 0,
+                                "z": 0
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "EndChannelTrigger",
+              "doOffStage": true
+            }
+          ],
+          //延迟一点退出动作
+          "onRemoved": []
+        }
+      },
+      //加个死亡恢复保护
+      "onKill": [
+        {
+          "$type": "ChangePlayMode",
+          "muteRemoteAction": true,
+          "toPlayMode": "Normal",
+          "doOffStage": true
+        }
+      ]
+    }
+  },
+  //蕈兽集火技能
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "ActivityAbility_CatchMushroomMonster_ForceFire",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "ActivityAbility_CatchAnimal_AddSkillInfo",
+          "doOffStage": true
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "ActivityAbility_CatchAnimal_SwitchSkill",
+          "doOffStage": true
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "ActivityAbility_CatchAnimal_Aim_Handler",
+          "doOffStage": true
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "GhostToEmeny",
+          "doOffStage": true
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "GhostToAllied",
+          "doOffStage": true
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "DenyLock",
+          "doOffStage": true
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "Invincible",
+          "doOffStage": true
+        }
+      ],
+      "modifiers": {
+        "DenyLock": {
+          "state": "DenyLockOn",
+          "onAdded": [
+            {
+              "$type": "AttachAbilityStateResistance",
+              "resistanceListID": 11002
+            }
+          ]
+        },
+        "Invincible": {
+          "state": "Invincible",
+          "modifierMixins": [
+            {
+              "$type": "VelocityForceMixin",
+              "excludeForces": ["WindZoneType"]
+            }
+          ]
+        },
+        "GhostToAllied": {
+          "state": "IsGhostToAllied"
+        },
+        "GhostToEmeny": {
+          "state": "IsGhostToEnemy"
+        },
+        //增添抓捕专用技能,切换面板
+        "ActivityAbility_CatchAnimal_AddSkillInfo": {
+          "modifierMixins": [],
+          "onAdded": [
+            {
+              "$type": "AddAvatarSkillInfo",
+              "skillID": 20051,
+              "doOffStage": true
+            },
+            // {
+            // 	"$type": "AvatarSkillStart",  //这是用来让它装备瞬间闪一下
+            // 	"skillID": 20051,
+            // 	"cdRatio": 0.1,
+            // },
+            {
+              "$type": "ChangePlayMode",
+              "muteRemoteAction": true,
+              "toPlayMode": "FungusFighterBattle",
+              "doOffStage": true,
+              "canBeHandledOnRecover": true
+            }
+          ],
+
+          "onRemoved": [
+            {
+              "$type": "RemoveAvatarSkillInfo",
+              "skillID": 20051,
+              "refreshAfterRemove": true,
+              "doOffStage": true
+            },
+            {
+              "$type": "ChangePlayMode",
+              "muteRemoteAction": true,
+              "toPlayMode": "Normal",
+              "doOffStage": true,
+              "canBeHandledOnRecover": true
+            }
+          ]
+        },
+        //替换小技能按钮
+        "ActivityAbility_CatchAnimal_SwitchSkill": {
+          "modifierMixins": [
+            {
+              "$type": "SwitchSkillIDMixin",
+              "priority": "Playmode",
+              "skillIndex": 1,
+              "skillID": 20051
+            }
+          ]
+        },
+        //处理瞄准的主要按键逻辑
+        "ActivityAbility_CatchAnimal_Aim_Handler": {
+          "modifierMixins": [
+            {
+              "$type": "AttachToStateIDMixin",
+              "stateIDs": ["Channel_BS", "Channel_Loop", "Channel_AS"],
+              "modifierName": "Trigger_OnExit"
+            },
+            {
+              "$type": "ButtonHoldChargeMixin",
+              "skillID": 20051,
+              "chargeTime": 0.0,
+              "secondChargeTime": 0.12,
+              "OnBeginCharged": [
+                {
+                  "$type": "SetGlobalValue",
+                  "key": "_ABILITY_Common_Channel_IsTrigger", //每次点按重置Trigger
+                  "value": 0,
+                  "doOffStage": true
+                }
+              ],
+              //点按释放
+              "OnReleaseCharged": [
+                // {
+                // 	"$type": "ApplyModifier",
+                // 	"modifierName": "Shoot_Short",
+                // 	"doOffStage": true,
+                // },
+                {
+                  "$type": "ShowReminder",
+                  "id": 470510101,
+                  "muteRemoteAction": true
+                }
+              ],
+              "OnBeginSecondCharged": [
+                {
+                  "$type": "SetAnimatorTrigger",
+                  "triggerID": "StartChannelTrigger"
+                },
+                {
+                  "$type": "CreateGadget", ////创建创生物 用来瞄准
+                  "gadgetID": 420000024,
+                  "campID": 1001,
+                  "campTargetType": "Enemy",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    }
+                  }
+                }
+              ],
+              //长按释放
+              "OnReleaseSecondCharged": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "Shoot_Long",
+                  "doOffStage": true,
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "key": "_ABILITY_Common_Channel_IsTrigger",
+                      "value": 0,
+                      "compareType": "Equal"
+                    }
+                  ]
+                },
+                {
+                  "$type": "SetGlobalValue",
+                  "key": "_ABILITY_Common_Channel_IsTrigger",
+                  "value": 1,
+                  "doOffStage": true
+                }
+              ],
+              "chargeStateIDs": ["Channel_Loop"],
+              "OnCancelCharged": [
+                {
+                  "$type": "SetAnimatorTrigger",
+                  "triggerID": "EndChannelTrigger"
+                }
+              ]
+            },
+
+            {
+              "$type": "AttachToStateIDMixin",
+              "stateIDs": ["Channel_BS", "Channel_Loop"],
+              "modifierName": "Focus"
+            }
+          ]
+        },
+        //替换操控面板
+        "ActivityAbility_CatchAnimal_ChangePlayMode": {
+          "onAdded": [
+            {
+              "$type": "ChangePlayMode",
+              "muteRemoteAction": true,
+              "toPlayMode": "ActivityAimState",
+              "doOffStage": true
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ChangePlayMode",
+              "muteRemoteAction": true,
+              "toPlayMode": "Normal",
+              "doOffStage": true
+            }
+          ]
+        },
+        //强制退出时需要TriggerCD
+        "Trigger_OnExit": {
+          "onRemoved": [
+            // {
+            // 	"$type": "ApplyModifier",       //没松手被打断时强制发射子弹
+            // 	"modifierName": "Shoot_Short",
+            // 	"doOffStage": true,
+            // 	"predicates":
+            // 	[
+            // 		{
+            // 			"$type": "ByTargetGlobalValue",
+            // 			"key": "_ABILITY_Common_Channel_IsTrigger",
+            // 			"value": 0,
+            // 			"compareType": "Equal",
+            // 		},
+            // 	],
+            // },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ABILITY_Common_Channel_IsTrigger",
+              "value": 1,
+              "doOffStage": true
+            },
+            {
+              "$type": "KillGadget",
+              "doOffStage": true,
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 420000024
+              }
+            }
+          ]
+        },
+        //瞄准镜头
+        "Focus": {
+          "onAdded": [
+            {
+              "$type": "AvatarEnterFocus",
+              "cameraFollowLower": {
+                "x": 0.6,
+                "y": 0.2,
+                "z": -1.8
+              },
+              "cameraFollowUpper": {
+                "x": 0.6,
+                "y": -0.1,
+                "z": -1.8
+              },
+              "canMove": false,
+              "dragButtonName": "Skill2",
+              "showCrosshair": true,
+              "disableAnim": true,
+              "assistance": {
+                "ps4": { "useGyro": true },
+                "ps5": { "useGyro": true },
+                "other": { "useGyro": true }
+              },
+              "vcam_fov": 30,
+              "cameraFollowMaxDegree": 40,
+              "cameraFollowMinDegree": -40
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "LockMotionFlagExitChannel", //需要保证Focus阶段不能移动
+              "value": true
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_CatchAnimal_Charge"
+            },
+            // {
+            // 	"$type": "AttachModifier",
+            // 	"modifierName": "ActivityAbility_CatchAnimal_ChangePlayMode",
+            // },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ABILITY_Common_IsChannelState",
+              "value": 1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "AvatarExitFocus",
+              "keepRotation": true,
+              "doOffStage": true
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "LockMotionFlagExitChannel",
+              "value": false,
+              "doOffStage": true
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_ABILITY_Common_IsChannelState",
+              "value": 0,
+              "doOffStage": true
+            }
+          ]
+        },
+
+        //点按发射捕捉器
+        "Shoot_Short": {
+          "duration": 0.2,
+          "onAdded": [
+            {
+              "$type": "AvatarSkillStart",
+              "skillID": 20051,
+              "cdRatio": 1
+            }
+          ]
+        },
+        //长按发射捕捉器
+        "Shoot_Long": {
+          "duration": 0.3,
+          "onAdded": [
+            {
+              "$type": "AvatarSkillStart",
+              "skillID": 20051,
+              "cdRatio": 1
+            },
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_CatchAnimal_Shoot",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "WeaponR",
+                "attachPointTargetType": "Self",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 420000024
+              },
+              "modifierName": "UNIQUE_CatchMushroomMonster_Aim_Driver" //把瞄准碰撞检测器卸载
+            }
+          ],
+          //延迟一点退出动作
+          "onRemoved": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "EndChannelTrigger",
+              "doOffStage": true
+            }
+          ]
+        }
+      },
+      //加个死亡恢复保护
+      "onKill": [
+        {
+          "$type": "ChangePlayMode",
+          "muteRemoteAction": true,
+          "toPlayMode": "Normal",
+          "doOffStage": true
+        }
+      ]
+    }
+  },
+  //420000024 集火技能碰撞检测
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "ActivityAbility_CatchMushroomMonster_Aim_Driver",
+      //集火技能负责瞄准碰撞处理的gadget
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_CatchMushroomMonster_Aim_Driver"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_CatchMushroomMonster_Aim_Driver": {
+          "isUnique": true,
+          "modifierMixins": [
+            {
+              "$type": "DoActionByAimMixin",
+              "entityTypes": ["Monster"],
+              "colliderNodeName": "PRIVATE_RayCast",
+              "aimType": "OneInScope",
+              "actionQueue": [
+                {
+                  "$type": "AttachModifier",
+                  "modifierName": "Lock_Eff",
+                  "target": "Target",
+                  "predicates": [
+                    {
+                      "$type": "ByEntityTypes",
+                      "entityTypes": ["Monster"]
+                    },
+                    {
+                      "$type": "ByTargetGlobalValue", //非小动物
+                      "key": "_ANIMAL_ENTITY_TYPE",
+                      "value": 0,
+                      "compareType": "NoneOrEqual"
+                    }
+                  ]
+                }
+              ],
+              "onLeaveScopeActionQueue": [
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Lock_Eff",
+                  "target": "Target",
+                  "predicates": [
+                    {
+                      "$type": "ByEntityTypes",
+                      "entityTypes": ["Monster"]
+                    },
+                    {
+                      "$type": "ByTargetGlobalValue", //非小动物
+                      "key": "_ANIMAL_ENTITY_TYPE",
+                      "value": 0,
+                      "compareType": "NoneOrEqual"
+                    }
+                  ]
+                }
+              ],
+              "onRemoveActionQueue": [
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Lock_Eff",
+                  "target": "Target",
+                  "predicates": [
+                    {
+                      "$type": "ByEntityTypes",
+                      "entityTypes": ["Monster"]
+                    },
+                    {
+                      "$type": "ByTargetGlobalValue", //非小动物
+                      "key": "_ANIMAL_ENTITY_TYPE",
+                      "value": 0,
+                      "compareType": "NoneOrEqual"
+                    }
+                  ]
+                },
+                {
+                  "$type": "ShowReminder",
+                  "muteRemoteAction": true,
+                  "id": 470510102
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "PreOnFire",
+                  "target": "Target",
+                  "predicates": [
+                    {
+                      "$type": "ByEntityTypes",
+                      "entityTypes": ["Monster"]
+                    },
+                    {
+                      "$type": "ByTargetGlobalValue", //非小动物
+                      "key": "_ANIMAL_ENTITY_TYPE",
+                      "value": 0,
+                      "compareType": "NoneOrEqual"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "KillSelfDelay"
+            }
+          ]
+        },
+        //预瞄准特效
+        "Lock_Eff": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Activity_FungusFighter_Lock"
+            }
+          ]
+        },
+        //先把周围的集火干掉再上集火
+        "PreOnFire": {
+          "duration": 0.3,
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_FungusFighter_FocusFire",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR40",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self"
+              },
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetIsSelf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_FungusFighter_FocusFire"
+            }
+          ]
+        },
+        //集火效果
+        "UNIQUE_FungusFighter_FocusFire": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Activity_FungusFighter_Onfire"
+            },
+            {
+              "$type": "TriggerTaunt",
+              "tauntLevel": "Monster_TauntLevel_6",
+              "careValue": 99999,
+              "tauntModifierOwner": true,
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR40",
+                "centerBasedOn": "Self",
+                "campTargetType": "Enemy",
+                "campBasedOn": "Self"
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "SGV_Fungus_StartBurst_Immediately",
+                  "value": 0,
+                  "compareType": "MoreThanAndEqual"
+                }
+              ]
+            }
+          ],
+          "thinkInterval": 2,
+          "onThinkInterval": [
+            {
+              "$type": "TriggerTaunt",
+              "tauntLevel": "Monster_TauntLevel_6",
+              "careValue": 99999,
+              "tauntModifierOwner": true,
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR40",
+                "centerBasedOn": "Self",
+                "campTargetType": "Enemy",
+                "campBasedOn": "Self"
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "SGV_Fungus_StartBurst_Immediately",
+                  "value": 0,
+                  "compareType": "MoreThanAndEqual"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "TriggerTaunt",
+              "careValue": -50000,
+              "tauntModifierOwner": true,
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR40",
+                "centerBasedOn": "Self",
+                "campTargetType": "Enemy",
+                "campBasedOn": "Self"
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "SGV_Fungus_StartBurst_Immediately",
+                  "value": 0,
+                  "compareType": "MoreThanAndEqual"
+                }
+              ]
+            }
+          ]
+        },
+        "KillSelfDelay": {
+          "duration": 0.3,
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      }
+    }
+  },
+  //Gadget  蕈兽捕获器的子弹
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "ActivityAbility_CatchMushroomBeast_Bullet",
+      "onAdded": [
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_SceneObj_CatchAnimal_Bullet_FungusFighter"
+        }
+      ],
+      //碰撞时Trigger
+      "onAbilityStart": [
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_SceneObj_CatchAnimal_Hit_FungusFighter"
+        },
+        {
+          "$type": "FireAISoundEvent"
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "All",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackCircle",
+              "triggerType": "TriggerNoRepeat",
+              "fanAngle": 360.0,
+              "radius": 3,
+              "height": 5,
+              "ignoreMassive": true,
+              "born": {
+                "$type": "ConfigBornByTarget",
+                "offset": {
+                  "x": 0.0,
+                  "y": -2.5,
+                  "z": 0.0
+                }
+              }
+            },
+            "attackInfo": {
+              "attackTag": "Mushroom_Monster_Catch",
+              "attackProperty": {
+                "damagePercentage": 0.0,
+                "elementType": "None",
+                "elementDurability": 0,
+                "strikeType": "Default",
+                "enBreak": 0
+              },
+              "hitPattern": {
+                "hitImpulseType": "LV1",
+                "hitHaltTime": 0.0,
+                "hitHaltTimeScale": 0.05,
+                "muteHitText": false
+              }
+            }
+          }
+        },
+        {
+          "$type": "KillSelf"
+        }
+      ],
+      "modifiers": {}
+    }
+  },
   //////////////////////////////////////////////////////////////
   ///
   ///   Ver2.3  狗子活动————抓小动物

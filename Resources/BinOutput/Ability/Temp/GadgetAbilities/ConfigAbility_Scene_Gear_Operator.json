@@ -621,6 +621,63 @@
   },
   ////////////////////////////////////////////////////////////
   //
+  // 守护机关实体-蕈兽大活动
+  //
+  ////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Gear_Operator_Mamolu_FungusActivity",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Default"
+        },
+        {
+          "$type": "AttachAbilityStateResistance",
+          "resistanceListID": 11002 //位于AvatarSkillData，状态免疫大礼包
+        },
+        {
+          "$type": "SetGlobalValue",
+          "key": "_SCENEOBJ_PROTECTTARGET",
+          "value": 1
+        }
+      ],
+      "modifiers": {
+        "Default": {
+          "thinkInterval": 2,
+          "onThinkInterval": [
+            {
+              "$type": "TriggerTaunt",
+              "tauntLevel": "Ability_TauntLevel_2",
+              "careValue": 30,
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR25",
+                "centerBasedOn": "Self",
+                "campTargetType": "Enemy",
+                "campBasedOn": "Self"
+              },
+              "predicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_TAUNT_FLAG",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////
+  //
   // 轻策之藏实体
   //
   ////////////////////////////////////////////////////////////

@@ -207,10 +207,10 @@
         "UNIQUE_MonsterAffix_WhiteBox_RandomThunder": {
           "isUnique": true,
           "onAdded": [
-            {
-              "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Electric_ElementShield_BS"
-            }
+            // {
+            // 	"$type" : "AttachEffect",
+            // 	"effectPattern"  : "Eff_Monster_Electric_ElementShield_BS",
+            // },
           ],
           "onBeingHit": [
             {
@@ -244,11 +244,11 @@
                   "entityTypes": ["Avatar"]
                 }
               ]
-            },
-            {
-              "$type": "FireEffect",
-              "effectPattern": "Eff_Monster_Follow_AlertCircle_20"
             }
+            // {
+            // 	"$type" : "FireEffect",
+            // 	"effectPattern"  : "Eff_Monster_Follow_AlertCircle_20",
+            // },
           ],
           "onRemoved": [
             {

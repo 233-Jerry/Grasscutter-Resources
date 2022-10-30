@@ -1776,11 +1776,6 @@
               "target": "Self"
             },
             {
-              "$type": "EnableHitBoxByName",
-              "hitBoxNames": ["HitBox", "HeadBox"],
-              "setEnable": false
-            },
-            {
               "$type": "EnablePushColliderName",
               "pushColliderNames": ["PushCollider"],
               "setEnable": false
@@ -1788,10 +1783,20 @@
           ],
           "onRemoved": [
             {
-              "$type": "EnableHitBoxByName",
-              "hitBoxNames": ["HitBox", "HeadBox"],
+              "$type": "EnablePushColliderName",
+              "pushColliderNames": ["PushCollider"],
+              "canBeHandledOnRecover": true,
               "setEnable": true
-            },
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "EnablePushColliderName",
+              "pushColliderNames": ["PushCollider"],
+              "setEnable": true
+            }
+          ],
+          "onChangeAuthority": [
             {
               "$type": "EnablePushColliderName",
               "pushColliderNames": ["PushCollider"],

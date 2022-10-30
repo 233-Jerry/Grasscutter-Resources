@@ -810,6 +810,21 @@
             {
               "$type": "EnablePushColliderName",
               "pushColliderNames": ["PushCollider", "PushCollider_Sky"],
+              "canBeHandledOnRecover": true,
+              "setEnable": true
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "EnablePushColliderName",
+              "pushColliderNames": ["PushCollider", "PushCollider_Sky"],
+              "setEnable": true
+            }
+          ],
+          "onChangeAuthority": [
+            {
+              "$type": "EnablePushColliderName",
+              "pushColliderNames": ["PushCollider", "PushCollider_Sky"],
               "setEnable": true
             }
           ]

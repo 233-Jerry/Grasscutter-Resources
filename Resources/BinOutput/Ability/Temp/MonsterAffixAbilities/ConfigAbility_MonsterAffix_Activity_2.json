@@ -682,5 +682,125 @@
         "ThunderArea_Ratio": 3
       }
     }
+  },
+  //////////////////////
+  //
+  // 3.2奇趣妙园   4182~4184
+  //
+  /////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Property_ForCharAmusement_Shield",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_Property_ForCharAmusement_Shield"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_MonsterAffix_Property_ForCharAmusement_Shield": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "properties": {
+            "Actor_MaxHPRatio": "%HPRatio",
+            "Actor_AttackRatio": "%AttackRatio",
+            "Actor_PhysicalSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_FireSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_ElecSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_IceSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_WaterSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_GrassSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_WindSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_RockSubHurtDelta": "%SubHurtDelta_AllType"
+          },
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_MONSTER_ForCharAmusement_Shield",
+              "value": 1
+            }
+          ]
+        }
+      },
+      "abilitySpecials": {
+        "HPRatio": 0,
+        "AttackRatio": 0,
+        "SubHurtDelta_AllType": 0
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Property_ForCharAmusement_Chain",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_Property_ForCharAmusement_Chain"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_MonsterAffix_Property_ForCharAmusement_Chain": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "properties": {
+            "Actor_MaxHPRatio": "%HPRatio",
+            "Actor_AttackRatio": "%AttackRatio",
+            "Actor_PhysicalSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_FireSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_ElecSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_IceSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_WaterSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_GrassSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_WindSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_RockSubHurtDelta": "%SubHurtDelta_AllType"
+          }
+        }
+      },
+      "abilitySpecials": {
+        "HPRatio": 0,
+        "AttackRatio": 0,
+        "SubHurtDelta_AllType": 0
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Property_ForCharAmusement_FastKill",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_Property_ForCharAmusement_FastKill"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_MonsterAffix_Property_ForCharAmusement_FastKill": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "properties": {
+            "Actor_MaxHPRatio": "%HPRatio",
+            "Actor_AttackRatio": "%AttackRatio",
+            "Actor_PhysicalSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_FireSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_ElecSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_IceSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_WaterSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_GrassSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_WindSubHurtDelta": "%SubHurtDelta_AllType",
+            "Actor_RockSubHurtDelta": "%SubHurtDelta_AllType"
+          }
+        }
+      },
+      "abilitySpecials": {
+        "HPRatio": 0,
+        "AttackRatio": 0,
+        "SubHurtDelta_AllType": 0
+      }
+    }
   }
 ]

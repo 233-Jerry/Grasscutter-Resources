@@ -1640,7 +1640,7 @@
             },
             {
               "$type": "FireEffect",
-              "effectPattern": "FireBasin_Smoke",
+              "effectPattern": "Eff_FireBasin_Smoke",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "attachPoint"
@@ -1724,7 +1724,7 @@
             },
             {
               "$type": "FireEffect",
-              "effectPattern": "FireBasin_Smoke",
+              "effectPattern": "Eff_FireBasin_Smoke",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "attachPoint"
@@ -1809,7 +1809,7 @@
             },
             {
               "$type": "FireEffect",
-              "effectPattern": "FireBasin_Smoke",
+              "effectPattern": "Eff_FireBasin_Smoke",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "attachPoint"
@@ -1894,7 +1894,7 @@
             },
             {
               "$type": "FireEffect",
-              "effectPattern": "FireBasin_Smoke",
+              "effectPattern": "Eff_FireBasin_Smoke",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "attachPoint"
@@ -1979,7 +1979,7 @@
             },
             {
               "$type": "FireEffect",
-              "effectPattern": "FireBasin_Smoke",
+              "effectPattern": "Eff_FireBasin_Smoke",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "attachPoint"
@@ -2380,6 +2380,10 @@
           "effectPattern": "Eff_SceneObj_RobotsLaserCannon_05"
         }
       ],
+      "abilitySpecials": {
+        "LevelEntity_AvatarDot_SystemValue": 0,
+        "DamagePercentage": 4
+      },
       "onAbilityStart": [
         {
           "$type": "FireEffect",
@@ -2389,10 +2393,10 @@
           }
         },
         {
-          "$type": "DebugLog",
-          "content": "ATTACK!!!!!!!!!!!"
+          "$type": "SetSystemValueToOverrideMap",
+          "key": "LevelEntity_AvatarDot_SystemValue",
+          "type": "ElementLevelCo"
         },
-
         {
           "$type": "TriggerAttackEvent",
           "targetType": "All",
@@ -2405,16 +2409,18 @@
                 "$type": "ConfigBornByCollisionPoint"
               }
             },
-
             "attackInfo": {
               "attackTag": "Desert_Gardian_UIAttack",
               "attackProperty": {
-                "damagePercentage": 1,
-                "elementType": "Fire",
+                "damagePercentage": 0,
+                "damageExtra": "%LevelEntity_AvatarDot_SystemValue*%DamagePercentage",
+                "trueDamage": true,
+                "ignoreAttackerProperty": true,
+                "elementType": "None",
                 "elementDurability": 10,
                 "strikeType": "Default",
                 "ignoreLevelDiff": true,
-                "enBreak": 999
+                "enBreak": 120
               },
               "hitPattern": {
                 "onHitEffectName": "default",

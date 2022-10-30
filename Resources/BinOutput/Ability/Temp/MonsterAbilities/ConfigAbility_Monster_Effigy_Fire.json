@@ -302,8 +302,8 @@
                 "$type": "ConfigBornByHitPoint",
                 "direction": {
                   "$type": "ConfigDirectionByBackToHitBoxCenter"
-                },
-                "alongGround": true
+                }
+                //"alongGround": true,
               }
             }
           ]
@@ -504,12 +504,6 @@
           "poseIDs": [101],
           "modifierName": "Effigy_Fire_CooldownModifier"
         },
-        //Burning
-        {
-          "$type": "AttachToPoseIDMixin",
-          "poseIDs": [201],
-          "modifierName": "Effigy_Fire_BurningModifier"
-        },
         {
           "$type": "ServerFinishWatcherMixin",
           "watcherId": 82097,
@@ -542,6 +536,59 @@
           "$type": "SetGlobalValue",
           "key": "_EFFIGY_FIRE_REVIVECOUNT_",
           "value": 0
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_BurningHandler",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_BurningHandler_Elite",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_BurningHandler_Elite_Difficulty",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
         }
       ],
       "modifiers": {
@@ -606,6 +653,36 @@
             }
           ]
         },
+        "Effigy_Fire_BurningHandler": {
+          "modifierMixins": [
+            //Burning
+            {
+              "$type": "AttachToPoseIDMixin",
+              "poseIDs": [201],
+              "modifierName": "Effigy_Fire_BurningModifier"
+            }
+          ]
+        },
+        "Effigy_Fire_BurningHandler_Elite": {
+          "modifierMixins": [
+            //Burning Elite
+            {
+              "$type": "AttachToPoseIDMixin",
+              "poseIDs": [201],
+              "modifierName": "UNIQUE_Effigy_Fire_BurningModifier_Elite"
+            }
+          ]
+        },
+        "Effigy_Fire_BurningHandler_Elite_Difficulty": {
+          "modifierMixins": [
+            //Burning Elite
+            {
+              "$type": "AttachToPoseIDMixin",
+              "poseIDs": [201],
+              "modifierName": "UNIQUE_Effigy_Fire_BurningModifier_Elite_Difficulty"
+            }
+          ]
+        },
         "Effigy_Fire_BurningModifier": {
           //Burning state
           //TODO:
@@ -643,6 +720,540 @@
             }
           ],
           "onAdded": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "ShaderBurningTrigger",
+              "MPTriggerOnRemote": true,
+              "canBeHandledOnRecover": true
+            },
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetHPRatio",
+                  "HPRatio": "%Effigy_Fire_ReviveMaxHPRatio",
+                  "logic": "LesserOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "AddGlobalValue",
+                  "target": "Self",
+                  "key": "_EFFIGY_FIRE_REVIVECOUNT_",
+                  "value": 1,
+                  "useLimitRange": true,
+                  "maxValue": 3,
+                  "minValue": 0
+                }
+              ]
+            },
+            //////////////////////////////////////////////////////
+            //Check revive count to set revive math
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_FIRE_REVIVECOUNT_",
+                  "value": 0,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetOverrideMapValue",
+                  "overrideMapKey": "Effigy_Fire_ReviveHPStep",
+                  "value": 0.05
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_FIRE_REVIVECOUNT_",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetOverrideMapValue",
+                  "overrideMapKey": "Effigy_Fire_ReviveHPStep",
+                  "value": 0.05
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_FIRE_REVIVECOUNT_",
+                  "value": 2,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetOverrideMapValue",
+                  "overrideMapKey": "Effigy_Fire_ReviveHPStep",
+                  "value": 0.025
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_FIRE_REVIVECOUNT_",
+                  "value": 3,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetOverrideMapValue",
+                  "overrideMapKey": "Effigy_Fire_ReviveHPStep",
+                  "value": 0.0
+                }
+              ]
+            },
+            //End
+            //////////////////////////////////////////////////////
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetHPRatio",
+                  "HPRatio": "%Effigy_Fire_ReviveMaxHPRatio",
+                  "logic": "LesserOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "HealHP",
+                  "amountByTargetMaxHPRatio": "%Effigy_Fire_ReviveHPStep",
+                  "target": "Self"
+                }
+              ]
+            },
+            {
+              "$type": "SetChargeBarValue",
+              "value": 0
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "ShaderBurning",
+              "value": true,
+              "canBeHandledOnRecover": true
+            },
+            {
+              "$type": "ServerMonsterLog",
+              "target": "Self",
+              "paramList": [1, 0, 0]
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByAny",
+                  "predicates": [
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Electric"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Water"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Wind"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Ice"
+                    }
+                  ]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Effigy_Fire_BeHit_Shield_Burning_Effective",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint"
+                  }
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "ShaderExtinctTrigger",
+              "MPTriggerOnRemote": true
+            },
+            {
+              //Extincted
+              "$type": "ServerMonsterLog",
+              "target": "Self",
+              "paramList": [2, 0, 0]
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Burning_RollingChargeOnGroundEffect"
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetHPRatio",
+                  "HPRatio": "%Effigy_Fire_ReviveMaxHPRatio",
+                  "logic": "LesserOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "HealHP",
+                  "amountByTargetMaxHPRatio": "%Effigy_Fire_ReviveHPStep",
+                  "target": "Self"
+                }
+              ]
+            }
+          ]
+        },
+        "UNIQUE_Effigy_Fire_BurningModifier_Elite": {
+          //Burning state
+          //TODO:
+          //Maintain Burning fx
+          //Fire ShieldBar
+          //Play extinct anim on end
+          //"state": "LockHP",
+          "isUnique": true,
+          "elementType": "Fire",
+          "elementDurability": 700,
+          "thinkInterval": 5.0,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin",
+              "useMutiPlayerFixData": true,
+              "onShieldBroken": [
+                //Start burning
+                {
+                  "$type": "SetPoseBool",
+                  "boolID": "Burning",
+                  "value": false
+                },
+                {
+                  "$type": "SetAnimatorTrigger",
+                  "triggerID": "ExtinctTrigger"
+                },
+                {
+                  "$type": "SetGlobalValue",
+                  "key": "_EFFIGY_FIRE_ELITE_TINDERBASE_HANDLER_",
+                  "value": 0
+                },
+                {
+                  "$type": "SetGlobalValue",
+                  "key": "_EFFIGY_FIRE_ELITE_DIFFICULTY_TINDERBASE_HANDLER_",
+                  "value": 0
+                },
+                {
+                  "$type": "AddGlobalValue",
+                  "key": "_WATCHER_82097_",
+                  "value": 1,
+                  "useLimitRange": true,
+                  "minValue": 0,
+                  "maxValue": 10
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "ServerMonsterLog",
+              "target": "Self",
+              "paramList": [3, 0, 0]
+            },
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "ShaderBurningTrigger",
+              "MPTriggerOnRemote": true,
+              "canBeHandledOnRecover": true
+            },
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetHPRatio",
+                  "HPRatio": "%Effigy_Fire_ReviveMaxHPRatio",
+                  "logic": "LesserOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "AddGlobalValue",
+                  "target": "Self",
+                  "key": "_EFFIGY_FIRE_REVIVECOUNT_",
+                  "value": 1,
+                  "useLimitRange": true,
+                  "maxValue": 3,
+                  "minValue": 0
+                }
+              ]
+            },
+            //////////////////////////////////////////////////////
+            //Check revive count to set revive math
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_FIRE_REVIVECOUNT_",
+                  "value": 0,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetOverrideMapValue",
+                  "overrideMapKey": "Effigy_Fire_ReviveHPStep",
+                  "value": 0.05
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_FIRE_REVIVECOUNT_",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetOverrideMapValue",
+                  "overrideMapKey": "Effigy_Fire_ReviveHPStep",
+                  "value": 0.05
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_FIRE_REVIVECOUNT_",
+                  "value": 2,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetOverrideMapValue",
+                  "overrideMapKey": "Effigy_Fire_ReviveHPStep",
+                  "value": 0.025
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_FIRE_REVIVECOUNT_",
+                  "value": 3,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetOverrideMapValue",
+                  "overrideMapKey": "Effigy_Fire_ReviveHPStep",
+                  "value": 0.0
+                }
+              ]
+            },
+            //End
+            //////////////////////////////////////////////////////
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetHPRatio",
+                  "HPRatio": "%Effigy_Fire_ReviveMaxHPRatio",
+                  "logic": "LesserOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "HealHP",
+                  "amountByTargetMaxHPRatio": "%Effigy_Fire_ReviveHPStep",
+                  "target": "Self"
+                }
+              ]
+            },
+            {
+              "$type": "SetChargeBarValue",
+              "value": 0
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "ShaderBurning",
+              "value": true,
+              "canBeHandledOnRecover": true
+            },
+            {
+              "$type": "ServerMonsterLog",
+              "target": "Self",
+              "paramList": [1, 0, 0]
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByAny",
+                  "predicates": [
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Electric"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Water"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Wind"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Ice"
+                    }
+                  ]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Effigy_Fire_BeHit_Shield_Burning_Effective",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint"
+                  }
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "ShaderExtinctTrigger",
+              "MPTriggerOnRemote": true
+            },
+            {
+              //Extincted
+              "$type": "ServerMonsterLog",
+              "target": "Self",
+              "paramList": [2, 0, 0]
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Burning_RollingChargeOnGroundEffect"
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetHPRatio",
+                  "HPRatio": "%Effigy_Fire_ReviveMaxHPRatio",
+                  "logic": "LesserOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "HealHP",
+                  "amountByTargetMaxHPRatio": "%Effigy_Fire_ReviveHPStep",
+                  "target": "Self"
+                }
+              ]
+            }
+          ]
+        },
+        "UNIQUE_Effigy_Fire_BurningModifier_Elite_Difficulty": {
+          //Burning state
+          //TODO:
+          //Maintain Burning fx
+          //Fire ShieldBar
+          //Play extinct anim on end
+          //"state": "LockHP",
+          "isUnique": true,
+          "elementType": "Fire",
+          "elementDurability": 1200,
+          "thinkInterval": 5.0,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin",
+              "useMutiPlayerFixData": true,
+              "onShieldBroken": [
+                //Start burning
+                {
+                  "$type": "SetPoseBool",
+                  "boolID": "Burning",
+                  "value": false
+                },
+                {
+                  "$type": "SetGlobalValue",
+                  "key": "_EFFIGY_FIRE_ELITE_TINDERBASE_HANDLER_",
+                  "value": 0
+                },
+                {
+                  "$type": "SetGlobalValue",
+                  "key": "_EFFIGY_FIRE_ELITE_DIFFICULTY_TINDERBASE_HANDLER_",
+                  "value": 0
+                },
+                {
+                  "$type": "SetAnimatorTrigger",
+                  "triggerID": "ExtinctTrigger"
+                },
+                {
+                  "$type": "AddGlobalValue",
+                  "key": "_WATCHER_82097_",
+                  "value": 1,
+                  "useLimitRange": true,
+                  "minValue": 0,
+                  "maxValue": 10
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "ServerMonsterLog",
+              "target": "Self",
+              "paramList": [3, 0, 0]
+            },
             {
               "$type": "SetAnimatorTrigger",
               "triggerID": "ShaderBurningTrigger",
@@ -922,7 +1533,30 @@
         {
           "$type": "SetGlobalValueToOverrideMap",
           "globalValueKey": "_EFFIGY_FIRE_TINDER_COUNT_",
-          "overrideMapKey": "TinderCount"
+          "overrideMapKey": "TinderCount",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "SetGlobalValueToOverrideMap",
+          "globalValueKey": "_EFFIGY_FIRE_TINDER_COUNT_",
+          "overrideMapKey": "TinderCount_Elite",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
         },
         {
           "$type": "AddGlobalValue",
@@ -931,7 +1565,67 @@
           "value": "20+%TinderCount*27",
           "useLimitRange": true,
           "maxValue": 100,
-          "minValue": 0
+          "minValue": 0,
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        // Elite
+        {
+          "$type": "AddGlobalValue",
+          "target": "Self",
+          "key": "_CHARGEBAR_VALUE",
+          "value": "20+%TinderCount_Elite*27",
+          "useLimitRange": true,
+          "maxValue": 100,
+          "minValue": 0,
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "AddGlobalValue",
+          "target": "Self",
+          "key": "_CHARGEBAR_VALUE",
+          "value": "40+%TinderCount_Elite*25",
+          "useLimitRange": true,
+          "maxValue": 100,
+          "minValue": 0,
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
         },
         {
           "$type": "ApplyModifier",
@@ -950,6 +1644,16 @@
             "sortType": "Default"
           },
           "modifierName": "Effigy_Fire_TinderKillSelf"
+        },
+        {
+          "$type": "SetGlobalValue",
+          "key": "_EFFIGY_FIRE_ELITE_TINDERBASE_HANDLER_",
+          "value": 0
+        },
+        {
+          "$type": "SetGlobalValue",
+          "key": "_EFFIGY_FIRE_ELITE_DIFFICULTY_TINDERBASE_HANDLER_",
+          "value": 0
         }
       ],
       "onAdded": [
@@ -965,6 +1669,16 @@
         }
       ],
       "onKill": [
+        {
+          "$type": "SetGlobalValue",
+          "key": "_EFFIGY_FIRE_ELITE_TINDERBASE_HANDLER_",
+          "value": 0
+        },
+        {
+          "$type": "SetGlobalValue",
+          "key": "_EFFIGY_FIRE_ELITE_DIFFICULTY_TINDERBASE_HANDLER_",
+          "value": 0
+        },
         {
           "$type": "ApplyModifier",
           "otherTargets": {
@@ -1009,6 +1723,16 @@
                 "sortType": "Default"
               },
               "modifierName": "Effigy_Fire_TinderKillSelf"
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_FIRE_ELITE_TINDERBASE_HANDLER_",
+              "value": 1
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_FIRE_ELITE_DIFFICULTY_TINDERBASE_HANDLER_",
+              "value": 1
             },
             {
               "$type": "SetGlobalValue",
@@ -1112,6 +1836,16 @@
             },
             {
               "$type": "SetGlobalValue",
+              "key": "_EFFIGY_FIRE_ELITE_TINDERBASE_HANDLER_",
+              "value": 0
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_FIRE_ELITE_DIFFICULTY_TINDERBASE_HANDLER_",
+              "value": 0
+            },
+            {
+              "$type": "SetGlobalValue",
               "key": "_EFFIGY_FIRE_TINDER_COUNT_",
               "value": 0
             },
@@ -1160,7 +1894,8 @@
         }
       },
       "abilitySpecials": {
-        "TinderCount": 0
+        "TinderCount": 0,
+        "TinderCount_Elite": 0
       }
     }
   },
@@ -1327,13 +2062,9 @@
               }
             },
             {
-              "$type": "AddGlobalValue",
-              "target": "OriginOwner",
-              "key": "_EFFIGY_FIRE_TINDER_COUNT_",
-              "value": 1,
-              "useLimitRange": true,
-              "maxValue": 99,
-              "minValue": 0
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_FirstTinder_GV",
+              "target": "OriginOwner"
             },
             {
               "$type": "SetGlobalValue",
@@ -1343,6 +2074,21 @@
             {
               "$type": "RemoveModifier",
               "modifierName": "Effigy_Fire_TinderBase_FirstTinderCreater"
+            }
+          ]
+        },
+        "Effigy_Fire_TinderBase_FirstTinder_GV": {
+          "stacking": "Multiple",
+          "duration": 0.1,
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "target": "Self",
+              "key": "_EFFIGY_FIRE_TINDER_COUNT_",
+              "value": 1,
+              "useLimitRange": true,
+              "maxValue": 99,
+              "minValue": 0
             }
           ]
         }
@@ -1356,7 +2102,38 @@
       "onAdded": [
         {
           "$type": "ApplyModifier",
-          "modifierName": "Effigy_Fire_Tinder"
+          "modifierName": "Effigy_Fire_Tinder",
+          "target": "Self",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "OriginOwner"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_Elite_Difficulty",
+          "target": "Self",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "OriginOwner"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "OriginOwner"
+            }
+          ]
         },
         {
           "$type": "SetGlobalValue",
@@ -1365,7 +2142,38 @@
         },
         {
           "$type": "ApplyModifier",
-          "modifierName": "Effigy_Fire_Tinder_Init"
+          "modifierName": "Effigy_Fire_Tinder_Init",
+          "target": "Self",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "OriginOwner"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_Init_Elite_Difficulty",
+          "target": "Self",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "OriginOwner"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "OriginOwner"
+            }
+          ]
         },
         {
           "$type": "ApplyModifier",
@@ -1383,7 +2191,8 @@
           "modifierName": "Effigy_Fire_Tinder"
         },
         {
-          "$type": "AddGlobalValue",
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_KillGV",
           "otherTargets": {
             "$type": "SelectTargetsByShape",
             "topLimit": 1,
@@ -1400,12 +2209,7 @@
               "value": 1,
               "compareType": "Equal"
             }
-          ],
-          "key": "_EFFIGY_FIRE_TINDER_COUNT_",
-          "value": -1,
-          "useLimitRange": true,
-          "maxValue": 99,
-          "minValue": 0
+          ]
         }
       ],
       "modifiers": {
@@ -1477,7 +2281,14 @@
                   "effectPattern": "Eff_Monster_Effigy_Fire_BeHit_Shield_Burning_Effective",
                   "born": {
                     "$type": "ConfigBornByHitPoint"
-                  }
+                  },
+                  "predicates": [
+                    {
+                      "$type": "ByHitLevel",
+                      "hitLevel": "Mute",
+                      "logic": "Greater"
+                    }
+                  ]
                 }
               ],
               "failActions": [
@@ -1486,7 +2297,116 @@
                   "effectPattern": "Eff_Monster_Effigy_Fire_BeHit_Shield_Burning_Ineffective",
                   "born": {
                     "$type": "ConfigBornByHitPoint"
-                  }
+                  },
+                  "predicates": [
+                    {
+                      "$type": "ByHitLevel",
+                      "hitLevel": "Mute",
+                      "logic": "Greater"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_Elite_Difficulty": {
+          "elementType": "Fire",
+          "elementDurability": 150,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin",
+              "useMutiPlayerFixData": false,
+              "onShieldBroken": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Effigy_Fire_Tinder_Destroyed"
+                },
+                {
+                  "$type": "SetGlobalValue",
+                  "target": "Owner",
+                  "key": "_EFFIGY_FIRE_TINDERBASE_HASBORNEDTINDER_",
+                  "value": 0
+                },
+                {
+                  "$type": "KillSelf"
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Tinder_Loop"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Tinder_AS"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByAny",
+                  "predicates": [
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Electric"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Water"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Wind"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Ice"
+                    }
+                  ]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Effigy_Fire_BeHit_Shield_Burning_Effective",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint"
+                  },
+                  "predicates": [
+                    {
+                      "$type": "ByHitLevel",
+                      "hitLevel": "Mute",
+                      "logic": "Greater"
+                    }
+                  ]
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Effigy_Fire_BeHit_Shield_Burning_Ineffective",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint"
+                  },
+                  "predicates": [
+                    {
+                      "$type": "ByHitLevel",
+                      "hitLevel": "Mute",
+                      "logic": "Greater"
+                    }
+                  ]
                 }
               ]
             }
@@ -1512,10 +2432,24 @@
               "$type": "HideUIBillBoard",
               "hide": false,
               "target": "Self"
-            },
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_Init_Elite_Difficulty": {
+          "state": "Invincible",
+          "duration": 1.5,
+          "onAdded": [
             {
-              "$type": "ApplyModifier",
-              "modifierName": "Effigy_Fire_Tinder_Shield"
+              "$type": "HideUIBillBoard",
+              "hide": true,
+              "target": "Self"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "HideUIBillBoard",
+              "hide": false,
+              "target": "Self"
             }
           ]
         },
@@ -1523,7 +2457,393 @@
           "state": "DenyLockOn",
           "duration": 1.5
         },
-        "Effigy_Fire_Tinder_Shield": {
+        "Effigy_Fire_Tinder_KillGV": {
+          "duration": 0.1,
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "key": "_EFFIGY_FIRE_TINDER_COUNT_",
+              "value": -1,
+              "useLimitRange": true,
+              "maxValue": 99,
+              "minValue": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Elite : TinderBase & Tinder
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Fire_TinderBase_Elite",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_TinderBase"
+        },
+        {
+          "$type": "SetGlobalValue",
+          "key": "_EFFIGY_FIRE_ISTINDERBASE_",
+          "value": 1
+        },
+        {
+          "$type": "CreateGadget",
+          "target": "Self",
+          "sightGroupWithOwner": true,
+          "lifeByOwnerV2": true,
+          "gadgetID": 42004508,
+          "byServer": true,
+          "ownerIsTarget": true,
+          "campID": 4001,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_TinderBase_TinderCreater1_Elite"
+        }
+        /* {
+				"$type": "SetGlobalValue",
+				"key": "_EFFIGY_FIRE_TINDERBASE_HASBORNEDTINDER_",
+				"value": 0,
+			}, */
+      ],
+      "onKill": [
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "Effigy_Fire_TinderBase"
+        }
+      ],
+      "modifiers": {
+        "Empty": {},
+        "Effigy_Fire_TinderBase": {
+          //"thinkInterval": 15.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_TinderBase_Loop"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_TinderBase_AS"
+            }
+          ]
+        },
+        "Effigy_Fire_TinderBase_TinderCreater1_Elite": {
+          "duration": 35,
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_KillTinder_Elite",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004508,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_CreateTinder_Elite"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_TinderCreater2_Elite"
+            }
+          ]
+        },
+        "Effigy_Fire_TinderBase_TinderCreater2_Elite": {
+          "duration": 35,
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_KillTinder_Elite",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004508,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_CreateTinder_Elite"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_TinderCreater1_Elite"
+            }
+          ]
+        },
+        "Effigy_Fire_TinderBase_KillTinder_Elite": {
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "CurGalleryControlGroup",
+              "funcName": "SLC_Fire_SeedKillSelf"
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "Effigy_Fire_TinderBase_CreateTinder_Elite": {
+          "duration": 1.0,
+          "onRemoved": [
+            {
+              "$type": "CreateGadget",
+              "target": "Self",
+              "sightGroupWithOwner": true,
+              "lifeByOwnerV2": true,
+              "gadgetID": 42004508,
+              "byServer": true,
+              "ownerIsTarget": true,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Fire_TinderBase_Elite_Difficulty",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_TinderBase"
+        },
+        {
+          "$type": "SetGlobalValue",
+          "key": "_EFFIGY_FIRE_ISTINDERBASE_",
+          "value": 1
+        },
+        {
+          "$type": "CreateGadget",
+          "target": "Self",
+          "sightGroupWithOwner": true,
+          "lifeByOwnerV2": true,
+          "gadgetID": 42004509,
+          "byServer": true,
+          "ownerIsTarget": true,
+          "campID": 4001,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_TinderBase_TinderCreater1_Elite_Difficulty"
+        }
+        /* {
+				"$type": "SetGlobalValue",
+				"key": "_EFFIGY_FIRE_TINDERBASE_HASBORNEDTINDER_",
+				"value": 0,
+			}, */
+      ],
+      "onKill": [
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "Effigy_Fire_TinderBase"
+        }
+      ],
+      "modifiers": {
+        "Empty": {},
+        "Effigy_Fire_TinderBase": {
+          //"thinkInterval": 15.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_TinderBase_Loop"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_TinderBase_AS"
+            }
+          ]
+        },
+        "Effigy_Fire_TinderBase_TinderCreater1_Elite_Difficulty": {
+          "duration": 35.0,
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_KillTinder_Elite_Difficulty",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004509,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_CreateTinder_Elite_Difficulty"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_TinderCreater2_Elite_Difficulty"
+            }
+          ]
+        },
+        "Effigy_Fire_TinderBase_TinderCreater2_Elite_Difficulty": {
+          "duration": 35.0,
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_KillTinder_Elite_Difficulty",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004509,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_CreateTinder_Elite_Difficulty"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_TinderBase_TinderCreater1_Elite_Difficulty"
+            }
+          ]
+        },
+        "Effigy_Fire_TinderBase_KillTinder_Elite_Difficulty": {
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "CurGalleryControlGroup",
+              "funcName": "SLC_Fire_SeedKillSelf"
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "Effigy_Fire_TinderBase_CreateTinder_Elite_Difficulty": {
+          "duration": 1.0,
+          "onRemoved": [
+            {
+              "$type": "CreateGadget",
+              "target": "Self",
+              "sightGroupWithOwner": true,
+              "lifeByOwnerV2": true,
+              "gadgetID": 42004509,
+              "byServer": true,
+              "ownerIsTarget": true,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Fire_Tinder_Elite",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_RepairShield_Elite_Delay"
+        },
+        {
+          "$type": "SetGlobalValue",
+          "key": "_EFFIGY_FIRE_ISTINDER_",
+          "value": 1
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_Init"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_DenyLockOn"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_AddGV_Elite",
+          "target": "OriginOwner"
+        }
+      ],
+      "onKill": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_ReduceGV_Elite",
+          "target": "OriginOwner"
+        },
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "Effigy_Fire_Tinder"
+        },
+        {
+          "$type": "TriggerAbility",
+          "abilityName": "Monster_Effigy_Fire_EliteSet",
+          "target": "OriginOwner"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_KillGV",
+          "otherTargets": {
+            "$type": "SelectTargetsByShape",
+            "topLimit": 1,
+            "shapeName": "CircleR50",
+            "centerBasedOn": "Self",
+            "campTargetType": "AllExceptSelf",
+            "campBasedOn": "Self",
+            "sortType": "Nearest"
+          },
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_FIRE_TAG_",
+              "value": 1,
+              "compareType": "Equal"
+            }
+          ]
+        }
+      ],
+      "modifiers": {
+        "Effigy_Fire_Tinder": {
           "elementType": "Fire",
           "elementDurability": 50,
           "modifierMixins": [
@@ -1531,6 +2851,15 @@
               "$type": "ShieldBarMixin",
               "useMutiPlayerFixData": false,
               "onShieldBroken": [
+                {
+                  "$type": "AddGlobalValue",
+                  "value": 1,
+                  "key": "_EFFIGY_ELITE_TINDER_HITTAG_",
+                  "useLimitRange": true,
+                  "maxValue": 3,
+                  "minValue": 0,
+                  "target": "OriginOwner"
+                },
                 {
                   "$type": "FireEffect",
                   "effectPattern": "Eff_Monster_Effigy_Fire_Tinder_Destroyed"
@@ -1545,6 +2874,453 @@
                   "$type": "KillSelf"
                 }
               ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Tinder_Loop"
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Elite_Tinder"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Tinder_AS"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByAny",
+                  "predicates": [
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Electric"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Water"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Wind"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Ice"
+                    }
+                  ]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Effigy_Fire_BeHit_Shield_Burning_Effective",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint"
+                  }
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Effigy_Fire_BeHit_Shield_Burning_Ineffective",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_Init": {
+          "state": "Invincible",
+          "duration": 1.5,
+          "onAdded": [
+            {
+              "$type": "HideUIBillBoard",
+              "hide": true,
+              "target": "Self"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "HideUIBillBoard",
+              "hide": false,
+              "target": "Self"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_DenyLockOn": {
+          "state": "DenyLockOn",
+          "duration": 1.5
+        },
+        "Effigy_Fire_Tinder_RepairShield_Elite_Delay": {
+          "duration": 2.0,
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_Tinder_RepairShield_Elite"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_RepairShield_Elite": {
+          "thinkInterval": 1.0,
+          "onThinkInterval": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_Tinder_AddElement_Elite",
+              "target": "OriginOwner"
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_Tinder_AddElement_Elite",
+              "target": "OriginOwner"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_AddElement_Elite": {
+          "duration": 0.1,
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "AddElementDurability",
+              "value": 5,
+              "modifierName": "UNIQUE_Effigy_Fire_BurningModifier_Elite",
+              "elementType": "Fire",
+              "useLimitRange": true,
+              "useMutiPlayerFixData": true,
+              "maxValue": 700.0,
+              "target": "Self"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_AddGV_Elite": {
+          "duration": 0.1,
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "value": 1,
+              "key": "_EFFIGY_ELITE_TINDER_COUNT_",
+              "useLimitRange": true,
+              "maxValue": 3,
+              "minValue": 0,
+              "target": "Self"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_ReduceGV_Elite": {
+          "duration": 0.1,
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "value": -1,
+              "key": "_EFFIGY_ELITE_TINDER_COUNT_",
+              "useLimitRange": true,
+              "maxValue": 3,
+              "minValue": 0,
+              "target": "Self"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_KillGV": {
+          "duration": 0.1,
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "key": "_EFFIGY_FIRE_TINDER_COUNT_",
+              "value": -1,
+              "useLimitRange": true,
+              "maxValue": 99,
+              "minValue": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Fire_Tinder_Elite_Difficulty",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_RepairShield_Elite_Difficulty_Delay"
+        },
+        {
+          "$type": "SetGlobalValue",
+          "key": "_EFFIGY_FIRE_ISTINDER_",
+          "value": 1
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_Init"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_DenyLockOn"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_AddGV_Elite_Difficulty",
+          "target": "OriginOwner"
+        }
+      ],
+      "onKill": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_ReduceGV_Elite_Difficulty",
+          "target": "OriginOwner"
+        },
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "Effigy_Fire_Tinder"
+        },
+        {
+          "$type": "TriggerAbility",
+          "abilityName": "Monster_Effigy_Fire_EliteSet",
+          "target": "OriginOwner"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Tinder_KillGV",
+          "otherTargets": {
+            "$type": "SelectTargetsByShape",
+            "topLimit": 1,
+            "shapeName": "CircleR50",
+            "centerBasedOn": "Self",
+            "campTargetType": "AllExceptSelf",
+            "campBasedOn": "Self",
+            "sortType": "Nearest"
+          },
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_FIRE_TAG_",
+              "value": 1,
+              "compareType": "Equal"
+            }
+          ]
+        }
+      ],
+      "modifiers": {
+        "Effigy_Fire_Tinder": {
+          "elementType": "Fire",
+          "elementDurability": 150,
+          "modifierMixins": [
+            {
+              "$type": "ShieldBarMixin",
+              "useMutiPlayerFixData": false,
+              "onShieldBroken": [
+                {
+                  "$type": "AddGlobalValue",
+                  "value": 1,
+                  "key": "_EFFIGY_ELITE_TINDER_HITTAG_",
+                  "useLimitRange": true,
+                  "maxValue": 3,
+                  "minValue": 0,
+                  "target": "OriginOwner"
+                },
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Effigy_Fire_Tinder_Destroyed"
+                },
+                {
+                  "$type": "SetGlobalValue",
+                  "target": "Owner",
+                  "key": "_EFFIGY_FIRE_TINDERBASE_HASBORNEDTINDER_",
+                  "value": 0
+                },
+                {
+                  "$type": "KillSelf"
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Tinder_Loop"
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Elite_Tinder"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Tinder_AS"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByAny",
+                  "predicates": [
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Electric"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Water"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Wind"
+                    },
+                    {
+                      "$type": "ByHitElement",
+                      "element": "Ice"
+                    }
+                  ]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Effigy_Fire_BeHit_Shield_Burning_Effective",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint"
+                  }
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Effigy_Fire_BeHit_Shield_Burning_Ineffective",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_Init": {
+          "state": "Invincible",
+          "duration": 1.5,
+          "onAdded": [
+            {
+              "$type": "HideUIBillBoard",
+              "hide": true,
+              "target": "Self"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "HideUIBillBoard",
+              "hide": false,
+              "target": "Self"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_DenyLockOn": {
+          "state": "DenyLockOn",
+          "duration": 1.5
+        },
+        "Effigy_Fire_Tinder_RepairShield_Elite_Difficulty_Delay": {
+          "duration": 2.0,
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_Tinder_RepairShield_Elite_Difficulty"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_RepairShield_Elite_Difficulty": {
+          "thinkInterval": 1.0,
+          "onThinkInterval": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_Tinder_AddElement_Elite_Difficulty",
+              "target": "OriginOwner"
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_Tinder_AddElement_Elite_Difficulty",
+              "target": "OriginOwner"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_AddElement_Elite_Difficulty": {
+          "duration": 0.1,
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "AddElementDurability",
+              "value": 25,
+              "modifierName": "UNIQUE_Effigy_Fire_BurningModifier_Elite_Difficulty",
+              "elementType": "Fire",
+              "useLimitRange": true,
+              "useMutiPlayerFixData": true,
+              "maxValue": 1200.0,
+              "target": "Self"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_AddGV_Elite_Difficulty": {
+          "duration": 0.1,
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "value": 1,
+              "key": "_EFFIGY_ELITE_TINDER_COUNT_",
+              "useLimitRange": true,
+              "maxValue": 3,
+              "minValue": 0,
+              "target": "Self"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_ReduceGV_Elite_Difficulty": {
+          "duration": 0.1,
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "value": -1,
+              "key": "_EFFIGY_ELITE_TINDER_COUNT_",
+              "useLimitRange": true,
+              "maxValue": 3,
+              "minValue": 0,
+              "target": "Self"
+            }
+          ]
+        },
+        "Effigy_Fire_Tinder_KillGV": {
+          "duration": 0.1,
+          "stacking": "Multiple",
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "key": "_EFFIGY_FIRE_TINDER_COUNT_",
+              "value": -1,
+              "useLimitRange": true,
+              "maxValue": 99,
+              "minValue": 0
             }
           ]
         }
@@ -1901,6 +3677,70 @@
                 },
                 "onGround": true
               }
+            }
+          ],
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "Randomed",
+          "chance": 0.2,
+          "successActions": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "RushAwayTrigger"
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004012,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "InitialPos",
+                "bornRandom": {
+                  "$type": "BornRandomFromCenter",
+                  "minRandomRange": 2.5,
+                  "maxRandomRange": 10.0
+                },
+                "onGround": true
+              }
+            }
+          ],
+          "failActions": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "RushAwayTrigger"
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004012,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "InitialPos",
+                "bornRandom": {
+                  "$type": "BornRandomFromCenter",
+                  "minRandomRange": 10.0,
+                  "maxRandomRange": 18.0
+                },
+                "onGround": true
+              }
+            }
+          ],
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
             }
           ]
         }
@@ -2421,6 +4261,16 @@
               },
               "modifierName": "Effigy_Fire_TinderKillSelf"
             },
+            /* {
+						"$type": "SetGlobalValue",
+						"key": "_EFFIGY_FIRE_ELITE_TINDERBASE_HANDLER_",
+						"value": 0,
+					},
+					{
+						"$type": "SetGlobalValue",
+						"key": "_EFFIGY_FIRE_ELITE_DIFFICULTY_TINDERBASE_HANDLER_",
+						"value": 0,
+					}, */
             {
               "$type": "SetGlobalValue",
               "key": "_EFFIGY_FIRE_TINDER_COUNT_",
@@ -2550,6 +4400,33 @@
         {
           "$type": "SteerAttackMixin",
           "steerStateIDs": ["Burning_MeleeAttack03"],
+          "startNormalizedTime": 0.0,
+          "endNormalizedTime": 0.1,
+          "angularSpeed": 360,
+          "attackTrigger": "",
+          "attackDistance": 7.5
+        },
+        {
+          "$type": "SteerAttackMixin",
+          "steerStateIDs": ["Burning_MeleeAttack01_Elite"],
+          "startNormalizedTime": 0.0,
+          "endNormalizedTime": 0.25,
+          "angularSpeed": 360,
+          "attackTrigger": "",
+          "attackDistance": 7.5
+        },
+        {
+          "$type": "SteerAttackMixin",
+          "steerStateIDs": ["Burning_MeleeAttack02_Elite"],
+          "startNormalizedTime": 0.0,
+          "endNormalizedTime": 0.2,
+          "angularSpeed": 360,
+          "attackTrigger": "",
+          "attackDistance": 7.5
+        },
+        {
+          "$type": "SteerAttackMixin",
+          "steerStateIDs": ["Burning_MeleeAttack03_Elite"],
           "startNormalizedTime": 0.0,
           "endNormalizedTime": 0.1,
           "angularSpeed": 360,
@@ -3104,7 +4981,16 @@
                 "attachPointName": "RebornPartAttachPoint1",
                 "onGround": true
                 //"onGroundRaycastUpDist": 0.2,
-              }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 0,
+                  "compareType": "NoneOrEqual",
+                  "target": "Self"
+                }
+              ]
             },
             {
               "$type": "CreateGadget",
@@ -3117,7 +5003,16 @@
                 "attachPointName": "RebornPartAttachPoint2",
                 "onGround": true
                 //"onGroundRaycastUpDist": 0.2,
-              }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 0,
+                  "compareType": "NoneOrEqual",
+                  "target": "Self"
+                }
+              ]
             },
             {
               "$type": "CreateGadget",
@@ -3130,7 +5025,127 @@
                 "attachPointName": "RebornPartAttachPoint3",
                 "onGround": true
                 //"onGroundRaycastUpDist": 0.2,
-              }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 0,
+                  "compareType": "NoneOrEqual",
+                  "target": "Self"
+                }
+              ]
+            },
+            // Elite
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004506,
+              "campID": 4001,
+              "lifeByOwnerIsAlive": true,
+              "target": "Self",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "RebornPartAttachPoint1_Elite",
+                "onGround": true
+                //"onGroundRaycastUpDist": 0.2,
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 1,
+                  "compareType": "Equal",
+                  "target": "Self"
+                }
+              ]
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004506,
+              "campID": 4001,
+              "lifeByOwnerIsAlive": true,
+              "target": "Self",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "RebornPartAttachPoint2_Elite",
+                "onGround": true
+                //"onGroundRaycastUpDist": 0.2,
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 1,
+                  "compareType": "Equal",
+                  "target": "Self"
+                }
+              ]
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004506,
+              "campID": 4001,
+              "lifeByOwnerIsAlive": true,
+              "target": "Self",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "RebornPartAttachPoint3_Elite",
+                "onGround": true
+                //"onGroundRaycastUpDist": 0.2,
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 1,
+                  "compareType": "Equal",
+                  "target": "Self"
+                }
+              ]
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004506,
+              "campID": 4001,
+              "lifeByOwnerIsAlive": true,
+              "target": "Self",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "RebornPartAttachPoint4_Elite",
+                "onGround": true
+                //"onGroundRaycastUpDist": 0.2,
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 1,
+                  "compareType": "Equal",
+                  "target": "Self"
+                }
+              ]
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004506,
+              "campID": 4001,
+              "lifeByOwnerIsAlive": true,
+              "target": "Self",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "RebornPartAttachPoint5_Elite",
+                "onGround": true
+                //"onGroundRaycastUpDist": 0.2,
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 1,
+                  "compareType": "Equal",
+                  "target": "Self"
+                }
+              ]
             }
           ],
           "onThinkInterval": [
@@ -3614,6 +5629,19 @@
                 "CorePushCollider_Extra"
               ],
               "setEnable": false
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Burning_RollingCharge_BurningGround_Elite",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ELITE_TAG",
+                  "value": 1,
+                  "compareType": "Equal",
+                  "target": "Self"
+                }
+              ]
             }
           ],
           "onThinkInterval": [
@@ -3685,6 +5713,100 @@
               "setEnable": true
             }
           ]
+        },
+        "Burning_RollingCharge_BurningGround_Elite": {
+          "thinkInterval": 0.2,
+          "onThinkInterval": [
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004511,
+              "target": "Self",
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "onGround": true,
+                "alongGround": true
+              }
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004511,
+              "target": "Self",
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "onGround": true,
+                "alongGround": true
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Effigy_Fire_Burning_RollingCharge_BurningGround_Elite",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "BurningGround_Elite"
+        }
+      ],
+      "modifiers": {
+        "BurningGround_Elite": {
+          "duration": 8.1,
+          "thinkInterval": 0.5,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Burning_RollingCharge_Elite_Ground"
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "DamageByAttackValue",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR2H0.5",
+                "centerBasedOn": "Self",
+                "campTargetType": "Enemy",
+                "campBasedOn": "Self"
+              },
+              "attackInfo": {
+                "attenuationTag": "Effigy_Fire_BurningGround_Elite",
+                "attenuationGroup": "Effigy_Fire_BurningGround_Elite",
+                "canBeModifiedBy": "OriginOwner",
+                "attackProperty": {
+                  "damagePercentage": 0.15,
+                  "elementType": "Fire",
+                  "elementDurability": 25,
+                  "enBreak": 1,
+                  "strikeType": "Default"
+                },
+                "hitPattern": {
+                  "onHitEffectName": "default",
+                  "hitImpulseType": "LV1",
+                  "canBeDefenceHalt": false,
+                  "hitHaltTime": 0.0,
+                  "hitHaltTimeScale": 0.05
+                }
+              }
+            }
+          ]
         }
       }
     }
@@ -3706,8 +5828,24 @@
         },
         {
           "$type": "AttachToAnimatorStateIDMixin",
+          "stateIDs": [
+            "Burning_MeleeAttack01_Elite",
+            "Burning_MeleeAttack01_Pause_Elite"
+          ],
+          "modifierName": "Effigy_Fire_Burning_MeleeAttack01Effect_Elite"
+        },
+        {
+          "$type": "AttachToAnimatorStateIDMixin",
           "stateIDs": ["Burning_MeleeAttack02", "Burning_MeleeAttack02_Pause"],
           "modifierName": "Effigy_Fire_Burning_MeleeAttack02Effect"
+        },
+        {
+          "$type": "AttachToAnimatorStateIDMixin",
+          "stateIDs": [
+            "Burning_MeleeAttack02_Elite",
+            "Burning_MeleeAttack02_Pause_Elite"
+          ],
+          "modifierName": "Effigy_Fire_Burning_MeleeAttack02Effect_Elite"
         },
         {
           "$type": "AttachToAnimatorStateIDMixin",
@@ -3716,12 +5854,22 @@
         },
         {
           "$type": "AttachToAnimatorStateIDMixin",
+          "stateIDs": ["Burning_MeleeAttack03_Elite"],
+          "modifierName": "Effigy_Fire_Burning_MeleeAttack03Effect_Elite"
+        },
+        {
+          "$type": "AttachToAnimatorStateIDMixin",
           "stateIDs": [
             "Burning_MeleeAttack01",
             "Burning_MeleeAttack01_Pause",
             "Burning_MeleeAttack02",
             "Burning_MeleeAttack02_Pause",
-            "Burning_MeleeAttack03"
+            "Burning_MeleeAttack03",
+            "Burning_MeleeAttack01_Elite",
+            "Burning_MeleeAttack01_Pause_Elite",
+            "Burning_MeleeAttack02_Elite",
+            "Burning_MeleeAttack02_Pause_Elite",
+            "Burning_MeleeAttack03_Elite"
           ],
           "modifierName": "Effigy_Fire_Burning_MeleeAttackDuration"
         },
@@ -3729,7 +5877,9 @@
           "$type": "AttachToAnimatorStateIDMixin",
           "stateIDs": [
             "Burning_MeleeAttack01_Pause",
-            "Burning_MeleeAttack02_Pause"
+            "Burning_MeleeAttack02_Pause",
+            "Burning_MeleeAttack01_Pause_Elite",
+            "Burning_MeleeAttack02_Pause_Elite"
           ],
           "modifierName": "Effigy_Fire_Burning_MeleeAttackUnderground"
         },
@@ -3765,6 +5915,14 @@
             }
           ]
         },
+        "Effigy_Fire_Burning_MeleeAttack01Effect_Elite": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Burning_MeleeAttack01_Elite"
+            }
+          ]
+        },
         "Effigy_Fire_Burning_MeleeAttack02Effect": {
           "onAdded": [
             {
@@ -3777,11 +5935,35 @@
             }
           ]
         },
+        "Effigy_Fire_Burning_MeleeAttack02Effect_Elite": {
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Burning_MeleeAttack02_Elite"
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Burning_MeleeAttack02_02"
+            }
+          ]
+        },
         "Effigy_Fire_Burning_MeleeAttack03Effect": {
           "onAdded": [
             {
               "$type": "AttachEffect",
               "effectPattern": "Eff_Monster_Effigy_Fire_Burning_MeleeAttack03"
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Burning_OutofGround"
+            }
+          ]
+        },
+        "Effigy_Fire_Burning_MeleeAttack03Effect_Elite": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Burning_MeleeAttack03_Elite"
             },
             {
               "$type": "AttachEffect",
@@ -3998,6 +6180,64 @@
   {
     "Default": {
       "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Fire_Burning_MeleeAttack_02_Elite",
+      "onAbilityStart": [
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Effigy_Fire_Burning_MeleeAttack02_Elite"
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackCircle",
+              "height": 5,
+              "triggerType": "TriggerNoRepeat",
+              "fanAngle": 360.0,
+              "radius": 5.5,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 3.5
+                }
+              }
+            },
+            "attackInfo": {
+              "attackTag": "Effigy_Fire_MultiAtk2",
+              "attackProperty": {
+                "damagePercentage": 1.0,
+                "strikeType": "Blunt",
+                "attackType": "Melee",
+                "enBreak": 200.0,
+                "elementDurability": 50,
+                "elementType": "Fire"
+              },
+              "hitPattern": {
+                "hitImpulseType": "LV5",
+                "reboundRatio": 0,
+                "hitHaltTime": 0.0,
+                "hitHaltTimeScale": 0.01,
+                "muteHitText": false
+              },
+              "forceCameraShake": true,
+              "cameraShake": {
+                "shakeType": "Center",
+                "shakeRange": 1,
+                "shakeTime": 0.3,
+                "shakeDistance": 30.0
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
       "abilityName": "Monster_Effigy_Fire_Burning_SceneTypeCheck",
       "onAbilityStart": [
         {
@@ -4067,7 +6307,12 @@
       "abilityMixins": [
         {
           "$type": "AttachToAnimatorStateIDMixin",
-          "stateIDs": ["Burning_DiveCrush"],
+          "stateIDs": [
+            "Burning_DiveCrush",
+            "Burning_DiveCrush_1",
+            "Burning_DiveCrush_2",
+            "Burning_DiveCrush_3"
+          ],
           "modifierName": "Effigy_Fire_Burning_DiveCrushEffect"
         }
       ],
@@ -4296,7 +6541,45 @@
               "randomAngleVer": 0.0,
               "randomAngleHor": 0.0
             }
-          }
+          },
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42004510,
+          "born": {
+            "$type": "ConfigBornByAttachPoint",
+            "attachPointName": "MultiFireBulletSource",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "direction": {
+              "$type": "ConfigDirectionByAttachPoint",
+              "attachPointName": "MultiFireBulletSource",
+              "attachPointTargetType": "Self",
+              "randomAngleVer": 0.0,
+              "randomAngleHor": 0.0
+            }
+          },
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
         }
       ],
       "modifiers": {
@@ -4334,6 +6617,79 @@
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
               "radius": 2.0,
+              "born": {
+                "$type": "ConfigBornByCollisionPoint"
+              }
+            },
+            "attackInfo": {
+              "canBeModifiedBy": "OriginOwner",
+              "attenuationTag": "Burning_MultiFire_Bullet",
+              "attenuationGroup": "Effigy_Fire_MultiFire",
+              "attackProperty": {
+                "damagePercentage": 1.0,
+                "strikeType": "Blunt",
+                "enBreak": 50.0,
+                "elementDurability": 50,
+                "elementType": "Fire"
+              },
+              "hitPattern": {
+                "onHitEffectName": "none",
+                "hitImpulseType": "LV4",
+                "reboundRatio": 0,
+                "hitHaltTime": 0.0,
+                "hitHaltTimeScale": 0.01,
+                "muteHitText": false
+              },
+              "forceCameraShake": true,
+              "cameraShake": {
+                "shakeType": "Center",
+                "shakeRange": 0.3,
+                "shakeTime": 0.3,
+                "shakeDistance": 20
+              }
+            }
+          }
+        }
+      ],
+      "modifiers": {
+        "Effect": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Burning_MultiFire_Bullet"
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Fire_Burning_MultiFire_Trail"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Fire_Burning_MultiFire_Bullet_Elite",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effect"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Effigy_Fire_Burning_MultiFire_Hit_Elite"
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackSphere",
+              "triggerType": "TriggerNoRepeat",
+              "radius": 4.0,
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               }
@@ -4522,10 +6878,688 @@
         }
       }
     }
-  }
+  },
   ////////////////////////////////////////////////////////////////
   //
   //  Burning_Extinct
   //
   ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Elite Set
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Fire_EliteSet",
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_EFFIGY_ELITE_TINDER_COUNT_",
+          "valueSteps": [-0.5, 0.5, 2.5, 3.5],
+          "defaultGlobalValueOnCreate": 3,
+          "removeAppliedModifier": true,
+          "modifierNameSteps": [
+            "Effigy_Fire_Elite_TinderAllKill",
+            "Blank",
+            "Effigy_Fire_Elite_TinderAllAlive"
+          ]
+        }
+      ],
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_Monster_Effigy_Fire_DefaultState",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_Monster_Effigy_Fire_EliteState",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_Monster_Effigy_Fire_EliteDifficultyState",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "SetGlobalValue",
+          "value": 0,
+          "key": "_EFFIGY_ELITE_TINDER_HITTAG_",
+          "target": "Self"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "ServerLuaCall",
+          "luaCallType": "FromGroup",
+          "funcName": "SLC_Fire_SeedDestroy",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_Monster_Effigy_Fire_DefaultState": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "UseSkillEliteSet",
+              "skillEliteSetID": 1
+            }
+          ]
+        },
+        "UNIQUE_Monster_Effigy_Fire_EliteState": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "UseSkillEliteSet",
+              "skillEliteSetID": 2
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "EliteTag",
+              "value": true,
+              "canBeHandledOnRecover": true
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin",
+              "globalValueKey": "_EFFIGY_FIRE_ELITE_TINDERBASE_HANDLER_",
+              "valueSteps": [-0.5, 0.5, 1.5],
+              "defaultGlobalValueOnCreate": 1,
+              "removeAppliedModifier": true,
+              "modifierNameSteps": [
+                "Effigy_Fire_Elite_TinderBaseKill",
+                "Effigy_Fire_Elite_TinderBaseCreate"
+              ]
+            }
+          ]
+        },
+        "Effigy_Fire_Elite_TinderBaseKill": {
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Elite_TinderBaseKill",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004507,
+                "sortType": "Default"
+              }
+            }
+          ]
+        },
+        "Elite_TinderBaseKill": {
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "CurGalleryControlGroup",
+              "funcName": "SLC_Fire_SeedKillSelf"
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "Effigy_Fire_Elite_TinderBaseCreate": {
+          "onAdded": [
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004507,
+              "byServer": true,
+              "lifeByOwnerIsAlive": true,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornByActionPoint",
+                "actionPointType": "SitPoint",
+                "selectType": {
+                  "$type": "SelectActionPointByID",
+                  "actionPointID": 1
+                },
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "onGround": true
+              }
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004507,
+              "byServer": true,
+              "lifeByOwnerIsAlive": true,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornByActionPoint",
+                "actionPointType": "SitPoint",
+                "selectType": {
+                  "$type": "SelectActionPointByID",
+                  "actionPointID": 2
+                },
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "onGround": true
+              }
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004507,
+              "byServer": true,
+              "lifeByOwnerIsAlive": true,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornByActionPoint",
+                "actionPointType": "SitPoint",
+                "selectType": {
+                  "$type": "SelectActionPointByID",
+                  "actionPointID": 3
+                },
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "onGround": true
+              }
+            }
+          ]
+        },
+        "UNIQUE_Monster_Effigy_Fire_EliteDifficultyState": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "UseSkillEliteSet",
+              "skillEliteSetID": 2
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "EliteTag",
+              "value": true,
+              "canBeHandledOnRecover": true
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin",
+              "globalValueKey": "_EFFIGY_FIRE_ELITE_DIFFICULTY_TINDERBASE_HANDLER_",
+              "valueSteps": [-0.5, 0.5, 1.5],
+              "defaultGlobalValueOnCreate": 1,
+              "removeAppliedModifier": true,
+              "modifierNameSteps": [
+                "Effigy_Fire_Elite_Difficulty_TinderBaseKill",
+                "Effigy_Fire_Elite_Difficulty_TinderBaseCreate"
+              ]
+            }
+          ]
+        },
+        "Effigy_Fire_Elite_Difficulty_TinderBaseKill": {
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Elite_Difficulty_TinderBaseKill",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004512,
+                "sortType": "Default"
+              }
+            }
+          ]
+        },
+        "Elite_Difficulty_TinderBaseKill": {
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "CurGalleryControlGroup",
+              "funcName": "SLC_Fire_SeedKillSelf"
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "Effigy_Fire_Elite_Difficulty_TinderBaseCreate": {
+          "onAdded": [
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004512,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornByActionPoint",
+                "actionPointType": "SitPoint",
+                "selectType": {
+                  "$type": "SelectActionPointByID",
+                  "actionPointID": 1
+                },
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "onGround": true
+              }
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004512,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornByActionPoint",
+                "actionPointType": "SitPoint",
+                "selectType": {
+                  "$type": "SelectActionPointByID",
+                  "actionPointID": 2
+                },
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "onGround": true
+              }
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004512,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "campID": 4001,
+              "born": {
+                "$type": "ConfigBornByActionPoint",
+                "actionPointType": "SitPoint",
+                "selectType": {
+                  "$type": "SelectActionPointByID",
+                  "actionPointID": 3
+                },
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "onGround": true
+              }
+            }
+          ]
+        },
+        "Effigy_Fire_Elite_TinderAllKill": {
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Fire_Elite_TinderAllKill_Delay"
+            }
+          ]
+        },
+        "Effigy_Fire_Elite_TinderAllKill_Delay": {
+          "duration": 0.2,
+          "onRemoved": [
+            {
+              "$type": "ServerMonsterLog",
+              "target": "Self",
+              "paramList": [3, 1, 1],
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_EFFIGY_ELITE_TINDER_HITTAG_",
+                  "value": 3,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            {
+              "$type": "SetGlobalValue",
+              "value": 0,
+              "key": "_EFFIGY_ELITE_TINDER_HITTAG_",
+              "target": "Self"
+            }
+          ]
+        },
+        "Effigy_Fire_Elite_TinderAllAlive": {
+          "onAdded": [
+            {
+              "$type": "ServerMonsterLog",
+              "target": "Self",
+              "paramList": [3, 1, 0]
+            }
+          ]
+        },
+        "Blank": {}
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Fire_Elite_FireDebuff",
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToGlobalValueMixin",
+          "globalValueTarget": "Self",
+          "globalValueKey": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "removeAppliedModifier": true,
+          "modifierNameSteps": ["Blank", "Effigy_Fire_Elite_FireDebuff"]
+        }
+      ],
+      "onKill": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Fire_Elite_FireDebuff_TeamRemover",
+          "target": "AllPlayerAvatars"
+        }
+      ],
+      "modifiers": {
+        "Effigy_Fire_Elite_FireDebuff": {
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"],
+                  "target": "Target"
+                },
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByAttackTags",
+                      "attackTags": ["Effigy_Fire_Elite_FireDebuff"]
+                    }
+                  ]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_Effigy_Fire_Elite_FireDebuff_TeamController",
+                  "target": "TargetTeam",
+                  "predicates": [
+                    {
+                      "$type": "ByNot",
+                      "predicates": [
+                        {
+                          "$type": "ByDungeonSettled"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        /* "UNIQUE_Effigy_Fire_Elite_FireDebuff_TeamSearcher":
+			{
+				"isUnique": true,
+				"duration": 0.1,
+				"onAdded":
+				[
+					{
+						"$type": "ApplyModifier",
+						"modifierName": "UNIQUE_Effigy_Fire_Elite_FireDebuff_TeamController",
+						"target": "Team",
+						"predicates":
+						[
+							{
+								"$type": "ByTargetHPRatio",
+								"target": "Caster",
+								"HPRatio": 0,
+								"logic": "Greater",
+							},
+						],
+					},
+				],
+			}, */
+        "UNIQUE_Effigy_Fire_Elite_FireDebuff_TeamController": {
+          "isUnique": true,
+          "stacking": "RefreshUniqueDurability",
+          "duration": 20.0,
+          "modifierMixins": [
+            {
+              "$type": "CurLocalAvatarMixinV2",
+              "modifierName": "UNIQUE_Effigy_Fire_Elite_FireDebuff"
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_Effigy_Fire_Elite_FireDebuff",
+              "target": "CurLocalAvatar"
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_MONSTER_EFFIGY_FIRE_ELITE_FIREDEBUFF_",
+              "value": 1,
+              "useLimitRange": true,
+              "maxValue": 1,
+              "minValue": 0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_MONSTER_EFFIGY_FIRE_ELITE_FIREDEBUFF_",
+              "value": 0,
+              "useLimitRange": true,
+              "maxValue": 1,
+              "minValue": 0
+            }
+          ]
+        },
+        "UNIQUE_Effigy_Fire_Elite_FireDebuff": {
+          "isUnique": true,
+          "elementType": "Fire",
+          "elementDurability": 50,
+          "buffID": 90002,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_CommonSkill_FireDebuff_LoseHP_FollowLocalAvatar"
+            }
+          ],
+          "thinkInterval": 1,
+          "onThinkInterval": [
+            {
+              "$type": "DamageByAttackValue",
+              "attacker": "Caster",
+              "target": "CurLocalAvatar",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 1.0,
+                  "z": 0.0
+                }
+              },
+              "attackInfo": {
+                "attackTag": "Effigy_Fire_Elite_FireDebuff",
+                "attackProperty": {
+                  "damagePercentage": 0.04,
+                  "strikeType": "None",
+                  "elementType": "Fire",
+                  "elementDurability": 0,
+                  "enBreak": 0
+                },
+                "hitPattern": {
+                  "onHitEffectName": "",
+                  "hitImpulseType": "LV0",
+                  "retreatType": "ByHitDirection",
+                  "hitHaltTime": 0.0,
+                  "hitHaltTimeScale": 0.0,
+                  "muteHitText": false
+                },
+                "forceCameraShake": false
+              }
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Effigy_Fire_Elite_FireDebuff_TeamController",
+              "target": "Team",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_EFFIGY_FIRE_ELITE_FIREDEBUFF_",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Fire_Elite_FireDebuff_TeamRemover": {
+          "duration": 0.1,
+          "onAdded": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_Effigy_Fire_Elite_FireDebuff_TeamController",
+              "target": "Team"
+            }
+          ]
+        },
+        "Blank": {}
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Fire_Burning_DiveCrush_Blink_1",
+      "onAbilityStart": [
+        {
+          "$type": "TryFindBlinkPointByBorn",
+          "target": "SelfAttackTarget",
+          "hitSceneTest": true,
+          "hitSceneType": "BlinkHitSceneTestByThreeSegments",
+          "limitY": 2.5,
+          "born": {
+            "$type": "ConfigBornByTargetLinearPoint",
+            "linearOffset": -3.0,
+            "baseOnTarget": true,
+            "linearXZ": false,
+            "linearMax": 40,
+            "onGround": true,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          }
+        },
+        {
+          "$type": "DoBlink"
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Fire_Burning_DiveCrush_Blink_2",
+      "onAbilityStart": [
+        {
+          "$type": "TryFindBlinkPointByBorn",
+          "target": "SelfAttackTarget",
+          "hitSceneTest": true,
+          "hitSceneType": "BlinkHitSceneTestByThreeSegments",
+          "limitY": 2.5,
+          "born": {
+            "$type": "ConfigBornByTargetLinearPoint",
+            "linearOffset": -3.0,
+            "baseOnTarget": true,
+            "linearXZ": false,
+            "linearMax": 40,
+            "onGround": true,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          }
+        },
+        {
+          "$type": "DoBlink"
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Fire_Burning_DiveCrush_Blink_3",
+      "onAbilityStart": [
+        {
+          "$type": "TryFindBlinkPointByBorn",
+          "target": "SelfAttackTarget",
+          "hitSceneTest": true,
+          "hitSceneType": "BlinkHitSceneTestByThreeSegments",
+          "limitY": 2.5,
+          "born": {
+            "$type": "ConfigBornByTargetLinearPoint",
+            "linearOffset": -3.0,
+            "baseOnTarget": true,
+            "linearXZ": false,
+            "linearMax": 40,
+            "onGround": true,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          }
+        },
+        {
+          "$type": "DoBlink"
+        }
+      ]
+    }
+  }
 ]

@@ -1326,6 +1326,34 @@
       }
     }
   },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "LevelAbility_SceneObj_ClearLocalGadget",
+      "isDynamicAbility": true,
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "State_201"
+        }
+      ],
+      "onAdded": [],
+      "modifiers": {
+        "State_201": {
+          "onAdded": [
+            {
+              "$type": "ClearLocalGadgets"
+            },
+            {
+              "$type": "ChangeGadgetState",
+              "state": 1
+            }
+          ]
+        }
+      }
+    }
+  },
   //////////////////////////////////
   //
   //  风花节地城 加载判定
@@ -1359,6 +1387,48 @@
                   "funcName": "action_player_ready_to_go_single"
                 }
               ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////
+  //
+  //  奇趣秘园地城 防摔死 重连通知
+  //
+  //////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Avatar_CharAmusement_Dungeon_Load",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_Avatar_FallingDamage"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_Avatar_EnterScene"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_Avatar_FallingDamage": {
+          "isUnique": true,
+          "properties": {
+            "Actor_FallingDamageRatio": -1
+          }
+        },
+        "UNIQUE_Avatar_EnterScene": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "funcName": "SLC_CharAmuseMain_PlayerEnter",
+              "canBeHandledOnRecover": true,
+              "CallParamList": [251008007],
+              "luaCallType": "SpecificGroup"
             }
           ]
         }

@@ -568,6 +568,13 @@
           "$type": "AttachToElementTypeMixin",
           "elementTypes": ["Water"],
           "modifierName": "WaterDetect"
+        },
+        //根据是否活动版本判断是否锁血
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_MONSTER_Slime_SimpleStick",
+          "valueSteps": [0.5, 1.5],
+          "modifierNameSteps": ["UNIQUE_Fire_02_SimpleStick_LockHP"]
         }
       ],
       "onAdded": [
@@ -611,7 +618,28 @@
             {
               "$type": "ApplyModifier",
               "modifierName": "UNIQUE_FireBorn",
-              "target": "Self"
+              "target": "Self",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_Slime_SimpleStick",
+                  "compareType": "NoneOrEqual",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_Fire_02_FireBorn_SimpleStick",
+              "target": "Self",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_Slime_SimpleStick",
+                  "compareType": "Equal",
+                  "value": 1
+                }
+              ]
             }
           ]
         },
@@ -743,6 +771,54 @@
             {
               "$type": "SetPoseBool",
               "boolID": "IsWet",
+              "value": false
+            }
+          ]
+        },
+        "UNIQUE_Fire_02_SimpleStick_LockHP": {
+          "isUnique": true,
+          "state": "LockHP"
+        },
+        "UNIQUE_Fire_02_FireBorn_SimpleStick": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "elementType": "Fire",
+          "elementDurability": 25,
+          "isElementDurabilityMutable": false,
+          "state": "LockHP",
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Slime_Fire_Burst_Middle"
+            },
+            {
+              "$type": "SetPoseBool",
+              "boolID": "FireState",
+              "value": true
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "FireShader",
+              "value": true
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Slime_Fire_BeHit",
+              "born": {
+                "$type": "ConfigBornByHitPoint",
+                "direction": {
+                  "$type": "ConfigDirectionByBackToHitBoxCenter"
+                },
+                "alongGround": true
+              }
+            }
+          ],
+          "onKill": [
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "FireShader",
               "value": false
             }
           ]
@@ -955,6 +1031,13 @@
           "$type": "AttachToElementTypeMixin",
           "elementTypes": ["Water"],
           "modifierName": "WaterDetect"
+        },
+        //根据是否活动版本判断是否锁血
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_MONSTER_Slime_SimpleStick",
+          "valueSteps": [0.5, 1.5],
+          "modifierNameSteps": ["UNIQUE_Fire_03_SimpleStick_LockHP"]
         }
       ],
       "onAdded": [
@@ -998,7 +1081,28 @@
             {
               "$type": "ApplyModifier",
               "modifierName": "UNIQUE_FireBorn",
-              "target": "Self"
+              "target": "Self",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_Slime_SimpleStick",
+                  "compareType": "NoneOrEqual",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_Fire_03_FireBorn_SimpleStick",
+              "target": "Self",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_Slime_SimpleStick",
+                  "compareType": "Equal",
+                  "value": 1
+                }
+              ]
             }
           ]
         },
@@ -1136,6 +1240,54 @@
             {
               "$type": "SetPoseBool",
               "boolID": "IsWet",
+              "value": false
+            }
+          ]
+        },
+        "UNIQUE_Fire_03_SimpleStick_LockHP": {
+          "isUnique": true,
+          "state": "LockHP"
+        },
+        "UNIQUE_Fire_03_FireBorn_SimpleStick": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "elementType": "Fire",
+          "elementDurability": 25,
+          "isElementDurabilityMutable": false,
+          "state": "LockHP",
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Slime_Fire_Burst_Middle"
+            },
+            {
+              "$type": "SetPoseBool",
+              "boolID": "FireState",
+              "value": true
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "FireShader",
+              "value": true
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Slime_Fire_BeHit",
+              "born": {
+                "$type": "ConfigBornByHitPoint",
+                "direction": {
+                  "$type": "ConfigDirectionByBackToHitBoxCenter"
+                },
+                "alongGround": true
+              }
+            }
+          ],
+          "onKill": [
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "FireShader",
               "value": false
             }
           ]

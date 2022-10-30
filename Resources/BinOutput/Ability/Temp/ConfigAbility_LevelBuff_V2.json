@@ -714,5 +714,893 @@
         }
       }
     }
+  },
+
+  //////////////////////////////////////////////////////////
+  //
+  //     3.2 深境螺旋
+  //
+  //////////////////////////////////////////////////////////
+
+  //元素精通提升
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "LevelEntity_TowerBuff_ElemMasteryDelta",
+      "isDynamicAbility": true,
+      "abilitySpecials": {
+        "TowerBuff_ElemMasteryDelta": 0
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_LevelEntity_TowerBuff_ElemMasteryDelta",
+          "doOffStage": true
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_LevelEntity_TowerBuff_ElemMasteryDelta": {
+          "isUnique": true,
+          "properties": {
+            "Actor_ElemMasteryDelta": "%TowerBuff_ElemMasteryDelta"
+          }
+        }
+      }
+    }
+  },
+
+  //角色每次对怪物造成伤害后，以怪物为中心触发一次冲击波，半径5米，伤害系数6，cd8秒，每一种元素伤害类型（包含物理）触发冲击波的CD各自独立计算。
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "LevelBuff_TowerBuff_ElemDamage_Impact",
+      "isDynamicAbility": true,
+      "abilitySpecials": {
+        "Dot_Damage": 0,
+        "DamageSystemValue": 0,
+        "ImpactInterval": 0
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "doOffStage": true,
+          "modifierName": "UNIQUE_TowerBuff_ElemDamage_Impact_Handler"
+        },
+        {
+          "$type": "SetSystemValueToOverrideMap",
+          "key": "DamageSystemValue",
+          "type": "ElementLevelCo"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_TowerBuff_ElemDamage_Impact_Handler": {
+          "isUnique": true,
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "doOffStage": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByHitDamage",
+                  "damage": 0,
+                  "logic": "Greater"
+                },
+                {
+                  "$type": "ByHitElement",
+                  "element": "Fire"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Team",
+                  "key": "_TowerBuff_ElemDamage_Impact_FireCD",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "TowerBuff_ElemDamage_Impact_CJBEffect",
+                  "target": "Other",
+                  "doOffStage": true
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_TowerBuff_DamageUp_ElemDamage_Fire_CD",
+                  "target": "Team",
+                  "doOffStage": true
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "doOffStage": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByHitDamage",
+                  "damage": 0,
+                  "logic": "Greater"
+                }, //判断伤害
+                {
+                  "$type": "ByHitElement",
+                  "element": "Water"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Team",
+                  "key": "_TowerBuff_ElemDamage_Impact_WaterCD",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "TowerBuff_ElemDamage_Impact_CJBEffect",
+                  "target": "Other",
+                  "doOffStage": true
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_TowerBuff_DamageUp_ElemDamage_Water_CD",
+                  "target": "Team",
+                  "doOffStage": true
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "doOffStage": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByHitDamage",
+                  "damage": 0,
+                  "logic": "Greater"
+                }, //判断伤害
+                {
+                  "$type": "ByHitElement",
+                  "element": "Ice"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Team",
+                  "key": "_TowerBuff_ElemDamage_Impact_IceCD",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "TowerBuff_ElemDamage_Impact_CJBEffect",
+                  "target": "Other",
+                  "doOffStage": true
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_TowerBuff_DamageUp_ElemDamage_Ice_CD",
+                  "target": "Team",
+                  "doOffStage": true
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "doOffStage": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByHitDamage",
+                  "target": "Target",
+                  "damage": 0,
+                  "logic": "Greater"
+                }, //判断伤害
+                {
+                  "$type": "ByHitElement",
+                  "element": "Electric"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Team",
+                  "key": "_TowerBuff_ElemDamage_Impact_ElectricCD",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "TowerBuff_ElemDamage_Impact_CJBEffect",
+                  "target": "Other",
+                  "doOffStage": true
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_TowerBuff_DamageUp_ElemDamage_Electric_CD",
+                  "target": "Team",
+                  "doOffStage": true
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "doOffStage": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByHitDamage",
+                  "target": "Target",
+                  "damage": 0,
+                  "logic": "Greater"
+                }, //判断伤害
+                {
+                  "$type": "ByHitElement",
+                  "element": "Rock"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Team",
+                  "key": "_TowerBuff_ElemDamage_Impact_RockCD",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "TowerBuff_ElemDamage_Impact_CJBEffect",
+                  "target": "Other",
+                  "doOffStage": true
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_TowerBuff_DamageUp_ElemDamage_Rock_CD",
+                  "target": "Team",
+                  "doOffStage": true
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "doOffStage": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByHitDamage",
+                  "target": "Target",
+                  "damage": 0,
+                  "logic": "Greater"
+                }, //判断伤害
+                {
+                  "$type": "ByHitElement",
+                  "element": "Wind"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Team",
+                  "key": "_TowerBuff_ElemDamage_Impact_WindCD",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "TowerBuff_ElemDamage_Impact_CJBEffect",
+                  "target": "Other",
+                  "doOffStage": true
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_TowerBuff_DamageUp_ElemDamage_Wind_CD",
+                  "target": "Team",
+                  "doOffStage": true
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "doOffStage": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByHitDamage",
+                  "target": "Target",
+                  "damage": 0,
+                  "logic": "Greater"
+                }, //判断伤害
+                {
+                  "$type": "ByHitElement",
+                  "element": "Grass"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Team",
+                  "key": "_TowerBuff_ElemDamage_Impact_GrassCD",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "TowerBuff_ElemDamage_Impact_CJBEffect",
+                  "target": "Other",
+                  "doOffStage": true
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_TowerBuff_DamageUp_ElemDamage_Grass_CD",
+                  "target": "Team",
+                  "doOffStage": true
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "doOffStage": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByHitDamage",
+                  "damage": 0,
+                  "logic": "Greater"
+                }, //判断伤害
+                {
+                  "$type": "ByHitElement",
+                  "element": "None"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Team",
+                  "key": "_TowerBuff_ElemDamage_Impact_NoneCD",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "TowerBuff_ElemDamage_Impact_CJBEffect",
+                  "target": "Other",
+                  "doOffStage": true
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_TowerBuff_DamageUp_ElemDamage_None_CD",
+                  "target": "Team",
+                  "doOffStage": true
+                }
+              ]
+            }
+          ]
+        },
+        "TowerBuff_ElemDamage_Impact_CJBEffect": {
+          "duration": 0.1,
+          "stacking": "Multiple",
+          "onAdded": [
+            //以目标为中心触发冲击波
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Stages_GainWave_01",
+              "target": "Self",
+              "doOffStage": true
+            },
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "SelfCamp",
+              "doOffStage": true,
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere", //攻击球
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 5.0, //半径
+                  "born": {
+                    "$type": "ConfigBornBySelf"
+                  }
+                },
+                "attackInfo": {
+                  //攻击伤害
+                  "attackProperty": {
+                    "damageExtra": "%Dot_Damage*%DamageSystemValue", //伤害百分比
+                    "ignoreAttackerProperty": true,
+                    "ignoreModifyDamage": true,
+                    "trueDamage": true,
+                    "attackType": "Melee", //攻击类型
+                    "elementType": "None", //元素类型
+                    "elementDurability": 0,
+                    "enBreak": 25 //破霸体值
+                  },
+                  //击中效果
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV2",
+                    "reboundRatio": 0,
+                    "canBeDefenceHalt": false,
+                    "hitHaltTime": 0,
+                    "hitHaltTimeScale": 0.02,
+                    "muteHitText": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "UNIQUE_TowerBuff_DamageUp_ElemDamage_Fire_CD": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": "%ImpactInterval",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_FireCD",
+              "value": -1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_FireCD",
+              "value": 0
+            }
+          ]
+        },
+        "UNIQUE_TowerBuff_DamageUp_ElemDamage_Water_CD": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": "%ImpactInterval",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_WaterCD",
+              "value": -1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_WaterCD",
+              "value": 0
+            }
+          ]
+        },
+        "UNIQUE_TowerBuff_DamageUp_ElemDamage_Ice_CD": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": "%ImpactInterval",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_IceCD",
+              "value": -1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_IceCD",
+              "value": 0
+            }
+          ]
+        },
+        "UNIQUE_TowerBuff_DamageUp_ElemDamage_Electric_CD": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": "%ImpactInterval",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_ElectricCD",
+              "value": -1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_ElectricCD",
+              "value": 0
+            }
+          ]
+        },
+        "UNIQUE_TowerBuff_DamageUp_ElemDamage_Rock_CD": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": "%ImpactInterval",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_RockCD",
+              "value": -1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_RockCD",
+              "value": 0
+            }
+          ]
+        },
+        "UNIQUE_TowerBuff_DamageUp_ElemDamage_Wind_CD": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": "%ImpactInterval",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_WindCD",
+              "value": -1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_WindCD",
+              "value": 0
+            }
+          ]
+        },
+        "UNIQUE_TowerBuff_DamageUp_ElemDamage_Grass_CD": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": "%ImpactInterval",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_GrassCD",
+              "value": -1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_GrassCD",
+              "value": 0
+            }
+          ]
+        },
+        "UNIQUE_TowerBuff_DamageUp_ElemDamage_None_CD": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": "%ImpactInterval",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_NoneCD",
+              "value": -1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "_TowerBuff_ElemDamage_Impact_NoneCD",
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  //角色每次对怪物触发草元素相关的元素反应后，全队的草元素伤害提升10%，持续时间10秒，最多叠4层（刷新持续时间），叠层保护cd 5秒，
+  //叠到满层后角色每次对怪物造成草元素伤害时都会以怪物为中心触发一次半径10米的冲击波，伤害系数7.49，cd 5秒。
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "LevelBuff_TowerBuff_GrassReaction_Impact",
+      "isDynamicAbility": true,
+      "abilitySpecials": {
+        "GrassAddHurt": 0,
+        "BuffTime": 0,
+        "BuffMaxLevel": 0,
+        "Multiple_CdTime": 0,
+        "Dot_Damage": 0, //冲击波伤害系数
+        "DamageSystemValue": 0,
+        "ImpactInterval": 0
+      },
+      "onAdded": [
+        {
+          "$type": "SetSystemValueToOverrideMap",
+          "key": "DamageSystemValue",
+          "type": "ElementLevelCo"
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_LevelEntity_TowerBuff_GrassReaction_Impact_Handler",
+          "doOffStage": true
+        },
+        //造成草伤打cjb处理器
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_LevelEntity_TowerBuff_GrassDamage_Impact_Handler",
+          "doOffStage": true
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_LevelEntity_TowerBuff_GrassReaction_Impact_Handler": {
+          "isUnique": true,
+          "modifierMixins": [
+            {
+              "$type": "DoActionByElementReactionMixin",
+              "range": 20,
+              "doOffStage": true,
+              "entityTypes": ["Monster"],
+              "reactionTypes": [
+                "Burning",
+                "Overdose",
+                "Overgrow",
+                "OverdoseGrass", //蔓激化
+                "OverdoseElectric", //雷激化
+                "OvergrowMushroomElectric", //雷蔓生
+                "OvergrowMushroomFire"
+              ],
+              "actions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_LevelEntity_TowerBuff_GrassAddHurt_Multiple_Handler",
+                  "target": "Team", //叠层不能叠太快，有cd
+                  "doOffStage": true
+                }
+              ]
+            }
+          ]
+        },
+        "UNIQUE_LevelEntity_TowerBuff_GrassAddHurt_Multiple_Handler": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": "%Multiple_CdTime",
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_LevelEntity_TowerBuff_GrassAddHurt_MultipleEffect",
+              "target": "CurTeamAvatars",
+              "doOffStage": true
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_LevelEntity_TowerBuff_GrassAddHurt_CountLayer",
+              "target": "Team",
+              "doOffStage": true
+            }
+          ]
+        },
+        "UNIQUE_LevelEntity_TowerBuff_GrassAddHurt_CountLayer": {
+          "isUnique": true,
+          "duration": 1,
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "key": "_LevelEntity_TowerBuff_MultipleCount",
+              "target": "Team",
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": 4,
+              "value": 1,
+              "doOffStage": true
+            }
+          ]
+        },
+        "UNIQUE_LevelEntity_TowerBuff_GrassAddHurt_MultipleEffect": {
+          "isUnique": true,
+          "duration": "%BuffTime",
+          "state": "AttackUp",
+          "stacking": "MultipleAllRefresh",
+          "properties": {
+            "Actor_GrassAddHurtDelta": "%GrassAddHurt"
+          },
+          "stackingOption": {
+            "maxModifierNumForMultipleType": "%BuffMaxLevel",
+            "enableMixedUnique": true
+          },
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_LevelEntity_TowerBuff_MultipleCount",
+              "target": "Team",
+              "doOffStage": true,
+              "value": 0
+            }
+          ]
+        },
+        "UNIQUE_LevelEntity_TowerBuff_GrassDamage_Impact_Handler": {
+          "isUnique": true,
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "doOffStage": true,
+              "target": "Other",
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByHitDamage",
+                  "damage": 0,
+                  "logic": "Greater"
+                },
+                {
+                  "$type": "ByHitElement",
+                  "element": "Grass"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "ImpactInterval",
+                  "target": "Team",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_LevelEntity_TowerBuff_MultipleCount",
+                  "target": "Team",
+                  "value": 4,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_TowerBuff_Impact_MaxLayerEffect_Monster",
+                  "target": "Other",
+                  "doOffStage": true
+                },
+                //计算CD
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_LevelEntity_TowerBuff_GrassReaction_Impact_CD",
+                  "target": "Team",
+                  "doOffStage": true
+                }
+              ]
+            }
+          ]
+        },
+        "UNIQUE_TowerBuff_Impact_MaxLayerEffect_Monster": {
+          "isUnique": true,
+          "duration": 0.1,
+          "onAdded": [
+            //以目标为中心触发冲击波
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Stages_SwirlDoField_DoAttack_02",
+              "doOffStage": true,
+              "born": {
+                "$type": "ConfigBornByTarget",
+                "target": "Self"
+              }
+            },
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "SelfCamp",
+              "doOffStage": true,
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere", //攻击球
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 10.0, //半径
+                  "born": {
+                    "$type": "ConfigBornBySelf"
+                  }
+                },
+                "attackInfo": {
+                  //攻击伤害
+                  "attackProperty": {
+                    "damageExtra": "%Dot_Damage*%DamageSystemValue", //伤害百分比
+                    "ignoreAttackerProperty": true,
+                    "ignoreModifyDamage": true,
+                    "trueDamage": true,
+                    "attackType": "Melee", //攻击类型
+                    "elementType": "None", //元素类型
+                    "elementDurability": 0,
+                    "enBreak": 25 //破霸体值
+                  },
+                  //击中效果
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV2",
+                    "reboundRatio": 0,
+                    "canBeDefenceHalt": false,
+                    "hitHaltTime": 0,
+                    "hitHaltTimeScale": 0.02,
+                    "muteHitText": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "UNIQUE_LevelEntity_TowerBuff_GrassReaction_Impact_CD": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "duration": "%ImpactInterval",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "ImpactInterval",
+              "value": -1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "doOffStage": true,
+              "target": "Team",
+              "key": "ImpactInterval",
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
   }
 ]

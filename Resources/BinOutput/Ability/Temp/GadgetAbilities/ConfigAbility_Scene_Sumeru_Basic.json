@@ -85,6 +85,480 @@
       ]
     }
   },
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //	草神地城识别gadget
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "NahidaDungeonQuest_TeamAbility",
+      /*
+		"abilityMixins":
+		[
+			{
+				"$type":"CurLocalAvatarMixinV2",
+				"modifierName":"NahidaDungeonQuest",
+			},		    
+		],
+		*/
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "NahidaOverrideSkill",
+          "doOffStage": true
+        }
+      ],
+      "modifiers": {
+        /*
+			"NahidaDungeonQuest":
+			{
+				"onAdded": 
+				[
+					{
+						"$type": "AttachModifier",
+						"modifierName": "NahidaOverrideSkill",
+					},
+				]
+			},
+			*/
+        "NahidaOverrideSkill": {
+          "modifierMixins": [
+            {
+              "$type": "AttachToNormalizedTimeMixin",
+              "stateID": "Nahida_ElementalArt_Click",
+              "modifierName": "NahidaDungeonQuest_Click_Strike",
+              "normalizeStart": 0.4,
+              "normalizeEnd": 1.0
+            },
+            {
+              "$type": "AttachToStateIDMixin",
+              "stateIDs": [
+                "Nahida_ElementalArt_Move",
+                "Nahida_ElementalArt_Loop",
+                "Nahida_ElementalArt_Hold"
+              ],
+              "modifierName": "NahidaDungeonQuest_RayCast_Handler"
+            }
+          ]
+        },
+        "Avatar_Nahida_RayCast_Quest_Gadget_Call": {
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "target": "Self",
+              "modifierName": "CallQuest"
+            }
+          ]
+        },
+        "NahidaDungeonQuest_RayCast_Handler": {
+          "modifierMixins": [
+            {
+              "$type": "DoActionByAimMixin",
+              "entityTypes": ["Gadget"],
+              "colliderNodeName": "PRIVATE_RayCast",
+              "actionQueue": [
+                {
+                  "$type": "AttachModifier",
+                  "modifierName": "Lock_Eff",
+                  "target": "Other",
+                  "predicates": [
+                    {
+                      "$type": "ByEntityTypes",
+                      "entityTypes": ["Gadget"]
+                    },
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "key": "IS_NAHIDA_QUEST_CALL_GADGET",
+                      "value": 1,
+                      "compareType": "Equal"
+                    }
+                  ]
+                }
+              ],
+              "onLeaveScopeActionQueue": [
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Lock_Eff",
+                  "target": "Other",
+                  "predicates": [
+                    {
+                      "$type": "ByEntityTypes",
+                      "entityTypes": ["Gadget"]
+                    },
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "key": "IS_NAHIDA_QUEST_CALL_GADGET",
+                      "value": 1,
+                      "compareType": "Equal"
+                    }
+                  ]
+                }
+              ],
+              "onRemoveActionQueue": [
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Lock_Eff",
+                  "target": "Other",
+                  "predicates": [
+                    {
+                      "$type": "ByEntityTypes",
+                      "entityTypes": ["Gadget"]
+                    },
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "key": "IS_NAHIDA_QUEST_CALL_GADGET",
+                      "value": 1,
+                      "compareType": "Equal"
+                    }
+                  ]
+                },
+                {
+                  "$type": "AttachModifier",
+                  "modifierName": "Avatar_Nahida_RayCast_Quest_Gadget_Call",
+                  "target": "Other",
+                  "predicates": [
+                    {
+                      "$type": "ByEntityTypes",
+                      "entityTypes": ["Gadget"]
+                    },
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "key": "IS_NAHIDA_QUEST_CALL_GADGET",
+                      "value": 1,
+                      "compareType": "Equal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "Lock_Eff": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalArt_Ray_Tag_Npc"
+            }
+          ]
+        },
+        "NahidaDungeonQuest_Click_Strike": {
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "CallQuest",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "SectorR4D120H4",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self",
+                "sortType": "Nearest",
+                "topLimit": 1
+              },
+              "predicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Gadget"]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "IS_NAHIDA_QUEST_CALL_GADGET",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            }
+          ]
+        },
+        "CallQuest": {
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "GV_Quest_Call",
+              "value": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //	虚空探索状态
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "VoidSearching_TeamAbility",
+      "onAdded": [],
+      "abilityMixins": [
+        {
+          "$type": "CurLocalAvatarMixinV2",
+          "modifierName": "VoidSearchingTick"
+        }
+      ],
+      "modifiers": {
+        "VoidSearchingTick": {
+          "onAdded": [
+            {
+              "$type": "AttachModifier",
+              "modifierName": "VoidSearchingTickBoy",
+              "predicates": [
+                {
+                  "$type": "ByAvatarBodyType",
+                  "bodyType": "BODY_BOY"
+                }
+              ]
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "VoidSearchingTickGirl",
+              "predicates": [
+                {
+                  "$type": "ByAvatarBodyType",
+                  "bodyType": "BODY_GIRL"
+                }
+              ]
+            }
+          ]
+        },
+        "VoidSearchingTickBoy": {
+          "thinkInterval": 0.5,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Quest_VoidSearching"
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "GV_Setted",
+              "value": 0
+            },
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByTag",
+                "tag": "IS_VOID_SEARCHING_TARGET",
+                "topLimit": 1,
+                "sortType": "Nearest" //从近开始选
+              },
+              "predicatesForeach": [
+                {
+                  "$type": "ByTargetPositionToSelfPosition",
+                  "target": "Target",
+                  "compareType": "XYZ",
+                  "value": 10,
+                  "logic": "LesserOrEqual"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "GV_Setted",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetGlobalValue",
+                  "target": "Self",
+                  "key": "GV_Setted",
+                  "value": 1
+                },
+                {
+                  "$type": "SendEffectTrigger",
+                  "target": "Self",
+                  "parameter": "State",
+                  "type": "Int",
+                  "value": 202,
+                  "effectPattern": "Eff_Quest_VoidSearching"
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByTag",
+                "tag": "IS_VOID_SEARCHING_TARGET",
+                "topLimit": 1,
+                "sortType": "Nearest" //从近开始选
+              },
+              "predicatesForeach": [
+                {
+                  "$type": "ByTargetPositionToSelfPosition",
+                  "target": "Target",
+                  "compareType": "XYZ",
+                  "value": 20,
+                  "logic": "LesserOrEqual"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "GV_Setted",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetGlobalValue",
+                  "target": "Self",
+                  "key": "GV_Setted",
+                  "value": 1
+                },
+                {
+                  "$type": "SendEffectTrigger",
+                  "target": "Self",
+                  "parameter": "State",
+                  "type": "Int",
+                  "value": 201,
+                  "effectPattern": "Eff_Quest_VoidSearching"
+                }
+              ]
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "parameter": "State",
+              "type": "Int",
+              "value": 0,
+              "effectPattern": "Eff_Quest_VoidSearching",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "GV_Setted",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ]
+            }
+          ]
+        },
+        "VoidSearchingTickGirl": {
+          "thinkInterval": 0.5,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Quest_VoidSearching_PlayGirl"
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "GV_Setted",
+              "value": 0
+            },
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByTag",
+                "tag": "IS_VOID_SEARCHING_TARGET",
+                "topLimit": 1,
+                "sortType": "Nearest" //从近开始选
+              },
+              "predicatesForeach": [
+                {
+                  "$type": "ByTargetPositionToSelfPosition",
+                  "target": "Target",
+                  "compareType": "XYZ",
+                  "value": 10,
+                  "logic": "LesserOrEqual"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "GV_Setted",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetGlobalValue",
+                  "target": "Self",
+                  "key": "GV_Setted",
+                  "value": 1
+                },
+                {
+                  "$type": "SendEffectTrigger",
+                  "target": "Self",
+                  "parameter": "State",
+                  "type": "Int",
+                  "value": 202,
+                  "effectPattern": "Eff_Quest_VoidSearching_PlayGirl"
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByTag",
+                "tag": "IS_VOID_SEARCHING_TARGET",
+                "topLimit": 1,
+                "sortType": "Nearest" //从近开始选
+              },
+              "predicatesForeach": [
+                {
+                  "$type": "ByTargetPositionToSelfPosition",
+                  "target": "Target",
+                  "compareType": "XYZ",
+                  "value": 20,
+                  "logic": "LesserOrEqual"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "GV_Setted",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetGlobalValue",
+                  "target": "Self",
+                  "key": "GV_Setted",
+                  "value": 1
+                },
+                {
+                  "$type": "SendEffectTrigger",
+                  "target": "Self",
+                  "parameter": "State",
+                  "type": "Int",
+                  "value": 201,
+                  "effectPattern": "Eff_Quest_VoidSearching_PlayGirl"
+                }
+              ]
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "parameter": "State",
+              "type": "Int",
+              "value": 0,
+              "effectPattern": "Eff_Quest_VoidSearching_PlayGirl",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "GV_Setted",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+
   //////////////////////////////////////////////////////////////////////////////////////////////////
   //
   //	三态物件基础效果
@@ -1087,9 +1561,7 @@
                       "x": 0,
                       "y": 0.5,
                       "z": 0
-                    },
-                    "onGround": true,
-                    "onGroundIgnoreWater": true
+                    }
                   },
                   "maxRange": 2,
                   "timeRange": 0.05, //曾经0.16

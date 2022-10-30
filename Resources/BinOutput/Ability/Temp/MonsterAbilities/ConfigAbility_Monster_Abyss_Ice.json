@@ -332,18 +332,6 @@
               "damageRatio": 0.2,
               "useMutiPlayerFixData": true,
               "updateShieldByMaxHp": true,
-              // "onShieldBroken":
-              // [
-              // 	{
-              // 		"$type": "FireEffect",
-              // 		"effectPattern": "Eff_Monster_Abyss_Ice_ElementShield_AS",
-              // 		"born":
-              // 		{
-              // 			"$type": "ConfigBornByAttachPoint",
-              // 			"attachPointName": "ElementShield",
-              // 		},
-              // 	},
-              // ],
               "onShieldSuccess": [
                 {
                   "$type": "Predicated",
@@ -351,7 +339,7 @@
                   "targetPredicates": [
                     {
                       "$type": "ByEntityTypes",
-                      "entityTypes": ["Avatar"]
+                      "entityTypes": ["Avatar", "Partner"]
                     }
                   ],
                   "successActions": [
@@ -407,7 +395,7 @@
                   "targetPredicates": [
                     {
                       "$type": "ByEntityTypes",
-                      "entityTypes": ["Avatar"]
+                      "entityTypes": ["Avatar", "Partner"]
                     }
                   ],
                   "successActions": [
@@ -524,6 +512,17 @@
             {
               "$type": "RemoveUniqueModifier",
               "modifierName": "UNIQUE_Abyss_Ice_ElementShield_Effect"
+            },
+            {
+              "$type": "KillSelf",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_ForCharAmusement_Shield",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
             }
           ]
         },

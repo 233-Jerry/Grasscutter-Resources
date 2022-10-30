@@ -4733,6 +4733,58 @@ https://www.tapd.cn/22963631/prong/stories/view/1122963631001394732 */,
             ] */
     }
   },
+  //3.2蕈兽大活动复用
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Level_Common_Property_Prop_ReviveGear_01",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "State_0"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "State_201"
+        }
+      ],
+      "modifiers": {
+        "State_0": {
+          "onAdded": [
+            {
+              "$type": "EnableGadgetIntee",
+              "enable": false
+            }
+          ]
+        },
+        "State_201": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_RougeCure_02_Active",
+              "canBeHandledOnRecover": true
+            },
+            {
+              "$type": "EnableGadgetIntee",
+              "enable": true
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_RougeCure_02_Diss"
+            },
+            {
+              "$type": "EnableGadgetIntee",
+              "enable": false
+            }
+          ]
+        }
+      }
+    }
+  },
   //时空罗盘Eff_ScenObj_TimeCompass_01_Unlock
   {
     "Default": {

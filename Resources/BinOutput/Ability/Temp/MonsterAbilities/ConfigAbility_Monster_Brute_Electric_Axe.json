@@ -358,7 +358,7 @@
               "predicates": [
                 {
                   "$type": "ByEntityTypes",
-                  "entityTypes": ["Avatar"],
+                  "entityTypes": ["Avatar", "Partner"],
                   "useEventSource": true
                 }
               ]
@@ -1181,7 +1181,7 @@
                 },
                 {
                   "$type": "ByEntityTypes",
-                  "entityTypes": ["Avatar"]
+                  "entityTypes": ["Avatar", "Partner"]
                 },
                 {
                   "$type": "ByTargetGlobalValue",

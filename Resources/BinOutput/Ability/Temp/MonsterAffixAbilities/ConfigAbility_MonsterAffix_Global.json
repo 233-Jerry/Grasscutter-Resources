@@ -2802,6 +2802,34 @@
   },
   ////////////////////////////////////////////////////////////////
   //
+  //  MonsterAffix_Property_AtkDown_NahidaQuest--1110
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Property_AtkDown_NahidaQuest",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_Property_AtkDown_NahidaQuest",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_MonsterAffix_Property_AtkDown_NahidaQuest": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "properties": {
+            "Actor_AttackRatio": -0.9
+          }
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
   //  MonsterAffix_HintEffect_01
   //  1039
   //
@@ -3827,6 +3855,36 @@
           "properties": {
             "Actor_MaxHPRatio": -0.9
           }
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  MonsterAffix_Monster_Pollution_Enhanced_Effect //3.2草神地城 污染效果
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Monster_Pollution_Enhanced_Effect",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_Monster_Pollution_Enhanced_Effect"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_MonsterAffix_Monster_Pollution_Enhanced_Effect": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Pollution_Enhanced"
+            }
+          ]
         }
       }
     }

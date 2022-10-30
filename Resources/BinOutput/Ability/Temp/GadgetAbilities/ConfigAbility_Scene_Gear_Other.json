@@ -15299,23 +15299,9 @@
               ],
               "successActions": [
                 {
-                  "$type": "AddElementDurability",
+                  "$type": "ApplyModifier",
                   "target": "Target",
-                  "value": 30,
-                  "elementType": "Fire",
-                  "modifierName": "UNIQUE_MonsterPowerUp_Amplifier_Fire_Slave",
-                  "useLimitRange": true,
-                  "maxValue": 90.0,
-                  "minValue": 0.0
-                },
-                {
-                  "$type": "AddGlobalValue",
-                  "target": "Target",
-                  "value": 1,
-                  "key": "_AMPLIFIER_COOLDOWN",
-                  "useLimitRange": true,
-                  "maxValue": 0,
-                  "minValue": -2
+                  "modifierName": "MonsterPowerUp_Amplifier_Add_Buff"
                 }
               ]
             }
@@ -15369,6 +15355,30 @@
               "useLimitRange": true,
               "maxValue": 1,
               "minValue": 0
+            }
+          ]
+        },
+        "MonsterPowerUp_Amplifier_Add_Buff": {
+          "duration": 0.5,
+          "onAdded": [
+            {
+              "$type": "AddElementDurability",
+              "target": "Target",
+              "value": 30,
+              "elementType": "Fire",
+              "modifierName": "UNIQUE_MonsterPowerUp_Amplifier_Fire_Slave",
+              "useLimitRange": true,
+              "maxValue": 90.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "AddGlobalValue",
+              "target": "Target",
+              "value": 1,
+              "key": "_AMPLIFIER_COOLDOWN",
+              "useLimitRange": true,
+              "maxValue": 0,
+              "minValue": -2
             }
           ]
         }
@@ -15470,23 +15480,9 @@
               ],
               "successActions": [
                 {
-                  "$type": "AddElementDurability",
+                  "$type": "ApplyModifier",
                   "target": "Target",
-                  "value": 30,
-                  "elementType": "Ice",
-                  "modifierName": "UNIQUE_MonsterPowerUp_Amplifier_Ice_Slave",
-                  "useLimitRange": true,
-                  "maxValue": 90.0,
-                  "minValue": 0.0
-                },
-                {
-                  "$type": "AddGlobalValue",
-                  "target": "Target",
-                  "value": 1,
-                  "key": "_AMPLIFIER_COOLDOWN",
-                  "useLimitRange": true,
-                  "maxValue": 0,
-                  "minValue": -2
+                  "modifierName": "MonsterPowerUp_Amplifier_Add_Buff"
                 }
               ]
             }
@@ -15540,6 +15536,30 @@
               "useLimitRange": true,
               "maxValue": 1,
               "minValue": 0
+            }
+          ]
+        },
+        "MonsterPowerUp_Amplifier_Add_Buff": {
+          "duration": 0.5,
+          "onAdded": [
+            {
+              "$type": "AddElementDurability",
+              "target": "Target",
+              "value": 30,
+              "elementType": "Ice",
+              "modifierName": "UNIQUE_MonsterPowerUp_Amplifier_Ice_Slave",
+              "useLimitRange": true,
+              "maxValue": 90.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "AddGlobalValue",
+              "target": "Target",
+              "value": 1,
+              "key": "_AMPLIFIER_COOLDOWN",
+              "useLimitRange": true,
+              "maxValue": 0,
+              "minValue": -2
             }
           ]
         }
@@ -16731,6 +16751,48 @@
         {
           "$type": "AttachEffect",
           "effectPattern": "Eff_Stages_Common_DelucChallengeAirwall_01_R16",
+          "born": {
+            "$type": "ConfigBornByAttachPoint",
+            "attachPointName": "EffectNode"
+          }
+        }
+      ]
+    }
+  },
+  ///////////////////////////////////////////////////////////////
+  //
+  // 散兵地城空气墙上层
+  //
+  ///////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Stages_Property_Prop_SBDungeonAirWall_01",
+      "onAdded": [
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Stages_Common_SBDungeonAirwall_01",
+          "born": {
+            "$type": "ConfigBornByAttachPoint",
+            "attachPointName": "EffectNode"
+          }
+        }
+      ]
+    }
+  },
+  ///////////////////////////////////////////////////////////////
+  //
+  // 散兵地城空气墙下层
+  //
+  ///////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Stages_Property_Prop_SBDungeonAirWall_02",
+      "onAdded": [
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Stages_Common_SBDungeonAirwall_02",
           "born": {
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "EffectNode"
@@ -17936,6 +17998,197 @@
       }
     }
   },
+  ///////////////////////////////////////////////////
+  //
+  // 	3.2蕈兽大活动-镜头物件
+  //
+  ///////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Common_Property_Prop_FungusFightCam_01",
+      "onAdded": [
+        {
+          "$type": "EnableGadgetSpecialCamera",
+          "canBeHandledOnRecover": true,
+          "enable": true
+        }
+      ]
+    }
+  },
+  //////////////////////////////////////////////////////
+  //
+  //	3.2蕈兽大活动-增幅球
+  //
+  //////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Level_Common_Property_Prop_AwardBall_01",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "AwardBallLiftTime",
+          "target": "Self"
+        }
+      ],
+      "onFieldEnter": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "AwardBallEffect",
+          "target": "Target"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "AwardBallSkill",
+          "target": "Self"
+        },
+
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_SceneObj_AwardBall_Hit",
+          "born": {
+            "$type": "ConfigBornByAttachPoint",
+            "attachPointName": "AttachPoint"
+          }
+        },
+        {
+          "$type": "KillSelf"
+        }
+      ],
+
+      "modifiers": {
+        "AwardBallSkill": {
+          "duration": 0.2,
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_AwardBall_Catch"
+            }
+          ]
+        },
+        "AwardBallLiftTime": {
+          "duration": 9,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_AwardBall_Appear"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_AwardBall_Disappear",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPoint"
+              }
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "AwardBallEffect": {
+          "duration": 0.2,
+          "onAdded": []
+        }
+      }
+    }
+  },
+
+  //////////////////////////////////////////////////////
+  //
+  //	3.2蕈兽大活动-点名器
+  //
+  //////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Level_Common_Property_Prop_CallEntity_01",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "None"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "DoLogic"
+        }
+      ],
+      "modifiers": {
+        "ReviveSkillCount": {
+          "duration": 5,
+          "modifierMixins": [
+            {
+              "$type": "BillboardFixedMarkMixin",
+              "prefabName": "Eff_UI_BillBoard_FixedMark_HighAlert"
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_EnemyMonsterReviveSkill",
+              "paramNum": 1,
+              "param1": 1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_EnemyMonsterReviveSkill",
+              "paramNum": 1,
+              "param1": 0
+            }
+          ]
+        },
+        "None": {},
+        "DoLogic": {
+          "duration": 0.5,
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "ReviveSkillCount",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR225",
+                "centerBasedOn": "Self",
+                "campTargetType": "All",
+                "campBasedOn": "Self",
+                "topLimit": 3,
+                "sortType": "Random"
+              },
+              "predicates": [
+                {
+                  "$type": "ByNot",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "key": "_IS_FUNGUS",
+                      "value": 1,
+                      "compareType": "Equal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ExecuteGadgetLua",
+              "param1": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+
   ///////////////////////////////////////
   //
   // 通用空目标点 空abiltiy（取坐标依赖LCability）

@@ -1505,7 +1505,6 @@
               "$type": "ApplyModifier",
               "modifierName": "UNIQUE_Nilou_ElementalArt_Count_Eff"
             },
-
             {
               "$type": "SetGlobalValue",
               "target": "Self",
@@ -1515,6 +1514,13 @@
               "useLimitRange": true,
               "maxValue": 4,
               "minValue": 0
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "effectPattern": "Eff_Avatar_Girl_Sword_Nilou_Count",
+              "parameter": "Count",
+              "type": "Int",
+              "value": 1
             }
           ]
         },

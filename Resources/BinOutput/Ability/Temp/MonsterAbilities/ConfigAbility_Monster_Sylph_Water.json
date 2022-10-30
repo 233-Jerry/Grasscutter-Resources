@@ -823,10 +823,6 @@
         "FlyHigh_Handler": {
           "onAdded": [
             {
-              "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Sylph_Water_Heal_BS"
-            },
-            {
               "$type": "ApplyModifier",
               "modifierName": "HealArea_Timer"
             },

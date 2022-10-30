@@ -2473,6 +2473,46 @@
               "watcherId": 82159
             }
           ]
+        },
+        // 【无相之草】在复生阶段，让三个复活Gadget同时处于激化态。
+        "Watcher_Achievement_82155": {
+          "modifierMixins": [
+            {
+              "$type": "WatcherSystemMixin",
+              "mixinType": "ListenAbilityAction",
+              "watcherId": 82155
+            }
+          ]
+        },
+        // 【无相之草】在无相草化作藤球使用砸地攻击时，使用火元素攻击破坏其藤条外壳，使其暴露核心
+        "Watcher_Achievement_82156": {
+          "modifierMixins": [
+            {
+              "$type": "WatcherSystemMixin",
+              "mixinType": "ListenAbilityAction",
+              "watcherId": 82156
+            }
+          ]
+        },
+        // 【散兵】一阶段中，通过破坏两个雷法阵使其瘫痪
+        "Watcher_Achievement_82157": {
+          "modifierMixins": [
+            {
+              "$type": "WatcherSystemMixin",
+              "mixinType": "ListenAbilityAction",
+              "watcherId": 82157
+            }
+          ]
+        },
+        // 【散兵】 二阶段中，见证了终焉的降临
+        "Watcher_Achievement_82158": {
+          "modifierMixins": [
+            {
+              "$type": "WatcherSystemMixin",
+              "mixinType": "ListenAbilityAction",
+              "watcherId": 82158
+            }
+          ]
         }
       }
     }

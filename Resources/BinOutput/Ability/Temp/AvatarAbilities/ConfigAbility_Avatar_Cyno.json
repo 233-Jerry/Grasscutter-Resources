@@ -685,6 +685,7 @@
                 {
                   "$type": "SendDungeonFogEffectTrigger",
                   "parameter": "Muya_Success",
+                  "muteRemoteAction": true,
                   "cameraFogEffectName": "Eff_Avatar_Boy_Pole_Cyno_ElementalBurst_WarningCamera"
                 }
               ],
@@ -1886,6 +1887,7 @@
               "$type": "DungeonFogEffects",
               "cameraFogEffectName": "Eff_Avatar_Boy_Pole_Cyno_ElementalBurst_CameraFog",
               "enable": false,
+              "muteRemoteAction": true,
               "doOffStage": true
             }
           ],
@@ -2479,7 +2481,13 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Avatar_Cyno_ElementalBurst_JackalMode",
-      "abilityMixins": [],
+      "abilityMixins": [
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["Cyno_ElementalBurst"],
+          "modifierName": "zzzCyno_ElementalBurst_RemoveEndMode" //再次开大清掉尾刀处理
+        }
+      ],
       "onAdded": [
         {
           "$type": "SetGlobalValue",
@@ -3112,6 +3120,7 @@
                 {
                   "$type": "SendDungeonFogEffectTrigger",
                   "parameter": "Muya_Start",
+                  "muteRemoteAction": true,
                   "cameraFogEffectName": "Eff_Avatar_Boy_Pole_Cyno_ElementalBurst_WarningCamera",
                   "canBeHandledOnRecover": true
                 }
@@ -3120,6 +3129,7 @@
                 {
                   "$type": "DungeonFogEffects",
                   "cameraFogEffectName": "Eff_Avatar_Boy_Pole_Cyno_ElementalBurst_WarningCamera",
+                  "muteRemoteAction": true,
                   "canBeHandledOnRecover": true,
                   "enable": false,
                   "doOffStage": true
@@ -3173,6 +3183,7 @@
             {
               "$type": "SendDungeonFogEffectTrigger",
               "parameter": "Muya_End_TimeoOut",
+              "muteRemoteAction": true,
               "cameraFogEffectName": "Eff_Avatar_Boy_Pole_Cyno_ElementalBurst_WarningCamera"
             }
           ],
@@ -3249,6 +3260,15 @@
         },
         "UNIQUE_Avatar_Cyno_Constellation_6_BulletHandler": {
           "isUnique": true //仅注册
+        },
+        "zzzCyno_ElementalBurst_RemoveEndMode": {
+          "onAdded": [
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "Avatar_Cyno_ElementalBurst_EndMode",
+              "doOffStage": true
+            }
+          ]
         }
       },
       "abilitySpecials": {
@@ -5525,6 +5545,7 @@
                   "bulletID": 41071005,
                   "campID": 1001,
                   "campTargetType": "Enemy",
+                  "flushAbilityPacket": true,
                   "born": {
                     "$type": "ConfigBornBySelf",
                     "offset": {

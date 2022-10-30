@@ -6555,6 +6555,24 @@
             "Push_Claw_R"
           ],
           "setEnable": false
+        },
+        {
+          "$type": "AddGlobalValue",
+          "target": "CurLocalAvatar",
+          "key": "_EXITCAMERASHOT_",
+          "value": 1,
+          "useLimitRange": true,
+          "maxValue": 1,
+          "minValue": 1,
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_DVALIN_S04_FIRSTSIGHT_",
+              "value": 0,
+              "compareType": "NoneOrEqual"
+            }
+          ]
         }
       ]
     }
@@ -6598,6 +6616,7 @@
       "onAbilityStart": [
         {
           "$type": "AvatarExitCameraShot",
+          "cameraMoveCfgPath": "Camera_Dungeon_Dvalin_S04",
           "shotType": "LEVEL",
           "targetType": "Self"
         },
@@ -6623,6 +6642,7 @@
           "onAdded": [
             {
               "$type": "AvatarExitCameraShot",
+              "cameraMoveCfgPath": "Camera_Dungeon_Dvalin_S04",
               "shotType": "LEVEL"
             }
           ]

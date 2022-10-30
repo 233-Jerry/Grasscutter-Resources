@@ -2747,6 +2747,25 @@
           "target": "Self"
         }
       ],
+      "onKill": [
+        //移除特效
+        {
+          "$type": "RemoveUniqueModifier",
+          "modifierName": "UNIQUE_LaserEffect"
+        },
+        {
+          "$type": "TriggerSetRenderersEnable",
+          "renderNames": ["Crystal_L"],
+          "setEnable": true,
+          "target": "Self"
+        },
+        {
+          "$type": "TriggerSetRenderersEnable",
+          "renderNames": ["Crystal_R"],
+          "setEnable": true,
+          "target": "Self"
+        }
+      ],
       "modifiers": {
         "Effect": {
           "onRemoved": [

@@ -50,13 +50,16 @@
           "elementTypes": ["Electric"],
           "reject": true,
           "modifierName": "ElectricDetect"
-        }
-      ],
-      "onAdded": [
+        },
+        //根据是否活动版本上不同的modifier
         {
-          "$type": "ApplyModifier",
-          "modifierName": "UNIQUE_SLime_Electric_ElementState",
-          "target": "Self"
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_MONSTER_Slime_SimpleStick",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "modifierNameSteps": [
+            "UNIQUE_SLime_Electric_ElementState",
+            "UNIQUE_SLime_02_Electric_ElementState_SimpleStick"
+          ]
         }
       ],
       "onAbilityStart": [
@@ -573,6 +576,30 @@
               ]
             }
           ]
+        },
+        "UNIQUE_SLime_02_Electric_ElementState_SimpleStick": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "elementType": "Electric",
+          "elementDurability": 50,
+          "isElementDurabilityMutable": false,
+          "state": "LockHP",
+          "onAdded": [
+            {
+              "$type": "SetPoseBool",
+              "boolID": "ElementState",
+              "value": true
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "SkinShader",
+              "value": true
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Slime_Electric_Idle"
+            }
+          ]
         }
       },
       "abilitySpecials": {
@@ -590,6 +617,16 @@
           "elementTypes": ["Electric"],
           "reject": true,
           "modifierName": "ElectricDetect"
+        },
+        //根据是否活动版本上不同的modifier
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_MONSTER_Slime_SimpleStick",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "modifierNameSteps": [
+            "UNIQUE_SLime_Electric_ElementState",
+            "UNIQUE_SLime_03_Electric_ElementState_SimpleStick"
+          ]
         }
       ],
       "onAdded": [
@@ -1132,6 +1169,30 @@
                   "element": "Electric"
                 }
               ]
+            }
+          ]
+        },
+        "UNIQUE_SLime_03_Electric_ElementState_SimpleStick": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "elementType": "Electric",
+          "elementDurability": 50,
+          "isElementDurabilityMutable": false,
+          "state": "LockHP",
+          "onAdded": [
+            {
+              "$type": "SetPoseBool",
+              "boolID": "ElementState",
+              "value": true
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "SkinShader",
+              "value": true
+            },
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Slime_Electric_Idle"
             }
           ]
         }

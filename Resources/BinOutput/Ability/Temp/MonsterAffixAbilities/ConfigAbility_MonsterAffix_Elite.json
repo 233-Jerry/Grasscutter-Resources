@@ -1,4 +1,4 @@
-﻿[
+[
   ////////////////////////////////////////////////////////////////
   //
   //  Attack_Enhance
@@ -342,6 +342,1615 @@
             }
           ]
         }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  3.2无相挑战活动 高难标记 5214
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Effigy_Elite_Difficulty",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_MonsterAffix_Effigy_Elite_Difficulty",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_MonsterAffix_Effigy_Elite_Difficulty": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "value": 1,
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  3.2无相挑战活动 无相冰再生模式修改
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Effigy_Ice_Elite_ReviveState",
+      "isDynamicAbility": true,
+      "abilityMixins": [
+        // TODO:
+        // Attach modifier when revive begins
+        {
+          "$type": "AttachToPoseIDMixin",
+          "poseIDs": [201],
+          "modifierName": "Effigy_Ice_Elite_ReviveState_Activity"
+        },
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_EFFIGY_ICE_ICEWALL_ON_",
+          "defaultGlobalValueOnCreate": 0,
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "removeAppliedModifier": true,
+          "modifierNameSteps": [
+            "Effigy_Ice_Elite_IceWallOff",
+            "Effigy_Ice_Elite_IceWallOn"
+          ]
+        }
+      ],
+      "onAdded": [
+        {
+          "$type": "SetPoseBool",
+          "boolID": "Activity",
+          "value": true
+        },
+        {
+          "$type": "ApplyModifier",
+          "target": "Self",
+          "modifierName": "Effigy_Ice_Activity_AttackWithColdHandler"
+        },
+        {
+          "$type": "SetAnimatorBool",
+          "boolID": "IsActivity",
+          "value": true
+        },
+        {
+          "$type": "SetAnimatorFloat",
+          "floatID": "IceBarrageSpeedRatio",
+          "value": 1.33
+        }
+      ],
+      "modifiers": {
+        "Effigy_Ice_Elite_ReviveState_Activity": {
+          "modifierMixins": [
+            {
+              "$type": "AttachToStateIDMixin",
+              "stateIDs": ["Revive_Standby"],
+              "modifierName": "Effigy_Ice_Elite_TriggerIceWall"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_ICE_ICEWALL_ON_",
+              "value": 0
+            }
+          ]
+        },
+        "Effigy_Ice_Elite_TriggerIceWall": {
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_ICE_ICEWALL_ON_",
+              "value": 1
+            }
+          ]
+        },
+        "Effigy_Ice_Elite_IceWallOn": {
+          "onAdded": [
+            // TODO
+            // Launch IceWall when revive begins
+            // If reconnect
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_ICE_ICEWALL_ISALIVE_01",
+              "value": 1
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_ICE_ICEWALL_ISALIVE_02",
+              "value": 1
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_ICE_ICEWALL_ISALIVE_03",
+              "value": 1
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_ICE_ICEWALL_REVERSE_ISALIVE_01",
+              "value": 1
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_ICE_ICEWALL_REVERSE_ISALIVE_02",
+              "value": 1
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_ICE_ICEWALL_REVERSE_ISALIVE_03",
+              "value": 1
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004412,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint01",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004421,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint02",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004422,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint03",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004413,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint04",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004423,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint05",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004424,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint06",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            }
+          ],
+          "onReconnect": [
+            // when reconnect or changeAuth, clear all icewall then recreate icewall
+            // to kill all
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004412,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004421,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004422,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004413,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004423,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004424,
+                "sortType": "Default"
+              }
+            },
+            // to recreate
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004412,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint01",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ICE_ICEWALL_ISALIVE_01",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004421,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint02",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ICE_ICEWALL_ISALIVE_02",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004422,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint03",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ICE_ICEWALL_ISALIVE_03",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            // to recreate reverse icewalls
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004413,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint04",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 1,
+                  "compareType": "Equal"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ICE_ICEWALL_REVERSE_ISALIVE_01",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004423,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint05",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 1,
+                  "compareType": "Equal"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ICE_ICEWALL_REVERSE_ISALIVE_02",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            {
+              "$type": "CreateGadget",
+              "gadgetID": 42004424,
+              "campID": 4001,
+              "sightGroupWithOwner": true,
+              "lifeByOwnerIsAlive": true,
+              "byServer": true,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "IceWallPoint06",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+                  "value": 1,
+                  "compareType": "Equal"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ICE_ICEWALL_REVERSE_ISALIVE_03",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "KillIceWall",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "topLimit": 99,
+                "shapeName": "CircleR50",
+                "centerBasedOn": "Self",
+                "campTargetType": "AllExceptSelf",
+                "campBasedOn": "Self",
+                "sortType": "Nearest"
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_EFFIGY_ICE_ICEWALL_",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Ice_Activity_AttackWithColdHandler": {
+          "onAttackLanded": [
+            {
+              "$type": "ApplyModifier",
+              "target": "Target",
+              "modifierName": "UNIQUE_Effigy_Ice_Activity_AddColdMeter",
+              "predicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ]
+            }
+          ]
+        },
+        "UNIQUE_Effigy_Ice_Activity_AddColdMeter": {
+          "isUnique": true,
+          "stacking": "Multiple",
+          "duration": 1.0,
+          "onAdded": [
+            {
+              "$type": "AddClimateMeter",
+              "climateType": "Cold",
+              "value": 30.0
+            }
+          ]
+        },
+        "Effigy_Ice_Elite_IceWallOff": {
+          "thinkInterval": 3.0,
+          "onThinkInterval": [
+            // kill all walls
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004412,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004421,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004422,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004413,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004423,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillServerGadget",
+              "gadgetInfo": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004424,
+                "sortType": "Default"
+              }
+            }
+          ]
+        },
+        "KillIceWall": {
+          "onAdded": [
+            {
+              "$type": "TriggerAbility",
+              "abilityName": "Bullet_Effigy_Ice_Revive_IceWall",
+              "target": "Self"
+            },
+            {
+              "$type": "TriggerAbility",
+              "abilityName": "Bullet_Effigy_Ice_Revive_IceWall_Reverse",
+              "target": "Self"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  3.2无相挑战活动 无相冰活动特殊冰导弹
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Effigy_Ice_RangeAtk_Activity",
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Ice_RangeAtk_Activity_FireShield01"
+        }
+      ],
+      "modifiers": {
+        "Effigy_Ice_RangeAtk_Effect": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Ice_RangeAtk"
+            },
+            {
+              "$type": "TriggerSetRenderersEnable",
+              "renderNames": [
+                "Cube_In_01",
+                "Cube_In_02",
+                "Cube_In_03",
+                "Cube_In_04",
+                "Cube_In_05",
+                "Cube_In_06",
+                "Cube_In_07",
+                "Cube_In_08"
+              ],
+              "setEnable": true
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Ice_RangeAtk_AS"
+            },
+            {
+              "$type": "TriggerSetRenderersEnable",
+              "renderNames": [
+                "Cube_In_01",
+                "Cube_In_02",
+                "Cube_In_03",
+                "Cube_In_04",
+                "Cube_In_05",
+                "Cube_In_06",
+                "Cube_In_07",
+                "Cube_In_08"
+              ],
+              "setEnable": true
+            }
+          ]
+        },
+        // Following modifier names are in clockwise order
+        // From top, clockwise: 1-2-3-4-5-6-7-8
+        "Effigy_Ice_RangeAtk_Activity_FireShield01": {
+          "duration": 0.4,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Ice_RangeAtk_Fire02",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInL1"
+              }
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42004417,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInL1",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": -60.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                }
+              }
+            },
+            {
+              "$type": "TriggerSetRenderersEnable",
+              "renderNames": ["Cube_In_01"],
+              "setEnable": false
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Ice_RangeAtk_Activity_FireShield02"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Ice_RangeAtk_Activity_FireShield08"
+            }
+          ]
+        },
+        "Effigy_Ice_RangeAtk_Activity_FireShield02": {
+          "duration": 0.4,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Ice_RangeAtk_Fire02",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInL3"
+              }
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42004417,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInL3",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": -45.0,
+                    "y": -60.0,
+                    "z": 0.0
+                  }
+                }
+              }
+            },
+            {
+              "$type": "TriggerSetRenderersEnable",
+              "renderNames": ["Cube_In_03"],
+              "setEnable": false
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Ice_RangeAtk_Activity_FireShield03"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Ice_RangeAtk_Activity_FireShield07"
+            }
+          ]
+        },
+        "Effigy_Ice_RangeAtk_Activity_FireShield03": {
+          "duration": 0.4,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Ice_RangeAtk_Fire02",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInR2"
+              }
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42004417,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInR2",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": -60.0,
+                    "z": 0.0
+                  }
+                }
+              }
+            },
+            {
+              "$type": "TriggerSetRenderersEnable",
+              "renderNames": ["Cube_In_05"],
+              "setEnable": false
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Ice_RangeAtk_Activity_FireShield04"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Ice_RangeAtk_Activity_FireShield06"
+            }
+          ]
+        },
+        "Effigy_Ice_RangeAtk_Activity_FireShield04": {
+          "duration": 0.4,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Ice_RangeAtk_Fire02",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInR3"
+              }
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42004417,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInR3",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": 15.0,
+                    "y": -60.0,
+                    "z": 0.0
+                  }
+                }
+              }
+            },
+            {
+              "$type": "TriggerSetRenderersEnable",
+              "renderNames": ["Cube_In_04"],
+              "setEnable": false
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Effigy_Ice_RangeAtk_Activity_FireShield05"
+            }
+          ]
+        },
+        "Effigy_Ice_RangeAtk_Activity_FireShield05": {
+          "duration": 0.4,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Ice_RangeAtk_Fire02",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInR1"
+              }
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42004417,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInR1",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                }
+              }
+            },
+            {
+              "$type": "TriggerSetRenderersEnable",
+              "renderNames": ["Cube_In_02"],
+              "setEnable": false
+            }
+          ]
+          // "onRemoved":
+          // [
+          // 	{
+          // 		"$type": "ApplyModifier",
+          // 		"modifierName": "Effigy_Ice_RangeAtk_FireShield06",
+          // 	},
+          // ],
+        },
+        "Effigy_Ice_RangeAtk_Activity_FireShield06": {
+          "duration": 0.4,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Ice_RangeAtk_Fire02",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInL2"
+              }
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42004417,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInL2",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": 15.0,
+                    "y": 60.0,
+                    "z": 0.0
+                  }
+                }
+              }
+            },
+            {
+              "$type": "TriggerSetRenderersEnable",
+              "renderNames": ["Cube_In_06"],
+              "setEnable": false
+            }
+          ]
+          // "onRemoved":
+          // [
+          // 	{
+          // 		"$type": "ApplyModifier",
+          // 		"modifierName": "Effigy_Ice_RangeAtk_FireShield07",
+          // 	},
+          // ],
+        },
+        "Effigy_Ice_RangeAtk_Activity_FireShield07": {
+          "duration": 0.4,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Ice_RangeAtk_Fire02",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInR4"
+              }
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42004417,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInR4",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 60.0,
+                    "z": 0.0
+                  }
+                }
+              }
+            },
+            {
+              "$type": "TriggerSetRenderersEnable",
+              "renderNames": ["Cube_In_08"],
+              "setEnable": false
+            }
+          ]
+          // "onRemoved":
+          // [
+          // 	{
+          // 		"$type": "ApplyModifier",
+          // 		"modifierName": "Effigy_Ice_RangeAtk_FireShield08",
+          // 	},
+          // ],
+        },
+        "Effigy_Ice_RangeAtk_Activity_FireShield08": {
+          "duration": 0.4,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Ice_RangeAtk_Fire02",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInL4"
+              }
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42004417,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPointInL4",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByEntity",
+                  "angleOffset": {
+                    "x": -45.0,
+                    "y": 60.0,
+                    "z": 0.0
+                  }
+                }
+              }
+            },
+            {
+              "$type": "TriggerSetRenderersEnable",
+              "renderNames": ["Cube_In_07"],
+              "setEnable": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  3.2无相挑战活动 属性词缀 5232 5233 5234 5235
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Effigy_Elite_PropertyLevel1",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_MonsterAffix_Effigy_Elite_PropertyLevel1",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_MonsterAffix_Effigy_Elite_PropertyLevel1": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "properties": {
+            "Actor_MaxHPRatio": "%Elite_HP_Level1",
+            "Actor_AttackRatio": "%Elite_Attack_Level1"
+          }
+        }
+      },
+      "abilitySpecials": {
+        "Elite_HP_Level1": 0.0,
+        "Elite_Attack_Level1": 0.0
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Effigy_Elite_PropertyLevel2",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_MonsterAffix_Effigy_Elite_PropertyLevel2",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_MonsterAffix_Effigy_Elite_PropertyLevel2": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "properties": {
+            "Actor_MaxHPRatio": "%Elite_HP_Level2",
+            "Actor_AttackRatio": "%Elite_Attack_Level2"
+          }
+        }
+      },
+      "abilitySpecials": {
+        "Elite_HP_Level2": 0.0,
+        "Elite_Attack_Level2": 0.0
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Effigy_Elite_PropertyLevel3",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_MonsterAffix_Effigy_Elite_PropertyLevel3",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_MonsterAffix_Effigy_Elite_PropertyLevel3": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "properties": {
+            "Actor_MaxHPRatio": "%Elite_HP_Level3",
+            "Actor_AttackRatio": "%Elite_Attack_Level3"
+          }
+        }
+      },
+      "abilitySpecials": {
+        "Elite_HP_Level3": 0.0,
+        "Elite_Attack_Level3": 0.0
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Effigy_Elite_PropertyLevel4",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_MonsterAffix_Effigy_Elite_PropertyLevel4",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_MonsterAffix_Effigy_Elite_PropertyLevel4": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "properties": {
+            "Actor_MaxHPRatio": "%Elite_HP_Level4",
+            "Actor_AttackRatio": "%Elite_Attack_Level4"
+          }
+        }
+      },
+      "abilitySpecials": {
+        "Elite_HP_Level4": 0.0,
+        "Elite_Attack_Level4": 0.0
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  3.2无相挑战活动 狂暴 5236
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Effigy_Elite_Violent",
+      "isDynamicAbility": true,
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_EFFIGY_ELITE_VIOLENT_LEVEL_",
+          "defaultGlobalValueOnCreate": 0,
+          "valueSteps": [
+            -0.5, 0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5, 11.5,
+            12.5
+          ],
+          "removeAppliedModifier": true,
+          "modifierNameSteps": [
+            "Empty",
+            "MonsterAffix_Effigy_Elite_Violent_Level1",
+            "MonsterAffix_Effigy_Elite_Violent_Level2",
+            "MonsterAffix_Effigy_Elite_Violent_Level3",
+            "MonsterAffix_Effigy_Elite_Violent_Level4",
+            "MonsterAffix_Effigy_Elite_Violent_Level5",
+            "MonsterAffix_Effigy_Elite_Violent_Level6",
+            "MonsterAffix_Effigy_Elite_Violent_Level7",
+            "MonsterAffix_Effigy_Elite_Violent_Level8",
+            "MonsterAffix_Effigy_Elite_Violent_Level9",
+            "MonsterAffix_Effigy_Elite_Violent_Level10",
+            "MonsterAffix_Effigy_Elite_Violent_Level11",
+            "MonsterAffix_Effigy_Elite_Violent_Level12"
+          ]
+        }
+      ],
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "MonsterAffix_Effigy_Elite_Violent_CountDown",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "MonsterAffix_Effigy_Elite_Violent_CountDown": {
+          "duration": "%Elite_Violent_CountDown",
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_ELITE_VIOLENT_LEVEL_",
+              "value": 0,
+              "target": "Self"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "MonsterAffix_Effigy_Elite_Violent_Timer1",
+              "target": "Self"
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Timer1": {
+          "duration": "%Elite_Violent_Interval",
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "target": "Self",
+              "key": "_EFFIGY_ELITE_VIOLENT_LEVEL_",
+              "value": 1,
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": "%Elite_Violent_MaxLayer"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "MonsterAffix_Effigy_Elite_Violent_Timer2",
+              "target": "Self"
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Timer2": {
+          "duration": "%Elite_Violent_Interval",
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "target": "Self",
+              "key": "_EFFIGY_ELITE_VIOLENT_LEVEL_",
+              "value": 1,
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": "%Elite_Violent_MaxLayer"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "MonsterAffix_Effigy_Elite_Violent_Timer1",
+              "target": "Self"
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level1": {
+          "properties": {
+            "Actor_AttackRatio": "1*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 1
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660248
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 1
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level2": {
+          "properties": {
+            "Actor_AttackRatio": "2*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 2
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660249
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 2
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level3": {
+          "properties": {
+            "Actor_AttackRatio": "3*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 3
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660250
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 3
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level4": {
+          "properties": {
+            "Actor_AttackRatio": "4*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 4
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660251
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 4
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level5": {
+          "properties": {
+            "Actor_AttackRatio": "5*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 5
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660252
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 5
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level6": {
+          "properties": {
+            "Actor_AttackRatio": "6*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 6
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660253
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 6
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level7": {
+          "properties": {
+            "Actor_AttackRatio": "7*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 7
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660254
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 7
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level8": {
+          "properties": {
+            "Actor_AttackRatio": "8*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 8
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660255
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 8
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level9": {
+          "properties": {
+            "Actor_AttackRatio": "9*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 9
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660256
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 9
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level10": {
+          "properties": {
+            "Actor_AttackRatio": "10*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 10
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660257
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 10
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level11": {
+          "properties": {
+            "Actor_AttackRatio": "11*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 11
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660258
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 11
+            }
+          ]
+        },
+        "MonsterAffix_Effigy_Elite_Violent_Level12": {
+          "properties": {
+            "Actor_AttackRatio": "12*%Elite_Violent_Attack"
+          },
+          "onAdded": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 12
+            },
+            {
+              "$type": "ShowReminder",
+              "id": 500660259
+            }
+          ],
+          "onReconnect": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_UpdateViolentLevel",
+              "paramNum": 1,
+              "param1": 12
+            }
+          ]
+        },
+        "Empty": {}
+      },
+      "abilitySpecials": {
+        "Elite_Violent_CountDown": 0.0,
+        "Elite_Violent_Interval": 0.0,
+        "Elite_Violent_MaxLayer": 12.0,
+        "Elite_Violent_Attack": 0.0
       }
     }
   },
@@ -6446,6 +8055,478 @@
           "$type": "SetGlobalValue",
           "key": "_GARGOYLE_ABYSSTAG_",
           "value": 1
+        }
+      ]
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //   3.2 奇趣妙园特殊史莱姆
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Slime_SimpleStick",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Slime_SimpleStick"
+        }
+      ],
+      "modifiers": {
+        "Slime_SimpleStick": {
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_MONSTER_Slime_SimpleStick",
+              "value": 1
+            }
+          ],
+          "properties": {
+            "Actor_WeightDelta": -20
+          }
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Slime_Large_SimpleStick",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Slime_Large_SimpleStick"
+        }
+      ],
+      "modifiers": {
+        "Slime_Large_SimpleStick": {
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_MONSTER_Slime_SimpleStick",
+              "value": 1
+            }
+          ],
+          "properties": {
+            "Actor_WeightDelta": -50,
+            "Actor_EndureDelta": 8
+          }
+        }
+      }
+    }
+  },
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //   3.2 蕈兽limbo
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Monster_Fungus_Limbo",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Fungus_Limbo"
+        }
+      ],
+      "modifiers": {
+        "Fungus_Limbo": {
+          "state": "Limbo"
+        }
+      }
+    }
+  },
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  3.2 蕈兽活动抓捕蕈兽
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "isDynamicAbility": true,
+      "abilityName": "MonsterAffix_Monster_Fungus_Amanita_Catch",
+      "onAdded": [
+        {
+          "$type": "ResetAIThreatBroadcastRange",
+          "range": 0.0,
+          "canBeHandledOnRecover": true
+        },
+        {
+          "$type": "ResetAIResistTauntLevel",
+          "resistTauntLevel": "Monster_TauntLevel_6",
+          "canBeHandledOnRecover": true
+        },
+        {
+          "$type": "SetAIHitFeeling",
+          "enable": false
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "CatchCheck"
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "TickCheck"
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "EndureUp",
+          "target": "Self"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Capture_Mark_VFX"
+        }
+      ],
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+          "globalValueKey": "SGV_MushroomMonster_Alert",
+          "valueSteps": [-1, 0.5, 1.5],
+          "modifierNameSteps": ["PhaseOne", "PhaseTwo"]
+        }
+      ],
+      "onFieldEnter": [
+        {
+          "$type": "ServerLuaCall",
+          "luaCallType": "FromGroup",
+          "funcName": "SLC_MushroomMonsterAlert",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "SGV_MushroomMonster_Alert",
+              "target": "Self",
+              "value": 0,
+              "compareType": "Equal"
+            }
+          ]
+        }
+      ],
+      "modifiers": {
+        "EndureUp": {
+          "properties": {
+            "Actor_EndureDelta": 0
+          }
+        },
+        "Capture_Mark_VFX": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Fungus_Activity_HeadMark"
+            }
+          ],
+          "onKill": [
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "Capture_Mark_VFX"
+            }
+          ]
+        },
+        "TickCheck": {
+          "thinkInterval": 0.2,
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR10",
+                "centerBasedOn": "Self",
+                "campTargetType": "Enemy",
+                "campBasedOn": "Self",
+                "topLimit": 1,
+                "sortType": "Nearest"
+              },
+              "predicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "SGV_MushroomMonster_Alert",
+                  "target": "Self",
+                  "value": 0,
+                  "compareType": "Equal"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ServerLuaCall",
+                  "luaCallType": "FromGroup",
+                  "funcName": "SLC_MushroomMonsterAlert",
+                  "target": "Self"
+                }
+              ]
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_MushroomMonsterAlert",
+              "target": "Self",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "SGV_MushroomMonster_Alert",
+                  "target": "Self",
+                  "value": 0,
+                  "compareType": "Equal"
+                }
+              ]
+            }
+          ]
+        },
+        "CatchCheck": {
+          "state": "LockHP",
+          "onAdded": [
+            {
+              "$type": "HideUIBillBoard",
+              "hide": true
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_MushroomMonsterCatch",
+              "paramNum": 1,
+              "param1": 0,
+              "predicates": [
+                {
+                  "$type": "ByAttackTags",
+                  "attackTags": ["Mushroom_Monster_Catch"]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_FUNGUSSTATE_",
+                  "value": 0,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_MushroomMonsterCatch",
+              "paramNum": 1,
+              "param1": 1,
+              "predicates": [
+                {
+                  "$type": "ByAttackTags",
+                  "attackTags": ["Mushroom_Monster_Catch"]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_FUNGUSSTATE_",
+                  "value": 1,
+                  "compareType": "Equal"
+                }
+              ]
+            },
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_MushroomMonsterCatch",
+              "paramNum": 1,
+              "param1": 2,
+              "predicates": [
+                {
+                  "$type": "ByAttackTags",
+                  "attackTags": ["Mushroom_Monster_Catch"]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_FUNGUSSTATE_",
+                  "value": 2,
+                  "compareType": "Equal"
+                }
+              ]
+            }
+          ]
+        },
+        "PhaseOne": {
+          "onAdded": [
+            {
+              // 原地不动的状态下，使用2 (有Free技能)
+              "$type": "UseSkillEliteSet",
+              "skillEliteSetID": 2
+            },
+            {
+              "$type": "ReTriggerAISkillInitialCD",
+              "skillIDs": [112]
+            },
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR10",
+                "centerBasedOn": "Self",
+                "campTargetType": "Enemy",
+                "campBasedOn": "Self",
+                "topLimit": 1,
+                "sortType": "Nearest"
+              },
+              "predicatesForeach": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ServerLuaCall",
+                  "luaCallType": "FromGroup",
+                  "funcName": "SLC_MushroomMonsterAlert",
+                  "target": "Self"
+                }
+              ]
+            }
+          ]
+        },
+        "PhaseTwo": {
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Undead_01_Alert_Fungus_Activity"
+            },
+            {
+              // 移动的状态下，使用1 不会放技能，和普通蕈兽表现一致
+              "$type": "UseSkillEliteSet",
+              "skillEliteSetID": 1
+            },
+            // 设定蕈兽的Trigger，强制回到Move状态
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "FungusCapture_Alert"
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "SpeedUp_Deux",
+              "predicates": [
+                {
+                  "$type": "ByHasFeatureTag",
+                  "featureTagIDs": [4020]
+                }
+              ]
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "SpeedUp_Trois",
+              "predicates": [
+                {
+                  "$type": "ByHasFeatureTag",
+                  "featureTagIDs": [4018]
+                }
+              ]
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "SpeedUp_Un",
+              "predicates": [
+                {
+                  "$type": "ByHasFeatureTag",
+                  "featureTagIDs": [4019]
+                }
+              ]
+            }
+          ]
+        },
+        "SpeedUp_Deux": {
+          "properties": {
+            "Animator_MoveSpeedRatio": 0.2 // 伸展蕈兽速度加成量   0.5就是增加50%的意思
+          }
+        },
+        "SpeedUp_Trois": {
+          "properties": {
+            "Animator_MoveSpeedRatio": 1.05 // 旋转蕈兽速度加成量
+          }
+        },
+        "SpeedUp_Un": {
+          "properties": {
+            "Animator_MoveSpeedRatio": 0.45 // 飞行蕈兽速度加成量
+          }
+        }
+      }
+    }
+  },
+  //蕈兽战斗CD
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Monster_Fungus_Skill",
+      "isDynamicAbility": true,
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+          "globalValueKey": "SGV_Fungus_StartBurst_Immediately",
+          "valueSteps": [-1, 0.5, 1.5],
+          "modifierNameSteps": ["Disable", "RefreshSGV"]
+        },
+        {
+          "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+          "globalValueKey": "SGV_Burst_Attack_Up",
+          "valueSteps": [-1, 0.5, 1.5],
+          "modifierNameSteps": ["None", "AttackUp"]
+        }
+      ],
+      "onAdded": [
+        {
+          "$type": "SetGlobalValue",
+          "value": 1,
+          "key": "_IS_FUNGUS"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "ServerLuaCall",
+          "luaCallType": "FromGroup",
+          "funcName": "SLC_MushroomMonsterAlertDoSkill",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "Disable": {},
+        "None": {},
+        "AttackUp": {
+          "properties": {
+            "Actor_AttackRatio": 1.0
+          }
+        },
+        "RefreshSGV": {
+          "thinkInterval": 10,
+          "onThinkInterval": [
+            {
+              "$type": "ServerLuaCall",
+              "luaCallType": "FromGroup",
+              "funcName": "SLC_MushroomMonsterAlertRefreshSkill",
+              "target": "Self"
+            }
+          ]
+        }
+      }
+    }
+  },
+  //敌对怪物嘲讽标记词缀
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Monster_Fungus_Taunt_Flag",
+      "isDynamicAbility": true,
+      "onAdded": [
+        {
+          "$type": "SetGlobalValue",
+          "value": 1,
+          "key": "_IS_TAUNT_FLAG"
         }
       ]
     }

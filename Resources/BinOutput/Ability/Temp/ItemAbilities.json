@@ -3732,44 +3732,18 @@
                   "target": "Self",
                   "targetPredicates": [
                     {
-                      "$type": "ByAny",
-                      "predicates": [
-                        {
-                          "$type": "ByTargetGlobalValue",
-                          "key": "_Sprint_Attack_Ratio_CD",
-                          "value": 0,
-                          "compareType": "Equal"
-                        },
-                        {
-                          "$type": "ByTargetGlobalValue",
-                          "key": "_Sprint_Attack_Ratio_CD",
-                          "value": 1,
-                          "compareType": "Equal"
-                        }
-                      ]
-                    }
-                  ],
-                  "failActions": [
-                    {
-                      "$type": "AddGlobalValue",
-                      "key": "_Sprint_Attack_Ratio_CD",
-                      "value": 0,
-                      "useLimitRange": true,
-                      "maxValue": 0,
-                      "minValue": 0
-                    }
-                  ]
-                },
-                {
-                  "$type": "ApplyModifier",
-                  "target": "Self",
-                  "modifierName": "Sprint_Attack_Ratio_Sub",
-                  "predicates": [
-                    {
                       "$type": "ByTargetGlobalValue",
                       "key": "_Sprint_Attack_Ratio_CD",
                       "value": 0,
-                      "compareType": "Equal"
+                      "compareType": "NoneOrEqual"
+                    }
+                  ],
+                  "successActions": [
+                    {
+                      "$type": "ApplyModifier",
+                      "target": "Self",
+                      "doOffStage": true,
+                      "modifierName": "Sprint_Attack_Ratio_Sub"
                     }
                   ]
                 }
@@ -3782,14 +3756,19 @@
           "buffID": 30004, //爬塔BUFF图标
           "duration": 8,
           "reduceDurablityIgnoreTimeScale": true,
-          "properties": {
-            "Actor_AttackRatio": 0.2
-          },
+          "modifierMixins": [
+            {
+              "$type": "ModifyDamageMixin",
+              "ignoreEventInfo": true,
+              "damagePercentageRatio": 0.2
+            }
+          ],
           "onAdded": [
             {
               "$type": "ApplyModifier",
               "target": "Self",
-              "modifierName": "Sprint_Attack_Ratio_CD_Delay"
+              "modifierName": "Sprint_Attack_Ratio_CD_Delay",
+              "doOffStage": true
             }
           ]
         },
@@ -3800,7 +3779,8 @@
             {
               "$type": "ApplyModifier",
               "target": "Self",
-              "modifierName": "Sprint_Attack_Ratio_CD"
+              "modifierName": "Sprint_Attack_Ratio_CD",
+              "doOffStage": true
             }
           ]
         },
@@ -3809,23 +3789,24 @@
           "duration": 15,
           "onAdded": [
             {
-              "$type": "AddGlobalValue",
+              "$type": "SetGlobalValue",
               "key": "_Sprint_Attack_Ratio_CD",
               "value": 1,
               "useLimitRange": true,
               "maxValue": 1,
-              "minValue": 1
+              "minValue": 1,
+              "doOffStage": true
             }
           ],
           "onRemoved": [
             {
-              "$type": "AddGlobalValue",
+              "$type": "SetGlobalValue",
               "key": "_Sprint_Attack_Ratio_CD",
-              "doOffStage": true,
               "value": 0,
               "useLimitRange": true,
               "maxValue": 0,
-              "minValue": 0
+              "minValue": 0,
+              "doOffStage": true
             }
           ]
         },

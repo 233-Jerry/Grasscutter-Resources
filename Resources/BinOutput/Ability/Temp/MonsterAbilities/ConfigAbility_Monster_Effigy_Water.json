@@ -75,6 +75,7 @@
         {
           "$type": "AttachToStateIDMixin",
           "stateIDs": [
+            "Dive_CoureOut",
             "SurgeStrike_CoreOut",
             "Rain_CoreOut",
             "WaterBallSplash_CoreOut",
@@ -349,6 +350,13 @@
                   "$type": "ConfigDirectionByBackToHitBoxCenter"
                 }
               }
+            }
+          ]
+        },
+        "Effigy_Ooze_KillSelf": {
+          "onAdded": [
+            {
+              "$type": "KillSelf"
             }
           ]
         },
@@ -936,6 +944,11 @@
               "$type": "SetGlobalValue",
               "key": "_MONSTER_EFFIGY_REBORNSTART_",
               "value": 1
+            },
+            {
+              "$type": "ServerMonsterLog",
+              "target": "Self",
+              "paramList": [0, 0, 1]
             }
           ]
         },
@@ -976,6 +989,11 @@
           "target": "Self",
           "key": "_MONSTER_EFFIGY_OOZE_TYPESPLITBIG_KILLED_",
           "value": 0
+        },
+        {
+          "$type": "SetGlobalValue",
+          "key": "_EFFIGY_WATER_ELITE_OOZEKILLTAG_",
+          "value": 0
         }
       ],
       "modifiers": {
@@ -1013,7 +1031,7 @@
               "$type": "KillSelf",
               "otherTargets": {
                 "$type": "SelectTargetsByChildren",
-                "configID": 420046012,
+                "configID": 42004612,
                 "sortType": "Default"
               }
             },
@@ -1021,12 +1039,47 @@
               "$type": "KillSelf",
               "otherTargets": {
                 "$type": "SelectTargetsByChildren",
-                "configID": 420046016,
+                "configID": 42004616,
+                "sortType": "Default"
+              }
+            },
+            // Elite
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_WATER_ELITE_OOZEKILLTAG_",
+              "value": 1
+            },
+            {
+              "$type": "KillSelf",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004618,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillSelf",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004619,
+                "sortType": "Default"
+              }
+            },
+            {
+              "$type": "KillSelf",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42004620,
                 "sortType": "Default"
               }
             }
           ],
           "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "_EFFIGY_WATER_ELITE_OOZEKILLTAG_",
+              "value": 0
+            },
             {
               "$type": "ApplyModifier",
               "modifierName": "UNIQUE_Effigy_Water_RebornHandler",
@@ -1610,6 +1663,11 @@
               "compareType": "Equal"
             }
           ]
+        },
+        {
+          "$type": "ServerMonsterLog",
+          "target": "Self",
+          "paramList": [0, 0, 2]
         }
       ]
     }
@@ -1888,7 +1946,86 @@
               "attachPointName": "MoveHead",
               "attachPointTargetType": "Self"
             }
-          }
+          },
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "CreateGadget",
+          "gadgetID": 42004623,
+          "campID": 4001,
+          "target": "SelfAttackTarget",
+          "campTargetType": "Enemy",
+          "born": {
+            "$type": "ConfigBornByTarget",
+            "onGround": true,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 6.0
+            },
+            "direction": {
+              "$type": "ConfigDirectionByAttachPoint",
+              "attachPointName": "MoveHead",
+              "attachPointTargetType": "Self"
+            },
+            "bornRandom": {
+              "$type": "BornRandomFromCenter",
+              "minRandomRange": 0,
+              "maxRandomRange": 3
+            }
+          },
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "CreateGadget",
+          "gadgetID": 42004623,
+          "campID": 4001,
+          "target": "SelfAttackTarget",
+          "campTargetType": "Enemy",
+          "born": {
+            "$type": "ConfigBornByTarget",
+            "onGround": true,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -6.0
+            },
+            "direction": {
+              "$type": "ConfigDirectionByAttachPoint",
+              "attachPointName": "MoveHead",
+              "attachPointTargetType": "Self"
+            },
+            "bornRandom": {
+              "$type": "BornRandomFromCenter",
+              "minRandomRange": 0,
+              "maxRandomRange": 3
+            }
+          },
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
         }
       ],
       "modifiers": {
@@ -1952,6 +2089,88 @@
         },
         "RainArea_Damage": {
           "duration": 5,
+          "thinkInterval": 0.5,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Water_RainArea"
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "DamageByAttackValue",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR3",
+                "centerBasedOn": "Self",
+                "campTargetType": "Enemy",
+                "campBasedOn": "Self"
+              },
+              "attackInfo": {
+                "canBeModifiedBy": "OriginOwner",
+                "attackProperty": {
+                  "damagePercentage": 0.333,
+                  "elementType": "Water",
+                  "elementDurability": 25,
+                  "enBreak": 1,
+                  "strikeType": "Blunt"
+                },
+                "hitPattern": {
+                  "onHitEffectName": "default",
+                  "hitImpulseType": "LV1",
+                  "reboundRatio": 0,
+                  "canBeDefenceHalt": false,
+                  "hitHaltTime": 0.0,
+                  "hitHaltTimeScale": 0.05
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Effigy_Water_RainArea_Elite",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "RainArea_AlertTimer"
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "RainArea_AlertEffect"
+        }
+      ],
+      "modifiers": {
+        "RainArea_AlertTimer": {
+          "duration": 1,
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "RainArea_Damage"
+            }
+          ]
+        },
+        "RainArea_AlertEffect": {
+          "duration": 16,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Monster_Effigy_Water_RainAreaAlert"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Water_RainAreaAlert_AS"
+            }
+          ]
+        },
+        "RainArea_Damage": {
+          "duration": 15,
           "thinkInterval": 0.5,
           "onAdded": [
             {
@@ -2589,6 +2808,13 @@
               "summonTag": 20011901,
               "value": 1,
               "logic": "Lesser"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
             }
           ]
         },
@@ -2609,7 +2835,113 @@
               },
               "randomAngleHor": 15
             }
-          }
+          },
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        // Elite
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42004618,
+          "born": {
+            "$type": "ConfigBornByAttachPoint",
+            "attachPointName": "SummonOozeAttachPoint1_Elite",
+            "direction": {
+              "$type": "ConfigDirectionByAttachPoint",
+              "attachPointName": "SummonOozeAttachPoint1_Elite",
+              "attachPointTargetType": "Self",
+              "angleOffset": {
+                "x": 0.0,
+                "y": 0.0, //角度偏移
+                "z": 0.0
+              },
+              "randomAngleHor": 15
+            }
+          },
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42004619,
+          "born": {
+            "$type": "ConfigBornByAttachPoint",
+            "attachPointName": "SummonOozeAttachPoint2_Elite",
+            "direction": {
+              "$type": "ConfigDirectionByAttachPoint",
+              "attachPointName": "SummonOozeAttachPoint2_Elite",
+              "attachPointTargetType": "Self",
+              "angleOffset": {
+                "x": 0.0,
+                "y": 0.0, //角度偏移
+                "z": 0.0
+              },
+              "randomAngleHor": 15
+            }
+          },
+          "predicates": [
+            {
+              "$type": "BySummonTagValue",
+              "summonTag": 20012101,
+              "value": 1,
+              "logic": "Lesser"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "TriggerBullet",
+          "bulletID": 42004620,
+          "born": {
+            "$type": "ConfigBornByAttachPoint",
+            "attachPointName": "SummonOozeAttachPoint3_Elite",
+            "direction": {
+              "$type": "ConfigDirectionByAttachPoint",
+              "attachPointName": "SummonOozeAttachPoint3_Elite",
+              "attachPointTargetType": "Self",
+              "angleOffset": {
+                "x": 0.0,
+                "y": 0.0, //角度偏移
+                "z": 0.0
+              },
+              "randomAngleHor": 15
+            }
+          },
+          "predicates": [
+            {
+              "$type": "BySummonTagValue",
+              "summonTag": 20012201,
+              "value": 3,
+              "logic": "Lesser"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
         },
         {
           "$type": "FireEffect",
@@ -3320,6 +3652,448 @@
             {
               "$type": "TriggerAbility",
               "abilityName": "Monster_Effigy_Water_SummonOoze_TypeSplitBig3",
+              "target": "Owner"
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  // 3.2 ForEffigyChallenge
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Water_SummonOoze_TypeAttack_Elite",
+      "onAbilityStart": [
+        {
+          "$type": "Summon",
+          "monsterID": 20012001,
+          "target": "Self",
+          "born": {
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_SUMMONOOZEPOS_TYPEATTACK_ELITE_",
+            "direction": {
+              "$type": "ConfigDirectionByLookAtEntity",
+              "angleOffset": {
+                "x": 0.0,
+                "y": 0.0, //角度偏移
+                "z": 0.0
+              }
+            }
+          },
+          "summonTag": 20012001,
+          "aliveByOwner": true,
+          "hasDrop": false,
+          "hasExp": false,
+          "sightGroupWithOwner": true,
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Effigy_Water_TriggerSummonOoze_TypeAttack_Elite",
+      "onAdded": [
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_SummonOozeLoop",
+          "scale": 2.0
+        },
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_SummonOozeLoopTrail",
+          "scale": 2.0
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "Predicated",
+          "target": "Target",
+          "targetPredicates": [
+            {
+              "$type": "ByEntityTypes",
+              "entityTypes": ["Level"]
+            }
+          ],
+          "successActions": [
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "Enemy",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 4.0,
+                  "born": {
+                    "$type": "ConfigBornByCollisionPoint"
+                  }
+                },
+                "attackInfo": {
+                  "canBeModifiedBy": "OriginOwner",
+                  "attackProperty": {
+                    "damagePercentage": 0.5,
+                    "strikeType": "Blunt",
+                    "elementType": "Water",
+                    "elementDurability": 25,
+                    "enBreak": 100.0
+                  },
+                  "hitPattern": {
+                    "hitImpulseType": "LV3",
+                    "reboundRatio": 0,
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.05,
+                    "muteHitText": false
+                  }
+                }
+              }
+            },
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Water_SummonOozeAS",
+              "scale": 2.0,
+              "born": {
+                "$type": "ConfigBornByCollisionPoint",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByWorld",
+                  "eularAngles": {
+                    "x": 0.1,
+                    "y": 0.1,
+                    "z": 0.1
+                  }
+                },
+                "onGround": true
+              }
+            },
+            {
+              "$type": "SetGlobalPos",
+              "target": "Owner",
+              "key": "_SUMMONOOZEPOS_TYPEATTACK_ELITE_",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "onGround": true
+              },
+              "setTarget": true
+            },
+            {
+              "$type": "TriggerAbility",
+              "abilityName": "Monster_Effigy_Water_SummonOoze_TypeAttack_Elite",
+              "target": "Owner"
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Water_SummonOoze_TypeHeal_Elite",
+      "onAbilityStart": [
+        {
+          "$type": "Summon",
+          "monsterID": 20012101,
+          "target": "Self",
+          "born": {
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_SUMMONOOZEPOS_TYPEHEAL_ELITE_",
+            "direction": {
+              "$type": "ConfigDirectionByLookAtEntity",
+              "angleOffset": {
+                "x": 0.0,
+                "y": 0.0, //角度偏移
+                "z": 0.0
+              }
+            }
+          },
+          "summonTag": 20012101,
+          "aliveByOwner": true,
+          "hasDrop": false,
+          "hasExp": false,
+          "sightGroupWithOwner": true,
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Effigy_Water_TriggerSummonOoze_TypeHeal_Elite",
+      "onAdded": [
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_SummonOozeLoop",
+          "scale": 2.0
+        },
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_SummonOozeLoopTrail",
+          "scale": 2.0
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "Predicated",
+          "target": "Target",
+          "targetPredicates": [
+            {
+              "$type": "ByEntityTypes",
+              "entityTypes": ["Level"]
+            }
+          ],
+          "successActions": [
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "Enemy",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 4.0,
+                  "born": {
+                    "$type": "ConfigBornByCollisionPoint"
+                  }
+                },
+                "attackInfo": {
+                  "canBeModifiedBy": "OriginOwner",
+                  "attackProperty": {
+                    "damagePercentage": 0.5,
+                    "strikeType": "Blunt",
+                    "elementType": "Water",
+                    "elementDurability": 25,
+                    "enBreak": 100.0
+                  },
+                  "hitPattern": {
+                    "hitImpulseType": "LV3",
+                    "reboundRatio": 0,
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.05,
+                    "muteHitText": false
+                  }
+                }
+              }
+            },
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Water_SummonOozeAS",
+              "born": {
+                "$type": "ConfigBornByCollisionPoint",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByWorld",
+                  "eularAngles": {
+                    "x": 0.1,
+                    "y": 0.1,
+                    "z": 0.1
+                  }
+                },
+                "onGround": true
+              },
+              "scale": 2.0
+            },
+            {
+              "$type": "SetGlobalPos",
+              "target": "Owner",
+              "key": "_SUMMONOOZEPOS_TYPEHEAL_ELITE_",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "onGround": true
+              },
+              "setTarget": true
+            },
+            {
+              "$type": "TriggerAbility",
+              "abilityName": "Monster_Effigy_Water_SummonOoze_TypeHeal_Elite",
+              "target": "Owner"
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Water_SummonOoze_TypeDamage_Elite",
+      "onAbilityStart": [
+        {
+          "$type": "Summon",
+          "monsterID": 20012201,
+          "target": "Self",
+          "born": {
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_SUMMONOOZEPOS_TYPEDAMAGE_ELITE_",
+            "direction": {
+              "$type": "ConfigDirectionByLookAtEntity",
+              "angleOffset": {
+                "x": 0.0,
+                "y": 0.0, //角度偏移
+                "z": 0.0
+              }
+            }
+          },
+          "summonTag": 20012201,
+          "aliveByOwner": true,
+          "hasDrop": false,
+          "hasExp": false,
+          "sightGroupWithOwner": true,
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Effigy_Water_TriggerSummonOoze_TypeDamage_Elite",
+      "onAdded": [
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_SummonOozeLoop",
+          "scale": 2.0
+        },
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_SummonOozeLoopTrail",
+          "scale": 2.0
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "Predicated",
+          "target": "Target",
+          "targetPredicates": [
+            {
+              "$type": "ByEntityTypes",
+              "entityTypes": ["Level"]
+            }
+          ],
+          "successActions": [
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "Enemy",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 4.0,
+                  "born": {
+                    "$type": "ConfigBornByCollisionPoint"
+                  }
+                },
+                "attackInfo": {
+                  "canBeModifiedBy": "OriginOwner",
+                  "attackProperty": {
+                    "damagePercentage": 0.5,
+                    "strikeType": "Blunt",
+                    "elementType": "Water",
+                    "elementDurability": 25,
+                    "enBreak": 100.0
+                  },
+                  "hitPattern": {
+                    "hitImpulseType": "LV3",
+                    "reboundRatio": 0,
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.05,
+                    "muteHitText": false
+                  }
+                }
+              }
+            },
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Water_SummonOozeAS",
+              "born": {
+                "$type": "ConfigBornByCollisionPoint",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "ConfigDirectionByWorld",
+                  "eularAngles": {
+                    "x": 0.1,
+                    "y": 0.1,
+                    "z": 0.1
+                  }
+                },
+                "onGround": true
+              },
+              "scale": 2.0
+            },
+            {
+              "$type": "SetGlobalPos",
+              "target": "Owner",
+              "key": "_SUMMONOOZEPOS_TYPEDAMAGE_ELITE_",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "onGround": true
+              },
+              "setTarget": true
+            },
+            {
+              "$type": "TriggerAbility",
+              "abilityName": "Monster_Effigy_Water_SummonOoze_TypeDamage_Elite",
               "target": "Owner"
             },
             {
@@ -4806,6 +5580,134 @@
         {
           "$type": "ApplyModifier",
           "modifierName": "Effigy_Water_SurgeStrikeDamage4"
+        },
+        // Left
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Water_SurgeStrikeDamage2_Left",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Water_SurgeStrikeDamage3_Left",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Water_SurgeStrikeDamage4_Left",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_SurgeStrikeAS",
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "direction": {
+              "$type": "ConfigDirectionByDefault",
+              "angleOffset": {
+                "x": 0.0,
+                "y": -45.0,
+                "z": 0.0
+              }
+            }
+          },
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        },
+        // Right
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Water_SurgeStrikeDamage2_Right",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Water_SurgeStrikeDamage3_Right",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Water_SurgeStrikeDamage4_Right",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_SurgeStrikeAS",
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "direction": {
+              "$type": "ConfigDirectionByDefault",
+              "angleOffset": {
+                "x": 0.0,
+                "y": 45.0,
+                "z": 0.0
+              }
+            }
+          },
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
         }
       ],
       "modifiers": {
@@ -4912,6 +5814,266 @@
                       "x": 0.0, // + means up, - means down
                       "y": 0.0, // + means left, - means right
                       "z": 20.0 // + means forward, - means backward
+                    }
+                  }
+                },
+                "attackInfo": {
+                  "attenuationTag": "Monster_Effigy_Water_SurgeStrike",
+                  "attenuationGroup": "Monster_Effigy_Water_SurgeStrike",
+                  "attackProperty": {
+                    "damagePercentage": 0.666,
+                    "elementType": "Water",
+                    "elementDurability": 50,
+                    "enBreak": 100,
+                    "strikeType": "Blunt"
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV5",
+                    "reboundRatio": 0,
+                    "canBeDefenceHalt": false,
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.05
+                  }
+                }
+              }
+            }
+          ]
+        },
+        // Left
+        "Effigy_Water_SurgeStrikeDamage2_Left": {
+          "duration": 0.3,
+          "onRemoved": [
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "Enemy",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 5,
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": -7.0, // + means up, - means down
+                      "y": 0.0, // + means left, - means right
+                      "z": 7.0 // + means forward, - means backward
+                    }
+                  }
+                },
+                "attackInfo": {
+                  "attenuationTag": "Monster_Effigy_Water_SurgeStrike",
+                  "attenuationGroup": "Monster_Effigy_Water_SurgeStrike",
+                  "attackProperty": {
+                    "damagePercentage": 0.666,
+                    "elementType": "Water",
+                    "elementDurability": 50,
+                    "enBreak": 100,
+                    "strikeType": "Blunt"
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV5",
+                    "reboundRatio": 0,
+                    "canBeDefenceHalt": false,
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.05
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Effigy_Water_SurgeStrikeDamage3_Left": {
+          "duration": 0.6,
+          "onRemoved": [
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "Enemy",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 5,
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": -10.6, // + means up, - means down
+                      "y": 0.0, // + means left, - means right
+                      "z": 10.6 // + means forward, - means backward
+                    }
+                  }
+                },
+                "attackInfo": {
+                  "attenuationTag": "Monster_Effigy_Water_SurgeStrike",
+                  "attenuationGroup": "Monster_Effigy_Water_SurgeStrike",
+                  "attackProperty": {
+                    "damagePercentage": 0.666,
+                    "elementType": "Water",
+                    "elementDurability": 50,
+                    "enBreak": 100,
+                    "strikeType": "Blunt"
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV5",
+                    "reboundRatio": 0,
+                    "canBeDefenceHalt": false,
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.05
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Effigy_Water_SurgeStrikeDamage4_Left": {
+          "duration": 0.9,
+          "onRemoved": [
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "Enemy",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 5,
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": -14.0, // + means up, - means down
+                      "y": 0.0, // + means left, - means right
+                      "z": 14.0 // + means forward, - means backward
+                    }
+                  }
+                },
+                "attackInfo": {
+                  "attenuationTag": "Monster_Effigy_Water_SurgeStrike",
+                  "attenuationGroup": "Monster_Effigy_Water_SurgeStrike",
+                  "attackProperty": {
+                    "damagePercentage": 0.666,
+                    "elementType": "Water",
+                    "elementDurability": 50,
+                    "enBreak": 100,
+                    "strikeType": "Blunt"
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV5",
+                    "reboundRatio": 0,
+                    "canBeDefenceHalt": false,
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.05
+                  }
+                }
+              }
+            }
+          ]
+        },
+        // Right
+        "Effigy_Water_SurgeStrikeDamage2_Right": {
+          "duration": 0.3,
+          "onRemoved": [
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "Enemy",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 5,
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 7.0, // + means up, - means down
+                      "y": 0.0, // + means left, - means right
+                      "z": 7.0 // + means forward, - means backward
+                    }
+                  }
+                },
+                "attackInfo": {
+                  "attenuationTag": "Monster_Effigy_Water_SurgeStrike",
+                  "attenuationGroup": "Monster_Effigy_Water_SurgeStrike",
+                  "attackProperty": {
+                    "damagePercentage": 0.666,
+                    "elementType": "Water",
+                    "elementDurability": 50,
+                    "enBreak": 100,
+                    "strikeType": "Blunt"
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV5",
+                    "reboundRatio": 0,
+                    "canBeDefenceHalt": false,
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.05
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Effigy_Water_SurgeStrikeDamage3_Right": {
+          "duration": 0.6,
+          "onRemoved": [
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "Enemy",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 5,
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 10.6, // + means up, - means down
+                      "y": 0.0, // + means left, - means right
+                      "z": 10.6 // + means forward, - means backward
+                    }
+                  }
+                },
+                "attackInfo": {
+                  "attenuationTag": "Monster_Effigy_Water_SurgeStrike",
+                  "attenuationGroup": "Monster_Effigy_Water_SurgeStrike",
+                  "attackProperty": {
+                    "damagePercentage": 0.666,
+                    "elementType": "Water",
+                    "elementDurability": 50,
+                    "enBreak": 100,
+                    "strikeType": "Blunt"
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV5",
+                    "reboundRatio": 0,
+                    "canBeDefenceHalt": false,
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.05
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Effigy_Water_SurgeStrikeDamage4_Right": {
+          "duration": 0.9,
+          "onRemoved": [
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "Enemy",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 5,
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 14.0, // + means up, - means down
+                      "y": 0.0, // + means left, - means right
+                      "z": 14.0 // + means forward, - means backward
                     }
                   }
                 },
@@ -5415,7 +6577,29 @@
       "onAdded": [
         {
           "$type": "ApplyModifier",
-          "modifierName": "Effigy_Ooze_TypeSplitBig_State"
+          "modifierName": "Effigy_Ooze_TypeSplitBig_State",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "OriginOwner"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Ooze_TypeSplitBig_State_Elite_Difficulty",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "OriginOwner"
+            }
+          ]
         },
         {
           "$type": "SetGlobalValue",
@@ -5447,6 +6631,69 @@
                 {
                   "$type": "RemoveModifier",
                   "modifierName": "Effigy_Ooze_TypeSplitBig_State"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "AddGlobalValue",
+              "key": "_MONSTER_EFFIGY_OOZE_TYPESPLITBIG_KILLED_",
+              "target": "Owner",
+              "value": 1,
+              "useLimitRange": true,
+              "minValue": 0,
+              "maxValue": 3
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "_WATCHER_82116_Slime_Killed",
+              "target": "OriginOwner",
+              "value": 1
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByHasAbilityState",
+                  "abilityState": "ElementFreeze"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Slime_Water_Pressed",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint",
+                    "direction": {
+                      "$type": "ConfigDirectionByBackToHitBoxCenter"
+                    },
+                    "alongGround": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Ooze_TypeSplitBig_State_Elite_Difficulty": {
+          "state": "LockHP",
+          "elementType": "Water",
+          "elementDurability": 75,
+          "modifierMixins": [
+            {
+              "$type": "ElementShieldMixin",
+              "elementType": "Water",
+              "shieldHPRatio": 1.0,
+              "damageRatio": 0,
+              "onShieldBroken": [
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Effigy_Ooze_TypeSplitBig_State_Elite_Difficulty"
                 }
               ]
             }
@@ -5742,6 +6989,356 @@
       }
     }
   },
+  // Elite
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Ooze_TypeHeal_State_Elite",
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToGlobalValueMixin",
+          "globalValueTarget": "Owner",
+          "globalValueKey": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "removeAppliedModifier": true,
+          "modifierNameSteps": [
+            "Effigy_Ooze_TypeHeal_State_Level1",
+            "Effigy_Ooze_TypeHeal_State_Level2"
+          ]
+        },
+        {
+          "$type": "AttachModifierToGlobalValueMixin",
+          "globalValueKey": "_EFFIGY_WATER_ELITE_OOZEKILLTAG_",
+          "globalValueTarget": "Owner",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "modifierNameSteps": ["Blank", "Effigy_Ooze_KillSelf"]
+        }
+      ],
+      "onAdded": [
+        {
+          "$type": "AttachAbilityStateResistance",
+          "resistanceBuffDebuffs": ["ElementWet"]
+        },
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_OozeHead02_Elite"
+        },
+        {
+          "$type": "AddGlobalValue",
+          "value": 1,
+          "key": "_EFFIGY_ELITE_OOZE_COUNT_",
+          "useLimitRange": true,
+          "maxValue": 99,
+          "minValue": 0,
+          "target": "Owner"
+        }
+      ],
+      "onKill": [
+        {
+          "$type": "AddGlobalValue",
+          "value": -1,
+          "key": "_EFFIGY_ELITE_OOZE_COUNT_",
+          "useLimitRange": true,
+          "maxValue": 99,
+          "minValue": 0,
+          "target": "Owner"
+        }
+      ],
+      "modifiers": {
+        "Effigy_Ooze_TypeHeal_State_Level1": {
+          "state": "LockHP",
+          "elementType": "Water",
+          "elementDurability": 50,
+          "modifierMixins": [
+            {
+              "$type": "ElementShieldMixin",
+              "elementType": "Water",
+              "shieldHPRatio": 1.0,
+              "damageRatio": 0,
+              "onShieldBroken": [
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Effigy_Ooze_TypeHeal_State_Level1"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "target": "Owner",
+              "key": "_WATCHER_82110_",
+              "value": 1
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByHasAbilityState",
+                  "abilityState": "ElementFreeze"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Slime_Water_Pressed",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint",
+                    "direction": {
+                      "$type": "ConfigDirectionByBackToHitBoxCenter"
+                    },
+                    "alongGround": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Ooze_TypeHeal_State_Level2": {
+          "state": "LockHP",
+          "elementType": "Water",
+          "elementDurability": 100,
+          "modifierMixins": [
+            {
+              "$type": "ElementShieldMixin",
+              "elementType": "Water",
+              "shieldHPRatio": 1.0,
+              "damageRatio": 0,
+              "onShieldBroken": [
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Effigy_Ooze_TypeHeal_State_Level2"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "target": "Owner",
+              "key": "_WATCHER_82110_",
+              "value": 1
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByHasAbilityState",
+                  "abilityState": "ElementFreeze"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Slime_Water_Pressed",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint",
+                    "direction": {
+                      "$type": "ConfigDirectionByBackToHitBoxCenter"
+                    },
+                    "alongGround": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Ooze_KillSelf": {
+          "onAdded": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "Blank": {}
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Ooze_TypeHeal_TriggerHealBall_Elite",
+      "onAbilityStart": [
+        {
+          "$type": "TriggerBullet",
+          "target": "Self",
+          "trackTarget": "Owner",
+          "bulletID": 42004621,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 0.5,
+              "z": 0.5
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Ooze_TypeHeal_Die_Elite",
+      "onAbilityStart": [
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_OozeDie",
+          "scale": 1.4
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Effigy_Ooze_TypeHeal_HealBallExplode_Elite",
+      "onAdded": [
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_OozeHealBallLoop",
+          "scale": 2.0
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "HealBall_HealHp_Avatar",
+          "target": "Target",
+          "predicates": [
+            {
+              "$type": "ByEntityTypes",
+              "entityTypes": ["Avatar"]
+            }
+          ]
+        },
+        // 让无相水计数+1
+        {
+          "$type": "Predicated",
+          "target": "Target",
+          "targetPredicates": [
+            {
+              "$type": "ByEntityTypes",
+              "entityTypes": ["Avatar"]
+            }
+          ],
+          "successActions": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "HealBall_Picked_Count",
+              "target": "OriginOwner"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "HealBall_HealHp",
+          "target": "Target",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Target",
+              "key": "_EFFIGY_WATER_",
+              "value": 1,
+              "compareType": "Equal"
+            },
+            {
+              "$type": "ByEntityTypes",
+              "entityTypes": ["Monster"]
+            }
+          ]
+        },
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_OozeHealBallAS",
+          "scale": 2.0
+        }
+      ],
+      "modifiers": {
+        "HealBall_HealHp_Avatar": {
+          "duration": 1,
+          "onAdded": [
+            {
+              "$type": "HealHP",
+              "amountByTargetMaxHPRatio": 0.6,
+              "target": "Self"
+            }
+          ]
+        },
+        "HealBall_HealHp": {
+          "duration": 1,
+          "onAdded": [
+            {
+              "$type": "HealHP",
+              "amountByTargetMaxHPRatio": 0.3,
+              "target": "Self"
+            },
+            {
+              "$type": "ServerMonsterLog",
+              "target": "Self",
+              "paramList": [0, 1, 0]
+            }
+          ]
+        },
+        "HealBall_Picked_Count": {
+          "duration": 0.5,
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "key": "_WATCHER_82115_HealBall_Picked_",
+              "value": 1,
+              "useLimitRange": true,
+              "maxValue": 3,
+              "minValue": 0
+            },
+            {
+              "$type": "Predicated",
+              "target": "Self",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_WATCHER_82115_HealBall_Picked_",
+                  "value": 3,
+                  "compareType": "MoreThanAndEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "DoWatcherSystemAction",
+                  "watcherId": 82115,
+                  "target": "CurTeamAvatars"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Effigy_Ooze_TypeHeal_HealBallDie_Elite",
+      "onAbilityStart": [
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_OozeHealBallAS",
+          "scale": 2.0
+        }
+      ]
+    }
+  },
   ////////////////////////////////////////////////////////////////
   //
   //  Ooze Attack
@@ -5984,6 +7581,718 @@
             }
           ]
         }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Ooze Attack Elite
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Ooze_TypeAttack_State_Elite",
+      "onAdded": [
+        {
+          "$type": "AttachAbilityStateResistance",
+          "resistanceBuffDebuffs": ["ElementWet"]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Effigy_Ooze_LifeTimer"
+        },
+        {
+          "$type": "AttachEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_OozeHead01"
+        },
+        {
+          "$type": "AddGlobalValue",
+          "value": 1,
+          "key": "_EFFIGY_ELITE_OOZE_COUNT_",
+          "useLimitRange": true,
+          "maxValue": 99,
+          "minValue": 0,
+          "target": "Owner"
+        }
+      ],
+      "onKill": [
+        {
+          "$type": "AddGlobalValue",
+          "value": -1,
+          "key": "_EFFIGY_ELITE_OOZE_COUNT_",
+          "useLimitRange": true,
+          "maxValue": 99,
+          "minValue": 0,
+          "target": "Owner"
+        }
+      ],
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToGlobalValueMixin",
+          "globalValueTarget": "Owner",
+          "globalValueKey": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "removeAppliedModifier": true,
+          "modifierNameSteps": [
+            "Effigy_Ooze_TypeAttack_State_Level1",
+            "Effigy_Ooze_TypeAttack_State_Level2"
+          ]
+        },
+        {
+          "$type": "AttachModifierToGlobalValueMixin",
+          "globalValueKey": "_EFFIGY_WATER_ELITE_OOZEKILLTAG_",
+          "globalValueTarget": "Owner",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "modifierNameSteps": ["Blank", "Effigy_Ooze_KillSelf"]
+        },
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["NormalAttack"],
+          "modifierName": "Effigy_Ooze_TypeAttack_NormalAttack"
+        },
+        {
+          "$type": "ServerCreateGadgetOnKillMixin",
+          "gadgetIDList": [42004622],
+          "campID": 4001,
+          "campTargetType": "Enemy",
+          "randomCreate": false
+        }
+      ],
+      "modifiers": {
+        "Effigy_Ooze_TypeAttack_State_Level1": {
+          "state": "LockHP",
+          "elementType": "Water",
+          "elementDurability": 50,
+          "modifierMixins": [
+            {
+              "$type": "ElementShieldMixin",
+              "elementType": "Water",
+              "shieldHPRatio": 1.0,
+              "damageRatio": 0,
+              "onShieldBroken": [
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Effigy_Ooze_TypeAttack_State_Level1"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "target": "Owner",
+              "key": "_WATCHER_82110_",
+              "value": 1
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByHasAbilityState",
+                  "abilityState": "ElementFreeze"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Slime_Water_Pressed",
+                  "scale": 2.0,
+                  "born": {
+                    "$type": "ConfigBornByHitPoint",
+                    "direction": {
+                      "$type": "ConfigDirectionByBackToHitBoxCenter"
+                    },
+                    "alongGround": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Ooze_TypeAttack_State_Level2": {
+          "state": "LockHP",
+          "elementType": "Water",
+          "elementDurability": 75,
+          "modifierMixins": [
+            {
+              "$type": "ElementShieldMixin",
+              "elementType": "Water",
+              "shieldHPRatio": 1.0,
+              "damageRatio": 0,
+              "onShieldBroken": [
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Effigy_Ooze_TypeAttack_State_Level2"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "target": "Owner",
+              "key": "_WATCHER_82110_",
+              "value": 1
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByHasAbilityState",
+                  "abilityState": "ElementFreeze"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Slime_Water_Pressed",
+                  "scale": 2.0,
+                  "born": {
+                    "$type": "ConfigBornByHitPoint",
+                    "direction": {
+                      "$type": "ConfigDirectionByBackToHitBoxCenter"
+                    },
+                    "alongGround": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Ooze_LifeTimer": {
+          "duration": 20,
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "Effigy_Ooze_TypeAttack_NormalAttack": {
+          "onAdded": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "Effigy_Ooze_KillSelf": {
+          "onAdded": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "Blank": {}
+      }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Effigy_Ooze_TypeAttack_Explode_Elite",
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "SelfExplosion",
+          "target": "Self"
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "SelfExplosion_Detect",
+          "target": "Self"
+        }
+      ],
+      "modifiers": {
+        "SelfExplosion": {
+          "duration": 1.5,
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Effigy_Water_OozeExplode",
+              "scale": 1.5,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.5,
+                  "z": 0.0
+                }
+              }
+            },
+            {
+              "$type": "TriggerAttackEvent",
+              "targetType": "AllExceptSelf",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "radius": 9,
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": 0.8,
+                      "z": 0.0
+                    }
+                  }
+                },
+                "attackInfo": {
+                  "canBeModifiedBy": "OriginOwner",
+                  "attackTag": "Effigy_Ooze_TypeAttack_Explode",
+                  "attackProperty": {
+                    "damagePercentage": 1.0,
+                    "elementType": "Water",
+                    "elementDurability": 50,
+                    "strikeType": "Blunt",
+                    "enBreak": 200.0
+                  },
+                  "hitPattern": {
+                    "hitImpulseType": "LV5",
+                    "reboundRatio": 0,
+                    "hitHaltTime": 0.0,
+                    "hitHaltTimeScale": 0.05,
+                    "muteHitText": false
+                  },
+                  "forceCameraShake": true,
+                  "cameraShake": {
+                    "shakeType": "Center",
+                    "shakeRange": 0.06,
+                    "shakeTime": 0.3,
+                    "shakeDistance": 20.0,
+                    "extension": {
+                      "basecycle": 0.08,
+                      "cycledamping": 0.04,
+                      "rangeAttenuation": 0.9
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "SelfExplosion_Detect": {
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Target",
+                  "key": "_EFFIGY_WATER_",
+                  "value": 1,
+                  "compareType": "Equal"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Target",
+                  "key": "_MONSTER_EFFIGY_REBORNSTART_",
+                  "value": 0,
+                  "compareType": "NoneOrEqual"
+                },
+                {
+                  "$type": "ByAttackTags",
+                  "attackTags": ["Effigy_Ooze_TypeAttack_Explode"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "AttachModifier",
+                  "modifierName": "Effigy_Water_WeakStart",
+                  "target": "Target"
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Water_WeakStart": {
+          "duration": 1,
+          "onAdded": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "WeakStart",
+              "MPTriggerOnRemote": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Ooze Damage
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Ooze_TypeDamage_State",
+      "onAdded": [
+        {
+          "$type": "AttachAbilityStateResistance",
+          "resistanceBuffDebuffs": ["ElementWet"]
+        },
+        {
+          "$type": "AddGlobalValue",
+          "value": 1,
+          "key": "_EFFIGY_ELITE_OOZE_COUNT_",
+          "useLimitRange": true,
+          "maxValue": 99,
+          "minValue": 0,
+          "target": "Owner"
+        }
+      ],
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToGlobalValueMixin",
+          "globalValueTarget": "Owner",
+          "globalValueKey": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "removeAppliedModifier": true,
+          "modifierNameSteps": [
+            "Effigy_Ooze_TypeDamage_State_Level1",
+            "Effigy_Ooze_TypeDamage_State_Level2"
+          ]
+        },
+        {
+          "$type": "AttachModifierToGlobalValueMixin",
+          "globalValueKey": "_EFFIGY_WATER_ELITE_OOZEKILLTAG_",
+          "globalValueTarget": "Owner",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "modifierNameSteps": ["Blank", "Effigy_Ooze_KillSelf"]
+        },
+        {
+          "$type": "SteerAttackMixin",
+          "steerStateIDs": ["NormalIdle"],
+          "startNormalizedTime": 0,
+          "endNormalizedTime": 9999,
+          "angularSpeed": 180
+        },
+        {
+          "$type": "SteerAttackMixin",
+          "steerStateIDs": ["NormalMove"],
+          "startNormalizedTime": 0,
+          "endNormalizedTime": 9999,
+          "angularSpeed": 180
+        }
+      ],
+      "onKill": [
+        {
+          "$type": "AddGlobalValue",
+          "value": -1,
+          "key": "_EFFIGY_ELITE_OOZE_COUNT_",
+          "useLimitRange": true,
+          "maxValue": 99,
+          "minValue": 0,
+          "target": "Owner"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "FireEffect",
+          "effectPattern": "Eff_Monster_Effigy_Water_OozeDamage",
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "onGround": true
+          }
+        },
+        {
+          "$type": "TriggerAttackEvent",
+          "targetType": "Enemy",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackCircle",
+              "triggerType": "TriggerNoRepeat",
+              "radius": 5,
+              "height": 1.0,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "onGround": true
+              }
+            },
+            "attackInfo": {
+              "canBeModifiedBy": "OriginOwner",
+              "attackProperty": {
+                "damagePercentage": 1.0,
+                "elementType": "Water",
+                "elementDurability": 50,
+                "strikeType": "Default",
+                "enBreak": 1.0
+              },
+              "hitPattern": {
+                "hitImpulseType": "LV3",
+                "hitHaltTime": 0.0,
+                "hitHaltTimeScale": 0.05,
+                "muteHitText": false
+              },
+              "forceCameraShake": false
+            }
+          }
+        }
+      ],
+      "modifiers": {
+        "Effigy_Ooze_TypeDamage_State_Level1": {
+          "state": "LockHP",
+          "elementType": "Water",
+          "elementDurability": 50,
+          "modifierMixins": [
+            {
+              "$type": "ElementShieldMixin",
+              "elementType": "Water",
+              "shieldHPRatio": 1.0,
+              "damageRatio": 0,
+              "onShieldBroken": [
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Effigy_Ooze_TypeDamage_State_Level1"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByHasAbilityState",
+                  "abilityState": "ElementFreeze"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Slime_Water_Pressed",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint",
+                    "direction": {
+                      "$type": "ConfigDirectionByBackToHitBoxCenter"
+                    },
+                    "alongGround": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Ooze_TypeDamage_State_Level2": {
+          "state": "LockHP",
+          "elementType": "Water",
+          "elementDurability": 100,
+          "modifierMixins": [
+            {
+              "$type": "ElementShieldMixin",
+              "elementType": "Water",
+              "shieldHPRatio": 1.0,
+              "damageRatio": 0,
+              "onShieldBroken": [
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "Effigy_Ooze_TypeDamage_State_Level2"
+                }
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "Predicated",
+              "targetPredicates": [
+                {
+                  "$type": "ByHasAbilityState",
+                  "abilityState": "ElementFreeze"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "FireEffect",
+                  "effectPattern": "Eff_Monster_Slime_Water_Pressed",
+                  "born": {
+                    "$type": "ConfigBornByHitPoint",
+                    "direction": {
+                      "$type": "ConfigDirectionByBackToHitBoxCenter"
+                    },
+                    "alongGround": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "Effigy_Ooze_KillSelf": {
+          "onAdded": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "Blank": {}
+      }
+    }
+  },
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Elite Set
+  //
+  ////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Effigy_Water_EliteSet",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_Monster_Effigy_Water_DefaultState",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 0,
+              "compareType": "NoneOrEqual",
+              "target": "Self"
+            }
+          ]
+        },
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_Monster_Effigy_Water_EliteState",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_EFFIGY_ELITE_TAG",
+              "value": 1,
+              "compareType": "Equal",
+              "target": "Self"
+            }
+          ]
+        }
+      ],
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_EFFIGY_ELITE_TAG_DIFFICULTY",
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "removeAppliedModifier": true,
+          "defaultGlobalValueOnCreate": 0,
+          "modifierNameSteps": ["Empty", "Effigy_Water_Elite_SubHurt"]
+        }
+      ],
+      "modifiers": {
+        "UNIQUE_Monster_Effigy_Water_DefaultState": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "UseSkillEliteSet",
+              "skillEliteSetID": 1
+            }
+          ]
+        },
+        "UNIQUE_Monster_Effigy_Water_EliteState": {
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "UseSkillEliteSet",
+              "skillEliteSetID": 2
+            },
+            {
+              "$type": "SetAnimatorBool",
+              "boolID": "EliteTag",
+              "value": true,
+              "canBeHandledOnRecover": true
+            }
+          ]
+        },
+        "Effigy_Water_Elite_SubHurt": {
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin",
+              "globalValueKey": "_EFFIGY_ELITE_OOZE_COUNT_",
+              "valueSteps": [-0.5, 0.5, 1.5, 2.5, 99.5],
+              "removeAppliedModifier": true,
+              "defaultGlobalValueOnCreate": 0,
+              "modifierNameSteps": [
+                "Effigy_Water_Elite_SubHurt_Blank",
+                "Effigy_Water_Elite_SubHurt_Level1",
+                "Effigy_Water_Elite_SubHurt_Level2",
+                "Effigy_Water_Elite_SubHurt_Level3"
+              ]
+            }
+          ]
+        },
+        "Effigy_Water_Elite_SubHurt_Level1": {
+          "state": "DefenseUp",
+          "properties": {
+            "Actor_PhysicalSubHurtDelta": "%Elite_SubHurt_Level1",
+            "Actor_FireSubHurtDelta": "%Elite_SubHurt_Level1",
+            "Actor_ElecSubHurtDelta": "%Elite_SubHurt_Level1",
+            "Actor_IceSubHurtDelta": "%Elite_SubHurt_Level1",
+            "Actor_WaterSubHurtDelta": "%Elite_SubHurt_Level1",
+            "Actor_GrassSubHurtDelta": "%Elite_SubHurt_Level1",
+            "Actor_WindSubHurtDelta": "%Elite_SubHurt_Level1",
+            "Actor_RockSubHurtDelta": "%Elite_SubHurt_Level1"
+          }
+        },
+        "Effigy_Water_Elite_SubHurt_Level2": {
+          "state": "DefenseUp",
+          "properties": {
+            "Actor_PhysicalSubHurtDelta": "%Elite_SubHurt_Level2",
+            "Actor_FireSubHurtDelta": "%Elite_SubHurt_Level2",
+            "Actor_ElecSubHurtDelta": "%Elite_SubHurt_Level2",
+            "Actor_IceSubHurtDelta": "%Elite_SubHurt_Level2",
+            "Actor_WaterSubHurtDelta": "%Elite_SubHurt_Level2",
+            "Actor_GrassSubHurtDelta": "%Elite_SubHurt_Level2",
+            "Actor_WindSubHurtDelta": "%Elite_SubHurt_Level2",
+            "Actor_RockSubHurtDelta": "%Elite_SubHurt_Level2"
+          }
+        },
+        "Effigy_Water_Elite_SubHurt_Level3": {
+          "state": "DefenseUp",
+          "properties": {
+            "Actor_PhysicalSubHurtDelta": "%Elite_SubHurt_Level3",
+            "Actor_FireSubHurtDelta": "%Elite_SubHurt_Level3",
+            "Actor_ElecSubHurtDelta": "%Elite_SubHurt_Level3",
+            "Actor_IceSubHurtDelta": "%Elite_SubHurt_Level3",
+            "Actor_WaterSubHurtDelta": "%Elite_SubHurt_Level3",
+            "Actor_GrassSubHurtDelta": "%Elite_SubHurt_Level3",
+            "Actor_WindSubHurtDelta": "%Elite_SubHurt_Level3",
+            "Actor_RockSubHurtDelta": "%Elite_SubHurt_Level3"
+          }
+        },
+        "Empty": {},
+        "Effigy_Water_Elite_SubHurt_Blank": {}
+      },
+      "abilitySpecials": {
+        "Elite_SubHurt_Level1": 0.2,
+        "Elite_SubHurt_Level2": 0.4,
+        "Elite_SubHurt_Level3": 0.6
       }
     }
   }

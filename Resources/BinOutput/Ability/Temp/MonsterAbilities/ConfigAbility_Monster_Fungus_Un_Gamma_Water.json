@@ -1073,48 +1073,60 @@
           "modifierName": "ReturnToBorn_Invincible",
           "normalizeStart": 0.95,
           "normalizeEnd": 1.0
-        },
-        {
-          "$type": "AttachToAnimatorStateIDMixin",
-          "stateIDs": ["ReturnToBorn_AS", "StandbyFree", "Standby"],
-          "modifierName": "ReturnToBorn_End"
         }
+        // {
+        // 	"$type": "AttachToAnimatorStateIDMixin",
+        // 	"stateIDs": ["ReturnToBorn_AS", "StandbyFree", "Standby"],
+        // 	"modifierName": "ReturnToBorn_End",
+        // },
       ],
       "modifiers": {
         "ReturnToBorn_Invincible": {
           "state": "Invincible",
-          "onAdded": [
+          "modifierMixins": [
             {
-              "$type": "HideUIBillBoard",
-              "hide": true
-            },
-            {
-              "$type": "TriggerSetCastShadow",
-              "castShadow": false,
-              "target": "Self"
-            },
-            {
-              "$type": "EnablePushColliderName",
-              "pushColliderNames": ["PushCollider"],
-              "setEnable": false
-            }
-          ]
-        },
-        "ReturnToBorn_End": {
-          "onAdded": [
-            {
-              "$type": "HideUIBillBoard",
-              "hide": false
-            },
-            {
-              "$type": "TriggerSetCastShadow",
-              "castShadow": true,
-              "target": "Self"
-            },
-            {
-              "$type": "EnablePushColliderName",
-              "pushColliderNames": ["PushCollider"],
-              "setEnable": true
+              "$type": "AttachActionToModifierMixin",
+              "onAdded": [
+                {
+                  "$type": "HideUIBillBoard",
+                  "hide": true,
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "Self",
+                      "key": "_FUNGUS_CAPTURE_STATE_",
+                      "compareType": "NoneOrEqual",
+                      "value": 0
+                    }
+                  ]
+                },
+                {
+                  "$type": "TriggerSetCastShadow",
+                  "castShadow": false,
+                  "target": "Self"
+                },
+                {
+                  "$type": "EnablePushColliderName",
+                  "pushColliderNames": ["PushCollider"],
+                  "setEnable": false
+                }
+              ],
+              "onRemoved": [
+                {
+                  "$type": "HideUIBillBoard",
+                  "hide": false
+                },
+                {
+                  "$type": "TriggerSetCastShadow",
+                  "castShadow": true,
+                  "target": "Self"
+                },
+                {
+                  "$type": "EnablePushColliderName",
+                  "pushColliderNames": ["PushCollider"],
+                  "setEnable": true
+                }
+              ]
             }
           ]
         }

@@ -3727,9 +3727,35 @@
           ],
           "successActions": [
             {
-              "$type": "ApplyModifier",
-              "modifierName": "Monster_Drake_Rock_WaterEnhance_TeamSearcher",
-              "target": "SelfAttackTarget"
+              "$type": "Predicated",
+              "target": "SelfAttackTarget",
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "target": "SelfAttackTarget",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "Monster_Drake_Rock_WaterEnhance_TeamSearcher"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_Monster_Drake_Rock_WaterEnhance_Damage_Partner",
+                  "target": "SelfAttackTarget",
+                  "predicates": [
+                    {
+                      "$type": "ByEntityTypes",
+                      "target": "SelfAttackTarget",
+                      "entityTypes": ["Partner"]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "failActions": [
@@ -3748,14 +3774,40 @@
               "predicates": [
                 {
                   "$type": "ByEntityTypes",
-                  "entityTypes": ["Avatar"]
+                  "entityTypes": ["Avatar", "Partner"]
                 }
               ]
             },
             {
-              "$type": "ApplyModifier",
-              "modifierName": "Monster_Drake_Rock_WaterEnhance_TeamSearcher",
-              "target": "SelfAttackTarget"
+              "$type": "Predicated",
+              "target": "SelfAttackTarget",
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "target": "SelfAttackTarget",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "Monster_Drake_Rock_WaterEnhance_TeamSearcher"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_Monster_Drake_Rock_WaterEnhance_Damage_Partner",
+                  "target": "SelfAttackTarget",
+                  "predicates": [
+                    {
+                      "$type": "ByEntityTypes",
+                      "target": "SelfAttackTarget",
+                      "entityTypes": ["Partner"]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -3785,6 +3837,32 @@
             {
               "$type": "FireEffect",
               "effectPattern": "Eff_Monster_Drake_Rock_WaterEnhance_Alert01"
+            }
+          ]
+        },
+        "UNIQUE_Monster_Drake_Rock_WaterEnhance_Damage_Partner": {
+          "duration": 3,
+          "isUnique": true,
+          "stacking": "Unique",
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Monster_Drake_Rock_WaterEnhance_Alert01"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Drake_Rock_WaterEnahcne_CreateDamgeGadget",
+              "target": "Caster",
+              "predicates": [
+                {
+                  "$type": "ByTargetHPRatio",
+                  "target": "Self",
+                  "HPRatio": 0,
+                  "logic": "Greater"
+                }
+              ]
             }
           ]
         },

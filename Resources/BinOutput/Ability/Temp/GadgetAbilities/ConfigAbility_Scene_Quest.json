@@ -3053,6 +3053,423 @@
   },
   //////////////////////////////////////////////////////////////////////////////////////////////////
   //
+  //  3.2虚空探索目标点
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Quest_VoidSearching_Target",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "target": "Self",
+          "modifierName": "tag"
+        }
+      ],
+      "modifiers": {
+        "tag": {
+          "onAdded": [
+            {
+              "$type": "ChangeTag",
+              "isAdd": true,
+              "tag": "IS_VOID_SEARCHING_TARGET"
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  ///////////////////////////////////////
+  //
+  // 草神线空受击盒1
+  //
+  ////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Nahida_Quest_Hitbox_01",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "BeHitHandle"
+        }
+      ],
+      "modifiers": {
+        "BeHitHandle": {
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "IS_NAHIDA_QUEST_CALL_GADGET",
+              "value": 1
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin",
+              "globalValueKey": "GV_Quest_Call",
+              "valueSteps": [-0.5, 0.5, 1.5],
+              "modifierNameSteps": ["StayState", "ActiveState"]
+            }
+          ]
+        },
+        "StayState": {},
+        "ActiveState": {
+          "onAdded": [
+            {
+              "$type": "CallLuaTask",
+              "targetAlias": "13014",
+              "valueString": "FollowNpcGadget_Moesis"
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "GV_Quest_Call",
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  ///////////////////////////////////////
+  //
+  // 草神线空受击盒2
+  //
+  ////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Nahida_Quest_Hitbox_02",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "BeHitHandle"
+        }
+      ],
+      "modifiers": {
+        "BeHitHandle": {
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "IS_NAHIDA_QUEST_CALL_GADGET",
+              "value": 1
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin",
+              "globalValueKey": "GV_Quest_Call",
+              "valueSteps": [-0.5, 0.5, 1.5],
+              "modifierNameSteps": ["StayState", "ActiveState"]
+            }
+          ]
+        },
+        "StayState": {},
+        "ActiveState": {
+          "onAdded": [
+            {
+              "$type": "CallLuaTask",
+              "targetAlias": "13014",
+              "valueString": "FollowNpcGadget_Deby"
+            },
+            {
+              "$type": "SetGlobalValue",
+              "key": "GV_Quest_Call",
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  ///////////////////////////////////////
+  //
+  // 3.2 意志宝珠
+  //
+  ////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_TrainerCompetitionBead_01",
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "GV_State",
+          "valueSteps": [-0.5, 0.5, 1.5, 2.5],
+          "modifierNameSteps": ["StayState", "ActiveState", "DisappearState"]
+        }
+      ],
+      "onAdded": [
+        {
+          "$type": "SetGlobalValue",
+          "key": "GV_State",
+          "value": 0
+        }
+      ],
+      "modifiers": {
+        "StayState": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_TrainerCompetitionBead_01"
+            }
+          ]
+        },
+        "DisappearState": {},
+        "ActiveState": {}
+      }
+    }
+  },
+  ///////////////////////////////////////
+  //
+  // 3.2 意志宝珠
+  //
+  ////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_TrainerCompetitionBead_02",
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "GV_State",
+          "valueSteps": [-0.5, 0.5, 1.5, 2.5],
+          "modifierNameSteps": ["StayState", "ActiveState", "DisappearState"]
+        }
+      ],
+      "onAdded": [
+        {
+          "$type": "SetGlobalValue",
+          "key": "GV_State",
+          "value": 0
+        }
+      ],
+      "modifiers": {
+        "StayState": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_TrainerCompetitionBead_02"
+            }
+          ]
+        },
+        "DisappearState": {},
+        "ActiveState": {}
+      }
+    }
+  },
+  ///////////////////////////////////////
+  //
+  // 3.2 阿茹村村长家
+  //
+  ////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Area_Xm_Property_Prop_VillageRoom_01",
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "EffectLight"
+        }
+      ],
+      "modifiers": {
+        "EffectLight": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_VillageRoom_Light_01",
+              "isPlatformDependent": true
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  ///////////////////////////////////////
+  //
+  // 3.2 教令院栅栏门
+  //
+  ////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Indoor_Xm_Property_Ani_Prop_PrisonDoor_01",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "PhaseOne"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "PhaseTwo"
+        }
+      ],
+      "modifiers": {
+        "PhaseOne": {
+          "onAdded": [
+            {
+              "$type": "SetMaterialParamFloatByTransform",
+              "matName": "Stretch01",
+              "patternName": "_EmissionStrength",
+              "value": 3.5,
+              "lerpTime": 1.0,
+              "useCurve": true,
+              "lerpCurveIndex": 1,
+              "canBeHandledOnRecover": true
+            }
+          ]
+        },
+        "PhaseTwo": {
+          "onAdded": [
+            {
+              "$type": "SetMaterialParamFloatByTransform",
+              "matName": "Stretch01",
+              "patternName": "_EmissionStrength",
+              "value": 12,
+              "lerpTime": 1.0,
+              "useCurve": true,
+              "lerpCurveIndex": 1,
+              "canBeHandledOnRecover": true
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //  3.2散兵转阶段音乐物件
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Sanbin_Music",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "IdleEffect"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 202,
+          "modifierName": "ActiveEffect"
+        }
+      ],
+      "modifiers": {
+        "IdleEffect": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_Empty_Loop"
+            }
+          ]
+        },
+        "ActiveEffect": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_Empty_Loop02"
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  //  3.2象征草神意识的树枝
+  //
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Indoor_Xm_Property_Ani_Prop_SoulBranch_01",
+      "abilityMixins": [
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "Show"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 201,
+          "modifierName": "Idle"
+        }
+      ],
+      "modifiers": {
+        "IdleEffect": {
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_Quest_SoulBranch_02"
+            }
+          ]
+        },
+        "Tick": {
+          "duration": 3.5,
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "IdleEffect"
+            }
+          ]
+        },
+        "Show": {
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "key": "GV_Tag",
+              "value": 1
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "effectPattern": "Eff_Quest_SoulBranch_01"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Tick"
+            }
+          ]
+        },
+        "Idle": {
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "IdleEffect",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "GV_Tag",
+                  "compareType": "NoneOrEqual",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "IdleEffect"
+            }
+          ]
+        }
+      }
+    }
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  //
   //  2.8船灵WQ 船模型
   //
   //////////////////////////////////////////////////////////////////////////////////////////////////

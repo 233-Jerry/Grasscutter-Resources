@@ -7276,6 +7276,293 @@
   },
   ///////////////////////////////////////////////////
   //
+  //	琥珀门-台座+钥匙 可外部修改GV
+  //
+  ///////////////////////////////////////////////////
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Level_Xm_Property_Prop_AmberKeyPedestal_02_Ability",
+      "abilityMixins": [
+        {
+          //有琥珀，出0的时候做一些列操作
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 0,
+          "modifierName": "AmberState"
+        },
+        {
+          //没琥珀
+          "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 202,
+          "modifierName": "EmptyState"
+        }
+      ],
+      "modifiers": {
+        "EmptyState": {},
+        "AmberState": {
+          "onAdded": [
+            {
+              //常驻特效
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_AmberKey_Stay",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPoint"
+              }
+            }
+          ],
+          "onRemoved": [
+            {
+              //消失特效
+              "$type": "FireEffect",
+              "effectPattern": "Eff_SceneObj_AmberKey_Diss",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "attachPointName": "AttachPoint"
+              }
+            },
+            {
+              //玩家捡了一个琥珀，group控制，和操作台交互后从0切到202
+              "$type": "ApplyModifier",
+              "modifierName": "Avartr_To_Team",
+              "target": "Team"
+            }
+          ]
+        },
+        "Avartr_To_Team": {
+          "duration": 0.5,
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "target": "Team",
+              "key": "_HAS_AMBER",
+              "value": 1,
+              "useLimitRange": true,
+              "maxValue": 3,
+              "minValue": 0
+            },
+            {
+              //如果玩家身上只有一个琥珀，上modifier
+              "$type": "ApplyModifier",
+              "target": "Team",
+              "modifierName": "UNIQUE_AMBER_02",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Team",
+                  "key": "_HAS_AMBER",
+                  "value": 1,
+                  "compareType": "LessAndEqual" //?抄来的，感觉不需要加这个判断action
+                }
+              ]
+            }
+          ]
+        },
+        "UNIQUE_AMBER_02": {
+          "isUnique": true,
+          "stacking": "Unique",
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin",
+              "globalValueKey": "_HAS_AMBER",
+              "valueSteps": [-0.5, 0.5, 1.5, 2.5, 3.5],
+              "removeAppliedModifier": true,
+              "modifierNameSteps": [
+                "RemoveAmber",
+                "Team_Avatar_Eff1",
+                "Team_Avatar_Eff2",
+                "Team_Avatar_Eff3"
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "target": "Team",
+              "key": "_HAS_AMBER",
+              "value": 0
+            }
+          ]
+        },
+        "RemoveAmber": {
+          "duration": 1.2, //消失状态持续时间
+          "onAdded": [
+            {
+              //身上琥珀特效播放消失阶段
+              "$type": "SendEffectTrigger",
+              "target": "CurLocalAvatar",
+              "parameter": "Die",
+              "effectPattern": "Eff_SceneObj_AmberKey_Stay_Around_01"
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "target": "CurLocalAvatar",
+              "parameter": "Die",
+              "effectPattern": "Eff_SceneObj_AmberKey_Stay_Around_02"
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "target": "CurLocalAvatar",
+              "parameter": "Die",
+              "effectPattern": "Eff_SceneObj_AmberKey_Stay_Around_03"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "target": "Team",
+              "key": "_HAS_AMBER",
+              "value": 0
+            }
+          ]
+        },
+        "Team_Avatar_Eff1": {
+          "onAdded": [
+            {
+              //保底删除其他上身特效
+              "$type": "RemoveModifier",
+              "modifierName": "Team_Avatar_Eff2"
+            },
+            {
+              //保底删除其他上身特效
+              "$type": "RemoveModifier",
+              "modifierName": "Team_Avatar_Eff3"
+            }
+          ],
+          "thinkInterval": 5,
+          "onThinkInterval": [
+            {
+              //因为要播消失特效，不能attach，不然还没播特效就卸载了
+              "$type": "AttachModifier",
+              "target": "CurLocalAvatar",
+              "modifierName": "UNIQUE_AmberKey_Avatar_Eff1",
+              "doOffStage": true
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "CurLocalAvatarMixinV2",
+              "modifierName": "UNIQUE_AmberKey_Avatar_Eff1"
+            }
+          ]
+        },
+        "Team_Avatar_Eff2": {
+          "onAdded": [
+            {
+              //保底删除其他上身特效
+              "$type": "RemoveModifier",
+              "modifierName": "Team_Avatar_Eff1"
+            },
+            {
+              //保底删除其他上身特效
+              "$type": "RemoveModifier",
+              "modifierName": "Team_Avatar_Eff3"
+            }
+          ],
+          "thinkInterval": 5,
+          "onThinkInterval": [
+            {
+              "$type": "AttachModifier",
+              "target": "CurLocalAvatar",
+              "modifierName": "UNIQUE_AmberKey_Avatar_Eff2",
+              "doOffStage": true
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "CurLocalAvatarMixinV2",
+              "modifierName": "UNIQUE_AmberKey_Avatar_Eff2"
+            }
+          ]
+        },
+        "Team_Avatar_Eff3": {
+          "onAdded": [
+            {
+              //保底删除其他上身特效
+              "$type": "RemoveModifier",
+              "modifierName": "Team_Avatar_Eff1"
+            },
+            {
+              //保底删除其他上身特效
+              "$type": "RemoveModifier",
+              "modifierName": "Team_Avatar_Eff2"
+            }
+          ],
+          "thinkInterval": 5,
+          "onThinkInterval": [
+            {
+              "$type": "AttachModifier",
+              "target": "CurLocalAvatar",
+              "modifierName": "UNIQUE_AmberKey_Avatar_Eff3",
+              "doOffStage": true
+            }
+          ],
+          "modifierMixins": [
+            {
+              "$type": "CurLocalAvatarMixinV2",
+              "modifierName": "UNIQUE_AmberKey_Avatar_Eff3"
+            }
+          ]
+        },
+        "UNIQUE_AmberKey_Avatar_Eff1": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_AmberKey_Stay_Around_01",
+              "doOffStage": true
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_AmberKey_Avatar_Eff1"
+            }
+          ]
+        },
+        "UNIQUE_AmberKey_Avatar_Eff2": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_AmberKey_Stay_Around_02",
+              "doOffStage": true
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_AmberKey_Avatar_Eff2"
+            }
+          ]
+        },
+        "UNIQUE_AmberKey_Avatar_Eff3": {
+          "stacking": "Unique",
+          "isUnique": true,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "effectPattern": "Eff_SceneObj_AmberKey_Stay_Around_03",
+              "doOffStage": true
+            }
+          ],
+          "onAvatarOut": [
+            {
+              "$type": "RemoveModifier",
+              "doOffStage": true,
+              "modifierName": "UNIQUE_AmberKey_Avatar_Eff3"
+            }
+          ]
+        }
+      }
+    }
+  },
+  ///////////////////////////////////////////////////
+  //
   //  琥珀门
   //
   ///////////////////////////////////////////////////
