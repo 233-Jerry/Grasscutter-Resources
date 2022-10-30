@@ -19,7 +19,7 @@ npcs = {
 
 -- 装置
 gadgets = {
-	{ config_id = 326001, gadget_id = 70800028, pos = { x = -2352.507, y = 461.309, z = 5502.671 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, isOneoff = true, persistent = true, area_id = 27 }
+	{ config_id = 326001, gadget_id = 70800028, pos = { x = -2352.507, y = 462.316, z = 5502.671 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, isOneoff = true, persistent = true, area_id = 27 }
 }
 
 -- 区域

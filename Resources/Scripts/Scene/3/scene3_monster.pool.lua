@@ -11073,5 +11073,784 @@ pools = {
 			{ config_id = 35024008, monster_id = 25210202, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 9009 }, ai_config_id = 35024008 },
 			{ config_id = 35024009, monster_id = 25210202, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 9009 }, ai_config_id = 35024009 }
 		}
+	},
+	{
+		pool_id = 36001,
+		monsters = {
+			{ config_id = 36001001, monster_id = 21011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001001 },
+			{ config_id = 36001002, monster_id = 21011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001002 },
+			{ config_id = 36001003, monster_id = 21010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001003 },
+			{ config_id = 36001004, monster_id = 21010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001004 },
+			{ config_id = 36001007, monster_id = 21011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001007 },
+			{ config_id = 36001008, monster_id = 21011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001008 },
+			{ config_id = 36001009, monster_id = 21011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001009 },
+			{ config_id = 36001010, monster_id = 21010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001010 },
+			{ config_id = 36001011, monster_id = 21010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001011 },
+			{ config_id = 36001012, monster_id = 20011401, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001012 },
+			{ config_id = 36001013, monster_id = 20011401, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001013 },
+			{ config_id = 36001014, monster_id = 20011401, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1008, 1007 }, ai_config_id = 36001014 }
+		}
+	},
+	{
+		pool_id = 36002,
+		monsters = {
+			{ config_id = 36002001, monster_id = 21020301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36002001 },
+			{ config_id = 36002002, monster_id = 21010201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36002002 },
+			{ config_id = 36002003, monster_id = 21010201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36002003 },
+			{ config_id = 36002004, monster_id = 21010701, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36002004 },
+			{ config_id = 36002005, monster_id = 21010701, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36002005 },
+			{ config_id = 36002006, monster_id = 21011201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36002006 },
+			{ config_id = 36002007, monster_id = 21011201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36002007 }
+		}
+	},
+	{
+		pool_id = 36003,
+		monsters = {
+			{ config_id = 36003004, monster_id = 20011201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36003004 },
+			{ config_id = 36003005, monster_id = 22010101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36003005 },
+			{ config_id = 36003006, monster_id = 20011201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36003006 },
+			{ config_id = 36003007, monster_id = 20011201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 1033 }, ai_config_id = 36003007 }
+		}
+	},
+	{
+		pool_id = 36004,
+		monsters = {
+			{ config_id = 36004001, monster_id = 21010601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36004001 },
+			{ config_id = 36004002, monster_id = 21020201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36004002 },
+			{ config_id = 36004003, monster_id = 21010601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36004003 }
+		}
+	},
+	{
+		pool_id = 36005,
+		monsters = {
+			{ config_id = 36005001, monster_id = 21010201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36005001 },
+			{ config_id = 36005002, monster_id = 21020301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36005002 },
+			{ config_id = 36005003, monster_id = 21010201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36005003 }
+		}
+	},
+	{
+		pool_id = 36006,
+		monsters = {
+			{ config_id = 36006001, monster_id = 21020501, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36006001 }
+		}
+	},
+	{
+		pool_id = 36007,
+		monsters = {
+			{ config_id = 36007001, monster_id = 24030201, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36007001 }
+		}
+	},
+	{
+		pool_id = 36008,
+		monsters = {
+			{ config_id = 36008001, monster_id = 20010901, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36008001 },
+			{ config_id = 36008002, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36008002 },
+			{ config_id = 36008003, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36008003 },
+			{ config_id = 36008004, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36008004 },
+			{ config_id = 36008005, monster_id = 20010901, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36008005 },
+			{ config_id = 36008006, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36008006 },
+			{ config_id = 36008007, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36008007 },
+			{ config_id = 36008008, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36008008 },
+			{ config_id = 36008009, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36008009 },
+			{ config_id = 36008010, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36008010 },
+			{ config_id = 36008011, monster_id = 20010901, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36008011 }
+		}
+	},
+	{
+		pool_id = 36009,
+		monsters = {
+			{ config_id = 36009001, monster_id = 22010301, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36009001 },
+			{ config_id = 36009002, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36009002 },
+			{ config_id = 36009003, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36009003 },
+			{ config_id = 36009004, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36009004 },
+			{ config_id = 36009005, monster_id = 22010301, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36009005 },
+			{ config_id = 36009006, monster_id = 21010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36009006 },
+			{ config_id = 36009007, monster_id = 21010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36009007 },
+			{ config_id = 36009008, monster_id = 21010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36009008 },
+			{ config_id = 36009009, monster_id = 22010301, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36009009 }
+		}
+	},
+	{
+		pool_id = 36010,
+		monsters = {
+			{ config_id = 36010001, monster_id = 20050703, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36010001 },
+			{ config_id = 36010002, monster_id = 20050703, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36010002 },
+			{ config_id = 36010004, monster_id = 20050203, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36010004 },
+			{ config_id = 36010006, monster_id = 20050302, tag = 16, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36010006 },
+			{ config_id = 36010007, monster_id = 20050703, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36010007 },
+			{ config_id = 36010008, monster_id = 20050302, tag = 16, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36010008 }
+		}
+	},
+	{
+		pool_id = 36011,
+		monsters = {
+			{ config_id = 36011001, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011001 },
+			{ config_id = 36011002, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011002 },
+			{ config_id = 36011003, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011003 },
+			{ config_id = 36011004, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011004 },
+			{ config_id = 36011005, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011005 },
+			{ config_id = 36011006, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011006 },
+			{ config_id = 36011007, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011007 },
+			{ config_id = 36011008, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011008 },
+			{ config_id = 36011009, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011009 },
+			{ config_id = 36011010, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011010 },
+			{ config_id = 36011011, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011011 },
+			{ config_id = 36011012, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36011012 }
+		}
+	},
+	{
+		pool_id = 36012,
+		monsters = {
+			{ config_id = 36012002, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36012002 },
+			{ config_id = 36012003, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36012003 },
+			{ config_id = 36012004, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36012004 },
+			{ config_id = 36012005, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36012005 },
+			{ config_id = 36012006, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36012006 },
+			{ config_id = 36012007, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36012007 },
+			{ config_id = 36012008, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36012008 },
+			{ config_id = 36012009, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36012009 },
+			{ config_id = 36012010, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36012010 },
+			{ config_id = 36012011, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36012011 },
+			{ config_id = 36012012, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36012012 },
+			{ config_id = 36012013, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36012013 }
+		}
+	},
+	{
+		pool_id = 36013,
+		monsters = {
+			{ config_id = 36013004, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36013004 },
+			{ config_id = 36013005, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36013005 },
+			{ config_id = 36013006, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36013006 },
+			{ config_id = 36013007, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36013007 },
+			{ config_id = 36013008, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36013008 },
+			{ config_id = 36013009, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36013009 },
+			{ config_id = 36013010, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36013010 },
+			{ config_id = 36013011, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36013011 },
+			{ config_id = 36013012, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36013012 },
+			{ config_id = 36013013, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36013013 },
+			{ config_id = 36013014, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36013014 },
+			{ config_id = 36013015, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36013015 }
+		}
+	},
+	{
+		pool_id = 36014,
+		monsters = {
+			{ config_id = 36014002, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36014002 },
+			{ config_id = 36014003, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36014003 },
+			{ config_id = 36014004, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36014004 },
+			{ config_id = 36014005, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36014005 },
+			{ config_id = 36014006, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36014006 },
+			{ config_id = 36014007, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36014007 },
+			{ config_id = 36014008, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36014008 },
+			{ config_id = 36014009, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36014009 },
+			{ config_id = 36014010, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36014010 },
+			{ config_id = 36014011, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36014011 },
+			{ config_id = 36014012, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36014012 },
+			{ config_id = 36014013, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36014013 }
+		}
+	},
+	{
+		pool_id = 36015,
+		monsters = {
+			{ config_id = 36015001, monster_id = 26040102, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36015001 }
+		}
+	},
+	{
+		pool_id = 36016,
+		monsters = {
+			{ config_id = 36016001, monster_id = 26040101, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36016001 }
+		}
+	},
+	{
+		pool_id = 36017,
+		monsters = {
+			{ config_id = 36017001, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017001 },
+			{ config_id = 36017002, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017002 },
+			{ config_id = 36017003, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017003 },
+			{ config_id = 36017004, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017004 },
+			{ config_id = 36017005, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017005 },
+			{ config_id = 36017006, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017006 },
+			{ config_id = 36017007, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017007 },
+			{ config_id = 36017008, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017008 },
+			{ config_id = 36017009, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017009 },
+			{ config_id = 36017010, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017010 },
+			{ config_id = 36017011, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017011 },
+			{ config_id = 36017012, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36017012 }
+		}
+	},
+	{
+		pool_id = 36018,
+		monsters = {
+			{ config_id = 36018001, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018001 },
+			{ config_id = 36018002, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018002 },
+			{ config_id = 36018003, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018003 },
+			{ config_id = 36018004, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018004 },
+			{ config_id = 36018005, monster_id = 20010601, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018005 },
+			{ config_id = 36018006, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018006 },
+			{ config_id = 36018007, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018007 },
+			{ config_id = 36018008, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018008 },
+			{ config_id = 36018009, monster_id = 20011101, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018009 },
+			{ config_id = 36018010, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018010 },
+			{ config_id = 36018011, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018011 },
+			{ config_id = 36018012, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018012 },
+			{ config_id = 36018013, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018013 },
+			{ config_id = 36018014, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018014 },
+			{ config_id = 36018015, monster_id = 20011301, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018015 },
+			{ config_id = 36018016, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36018016 }
+		}
+	},
+	{
+		pool_id = 36019,
+		monsters = {
+			{ config_id = 36019001, monster_id = 20060701, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36019001 },
+			{ config_id = 36019002, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36019002 },
+			{ config_id = 36019003, monster_id = 20010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36019003 },
+			{ config_id = 36019004, monster_id = 20060701, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36019004 },
+			{ config_id = 36019005, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36019005 },
+			{ config_id = 36019006, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36019006 }
+		}
+	},
+	{
+		pool_id = 36020,
+		monsters = {
+			{ config_id = 36020001, monster_id = 20060501, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36020001 },
+			{ config_id = 36020002, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36020002 },
+			{ config_id = 36020003, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36020003 },
+			{ config_id = 36020004, monster_id = 20060501, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36020004 },
+			{ config_id = 36020005, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36020005 },
+			{ config_id = 36020006, monster_id = 20011201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36020006 }
+		}
+	},
+	{
+		pool_id = 36021,
+		monsters = {
+			{ config_id = 36021001, monster_id = 21010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36021001 },
+			{ config_id = 36021002, monster_id = 21010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36021002 },
+			{ config_id = 36021003, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36021003 },
+			{ config_id = 36021004, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36021004 },
+			{ config_id = 36021005, monster_id = 21030601, tag = 16, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36021005 },
+			{ config_id = 36021006, monster_id = 21010701, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36021006 },
+			{ config_id = 36021007, monster_id = 21010701, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36021007 },
+			{ config_id = 36021008, monster_id = 21010701, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36021008 },
+			{ config_id = 36021009, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36021009 },
+			{ config_id = 36021010, monster_id = 20011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36021010 }
+		}
+	},
+	{
+		pool_id = 36022,
+		monsters = {
+			{ config_id = 36022001, monster_id = 21020401, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008, 5239, 1021 }, ai_config_id = 36022001 }
+		}
+	},
+	{
+		pool_id = 36023,
+		monsters = {
+			{ config_id = 36023001, monster_id = 21010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36023001 },
+			{ config_id = 36023002, monster_id = 21010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36023002 },
+			{ config_id = 36023003, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36023003 },
+			{ config_id = 36023004, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36023004 },
+			{ config_id = 36023005, monster_id = 21030501, tag = 16, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36023005 },
+			{ config_id = 36023006, monster_id = 21010301, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36023006 },
+			{ config_id = 36023007, monster_id = 21010301, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36023007 },
+			{ config_id = 36023008, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36023008 },
+			{ config_id = 36023009, monster_id = 20010801, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36023009 }
+		}
+	},
+	{
+		pool_id = 36024,
+		monsters = {
+			{ config_id = 36024001, monster_id = 26030101, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36024001 },
+			{ config_id = 36024002, monster_id = 26030101, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36024002 }
+		}
+	},
+	{
+		pool_id = 36025,
+		monsters = {
+			{ config_id = 36025001, monster_id = 21010401, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025001 },
+			{ config_id = 36025002, monster_id = 21010401, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025002 },
+			{ config_id = 36025003, monster_id = 21010401, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025003 },
+			{ config_id = 36025004, monster_id = 21011001, tag = 32, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025004 },
+			{ config_id = 36025005, monster_id = 21011001, tag = 32, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025005 },
+			{ config_id = 36025006, monster_id = 21011001, tag = 32, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025006 },
+			{ config_id = 36025007, monster_id = 21010501, tag = 64, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025007 },
+			{ config_id = 36025008, monster_id = 21010501, tag = 64, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025008 },
+			{ config_id = 36025009, monster_id = 21010501, tag = 64, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025009 },
+			{ config_id = 36025010, monster_id = 21010901, tag = 128, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025010 },
+			{ config_id = 36025011, monster_id = 21010901, tag = 128, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025011 },
+			{ config_id = 36025012, monster_id = 21010901, tag = 128, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36025012 }
+		}
+	},
+	{
+		pool_id = 36026,
+		monsters = {
+			{ config_id = 36026002, monster_id = 20060701, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026002 },
+			{ config_id = 36026003, monster_id = 20060701, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026003 },
+			{ config_id = 36026004, monster_id = 20060501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026004 },
+			{ config_id = 36026007, monster_id = 20060501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026007 },
+			{ config_id = 36026008, monster_id = 20060701, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026008 },
+			{ config_id = 36026009, monster_id = 20060701, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026009 },
+			{ config_id = 36026011, monster_id = 20060501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026011 },
+			{ config_id = 36026012, monster_id = 20060501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026012 },
+			{ config_id = 36026013, monster_id = 20060701, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026013 },
+			{ config_id = 36026014, monster_id = 20060701, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026014 },
+			{ config_id = 36026015, monster_id = 20060501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026015 },
+			{ config_id = 36026016, monster_id = 20060501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 101, ai_config_id = 36026016 }
+		}
+	},
+	{
+		pool_id = 36027,
+		monsters = {
+			{ config_id = 36027001, monster_id = 26010101, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36027001 },
+			{ config_id = 36027002, monster_id = 26010101, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36027002 },
+			{ config_id = 36027003, monster_id = 26010101, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36027003 }
+		}
+	},
+	{
+		pool_id = 36028,
+		monsters = {
+			{ config_id = 36028001, monster_id = 26010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36028001 },
+			{ config_id = 36028002, monster_id = 26010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36028002 },
+			{ config_id = 36028003, monster_id = 26010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36028003 }
+		}
+	},
+	{
+		pool_id = 36029,
+		monsters = {
+			{ config_id = 36029001, monster_id = 21020801, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5243, 1007, 1008 }, ai_config_id = 36029001 }
+		}
+	},
+	{
+		pool_id = 36030,
+		monsters = {
+			{ config_id = 36030001, monster_id = 21020401, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5239, 1007, 1008 }, ai_config_id = 36030001 }
+		}
+	},
+	{
+		pool_id = 36031,
+		monsters = {
+			{ config_id = 36031001, monster_id = 21020501, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008, 5225 }, ai_config_id = 36031001 }
+		}
+	},
+	{
+		pool_id = 36032,
+		monsters = {
+			{ config_id = 36032001, monster_id = 24030201, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5239, 1007, 1008 }, pose_id = 101, ai_config_id = 36032001 }
+		}
+	},
+	{
+		pool_id = 36033,
+		monsters = {
+			{ config_id = 36033001, monster_id = 24010101, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 5225, 1033, 1007, 1008 }, pose_id = 100, ai_config_id = 36033001 }
+		}
+	},
+	{
+		pool_id = 36034,
+		monsters = {
+			{ config_id = 36034001, monster_id = 21020601, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 6108, 1033, 1007, 1008 }, ai_config_id = 36034001 },
+			{ config_id = 36034002, monster_id = 21010901, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 5241, 1007, 1008, 1033 }, ai_config_id = 36034002 },
+			{ config_id = 36034003, monster_id = 21010901, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 5241, 1007, 1008, 1033 }, ai_config_id = 36034003 },
+			{ config_id = 36034004, monster_id = 21010901, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 5241, 1007, 1008, 1033 }, ai_config_id = 36034004 },
+			{ config_id = 36034005, monster_id = 21010901, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5241 }, ai_config_id = 36034005 },
+			{ config_id = 36034006, monster_id = 21010901, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5241 }, ai_config_id = 36034006 },
+			{ config_id = 36034007, monster_id = 21010901, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5241 }, ai_config_id = 36034007 }
+		}
+	},
+	{
+		pool_id = 36035,
+		monsters = {
+			{ config_id = 36035001, monster_id = 21010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5240, 1007, 1008 }, ai_config_id = 36035001 },
+			{ config_id = 36035002, monster_id = 21010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5240, 1007, 1008 }, ai_config_id = 36035002 },
+			{ config_id = 36035003, monster_id = 21010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5240, 1007, 1008 }, ai_config_id = 36035003 },
+			{ config_id = 36035004, monster_id = 21020201, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 6108, 1007, 1008 }, ai_config_id = 36035004 },
+			{ config_id = 36035005, monster_id = 21010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5240 }, ai_config_id = 36035005 },
+			{ config_id = 36035006, monster_id = 21010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5240 }, ai_config_id = 36035006 },
+			{ config_id = 36035007, monster_id = 21010501, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5240 }, ai_config_id = 36035007 }
+		}
+	},
+	{
+		pool_id = 36036,
+		monsters = {
+			{ config_id = 36036001, monster_id = 21011201, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36036001 },
+			{ config_id = 36036002, monster_id = 21011201, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36036002 },
+			{ config_id = 36036003, monster_id = 21020301, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36036003 },
+			{ config_id = 36036004, monster_id = 21010502, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 5226, 1033, 1007, 1008 }, ai_config_id = 36036004 },
+			{ config_id = 36036005, monster_id = 21010502, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 5226, 1033, 1007, 1008 }, ai_config_id = 36036005 },
+			{ config_id = 36036006, monster_id = 21020301, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36036006 },
+			{ config_id = 36036007, monster_id = 21011201, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36036007 },
+			{ config_id = 36036008, monster_id = 21011201, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36036008 },
+			{ config_id = 36036009, monster_id = 21011201, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36036009 }
+		}
+	},
+	{
+		pool_id = 36037,
+		monsters = {
+			{ config_id = 36037001, monster_id = 22010301, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36037001 },
+			{ config_id = 36037002, monster_id = 21010301, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36037002 },
+			{ config_id = 36037003, monster_id = 21010301, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36037003 },
+			{ config_id = 36037007, monster_id = 22010301, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1008, 1007, 1033 }, ai_config_id = 36037007 },
+			{ config_id = 36037008, monster_id = 21010902, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1008, 1007, 1033, 5226 }, ai_config_id = 36037008 },
+			{ config_id = 36037011, monster_id = 21010902, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1008, 1007, 1033, 5226 }, ai_config_id = 36037011 },
+			{ config_id = 36037013, monster_id = 22010301, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36037013 },
+			{ config_id = 36037017, monster_id = 21010201, tag = 128, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36037017 },
+			{ config_id = 36037018, monster_id = 21010201, tag = 128, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36037018 }
+		}
+	},
+	{
+		pool_id = 36038,
+		monsters = {
+			{ config_id = 36038001, monster_id = 20011101, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36038001 },
+			{ config_id = 36038002, monster_id = 20060701, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008, 1105 }, pose_id = 101, ai_config_id = 36038002 },
+			{ config_id = 36038003, monster_id = 20060701, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008, 1105 }, pose_id = 101, ai_config_id = 36038003 },
+			{ config_id = 36038004, monster_id = 20060701, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008, 1105 }, pose_id = 101, ai_config_id = 36038004 },
+			{ config_id = 36038005, monster_id = 20011101, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36038005 },
+			{ config_id = 36038006, monster_id = 20060501, tag = 32, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008, 1105 }, pose_id = 101, ai_config_id = 36038006 },
+			{ config_id = 36038007, monster_id = 20060501, tag = 32, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008, 1105 }, pose_id = 101, ai_config_id = 36038007 },
+			{ config_id = 36038008, monster_id = 20060501, tag = 32, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008, 1105 }, pose_id = 101, ai_config_id = 36038008 },
+			{ config_id = 36038009, monster_id = 20010901, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36038009 },
+			{ config_id = 36038010, monster_id = 20060701, tag = 64, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008, 1105 }, pose_id = 101, ai_config_id = 36038010 },
+			{ config_id = 36038011, monster_id = 20060701, tag = 64, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008, 1105 }, pose_id = 101, ai_config_id = 36038011 },
+			{ config_id = 36038012, monster_id = 20060701, tag = 64, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008, 1105 }, pose_id = 101, ai_config_id = 36038012 }
+		}
+	},
+	{
+		pool_id = 36039,
+		monsters = {
+			{ config_id = 36039001, monster_id = 26010201, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 1033, 1007, 1008, 5244 }, ai_config_id = 36039001 },
+			{ config_id = 36039002, monster_id = 20010501, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 1033, 1007, 1008, 5226 }, ai_config_id = 36039002 },
+			{ config_id = 36039003, monster_id = 20010501, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 1033, 1007, 1008, 5226 }, ai_config_id = 36039003 },
+			{ config_id = 36039004, monster_id = 20010501, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 1033, 1007, 1008, 5226 }, ai_config_id = 36039004 },
+			{ config_id = 36039005, monster_id = 26010201, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 1033, 5244, 1007, 1008 }, ai_config_id = 36039005 },
+			{ config_id = 36039006, monster_id = 20010501, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 1033, 1007, 1008, 5226 }, ai_config_id = 36039006 },
+			{ config_id = 36039007, monster_id = 20010501, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36039007 },
+			{ config_id = 36039008, monster_id = 20010501, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 1033, 1007, 1008, 5226 }, ai_config_id = 36039008 },
+			{ config_id = 36039009, monster_id = 26010201, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5244 }, ai_config_id = 36039009 },
+			{ config_id = 36039010, monster_id = 20010501, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36039010 },
+			{ config_id = 36039011, monster_id = 20010501, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36039011 },
+			{ config_id = 36039012, monster_id = 20010501, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5226 }, ai_config_id = 36039012 }
+		}
+	},
+	{
+		pool_id = 36040,
+		monsters = {
+			{ config_id = 36040001, monster_id = 21020101, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008, 5226 }, ai_config_id = 36040001 },
+			{ config_id = 36040002, monster_id = 21010402, tag = 128, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36040002 },
+			{ config_id = 36040003, monster_id = 21010402, tag = 128, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36040003 },
+			{ config_id = 36040004, monster_id = 21010402, tag = 128, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36040004 },
+			{ config_id = 36040005, monster_id = 21010301, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36040005 },
+			{ config_id = 36040006, monster_id = 21010301, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36040006 },
+			{ config_id = 36040007, monster_id = 21010301, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36040007 },
+			{ config_id = 36040008, monster_id = 21011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36040008 },
+			{ config_id = 36040009, monster_id = 21011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36040009 },
+			{ config_id = 36040010, monster_id = 21011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5226, 1007, 1008 }, ai_config_id = 36040010 }
+		}
+	},
+	{
+		pool_id = 36041,
+		monsters = {
+			{ config_id = 36041001, monster_id = 24020401, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 100, ai_config_id = 36041001 },
+			{ config_id = 36041002, monster_id = 24020201, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 100, ai_config_id = 36041002 },
+			{ config_id = 36041003, monster_id = 24020201, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 100, ai_config_id = 36041003 },
+			{ config_id = 36041004, monster_id = 24020401, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 100, ai_config_id = 36041004 }
+		}
+	},
+	{
+		pool_id = 36042,
+		monsters = {
+			{ config_id = 36042001, monster_id = 24020301, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 100, ai_config_id = 36042001 },
+			{ config_id = 36042002, monster_id = 24020101, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 100, ai_config_id = 36042002 },
+			{ config_id = 36042003, monster_id = 24020101, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 100, ai_config_id = 36042003 },
+			{ config_id = 36042004, monster_id = 24020301, tag = 4, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, pose_id = 100, ai_config_id = 36042004 }
+		}
+	},
+	{
+		pool_id = 36043,
+		monsters = {
+			{ config_id = 36043001, monster_id = 22010101, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36043001 },
+			{ config_id = 36043002, monster_id = 22010201, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36043002 },
+			{ config_id = 36043003, monster_id = 22010401, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36043003 }
+		}
+	},
+	{
+		pool_id = 36044,
+		monsters = {
+			{ config_id = 36044001, monster_id = 26040103, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36044001 }
+		}
+	},
+	{
+		pool_id = 36045,
+		monsters = {
+			{ config_id = 36045001, monster_id = 26040104, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1007, 1008 }, ai_config_id = 36045001 }
+		}
+	},
+	{
+		pool_id = 36046,
+		monsters = {
+			{ config_id = 36046001, monster_id = 21020401, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 1021 }, ai_config_id = 36046001 }
+		}
+	},
+	{
+		pool_id = 36047,
+		monsters = {
+			{ config_id = 36047001, monster_id = 21020601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36047001 },
+			{ config_id = 36047002, monster_id = 21010901, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 4120, 1033 }, ai_config_id = 36047002 },
+			{ config_id = 36047003, monster_id = 21010901, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 4120, 1033 }, ai_config_id = 36047003 },
+			{ config_id = 36047004, monster_id = 21010901, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 4120, 1033 }, ai_config_id = 36047004 },
+			{ config_id = 36047005, monster_id = 21020701, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36047005 },
+			{ config_id = 36047006, monster_id = 21030601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 4120, 1033 }, ai_config_id = 36047006 },
+			{ config_id = 36047007, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36047007 },
+			{ config_id = 36047008, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36047008 },
+			{ config_id = 36047010, monster_id = 21020601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36047010 },
+			{ config_id = 36047011, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36047011 },
+			{ config_id = 36047012, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36047012 },
+			{ config_id = 36047013, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36047013 }
+		}
+	},
+	{
+		pool_id = 36048,
+		monsters = {
+			{ config_id = 36048001, monster_id = 22030102, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, pose_id = 101, ai_config_id = 36048001 },
+			{ config_id = 36048002, monster_id = 21011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36048002 },
+			{ config_id = 36048003, monster_id = 21011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 4121 }, ai_config_id = 36048003 },
+			{ config_id = 36048004, monster_id = 21011601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36048004 },
+			{ config_id = 36048005, monster_id = 21011601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 4121 }, ai_config_id = 36048005 },
+			{ config_id = 36048006, monster_id = 21011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033 }, ai_config_id = 36048006 },
+			{ config_id = 36048007, monster_id = 21011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 1033, 4121 }, ai_config_id = 36048007 }
+		}
+	},
+	{
+		pool_id = 36049,
+		monsters = {
+			{ config_id = 36049001, monster_id = 21020701, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 6108, 1007, 1008 }, ai_config_id = 36049001 },
+			{ config_id = 36049002, monster_id = 21011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5242, 1008, 1007 }, ai_config_id = 36049002 },
+			{ config_id = 36049003, monster_id = 21011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5242, 1008, 1007 }, ai_config_id = 36049003 },
+			{ config_id = 36049004, monster_id = 21011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 5242, 1008, 1007 }, ai_config_id = 36049004 },
+			{ config_id = 36049005, monster_id = 21011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5242 }, ai_config_id = 36049005 },
+			{ config_id = 36049006, monster_id = 21011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5242 }, ai_config_id = 36049006 },
+			{ config_id = 36049007, monster_id = 21011001, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033, 5242 }, ai_config_id = 36049007 }
+		}
+	},
+	{
+		pool_id = 36050,
+		monsters = {
+			{ config_id = 36050001, monster_id = 26040102, tag = 2, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 5244, 1033, 1007, 1008 }, ai_config_id = 36050001 }
+		}
+	},
+	{
+		pool_id = 36051,
+		monsters = {
+			{ config_id = 36051001, monster_id = 26010301, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36051001 },
+			{ config_id = 36051002, monster_id = 26010301, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36051002 },
+			{ config_id = 36051003, monster_id = 26010301, tag = 8, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1007, 1008, 1033 }, ai_config_id = 36051003 }
+		}
+	},
+	{
+		pool_id = 36052,
+		monsters = {
+			{ config_id = 36052001, monster_id = 22010301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052001 },
+			{ config_id = 36052002, monster_id = 21011301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052002 },
+			{ config_id = 36052003, monster_id = 21011301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052003 },
+			{ config_id = 36052004, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052004 },
+			{ config_id = 36052005, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052005 },
+			{ config_id = 36052006, monster_id = 22010301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052006 },
+			{ config_id = 36052007, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052007 },
+			{ config_id = 36052008, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052008 },
+			{ config_id = 36052009, monster_id = 21011301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052009 },
+			{ config_id = 36052010, monster_id = 21011301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052010 },
+			{ config_id = 36052011, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052011 },
+			{ config_id = 36052012, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36052012 }
+		}
+	},
+	{
+		pool_id = 36053,
+		monsters = {
+			{ config_id = 36053001, monster_id = 22010401, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053001 },
+			{ config_id = 36053002, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053002 },
+			{ config_id = 36053003, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053003 },
+			{ config_id = 36053004, monster_id = 21030601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053004 },
+			{ config_id = 36053005, monster_id = 22010401, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053005 },
+			{ config_id = 36053006, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053006 },
+			{ config_id = 36053007, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053007 },
+			{ config_id = 36053008, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053008 },
+			{ config_id = 36053009, monster_id = 21030601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053009 },
+			{ config_id = 36053010, monster_id = 22010401, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053010 },
+			{ config_id = 36053011, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053011 },
+			{ config_id = 36053012, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36053012 }
+		}
+	},
+	{
+		pool_id = 36054,
+		monsters = {
+			{ config_id = 36054001, monster_id = 22010201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054001 },
+			{ config_id = 36054002, monster_id = 21011301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054002 },
+			{ config_id = 36054003, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054003 },
+			{ config_id = 36054004, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054004 },
+			{ config_id = 36054005, monster_id = 21011301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054005 },
+			{ config_id = 36054006, monster_id = 21011301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054006 },
+			{ config_id = 36054007, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054007 },
+			{ config_id = 36054008, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054008 },
+			{ config_id = 36054009, monster_id = 22010201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054009 },
+			{ config_id = 36054010, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054010 },
+			{ config_id = 36054011, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054011 },
+			{ config_id = 36054012, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36054012 }
+		}
+	},
+	{
+		pool_id = 36055,
+		monsters = {
+			{ config_id = 36055001, monster_id = 22010401, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36055001 },
+			{ config_id = 36055002, monster_id = 20010601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36055002 },
+			{ config_id = 36055003, monster_id = 20010601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36055003 },
+			{ config_id = 36055004, monster_id = 20010601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36055004 },
+			{ config_id = 36055005, monster_id = 20010601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36055005 },
+			{ config_id = 36055006, monster_id = 22010401, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36055006 }
+		}
+	},
+	{
+		pool_id = 36056,
+		monsters = {
+			{ config_id = 36056001, monster_id = 21011201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36056001 },
+			{ config_id = 36056002, monster_id = 20011501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36056002 },
+			{ config_id = 36056003, monster_id = 20011501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36056003 },
+			{ config_id = 36056004, monster_id = 21011201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36056004 },
+			{ config_id = 36056005, monster_id = 20011501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36056005 },
+			{ config_id = 36056006, monster_id = 20011501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36056006 }
+		}
+	},
+	{
+		pool_id = 36057,
+		monsters = {
+			{ config_id = 36057001, monster_id = 22010201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36057001 },
+			{ config_id = 36057002, monster_id = 20010901, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36057002 },
+			{ config_id = 36057003, monster_id = 20010901, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36057003 },
+			{ config_id = 36057004, monster_id = 22010201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36057004 },
+			{ config_id = 36057005, monster_id = 20010901, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36057005 },
+			{ config_id = 36057006, monster_id = 20010901, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36057006 }
+		}
+	},
+	{
+		pool_id = 36058,
+		monsters = {
+			{ config_id = 36058001, monster_id = 20060501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36058001 },
+			{ config_id = 36058002, monster_id = 20060501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36058002 },
+			{ config_id = 36058004, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36058004 },
+			{ config_id = 36058005, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36058005 },
+			{ config_id = 36058006, monster_id = 20060101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36058006 },
+			{ config_id = 36058007, monster_id = 20060101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36058007 },
+			{ config_id = 36058009, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36058009 },
+			{ config_id = 36058010, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36058010 },
+			{ config_id = 36058011, monster_id = 20060501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36058011 },
+			{ config_id = 36058012, monster_id = 20060501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36058012 },
+			{ config_id = 36058013, monster_id = 20011101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36058013 },
+			{ config_id = 36058014, monster_id = 20060101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36058014 },
+			{ config_id = 36058015, monster_id = 20060101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36058015 },
+			{ config_id = 36058016, monster_id = 20010601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36058016 }
+		}
+	},
+	{
+		pool_id = 36059,
+		monsters = {
+			{ config_id = 36059001, monster_id = 20060601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36059001 },
+			{ config_id = 36059002, monster_id = 20060601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36059002 },
+			{ config_id = 36059003, monster_id = 20060301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36059003 },
+			{ config_id = 36059004, monster_id = 20011301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36059004 },
+			{ config_id = 36059005, monster_id = 20060301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36059005 },
+			{ config_id = 36059006, monster_id = 20060301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36059006 },
+			{ config_id = 36059007, monster_id = 20011201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36059007 },
+			{ config_id = 36059008, monster_id = 20011201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36059008 },
+			{ config_id = 36059009, monster_id = 20011201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36059009 },
+			{ config_id = 36059010, monster_id = 20060601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36059010 },
+			{ config_id = 36059011, monster_id = 20060601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36059011 },
+			{ config_id = 36059012, monster_id = 20060301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36059012 }
+		}
+	},
+	{
+		pool_id = 36060,
+		monsters = {
+			{ config_id = 36060001, monster_id = 20060401, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36060001 },
+			{ config_id = 36060002, monster_id = 20060401, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36060002 },
+			{ config_id = 36060003, monster_id = 20011101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36060003 },
+			{ config_id = 36060004, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36060004 },
+			{ config_id = 36060005, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36060005 },
+			{ config_id = 36060006, monster_id = 20060101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36060006 },
+			{ config_id = 36060007, monster_id = 20060101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36060007 },
+			{ config_id = 36060008, monster_id = 20010901, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36060008 },
+			{ config_id = 36060009, monster_id = 20060401, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36060009 },
+			{ config_id = 36060010, monster_id = 20060401, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, pose_id = 101, ai_config_id = 36060010 },
+			{ config_id = 36060011, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36060011 },
+			{ config_id = 36060012, monster_id = 20011001, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36060012 }
+		}
+	},
+	{
+		pool_id = 36061,
+		monsters = {
+			{ config_id = 36061001, monster_id = 21020301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36061001 },
+			{ config_id = 36061002, monster_id = 21010201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36061002 },
+			{ config_id = 36061003, monster_id = 21010201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36061003 },
+			{ config_id = 36061004, monster_id = 21030101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36061004 }
+		}
+	},
+	{
+		pool_id = 36062,
+		monsters = {
+			{ config_id = 36062001, monster_id = 21020401, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36062001 }
+		}
+	},
+	{
+		pool_id = 36063,
+		monsters = {
+			{ config_id = 36063001, monster_id = 21020601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 6110 }, ai_config_id = 36063001 },
+			{ config_id = 36063002, monster_id = 21011401, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 6111 }, ai_config_id = 36063002 },
+			{ config_id = 36063003, monster_id = 21010901, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 6111 }, ai_config_id = 36063003 },
+			{ config_id = 36063004, monster_id = 21011301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 6111 }, ai_config_id = 36063004 }
+		}
+	},
+	{
+		pool_id = 36064,
+		monsters = {
+			{ config_id = 36064001, monster_id = 26010101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36064001 },
+			{ config_id = 36064002, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36064002 },
+			{ config_id = 36064003, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36064003 },
+			{ config_id = 36064004, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36064004 },
+			{ config_id = 36064005, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36064005 },
+			{ config_id = 36064006, monster_id = 20010901, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36064006 },
+			{ config_id = 36064007, monster_id = 26010101, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36064007 },
+			{ config_id = 36064008, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36064008 },
+			{ config_id = 36064009, monster_id = 20010801, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36064009 }
+		}
+	},
+	{
+		pool_id = 36065,
+		monsters = {
+			{ config_id = 36065001, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36065001 },
+			{ config_id = 36065002, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36065002 },
+			{ config_id = 36065003, monster_id = 26010301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36065003 },
+			{ config_id = 36065004, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36065004 },
+			{ config_id = 36065005, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36065005 },
+			{ config_id = 36065006, monster_id = 26010301, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36065006 },
+			{ config_id = 36065007, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36065007 },
+			{ config_id = 36065008, monster_id = 20010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36065008 },
+			{ config_id = 36065009, monster_id = 20010601, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, ai_config_id = 36065009 }
+		}
+	},
+	{
+		pool_id = 36066,
+		monsters = {
+			{ config_id = 36066001, monster_id = 21020201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 6110, 1033, 1011, 1034, 1010, 1009, 4115 }, ai_config_id = 36066001 },
+			{ config_id = 36066002, monster_id = 21010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 6111, 1033, 1011, 1034, 1010, 1009, 4115 }, ai_config_id = 36066002 },
+			{ config_id = 36066003, monster_id = 21010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 6111, 1033, 1011, 1034, 1010, 1009, 4115 }, ai_config_id = 36066003 },
+			{ config_id = 36066004, monster_id = 21010501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, affix = { 6111, 1033, 1011, 1034, 1010, 1009, 4115 }, ai_config_id = 36066004 }
+		}
+	},
+	{
+		pool_id = 36067,
+		monsters = {
+			{ config_id = 36067001, monster_id = 21020201, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 5225, 1050, 4058, 4063, 4115, 4062, 1011, 1010 }, ai_config_id = 36067001 }
+		}
+	},
+	{
+		pool_id = 36068,
+		monsters = {
+			{ config_id = 36068001, monster_id = 21020501, pos = { x = 0.000, y = 0.000, z = 0.000 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, affix = { 1033, 1011, 4115, 4062, 4059, 1010, 1009 }, ai_config_id = 36068001 }
+		}
 	}
 }

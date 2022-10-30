@@ -11,12 +11,7 @@ local base_info = {
 
 -- 怪物
 monsters = {
-	{ config_id = 1003, monster_id = 20060301, pos = { x = -4.078, y = -0.102, z = 9.994 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 101 },
-	{ config_id = 1004, monster_id = 20060101, pos = { x = -9.977, y = -0.102, z = -0.092 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 101 },
-	{ config_id = 1005, monster_id = 20060201, pos = { x = -4.078, y = -0.102, z = -10.039 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 101 },
-	{ config_id = 1006, monster_id = 20060201, pos = { x = 4.067, y = -0.102, z = -10.039 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 101 },
-	{ config_id = 1007, monster_id = 20060101, pos = { x = 10.029, y = -0.102, z = -0.080 }, rot = { x = 0.000, y = 270.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 101 },
-	{ config_id = 1008, monster_id = 20060301, pos = { x = 4.067, y = -0.102, z = 9.994 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 101 }
+	{ config_id = 1003, monster_id = 26110101, pos = { x = -0.077, y = -0.102, z = -9.981 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, disableWander = true, pose_id = 101 }
 }
 
 -- NPC
@@ -77,7 +72,7 @@ suites = {
 	{
 		-- suite_id = 2,
 		-- description = ,
-		monsters = { 1003, 1004, 1005, 1006, 1007, 1008 },
+		monsters = { 1003 },
 		gadgets = { 1016 },
 		regions = { },
 		triggers = { "ANY_MONSTER_LIVE_1010", "CHALLENGE_SUCCESS_1013", "CHALLENGE_FAIL_1014" },
@@ -143,7 +138,7 @@ end
 
 -- 触发条件
 function condition_EVENT_ANY_MONSTER_LIVE_1010(context, evt)
-	if 1004 ~= evt.param1 then
+	if 1003 ~= evt.param1 then
 		return false
 	end
 	
@@ -153,7 +148,7 @@ end
 -- 触发操作
 function action_EVENT_ANY_MONSTER_LIVE_1010(context, evt)
 	-- 创建编号为1（该挑战的识别id),挑战内容为166的区域挑战，具体参数填写方式，见DungeonChallengeData表中的注释，所有填写的值都必须是int类型
-	if 0 ~= ScriptLib.ActiveChallenge(context, 1, 166, 180, 251000001, 6, 0) then
+	if 0 ~= ScriptLib.ActiveChallenge(context, 1, 166, 180, 251000001, 1, 0) then
 	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_challenge")
 		return -1
 	end

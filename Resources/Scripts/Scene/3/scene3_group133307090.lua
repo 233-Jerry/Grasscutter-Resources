@@ -284,17 +284,17 @@ end
 
 -- 触发操作
 function action_EVENT_GROUP_LOAD_90012(context, evt)
-	-- 创建id为90006的gadget
-	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 90006 }) then
-	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
-	  return -1
-	end
-	
 	-- 解除当前场景中pointid 为%force_id%的地城入口的groupLimit状态
 		ScriptLib.UnfreezeGroupLimit(context, 675)
 	
 	-- 删除suite2的所有内容
 	    ScriptLib.RemoveExtraGroupSuite(context, 133307090, 2)
+	
+	-- 创建id为90006的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 90006 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
 	
 	return 0
 end

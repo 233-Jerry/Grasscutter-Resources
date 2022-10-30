@@ -30,6 +30,7 @@ npcs = {
 
 -- 装置
 gadgets = {
+	{ config_id = 1001, gadget_id = 70710249, pos = { x = 1538.675, y = 335.521, z = -2114.854 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 15, area_id = 2 }
 }
 
 -- 区域
@@ -70,7 +71,7 @@ suites = {
 		-- suite_id = 1,
 		-- description = ,
 		monsters = { },
-		gadgets = { },
+		gadgets = { 1001 },
 		regions = { },
 		triggers = { },
 		rand_weight = 100

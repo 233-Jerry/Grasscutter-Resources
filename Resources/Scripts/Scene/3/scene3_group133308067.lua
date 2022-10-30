@@ -163,8 +163,8 @@ function action_EVENT_GADGET_STATE_CHANGE_67005(context, evt)
 	  return -1
 	end
 	
-	-- 调用提示id为 7319102 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
-	if 0 ~= ScriptLib.ShowReminder(context, 7319102) then
+	-- 调用提示id为 7319103 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 7319103) then
 	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
 		return -1
 	end

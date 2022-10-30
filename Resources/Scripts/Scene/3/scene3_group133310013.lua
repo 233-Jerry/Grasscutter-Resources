@@ -131,6 +131,13 @@ function action_EVENT_GROUP_LOAD_13018(context, evt)
 			return -1
 		end 
 	
+	-- 将本组内变量名为 "quest" 的变量设置为 1
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "quest", 1, 133309498) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
+	
 	return 0
 end
 

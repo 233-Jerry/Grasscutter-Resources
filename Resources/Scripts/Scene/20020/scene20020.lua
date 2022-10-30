@@ -5,6 +5,7 @@ scene_config = {
 	born_pos = { x = 0.000, y = 50.000, z = -80.000 },
 	born_rot = { x = 0.000, y = 0.000, z = 0.000 },
 	die_y = -500,
+	city_id = 1,
 	vision_anchor = { x = -10000.0, z = -10000.0 }
 }
 

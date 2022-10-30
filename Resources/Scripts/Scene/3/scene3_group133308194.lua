@@ -56,8 +56,7 @@ npcs = {
 -- 装置
 gadgets = {
 	{ config_id = 194001, gadget_id = 70330300, pos = { x = -1925.778, y = 125.254, z = 5361.281 }, rot = { x = 0.000, y = 329.298, z = 0.000 }, level = 32, persistent = true, vision_level = VisionLevelType.VISION_LEVEL_LITTLE_REMOTE, area_id = 27 },
-	{ config_id = 194002, gadget_id = 70330280, pos = { x = -1925.778, y = 125.254, z = 5361.281 }, rot = { x = 0.000, y = 89.298, z = 0.000 }, level = 32, persistent = true, is_use_point_array = true, vision_level = VisionLevelType.VISION_LEVEL_LITTLE_REMOTE, area_id = 27 },
-	{ config_id = 194003, gadget_id = 70330454, pos = { x = -1924.659, y = 116.360, z = 5363.971 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 32, persistent = true, area_id = 27 }
+	{ config_id = 194002, gadget_id = 70330280, pos = { x = -1925.778, y = 125.254, z = 5361.281 }, rot = { x = 0.000, y = 89.298, z = 0.000 }, level = 32, persistent = true, is_use_point_array = true, vision_level = VisionLevelType.VISION_LEVEL_LITTLE_REMOTE, area_id = 27 }
 }
 
 -- 区域
@@ -72,6 +71,13 @@ triggers = {
 -- 变量
 variables = {
 	{ config_id = 1, name = "curMoveIndex", value = 1, no_refresh = true }
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 194003, gadget_id = 70330454, pos = { x = -1924.659, y = 116.360, z = 5363.971 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 32, persistent = true, area_id = 27 }
+	}
 }
 
 --================================================================
@@ -98,7 +104,7 @@ suites = {
 		-- suite_id = 1,
 		-- description = ,
 		monsters = { },
-		gadgets = { 194001, 194002, 194003 },
+		gadgets = { 194001, 194002 },
 		regions = { },
 		triggers = { "SELECT_OPTION_194004" },
 		rand_weight = 100

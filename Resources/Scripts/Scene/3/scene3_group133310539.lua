@@ -13,7 +13,7 @@ local base_info = {
 monsters = {
 	{ config_id = 539002, monster_id = 28050106, pos = { x = -2459.830, y = 338.025, z = 4002.183 }, rot = { x = 0.000, y = 265.885, z = 0.000 }, level = 32, drop_tag = "魔法生物", disableWander = true, area_id = 26 },
 	{ config_id = 539003, monster_id = 28050106, pos = { x = -2463.087, y = 337.957, z = 4001.396 }, rot = { x = 0.000, y = 55.531, z = 0.000 }, level = 32, drop_tag = "魔法生物", disableWander = true, area_id = 26 },
-	{ config_id = 539004, monster_id = 28050106, pos = { x = -2464.802, y = 337.957, z = 4004.354 }, rot = { x = 0.000, y = 257.411, z = 0.000 }, level = 30, drop_tag = "魔法生物", disableWander = true, area_id = 26 }
+	{ config_id = 539004, monster_id = 28050106, pos = { x = -2465.582, y = 338.404, z = 4004.464 }, rot = { x = 0.000, y = 257.411, z = 0.000 }, level = 30, drop_tag = "魔法生物", disableWander = true, area_id = 26 }
 }
 
 -- NPC

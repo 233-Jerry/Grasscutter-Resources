@@ -39,7 +39,7 @@ npcs = {
 -- 装置
 gadgets = {
 	[505001] = { config_id = 505001, gadget_id = 70330341, pos = { x = -2988.575, y = 195.823, z = 5467.763 }, rot = { x = 90.000, y = 270.000, z = 0.000 }, level = 32, state = GadgetState.GearAction1, persistent = true, area_id = 27 },
-	[505002] = { config_id = 505002, gadget_id = 70330416, pos = { x = -2992.880, y = 195.179, z = 5471.070 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 32, persistent = true, vision_level = VisionLevelType.VISION_LEVEL_NORMAL, area_id = 27 }
+	[505002] = { config_id = 505002, gadget_id = 70330416, pos = { x = -2992.880, y = 195.238, z = 5472.070 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 32, persistent = true, vision_level = VisionLevelType.VISION_LEVEL_NORMAL, area_id = 27 }
 }
 
 -- 区域

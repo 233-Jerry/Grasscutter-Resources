@@ -56,7 +56,8 @@ triggers = {
 	{ config_id = 1596020, name = "GADGET_STATE_CHANGE_596020", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_596020", action = "action_EVENT_GADGET_STATE_CHANGE_596020" },
 	{ config_id = 1596021, name = "GADGET_STATE_CHANGE_596021", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_596021", action = "action_EVENT_GADGET_STATE_CHANGE_596021" },
 	{ config_id = 1596022, name = "GADGET_STATE_CHANGE_596022", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_596022", action = "action_EVENT_GADGET_STATE_CHANGE_596022" },
-	{ config_id = 1596023, name = "GADGET_STATE_CHANGE_596023", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_596023", action = "action_EVENT_GADGET_STATE_CHANGE_596023" }
+	{ config_id = 1596023, name = "GADGET_STATE_CHANGE_596023", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_596023", action = "action_EVENT_GADGET_STATE_CHANGE_596023" },
+	{ config_id = 1596024, name = "GROUP_LOAD_596024", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_596024", trigger_count = 0 }
 }
 
 -- 变量
@@ -90,7 +91,7 @@ suites = {
 		monsters = { },
 		gadgets = { 596002, 596003 },
 		regions = { },
-		triggers = { "CHALLENGE_SUCCESS_596005", "CHALLENGE_FAIL_596006", "GADGET_STATE_CHANGE_596007", "GADGET_STATE_CHANGE_596008", "GADGET_CREATE_596009", "SELECT_OPTION_596010" },
+		triggers = { "CHALLENGE_SUCCESS_596005", "CHALLENGE_FAIL_596006", "GADGET_STATE_CHANGE_596007", "GADGET_STATE_CHANGE_596008", "GADGET_CREATE_596009", "SELECT_OPTION_596010", "GROUP_LOAD_596024" },
 		rand_weight = 100
 	},
 	{
@@ -436,5 +437,31 @@ function action_EVENT_GADGET_STATE_CHANGE_596023(context, evt)
 			return -1
 		end
 	end
+	return 0
+end
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_596024(context, evt)
+	-- 删除suite2的所有内容
+	    ScriptLib.RemoveExtraGroupSuite(context, 133003596, 2)
+	
+	-- 将configid为 596002 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 596002, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 创建id为596003的gadget
+	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 596003 }) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
+	end
+	
+	-- 运营数据埋点，匹配LD定义的规则使用
+	    if 0 ~= ScriptLib.MarkPlayerAction(context, 3002, 4, 1) then
+	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : mark_playerAction")
+	      return -1
+	    end
+	
 	return 0
 end

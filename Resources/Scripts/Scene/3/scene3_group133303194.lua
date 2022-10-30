@@ -25,7 +25,6 @@ gadgets = {
 	{ config_id = 194004, gadget_id = 70210101, pos = { x = -1257.096, y = 243.692, z = 3717.454 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, drop_tag = "搜刮点解谜遗物须弥", persistent = true, area_id = 23 },
 	{ config_id = 194005, gadget_id = 70217020, pos = { x = -1260.335, y = 232.521, z = 3755.781 }, rot = { x = 0.000, y = 164.589, z = 0.000 }, level = 26, drop_tag = "摩拉石箱须弥", isOneoff = true, persistent = true, explore = { name = "chest", exp = 4 }, area_id = 23 },
 	{ config_id = 194006, gadget_id = 70220103, pos = { x = -1269.147, y = 271.623, z = 3739.511 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 23 },
-	{ config_id = 194007, gadget_id = 70350007, pos = { x = -1258.624, y = 236.984, z = 3747.383 }, rot = { x = 270.636, y = 140.366, z = 179.997 }, level = 30, area_id = 23 },
 	{ config_id = 194008, gadget_id = 70360170, pos = { x = -1268.038, y = 239.286, z = 3763.261 }, rot = { x = 89.391, y = 194.864, z = 56.129 }, level = 30, persistent = true, area_id = 23 },
 	{ config_id = 194009, gadget_id = 70290584, pos = { x = -1251.348, y = 247.874, z = 3729.156 }, rot = { x = 0.190, y = 48.581, z = 180.900 }, level = 30, persistent = true, area_id = 23 },
 	{ config_id = 194010, gadget_id = 70210101, pos = { x = -1260.469, y = 249.382, z = 3719.821 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 26, drop_tag = "搜刮点解谜武器须弥", persistent = true, area_id = 23 },
@@ -55,6 +54,13 @@ variables = {
 	{ config_id = 2, name = "room2", value = 0, no_refresh = false }
 }
 
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 194007, gadget_id = 70350007, pos = { x = -1258.661, y = 231.790, z = 3747.427 }, rot = { x = 270.630, y = 140.366, z = 179.997 }, level = 30, area_id = 23 }
+	}
+}
+
 --================================================================
 -- 
 -- 初始化配置
@@ -79,7 +85,7 @@ suites = {
 		-- suite_id = 1,
 		-- description = ,
 		monsters = { },
-		gadgets = { 194001, 194002, 194003, 194004, 194005, 194006, 194007, 194008, 194009, 194010, 194013, 194014, 194015, 194016, 194018 },
+		gadgets = { 194001, 194002, 194003, 194004, 194005, 194006, 194008, 194009, 194010, 194013, 194014, 194015, 194016, 194018 },
 		regions = { 194011, 194012 },
 		triggers = { "ENTER_REGION_194011", "ENTER_REGION_194012", "SELECT_OPTION_194017" },
 		rand_weight = 100

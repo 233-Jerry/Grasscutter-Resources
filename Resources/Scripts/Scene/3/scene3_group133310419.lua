@@ -25,17 +25,7 @@ gadgets = {
 	-- 2
 	{ config_id = 419006, gadget_id = 70690001, pos = { x = -2207.996, y = 174.013, z = 5036.437 }, rot = { x = 0.000, y = 304.347, z = 0.000 }, level = 32, area_id = 27 },
 	-- 2
-	{ config_id = 419007, gadget_id = 70690001, pos = { x = -2223.526, y = 174.013, z = 5047.051 }, rot = { x = 0.000, y = 304.347, z = 0.000 }, level = 32, area_id = 27 },
-	-- 2
-	{ config_id = 419008, gadget_id = 70690001, pos = { x = -2249.695, y = 174.013, z = 5064.932 }, rot = { x = 0.000, y = 304.347, z = 0.000 }, level = 32, area_id = 27 },
-	-- 2
-	{ config_id = 419009, gadget_id = 70690001, pos = { x = -2260.350, y = 174.013, z = 5072.213 }, rot = { x = 0.000, y = 290.987, z = 0.000 }, level = 32, area_id = 27 },
-	-- 2
-	{ config_id = 419010, gadget_id = 70690001, pos = { x = -2279.985, y = 172.674, z = 5079.745 }, rot = { x = 0.000, y = 290.987, z = 0.000 }, level = 32, area_id = 27 },
-	-- 2
-	{ config_id = 419011, gadget_id = 70690001, pos = { x = -2302.484, y = 171.150, z = 5088.376 }, rot = { x = 0.000, y = 290.987, z = 0.000 }, level = 32, area_id = 27 },
-	-- 2
-	{ config_id = 419012, gadget_id = 70690001, pos = { x = -2317.950, y = 169.188, z = 5094.309 }, rot = { x = 0.000, y = 290.987, z = 0.000 }, level = 32, area_id = 27 }
+	{ config_id = 419007, gadget_id = 70690001, pos = { x = -2223.526, y = 174.013, z = 5047.051 }, rot = { x = 0.000, y = 304.347, z = 0.000 }, level = 32, area_id = 27 }
 }
 
 -- 区域
@@ -60,6 +50,13 @@ variables = {
 
 -- 废弃数据
 garbages = {
+	gadgets = {
+		{ config_id = 419008, gadget_id = 70690001, pos = { x = -2249.695, y = 174.013, z = 5064.932 }, rot = { x = 0.000, y = 304.347, z = 0.000 }, level = 32, area_id = 27 },
+		{ config_id = 419009, gadget_id = 70690001, pos = { x = -2260.350, y = 174.013, z = 5072.213 }, rot = { x = 0.000, y = 290.987, z = 0.000 }, level = 32, area_id = 27 },
+		{ config_id = 419010, gadget_id = 70690001, pos = { x = -2279.985, y = 172.674, z = 5079.745 }, rot = { x = 0.000, y = 290.987, z = 0.000 }, level = 32, area_id = 27 },
+		{ config_id = 419011, gadget_id = 70690001, pos = { x = -2302.484, y = 171.150, z = 5088.376 }, rot = { x = 0.000, y = 290.987, z = 0.000 }, level = 32, area_id = 27 },
+		{ config_id = 419012, gadget_id = 70690001, pos = { x = -2317.950, y = 169.188, z = 5094.309 }, rot = { x = 0.000, y = 290.987, z = 0.000 }, level = 32, area_id = 27 }
+	},
 	regions = {
 		{ config_id = 419013, shape = RegionShape.CUBIC, size = { x = 200.000, y = 50.000, z = 100.000 }, pos = { x = -2228.242, y = 182.018, z = 5048.556 }, area_id = 27 }
 	},
@@ -101,7 +98,7 @@ suites = {
 		-- suite_id = 2,
 		-- description = ,
 		monsters = { },
-		gadgets = { 419005, 419006, 419007, 419008, 419009, 419010, 419011, 419012 },
+		gadgets = { 419005, 419006, 419007 },
 		regions = { },
 		triggers = { },
 		rand_weight = 100

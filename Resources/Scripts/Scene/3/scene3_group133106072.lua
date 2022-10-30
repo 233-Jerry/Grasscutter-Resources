@@ -11,10 +11,10 @@ local base_info = {
 
 -- 怪物
 monsters = {
-	{ config_id = 72001, monster_id = 25030201, pos = { x = -837.975, y = 158.687, z = 1372.857 }, rot = { x = 0.000, y = 327.593, z = 0.000 }, level = 32, drop_tag = "盗宝团", disableWander = true, pose_id = 9002, area_id = 8 },
-	{ config_id = 72002, monster_id = 25010301, pos = { x = -840.088, y = 158.646, z = 1373.362 }, rot = { x = 0.000, y = 256.249, z = 0.000 }, level = 32, drop_tag = "盗宝团", disableWander = true, pose_id = 4, area_id = 8 },
-	{ config_id = 72003, monster_id = 25020201, pos = { x = -837.325, y = 158.630, z = 1379.291 }, rot = { x = 0.000, y = 223.052, z = 0.000 }, level = 32, drop_tag = "盗宝团", area_id = 8 },
-	{ config_id = 72007, monster_id = 25010201, pos = { x = -834.310, y = 158.722, z = 1374.257 }, rot = { x = 0.000, y = 288.985, z = 0.000 }, level = 32, drop_tag = "盗宝团", disableWander = true, pose_id = 9004, area_id = 8 }
+	{ config_id = 72001, monster_id = 25030201, pos = { x = -837.975, y = 159.021, z = 1372.857 }, rot = { x = 0.000, y = 327.593, z = 0.000 }, level = 32, drop_tag = "盗宝团", disableWander = true, pose_id = 9002, area_id = 8 },
+	{ config_id = 72002, monster_id = 25010301, pos = { x = -840.088, y = 158.845, z = 1373.362 }, rot = { x = 0.000, y = 256.249, z = 0.000 }, level = 32, drop_tag = "盗宝团", disableWander = true, pose_id = 4, area_id = 8 },
+	{ config_id = 72003, monster_id = 25020201, pos = { x = -837.325, y = 159.555, z = 1379.291 }, rot = { x = 0.000, y = 223.052, z = 0.000 }, level = 32, drop_tag = "盗宝团", area_id = 8 },
+	{ config_id = 72007, monster_id = 25010201, pos = { x = -834.310, y = 159.461, z = 1374.257 }, rot = { x = 0.000, y = 288.985, z = 0.000 }, level = 32, drop_tag = "盗宝团", disableWander = true, pose_id = 9004, area_id = 8 }
 }
 
 -- NPC
@@ -23,8 +23,8 @@ npcs = {
 
 -- 装置
 gadgets = {
-	{ config_id = 72004, gadget_id = 70211012, pos = { x = -835.919, y = 158.642, z = 1377.826 }, rot = { x = 0.000, y = 202.651, z = 0.000 }, level = 26, drop_tag = "战斗中级璃月", state = GadgetState.ChestLocked, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 8 },
-	{ config_id = 72005, gadget_id = 70310006, pos = { x = -839.028, y = 158.650, z = 1374.157 }, rot = { x = 0.000, y = 92.948, z = 0.000 }, level = 32, state = GadgetState.GearStart, area_id = 8 }
+	{ config_id = 72004, gadget_id = 70211012, pos = { x = -835.919, y = 159.483, z = 1377.826 }, rot = { x = 5.860, y = 202.283, z = 352.810 }, level = 26, drop_tag = "战斗中级璃月", state = GadgetState.ChestLocked, isOneoff = true, persistent = true, explore = { name = "chest", exp = 1 }, area_id = 8 },
+	{ config_id = 72005, gadget_id = 70310006, pos = { x = -839.028, y = 158.983, z = 1374.157 }, rot = { x = 354.795, y = 93.083, z = 357.044 }, level = 32, state = GadgetState.GearStart, area_id = 8 }
 }
 
 -- 区域

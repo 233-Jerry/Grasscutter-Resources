@@ -25,7 +25,7 @@ npcs = {
 -- 装置
 gadgets = {
 	{ config_id = 124001, gadget_id = 70500000, pos = { x = -2721.107, y = 211.180, z = -4181.456 }, rot = { x = 0.000, y = 299.070, z = 0.000 }, level = 27, point_type = 9138, isOneoff = true, area_id = 11 },
-	{ config_id = 124002, gadget_id = 70710289, pos = { x = -2720.729, y = 210.975, z = -4181.896 }, rot = { x = 10.187, y = 306.906, z = 351.643 }, level = 27, area_id = 11 },
+	{ config_id = 124002, gadget_id = 70710289, pos = { x = -2720.754, y = 210.650, z = -4181.940 }, rot = { x = 0.000, y = 126.906, z = 183.929 }, level = 27, area_id = 11 },
 	{ config_id = 124003, gadget_id = 70360001, pos = { x = -2720.658, y = 211.124, z = -4181.536 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 27, area_id = 11 }
 }
 

@@ -131,6 +131,11 @@ end
 
 -- 触发操作
 function action_EVENT_GROUP_LOAD_598003(context, evt)
+	-- 将configid为 598001 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 598001, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+		end 
+	
 	-- 创建标识为"start"，时间节点为{wait}的时间轴，false用于控制该时间轴是否循环
 	ScriptLib.InitTimeAxis(context, "start", {defs.wait}, false)
 	
@@ -150,6 +155,12 @@ end
 
 -- 触发操作
 function action_EVENT_GROUP_LOAD_598004(context, evt)
+	-- 将configid为 598001 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 598001, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+		end 
+	
+	
 	
 	local axis
 	axis = defs.duration + defs.interval

@@ -20,7 +20,7 @@ npcs = {
 
 -- 装置
 gadgets = {
-	{ config_id = 541003, gadget_id = 70360001, pos = { x = -1184.907, y = 314.857, z = 2789.802 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 21 }
+	{ config_id = 541003, gadget_id = 70360001, pos = { x = -1184.907, y = 314.857, z = 2789.802 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, persistent = true, area_id = 21 }
 }
 
 -- 区域
@@ -29,7 +29,8 @@ regions = {
 
 -- 触发器
 triggers = {
-	{ config_id = 1541002, name = "ANY_MONSTER_DIE_541002", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_541002", action = "action_EVENT_ANY_MONSTER_DIE_541002", trigger_count = 0 }
+	{ config_id = 1541002, name = "ANY_MONSTER_DIE_541002", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_541002", action = "action_EVENT_ANY_MONSTER_DIE_541002", trigger_count = 0 },
+	{ config_id = 1541004, name = "GROUP_LOAD_541004", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_541004", action = "action_EVENT_GROUP_LOAD_541004", trigger_count = 0 }
 }
 
 -- 变量
@@ -71,7 +72,7 @@ suites = {
 		monsters = { 541001 },
 		gadgets = { 541003 },
 		regions = { },
-		triggers = { "ANY_MONSTER_DIE_541002" },
+		triggers = { "ANY_MONSTER_DIE_541002", "GROUP_LOAD_541004" },
 		rand_weight = 100
 	}
 }
@@ -99,6 +100,27 @@ function action_EVENT_ANY_MONSTER_DIE_541002(context, evt)
 		return -1
 	end
 	
+	-- 将configid为 541003 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 541003, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_541004(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_541004(context, evt)
 	-- 将configid为 541003 的物件更改为状态 GadgetState.GearStart
 	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 541003, GadgetState.GearStart) then
 	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")

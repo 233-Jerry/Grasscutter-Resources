@@ -35,8 +35,8 @@ gadgets = {
 	{ config_id = 3007, gadget_id = 70360056, pos = { x = -160.037, y = 261.096, z = 2233.949 }, rot = { x = 0.829, y = 0.162, z = 22.111 }, level = 1, area_id = 20 },
 	{ config_id = 3008, gadget_id = 70360057, pos = { x = -159.590, y = 261.271, z = 2233.903 }, rot = { x = 0.829, y = 0.162, z = 22.111 }, level = 1, area_id = 20 },
 	{ config_id = 3009, gadget_id = 70210106, pos = { x = -159.839, y = 261.179, z = 2233.605 }, rot = { x = 0.829, y = 0.162, z = 22.111 }, level = 26, chest_drop_id = 1000100, drop_count = 1, isOneoff = true, persistent = true, is_blossom_chest = true, area_id = 20 },
-	{ config_id = 3010, gadget_id = 70220103, pos = { x = -95.578, y = 321.211, z = 2222.361 }, rot = { x = 0.829, y = 0.162, z = 22.111 }, level = 1, area_id = 20 },
-	{ config_id = 3011, gadget_id = 70220103, pos = { x = -125.161, y = 319.078, z = 2230.489 }, rot = { x = 0.829, y = 0.162, z = 22.111 }, level = 1, area_id = 20 }
+	{ config_id = 3010, gadget_id = 70220103, pos = { x = -102.720, y = 328.761, z = 2231.094 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 20 },
+	{ config_id = 3011, gadget_id = 70220103, pos = { x = -138.469, y = 314.016, z = 2236.218 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, area_id = 20 }
 }
 
 -- 区域

@@ -11,8 +11,8 @@ local base_info = {
 
 -- 怪物
 monsters = {
-	{ config_id = 374001, monster_id = 28050401, pos = { x = -2523.314, y = 199.934, z = 4491.758 }, rot = { x = 0.000, y = 340.427, z = 0.000 }, level = 32, drop_tag = "采集动物", pose_id = 101, area_id = 26 },
-	{ config_id = 374002, monster_id = 28050401, pos = { x = -2507.012, y = 190.647, z = 4574.086 }, rot = { x = 0.000, y = 219.472, z = 0.000 }, level = 32, drop_tag = "采集动物", pose_id = 101, area_id = 26 }
+	{ config_id = 374001, monster_id = 28050401, pos = { x = -2523.314, y = 199.934, z = 4491.758 }, rot = { x = 0.000, y = 340.427, z = 0.000 }, level = 32, drop_tag = "采集动物", pose_id = 101, area_id = 26, vision_level = VisionLevelType.VISION_LEVEL_NEARBY },
+	{ config_id = 374002, monster_id = 28050401, pos = { x = -2507.012, y = 190.647, z = 4574.086 }, rot = { x = 0.000, y = 219.472, z = 0.000 }, level = 32, drop_tag = "采集动物", pose_id = 101, area_id = 26, vision_level = VisionLevelType.VISION_LEVEL_NEARBY }
 }
 
 -- NPC

@@ -66,9 +66,9 @@ triggers = {
 	{ config_id = 1121011, name = "GADGET_CREATE_121011", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_121011", action = "action_EVENT_GADGET_CREATE_121011", trigger_count = 0 },
 	-- 电梯下降，电梯上层操作台
 	{ config_id = 1121012, name = "SELECT_OPTION_121012", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_121012", action = "action_EVENT_SELECT_OPTION_121012", trigger_count = 0 },
-	-- 电梯下降，墙面机关操作台
+	-- 电梯下降，下层机关操作台
 	{ config_id = 1121013, name = "SELECT_OPTION_121013", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_121013", action = "action_EVENT_SELECT_OPTION_121013", trigger_count = 0 },
-	-- 电梯上升，地面机关操作台
+	-- 电梯上升，上层机关操作台
 	{ config_id = 1121014, name = "SELECT_OPTION_121014", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_121014", action = "action_EVENT_SELECT_OPTION_121014", trigger_count = 0 },
 	-- 电梯上升，电梯下层操作台
 	{ config_id = 1121015, name = "SELECT_OPTION_121015", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_121015", action = "action_EVENT_SELECT_OPTION_121015", trigger_count = 0 },
@@ -290,9 +290,20 @@ end
 
 -- 触发操作
 function action_EVENT_SELECT_OPTION_121013(context, evt)
-	-- 创建标识为"goingDown"，时间节点为{3}的时间轴，false用于控制该时间轴是否循环
-	ScriptLib.InitTimeAxis(context, "goingDown", {3}, false)
+	-- 调用提示id为 1000110000 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1000110000) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
 	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 0, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 121001, 331000005, {2}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
 	
 	-- 将configid为 121002 的物件更改为状态 GadgetState.GearStart
 	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 121002, GadgetState.GearStart) then
@@ -338,9 +349,20 @@ end
 
 -- 触发操作
 function action_EVENT_SELECT_OPTION_121014(context, evt)
-	-- 创建标识为"goingUp"，时间节点为{3}的时间轴，false用于控制该时间轴是否循环
-	ScriptLib.InitTimeAxis(context, "goingUp", {3}, false)
+	-- 调用提示id为 1000110000 的提示UI，会显示在屏幕中央偏下位置，id索引自 ReminderData表格
+	if 0 ~= ScriptLib.ShowReminder(context, 1000110000) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : active_reminder_ui")
+		return -1
+	end
 	
+	-- 设置移动平台点阵,点阵id为point_array_id
+	-- route_type = 0,1,2 [OneWay 单向/Reciprocate 往复/Loop 循环]
+	-- turn_mode = true/false 开启/关闭
+	local tempParam = {route_type = 0, turn_mode = false}
+	if 0 ~= ScriptLib.SetPlatformPointArray(context, 121001, 331000005, {1}, tempParam) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_platform_pointArray")
+	  return -1
+	end
 	
 	-- 将configid为 121003 的物件更改为状态 GadgetState.GearStart
 	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 121003, GadgetState.GearStart) then

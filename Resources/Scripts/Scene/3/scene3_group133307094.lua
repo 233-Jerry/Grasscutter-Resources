@@ -32,7 +32,8 @@ regions = {
 -- 触发器
 triggers = {
 	{ config_id = 1094003, name = "ANY_GADGET_DIE_94003", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_94003", action = "action_EVENT_ANY_GADGET_DIE_94003" },
-	{ config_id = 1094004, name = "GADGET_STATE_CHANGE_94004", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_94004", action = "action_EVENT_GADGET_STATE_CHANGE_94004", trigger_count = 0 }
+	{ config_id = 1094004, name = "GADGET_STATE_CHANGE_94004", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_94004", action = "action_EVENT_GADGET_STATE_CHANGE_94004", trigger_count = 0 },
+	{ config_id = 1094006, name = "GROUP_LOAD_94006", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_94006", action = "action_EVENT_GROUP_LOAD_94006", trigger_count = 0 }
 }
 
 -- 变量
@@ -65,7 +66,7 @@ suites = {
 		monsters = { },
 		gadgets = { 94001, 94002, 94005, 94007 },
 		regions = { },
-		triggers = { "ANY_GADGET_DIE_94003", "GADGET_STATE_CHANGE_94004" },
+		triggers = { "ANY_GADGET_DIE_94003", "GADGET_STATE_CHANGE_94004", "GROUP_LOAD_94006" },
 		rand_weight = 100
 	}
 }
@@ -107,6 +108,23 @@ end
 
 -- 触发操作
 function action_EVENT_GADGET_STATE_CHANGE_94004(context, evt)
+	-- 将configid为 94005 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 94005, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_94006(context, evt)
+	-- 判断指定group组指定gadget是否存在 
+	return not ScriptLib.CheckIsInGroup(context, 133307094, 94001)
+end
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_94006(context, evt)
 	-- 将configid为 94005 的物件更改为状态 GadgetState.GearStart
 	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 94005, GadgetState.GearStart) then
 	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")

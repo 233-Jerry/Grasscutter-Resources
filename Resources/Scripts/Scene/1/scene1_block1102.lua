@@ -1,6 +1,6 @@
 -- 所有的group
 groups = {
-	{ id = 111102001, pos = { x = 1508.456, y = 270.928, z = -1507.782 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
+	{ id = 111102001, refresh_id = 999999, pos = { x = 1508.456, y = 270.928, z = -1507.782 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102002, refresh_id = 1, pos = { x = 1551.319, y = 269.609, z = -1491.193 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102003, refresh_id = 1, pos = { x = 1325.420, y = 330.025, z = -1941.377 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102004, refresh_id = 1, pos = { x = 1275.905, y = 330.031, z = -1952.195 }, is_replaceable = { value = true, version = 0, new_bin_only = true } },
@@ -8,7 +8,7 @@ groups = {
 	{ id = 111102006, refresh_id = 1, pos = { x = 1474.041, y = 270.586, z = -1523.555 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102007, refresh_id = 1, pos = { x = 1825.049, y = 194.600, z = -1584.011 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102008, refresh_id = 1, pos = { x = 1626.451, y = 244.702, z = -1624.465 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
-	{ id = 111102009, refresh_id = 1, pos = { x = 1319.922, y = 330.013, z = -1960.545 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
+	{ id = 111102009, refresh_id = 1, pos = { x = 1319.922, y = 330.013, z = -1957.726 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102010, refresh_id = 1, pos = { x = 1296.263, y = 330.012, z = -1926.000 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102011, pos = { x = 1564.591, y = 252.079, z = -1640.687 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102012, refresh_id = 1002, pos = { x = 1526.594, y = 271.591, z = -1520.555 }, force_clean_sub_entity = true, is_replaceable = { value = false, version = 0, new_bin_only = true } },
@@ -71,6 +71,7 @@ groups = {
 	{ id = 111102078, refresh_id = 1, pos = { x = 2048.010, y = 219.678, z = -1685.007 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102079, pos = { x = 1422.000, y = 258.000, z = -1692.000 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102084, refresh_id = 1, pos = { x = 1159.540, y = 305.144, z = -1410.604 }, is_replaceable = { value = true, version = 0, new_bin_only = true } },
+	{ id = 111102085, refresh_id = 1001, pos = { x = 1560.185, y = 333.925, z = -2045.421 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102086, refresh_id = 1, pos = { x = 1260.152, y = 311.960, z = -1289.871 }, is_replaceable = { value = true, version = 0, new_bin_only = true } },
 	{ id = 111102088, refresh_id = 1002, pos = { x = 1807.915, y = 194.906, z = -1414.053 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },
 	{ id = 111102092, pos = { x = 1395.762, y = 276.598, z = -1440.193 }, is_replaceable = { value = false, version = 0, new_bin_only = true } },

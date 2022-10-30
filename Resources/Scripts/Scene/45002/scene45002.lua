@@ -11,6 +11,7 @@ scene_config = {
 		{ pos = { x = 31.615, y = -4.003, z = 1.821 }, rot = { x = 0.000, y = 180.000, z = 0.000 } }
 	},
 	die_y = -15,
+	city_id = 2,
 	vision_anchor = { x = -309.5, z = -349.6 }
 }
 

@@ -38,7 +38,7 @@ npcs = {
 
 -- 装置
 gadgets = {
-	[526001] = { config_id = 526001, gadget_id = 70330341, pos = { x = -2988.903, y = 221.784, z = 5551.069 }, rot = { x = 0.000, y = 0.000, z = 90.000 }, level = 32, persistent = true, worktop_config = { is_persistent = true, init_options = { 1 } }, area_id = 27 },
+	[526001] = { config_id = 526001, gadget_id = 70330341, pos = { x = -2988.603, y = 221.784, z = 5548.569 }, rot = { x = 0.000, y = 0.000, z = 90.000 }, level = 32, persistent = true, worktop_config = { is_persistent = true, init_options = { 1 } }, area_id = 27 },
 	[526002] = { config_id = 526002, gadget_id = 70330416, pos = { x = -2992.880, y = 219.305, z = 5561.070 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 32, persistent = true, vision_level = VisionLevelType.VISION_LEVEL_NORMAL, area_id = 27 }
 }
 

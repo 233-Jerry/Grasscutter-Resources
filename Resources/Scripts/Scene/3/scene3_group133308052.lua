@@ -46,7 +46,8 @@ regions = {
 triggers = {
 	{ config_id = 1052006, name = "ANY_MONSTER_DIE_52006", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_52006", action = "action_EVENT_ANY_MONSTER_DIE_52006" },
 	{ config_id = 1052007, name = "MONSTER_BATTLE_52007", event = EventType.EVENT_MONSTER_BATTLE, source = "", condition = "condition_EVENT_MONSTER_BATTLE_52007", action = "action_EVENT_MONSTER_BATTLE_52007" },
-	{ config_id = 1052019, name = "ANY_MONSTER_DIE_52019", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_52019", action = "action_EVENT_ANY_MONSTER_DIE_52019" }
+	{ config_id = 1052019, name = "ANY_MONSTER_DIE_52019", event = EventType.EVENT_ANY_MONSTER_DIE, source = "", condition = "condition_EVENT_ANY_MONSTER_DIE_52019", action = "action_EVENT_ANY_MONSTER_DIE_52019" },
+	{ config_id = 1052021, name = "GROUP_LOAD_52021", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_52021", action = "action_EVENT_GROUP_LOAD_52021", trigger_count = 0 }
 }
 
 -- 变量
@@ -79,7 +80,7 @@ suites = {
 		monsters = { 52001, 52002 },
 		gadgets = { 52004, 52005, 52008, 52009, 52010, 52011, 52012, 52013, 52016, 52017, 52018, 52020 },
 		regions = { },
-		triggers = { "MONSTER_BATTLE_52007", "ANY_MONSTER_DIE_52019" },
+		triggers = { "MONSTER_BATTLE_52007", "ANY_MONSTER_DIE_52019", "GROUP_LOAD_52021" },
 		rand_weight = 100
 	},
 	{
@@ -166,6 +167,27 @@ end
 function action_EVENT_ANY_MONSTER_DIE_52019(context, evt)
 	-- 添加suite3的新内容
 	    ScriptLib.AddExtraGroupSuite(context, 133308052, 3)
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_52021(context, evt)
+	-- 判断剩余怪物数量是否是0
+	if ScriptLib.GetGroupMonsterCount(context) ~= 0 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_52021(context, evt)
+	-- 将configid为 52004 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 52004, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
 	
 	return 0
 end

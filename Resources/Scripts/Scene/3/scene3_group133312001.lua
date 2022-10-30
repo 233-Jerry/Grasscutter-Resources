@@ -31,7 +31,7 @@ regions = {
 -- 触发器
 triggers = {
 	{ config_id = 1001002, name = "ENTER_REGION_1002", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_1002", action = "action_EVENT_ENTER_REGION_1002", trigger_count = 0, forbid_guest = false },
-	{ config_id = 1001003, name = "LEAVE_REGION_1003", event = EventType.EVENT_LEAVE_REGION, source = "", condition = "condition_EVENT_LEAVE_REGION_1003", action = "action_EVENT_LEAVE_REGION_1003", trigger_count = 0 },
+	{ config_id = 1001003, name = "LEAVE_REGION_1003", event = EventType.EVENT_LEAVE_REGION, source = "", condition = "condition_EVENT_LEAVE_REGION_1003", action = "action_EVENT_LEAVE_REGION_1003", trigger_count = 0, forbid_guest = false },
 	{ config_id = 1001004, name = "QUEST_FINISH_1004", event = EventType.EVENT_QUEST_FINISH, source = "7308418", condition = "", action = "action_EVENT_QUEST_FINISH_1004" },
 	{ config_id = 1001005, name = "QUEST_FINISH_1005", event = EventType.EVENT_QUEST_FINISH, source = "7308402", condition = "", action = "action_EVENT_QUEST_FINISH_1005" }
 }

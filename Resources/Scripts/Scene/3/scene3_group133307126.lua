@@ -59,7 +59,8 @@ triggers = {
 	-- 彻底关闭风扇
 	{ config_id = 1126009, name = "VARIABLE_CHANGE_126009", event = EventType.EVENT_VARIABLE_CHANGE, source = "", condition = "condition_EVENT_VARIABLE_CHANGE_126009", action = "action_EVENT_VARIABLE_CHANGE_126009", trigger_count = 0 },
 	-- 彻底关闭风扇
-	{ config_id = 1126010, name = "GROUP_LOAD_126010", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_126010", action = "action_EVENT_GROUP_LOAD_126010", trigger_count = 0 }
+	{ config_id = 1126010, name = "GROUP_LOAD_126010", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_126010", action = "action_EVENT_GROUP_LOAD_126010", trigger_count = 0 },
+	{ config_id = 1126011, name = "GROUP_LOAD_126011", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_126011", action = "action_EVENT_GROUP_LOAD_126011", trigger_count = 0 }
 }
 
 -- 变量
@@ -109,7 +110,7 @@ suite_disk = {
 		monsters = {
 		},
 		regions = { 126007, 126008 },
-		triggers = { "TIME_AXIS_PASS_126004", "TIME_AXIS_PASS_126005", "ENTER_REGION_126007", "ENTER_REGION_126008", "VARIABLE_CHANGE_126009", "GROUP_LOAD_126010" },
+		triggers = { "TIME_AXIS_PASS_126004", "TIME_AXIS_PASS_126005", "ENTER_REGION_126007", "ENTER_REGION_126008", "VARIABLE_CHANGE_126009", "GROUP_LOAD_126010", "GROUP_LOAD_126011" },
 		npcs = { },
 		variables = {
 			{ config_id = 1, name = "isRefresh", value = 0, no_refresh = true },
@@ -347,6 +348,33 @@ function action_EVENT_GROUP_LOAD_126010(context, evt)
 		-- 将指定flowGroup的进度和要素属性都改为目标suite（缺的创建，多的移除）
 	  ScriptLib.GoToFlowSuite(context, 133307126, 2)
 	
+	-- 将configid为 126001 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 126001, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	-- 将configid为 126002 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 126002, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_126011(context, evt)
+	-- 判断变量"isOff"为0
+	if ScriptLib.GetGroupVariableValue(context, "isOff") ~= 0 then
+			return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_126011(context, evt)
 	-- 将configid为 126001 的物件更改为状态 GadgetState.Default
 	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 126001, GadgetState.Default) then
 	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")

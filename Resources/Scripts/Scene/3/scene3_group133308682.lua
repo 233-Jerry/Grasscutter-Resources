@@ -30,7 +30,8 @@ regions = {
 -- 触发器
 triggers = {
 	{ config_id = 1682002, name = "ENTER_REGION_682002", event = EventType.EVENT_ENTER_REGION, source = "", condition = "condition_EVENT_ENTER_REGION_682002", action = "action_EVENT_ENTER_REGION_682002", trigger_count = 0 },
-	{ config_id = 1682003, name = "GADGET_STATE_CHANGE_682003", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_682003", action = "action_EVENT_GADGET_STATE_CHANGE_682003", trigger_count = 0 }
+	{ config_id = 1682003, name = "GADGET_STATE_CHANGE_682003", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_682003", action = "action_EVENT_GADGET_STATE_CHANGE_682003", trigger_count = 0 },
+	{ config_id = 1682004, name = "GROUP_LOAD_682004", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_682004", action = "action_EVENT_GROUP_LOAD_682004", trigger_count = 0 }
 }
 
 -- 变量
@@ -63,7 +64,7 @@ suites = {
 		monsters = { },
 		gadgets = { 682001 },
 		regions = { 682002 },
-		triggers = { "ENTER_REGION_682002", "GADGET_STATE_CHANGE_682003" },
+		triggers = { "ENTER_REGION_682002", "GADGET_STATE_CHANGE_682003", "GROUP_LOAD_682004" },
 		rand_weight = 100
 	},
 	{
@@ -97,6 +98,12 @@ end
 
 -- 触发操作
 function action_EVENT_ENTER_REGION_682002(context, evt)
+	-- 将本组内变量名为 "isLocked" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "isLocked", 0, 133308680) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
 	-- 运营数据埋点，匹配LD定义的规则使用
 	    if 0 ~= ScriptLib.MarkPlayerAction(context, 6100, 3, 1) then
 	      ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : mark_playerAction")
@@ -117,6 +124,12 @@ end
 
 -- 触发操作
 function action_EVENT_GADGET_STATE_CHANGE_682003(context, evt)
+	-- 将本组内变量名为 "isLocked" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "isLocked", 0, 133308680) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
+	
 		-- 重新生成指定group，指定suite
 		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133308672, suite = 3 }) then
 	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
@@ -164,6 +177,27 @@ function action_EVENT_GADGET_STATE_CHANGE_682003(context, evt)
 	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
 			return -1
 		end
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_682004(context, evt)
+	-- 判断指定group组剩余gadget数量是否是0 
+	if ScriptLib.CheckRemainGadgetCountByGroupId(context, {group_id = 133308682}) ~= 0 then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_682004(context, evt)
+	-- 将本组内变量名为 "isLocked" 的变量设置为 0
+	if 0 ~= ScriptLib.SetGroupVariableValueByGroup(context, "isLocked", 0, 133308680) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable_by_group")
+	  return -1
+	end
 	
 	return 0
 end

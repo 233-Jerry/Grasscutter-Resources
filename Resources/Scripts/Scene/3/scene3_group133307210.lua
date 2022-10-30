@@ -19,7 +19,6 @@ npcs = {
 
 -- 装置
 gadgets = {
-	{ config_id = 210001, gadget_id = 70330454, pos = { x = -2056.222, y = -13.289, z = 5530.917 }, rot = { x = 357.386, y = 25.114, z = 1.222 }, level = 32, area_id = 27 }
 }
 
 -- 区域
@@ -32,6 +31,13 @@ triggers = {
 
 -- 变量
 variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 210001, gadget_id = 70330454, pos = { x = -2056.222, y = -13.289, z = 5530.917 }, rot = { x = 357.386, y = 25.114, z = 1.222 }, level = 32, area_id = 27 }
+	}
 }
 
 --================================================================
@@ -58,7 +64,7 @@ suites = {
 		-- suite_id = 1,
 		-- description = ,
 		monsters = { },
-		gadgets = { 210001 },
+		gadgets = { },
 		regions = { },
 		triggers = { },
 		rand_weight = 100

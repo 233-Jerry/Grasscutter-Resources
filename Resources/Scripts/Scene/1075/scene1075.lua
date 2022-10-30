@@ -4,7 +4,7 @@ scene_config = {
 	size = { x = 512.0, z = 512.0 },
 	born_pos = { x = -55.070, y = 133.772, z = -0.058 },
 	born_rot = { x = 0.000, y = 90.000, z = 0.000 },
-	die_y = -20,
+	die_y = 126,
 	room_safe_pos = {
 		scene_id = 3,
 		safe_pos = {
@@ -30,7 +30,7 @@ block_rects = {
 }
 
 -- Dummy Points
-dummy_points = { }
+dummy_points = { "dummy_points" }
 
 -- Routes
 routes_config = { }

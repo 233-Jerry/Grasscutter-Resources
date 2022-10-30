@@ -46,7 +46,9 @@ triggers = {
 	{ config_id = 1076009, name = "GADGET_STATE_CHANGE_76009", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_76009", action = "action_EVENT_GADGET_STATE_CHANGE_76009" },
 	-- 运营埋点
 	{ config_id = 1076010, name = "GADGET_STATE_CHANGE_76010", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_76010", action = "action_EVENT_GADGET_STATE_CHANGE_76010" },
-	{ config_id = 1076011, name = "GROUP_LOAD_76011", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_76011", action = "action_EVENT_GROUP_LOAD_76011", trigger_count = 0 }
+	{ config_id = 1076011, name = "GROUP_LOAD_76011", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_76011", action = "action_EVENT_GROUP_LOAD_76011", trigger_count = 0 },
+	-- 保底
+	{ config_id = 1076012, name = "GROUP_LOAD_76012", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_76012", action = "action_EVENT_GROUP_LOAD_76012", trigger_count = 0 }
 }
 
 -- 变量
@@ -87,7 +89,7 @@ suites = {
 		monsters = { },
 		gadgets = { 76001, 76002, 76003, 76005, 76007, 76008 },
 		regions = { },
-		triggers = { "GADGET_STATE_CHANGE_76006", "GADGET_STATE_CHANGE_76009", "GADGET_STATE_CHANGE_76010", "GROUP_LOAD_76011" },
+		triggers = { "GADGET_STATE_CHANGE_76006", "GADGET_STATE_CHANGE_76009", "GADGET_STATE_CHANGE_76010", "GROUP_LOAD_76011", "GROUP_LOAD_76012" },
 		rand_weight = 100
 	}
 }
@@ -101,10 +103,6 @@ suites = {
 -- 触发条件
 function condition_EVENT_GADGET_STATE_CHANGE_76006(context, evt)
 	if GadgetState.Default ~= ScriptLib.GetGadgetStateByConfigId(context, 133308076, 76001) then
-		return false
-	end
-	
-	if GadgetState.Default ~= ScriptLib.GetGadgetStateByConfigId(context, 133308076, 76002) then
 		return false
 	end
 	
@@ -186,6 +184,30 @@ end
 
 -- 触发操作
 function action_EVENT_GROUP_LOAD_76011(context, evt)
+	-- 将configid为 76005 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 76005, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_76012(context, evt)
+	if GadgetState.Default ~= ScriptLib.GetGadgetStateByConfigId(context, 133308076, 76001) then
+		return false
+	end
+	
+	if GadgetState.Default == ScriptLib.GetGadgetStateByConfigId(context, 133308076, 76007) then
+		return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_76012(context, evt)
 	-- 将configid为 76005 的物件更改为状态 GadgetState.GearStart
 	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 76005, GadgetState.GearStart) then
 	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")

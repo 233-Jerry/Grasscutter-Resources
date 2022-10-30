@@ -42,7 +42,9 @@ triggers = {
 	-- 施肥
 	{ config_id = 1659010, name = "GADGET_STATE_CHANGE_659010", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_659010", action = "action_EVENT_GADGET_STATE_CHANGE_659010" },
 	-- 延迟开花
-	{ config_id = 1659011, name = "TIME_AXIS_PASS_659011", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_659011", action = "action_EVENT_TIME_AXIS_PASS_659011" }
+	{ config_id = 1659011, name = "TIME_AXIS_PASS_659011", event = EventType.EVENT_TIME_AXIS_PASS, source = "", condition = "condition_EVENT_TIME_AXIS_PASS_659011", action = "action_EVENT_TIME_AXIS_PASS_659011" },
+	-- 保底
+	{ config_id = 1659012, name = "GROUP_LOAD_659012", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_659012", action = "action_EVENT_GROUP_LOAD_659012" }
 }
 
 -- 变量
@@ -93,7 +95,7 @@ suites = {
 		monsters = { },
 		gadgets = { 659004, 659007 },
 		regions = { },
-		triggers = { "GADGET_STATE_CHANGE_659010", "TIME_AXIS_PASS_659011" },
+		triggers = { "GADGET_STATE_CHANGE_659010", "TIME_AXIS_PASS_659011", "GROUP_LOAD_659012" },
 		rand_weight = 100
 	},
 	{
@@ -218,6 +220,30 @@ end
 
 -- 触发操作
 function action_EVENT_TIME_AXIS_PASS_659011(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133308659, suite = 4 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_659012(context, evt)
+	local curQuestState = ScriptLib.GetHostQuestState(context,7330302)
+	if -1 == curQuestState or 0 == curQuestState then
+	  return false
+	end
+	if curQuestState ~= 3 then
+	   return false
+	end
+	
+	return true
+end
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_659012(context, evt)
 		-- 重新生成指定group，指定suite
 		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133308659, suite = 4 }) then
 	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")

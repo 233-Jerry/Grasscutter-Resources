@@ -31,8 +31,7 @@ gadgets = {
 	{ config_id = 151010, gadget_id = 70220103, pos = { x = -1948.971, y = 355.321, z = 4301.971 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 32, area_id = 26 },
 	{ config_id = 151011, gadget_id = 70220103, pos = { x = -2052.559, y = 329.311, z = 4271.750 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 32, area_id = 26 },
 	{ config_id = 151012, gadget_id = 70220103, pos = { x = -1813.572, y = 437.404, z = 4276.781 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 32, area_id = 26 },
-	{ config_id = 151013, gadget_id = 70220103, pos = { x = -1830.784, y = 374.715, z = 4215.025 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 26 },
-	{ config_id = 151014, gadget_id = 70330259, pos = { x = -1806.338, y = 357.941, z = 4174.766 }, rot = { x = 348.102, y = 351.650, z = 359.989 }, level = 30, persistent = true, vision_level = VisionLevelType.VISION_LEVEL_LITTLE_REMOTE, area_id = 26 }
+	{ config_id = 151013, gadget_id = 70220103, pos = { x = -1830.784, y = 374.715, z = 4215.025 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 30, area_id = 26 }
 }
 
 -- 区域
@@ -45,6 +44,13 @@ triggers = {
 
 -- 变量
 variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 151014, gadget_id = 70330259, pos = { x = -1806.338, y = 357.941, z = 4174.766 }, rot = { x = 348.102, y = 351.650, z = 359.989 }, level = 30, persistent = true, vision_level = VisionLevelType.VISION_LEVEL_LITTLE_REMOTE, area_id = 26 }
+	}
 }
 
 --================================================================
@@ -71,7 +77,7 @@ suites = {
 		-- suite_id = 1,
 		-- description = ,
 		monsters = { },
-		gadgets = { 151001, 151002, 151003, 151004, 151005, 151006, 151007, 151008, 151009, 151010, 151011, 151012, 151013, 151014 },
+		gadgets = { 151001, 151002, 151003, 151004, 151005, 151006, 151007, 151008, 151009, 151010, 151011, 151012, 151013 },
 		regions = { },
 		triggers = { },
 		rand_weight = 100

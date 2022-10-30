@@ -4,45 +4,126 @@ local base_info = {
 }
 
 -- DEFS_MISCS
-local	defs = 
-{
-	group_id = 111102009,
-	--起始操作台
-	start_operator = 9005,
+local defs = {
 
-	--每个阶段的所有演员物件config_id。用于统一设置状态
-	actor_list = 
-	{
-		[1] = {9001, 9002, 9003},
-		[2] = {9001, 9002, 9003}
+	option_turn = 613,
+	option_startstop = 7,
+
+	point_array = 110200027,
+	--运输装置config_id
+	carrier_list = {9001},
+	switcher_control = 
+	{--[操作台configID] = {被控岔路装置1, 被控岔路装置2},
+		[9017] = {9003},
 	},
-	--可拾取的gadget列表，即not in any suite的夜鸦雕像
-	pickable_gadget = 
+
+	--几条路 注意是point_list有向的 倒数第二个点为岔路判定点
+	way_info = 
 	{
-		9001, 9002
-	},
-	--行动序列
-	actions = 
-	{
+		--key为路径几 顺序无所谓
+		[1] = 
 		{
-	   		[1] = { config_id = 9001, reminder_id = 31021109, point_array = 0, point_id_list = {}, duration = 5},
+			point_list = {18,1},
+
+			spawn_point = 0,
+
+			gear_id = 9003, --此判定点依据哪个岔路物件
+
+			dir = --岔路物件每个State通向哪
+			{	--GadgetState索引way_info ID
+				[0] = 7,
+				[201] = 0,
+				[202] = 0,
+				[204] = 0,
+			}, 
 		},
+		[2] = 
 		{
-	  		[1] = { config_id = 9002, reminder_id = 31021107, point_array = 0, point_id_list = {}, duration = 3},
+			point_list = {12,11,10,9,8,7,6,5,4,3},
+
+			spawn_point = 3,
+
+			gear_id = 0, --此判定点依据哪个岔路物件
+
+			dir = --岔路物件每个State通向哪
+			{	--GadgetState索引way_info ID
+				[0] = 0,
+				[201] = 5,
+				[202] = 0,
+				[203] = 0,
+			}, 
+		},
+		[3] = 
+		{
+			point_list = {2,3,4,5,6,7,8,9,10,11},
+
+			spawn_point = 9003,
+
+			gear_id = 0, --此判定点依据哪个岔路物件
+
+			dir = --岔路物件每个State通向哪
+			{	--GadgetState索引way_info ID
+				[0] = 0,
+				[201] = 5,
+				[202] = 0,
+				[203] = 0,
+			}, 
+		},
+		[5] = 
+		{
+			point_list = {12,13,14,15},
+
+			spawn_point = 0,
+
+			gear_id = 0, --此判定点依据哪个岔路物件
+
+			dir = --岔路物件每个State通向哪
+			{	--GadgetState索引way_info ID
+				[0] = 0,
+				[201] = 3,
+				[202] = 0,
+				[203] = 0,
+			}, 
+		},
+		[6] = 
+		{
+			point_list = {12,16,17},
+
+			spawn_point = 0,
+
+			gear_id = 0, --此判定点依据哪个岔路物件
+
+			dir = --岔路物件每个State通向哪
+			{	--GadgetState索引way_info ID
+				[0] = 0,
+				[201] = 0,
+				[202] = 0,
+				[203] = 0,
+			}, 
+		},
+		[7] = 
+		{
+			point_list = {2,15,14,13},
+
+			spawn_point = 0,
+
+			gear_id = 9003, --此判定点依据哪个岔路物件
+
+			dir = --岔路物件每个State通向哪
+			{	--GadgetState索引way_info ID
+				[0] = 6,
+				[201] = 2,
+				[202] = 0,
+				[203] = 0,
+			}, 
 		},
 	},
 
-	--每段剧情结束时加载的对应suite(放聚光灯和操作台用),和正确的放置槽位config_id
-	--key是阶段id
-	question_suits =  
+	--停车点 到此点时会判断是否需要停车
+	stop_points = 
 	{
-   		[1] = { add_suite = 3, correct_slot = 9010, correct_gadget = 9001},
-   		[2] = { add_suite = 4, correct_slot = 9009, correct_gadget = 9002},
+		7, 14
 	},
-
-	--玩法范围，主机出圈则重置
-	play_region = 9012,
-
 }
 
 --================================================================
@@ -61,26 +142,26 @@ npcs = {
 
 -- 装置
 gadgets = {
-	[9001] = { config_id = 9001, gadget_id = 70310173, pos = { x = 1323.071, y = 330.084, z = -1962.631 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
-	[9002] = { config_id = 9002, gadget_id = 70310173, pos = { x = 1326.484, y = 330.091, z = -1961.811 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
-	[9003] = { config_id = 9003, gadget_id = 70310173, pos = { x = 1324.727, y = 330.099, z = -1964.467 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
-	[9004] = { config_id = 9004, gadget_id = 70310175, pos = { x = 1324.083, y = 330.012, z = -1958.109 }, rot = { x = 0.000, y = 186.013, z = 0.000 }, level = 1 },
-	-- 起始操作台
-	[9005] = { config_id = 9005, gadget_id = 70360001, pos = { x = 1324.083, y = 330.012, z = -1958.109 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, worktop_config = { init_options = { 24 } } },
-	[9006] = { config_id = 9006, gadget_id = 70310174, pos = { x = 1320.903, y = 330.012, z = -1961.089 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
-	[9007] = { config_id = 9007, gadget_id = 70310174, pos = { x = 1320.563, y = 330.079, z = -1963.965 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
-	[9008] = { config_id = 9008, gadget_id = 70310174, pos = { x = 1325.079, y = 330.080, z = -1960.317 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
-	-- 放置点
-	[9009] = { config_id = 9009, gadget_id = 70360001, pos = { x = 1320.569, y = 330.159, z = -1963.930 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, worktop_config = { init_options = { 35 } } },
-	-- 放置点
-	[9010] = { config_id = 9010, gadget_id = 70360001, pos = { x = 1320.936, y = 330.092, z = -1961.123 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, worktop_config = { init_options = { 35 } } },
-	-- 放置点
-	[9011] = { config_id = 9011, gadget_id = 70360001, pos = { x = 1325.005, y = 330.160, z = -1960.288 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, worktop_config = { init_options = { 35 } } }
+	[9001] = { config_id = 9001, gadget_id = 70320028, pos = { x = 1308.828, y = 333.625, z = -1957.350 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, is_use_point_array = true },
+	-- 可动岔路
+	[9003] = { config_id = 9003, gadget_id = 70320027, pos = { x = 1314.664, y = 330.013, z = -1950.176 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	[9004] = { config_id = 9004, gadget_id = 70310313, pos = { x = 1314.775, y = 330.019, z = -1953.933 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	[9005] = { config_id = 9005, gadget_id = 70320027, pos = { x = 1314.717, y = 330.017, z = -1957.694 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 },
+	[9006] = { config_id = 9006, gadget_id = 70320027, pos = { x = 1307.057, y = 330.017, z = -1949.990 }, rot = { x = 0.000, y = 180.000, z = 0.000 }, level = 1 },
+	[9008] = { config_id = 9008, gadget_id = 70310313, pos = { x = 1306.974, y = 330.019, z = -1946.219 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	[9009] = { config_id = 9009, gadget_id = 70310313, pos = { x = 1310.907, y = 330.019, z = -1949.996 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 },
+	[9010] = { config_id = 9010, gadget_id = 70310313, pos = { x = 1310.958, y = 330.019, z = -1957.782 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 },
+	[9011] = { config_id = 9011, gadget_id = 70310313, pos = { x = 1323.046, y = 330.019, z = -1953.933 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	[9012] = { config_id = 9012, gadget_id = 70320027, pos = { x = 1322.988, y = 330.017, z = -1957.694 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 },
+	[9013] = { config_id = 9013, gadget_id = 70310313, pos = { x = 1319.177, y = 330.019, z = -1949.996 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 },
+	[9014] = { config_id = 9014, gadget_id = 70310313, pos = { x = 1319.229, y = 330.019, z = -1957.782 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 },
+	[9015] = { config_id = 9015, gadget_id = 70320027, pos = { x = 1322.934, y = 330.013, z = -1950.176 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1 },
+	[9016] = { config_id = 9016, gadget_id = 70310313, pos = { x = 1316.604, y = 330.019, z = -1957.782 }, rot = { x = 0.000, y = 90.000, z = 0.000 }, level = 1 },
+	[9017] = { config_id = 9017, gadget_id = 70360002, pos = { x = 1314.900, y = 330.023, z = -1945.700 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, worktop_config = { init_options = { 7, 613 } } }
 }
 
 -- 区域
 regions = {
-	[9012] = { config_id = 9012, shape = RegionShape.SPHERE, radius = 12, pos = { x = 1323.647, y = 330.011, z = -1960.951 } }
 }
 
 -- 触发器
@@ -115,34 +196,7 @@ suites = {
 		-- suite_id = 1,
 		-- description = ,
 		monsters = { },
-		gadgets = { 9003, 9004, 9005, 9006, 9007, 9008 },
-		regions = { 9012 },
-		triggers = { },
-		rand_weight = 100
-	},
-	{
-		-- suite_id = 2,
-		-- description = ,
-		monsters = { },
-		gadgets = { },
-		regions = { },
-		triggers = { },
-		rand_weight = 100
-	},
-	{
-		-- suite_id = 3,
-		-- description = ,
-		monsters = { },
-		gadgets = { 9009, 9010 },
-		regions = { },
-		triggers = { },
-		rand_weight = 100
-	},
-	{
-		-- suite_id = 4,
-		-- description = ,
-		monsters = { },
-		gadgets = { 9011 },
+		gadgets = { 9001, 9003, 9004, 9005, 9006, 9008, 9009, 9010, 9011, 9012, 9013, 9014, 9015, 9016, 9017 },
 		regions = { },
 		triggers = { },
 		rand_weight = 100
@@ -155,4 +209,4 @@ suites = {
 -- 
 --================================================================
 
-require "V2_8/CrowTheatre_Howdunit"
+require "V3_2/MachineCarrier"

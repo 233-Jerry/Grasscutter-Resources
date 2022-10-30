@@ -44,9 +44,9 @@ gadgets = {
 	{ config_id = 1002, gadget_id = 70360001, pos = { x = 0.008, y = -34.538, z = -0.079 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, room = 1 },
 	{ config_id = 1003, gadget_id = 70360001, pos = { x = 0.008, y = 5.902, z = -0.079 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, room = 1 },
 	{ config_id = 1004, gadget_id = 70360001, pos = { x = 0.008, y = 105.506, z = -0.079 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, room = 1 },
-	{ config_id = 1005, gadget_id = 70360001, pos = { x = 2.423, y = -34.538, z = -0.079 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, room = 1 },
-	{ config_id = 1006, gadget_id = 70360001, pos = { x = 2.423, y = 5.902, z = -0.079 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, room = 1 },
-	{ config_id = 1007, gadget_id = 70360001, pos = { x = 2.423, y = 105.506, z = -0.079 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, room = 1 }
+	{ config_id = 1005, gadget_id = 70950145, pos = { x = 0.005, y = -34.538, z = 0.001 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, room = 1 },
+	{ config_id = 1006, gadget_id = 70950145, pos = { x = 0.027, y = 5.902, z = -0.016 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, room = 1 },
+	{ config_id = 1007, gadget_id = 70950145, pos = { x = 0.027, y = 105.506, z = -0.016 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 1, room = 1 }
 }
 
 -- 区域
@@ -55,6 +55,7 @@ regions = {
 
 -- 触发器
 triggers = {
+	{ config_id = 1001008, name = "QUEST_FINISH_1008", event = EventType.EVENT_QUEST_FINISH, source = "302812", condition = "", action = "action_EVENT_QUEST_FINISH_1008", trigger_count = 0 }
 }
 
 -- 变量
@@ -87,7 +88,7 @@ suites = {
 		monsters = { },
 		gadgets = { 1001, 1002, 1003, 1004, 1005, 1006, 1007 },
 		regions = { },
-		triggers = { },
+		triggers = { "QUEST_FINISH_1008" },
 		rand_weight = 100
 	}
 }
@@ -97,5 +98,16 @@ suites = {
 -- 触发器
 -- 
 --================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_1008(context, evt)
+	-- 将本组内变量名为 "questUnlockProgress" 的变量设置为 4
+	if 0 ~= ScriptLib.SetGroupVariableValue(context, "questUnlockProgress", 4) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_groupVariable")
+	  return -1
+	end
+	
+	return 0
+end
 
 require "V3_0/LibraryElevator"

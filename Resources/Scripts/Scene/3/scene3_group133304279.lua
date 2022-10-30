@@ -28,10 +28,20 @@ regions = {
 
 -- 触发器
 triggers = {
+	{ config_id = 1279003, name = "QUEST_FINISH_279003", event = EventType.EVENT_QUEST_FINISH, source = "1300706", condition = "", action = "", trigger_count = 0 },
+	{ config_id = 1279004, name = "QUEST_FINISH_279004", event = EventType.EVENT_QUEST_FINISH, source = "1300707", condition = "", action = "action_EVENT_QUEST_FINISH_279004", trigger_count = 0 }
 }
 
 -- 变量
 variables = {
+}
+
+-- 废弃数据
+garbages = {
+	triggers = {
+		{ config_id = 1279002, name = "QUEST_START_279002", event = EventType.EVENT_QUEST_START, source = "1300707", condition = "", action = "action_EVENT_QUEST_START_279002", trigger_count = 0 },
+		{ config_id = 1279005, name = "GROUP_LOAD_279005", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "", action = "action_EVENT_GROUP_LOAD_279005", trigger_count = 0 }
+	}
 }
 
 --================================================================
@@ -60,8 +70,18 @@ suites = {
 		monsters = { },
 		gadgets = { 279001 },
 		regions = { },
-		triggers = { },
+		triggers = { "QUEST_FINISH_279003" },
 		rand_weight = 100
+	},
+	{
+		-- suite_id = 2,
+		-- description = ,
+		monsters = { },
+		gadgets = { },
+		regions = { },
+		triggers = { "QUEST_FINISH_279004" },
+		rand_weight = 100,
+		ban_refresh = true
 	}
 }
 
@@ -70,3 +90,20 @@ suites = {
 -- 触发器
 -- 
 --================================================================
+
+-- 触发操作
+function action_EVENT_QUEST_FINISH_279004(context, evt)
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133304279, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+		-- 重新生成指定group，指定suite
+		if 0 ~= ScriptLib.RefreshGroup(context, { group_id = 133304279, suite = 1 }) then
+	    ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : refresh_group_to_suite")
+			return -1
+		end
+	
+	return 0
+end

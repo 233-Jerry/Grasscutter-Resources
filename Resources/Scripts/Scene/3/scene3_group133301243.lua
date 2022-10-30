@@ -27,7 +27,7 @@ gadgets = {
 	{ config_id = 243006, gadget_id = 70500000, pos = { x = -536.610, y = 193.726, z = 3726.608 }, rot = { x = 7.294, y = 282.111, z = 356.458 }, level = 33, point_type = 1002, area_id = 22 },
 	{ config_id = 243007, gadget_id = 70500000, pos = { x = -535.711, y = 194.399, z = 3723.603 }, rot = { x = 0.000, y = 29.907, z = 0.000 }, level = 33, point_type = 1001, area_id = 22 },
 	{ config_id = 243008, gadget_id = 70500000, pos = { x = -530.184, y = 196.080, z = 3728.571 }, rot = { x = 0.000, y = 57.067, z = 0.000 }, level = 33, point_type = 1001, area_id = 22 },
-	{ config_id = 243009, gadget_id = 70500000, pos = { x = -533.021, y = 195.204, z = 3726.024 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, point_type = 1005, area_id = 22 }
+	{ config_id = 243010, gadget_id = 70500000, pos = { x = -533.021, y = 195.204, z = 3726.024 }, rot = { x = 332.638, y = 114.410, z = 14.414 }, level = 33, point_type = 1003, area_id = 22 }
 }
 
 -- 区域
@@ -40,6 +40,13 @@ triggers = {
 
 -- 变量
 variables = {
+}
+
+-- 废弃数据
+garbages = {
+	gadgets = {
+		{ config_id = 243009, gadget_id = 70500000, pos = { x = -533.021, y = 195.204, z = 3726.024 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 33, point_type = 1005, area_id = 22 }
+	}
 }
 
 --================================================================
@@ -66,7 +73,7 @@ suites = {
 		-- suite_id = 1,
 		-- description = ,
 		monsters = { },
-		gadgets = { 243001, 243002, 243003, 243004, 243005, 243006, 243007, 243008, 243009 },
+		gadgets = { 243001, 243002, 243003, 243004, 243005, 243006, 243007, 243008, 243010 },
 		regions = { },
 		triggers = { },
 		rand_weight = 100

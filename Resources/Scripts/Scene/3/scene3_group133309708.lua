@@ -11,7 +11,7 @@ local base_info = {
 
 -- 怪物
 monsters = {
-	{ config_id = 708001, monster_id = 28050401, pos = { x = -2905.832, y = 227.392, z = 5936.484 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 32, drop_tag = "采集动物", pose_id = 102, area_id = 27 }
+	{ config_id = 708001, monster_id = 28050401, pos = { x = -2905.832, y = 227.392, z = 5936.484 }, rot = { x = 0.000, y = 0.000, z = 0.000 }, level = 32, drop_tag = "采集动物", pose_id = 102, area_id = 27, vision_level = VisionLevelType.VISION_LEVEL_NEARBY }
 }
 
 -- NPC

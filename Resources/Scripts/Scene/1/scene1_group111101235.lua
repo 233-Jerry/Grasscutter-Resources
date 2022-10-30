@@ -18,9 +18,9 @@ monsters = {
 	{ config_id = 235006, monster_id = 21010101, pos = { x = 2234.155, y = 244.120, z = -1575.034 }, rot = { x = 0.000, y = 144.489, z = 0.000 }, level = 1, drop_id = 1000100 },
 	{ config_id = 235007, monster_id = 21010101, pos = { x = 2233.255, y = 244.120, z = -1578.510 }, rot = { x = 0.000, y = 89.567, z = 0.000 }, level = 1, drop_id = 1000100 },
 	{ config_id = 235008, monster_id = 21010101, pos = { x = 2234.228, y = 244.120, z = -1582.120 }, rot = { x = 0.000, y = 29.969, z = 0.000 }, level = 1, drop_id = 1000100 },
-	{ config_id = 235009, monster_id = 20010901, pos = { x = 2244.668, y = 244.120, z = -1578.633 }, rot = { x = 0.000, y = 268.961, z = 0.000 }, level = 1, drop_tag = "大史莱姆" },
-	{ config_id = 235010, monster_id = 21011301, pos = { x = 2241.650, y = 244.120, z = -1572.063 }, rot = { x = 0.000, y = 221.819, z = 0.000 }, level = 1, drop_tag = "丘丘人" },
-	{ config_id = 235011, monster_id = 21010401, pos = { x = 2241.705, y = 244.120, z = -1585.008 }, rot = { x = 0.000, y = 325.170, z = 0.000 }, level = 1, drop_tag = "远程丘丘人" }
+	{ config_id = 235009, monster_id = 20010901, pos = { x = 2244.668, y = 244.120, z = -1578.633 }, rot = { x = 0.000, y = 268.961, z = 0.000 }, level = 1, drop_id = 1000100 },
+	{ config_id = 235010, monster_id = 21011301, pos = { x = 2241.650, y = 244.120, z = -1572.063 }, rot = { x = 0.000, y = 221.819, z = 0.000 }, level = 1, drop_id = 1000100 },
+	{ config_id = 235011, monster_id = 21010401, pos = { x = 2241.705, y = 244.120, z = -1585.008 }, rot = { x = 0.000, y = 325.170, z = 0.000 }, level = 1, drop_id = 1000100 }
 }
 
 -- NPC
@@ -127,8 +127,8 @@ end
 
 -- 触发条件
 function condition_EVENT_SELECT_OPTION_235015(context, evt)
-	-- 判断是gadgetid 0 option_id 177
-	if 0 ~= evt.param1 then
+	-- 判断是gadgetid 235013 option_id 177
+	if 235013 ~= evt.param1 then
 		return false	
 	end
 	

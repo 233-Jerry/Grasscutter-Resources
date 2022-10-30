@@ -98,7 +98,7 @@ suites = {
 		monsters = { },
 		gadgets = { 204001, 204002, 204003, 204004, 204005 },
 		regions = { },
-		triggers = { "GADGET_STATE_CHANGE_204006", "GADGET_STATE_CHANGE_204007", "VARIABLE_CHANGE_204008", "VARIABLE_CHANGE_204009", "GROUP_LOAD_204010", "GADGET_STATE_CHANGE_204011", "GROUP_LOAD_204012", "VARIABLE_CHANGE_204013" },
+		triggers = { "GADGET_STATE_CHANGE_204006", "VARIABLE_CHANGE_204008", "VARIABLE_CHANGE_204009", "GROUP_LOAD_204010", "GADGET_STATE_CHANGE_204011", "GROUP_LOAD_204012", "VARIABLE_CHANGE_204013" },
 		rand_weight = 100
 	}
 }
@@ -139,6 +139,11 @@ end
 function condition_EVENT_GADGET_STATE_CHANGE_204007(context, evt)
 	if 204003 ~= evt.param2 or GadgetState.Default ~= evt.param1 then
 		return false
+	end
+	
+	-- 判断变量"isActive"为0
+	if ScriptLib.GetGroupVariableValue(context, "isActive") ~= 0 then
+			return false
 	end
 	
 	return true
@@ -257,16 +262,14 @@ end
 
 -- 触发操作
 function action_EVENT_GROUP_LOAD_204012(context, evt)
-	-- 将configid为 204001 的物件更改为状态 GadgetState.Default
-	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 204001, GadgetState.Default) then
-	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
-			return -1
-		end 
-	
 	-- 将configid为 204004 的物件更改为状态 GadgetState.GearStart
 	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 204004, GadgetState.GearStart) then
 	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
-			return -1
+		end 
+	
+	-- 将configid为 204001 的物件更改为状态 GadgetState.Default
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 204001, GadgetState.Default) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
 		end 
 	
 	return 0

@@ -34,7 +34,8 @@ triggers = {
 	{ config_id = 1657003, name = "GADGET_CREATE_657003", event = EventType.EVENT_GADGET_CREATE, source = "", condition = "condition_EVENT_GADGET_CREATE_657003", action = "action_EVENT_GADGET_CREATE_657003", trigger_count = 0 },
 	{ config_id = 1657004, name = "SELECT_OPTION_657004", event = EventType.EVENT_SELECT_OPTION, source = "", condition = "condition_EVENT_SELECT_OPTION_657004", action = "action_EVENT_SELECT_OPTION_657004" },
 	{ config_id = 1657005, name = "GADGET_STATE_CHANGE_657005", event = EventType.EVENT_GADGET_STATE_CHANGE, source = "", condition = "condition_EVENT_GADGET_STATE_CHANGE_657005", action = "action_EVENT_GADGET_STATE_CHANGE_657005", trigger_count = 0 },
-	{ config_id = 1657007, name = "ANY_GADGET_DIE_657007", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_657007", action = "action_EVENT_ANY_GADGET_DIE_657007" }
+	{ config_id = 1657007, name = "ANY_GADGET_DIE_657007", event = EventType.EVENT_ANY_GADGET_DIE, source = "", condition = "condition_EVENT_ANY_GADGET_DIE_657007", action = "action_EVENT_ANY_GADGET_DIE_657007" },
+	{ config_id = 1657009, name = "GROUP_LOAD_657009", event = EventType.EVENT_GROUP_LOAD, source = "", condition = "condition_EVENT_GROUP_LOAD_657009", action = "action_EVENT_GROUP_LOAD_657009", trigger_count = 0 }
 }
 
 -- 变量
@@ -76,7 +77,7 @@ suites = {
 		monsters = { },
 		gadgets = { 657002, 657008 },
 		regions = { },
-		triggers = { "GADGET_STATE_CHANGE_657005" },
+		triggers = { "GADGET_STATE_CHANGE_657005", "GROUP_LOAD_657009" },
 		rand_weight = 100
 	}
 }
@@ -170,6 +171,23 @@ function action_EVENT_ANY_GADGET_DIE_657007(context, evt)
 	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
 	  return -1
 	end
+	
+	return 0
+end
+
+-- 触发条件
+function condition_EVENT_GROUP_LOAD_657009(context, evt)
+	-- 判断指定group组指定gadget是否存在 
+	return not ScriptLib.CheckIsInGroup(context, 133303657, 657002)
+end
+
+-- 触发操作
+function action_EVENT_GROUP_LOAD_657009(context, evt)
+	-- 将configid为 657008 的物件更改为状态 GadgetState.GearStart
+	if 0 ~= ScriptLib.SetGadgetStateByConfigId(context, 657008, GadgetState.GearStart) then
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : set_gadget_state_by_configId")
+			return -1
+		end 
 	
 	return 0
 end
