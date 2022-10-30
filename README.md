@@ -1,5 +1,5 @@
 # Grasscutter Resources
-> <em>Resource Version - "Certain Anime Game" 3.1</em><br/>
+> <em>Resource Version - "Certain Anime Game" 3.2</em><br/>
 
 - ExcelBinOutput (QuestExcelConfigData 3.1 but miss acceptCond,failCond,finishExec,failExec,beginExec)
 - BinOutput (2.7 base) (3.1 configGadget,AbilityGroup,Ability,ConfigAvatar,Climate,Common,Coop,CustomLevelBrick,CustomLevelDungeon,HomeFurniture,HomeworldFurnitureSuit,Monster,Scene/LevelLayout,SceneNpcBornNoGroup,Talent,Quest) (LevelDesign\Routes ??)
