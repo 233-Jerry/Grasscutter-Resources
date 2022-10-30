@@ -401,6 +401,207 @@
             "shakeDistance": 30.0
           }
         }
+      },
+      // Elite
+      "AtkBurning01_Elite": {
+        "attackPattern": {
+          "$type": "ConfigAttackBox",
+          "triggerType": "TriggerNoRepeat",
+          "size": {
+            "x": 3,
+            "y": 5,
+            "z": 7.0
+          },
+          "born": {
+            "$type": "ConfigBornByTarget",
+            "offset": {
+              "x": 0,
+              "y": 2.5,
+              "z": 2.5
+            }
+          }
+        },
+        "attackInfo": {
+          "attackTag": "Effigy_Fire_MultiAtk1",
+          "attenuationGroup": "Effigy_Fire_Elite_MultiAtk1",
+          "attenuationTag": "Effigy_Fire_Elite_MultiAtk1",
+          "attackProperty": {
+            "damagePercentage": 1.0,
+            "strikeType": "Blunt",
+            "attackType": "Melee",
+            "enBreak": 200.0,
+            "elementDurability": 50,
+            "elementType": "Fire"
+          },
+          "hitPattern": {
+            "hitImpulseType": "LV5",
+            "reboundRatio": 0,
+            "hitHaltTime": 0.0,
+            "hitHaltTimeScale": 0.01,
+            "muteHitText": false
+          },
+          "forceCameraShake": true,
+          "cameraShake": {
+            "shakeType": "Center",
+            "shakeRange": 1,
+            "shakeTime": 0.3,
+            "shakeDistance": 30.0
+          }
+        }
+      },
+      "AtkBurning01_Extra_Elite": {
+        "attackPattern": {
+          "$type": "ConfigAttackBox",
+          "triggerType": "TriggerNoRepeat",
+          "size": {
+            "x": 8,
+            "y": 10,
+            "z": 5.8
+          },
+          "born": {
+            "$type": "ConfigBornByTarget",
+            "offset": {
+              "x": 0,
+              "y": 2.0,
+              "z": 2.0
+            }
+          }
+        },
+        "attackInfo": {
+          "attackTag": "Effigy_Fire_MultiAtk1",
+          "attenuationGroup": "Effigy_Fire_Elite_MultiAtk1",
+          "attenuationTag": "Effigy_Fire_Elite_MultiAtk1",
+          "attackProperty": {
+            "damagePercentage": 1.0,
+            "strikeType": "Blunt",
+            "attackType": "Melee",
+            "enBreak": 200.0,
+            "elementDurability": 50,
+            "elementType": "Fire"
+          },
+          "hitPattern": {
+            "hitImpulseType": "LV5",
+            "hitHaltTime": 0.0,
+            "hitHaltTimeScale": 0.01,
+            "muteHitText": false
+          },
+          "forceCameraShake": true,
+          "cameraShake": {
+            "shakeType": "Center",
+            "shakeRange": 1,
+            "shakeTime": 0.3,
+            "shakeDistance": 30.0
+          }
+        }
+      },
+      "AtkBurning02_01_Elite": {
+        "attackPattern": {
+          "$type": "ConfigAttackCircle",
+          "height": 5,
+          "triggerType": "TriggerNoRepeat",
+          "fanAngle": 360.0,
+          "radius": 5.5,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        "attackInfo": {
+          "attackTag": "Effigy_Fire_MultiAtk2",
+          "attackProperty": {
+            "damagePercentage": 1.0,
+            "strikeType": "Blunt",
+            "attackType": "Melee",
+            "enBreak": 200.0,
+            "elementDurability": 50,
+            "elementType": "Fire"
+          },
+          "hitPattern": {
+            "hitImpulseType": "LV4",
+            "hitHaltTime": 0.0,
+            "hitHaltTimeScale": 0.01,
+            "muteHitText": false
+          }
+        }
+      },
+      "AtkBurning03_Elite": {
+        "attackPattern": {
+          "$type": "ConfigAttackCircle",
+          "height": 5,
+          "triggerType": "TriggerNoRepeat",
+          "fanAngle": 360.0,
+          "radius": 8.0,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        "attackInfo": {
+          "attackTag": "Effigy_Fire_MultiAtk3",
+          "attackProperty": {
+            "damagePercentage": 1.0,
+            "strikeType": "Blunt",
+            "attackType": "Melee",
+            "enBreak": 200.0,
+            "elementDurability": 50,
+            "elementType": "Fire"
+          },
+          "hitPattern": {
+            "hitImpulseType": "LV5",
+            "hitHaltTime": 0.0,
+            "hitHaltTimeScale": 0.01,
+            "muteHitText": false
+          },
+          "forceCameraShake": true,
+          "cameraShake": {
+            "shakeType": "Center",
+            "shakeRange": 1,
+            "shakeTime": 0.3,
+            "shakeDistance": 30.0
+          }
+        }
+      },
+      "AtkBurning03_02_Elite": {
+        "attackPattern": {
+          "$type": "ConfigAttackCircle",
+          "height": 5,
+          "triggerType": "TriggerNoRepeat",
+          "fanAngle": 360.0,
+          "radius": 8,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        "attackInfo": {
+          "attackTag": "Effigy_Fire_MultiAtk3",
+          "attackProperty": {
+            "damagePercentage": 0.33,
+            "strikeType": "Blunt",
+            "attackType": "Melee",
+            "enBreak": 50.0,
+            "elementDurability": 50,
+            "elementType": "Fire"
+          },
+          "hitPattern": {
+            "hitImpulseType": "LV3",
+            "hitHaltTime": 0.0,
+            "hitHaltTimeScale": 0.01,
+            "muteHitText": false
+          }
+        }
       }
     }
   },
@@ -418,7 +619,7 @@
       "inputKeyCode": 259
     },
     {
-      "keyID": 241,
+      "keyID": 242,
       "inputKeyCode": 260
     },
     {
@@ -426,20 +627,36 @@
       "inputKeyCode": 261
     },
     {
-      "keyID": 321,
+      "keyID": 322,
       "inputKeyCode": 262
     },
     {
-      "keyID": 331,
+      "keyID": 332,
       "inputKeyCode": 263
     },
     {
-      "keyID": 341,
+      "keyID": 342,
       "inputKeyCode": 264
     },
     {
       "keyID": 351,
       "inputKeyCode": 265
+    },
+    {
+      "keyID": 241,
+      "inputKeyCode": 266
+    },
+    {
+      "keyID": 321,
+      "inputKeyCode": 267
+    },
+    {
+      "keyID": 331,
+      "inputKeyCode": 268
+    },
+    {
+      "keyID": 341,
+      "inputKeyCode": 269
     }
   ],
   "stateLayers": {
@@ -1009,6 +1226,96 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "cullingModelAlwaysAnimate": true
+        },
+        ///////////////////////////////////////////////
+        //	Elite : Burning_MeleeAttack
+        ///////////////////////////////////////////////
+        "Burning_MeleeAttack01_Elite": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Burning_MeleeAttack01_Elite": [
+              "Monster_Effigy_Fire_Burning_MeleeAttack01_Elite",
+              "Audio_Effigy_Fire_Burnning_MeleeAtk01"
+            ],
+            "Burning_MeleeAttack01_Pause_Elite": [""]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnEnter": ["RushAwayTrigger"],
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
+          "cullingModelAlwaysAnimate": true
+        },
+        "Burning_MeleeAttack02_Elite": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Burning_MeleeAttack02_Elite": [
+              "Monster_Effigy_Fire_Burning_MeleeAttack02_Elite",
+              "Audio_Effigy_Fire_Burnning_MeleeAtk02_Elite"
+            ],
+            "Burning_MeleeAttack02_Pause_Elite": [
+              "Monster_Effigy_Fire_Burning_MeleeAttack02_Pause_Elite"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnEnter": ["RushAwayTrigger"],
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
+          "cullingModelAlwaysAnimate": true
+        },
+        "Burning_MeleeAttack03_Elite": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Burning_MeleeAttack03_Elite": [
+              "Monster_Effigy_Fire_Burning_MeleeAttack03_Elite",
+              "Audio_Effigy_Fire_Burnning_MeleeAtk03"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnEnter": ["RushAwayTrigger"],
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
+          "cullingModelAlwaysAnimate": true
+        },
+        ///////////////////////////////////////////////
+        //	Elite : Burning_DiveCrush
+        ///////////////////////////////////////////////
+        "Burning_DiveCrush_Elite": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Burning_DiveCrush_1": [
+              "Monster_Effigy_Fire_Burning_DiveCrush",
+              "Audio_Effigy_Fire_Burnning_DiveCrush"
+            ],
+            "Burning_DiveCrush_2": [
+              "Monster_Effigy_Fire_Burning_DiveCrush",
+              "Audio_Effigy_Fire_Burnning_DiveCrush"
+            ],
+            "Burning_DiveCrush_3": [
+              "Monster_Effigy_Fire_Burning_DiveCrush",
+              "Audio_Effigy_Fire_Burnning_DiveCrush"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnEnter": ["RushAwayTrigger"],
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
+          "cullingModelAlwaysAnimate": true
+        },
+        "Burning_DiveCrush_Blink_Elite": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Burning_DiveCrush_Blink_1": [
+              "Monster_Effigy_Fire_Burning_DiveCrush_Blink_1",
+              "Audio_Effigy_Fire_ReturnToBorn_Blink"
+            ],
+            "Burning_DiveCrush_Blink_2": [
+              "Monster_Effigy_Fire_Burning_DiveCrush_Blink_2",
+              "Audio_Effigy_Fire_ReturnToBorn_Blink"
+            ],
+            "Burning_DiveCrush_Blink_3": [
+              "Monster_Effigy_Fire_Burning_DiveCrush_Blink_3",
+              "Audio_Effigy_Fire_ReturnToBorn_Blink"
+            ]
+          },
+          "canSyncMove": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
+          "cullingModelAlwaysAnimate": true
         }
       }
     }
@@ -1165,6 +1472,27 @@
     {
       "abilityID": "Monster_Common_FireMuteHurt",
       "abilityName": "Monster_Common_FireMuteHurt"
+    },
+    ///////////////////////////////////////////////
+    //	Elite
+    ///////////////////////////////////////////////
+    {
+      "abilityName": "Monster_Effigy_Fire_EliteSet"
+    },
+    {
+      "abilityName": "Monster_Effigy_Fire_Elite_FireDebuff"
+    },
+    {
+      "abilityName": "Monster_Effigy_Fire_Burning_DiveCrush_Blink_1"
+    },
+    {
+      "abilityName": "Monster_Effigy_Fire_Burning_DiveCrush_Blink_2"
+    },
+    {
+      "abilityName": "Monster_Effigy_Fire_Burning_DiveCrush_Blink_3"
+    },
+    {
+      "abilityName": "Monster_Effigy_Fire_Burning_MeleeAttack_02_Elite"
     }
   ],
   "initialPoses": {
@@ -1178,6 +1506,12 @@
       "useNavMesh": false
     },
     "skillGCD": 1.5,
+    "skillSetting": {
+      "skillEliteSet": {
+        "1": [241, 311, 321, 331, 341, 351],
+        "2": [242, 312, 322, 332, 342, 352]
+      }
+    },
     "profiling": {
       "lodStrategy": "Best"
     },
@@ -1263,7 +1597,7 @@
         "cd": 5,
         "cdUpperRange": 0,
         "initialCD": 15,
-        "priority": 4,
+        "priority": 3,
         "skillQueryingTime": 4.0,
         "flagTargetInZone": "10",
         "name": "RangeAtk",
@@ -1278,6 +1612,26 @@
       },
       //Ignite
       "241": {
+        "cd": 15,
+        "cdUpperRange": 0,
+        "initialCD": 1,
+        "triggerCDOnFail": false,
+        "priority": 4,
+        "skillQueryingTime": 4.0,
+        "flagTargetInZone": "10",
+        "triggerGCD": false,
+        "ignoreGCD": true,
+        "name": "Ignite",
+        "stateIDs": ["FirePillarStrike", "Ignite"],
+        "castCondition": {
+          "pickRangeMin": 0,
+          "pickRangeMax": 50,
+          "pose": [101],
+          "needReInitCD": true
+        }
+      },
+      // Elite : Ignite
+      "242": {
         "cd": 15,
         "cdUpperRange": 0,
         "initialCD": 1,
@@ -1325,6 +1679,31 @@
           "needReInitCD": true
         }
       },
+      //Elite : Burning_RollingCharge
+      "312": {
+        "cd": 45,
+        //"cdUpperRange": 5,
+        "initialCD": 5,
+        //"skillQueryingTime":4.0,
+        "priority": 2,
+        "flagTargetReachable": "11",
+        "name": "Burning_RollingCharge",
+        "stateIDs": [
+          "Burning_RollingCharge_BS",
+          "Burning_RollingCharge_Aiming",
+          "Burning_RollingCharge_Loop",
+          "Burning_RollingCharge_Turning",
+          "Burning_RollingCharge_AS",
+          "Burning_RollingCharge_Return"
+        ],
+        "skillGroupCDID": 2,
+        "castCondition": {
+          "pickRangeMin": 0,
+          "pickRangeMax": 50,
+          "pose": [201],
+          "needReInitCD": true
+        }
+      },
       //Burning_MeleeAttack
       "321": {
         "cd": 10,
@@ -1341,6 +1720,29 @@
         "castCondition": {
           "pickRangeMin": 0,
           "pickRangeMax": 15,
+          "SkillAnchorRangeMin": 0,
+          "SkillAnchorRangeMax": 20,
+          "pose": [201]
+        }
+      },
+      // Elite : Burning_MeleeAttack
+      "322": {
+        "cd": 20,
+        //"cdUpperRange": 5,
+        "skillQueryingTime": 4.0,
+        "initialCD": 3.0,
+        "flagTargetReachable": "11",
+        "name": "Burning_MeleeAttack",
+        "stateIDs": [
+          "Burning_MeleeAttack01_Elite",
+          "Burning_MeleeAttack02_Elite",
+          "Burning_MeleeAttack03_Elite"
+        ],
+        "skillGroupCDID": 3,
+        "priority": 3,
+        "castCondition": {
+          "pickRangeMin": 0,
+          "pickRangeMax": 20,
           "SkillAnchorRangeMin": 0,
           "SkillAnchorRangeMax": 20,
           "pose": [201]
@@ -1363,6 +1765,21 @@
           "pose": [201]
         }
       },
+      // Elite : Burning_DiveCrush
+      "332": {
+        "cd": 60,
+        //"cdUpperRange": 5,
+        "skillQueryingTime": 4.0,
+        "initialCD": 15,
+        "flagTargetReachable": "11",
+        "name": "Burning_DiveCrush",
+        "stateIDs": ["Burning_DiveCrush"],
+        /* "skillGroupCDID": 3, */
+        "priority": 2,
+        "castCondition": {
+          "pose": [201]
+        }
+      },
       //Burning_MultiFire
       "341": {
         "cd": 6,
@@ -1378,6 +1795,20 @@
           "pose": [201]
         }
       },
+      // Elite : Burning_MultiFire
+      "342": {
+        "cd": 15,
+        //"cdUpperRange": 5,
+        //"skillQueryingTime":4.0,
+        "flagTargetReachable": "11",
+        "name": "Burning_MultiFire",
+        "stateIDs": ["Burning_MultiFire"],
+        "skillGroupCDID": 3,
+        "priority": 4,
+        "castCondition": {
+          "pose": [201]
+        }
+      },
       //Burning_UltimateExplode
       "351": {
         "cd": 45,
@@ -1388,6 +1819,24 @@
         "name": "Burning_UltimateExplode",
         "stateIDs": ["Burning_UltimateExplode"],
         "skillGroupCDID": 3,
+        "castCondition": {
+          "pickRangeMin": 0,
+          "pickRangeMax": 50,
+          "pose": [201],
+          "needReInitCD": true
+        }
+      },
+      // Elite : Burning_UltimateExplode
+      "352": {
+        "cd": 45,
+        "initialCD": 30,
+        //"cdUpperRange": 5,
+        //"skillQueryingTime":4.0,
+        "flagTargetReachable": "11",
+        "name": "Burning_UltimateExplode",
+        "stateIDs": ["Burning_UltimateExplode"],
+        "skillGroupCDID": 3,
+        "priority": 2,
         "castCondition": {
           "pickRangeMin": 0,
           "pickRangeMax": 50,

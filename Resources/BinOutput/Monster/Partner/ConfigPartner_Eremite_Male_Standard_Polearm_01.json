@@ -98,15 +98,15 @@
         "attackPattern": {
           "$type": "ConfigAttackCircle",
           "triggerType": "TriggerNoRepeat",
-          "radius": 3,
-          "fanAngle": 180,
+          "radius": 2.4,
+          "fanAngle": 230,
           "height": 2.2,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 1.0
+              "z": -0.2
             }
           }
         },
@@ -133,15 +133,15 @@
         "attackPattern": {
           "$type": "ConfigAttackCircle",
           "triggerType": "TriggerNoRepeat",
-          "radius": 4.5,
-          "fanAngle": 180,
+          "radius": 3.6,
+          "fanAngle": 270,
           "height": 2.2,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
-              "x": 0.0,
+              "x": 0.2,
               "y": 0.0,
-              "z": 1.0
+              "z": 0.0
             }
           }
         },
@@ -181,13 +181,13 @@
           "triggerType": "TriggerNoRepeat",
           "height": 2.2,
           "fanAngle": 180,
-          "radius": 3,
+          "radius": 2.7,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.4
+              "z": 0.2
             }
           }
         },
@@ -227,13 +227,13 @@
           "triggerType": "TriggerNoRepeat",
           "height": 2.2,
           "fanAngle": 180,
-          "radius": 3,
+          "radius": 2.5,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.4
+              "z": 0.2
             }
           }
         },
@@ -273,13 +273,13 @@
           "triggerType": "TriggerNoRepeat",
           "height": 2.2,
           "fanAngle": 180,
-          "radius": 4.5,
+          "radius": 4,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.4
+              "z": 0.0
             }
           }
         },
@@ -320,13 +320,13 @@
           "triggerType": "TriggerNoRepeat",
           "height": 2.2,
           "fanAngle": 180,
-          "radius": 4.5,
+          "radius": 4.3,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.4
+              "z": -0.2
             }
           }
         },
@@ -355,14 +355,14 @@
           "$type": "ConfigAttackCircle",
           "triggerType": "TriggerNoRepeat",
           "height": 2.2,
-          "fanAngle": 360,
-          "radius": 3,
+          "fanAngle": 180,
+          "radius": 2.8,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.4
+              "z": 0.0
             }
           }
         },
@@ -401,14 +401,14 @@
           "$type": "ConfigAttackCircle",
           "triggerType": "TriggerNoRepeat",
           "height": 2.2,
-          "fanAngle": 360,
-          "radius": 4.5,
+          "fanAngle": 180,
+          "radius": 4.0,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.4
+              "z": -0.6
             }
           }
         },

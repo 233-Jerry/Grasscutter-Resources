@@ -772,6 +772,10 @@
       "useNavMesh": true
     },
     "skillGCD": 3.5,
+    "neurons": {
+      "DefaultSetting": ["HIT"],
+      "NeverCombat": []
+    },
     "sensing": {
       "settings": {
         "DefaultSetting": {
@@ -933,6 +937,12 @@
       // 	},
       // },
     },
+    "skillSetting": {
+      "skillEliteSet": {
+        "1": [], // 普通蕈兽状态
+        "2": [112] // 有表演的蕈兽状态
+      }
+    },
     "skills": {
       "100": {
         "name": "OnAlert",
@@ -952,6 +962,19 @@
         "triggerGCD": false,
         "castCondition": {
           "pose": [102]
+        }
+      },
+      // 3.2 蕈兽活动新增 用于101Pose下的战前表演
+      "112": {
+        "cd": 0.5,
+        "initialCD": 0.6,
+        "name": "Tease2",
+        "stateIDs": ["Tease"],
+        "skillType": "Free",
+        "skillQueryingTime": 3,
+        "triggerGCD": false,
+        "castCondition": {
+          "pose": [101, 111, 121]
         }
       },
       "103": {

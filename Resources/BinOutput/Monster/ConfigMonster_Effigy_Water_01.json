@@ -94,6 +94,21 @@
           "summonTag": 20011901,
           "name": "Effigy_Water_Ooze_TypeHeal",
           "maxNum": 2
+        },
+        {
+          "summonTag": 20012001,
+          "name": "Effigy_Water_Ooze_TypeAttack_Elite",
+          "maxNum": 3
+        },
+        {
+          "summonTag": 20012101,
+          "name": "Effigy_Water_Ooze_TypeHeal_Elite",
+          "maxNum": 2
+        },
+        {
+          "summonTag": 20012201,
+          "name": "Effigy_Water_Ooze_TypeDamage_Elite",
+          "maxNum": 3
         }
       ]
     }
@@ -188,6 +203,19 @@
           },
           "combatMove": true,
           "canSyncMove": true,
+          "cullingModelAlwaysAnimate": true,
+          "resetAnimatorTriggerOnExit": ["DoSkill"]
+        },
+        "Dive_CoureOut": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Dive_CoreOutLoop": [],
+            "Dive_CoreOutAS": [
+              "Monster_Effigy_Water_CoreOutAS",
+              "Audio_Effigy_Water_WaveForm_CoreOutAS"
+            ]
+          },
+          "combatMove": true,
           "cullingModelAlwaysAnimate": true,
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
@@ -549,6 +577,15 @@
       "abilityName": "Monster_Effigy_Water_SummonOoze_TypeSplitBig3"
     },
     {
+      "abilityName": "Monster_Effigy_Water_SummonOoze_TypeAttack_Elite"
+    },
+    {
+      "abilityName": "Monster_Effigy_Water_SummonOoze_TypeHeal_Elite"
+    },
+    {
+      "abilityName": "Monster_Effigy_Water_SummonOoze_TypeDamage_Elite"
+    },
+    {
       "abilityName": "Monster_Effigy_Water_BigWave"
     },
     {
@@ -584,6 +621,10 @@
     },
     {
       "abilityName": "Monster_Common_WaterMuteHurt"
+    },
+    // Elite Set
+    {
+      "abilityName": "Monster_Effigy_Water_EliteSet"
     }
   ],
   "initialPoses": {
@@ -597,6 +638,12 @@
       "useNavMesh": false
     },
     "skillGCD": 1.5,
+    "skillSetting": {
+      "skillEliteSet": {
+        "1": [101, 201, 211, 301, 311, 401, 501, 511, 601, 611, 701, 711, 901],
+        "2": [121, 221, 231, 321, 331, 411, 521, 531, 621, 631, 721, 731, 911]
+      }
+    },
     "profiling": {
       "lodStrategy": "Best"
     },
@@ -642,7 +689,8 @@
       { "skillGroupCDID": 2, "skillGroupCDTime": 85 },
       { "skillGroupCDID": 3, "skillGroupCDTime": 100 },
       { "skillGroupCDID": 4, "skillGroupCDTime": 100 },
-      { "skillGroupCDID": 5, "skillGroupCDTime": 10 }
+      { "skillGroupCDID": 5, "skillGroupCDTime": 10 },
+      { "skillGroupCDID": 6, "skillGroupCDTime": 65 }
     ],
     "skills": {
       "100": {
@@ -660,6 +708,22 @@
         "skillQueryingTime": 3.5,
         "flagTargetReachable": "11",
         "flagTargetInZone": "11",
+        "name": "Rain",
+        "stateIDs": ["Rain"],
+        "castCondition": {
+          "pickRangeMin": 7.5,
+          "pose": [101]
+        }
+      },
+      // Elite
+      "121": {
+        "cd": 15.5,
+        "cdUpperRange": 5,
+        "initialCD": 10.0,
+        "skillQueryingTime": 3.5,
+        "flagTargetReachable": "11",
+        "flagTargetInZone": "11",
+        "priority": 3,
         "name": "Rain",
         "stateIDs": ["Rain"],
         "castCondition": {
@@ -686,6 +750,38 @@
         "cdUpperRange": 2.5,
         "name": "SurgeStrike",
         "skillQueryingTime": 3.5,
+        "flagTargetInZone": "10",
+        "stateIDs": ["SurgeStrike"],
+        "skillGroupCDID": 1,
+        "castCondition": {
+          "pickRangeMax": 15,
+          "pose": [101]
+        }
+      },
+      // Elite
+      "221": {
+        "cd": 10.5,
+        "cdUpperRange": 5,
+        "initialCD": 10.0,
+        "skillQueryingTime": 3.5,
+        "priority": 3,
+        "name": "SurgeStrike",
+        "stateIDs": ["SurgeStrike"],
+        "skillGroupCDID": 1,
+        "castCondition": {
+          "pickRangeMin": 15,
+          "pickRangeMax": 25,
+          "maxTargetAngleXZ": 120.0,
+          "pose": [101]
+        }
+      },
+      "231": {
+        "cd": 12.5,
+        "cdUpperRange": 2.5,
+        "initialCD": 10.0,
+        "name": "SurgeStrike",
+        "skillQueryingTime": 3.5,
+        "priority": 3,
         "flagTargetInZone": "10",
         "stateIDs": ["SurgeStrike"],
         "skillGroupCDID": 1,
@@ -721,6 +817,37 @@
           "pose": [101]
         }
       },
+      // Elite
+      "321": {
+        "cd": 25.0,
+        "cdUpperRange": 5,
+        "initialCD": 10.0,
+        "skillQueryingTime": 3.5,
+        "skillGroupCDID": 1,
+        "priority": 3,
+        "name": "Dive",
+        "stateIDs": ["Dive", "Dive_CoureOut"],
+        "castCondition": {
+          "pickRangeMin": 7.5,
+          "pickRangeMax": 22.5,
+          "pose": [101]
+        }
+      },
+      "331": {
+        "cd": 45,
+        "cdUpperRange": 15,
+        "initialCD": 10.0,
+        "skillQueryingTime": 3.5,
+        "skillGroupCDID": 1,
+        "priority": 3,
+        "name": "Dive",
+        "stateIDs": ["Dive", "Dive_CoureOut"],
+        "castCondition": {
+          "pickRangeMin": 7.5,
+          "pickRangeMax": 22.5,
+          "pose": [101]
+        }
+      },
       "401": {
         "cd": 105,
         "cdUpperRange": 15,
@@ -728,6 +855,20 @@
         "initialCDUpperRange": 10,
         "skillQueryingTime": 3.5,
         "priority": 3,
+        "name": "BubbleArray",
+        "stateIDs": ["BubbleArray"],
+        "castCondition": {
+          "pose": [101]
+        }
+      },
+      // Elite
+      "411": {
+        "cd": 60,
+        "cdUpperRange": 15,
+        "initialCD": 15,
+        "initialCDUpperRange": 10,
+        "skillQueryingTime": 3.5,
+        "priority": 2,
         "name": "BubbleArray",
         "stateIDs": ["BubbleArray"],
         "castCondition": {
@@ -762,6 +903,35 @@
           "pose": [101]
         }
       },
+      // Elite
+      "521": {
+        "cd": 50,
+        "cdUpperRange": 10,
+        "ignoreGCD": true,
+        "skillQueryingTime": 3.5,
+        "priority": 1,
+        "name": "WaterBallSplash",
+        "stateIDs": ["WaterBallSplash"],
+        "skillGroupCDID": 6,
+        "castCondition": {
+          "SkillAnchorRangeMax": 5,
+          "pose": [101]
+        }
+      },
+      "531": {
+        "cd": 50,
+        "cdUpperRange": 10,
+        "ignoreGCD": true,
+        "skillQueryingTime": 3.5,
+        "priority": 1,
+        "name": "WaterBallSplash",
+        "stateIDs": ["WaterBallSplash", "Blink"],
+        "skillGroupCDID": 6,
+        "castCondition": {
+          "SkillAnchorRangeMin": 5,
+          "pose": [101]
+        }
+      },
       "601": {
         "cd": 95,
         "cdUpperRange": 10,
@@ -783,6 +953,41 @@
         "cd": 95,
         "cdUpperRange": 10,
         "initialCD": 20,
+        "initialCDUpperRange": 5,
+        "skillQueryingTime": 3.5,
+        "flagTargetReachable": "11",
+        "flagTargetInZone": "11",
+        "priority": 3,
+        "name": "BigWave",
+        "stateIDs": ["BigWave", "Blink"],
+        "skillGroupCDID": 3,
+        "castCondition": {
+          "SkillAnchorRangeMin": 7.5,
+          "pose": [101]
+        }
+      },
+      // Elite
+      "621": {
+        "cd": 40,
+        "cdUpperRange": 10,
+        "initialCD": 15,
+        "initialCDUpperRange": 5,
+        "skillQueryingTime": 3.5,
+        "flagTargetReachable": "11",
+        "flagTargetInZone": "11",
+        "priority": 2,
+        "name": "BigWave",
+        "stateIDs": ["BigWave"],
+        "skillGroupCDID": 3,
+        "castCondition": {
+          "SkillAnchorRangeMax": 7.5,
+          "pose": [101]
+        }
+      },
+      "631": {
+        "cd": 40,
+        "cdUpperRange": 10,
+        "initialCD": 15,
         "initialCDUpperRange": 5,
         "skillQueryingTime": 3.5,
         "flagTargetReachable": "11",
@@ -832,6 +1037,43 @@
           "pose": [101]
         }
       },
+      // Elite
+      "721": {
+        "cd": 60,
+        "cdUpperRange": 10,
+        "initialCD": 15.5,
+        "initialCDUpperRange": 7.5,
+        "ignoreGCD": true,
+        "skillQueryingTime": 3.5,
+        "flagTargetReachable": "11",
+        "flagSelfInZone": "11",
+        "priority": 2,
+        "name": "RainStorm",
+        "stateIDs": ["RainStorm"],
+        "skillGroupCDID": 4,
+        "castCondition": {
+          "SkillAnchorRangeMax": 7.5,
+          "pose": [101]
+        }
+      },
+      "731": {
+        "cd": 60,
+        "cdUpperRange": 10,
+        "initialCD": 15.5,
+        "initialCDUpperRange": 7.5,
+        "ignoreGCD": true,
+        "skillQueryingTime": 3.5,
+        "flagTargetReachable": "11",
+        "flagSelfInZone": "11",
+        "priority": 2,
+        "name": "RainStorm",
+        "stateIDs": ["RainStorm", "Blink"],
+        "skillGroupCDID": 4,
+        "castCondition": {
+          "SkillAnchorRangeMin": 7.5,
+          "pose": [101]
+        }
+      },
       /*			"801":
 			{
 				"cd": 40.0,
@@ -859,6 +1101,23 @@
         "stateIDs": ["Blink"],
         "castCondition": {
           "SkillAnchorRangeMin": 30,
+          "pose": [101]
+        }
+      },
+      // Elite
+      "911": {
+        "cd": 15,
+        "ignoreGCD": true,
+        "skillQueryingTime": 3.5,
+        "flagTargetReachable": "11",
+        "flagSelfInZone": "11",
+        "flagSelfOnTemplateCollider": "11",
+        "priority": 2,
+        "name": "Blink",
+        "stateIDs": ["Blink"],
+        "triggerGCD": false,
+        "castCondition": {
+          "SkillAnchorRangeMin": 15,
           "pose": [101]
         }
       }
@@ -900,6 +1159,22 @@
     {
       "keyID": 901,
       "inputKeyCode": 265
+    },
+    {
+      "keyID": 231,
+      "inputKeyCode": 266
+    },
+    {
+      "keyID": 331,
+      "inputKeyCode": 267
+    },
+    {
+      "keyID": 121,
+      "inputKeyCode": 268
+    },
+    {
+      "keyID": 521,
+      "inputKeyCode": 269
     }
   ]
 }

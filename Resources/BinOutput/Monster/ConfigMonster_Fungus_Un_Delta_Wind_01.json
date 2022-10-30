@@ -674,6 +674,10 @@
       "useNavMesh": true
     },
     "skillGCD": 3.5,
+    "neurons": {
+      "DefaultSetting": ["HIT"],
+      "NeverCombat": []
+    },
     "sensing": {
       "settings": {
         "DefaultSetting": {
@@ -733,11 +737,36 @@
         "performTime": 2.2
       }
     },
+    "followServerRouteTactic": {
+      "enable": true,
+      "defaultSetting": {
+        "turnSpeedOverrideWalk": 1,
+        "turnSpeedOverrideRun": 1,
+        "special": true
+      }
+    },
     "followScriptedPathTactic": {
       "enable": true,
       "defaultSetting": {
         "turnSpeedOverrideWalk": 1,
         "turnSpeedOverrideRun": 1
+      },
+      "specification": {
+        "201": {
+          "turnSpeedOverrideWalk": 1,
+          "turnSpeedOverrideRun": 1,
+          "spacial": true
+        },
+        "211": {
+          "turnSpeedOverrideWalk": 1,
+          "turnSpeedOverrideRun": 1,
+          "spacial": true
+        },
+        "221": {
+          "turnSpeedOverrideWalk": 1,
+          "turnSpeedOverrideRun": 1,
+          "spacial": true
+        }
       }
     },
     "spacialChaseTactic": {
@@ -936,6 +965,12 @@
         }
       }
     },
+    "skillSetting": {
+      "skillEliteSet": {
+        "1": [], // 普通蕈兽状态
+        "2": [112] // 有表演的蕈兽状态
+      }
+    },
     "skills": {
       "100": {
         "name": "OnAlert",
@@ -955,6 +990,19 @@
         "triggerGCD": false,
         "castCondition": {
           "pose": [102]
+        }
+      },
+      // 3.2 蕈兽活动新增 用于101Pose下的战前表演
+      "112": {
+        "cd": 0.5,
+        "initialCD": 0.6,
+        "name": "Practice2",
+        "stateIDs": ["Practice"],
+        "skillType": "Free",
+        "skillQueryingTime": 3,
+        "triggerGCD": false,
+        "castCondition": {
+          "pose": [101, 111, 121]
         }
       },
       "103": {
