@@ -1665,7 +1665,7 @@
       "triggerType": "TRIGGER_MONSTER_DIE",
       "paramList": [
         "20040101;20040201;20040301;26020201;26020101;20050101;29020102;26050101;26050201;26050301;26050401;20040501;25090101;20040601;24021101;20040401;20070101",
-        "可联机",
+        "\u53ef\u8054\u673a",
         "",
         "",
         ""
@@ -2095,7 +2095,7 @@
       "triggerType": "TRIGGER_MONSTER_DIE",
       "paramList": [
         "20040101;20040201;20040301;26020201;26020101;20050101;29020102;26050101;26050201;26050301;26050401;20040501;25090101;20040601;24021101;20040401;20070101;22060101",
-        "可联机",
+        "\u53ef\u8054\u673a",
         "",
         "",
         ""
@@ -3464,5 +3464,85 @@
       "paramList": ["106", "", "", "", ""]
     },
     "progress": 40
+  },
+  {
+    "h5ActivityId": 1032,
+    "condComb": "LOGIC_AND",
+    "condList": [
+      {
+        "type": "H5_ACTIVITY_COND_DAY_COUNT_GREAT_EQUAL",
+        "paramStr": "1"
+      },
+      {
+        "paramStr": ""
+      }
+    ],
+    "isDailyRefresh": true,
+    "id": 5032001,
+    "triggerConfig": {
+      "triggerType": "TRIGGER_LOGIN",
+      "paramList": ["", "", "", "", ""]
+    },
+    "progress": 1
+  },
+  {
+    "h5ActivityId": 1032,
+    "condComb": "LOGIC_AND",
+    "condList": [
+      {
+        "type": "H5_ACTIVITY_COND_DAY_COUNT_GREAT_EQUAL",
+        "paramStr": "1"
+      },
+      {
+        "paramStr": ""
+      }
+    ],
+    "isDailyRefresh": true,
+    "id": 5032002,
+    "triggerConfig": {
+      "triggerType": "TRIGGER_DAILY_TASK",
+      "paramList": ["", "", "", "", ""]
+    },
+    "progress": 2
+  },
+  {
+    "h5ActivityId": 1032,
+    "condComb": "LOGIC_AND",
+    "condList": [
+      {
+        "type": "H5_ACTIVITY_COND_DAY_COUNT_GREAT_EQUAL",
+        "paramStr": "1"
+      },
+      {
+        "paramStr": ""
+      }
+    ],
+    "isDailyRefresh": true,
+    "id": 5032003,
+    "triggerConfig": {
+      "triggerType": "TRIGGER_COST_MATERIAL",
+      "paramList": ["106", "", "", "", ""]
+    },
+    "progress": 40
+  },
+  {
+    "h5ActivityId": 1032,
+    "condComb": "LOGIC_AND",
+    "condList": [
+      {
+        "type": "H5_ACTIVITY_COND_DAY_COUNT_GREAT_EQUAL",
+        "paramStr": "1"
+      },
+      {
+        "paramStr": ""
+      }
+    ],
+    "isDailyRefresh": true,
+    "id": 5032004,
+    "triggerConfig": {
+      "triggerType": "TRIGGER_DO_COOK",
+      "paramList": ["1", "", "", "", ""]
+    },
+    "progress": 5
   }
 ]
