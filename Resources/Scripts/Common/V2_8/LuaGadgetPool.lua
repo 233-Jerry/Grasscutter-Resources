@@ -55,7 +55,7 @@ function Pool_Initialize()
                     table.insert(gadgets,pool_gadget_config)
                 end
                 table.insert(variables,{config_id = 150000000+k, name = "pool_top_"..k, value = 1})
-                table.insert(variables,{config_id = 150000000+k+1, name = "pool_max_"..k, value = pool_max})
+                table.insert(variables,{config_id = 150000000+k+ #pool_object_gadget_id +1, name = "pool_max_"..k, value = pool_max})
             end
         end
     end

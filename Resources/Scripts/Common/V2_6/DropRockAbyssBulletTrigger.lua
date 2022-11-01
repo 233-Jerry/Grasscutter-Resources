@@ -1,6 +1,6 @@
 
 function LF_Initialize_Group(triggers, suites)
-	table.insert(variables, { config_id=50000001,name = "DropRockAbyssBulletTrigger", value = 0,no_refresh = false})
+	table.insert(variables, { config_id=51200001,name = "DropRockAbyssBulletTrigger", value = 0,no_refresh = false})
 end
 
 

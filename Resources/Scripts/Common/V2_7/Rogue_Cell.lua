@@ -563,11 +563,11 @@ local Rogue_Cell = {
 
   
 local temp_Variables_Rogue_Cell = {
-	{  config_id=50000001,name = "gm_EVENT_ROGUE_OPEN_ACCESS", value = 0, no_refresh = false },
-	{  config_id=50000002,name = "gm_EVENT_ROGUE_CREAGE_REPAIR_GADGET", value = 0, no_refresh = false },
-	{  config_id=50000003,name = "gm_EVENT_ROGUE_CREAGE_FIGHT_GADGET", value = 0, no_refresh = false },
-	{  config_id=50000004,name = "gm_EVENT_ROGUE_START_FIGHT", value = 0, no_refresh = false },
-	{  config_id=50000005,name = "gm_poolid", value = 0, no_refresh = false },
+	{  config_id=51110001,name = "gm_EVENT_ROGUE_OPEN_ACCESS", value = 0, no_refresh = false },
+	{  config_id=51110002,name = "gm_EVENT_ROGUE_CREAGE_REPAIR_GADGET", value = 0, no_refresh = false },
+	{  config_id=51110003,name = "gm_EVENT_ROGUE_CREAGE_FIGHT_GADGET", value = 0, no_refresh = false },
+	{  config_id=51110004,name = "gm_EVENT_ROGUE_START_FIGHT", value = 0, no_refresh = false },
+	{  config_id=51110005,name = "gm_poolid", value = 0, no_refresh = false },
 }
 local temp_Tirgger_Rogue_Cell = {
     {event = EventType.EVENT_CHALLENGE_SUCCESS,source = "",condition="",action="action_EVENT_CHALLENGE_SUCCESS",trigger_count=0},

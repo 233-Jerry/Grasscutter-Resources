@@ -100,7 +100,7 @@ function Initialize()
 
 
     --记录一个最近触发的路点事件，用于识别可能存在的丢掉路点事件的问题
-    table.insert(variables,{ name = "last_route_point", value = 0})
+    table.insert(variables,{ config_id = 50000015,name = "last_route_point", value = 0})
 end
 
 --[[-----------------------------------------------------------------

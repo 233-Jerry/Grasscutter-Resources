@@ -9,7 +9,7 @@ function LF_Initialize_Group(triggers, suites)
 		table.insert(triggers, extraTriggers[i])
 		table.insert(suites[init_config.suite].triggers,extraTriggers[i].name)
 	end
-	table.insert(variables, { config_id=50000001,name = "Created", value = 0,no_refresh = true })
+	table.insert(variables, { config_id=51100001,name = "Created", value = 0,no_refresh = true })
 end
 
 

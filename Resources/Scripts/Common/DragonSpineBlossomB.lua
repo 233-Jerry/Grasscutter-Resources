@@ -19,7 +19,7 @@ local gid = defs.group_id or 0
 local interval = defs.timer or 15
 --雪山营地B
 function Initialize_Group()
-	table.insert(variables, {name = "wave", value = 0})
+	table.insert(variables, {config_id=54000001,name = "wave", value = 0})
 	for k,v in pairs(triggers_lib) do
 		table.insert(triggers, v)
 	end
