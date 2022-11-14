@@ -179,6 +179,9 @@ end
 -- If situation enter scene is all right, take action
 function action_EVENT_ENTER_REGION_1002(context, evt)
     -- Change state gadget with config_id is 1001 in specified group 240653001 (start)
+
+    LF_Log(context, "Melon :)")
+
     if 0 ~= ScriptLib.SetGroupGadgetStateByConfigId(context, 240653001, 1001,GadgetState.Default) then
         ScriptLib.PrintContextLog(context,"@@ LUA_WARNING : set_gadget_state_by_GroupId_ConfigId")
         return -1
@@ -312,4 +315,9 @@ function action_EVENT_ANY_MONSTER_LIVE_1023(context, evt)
     end
 
     return 0
+end
+
+function LF_Log(context, text)
+	ScriptLib.PrintContextLog(context, text)
+	return 0
 end
