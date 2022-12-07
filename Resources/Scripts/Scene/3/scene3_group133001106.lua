@@ -212,7 +212,7 @@ function action_EVENT_SELECT_OPTION_128(context, evt)
 	-- 当option_id为25时，开启封印战斗，战斗区域半径为18，圈内进度每秒增长1，圈外进度每秒衰减5，进度达到100时判定为战斗成功（填0则取默认值100），进度衰减到0后5秒判定为战斗失败
 	    if defs.gadget_id_7 == evt.param2 then
 	        local ret = ScriptLib.StartSealBattle(context, 1817, {radius = 18, kill_time = 100, monster_group_id = 133001275, max_progress = 10, battle_type = SealBattleType.KILL_MONSTER})
-	        --ScriptLib.PrintLog("StartSealBattle ret: " ..ret)
+	        --ScriptLib.PrintLog(context, "StartSealBattle ret: " ..ret)
 	    end
 	
 		-- 重新生成指定group，指定suite
