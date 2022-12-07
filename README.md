@@ -20,6 +20,19 @@
 - Scene/{sceneId}/scene{sceneId}.lua
 - flat.luas.scenes.full_globals.lua.json (only used if the above is not used)
 - Common/*.lua (useless because this function doesn't exist yet)
+## Required BinOutput files
+- Scene/Point/* (scene*_point.json)
+- Scene/SceneNpcBorn/*
+- Avatar/* (ConfigAvatar_*.json) or /Data/AbilityEmbryos.json
+- AbilityGroup/AbilityGroup_Other_PlayerElementAbility.json
+- Ability/Temp/*
+- Talent/EquipTalents/*
+- Talent/AvatarTalents/*
+- Quest/*
+- HomeworldDefaultSave/* (scene*_home_config.json)
+- Gadget/*
+- LevelDesign/Routes/*
+- LevelEntity/* (ConfigLevelEntity_*.json)
 
 Because there are a lot of useless files, so I made a separate repo: Full Version (bin server) and Grasscutter Version are needed for Grasscutter only.
 
