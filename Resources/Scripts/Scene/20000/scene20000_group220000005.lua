@@ -163,13 +163,13 @@ end
 
 -- 触发条件
 function condition_EVENT_GADGET_STATE_CHANGE_19(context, evt)
-	ScriptLib.PrintLog(context, "enter condition judge")
+	ScriptLib.PrintLog("enter condition judge")
 	if GadgetState.GearStop ~= evt.param1 or defs.gadget_id_2 ~= evt.param2 then
-	ScriptLib.PrintLog(context, "judge false")
+	ScriptLib.PrintLog("judge false")
 		return false
 	end
 	
-	ScriptLib.PrintLog(context, "judge true")
+	ScriptLib.PrintLog("judge true")
 	return true
 end
 
@@ -186,14 +186,14 @@ end
 
 -- 触发条件
 function condition_EVENT_GADGET_STATE_CHANGE_20(context, evt)
-	ScriptLib.PrintLog(context, "enter condition judge")
+	ScriptLib.PrintLog("enter condition judge")
 	if GadgetState.GearStop ~= evt.param1 or defs.gadget_id_3 ~= evt.param2 then
-	ScriptLib.PrintLog(context, "judge false")
+	ScriptLib.PrintLog("judge false")
 		return false
 	
 	end
 	
-	ScriptLib.PrintLog(context, "judge true")
+	ScriptLib.PrintLog("judge true")
 	return true
 end
 
@@ -210,13 +210,13 @@ end
 
 -- 触发条件
 function condition_EVENT_ENTER_REGION_21(context, evt)
-	ScriptLib.PrintLog(context, "Enter condition judge")
+	ScriptLib.PrintLog("Enter condition judge")
 	if GadgetState.GearStop ~= evt.param1 or defs.gadget_id_4 ~= evt.param2 then
-	ScriptLib.PrintLog(context, "judge false")
+	ScriptLib.PrintLog("judge false")
 		return false
 	end
 	
-	ScriptLib.PrintLog(context, "judge true")
+	ScriptLib.PrintLog("judge true")
 	return true
 end
 
@@ -287,10 +287,10 @@ end
 
 -- 触发操作
 function action_EVENT_GATHER_24(context, evt)
-	-- 创生gadget 5009
+	-- 创建id为5009的gadget
 	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 5009 }) then
-	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : dungeon_settle")
-		return -1
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
 	end
 	
 	return 0

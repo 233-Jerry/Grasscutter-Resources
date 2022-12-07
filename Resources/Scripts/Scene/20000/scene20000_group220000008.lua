@@ -84,9 +84,9 @@ suites = {
 
 -- 触发条件
 function condition_EVENT_GADGET_STATE_CHANGE_26(context, evt)
-	ScriptLib.PrintLog(context, "enter firebox condition")
+	ScriptLib.PrintLog("enter firebox condition")
 	if defs.gadget_id_1 ~= evt.param2 or GadgetState.GearStart ~= evt.param1 then
-	ScriptLib.PrintLog(context, "fire box not match")
+	ScriptLib.PrintLog("fire box not match")
 		return false
 	end
 	
@@ -95,10 +95,10 @@ end
 
 -- 触发操作
 function action_EVENT_GADGET_STATE_CHANGE_26(context, evt)
-	-- 创生gadget 31
+	-- 创建id为31的gadget
 	if 0 ~= ScriptLib.CreateGadget(context, { config_id = 31 }) then
-	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : dungeon_settle")
-		return -1
+	  ScriptLib.PrintContextLog(context, "@@ LUA_WARNING : create_gadget")
+	  return -1
 	end
 	
 	return 0
