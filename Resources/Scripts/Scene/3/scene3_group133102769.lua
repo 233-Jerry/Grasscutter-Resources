@@ -358,7 +358,7 @@ end
 function LF_Create_Boss(context, index)
 	--LF_Log(context, "## LF_Create_Boss | index = "..index)
 	ScriptLib.ForceRefreshAuthorityByConfigId(context, 769005, context.uid)
-	ScriptLib.SetGroupVariableValue(context, "auth_uid_p1", context.uid//10000)
+	ScriptLib.SetGroupVariableValue(context, "auth_uid_p1", math.floor(context.uid/10000))
 	ScriptLib.SetGroupVariableValue(context, "auth_uid_p2", context.uid%10000)
 	--初始化平台位置信息
 	for i,v in ipairs(defs.gadget_platform_list) do
