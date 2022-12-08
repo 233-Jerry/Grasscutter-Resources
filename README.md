@@ -3,16 +3,14 @@
 
 - ExcelBinOutput (3.3 GC)
 - BinOutput (3.3 GIO: Talent,Scene>SceneNpcBorn,LevelEntity,Gadget,Avatar,AbilityGroup,Ability | GC 3.3 Scene>Point,Quest,HomeworldDefaultSave | GC ?.? LevelDesign>Routes)
-- Scripts (3.3 GIO)
-- Readable (??)
-- Subtitle (??)
-- TextMap (??)
-- QuestEncryptionKeys (3.2)
+- Scripts (3.3 GIO) (Used for Big World LUA)
+- TextMap (3.3 GC) (for language translations items,etc are used for gm-books)
+- QuestEncryptionKeys (3.2 GIO) (Used for cutscenes that require a key, see Credits below)
 
 ## Learn LUA
  How Dungeons work:
 - [Spire of Solitary Enlightenment - LV 4](Resources/Scripts/Scene/40653/scene40653_group240653001.lua)
-## Required lua files
+## Required LUA files
 - Quest/Share/*
 - Scene/{sceneId}/scene{sceneId}_block{this.id}.lua
 - Scene/{sceneId}/scene{sceneId}_dummy_points.lua
@@ -45,11 +43,12 @@ Because there are a lot of useless files, so I made a separate repo: Full Versio
 - Natural Spawn for Sumeru area is available.
 
 ## Credits 
- - [Dimbreath](https://github.com/Dimbreath) (Everything except Script,BinOutput) <br/>
- - [tamilpp25](https://github.com/tamilpp25/Grasscutter_Resources) (Script,BinOutput) <br/> 
+ - [Grasscutters Team](https://git.crepe.moe/grasscutters/Grasscutter_Resources) (Everything) <br/> 
+ - [Dimbreath](https://gitlab.com/Dimbreath/gamedata) (Everything except Script,BinOutput) <br/> 
  - [timing1337](https://github.com/timing1337/GenshinData) (3.1 BinOutput) <br/>
  - [Koko-boya](https://github.com/Koko-boya) (Original Owner Grasscutter_Resources) <br/>
- - [lilmayofuksu](https://github.com/lilmayofuksu/animepython) (Script aka Lua)<br/>
+ - [tamilpp25](https://github.com/tamilpp25) (Backup) <br/>
+ - [lilmayofuksu](https://github.com/lilmayofuksu/animepython) (LUA 2.6)<br/>
  - [GI-cutscenes](https://github.com/ToaHartor/GI-cutscenes/) (Key Quest) <br/>
  - [MTAlexKen](https://github.com/MTAlexKen/Genshin-resources) (Routes)<br/>
  - [radioegor146](https://github.com/radioegor146) <br/>
