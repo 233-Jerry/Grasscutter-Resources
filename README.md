@@ -1,9 +1,9 @@
 # Grasscutter Resources
 > <em>Resource Version - "Certain Anime Game" 3.3</em><br/>
 
-- ExcelBinOutput (QuestExcelConfigData 3.1 but miss acceptCond,failCond,finishExec,failExec,beginExec)
-- BinOutput (2.7 base) (3.1 configGadget,AbilityGroup,Ability,ConfigAvatar,Climate,Common,Coop,CustomLevelBrick,CustomLevelDungeon,HomeFurniture,HomeworldFurnitureSuit,Monster,Scene/LevelLayout,SceneNpcBornNoGroup,Talent,Quest) (LevelDesign\Routes ??)
-- Scripts (3.2)
+- ExcelBinOutput (3.3 GC)
+- BinOutput (3.2 GIO: Talent,Scene>SceneNpcBorn|GC 3.3 Scene>Point,Quest)
+- Scripts (3.3 GIO)
 - Readable (??)
 - Subtitle (??)
 - TextMap (??)
@@ -34,7 +34,7 @@
 - LevelDesign/Routes/*
 - LevelEntity/* (ConfigLevelEntity_*.json)
 
-Because there are a lot of useless files, so I made a separate repo: Full Version (bin server) and Grasscutter Version are needed for Grasscutter only.
+Because there are a lot of useless files, so I made a separate repo: Full Version (GIO) and Grasscutter Version are needed for Grasscutter only.
 
 ## Problem Not finished yet:
 - Make Quest 2.8-3.3 work with modified QuestExcelConfigData which you can get from BinOutput/Quest/*.json. [use binout instead of excelconfig](https://github.com/Hartie95/Grasscutter/commit/0284de81563d30afb81733d7a3523a97419eb977)
