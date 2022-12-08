@@ -1,10 +1,10 @@
 {
   ////////////////////////////////////////////////////////////////
   //
-  //  Gorou_NormalAttack
+  //  Faruzan_NormalAttack
   //
   ////////////////////////////////////////////////////////////////
-  "Gorou_Arrow_01": {
+  "Faruzan_Arrow_01": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
@@ -19,12 +19,13 @@
     "combat": {
       "property": {
         "useCreatorProperty": true, // 是否继承创造者的数值
+        "useCreatorBuffedProperty": true, // 继承的数值是否使用创造者身上的buff带来的property进行计算，仅在useCreatorProperty为true，或useCreatorPropertyPartly有值时生效，说白了就是创生时主人的临时buff对它起不起效
+        "useAbilityProperty": false, // 是否使用自己的AbilityState中的AbilityProperty进行CombatProperty的计算,说白了就是自己后续还吃不吃临时buff。
         "canTriggerBullet": false,
         "isInvincible": true
       },
       "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
+        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -33,7 +34,7 @@
         "muteAllHitText": true
       },
       "animEvents": {
-        "ATK01": {
+        "Arrow_ATK01": {
           "attackPattern": {
             "$type": "ConfigAttackBox",
             "triggerType": "TriggerNoRepeat",
@@ -58,7 +59,7 @@
             "attackProperty": {
               "damagePercentage": 0,
               "strikeType": "Pierce",
-              "enBreak": 13.17
+              "enBreak": 11.07
             },
             "hitPattern": {
               "onHitEffectName": "default",
@@ -103,30 +104,27 @@
       "triggerActions": [
         {
           "$type": "ConfigGadgetDoAttackEvent",
-          "attackEvent": "ATK01"
+          "attackEvent": "Arrow_ATK01"
         },
         {
           "$type": "ConfigGadgetTriggerAbility",
-          "abilityName": "Avatar_Gorou_ShootArrow_Light_Material"
+          "abilityName": "Bullet_Faruzan_ShootArrow"
         }
       ],
-      "fireAISoundEvent": true //发AISound事件让Animals等响应做事情
+      "fireAISoundEvent": true
     },
     "abilities": [
-      //
       {
-        "abilityID": "Arrow_Material",
-
-        "abilityName": "Avatar_Gorou_ShootArrow_Light_Material"
+        "abilityID": "Bullet_Faruzan_ShootArrow",
+        "abilityName": "Bullet_Faruzan_ShootArrow"
       },
       {
-        "abilityID": "Arrow_Damage",
-
-        "abilityName": "Avatar_Gorou_ShootArrow_Damage"
+        "abilityID": "Bullet_Faruzan_ShootArrow_LightFX",
+        "abilityName": "Bullet_Faruzan_ShootArrow_LightFX"
       }
     ]
   },
-  "Gorou_Arrow_02": {
+  "Faruzan_Arrow_02": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
@@ -141,12 +139,13 @@
     "combat": {
       "property": {
         "useCreatorProperty": true, // 是否继承创造者的数值
+        "useCreatorBuffedProperty": true, // 继承的数值是否使用创造者身上的buff带来的property进行计算，仅在useCreatorProperty为true，或useCreatorPropertyPartly有值时生效，说白了就是创生时主人的临时buff对它起不起效
+        "useAbilityProperty": false, // 是否使用自己的AbilityState中的AbilityProperty进行CombatProperty的计算,说白了就是自己后续还吃不吃临时buff。
         "canTriggerBullet": false,
         "isInvincible": true
       },
       "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
+        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -155,7 +154,7 @@
         "muteAllHitText": true
       },
       "animEvents": {
-        "ATK02": {
+        "Arrow_ATK02": {
           "attackPattern": {
             "$type": "ConfigAttackBox",
             "triggerType": "TriggerNoRepeat",
@@ -180,7 +179,7 @@
             "attackProperty": {
               "damagePercentage": 0,
               "strikeType": "Pierce",
-              "enBreak": 12.96
+              "enBreak": 12.42
             },
             "hitPattern": {
               "onHitEffectName": "default",
@@ -225,29 +224,27 @@
       "triggerActions": [
         {
           "$type": "ConfigGadgetDoAttackEvent",
-          "attackEvent": "ATK02"
+          "attackEvent": "Arrow_ATK02"
         },
         {
           "$type": "ConfigGadgetTriggerAbility",
-          "abilityName": "Avatar_Gorou_ShootArrow_Light_Material"
+          "abilityName": "Bullet_Faruzan_ShootArrow"
         }
       ],
       "fireAISoundEvent": true
     },
     "abilities": [
       {
-        "abilityID": "Arrow_Material",
-
-        "abilityName": "Avatar_Gorou_ShootArrow_Light_Material"
+        "abilityID": "Bullet_Faruzan_ShootArrow",
+        "abilityName": "Bullet_Faruzan_ShootArrow"
       },
       {
-        "abilityID": "Arrow_Damage",
-
-        "abilityName": "Avatar_Gorou_ShootArrow_Damage"
+        "abilityID": "Bullet_Faruzan_ShootArrow_LightFX",
+        "abilityName": "Bullet_Faruzan_ShootArrow_LightFX"
       }
     ]
   },
-  "Gorou_Arrow_03": {
+  "Faruzan_Arrow_03": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
@@ -262,12 +259,13 @@
     "combat": {
       "property": {
         "useCreatorProperty": true, // 是否继承创造者的数值
+        "useCreatorBuffedProperty": true, // 继承的数值是否使用创造者身上的buff带来的property进行计算，仅在useCreatorProperty为true，或useCreatorPropertyPartly有值时生效，说白了就是创生时主人的临时buff对它起不起效
+        "useAbilityProperty": false, // 是否使用自己的AbilityState中的AbilityProperty进行CombatProperty的计算,说白了就是自己后续还吃不吃临时buff。
         "canTriggerBullet": false,
         "isInvincible": true
       },
       "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
+        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -276,7 +274,7 @@
         "muteAllHitText": true
       },
       "animEvents": {
-        "ATK03": {
+        "Arrow_ATK03": {
           "attackPattern": {
             "$type": "ConfigAttackBox",
             "triggerType": "TriggerNoRepeat",
@@ -301,7 +299,7 @@
             "attackProperty": {
               "damagePercentage": 0,
               "strikeType": "Pierce",
-              "enBreak": 17.25
+              "enBreak": 15.87
             },
             "hitPattern": {
               "onHitEffectName": "default",
@@ -346,29 +344,27 @@
       "triggerActions": [
         {
           "$type": "ConfigGadgetDoAttackEvent",
-          "attackEvent": "ATK03"
+          "attackEvent": "Arrow_ATK03"
         },
         {
           "$type": "ConfigGadgetTriggerAbility",
-          "abilityName": "Avatar_Gorou_ShootArrow_Heavy_Material"
+          "abilityName": "Bullet_Faruzan_ShootArrow"
         }
       ],
       "fireAISoundEvent": true
     },
     "abilities": [
       {
-        "abilityID": "Arrow_Material",
-
-        "abilityName": "Avatar_Gorou_ShootArrow_Heavy_Material"
+        "abilityID": "Bullet_Faruzan_ShootArrow",
+        "abilityName": "Bullet_Faruzan_ShootArrow"
       },
       {
-        "abilityID": "Arrow_Damage",
-
-        "abilityName": "Avatar_Gorou_ShootArrow_Damage"
+        "abilityID": "Bullet_Faruzan_ShootArrow_HeavyFX",
+        "abilityName": "Bullet_Faruzan_ShootArrow_HeavyFX"
       }
     ]
   },
-  "Gorou_Arrow_04": {
+  "Faruzan_Arrow_04": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
@@ -383,12 +379,13 @@
     "combat": {
       "property": {
         "useCreatorProperty": true, // 是否继承创造者的数值
+        "useCreatorBuffedProperty": true, // 继承的数值是否使用创造者身上的buff带来的property进行计算，仅在useCreatorProperty为true，或useCreatorPropertyPartly有值时生效，说白了就是创生时主人的临时buff对它起不起效
+        "useAbilityProperty": false, // 是否使用自己的AbilityState中的AbilityProperty进行CombatProperty的计算,说白了就是自己后续还吃不吃临时buff。
         "canTriggerBullet": false,
         "isInvincible": true
       },
       "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
+        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -397,7 +394,7 @@
         "muteAllHitText": true
       },
       "animEvents": {
-        "ATK04": {
+        "Arrow_ATK04": {
           "attackPattern": {
             "$type": "ConfigAttackBox",
             "triggerType": "TriggerNoRepeat",
@@ -422,7 +419,7 @@
             "attackProperty": {
               "damagePercentage": 0,
               "strikeType": "Pierce",
-              "enBreak": 20.58
+              "enBreak": 15.87
             },
             "hitPattern": {
               "onHitEffectName": "default",
@@ -467,29 +464,27 @@
       "triggerActions": [
         {
           "$type": "ConfigGadgetDoAttackEvent",
-          "attackEvent": "ATK04"
+          "attackEvent": "Arrow_ATK04"
         },
         {
           "$type": "ConfigGadgetTriggerAbility",
-          "abilityName": "Avatar_Gorou_ShootArrow_Heavy_Material"
+          "abilityName": "Bullet_Faruzan_ShootArrow"
         }
       ],
       "fireAISoundEvent": true
     },
     "abilities": [
       {
-        "abilityID": "Arrow_Material",
-
-        "abilityName": "Avatar_Gorou_ShootArrow_Heavy_Material"
+        "abilityID": "Bullet_Faruzan_ShootArrow",
+        "abilityName": "Bullet_Faruzan_ShootArrow"
       },
       {
-        "abilityID": "Arrow_Damage",
-
-        "abilityName": "Avatar_Gorou_ShootArrow_Damage"
+        "abilityID": "Bullet_Faruzan_ShootArrow_LightFX",
+        "abilityName": "Bullet_Faruzan_ShootArrow_LightFX"
       }
     ]
   },
-  "Gorou_Arrow_05": {
+  "Faruzan_Arrow_05": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
@@ -504,12 +499,13 @@
     "combat": {
       "property": {
         "useCreatorProperty": true, // 是否继承创造者的数值
+        "useCreatorBuffedProperty": true, // 继承的数值是否使用创造者身上的buff带来的property进行计算，仅在useCreatorProperty为true，或useCreatorPropertyPartly有值时生效，说白了就是创生时主人的临时buff对它起不起效
+        "useAbilityProperty": false, // 是否使用自己的AbilityState中的AbilityProperty进行CombatProperty的计算,说白了就是自己后续还吃不吃临时buff。
         "canTriggerBullet": false,
         "isInvincible": true
       },
       "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
+        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -518,7 +514,7 @@
         "muteAllHitText": true
       },
       "animEvents": {
-        "ATK05": {
+        "Arrow_ATK05": {
           "attackPattern": {
             "$type": "ConfigAttackBox",
             "triggerType": "TriggerNoRepeat",
@@ -543,7 +539,7 @@
             "attackProperty": {
               "damagePercentage": 0,
               "strikeType": "Pierce",
-              "enBreak": 18.75
+              "enBreak": 16.83
             },
             "hitPattern": {
               "onHitEffectName": "default",
@@ -588,298 +584,27 @@
       "triggerActions": [
         {
           "$type": "ConfigGadgetDoAttackEvent",
-          "attackEvent": "ATK05"
+          "attackEvent": "Arrow_ATK05"
         },
         {
           "$type": "ConfigGadgetTriggerAbility",
-          "abilityName": "Avatar_Gorou_ShootArrow_Heavy_Material"
+          "abilityName": "Bullet_Faruzan_ShootArrow"
         }
       ],
       "fireAISoundEvent": true
     },
     "abilities": [
       {
-        "abilityID": "Arrow_Material",
-
-        "abilityName": "Avatar_Gorou_ShootArrow_Heavy_Material"
+        "abilityID": "Bullet_Faruzan_ShootArrow",
+        "abilityName": "Bullet_Faruzan_ShootArrow"
       },
       {
-        "abilityID": "Arrow_Damage",
-
-        "abilityName": "Avatar_Gorou_ShootArrow_Damage"
+        "abilityID": "Bullet_Faruzan_ShootArrow_HeavyFX",
+        "abilityName": "Bullet_Faruzan_ShootArrow_HeavyFX"
       }
     ]
   },
-  //小技能领域效果
-  "Gorou_ElementalArt_FieldLand": {
-    "$type": "ConfigGadget",
-    "common": {
-      "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      }
-    },
-    "hasConnectTrigger": true,
-    "ignoreChildSceneProp": true,
-    "canRemoveByClient": true,
-    "combat": {
-      "property": {
-        "useCreatorProperty": true,
-        "canTriggerBullet": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "endureType": "Monster_Boss_Humanoid", //韧性类型
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
-      },
-      "beHit": {
-        "hitBloodEffect": "",
-        "muteAllHit": false,
-        "muteAllHitEffect": false,
-        "muteAllHitText": true
-      }
-    },
-    // 生命周期管理
-    "timer": {
-      // "lifeInfinite": false,		//如果未触发是否一致存在
-      "lifeTime": 35.0 //存在时间
-    },
-    "abilities": [
-      //逻辑管理器
-      {
-        "abilityID": "SkillObj_Gorou_FieldLand_LogicHanler",
-        "abilityName": "SkillObj_Gorou_FieldLand_LogicHanler"
-      },
-      //表现管理器
-      {
-        "abilityID": "SkillObj_Gorou_FieldLand_EffectHanler",
-        "abilityName": "SkillObj_Gorou_FieldLand_EffectHanler"
-      }
-    ]
-  },
-  //小技能长按子弹
-  "Gorou_ElementalArt_Bullet": {
-    "$type": "ConfigGadget",
-    "common": {
-      "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume", //EmitFrom
-        "scaleX": 2.4,
-        "scaleY": 2.4,
-        "scaleZ": 2.4
-      },
-      "affectedByWorld": true,
-      "checkInSurface": false
-    },
-    "timer": {
-      "lifeTime": 0.2
-    },
-    "combat": {
-      "property": {
-        "useCreatorProperty": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": true
-      },
-      "combatLock": {
-        "denyLockOn": true
-      }
-    },
-    // 子弹线性移动
-    "move": {
-      "$type": "ConfigLinerBulletMove",
-      "speed": 50.0,
-      "syncToRemote": true
-    },
-    // 子弹参数
-    "gadget": {
-      "$type": "ConfigBulletPattern",
-      "collision": {
-        "targetType": "Enemy",
-        "triggerType": "TriggerOnce", //只触发一次
-        "ignoreWater": true, //不能在水里创建
-        "ccd": {
-          "type": "Always" //一定进行CCD检测
-          //如果对高速物体的碰撞检测比较精准就需要打开
-        }
-      },
-      "triggerActions": [
-        {
-          "$type": "ConfigGadgetTriggerAbility",
-          "abilityName": "Gorou_ElementalArt_Bullet"
-        }
-      ],
-      //长按发射，如果创建的位置太远，超过最大时间选的位置
-      "triggerLifeOverActions": [
-        {
-          "$type": "ConfigGadgetTriggerAbility",
-          "abilityName": "Gorou_ElementalArt_Bullet_LifeOver"
-        }
-      ]
-    },
-    "abilities": [
-      {
-        "abilityID": "Gorou_ElementalArt_Bullet",
-        "abilityName": "Gorou_ElementalArt_Bullet"
-      },
-      {
-        "abilityID": "Gorou_ElementalArt_Bullet_LifeOver",
-        "abilityName": "Gorou_ElementalArt_Bullet_LifeOver"
-      }
-    ]
-  },
-
-  //试验大招表现用【狗子物件，目前暂定挂在角色右边，跟随角色】
-  "Gorou_ElementalBurst_Dog": {
-    "$type": "ConfigGadget",
-    "common": {
-      "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1.0
-      }
-    },
-    "timer": {
-      "lifeTime": 15.0
-    },
-    "combat": {
-      "property": {
-        "useCreatorProperty": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
-      },
-      "beHit": {
-        "hitBloodEffect": "",
-        "muteAllHit": false,
-        "muteAllHitEffect": true,
-        "muteAllHitText": true
-      }
-    },
-    "move": {
-      "$type": "ConfigFollowMove",
-      "target": "LocalAvatar",
-      "followRotation": true, //是否跟随目标转向
-      "syncTransToServer": true, //是否定时通知服务器位置信息
-      "offset": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
-      "forward": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 1.0
-      },
-      "followOwnerInvisible": false //跟随目标不可见时，自己也不可见
-    },
-    "abilities": [
-      {
-        "abilityID": "SkillObj_Gorou_BurstFieldLand_Dog",
-        "abilityName": "SkillObj_Gorou_BurstFieldLand_Dog"
-      }
-    ]
-  },
-  //大招领域效果
-  "Gorou_ElementalBurst_FieldLand": {
-    "$type": "ConfigGadget",
-    "common": {
-      "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      }
-    },
-    "hasConnectTrigger": true,
-    "ignoreChildSceneProp": true,
-    "canRemoveByClient": true,
-    "combat": {
-      "property": {
-        "useCreatorProperty": true,
-        "canTriggerBullet": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
-      },
-      "beHit": {
-        "hitBloodEffect": "",
-        "muteAllHit": false,
-        "muteAllHitEffect": false,
-        "muteAllHitText": true
-      }
-    },
-    // 生命周期管理
-    "timer": {
-      // "lifeInfinite": false,		//如果未触发是否一致存在
-      "lifeTime": 19.0 //存在时间[比原持有时间长]
-    },
-    // 子弹参数
-    "gadget": {
-      "$type": "ConfigBulletPattern",
-      "enableCollisionDelay": 0.6, //给创建平台留一点时间
-      "collision": {
-        "targetType": "All",
-        "triggerType": "TriggerAlways",
-        "triggerCD": 0.3,
-        "ignoreScene": true,
-        "ignoreWater": true,
-        "bornWithTriggerEnabled": false
-      },
-      "triggerActions": [
-        {
-          "$type": "ConfigGadgetTriggerAbility",
-          "abilityName": "SkillObj_Gorou_BurstFieldLand"
-        }
-      ]
-    },
-    "move": {
-      "$type": "ConfigFollowMove",
-      "target": "LocalAvatar",
-      "syncTransToServer": true, //是否定时通知服务器位置信息
-      //"attachPoint": "RootNode",   //跟随脚底点
-      "followRotation": false,
-      "offset": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
-      "forward": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      }
-    },
-
-    "abilities": [
-      //后台cjb效果
-      {
-        "abilityID": "SkillObj_Gorou_BurstFieldLand",
-        "abilityName": "SkillObj_Gorou_BurstFieldLand"
-      },
-      //和小技能领域效果一致的光环效果
-      {
-        "abilityID": "SkillObj_Gorou_BurstFieldLand_Halo",
-        "abilityName": "SkillObj_Gorou_BurstFieldLand_Halo"
-      }
-    ]
-  },
-
-  //没有元素属性的蓄力箭
-  "Gorou_AimingArrow_WithoutRock": {
+  "Faruzan_Arrow_06": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
@@ -894,29 +619,71 @@
     "combat": {
       "property": {
         "useCreatorProperty": true, // 是否继承创造者的数值
+        "useCreatorBuffedProperty": true, // 继承的数值是否使用创造者身上的buff带来的property进行计算，仅在useCreatorProperty为true，或useCreatorPropertyPartly有值时生效，说白了就是创生时主人的临时buff对它起不起效
+        "useAbilityProperty": false, // 是否使用自己的AbilityState中的AbilityProperty进行CombatProperty的计算,说白了就是自己后续还吃不吃临时buff。
         "canTriggerBullet": false,
         "isInvincible": true
       },
       "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1",
-        "overrideRange": -1,
-        "overrideNormalPri": -1,
-        "overrideCombatPri": -1
+        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "animEvents": {
+        "Arrow_ATK06": {
+          "attackPattern": {
+            "$type": "ConfigAttackBox",
+            "triggerType": "TriggerNoRepeat",
+            "size": {
+              "x": 0.1,
+              "y": 0.1,
+              "z": 1.0
+            },
+            "born": {
+              "$type": "ConfigBornByCollisionPoint",
+              "offset": {
+                "x": 0.0, // + means up, - means down
+                "y": 0.0, // + means left, - means right
+                "z": -0.5 // + means forward, - means backward
+              }
+            },
+            "checkHitLayerType": "Both"
+          },
+          "attackInfo": {
+            "canBeModifiedBy": "OriginOwner",
+            "attackTag": "NormalAttack_06",
+            "attackProperty": {
+              "damagePercentage": 0,
+              "strikeType": "Pierce",
+              "enBreak": 20.1
+            },
+            "hitPattern": {
+              "onHitEffectName": "default",
+              "hitImpulseType": "LV1",
+              "reboundRatio": 0,
+              "hitHaltTime": 0.0,
+              "hitHaltTimeScale": 0.0,
+              "muteHitText": false
+            },
+            "forceCameraShake": false,
+            "cameraShake": {
+              "shakeRange": 0.02,
+              "shakeTime": 0.1
+            }
+          }
+        }
       }
     },
     // 子弹线性移动
     "move": {
       "$type": "ConfigLinerParabolaBulletMove",
-      "speed": 50.0,
-      "straightRange": 25.0,
-      "gravityOfAcceleration": 5.5,
+      "speed": 70.0,
+      "straightRange": 15.0,
+      "gravityOfAcceleration": 30.0,
       "airResistance": 0.01,
       "updateAngle": {
         "$type": "ConfigBulletMoveAngleByVelocity"
@@ -925,7 +692,7 @@
     // 生命周期管理
     "timer": {
       "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 20.0 //存在时间
+      "lifeTime": 8.0 //存在时间
     },
     // 子弹参数
     "gadget": {
@@ -936,21 +703,34 @@
       },
       "triggerActions": [
         {
+          "$type": "ConfigGadgetDoAttackEvent",
+          "attackEvent": "Arrow_ATK06"
+        },
+        {
           "$type": "ConfigGadgetTriggerAbility",
-          "abilityName": "Bullet_Gorou_AimingArrow_WithoutRock"
+          "abilityName": "Bullet_Faruzan_ShootArrow"
         }
       ],
       "fireAISoundEvent": true
     },
     "abilities": [
       {
-        "abilityID": "Bullet_Gorou_AimingArrow_WithoutRock",
-        "abilityName": "Bullet_Gorou_AimingArrow_WithoutRock"
+        "abilityID": "Bullet_Faruzan_ShootArrow",
+        "abilityName": "Bullet_Faruzan_ShootArrow"
+      },
+      {
+        "abilityID": "Bullet_Faruzan_ShootArrow_HeavyFX",
+        "abilityName": "Bullet_Faruzan_ShootArrow_HeavyFX"
       }
     ]
   },
 
-  "Gorou_AimingArrow_Rock": {
+  ////////////////////////////////////////////////////////////////
+  //
+  //  蓄力风属性子弹
+  //
+  ////////////////////////////////////////////////////////////////
+  "Faruzan_AimingArrow_Wind": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
@@ -968,8 +748,7 @@
         // "HP" : 999999,
         // "attack" : 60.0,
         // "defense" : 999999,
-        "canTriggerBullet": false,
-        "isInvincible": true
+        "canTriggerBullet": false
       },
       "combatLock": {
         "denyLockOn": true,
@@ -1011,13 +790,472 @@
       "triggerActions": [
         {
           "$type": "ConfigGadgetTriggerAbility",
-          "abilityName": "Bullet_Gorou_AimingArrow_Rock"
+          "abilityName": "Avatar_Faruzan_ShootArrow_Enchanted_Wind"
+        },
+        {
+          "$type": "ConfigGadgetTriggerAbility",
+          "abilityName": "Avatar_Faruzan_ShootAimingArrow_Material"
         }
       ]
     },
     "abilities": [
       {
-        "abilityName": "Bullet_Gorou_AimingArrow_Rock"
+        "abilityID": "Wind_Fx",
+
+        "abilityName": "Avatar_Faruzan_ShootArrow_Enchanted_Wind"
+      },
+      {
+        "abilityID": "Arrow_Fx",
+
+        "abilityName": "Avatar_Faruzan_ShootAimingArrow_Material"
+      }
+    ]
+  },
+
+  //蓄力无属性子弹
+
+  "Faruzan_AimingArrow_WithoutWind": {
+    "$type": "ConfigGadget",
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 1.0
+      },
+      "affectedByWorld": true
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": true, // 是否继承创造者的数值
+        // "HP" : 999999,
+        // "attack" : 15.0,
+        // "defense" : 999999,
+        "canTriggerBullet": false
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1",
+        "overrideRange": -1,
+        "overrideNormalPri": -1,
+        "overrideCombatPri": -1
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "muteAllHit": true,
+        "muteAllHitEffect": true,
+        "muteAllHitText": true
+      }
+    },
+    // 子弹线性移动
+    "move": {
+      "$type": "ConfigLinerParabolaBulletMove",
+      "speed": 50.0,
+      "straightRange": 25.0,
+      "gravityOfAcceleration": 5.5,
+      "airResistance": 0.01,
+      "updateAngle": {
+        "$type": "ConfigBulletMoveAngleByVelocity"
+      }
+    },
+    // 生命周期管理
+    "timer": {
+      "lifeInfinite": false, //如果未触发是否一致存在
+      "lifeTime": 20.0 //存在时间
+    },
+    // 子弹参数
+    "gadget": {
+      "$type": "ConfigBulletPattern",
+      "collision": {
+        "targetType": "Enemy",
+        "triggerType": "TriggerOnce"
+      },
+      "triggerActions": [
+        {
+          "$type": "ConfigGadgetTriggerAbility",
+          "abilityName": "Avatar_Faruzan_ShootArrow_Enchanted_WithoutWind"
+        },
+        {
+          "$type": "ConfigGadgetTriggerAbility",
+          "abilityName": "Avatar_Faruzan_ShootAimingArrowWithoutWind_Material"
+        }
+      ],
+      "fireAISoundEvent": true
+    },
+    "abilities": [
+      {
+        "abilityID": "Arrow_WithoutWind",
+        "abilityName": "Avatar_Faruzan_ShootArrow_Enchanted_WithoutWind"
+      },
+      {
+        "abilityID": "Arrow_Material",
+        "abilityName": "Avatar_Faruzan_ShootAimingArrowWithoutWind_Material"
+      }
+    ]
+  },
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Faruzan_Wind_Arashi 元素战技打出的风刃
+  //
+  ////////////////////////////////////////////////////////////////
+  "Faruzan_Wind_Arashi": {
+    "$type": "ConfigGadget",
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1.0
+      }
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": true, // 是否继承创造者的数值
+        "HP": 999999,
+        "attack": 0,
+        "defense": 999999
+      },
+      "combatLock": {
+        "denyLockOn": true
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "muteAllHit": true,
+        "muteAllHitEffect": true,
+        "muteAllHitText": true
+      }
+    },
+    // 子弹线性移动
+    "move": {
+      "$type": "ConfigLinerBulletMove",
+      "speed": 25,
+      "acceleration": 0,
+      "accelerationTime": 0
+      /*"stickToGround":
+			{
+				"$type" : "ConfigMoveStickToGround",
+				"heightToGround" : 1,
+				"flexibleRange" : 0.1,
+				"maxStepHeight" : 2,
+				"maxSlopeAngle" : 60,
+				"isStickToWater" : true,
+				"unstickWhenDownSlide": "Keep",
+			},*/
+      /*			"updateAngle" :
+			{
+				"$type": "ConfigBulletMoveAngleByVelocity",
+				"traceLerpCoef": 10,
+			},*/
+    },
+    // 生命周期管理
+    "timer": {
+      "lifeInfinite": false, //如果未触发是否一致存在
+      "lifeTime": 0.5 //存在时间
+    },
+    // 子弹参数
+    "gadget": {
+      "$type": "ConfigBulletPattern",
+      "collision": {
+        "targetType": "Enemy",
+        "triggerType": "TriggerNoRepeat",
+        "ignoreScene": true,
+        "ccd": {
+          "type": "Always"
+        }
+      },
+      "triggerActions": [
+        {
+          "$type": "ConfigGadgetTriggerAbility",
+          "abilityName": "Avatar_Faruzan_Wind_Arashi_Bullet"
+        }
+      ],
+      "triggerLifeOverActions": [
+        /*				{
+					"$type" : "ConfigGadgetTriggerAbility",
+					"abilityName" : "Avatar_FlickerWave_Burst",
+				},*/
+      ]
+    },
+    "abilities": [
+      {
+        "abilityID": "Trigger",
+
+        "abilityName": "Avatar_Faruzan_Wind_Arashi_Bullet"
+      },
+      {
+        "abilityID": "Material",
+
+        "abilityName": "Avatar_Faruzan_Wind_Arashi_Bullet_Material"
+      }
+    ]
+  },
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Faruzan_Aim_TrackBullet 元素战技强化的子弹
+  //
+  ////////////////////////////////////////////////////////////////
+
+  "Faruzan_Aim_TrackBullet": {
+    "$type": "ConfigGadget",
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 1.0
+      },
+      "affectedByWorld": true
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": true, // 是否继承创造者的数值
+        "canTriggerBullet": false,
+        "isInvincible": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "muteAllHit": true,
+        "muteAllHitEffect": true,
+        "muteAllHitText": true
+      }
+    },
+    // 子弹线性移动
+    "move": {
+      "$type": "ConfigLinerParabolaBulletMove",
+      "speed": 50.0,
+      "straightRange": 25.0,
+      "gravityOfAcceleration": 5.5,
+      "airResistance": 0.01,
+      "updateAngle": {
+        "$type": "ConfigBulletMoveAngleByVelocity"
+      },
+      "velocityForce": {
+        "muteAll": true
+      }
+    },
+    // 生命周期管理
+    "timer": {
+      "lifeInfinite": false, //如果未触发是否一致存在
+      "lifeTime": 2.0 //存在时间
+    },
+    // 子弹参数
+    "gadget": {
+      "$type": "ConfigBulletPattern",
+      "collision": {
+        "targetType": "Enemy",
+        "triggerType": "TriggerOnce"
+      },
+      "triggerActions": [
+        {
+          "$type": "ConfigGadgetTriggerAbility",
+          "abilityName": "Avatar_Faruzan_Aim_TrackBullet_Material"
+        }
+      ],
+      "fireAISoundEvent": true
+    },
+    "abilities": [
+      {
+        "abilityName": "Avatar_Faruzan_Aim_TrackBullet_Material"
+      }
+    ]
+  },
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Faruzan_WindBlackHole 元素战技的风暴
+  //
+  ////////////////////////////////////////////////////////////////
+  "Faruzan_WindBlackHole": {
+    "$type": "ConfigGadget",
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      }
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": true,
+        "useCreatorBuffedProperty": true, // 继承的数值是否使用创造者身上的buff带来的property进行计算，仅在useCreatorProperty为true，或useCreatorPropertyPartly有值时生效，说白了就是创生时主人的临时buff对它起不起效
+        "canTriggerBullet": false,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true,
+        "isInvincible": true,
+        "combatLock": {
+          "denyLockOn": true
+        }
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "muteAllHit": true,
+        "muteAllHitEffect": true,
+        "muteAllHitText": true
+      }
+    },
+    // 生命周期管理
+    "timer": {
+      // "lifeInfinite": false,		//如果未触发是否一致存在
+      "lifeTime": 5.0 //存在时间
+    },
+    "abilities": [
+      {
+        "abilityID": "WindBlackHole",
+        "abilityName": "Avatar_Faruzan_WindBlackHole_Gadget"
+      }
+    ]
+  },
+
+  ////////////////////////////////////////////////////////////////
+  //
+  //  Faruzan_ElementalBurst_Gadget
+  //
+  ////////////////////////////////////////////////////////////////
+
+  "Faruzan_ElementalBurst_Gadget": {
+    "$type": "ConfigGadget",
+    "field": {
+      "concernType": "AllAvatars",
+      "shape": "CircleR15", //形状，不填为collider
+      "startCheckTime": 1.0,
+      "checkInterval": 0.1, //触发间隔
+      "triggerInfinite": true, //是否永远触发
+      "lifeInfinite": false, //如果未触发是否一致存在
+      "lifeTime": 60,
+      "overwriteCampType": true,
+      "campType": "All",
+      "useCollider": false
+    },
+    "common": {
+      "effectAttachShape": {
+        "$type": "ConfigEffectAttachBox",
+        "emitFrom": "Volume",
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      }
+      // "affectedByWorld": true,
+    },
+    "stateLayers": {
+      "defaultLayer": {
+        "$type": "ConfigNormalStateLayer",
+        "stateIDs": {
+          "Born": {
+            "$type": "ConfigNormalStateIDInfo",
+            "animatorStates": {
+              "Born": ["Faruzan_ElementalBurst_Born"]
+            },
+            "cullingModelAlwaysAnimate": true
+          },
+          "Idle": {
+            "$type": "ConfigNormalStateIDInfo",
+            "animatorStates": {
+              "Idle": ["Faruzan_ElementalBurst_Idle"]
+            },
+            "cullingModelAlwaysAnimate": true
+          }
+        }
+      }
+    },
+    "combat": {
+      "property": {
+        "useCreatorProperty": true,
+        "canTriggerBullet": false,
+        "isGhostToEnemy": true,
+        "isGhostToAllied": true,
+        "isInvincible": true
+      },
+      "combatLock": {
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "muteAllHit": true,
+        "muteAllHitEffect": true,
+        "muteAllHitText": true
+      }
+    },
+    // 子弹线性移动
+    "move": {
+      //"$type": "ConfigBulletMove",
+      "$type": "ConfigAnimationBulletMove",
+      "speed": 1
+      // "stickToGround":
+      // {
+      // 	"$type" : "ConfigMoveStickToGround",
+      // 	"heightToGround" : 2.5,
+      // 	"flexibleRange" : 0.5,
+      // 	"maxStepHeight" : 3,
+      // 	"maxSlopeAngle" : 40,
+      // 	"isStickToWater" : true,
+      // 	"unstickWhenDownSlide": "Keep",
+      // 	"unstickWhenUpSlide": "Keep",
+      // }
+      // "useAniamtorVelocity": true,
+      // "constSpeedRatio": 1,
+      // "$type" : "ConfigSurroundBulletMove",
+      // "speed" :3,      //21*3秒/半径3=3圈。     30速度，2秒是平着转的数据。
+      // "clockwise": true,
+      // "clockwise": false,
+      // "radius" : 1.2,             //3.2半径  25速度，2.6秒。
+      // "anglerVelocity": 3600.0,
+      // "traceOnYAxis" : true,
+      // "acceleration":3,
+      // "accelerationTime":1.5,
+      // "updateAngle":  //公转同时会自传，保持正面对圆心。
+      // {
+      // 	"$type":"ConfigBulletMoveAngleByVelocity",
+      // 	"traceLerpCoef":60,
+      // },
+      // "stickToGround":
+      // {
+      // 	"$type" : "ConfigMoveStickToGround",
+      // 	"heightToGround" : 1,
+      // 	"flexibleRange" : 0.5,
+      // 	"maxStepHeight" : 1.5,
+      // 	"maxSlopeAngle" : 40,
+      // 	"isStickToWater" : true,
+      // 	"unstickWhenDownSlide": "Keep",
+      // 	"unstickWhenUpSlide": "Keep",
+      // },
+      // "canBornInWater": true,
+      // "syncToRemote" : true,
+      // "velocityForce":
+      // {
+      // 	"includeForces": ["RetreatType","RetreatAirType","WindZoneType"],
+      // },
+    },
+    // 生命周期管理
+    "timer": {
+      "lifeInfinite": false, //如果未触发是否一致存在
+      "lifeTime": 60.0 //存在时间
+    },
+    "abilities": [
+      {
+        "abilityName": "Faruzan_ElementalBurst_Gadget"
+      },
+      {
+        "abilityName": "Faruzan_ElementalBurst_Gadget_Born"
+      },
+      {
+        "abilityName": "Faruzan_ElementalBurst_Gadget_Controller"
+      },
+      {
+        "abilityName": "Faruzan_WindSubHurtDown_Controller"
       }
     ]
   }
