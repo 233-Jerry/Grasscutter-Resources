@@ -2,7 +2,7 @@
 > <em>Resource Version - "Certain Anime Game" 3.3</em><br/>
 
 - ExcelBinOutput (3.3 GC)
-- BinOutput (3.3 GIO: Talent,Scene>SceneNpcBorn,LevelEntity,Gadget,Avatar,AbilityGroup | GC 3.3 Scene>Point,Quest,HomeworldDefaultSave | GC ?.? LevelDesign>Routes)
+- BinOutput (3.3 GIO: Talent,Scene>SceneNpcBorn,LevelEntity,Gadget,Avatar,AbilityGroup,Ability | GC 3.3 Scene>Point,Quest,HomeworldDefaultSave | GC ?.? LevelDesign>Routes)
 - Scripts (3.3 GIO)
 - Readable (??)
 - Subtitle (??)
