@@ -1,9 +1,4 @@
 {
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座1  八重的元素爆发每触发一次额外攻击，都会为八重回复X点元素能量。
-  //
-  ////////////////////////////////////////////////////////////////
   "Yae_Constellation_1": [
     {
       "$type": "UnlockTalentParam",
@@ -17,11 +12,6 @@
       "paramDelta": "%1"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座2  元素战技的冷却降低X%；攻击索敌范围提升Y%。（考虑初始半径10米，解锁天赋后调整为20米）
-  //
-  ////////////////////////////////////////////////////////////////
   "Yae_Constellation_2": [
     {
       "$type": "ModifyAbility",
@@ -35,11 +25,6 @@
       "paramSpecial": "InitLevel",
       "paramDelta": "%3"
     },
-    // {
-    // 	"$type" : "ModifySkillCD",
-    // 	"skillID" : 10582,
-    // 	"cdRatio" : -0.2,	//这里的cdratio不支持DynamicFloat
-    // },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Yae_ElementalArt_FoxTower_Material",
@@ -47,11 +32,6 @@
       "paramRatio": "%1"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座3 充能技升级 元素战技等级+3
-  //
-  ////////////////////////////////////////////////////////////////
   "Yae_Constellation_3": [
     {
       "$type": "AddTalentExtraLevel",
@@ -60,11 +40,6 @@
       "extraLevel": 3
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座4  被元素战技命中的敌人电抗降低X%，持续XX秒
-  //
-  ////////////////////////////////////////////////////////////////
   "Yae_Constellation_4": [
     {
       "$type": "AddAbility",
@@ -83,11 +58,6 @@
       "paramDelta": "%2"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座5  元素爆等级+3
-  //
-  ////////////////////////////////////////////////////////////////
   "Yae_Constellation_5": [
     {
       "$type": "AddTalentExtraLevel",
@@ -96,29 +66,7 @@
       "extraLevel": 3
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座6 狐狸塔初始等级+1；狐狸塔等级上限+1。
-  //
-  ////////////////////////////////////////////////////////////////
   "Yae_Constellation_6": [
-    // {
-    // 	"$type" : "UnlockTalentParam",
-    // 	"abilityName": "Avatar_Yae_ElementalArt_FoxTower_Material",
-    // 	"talentParam": "Yae_Constellation_6",
-    // },
-    // {
-    // 	"$type" : "ModifyAbility",
-    // 	"abilityName" : "Avatar_Yae_ElementalArt_FoxTower_Material",
-    // 	"paramSpecial" : "MaxLevel",
-    // 	"paramDelta" : "%1",
-    // },
-    // {
-    // 	"$type" : "ModifyAbility",
-    // 	"abilityName" : "Avatar_Yae_ElementalArt_FoxTower_Material",
-    // 	"paramSpecial" : "InitLevel",
-    // 	"paramDelta" : "%1",
-    // },
     {
       "$type": "AddAbility",
       "abilityName": "Avatar_Yae_Constellation_6"
@@ -130,51 +78,13 @@
       "paramDelta": "%1"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  突破天赋1  八重神子在后台时雷元素伤害加成提升XX
-  //
-  ////////////////////////////////////////////////////////////////
   "Yae_PermanentSkill_1": [
-    // {
-    // 	"$type":"AddAbility",
-    // 	"abilityName":"Avatar_Yae_PermanentSkill_1",
-    // },
-    // {
-    // 	"$type" : "ModifyAbility",
-    // 	"abilityName" : "Avatar_Yae_PermanentSkill_1",
-    // 	"paramSpecial" : "cdDelta_1",
-    // 	"paramDelta" : "-%1",
-    // },
-    // {
-    // 	"$type" : "ModifyAbility",
-    // 	"abilityName" : "Avatar_Yae_PermanentSkill_1",
-    // 	"paramSpecial" : "ElementalArt_CD",
-    // 	"paramDelta" : "%2",
-    // },
-    // {
-    // 	"$type" : "ModifyAbility",
-    // 	"abilityName" : "Avatar_Yae_PermanentSkill_1",
-    // 	"paramSpecial" : "cdDelta_2",
-    // 	"paramDelta" : "-%3",
-    // },
-    // {
-    // 	"$type" : "ModifyAbility",
-    // 	"abilityName" : "Avatar_Yae_PermanentSkill_1",
-    // 	"paramSpecial" : "ElementalBurst_CD",
-    // 	"paramDelta" : "%4",
-    // },
     {
       "$type": "UnlockTalentParam",
       "abilityName": "Avatar_Yae_ElementalBurst_Mark_Tower",
       "talentParam": "Yae_PermanentSkill_1"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  突破天赋2  基于八重神子自身的元素精通，提升元素战技的 damagePercentageRatio
-  //
-  ////////////////////////////////////////////////////////////////
   "Yae_PermanentSkill_2": [
     {
       "$type": "AddAbility",
@@ -187,11 +97,6 @@
       "paramDelta": "%1"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级 神子 普攻&重击升级
-  //
-  ////////////////////////////////////////////////////////////////
   "Yae_SkillUpgrade_1": [
     {
       "$type": "ModifyAbility",
@@ -242,12 +147,6 @@
       "paramDelta": "%8"
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级 神子 小技能升级
-  //
-  ////////////////////////////////////////////////////////////////
   "Yae_SkillUpgrade_2": [
     {
       "$type": "ModifyAbility",
@@ -280,12 +179,6 @@
       "paramDelta": "%5"
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级 神子 充能技升级
-  //
-  ////////////////////////////////////////////////////////////////
   "Yae_SkillUpgrade_3": [
     {
       "$type": "ModifyAbility",

@@ -2,7 +2,7 @@
 > <em>Resource Version - "Certain Anime Game" 3.3</em><br/>
 
 - ExcelBinOutput (3.3 GC)
-- BinOutput (3.3 GIO: Talent,Scene>SceneNpcBorn,LevelEntity,Gadget,AbilityGroup,Ability | GC 3.3 Scene>Point,Quest,HomeworldDefaultSave,Avatar | GC ?.? LevelDesign>Routes)
+- BinOutput (3.3 GIO: Talent>EquipTalents,Scene>SceneNpcBorn,LevelEntity,Gadget,AbilityGroup,Ability | GC 3.3 Scene>Point,Quest,HomeworldDefaultSave,Avatar,Talent>AvatarTalents | GC ?.? LevelDesign>Routes)
 - Scripts (3.3 GIO) (Used for Big World LUA)
 - TextMap (3.3 GC) (for language translations items,etc are used for gm-books)
 - QuestEncryptionKeys (3.2 GIO) (Used for cutscenes that require a key, see Credits below)

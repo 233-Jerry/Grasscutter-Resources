@@ -1,9 +1,4 @@
 {
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座1  待定在五郎领域加成下角色（除了五郎自己）造成岩元素伤害时，元素战技的冷却时间减少2秒
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_Constellation_1": [
     {
       "$type": "UnlockTalentParam",
@@ -40,11 +35,6 @@
       "paramDelta": "%2"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座2  大招状态下每次拾取元素结晶都会使持续时间延长1.5秒，最多触发3次。
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_Constellation_2": [
     {
       "$type": "AddAbility",
@@ -56,11 +46,6 @@
       "talentParam": "Gorou_Constellation_2"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座3 充能技升级
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_Constellation_3": [
     {
       "$type": "AddTalentExtraLevel",
@@ -69,11 +54,6 @@
       "extraLevel": 3
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座4  大招领域2层以及以上时，还会治疗周围的角色，治疗量基于五郎自身防御力X%
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_Constellation_4": [
     {
       "$type": "UnlockTalentParam",
@@ -87,11 +67,6 @@
       "paramDelta": "%1"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座5 元素爆发等级+3
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_Constellation_5": [
     {
       "$type": "AddTalentExtraLevel",
@@ -100,12 +75,6 @@
       "extraLevel": 3
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座6  五郎的e/q领域释放时，领域等级为【监牢】、【难破】、【摧碎】时
-  //           对应的队伍内所有角色岩元素伤害爆伤提升10%\20%\40%
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_Constellation_6": [
     {
       "$type": "UnlockTalentParam",
@@ -195,11 +164,6 @@
       "paramDelta": "%4"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  突破天赋1 元素爆发持续时间内全队防御力提升X%
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_PermanentSkill_1": [
     {
       "$type": "UnlockTalentParam",
@@ -219,15 +183,7 @@
       "paramDelta": "%2"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  突破天赋2 基于五郎的防御力，以下攻击造成的伤害提高：
-  //  元素战技伤害提高值：防御力的A%，
-  //  元素爆发伤害提高值：防御力的B%
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_PermanentSkill_2": [
-    //	小技能
     {
       "$type": "UnlockTalentParam",
       "abilityName": "Avatar_Gorou_ElementalArt_SkillHoldCharge",
@@ -246,22 +202,21 @@
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Gorou_ElementalArt_SkillHoldCharge",
-      "paramSpecial": "Gorou_PermanentSkill_2_ArtRatio", //这个没生效
-      "paramDelta": "%1" //1.56
+      "paramSpecial": "Gorou_PermanentSkill_2_ArtRatio",
+      "paramDelta": "%1"
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Gorou_ElementalArt",
-      "paramSpecial": "Gorou_PermanentSkill_2_ArtRatio", //这个没生效
-      "paramDelta": "%1" //1.56
+      "paramSpecial": "Gorou_PermanentSkill_2_ArtRatio",
+      "paramDelta": "%1"
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "SkillObj_Gorou_FieldLand_LogicHanler",
-      "paramSpecial": "Gorou_PermanentSkill_2_ArtRatio", //这个没生效
-      "paramDelta": "%1" //1.56
+      "paramSpecial": "Gorou_PermanentSkill_2_ArtRatio",
+      "paramDelta": "%1"
     },
-    // 充能技
     {
       "$type": "UnlockTalentParam",
       "abilityName": "SkillObj_Gorou_BurstFieldLand",
@@ -271,25 +226,15 @@
       "$type": "ModifyAbility",
       "abilityName": "SkillObj_Gorou_BurstFieldLand",
       "paramSpecial": "Gorou_PermanentSkill_2_BurstRatio",
-      "paramDelta": "%2" //0.56
+      "paramDelta": "%2"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  突破天赋3
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_PermanentSkill_3": [
     {
       "$type": "AddAbility",
       "abilityName": "Avatar_Gorou_Radar_Collectables_Daoqi"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级 五郎 普攻升级
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_SkillUpgrade_1": [
     {
       "$type": "ModifyAbility",
@@ -315,7 +260,6 @@
       "paramSpecial": "NormalAttack_04_DamagePercentage",
       "paramDelta": "%4"
     },
-    //无属性子弹
     {
       "$type": "ModifyAbility",
       "abilityName": "Bullet_Gorou_AimingArrow_WithoutRock",
@@ -347,12 +291,6 @@
       "paramDelta": "%9"
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级 五郎 小技能升级
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_SkillUpgrade_2": [
     {
       "$type": "ModifyAbility",
@@ -397,12 +335,6 @@
       "paramDelta": "%3"
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级 五郎 充能技升级
-  //
-  ////////////////////////////////////////////////////////////////
   "Gorou_SkillUpgrade_3": [
     {
       "$type": "ModifyAbility",

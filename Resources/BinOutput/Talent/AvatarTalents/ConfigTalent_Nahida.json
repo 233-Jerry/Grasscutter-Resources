@@ -1,9 +1,4 @@
 {
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级1 普通攻击、重击、空中攻击
-  //
-  ////////////////////////////////////////////////////////////////
   "Nahida_SkillUpgrade_1": [
     {
       "$type": "ModifyAbility",
@@ -60,119 +55,101 @@
       "paramDelta": "%9"
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级2 元素战技升级
-  //
-  ////////////////////////////////////////////////////////////////
   "Nahida_SkillUpgrade_2": [
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalArt_Click",
-      "paramSpecial": "Click_Damage", //点按伤害
+      "paramSpecial": "Click_Damage",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalArt_RayCast",
-      "paramSpecial": "Hold_Damage", //长按伤害
+      "paramSpecial": "Hold_Damage",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalArt",
-      "paramSpecial": "Chain_Damage_PerAtk", //链接脉冲伤害攻击倍率
+      "paramSpecial": "Chain_Damage_PerAtk",
       "paramDelta": "%3",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalArt",
-      "paramSpecial": "Chain_Damage_PerMastery", //链接脉冲伤害精通倍率
+      "paramSpecial": "Chain_Damage_PerMastery",
       "paramDelta": "%4",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalArt",
-      "paramSpecial": "Chain_CD", //链接触发间隔
+      "paramSpecial": "Chain_CD",
       "paramDelta": "%5",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalArt",
-      "paramSpecial": "Chain_Duration", //链接标记持续时间
+      "paramSpecial": "Chain_Duration",
       "paramDelta": "%6",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级3 元素爆发升级
-  //
-  ////////////////////////////////////////////////////////////////
   "Nahida_SkillUpgrade_3": [
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalBurst_Hollow_Gadget",
-      "paramSpecial": "Hollow_Fire_Lv1", //火系伤害提升Lv1
+      "paramSpecial": "Hollow_Fire_Lv1",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalBurst_Hollow_Gadget",
-      "paramSpecial": "Hollow_Fire_Lv2", //火系伤害提升Lv2
+      "paramSpecial": "Hollow_Fire_Lv2",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalBurst_Hollow_Gadget",
-      "paramSpecial": "Hollow_Electric_Lv1", //雷系冷却降低Lv1
+      "paramSpecial": "Hollow_Electric_Lv1",
       "paramDelta": "%3",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalBurst_Hollow_Gadget",
-      "paramSpecial": "Hollow_Electric_Lv2", //雷系冷却降低Lv2
+      "paramSpecial": "Hollow_Electric_Lv2",
       "paramDelta": "%4",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalBurst_Hollow_Gadget",
-      "paramSpecial": "Hollow_Water_Lv1", //水系领域延长Lv1
+      "paramSpecial": "Hollow_Water_Lv1",
       "paramDelta": "%5",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalBurst_Hollow_Gadget",
-      "paramSpecial": "Hollow_Water_Lv2", //水系领域延长Lv2
+      "paramSpecial": "Hollow_Water_Lv2",
       "paramDelta": "%6",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_ElementalBurst_Hollow_Gadget",
-      "paramSpecial": "Hollow_Duration", //领域初始持续时间
+      "paramSpecial": "Hollow_Duration",
       "paramDelta": "%7",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  突破1 PermanentSkill_1
-  //
-  ////////////////////////////////////////////////////////////////
   "Nahida_PermanentSkill_1": [
     {
       "$type": "AddAbility",
@@ -186,24 +163,18 @@
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_PermanentSkill_1",
-      "paramSpecial": "Mastery_Ratio", //精通转化比例
+      "paramSpecial": "Mastery_Ratio",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_PermanentSkill_1",
-      "paramSpecial": "Mastery_Max", //最大精通转化值
+      "paramSpecial": "Mastery_Max",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  突破2 PermanentSkill_2
-  //
-  ////////////////////////////////////////////////////////////////
   "Nahida_PermanentSkill_2": [
     {
       "$type": "AddAbility",
@@ -214,36 +185,30 @@
       "abilityName": "Avatar_Nahida_PermanentSkill_2",
       "paramSpecial": "Base_Mastery",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_PermanentSkill_2",
       "paramSpecial": "Max_Mastery",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_PermanentSkill_2",
       "paramSpecial": "Chain_Damage_Up",
       "paramDelta": "%3",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Nahida_PermanentSkill_2",
       "paramSpecial": "Chain_Crit_Up",
       "paramDelta": "%4",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座1 Constellation_1
-  //
-  ////////////////////////////////////////////////////////////////
   "Nahida_Constellation_1": [
     {
       "$type": "AddAbility",
@@ -255,12 +220,6 @@
       "talentParam": "Nahida_Constellation_1"
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座2 Constellation_2
-  //
-  ////////////////////////////////////////////////////////////////
   "Nahida_Constellation_2": [
     {
       "$type": "UnlockTalentParam",
@@ -269,33 +228,26 @@
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Nahida_ElementalArt", //命2草剧变暴击率提升
+      "abilityName": "Avatar_Nahida_ElementalArt",
       "paramSpecial": "Reaction_Crit_Ratio",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Nahida_ElementalArt", //命2防御下降百分比
+      "abilityName": "Avatar_Nahida_ElementalArt",
       "paramSpecial": "DefenseDown_Ratio",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Nahida_ElementalArt", //命2防御下降持续时间
+      "abilityName": "Avatar_Nahida_ElementalArt",
       "paramSpecial": "DefenseDown_Dura",
       "paramDelta": "%3",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座3 Constellation_3
-  //  元素战技等级+3
-  //
-  ////////////////////////////////////////////////////////////////
   "Nahida_Constellation_3": [
     {
       "$type": "AddTalentExtraLevel",
@@ -304,12 +256,6 @@
       "extraLevel": 3
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座4 Constellation_4
-  //
-  ////////////////////////////////////////////////////////////////
   "Nahida_Constellation_4": [
     {
       "$type": "AddAbility",
@@ -317,40 +263,33 @@
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Nahida_Constellation_4", //1档精通加成
+      "abilityName": "Avatar_Nahida_Constellation_4",
       "paramSpecial": "Constellation_4_Lv1",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Nahida_Constellation_4", //2档精通加成
+      "abilityName": "Avatar_Nahida_Constellation_4",
       "paramSpecial": "Constellation_4_Lv2",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Nahida_Constellation_4", //3档精通加成
+      "abilityName": "Avatar_Nahida_Constellation_4",
       "paramSpecial": "Constellation_4_Lv3",
       "paramDelta": "%3",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Nahida_Constellation_4", //4档精通加成
+      "abilityName": "Avatar_Nahida_Constellation_4",
       "paramSpecial": "Constellation_4_Lv4",
       "paramDelta": "%4",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座5 Constellation_5
-  //  元素爆发等级+3
-  //
-  ////////////////////////////////////////////////////////////////
   "Nahida_Constellation_5": [
     {
       "$type": "AddTalentExtraLevel",
@@ -359,12 +298,6 @@
       "extraLevel": 3
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座6 Constellation_6
-  //
-  ////////////////////////////////////////////////////////////////
   "Nahida_Constellation_6": [
     {
       "$type": "AddAbility",
@@ -377,31 +310,31 @@
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Nahida_Constellation_6", //命6额外触发锁链伤害攻击倍率
+      "abilityName": "Avatar_Nahida_Constellation_6",
       "paramSpecial": "Constellation_6_Dmg_PerAtk",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Nahida_Constellation_6", //命6额外触发锁链伤害精通倍率
+      "abilityName": "Avatar_Nahida_Constellation_6",
       "paramSpecial": "Constellation_6_Dmg_PerMastery",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Nahida_Constellation_6", //可释放层数
+      "abilityName": "Avatar_Nahida_Constellation_6",
       "paramSpecial": "Attack_Count",
       "paramDelta": "%3",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Nahida_Constellation_6", //状态持续时间
+      "abilityName": "Avatar_Nahida_Constellation_6",
       "paramSpecial": "Duration",
       "paramDelta": "%4",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ]
 }

@@ -12,7 +12,6 @@
       "paramDelta": "%1"
     }
   ],
-
   "Noel_Talent_342": [
     {
       "$type": "AddAbility",
@@ -31,7 +30,6 @@
       "paramDelta": "%2"
     }
   ],
-
   "Noel_Talent_S_Levelup": [
     {
       "$type": "AddTalentExtraLevel",
@@ -61,7 +59,6 @@
       "extraLevel": 3
     }
   ],
-
   "Noel_Talent_346": [
     {
       "$type": "UnlockTalentParam",
@@ -71,7 +68,7 @@
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Noel_Skill_E",
-      "paramSpecial": "AS_Skill_E_AttackUp_PS33_P3", //这边是直接加改原来的as
+      "paramSpecial": "AS_Skill_E_AttackUp_PS33_P3",
       "paramDelta": "%1"
     },
     {
@@ -81,7 +78,6 @@
       "paramDelta": "%2"
     }
   ],
-
   "Noel_ProudSkill_21": [
     {
       "$type": "AddAbility",
@@ -116,7 +112,6 @@
       "paramDelta": "%4"
     }
   ],
-
   "Noel_ProudSkill_22": [
     {
       "$type": "AddAbility",
@@ -129,63 +124,62 @@
       "paramDelta": "%1"
     }
   ],
-
   "Noel_ProudSkill_31": [
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Noel_ProudSkill_NormalAttack_DamageHandler",
       "paramSpecial": "NormalAttack_01_P1_DamagePercentage",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Noel_ProudSkill_NormalAttack_DamageHandler",
       "paramSpecial": "NormalAttack_02_P2_DamagePercentage",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Noel_ProudSkill_NormalAttack_DamageHandler",
       "paramSpecial": "NormalAttack_03_P3_DamagePercentage",
       "paramDelta": "%3",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Noel_ProudSkill_NormalAttack_DamageHandler",
       "paramSpecial": "NormalAttack_04_P4_DamagePercentage",
       "paramDelta": "%4",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Noel_ProudSkill_NormalAttack_DamageHandler",
       "paramSpecial": "ExtraAttack_Loop_P5_DamagePercentage",
       "paramDelta": "%5",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Noel_ProudSkill_NormalAttack_DamageHandler",
       "paramSpecial": "ExtraAttack_End_P6_DamagePercentage",
       "paramDelta": "%6",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Noel_ExtraAttack",
       "paramSpecial": "ExtraAttack_Claymore_Stamina_Cost",
       "paramDelta": "%7",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Noel_ExtraAttack",
       "paramSpecial": "ExtraAttack_Claymore_MaxTime",
       "paramDelta": "%8",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
@@ -206,7 +200,6 @@
       "paramDelta": "%11"
     }
   ],
-
   "Noel_ProudSkill_32": [
     {
       "$type": "ModifyAbility",
@@ -251,7 +244,6 @@
       "paramDelta": "%8"
     }
   ],
-
   "Noel_ProudSkill_33": [
     {
       "$type": "ModifyAbility",

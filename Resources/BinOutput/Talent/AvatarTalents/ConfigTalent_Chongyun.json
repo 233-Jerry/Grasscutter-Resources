@@ -5,17 +5,6 @@
       "abilityName": "Avatar_Chongyun_IceBlade",
       "talentParam": "Avatar_Chongyun_Talent_361"
     },
-    // {
-    //   "$type": "UnlockTalentParam",
-    //   "abilityName": "Avatar_Chongyun_SoulUnleash_Single_Initiate",
-    //   "talentParam": "Avatar_Chongyun_Talent_361",
-    // },
-    // {
-    //   "$type" : "ModifyAbility",
-    //   "abilityName" : "Avatar_Chongyun_SoulUnleash_Single_Initiate",
-    //   "paramSpecial" : "ElementalArt_Damage_Percentage",
-    //   "paramDelta" :"%1",
-    // },
     {
       "$type": "ModifyAbility",
       "abilityName": "ChongyunTest_TestBlade_Hit",
@@ -50,12 +39,6 @@
       "abilityName": "Avatar_Chongyun_IceCrystal",
       "talentParam": "Avatar_Chongyun_Talent_364"
     },
-    // {
-    //   "$type" : "ModifyAbility",
-    //   "abilityName" : "Avatar_Chongyun_IceCrystal",
-    //   "paramSpecial" : "bonusCritical",
-    //   "paramDelta" :"%1",
-    // },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Chongyun_IceCrystal",
@@ -77,12 +60,6 @@
       "abilityName": "Avatar_Chongyun_SoulUnleash_Initiate",
       "talentParam": "Avatar_Chongyun_Talent_366"
     },
-    // {
-    //   "$type" : "ModifyAbility",
-    //   "abilityName" : "Avatar_Chongyun_SoulUnleash_Initiate",
-    //   "paramSpecial" : "DefenseDown",
-    //   "paramDelta" :"%1",
-    // },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Chongyun_SoulUnleash_Quadra_Damage",
@@ -139,56 +116,56 @@
       "abilityName": "Avatar_Chongyun_NormalAttack_DamageHandler",
       "paramSpecial": "NormalAttack_01_DamagePercentage",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Chongyun_NormalAttack_DamageHandler",
       "paramSpecial": "NormalAttack_02_DamagePercentage",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Chongyun_NormalAttack_DamageHandler",
       "paramSpecial": "NormalAttack_03_DamagePercentage",
       "paramDelta": "%3",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Chongyun_NormalAttack_DamageHandler",
       "paramSpecial": "NormalAttack_04_DamagePercentage",
       "paramDelta": "%4",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Chongyun_NormalAttack_DamageHandler",
       "paramSpecial": "ExtraAttack_Loop_DamagePercentage",
       "paramDelta": "%5",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Chongyun_NormalAttack_DamageHandler",
       "paramSpecial": "ExtraAttack_End_DamagePercentage",
       "paramDelta": "%6",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Beidou_ExtraAttack_Chongyun",
       "paramSpecial": "ExtraAttack_Claymore_Stamina_Cost",
       "paramDelta": "%7",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Beidou_ExtraAttack_Chongyun",
       "paramSpecial": "Max_Dura",
       "paramDelta": "%8",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",

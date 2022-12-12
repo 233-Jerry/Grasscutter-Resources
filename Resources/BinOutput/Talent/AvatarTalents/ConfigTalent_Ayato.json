@@ -1,5 +1,4 @@
 {
-  //居合攻击对低血量单位提供增伤  2021.11.3 ok
   "Ayato_Constellation_1": [
     {
       "$type": "AddAbility",
@@ -10,36 +9,32 @@
       "abilityName": "Avatar_Ayato_Talent1_DamageUp",
       "paramSpecial": "HPRatio",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Ayato_Talent1_DamageUp",
       "paramSpecial": "DamageUp",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ],
-  //诸刃层数上限+1，例如诸刃还会提供一点面板效果（尽量隐性）。或者诸刃满的时候再提供攻速等等
-  "Ayato_Constellation_2":
-    //2021.11.3 ok
-    [
-      {
-        "$type": "ModifyAbility",
-        "abilityName": "Avatar_Ayato_KendoPose_Buff",
-        "paramSpecial": "MaxKendoBuffLevel",
-        "paramDelta": "%1",
-        "paramRatio": 0
-      },
-      {
-        "$type": "ModifyAbility",
-        "abilityName": "Avatar_Ayato_KendoPose_Buff",
-        "paramSpecial": "Tlant2_MaxHPRatio",
-        "paramDelta": "%2",
-        "paramRatio": 0
-      }
-    ],
-  //小技能+3
+  "Ayato_Constellation_2": [
+    {
+      "$type": "ModifyAbility",
+      "abilityName": "Avatar_Ayato_KendoPose_Buff",
+      "paramSpecial": "MaxKendoBuffLevel",
+      "paramDelta": "%1",
+      "paramRatio": 0.0
+    },
+    {
+      "$type": "ModifyAbility",
+      "abilityName": "Avatar_Ayato_KendoPose_Buff",
+      "paramSpecial": "Tlant2_MaxHPRatio",
+      "paramDelta": "%2",
+      "paramRatio": 0.0
+    }
+  ],
   "Ayato_Constellation_3": [
     {
       "$type": "AddTalentExtraLevel",
@@ -48,7 +43,6 @@
       "extraLevel": 3
     }
   ],
-  //大招施放后为自己之外的队友提供xx%增伤或攻速或什么。施放大招后对队伍中除自己以外的附近的队友加效果
   "Ayato_Constellation_4": [
     {
       "$type": "UnlockTalentParam",
@@ -57,24 +51,23 @@
     },
     {
       "$type": "AddAbility",
-      "abilityName": "Avatar_Ayato_Talent4" //给队友buff
+      "abilityName": "Avatar_Ayato_Talent4"
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Ayato_Talent4", //给队友攻速
+      "abilityName": "Avatar_Ayato_Talent4",
       "paramSpecial": "AttackSpeed",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Ayato_Talent4",
       "paramSpecial": "Talent4_Time",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ],
-  //大招+3
   "Ayato_Constellation_5": [
     {
       "$type": "AddTalentExtraLevel",
@@ -83,7 +76,6 @@
       "extraLevel": 3
     }
   ],
-  //每十多秒获得1次心眼效果。拔刀攻击命中时，额外触发一次快速2次拔刀伤害+天黑，再进入10秒cd。
   "Ayato_Constellation_6": [
     {
       "$type": "UnlockTalentParam",
@@ -99,17 +91,16 @@
       "abilityName": "Avatar_Ayato_NormalAttack_DamageHandler",
       "paramSpecial": "SPAttack04",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Ayato_NormalAttack_DamageHandler",
       "paramSpecial": "SPAttack05",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ],
-  //镜像如果是被击毁的，立刻获得x层诸刃
   "Ayato_PermanentSkill_1": [
     {
       "$type": "UnlockTalentParam",
@@ -129,7 +120,6 @@
       "paramDelta": "%2"
     }
   ],
-  //神里绫人位于后场时，若元素能量低于xx%，每x秒会恢复x点元素能量。
   "Ayato_PermanentSkill_2": [
     {
       "$type": "AddAbility",
@@ -154,7 +144,6 @@
       "paramDelta": "%3"
     }
   ],
-  //普攻强度，重击，下落攻击
   "Ayato_SkillUpgrade_1": [
     {
       "$type": "ModifyAbility",
@@ -217,7 +206,6 @@
       "paramDelta": "%10"
     }
   ],
-  //拔刀伤害（类公子），诸刃buff强度。
   "Ayato_SkillUpgrade_2": [
     {
       "$type": "ModifyAbility",
@@ -262,7 +250,6 @@
       "paramDelta": "%7"
     }
   ],
-  //元素爆发强度
   "Ayato_SkillUpgrade_3": [
     {
       "$type": "ModifyAbility",

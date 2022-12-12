@@ -8,37 +8,31 @@
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_StarChart",
-      "paramSpecial": "AS_Mona_Talent_ElementReactionUp_Electric", //值感电反应数值
+      "paramSpecial": "AS_Mona_Talent_ElementReactionUp_Electric",
       "paramDelta": "%1"
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_StarChart",
-      "paramSpecial": "AS_Mona_Talent_ElementReactionUp_Steam", //蒸发反应数
+      "paramSpecial": "AS_Mona_Talent_ElementReactionUp_Steam",
       "paramDelta": "%2"
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_StarChart",
-      "paramSpecial": "AS_Mona_Talent_ElementReactionUp_SwirlWater", //水扩散反应数值
+      "paramSpecial": "AS_Mona_Talent_ElementReactionUp_SwirlWater",
       "paramDelta": "%3"
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_StarChart",
-      "paramSpecial": "AS_Mona_Talent_ElementReactionUp_Freeze", //冰冻反应数值
+      "paramSpecial": "AS_Mona_Talent_ElementReactionUp_Freeze",
       "paramDelta": "%4"
     },
-    //{
-    //  "$type": "ModifyAbility",
-    //  "abilityName": "Avatar_Mona_StarChart",
-    //  "paramSpecial": "AS_Mona_Talent_ElementReactionUp_MaxCount", //最大层数 不需要了，只有1层
-    //  "paramDelta": "%5",
-    //},
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_StarChart",
-      "paramSpecial": "AS_Mona_Talent_ElementReactionUp_Time", //最大时间
+      "paramSpecial": "AS_Mona_Talent_ElementReactionUp_Time",
       "paramDelta": "%6"
     }
   ],
@@ -50,19 +44,19 @@
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_Talent_AutoExtraAttack",
-      "paramSpecial": "AS_Mona_Talent_AutoExtraAttack_Rate", //概率
+      "paramSpecial": "AS_Mona_Talent_AutoExtraAttack_Rate",
       "paramDelta": "%1"
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_Talent_AutoExtraAttack",
-      "paramSpecial": "AS_Mona_Talent_AutoExtraAttack_DamageRate", //伤害倍率
+      "paramSpecial": "AS_Mona_Talent_AutoExtraAttack_DamageRate",
       "paramDelta": "%2"
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_Talent_AutoExtraAttack",
-      "paramSpecial": "AS_Mona_Talent_AutoExtraAttack_CD", //内置CD
+      "paramSpecial": "AS_Mona_Talent_AutoExtraAttack_CD",
       "paramDelta": "%3"
     }
   ],
@@ -78,7 +72,7 @@
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_StarChart",
-      "paramSpecial": "AS_Mona_Talent_AntiCritical", //水扩散反应数值
+      "paramSpecial": "AS_Mona_Talent_AntiCritical",
       "paramDelta": "%1"
     }
   ],
@@ -98,29 +92,28 @@
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_Talent_LiquidStrike_ExtraAttakDamageUp",
-      "paramSpecial": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp_ThinkTime", // Think间隔
+      "paramSpecial": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp_ThinkTime",
       "paramDelta": "%1"
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_Talent_LiquidStrike_ExtraAttakDamageUp",
-      "paramSpecial": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp_ThinkValue", //每次叠加的伤害
+      "paramSpecial": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp_ThinkValue",
       "paramDelta": "%2"
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_Talent_LiquidStrike_ExtraAttakDamageUp",
-      "paramSpecial": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp_MaxValue", //最大层数
+      "paramSpecial": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp_MaxValue",
       "paramDelta": "%3"
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_Talent_LiquidStrike_ExtraAttakDamageUp",
-      "paramSpecial": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp_Time", //持续时间
+      "paramSpecial": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp_Time",
       "paramDelta": "%4"
     }
   ],
-
   "Mona_PermanentSkill_01": [
     {
       "$type": "AddAbility",
@@ -129,19 +122,19 @@
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_Talent_LiquidStriket_Phantom",
-      "paramSpecial": "AS_Mona_Talent_LiquidStrike_LiquidPhantom_Timer", //触发所需时间
+      "paramSpecial": "AS_Mona_Talent_LiquidStrike_LiquidPhantom_Timer",
       "paramDelta": "%1"
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Mona_Talent_MonaGadgetSkill_LiquidPhantom", //这里不一样指向的是Gadget
-      "paramSpecial": "AS_Mona_Talent_LiquidStrike_LiquidPhantom_Duration", //持续时间
+      "abilityName": "Avatar_Mona_Talent_MonaGadgetSkill_LiquidPhantom",
+      "paramSpecial": "AS_Mona_Talent_LiquidStrike_LiquidPhantom_Duration",
       "paramDelta": "%2"
     },
     {
       "$type": "ModifyAbility",
-      "abilityName": "Avatar_Mona_Talent_MonaGadgetSkill_LiquidPhantom", //这里不一样指向的是Gadget
-      "paramSpecial": "AS_Mona_Talent_LiquidStrike_LiquidPhantom_DamageRate", //伤害比例
+      "abilityName": "Avatar_Mona_Talent_MonaGadgetSkill_LiquidPhantom",
+      "paramSpecial": "AS_Mona_Talent_LiquidStrike_LiquidPhantom_DamageRate",
       "paramDelta": "%3"
     }
   ],
@@ -153,11 +146,10 @@
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_Talent_ChargeEfficiencyToWaterAddHurt",
-      "paramSpecial": "AS_Mona_Talent_WaterHurtAddRate", //触发所需时间
+      "paramSpecial": "AS_Mona_Talent_WaterHurtAddRate",
       "paramDelta": "%2"
     }
   ],
-
   "Mona_SkillUpgrade_01": [
     {
       "$type": "ModifyAbility",
@@ -213,8 +205,6 @@
       "paramSpecial": "FallingAnthem_Normal_Rank_2_Damage",
       "paramDelta": "%9"
     },
-
-    //有一部分是“天赋命之座（自动重击）”连带伤害
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_Talent_AutoExtraAttack",
@@ -235,8 +225,6 @@
       "paramSpecial": "AS_Mona_Phantom_LastDamageRate",
       "paramDelta": "%2"
     },
-
-    //有一部分是“天赋命之座”连带伤害
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_Talent_MonaGadgetSkill_LiquidPhantom",
@@ -282,14 +270,14 @@
       "abilityName": "Avatar_Mona_Liquid_TriggerAbility",
       "paramSpecial": "StaminaStartCost",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Mona_LiquidStrike",
       "paramSpecial": "StaminaCost",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ]
 }

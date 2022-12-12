@@ -1,9 +1,4 @@
 {
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座 1 小技能长按会回能
-  //
-  ////////////////////////////////////////////////////////////////
   "Lisa_Constellation_1": [
     {
       "$type": "UnlockTalentParam",
@@ -11,12 +6,6 @@
       "talentParam": "Lisa_ThunderFall_Talent_ReviveElemEnergy"
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座 2 小技能长按时抗打断能力，防御力提升
-  //
-  ////////////////////////////////////////////////////////////////
   "Lisa_Constellation_2": [
     {
       "$type": "UnlockTalentParam",
@@ -24,12 +13,6 @@
       "talentParam": "Lisa_Constellation_2"
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座 3 小技能等级+3
-  //
-  ////////////////////////////////////////////////////////////////
   "Lisa_Constellation_3": [
     {
       "$type": "AddTalentExtraLevel",
@@ -38,28 +21,15 @@
       "extraLevel": 3
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座 4 充能技概率打出多条闪电
-  //
-  ////////////////////////////////////////////////////////////////
   "Lisa_Constellation_4": [
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_PierceLightning_Ball_Attack",
       "paramSpecial": "_Ball_Attack_COUNT_RANGE",
-      "paramDelta": 2,
-      "paramRatio": 0
+      "paramDelta": 2.0,
+      "paramRatio": 0.0
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座 5 充能技等级+3
-  //
-  ////////////////////////////////////////////////////////////////
-  //添加破甲效果
   "Lisa_Constellation_5": [
     {
       "$type": "AddTalentExtraLevel",
@@ -68,12 +38,6 @@
       "extraLevel": 3
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  命之座 6 丽莎出场时有概率直接为周围的敌人附加三层引雷效果
-  //
-  ////////////////////////////////////////////////////////////////
   "Lisa_Constellation_6": [
     {
       "$type": "UnlockTalentParam",
@@ -81,12 +45,6 @@
       "talentParam": "Lisa_Constellation_6"
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  固有得意技1 雷光 重击有概率为目标附加引雷效果
-  //
-  ////////////////////////////////////////////////////////////////
   "Lisa_PermanentSkill_1": [
     {
       "$type": "UnlockTalentParam",
@@ -94,12 +52,6 @@
       "talentParam": "Lisa_ExtraAttack_StaticElecField"
     }
   ],
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  固有得意技2 空间电势的结界 释放充能技时对周围的敌人施加易伤效果，使其受到的伤害提高，持续一段时间。
-  //
-  ////////////////////////////////////////////////////////////////
   "Lisa_PermanentSkill_2": [
     {
       "$type": "UnlockTalentParam",
@@ -107,11 +59,6 @@
       "talentParam": "Lisa_Constellation_5"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级 普攻伤害提升，并击退引雷状态下的敌人
-  //
-  ////////////////////////////////////////////////////////////////
   "Lisa_SkillUpgrade_1": [
     {
       "$type": "UnlockTalentParam",
@@ -138,42 +85,42 @@
       "abilityName": "Avatar_Lisa_Attack01",
       "paramSpecial": "Damage01",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_Attack02",
       "paramSpecial": "Damage02",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_Attack03",
       "paramSpecial": "Damage03",
       "paramDelta": "%3",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_Attack04",
       "paramSpecial": "Damage04",
       "paramDelta": "%4",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_ExtraAttack_Damage",
       "paramSpecial": "Lisa_ExtraAttack_Damage",
       "paramDelta": "%5",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_ExtraAttack",
       "paramSpecial": "ExtraAttack_Catalyst_Stamina_Cost",
       "paramDelta": "%6",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
@@ -194,60 +141,50 @@
       "paramDelta": "%9"
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级 苍雷长按造成的伤害提高
-  //
-  ////////////////////////////////////////////////////////////////
   "Lisa_SkillUpgrade_2": [
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_ThunderFall",
       "paramSpecial": "Damage_0",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_ThunderFall",
       "paramSpecial": "Damage_1",
       "paramDelta": "%2",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_ThunderFall",
       "paramSpecial": "Damage_2",
       "paramDelta": "%3",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_ThunderFall",
       "paramSpecial": "Damage_3",
       "paramDelta": "%4",
-      "paramRatio": 0
+      "paramRatio": 0.0
     },
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_FlickerWaveDamage",
       "paramSpecial": "Damage",
       "paramDelta": "%6",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ],
-  ////////////////////////////////////////////////////////////////
-  //
-  //  技能升级 蔷薇的雷光放电攻击造成的伤害提升
-  //
-  ////////////////////////////////////////////////////////////////
   "Lisa_SkillUpgrade_3": [
     {
       "$type": "ModifyAbility",
       "abilityName": "Avatar_Lisa_PierceLightning_Ball_Attack",
       "paramSpecial": "Damage",
       "paramDelta": "%1",
-      "paramRatio": 0
+      "paramRatio": 0.0
     }
   ]
 }
