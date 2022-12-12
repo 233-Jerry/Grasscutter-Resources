@@ -1,15 +1,12 @@
 {
-  "$type": "ConfigAvatar",
   "common": {
     "effectAttachShape": {
       "$type": "ConfigEffectAttachSkinnedMesh",
-      "emissionRateRatio": 1.0,
-      "mesh": "EffectMesh",
-      "normalOffset": 0.02
+      "mesh": "EffectMesh"
     },
-    "height": 1.59380007,
-    "modelHeight": 1.567,
     "mass": 10.0,
+    "height": 1.5938000679016113,
+    "modelHeight": 1.5670000314712524,
     "affectedByWorld": true,
     "checkInSurface": true
   },
@@ -41,98 +38,78 @@
       "NormalMoveWeapon/RunningTurnWeapon"
     ]
   },
-  "equipController": {
-    "attachPoints": {
-      "equip01": "WeaponR",
-      "equip02": "WeaponL",
-      "equip03": "WeaponL"
-    },
-    "sheathPoint": "WeaponBackPut",
-    "dissolveSheathFadeDelay": 0.075,
-    "dissolveSheathFadeTime": 2.1,
-    "patternSheathFadeDelay": 0.075,
-    "patternSheathFadeTime": 2.1
-  },
   "specialPoint": {
     "elementAbsorb": "PRIVATE_Pendant",
-    "elementPendant": "PRIVATE_Pendant"
+    "elementPendant": "PRIVATE_Pendant",
+    "elementDrop": "RootNode",
+    "bulletAim": "RootNode"
   },
   "combat": {
     "property": {
-      "weight": 75,
       "endureType": "Avatar_Sword",
-      "endureShake": 0
-    },
-    "combatLock": {
-      "denyLockOn": false,
-      "lockShape": "CircleLockEnemyClose",
-      "lockWeightYaxisParam": 0.2,
-      "lockWeightYaxisThreshold": 2,
-      "lockType": "Avatar&Monster_Lv4"
+      "weight": 75.0
     },
     "beHit": {
-      "hitBloodEffect": "",
-      "muteAllHit": false,
-      "muteAllHitEffect": false,
-      "muteAllHitText": false
+      "hitBloodEffect": ""
+    },
+    "combatLock": {
+      "lockShape": "CircleLockEnemyClose",
+      "lockWeightYaxisParam": 0.20000000298023224,
+      "lockWeightYaxisThreshold": 2.0,
+      "lockType": "Avatar&Monster_Lv4"
     },
     "die": {
       "hasAnimatorDie": true,
-      "muteAllShaderDieEff": false,
-      "dieShaderData": "AvatarDie",
-      "dieDisappearEffect": "Eff_Death_Avatar_Common",
       "dieEndTime": 1.5,
       "dieForceDisappearTime": 2.5,
+      "dieDisappearEffect": "Eff_Death_Avatar_Common",
+      "dieShaderData": "AvatarDie",
       "useRagDoll": true,
-      "ragDollDieEndTimeDelay": 0.4
+      "ragDollDieEndTimeDelay": 0.4000000059604645
     },
     "animEvents": {
       "ATK01": {
         "attackPattern": {
           "$type": "ConfigAttackCircle",
           "triggerType": "TriggerNoRepeat",
-          "fanAngle": 360.0,
-          "radius": 1.5,
-          "radiusRatio": 0.0,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.5
+              "NMLENGBJMAA": 0.0,
+              "OKBPMDLDKLI": 0.0,
+              "OGKDKNLKIDE": 0.5
             }
-          }
+          },
+          "PHALDBNIMGI": 1.5
         },
         "attackInfo": {
           "attackTag": "NormalAttack_01",
           "attenuationTag": "NormalAttack",
+          "attenuationGroup": "default",
           "attackProperty": {
-            "damagePercentage": 0.0,
-            "strikeType": "Slash",
-            "elementDurability": 25,
+            "MDJIHDGGPHA": 0.0,
+            "NEFPGMGNGAK": 0.0,
+            "bonusCriticalHurt": 25.0,
             "overrideByWeapon": true,
-            "attackType": "Melee",
-            "enBreak": 53.6
+            "strikeType": "Slash",
+            "enBreak": 53.599998474121094,
+            "attackType": "Melee"
           },
           "hitPattern": {
             "onHitEffectName": "default",
             "hitImpulseType": "LV3",
-            "reboundRatio": 0,
-            "canBeDefenceHalt": true,
-            "hitHaltTime": 0.03,
-            "hitHaltTimeScale": 0.01,
-            "muteHitText": false
+            "hitHaltTime": 0.029999999329447746,
+            "hitHaltTimeScale": 0.009999999776482582,
+            "canBeDefenceHalt": true
           },
-          "forceCameraShake": false,
           "cameraShake": {
             "shakeType": "CustomVector",
-            "shakeRange": 0.08,
-            "shakeTime": 0.06,
-            "shakeDistance": 30,
+            "shakeRange": 0.07999999821186066,
+            "shakeTime": 0.05999999865889549,
+            "shakeDistance": 30.0,
             "shakeDir": {
-              "x": 1,
-              "y": 0.3,
-              "z": 0
+              "x": 1.0,
+              "y": 0.30000001192092896
             }
           }
         }
@@ -144,50 +121,48 @@
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
-              "x": 0,
-              "y": 1.35,
-              "z": -0.6
+              "NMLENGBJMAA": 0.0,
+              "OKBPMDLDKLI": 1.350000023841858,
+              "OGKDKNLKIDE": -0.6000000238418579
             }
           },
           "size": {
-            "x": 2.2,
-            "y": 2.5,
-            "z": 3
+            "NMLENGBJMAA": 2.200000047683716,
+            "OKBPMDLDKLI": 2.5,
+            "OGKDKNLKIDE": 3.0
           }
         },
         "attackInfo": {
           "attackTag": "NormalAttack_02",
           "attenuationTag": "NormalAttack",
+          "attenuationGroup": "default",
           "attackProperty": {
-            "damagePercentage": 0,
-            "strikeType": "Slash",
-            "elementDurability": 25,
+            "MDJIHDGGPHA": 0.0,
+            "NEFPGMGNGAK": 0.0,
+            "bonusCriticalHurt": 25.0,
             "overrideByWeapon": true,
+            "strikeType": "Slash",
+            "enBreak": 50.737998962402344,
             "attackType": "Melee",
-            "bonusCritical": 0,
-            "bonusCriticalHurt": 0,
-            "enBreak": 50.738
+            "DDBBIKJKOPG": 0.0,
+            "LMCADBFOIAK": 0.0
           },
           "hitPattern": {
             "onHitEffectName": "default",
             "hitImpulseType": "LV3",
             "retreatType": "ByAttackerForward",
-            "reboundRatio": 0,
-            "canBeDefenceHalt": true,
-            "hitHaltTime": 0.03,
-            "hitHaltTimeScale": 0.01,
-            "muteHitText": false
+            "hitHaltTime": 0.029999999329447746,
+            "hitHaltTimeScale": 0.009999999776482582,
+            "canBeDefenceHalt": true
           },
-          "forceCameraShake": false,
           "cameraShake": {
             "shakeType": "CustomVector",
-            "shakeRange": 0.08,
-            "shakeTime": 0.06,
-            "shakeDistance": 30,
+            "shakeRange": 0.07999999821186066,
+            "shakeTime": 0.05999999865889549,
+            "shakeDistance": 30.0,
             "shakeDir": {
-              "x": 0.3,
-              "y": -1,
-              "z": 0
+              "x": 0.30000001192092896,
+              "y": -1.0
             }
           }
         }
@@ -195,54 +170,51 @@
       "ATK03": {
         "attackPattern": {
           "$type": "ConfigAttackBox",
+          "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
-              "x": 0,
-              "y": 1,
-              "z": 0
+              "NMLENGBJMAA": 0.0,
+              "OKBPMDLDKLI": 1.0,
+              "OGKDKNLKIDE": 0.0
             }
           },
           "size": {
-            "x": 3,
-            "y": 2,
-            "z": 4.5
-          },
-          "triggerType": "TriggerNoRepeat"
+            "NMLENGBJMAA": 3.0,
+            "OKBPMDLDKLI": 2.0,
+            "OGKDKNLKIDE": 4.5
+          }
         },
         "attackInfo": {
           "attackTag": "NormalAttack_03",
           "attenuationTag": "NormalAttack",
+          "attenuationGroup": "default",
           "attackProperty": {
-            "damagePercentage": 0,
-            "strikeType": "Slash",
-            "elementDurability": 25,
+            "MDJIHDGGPHA": 0.0,
+            "NEFPGMGNGAK": 0.0,
+            "bonusCriticalHurt": 25.0,
             "overrideByWeapon": true,
+            "strikeType": "Slash",
+            "enBreak": 76.36799621582031,
             "attackType": "Melee",
-            "bonusCritical": 0,
-            "bonusCriticalHurt": 0,
-            "enBreak": 76.368
+            "DDBBIKJKOPG": 0.0,
+            "LMCADBFOIAK": 0.0
           },
           "hitPattern": {
             "onHitEffectName": "default",
             "hitImpulseType": "LV5",
             "retreatType": "ByAttackerForward",
-            "reboundRatio": 0,
-            "canBeDefenceHalt": true,
-            "hitHaltTime": 0.06,
-            "hitHaltTimeScale": 0.01,
-            "muteHitText": false
+            "hitHaltTime": 0.05999999865889549,
+            "hitHaltTimeScale": 0.009999999776482582,
+            "canBeDefenceHalt": true
           },
-          "forceCameraShake": false,
           "cameraShake": {
             "shakeType": "CustomVector",
-            "shakeRange": 0.15,
-            "shakeTime": 0.09,
-            "shakeDistance": 30,
+            "shakeRange": 0.15000000596046448,
+            "shakeTime": 0.09000000357627869,
+            "shakeDistance": 30.0,
             "shakeDir": {
-              "x": -1,
-              "y": 0,
-              "z": 0
+              "x": -1.0
             }
           }
         }
@@ -251,126 +223,151 @@
         "attackPattern": {
           "$type": "ConfigAttackCircle",
           "triggerType": "TriggerNoRepeat",
-          "fanAngle": 360.0,
-          "radius": 2.8,
-          "height": 2,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.3
+              "NMLENGBJMAA": 0.0,
+              "OKBPMDLDKLI": 0.0,
+              "OGKDKNLKIDE": 0.30000001192092896
             }
-          }
+          },
+          "height": 2.0,
+          "PHALDBNIMGI": 2.799999952316284
         },
         "attackInfo": {
           "attackTag": "ExtraAttack",
           "attenuationTag": "NormalAttack",
+          "attenuationGroup": "default",
           "attackProperty": {
-            "damagePercentage": 0,
-            "strikeType": "Slash",
-            "elementDurability": 25,
+            "MDJIHDGGPHA": 0.0,
+            "NEFPGMGNGAK": 0.0,
+            "bonusCriticalHurt": 25.0,
             "overrideByWeapon": true,
+            "strikeType": "Slash",
+            "enBreak": 60.0,
             "attackType": "Melee",
-            "bonusCritical": 0,
-            "bonusCriticalHurt": 0,
-            "enBreak": 60
+            "DDBBIKJKOPG": 0.0,
+            "LMCADBFOIAK": 0.0
           },
           "hitPattern": {
             "onHitEffectName": "default",
             "hitImpulseType": "LV2",
-            "reboundRatio": 0,
-            "canBeDefenceHalt": false,
-            "hitHaltTime": 0.0,
-            "hitHaltTimeScale": 0.01,
-            "muteHitText": false
-          },
-          "forceCameraShake": false
+            "hitHaltTimeScale": 0.009999999776482582
+          }
         }
       },
       "ExtraAttack_2": {
         "attackPattern": {
           "$type": "ConfigAttackCircle",
           "triggerType": "TriggerNoRepeat",
-          "fanAngle": 360.0,
-          "radius": 2.8,
-          "height": 2,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.3
+              "NMLENGBJMAA": 0.0,
+              "OKBPMDLDKLI": 0.0,
+              "OGKDKNLKIDE": 0.30000001192092896
             }
-          }
+          },
+          "height": 2.0,
+          "PHALDBNIMGI": 2.799999952316284
         },
         "attackInfo": {
           "attackTag": "ExtraAttack",
           "attenuationTag": "NormalAttack",
+          "attenuationGroup": "default",
           "attackProperty": {
-            "damagePercentage": 0,
-            "strikeType": "Slash",
-            "elementDurability": 25,
+            "MDJIHDGGPHA": 0.0,
+            "NEFPGMGNGAK": 0.0,
+            "bonusCriticalHurt": 25.0,
             "overrideByWeapon": true,
+            "strikeType": "Slash",
+            "enBreak": 60.0,
             "attackType": "Melee",
-            "bonusCritical": 0,
-            "bonusCriticalHurt": 0,
-            "enBreak": 60
+            "DDBBIKJKOPG": 0.0,
+            "LMCADBFOIAK": 0.0
           },
           "hitPattern": {
             "onHitEffectName": "default",
             "hitImpulseType": "LV5",
             "retreatType": "ByAttackerForward",
-            "reboundRatio": 0,
-            "canBeDefenceHalt": true,
-            "hitHaltTime": 0.06,
-            "hitHaltTimeScale": 0.01,
-            "muteHitText": false
+            "hitHaltTime": 0.05999999865889549,
+            "hitHaltTimeScale": 0.009999999776482582,
+            "canBeDefenceHalt": true
           },
-          "forceCameraShake": false,
           "cameraShake": {
             "shakeType": "CustomVector",
-            "shakeRange": 0.24,
-            "shakeTime": 0.12,
-            "shakeDistance": 30,
+            "shakeRange": 0.23999999463558197,
+            "shakeTime": 0.11999999731779099,
+            "shakeDistance": 30.0,
             "shakeDir": {
-              "x": -1,
-              "y": 0,
-              "z": 0
+              "x": -1.0
             }
           }
         }
       }
     }
   },
+  "equipController": {
+    "sheathPoint": "WeaponBackPut",
+    "dissolveSheathFadeDelay": 0.07500000298023224,
+    "dissolveSheathFadeTime": 2.0999999046325684,
+    "attachPoints": {
+      "equip01": "WeaponR",
+      "equip02": "WeaponL",
+      "equip03": "WeaponL"
+    }
+  },
+  "abilities": [
+    {
+      "abilityID": "Avatar_Layla_ExtraAttack",
+      "abilityName": "Avatar_Layla_ExtraAttack",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "Avatar_Layla_ElementalArt",
+      "abilityName": "Avatar_Layla_ElementalArt",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "Avatar_Layla_ElementalArt_Handler",
+      "abilityName": "Avatar_Layla_ElementalArt_Handler",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "Avatar_Layla_ElementalBurst",
+      "abilityName": "Avatar_Layla_ElementalBurst",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "Avatar_Layla_NormalAttack_DamageHandler",
+      "abilityName": "Avatar_Layla_NormalAttack_DamageHandler",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "Avatar_Layla_FallingAnthem",
+      "abilityName": "Avatar_Layla_FallingAnthem",
+      "abilityOverride": ""
+    }
+  ],
   "stateLayers": {
     "defaultLayer": {
       "$type": "ConfigNormalStateLayer",
+      "layerIndexName": "",
       "stateIDs": {
         "NormalStandby": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "Standby": ["Avatar_ResetFreeStyle"]
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 100.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "NormalMove": {
@@ -432,25 +429,15 @@
               "Audio_Girl_Foley_Twice_Layla"
             ]
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 1.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 1.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "SprintBS": {
@@ -463,24 +450,20 @@
               "Audio_Girl_Foley_SprintBS_Layla"
             ]
           },
-          "moveType": "normalMove",
-          "resetAnimatorTriggerOnEnter": ["DoSkill", "AimEnd"],
-          "resetAnimatorTriggerOnExit": [],
           "canDoSkill": true,
+          "resetAnimatorTriggerOnEnter": ["DoSkill", "AimEnd"],
           "setAnimatorBoolean": [
             {
               "name": "&CanUseSkill",
-              "normalizeStart": 0.26,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.25999999046325684
             }
           ],
           "canChangeAvatar": [
             {
-              "normalizeStart": 0.26,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.25999999046325684
             }
           ],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Sprint": {
@@ -493,25 +476,15 @@
               "Audio_Girl_Foley_Twice_Layla"
             ]
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 1.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 1.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Crouch": {
@@ -524,25 +497,16 @@
               "Audio_Girl_Foley_Once_Layla"
             ]
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 1.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
+          "canChangeAvatar": [{}],
           "actionPanelState": "Squat",
-          "massRatio": 1.0,
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "CrouchToStandby": {
@@ -553,11 +517,8 @@
               "Audio_Girl_Foley_Once_Layla"
             ]
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "SkiffNormal": {
@@ -565,13 +526,9 @@
           "animatorStates": {
             "SkiffNormal": []
           },
-          "moveType": "normalMove",
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
           "massRatio": 100.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Climb": {
@@ -601,11 +558,9 @@
               "Audio_Girl_Foley_Once_Layla"
             ]
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
           "actionPanelState": "Climb",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ClimbTransient": {
@@ -617,11 +572,8 @@
               "Audio_Girl_Foley_Once_Layla"
             ]
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Upstairs": {
@@ -629,17 +581,13 @@
           "animatorStates": {
             "Upstairs": ["Audio_Girl_Upstairs", "Audio_Girl_Foley_Once_Layla"]
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Slip": {
@@ -648,11 +596,8 @@
             "SlipFaceWall": ["Audio_Girl_Foley_ThreeTimes_Layla"],
             "SlipBackWall": ["Audio_Girl_Foley_ThreeTimes_Layla"]
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Swim": {
@@ -666,11 +611,9 @@
             ],
             "SwimJumpToWater": ["Audio_Girl_SwimJumpToWater"]
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
           "actionPanelState": "Swim",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Fly": {
@@ -683,18 +626,15 @@
               "Audio_Girl_Foley_FlyStart_Layla"
             ]
           },
-          "moveType": "normalMove",
           "canDoSkill": true,
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseAirSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseAirSkill"
             }
           ],
           "actionPanelState": "Fly",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Jump": {
@@ -705,18 +645,15 @@
             "JumpForWalk": ["Audio_Girl_Jump", "Audio_Girl_Foley_Once_Layla"],
             "JumpForSprint": ["Audio_Girl_Jump", "Audio_Girl_Foley_Once_Layla"]
           },
-          "moveType": "normalMove",
           "canDoSkill": true,
           "resetAnimatorTriggerOnEnter": ["DoSkill", "AimEnd"],
-          "resetAnimatorTriggerOnExit": [],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseAirSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseAirSkill"
             }
           ],
           "actionPanelState": "Jump",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Fall": {
@@ -732,18 +669,14 @@
             "DropDownLit": [],
             "WalkDropDownLit": []
           },
-          "moveType": "normalMove",
           "canDoSkill": true,
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseAirSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseAirSkill"
             }
           ],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "NormalStandbyWeapon": {
@@ -751,25 +684,15 @@
           "animatorStates": {
             "StandbyWeapon": []
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 100.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "NormalMoveWeapon": {
@@ -791,25 +714,15 @@
             "FallToGroundRunWeapon": ["Audio_Girl_FallToGroundRun"],
             "FallToGroundRunHardWeapon": ["Audio_Girl_FallToGroundRunHard"]
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 2.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 2.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "NormalMoveWeaponPutaway": {
@@ -835,25 +748,15 @@
               "Audio_Girl_Sword_RunToSprintWeapon"
             ]
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 2.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 2.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "NormalMoveWeaponOver": {
@@ -864,25 +767,15 @@
             "RunPutawayOver": ["Audio_Girl_Sword_RunPutAwayOver"],
             "RunToSprintWeaponOver": ["Audio_Girl_Sword_RunToSprintWeaponOver"]
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 2.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 2.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "JumpWeapon": {
@@ -898,24 +791,16 @@
               "Audio_Girl_Foley_Once_Layla"
             ]
           },
-          "moveType": "normalMove",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseAirSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseAirSkill"
             }
           ],
+          "canChangeAvatar": [{}],
           "actionPanelState": "Jump",
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "FallWeapon": {
@@ -928,18 +813,14 @@
             "DropDownLitWeapon": [],
             "WalkDropDownLitWeapon": []
           },
-          "moveType": "normalMove",
           "canDoSkill": true,
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseAirSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseAirSkill"
             }
           ],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "BeHit": {
@@ -949,11 +830,11 @@
             "Hit_H": ["Audio_Girl_Hit_H", "Audio_Girl_Foley_Once_Layla"]
           },
           "moveType": "combatMove",
-          "cameraType": "combatBeHit",
-          "jumpCancelEnd": 0.0,
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "setAnimatorBoolean": [],
+          "cameraType": "combatBeHit",
+          "jumpCancelEnd": 0.0,
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "HitThrow": {
@@ -965,17 +846,16 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatBeHit",
-          "jumpCancelEnd": 0.0,
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseLiquid",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseLiquid"
             }
           ],
+          "cameraType": "combatBeHit",
+          "jumpCancelEnd": 0.0,
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "BeHitAir": {
@@ -990,12 +870,12 @@
             "Struggle": ["BeHitAir_Weapon", "Audio_Girl_Foley_ThreeTimes_Layla"]
           },
           "moveType": "combatAir",
-          "cameraType": "combatBeHit",
-          "jumpCancelEnd": 0.0,
-          "actionPanelState": "CombatAir",
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "setAnimatorBoolean": [],
+          "cameraType": "combatBeHit",
+          "actionPanelState": "CombatAir",
+          "jumpCancelEnd": 0.0,
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Die": {
@@ -1009,14 +889,16 @@
             ],
             "SwimDie": ["Swim_Die", "Audio_Girl_SwimDie"],
             "HitGroundDie": ["Die", "Audio_Girl_Death"]
-          }
+          },
+          "animatorTriggerOnLanded": ""
         },
         "Die_RagDoll": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "FallDie_AS": []
           },
-          "enableRagDoll": true
+          "enableRagDoll": true,
+          "animatorTriggerOnLanded": ""
         },
         "Attack01": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1030,30 +912,21 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanCancelSkill"
             },
             {
-              "name": "&CanUseExtra",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseExtra"
             }
           ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true,
-          "ignorePreSheath": true
+          "IGEFJHCBDNG": true
         },
         "Attack02": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1067,31 +940,22 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanCancelSkill"
             },
             {
-              "name": "&CanUseExtra",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseExtra"
             }
           ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true,
           "sheatheOnEnd": true,
-          "ignorePreSheath": true
+          "IGEFJHCBDNG": true
         },
         "Attack03": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1105,30 +969,21 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanCancelSkill"
             },
             {
-              "name": "&CanUseExtra",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseExtra"
             }
           ],
-          "ignorePreSheath": true,
-          "battouOnStart": true
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
+          "battouOnStart": true,
+          "IGEFJHCBDNG": true
         },
         "ExtraAttack": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1141,25 +996,17 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
-          "canDoSkill": false,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0,
-              "normalizeEnd": 1.0
+              "name": "&CanCancelSkill"
             }
           ],
-          "ignorePreSheath": true,
-          "battouOnStart": true
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
+          "battouOnStart": true,
+          "IGEFJHCBDNG": true
         },
         "ExtraAttack_AS": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1171,23 +1018,16 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0,
-              "normalizeEnd": 1.0
+              "name": "&CanCancelSkill"
             }
           ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "ElementalArt": {
@@ -1201,14 +1041,12 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
-          "canDoSkill": false,
-          "addEndure": 0.6,
-          "jumpCancelEnd": -1,
-          "sprintCancelEnd": -1,
-          "resetAnimatorTriggerOnEnter": [],
+          "addEndure": 0.6000000238418579,
           "resetAnimatorTriggerOnExit": ["BeHit"],
-          "setAnimatorBoolean": [],
+          "cameraType": "combatNormal",
+          "jumpCancelEnd": -1.0,
+          "sprintCancelEnd": -1.0,
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ElementalArt_LoopBS": {
@@ -1220,23 +1058,16 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
-          ]
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": ""
         },
         "ElementalArt_Loop": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1246,23 +1077,16 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
-          ]
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": ""
         },
         "ElementalArt_AS": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1273,23 +1097,16 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
-          ]
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": ""
         },
         "ElementalBurst": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1302,14 +1119,12 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
-          "canDoSkill": false,
-          "addEndure": 0,
-          "jumpCancelEnd": -1,
-          "sprintCancelEnd": -1,
-          "resetAnimatorTriggerOnEnter": [],
+          "addEndure": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
+          "cameraType": "combatNormal",
+          "jumpCancelEnd": -1.0,
+          "sprintCancelEnd": -1.0,
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ElementalBurst_AS": {
@@ -1322,27 +1137,19 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
-          ]
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": ""
         },
         "FallingAnthem_BS": {
           "$type": "ConfigAvatarStateIDInfo",
-          "addEndure": 0,
           "animatorStates": {
             "FallingAnthem_BS_1": [
               "Emo_Girl_Sword_FallingAttack_BS_01",
@@ -1351,43 +1158,36 @@
             "FallingAnthem_BS_2": ["Emo_Girl_Sword_FallingAttack_BS_02"]
           },
           "moveType": "combatAir",
+          "addEndure": 0.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "cameraType": "combatNormal",
+          "actionPanelState": "Fly",
           "equipReattach": [
             {
               "equip": "equip01",
-              "targetPoint": "WeaponR",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "targetPoint": "WeaponR"
             }
           ],
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "jumpCancelEnd": -1,
-          "actionPanelState": "Fly",
+          "jumpCancelEnd": -1.0,
           "animatorTriggerOnLanded": "HitAir2HitDrop",
           "battouOnStart": true
         },
         "FallingAnthem_Loop": {
           "$type": "ConfigAvatarStateIDInfo",
-          "addEndure": 0,
           "animatorStates": {
             "FallingAnthem_Loop": [],
             "FallingAnthem_Loop_Low": []
           },
           "moveType": "combatAir",
+          "addEndure": 0.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "actionPanelState": "Fly",
           "equipReattach": [
             {
               "equip": "equip01",
-              "targetPoint": "WeaponR",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "targetPoint": "WeaponR"
             }
           ],
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Fly",
           "animatorTriggerOnLanded": "HitAir2HitDrop",
           "battouOnStart": true
         },
@@ -1403,24 +1203,21 @@
           },
           "moveType": "combatMove",
           "canDoSkill": true,
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "WeaponR",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
               "name": "&CanUseSkill",
-              "normalizeStart": 0.8,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.800000011920929
             }
           ],
-          "jumpCancelEnd": -1,
+          "equipReattach": [
+            {
+              "equip": "equip01",
+              "targetPoint": "WeaponR"
+            }
+          ],
+          "jumpCancelEnd": -1.0,
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "FallingAnthem_AS_2": {
@@ -1433,30 +1230,21 @@
           },
           "moveType": "combatMove",
           "canDoSkill": true,
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "WeaponR",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "canChangeAvatar": [
+          "canChangeAvatar": [{}],
+          "equipReattach": [
             {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "equip": "equip01",
+              "targetPoint": "WeaponR"
             }
           ],
-          "jumpCancelStart": 0.1,
+          "jumpCancelStart": 0.10000000149011612,
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "Sit": {
@@ -1467,12 +1255,9 @@
             "SitUp": ["Audio_Girl_SitDown", "Audio_Girl_Sit_Layla"]
           },
           "moveType": "performMove",
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Perform",
           "massRatio": 100.0,
+          "actionPanelState": "Perform",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "SitB": {
@@ -1483,12 +1268,9 @@
             "SitBUp": ["Audio_Girl_SitDown", "Audio_Girl_Sit_Layla"]
           },
           "moveType": "performMove",
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Perform",
           "massRatio": 100.0,
+          "actionPanelState": "Perform",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "StandbyShow": {
@@ -1505,24 +1287,15 @@
             ]
           },
           "moveType": "performMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 100.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "TakePhotos": {
@@ -1534,7 +1307,8 @@
             "Akimbo02Loop": [],
             "Think01AS": [],
             "Akimbo02AS": []
-          }
+          },
+          "animatorTriggerOnLanded": ""
         },
         "Channel_BS": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1542,24 +1316,16 @@
             "ChannelBS": ["Emo_Avatar_Common_Manekin_Default"]
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Channel_Loop": {
@@ -1568,24 +1334,16 @@
             "ChannelLoop": []
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Channel_AS": {
@@ -1594,24 +1352,16 @@
             "ChannelAS": []
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Lyre": {
@@ -1621,13 +1371,9 @@
             "PlayMusic_Lyre_Loop": []
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [],
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
           "massRatio": 100.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Lyre_AS": {
@@ -1636,24 +1382,16 @@
             "PlayMusic_Lyre_AS": ["PlayMusic_Lyre_Girl_AS"]
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Qin": {
@@ -1663,13 +1401,9 @@
             "PlayMusic_Qin_Loop": []
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [],
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
           "massRatio": 100.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Qin_AS": {
@@ -1678,24 +1412,16 @@
             "PlayMusic_Qin_AS": ["PlayMusic_Qin_Girl_AS"]
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Drum": {
@@ -1705,13 +1431,9 @@
             "PlayMusic_Drum_Loop": []
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [],
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
           "massRatio": 100.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Drum_AS": {
@@ -1720,24 +1442,16 @@
             "PlayMusic_Drum_AS": ["PlayMusic_Drum_Girl_AS"]
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ActivitySkill_ElectricCoreFly": {
@@ -1746,8 +1460,7 @@
             "ActivitySkill_ElectricCoreFly": []
           },
           "moveType": "combatAir",
-          "canChangeAvatar": [],
-          "canDoSkill": false,
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnEnter": ["ElectricCoreFly_End"],
           "resetAnimatorTriggerOnExit": [
             "BeHit",
@@ -1755,9 +1468,7 @@
             "Jump",
             "ElectricCoreFly_End"
           ],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ActivitySkill_GrapplingHook": {
@@ -1766,8 +1477,7 @@
             "ActivitySkill_GrapplingHook": []
           },
           "moveType": "combatAir",
-          "canChangeAvatar": [],
-          "canDoSkill": false,
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnEnter": ["GrapplingHook_Drop"],
           "resetAnimatorTriggerOnExit": [
             "BeHit",
@@ -1775,67 +1485,90 @@
             "Jump",
             "GrapplingHook_Drop"
           ],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         }
       }
     }
   },
-  "abilities": [
-    {
-      "abilityID": "Avatar_Layla_ExtraAttack",
-      "abilityName": "Avatar_Layla_ExtraAttack"
-    },
-    {
-      "abilityID": "Avatar_Layla_ElementalArt",
-      "abilityName": "Avatar_Layla_ElementalArt"
-    },
-    {
-      "abilityID": "Avatar_Layla_ElementalArt_Handler",
-      "abilityName": "Avatar_Layla_ElementalArt_Handler"
-    },
-    {
-      "abilityID": "Avatar_Layla_ElementalBurst",
-      "abilityName": "Avatar_Layla_ElementalBurst"
-    },
-    {
-      "abilityID": "Avatar_Layla_NormalAttack_DamageHandler",
-      "abilityName": "Avatar_Layla_NormalAttack_DamageHandler"
-    },
-    {
-      "abilityID": "Avatar_Layla_FallingAnthem",
-      "abilityName": "Avatar_Layla_FallingAnthem"
-    }
-  ],
   "audio": {
-    "$type": "ConfigAvatarAudio",
     "animAudio": {
+      "onTransitionIn": [
+        {
+          "currentStateName": "SlipBackWall",
+          "audioEvent": {
+            "text": "Play_sfx_char_slipWall"
+          }
+        },
+        {
+          "currentStateName": "SlipFaceWall",
+          "audioEvent": {
+            "text": "Play_sfx_char_slipWall"
+          }
+        },
+        {
+          "currentStateName": "NormalDie",
+          "audioEvent": {
+            "text": "Play_sfx_char_land"
+          },
+          "otherStateNames": ["FallOnGround"],
+          "usage": "InSet"
+        },
+        {
+          "currentStateName": "SprintBS",
+          "audioEvent": {
+            "text": "Play_sfx_char_foley_flutter_heavy"
+          }
+        },
+        {
+          "currentStateName": "SwimJumpToWater",
+          "audioEvent": {
+            "text": "Stop_sfx_char_swim_dive"
+          }
+        },
+        {
+          "currentStateName": "SwimDash",
+          "audioEvent": {
+            "text": "Play_sfx_char_swim_dash"
+          }
+        },
+        {
+          "currentStateName": "Jump",
+          "audioEvent": {
+            "text": "Stop_sfx_char_ayaka_liquidStrike"
+          }
+        },
+        {
+          "currentStateName": "JumpForRun",
+          "audioEvent": {
+            "text": "Stop_sfx_char_ayaka_liquidStrike"
+          }
+        },
+        {
+          "currentStateName": "Standby",
+          "audioEvent": {
+            "text": "Stop_sfx_char_fly"
+          }
+        }
+      ],
       "onTransitionOut": [
         {
           "currentStateName": "Attack01",
           "audioEvent": {
             "text": "Stop_sfx_char_layla_1HSword_attack"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "Attack02",
           "audioEvent": {
             "text": "Stop_sfx_char_layla_1HSword_attack"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "Attack03",
           "audioEvent": {
             "text": "Stop_sfx_char_layla_1HSword_attack"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "ExtraAttack",
@@ -1849,73 +1582,55 @@
           "currentStateName": "ExtraAttack_AS",
           "audioEvent": {
             "text": "Stop_sfx_char_layla_1HSword_extraAtk_AS"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "ElementalArt_AS",
           "audioEvent": {
             "text": "Stop_sfx_char_layla_elementalArt_AS"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "ElementalBurst_AS",
           "audioEvent": {
             "text": "Stop_sfx_char_layla_elementalBurst_AS"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "StandbyShow_01",
           "audioEvent": {
             "text": "Stop_sfx_standbyShow_layla_01"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "StandbyShow_02",
           "audioEvent": {
             "text": "Stop_sfx_standbyShow_layla_02"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "StandbyPutaway",
           "audioEvent": {
             "text": "Stop_sfx_weapon_1HSword_lady_putAwayStandby"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "WalkPutaway",
           "audioEvent": {
             "text": "Stop_sfx_weapon_1HSword_lady_putAwayStandby"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "RunPutaway",
           "audioEvent": {
             "text": "Stop_sfx_weapon_1HSword_lady_putAwayStandby"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "SwimJumpDrop",
           "audioEvent": {
             "text": "Stop_sfx_char_swim_drop"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "SwimJump",
@@ -2111,123 +1826,37 @@
           "currentStateName": "SwimMove",
           "audioEvent": {
             "text": "Stop_sfx_char_swim"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "SlipFaceWall",
           "audioEvent": {
             "text": "Stop_sfx_char_slipWall"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "SlipBackWall",
           "audioEvent": {
             "text": "Stop_sfx_char_slipWall"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "SlipBackWall",
           "audioEvent": {
             "text": "Stop_sfx_char_drop"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "SlipFaceWall",
           "audioEvent": {
             "text": "Stop_sfx_char_drop"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "Fly",
           "audioEvent": {
             "text": "Stop_sfx_char_fly"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        }
-      ],
-      "onTransitionIn": [
-        {
-          "currentStateName": "SlipBackWall",
-          "audioEvent": {
-            "text": "Play_sfx_char_slipWall"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "SlipFaceWall",
-          "audioEvent": {
-            "text": "Play_sfx_char_slipWall"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "NormalDie",
-          "audioEvent": {
-            "text": "Play_sfx_char_land"
-          },
-          "otherStateNames": ["FallOnGround"],
-          "usage": "InSet"
-        },
-        {
-          "currentStateName": "SprintBS",
-          "audioEvent": {
-            "text": "Play_sfx_char_foley_flutter_heavy"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "SwimJumpToWater",
-          "audioEvent": {
-            "text": "Stop_sfx_char_swim_dive"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "SwimDash",
-          "audioEvent": {
-            "text": "Play_sfx_char_swim_dash"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "Jump",
-          "audioEvent": {
-            "text": "Stop_sfx_char_ayaka_liquidStrike"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "JumpForRun",
-          "audioEvent": {
-            "text": "Stop_sfx_char_ayaka_liquidStrike"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "Standby",
-          "audioEvent": {
-            "text": "Stop_sfx_char_fly"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         }
       ],
       "recurrentSpeeches": {
@@ -2291,9 +1920,7 @@
           "currentStateName": "Fly",
           "audioEvent": {
             "text": "Play_sfx_char_fly"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "Air",
@@ -2309,17 +1936,13 @@
           "currentStateName": "Fly",
           "audioEvent": {
             "text": "Stop_sfx_char_fly"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "Air",
           "audioEvent": {
             "text": "Stop_sfx_char_drop"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         }
       ]
     },
@@ -2411,8 +2034,8 @@
   },
   "perform": {
     "standby": {
-      "minTime": 10,
-      "maxTime": 20,
+      "minTime": 10.0,
+      "maxTime": 20.0,
       "performIDs": [201, 202, 200, 200]
     }
   }

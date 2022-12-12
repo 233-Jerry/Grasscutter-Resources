@@ -1,15 +1,12 @@
 {
-  "$type": "ConfigAvatar",
   "common": {
     "effectAttachShape": {
       "$type": "ConfigEffectAttachSkinnedMesh",
-      "emissionRateRatio": 1.0,
-      "mesh": "EffectMesh",
-      "normalOffset": 0.02
+      "mesh": "EffectMesh"
     },
-    "height": 1.798,
-    "modelHeight": 1.8,
     "mass": 10.0,
+    "height": 1.7979999780654907,
+    "modelHeight": 1.7999999523162842,
     "affectedByWorld": true,
     "checkInSurface": true
   },
@@ -41,46 +38,67 @@
       "NormalMoveWeapon/RunningTurnWeapon"
     ]
   },
-  "equipController": {
-    "attachPoints": {
-      "equip01": "WeaponR",
-      "equip02": "WeaponL",
-      "equip03": "WeaponL"
+  "specialPoint": {
+    "elementAbsorb": "PRIVATE_Pendant",
+    "elementPendant": "PRIVATE_Pendant",
+    "elementDrop": "RootNode",
+    "bulletAim": "RootNode"
+  },
+  "combat": {
+    "property": {
+      "endureType": "Avatar_Catalyst",
+      "weight": 75.0
     },
+    "beHit": {
+      "hitBloodEffect": ""
+    },
+    "combatLock": {
+      "lockShape": "CircleLockEnemyClose",
+      "lockWeightYaxisParam": 0.20000000298023224,
+      "lockWeightYaxisThreshold": 4.0,
+      "lockType": "Avatar&Monster_Lv4"
+    },
+    "die": {
+      "hasAnimatorDie": true,
+      "dieEndTime": 1.5,
+      "dieForceDisappearTime": 2.5,
+      "dieDisappearEffect": "Eff_Death_Avatar_Common",
+      "dieShaderData": "AvatarDie",
+      "useRagDoll": true,
+      "ragDollDieEndTimeDelay": 0.4000000059604645
+    }
+  },
+  "equipController": {
     "sheathPoint": "WeaponBackPut",
-    "dissolveSheathFadeDelay": 0.075,
+    "dissolveSheathFadeDelay": 0.07500000298023224,
     "dissolveSheathFadeTime": 2.0,
-    "dissolveTakeFadeTime": 1.2,
-
+    "dissolveTakeFadeTime": 1.2000000476837158,
     "triggerToStates": [
       {
         "trigger": "Close",
         "floatID": "PlaySpeed",
-        "floatValue": 0.5,
-        "states": []
+        "floatValue": 0.5
       },
       {
         "trigger": "Open",
+        "states": ["NormalStandbyWeapon", "BeHit", "BeHitAir", "Die"],
         "floatID": "PlaySpeed",
-        "floatValue": 1,
-        "states": ["NormalStandbyWeapon", "BeHit", "BeHitAir", "Die"]
+        "floatValue": 1.0
       },
       {
         "trigger": "Close",
+        "states": ["NormalMoveWeaponPutaway/StandbyPutaway"],
         "floatID": "PlaySpeed",
-        "floatValue": 1,
-        "states": ["NormalMoveWeaponPutaway/StandbyPutaway"]
+        "floatValue": 1.0
       },
       {
         "trigger": "PlayDone",
+        "states": ["NormalMoveWeaponOver/StandbyPutawayOver"],
         "floatID": "PlaySpeed",
-        "floatValue": 0.5,
-        "states": ["NormalMoveWeaponOver/StandbyPutawayOver"]
+        "floatValue": 0.5
       },
       {
         "trigger": "Attack",
-        "floatID": "PlaySpeed",
-        "floatValue": 2,
         "states": [
           "ServantStone_BS/ServantStone_BS",
           "ServantStone/ServantStone",
@@ -90,73 +108,118 @@
           "GemStone_Impact_AS/GemStone_Impact_AS",
           "ServantStone_Switch/ServantStone_Switch",
           "FallingAnthem_AS_2/FallingAnthem_AS_2"
-        ]
+        ],
+        "floatID": "PlaySpeed",
+        "floatValue": 2.0
       }
-    ]
+    ],
+    "attachPoints": {
+      "equip01": "WeaponR",
+      "equip02": "WeaponL",
+      "equip03": "WeaponL"
+    }
   },
-  "specialPoint": {
-    "elementAbsorb": "PRIVATE_Pendant",
-    "elementPendant": "PRIVATE_Pendant"
-  },
-  "combat": {
-    "property": {
-      "weight": 75,
-      "endureType": "Avatar_Catalyst",
-      "endureShake": 0
+  "abilities": [
+    {
+      "abilityID": "GemBullet_Handler",
+      "abilityName": "Avatar_Ningguang_ExtraAttack_GemBullet_Handler",
+      "abilityOverride": ""
     },
-    "combatLock": {
-      "denyLockOn": false,
-      "lockShape": "CircleLockEnemyClose",
-      "lockWeightYaxisParam": 0.2,
-      "lockWeightYaxisThreshold": 4,
-      "lockType": "Avatar&Monster_Lv4"
+    {
+      "abilityID": "NormalAttack01",
+      "abilityName": "Avatar_Ningguang_Attack01",
+      "abilityOverride": ""
     },
-    "beHit": {
-      "hitBloodEffect": "",
-      "muteAllHit": false,
-      "muteAllHitEffect": false,
-      "muteAllHitText": false
+    {
+      "abilityID": "NormalAttack02",
+      "abilityName": "Avatar_Ningguang_Attack02",
+      "abilityOverride": ""
     },
-    "die": {
-      "hasAnimatorDie": true,
-      "muteAllShaderDieEff": false,
-      "dieShaderData": "AvatarDie",
-      "dieDisappearEffect": "Eff_Death_Avatar_Common",
-      "dieEndTime": 1.5,
-      "dieForceDisappearTime": 2.5,
-      "useRagDoll": true,
-      "ragDollDieEndTimeDelay": 0.4
+    {
+      "abilityID": "NormalAttack03",
+      "abilityName": "Avatar_Ningguang_Attack03",
+      "abilityOverride": ""
     },
-    "animEvents": {}
-  },
+    {
+      "abilityID": "NormalAttack04",
+      "abilityName": "Avatar_Ningguang_Attack04",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "ExtraAttack_Trigger",
+      "abilityName": "Avatar_Ningguang_ExtraAttack",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "Ningguang_Roulette",
+      "abilityName": "Avatar_Ningguang_Roulette",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "ExtraAttack_Fx",
+      "abilityName": "Avatar_Ningguang_ExtraAttack_Fx",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "NormalAttack_HideWeapon",
+      "abilityName": "Avatar_Ningguang_HideWeapon",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "Change_Gadget_BornState",
+      "abilityName": "Avatar_Ningguang_Change_Gadget_BornState",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "Charge_ServantStone",
+      "abilityName": "Avatar_Ningguang_Charge_ServantStone",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "ServantStone",
+      "abilityName": "Avatar_Ningguang_ServantStone",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "ServantStone_Switch",
+      "abilityName": "Avatar_Ningguang_ServantStone_Switch",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "Trigger_ElementalArt_CD",
+      "abilityName": "Avatar_Ningguang_Trigger_ElementalArt_CD",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "GemStone_Impact",
+      "abilityName": "Avatar_Ningguang_GemStone_Impact",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "Avatar_Ningguang_FallingAnthem",
+      "abilityName": "Avatar_Ningguang_FallingAnthem",
+      "abilityOverride": ""
+    }
+  ],
   "stateLayers": {
     "defaultLayer": {
       "$type": "ConfigNormalStateLayer",
+      "layerIndexName": "",
       "stateIDs": {
         "NormalStandby": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "Standby": []
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 100.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "NormalMove": {
@@ -218,25 +281,15 @@
               "Audio_Lady_Ningguang_Foley_Twice"
             ]
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 1.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 1.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "SprintBS": {
@@ -249,24 +302,20 @@
               "Audio_Lady_Ningguang_Foley_ThreeTimes"
             ]
           },
-          "moveType": "normalMove",
-          "resetAnimatorTriggerOnEnter": ["DoSkill", "AimEnd"],
-          "resetAnimatorTriggerOnExit": [],
           "canDoSkill": true,
+          "resetAnimatorTriggerOnEnter": ["DoSkill", "AimEnd"],
           "setAnimatorBoolean": [
             {
               "name": "&CanUseSkill",
-              "normalizeStart": 0.26,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.25999999046325684
             }
           ],
           "canChangeAvatar": [
             {
-              "normalizeStart": 0.26,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.25999999046325684
             }
           ],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Sprint": {
@@ -279,25 +328,15 @@
               "Audio_Lady_Ningguang_Foley_Twice"
             ]
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 1.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 1.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "SkiffNormal": {
@@ -305,13 +344,9 @@
           "animatorStates": {
             "SkiffNormal": []
           },
-          "moveType": "normalMove",
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
           "massRatio": 100.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Climb": {
@@ -341,11 +376,9 @@
               "Audio_Lady_Ningguang_Foley_Once"
             ]
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
           "actionPanelState": "Climb",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ClimbTransient": {
@@ -357,11 +390,8 @@
               "Audio_Lady_Ningguang_Foley_Once"
             ]
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Upstairs": {
@@ -372,17 +402,13 @@
               "Audio_Lady_Ningguang_Foley_Once"
             ]
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Slip": {
@@ -391,11 +417,8 @@
             "SlipFaceWall": ["Audio_Lady_Ningguang_Foley_ThreeTimes"],
             "SlipBackWall": ["Audio_Lady_Ningguang_Foley_ThreeTimes"]
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Swim": {
@@ -409,11 +432,9 @@
             ],
             "SwimJumpToWater": ["Audio_Lady_SwimJumpToWater"]
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
           "actionPanelState": "Swim",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Fly": {
@@ -426,18 +447,15 @@
               "Audio_Lady_Ningguang_Foley_Once"
             ]
           },
-          "moveType": "normalMove",
           "canDoSkill": true,
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseAirSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseAirSkill"
             }
           ],
           "actionPanelState": "Fly",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Jump": {
@@ -457,19 +475,16 @@
               "Audio_Lady_Ningguang_Foley_Once"
             ]
           },
-          "moveType": "normalMove",
           "canDoSkill": true,
           "resetAnimatorTriggerOnEnter": ["DoSkill", "AimEnd"],
-          "resetAnimatorTriggerOnExit": [],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseAirSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseAirSkill"
             }
           ],
-          "sheatheOnStart": true,
-          "actionPanelState": "Jump"
+          "actionPanelState": "Jump",
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
         },
         "Fall": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -490,44 +505,30 @@
             "DropDownLit": [],
             "WalkDropDownLit": []
           },
-          "moveType": "normalMove",
           "canDoSkill": true,
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseAirSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseAirSkill"
             }
           ],
-          "sheatheOnStart": true,
-          "actionPanelState": "Normal"
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
         },
         "NormalStandbyWeapon": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "StandbyWeapon": []
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 100.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "NormalMoveWeapon": {
@@ -552,25 +553,15 @@
             "FallToGroundRunWeapon": ["Audio_Lady_FallToGroundRun"],
             "FallToGroundRunHardWeapon": ["Audio_Lady_FallToGroundRunHard"]
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 2.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 2.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "NormalMoveWeaponPutaway": {
@@ -595,25 +586,15 @@
               "Audio_Lady_RunToSprintPutAway_Lisa"
             ]
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 2.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 2.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "NormalMoveWeaponOver": {
@@ -624,25 +605,15 @@
             "RunPutawayOver": [],
             "RunToSprintWeaponOver": []
           },
-          "moveType": "normalMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 2.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 2.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "JumpWeapon": {
@@ -661,18 +632,11 @@
               "Audio_Lady_Ningguang_Foley_Once"
             ]
           },
-          "moveType": "normalMove",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
+          "canChangeAvatar": [{}],
           "actionPanelState": "Jump",
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "FallWeapon": {
@@ -685,11 +649,8 @@
             "DropDownLitWeapon": [],
             "WalkDropDownLitWeapon": []
           },
-          "moveType": "normalMove",
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "BeHit": {
@@ -699,11 +660,11 @@
             "Hit_H": ["Audio_Lady_Hit_H", "Audio_Lady_Ningguang_Foley_Once"]
           },
           "moveType": "combatMove",
-          "cameraType": "combatBeHit",
-          "jumpCancelEnd": 0.0,
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "setAnimatorBoolean": [],
+          "cameraType": "combatBeHit",
+          "jumpCancelEnd": 0.0,
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "HitThrow": {
@@ -716,11 +677,11 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatBeHit",
-          "jumpCancelEnd": 0.0,
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "setAnimatorBoolean": [],
+          "cameraType": "combatBeHit",
+          "jumpCancelEnd": 0.0,
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "BeHitAir": {
@@ -738,12 +699,12 @@
             ]
           },
           "moveType": "combatAir",
+          "resetAnimatorTriggerOnEnter": ["BeHit"],
+          "resetAnimatorTriggerOnExit": ["DoSkill"],
           "cameraType": "combatBeHit",
           "actionPanelState": "CombatAir",
           "jumpCancelEnd": 0.0,
-          "resetAnimatorTriggerOnEnter": ["BeHit"],
-          "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "setAnimatorBoolean": [],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Die": {
@@ -757,14 +718,16 @@
             ],
             "SwimDie": ["Swim_Die", "Audio_Lady_SwimDie"],
             "HitGroundDie": ["Die", "Audio_Lady_Death"]
-          }
+          },
+          "animatorTriggerOnLanded": ""
         },
         "Die_RagDoll": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "FallDie_AS": []
           },
-          "enableRagDoll": true
+          "enableRagDoll": true,
+          "animatorTriggerOnLanded": ""
         },
         "Attack01": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -776,35 +739,25 @@
               "Emo_Avatar_NingGuang_Fight_Attack_01"
             ]
           },
-          "combatCamera": true,
-          "cameraType": "combatNormal",
           "moveType": "combatMove",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanCancelSkill"
             },
             {
               "name": "&CanUseExtra",
-              "normalizeStart": 0.0,
               "normalizeEnd": 0.5
             },
             {
               "name": "&CanUseSkill",
-              "normalizeStart": 0.48,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.47999998927116394
             }
           ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true,
           "sheatheOnEnd": true
         },
@@ -818,35 +771,25 @@
               "Emo_Avatar_NingGuang_Fight_Attack_02"
             ]
           },
-          "combatCamera": true,
-          "cameraType": "combatNormal",
           "moveType": "combatMove",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanCancelSkill"
             },
             {
               "name": "&CanUseExtra",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 0.6
+              "normalizeEnd": 0.6000000238418579
             },
             {
               "name": "&CanUseSkill",
-              "normalizeStart": 0.48,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.47999998927116394
             }
           ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true,
           "sheatheOnEnd": true
         },
@@ -860,35 +803,25 @@
               "Emo_Avatar_NingGuang_Fight_Attack_03"
             ]
           },
-          "combatCamera": true,
-          "cameraType": "combatNormal",
           "moveType": "combatMove",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanCancelSkill"
             },
             {
               "name": "&CanUseExtra",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 0.7
+              "normalizeEnd": 0.699999988079071
             },
             {
               "name": "&CanUseSkill",
-              "normalizeStart": 0.48,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.47999998927116394
             }
           ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true,
           "sheatheOnEnd": true
         },
@@ -899,35 +832,26 @@
             "ExtraAttack_BS_2": ["Ningguang_ExtraAttack_BS"],
             "ExtraAttack_BS_3": ["Ningguang_ExtraAttack_BS"]
           },
-          "combatCamera": true,
-          "cameraType": "combatNormal",
           "moveType": "combatMove",
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "battouOnStart": false,
+          "cameraType": "combatNormal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ExtraAttack_Charge": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "ExtraAttack_Charge": [""]
+            "ExtraAttack_Charge": []
           },
-          "combatCamera": true,
-          "cameraType": "combatNormal",
           "moveType": "combatMove",
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanCancelSkill"
             }
           ],
-          "battouOnStart": false,
+          "cameraType": "combatNormal",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ExtraAttack": {
@@ -935,21 +859,16 @@
           "animatorStates": {
             "ExtraAttack": ["Ningguang_ExtraAttack"]
           },
-          "combatCamera": true,
-          "cameraType": "combatNormal",
           "moveType": "combatMove",
-          "canDoSkill": false,
-          "cameraParam": {},
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanCancelSkill"
             }
           ],
-          "battouOnStart": false,
+          "cameraType": "combatNormal",
+          "cameraParam": {},
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ExtraAttack_AS": {
@@ -957,26 +876,17 @@
           "animatorStates": {
             "ExtraAttack_AS": []
           },
-          "combatCamera": true,
-          "cameraType": "combatNormal",
           "moveType": "combatMove",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "battouOnStart": false,
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ServantStone_BS": {
@@ -990,15 +900,13 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
-          "canDoSkill": false,
-          "addEndure": 0.6,
-          "resetAnimatorTriggerOnEnter": [],
+          "addEndure": 0.6000000238418579,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "battouOnStart": true,
-          "jumpCancelEnd": -1,
-          "sprintCancelEnd": -1
+          "cameraType": "combatNormal",
+          "jumpCancelEnd": -1.0,
+          "sprintCancelEnd": -1.0,
+          "animatorTriggerOnLanded": "",
+          "battouOnStart": true
         },
         "ServantStone": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1006,26 +914,24 @@
             "ServantStone": ["Emo_Avatar_NingGuang_Skill_Elemental_Art"]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.3,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "addEndure": 0.6,
-          "resetAnimatorTriggerOnEnter": [],
+          "addEndure": 0.6000000238418579,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
               "name": "&CanUseSkill",
-              "normalizeStart": 0.3,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.30000001192092896
             }
           ],
-          "jumpCancelStart": 0.075,
-          "sprintCancelStart": 0.075
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [
+            {
+              "normalizeStart": 0.30000001192092896
+            }
+          ],
+          "jumpCancelStart": 0.07500000298023224,
+          "sprintCancelStart": 0.07500000298023224,
+          "animatorTriggerOnLanded": ""
         },
         "ServantStone_Charge": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1036,12 +942,10 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
-          "canDoSkill": false,
-          "addEndure": 0.6,
-          "resetAnimatorTriggerOnEnter": [],
+          "addEndure": 0.6000000238418579,
           "resetAnimatorTriggerOnExit": ["BeHit", "Jump", "DoSkill"],
-          "setAnimatorBoolean": []
+          "cameraType": "combatNormal",
+          "animatorTriggerOnLanded": ""
         },
         "ServantStone_AS": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1049,23 +953,17 @@
             "ServantStone_AS": ["ServantStone_AS"]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "Jump", "DoSkill"],
           "setAnimatorBoolean": [
             {
               "name": "&CanUseSkill",
-              "normalizeStart": 0.1,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.10000000149011612
             }
-          ]
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": ""
         },
         "ServantStone_Switch": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1076,24 +974,22 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "combatNormal",
           "canDoSkill": true,
-          "addEndure": 0.6,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.5,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
+          "addEndure": 0.6000000238418579,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
               "name": "&CanUseSkill",
-              "normalizeStart": 0.3,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.30000001192092896
             }
           ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [
+            {
+              "normalizeStart": 0.5
+            }
+          ],
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "GemStone_Impact": {
@@ -1107,14 +1003,11 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "normalMove",
-          "canDoSkill": false,
-          "addEndure": 0,
-          "jumpCancelEnd": -1,
-          "sprintCancelEnd": -1,
-          "resetAnimatorTriggerOnEnter": [],
+          "addEndure": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
+          "jumpCancelEnd": -1.0,
+          "sprintCancelEnd": -1.0,
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "GemStone_Impact_AS": {
@@ -1126,27 +1019,19 @@
             ]
           },
           "moveType": "combatMove",
-          "cameraType": "normalMove",
           "canDoSkill": true,
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
               "name": "&CanUseSkill",
-              "normalizeStart": 0.25,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.25
             }
-          ]
+          ],
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": ""
         },
         "FallingAnthem_BS": {
           "$type": "ConfigAvatarStateIDInfo",
-          "addEndure": 0,
           "animatorStates": {
             "FallingAnthem_BS_1": [
               "Audio_Lady_Catalyst_Ningguang_FallingAnthem_BS_1",
@@ -1155,43 +1040,36 @@
             "FallingAnthem_BS_2": ["Emo_Lady_Catalyst_FallingAttack_BS_02"]
           },
           "moveType": "combatAir",
+          "addEndure": 0.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "cameraType": "combatNormal",
+          "actionPanelState": "Fly",
           "equipReattach": [
             {
               "equip": "equip01",
-              "targetPoint": "WeaponR2",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "targetPoint": "WeaponR2"
             }
           ],
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "jumpCancelEnd": -1,
-          "actionPanelState": "Fly",
+          "jumpCancelEnd": -1.0,
           "animatorTriggerOnLanded": "HitAir2HitDrop",
           "sheatheOnStart": true
         },
         "FallingAnthem_Loop": {
           "$type": "ConfigAvatarStateIDInfo",
-          "addEndure": 0,
           "animatorStates": {
             "FallingAnthem_Loop": [],
             "FallingAnthem_Loop_Low": []
           },
           "moveType": "combatAir",
+          "addEndure": 0.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "actionPanelState": "Fly",
           "equipReattach": [
             {
               "equip": "equip01",
-              "targetPoint": "WeaponR2",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "targetPoint": "WeaponR2"
             }
           ],
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Fly",
           "animatorTriggerOnLanded": "HitAir2HitDrop",
           "sheatheOnStart": true
         },
@@ -1207,18 +1085,15 @@
           },
           "moveType": "combatMove",
           "canDoSkill": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "equipReattach": [
             {
               "equip": "equip01",
-              "targetPoint": "WeaponR2",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "targetPoint": "WeaponR2"
             }
           ],
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "jumpCancelEnd": -1,
+          "jumpCancelEnd": -1.0,
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "FallingAnthem_AS_2": {
@@ -1231,30 +1106,22 @@
           },
           "moveType": "combatMove",
           "canDoSkill": true,
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "WeaponR2",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
-          "resetAnimatorTriggerOnEnter": [],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
               "name": "&CanUseSkill",
-              "normalizeStart": 0.05,
-              "normalizeEnd": 1.0
+              "normalizeStart": 0.05000000074505806
             }
           ],
-          "canChangeAvatar": [
+          "canChangeAvatar": [{}],
+          "equipReattach": [
             {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "equip": "equip01",
+              "targetPoint": "WeaponR2"
             }
           ],
-          "jumpCancelStart": 0.1,
+          "jumpCancelStart": 0.10000000149011612,
+          "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
         "Sit": {
@@ -1265,12 +1132,9 @@
             "SitUp": ["Audio_Girl_SitDown", "Audio_Lady_Ningguang_Sit"]
           },
           "moveType": "performMove",
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Perform",
           "massRatio": 100.0,
+          "actionPanelState": "Perform",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "SitB": {
@@ -1281,12 +1145,9 @@
             "SitBUp": ["Audio_Girl_SitDown", "Audio_Lady_Ningguang_Sit"]
           },
           "moveType": "performMove",
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Perform",
           "massRatio": 100.0,
+          "actionPanelState": "Perform",
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "StandbyShow": {
@@ -1304,24 +1165,15 @@
             ]
           },
           "moveType": "performMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": [],
+          "massRatio": 100.0,
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "TakePhotos": {
@@ -1333,7 +1185,8 @@
             "Akimbo02Loop": [],
             "Think01AS": [],
             "Akimbo02AS": []
-          }
+          },
+          "animatorTriggerOnLanded": ""
         },
         "Channel_BS": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1341,24 +1194,16 @@
             "ChannelBS": ["Emo_Avatar_Common_Manekin_Default"]
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Channel_Loop": {
@@ -1367,24 +1212,16 @@
             "ChannelLoop": []
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "Channel_AS": {
@@ -1393,24 +1230,16 @@
             "ChannelAS": []
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Lyre": {
@@ -1423,13 +1252,9 @@
             "PlayMusic_Lyre_Loop": []
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [],
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
           "massRatio": 100.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Lyre_AS": {
@@ -1441,24 +1266,16 @@
             ]
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Qin": {
@@ -1468,13 +1285,9 @@
             "PlayMusic_Qin_Loop": []
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [],
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
           "massRatio": 100.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Qin_AS": {
@@ -1483,24 +1296,16 @@
             "PlayMusic_Qin_AS": ["PlayMusic_Qin_Lady_AS"]
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Drum": {
@@ -1510,13 +1315,9 @@
             "PlayMusic_Drum_Loop": []
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [],
-          "canDoSkill": false,
-          "resetAnimatorTriggerOnEnter": [],
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
           "massRatio": 100.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "PlayMusic_Drum_AS": {
@@ -1525,24 +1326,16 @@
             "PlayMusic_Drum_AS": ["PlayMusic_Drum_Lady_AS"]
           },
           "moveType": "combatMove",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
-            }
-          ],
           "canDoSkill": true,
-          "resetAnimatorTriggerOnEnter": [],
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.0,
-              "normalizeEnd": 1.0
+              "name": "&CanUseSkill"
             }
           ],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ActivitySkill_ElectricCoreFly": {
@@ -1551,8 +1344,7 @@
             "ActivitySkill_ElectricCoreFly": []
           },
           "moveType": "combatAir",
-          "canChangeAvatar": [],
-          "canDoSkill": false,
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnEnter": ["ElectricCoreFly_End"],
           "resetAnimatorTriggerOnExit": [
             "BeHit",
@@ -1560,9 +1352,7 @@
             "Jump",
             "ElectricCoreFly_End"
           ],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
         "ActivitySkill_GrapplingHook": {
@@ -1571,8 +1361,7 @@
             "ActivitySkill_GrapplingHook": []
           },
           "moveType": "combatAir",
-          "canChangeAvatar": [],
-          "canDoSkill": false,
+          "massRatio": 100.0,
           "resetAnimatorTriggerOnEnter": ["GrapplingHook_Drop"],
           "resetAnimatorTriggerOnExit": [
             "BeHit",
@@ -1580,83 +1369,72 @@
             "Jump",
             "GrapplingHook_Drop"
           ],
-          "setAnimatorBoolean": [],
-          "actionPanelState": "Normal",
-          "massRatio": 100.0,
+          "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         }
       }
     }
   },
-  "abilities": [
-    {
-      "abilityID": "GemBullet_Handler",
-      "abilityName": "Avatar_Ningguang_ExtraAttack_GemBullet_Handler"
-    },
-    {
-      "abilityID": "NormalAttack01",
-      "abilityName": "Avatar_Ningguang_Attack01"
-    },
-    {
-      "abilityID": "NormalAttack02",
-      "abilityName": "Avatar_Ningguang_Attack02"
-    },
-    {
-      "abilityID": "NormalAttack03",
-      "abilityName": "Avatar_Ningguang_Attack03"
-    },
-    {
-      "abilityID": "NormalAttack04",
-      "abilityName": "Avatar_Ningguang_Attack04"
-    },
-    {
-      "abilityID": "ExtraAttack_Trigger",
-      "abilityName": "Avatar_Ningguang_ExtraAttack"
-    },
-    {
-      "abilityID": "Ningguang_Roulette",
-      "abilityName": "Avatar_Ningguang_Roulette"
-    },
-    {
-      "abilityID": "ExtraAttack_Fx",
-      "abilityName": "Avatar_Ningguang_ExtraAttack_Fx"
-    },
-    {
-      "abilityID": "NormalAttack_HideWeapon",
-      "abilityName": "Avatar_Ningguang_HideWeapon"
-    },
-    {
-      "abilityID": "Change_Gadget_BornState",
-      "abilityName": "Avatar_Ningguang_Change_Gadget_BornState"
-    },
-    {
-      "abilityID": "Charge_ServantStone",
-      "abilityName": "Avatar_Ningguang_Charge_ServantStone"
-    },
-    {
-      "abilityID": "ServantStone",
-      "abilityName": "Avatar_Ningguang_ServantStone"
-    },
-    {
-      "abilityID": "ServantStone_Switch",
-      "abilityName": "Avatar_Ningguang_ServantStone_Switch"
-    },
-    {
-      "abilityID": "Trigger_ElementalArt_CD",
-      "abilityName": "Avatar_Ningguang_Trigger_ElementalArt_CD"
-    },
-    {
-      "abilityID": "GemStone_Impact",
-      "abilityName": "Avatar_Ningguang_GemStone_Impact"
-    },
-    {
-      "abilityID": "Avatar_Ningguang_FallingAnthem",
-      "abilityName": "Avatar_Ningguang_FallingAnthem"
-    }
-  ],
   "audio": {
-    "$type": "ConfigAvatarAudio",
     "animAudio": {
+      "onTransitionIn": [
+        {
+          "currentStateName": "ExtraAttack_BS_1",
+          "audioEvent": {
+            "text": "Play_sfx_char_ningguang_catalyst_exAttackBS"
+          }
+        },
+        {
+          "currentStateName": "ExtraAttack_BS_2",
+          "audioEvent": {
+            "text": "Play_sfx_char_ningguang_catalyst_exAttackBS"
+          }
+        },
+        {
+          "currentStateName": "ExtraAttack_BS_3",
+          "audioEvent": {
+            "text": "Play_sfx_char_ningguang_catalyst_exAttackBS"
+          }
+        },
+        {
+          "currentStateName": "SlipBackWall",
+          "audioEvent": {
+            "text": "Play_sfx_char_slipWall"
+          }
+        },
+        {
+          "currentStateName": "SlipFaceWall",
+          "audioEvent": {
+            "text": "Play_sfx_char_slipWall"
+          }
+        },
+        {
+          "currentStateName": "NormalDie",
+          "audioEvent": {
+            "text": "Play_sfx_char_land"
+          },
+          "otherStateNames": ["FallOnGround"],
+          "usage": "InSet"
+        },
+        {
+          "currentStateName": "SwimJumpToWater",
+          "audioEvent": {
+            "text": "Stop_sfx_char_swim_dive"
+          }
+        },
+        {
+          "currentStateName": "SwimDash",
+          "audioEvent": {
+            "text": "Play_sfx_char_swim_dash"
+          }
+        },
+        {
+          "currentStateName": "Standby",
+          "audioEvent": {
+            "text": "Stop_sfx_char_fly"
+          }
+        }
+      ],
       "onTransitionOut": [
         {
           "currentStateName": "ExtraAttack_BS_1",
@@ -1702,17 +1480,13 @@
           "currentStateName": "FallingAnthem_AS_2",
           "audioEvent": {
             "text": "Stop_sfx_char_catalyst_fallingAnthem_rock_AS"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "StandbyShow_01",
           "audioEvent": {
             "text": "Stop_sfx_standbyShow_ningguang_smoke_appear"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "Ningguang_Attack02",
@@ -1734,17 +1508,13 @@
           "currentStateName": "ServantStone_BS",
           "audioEvent": {
             "text": "Stop_sfx_char_ningguang_servantStoneBS"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "ServantStone_Switch",
           "audioEvent": {
             "text": "Stop_sfx_char_ningguang_servantStoneSwitch"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "GemStone_Impact",
@@ -1758,33 +1528,25 @@
           "currentStateName": "StandbyPutaway",
           "audioEvent": {
             "text": "Stop_sfx_weapon_1HSword_lady_putAwayStandby"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "WalkPutaway",
           "audioEvent": {
             "text": "Stop_sfx_weapon_1HSword_lady_putAwayStandby"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "RunPutaway",
           "audioEvent": {
             "text": "Stop_sfx_weapon_1HSword_lady_putAwayStandby"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "SwimJumpDrop",
           "audioEvent": {
             "text": "Stop_sfx_char_swim_drop"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "SwimJump",
@@ -1954,33 +1716,25 @@
           "currentStateName": "SlipFaceWall",
           "audioEvent": {
             "text": "Stop_sfx_char_drop"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "SlipFaceWall",
           "audioEvent": {
             "text": "Stop_sfx_char_slipWall"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "SlipBackWall",
           "audioEvent": {
             "text": "Stop_sfx_char_drop"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "SlipBackWall",
           "audioEvent": {
             "text": "Stop_sfx_char_slipWall"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "DropDownWeapon",
@@ -2012,91 +1766,13 @@
           "currentStateName": "SwimMove",
           "audioEvent": {
             "text": "Stop_sfx_char_swim"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "Fly",
           "audioEvent": {
             "text": "Stop_sfx_char_fly"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        }
-      ],
-      "onTransitionIn": [
-        {
-          "currentStateName": "ExtraAttack_BS_1",
-          "audioEvent": {
-            "text": "Play_sfx_char_ningguang_catalyst_exAttackBS"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "ExtraAttack_BS_2",
-          "audioEvent": {
-            "text": "Play_sfx_char_ningguang_catalyst_exAttackBS"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "ExtraAttack_BS_3",
-          "audioEvent": {
-            "text": "Play_sfx_char_ningguang_catalyst_exAttackBS"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "SlipBackWall",
-          "audioEvent": {
-            "text": "Play_sfx_char_slipWall"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "SlipFaceWall",
-          "audioEvent": {
-            "text": "Play_sfx_char_slipWall"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "NormalDie",
-          "audioEvent": {
-            "text": "Play_sfx_char_land"
-          },
-          "otherStateNames": ["FallOnGround"],
-          "usage": "InSet"
-        },
-        {
-          "currentStateName": "SwimJumpToWater",
-          "audioEvent": {
-            "text": "Stop_sfx_char_swim_dive"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "SwimDash",
-          "audioEvent": {
-            "text": "Play_sfx_char_swim_dash"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
-        },
-        {
-          "currentStateName": "Standby",
-          "audioEvent": {
-            "text": "Stop_sfx_char_fly"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         }
       ],
       "recurrentSpeeches": {
@@ -2160,9 +1836,7 @@
           "currentStateName": "Fly",
           "audioEvent": {
             "text": "Play_sfx_char_fly"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "Air",
@@ -2178,17 +1852,13 @@
           "currentStateName": "Fly",
           "audioEvent": {
             "text": "Stop_sfx_char_fly"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         },
         {
           "currentStateName": "Air",
           "audioEvent": {
             "text": "Stop_sfx_char_drop"
-          },
-          "otherStateNames": [],
-          "usage": "Any"
+          }
         }
       ]
     },
@@ -2280,8 +1950,8 @@
   },
   "perform": {
     "standby": {
-      "minTime": 10,
-      "maxTime": 20,
+      "minTime": 10.0,
+      "maxTime": 20.0,
       "performIDs": [201, 202, 200, 200]
     }
   }
