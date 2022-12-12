@@ -1,11 +1,15 @@
 # Grasscutter Resources
-> <em>Resource Version - "Certain Anime Game" 3.3</em><br/>
+> <em>Resource - "Certain Anime Game" Version 3.3</em><br/>
 
 - ExcelBinOutput (3.3 GC)
-- BinOutput (3.3 GIO: Talent>EquipTalents,Scene>SceneNpcBorn,LevelEntity,Gadget,AbilityGroup,Ability | GC 3.3 Scene>Point,Quest,HomeworldDefaultSave,Avatar,Talent>AvatarTalents | GC ?.? LevelDesign>Routes)
+- BinOutput (3.3 GIO: Talent>EquipTalents,Scene>SceneNpcBorn,LevelEntity,Gadget,AbilityGroup,Ability | GC 3.3 Avatar,Talent>AvatarTalents | GC ?.? LevelDesign>Routes) | GC 2.7 Quest,Scene>Point,HomeworldDefaultSave
 - Scripts (3.3 GIO) (Used for Big World LUA)
 - TextMap (3.3 GC) (for language translations items,etc are used for gm-books)
 - QuestEncryptionKeys (3.2 GIO) (Used for cutscenes that require a key, see Credits below)
+
+## What is difference between GIO and GC?
+- GIO is a leaked full file from official server which was released last month (maybe 28/10/2022) which is available from 3.1-4.0 so it's possible that version 3.2+ some animations/characters are still in beta (aka beta old) so data won't be accurate anymore if it's already release because of the many revisions.
+- GC is a Grasscutter that has been dump file by several GC Teams and several other people whose results are from current beta and includes latest released version, only the problem is that most of the data is still unk_name so it's hard to understand and sometimes it's still inaccurate because mix from previous version.
 
 ## Learn LUA
  How Dungeons work:
@@ -32,7 +36,7 @@
 - LevelDesign/Routes/*
 - LevelEntity/* (ConfigLevelEntity_*.json)
 
-Because there are a lot of useless files, so I made a separate repo: Full Version (GIO) and Grasscutter Version are needed for Grasscutter only.
+Because there are a lot of useless files, so I made a separate repo: GIO and Grasscutter Version are needed for Grasscutter only.
 
 ## Problem Not finished yet:
 - Make Quest 2.8-3.3 work with modified QuestExcelConfigData which you can get from BinOutput/Quest/*.json. [use binout instead of excelconfig](https://github.com/Hartie95/Grasscutter/commit/0284de81563d30afb81733d7a3523a97419eb977)
