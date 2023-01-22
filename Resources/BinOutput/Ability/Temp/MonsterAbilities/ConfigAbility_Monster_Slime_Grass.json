@@ -1,9 +1,4 @@
 [
-  ////////////////////////////////////////////////////////////////
-  //
-  //  AIStateControl
-  //
-  ////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -90,11 +85,6 @@
       ]
     }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  DrillOut
-  //
-  ////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -119,11 +109,6 @@
       ]
     }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  UnderGround
-  //
-  ////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -154,70 +139,55 @@
           "stateIDs": ["Walk_Under"],
           "modifierName": "UnderGround_WalkRandom"
         }
-        // {
-        // 	"$type": "AttachToStateIDMixin",
-        // 	"stateIDs": ["NormalIdle_Under", "Turn_Under"],
-        // 	"modifierName": "UnderGround_Effect",
-        // },
       ],
-      "onAdded": [
-        {
-          "$type": "ApplyModifier",
-          "modifierName": "UNIQUE_UnderGround_State",
-          "target": "Self"
-        }
-      ],
-      "onAbilityStart": [
-        {
-          "$type": "ApplyModifier",
-          "modifierName": "UNIQUE_UnderGround_State",
-          "target": "Self"
-        }
-      ],
+      "abilitySpecials": {
+        "WalkRandomTime": 1.0
+      },
       "modifiers": {
         "UnderGround_Invincible": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "state": "Invincible"
         },
         "UnderGround_DenyLockOn": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "state": "DenyLockOn"
         },
         "UnderGround_MoveEffect": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Move_UnderGround"
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Move_UnderGround",
+              "MEMHGJDEPJA": -1.0
             }
           ]
         },
-        // "UnderGround_Effect":
-        // {
-        // 	"onAdded":
-        // 	[
-        // 		{
-        // 			"$type": "AttachEffect",
-        // 			"effectPattern": "Eff_Monster_Slime_Grass_UnderGround_02",
-        // 		},
-        // 	],
-        // },
         "UnderGround_WathcRandom": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetAnimatorFloat",
               "floatID": "WatchRandom",
               "useRandomValue": true,
-              "randomValueMin": 1,
-              "randomValueMax": 10
+              "randomValueMin": 1.0,
+              "randomValueMax": 10.0
             },
             {
               "$type": "SetRandomOverrideMapValue",
-              "overrideMapKey": "WalkRandomTime",
+              "valueRangeMax": 1.0,
               "valueRangeMin": 0.5,
-              "valueRangeMax": 1.0
+              "overrideMapKey": "WalkRandomTime"
             }
           ]
         },
         "UnderGround_WalkRandom": {
-          "duration": "%WalkRandomTime",
+          "modifierName": "",
+          "DCEFILPANJI": "WalkRandomTime",
+          "bonusCriticalHurt": 100.0,
           "onRemoved": [
             {
               "$type": "SetAnimatorTrigger",
@@ -226,55 +196,27 @@
           ]
         },
         "UNIQUE_UnderGround_State": {
+          "modifierName": "",
           "isUnique": true,
-          "thinkInterval": 0.2,
-          "onThinkInterval": [
-            {
-              "$type": "Predicated",
-              "target": "SelfAttackTarget",
-              "targetPredicates": [
-                {
-                  "$type": "ByTargetForwardAndSelfPosition",
-                  "value": 90.0,
-                  "logic": "Lesser"
-                }
-              ],
-              "successActions": [
-                {
-                  "$type": "SetPoseBool",
-                  "boolID": "IsInBack",
-                  "value": false
-                },
-                {
-                  "$type": "SetAnimatorTrigger",
-                  "triggerID": "AttackStopTrigger"
-                }
-              ],
-              "failActions": [
-                {
-                  "$type": "SetPoseBool",
-                  "boolID": "IsInBack",
-                  "value": true
-                }
-              ]
-            }
-          ],
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 0.20000000298023224,
           "onAdded": [
             {
               "$type": "SetGlobalValue",
+              "RotationDampTime": true,
+              "ratio": 1.0,
               "key": "_ABILITY_SLIME_GRASS_UNDERGROUND",
-              "value": 1,
-              "doOffStage": true
+              "maxValue": 0.0,
+              "minValue": 0.0
             },
             {
               "$type": "SetPoseBool",
               "boolID": "UnderGround",
-              "value": true
+              "ratio": true
             },
             {
               "$type": "EnableHitBoxByName",
-              "hitBoxNames": ["HitBox"],
-              "setEnable": false
+              "hitBoxNames": ["HitBox"]
             },
             {
               "$type": "EnableHitBoxByName",
@@ -283,8 +225,7 @@
             },
             {
               "$type": "EnablePushColliderName",
-              "pushColliderNames": ["PushCollider"],
-              "setEnable": false
+              "pushColliderNames": ["PushCollider"]
             },
             {
               "$type": "HideUIBillBoard",
@@ -296,34 +237,22 @@
             },
             {
               "$type": "EnableHDMesh",
-              "enable": false,
-              "hdMeshKey": "Default",
-              "canBeHandledOnRecover": true
-            }
-          ],
-          "onBeingHit": [
-            {
-              "$type": "SetAnimatorTrigger",
-              "triggerID": "ToGround",
-              "predicates": [
-                {
-                  "$type": "ByHitElement",
-                  "element": "Fire"
-                }
-              ]
+              "canBeHandledOnRecover": true,
+              "DFMMHHCLDBM": "Default"
             }
           ],
           "onRemoved": [
             {
               "$type": "SetGlobalValue",
+              "RotationDampTime": true,
+              "ratio": 0.0,
               "key": "_ABILITY_SLIME_GRASS_UNDERGROUND",
-              "value": 0,
-              "doOffStage": true
+              "maxValue": 0.0,
+              "minValue": 0.0
             },
             {
               "$type": "SetPoseBool",
-              "boolID": "UnderGround",
-              "value": false
+              "boolID": "UnderGround"
             },
             {
               "$type": "EnableHitBoxByName",
@@ -332,8 +261,7 @@
             },
             {
               "$type": "EnableHitBoxByName",
-              "hitBoxNames": ["HitBox_Ground"],
-              "setEnable": false
+              "hitBoxNames": ["HitBox_Ground"]
             },
             {
               "$type": "EnablePushColliderName",
@@ -341,24 +269,73 @@
               "setEnable": true
             },
             {
-              "$type": "HideUIBillBoard",
-              "hide": false
+              "$type": "HideUIBillBoard"
             },
             {
-              "$type": "EnableAIStealthy",
-              "enable": false
+              "$type": "EnableAIStealthy"
             },
             {
               "$type": "EnableHDMesh",
               "enable": true,
-              "hdMeshKey": "Default"
+              "DFMMHHCLDBM": "Default"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "predicates": [
+                {
+                  "$type": "ByHitElement",
+                  "element": "Fire"
+                }
+              ],
+              "triggerID": "ToGround"
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "target": "SelfAttackTarget",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetForwardAndSelfPosition",
+                  "logic": "Lesser",
+                  "ratio": 90.0
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetPoseBool",
+                  "boolID": "IsInBack"
+                },
+                {
+                  "$type": "SetAnimatorTrigger",
+                  "triggerID": "AttackStopTrigger"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "SetPoseBool",
+                  "boolID": "IsInBack",
+                  "ratio": true
+                }
+              ]
             }
           ]
         }
       },
-      "abilitySpecials": {
-        "WalkRandomTime": 1.0
-      }
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_UnderGround_State"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "UNIQUE_UnderGround_State"
+        }
+      ]
     }
   },
   {
@@ -376,107 +353,61 @@
           "stateIDs": ["NormalIdle_Under", "NormalMove_Under"],
           "modifierName": "UnderGround_LockHP"
         },
-        // {
-        // 	"$type": "AttachToStateIDMixin",
-        // 	"stateIDs": ["NormalIdle_Under"],
-        // 	"modifierName": "UnderGround_Effect",
-        // },
         {
           "$type": "AttachToStateIDMixin",
           "stateIDs": ["NormalIdle_Under", "NormalMove_Under"],
           "modifierName": "UnderGround_DenyLockOn"
         }
       ],
-      "onAdded": [
-        {
-          "$type": "ApplyModifier",
-          "modifierName": "UNIQUE_UnderGround_State",
-          "target": "Self"
-        }
-      ],
-      "onAbilityStart": [
-        {
-          "$type": "ApplyModifier",
-          "modifierName": "UNIQUE_UnderGround_State",
-          "target": "Self"
-        }
-      ],
       "modifiers": {
         "UnderGround_LockHP": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "state": "LockHP"
         },
         "UnderGround_DenyLockOn": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "state": "DenyLockOn"
         },
         "UnderGround_MoveEffect": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Move_UnderGround"
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Move_UnderGround",
+              "MEMHGJDEPJA": -1.0
             }
           ]
         },
-        // "UnderGround_Effect":
-        // {
-        // 	"onAdded":
-        // 	[
-        // 		{
-        // 			"$type": "AttachEffect",
-        // 			"effectPattern": "Eff_Monster_Slime_Grass_UnderGround_03",
-        // 		},
-        // 	],
-        // },
         "UNIQUE_UnderGround_State": {
+          "modifierName": "",
           "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 0.20000000298023224,
           "properties": {
-            "Entity_MassRatio": 1000,
+            "Entity_MassRatio": 1000.0,
             "Entity_WeightRatio": 0.5,
-            "Actor_EndureDelta": 0
+            "Actor_EndureDelta": 0.0
           },
-          "thinkInterval": 0.2,
-          "onThinkInterval": [
-            {
-              "$type": "Predicated",
-              "target": "SelfAttackTarget",
-              "targetPredicates": [
-                {
-                  "$type": "ByTargetForwardAndSelfPosition",
-                  "value": 120.0,
-                  "logic": "Lesser"
-                }
-              ],
-              "successActions": [
-                {
-                  "$type": "SetPoseBool",
-                  "boolID": "IsInBack",
-                  "value": false
-                }
-              ],
-              "failActions": [
-                {
-                  "$type": "SetPoseBool",
-                  "boolID": "IsInBack",
-                  "value": true
-                }
-              ]
-            }
-          ],
           "onAdded": [
             {
               "$type": "SetGlobalValue",
+              "RotationDampTime": true,
+              "ratio": 1.0,
               "key": "_ABILITY_SLIME_GRASS_UNDERGROUND",
-              "value": 1,
-              "doOffStage": true
+              "maxValue": 0.0,
+              "minValue": 0.0
             },
             {
               "$type": "SetPoseBool",
               "boolID": "UnderGround",
-              "value": true
+              "ratio": true
             },
             {
               "$type": "EnableHitBoxByName",
-              "hitBoxNames": ["HitBox", "HitBox_Flower"],
-              "setEnable": false
+              "hitBoxNames": ["HitBox", "HitBox_Flower"]
             },
             {
               "$type": "EnableHitBoxByName",
@@ -485,8 +416,7 @@
             },
             {
               "$type": "EnablePushColliderName",
-              "pushColliderNames": ["PushCollider"],
-              "setEnable": false
+              "pushColliderNames": ["PushCollider"]
             },
             {
               "$type": "EnablePushColliderName",
@@ -503,34 +433,22 @@
             },
             {
               "$type": "EnableHDMesh",
-              "enable": false,
-              "hdMeshKey": "Default",
-              "canBeHandledOnRecover": true
-            }
-          ],
-          "onBeingHit": [
-            {
-              "$type": "SetAnimatorTrigger",
-              "triggerID": "ToGround",
-              "predicates": [
-                {
-                  "$type": "ByHitElement",
-                  "element": "Fire"
-                }
-              ]
+              "canBeHandledOnRecover": true,
+              "DFMMHHCLDBM": "Default"
             }
           ],
           "onRemoved": [
             {
               "$type": "SetGlobalValue",
+              "RotationDampTime": true,
+              "ratio": 0.0,
               "key": "_ABILITY_SLIME_GRASS_UNDERGROUND",
-              "value": 0,
-              "doOffStage": true
+              "maxValue": 0.0,
+              "minValue": 0.0
             },
             {
               "$type": "SetPoseBool",
-              "boolID": "UnderGround",
-              "value": false
+              "boolID": "UnderGround"
             },
             {
               "$type": "EnableHitBoxByName",
@@ -539,8 +457,7 @@
             },
             {
               "$type": "EnableHitBoxByName",
-              "hitBoxNames": ["HitBox_Ground"],
-              "setEnable": false
+              "hitBoxNames": ["HitBox_Ground"]
             },
             {
               "$type": "EnablePushColliderName",
@@ -549,55 +466,83 @@
             },
             {
               "$type": "EnablePushColliderName",
-              "pushColliderNames": ["PushCollider_Ground"],
-              "setEnable": false
+              "pushColliderNames": ["PushCollider_Ground"]
             },
             {
-              "$type": "HideUIBillBoard",
-              "hide": false
+              "$type": "HideUIBillBoard"
             },
             {
-              "$type": "EnableAIStealthy",
-              "enable": false
+              "$type": "EnableAIStealthy"
             },
             {
               "$type": "EnableHDMesh",
               "enable": true,
-              "hdMeshKey": "Default"
+              "DFMMHHCLDBM": "Default"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "predicates": [
+                {
+                  "$type": "ByHitElement",
+                  "element": "Fire"
+                }
+              ],
+              "triggerID": "ToGround"
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "target": "SelfAttackTarget",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetForwardAndSelfPosition",
+                  "logic": "Lesser",
+                  "ratio": 120.0
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetPoseBool",
+                  "boolID": "IsInBack"
+                }
+              ],
+              "failActions": [
+                {
+                  "$type": "SetPoseBool",
+                  "boolID": "IsInBack",
+                  "ratio": true
+                }
+              ]
             }
           ]
         }
-      }
-    }
-  },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  ElementState
-  //
-  ////////////////////////////////////////////////////////////////
-  {
-    "Default": {
-      "$type": "ConfigAbility",
-      "abilityName": "Slime_Grass_02_ElementState",
+      },
       "onAdded": [
         {
           "$type": "ApplyModifier",
-          "modifierName": "ElementState",
-          "target": "Self"
+          "modifierName": "UNIQUE_UnderGround_State"
         }
       ],
       "onAbilityStart": [
         {
           "$type": "ApplyModifier",
-          "modifierName": "ElementState",
-          "target": "Self"
+          "modifierName": "UNIQUE_UnderGround_State"
         }
-      ],
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Slime_Grass_02_ElementState",
       "modifiers": {
         "ElementState": {
-          "stacking": "Refresh",
+          "modifierName": "",
           "elementType": "Grass",
-          "elementDurability": 50,
+          "bonusCriticalHurt": 50.0,
           "modifierMixins": [
             {
               "$type": "AttachToAbilityStateMixin",
@@ -608,8 +553,8 @@
           "onAdded": [
             {
               "$type": "AddGlobalValue",
+              "ratio": 1.0,
               "key": "_ABILITY_SLIME_GRASS_ELEMENTSTATE",
-              "value": 1.0,
               "useLimitRange": true,
               "maxValue": 1.0,
               "minValue": 0.0
@@ -622,21 +567,20 @@
             {
               "$type": "SetPoseBool",
               "boolID": "ElementState",
-              "value": true
+              "ratio": true
             }
           ],
           "onRemoved": [
             {
               "$type": "SetAnimatorTrigger",
-              "triggerID": "ToGround",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_SLIME_GRASS_UNDERGROUND",
-                  "value": 1,
-                  "compareType": "Equal"
+                  "ratio": 1.0
                 }
-              ]
+              ],
+              "triggerID": "ToGround"
             },
             {
               "$type": "RemoveUniqueModifier",
@@ -644,96 +588,96 @@
             },
             {
               "$type": "AddGlobalValue",
+              "ratio": -1.0,
               "key": "_ABILITY_SLIME_GRASS_ELEMENTSTATE",
-              "value": -1.0,
               "useLimitRange": true,
               "maxValue": 1.0,
               "minValue": 0.0
             },
             {
               "$type": "TriggerSetRenderersEnable",
-              "renderNames": ["Grass"],
-              "setEnable": false
+              "renderNames": ["Grass"]
             },
             {
               "$type": "SetPoseBool",
-              "boolID": "ElementState",
-              "value": false
+              "boolID": "ElementState"
             }
           ]
         },
         "BurningDetect": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetPoseBool",
               "boolID": "OnFire",
-              "value": true
+              "ratio": true
             },
             {
               "$type": "DamageByAttackValue",
-              "target": "Self",
+              "predicates": [
+                {
+                  "$type": "ByAnimatorFloat",
+                  "logic": "Equal",
+                  "ratio": 401.0,
+                  "parameter": "PoseID"
+                }
+              ],
               "attackInfo": {
+                "attackTag": "",
+                "attenuationTag": "",
+                "attenuationGroup": "default",
                 "attackProperty": {
-                  "damagePercentage": 0,
-                  "enBreak": 1000
+                  "EHFOGJFHDPE": 0.0,
+                  "GDADKLDBGIM": 0.0,
+                  "bonusCriticalHurt": 100.0,
+                  "enBreak": 1000.0
                 },
                 "hitPattern": {
                   "onHitEffectName": "",
                   "hitImpulseType": "LV2",
-                  "reboundRatio": 0,
-                  "hitHaltTime": 0.0,
-                  "hitHaltTimeScale": 0.01,
+                  "hitHaltTimeScale": 0.009999999776482582,
                   "muteHitText": true
                 }
-              },
-              "predicates": [
-                {
-                  "$type": "ByAnimatorFloat",
-                  "parameter": "PoseID",
-                  "value": 401,
-                  "logic": "Equal"
-                }
-              ]
+              }
             },
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Burning_02"
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Burning_02",
+              "MEMHGJDEPJA": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "SetPoseBool",
-              "boolID": "OnFire",
-              "value": false
+              "boolID": "OnFire"
             }
           ]
         }
-      }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "ElementState"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "ElementState"
+        }
+      ]
     }
   },
   {
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Slime_Grass_03_ElementState",
-      "onAdded": [
-        {
-          "$type": "ApplyModifier",
-          "modifierName": "ElementState",
-          "target": "Self"
-        }
-      ],
-      "onAbilityStart": [
-        {
-          "$type": "ApplyModifier",
-          "modifierName": "ElementState",
-          "target": "Self"
-        }
-      ],
       "modifiers": {
         "ElementState": {
-          "stacking": "Refresh",
+          "modifierName": "",
           "elementType": "Grass",
-          "elementDurability": 200,
+          "bonusCriticalHurt": 200.0,
           "modifierMixins": [
             {
               "$type": "AttachToAbilityStateMixin",
@@ -750,7 +694,7 @@
             {
               "$type": "SetPoseBool",
               "boolID": "ElementState",
-              "value": true
+              "ratio": true
             },
             {
               "$type": "EnableHitBoxByName",
@@ -761,15 +705,14 @@
           "onRemoved": [
             {
               "$type": "SetAnimatorTrigger",
-              "triggerID": "ToGround",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_SLIME_GRASS_UNDERGROUND",
-                  "value": 1,
-                  "compareType": "Equal"
+                  "ratio": 1.0
                 }
-              ]
+              ],
+              "triggerID": "ToGround"
             },
             {
               "$type": "RemoveUniqueModifier",
@@ -777,108 +720,113 @@
             },
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_PutOutFire"
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_PutOutFire",
+              "MEMHGJDEPJA": -1.0
             },
             {
               "$type": "TriggerSetRenderersEnable",
-              "renderNames": ["Grass"],
-              "setEnable": false
+              "renderNames": ["Grass"]
             },
             {
               "$type": "SetPoseBool",
-              "boolID": "ElementState",
-              "value": false
+              "boolID": "ElementState"
             },
             {
               "$type": "EnableHitBoxByName",
-              "hitBoxNames": ["HitBox_Flower"],
-              "setEnable": false
+              "hitBoxNames": ["HitBox_Flower"]
             }
           ]
         },
         "BurningDetect": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetPoseBool",
               "boolID": "OnFire",
-              "value": true
+              "ratio": true
             },
             {
               "$type": "DamageByAttackValue",
-              "target": "Self",
+              "predicates": [
+                {
+                  "$type": "ByAnimatorFloat",
+                  "logic": "Equal",
+                  "ratio": 401.0,
+                  "parameter": "PoseID"
+                }
+              ],
               "attackInfo": {
+                "attackTag": "",
+                "attenuationTag": "",
+                "attenuationGroup": "default",
                 "attackProperty": {
-                  "damagePercentage": 0,
-                  "enBreak": 1000
+                  "EHFOGJFHDPE": 0.0,
+                  "GDADKLDBGIM": 0.0,
+                  "bonusCriticalHurt": 100.0,
+                  "enBreak": 1000.0
                 },
                 "hitPattern": {
                   "onHitEffectName": "",
                   "hitImpulseType": "LV2",
-                  "reboundRatio": 0,
-                  "hitHaltTime": 0.0,
-                  "hitHaltTimeScale": 0.01,
+                  "hitHaltTimeScale": 0.009999999776482582,
                   "muteHitText": true
                 }
-              },
-              "predicates": [
-                {
-                  "$type": "ByAnimatorFloat",
-                  "parameter": "PoseID",
-                  "value": 401,
-                  "logic": "Equal"
-                }
-              ]
+              }
             },
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Burning_03"
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Burning_03",
+              "MEMHGJDEPJA": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "SetPoseBool",
-              "boolID": "OnFire",
-              "value": false
+              "boolID": "OnFire"
             }
           ]
         }
-      }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "ElementState"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "ElementState"
+        }
+      ]
     }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  PutOutFire
-  //
-  ////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Slime_Grass_03_PutOutFire",
+      "modifiers": {
+        "PutOutFire": {
+          "modifierName": "",
+          "DCEFILPANJI": 0.10000000149011612,
+          "elementType": "AntiFire",
+          "bonusCriticalHurt": 10000.0
+        }
+      },
       "onAbilityStart": [
         {
           "$type": "ApplyModifier",
-          "modifierName": "PutOutFire",
-          "target": "Self"
+          "modifierName": "PutOutFire"
         },
         {
           "$type": "FireEffect",
-          "effectPattern": "Eff_Monster_Slime_Grass_PutOutFire"
+          "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_PutOutFire",
+          "MEMHGJDEPJA": -1.0
         }
-      ],
-      "modifiers": {
-        "PutOutFire": {
-          "duration": 0.1,
-          "elementType": "AntiFire",
-          "elementDurability": 10000
-        }
-      }
+      ]
     }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  UnderAttack
-  //
-  ////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -913,21 +861,24 @@
       ],
       "modifiers": {
         "UnderGround_BeingHit": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onBeingHit": [
             {
               "$type": "RemoveUniqueModifier",
-              "modifierName": "UNIQUE_UnderGround_State",
               "predicates": [
                 {
                   "$type": "ByHitDamage",
-                  "damage": 0,
-                  "logic": "Greater"
+                  "damage": 0.0
                 }
-              ]
+              ],
+              "modifierName": "UNIQUE_UnderGround_State"
             }
           ]
         },
         "AbilityState_Detect": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onRemoved": [
             {
               "$type": "RemoveUniqueModifier",
@@ -936,6 +887,8 @@
           ]
         },
         "UnderAttack_StopAtk": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "Predicated",
@@ -943,16 +896,15 @@
               "targetPredicates": [
                 {
                   "$type": "ByTargetPositionToSelfPosition",
-                  "compareType": "XZ",
-                  "value": 5.0,
-                  "logic": "Lesser"
+                  "logic": "Lesser",
+                  "ratio": 5.0
                 }
               ],
               "successActions": [
                 {
                   "$type": "SetPoseBool",
                   "boolID": "StopAtk",
-                  "value": true
+                  "ratio": true
                 }
               ]
             }
@@ -965,21 +917,23 @@
           ]
         },
         "UnderAttack_Flee": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onRemoved": [
             {
               "$type": "SetPoseBool",
-              "boolID": "StopAtk",
-              "value": false
+              "boolID": "StopAtk"
             }
           ]
         },
         "StopFleeTimer": {
-          "duration": 3.0,
+          "modifierName": "",
+          "DCEFILPANJI": 3.0,
+          "bonusCriticalHurt": 100.0,
           "onRemoved": [
             {
               "$type": "SetPoseBool",
-              "boolID": "StopAtk",
-              "value": false
+              "boolID": "StopAtk"
             }
           ]
         }
@@ -997,14 +951,10 @@
           "modifierName": "AbilityState_Detect"
         }
       ],
-      "onAbilityStart": [
-        {
-          "$type": "RemoveUniqueModifier",
-          "modifierName": "UNIQUE_UnderGround_State"
-        }
-      ],
       "modifiers": {
         "AbilityState_Detect": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onRemoved": [
             {
               "$type": "RemoveUniqueModifier",
@@ -1012,14 +962,15 @@
             }
           ]
         }
-      }
+      },
+      "onAbilityStart": [
+        {
+          "$type": "RemoveUniqueModifier",
+          "modifierName": "UNIQUE_UnderGround_State"
+        }
+      ]
     }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Spread
-  //
-  ////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -1033,84 +984,82 @@
       ],
       "modifiers": {
         "Spread_Loop": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "thinkInterval": 0.5,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Spread",
+              "MEMHGJDEPJA": -1.0
+            },
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Spread_Area",
+              "MEMHGJDEPJA": -1.0
+            }
+          ],
           "onThinkInterval": [
             {
               "$type": "HealHP",
-              "amountByTargetMaxHPRatio": 0.05,
               "otherTargets": {
                 "$type": "SelectTargetsByShape",
                 "shapeName": "CircleR5",
-                "centerBasedOn": "Self",
                 "campTargetType": "Alliance",
-                "campBasedOn": "Self"
+                "sizeRatio": 1.0
               },
               "predicates": [
                 {
                   "$type": "ByEntityTypes",
                   "entityTypes": ["Monster"]
                 }
-              ]
+              ],
+              "amountByCasterMaxHPRatio": 0.05000000074505806
             },
             {
               "$type": "TriggerAttackEvent",
-              "targetType": "Enemy",
               "attackEvent": {
                 "attackPattern": {
                   "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
-                  "height": 2.0,
-                  "fanAngle": 360.0,
-                  "radius": 5.0,
                   "born": {
                     "$type": "ConfigBornBySelf",
                     "offset": {
-                      "x": 0.0,
-                      "y": 0.0,
-                      "z": 0.0
+                      "AMODPKJAIGF": 0.0,
+                      "DBJCBJPOOAP": 0.0,
+                      "JDFJGADACKC": 0.0
                     }
-                  }
+                  },
+                  "height": 2.0,
+                  "ILKJCNJJPEL": 5.0
                 },
                 "attackInfo": {
-                  "canBeModifiedBy": "OriginOwner",
+                  "attackTag": "",
+                  "attenuationTag": "",
+                  "attenuationGroup": "default",
                   "attackProperty": {
-                    "damagePercentage": 0.1,
-                    "strikeType": "Default",
+                    "EHFOGJFHDPE": 0.10000000149011612,
+                    "GDADKLDBGIM": 0.0,
                     "elementType": "Grass",
-                    "elementDurability": 25,
+                    "bonusCriticalHurt": 25.0,
+                    "strikeType": "Default",
                     "enBreak": 0.0
                   },
                   "hitPattern": {
                     "onHitEffectName": "",
                     "hitImpulseType": "LV0",
-                    "reboundRatio": 0,
-                    "hitHaltTime": 0,
-                    "hitHaltTimeScale": 0.01,
-                    "muteHitText": false
-                  }
+                    "hitHaltTimeScale": 0.009999999776482582
+                  },
+                  "canBeModifiedBy": "OriginOwner"
                 }
-              }
-            }
-          ],
-          "onAdded": [
-            {
-              "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Spread"
-            },
-            {
-              "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Spread_Area"
+              },
+              "targetType": "Enemy"
             }
           ]
         }
       }
     }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Seed
-  //
-  ////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -1118,35 +1067,35 @@
       "onAbilityStart": [
         {
           "$type": "TriggerBullet",
+          "predicates": [
+            {
+              "$type": "BySummonTagValue",
+              "logic": "Lesser",
+              "summonTag": 20010101,
+              "ratio": 6
+            }
+          ],
           "bulletID": 42001012,
           "born": {
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "FlowerBud"
-          },
-          "predicates": [
-            {
-              "$type": "BySummonTagValue",
-              "summonTag": 20010101,
-              "value": 6,
-              "logic": "Lesser"
-            }
-          ]
+          }
         },
         {
           "$type": "TriggerBullet",
+          "predicates": [
+            {
+              "$type": "BySummonTagValue",
+              "logic": "GreaterOrEqual",
+              "summonTag": 20010101,
+              "ratio": 6
+            }
+          ],
           "bulletID": 42001013,
           "born": {
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "FlowerBud"
-          },
-          "predicates": [
-            {
-              "$type": "BySummonTagValue",
-              "summonTag": 20010101,
-              "value": 6,
-              "logic": "GreaterOrEqual"
-            }
-          ]
+          }
         }
       ]
     }
@@ -1158,55 +1107,49 @@
       "onAbilityStart": [
         {
           "$type": "Summon",
-          "monsterID": 20010101,
           "target": "Target",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_MONSTERAFFIX_SUMMON_LIFETIME",
+              "ratio": 1.0,
+              "forceByCaster": true
+            }
+          ],
+          "monsterID": 20010101,
           "born": {
             "$type": "ConfigBornByTarget",
+            "onGround": true,
             "direction": {
               "$type": "ConfigDirectionByAttackTarget"
-            },
-            "onGround": true
+            }
           },
           "summonTag": 20010101,
           "aliveByOwner": true,
-          "hasDrop": false,
-          "hasExperience": false,
-          "sightGroupWithOwner": true,
-          "predicates": [
-            {
-              "$type": "ByTargetGlobalValue",
-              "key": "_MONSTERAFFIX_SUMMON_LIFETIME",
-              "value": 1,
-              "compareType": "Equal",
-              "forceByCaster": true
-            }
-          ]
+          "sightGroupWithOwner": true
         },
         {
           "$type": "Summon",
-          "monsterID": 20010101,
           "target": "Target",
-          "born": {
-            "$type": "ConfigBornByTarget",
-            "direction": {
-              "$type": "ConfigDirectionByAttackTarget"
-            },
-            "onGround": true
-          },
-          "summonTag": 20010101,
-          "aliveByOwner": false,
-          "hasDrop": false,
-          "hasExperience": false,
-          "sightGroupWithOwner": true,
           "predicates": [
             {
               "$type": "ByTargetGlobalValue",
               "key": "_MONSTERAFFIX_SUMMON_LIFETIME",
-              "value": 0,
-              "compareType": "NoneOrEqual",
-              "forceByCaster": true
+              "ratio": 0.0,
+              "forceByCaster": true,
+              "compareType": "NoneOrEqual"
             }
-          ]
+          ],
+          "monsterID": 20010101,
+          "born": {
+            "$type": "ConfigBornByTarget",
+            "onGround": true,
+            "direction": {
+              "$type": "ConfigDirectionByAttackTarget"
+            }
+          },
+          "summonTag": 20010101,
+          "sightGroupWithOwner": true
         }
       ]
     }
@@ -1215,11 +1158,29 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Slime_Grass_Seed",
+      "modifiers": {
+        "Seed_Loop": {
+          "modifierName": "",
+          "elementType": "Grass",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Seed_Missile",
+              "MEMHGJDEPJA": -1.0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      },
       "onAdded": [
         {
           "$type": "ApplyModifier",
-          "modifierName": "Seed_Loop",
-          "target": "Self"
+          "modifierName": "Seed_Loop"
         }
       ],
       "onAbilityStart": [
@@ -1230,107 +1191,111 @@
         {
           "$type": "CreateGadget",
           "target": "Owner",
-          "gadgetID": 42001014,
-          "campID": 4001,
-          "campTargetType": "All",
+          "ownerIs": "Other",
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "attachPointName": "RootNode",
-            "attachPointTargetType": "Caster",
+            "onGround": true,
             "direction": {
               "$type": "ConfigDirectionByAttackTarget"
             },
-            "onGround": true,
-            "alongGround": true
+            "alongGround": true,
+            "attachPointName": "RootNode",
+            "attachPointTargetType": "Caster"
           },
-          "ownerIs": "Other"
+          "gadgetID": 42001014,
+          "campID": 4001,
+          "campTargetType": "All"
         },
         {
           "$type": "FireEffect",
-          "effectPattern": "Eff_Monster_Slime_Grass_Seed_Missile_AS",
+          "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Seed_Missile_AS",
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "attachPointName": "RootNode",
-            "attachPointTargetType": "Caster",
+            "onGround": true,
             "direction": {
               "$type": "ConfigDirectionByAttackTarget"
             },
-            "onGround": true,
-            "alongGround": true
-          }
+            "alongGround": true,
+            "attachPointName": "RootNode",
+            "attachPointTargetType": "Caster"
+          },
+          "MEMHGJDEPJA": -1.0
         }
-      ],
-      "modifiers": {
-        "Seed_Loop": {
-          "elementType": "Grass",
-          "elementDurability": 100,
-          "onAdded": [
-            {
-              "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Seed_Missile"
-            }
-          ],
-          "onRemoved": [
-            {
-              "$type": "KillSelf"
-            }
-          ]
-        }
-      }
+      ]
     }
   },
   {
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Slime_Grass_SeedGrow",
-      "onAdded": [
-        {
-          "$type": "ApplyModifier",
-          "modifierName": "SeedGrow_Loop",
-          "target": "Self"
-        }
-      ],
       "modifiers": {
         "SeedGrow_Loop": {
-          "duration": 3.33,
+          "modifierName": "",
+          "DCEFILPANJI": 3.3299999237060547,
           "elementType": "Grass",
-          "elementDurability": 1,
-          "thinkInterval": 3.2,
+          "bonusCriticalHurt": 1.0,
+          "thinkInterval": 3.200000047683716,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Seed_Grow",
+              "MEMHGJDEPJA": -1.0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Seed_Grow_AS",
+              "MEMHGJDEPJA": -1.0
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ],
           "onThinkInterval": [
             {
               "$type": "TriggerAbility",
               "target": "Owner",
               "abilityName": "Slime_Grass_03_Summon"
             }
-          ],
-          "onAdded": [
-            {
-              "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Seed_Grow"
-            }
-          ],
-          "onRemoved": [
-            {
-              "$type": "FireEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Seed_Grow_AS"
-            },
-            {
-              "$type": "KillSelf"
-            }
           ]
         }
-      }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "SeedGrow_Loop"
+        }
+      ]
     }
   },
   {
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Slime_Grass_SeedAtk",
+      "modifiers": {
+        "SeedAtk_Loop": {
+          "modifierName": "",
+          "elementType": "Grass",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Seed_Poison_Missile",
+              "MEMHGJDEPJA": -1.0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      },
       "onAdded": [
         {
           "$type": "ApplyModifier",
-          "modifierName": "SeedAtk_Loop",
-          "target": "Self"
+          "modifierName": "SeedAtk_Loop"
         }
       ],
       "onAbilityStart": [
@@ -1353,72 +1318,46 @@
           "bulletID": 42001015,
           "born": {
             "$type": "ConfigBornByGlobalValue",
-            "positionKey": "_ABILITY_SLIME_GRASS_SEED_POS",
             "offset": {
-              "x": 0.0,
-              "y": 0.5,
-              "z": 0.0
+              "AMODPKJAIGF": 0.0,
+              "DBJCBJPOOAP": 0.5,
+              "JDFJGADACKC": 0.0
             },
             "direction": {
               "$type": "ConfigDirectionByEntity",
-              "randomAngleHor": 360
-            }
+              "randomAngleHor": 360.0
+            },
+            "positionKey": "_ABILITY_SLIME_GRASS_SEED_POS",
+            "directionKey": ""
           },
           "ownerIs": "Other"
         },
         {
           "$type": "FireEffect",
-          "effectPattern": "Eff_Monster_Slime_Grass_Seed_Poison_Missile_AS",
+          "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Seed_Poison_Missile_AS",
           "born": {
             "$type": "ConfigBornByCollisionPoint",
             "onGround": true
-          }
+          },
+          "MEMHGJDEPJA": -1.0
         }
-      ],
-      "modifiers": {
-        "SeedAtk_Loop": {
-          "elementType": "Grass",
-          "elementDurability": 100,
-          "onAdded": [
-            {
-              "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Seed_Poison_Missile"
-            }
-          ],
-          "onRemoved": [
-            {
-              "$type": "KillSelf"
-            }
-          ]
-        }
-      }
+      ]
     }
   },
   {
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Slime_Grass_SeedFloat",
-      "onAdded": [
-        {
-          "$type": "ApplyModifier",
-          "modifierName": "SeedFloat_Loop",
-          "target": "Self"
-        }
-      ],
-      "onAbilityStart": [
-        {
-          "$type": "RemoveModifier",
-          "modifierName": "SeedFloat_Loop"
-        }
-      ],
       "modifiers": {
         "SeedFloat_Loop": {
+          "modifierName": "",
           "elementType": "Grass",
-          "elementDurability": 1,
+          "bonusCriticalHurt": 1.0,
           "onAdded": [
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Seed_Float"
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Seed_Float",
+              "MEMHGJDEPJA": -1.0
             }
           ],
           "onRemoved": [
@@ -1429,17 +1368,17 @@
           "onBeingHit": [
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Seed_Explosion",
               "predicates": [
                 {
                   "$type": "ByHitElement",
                   "element": "Fire"
                 }
-              ]
+              ],
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Seed_Explosion",
+              "MEMHGJDEPJA": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
-              "targetType": "Enemy",
               "predicates": [
                 {
                   "$type": "ByHitElement",
@@ -1450,38 +1389,31 @@
                 "attackPattern": {
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
-                  "radius": 2.0,
                   "born": {
                     "$type": "ConfigBornBySelf"
-                  }
+                  },
+                  "ILKJCNJJPEL": 2.0
                 },
                 "attackInfo": {
-                  "canBeModifiedBy": "OriginOwner",
+                  "attackTag": "",
+                  "attenuationTag": "",
+                  "attenuationGroup": "default",
                   "attackProperty": {
-                    "damagePercentage": 1.0,
+                    "EHFOGJFHDPE": 1.0,
+                    "GDADKLDBGIM": 0.0,
+                    "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
-                    // "elementType": "Grass",
-                    // "elementDurability": 100,
                     "enBreak": 200.0
                   },
                   "hitPattern": {
                     "onHitEffectName": "default",
                     "hitImpulseType": "LV5",
-                    "reboundRatio": 0,
-                    "hitHaltTime": 0,
-                    "hitHaltTimeScale": 0.01,
-                    "muteHitText": false
-                  }
-                  // "forceCameraShake": true,
-                  // "cameraShake":
-                  // {
-                  // 	"shakeType": "Center",
-                  // 	"shakeRange": 0.16,
-                  // 	"shakeTime": 0.12,
-                  // 	"shakeDistance": 35.0,
-                  // },
+                    "hitHaltTimeScale": 0.009999999776482582
+                  },
+                  "canBeModifiedBy": "OriginOwner"
                 }
-              }
+              },
+              "targetType": "Enemy"
             },
             {
               "$type": "KillSelf",
@@ -1503,45 +1435,50 @@
             }
           ]
         }
-      }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "SeedFloat_Loop"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "SeedFloat_Loop"
+        }
+      ]
     }
   },
   {
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Slime_Grass_SeedFloat_Poison",
-      "onAbilityStart": [
-        {
-          "$type": "ApplyModifier",
-          "modifierName": "UNIQUE_Slime_Grass_Seed_Poison",
-          "target": "Target",
-          "predicates": [
-            {
-              "$type": "ByEntityTypes",
-              "entityTypes": ["Avatar"]
-            }
-          ]
-        }
-      ],
       "modifiers": {
         "UNIQUE_Slime_Grass_Seed_Poison": {
+          "modifierName": "",
           "isUnique": true,
-          "stacking": "Refresh",
-          "duration": 5.0,
+          "DCEFILPANJI": 5.0,
           "elementType": "Grass",
-          "elementDurability": 100,
+          "bonusCriticalHurt": 100.0,
           "thinkInterval": 0.5,
-          "onThinkInterval": [
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Grass_Poison_Dot",
+              "MEMHGJDEPJA": -1.0
+            },
             {
               "$type": "DamageByAttackValue",
-              "target": "Self",
               "attackInfo": {
-                "attenuationTag": "Group1",
+                "attackTag": "",
+                "attenuationTag": "",
                 "attenuationGroup": "default",
                 "attackProperty": {
-                  "damagePercentage": 0.1,
+                  "EHFOGJFHDPE": 0.10000000149011612,
+                  "GDADKLDBGIM": 0.0,
                   "elementType": "Grass",
-                  "elementDurability": 25,
+                  "bonusCriticalHurt": 25.0,
                   "strikeType": "Default",
                   "enBreak": 0.0
                 },
@@ -1552,19 +1489,18 @@
               }
             }
           ],
-          "onAdded": [
-            {
-              "$type": "AttachEffect",
-              "effectPattern": "Eff_Monster_Slime_Grass_Poison_Dot"
-            },
+          "onThinkInterval": [
             {
               "$type": "DamageByAttackValue",
-              "target": "Self",
               "attackInfo": {
+                "attackTag": "",
+                "attenuationTag": "Group1",
+                "attenuationGroup": "default",
                 "attackProperty": {
-                  "damagePercentage": 0.1,
+                  "EHFOGJFHDPE": 0.10000000149011612,
+                  "GDADKLDBGIM": 0.0,
                   "elementType": "Grass",
-                  "elementDurability": 25,
+                  "bonusCriticalHurt": 25.0,
                   "strikeType": "Default",
                   "enBreak": 0.0
                 },
@@ -1576,40 +1512,42 @@
             }
           ]
         }
-      }
+      },
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "target": "Target",
+          "predicates": [
+            {
+              "$type": "ByEntityTypes",
+              "entityTypes": ["Avatar"]
+            }
+          ],
+          "modifierName": "UNIQUE_Slime_Grass_Seed_Poison"
+        }
+      ]
     }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  JumpAttack
-  //
-  ////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Slime_Grass_JumpGround_castShadow",
       "onAbilityStart": [
         {
-          "$type": "TriggerSetCastShadow",
-          "castShadow": false,
-          "target": "Self"
+          "$type": "TriggerSetCastShadow"
         },
         {
           "$type": "EnablePushColliderName",
-          "pushColliderNames": ["PushCollider"],
-          "setEnable": false
+          "pushColliderNames": ["PushCollider"]
         },
         {
           "$type": "ActCameraShake",
           "cameraShake": {
             "shakeType": "CustomVector",
-            "shakeRange": 0.06,
-            "shakeTime": 0.15,
-            "shakeDistance": 20.0,
+            "shakeRange": 0.05999999865889549,
+            "shakeTime": 0.15000000596046448,
             "shakeDir": {
-              "x": 0,
-              "y": 1,
-              "z": 0
+              "y": 1.0
             }
           }
         }
@@ -1620,31 +1558,25 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Slime_Grass_JumpGround_Alert",
-      "onAbilityStart": [
-        {
-          "$type": "ApplyModifier",
-          "modifierName": "JumpGround_Alert",
-          "target": "Self"
-        }
-      ],
       "modifiers": {
         "JumpGround_Alert": {
-          "duration": 1.0,
+          "modifierName": "",
+          "DCEFILPANJI": 1.0,
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_Monster_Slime_Fire_JumpGround_Alert",
-              "target": "Self",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Fire_JumpGround_Alert",
               "born": {
                 "$type": "ConfigBornByRushToPoint"
-              }
+              },
+              "MEMHGJDEPJA": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "TriggerSetCastShadow",
-              "castShadow": true,
-              "target": "Self"
+              "castShadow": true
             },
             {
               "$type": "EnablePushColliderName",
@@ -1653,7 +1585,13 @@
             }
           ]
         }
-      }
+      },
+      "onAbilityStart": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "JumpGround_Alert"
+        }
+      ]
     }
   },
   {
@@ -1663,63 +1601,54 @@
       "onAbilityStart": [
         {
           "$type": "TriggerAttackEvent",
-          "targetType": "Enemy",
           "attackEvent": {
             "attackPattern": {
               "$type": "ConfigAttackCircle",
-              "duration": 0.0,
               "triggerType": "TriggerNoRepeat",
-              "height": 1.5,
-              "fanAngle": 360.0,
-              "radius": 2.0,
               "born": {
                 "$type": "ConfigBornBySelf",
                 "offset": {
-                  "x": 0.0,
-                  "y": 0.0,
-                  "z": 0.0
+                  "AMODPKJAIGF": 0.0,
+                  "DBJCBJPOOAP": 0.0,
+                  "JDFJGADACKC": 0.0
                 }
-              }
+              },
+              "height": 1.5,
+              "ILKJCNJJPEL": 2.0
             },
             "attackInfo": {
+              "attackTag": "",
+              "attenuationTag": "",
+              "attenuationGroup": "default",
               "attackProperty": {
-                "damagePercentage": 1.0,
+                "EHFOGJFHDPE": 1.0,
+                "GDADKLDBGIM": 0.0,
+                "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
-                // "elementType": "Grass",
-                // "elementDurability": 100,
                 "enBreak": 200.0
               },
               "hitPattern": {
                 "onHitEffectName": "default",
                 "hitImpulseType": "LV5",
-                "reboundRatio": 0,
-                "hitHaltTime": 0,
-                "hitHaltTimeScale": 0.01,
-                "muteHitText": false
+                "hitHaltTimeScale": 0.009999999776482582
               },
               "forceCameraShake": true,
               "cameraShake": {
                 "shakeType": "CustomVector",
-                "shakeRange": 0.12,
-                "shakeTime": 0.15,
+                "shakeRange": 0.11999999731779099,
+                "shakeTime": 0.15000000596046448,
                 "shakeDistance": 25.0,
                 "shakeDir": {
-                  "x": 0,
-                  "y": -1,
-                  "z": 0
+                  "y": -1.0
                 }
               }
             }
-          }
+          },
+          "targetType": "Enemy"
         }
       ]
     }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  OtherConfig
-  //
-  ////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -1728,11 +1657,10 @@
         {
           "$type": "SteerAttackMixin",
           "steerStateIDs": ["NormalAttack"],
-          "startNormalizedTime": 0.0,
           "endNormalizedTime": 0.25,
-          "angularSpeed": 360,
+          "angularSpeed": 360.0,
           "attackTrigger": "",
-          "attackDistance": 12
+          "attackDistance": 12.0
         }
       ]
     }
@@ -1745,56 +1673,49 @@
         {
           "$type": "SteerAttackMixin",
           "steerStateIDs": ["Turn"],
-          "startNormalizedTime": 0.0,
-          "endNormalizedTime": 0.54,
-          "angularSpeed": 180,
+          "endNormalizedTime": 0.5400000214576721,
+          "angularSpeed": 180.0,
           "attackTrigger": "",
-          "attackDistance": 12
+          "attackDistance": 12.0
         },
         {
           "$type": "SteerAttackMixin",
           "steerStateIDs": ["NormalAttack"],
-          "startNormalizedTime": 0.0,
           "endNormalizedTime": 0.25,
-          "angularSpeed": 360,
+          "angularSpeed": 360.0,
           "attackTrigger": "",
-          "attackDistance": 12
+          "attackDistance": 12.0
         },
         {
           "$type": "SteerAttackMixin",
           "steerStateIDs": ["JumpAttack"],
-          "startNormalizedTime": 0.0,
           "endNormalizedTime": 0.5,
-          "angularSpeed": 120,
+          "angularSpeed": 120.0,
           "attackTrigger": "",
-          "attackDistance": 12
+          "attackDistance": 12.0
         },
         {
           "$type": "SteerAttackMixin",
           "steerStateIDs": ["UnderAttack"],
-          "startNormalizedTime": 0.0,
-          "endNormalizedTime": 0.175,
-          "angularSpeed": 120,
+          "endNormalizedTime": 0.17499999701976776,
+          "angularSpeed": 120.0,
           "attackTrigger": "",
-          "attackDistance": 12
+          "attackDistance": 12.0
         },
         {
           "$type": "SteerAttackMixin",
           "steerStateIDs": ["Sow"],
-          "startNormalizedTime": 0.0,
-          "endNormalizedTime": 0.35,
-          "angularSpeed": 120,
+          "endNormalizedTime": 0.3499999940395355,
+          "angularSpeed": 120.0,
           "attackTrigger": "",
-          "attackDistance": 12
+          "attackDistance": 12.0
         },
         {
           "$type": "SteerAttackMixin",
           "steerStateIDs": ["Spread"],
-          "startNormalizedTime": 0.0,
-          "endNormalizedTime": 1.0,
-          "angularSpeed": 120,
+          "angularSpeed": 120.0,
           "attackTrigger": "",
-          "attackDistance": 12
+          "attackDistance": 12.0
         }
       ]
     }

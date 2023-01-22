@@ -1,15 +1,4 @@
 [
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  // Create By Mazijun
-  //	该文件收纳须弥音乐相关物件
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //	3D转2D物件（2D版)
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -17,7 +6,6 @@
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "HideState"
         },
         {
@@ -28,15 +16,18 @@
       ],
       "modifiers": {
         "HideState": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Root"],
-              "setEnable": false
+              "transformNames": ["Root"]
             }
           ]
         },
         "ActiveState": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "EnableSceneTransformByName",
@@ -48,12 +39,6 @@
       }
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //	须弥地城用 泡泡移动平台 只有碰撞消失的逻辑
-  //   参考 SceneObj_WindFlower_WindFlora_BubblePlatform
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -65,6 +50,46 @@
           "modifierName": "KillBySelf"
         }
       ],
+      "modifiers": {
+        "Bubble": {
+          "modifierName": "",
+          "DCEFILPANJI": 3.0,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_AddGravityScale": -2.0
+          },
+          "state": "Struggle",
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BubbleShoot_01_Bubble",
+              "MEMHGJDEPJA": -1.0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BubbleShoot_01_Bubble_Die",
+              "MEMHGJDEPJA": -1.0
+            }
+          ]
+        },
+        "KillBySelf": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BubbleShoot_01_Bubble_Die",
+              "MEMHGJDEPJA": -1.0
+            },
+            {
+              "$type": "KillSelf",
+              "hideEntity": true
+            }
+          ]
+        }
+      },
       "onFieldEnter": [
         {
           "$type": "Predicated",
@@ -83,53 +108,14 @@
             },
             {
               "$type": "KillSelf",
-              "duration": 1,
+              "duration": 1.0,
               "hideEntity": true
             }
           ]
         }
-      ],
-      "modifiers": {
-        "Bubble": {
-          "duration": 3,
-          "state": "Struggle",
-          "stacking": "Refresh",
-          "properties": {
-            "Actor_AddGravityScale": -2
-          },
-          "onAdded": [
-            {
-              "$type": "AttachEffect",
-              "effectPattern": "Eff_SceneObj_BubbleShoot_01_Bubble"
-            }
-          ],
-          "onRemoved": [
-            {
-              "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_BubbleShoot_01_Bubble_Die"
-            }
-          ]
-        },
-        "KillBySelf": {
-          "onAdded": [
-            {
-              "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_BubbleShoot_01_Bubble_Die"
-            },
-            {
-              "$type": "KillSelf",
-              "hideEntity": true
-            }
-          ]
-        }
-      }
+      ]
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //	地城弹跳蘑菇 普通版
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -137,40 +123,38 @@
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "DefaultState"
-        }
-      ],
-      "onKill": [
-        {
-          "$type": "FireEffect",
-          "effectPattern": "Eff_SceneObj_BouncingMushroom_01_Disappear"
         }
       ],
       "modifiers": {
         "DefaultState": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "modifierMixins": [
             {
               "$type": "SetTrampolineAbilityMixin",
               "abilityName": "Avatar_Trampoline_Jump_Controller",
-              "isExcitedState": false
+              "JKJEPDLKOKN": false
             }
           ],
           "onAdded": [
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_BouncingMushroom_01_Appear"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BouncingMushroom_01_Appear",
+              "MEMHGJDEPJA": -1.0
             }
           ]
         }
-      }
+      },
+      "onKill": [
+        {
+          "$type": "FireEffect",
+          "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BouncingMushroom_01_Disappear",
+          "MEMHGJDEPJA": -1.0
+        }
+      ]
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //	地城弹跳蘑菇 激化版
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -178,30 +162,25 @@
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "DefaultState"
-        }
-      ],
-      "onKill": [
-        {
-          "$type": "FireEffect",
-          "effectPattern": "Eff_SceneObj_BouncingMushroom_01_Disappear"
         }
       ],
       "modifiers": {
         "DefaultState": {
-          "thinkInterval": 2,
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 2.0,
           "modifierMixins": [
             {
               "$type": "SetTrampolineAbilityMixin",
-              "abilityName": "Avatar_Trampoline_Jump_Controller",
-              "isExcitedState": true
+              "abilityName": "Avatar_Trampoline_Jump_Controller"
             }
           ],
           "onAdded": [
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_BouncingMushroom_01_Appear"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BouncingMushroom_01_Appear",
+              "MEMHGJDEPJA": -1.0
             }
           ],
           "onThinkInterval": [
@@ -212,24 +191,25 @@
           ]
         },
         "BreathLight01": {
-          "duration": 1.1,
+          "modifierName": "",
+          "DCEFILPANJI": 1.100000023841858,
+          "bonusCriticalHurt": 100.0,
           "thinkInterval": 1.0,
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
-              "value": 2
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 2.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
-              "value": 6,
               "canBeHandledOnRecover": true,
-              "useCurve": true,
-              "lerpTime": 1,
-              "lerpCurveIndex": 0
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 6.0,
+              "ILMLLMNNBLF": true,
+              "CCDFEINBDKD": 1.0
             }
           ],
           "onThinkInterval": [
@@ -240,34 +220,37 @@
           ]
         },
         "BreathLight02": {
-          "duration": 0.2,
+          "modifierName": "",
+          "DCEFILPANJI": 0.20000000298023224,
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
-              "value": 6
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 6.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
-              "value": 2,
               "canBeHandledOnRecover": true,
-              "useCurve": true,
-              "lerpTime": 1,
-              "lerpCurveIndex": 0
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 2.0,
+              "ILMLLMNNBLF": true,
+              "CCDFEINBDKD": 1.0
             }
           ]
         }
-      }
+      },
+      "onKill": [
+        {
+          "$type": "FireEffect",
+          "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BouncingMushroom_01_Disappear",
+          "MEMHGJDEPJA": -1.0
+        }
+      ]
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 降魔印
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -281,27 +264,22 @@
       ],
       "modifiers": {
         "Dissolve": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
-              //Effect消失
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_DissolveValue",
-              "value": 1,
-              "useCurve": true,
-              "lerpTime": 1.0,
-              "lerpCurveIndex": 0
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_DissolveValue",
+              "ratio": 1.0,
+              "ILMLLMNNBLF": true,
+              "CCDFEINBDKD": 1.0
             }
           ]
         }
       }
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 梦境花消融柱子
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -319,86 +297,84 @@
           "modifierNameSteps": ["DeleteHandle"]
         }
       ],
+      "modifiers": {
+        "Alive": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 0.0,
+              "key": "_IsDelete",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "SetMaterialParamFloatByTransform",
+              "canBeHandledOnRecover": true,
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_DitherAlpha",
+              "ratio": 1.0
+            },
+            {
+              "$type": "EnableSceneTransformByName",
+              "canBeHandledOnRecover": true,
+              "transformNames": ["Collider"],
+              "setEnable": true
+            }
+          ]
+        },
+        "DeleteHandle": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "ChangeGadgetState",
+              "GHDOBECBOEO": 201
+            }
+          ]
+        },
+        "Disappear": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetMaterialParamFloatByTransform",
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_DitherAlpha",
+              "ratio": 0.0,
+              "ILMLLMNNBLF": true,
+              "CCDFEINBDKD": 1.5
+            },
+            {
+              "$type": "EnableSceneTransformByName",
+              "canBeHandledOnRecover": true,
+              "transformNames": ["Collider"]
+            }
+          ]
+        }
+      },
       "onAdded": [
         {
-          //Effect消失
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "Mat",
-          "patternName": "_DitherAlpha",
-          "value": 0,
           "predicates": [
             {
               "$type": "ByTargetGadgetState",
               "gadgetState": 201
             }
-          ]
+          ],
+          "AIJIIDGHCOP": "Mat",
+          "LPIGAPFIBLE": "_DitherAlpha",
+          "ratio": 0.0
         },
         {
-          //删除花需要锁定目标的特殊位置
           "$type": "ChangeTag",
           "isAdd": true,
           "tag": "DeleteHanaTarget"
         }
-      ],
-      "modifiers": {
-        "Alive": {
-          "onAdded": [
-            {
-              "$type": "SetGlobalValue",
-              "key": "_IsDelete",
-              "value": 0
-            },
-            {
-              "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_DitherAlpha",
-              "value": 1,
-              "canBeHandledOnRecover": true
-            },
-            {
-              "$type": "EnableSceneTransformByName",
-              "transformNames": ["Collider"],
-              "setEnable": true,
-              "canBeHandledOnRecover": true
-            }
-          ]
-        },
-        "DeleteHandle": {
-          "onAdded": [
-            {
-              "$type": "ChangeGadgetState",
-              "state": 201
-            }
-          ]
-        },
-        "Disappear": {
-          "onAdded": [
-            {
-              //Effect消失
-              "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_DitherAlpha",
-              "value": 0,
-              "useCurve": true,
-              "lerpTime": 1.5,
-              "lerpCurveIndex": 0
-            },
-            {
-              "$type": "EnableSceneTransformByName",
-              "transformNames": ["Collider"],
-              "setEnable": false,
-              "canBeHandledOnRecover": true
-            }
-          ]
-        }
-      }
+      ]
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 提纳里地城暗门
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -412,51 +388,46 @@
       ],
       "modifiers": {
         "Close": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
-              //Effect消失
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_DitherAlpha",
-              "value": 1,
-              "canBeHandledOnRecover": true
+              "canBeHandledOnRecover": true,
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_DitherAlpha",
+              "ratio": 1.0
             },
             {
               "$type": "EnableSceneTransformByName",
+              "canBeHandledOnRecover": true,
               "transformNames": ["Airwall"],
-              "setEnable": true,
-              "canBeHandledOnRecover": true
+              "setEnable": true
             }
           ]
         },
         "Open": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
-              //Effect消失
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_DitherAlpha",
-              "value": 0,
-              "useCurve": true,
-              "lerpTime": 1.0,
-              "lerpCurveIndex": 0
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_DitherAlpha",
+              "ratio": 0.0,
+              "ILMLLMNNBLF": true,
+              "CCDFEINBDKD": 1.0
             },
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Airwall"],
-              "setEnable": false,
-              "canBeHandledOnRecover": true
+              "canBeHandledOnRecover": true,
+              "transformNames": ["Airwall"]
             }
           ]
         }
       }
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥关卡事件 飞行光团
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -468,6 +439,66 @@
           "modifierName": "StartPlay"
         }
       ],
+      "modifiers": {
+        "StartPlay": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "modifierMixins": [
+            {
+              "$type": "PlatformMoveMixin",
+              "HCLFDAGDNLN": ["State_Moving"],
+              "MHJJBIOJNEG": ["State_Stop"]
+            }
+          ]
+        },
+        "State_Moving": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SendEffectTrigger",
+              "parameter": "Moving",
+              "attachPoint": "",
+              "type": "Bool",
+              "value": 1,
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Flying_Orb"
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "parameter": "State",
+              "attachPoint": "",
+              "type": "Int",
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Flying_Orb"
+            }
+          ]
+        },
+        "State_Stop": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Flying_Orb_Ridicule",
+              "MEMHGJDEPJA": -1.0
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "parameter": "Moving",
+              "attachPoint": "",
+              "type": "Bool",
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Flying_Orb"
+            },
+            {
+              "$type": "SendEffectTrigger",
+              "parameter": "State",
+              "attachPoint": "",
+              "type": "Int",
+              "value": 201,
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Flying_Orb"
+            }
+          ]
+        }
+      },
       "onFieldEnter": [
         {
           "$type": "Predicated",
@@ -475,16 +506,12 @@
           "targetPredicates": [
             {
               "$type": "ByEntityTypes",
-              "target": "Target",
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "ByAvatarIsHost",
-              "target": "Target",
-              "isHost": true
+              "$type": "ByAvatarIsHost"
             },
             {
-              //自身状态是201时启用
               "$type": "ByTargetGadgetState",
               "target": "Self",
               "gadgetState": 201
@@ -493,78 +520,21 @@
           "successActions": [
             {
               "$type": "SendEffectTrigger",
-              "target": "Self",
               "parameter": "State",
+              "attachPoint": "",
               "type": "Int",
               "value": 203,
-              "effectPattern": "Eff_SceneObj_Flying_Orb"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Flying_Orb"
             },
             {
               "$type": "ChangeGadgetState",
-              "state": 202
+              "GHDOBECBOEO": 202
             }
           ]
         }
-      ],
-      "modifiers": {
-        "StartPlay": {
-          "modifierMixins": [
-            {
-              "$type": "PlatformMoveMixin",
-              "moveModifiers": ["State_Moving"],
-              "stopModifiers": ["State_Stop"]
-            }
-          ]
-        },
-        "State_Moving": {
-          "onAdded": [
-            {
-              "$type": "SendEffectTrigger",
-              "parameter": "Moving",
-              "type": "Bool",
-              "value": 1,
-              "effectPattern": "Eff_SceneObj_Flying_Orb"
-            },
-            {
-              "$type": "SendEffectTrigger",
-              "parameter": "State",
-              "type": "Int",
-              "value": 0,
-              "effectPattern": "Eff_SceneObj_Flying_Orb"
-            }
-          ]
-        },
-        "State_Stop": {
-          //
-          "onAdded": [
-            {
-              "$type": "AttachEffect",
-              "effectPattern": "Eff_SceneObj_Flying_Orb_Ridicule"
-            },
-            {
-              "$type": "SendEffectTrigger",
-              "parameter": "Moving",
-              "type": "Bool",
-              "value": 0,
-              "effectPattern": "Eff_SceneObj_Flying_Orb"
-            },
-            {
-              "$type": "SendEffectTrigger",
-              "parameter": "State",
-              "type": "Int",
-              "value": 201,
-              "effectPattern": "Eff_SceneObj_Flying_Orb"
-            }
-          ]
-        }
-      }
+      ]
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 藤蔓机关门(全遮蔽)
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -578,47 +548,46 @@
       ],
       "modifiers": {
         "Close": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "EnableSceneTransformByName",
+              "canBeHandledOnRecover": true,
               "transformNames": ["Airwall"],
-              "setEnable": true,
-              "canBeHandledOnRecover": true
+              "setEnable": true
             },
             {
               "$type": "SendEffectTrigger",
               "parameter": "gadgetState",
+              "attachPoint": "",
               "type": "Int",
-              "value": 0,
-              "effectPattern": "Eff_SceneObj_VineDoor_02_Default_Full"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_VineDoor_02_Default_Full"
             }
           ]
         },
         "Open": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Airwall"],
-              "setEnable": false,
-              "canBeHandledOnRecover": true
+              "canBeHandledOnRecover": true,
+              "transformNames": ["Airwall"]
             },
             {
               "$type": "SendEffectTrigger",
               "parameter": "gadgetState",
+              "attachPoint": "",
               "type": "Int",
               "value": 201,
-              "effectPattern": "Eff_SceneObj_VineDoor_02_Default_Full"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_VineDoor_02_Default_Full"
             }
           ]
         }
       }
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 藤蔓机关门(半遮蔽)
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -632,63 +601,53 @@
       ],
       "modifiers": {
         "Close": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "EnableSceneTransformByName",
+              "canBeHandledOnRecover": true,
               "transformNames": ["Airwall"],
-              "setEnable": true,
-              "canBeHandledOnRecover": true
+              "setEnable": true
             },
             {
               "$type": "SendEffectTrigger",
               "parameter": "gadgetState",
+              "attachPoint": "",
               "type": "Int",
-              "value": 0,
-              "effectPattern": "Eff_SceneObj_VineDoor_02_Default"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_VineDoor_02_Default"
             }
           ]
         },
         "Open": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SendEffectTrigger",
               "parameter": "gadgetState",
+              "attachPoint": "",
               "type": "Int",
               "value": 201,
-              "effectPattern": "Eff_SceneObj_VineDoor_02_Default"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_VineDoor_02_Default"
             },
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Airwall"],
-              "setEnable": false,
-              "canBeHandledOnRecover": true
+              "canBeHandledOnRecover": true,
+              "transformNames": ["Airwall"]
             }
-          ],
-          "onRemoved": []
+          ]
         }
       }
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 花朵房间传送镜头模糊
-  //
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "SceneObj_Level_Xm_Property_Prop_FlowerPortal_01_Ability",
-      "onAdded": [
-        {
-          "$type": "ApplyModifier",
-          "modifierName": "RecoverHandle"
-        }
-      ],
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "Idle"
         },
         {
@@ -698,24 +657,28 @@
         },
         {
           "$type": "FieldEntityCountChangeMixin",
-          "simpleCountGlobaValueKey": "FlowerPortal_AvatarCount",
-          "simpleCountUseLimitRange": true,
-          "forceTriggerWhenChangeAuthority": true,
-          "replaceOnAddedInTick": true,
-          "simpleCountMaxValue": 4,
-          "simpleCountMinValue": 0,
           "campTargetType": "All",
           "targetPredicates": [
             {
               "$type": "ByEntityTypes",
               "entityTypes": ["Avatar"]
             }
-          ]
+          ],
+          "ILKNIEIBNNN": true,
+          "PIMIHPAHHBA": "FlowerPortal_AvatarCount",
+          "IHLHPDBPJLD": true,
+          "JHGJJBNDGBH": 4.0,
+          "KGIEMNIIEHJ": 0.0
         }
       ],
       "modifiers": {
-        "Idle": {},
+        "Idle": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0
+        },
         "StartMove": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "modifierMixins": [
             {
               "$type": "CurLocalAvatarMixinV2",
@@ -724,14 +687,17 @@
           ]
         },
         "RecoverHandle": {
-          "onReconnect": [
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "AAICMPHNIIJ": [
             {
-              "$type": "ChangeGadgetState",
-              "state": 0
+              "$type": "ChangeGadgetState"
             }
           ]
         },
         "FlowerPortal_AvatarState": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "modifierMixins": [
             {
               "$type": "AttachToAnimatorStateIDMixin",
@@ -739,22 +705,20 @@
               "modifierName": "FlowerPortal_StandbyState"
             },
             {
-              //ThinkInterval性能优化
               "$type": "ThinkIntervalMixin",
               "thinkInterval": 1.0,
               "onThinkInterval": [
                 {
                   "$type": "ChangeGadgetState",
                   "target": "Caster",
-                  "state": 0,
                   "predicates": [
                     {
                       "$type": "ByNot",
                       "predicates": [
                         {
                           "$type": "ByHasModifier",
-                          "modifierName": "FlowerPortal_StandbyState",
-                          "target": "Self"
+                          "target": "Self",
+                          "modifierName": "FlowerPortal_StandbyState"
                         }
                       ]
                     }
@@ -765,24 +729,27 @@
           ]
         },
         "FlowerPortal_StandbyState": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "thinkInterval": 1.0,
           "onAdded": [
             {
               "$type": "DungeonFogEffects",
-              "doOffStage": true,
+              "RotationDampTime": true,
               "enable": true,
-              "cameraFogEffectName": "Eff_SceneObj_FlowerPortal_CameraAbsorbIn"
+              "cameraFogEffectName": "Eff_SceneObj_FlowerPortal_CameraAbsorbIn",
+              "playerFogEffectName": ""
             }
           ],
           "onRemoved": [
             {
               "$type": "DungeonFogEffects",
-              "enable": false
+              "cameraFogEffectName": "",
+              "playerFogEffectName": ""
             },
             {
               "$type": "ChangeGadgetState",
-              "target": "Caster",
-              "state": 0
+              "target": "Caster"
             }
           ],
           "onThinkInterval": [
@@ -790,9 +757,9 @@
               "$type": "TurnDirectionToPos",
               "otherTargets": {
                 "$type": "SelectTargetsByTag",
-                "tag": "SceneLook",
+                "topLimit": 1,
                 "sortType": "Nearest",
-                "topLimit": 1
+                "tag": "SceneLook"
               },
               "toPos": {
                 "$type": "ConfigBornByTarget"
@@ -800,14 +767,15 @@
             }
           ]
         }
-      }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "RecoverHandle"
+        }
+      ]
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 植物操作台
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -815,7 +783,6 @@
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "Idle"
         },
         {
@@ -831,58 +798,62 @@
       ],
       "modifiers": {
         "Idle": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_SceneObj_PlantOperator_01_Stay"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantOperator_01_Stay",
+              "MEMHGJDEPJA": -1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Gadget",
-              "patternName": "_EmissionStrength",
-              "value": 2,
-              "canBeHandledOnRecover": true
+              "canBeHandledOnRecover": true,
+              "AIJIIDGHCOP": "Gadget",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 2.0
             }
           ]
         },
         "Active": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_SceneObj_PlantOperator_01_Active"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantOperator_01_Active",
+              "MEMHGJDEPJA": -1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Gadget",
-              "patternName": "_EmissionStrength",
-              "value": 4,
-              "canBeHandledOnRecover": true
+              "canBeHandledOnRecover": true,
+              "AIJIIDGHCOP": "Gadget",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 4.0
             }
           ]
         },
         "Lock": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_SceneObj_PlantOperator_01_Idle"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantOperator_01_Idle",
+              "MEMHGJDEPJA": -1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Gadget",
-              "patternName": "_EmissionStrength",
-              "value": 0,
-              "canBeHandledOnRecover": true
+              "canBeHandledOnRecover": true,
+              "AIJIIDGHCOP": "Gadget",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 0.0
             }
           ]
         }
       }
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 坚果变形平台(花)
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -890,7 +861,6 @@
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "Hide"
         },
         {
@@ -899,12 +869,10 @@
           "modifierName": "Show"
         },
         {
-          //与其交互时
           "$type": "WidgetMpSupportMixin",
-          "succActions": [
+          "JAPKCGELOOO": [
             {
               "$type": "ChangeGadgetState",
-              "state": 0,
               "predicates": [
                 {
                   "$type": "ByTargetGadgetState",
@@ -918,25 +886,28 @@
       ],
       "modifiers": {
         "Hide": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Object"],
-              "setEnable": false
+              "transformNames": ["Object"]
             },
             {
-              "$type": "EnableGadgetInteeMp",
-              "enable": false
+              "$type": "EnableGadgetInteeMp"
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_NutTransformPlatform_Appear"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_NutTransformPlatform_Appear",
+              "MEMHGJDEPJA": -1.0
             }
           ]
         },
         "Show": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "EnableSceneTransformByName",
@@ -951,18 +922,14 @@
           "onRemoved": [
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_NutTransformPlatform_Disappear"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_NutTransformPlatform_Disappear",
+              "MEMHGJDEPJA": -1.0
             }
           ]
         }
       }
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 坚果变形平台(平台)
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -970,7 +937,6 @@
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "Hide"
         },
         {
@@ -981,19 +947,23 @@
       ],
       "modifiers": {
         "Show": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Object"],
-              "setEnable": false
+              "transformNames": ["Object"]
             },
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_NutTransformPlatform_Disappear"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_NutTransformPlatform_Disappear",
+              "MEMHGJDEPJA": -1.0
             }
           ]
         },
         "Hide": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "EnableSceneTransformByName",
@@ -1002,38 +972,21 @@
             },
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_NutTransformPlatform_Appear"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_NutTransformPlatform_Appear",
+              "MEMHGJDEPJA": -1.0
             }
           ]
         }
       }
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 荆棘陷阱
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "SceneObj_Level_Xm_Property_Prop_ThornsTrap_01_Ability",
-      "abilitySpecials": {
-        "ElementLevelCo": 1,
-        "DamageRatio": 0.6
-      },
-      "onAdded": [
-        {
-          "$type": "SetSystemValueToOverrideMap",
-          "doOffStage": true,
-          "key": "ElementLevelCo",
-          "type": "ElementLevelCo"
-        }
-      ],
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "Disactive"
         },
         {
@@ -1042,107 +995,133 @@
           "modifierName": "Active"
         }
       ],
+      "abilitySpecials": {
+        "ElementLevelCo": 1.0,
+        "DamageRatio": 0.6000000238418579
+      },
       "modifiers": {
         "Disactive": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SendEffectTrigger",
               "parameter": "State",
+              "attachPoint": "",
               "type": "Int",
-              "value": 0,
-              "effectPattern": "Eff_SceneObj_ThornsTrap_05"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ThornsTrap_05"
             }
           ]
         },
         "Active": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 0.5,
           "modifierMixins": [
             {
-              //CD监视Mxin
               "$type": "AttachModifierToSelfGlobalValueMixin",
               "globalValueKey": "ThornsTrapRate",
-              "valueSteps": [-0.6, 1.6, 6.1, 7.1], //2.5 + 5
+              "defaultGlobalValueOnCreate": 0.0,
+              "valueSteps": [
+                -0.6000000238418579, 1.600000023841858, 6.099999904632568,
+                7.099999904632568
+              ],
               "modifierNameSteps": ["Ready", "Fire", "Disappear"]
             }
           ],
-          "thinkInterval": 0.5,
           "onAdded": [
             {
               "$type": "SetGlobalValue",
+              "ratio": -1.0,
               "key": "ThornsTrapRate",
-              "value": -1
+              "maxValue": 0.0,
+              "minValue": 0.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AddGlobalValue",
+              "ratio": 0.5,
               "key": "ThornsTrapRate",
-              "value": 0.5
+              "maxValue": 0.0,
+              "minValue": 0.0
             }
           ]
         },
         "Ready": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SendEffectTrigger",
               "parameter": "State",
+              "attachPoint": "",
               "type": "Int",
               "value": 1,
-              "effectPattern": "Eff_SceneObj_ThornsTrap_05"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ThornsTrap_05"
             }
           ]
         },
         "Disappear": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetGlobalValue",
+              "ratio": -1.0,
               "key": "ThornsTrapRate",
-              "value": -1
+              "maxValue": 0.0,
+              "minValue": 0.0
             }
           ]
         },
         "Fire": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "thinkInterval": 0.5,
           "onAdded": [
             {
               "$type": "SendEffectTrigger",
               "parameter": "State",
+              "attachPoint": "",
               "type": "Int",
               "value": 2,
-              "effectPattern": "Eff_SceneObj_ThornsTrap_05"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ThornsTrap_05"
             },
             {
               "$type": "TriggerAttackEvent",
-              "targetType": "AllExceptSelf",
               "attackEvent": {
                 "attackPattern": {
                   "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
-                  "size": {
-                    "x": 2.5,
-                    "y": 2.0,
-                    "z": 5.0
-                  },
                   "born": {
                     "$type": "ConfigBornBySelf",
                     "offset": {
-                      "x": 0.0, // + means up, - means down
-                      "y": 0.0, // + means left, - means right
-                      "z": -2.5 // + means forward, - means backward
+                      "AMODPKJAIGF": 0.0,
+                      "DBJCBJPOOAP": 0.0,
+                      "JDFJGADACKC": -2.5
                     }
+                  },
+                  "size": {
+                    "AMODPKJAIGF": 2.5,
+                    "DBJCBJPOOAP": 2.0,
+                    "JDFJGADACKC": 5.0
                   }
                 },
                 "attackInfo": {
+                  "attackTag": "",
                   "attenuationTag": "ExtraAttack",
                   "attenuationGroup": "SceneObj_ThunderFloor",
                   "attackProperty": {
-                    "damagePercentage": 0,
-                    "damageExtra": "%ElementLevelCo*%DamageRatio",
-                    "strikeType": "Default",
-                    "attackType": "Range",
-                    "enBreak": 0.0,
+                    "EHFOGJFHDPE": 0.0,
+                    "GDADKLDBGIM": 0.0,
                     "elementType": "Grass",
-                    "elementDurability": 25,
+                    "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
+                    "strikeType": "Default",
+                    "enBreak": 0.0,
+                    "attackType": "Range",
+                    "damageExtra": ["ElementLevelCo", "DamageRatio", "MUL"],
                     "trueDamage": true
                   },
                   "hitPattern": {
@@ -1150,43 +1129,45 @@
                     "hitImpulseType": "LV3"
                   }
                 }
-              }
+              },
+              "targetType": "AllExceptSelf"
             }
           ],
           "onThinkInterval": [
             {
               "$type": "TriggerAttackEvent",
-              "targetType": "AllExceptSelf",
               "attackEvent": {
                 "attackPattern": {
                   "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
-                  "size": {
-                    "x": 2.5,
-                    "y": 2.0,
-                    "z": 5.0
-                  },
                   "born": {
                     "$type": "ConfigBornBySelf",
                     "offset": {
-                      "x": 0.0, // + means up, - means down
-                      "y": 0.0, // + means left, - means right
-                      "z": -2.5 // + means forward, - means backward
+                      "AMODPKJAIGF": 0.0,
+                      "DBJCBJPOOAP": 0.0,
+                      "JDFJGADACKC": -2.5
                     }
+                  },
+                  "size": {
+                    "AMODPKJAIGF": 2.5,
+                    "DBJCBJPOOAP": 2.0,
+                    "JDFJGADACKC": 5.0
                   }
                 },
                 "attackInfo": {
+                  "attackTag": "",
                   "attenuationTag": "ExtraAttack",
                   "attenuationGroup": "SceneObj_ThunderFloor",
                   "attackProperty": {
-                    "damagePercentage": 0,
-                    "damageExtra": "%ElementLevelCo*%DamageRatio",
-                    "strikeType": "Default",
-                    "attackType": "Range",
-                    "enBreak": 0.0,
+                    "EHFOGJFHDPE": 0.0,
+                    "GDADKLDBGIM": 0.0,
                     "elementType": "Grass",
-                    "elementDurability": 25,
+                    "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
+                    "strikeType": "Default",
+                    "enBreak": 0.0,
+                    "attackType": "Range",
+                    "damageExtra": ["ElementLevelCo", "DamageRatio", "MUL"],
                     "trueDamage": true
                   },
                   "hitPattern": {
@@ -1194,18 +1175,22 @@
                     "hitImpulseType": "LV3"
                   }
                 }
-              }
+              },
+              "targetType": "AllExceptSelf"
             }
           ]
         }
-      }
+      },
+      "onAdded": [
+        {
+          "$type": "SetSystemValueToOverrideMap",
+          "RotationDampTime": true,
+          "key": "ElementLevelCo",
+          "type": "ElementLevelCo"
+        }
+      ]
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 植物封印保护罩01
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -1213,7 +1198,6 @@
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "Show"
         },
         {
@@ -1222,7 +1206,6 @@
           "modifierName": "Hide"
         },
         {
-          //有球时增加
           "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
           "globalValueKey": "HasBall",
           "valueSteps": [0.5, 1.5],
@@ -1231,19 +1214,26 @@
       ],
       "modifiers": {
         "Ball_Show": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_SceneObj_PlantSeal_01"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_01",
+              "MEMHGJDEPJA": -1.0
             }
           ]
         },
         "Show": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetGlobalValue",
+              "ratio": 1.0,
               "key": "HasBall",
-              "value": 1
+              "maxValue": 0.0,
+              "minValue": 0.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -1253,31 +1243,30 @@
           ]
         },
         "Hide": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetGlobalValue",
+              "ratio": 0.0,
               "key": "HasBall",
-              "value": 0
+              "maxValue": 0.0,
+              "minValue": 0.0
             },
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_PlantSeal_01_Disappear"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_01_Disappear",
+              "MEMHGJDEPJA": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Collider"],
-              "setEnable": false
+              "transformNames": ["Collider"]
             }
           ]
         }
       }
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 植物封印保护罩02
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -1285,7 +1274,6 @@
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "Show"
         },
         {
@@ -1294,7 +1282,6 @@
           "modifierName": "Hide"
         },
         {
-          //有球时增加
           "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
           "globalValueKey": "HasBall",
           "valueSteps": [0.5, 1.5],
@@ -1303,19 +1290,26 @@
       ],
       "modifiers": {
         "Ball_Show": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_SceneObj_PlantSeal_02"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_02",
+              "MEMHGJDEPJA": -1.0
             }
           ]
         },
         "Show": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetGlobalValue",
+              "ratio": 1.0,
               "key": "HasBall",
-              "value": 1
+              "maxValue": 0.0,
+              "minValue": 0.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -1325,31 +1319,30 @@
           ]
         },
         "Hide": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetGlobalValue",
+              "ratio": 0.0,
               "key": "HasBall",
-              "value": 0
+              "maxValue": 0.0,
+              "minValue": 0.0
             },
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_PlantSeal_02_Disappear"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_02_Disappear",
+              "MEMHGJDEPJA": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Collider"],
-              "setEnable": false
+              "transformNames": ["Collider"]
             }
           ]
         }
       }
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 植物封印保护罩03
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -1357,7 +1350,6 @@
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "Show"
         },
         {
@@ -1366,7 +1358,6 @@
           "modifierName": "Hide"
         },
         {
-          //有球时增加
           "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
           "globalValueKey": "HasBall",
           "valueSteps": [0.5, 1.5],
@@ -1375,19 +1366,26 @@
       ],
       "modifiers": {
         "Ball_Show": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_SceneObj_PlantSeal_03"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_03",
+              "MEMHGJDEPJA": -1.0
             }
           ]
         },
         "Show": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetGlobalValue",
+              "ratio": 1.0,
               "key": "HasBall",
-              "value": 1
+              "maxValue": 0.0,
+              "minValue": 0.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -1397,35 +1395,45 @@
           ]
         },
         "Hide": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetGlobalValue",
+              "ratio": 0.0,
               "key": "HasBall",
-              "value": 0
+              "maxValue": 0.0,
+              "minValue": 0.0
             },
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_PlantSeal_03_Disappear"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_03_Disappear",
+              "MEMHGJDEPJA": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Collider"],
-              "setEnable": false
+              "transformNames": ["Collider"]
             }
           ]
         }
       }
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 可破坏藤蔓
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "SceneObj_Level_Xm_Property_Ani_Prop_DestructibleVine_01_Ability",
+      "modifiers": {
+        "DestroyOnBeHit": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onBeingHit": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        }
+      },
       "onAdded": [
         {
           "$type": "ApplyModifier",
@@ -1435,39 +1443,19 @@
       "onKill": [
         {
           "$type": "FireEffect",
-          "effectPattern": "Eff_SceneObj_DestructibleVine_01"
+          "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DestructibleVine_01",
+          "MEMHGJDEPJA": -1.0
         }
-      ],
-      "modifiers": {
-        "DestroyOnBeHit": {
-          "onBeingHit": [
-            {
-              "$type": "KillSelf"
-            }
-          ]
-        }
-      }
+      ]
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 碎裂路面
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "SceneObj_Level_Xm_Property_Ani_Prop_DestructiblePavement_01_Ability",
-      "onAbilityStart": [
-        {
-          "$type": "ChangeGadgetState",
-          "state": 201
-        }
-      ],
       "abilityMixins": [
         {
           "$type": "AttachToGadgetStateMixin",
-          "gadgetState": 0,
           "modifierName": "ShowFloor"
         },
         {
@@ -1478,6 +1466,8 @@
       ],
       "modifiers": {
         "ShowFloor": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "EnableSceneTransformByName",
@@ -1492,31 +1482,33 @@
           ]
         },
         "DestroyFloor": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "FireEffect",
-              "effectPattern": "Eff_SceneObj_DestructiblePavement_01"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DestructiblePavement_01",
+              "MEMHGJDEPJA": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Floor"],
-              "setEnable": false
+              "transformNames": ["Floor"]
             },
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Collider"],
-              "setEnable": false
+              "transformNames": ["Collider"]
             }
           ]
         }
-      }
+      },
+      "onAbilityStart": [
+        {
+          "$type": "ChangeGadgetState",
+          "GHDOBECBOEO": 201
+        }
+      ]
     }
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  须弥地城 植物移动平台
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   {
     "Default": {
       "$type": "ConfigAbility",
@@ -1530,11 +1522,22 @@
       ],
       "modifiers": {
         "Moving": {
-          "thinkInterval": 3,
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 3.0,
           "onAdded": [
             {
               "$type": "AttachEffect",
-              "effectPattern": "Eff_SceneObj_PlantMovingPlatform_Move"
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantMovingPlatform_Move",
+              "MEMHGJDEPJA": -1.0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetMaterialParamFloatByTransform",
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 1.0
             }
           ],
           "onThinkInterval": [
@@ -1542,35 +1545,28 @@
               "$type": "AttachModifier",
               "modifierName": "BreathLight01"
             }
-          ],
-          "onRemoved": [
-            {
-              "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
-              "value": 1
-            }
           ]
         },
         "BreathLight01": {
-          "duration": 1.6,
+          "modifierName": "",
+          "DCEFILPANJI": 1.600000023841858,
+          "bonusCriticalHurt": 100.0,
           "thinkInterval": 1.5,
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
-              "value": 1
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
-              "value": 3.5,
               "canBeHandledOnRecover": true,
-              "useCurve": true,
-              "lerpTime": 1.5,
-              "lerpCurveIndex": 0
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 3.5,
+              "ILMLLMNNBLF": true,
+              "CCDFEINBDKD": 1.5
             }
           ],
           "onThinkInterval": [
@@ -1581,87 +1577,53 @@
           ]
         },
         "BreathLight02": {
-          "duration": 0.2,
+          "modifierName": "",
+          "DCEFILPANJI": 0.20000000298023224,
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
-              "value": 3.5
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 3.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
-              "value": 1,
               "canBeHandledOnRecover": true,
-              "useCurve": true,
-              "lerpTime": 1.5,
-              "lerpCurveIndex": 0
+              "AIJIIDGHCOP": "Mat",
+              "LPIGAPFIBLE": "_EmissionStrength",
+              "ratio": 1.0,
+              "ILMLLMNNBLF": true,
+              "CCDFEINBDKD": 1.5
             }
           ]
         },
         "Alive": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "modifierMixins": [
             {
               "$type": "PlatformMoveMixin",
-              "moveModifiers": ["Moving"]
+              "HCLFDAGDNLN": ["Moving"]
             }
           ],
           "onAdded": [
-            /*义飞商议去掉dither
-						{
-							"$type": "SetMaterialParamFloatByTransform",
-							"matName":"Mat",
-							"patternName": "_DitherAlpha",
-							"value": 0,
-							"canBeHandledOnRecover": true,
-						},
-						{
-							"$type": "SetMaterialParamFloatByTransform",
-							"matName":"Mat",
-							"patternName": "_DitherAlpha",
-							"value": 1,
-							"canBeHandledOnRecover": true,
-							"useCurve": true,
-							"lerpTime":1.5,
-							"lerpCurveIndex": 0,
-						},
-						*/
             {
               "$type": "EnableSceneTransformByName",
+              "canBeHandledOnRecover": true,
               "transformNames": ["Collider"],
-              "setEnable": true,
-              "canBeHandledOnRecover": true
+              "setEnable": true
             }
           ]
         },
         "Disappear": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
           "onAdded": [
-            /*义飞商议去掉dither
-						{
-							"$type": "SetMaterialParamFloatByTransform",
-							"matName":"Mat",
-							"patternName": "_DitherAlpha",
-							"value": 1,
-							"canBeHandledOnRecover": true,
-						},
-						{
-							"$type": "SetMaterialParamFloatByTransform",
-							"matName":"Mat",
-							"patternName": "_DitherAlpha",
-							"value": 0,
-							"canBeHandledOnRecover": true,
-							"useCurve": true,
-							"lerpTime":1.5,
-							"lerpCurveIndex": 0,
-						},
-						*/
             {
               "$type": "EnableSceneTransformByName",
-              "transformNames": ["Collider"],
-              "setEnable": false,
-              "canBeHandledOnRecover": true
+              "canBeHandledOnRecover": true,
+              "transformNames": ["Collider"]
             }
           ]
         }
