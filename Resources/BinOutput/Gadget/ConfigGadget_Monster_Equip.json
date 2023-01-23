@@ -1,5 +1,4 @@
 {
-  //
   "MonEquip_WoodenClub_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -10,59 +9,60 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "AttachGrassSelf",
-        "abilityName": "Monster_Weapon_Grass_30"
+        "abilityName": "Monster_Weapon_Grass_30",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_WoodenClub_01_SetGlobalValue",
-        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue"
+        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_WoodenClub_02": {
     "$type": "ConfigGadget",
     "common": {
@@ -73,19 +73,11 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -93,35 +85,44 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "AttachGrassSelf",
-        "abilityName": "Monster_Weapon_Grass_30"
+        "abilityName": "Monster_Weapon_Grass_30",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_RockClub_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -132,49 +133,50 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_WoodenClub_01_SetGlobalValue",
-        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue"
+        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Shield_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -185,34 +187,9 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    "billboard": {
-      "$type": "ConfigCombatBillboard",
-      "offset": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "radiusOffset": 0.25,
-      "enableSelfAdapt": false,
-      "showDistance": 0,
-      "showHPBar": true,
-      "size": "Small",
-      "shieldBarOnly": true
-    },
-    //战斗参数
     "combat": {
       "property": {
-        "useCreatorProperty": true,
-        //"HP" : 50,
-        //"attack" : 10,
-        //"defense" : 10,
-        "weight": 10,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
-        "isInvincible": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "useCreatorProperty": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -220,81 +197,75 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SmallShield"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Defend",
-        "abilityName": "Monster_Weapon_ShieldDefendAttack"
+        "abilityName": "Monster_Weapon_ShieldDefendAttack",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Shield_01_SetGlobalValue",
-        "abilityName": "MonEquip_Shield_01_SetGlobalValue"
+        "abilityName": "MonEquip_Shield_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SmallShield"
+    },
+    "billboard": {
+      "$type": "ConfigCombatBillboard",
+      "attachPoint": "BillboardAttach",
+      "radiusOffset": 0.25,
+      "showDistance": 0.0,
+      "showHPBar": true,
+      "size": "Small",
+      "shieldBarOnly": true
+    }
   },
-
   "MonEquip_Shield_02": {
     "$type": "ConfigGadget",
     "common": {
-      "viewSize": 2,
       "effectAttachShape": {
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "viewSize": 2.0,
       "affectedByWorld": true,
       "checkInSurface": true
     },
     "dither": {
       "showDitherDuration": 2.0
     },
-    "billboard": {
-      "$type": "ConfigCombatBillboard",
-      "offset": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "radiusOffset": 1.0,
-      "enableSelfAdapt": false,
-      "showDistance": 24,
-      "showHPBar": true,
-      "size": "Normal",
-      "shieldBarOnly": true
-    },
-    //战斗参数
     "combat": {
       "property": {
-        "useCreatorProperty": true,
-        // "HP" : 1,
-        // "attack" : 10,
-        // "defense" : 10,
-        "weight": 10,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
-        "isLockHP": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "useCreatorProperty": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -302,80 +273,75 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SmallShield"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Defend",
-        "abilityName": "Brute_Shield_Defend"
+        "abilityName": "Brute_Shield_Defend",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Shield_02_SetGlobalValue",
-        "abilityName": "MonEquip_Shield_02_SetGlobalValue"
+        "abilityName": "MonEquip_Shield_02_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SmallShield"
+    },
+    "billboard": {
+      "$type": "ConfigCombatBillboard",
+      "attachPoint": "BillboardAttach",
+      "radiusOffset": 1.0,
+      "showHPBar": true,
+      "shieldBarOnly": true
+    }
   },
   "MonEquip_Core_Ice": {
     "$type": "ConfigGadget",
     "common": {
-      "viewSize": 2,
       "effectAttachShape": {
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "viewSize": 2.0,
       "affectedByWorld": true,
       "checkInSurface": true
     },
     "dither": {
       "showDitherDuration": 2.0
     },
-    "billboard": {
-      "$type": "ConfigCombatBillboard",
-      "offset": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "radiusOffset": 1.0,
-      "enableSelfAdapt": false,
-      "showDistance": 24,
-      "showHPBar": true,
-      "size": "Normal",
-      "shieldBarOnly": true
-    },
-    //战斗参数
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 10,
-        "attack": 10,
-        "defense": 10,
-        "weight": 10,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
-        "isLockHP": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "attack": 10.0,
+        "defense": 10.0
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -383,27 +349,44 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SmallShield"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Ice_Core_BornAndDie",
-        "abilityName": "Brute_Ice_Core"
+        "abilityName": "Brute_Ice_Core",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SmallShield"
+    },
+    "billboard": {
+      "$type": "ConfigCombatBillboard",
+      "attachPoint": "BillboardAttach",
+      "radiusOffset": 1.0,
+      "showHPBar": true,
+      "shieldBarOnly": true
+    }
   },
   "MonEquip_Shield_01_Rock": {
     "$type": "ConfigGadget",
@@ -415,34 +398,9 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    "billboard": {
-      "$type": "ConfigCombatBillboard",
-      "offset": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "radiusOffset": 0.25,
-      "enableSelfAdapt": false,
-      "showDistance": 0,
-      "showHPBar": true,
-      "size": "Small",
-      "shieldBarOnly": true
-    },
-    //战斗参数
     "combat": {
       "property": {
-        "useCreatorProperty": true,
-        //"HP" : 50,
-        //"attack" : 10,
-        //"defense" : 10,
-        "weight": 10,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
-        "isInvincible": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "useCreatorProperty": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -450,81 +408,75 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SmallShield"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Defend",
-        "abilityName": "Monster_Weapon_RockShield_DefendAttack"
+        "abilityName": "Monster_Weapon_RockShield_DefendAttack",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Shield_01_SetGlobalValue",
-        "abilityName": "MonEquip_Shield_01_SetGlobalValue"
+        "abilityName": "MonEquip_Shield_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SmallShield"
+    },
+    "billboard": {
+      "$type": "ConfigCombatBillboard",
+      "attachPoint": "BillboardAttach",
+      "radiusOffset": 0.25,
+      "showDistance": 0.0,
+      "showHPBar": true,
+      "size": "Small",
+      "shieldBarOnly": true
+    }
   },
-
   "MonEquip_Shield_02_Rock": {
     "$type": "ConfigGadget",
     "common": {
-      "viewSize": 2,
       "effectAttachShape": {
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "viewSize": 2.0,
       "affectedByWorld": true,
       "checkInSurface": true
     },
     "dither": {
       "showDitherDuration": 2.0
     },
-    "billboard": {
-      "$type": "ConfigCombatBillboard",
-      "offset": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "radiusOffset": 1.0,
-      "enableSelfAdapt": false,
-      "showDistance": 24,
-      "showHPBar": true,
-      "size": "Normal",
-      "shieldBarOnly": true
-    },
-    //战斗参数
     "combat": {
       "property": {
-        "useCreatorProperty": true,
-        // "HP" : 1,
-        // "attack" : 10,
-        // "defense" : 10,
-        "weight": 10,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
-        "isLockHP": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "useCreatorProperty": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -532,43 +484,56 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SmallShield"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Defend",
-        "abilityName": "Brute_Shield_Defend_Rock"
+        "abilityName": "Brute_Shield_Defend_Rock",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Shield_02_SetGlobalValue",
-        "abilityName": "MonEquip_Shield_02_SetGlobalValue"
+        "abilityName": "MonEquip_Shield_02_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SmallShield"
+    },
+    "billboard": {
+      "$type": "ConfigCombatBillboard",
+      "attachPoint": "BillboardAttach",
+      "radiusOffset": 1.0,
+      "showHPBar": true,
+      "shieldBarOnly": true
+    }
   },
-  ////////////////////////////////////////////////////////////////////
-  ///
-  ///	冰盾
-  ///
-  ////////////////////////////////////////////////////////////////////
   "MonEquip_Shield_01_Ice": {
     "$type": "ConfigGadget",
     "common": {
@@ -579,34 +544,9 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    "billboard": {
-      "$type": "ConfigCombatBillboard",
-      "offset": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "radiusOffset": 0.25,
-      "enableSelfAdapt": false,
-      "showDistance": 0,
-      "showHPBar": true,
-      "size": "Small",
-      "shieldBarOnly": true
-    },
-    //战斗参数
     "combat": {
       "property": {
-        "useCreatorProperty": true,
-        //"HP" : 50,
-        //"attack" : 10,
-        //"defense" : 10,
-        "weight": 10,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
-        "isInvincible": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "useCreatorProperty": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -614,80 +554,75 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SmallShield"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Defend",
-        "abilityName": "Monster_Weapon_IceShield_DefendAttack"
+        "abilityName": "Monster_Weapon_IceShield_DefendAttack",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Shield_01_SetGlobalValue",
-        "abilityName": "MonEquip_Shield_01_SetGlobalValue"
+        "abilityName": "MonEquip_Shield_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SmallShield"
+    },
+    "billboard": {
+      "$type": "ConfigCombatBillboard",
+      "attachPoint": "BillboardAttach",
+      "radiusOffset": 0.25,
+      "showDistance": 0.0,
+      "showHPBar": true,
+      "size": "Small",
+      "shieldBarOnly": true
+    }
   },
   "MonEquip_Shield_02_Ice": {
     "$type": "ConfigGadget",
     "common": {
-      "viewSize": 2,
       "effectAttachShape": {
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "viewSize": 2.0,
       "affectedByWorld": true,
       "checkInSurface": true
     },
     "dither": {
       "showDitherDuration": 2.0
     },
-    "billboard": {
-      "$type": "ConfigCombatBillboard",
-      "offset": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "radiusOffset": 1.0,
-      "enableSelfAdapt": false,
-      "showDistance": 24,
-      "showHPBar": true,
-      "size": "Normal",
-      "shieldBarOnly": true
-    },
-    //战斗参数
     "combat": {
       "property": {
-        "useCreatorProperty": true,
-        // "HP" : 1,
-        // "attack" : 10,
-        // "defense" : 10,
-        "weight": 10,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
-        "isLockHP": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "useCreatorProperty": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -695,45 +630,65 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SmallShield"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Defend",
-        "abilityName": "Brute_Shield_Defend_Ice"
+        "abilityName": "Brute_Shield_Defend_Ice",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Shield_02_SetGlobalValue",
-        "abilityName": "MonEquip_Shield_02_SetGlobalValue"
+        "abilityName": "MonEquip_Shield_02_SetGlobalValue",
+        "abilityOverride": ""
       },
       {
         "abilityID": "IceEffect",
-        "abilityName": "Monster_Equip_IceShield_02_Effect"
+        "abilityName": "Monster_Equip_IceShield_02_Effect",
+        "abilityOverride": ""
       },
       {
         "abilityID": "IceShieldRecover",
-        "abilityName": "Monster_Equip_Shield_Ice_Recover"
+        "abilityName": "Monster_Equip_Shield_Ice_Recover",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SmallShield"
+    },
+    "billboard": {
+      "$type": "ConfigCombatBillboard",
+      "attachPoint": "BillboardAttach",
+      "radiusOffset": 1.0,
+      "showHPBar": true,
+      "shieldBarOnly": true
+    }
   },
   "MonEquip_IceClub_01": {
     "$type": "ConfigGadget",
@@ -745,47 +700,49 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_WoodenClub_01_SetGlobalValue",
-        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue"
+        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
   "MonEquip_WoodenClub_Fire_01": {
     "$type": "ConfigGadget",
@@ -797,19 +754,11 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -817,25 +766,33 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Spear"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Spear"
+    }
   },
-
   "MonEquip_Crossbow_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -846,19 +803,11 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -866,29 +815,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "CrossBow"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Crossbow_01_SetGlobalValue",
-        "abilityName": "MonEquip_Crossbow_01_SetGlobalValue"
+        "abilityName": "MonEquip_Crossbow_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "CrossBow"
+    }
   },
-
   "MonEquip_Crossbow_Fire_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -899,19 +857,11 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -919,29 +869,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "CrossBow"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Crossbow_01_SetGlobalValue",
-        "abilityName": "MonEquip_Crossbow_01_SetGlobalValue"
+        "abilityName": "MonEquip_Crossbow_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "CrossBow"
+    }
   },
-
   "MonEquip_Crossbow_Ice_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -952,19 +911,11 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -972,29 +923,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "CrossBow"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Crossbow_01_SetGlobalValue",
-        "abilityName": "MonEquip_Crossbow_01_SetGlobalValue"
+        "abilityName": "MonEquip_Crossbow_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "CrossBow"
+    }
   },
-
   "MonEquip_Crossbow_Thunder_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1005,19 +965,11 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1025,30 +977,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "CrossBow"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Crossbow_01_SetGlobalValue",
-        "abilityName": "MonEquip_Crossbow_01_SetGlobalValue"
+        "abilityName": "MonEquip_Crossbow_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "CrossBow"
+    }
   },
-
-  //深渊巫师法杖
   "MonEquip_Staff_Fire_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1059,19 +1019,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1079,30 +1032,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Catalyst"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "WeaponInit",
-        "abilityName": "Monster_Staff_Fire_WeaponInit"
+        "abilityName": "Monster_Staff_Fire_WeaponInit",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Catalyst"
+    }
   },
-
-  //深渊巫师法杖
   "MonEquip_Staff_Ice_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1113,19 +1074,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1133,30 +1087,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Catalyst"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "WeaponInit",
-        "abilityName": "Monster_Staff_Ice_WeaponInit"
+        "abilityName": "Monster_Staff_Ice_WeaponInit",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Catalyst"
+    }
   },
-
-  //深渊巫师法杖
   "MonEquip_Staff_Water_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1167,19 +1129,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1187,30 +1142,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Catalyst"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "WeaponInit",
-        "abilityName": "Monster_Staff_Water_WeaponInit"
+        "abilityName": "Monster_Staff_Water_WeaponInit",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Catalyst"
+    }
   },
-
-  //暴徒巨斧
   "MonEquip_Axe_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1224,57 +1187,55 @@
     "dither": {
       "showDitherDuration": 2.0
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
+        "HP": 10.0,
         "isLockHP": true,
-        "isGhostToEnemy": false,
-        "isInvincible": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Spear"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Axe_01_SetGlobalValue",
-        "abilityName": "MonEquip_Axe_01_SetGlobalValue"
+        "abilityName": "MonEquip_Axe_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Spear"
+    }
   },
-
-  //暴徒雷斧：关闭被锁定和被攻击
   "MonEquip_Axe_Electric_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1288,57 +1249,55 @@
     "dither": {
       "showDitherDuration": 2.0
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
+        "HP": 10.0,
         "isLockHP": true,
-        "isGhostToEnemy": false,
-        "isInvincible": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Spear"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Axe_01_SetGlobalValue",
-        "abilityName": "MonEquip_Axe_01_SetGlobalValue"
+        "abilityName": "MonEquip_Axe_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Spear"
+    }
   },
-
-  //水萨满法杖
   "MonEquip_Wand_Water_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1349,19 +1308,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1369,29 +1321,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Catalyst"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Shaman_Water_WeaponInit",
-        "abilityName": "Monster_Shaman_Water_WeaponInit"
+        "abilityName": "Monster_Shaman_Water_WeaponInit",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Catalyst"
+    }
   },
-  //草萨满法杖
   "MonEquip_Wand_Grass_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1402,19 +1363,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1422,29 +1376,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Catalyst"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Shaman_Grass_WeaponInit",
-        "abilityName": "Monster_Shaman_Grass_WeaponInit"
+        "abilityName": "Monster_Shaman_Grass_WeaponInit",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Catalyst"
+    }
   },
-  //风萨满法杖
   "MonEquip_Wand_Wind_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1455,19 +1418,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1475,29 +1431,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Catalyst"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Shaman_Wind_WeaponInit",
-        "abilityName": "Monster_Shaman_Wind_WeaponInit"
+        "abilityName": "Monster_Shaman_Wind_WeaponInit",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Catalyst"
+    }
   },
-  //岩萨满法杖
   "MonEquip_Wand_Rock_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1508,19 +1473,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1528,25 +1486,33 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Catalyst"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Catalyst"
+    }
   },
-  //Shaman Ice Wand
   "MonEquip_Wand_Ice_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1557,19 +1523,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1577,29 +1536,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Catalyst"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Shaman_Ice_WeaponEffect",
-        "abilityName": "Monster_Shaman_Ice_WeaponEffect"
+        "abilityName": "Monster_Shaman_Ice_WeaponEffect",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Catalyst"
+    }
   },
-  // 雷萨满法杖
   "MonEquip_Wand_Electric_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1610,19 +1578,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1630,27 +1591,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Catalyst"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Shaman_Electric_WeaponInit",
-        "abilityName": "Monster_Shaman_Electric_WeaponInit"
+        "abilityName": "Monster_Shaman_Electric_WeaponInit",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Catalyst"
+    }
   },
   "MonEquip_Torch_01": {
     "$type": "ConfigGadget",
@@ -1662,20 +1633,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isLockHP": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1683,33 +1646,43 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "MonEquip_Torch_FireState",
-        "abilityName": "MonEquip_Torch_FireState"
+        "abilityName": "MonEquip_Torch_FireState",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_WoodenClub_01_SetGlobalValue",
-        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue"
+        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Torch_02": {
     "$type": "ConfigGadget",
     "common": {
@@ -1720,20 +1693,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isLockHP": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1741,33 +1706,43 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "MonEquip_Torch_FireState",
-        "abilityName": "MonEquip_Torch_FireState"
+        "abilityName": "MonEquip_Torch_FireState",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Torch_02_SetGlobalValue",
-        "abilityName": "MonEquip_Torch_02_SetGlobalValue"
+        "abilityName": "MonEquip_Torch_02_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_WoodenClub_Grass_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1778,19 +1753,11 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1798,29 +1765,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "MonEquip_WoodenClub_Grass_SetGlobalValue",
-        "abilityName": "MonEquip_WoodenClub_Grass_SetGlobalValue"
+        "abilityName": "MonEquip_WoodenClub_Grass_SetGlobalValue",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-  //
   "Gadget_WoodenClub_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1831,44 +1807,43 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
         "isLockHP": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Weapon_Gadget_Disappear",
-        "abilityName": "Monster_Weapon_Gadget_Disappear"
+        "abilityName": "Monster_Weapon_Gadget_Disappear",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Weapon_BeingHitDetect",
-        "abilityName": "Monster_Weapon_BeingHitDetect"
+        "abilityName": "Monster_Weapon_BeingHitDetect",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "Gadget_Shield_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -1879,42 +1854,42 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SmallShield"
-    },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
         "isLockHP": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Weapon_Gadget_Disappear",
-        "abilityName": "Monster_Weapon_Gadget_Disappear"
+        "abilityName": "Monster_Weapon_Gadget_Disappear",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Weapon_BeingHitDetect",
-        "abilityName": "Monster_Weapon_BeingHitDetect"
+        "abilityName": "Monster_Weapon_BeingHitDetect",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SmallShield"
+    }
   },
   "Gadget_Crossbow_01": {
     "$type": "ConfigGadget",
@@ -1926,94 +1901,94 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "CrossBow"
-    },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
         "isLockHP": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Weapon_Gadget_Disappear",
-        "abilityName": "Monster_Weapon_Gadget_Disappear"
+        "abilityName": "Monster_Weapon_Gadget_Disappear",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Weapon_BeingHitDetect",
-        "abilityName": "Monster_Weapon_BeingHitDetect"
+        "abilityName": "Monster_Weapon_BeingHitDetect",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "CrossBow"
+    }
   },
-
   "Gadget_Shield_02": {
     "$type": "ConfigGadget",
     "common": {
-      "viewSize": 2,
       "effectAttachShape": {
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "mass": 40.0,
+      "viewSize": 2.0,
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "mass": 40.0
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
         "isLockHP": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SmallShield"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Weapon_Gadget_Disappear",
-        "abilityName": "Monster_Weapon_Gadget_Disappear"
+        "abilityName": "Monster_Weapon_Gadget_Disappear",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Weapon_BeingHitDetect",
-        "abilityName": "Monster_Weapon_BeingHitDetect"
+        "abilityName": "Monster_Weapon_BeingHitDetect",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SmallShield"
+    }
   },
-
   "Gadget_Axe_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -2021,48 +1996,48 @@
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "mass": 50.0,
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "mass": 50.0
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
         "isLockHP": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": false
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Spear"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Weapon_Gadget_Disappear",
-        "abilityName": "Monster_Weapon_Gadget_Disappear"
+        "abilityName": "Monster_Weapon_Gadget_Disappear",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Weapon_BeingHitDetect",
-        "abilityName": "Monster_Weapon_BeingHitDetect"
+        "abilityName": "Monster_Weapon_BeingHitDetect",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Spear"
+    }
   },
-  //债务处理人武器
   "MonEquip_Warglaive_Fire_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -2073,19 +2048,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -2093,38 +2061,43 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Catalyst"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "MonEquip_Warglaive_Fire_01_IntoShadow",
-        "abilityName": "MonEquip_Warglaive_Fire_01_IntoShadow"
+        "abilityName": "MonEquip_Warglaive_Fire_01_IntoShadow",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Warglaive_Fire_01_OutOfShadow",
-        "abilityName": "MonEquip_Warglaive_Fire_01_OutOfShadow"
+        "abilityName": "MonEquip_Warglaive_Fire_01_OutOfShadow",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Catalyst"
+    }
   },
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Thoarder Weapons
-  //
-  ////////////////////////////////////////////////////////////////
   "MonEquip_Crossbow_02": {
     "$type": "ConfigGadget",
     "common": {
@@ -2135,19 +2108,11 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -2155,29 +2120,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "CrossBow"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Crossbow_01_SetGlobalValue",
-        "abilityName": "MonEquip_Crossbow_01_SetGlobalValue"
+        "abilityName": "MonEquip_Crossbow_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "CrossBow"
+    }
   },
-
   "MonEquip_Hatchet_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -2188,49 +2162,49 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_WoodenClub_01_SetGlobalValue",
-        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue"
+        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Shovel_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -2241,50 +2215,49 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Pole",
-      "auxToTrans": "AuxWeaponPoint"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_WoodenClub_01_SetGlobalValue",
-        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue"
+        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "AuxWeaponPoint",
+      "equipEntityType": "Pole"
+    }
   },
-
   "MonEquip_Hammer_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -2295,49 +2268,49 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_WoodenClub_01_SetGlobalValue",
-        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue"
+        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Paddle_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -2348,54 +2321,49 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Pole",
-      "auxToTrans": "AuxWeaponPoint"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_WoodenClub_01_SetGlobalValue",
-        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue"
+        "abilityName": "MonEquip_WoodenClub_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "AuxWeaponPoint",
+      "equipEntityType": "Pole"
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Sergeant Weapons
-  //
-  ////////////////////////////////////////////////////////////////
   "MonEquip_Pole_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -2406,48 +2374,48 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Pole",
-      "auxToTrans": "AuxWeaponPoint"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Axe_01_SetGlobalValue",
-        "abilityName": "MonEquip_Axe_01_SetGlobalValue"
+        "abilityName": "MonEquip_Axe_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "AuxWeaponPoint",
+      "equipEntityType": "Pole"
+    }
   },
   "MonEquip_Pole_02": {
     "$type": "ConfigGadget",
@@ -2459,55 +2427,49 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "isGhostToAllied": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Pole",
-      "auxToTrans": "AuxWeaponPoint"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Axe_01_SetGlobalValue",
-        "abilityName": "MonEquip_Axe_01_SetGlobalValue"
+        "abilityName": "MonEquip_Axe_01_SetGlobalValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "AuxWeaponPoint",
+      "equipEntityType": "Pole"
+    }
   },
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Tartaglia Weapons
-  //
-  ////////////////////////////////////////////////////////////////
   "MonEquip_Tartaglia_Bow": {
     "$type": "ConfigGadget",
     "common": {
@@ -2518,19 +2480,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -2538,29 +2493,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Bow"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Tartaglia_Bow",
-        "abilityName": "MonEquip_Tartaglia_Bow"
+        "abilityName": "MonEquip_Tartaglia_Bow",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Bow"
+    }
   },
-
   "MonEquip_Tartaglia_Blade_Electric_R": {
     "$type": "ConfigGadget",
     "common": {
@@ -2571,19 +2535,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -2591,29 +2548,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Tartaglia_Blade_Electric",
-        "abilityName": "MonEquip_Tartaglia_Blade_Electric"
+        "abilityName": "MonEquip_Tartaglia_Blade_Electric",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Tartaglia_Blade_Electric_L": {
     "$type": "ConfigGadget",
     "common": {
@@ -2624,19 +2590,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -2644,29 +2603,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip03",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Tartaglia_Blade_Electric",
-        "abilityName": "MonEquip_Tartaglia_Blade_Electric"
+        "abilityName": "MonEquip_Tartaglia_Blade_Electric",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip03",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Tartaglia_Blade_Water_R": {
     "$type": "ConfigGadget",
     "common": {
@@ -2677,19 +2645,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -2697,29 +2658,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Tartaglia_Blade_Water",
-        "abilityName": "MonEquip_Tartaglia_Blade_Water"
+        "abilityName": "MonEquip_Tartaglia_Blade_Water",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Tartaglia_Blade_Water_L": {
     "$type": "ConfigGadget",
     "common": {
@@ -2730,19 +2700,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -2750,29 +2713,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip03",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Tartaglia_Blade_Water",
-        "abilityName": "MonEquip_Tartaglia_Blade_Water"
+        "abilityName": "MonEquip_Tartaglia_Blade_Water",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip03",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Tartaglia_DualBlade": {
     "$type": "ConfigGadget",
     "common": {
@@ -2783,19 +2755,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -2803,29 +2768,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip04",
-      "equipEntityType": "Spear"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Tartaglia_DualBlade",
-        "abilityName": "MonEquip_Tartaglia_DualBlade"
+        "abilityName": "MonEquip_Tartaglia_DualBlade",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip04",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Spear"
+    }
   },
-
   "MonEquip_Tartaglia_Harbinger_Bow": {
     "$type": "ConfigGadget",
     "common": {
@@ -2836,19 +2810,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -2856,25 +2823,33 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Bow"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Bow"
+    }
   },
-
   "MonEquip_Tartaglia_Harbinger_Blade_R": {
     "$type": "ConfigGadget",
     "common": {
@@ -2885,19 +2860,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -2905,25 +2873,33 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Tartaglia_Harbinger_Blade_L": {
     "$type": "ConfigGadget",
     "common": {
@@ -2934,19 +2910,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -2954,25 +2923,33 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip03",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip03",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Tartaglia_Harbinger_DualBlade_R": {
     "$type": "ConfigGadget",
     "common": {
@@ -2983,19 +2960,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -3003,25 +2973,33 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip04",
-      "equipEntityType": "Spear"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip04",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Spear"
+    }
   },
-
   "MonEquip_Tartaglia_Harbinger_DualBlade_L": {
     "$type": "ConfigGadget",
     "common": {
@@ -3032,19 +3010,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -3052,29 +3023,33 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip05",
-      "equipEntityType": "Spear"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip05",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Spear"
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Skirmisher Equip
-  //
-  ////////////////////////////////////////////////////////////////
   "MonEquip_Skirmisher_Spraygun_Ice_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -3085,19 +3060,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -3105,29 +3073,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Skirmisher_Spraygun_Ice_ImproveState",
-        "abilityName": "MonEquip_Skirmisher_Spraygun_Ice_ImproveState"
+        "abilityName": "MonEquip_Skirmisher_Spraygun_Ice_ImproveState",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Skirmisher_Backpack_Ice_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -3138,19 +3115,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -3158,29 +3128,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SmallShield"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Skirmisher_Backpack_Ice_ImproveState",
-        "abilityName": "MonEquip_Skirmisher_Backpack_Ice_ImproveState"
+        "abilityName": "MonEquip_Skirmisher_Backpack_Ice_ImproveState",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SmallShield"
+    }
   },
-
   "MonEquip_Skirmisher_Spraygun_Water_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -3191,19 +3170,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -3211,29 +3183,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Skirmisher_Spraygun_Water_ImproveState",
-        "abilityName": "MonEquip_Skirmisher_Spraygun_Water_ImproveState"
+        "abilityName": "MonEquip_Skirmisher_Spraygun_Water_ImproveState",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-
   "MonEquip_Skirmisher_Backpack_Water_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -3244,19 +3225,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -3264,29 +3238,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SmallShield"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "MonEquip_Skirmisher_Backpack_Water_ImproveState",
-        "abilityName": "MonEquip_Skirmisher_Backpack_Water_ImproveState"
+        "abilityName": "MonEquip_Skirmisher_Backpack_Water_ImproveState",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SmallShield"
+    }
   },
-
   "MonEquip_Skirmisher_GreatHammer_Electric_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -3297,19 +3280,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -3317,23 +3293,32 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 0.5,
         "dieForceDisappearTime": 2.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Claymore"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Claymore"
+    }
   },
   "MonEquip_Skirmisher_Staff_Rock_01": {
     "$type": "ConfigGadget",
@@ -3345,19 +3330,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -3365,31 +3343,42 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Spear"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Skirmisher_Staff_Rock_WeaponOriginal",
-        "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponOriginal"
+        "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponOriginal",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Skirmisher_Staff_Rock_WeaponPower",
-        "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponPower"
+        "abilityName": "Monster_Skirmisher_Staff_Rock_WeaponPower",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Spear"
+    }
   },
   "MonEquip_Skirmisher_Gloves_01_Left": {
     "$type": "ConfigGadget",
@@ -3401,19 +3390,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -3421,23 +3403,32 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
   "MonEquip_Skirmisher_Gloves_01_Right": {
     "$type": "ConfigGadget",
@@ -3449,19 +3440,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -3469,23 +3453,32 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
   "MonEquip_Skirmisher_Rifle_Fire_01": {
     "$type": "ConfigGadget",
@@ -3497,19 +3490,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -3517,27 +3503,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Spear"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Skirmisher_Standard_Rifle_Fire_WeaponEffect",
-        "abilityName": "Monster_Skirmisher_Standard_Rifle_Fire_WeaponEffect"
+        "abilityName": "Monster_Skirmisher_Standard_Rifle_Fire_WeaponEffect",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Spear"
+    }
   },
   "MonEquip_Tachi_01": {
     "$type": "ConfigGadget",
@@ -3549,47 +3545,49 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Samurai_Ronin_EquipHide",
-        "abilityName": "Monster_Samurai_Ronin_EquipHide"
+        "abilityName": "Monster_Samurai_Ronin_EquipHide",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
   "MonEquip_Tachi_02": {
     "$type": "ConfigGadget",
@@ -3598,43 +3596,42 @@
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "viewSize": 1.2999999523162842,
       "affectedByWorld": true,
       "checkInSurface": true,
-      "scale": 1.3,
-      "viewSize": 1.3
+      "scale": 1.2999999523162842
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
+    "attackAttenuation": "",
     "equipment": {
       "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
       "equipEntityType": "SwordOneHand"
-    },
-    "abilities": []
+    }
   },
   "MonEquip_Tachi_03": {
     "$type": "ConfigGadget",
@@ -3643,43 +3640,42 @@
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "viewSize": 1.2999999523162842,
       "affectedByWorld": true,
       "checkInSurface": true,
-      "scale": 1.3,
-      "viewSize": 1.3
+      "scale": 1.2999999523162842
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
+    "attackAttenuation": "",
     "equipment": {
       "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
       "equipEntityType": "SwordOneHand"
-    },
-    "abilities": []
+    }
   },
   "MonEquip_Tachi_04": {
     "$type": "ConfigGadget",
@@ -3688,47 +3684,46 @@
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "viewSize": 1.2000000476837158,
       "affectedByWorld": true,
       "checkInSurface": true,
-      "scale": 1.2,
-      "viewSize": 1.2
+      "scale": 1.2000000476837158
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "",
-        "dieEndTime": 0,
-        "dieForceDisappearTime": 0.01,
-        "dieShaderData": "None"
+        "dieDisappearEffect": ""
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityID": "",
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
   "MonEquip_Tachi_05": {
     "$type": "ConfigGadget",
@@ -3737,47 +3732,46 @@
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "viewSize": 1.2000000476837158,
       "affectedByWorld": true,
       "checkInSurface": true,
-      "scale": 1.2,
-      "viewSize": 1.2
+      "scale": 1.2000000476837158
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "",
-        "dieEndTime": 0,
-        "dieForceDisappearTime": 0.01,
-        "dieShaderData": "None"
+        "dieDisappearEffect": ""
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityID": "",
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
   "MonEquip_Tachi_06": {
     "$type": "ConfigGadget",
@@ -3789,45 +3783,45 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Samurai_Ronin_EquipHide",
-        "abilityName": "Monster_Samurai_Ronin_EquipHide"
+        "abilityName": "Monster_Samurai_Ronin_EquipHide",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-  //雷幽灵海乱鬼
   "MonEquip_Tachi_04_Ghost": {
     "$type": "ConfigGadget",
     "common": {
@@ -3835,49 +3829,47 @@
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "viewSize": 1.2000000476837158,
       "affectedByWorld": true,
       "checkInSurface": true,
-      "scale": 1.2,
-      "viewSize": 1.2
+      "scale": 1.2000000476837158
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "",
-        "dieEndTime": 0,
-        "dieForceDisappearTime": 0.01,
-        "dieShaderData": "None"
+        "dieDisappearEffect": ""
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityID": "",
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-  //火幽灵海乱鬼
   "MonEquip_Tachi_05_Ghost": {
     "$type": "ConfigGadget",
     "common": {
@@ -3885,49 +3877,47 @@
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       },
+      "viewSize": 1.2000000476837158,
       "affectedByWorld": true,
       "checkInSurface": true,
-      "scale": 1.2,
-      "viewSize": 1.2
+      "scale": 1.2000000476837158
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "",
-        "dieEndTime": 0,
-        "dieForceDisappearTime": 0.01,
-        "dieShaderData": "None"
+        "dieDisappearEffect": ""
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityID": "",
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-  //2.8万叶个人线妖刀幕府
   "MonEquip_Tachi_07": {
     "$type": "ConfigGadget",
     "common": {
@@ -3937,53 +3927,57 @@
       },
       "affectedByWorld": true,
       "checkInSurface": true,
-      "scale": 2
+      "scale": 2.0
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Samurai_Ronin_EquipHide",
-        "abilityName": "Monster_Samurai_Ronin_EquipHide"
+        "abilityName": "Monster_Samurai_Ronin_EquipHide",
+        "abilityOverride": ""
       },
       {
-        "abilityName": "Monster_Samurai_Hatamoto_Crazy_WeaponEffect"
+        "abilityID": "",
+        "abilityName": "Monster_Samurai_Hatamoto_Crazy_WeaponEffect",
+        "abilityOverride": ""
       },
       {
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityID": "",
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-  // 雷法师法杖
   "MonEquip_Staff_Electric_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -3994,19 +3988,12 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -4014,29 +4001,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Catalyst"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Monster_Abyss_Electric_WeaponInit",
-        "abilityName": "Monster_Abyss_Electric_WeaponInit"
+        "abilityName": "Monster_Abyss_Electric_WeaponInit",
+        "abilityOverride": ""
       },
       {
         "abilityID": "Monster_Equip_SelfDestroy",
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Catalyst"
+    }
   },
-  // Shougun Equip
   "MonEquip_Shougun_Pole": {
     "$type": "ConfigGadget",
     "common": {
@@ -4045,46 +4041,46 @@
         "mesh": "EffectMesh"
       },
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "scale": 1,
-      "viewSize": 1
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Pole"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Shougun_Pole_Effect"
+        "abilityID": "",
+        "abilityName": "Monster_Shougun_Pole_Effect",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Pole"
+    }
   },
   "MonEquip_Shougun_Tachi": {
     "$type": "ConfigGadget",
@@ -4094,52 +4090,47 @@
         "mesh": "EffectMesh"
       },
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "scale": 1,
-      "viewSize": 1
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_MonsterEquip",
         "dieShaderData": "MonsterEquipDie"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Shougun_Tachi_Effect"
+        "abilityID": "",
+        "abilityName": "Monster_Shougun_Tachi_Effect",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "SwordOneHand"
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  壳之剑士
-  //
-  ////////////////////////////////////////////////////////////////
   "MonEquip_ForlornVessel_Warbanner_01": {
     "$type": "ConfigGadget",
     "common": {
@@ -4148,55 +4139,57 @@
         "mesh": "EffectMesh"
       },
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "scale": 1,
-      "viewSize": 1
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_Abyss_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_Abyss_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "Spear"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityID": "",
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
-        "abilityName": "MonEquip_ForlornVessel_Warbanner_01"
+        "abilityID": "",
+        "abilityName": "MonEquip_ForlornVessel_Warbanner_01",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Spear"
+    }
   },
   "MonEquip_ForlornVessel_Lance_01": {
     "$type": "ConfigGadget",
@@ -4206,52 +4199,52 @@
         "mesh": "EffectMesh"
       },
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "scale": 1,
-      "viewSize": 1
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_Abyss_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_Abyss_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Spear"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityID": "",
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip01",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Spear"
+    }
   },
   "MonEquip_ForlornVessel_Chargebow_01": {
     "$type": "ConfigGadget",
@@ -4261,60 +4254,66 @@
         "mesh": "EffectMesh"
       },
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "scale": 1,
-      "viewSize": 1
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "weight": 10,
+        "HP": 10.0,
+        "isInvincible": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
-        "dieDisappearEffect": "Eff_Death_Abyss_MonsterEquip",
         "dieEndTime": 2.0,
         "dieForceDisappearTime": 4.0,
+        "dieDisappearEffect": "Eff_Death_Abyss_MonsterEquip",
         "dieShaderData": "MonsterEquipDie",
-        "muteHitBox": true,
-        "dieDenyLockOn": true,
-        "dieIsGhostToEnemy": true,
-        "dieIgnoreTriggerBullet": true,
-        "muteBillboard": true,
-        "mutePushCollider": true
+        "LFLHBBLFMNL": true,
+        "DNOKPNKKHLO": true,
+        "ILIIAFJADIB": true,
+        "MDKFHDHIKGH": true,
+        "HABEAIAAGLF": true,
+        "LEHDFPPJPKJ": true
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "Bow"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Equip_SelfDestroy"
+        "abilityID": "",
+        "abilityName": "Monster_Equip_SelfDestroy",
+        "abilityOverride": ""
       },
       {
-        "abilityName": "MonEquip_ForlornVessel_Chargebow_Effect"
+        "abilityID": "",
+        "abilityName": "MonEquip_ForlornVessel_Chargebow_Effect",
+        "abilityOverride": ""
       },
       {
-        "abilityName": "MonEquip_ForlornVessel_Chargebow_NormalAtk_EffectAdd"
+        "abilityID": "",
+        "abilityName": "MonEquip_ForlornVessel_Chargebow_NormalAtk_EffectAdd",
+        "abilityOverride": ""
       },
       {
-        "abilityName": "MonEquip_ForlornVessel_Chargebow_NormalAtk_EffectRemove"
+        "abilityID": "",
+        "abilityName": "MonEquip_ForlornVessel_Chargebow_NormalAtk_EffectRemove",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "equipment": {
+      "attachTo": "equip02",
+      "subAttachTo": "",
+      "auxToTrans": "",
+      "equipEntityType": "Bow"
+    }
   }
 }

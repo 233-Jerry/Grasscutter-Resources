@@ -1,59 +1,43 @@
 {
-  ////////////////////////////////////////////////////////////////////////////////////
-  //
-  // InitialPos
-  //
-  ////////////////////////////////////////////////////////////////////////////////////
   "Gargoyle_Fafnir_InitialPos": {
     "$type": "ConfigGadget",
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 100,
-        "attack": 10,
-        "defense": 0,
+        "useCreatorProperty": true,
+        "HP": 100.0,
+        "attack": 10.0,
         "isInvincible": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true,
         "canTriggerBullet": false
       },
       "combatLock": {
-        "denyLockOn": true
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
+    "attackAttenuation": "",
     "timer": {
       "lifeInfinite": true
-    },
-    "abilities": []
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Air & Gound ElementAtk
-  //
-  ////////////////////////////////////////////////////////////////
   "Gargoyle_Fafnir_ElementAtk_Bullet_None": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 10.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -61,31 +45,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "simulatePhysics": {
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
+      "resetCycle": {
         "enable": true
       }
     },
-    // 子弹移动
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_None",
+        "abilityOverride": ""
+      },
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_None_LifeOver",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 8.0
+    },
     "move": {
       "$type": "ConfigMultiBulletMove"
     },
-    // 生命周期管理
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 8.0 //存在时间
-    },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigMultiBulletPattern",
-      "multiBulletConfig": {
-        "$type": "ConfigEffectItanoCircusBullet",
-        "effectPattern": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_None_Bullet",
-        "selectTargetDefaultType": "First"
-      },
-      "collision": {
-        "targetType": "None",
-        "triggerType": "TriggerOnce"
-      },
+      "collision": {},
       "triggerActions": [
         {
           "$type": "ConfigGadgetTriggerAbility",
@@ -98,40 +88,29 @@
           "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_None_LifeOver"
         }
       ],
-      "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_None"
-      },
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_None_LifeOver"
+      "killByOther": true,
+      "GDPOAEGOPGN": {
+        "$type": "ConfigEffectItanoCircusBullet",
+        "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_None_Bullet"
       }
-    ]
+    }
   },
   "Gargoyle_Fafnir_ElementAtk_Bullet_Fire": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 10.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -139,31 +118,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "simulatePhysics": {
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
+      "resetCycle": {
         "enable": true
       }
     },
-    // 子弹移动
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Fire",
+        "abilityOverride": ""
+      },
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Fire_LifeOver",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 8.0
+    },
     "move": {
       "$type": "ConfigMultiBulletMove"
     },
-    // 生命周期管理
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 8.0 //存在时间
-    },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigMultiBulletPattern",
-      "multiBulletConfig": {
-        "$type": "ConfigEffectItanoCircusBullet",
-        "effectPattern": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Fire_Bullet",
-        "selectTargetDefaultType": "First"
-      },
-      "collision": {
-        "targetType": "None",
-        "triggerType": "TriggerOnce"
-      },
+      "collision": {},
       "triggerActions": [
         {
           "$type": "ConfigGadgetTriggerAbility",
@@ -176,40 +161,29 @@
           "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Fire_LifeOver"
         }
       ],
-      "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Fire"
-      },
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Fire_LifeOver"
+      "killByOther": true,
+      "GDPOAEGOPGN": {
+        "$type": "ConfigEffectItanoCircusBullet",
+        "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Fire_Bullet"
       }
-    ]
+    }
   },
   "Gargoyle_Fafnir_ElementAtk_Bullet_Water": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 10.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -217,31 +191,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "simulatePhysics": {
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
+      "resetCycle": {
         "enable": true
       }
     },
-    // 子弹移动
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Water",
+        "abilityOverride": ""
+      },
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Water_LifeOver",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 8.0
+    },
     "move": {
       "$type": "ConfigMultiBulletMove"
     },
-    // 生命周期管理
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 8.0 //存在时间
-    },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigMultiBulletPattern",
-      "multiBulletConfig": {
-        "$type": "ConfigEffectItanoCircusBullet",
-        "effectPattern": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Water_Bullet",
-        "selectTargetDefaultType": "First"
-      },
-      "collision": {
-        "targetType": "None",
-        "triggerType": "TriggerOnce"
-      },
+      "collision": {},
       "triggerActions": [
         {
           "$type": "ConfigGadgetTriggerAbility",
@@ -254,40 +234,29 @@
           "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Water_LifeOver"
         }
       ],
-      "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Water"
-      },
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Water_LifeOver"
+      "killByOther": true,
+      "GDPOAEGOPGN": {
+        "$type": "ConfigEffectItanoCircusBullet",
+        "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Water_Bullet"
       }
-    ]
+    }
   },
   "Gargoyle_Fafnir_ElementAtk_Bullet_Grass": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 10.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -295,31 +264,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "simulatePhysics": {
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
+      "resetCycle": {
         "enable": true
       }
     },
-    // 子弹移动
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Grass",
+        "abilityOverride": ""
+      },
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Grass_LifeOver",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 8.0
+    },
     "move": {
       "$type": "ConfigMultiBulletMove"
     },
-    // 生命周期管理
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 8.0 //存在时间
-    },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigMultiBulletPattern",
-      "multiBulletConfig": {
-        "$type": "ConfigEffectItanoCircusBullet",
-        "effectPattern": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Grass_Bullet",
-        "selectTargetDefaultType": "First"
-      },
-      "collision": {
-        "targetType": "None",
-        "triggerType": "TriggerOnce"
-      },
+      "collision": {},
       "triggerActions": [
         {
           "$type": "ConfigGadgetTriggerAbility",
@@ -332,40 +307,29 @@
           "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Grass_LifeOver"
         }
       ],
-      "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Grass"
-      },
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Grass_LifeOver"
+      "killByOther": true,
+      "GDPOAEGOPGN": {
+        "$type": "ConfigEffectItanoCircusBullet",
+        "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Grass_Bullet"
       }
-    ]
+    }
   },
   "Gargoyle_Fafnir_ElementAtk_Bullet_Electric": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 10.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -373,31 +337,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "simulatePhysics": {
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
+      "resetCycle": {
         "enable": true
       }
     },
-    // 子弹移动
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Electric",
+        "abilityOverride": ""
+      },
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Electric_LifeOver",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 8.0
+    },
     "move": {
       "$type": "ConfigMultiBulletMove"
     },
-    // 生命周期管理
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 8.0 //存在时间
-    },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigMultiBulletPattern",
-      "multiBulletConfig": {
-        "$type": "ConfigEffectItanoCircusBullet",
-        "effectPattern": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Electric_Bullet",
-        "selectTargetDefaultType": "First"
-      },
-      "collision": {
-        "targetType": "None",
-        "triggerType": "TriggerOnce"
-      },
+      "collision": {},
       "triggerActions": [
         {
           "$type": "ConfigGadgetTriggerAbility",
@@ -410,40 +380,29 @@
           "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Electric_LifeOver"
         }
       ],
-      "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Electric"
-      },
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Electric_LifeOver"
+      "killByOther": true,
+      "GDPOAEGOPGN": {
+        "$type": "ConfigEffectItanoCircusBullet",
+        "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Electric_Bullet"
       }
-    ]
+    }
   },
   "Gargoyle_Fafnir_ElementAtk_Bullet_Ice": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 10.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -451,31 +410,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "simulatePhysics": {
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
+      "resetCycle": {
         "enable": true
       }
     },
-    // 子弹移动
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Ice",
+        "abilityOverride": ""
+      },
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Ice_LifeOver",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 8.0
+    },
     "move": {
       "$type": "ConfigMultiBulletMove"
     },
-    // 生命周期管理
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 8.0 //存在时间
-    },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigMultiBulletPattern",
-      "multiBulletConfig": {
-        "$type": "ConfigEffectItanoCircusBullet",
-        "effectPattern": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Ice_Bullet",
-        "selectTargetDefaultType": "First"
-      },
-      "collision": {
-        "targetType": "None",
-        "triggerType": "TriggerOnce"
-      },
+      "collision": {},
       "triggerActions": [
         {
           "$type": "ConfigGadgetTriggerAbility",
@@ -488,40 +453,29 @@
           "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Ice_LifeOver"
         }
       ],
-      "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Ice"
-      },
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Ice_LifeOver"
+      "killByOther": true,
+      "GDPOAEGOPGN": {
+        "$type": "ConfigEffectItanoCircusBullet",
+        "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Ice_Bullet"
       }
-    ]
+    }
   },
   "Gargoyle_Fafnir_ElementAtk_Bullet_Wind": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 10.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -529,31 +483,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "simulatePhysics": {
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
+      "resetCycle": {
         "enable": true
       }
     },
-    // 子弹移动
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Wind",
+        "abilityOverride": ""
+      },
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Wind_LifeOver",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 8.0
+    },
     "move": {
       "$type": "ConfigMultiBulletMove"
     },
-    // 生命周期管理
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 8.0 //存在时间
-    },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigMultiBulletPattern",
-      "multiBulletConfig": {
-        "$type": "ConfigEffectItanoCircusBullet",
-        "effectPattern": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Wind_Bullet",
-        "selectTargetDefaultType": "First"
-      },
-      "collision": {
-        "targetType": "None",
-        "triggerType": "TriggerOnce"
-      },
+      "collision": {},
       "triggerActions": [
         {
           "$type": "ConfigGadgetTriggerAbility",
@@ -566,40 +526,29 @@
           "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Wind_LifeOver"
         }
       ],
-      "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Wind"
-      },
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Wind_LifeOver"
+      "killByOther": true,
+      "GDPOAEGOPGN": {
+        "$type": "ConfigEffectItanoCircusBullet",
+        "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Wind_Bullet"
       }
-    ]
+    }
   },
   "Gargoyle_Fafnir_ElementAtk_Bullet_Rock": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 10.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -607,31 +556,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "simulatePhysics": {
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
+      "resetCycle": {
         "enable": true
       }
     },
-    // 子弹移动
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Rock",
+        "abilityOverride": ""
+      },
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Rock_LifeOver",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 8.0
+    },
     "move": {
       "$type": "ConfigMultiBulletMove"
     },
-    // 生命周期管理
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 8.0 //存在时间
-    },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigMultiBulletPattern",
-      "multiBulletConfig": {
-        "$type": "ConfigEffectItanoCircusBullet",
-        "effectPattern": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Rock_Bullet",
-        "selectTargetDefaultType": "First"
-      },
-      "collision": {
-        "targetType": "None",
-        "triggerType": "TriggerOnce"
-      },
+      "collision": {},
       "triggerActions": [
         {
           "$type": "ConfigGadgetTriggerAbility",
@@ -644,45 +599,29 @@
           "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Rock_LifeOver"
         }
       ],
-      "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Rock"
-      },
-      {
-        "abilityName": "Gargoyle_Fafnir_ElementAtk_Bullet_Rock_LifeOver"
+      "killByOther": true,
+      "GDPOAEGOPGN": {
+        "$type": "ConfigEffectItanoCircusBullet",
+        "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_Rock_Bullet"
       }
-    ]
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Air ChestAtk
-  //
-  ////////////////////////////////////////////////////////////////
   "Gargoyle_Fafnir_Air_ChestBullet_Left": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 10.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -690,29 +629,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "simulatePhysics": {
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
+      "resetCycle": {
         "enable": true
       }
     },
-    // 子弹移动
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_Air_ChestBullet",
+        "abilityOverride": ""
+      },
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_Air_ChestBullet_LifeOver",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 12.0
+    },
     "move": {
       "$type": "ConfigMultiBulletMove"
     },
-    // 生命周期管理
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 12.0 //存在时间
-    },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigMultiBulletPattern",
-      "multiBulletConfig": {
-        "$type": "ConfigEffectItanoCircusBullet",
-        "effectPattern": "Eff_Monster_Gargoyle_Fafnir_ChestAtk_Air_BulletL"
-      },
       "collision": {
-        "targetType": "Enemy",
-        "triggerType": "TriggerOnce"
+        "targetType": "Enemy"
       },
       "triggerActions": [
         {
@@ -726,40 +674,29 @@
           "abilityName": "Gargoyle_Fafnir_Air_ChestBullet_LifeOver"
         }
       ],
-      "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_Air_ChestBullet"
-      },
-      {
-        "abilityName": "Gargoyle_Fafnir_Air_ChestBullet_LifeOver"
+      "killByOther": true,
+      "GDPOAEGOPGN": {
+        "$type": "ConfigEffectItanoCircusBullet",
+        "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ChestAtk_Air_BulletL"
       }
-    ]
+    }
   },
   "Gargoyle_Fafnir_Air_ChestBullet_Right": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 10.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -767,29 +704,38 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "simulatePhysics": {
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
+      "resetCycle": {
         "enable": true
       }
     },
-    // 子弹移动
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_Air_ChestBullet",
+        "abilityOverride": ""
+      },
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_Air_ChestBullet_LifeOver",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 10.0
+    },
     "move": {
       "$type": "ConfigMultiBulletMove"
     },
-    // 生命周期管理
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 10.0 //存在时间
-    },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigMultiBulletPattern",
-      "multiBulletConfig": {
-        "$type": "ConfigEffectItanoCircusBullet",
-        "effectPattern": "Eff_Monster_Gargoyle_Fafnir_ChestAtk_Air_BulletR"
-      },
       "collision": {
-        "targetType": "Enemy",
-        "triggerType": "TriggerOnce"
+        "targetType": "Enemy"
       },
       "triggerActions": [
         {
@@ -803,44 +749,28 @@
           "abilityName": "Gargoyle_Fafnir_Air_ChestBullet_LifeOver"
         }
       ],
-      "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_Air_ChestBullet"
-      },
-      {
-        "abilityName": "Gargoyle_Fafnir_Air_ChestBullet_LifeOver"
+      "killByOther": true,
+      "GDPOAEGOPGN": {
+        "$type": "ConfigEffectItanoCircusBullet",
+        "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ChestAtk_Air_BulletR"
       }
-    ]
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Air WingAtk
-  //
-  ////////////////////////////////////////////////////////////////
   "Gargoyle_Fafnir_Air_WingAtk_Damage": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 30.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isLockHP": true,
         "canTriggerBullet": false
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -848,38 +778,45 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "animEvents": {}
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      }
     },
-    // 生命周期管理
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_Air_WingAtk_Damage",
+        "abilityOverride": ""
+      }
+    ],
     "timer": {
-      "lifeInfinite": false,
       "lifeTime": 0.75
     },
-    // 子弹线性移动
     "move": {
       "$type": "ConfigLinerBulletMove",
       "speed": 38.0,
       "acceleration": -2.5,
+      "canBornInWater": true,
       "updateAngle": {
         "$type": "ConfigBulletMoveAngleByVelocity"
       },
-      "canBornInWater": true,
       "stickToGround": {
-        "$type": "ConfigMoveStickToGround",
         "maxStepHeight": 2.0,
-        "maxSlopeAngle": 30,
+        "maxSlopeAngle": 30.0,
         "heightToGround": 0.5,
-        "flexibleRange": 0.1,
-        "unstickWhenUpSlide": "Keep",
-        "unstickWhenDownSlide": "Keep"
+        "flexibleRange": 0.10000000149011612,
+        "unstickWhenDownSlide": "Keep",
+        "unstickWhenUpSlide": "Keep"
       }
     },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigBulletPattern",
       "collision": {
-        "targetType": "Enemy",
         "triggerType": "TriggerNoRepeat",
+        "targetType": "Enemy",
         "ignoreScene": true
       },
       "triggerActions": [
@@ -888,40 +825,23 @@
           "abilityName": "Gargoyle_Fafnir_Air_WingAtk_Damage"
         }
       ]
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_Air_WingAtk_Damage"
-      }
-    ]
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Air ChargeAtk
-  //
-  ////////////////////////////////////////////////////////////////
   "Gargoyle_Fafnir_Air_ChargeAtk_FollowBullet": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 30.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isLockHP": true,
         "canTriggerBullet": false
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -929,35 +849,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "animEvents": {}
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      }
     },
-    // 生命周期管理
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_Air_ChargeAtk_FollowBullet_Hit",
+        "abilityOverride": ""
+      }
+    ],
     "timer": {
-      "lifeInfinite": false,
       "lifeTime": 10.0
     },
-    // 子弹线性移动
     "move": {
       "$type": "ConfigFollowMove",
       "target": "TargetEntity",
+      "attachPoint": "",
       "followRotation": true,
-      "offset": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
       "forward": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.3
+        "z": 0.30000001192092896
       }
     },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigBulletPattern",
       "collision": {
-        "targetType": "Enemy",
         "triggerType": "TriggerNoRepeat",
+        "targetType": "Enemy",
         "ignoreScene": true
       },
       "triggerActions": [
@@ -966,35 +888,23 @@
           "abilityName": "Gargoyle_Fafnir_Air_ChargeAtk_FollowBullet_Hit"
         }
       ]
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_Air_ChargeAtk_FollowBullet_Hit"
-      }
-    ]
+    }
   },
   "Gargoyle_Fafnir_Air_ChargeAtk_FollowBullet_HitScene": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 30.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isLockHP": true,
         "canTriggerBullet": false
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1002,36 +912,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "animEvents": {}
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      }
     },
-    // 生命周期管理
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_Air_ChargeAtk_FollowBullet_HitScene",
+        "abilityOverride": ""
+      }
+    ],
     "timer": {
-      "lifeInfinite": false,
       "lifeTime": 10.0
     },
-    // 子弹线性移动
     "move": {
       "$type": "ConfigFollowMove",
       "target": "TargetEntity",
+      "attachPoint": "",
       "followRotation": true,
-      "offset": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
       "forward": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.3
+        "z": 0.30000001192092896
       }
     },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigBulletPattern",
       "collision": {
-        "targetType": "Enemy",
         "triggerType": "TriggerNoRepeat",
-        "ignoreScene": false
+        "targetType": "Enemy"
       },
       "triggerActions": [
         {
@@ -1039,40 +950,23 @@
           "abilityName": "Gargoyle_Fafnir_Air_ChargeAtk_FollowBullet_HitScene"
         }
       ]
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_Air_ChargeAtk_FollowBullet_HitScene"
-      }
-    ]
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Ground ChargeAtk
-  //
-  ////////////////////////////////////////////////////////////////
   "Gargoyle_Fafnir_Ground_ChargeAtk_FollowBullet": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 30.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isLockHP": true,
         "canTriggerBullet": false
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1080,35 +974,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "animEvents": {}
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      }
     },
-    // 生命周期管理
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_Ground_ChargeAtk_FollowBullet_Hit",
+        "abilityOverride": ""
+      }
+    ],
     "timer": {
-      "lifeInfinite": false,
       "lifeTime": 10.0
     },
-    // 子弹线性移动
     "move": {
       "$type": "ConfigFollowMove",
       "target": "TargetEntity",
+      "attachPoint": "",
       "followRotation": true,
-      "offset": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
       "forward": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.3
+        "z": 0.30000001192092896
       }
     },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigBulletPattern",
       "collision": {
-        "targetType": "Enemy",
         "triggerType": "TriggerNoRepeat",
+        "targetType": "Enemy",
         "ignoreScene": true
       },
       "triggerActions": [
@@ -1117,35 +1013,23 @@
           "abilityName": "Gargoyle_Fafnir_Ground_ChargeAtk_FollowBullet_Hit"
         }
       ]
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_Ground_ChargeAtk_FollowBullet_Hit"
-      }
-    ]
+    }
   },
   "Gargoyle_Fafnir_Ground_ChargeAtk_FollowBullet_HitScene": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 30.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isLockHP": true,
         "canTriggerBullet": false
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -1153,36 +1037,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "animEvents": {}
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      }
     },
-    // 生命周期管理
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Gargoyle_Fafnir_Ground_ChargeAtk_FollowBullet_HitScene",
+        "abilityOverride": ""
+      }
+    ],
     "timer": {
-      "lifeInfinite": false,
       "lifeTime": 10.0
     },
-    // 子弹线性移动
     "move": {
       "$type": "ConfigFollowMove",
       "target": "TargetEntity",
+      "attachPoint": "",
       "followRotation": true,
-      "offset": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
       "forward": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.3
+        "z": 0.30000001192092896
       }
     },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigBulletPattern",
       "collision": {
-        "targetType": "Enemy",
         "triggerType": "TriggerNoRepeat",
-        "ignoreScene": false
+        "targetType": "Enemy"
       },
       "triggerActions": [
         {
@@ -1190,11 +1075,6 @@
           "abilityName": "Gargoyle_Fafnir_Ground_ChargeAtk_FollowBullet_HitScene"
         }
       ]
-    },
-    "abilities": [
-      {
-        "abilityName": "Gargoyle_Fafnir_Ground_ChargeAtk_FollowBullet_HitScene"
-      }
-    ]
+    }
   }
 }

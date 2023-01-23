@@ -1,31 +1,19 @@
 {
-  ////////////////////////////////////////////////////////////////
-  //
-  //  豹冲-42404001
-  //
-  ////////////////////////////////////////////////////////////////
   "Panther_None_FollowBullet": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "$type": "ConfigEffectAttachBox"
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 30.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isLockHP": true,
         "canTriggerBullet": false
-      },
-      "combatLock": {
-        "denyLockOn": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -33,35 +21,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
-      "animEvents": {}
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      }
     },
-    // 生命周期管理
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Panther_None_FollowBullet",
+        "abilityOverride": ""
+      }
+    ],
     "timer": {
-      "lifeInfinite": false,
       "lifeTime": 4.0
     },
-    // 子弹线性移动
     "move": {
       "$type": "ConfigFollowMove",
       "target": "TargetEntity",
+      "attachPoint": "",
       "followRotation": true,
-      "offset": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
       "forward": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.3
+        "z": 0.30000001192092896
       }
     },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigBulletPattern",
       "collision": {
-        "targetType": "Enemy",
         "triggerType": "TriggerNoRepeat",
+        "targetType": "Enemy",
         "ignoreScene": true
       },
       "triggerActions": [
@@ -70,11 +60,6 @@
           "abilityName": "Panther_None_FollowBullet"
         }
       ]
-    },
-    "abilities": [
-      {
-        "abilityName": "Panther_None_FollowBullet"
-      }
-    ]
+    }
   }
 }

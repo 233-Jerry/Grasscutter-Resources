@@ -1,17 +1,14 @@
 {
-  /////////////////////////////////////////////////////////////////
-  //
-  //	雪葬的星银宝箱
-  //  gadget 70217007 1
-  //
-  //////////////////////////////////////////////////////////////////
   "SceneObj_Area_Ljxs_Property_Prop_ChestClaymoreDragonfell_01": {
     "$type": "ConfigGadget",
+    "model": {
+      "bornEffect": "Eff_SceneObj_ChestClaymoreDragonfell_01_Born",
+      "attachEffect": ""
+    },
     "hasModel": true,
-    //该注释用于探索元素视野的最小集合设置
     "combat": {
       "property": {
-        "HP": 99999,
+        "HP": 99999.0,
         "isInvincible": true,
         "isLockHP": true,
         "isGhostToAllied": true,
@@ -19,42 +16,46 @@
       },
       "die": {
         "dieEndTime": 0.5,
-        "dieForceDisappearTime": 1
+        "dieForceDisappearTime": 1.0,
+        "dieDisappearEffect": ""
       }
     },
-    "model": {
-      "bornEffect": "Eff_SceneObj_ChestClaymoreDragonfell_01_Born"
-    },
-    "uiInteract": {
-      "onTouch": "NormalChest"
-    },
-    "misc": {
-      "chest": {
-        "triggerOpenChestVo": true
-      },
-      "pickup": {
-        "$type": "ConfigPickup"
-      }
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Ability1",
-        "abilityName": "SceneObj_Area_Ljxs_Property_Prop_ChestClaymoreDragonfell_01_Ability"
+        "abilityName": "SceneObj_Area_Ljxs_Property_Prop_ChestClaymoreDragonfell_01_Ability",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "uiInteract": {
+      "gadgetUIBtnCfgPath": "TEST/TEST_Chest_Btn",
+      "uiName": "",
+      "onTouch": "NormalChest",
+      "icon": "",
+      "BHAPJKELFJE": "",
+      "GJAHHEPEPFG": "",
+      "JAFIDGPDODA": ""
+    },
+    "misc": {
+      "chest": {
+        "openEffect": "",
+        "LMAPKOFJCLP": true
+      },
+      "pickup": {
+        "bornEffect": "",
+        "dropEffect": "",
+        "attractAudio": ""
+      },
+      "escapeEffect": ""
+    }
   },
-  /////////////////////////////////////////////////////////////////
-  //
-  //	海神神龛宝箱
-  //
-  //////////////////////////////////////////////////////////////////
   "SceneObj_Area_Dq_Property_Build_WataShrineChest_01": {
     "$type": "ConfigGadget",
     "hasModel": true,
-    //该注释用于探索元素视野的最小集合设置
     "combat": {
       "property": {
-        "HP": 99999,
+        "HP": 99999.0,
         "isInvincible": true,
         "isLockHP": true,
         "isGhostToAllied": true,
@@ -62,31 +63,38 @@
       },
       "die": {
         "dieEndTime": 0.5,
-        "dieForceDisappearTime": 1
+        "dieForceDisappearTime": 1.0,
+        "dieDisappearEffect": ""
       }
     },
-    /*
-		"model":
-		{
-			"bornEffect":"Eff_SceneObj_ChestClaymoreDragonfell_01_Born",
-		},
-		*/
-    "uiInteract": {
-      "onTouch": "NormalChest"
-    },
-    "misc": {
-      "chest": {
-        "triggerOpenChestVo": true
-      },
-      "pickup": {
-        "$type": "ConfigPickup"
-      }
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Ability1",
-        "abilityName": "SceneObj_Area_Dq_Property_Build_WataShrineChest_01_Ability"
+        "abilityName": "SceneObj_Area_Dq_Property_Build_WataShrineChest_01_Ability",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "uiInteract": {
+      "gadgetUIBtnCfgPath": "TEST/TEST_Chest_Btn",
+      "uiName": "",
+      "onTouch": "NormalChest",
+      "icon": "",
+      "BHAPJKELFJE": "",
+      "GJAHHEPEPFG": "",
+      "JAFIDGPDODA": ""
+    },
+    "misc": {
+      "chest": {
+        "openEffect": "",
+        "LMAPKOFJCLP": true
+      },
+      "pickup": {
+        "bornEffect": "",
+        "dropEffect": "",
+        "attractAudio": ""
+      },
+      "escapeEffect": ""
+    }
   }
 }

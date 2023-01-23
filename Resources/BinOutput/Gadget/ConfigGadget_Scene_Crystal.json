@@ -1,72 +1,53 @@
 {
-  // 元素水晶
   "Element_Crystal": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 0.4
+        "scaleZ": 0.4000000059604645
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
-        "attack": 150,
-        "defense": 0,
-        "weight": 50,
-        "isInvincible": false,
+        "HP": 99999.0,
+        "attack": 150.0,
+        "weight": 50.0,
         "isLockHP": true,
-        "endure": 99,
         "isGhostToAllied": true,
-        "isGhostToEnemy": false,
         "canTriggerBullet": false
-      },
-      "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
       },
       "beHit": {
         "hitBloodEffect": "",
         "hitAutoRedirect": false,
-        "muteAllHit": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
+      },
       "die": {
-        "dieForceDisappearTime": 3.0
+        "dieForceDisappearTime": 3.0,
+        "dieDisappearEffect": ""
       }
     },
+    "attackAttenuation": "",
     "misc": {
-      "bornState": "Default",
       "crystal": {
-        "elementType": "None",
         "gainSpeed": 3,
         "drainSpeed": 1,
         "resonateLevels": [6, 10],
         "burstResonate": 15,
+        "burstSkill": "",
         "burstTime": 5,
         "respawnTime": 5
-      }
-    },
-    "aibeta": {
-      "enable": true,
-      "moveSetting": {
-        "enable": false
       },
-      "sensing": {
-        "enable": false
-      },
-      "defendArea": {
-        "enable": false
-      }
+      "escapeEffect": ""
     },
     "stateLayers": {
       "defaultLayer": {
         "$type": "ConfigNormalStateLayer",
+        "layerIndexName": "",
         "stateIDs": {
           "Burst_Skill": {
             "$type": "ConfigNormalStateIDInfo",
@@ -77,321 +58,297 @@
         }
       }
     },
-    "abilities": [
-      /*			{
-				"abilityID": "Crystal_Burst_Skill_Wind",
-				
-				"abilityName":"Crystal_Burst_Skill_Wind"
-			},*/
-    ]
+    "aibeta": {
+      "enable": true,
+      "moveSetting": {
+        "enable": false,
+        "navMeshAgentName": "Undead01"
+      },
+      "sensing": {
+        "enable": false
+      },
+      "defendArea": {
+        "enable": false
+      }
+    }
   },
-  //////////////////////////////////////////////////////////////////
-  //
-  // 搜刮点
-  //
-  //////////////////////////////////////////////////////////////////
   "SearchPoint": {
     "$type": "ConfigGadget",
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
-        "attack": 0,
-        "defense": 0,
-        "weight": 50,
-        "isInvincible": false,
+        "HP": 99999.0,
+        "weight": 50.0,
         "isLockHP": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "canTriggerBullet": true
-      },
-      "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "hitAutoRedirect": false,
-        "muteAllHit": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
       }
     },
+    "attackAttenuation": "",
     "uiInteract": {
-      "onTouch": "NormalChest"
-    },
-    "intee": {
-      "$type": "ConfigIntee",
-      "triggerRadius": 2,
-      "triggerHeight": 3.5
+      "gadgetUIBtnCfgPath": "TEST/TEST_Chest_Btn",
+      "uiName": "",
+      "onTouch": "NormalChest",
+      "icon": "",
+      "BHAPJKELFJE": "",
+      "GJAHHEPEPFG": "",
+      "JAFIDGPDODA": ""
     },
     "misc": {
       "chest": {
         "openEffect": "Eff_SearchPoint_Active"
-      }
+      },
+      "escapeEffect": ""
+    },
+    "intee": {
+      "triggerRadius": 2.0,
+      "triggerHeight": 3.5
     }
   },
-  //////////////////////////////////////////////////////////////////
-  //
-  // 搜刮点_大
-  //
-  //////////////////////////////////////////////////////////////////
   "SearchPoint_Big": {
     "$type": "ConfigGadget",
-    "hasModel": true,
     "model": {
+      "bornEffect": "",
       "attachEffect": "Eff_Quest_SiteInteract"
     },
+    "hasModel": true,
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
-        "attack": 0,
-        "defense": 0,
-        "weight": 50,
-        "isInvincible": false,
+        "HP": 99999.0,
+        "weight": 50.0,
         "isLockHP": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "canTriggerBullet": true
-      },
-      "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "hitAutoRedirect": false,
-        "muteAllHit": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
       }
     },
+    "attackAttenuation": "",
     "uiInteract": {
-      "onTouch": "NormalChest"
-    },
-    "intee": {
-      "$type": "ConfigIntee",
-      "triggerRadius": 2,
-      "triggerHeight": 3.5
+      "gadgetUIBtnCfgPath": "TEST/TEST_Chest_Btn",
+      "uiName": "",
+      "onTouch": "NormalChest",
+      "icon": "",
+      "BHAPJKELFJE": "",
+      "GJAHHEPEPFG": "",
+      "JAFIDGPDODA": ""
     },
     "misc": {
       "chest": {
         "openEffect": "Eff_SearchPoint_Active"
-      }
+      },
+      "escapeEffect": ""
+    },
+    "intee": {
+      "triggerRadius": 2.0,
+      "triggerHeight": 3.5
     }
-
-    // "abilities":
-    // [
-    // 	{
-    // 		"abilityID": "SceneObj_Quest_Interact_Point_01_Eff",
-    // 		"abilityName":"SceneObj_Quest_Interact_Point_01_Eff",
-    // 	},
-    // ],
   },
-  /////////////////////////////////////////////////////////////////
-  //
-  //	水上搜刮点
-  //
-  //////////////////////////////////////////////////////////////////
   "SearchPoint_OnWater": {
     "$type": "ConfigGadget",
     "hasModel": true,
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
-        "attack": 0,
-        "defense": 0,
-        "weight": 50,
-        "isInvincible": false,
+        "HP": 99999.0,
+        "weight": 50.0,
         "isLockHP": true,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
         "canTriggerBullet": false
-      },
-      "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
       },
       "beHit": {
         "hitBloodEffect": "",
-        "muteAllHit": true,
-        "muteAllHitEffect": false,
-        "muteAllHitText": false
+        "muteAllHit": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
       },
       "die": {
-        "dieEndTime": 0,
-        "dieForceDisappearTime": 0
+        "dieForceDisappearTime": 0.0,
+        "dieDisappearEffect": ""
       }
     },
+    "attackAttenuation": "",
     "uiInteract": {
-      "alwaysInteractive": true,
-      "onTouch": "NormalChest"
-    },
-    "intee": {
-      "$type": "ConfigIntee",
-      "triggerRadius": 2,
-      "triggerHeight": 3.5
+      "gadgetUIBtnCfgPath": "TEST/TEST_Chest_Btn",
+      "uiName": "",
+      "onTouch": "NormalChest",
+      "icon": "",
+      "BHAPJKELFJE": "",
+      "GJAHHEPEPFG": "",
+      "JAFIDGPDODA": "",
+      "alwaysInteractive": true
     },
     "misc": {
       "chest": {
         "openEffect": "Eff_SceneObj_SearchWater_01"
-      }
+      },
+      "escapeEffect": ""
+    },
+    "intee": {
+      "triggerRadius": 2.0,
+      "triggerHeight": 3.5
     }
   },
-  /////////////////////////////////////////////////////////////////
-  //
-  //	岩调查点
-  //
-  //////////////////////////////////////////////////////////////////
   "SearchPoint_Rock": {
     "$type": "ConfigGadget",
     "hasModel": true,
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
-        "attack": 0,
-        "defense": 0,
-        "weight": 50,
-        "isInvincible": false,
+        "HP": 99999.0,
+        "weight": 50.0,
         "isLockHP": true,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
         "canTriggerBullet": false
-      },
-      "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
       },
       "beHit": {
         "hitBloodEffect": "",
-        "muteAllHit": true,
-        "muteAllHitEffect": false,
-        "muteAllHitText": false
+        "muteAllHit": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
       },
       "die": {
-        "dieEndTime": 0,
-        "dieForceDisappearTime": 0
+        "dieForceDisappearTime": 0.0,
+        "dieDisappearEffect": ""
       }
     },
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "SearchPoint_Rock",
+        "abilityName": "SearchPoint_Rock",
+        "abilityOverride": ""
+      }
+    ],
     "uiInteract": {
-      "alwaysInteractive": true,
-      "onTouch": "NormalChest"
+      "gadgetUIBtnCfgPath": "TEST/TEST_Chest_Btn",
+      "uiName": "",
+      "onTouch": "NormalChest",
+      "icon": "",
+      "BHAPJKELFJE": "",
+      "GJAHHEPEPFG": "",
+      "JAFIDGPDODA": "",
+      "alwaysInteractive": true
     },
     "misc": {
       "chest": {
         "openEffect": "Eff_SearchPoint_Active"
-      }
-    },
-    "abilities": [
-      {
-        "abilityID": "SearchPoint_Rock",
-
-        "abilityName": "SearchPoint_Rock"
-      }
-    ]
+      },
+      "escapeEffect": ""
+    }
   },
-  //////////////////////////////////////////////////////////////////
-  //
-  // 隐形搜刮点 - 狗狗搜索测试
-  //
-  //////////////////////////////////////////////////////////////////
   "SearchPoint_Invisible": {
     "$type": "ConfigGadget",
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
-        "attack": 0,
-        "defense": 0,
-        "weight": 50,
-        "isInvincible": false,
+        "HP": 99999.0,
+        "weight": 50.0,
         "isLockHP": true,
         "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "canTriggerBullet": true
-      },
-      "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "hitAutoRedirect": false,
-        "muteAllHit": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
       }
     },
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "ability_01",
+        "abilityName": "SearchPoint_Invisible",
+        "abilityOverride": ""
+      }
+    ],
     "uiInteract": {
-      "onTouch": "NormalChest"
+      "gadgetUIBtnCfgPath": "TEST/TEST_Chest_Btn",
+      "uiName": "",
+      "onTouch": "NormalChest",
+      "icon": "",
+      "BHAPJKELFJE": "",
+      "GJAHHEPEPFG": "",
+      "JAFIDGPDODA": ""
     },
     "misc": {
       "chest": {
         "openEffect": ""
-      }
-    },
-    "abilities": [
-      {
-        "abilityID": "ability_01",
-        "abilityName": "SearchPoint_Invisible"
-      }
-    ]
+      },
+      "escapeEffect": ""
+    }
   },
-  /////////////////////////////////////////////////////////////////
-  //
-  //	BGM因子
-  //
-  //////////////////////////////////////////////////////////////////
   "SceneObj_Area_Common_Property_Ani_Prop_BGM_01": {
     "$type": "ConfigGadget",
-    "hasModel": true,
     "model": {
+      "bornEffect": "",
       "attachEffect": "Eff_SceneObj_BGM_01"
     },
+    "hasModel": true,
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
-        "attack": 0,
-        "defense": 0,
-        "weight": 50,
-        "isInvincible": false,
+        "HP": 99999.0,
+        "weight": 50.0,
         "isLockHP": true,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
         "canTriggerBullet": false
-      },
-      "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
       },
       "beHit": {
         "hitBloodEffect": "",
-        "muteAllHit": true,
-        "muteAllHitEffect": false,
-        "muteAllHitText": false
+        "muteAllHit": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
       },
       "die": {
-        "dieEndTime": 0,
-        "dieForceDisappearTime": 0
+        "dieForceDisappearTime": 0.0,
+        "dieDisappearEffect": ""
       }
     },
+    "attackAttenuation": "",
     "uiInteract": {
-      "alwaysInteractive": true,
-      "onTouch": "NormalChest"
-    },
-    "intee": {
-      "$type": "ConfigIntee",
-      "triggerRadius": 2,
-      "triggerHeight": 3.5
+      "gadgetUIBtnCfgPath": "TEST/TEST_Chest_Btn",
+      "uiName": "",
+      "onTouch": "NormalChest",
+      "icon": "",
+      "BHAPJKELFJE": "",
+      "GJAHHEPEPFG": "",
+      "JAFIDGPDODA": "",
+      "alwaysInteractive": true
     },
     "misc": {
       "chest": {
         "openEffect": "Eff_SearchPoint_Active"
-      }
+      },
+      "escapeEffect": ""
+    },
+    "intee": {
+      "triggerRadius": 2.0,
+      "triggerHeight": 3.5
     }
   }
 }

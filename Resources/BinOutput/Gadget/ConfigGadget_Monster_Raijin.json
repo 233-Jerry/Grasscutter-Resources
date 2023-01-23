@@ -1,140 +1,128 @@
 {
-  ////////////////////////////////////////////////////////////////
-  //
-  //  雷音化身 空气墙
-  //
-  ////////////////////////////////////////////////////////////////
   "Raijin_AirWall": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
-        "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1
+        "$type": "ConfigEffectAttachBox"
       },
+      "mass": 5.0,
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "mass": 5.0
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
         "useCreatorProperty": true,
-        "HP": 1,
-        "defense": 999999,
+        "HP": 1.0,
+        "defense": 999999.0,
         "isLockHP": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true,
         "canTriggerBullet": false
       },
       "combatLock": {
-        "denyLockOn": true
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 999999 //存在时间
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Raijin_AirWall"
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_AirWall",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "timer": {
+      "lifeTime": 999999.0
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  雷音化身 出生点
-  //
-  ////////////////////////////////////////////////////////////////
   "Raijin_BornPoint": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 0.4
+        "scaleZ": 0.4000000059604645
       },
+      "mass": 5.0,
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "mass": 5.0
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
         "useCreatorProperty": true,
-        "HP": 1,
-        "defense": 999999,
+        "HP": 1.0,
+        "defense": 999999.0,
         "isLockHP": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true,
         "canTriggerBullet": false
       },
       "combatLock": {
-        "denyLockOn": true
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 999999 //存在时间
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Raijin_BornPoint"
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_BornPoint",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "timer": {
+      "lifeTime": 999999.0
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  雷音化身 电棱刺
-  //
-  ////////////////////////////////////////////////////////////////
   "Raijin_ThunderCrystal_Bullet": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 0.4
+        "scaleZ": 0.4000000059604645
       },
+      "mass": 5.0,
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "mass": 5.0
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
         "useCreatorProperty": true,
-        "HP": 1,
-        "defense": 999999,
+        "HP": 1.0,
+        "defense": 999999.0,
         "isLockHP": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true,
         "canTriggerBullet": false
       },
       "combatLock": {
-        "denyLockOn": true
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
+    },
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_ThunderCrystal_Bullet",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 3.0
     },
     "move": {
       "$type": "ConfigLinerBulletMove",
-      "speed": 60
-    },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 3 //存在时间
+      "speed": 60.0
     },
     "gadget": {
       "$type": "ConfigBulletPattern",
       "collision": {
-        "targetType": "Enemy",
         "triggerType": "TriggerNoRepeat",
-        "ignoreScene": false
+        "targetType": "Enemy"
       },
       "triggerActions": [
         {
@@ -143,184 +131,172 @@
         }
       ],
       "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Monster_Raijin_ThunderCrystal_Bullet"
-      }
-    ]
+    }
   },
   "Raijin_ThunderCrystal_Gadget": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 0.4
+        "scaleZ": 0.4000000059604645
       },
+      "mass": 5.0,
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "mass": 5.0
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "attack": 1000,
-        "HP": 9999,
-        "defense": 999999,
+        "HP": 9999.0,
+        "attack": 1000.0,
+        "defense": 999999.0,
         "isLockHP": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true,
         "canTriggerBullet": false
       },
       "combatLock": {
-        "denyLockOn": true
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 21 //存在时间
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Raijin_ThunderCrystal_Gadget"
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_ThunderCrystal_Gadget",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "timer": {
+      "lifeTime": 21.0
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  雷音化身 唤雷
-  //
-  ////////////////////////////////////////////////////////////////
   "Raijin_SummonThunder": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 0.4
+        "scaleZ": 0.4000000059604645
       },
+      "mass": 5.0,
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "mass": 5.0
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
         "useCreatorProperty": true,
-        "HP": 1,
-        "defense": 999999,
+        "HP": 1.0,
+        "defense": 999999.0,
         "isLockHP": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true,
         "canTriggerBullet": false
       },
       "combatLock": {
-        "denyLockOn": true
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 10 //存在时间
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Raijin_SummonThunder_Gadget"
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_SummonThunder_Gadget",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "timer": {
+      "lifeTime": 10.0
+    }
   },
   "Raijin_SummonThunder_Children": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 0.4
+        "scaleZ": 0.4000000059604645
       },
+      "mass": 5.0,
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "mass": 5.0
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
         "useCreatorProperty": true,
-        "HP": 1,
-        "defense": 999999,
+        "HP": 1.0,
+        "defense": 999999.0,
         "isLockHP": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true,
         "canTriggerBullet": false
       },
       "combatLock": {
-        "denyLockOn": true
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 10 //存在时间
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Raijin_SummonThunder_Children"
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_SummonThunder_Children",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "timer": {
+      "lifeTime": 10.0
+    }
   },
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  雷音化身 雷枪
-  //
-  ////////////////////////////////////////////////////////////////
   "Raijin_ThunderSpear": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 0.4
+        "scaleZ": 0.4000000059604645
       },
+      "mass": 5.0,
       "affectedByWorld": true,
-      "checkInSurface": true,
-      "mass": 5.0
+      "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
         "useCreatorProperty": true,
-        "HP": 1,
-        "defense": 999999,
+        "HP": 1.0,
+        "defense": 999999.0,
         "isLockHP": true,
         "isGhostToAllied": true,
         "isGhostToEnemy": true,
         "canTriggerBullet": false
       },
       "combatLock": {
-        "denyLockOn": true
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
+    },
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_ThunderSpear_Bullet",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 3.0
     },
     "move": {
       "$type": "ConfigLinerBulletMove",
-      "speed": 50
-    },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 3 //存在时间
+      "speed": 50.0
     },
     "gadget": {
       "$type": "ConfigBulletPattern",
       "collision": {
-        "targetType": "Enemy",
         "triggerType": "TriggerNoRepeat",
+        "targetType": "Enemy",
         "ignoreScene": true
       },
       "triggerActions": [
@@ -330,366 +306,323 @@
         }
       ],
       "killByOther": true
-    },
-    "abilities": [
-      {
-        "abilityName": "Monster_Raijin_ThunderSpear_Bullet"
-      }
-    ]
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  雷音化身 雷罚 预警
-  //
-  ////////////////////////////////////////////////////////////////
   "Raijin_ThunderPunish_Warning": {
     "$type": "ConfigGadget",
-    "hasModel": true,
     "common": {
-      "scale": 1.2,
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.2,
-        "scaleY": 1.2,
-        "scaleZ": 1.2
-      }
+        "scaleX": 1.2000000476837158,
+        "scaleY": 1.2000000476837158,
+        "scaleZ": 1.2000000476837158
+      },
+      "scale": 1.2000000476837158
     },
+    "hasModel": true,
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 15.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": true,
-        "canTriggerBullet": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
-        "muteAllHit": false,
         "hitAutoRedirect": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 11 //存在时间
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Raijin_ThunderPunish_Warning"
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_ThunderPunish_Warning",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "timer": {
+      "lifeTime": 11.0
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  雷音化身 雷罚 伤害
-  //
-  ////////////////////////////////////////////////////////////////
   "Raijin_ThunderPunish": {
     "$type": "ConfigGadget",
-    "hasModel": true,
     "common": {
-      "scale": 1.2,
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.2,
-        "scaleY": 1.2,
-        "scaleZ": 1.2
-      }
+        "scaleX": 1.2000000476837158,
+        "scaleY": 1.2000000476837158,
+        "scaleZ": 1.2000000476837158
+      },
+      "scale": 1.2000000476837158
     },
+    "hasModel": true,
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 15.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": true,
-        "canTriggerBullet": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
-        "muteAllHit": false,
         "hitAutoRedirect": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
+    },
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_ThunderPunish_Gadget",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 7.5
     },
     "move": {
       "$type": "ConfigTrackBulletMove",
-      "speed": 5,
-      "destroyWhenTargetDie": false,
-      "traceOnYAxis": false,
+      "velocityForce": {
+        "excludeForces": ["WindZoneType"]
+      },
+      "speed": 5.0,
+      "canBornInWater": true,
       "updateAngle": {
         "$type": "ConfigBulletMoveAngleByVelocity",
-        "traceLerpCoef": 360
+        "traceLerpCoef": 360.0
       },
-      "canBornInWater": true,
       "stickToGround": {
-        "$type": "ConfigMoveStickToGround",
-        "heightToGround": 0.2,
-        "flexibleRange": 0.3,
         "maxStepHeight": 0.5,
-        "maxSlopeAngle": 60,
+        "maxSlopeAngle": 60.0,
+        "heightToGround": 0.20000000298023224,
+        "flexibleRange": 0.30000001192092896,
         "isStickToWater": true,
         "unstickWhenDownSlide": "Keep",
         "unstickWhenUpSlide": "Keep"
-      },
-      "velocityForce": {
-        "excludeForces": ["WindZoneType"]
       }
-    },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 7.5 //存在时间
-    },
-    "abilities": [
-      {
-        "abilityName": "Monster_Raijin_ThunderPunish_Gadget"
-      }
-    ]
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  雷音化身 电网生成点 左
-  //
-  ////////////////////////////////////////////////////////////////
   "Raijin_ThunderNet_Born": {
     "$type": "ConfigGadget",
-    "hasModel": true,
     "common": {
-      "scale": 1.2,
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.2,
-        "scaleY": 1.2,
-        "scaleZ": 1.2
-      }
+        "scaleX": 1.2000000476837158,
+        "scaleY": 1.2000000476837158,
+        "scaleZ": 1.2000000476837158
+      },
+      "scale": 1.2000000476837158
     },
+    "hasModel": true,
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 15.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": true,
-        "canTriggerBullet": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
-        "muteAllHit": false,
         "hitAutoRedirect": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 3 //存在时间
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Raijin_ThunderNet_Born"
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_ThunderNet_Born",
+        "abilityOverride": ""
       },
       {
-        "abilityName": "Monster_Raijin_ThunderNet_BornLValue"
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_ThunderNet_BornLValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "timer": {
+      "lifeTime": 3.0
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  雷音化身 电网生成点 右
-  //
-  ////////////////////////////////////////////////////////////////
   "Raijin_ThunderNet_BornR": {
     "$type": "ConfigGadget",
-    "hasModel": true,
     "common": {
-      "scale": 1.2,
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.2,
-        "scaleY": 1.2,
-        "scaleZ": 1.2
-      }
+        "scaleX": 1.2000000476837158,
+        "scaleY": 1.2000000476837158,
+        "scaleZ": 1.2000000476837158
+      },
+      "scale": 1.2000000476837158
     },
+    "hasModel": true,
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 15.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": true,
-        "canTriggerBullet": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
-        "muteAllHit": false,
         "hitAutoRedirect": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 3 //存在时间
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Raijin_ThunderNet_Born"
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_ThunderNet_Born",
+        "abilityOverride": ""
       },
       {
-        "abilityName": "Monster_Raijin_ThunderNet_BornRValue"
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_ThunderNet_BornRValue",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "timer": {
+      "lifeTime": 3.0
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  雷音化身 电网瞄准玩家固定点
-  //
-  ////////////////////////////////////////////////////////////////
   "Raijin_ThunderNet_TargetPoint": {
     "$type": "ConfigGadget",
-    "hasModel": true,
     "common": {
-      "scale": 1.2,
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.2,
-        "scaleY": 1.2,
-        "scaleZ": 1.2
-      }
+        "scaleX": 1.2000000476837158,
+        "scaleY": 1.2000000476837158,
+        "scaleZ": 1.2000000476837158
+      },
+      "scale": 1.2000000476837158
     },
+    "hasModel": true,
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 15.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": true,
-        "canTriggerBullet": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
-        "muteAllHit": false,
         "hitAutoRedirect": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 3 //存在时间
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
-        "abilityName": "Monster_Raijin_ThunderNet_TargetPoint"
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_ThunderNet_TargetPoint",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "timer": {
+      "lifeTime": 3.0
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  雷音化身 电网伤害
-  //
-  ////////////////////////////////////////////////////////////////
   "Raijin_ThunderNet": {
     "$type": "ConfigGadget",
-    "hasModel": true,
     "common": {
-      "scale": 1.2,
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.2,
-        "scaleY": 1.2,
-        "scaleZ": 1.2
-      }
+        "scaleX": 1.2000000476837158,
+        "scaleY": 1.2000000476837158,
+        "scaleZ": 1.2000000476837158
+      },
+      "scale": 1.2000000476837158
     },
+    "hasModel": true,
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 15.0,
-        "defense": 999999,
+        "defense": 999999.0,
         "isInvincible": true,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": true,
-        "canTriggerBullet": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "isGhostToEnemy": true
       },
       "beHit": {
         "hitBloodEffect": "",
-        "muteAllHit": false,
         "hitAutoRedirect": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
+    },
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "",
+        "abilityName": "Monster_Raijin_ThunderNet_Gadget",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 3.0
     },
     "move": {
       "$type": "ConfigTrackBulletMove",
-      "speed": 5,
-      "destroyWhenTargetDie": false,
-      "traceOnYAxis": false,
-      "updateAngle": {
-        "$type": "ConfigBulletMoveAngleByVelocity",
-        "traceLerpCoef": 360
-      },
-      "canBornInWater": true,
-      "stickToGround": {
-        "$type": "ConfigMoveStickToGround",
-        "heightToGround": 0.2,
-        "flexibleRange": 0.3,
-        "maxStepHeight": 0.5,
-        "maxSlopeAngle": 60,
-        "isStickToWater": true,
-        "unstickWhenDownSlide": "Keep",
-        "unstickWhenUpSlide": "Keep",
-        "ignoreBarrier": true
-      },
       "velocityForce": {
         "excludeForces": ["WindZoneType"]
+      },
+      "speed": 5.0,
+      "canBornInWater": true,
+      "updateAngle": {
+        "$type": "ConfigBulletMoveAngleByVelocity",
+        "traceLerpCoef": 360.0
+      },
+      "stickToGround": {
+        "maxStepHeight": 0.5,
+        "maxSlopeAngle": 60.0,
+        "heightToGround": 0.20000000298023224,
+        "flexibleRange": 0.30000001192092896,
+        "isStickToWater": true,
+        "HFNDDKGKEIN": true,
+        "unstickWhenDownSlide": "Keep",
+        "unstickWhenUpSlide": "Keep"
       }
-    },
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 3 //存在时间
-    },
-    "abilities": [
-      {
-        "abilityName": "Monster_Raijin_ThunderNet_Gadget"
-      }
-    ]
+    }
   }
 }

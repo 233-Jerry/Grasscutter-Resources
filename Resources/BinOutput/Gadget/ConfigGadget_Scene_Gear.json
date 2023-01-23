@@ -1,28 +1,18 @@
 {
-  ///////////////////////////////////////////
-  //
-  //	机关电球子弹
-  //
-  ///////////////////////////////////////////
   "Gear_ElectricBall": {
     "$type": "ConfigGadget",
     "common": {
       "effectAttachShape": {
         "$type": "ConfigEffectAttachBox",
-        "emitFrom": "Volume",
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 0.4
+        "scaleZ": 0.4000000059604645
       }
     },
     "combat": {
       "property": {
-        "useCreatorProperty": true, // 是否继承创造者的数值
-        "HP": 999999,
+        "useCreatorProperty": true,
+        "HP": 999999.0,
         "attack": 10.0,
-        "defense": 999999,
-        "weight": 10,
-        "denyLockOn": true
+        "defense": 999999.0
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -35,61 +25,63 @@
         "ATK01": {
           "attackPattern": {
             "$type": "ConfigAttackBox",
-            "size": {
-              "x": 0.4,
-              "y": 0.4,
-              "z": 1.0
-            },
-            "duration": 0.0,
             "triggerType": "TriggerNoRepeat",
             "born": {
               "$type": "ConfigBornByTarget"
+            },
+            "size": {
+              "AMODPKJAIGF": 0.4000000059604645,
+              "DBJCBJPOOAP": 0.4000000059604645,
+              "JDFJGADACKC": 1.0
             }
           },
           "attackInfo": {
+            "attackTag": "",
+            "attenuationTag": "",
+            "attenuationGroup": "default",
             "attackProperty": {
-              "damagePercentage": 0.5,
+              "EHFOGJFHDPE": 0.5,
+              "GDADKLDBGIM": 0.0,
               "elementType": "Electric",
-              "elementDurability": 50,
-              "strikeType": "None"
+              "bonusCriticalHurt": 50.0
             },
             "hitPattern": {
               "onHitEffectName": "default",
               "hitImpulseType": "LV2",
               "overrideHitImpulse": {
                 "hitLevel": "Light",
-                "hitImpulseX": 120,
-                "hitImpulseY": 0
+                "JHGPNBPAIHP": 120.0,
+                "hitImpulseY": 0.0
               },
-              "reboundRatio": 0,
-              "hitHaltTime": 0.12,
-              "hitHaltTimeScale": 0.01,
-              "muteHitText": false
+              "hitHaltTime": 0.11999999731779099,
+              "hitHaltTimeScale": 0.009999999776482582
             }
           }
         }
       }
     },
-    // 子弹线性移动
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "Gear_ElectricBall",
+        "abilityName": "Gear_Electric_ElectricBall_Loop",
+        "abilityOverride": ""
+      }
+    ],
+    "timer": {
+      "lifeTime": 2.5
+    },
     "move": {
       "$type": "ConfigLinerBulletMove",
       "speed": 15.0,
-      "acceleration": 0,
       "updateAngle": {
         "$type": "ConfigBulletMoveAngleByVelocity"
       }
     },
-    // 生命周期管理
-    "timer": {
-      "lifeInfinite": false, //如果未触发是否一致存在
-      "lifeTime": 2.5 //存在时间
-    },
-    // 子弹参数
     "gadget": {
       "$type": "ConfigBulletPattern",
       "collision": {
-        "targetType": "Enemy",
-        "triggerType": "TriggerOnce"
+        "targetType": "Enemy"
       },
       "triggerActions": [
         {
@@ -97,206 +89,198 @@
           "attackEvent": "ATK01"
         }
       ]
-    },
-    "abilities": [
-      {
-        "abilityID": "Gear_ElectricBall",
-
-        "abilityName": "Gear_Electric_ElectricBall_Loop"
-      }
-    ]
+    }
   },
-
-  ///////////////////////////////////////////////////////////////////////////////
-  //
-  // 测试版轴承02-机关
-  //
-  ///////////////////////////////////////////////////////////////////////////////
   "Test_Rotation02": {
     "$type": "ConfigGadget",
-    "hasModel": true,
     "common": {
       "effectAttachShape": {
         "$type": "ConfigEffectAttachMesh",
-        "mesh": "EffectMesh",
-        "startSizeRatio": 1.0,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "mesh": "EffectMesh"
       },
       "affectedByWorld": true
     },
+    "hasModel": true,
     "combat": {
       "property": {
-        "HP": 99999,
-        "attack": 10,
+        "HP": 99999.0,
+        "attack": 10.0,
         "isLockHP": true,
-        "endure": 99,
         "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "canTriggerBullet": true,
         "ignorePurgeRate": true
-      },
-      "combatLock": {
-        "denyLockOn": false,
-        "lockType": "Gadget_Lv1"
       },
       "beHit": {
         "hitBloodEffect": "",
         "hitAutoRedirect": false,
-        "muteAllHit": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "lockType": "Gadget_Lv1"
+      },
       "die": {
-        "dieForceDisappearTime": 3.0
+        "dieForceDisappearTime": 3.0,
+        "dieDisappearEffect": ""
       }
     },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Ability_01",
-        "abilityName": "Test_Rotation02_Interact"
+        "abilityName": "Test_Rotation02_Interact",
+        "abilityOverride": ""
       }
     ]
   },
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //	3.2提瓦特牌 角色邀请板
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   "SceneObj_Area_Common_Property_Prop_GCGInviteBoard_01": {
     "$type": "ConfigGadget",
     "hasModel": true,
-    "intee": {
-      "$type": "ConfigIntee",
-      "triggerRadius": 2,
-      "triggerHeight": 2,
-      "triggerOffset": {
-        "x": 0,
-        "y": -2,
-        "z": 0
+    "combat": {
+      "property": {
+        "HP": 99999.0,
+        "attack": 20.0,
+        "weight": 50.0,
+        "isLockHP": true,
+        "isGhostToAllied": true,
+        "isGhostToEnemy": true,
+        "ignoreDamageToSelf": true
+      },
+      "beHit": {
+        "hitBloodEffect": "",
+        "hitAutoRedirect": false,
+        "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
       }
     },
-    "misc": {
-      //"targetIndicatorYOffset": 1.15,//Icon高度改这里
-      "guidePoint": true,
-      "isUIPoint": false,
-      "guidePointManagedByIndicator": true
-    },
-    "billboard": {
-      "$type": "ConfigCombatBillboard",
-      "offsetType": "Normal",
-      "offset": {
-        "x": 0,
-        "y": 2,
-        "z": 0
-      }
-    },
+    "attackAttenuation": "",
     "uiInteract": {
       "gadgetUIBtnCfgPath": "UI/open_gcg_invite_page",
-      "canInteractInCombat": false,
-      "uiName": "UI_GCG_INTEE_WHITE", //白字 打开角色邀请界面
-      "showCondTypes": ["GCG_CHAR_CHALLENGE_NEW"],
-      "showCombType": "LOGIC_NOT",
-      "gadgetUIExtraItems": [
+      "uiName": "UI_GCG_INTEE_WHITE",
+      "BHOJLKNPCDA": "LOGIC_NOT",
+      "ODNHLAIAGFP": ["GCG_CHAR_CHALLENGE_NEW"],
+      "icon": "",
+      "BHAPJKELFJE": "",
+      "GJAHHEPEPFG": "",
+      "JAFIDGPDODA": "",
+      "KIECHJBDAFC": false,
+      "NDINOBHPNDM": [
         {
-          "extraId": 2,
           "gadgetUIBtnCfgPath": "UI/open_gcg_invite_page",
-          "uiName": "UI_GCG_INTEE_YELLOW", //黄字 打开角色邀请界面
-          "showCondTypes": ["GCG_CHAR_CHALLENGE_NEW"],
-          "showCombType": "LOGIC_AND"
+          "uiName": "UI_GCG_INTEE_YELLOW",
+          "BHOJLKNPCDA": "LOGIC_AND",
+          "ODNHLAIAGFP": ["GCG_CHAR_CHALLENGE_NEW"],
+          "icon": "",
+          "BHAPJKELFJE": "",
+          "GJAHHEPEPFG": "",
+          "JAFIDGPDODA": "",
+          "EDDIBGIHFIC": 2
         },
         {
-          "extraId": 3,
           "gadgetUIBtnCfgPath": "UI/open_gcg_pvp_page",
-          "uiName": "UI_GCG_MATCH_OPTION" //打开PVP组队对局邀请/联机匹配界面
-          //"showCondTypes": [],
-          //"showCombType":"LOGIC_AND",
+          "uiName": "UI_GCG_MATCH_OPTION",
+          "icon": "",
+          "BHAPJKELFJE": "",
+          "GJAHHEPEPFG": "",
+          "JAFIDGPDODA": "",
+          "EDDIBGIHFIC": 3
+        },
+        {
+          "gadgetUIBtnCfgPath": "UI/open_gcg_specialmatch_page",
+          "uiName": "UI_GCG_FESTIVAL_ENTER",
+          "BHOJLKNPCDA": "LOGIC_AND",
+          "ODNHLAIAGFP": ["GCG_FESTIVAL_OPEN"],
+          "icon": "",
+          "BHAPJKELFJE": "",
+          "GJAHHEPEPFG": "",
+          "JAFIDGPDODA": "",
+          "EDDIBGIHFIC": 4
+        },
+        {
+          "gadgetUIBtnCfgPath": "UI/open_gcg_specialmatch_page",
+          "uiName": "UI_GCG_FESTIVAL_ENTER_YELLOW",
+          "BHOJLKNPCDA": "LOGIC_AND",
+          "ODNHLAIAGFP": ["GCG_FESTIVAL_ENTRY_NEW"],
+          "icon": "",
+          "BHAPJKELFJE": "",
+          "GJAHHEPEPFG": "",
+          "JAFIDGPDODA": "",
+          "EDDIBGIHFIC": 5
         }
       ]
+    },
+    "misc": {
+      "escapeEffect": "",
+      "guidePoint": true,
+      "OBNIFPCCJPG": true
     },
     "gadgetAction": {
       "gadgetStateActionList": [
         {
-          //无交互
           "$type": "ConfigGadgetStateEnableGadgetIntee",
-          "enable": false,
           "gadgetState": "GearStop"
         },
         {
           "$type": "ConfigGadgetStateEnableGadgetIntee",
-          "enable": true,
-          "gadgetState": "GearStart"
+          "gadgetState": "GearStart",
+          "enable": true
         },
         {
           "$type": "ConfigGadgetStateEnableGadgetIntee",
-          "enable": true,
-          "gadgetState": "Default"
+          "enable": true
         }
       ]
     },
-    "combat": {
-      "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
-        "attack": 20,
-        "defense": 0,
-        "weight": 50,
-        "isInvincible": false,
-        "isLockHP": true,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "canTriggerBullet": true,
-        "ignoreDamageToSelf": true
-      },
-      "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
-      },
-      "beHit": {
-        "hitBloodEffect": "",
-        "hitAutoRedirect": false,
-        "muteAllHit": false,
-        "muteAllHitEffect": false,
-        "muteAllHitText": true
+    "billboard": {
+      "$type": "ConfigCombatBillboard",
+      "attachPoint": "BillboardAttach",
+      "offset": {
+        "y": 2.0
+      }
+    },
+    "intee": {
+      "triggerRadius": 2.0,
+      "IBIENEKEKLF": {
+        "y": -2.0
       }
     }
   },
-  /////////////////////////////////////////////////////////////
-  //
-  // 小平原风场水晶
-  //
-  /////////////////////////////////////////////////////////////
   "WindDevice01": {
     "$type": "ConfigGadget",
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
-        "attack": 20,
-        "defense": 0,
-        "weight": 50,
+        "HP": 99999.0,
+        "attack": 20.0,
+        "weight": 50.0,
         "isInvincible": true,
-        "isLockHP": true,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
-        "canTriggerBullet": true
-      },
-      "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
+        "isLockHP": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "hitAutoRedirect": false,
-        "muteAllHit": false,
-        "muteAllHitEffect": false,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
       }
     },
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "Ability_01",
+        "abilityName": "WindDevice01_Interact",
+        "abilityOverride": ""
+      }
+    ],
     "stateLayers": {
       "defaultLayer": {
         "$type": "ConfigNormalStateLayer",
+        "layerIndexName": "",
         "stateIDs": {
           "All": {
             "$type": "ConfigNormalStateIDInfo",
@@ -307,46 +291,16 @@
           }
         }
       }
-    },
-    "abilities": [
-      {
-        "abilityID": "Ability_01",
-
-        "abilityName": "WindDevice01_Interact"
-      }
-    ]
+    }
   },
-
-  //////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //	重力测量仪
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   "SceneObj_Gear_WhiteBox_Weight": {
     "$type": "ConfigGadget",
-    "field": {
-      "concernType": "CombatExcludeGWGO",
-      "shape": "", //形状，不填为collider
-      "checkInterval": 0, //触发间隔
-      "triggerInfinite": true, //是否永远触发
-      "lifeInfinite": true, //如果未触发是否一致存在
-      "overwriteCampType": true,
-      "campType": "All"
-    },
     "combat": {
       "property": {
-        "HP": 1,
-        "attack": 80,
-        "defense": 0,
-        "weight": 80,
-        "isLockHP": true,
-        "isGhostToAllied": false,
-        "isGhostToEnemy": false,
-        "canTriggerBullet": true
-      },
-      "combatLock": {
-        "denyLockOn": true,
-        "lockType": "Gadget_Lv1"
+        "HP": 1.0,
+        "attack": 80.0,
+        "weight": 80.0,
+        "isLockHP": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -354,13 +308,31 @@
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Gadget_Lv1"
       }
     },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "SceneObj_Gear_WhiteBox_Weight",
-        "abilityName": "SceneObj_Gear_WhiteBox_Weight"
+        "abilityName": "SceneObj_Gear_WhiteBox_Weight",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "field": {
+      "concernType": "CombatExcludeGWGO",
+      "shape": "",
+      "JNOLJCECOND": "",
+      "triggerInfinite": true,
+      "lifeInfinite": true,
+      "overwriteCampType": true,
+      "campType": "All",
+      "COMKEFMMPLO": "",
+      "OPBNELCPONM": ""
+    }
   }
 }
