@@ -809,7 +809,7 @@
           "jumpCancelEnd": 0.0,
           "animatorTriggerOnLanded": "",
           "sheatheOnStart": true,
-          "HOOMCGEOJKG": true
+          "NIBPILKDFEI": true
         },
         "Struggle_Hover": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -911,7 +911,7 @@
           "animatorTriggerOnLanded": "",
           "battouOnStart": true,
           "sheatheOnEnd": true,
-          "IGEFJHCBDNG": true
+          "GKLOMJEEFDO": true
         },
         "Attack02": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -939,7 +939,7 @@
           "canChangeAvatar": [{}],
           "animatorTriggerOnLanded": "",
           "battouOnStart": true,
-          "IGEFJHCBDNG": true
+          "GKLOMJEEFDO": true
         },
         "Attack03": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1330,7 +1330,7 @@
           ],
           "cameraType": "combatNormal",
           "animatorTriggerOnLanded": "",
-          "FDAPECBJIIG": true
+          "BNHLJNCDEPO": true
         },
         "Wanderer_ElementalArt_HoverAir_Move": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1355,7 +1355,7 @@
             "radiusSpringRatio": 5.0
           },
           "animatorTriggerOnLanded": "",
-          "FDAPECBJIIG": true
+          "BNHLJNCDEPO": true
         },
         "Wanderer_ElementalArt_HoverAir_Dash_ToRun": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1381,7 +1381,7 @@
             "radiusSpringRatio": 10.0
           },
           "animatorTriggerOnLanded": "",
-          "FDAPECBJIIG": true
+          "BNHLJNCDEPO": true
         },
         "Wanderer_ElementalArt_HoverAir_Dash_BS": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1505,7 +1505,7 @@
           "sprintCancelEnd": -1.0,
           "animatorTriggerOnLanded": "",
           "sheatheOnStart": true,
-          "FDAPECBJIIG": true
+          "BNHLJNCDEPO": true
         },
         "Wanderer_ElementalArt_HoverAir_Up_Hold": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1526,7 +1526,7 @@
           "cameraType": "combatNormal",
           "animatorTriggerOnLanded": "",
           "sheatheOnStart": true,
-          "FDAPECBJIIG": true
+          "BNHLJNCDEPO": true
         },
         "Wanderer_ElementalArt_HoverAir_Up_AS": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1551,7 +1551,7 @@
           "canChangeAvatar": [{}],
           "animatorTriggerOnLanded": "",
           "sheatheOnStart": true,
-          "FDAPECBJIIG": true
+          "BNHLJNCDEPO": true
         },
         "Wanderer_ElementalArt_Air_AS": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1980,6 +1980,50 @@
             "DoSkill",
             "Jump",
             "GrapplingHook_Drop"
+          ],
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "ActivitySkill_CustomSkill01": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "ActivitySkill_CustomSkill01": []
+          },
+          "moveType": "combatAir",
+          "canDoSkill": true,
+          "massRatio": 100.0,
+          "resetAnimatorTriggerOnEnter": [
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
+          ],
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "Jump",
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
+          ],
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "ActivitySkill_CustomSkill02": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "ActivitySkill_CustomSkill02": []
+          },
+          "moveType": "combatAir",
+          "canDoSkill": true,
+          "massRatio": 100.0,
+          "resetAnimatorTriggerOnEnter": [
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
+          ],
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "Jump",
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
           ],
           "animatorTriggerOnLanded": "",
           "sheatheOnStart": true

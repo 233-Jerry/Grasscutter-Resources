@@ -85,7 +85,7 @@
           {
             "bowDrawStartNormTime": 0.009999999776482582,
             "bowDrawEndNormTime": 0.07199999690055847,
-            "EGHNFLEBHLD": ""
+            "PAAAHDJOKFK": ""
           }
         ],
         "floatID": ""
@@ -98,7 +98,7 @@
           {
             "bowDrawStartNormTime": 0.03099999949336052,
             "bowDrawEndNormTime": 0.07800000160932541,
-            "EGHNFLEBHLD": ""
+            "PAAAHDJOKFK": ""
           }
         ],
         "floatID": ""
@@ -111,7 +111,7 @@
           {
             "bowDrawStartNormTime": 0.09700000286102295,
             "bowDrawEndNormTime": 0.11299999803304672,
-            "EGHNFLEBHLD": ""
+            "PAAAHDJOKFK": ""
           }
         ],
         "floatID": ""
@@ -124,7 +124,7 @@
           {
             "bowDrawStartNormTime": 0.05999999865889549,
             "bowDrawEndNormTime": 0.12700000405311584,
-            "EGHNFLEBHLD": ""
+            "PAAAHDJOKFK": ""
           }
         ],
         "floatID": ""
@@ -136,7 +136,7 @@
         "bowDrawTimes": [
           {
             "bowDrawStartNormTime": 0.5199999809265137,
-            "EGHNFLEBHLD": ""
+            "PAAAHDJOKFK": ""
           }
         ],
         "floatID": ""
@@ -146,7 +146,7 @@
         "states": ["Aim", "FastAim"],
         "bowDrawTimes": [
           {
-            "EGHNFLEBHLD": ""
+            "PAAAHDJOKFK": ""
           }
         ],
         "floatID": ""
@@ -1347,6 +1347,50 @@
             "DoSkill",
             "Jump",
             "GrapplingHook_Drop"
+          ],
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "ActivitySkill_CustomSkill01": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "ActivitySkill_CustomSkill01": []
+          },
+          "moveType": "combatAir",
+          "canDoSkill": true,
+          "massRatio": 100.0,
+          "resetAnimatorTriggerOnEnter": [
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
+          ],
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "Jump",
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
+          ],
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "ActivitySkill_CustomSkill02": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "ActivitySkill_CustomSkill02": []
+          },
+          "moveType": "combatAir",
+          "canDoSkill": true,
+          "massRatio": 100.0,
+          "resetAnimatorTriggerOnEnter": [
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
+          ],
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "Jump",
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
           ],
           "animatorTriggerOnLanded": "",
           "sheatheOnStart": true

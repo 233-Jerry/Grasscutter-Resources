@@ -752,7 +752,7 @@
           "canChangeAvatar": [{}],
           "animatorTriggerOnLanded": "",
           "battouOnStart": true,
-          "PCFGOKLAEPJ": 0.375
+          "ICEGIBJHIGI": 0.375
         },
         "Attack04": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -780,7 +780,7 @@
           "canChangeAvatar": [{}],
           "animatorTriggerOnLanded": "",
           "battouOnStart": true,
-          "PCFGOKLAEPJ": 0.6880000233650208
+          "ICEGIBJHIGI": 0.6880000233650208
         },
         "ExtraAttack_BS": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -849,7 +849,7 @@
           "canChangeAvatar": [{}],
           "animatorTriggerOnLanded": "",
           "battouOnStart": true,
-          "PCFGOKLAEPJ": 0.3709999918937683
+          "ICEGIBJHIGI": 0.3709999918937683
         },
         "Nahida_ElementalArt_BS": {
           "$type": "ConfigAvatarStateIDInfo",
@@ -1404,6 +1404,50 @@
           ],
           "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
+        },
+        "ActivitySkill_CustomSkill01": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "ActivitySkill_CustomSkill01": []
+          },
+          "moveType": "combatAir",
+          "canDoSkill": true,
+          "massRatio": 100.0,
+          "resetAnimatorTriggerOnEnter": [
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
+          ],
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "Jump",
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
+          ],
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "ActivitySkill_CustomSkill02": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "ActivitySkill_CustomSkill02": []
+          },
+          "moveType": "combatAir",
+          "canDoSkill": true,
+          "massRatio": 100.0,
+          "resetAnimatorTriggerOnEnter": [
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
+          ],
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "Jump",
+            "CustomSkill_End_Fly",
+            "CustomSkill_End_Drop"
+          ],
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
         }
       }
     }
@@ -1904,7 +1948,7 @@
       "minTime": 10.0,
       "maxTime": 20.0,
       "performIDs": [202, 200, 200],
-      "DEFALPLMDNC": [
+      "OEHDBGPANJF": [
         {
           "id": 201,
           "time": 80.0
