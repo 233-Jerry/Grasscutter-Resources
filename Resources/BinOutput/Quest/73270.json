@@ -1,66 +1,29 @@
 {
-  "titleTextMapHash": 4052865735,
-  
   "id": 73270,
-  "ICLLDPJFIMA": 0,
-  "NCLEJIILEGL": 0,
   "type": "WQ",
-  "COHOCGBOCFH": "MAINQUEST_TAG_NONE",
-  "PIMPBFFBLNL": "PLAY_MODE_ALL",
-  "NFEGGFJPMJI": "",
-  "desc": "",
-  "_luaPath": "Actor/Quest/WQ73270",
-  "recommendLevel": 0,
-  "repeatable": false,
-  "PEOHODAKLNO": [],
-  "FEHAEKNGFBP": false,
-  "rewardIdList": [],
+  "activeMode": "PLAY_MODE_ALL",
+  "titleTextMapHash": 4052865735,
+  "luaPath": "Actor/Quest/WQ73270",
   "showType": "QUEST_HIDDEN",
-  "HKNKBANBJPP": [],
-  "LACEJNKJBCG": [],
-  "OFCKAEDMIFA": 0,
-  "chapterId": 0,
-  "taskId": 0,
-  "FCPJIFCLDFI": false,
-  "activityId": 0,
   "subQuests": [
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327001,
       "mainId": 73270,
       "order": 1,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 1009382964,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133309138, 138002],
-          "count": 0
+          "param": [133309138, 138002]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
@@ -71,47 +34,27 @@
           "param": ["7327012", "1"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327002,
       "mainId": 73270,
       "order": 2,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 3926334460,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133309136, 136002],
-          "count": 0
+          "param": [133309136, 136002]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
@@ -122,47 +65,27 @@
           "param": ["7327012", "1"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327003,
       "mainId": 73270,
       "order": 3,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 4035659740,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133309117, 117001],
-          "count": 0
+          "param": [133309117, 117001]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
@@ -173,47 +96,27 @@
           "param": ["7327012", "1"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327004,
       "mainId": 73270,
       "order": 4,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 239446748,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133307029, 29002],
-          "count": 0
+          "param": [133307029, 29002]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
@@ -224,47 +127,27 @@
           "param": ["7327012", "1"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327005,
       "mainId": 73270,
       "order": 5,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 3940799300,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133309137, 137002],
-          "count": 0
+          "param": [133309137, 137002]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
@@ -275,47 +158,27 @@
           "param": ["7327012", "1"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327006,
       "mainId": 73270,
       "order": 6,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 972495268,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133309341, 341002],
-          "count": 0
+          "param": [133309341, 341002]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
@@ -326,47 +189,27 @@
           "param": ["7327012", "1"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327007,
       "mainId": 73270,
       "order": 7,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 3846976452,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133310080, 80001],
-          "count": 0
+          "param": [133310080, 80001]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
@@ -377,47 +220,27 @@
           "param": ["7327012", "1"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327008,
       "mainId": 73270,
       "order": 8,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 1355292572,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133310081, 81002],
-          "count": 0
+          "param": [133310081, 81002]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
@@ -428,47 +251,27 @@
           "param": ["7327012", "1"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327009,
       "mainId": 73270,
       "order": 9,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 605948388,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133308058, 58002],
-          "count": 0
+          "param": [133308058, 58002]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
@@ -479,47 +282,27 @@
           "param": ["7327012", "1"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327010,
       "mainId": 73270,
       "order": 10,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 1535803924,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133309132, 132001],
-          "count": 0
+          "param": [133309132, 132001]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
@@ -530,69 +313,43 @@
           "param": ["7327012", "1"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327011,
       "mainId": 73270,
       "order": 12,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 847815164,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [7327012, 3],
-          "count": 0
+          "param": [7327012, 3]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": true,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "finishParent": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
           "param": ["73270", "10"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7327012,
       "mainId": 73270,
       "order": 11,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 2375074636,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
@@ -600,33 +357,13 @@
           "count": 10
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      "guide": {},
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
-      "finishExec": [],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "isRewind": true,
+      "versionBegin": "",
+      "versionEnd": ""
     }
-  ],
-  "talks": [],
-  "LGCLJGGNGBD": [],
-  "OMKMAOLMNCO": [],
-  "KPOKLMBEOBI": {},
-  "MGDNNNGPOGO": 0
+  ]
 }

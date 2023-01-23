@@ -1,49 +1,25 @@
 {
+  "id": 70514,
+  "type": "WQ",
+  "mainQuestTag": "MAINQUEST_TAG_GUIDE",
   "titleTextMapHash": 4169114919,
   "descTextMapHash": 3188716686,
-  "id": 70514,
-  "ICLLDPJFIMA": 0,
-  "NCLEJIILEGL": 0,
-  "type": "WQ",
-  "COHOCGBOCFH": "MAINQUEST_TAG_GUIDE",
-  "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-  "NFEGGFJPMJI": "Tranh Máy Móc Vĩnh Cửu",
-  "desc": "Hình như Félix Yogue đến từ Fontaine đang gặp phải rắc rối gì đó...",
-  "_luaPath": "Actor/Quest/WQ70514",
-  "recommendLevel": 0,
-  "repeatable": false,
-  "PEOHODAKLNO": [],
-  "FEHAEKNGFBP": false,
+  "luaPath": "Actor/Quest/WQ70514",
   "rewardIdList": [170514],
-  "showType": "QUEST_SHOW",
-  "HKNKBANBJPP": [],
-  "LACEJNKJBCG": [],
-  "OFCKAEDMIFA": 0,
-  "chapterId": 0,
-  "taskId": 0,
-  "FCPJIFCLDFI": true,
+  "showRedPoint": true,
   "activityId": 5082,
   "subQuests": [
     {
-      "HDBBFJKKGOM": false,
       "subId": 7051401,
       "mainId": 70514,
       "order": 1,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Nói chuyện với Félix Yogue",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 1499576052,
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7051401, 0],
-          "count": 0
+          "param": [7051401, 0]
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -52,32 +28,18 @@
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
-      "finishExec": [],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "isRewind": true,
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7051402,
       "mainId": 70514,
       "order": 2,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Thu hồi linh kiện",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 3521688180,
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
@@ -85,49 +47,32 @@
           "count": 1
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q7051402_gu_ide", "30"],
+        "param": ["Q7051402_guide", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
-      "finishExec": [],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "isRewind": true,
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7051403,
       "mainId": 70514,
       "order": 3,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Nói chuyện với Félix Yogue",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 3341014924,
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_ITEM_GIVING",
-          "param": [7051403, 0],
-          "count": 0
+          "param": [7051403, 0]
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -136,45 +81,30 @@
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": ["133003070"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7051404,
       "mainId": 70514,
       "order": 4,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Nói chuyện với Félix Yogue",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 2298771268,
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7051404, 0],
-          "count": 0
+          "param": [7051404, 0]
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -183,210 +113,95 @@
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": true,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "finishParent": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
           "param": ["3", "133004074"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     }
   ],
   "talks": [
     {
-      "KDHKACIEPAP": false,
       "id": 7051401,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-      "OBMJNLIAOPP": "LOGIC_NONE",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": ["7051401", "2"]
         }
       ],
       "priority": 5,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 705140101,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [30217, 1437],
-      "GHNCIOJDIEA": "QuestDialogue/WQ/Mengde_70514/Q7051401",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 705140101,
+      "npcId": [30217, 1437],
+      "performCfg": "QuestDialogue/WQ/Mengde_70514/Q7051401",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 70514,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 517295840312,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 70514,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 2675897358977080376,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 7051403,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-      "OBMJNLIAOPP": "LOGIC_NONE",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "beginCond": [
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
           "param": ["7051403"]
         }
       ],
       "priority": 5,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 705140301,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [30217],
-      "GHNCIOJDIEA": "QuestDialogue/WQ/Mengde_70514/Q7051403",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 705140301,
+      "npcId": [30217],
+      "performCfg": "QuestDialogue/WQ/Mengde_70514/Q7051403",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 70514,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 915751045935,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 70514,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 6293049120257215279,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 7051404,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-      "OBMJNLIAOPP": "LOGIC_NONE",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": ["7051404", "2"]
         }
       ],
       "priority": 5,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 705140401,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [30217],
-      "GHNCIOJDIEA": "QuestDialogue/WQ/Mengde_70514/Q7051404",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 705140401,
+      "npcId": [30217],
+      "performCfg": "QuestDialogue/WQ/Mengde_70514/Q7051404",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 70514,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 206592575423,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 70514,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 12110002583219767231,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 7051405,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_SINGLE",
-      "OBMJNLIAOPP": "LOGIC_NONE",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": ["7051402", "2"]
         }
       ],
       "priority": 3,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 705140501,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [30217],
-      "GHNCIOJDIEA": "",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 705140501,
+      "npcId": [30217],
+      "performCfg": "",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 70514,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 1014900070224,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": true,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [1200],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 70514,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 10370162580013586256,
+      "prePerformCfg": "",
+      "lowPriority": true,
+      "NJIEAECGJIH": [1200]
     }
-  ],
-  "LGCLJGGNGBD": [],
-  "OMKMAOLMNCO": [],
-  "KPOKLMBEOBI": {},
-  "MGDNNNGPOGO": 170514
+  ]
 }

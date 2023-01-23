@@ -1,41 +1,17 @@
 {
-  "titleTextMapHash": 4036500863,
-  
   "id": 79037,
-  "ICLLDPJFIMA": 0,
-  "NCLEJIILEGL": 0,
   "type": "WQ",
-  "COHOCGBOCFH": "MAINQUEST_TAG_NONE",
-  "PIMPBFFBLNL": "PLAY_MODE_ALL",
-  "NFEGGFJPMJI": "",
-  "desc": "",
-  "_luaPath": "Actor/Quest/WQ79037",
-  "recommendLevel": 0,
-  "repeatable": false,
-  "PEOHODAKLNO": [],
-  "FEHAEKNGFBP": false,
-  "rewardIdList": [],
+  "activeMode": "PLAY_MODE_ALL",
+  "titleTextMapHash": 4036500863,
+  "luaPath": "Actor/Quest/WQ79037",
   "showType": "QUEST_HIDDEN",
-  "HKNKBANBJPP": [],
-  "LACEJNKJBCG": [],
-  "OFCKAEDMIFA": 0,
-  "chapterId": 0,
-  "taskId": 0,
-  "FCPJIFCLDFI": false,
-  "activityId": 0,
   "subQuests": [
     {
-      "HDBBFJKKGOM": false,
       "subId": 7903701,
       "mainId": 79037,
       "order": 1,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 3972334924,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
@@ -43,83 +19,39 @@
           "count": 1
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      "guide": {},
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
-      "finishExec": [],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "isRewind": true,
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7903702,
       "mainId": 79037,
       "order": 2,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 1511624948,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_DUNGEON",
-          "param": [1140, 31],
-          "count": 0
+          "param": [1140, 31]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      "guide": {},
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": false,
-      "finishExec": [],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7903703,
       "mainId": 79037,
       "order": 3,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 2039993580,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
@@ -130,27 +62,14 @@
       "failCond": [
         {
           "type": "QUEST_CONTENT_LEAVE_SCENE",
-          "param": [20136, 0],
-          "count": 0
+          "param": [20136, 0]
         }
       ],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      "guide": {},
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
@@ -163,21 +82,15 @@
           "param": ["7903701"]
         }
       ],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7903704,
       "mainId": 79037,
       "order": 5,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 951915732,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
@@ -185,83 +98,39 @@
           "count": 1
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      "guide": {},
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
-      "finishExec": [],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "isRewind": true,
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7903705,
       "mainId": 79037,
       "order": 6,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 3562789652,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_DUNGEON",
-          "param": [1140, 31],
-          "count": 0
+          "param": [1140, 31]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      "guide": {},
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": false,
-      "finishExec": [],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7903706,
       "mainId": 79037,
       "order": 7,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 3184312460,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
@@ -272,135 +141,72 @@
       "failCond": [
         {
           "type": "QUEST_CONTENT_LEAVE_SCENE",
-          "param": [20136, 0],
-          "count": 0
+          "param": [20136, 0]
         }
       ],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      "guide": {},
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
-      "finishExec": [],
+      "isRewind": true,
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": ["7903704"]
         }
       ],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7903707,
       "mainId": 79037,
       "order": 4,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 3445868412,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_DUNGEON",
-          "param": [1139, 29],
-          "count": 0
+          "param": [1139, 29]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      "guide": {},
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": false,
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
           "param": ["20134", "220134089,1"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 7903708,
       "mainId": 79037,
       "order": 8,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
+      "descTextMapHash": 1067115092,
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_DUNGEON",
-          "param": [1139, 29],
-          "count": 0
+          "param": [1139, 29]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      "guide": {},
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": false,
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": ["7903704"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     }
-  ],
-  "talks": [],
-  "LGCLJGGNGBD": [],
-  "OMKMAOLMNCO": [],
-  "KPOKLMBEOBI": {},
-  "MGDNNNGPOGO": 0
+  ]
 }

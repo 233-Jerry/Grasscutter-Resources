@@ -1,93 +1,51 @@
 {
+  "id": 23013,
+  "type": "IQ",
+  "activeMode": "PLAY_MODE_ALL",
   "titleTextMapHash": 1606063215,
   "descTextMapHash": 447283638,
-  "id": 23013,
-  "ICLLDPJFIMA": 0,
-  "NCLEJIILEGL": 0,
-  "type": "IQ",
-  "COHOCGBOCFH": "MAINQUEST_TAG_NONE",
-  "PIMPBFFBLNL": "PLAY_MODE_ALL",
-  "NFEGGFJPMJI": "Ca Khúc Khải Hoàn Của Garcia - Vật Mấu Chốt",
-  "desc": "Hình như Garcia và Lutong đang lo lắng về chuyện gì đó...",
-  "_luaPath": "Actor/Quest/IQ23013",
-  "recommendLevel": 0,
+  "luaPath": "Actor/Quest/IQ23013",
   "repeatable": true,
-  "PEOHODAKLNO": [],
-  "FEHAEKNGFBP": false,
-  "rewardIdList": [],
-  "showType": "QUEST_SHOW",
-  "HKNKBANBJPP": [],
-  "LACEJNKJBCG": [],
-  "OFCKAEDMIFA": 0,
-  "chapterId": 0,
-  "taskId": 42020,
-  "FCPJIFCLDFI": false,
-  "activityId": 0,
+  "taskID": 42020,
   "subQuests": [
     {
-      "HDBBFJKKGOM": false,
       "subId": 2301301,
       "mainId": 23013,
       "order": 1,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Nói chuyện với Garcia",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 984281988,
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [2301301, 0],
-          "count": 0
+          "param": [2301301, 0]
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [2301311, 0],
-          "count": 0
+          "param": [2301311, 0]
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [2301350, 0],
-          "count": 0
+          "param": [2301350, 0]
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["20657"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
-      "finishExec": [],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "isRewind": true,
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 2301302,
       "mainId": 23013,
       "order": 3,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Nhận được \"Dịch Slime tươi\"",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 3362217372,
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
@@ -95,76 +53,54 @@
           "count": 1
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": ["Q2301302_gu_ide", "25"],
+        "param": ["Q2301302_guide", "25"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": ["133302103", "0"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 2301303,
       "mainId": 23013,
       "order": 4,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "Báo cáo cho Garcia",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
-      "showType": "QUEST_SHOW",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
+      "descTextMapHash": 1247566740,
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [2301303, 0],
-          "count": 0
+          "param": [2301303, 0]
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [2301352, 0],
-          "count": 0
+          "param": [2301352, 0]
         }
       ],
-      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
         "param": ["20657"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "NKDLEHHCADL": true,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": true,
+      "finishParent": true,
+      "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_DEL_PACK_ITEM",
@@ -179,71 +115,45 @@
           "param": ["42020"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     },
     {
-      "HDBBFJKKGOM": false,
       "subId": 2301304,
       "mainId": 23013,
       "order": 2,
-      "subIdSet": 0,
-      "isMpBlock": false,
-      "desc": "",
-      "LBPMFJBNGGG": "",
-      "AGIIGKJNLIG": "",
       "showType": "QUEST_HIDDEN",
-      "ACEKFDIJKGJ": "BAN_GROUP_INVALID",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [2301304, 0],
-          "count": 0
+          "param": [2301304, 0]
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [2301301, 3],
-          "count": 0
+          "param": [2301301, 3]
         }
       ],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NONE",
-        "autoGuide": "QUEST_GUIDE_AUTO_NONE",
-        "param": [],
-        "guideScene": 0,
-        "guideStyle": "QUEST_GUIDE_STYLE_NONE",
-        "guideLayer": "QUEST_GUIDE_LAYER_NONE"
+      "guide": {},
+      "acceptCondComb": {
+        "CIBOAMHBGPK": ""
       },
-      "showGuide": "QUEST_GUIDE_ITEM_ENABLE",
-      "LPNIEFEBKGK": {
-        "type": "QUEST_GUIDE_HINT_NONE",
-        "param1": ""
-      },
-      "NKDLEHHCADL": false,
-      "HKLAHKJAHJC": false,
-      "failParentShow": "QUEST_SHOW",
-      "EFIFPBKMMAA": false,
       "finishExec": [
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
           "param": ["3", "133302103"]
         }
       ],
-      "failExec": [],
-      "LKPOHELCGKA": "",
-      "PBFCIDGHHHE": ""
+      "versionBegin": "",
+      "versionEnd": ""
     }
   ],
   "talks": [
     {
-      "KDHKACIEPAP": false,
       "id": 2301301,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_HOST",
-      "OBMJNLIAOPP": "LOGIC_AND",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
+      "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": ["2301301", "2"]
@@ -254,45 +164,20 @@
         }
       ],
       "priority": 5,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 230130101,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [20657, 20658],
-      "GHNCIOJDIEA": "QuestDialogue/IQ/Sumeru_23013/Q2301301",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 230130101,
+      "npcId": [20657, 20658],
+      "performCfg": "QuestDialogue/IQ/Sumeru_23013/Q2301301",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 23013,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 591273812461,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 23013,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 10997233428917281261,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 2301302,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_HOST",
-      "OBMJNLIAOPP": "LOGIC_AND",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
+      "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": ["2301302", "2"]
@@ -303,90 +188,39 @@
         }
       ],
       "priority": 5,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 230130201,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [20657, 20658],
-      "GHNCIOJDIEA": "QuestDialogue/IQ/Sumeru_23013/Q2301302",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 230130201,
+      "npcId": [20657, 20658],
+      "performCfg": "QuestDialogue/IQ/Sumeru_23013/Q2301302",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 23013,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 586442815518,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 23013,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 12922299063926732830,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 2301303,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_HOST",
-      "OBMJNLIAOPP": "LOGIC_NONE",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_HOST",
+      "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": ["2301303", "2"]
         }
       ],
       "priority": 5,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 230130301,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [20657],
-      "GHNCIOJDIEA": "QuestDialogue/IQ/Sumeru_23013/Q2301303",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 230130301,
+      "npcId": [20657],
+      "performCfg": "QuestDialogue/IQ/Sumeru_23013/Q2301303",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 23013,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 325606782713,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 23013,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 4586653762804594425,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 2301311,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_HOST",
-      "OBMJNLIAOPP": "LOGIC_AND",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
+      "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": ["2301301", "2"]
@@ -397,45 +231,20 @@
         }
       ],
       "priority": 5,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 230131101,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [20658, 20657],
-      "GHNCIOJDIEA": "QuestDialogue/IQ/Sumeru_23013/Q2301311",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 230131101,
+      "npcId": [20658, 20657],
+      "performCfg": "QuestDialogue/IQ/Sumeru_23013/Q2301311",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 23013,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 823863947688,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 23013,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 1393205201558450600,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 2301350,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_HOST",
-      "OBMJNLIAOPP": "LOGIC_AND",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
+      "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": ["2301301", "2"]
@@ -446,45 +255,20 @@
         }
       ],
       "priority": 6,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 230135001,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [20658, 20657],
-      "GHNCIOJDIEA": "QuestDialogue/IQ/Sumeru_23013/Q2301350",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 230135001,
+      "npcId": [20658, 20657],
+      "performCfg": "QuestDialogue/IQ/Sumeru_23013/Q2301350",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 23013,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 540063856552,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 23013,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 17966573592272467880,
+      "prePerformCfg": ""
     },
     {
-      "KDHKACIEPAP": false,
       "id": 2301351,
-      "EDCMHBHDAHK": "TALK_BEGIN_MANUAL",
-      "PIMPBFFBLNL": "PLAY_MODE_HOST",
-      "OBMJNLIAOPP": "LOGIC_AND",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
+      "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": ["2301302", "2"]
@@ -495,45 +279,21 @@
         }
       ],
       "priority": 6,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 230135101,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [20658],
-      "GHNCIOJDIEA": "",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 230135101,
+      "npcId": [20658],
+      "performCfg": "",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 23013,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 329626860803,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [1171, 1172, 1173, 1050, 1230, 1160],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 23013,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 266837508036934915,
+      "prePerformCfg": "",
+      "NJIEAECGJIH": [1171, 1172, 1173, 1050, 1230, 1160]
     },
     {
-      "KDHKACIEPAP": false,
       "id": 2301352,
-      "EDCMHBHDAHK": "TALK_BEGIN_AUTO",
-      "PIMPBFFBLNL": "PLAY_MODE_HOST",
-      "OBMJNLIAOPP": "LOGIC_AND",
-      "acceptCond": [
+      "beginWay": "TALK_BEGIN_AUTO",
+      "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
+      "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": ["2301303", "2"]
@@ -544,43 +304,16 @@
         }
       ],
       "priority": 6,
-      "GLHPILEDCIH": [],
-      "OPAEHKHBKHL": [],
-      "KGCBFKLPGDB": 0,
-      "DOGCHABLIOA": 230135201,
-      "FEGHBCNNPLB": 0,
-      "npcIdRawNum": [20657],
-      "GHNCIOJDIEA": "QuestDialogue/IQ/Sumeru_23013/Q2301352",
-      "MABMOKMFNJP": "TALK_HERO_MAIN",
-      "BBNAABABCKM": "TALK_NORMAL_QUEST",
+      "initDialog": 230135201,
+      "npcId": [20657],
+      "performCfg": "QuestDialogue/IQ/Sumeru_23013/Q2301352",
+      "heroTalk": "TALK_HERO_MAIN",
       "questId": 23013,
-      "JMICBAGFMDA": [],
-      "JMIFGMHBKGK": 1045608212523,
-      "BHPOEKFGMHB": false,
-      "HGKKDMCIOGH": [],
-      "MOLOPNJEPGH": "",
-      "INALKPHPENP": false,
-      "JMBGJBPFDJG": false,
-      "FDNMFCPGFFI": false,
-      "AAHFEPCHGBB": "TALK_MARK_NONE",
-      "ACLCONLCKGI": false,
-      "NPKDNLBININ": false,
-      "finishExec": [],
-      "CEAIKCLNACM": [],
-      "MCFDNAFKMGJ": [],
-      "LEJMLPCIBPD": [],
-      "ABEPKKIBGCG": [],
-      "NINNIKGFJGP": false,
-      "FONNGGHHMMC": 23013,
-      "EEIJODMHMMM": null,
-      "EBNNFCOIECM": null,
-      "POCLCIKJDPI": 0
+      "assetIndex": 14114553857159407659,
+      "prePerformCfg": ""
     }
   ],
-  "LGCLJGGNGBD": [],
-  "OMKMAOLMNCO": [],
-  "KPOKLMBEOBI": {
+  "freeStyleDic": {
     "20657": [1190]
-  },
-  "MGDNNNGPOGO": 0
+  }
 }
