@@ -1,11 +1,11 @@
 # Grasscutter Resources
-> <em>Resource - "Certain Anime Game" Version 3.3</em><br/>
+> <em>Resource - "Certain Anime Game" Version 3.4</em><br/>
 
-- ExcelBinOutput (3.3 GC)
-- BinOutput (3.3 GIO: Talent>EquipTalents,Scene>SceneNpcBorn,LevelEntity,Gadget,AbilityGroup,Ability | GC 3.3 Avatar,Talent>AvatarTalents | GC ?.? LevelDesign>Routes) | GC 2.7 Quest,Scene>Point,HomeworldDefaultSave
-- Scripts (3.3 GIO) (Used for Big World LUA)
-- TextMap (3.3 GC) (for language translations items,etc are used for gm-books)
-- QuestEncryptionKeys (3.2 GIO) (Used for cutscenes that require a key, see Credits below)
+- ExcelBinOutput - 3.4 TomyJan
+- BinOutput - GC 2.7 Quest,Scene>Point,HomeworldDefaultSave | TomyJan 3.4 All except Quest
+- Scripts - 3.4 GIO ***Used for Big World LUA ***
+- TextMap - 3.4 TomyJan ***for language translations items,etc are used for gm-books***
+- QuestEncryptionKeys - 3.2 GIO ***Used for cutscenes that require a key, see Credits below***
 
 ## What is difference between GIO and GC?
 - GIO is a leaked full file from official server which was released last month (maybe 28/10/2022) which is available from 3.1-4.0 so it's possible that version 3.2+ some animations/characters are still in beta (aka beta old) so data won't be accurate anymore if it's already release because of the many revisions.
@@ -47,7 +47,8 @@ Because there are a lot of useless files, so I made a separate repo: GIO and Gra
 - Natural Spawn for Sumeru area is available.
 
 ## Credits 
- - [Grasscutters Team](https://git.crepe.moe/grasscutters/Grasscutter_Resources) (Everything) <br/> 
+ - [GCTeam](https://git.crepe.moe/grasscutters/Grasscutter_Resources) (Everything) <br/>
+ - [TomyJan](https://github.com/TomyJan/GCResource) <br/>
  - [Dimbreath](https://gitlab.com/Dimbreath/gamedata) (Everything except Script,BinOutput) <br/> 
  - [timing1337](https://github.com/timing1337/GenshinData) (3.1 BinOutput) <br/>
  - [Koko-boya](https://github.com/Koko-boya) (Original Owner Grasscutter_Resources) <br/>
