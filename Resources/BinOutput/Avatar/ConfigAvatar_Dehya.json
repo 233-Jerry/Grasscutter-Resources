@@ -5,8 +5,8 @@
       "mesh": "EffectMesh"
     },
     "mass": 10.0,
-    "height": 1.9089999198913574,
-    "modelHeight": 1.8639999628067017,
+    "height": 1.7630000114440918,
+    "modelHeight": 1.7489999532699585,
     "affectedByWorld": true,
     "checkInSurface": true
   },
@@ -76,12 +76,12 @@
             "$type": "ConfigBornBySelf",
             "offset": {
               "IBKBLDAJIMA": 0.0,
-              "LKHJADIPBFL": -0.5,
-              "PJCOKIGCJOK": 0.800000011920929
+              "LKHJADIPBFL": -0.20000000298023224,
+              "PJCOKIGCJOK": 0.5
             }
           },
-          "height": 1.7999999523162842,
-          "DCMPFCIBIPA": 2.5,
+          "height": 2.0,
+          "DCMPFCIBIPA": 2.200000047683716,
           "detectDirection": "Counterclockwise"
         },
         "attackInfo": {
@@ -89,18 +89,18 @@
           "attenuationTag": "NormalAttack",
           "attenuationGroup": "default",
           "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
+            "HBIOLEEGHPD": 0.6499999761581421,
             "CCNJGLPMIEP": 0.0,
             "bonusCriticalHurt": 25.0,
             "overrideByWeapon": true,
             "strikeType": "Blunt",
-            "enBreak": 82.9000015258789,
+            "enBreak": 93.33000183105469,
             "attackType": "Melee"
           },
           "hitPattern": {
             "onHitEffectName": "default",
             "hitImpulseType": "LV3",
-            "hitHaltTime": 0.07999999821186066,
+            "hitHaltTime": 0.09000000357627869,
             "hitHaltTimeScale": 0.009999999776482582,
             "canBeDefenceHalt": true
           },
@@ -110,55 +110,7 @@
             "shakeTime": 0.11999999731779099,
             "shakeDistance": 30.0,
             "shakeDir": {
-              "x": 1.0,
-              "y": -1.0
-            }
-          }
-        }
-      },
-      "ATK01_Ghost": {
-        "attackPattern": {
-          "$type": "ConfigAttackCircle",
-          "triggerType": "TriggerNoRepeat",
-          "born": {
-            "$type": "ConfigBornBySelf",
-            "offset": {
-              "IBKBLDAJIMA": 0.0,
-              "LKHJADIPBFL": -0.30000001192092896,
-              "PJCOKIGCJOK": 0.800000011920929
-            }
-          },
-          "height": 2.299999952316284,
-          "DCMPFCIBIPA": 3.5,
-          "detectDirection": "Counterclockwise"
-        },
-        "attackInfo": {
-          "attackTag": "NormalAttack_01",
-          "attenuationTag": "NormalAttack",
-          "attenuationGroup": "default",
-          "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
-            "CCNJGLPMIEP": 0.0,
-            "elementType": "Rock",
-            "bonusCriticalHurt": 25.0,
-            "strikeType": "Blunt",
-            "enBreak": 82.9000015258789,
-            "attackType": "Melee"
-          },
-          "hitPattern": {
-            "onHitEffectName": "default",
-            "hitImpulseType": "LV3",
-            "hitHaltTime": 0.07999999821186066,
-            "hitHaltTimeScale": 0.009999999776482582,
-            "canBeDefenceHalt": true
-          },
-          "cameraShake": {
-            "shakeType": "CustomVector",
-            "shakeRange": 0.23999999463558197,
-            "shakeTime": 0.11999999731779099,
-            "shakeDistance": 30.0,
-            "shakeDir": {
-              "x": 1.0,
+              "x": 0.30000001192092896,
               "y": -1.0
             }
           }
@@ -166,87 +118,43 @@
       },
       "ATK02": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "ConfigAttackBox",
           "triggerType": "TriggerNoRepeat",
           "born": {
-            "$type": "ConfigBornBySelf",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "IBKBLDAJIMA": 0.0,
-              "LKHJADIPBFL": -0.30000001192092896,
-              "PJCOKIGCJOK": 0.800000011920929
+              "LKHJADIPBFL": 1.5,
+              "PJCOKIGCJOK": -1.2999999523162842
             }
           },
-          "height": 2.200000047683716,
-          "DCMPFCIBIPA": 2.5,
-          "detectDirection": "Counterclockwise"
+          "size": {
+            "IBKBLDAJIMA": 2.299999952316284,
+            "LKHJADIPBFL": 3.200000047683716,
+            "PJCOKIGCJOK": 4.300000190734863
+          }
         },
         "attackInfo": {
           "attackTag": "NormalAttack_02",
           "attenuationTag": "NormalAttack",
           "attenuationGroup": "default",
           "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
+            "HBIOLEEGHPD": 0.6499999761581421,
             "CCNJGLPMIEP": 0.0,
             "bonusCriticalHurt": 25.0,
             "overrideByWeapon": true,
             "strikeType": "Blunt",
-            "enBreak": 77.9000015258789,
+            "enBreak": 92.72000122070312,
             "attackType": "Melee"
           },
           "hitPattern": {
             "onHitEffectName": "default",
             "hitImpulseType": "LV3",
-            "hitHaltTime": 0.07999999821186066,
+            "hitHaltTime": 0.10000000149011612,
             "hitHaltTimeScale": 0.009999999776482582,
             "canBeDefenceHalt": true
           },
-          "cameraShake": {
-            "shakeType": "CustomVector",
-            "shakeRange": 0.23999999463558197,
-            "shakeTime": 0.11999999731779099,
-            "shakeDistance": 30.0,
-            "shakeDir": {
-              "y": 1.0
-            }
-          }
-        }
-      },
-      "ATK02_Ghost": {
-        "attackPattern": {
-          "$type": "ConfigAttackCircle",
-          "triggerType": "TriggerNoRepeat",
-          "born": {
-            "$type": "ConfigBornBySelf",
-            "offset": {
-              "IBKBLDAJIMA": 0.0,
-              "LKHJADIPBFL": 0.0,
-              "PJCOKIGCJOK": 0.800000011920929
-            }
-          },
-          "height": 2.700000047683716,
-          "DCMPFCIBIPA": 3.5,
-          "detectDirection": "Counterclockwise"
-        },
-        "attackInfo": {
-          "attackTag": "NormalAttack_02",
-          "attenuationTag": "NormalAttack",
-          "attenuationGroup": "default",
-          "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
-            "CCNJGLPMIEP": 0.0,
-            "elementType": "Rock",
-            "bonusCriticalHurt": 25.0,
-            "strikeType": "Blunt",
-            "enBreak": 77.9000015258789,
-            "attackType": "Melee"
-          },
-          "hitPattern": {
-            "onHitEffectName": "default",
-            "hitImpulseType": "LV3",
-            "hitHaltTime": 0.07999999821186066,
-            "hitHaltTimeScale": 0.009999999776482582,
-            "canBeDefenceHalt": true
-          },
+          "forceCameraShake": true,
           "cameraShake": {
             "shakeType": "CustomVector",
             "shakeRange": 0.23999999463558197,
@@ -266,12 +174,12 @@
             "$type": "ConfigBornBySelf",
             "offset": {
               "IBKBLDAJIMA": 0.0,
-              "LKHJADIPBFL": -0.30000001192092896,
-              "PJCOKIGCJOK": 0.8500000238418579
+              "LKHJADIPBFL": -0.20000000298023224,
+              "PJCOKIGCJOK": 0.5
             }
           },
-          "height": 2.5,
-          "DCMPFCIBIPA": 2.5,
+          "height": 2.0,
+          "DCMPFCIBIPA": 1.7999999523162842,
           "detectDirection": "Counterclockwise"
         },
         "attackInfo": {
@@ -279,24 +187,18 @@
           "attenuationTag": "NormalAttack",
           "attenuationGroup": "default",
           "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
+            "HBIOLEEGHPD": 0.7300000190734863,
             "CCNJGLPMIEP": 0.0,
             "bonusCriticalHurt": 25.0,
             "overrideByWeapon": true,
             "strikeType": "Blunt",
-            "enBreak": 98.30000305175781,
+            "enBreak": 115.13999938964844,
             "attackType": "Melee"
           },
           "hitPattern": {
             "onHitEffectName": "default",
             "hitImpulseType": "LV4",
-            "overrideHitImpulse": {
-              "hitLevel": "Heavy",
-              "MOELECJEOEI": 500.0,
-              "hitImpulseY": 0.0
-            },
-            "retreatType": "ByAttackerForward",
-            "hitHaltTime": 0.10000000149011612,
+            "hitHaltTime": 0.07999999821186066,
             "hitHaltTimeScale": 0.009999999776482582,
             "canBeDefenceHalt": true
           },
@@ -307,61 +209,7 @@
             "shakeDistance": 30.0,
             "shakeDir": {
               "x": 1.0,
-              "z": 1.0
-            }
-          }
-        }
-      },
-      "ATK03_Ghost": {
-        "attackPattern": {
-          "$type": "ConfigAttackCircle",
-          "triggerType": "TriggerNoRepeat",
-          "born": {
-            "$type": "ConfigBornBySelf",
-            "offset": {
-              "IBKBLDAJIMA": 0.0,
-              "LKHJADIPBFL": -0.20000000298023224,
-              "PJCOKIGCJOK": 0.800000011920929
-            }
-          },
-          "height": 2.700000047683716,
-          "DCMPFCIBIPA": 3.5,
-          "detectDirection": "Counterclockwise"
-        },
-        "attackInfo": {
-          "attackTag": "NormalAttack_03",
-          "attenuationTag": "NormalAttack",
-          "attenuationGroup": "default",
-          "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
-            "CCNJGLPMIEP": 0.0,
-            "elementType": "Rock",
-            "bonusCriticalHurt": 25.0,
-            "strikeType": "Blunt",
-            "enBreak": 98.30000305175781,
-            "attackType": "Melee"
-          },
-          "hitPattern": {
-            "onHitEffectName": "default",
-            "hitImpulseType": "LV4",
-            "overrideHitImpulse": {
-              "hitLevel": "Heavy",
-              "MOELECJEOEI": 500.0,
-              "hitImpulseY": 0.0
-            },
-            "retreatType": "ByAttackerForward",
-            "hitHaltTime": 0.10000000149011612,
-            "hitHaltTimeScale": 0.009999999776482582,
-            "canBeDefenceHalt": true
-          },
-          "cameraShake": {
-            "shakeType": "CustomVector",
-            "shakeRange": 0.23999999463558197,
-            "shakeTime": 0.11999999731779099,
-            "shakeDistance": 30.0,
-            "shakeDir": {
-              "x": 1.0,
-              "z": 1.0
+              "y": 0.20000000298023224
             }
           }
         }
@@ -371,17 +219,17 @@
           "$type": "ConfigAttackBox",
           "triggerType": "TriggerNoRepeat",
           "born": {
-            "$type": "ConfigBornBySelf",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "IBKBLDAJIMA": 0.0,
-              "LKHJADIPBFL": 1.399999976158142,
-              "PJCOKIGCJOK": -1.5
+              "LKHJADIPBFL": 1.5,
+              "PJCOKIGCJOK": -0.800000011920929
             }
           },
           "size": {
-            "IBKBLDAJIMA": 3.200000047683716,
-            "LKHJADIPBFL": 3.5,
-            "PJCOKIGCJOK": 6.0
+            "IBKBLDAJIMA": 3.0,
+            "LKHJADIPBFL": 3.200000047683716,
+            "PJCOKIGCJOK": 4.300000190734863
           }
         },
         "attackInfo": {
@@ -389,19 +237,23 @@
           "attenuationTag": "NormalAttack",
           "attenuationGroup": "default",
           "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
+            "HBIOLEEGHPD": 0.7300000190734863,
             "CCNJGLPMIEP": 0.0,
             "bonusCriticalHurt": 25.0,
             "overrideByWeapon": true,
             "strikeType": "Blunt",
-            "enBreak": 124.5,
+            "enBreak": 143.1699981689453,
             "attackType": "Melee"
           },
           "hitPattern": {
             "onHitEffectName": "default",
             "hitImpulseType": "LV5",
-            "retreatType": "ByAttackerForward",
-            "hitHaltTime": 0.10000000149011612,
+            "overrideHitImpulse": {
+              "hitLevel": "Air",
+              "MOELECJEOEI": 400.0,
+              "hitImpulseY": 800.0
+            },
+            "hitHaltTime": 0.11999999731779099,
             "hitHaltTimeScale": 0.009999999776482582,
             "canBeDefenceHalt": true
           },
@@ -412,63 +264,54 @@
             "shakeTime": 0.11999999731779099,
             "shakeDistance": 30.0,
             "shakeDir": {
-              "x": 1.0
+              "y": 1.0,
+              "z": 1.0
             }
           }
         }
       },
-      "ATK04_Ghost": {
+      "ExtraAttack1": {
         "attackPattern": {
-          "$type": "ConfigAttackBox",
+          "$type": "ConfigAttackCircle",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
               "IBKBLDAJIMA": 0.0,
-              "LKHJADIPBFL": 1.2000000476837158,
-              "PJCOKIGCJOK": -1.7000000476837158
+              "LKHJADIPBFL": 0.0,
+              "PJCOKIGCJOK": 0.30000001192092896
             }
           },
-          "size": {
-            "IBKBLDAJIMA": 3.799999952316284,
-            "LKHJADIPBFL": 5.0,
-            "PJCOKIGCJOK": 8.0
-          }
+          "height": 1.5,
+          "DCMPFCIBIPA": 3.0
         },
         "attackInfo": {
-          "attackTag": "NormalAttack_04",
+          "attackTag": "ExtraAttack",
           "attenuationTag": "NormalAttack",
           "attenuationGroup": "default",
           "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
+            "HBIOLEEGHPD": 0.800000011920929,
             "CCNJGLPMIEP": 0.0,
-            "elementType": "Rock",
             "bonusCriticalHurt": 25.0,
+            "overrideByWeapon": true,
             "strikeType": "Blunt",
-            "enBreak": 124.5,
+            "enBreak": 60.0,
             "attackType": "Melee"
           },
           "hitPattern": {
             "onHitEffectName": "default",
-            "hitImpulseType": "LV5",
-            "retreatType": "ByAttackerForward",
-            "hitHaltTime": 0.10000000149011612,
+            "hitImpulseType": "LV3",
+            "hitHaltTime": 0.029999999329447746,
             "hitHaltTimeScale": 0.009999999776482582,
             "canBeDefenceHalt": true
           },
-          "forceCameraShake": true,
           "cameraShake": {
-            "shakeType": "CustomVector",
-            "shakeRange": 0.36000001430511475,
-            "shakeTime": 0.11999999731779099,
-            "shakeDistance": 30.0,
-            "shakeDir": {
-              "x": 1.0
-            }
+            "shakeRange": 0.11999999731779099,
+            "shakeTime": 0.09000000357627869
           }
         }
       },
-      "ExtraAttack": {
+      "ExtraAttack2": {
         "attackPattern": {
           "$type": "ConfigAttackCircle",
           "triggerType": "TriggerNoRepeat",
@@ -481,100 +324,6 @@
             }
           },
           "height": 1.5,
-          "DCMPFCIBIPA": 3.0,
-          "detectDirection": "Clockwise"
-        },
-        "attackInfo": {
-          "attackTag": "ExtraAttack",
-          "attenuationTag": "NormalAttack",
-          "attenuationGroup": "default",
-          "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
-            "CCNJGLPMIEP": 0.0,
-            "bonusCriticalHurt": 25.0,
-            "overrideByWeapon": true,
-            "strikeType": "Blunt",
-            "enBreak": 120.0,
-            "attackType": "Melee"
-          },
-          "hitPattern": {
-            "onHitEffectName": "default",
-            "hitImpulseType": "LV5",
-            "hitHaltTime": 0.10000000149011612,
-            "hitHaltTimeScale": 0.009999999776482582,
-            "canBeDefenceHalt": true
-          },
-          "cameraShake": {
-            "shakeType": "CustomVector",
-            "shakeRange": 0.47999998927116394,
-            "shakeTime": 0.11999999731779099,
-            "shakeDistance": 30.0,
-            "shakeDir": {
-              "x": 1.0
-            }
-          }
-        }
-      },
-      "ExtraAttack_Ghost": {
-        "attackPattern": {
-          "$type": "ConfigAttackCircle",
-          "triggerType": "TriggerNoRepeat",
-          "born": {
-            "$type": "ConfigBornBySelf",
-            "offset": {
-              "IBKBLDAJIMA": 0.0,
-              "LKHJADIPBFL": 0.0,
-              "PJCOKIGCJOK": 0.0
-            }
-          },
-          "height": 2.299999952316284,
-          "DCMPFCIBIPA": 4.0,
-          "detectDirection": "Clockwise"
-        },
-        "attackInfo": {
-          "attackTag": "ExtraAttack",
-          "attenuationTag": "NormalAttack",
-          "attenuationGroup": "default",
-          "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
-            "CCNJGLPMIEP": 0.0,
-            "elementType": "Rock",
-            "bonusCriticalHurt": 25.0,
-            "strikeType": "Blunt",
-            "enBreak": 120.0,
-            "attackType": "Melee"
-          },
-          "hitPattern": {
-            "onHitEffectName": "default",
-            "hitImpulseType": "LV5",
-            "hitHaltTime": 0.10000000149011612,
-            "hitHaltTimeScale": 0.009999999776482582,
-            "canBeDefenceHalt": true
-          },
-          "cameraShake": {
-            "shakeType": "CustomVector",
-            "shakeRange": 0.47999998927116394,
-            "shakeTime": 0.11999999731779099,
-            "shakeDistance": 30.0,
-            "shakeDir": {
-              "x": 1.0
-            }
-          }
-        }
-      },
-      "ExtraAttack_03": {
-        "attackPattern": {
-          "$type": "ConfigAttackCircle",
-          "triggerType": "TriggerNoRepeat",
-          "born": {
-            "$type": "ConfigBornBySelf",
-            "offset": {
-              "IBKBLDAJIMA": 0.0,
-              "LKHJADIPBFL": -1.0,
-              "PJCOKIGCJOK": 0.6000000238418579
-            }
-          },
-          "height": 4.5,
           "DCMPFCIBIPA": 3.5,
           "detectDirection": "Clockwise"
         },
@@ -583,90 +332,24 @@
           "attenuationTag": "NormalAttack",
           "attenuationGroup": "default",
           "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
+            "HBIOLEEGHPD": 1.7999999523162842,
             "CCNJGLPMIEP": 0.0,
             "bonusCriticalHurt": 25.0,
             "overrideByWeapon": true,
             "strikeType": "Blunt",
-            "enBreak": 143.39999389648438,
+            "enBreak": 120.0,
             "attackType": "Melee"
           },
           "hitPattern": {
             "onHitEffectName": "default",
-            "hitImpulseType": "LV5",
-            "overrideHitImpulse": {
-              "hitLevel": "Air",
-              "MOELECJEOEI": 100.0,
-              "hitImpulseY": 800.0
-            },
-            "hitHaltTime": 0.10000000149011612,
+            "hitImpulseType": "LV6",
+            "hitHaltTime": 0.15000000596046448,
             "hitHaltTimeScale": 0.009999999776482582,
             "canBeDefenceHalt": true
           },
-          "forceCameraShake": true,
           "cameraShake": {
-            "shakeType": "CustomVector",
-            "shakeRange": 0.47999998927116394,
-            "shakeTime": 0.15000000596046448,
-            "shakeDistance": 30.0,
-            "shakeDir": {
-              "y": 1.0,
-              "z": -1.0
-            }
-          }
-        }
-      },
-      "ExtraAttack_03_Ghost": {
-        "attackPattern": {
-          "$type": "ConfigAttackCircle",
-          "triggerType": "TriggerNoRepeat",
-          "born": {
-            "$type": "ConfigBornBySelf",
-            "offset": {
-              "IBKBLDAJIMA": 0.0,
-              "LKHJADIPBFL": -1.2000000476837158,
-              "PJCOKIGCJOK": 0.800000011920929
-            }
-          },
-          "height": 5.699999809265137,
-          "DCMPFCIBIPA": 4.300000190734863,
-          "detectDirection": "Clockwise"
-        },
-        "attackInfo": {
-          "attackTag": "ExtraAttack",
-          "attenuationTag": "NormalAttack",
-          "attenuationGroup": "default",
-          "attackProperty": {
-            "HBIOLEEGHPD": 0.0,
-            "CCNJGLPMIEP": 0.0,
-            "elementType": "Rock",
-            "bonusCriticalHurt": 25.0,
-            "strikeType": "Blunt",
-            "enBreak": 143.39999389648438,
-            "attackType": "Melee"
-          },
-          "hitPattern": {
-            "onHitEffectName": "default",
-            "hitImpulseType": "LV5",
-            "overrideHitImpulse": {
-              "hitLevel": "Air",
-              "MOELECJEOEI": 100.0,
-              "hitImpulseY": 800.0
-            },
-            "hitHaltTime": 0.10000000149011612,
-            "hitHaltTimeScale": 0.009999999776482582,
-            "canBeDefenceHalt": true
-          },
-          "forceCameraShake": true,
-          "cameraShake": {
-            "shakeType": "CustomVector",
-            "shakeRange": 0.47999998927116394,
-            "shakeTime": 0.15000000596046448,
-            "shakeDistance": 30.0,
-            "shakeDir": {
-              "y": 1.0,
-              "z": -1.0
-            }
+            "shakeRange": 0.23999999463558197,
+            "shakeTime": 0.2800000011920929
           }
         }
       }
@@ -684,63 +367,43 @@
   },
   "abilities": [
     {
-      "abilityID": "Avatar_Itto_ExtraAttack",
-      "abilityName": "Avatar_Itto_ExtraAttack",
+      "abilityID": "Avatar_Dehya_ExtraAttack",
+      "abilityName": "Avatar_Dehya_ExtraAttack",
       "abilityOverride": ""
     },
     {
-      "abilityID": "Avatar_Itto_SpecialExtra_Damage",
-      "abilityName": "Avatar_Itto_SpecialExtra_Damage",
+      "abilityID": "Avatar_Dehya_ElementalArt_Insert",
+      "abilityName": "Avatar_Dehya_ElementalArt_Insert",
       "abilityOverride": ""
     },
     {
-      "abilityID": "Avatar_Itto_SpecialExtra_Damage_Ghost",
-      "abilityName": "Avatar_Itto_SpecialExtra_Damage_Ghost",
+      "abilityID": "Avatar_Dehya_ElementalArt_Recycle",
+      "abilityName": "Avatar_Dehya_ElementalArt_Recycle",
       "abilityOverride": ""
     },
     {
-      "abilityID": "Avatar_Itto_FallingAnthem",
-      "abilityName": "Avatar_Itto_FallingAnthem",
+      "abilityID": "Avatar_Dehya_ElementalArt_LoanHandler",
+      "abilityName": "Avatar_Dehya_ElementalArt_LoanHandler",
       "abilityOverride": ""
     },
     {
-      "abilityID": "Avatar_Itto_Symbol_Handler",
-      "abilityName": "Avatar_Itto_Symbol_Handler",
+      "abilityID": "Avatar_Dehya_ElementalBurst",
+      "abilityName": "Avatar_Dehya_ElementalBurst",
       "abilityOverride": ""
     },
     {
-      "abilityID": "Avatar_Itto_Symbol_Cost",
-      "abilityName": "Avatar_Itto_Symbol_Cost",
+      "abilityID": "Avatar_Dehya_ElementalBurst_Controller",
+      "abilityName": "Avatar_Dehya_ElementalBurst_Controller",
       "abilityOverride": ""
     },
     {
-      "abilityID": "Avatar_Itto_Mask_Timer",
-      "abilityName": "Avatar_Itto_Mask_Timer",
+      "abilityID": "Avatar_Dehya_FallingAnthem",
+      "abilityName": "Avatar_Dehya_FallingAnthem",
       "abilityOverride": ""
     },
     {
-      "abilityID": "Avatar_Itto_ElementalArt",
-      "abilityName": "Avatar_Itto_ElementalArt",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Itto_ElementalArt_CreateGadget",
-      "abilityName": "Avatar_Itto_ElementalArt_CreateGadget",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Itto_ElementalBurst",
-      "abilityName": "Avatar_Itto_ElementalBurst",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Itto_ElementalBurst_ChangeWeapon",
-      "abilityName": "Avatar_Itto_ElementalBurst_ChangeWeapon",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Itto_Attack_DamageHandler",
-      "abilityName": "Avatar_Itto_Attack_DamageHandler",
+      "abilityID": "Avatar_Dehya_Attack_DamageHandler",
+      "abilityName": "Avatar_Dehya_Attack_DamageHandler",
       "abilityOverride": ""
     }
   ],
@@ -768,56 +431,60 @@
         "NormalMove": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "ShowUp": ["Audio_Male_Showup"],
+            "ShowUp": ["Audio_Lady_Showup"],
             "WalkToRun": [
-              "Audio_Male_WalkToRun",
-              "Audio_Male_Foley_Twice_Itto"
+              "Audio_Lady_WalkToRun",
+              "Audio_Lady_Foley_Twice_Dehya"
             ],
             "Walk": [
               "Ani_WalkSprint01",
-              "Audio_Male_Walk",
+              "Audio_Lady_Walk",
               "WalkStepOnWater",
-              "Audio_Male_Foley_Walk_Itto"
+              "Audio_Lady_Foley_Walk_Dehya"
             ],
             "RunToWalk": [
-              "Audio_Male_RunToWalk",
-              "Audio_Male_Foley_Twice_Itto"
+              "Audio_Lady_RunToWalk",
+              "Audio_Lady_Foley_Twice_Dehya"
             ],
-            "Run": ["Ani_Run01", "Audio_Male_Run", "Audio_Male_Foley_Run_Itto"],
+            "Run": [
+              "Ani_Run01",
+              "Audio_Lady_Run",
+              "Audio_Lady_Foley_Run_Dehya"
+            ],
             "RunToIdle": [
-              "Audio_Male_RunToIdle",
-              "Audio_Male_Foley_RunToIdle_Itto"
+              "Audio_Lady_RunToIdle",
+              "Audio_Lady_Foley_RunToIdle_Dehya"
             ],
-            "WalkToIdle": ["Audio_Male_WalkToIdle"],
+            "WalkToIdle": ["Audio_Lady_WalkToIdle"],
             "RunningTurn": [],
             "SprintToRun": [
-              "Audio_Male_SprintToRun",
-              "Audio_Male_Foley_Once_Itto"
+              "Audio_Lady_SprintToRun",
+              "Audio_Lady_Foley_Once_Dehya"
             ],
             "SprintToIdle": [
-              "Audio_Male_SprintToIdle",
-              "Emo_Male_Sprint_AS",
-              "Audio_Male_Foley_SprintToIdle_Itto"
+              "Audio_Lady_SprintToIdle",
+              "Emo_Lady_Sprint_AS",
+              "Audio_Lady_Foley_SprintToIdle_Dehya"
             ],
             "FallOnGround": [
-              "Audio_Male_FallOnGround",
-              "Audio_Male_Foley_Twice_Itto"
+              "Audio_Lady_FallOnGround",
+              "Audio_Lady_Foley_Twice_Dehya"
             ],
             "FallOnGroundLit": [
-              "Audio_Male_FallOnGroundLit",
-              "Audio_Male_Foley_Once_Itto"
+              "Audio_Lady_FallOnGroundLit",
+              "Audio_Lady_Foley_Once_Dehya"
             ],
             "FallToGroundRun": [
-              "Audio_Male_FallToGroundRun",
-              "Audio_Male_Foley_Twice_Itto"
+              "Audio_Lady_FallToGroundRun",
+              "Audio_Lady_Foley_Twice_Dehya"
             ],
             "FallToGroundRunHard": [
-              "Audio_Male_FallToGroundRunHard",
-              "Audio_Male_Foley_Twice_Itto"
+              "Audio_Lady_FallToGroundRunHard",
+              "Audio_Lady_Foley_Twice_Dehya"
             ],
             "FallToGroundSprint": [
-              "Audio_Male_FallToGroundSprint",
-              "Audio_Male_Foley_Twice_Itto"
+              "Audio_Lady_FallToGroundSprint",
+              "Audio_Lady_Foley_Twice_Dehya"
             ]
           },
           "canDoSkill": true,
@@ -835,10 +502,10 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "SprintBS": [
-              "Audio_Male_RunToSprint",
+              "Audio_Lady_RunToSprint",
               "SprintBS_Invincible",
-              "Emo_Male_Sprint_BS",
-              "Audio_Male_Foley_SprintBS_Itto"
+              "Emo_Lady_Sprint_BS",
+              "Audio_Lady_Foley_SprintBS_Dehya"
             ]
           },
           "canDoSkill": true,
@@ -862,9 +529,9 @@
           "animatorStates": {
             "Sprint": [
               "Ani_WalkSprint01",
-              "Audio_Male_Sprint",
-              "Emo_Male_Sprint_Loop",
-              "Audio_Male_Foley_Twice_Itto"
+              "Audio_Lady_Sprint",
+              "Emo_Lady_Sprint_Loop",
+              "Audio_Lady_Foley_Twice_Dehya"
             ]
           },
           "canDoSkill": true,
@@ -893,23 +560,26 @@
           "animatorStates": {
             "ClimbMove0": [
               "ClimbStep",
-              "Audio_Male_Climb",
-              "Audio_Male_Foley_ClimbMove_Itto"
+              "Audio_Lady_Climb",
+              "Audio_Lady_Foley_ClimbMove_Dehya"
             ],
             "ClimbMove1": [
               "ClimbStep",
-              "Audio_Male_Climb",
-              "Audio_Male_Foley_Twice_Itto"
+              "Audio_Lady_Climb",
+              "Audio_Lady_Foley_Twice_Dehya"
             ],
             "ClimbIdle": [],
-            "ClimbJump": ["Audio_Male_ClimbDash", "Audio_Male_Foley_Once_Itto"],
+            "ClimbJump": [
+              "Audio_Lady_ClimbDash",
+              "Audio_Lady_Foley_Once_Dehya"
+            ],
             "JumpUpWallForStandby": [
-              "Audio_Male_JumpUpWallStandby",
-              "Audio_Male_Foley_Once_Itto"
+              "Audio_Lady_JumpUpWallStandby",
+              "Audio_Lady_Foley_Once_Dehya"
             ],
             "Standby2ClimbB": [
-              "Audio_Male_Standby2ClimbB",
-              "Audio_Male_Foley_Once_Itto"
+              "Audio_Lady_Standby2ClimbB",
+              "Audio_Lady_Foley_Once_Dehya"
             ]
           },
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
@@ -920,10 +590,10 @@
         "ClimbTransient": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "JumpWallReady": [],
+            "JumpWallReady": ["Audio_Lady_JumpUpWallReady"],
             "Standby2ClimbA": [
-              "Audio_Male_Standby2ClimbA",
-              "Audio_Male_Foley_Once_Itto"
+              "Audio_Lady_Standby2ClimbA",
+              "Audio_Lady_Foley_Once_Dehya"
             ]
           },
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
@@ -933,7 +603,7 @@
         "Upstairs": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Upstairs": ["Audio_Male_Upstairs", "Audio_Male_Foley_Once_Itto"]
+            "Upstairs": ["Audio_Lady_Upstairs", "Audio_Lady_Foley_Once_Dehya"]
           },
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
           "setAnimatorBoolean": [
@@ -947,8 +617,8 @@
         "Slip": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "SlipFaceWall": ["Audio_Male_Foley_SlipFaceWall_Itto"],
-            "SlipBackWall": ["Audio_Male_Foley_SlipFaceWall_Itto"]
+            "SlipFaceWall": ["Audio_Lady_Foley_ThreeTimes_Dehya"],
+            "SlipBackWall": ["Audio_Lady_Foley_ThreeTimes_Dehya"]
           },
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
           "animatorTriggerOnLanded": "",
@@ -957,13 +627,13 @@
         "Swim": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "SwimIdle": ["Audio_Male_SwimIdle"],
-            "SwimMove": ["SwimStep", "Audio_Male_SwimMove"],
+            "SwimIdle": ["Audio_Lady_SwimIdle"],
+            "SwimMove": ["SwimStep", "Audio_Lady_SwimMove"],
             "SwimDash": [
-              "Audio_Male_SwimDash",
-              "Avatar_Male_SwimDash_Hand_Effect"
+              "Audio_Lady_SwimDash",
+              "Avatar_Lady_SwimDash_Hand_Effect"
             ],
-            "SwimJumpToWater": ["Audio_Male_SwimJumpToWater"]
+            "SwimJumpToWater": ["Audio_Lady_SwimJumpToWater"]
           },
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
           "actionPanelState": "Swim",
@@ -973,11 +643,11 @@
         "Fly": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Fly": ["Audio_Male_Foley_Once_Itto"],
+            "Fly": ["Audio_Lady_Foley_Once_Dehya"],
             "FlyStart": [
-              "Audio_Male_FlyStart",
+              "Audio_Lady_FlyStart",
               "FlyStart_Weapon",
-              "Audio_Male_Foley_FlyStart_Itto"
+              "Audio_Lady_Foley_FlyStart_Dehya"
             ]
           },
           "canDoSkill": true,
@@ -994,10 +664,10 @@
         "Jump": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Jump": ["Audio_Male_Jump", "Audio_Male_Foley_Once_Itto"],
-            "JumpForRun": ["Audio_Male_Jump", "Audio_Male_Foley_Once_Itto"],
-            "JumpForWalk": ["Audio_Male_Jump", "Audio_Male_Foley_Once_Itto"],
-            "JumpForSprint": ["Audio_Male_Jump", "Audio_Male_Foley_Once_Itto"]
+            "Jump": ["Audio_Lady_Jump", "Audio_Lady_Foley_Jump_Dehya"],
+            "JumpForRun": ["Audio_Lady_Jump", "Audio_Lady_Foley_Once_Dehya"],
+            "JumpForWalk": ["Audio_Lady_Jump", "Audio_Lady_Foley_Once_Dehya"],
+            "JumpForSprint": ["Audio_Lady_Jump", "Audio_Lady_Foley_Once_Dehya"]
           },
           "canDoSkill": true,
           "resetAnimatorTriggerOnEnter": ["DoSkill", "AimEnd"],
@@ -1013,12 +683,12 @@
         "Fall": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "JumpOffWall": ["Audio_Male_Jump", "Audio_Male_Foley_Once_Itto"],
-            "SwimJump": ["Audio_Male_SwimJump", "Audio_Male_Foley_Once_Itto"],
-            "SwimJumpDrop": ["Audio_Male_Foley_ThreeTimes_Itto"],
+            "JumpOffWall": ["Audio_Lady_Jump", "Audio_Lady_Foley_Once_Dehya"],
+            "SwimJump": ["Audio_Lady_SwimJump", "Audio_Lady_Foley_Once_Dehya"],
+            "SwimJumpDrop": ["Audio_Lady_Foley_ThreeTimes_Dehya"],
             "DropDown": [
-              "Audio_Male_DropDown",
-              "Audio_Male_Foley_ThreeTimes_Itto"
+              "Audio_Lady_DropDown",
+              "Audio_Lady_Foley_ThreeTimes_Dehya"
             ],
             "DropDownLit": [],
             "WalkDropDownLit": []
@@ -1052,18 +722,24 @@
         "NormalMoveWeapon": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "WalkToRunWeapon": ["Audio_Male_WalkToRun"],
-            "WalkWeapon": ["Audio_Male_Walk", "Audio_Male_Foley_Twice_Itto"],
-            "RunToWalkWeapon": ["Audio_Male_RunToWalk"],
-            "RunWeapon": ["Audio_Male_Run", "Audio_Male_Foley_Twice_Itto"],
-            "RunToIdleWeapon": ["Audio_Male_Foley_Twice_Itto"],
-            "WalkToIdleWeapon": ["Audio_Male_Foley_Twice_Itto"],
+            "WalkToRunWeapon": ["Audio_Lady_WalkToRun"],
+            "WalkWeapon": ["Audio_Lady_Walk", "Audio_Lady_Foley_Twice_Dehya"],
+            "RunToWalkWeapon": ["Audio_Lady_RunToWalk"],
+            "RunWeapon": ["Audio_Lady_Run", "Audio_Lady_Foley_Twice_Dehya"],
+            "RunToIdleWeapon": [
+              "Audio_Lady_RunToIdle",
+              "Audio_Lady_Foley_Twice_Dehya"
+            ],
+            "WalkToIdleWeapon": [
+              "Audio_Lady_WalkToIdle",
+              "Audio_Lady_Foley_Twice_Dehya"
+            ],
             "RunningTurnWeapon": [],
-            "FallOnGroundWeapon": ["Audio_Male_FallOnGround"],
-            "FallOnGroundLitWeapon": ["Audio_Male_FallOnGroundLit"],
-            "FallOnGroundMiddleWeapon": ["Audio_Male_FallOnGroundMiddle"],
-            "FallToGroundRunWeapon": ["Audio_Male_FallToGroundRun"],
-            "FallToGroundRunHardWeapon": ["Audio_Male_FallToGroundRunHard"]
+            "FallOnGroundWeapon": ["Audio_Lady_FallToGround"],
+            "FallOnGroundLitWeapon": ["Audio_Lady_FallToGround"],
+            "FallOnGroundMiddleWeapon": ["Audio_Lady_FallToGround"],
+            "FallToGroundRunWeapon": ["Audio_Lady_FallToGroundRun"],
+            "FallToGroundRunHardWeapon": ["Audio_Lady_FallToGroundRunHard"]
           },
           "canDoSkill": true,
           "massRatio": 2.0,
@@ -1080,18 +756,18 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "WalkPutaway": [
-              "Male_Claymore_Putaway_Walk",
-              "Audio_Male_Claymore_WalkPutAway",
-              "Audio_Male_Foley_Twice_Itto"
+              "Lady_Claymore_Putaway_Walk",
+              "Audio_Lady_Sword_WalkPutAway",
+              "Audio_Lady_Foley_Twice_Dehya"
             ],
             "RunPutaway": [
-              "Male_Claymore_Putaway_Run",
-              "Audio_Male_Claymore_RunPutAway",
-              "Audio_Male_Foley_Twice_Itto"
+              "Lady_Claymore_Putaway_Run",
+              "Audio_Lady_Sword_RunPutAway",
+              "Audio_Lady_Foley_Twice_Dehya"
             ],
             "RunToSprintWeapon": [
-              "Male_Claymore_Putaway_Sprint",
-              "Audio_Male_Claymore_RunToSprintWeapon"
+              "Lady_Claymore_Putaway_Sprint",
+              "Audio_Lady_Sword_RunToSprintWeapon"
             ]
           },
           "canDoSkill": true,
@@ -1109,8 +785,9 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "StandbyPutaway": [
-              "Male_Claymore_Putaway_Standby",
-              "Audio_Male_Claymore_StandbyPutAway"
+              "Lady_Claymore_Putaway_Standby",
+              "Audio_Lady_Claymore_StandbyPutAway",
+              "Audio_Lady_Foley_Once_Dehya"
             ]
           },
           "canDoSkill": true,
@@ -1134,9 +811,9 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "StandbyPutawayOver": [],
-            "WalkPutawayOver": ["Audio_Male_Walk_Diluc"],
-            "RunPutawayOver": ["Audio_Male_Run_Diluc"],
-            "RunToSprintWeaponOver": []
+            "WalkPutawayOver": ["Audio_Lady_Sword_WalkPutAwayOver"],
+            "RunPutawayOver": ["Audio_Lady_Sword_RunPutAwayOver"],
+            "RunToSprintWeaponOver": ["Audio_Lady_Sword_RunToSprintWeaponOver"]
           },
           "canDoSkill": true,
           "massRatio": 2.0,
@@ -1152,14 +829,14 @@
         "JumpWeapon": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "JumpWeapon": ["Audio_Male_Jump", "Audio_Male_Foley_Once_Itto"],
+            "JumpWeapon": ["Audio_Lady_Jump", "Audio_Lady_Foley_Once_Dehya"],
             "JumpForRunWeapon": [
-              "Audio_Male_Jump",
-              "Audio_Male_Foley_Once_Itto"
+              "Audio_Lady_Jump",
+              "Audio_Lady_Foley_Once_Dehya"
             ],
             "JumpForWalkWeapon": [
-              "Audio_Male_Jump",
-              "Audio_Male_Foley_Once_Itto"
+              "Audio_Lady_Jump",
+              "Audio_Lady_Foley_Once_Dehya"
             ]
           },
           "canDoSkill": true,
@@ -1177,7 +854,10 @@
         "FallWeapon": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "DropDownWeapon": ["Audio_Male_Foley_ThreeTimes_Itto"],
+            "DropDownWeapon": [
+              "Audio_Lady_DropDown",
+              "Audio_Lady_Foley_ThreeTimes_Dehya"
+            ],
             "DropDownLitWeapon": [],
             "WalkDropDownLitWeapon": []
           },
@@ -1194,8 +874,8 @@
         "BeHit": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Hit_L": ["Audio_Male_Hit_L", "Audio_Male_Foley_Once_Itto"],
-            "Hit_H": ["Audio_Male_Hit_H", "Audio_Male_Foley_Once_Itto"]
+            "Hit_L": ["Audio_Lady_Hit_L", "Audio_Lady_Foley_Once_Dehya"],
+            "Hit_H": ["Audio_Lady_Hit_H", "Audio_Lady_Foley_Once_Dehya"]
           },
           "moveType": "combatMove",
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
@@ -1210,8 +890,8 @@
           "animatorStates": {
             "Hit_Throw_Ground": [
               "BeHitAir_Weapon",
-              "Audio_Male_HitThrowGround",
-              "Audio_Male_Foley_Twice_Itto"
+              "Audio_Lady_HitThrowGround",
+              "Audio_Lady_Foley_HitThrowGround_Dehya"
             ]
           },
           "moveType": "combatMove",
@@ -1226,12 +906,12 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "Hit_Throw": [
-              "Audio_Male_Hit_Throw",
+              "Audio_Lady_Hit_Throw",
               "BeHitAir_Weapon",
-              "Audio_Male_Foley_HitThrowGround_Itto"
+              "Audio_Lady_Foley_Once_Dehya"
             ],
-            "Hit_ThrowAir": ["Audio_Male_DropDown", "BeHitAir_Weapon"],
-            "Struggle": ["BeHitAir_Weapon", "Audio_Male_Foley_ThreeTimes_Itto"]
+            "Hit_ThrowAir": ["Audio_Lady_DropDown", "BeHitAir_Weapon"],
+            "Struggle": ["BeHitAir_Weapon", "Audio_Lady_Foley_ThreeTimes_Dehya"]
           },
           "moveType": "combatAir",
           "resetAnimatorTriggerOnEnter": ["BeHit"],
@@ -1245,21 +925,20 @@
         "Die": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "FallDie": ["Audio_Male_Death"],
+            "FallDie": ["Audio_Lady_NormalDie"],
             "NormalDie": [
               "Die",
-              "Audio_Male_Death",
-              "Audio_Male_Foley_Once_Itto"
+              "Audio_Lady_NormalDie",
+              "Audio_Lady_Foley_Once_Dehya"
             ],
-            "SwimDie": ["Swim_Die", "Audio_Male_SwimDie"],
-            "HitGroundDie": ["Die", "Audio_Male_Death"]
+            "SwimDie": ["Swim_Die", "Audio_Lady_SwimDie"],
+            "HitGroundDie": ["Die", "Audio_Lady_Death"]
           },
           "animatorTriggerOnLanded": ""
         },
         "Die_RagDoll": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "NormalDie_AS": [],
             "FallDie_AS": []
           },
           "enableRagDoll": true,
@@ -1269,10 +948,10 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "Attack01_BS": [
-              "Itto_Attack01_BS",
+              "Dehya_Attack01_BS",
               "Interaction_Bad",
-              "Audio_Male_Itto_Claymore_Attack_01_BS",
-              "Emo_Male_Claymore_Itto_NormalAttack01_BS"
+              "Audio_Lady_Claymore_Dehya_Attack01_BS",
+              "Emo_Lady_Claymore_Dehya_NormalAttack_BS"
             ]
           },
           "moveType": "combatMove",
@@ -1281,32 +960,21 @@
           "setAnimatorBoolean": [
             {
               "name": "&CanCancelSkill"
-            },
-            {
-              "name": "&CanUseExtra"
             }
           ],
-          "cameraType": "combatNormal",
           "canChangeAvatar": [{}],
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "CatalystR"
-            }
-          ],
           "animatorTriggerOnLanded": "",
-          "battouOnStart": true,
-          "ALDKGJJEGPA": true
+          "battouOnStart": true
         },
         "Attack01": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "Attack01": [
-              "Itto_Attack01",
-              "Interaction_Bad",
+              "Dehya_Attack01",
               "SetComboCount1",
-              "Audio_Male_Itto_Claymore_Attack_01",
-              "Emo_Male_Claymore_Itto_NormalAttack01"
+              "Interaction_Bad",
+              "Audio_Lady_Claymore_Dehya_Attack01",
+              "Emo_Lady_Claymore_Dehya_NormalAttack01"
             ]
           },
           "moveType": "combatMove",
@@ -1315,32 +983,22 @@
           "setAnimatorBoolean": [
             {
               "name": "&CanCancelSkill"
-            },
-            {
-              "name": "&CanUseExtra"
             }
           ],
           "cameraType": "combatNormal",
           "canChangeAvatar": [{}],
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "CatalystR"
-            }
-          ],
           "animatorTriggerOnLanded": "",
-          "battouOnStart": true,
-          "sheatheOnEnd": true
+          "battouOnStart": true
         },
         "Attack02": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "Attack02": [
-              "Itto_Attack02",
-              "Interaction_Bad",
+              "Dehya_Attack02",
               "SetComboCount2",
-              "Audio_Male_Itto_Claymore_Attack_02",
-              "Emo_Male_Claymore_Itto_NormalAttack02"
+              "Interaction_Bad",
+              "Audio_Lady_Claymore_Dehya_Attack02",
+              "Emo_Lady_Claymore_Dehya_NormalAttack02"
             ]
           },
           "moveType": "combatMove",
@@ -1349,33 +1007,23 @@
           "setAnimatorBoolean": [
             {
               "name": "&CanCancelSkill"
-            },
-            {
-              "name": "&CanUseExtra"
             }
           ],
           "cameraType": "combatNormal",
           "canChangeAvatar": [{}],
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "CatalystR"
-            }
-          ],
           "animatorTriggerOnLanded": "",
           "battouOnStart": true,
-          "sheatheOnEnd": true,
-          "ALDKGJJEGPA": true
+          "sheatheOnEnd": true
         },
         "Attack03": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "Attack03": [
-              "Itto_Attack03",
-              "Interaction_Bad",
+              "Dehya_Attack03",
               "SetComboCount3",
-              "Audio_Male_Itto_Claymore_Attack_03",
-              "Emo_Male_Claymore_Itto_NormalAttack03"
+              "Interaction_Bad",
+              "Audio_Lady_Claymore_Dehya_Attack03",
+              "Emo_Lady_Claymore_Dehya_NormalAttack03"
             ]
           },
           "moveType": "combatMove",
@@ -1384,19 +1032,10 @@
           "setAnimatorBoolean": [
             {
               "name": "&CanCancelSkill"
-            },
-            {
-              "name": "&CanUseExtra"
             }
           ],
           "cameraType": "combatNormal",
           "canChangeAvatar": [{}],
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "CatalystR"
-            }
-          ],
           "animatorTriggerOnLanded": "",
           "battouOnStart": true,
           "sheatheOnEnd": true,
@@ -1406,11 +1045,11 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "Attack04": [
-              "Itto_Attack04",
-              "Interaction_Bad",
+              "Dehya_Attack04",
               "SetComboCount4",
-              "Audio_Male_Itto_Claymore_Attack_04",
-              "Emo_Male_Claymore_Itto_NormalAttack04"
+              "Interaction_Bad",
+              "Audio_Lady_Claymore_Dehya_Attack04",
+              "Emo_Lady_Claymore_Dehya_NormalAttack04"
             ]
           },
           "moveType": "combatMove",
@@ -1419,104 +1058,27 @@
           "setAnimatorBoolean": [
             {
               "name": "&CanCancelSkill"
-            },
-            {
-              "name": "&CanUseExtra"
             }
           ],
           "cameraType": "combatNormal",
           "canChangeAvatar": [{}],
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "CatalystR"
-            }
-          ],
           "animatorTriggerOnLanded": "",
-          "battouOnStart": true,
-          "sheatheOnEnd": true,
+          "sheatheOnStart": true,
           "ALDKGJJEGPA": true
         },
         "ExtraAttack": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "ExtraAttack": [
-              "Itto_ExtraAttack",
+              "Dehya_ExtraAttack",
               "Interaction_Bad",
-              "Audio_Male_Itto_Claymore_ExtraAttack",
-              "Emo_Male_Claymore_Itto_ExtraAttack"
+              "Audio_Lady_Claymore_Dehya_ExtraAtk",
+              "Emo_Lady_Claymore_Dehya_ExtraAttack_BS"
             ]
           },
           "moveType": "combatMove",
           "resetAnimatorTriggerOnExit": ["BeHit"],
-          "cameraType": "combatNormal",
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "CatalystR"
-            }
-          ],
-          "animatorTriggerOnLanded": "",
-          "battouOnStart": true,
-          "ALDKGJJEGPA": true
-        },
-        "ExtraAttack_AS": {
-          "$type": "ConfigAvatarStateIDInfo",
-          "animatorStates": {
-            "ExtraAttack_AS": [
-              "Itto_ExtraAttack_AS",
-              "Audio_Male_Itto_Claymore_ExtraAttack_AS",
-              "Emo_Male_Claymore_Itto_ExtraAttack_AS"
-            ]
-          },
-          "moveType": "combatMove",
-          "canDoSkill": true,
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "setAnimatorBoolean": [
-            {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.05000000074505806
-            },
-            {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0.05000000074505806
-            }
-          ],
-          "cameraType": "combatNormal",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.05000000074505806
-            }
-          ],
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "CatalystR"
-            }
-          ],
-          "animatorTriggerOnLanded": "",
-          "battouOnStart": true,
-          "sheatheOnEnd": true,
-          "ALDKGJJEGPA": true
-        },
-        "ExtraAttack1_BS": {
-          "$type": "ConfigAvatarStateIDInfo",
-          "animatorStates": {
-            "ExtraAttack1_BS": [
-              "Itto_ExtraAttack_01_BS",
-              "Audio_Male_Itto_Claymore_ExtraAttack1_BS",
-              "Emo_Male_Claymore_Itto_ExtraAttack_01_BS"
-            ]
-          },
-          "moveType": "combatMove",
-          "resetAnimatorTriggerOnExit": ["BeHit"],
-          "cameraType": "combatNormal",
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "CatalystR"
-            }
-          ],
+          "canChangeAvatar": [{}],
           "animatorTriggerOnLanded": "",
           "battouOnStart": true
         },
@@ -1524,41 +1086,48 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "ExtraAttack1": [
-              "Itto_ExtraAttack_01",
+              "Dehya_ExtraAttack1",
               "Interaction_Bad",
-              "Audio_Male_Itto_Claymore_ExtraAttack1",
-              "Emo_Male_Claymore_Itto_ExtraAttack_01"
+              "Emo_Lady_Claymore_Dehya_ExtraAttack_01"
             ]
           },
           "moveType": "combatMove",
-          "canDoSkill": true,
           "resetAnimatorTriggerOnExit": ["BeHit"],
-          "setAnimatorBoolean": [
-            {
-              "name": "&CanCancelSkill"
-            }
-          ],
-          "cameraType": "combatNormal",
           "canChangeAvatar": [{}],
           "equipReattach": [
             {
               "equip": "equip01",
-              "targetPoint": "CatalystR"
+              "targetPoint": "WeaponL",
+              "normalizeStart": 0.75,
+              "normalizeEnd": 0.9990000128746033
             }
           ],
           "animatorTriggerOnLanded": "",
-          "battouOnStart": true,
-          "sheatheOnEnd": true,
-          "ALDKGJJEGPA": true
+          "battouOnStart": true
         },
         "ExtraAttack2": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "ExtraAttack2": [
-              "Itto_ExtraAttack_02",
+              "Dehya_ExtraAttack2",
               "Interaction_Bad",
-              "Audio_Male_Itto_Claymore_ExtraAttack2",
-              "Emo_Male_Claymore_Itto_ExtraAttack_02"
+              "Audio_Lady_Claymore_Dehya_ExtraAtk2",
+              "Emo_Lady_Claymore_Dehya_ExtraAttack_02"
+            ]
+          },
+          "moveType": "combatMove",
+          "resetAnimatorTriggerOnExit": ["BeHit"],
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
+          "battouOnStart": true
+        },
+        "ExtraAttack3": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "ExtraAttack3": [
+              "Dehya_ExtraAttack3",
+              "Audio_Lady_Claymore_Dehya_ExtraAtk3",
+              "Emo_Lady_Claymore_Dehya_ExtraAttack_03"
             ]
           },
           "moveType": "combatMove",
@@ -1569,135 +1138,47 @@
               "name": "&CanCancelSkill"
             }
           ],
-          "cameraType": "combatNormal",
           "canChangeAvatar": [{}],
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "CatalystR"
-            }
-          ],
           "animatorTriggerOnLanded": "",
-          "battouOnStart": true,
-          "sheatheOnEnd": true,
-          "ALDKGJJEGPA": true
+          "battouOnStart": true
         },
-        "ExtraAttack3": {
+        "Dehya_ElementalArt_Insert": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "ExtraAttack3": [
-              "Itto_ExtraAttack_03",
+            "Dehya_ElementalArt_Insert": [
+              "Dehya_ElementalArt_Insert",
               "Interaction_Bad",
-              "Audio_Male_Itto_Claymore_ExtraAttack3",
-              "Emo_Male_Claymore_Itto_ExtraAttack_03"
+              "Audio_Lady_Claymore_Dehya_ElementalArt_Insert",
+              "Emo_Avatar_Dehya_ElementalArt_Insert"
             ]
           },
           "moveType": "combatMove",
           "canDoSkill": true,
-          "resetAnimatorTriggerOnExit": ["BeHit"],
+          "addEndure": 0.6000000238418579,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
               "name": "&CanCancelSkill",
-              "normalizeStart": 0.14000000059604645
+              "normalizeStart": 0.800000011920929
             }
           ],
           "cameraType": "combatNormal",
           "canChangeAvatar": [
             {
-              "normalizeStart": 0.14000000059604645
+              "normalizeStart": 0.699999988079071
             }
           ],
-          "equipReattach": [
-            {
-              "equip": "equip01",
-              "targetPoint": "CatalystR"
-            }
-          ],
-          "animatorTriggerOnLanded": "",
-          "battouOnStart": true,
-          "sheatheOnEnd": true,
-          "ALDKGJJEGPA": true
-        },
-        "Itto_ElementalArt_BS": {
-          "$type": "ConfigAvatarStateIDInfo",
-          "animatorStates": {
-            "Itto_ElementalArt_BS": [
-              "Itto_ElementalArt_BS",
-              "Audio_Male_Itto_Claymore_ElementalArt_BS",
-              "Emo_Male_Claymore_Itto_ElementalArt_BS"
-            ]
-          },
-          "moveType": "combatMove",
-          "addEndure": 0.6000000238418579,
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "cameraType": "combatNormal",
-          "jumpCancelEnd": -1.0,
-          "sprintCancelEnd": -1.0,
+          "jumpCancelStart": 0.699999988079071,
+          "sprintCancelStart": 0.699999988079071,
           "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
-        "Itto_ElementalArt_Loop": {
+        "Dehya_ElementalArt_Insert_AS": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Itto_ElementalArt_Loop": [
-              "Emo_Male_Claymore_Itto_ElementalArt_Charge_High"
-            ]
-          },
-          "moveType": "combatMove",
-          "addEndure": 0.6000000238418579,
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "cameraType": "combatNormal",
-          "jumpCancelEnd": -1.0,
-          "sprintCancelEnd": -1.0,
-          "animatorTriggerOnLanded": "",
-          "sheatheOnStart": true
-        },
-        "Itto_ElementalArt": {
-          "$type": "ConfigAvatarStateIDInfo",
-          "animatorStates": {
-            "Itto_ElementalArt": [
-              "Itto_ElementalArt",
-              "Interaction_Bad",
-              "Audio_Male_Itto_Claymore_ElementalArt",
-              "Emo_Male_Claymore_Itto_ElementalArt"
-            ]
-          },
-          "moveType": "combatMove",
-          "canDoSkill": true,
-          "addEndure": 0.6000000238418579,
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "cameraType": "combatNormal",
-          "jumpCancelEnd": -1.0,
-          "sprintCancelEnd": -1.0,
-          "animatorTriggerOnLanded": "",
-          "sheatheOnStart": true
-        },
-        "Itto_ElementalArt_Hold": {
-          "$type": "ConfigAvatarStateIDInfo",
-          "animatorStates": {
-            "Itto_ElementalArt_Hold": [
-              "Itto_ElementalArt",
-              "Interaction_Bad",
-              "Audio_Male_Itto_Claymore_ElementalArt",
-              "Emo_Male_Claymore_Itto_ElementalArt"
-            ]
-          },
-          "moveType": "combatMove",
-          "canDoSkill": true,
-          "addEndure": 0.6000000238418579,
-          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
-          "cameraType": "combatNormal",
-          "jumpCancelEnd": -1.0,
-          "sprintCancelEnd": -1.0,
-          "animatorTriggerOnLanded": "",
-          "sheatheOnStart": true
-        },
-        "Itto_ElementalArt_AS": {
-          "$type": "ConfigAvatarStateIDInfo",
-          "animatorStates": {
-            "Itto_ElementalArt_AS": [
-              "Audio_Male_Itto_Claymore_ElementalArt_AS",
-              "Emo_Male_Claymore_Itto_ElementalArt_AS"
+            "Dehya_ElementalArt_Insert_AS": [
+              "Audio_Lady_Claymore_Dehya_ElementalArt_Insert_AS",
+              "Emo_Avatar_Dehya_ElementalArt_Insert_AS"
             ]
           },
           "moveType": "combatMove",
@@ -1706,74 +1187,243 @@
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanCancelSkill",
-              "normalizeStart": 0.07999999821186066
+              "name": "&CanCancelSkill"
             },
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.07999999821186066
+              "name": "&CanUseSkill"
             }
           ],
           "cameraType": "combatNormal",
-          "canChangeAvatar": [
-            {
-              "normalizeStart": 0.07999999821186066
-            }
-          ],
+          "canChangeAvatar": [{}],
           "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
-        "Itto_ElementalBurst": {
+        "Dehya_ElementalArt_Recycle": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Itto_ElementalBurst": [
-              "Itto_ElementalBurst",
+            "Dehya_ElementalArt_Recycle": [
+              "Dehya_ElementalArt_Recycle",
               "Interaction_Bad",
-              "Audio_Male_Itto_Claymore_ElementalBurst"
+              "Audio_Lady_Claymore_Dehya_ElementalArt_Recycle",
+              "Emo_Avatar_Dehya_ElementalArt_Recycle"
             ]
           },
           "moveType": "combatMove",
           "canDoSkill": true,
           "addEndure": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "setAnimatorBoolean": [
+            {
+              "name": "&CanCancelSkill",
+              "normalizeStart": 0.628000020980835
+            }
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [
+            {
+              "normalizeStart": 0.628000020980835
+            }
+          ],
+          "jumpCancelStart": 0.628000020980835,
+          "sprintCancelStart": 0.628000020980835,
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "Dehya_ElementalArt_Recycle_AS": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "Dehya_ElementalArt_Recycle_AS": [
+              "Audio_Lady_Claymore_Dehya_ElementalArt_Recycle_AS",
+              "Emo_Avatar_Dehya_ElementalArt_Recycle_AS"
+            ]
+          },
+          "moveType": "combatMove",
+          "canDoSkill": true,
+          "addEndure": 0.6000000238418579,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "setAnimatorBoolean": [
+            {
+              "name": "&CanCancelSkill"
+            },
+            {
+              "name": "&CanUseSkill"
+            }
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "Dehya_ElementalBurst": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "Dehya_ElementalBurst": [
+              "Dehya_ElementalBurst",
+              "Interaction_Bad",
+              "Audio_Lady_Claymore_Dehya_ElementalBurst"
+            ]
+          },
+          "moveType": "combatMove",
+          "addEndure": 0.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
+          "cameraType": "combatNormal",
           "jumpCancelEnd": -1.0,
           "sprintCancelEnd": -1.0,
           "animatorTriggerOnLanded": "",
           "sheatheOnStart": true
         },
-        "Itto_ElementalBurst_AS": {
+        "Dehya_ElementalBurst_Loop_A": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Itto_ElementalBurst_AS": [
-              "Itto_ElementalBurst_AS",
-              "Audio_Male_Itto_Claymore_ElementalBurst_AS"
+            "Dehya_ElementalBurst_Loop_A": [
+              "Dehya_ElementalBurst_Loop_A",
+              "Interaction_Bad",
+              "Emo_Avatar_Dehya_ElementalBurst_Loop_A"
             ]
           },
           "moveType": "combatMove",
           "canDoSkill": true,
+          "addEndure": 0.0,
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "Jump",
+            "PRIVATE_QTE"
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "Dehya_ElementalBurst_Loop_A_QTE": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "Dehya_ElementalBurst_Loop_A_QTE": [
+              "Dehya_ElementalBurst_Loop_A_QTE",
+              "Interaction_Bad",
+              "Emo_Avatar_Dehya_ElementalBurst_Loop_A"
+            ]
+          },
+          "moveType": "combatMove",
+          "canDoSkill": true,
+          "addEndure": 0.0,
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "Jump",
+            "PRIVATE_QTE"
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "Dehya_ElementalBurst_Loop_B": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "Dehya_ElementalBurst_Loop_B": [
+              "Dehya_ElementalBurst_Loop_B",
+              "Interaction_Bad",
+              "Emo_Avatar_Dehya_ElementalBurst_Loop_B"
+            ]
+          },
+          "moveType": "combatMove",
+          "canDoSkill": true,
+          "addEndure": 0.0,
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "Jump",
+            "PRIVATE_QTE"
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "Dehya_ElementalBurst_Loop_B_QTE": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "Dehya_ElementalBurst_Loop_B_QTE": [
+              "Dehya_ElementalBurst_Loop_B_QTE",
+              "Interaction_Bad",
+              "Emo_Avatar_Dehya_ElementalBurst_Loop_B"
+            ]
+          },
+          "moveType": "combatMove",
+          "canDoSkill": true,
+          "addEndure": 0.0,
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "Jump",
+            "PRIVATE_QTE"
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "Dehya_ElementalBurst_Loop_End": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "Dehya_ElementalBurst_Loop_End": [
+              "Dehya_ElementalBurst_Loop_End",
+              "Interaction_Bad",
+              "Audio_Lady_Claymore_Dehya_ElementalBurst_Loop_End",
+              "Emo_Avatar_Dehya_ElementalBurst_End"
+            ]
+          },
+          "moveType": "combatMove",
+          "canDoSkill": true,
+          "addEndure": 0.0,
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "Jump",
+            "PRIVATE_QTE"
+          ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
+          "jumpCancelEnd": -1.0,
+          "sprintCancelEnd": -1.0,
+          "animatorTriggerOnLanded": "",
+          "sheatheOnStart": true
+        },
+        "Dehya_ElementalBurst_AS": {
+          "$type": "ConfigAvatarStateIDInfo",
+          "animatorStates": {
+            "Dehya_ElementalBurst_AS": [
+              "Dehya_ElementalBurst_AS",
+              "Audio_Lady_Claymore_Dehya_ElementalBurst_AS",
+              "Emo_Avatar_Dehya_ElementalBurst_AS"
+            ]
+          },
+          "moveType": "combatMove",
+          "canDoSkill": true,
+          "addEndure": 0.6000000238418579,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Jump"],
           "setAnimatorBoolean": [
             {
-              "name": "&CanUseSkill",
-              "normalizeStart": 0.029999999329447746
-            }
-          ],
-          "canChangeAvatar": [
+              "name": "&CanCancelSkill"
+            },
             {
-              "normalizeStart": 0.029999999329447746
+              "name": "&CanUseSkill"
             }
           ],
+          "cameraType": "combatNormal",
+          "canChangeAvatar": [{}],
           "animatorTriggerOnLanded": "",
-          "sheatheOnEnd": true
+          "sheatheOnStart": true
         },
         "FallingAnthem_BS": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "FallingAnthem_BS_1": [
-              "Audio_Male_Claymore_Itto_FallingAnthem_BS_1",
-              "Emo_Male_Claymore_FallingAttack_BS_01"
+              "Emo_Lady_Claymore_FallingAttack_BS_01",
+              "Audio_Lady_Claymore_Dehya_FallingAnthem_BS_1"
             ],
-            "FallingAnthem_BS_2": ["Emo_Male_Claymore_FallingAttack_BS_02"]
+            "FallingAnthem_BS_2": ["Emo_Lady_Claymore_FallingAttack_BS_02"]
           },
           "moveType": "combatAir",
           "addEndure": 0.0,
@@ -1783,7 +1433,7 @@
           "equipReattach": [
             {
               "equip": "equip01",
-              "targetPoint": "CatalystR"
+              "targetPoint": "WeaponR"
             }
           ],
           "jumpCancelEnd": -1.0,
@@ -1803,7 +1453,7 @@
           "equipReattach": [
             {
               "equip": "equip01",
-              "targetPoint": "CatalystR"
+              "targetPoint": "WeaponR"
             }
           ],
           "animatorTriggerOnLanded": "HitAir2HitDrop",
@@ -1813,10 +1463,10 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "FallingAnthem_AS_1": [
-              "Itto_FallingAnthem_Strike",
+              "Dehya_FallingAnthem_Strike",
               "Interaction_Bad",
-              "Audio_Male_Claymore_Itto_FallingAnthem_AS_1",
-              "Emo_Male_Claymore_FallingAttack_AS_01"
+              "Emo_Lady_Claymore_FallingAttack_AS_01",
+              "Audio_Lady_Claymore_Dehya_FallingAnthem_AS_1"
             ]
           },
           "moveType": "combatMove",
@@ -1831,7 +1481,7 @@
           "equipReattach": [
             {
               "equip": "equip01",
-              "targetPoint": "CatalystR"
+              "targetPoint": "WeaponR"
             }
           ],
           "jumpCancelEnd": -1.0,
@@ -1842,9 +1492,8 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "FallingAnthem_AS_2": [
-              "Itto_FallingAnthem_AS",
-              "Audio_Male_Claymore_Itto_FallingAnthem_AS_2",
-              "Emo_Male_Claymore_FallingAttack_AS_01"
+              "Emo_Lady_Claymore_FallingAttack_AS_02",
+              "Audio_Lady_Claymore_Dehya_FallingAnthem_AS_2"
             ]
           },
           "moveType": "combatMove",
@@ -1859,20 +1508,19 @@
           "equipReattach": [
             {
               "equip": "equip01",
-              "targetPoint": "CatalystR"
+              "targetPoint": "WeaponR"
             }
           ],
           "jumpCancelStart": 0.10000000149011612,
           "animatorTriggerOnLanded": "",
-          "battouOnStart": true,
-          "sheatheOnEnd": true
+          "battouOnStart": true
         },
         "Sit": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "SitDown": ["Audio_Girl_SitDown", "Audio_Male_Sit_Itto"],
+            "SitDown": ["Audio_Girl_SitDown", "Audio_Lady_Sit_Dehya"],
             "SitLoop": [],
-            "SitUp": ["Audio_Girl_SitDown", "Audio_Male_Sit_Itto"]
+            "SitUp": ["Audio_Girl_SitDown", "Audio_Lady_Sit_Dehya"]
           },
           "moveType": "performMove",
           "massRatio": 100.0,
@@ -1883,9 +1531,9 @@
         "SitB": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "SitBDown": ["Audio_Girl_SitDown", "Audio_Male_Sit_Itto"],
+            "SitBDown": ["Audio_Girl_SitDown", "Audio_Lady_Sit_Dehya"],
             "SitBLoop": [],
-            "SitBUp": ["Audio_Girl_SitDown", "Audio_Male_Sit_Itto"]
+            "SitBUp": ["Audio_Girl_SitDown", "Audio_Lady_Sit_Dehya"]
           },
           "moveType": "performMove",
           "massRatio": 100.0,
@@ -1896,16 +1544,16 @@
         "StandbyShow": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "StandbyVoice": ["Audio_Male_StandbyVoice"],
+            "StandbyVoice": ["Audio_Lady_StandbyVoice"],
             "StandbyShow_01": [
-              "Manekin_Itto_Show01",
-              "Audio_Male_Itto_StandbyShow_01_SFX",
-              "Manekin_Itto_Show01"
+              "Manekin_Dehya_Show01",
+              "Audio_Lady_Claymore_Dehya_StandbyShow_01_SFX",
+              "Emo_Lady_Claymore_Dehya_Show_01"
             ],
             "StandbyShow_02": [
-              "Manekin_Itto_Show02",
-              "Audio_Male_Itto_StandbyShow_02_SFX",
-              "Manekin_Itto_Show02"
+              "Manekin_Dehya_Show02",
+              "Audio_Lady_Claymore_Dehya_StandbyShow_02_SFX",
+              "Emo_Lady_Claymore_Dehya_Show_02"
             ]
           },
           "moveType": "performMove",
@@ -1989,7 +1637,10 @@
         "PlayMusic_Lyre": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "PlayMusic_Lyre_BS": ["PlayMusic_Lyre_Male"],
+            "PlayMusic_Lyre_BS": [
+              "PlayMusic_Lyre_Lady",
+              "Audio_Char_Common_PlayMusic_Lyrc_BS"
+            ],
             "PlayMusic_Lyre_Loop": []
           },
           "moveType": "combatMove",
@@ -2001,7 +1652,10 @@
         "PlayMusic_Lyre_AS": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "PlayMusic_Lyre_AS": ["PlayMusic_Lyre_Male_AS"]
+            "PlayMusic_Lyre_AS": [
+              "PlayMusic_Lyre_Lady_AS",
+              "Audio_Char_Common_PlayMusic_Lyrc_AS"
+            ]
           },
           "moveType": "combatMove",
           "canDoSkill": true,
@@ -2019,7 +1673,7 @@
         "PlayMusic_Qin": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "PlayMusic_Qin_BS": ["PlayMusic_Qin_Male"],
+            "PlayMusic_Qin_BS": ["PlayMusic_Qin_Lady"],
             "PlayMusic_Qin_Loop": []
           },
           "moveType": "combatMove",
@@ -2031,7 +1685,7 @@
         "PlayMusic_Qin_AS": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "PlayMusic_Qin_AS": ["PlayMusic_Qin_Male_AS"]
+            "PlayMusic_Qin_AS": ["PlayMusic_Qin_Lady_AS"]
           },
           "moveType": "combatMove",
           "canDoSkill": true,
@@ -2049,7 +1703,7 @@
         "PlayMusic_Drum": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "PlayMusic_Drum_BS": ["PlayMusic_Drum_Male"],
+            "PlayMusic_Drum_BS": ["PlayMusic_Drum_Lady"],
             "PlayMusic_Drum_Loop": []
           },
           "moveType": "combatMove",
@@ -2061,7 +1715,7 @@
         "PlayMusic_Drum_AS": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "PlayMusic_Drum_AS": ["PlayMusic_Drum_Male_AS"]
+            "PlayMusic_Drum_AS": ["PlayMusic_Drum_Lady_AS"]
           },
           "moveType": "combatMove",
           "canDoSkill": true,
@@ -2162,6 +1816,36 @@
     "animAudio": {
       "onTransitionIn": [
         {
+          "currentStateName": "ExtraAttack1",
+          "audioEvent": {
+            "text": "Play_sfx_char_dehya_claymore_extraAtk1"
+          }
+        },
+        {
+          "currentStateName": "Dehya_ElementalBurst_Loop_A",
+          "audioEvent": {
+            "text": "Play_sfx_char_dehya_elementalBurst_lp"
+          }
+        },
+        {
+          "currentStateName": "Dehya_ElementalBurst_Loop_A_QTE",
+          "audioEvent": {
+            "text": "Play_sfx_char_dehya_elementalBurst_lp"
+          }
+        },
+        {
+          "currentStateName": "Dehya_ElementalBurst_Loop_B",
+          "audioEvent": {
+            "text": "Play_sfx_char_dehya_elementalBurst_lp"
+          }
+        },
+        {
+          "currentStateName": "Dehya_ElementalBurst_Loop_B_QTE",
+          "audioEvent": {
+            "text": "Play_sfx_char_dehya_elementalBurst_lp"
+          }
+        },
+        {
           "currentStateName": "NormalDie",
           "audioEvent": {
             "text": "Play_sfx_char_land"
@@ -2170,15 +1854,15 @@
           "usage": "InSet"
         },
         {
-          "currentStateName": "SprintBS",
+          "currentStateName": "SlipFaceWall",
           "audioEvent": {
-            "text": "Play_sfx_char_diluc_coat_heavy"
+            "text": "Play_sfx_char_slipWall"
           }
         },
         {
-          "currentStateName": "SprintBS",
+          "currentStateName": "SlipBackWall",
           "audioEvent": {
-            "text": "Play_sfx_char_foley_flutter_heavy"
+            "text": "Play_sfx_char_slipWall"
           }
         },
         {
@@ -2194,81 +1878,121 @@
           }
         },
         {
-          "currentStateName": "SlipFaceWall",
-          "audioEvent": {
-            "text": "Play_sfx_char_slipWall"
-          }
-        },
-        {
-          "currentStateName": "SlipBackWall",
-          "audioEvent": {
-            "text": "Play_sfx_char_slipWall"
-          }
-        },
-        {
           "currentStateName": "Standby",
           "audioEvent": {
             "text": "Stop_sfx_char_fly"
+          }
+        },
+        {
+          "currentStateName": "SprintBS",
+          "audioEvent": {
+            "text": "Play_sfx_char_foley_flutter_heavy"
+          }
+        },
+        {
+          "currentStateName": "CrouchIdle",
+          "audioEvent": {
+            "text": "Play_sfx_char_foley_cloth_middle"
           }
         }
       ],
       "onTransitionOut": [
         {
-          "currentStateName": "Attack03",
+          "currentStateName": "Attack1",
           "audioEvent": {
-            "text": "Stop_sfx_char_itto_claymore_attack"
-          },
-          "otherStateNames": ["Attack04"],
-          "usage": "Except"
+            "text": "Stop_sfx_char_dehya_claymore_attack"
+          }
         },
         {
-          "currentStateName": "Attack04",
+          "currentStateName": "Attack2",
           "audioEvent": {
-            "text": "Stop_sfx_char_itto_claymore_attack"
-          },
-          "otherStateNames": ["ExtraAttack1_BS"],
-          "usage": "Except"
+            "text": "Stop_sfx_char_dehya_claymore_attack"
+          }
+        },
+        {
+          "currentStateName": "Attack3",
+          "audioEvent": {
+            "text": "Stop_sfx_char_dehya_claymore_attack"
+          }
+        },
+        {
+          "currentStateName": "Attack4",
+          "audioEvent": {
+            "text": "Stop_sfx_char_dehya_claymore_attack"
+          }
         },
         {
           "currentStateName": "ExtraAttack",
           "audioEvent": {
-            "text": "Stop_sfx_char_itto_claymore_attack"
+            "text": "Stop_sfx_char_dehya_claymore_extraAtk"
+          }
+        },
+        {
+          "currentStateName": "ExtraAttack1",
+          "audioEvent": {
+            "text": "Stop_sfx_char_dehya_claymore_extraAtk1"
+          }
+        },
+        {
+          "currentStateName": "ExtraAttack2",
+          "audioEvent": {
+            "text": "Stop_sfx_char_dehya_claymore_extraAtk2"
           },
-          "otherStateNames": ["ExtraAttack_AS"],
+          "otherStateNames": ["ExtraAttack3"],
           "usage": "Except"
         },
         {
-          "currentStateName": "ATK03_Ghost",
+          "currentStateName": "ExtraAttack3",
           "audioEvent": {
-            "text": "Stop_sfx_char_itto_claymore_elementalBurst_attack"
-          },
-          "otherStateNames": ["ATK04_Ghost"],
-          "usage": "Except"
+            "text": "Stop_sfx_char_dehya_claymore_extraAtk3"
+          }
         },
         {
-          "currentStateName": "ATK04_Ghost",
+          "currentStateName": "Dehya_ElementalBurst_Loop_A",
           "audioEvent": {
-            "text": "Stop_sfx_char_itto_claymore_elementalBurst_attack"
-          },
-          "otherStateNames": ["ExtraAttack_Ghost"],
-          "usage": "Except"
+            "text": "Stop_sfx_char_dehya_elementalBurst_lp"
+          }
+        },
+        {
+          "currentStateName": "Dehya_ElementalBurst_Loop_A_QTE",
+          "audioEvent": {
+            "text": "Stop_sfx_char_dehya_elementalBurst_lp"
+          }
+        },
+        {
+          "currentStateName": "Dehya_ElementalBurst_Loop_B",
+          "audioEvent": {
+            "text": "Stop_sfx_char_dehya_elementalBurst_lp"
+          }
+        },
+        {
+          "currentStateName": "Dehya_ElementalBurst_Loop_B_QTE",
+          "audioEvent": {
+            "text": "Stop_sfx_char_dehya_elementalBurst_lp"
+          }
+        },
+        {
+          "currentStateName": "FallingAnthem_AS_2",
+          "audioEvent": {
+            "text": "Stop_sfx_char_claymore_fallingAnthem_AS"
+          }
         },
         {
           "currentStateName": "StandbyShow_01",
           "audioEvent": {
-            "text": "Stop_sfx_standbyShow_itto_body"
+            "text": "Stop_sfx_standbyShow_dehya_01"
           }
         },
         {
           "currentStateName": "StandbyShow_02",
           "audioEvent": {
-            "text": "Stop_sfx_standbyShow_itto_comb"
+            "text": "Stop_sfx_standbyShow_dehya_02"
           }
         },
         {
           "currentStateName": "StandbyPutaway",
           "audioEvent": {
-            "text": "Stop_sfx_char_diluc_claymore_attackEnd"
+            "text": "Stop_sfx_weapon_1HSword_lady_putAwayStandby"
           }
         },
         {
@@ -2486,61 +2210,9 @@
           }
         },
         {
-          "currentStateName": "Standby",
-          "audioEvent": {
-            "text": "Play_sfx_char_diluc_coat_light"
-          },
-          "otherStateNames": ["Walk", "Run"],
-          "usage": "InSet"
-        },
-        {
-          "currentStateName": "Standby",
-          "audioEvent": {
-            "text": "Play_sfx_char_foley_flutter_light"
-          },
-          "otherStateNames": ["Walk", "Run"],
-          "usage": "InSet"
-        },
-        {
-          "currentStateName": "StandbyWeapon",
-          "audioEvent": {
-            "text": "Play_sfx_char_diluc_coat_light"
-          },
-          "otherStateNames": ["WalkWeapon", "RunWeapon"],
-          "usage": "InSet"
-        },
-        {
-          "currentStateName": "StandbyWeapon",
-          "audioEvent": {
-            "text": "Play_sfx_char_foley_flutter_light"
-          },
-          "otherStateNames": ["WalkWeapon", "RunWeapon"],
-          "usage": "InSet"
-        },
-        {
-          "currentStateName": "SlipFaceWall",
-          "audioEvent": {
-            "text": "Stop_sfx_char_drop"
-          },
-          "otherStateNames": ["SlipBackWall"],
-          "usage": "InSet"
-        },
-        {
-          "currentStateName": "SlipFaceWall",
-          "audioEvent": {
-            "text": "Stop_sfx_char_drop"
-          }
-        },
-        {
           "currentStateName": "SlipFaceWall",
           "audioEvent": {
             "text": "Stop_sfx_char_slipWall"
-          }
-        },
-        {
-          "currentStateName": "SlipBackWall",
-          "audioEvent": {
-            "text": "Stop_sfx_char_drop"
           }
         },
         {
@@ -2567,7 +2239,7 @@
             "lower": 34.0
           },
           "eventName": {
-            "text": "Play_vo_char_explore_idle"
+            "text": ""
           }
         },
         "Walk": {
@@ -2644,10 +2316,10 @@
       ]
     },
     "voiceSwitch": {
-      "text": "Switch_Itto"
+      "text": "Switch_Dehya"
     },
     "bodyTypeSwitch": {
-      "text": "Switch_Male"
+      "text": "Switch_Lady"
     },
     "listenerLiftup": 1.5,
     "surfaceProberLiftup": 1.5
