@@ -1,11 +1,11 @@
 # Grasscutter Resources
-> <em>Resource - "Certain Anime Game" Version 3.4</em><br/>
+> <em>Resource - "Certain Anime Game" Version 3.5</em><br/>
 
-- ExcelBinOutput - 3.4 TomyJan
-- BinOutput - GC 2.7 Quest,Scene>Point,HomeworldDefaultSave | TomyJan 3.4 All except Quest
-- Scripts - 3.4 GIO ***Used for Big World LUA ***
-- TextMap - 3.4 TomyJan ***for language translations items,etc are used for gm-books***
-- QuestEncryptionKeys - 3.2 GIO ***Used for cutscenes that require a key, see Credits below***
+- ExcelBinOutput - 3.5 Dimbreath
+- BinOutput - GC 2.7 Quest,Scene>Point,HomeworldDefaultSave | Dimbreath 3.5 All except Quest
+- Scripts - 3.5 GIO ***Used for Big World LUA ***
+- TextMap - 3.5 Dimbreath ***for language translations items,etc are used for gm-books***
+- QuestEncryptionKeys - 3.5 GIO ***Used for cutscenes that require a key, see Credits below***
 
 ## What is difference between GIO and GC?
 - GIO is a leaked full file from official server which was released last month (maybe 28/10/2022) which is available from 3.1-4.0 so it's possible that version 3.2+ some animations/characters are still in beta (aka beta old) so data won't be accurate anymore if it's already release because of the many revisions.
@@ -58,3 +58,4 @@ Because there are a lot of useless files, so I made a separate repo: GIO and Gra
  - [MTAlexKen](https://github.com/MTAlexKen/Genshin-resources) (Routes)<br/>
  - [radioegor146](https://github.com/radioegor146) <br/>
  - [TheLostTree](https://github.com/TheLostTree) <br/>
+ - [Sycamore0](https://github.com/Sycamore0/GenshinData) <br/>
