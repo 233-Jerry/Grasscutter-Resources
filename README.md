@@ -35,6 +35,10 @@
 - Gadget/*
 - LevelDesign/Routes/*
 - LevelEntity/* (ConfigLevelEntity_*.json)
+## Needed by Grasscutter-Quests
+- (LUA) Gadget (Control stats gadget)
+- (BIN) Config Monster (???)
+- (LUA) Scene/{sceneId}/scene_grid.json (Better Natural Spawn Info)
 
 Because there are a lot of useless files, so I made a separate repo: GIO and Grasscutter Version are needed for Grasscutter only.
 
