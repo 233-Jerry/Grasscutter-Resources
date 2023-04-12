@@ -1,1766 +1,1498 @@
 {
-    "common": {
-        "effectAttachShape": {
-            "$type": "ConfigEffectAttachSkinnedMesh",
-            "mesh": "EffectMesh"
-        },
-        "mass": 10000.0,
-        "height": 2.0,
-        "modelHeight": 2.700000047683716,
-        "viewSize": 1.7999999523162842,
-        "affectedByWorld": true,
-        "checkInSurface": true,
-        "scale": 1.100000023841858,
-        "shouldPauseAnimatorBeforeReady": true,
-        "useGrassDisplacement": true,
-        "hasAfterImage": true,
-        "clearAnimatorOnSetLightDeactive": true,
-        "clearAIOnSetLightDeactive": true
+  "$type": "ConfigMonster",
+  "headControl": {
+    "$type": "ConfigHeadControl",
+    "useHeadControl": true,
+    "maxYawDegree": 20,
+    "maxPitchDegree": 5,
+    "animStates": [
+      "NormalIdle/Standby",
+      "NormalMove/WalkForward",
+      "NormalMove/WalkBack",
+      "NormalMove/WalkRight",
+      "NormalMove/WalkLeft",
+      "Turn/TurnLeft",
+      "Turn/TurnRight"
+    ]
+  },
+  "common": {
+    "scale": 1.1,
+    "viewSize": 1.8,
+    "effectAttachShape": {
+      "$type": "ConfigEffectAttachSkinnedMesh",
+      "mesh": "EffectMesh"
     },
-    "headControl": {
-        "$type": "ConfigHeadControl",
-        "useHeadControl": true,
-        "maxYawDegree": 20.0,
-        "maxPitchDegree": 5.0,
-        "animStates": [
-            "NormalIdle/Standby",
-            "NormalMove/WalkForward",
-            "NormalMove/WalkBack",
-            "NormalMove/WalkRight",
-            "NormalMove/WalkLeft",
-            "Turn/TurnLeft",
-            "Turn/TurnRight"
-        ]
+    "mass": 10000.0,
+    "useGrassDisplacement": true,
+    "affectedByWorld": true,
+    "checkInSurface": true,
+    "hasAfterImage": true,
+    "height": 2,
+    "modelHeight": 2.7,
+    "clearAnimatorOnSetLightDeactive": true,
+    "clearAIOnSetLightDeactive": true,
+    "shouldPauseAnimatorBeforeReady": true
+  },
+  "model": {
+    "bornEffect": "Eff_Monster_Common_Born"
+  },
+  "dither": {
+    "showDitherDuration": 2.0
+  },
+  "equipController": {
+    "attachPoints": {
+      "equip01": "WeaponR",
+      "equip02": "WeaponL"
     },
-    "model": {
-        "bornEffect": "Eff_Monster_Common_Born",
-        "attachEffect": ""
+    "sheathPoint": ""
+  },
+  "move": {
+    "$type": "ConfigAnimatorMove",
+    "facingMove": "FourDirection",
+    "monsterSizeType": "StoopType"
+  },
+  "billboard": {
+    "$type": "ConfigCombatBillboard",
+    "offsetType": "Character",
+    "offset": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "dither": {
-        "showDitherDuration": 2.0
+    "radiusOffset": 0,
+    "showHPBar": true,
+    "size": "Big",
+    "forceShowDistance": 50
+  },
+  "combat": {
+    "property": {
+      "endureType": "Monster_Demiboss_Humanoid",
+      "weight": 150
     },
-    "combat": {
-        "property": {
-            "endureType": "Monster_Demiboss_Humanoid",
-            "weight": 150.0
-        },
-        "beHit": {
-            "hitBloodEffect": ""
-        },
-        "combatLock": {
-            "lockShape": "CircleLockEnemy",
-            "lockType": "Avatar&Monster_Lv4"
-        },
-        "die": {
-            "hasAnimatorDie": true,
-            "dieEndTime": 3.200000047683716,
-            "dieForceDisappearTime": 3.200000047683716,
-            "dieDisappearEffect": "Eff_Death_Avatar_Common",
-            "dieShaderData": "AvatarDie",
-            "NLGENBICMGM": true,
-            "OLFBIHLAOAP": true,
-            "LOEEPBHGMFL": true,
-            "LGFCIGKOHHD": true,
-            "BNKHGHFNJFN": true
-        },
-        "animEvents": {
-            "MeleeAtk": {
-                "attackPattern": {
-                    "$type": "ConfigAttackBox",
-                    "triggerType": "TriggerNoRepeat",
-                    "ignoreMassive": true,
-                    "born": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "IBKBLDAJIMA": 0.0,
-                            "LKHJADIPBFL": 1.5,
-                            "PJCOKIGCJOK": 0.5
-                        }
-                    },
-                    "size": {
-                        "IBKBLDAJIMA": 2.0,
-                        "LKHJADIPBFL": 2.5,
-                        "PJCOKIGCJOK": 3.5
-                    }
-                },
-                "attackInfo": {
-                    "attackTag": "",
-                    "attenuationTag": "",
-                    "attenuationGroup": "default",
-                    "attackProperty": {
-                        "HBIOLEEGHPD": 0.699999988079071,
-                        "CCNJGLPMIEP": 0.0,
-                        "bonusCriticalHurt": 50.0,
-                        "strikeType": "Slash",
-                        "enBreak": 50.0,
-                        "attackType": "Melee"
-                    },
-                    "hitPattern": {
-                        "onHitEffectName": "default",
-                        "hitImpulseType": "LV4",
-                        "canBeDefenceHalt": true
-                    }
-                }
-            },
-            "MeleeAtkThunder": {
-                "attackPattern": {
-                    "$type": "ConfigAttackBox",
-                    "triggerType": "TriggerNoRepeat",
-                    "ignoreMassive": true,
-                    "born": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "IBKBLDAJIMA": 0.0,
-                            "LKHJADIPBFL": 1.5,
-                            "PJCOKIGCJOK": 0.5
-                        }
-                    },
-                    "size": {
-                        "IBKBLDAJIMA": 2.0,
-                        "LKHJADIPBFL": 2.5,
-                        "PJCOKIGCJOK": 4.0
-                    }
-                },
-                "attackInfo": {
-                    "attackTag": "Monster_Samurai_Kairagi_ThunderHit",
-                    "attenuationTag": "",
-                    "attenuationGroup": "default",
-                    "attackProperty": {
-                        "HBIOLEEGHPD": 0.699999988079071,
-                        "CCNJGLPMIEP": 0.0,
-                        "elementType": "Electric",
-                        "bonusCriticalHurt": 50.0,
-                        "strikeType": "Slash",
-                        "enBreak": 50.0,
-                        "attackType": "Melee"
-                    },
-                    "hitPattern": {
-                        "onHitEffectName": "default",
-                        "hitImpulseType": "LV4",
-                        "canBeDefenceHalt": true
-                    }
-                }
-            },
-            "RushAtk": {
-                "attackPattern": {
-                    "$type": "ConfigAttackBox",
-                    "triggerType": "TriggerNoRepeat",
-                    "ignoreMassive": true,
-                    "born": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "IBKBLDAJIMA": 0.0,
-                            "LKHJADIPBFL": 1.5,
-                            "PJCOKIGCJOK": -7.5
-                        }
-                    },
-                    "size": {
-                        "IBKBLDAJIMA": 2.0,
-                        "LKHJADIPBFL": 2.5,
-                        "PJCOKIGCJOK": 15.0
-                    }
-                },
-                "attackInfo": {
-                    "attackTag": "",
-                    "attenuationTag": "",
-                    "attenuationGroup": "default",
-                    "attackProperty": {
-                        "HBIOLEEGHPD": 1.0,
-                        "CCNJGLPMIEP": 0.0,
-                        "bonusCriticalHurt": 50.0,
-                        "strikeType": "Slash",
-                        "enBreak": 100.0,
-                        "attackType": "Melee"
-                    },
-                    "hitPattern": {
-                        "onHitEffectName": "default",
-                        "hitImpulseType": "LV5",
-                        "retreatType": "ByHitDirection",
-                        "canBeDefenceHalt": true
-                    }
-                }
-            },
-            "RushAtkThunder": {
-                "attackPattern": {
-                    "$type": "ConfigAttackBox",
-                    "triggerType": "TriggerNoRepeat",
-                    "ignoreMassive": true,
-                    "born": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "IBKBLDAJIMA": 0.0,
-                            "LKHJADIPBFL": 1.5,
-                            "PJCOKIGCJOK": -7.5
-                        }
-                    },
-                    "size": {
-                        "IBKBLDAJIMA": 2.0,
-                        "LKHJADIPBFL": 2.5,
-                        "PJCOKIGCJOK": 15.0
-                    }
-                },
-                "attackInfo": {
-                    "attackTag": "Monster_Samurai_Kairagi_ThunderHit",
-                    "attenuationTag": "",
-                    "attenuationGroup": "default",
-                    "attackProperty": {
-                        "HBIOLEEGHPD": 1.0,
-                        "CCNJGLPMIEP": 0.0,
-                        "elementType": "Electric",
-                        "bonusCriticalHurt": 50.0,
-                        "strikeType": "Slash",
-                        "enBreak": 100.0,
-                        "attackType": "Melee"
-                    },
-                    "hitPattern": {
-                        "onHitEffectName": "default",
-                        "hitImpulseType": "LV5",
-                        "retreatType": "ByHitDirection",
-                        "canBeDefenceHalt": true
-                    }
-                }
-            },
-            "JumpAtk": {
-                "attackPattern": {
-                    "$type": "ConfigAttackBox",
-                    "triggerType": "TriggerNoRepeat",
-                    "ignoreMassive": true,
-                    "born": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "IBKBLDAJIMA": 0.0,
-                            "LKHJADIPBFL": 1.5,
-                            "PJCOKIGCJOK": 0.0
-                        }
-                    },
-                    "size": {
-                        "IBKBLDAJIMA": 2.5,
-                        "LKHJADIPBFL": 3.0,
-                        "PJCOKIGCJOK": 4.0
-                    }
-                },
-                "attackInfo": {
-                    "attackTag": "",
-                    "attenuationTag": "",
-                    "attenuationGroup": "default",
-                    "attackProperty": {
-                        "HBIOLEEGHPD": 1.2000000476837158,
-                        "CCNJGLPMIEP": 0.0,
-                        "bonusCriticalHurt": 50.0,
-                        "strikeType": "Blunt",
-                        "enBreak": 100.0,
-                        "attackType": "Melee"
-                    },
-                    "hitPattern": {
-                        "onHitEffectName": "default",
-                        "hitImpulseType": "LV5",
-                        "canBeDefenceHalt": true
-                    },
-                    "forceCameraShake": true,
-                    "cameraShake": {
-                        "shakeType": "CustomVector",
-                        "shakeRange": 0.30000001192092896,
-                        "shakeTime": 0.10000000149011612,
-                        "shakeDir": {
-                            "y": 1.0
-                        }
-                    }
-                }
-            },
-            "JumpAtkThunder": {
-                "attackPattern": {
-                    "$type": "ConfigAttackBox",
-                    "triggerType": "TriggerNoRepeat",
-                    "ignoreMassive": true,
-                    "born": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "IBKBLDAJIMA": 0.0,
-                            "LKHJADIPBFL": 1.5,
-                            "PJCOKIGCJOK": 0.0
-                        }
-                    },
-                    "size": {
-                        "IBKBLDAJIMA": 4.0,
-                        "LKHJADIPBFL": 3.0,
-                        "PJCOKIGCJOK": 11.0
-                    }
-                },
-                "attackInfo": {
-                    "attackTag": "Monster_Samurai_Kairagi_ThunderHit",
-                    "attenuationTag": "",
-                    "attenuationGroup": "default",
-                    "attackProperty": {
-                        "HBIOLEEGHPD": 1.2000000476837158,
-                        "CCNJGLPMIEP": 0.0,
-                        "elementType": "Electric",
-                        "bonusCriticalHurt": 50.0,
-                        "strikeType": "Blunt",
-                        "enBreak": 100.0,
-                        "attackType": "Melee"
-                    },
-                    "hitPattern": {
-                        "onHitEffectName": "default",
-                        "hitImpulseType": "LV5",
-                        "canBeDefenceHalt": true
-                    },
-                    "forceCameraShake": true,
-                    "cameraShake": {
-                        "shakeType": "CustomVector",
-                        "shakeRange": 0.30000001192092896,
-                        "shakeTime": 0.10000000149011612,
-                        "shakeDir": {
-                            "y": 1.0
-                        }
-                    }
-                }
-            },
-            "ChargeAtk": {
-                "attackPattern": {
-                    "$type": "ConfigAttackCircle",
-                    "triggerType": "TriggerNoRepeat",
-                    "ignoreMassive": true,
-                    "born": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "IBKBLDAJIMA": 0.0,
-                            "LKHJADIPBFL": -0.10000000149011612,
-                            "PJCOKIGCJOK": 0.0
-                        }
-                    },
-                    "height": 2.0,
-                    "DCMPFCIBIPA": 3.0
-                },
-                "attackInfo": {
-                    "attackTag": "",
-                    "attenuationTag": "",
-                    "attenuationGroup": "default",
-                    "attackProperty": {
-                        "HBIOLEEGHPD": 1.0,
-                        "CCNJGLPMIEP": 0.0,
-                        "bonusCriticalHurt": 50.0,
-                        "strikeType": "Slash",
-                        "enBreak": 100.0,
-                        "attackType": "Melee"
-                    },
-                    "hitPattern": {
-                        "onHitEffectName": "default",
-                        "hitImpulseType": "LV5",
-                        "retreatType": "ByHitDirection",
-                        "canBeDefenceHalt": true
-                    }
-                }
-            },
-            "ChargeAtkThunder": {
-                "attackPattern": {
-                    "$type": "ConfigAttackCircle",
-                    "triggerType": "TriggerNoRepeat",
-                    "ignoreMassive": true,
-                    "born": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "IBKBLDAJIMA": 0.0,
-                            "LKHJADIPBFL": -0.20000000298023224,
-                            "PJCOKIGCJOK": 0.0
-                        }
-                    },
-                    "height": 2.0,
-                    "DCMPFCIBIPA": 5.0
-                },
-                "attackInfo": {
-                    "attackTag": "Monster_Samurai_Kairagi_ThunderHit",
-                    "attenuationTag": "",
-                    "attenuationGroup": "default",
-                    "attackProperty": {
-                        "HBIOLEEGHPD": 1.0,
-                        "CCNJGLPMIEP": 0.0,
-                        "elementType": "Electric",
-                        "bonusCriticalHurt": 50.0,
-                        "strikeType": "Slash",
-                        "enBreak": 100.0,
-                        "attackType": "Melee"
-                    },
-                    "hitPattern": {
-                        "onHitEffectName": "default",
-                        "hitImpulseType": "LV5",
-                        "retreatType": "ByHitDirection",
-                        "canBeDefenceHalt": true
-                    }
-                }
-            },
-            "AddElementAtkThunder": {
-                "attackPattern": {
-                    "$type": "ConfigAttackBox",
-                    "triggerType": "TriggerNoRepeat",
-                    "ignoreMassive": true,
-                    "born": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "IBKBLDAJIMA": 0.0,
-                            "LKHJADIPBFL": 1.5,
-                            "PJCOKIGCJOK": 0.0
-                        }
-                    },
-                    "size": {
-                        "IBKBLDAJIMA": 4.0,
-                        "LKHJADIPBFL": 3.0,
-                        "PJCOKIGCJOK": 6.0
-                    }
-                },
-                "attackInfo": {
-                    "attackTag": "Monster_Samurai_Kairagi_ThunderHit",
-                    "attenuationTag": "",
-                    "attenuationGroup": "default",
-                    "attackProperty": {
-                        "HBIOLEEGHPD": 1.5,
-                        "CCNJGLPMIEP": 0.0,
-                        "elementType": "Electric",
-                        "bonusCriticalHurt": 50.0,
-                        "strikeType": "Slash",
-                        "enBreak": 100.0,
-                        "attackType": "Melee"
-                    },
-                    "hitPattern": {
-                        "onHitEffectName": "default",
-                        "hitImpulseType": "LV5",
-                        "canBeDefenceHalt": true
-                    },
-                    "forceCameraShake": true,
-                    "cameraShake": {
-                        "shakeType": "CustomVector",
-                        "shakeRange": 0.30000001192092896,
-                        "shakeTime": 0.10000000149011612,
-                        "shakeDir": {
-                            "y": 1.0
-                        }
-                    }
-                }
-            },
-            "AddElementAtkThunder_Blocked": {
-                "attackPattern": {
-                    "$type": "ConfigAttackBox",
-                    "triggerType": "TriggerNoRepeat",
-                    "ignoreMassive": true,
-                    "born": {
-                        "$type": "ConfigBornBySelf",
-                        "offset": {
-                            "IBKBLDAJIMA": 0.0,
-                            "LKHJADIPBFL": 1.5,
-                            "PJCOKIGCJOK": 0.0
-                        }
-                    },
-                    "size": {
-                        "IBKBLDAJIMA": 4.0,
-                        "LKHJADIPBFL": 3.0,
-                        "PJCOKIGCJOK": 6.0
-                    }
-                },
-                "attackInfo": {
-                    "attackTag": "Monster_BladeMaster_BeBlockAttack",
-                    "attenuationTag": "",
-                    "attenuationGroup": "default",
-                    "attackProperty": {
-                        "HBIOLEEGHPD": 1.5,
-                        "CCNJGLPMIEP": 0.0,
-                        "elementType": "Electric",
-                        "bonusCriticalHurt": 50.0,
-                        "strikeType": "Slash",
-                        "enBreak": 100.0,
-                        "attackType": "Melee"
-                    },
-                    "hitPattern": {
-                        "onHitEffectName": "default",
-                        "hitImpulseType": "LV5",
-                        "canBeDefenceHalt": true
-                    },
-                    "forceCameraShake": true,
-                    "cameraShake": {
-                        "shakeType": "CustomVector",
-                        "shakeRange": 0.30000001192092896,
-                        "shakeTime": 0.10000000149011612,
-                        "shakeDir": {
-                            "y": 1.0
-                        }
-                    }
-                }
+    "combatLock": {
+      "denyLockOn": false,
+      "lockType": "Avatar&Monster_Lv4"
+    },
+    "beHit": {
+      "hitBloodEffect": "",
+      "muteAllHit": false,
+      "muteAllHitEffect": false,
+      "muteAllHitText": false
+    },
+    "die": {
+      "hasAnimatorDie": true,
+      "dieDisappearEffect": "Eff_Death_Avatar_Common",
+      "dieDisappearEffectDelay": 0,
+      "dieEndTime": 3.2,
+      "dieForceDisappearTime": 3.2,
+      "dieShaderData": "AvatarDie",
+      "useRagDoll": false,
+      "dieDenyLockOn": true,
+      "dieIsGhostToEnemy": true,
+      "muteHitBox": true,
+      "muteBillboard": true,
+      "mutePushCollider": true
+    },
+    "animEvents": {
+      "MeleeAtk": {
+        "attackPattern": {
+          "$type": "ConfigAttackBox",
+          "triggerType": "TriggerNoRepeat",
+          "size": {
+            "x": 2,
+            "y": 2.5,
+            "z": 3.5
+          },
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 1.5,
+              "z": 0.5
             }
+          },
+          "ignoreMassive": true
+        },
+        "attackInfo": {
+          "attackProperty": {
+            "damagePercentage": 0.7,
+            "strikeType": "Slash",
+            "overrideByWeapon": false,
+            "attackType": "Melee",
+            "enBreak": 50,
+            "elementDurability": 50
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV4",
+            "canBeDefenceHalt": true,
+            "muteHitText": false,
+            "retreatType": "ByAttacker"
+          }
         }
-    },
-    "equipController": {
-        "sheathPoint": "",
-        "attachPoints": {
-            "equip01": "WeaponR",
-            "equip02": "WeaponL"
-        }
-    },
-    "abilities": [
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_01_RushAttack",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_01_Steer",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_01_AddElement_Electric",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_Angry_Thunder",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_01_Alert",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_01_OutOfBattle",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_EnsureVisible",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_BladeMaster_ForceDodge",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_Thunder_AttackMark",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_ChangeToAngryPose",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_01_AddElement_ComboCheckDistance",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_GhostChallenge_PowerUp",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_SevenBlade_Affix",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_BlockBreak",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_BornImprove",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_BladeMaster_Block",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_01_FireBladeWind1",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_01_FireBladeWind2",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_01_FireBladeWind3",
-            "abilityOverride": ""
-        },
-        {
-            "abilityID": "",
-            "abilityName": "Monster_Samurai_Kairagi_BladeMaster_Steer",
-            "abilityOverride": ""
-        }
-    ],
-    "stateLayers": {
-        "defaultLayer": {
-            "$type": "ConfigNormalStateLayer",
-            "layerIndexName": "",
-            "stateIDs": {
-                "Born": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Born": [
-                            "Audio_Samurai_Kairagi_Born"
-                        ]
-                    },
-                    "canSyncMove": true,
-                    "resetAnimatorTriggerOnExit": [
-                        "DoSkill"
-                    ]
-                },
-                "NormalIdle": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Standby": []
-                    },
-                    "canDoSkill": true,
-                    "canSyncMove": true,
-                    "resetAnimatorTriggerOnExit": [
-                        "DoSkill"
-                    ]
-                },
-                "NormalMove": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "WalkForward": [
-                            "Audio_Samurai_Kairagi_Walk"
-                        ],
-                        "WalkBack": [
-                            "Audio_Samurai_Kairagi_Walk"
-                        ],
-                        "WalkRight": [
-                            "Audio_Samurai_Kairagi_Walk"
-                        ],
-                        "WalkLeft": [
-                            "Audio_Samurai_Kairagi_Walk"
-                        ],
-                        "WalkFree": [
-                            "Audio_Samurai_Kairagi_Walk"
-                        ]
-                    },
-                    "canDoSkill": true,
-                    "canSyncMove": true,
-                    "resetAnimatorTriggerOnExit": [
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "Turn": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "TurnLeft": [
-                            "Audio_Samurai_Kairagi_Walk"
-                        ],
-                        "TurnRight": [
-                            "Audio_Samurai_Kairagi_Walk"
-                        ]
-                    },
-                    "canDoSkill": true,
-                    "canSyncMove": true,
-                    "resetAnimatorTriggerOnExit": [
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "BeHit": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Hit_L": [
-                            "Audio_Samurai_Kairagi_Hit_L_VO"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnEnter": [
-                        "BeHit"
-                    ],
-                    "resetAnimatorTriggerOnExit": [
-                        "DoSkill"
-                    ]
-                },
-                "BeHit_H": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Hit_H": [
-                            "Audio_Samurai_Kairagi_Hit_H_VO"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnEnter": [
-                        "BeHit"
-                    ],
-                    "resetAnimatorTriggerOnExit": [
-                        "DoSkill"
-                    ]
-                },
-                "Run": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Run": [
-                            "Audio_Samurai_Kairagi_Run"
-                        ]
-                    },
-                    "canDoSkill": true,
-                    "canSyncMove": true,
-                    "resetAnimatorTriggerOnExit": [
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "RunFree": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "RunFree": [
-                            "Audio_Samurai_Kairagi_Run"
-                        ]
-                    },
-                    "canDoSkill": true,
-                    "canSyncMove": true,
-                    "resetAnimatorTriggerOnExit": [
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "BeHitThrow": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "HitThrow": [],
-                        "HitThrowDrop": [],
-                        "HitThrowToGround": [
-                            "Audio_Samurai_Kairagi_HitThrowToGround"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnEnter": [
-                        "BeHit",
-                        "HitAir2HitDrop"
-                    ],
-                    "resetAnimatorTriggerOnExit": [
-                        "DoSkill"
-                    ]
-                },
-                "Struggle": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Struggle": []
-                    },
-                    "resetAnimatorTriggerOnEnter": [
-                        "BeHit",
-                        "HitAir2HitDrop"
-                    ],
-                    "resetAnimatorTriggerOnExit": [
-                        "DoSkill"
-                    ]
-                },
-                "Die": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Die": [
-                            "Audio_Samurai_Kairagi_Die_NoneVO"
-                        ],
-                        "Die2": [
-                            "Audio_Samurai_Kairagi_Die_NoneVO"
-                        ],
-                        "SwimDie": [],
-                        "SwimDie_AS": []
-                    }
-                },
-                "Die_RagDoll": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "AirDie": []
-                    },
-                    "enableRagDoll": true
-                },
-                "Alert": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Alert": [
-                            "Monster_Samurai_Kairagi_BladeMaster_Alert",
-                            "Audio_Samurai_Kairagi_Alert"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "MeleeAtk1": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "MeleeAttack1": [
-                            "Monster_Samurai_Kairagi_BladeMaster_Melee1Effect",
-                            "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade1",
-                            "Audio_Samurai_Kairagi_MeleeAtk1_Special"
-                        ],
-                        "MeleeAttack1_Thunder": [
-                            "Monster_Samurai_Kairagi_MeleeAttack1_Thunder",
-                            "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade1",
-                            "Audio_Samurai_Kairagi_MeleeAtk1_Thunder"
-                        ],
-                        "ElementCombo_MeleeAttack1_Thunder": [
-                            "Monster_Samurai_Kairagi_MeleeAttack1_Thunder",
-                            "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade1",
-                            "Audio_Samurai_Kairagi_MeleeAtk1_Thunder"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnEnter": [
-                        "DoSkill"
-                    ],
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "MeleeAtk2": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "MeleeAttack2": [
-                            "Monster_Samurai_Kairagi_BladeMaster_Melee2Effect",
-                            "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade2",
-                            "Audio_Samurai_Kairagi_MeleeAtk2_Special"
-                        ],
-                        "MeleeAttack2_Thunder": [
-                            "Monster_Samurai_Kairagi_MeleeAttack2_Thunder",
-                            "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade2",
-                            "Audio_Samurai_Kairagi_MeleeAtk2_Thunder"
-                        ],
-                        "ElementCombo_MeleeAttack2_Thunder": [
-                            "Monster_Samurai_Kairagi_MeleeAttack2_Thunder",
-                            "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade2",
-                            "Audio_Samurai_Kairagi_MeleeAtk2_Thunder"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnEnter": [
-                        "DoSkill"
-                    ],
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "MeleeAtk3": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "MeleeAttack3": [
-                            "Monster_Samurai_Kairagi_BladeMaster_Melee1Effect",
-                            "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade1",
-                            "Audio_Samurai_Kairagi_MeleeAtk1_Special"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnEnter": [
-                        "DoSkill"
-                    ],
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "MeleeAtk4": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "MeleeAttack4": [
-                            "Monster_Samurai_Kairagi_BladeMaster_Melee2Effect",
-                            "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade2",
-                            "Audio_Samurai_Kairagi_MeleeAtk2_Special"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnEnter": [
-                        "DoSkill"
-                    ],
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "MeleeAtk5": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "DodgeBladeAttack": [
-                            "Monster_Samurai_Kairagi_BladeMaster_Melee3Effect",
-                            "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade3",
-                            "Audio_Samurai_Kairagi_MeleeAtk3_Thunder"
-                        ],
-                        "MeleeAttack5": [
-                            "Monster_Samurai_Kairagi_BladeMaster_Melee3Effect",
-                            "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade3",
-                            "Audio_Samurai_Kairagi_MeleeAtk3_Special"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnEnter": [
-                        "DoSkill"
-                    ],
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "RushAtk": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "RushAtk": [
-                            "Monster_Samurai_Kairagi_RushAtk",
-                            "Audio_Samurai_Kairagi_RushAtk"
-                        ],
-                        "RushAtk_Thunder": [
-                            "Monster_Samurai_Kairagi_RushAtk_Thunder",
-                            "Audio_Samurai_Kairagi_RushAtk_Thunder"
-                        ],
-                        "DodgeRushAttack": [
-                            "Monster_Samurai_Kairagi_RushAtk_Thunder",
-                            "Audio_Samurai_Kairagi_RushAtk_Thunder"
-                        ],
-                        "ElementCombo_RushAtk_Thunder": [
-                            "Monster_Samurai_Kairagi_RushAtk_Thunder",
-                            "Audio_Samurai_Kairagi_RushAtk_Thunder"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "JumpAttack": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "JumpAttack": [
-                            "Monster_Samurai_Kairagi_JumpAttack",
-                            "Audio_Samurai_Kairagi_JumpAtk"
-                        ],
-                        "JumpAttack_Thunder": [
-                            "Monster_Samurai_Kairagi_JumpAttack_Thunder",
-                            "Audio_Samurai_Kairagi_JumpAtk_Thunder"
-                        ],
-                        "ElementCombo_JumpAttack_Thunder": [
-                            "Monster_Samurai_Kairagi_JumpAttack_Thunder",
-                            "Audio_Samurai_Kairagi_JumpAtk_Thunder"
-                        ]
-                    },
-                    "canSyncMove": true,
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "ChargeAttack": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "ChargeAttack": [
-                            "Monster_Samurai_Kairagi_ChargeAttack",
-                            "Audio_Samurai_Kairagi_DodgeChargeAtk"
-                        ],
-                        "ChargeAttack_Thunder": [
-                            "Monster_Samurai_Kairagi_ChargeAttack_Thunder",
-                            "Audio_Samurai_Kairagi_DodgeChargeAtk_Thunder"
-                        ],
-                        "Combo_ChargeAttack_Thunder": [
-                            "Monster_Samurai_Kairagi_ChargeAttack_Thunder",
-                            "Audio_Samurai_Kairagi_DodgeChargeAtk_Thunder"
-                        ]
-                    },
-                    "canSyncMove": true,
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "ElementAttack": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "ElementAttack": [
-                            "Monster_Samurai_Kairagi_ElementAttack_Thunder",
-                            "Audio_Samurai_Kairagi_ElementAtk_Thunder"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "ElementAttack_BS": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "ElementAttack_BS": [
-                            "Monster_Samurai_Kairagi_ElementAttack_Block_BSEffect",
-                            "Audio_Samurai_Kairagi_ElementAtk_Thunder_Fast"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "ElementAttack_BlockDuring": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "ElementAttack_BlockDuring": [
-                            "Monster_Samurai_Kairagi_ElementAttack_BlockAttack"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "ElementAttack_AS": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "ElementAttack_AS": []
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "ElementAttack_Break": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "ElementAttack_Break": [
-                            "Audio_Samurai_Kairagi_ElementAtk_Thunder"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "Angry": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Angry": [
-                            "Monster_Samurai_Kairagi_Angry_Thunder",
-                            "Audio_Samurai_Kairagi_Angry_01"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "Dodge": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Dodge": [
-                            "Monster_Samurai_Kairagi_Dodge",
-                            "Audio_Samurai_Kairagi_Dodge"
-                        ],
-                        "ForceDodge": [
-                            "Monster_Samurai_Kairagi_Dodge",
-                            "Audio_Samurai_Kairagi_Dodge"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "Provoke": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Provoke": [
-                            "Audio_Samurai_Kairagi_Provoke"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "DefendBS": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Defend_BS1": [
-                            "Audio_Samurai_Kairagi_Defend_BS1"
-                        ],
-                        "Defend_BS2": [
-                            "Audio_Samurai_Kairagi_Defend_BS2"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "DefendLoop": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Defend_Loop1": [],
-                        "Defend_Loop2": []
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "DefendHit": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Defend_Hit1": [
-                            "Audio_Samurai_Kairagi_Defend_Hit"
-                        ],
-                        "Defend_Hit2": [
-                            "Audio_Samurai_Kairagi_Defend_Hit"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "DefendAS": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Defend_AS1": [
-                            "Audio_Samurai_Kairagi_Defend_AS1"
-                        ],
-                        "Defend_AS2": [
-                            "Audio_Samurai_Kairagi_Defend_AS2"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "DefendBreak": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Defend_Break1": [
-                            "Audio_Samurai_Kairagi_Defend_Break1"
-                        ],
-                        "Defend_Break2": [
-                            "Audio_Samurai_Kairagi_Defend_Break2"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ],
-                    "canSteer": true
-                },
-                "OutOfBattle": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "OutOfBattle": [
-                            "Audio_Samurai_Kairagi_OutOfBattle"
-                        ]
-                    },
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ]
-                },
-                "Command": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Command": []
-                    },
-                    "canDoSkill": true,
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ]
-                },
-                "Practice": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "Practice": []
-                    },
-                    "canDoSkill": true,
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ]
-                },
-                "SP_Break": {
-                    "$type": "ConfigMonsterStateIDInfo",
-                    "animatorStates": {
-                        "SP_Break": []
-                    },
-                    "canDoSkill": true,
-                    "resetAnimatorTriggerOnExit": [
-                        "BeHit",
-                        "DoSkill"
-                    ]
-                }
+      },
+      "MeleeAtkThunder": {
+        "attackPattern": {
+          "$type": "ConfigAttackBox",
+          "triggerType": "TriggerNoRepeat",
+          "size": {
+            "x": 2,
+            "y": 2.5,
+            "z": 4
+          },
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 1.5,
+              "z": 0.5
             }
+          },
+          "ignoreMassive": true
+        },
+        "attackInfo": {
+          "attackTag": "Monster_Samurai_Kairagi_ThunderHit",
+          "attackProperty": {
+            "damagePercentage": 0.7,
+            "strikeType": "Slash",
+            "overrideByWeapon": false,
+            "attackType": "Melee",
+            "enBreak": 50,
+            "elementType": "Electric",
+            "elementDurability": 50
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV4",
+            "canBeDefenceHalt": true,
+            "muteHitText": false,
+            "retreatType": "ByAttacker"
+          }
         }
-    },
-    "billboard": {
-        "$type": "ConfigCombatBillboard",
-        "attachPoint": "BillboardAttach",
-        "offsetType": "Character",
-        "showHPBar": true,
-        "forceShowDistance": 50.0,
-        "size": "Big"
-    },
-    "initialPoses": {
-        "Default": {
-            "initialPoseID": 1
+      },
+      "RushAtk": {
+        "attackPattern": {
+          "$type": "ConfigAttackBox",
+          "triggerType": "TriggerNoRepeat",
+          "size": {
+            "x": 2,
+            "y": 2.5,
+            "z": 15
+          },
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 1.5,
+              "z": -7.5
+            }
+          },
+          "ignoreMassive": true
+        },
+        "attackInfo": {
+          "attackProperty": {
+            "damagePercentage": 1,
+            "strikeType": "Slash",
+            "overrideByWeapon": false,
+            "attackType": "Melee",
+            "enBreak": 100,
+            "elementDurability": 50
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV5",
+            "canBeDefenceHalt": true,
+            "muteHitText": false,
+            "retreatType": "ByHitDirection"
+          }
+        }
+      },
+      "RushAtkThunder": {
+        "attackPattern": {
+          "$type": "ConfigAttackBox",
+          "triggerType": "TriggerNoRepeat",
+          "size": {
+            "x": 2,
+            "y": 2.5,
+            "z": 15
+          },
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 1.5,
+              "z": -7.5
+            }
+          },
+          "ignoreMassive": true
+        },
+        "attackInfo": {
+          "attackTag": "Monster_Samurai_Kairagi_ThunderHit",
+          "attackProperty": {
+            "damagePercentage": 1,
+            "strikeType": "Slash",
+            "overrideByWeapon": false,
+            "attackType": "Melee",
+            "enBreak": 100,
+            "elementType": "Electric",
+            "elementDurability": 50
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV5",
+            "canBeDefenceHalt": true,
+            "muteHitText": false,
+            "retreatType": "ByHitDirection"
+          }
+        }
+      },
+      "JumpAtk": {
+        "attackPattern": {
+          "$type": "ConfigAttackBox",
+          "triggerType": "TriggerNoRepeat",
+          "size": {
+            "x": 2.5,
+            "y": 3,
+            "z": 4
+          },
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 1.5,
+              "z": 0
+            }
+          },
+          "ignoreMassive": true
+        },
+        "attackInfo": {
+          "attackProperty": {
+            "damagePercentage": 1.2,
+            "strikeType": "Blunt",
+            "overrideByWeapon": false,
+            "attackType": "Melee",
+            "enBreak": 100,
+            "elementDurability": 50
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV5",
+            "canBeDefenceHalt": true,
+            "muteHitText": false,
+            "retreatType": "ByAttacker"
+          },
+          "cameraShake": {
+            "shakeType": "CustomVector",
+            "shakeDir": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "shakeDistance": 20,
+            "shakeRange": 0.3,
+            "shakeTime": 0.1
+          },
+          "forceCameraShake": true
+        }
+      },
+      "JumpAtkThunder": {
+        "attackPattern": {
+          "$type": "ConfigAttackBox",
+          "triggerType": "TriggerNoRepeat",
+          "size": {
+            "x": 4,
+            "y": 3,
+            "z": 11
+          },
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 1.5,
+              "z": 0
+            }
+          },
+          "ignoreMassive": true
+        },
+        "attackInfo": {
+          "attackTag": "Monster_Samurai_Kairagi_ThunderHit",
+          "attackProperty": {
+            "damagePercentage": 1.2,
+            "strikeType": "Blunt",
+            "overrideByWeapon": false,
+            "attackType": "Melee",
+            "enBreak": 100,
+            "elementType": "Electric",
+            "elementDurability": 50
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV5",
+            "canBeDefenceHalt": true,
+            "muteHitText": false,
+            "retreatType": "ByAttacker"
+          },
+          "cameraShake": {
+            "shakeType": "CustomVector",
+            "shakeDir": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "shakeDistance": 20,
+            "shakeRange": 0.3,
+            "shakeTime": 0.1
+          },
+          "forceCameraShake": true
+        }
+      },
+      "ChargeAtk": {
+        "attackPattern": {
+          "$type": "ConfigAttackCircle",
+          "triggerType": "TriggerNoRepeat",
+          "radius": 3,
+          "height": 2,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": -0.1,
+              "z": 0
+            }
+          },
+          "ignoreMassive": true
+        },
+        "attackInfo": {
+          "attackProperty": {
+            "damagePercentage": 1,
+            "strikeType": "Slash",
+            "overrideByWeapon": false,
+            "attackType": "Melee",
+            "enBreak": 100,
+            "elementDurability": 50
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV5",
+            "canBeDefenceHalt": true,
+            "muteHitText": false,
+            "retreatType": "ByHitDirection"
+          }
+        }
+      },
+      "ChargeAtkThunder": {
+        "attackPattern": {
+          "$type": "ConfigAttackCircle",
+          "triggerType": "TriggerNoRepeat",
+          "radius": 5,
+          "height": 2,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": -0.2,
+              "z": 0
+            }
+          },
+          "ignoreMassive": true
+        },
+        "attackInfo": {
+          "attackTag": "Monster_Samurai_Kairagi_ThunderHit",
+          "attackProperty": {
+            "damagePercentage": 1,
+            "strikeType": "Slash",
+            "overrideByWeapon": false,
+            "attackType": "Melee",
+            "enBreak": 100,
+            "elementType": "Electric",
+            "elementDurability": 50
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV5",
+            "canBeDefenceHalt": true,
+            "muteHitText": false,
+            "retreatType": "ByHitDirection"
+          }
+        }
+      },
+      "AddElementAtkThunder": {
+        "attackPattern": {
+          "$type": "ConfigAttackBox",
+          "triggerType": "TriggerNoRepeat",
+          "size": {
+            "x": 4,
+            "y": 3,
+            "z": 6
+          },
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 1.5,
+              "z": 0
+            }
+          },
+          "ignoreMassive": true
+        },
+        "attackInfo": {
+          "attackTag": "Monster_Samurai_Kairagi_ThunderHit",
+          "attackProperty": {
+            "damagePercentage": 1.5,
+            "strikeType": "Slash",
+            "overrideByWeapon": false,
+            "attackType": "Melee",
+            "enBreak": 100,
+            "elementType": "Electric",
+            "elementDurability": 50
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV5",
+            "canBeDefenceHalt": true,
+            "muteHitText": false,
+            "retreatType": "ByAttacker"
+          },
+          "cameraShake": {
+            "shakeType": "CustomVector",
+            "shakeDir": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "shakeDistance": 20,
+            "shakeRange": 0.3,
+            "shakeTime": 0.1
+          },
+          "forceCameraShake": true
+        }
+      },
+      "AddElementAtkThunder_Blocked": {
+        "attackPattern": {
+          "$type": "ConfigAttackBox",
+          "triggerType": "TriggerNoRepeat",
+          "size": {
+            "x": 4,
+            "y": 3,
+            "z": 6
+          },
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0,
+              "y": 1.5,
+              "z": 0
+            }
+          },
+          "ignoreMassive": true
+        },
+        "attackInfo": {
+          "attackTag": "Monster_BladeMaster_BeBlockAttack",
+          "attackProperty": {
+            "damagePercentage": 1.5,
+            "strikeType": "Slash",
+            "overrideByWeapon": false,
+            "attackType": "Melee",
+            "enBreak": 100,
+            "elementType": "Electric",
+            "elementDurability": 50
+          },
+          "hitPattern": {
+            "onHitEffectName": "default",
+            "hitImpulseType": "LV5",
+            "canBeDefenceHalt": true,
+            "muteHitText": false,
+            "retreatType": "ByAttacker"
+          },
+          "cameraShake": {
+            "shakeType": "CustomVector",
+            "shakeDir": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "shakeDistance": 20,
+            "shakeRange": 0.3,
+            "shakeTime": 0.1
+          },
+          "forceCameraShake": true
+        }
+      }
+    }
+  },
+  "stateLayers": {
+    "defaultLayer": {
+      "$type": "ConfigNormalStateLayer",
+      "stateIDs": {
+        "Born": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Born": ["Audio_Samurai_Kairagi_Born"]
+          },
+          "canSyncMove": true,
+          "resetAnimatorTriggerOnExit": ["DoSkill"]
+        },
+        "NormalIdle": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Standby": []
+          },
+          "canDoSkill": true,
+          "canSyncMove": true,
+          "resetAnimatorTriggerOnExit": ["DoSkill"]
+        },
+        "NormalMove": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "WalkForward": ["Audio_Samurai_Kairagi_Walk"],
+            "WalkBack": ["Audio_Samurai_Kairagi_Walk"],
+            "WalkRight": ["Audio_Samurai_Kairagi_Walk"],
+            "WalkLeft": ["Audio_Samurai_Kairagi_Walk"],
+            "WalkFree": ["Audio_Samurai_Kairagi_Walk"]
+          },
+          "canDoSkill": true,
+          "canSteer": true,
+          "canSyncMove": true,
+          "resetAnimatorTriggerOnExit": ["DoSkill"]
+        },
+        "Turn": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "TurnLeft": ["Audio_Samurai_Kairagi_Walk"],
+            "TurnRight": ["Audio_Samurai_Kairagi_Walk"]
+          },
+          "canDoSkill": true,
+          "canSyncMove": true,
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["DoSkill"]
+        },
+        "BeHit": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Hit_L": ["Audio_Samurai_Kairagi_Hit_L_VO"]
+          },
+          "resetAnimatorTriggerOnEnter": ["BeHit"],
+          "resetAnimatorTriggerOnExit": ["DoSkill"]
+        },
+        "BeHit_H": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Hit_H": ["Audio_Samurai_Kairagi_Hit_H_VO"]
+          },
+          "resetAnimatorTriggerOnEnter": ["BeHit"],
+          "resetAnimatorTriggerOnExit": ["DoSkill"]
+        },
+        "Run": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Run": ["Audio_Samurai_Kairagi_Run"]
+          },
+          "canDoSkill": true,
+          "canSyncMove": true,
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["DoSkill"]
+        },
+        "RunFree": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "RunFree": ["Audio_Samurai_Kairagi_Run"]
+          },
+          "canDoSkill": true,
+          "canSyncMove": true,
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["DoSkill"]
+        },
+        "BeHitThrow": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "HitThrow": [],
+            "HitThrowDrop": [],
+            "HitThrowToGround": ["Audio_Samurai_Kairagi_HitThrowToGround"]
+          },
+          "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
+          "resetAnimatorTriggerOnExit": ["DoSkill"]
+        },
+        "Struggle": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Struggle": []
+          },
+          "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
+          "resetAnimatorTriggerOnExit": ["DoSkill"]
+        },
+        "Die": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Die": ["", "Audio_Samurai_Kairagi_Die_NoneVO"],
+            "Die2": ["", "Audio_Samurai_Kairagi_Die_NoneVO"],
+            "SwimDie": [],
+            "SwimDie_AS": []
+          }
+        },
+        "Die_RagDoll": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "AirDie": []
+          },
+          "enableRagDoll": true
+        },
+        "Alert": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Alert": [
+              "Monster_Samurai_Kairagi_BladeMaster_Alert",
+              "Audio_Samurai_Kairagi_Alert"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "MeleeAtk1": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "MeleeAttack1": [
+              "Monster_Samurai_Kairagi_BladeMaster_Melee1Effect",
+              "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade1",
+              "Audio_Samurai_Kairagi_MeleeAtk1_Special"
+            ],
+            "MeleeAttack1_Thunder": [
+              "Monster_Samurai_Kairagi_MeleeAttack1_Thunder",
+              "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade1",
+              "Audio_Samurai_Kairagi_MeleeAtk1_Thunder"
+            ],
+            "ElementCombo_MeleeAttack1_Thunder": [
+              "Monster_Samurai_Kairagi_MeleeAttack1_Thunder",
+              "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade1",
+              "Audio_Samurai_Kairagi_MeleeAtk1_Thunder"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnEnter": ["DoSkill"],
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "MeleeAtk2": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "MeleeAttack2": [
+              "Monster_Samurai_Kairagi_BladeMaster_Melee2Effect",
+              "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade2",
+              "Audio_Samurai_Kairagi_MeleeAtk2_Special"
+            ],
+            "MeleeAttack2_Thunder": [
+              "Monster_Samurai_Kairagi_MeleeAttack2_Thunder",
+              "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade2",
+              "Audio_Samurai_Kairagi_MeleeAtk2_Thunder"
+            ],
+            "ElementCombo_MeleeAttack2_Thunder": [
+              "Monster_Samurai_Kairagi_MeleeAttack2_Thunder",
+              "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade2",
+              "Audio_Samurai_Kairagi_MeleeAtk2_Thunder"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnEnter": ["DoSkill"],
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "MeleeAtk3": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "MeleeAttack3": [
+              "Monster_Samurai_Kairagi_BladeMaster_Melee1Effect",
+              "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade1",
+              "Audio_Samurai_Kairagi_MeleeAtk1_Special"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnEnter": ["DoSkill"],
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "MeleeAtk4": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "MeleeAttack4": [
+              "Monster_Samurai_Kairagi_BladeMaster_Melee2Effect",
+              "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade2",
+              "Audio_Samurai_Kairagi_MeleeAtk2_Special"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnEnter": ["DoSkill"],
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "MeleeAtk5": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "DodgeBladeAttack": [
+              "Monster_Samurai_Kairagi_BladeMaster_Melee3Effect",
+              "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade3",
+              "Audio_Samurai_Kairagi_MeleeAtk3_Thunder"
+            ],
+            "MeleeAttack5": [
+              "Monster_Samurai_Kairagi_BladeMaster_Melee3Effect",
+              "Monster_Samurai_Kairagi_BladeMaster_FireWindBlade3",
+              "Audio_Samurai_Kairagi_MeleeAtk3_Special"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnEnter": ["DoSkill"],
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        // "MeleeAtk3" :
+        // {
+        // 	"$type": "ConfigMonsterStateIDInfo",
+        // 	"animatorStates":
+        // 	{
+        // 		"MeleeAttack3": ["Monster_Samurai_Kairagi_MeleeAttack3","Monster_Samurai_Kairagi_BladeMaster_FireWindBlade3","Audio_Samurai_Kairagi_MeleeAtk3"],
+        // 		"MeleeAttack3_Thunder": ["Monster_Samurai_Kairagi_MeleeAttack3_Thunder","Monster_Samurai_Kairagi_BladeMaster_FireWindBlade3","Audio_Samurai_Kairagi_MeleeAtk3_Thunder"],
+        // 		"DodgeBladeAttack": ["Monster_Samurai_Kairagi_MeleeAttack3_Thunder","Monster_Samurai_Kairagi_BladeMaster_FireWindBlade3","Audio_Samurai_Kairagi_MeleeAtk3_Thunder"],
+        // 		"ElementCombo_MeleeAttack3_Thunder": ["Monster_Samurai_Kairagi_MeleeAttack3_Thunder","Monster_Samurai_Kairagi_BladeMaster_FireWindBlade3","Audio_Samurai_Kairagi_MeleeAtk3_Thunder"],
+        // 	},
+        // 	"canSteer" : true,
+        // 	"resetAnimatorTriggerOnEnter" : ["DoSkill" ],
+        // 	"resetAnimatorTriggerOnExit" : ["BeHit", "DoSkill" ],
+        // },
+        "RushAtk": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "RushAtk": [
+              "Monster_Samurai_Kairagi_RushAtk",
+              "Audio_Samurai_Kairagi_RushAtk"
+            ],
+            "RushAtk_Thunder": [
+              "Monster_Samurai_Kairagi_RushAtk_Thunder",
+              "Audio_Samurai_Kairagi_RushAtk_Thunder"
+            ],
+            "DodgeRushAttack": [
+              "Monster_Samurai_Kairagi_RushAtk_Thunder",
+              "Audio_Samurai_Kairagi_RushAtk_Thunder"
+            ],
+            "ElementCombo_RushAtk_Thunder": [
+              "Monster_Samurai_Kairagi_RushAtk_Thunder",
+              "Audio_Samurai_Kairagi_RushAtk_Thunder"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "JumpAttack": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "JumpAttack": [
+              "Monster_Samurai_Kairagi_JumpAttack",
+              "Audio_Samurai_Kairagi_JumpAtk"
+            ],
+            "JumpAttack_Thunder": [
+              "Monster_Samurai_Kairagi_JumpAttack_Thunder",
+              "Audio_Samurai_Kairagi_JumpAtk_Thunder"
+            ],
+            "ElementCombo_JumpAttack_Thunder": [
+              "Monster_Samurai_Kairagi_JumpAttack_Thunder",
+              "Audio_Samurai_Kairagi_JumpAtk_Thunder"
+            ]
+          },
+          "canSteer": true,
+          "canSyncMove": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "ChargeAttack": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "ChargeAttack": [
+              "Monster_Samurai_Kairagi_ChargeAttack",
+              "Audio_Samurai_Kairagi_DodgeChargeAtk"
+            ],
+            "ChargeAttack_Thunder": [
+              "Monster_Samurai_Kairagi_ChargeAttack_Thunder",
+              "Audio_Samurai_Kairagi_DodgeChargeAtk_Thunder"
+            ],
+            "Combo_ChargeAttack_Thunder": [
+              "Monster_Samurai_Kairagi_ChargeAttack_Thunder",
+              "Audio_Samurai_Kairagi_DodgeChargeAtk_Thunder"
+            ]
+          },
+          "canSteer": true,
+          "canSyncMove": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "ElementAttack": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "ElementAttack": [
+              "Monster_Samurai_Kairagi_ElementAttack_Thunder",
+              "Audio_Samurai_Kairagi_ElementAtk_Thunder"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "ElementAttack_BS": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "ElementAttack_BS": [
+              "Monster_Samurai_Kairagi_ElementAttack_Block_BSEffect",
+              "Audio_Samurai_Kairagi_ElementAtk_Thunder_Fast"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "ElementAttack_BlockDuring": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "ElementAttack_BlockDuring": [
+              "Monster_Samurai_Kairagi_ElementAttack_BlockAttack"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "ElementAttack_AS": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "ElementAttack_AS": [""]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "ElementAttack_Break": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "ElementAttack_Break": [
+              "",
+              "Audio_Samurai_Kairagi_ElementAtk_Thunder"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "Angry": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Angry": [
+              "Monster_Samurai_Kairagi_Angry_Thunder",
+              "Audio_Samurai_Kairagi_Angry_01"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "Dodge": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Dodge": [
+              "Monster_Samurai_Kairagi_Dodge",
+              "Audio_Samurai_Kairagi_Dodge"
+            ],
+            "ForceDodge": [
+              "Monster_Samurai_Kairagi_Dodge",
+              "Audio_Samurai_Kairagi_Dodge"
+            ]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "Provoke": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Provoke": ["Audio_Samurai_Kairagi_Provoke"]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "DefendBS": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Defend_BS1": ["Audio_Samurai_Kairagi_Defend_BS1"],
+            "Defend_BS2": ["Audio_Samurai_Kairagi_Defend_BS2"]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "DefendLoop": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Defend_Loop1": [""],
+            "Defend_Loop2": [""]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "DefendHit": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Defend_Hit1": ["Audio_Samurai_Kairagi_Defend_Hit"],
+            "Defend_Hit2": ["Audio_Samurai_Kairagi_Defend_Hit"]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "DefendAS": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Defend_AS1": ["Audio_Samurai_Kairagi_Defend_AS1"],
+            "Defend_AS2": ["Audio_Samurai_Kairagi_Defend_AS2"]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "DefendBreak": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Defend_Break1": ["Audio_Samurai_Kairagi_Defend_Break1"],
+            "Defend_Break2": ["Audio_Samurai_Kairagi_Defend_Break2"]
+          },
+          "canSteer": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "OutOfBattle": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "OutOfBattle": ["Audio_Samurai_Kairagi_OutOfBattle"]
+          },
+          "canSteer": false,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Command": {
-            "initialPoseID": 1001,
-            "initialPoseParams": {
-                "boolParams": {
-                    "Command": "true"
-                }
-            }
-        },
-        "Sit": {
-            "initialPoseID": 1002,
-            "initialPoseParams": {
-                "boolParams": {
-                    "Sit": "true"
-                }
-            }
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Command": [""]
+          },
+          "canSteer": false,
+          "canDoSkill": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Practice": {
-            "initialPoseID": 1003,
-            "initialPoseParams": {
-                "boolParams": {
-                    "Practice": "true"
-                }
-            }
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Practice": [""]
+          },
+          "canSteer": false,
+          "canDoSkill": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "SP_Break": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "SP_Break": [""]
+          },
+          "canSteer": false,
+          "canDoSkill": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
-    },
-    "aibeta": {
-        "enable": true,
-        "sensing": {
-            "settings": {
-                "DefaultSetting": {
-                    "viewRange": 25.0,
-                    "feelRange": 10.0
-                },
-                "NeverCombat": {
-                    "enableVision": false,
-                    "hearAttractionRange": 0.0,
-                    "feelRange": 0.0
-                },
-                "LowAlert": {
-                    "viewRange": 10.0
-                }
-            },
-            "templates": {
-                "DefaultTemplate": {
-                    "DefaultPoses": "DefaultSetting",
-                    "1001": "DefaultSetting",
-                    "1002": "LowAlert",
-                    "1003": "DefaultSetting"
-                },
-                "NeverCombatTemplate": {
-                    "DefaultPoses": "NeverCombat"
-                }
-            }
-        },
-        "neurons": {
-            "DefaultSetting": [
-                "HIT"
-            ],
-            "NeverCombat": []
-        },
-        "threat": {
-            "clearThreatByLostPath": true,
-            "clearThreatTimerByLostPath": 11.0,
-            "viewAttenuation": [
-                {
-                    "x": 10.0,
-                    "y": 2.0
-                },
-                {
-                    "x": 15.0,
-                    "y": 0.800000011920929
-                },
-                {
-                    "x": 20.0,
-                    "y": 0.5
-                },
-                {
-                    "x": 25.0,
-                    "y": 0.30000001192092896
-                },
-                {
-                    "x": 30.0,
-                    "y": 0.20000000298023224
-                }
-            ],
-            "resistTauntLevel": "Monster_TauntLevel_2"
-        },
-        "defendArea": {
-            "defendRange": 50.0
-        },
-        "network": {
-            "syncSkill": true
-        },
-        "skillGroupCDConfigs": [
-            {
-                "skillGroupCDID": 0,
-                "skillGroupCDTime": 5.0
-            },
-            {
-                "skillGroupCDID": 1,
-                "skillGroupCDTime": 10.0
-            },
-            {
-                "skillGroupCDID": 2,
-                "skillGroupCDTime": 15.0
-            }
-        ],
-        "skillSetting": {
-            "skillEliteSet": {
-                "2": [
-                    201,
-                    401
-                ],
-                "3": [
-                    1001,
-                    201,
-                    401
-                ]
-            }
-        },
-        "skills": {
-            "1": {
-                "name": "OnAlert",
-                "skillType": "OnAlert",
-                "faceTarget": true,
-                "publicCDGroup": "",
-                "ignoreGCD": true,
-                "triggerGCD": false,
-                "stateIDs": [
-                    "Alert"
-                ],
-                "skillQueryingTime": 3.0,
-                "flagTargetReachable": "10",
-                "flagSelfOnTemplateCollider": "01",
-                "flagSelfInZone": "10",
-                "flagTargetInZone": "11"
-            },
-            "2": {
-                "name": "Command",
-                "skillType": "Free",
-                "castCondition": {
-                    "pose": [
-                        1001
-                    ]
-                },
-                "cd": 5.0,
-                "cdUpperRange": 5.0,
-                "initialCD": 1.0,
-                "publicCDGroup": "",
-                "stateIDs": [
-                    "Command"
-                ],
-                "flagTargetReachable": "10",
-                "flagSelfOnTemplateCollider": "01",
-                "flagSelfInZone": "10",
-                "flagTargetInZone": "11"
-            },
-            "3": {
-                "name": "Practice",
-                "skillType": "Free",
-                "castCondition": {
-                    "pose": [
-                        1003
-                    ]
-                },
-                "cd": 5.0,
-                "cdUpperRange": 5.0,
-                "initialCD": 1.0,
-                "publicCDGroup": "",
-                "stateIDs": [
-                    "Practice"
-                ],
-                "flagTargetReachable": "10",
-                "flagSelfOnTemplateCollider": "01",
-                "flagSelfInZone": "10",
-                "flagTargetInZone": "11"
-            },
-            "101": {
-                "name": "MeleeAtk",
-                "priority": 3,
-                "enableSkillPrepare": true,
-                "skillPrepareTimeout": 2.0,
-                "skillPrepareSpeedLevel": 1,
-                "castCondition": {
-                    "pose": [
-                        101
-                    ],
-                    "maxTargetAngleXZ": 90.0,
-                    "pickRangeMax": 30.0
-                },
-                "cd": 7.0,
-                "cdUpperRange": 2.5,
-                "initialCD": 2.0,
-                "publicCDGroup": "",
-                "stateIDs": [
-                    "MeleeAtk1",
-                    "MeleeAtk2",
-                    "MeleeAtk3",
-                    "MeleeAtk4",
-                    "MeleeAtk5"
-                ],
-                "flagTargetReachable": "10",
-                "flagSelfOnTemplateCollider": "01",
-                "flagSelfInZone": "10",
-                "flagTargetInZone": "11"
-            },
-            "102": {
-                "name": "MeleeAtk",
-                "priority": 3,
-                "enableSkillPrepare": true,
-                "skillPrepareTimeout": 2.0,
-                "skillPrepareSpeedLevel": 1,
-                "castCondition": {
-                    "pose": [
-                        101
-                    ],
-                    "maxTargetAngleXZ": 90.0,
-                    "pickRangeMin": 5.0,
-                    "pickRangeMax": 30.0
-                },
-                "cd": 2.5,
-                "initialCD": 2.0,
-                "publicCDGroup": "",
-                "stateIDs": [
-                    "MeleeAtk1",
-                    "MeleeAtk2",
-                    "MeleeAtk3",
-                    "MeleeAtk4",
-                    "MeleeAtk5"
-                ],
-                "flagTargetReachable": "10",
-                "flagSelfOnTemplateCollider": "01",
-                "flagSelfInZone": "10",
-                "flagTargetInZone": "11"
-            },
-            "201": {
-                "name": "RushAtk",
-                "priority": 4,
-                "castCondition": {
-                    "pose": [
-                        101
-                    ],
-                    "maxTargetAngleXZ": 90.0,
-                    "pickRangeMin": 5.0,
-                    "pickRangeMax": 15.0
-                },
-                "cd": 7.0,
-                "cdUpperRange": 7.0,
-                "initialCD": 1.0,
-                "publicCDGroup": "",
-                "stateIDs": [
-                    "RushAtk"
-                ],
-                "skillQueryingTime": 2.0,
-                "flagTargetReachable": "10",
-                "flagSelfOnTemplateCollider": "01",
-                "flagSelfInZone": "11",
-                "flagTargetInZone": "11"
-            },
-            "401": {
-                "name": "ChargeAttack",
-                "priority": 3,
-                "castCondition": {
-                    "pose": [
-                        101
-                    ],
-                    "pickRangeMax": 7.0
-                },
-                "cd": 10.0,
-                "cdUpperRange": 5.0,
-                "initialCD": 1.0,
-                "publicCDGroup": "Samurai_Kairagi_PowerAttack",
-                "stateIDs": [
-                    "ChargeAttack"
-                ],
-                "skillQueryingTime": 2.0,
-                "flagTargetReachable": "10",
-                "flagSelfOnTemplateCollider": "01",
-                "flagSelfInZone": "11",
-                "flagTargetInZone": "11"
-            },
-            "301": {
-                "name": "JumpAttack",
-                "priority": 3,
-                "enableSkillPrepare": true,
-                "skillPrepareTimeout": 2.0,
-                "castCondition": {
-                    "pose": [
-                        101
-                    ],
-                    "pickRangeMin": 5.0,
-                    "pickRangeMax": 8.0,
-                    "castRangeMax": 3.0
-                },
-                "cd": 7.0,
-                "cdUpperRange": 5.0,
-                "initialCD": 1.0,
-                "publicCDGroup": "Samurai_Kairagi_PowerAttack",
-                "stateIDs": [
-                    "JumpAttack"
-                ],
-                "skillQueryingTime": 2.0,
-                "flagTargetReachable": "10",
-                "flagSelfOnTemplateCollider": "01",
-                "flagSelfInZone": "10",
-                "flagTargetInZone": "11"
-            },
-            "1001": {
-                "name": "Dodge",
-                "castCondition": {
-                    "pose": [
-                        101,
-                        201,
-                        301
-                    ],
-                    "pickRangeMax": 5.0
-                },
-                "cd": 5.0,
-                "cdUpperRange": 5.0,
-                "publicCDGroup": "",
-                "ignoreGCD": true,
-                "triggerGCD": false,
-                "stateIDs": [
-                    "Dodge"
-                ],
-                "skillQueryingTime": 2.0,
-                "flagTargetReachable": "10",
-                "flagSelfOnTemplateCollider": "01",
-                "flagSelfInZone": "10",
-                "flagTargetInZone": "11"
-            },
-            "1004": {
-                "name": "Defend2",
-                "priority": 4,
-                "castCondition": {
-                    "pose": [
-                        101
-                    ],
-                    "pickRangeMax": 3.0
-                },
-                "cd": 5.0,
-                "initialCD": 1.0,
-                "publicCDGroup": "",
-                "ignoreGCD": true,
-                "triggerGCD": false,
-                "stateIDs": [
-                    "DefendBS",
-                    "DefendLoop",
-                    "DefendAS",
-                    "DefendBreak",
-                    "DefendHit"
-                ],
-                "skillQueryingTime": 2.0,
-                "flagTargetReachable": "10",
-                "flagSelfOnTemplateCollider": "01",
-                "flagSelfInZone": "10",
-                "flagTargetInZone": "11"
-            }
-        },
-        "skillGCD": 3.0,
-        "returnToBornTactic": {
-            "enable": true,
-            "defaultSetting": {
-                "LDEIPKCCHCP": 5.0
-            }
-        },
-        "wanderTactic": {
-            "condition": {
-                "pose": [
-                    1
-                ]
-            },
-            "defaultSetting": {
-                "turnSpeedOverride": 1.0,
-                "cdMax": 5.0,
-                "cdMin": 2.5,
-                "distanceFromBorn": 15.0,
-                "distanceFromCurrentMin": 5.0,
-                "distanceFromCurrentMax": 7.5
-            }
-        },
-        "meleeChargeTactic": {
-            "enable": true,
-            "condition": {
-                "pose": [
-                    101,
-                    201,
-                    301
-                ]
-            },
-            "defaultSetting": {
-                "startDistanceMin": 20.0,
-                "startDistanceMax": 99.0,
-                "stopDistance": 10.0,
-                "innerDistance": 0.0
-            }
-        },
-        "facingMoveTactic": {
-            "enable": true,
-            "condition": {
-                "pose": [
-                    101,
-                    201,
-                    301
-                ]
-            },
-            "defaultSetting": {
-                "rangeMin": 0.0,
-                "rangeMax": 7.0,
-                "restTimeMin": 2.0,
-                "restTimeMax": 5.0,
-                "facingMoveTurnInterval": 1.0,
-                "obstacleDetectRange": 1.0,
-                "facingMoveWeight": {
-                    "stop": 0.0,
-                    "left": 3.0,
-                    "right": 3.0
-                },
-                "BBACFDEOBDP": "1111",
-                "HANHJBCACAC": "1111"
-            }
-        }
-    },
-    "inputKeys": [
-        {
-            "keyID": 101,
-            "inputKeyCode": 257,
-            "abilityName": ""
-        },
-        {
-            "keyID": 201,
-            "inputKeyCode": 258,
-            "abilityName": ""
-        },
-        {
-            "keyID": 301,
-            "inputKeyCode": 259,
-            "abilityName": ""
-        },
-        {
-            "keyID": 401,
-            "inputKeyCode": 260,
-            "abilityName": ""
-        },
-        {
-            "keyID": 501,
-            "inputKeyCode": 261,
-            "abilityName": ""
-        },
-        {
-            "keyID": 601,
-            "inputKeyCode": 262,
-            "abilityName": ""
-        },
-        {
-            "keyID": 1001,
-            "inputKeyCode": 263,
-            "abilityName": ""
-        },
-        {
-            "keyID": 1002,
-            "inputKeyCode": 264,
-            "abilityName": ""
-        },
-        {
-            "keyID": 1003,
-            "inputKeyCode": 265,
-            "abilityName": ""
-        },
-        {
-            "keyID": 102,
-            "inputKeyCode": 266,
-            "abilityName": ""
-        },
-        {
-            "keyID": 202,
-            "inputKeyCode": 267,
-            "abilityName": ""
-        },
-        {
-            "keyID": 302,
-            "inputKeyCode": 268,
-            "abilityName": ""
-        },
-        {
-            "keyID": 402,
-            "inputKeyCode": 269,
-            "abilityName": ""
-        },
-        {
-            "keyID": 502,
-            "inputKeyCode": 270,
-            "abilityName": ""
-        },
-        {
-            "keyID": 1004,
-            "inputKeyCode": 271,
-            "abilityName": ""
-        }
-    ],
-    "move": {
-        "$type": "ConfigAnimatorMove",
-        "facingMove": "FourDirection",
-        "monsterSizeType": "StoopType"
-    },
-    "audio": {
-        "CBJGDOAHMDC": "",
-        "animAudio": {
-            "onTransitionIn": [
-                {
-                    "currentStateName": "Weak_Loop",
-                    "audioEvent": {
-                        "text": "Play_sfx_monster_gloves_wind_weak_Loop"
-                    }
-                },
-                {
-                    "currentStateName": "Block_Loop",
-                    "audioEvent": {
-                        "text": "Play_sfx_monster_gloves_wind_block_Loop"
-                    }
-                }
-            ],
-            "onTransitionOut": [
-                {
-                    "currentStateName": "Weak_Loop",
-                    "audioEvent": {
-                        "text": "Stop_sfx_monster_gloves_wind_weak_Loop"
-                    }
-                },
-                {
-                    "currentStateName": "Block_Loop",
-                    "audioEvent": {
-                        "text": "Stop_sfx_monster_gloves_wind_block_Loop"
-                    }
-                }
-            ]
-        },
-        "disableEvent": {
-            "text": ""
-        },
-        "destroyEvent": {
-            "text": ""
-        }
+      }
     }
+  },
+  "abilities": [
+    {
+      "abilityName": "Monster_Samurai_Kairagi_01_RushAttack"
+    },
+    // {
+    // 	"abilityName":"Monster_Samurai_Kairagi_01_Die"
+    // },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_01_Steer"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_01_AddElement_Electric"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_Angry_Thunder"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_01_Alert"
+    },
+    // {
+    // 	"abilityName":"Monster_Samurai_Kairagi_Block"
+    // },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_01_OutOfBattle"
+    },
+    {
+      "abilityName": "Monster_Samurai_EnsureVisible"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_BladeMaster_ForceDodge"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_Thunder_AttackMark"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_ChangeToAngryPose"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_01_AddElement_ComboCheckDistance"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_GhostChallenge_PowerUp"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_SevenBlade_Affix"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_BlockBreak"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_BornImprove"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_BladeMaster_Block"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_01_FireBladeWind1"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_01_FireBladeWind2"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_01_FireBladeWind3"
+    },
+    {
+      "abilityName": "Monster_Samurai_Kairagi_BladeMaster_Steer"
+    }
+  ],
+  "initialPoses": {
+    "Default": {
+      "initialPoseID": 1
+    },
+    "Command": {
+      "initialPoseID": 1001,
+      "initialPoseParams": {
+        "boolParams": {
+          "Command": "true"
+        }
+      }
+    },
+    "Sit": {
+      "initialPoseID": 1002,
+      "initialPoseParams": {
+        "boolParams": {
+          "Sit": "true"
+        }
+      }
+    },
+    "Practice": {
+      "initialPoseID": 1003,
+      "initialPoseParams": {
+        "boolParams": {
+          "Practice": "true"
+        }
+      }
+    }
+  },
+  "aibeta": {
+    "enable": true,
+    "skillGCD": 3.0,
+    "neurons": {
+      "DefaultSetting": ["HIT"],
+      "NeverCombat": []
+    },
+    "sensing": {
+      "settings": {
+        "DefaultSetting": {
+          "viewRange": 25.0,
+          "feelRange": 10.0
+        },
+        "NeverCombat": {
+          "enableVision": false,
+          "feelRange": 0.0,
+          "hearAttractionRange": 0.0
+        },
+        "LowAlert": {
+          "viewRange": 10,
+          "feelRange": 5
+        }
+      },
+      "templates": {
+        "DefaultTemplate": {
+          "DefaultPoses": "DefaultSetting",
+          "1001": "DefaultSetting",
+          "1002": "LowAlert",
+          "1003": "DefaultSetting"
+        },
+        "NeverCombatTemplate": {
+          "DefaultPoses": "NeverCombat"
+        }
+      }
+    },
+    "defendArea": {
+      "enable": true,
+      "defendRange": 50
+    },
+    "threat": {
+      "clearThreatByLostPath": true,
+      "clearThreatTimerByLostPath": 11,
+      "viewAttenuation": [
+        { "x": 10.0, "y": 2.0 },
+        { "x": 15.0, "y": 0.8 },
+        { "x": 20.0, "y": 0.5 },
+        { "x": 25.0, "y": 0.3 },
+        { "x": 30.0, "y": 0.2 }
+      ],
+      "resistTauntLevel": "Monster_TauntLevel_2"
+    },
+    "returnToBornTactic": {
+      "enable": true,
+      "defaultSetting": {
+        "speedLevel": 2,
+        "performTime": 5
+      }
+    },
+    "wanderTactic": {
+      "enable": false,
+      "condition": {
+        "pose": [1]
+      },
+      "defaultSetting": {
+        "speedLevel": 1,
+        "turnSpeedOverride": 1.0,
+        "cdMin": 2.5,
+        "cdMax": 5.0,
+        "distanceFromBorn": 15.0,
+        "distanceFromCurrentMin": 5,
+        "distanceFromCurrentMax": 7.5
+      }
+    },
+    "meleeChargeTactic": {
+      "enable": true,
+      "condition": {
+        "pose": [101, 201, 301]
+      },
+      "defaultSetting": {
+        "speedLevel": 2,
+        "speedLevelInner": 1,
+        "innerDistance": 0,
+        "stopDistance": 10,
+        "startDistanceMin": 20,
+        "startDistanceMax": 99.0
+      }
+    },
+    "facingMoveTactic": {
+      "enable": true,
+      "condition": {
+        "pose": [101, 201, 301]
+      },
+      "defaultSetting": {
+        "speedLevel": 1,
+        "rangeMin": 0,
+        "rangeMax": 7,
+        "restTimeMin": 2,
+        "restTimeMax": 5,
+        "facingMoveTurnInterval": 1,
+        "obstacleDetectRange": 1,
+        "facingMoveWeight": {
+          "stop": 0,
+          "forward": 1,
+          "back": 1,
+          "left": 3,
+          "right": 3
+        }
+      }
+    },
+    "skillGroupCDConfigs": [
+      { "skillGroupCDID": 0, "skillGroupCDTime": 5 },
+      { "skillGroupCDID": 1, "skillGroupCDTime": 10 },
+      { "skillGroupCDID": 2, "skillGroupCDTime": 15 }
+    ],
+    "network": {
+      "syncSkill": true
+    },
+    "skillSetting": {
+      "skillEliteSet": {
+        "2": [201, 401],
+        "3": [1001, 201, 401]
+      }
+    },
+    "skills": {
+      "1": {
+        "name": "OnAlert",
+        "stateIDs": ["Alert"],
+        "skillType": "OnAlert",
+        "skillQueryingTime": 3,
+        "triggerGCD": false,
+        "ignoreGCD": true,
+        "faceTarget": true
+      },
+      "2": {
+        "cd": 5,
+        "cdUpperRange": 5,
+        "initialCD": 1,
+        "name": "Command",
+        "stateIDs": ["Command"],
+        "skillType": "Free",
+        "castCondition": {
+          "pose": [1001]
+        }
+      },
+      "3": {
+        "cd": 5,
+        "cdUpperRange": 5,
+        "initialCD": 1,
+        "name": "Practice",
+        "stateIDs": ["Practice"],
+        "skillType": "Free",
+        "castCondition": {
+          "pose": [1003]
+        }
+      },
+      "101": {
+        "cd": 7,
+        "priority": 3,
+        "initialCD": 2,
+        "cdUpperRange": 2.5,
+        "name": "MeleeAtk",
+        "stateIDs": [
+          "MeleeAtk1",
+          "MeleeAtk2",
+          "MeleeAtk3",
+          "MeleeAtk4",
+          "MeleeAtk5"
+        ],
+        "skillType": "Combat",
+        "enableSkillPrepare": true,
+        "skillPrepareSpeedLevel": 1,
+        "skillPrepareTimeout": 2,
+        //"skillQueryingTime": 2,
+        "castCondition": {
+          "pickRangeMin": 0,
+          "pickRangeMax": 30,
+          "maxTargetAngleXZ": 90,
+          "pose": [101]
+        }
+      },
+      "102": {
+        "cd": 2.5,
+        "initialCD": 2,
+        "priority": 3,
+        "name": "MeleeAtk",
+        "stateIDs": [
+          "MeleeAtk1",
+          "MeleeAtk2",
+          "MeleeAtk3",
+          "MeleeAtk4",
+          "MeleeAtk5"
+        ],
+        "skillType": "Combat",
+        "enableSkillPrepare": true,
+        "skillPrepareSpeedLevel": 1,
+        "skillPrepareTimeout": 2,
+        //"skillQueryingTime": 2,
+        "castCondition": {
+          "pickRangeMin": 5,
+          "pickRangeMax": 30,
+          "maxTargetAngleXZ": 90,
+          "pose": [101]
+        }
+      },
+      "201": {
+        "cd": 7,
+        "priority": 4,
+        "cdUpperRange": 7,
+        "initialCD": 1,
+        "name": "RushAtk",
+        "stateIDs": ["RushAtk"],
+        "skillType": "Combat",
+        "skillQueryingTime": 2,
+        "flagSelfInZone": "11",
+        //"flagTargetReachable":"11",
+        "castCondition": {
+          "pickRangeMin": 5,
+          "pickRangeMax": 15,
+          "maxTargetAngleXZ": 90,
+          "pose": [101]
+        }
+      },
+      "401": {
+        "cd": 10,
+        "priority": 3,
+        "cdUpperRange": 5,
+        "initialCD": 1,
+        "publicCDGroup": "Samurai_Kairagi_PowerAttack",
+        "name": "ChargeAttack",
+        "stateIDs": ["ChargeAttack"],
+        "skillType": "Combat",
+        "skillQueryingTime": 2,
+        "flagSelfInZone": "11",
+        //"flagTargetReachable":"11",
+        "castCondition": {
+          "pickRangeMin": 0,
+          "pickRangeMax": 7,
+          "pose": [101]
+        }
+      },
+      "301": {
+        "cd": 7,
+        "priority": 3,
+        "cdUpperRange": 5,
+        "initialCD": 1,
+        "publicCDGroup": "Samurai_Kairagi_PowerAttack",
+        "name": "JumpAttack",
+        "stateIDs": ["JumpAttack"],
+        "skillType": "Combat",
+        "skillQueryingTime": 2,
+        "enableSkillPrepare": true,
+        "skillPrepareSpeedLevel": 2,
+        "skillPrepareTimeout": 2,
+        "castCondition": {
+          "pickRangeMin": 5,
+          "pickRangeMax": 8,
+          "castRangeMax": 3,
+          "pose": [101]
+        }
+      },
+      "1001": {
+        "cd": 5,
+        "priority": 5,
+        "cdUpperRange": 5,
+        "triggerGCD": false,
+        "ignoreGCD": true,
+        "name": "Dodge",
+        "stateIDs": ["Dodge"],
+        "skillType": "Combat",
+        "skillQueryingTime": 2,
+        "castCondition": {
+          "pickRangeMin": 0,
+          "pickRangeMax": 5,
+          "pose": [101, 201, 301]
+        }
+      },
+      "1004": {
+        "cd": 5,
+        "priority": 4,
+        "initialCD": 1,
+        "ignoreGCD": true,
+        "triggerGCD": false,
+        "name": "Defend2",
+        "stateIDs": [
+          "DefendBS",
+          "DefendLoop",
+          "DefendAS",
+          "DefendBreak",
+          "DefendHit"
+        ],
+        "skillType": "Combat",
+        "skillQueryingTime": 2,
+        "castCondition": {
+          "pickRangeMin": 0,
+          "pickRangeMax": 3,
+          "pose": [101]
+        }
+      }
+    }
+  },
+  "inputKeys": [
+    //1
+    {
+      "keyID": 101,
+      "inputKeyCode": 257
+    },
+    //2
+    {
+      "keyID": 201,
+      "inputKeyCode": 258
+    },
+    //3
+    {
+      "keyID": 301,
+      "inputKeyCode": 259
+    },
+    //4
+    {
+      "keyID": 401,
+      "inputKeyCode": 260
+    },
+    //5
+    {
+      "keyID": 501,
+      "inputKeyCode": 261
+    },
+    //6
+    {
+      "keyID": 601,
+      "inputKeyCode": 262
+    },
+    //7
+    {
+      "keyID": 1001,
+      "inputKeyCode": 263
+    },
+    //8
+    {
+      "keyID": 1002,
+      "inputKeyCode": 264
+    },
+    //9
+    {
+      "keyID": 1003,
+      "inputKeyCode": 265
+    },
+    // \+1
+    {
+      "keyID": 102,
+      "inputKeyCode": 266
+    },
+    // \+2
+    {
+      "keyID": 202,
+      "inputKeyCode": 267
+    },
+    // \+3
+    {
+      "keyID": 302,
+      "inputKeyCode": 268
+    },
+    // \+4
+    {
+      "keyID": 402,
+      "inputKeyCode": 269
+    },
+    // \+5
+    {
+      "keyID": 502,
+      "inputKeyCode": 270
+    },
+    // \+6
+    {
+      "keyID": 1004,
+      "inputKeyCode": 271
+    }
+  ],
+  "audio": {
+    "$type": "ConfigMonsterAudio",
+    "animAudio": {
+      "onTransitionOut": [
+        {
+          "currentStateName": "Weak_Loop",
+          "audioEvent": { "text": "Stop_sfx_monster_gloves_wind_weak_Loop" },
+          "otherStateNames": [""],
+          "usage": "Any"
+        },
+        {
+          "currentStateName": "Block_Loop",
+          "audioEvent": { "text": "Stop_sfx_monster_gloves_wind_block_Loop" },
+          "otherStateNames": [""],
+          "usage": "Any"
+        }
+      ],
+      "onTransitionIn": [
+        {
+          "currentStateName": "Weak_Loop",
+          "audioEvent": { "text": "Play_sfx_monster_gloves_wind_weak_Loop" },
+          "otherStateNames": [""],
+          "usage": "Any"
+        },
+        {
+          "currentStateName": "Block_Loop",
+          "audioEvent": { "text": "Play_sfx_monster_gloves_wind_block_Loop" },
+          "otherStateNames": [""],
+          "usage": "Any"
+        }
+      ]
+    },
+    "disableEvent": {
+      "text": ""
+    },
+    "destroyEvent": {
+      "text": ""
+    }
+  }
 }
