@@ -2,8 +2,8 @@
 > <em>Resource Anime Game v3.6</em><br/>
 
 - ExcelBinOutput - 3.6 Dimbreath
-- BinOutput - GC 2.7 Quest,Scene>Point,HomeworldDefaultSave | GIO 3.6 All except Quest
-- Scripts - 3.6 GIO *** Used for Big World LUA ***
+- BinOutput - GIO 3.6, Dimbreath 3.5 & 3.2
+- Scripts - 3.6 GIO & Dump manual by me & hiro *** for natural spawn and many other things ***
 - TextMap - 3.6 Dimbreath *** for language translations items,etc are used for gm-books ***
 - QuestEncryptionKeys - 3.5 GI-cutscenes *** Used for cutscenes that require a key ***
 
@@ -35,21 +35,23 @@
 - Gadget/*
 - LevelDesign/Routes/*
 - LevelEntity/* (ConfigLevelEntity_*.json)
-## Needed by Grasscutter-Quests
+## Required Grasscutter-Quests
 - (LUA) Gadget (Control Stats Gadget)
 - (BIN) Config Monster (???)
 - (LUA) Scene/{sceneId}/scene_grid.json (???)
+- Folder Server, This is made by community/user. [source](https://github.com/Anime-Game-Servers/CustomGCResources/tree/patches)
 
-Because there are a lot of useless files, so I made a separate repo: GIO and Grasscutter Version are needed for Grasscutter only.
+Because there are a lot of useless files, so I made a separate repo: [GIO](https://gitlab.com/YuukiPS/GIO-Resources) and Grasscutter Version are needed for Grasscutter only and [Anime Game](https://gitlab.com/YuukiPS/GS-Resources) is full version dump.
 
 ## Problem Not finished yet:
 - Make Quest 2.8-3.6 work with modified QuestExcelConfigData which you can get from BinOutput/Quest/*.json. [use binout instead of excelconfig](https://github.com/Hartie95/Grasscutter/commit/0284de81563d30afb81733d7a3523a97419eb977)
-- [Missing Scripts](https://github.com/Hartie95/Grasscutter/wiki/missing-scripts) should have been resolved by using latest gio data from "Script/Common" folder so let's wait for latest update from him ;).
-- Quest should have worked automatically continued when quest was completed (if using [Hartie95 fork](https://github.com/Hartie95/Grasscutter/wiki/The-Outlander-Who-Caught-the-Wind-(Prologue-Act-1))) (Not working in version 3.0+ due to lack of data. need manual skip)
-- Natural Spawn for new area version 3.6 is no longer accurate using data from gio there are lots of monsters sunk in the ground and buried treasure. maybe you really should just dump the current live version.
+- [Missing Scripts](https://github.com/Hartie95/Grasscutter/wiki/missing-scripts) should have been resolved by using latest GIO Data from "Script/Common" folder so let's wait for latest update from him ;).
+- Quest should have worked automatically continued when quest was completed (if using [Hartie95 fork](https://github.com/Hartie95/Grasscutter/wiki/The-Outlander-Who-Caught-the-Wind-(Prologue-Act-1))) (Not working in version 3.0+ due to lack of data. need manual skip,start,next)
+- Natural Spawn for new area version 3.6 is no longer accurate using data from gio there are lots of monsters sunk in ground and buried treasure. maybe you really should just dump current live version.
 
 ## Problem Solved:
 - Natural Spawn for Sumeru area and other is available.
+- If `QuestEncryptionKeys.json` file is not found in your GC, please move `/Server/QuestEncryptionKeys.json` file to the root of the `Resources` folder. and you only need `Resources`, folder like `Tool` only tools to make it easier for me to manage this.
 
 ## Credits 
  - [Dimbreath](https://gitlab.com/Dimbreath/gamedata) (Everything except Script,BinOutput) <br/> 
