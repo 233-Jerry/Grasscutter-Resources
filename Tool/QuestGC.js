@@ -2,15 +2,15 @@
 const path = require('path');
 const fs = require('fs');
 
-const QuestDataTimORI = path.join(__dirname, 'BIN_Q_3.5');
+const QuestDataTimORI = path.join(__dirname, '../Resources/BinOutput/Quest');
 
 const output_final = "output2.json";
 
 // Get Hash
-const config_quest_31 = fs.readFileSync("QuestExcelConfigData_3.1.json");
-const config_quest_32 = fs.readFileSync("QuestExcelConfigData_3.5.json");
+//const config_quest_31 = fs.readFileSync("QuestExcelConfigData_3.1.json");
+const config_quest_32 = fs.readFileSync("QuestExcelConfigData_3.6.json");
 const config_quest_28 = fs.readFileSync("QuestExcelConfigData_2.8.json");
-const json_config_quest_31 = JSON.parse(config_quest_31);
+//const json_config_quest_31 = JSON.parse(config_quest_31);
 const json_config_quest_32 = JSON.parse(config_quest_32);
 const json_config_quest_28 = JSON.parse(config_quest_28);
 
@@ -67,6 +67,8 @@ fs.readdir(QuestDataTimORI, function (err, files) {
                     var failExec = [];
                     var beginExec = [];
 
+                    var questDes = picked['descTextMapHash'];
+
                     // just use old logic if found it
                     var use_old = json_config_quest_28.find(j => j.subId == subid);
                     if (use_old) {
@@ -77,6 +79,7 @@ fs.readdir(QuestDataTimORI, function (err, files) {
                         finishExec = use_old['finishExec']; //finsih
                         failExec = use_old['failExec'];
                         beginExec = use_old['beginExec'];
+                        questDes = use_old['descTextMapHash'];
                     } else {
                         if (subdata['acceptCond']) {
                             acceptCond = subdata['acceptCond'];
@@ -99,6 +102,9 @@ fs.readdir(QuestDataTimORI, function (err, files) {
                         if (subdata['beginExec']) {
                             beginExec = subdata['beginExec'];
                         }
+                        if (subdata['descTextMapHash']) {
+                            questDes = subdata['descTextMapHash'];
+                        }
                         index2++;
                     }
 
@@ -115,7 +121,7 @@ fs.readdir(QuestDataTimORI, function (err, files) {
                     */
 
                     // TODO: if not use picked
-                    questmain["descTextMapHash"] = picked['descTextMapHash'];
+                    questmain["descTextMapHash"] = questDes;
                     questmain["stepDescTextMapHash"] = picked['stepDescTextMapHash'];
                     questmain["guideTipsTextMapHash"] = picked['guideTipsTextMapHash'];
 

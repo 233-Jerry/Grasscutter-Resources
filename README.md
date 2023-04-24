@@ -2,7 +2,7 @@
 > <em>Resource Anime Game v3.6</em><br/>
 
 - ExcelBinOutput - 3.6 Dimbreath
-- BinOutput - GIO 3.6, Dimbreath 3.5 & 3.2
+- BinOutput - 3.6 Dimbreath
 - Scripts - 3.6 GIO & Dump manual by me & hiro *** for natural spawn and many other things ***
 - TextMap - 3.6 Dimbreath *** for language translations items,etc are used for gm-books ***
 - QuestEncryptionKeys - 3.5 GI-cutscenes *** Used for cutscenes that require a key ***
@@ -44,7 +44,7 @@
 Because there are a lot of useless files, so I made a separate repo: [GIO](https://gitlab.com/YuukiPS/GIO-Resources) and Grasscutter Version are needed for Grasscutter only and [Anime Game](https://gitlab.com/YuukiPS/GS-Resources) is full version dump.
 
 ## Problem Not finished yet:
-- Make Quest 2.8-3.6 work with modified QuestExcelConfigData which you can get from BinOutput/Quest/*.json. [use binout instead of excelconfig](https://github.com/Hartie95/Grasscutter/commit/0284de81563d30afb81733d7a3523a97419eb977)
+- Make Quest 3.0 work with modified QuestExcelConfigData which you can get from BinOutput/Quest/*.json. [use binout instead of excelconfig](https://github.com/Hartie95/Grasscutter/commit/0284de81563d30afb81733d7a3523a97419eb977)
 - [Missing Scripts](https://github.com/Hartie95/Grasscutter/wiki/missing-scripts) should have been resolved by using latest GIO Data from "Script/Common" folder so let's wait for latest update from him ;).
 - Quest should have worked automatically continued when quest was completed (if using [Hartie95 fork](https://github.com/Hartie95/Grasscutter/wiki/The-Outlander-Who-Caught-the-Wind-(Prologue-Act-1))) (Not working in version 3.0+ due to lack of data. need manual skip,start,next)
 - Natural Spawn for new area version 3.6 is no longer accurate using data from gio there are lots of monsters sunk in ground and buried treasure. maybe you really should just dump current live version.
