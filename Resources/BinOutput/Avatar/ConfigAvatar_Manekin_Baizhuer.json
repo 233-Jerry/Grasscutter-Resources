@@ -15,6 +15,22 @@
     "sheathPoint": "WeaponBackPut",
     "dissolveSheathFadeDelay": 0.07500000298023224,
     "dissolveSheathFadeTime": 0.30000001192092896,
+    "triggerToStates": [
+      {
+        "trigger": "Close",
+        "floatID": ""
+      },
+      {
+        "trigger": "Close",
+        "states": ["ShowWeapon/ShowWeapon_AS"],
+        "floatID": ""
+      },
+      {
+        "trigger": "Open",
+        "states": ["ShowWeapon/ShowWeapon", "ShowWeapon_BS"],
+        "floatID": ""
+      }
+    ],
     "attachPoints": {
       "equip01": "WeaponR",
       "equip02": "WeaponL",
@@ -29,7 +45,10 @@
         "ShowWeapon_BS": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "ShowWeapon_BS": ["Girl_Sword_ShowWeapon_BS"]
+            "ShowWeapon_BS": [
+              "Male_Catalyst_ShowWeapon_BS",
+              "Emo_Avatar_Common_Male_Catalyst_UI_ShowWeaponBS"
+            ]
           },
           "setAnimatorBoolean": [
             {
@@ -55,8 +74,11 @@
         "ShowWeapon": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "ShowWeapon": [],
-            "ShowWeapon_AS": ["Girl_Sword_ShowWeapon_AS"]
+            "ShowWeapon": ["Emo_Avatar_Common_Male_Catalyst_UI_ShowWeaponLoop"],
+            "ShowWeapon_AS": [
+              "Male_Catalyst_ShowWeapon_AS",
+              "Emo_Avatar_Common_Male_Catalyst_UI_ShowWeaponAS"
+            ]
           },
           "animatorTriggerOnLanded": "",
           "battouOnStart": true
@@ -74,8 +96,14 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "ShowCharacter": [],
-            "Show01": [],
-            "Show02": []
+            "Show01": [
+              "Manekin_Baizhuer_Show01",
+              "Audio_Male_Catalyst_Baizhuer_StandbyShow_01_UI"
+            ],
+            "Show02": [
+              "Manekin_Baizhuer_Show02",
+              "Audio_Male_Catalyst_Baizhuer_StandbyShow_02_UI"
+            ]
           },
           "setAnimatorBoolean": [
             {
@@ -88,7 +116,7 @@
         "Skill_BS": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Skill_BS": []
+            "Skill_BS": ["Emo_Avatar_Baizhuer_UI_Talent_HoldArm_01BS"]
           },
           "setAnimatorBoolean": [
             {
@@ -101,14 +129,14 @@
         "Skill": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Skill": []
+            "Skill": ["Emo_Avatar_Baizhuer_UI_Talent_HoldArm_01Loop"]
           },
           "animatorTriggerOnLanded": ""
         },
         "Skill_AS": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Skill_AS": []
+            "Skill_AS": ["Emo_Avatar_Baizhuer_UI_Talent_HoldArm_01AS"]
           },
           "animatorTriggerOnLanded": ""
         },
@@ -137,12 +165,13 @@
     }
   },
   "audio": {
+    "CBJGDOAHMDC": "",
     "animAudio": {
       "onTransitionIn": [
         {
           "currentStateName": "ShowWeapon_BS",
           "audioEvent": {
-            "text": "Play_ui_menu_weapon_show_heroine"
+            "text": "Play_ui_menu_weapon_show_baizhuer"
           }
         },
         {
@@ -162,7 +191,13 @@
         {
           "currentStateName": "Show01",
           "audioEvent": {
-            "text": "Stop_sfx_standbyShow_hero_blink"
+            "text": "Stop_ui_standbyShow_baizhuer_01"
+          }
+        },
+        {
+          "currentStateName": "Show02",
+          "audioEvent": {
+            "text": "Stop_ui_standbyShow_baizhuer_02"
           }
         }
       ]

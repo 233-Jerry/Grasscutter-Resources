@@ -29,10 +29,7 @@
         "ShowWeapon_BS": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "ShowWeapon_BS": [
-              "Boy_Pole_ShowWeapon_BS",
-              "Emo_Pole_Boy_Mika_UI_ShowWeaponBS"
-            ]
+            "ShowWeapon_BS": ["Girl_Sword_ShowWeapon_BS"]
           },
           "setAnimatorBoolean": [
             {
@@ -58,11 +55,8 @@
         "ShowWeapon": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "ShowWeapon": ["Emo_Pole_Boy_Mika_UI_ShowWeaponLoop"],
-            "ShowWeapon_AS": [
-              "Boy_Pole_ShowWeapon_AS",
-              "Emo_Pole_Boy_Mika_UI_ShowWeaponAS"
-            ]
+            "ShowWeapon": [],
+            "ShowWeapon_AS": ["Girl_Sword_ShowWeapon_AS"]
           },
           "animatorTriggerOnLanded": "",
           "battouOnStart": true
@@ -80,14 +74,8 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "ShowCharacter": [],
-            "Show01": [
-              "Manekin_Mika_Show01",
-              "Audio_Boy_Mika_StandbyShow_01_UI"
-            ],
-            "Show02": [
-              "Manekin_Mika_Show02",
-              "Audio_Boy_Mika_StandbyShow_02_UI"
-            ]
+            "Show01": [],
+            "Show02": []
           },
           "setAnimatorBoolean": [
             {
@@ -100,7 +88,7 @@
         "Skill_BS": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Skill_BS": ["Emo_Avatar_Mika_UI_Talent_Strikechest_01BS"]
+            "Skill_BS": []
           },
           "setAnimatorBoolean": [
             {
@@ -113,14 +101,14 @@
         "Skill": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Skill": ["Emo_Avatar_Mika_UI_Talent_Strikechest_01Loop"]
+            "Skill": []
           },
           "animatorTriggerOnLanded": ""
         },
         "Skill_AS": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Skill_AS": ["Emo_Avatar_Mika_UI_Talent_Strikechest_01AS"]
+            "Skill_AS": []
           },
           "animatorTriggerOnLanded": ""
         },
@@ -149,13 +137,12 @@
     }
   },
   "audio": {
-    "CBJGDOAHMDC": "",
     "animAudio": {
       "onTransitionIn": [
         {
           "currentStateName": "ShowWeapon_BS",
           "audioEvent": {
-            "text": "Play_ui_menu_weapon_show_mika"
+            "text": "Play_ui_menu_weapon_show_heroine"
           }
         },
         {
@@ -175,13 +162,7 @@
         {
           "currentStateName": "Show01",
           "audioEvent": {
-            "text": "Stop_ui_standbyShow_mika_01"
-          }
-        },
-        {
-          "currentStateName": "Show02",
-          "audioEvent": {
-            "text": "Stop_ui_standbyShow_mika_02"
+            "text": "Stop_sfx_standbyShow_hero_blink"
           }
         }
       ]

@@ -5,8 +5,8 @@
       "mesh": "EffectMesh"
     },
     "mass": 10.0,
-    "height": 1.7269999980926514,
-    "modelHeight": 1.7300000190734863,
+    "height": 1.850000023841858,
+    "modelHeight": 1.850000023841858,
     "affectedByWorld": true,
     "checkInSurface": true
   },
@@ -60,8 +60,8 @@
     },
     "die": {
       "hasAnimatorDie": true,
-      "dieEndTime": 3.0,
-      "dieForceDisappearTime": 5.0,
+      "dieEndTime": 1.5,
+      "dieForceDisappearTime": 2.5,
       "dieDisappearEffect": "Eff_Death_Avatar_Common",
       "dieShaderData": "AvatarDie",
       "useRagDoll": true,
@@ -78,48 +78,6 @@
       "equip03": "WeaponL"
     }
   },
-  "abilities": [
-    {
-      "abilityID": "Avatar_Dehya_ExtraAttack",
-      "abilityName": "Avatar_Dehya_ExtraAttack",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Dehya_ElementalArt_Insert",
-      "abilityName": "Avatar_Dehya_ElementalArt_Insert",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Dehya_ElementalArt_Recycle",
-      "abilityName": "Avatar_Dehya_ElementalArt_Recycle",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Dehya_ElementalArt_LoanHandler",
-      "abilityName": "Avatar_Dehya_ElementalArt_LoanHandler",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Dehya_ElementalBurst",
-      "abilityName": "Avatar_Dehya_ElementalBurst",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Dehya_ElementalBurst_Controller",
-      "abilityName": "Avatar_Dehya_ElementalBurst_Controller",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Dehya_FallingAnthem",
-      "abilityName": "Avatar_Dehya_FallingAnthem",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "Avatar_Dehya_Attack_DamageHandler",
-      "abilityName": "Avatar_Dehya_Attack_DamageHandler",
-      "abilityOverride": ""
-    }
-  ],
   "stateLayers": {
     "defaultLayer": {
       "$type": "ConfigNormalStateLayer",
@@ -144,21 +102,21 @@
         "NormalMove": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "ShowUp": ["Audio_Lady_Showup"],
-            "WalkToRun": ["Audio_Lady_WalkToRun"],
-            "Walk": ["Ani_WalkSprint01", "Audio_Lady_Walk", "WalkStepOnWater"],
-            "RunToWalk": ["Audio_Lady_RunToWalk"],
-            "Run": ["Ani_Run01", "Audio_Lady_Run"],
-            "RunToIdle": ["Audio_Lady_RunToIdle"],
-            "WalkToIdle": ["Audio_Lady_WalkToIdle"],
+            "ShowUp": ["Audio_Male_Showup"],
+            "WalkToRun": ["Audio_Male_WalkToRun"],
+            "Walk": ["Ani_WalkSprint01", "Audio_Male_Walk", "WalkStepOnWater"],
+            "RunToWalk": ["Audio_Male_RunToWalk"],
+            "Run": ["Ani_Run01", "Audio_Male_Run"],
+            "RunToIdle": ["Audio_Male_RunToIdle"],
+            "WalkToIdle": ["Audio_Male_WalkToIdle"],
             "RunningTurn": [],
-            "SprintToRun": ["Audio_Lady_SprintToRun"],
-            "SprintToIdle": ["Audio_Lady_SprintToIdle", "Emo_Lady_Sprint_AS"],
-            "FallOnGround": ["Audio_Lady_FallOnGround"],
-            "FallOnGroundLit": ["Audio_Lady_FallOnGroundLit"],
-            "FallToGroundRun": ["Audio_Lady_FallToGroundRun"],
-            "FallToGroundRunHard": ["Audio_Lady_FallToGroundRunHard"],
-            "FallToGroundSprint": ["Audio_Lady_FallToGroundSprint"]
+            "SprintToRun": ["Audio_Male_SprintToRun"],
+            "SprintToIdle": ["Audio_Male_SprintToIdle", "Emo_Male_Sprint_AS"],
+            "FallOnGround": ["Audio_Male_FallOnGround"],
+            "FallOnGroundLit": ["Audio_Male_FallOnGroundLit"],
+            "FallToGroundRun": ["Audio_Male_FallToGroundRun"],
+            "FallToGroundRunHard": ["Audio_Male_FallToGroundRunHard"],
+            "FallToGroundSprint": ["Audio_Male_FallToGroundSprint"]
           },
           "canDoSkill": true,
           "massRatio": 1.0,
@@ -175,9 +133,9 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "SprintBS": [
-              "Audio_Lady_RunToSprint",
+              "Audio_Male_RunToSprint",
               "SprintBS_Invincible",
-              "Emo_Lady_Sprint_BS"
+              "Emo_Male_Sprint_BS"
             ]
           },
           "canDoSkill": true,
@@ -201,8 +159,8 @@
           "animatorStates": {
             "Sprint": [
               "Ani_WalkSprint01",
-              "Audio_Lady_Sprint",
-              "Emo_Lady_Sprint_Loop"
+              "Audio_Male_Sprint",
+              "Emo_Male_Sprint_Loop"
             ]
           },
           "canDoSkill": true,
@@ -229,12 +187,12 @@
         "Climb": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "ClimbMove0": ["ClimbStep", "Audio_Lady_Climb"],
-            "ClimbMove1": ["ClimbStep", "Audio_Lady_Climb"],
+            "ClimbMove0": ["ClimbStep", "Audio_Male_Climb"],
+            "ClimbMove1": ["ClimbStep", "Audio_Male_Climb"],
             "ClimbIdle": [],
-            "ClimbJump": ["Audio_Lady_ClimbDash"],
-            "JumpUpWallForStandby": ["Audio_Lady_JumpUpWallStandby"],
-            "Standby2ClimbB": ["Audio_Lady_Standby2ClimbB"]
+            "ClimbJump": ["Audio_Male_ClimbDash"],
+            "JumpUpWallForStandby": ["Audio_Male_JumpUpWallStandby"],
+            "Standby2ClimbB": ["Audio_Male_Standby2ClimbB"]
           },
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
           "actionPanelState": "Climb",
@@ -244,8 +202,8 @@
         "ClimbTransient": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "JumpWallReady": ["Audio_Lady_JumpUpWallReady"],
-            "Standby2ClimbA": ["Audio_Lady_Standby2ClimbA"]
+            "JumpWallReady": [],
+            "Standby2ClimbA": ["Audio_Male_Standby2ClimbA"]
           },
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
           "animatorTriggerOnLanded": "",
@@ -254,7 +212,7 @@
         "Upstairs": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Upstairs": ["Audio_Lady_Upstairs"]
+            "Upstairs": ["Audio_Male_Upstairs"]
           },
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
           "setAnimatorBoolean": [
@@ -278,13 +236,13 @@
         "Swim": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "SwimIdle": ["Audio_Lady_SwimIdle"],
-            "SwimMove": ["SwimStep", "Audio_Lady_SwimMove"],
+            "SwimIdle": ["Audio_Male_SwimIdle"],
+            "SwimMove": ["SwimStep", "Audio_Male_SwimMove"],
             "SwimDash": [
-              "Audio_Lady_SwimDash",
-              "Avatar_Lady_SwimDash_Hand_Effect"
+              "Audio_Male_SwimDash",
+              "Avatar_Male_SwimDash_Hand_Effect"
             ],
-            "SwimJumpToWater": ["Audio_Lady_SwimJumpToWater"]
+            "SwimJumpToWater": ["Audio_Male_SwimJumpToWater"]
           },
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
           "actionPanelState": "Swim",
@@ -295,7 +253,7 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "Fly": [],
-            "FlyStart": ["Audio_Lady_FlyStart", "FlyStart_Weapon"]
+            "FlyStart": ["Audio_Male_FlyStart", "FlyStart_Weapon"]
           },
           "canDoSkill": true,
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
@@ -311,10 +269,10 @@
         "Jump": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Jump": ["Audio_Lady_Jump"],
-            "JumpForRun": ["Audio_Lady_Jump"],
-            "JumpForWalk": ["Audio_Lady_Jump"],
-            "JumpForSprint": ["Audio_Lady_Jump"]
+            "Jump": ["Audio_Male_Jump"],
+            "JumpForRun": ["Audio_Male_Jump"],
+            "JumpForWalk": ["Audio_Male_Jump"],
+            "JumpForSprint": ["Audio_Male_Jump"]
           },
           "canDoSkill": true,
           "resetAnimatorTriggerOnEnter": ["DoSkill", "AimEnd"],
@@ -330,10 +288,10 @@
         "Fall": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "JumpOffWall": ["Audio_Lady_Jump"],
-            "SwimJump": ["Audio_Lady_SwimJump"],
+            "JumpOffWall": ["Audio_Male_Jump"],
+            "SwimJump": ["Audio_Male_SwimJump"],
             "SwimJumpDrop": [],
-            "DropDown": ["Audio_Lady_DropDown"],
+            "DropDown": ["Audio_Male_DropDown"],
             "DropDownLit": [],
             "WalkDropDownLit": []
           },
@@ -366,18 +324,18 @@
         "NormalMoveWeapon": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "WalkToRunWeapon": ["Audio_Lady_WalkToRun"],
-            "WalkWeapon": ["Audio_Lady_Walk"],
-            "RunToWalkWeapon": ["Audio_Lady_RunToWalk"],
-            "RunWeapon": ["Audio_Lady_Run"],
-            "RunToIdleWeapon": ["Audio_Lady_RunToIdle"],
-            "WalkToIdleWeapon": ["Audio_Lady_WalkToIdle"],
+            "WalkToRunWeapon": ["Audio_Male_WalkToRun"],
+            "WalkWeapon": ["Audio_Male_Walk"],
+            "RunToWalkWeapon": ["Audio_Male_RunToWalk"],
+            "RunWeapon": ["Audio_Male_Run"],
+            "RunToIdleWeapon": [],
+            "WalkToIdleWeapon": [],
             "RunningTurnWeapon": [],
-            "FallOnGroundWeapon": ["Audio_Lady_FallToGround"],
-            "FallOnGroundLitWeapon": ["Audio_Lady_FallToGround"],
-            "FallOnGroundMiddleWeapon": ["Audio_Lady_FallToGround"],
-            "FallToGroundRunWeapon": ["Audio_Lady_FallToGroundRun"],
-            "FallToGroundRunHardWeapon": ["Audio_Lady_FallToGroundRunHard"]
+            "FallOnGroundWeapon": ["Audio_Male_FallOnGround"],
+            "FallOnGroundLitWeapon": ["Audio_Male_FallOnGroundLit"],
+            "FallOnGroundMiddleWeapon": ["Audio_Male_FallOnGroundMiddle"],
+            "FallToGroundRunWeapon": ["Audio_Male_FallToGroundRun"],
+            "FallToGroundRunHardWeapon": ["Audio_Male_FallToGroundRunHard"]
           },
           "canDoSkill": true,
           "massRatio": 2.0,
@@ -394,16 +352,16 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "WalkPutaway": [
-              "Lady_Claymore_Putaway_Walk",
-              "Audio_Lady_Sword_WalkPutAway"
+              "Male_Claymore_Putaway_Walk",
+              "Audio_Male_Claymore_WalkPutAway"
             ],
             "RunPutaway": [
-              "Lady_Claymore_Putaway_Run",
-              "Audio_Lady_Sword_RunPutAway"
+              "Male_Claymore_Putaway_Run",
+              "Audio_Male_Claymore_RunPutAway"
             ],
             "RunToSprintWeapon": [
-              "Lady_Claymore_Putaway_Sprint",
-              "Audio_Lady_Sword_RunToSprintWeapon"
+              "Male_Claymore_Putaway_Sprint",
+              "Audio_Male_Claymore_RunToSprintWeapon"
             ]
           },
           "canDoSkill": true,
@@ -421,8 +379,8 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "StandbyPutaway": [
-              "Lady_Claymore_Putaway_Standby",
-              "Audio_Lady_Claymore_StandbyPutAway"
+              "Male_Claymore_Putaway_Standby",
+              "Audio_Male_Claymore_StandbyPutAway"
             ]
           },
           "canDoSkill": true,
@@ -446,9 +404,9 @@
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
             "StandbyPutawayOver": [],
-            "WalkPutawayOver": ["Audio_Lady_Sword_WalkPutAwayOver"],
-            "RunPutawayOver": ["Audio_Lady_Sword_RunPutAwayOver"],
-            "RunToSprintWeaponOver": ["Audio_Lady_Sword_RunToSprintWeaponOver"]
+            "WalkPutawayOver": ["Audio_Male_Walk_Diluc"],
+            "RunPutawayOver": ["Audio_Male_Run_Diluc"],
+            "RunToSprintWeaponOver": []
           },
           "canDoSkill": true,
           "massRatio": 2.0,
@@ -464,9 +422,9 @@
         "JumpWeapon": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "JumpWeapon": ["Audio_Lady_Jump"],
-            "JumpForRunWeapon": ["Audio_Lady_Jump"],
-            "JumpForWalkWeapon": ["Audio_Lady_Jump"]
+            "JumpWeapon": ["Audio_Male_Jump"],
+            "JumpForRunWeapon": ["Audio_Male_Jump"],
+            "JumpForWalkWeapon": ["Audio_Male_Jump"]
           },
           "canDoSkill": true,
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
@@ -483,7 +441,7 @@
         "FallWeapon": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "DropDownWeapon": ["Audio_Lady_DropDown"],
+            "DropDownWeapon": [],
             "DropDownLitWeapon": [],
             "WalkDropDownLitWeapon": []
           },
@@ -500,8 +458,8 @@
         "BeHit": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "Hit_L": ["Audio_Lady_Hit_L"],
-            "Hit_H": ["Audio_Lady_Hit_H"]
+            "Hit_L": ["Audio_Male_Hit_L"],
+            "Hit_H": ["Audio_Male_Hit_H"]
           },
           "moveType": "combatMove",
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
@@ -514,16 +472,17 @@
         "Die": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
-            "FallDie": ["Audio_Lady_NormalDie"],
-            "NormalDie": ["Die", "Audio_Lady_NormalDie"],
-            "SwimDie": ["Swim_Die", "Audio_Lady_SwimDie"],
-            "HitGroundDie": ["Die", "Audio_Lady_Death"]
+            "FallDie": ["Audio_Male_Death"],
+            "NormalDie": ["Die", "Audio_Male_Death"],
+            "SwimDie": ["Swim_Die", "Audio_Male_SwimDie"],
+            "HitGroundDie": ["Die", "Audio_Male_Death"]
           },
           "animatorTriggerOnLanded": ""
         },
         "Die_RagDoll": {
           "$type": "ConfigAvatarStateIDInfo",
           "animatorStates": {
+            "NormalDie_AS": [],
             "FallDie_AS": []
           },
           "enableRagDoll": true,
@@ -533,6 +492,7 @@
     }
   },
   "audio": {
+    "CBJGDOAHMDC": "",
     "animAudio": {
       "onTransitionOut": [
         {
@@ -840,10 +800,10 @@
       ]
     },
     "voiceSwitch": {
-      "text": "Switch_Dehya"
+      "text": "Switch_Kaveh"
     },
     "bodyTypeSwitch": {
-      "text": "Switch_Lady"
+      "text": "Switch_Male"
     },
     "listenerLiftup": 1.5,
     "surfaceProberLiftup": 1.5
