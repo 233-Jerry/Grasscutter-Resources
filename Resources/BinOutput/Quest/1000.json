@@ -450,7 +450,13 @@
           "param": [100015, 0]
         }
       ],
-      "guide": {},
+      "guide": {
+        "type": "QUEST_GUIDE_NPC",
+        "param": ["1005"],
+        "guideScene": 3,
+        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
+        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
+      },
       "acceptCondComb": {
         "ODAOGCJFIHC": ""
       },

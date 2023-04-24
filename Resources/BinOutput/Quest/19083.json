@@ -151,13 +151,16 @@
       },
       "finishExec": [
         {
-          "type": "QUEST_EXEC_LOCK_AVATAR_TEAM",
-          "param": ["10000034"]
+          "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM_V2"
+        },
+        {
+          "type": "QUEST_EXEC_GRANT_TRIAL_AVATAR_AND_LOCK_TEAM_V2",
+          "param": ["1", "500", "0"]
         }
       ],
       "failExec": [
         {
-          "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM"
+          "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM_V2"
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
@@ -218,7 +221,7 @@
           "param": ["133102928"]
         },
         {
-          "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM"
+          "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM_V2"
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
@@ -227,7 +230,7 @@
       ],
       "failExec": [
         {
-          "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM"
+          "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM_V2"
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",

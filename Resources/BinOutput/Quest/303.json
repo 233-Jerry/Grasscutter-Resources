@@ -788,6 +788,62 @@
       ],
       "versionBegin": "",
       "versionEnd": ""
+    },
+    {
+      "subId": 30329,
+      "mainId": 303,
+      "order": 28,
+      "showType": "QUEST_HIDDEN",
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [30329, 0]
+        }
+      ],
+      "guide": {},
+      "acceptCondComb": {
+        "ODAOGCJFIHC": ""
+      },
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_UNLOCK_POINT",
+          "param": ["3", "744"]
+        },
+        {
+          "type": "QUEST_EXEC_UNLOCK_AREA",
+          "param": ["3", "30"]
+        }
+      ],
+      "versionBegin": "",
+      "versionEnd": ""
+    },
+    {
+      "subId": 30330,
+      "mainId": 303,
+      "order": 29,
+      "showType": "QUEST_HIDDEN",
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [30330, 0]
+        }
+      ],
+      "guide": {},
+      "acceptCondComb": {
+        "ODAOGCJFIHC": ""
+      },
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_UNLOCK_POINT",
+          "param": ["3", "811"]
+        },
+        {
+          "type": "QUEST_EXEC_UNLOCK_AREA",
+          "param": ["3", "31"]
+        }
+      ],
+      "versionBegin": "",
+      "versionEnd": ""
     }
   ]
 }
