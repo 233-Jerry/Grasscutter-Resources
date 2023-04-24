@@ -1,15 +1,4 @@
 {
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Crossbow
-  //
-  ////////////////////////////////////////////////////////////////
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Sword
-  //
-  ////////////////////////////////////////////////////////////////
   "Weapon_Sword_Metal": {
     "$type": "ConfigGadget",
     "common": {
@@ -19,45 +8,41 @@
       },
       "affectedByWorld": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 9999999,
-        "attack": 0,
-        "defense": 999999,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 9999999.0,
+        "defense": 999999.0,
+        "isInvincible": true,
+        "canTriggerBullet": true,
+        "denyElementStick": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Metal",
-        "abilityName": "Avatar_Weapon_Metal"
+        "abilityName": "Avatar_Weapon_Metal",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "MJKIBDEPGJN": {
+      "CEDGNNJDMMF": "equip01",
+      "ENOCDNHOPDI": "",
+      "AFDKPCBEICD": "",
+      "HCKLNGOFMPO": "SwordOneHand"
+    }
   },
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Catalyst
-  //
-  ////////////////////////////////////////////////////////////////
-
-  //Book_App 用于书型法器
   "Catalyst_Book": {
     "$type": "ConfigGadget",
     "common": {
@@ -67,82 +52,88 @@
       },
       "affectedByWorld": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 9999999,
-        "attack": 0,
-        "defense": 999999,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 9999999.0,
+        "defense": 999999.0,
+        "isInvincible": true,
+        "canTriggerBullet": true,
+        "denyElementStick": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "Catalyst"
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "Metal",
+        "abilityName": "Avatar_Weapon_Metal",
+        "abilityOverride": ""
+      }
+    ],
+    "MJKIBDEPGJN": {
+      "CEDGNNJDMMF": "equip02",
+      "ENOCDNHOPDI": "",
+      "AFDKPCBEICD": "",
+      "HCKLNGOFMPO": "Catalyst"
     },
     "stateLayers": {
       "defaultLayer": {
         "$type": "ConfigNormalStateLayer",
+        "FNPGDAEJAPJ": "",
         "stateIDs": {
           "NormalMove": {
             "$type": "ConfigNormalStateIDInfo",
             "animatorStates": {
-              "AttackLoop": [""],
-              "AttackToIdle": [""],
-              "Open": [""],
-              "Close": [""]
+              "AttackLoop": [],
+              "AttackToIdle": [],
+              "Open": [],
+              "Close": []
             }
           }
         }
       }
     },
     "audio": {
-      "$type": "ConfigGadgetAudio",
+      "$type": "NPAHBANFLHK",
+      "NCOGLLMIJGO": "",
       "animAudio": {
-        "onTransitionOut": [
-          {
-            "currentStateName": "AttackLoop",
-            "audioEvent": { "text": "Play_sfx_weapon_catalyst_lady_move_end" },
-            "otherStateNames": [],
-            "usage": "Any"
-          },
-          {
-            "currentStateName": "Open",
-            "audioEvent": { "text": "Play_sfx_weapon_catalyst_lady_close" },
-            "otherStateNames": ["AttackLoop"],
-            "usage": "Except"
-          }
-        ],
         "onTransitionIn": [
           {
             "currentStateName": "AttackLoop",
-            "audioEvent": { "text": "Play_sfx_weapon_catalyst_lady_move" },
-            "otherStateNames": [],
-            "usage": "Any"
+            "audioEvent": {
+              "text": "Play_sfx_weapon_catalyst_lady_move"
+            }
+          }
+        ],
+        "onTransitionOut": [
+          {
+            "currentStateName": "AttackLoop",
+            "audioEvent": {
+              "text": "Play_sfx_weapon_catalyst_lady_move_end"
+            }
+          },
+          {
+            "currentStateName": "Open",
+            "audioEvent": {
+              "text": "Play_sfx_weapon_catalyst_lady_close"
+            },
+            "otherStateNames": ["AttackLoop"],
+            "usage": "Except"
           }
         ]
       }
-    },
-    "abilities": [
-      {
-        "abilityID": "Metal",
-        "abilityName": "Avatar_Weapon_Metal"
-      }
-    ]
+    }
   },
-
-  //Ball_Jade 用于球形法器
   "Catalyst_Ball": {
     "$type": "ConfigGadget",
     "common": {
@@ -152,61 +143,81 @@
       },
       "affectedByWorld": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 9999999,
-        "attack": 0,
-        "defense": 999999,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 9999999.0,
+        "defense": 999999.0,
+        "isInvincible": true,
+        "canTriggerBullet": true,
+        "denyElementStick": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "Catalyst"
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "Metal",
+        "abilityName": "Avatar_Weapon_Metal",
+        "abilityOverride": ""
+      }
+    ],
+    "MJKIBDEPGJN": {
+      "CEDGNNJDMMF": "equip02",
+      "ENOCDNHOPDI": "",
+      "AFDKPCBEICD": "",
+      "HCKLNGOFMPO": "Catalyst"
     },
     "stateLayers": {
       "defaultLayer": {
         "$type": "ConfigNormalStateLayer",
+        "FNPGDAEJAPJ": "",
         "stateIDs": {
           "Close": {
             "$type": "ConfigNormalStateIDInfo",
             "animatorStates": {
-              "Close": [""]
+              "Close": []
             }
           }
         }
       },
       "audioEventLayer": {
         "$type": "ConfigNormalStateLayer",
-        "layerIndex": 1, //这个是确定layer层的重要参数
-        "layerIndexName": "AudioEventLayer",
+        "DJBFLOJAOCN": 1,
+        "FNPGDAEJAPJ": "AudioEventLayer",
         "stateIDs": {
           "NormalMove": {
             "$type": "ConfigNormalStateIDInfo",
             "animatorStates": {
-              "AttackLoop": [""],
-              "Open": [""],
-              "CloseAudio": [""]
+              "AttackLoop": [],
+              "Open": [],
+              "CloseAudio": []
             }
           }
         }
       }
     },
     "audio": {
-      "$type": "ConfigGadgetAudio",
+      "$type": "NPAHBANFLHK",
+      "NCOGLLMIJGO": "",
       "animAudio": {
+        "onTransitionIn": [
+          {
+            "currentStateName": "AttackLoop",
+            "audioEvent": {
+              "text": "Play_sfx_weapon_catalyst_ball_common_attackLoop"
+            }
+          }
+        ],
         "onTransitionOut": [
           {
             "currentStateName": "AttackLoop",
@@ -224,32 +235,10 @@
             "otherStateNames": ["AttackLoop"],
             "usage": "Except"
           }
-        ],
-        "onTransitionIn": [
-          {
-            "currentStateName": "AttackLoop",
-            "audioEvent": {
-              "text": "Play_sfx_weapon_catalyst_ball_common_attackLoop"
-            },
-            "otherStateNames": [],
-            "usage": "Any"
-          }
         ]
       }
-    },
-    "abilities": [
-      {
-        "abilityID": "Metal",
-        "abilityName": "Avatar_Weapon_Metal"
-      }
-    ]
+    }
   },
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Claymore
-  //
-  ////////////////////////////////////////////////////////////////
   "Weapon_Claymore_Metal": {
     "$type": "ConfigGadget",
     "common": {
@@ -259,43 +248,41 @@
       },
       "affectedByWorld": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 9999999,
-        "attack": 0,
-        "defense": 999999,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 9999999.0,
+        "defense": 999999.0,
+        "isInvincible": true,
+        "canTriggerBullet": true,
+        "denyElementStick": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Claymore"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Metal",
-        "abilityName": "Avatar_Weapon_Metal"
+        "abilityName": "Avatar_Weapon_Metal",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "MJKIBDEPGJN": {
+      "CEDGNNJDMMF": "equip01",
+      "ENOCDNHOPDI": "",
+      "AFDKPCBEICD": "",
+      "HCKLNGOFMPO": "Claymore"
+    }
   },
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Bow
-  //
-  ////////////////////////////////////////////////////////////////
-
   "Weapon_Bow_Metal": {
     "$type": "ConfigGadget",
     "common": {
@@ -305,18 +292,12 @@
       },
       "affectedByWorld": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 10,
-        "attack": 0,
-        "defense": 0,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 10.0,
+        "isInvincible": true,
+        "canTriggerBullet": true,
+        "denyElementStick": true
       },
       "beHit": {
         "hitBloodEffect": "",
@@ -324,38 +305,37 @@
         "muteAllHitEffect": true,
         "muteAllHitText": true
       },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
+      },
       "die": {
         "dieDisappearEffect": "Eff_Monster_Undead_01_Shield_Broken"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      "equipEntityType": "Bow",
-      "bowData": {
-        "bowRatioName": "BowRatio",
-        "bowStringLoosePoint": {
-          "x": 0.12,
-          "y": 0,
-          "z": 0
-        },
-        "bowStringMaxLen": 0.42
-      }
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Metal",
-
-        "abilityName": "Avatar_Weapon_Metal"
+        "abilityName": "Avatar_Weapon_Metal",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "MJKIBDEPGJN": {
+      "CEDGNNJDMMF": "equip02",
+      "ENOCDNHOPDI": "",
+      "AFDKPCBEICD": "",
+      "HCKLNGOFMPO": "Bow",
+      "KLPDOEONCIA": {
+        "BGGMLNLOEEC": "BowRatio",
+        "MJELNLANDGN": {
+          "x": 0.11999999731779099
+        },
+        "DEIPABBHHFL": 0.41999998688697815
+      }
+    }
   },
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  Pole
-  //
-  ////////////////////////////////////////////////////////////////
-
   "Weapon_Pole_Metal": {
     "$type": "ConfigGadget",
     "common": {
@@ -365,45 +345,41 @@
       },
       "affectedByWorld": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 9999999,
-        "attack": 0,
-        "defense": 999999,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 9999999.0,
+        "defense": 999999.0,
+        "isInvincible": true,
+        "canTriggerBullet": true,
+        "denyElementStick": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "Pole"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Metal",
-        "abilityName": "Avatar_Weapon_Metal"
+        "abilityName": "Avatar_Weapon_Metal",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "MJKIBDEPGJN": {
+      "CEDGNNJDMMF": "equip01",
+      "ENOCDNHOPDI": "",
+      "AFDKPCBEICD": "",
+      "HCKLNGOFMPO": "Pole"
+    }
   },
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  废弃的 类型
-  //
-  ////////////////////////////////////////////////////////////////
-
-  //保留给地城大世界用来燃烧玩法。
   "Weapon_Sword_Wood_Normal": {
     "$type": "ConfigGadget",
     "common": {
@@ -414,39 +390,40 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 9999999,
-        "attack": 0,
-        "defense": 999999,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 9999999.0,
+        "defense": 999999.0,
+        "isInvincible": true,
+        "canTriggerBullet": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Wood_Normal",
-
-        "abilityName": "Avatar_Weapon_Wood_Normal"
+        "abilityName": "Avatar_Weapon_Wood_Normal",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "MJKIBDEPGJN": {
+      "CEDGNNJDMMF": "equip01",
+      "ENOCDNHOPDI": "",
+      "AFDKPCBEICD": "",
+      "HCKLNGOFMPO": "SwordOneHand"
+    }
   },
-  //保留给地城大世界用来燃烧玩法。
   "Weapon_Sword_Wood_Hard": {
     "$type": "ConfigGadget",
     "common": {
@@ -457,40 +434,40 @@
       "affectedByWorld": true,
       "checkInSurface": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 9999999,
-        "attack": 0,
-        "defense": 999999,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 9999999.0,
+        "defense": 999999.0,
+        "isInvincible": true,
+        "canTriggerBullet": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "equipment": {
-      "attachTo": "equip01",
-      "equipEntityType": "SwordOneHand"
-    },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "Wood_Hard",
-
-        "abilityName": "Avatar_Weapon_Wood_Hard"
+        "abilityName": "Avatar_Weapon_Wood_Hard",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "MJKIBDEPGJN": {
+      "CEDGNNJDMMF": "equip01",
+      "ENOCDNHOPDI": "",
+      "AFDKPCBEICD": "",
+      "HCKLNGOFMPO": "SwordOneHand"
+    }
   },
-
-  //mute
   "Catalyst_Mute": {
     "$type": "ConfigGadget",
     "common": {
@@ -500,85 +477,62 @@
       },
       "affectedByWorld": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 9999999,
-        "attack": 0,
-        "defense": 999999,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": false,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 9999999.0,
+        "defense": 999999.0,
+        "isInvincible": true,
+        "canTriggerBullet": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "equipment": {
-      "attachTo": "equip02",
-      // "subGadgetId" : 50030000,
-      // "subAttachTo" : "equip03",
-      "equipEntityType": "Catalyst"
+    "attackAttenuation": "",
+    "abilities": [
+      {
+        "abilityID": "Metal",
+        "abilityName": "Avatar_Weapon_Metal",
+        "abilityOverride": ""
+      }
+    ],
+    "MJKIBDEPGJN": {
+      "CEDGNNJDMMF": "equip02",
+      "ENOCDNHOPDI": "",
+      "AFDKPCBEICD": "",
+      "HCKLNGOFMPO": "Catalyst"
     },
     "stateLayers": {
       "defaultLayer": {
         "$type": "ConfigNormalStateLayer",
+        "FNPGDAEJAPJ": "",
         "stateIDs": {
           "NormalMove": {
             "$type": "ConfigNormalStateIDInfo",
             "animatorStates": {
-              "AttackLoop": [""],
-              "AttackToIdle": [""],
-              "Open": [""],
-              "Close": [""]
+              "AttackLoop": [],
+              "AttackToIdle": [],
+              "Open": [],
+              "Close": []
             }
           }
         }
       }
     },
     "audio": {
-      "$type": "ConfigGadgetAudio",
-      "animAudio": {
-        // "onTransitionOut" :
-        // [
-        //  {
-        // 	"currentStateName" : "AttackLoop",
-        // 	"audioEvent" : { "text": "Play_sfx_weapon_catalyst_lady_move_end" },
-        // 	"otherStateNames" : [],
-        // 	"usage" : "Any",
-        //  },
-        // ],
-        // "onTransitionIn" :
-        // [
-        //  {
-        // 	"currentStateName" : "AttackLoop",
-        // 	"audioEvent" : { "text": "Play_sfx_weapon_catalyst_lady_move" },
-        // 	"otherStateNames" : [],
-        // 	"usage" : "Any",
-        //  },
-        // ],
-      }
-    },
-    "abilities": [
-      {
-        "abilityID": "Metal",
-
-        "abilityName": "Avatar_Weapon_Metal"
-      }
-    ]
+      "$type": "NPAHBANFLHK",
+      "NCOGLLMIJGO": "",
+      "animAudio": {}
+    }
   },
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  绯烟-副武器
-  //
-  ////////////////////////////////////////////////////////////////
   "SubEquip_Feiyan_Steelyard": {
     "$type": "ConfigGadget",
     "common": {
@@ -588,56 +542,38 @@
       },
       "affectedByWorld": true
     },
-    //战斗参数
     "combat": {
       "property": {
-        "HP": 9999999,
-        "attack": 0,
-        "defense": 999999,
-        "isGhostToAllied": true,
-        "isGhostToEnemy": true,
-        "isInvincible": true
-      },
-      "combatLock": {
-        "denyLockOn": true
+        "HP": 9999999.0,
+        "defense": 999999.0,
+        "isInvincible": true,
+        "canTriggerBullet": true,
+        "denyElementStick": true
       },
       "beHit": {
         "hitBloodEffect": "",
         "muteAllHit": true,
         "muteAllHitEffect": true,
         "muteAllHitText": true
+      },
+      "combatLock": {
+        "lockShape": "CircleLockEnemy",
+        "denyLockOn": true,
+        "lockType": "Default"
       }
     },
-    "equipment": {
-      "attachTo": "equip03",
-      "equipEntityType": "None"
-    },
-    "abilities": []
-  },
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  久岐忍-副武器
-  //
-  ////////////////////////////////////////////////////////////////
-
-  "SubEquip_Shinobu_Mask": {
-    "$type": "ConfigGadget",
-    "common": {
-      // "effectAttachShape" :
-      // {
-      // 	"$type" : "ConfigEffectAttachMesh",
-      // 	"mesh" : "EffectMesh",
-      // },
+    "attackAttenuation": "",
+    "MJKIBDEPGJN": {
+      "CEDGNNJDMMF": "equip03",
+      "ENOCDNHOPDI": "",
+      "AFDKPCBEICD": ""
     }
   },
-
-  ////////////////////////////////////////////////////////////////
-  //
-  //  平藏-副武器
-  //
-  ////////////////////////////////////////////////////////////////
-
+  "SubEquip_Shinobu_Mask": {
+    "$type": "ConfigGadget",
+    "common": {},
+    "attackAttenuation": ""
+  },
   "SubEquip_Heizo_Jitte": {
     "$type": "ConfigGadget",
     "common": {
@@ -645,6 +581,7 @@
         "$type": "ConfigEffectAttachMesh",
         "mesh": "EffectMesh"
       }
-    }
+    },
+    "attackAttenuation": ""
   }
 }

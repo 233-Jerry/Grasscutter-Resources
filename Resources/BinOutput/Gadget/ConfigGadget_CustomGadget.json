@@ -1,211 +1,170 @@
 {
-  /////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  大世界用 ： 大世界空花架
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   "SceneObj_Area_Common_Property_Prop_EmptyFloraShelve_01": {
     "$type": "ConfigGadget",
     "hasModel": true,
-    "uiInteract": {
-      "gadgetUIBtnCfgPath": "UI/open_custom_gadget_page",
-      "uiName": "UI_HOMEWORLD_CUSTOM_BUTTON",
-      "canInteractInCombat": false
-    },
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
+        "HP": 99999.0,
         "isLockHP": true,
-        "ignoreDamageToSelf": true
+        "FBCDFHECDNM": true
       }
     },
-    "intee": {
-      "$type": "ConfigIntee",
-      "triggerRadius": 3,
-      "triggerHeight": 3
+    "attackAttenuation": "",
+    "IHIMCPIGBOE": {
+      "HCKEJPPPBKC": "UI/open_custom_gadget_page",
+      "HJGKBIMEEEN": "UI_HOMEWORLD_CUSTOM_BUTTON",
+      "icon": "",
+      "NEADBBJLDAF": "",
+      "OMMGBOCMAMC": "",
+      "NHEGJLNIIIB": "",
+      "BKFNIPGCJIK": false
     },
     "misc": {
-      "customGadgetNode": {
-        "customGadgetType": "ActivityFlowerShelfBase",
-        "cameraSettings": {
-          "gadgetHeight": 1.7,
-          "minCameraRadius": 1,
-          "minElevation": 0
+      "ODACJNJOCEF": {
+        "HBIHNCIHCOG": {
+          "INHPPKIBBJH": 1.7000000476837158
         },
         "slotMap": {
           "FlowerShelf": {
-            "namedTransform": "FlowerShelf",
-            "slotType": "Furniture",
-            "slotConfigId": 1000
+            "LKAOAIHJIEJ": "FlowerShelf",
+            "BLMEDPIEJJJ": 1000
           }
         }
-      }
+      },
+      "GKCEMAKIKPH": ""
+    },
+    "IDAKPPKIDND": {
+      "OIOAABDOBFO": 3.0
     }
   },
-  /////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  大世界用 ： 大世界雪人身体
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   "SceneObj_Area_Common_Property_Prop_SnowmanBody_01": {
     "$type": "ConfigGadget",
     "hasModel": true,
-    "uiInteract": {
-      "gadgetUIBtnCfgPath": "UI/open_custom_gadget_page",
-      "uiName": "UI_HOMEWORLD_CUSTOM_SNOWMANBUTTON",
-      "canInteractInCombat": false
-    },
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
+        "HP": 99999.0,
         "isLockHP": true,
-        "ignoreDamageToSelf": true
+        "FBCDFHECDNM": true
       }
     },
-    "intee": {
-      "$type": "ConfigIntee",
-      "triggerRadius": 3,
-      "triggerHeight": 3
+    "attackAttenuation": "",
+    "IHIMCPIGBOE": {
+      "HCKEJPPPBKC": "UI/open_custom_gadget_page",
+      "HJGKBIMEEEN": "UI_HOMEWORLD_CUSTOM_SNOWMANBUTTON",
+      "icon": "",
+      "NEADBBJLDAF": "",
+      "OMMGBOCMAMC": "",
+      "NHEGJLNIIIB": "",
+      "BKFNIPGCJIK": false
     },
     "misc": {
-      "customGadgetNode": {
-        "customGadgetType": "ActivityWinterCampSnowmanBase",
-        "cameraSettings": {
-          "gadgetHeight": 1.7,
-          "minCameraRadius": 1,
-          "minElevation": 0
+      "ODACJNJOCEF": {
+        "HBIHNCIHCOG": {
+          "INHPPKIBBJH": 1.7000000476837158
         },
         "slotMap": {
           "Head": {
-            "namedTransform": "Head",
-            "slotType": "Furniture",
-            "slotConfigId": 11
+            "LKAOAIHJIEJ": "Head",
+            "BLMEDPIEJJJ": 11
           },
           "Hand": {
-            "namedTransform": "Hand",
-            "slotType": "Furniture",
-            "slotConfigId": 12
+            "LKAOAIHJIEJ": "Hand",
+            "BLMEDPIEJJJ": 12
           }
         }
-      }
+      },
+      "GKCEMAKIKPH": ""
+    },
+    "IDAKPPKIDND": {
+      "OIOAABDOBFO": 3.0
     }
   },
-  /////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  //  大世界用 ： 容彩祭 花盆
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   "SceneObj_Area_Dq_Property_Prop_Irodori_Miniascape_01": {
     "$type": "ConfigGadget",
     "hasModel": true,
-    "uiInteract": {
-      "gadgetUIBtnCfgPath": "UI/open_custom_gadget_page",
-      "uiName": "UI_HOMEWORLD_CUSTOM_MINIASCAPE",
-      "canInteractInCombat": false
-    },
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
+        "HP": 99999.0,
         "isLockHP": true,
-        "ignoreDamageToSelf": true
+        "FBCDFHECDNM": true
       }
     },
-    "intee": {
-      "$type": "ConfigIntee",
-      "triggerRadius": 1.2,
-      "triggerHeight": 3
+    "attackAttenuation": "",
+    "IHIMCPIGBOE": {
+      "HCKEJPPPBKC": "UI/open_custom_gadget_page",
+      "HJGKBIMEEEN": "UI_HOMEWORLD_CUSTOM_MINIASCAPE",
+      "icon": "",
+      "NEADBBJLDAF": "",
+      "OMMGBOCMAMC": "",
+      "NHEGJLNIIIB": "",
+      "BKFNIPGCJIK": false
     },
     "misc": {
-      "customGadgetNode": {
-        "cameraSettings": {
-          "gadgetHeight": 0.8,
-          "minCameraRadius": 1,
-          "minElevation": 0
+      "ODACJNJOCEF": {
+        "HBIHNCIHCOG": {
+          "INHPPKIBBJH": 0.800000011920929
         },
         "slotMap": {
           "FrontScene": {
-            "namedTransform": "FrontScene",
-            "slotConfigId": 21
+            "LKAOAIHJIEJ": "FrontScene",
+            "BLMEDPIEJJJ": 21
           },
           "BehindScene": {
-            "namedTransform": "BehindScene",
-            "slotConfigId": 22
+            "LKAOAIHJIEJ": "BehindScene",
+            "BLMEDPIEJJJ": 22
           }
         }
-      }
+      },
+      "GKCEMAKIKPH": ""
+    },
+    "IDAKPPKIDND": {
+      "BMCIBMPEDHK": 1.2000000476837158,
+      "OIOAABDOBFO": 3.0
     }
   },
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////
-  //
-  // 大世界用 ： 木刻台地插槽
-  //
-  //////////////////////////////////////////////////////////////////////////////////////////////////
   "SceneObj_Area_Xm_Property_Prop_WoodAranaraStage_Slot_01": {
     "$type": "ConfigGadget",
     "hasModel": true,
-    "uiInteract": {
-      "gadgetUIBtnCfgPath": "UI/open_custom_gadget_page",
-      //"uiName": "UI_HOMEWORLD_CUSTOM_SNOWMANBUTTON",
-      "canInteractInCombat": false,
-      "showCondTypes": ["HOST"]
-    },
     "combat": {
       "property": {
-        "useCreatorProperty": false,
-        "HP": 99999,
+        "HP": 99999.0,
         "isLockHP": true,
-        "ignoreDamageToSelf": true
+        "FBCDFHECDNM": true
       }
     },
-    "intee": {
-      "$type": "ConfigIntee",
-      "triggerRadius": 1.5,
-      "triggerHeight": 3
-    },
-    "misc": {
-      "customGadgetNode": {
-        //"customGadgetType": "ActivityWinterCampSnowmanBase",
-        "cameraSettings": {
-          "gadgetHeight": 0.5,
-          "minCameraRadius": 1,
-          "minElevation": 0
-        },
-        "slotMap": {
-          "Body": {
-            "namedTransform": "Body",
-            //"slotType": "Furniture",
-            "slotConfigId": 1001
-          }
-        }
-      }
-    },
-    // "gadgetAction":
-    // {
-    // 	"gadgetStateActionList":
-    // 	[
-    // 		//Default时可以交互
-    // 		{
-    // 			"$type": "ConfigGadgetStateEnableGadgetIntee",
-    // 			"enable": true,
-    // 			"gadgetState": "Default",
-    // 		},
-    // 		//GearStart时不能交互
-    // 		{
-    // 			"$type": "ConfigGadgetStateEnableGadgetIntee",
-    // 			"enable": false,
-    // 			"gadgetState": "GearStart",
-    // 		},
-    // 	],
-    // },
+    "attackAttenuation": "",
     "abilities": [
       {
         "abilityID": "SceneObj_Area_Xm_Property_Prop_WoodAranaraStage_Slot_01",
-        "abilityName": "SceneObj_Area_Xm_Property_Prop_WoodAranaraStage_Slot_01"
+        "abilityName": "SceneObj_Area_Xm_Property_Prop_WoodAranaraStage_Slot_01",
+        "abilityOverride": ""
       }
-    ]
+    ],
+    "IHIMCPIGBOE": {
+      "HCKEJPPPBKC": "UI/open_custom_gadget_page",
+      "HJGKBIMEEEN": "",
+      "IFBLMCCELHM": ["HOST"],
+      "icon": "",
+      "NEADBBJLDAF": "",
+      "OMMGBOCMAMC": "",
+      "NHEGJLNIIIB": "",
+      "BKFNIPGCJIK": false
+    },
+    "misc": {
+      "ODACJNJOCEF": {
+        "HBIHNCIHCOG": {},
+        "slotMap": {
+          "Body": {
+            "LKAOAIHJIEJ": "Body",
+            "BLMEDPIEJJJ": 1001
+          }
+        }
+      },
+      "GKCEMAKIKPH": ""
+    },
+    "IDAKPPKIDND": {
+      "BMCIBMPEDHK": 1.5,
+      "OIOAABDOBFO": 3.0
+    }
   }
 }
