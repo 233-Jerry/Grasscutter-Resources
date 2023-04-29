@@ -493,7 +493,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_1_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -571,7 +571,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_1_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -649,7 +649,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_1_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -695,13 +695,13 @@
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Grass_Explode",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_1_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_1_ATTACKER_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -733,24 +733,24 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_1_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_1_ATTACKER_POS",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 50.0,
                     "ignoreAttackerProperty": true,
@@ -913,7 +913,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_1_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -991,7 +991,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_1_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -1069,7 +1069,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_1_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -1115,13 +1115,13 @@
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Grass_Explode_Enhanced",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_1_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_1_ATTACKER_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -1153,24 +1153,24 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_1_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_1_ATTACKER_POS",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 50.0,
                     "ignoreAttackerProperty": true,
@@ -1266,7 +1266,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1277,14 +1277,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 18.0
+                  "radius": 18.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 50.0,
                     "ignoreAttackerProperty": true,
@@ -1308,7 +1308,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Fire_Explode_Big",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1362,7 +1362,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1373,14 +1373,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 18.0
+                  "radius": 18.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 50.0,
                     "ignoreAttackerProperty": true,
@@ -1404,7 +1404,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Fire_Explode_Big_Enhanced",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1521,7 +1521,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_3_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -1599,7 +1599,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_3_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -1677,7 +1677,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_3_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -1723,23 +1723,23 @@
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Water_Explode",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_3_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_3_ATTACKER_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "CreateGadget",
                   "RotationDampTime": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_3_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_3_ATTACKER_POS",
+                    "directionKey": ""
                   },
                   "gadgetID": 44000430,
                   "campID": 1001,
@@ -1818,7 +1818,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Sustained_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1833,7 +1833,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1844,14 +1844,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 20.0,
                     "ignoreAttackerProperty": true,
@@ -1916,7 +1916,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Sustained_Water_Enhanced",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1931,7 +1931,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1942,14 +1942,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 20.0,
                     "ignoreAttackerProperty": true,
@@ -2086,7 +2086,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_3_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -2164,7 +2164,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_3_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -2242,7 +2242,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_3_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -2288,23 +2288,23 @@
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Water_Explode_Enhanced",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_3_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_3_ATTACKER_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "CreateGadget",
                   "RotationDampTime": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_3_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_3_ATTACKER_POS",
+                    "directionKey": ""
                   },
                   "gadgetID": 44000433,
                   "campID": 1001,
@@ -2461,7 +2461,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_4_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -2539,7 +2539,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_4_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -2617,7 +2617,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_4_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -2663,13 +2663,13 @@
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Thunder",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_4_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_4_ATTACKER_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -2701,24 +2701,24 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_4_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_4_ATTACKER_POS",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "ignoreAttackerProperty": true,
@@ -2909,7 +2909,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_4_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -2987,7 +2987,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_4_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -3065,7 +3065,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_4_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -3111,13 +3111,13 @@
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Thunder_Enhanced",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_4_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_4_ATTACKER_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -3149,24 +3149,24 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_4_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_4_ATTACKER_POS",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "ignoreAttackerProperty": true,
@@ -3342,7 +3342,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3353,14 +3353,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 100.0,
                     "ignoreAttackerProperty": true,
@@ -3384,7 +3384,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Water_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3399,7 +3399,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3410,14 +3410,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 100.0,
                     "ignoreAttackerProperty": true,
@@ -3441,7 +3441,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Fire_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3456,7 +3456,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3467,14 +3467,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 100.0,
                     "ignoreAttackerProperty": true,
@@ -3498,7 +3498,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Water_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3513,7 +3513,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3524,14 +3524,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 100.0,
                     "ignoreAttackerProperty": true,
@@ -3555,7 +3555,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Ice_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3663,7 +3663,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3674,14 +3674,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 200.0,
                     "ignoreAttackerProperty": true,
@@ -3705,7 +3705,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Water_Explode_Enhanced",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3720,7 +3720,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3731,14 +3731,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 200.0,
                     "ignoreAttackerProperty": true,
@@ -3762,7 +3762,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Fire_Explode_Enhanced",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3777,7 +3777,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3788,14 +3788,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 200.0,
                     "ignoreAttackerProperty": true,
@@ -3819,7 +3819,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Water_Explode_Enhanced",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3834,7 +3834,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3845,14 +3845,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 200.0,
                     "ignoreAttackerProperty": true,
@@ -3876,7 +3876,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Ice_Explode_Enhanced",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3973,7 +3973,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3984,14 +3984,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 18.0
+                  "radius": 18.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "ignoreAttackerProperty": true,
@@ -4015,7 +4015,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Water_Explode_Big",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4112,7 +4112,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4123,14 +4123,14 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 18.0
+                  "radius": 18.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "ignoreAttackerProperty": true,
@@ -4154,7 +4154,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Water_Explode_Big_Enhanced",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4294,7 +4294,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_7_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -4372,7 +4372,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_7_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -4450,7 +4450,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_7_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -4496,13 +4496,13 @@
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Thunder",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_7_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_7_ATTACKER_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -4534,24 +4534,24 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_7_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_7_ATTACKER_POS",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 20.0,
                     "ignoreAttackerProperty": true,
@@ -4746,7 +4746,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_7_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -4824,7 +4824,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_7_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -4902,7 +4902,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_Muqadas_Potion_7_ATTACKER_FIXPOS",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.20000000298023224,
@@ -4948,13 +4948,13 @@
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_Muqadas_Potion_Thunder_Enhanced",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_7_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_7_ATTACKER_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -4986,24 +4986,24 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Muqadas_Potion_7_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Muqadas_Potion_7_ATTACKER_POS",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 20.0,
                     "ignoreAttackerProperty": true,

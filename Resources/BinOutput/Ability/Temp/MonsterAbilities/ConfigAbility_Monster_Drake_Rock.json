@@ -134,7 +134,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604011,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.7120000123977661,
               "y": 0.0,
@@ -154,7 +154,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604011,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -0.925000011920929,
               "y": 0.0,
@@ -174,7 +174,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604012,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 1.2890000343322754,
               "y": 0.0,
@@ -186,7 +186,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604012,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -1.899999976158142,
               "y": 0.0,
@@ -255,7 +255,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.25,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Fire",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Blunt"
@@ -286,7 +286,7 @@
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -325,7 +325,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.16500000655651093,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Rock",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Blunt"
@@ -356,7 +356,7 @@
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -409,7 +409,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.25,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Fire",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Blunt"
@@ -440,7 +440,7 @@
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -479,7 +479,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.16500000655651093,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Rock",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Blunt"
@@ -510,7 +510,7 @@
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -583,7 +583,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.25,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Fire",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Blunt"
@@ -611,10 +611,10 @@
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_SlapGround_Fire",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -653,7 +653,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.16500000655651093,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Rock",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Blunt"
@@ -684,7 +684,7 @@
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -737,7 +737,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.25,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Fire",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Blunt",
@@ -769,7 +769,7 @@
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -808,7 +808,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.16500000655651093,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Rock",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Blunt"
@@ -839,7 +839,7 @@
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -863,7 +863,7 @@
           "$type": "FixedMonsterRushMove",
           "target": "SelfAttackTarget",
           "toPos": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -923,7 +923,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ActCameraShake",
@@ -948,7 +948,7 @@
           "$type": "FixedMonsterRushMove",
           "target": "SelfAttackTarget",
           "toPos": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1008,7 +1008,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ActCameraShake",
@@ -1103,7 +1103,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.30000001192092896,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -1159,7 +1159,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.30000001192092896,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -1215,7 +1215,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.30000001192092896,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -1271,7 +1271,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.30000001192092896,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -1327,7 +1327,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.30000001192092896,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -1389,7 +1389,7 @@
               "target": "Caster",
               "bulletID": 42604017,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1563,7 +1563,7 @@
           "$type": "FixedMonsterRushMove",
           "target": "SelfAttackTarget",
           "toPos": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1760,12 +1760,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_FireEnhanceState_LeftHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_FireEnhanceState_RightHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1833,7 +1833,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ActCameraShake",
@@ -1894,7 +1894,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ActCameraShake",
@@ -1938,7 +1938,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_CrushAtkCharging",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -1951,7 +1951,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_CrushAtkCharging_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1972,7 +1972,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_JumpAtk_FireExtra",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -2035,7 +2035,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_JumpAtkFinal_FireExtra",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -2094,7 +2094,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2105,7 +2105,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 6.5,
+              "radius": 6.5,
               "innerRadius": 4.5
             },
             "attackInfo": {
@@ -2114,7 +2114,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -2149,7 +2149,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2160,7 +2160,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 8.5,
+              "radius": 8.5,
               "innerRadius": 6.5
             },
             "attackInfo": {
@@ -2169,7 +2169,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.699999988079071,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -2360,12 +2360,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_IceEnhanceState_LeftHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_IceEnhanceState_RightHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2416,7 +2416,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_CrushAtkCharging",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -2429,7 +2429,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_CrushAtkCharging_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2463,13 +2463,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2494,7 +2494,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 7.800000190734863,
               "y": 0.0,
@@ -2519,7 +2519,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -7.800000190734863,
               "y": 0.0,
@@ -2553,7 +2553,7 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_IceEnhance_Trigger",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.7120000123977661,
               "y": 0.0,
@@ -2570,13 +2570,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 6.0,
               "y": 0.0,
@@ -2601,7 +2601,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 5.196000099182129,
               "y": 0.0,
@@ -2626,7 +2626,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 5.196000099182129,
               "y": 0.0,
@@ -2660,7 +2660,7 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_IceEnhance_Trigger",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -0.925000011920929,
               "y": 0.0,
@@ -2677,13 +2677,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -6.0,
               "y": 0.0,
@@ -2708,7 +2708,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -5.196000099182129,
               "y": 0.0,
@@ -2733,7 +2733,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -5.196000099182129,
               "y": 0.0,
@@ -2784,7 +2784,7 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2807,13 +2807,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2838,7 +2838,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 2.0,
               "y": 0.0,
@@ -2863,7 +2863,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -2.0,
               "y": 0.0,
@@ -2897,7 +2897,7 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_IceEnhance_Trigger",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -0.23999999463558197,
               "y": 0.0,
@@ -2914,13 +2914,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2945,7 +2945,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 7.800000190734863,
               "y": 0.0,
@@ -2970,7 +2970,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -7.800000190734863,
               "y": 0.0,
@@ -3004,7 +3004,7 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_IceEnhance_Trigger",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.20999999344348907,
               "y": 0.0,
@@ -3021,13 +3021,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -3052,7 +3052,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 10.399999618530273,
               "y": 0.0,
@@ -3077,7 +3077,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -10.399999618530273,
               "y": 0.0,
@@ -3114,7 +3114,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_IceEnhance_Gadget",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3129,13 +3129,13 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_IceEnhance_GadgetExplode",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -3145,7 +3145,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -3153,7 +3153,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.3499999940395355,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -3340,12 +3340,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_WaterEnhanceState_LeftHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_WaterEnhanceState_RightHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3396,7 +3396,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_CrushAtkCharging",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -3409,7 +3409,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_CrushAtkCharging_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3443,7 +3443,7 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -3479,7 +3479,7 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -3515,7 +3515,7 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -3551,7 +3551,7 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3574,7 +3574,7 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -3610,7 +3610,7 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -3646,7 +3646,7 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -3689,7 +3689,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_WaterEnhance_Alert01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3703,7 +3703,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_WaterEnhance_Alert01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3764,7 +3764,7 @@
               ],
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -3891,20 +3891,20 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_WaterEnhance_Alert02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_WaterEnhance_Impulse02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3914,7 +3914,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3922,7 +3922,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -4116,12 +4116,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_ElecEnhanceState_LeftHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_ElecEnhanceState_RightHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4172,7 +4172,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_CrushAtkCharging",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -4185,7 +4185,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_CrushAtkCharging_Elec",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4202,7 +4202,7 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_ElecEnhance_Trigger",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -0.5659999847412109,
               "y": 0.0,
@@ -4219,13 +4219,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -0.5659999847412109,
               "y": 0.5,
@@ -4247,7 +4247,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -0.5659999847412109,
               "y": 0.5,
@@ -4278,7 +4278,7 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_ElecEnhance_Trigger",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.7120000123977661,
               "y": 0.0,
@@ -4295,13 +4295,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.7120000123977661,
               "y": 0.5,
@@ -4332,7 +4332,7 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_ElecEnhance_Trigger",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -0.925000011920929,
               "y": 0.0,
@@ -4349,13 +4349,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -0.925000011920929,
               "y": 0.5,
@@ -4403,13 +4403,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 1.2890000343322754,
               "y": 0.0,
@@ -4431,7 +4431,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 1.2890000343322754,
               "y": 0.0,
@@ -4453,7 +4453,7 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_ElecEnhance_Trigger",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -1.899999976158142,
               "y": 0.0,
@@ -4470,13 +4470,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -1.899999976158142,
               "y": 0.0,
@@ -4498,7 +4498,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -1.899999976158142,
               "y": 0.0,
@@ -4529,7 +4529,7 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_ElecEnhance_Trigger",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -0.23999999463558197,
               "y": 0.0,
@@ -4546,13 +4546,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.5,
@@ -4574,7 +4574,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.5,
@@ -4596,7 +4596,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.5,
@@ -4627,7 +4627,7 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_ElecEnhance_Trigger",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.20999999344348907,
               "y": 0.0,
@@ -4644,13 +4644,13 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.20999999344348907,
               "y": 0.5,
@@ -4672,7 +4672,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.20999999344348907,
               "y": 0.5,
@@ -4694,7 +4694,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.20999999344348907,
               "y": 0.5,
@@ -4716,7 +4716,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42604015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.20999999344348907,
               "y": 0.5,
@@ -4750,7 +4750,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_ElecEnhance_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4771,7 +4771,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.30000001192092896
+              "radius": 0.30000001192092896
             },
             "attackInfo": {
               "attackTag": "",
@@ -4779,7 +4779,7 @@
               "attenuationGroup": "Monster_Konungmathr_Attenuation_2",
               "attackProperty": {
                 "damagePercentage": 0.30000001192092896,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0
               },
@@ -4861,7 +4861,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Rock_ElecEnhance_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4887,7 +4887,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.30000001192092896
+              "radius": 0.30000001192092896
             },
             "attackInfo": {
               "attackTag": "",
@@ -4895,7 +4895,7 @@
               "attenuationGroup": "Monster_Konungmathr_Attenuation_2",
               "attackProperty": {
                 "damagePercentage": 0.30000001192092896,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0
               },

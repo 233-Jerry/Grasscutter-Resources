@@ -353,7 +353,7 @@
                 },
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -492,7 +492,7 @@
                   "$type": "NFGKOJBHMLL"
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -510,7 +510,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_EnergyCore",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -521,7 +521,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_CoreStandbyFree",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "HideUIBillBoard",
@@ -548,7 +548,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_CoreStandby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1040,7 +1040,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -1192,7 +1192,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RebornBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalPos",
@@ -1263,11 +1263,11 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "RebornPillarPos1",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "RebornPillarPos1",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -1281,11 +1281,11 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "RebornPillarPos2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "RebornPillarPos2",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -1299,11 +1299,11 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "RebornPillarPos3",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "RebornPillarPos3",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveUniqueModifier",
@@ -1332,20 +1332,20 @@
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "RebornPillarPos1",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "RebornPillarPos1",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1353,7 +1353,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -1383,20 +1383,20 @@
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "RebornPillarPos2",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "RebornPillarPos2",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1404,7 +1404,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -1434,20 +1434,20 @@
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "RebornPillarPos3",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "RebornPillarPos3",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1455,7 +1455,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -1485,9 +1485,9 @@
               ],
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "RebornPillarPos1",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "RebornPillarPos1",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42004212,
@@ -1506,9 +1506,9 @@
               ],
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "RebornPillarPos2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "RebornPillarPos2",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42004212,
@@ -1527,9 +1527,9 @@
               ],
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "RebornPillarPos3",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "RebornPillarPos3",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42004212,
@@ -1555,7 +1555,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RebornLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorBool",
@@ -1726,12 +1726,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RebornPillarLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1775,7 +1775,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddElementDurability",
@@ -1826,7 +1826,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -1837,7 +1837,7 @@
                 }
               },
               "height": 3.5,
-              "BMCPFKAEOJB": 2.5
+              "radius": 2.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -1845,7 +1845,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
@@ -1868,7 +1868,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarDie",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1929,7 +1929,7 @@
                   "$type": "SetGlobalPos",
                   "key": "StonePillarPos1",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 5.0
                   },
@@ -1939,7 +1939,7 @@
                   "$type": "SetGlobalPos",
                   "key": "StonePillarPos2",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1959,7 +1959,7 @@
                   "$type": "SetGlobalPos",
                   "key": "StonePillarPos3",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": -16.0,
                       "y": 0.0,
@@ -1979,7 +1979,7 @@
                   "$type": "SetGlobalPos",
                   "key": "StonePillarPos4",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 16.0,
                       "y": 0.0,
@@ -2073,60 +2073,60 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "StonePillarPos1",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "StonePillarPos1",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "StonePillarPos2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "StonePillarPos2",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "StonePillarPos3",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "StonePillarPos3",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "StonePillarPos4",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "StonePillarPos4",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "StonePillarPos1",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "StonePillarPos1",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2134,7 +2134,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2156,20 +2156,20 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "StonePillarPos2",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "StonePillarPos2",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2177,7 +2177,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2199,20 +2199,20 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "StonePillarPos3",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "StonePillarPos3",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2220,7 +2220,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2242,20 +2242,20 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "StonePillarPos4",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "StonePillarPos4",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2263,7 +2263,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2301,7 +2301,7 @@
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 5.0
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -2321,7 +2321,7 @@
                   "actionPointID": 1
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -2341,7 +2341,7 @@
                   "actionPointID": 1
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -2361,13 +2361,13 @@
                   "actionPointID": 1
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2380,7 +2380,7 @@
                     "HKNFOKFIKAG": 5.0
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2388,7 +2388,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2410,7 +2410,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "MIAJPKDCOPA",
@@ -2428,7 +2428,7 @@
                     }
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2436,7 +2436,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2458,7 +2458,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "MIAJPKDCOPA",
@@ -2476,7 +2476,7 @@
                     }
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2484,7 +2484,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2506,7 +2506,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "MIAJPKDCOPA",
@@ -2524,7 +2524,7 @@
                     }
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2532,7 +2532,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2603,20 +2603,20 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "StonePillarPos1",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "StonePillarPos1",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2624,7 +2624,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2646,20 +2646,20 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "StonePillarPos2",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "StonePillarPos2",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2667,7 +2667,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2689,20 +2689,20 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "StonePillarPos3",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "StonePillarPos3",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2710,7 +2710,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2732,20 +2732,20 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "StonePillarPos4",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "StonePillarPos4",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2753,7 +2753,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2775,9 +2775,9 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "StonePillarPos1",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "StonePillarPos1",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42004201,
@@ -2788,9 +2788,9 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "StonePillarPos2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "StonePillarPos2",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42004201,
@@ -2801,9 +2801,9 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "StonePillarPos3",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "StonePillarPos3",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42004201,
@@ -2814,9 +2814,9 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "StonePillarPos4",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "StonePillarPos4",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42004201,
@@ -2834,7 +2834,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2847,7 +2847,7 @@
                     "HKNFOKFIKAG": 5.0
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2855,7 +2855,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2877,7 +2877,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "MIAJPKDCOPA",
@@ -2895,7 +2895,7 @@
                     }
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2903,7 +2903,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2925,7 +2925,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "MIAJPKDCOPA",
@@ -2943,7 +2943,7 @@
                     }
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2951,7 +2951,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2973,7 +2973,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "MIAJPKDCOPA",
@@ -2991,7 +2991,7 @@
                     }
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2999,7 +2999,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -3209,7 +3209,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3281,7 +3281,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddElementDurability",
@@ -3343,7 +3343,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3446,7 +3446,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddElementDurability",
@@ -3497,7 +3497,7 @@
               "target": "Caster",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -3527,7 +3527,7 @@
               "target": "Caster",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -3623,7 +3623,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -3634,7 +3634,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 2.5
+              "radius": 2.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -3642,7 +3642,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.25,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
@@ -3675,7 +3675,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_PillarDie",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AddGlobalValue",
@@ -3714,7 +3714,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RockHeart",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3774,7 +3774,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RockHeartDie",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -3784,7 +3784,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RockHeartBeHit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddElementDurability",
@@ -3833,7 +3833,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RockHeartDie",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -3882,7 +3882,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_ShieldDie",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -3963,7 +3963,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_ShieldLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3987,7 +3987,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_SpikeAtkLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -4020,7 +4020,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_SpikeLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4056,7 +4056,7 @@
               "$type": "CreateGadget",
               "target": "Applier",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -4086,7 +4086,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_SpikeAlert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -4107,13 +4107,13 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "MJLCPIAKNCP": "Both",
                   "born": {
@@ -4125,7 +4125,7 @@
                     }
                   },
                   "height": 1.5,
-                  "BMCPFKAEOJB": 3.5
+                  "radius": 3.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4133,7 +4133,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -4182,7 +4182,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RockWave",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4208,7 +4208,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Rock",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -4533,7 +4533,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -4545,7 +4545,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 8.5
+              "radius": 8.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -4553,7 +4553,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -4591,7 +4591,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_ChargeAtkWave",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -4604,7 +4604,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -4612,7 +4612,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -4661,7 +4661,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_StoneBallCircle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4678,7 +4678,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5035,7 +5035,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_StoneBallLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -5060,7 +5060,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 0.75
+                  "radius": 0.75
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5068,7 +5068,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -5090,7 +5090,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -5110,7 +5110,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_StoneBallShield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -5125,7 +5125,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -5220,7 +5220,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -5243,7 +5243,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 4.0,
                       "y": 0.0,
@@ -5266,7 +5266,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": -4.0,
                       "y": 0.0,
@@ -5289,7 +5289,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -5312,7 +5312,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": -4.0,
                       "y": 0.0,
@@ -5335,7 +5335,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 4.0,
                       "y": 0.0,
@@ -5358,7 +5358,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": -18.0,
                       "y": 0.0,
@@ -5381,7 +5381,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": -22.0,
                       "y": 0.0,
@@ -5404,7 +5404,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": -14.0,
                       "y": 0.0,
@@ -5427,7 +5427,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 18.0,
                       "y": 0.0,
@@ -5450,7 +5450,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 22.0,
                       "y": 0.0,
@@ -5473,7 +5473,7 @@
                   "target": "Target",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 14.0,
                       "y": 0.0,
@@ -5531,7 +5531,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RockFallAlert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -5550,7 +5550,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RockFall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -5572,7 +5572,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.25,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Rock",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Blunt",
@@ -5610,7 +5610,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5702,7 +5702,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RockFall_Bullet02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -5712,7 +5712,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -5724,7 +5724,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -5732,7 +5732,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.75,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -5965,7 +5965,7 @@
               "$type": "TryFindBlinkPointByBorn",
               "target": "Target",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 3.0,
@@ -6146,7 +6146,7 @@
               "$type": "TryFindBlinkPointByBorn",
               "target": "Target",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 3.0,
@@ -6194,7 +6194,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "IOHLPEPEKAP",
@@ -6205,7 +6205,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -6213,7 +6213,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
@@ -6224,7 +6224,7 @@
                 "hitImpulseType": "",
                 "overrideHitImpulse": {
                   "hitLevel": "Air",
-                  "IPHCEFBMJAJ": 900.0,
+                  "hitImpulseX": 900.0,
                   "hitImpulseY": 400.0
                 },
                 "hitHaltTime": 0.05000000074505806,
@@ -6280,7 +6280,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_StoneArrayLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Predicated",
@@ -6360,7 +6360,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6392,7 +6392,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -6448,7 +6448,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Rock",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -6496,7 +6496,7 @@
                     0.10000000149011612,
                     "ADD"
                   ],
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Rock",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -6547,11 +6547,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_RockHeartBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "RockHeartPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "RockHeartPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -6559,9 +6559,9 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "RockHeartPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "RockHeartPos",
+                "directionKey": ""
               },
               "gadgetID": 42004202,
               "campID": 4001
@@ -6987,7 +6987,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_PillarCreateBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -7004,7 +7004,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_PillarCreateLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -7035,14 +7035,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_PillarCreateAct",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_PillarCreateAct",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7230,7 +7230,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Rock_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -7290,7 +7290,7 @@
               "$type": "AttachEffect",
               "target": "CurLocalAvatar",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_CrystalSeed_Absorb_Rock",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7312,7 +7312,7 @@
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Rock_Shield_Disappear",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Rock_Shield",
@@ -7324,7 +7324,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Absorb_Rock_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -7335,7 +7335,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Rock_Shield_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7387,7 +7387,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Rock_BeHit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7427,14 +7427,14 @@
                 "$type": "ConfigBornByCollisionPoint",
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Rock_Seed_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7446,7 +7446,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Rock_Seed_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -7512,7 +7512,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_PillarCreateBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -7529,7 +7529,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_PillarCreateLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -7560,14 +7560,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_PillarCreateAct",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_PillarCreateAct",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7624,7 +7624,7 @@
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -7632,7 +7632,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -7643,7 +7643,7 @@
                     }
                   },
                   "height": 1.5,
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -7651,7 +7651,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -7735,7 +7735,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Rock_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -7898,7 +7898,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7931,7 +7931,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -7947,7 +7947,7 @@
                 },
                 "attachPointName": "StoneStormAttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -8159,7 +8159,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.6000000238418579,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Rock",
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Default",
@@ -8170,7 +8170,7 @@
                   "hitImpulseType": "LV4",
                   "overrideHitImpulse": {
                     "hitLevel": "Heavy",
-                    "IPHCEFBMJAJ": 300.0,
+                    "hitImpulseX": 300.0,
                     "hitImpulseY": 600.0
                   },
                   "hitHaltTimeScale": 0.05000000074505806
@@ -8188,15 +8188,15 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 10.0,
                   "y": 0.0,
                   "z": 10.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_EFFIGYELITE_CENTERPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_EFFIGYELITE_CENTERPOS_",
+                "directionKey": ""
               },
               "gadgetID": 42004219,
               "campID": 4001,
@@ -8207,15 +8207,15 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": -10.0,
                   "y": 0.0,
                   "z": 10.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_EFFIGYELITE_CENTERPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_EFFIGYELITE_CENTERPOS_",
+                "directionKey": ""
               },
               "gadgetID": 42004219,
               "campID": 4001,
@@ -8226,15 +8226,15 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 10.0,
                   "y": 0.0,
                   "z": -10.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_EFFIGYELITE_CENTERPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_EFFIGYELITE_CENTERPOS_",
+                "directionKey": ""
               },
               "gadgetID": 42004219,
               "campID": 4001,
@@ -8245,15 +8245,15 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": -10.0,
                   "y": 0.0,
                   "z": -10.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_EFFIGYELITE_CENTERPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_EFFIGYELITE_CENTERPOS_",
+                "directionKey": ""
               },
               "gadgetID": 42004219,
               "campID": 4001,
@@ -8422,7 +8422,7 @@
                 "attachPointName": "RootNode"
               },
               "scale": 1.5,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -8465,7 +8465,7 @@
             "BJCIHELGKLP": true
           },
           "scale": 1.5,
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -8482,7 +8482,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_StoneStorm_Absorb",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -8580,7 +8580,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_StoneBallCircle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -8597,7 +8597,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -8958,7 +8958,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_StoneBallEnergyLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -9091,7 +9091,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -9105,7 +9105,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Predicated",
@@ -9222,7 +9222,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -9324,7 +9324,7 @@
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_StoneBallLoop",
           "scale": 2.0,
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -9349,7 +9349,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 0.20000000298023224
+                  "radius": 0.20000000298023224
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -9357,7 +9357,7 @@
                   "attenuationGroup": "Monster_Effigy_Elite_Rock_StoneBall",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -9368,7 +9368,7 @@
                     "hitImpulseType": "LV1",
                     "overrideHitImpulse": {
                       "hitLevel": "Shake",
-                      "IPHCEFBMJAJ": 200.0,
+                      "hitImpulseX": 200.0,
                       "hitImpulseY": 0.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -9384,7 +9384,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -9505,7 +9505,7 @@
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_DestroyPillarEnergy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -9533,7 +9533,7 @@
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_DestroyPillarExplode",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAbility",
@@ -9633,7 +9633,7 @@
                           "z": 0.0
                         }
                       },
-                      "BMCPFKAEOJB": 7.0
+                      "radius": 7.0
                     },
                     "attackInfo": {
                       "attackTag": "",
@@ -9641,7 +9641,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 1.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Rock",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Default",
@@ -9652,7 +9652,7 @@
                         "hitImpulseType": "LV6",
                         "overrideHitImpulse": {
                           "hitLevel": "Air",
-                          "IPHCEFBMJAJ": 800.0,
+                          "hitImpulseX": 800.0,
                           "hitImpulseY": 800.0
                         },
                         "hitHaltTimeScale": 0.05000000074505806
@@ -9693,7 +9693,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_SpikeAtkLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -9761,7 +9761,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_SpikeLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -9856,7 +9856,7 @@
               "$type": "CreateGadget",
               "target": "Applier",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -9934,7 +9934,7 @@
               "$type": "CreateGadget",
               "target": "Applier",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -10012,7 +10012,7 @@
               "$type": "CreateGadget",
               "target": "Applier",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -10048,7 +10048,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_SpikeAlert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -10064,13 +10064,13 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "MJLCPIAKNCP": "Both",
                   "born": {
@@ -10082,7 +10082,7 @@
                     }
                   },
                   "height": 1.5,
-                  "BMCPFKAEOJB": 3.5
+                  "radius": 3.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -10090,7 +10090,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -10139,7 +10139,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_Elite_SpikeAlert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -10155,13 +10155,13 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "MJLCPIAKNCP": "Both",
                   "born": {
@@ -10173,7 +10173,7 @@
                     }
                   },
                   "height": 1.5,
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -10181,7 +10181,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.75,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -10238,7 +10238,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_ShieldDie",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -10323,7 +10323,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Rock_ShieldLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

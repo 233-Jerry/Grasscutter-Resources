@@ -19,9 +19,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StonePillar_01_Destroy",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -50,9 +50,9 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StonePillar_01_Broken",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -85,9 +85,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StoneWall_01_Destroy",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -116,9 +116,9 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StoneWall_01_Broken",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -151,9 +151,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StonePile_01_Destroy",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -185,7 +185,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -214,14 +214,14 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -229,7 +229,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 50.0
                   },
@@ -238,7 +238,7 @@
                     "hitImpulseType": "LV6",
                     "overrideHitImpulse": {
                       "hitLevel": "Air",
-                      "IPHCEFBMJAJ": 10.0,
+                      "hitImpulseX": 10.0,
                       "hitImpulseY": 10.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -258,7 +258,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -267,7 +267,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -303,9 +303,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RuinStonePile_01_Destroy",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -334,9 +334,9 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StoneWall_01_Broken",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -369,9 +369,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StoneWall_01_Destroy",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -400,9 +400,9 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StoneWall_01_Broken",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -435,9 +435,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StoneWall_01_Destroy",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -466,9 +466,9 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StoneWall_01_Broken",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -541,7 +541,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 30.0,
                 "strikeType": "Default",
                 "enBreak": 900.0
@@ -551,7 +551,7 @@
                 "hitImpulseType": "LV4",
                 "overrideHitImpulse": {
                   "hitLevel": "Air",
-                  "IPHCEFBMJAJ": 800.0,
+                  "hitImpulseX": 800.0,
                   "hitImpulseY": 0.0
                 },
                 "retreatType": "ByHitDirection",
@@ -584,9 +584,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Dungeon_StonePillar_Destory",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -615,14 +615,14 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StoneWall_01_Broken",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -655,9 +655,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Dungeon_StoneStack01_Destory",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -686,14 +686,14 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StoneWall_01_Broken",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -3.0,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -718,7 +718,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_FlyingStone_Disapear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -732,7 +732,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_FlyingStone_Appear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -753,7 +753,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_FlyingStoneBlue_Disapear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -767,7 +767,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_FlyingStoneBlue_Appear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -796,9 +796,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StonePillar_01_Destroy",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -815,9 +815,9 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StonePillar_01_Broken",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -963,7 +963,7 @@
                     "born": {
                       "$type": "ConfigBornBySelf"
                     },
-                    "BMCPFKAEOJB": 2.0
+                    "radius": 2.0
                   },
                   "PHFBEPGCKAA": true
                 }
@@ -976,7 +976,7 @@
             "DAPKLNIFPID": true,
             "attachPointName": "attachPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf",
@@ -992,7 +992,7 @@
                     "born": {
                       "$type": "ConfigBornBySelf"
                     },
-                    "BMCPFKAEOJB": 2.0
+                    "radius": 2.0
                   },
                   "PHFBEPGCKAA": true
                 }
@@ -1022,7 +1022,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ScenObj_WaterStoneObstacle_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -1054,7 +1054,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

@@ -259,9 +259,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StoneWall_01_Destroy",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -290,9 +290,9 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_StoneWall_01_Broken",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -347,7 +347,7 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -363,7 +363,7 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -384,7 +384,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Quest_Foliage_Shrub_01_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "KillSelf"
@@ -570,7 +570,7 @@
                 "attachPointName": "AttachPoint",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -634,7 +634,7 @@
                 "attachPointName": "AttachPoint",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -716,7 +716,7 @@
                 "attachPointName": "AttachPoint",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -780,7 +780,7 @@
                 "attachPointName": "AttachPoint",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -862,7 +862,7 @@
                 "attachPointName": "AttachPoint",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -926,7 +926,7 @@
                 "attachPointName": "AttachPoint",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -970,7 +970,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "Hitbox"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -999,7 +999,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "Hitbox"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1024,7 +1024,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Quest_SiteInteract_Event",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -1060,7 +1060,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Quest_SiteInteract_Event",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -1137,7 +1137,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Burning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1178,7 +1178,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_QunyugeEngineCore_01_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1213,7 +1213,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ControlBoard_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
@@ -1227,7 +1227,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ControlBoard_01_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
@@ -1359,19 +1359,19 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_01_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_01_06",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_01_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1382,7 +1382,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_01_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1396,7 +1396,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_01_04",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1459,7 +1459,7 @@
                 "attachPointName": "attachPoint",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -1575,7 +1575,7 @@
                 "attachPointName": "attachPoint",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -1749,14 +1749,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_01_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_01_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1767,7 +1767,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_01_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1781,7 +1781,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_01_04",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1844,7 +1844,7 @@
                 "attachPointName": "attachPoint",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -1960,7 +1960,7 @@
                 "attachPointName": "attachPoint",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             }
           ]
@@ -2128,19 +2128,19 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_02_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_02_06",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_02_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2151,7 +2151,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_02_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2165,7 +2165,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_02_04",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2228,7 +2228,7 @@
                 "attachPointName": "attachPoint",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -2344,7 +2344,7 @@
                 "attachPointName": "attachPoint",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -2518,19 +2518,19 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_03_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_03_06",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_03_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2541,7 +2541,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_03_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2555,7 +2555,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_KnowledgeJar_03_04",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2618,7 +2618,7 @@
                 "attachPointName": "attachPoint",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -2734,7 +2734,7 @@
                 "attachPointName": "attachPoint",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -2842,7 +2842,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "HitBox"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2854,7 +2854,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Scarecrow_01_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "LoseHP",
@@ -2883,7 +2883,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Scarecrow_01_Destroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2919,7 +2919,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "HitBox"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2931,7 +2931,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Scarecrow_01_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CallLuaTask",
@@ -2966,7 +2966,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Scarecrow_02_Destroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3021,7 +3021,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hole_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3190,7 +3190,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TrainerCompetitionBead_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3235,7 +3235,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TrainerCompetitionBead_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3292,7 +3292,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_MysticalCrystalDefault",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3308,7 +3308,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_MysticalCrystalBroken",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
@@ -3344,7 +3344,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_MysticalCrystalActive",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3372,7 +3372,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_VillageRoom_Light_01",
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "isPlatformDependent": true
             }
           ]
@@ -3461,7 +3461,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Empty_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3472,7 +3472,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Empty_Loop02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3502,7 +3502,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Quest_SoulBranch_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3533,7 +3533,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Quest_SoulBranch_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -3586,7 +3586,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DesertCompetitionMachine_Flash",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3649,7 +3649,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Area_Xm_Property_Ani_Prop_TalentCrown_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3707,14 +3707,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_QuestSandWall_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_QuestSandWall_01_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3739,14 +3739,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_QuestSandWall_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_QuestSandWall_02_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

@@ -18,7 +18,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -74,7 +74,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -175,7 +175,7 @@
                     "Diona_AimShoot_Enchanted_Ratio",
                     "MUL"
                   ],
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThan"
                 }
               ],
@@ -188,7 +188,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "WindMagic_Arrow_Glow_WithoutWind_Once"
@@ -203,12 +203,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ExtraAttack_Glow_Once_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ExtraAttack_Glow_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -227,7 +227,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ExtraAttack_Glow_Once_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -239,7 +239,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ExtraAttack_Glow_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -252,7 +252,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ExtraAttack_Glow_Once_Talent",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -265,7 +265,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ExtraAttack_Glow_Loop_Talent",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -552,7 +552,7 @@
                 "Diona_AimShoot_Enchanted_Ratio",
                 "MUL"
               ],
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThan"
             }
           ],
@@ -583,7 +583,7 @@
                 "Diona_AimShoot_Enchanted_Ratio",
                 "MUL"
               ],
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             }
           ],
@@ -614,7 +614,7 @@
                 "Diona_AimShoot_Enchanted_Ratio",
                 "MUL"
               ],
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThan"
             }
           ],
@@ -638,7 +638,7 @@
                 "Diona_AimShoot_Enchanted_Ratio",
                 "MUL"
               ],
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThan"
             }
           ],
@@ -652,7 +652,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -665,7 +665,7 @@
                 "Diona_AimShoot_Enchanted_Ratio",
                 "MUL"
               ],
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             }
           ],
@@ -679,7 +679,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -830,7 +830,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Ganyu_Arrow_Fly_Big",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -871,7 +871,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "DamageWithoutIce",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 10.0,
@@ -919,7 +919,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Ganyu_Arrow_Fly_Ice",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -960,7 +960,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "DamageWithIce",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -1034,7 +1034,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1075,7 +1075,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1116,7 +1116,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1157,7 +1157,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1197,7 +1197,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Venti_Arrow_Fly_Small",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1222,7 +1222,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Venti_Arrow_Fly_Big",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1293,7 +1293,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1324,7 +1324,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1357,7 +1357,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ElementalArt_Press",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "Predicated",
@@ -1526,7 +1526,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "Predicated",
@@ -2040,12 +2040,12 @@
                   "RotationDampTime": true,
                   "configID": 2022,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "JCJGOCMLFIM": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_Diona_GenerateElemBall_CustomPos",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Diona_GenerateElemBall_CustomPos",
+                    "directionKey": ""
                   },
                   "value": 1.0,
                   "baseEnergy": 3.0
@@ -2102,7 +2102,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -2110,7 +2110,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ElementalArt_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce"
@@ -2144,7 +2144,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ElementalArt_Bullet_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerSetVisible"
@@ -2160,7 +2160,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ElementalArt_Bullet_Trail_Big",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerSetVisible"
@@ -2220,7 +2220,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_IceShield_Born",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -2228,7 +2228,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Diona_PermanentSkill_1"
+                  "talentParam": "Diona_PermanentSkill_1"
                 }
               ],
               "modifierName": "UNIQUE_Diona_PermanentSkill_1_Handler"
@@ -2238,7 +2238,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_IceShield_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2323,7 +2323,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Art"],
-              "MKLAMNDEDGB": "Constellation_AttackUp_Ratio"
+              "damagePercentageRatio": "Constellation_AttackUp_Ratio"
             }
           ]
         },
@@ -2420,7 +2420,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_IceShield_Born",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -2430,7 +2430,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Diona_PermanentSkill_1",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "UNIQUE_Diona_PermanentSkill_1_Handler"
@@ -2446,7 +2446,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_IceShield_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2504,7 +2504,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Diona_PermanentSkill_1"
+              "talentParam": "Diona_PermanentSkill_1"
             }
           ],
           "ratio": 1.0,
@@ -2528,7 +2528,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Diona_Constellation_2"
+              "talentParam": "Diona_Constellation_2"
             }
           ],
           "modifierName": "Diona_Constellation_2_Handler"
@@ -2563,7 +2563,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Diona_Constellation_2"
+              "talentParam": "Diona_Constellation_2"
             }
           ],
           "modifierName": "UNIQUE_Diona_Constellation_2_RemoteTeamShield_Timer"
@@ -2665,12 +2665,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ElementalArt_Flask_HoldupStandby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ElementalBurst_Cast",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2747,20 +2747,20 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ElementalArt_Flask_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ElementalBurst_Flask_Explode",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "EDLHKEAJOOL": 0.800000011920929,
               "born": {
@@ -2772,7 +2772,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "BMCPFKAEOJB": 3.0,
+              "radius": 3.0,
               "MKOMGAACIPB": "Clockwise"
             },
             "attackInfo": {
@@ -2781,7 +2781,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Elemental_Burst_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2824,12 +2824,12 @@
           "$type": "CreateGadget",
           "RotationDampTime": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
             "JCJGOCMLFIM": true,
             "HKNFOKFIKAG": 3.0,
-            "FNMFBPGNEKD": "_ABILITY_Diona_IceWine_Fog_CustomPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Diona_IceWine_Fog_CustomPos",
+            "directionKey": ""
           },
           "gadgetID": 41039015,
           "campID": 1001,
@@ -2862,7 +2862,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ElementalBurst_IceWine_Fog",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2884,7 +2884,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2894,7 +2894,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 6.5
+                  "radius": 6.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2902,7 +2902,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Burst_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -2930,7 +2930,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Diona_PermanentSkill_2"
+                  "talentParam": "Diona_PermanentSkill_2"
                 },
                 {
                   "$type": "ByEntityTypes",
@@ -2956,7 +2956,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Diona_PermanentSkill_2"
+                  "talentParam": "Diona_PermanentSkill_2"
                 },
                 {
                   "$type": "ByEntityTypes",
@@ -3262,7 +3262,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Diona_Constellation_4"
+              "talentParam": "Diona_Constellation_4"
             }
           ],
           "modifierName": "AimShoot_Enchanted_Handler"
@@ -3272,7 +3272,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Diona_Constellation_6"
+              "talentParam": "Diona_Constellation_6"
             }
           ],
           "modifierName": "Constellation_6_Modifier"
@@ -3285,7 +3285,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Diona_Constellation_1"
+              "talentParam": "Diona_Constellation_1"
             },
             {
               "$type": "LMICKJKPLNP"
@@ -3305,31 +3305,31 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01"],
           "damagePercentage": "NormalAttack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02"],
           "damagePercentage": "NormalAttack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03"],
           "damagePercentage": "NormalAttack_03_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04"],
           "damagePercentage": "NormalAttack_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK05"],
           "damagePercentage": "NormalAttack_05_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -3445,7 +3445,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3456,7 +3456,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3502,7 +3502,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3510,7 +3510,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Pierce",
                     "enBreak": 10.0,
@@ -3660,11 +3660,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3825,16 +3825,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3842,7 +3842,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3850,7 +3850,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 50.0,
@@ -3872,15 +3872,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3888,7 +3888,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3896,7 +3896,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 100.0,
@@ -3918,12 +3918,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3932,11 +3932,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

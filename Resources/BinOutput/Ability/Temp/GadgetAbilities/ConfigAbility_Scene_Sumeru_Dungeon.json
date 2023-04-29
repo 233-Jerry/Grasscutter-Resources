@@ -63,14 +63,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BubbleShoot_01_Bubble",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BubbleShoot_01_Bubble_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -81,7 +81,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BubbleShoot_01_Bubble_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -142,7 +142,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BouncingMushroom_01_Appear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -151,7 +151,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BouncingMushroom_01_Disappear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -182,7 +182,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BouncingMushroom_01_Appear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -248,7 +248,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BouncingMushroom_01_Disappear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -481,7 +481,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Flying_Orb_Ridicule",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -764,7 +764,7 @@
                 "tag": "SceneLook"
               },
               "toPos": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             }
           ]
@@ -806,7 +806,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantOperator_01_Stay",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
@@ -824,7 +824,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantOperator_01_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
@@ -842,7 +842,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantOperator_01_Idle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
@@ -903,7 +903,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_NutTransformPlatform_Appear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -925,7 +925,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_NutTransformPlatform_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -959,7 +959,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_NutTransformPlatform_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -975,7 +975,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_NutTransformPlatform_Appear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1116,7 +1116,7 @@
                   "attenuationGroup": "SceneObj_ThunderFloor",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -1162,7 +1162,7 @@
                   "attenuationGroup": "SceneObj_ThunderFloor",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -1222,7 +1222,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1258,7 +1258,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_01_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -1298,7 +1298,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1334,7 +1334,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_02_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -1374,7 +1374,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1410,7 +1410,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantSeal_03_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -1446,7 +1446,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DestructibleVine_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1490,7 +1490,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DestructiblePavement_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -1531,7 +1531,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_PlantMovingPlatform_Move",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [

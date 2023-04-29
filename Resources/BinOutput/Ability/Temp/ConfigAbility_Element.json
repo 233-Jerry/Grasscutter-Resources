@@ -38,7 +38,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Burning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -49,7 +49,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Burning_Shrub",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -60,7 +60,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Burning_Grass",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -71,7 +71,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Burning_Monster",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -114,7 +114,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "BurningDamage",
@@ -122,7 +122,7 @@
                   "attenuationGroup": "ElementReaction_Burning_Attenuation",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -151,7 +151,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
@@ -164,7 +164,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 25.0,
                   "ignoreAttackerProperty": true,
@@ -205,7 +205,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Burning_Grass",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -238,7 +238,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Burning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -249,7 +249,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Burning_Shrub",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -260,7 +260,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Burning_Grass",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -271,7 +271,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Burning_Monster",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -314,7 +314,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "BurningDamage",
@@ -322,7 +322,7 @@
                   "attenuationGroup": "ElementReaction_Burning_Attenuation",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -351,7 +351,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
@@ -364,7 +364,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 25.0,
                   "ignoreAttackerProperty": true,
@@ -441,7 +441,7 @@
                   "attenuationGroup": "ElementReaction_Burning_Attenuation",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -470,7 +470,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
@@ -483,7 +483,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 25.0,
                   "ignoreAttackerProperty": true,
@@ -561,7 +561,7 @@
                   "attenuationGroup": "ElementReaction_Burning_Attenuation",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -590,7 +590,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
@@ -603,7 +603,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 25.0,
                   "ignoreAttackerProperty": true,
@@ -660,7 +660,7 @@
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "LHECOGDLBCO": true,
                   "born": {
@@ -681,7 +681,7 @@
                   "attenuationGroup": "ElementReaction_Burning_Attenuation",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -710,7 +710,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
@@ -723,7 +723,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 25.0,
                   "ignoreAttackerProperty": true,
@@ -895,7 +895,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.0,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Fire",
               "bonusCriticalHurt": 50.0,
               "ignoreAttackerProperty": true,
@@ -923,7 +923,7 @@
             "attenuationGroup": "ElementReaction_Damage_Attenuation_2",
             "attackProperty": {
               "damagePercentage": 0.0,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Electric",
               "bonusCriticalHurt": 0.0,
               "ignoreAttackerProperty": true,
@@ -952,7 +952,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.0,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Fire",
               "bonusCriticalHurt": 50.0,
               "ignoreAttackerProperty": true,
@@ -981,11 +981,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Steam_Tile",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementAbility_Steam_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementAbility_Steam_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1000,11 +1000,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Overload_Explode",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementAbility_Explode_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementAbility_Explode_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1014,11 +1014,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ElementAbility_Explode_Pos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ElementAbility_Explode_Pos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": ["ElementAbility_Explode_Radius", 5.0, "ADD"]
+                  "radius": ["ElementAbility_Explode_Radius", 5.0, "ADD"]
                 },
                 "attackInfo": {
                   "attackTag": "ExplodeDamage",
@@ -1026,7 +1026,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_2",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -1065,11 +1065,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Superconductor",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementAbility_Superconduct_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementAbility_Superconduct_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1079,11 +1079,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ElementAbility_Superconduct_Pos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ElementAbility_Superconduct_Pos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": [
+                  "radius": [
                     "ElementAbility_Superconduct_Radius",
                     5.0,
                     "ADD"
@@ -1095,7 +1095,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -1111,7 +1111,7 @@
                     "hitImpulseType": "LV3",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 240.0,
+                      "hitImpulseX": 240.0,
                       "hitImpulseY": 300.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -1172,7 +1172,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Shock_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1190,7 +1190,7 @@
                   "$type": "SelectTargetsByShape",
                   "shapeName": "CircleR0_5",
                   "campTargetType": "Enemy",
-                  "OGIOEHHBNMA": "Applier",
+                  "campBasedOn": "Applier",
                   "OBHNBNDMPFN": 1.0
                 },
                 "predicates": [
@@ -1228,7 +1228,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_2",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -1254,7 +1254,7 @@
                   "topLimit": 1,
                   "shapeName": "CircleR10H3",
                   "campTargetType": "Enemy",
-                  "OGIOEHHBNMA": "Applier",
+                  "campBasedOn": "Applier",
                   "OBHNBNDMPFN": 1.0
                 },
                 "predicates": [
@@ -1308,7 +1308,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_2",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -1355,7 +1355,7 @@
                   "$type": "SelectTargetsByShape",
                   "shapeName": "CircleR0_5",
                   "campTargetType": "Enemy",
-                  "OGIOEHHBNMA": "Applier",
+                  "campBasedOn": "Applier",
                   "OBHNBNDMPFN": 1.0
                 },
                 "predicates": [
@@ -1393,7 +1393,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_2",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -1419,7 +1419,7 @@
                   "topLimit": 1,
                   "shapeName": "CircleR20H10",
                   "campTargetType": "Enemy",
-                  "OGIOEHHBNMA": "Applier",
+                  "campBasedOn": "Applier",
                   "OBHNBNDMPFN": 1.0
                 },
                 "predicates": [
@@ -1473,7 +1473,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_2",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -1562,7 +1562,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DamageByAttackValue",
@@ -1582,7 +1582,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_2",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -1631,7 +1631,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DamageByAttackValue",
@@ -1651,7 +1651,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_2",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -1713,7 +1713,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Conductive_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onAttackLanded": [
@@ -1749,7 +1749,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "ShockDamage",
@@ -1757,7 +1757,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_2",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -1877,7 +1877,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Wet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -1894,7 +1894,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Wet_Monster",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -1911,7 +1911,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Wet_Added",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1955,7 +1955,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1983,7 +1983,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Steam",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -1994,7 +1994,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Steam_Added",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2030,7 +2030,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2042,7 +2042,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "ExplodeDamage",
@@ -2050,7 +2050,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_2",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -2095,7 +2095,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2107,7 +2107,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "ExplodeDamage",
@@ -2115,7 +2115,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_2",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -2288,7 +2288,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Frozen",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAudio",
@@ -2319,7 +2319,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 0.0,
                   "damageExtra": 0.0
                 },
@@ -2442,7 +2442,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Frozen",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAudio",
@@ -2473,7 +2473,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 0.0,
                   "damageExtra": 0.0
                 },
@@ -2613,7 +2613,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_FreezeBroken",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ActCameraShake",
@@ -2640,7 +2640,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
                   "strikeType": "Default",
@@ -2693,7 +2693,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Steam",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -2704,7 +2704,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Steam_Added",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "fireEventWhenApply": true
@@ -2785,11 +2785,11 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Hit_None_Blunt_Small",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "CrashDamageParam",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "CrashDamageParam",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2814,7 +2814,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "CrashDamage",
@@ -2822,7 +2822,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 20.0,
                     "damageExtra": "CrashDamageParam",
                     "trueDamage": true
@@ -2971,7 +2971,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_StickWind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2999,7 +2999,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_StickElectric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3074,7 +3074,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_StickFire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3117,7 +3117,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3129,7 +3129,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "SuperconductorDamage",
@@ -3137,7 +3137,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -3153,7 +3153,7 @@
                     "hitImpulseType": "LV3",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 240.0,
+                      "hitImpulseX": 240.0,
                       "hitImpulseY": 300.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -3168,7 +3168,7 @@
                 "$type": "SelectTargetsByShape",
                 "shapeName": "CircleR5",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "Applier",
+                "campBasedOn": "Applier",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -3203,7 +3203,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3215,7 +3215,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "SuperconductorDamage",
@@ -3223,7 +3223,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -3239,7 +3239,7 @@
                     "hitImpulseType": "LV3",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 240.0,
+                      "hitImpulseX": 240.0,
                       "hitImpulseY": 300.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -3254,7 +3254,7 @@
                 "$type": "SelectTargetsByShape",
                 "shapeName": "CircleR5",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "Applier",
+                "campBasedOn": "Applier",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -3278,7 +3278,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Properties_Defense_Down",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3293,7 +3293,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Properties_Defense_Down",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3380,7 +3380,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3393,7 +3393,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Swirl_FireDamage",
@@ -3401,7 +3401,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": [
                       "Swirl_Durability",
@@ -3451,7 +3451,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -3490,7 +3490,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3503,7 +3503,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 12.0
+                  "radius": 12.0
                 },
                 "attackInfo": {
                   "attackTag": "Swirl_FireDamage",
@@ -3511,7 +3511,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": [
                       "Swirl_Durability",
@@ -3561,7 +3561,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -3662,7 +3662,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3675,7 +3675,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Swirl_ElectricDamage",
@@ -3683,7 +3683,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": [
                       "Swirl_Durability",
@@ -3733,7 +3733,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -3772,7 +3772,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3785,7 +3785,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 12.0
+                  "radius": 12.0
                 },
                 "attackInfo": {
                   "attackTag": "Swirl_ElectricDamage",
@@ -3793,7 +3793,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": [
                       "Swirl_Durability",
@@ -3843,7 +3843,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -3944,7 +3944,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3956,7 +3956,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Swirl_WaterDamage",
@@ -3964,7 +3964,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": [
                       "Swirl_Durability",
@@ -4010,7 +4010,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Water",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -4049,7 +4049,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -4061,7 +4061,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 12.0
+                  "radius": 12.0
                 },
                 "attackInfo": {
                   "attackTag": "Swirl_WaterDamage",
@@ -4069,7 +4069,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": [
                       "Swirl_Durability",
@@ -4114,7 +4114,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Water",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -4215,7 +4215,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -4227,7 +4227,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Swirl_IceDamage",
@@ -4235,7 +4235,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": [
                       "Swirl_Durability",
@@ -4285,7 +4285,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Ice",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -4324,7 +4324,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -4336,7 +4336,7 @@
                   "born": {
                     "$type": "DCMNMMBHKPN"
                   },
-                  "BMCPFKAEOJB": 12.0
+                  "radius": 12.0
                 },
                 "attackInfo": {
                   "attackTag": "Swirl_IceDamage",
@@ -4344,7 +4344,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": [
                       "Swirl_Durability",
@@ -4394,7 +4394,7 @@
                 "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Ice",
                   "bonusCriticalHurt": 0.0,
                   "ignoreAttackerProperty": true,
@@ -4531,7 +4531,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Water_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -4605,7 +4605,7 @@
               "$type": "AttachEffect",
               "target": "CurLocalAvatar",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_CrystalSeed_Absorb_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4627,7 +4627,7 @@
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Water_Shield_Disappear",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Water_Shield",
@@ -4640,7 +4640,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Absorb_Water_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -4651,7 +4651,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Water_Shield_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4703,7 +4703,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Water_BeHit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4740,14 +4740,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Water_Seed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Water_Seed_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4759,7 +4759,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Water_Seed_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -4887,7 +4887,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Fire_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -4961,7 +4961,7 @@
               "$type": "AttachEffect",
               "target": "CurLocalAvatar",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_CrystalSeed_Absorb_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4983,7 +4983,7 @@
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Fire_Shield_Disappear",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Fire_Shield",
@@ -4995,7 +4995,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Absorb_Fire_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -5006,7 +5006,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Fire_Shield_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5058,7 +5058,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Fire_BeHit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5095,14 +5095,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Fire_Seed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Fire_Seed_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5114,7 +5114,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Fire_Seed_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -5242,7 +5242,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Ice_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -5316,7 +5316,7 @@
               "$type": "AttachEffect",
               "target": "CurLocalAvatar",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_CrystalSeed_Absorb_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5338,7 +5338,7 @@
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Ice_Shield_Disappear",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Ice_Shield",
@@ -5350,7 +5350,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Absorb_Ice_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -5361,7 +5361,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Ice_Shield_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5413,7 +5413,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Ice_BeHit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5450,14 +5450,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Ice_Seed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Ice_Seed_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5469,7 +5469,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Ice_Seed_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -5597,7 +5597,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Elect_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -5671,7 +5671,7 @@
               "$type": "AttachEffect",
               "target": "CurLocalAvatar",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_CrystalSeed_Absorb_Elect",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5693,7 +5693,7 @@
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Elect_Shield_Disappear",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Elect_Shield",
@@ -5705,7 +5705,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Absorb_Electric_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -5716,7 +5716,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Elect_Shield_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5768,7 +5768,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Elect_BeHit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5805,14 +5805,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Elect_Seed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Elect_Seed_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5824,7 +5824,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Elect_Seed_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -5934,14 +5934,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Petrifaction_Dust",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Petrifaction_Break",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -6050,7 +6050,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_StickGrass",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -6128,12 +6128,12 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Overdose_State",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6164,7 +6164,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_WisdomImpact_1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -6176,7 +6176,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_WisdomImpact_2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -6188,7 +6188,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_WisdomImpact_3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -6212,7 +6212,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "WisdomImpact01",
@@ -6220,7 +6220,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "damageExtra": 0.0
@@ -6256,7 +6256,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "BMCPFKAEOJB": 4.5
+                  "radius": 4.5
                 },
                 "attackInfo": {
                   "attackTag": "WisdomImpact02",
@@ -6264,7 +6264,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "damageExtra": 0.0
@@ -6300,7 +6300,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "BMCPFKAEOJB": 7.0
+                  "radius": 7.0
                 },
                 "attackInfo": {
                   "attackTag": "WisdomImpact03",
@@ -6308,7 +6308,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "damageExtra": 0.0
@@ -6417,7 +6417,7 @@
               "born": {
                 "$type": "DCMNMMBHKPN"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -6504,7 +6504,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Element_Overgrow_Mushroom_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValue",
@@ -6626,7 +6626,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Element_Overgrow_Mushroom_Explode",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireSubEmitterEffect",
@@ -6650,7 +6650,7 @@
                       "born": {
                         "$type": "ConfigBornBySelf"
                       },
-                      "BMCPFKAEOJB": 5.0
+                      "radius": 5.0
                     },
                     "attackInfo": {
                       "attackTag": "OverGrowDamage",
@@ -6658,7 +6658,7 @@
                       "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Grass",
                         "bonusCriticalHurt": 0.0,
                         "ignoreAttackerProperty": true,
@@ -6692,7 +6692,7 @@
                       "born": {
                         "$type": "ConfigBornBySelf"
                       },
-                      "BMCPFKAEOJB": 5.0
+                      "radius": 5.0
                     },
                     "attackInfo": {
                       "attackTag": "OverGrowDamage",
@@ -6700,7 +6700,7 @@
                       "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Grass",
                         "bonusCriticalHurt": 0.0,
                         "ignoreAttackerProperty": true,
@@ -6727,7 +6727,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Element_Overgrow_Mushroom_Disappear",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -6745,7 +6745,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Overgrow_Mushroom",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6805,7 +6805,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Element_Overgrow_Mushroom_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -6853,7 +6853,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Overgrow_Mushroom_Alter",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6896,7 +6896,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Element_Overgrow_Mushroom_Alter_Explode",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireSubEmitterEffect",
@@ -6921,7 +6921,7 @@
                       "born": {
                         "$type": "ConfigBornBySelf"
                       },
-                      "BMCPFKAEOJB": 6.5
+                      "radius": 6.5
                     },
                     "attackInfo": {
                       "attackTag": "OverGrow_Alter_Damage",
@@ -6929,7 +6929,7 @@
                       "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Grass",
                         "bonusCriticalHurt": 0.0,
                         "ignoreAttackerProperty": true,
@@ -6963,7 +6963,7 @@
                       "born": {
                         "$type": "ConfigBornBySelf"
                       },
-                      "BMCPFKAEOJB": 6.5
+                      "radius": 6.5
                     },
                     "attackInfo": {
                       "attackTag": "OverGrow_Alter_Damage",
@@ -6971,7 +6971,7 @@
                       "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Grass",
                         "bonusCriticalHurt": 0.0,
                         "ignoreAttackerProperty": true,
@@ -7032,7 +7032,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_OvergrowFire_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetOvergrowDamgeToGlobalValue",
@@ -7048,7 +7048,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "OverGrow_Fire_Damage",
@@ -7056,7 +7056,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -7088,7 +7088,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "OverGrow_Fire_Damage",
@@ -7096,7 +7096,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -7157,7 +7157,7 @@
                 "sortType": "Nearest",
                 "shapeName": "CircleR15H15",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "Applier",
+                "campBasedOn": "Applier",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -7239,7 +7239,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetOvergrowDamgeToGlobalValue",
@@ -7265,7 +7265,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "OverGrow_Electric_Damage",
@@ -7273,7 +7273,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -7310,7 +7310,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "OverGrow_Electric_Damage",
@@ -7318,7 +7318,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -7374,7 +7374,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_OvergrowElectric_Seed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7469,7 +7469,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetOvergrowDamgeToGlobalValue",
@@ -7496,7 +7496,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "OverGrow_Electric_Damage",
@@ -7504,7 +7504,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -7547,7 +7547,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "OverGrow_Electric_Damage",
@@ -7555,7 +7555,7 @@
                   "attenuationGroup": "ElementReaction_Damage_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -7593,7 +7593,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_OvergrowElectric_Seed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -7614,7 +7614,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Ice_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -7660,7 +7660,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Elect_Seed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7672,7 +7672,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Elect_Seed_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -7747,7 +7747,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Overload_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetOvergrowDamgeToGlobalValue"
@@ -7762,7 +7762,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "OverGrowDamage",
@@ -7770,7 +7770,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,

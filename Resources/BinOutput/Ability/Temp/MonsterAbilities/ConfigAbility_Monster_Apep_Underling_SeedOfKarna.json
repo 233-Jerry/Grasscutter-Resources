@@ -148,7 +148,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Underling_SeedOfKarna_RangeAttack_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -198,14 +198,14 @@
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Underling_SeedOfKarna_RangeAttack_Bullet02",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Underling_SeedOfKarna_RangeAttack_Bullet",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -245,7 +245,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 0.30000001192092896
+                  "radius": 0.30000001192092896
                 },
                 "attackInfo": {
                   "attackTag": "Apep_UnderlingAttack_Type2",
@@ -253,7 +253,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.800000011920929,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -280,7 +280,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 0.30000001192092896
+                  "radius": 0.30000001192092896
                 },
                 "attackInfo": {
                   "attackTag": "Apep_UnderlingAttack_Type1",
@@ -288,7 +288,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6000000238418579,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -456,7 +456,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Underling_SeedOfArjuna_TargetEnhance",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -481,7 +481,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Underling_SeedOfArjuna_SupportAttack_Target",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -539,7 +539,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Underling_SeedOfBrahma_Shield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachAbilityStateResistance",
@@ -550,7 +550,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Underling_SeedOfBrahma_ShieldBreak",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },

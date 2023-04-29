@@ -3506,7 +3506,7 @@
                 "Elemental_Art_Hold",
                 "Elemental_Art_Extra"
               ],
-              "MKLAMNDEDGB": 0.20000000298023224
+              "damagePercentageRatio": 0.20000000298023224
             }
           ],
           "reduceDurablityIgnoreTimeScale": true,
@@ -3528,7 +3528,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": 0.20000000298023224
+              "damagePercentageRatio": 0.20000000298023224
             }
           ],
           "reduceDurablityIgnoreTimeScale": true,
@@ -3542,7 +3542,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": 0.20000000298023224
+              "damagePercentageRatio": 0.20000000298023224
             }
           ],
           "reduceDurablityIgnoreTimeScale": true,
@@ -3588,7 +3588,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.20000000298023224
+              "damagePercentageRatio": 0.20000000298023224
             }
           ],
           "onAdded": [
@@ -3799,7 +3799,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByEntityTypes",
@@ -4474,7 +4474,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.30000001192092896,
+              "damagePercentageRatio": 0.30000001192092896,
               "predicates": [
                 {
                   "$type": "IPMDKMAHKDF",
@@ -4620,7 +4620,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.20000000298023224,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "bonusCriticalHurt": 100.0,
                       "strikeType": "Pierce",
                       "enBreak": 20.0,
@@ -4673,7 +4673,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DropDulinsBlood_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4803,7 +4803,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 3.75,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Fire",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Default",
@@ -4824,7 +4824,7 @@
                   "born": {
                     "$type": "FLIPADNBJJF"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "RemoveServerBuff",
@@ -4969,7 +4969,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 3.75,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Fire",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Default",
@@ -4990,7 +4990,7 @@
                   "born": {
                     "$type": "FLIPADNBJJF"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "RemoveServerBuff",

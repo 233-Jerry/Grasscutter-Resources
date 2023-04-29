@@ -286,7 +286,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Idle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -358,7 +358,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Discharge_Ready",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -375,13 +375,13 @@
                 },
                 "attachPointName": "ElectrifiedBody"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackTargetMapEvent",
               "attackTargetMapEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerAlways",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -392,7 +392,7 @@
                     }
                   },
                   "height": 0.5,
-                  "BMCPFKAEOJB": 1.5499999523162842
+                  "radius": 1.5499999523162842
                 },
                 "attackInfoMap": {
                   "Enemy": {
@@ -401,7 +401,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 1.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Default",
@@ -419,7 +419,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 50.0,
                       "enBreak": 80.0
@@ -468,7 +468,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "ElectrifiedBody"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -483,7 +483,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_SLIME_ELECTRIC_POSITIVE_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "Discharge_Transition"
@@ -499,7 +499,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_SLIME_ELECTRIC_POSITIVE_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "triggerID": "Discharge",
@@ -518,7 +518,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "ElectrifiedBody"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -530,7 +530,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Discharge_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerFaceAnimation",
@@ -572,7 +572,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Idle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -862,7 +862,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Idle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -934,7 +934,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Discharge_Ready",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -951,13 +951,13 @@
                 },
                 "attachPointName": "ElectrifiedBody"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackTargetMapEvent",
               "attackTargetMapEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -968,7 +968,7 @@
                     }
                   },
                   "height": 0.75,
-                  "BMCPFKAEOJB": 2.9000000953674316
+                  "radius": 2.9000000953674316
                 },
                 "attackInfoMap": {
                   "Enemy": {
@@ -977,7 +977,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.3330000042915344,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Default",
@@ -995,7 +995,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 50.0,
                       "enBreak": 80.0
@@ -1044,7 +1044,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "ElectrifiedBody"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1059,7 +1059,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_SLIME_ELECTRIC_POSITIVE_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "Discharge_Transition"
@@ -1075,7 +1075,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_SLIME_ELECTRIC_POSITIVE_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "triggerID": "Discharge",
@@ -1094,7 +1094,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "ElectrifiedBody"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1106,7 +1106,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Discharge_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerFaceAnimation",
@@ -1148,7 +1148,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Idle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1369,7 +1369,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Positive_Idle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1449,7 +1449,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Positive_Discharge_Ready",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -1466,13 +1466,13 @@
                 },
                 "attachPointName": "ElectrifiedBody"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackTargetMapEvent",
               "attackTargetMapEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1483,7 +1483,7 @@
                     }
                   },
                   "height": 0.75,
-                  "BMCPFKAEOJB": 2.9000000953674316
+                  "radius": 2.9000000953674316
                 },
                 "attackInfoMap": {
                   "Enemy": {
@@ -1492,7 +1492,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.3330000042915344,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Default",
@@ -1510,7 +1510,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 50.0,
                       "enBreak": 80.0
@@ -1581,7 +1581,7 @@
                     "attachPointName": "ElectrifiedBody",
                     "ABIMPICHJNC": "Caster"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAudio",
@@ -1667,14 +1667,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Discharge_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Discharge_Ready",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -1686,13 +1686,13 @@
                 },
                 "attachPointName": "ElectrifiedBody"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackTargetMapEvent",
               "attackTargetMapEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1703,7 +1703,7 @@
                     }
                   },
                   "height": 0.75,
-                  "BMCPFKAEOJB": 2.9000000953674316
+                  "radius": 2.9000000953674316
                 },
                 "attackInfoMap": {
                   "Enemy": {
@@ -1712,7 +1712,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.3330000042915344,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Default",
@@ -1730,7 +1730,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 50.0,
                       "enBreak": 80.0
@@ -1753,7 +1753,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "ElectrifiedBody"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1788,7 +1788,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Positive_Discharge_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerFaceAnimation",
@@ -1807,7 +1807,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_SLIME_ELECTRIC_NEGATIVE_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
@@ -1824,7 +1824,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_SLIME_ELECTRIC_NEGATIVE_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThan"
                 }
               ],
@@ -1890,7 +1890,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.3330000042915344,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -1932,7 +1932,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_JumpPrepared",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1948,7 +1948,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Positive_JumpPrepared",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ActCameraShake",
@@ -1995,7 +1995,7 @@
               "born": {
                 "$type": "FLLCINGJBPD"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2095,7 +2095,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_JumpGround",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2111,7 +2111,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Positive_JumpGround",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -2123,7 +2123,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2134,7 +2134,7 @@
                 }
               },
               "height": 1.5,
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -2142,7 +2142,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -2182,7 +2182,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2193,7 +2193,7 @@
                 }
               },
               "height": 1.5,
-              "BMCPFKAEOJB": 1.25
+              "radius": 1.25
             },
             "attackInfo": {
               "attackTag": "",
@@ -2201,7 +2201,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.6660000085830688,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 50.0

@@ -147,7 +147,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Animal_Wigeon_Ripple_Walk",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -158,7 +158,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Animal_Wigeon_Ripple_Run",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -201,7 +201,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Animal_Wigeon_Ripple_Standby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -341,14 +341,14 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Animal_Common_Feather",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

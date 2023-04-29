@@ -716,7 +716,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.5,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Rock",
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Blunt",
@@ -897,7 +897,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_Glide",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -937,7 +937,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.25,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Rock",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Blunt",
@@ -1209,13 +1209,13 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "IOHLPEPEKAP"
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -1223,7 +1223,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 5000.0
@@ -1243,7 +1243,7 @@
           "$type": "TurnDirectionToPos",
           "target": "SelfAttackTarget",
           "toPos": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           }
         },
         {
@@ -1269,7 +1269,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -1280,7 +1280,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 5.5
+              "radius": 5.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -1288,7 +1288,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.75,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -1349,7 +1349,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_Breathe_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1386,7 +1386,7 @@
                   "attenuationGroup": "Monster_Primo_Attenuation_Breathe",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1441,7 +1441,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_Breathe_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1478,7 +1478,7 @@
                   "attenuationGroup": "Monster_Primo_Attenuation_Breathe",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1533,7 +1533,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_Breathe_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1570,7 +1570,7 @@
                   "attenuationGroup": "Monster_Primo_Attenuation_Breathe",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1625,7 +1625,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_Breathe_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1662,7 +1662,7 @@
                   "attenuationGroup": "Monster_Primo_Attenuation_Breathe",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -2209,7 +2209,7 @@
                           "$type": "ByTargetGlobalValue",
                           "key": "_MONSTERAFFIX_DRAKE_PRIMO_ROCK_ELEMENTEXPLODE_SHIELDDAMAGEUP_GADGET",
                           "ratio": 1.0,
-                          "forceByCaster": true
+                          "setTarget": true
                         }
                       ],
                       "successActions": [
@@ -2221,7 +2221,7 @@
                             "attenuationGroup": "default",
                             "attackProperty": {
                               "damagePercentage": 0.5,
-                              "MKLAMNDEDGB": 0.0,
+                              "damagePercentageRatio": 0.0,
                               "elementType": "Electric",
                               "bonusCriticalHurt": 100.0,
                               "strikeType": "Default",
@@ -2243,7 +2243,7 @@
                             "attenuationGroup": "default",
                             "attackProperty": {
                               "damagePercentage": 0.25,
-                              "MKLAMNDEDGB": 0.0,
+                              "damagePercentageRatio": 0.0,
                               "elementType": "Electric",
                               "bonusCriticalHurt": 100.0,
                               "strikeType": "Default",
@@ -2267,7 +2267,7 @@
                         "attenuationGroup": "default",
                         "attackProperty": {
                           "damagePercentage": 1.0,
-                          "MKLAMNDEDGB": 0.0,
+                          "damagePercentageRatio": 0.0,
                           "elementType": "Electric",
                           "bonusCriticalHurt": 100.0,
                           "strikeType": "Default",
@@ -2326,7 +2326,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplodeHitH_Electric",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalPos",
@@ -2355,7 +2355,7 @@
                     {
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplodeHitL",
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "SetGlobalPos",
@@ -2476,7 +2476,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplode_Electric",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -2530,7 +2530,7 @@
                           "$type": "ByTargetGlobalValue",
                           "key": "_MONSTERAFFIX_DRAKE_PRIMO_ROCK_ELEMENTEXPLODE_SHIELDDAMAGEUP_GADGET",
                           "ratio": 1.0,
-                          "forceByCaster": true
+                          "setTarget": true
                         }
                       ],
                       "successActions": [
@@ -2542,7 +2542,7 @@
                             "attenuationGroup": "default",
                             "attackProperty": {
                               "damagePercentage": 0.5,
-                              "MKLAMNDEDGB": 0.0,
+                              "damagePercentageRatio": 0.0,
                               "elementType": "Fire",
                               "bonusCriticalHurt": 100.0,
                               "strikeType": "Default",
@@ -2564,7 +2564,7 @@
                             "attenuationGroup": "default",
                             "attackProperty": {
                               "damagePercentage": 0.25,
-                              "MKLAMNDEDGB": 0.0,
+                              "damagePercentageRatio": 0.0,
                               "elementType": "Fire",
                               "bonusCriticalHurt": 100.0,
                               "strikeType": "Default",
@@ -2588,7 +2588,7 @@
                         "attenuationGroup": "default",
                         "attackProperty": {
                           "damagePercentage": 1.0,
-                          "MKLAMNDEDGB": 0.0,
+                          "damagePercentageRatio": 0.0,
                           "elementType": "Fire",
                           "bonusCriticalHurt": 100.0,
                           "strikeType": "Default",
@@ -2647,7 +2647,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplodeHitH_Fire",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalPos",
@@ -2676,7 +2676,7 @@
                     {
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplodeHitL",
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "SetGlobalPos",
@@ -2797,7 +2797,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplode_Fire",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -2851,7 +2851,7 @@
                           "$type": "ByTargetGlobalValue",
                           "key": "_MONSTERAFFIX_DRAKE_PRIMO_ROCK_ELEMENTEXPLODE_SHIELDDAMAGEUP_GADGET",
                           "ratio": 1.0,
-                          "forceByCaster": true
+                          "setTarget": true
                         }
                       ],
                       "successActions": [
@@ -2863,7 +2863,7 @@
                             "attenuationGroup": "default",
                             "attackProperty": {
                               "damagePercentage": 0.5,
-                              "MKLAMNDEDGB": 0.0,
+                              "damagePercentageRatio": 0.0,
                               "elementType": "Ice",
                               "bonusCriticalHurt": 100.0,
                               "strikeType": "Default",
@@ -2885,7 +2885,7 @@
                             "attenuationGroup": "default",
                             "attackProperty": {
                               "damagePercentage": 0.25,
-                              "MKLAMNDEDGB": 0.0,
+                              "damagePercentageRatio": 0.0,
                               "elementType": "Ice",
                               "bonusCriticalHurt": 100.0,
                               "strikeType": "Default",
@@ -2909,7 +2909,7 @@
                         "attenuationGroup": "default",
                         "attackProperty": {
                           "damagePercentage": 1.0,
-                          "MKLAMNDEDGB": 0.0,
+                          "damagePercentageRatio": 0.0,
                           "elementType": "Ice",
                           "bonusCriticalHurt": 100.0,
                           "strikeType": "Default",
@@ -2968,7 +2968,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplodeHitH_Ice",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalPos",
@@ -2997,7 +2997,7 @@
                     {
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplodeHitL",
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "SetGlobalPos",
@@ -3118,7 +3118,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplode_Ice",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3172,7 +3172,7 @@
                           "$type": "ByTargetGlobalValue",
                           "key": "_MONSTERAFFIX_DRAKE_PRIMO_ROCK_ELEMENTEXPLODE_SHIELDDAMAGEUP_GADGET",
                           "ratio": 1.0,
-                          "forceByCaster": true
+                          "setTarget": true
                         }
                       ],
                       "successActions": [
@@ -3184,7 +3184,7 @@
                             "attenuationGroup": "default",
                             "attackProperty": {
                               "damagePercentage": 0.5,
-                              "MKLAMNDEDGB": 0.0,
+                              "damagePercentageRatio": 0.0,
                               "elementType": "Water",
                               "bonusCriticalHurt": 100.0,
                               "strikeType": "Default",
@@ -3206,7 +3206,7 @@
                             "attenuationGroup": "default",
                             "attackProperty": {
                               "damagePercentage": 0.25,
-                              "MKLAMNDEDGB": 0.0,
+                              "damagePercentageRatio": 0.0,
                               "elementType": "Water",
                               "bonusCriticalHurt": 100.0,
                               "strikeType": "Default",
@@ -3230,7 +3230,7 @@
                         "attenuationGroup": "default",
                         "attackProperty": {
                           "damagePercentage": 1.0,
-                          "MKLAMNDEDGB": 0.0,
+                          "damagePercentageRatio": 0.0,
                           "elementType": "Water",
                           "bonusCriticalHurt": 100.0,
                           "strikeType": "Default",
@@ -3289,7 +3289,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplodeHitH_Water",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalPos",
@@ -3318,7 +3318,7 @@
                     {
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplodeHitL",
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "SetGlobalPos",
@@ -3439,7 +3439,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ElementExplode_Water",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3472,7 +3472,7 @@
           "target": "Target",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "DAPKLNIFPID": true,
             "HOPPHMEKHLG": {
               "$type": "HFKFLHCBMLB",
@@ -3507,7 +3507,7 @@
           "target": "Target",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "DAPKLNIFPID": true,
             "HOPPHMEKHLG": {
               "$type": "HFKFLHCBMLB",
@@ -3542,7 +3542,7 @@
           "target": "Target",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "DAPKLNIFPID": true,
             "HOPPHMEKHLG": {
               "$type": "HFKFLHCBMLB",
@@ -3577,7 +3577,7 @@
           "target": "Target",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "DAPKLNIFPID": true,
             "HOPPHMEKHLG": {
               "$type": "HFKFLHCBMLB",
@@ -3668,12 +3668,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_MONSTER_DRAKE_PRIMO_ROCK_ICE",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "DAPKLNIFPID": true,
             "HOPPHMEKHLG": {
               "$type": "HFKFLHCBMLB",
@@ -3695,12 +3695,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_MONSTER_DRAKE_PRIMO_ROCK_FIRE",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "DAPKLNIFPID": true,
             "HOPPHMEKHLG": {
               "$type": "HFKFLHCBMLB",
@@ -3722,12 +3722,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_MONSTER_DRAKE_PRIMO_ROCK_WATER",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "DAPKLNIFPID": true,
             "HOPPHMEKHLG": {
               "$type": "HFKFLHCBMLB",
@@ -3749,12 +3749,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_MONSTER_DRAKE_PRIMO_ROCK_ELECTRIC",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "DAPKLNIFPID": true,
             "HOPPHMEKHLG": {
               "$type": "HFKFLHCBMLB",
@@ -3900,7 +3900,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBullet_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3945,7 +3945,7 @@
             "$type": "ConfigBornByCollisionPoint",
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3962,7 +3962,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBullet_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4007,7 +4007,7 @@
             "$type": "ConfigBornByCollisionPoint",
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4024,7 +4024,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBullet_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4069,7 +4069,7 @@
             "$type": "ConfigBornByCollisionPoint",
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4086,7 +4086,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBullet_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4131,7 +4131,7 @@
             "$type": "ConfigBornByCollisionPoint",
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4163,7 +4163,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBurst_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -4266,7 +4266,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBurst_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -4369,7 +4369,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBurst_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -4472,7 +4472,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBurst_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -4560,7 +4560,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBullet_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4605,7 +4605,7 @@
             "$type": "ConfigBornByCollisionPoint",
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4622,7 +4622,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBullet_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4667,7 +4667,7 @@
             "$type": "ConfigBornByCollisionPoint",
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4684,7 +4684,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBullet_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4729,7 +4729,7 @@
             "$type": "ConfigBornByCollisionPoint",
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4746,7 +4746,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleBullet_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4791,7 +4791,7 @@
             "$type": "ConfigBornByCollisionPoint",
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4813,14 +4813,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleGadget_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosion_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -4850,7 +4850,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -4893,7 +4893,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -4917,7 +4917,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosionBS_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4963,7 +4963,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleGadget_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetRandomOverrideMapValue",
@@ -5026,7 +5026,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosion_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -5056,7 +5056,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5099,7 +5099,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5131,7 +5131,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosionBS_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5179,7 +5179,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosion_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -5209,7 +5209,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleGadget_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -5220,7 +5220,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosion_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -5231,7 +5231,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5239,7 +5239,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -5259,7 +5259,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosionBS_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5272,14 +5272,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleArea_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleAreaAS_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -5291,13 +5291,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 1.0,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5305,7 +5305,7 @@
                   "attenuationGroup": "Monster_Primo_Attenuation_ScaleGadget",
                   "attackProperty": {
                     "damagePercentage": 0.10000000149011612,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5364,7 +5364,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleGadget_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetRandomOverrideMapValue",
@@ -5431,7 +5431,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosion_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -5442,7 +5442,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5450,7 +5450,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -5482,7 +5482,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosionBS_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5495,14 +5495,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleArea_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleAreaAS_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -5510,13 +5510,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 1.0,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5524,7 +5524,7 @@
                   "attenuationGroup": "Monster_Primo_Attenuation_ScaleGadget",
                   "attackProperty": {
                     "damagePercentage": 0.10000000149011612,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5590,14 +5590,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleGadget_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosion_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -5608,7 +5608,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosionBS_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5621,13 +5621,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 1.0,
-                  "BMCPFKAEOJB": 2.0,
+                  "radius": 2.0,
                   "innerRadius": 0.0
                 },
                 "attackInfo": {
@@ -5636,7 +5636,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5668,13 +5668,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 1.5,
-                  "BMCPFKAEOJB": 4.0,
+                  "radius": 4.0,
                   "innerRadius": 2.0
                 },
                 "attackInfo": {
@@ -5683,7 +5683,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5715,13 +5715,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 6.0,
+                  "radius": 6.0,
                   "innerRadius": 4.0
                 },
                 "attackInfo": {
@@ -5730,7 +5730,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.375,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5795,7 +5795,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleGadget_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetRandomOverrideMapValue",
@@ -5858,7 +5858,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosion_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -5881,7 +5881,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosionBS_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5894,13 +5894,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 1.0,
-                  "BMCPFKAEOJB": 2.0,
+                  "radius": 2.0,
                   "innerRadius": 0.0
                 },
                 "attackInfo": {
@@ -5909,7 +5909,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5941,13 +5941,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 1.5,
-                  "BMCPFKAEOJB": 4.0,
+                  "radius": 4.0,
                   "innerRadius": 2.0
                 },
                 "attackInfo": {
@@ -5956,7 +5956,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5988,13 +5988,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 6.0,
+                  "radius": 6.0,
                   "innerRadius": 4.0
                 },
                 "attackInfo": {
@@ -6003,7 +6003,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.375,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -6069,7 +6069,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleGadget_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -6082,7 +6082,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosionBS_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6099,20 +6099,20 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -6120,7 +6120,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.20000000298023224,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -6160,25 +6160,25 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosion_Water",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_DRAKE_PRIMO_ROCK_EXPLOSION_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_DRAKE_PRIMO_ROCK_EXPLOSION_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_MONSTER_DRAKE_PRIMO_ROCK_EXPLOSION_POS",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_MONSTER_DRAKE_PRIMO_ROCK_EXPLOSION_POS",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -6186,7 +6186,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.20000000298023224,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -6245,7 +6245,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleGadget_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetRandomOverrideMapValue",
@@ -6326,7 +6326,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosionBS_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6343,20 +6343,20 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -6364,7 +6364,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.20000000298023224,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -6398,25 +6398,25 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Primo_Rock_ScaleExplosion_Water",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_DRAKE_PRIMO_ROCK_EXPLOSION_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_DRAKE_PRIMO_ROCK_EXPLOSION_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_MONSTER_DRAKE_PRIMO_ROCK_EXPLOSION_POS",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_MONSTER_DRAKE_PRIMO_ROCK_EXPLOSION_POS",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -6424,7 +6424,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.20000000298023224,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -6524,9 +6524,9 @@
         {
           "$type": "TurnDirectionToPos",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_DRAKE_PRIMO_ROCK_BROKEN_POS",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_DRAKE_PRIMO_ROCK_BROKEN_POS",
+            "directionKey": ""
           }
         },
         {
@@ -6627,9 +6627,9 @@
         {
           "$type": "TurnDirectionToPos",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_DRAKE_PRIMO_ROCK_BROKEN_POS",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_DRAKE_PRIMO_ROCK_BROKEN_POS",
+            "directionKey": ""
           }
         },
         {

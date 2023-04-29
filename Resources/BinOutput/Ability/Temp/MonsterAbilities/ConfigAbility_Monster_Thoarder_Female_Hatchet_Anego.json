@@ -133,7 +133,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Thoarder_HatchetThrow",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -152,7 +152,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Thoarder_HatchetThrowBullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -179,7 +179,7 @@
             "JCJGOCMLFIM": true,
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "Predicated",
@@ -216,7 +216,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6000000238418579,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Slash",
                     "enBreak": 100.0
@@ -255,7 +255,7 @@
             "BJCIHELGKLP": true,
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "Predicated",
@@ -276,7 +276,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -284,7 +284,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6000000238418579,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Slash",
                     "enBreak": 100.0
@@ -448,8 +448,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "hitBoxNames": ["HitBox"],
               "setEnable": true
@@ -479,8 +479,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "hitBoxNames": ["HitBox"]
             }
@@ -574,12 +574,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Thoarder_Female_Hatchet_Order_Effect02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Properties_Attack_Up",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAISkillCDMultiplier",
@@ -763,7 +763,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Properties_Defense_Up",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -850,7 +850,7 @@
             },
             "attachPointName": "MoveHead"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

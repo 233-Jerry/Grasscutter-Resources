@@ -50,7 +50,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Epsilon_Wind_SpinningFanNormal_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -61,7 +61,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Epsilon_Wind_SpinningFanDecayed_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -72,7 +72,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Epsilon_Wind_SpinningFanNormal_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -83,7 +83,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Epsilon_Wind_SpinningFanDecayed_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -149,7 +149,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_HitThrowToGround_Water",
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "effectTempleteID": true
             }
           ]
@@ -170,12 +170,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Epsilon_Wind_SpinningFan_BulletNormal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Epsilon_Wind_SpinningFan_BulletNormal_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -221,7 +221,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -237,7 +237,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -245,7 +245,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.6000000238418579,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -278,12 +278,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Epsilon_Wind_SpinningFan_BulletDecayed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Epsilon_Wind_SpinningFan_BulletDecayed_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -312,7 +312,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -328,7 +328,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -336,7 +336,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",

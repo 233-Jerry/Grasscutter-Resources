@@ -108,7 +108,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceSolidBulk_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -219,7 +219,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceSolidBulk_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -339,7 +339,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_CelestiaClusterSmall_01_Destroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -547,7 +547,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_CelestiaClusterSmall_01_Idle",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachAbilityStateResistance",
@@ -821,7 +821,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AncientHeatSource_01_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -858,7 +858,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -869,7 +869,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -986,7 +986,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_SpecialTreasureBox_Unlock",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -997,7 +997,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_SpecialTreasureBox_LockIdle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1012,14 +1012,14 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FireSeelie_01_MoveTrail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onKill": [
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FireSeelie_01_Disappear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1039,7 +1039,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FireSeelie_01_Footprint",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -1099,7 +1099,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FireSeeliaLamp_01_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1116,7 +1116,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FireSeeliaLamp_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1222,7 +1222,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceTotem_Destroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -1266,7 +1266,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RockTotem_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1328,7 +1328,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FrozenDefender_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1357,7 +1357,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1383,7 +1383,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanBeacon_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1487,7 +1487,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FloatingIce_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1558,7 +1558,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FloatingIce_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1713,7 +1713,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Stages_Property_Ani_Prop_SnowPile_01",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "KillSelf"
@@ -2143,7 +2143,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceShieldInactivated_01_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2217,7 +2217,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_CommonIceObj_01_BeHit",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -2243,14 +2243,14 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceShieldInactivated_01_Idle",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onKill": [
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceShieldInactivated_01_Destroy",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2273,7 +2273,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceShieldActivated_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2295,7 +2295,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceShieldActivated_01_Destroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2453,7 +2453,7 @@
                 },
                 "attachPointName": "bornPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2493,7 +2493,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceSeed_Pre",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2628,7 +2628,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceSeed_Around_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2639,7 +2639,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceSeed_Around_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2650,7 +2650,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceSeed_Around_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2669,7 +2669,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_IceSeed_Merge",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2739,7 +2739,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BombBarrel_02_IceFog",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2763,7 +2763,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2771,7 +2771,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.014999999664723873,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 5.0,
                     "strikeType": "Default",
@@ -2810,7 +2810,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BombBarrel_02_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireAISoundEvent"
@@ -2835,14 +2835,14 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.5,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2850,7 +2850,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -2877,9 +2877,9 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2887,7 +2887,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -2950,7 +2950,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BombBarrel_02_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireAISoundEvent"
@@ -2963,14 +2963,14 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.5,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2978,7 +2978,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -3005,9 +3005,9 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3015,7 +3015,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -3114,7 +3114,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.0,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Ice",
               "bonusCriticalHurt": 10.0,
               "strikeType": "Default",
@@ -3166,7 +3166,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3206,7 +3206,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RegisvinePillar_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3257,7 +3257,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RegisvinePillar_01_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3298,7 +3298,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanJars_01_Destroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -3340,7 +3340,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanJars_02_Destroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -3382,7 +3382,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanJars_03_Destroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -3428,9 +3428,9 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3438,7 +3438,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -3451,7 +3451,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_WaterBasin_01_Destroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -3485,7 +3485,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceSentryTurrets_Ice_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3522,7 +3522,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -3530,7 +3530,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt"
@@ -3609,7 +3609,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanBox_01_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "KillSelf"
@@ -3638,7 +3638,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanBox_01_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "KillSelf"
@@ -3695,7 +3695,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_WoodenObject_BurnOut",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -3769,7 +3769,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Bombbarrel_02_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3780,14 +3780,14 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.800000011920929,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3795,7 +3795,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt"
@@ -3821,14 +3821,14 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BombBarrel_02_Explode",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.399999976158142,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -3880,7 +3880,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DunlinsHeart_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3891,7 +3891,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DunlinsHeart_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3902,7 +3902,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DunlinsHeart_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3921,7 +3921,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Ljxs_Essence_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3946,7 +3946,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stage_SealBorder_BattleHalo_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3982,7 +3982,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_CelestiaClusterBig_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3993,7 +3993,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_CelestiaClusterBig_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4028,7 +4028,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DropIce_01_Drop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -4124,7 +4124,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DropIce_01_Drop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -4167,7 +4167,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DropIce_01_Drop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -4175,7 +4175,7 @@
                 "attackPattern": {
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4183,7 +4183,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt"
@@ -4209,7 +4209,7 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4217,7 +4217,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -4242,7 +4242,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DropIce_03_Destroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ExecuteGadgetLua",
@@ -4260,7 +4260,7 @@
               "born": {
                 "$type": "FLIPADNBJJF"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4319,7 +4319,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DropIce_01_Drop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AddGlobalValue",
@@ -4338,7 +4338,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -4346,7 +4346,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt"
@@ -4373,14 +4373,14 @@
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 4.0
+              "radius": 4.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -4388,7 +4388,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -4437,7 +4437,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceFloor_01_Heat",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -4491,7 +4491,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceFloor_01_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -4597,7 +4597,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_CelestiaClusterSmall_01_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4623,7 +4623,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_CelestiaClusterBig_01_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4808,17 +4808,17 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_IcePiton_Warning_01",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "IcePos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "IcePos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_IcePiton_Pre",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 12.0,
@@ -4832,10 +4832,10 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "IcePos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "IcePos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -4852,7 +4852,7 @@
               "$type": "TriggerBullet",
               "bulletID": 70360133,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 12.0,
@@ -4866,8 +4866,8 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "IcePos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "IcePos",
+                "directionKey": ""
               }
             }
           ]
@@ -4883,7 +4883,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_IcePiton",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -4905,7 +4905,7 @@
             "DAPKLNIFPID": true,
             "attachPointName": "attachPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4952,7 +4952,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 1.0,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Ice",
               "bonusCriticalHurt": 20.0,
               "strikeType": "Blunt",
@@ -4963,7 +4963,7 @@
               "hitImpulseType": "LV6",
               "overrideHitImpulse": {
                 "hitLevel": "Air",
-                "IPHCEFBMJAJ": 700.0,
+                "hitImpulseX": 700.0,
                 "hitImpulseY": 400.0
               },
               "hitHaltTimeScale": 0.05000000074505806

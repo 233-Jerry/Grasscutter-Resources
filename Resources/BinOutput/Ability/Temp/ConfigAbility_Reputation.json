@@ -12,7 +12,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": -100.0,
+              "damagePercentageRatio": -100.0,
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -53,7 +53,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": -100.0,
+              "damagePercentageRatio": -100.0,
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -94,7 +94,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": -100.0,
+              "damagePercentageRatio": -100.0,
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -135,7 +135,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": -100.0,
+              "damagePercentageRatio": -100.0,
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -176,7 +176,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": -100.0,
+              "damagePercentageRatio": -100.0,
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -217,7 +217,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": -100.0,
+              "damagePercentageRatio": -100.0,
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -255,7 +255,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -299,7 +299,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -343,7 +343,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -387,7 +387,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -431,7 +431,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -475,7 +475,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -519,7 +519,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -563,7 +563,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -607,7 +607,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -651,7 +651,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -695,7 +695,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "Rate",
               "predicates": [
                 {
@@ -734,7 +734,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "JGEEKIDDFGM": "Rate",
               "predicates": [
                 {
@@ -773,7 +773,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -811,7 +811,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
@@ -849,7 +849,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["FallingAttack"],
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",

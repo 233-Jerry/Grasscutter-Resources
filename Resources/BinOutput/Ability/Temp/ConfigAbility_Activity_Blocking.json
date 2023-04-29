@@ -398,7 +398,7 @@
                     "attachPointName": "WeaponL",
                     "ABIMPICHJNC": "Caster"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "KillSelf",
@@ -585,7 +585,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 4.5
+                  "radius": 4.5
                 },
                 "attackInfo": {
                   "attackTag": "Avatar_Blocking",
@@ -593,7 +593,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Blocking_Back_Value",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 1000.0,
                     "OAKBBLBNNOF": 2.0,
@@ -640,7 +640,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_Strike",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -726,7 +726,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_Ready",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AvatarCameraParam",
@@ -788,7 +788,7 @@
                     "attachPointName": "WeaponL",
                     "ABIMPICHJNC": "Caster"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -819,7 +819,7 @@
                     "attachPointName": "WeaponL",
                     "ABIMPICHJNC": "Caster"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetAnimatorTrigger",
@@ -914,7 +914,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_AttackUp",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -947,7 +947,7 @@
                 "ExtraAttack",
                 "FallingAttack"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": "Blocking_Attack_Up",
               "OAKBBLBNNOF": 2.0,
               "MEIGPFPPPJH": 1.0
@@ -957,7 +957,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Blocking_Stack_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -977,7 +977,7 @@
                 "ExtraAttack",
                 "FallingAttack"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": ["Blocking_Attack_Up", 2.0, "MUL"],
               "OAKBBLBNNOF": 2.0,
               "MEIGPFPPPJH": 1.0
@@ -987,7 +987,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Blocking_Stack_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1007,7 +1007,7 @@
                 "ExtraAttack",
                 "FallingAttack"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": ["Blocking_Attack_Up", 3.0, "MUL"],
               "OAKBBLBNNOF": 2.0,
               "MEIGPFPPPJH": 1.0
@@ -1017,7 +1017,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Blocking_Stack_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1068,7 +1068,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "Avatar_Blocking_Blade",
@@ -1076,7 +1076,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Blocking_Blade_Value",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 1000.0,
@@ -1099,7 +1099,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_BladeWind",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetSystemValueToOverrideMap",
@@ -1119,7 +1119,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1633,7 +1633,7 @@
                     "attachPointName": "WeaponL",
                     "ABIMPICHJNC": "Caster"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetSelfAttackTarget",
@@ -1777,7 +1777,7 @@
                     "$type": "ConfigBornBySelf",
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 4.5
+                  "radius": 4.5
                 },
                 "attackInfo": {
                   "attackTag": "Avatar_Blocking",
@@ -1785,7 +1785,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Blocking_Back_Value",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 1000.0,
                     "OAKBBLBNNOF": 2.0,
@@ -1824,7 +1824,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_Strike",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1899,7 +1899,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_Ready",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AvatarCameraParam",
@@ -1963,7 +1963,7 @@
                     "attachPointName": "WeaponL",
                     "ABIMPICHJNC": "Caster"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -1996,7 +1996,7 @@
                     "attachPointName": "WeaponL",
                     "ABIMPICHJNC": "Caster"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetAnimatorTrigger",
@@ -2215,7 +2215,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_BuffState",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -2334,7 +2334,7 @@
                     "attachPointName": "WeaponL",
                     "ABIMPICHJNC": "Caster"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -2376,7 +2376,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_BlockBack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2388,7 +2388,7 @@
                     "$type": "ConfigBornBySelf",
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "Avatar_Block_AutoBack",
@@ -2396,7 +2396,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AutoBack_Dmg",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 50.0,
                     "OAKBBLBNNOF": 2.0,
@@ -2470,7 +2470,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_UltStart",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AddElementDurability",
@@ -2504,7 +2504,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SummerTimeV2_Dungeon_Kazuha_Slash",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2516,7 +2516,7 @@
                     "$type": "ConfigBornBySelf",
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 8.0
+                  "radius": 8.0
                 },
                 "attackInfo": {
                   "attackTag": "BladeMaster2_FullScreenAtk",
@@ -2524,7 +2524,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Burst_02_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 1000.0,
                     "OAKBBLBNNOF": 2.0,
@@ -2608,7 +2608,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_UltStart",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "isDynamicAbility": true
@@ -2721,16 +2721,16 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_BuffState",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_Weapon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -2995,7 +2995,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_UltStart",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -3021,7 +3021,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Ningyo_MultiChargeAttack_BladeWaveBladeMaster",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3041,7 +3041,7 @@
                     "$type": "ConfigBornBySelf",
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "Avatar_Blocking_Blade",
@@ -3049,7 +3049,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Blocking_Blade_Value",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 1000.0,
@@ -3093,7 +3093,7 @@
             "$type": "ConfigBornByCollisionPoint",
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3114,7 +3114,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Blocking_Blade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3134,7 +3134,7 @@
                     "$type": "ConfigBornBySelf",
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "BladeMaster2_BladeAirAtk",
@@ -3142,7 +3142,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Blocking_BladeBurst_Value",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 100.0,
                     "attackType": "Range",
@@ -3185,7 +3185,7 @@
             "$type": "ConfigBornByCollisionPoint",
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

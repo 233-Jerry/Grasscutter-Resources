@@ -191,7 +191,7 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -200,8 +200,8 @@
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 4.0,
                 "IABNJPGBAOH": true,
-                "FNMFBPGNEKD": "_ABILITY_Baizhuer_ExtraAttack_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Baizhuer_ExtraAttack_Pos",
+                "directionKey": ""
               },
               "gadgetID": 41082006,
               "campID": 1001,
@@ -247,7 +247,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ExtraAttack_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -262,7 +262,7 @@
               "target": "OriginOwner",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -274,7 +274,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 2.299999952316284
+                  "radius": 2.299999952316284
                 },
                 "attackInfo": {
                   "attackTag": "ExtraAttack",
@@ -282,7 +282,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -329,7 +329,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ExtraAttack",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -373,7 +373,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_01_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -426,7 +426,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_02_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -479,7 +479,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_03_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -532,7 +532,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_04_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -619,7 +619,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_BulletTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -733,7 +733,7 @@
                       "$type": "TriggerBullet",
                       "bulletID": 41082011,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "offset": {
                           "y": 1.2000000476837158
                         },
@@ -742,8 +742,8 @@
                           "PGIBJONOAKP": true
                         },
                         "IABNJPGBAOH": true,
-                        "FNMFBPGNEKD": "_ABILITY_Baizhuer_ElementalArt_Bullet_01_BornPosGV",
-                        "GPPNNKAOHCG": ""
+                        "positionKey": "_ABILITY_Baizhuer_ElementalArt_Bullet_01_BornPosGV",
+                        "directionKey": ""
                       }
                     }
                   ],
@@ -752,7 +752,7 @@
                       "$type": "TriggerBullet",
                       "bulletID": 41082012,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "offset": {
                           "y": 1.2000000476837158
                         },
@@ -764,8 +764,8 @@
                           }
                         },
                         "IABNJPGBAOH": true,
-                        "FNMFBPGNEKD": "_ABILITY_Baizhuer_ElementalArt_Bullet_01_BornPosGV",
-                        "GPPNNKAOHCG": ""
+                        "positionKey": "_ABILITY_Baizhuer_ElementalArt_Bullet_01_BornPosGV",
+                        "directionKey": ""
                       },
                       "ownerIs": "OriginOwner",
                       "lifeByOwnerIsAlive": true,
@@ -779,7 +779,7 @@
                   "$type": "TriggerBullet",
                   "bulletID": 41082012,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "y": 1.2000000476837158
                     },
@@ -791,8 +791,8 @@
                       }
                     },
                     "IABNJPGBAOH": true,
-                    "FNMFBPGNEKD": "_ABILITY_Baizhuer_ElementalArt_Bullet_01_BornPosGV",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Baizhuer_ElementalArt_Bullet_01_BornPosGV",
+                    "directionKey": ""
                   },
                   "ownerIs": "OriginOwner",
                   "lifeByOwnerIsAlive": true,
@@ -822,7 +822,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Baizhuer_Talent6_Param"
+                  "talentParam": "Baizhuer_Talent6_Param"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -940,7 +940,7 @@
                   "RotationDampTime": true,
                   "configID": 2019,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -964,7 +964,7 @@
                   "RotationDampTime": true,
                   "configID": 2019,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1045,7 +1045,7 @@
                   "$type": "AttachEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_MonsterHead",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -1053,7 +1053,7 @@
                   "$type": "AttachEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_MonsterHead_2",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -1066,14 +1066,14 @@
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_MonsterHead",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_MonsterHead_2",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -1093,7 +1093,7 @@
                 "$type": "ConfigBornByCollisionPoint",
                 "IABNJPGBAOH": true
               },
-              "BMCPFKAEOJB": 0.6000000238418579
+              "radius": 0.6000000238418579
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1101,7 +1101,7 @@
               "attenuationGroup": "Baizhuer_ElementalArt",
               "attackProperty": {
                 "damagePercentage": "ElementalArt_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default"
@@ -1139,7 +1139,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_BulletReturnTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1314,7 +1314,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -1326,7 +1326,7 @@
                       "IABNJPGBAOH": true
                     },
                     "height": 2.0,
-                    "BMCPFKAEOJB": 1.399999976158142
+                    "radius": 1.399999976158142
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -1345,7 +1345,7 @@
                   "$type": "FireEffect",
                   "muteRemoteAction": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalBurst_Camera",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetAnimatorTrigger",
@@ -1363,14 +1363,14 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalBurst_NoCamera",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalBurst_Rhand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveUniqueModifier",
@@ -1383,7 +1383,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Baizhuer_Talent4_Param"
+                  "talentParam": "Baizhuer_Talent4_Param"
                 }
               ],
               "modifierName": "UNIQUE_Baizhuer_ElementalBurst_Talent4Buff"
@@ -1399,7 +1399,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Baizhuer_Talent4_Param"
+                  "talentParam": "Baizhuer_Talent4_Param"
                 }
               ],
               "modifierName": "UNIQUE_Baizhuer_ElementalBurst_Talent4Buff"
@@ -1431,7 +1431,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR2",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1564,7 +1564,7 @@
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalBurst_Shield_Die",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalBurst_Shield",
@@ -1576,7 +1576,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalBurst_Shield_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -1668,7 +1668,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1688,7 +1688,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1696,7 +1696,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Default",
                     "enBreak": 200.0
@@ -1857,7 +1857,7 @@
               "target": "CurLocalAvatar",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalBurst_Bullet_Shoot_Left",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "failActions": [
@@ -1866,7 +1866,7 @@
               "target": "CurLocalAvatar",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalBurst_Bullet_Shoot_Right",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1975,7 +1975,7 @@
               "RotationDampTime": true,
               "bulletID": 41082021,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": -1.0,
                   "y": 0.0,
@@ -1990,8 +1990,8 @@
                   "PGIBJONOAKP": true
                 },
                 "IABNJPGBAOH": true,
-                "FNMFBPGNEKD": "_ABILITY_Avatar_Baizhuer_Funnel_ShootPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Avatar_Baizhuer_Funnel_ShootPos",
+                "directionKey": ""
               },
               "ownerIs": "Caster"
             }
@@ -2010,7 +2010,7 @@
               "RotationDampTime": true,
               "bulletID": 41082021,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 1.0,
                   "y": 0.0,
@@ -2025,8 +2025,8 @@
                   "PGIBJONOAKP": true
                 },
                 "IABNJPGBAOH": true,
-                "FNMFBPGNEKD": "_ABILITY_Avatar_Baizhuer_Funnel_ShootPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Avatar_Baizhuer_Funnel_ShootPos",
+                "directionKey": ""
               },
               "ownerIs": "Caster"
             }
@@ -2053,12 +2053,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalBurst_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalBurst_Bullet_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2113,7 +2113,7 @@
             "$type": "ConfigBornBySelf",
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -2125,7 +2125,7 @@
                 "$type": "ConfigBornBySelf",
                 "IABNJPGBAOH": true
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -2133,7 +2133,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2265,7 +2265,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_Heal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2302,7 +2302,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_HealTalent",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2354,7 +2354,7 @@
                   "targetPredicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Baizhuer_PermanentSkill_2_Param"
+                      "talentParam": "Baizhuer_PermanentSkill_2_Param"
                     }
                   ],
                   "successActions": [
@@ -2676,17 +2676,17 @@
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_CastTalent",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": -1.0,
                       "y": 0.800000011920929,
                       "z": -0.5
                     },
                     "IABNJPGBAOH": true,
-                    "FNMFBPGNEKD": "_ABILITY_Avatar_Baizhuer_Constellation_ShootPos",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Avatar_Baizhuer_Constellation_ShootPos",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerBullet",
@@ -2694,7 +2694,7 @@
                   "RotationDampTime": true,
                   "bulletID": 41082013,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": -1.0,
                       "y": 0.800000011920929,
@@ -2708,8 +2708,8 @@
                       "PGIBJONOAKP": true
                     },
                     "IABNJPGBAOH": true,
-                    "FNMFBPGNEKD": "_ABILITY_Avatar_Baizhuer_Constellation_ShootPos",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Avatar_Baizhuer_Constellation_ShootPos",
+                    "directionKey": ""
                   },
                   "lifeByOwnerIsAlive": true
                 }
@@ -2728,17 +2728,17 @@
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_CastTalent",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 1.0,
                       "y": 0.800000011920929,
                       "z": -0.5
                     },
                     "IABNJPGBAOH": true,
-                    "FNMFBPGNEKD": "_ABILITY_Avatar_Baizhuer_Constellation_ShootPos",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Avatar_Baizhuer_Constellation_ShootPos",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerBullet",
@@ -2746,7 +2746,7 @@
                   "RotationDampTime": true,
                   "bulletID": 41082013,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 1.0,
                       "y": 0.800000011920929,
@@ -2760,8 +2760,8 @@
                       "PGIBJONOAKP": true
                     },
                     "IABNJPGBAOH": true,
-                    "FNMFBPGNEKD": "_ABILITY_Avatar_Baizhuer_Constellation_ShootPos",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Avatar_Baizhuer_Constellation_ShootPos",
+                    "directionKey": ""
                   },
                   "lifeByOwnerIsAlive": true
                 }
@@ -2840,7 +2840,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_BulletTrailTalent",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2956,7 +2956,7 @@
                       "$type": "TriggerBullet",
                       "bulletID": 41082013,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "offset": {
                           "y": 1.2000000476837158
                         },
@@ -2969,8 +2969,8 @@
                           "PGIBJONOAKP": true
                         },
                         "IABNJPGBAOH": true,
-                        "FNMFBPGNEKD": "_ABILITY_Baizhuer_ElementalArt_Bullet_01_BornPosGV",
-                        "GPPNNKAOHCG": ""
+                        "positionKey": "_ABILITY_Baizhuer_ElementalArt_Bullet_01_BornPosGV",
+                        "directionKey": ""
                       }
                     }
                   ],
@@ -2979,7 +2979,7 @@
                       "$type": "TriggerBullet",
                       "bulletID": 41082014,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "offset": {
                           "y": 1.2000000476837158
                         },
@@ -2992,8 +2992,8 @@
                           "PGIBJONOAKP": true
                         },
                         "IABNJPGBAOH": true,
-                        "FNMFBPGNEKD": "_ABILITY_Baizhuer_ElementalArt_Bullet_01_BornPosGV",
-                        "GPPNNKAOHCG": ""
+                        "positionKey": "_ABILITY_Baizhuer_ElementalArt_Bullet_01_BornPosGV",
+                        "directionKey": ""
                       },
                       "ownerIs": "OriginOwner",
                       "lifeByOwnerIsAlive": true,
@@ -3051,7 +3051,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "Self",
-                  "GFIOLOJIDMG": "Baizhuer_Talent6_Param"
+                  "talentParam": "Baizhuer_Talent6_Param"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -3160,7 +3160,7 @@
                   "$type": "AttachEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_MonsterHeadTalent",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -3168,7 +3168,7 @@
                   "$type": "AttachEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_MonsterHeadTalent_2",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -3181,14 +3181,14 @@
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_MonsterHeadTalent",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_MonsterHeadTalent_2",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -3208,7 +3208,7 @@
                 "$type": "ConfigBornByCollisionPoint",
                 "IABNJPGBAOH": true
               },
-              "BMCPFKAEOJB": 0.6000000238418579
+              "radius": 0.6000000238418579
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -3216,7 +3216,7 @@
               "attenuationGroup": "Baizhuer_Talent",
               "attackProperty": {
                 "damagePercentage": "Damage_Ratio",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default"
@@ -3253,7 +3253,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Catalyst_Baizhuer_ElementalArt_BulletReturnTrailTalent",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3554,7 +3554,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_BS_Grass",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -3595,7 +3595,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3603,7 +3603,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Default",
@@ -3897,7 +3897,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Self_Grass",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3935,16 +3935,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3953,7 +3953,7 @@
                 "IABNJPGBAOH": true
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3961,7 +3961,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -3998,15 +3998,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4015,7 +4015,7 @@
                 "IABNJPGBAOH": true
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4023,7 +4023,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -4061,12 +4061,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_01_Grass",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -4075,11 +4075,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_02_Grass",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

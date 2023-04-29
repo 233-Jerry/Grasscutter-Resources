@@ -242,7 +242,7 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Common_Build",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -250,7 +250,7 @@
                 }
               },
               "scale": 0.5,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -319,7 +319,7 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Common_Make",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -327,7 +327,7 @@
                 }
               },
               "scale": 0.5,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -394,7 +394,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Common_Mining_Stone",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -441,7 +441,7 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Common_Make",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -449,7 +449,7 @@
                 }
               },
               "scale": 0.5,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -971,18 +971,18 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetWeaponBindState",
               "place": true,
               "equipPartName": "equip01",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 1.0,
                   "y": 0.0,
@@ -1000,30 +1000,30 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "hitBoxNames": ["HitBox"]
             },
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetWeaponBindState",
@@ -1032,8 +1032,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "hitBoxNames": ["HitBox"],
               "setEnable": true
@@ -1041,22 +1041,22 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetWeaponBindState",
@@ -1065,8 +1065,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "hitBoxNames": ["HitBox"],
               "setEnable": true
@@ -1074,11 +1074,11 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1089,18 +1089,18 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetWeaponBindState",
               "place": true,
               "equipPartName": "equip02",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -1.25,
                   "y": 0.0,
@@ -1118,30 +1118,30 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "hitBoxNames": ["HitBox"]
             },
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetWeaponBindState",
@@ -1150,8 +1150,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "hitBoxNames": ["HitBox"],
               "setEnable": true
@@ -1159,22 +1159,22 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetWeaponBindState",
@@ -1183,8 +1183,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "hitBoxNames": ["HitBox"],
               "setEnable": true
@@ -1192,11 +1192,11 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1207,11 +1207,11 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetWeaponBindState",
@@ -1237,30 +1237,30 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "hitBoxNames": ["HitBox"]
             },
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetWeaponBindState",
@@ -1269,8 +1269,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "hitBoxNames": ["HitBox"],
               "setEnable": true
@@ -1278,22 +1278,22 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetWeaponBindState",
@@ -1302,8 +1302,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "hitBoxNames": ["HitBox"],
               "setEnable": true
@@ -1311,11 +1311,11 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1440,12 +1440,12 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "canBeHandledOnRecover": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerHideWeapon",
@@ -1455,8 +1455,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "canBeHandledOnRecover": true,
               "hitBoxNames": ["HitBox"]
@@ -1482,8 +1482,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "hitBoxNames": ["HitBox"],
               "setEnable": true
@@ -1491,11 +1491,11 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1506,12 +1506,12 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "canBeHandledOnRecover": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerHideWeapon",
@@ -1521,8 +1521,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "canBeHandledOnRecover": true,
               "hitBoxNames": ["HitBox"]
@@ -1543,11 +1543,11 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerHideWeapon",
@@ -1557,8 +1557,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "hitBoxNames": ["HitBox"],
               "setEnable": true
@@ -1572,12 +1572,12 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "canBeHandledOnRecover": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerHideWeapon",
@@ -1587,8 +1587,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "canBeHandledOnRecover": true,
               "hitBoxNames": ["HitBox"]
@@ -1609,11 +1609,11 @@
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerHideWeapon",
@@ -1623,8 +1623,8 @@
             {
               "$type": "EnableHitBoxByName",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "hitBoxNames": ["HitBox"],
               "setEnable": true

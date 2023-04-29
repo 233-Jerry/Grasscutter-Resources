@@ -65,7 +65,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Itto_Constellation_6"
+                  "talentParam": "Itto_Constellation_6"
                 }
               ],
               "successActions": [
@@ -452,7 +452,7 @@
                   "targetPredicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Itto_Constellation_6"
+                      "talentParam": "Itto_Constellation_6"
                     }
                   ],
                   "successActions": [
@@ -531,7 +531,7 @@
                   "targetPredicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Itto_Constellation_6"
+                      "talentParam": "Itto_Constellation_6"
                     }
                   ],
                   "successActions": [
@@ -595,7 +595,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Itto_Constellation_6"
+                  "talentParam": "Itto_Constellation_6"
                 }
               ],
               "successActions": [
@@ -674,16 +674,16 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_Attack_04_Cast",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_Attack_04_Weapon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -892,7 +892,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Loop_DamagePercentage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Blunt",
@@ -904,7 +904,7 @@
                     "hitImpulseType": "LV4",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 250.0,
+                      "hitImpulseX": 250.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByAttackerForward",
@@ -960,7 +960,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Loop_DamagePercentage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Blunt",
@@ -972,7 +972,7 @@
                     "hitImpulseType": "LV4",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 250.0,
+                      "hitImpulseX": 250.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByAttackerForward",
@@ -1027,7 +1027,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Loop_DamagePercentage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Blunt",
@@ -1039,7 +1039,7 @@
                     "hitImpulseType": "LV4",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 250.0,
+                      "hitImpulseX": 250.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByAttackerForward",
@@ -1114,7 +1114,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Loop_DamagePercentage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -1126,7 +1126,7 @@
                     "hitImpulseType": "LV4",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 250.0,
+                      "hitImpulseX": 250.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByAttackerForward",
@@ -1182,7 +1182,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Loop_DamagePercentage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -1194,7 +1194,7 @@
                     "hitImpulseType": "LV4",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 250.0,
+                      "hitImpulseX": 250.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByAttackerForward",
@@ -1249,7 +1249,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Loop_DamagePercentage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -1261,7 +1261,7 @@
                     "hitImpulseType": "LV4",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 250.0,
+                      "hitImpulseX": 250.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByAttackerForward",
@@ -1542,7 +1542,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ExtraAttack_TipEffect_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -1551,7 +1551,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "PRIVATE_GhostBuff"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerSetVisible"
@@ -1628,7 +1628,7 @@
                       }
                     ],
                     "born": {
-                      "$type": "GJGFFJAGIDF"
+                      "$type": "ConfigBornByTarget"
                     },
                     "gadgetID": 41057001,
                     "campID": 1001,
@@ -1878,7 +1878,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "gadgetID": 41057001,
               "campID": 1001,
@@ -1947,7 +1947,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "gadgetID": 41057001,
               "campID": 1001,
@@ -2036,7 +2036,7 @@
                 "attachPointName": "Point1",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -2054,7 +2054,7 @@
                 "attachPointName": "Point2",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -2072,7 +2072,7 @@
                 "attachPointName": "Point3",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -2090,7 +2090,7 @@
                 "attachPointName": "Point4",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -2108,7 +2108,7 @@
                 "attachPointName": "Point5",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2128,7 +2128,7 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Itto_Constellation_6"
+              "talentParam": "Itto_Constellation_6"
             }
           ],
           "successActions": [
@@ -2154,9 +2154,9 @@
                       },
                       "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_Constellation_Saving",
                       "born": {
-                        "$type": "GJGFFJAGIDF"
+                        "$type": "ConfigBornByTarget"
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "SetAnimatorTrigger",
@@ -2207,9 +2207,9 @@
                       },
                       "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_Constellation_Saving",
                       "born": {
-                        "$type": "GJGFFJAGIDF"
+                        "$type": "ConfigBornByTarget"
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "SetAnimatorTrigger",
@@ -2287,9 +2287,9 @@
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_Mask_Disappear",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -2417,7 +2417,7 @@
                 "attachPointName": "Point1",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2452,7 +2452,7 @@
                 "attachPointName": "Point2",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2487,7 +2487,7 @@
                 "attachPointName": "Point3",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2522,7 +2522,7 @@
                 "attachPointName": "Point4",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2551,7 +2551,7 @@
                 "attachPointName": "Point5",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2689,7 +2689,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalArt_Strike",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ActCameraShake",
@@ -2880,12 +2880,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalArt_Hand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalArt_Rune",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2928,12 +2928,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalArt_AimAlert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalArt_AimAlert_Hand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2964,7 +2964,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalArt_Aim_Line",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3106,9 +3106,9 @@
           "$type": "CreateGadget",
           "RotationDampTime": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_ABILITY_Itto_OniBull_Pos",
-            "GPPNNKAOHCG": "_ABILITY_Itto_OniBull_Dir"
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_ABILITY_Itto_OniBull_Pos",
+            "directionKey": "_ABILITY_Itto_OniBull_Dir"
           },
           "gadgetID": 41057003,
           "campID": 1001,
@@ -3125,12 +3125,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalArt_OniBull_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalArt_OniBull_Bullet_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -3182,20 +3182,20 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -1.0,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "_ABILITY_Itto_OniBull_Pos",
-                    "GPPNNKAOHCG": "_ABILITY_Itto_OniBull_Dir"
+                    "positionKey": "_ABILITY_Itto_OniBull_Pos",
+                    "directionKey": "_ABILITY_Itto_OniBull_Dir"
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 3.5
+                  "radius": 3.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -3203,7 +3203,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Ratio",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -3215,7 +3215,7 @@
                     "hitImpulseType": "LV5",
                     "overrideHitImpulse": {
                       "hitLevel": "Air",
-                      "IPHCEFBMJAJ": 100.0,
+                      "hitImpulseX": 100.0,
                       "hitImpulseY": 600.0
                     },
                     "retreatType": "ByHitDirection",
@@ -3240,7 +3240,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalArt_OniBull_Audio",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3328,7 +3328,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ganyu_Dummy_Taunted",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -3379,7 +3379,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -3410,7 +3410,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalArt_OniBull_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3501,7 +3501,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -3513,7 +3513,7 @@
                     },
                     "height": 0.4000000059604645,
                     "BAPAHIOBNCL": 30.0,
-                    "BMCPFKAEOJB": 1.399999976158142
+                    "radius": 1.399999976158142
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -3542,7 +3542,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalBurst_Camera_Thirdparty",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -3607,7 +3607,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR3",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "PLJPAAFMNAD": -3.0,
               "LNPFPGALPJH": 2.0,
@@ -3667,12 +3667,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalBurst_Body",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalBurst_Hand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3717,7 +3717,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalBurst_Burst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3895,7 +3895,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalBurst_Ghost_Body",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3932,7 +3932,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Itto_Constellation_4"
+                  "talentParam": "Itto_Constellation_4"
                 }
               ],
               "abilityName": "Avatar_Itto_Constellation_4"
@@ -4337,14 +4337,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalBurst_Weapon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Claymore_Itto_ElementalBurst_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4537,7 +4537,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Self_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4548,12 +4548,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Self",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4599,7 +4599,7 @@
                           "z": 1.0
                         }
                       },
-                      "BMCPFKAEOJB": 1.0
+                      "radius": 1.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -4607,7 +4607,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Rock",
                         "bonusCriticalHurt": 0.0,
                         "strikeType": "Slash",
@@ -4639,7 +4639,7 @@
                           "z": 1.0
                         }
                       },
-                      "BMCPFKAEOJB": 1.0
+                      "radius": 1.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -4647,7 +4647,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 0.0,
                         "overrideByWeapon": true,
                         "strikeType": "Slash",
@@ -4812,7 +4812,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4823,7 +4823,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5001,16 +5001,16 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_01",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": -0.5,
@@ -5018,7 +5018,7 @@
                         }
                       },
                       "height": 2.0,
-                      "BMCPFKAEOJB": 4.0
+                      "radius": 4.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -5026,7 +5026,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Rock",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Blunt",
@@ -5062,16 +5062,16 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_02",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": -0.5,
@@ -5079,7 +5079,7 @@
                         }
                       },
                       "height": 2.0,
-                      "BMCPFKAEOJB": 6.0
+                      "radius": 6.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -5087,7 +5087,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Rock",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Blunt",
@@ -5137,16 +5137,16 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_01",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": -0.5,
@@ -5154,7 +5154,7 @@
                         }
                       },
                       "height": 2.0,
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -5162,7 +5162,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 25.0,
                         "overrideByWeapon": true,
                         "strikeType": "Blunt",
@@ -5198,16 +5198,16 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_02",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": -0.5,
@@ -5215,7 +5215,7 @@
                         }
                       },
                       "height": 2.0,
-                      "BMCPFKAEOJB": 5.0
+                      "radius": 5.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -5223,7 +5223,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 25.0,
                         "overrideByWeapon": true,
                         "strikeType": "Blunt",
@@ -5271,37 +5271,37 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01", "ATK01_Ghost"],
           "damagePercentage": "NormalAttack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02", "ATK02_Ghost"],
           "damagePercentage": "NormalAttack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03", "ATK03_Ghost"],
           "damagePercentage": "NormalAttack_03_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04", "ATK04_Ghost"],
           "damagePercentage": "NormalAttack_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack", "ExtraAttack_Ghost"],
           "damagePercentage": "ExtraAttack_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack_03", "ExtraAttack_03_Ghost"],
           "damagePercentage": "ExtraAttack_03_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -5457,7 +5457,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": ["FIGHT_PROP_CUR_DEFENSE", "Defence_Ratio", "MUL"],
               "predicates": [
                 {
@@ -5775,7 +5775,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "JGEEKIDDFGM": "CritDamage_Ratio"
             }
           ]

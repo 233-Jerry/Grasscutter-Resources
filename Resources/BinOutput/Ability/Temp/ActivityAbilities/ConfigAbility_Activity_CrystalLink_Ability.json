@@ -37,7 +37,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "UltimateSkillDamageUpLevel1"
+              "damagePercentageRatio": "UltimateSkillDamageUpLevel1"
             }
           ],
           "isLimitedProperties": true
@@ -51,7 +51,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "UltimateSkillDamageUpLevel2"
+              "damagePercentageRatio": "UltimateSkillDamageUpLevel2"
             }
           ],
           "isLimitedProperties": true
@@ -65,7 +65,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "UltimateSkillDamageUpLevel3"
+              "damagePercentageRatio": "UltimateSkillDamageUpLevel3"
             }
           ],
           "isLimitedProperties": true
@@ -513,7 +513,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "NormalAttackDamageUpRate1"
+              "damagePercentageRatio": "NormalAttackDamageUpRate1"
             }
           ],
           "isLimitedProperties": true
@@ -534,7 +534,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "NormalAttackDamageUpRate2"
+              "damagePercentageRatio": "NormalAttackDamageUpRate2"
             }
           ],
           "isLimitedProperties": true
@@ -555,7 +555,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "NormalAttackDamageUpRate3"
+              "damagePercentageRatio": "NormalAttackDamageUpRate3"
             }
           ],
           "isLimitedProperties": true
@@ -1017,7 +1017,7 @@
                 "Elemental_Art_Hold",
                 "Elemental_Art_Extra"
               ],
-              "MKLAMNDEDGB": "SkillDamageUp1"
+              "damagePercentageRatio": "SkillDamageUp1"
             }
           ],
           "isLimitedProperties": true
@@ -1035,7 +1035,7 @@
                 "Elemental_Art_Hold",
                 "Elemental_Art_Extra"
               ],
-              "MKLAMNDEDGB": "SkillDamageUp2"
+              "damagePercentageRatio": "SkillDamageUp2"
             }
           ],
           "isLimitedProperties": true
@@ -1053,7 +1053,7 @@
                 "Elemental_Art_Hold",
                 "Elemental_Art_Extra"
               ],
-              "MKLAMNDEDGB": "SkillDamageUp3"
+              "damagePercentageRatio": "SkillDamageUp3"
             }
           ],
           "isLimitedProperties": true
@@ -1341,7 +1341,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "UltimateSkillDamageUpLevel1"
+              "damagePercentageRatio": "UltimateSkillDamageUpLevel1"
             }
           ],
           "isLimitedProperties": true
@@ -1355,7 +1355,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "UltimateSkillDamageUpLevel2"
+              "damagePercentageRatio": "UltimateSkillDamageUpLevel2"
             }
           ],
           "isLimitedProperties": true
@@ -1369,7 +1369,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "UltimateSkillDamageUpLevel3"
+              "damagePercentageRatio": "UltimateSkillDamageUpLevel3"
             }
           ],
           "isLimitedProperties": true
@@ -1969,7 +1969,7 @@
                 "ExtraAttack_BS",
                 "ExtraAttack_Charge"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "CriticalUpValue1"
             }
           ],
@@ -1991,7 +1991,7 @@
                 "ExtraAttack_BS",
                 "ExtraAttack_Charge"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "CriticalUpValue2"
             }
           ],
@@ -2013,7 +2013,7 @@
                 "ExtraAttack_BS",
                 "ExtraAttack_Charge"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "CriticalUpValue3"
             }
           ],
@@ -2910,7 +2910,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "FrozenDamageUpRate1",
+              "damagePercentageRatio": "FrozenDamageUpRate1",
               "predicates": [
                 {
                   "$type": "KPIBLFBHELB",
@@ -2930,7 +2930,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "FrozenDamageUpRate2",
+              "damagePercentageRatio": "FrozenDamageUpRate2",
               "predicates": [
                 {
                   "$type": "KPIBLFBHELB",
@@ -2950,7 +2950,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "FrozenDamageUpRate3",
+              "damagePercentageRatio": "FrozenDamageUpRate3",
               "predicates": [
                 {
                   "$type": "KPIBLFBHELB",
@@ -3299,7 +3299,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": ["AtkUpRate", "CurLevel", "MUL"]
+              "damagePercentageRatio": ["AtkUpRate", "CurLevel", "MUL"]
             }
           ],
           "onAdded": [
@@ -3739,7 +3739,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 "UltimateSkillDamageUpRatio",
                 "FIGHT_PROP_CUR_HP",
                 "MUL",
@@ -3754,7 +3754,7 @@
                 "Elemental_Art_Hold",
                 "Elemental_Art_Extra"
               ],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 "SkillDamageUpRatio",
                 "FIGHT_PROP_CUR_HP",
                 "MUL",
@@ -4001,7 +4001,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Common_DeathRattle_Corruption_Explode",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -4118,7 +4118,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Common_Corruption_LoseHP",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },

@@ -454,7 +454,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "WindMagic_Arrow_Glow_WithoutWind_Once"
@@ -466,7 +466,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Faruzan_ElementalArt_COUNT",
                   "ratio": 1.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -482,7 +482,7 @@
                         "Faruzan_AimShoot_Enchanted_Ratio",
                         "MUL"
                       ],
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ],
@@ -501,7 +501,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_Enchanted_Time",
                       "ratio": 4.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ],
@@ -524,7 +524,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Faruzan_ElementalArt_COUNT",
                   "ratio": 1.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -544,7 +544,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Glow_Once_05",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -558,12 +558,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Faruzan_ElementalArt_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Glow_Loop_05",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -577,12 +577,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Faruzan_ElementalArt_COUNT",
                   "ratio": 1.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Glow_Loop_05",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -595,7 +595,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Faruzan_HurricaneArrow_Glow_Once",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -608,7 +608,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Glow_Loop_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -620,7 +620,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Faruzan_ElementalArt_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "ratio": 1.0,
@@ -639,12 +639,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Glow_Once_04",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Glow_Loop_04",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -656,12 +656,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_HurricaneArrow_Burst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_HurricaneArrow_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -677,7 +677,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Faruzan_ElementalArt_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
@@ -697,7 +697,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Faruzan_ElementalArt_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
@@ -763,7 +763,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Bow_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -787,7 +787,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Faruzan_ElementalArt_COUNT",
               "ratio": 1.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -803,7 +803,7 @@
                     "Faruzan_AimShoot_Enchanted_Ratio",
                     "MUL"
                   ],
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -840,7 +840,7 @@
                     "IABNJPGBAOH": true,
                     "attachPointName": "WeaponR"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "AddGlobalValue",
@@ -860,7 +860,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_Enchanted_Time",
                       "ratio": 3.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "LessAndEqual"
                     }
                   ],
@@ -888,7 +888,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_Enchanted_Time",
                       "ratio": 3.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "LessAndEqual"
                     }
                   ],
@@ -903,7 +903,7 @@
                     "IABNJPGBAOH": true,
                     "attachPointName": "WeaponR"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -916,7 +916,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 4.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -944,7 +944,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 3.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "LessAndEqual"
                 }
               ],
@@ -972,7 +972,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 4.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -987,7 +987,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "WeaponR"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -996,7 +996,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 3.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "LessAndEqual"
                 }
               ],
@@ -1011,7 +1011,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "WeaponR"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1022,7 +1022,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -1075,7 +1075,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1117,7 +1117,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1159,7 +1159,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1208,7 +1208,7 @@
             },
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1250,7 +1250,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1291,37 +1291,37 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK01"],
           "damagePercentage": "NormalAttack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK02"],
           "damagePercentage": "NormalAttack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK03"],
           "damagePercentage": "NormalAttack_03_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK04"],
           "damagePercentage": "NormalAttack_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK05"],
           "damagePercentage": "NormalAttack_05_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK06"],
           "damagePercentage": "NormalAttack_06_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -1358,7 +1358,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ganyu_Arrow_Fly_Small",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1383,7 +1383,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ganyu_Arrow_Fly_Big",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1450,7 +1450,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "DamageWithWind",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -1523,7 +1523,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "DamageWithoutWind",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 10.0,
@@ -1572,12 +1572,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Fly_Particle_1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Fly_Trail_1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1641,7 +1641,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Faruzan_Arrow_Fly_Big",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1770,7 +1770,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1781,7 +1781,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1828,7 +1828,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -1836,7 +1836,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Pierce",
                     "enBreak": 10.0,
@@ -1986,11 +1986,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2151,16 +2151,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -2168,7 +2168,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -2176,7 +2176,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 50.0,
@@ -2198,15 +2198,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -2214,7 +2214,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -2222,7 +2222,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 100.0,
@@ -2244,12 +2244,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2258,11 +2258,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2298,16 +2298,16 @@
               "target": "Caster",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
-                    "FNMFBPGNEKD": "_ABILITY_Faruzan_ElementalArt_DamagePos",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Faruzan_ElementalArt_DamagePos",
+                    "directionKey": ""
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -2315,7 +2315,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "enBreak": 200.0
@@ -2351,14 +2351,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_ElementalArt_HurricaneArrow1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_ElementalArt_MaskDisappeared",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2370,14 +2370,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_ElementalArt_HurricaneArrow2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_ElementalArt_MaskDisappeared",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2462,12 +2462,12 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_ElementalArt_Cast",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_ABILITY_Faruzan_ElementalArt_Pos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Faruzan_ElementalArt_Pos",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "isDynamicAbility": true
@@ -2497,7 +2497,7 @@
                     "$type": "ConfigBornBySelf",
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -2505,7 +2505,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Faruzan_Wind_Arashi_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -2543,7 +2543,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_WindBlade_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2563,12 +2563,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Fly_Trail_2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Fly_Particle_2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2633,7 +2633,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "First_Bullet_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -2686,12 +2686,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Faruzan_WindMagic_Constellation6_Arrow_Fly_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Faruzan_WindMagic_Constellation6_Arrow_Fly_Particle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2756,7 +2756,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "First_Bullet_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -2817,7 +2817,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_WindZone_Attach_Mask",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -2829,7 +2829,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_WindZone_Attach_Mask_OnAvatar",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2847,7 +2847,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_ElementalArt_WindZone_Attach",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -2863,7 +2863,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_ElementalArt_WindZone_Attach_OnAvatar",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -2969,7 +2969,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfoMap": {
                   "Enemy": {
@@ -2978,7 +2978,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": "WindBlackHole_Gadget_Damage",
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Wind",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Default",
@@ -2998,7 +2998,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Wind",
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Default",
@@ -3047,7 +3047,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfoMap": {
                   "Enemy": {
@@ -3056,7 +3056,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": "WindBlackHole_Gadget_Damage",
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Wind",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Default",
@@ -3076,7 +3076,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Wind",
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Default",
@@ -3202,7 +3202,7 @@
           "$type": "CreateGadget",
           "RotationDampTime": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -3217,8 +3217,8 @@
               }
             },
             "IABNJPGBAOH": true,
-            "FNMFBPGNEKD": "Faruzan_RootNode_Pos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "Faruzan_RootNode_Pos",
+            "directionKey": ""
           },
           "gadgetID": 41076015,
           "campID": 1001,
@@ -3236,7 +3236,7 @@
           "$type": "CreateGadget",
           "RotationDampTime": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -3251,8 +3251,8 @@
               }
             },
             "IABNJPGBAOH": true,
-            "FNMFBPGNEKD": "Faruzan_Fx_ChestNode_Pos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "Faruzan_Fx_ChestNode_Pos",
+            "directionKey": ""
           },
           "gadgetID": 41076015,
           "campID": 1001,
@@ -3270,7 +3270,7 @@
           "$type": "CreateGadget",
           "RotationDampTime": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -3285,8 +3285,8 @@
               }
             },
             "IABNJPGBAOH": true,
-            "FNMFBPGNEKD": "Faruzan_Fx_ChestNode_Constellation6_Pos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "Faruzan_Fx_ChestNode_Constellation6_Pos",
+            "directionKey": ""
           },
           "gadgetID": 41076015,
           "campID": 1001,
@@ -3320,7 +3320,7 @@
                 "$type": "ConfigBornBySelf",
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3353,7 +3353,7 @@
                 "$type": "ConfigBornBySelf",
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3393,7 +3393,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfoMap": {
                   "Enemy": {
@@ -3402,7 +3402,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": "WindBlackHole_Gadget_Damage",
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Wind",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Default",
@@ -3422,7 +3422,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Wind",
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Default",
@@ -3581,7 +3581,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 2.5,
@@ -3599,7 +3599,7 @@
             "$type": "ConfigBornBySelf",
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onKill": [
@@ -3638,7 +3638,7 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ActCameraRadialBlur",
@@ -3688,7 +3688,7 @@
                     "$type": "ConfigBornBySelf",
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 6.300000190734863
+                  "radius": 6.300000190734863
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -3696,7 +3696,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Faruzan_ElementalBurst_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "enBreak": 200.0
@@ -3792,7 +3792,7 @@
             },
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3877,7 +3877,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValue",
@@ -3989,7 +3989,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "Caster",
-                  "GFIOLOJIDMG": "TalentParam_Faruzan_PermanentSkill_2"
+                  "talentParam": "TalentParam_Faruzan_PermanentSkill_2"
                 }
               ],
               "modifierName": "UNIQUE_Avatar_Faruzan_ElementalBurst_WindDamageValueUp_Handler"
@@ -4001,7 +4001,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "Caster",
-                  "GFIOLOJIDMG": "Faruzan_Constellation_6"
+                  "talentParam": "Faruzan_Constellation_6"
                 }
               ],
               "modifierName": "UNIQUE_Avatar_Faruzan_ElementalBurst_WindCriticalHurtUp"
@@ -4013,7 +4013,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "Caster",
-                  "GFIOLOJIDMG": "Faruzan_Constellation_6"
+                  "talentParam": "Faruzan_Constellation_6"
                 }
               ],
               "modifierName": "UNIQUE_Avatar_Faruzan_ElementalBurst_AutoHurricaneArrow"
@@ -4072,7 +4072,7 @@
                 "Elemental_Art_Extra",
                 "Elemental_Burst"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": [
                 "ExtraDamageRatio",
                 "FIGHT_PROP_BASE_ATTACK",
@@ -4150,7 +4150,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "JGEEKIDDFGM": "CriticalHurtUpRatio",
               "predicates": [
                 {
@@ -4247,7 +4247,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_WindZone_Attach_Mask",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4265,7 +4265,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Faruzan_ElementalArt_WindZone_Attach",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -4325,7 +4325,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfoMap": {
                   "Enemy": {
@@ -4334,7 +4334,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": "WindBlackHole_Gadget_Damage",
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Wind",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Default",
@@ -4354,7 +4354,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Wind",
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Default",
@@ -4444,7 +4444,7 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4467,7 +4467,7 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4568,7 +4568,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "TalentParam_Faruzan_PermanentSkill_1"
+                  "talentParam": "TalentParam_Faruzan_PermanentSkill_1"
                 }
               ],
               "successActions": [
@@ -4626,7 +4626,7 @@
                   "RotationDampTime": true,
                   "key": "Faruzan_ElementBall_Pos",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
                   "setTarget": false
                 },
@@ -4672,7 +4672,7 @@
               "RotationDampTime": true,
               "configID": 2021,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -4683,8 +4683,8 @@
                   "OKDPGGJGGCJ": 0.5,
                   "CPOKKADJBFH": 1.5
                 },
-                "FNMFBPGNEKD": "Faruzan_ElementBall_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "Faruzan_ElementBall_Pos",
+                "directionKey": ""
               },
               "value": 1.0,
               "baseEnergy": 6.0
@@ -4855,7 +4855,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "Self",
-                  "GFIOLOJIDMG": "Faruzan_Constellation_4"
+                  "talentParam": "Faruzan_Constellation_4"
                 }
               ],
               "successActions": [
@@ -4969,7 +4969,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Faruzan_HurricaneArrow_SpecialReady",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [

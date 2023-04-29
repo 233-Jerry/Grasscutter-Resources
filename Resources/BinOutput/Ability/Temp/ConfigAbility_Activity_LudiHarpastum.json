@@ -35,7 +35,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_Racket_Swing",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -43,7 +43,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_Racket_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -309,7 +309,7 @@
                 "attachPointName": "FocusAnchor",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -366,7 +366,7 @@
                 "attachPointName": "FocusAnchor",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -458,7 +458,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_Serve_Charge",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DummyAction"
@@ -736,7 +736,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_Racket_Swing",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -744,7 +744,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_Racket_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -781,7 +781,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -793,7 +793,7 @@
                   },
                   "height": 3.0,
                   "BAPAHIOBNCL": 240.0,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "Activity_LudiHarpastum_Hit",
@@ -801,7 +801,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "damageExtra": 0.0
                   },
@@ -863,7 +863,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_LudiHarpastum_BasicTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -874,7 +874,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_LudiHarpastum_FireTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -885,7 +885,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_LudiHarpastum_WaterTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -896,7 +896,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_LudiHarpastum_ElectroTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -933,7 +933,7 @@
               "z": -0.5
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -969,7 +969,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "damageExtra": 0.0
               },
@@ -994,12 +994,12 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "Activity_LudiHarpastum_ParabolaBall_Hit",
@@ -1007,7 +1007,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 25.0,
                 "damageExtra": 0.0
@@ -1033,12 +1033,12 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "Activity_LudiHarpastum_ParabolaBall_Hit",
@@ -1046,7 +1046,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "damageExtra": 0.0
@@ -1072,12 +1072,12 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "Activity_LudiHarpastum_ParabolaBall_Hit",
@@ -1085,7 +1085,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "damageExtra": 0.0
@@ -1377,7 +1377,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1388,7 +1388,7 @@
                     }
                   },
                   "height": 2.200000047683716,
-                  "BMCPFKAEOJB": 2.4000000953674316
+                  "radius": 2.4000000953674316
                 },
                 "attackInfo": {
                   "attackTag": "Activity_LudiHarpastum_ParabolaBall_Hit",
@@ -1396,7 +1396,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "damageExtra": 0.0
                   },
@@ -1561,7 +1561,7 @@
               "$type": "SetGlobalPos",
               "key": "BallPos",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1675,9 +1675,9 @@
                   "target": "Applier",
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_Serve_BallHit_Prefect",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -1686,9 +1686,9 @@
                   "target": "Applier",
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_Serve_BallHit_Good",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1760,16 +1760,16 @@
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeA_OnShoot",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
               "RotationDampTime": true,
               "bulletID": 44000113,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1785,8 +1785,8 @@
                   "JPOJHLOIKLG": 3.0,
                   "MPNLAACKHNA": 3.0
                 },
-                "FNMFBPGNEKD": "BallPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "BallPos",
+                "directionKey": ""
               }
             }
           ]
@@ -1895,7 +1895,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BadmintonBasic_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -1907,7 +1907,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BadmintonSoil_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -1919,7 +1919,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BadmintonIce_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -1931,7 +1931,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BadmintonCurve_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -1943,7 +1943,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BadmintonSpeed_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -1955,7 +1955,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BadmintonAttract_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1966,21 +1966,21 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Is_LudiHarpastum_Ball_Perfect",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "successActions": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Badminton_01_Hit_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "failActions": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Badminton_01_Hit_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2011,7 +2011,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "damageExtra": 0.0
               },
@@ -2476,7 +2476,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeA_Charge",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -2488,7 +2488,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeB_Charge",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -2500,7 +2500,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeC_Charge",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DummyAction"
@@ -3098,14 +3098,14 @@
               "target": "Caster",
               "key": "_ActivityAbility_Shoot_POS",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.5,
                   "z": 1.2000000476837158
                 },
-                "FNMFBPGNEKD": "_Temp_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Temp_POS",
+                "directionKey": ""
               }
             },
             {
@@ -3122,19 +3122,19 @@
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeA_OnShoot",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ActivityAbility_Shoot_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerBullet",
                   "bulletID": 44000115,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ActivityAbility_Shoot_POS",
+                    "directionKey": ""
                   }
                 }
               ],
@@ -3153,24 +3153,24 @@
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeB_OnShoot",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
                           "z": 0.0
                         },
-                        "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                        "GPPNNKAOHCG": ""
+                        "positionKey": "_ActivityAbility_Shoot_POS",
+                        "directionKey": ""
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "TriggerBullet",
                       "bulletID": 44000116,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_ActivityAbility_Shoot_POS",
+                        "directionKey": ""
                       }
                     }
                   ],
@@ -3179,19 +3179,19 @@
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeC_OnShoot",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_ActivityAbility_Shoot_POS",
+                        "directionKey": ""
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "TriggerBullet",
                       "bulletID": 44000117,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_ActivityAbility_Shoot_POS",
+                        "directionKey": ""
                       }
                     }
                   ]
@@ -3257,14 +3257,14 @@
               ],
               "key": "_ActivityAbility_Shoot_POS",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.5,
                   "z": 1.2000000476837158
                 },
-                "FNMFBPGNEKD": "_Temp_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Temp_POS",
+                "directionKey": ""
               }
             },
             {
@@ -3278,14 +3278,14 @@
               ],
               "key": "_ActivityAbility_Shoot_POS",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.30000001192092896,
                   "y": 0.0,
                   "z": 1.2000000476837158
                 },
-                "FNMFBPGNEKD": "_Temp_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Temp_POS",
+                "directionKey": ""
               }
             },
             {
@@ -3302,11 +3302,11 @@
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeA_OnShoot",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ActivityAbility_Shoot_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerBullet",
@@ -3323,7 +3323,7 @@
                   ],
                   "bulletID": 44000118,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "HOPPHMEKHLG": {
                       "$type": "DOCDLGLJKND",
                       "NHGDOBINMBK": {
@@ -3334,8 +3334,8 @@
                       "attachPointName": "FocusAnchor",
                       "ABIMPICHJNC": "Self"
                     },
-                    "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ActivityAbility_Shoot_POS",
+                    "directionKey": ""
                   }
                 },
                 {
@@ -3348,7 +3348,7 @@
                   ],
                   "bulletID": 44000118,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "HOPPHMEKHLG": {
                       "$type": "DOCDLGLJKND",
                       "NHGDOBINMBK": {
@@ -3359,8 +3359,8 @@
                       "attachPointName": "FocusAnchor",
                       "ABIMPICHJNC": "Self"
                     },
-                    "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ActivityAbility_Shoot_POS",
+                    "directionKey": ""
                   }
                 }
               ],
@@ -3379,11 +3379,11 @@
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeB_OnShoot",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_ActivityAbility_Shoot_POS",
+                        "directionKey": ""
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "TriggerBullet",
@@ -3400,7 +3400,7 @@
                       ],
                       "bulletID": 44000119,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "HOPPHMEKHLG": {
                           "$type": "DOCDLGLJKND",
                           "NHGDOBINMBK": {
@@ -3411,8 +3411,8 @@
                           "attachPointName": "FocusAnchor",
                           "ABIMPICHJNC": "Self"
                         },
-                        "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                        "GPPNNKAOHCG": ""
+                        "positionKey": "_ActivityAbility_Shoot_POS",
+                        "directionKey": ""
                       }
                     },
                     {
@@ -3425,7 +3425,7 @@
                       ],
                       "bulletID": 44000119,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "HOPPHMEKHLG": {
                           "$type": "DOCDLGLJKND",
                           "NHGDOBINMBK": {
@@ -3436,8 +3436,8 @@
                           "attachPointName": "FocusAnchor",
                           "ABIMPICHJNC": "Self"
                         },
-                        "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                        "GPPNNKAOHCG": ""
+                        "positionKey": "_ActivityAbility_Shoot_POS",
+                        "directionKey": ""
                       }
                     }
                   ],
@@ -3446,11 +3446,11 @@
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeC_OnShoot",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_ActivityAbility_Shoot_POS",
+                        "directionKey": ""
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "TriggerBullet",
@@ -3467,7 +3467,7 @@
                       ],
                       "bulletID": 44000120,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "HOPPHMEKHLG": {
                           "$type": "DOCDLGLJKND",
                           "NHGDOBINMBK": {
@@ -3478,8 +3478,8 @@
                           "attachPointName": "FocusAnchor",
                           "ABIMPICHJNC": "Self"
                         },
-                        "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                        "GPPNNKAOHCG": ""
+                        "positionKey": "_ActivityAbility_Shoot_POS",
+                        "directionKey": ""
                       }
                     },
                     {
@@ -3492,7 +3492,7 @@
                       ],
                       "bulletID": 44000120,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "HOPPHMEKHLG": {
                           "$type": "DOCDLGLJKND",
                           "NHGDOBINMBK": {
@@ -3503,8 +3503,8 @@
                           "attachPointName": "FocusAnchor",
                           "ABIMPICHJNC": "Self"
                         },
-                        "FNMFBPGNEKD": "_ActivityAbility_Shoot_POS",
-                        "GPPNNKAOHCG": ""
+                        "positionKey": "_ActivityAbility_Shoot_POS",
+                        "directionKey": ""
                       }
                     }
                   ]
@@ -3537,7 +3537,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeA_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetSystemValueToOverrideMap",
@@ -3559,14 +3559,14 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
           "target": "Caster",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -3577,14 +3577,14 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
               "attenuationTag": "",
               "attenuationGroup": "default",
               "attackProperty": {
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": "Value_Durability",
                 "ignoreAttackerProperty": true,
@@ -3620,7 +3620,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeB_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetSystemValueToOverrideMap",
@@ -3642,7 +3642,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3659,14 +3659,14 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 6.0
+              "radius": 6.0
             },
             "attackInfo": {
               "attackTag": "",
               "attenuationTag": "",
               "attenuationGroup": "default",
               "attackProperty": {
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": "Value_Durability",
                 "ignoreAttackerProperty": true,
@@ -3702,7 +3702,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_LudiHarpastum_BombTypeC_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetSystemValueToOverrideMap",
@@ -3724,7 +3724,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3741,14 +3741,14 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "",
               "attenuationTag": "",
               "attenuationGroup": "default",
               "attackProperty": {
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": "Value_Durability",
                 "ignoreAttackerProperty": true,

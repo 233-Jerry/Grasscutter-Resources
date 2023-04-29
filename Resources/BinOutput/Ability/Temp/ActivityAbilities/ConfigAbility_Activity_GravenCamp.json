@@ -80,7 +80,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_EnergyDisk_ElementalBurst_Wave_R40",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -92,14 +92,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,

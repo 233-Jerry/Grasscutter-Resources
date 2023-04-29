@@ -103,7 +103,7 @@
               "gadgetID": 42901002,
               "campTargetType": "All",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             }
           ],
@@ -327,7 +327,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_LockOn",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ShowUICombatBar",
@@ -703,7 +703,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_Seal_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1191,7 +1191,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_Seal_HitLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1203,7 +1203,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_SpeedUp",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1235,7 +1235,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_Seal_Explode",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1365,7 +1365,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_AirGun_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1379,7 +1379,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_AirGun_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1391,18 +1391,18 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S02_AirGun_Empty",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S02_AirGun_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
               "bulletID": 42901012,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
@@ -1422,7 +1422,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42901012,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
@@ -1470,7 +1470,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S02_AirGun_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1486,7 +1486,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -1510,14 +1510,14 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
               "attenuationTag": "",
               "attenuationGroup": "default",
               "attackProperty": {
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 20.0,
                 "strikeType": "Blunt",
                 "damageExtra": 1.0
@@ -1595,9 +1595,9 @@
               "target": "CurLocalAvatar",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_AirFlow",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1610,9 +1610,9 @@
               "target": "CurLocalAvatar",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_AirFlow02",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1641,7 +1641,7 @@
             "attenuationTag": "",
             "attenuationGroup": "default",
             "attackProperty": {
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "bonusCriticalHurt": 100.0,
               "damageExtra": 10.0
             }
@@ -1664,7 +1664,7 @@
               "target": "CurLocalAvatar",
               "bulletID": 42901050,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 20.0,
                   "y": 0.0,
@@ -1690,7 +1690,7 @@
               "target": "CurLocalAvatar",
               "bulletID": 42901050,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -20.0,
                   "y": 0.0,
@@ -1726,7 +1726,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_ElementBall_Wind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1747,7 +1747,7 @@
           "$type": "FireEffect",
           "target": "CurLocalAvatar",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_ElementBall_Wind_Absorb",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -1763,7 +1763,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "Dvalin_S01_ElementBall_Wind",
@@ -1771,7 +1771,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0
               }
             }
@@ -1801,7 +1801,7 @@
               "z": 5.599999904632568
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1822,7 +1822,7 @@
               "z": 5.599999904632568
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1843,7 +1843,7 @@
               "z": 5.599999904632568
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1864,7 +1864,7 @@
               "z": 5.599999904632568
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1882,21 +1882,21 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_Erupt",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_FireBarrage",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "target": "CurLocalAvatar",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_SpeedLine",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1963,7 +1963,7 @@
             "configID": 42901008
           },
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2195,7 +2195,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_WindRingBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2213,7 +2213,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_WindRingEmitter",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2238,12 +2238,12 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_WindRingEmitter_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_WindRing",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -2258,7 +2258,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S02_WindRing_Empty",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2275,7 +2275,7 @@
             "configID": 42901008
           },
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2316,11 +2316,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_TrackBarrageBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2349,11 +2349,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_TrackBarrageBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2376,11 +2376,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_TrackBarrageBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2393,7 +2393,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42901054,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "IOPNFLFHGID",
                   "NHGDOBINMBK": {
@@ -2404,8 +2404,8 @@
                   "JPOJHLOIKLG": 15.0,
                   "MPNLAACKHNA": 15.0
                 },
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
               "trackTarget": "CurLocalAvatar"
             }
@@ -2420,7 +2420,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42901054,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "IOPNFLFHGID",
                   "NHGDOBINMBK": {
@@ -2431,8 +2431,8 @@
                   "JPOJHLOIKLG": 15.0,
                   "MPNLAACKHNA": 15.0
                 },
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
               "trackTarget": "CurLocalAvatar"
             }
@@ -2447,7 +2447,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42901054,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "IOPNFLFHGID",
                   "NHGDOBINMBK": {
@@ -2458,8 +2458,8 @@
                   "JPOJHLOIKLG": 15.0,
                   "MPNLAACKHNA": 15.0
                 },
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
               "trackTarget": "CurLocalAvatar"
             }
@@ -2585,7 +2585,7 @@
             "configID": 42901008
           },
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2626,11 +2626,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_TrackBarrageBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2659,11 +2659,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_TrackBarrageBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2686,11 +2686,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_TrackBarrageBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2703,7 +2703,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42901058,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "IOPNFLFHGID",
                   "NHGDOBINMBK": {
@@ -2714,8 +2714,8 @@
                   "JPOJHLOIKLG": 15.0,
                   "MPNLAACKHNA": 15.0
                 },
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
               "trackTarget": "CurLocalAvatar"
             }
@@ -2730,7 +2730,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42901058,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "IOPNFLFHGID",
                   "NHGDOBINMBK": {
@@ -2741,8 +2741,8 @@
                   "JPOJHLOIKLG": 15.0,
                   "MPNLAACKHNA": 15.0
                 },
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
               "trackTarget": "CurLocalAvatar"
             }
@@ -2757,7 +2757,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42901058,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "IOPNFLFHGID",
                   "NHGDOBINMBK": {
@@ -2768,8 +2768,8 @@
                   "JPOJHLOIKLG": 15.0,
                   "MPNLAACKHNA": 15.0
                 },
-                "FNMFBPGNEKD": "TriggerBulletPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "TriggerBulletPos",
+                "directionKey": ""
               },
               "trackTarget": "CurLocalAvatar"
             }
@@ -2872,7 +2872,7 @@
             "configID": 42901008
           },
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -3340,7 +3340,7 @@
             "configID": 42901008
           },
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -3817,7 +3817,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_EnergyBarrageLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -3830,7 +3830,7 @@
           "$type": "FireEffect",
           "target": "CurLocalAvatar",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_EnergyBarrageHit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3843,7 +3843,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_TrackBarrageLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -3856,7 +3856,7 @@
           "$type": "FireEffect",
           "target": "CurLocalAvatar",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_TrackBarrageHit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

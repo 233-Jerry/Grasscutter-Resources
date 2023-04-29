@@ -382,12 +382,12 @@
                 "$type": "ConfigBornByAttachPoint",
                 "HOPPHMEKHLG": {
                   "$type": "BIMJJILMODA",
-                  "GPPNNKAOHCG": "_OCEANID_BEINGHIT_DIR_"
+                  "directionKey": "_OCEANID_BEINGHIT_DIR_"
                 },
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -780,17 +780,17 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_WalkLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_WalkLoop_Trail_Bone_L_Finger_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_WalkLoop_Trail_Bone_R_Finger_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -801,12 +801,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_StandbyLoop_LHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_StandbyLoop_RHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -847,7 +847,7 @@
                 "attachPointName": "BulletAttachPoint",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1009,7 +1009,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_Summon_BulletLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1047,7 +1047,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ShowReminder",
@@ -1145,9 +1145,9 @@
             {
               "$type": "FixedMonsterRushMove",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_RUSHMOVEPOS_",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_RUSHMOVEPOS_",
+                "directionKey": ""
               },
               "timeRange": 1.600000023841858,
               "animatorStateIDs": ["PlatformControl01", "PlatformControl02"],
@@ -1187,7 +1187,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DamageByAttackValue",
@@ -1203,7 +1203,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.5,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Water",
                   "bonusCriticalHurt": 25.0,
                   "enBreak": 10000.0
@@ -1264,7 +1264,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1431,7 +1431,7 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_BornAS",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1444,12 +1444,12 @@
                     "y": 0.0,
                     "z": 0.0
                   },
-                  "GPPNNKAOHCG": "_JUMPPOS_"
+                  "directionKey": "_JUMPPOS_"
                 },
-                "FNMFBPGNEKD": "_JUMPPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_JUMPPOS_",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1531,7 +1531,7 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_BornAS",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1544,12 +1544,12 @@
                     "y": 0.0,
                     "z": 0.0
                   },
-                  "GPPNNKAOHCG": "_JUMPPOS_"
+                  "directionKey": "_JUMPPOS_"
                 },
-                "FNMFBPGNEKD": "_JUMPPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_JUMPPOS_",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1652,7 +1652,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_WaterWaveLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1664,7 +1664,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 2.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Water",
                   "bonusCriticalHurt": 50.0,
                   "enBreak": 100.0
@@ -1691,7 +1691,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_WaterWaveAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -1703,7 +1703,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.5,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Water",
                   "bonusCriticalHurt": 25.0,
                   "enBreak": 1.0
@@ -1872,7 +1872,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1899,7 +1899,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_BornBS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

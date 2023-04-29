@@ -189,7 +189,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "AttackWithShield"
+                  "talentParam": "AttackWithShield"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -202,7 +202,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -213,7 +213,7 @@
                         }
                       },
                       "height": 1.5,
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Art",
@@ -225,7 +225,7 @@
                           "ShieldExtraDamageRatio",
                           "MUL"
                         ],
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Water",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Slash",
@@ -258,7 +258,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -269,7 +269,7 @@
                         }
                       },
                       "height": 1.5,
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Art",
@@ -277,7 +277,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "Spoondrift_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Water",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Slash",
@@ -317,7 +317,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "AttackWithShield"
+                  "talentParam": "AttackWithShield"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -356,7 +356,7 @@
                           "ShieldExtraDamageRatio",
                           "MUL"
                         ],
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Water",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Slash",
@@ -411,7 +411,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "Backwash_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Water",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Slash",
@@ -496,7 +496,7 @@
               "RotationDampTime": true,
               "configID": 2018,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -616,7 +616,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HealOnShieldBreak"
+                  "talentParam": "HealOnShieldBreak"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -748,7 +748,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "OneMoreChance"
+                  "talentParam": "OneMoreChance"
                 }
               ],
               "parameter": "Born",
@@ -761,7 +761,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "OneMoreChance"
+                  "talentParam": "OneMoreChance"
                 }
               ],
               "successActions": [
@@ -861,7 +861,7 @@
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -872,7 +872,7 @@
                     }
                   },
                   "height": 1.0,
-                  "BMCPFKAEOJB": 1.2000000476837158
+                  "radius": 1.2000000476837158
                 },
                 "attackInfo": {
                   "attackTag": "PhantomShield_WaterReact",
@@ -880,7 +880,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -948,7 +948,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HealOnShieldBreak"
+                      "talentParam": "HealOnShieldBreak"
                     },
                     {
                       "$type": "ByTargetGlobalValue",
@@ -1178,7 +1178,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "OneMoreChance"
+                  "talentParam": "OneMoreChance"
                 }
               ],
               "modifierName": "UNIQUE_FX_PhantomShield_Shield_L4"
@@ -1198,7 +1198,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "OneMoreChance"
+                  "talentParam": "OneMoreChance"
                 }
               ],
               "successActions": [
@@ -1216,7 +1216,7 @@
                       }
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -1234,7 +1234,7 @@
                       }
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1249,7 +1249,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "OneMoreChance"
+                  "talentParam": "OneMoreChance"
                 }
               ],
               "parameter": "FullBorn2",
@@ -1270,7 +1270,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "OneMoreChance"
+                      "talentParam": "OneMoreChance"
                     }
                   ]
                 }
@@ -1323,7 +1323,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "OneMoreChance"
+                  "talentParam": "OneMoreChance"
                 }
               ],
               "successActions": [
@@ -1341,7 +1341,7 @@
                       }
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -1359,7 +1359,7 @@
                       }
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1374,7 +1374,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "OneMoreChance"
+                  "talentParam": "OneMoreChance"
                 }
               ],
               "parameter": "FullBorn2",
@@ -1395,7 +1395,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "OneMoreChance"
+                      "talentParam": "OneMoreChance"
                     }
                   ]
                 }
@@ -1448,7 +1448,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "OneMoreChance"
+                  "talentParam": "OneMoreChance"
                 }
               ],
               "successActions": [
@@ -1466,7 +1466,7 @@
                       }
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -1484,7 +1484,7 @@
                       }
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1499,7 +1499,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "OneMoreChance"
+                  "talentParam": "OneMoreChance"
                 }
               ],
               "parameter": "FullBorn2",
@@ -1520,7 +1520,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "OneMoreChance"
+                      "talentParam": "OneMoreChance"
                     }
                   ]
                 }
@@ -1580,7 +1580,7 @@
                   }
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -1818,7 +1818,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "OneMoreChance"
+                  "talentParam": "OneMoreChance"
                 }
               ],
               "successActions": [
@@ -1951,7 +1951,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -1992,7 +1992,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2011,7 +2011,7 @@
                     }
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2019,7 +2019,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "enBreak": 400.0
                   },
@@ -2057,7 +2057,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HealOnShieldBreak"
+                  "talentParam": "HealOnShieldBreak"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -2200,7 +2200,7 @@
                     "targetPredicates": [
                       {
                         "$type": "HJIPPKGIPOC",
-                        "GFIOLOJIDMG": "GoldenRing"
+                        "talentParam": "GoldenRing"
                       }
                     ],
                     "successActions": [
@@ -2242,7 +2242,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "LongBattery"
+                  "talentParam": "LongBattery"
                 }
               ],
               "modifierName": "PhantomShield_Minazuki_DenyLongBattery"
@@ -2288,7 +2288,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "OneMoreChance"
+                  "talentParam": "OneMoreChance"
                 }
               ],
               "successActions": [
@@ -2593,7 +2593,7 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "LongBattery"
+              "talentParam": "LongBattery"
             }
           ],
           "successActions": [
@@ -2653,7 +2653,7 @@
           "RotationDampTime": true,
           "bulletID": 41025012,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 1.0,
               "y": 2.4000000953674316,
@@ -2671,10 +2671,10 @@
                 "y": 0.0,
                 "z": 0.0
               },
-              "GPPNNKAOHCG": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
+              "directionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
             },
-            "FNMFBPGNEKD": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
+            "directionKey": ""
           }
         },
         {
@@ -2682,7 +2682,7 @@
           "RotationDampTime": true,
           "bulletID": 41025013,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": -1.0,
               "y": 2.4000000953674316,
@@ -2700,10 +2700,10 @@
                 "y": 0.0,
                 "z": 0.0
               },
-              "GPPNNKAOHCG": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
+              "directionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
             },
-            "FNMFBPGNEKD": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
+            "directionKey": ""
           }
         }
       ]
@@ -2737,7 +2737,7 @@
           "RotationDampTime": true,
           "bulletID": 41025012,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 1.5,
               "y": 2.4000000953674316,
@@ -2755,10 +2755,10 @@
                 "y": 0.0,
                 "z": 0.0
               },
-              "GPPNNKAOHCG": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
+              "directionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
             },
-            "FNMFBPGNEKD": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
+            "directionKey": ""
           }
         },
         {
@@ -2766,7 +2766,7 @@
           "RotationDampTime": true,
           "bulletID": 41025013,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 2.4000000953674316,
@@ -2784,10 +2784,10 @@
                 "y": 0.0,
                 "z": 0.0
               },
-              "GPPNNKAOHCG": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
+              "directionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
             },
-            "FNMFBPGNEKD": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
+            "directionKey": ""
           }
         },
         {
@@ -2795,7 +2795,7 @@
           "RotationDampTime": true,
           "bulletID": 41025014,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": -1.5,
               "y": 2.4000000953674316,
@@ -2813,10 +2813,10 @@
                 "y": 0.0,
                 "z": 0.0
               },
-              "GPPNNKAOHCG": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
+              "directionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
             },
-            "FNMFBPGNEKD": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
+            "directionKey": ""
           }
         }
       ]
@@ -2850,7 +2850,7 @@
           "RotationDampTime": true,
           "bulletID": 41025017,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 3.0,
               "y": 2.5,
@@ -2863,10 +2863,10 @@
                 "y": -30.0,
                 "z": 0.0
               },
-              "GPPNNKAOHCG": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
+              "directionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
             },
-            "FNMFBPGNEKD": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
+            "directionKey": ""
           }
         },
         {
@@ -2874,7 +2874,7 @@
           "RotationDampTime": true,
           "bulletID": 41025018,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 1.5,
               "y": 2.5,
@@ -2887,10 +2887,10 @@
                 "y": -17.0,
                 "z": 0.0
               },
-              "GPPNNKAOHCG": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
+              "directionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
             },
-            "FNMFBPGNEKD": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
+            "directionKey": ""
           }
         },
         {
@@ -2898,7 +2898,7 @@
           "RotationDampTime": true,
           "bulletID": 41025019,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 2.5,
@@ -2911,10 +2911,10 @@
                 "y": 0.0,
                 "z": 0.0
               },
-              "GPPNNKAOHCG": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
+              "directionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
             },
-            "FNMFBPGNEKD": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
+            "directionKey": ""
           }
         },
         {
@@ -2922,7 +2922,7 @@
           "RotationDampTime": true,
           "bulletID": 41025020,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": -1.5,
               "y": 2.5,
@@ -2935,10 +2935,10 @@
                 "y": 17.0,
                 "z": 0.0
               },
-              "GPPNNKAOHCG": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
+              "directionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
             },
-            "FNMFBPGNEKD": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
+            "directionKey": ""
           }
         },
         {
@@ -2946,7 +2946,7 @@
           "RotationDampTime": true,
           "bulletID": 41025021,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": -3.0,
               "y": 2.5,
@@ -2959,10 +2959,10 @@
                 "y": 30.0,
                 "z": 0.0
               },
-              "GPPNNKAOHCG": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
+              "directionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerDir"
             },
-            "FNMFBPGNEKD": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Xingqiu_PhantomBurst_AttackerPos",
+            "directionKey": ""
           }
         }
       ]
@@ -2992,7 +2992,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_Ready",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3025,7 +3025,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_Ready",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3058,7 +3058,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_Ready",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3091,7 +3091,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_SpecialReady",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3124,7 +3124,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_SpecialReady",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3157,7 +3157,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_SpecialReady",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3190,7 +3190,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_SpecialReady",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3223,7 +3223,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_SpecialReady",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3260,7 +3260,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "LetItDown"
+                  "talentParam": "LetItDown"
                 }
               ],
               "successActions": [
@@ -3312,12 +3312,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_Bullet_Tail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3331,7 +3331,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3344,7 +3344,7 @@
               "z": 1.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3355,7 +3355,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -3363,7 +3363,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 25.0,
@@ -3415,7 +3415,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "LetItDown"
+                  "talentParam": "LetItDown"
                 }
               ],
               "successActions": [
@@ -3466,12 +3466,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_Bullet_Tail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3485,7 +3485,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3498,7 +3498,7 @@
               "z": 3.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3509,7 +3509,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -3517,7 +3517,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 25.0,
@@ -3579,7 +3579,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "LetItDown"
+                  "talentParam": "LetItDown"
                 }
               ],
               "successActions": [
@@ -3635,12 +3635,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_SpecialBullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_SpecialBullet_Tail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3654,7 +3654,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3667,7 +3667,7 @@
               "z": 3.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3678,7 +3678,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -3686,7 +3686,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 25.0,
@@ -3738,7 +3738,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "LetItDown"
+                  "talentParam": "LetItDown"
                 }
               ],
               "successActions": [
@@ -3794,12 +3794,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_SpecialBullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalBurst_Phantom_Attack_SpecialBullet_Tail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3813,7 +3813,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3826,7 +3826,7 @@
               "z": 3.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3837,7 +3837,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -3845,7 +3845,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 25.0,
@@ -3946,61 +3946,61 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01"],
           "damagePercentage": "NormalAttack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02"],
           "damagePercentage": "NormalAttack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03_01"],
           "damagePercentage": "NormalAttack_03_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03_02"],
           "damagePercentage": "NormalAttack_03_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04"],
           "damagePercentage": "NormalAttack_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK05_01"],
           "damagePercentage": "NormalAttack_05_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK05_02"],
           "damagePercentage": "NormalAttack_05_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack_1"],
           "damagePercentage": "ExtraAttack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack_2"],
           "damagePercentage": "ExtraAttack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["Elemental_Burst"],
           "damagePercentage": "Elemental_Burst_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -4131,7 +4131,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Self_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4156,7 +4156,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4192,7 +4192,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -4200,7 +4200,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -4363,7 +4363,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4374,7 +4374,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4545,16 +4545,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4562,7 +4562,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4570,7 +4570,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -4608,15 +4608,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4624,7 +4624,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4632,7 +4632,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -4671,12 +4671,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -4685,11 +4685,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

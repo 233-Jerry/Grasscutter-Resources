@@ -337,7 +337,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SendEffectTrigger",
@@ -531,7 +531,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Common_WaterFlow_01_Vo_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -584,7 +584,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Common_WaterFlow_01_Vo_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -637,7 +637,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Common_WaterFlow_01_Vo",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -661,14 +661,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Build_Elevator_Disc_01_Cover_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Build_Elevator_Disc_01_Cover_Diss",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -801,7 +801,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Build_Elevator_Disc_01_08_Door_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -818,7 +818,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Build_Elevator_Disc_01_08_Door_Diss",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -849,7 +849,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Build_Elevator_Disc_01_08_Door_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -884,7 +884,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "EffectNode1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -940,7 +940,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "EffectNode2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1299,7 +1299,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Level_FCdungeon_BigTree_Light_01",
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "isPlatformDependent": true
             }
           ]
@@ -1362,7 +1362,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "EffectNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

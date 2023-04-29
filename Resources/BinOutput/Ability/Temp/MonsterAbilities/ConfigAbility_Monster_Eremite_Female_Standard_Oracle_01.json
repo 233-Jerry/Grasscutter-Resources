@@ -674,7 +674,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Oracle_Fire_Improve_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -721,7 +721,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Properties_Defense_Down",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -814,7 +814,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 100.0,
                   "ignoreAttackerProperty": true,
@@ -827,7 +827,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Oracle_Fire_Weak_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1067,7 +1067,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Oracle_Fire_RangeAttack01_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1096,7 +1096,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -1112,7 +1112,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -1120,7 +1120,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.25,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1167,7 +1167,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Oracle_Fire_RangeAttack02_Effect",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1178,7 +1178,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Oracle_Fire_RangeAttack02_Effect_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1207,15 +1207,15 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": -1.399999976158142,
                   "y": 0.0,
                   "z": -1.399999976158142
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_FUNELATTACK_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_FUNELATTACK_POS_",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 42570004,
@@ -1237,15 +1237,15 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 1.399999976158142,
                   "y": 0.0,
                   "z": -1.399999976158142
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_FUNELATTACK_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_FUNELATTACK_POS_",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 42570004,
@@ -1267,15 +1267,15 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 1.399999976158142,
                   "y": 0.0,
                   "z": 1.399999976158142
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_FUNELATTACK_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_FUNELATTACK_POS_",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 42570004,
@@ -1297,15 +1297,15 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": -1.399999976158142,
                   "y": 0.0,
                   "z": 1.399999976158142
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_FUNELATTACK_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_FUNELATTACK_POS_",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 42570004,
@@ -1413,7 +1413,7 @@
                     "DAPKLNIFPID": true,
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.600000023841858
+                  "radius": 1.600000023841858
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1421,7 +1421,7 @@
                   "attenuationGroup": "Eremite_Oracle_FunneAttack",
                   "attackProperty": {
                     "damagePercentage": 0.800000011920929,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1509,7 +1509,7 @@
                 {
                   "$type": "TryFindBlinkPointByBorn",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 12.0,
@@ -1575,7 +1575,7 @@
                 {
                   "$type": "TryFindBlinkPointByBorn",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 1.0,
@@ -1743,13 +1743,13 @@
           "born": {
             "$type": "IOHLPEPEKAP"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TurnDirectionToPos",
           "target": "SelfAttackTarget",
           "toPos": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           }
         }
       ]
@@ -1777,7 +1777,7 @@
           "target": "SelfAttackTarget",
           "key": "_EREMITE_ORACLE_LASERATTACK_POS_",
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           },
           "setTarget": false
         }
@@ -1808,7 +1808,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Oracle_Fire_LaserAttack01_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1821,10 +1821,10 @@
           "$type": "TriggerBullet",
           "bulletID": 42570002,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_EREMITE_ORACLE_LASERATTACK_POS_",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_EREMITE_ORACLE_LASERATTACK_POS_",
+            "directionKey": ""
           },
           "GKJDJDACPMC": true
         }
@@ -1889,7 +1889,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Oracle_Fire_LaserAttack01_LaserLine",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2053,7 +2053,7 @@
                 "BJCIHELGKLP": true,
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2115,7 +2115,7 @@
                 "$type": "ConfigBornByCollisionPoint",
                 "DAPKLNIFPID": true
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -2123,7 +2123,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2169,13 +2169,13 @@
                 "BJCIHELGKLP": true,
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2189,7 +2189,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2197,7 +2197,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.800000011920929,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -2252,7 +2252,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Oracle_Fire_ComboAttack01_Effect",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2265,7 +2265,7 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "GKJDJDACPMC": true,
               "gadgetID": 42570008,

@@ -18,7 +18,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -488,7 +488,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Sara_ElementalArt_COUNT",
                   "ratio": 1.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -504,7 +504,7 @@
                         "Sara_AimShoot_Enchanted_Ratio",
                         "MUL"
                       ],
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ],
@@ -523,7 +523,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_Enchanted_Time",
                       "ratio": 4.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ],
@@ -538,7 +538,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "Magic_Arrow_Glow_01"
@@ -553,12 +553,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ExtraAttack_Glow_Once_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ExtraAttack_Glow_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -575,7 +575,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Sara_ElementalArt_COUNT",
                   "ratio": 1.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -595,7 +595,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ExtraAttack_Glow_Once_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -609,12 +609,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Sara_ElementalArt_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ExtraAttack_Glow_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -628,12 +628,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Sara_ElementalArt_COUNT",
                   "ratio": 1.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_KarasShoot_Glow_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -646,7 +646,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ExtraAttack_Glow_Once_01_Talent",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -659,7 +659,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ExtraAttack_Glow_Loop_01_Talent",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -682,12 +682,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_KarasShoot_Glow_Burst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_KarasShoot_Glow_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -703,7 +703,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Sara_ElementalArt_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
@@ -723,7 +723,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Sara_ElementalArt_COUNT",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
@@ -787,7 +787,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Sara_ElementalArt_COUNT",
               "ratio": 1.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -803,7 +803,7 @@
                     "Sara_AimShoot_Enchanted_Ratio",
                     "MUL"
                   ],
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -838,7 +838,7 @@
                     },
                     "attachPointName": "WeaponR"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "RemoveUniqueModifier",
@@ -886,7 +886,7 @@
                     },
                     "attachPointName": "WeaponR"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -899,7 +899,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 4.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -934,7 +934,7 @@
                     },
                     "attachPointName": "WeaponR"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -968,7 +968,7 @@
                     },
                     "attachPointName": "WeaponR"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -981,7 +981,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -1033,7 +1033,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1074,7 +1074,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1115,7 +1115,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1141,7 +1141,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_NormalAttack04_HideSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1178,7 +1178,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1210,7 +1210,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ShootArrow_Big_Attack05_Burst",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1223,7 +1223,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Venti_Arrow_Fly_Small",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1248,7 +1248,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Venti_Arrow_Fly_Big",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1276,12 +1276,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_Arrow_Fly_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_Arrow_Fly_Particle",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1322,7 +1322,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "DamageWithElectric",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -1371,7 +1371,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Venti_Arrow_Fly_Big",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1412,7 +1412,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "DamageWithoutElectric",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 10.0,
@@ -1493,7 +1493,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ElementalArt_ShowSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableHDMesh",
@@ -1513,7 +1513,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_KarasSgoot_Mark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -1567,14 +1567,14 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ElementalArt_HideSpark",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Sara_Constellation_2"
+              "talentParam": "Sara_Constellation_2"
             }
           ],
           "born": {
@@ -1604,12 +1604,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_Arrow_Fly_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_Arrow_Fly_Particle",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1650,7 +1650,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -1724,7 +1724,7 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Predicated",
@@ -1742,7 +1742,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "EDLHKEAJOOL": 0.5,
                       "born": {
@@ -1754,7 +1754,7 @@
                         }
                       },
                       "height": 3.0,
-                      "BMCPFKAEOJB": 6.0
+                      "radius": 6.0
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Art",
@@ -1762,7 +1762,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "KarasShoot_Thunderfall_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Electric",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Default",
@@ -1784,7 +1784,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "EDLHKEAJOOL": 0.5,
                       "born": {
@@ -1796,7 +1796,7 @@
                         }
                       },
                       "height": 3.0,
-                      "BMCPFKAEOJB": 6.0
+                      "radius": 6.0
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Art",
@@ -1808,7 +1808,7 @@
                           "Constellation_2_Ratio",
                           "MUL"
                         ],
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Electric",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Default"
@@ -1860,7 +1860,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "AntiFire",
                   "bonusCriticalHurt": 0.0,
                   "enBreak": 0.0
@@ -1877,7 +1877,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ElementalArt_Trap",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2075,17 +2075,17 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ElementalBurst_ThunderfallAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Sara_ElementalBurst",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Sara_ElementalBurst",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -2109,7 +2109,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2120,7 +2120,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ElementalBurst_Uchiwa",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2181,15 +2181,15 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_ABILITY_Sara_ElementalBurst",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Sara_ElementalBurst",
+            "directionKey": ""
           },
           "gadgetID": 41056012,
           "campID": 1001,
@@ -2255,7 +2255,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2266,7 +2266,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2274,7 +2274,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Burst_Thunderfall_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -2321,7 +2321,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "AntiFire",
                   "bonusCriticalHurt": 0.0,
                   "enBreak": 0.0
@@ -2348,14 +2348,14 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Predicated",
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Sara_Constellation_4"
+                  "talentParam": "Sara_Constellation_4"
                 }
               ],
               "successActions": [
@@ -2680,7 +2680,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "EDLHKEAJOOL": 0.0,
                   "born": {
@@ -2692,7 +2692,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2700,7 +2700,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Burst_AttackWave_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -2754,13 +2754,13 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_AttackWave_Thunderfall_End",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "EDLHKEAJOOL": 0.0,
                   "born": {
@@ -2772,7 +2772,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2780,7 +2780,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Burst_AttackWave_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -2827,7 +2827,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "AntiFire",
                   "bonusCriticalHurt": 0.0,
                   "enBreak": 0.0
@@ -2950,7 +2950,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Bow_Sara_ElementalArt_ElecAddHurt",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveUniqueModifier",
@@ -2958,7 +2958,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Sara_Constellation_6"
+                  "talentParam": "Sara_Constellation_6"
                 }
               ],
               "modifierName": "UNIQUE_Sara_Constellation_6_CriticalHurt"
@@ -2969,7 +2969,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Sara_Constellation_6"
+                  "talentParam": "Sara_Constellation_6"
                 }
               ],
               "modifierName": "UNIQUE_Sara_Constellation_6_CriticalHurt"
@@ -2981,7 +2981,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Sara_PermanentSkill_1"
+                  "talentParam": "Sara_PermanentSkill_1"
                 }
               ],
               "abilityName": "Avatar_Sara_PermanentSkill_1"
@@ -2998,7 +2998,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "JGEEKIDDFGM": "Sara_Constellation_6_CriticalHurt",
               "predicates": [
                 {
@@ -3028,31 +3028,31 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01"],
           "damagePercentage": "NormalAttack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02"],
           "damagePercentage": "NormalAttack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03"],
           "damagePercentage": "NormalAttack_03_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04"],
           "damagePercentage": "NormalAttack_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK05"],
           "damagePercentage": "NormalAttack_05_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -3075,12 +3075,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_ElectricMagic_Arrow_Fly_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_ElectricMagic_Arrow_Fly_Particle",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -3096,7 +3096,7 @@
             },
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3110,7 +3110,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Self"
               },
-              "BMCPFKAEOJB": 2.5
+              "radius": 2.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -3118,7 +3118,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ThunderFall_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 50.0,
@@ -3407,7 +3407,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3418,7 +3418,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3464,7 +3464,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3472,7 +3472,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Pierce",
                     "enBreak": 10.0,
@@ -3622,11 +3622,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3787,16 +3787,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3804,7 +3804,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3812,7 +3812,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 50.0,
@@ -3834,15 +3834,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3850,7 +3850,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3858,7 +3858,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 100.0,
@@ -3880,12 +3880,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3894,11 +3894,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

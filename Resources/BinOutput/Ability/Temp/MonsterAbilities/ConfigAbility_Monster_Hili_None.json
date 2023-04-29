@@ -271,7 +271,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_None_CrossBow_Arrow_BS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -284,7 +284,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_None_CrossBow_Arrow",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -323,7 +323,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 50.0
@@ -377,7 +377,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.699999988079071,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 50.0
@@ -490,7 +490,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_None_PebbleBullet_BS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -547,7 +547,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_None_PebbleBullet_BS_Shield",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -601,7 +601,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_None_PebbleBullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -634,7 +634,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 40.0,

@@ -181,7 +181,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_Attack01_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -202,7 +202,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -210,7 +210,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 30.0,
                 "strikeType": "Blunt",
@@ -304,7 +304,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredAttack01_WindZone",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -323,7 +323,7 @@
                 "OBHNBNDMPFN": 1.0
               },
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "attackInfo": {
                 "attackTag": "",
@@ -331,7 +331,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.10000000149011612,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Wind",
                   "bonusCriticalHurt": 25.0,
                   "enBreak": 0.0
@@ -447,7 +447,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -455,7 +455,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.6000000238418579,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 30.0,
                 "strikeType": "Default",
@@ -618,7 +618,7 @@
           "$type": "TryFindBlinkPointByBorn",
           "target": "SelfAttackTarget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "IGAGDFFFGAO": {
               "$type": "FHDJJGOONEI",
               "OKDPGGJGGCJ": 0.05000000074505806,
@@ -733,7 +733,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredAttack04_WindZone",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -752,7 +752,7 @@
                 "OBHNBNDMPFN": 1.0
               },
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "attackInfo": {
                 "attackTag": "",
@@ -760,7 +760,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.10000000149011612,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Wind",
                   "bonusCriticalHurt": 25.0,
                   "enBreak": 0.0
@@ -852,7 +852,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredAttack05_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -873,7 +873,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -881,7 +881,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 30.0,
                 "strikeType": "Blunt",
@@ -911,7 +911,7 @@
             "DAPKLNIFPID": true,
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -942,7 +942,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -950,7 +950,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.6000000238418579,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 30.0,
                 "strikeType": "Slash",
@@ -1045,9 +1045,9 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_Sacred_SacredEnergy_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_Sacred_SacredEnergy_Pos",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "GKJDJDACPMC": true,
@@ -1115,9 +1115,9 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_Sacred_SacredEnergy_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_Sacred_SacredEnergy_Pos",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "GKJDJDACPMC": true,
@@ -1163,7 +1163,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredAttack05_SacredEnergy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1199,7 +1199,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredAttack05_SacredEnergy_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1242,7 +1242,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredEnergy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1270,7 +1270,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredEnergyDisappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -1343,7 +1343,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredEnergyBeHit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddChargeBarValue",
@@ -1655,7 +1655,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredEnergyOnPlayer",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1755,7 +1755,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_ScaredBeHit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "LoseHP",
@@ -1818,7 +1818,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredEnergyBullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1856,10 +1856,10 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredEnergyHitPlayer",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -1916,7 +1916,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredEnergyBullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1953,7 +1953,7 @@
               "$type": "FireEffect",
               "target": "Target",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Chrysopelea_Sacred_SacredEnergyHitMonster",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"

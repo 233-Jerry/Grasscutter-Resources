@@ -54,7 +54,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.30000001192092896,
@@ -92,7 +92,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.30000001192092896,
@@ -124,7 +124,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 1.25,
                   "y": 0.30000001192092896,
@@ -157,7 +157,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -1.25,
                   "y": 0.30000001192092896,
@@ -195,7 +195,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.30000001192092896,
@@ -233,7 +233,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.30000001192092896,
@@ -265,7 +265,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 1.25,
                   "y": 0.30000001192092896,
@@ -298,7 +298,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -1.25,
                   "y": 0.30000001192092896,
@@ -375,7 +375,7 @@
                 "attachPointName": "RootNode"
               },
               "scale": 0.8500000238418579,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -408,7 +408,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shaman_Wind_SupportAttack_TornadoExplode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -434,7 +434,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.5,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Wind",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Default",
@@ -497,7 +497,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_TORNADO_COUNT",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "ByTargetGlobalValue",
@@ -527,7 +527,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_TORNADO_COUNT",
               "ratio": 2.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "ByTargetGlobalValue",
@@ -557,7 +557,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_TORNADO_COUNT",
               "ratio": 3.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "ByTargetGlobalValue",
@@ -587,7 +587,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_TORNADO_COUNT",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "ByTargetGlobalValue",
@@ -617,7 +617,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_TORNADO_COUNT",
               "ratio": 2.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "ByTargetGlobalValue",
@@ -647,7 +647,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_TORNADO_COUNT",
               "ratio": 3.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "ByTargetGlobalValue",
@@ -710,7 +710,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -757,7 +757,7 @@
                 "attachPointName": "RootNode"
               },
               "scale": 0.8500000238418579,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -913,7 +913,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -960,7 +960,7 @@
                 "attachPointName": "RootNode"
               },
               "scale": 0.8500000238418579,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1029,7 +1029,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.10000000149011612,
@@ -1059,7 +1059,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.10000000149011612,
@@ -1115,7 +1115,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR5",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "PLJPAAFMNAD": 5.0,
               "LNPFPGALPJH": 1.2000000476837158,
@@ -1136,17 +1136,17 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shaman_Wind_WeaponElement_WindzoneSmoke",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shaman_Wind_WeaponElement_WindzoneEnhance",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -1159,7 +1159,7 @@
                 "OBHNBNDMPFN": 1.0
               },
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "attackInfo": {
                 "attackTag": "",
@@ -1167,7 +1167,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.05000000074505806,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Wind",
                   "bonusCriticalHurt": 25.0,
                   "enBreak": 0.0
@@ -1198,7 +1198,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR5",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "PLJPAAFMNAD": 5.0,
               "LNPFPGALPJH": 1.2000000476837158,
@@ -1219,9 +1219,9 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shaman_Wind_WeaponElement_WindzoneSmoke",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -1496,7 +1496,7 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shaman_Wind_SupportAttack",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1505,7 +1505,7 @@
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -1532,7 +1532,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shaman_Wind_WeaponElement_Wind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1563,11 +1563,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shaman_Wind_SupportAttack_Gather",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

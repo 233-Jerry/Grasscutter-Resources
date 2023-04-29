@@ -593,7 +593,7 @@
           "target": "SelfAttackTarget",
           "key": "ThunderPos1",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -608,7 +608,7 @@
           "target": "SelfAttackTarget",
           "key": "ThunderPos2",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 1.5,
               "y": 0.0,
@@ -628,7 +628,7 @@
           "target": "SelfAttackTarget",
           "key": "ThunderPos3",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -1.5,
               "y": 0.0,
@@ -647,9 +647,9 @@
           "$type": "FireSubEmitterEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sylph_Electric_ElectricBullet_Hit_Alert",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ThunderPos1",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ThunderPos1",
+            "directionKey": ""
           }
         }
       ]
@@ -664,24 +664,24 @@
           "$type": "FireSubEmitterEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sylph_Electric_ElectricBullet_Hit",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ThunderPos1",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ThunderPos1",
+            "directionKey": ""
           }
         },
         {
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos1",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos1",
+                "directionKey": ""
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 0.6499999761581421
+              "radius": 0.6499999761581421
             },
             "attackInfo": {
               "attackTag": "",
@@ -689,7 +689,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 30.0,
                 "strikeType": "Blunt",
@@ -717,9 +717,9 @@
           "$type": "FireSubEmitterEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sylph_Electric_ElectricBullet_Hit_Alert",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ThunderPos2",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ThunderPos2",
+            "directionKey": ""
           }
         }
       ]
@@ -734,24 +734,24 @@
           "$type": "FireSubEmitterEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sylph_Electric_ElectricBullet_Hit",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ThunderPos2",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ThunderPos2",
+            "directionKey": ""
           }
         },
         {
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos2",
+                "directionKey": ""
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 0.6499999761581421
+              "radius": 0.6499999761581421
             },
             "attackInfo": {
               "attackTag": "",
@@ -759,7 +759,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 30.0,
                 "strikeType": "Blunt",
@@ -787,9 +787,9 @@
           "$type": "FireSubEmitterEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sylph_Electric_ElectricBullet_Hit_Alert",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ThunderPos3",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ThunderPos3",
+            "directionKey": ""
           }
         }
       ]
@@ -804,24 +804,24 @@
           "$type": "FireSubEmitterEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sylph_Electric_ElectricBullet_Hit",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ThunderPos3",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ThunderPos3",
+            "directionKey": ""
           }
         },
         {
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos3",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos3",
+                "directionKey": ""
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 0.6499999761581421
+              "radius": 0.6499999761581421
             },
             "attackInfo": {
               "attackTag": "",
@@ -829,7 +829,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 30.0,
                 "strikeType": "Blunt",
@@ -934,7 +934,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sylph_Electric_FlyDash_Shoot",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -955,7 +955,7 @@
               "$type": "TurnDirectionToPos",
               "target": "SelfAttackTarget",
               "toPos": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             },
             {
@@ -991,7 +991,7 @@
               "$type": "TurnDirectionToPos",
               "target": "SelfAttackTarget",
               "toPos": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             },
             {
@@ -1044,7 +1044,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -1052,7 +1052,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.625,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -1132,7 +1132,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sylph_Electric_Deathrattle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1162,7 +1162,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1170,7 +1170,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.625,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -1241,7 +1241,7 @@
               "born": {
                 "$type": "IOHLPEPEKAP"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1375,7 +1375,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sylph_Electric_Activated_Deathrattle_Rush",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1457,7 +1457,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sylph_Electric_Activated_Deathrattle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1487,7 +1487,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1495,7 +1495,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.75,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",

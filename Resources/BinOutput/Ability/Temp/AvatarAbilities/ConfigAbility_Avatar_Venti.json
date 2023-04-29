@@ -47,7 +47,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "PRIVATE_LHair"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -56,7 +56,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "PRIVATE_RHair"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -88,7 +88,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -445,7 +445,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -485,7 +485,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -525,7 +525,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -565,7 +565,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -605,7 +605,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -686,7 +686,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -713,7 +713,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 3.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             }
           ],
@@ -740,12 +740,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Venti_KageBunshinShoot"
+              "talentParam": "Venti_KageBunshinShoot"
             }
           ],
           "bulletID": 41022006,
@@ -776,12 +776,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 3.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Venti_KageBunshinShoot"
+              "talentParam": "Venti_KageBunshinShoot"
             }
           ],
           "bulletID": 41022007,
@@ -812,12 +812,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Venti_KageBunshinShoot"
+              "talentParam": "Venti_KageBunshinShoot"
             }
           ],
           "bulletID": 41022006,
@@ -848,12 +848,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 3.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Venti_KageBunshinShoot"
+              "talentParam": "Venti_KageBunshinShoot"
             }
           ],
           "bulletID": 41022007,
@@ -884,7 +884,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -904,7 +904,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -918,7 +918,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -927,7 +927,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 3.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             }
           ],
@@ -941,7 +941,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -963,13 +963,13 @@
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_01"],
               "damagePercentage": "NormalAttack_01_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_04"],
               "damagePercentage": "NormalAttack_04_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             }
           ]
         }
@@ -978,7 +978,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Venti_Arrow_Fly_Small",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -1018,25 +1018,25 @@
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_02"],
               "damagePercentage": "NormalAttack_02_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_03"],
               "damagePercentage": "NormalAttack_03_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_05"],
               "damagePercentage": "NormalAttack_05_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_06"],
               "damagePercentage": "NormalAttack_06_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             }
           ]
         }
@@ -1045,7 +1045,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Venti_Arrow_Fly_Big",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -1120,7 +1120,7 @@
               "attenuationGroup": "Venti",
               "attackProperty": {
                 "damagePercentage": "DamageWithWind",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -1193,7 +1193,7 @@
               "attenuationGroup": "Venti",
               "attackProperty": {
                 "damagePercentage": "DamageWithoutWind",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 10.0,
@@ -1369,7 +1369,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 4.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -1382,7 +1382,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "WindMagic_Arrow_Glow_WithoutWind_Once"
@@ -1397,12 +1397,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Glow_Once_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Glow_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1414,12 +1414,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Glow_Once_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Glow_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1460,12 +1460,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Fly_Particle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WindMagic_Arrow_Fly_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1525,7 +1525,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Venti_Arrow_Fly_Big",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1625,7 +1625,7 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1649,11 +1649,11 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Venti_Constellation_4"
+                  "talentParam": "Venti_Constellation_4"
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1705,7 +1705,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1734,14 +1734,14 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_Harp",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.30000001192092896,
                   "z": 0.30000001192092896
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1752,7 +1752,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_WIndBlade_Sprite",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1818,7 +1818,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Venti_Constellation_2"
+              "talentParam": "Venti_Constellation_2"
             }
           ],
           "modifierName": "WindBlade_Nerf_Handler"
@@ -1870,7 +1870,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Venti_Constellation_2"
+                  "talentParam": "Venti_Constellation_2"
                 }
               ],
               "modifierName": "UNIQUE_WindBlade_SlowFall_Nerf_Handler"
@@ -1893,7 +1893,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Venti_Constellation_2"
+                  "talentParam": "Venti_Constellation_2"
                 }
               ],
               "modifierName": "UNIQUE_WindBlade_SlowFall_Nerf_Handler"
@@ -1919,7 +1919,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -1927,7 +1927,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "WindBladeDamage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Pierce",
@@ -1951,7 +1951,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_WIndBlade_Part3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ActCameraRadialBlur",
@@ -1971,7 +1971,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_WIndBlade_Part4",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1993,7 +1993,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_Rise_Monster",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -2066,7 +2066,7 @@
               "$type": "GenerateElemBall",
               "configID": 2021,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -2083,12 +2083,12 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_WIndBlade_Part1",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_WIndBlade_Part2",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -2153,7 +2153,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Venti_Constellation_2"
+                  "talentParam": "Venti_Constellation_2"
                 }
               ],
               "modifierName": "UNIQUE_WindBlade_Land_SlowFall_Nerf_Handler"
@@ -2173,7 +2173,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Venti_Constellation_2"
+                  "talentParam": "Venti_Constellation_2"
                 },
                 {
                   "$type": "AFMGJLIMGAL"
@@ -2202,7 +2202,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -2210,7 +2210,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "WindBladeDamage_Land",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Pierce",
@@ -2260,7 +2260,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_Rise_Monster",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -2333,7 +2333,7 @@
               "$type": "GenerateElemBall",
               "configID": 2021,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -2350,7 +2350,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_WIndBlade_0",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -2418,7 +2418,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -2429,7 +2429,7 @@
                       }
                     },
                     "height": 0.4000000059604645,
-                    "BMCPFKAEOJB": 1.399999976158142
+                    "radius": 1.399999976158142
                   }
                 },
                 {
@@ -2520,7 +2520,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 2.5,
@@ -2599,7 +2599,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Venti_Insight"
+                  "talentParam": "Venti_Insight"
                 }
               ],
               "modifierName": "Venti_Insight_Wane"
@@ -2620,7 +2620,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2628,7 +2628,7 @@
                   "attenuationGroup": "Venti",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Burst_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "elementRank": 3.0,
                     "bonusCriticalHurt": 25.0,
@@ -2822,12 +2822,12 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_Hurricane",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_Hurricane_Open",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -2838,7 +2838,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Venti_Constellation_6"
+              "talentParam": "Venti_Constellation_6"
             }
           ],
           "modifierName": "Hurricane_Twisted_Handler"
@@ -2851,7 +2851,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Venti_Constellation_6"
+                  "talentParam": "Venti_Constellation_6"
                 }
               ]
             }
@@ -2877,7 +2877,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Hurricane_IsMixed",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "elementBatchPredicateds": [
@@ -3040,7 +3040,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "AntiFire",
                     "bonusCriticalHurt": 1.0,
                     "enBreak": 0.0
@@ -3087,7 +3087,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -3095,7 +3095,7 @@
                   "attenuationGroup": "Venti",
                   "attackProperty": {
                     "damagePercentage": "Hurricane_Mix_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -3163,7 +3163,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -3171,7 +3171,7 @@
                   "attenuationGroup": "Venti",
                   "attackProperty": {
                     "damagePercentage": "Hurricane_Mix_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -3239,7 +3239,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -3247,7 +3247,7 @@
                   "attenuationGroup": "Venti",
                   "attackProperty": {
                     "damagePercentage": "Hurricane_Mix_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -3315,7 +3315,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -3323,7 +3323,7 @@
                   "attenuationGroup": "Venti",
                   "attackProperty": {
                     "damagePercentage": "Hurricane_Mix_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -3795,7 +3795,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Venti_Enhanced_Hurricane"
+              "talentParam": "Venti_Enhanced_Hurricane"
             }
           ],
           "modifierName": "Hurricane_ElementBall_Handler"
@@ -3843,7 +3843,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_Wind_AttackEnhance",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -3989,7 +3989,7 @@
                   0.33000001311302185,
                   "MUL"
                 ],
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -4066,7 +4066,7 @@
                   0.33000001311302185,
                   "MUL"
                 ],
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 1.0,
@@ -4116,7 +4116,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed_WindField",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4233,7 +4233,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4244,7 +4244,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4290,7 +4290,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -4298,7 +4298,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Pierce",
                     "enBreak": 10.0,
@@ -4448,11 +4448,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4613,16 +4613,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4630,7 +4630,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4638,7 +4638,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 50.0,
@@ -4660,15 +4660,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4676,7 +4676,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4684,7 +4684,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 100.0,
@@ -4706,12 +4706,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -4720,11 +4720,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

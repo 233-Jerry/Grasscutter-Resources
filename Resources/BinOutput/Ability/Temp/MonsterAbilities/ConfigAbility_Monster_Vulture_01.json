@@ -475,9 +475,9 @@
             {
               "$type": "TurnDirectionToPos",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "FleeDirection",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "FleeDirection",
+                "directionKey": ""
               },
               "maxAngle": 0.6000000238418579
             }

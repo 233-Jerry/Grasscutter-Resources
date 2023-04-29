@@ -333,7 +333,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Bow_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -394,7 +394,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "Magic_Arrow_Glow_01"
@@ -406,7 +406,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 4.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -512,12 +512,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ElectricMagic_Arrow_Glow_Once_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ElectricMagic_Arrow_Glow_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -539,24 +539,24 @@
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_ElectricMagic_Arrow_Glow_Once_02",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_ElectricMagic_Arrow_Glow_Loop_02",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_ElectricMagic_Arrow_Glow_Once_02",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_ElectricMagic_Arrow_Glow_Loop_02",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -599,7 +599,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 3.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             }
           ],
@@ -634,7 +634,7 @@
                 },
                 "attachPointName": "WeaponR"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "failActions": [
@@ -655,7 +655,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_Enchanted_Time",
                       "ratio": 4.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ],
@@ -682,7 +682,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_Enchanted_Time",
                       "ratio": 4.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ],
@@ -696,7 +696,7 @@
                     },
                     "attachPointName": "WeaponR"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -707,7 +707,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_Enchanted_Time",
                       "ratio": 4.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ],
@@ -737,7 +737,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_Enchanted_Time",
                       "ratio": 4.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ],
@@ -751,7 +751,7 @@
                     },
                     "attachPointName": "WeaponR"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -764,7 +764,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -826,7 +826,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Fischl_ProudSkill_31_P7_ChargeElementDamage_Percentage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Pierce",
@@ -897,7 +897,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Fischl_ProudSkill_21_ExteaAttackThunder"
+              "talentParam": "Avatar_Fischl_ProudSkill_21_ExteaAttackThunder"
             }
           ],
           "ratio": 1.0,
@@ -946,12 +946,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ElectricMagic_Arrow_Fly_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ElectricMagic_Arrow_Fly_Particle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1038,7 +1038,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Fischl_ProudSkill_31_P6_ExtraAttack_WithoutElement_Damage_Percentage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 10.0,
@@ -1083,7 +1083,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Venti_Arrow_Fly_Big",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1122,7 +1122,7 @@
                 },
                 "attachPointName": "WeaponL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1176,7 +1176,7 @@
                 },
                 "attachPointName": "WeaponL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1230,7 +1230,7 @@
                 },
                 "attachPointName": "WeaponL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1284,7 +1284,7 @@
                 },
                 "attachPointName": "WeaponL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1338,7 +1338,7 @@
                 },
                 "attachPointName": "WeaponL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1378,7 +1378,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Fischl_ShootArrow_Smoke",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1401,19 +1401,19 @@
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_01"],
               "damagePercentage": "Fischl_ProudSkill_31_P1_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_02"],
               "damagePercentage": "Fischl_ProudSkill_31_P2_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_04"],
               "damagePercentage": "Fischl_ProudSkill_31_P4_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             }
           ]
         }
@@ -1422,7 +1422,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Fischl_Attack_Small",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -1448,13 +1448,13 @@
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_03"],
               "damagePercentage": "Fischl_ProudSkill_31_P3_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_05"],
               "damagePercentage": "Fischl_ProudSkill_31_P5_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             }
           ]
         }
@@ -1463,7 +1463,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Fischl_Attack_Big",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -1585,17 +1585,17 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Fischl_S_Skill_Aim_TargetPoint_Line",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Fischl_E_Skill_Hand_Once",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Fischl_E_Skill_Hand_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1605,7 +1605,7 @@
           "$type": "TriggerBullet",
           "bulletID": 41031012,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.20000000298023224,
               "y": 1.0,
@@ -1635,7 +1635,7 @@
           "$type": "SetGlobalPos",
           "key": "CrowPos",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1723,7 +1723,7 @@
           "target": "OriginOwner",
           "key": "CrowPos",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1775,9 +1775,9 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "CrowPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "CrowPos",
+                "directionKey": ""
               },
               "gadgetID": 41031008,
               "campID": 3001,
@@ -1786,7 +1786,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Fischl_E_Skill_Hand_OnSummon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1819,7 +1819,7 @@
                 "attachPointName": "Spine"
               },
               "ownedByLevel": true,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillGadget",
@@ -1850,11 +1850,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Fischl_Talent_B",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "CrowPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "CrowPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1864,11 +1864,11 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "CrowPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "CrowPos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -1880,7 +1880,7 @@
                       "AS_Fischl_Talent_332_Damage_AttackRatio",
                       "ADD"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Pierce",
@@ -1911,11 +1911,11 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "CrowPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "CrowPos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -1923,7 +1923,7 @@
                   "attenuationGroup": "Fischl",
                   "attackProperty": {
                     "damagePercentage": "AS_Fischl_ProudSkill_32_P2_SummonAttack",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Pierce",
@@ -1964,7 +1964,7 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Fischl_Talent_B_CrowSummonAttack"
+              "talentParam": "Avatar_Fischl_Talent_B_CrowSummonAttack"
             }
           ],
           "successActions": [
@@ -2003,7 +2003,7 @@
               "$type": "SetGlobalPos",
               "key": "CrowPos",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 1.0,
                   "y": 0.0,
@@ -2029,7 +2029,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Fischl_E_Skill_Hand_OnControl",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AvatarSkillStart",
@@ -2061,17 +2061,17 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Fischl_S_Skill_Contnrol_Hide",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
-                "FNMFBPGNEKD": "CrowPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "CrowPos",
+                "directionKey": ""
               },
               "ownedByLevel": true,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2117,9 +2117,9 @@
               "RotationDampTime": true,
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "CrowPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "CrowPos",
+                "directionKey": ""
               },
               "gadgetID": 41031008,
               "campID": 3001,
@@ -2130,12 +2130,12 @@
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Fischl_S_Skill_Contnrol_Show",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "CrowPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "CrowPos",
+                "directionKey": ""
               },
               "ownedByLevel": true,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2244,7 +2244,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2314,7 +2314,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Fischl_ProudSkill_22"
+                  "talentParam": "Avatar_Fischl_ProudSkill_22"
                 }
               ],
               "abilityName": "Avatar_Fischl_Talent_D_Crow_NormalAttack",
@@ -2327,7 +2327,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Fischl_Talent_A_CrowBallAttack"
+                  "talentParam": "Avatar_Fischl_Talent_A_CrowBallAttack"
                 }
               ],
               "abilityName": "Avatar_Fischl_Talent_A_Show"
@@ -2363,7 +2363,7 @@
                 },
                 "attachPointName": "Mouth"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2395,7 +2395,7 @@
                 },
                 "attachPointName": "Mouth"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2443,7 +2443,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Fischl_Crow_NormalAttackTrail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -2474,7 +2474,7 @@
               "attenuationGroup": "Fischl",
               "attackProperty": {
                 "damagePercentage": "AS_Fischl_Talent_336_AttackRatio_AssistAttack",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -2515,7 +2515,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "PRIVATE_TalentA"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -2579,7 +2579,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Fischl_Talent_A_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -2669,7 +2669,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Fischl_Talent_A_NormalAttackTrail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -2700,7 +2700,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "AS_Fischl_Talent_331_Damage_AttackRatio",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce"
               },
@@ -2801,7 +2801,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Fischl_ProudSkill_21_ExteaAttackThunder"
+              "talentParam": "Avatar_Fischl_ProudSkill_21_ExteaAttackThunder"
             }
           ],
           "modifierName": "FindCrowPos"
@@ -2849,7 +2849,7 @@
             },
             "attachPointName": "Mouth"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2863,7 +2863,7 @@
             },
             "attachPointName": "Spine"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
@@ -2890,9 +2890,9 @@
           "target": "Target",
           "healLimitedByCasterMaxHPRatio": "Eff_Fischl_Talent_C_Hit",
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -2925,7 +2925,7 @@
                   "Fischl_ProudSkill_31_P7_ChargeElementDamage_Percentage",
                   "MUL"
                 ],
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -2995,7 +2995,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "Spine"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3011,7 +3011,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "Spine"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3132,7 +3132,7 @@
                 },
                 "attachPointName": "AP1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -3263,7 +3263,7 @@
                   "target": "SelfAttackTarget",
                   "key": "ElementReactionAttackPos",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -3399,7 +3399,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "Spine"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3412,7 +3412,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Fischl_Talent_336_AssistAttack"
+              "talentParam": "Avatar_Fischl_Talent_336_AssistAttack"
             }
           ],
           "modifierName": "UNIQUE_Fischl_Skill_S_Crow_TeamHandler"
@@ -3428,7 +3428,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Fischl_ProudSkill_ElementReaction"
+              "talentParam": "Avatar_Fischl_ProudSkill_ElementReaction"
             }
           ],
           "modifierName": "UNIQUE_Fischl_ProudSkill_ElementReaction_Attack_TeamHandler"
@@ -3438,7 +3438,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Fischl_ProudSkill_21_ExteaAttackThunder"
+              "talentParam": "Avatar_Fischl_ProudSkill_21_ExteaAttackThunder"
             }
           ],
           "ratio": 1.0,
@@ -3482,12 +3482,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "Fischl_Crow_NoHasAttackTarget",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "key": "ElementReactionAttackPos",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -3500,11 +3500,11 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Fischl_Talent_ElementReactionAttackThunder",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ElementReactionAttackPos",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ElementReactionAttackPos",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "Predicated",
@@ -3537,7 +3537,7 @@
                 },
                 "attachPointName": "Mouth"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -3551,7 +3551,7 @@
                 },
                 "attachPointName": "Spine"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3562,11 +3562,11 @@
               "$type": "ConfigAttackSphere",
               "JGCLJPCGHMC": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementReactionAttackPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementReactionAttackPos",
+                "directionKey": ""
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -3574,7 +3574,7 @@
               "attenuationGroup": "Fischl",
               "attackProperty": {
                 "damagePercentage": "AS_Fischl_ProudSkill_22_ElementReactionAttack_AttackRatio",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -3610,9 +3610,9 @@
           "target": "SelfAttackTarget",
           "healLimitedByCasterMaxHPRatio": "Eff_Fischl_Talent_ElementReactionAttackThunder",
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3621,9 +3621,9 @@
               "$type": "ConfigAttackSphere",
               "JGCLJPCGHMC": true,
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -3631,7 +3631,7 @@
               "attenuationGroup": "Fischl",
               "attackProperty": {
                 "damagePercentage": "AS_Fischl_ProudSkill_22_ElementReactionAttack_AttackRatio",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -3698,7 +3698,7 @@
                   "target": "Other",
                   "key": "_Ability_Fischl_ElementalArt_ElementBall_Pos",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
                   "setTarget": false
                 },
@@ -3711,9 +3711,9 @@
                       "$type": "GenerateElemBall",
                       "configID": 2020,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_Ability_Fischl_ElementalArt_ElementBall_Pos",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_Ability_Fischl_ElementalArt_ElementBall_Pos",
+                        "directionKey": ""
                       },
                       "value": 1.0,
                       "baseEnergy": 3.0
@@ -3786,7 +3786,7 @@
                   "attenuationGroup": "Fischl",
                   "attackProperty": {
                     "damagePercentage": "AS_Fischl_ProudSkill_32_Damage_AttackRatio",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Pierce",
@@ -3809,7 +3809,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Fischl_Skill_S_Crow_NormalAttackTrail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -3940,7 +3940,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Fischl_Talent_334_CrowHealHp"
+                  "talentParam": "Avatar_Fischl_Talent_334_CrowHealHp"
                 }
               ],
               "modifierName": "CrowQueen_DoAttack_Once"
@@ -4020,14 +4020,14 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalPos",
               "RotationDampTime": true,
               "key": "CrowPos",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 1.0,
                   "y": 0.0,
@@ -4096,7 +4096,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4130,12 +4130,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Fischl_E_Skill_CrowsArea_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Fischl_Skill_E_Crow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4181,7 +4181,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "CrowQueen_AttackTargetCount",
                   "ratio": "AS_Fischl_ProudSkill_33_MaxCount",
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "LessAndEqual"
                 }
               ],
@@ -4200,7 +4200,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -4212,7 +4212,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 0.5
+                  "radius": 0.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -4220,7 +4220,7 @@
                   "attenuationGroup": "Fischl",
                   "attackProperty": {
                     "damagePercentage": "AS_Fischl_ProudSkill_33_LoopDamage_AttackRatio",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -4292,11 +4292,11 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ArrowRainPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ArrowRainPos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -4304,7 +4304,7 @@
                   "attenuationGroup": "Fischl",
                   "attackProperty": {
                     "damagePercentage": "AS_Fischl_Talent_334_OnceDamage_AttackRatio",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Pierce",
@@ -4337,14 +4337,14 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Fischl_CrowQueen_LastAttack",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.20000000298023224,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4361,7 +4361,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Fischl_Talent_334_CrowHealHp"
+                  "talentParam": "Avatar_Fischl_Talent_334_CrowHealHp"
                 }
               ],
               "HFNJHOGGFKB": "AS_Fischl_Talent_334_HealHp_MaxHpRatio"
@@ -4511,7 +4511,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4522,7 +4522,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4568,7 +4568,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -4576,7 +4576,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Pierce",
                     "enBreak": 10.0,
@@ -4726,11 +4726,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4891,16 +4891,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4908,7 +4908,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4916,7 +4916,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 50.0,
@@ -4938,15 +4938,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4954,7 +4954,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4962,7 +4962,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 100.0,
@@ -4984,12 +4984,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -4998,11 +4998,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

@@ -131,7 +131,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Default"
                 },
@@ -254,7 +254,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Default",
                   "enBreak": 1000.0
@@ -288,7 +288,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Undead_01_Shield_Broken",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -319,8 +319,8 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "predicates": [
                 {
@@ -425,7 +425,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_None_Block",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ActCameraShake",
@@ -473,7 +473,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_None_Block",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ActCameraShake",
@@ -497,19 +497,19 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_None_Shield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_None_ShieldCreate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_None_ShieldDestroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -655,7 +655,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Default",
                   "enBreak": 1000.0
@@ -688,7 +688,7 @@
                   "$type": "FireEffect",
                   "target": "Owner",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Rock_BlockSuccess",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -703,7 +703,7 @@
               "$type": "FireEffect",
               "target": "Owner",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Rock_ShieldDestroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -728,7 +728,7 @@
               "$type": "FireEffect",
               "target": "Owner",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Rock_ShieldDamaged",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorBool",
@@ -761,8 +761,8 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "predicates": [
                 {
@@ -822,7 +822,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Rock_Block",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -848,7 +848,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Rock_Block",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -928,7 +928,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Default",
                   "enBreak": 1000.0
@@ -961,7 +961,7 @@
                   "$type": "FireEffect",
                   "target": "Owner",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Rock_BlockSuccess",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -976,7 +976,7 @@
               "$type": "FireEffect",
               "target": "Owner",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Rock_ShieldDestroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -1001,7 +1001,7 @@
               "$type": "FireEffect",
               "target": "Owner",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Rock_ShieldDamaged",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorBool",
@@ -1034,8 +1034,8 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "predicates": [
                 {
@@ -1095,7 +1095,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Rock_Block",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -1121,7 +1121,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Rock_Block",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -1236,7 +1236,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Fire_Torch_FireElementLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -1253,7 +1253,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Fire_Torch_FireElementAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1333,7 +1333,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Weapon_Disappear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1540,7 +1540,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Fat_SprayGun_Ice_SprayGunNormal",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1553,7 +1553,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Fat_SprayGun_Ice_BackPackNormal",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1566,7 +1566,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Fat_SprayGun_Water_SprayGunNormal",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1579,7 +1579,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Fat_SprayGun_Water_BackPackNormal",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1612,7 +1612,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_WeaponLoopEffect",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1707,7 +1707,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_WeaponLoopEffect",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

@@ -85,7 +85,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Stage3_Standby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -240,7 +240,7 @@
               },
               "key": "_MONSTER_Apep_BlinkAttack_Position",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -254,9 +254,9 @@
             {
               "$type": "TryFindBlinkPointByBorn",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_Apep_BlinkAttack_Position",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_Apep_BlinkAttack_Position",
+                "directionKey": ""
               },
               "hitSceneType": "BlinkHitSceneTestByThreeSegments",
               "limitY": 2.5
@@ -280,7 +280,7 @@
                 }
               ],
               "toPos": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             },
             {
@@ -369,7 +369,7 @@
                   "target": "Self",
                   "logic": "GreaterOrEqual",
                   "ratio": 24.0,
-                  "FNMFBPGNEKD": "_MONSTER_Apep_Stage3_MidPos"
+                  "positionKey": "_MONSTER_Apep_Stage3_MidPos"
                 }
               ],
               "skillIDs": [306]
@@ -419,7 +419,7 @@
           ],
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -483,7 +483,7 @@
           ],
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -680,7 +680,7 @@
                 "BJCIHELGKLP": true,
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -697,7 +697,7 @@
                 "$type": "ConfigBornBySelf",
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -785,7 +785,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -793,7 +793,7 @@
               "attenuationGroup": "Apep_Bullet_Attenuation",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -873,7 +873,7 @@
               ],
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -929,7 +929,7 @@
           "target": "SelfAttackTarget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -961,7 +961,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Stage3_RangeAttack3_FirstAttack_Alert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -987,13 +987,13 @@
                 "BJCIHELGKLP": true,
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1005,7 +1005,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 20.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1013,7 +1013,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -1062,7 +1062,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Stage3_RangeAttack3_RepeatAttack_Alert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1088,13 +1088,13 @@
                 "BJCIHELGKLP": true,
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1106,7 +1106,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 20.0,
-                  "BMCPFKAEOJB": 7.5
+                  "radius": 7.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1114,7 +1114,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.699999988079071,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -1355,7 +1355,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Stage3_UltAttack_Shield_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -1401,7 +1401,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.10000000149011612,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Grass",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Default",
@@ -1461,7 +1461,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.10000000149011612,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Grass",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Default",
@@ -1521,7 +1521,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.10000000149011612,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Grass",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Default",
@@ -1683,7 +1683,7 @@
                     "attenuationGroup": "Apep_Stage3_UltAttack",
                     "attackProperty": {
                       "damagePercentage": 4.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Grass",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Default",
@@ -1995,7 +1995,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Stage3_UltAttack_Shield_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2050,7 +2050,7 @@
                       },
                       "IABNJPGBAOH": true
                     },
-                    "BMCPFKAEOJB": 0.800000011920929
+                    "radius": 0.800000011920929
                   },
                   "PHFBEPGCKAA": true
                 }
@@ -2133,7 +2133,7 @@
                       },
                       "IABNJPGBAOH": true
                     },
-                    "BMCPFKAEOJB": 0.800000011920929
+                    "radius": 0.800000011920929
                   },
                   "PHFBEPGCKAA": true
                 }
@@ -2216,7 +2216,7 @@
                       },
                       "IABNJPGBAOH": true
                     },
-                    "BMCPFKAEOJB": 0.800000011920929
+                    "radius": 0.800000011920929
                   },
                   "PHFBEPGCKAA": true
                 }
@@ -2376,7 +2376,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Stage3_UltAttack_Shield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2411,7 +2411,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Stage3_UltAttack_Shield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2446,7 +2446,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apep_Stage3_UltAttack_Shield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

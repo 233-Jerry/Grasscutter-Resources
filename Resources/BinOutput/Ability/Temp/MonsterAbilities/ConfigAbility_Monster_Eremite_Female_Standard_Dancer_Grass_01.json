@@ -714,7 +714,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Dancer_Grass_Improve_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -761,7 +761,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Properties_Defense_Down",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -854,7 +854,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Grass",
                   "bonusCriticalHurt": 100.0,
                   "ignoreAttackerProperty": true,
@@ -867,7 +867,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Dancer_Grass_Weak_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1105,7 +1105,7 @@
                 {
                   "$type": "TryFindBlinkPointByBorn",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 1.0,
@@ -1176,7 +1176,7 @@
                 {
                   "$type": "TryFindBlinkPointByBorn",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 10.0,
@@ -1360,7 +1360,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Dancer_Grass_Blink_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1371,7 +1371,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Dancer_Grass_Blink_Effect",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1414,13 +1414,13 @@
           "born": {
             "$type": "IOHLPEPEKAP"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TurnDirectionToPos",
           "target": "SelfAttackTarget",
           "toPos": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           }
         }
       ]
@@ -1579,7 +1579,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Dancer_Grass_Weapon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -1721,7 +1721,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Dancer_Grass_Boomerang_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1772,7 +1772,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -1780,7 +1780,7 @@
               "attenuationGroup": "Eremite_Dancer_BoomerangBullet",
               "attackProperty": {
                 "damagePercentage": 0.800000011920929,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -1836,7 +1836,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42560002,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 2.5,
                   "y": 1.0,
@@ -1858,7 +1858,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42560002,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -2.5,
                   "y": 1.0,
@@ -1918,14 +1918,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Dancer_Grass_WheelSurround_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Dancer_Grass_WheelSurround_Bullet_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1971,7 +1971,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -1979,7 +1979,7 @@
               "attenuationGroup": "Skirmisher_Fat_SprayGun_Ice",
               "attackProperty": {
                 "damagePercentage": 0.3499999940395355,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Slash",
@@ -2140,12 +2140,12 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Dancer_Grass_ComboAttack01_Wheel_Alert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_EREMITE_DANCER_TRAP_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_EREMITE_DANCER_TRAP_POS_",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2161,10 +2161,10 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_EREMITE_DANCER_TRAP_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_EREMITE_DANCER_TRAP_POS_",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 42560003,
@@ -2229,12 +2229,12 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eremite_Female_Standard_Dancer_Grass_ComboAttack01_Wheel",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_EREMITE_DANCER_TRAP_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_EREMITE_DANCER_TRAP_POS_",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnablePushColliderName",

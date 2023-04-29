@@ -34,7 +34,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "WeaponR"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -220,7 +220,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Electric_CrossBow_Arrow_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -240,12 +240,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Electric_CrossBow_Arrow_Particle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Electric_CrossBow_Arrow_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -280,7 +280,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.75
+              "radius": 0.75
             },
             "attackInfo": {
               "attackTag": "",
@@ -288,7 +288,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Pierce",
@@ -330,7 +330,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.75
+              "radius": 0.75
             },
             "attackInfo": {
               "attackTag": "",
@@ -338,7 +338,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.6660000085830688,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Pierce",
@@ -403,7 +403,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.6660000085830688,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce"
               },
@@ -461,7 +461,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.4659999907016754,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce"
               },
@@ -492,7 +492,7 @@
               "z": 0.3499999940395355
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireHitEffect",
@@ -803,7 +803,7 @@
               "$type": "TriggerThrowEquipPart",
               "equipPart": "equip01",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "HOPPHMEKHLG": {
                   "$type": "HFKFLHCBMLB",
                   "LLOEMEPIBII": "Horizontal",
@@ -836,7 +836,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hili_Electric_Bomb_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -893,7 +893,7 @@
             "$type": "ConfigBornBySelf",
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -901,9 +901,9 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -911,7 +911,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",

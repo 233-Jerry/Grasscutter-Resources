@@ -151,7 +151,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_Fruit_PowerOn",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -545,7 +545,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_Core_PowerOn",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1071,7 +1071,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "BulletSourceL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1080,14 +1080,14 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "BulletSourceR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "ownerIsTarget": true,
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 4.900000095367432,
               "y": 4.039999961853027,
@@ -1116,7 +1116,7 @@
           "ownerIsTarget": true,
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -4.630000114440918,
               "y": 5.679999828338623,
@@ -1155,7 +1155,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "BulletSourceL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1164,14 +1164,14 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "BulletSourceR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "ownerIsTarget": true,
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 3.2100000381469727,
               "y": 5.590000152587891,
@@ -1200,7 +1200,7 @@
           "ownerIsTarget": true,
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -3.119999885559082,
               "y": 3.819999933242798,
@@ -1239,7 +1239,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "BulletSourceL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1248,14 +1248,14 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "BulletSourceR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "ownerIsTarget": true,
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 2.069999933242798,
               "y": 3.6600000858306885,
@@ -1284,7 +1284,7 @@
           "ownerIsTarget": true,
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -2.0399999618530273,
               "y": 5.420000076293945,
@@ -1323,7 +1323,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "BulletSourceL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1332,14 +1332,14 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "BulletSourceR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "ownerIsTarget": true,
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.7799999713897705,
               "y": 5.099999904632568,
@@ -1368,7 +1368,7 @@
           "ownerIsTarget": true,
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -0.7599999904632568,
               "y": 4.03000020980835,
@@ -1419,7 +1419,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "BulletSourceL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -1428,7 +1428,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "BulletSourceR"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -1477,7 +1477,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "BulletSourceL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -1486,7 +1486,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "BulletSourceR"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -1563,7 +1563,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAbility",
@@ -1624,7 +1624,7 @@
               "$type": "AttachEffect",
               "target": "Owner",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_Fruit_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1678,7 +1678,7 @@
                   "born": {
                     "$type": "FLIPADNBJJF"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1946,7 +1946,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAbility",
@@ -2027,7 +2027,7 @@
               "$type": "AttachEffect",
               "target": "Owner",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_Core_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Predicated",
@@ -2044,7 +2044,7 @@
                   "$type": "AttachEffect",
                   "target": "Owner",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_Core_Broken_Normal",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -2052,7 +2052,7 @@
                   "$type": "AttachEffect",
                   "target": "Owner",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_Core_Normal",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -2108,7 +2108,7 @@
                   "born": {
                     "$type": "FLIPADNBJJF"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -2200,7 +2200,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_WillOWisp_Bullet_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2231,7 +2231,7 @@
             "DAPKLNIFPID": true,
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveUniqueModifier",
@@ -2253,7 +2253,7 @@
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -2261,7 +2261,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.125,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -2300,7 +2300,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_WillOWispLauncher_Effect",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2386,7 +2386,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_MissileAttack_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2463,7 +2463,7 @@
                       "target": "Self",
                       "key": "_ABILITY_REGISVINE_FIRE_SURROUNDINGFIRE_HIT",
                       "ratio": 0.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ],
                   "lifeByOwnerIsAlive": true,
@@ -2536,7 +2536,7 @@
                       "target": "Self",
                       "key": "_ABILITY_REGISVINE_FIRE_SURROUNDINGFIRE_HIT",
                       "ratio": 0.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ],
                   "lifeByOwnerIsAlive": true,
@@ -2610,7 +2610,7 @@
                       "target": "Self",
                       "key": "_ABILITY_REGISVINE_FIRE_SURROUNDINGFIRE_HIT",
                       "ratio": 0.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ],
                   "lifeByOwnerIsAlive": true,
@@ -2647,14 +2647,14 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_SurroundingFire_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_SurroundingFire_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2670,7 +2670,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2681,7 +2681,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 0.75
+                  "radius": 0.75
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2689,7 +2689,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -2813,18 +2813,18 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2832,7 +2832,7 @@
                   "attenuationGroup": "Regisvine_Common",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -2859,7 +2859,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -2869,7 +2869,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "BMCPFKAEOJB": 2.5
+              "radius": 2.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -2877,7 +2877,7 @@
               "attenuationGroup": "Regisvine_Common",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -2915,7 +2915,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_MeleeAttack03_FireArea",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2931,7 +2931,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2941,7 +2941,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 8.0
+                  "radius": 8.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2949,7 +2949,7 @@
                   "attenuationGroup": "Regisvine_Common",
                   "attackProperty": {
                     "damagePercentage": 0.30000001192092896,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "enBreak": 0.0
@@ -2988,7 +2988,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_FireBullet_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3017,7 +3017,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveUniqueModifier",
@@ -3037,7 +3037,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 0.75
+              "radius": 0.75
             },
             "attackInfo": {
               "attackTag": "",
@@ -3045,7 +3045,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.20000000298023224,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -3087,12 +3087,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_SummonBlazeSeed_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_SummonBlazeSeed_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3124,7 +3124,7 @@
               }
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
@@ -3164,11 +3164,11 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
             "BJCIHELGKLP": true,
-            "FNMFBPGNEKD": "_MONSTER_REGISVINE_FIRE_BLAZESEEDLANDEDPOS",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_MONSTER_REGISVINE_FIRE_BLAZESEEDLANDEDPOS",
+            "directionKey": ""
           },
           "gadgetID": 42602024,
           "campID": 4001,
@@ -3186,11 +3186,11 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
             "BJCIHELGKLP": true,
-            "FNMFBPGNEKD": "_MONSTER_REGISVINE_FIRE_BLAZESEEDFIREAREAPOS",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_MONSTER_REGISVINE_FIRE_BLAZESEEDFIREAREAPOS",
+            "directionKey": ""
           },
           "gadgetID": 42602025,
           "campID": 4001,
@@ -3213,7 +3213,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_BlazeSeed_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3244,7 +3244,7 @@
             "DAPKLNIFPID": true,
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3262,7 +3262,7 @@
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -3270,7 +3270,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.25,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -3363,7 +3363,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "KillSelf",
@@ -3443,7 +3443,7 @@
                       "$type": "NFGKOJBHMLL"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -3456,7 +3456,7 @@
                       "$type": "NFGKOJBHMLL"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -3471,7 +3471,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_BlazeSeed_Stage01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3500,12 +3500,12 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_BlazeSeed_Stage02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorTrigger",
@@ -3539,12 +3539,12 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_BlazeSeed_Stage03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorTrigger",
@@ -3579,7 +3579,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorTrigger",
@@ -3599,13 +3599,13 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3618,7 +3618,7 @@
                     "BJCIHELGKLP": true
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 3.5
+                  "radius": 3.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3626,7 +3626,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -3789,7 +3789,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf"
@@ -3812,7 +3812,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3822,7 +3822,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 7.0
+                  "radius": 7.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3830,7 +3830,7 @@
                   "attenuationGroup": "Regisvine_Common",
                   "attackProperty": {
                     "damagePercentage": 0.30000001192092896,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "enBreak": 0.0
@@ -3856,7 +3856,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Fire_BlazeSeed_FireArea",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4040,7 +4040,7 @@
                   "born": {
                     "$type": "FLIPADNBJJF"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -4053,7 +4053,7 @@
                       "$type": "NFGKOJBHMLL"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }

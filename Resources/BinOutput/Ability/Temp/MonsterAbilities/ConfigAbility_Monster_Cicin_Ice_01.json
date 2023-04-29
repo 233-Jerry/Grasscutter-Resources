@@ -47,7 +47,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Cicin_Ice_IceSpearBullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -66,7 +66,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Cicin_Ice_IceSpearHit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -78,7 +78,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -86,7 +86,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -179,7 +179,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Cicin_Ice_Rush",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -299,9 +299,9 @@
         {
           "$type": "FixedMonsterRushMove",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_CICIN_RUSHATTCK_POS",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_CICIN_RUSHATTCK_POS",
+            "directionKey": ""
           },
           "timeRange": 0.30000001192092896,
           "animatorStateIDs": [
@@ -339,7 +339,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Cicin_Ice_Rush",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -362,7 +362,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -370,7 +370,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -395,16 +395,16 @@
           "target": "SelfAttackTarget",
           "key": "_MONSTER_CICIN_RUSHATTCK_POS",
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           },
           "setTarget": false
         },
         {
           "$type": "FixedMonsterRushMove",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_CICIN_RUSHATTCK_POS",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_CICIN_RUSHATTCK_POS",
+            "directionKey": ""
           },
           "timeRange": 0.5,
           "animatorStateIDs": [
@@ -578,9 +578,9 @@
         {
           "$type": "TryFindBlinkPointByBorn",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_FATUUS_MAGE_ICE_SENDPOSTOCICIN",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_FATUUS_MAGE_ICE_SENDPOSTOCICIN",
+            "directionKey": ""
           },
           "hitSceneType": "BlinkHitSceneTestByThreeSegments",
           "limitY": 1.0
@@ -662,7 +662,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Cicin_Ice_BlinkAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -687,7 +687,7 @@
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -2.0,
               "y": 0.5,
@@ -708,7 +708,7 @@
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.5,
@@ -729,7 +729,7 @@
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 2.0,
               "y": 0.5,
@@ -784,7 +784,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Cicin_Ice_ShieldEnergy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -827,7 +827,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Cicin_Ice_ShieldEnergyDisappear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -887,7 +887,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Cicin_Ice_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onKill": [
@@ -986,7 +986,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Cicin_Ice_BodyElement",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

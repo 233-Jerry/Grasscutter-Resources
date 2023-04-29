@@ -165,7 +165,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "CritRate"
             }
           ]
@@ -197,7 +197,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByEntityTypes",
@@ -825,7 +825,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": "DmgRate"
+              "damagePercentageRatio": "DmgRate"
             }
           ]
         }
@@ -888,7 +888,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": "DmgRate"
+              "damagePercentageRatio": "DmgRate"
             }
           ],
           "state": "AttackUp"
@@ -1013,7 +1013,7 @@
                 "Elemental_Art_Hold",
                 "Elemental_Art_Extra"
               ],
-              "MKLAMNDEDGB": "DamagePer"
+              "damagePercentageRatio": "DamagePer"
             }
           ]
         }
@@ -1440,7 +1440,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "Rate1",
               "predicates": [
                 {
@@ -1465,7 +1465,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "Rate2",
               "predicates": [
                 {
@@ -1505,7 +1505,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByEntityTypes",
@@ -1550,7 +1550,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByEntityTypes",
@@ -1687,7 +1687,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "DmgRate"
+              "damagePercentageRatio": "DmgRate"
             }
           ]
         }
@@ -1937,7 +1937,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "DmgRate"
+              "damagePercentageRatio": "DmgRate"
             }
           ]
         }
@@ -2195,7 +2195,7 @@
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["Elemental_Burst"],
-          "MKLAMNDEDGB": "Rate",
+          "damagePercentageRatio": "Rate",
           "predicates": [
             {
               "$type": "ByEntityTypes",
@@ -2336,7 +2336,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByEntityTypes",
@@ -3375,7 +3375,7 @@
             "NormalAttack_06",
             "ExtraAttack"
           ],
-          "MKLAMNDEDGB": "Rate",
+          "damagePercentageRatio": "Rate",
           "predicates": [
             {
               "$type": "ByEntityTypes",
@@ -3506,7 +3506,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": "DmgRate"
+              "damagePercentageRatio": "DmgRate"
             }
           ],
           "state": "AttackUp"
@@ -3842,7 +3842,7 @@
                 "ExtraAttack",
                 "FallingAttack"
               ],
-              "MKLAMNDEDGB": "DamageUp"
+              "damagePercentageRatio": "DamageUp"
             }
           ],
           "state": "AttackUp",
@@ -3886,7 +3886,7 @@
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["Elemental_Burst"],
-          "MKLAMNDEDGB": [
+          "damagePercentageRatio": [
             "Ratio",
             "FIGHT_PROP_NONEXTRA_CHARGE_EFFICIENCY",
             "MUL"
@@ -3919,7 +3919,7 @@
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["Elemental_Burst"],
-          "MKLAMNDEDGB": "MaxDamageUp",
+          "damagePercentageRatio": "MaxDamageUp",
           "predicates": [
             {
               "$type": "ByTargetGlobalValue",
@@ -4021,7 +4021,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_TriggerGreen",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ReviveElemEnergy",
@@ -4141,7 +4141,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Relic_Rock_NumberFlash",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -4181,7 +4181,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Relic_Rock_NumberBehit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -4202,7 +4202,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Relic_Rock_Number0",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4218,7 +4218,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Relic_Rock_Number1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -4235,7 +4235,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Relic_Rock_Number2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -4252,7 +4252,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Relic_Rock_Number3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -4269,7 +4269,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Relic_Rock_Number4",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -4584,13 +4584,13 @@
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Relic_Maria_Animator",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "HOPPHMEKHLG": {
                   "$type": "BIMJJILMODA",
-                  "GPPNNKAOHCG": "_ABILITY_Relic_HealAndHolyNova_Dir"
+                  "directionKey": "_ABILITY_Relic_HealAndHolyNova_Dir"
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4701,23 +4701,23 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Relic_HealAndHolyNova_Position",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Relic_HealAndHolyNova_Position",
+                    "directionKey": ""
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "RelicSkill",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "ignoreAttackerProperty": true,
                     "strikeType": "Default",
@@ -5191,7 +5191,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": [
                 "FIGHT_PROP_CUR_ATTACK",
                 "AttackPercentage",
@@ -5713,7 +5713,7 @@
                 "ExtraAttack",
                 "FallingAttack"
               ],
-              "MKLAMNDEDGB": "Rate2"
+              "damagePercentageRatio": "Rate2"
             }
           ],
           "properties": {
@@ -6234,7 +6234,7 @@
                 "Elemental_Art_Extra",
                 "Elemental_Burst"
               ],
-              "MKLAMNDEDGB": "DamageUp_Base_Ratio"
+              "damagePercentageRatio": "DamageUp_Base_Ratio"
             }
           ],
           "onBeingHit": [
@@ -6270,7 +6270,7 @@
                 "Elemental_Art_Extra",
                 "Elemental_Burst"
               ],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 "DamageUp_Base_Ratio",
                 "DamageUp_Sub_Ratio",
                 "MUL"

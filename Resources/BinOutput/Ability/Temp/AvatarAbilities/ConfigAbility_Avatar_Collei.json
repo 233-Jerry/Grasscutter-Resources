@@ -321,7 +321,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Bow_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -457,12 +457,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ExtraAttack_Glow_Once_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ExtraAttack_Glow_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -474,12 +474,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ExtraAttack_Glow_Once_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ExtraAttack_Glow_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -542,7 +542,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -582,7 +582,7 @@
             },
             "attachPointName": "WeaponL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -620,7 +620,7 @@
               "z": 0.4000000059604645
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -676,7 +676,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -698,7 +698,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
@@ -789,7 +789,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_Arrow_Fly_Big",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -838,7 +838,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "DamageWithoutGrass",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 10.0,
@@ -890,7 +890,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_Arrow_Fly_Grass",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -939,7 +939,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "DamageWithGrass",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -986,25 +986,25 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK01"],
           "damagePercentage": "NormalAttack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK02"],
           "damagePercentage": "NormalAttack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK03"],
           "damagePercentage": "NormalAttack_03_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK04"],
           "damagePercentage": "NormalAttack_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -1039,7 +1039,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_Arrow_Fly_Small",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1064,7 +1064,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_Arrow_Fly_Big",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1089,12 +1089,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_Arrow_Fly_Boomerang_Small",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_Arrow_Fly_Boomerang_Small_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1125,12 +1125,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_Arrow_Fly_Boomerang_Big",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_Arrow_Fly_Boomerang_Big_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1180,7 +1180,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalArt_Boomerang",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1203,7 +1203,7 @@
               "z": 0.800000011920929
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
@@ -1245,7 +1245,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalArt_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1292,7 +1292,7 @@
               "RotationDampTime": true,
               "configID": 2019,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1688,11 +1688,11 @@
                       "targetPredicates": [
                         {
                           "$type": "HJIPPKGIPOC",
-                          "GFIOLOJIDMG": "Talent_Collei_Constellation_2"
+                          "talentParam": "Talent_Collei_Constellation_2"
                         },
                         {
                           "$type": "HJIPPKGIPOC",
-                          "GFIOLOJIDMG": "Talent_Collei_PermanentSkill_1"
+                          "talentParam": "Talent_Collei_PermanentSkill_1"
                         }
                       ],
                       "successActions": [
@@ -1877,7 +1877,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Talent_Collei_PermanentSkill_1"
+              "talentParam": "Talent_Collei_PermanentSkill_1"
             }
           ],
           "modifierName": "Bullet_Buff_Handler"
@@ -1950,11 +1950,11 @@
                   "targetPredicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Talent_Collei_Constellation_2"
+                      "talentParam": "Talent_Collei_Constellation_2"
                     },
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Talent_Collei_PermanentSkill_1"
+                      "talentParam": "Talent_Collei_PermanentSkill_1"
                     }
                   ],
                   "successActions": [
@@ -2011,7 +2011,7 @@
                 "NFMGMJBCNII": "None",
                 "attackProperty": {
                   "damagePercentage": "ElementalArt_DMG",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Grass",
                   "bonusCriticalHurt": 25.0,
                   "overrideByWeapon": true,
@@ -2048,7 +2048,7 @@
                 "NFMGMJBCNII": "None",
                 "attackProperty": {
                   "damagePercentage": "ElementalArt_DMG",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Grass",
                   "bonusCriticalHurt": 25.0,
                   "overrideByWeapon": true,
@@ -2073,14 +2073,14 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Talent_Collei_Constellation_6"
+              "talentParam": "Talent_Collei_Constellation_6"
             }
           ],
           "modifierName": "Bullet_Talent_Collei_Constellation_6"
@@ -2106,7 +2106,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalArt_Buff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -2129,13 +2129,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalArt_AutoAttack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2146,7 +2146,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -2154,7 +2154,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Art_Auto",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2240,7 +2240,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Talent_Collei_Constellation_2"
+              "talentParam": "Talent_Collei_Constellation_2"
             }
           ],
           "modifierName": "UNIQUE_Collei_ElementalArt_Dummy_Constellation_DelayDie"
@@ -2251,7 +2251,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Talent_Collei_Constellation_2"
+              "talentParam": "Talent_Collei_Constellation_2"
             }
           ],
           "modifierName": "Collei_ElementalArt_Dummy_Constellation_DelayDie_Handler"
@@ -2271,7 +2271,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalBurst_ThrowCat",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2293,12 +2293,12 @@
               "$type": "CreateGadget",
               "RotationDampTime": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "JCJGOCMLFIM": true,
                 "HKNFOKFIKAG": 1.0,
-                "FNMFBPGNEKD": "_ABILITY_Collei_BurstCatField_Pos",
-                "GPPNNKAOHCG": "_ABILITY_Collei_BurstCatField_Dir"
+                "positionKey": "_ABILITY_Collei_BurstCatField_Pos",
+                "directionKey": "_ABILITY_Collei_BurstCatField_Dir"
               },
               "gadgetID": 41067021,
               "campID": 1001,
@@ -2332,7 +2332,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalBurst_ThrowCat_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalPos",
@@ -2414,7 +2414,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Talent_Collei_Constellation_4"
+                  "talentParam": "Talent_Collei_Constellation_4"
                 }
               ],
               "modifierName": "UNIQUE_Collei_Talent_Constellation_4"
@@ -2451,7 +2451,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalBurst_HandCat",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2477,7 +2477,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
@@ -2523,12 +2523,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalBurst_ThrowCat_Boom",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalBurst_Alert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2554,7 +2554,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2565,7 +2565,7 @@
                     }
                   },
                   "height": 6.0,
-                  "BMCPFKAEOJB": 5.5
+                  "radius": 5.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2573,7 +2573,7 @@
                   "attenuationGroup": "Collei_Elemental_Burst",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Burst_DMG1",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2594,7 +2594,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Talent_Collei_PermanentSkill_2"
+                  "talentParam": "Talent_Collei_PermanentSkill_2"
                 }
               ],
               "modifierName": "Collei_PermanentSkill_2_Handler"
@@ -2785,7 +2785,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalBurst_Alert_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2806,7 +2806,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalBurst_CatBorn",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Randomed",
@@ -2875,7 +2875,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalBurst_CatBlast",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2892,7 +2892,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2900,7 +2900,7 @@
                   "attenuationGroup": "Collei_Elemental_Burst",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Burst_DMG2",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2947,14 +2947,14 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalBurst_CatBorn_Talent",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Bow_Collei_ElementalBurst_CatBlast_Talent",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2970,7 +2970,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "Collei_Constellation_6",
@@ -2978,7 +2978,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Burst_DMG_Talent",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -3185,7 +3185,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3196,7 +3196,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3242,7 +3242,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3250,7 +3250,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Pierce",
                     "enBreak": 10.0,
@@ -3400,11 +3400,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3565,16 +3565,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3582,7 +3582,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3590,7 +3590,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 50.0,
@@ -3612,15 +3612,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3628,7 +3628,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3636,7 +3636,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 100.0,
@@ -3658,12 +3658,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3672,11 +3672,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

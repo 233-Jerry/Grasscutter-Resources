@@ -28,7 +28,7 @@
                 "shapeName": "CircleR4H6",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -44,18 +44,18 @@
                   "target": "CurLocalAvatar",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GetGlideChampCoin",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GlideChampCoin_Hit_Super",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -82,7 +82,7 @@
                 "shapeName": "CircleR3H4",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -98,18 +98,18 @@
                   "target": "CurLocalAvatar",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GetGlideChampCoin",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GlideChampCoin_Hit",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -143,7 +143,7 @@
                 "shapeName": "CircleR3H3",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -182,7 +182,7 @@
                 "shapeName": "CircleR6.5H5",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -198,18 +198,18 @@
                   "target": "CurLocalAvatar",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GetGlideChampCoin",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GlideChampCoin_Hit_Super",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -236,7 +236,7 @@
                 "shapeName": "CircleR5H5",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -252,18 +252,18 @@
                   "target": "CurLocalAvatar",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GetGlideChampCoin",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "target": "Target",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GlideChampCoin_Hit",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -297,7 +297,7 @@
                 "shapeName": "CircleR3H3",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -416,9 +416,9 @@
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Baseball_02_Score",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
@@ -433,9 +433,9 @@
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Baseball_HighScore",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -511,9 +511,9 @@
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Baseball_01_Score",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
@@ -528,9 +528,9 @@
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Baseball_HighScore",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -881,7 +881,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_JumpUp_01_Buff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableRocketJump",
@@ -911,7 +911,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_Level_Common_Jumpplatform_01_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1485,10 +1485,10 @@
                           "RotationDampTime": true,
                           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RaioTrunk_01_ThunderFall_Plus",
                           "born": {
-                            "$type": "GJGFFJAGIDF"
+                            "$type": "ConfigBornByTarget"
                           },
                           "ownedByLevel": true,
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "ApplyModifier",
@@ -1504,10 +1504,10 @@
                           "RotationDampTime": true,
                           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RaioTrunk_01_ThunderFall",
                           "born": {
-                            "$type": "GJGFFJAGIDF"
+                            "$type": "ConfigBornByTarget"
                           },
                           "ownedByLevel": true,
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "ApplyModifier",
@@ -1673,14 +1673,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -1723,14 +1723,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -1949,10 +1949,10 @@
                           "RotationDampTime": true,
                           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RaioTrunk_01_ThunderFall_Plus",
                           "born": {
-                            "$type": "GJGFFJAGIDF"
+                            "$type": "ConfigBornByTarget"
                           },
                           "ownedByLevel": true,
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "ApplyModifier",
@@ -1968,10 +1968,10 @@
                           "RotationDampTime": true,
                           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RaioTrunk_01_ThunderFall",
                           "born": {
-                            "$type": "GJGFFJAGIDF"
+                            "$type": "ConfigBornByTarget"
                           },
                           "ownedByLevel": true,
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "ApplyModifier",
@@ -2137,14 +2137,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -2187,14 +2187,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
@@ -2445,10 +2445,10 @@
                           "RotationDampTime": true,
                           "healLimitedByCasterMaxHPRatio": "Eff_EnergyDisk_ElementalBurst_Wave_R100_Plus",
                           "born": {
-                            "$type": "GJGFFJAGIDF"
+                            "$type": "ConfigBornByTarget"
                           },
                           "ownedByLevel": true,
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "ApplyModifier",
@@ -2464,10 +2464,10 @@
                           "RotationDampTime": true,
                           "healLimitedByCasterMaxHPRatio": "Eff_EnergyDisk_ElementalBurst_Wave_R40",
                           "born": {
-                            "$type": "GJGFFJAGIDF"
+                            "$type": "ConfigBornByTarget"
                           },
                           "ownedByLevel": true,
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "ApplyModifier",
@@ -2633,14 +2633,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -2682,14 +2682,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -2971,10 +2971,10 @@
                           "RotationDampTime": true,
                           "healLimitedByCasterMaxHPRatio": "Eff_EnergyDisk_ElementalBurst_Wave_R100_Plus",
                           "born": {
-                            "$type": "GJGFFJAGIDF"
+                            "$type": "ConfigBornByTarget"
                           },
                           "ownedByLevel": true,
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "ApplyModifier",
@@ -2990,10 +2990,10 @@
                           "RotationDampTime": true,
                           "healLimitedByCasterMaxHPRatio": "Eff_EnergyDisk_ElementalBurst_Wave_R40",
                           "born": {
-                            "$type": "GJGFFJAGIDF"
+                            "$type": "ConfigBornByTarget"
                           },
                           "ownedByLevel": true,
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "ApplyModifier",
@@ -3213,14 +3213,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -3262,14 +3262,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -3743,7 +3743,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RaioTrunk_01_ThunderFall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3754,14 +3754,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -3825,7 +3825,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RaioTrunk_01_ThunderFall_Plus",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3836,14 +3836,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -3907,7 +3907,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_EnergyDisk_ElementalBurst_Wave_R40",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3918,14 +3918,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -3989,7 +3989,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_EnergyDisk_ElementalBurst_Wave_R100_Plus",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -4000,14 +4000,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,

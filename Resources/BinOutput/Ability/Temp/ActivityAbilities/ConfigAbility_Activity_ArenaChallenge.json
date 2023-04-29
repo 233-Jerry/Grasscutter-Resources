@@ -36,7 +36,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "DamageUpRatio"
+              "damagePercentageRatio": "DamageUpRatio"
             }
           ]
         },
@@ -49,7 +49,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "DamageUpRatioLV2"
+              "damagePercentageRatio": "DamageUpRatioLV2"
             }
           ]
         }
@@ -235,7 +235,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_EnergyDisk_ElementalBurst_Wave_R40",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -247,14 +247,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -580,7 +580,7 @@
                   ],
                   "configID": 2024,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -607,7 +607,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Weapon_ExtraElementBall",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -867,7 +867,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": ["DamageUpRatio", "DamageUpState", "MUL"]
+              "damagePercentageRatio": ["DamageUpRatio", "DamageUpState", "MUL"]
             }
           ]
         },
@@ -880,7 +880,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": ["DamageUpRatio_LV2", "DamageUpState", "MUL"]
+              "damagePercentageRatio": ["DamageUpRatio_LV2", "DamageUpState", "MUL"]
             }
           ]
         }
@@ -1033,7 +1033,7 @@
                   ],
                   "configID": 2024,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1060,7 +1060,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Weapon_ExtraElementBall",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -1223,7 +1223,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "ClaymoreDamageUpRatio"
+              "damagePercentageRatio": "ClaymoreDamageUpRatio"
             }
           ]
         }
@@ -1414,7 +1414,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "NormalAtkDamageUpRatio"
+              "damagePercentageRatio": "NormalAtkDamageUpRatio"
             }
           ]
         },
@@ -1434,7 +1434,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "NormalAtkDamageUpRatio_LV2"
+              "damagePercentageRatio": "NormalAtkDamageUpRatio_LV2"
             }
           ]
         }
@@ -1663,7 +1663,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "DamageUpRate_Frozen",
+              "damagePercentageRatio": "DamageUpRate_Frozen",
               "predicates": [
                 {
                   "$type": "KPIBLFBHELB",

@@ -24,7 +24,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Un_Delta_Grass_ShootDecayed_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -46,7 +46,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Un_Delta_Grass_ShootDecayed_Attack",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -68,12 +68,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Un_Delta_Grass_Shoot_BulletDecayed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Un_Delta_Grass_Shoot_BulletDecayed_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -92,7 +92,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -103,7 +103,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.600000023841858
+              "radius": 1.600000023841858
             },
             "attackInfo": {
               "attackTag": "",
@@ -111,7 +111,7 @@
               "attenuationGroup": "FungusFightV2_Seq1",
               "attackProperty": {
                 "damagePercentage": 3.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "attackType": "Range"
@@ -141,7 +141,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Un_Grass_LeafBlessing",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -238,7 +238,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Un_Grass_UnionBurst_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -277,12 +277,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Un_Delta_Grass_Shoot_BulletDecayed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Un_Delta_Grass_Shoot_BulletDecayed_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -301,7 +301,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -312,7 +312,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.600000023841858
+              "radius": 1.600000023841858
             },
             "attackInfo": {
               "attackTag": "",
@@ -320,7 +320,7 @@
               "attenuationGroup": "FungusFightV2_Seq2",
               "attackProperty": {
                 "damagePercentage": 2.4000000953674316,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "enBreak": 20.0,

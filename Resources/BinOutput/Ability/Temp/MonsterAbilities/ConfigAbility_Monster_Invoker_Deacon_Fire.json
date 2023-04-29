@@ -76,7 +76,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Fire_Standby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -653,7 +653,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_BornHigh",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -671,7 +671,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_BornHigh",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -747,7 +747,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_FireDebuff_LoseHP",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "GetFightProperty",
@@ -818,7 +818,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Fire_FireDebuff_Damage",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveUniqueModifier",
@@ -839,7 +839,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_CommonSkill_FireDebuff_LoseHP",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1003,7 +1003,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Fire_NormalAtk01_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1029,7 +1029,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Fire_NormalAtk01_Explosion",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveUniqueModifier",
@@ -1049,7 +1049,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -1057,7 +1057,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.26600000262260437,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1099,7 +1099,7 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 0.5,
@@ -1114,8 +1114,8 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_MONSTER_INVOKER_DEACON_FIRE_BURNATK_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_MONSTER_INVOKER_DEACON_FIRE_BURNATK_POS",
+                "directionKey": ""
               },
               "gadgetID": 42203006,
               "campID": 4001,
@@ -1159,7 +1159,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -1193,7 +1193,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1201,7 +1201,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 10000.0
@@ -1238,7 +1238,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Fire_BurnAtk01_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1269,7 +1269,7 @@
             "DAPKLNIFPID": true,
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -1287,7 +1287,7 @@
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -1295,7 +1295,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.6660000085830688,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -1377,14 +1377,14 @@
           "ownerIsTarget": true,
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.800000011920929,
               "z": 0.0
             },
-            "FNMFBPGNEKD": "_MONSTER_INVOKER_DEACON_FIRE_BURNATK_POS",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_MONSTER_INVOKER_DEACON_FIRE_BURNATK_POS",
+            "directionKey": ""
           },
           "sightGroupWithOwner": true,
           "gadgetID": 42203007,
@@ -1444,7 +1444,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "EDLHKEAJOOL": 0.25,
                   "born": {
@@ -1456,7 +1456,7 @@
                     }
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 8.0
+                  "radius": 8.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1464,7 +1464,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -1536,7 +1536,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1683,7 +1683,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1739,7 +1739,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -1856,7 +1856,7 @@
             },
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1895,7 +1895,7 @@
                         },
                         "BJCIHELGKLP": true
                       },
-                      "BMCPFKAEOJB": 1.0
+                      "radius": 1.0
                     },
                     "attackInfo": {
                       "attackTag": "",
@@ -1903,7 +1903,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 0.0
                       },
                       "hitPattern": {
@@ -1957,7 +1957,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Fire_FireCore_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1980,7 +1980,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1988,7 +1988,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Blunt",
                     "enBreak": 0.0
@@ -2013,7 +2013,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -2040,7 +2040,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RangeAtk01"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -2097,7 +2097,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Fire_RangeAtk01_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2143,7 +2143,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2161,7 +2161,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -2169,7 +2169,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.6660000085830688,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -2246,15 +2246,15 @@
               "target": "SelfAttackTarget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 0.5
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_HELLFIREPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_HELLFIREPOS_",
+                "directionKey": ""
               },
               "gadgetID": 42203011,
               "campID": 4001,
@@ -2329,7 +2329,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Fire_HellFireAtk01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2443,15 +2443,15 @@
               "target": "SelfAttackTarget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 0.5
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_HELLFIREPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_HELLFIREPOS_",
+                "directionKey": ""
               },
               "gadgetID": 42203011,
               "campID": 4001,
@@ -2526,14 +2526,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Fire_Wings",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Fire_Wings_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2632,7 +2632,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2644,7 +2644,7 @@
                     "DAPKLNIFPID": true
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "Invoker_Deacon_Fire_FireDebuff",
@@ -2652,7 +2652,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.26600000262260437,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",

@@ -168,7 +168,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockStand_Born_Hand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -219,7 +219,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "PRIVATE_Hair"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -256,7 +256,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "PillarFever"
+                      "talentParam": "PillarFever"
                     }
                   ]
                 }
@@ -284,7 +284,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "PillarFever"
+                  "talentParam": "PillarFever"
                 }
               ],
               "abilityName": "SkillObj_Zhongli_PrimoPillar"
@@ -333,16 +333,16 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockStand_Born_Prelude",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "PrimoPillarPos",
-                "GPPNNKAOHCG": "PrimoPillarDir"
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "PrimoPillarPos",
+                "directionKey": "PrimoPillarDir"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockStand_Born_Hand1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -379,13 +379,13 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
             "JCJGOCMLFIM": true,
             "HKNFOKFIKAG": 4.0,
             "BJCIHELGKLP": true,
-            "FNMFBPGNEKD": "PrimoPillarPos",
-            "GPPNNKAOHCG": "PrimoPillarDir"
+            "positionKey": "PrimoPillarPos",
+            "directionKey": "PrimoPillarDir"
           },
           "gadgetID": 41030002,
           "campID": 1001,
@@ -395,11 +395,11 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockStand_Born_Hand1_01",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "EffPillarHandPos",
-            "GPPNNKAOHCG": "EffPillarHandDir"
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "EffPillarHandPos",
+            "directionKey": "EffPillarHandDir"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AvatarSkillStart",
@@ -430,12 +430,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockStand_Born",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockStand_Born_Stone",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -484,7 +484,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
@@ -502,7 +502,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -510,7 +510,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "PillarDamage1",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -532,7 +532,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
@@ -548,7 +548,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -556,7 +556,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "PillarDamage1",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -624,7 +624,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockStand_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -634,7 +634,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
@@ -664,7 +664,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "PillarDamage2",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -686,7 +686,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
@@ -714,7 +714,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "PillarDamage2",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -784,14 +784,14 @@
                   "RotationDampTime": true,
                   "configID": 2023,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 0.5,
                       "CPOKKADJBFH": 1.5
                     },
-                    "FNMFBPGNEKD": "PrimoPillarElementBallPos",
-                    "GPPNNKAOHCG": "PrimoPillarElementBallDir"
+                    "positionKey": "PrimoPillarElementBallPos",
+                    "directionKey": "PrimoPillarElementBallDir"
                   },
                   "value": 1.0,
                   "baseEnergy": 3.0
@@ -808,7 +808,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockStand_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -819,7 +819,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
@@ -849,7 +849,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "PillarDamage2",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -872,7 +872,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
@@ -900,7 +900,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "PillarDamage2",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -1032,7 +1032,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "PillarFever"
+                  "talentParam": "PillarFever"
                 }
               ],
               "successActions": [
@@ -1121,7 +1121,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockShield_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1131,14 +1131,14 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1149,7 +1149,7 @@
                     }
                   },
                   "height": 10.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -1157,7 +1157,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -1188,12 +1188,12 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1204,7 +1204,7 @@
                     }
                   },
                   "height": 10.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -1212,7 +1212,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -1308,7 +1308,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockShield_Recycle_Absorb",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1355,14 +1355,14 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockShield_BS_Sarcophagus_01",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockShield_BS_Sarcophagus",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -1537,7 +1537,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockShield_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -1547,7 +1547,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "ToughShield"
+                  "talentParam": "ToughShield"
                 }
               ],
               "ratio": 1.0,
@@ -1630,15 +1630,15 @@
                     },
                     "HOPPHMEKHLG": {
                       "$type": "BIMJJILMODA",
-                      "GPPNNKAOHCG": "_ABILITY_Zhongli_RockShield_Hit"
+                      "directionKey": "_ABILITY_Zhongli_RockShield_Hit"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockShield_Hit",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -1721,7 +1721,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockShield_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -1731,7 +1731,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "ToughShield"
+                  "talentParam": "ToughShield"
                 }
               ],
               "ratio": 1.0,
@@ -1814,15 +1814,15 @@
                     },
                     "HOPPHMEKHLG": {
                       "$type": "BIMJJILMODA",
-                      "GPPNNKAOHCG": "_ABILITY_Zhongli_RockShield_Hit"
+                      "directionKey": "_ABILITY_Zhongli_RockShield_Hit"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockShield_Hit",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -1913,7 +1913,7 @@
               "$type": "FireEffect",
               "target": "CurLocalAvatar",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockShield_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -2058,7 +2058,7 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "ShieldWithHeal"
+              "talentParam": "ShieldWithHeal"
             }
           ],
           "successActions": [
@@ -2185,7 +2185,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "GeoOrderASMaxShield"
+                  "talentParam": "GeoOrderASMaxShield"
                 }
               ],
               "modifierName": "Debuff_On_GeoOrder"
@@ -2229,7 +2229,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2248,7 +2248,7 @@
                     }
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2256,7 +2256,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "enBreak": 400.0
                   },
@@ -2265,7 +2265,7 @@
                     "hitImpulseType": "",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 1200.0,
+                      "hitImpulseX": 1200.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByHitDirection"
@@ -2280,7 +2280,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -2291,7 +2291,7 @@
                       }
                     },
                     "height": 2.0,
-                    "BMCPFKAEOJB": 1.0
+                    "radius": 1.0
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -2347,12 +2347,12 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockJudgement_BS",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockJudgement",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -2363,7 +2363,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockJudgement_BS_01",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -2376,7 +2376,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "BiggerGeoOrder"
+                  "talentParam": "BiggerGeoOrder"
                 }
               ],
               "successActions": [
@@ -2394,7 +2394,7 @@
                     "HKNFOKFIKAG": 4.0,
                     "BJCIHELGKLP": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -2412,14 +2412,14 @@
                     "HKNFOKFIKAG": 4.0,
                     "BJCIHELGKLP": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_RockJudgement_Fall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableHeadControl",
@@ -2437,7 +2437,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "BiggerGeoOrder"
+                  "talentParam": "BiggerGeoOrder"
                 }
               ],
               "successActions": [
@@ -2452,7 +2452,7 @@
                       "z": 5.0
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -2467,7 +2467,7 @@
                       "z": 5.0
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -2479,7 +2479,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
@@ -2496,7 +2496,7 @@
                       "z": 5.0
                     }
                   },
-                  "BMCPFKAEOJB": "Radius"
+                  "radius": "Radius"
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2504,7 +2504,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2526,7 +2526,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
@@ -2541,7 +2541,7 @@
                       "z": 5.0
                     }
                   },
-                  "BMCPFKAEOJB": "Radius"
+                  "radius": "Radius"
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2549,7 +2549,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2581,7 +2581,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "GeoOrderASMaxShield"
+                  "talentParam": "GeoOrderASMaxShield"
                 }
               ],
               "modifierName": "GeoOrderASMaxShield"
@@ -3082,7 +3082,7 @@
                 },
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3107,7 +3107,7 @@
                 },
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3132,7 +3132,7 @@
                 },
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3157,7 +3157,7 @@
                 },
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3182,7 +3182,7 @@
                 },
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3193,7 +3193,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_ExtraAttack_HideSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -3264,7 +3264,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_ExtraAttack_ShowSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3280,7 +3280,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Zhongli_WeaponVisible_Mark",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "partNames": ["equip01", "equip02", "sheathPoint"]
@@ -3473,7 +3473,7 @@
                           "predicates": [
                             {
                               "$type": "HJIPPKGIPOC",
-                              "GFIOLOJIDMG": "HP2ATK"
+                              "talentParam": "HP2ATK"
                             }
                           ]
                         }
@@ -3502,7 +3502,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": "Attack01",
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "bonusCriticalHurt": 25.0,
                             "overrideByWeapon": true,
                             "strikeType": "Spear",
@@ -3536,7 +3536,7 @@
                       "predicates": [
                         {
                           "$type": "HJIPPKGIPOC",
-                          "GFIOLOJIDMG": "HP2ATK"
+                          "talentParam": "HP2ATK"
                         }
                       ],
                       "attackEvent": {
@@ -3563,7 +3563,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": "Attack01",
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "bonusCriticalHurt": 25.0,
                             "overrideByWeapon": true,
                             "strikeType": "Spear",
@@ -3607,7 +3607,7 @@
                           "predicates": [
                             {
                               "$type": "HJIPPKGIPOC",
-                              "GFIOLOJIDMG": "HP2ATK"
+                              "talentParam": "HP2ATK"
                             }
                           ]
                         }
@@ -3636,7 +3636,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": "Attack01",
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "bonusCriticalHurt": 25.0,
                             "overrideByWeapon": true,
                             "strikeType": "Spear",
@@ -3670,7 +3670,7 @@
                       "predicates": [
                         {
                           "$type": "HJIPPKGIPOC",
-                          "GFIOLOJIDMG": "HP2ATK"
+                          "talentParam": "HP2ATK"
                         }
                       ],
                       "attackEvent": {
@@ -3697,7 +3697,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": "Attack01",
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "bonusCriticalHurt": 25.0,
                             "overrideByWeapon": true,
                             "strikeType": "Spear",
@@ -3743,7 +3743,7 @@
                       "predicates": [
                         {
                           "$type": "HJIPPKGIPOC",
-                          "GFIOLOJIDMG": "HP2ATK"
+                          "talentParam": "HP2ATK"
                         }
                       ]
                     }
@@ -3772,7 +3772,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "Attack01",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 25.0,
                         "overrideByWeapon": true,
                         "strikeType": "Spear",
@@ -3806,7 +3806,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ],
                   "attackEvent": {
@@ -3833,7 +3833,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "Attack01",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 25.0,
                         "overrideByWeapon": true,
                         "strikeType": "Spear",
@@ -3883,14 +3883,14 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3902,7 +3902,7 @@
                   },
                   "height": 1.5,
                   "BAPAHIOBNCL": 180.0,
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_02",
@@ -3910,7 +3910,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack02",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -3944,12 +3944,12 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3961,7 +3961,7 @@
                   },
                   "height": 1.5,
                   "BAPAHIOBNCL": 180.0,
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_02",
@@ -3969,7 +3969,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack02",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -4017,7 +4017,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
@@ -4046,7 +4046,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack03",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Spear",
@@ -4081,7 +4081,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
@@ -4108,7 +4108,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack03",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Spear",
@@ -4157,14 +4157,14 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4175,7 +4175,7 @@
                     }
                   },
                   "height": 1.899999976158142,
-                  "BMCPFKAEOJB": 1.7000000476837158
+                  "radius": 1.7000000476837158
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_04",
@@ -4183,7 +4183,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack04",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Spear",
@@ -4218,12 +4218,12 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4234,7 +4234,7 @@
                     }
                   },
                   "height": 1.899999976158142,
-                  "BMCPFKAEOJB": 1.7000000476837158
+                  "radius": 1.7000000476837158
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_04",
@@ -4242,7 +4242,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack04",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Spear",
@@ -4309,7 +4309,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
@@ -4338,7 +4338,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack06",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Spear",
@@ -4372,7 +4372,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
@@ -4399,7 +4399,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack06",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Spear",
@@ -4478,7 +4478,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
@@ -4507,7 +4507,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack05",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -4558,7 +4558,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
@@ -4585,7 +4585,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack05",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -4634,7 +4634,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Pole_Zhongli_NormalAttack05_Follow",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -4671,7 +4671,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
@@ -4682,7 +4682,7 @@
                 "attenuationGroup": "Avatar_Pole_ExtraAttack",
                 "attackProperty": {
                   "damagePercentage": "ExtraAttack",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 25.0,
                   "overrideByWeapon": true,
                   "strikeType": "Spear",
@@ -4696,7 +4696,7 @@
                   "hitImpulseType": "",
                   "overrideHitImpulse": {
                     "hitLevel": "Air",
-                    "IPHCEFBMJAJ": 0.0,
+                    "hitImpulseX": 0.0,
                     "hitImpulseY": 450.0
                   },
                   "retreatType": "ByHitDirection",
@@ -4722,7 +4722,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackInfo": {
@@ -4731,7 +4731,7 @@
                 "attenuationGroup": "Avatar_Pole_ExtraAttack",
                 "attackProperty": {
                   "damagePercentage": "ExtraAttack",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 25.0,
                   "overrideByWeapon": true,
                   "strikeType": "Spear",
@@ -4746,7 +4746,7 @@
                   "hitImpulseType": "",
                   "overrideHitImpulse": {
                     "hitLevel": "Air",
-                    "IPHCEFBMJAJ": 0.0,
+                    "hitImpulseX": 0.0,
                     "hitImpulseY": 450.0
                   },
                   "retreatType": "ByHitDirection",
@@ -4776,7 +4776,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
@@ -4794,7 +4794,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 0.800000011920929
+                  "radius": 0.800000011920929
                 },
                 "attackInfo": {
                   "attackTag": "ExtraAttack",
@@ -4802,7 +4802,7 @@
                   "attenuationGroup": "Avatar_Pole_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Spear",
@@ -4816,7 +4816,7 @@
                     "hitImpulseType": "",
                     "overrideHitImpulse": {
                       "hitLevel": "Air",
-                      "IPHCEFBMJAJ": 0.0,
+                      "hitImpulseX": 0.0,
                       "hitImpulseY": 450.0
                     },
                     "retreatType": "ByHitDirection",
@@ -4843,7 +4843,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
@@ -4859,7 +4859,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 0.800000011920929
+                  "radius": 0.800000011920929
                 },
                 "attackInfo": {
                   "attackTag": "ExtraAttack",
@@ -4867,7 +4867,7 @@
                   "attenuationGroup": "Avatar_Pole_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Spear",
@@ -4886,7 +4886,7 @@
                     "hitImpulseType": "",
                     "overrideHitImpulse": {
                       "hitLevel": "Air",
-                      "IPHCEFBMJAJ": 0.0,
+                      "hitImpulseX": 0.0,
                       "hitImpulseY": 450.0
                     },
                     "retreatType": "ByHitDirection",
@@ -5010,7 +5010,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_BS_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -5050,7 +5050,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
@@ -5067,7 +5067,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -5075,7 +5075,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -5096,7 +5096,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
@@ -5111,7 +5111,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -5119,7 +5119,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -5146,7 +5146,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "HP2ATK"
+                      "talentParam": "HP2ATK"
                     }
                   ]
                 }
@@ -5163,7 +5163,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -5171,7 +5171,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -5192,7 +5192,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ],
               "attackEvent": {
@@ -5207,7 +5207,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -5215,7 +5215,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -5379,7 +5379,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Loop_01_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5390,7 +5390,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Loop_02_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5551,7 +5551,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             },
             {
@@ -5559,17 +5559,17 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ]
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -5577,7 +5577,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -5585,7 +5585,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -5623,20 +5623,20 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "HP2ATK"
+              "talentParam": "HP2ATK"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -5644,7 +5644,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -5652,7 +5652,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -5691,24 +5691,24 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "DDBJEPBNOGF",
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "HP2ATK"
+                  "talentParam": "HP2ATK"
                 }
               ]
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -5716,7 +5716,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -5724,7 +5724,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -5763,19 +5763,19 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "HP2ATK"
+              "talentParam": "HP2ATK"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -5783,7 +5783,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -5791,7 +5791,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -5831,12 +5831,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Strike_01_Normal",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -5845,11 +5845,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Strike_02_Normal",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

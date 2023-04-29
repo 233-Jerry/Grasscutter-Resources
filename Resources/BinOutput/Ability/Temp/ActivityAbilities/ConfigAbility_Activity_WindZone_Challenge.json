@@ -39,7 +39,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["FallingAttack"],
-              "MKLAMNDEDGB": "FallingAttackDamageUpRatio"
+              "damagePercentageRatio": "FallingAttackDamageUpRatio"
             }
           ],
           "onAdded": [
@@ -155,7 +155,7 @@
                   "$type": "CreateGadget",
                   "target": "Other",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -262,7 +262,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Wind_Absorbe",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

@@ -173,7 +173,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ELITEAFFIX_ATTACK_ENHANCE",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "boolID": "Elite_Modifier",
@@ -268,17 +268,17 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Wind_DieInAir",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Wind_DieInAir_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           },
           "gadgetID": 42001010,
           "campID": 4001,
@@ -313,7 +313,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR4",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "PLJPAAFMNAD": -10.0,
               "LNPFPGALPJH": 1.0,
@@ -347,17 +347,17 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Wind_DieInAir_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Wind_DieInAir",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           },
           "gadgetID": 42001011,
           "campID": 4001,
@@ -392,7 +392,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR8",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "PLJPAAFMNAD": -15.0,
               "LNPFPGALPJH": 3.0,
@@ -419,7 +419,7 @@
               "gadgetID": 42001016,
               "campTargetType": "All",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true
               }
             }
@@ -428,7 +428,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Wind_Airflow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -523,7 +523,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Wind_CompressAtk_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -614,7 +614,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Wind_CompressAtk_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -670,7 +670,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Wind_BlowUpState",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "HideUIBillBoard",
@@ -774,7 +774,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Wind_AirAtk_Missile",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -795,7 +795,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -803,7 +803,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Pierce",

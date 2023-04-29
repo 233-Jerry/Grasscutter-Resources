@@ -72,12 +72,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_WaterSpear_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_WaterSpear_Bullet_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -96,7 +96,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_WaterSpear_Bullet_Explode",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -107,7 +107,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.699999988079071
+              "radius": 0.699999988079071
             },
             "attackInfo": {
               "attackTag": "",
@@ -115,7 +115,7 @@
               "attenuationGroup": "Skirmisher_Fat_SprayGun_Ice",
               "attackProperty": {
                 "damagePercentage": 0.625,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Slash",
@@ -165,7 +165,7 @@
                   "z": 0.6000000238418579
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -203,7 +203,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -252,7 +252,7 @@
                   "z": 0.6000000238418579
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -308,7 +308,7 @@
                   "z": 0.6000000238418579
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -346,7 +346,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -367,12 +367,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_WaterSpear_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_WaterSpear_Bullet_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -391,7 +391,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_WaterSpear_Bullet_Explode",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -402,7 +402,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.699999988079071
+              "radius": 0.699999988079071
             },
             "attackInfo": {
               "attackTag": "",
@@ -410,7 +410,7 @@
               "attenuationGroup": "Skirmisher_Fat_SprayGun_Ice",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Slash",
@@ -549,7 +549,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -572,11 +572,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_Capture_Warning",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true,
                 "JCJGOCMLFIM": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -817,7 +817,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_Detect_Mark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -943,7 +943,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -954,7 +954,7 @@
                     }
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -962,7 +962,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.625,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -1033,7 +1033,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1044,7 +1044,7 @@
                     }
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 7.0
+                  "radius": 7.0
                 },
                 "attackInfo": {
                   "attackTag": "Maiden_Detect_Damage",
@@ -1052,7 +1052,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.625,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -1557,7 +1557,7 @@
               "ownerIs": "Caster",
               "propOwnerIs": "Caster",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 2.0,
@@ -1586,7 +1586,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_Capture_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnablePushColliderName",
@@ -1603,7 +1603,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1614,7 +1614,7 @@
                     }
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 0.5
+                  "radius": 0.5
                 },
                 "attackInfo": {
                   "attackTag": "Fatuus_Maiden_Water_Capture",
@@ -1622,7 +1622,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -1723,7 +1723,7 @@
                 "DAPKLNIFPID": true,
                 "JCJGOCMLFIM": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1756,11 +1756,11 @@
               "target": "Target",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_Capture_Warning",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true,
                 "JCJGOCMLFIM": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1781,7 +1781,7 @@
               "target": "Applier",
               "key": "_MONSTER_FATUUS_MAIDEN_WATER_CAPTURE_POS",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true,
                 "JCJGOCMLFIM": true
               },
@@ -1790,9 +1790,9 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_FATUUS_MAIDEN_WATER_CAPTURE_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_FATUUS_MAIDEN_WATER_CAPTURE_POS",
+                "directionKey": ""
               },
               "gadgetID": 42305003
             }
@@ -1868,7 +1868,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_MONSTER_FATUUS_MAIDEN_WATER_CAPTURE_TARGET",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "modifierName": "Monster_Fatuus_Maiden_Water_FireCapture_ToSelfAttackTarget"
@@ -1889,7 +1889,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_WaterTomb_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1909,7 +1909,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1920,7 +1920,7 @@
                     }
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1928,7 +1928,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.16249999403953552,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -1958,7 +1958,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1969,7 +1969,7 @@
                     }
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1977,7 +1977,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.9750000238418579,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -2044,7 +2044,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_WaterTomb_ChargeBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2067,7 +2067,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_WaterTomb_ChargeLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2154,7 +2154,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_MONSTER_FATUUS_MAIDEN_WATER_WATERTOMB_TARGET",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "Monster_Fatuus_Maiden_WaterTomb_LockTarget_Eff"
@@ -2181,7 +2181,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_WaterTomb_LockTarget",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2202,7 +2202,7 @@
               "target": "Applier",
               "key": "_MONSTER_FATUUS_MAIDEN_WATER_CAPTURE_POS",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true,
                 "JCJGOCMLFIM": true
               },
@@ -2211,9 +2211,9 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_FATUUS_MAIDEN_WATER_CAPTURE_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_FATUUS_MAIDEN_WATER_CAPTURE_POS",
+                "directionKey": ""
               },
               "gadgetID": 42305004
             }
@@ -2235,7 +2235,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_WaterTomb_LockTarget",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2627,7 +2627,7 @@
                   "z": 0.20000000298023224
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2665,7 +2665,7 @@
                   "z": 0.20000000298023224
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2738,7 +2738,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2983,7 +2983,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_FieldOpen",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -3121,17 +3121,17 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_Enhance_Body",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_LeftHandHalo",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Maiden_Water_RightHandHalo",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3415,14 +3415,14 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_MONSTER_FATUUS_MAIDEN_WATER_BEHIT_INCD",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_MONSTER_FATUUS_MAIDEN_OPEN",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
@@ -3643,7 +3643,7 @@
                   "target": "Target",
                   "key": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
                   "setTarget": false
                 },
@@ -3654,15 +3654,15 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_MONSTER_FATUUS_MAIDEN_OPEN",
                       "ratio": 0.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ],
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "JCJGOCMLFIM": true,
-                    "FNMFBPGNEKD": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
+                    "directionKey": ""
                   },
                   "gadgetID": 42305002
                 },
@@ -3671,7 +3671,7 @@
                   "target": "Target",
                   "key": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -3687,15 +3687,15 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_MONSTER_FATUUS_MAIDEN_OPEN",
                       "ratio": 1.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ],
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "JCJGOCMLFIM": true,
-                    "FNMFBPGNEKD": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
+                    "directionKey": ""
                   },
                   "gadgetID": 42305002
                 },
@@ -3704,7 +3704,7 @@
                   "target": "Target",
                   "key": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 1.600000023841858,
                       "y": 0.0,
@@ -3720,15 +3720,15 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_MONSTER_FATUUS_MAIDEN_OPEN",
                       "ratio": 1.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ],
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "JCJGOCMLFIM": true,
-                    "FNMFBPGNEKD": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
+                    "directionKey": ""
                   },
                   "gadgetID": 42305002
                 },
@@ -3737,7 +3737,7 @@
                   "target": "Target",
                   "key": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": -1.600000023841858,
                       "y": 0.0,
@@ -3753,15 +3753,15 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_MONSTER_FATUUS_MAIDEN_OPEN",
                       "ratio": 1.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ],
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "JCJGOCMLFIM": true,
-                    "FNMFBPGNEKD": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_MONSTER_FATUUS_MAIDEN_WATER_COUNTER_POS",
+                    "directionKey": ""
                   },
                   "gadgetID": 42305002
                 }

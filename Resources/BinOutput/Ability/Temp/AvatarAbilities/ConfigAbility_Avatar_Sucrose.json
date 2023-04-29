@@ -186,7 +186,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_01",
@@ -194,7 +194,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Sucrose_NormalAttack_01_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -243,14 +243,14 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_NormalAttack_01_Hit",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.2999999523162842,
               "z": 5.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -271,7 +271,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -302,7 +302,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_02",
@@ -310,7 +310,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Sucrose_NormalAttack_02_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -359,14 +359,14 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_NormalAttack_01_Hit",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.2999999523162842,
               "z": 5.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -387,7 +387,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -418,7 +418,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_03",
@@ -426,7 +426,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Sucrose_NormalAttack_03_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -474,14 +474,14 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_NormalAttack_01_Hit",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.2999999523162842,
               "z": 5.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -502,7 +502,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -551,7 +551,7 @@
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.2999999523162842,
@@ -577,14 +577,14 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_NormalAttack_02_Hit_Pre",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_NormalAttack_02_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -601,7 +601,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "NormalAttack_04",
@@ -609,7 +609,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Sucrose_NormalAttack_04_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -805,7 +805,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_WindBlackHole_Pre",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -828,7 +828,7 @@
               "target": "OriginOwner",
               "attackTargetMapEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -839,7 +839,7 @@
                     }
                   },
                   "height": 6.0,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfoMap": {
                   "Enemy": {
@@ -848,7 +848,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": "WindBlackHole_Gadget_Damage",
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Wind",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Default",
@@ -867,7 +867,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Wind",
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Default",
@@ -976,7 +976,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Flusk",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1049,14 +1049,14 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Flusk_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Start",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
@@ -1247,7 +1247,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Main",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -1273,7 +1273,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "EDLHKEAJOOL": 0.5,
               "born": {
@@ -1285,7 +1285,7 @@
                 }
               },
               "height": 5.0,
-              "BMCPFKAEOJB": 8.0,
+              "radius": 8.0,
               "MKOMGAACIPB": "Clockwise"
             },
             "attackInfo": {
@@ -1294,7 +1294,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Sucrose_DemiHurricane_Gadget_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "enBreak": 150.0
@@ -1322,7 +1322,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "EDLHKEAJOOL": 0.5,
               "born": {
@@ -1334,7 +1334,7 @@
                 }
               },
               "height": 5.0,
-              "BMCPFKAEOJB": 8.0,
+              "radius": 8.0,
               "MKOMGAACIPB": "Clockwise"
             },
             "attackInfo": {
@@ -1343,7 +1343,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Sucrose_DemiHurricane_Gadget_Mix_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 25.0,
                 "enBreak": 0.0
@@ -1365,7 +1365,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "EDLHKEAJOOL": 0.5,
               "born": {
@@ -1377,7 +1377,7 @@
                 }
               },
               "height": 5.0,
-              "BMCPFKAEOJB": 8.0,
+              "radius": 8.0,
               "MKOMGAACIPB": "Clockwise"
             },
             "attackInfo": {
@@ -1386,7 +1386,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Sucrose_DemiHurricane_Gadget_Mix_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "enBreak": 0.0
@@ -1408,7 +1408,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "EDLHKEAJOOL": 0.5,
               "born": {
@@ -1420,7 +1420,7 @@
                 }
               },
               "height": 5.0,
-              "BMCPFKAEOJB": 8.0,
+              "radius": 8.0,
               "MKOMGAACIPB": "Clockwise"
             },
             "attackInfo": {
@@ -1429,7 +1429,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Sucrose_DemiHurricane_Gadget_Mix_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "enBreak": 0.0
@@ -1451,7 +1451,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -1462,7 +1462,7 @@
                 }
               },
               "height": 5.0,
-              "BMCPFKAEOJB": 8.0,
+              "radius": 8.0,
               "MKOMGAACIPB": "Clockwise"
             },
             "attackInfo": {
@@ -1471,7 +1471,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Sucrose_DemiHurricane_Gadget_Mix_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 25.0,
                 "enBreak": 0.0
@@ -1488,11 +1488,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Hurricane_IsMixed",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Strike",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1505,7 +1505,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Strike_Fire",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1518,7 +1518,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Strike_Water",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1531,7 +1531,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Strike_Electric",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1544,7 +1544,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Strike_Ice",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1565,7 +1565,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Hurricane_IsMixed",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "elementBatchPredicateds": [
@@ -1746,7 +1746,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "AntiFire",
                     "bonusCriticalHurt": 1.0,
                     "enBreak": 0.0
@@ -1773,7 +1773,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "OriginOwner",
-                  "GFIOLOJIDMG": "Avatar_Sucrose_Contellation_6"
+                  "talentParam": "Avatar_Sucrose_Contellation_6"
                 }
               ],
               "modifierName": "Hurricane_Mix_Fire_Enhancement_Handler"
@@ -1850,7 +1850,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "OriginOwner",
-                  "GFIOLOJIDMG": "Avatar_Sucrose_Contellation_6"
+                  "talentParam": "Avatar_Sucrose_Contellation_6"
                 }
               ],
               "modifierName": "Hurricane_Mix_Water_Enhancement_Handler"
@@ -1927,7 +1927,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "OriginOwner",
-                  "GFIOLOJIDMG": "Avatar_Sucrose_Contellation_6"
+                  "talentParam": "Avatar_Sucrose_Contellation_6"
                 }
               ],
               "modifierName": "Hurricane_Mix_Electric_Enhancement_Handler"
@@ -2004,7 +2004,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "OriginOwner",
-                  "GFIOLOJIDMG": "Avatar_Sucrose_Contellation_6"
+                  "talentParam": "Avatar_Sucrose_Contellation_6"
                 }
               ],
               "modifierName": "Hurricane_Mix_Ice_Enhancement_Handler"
@@ -2097,7 +2097,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Dissipate",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2115,7 +2115,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Dissipate_Fire",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2133,7 +2133,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Dissipate_Water",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2151,7 +2151,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Dissipate_Electric",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2169,7 +2169,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Sucrose_DemiHurricane_Dissipate_Ice",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf"
@@ -2336,7 +2336,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_BS_Wind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2376,7 +2376,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -2384,7 +2384,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Default",
@@ -2678,7 +2678,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Self_Wind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2716,16 +2716,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -2733,7 +2733,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -2741,7 +2741,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2778,15 +2778,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -2794,7 +2794,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -2802,7 +2802,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2840,12 +2840,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_01_Wind",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2854,11 +2854,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_02_Wind",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3193,31 +3193,31 @@
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_01"],
           "damagePercentage": "Sucrose_NormalAttack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_02"],
           "damagePercentage": "Sucrose_NormalAttack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_03"],
           "damagePercentage": "Sucrose_NormalAttack_03_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_04"],
           "damagePercentage": "Sucrose_NormalAttack_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["ExtraAttack"],
           "damagePercentage": "Sucrose_ExtraAttack_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -3368,7 +3368,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Sucrose_Contellation_4"
+              "talentParam": "Avatar_Sucrose_Contellation_4"
             }
           ],
           "modifierName": "UNIQUE_Avatar_Sucrose_NormalAttack_DamageHandler_Paranoid"
@@ -3382,7 +3382,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Sucrose_Contellation_4"
+                  "talentParam": "Avatar_Sucrose_Contellation_4"
                 }
               ]
             }

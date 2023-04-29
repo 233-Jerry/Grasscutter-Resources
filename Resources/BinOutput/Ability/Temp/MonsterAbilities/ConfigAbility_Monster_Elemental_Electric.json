@@ -496,7 +496,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -507,7 +507,7 @@
                 }
               },
               "height": 10.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -515,7 +515,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -524,7 +524,7 @@
               "hitPattern": {
                 "onHitEffectName": "default",
                 "hitLevel": "Air",
-                "IPHCEFBMJAJ": 800.0,
+                "hitImpulseX": 800.0,
                 "hitImpulseY": 600.0,
                 "hitImpulseType": "",
                 "retreatType": "ByTangent",

@@ -189,7 +189,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "ExtraAttackDamageUpRate1"
+              "damagePercentageRatio": "ExtraAttackDamageUpRate1"
             }
           ],
           "isLimitedProperties": true
@@ -203,7 +203,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "ExtraAttackDamageUpRate2"
+              "damagePercentageRatio": "ExtraAttackDamageUpRate2"
             }
           ],
           "isLimitedProperties": true
@@ -217,7 +217,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "ExtraAttackDamageUpRate3"
+              "damagePercentageRatio": "ExtraAttackDamageUpRate3"
             }
           ],
           "isLimitedProperties": true
@@ -666,7 +666,7 @@
                 "ExtraAttack",
                 "FallingAttack"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "JGEEKIDDFGM": "bonusCriticalUpRate1"
             }
           ],
@@ -690,7 +690,7 @@
                 "ExtraAttack",
                 "FallingAttack"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "JGEEKIDDFGM": "bonusCriticalUpRate2"
             }
           ],
@@ -714,7 +714,7 @@
                 "ExtraAttack",
                 "FallingAttack"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "JGEEKIDDFGM": "bonusCriticalUpRate3"
             }
           ],
@@ -1173,7 +1173,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "ElementalBurstDamageUpLevel1"
+              "damagePercentageRatio": "ElementalBurstDamageUpLevel1"
             }
           ],
           "isLimitedProperties": true
@@ -1187,7 +1187,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "ElementalBurstDamageUpLevel2"
+              "damagePercentageRatio": "ElementalBurstDamageUpLevel2"
             }
           ],
           "isLimitedProperties": true
@@ -1201,7 +1201,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "ElementalBurstDamageUpLevel3"
+              "damagePercentageRatio": "ElementalBurstDamageUpLevel3"
             }
           ],
           "isLimitedProperties": true
@@ -1642,7 +1642,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "FrozenDamageUpRate1",
+              "damagePercentageRatio": "FrozenDamageUpRate1",
               "predicates": [
                 {
                   "$type": "KPIBLFBHELB",
@@ -1662,7 +1662,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "FrozenDamageUpRate2",
+              "damagePercentageRatio": "FrozenDamageUpRate2",
               "predicates": [
                 {
                   "$type": "KPIBLFBHELB",
@@ -1682,7 +1682,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "FrozenDamageUpRate3",
+              "damagePercentageRatio": "FrozenDamageUpRate3",
               "predicates": [
                 {
                   "$type": "KPIBLFBHELB",
@@ -1824,7 +1824,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "ElementalBurstDamageUpLevel1"
+              "damagePercentageRatio": "ElementalBurstDamageUpLevel1"
             }
           ],
           "isLimitedProperties": true
@@ -1838,7 +1838,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "ElementalBurstDamageUpLevel2"
+              "damagePercentageRatio": "ElementalBurstDamageUpLevel2"
             }
           ],
           "isLimitedProperties": true
@@ -1852,7 +1852,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "ElementalBurstDamageUpLevel3"
+              "damagePercentageRatio": "ElementalBurstDamageUpLevel3"
             }
           ],
           "isLimitedProperties": true
@@ -2300,7 +2300,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "NormalAttackUpRate1"
+              "damagePercentageRatio": "NormalAttackUpRate1"
             }
           ],
           "isLimitedProperties": true
@@ -2321,7 +2321,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "NormalAttackUpRate2"
+              "damagePercentageRatio": "NormalAttackUpRate2"
             }
           ],
           "isLimitedProperties": true
@@ -2342,7 +2342,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "NormalAttackUpRate3"
+              "damagePercentageRatio": "NormalAttackUpRate3"
             }
           ],
           "isLimitedProperties": true

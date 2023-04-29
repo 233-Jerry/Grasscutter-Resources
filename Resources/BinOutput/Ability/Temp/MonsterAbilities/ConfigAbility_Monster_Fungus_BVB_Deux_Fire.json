@@ -64,11 +64,11 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "height": 1.0,
               "BAPAHIOBNCL": 75.0,
-              "BMCPFKAEOJB": 2.700000047683716
+              "radius": 2.700000047683716
             },
             "attackInfo": {
               "attackTag": "",
@@ -76,7 +76,7 @@
               "attenuationGroup": "FungusFightV2_Seq1",
               "attackProperty": {
                 "damagePercentage": 2.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 25.0,
                 "enBreak": 0.0,
@@ -93,7 +93,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Fire_FlameFountain_P1",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -128,14 +128,14 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Fire_FlameImpact_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Fire_FlameImpact_Blast",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DamageByAttackValue",
@@ -151,7 +151,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 10.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 50.0,
                   "attackType": "Range"
@@ -235,12 +235,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Fire_FlameImpact_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fungus_Deux_Fire_FlameImpact_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

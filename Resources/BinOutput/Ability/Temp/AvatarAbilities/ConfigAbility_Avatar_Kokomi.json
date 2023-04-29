@@ -230,12 +230,12 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ExtraAttack_Alert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Kokomi_ExtraAttack_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Kokomi_ExtraAttack_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -249,12 +249,12 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ExtraAttack_Alert_Burst",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Kokomi_ExtraAttack_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Kokomi_ExtraAttack_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -288,12 +288,12 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ExtraAttack_Alert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Kokomi_ExtraAttack_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Kokomi_ExtraAttack_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -307,12 +307,12 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ExtraAttack_Alert_Burst",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Kokomi_ExtraAttack_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Kokomi_ExtraAttack_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -362,12 +362,12 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ExtraAttack_Explode",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_ABILITY_Kokomi_ExtraAttack_Pos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Kokomi_ExtraAttack_Pos",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -385,17 +385,17 @@
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Kokomi_ExtraAttack_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Kokomi_ExtraAttack_Pos",
+                "directionKey": ""
               },
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "ExtraAttack",
@@ -403,7 +403,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ExtraAttack_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "elementRank": 3.0,
                 "bonusCriticalHurt": 25.0,
@@ -442,12 +442,12 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ExtraAttack_Explode_Burst",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_ABILITY_Kokomi_ExtraAttack_Pos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Kokomi_ExtraAttack_Pos",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -465,17 +465,17 @@
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Kokomi_ExtraAttack_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Kokomi_ExtraAttack_Pos",
+                "directionKey": ""
               },
-              "BMCPFKAEOJB": 4.0
+              "radius": 4.0
             },
             "attackInfo": {
               "attackTag": "ExtraAttack",
@@ -483,7 +483,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ExtraAttack_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "elementRank": 3.0,
                 "bonusCriticalHurt": 25.0,
@@ -500,7 +500,7 @@
                 "hitImpulseType": "LV5",
                 "overrideHitImpulse": {
                   "hitLevel": "Air",
-                  "IPHCEFBMJAJ": 0.0,
+                  "hitImpulseX": 0.0,
                   "hitImpulseY": 600.0
                 },
                 "retreatType": "ByHitDirection",
@@ -598,7 +598,7 @@
               "z": 0.20000000298023224
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -678,7 +678,7 @@
               "z": 0.10000000149011612
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -738,7 +738,7 @@
               "z": 0.5
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
@@ -754,7 +754,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Kokomi_NormalAttack_BounceBullet"
+                  "talentParam": "Avatar_Kokomi_NormalAttack_BounceBullet"
                 }
               ]
             }
@@ -789,7 +789,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Kokomi_NormalAttack_BounceBullet"
+              "talentParam": "Avatar_Kokomi_NormalAttack_BounceBullet"
             }
           ],
           "bulletID": 41054023,
@@ -822,7 +822,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Kokomi_NormalAttack_BounceBullet"
+              "talentParam": "Avatar_Kokomi_NormalAttack_BounceBullet"
             }
           ],
           "bulletID": 41054031,
@@ -863,7 +863,7 @@
               "z": 0.5
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -903,12 +903,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -921,7 +921,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.699999988079071
+              "radius": 0.699999988079071
             },
             "attackInfo": {
               "attackTag": "NormalAttack_01",
@@ -929,7 +929,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_01_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -960,7 +960,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1000,12 +1000,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1018,7 +1018,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.699999988079071
+              "radius": 0.699999988079071
             },
             "attackInfo": {
               "attackTag": "NormalAttack_02",
@@ -1026,7 +1026,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_02_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1057,7 +1057,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1097,12 +1097,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1115,7 +1115,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.699999988079071
+              "radius": 0.699999988079071
             },
             "attackInfo": {
               "attackTag": "NormalAttack_03",
@@ -1123,7 +1123,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_03_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1154,7 +1154,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1236,7 +1236,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Avatar_Kokomi_ElementalBurst_AtkSpeeddBuff"
+                      "talentParam": "Avatar_Kokomi_ElementalBurst_AtkSpeeddBuff"
                     }
                   ],
                   "abilityName": "Avatar_Kokomi_ElementalBurst_ReviveEnergy"
@@ -1254,12 +1254,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Burst",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Burst_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -1283,7 +1283,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.2000000476837158
+              "radius": 1.2000000476837158
             },
             "attackInfo": {
               "attackTag": "NormalAttack_01",
@@ -1291,7 +1291,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_01_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1327,7 +1327,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1409,7 +1409,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Avatar_Kokomi_ElementalBurst_AtkSpeeddBuff"
+                      "talentParam": "Avatar_Kokomi_ElementalBurst_AtkSpeeddBuff"
                     }
                   ],
                   "abilityName": "Avatar_Kokomi_ElementalBurst_ReviveEnergy"
@@ -1427,12 +1427,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Burst",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Burst_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -1456,7 +1456,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.2000000476837158
+              "radius": 1.2000000476837158
             },
             "attackInfo": {
               "attackTag": "NormalAttack_02",
@@ -1464,7 +1464,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_02_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1500,7 +1500,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1582,7 +1582,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Avatar_Kokomi_ElementalBurst_AtkSpeeddBuff"
+                      "talentParam": "Avatar_Kokomi_ElementalBurst_AtkSpeeddBuff"
                     }
                   ],
                   "abilityName": "Avatar_Kokomi_ElementalBurst_ReviveEnergy"
@@ -1600,12 +1600,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Burst",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Burst_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -1629,7 +1629,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.2000000476837158
+              "radius": 1.2000000476837158
             },
             "attackInfo": {
               "attackTag": "NormalAttack_03",
@@ -1637,7 +1637,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_03_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1673,7 +1673,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1713,12 +1713,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Burst",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Burst_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1731,14 +1731,14 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.2000000476837158
+              "radius": 1.2000000476837158
             },
             "attackInfo": {
               "attackTag": "ExtraBullet",
               "attenuationTag": "",
               "attenuationGroup": "default",
               "attackProperty": {
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1770,7 +1770,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_NormalAttack_Bullet_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1817,7 +1817,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1886,7 +1886,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ElementalArt_Gadget_Field",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1907,7 +1907,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -2107,7 +2107,7 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Kokomi_Talent_ExtraHealLowHPTarget"
+              "talentParam": "Avatar_Kokomi_Talent_ExtraHealLowHPTarget"
             }
           ],
           "successActions": [
@@ -2178,7 +2178,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ElementalArt_Gadget_HealWave",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2187,11 +2187,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Kokomi_ElementalArt_Burst_Flag",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ElementalArt_Gadget_ShockWave",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2200,11 +2200,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Kokomi_ElementalArt_Burst_Flag",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ElementalArt_Gadget_ShockWave_2",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -2213,7 +2213,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Kokomi_ElementalArt_Burst_Flag",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
@@ -2229,7 +2229,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "BMCPFKAEOJB": 6.0
+              "radius": 6.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -2237,7 +2237,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ElementalArt_Damage_Percentage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2259,7 +2259,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Kokomi_ElementalArt_Burst_Flag",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
@@ -2275,7 +2275,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "BMCPFKAEOJB": 6.0
+              "radius": 6.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -2283,7 +2283,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ElementalArt_Damage_Percentage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2419,7 +2419,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ElementalBurst_Aura",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2587,7 +2587,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Kokomi_ElementalBurst_Flag",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ElementalBurst_FootRipple",
@@ -2595,7 +2595,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "LFoot"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2616,7 +2616,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Kokomi_ElementalBurst_Flag",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ElementalBurst_FootRipple",
@@ -2624,7 +2624,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RFoot"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2792,7 +2792,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -2803,7 +2803,7 @@
                       }
                     },
                     "height": 2.0,
-                    "BMCPFKAEOJB": 1.0
+                    "radius": 1.0
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -2821,14 +2821,14 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ElementalBurst_Stage",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ElementalBurst_Stage_Thirdparty",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -2948,7 +2948,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ElementalBurst_Ripple",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -2959,7 +2959,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Kokomi_Talent_ElementalBurstRefreshGadget"
+                  "talentParam": "Avatar_Kokomi_Talent_ElementalBurstRefreshGadget"
                 }
               ],
               "abilityName": "Kokomi_ElementalArt_Gadget"
@@ -2969,7 +2969,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Kokomi_ElementalBurst_DamageBuff_HealAdd"
+                  "talentParam": "Avatar_Kokomi_ElementalBurst_DamageBuff_HealAdd"
                 }
               ],
               "modifierName": "UNIQUE_Avatar_Kokomi_ElementalBurst_DamageBuff_HealAdd"
@@ -2979,7 +2979,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Kokomi_ElementalBurst_AtkSpeeddBuff"
+                  "talentParam": "Avatar_Kokomi_ElementalBurst_AtkSpeeddBuff"
                 }
               ],
               "modifierName": "UNIQUE_Avatar_Kokomi_ElementalBurst_AtkSpeedBuff"
@@ -3136,7 +3136,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_ABILITY_Kokomi_ElementalBurst_Flag",
                       "ratio": 1.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ]
                 }
@@ -3173,7 +3173,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_ABILITY_Kokomi_ElementalBurst_Flag",
                       "ratio": 1.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ]
                 }
@@ -3195,7 +3195,7 @@
                 "NormalAttack_03",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": [
                 "FIGHT_PROP_MAX_HP",
                 "ElementalBurst_Damage_HealAdd_Percentage",
@@ -3252,7 +3252,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_ElementalBurst_Blast",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3260,14 +3260,14 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
               "attenuationTag": "",
               "attenuationGroup": "default",
               "attackProperty": {
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "elementRank": 3.0,
                 "bonusCriticalHurt": 50.0,
@@ -3370,7 +3370,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Kokomi_Talent_ExtraHealLowHPTarget"
+                  "talentParam": "Avatar_Kokomi_Talent_ExtraHealLowHPTarget"
                 }
               ],
               "successActions": [
@@ -3441,7 +3441,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Kokomi_ExtraHeal_OverHeal"
+                  "talentParam": "Avatar_Kokomi_ExtraHeal_OverHeal"
                 }
               ],
               "successActions": [
@@ -3709,7 +3709,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_BS_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -3749,7 +3749,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3757,7 +3757,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Default",
@@ -4051,7 +4051,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Self_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4089,16 +4089,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4106,7 +4106,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4114,7 +4114,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -4151,15 +4151,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4167,7 +4167,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4175,7 +4175,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -4213,12 +4213,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_01_Water",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -4227,11 +4227,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_02_Water",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4261,14 +4261,14 @@
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_Show02_00",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Kokomi_Show02_01",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }

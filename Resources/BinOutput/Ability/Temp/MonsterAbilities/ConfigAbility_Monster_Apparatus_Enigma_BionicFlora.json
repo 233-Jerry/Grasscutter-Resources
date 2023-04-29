@@ -205,7 +205,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicFlora_RangeAtk",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerBullet",
@@ -240,12 +240,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicFlora_RangeAtk_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicFlora_RangeAtk_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -266,7 +266,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -274,7 +274,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.4000000059604645,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0
               },
               "hitPattern": {
@@ -293,7 +293,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -606,7 +606,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicFlora_Prey",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -695,7 +695,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -706,7 +706,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 8.0
+                  "radius": 8.0
                 },
                 "attackInfo": {
                   "attackTag": "Apparatus_Enigma_PowerAtk",
@@ -714,7 +714,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default"
                   },
@@ -762,12 +762,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicFlora_ScorchingSands_Cannon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicFlora_ScorchingSands_Core",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -830,7 +830,7 @@
               ],
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -929,7 +929,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicFlora_ScorchingSands_DamageArea",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -937,7 +937,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -948,7 +948,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 5.800000190734863
+                  "radius": 5.800000190734863
                 },
                 "attackInfo": {
                   "attackTag": "Apparatus_Enigma_PowerAtk",
@@ -956,7 +956,7 @@
                   "attenuationGroup": "Monster_Konungmathr_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
                     "attackType": "Range"
@@ -992,7 +992,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicFlora_ScorchingSands_DamageArea_AS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

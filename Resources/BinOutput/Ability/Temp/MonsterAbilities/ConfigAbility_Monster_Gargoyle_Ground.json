@@ -865,12 +865,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Ground_Weakness_Head",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Ground_Weakness_Chest",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1331,7 +1331,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Airborne_Weak_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnablePushColliderName",
@@ -1462,7 +1462,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Airborne_ElementAtk_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -1611,7 +1611,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "WingL"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -1621,7 +1621,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "WingR"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -1886,7 +1886,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Ground_ElementAtk_AS_Chest",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -2501,7 +2501,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Ground_ChargeAtk_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2634,7 +2634,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -2642,7 +2642,7 @@
               "attenuationGroup": "Gargoyle_Ground_ChargeAtk",
               "attackProperty": {
                 "damagePercentage": 0.800000011920929,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
                 "enBreak": 150.0
@@ -2652,7 +2652,7 @@
                 "hitImpulseType": "LV4",
                 "overrideHitImpulse": {
                   "hitLevel": "Heavy",
-                  "IPHCEFBMJAJ": 1000.0,
+                  "hitImpulseX": 1000.0,
                   "hitImpulseY": 200.0
                 },
                 "hitHaltTimeScale": 0.009999999776482582

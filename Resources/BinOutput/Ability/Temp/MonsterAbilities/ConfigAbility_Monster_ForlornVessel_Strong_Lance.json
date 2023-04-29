@@ -98,7 +98,7 @@
                     },
                     "BJCIHELGKLP": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -155,7 +155,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Lance_HealTick",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -366,7 +366,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Lance_ChargeAtk_Route",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onAttackLanded": [
@@ -394,7 +394,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Lance_ChargeAtk_Hand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -458,8 +458,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02"]
               },
               "modifierName": "WeaponElementFreeze"
             }
@@ -472,8 +472,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02"]
               },
               "modifierName": "WeaponElementPetrifaction"
             }

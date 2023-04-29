@@ -223,7 +223,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Darkwraith_Fat_Rock_RageState01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -241,7 +241,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Darkwraith_Fat_Rock_RageBS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -334,7 +334,7 @@
                   "born": {
                     "$type": "FLIPADNBJJF"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ActCameraShake",
@@ -491,7 +491,7 @@
                     "IABNJPGBAOH": true,
                     "attachPointName": "ShieldPoint"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "defendCountInterval": true
@@ -581,7 +581,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Darkwraith_Fat_Rock_EnergyShield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -596,7 +596,7 @@
               "born": {
                 "$type": "FLIPADNBJJF"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },

@@ -228,7 +228,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_BornHigh",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -242,7 +242,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_BornHigh",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -352,11 +352,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Electric_NormalAtk01_Alert",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_INVOKER_DEACON_ELECTRIC_NORMALATK_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_INVOKER_DEACON_ELECTRIC_NORMALATK_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -364,25 +364,25 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Electric_NormalAtk01_Damage",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_INVOKER_DEACON_ELECTRIC_NORMALATK_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_INVOKER_DEACON_ELECTRIC_NORMALATK_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_MONSTER_INVOKER_DEACON_ELECTRIC_NORMALATK_POS",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_MONSTER_INVOKER_DEACON_ELECTRIC_NORMALATK_POS",
+                    "directionKey": ""
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -390,7 +390,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6660000085830688,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -468,7 +468,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_MONSTER_INVOKER_DEACON_ELECTRIC_STATE",
               "ratio": 2.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThan"
             }
           ],
@@ -525,14 +525,14 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -540,7 +540,7 @@
                   "attenuationGroup": "Monster_Invoker_Deacon_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.5329999923706055,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -578,14 +578,14 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -593,7 +593,7 @@
                   "attenuationGroup": "Monster_Invoker_Deacon_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.5329999923706055,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -665,7 +665,7 @@
               "$type": "FireEffect",
               "target": "CurLocalAvatar",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Debuff_Hit_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ReviveElemEnergy",
@@ -949,7 +949,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Electric_ChargeAtk01_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -967,7 +967,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -978,7 +978,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.7999999523162842
+              "radius": 1.7999999523162842
             },
             "attackInfo": {
               "attackTag": "Invoker_Deacon_Electric_ChargeAtk",
@@ -986,7 +986,7 @@
               "attenuationGroup": "Monster_Invoker_Deacon_Attenuation_2",
               "attackProperty": {
                 "damagePercentage": 0.3330000042915344,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -1012,7 +1012,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Electric_ChargeAtk01_Explosion",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -1020,7 +1020,7 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
-              "BMCPFKAEOJB": 1.7999999523162842
+              "radius": 1.7999999523162842
             },
             "attackInfo": {
               "attackTag": "Invoker_Deacon_Electric_ChargeAtk",
@@ -1028,7 +1028,7 @@
               "attenuationGroup": "Monster_Invoker_Deacon_Attenuation_2",
               "attackProperty": {
                 "damagePercentage": 0.3330000042915344,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -1058,7 +1058,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Electric_ChargeAtk02_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1079,7 +1079,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Invoker_Deacon_Electric_ChargeAtk",
@@ -1087,7 +1087,7 @@
               "attenuationGroup": "Monster_Invoker_Deacon_Attenuation_2",
               "attackProperty": {
                 "damagePercentage": 0.3330000042915344,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -1129,7 +1129,7 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "Invoker_Deacon_Electric_ChargeAtk",
@@ -1137,7 +1137,7 @@
               "attenuationGroup": "Monster_Invoker_Deacon_Attenuation_2",
               "attackProperty": {
                 "damagePercentage": 0.3330000042915344,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -1235,7 +1235,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Deacon_Electric_Standby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },

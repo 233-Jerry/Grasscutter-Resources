@@ -201,7 +201,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith_Aim_Line",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -212,12 +212,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith_AimAlert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith_AimAlert_Hand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -323,12 +323,12 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
             "JCJGOCMLFIM": true,
             "HKNFOKFIKAG": 3.0,
-            "FNMFBPGNEKD": "_ABILITY_Albedo_Monolith_CustomPos",
-            "GPPNNKAOHCG": "_ABILITY_Albedo_Monolith_CustomDir"
+            "positionKey": "_ABILITY_Albedo_Monolith_CustomPos",
+            "directionKey": "_ABILITY_Albedo_Monolith_CustomDir"
           },
           "gadgetID": 41038001,
           "campID": 1001,
@@ -634,7 +634,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith_Elevator_Fail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -662,12 +662,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith_Earthquake",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -677,7 +677,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -688,7 +688,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -696,7 +696,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "OpeningDamage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -828,14 +828,14 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith_Broken",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "failActions": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1163,11 +1163,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemyTrap_Explode",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemyTrap_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Albedo_AlchemyTrap_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1176,18 +1176,18 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemyTrap_Pos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Albedo_AlchemyTrap_Pos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.4000000953674316
+                  "radius": 3.4000000953674316
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
                   "attenuationTag": "Elemental_Art",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -1215,7 +1215,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "BloomEnergy"
+                  "talentParam": "BloomEnergy"
                 }
               ],
               "ratio": "BloomEnergy"
@@ -1225,7 +1225,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "BloomBurst"
+                  "talentParam": "BloomBurst"
                 }
               ],
               "successActions": [
@@ -1312,7 +1312,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Art"],
-              "MKLAMNDEDGB": 0.25,
+              "damagePercentageRatio": 0.25,
               "predicates": [
                 {
                   "$type": "GMGEIHHLMCO",
@@ -1351,9 +1351,9 @@
                   "$type": "GenerateElemBall",
                   "configID": 2023,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemyTrap_Pos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Albedo_AlchemyTrap_Pos",
+                    "directionKey": ""
                   },
                   "value": 1.0,
                   "baseEnergy": 3.0
@@ -1384,7 +1384,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "FallingAttackUp"
+                  "talentParam": "FallingAttackUp"
                 }
               ],
               "modifierName": "UNIQUE_Albedo_Monolith_Field_FallingAttackUp"
@@ -1404,7 +1404,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "FallingAttackUp"
+                  "talentParam": "FallingAttackUp"
                 }
               ],
               "modifierName": "Albedo_Monolith_Field_FallingAttackUp_Keeper"
@@ -1445,7 +1445,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "ShieldFever"
+                  "talentParam": "ShieldFever"
                 }
               ],
               "modifierName": "UNIQUE_Albedo_Monolith_Field_ShieldFever"
@@ -1486,7 +1486,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "ShieldFever"
+                  "talentParam": "ShieldFever"
                 }
               ],
               "modifierName": "Albedo_Monolith_Field_ShieldFever_Keeper"
@@ -1502,7 +1502,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["FallingAttack"],
-              "MKLAMNDEDGB": 0.30000001192092896
+              "damagePercentageRatio": 0.30000001192092896
             }
           ]
         },
@@ -1526,7 +1526,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.17000000178813934
+              "damagePercentageRatio": 0.17000000178813934
             }
           ],
           "state": "AttackUp"
@@ -1574,7 +1574,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith_FieldAlert",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -1593,7 +1593,7 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "BloomExtraDPR"
+              "talentParam": "BloomExtraDPR"
             }
           ],
           "successActions": [
@@ -1608,7 +1608,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith_FieldAlert_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2207,7 +2207,7 @@
                 "attachPointName": "Fx_ChestNode",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2223,7 +2223,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2231,7 +2231,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Burst",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2307,11 +2307,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Explode",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2322,11 +2322,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2334,7 +2334,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Burst",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2386,11 +2386,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Explode",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos1",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos1",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2401,11 +2401,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos1",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos1",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2413,7 +2413,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Burst",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2465,11 +2465,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Explode",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos2",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2480,11 +2480,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos2",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos2",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2492,7 +2492,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Burst",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2544,11 +2544,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Explode",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos3",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos3",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2559,11 +2559,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos3",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos3",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2571,7 +2571,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Burst",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2623,11 +2623,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Explode",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos4",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos4",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2638,11 +2638,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos4",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos4",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2650,7 +2650,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Burst",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2702,11 +2702,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Explode",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos5",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos5",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2717,11 +2717,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos5",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos5",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2729,7 +2729,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Burst",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2781,11 +2781,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Explode",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos6",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos6",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2796,11 +2796,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos6",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos6",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2808,7 +2808,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Burst",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2860,11 +2860,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Explode",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos7",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos7",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2875,11 +2875,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos7",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Albedo_AlchemicalBreakOut_BloomBurstRandomPos7",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2887,7 +2887,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Burst",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2979,7 +2979,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith_Elevator",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2991,7 +2991,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_FuriousMonolith_Elevator_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -3137,7 +3137,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3156,7 +3156,7 @@
                     }
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3164,7 +3164,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "enBreak": 400.0
                   },
@@ -3173,7 +3173,7 @@
                     "hitImpulseType": "",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 800.0,
+                      "hitImpulseX": 800.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByHitDirection"
@@ -3188,7 +3188,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -3199,7 +3199,7 @@
                       }
                     },
                     "height": 2.0,
-                    "BMCPFKAEOJB": 1.0
+                    "radius": 1.0
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -3213,17 +3213,17 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Self_Hand",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Self_Sword",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Self",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "AvatarEnterCameraShot",
@@ -3234,17 +3234,17 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Self_Hand_Thirdparty",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Self_Sword_Thirdparty",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_Self_Thirdparty",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -3328,13 +3328,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_RockWave",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3346,7 +3346,7 @@
                   },
                   "height": 5.400000095367432,
                   "BAPAHIOBNCL": 120.0,
-                  "BMCPFKAEOJB": 8.0
+                  "radius": 8.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -3354,7 +3354,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "OpeningDamage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -3409,7 +3409,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "ElemMasteryUp"
+                  "talentParam": "ElemMasteryUp"
                 }
               ],
               "successActions": [
@@ -3440,7 +3440,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_AlchemicalBreakOut_ElemMasteryUp",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -3583,7 +3583,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Sword_Albedo_BloomBurstCount",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -3718,43 +3718,43 @@
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_01"],
           "damagePercentage": "damage1",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_02"],
           "damagePercentage": "damage2",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_03"],
           "damagePercentage": "damage3",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_04"],
           "damagePercentage": "damage4",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_05"],
           "damagePercentage": "damage5",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack_1"],
           "damagePercentage": "damage6",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack_2"],
           "damagePercentage": "damage7",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -3882,7 +3882,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Self_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3907,7 +3907,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3943,7 +3943,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3951,7 +3951,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -4114,7 +4114,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4125,7 +4125,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4296,16 +4296,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4313,7 +4313,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4321,7 +4321,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -4359,15 +4359,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4375,7 +4375,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4383,7 +4383,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -4422,12 +4422,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -4436,11 +4436,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

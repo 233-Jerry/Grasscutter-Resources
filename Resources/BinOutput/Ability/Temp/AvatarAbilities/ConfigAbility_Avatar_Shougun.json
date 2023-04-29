@@ -219,7 +219,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_ElementalArt_Charge",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
@@ -257,7 +257,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_ElementalArt_EyeFX",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -293,7 +293,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": "ElementalArt_Attack_Radius",
+                  "radius": "ElementalArt_Attack_Radius",
                   "MKOMGAACIPB": "CenterToSide"
                 },
                 "attackInfo": {
@@ -302,7 +302,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ElementalArt_Attack",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -364,13 +364,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Appear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "GetFightProperty",
@@ -388,7 +388,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onAttackLanded": [
@@ -580,13 +580,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Appear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "GetFightProperty",
@@ -604,7 +604,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onAttackLanded": [
@@ -794,7 +794,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 40.0,
                 "Shougun_LocalAvatarEnergyToBurstDamageRatio",
                 "MUL"
@@ -812,7 +812,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 50.0,
                 "Shougun_LocalAvatarEnergyToBurstDamageRatio",
                 "MUL"
@@ -837,7 +837,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 60.0,
                 "Shougun_LocalAvatarEnergyToBurstDamageRatio",
                 "MUL"
@@ -862,7 +862,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 70.0,
                 "Shougun_LocalAvatarEnergyToBurstDamageRatio",
                 "MUL"
@@ -887,7 +887,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 80.0,
                 "Shougun_LocalAvatarEnergyToBurstDamageRatio",
                 "MUL"
@@ -912,7 +912,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 90.0,
                 "Shougun_LocalAvatarEnergyToBurstDamageRatio",
                 "MUL"
@@ -1055,7 +1055,7 @@
                 "attachPointName": "Fx_ChestNode",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1073,7 +1073,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": "Elf_Attack_Radius",
+                  "radius": "Elf_Attack_Radius",
                   "MKOMGAACIPB": "CenterToSide"
                 },
                 "attackInfo": {
@@ -1082,7 +1082,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Elf_Attack",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -1131,7 +1131,7 @@
                 "attachPointName": "Fx_ChestNode",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1149,7 +1149,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": "Elf_Attack_Radius",
+                  "radius": "Elf_Attack_Radius",
                   "MKOMGAACIPB": "CenterToSide"
                 },
                 "attackInfo": {
@@ -1162,7 +1162,7 @@
                       "Elf_RemoteAttackRatio",
                       "MUL"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -1393,7 +1393,7 @@
                       "targetPredicates": [
                         {
                           "$type": "HJIPPKGIPOC",
-                          "GFIOLOJIDMG": "BurstSkillEnergy_ExtraChargeLevel"
+                          "talentParam": "BurstSkillEnergy_ExtraChargeLevel"
                         }
                       ],
                       "successActions": [
@@ -1460,7 +1460,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "GainElemBall_ExtraChargeLevel"
+                      "talentParam": "GainElemBall_ExtraChargeLevel"
                     }
                   ],
                   "modifierName": "UNIQUE_Shougun_Talent_GainElemBall_ExtraChargeLevel"
@@ -1854,7 +1854,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_ChargeFX",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1919,7 +1919,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
@@ -1936,7 +1936,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear_01",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
@@ -1953,7 +1953,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear_02",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
@@ -1970,7 +1970,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear_03",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -2031,7 +2031,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2049,7 +2049,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2067,7 +2067,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2085,7 +2085,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear_03",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValue",
@@ -2153,91 +2153,91 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01"],
           "damagePercentage": "Attack_01_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02"],
           "damagePercentage": "Attack_02_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03"],
           "damagePercentage": "Attack_03_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04_01"],
           "damagePercentage": "Attack_04_01_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04_02"],
           "damagePercentage": "Attack_04_02_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK05"],
           "damagePercentage": "Attack_05_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack"],
           "damagePercentage": "ExtraAttack_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Katana_ATK01"],
           "damagePercentage": ["Attack_01_Katana", "KatanaDamageDelta", "ADD"],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Katana_ATK02"],
           "damagePercentage": ["Attack_02_Katana", "KatanaDamageDelta", "ADD"],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Katana_ATK03"],
           "damagePercentage": ["Attack_03_Katana", "KatanaDamageDelta", "ADD"],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Katana_ATK04_01"],
           "damagePercentage": ["Attack_04_01_Katana", "KatanaDamageDelta", "ADD"],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Katana_ATK04_02"],
           "damagePercentage": ["Attack_04_02_Katana", "KatanaDamageDelta", "ADD"],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Katana_ATK05"],
           "damagePercentage": ["Attack_05_Katana", "KatanaDamageDelta", "ADD"],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Katana_ExtraAttack_01"],
           "damagePercentage": ["ExtraAttack_Katana_01", "KatanaDamageDelta", "ADD"],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Katana_ExtraAttack_02"],
           "damagePercentage": ["ExtraAttack_Katana_02", "KatanaDamageDelta", "ADD"],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "AttachModifierToSelfGlobalValueMixin",
@@ -2301,7 +2301,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2320,7 +2320,7 @@
                     }
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2328,7 +2328,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "enBreak": 400.0
                   },
@@ -2337,7 +2337,7 @@
                     "hitImpulseType": "",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 800.0,
+                      "hitImpulseX": 800.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByHitDirection"
@@ -2352,7 +2352,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -2363,7 +2363,7 @@
                       }
                     },
                     "height": 2.0,
-                    "BMCPFKAEOJB": 1.0
+                    "radius": 1.0
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -2388,7 +2388,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_ElementalBurst_00",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "RemoveModifier",
@@ -2401,7 +2401,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_ChargeFX_Cine",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "AttachModifier",
@@ -2419,7 +2419,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_ElementalBurst_ThirdParty",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -2431,7 +2431,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_ElementalBurst_ChestKatana",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorInt",
@@ -2458,12 +2458,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_ElementalBurst_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_ElementalBurst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2522,7 +2522,7 @@
                       "BurstDamageDelta",
                       "ADD"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Slash",
@@ -2631,7 +2631,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
@@ -2648,7 +2648,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear_01",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
@@ -2665,7 +2665,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear_02",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
@@ -2682,7 +2682,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Charge_Disappear_03",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -2725,7 +2725,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_KatanaState",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorFloat",
@@ -2815,7 +2815,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_HairEmission_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -2823,7 +2823,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "BuffAfterKatana"
+                  "talentParam": "BuffAfterKatana"
                 }
               ],
               "abilityName": "Avatar_Shougun_Talent_BuffAfterKatana"
@@ -2921,7 +2921,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "ExtraReviveEnergy"
+                  "talentParam": "ExtraReviveEnergy"
                 }
               ],
               "successActions": [
@@ -3157,7 +3157,7 @@
                   "$type": "FireEffect",
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_HairEmission_Dissipate",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -3400,7 +3400,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "ReduceBurstCD"
+                      "talentParam": "ReduceBurstCD"
                     },
                     {
                       "$type": "DDBJEPBNOGF",
@@ -3543,7 +3543,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "KatanaIgnoreDefense"
+              "talentParam": "KatanaIgnoreDefense"
             }
           ],
           "modifierName": "UNIQUE_Shougun_KatanaIgnoreDefense_Handler"
@@ -4029,14 +4029,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Attack_Spark_Sheath",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Attack_Spark_Sheath_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4048,7 +4048,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Attack_Spark_Sheath_Extra",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4060,7 +4060,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Attack_Spark_Sheath",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4133,7 +4133,7 @@
                 "attachPointName": "WeaponR",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4195,7 +4195,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Tachi_CatalystR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4207,7 +4207,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Tachi_WeaponR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4219,7 +4219,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Tachi_Cine",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4240,7 +4240,7 @@
                 "attachPointName": "WeaponR",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4320,7 +4320,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Katana_ExtraAttack_ShowSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerSetVisible",
@@ -4453,7 +4453,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_HairEmission_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -4564,7 +4564,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_HairEmission_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -5299,7 +5299,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_BS_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -5332,7 +5332,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -5340,7 +5340,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -5372,7 +5372,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -5380,7 +5380,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -5421,7 +5421,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Loop_01_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5432,7 +5432,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Loop_02_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5443,7 +5443,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_FallAnthem_Self_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5468,7 +5468,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5492,7 +5492,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -5504,7 +5504,7 @@
                       "KatanaDamageDelta",
                       "ADD"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Slash",
@@ -5545,7 +5545,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_FallAnthem_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5556,7 +5556,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -5580,17 +5580,17 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "EDLHKEAJOOL": 0.6000000238418579,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
@@ -5598,7 +5598,7 @@
                     }
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -5610,7 +5610,7 @@
                       "KatanaDamageDelta",
                       "ADD"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -5648,16 +5648,16 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "EDLHKEAJOOL": 0.6000000238418579,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
@@ -5665,7 +5665,7 @@
                     }
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -5677,7 +5677,7 @@
                       "KatanaDamageDelta",
                       "ADD"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -5716,12 +5716,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_FallAnthem_Strike_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -5730,11 +5730,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_FallAnthem_Strike_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "failActions": [
@@ -5745,16 +5745,16 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
@@ -5762,7 +5762,7 @@
                     }
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -5770,7 +5770,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Blunt",
@@ -5808,15 +5808,15 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
@@ -5824,7 +5824,7 @@
                     }
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -5832,7 +5832,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Blunt",
@@ -5871,12 +5871,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Strike_01_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -5885,11 +5885,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Strike_02_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

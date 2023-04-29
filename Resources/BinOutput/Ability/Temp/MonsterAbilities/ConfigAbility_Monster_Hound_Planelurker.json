@@ -286,7 +286,7 @@
               "$type": "TurnDirectionToPos",
               "target": "CurLocalAvatar",
               "toPos": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             }
           ]
@@ -298,7 +298,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_BeforeBattleWalk",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -310,17 +310,17 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_FollowedHound",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_FollowedHound02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_FollowedHound03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -336,7 +336,7 @@
                 },
                 "attachPointName": "FollowAttachPoint01"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -350,7 +350,7 @@
                 },
                 "attachPointName": "FollowAttachPoint02"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -364,7 +364,7 @@
                 },
                 "attachPointName": "FollowAttachPoint03"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -497,7 +497,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_BornPos_AroundLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -508,12 +508,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_BornTeleport_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_BornPos_AroundAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -540,7 +540,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_BornTeleport_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -582,7 +582,7 @@
                   "attachPointName": "ForwardAttachPoint"
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -804,12 +804,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_BornPos",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_BornPos_AroundLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -895,14 +895,14 @@
                 {
                   "$type": "CreateGadget",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "_BORNPOS_",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_BORNPOS_",
+                    "directionKey": ""
                   },
                   "gadgetID": 42206011,
                   "campID": 1001
@@ -961,7 +961,7 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.5,
@@ -975,8 +975,8 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42206002,
@@ -987,7 +987,7 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 17.5,
                   "y": 0.5,
@@ -1001,8 +1001,8 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42206002,
@@ -1013,7 +1013,7 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": -17.5,
                   "y": 0.5,
@@ -1027,8 +1027,8 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42206002,
@@ -1123,7 +1123,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_SummonHound_BS_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1206,7 +1206,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_SummonHound_DarkHoundBullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1248,7 +1248,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.5,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Rock",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Blunt",
@@ -1330,7 +1330,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1375,7 +1375,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_SummonHound_DarkHoundLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1431,7 +1431,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1611,7 +1611,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_SummonHound_HolyHoundLoopBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -1696,7 +1696,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_SummonHound_HolyHoundBullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1738,7 +1738,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_SummonHound_HolyHoundBulletAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -1762,7 +1762,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -1770,7 +1770,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.10000000149011612,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -1812,14 +1812,14 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_DarkHound_EnergyBall",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_DarkHound_EnergyBallAS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -1830,7 +1830,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -1838,7 +1838,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.125,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
                 "enBreak": 1.0
@@ -1885,7 +1885,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_FireEnergy_BS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1902,7 +1902,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_FireEnergy_EnergyBallLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1923,7 +1923,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -1931,7 +1931,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.25,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 10.0,
                 "strikeType": "Default",
@@ -1949,7 +1949,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_FireEnergy_EnergyBallAS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1985,7 +1985,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_OnGroundCharge_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2020,7 +2020,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_OnGroundCharge_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2053,7 +2053,7 @@
                 {
                   "$type": "CreateGadget",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -2064,8 +2064,8 @@
                       "OKDPGGJGGCJ": 0.0,
                       "CPOKKADJBFH": 5.0
                     },
-                    "FNMFBPGNEKD": "_BORNPOS_",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_BORNPOS_",
+                    "directionKey": ""
                   },
                   "gadgetID": 42206011,
                   "campID": 1001
@@ -2107,7 +2107,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -2115,7 +2115,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -2152,7 +2152,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_RockBreathLeft_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2171,7 +2171,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_RockBreathLeft_EnergyLine",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -2214,7 +2214,7 @@
                   "attenuationGroup": "Monster_Shougun_ElectricEye",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 10.0,
                     "strikeType": "Blunt",
@@ -2290,7 +2290,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_DeathTornado_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorBool",
@@ -2340,9 +2340,9 @@
             {
               "$type": "TurnDirectionToPos",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               }
             },
             {
@@ -2364,7 +2364,7 @@
             {
               "$type": "FixedMonsterRushMove",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -2375,8 +2375,8 @@
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 7.5
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               },
               "timeRange": 4.0,
               "animatorStateIDs": ["DeathTornado_Stay"],
@@ -2397,7 +2397,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_DeathTornado_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnablePushColliderName",
@@ -2423,15 +2423,15 @@
             {
               "$type": "TurnDirectionToPos",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               }
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_DeathTornado_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnablePushColliderName",
@@ -2457,7 +2457,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2468,7 +2468,7 @@
                     }
                   },
                   "height": 10.0,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -2476,7 +2476,7 @@
                   "attenuationGroup": "Monster_Shougun_ElectricEye",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -2497,7 +2497,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2508,7 +2508,7 @@
                     }
                   },
                   "height": 10.0,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -2516,7 +2516,7 @@
                   "attenuationGroup": "Monster_Shougun_ElectricEye",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -2598,7 +2598,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2609,7 +2609,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 9.0
+              "radius": 9.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -2617,7 +2617,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.10000000149011612,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 999999.0
@@ -2657,13 +2657,13 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2674,7 +2674,7 @@
                 }
               },
               "height": 5.0,
-              "BMCPFKAEOJB": 12.0
+              "radius": 12.0
             },
             "attackInfo": {
               "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -2682,7 +2682,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -2750,26 +2750,26 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BS_Around",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "TryFindBlinkPointByBorn",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               },
               "hitSceneTest": false,
               "limitY": 2.5
@@ -2846,17 +2846,17 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_ExplodeAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DoBlink"
@@ -2918,7 +2918,7 @@
               "$type": "SetGlobalPos",
               "key": "ElementBurst_BurstAreaPos1",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -2938,15 +2938,15 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               }
             },
             {
               "$type": "SetGlobalPos",
               "key": "ElementBurst_BurstAreaPos2",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -2966,15 +2966,15 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               }
             },
             {
               "$type": "SetGlobalPos",
               "key": "ElementBurst_BurstAreaPos3",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -2994,15 +2994,15 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               }
             },
             {
               "$type": "SetGlobalPos",
               "key": "ElementBurst_BurstAreaPos4",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 17.5,
                   "y": 0.0,
@@ -3022,15 +3022,15 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               }
             },
             {
               "$type": "SetGlobalPos",
               "key": "ElementBurst_BurstAreaPos5",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": -17.5,
                   "y": 0.0,
@@ -3050,15 +3050,15 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               }
             },
             {
               "$type": "SetGlobalPos",
               "key": "ElementBurst_BurstAreaPos6",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 12.5,
                   "y": 0.0,
@@ -3078,15 +3078,15 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               }
             },
             {
               "$type": "SetGlobalPos",
               "key": "ElementBurst_BurstAreaPos7",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": -12.5,
                   "y": 0.0,
@@ -3106,15 +3106,15 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               }
             },
             {
               "$type": "SetGlobalPos",
               "key": "ElementBurst_BurstAreaPos8",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 12.5,
                   "y": 0.0,
@@ -3134,15 +3134,15 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               }
             },
             {
               "$type": "SetGlobalPos",
               "key": "ElementBurst_BurstAreaPos9",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": -12.5,
                   "y": 0.0,
@@ -3162,8 +3162,8 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_BORNPOS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_BORNPOS_",
+                "directionKey": ""
               }
             },
             {
@@ -3366,9 +3366,9 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstAreaAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos1",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos1",
+                "directionKey": ""
               }
             }
           ],
@@ -3377,24 +3377,24 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstArea",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos1",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos1",
+                "directionKey": ""
               }
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ElementBurst_BurstAreaPos1",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ElementBurst_BurstAreaPos1",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 7.5
+                  "radius": 7.5
                 },
                 "attackInfo": {
                   "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -3402,7 +3402,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 10.0,
                     "strikeType": "Blunt",
@@ -3434,9 +3434,9 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstAreaAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos2",
+                "directionKey": ""
               }
             }
           ],
@@ -3445,24 +3445,24 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstArea",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos2",
+                "directionKey": ""
               }
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ElementBurst_BurstAreaPos2",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ElementBurst_BurstAreaPos2",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 7.5
+                  "radius": 7.5
                 },
                 "attackInfo": {
                   "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -3470,7 +3470,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 10.0,
                     "strikeType": "Blunt",
@@ -3502,9 +3502,9 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstAreaAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos3",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos3",
+                "directionKey": ""
               }
             }
           ],
@@ -3513,24 +3513,24 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstArea",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos3",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos3",
+                "directionKey": ""
               }
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ElementBurst_BurstAreaPos3",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ElementBurst_BurstAreaPos3",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 7.5
+                  "radius": 7.5
                 },
                 "attackInfo": {
                   "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -3538,7 +3538,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 10.0,
                     "strikeType": "Blunt",
@@ -3570,9 +3570,9 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstAreaAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos4",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos4",
+                "directionKey": ""
               }
             }
           ],
@@ -3581,24 +3581,24 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstArea",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos4",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos4",
+                "directionKey": ""
               }
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ElementBurst_BurstAreaPos4",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ElementBurst_BurstAreaPos4",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 7.5
+                  "radius": 7.5
                 },
                 "attackInfo": {
                   "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -3606,7 +3606,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 10.0,
                     "strikeType": "Blunt",
@@ -3638,9 +3638,9 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstAreaAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos5",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos5",
+                "directionKey": ""
               }
             }
           ],
@@ -3649,24 +3649,24 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstArea",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos5",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos5",
+                "directionKey": ""
               }
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ElementBurst_BurstAreaPos5",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ElementBurst_BurstAreaPos5",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 7.5
+                  "radius": 7.5
                 },
                 "attackInfo": {
                   "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -3674,7 +3674,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 10.0,
                     "strikeType": "Blunt",
@@ -3706,9 +3706,9 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstAreaAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos6",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos6",
+                "directionKey": ""
               }
             }
           ],
@@ -3717,24 +3717,24 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstArea",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos6",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos6",
+                "directionKey": ""
               }
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ElementBurst_BurstAreaPos6",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ElementBurst_BurstAreaPos6",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 7.5
+                  "radius": 7.5
                 },
                 "attackInfo": {
                   "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -3742,7 +3742,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 10.0,
                     "strikeType": "Blunt",
@@ -3774,9 +3774,9 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstAreaAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos7",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos7",
+                "directionKey": ""
               }
             }
           ],
@@ -3785,24 +3785,24 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstArea",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos7",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos7",
+                "directionKey": ""
               }
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ElementBurst_BurstAreaPos7",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ElementBurst_BurstAreaPos7",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 7.5
+                  "radius": 7.5
                 },
                 "attackInfo": {
                   "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -3810,7 +3810,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 10.0,
                     "strikeType": "Blunt",
@@ -3842,9 +3842,9 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstAreaAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos8",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos8",
+                "directionKey": ""
               }
             }
           ],
@@ -3853,24 +3853,24 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstArea",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos8",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos8",
+                "directionKey": ""
               }
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ElementBurst_BurstAreaPos8",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ElementBurst_BurstAreaPos8",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 7.5
+                  "radius": 7.5
                 },
                 "attackInfo": {
                   "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -3878,7 +3878,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 10.0,
                     "strikeType": "Blunt",
@@ -3910,9 +3910,9 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstAreaAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos9",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos9",
+                "directionKey": ""
               }
             }
           ],
@@ -3921,24 +3921,24 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstArea",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElementBurst_BurstAreaPos9",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElementBurst_BurstAreaPos9",
+                "directionKey": ""
               }
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ElementBurst_BurstAreaPos9",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ElementBurst_BurstAreaPos9",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 7.5
+                  "radius": 7.5
                 },
                 "attackInfo": {
                   "attackTag": "Hound_PlaneLurker_Corruption_Tag",
@@ -3946,7 +3946,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 10.0,
                     "strikeType": "Blunt",
@@ -3997,14 +3997,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstAreaAlert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_BurstArea",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DamageByAttackValue",
@@ -4030,7 +4030,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.25,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Rock",
                   "bonusCriticalHurt": 10.0,
                   "strikeType": "Blunt",
@@ -4068,17 +4068,17 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_Explode",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_BORNPOS_",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_BORNPOS_",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "DamageByAttackValue",
@@ -4104,7 +4104,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 1.0,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Rock",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Blunt",
@@ -4121,13 +4121,13 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf"
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 20.0
+              "radius": 20.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -4135,7 +4135,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 999999.0
@@ -4200,17 +4200,17 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_ElementalBurst_Dust",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_BORNPOS_",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_BORNPOS_",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -4240,7 +4240,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.25,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Rock",
               "bonusCriticalHurt": 50.0,
               "strikeType": "Blunt",
@@ -4257,13 +4257,13 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf"
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 7.5
+              "radius": 7.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -4271,7 +4271,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 999999.0
@@ -4303,14 +4303,14 @@
         {
           "$type": "TryFindBlinkPointByBorn",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
               "z": 0.0
             },
-            "FNMFBPGNEKD": "_BORNPOS_",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_BORNPOS_",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 2.5
@@ -4691,7 +4691,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Common_Corruption_LoseHP",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -4827,7 +4827,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -4838,7 +4838,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 10.0
+              "radius": 10.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -4846,7 +4846,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.10000000149011612,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 999999.0
@@ -4871,13 +4871,13 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hound_Planelurker_Weak_DropOnGround",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -4888,7 +4888,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 6.5
+              "radius": 6.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -4896,7 +4896,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 999999.0
@@ -4951,7 +4951,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 999999.0

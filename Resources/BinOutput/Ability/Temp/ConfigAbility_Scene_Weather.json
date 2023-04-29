@@ -375,7 +375,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_AbyssCarpet_Enhanced",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -472,7 +472,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Character_Abyss_Footprint",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -575,7 +575,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "Weather_Attack",
@@ -583,7 +583,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "enBreak": 200.0,
@@ -684,7 +684,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Thunder_EarlyWarning_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -695,7 +695,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Thunder_EarlyWarning_01_Tsurumi",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -772,7 +772,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "Weather_Attack",
@@ -780,7 +780,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "enBreak": 200.0,
@@ -976,7 +976,7 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -992,7 +992,7 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1023,7 +1023,7 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "KillSelf",
@@ -1128,7 +1128,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -1222,7 +1222,7 @@
                       "z": 0.0
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -1237,7 +1237,7 @@
                       "z": 0.0
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1364,7 +1364,7 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -1380,7 +1380,7 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1476,7 +1476,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Foxtail_Grass01_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -1510,7 +1510,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Foxtail_Grass02_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -1974,7 +1974,7 @@
                 "attenuationTag": "",
                 "attenuationGroup": "default",
                 "attackProperty": {
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "damageExtra": 1.0
                 }
@@ -2041,7 +2041,7 @@
                 "attenuationTag": "",
                 "attenuationGroup": "default",
                 "attackProperty": {
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "damageExtra": 1.0
                 }
@@ -2114,7 +2114,7 @@
               "$type": "DamageByAttackValue",
               "RotationDampTime": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.5,
@@ -2127,7 +2127,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": "Avatar_Cold_Damage_OnAdded",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Default",
                   "enBreak": 10.0
@@ -2152,7 +2152,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_WhiteBox_ColdDamage",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2171,7 +2171,7 @@
               "$type": "DamageByAttackValue",
               "RotationDampTime": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.5,
@@ -2184,7 +2184,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": "Avatar_Cold_Damage_onThinkInterval",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Default",
                   "enBreak": 10.0
@@ -2273,7 +2273,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WhiteBox_ColdDamage",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2370,7 +2370,7 @@
             "attenuationTag": "",
             "attenuationGroup": "default",
             "attackProperty": {
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "bonusCriticalHurt": 100.0,
               "damageExtra": 1.0
             }
@@ -2774,7 +2774,7 @@
                   "target": "CurLocalAvatar",
                   "key": "ThunderPos",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 2.0,
@@ -2797,7 +2797,7 @@
               "target": "CurLocalAvatar",
               "key": "ThunderPos2",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 8.0,
@@ -2810,7 +2810,7 @@
               "target": "CurLocalAvatar",
               "key": "ThunderPos3",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 8.0,
@@ -2827,7 +2827,7 @@
                   "target": "CurLocalAvatar",
                   "key": "ThunderPos4",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 8.0,
@@ -2854,7 +2854,7 @@
                   "target": "CurLocalAvatar",
                   "key": "ThunderPos5",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 8.0,
@@ -2894,7 +2894,7 @@
                   "target": "CurLocalAvatar",
                   "key": "ThunderPos",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 2.0,
@@ -2917,7 +2917,7 @@
               "target": "CurLocalAvatar",
               "key": "ThunderPos2",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 8.0,
@@ -2930,7 +2930,7 @@
               "target": "CurLocalAvatar",
               "key": "ThunderPos3",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 8.0,
@@ -2947,7 +2947,7 @@
                   "target": "CurLocalAvatar",
                   "key": "ThunderPos4",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 8.0,
@@ -2974,7 +2974,7 @@
                   "target": "CurLocalAvatar",
                   "key": "ThunderPos5",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 8.0,
@@ -3015,31 +3015,31 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos2",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos3",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos3",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -3052,11 +3052,11 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos4",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos4",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -3069,11 +3069,11 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos5",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos5",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3088,11 +3088,11 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_01",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3108,11 +3108,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ThunderPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ThunderPos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3120,7 +3120,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -3131,7 +3131,7 @@
                     "hitImpulseType": "LV3",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 50.0,
+                      "hitImpulseX": 50.0,
                       "hitImpulseY": 800.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -3155,14 +3155,14 @@
                   "$type": "CreateGadget",
                   "RotationDampTime": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 1.0,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "ThunderPos",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "ThunderPos",
+                    "directionKey": ""
                   },
                   "gadgetID": 70900269,
                   "campID": 4001,
@@ -3174,11 +3174,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_01",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos2",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3187,11 +3187,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ThunderPos2",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ThunderPos2",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3199,7 +3199,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -3210,7 +3210,7 @@
                     "hitImpulseType": "LV7",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 50.0,
+                      "hitImpulseX": 50.0,
                       "hitImpulseY": 800.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -3227,14 +3227,14 @@
                   "$type": "CreateGadget",
                   "RotationDampTime": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 1.0,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "ThunderPos2",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "ThunderPos2",
+                    "directionKey": ""
                   },
                   "gadgetID": 70900269,
                   "campID": 4001,
@@ -3246,11 +3246,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_01",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos3",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos3",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3259,11 +3259,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ThunderPos3",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ThunderPos3",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3271,7 +3271,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -3282,7 +3282,7 @@
                     "hitImpulseType": "LV7",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 50.0,
+                      "hitImpulseX": 50.0,
                       "hitImpulseY": 800.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -3299,14 +3299,14 @@
                   "$type": "CreateGadget",
                   "RotationDampTime": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 1.0,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "ThunderPos3",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "ThunderPos3",
+                    "directionKey": ""
                   },
                   "gadgetID": 70900269,
                   "campID": 4001,
@@ -3325,11 +3325,11 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_01",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos4",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos4",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3345,11 +3345,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ThunderPos4",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ThunderPos4",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3357,7 +3357,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -3368,7 +3368,7 @@
                     "hitImpulseType": "LV7",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 50.0,
+                      "hitImpulseX": 50.0,
                       "hitImpulseY": 800.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -3392,14 +3392,14 @@
                   "$type": "CreateGadget",
                   "RotationDampTime": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 1.0,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "ThunderPos4",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "ThunderPos4",
+                    "directionKey": ""
                   },
                   "gadgetID": 70900269,
                   "campID": 4001,
@@ -3418,11 +3418,11 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_01",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos5",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos5",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3438,11 +3438,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ThunderPos5",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ThunderPos5",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3450,7 +3450,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -3461,7 +3461,7 @@
                     "hitImpulseType": "LV7",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 50.0,
+                      "hitImpulseX": 50.0,
                       "hitImpulseY": 800.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -3485,14 +3485,14 @@
                   "$type": "CreateGadget",
                   "RotationDampTime": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 1.0,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "ThunderPos5",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "ThunderPos5",
+                    "directionKey": ""
                   },
                   "gadgetID": 70900269,
                   "campID": 4001,
@@ -3573,7 +3573,7 @@
               "target": "CurLocalAvatar",
               "key": "ThunderPos_Phase2",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 1.0,
@@ -3585,11 +3585,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos_Phase2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos_Phase2",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3597,11 +3597,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_01",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos_Phase2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos_Phase2",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3610,11 +3610,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ThunderPos_Phase2",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ThunderPos_Phase2",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3622,7 +3622,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -3633,7 +3633,7 @@
                     "hitImpulseType": "LV7",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 50.0,
+                      "hitImpulseX": 50.0,
                       "hitImpulseY": 800.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -3650,14 +3650,14 @@
                   "$type": "CreateGadget",
                   "RotationDampTime": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 1.0,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "ThunderPos_Phase2",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "ThunderPos_Phase2",
+                    "directionKey": ""
                   },
                   "gadgetID": 70900269,
                   "campID": 4001,
@@ -3877,7 +3877,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Fire_Level_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -3896,7 +3896,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Fire_Level_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -3909,7 +3909,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Fire_Level_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -3923,7 +3923,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 50.0,
                   "enBreak": 0.0,
@@ -3934,7 +3934,7 @@
                   "hitImpulseType": "LV6",
                   "overrideHitImpulse": {
                     "hitLevel": "Light",
-                    "IPHCEFBMJAJ": 600.0,
+                    "hitImpulseX": 600.0,
                     "hitImpulseY": 800.0
                   },
                   "hitHaltTimeScale": 0.05000000074505806
@@ -4162,7 +4162,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Ice_Level_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -4181,7 +4181,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Ice_Level_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -4194,7 +4194,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Ice_Level_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -4390,7 +4390,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_StickRock",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

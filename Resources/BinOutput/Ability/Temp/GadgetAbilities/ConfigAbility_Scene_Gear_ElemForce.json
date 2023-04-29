@@ -526,12 +526,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Base_Main",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Core_Main",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -543,12 +543,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Base_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Core_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorFloat",
@@ -580,12 +580,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Base_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Core_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorFloat",
@@ -617,12 +617,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Base_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Core_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorFloat",
@@ -654,12 +654,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Base_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Core_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorFloat",
@@ -691,12 +691,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Base_Wind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Core_Wind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorFloat",
@@ -728,12 +728,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Base_Rock",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Core_Rock",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorFloat",
@@ -765,12 +765,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Base_Grass",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Core_Grass",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorFloat",
@@ -919,7 +919,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Core_Burst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -942,7 +942,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Base_Absorb",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1038,7 +1038,7 @@
               "$type": "FireEffect",
               "target": "Applier",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Absorb_Main",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValueToTarget",
@@ -1112,7 +1112,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Award",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1272,7 +1272,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Water_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -1284,12 +1284,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Water_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1301,7 +1301,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1394,7 +1394,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -1458,7 +1458,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -1522,7 +1522,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -1641,7 +1641,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -1751,7 +1751,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -1796,7 +1796,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -1819,14 +1819,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1851,7 +1851,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -1967,7 +1967,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -1990,14 +1990,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2022,7 +2022,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -2138,7 +2138,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -2161,14 +2161,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2219,7 +2219,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2308,7 +2308,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Water_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -2321,12 +2321,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Water_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2338,7 +2338,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2431,7 +2431,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -2495,7 +2495,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -2559,7 +2559,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -2678,7 +2678,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -2788,7 +2788,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -2833,7 +2833,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -2857,14 +2857,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2889,7 +2889,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -3005,7 +3005,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -3029,14 +3029,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3061,7 +3061,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -3169,7 +3169,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -3193,14 +3193,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3251,7 +3251,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3340,7 +3340,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Fire_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -3352,12 +3352,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Fire_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3369,7 +3369,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3462,7 +3462,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -3526,7 +3526,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -3590,7 +3590,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -3709,7 +3709,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -3819,7 +3819,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -3864,7 +3864,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -3887,14 +3887,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3919,7 +3919,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -4035,7 +4035,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -4058,14 +4058,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4090,7 +4090,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -4206,7 +4206,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -4229,14 +4229,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4287,7 +4287,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4376,7 +4376,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Fire_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -4389,12 +4389,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Fire_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4406,7 +4406,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4499,7 +4499,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -4563,7 +4563,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -4627,7 +4627,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -4746,7 +4746,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -4856,7 +4856,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -4901,7 +4901,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -4925,14 +4925,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4957,7 +4957,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -5073,7 +5073,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -5097,14 +5097,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5129,7 +5129,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -5237,7 +5237,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -5261,14 +5261,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -5319,7 +5319,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -5408,7 +5408,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Electric_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -5420,12 +5420,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Electric_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -5437,7 +5437,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5530,7 +5530,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -5594,7 +5594,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -5751,7 +5751,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -5861,7 +5861,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -5906,7 +5906,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -5929,14 +5929,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5961,7 +5961,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -6077,7 +6077,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -6100,14 +6100,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6132,7 +6132,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -6248,7 +6248,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -6271,14 +6271,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -6329,7 +6329,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -6418,7 +6418,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Electric_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -6431,12 +6431,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Electric_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -6448,7 +6448,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6541,7 +6541,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -6736,7 +6736,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -6846,7 +6846,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -6891,7 +6891,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -6915,14 +6915,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6947,7 +6947,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -7063,7 +7063,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -7087,14 +7087,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7119,7 +7119,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -7227,7 +7227,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -7251,14 +7251,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -7309,7 +7309,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -7398,7 +7398,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Ice_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -7410,12 +7410,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Ice_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -7427,7 +7427,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7520,7 +7520,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -7584,7 +7584,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -7648,7 +7648,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -7767,7 +7767,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -7877,7 +7877,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -7922,7 +7922,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -7945,14 +7945,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7977,7 +7977,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -8093,7 +8093,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -8116,14 +8116,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -8148,7 +8148,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -8264,7 +8264,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -8287,14 +8287,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -8345,7 +8345,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -8434,7 +8434,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Ice_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -8447,12 +8447,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Ice_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -8464,7 +8464,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -8557,7 +8557,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -8621,7 +8621,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -8685,7 +8685,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -8804,7 +8804,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -8914,7 +8914,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -8959,7 +8959,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -8983,14 +8983,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -9015,7 +9015,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -9131,7 +9131,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -9155,14 +9155,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -9187,7 +9187,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -9295,7 +9295,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -9319,14 +9319,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -9377,7 +9377,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -9466,7 +9466,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Wind_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -9478,12 +9478,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Wind_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -9495,7 +9495,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -9588,7 +9588,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -9652,7 +9652,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -9716,7 +9716,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -9835,7 +9835,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -9945,7 +9945,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -9990,7 +9990,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -10013,14 +10013,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -10045,7 +10045,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -10161,7 +10161,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -10184,14 +10184,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -10216,7 +10216,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -10332,7 +10332,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -10355,14 +10355,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -10413,7 +10413,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -10502,7 +10502,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Wind_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -10515,12 +10515,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Wind_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -10532,7 +10532,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -10625,7 +10625,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -10689,7 +10689,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -10753,7 +10753,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -10872,7 +10872,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -10982,7 +10982,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -11027,7 +11027,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -11051,14 +11051,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -11083,7 +11083,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -11199,7 +11199,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -11223,14 +11223,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -11255,7 +11255,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -11363,7 +11363,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -11387,14 +11387,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -11445,7 +11445,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -11534,7 +11534,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Rock_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -11546,12 +11546,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Rock_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -11563,7 +11563,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -11656,7 +11656,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -11720,7 +11720,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -11784,7 +11784,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -11903,7 +11903,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -12013,7 +12013,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -12058,7 +12058,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -12081,14 +12081,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -12113,7 +12113,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -12229,7 +12229,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -12252,14 +12252,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -12284,7 +12284,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -12400,7 +12400,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -12423,14 +12423,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -12481,7 +12481,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -12570,7 +12570,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Rock_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -12583,12 +12583,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Rock_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -12600,7 +12600,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -12693,7 +12693,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -12757,7 +12757,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -12821,7 +12821,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -12940,7 +12940,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -13050,7 +13050,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -13095,7 +13095,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -13119,14 +13119,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -13151,7 +13151,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -13267,7 +13267,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -13291,14 +13291,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -13323,7 +13323,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -13431,7 +13431,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -13455,14 +13455,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -13513,7 +13513,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -13602,7 +13602,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Grass_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -13614,12 +13614,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Grass_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -13631,7 +13631,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -13724,7 +13724,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -13788,7 +13788,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -13852,7 +13852,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -13971,7 +13971,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -14081,7 +14081,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -14126,7 +14126,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -14149,14 +14149,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -14181,7 +14181,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -14297,7 +14297,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -14320,14 +14320,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -14352,7 +14352,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -14468,7 +14468,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -14491,14 +14491,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -14549,7 +14549,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -14638,7 +14638,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Alchemy_Block_Grass_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -14651,12 +14651,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Hint_01_Grass_NearFade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Birth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -14668,7 +14668,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -14761,7 +14761,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -14825,7 +14825,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -14889,7 +14889,7 @@
                     "shapeName": "CircleR2",
                     "centerBasedOn": "CurLocalAvatar",
                     "campTargetType": "All",
-                    "OGIOEHHBNMA": "CurLocalAvatar",
+                    "campBasedOn": "CurLocalAvatar",
                     "OBHNBNDMPFN": 1.0
                   },
                   "predicates": [
@@ -15008,7 +15008,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -15118,7 +15118,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -15163,7 +15163,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -15187,14 +15187,14 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -15219,7 +15219,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -15335,7 +15335,7 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -15359,14 +15359,14 @@
                 },
                 "attachPointName": "BulletPos2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -15391,7 +15391,7 @@
                 "shapeName": "CircleR2",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -15499,7 +15499,7 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -15523,14 +15523,14 @@
                 },
                 "attachPointName": "BulletPos3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Crucible_Block_Warning_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -15581,7 +15581,7 @@
             },
             "attachPointName": "BulletPos1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -15733,7 +15733,7 @@
                 },
                 "attachPointName": "BulletPos1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -15794,7 +15794,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_RockFragment_Fly",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -15868,7 +15868,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_RockFragment_Destory",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -16016,7 +16016,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RockFragment_Around_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -16027,7 +16027,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RockFragment_Around_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -16038,7 +16038,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RockFragment_Around_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -16047,7 +16047,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_RockFragment_Fly",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -16098,12 +16098,12 @@
                 },
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Acitve_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -16225,7 +16225,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Rockstraight_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -16247,7 +16247,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BombBarrel_01_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ExecuteGadgetLua",
@@ -16327,7 +16327,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Test_ElemForce_Ice01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -16339,7 +16339,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Test_ElemForce_Ice02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -16351,7 +16351,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Test_ElemForce_Ice03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -16458,7 +16458,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BombBarrel_01_Explode",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AddGlobalValue",
@@ -16521,7 +16521,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -16591,7 +16591,7 @@
             "$type": "ConfigBornBySelf",
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -16642,7 +16642,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -16707,7 +16707,7 @@
             "$type": "ConfigBornBySelf",
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -16724,7 +16724,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_Element_WindForce_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -16749,7 +16749,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_Element_WindForce_Dissipate_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -16791,7 +16791,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_Element_WindForce_WhiteBox02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -16853,7 +16853,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_Element_WindForce_WhiteBox03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -16930,7 +16930,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FireGhost_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -17060,7 +17060,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FireGhost_Around_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onAvatarOut": [
@@ -17081,7 +17081,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FireGhost_Around_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onAvatarOut": [
@@ -17243,7 +17243,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FireGhost_Around_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -17254,7 +17254,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_FireGhost_Around_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -17293,12 +17293,12 @@
                 },
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Acitve_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -17408,7 +17408,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Rockstraight_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

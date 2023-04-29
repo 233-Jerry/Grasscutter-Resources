@@ -263,7 +263,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Warbanner_ElementShield_Sound",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -414,12 +414,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Warbanner_FireBullet_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Warbanner_FireBullet_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -440,7 +440,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "Monster_ForlornVessel_Attack",
@@ -448,7 +448,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Default",
@@ -472,7 +472,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf"
@@ -501,8 +501,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "canBeHandledOnRecover": true,
               "parameter": "NormalAtkTag",
@@ -514,8 +514,8 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "modifierName": "UNIQUE_ForlornVessel_Warbanner_BladeEffect"
             }
@@ -524,8 +524,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "parameter": "NormalAtkTag",
               "EBBHBMFMOGD": "",
@@ -535,8 +535,8 @@
             {
               "$type": "RemoveUniqueModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "modifierName": "UNIQUE_ForlornVessel_Warbanner_BladeEffect"
             }
@@ -560,7 +560,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Warbanner_Blade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -573,8 +573,8 @@
         {
           "$type": "TriggerAbility",
           "otherTargets": {
-            "$type": "FHPHBMBDJAJ",
-            "KNBIINCIAMG": ["equip02"]
+            "$type": "SelectTargetsByEquipParts",
+            "equipPartNames": ["equip02"]
           },
           "abilityName": "MonEquip_ForlornVessel_Warbanner_01"
         }
@@ -614,8 +614,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "canBeHandledOnRecover": true,
               "parameter": "FireBulletTag",
@@ -629,8 +629,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "parameter": "FireBulletTag",
               "EBBHBMFMOGD": "",
@@ -682,7 +682,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Warbanner",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -768,8 +768,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "parameter": "NormalAtkTag",
               "EBBHBMFMOGD": "",
@@ -834,8 +834,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "canBeHandledOnRecover": true,
               "parameter": "NormalAtkTag",
@@ -849,8 +849,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "parameter": "NormalAtkTag",
               "EBBHBMFMOGD": "",
@@ -914,8 +914,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02"]
               },
               "modifierName": "WeaponElementFreeze"
             }
@@ -928,8 +928,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02"]
               },
               "modifierName": "WeaponElementPetrifaction"
             }

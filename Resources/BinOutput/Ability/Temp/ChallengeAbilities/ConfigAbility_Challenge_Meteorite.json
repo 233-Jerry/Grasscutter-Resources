@@ -205,7 +205,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Aster_Debuff_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -240,7 +240,7 @@
                 "shapeName": "CircleR5",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -260,7 +260,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Aster_Buff_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -276,7 +276,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_MQ1002_XueyueBuff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true,
@@ -303,7 +303,7 @@
                 "shapeName": "CircleR5",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "All",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "predicates": [
@@ -327,7 +327,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_MQ1002_XueyueBuff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -356,7 +356,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Aster_Buff_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -400,7 +400,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Aster_Buff_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -444,7 +444,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Aster_Buff_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -537,7 +537,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AsterLarge_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -606,7 +606,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AsterLarge_RecevieFinish",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ServerLuaCall",
@@ -640,7 +640,7 @@
                 "attachPointName": "EffPoint",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },

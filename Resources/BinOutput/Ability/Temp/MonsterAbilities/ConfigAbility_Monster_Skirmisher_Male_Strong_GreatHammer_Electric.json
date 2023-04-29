@@ -71,13 +71,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Strong_GreatHammer_Electric_ImproveBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "modifierName": "ImproveEffect_GreatHammerEffect"
             },
@@ -146,8 +146,8 @@
             {
               "$type": "RemoveModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "modifierName": "ImproveEffect_GreatHammerEffect"
             }
@@ -160,7 +160,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Strong_GreatHammer_Electric_HammerImprove",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorBool",
@@ -183,7 +183,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Strong_GreatHammer_Electric_EyeNormal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -194,14 +194,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Strong_GreatHammer_Electric_EyeImprove",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Strong_GreatHammer_Electric_EyeToNormal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -526,14 +526,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Strong_GreatHammer_Electric_RushLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Strong_GreatHammer_Electric_RushAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -564,7 +564,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.3330000042915344,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 100.0
@@ -588,14 +588,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Strong_GreatHammer_Electric_ImprovedRushLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Skirmisher_Male_Strong_GreatHammer_Electric_ImprovedRushAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -626,7 +626,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -670,8 +670,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "modifierName": "WeaponElementFreeze"
             }
@@ -684,8 +684,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01"]
               },
               "modifierName": "WeaponElementPetrifaction"
             }
@@ -769,8 +769,8 @@
         {
           "$type": "KillSelf",
           "otherTargets": {
-            "$type": "FHPHBMBDJAJ",
-            "KNBIINCIAMG": ["equip01"]
+            "$type": "SelectTargetsByEquipParts",
+            "equipPartNames": ["equip01"]
           }
         }
       ]

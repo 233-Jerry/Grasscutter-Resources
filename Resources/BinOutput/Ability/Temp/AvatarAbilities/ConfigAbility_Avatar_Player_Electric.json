@@ -394,7 +394,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalBurst_Initiate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillGadget",
@@ -425,7 +425,7 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -433,7 +433,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ElementalBurst_InitiateDamage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "elementRank": 3.0,
                 "bonusCriticalHurt": 25.0,
@@ -477,13 +477,13 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalBurst_Burst",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -571,7 +571,7 @@
                 },
                 "attachPointName": "Ponit1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -599,7 +599,7 @@
                 },
                 "attachPointName": "Ponit2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -627,7 +627,7 @@
                 },
                 "attachPointName": "Ponit3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -663,7 +663,7 @@
                     "targetPredicates": [
                       {
                         "$type": "HJIPPKGIPOC",
-                        "GFIOLOJIDMG": "Player_Electric_ElementalBurst_ThunderAttack_Enhanced"
+                        "talentParam": "Player_Electric_ElementalBurst_ThunderAttack_Enhanced"
                       }
                     ],
                     "failActions": [
@@ -698,7 +698,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Player_Electric_ElementalBurst_ElecResDown"
+                  "talentParam": "Player_Electric_ElementalBurst_ElecResDown"
                 }
               ],
               "modifierName": "Player_Electric_ElementalBurst_ElecResDown"
@@ -820,7 +820,7 @@
                   "target": "Caster",
                   "key": "_ABILITY_Player_Electric_ElementalBurst_CD",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "HPJOHDHEPCG",
@@ -984,11 +984,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalBurst_Thunder",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Player_Electric_ElementalBurst_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Player_Electric_ElementalBurst_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -999,11 +999,11 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Player_Electric_ElementalBurst_Pos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Player_Electric_ElementalBurst_Pos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -1011,7 +1011,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ElementalBurst_ThunderAttack_Default_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -1039,11 +1039,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalBurst_Thunder_Enhanced",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Player_Electric_ElementalBurst_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Player_Electric_ElementalBurst_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1054,11 +1054,11 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Player_Electric_ElementalBurst_Pos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Player_Electric_ElementalBurst_Pos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -1070,7 +1070,7 @@
                       "ElementalBurst_ThunderAttack_Default_Damage",
                       "MUL"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -1126,7 +1126,7 @@
             },
             "attachPointName": "Ponit1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1140,7 +1140,7 @@
             },
             "attachPointName": "Ponit2"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1154,7 +1154,7 @@
             },
             "attachPointName": "Ponit3"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1190,7 +1190,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillGadget",
@@ -1311,7 +1311,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2020,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1560,12 +1560,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Magatama_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Magatama_Bullet_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "Predicated",
@@ -1573,7 +1573,7 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Electric_ElementalArt_MaxNumUp"
+              "talentParam": "Player_Electric_ElementalArt_MaxNumUp"
             }
           ],
           "successActions": [
@@ -1610,7 +1610,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": "ElementalArt_Damage",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Pierce",
@@ -1654,7 +1654,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ElementalArt_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Pierce",
@@ -1678,7 +1678,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Bullet_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1732,7 +1732,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2020,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1981,12 +1981,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Magatama_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Magatama_Bullet_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "Predicated",
@@ -1994,7 +1994,7 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Electric_ElementalArt_MaxNumUp"
+              "talentParam": "Player_Electric_ElementalArt_MaxNumUp"
             }
           ],
           "successActions": [
@@ -2031,7 +2031,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": "ElementalArt_Damage",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Pierce",
@@ -2075,7 +2075,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ElementalArt_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Pierce",
@@ -2099,7 +2099,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Bullet_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2153,7 +2153,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2020,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -2402,12 +2402,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Magatama_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Magatama_Bullet_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "Predicated",
@@ -2415,7 +2415,7 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Electric_ElementalArt_MaxNumUp"
+              "talentParam": "Player_Electric_ElementalArt_MaxNumUp"
             }
           ],
           "successActions": [
@@ -2452,7 +2452,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": "ElementalArt_Damage",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Pierce",
@@ -2496,7 +2496,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ElementalArt_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Pierce",
@@ -2520,7 +2520,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Bullet_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2534,7 +2534,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2546,8 +2546,8 @@
               "CPOKKADJBFH": 0.4000000059604645
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_ABILITY_Player_Electric_ElementalArt_BulletPos_1",
-            "GPPNNKAOHCG": "_ABILITY_Player_Electric_ElementalArt_BulletDir_1"
+            "positionKey": "_ABILITY_Player_Electric_ElementalArt_BulletPos_1",
+            "directionKey": "_ABILITY_Player_Electric_ElementalArt_BulletDir_1"
           },
           "gadgetID": 41044131
         }
@@ -2564,7 +2564,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2576,8 +2576,8 @@
               "CPOKKADJBFH": 0.4000000059604645
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_ABILITY_Player_Electric_ElementalArt_BulletPos_2",
-            "GPPNNKAOHCG": "_ABILITY_Player_Electric_ElementalArt_BulletDir_2"
+            "positionKey": "_ABILITY_Player_Electric_ElementalArt_BulletPos_2",
+            "directionKey": "_ABILITY_Player_Electric_ElementalArt_BulletDir_2"
           },
           "gadgetID": 41044131
         }
@@ -2594,7 +2594,7 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2606,8 +2606,8 @@
               "CPOKKADJBFH": 0.4000000059604645
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_ABILITY_Player_Electric_ElementalArt_BulletPos_3",
-            "GPPNNKAOHCG": "_ABILITY_Player_Electric_ElementalArt_BulletDir_3"
+            "positionKey": "_ABILITY_Player_Electric_ElementalArt_BulletPos_3",
+            "directionKey": "_ABILITY_Player_Electric_ElementalArt_BulletDir_3"
           },
           "gadgetID": 41044131
         }
@@ -2623,7 +2623,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Element_Crystal_Elect_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2653,7 +2653,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Player_Electric_ElementalArt_ModifySkillCD"
+                  "talentParam": "Player_Electric_ElementalArt_ModifySkillCD"
                 }
               ],
               "successActions": [
@@ -2693,7 +2693,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Magatama_Buff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -2727,7 +2727,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Magatama",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2756,7 +2756,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Electric_ElementalArt_Magatama_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onFieldEnter": [
@@ -2804,7 +2804,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Electric_ElementalArt_ExtraEnergy"
+              "talentParam": "Player_Electric_ElementalArt_ExtraEnergy"
             }
           ],
           "modifierName": "Player_Electric_ElementalArt_Magatama_ReviveExtraElemEnergy"
@@ -2852,7 +2852,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Electric_ElementalArt_ExtraChargeEfficiency"
+              "talentParam": "Player_Electric_ElementalArt_ExtraChargeEfficiency"
             }
           ],
           "modifierName": "UNIQUE_Player_Electric_ElementalArt_Magatama_ExtraEfficiencyUp"

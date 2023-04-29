@@ -1705,7 +1705,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "HOPPHMEKHLG": {
                   "$type": "BIMJJILMODA",
-                  "GPPNNKAOHCG": "Shoot_Dir"
+                  "directionKey": "Shoot_Dir"
                 },
                 "attachPointName": "ShootPoint"
               }
@@ -1812,7 +1812,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "HOPPHMEKHLG": {
                   "$type": "BIMJJILMODA",
-                  "GPPNNKAOHCG": "Shoot_Dir"
+                  "directionKey": "Shoot_Dir"
                 },
                 "attachPointName": "ShootPoint"
               }
@@ -1919,7 +1919,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "HOPPHMEKHLG": {
                   "$type": "BIMJJILMODA",
-                  "GPPNNKAOHCG": "Shoot_Dir"
+                  "directionKey": "Shoot_Dir"
                 },
                 "attachPointName": "ShootPoint"
               }
@@ -2173,7 +2173,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Gear_Platform_WindSlime",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -2189,7 +2189,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 2.5
+              "radius": 2.5
             },
             "attackInfo": {
               "attackTag": "BadmintonBall_Back",
@@ -2197,7 +2197,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 0.0,
                 "strikeType": "Default",
@@ -2238,7 +2238,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Arcane_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -2255,7 +2255,7 @@
                 },
                 "attachPointName": "LaserControl"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -2290,7 +2290,7 @@
                   "$type": "TriggerBullet",
                   "bulletID": 70900247,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "HOPPHMEKHLG": {
                       "$type": "HFKFLHCBMLB",
                       "NHGDOBINMBK": {
@@ -2331,7 +2331,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Gear_Platform_WindSlime",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -2347,7 +2347,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "BadmintonBall",
@@ -2355,7 +2355,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 0.0,
                 "strikeType": "Default",

@@ -20,7 +20,7 @@
                   "$type": "TriggerBullet",
                   "bulletID": 70800022,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 1.0,
@@ -47,7 +47,7 @@
                       "$type": "TriggerBullet",
                       "bulletID": 70800023,
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 1.0,
@@ -70,7 +70,7 @@
                       "$type": "TriggerBullet",
                       "bulletID": 70800024,
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 1.0,
@@ -140,7 +140,7 @@
               "$type": "AKLDHBPHNLK"
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -203,7 +203,7 @@
                   "$type": "TriggerBullet",
                   "bulletID": 70500023,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 0.0,
@@ -226,7 +226,7 @@
                   "$type": "TriggerBullet",
                   "bulletID": 70500024,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "IGAGDFFFGAO": {
                       "$type": "FHDJJGOONEI",
                       "OKDPGGJGGCJ": 0.0,
@@ -282,7 +282,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Ballon_Born",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -315,7 +315,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Ballon_Born",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [

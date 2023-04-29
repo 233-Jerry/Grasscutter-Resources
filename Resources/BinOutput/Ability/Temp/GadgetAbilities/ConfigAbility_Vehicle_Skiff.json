@@ -48,12 +48,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Sprint_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Sprint_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -137,7 +137,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "VehicleMuteIce",
                     "bonusCriticalHurt": 10.0,
                     "enBreak": 0.0
@@ -163,7 +163,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Born",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachAbilityStateResistance",
@@ -180,12 +180,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_EnergyHalo_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_EnergyHalo_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValue",
@@ -328,7 +328,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Heal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -375,7 +375,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Heal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -651,7 +651,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Cannon_Pre",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -896,12 +896,12 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Cannon_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Cannon_01_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -914,7 +914,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "Skiff_Cannon_Small",
@@ -922,7 +922,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
                 "enBreak": 25.0
@@ -971,12 +971,12 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Cannon_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Cannon_02_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -989,7 +989,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "Skiff_Cannon_Big",
@@ -997,7 +997,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 2.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
                 "enBreak": 50.0
@@ -1074,7 +1074,7 @@
                       }
                     }
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "Skiff_Sprint",
@@ -1082,7 +1082,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
                     "enBreak": 25.0,
@@ -1388,7 +1388,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Heal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1564,17 +1564,17 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_BurstSprint",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_BurstHalo_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_BurstHalo_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ActCameraRadialBlur",
@@ -1650,7 +1650,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BoatRaceEnergy_01_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -1710,7 +1710,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_WindHole",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ServerLuaCall",
@@ -1792,7 +1792,7 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "Skiff_Sprint",
@@ -1800,7 +1800,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
                 "enBreak": 25.0,
@@ -1866,7 +1866,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Bow_Diona_ElementalArt_Bullet_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1934,7 +1934,7 @@
               "$type": "AttachEffect",
               "target": "Vehicle",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LanV3BoatGame_Absorb",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Predicated",
@@ -1943,7 +1943,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -1985,7 +1985,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -2027,7 +2027,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -2069,7 +2069,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -2104,7 +2104,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -2139,7 +2139,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -2176,7 +2176,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -2218,7 +2218,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -2260,7 +2260,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -2302,7 +2302,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -2337,7 +2337,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -2372,7 +2372,7 @@
                 "shapeName": "CircleR12",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -2477,7 +2477,7 @@
               "$type": "FireEffect",
               "target": "Vehicle",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Shield_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -2502,7 +2502,7 @@
               "$type": "AttachEffect",
               "target": "Vehicle",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Shield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2514,7 +2514,7 @@
               "$type": "AttachEffect",
               "target": "Vehicle",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_Shield_Blink",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2666,14 +2666,14 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "BoatRaceGear",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 0.0,
                     "attackType": "None",
@@ -2785,13 +2785,13 @@
               "$type": "FireEffect",
               "target": "Vehicle",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LanV3BoatGame_Stamina_Recover",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "target": "Vehicle",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LanV3BoatGame_Stamina_No_Consume",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -2886,17 +2886,17 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_BurstSprint",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_BurstHalo_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Skiff_Normal_BurstHalo_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -3007,7 +3007,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LanV3BoatGame_Mire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [

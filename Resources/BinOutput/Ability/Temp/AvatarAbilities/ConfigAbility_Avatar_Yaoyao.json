@@ -153,14 +153,14 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ExtraAttack",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.30000001192092896,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -172,14 +172,14 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ExtraAttack_BS",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.30000001192092896,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -260,7 +260,7 @@
                 "attenuationGroup": "Avatar_Pole_ExtraAttack",
                 "attackProperty": {
                   "damagePercentage": "ExtraAttack",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 25.0,
                   "overrideByWeapon": true,
                   "strikeType": "Spear",
@@ -301,7 +301,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 0.800000011920929
+                  "radius": 0.800000011920929
                 },
                 "attackInfo": {
                   "attackTag": "ExtraAttack",
@@ -309,7 +309,7 @@
                   "attenuationGroup": "Avatar_Pole_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Spear",
@@ -448,7 +448,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Rabbit_HoldupStandby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -459,7 +459,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Aim_Line",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -542,9 +542,9 @@
                   "$type": "TriggerBullet",
                   "bulletID": 41077005,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Yaoyao_ElementalArt_Rabiit_Throw_Pos",
-                    "GPPNNKAOHCG": "_ABILITY_Yaoyao_ElementalArt_Rabiit_Throw_Dir"
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Yaoyao_ElementalArt_Rabiit_Throw_Pos",
+                    "directionKey": "_ABILITY_Yaoyao_ElementalArt_Rabiit_Throw_Dir"
                   }
                 }
               ]
@@ -654,9 +654,9 @@
           "$type": "CreateGadget",
           "RotationDampTime": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_ABILITY_Yayao_Rabbit_Pos",
-            "GPPNNKAOHCG": "_ABILITY_Yayao_Rabbit_Dir"
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_ABILITY_Yayao_Rabbit_Pos",
+            "directionKey": "_ABILITY_Yayao_Rabbit_Dir"
           },
           "gadgetID": 41077002,
           "campID": 1001,
@@ -751,7 +751,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalBurst_Avatar_State",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -800,7 +800,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Yaoyao_Constellation_2"
+                  "talentParam": "Yaoyao_Constellation_2"
                 },
                 {
                   "$type": "LCCMCDGDKGI",
@@ -890,7 +890,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalBurst_Rabbit_Appear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -944,7 +944,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalBurst_Sprint",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -955,7 +955,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalBurst_Sprint_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -966,13 +966,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalBurst_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -984,7 +984,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -992,7 +992,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Burst_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1119,11 +1119,11 @@
           "$type": "CreateGadget",
           "ownerIs": "OriginOwner",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
             "HKNFOKFIKAG": 4.0,
-            "FNMFBPGNEKD": "_ABILITY_Yaoyao_ElementalBurst_Rabbit_Pos",
-            "GPPNNKAOHCG": "_ABILITY_Yaoyao_ElementalBurst_Rabbit_Dir"
+            "positionKey": "_ABILITY_Yaoyao_ElementalBurst_Rabbit_Pos",
+            "directionKey": "_ABILITY_Yaoyao_ElementalBurst_Rabbit_Dir"
           },
           "gadgetID": 41077007,
           "campID": 1001,
@@ -1189,31 +1189,31 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01"],
           "damagePercentage": "Attack_01",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02"],
           "damagePercentage": "Attack_02",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03_1"],
           "damagePercentage": "Attack_03_1",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03_2"],
           "damagePercentage": "Attack_03_02",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04"],
           "damagePercentage": "Attack_04",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -1321,7 +1321,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_BS_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1368,7 +1368,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -1376,7 +1376,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -1409,7 +1409,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -1417,7 +1417,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Spear",
@@ -1580,7 +1580,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Loop_01_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1591,7 +1591,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Loop_02_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1752,16 +1752,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -1769,7 +1769,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -1777,7 +1777,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -1815,15 +1815,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -1831,7 +1831,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -1839,7 +1839,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -1878,12 +1878,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Strike_01_Normal",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1892,11 +1892,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Strike_02_Normal",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1974,12 +1974,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Turnip_Throw",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Turnip_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2006,7 +2006,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "AntiFire",
                   "elementRank": 1.5,
                   "bonusCriticalHurt": 0.0,
@@ -2110,7 +2110,7 @@
                       "born": {
                         "$type": "ConfigBornByCollisionPoint"
                       },
-                      "BMCPFKAEOJB": 2.0
+                      "radius": 2.0
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Burst",
@@ -2118,7 +2118,7 @@
                       "attenuationGroup": "Yaoyao_ElementalBurst",
                       "attackProperty": {
                         "damagePercentage": "Yaoyao_Turnip_ElementalBurst_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Grass",
                         "elementRank": 1.5,
                         "bonusCriticalHurt": 25.0,
@@ -2140,7 +2140,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "HealHP",
@@ -2170,7 +2170,7 @@
                       "born": {
                         "$type": "ConfigBornByCollisionPoint"
                       },
-                      "BMCPFKAEOJB": 2.0
+                      "radius": 2.0
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Art",
@@ -2178,7 +2178,7 @@
                       "attenuationGroup": "Yaoyao_GrassAttack",
                       "attackProperty": {
                         "damagePercentage": "Yaoyao_Turnip_ElementalArt_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Grass",
                         "elementRank": 1.5,
                         "bonusCriticalHurt": 25.0,
@@ -2200,7 +2200,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "HealHP",
@@ -2236,7 +2236,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Yaoyao_Constellation_1"
+                  "talentParam": "Yaoyao_Constellation_1"
                 }
               ],
               "modifierName": "UNIQUE_Yaoyao_Constellation_1"
@@ -2256,7 +2256,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Yaoyao_Constellation_1"
+                  "talentParam": "Yaoyao_Constellation_1"
                 }
               ],
               "modifierName": "UNIQUE_Yaoyao_Constellation_1"
@@ -2409,7 +2409,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "Yaoyao_CheckAlliance",
@@ -2417,7 +2417,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "AntiFire",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 0.0,
@@ -2451,7 +2451,7 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2511,7 +2511,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "AntiFire",
                   "elementRank": 1.5,
                   "bonusCriticalHurt": 0.0,
@@ -2580,7 +2580,7 @@
             },
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -2665,7 +2665,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2673,7 +2673,7 @@
                   "attenuationGroup": "Yaoyao_ElementalBurst",
                   "attackProperty": {
                     "damagePercentage": "Yaoyao_Turnip_ElementalBurst_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2723,7 +2723,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -2731,7 +2731,7 @@
                   "attenuationGroup": "Yaoyao_GrassAttack",
                   "attackProperty": {
                     "damagePercentage": "Yaoyao_Turnip_ElementalArt_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -2781,7 +2781,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Yaoyao_Constellation_1"
+              "talentParam": "Yaoyao_Constellation_1"
             }
           ],
           "modifierName": "UNIQUE_Yaoyao_Constellation_1"
@@ -2801,7 +2801,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Yaoyao_Constellation_1"
+              "talentParam": "Yaoyao_Constellation_1"
             }
           ],
           "modifierName": "UNIQUE_Yaoyao_Constellation_1"
@@ -2839,12 +2839,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_Gloden_Turnip_Throw",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_Gloden_Turnip_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2889,7 +2889,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "Yaoyao_Constellation_6",
@@ -2897,7 +2897,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Yaoyao_Constellation_6_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0
@@ -2934,7 +2934,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "failActions": [
@@ -3043,7 +3043,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "Yaoyao_CheckAlliance",
@@ -3051,7 +3051,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "AntiFire",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 0.0,
@@ -3076,7 +3076,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_Gloden_Turnip_Born",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3121,7 +3121,7 @@
             },
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -3142,7 +3142,7 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "BMCPFKAEOJB": 4.0
+              "radius": 4.0
             },
             "attackInfo": {
               "attackTag": "Yaoyao_Constellation_6",
@@ -3150,7 +3150,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Yaoyao_Constellation_6_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 25.0
@@ -3218,7 +3218,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Rabbit_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3275,12 +3275,12 @@
               "RotationDampTime": true,
               "configID": 2019,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "JCJGOCMLFIM": true,
                 "HKNFOKFIKAG": 3.0,
-                "FNMFBPGNEKD": "_ABILITY_Yaoyao_Rabbit_GenerateElemBall_CustomPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Yaoyao_Rabbit_GenerateElemBall_CustomPos",
+                "directionKey": ""
               },
               "value": 1.0,
               "baseEnergy": 3.0
@@ -3296,7 +3296,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Rabbit_Born_Ground",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AddGlobalValue",
@@ -3529,7 +3529,7 @@
                     },
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Yaoyao_Constellation_6"
+                      "talentParam": "Yaoyao_Constellation_6"
                     }
                   ],
                   "bulletID": 41077011,
@@ -3564,7 +3564,7 @@
                     },
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Yaoyao_Constellation_6"
+                      "talentParam": "Yaoyao_Constellation_6"
                     }
                   ],
                   "ratio": -1.0,
@@ -3685,7 +3685,7 @@
                         },
                         {
                           "$type": "HJIPPKGIPOC",
-                          "GFIOLOJIDMG": "Yaoyao_Constellation_6"
+                          "talentParam": "Yaoyao_Constellation_6"
                         }
                       ],
                       "bulletID": 41077011,
@@ -3721,7 +3721,7 @@
                         },
                         {
                           "$type": "HJIPPKGIPOC",
-                          "GFIOLOJIDMG": "Yaoyao_Constellation_6"
+                          "talentParam": "Yaoyao_Constellation_6"
                         }
                       ],
                       "ratio": -1.0,
@@ -3784,9 +3784,9 @@
                 {
                   "$type": "TurnDirectionToPos",
                   "toPos": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Yaoyao_Rabbit_Random_ThrowPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Yaoyao_Rabbit_Random_ThrowPos",
+                    "directionKey": ""
                   }
                 },
                 {
@@ -3842,7 +3842,7 @@
                         },
                         {
                           "$type": "HJIPPKGIPOC",
-                          "GFIOLOJIDMG": "Yaoyao_Constellation_6"
+                          "talentParam": "Yaoyao_Constellation_6"
                         }
                       ],
                       "bulletID": 41077011,
@@ -3877,7 +3877,7 @@
                         },
                         {
                           "$type": "HJIPPKGIPOC",
-                          "GFIOLOJIDMG": "Yaoyao_Constellation_6"
+                          "talentParam": "Yaoyao_Constellation_6"
                         }
                       ],
                       "ratio": -1.0,
@@ -3913,9 +3913,9 @@
                     {
                       "$type": "TurnDirectionToPos",
                       "toPos": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_ABILITY_Yaoyao_Rabbit_Random_ThrowPos",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_ABILITY_Yaoyao_Rabbit_Random_ThrowPos",
+                        "directionKey": ""
                       }
                     },
                     {
@@ -3951,7 +3951,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Rabbit_Disappear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3968,12 +3968,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Rabbit_Throw",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Rabbit_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4071,7 +4071,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Rabbit_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4362,7 +4362,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Rabbit_Disappear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4477,13 +4477,13 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Pole_Yaoyao_ElementalArt_Rabbit_Born_Ground",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
             "HKNFOKFIKAG": 4.0,
-            "FNMFBPGNEKD": "_ABILITY_Yaoyao_ElementalBurst_Rabbit_Pos",
-            "GPPNNKAOHCG": "_ABILITY_Yaoyao_ElementalBurst_Rabbit_Dir"
+            "positionKey": "_ABILITY_Yaoyao_ElementalBurst_Rabbit_Pos",
+            "directionKey": "_ABILITY_Yaoyao_ElementalBurst_Rabbit_Dir"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",

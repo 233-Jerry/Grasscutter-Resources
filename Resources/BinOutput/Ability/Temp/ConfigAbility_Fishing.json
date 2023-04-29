@@ -451,7 +451,7 @@
                 "entityType": "FishRod"
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Fishing_Aim_Line",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -478,9 +478,9 @@
               "$type": "TriggerBullet",
               "bulletID": 42000001,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_FishingRod_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_FishingRod_Pos",
+                "directionKey": ""
               }
             },
             {
@@ -524,14 +524,14 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
               "z": 0.0
             },
-            "FNMFBPGNEKD": "_ABILITY_Fishing_AnchorPoint",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Fishing_AnchorPoint",
+            "directionKey": ""
           },
           "gadgetID": 42000002,
           "campID": 1001,
@@ -585,7 +585,7 @@
               "$type": "AttachEffect",
               "target": "Caster",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Fishing_Line_01",
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             }
           ]
@@ -600,7 +600,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Fishing_Cast_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -699,7 +699,7 @@
               "$type": "AttachEffect",
               "target": "Caster",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Fishing_Line_01",
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             }
           ]
@@ -733,7 +733,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Fishing_Cork",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -764,7 +764,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1307,7 +1307,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "WeaponR"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1511,7 +1511,7 @@
               "$type": "AttachEffect",
               "target": "SelfAttackTarget",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Fishing_Line_02",
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             }
           ]

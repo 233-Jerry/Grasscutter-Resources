@@ -112,7 +112,7 @@
               "target": "Vehicle",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Slusha_Accelerator_01_Sorush",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -165,14 +165,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Floating_Colorful_Petal_01_Default",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Floating_Colorful_Petal_01_Collection",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -201,7 +201,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode_FX"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -247,7 +247,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -317,7 +317,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -352,7 +352,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -434,7 +434,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetSelfAttackTarget",
@@ -513,7 +513,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "ShootPoint1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -712,7 +712,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -729,7 +729,7 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "SorushHit",
@@ -762,7 +762,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -799,7 +799,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "EffectPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -847,7 +847,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "EffectPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -914,7 +914,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AbyssEmitter_01_BulletHit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1022,14 +1022,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Time_LimitPosition_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_LimitPosition_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },

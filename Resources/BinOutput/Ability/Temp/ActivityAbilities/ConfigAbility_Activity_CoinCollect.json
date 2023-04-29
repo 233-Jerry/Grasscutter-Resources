@@ -173,7 +173,7 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -188,8 +188,8 @@
                   }
                 },
                 "IABNJPGBAOH": true,
-                "FNMFBPGNEKD": "CoinCollect_WindField_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "CoinCollect_WindField_Pos",
+                "directionKey": ""
               },
               "gadgetID": 44000549,
               "campID": 1001,
@@ -246,7 +246,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed_WindField",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -350,7 +350,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DIK_BUFFC_01_Buff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true

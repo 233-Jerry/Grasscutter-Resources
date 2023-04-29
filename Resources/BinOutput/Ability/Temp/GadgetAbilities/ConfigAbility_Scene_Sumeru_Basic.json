@@ -196,7 +196,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalArt_Ray_Tag_Npc",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -297,7 +297,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Quest_VoidSearching",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -416,7 +416,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Quest_VoidSearching_PlayGirl",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -1124,7 +1124,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrappleHook_01_Appear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ChangeTag",
@@ -1542,7 +1542,7 @@
             {
               "$type": "ThrowGrapplingHookMixin",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Grapple_01_Line",
-              "FNMFBPGNEKD": "_GrapplingHook_TargetPos",
+              "positionKey": "_GrapplingHook_TargetPos",
               "AFCGIBECIMO": [
                 {
                   "$type": "SetGlobalValue",
@@ -1627,7 +1627,7 @@
                 }
               ],
               "toPos": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -1635,10 +1635,10 @@
                 },
                 "HOPPHMEKHLG": {
                   "$type": "BIMJJILMODA",
-                  "GPPNNKAOHCG": "_GrapplingHook_TargetDir"
+                  "directionKey": "_GrapplingHook_TargetDir"
                 },
-                "FNMFBPGNEKD": "_GrapplingHook_TargetPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_GrapplingHook_TargetPos",
+                "directionKey": ""
               },
               "MMINCHGDKOD": 15.0,
               "MLLLIOLDKMP": 10.0,
@@ -1728,7 +1728,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Grapple_01_MoveIn",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -1737,10 +1737,10 @@
                 "$type": "ConfigBornBySelf",
                 "HOPPHMEKHLG": {
                   "$type": "BIMJJILMODA",
-                  "GPPNNKAOHCG": "_GrapplingHook_TargetDir"
+                  "directionKey": "_GrapplingHook_TargetDir"
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveUniqueModifier",
@@ -1765,7 +1765,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Grapple_01_MoveOut",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1915,11 +1915,11 @@
               "muteRemoteAction": true,
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrappleHook_01_Active",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_GrapplingHook_TargetPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_GrapplingHook_TargetPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -1965,7 +1965,7 @@
               "target": "Target",
               "key": "_GrapplingHook_TargetPos",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "setTarget": false
             },
@@ -2352,7 +2352,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DoWatcherSystemAction",
@@ -2647,9 +2647,9 @@
                   "target": "Team",
                   "RotationDampTime": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_GrassSeedDummy_BornPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_GrassSeedDummy_BornPos",
+                    "directionKey": ""
                   },
                   "gadgetID": 70310208,
                   "campID": 5001,
@@ -2852,7 +2852,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrassSeed_01_Idle01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2863,7 +2863,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrassSeed_01_Idle02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2874,7 +2874,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrassSeed_01_Idle03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3033,9 +3033,9 @@
                   "target": "Team",
                   "RotationDampTime": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_GrassSeedDummy_BornPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_GrassSeedDummy_BornPos",
+                    "directionKey": ""
                   },
                   "gadgetID": 70310208,
                   "campID": 1001,
@@ -3166,7 +3166,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrassSeed_02_Idle01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3223,7 +3223,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AyusTwig_01_Seed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetInteeMp",
@@ -3239,7 +3239,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AyusTwig_01_Gather",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetInteeMp"
@@ -3277,7 +3277,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AyusTwig_01_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3358,7 +3358,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AyusTwig_02_Seed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetInteeMp",
@@ -3374,7 +3374,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AyusTwig_02_Gather",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetInteeMp"
@@ -3432,14 +3432,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AyusTwig_02_Lock",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AyusTwig_02_Unlock",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3466,7 +3466,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AyusTwig_02_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3510,7 +3510,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrassSeed_01_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetRandomOverrideMapValue",
@@ -3598,7 +3598,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrassSeed_01_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3609,14 +3609,14 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "GrassSeed",
               "attenuationTag": "",
               "attenuationGroup": "default",
               "attackProperty": {
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "ignoreAttackerProperty": true,
@@ -3654,7 +3654,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrassSeed_02_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetRandomOverrideMapValue",
@@ -3742,7 +3742,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrassSeed_02_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3754,14 +3754,14 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 6.0
+              "radius": 6.0
             },
             "attackInfo": {
               "attackTag": "GrassSeedBig",
               "attenuationTag": "",
               "attenuationGroup": "default",
               "attackProperty": {
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "ignoreAttackerProperty": true,

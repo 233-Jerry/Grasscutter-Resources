@@ -324,7 +324,7 @@
                   "target": "CurLocalAvatar",
                   "RotationDampTime": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -444,7 +444,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_AkaFesPotion_Wind_Zone",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -692,7 +692,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "EDLHKEAJOOL": 0.30000001192092896,
                   "born": {
@@ -706,14 +706,14 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 6.0,
-                  "BMCPFKAEOJB": "Range"
+                  "radius": "Range"
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 20.0,
                     "strikeType": "Default",
                     "enBreak": 20.0,
@@ -734,7 +734,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_AkaFesPotion_Blast_R8",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -887,7 +887,7 @@
                   ],
                   "key": "_ABILITY_AkaFesPotion_3_1_WindZone_Pos",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -981,7 +981,7 @@
                     }
                   ],
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -989,8 +989,8 @@
                     },
                     "DAPKLNIFPID": true,
                     "IABNJPGBAOH": true,
-                    "FNMFBPGNEKD": "_ABILITY_AkaFesPotion_3_1_WindZone_Pos_Avatar",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_AkaFesPotion_3_1_WindZone_Pos_Avatar",
+                    "directionKey": ""
                   },
                   "gadgetID": 44000560,
                   "campID": 1001,
@@ -1365,7 +1365,7 @@
                 "attenuationTag": "",
                 "attenuationGroup": "default",
                 "attackProperty": {
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Default",
                   "enBreak": 100.0,
@@ -1383,7 +1383,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Blast_R30",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1471,7 +1471,7 @@
                       "RotationDampTime": true,
                       "key": "_ABILITY_AkaFes_3_4_Attack_Pos",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "IABNJPGBAOH": true
                       },
                       "setTarget": false
@@ -1519,11 +1519,11 @@
                       "RotationDampTime": true,
                       "attackEvent": {
                         "attackPattern": {
-                          "$type": "CHEAOJDOBEB",
+                          "$type": "ConfigAttackCircle",
                           "triggerType": "TriggerNoRepeat",
                           "EDLHKEAJOOL": 0.30000001192092896,
                           "born": {
-                            "$type": "FNJGDOEMIIB",
+                            "$type": "ConfigBornByGlobalValue",
                             "offset": {
                               "x": 0.0,
                               "y": -1.5,
@@ -1531,18 +1531,18 @@
                             },
                             "DAPKLNIFPID": true,
                             "IABNJPGBAOH": true,
-                            "FNMFBPGNEKD": "_ABILITY_AkaFes_3_4_Attack_Pos_Avatar",
-                            "GPPNNKAOHCG": ""
+                            "positionKey": "_ABILITY_AkaFes_3_4_Attack_Pos_Avatar",
+                            "directionKey": ""
                           },
                           "height": 6.0,
-                          "BMCPFKAEOJB": 10.0
+                          "radius": 10.0
                         },
                         "attackInfo": {
                           "attackTag": "",
                           "attenuationTag": "",
                           "attenuationGroup": "default",
                           "attackProperty": {
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "bonusCriticalHurt": 20.0,
                             "strikeType": "Default",
                             "enBreak": 20.0,
@@ -1568,12 +1568,12 @@
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Activity_AkaFesPotion_Blast_R8",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "IABNJPGBAOH": true,
-                        "FNMFBPGNEKD": "_ABILITY_AkaFes_3_4_Attack_Pos_Avatar",
-                        "GPPNNKAOHCG": ""
+                        "positionKey": "_ABILITY_AkaFes_3_4_Attack_Pos_Avatar",
+                        "directionKey": ""
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     }
                   ]
                 }
@@ -1787,7 +1787,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ground_FireFog_01_Up",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1817,7 +1817,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ground_FireFog_01_Up",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1847,7 +1847,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_Fire_Level_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetSystemValueToOverrideMap",
@@ -1865,7 +1865,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 50.0,
                   "ignoreAttackerProperty": true,

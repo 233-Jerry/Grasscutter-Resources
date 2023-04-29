@@ -165,12 +165,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Insert_Hand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Insert_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -216,7 +216,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Dehya_PermanentSkill_1"
+                  "talentParam": "Dehya_PermanentSkill_1"
                 }
               ],
               "abilityName": "Avatar_Dehya_PermanentSkill_1_B"
@@ -249,13 +249,13 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "EDLHKEAJOOL": 0.6000000238418579,
                   "born": {
@@ -268,7 +268,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -276,7 +276,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Insert_Dmg",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -359,7 +359,7 @@
               "RotationDampTime": true,
               "configID": 2017,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -454,14 +454,14 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Recycle_Hand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Dehya_PermanentSkill_1"
+                  "talentParam": "Dehya_PermanentSkill_1"
                 }
               ],
               "abilityName": "Avatar_Dehya_PermanentSkill_1_A"
@@ -476,12 +476,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Recycle_Arm",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Recycle_Hand_Light",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorTrigger",
@@ -503,13 +503,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Recycle_Strike",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "EDLHKEAJOOL": 0.5,
                   "born": {
@@ -522,7 +522,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -530,7 +530,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Recycle_Dmg",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -542,7 +542,7 @@
                     "hitImpulseType": "LV5",
                     "overrideHitImpulse": {
                       "hitLevel": "Air",
-                      "IPHCEFBMJAJ": 100.0,
+                      "hitImpulseX": 100.0,
                       "hitImpulseY": 600.0
                     },
                     "retreatType": "ByHitDirection",
@@ -579,7 +579,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Dehya_Constellation_2"
+                  "talentParam": "Dehya_Constellation_2"
                 }
               ],
               "ratio": "Constellation_2_Prolong",
@@ -692,11 +692,11 @@
                 "y": 0.0,
                 "z": 180.0
               },
-              "GPPNNKAOHCG": "_ABILITY_Dehya_Bullet_Dir"
+              "directionKey": "_ABILITY_Dehya_Bullet_Dir"
             },
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -746,7 +746,7 @@
                     "attenuationTag": "",
                     "attenuationGroup": "default",
                     "attackProperty": {
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "bonusCriticalHurt": 0.0,
                       "ignoreAttackerProperty": true,
                       "enBreak": 0.0,
@@ -968,20 +968,20 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Loan_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Loan_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Loan_Disapear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -993,20 +993,20 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Loan_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Loan_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Loan_Disapear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1191,12 +1191,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Field",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -1214,12 +1214,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Field",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -1263,7 +1263,7 @@
                   {
                     "$type": "FireEffect",
                     "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Field_Up",
-                    "FGMDINMEPHL": -1.0
+                    "effectTempleteID": -1.0
                   }
                 ]
               ]
@@ -1303,7 +1303,7 @@
                     {
                       "$type": "HJIPPKGIPOC",
                       "target": "Caster",
-                      "GFIOLOJIDMG": "Dehya_Constellation_2"
+                      "talentParam": "Dehya_Constellation_2"
                     }
                   ],
                   "modifierName": "Avatar_Dehya_ElementalArt_Grave_Constellation_2_OnTeam"
@@ -1338,7 +1338,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "Caster",
-                  "GFIOLOJIDMG": "Dehya_Constellation_2"
+                  "talentParam": "Dehya_Constellation_2"
                 }
               ],
               "modifierName": "Avatar_Dehya_ElementalArt_Grave_Constellation_2_OnTeam"
@@ -1588,31 +1588,31 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Strike",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Dehya_Grave_AttackPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Dehya_Grave_AttackPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "target": "Caster",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -1.2000000476837158,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "_ABILITY_Dehya_Grave_AttackPos",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Dehya_Grave_AttackPos",
+                    "directionKey": ""
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.5
+                  "radius": 4.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -1620,7 +1620,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Grave_Dmg",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1755,7 +1755,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Field_Back",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf"
@@ -1784,24 +1784,24 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Die_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Field_Disappear_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "failActions": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Die_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Field_Disappear_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1832,12 +1832,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Bullet_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2131,12 +2131,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalBurst_Camera_Root",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalBurst_Camera_Hand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorTrigger",
@@ -2172,7 +2172,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -2184,7 +2184,7 @@
                       "IABNJPGBAOH": true
                     },
                     "height": 0.5,
-                    "BMCPFKAEOJB": 1.5
+                    "radius": 1.5
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -2208,7 +2208,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalBurst_Camera_Thirdparty",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -2237,7 +2237,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR3",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -2364,7 +2364,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Dehya_PermanentSkill_1"
+                  "talentParam": "Dehya_PermanentSkill_1"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -2402,7 +2402,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Dehya_Constellation_6"
+                      "talentParam": "Dehya_Constellation_6"
                     }
                   ]
                 }
@@ -2448,7 +2448,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalBurst_BladeStorm",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2588,14 +2588,14 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalBurst_BladeStorm_Burst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2607,7 +2607,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 6.5
+                  "radius": 6.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2615,7 +2615,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Burst_End_Dmg",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -2632,7 +2632,7 @@
                     "hitImpulseType": "LV5",
                     "overrideHitImpulse": {
                       "hitLevel": "Air",
-                      "IPHCEFBMJAJ": 100.0,
+                      "hitImpulseX": 100.0,
                       "hitImpulseY": 900.0
                     },
                     "retreatType": "ByHitDirection",
@@ -2825,7 +2825,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalBurst_QTE_Success",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -2939,7 +2939,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Burst_Loop_Dmg",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -2956,7 +2956,7 @@
                     "hitImpulseType": "LV4",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 250.0,
+                      "hitImpulseX": 250.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByAttackerForward",
@@ -3015,7 +3015,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Burst_Loop_Dmg",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -3032,7 +3032,7 @@
                     "hitImpulseType": "LV4",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 250.0,
+                      "hitImpulseX": 250.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByAttackerForward",
@@ -3121,7 +3121,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalBurst_BladeStorm_Extra",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3543,13 +3543,13 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Art"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": ["FIGHT_PROP_MAX_HP", "HpToDamage_Art", "MUL"]
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": ["FIGHT_PROP_MAX_HP", "HpToDamage_Burst", "MUL"]
             }
           ],
@@ -3585,7 +3585,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Art"],
-              "MKLAMNDEDGB": "DamageUp_Ratio",
+              "damagePercentageRatio": "DamageUp_Ratio",
               "predicates": [
                 {
                   "$type": "DKBHGGBCOMO",
@@ -3624,7 +3624,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Dehya_ElementalArt_Grave_Constellation",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3796,7 +3796,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "Crit_Up"
             }
           ]
@@ -3808,7 +3808,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "JGEEKIDDFGM": ["CritHurt_Up", "Crit_Count", "MUL"]
             }
           ]
@@ -3998,37 +3998,37 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01"],
           "damagePercentage": "NormalAttack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02"],
           "damagePercentage": "NormalAttack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03"],
           "damagePercentage": "NormalAttack_03_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04"],
           "damagePercentage": "NormalAttack_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack1"],
           "damagePercentage": "ExtraAttack1",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack2"],
           "damagePercentage": "ExtraAttack2",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -4145,7 +4145,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Self_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4156,12 +4156,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Self",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4198,7 +4198,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -4206,7 +4206,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -4534,16 +4534,16 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
@@ -4551,7 +4551,7 @@
                     }
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -4559,7 +4559,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Blunt",
@@ -4595,16 +4595,16 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": -0.5,
@@ -4612,7 +4612,7 @@
                     }
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -4620,7 +4620,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Blunt",

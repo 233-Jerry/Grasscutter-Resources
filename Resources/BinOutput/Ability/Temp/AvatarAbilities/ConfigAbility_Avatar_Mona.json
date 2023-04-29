@@ -193,7 +193,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_LiquidStrike_Spray",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -205,7 +205,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_LiquidStrike_Idle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -217,7 +217,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -227,7 +227,7 @@
                       "z": 0.10000000149011612
                     }
                   },
-                  "BMCPFKAEOJB": "Water_Bloom_Radius"
+                  "radius": "Water_Bloom_Radius"
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -235,7 +235,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "enBreak": 0.0
@@ -253,8 +253,8 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "sheathPoint"]
               },
               "modifierName": "WaterModifier"
             }
@@ -275,7 +275,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Barbara_WetShield_Collision_Self",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -562,17 +562,17 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_ExtraAttack_Pre",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_MONA_EXTRAATTACK_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_MONA_EXTRAATTACK_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -592,17 +592,17 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_ExtraAttack",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 1.0,
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_ABILITY_MONA_EXTRAATTACK_POS",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_MONA_EXTRAATTACK_POS",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValueToOverrideMap",
@@ -628,11 +628,11 @@
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_MONA_EXTRAATTACK_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_MONA_EXTRAATTACK_POS",
+                "directionKey": ""
               },
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "ExtraAttack",
@@ -640,7 +640,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "AS_Mona_ExtraAttack_Damge",
-                "MKLAMNDEDGB": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp",
+                "damagePercentageRatio": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp",
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -698,7 +698,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_01",
@@ -706,7 +706,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AS_Mona_NormalAttack_01",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -744,14 +744,14 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_NormalAttack_01_Hit",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
               "z": 5.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -781,7 +781,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_02",
@@ -789,7 +789,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AS_Mona_NormalAttack_02",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -827,14 +827,14 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_NormalAttack_02_Hit",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
               "z": 5.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -913,7 +913,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Attack_HideSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerSetVisible"
@@ -942,13 +942,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Attack_ShowSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "triggerID": "Attack"
             }
@@ -982,7 +982,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_03",
@@ -990,7 +990,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AS_Mona_NormalAttack_03",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1027,14 +1027,14 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_NormalAttack_03_Hit",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
               "z": 5.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1077,7 +1077,7 @@
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.2000000476837158,
@@ -1122,7 +1122,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": "Radius"
+                  "radius": "Radius"
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_04",
@@ -1130,7 +1130,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AS_Mona_NormalAttack_04",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1161,7 +1161,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_NormalAttack_04_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1236,7 +1236,7 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1246,8 +1246,8 @@
             "HOPPHMEKHLG": {
               "$type": "HFKFLHCBMLB"
             },
-            "FNMFBPGNEKD": "_ABILITY_MONA_PHANTOM_POS",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_MONA_PHANTOM_POS",
+            "directionKey": ""
           },
           "gadgetID": 41041005,
           "campID": 1001,
@@ -1303,25 +1303,25 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Phantom_Rush_Show",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Phantom_Rush_Show_Door",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "triggerID": "Attack"
             },
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1331,8 +1331,8 @@
                 "HOPPHMEKHLG": {
                   "$type": "HFKFLHCBMLB"
                 },
-                "FNMFBPGNEKD": "_ABILITY_MONA_PHANTOM_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_MONA_PHANTOM_POS",
+                "directionKey": ""
               },
               "gadgetID": 41041005,
               "campID": 1001,
@@ -1368,7 +1368,7 @@
               "$type": "IOPNFLFHGID"
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalPos",
@@ -1519,14 +1519,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Phantom_Area",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Phantom_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -1537,14 +1537,14 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Phantom_SkillObj_BeHit",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.399999976158142,
                   "z": 0.44999998807907104
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1569,7 +1569,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_MONA_PHANTOM_THINK_TIMES",
                   "ratio": 4.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "LessAndEqual"
                 }
               ],
@@ -1586,12 +1586,12 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Phantom_ThinkAttack",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "GadgetPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "GadgetPos",
+                "directionKey": ""
               },
               "scale": 0.699999988079071,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1600,11 +1600,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "GadgetPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "GadgetPos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -1612,7 +1612,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AS_Mona_Phantom_ThinkDamageRate",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1703,7 +1703,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_Dummy_Taunted",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -1735,7 +1735,7 @@
           "$type": "SetGlobalPos",
           "key": "GadgetPos",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1756,17 +1756,17 @@
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Phantom_Burst",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "GadgetPos",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "GadgetPos",
+            "directionKey": ""
           },
           "scale": 0.75,
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1830,7 +1830,7 @@
               "$type": "GenerateElemBall",
               "configID": 2018,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1848,7 +1848,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2018,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1871,11 +1871,11 @@
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "GadgetPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "GadgetPos",
+                "directionKey": ""
               },
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1883,7 +1883,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "AS_Mona_Phantom_LastDamageRate",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1998,7 +1998,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -2009,7 +2009,7 @@
                       }
                     },
                     "height": 2.0,
-                    "BMCPFKAEOJB": 1.0
+                    "radius": 1.0
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -2052,14 +2052,14 @@
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_StarChart_Self_BS",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_StarChart_Self_BS_Thirdparty",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -2184,7 +2184,7 @@
             {
               "$type": "IDHCAKGEMOF",
               "attackPattern": {
-                "$type": "CHEAOJDOBEB",
+                "$type": "ConfigAttackCircle",
                 "triggerType": "TriggerNoRepeat",
                 "born": {
                   "$type": "ConfigBornBySelf",
@@ -2196,7 +2196,7 @@
                 },
                 "height": 0.20000000298023224,
                 "BAPAHIOBNCL": 30.0,
-                "BMCPFKAEOJB": 0.800000011920929
+                "radius": 0.800000011920929
               }
             }
           ],
@@ -2263,7 +2263,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2271,7 +2271,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -2298,7 +2298,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst_Trigger",
@@ -2306,7 +2306,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Default",
                     "enBreak": 0.0
@@ -2401,7 +2401,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_StarChart_Bubble",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2412,7 +2412,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_StarChart_Bubble_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DamageByAttackValue",
@@ -2433,7 +2433,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": "AS_Mona_StarChart_Bubble_RemovedDamage",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Water",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Default",
@@ -2496,7 +2496,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Mona_Talent_Talent_StarChart_ElementReactionUp"
+                  "talentParam": "Avatar_Mona_Talent_Talent_StarChart_ElementReactionUp"
                 }
               ],
               "modifierName": "Talent_ElementReactionUp_AttackLandedEvent_01"
@@ -2504,7 +2504,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_StarChart_HurtUp",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -2519,7 +2519,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_StarChart_HurtUp_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ClearGlobalValue",
@@ -2636,14 +2636,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_StarChart_Talent_ReactionUp",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_StarChart_Talent_ReactionUp_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2796,19 +2796,19 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_LiquidStrike_Phantom",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Phantom_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Phantom_Burst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2819,7 +2819,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art_Extra",
@@ -2831,7 +2831,7 @@
                       "AS_Mona_Talent_LiquidStrike_LiquidPhantom_DamageRate",
                       "MUL"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -2856,14 +2856,14 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Phantom_SkillObj_BeHit",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.399999976158142,
                   "z": 0.44999998807907104
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2922,7 +2922,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_Dummy_Taunted",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -3133,7 +3133,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Talent_LiquidStrike_Move_ExtraAttackDamageUp",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3221,7 +3221,7 @@
               "$type": "FireEffect",
               "target": "SelfAttackTarget",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Girl_Catalyst_Mona_Talent_AutoExtraAttack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3242,7 +3242,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3258,7 +3258,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValueToOverrideMap",
@@ -3299,7 +3299,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "ExtraAttack",
@@ -3311,7 +3311,7 @@
                       "AS_Mona_Talent_AutoExtraAttack_DamageRate",
                       "MUL"
                     ],
-                    "MKLAMNDEDGB": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp",
+                    "damagePercentageRatio": "AS_Mona_Talent_LiquidStrike_ExtraAttackDamageUp",
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -3512,7 +3512,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_BS_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -3552,7 +3552,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3560,7 +3560,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Default",
@@ -3854,7 +3854,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Self_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3892,16 +3892,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3909,7 +3909,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3917,7 +3917,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -3954,15 +3954,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3970,7 +3970,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3978,7 +3978,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -4016,12 +4016,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_01_Water",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -4030,11 +4030,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_02_Water",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

@@ -206,7 +206,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LanV3Race_Fireworks_Rush_In",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AvatarSkillStart",
@@ -246,7 +246,7 @@
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 0.0,
                     "attackType": "None",
@@ -294,7 +294,7 @@
                   "target": "Target",
                   "key": "_ABILITY_LanV3_Race_Lock_Asist_Pos",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -307,9 +307,9 @@
                 {
                   "$type": "TurnDirectionToPos",
                   "toPos": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_LanV3_Race_Lock_Asist_Pos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_LanV3_Race_Lock_Asist_Pos",
+                    "directionKey": ""
                   }
                 }
               ]
@@ -369,7 +369,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LanV3Race_Fireworks_Rush_Out",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerSetVisible",
@@ -628,7 +628,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onHittingOther": [
@@ -693,14 +693,14 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "LanV3_Rush_Attack",
               "attenuationTag": "",
               "attenuationGroup": "default",
               "attackProperty": {
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 0.0,
                 "enBreak": 0.0,
                 "attackType": "None",
@@ -824,7 +824,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 3.5
+                  "radius": 3.5
                 },
                 "attackInfo": {
                   "attackTag": "Skiff_Sprint",
@@ -832,7 +832,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
                     "enBreak": 25.0,
@@ -874,7 +874,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 3.5
+                  "radius": 3.5
                 },
                 "attackInfo": {
                   "attackTag": "Skiff_Sprint",
@@ -882,7 +882,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
                     "enBreak": 25.0,
@@ -1091,7 +1091,7 @@
               "$type": "FireEffect",
               "target": "Vehicle",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LanV3BoatGame_Ghost",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -1125,7 +1125,7 @@
               "$type": "FireEffect",
               "target": "Vehicle",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LanV3BoatGame_Ghost",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorTrigger",
@@ -1316,7 +1316,7 @@
               "$type": "FireEffect",
               "target": "Vehicle",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_LanV3BoatGame_Stamina_Recover",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

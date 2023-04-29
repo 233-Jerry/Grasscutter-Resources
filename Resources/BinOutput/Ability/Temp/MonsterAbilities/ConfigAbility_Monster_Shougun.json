@@ -354,7 +354,7 @@
                   "target": "Target",
                   "key": "_MONSTER_SHOUGUN_BORN_POS_",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "HOPPHMEKHLG": {
                       "$type": "JADOBJDPOLJ",
                       "NHGDOBINMBK": {
@@ -371,9 +371,9 @@
             {
               "$type": "SetSkillAnchor",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_SHOUGUN_BORN_POS_",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_SHOUGUN_BORN_POS_",
+                "directionKey": ""
               }
             },
             {
@@ -509,7 +509,7 @@
                   "target": "CurLocalAvatar",
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BlessOfEyes_Revive",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -525,7 +525,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BlessOfEyes04",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -554,7 +554,7 @@
                   "target": "CurLocalAvatar",
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BlessOfEyes_Revive",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -570,7 +570,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BlessOfEyes03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -599,7 +599,7 @@
                   "target": "CurLocalAvatar",
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BlessOfEyes_Revive",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -615,7 +615,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BlessOfEyes02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -644,7 +644,7 @@
                   "target": "CurLocalAvatar",
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BlessOfEyes_Revive",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -660,7 +660,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BlessOfEyes01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -922,7 +922,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Elf",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -972,7 +972,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_EyeStripBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1020,7 +1020,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.16599999368190765,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -1108,7 +1108,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_EyeStripArea",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1133,7 +1133,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_EyeStripTargetBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1147,7 +1147,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_EyeStripFailed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1224,7 +1224,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_EyeStripTargetLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachUIEffect",
@@ -1317,7 +1317,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_NormalAtk05_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -1384,17 +1384,17 @@
         {
           "$type": "TurnDirectionToPos",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_SHOUGUN_NORMAL_05_POS_",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_SHOUGUN_NORMAL_05_POS_",
+            "directionKey": ""
           }
         },
         {
           "$type": "FixedMonsterRushMove",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_SHOUGUN_NORMAL_05_POS_",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_SHOUGUN_NORMAL_05_POS_",
+            "directionKey": ""
           },
           "timeRange": 0.10000000149011612,
           "animatorStateIDs": ["NormalAtk_Combo02"],
@@ -1427,7 +1427,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -1435,7 +1435,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.16599999368190765,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -1478,7 +1478,7 @@
                       "z": -5.5
                     }
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1486,7 +1486,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -1523,7 +1523,7 @@
                       "z": -5.5
                     }
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1531,7 +1531,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -1568,7 +1568,7 @@
                       "z": -5.5
                     }
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1576,7 +1576,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -1707,15 +1707,15 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 1.25,
                   "z": 13.5
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_MONSTER_SHOUGUN_BORN_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_MONSTER_SHOUGUN_BORN_POS_",
+                "directionKey": ""
               },
               "gadgetID": 42906004,
               "campID": 4001,
@@ -1724,15 +1724,15 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": -10.5,
                   "y": 1.25,
                   "z": -6.5
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_MONSTER_SHOUGUN_BORN_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_MONSTER_SHOUGUN_BORN_POS_",
+                "directionKey": ""
               },
               "gadgetID": 42906004,
               "campID": 4001,
@@ -1741,15 +1741,15 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 10.5,
                   "y": 1.25,
                   "z": -6.5
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_MONSTER_SHOUGUN_BORN_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_MONSTER_SHOUGUN_BORN_POS_",
+                "directionKey": ""
               },
               "gadgetID": 42906004,
               "campID": 4001,
@@ -1764,7 +1764,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_ElectricBurstBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1804,7 +1804,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_ElectricBurst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -1891,7 +1891,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_ElectricEye",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1936,7 +1936,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_ElectricEyeExplode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DamageByAttackValue",
@@ -1961,7 +1961,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "enBreak": 0.0
                 },
@@ -2043,7 +2043,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.3329999446868896,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -2081,7 +2081,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.3330000042915344,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -2119,7 +2119,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.13300000131130219,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -2165,7 +2165,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_ElectricEyeAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -2175,7 +2175,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_ElectricEye_BeHit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddElementDurability",
@@ -2208,7 +2208,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_ElectricBurstExplode",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "DamageByAttackValue",
@@ -2234,7 +2234,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.16599999368190765,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Electric",
               "bonusCriticalHurt": 50.0,
               "strikeType": "Blunt",
@@ -2281,7 +2281,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_ExtraBlade",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -2294,7 +2294,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -2302,7 +2302,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.3330000042915344,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Slash",
@@ -2345,7 +2345,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_RushAtkBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -2423,17 +2423,17 @@
         {
           "$type": "TurnDirectionToPos",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_SHOUGUN_RUSHATK_POS_",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_SHOUGUN_RUSHATK_POS_",
+            "directionKey": ""
           }
         },
         {
           "$type": "FixedMonsterRushMove",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_SHOUGUN_RUSHATK_POS_",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_SHOUGUN_RUSHATK_POS_",
+            "directionKey": ""
           },
           "timeRange": 0.15000000596046448,
           "animatorStateIDs": ["RushAtk"],
@@ -2471,7 +2471,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_AreaAtkPole",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2480,7 +2480,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_AreaAtk",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2497,7 +2497,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_AreaAtkPole",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2527,7 +2527,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.6660000085830688,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Electric",
               "bonusCriticalHurt": 50.0,
               "strikeType": "Blunt",
@@ -2559,7 +2559,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_BlinkEchoB",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2572,7 +2572,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_BlinkEchoR",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2585,7 +2585,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_BlinkEchoL",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2715,7 +2715,7 @@
         {
           "$type": "TryFindBlinkPointByBorn",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 1.5,
               "y": 0.0,
@@ -2727,8 +2727,8 @@
               "CPOKKADJBFH": 0.5
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_MONSTER_SHOUGUN_BLINKR_POS_",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_MONSTER_SHOUGUN_BLINKR_POS_",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 2.5
@@ -2757,7 +2757,7 @@
         {
           "$type": "TryFindBlinkPointByBorn",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": -2.0,
               "y": 0.0,
@@ -2769,8 +2769,8 @@
               "CPOKKADJBFH": 1.0
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_MONSTER_SHOUGUN_BLINKL_POS_",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_MONSTER_SHOUGUN_BLINKL_POS_",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 2.5
@@ -2813,7 +2813,7 @@
         {
           "$type": "TryFindBlinkPointByBorn",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2825,8 +2825,8 @@
               "CPOKKADJBFH": 1.0
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_MONSTER_SHOUGUN_BORN_POS_",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_MONSTER_SHOUGUN_BORN_POS_",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 2.5
@@ -2878,7 +2878,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -2886,7 +2886,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 999999.0
@@ -2911,7 +2911,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveUniqueModifier",
@@ -2999,7 +2999,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_Show01Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -3121,7 +3121,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.16599999368190765,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Electric",
               "bonusCriticalHurt": 50.0,
               "strikeType": "Blunt",
@@ -3153,7 +3153,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "FootR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3170,7 +3170,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "FootL"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3589,7 +3589,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3620,7 +3620,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_LaidoWeapon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3635,7 +3635,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_LaidoRush",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -3769,7 +3769,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.16599999368190765,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -3790,17 +3790,17 @@
         {
           "$type": "TurnDirectionToPos",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_SHOUGUN_LAIDO_POS_",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_SHOUGUN_LAIDO_POS_",
+            "directionKey": ""
           }
         },
         {
           "$type": "FixedMonsterRushMove",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_SHOUGUN_LAIDO_POS_",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_SHOUGUN_LAIDO_POS_",
+            "directionKey": ""
           },
           "timeRange": 0.11999999731779099,
           "animatorStateIDs": ["Laido"],
@@ -3810,7 +3810,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_LaidoRushBS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3836,7 +3836,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_AreaAtk_Disapper",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -3873,7 +3873,7 @@
               "$type": "TurnDirectionToPos",
               "target": "SelfAttackTarget",
               "toPos": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             },
             {
@@ -3904,7 +3904,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_AreaAtk_Apper",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3953,7 +3953,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_Dodge_Rush01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -3999,7 +3999,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_Dodge_Rush02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -4125,7 +4125,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.16599999368190765,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -4146,9 +4146,9 @@
         {
           "$type": "FixedMonsterRushMove",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_SHOUGUN_DODGE_POS_",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_SHOUGUN_DODGE_POS_",
+            "directionKey": ""
           },
           "timeRange": 0.15000000596046448,
           "animatorStateIDs": ["Dodge"],
@@ -4172,7 +4172,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -4180,7 +4180,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.16599999368190765,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -4218,7 +4218,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_SwordArtBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4347,7 +4347,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_SwordArt_ElectricCircle",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -4360,7 +4360,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -4368,7 +4368,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.3330000042915344,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Slash",
@@ -4394,7 +4394,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_SwordArt_ElectricBlade",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -4407,7 +4407,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -4415,7 +4415,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Slash",
@@ -4476,14 +4476,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_Scabbard",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_ScabbardAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4532,7 +4532,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4540,7 +4540,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.16599999368190765,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -4563,7 +4563,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_ExtraAtk",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -4688,14 +4688,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_Blink",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "failActions": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BlinkMirror",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4726,12 +4726,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BurstAtkWeapon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BurstAtkCharge",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4767,7 +4767,7 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -4782,8 +4782,8 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_MONSTER_SHOUGUN_BORN_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_MONSTER_SHOUGUN_BORN_POS_",
+                "directionKey": ""
               },
               "gadgetID": 42906008,
               "campID": 4001,
@@ -4804,17 +4804,17 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BurstAtk_BurstBS",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_MONSTER_SHOUGUN_BORN_POS_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_MONSTER_SHOUGUN_BORN_POS_",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4829,7 +4829,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BurstAtk_Burst",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -4867,7 +4867,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4875,7 +4875,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 999999.0
@@ -4921,7 +4921,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.3330000042915344,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Blunt",
@@ -4932,7 +4932,7 @@
                   "hitImpulseType": "",
                   "overrideHitImpulse": {
                     "hitLevel": "Heavy",
-                    "IPHCEFBMJAJ": 50.0,
+                    "hitImpulseX": 50.0,
                     "hitImpulseY": 0.0
                   },
                   "hitHaltTime": 1.25
@@ -4969,7 +4969,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -4996,7 +4996,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5004,7 +5004,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 999999.0
@@ -5074,7 +5074,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -5107,7 +5107,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_BurstAtk_ThunderDrop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5143,7 +5143,7 @@
                       "z": -10.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5151,7 +5151,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6660000085830688,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -5202,7 +5202,7 @@
                       "z": -10.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5210,7 +5210,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5241,7 +5241,7 @@
                       "z": -10.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5249,7 +5249,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5285,7 +5285,7 @@
                       "z": -15.25
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5293,7 +5293,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6660000085830688,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -5344,7 +5344,7 @@
                       "z": -15.25
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5352,7 +5352,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5383,7 +5383,7 @@
                       "z": -15.25
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5391,7 +5391,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5427,7 +5427,7 @@
                       "z": -13.5
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5435,7 +5435,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6660000085830688,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -5486,7 +5486,7 @@
                       "z": -13.5
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5494,7 +5494,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5525,7 +5525,7 @@
                       "z": -13.5
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5533,7 +5533,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5569,7 +5569,7 @@
                       "z": -5.300000190734863
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5577,7 +5577,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6660000085830688,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -5628,7 +5628,7 @@
                       "z": -5.300000190734863
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5636,7 +5636,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5667,7 +5667,7 @@
                       "z": -5.300000190734863
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5675,7 +5675,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5711,7 +5711,7 @@
                       "z": 5.300000190734863
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5719,7 +5719,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6660000085830688,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -5770,7 +5770,7 @@
                       "z": 5.300000190734863
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5778,7 +5778,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5809,7 +5809,7 @@
                       "z": 5.300000190734863
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5817,7 +5817,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5853,7 +5853,7 @@
                       "z": 13.5
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5861,7 +5861,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6660000085830688,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -5912,7 +5912,7 @@
                       "z": 13.5
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5920,7 +5920,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5951,7 +5951,7 @@
                       "z": 13.5
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5959,7 +5959,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -5995,7 +5995,7 @@
                       "z": 15.25
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -6003,7 +6003,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6660000085830688,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -6054,7 +6054,7 @@
                       "z": 10.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -6062,7 +6062,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -6093,7 +6093,7 @@
                       "z": 15.25
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -6101,7 +6101,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -6137,7 +6137,7 @@
                       "z": 10.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -6145,7 +6145,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6660000085830688,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -6196,7 +6196,7 @@
                       "z": 10.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -6204,7 +6204,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -6235,7 +6235,7 @@
                       "z": 10.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -6243,7 +6243,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.125,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
@@ -6279,7 +6279,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -6287,7 +6287,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.6660000085830688,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -6363,7 +6363,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.125,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 100.0,
                       "strikeType": "Default",
@@ -6419,7 +6419,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.125,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 100.0,
                       "strikeType": "Default",
@@ -6509,7 +6509,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_MoveBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -6585,12 +6585,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_Show02BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_Show02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -6691,7 +6691,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_Move",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -6713,7 +6713,7 @@
             },
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -6764,7 +6764,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -6772,7 +6772,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.032999999821186066,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -6808,7 +6808,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveUniqueModifier",
@@ -6835,7 +6835,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -6843,7 +6843,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 999999.0
@@ -6881,7 +6881,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValue",
@@ -7017,7 +7017,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_WeaponEffect",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7028,14 +7028,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_Scabbard",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_ScabbardAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

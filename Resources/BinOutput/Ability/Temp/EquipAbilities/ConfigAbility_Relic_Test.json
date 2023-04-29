@@ -280,7 +280,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "Crit",
               "predicates": [
                 {
@@ -296,7 +296,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "JGEEKIDDFGM": "CritHurt",
               "predicates": [
                 {
@@ -335,7 +335,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByEntityTypes",

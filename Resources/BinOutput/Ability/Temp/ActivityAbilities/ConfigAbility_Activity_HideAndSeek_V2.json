@@ -230,7 +230,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Execution",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ServerLuaCall",
@@ -397,10 +397,10 @@
                     },
                     "HOPPHMEKHLG": {
                       "$type": "BIMJJILMODA",
-                      "GPPNNKAOHCG": "_ActivityAbility_HideSeek_Seeker_Guide_Dir"
+                      "directionKey": "_ActivityAbility_HideSeek_Seeker_Guide_Dir"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -434,10 +434,10 @@
                     },
                     "HOPPHMEKHLG": {
                       "$type": "BIMJJILMODA",
-                      "GPPNNKAOHCG": "_ActivityAbility_HideSeek_Seeker_Guide_Dir"
+                      "directionKey": "_ActivityAbility_HideSeek_Seeker_Guide_Dir"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -518,7 +518,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Guide",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ServerLuaCall",
@@ -627,7 +627,7 @@
               "$type": "FireEffect",
               "target": "Caster",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Detect_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -649,7 +649,7 @@
               "$type": "FireEffect",
               "target": "Caster",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Detect_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -725,7 +725,7 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Detect_BS",
               "scale": 1.25,
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "failActions": [
@@ -885,7 +885,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_UltraMark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ServerLuaCall",
@@ -1006,7 +1006,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_GlobalSight",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ServerLuaCall",
@@ -1210,7 +1210,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_SuperPrison",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ServerLuaCall",
@@ -1444,7 +1444,7 @@
                   "$type": "FireEffect",
                   "muteRemoteAction": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Disguise_Enter",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "AvatarSkillStart",
@@ -2383,14 +2383,14 @@
               "muteRemoteAction": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Disguise_Quit",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2729,7 +2729,7 @@
                   "z": 1.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2962,7 +2962,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4030,14 +4030,14 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Bait_Hider",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4171,7 +4171,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_UltraMark_Target_ToHunter",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4264,7 +4264,7 @@
               "$type": "AttachEffect",
               "muteRemoteAction": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Invisibility",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -4292,7 +4292,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Invisibility_Quit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -4314,7 +4314,7 @@
               "$type": "FireEffect",
               "muteRemoteAction": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Invisibility_CountDown",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4498,7 +4498,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Detect_Move",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

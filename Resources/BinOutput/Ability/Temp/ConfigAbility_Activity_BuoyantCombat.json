@@ -49,7 +49,7 @@
                       "target": "Other",
                       "key": "_Ability_BuoyantCombat_FireBasePos",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -81,11 +81,11 @@
                           "$type": "FireEffect",
                           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_ShockWave_Expand_Fire_Level_01",
                           "born": {
-                            "$type": "FNJGDOEMIIB",
-                            "FNMFBPGNEKD": "_Ability_BuoyantCombat_FireBasePos",
-                            "GPPNNKAOHCG": ""
+                            "$type": "ConfigBornByGlobalValue",
+                            "positionKey": "_Ability_BuoyantCombat_FireBasePos",
+                            "directionKey": ""
                           },
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "TriggerAttackEvent",
@@ -95,18 +95,18 @@
                               "$type": "ConfigAttackSphere",
                               "triggerType": "TriggerNoRepeat",
                               "born": {
-                                "$type": "FNJGDOEMIIB",
-                                "FNMFBPGNEKD": "_Ability_BuoyantCombat_FireBasePos",
-                                "GPPNNKAOHCG": ""
+                                "$type": "ConfigBornByGlobalValue",
+                                "positionKey": "_Ability_BuoyantCombat_FireBasePos",
+                                "directionKey": ""
                               },
-                              "BMCPFKAEOJB": 5.0
+                              "radius": 5.0
                             },
                             "attackInfo": {
                               "attackTag": "",
                               "attenuationTag": "",
                               "attenuationGroup": "default",
                               "attackProperty": {
-                                "MKLAMNDEDGB": 0.0,
+                                "damagePercentageRatio": 0.0,
                                 "elementType": "Fire",
                                 "bonusCriticalHurt": 20.0,
                                 "ignoreAttackerProperty": true,
@@ -364,7 +364,7 @@
                     {
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Avatar_ShockWave_Expand_Fire_Level_02",
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "TriggerAttackEvent",
@@ -381,14 +381,14 @@
                             },
                             "DAPKLNIFPID": true
                           },
-                          "BMCPFKAEOJB": 10.0
+                          "radius": 10.0
                         },
                         "attackInfo": {
                           "attackTag": "",
                           "attenuationTag": "",
                           "attenuationGroup": "default",
                           "attackProperty": {
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Fire",
                             "bonusCriticalHurt": 50.0,
                             "ignoreAttackerProperty": true,
@@ -628,7 +628,7 @@
                   "target": "Other",
                   "key": "_Ability_BuoyantCombat_IceLv3Pos",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -641,11 +641,11 @@
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_01",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_Ability_BuoyantCombat_IceLv3Pos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_Ability_BuoyantCombat_IceLv3Pos",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
@@ -654,18 +654,18 @@
                       "$type": "ConfigAttackSphere",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_Ability_BuoyantCombat_IceLv3Pos",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_Ability_BuoyantCombat_IceLv3Pos",
+                        "directionKey": ""
                       },
-                      "BMCPFKAEOJB": 5.0
+                      "radius": 5.0
                     },
                     "attackInfo": {
                       "attackTag": "",
                       "attenuationTag": "",
                       "attenuationGroup": "default",
                       "attackProperty": {
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 0.0,
                         "ignoreAttackerProperty": true,
                         "enBreak": 0.0,
@@ -782,7 +782,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -797,7 +797,7 @@
                   "range": 3
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValueToOverrideMap",
@@ -824,7 +824,7 @@
                       "$type": "AKLDHBPHNLK"
                     }
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -832,7 +832,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "BuoyantCombat_Water_Level",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": "Value_ElementDurability",
                     "enBreak": 0.0
@@ -1040,7 +1040,7 @@
                       "target": "Other",
                       "key": "_Ability_BuoyantCombat_WindBasePos",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -1081,11 +1081,11 @@
                           "$type": "FireEffect",
                           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_ShockWave_Fire",
                           "born": {
-                            "$type": "FNJGDOEMIIB",
-                            "FNMFBPGNEKD": "_Ability_BuoyantCombat_WindBasePos",
-                            "GPPNNKAOHCG": ""
+                            "$type": "ConfigBornByGlobalValue",
+                            "positionKey": "_Ability_BuoyantCombat_WindBasePos",
+                            "directionKey": ""
                           },
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "TriggerAttackEvent",
@@ -1094,18 +1094,18 @@
                               "$type": "ConfigAttackSphere",
                               "triggerType": "TriggerNoRepeat",
                               "born": {
-                                "$type": "FNJGDOEMIIB",
-                                "FNMFBPGNEKD": "_Ability_BuoyantCombat_WindBasePos",
-                                "GPPNNKAOHCG": ""
+                                "$type": "ConfigBornByGlobalValue",
+                                "positionKey": "_Ability_BuoyantCombat_WindBasePos",
+                                "directionKey": ""
                               },
-                              "BMCPFKAEOJB": 5.0
+                              "radius": 5.0
                             },
                             "attackInfo": {
                               "attackTag": "",
                               "attenuationTag": "",
                               "attenuationGroup": "default",
                               "attackProperty": {
-                                "MKLAMNDEDGB": 0.0,
+                                "damagePercentageRatio": 0.0,
                                 "elementType": "Fire",
                                 "bonusCriticalHurt": 20.0,
                                 "ignoreAttackerProperty": true,
@@ -1143,11 +1143,11 @@
                               "$type": "FireEffect",
                               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_ShockWave_Electric",
                               "born": {
-                                "$type": "FNJGDOEMIIB",
-                                "FNMFBPGNEKD": "_Ability_BuoyantCombat_WindBasePos",
-                                "GPPNNKAOHCG": ""
+                                "$type": "ConfigBornByGlobalValue",
+                                "positionKey": "_Ability_BuoyantCombat_WindBasePos",
+                                "directionKey": ""
                               },
-                              "FGMDINMEPHL": -1.0
+                              "effectTempleteID": -1.0
                             },
                             {
                               "$type": "TriggerAttackEvent",
@@ -1156,18 +1156,18 @@
                                   "$type": "ConfigAttackSphere",
                                   "triggerType": "TriggerNoRepeat",
                                   "born": {
-                                    "$type": "FNJGDOEMIIB",
-                                    "FNMFBPGNEKD": "_Ability_BuoyantCombat_WindBasePos",
-                                    "GPPNNKAOHCG": ""
+                                    "$type": "ConfigBornByGlobalValue",
+                                    "positionKey": "_Ability_BuoyantCombat_WindBasePos",
+                                    "directionKey": ""
                                   },
-                                  "BMCPFKAEOJB": 5.0
+                                  "radius": 5.0
                                 },
                                 "attackInfo": {
                                   "attackTag": "",
                                   "attenuationTag": "",
                                   "attenuationGroup": "default",
                                   "attackProperty": {
-                                    "MKLAMNDEDGB": 0.0,
+                                    "damagePercentageRatio": 0.0,
                                     "elementType": "Electric",
                                     "bonusCriticalHurt": 20.0,
                                     "ignoreAttackerProperty": true,
@@ -1206,11 +1206,11 @@
                                   "$type": "FireEffect",
                                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_ShockWave_Water",
                                   "born": {
-                                    "$type": "FNJGDOEMIIB",
-                                    "FNMFBPGNEKD": "_Ability_BuoyantCombat_WindBasePos",
-                                    "GPPNNKAOHCG": ""
+                                    "$type": "ConfigBornByGlobalValue",
+                                    "positionKey": "_Ability_BuoyantCombat_WindBasePos",
+                                    "directionKey": ""
                                   },
-                                  "FGMDINMEPHL": -1.0
+                                  "effectTempleteID": -1.0
                                 },
                                 {
                                   "$type": "TriggerAttackEvent",
@@ -1219,18 +1219,18 @@
                                       "$type": "ConfigAttackSphere",
                                       "triggerType": "TriggerNoRepeat",
                                       "born": {
-                                        "$type": "FNJGDOEMIIB",
-                                        "FNMFBPGNEKD": "_Ability_BuoyantCombat_WindBasePos",
-                                        "GPPNNKAOHCG": ""
+                                        "$type": "ConfigBornByGlobalValue",
+                                        "positionKey": "_Ability_BuoyantCombat_WindBasePos",
+                                        "directionKey": ""
                                       },
-                                      "BMCPFKAEOJB": 5.0
+                                      "radius": 5.0
                                     },
                                     "attackInfo": {
                                       "attackTag": "",
                                       "attenuationTag": "",
                                       "attenuationGroup": "default",
                                       "attackProperty": {
-                                        "MKLAMNDEDGB": 0.0,
+                                        "damagePercentageRatio": 0.0,
                                         "elementType": "Water",
                                         "bonusCriticalHurt": 20.0,
                                         "ignoreAttackerProperty": true,
@@ -1257,11 +1257,11 @@
                                   "$type": "FireEffect",
                                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_ShockWave_Ice",
                                   "born": {
-                                    "$type": "FNJGDOEMIIB",
-                                    "FNMFBPGNEKD": "_Ability_BuoyantCombat_WindBasePos",
-                                    "GPPNNKAOHCG": ""
+                                    "$type": "ConfigBornByGlobalValue",
+                                    "positionKey": "_Ability_BuoyantCombat_WindBasePos",
+                                    "directionKey": ""
                                   },
-                                  "FGMDINMEPHL": -1.0
+                                  "effectTempleteID": -1.0
                                 },
                                 {
                                   "$type": "TriggerAttackEvent",
@@ -1270,18 +1270,18 @@
                                       "$type": "ConfigAttackSphere",
                                       "triggerType": "TriggerNoRepeat",
                                       "born": {
-                                        "$type": "FNJGDOEMIIB",
-                                        "FNMFBPGNEKD": "_Ability_BuoyantCombat_WindBasePos",
-                                        "GPPNNKAOHCG": ""
+                                        "$type": "ConfigBornByGlobalValue",
+                                        "positionKey": "_Ability_BuoyantCombat_WindBasePos",
+                                        "directionKey": ""
                                       },
-                                      "BMCPFKAEOJB": 5.0
+                                      "radius": 5.0
                                     },
                                     "attackInfo": {
                                       "attackTag": "",
                                       "attenuationTag": "",
                                       "attenuationGroup": "default",
                                       "attackProperty": {
-                                        "MKLAMNDEDGB": 0.0,
+                                        "damagePercentageRatio": 0.0,
                                         "elementType": "Ice",
                                         "bonusCriticalHurt": 20.0,
                                         "ignoreAttackerProperty": true,
@@ -1467,7 +1467,7 @@
                       "target": "Other",
                       "key": "_Ability_BuoyantCombat_WindLv3Pos",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -1485,9 +1485,9 @@
                     {
                       "$type": "CreateGadget",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_Ability_BuoyantCombat_WindLv3Pos",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_Ability_BuoyantCombat_WindLv3Pos",
+                        "directionKey": ""
                       },
                       "gadgetID": 44000009,
                       "campID": 1001,
@@ -1591,7 +1591,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Shrink_Wind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1618,14 +1618,14 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -1724,7 +1724,7 @@
                   "target": "Other",
                   "key": "_Temp_POS",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
                   "setTarget": false
                 },
@@ -1733,26 +1733,26 @@
                   "target": "Other",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Shrink_Wind_Once",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_LevelEntity_TowerBuff_SwirlDoFieldPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_LevelEntity_TowerBuff_SwirlDoFieldPos",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "target": "Caster",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_Temp_POS",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_Temp_POS",
+                        "directionKey": ""
                       },
                       "height": 6.0,
-                      "BMCPFKAEOJB": 6.0
+                      "radius": 6.0
                     },
                     "attackInfo": {
                       "attackTag": "",
@@ -1760,7 +1760,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "Value_DamagePercentage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 0.0,
                         "enBreak": 100.0
                       },
@@ -1942,7 +1942,7 @@
                   "target": "Other",
                   "key": "_Ability_BuoyantCombat_GatherLv3Pos",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1983,11 +1983,11 @@
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Avatar_ShockWave_Fire",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_Ability_BuoyantCombat_GatherLv3Pos",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_Ability_BuoyantCombat_GatherLv3Pos",
+                        "directionKey": ""
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "TriggerAttackEvent",
@@ -1996,18 +1996,18 @@
                           "$type": "ConfigAttackSphere",
                           "triggerType": "TriggerNoRepeat",
                           "born": {
-                            "$type": "FNJGDOEMIIB",
-                            "FNMFBPGNEKD": "_Ability_BuoyantCombat_GatherLv3Pos",
-                            "GPPNNKAOHCG": ""
+                            "$type": "ConfigBornByGlobalValue",
+                            "positionKey": "_Ability_BuoyantCombat_GatherLv3Pos",
+                            "directionKey": ""
                           },
-                          "BMCPFKAEOJB": 5.0
+                          "radius": 5.0
                         },
                         "attackInfo": {
                           "attackTag": "",
                           "attenuationTag": "",
                           "attenuationGroup": "default",
                           "attackProperty": {
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Fire",
                             "bonusCriticalHurt": 50.0,
                             "ignoreAttackerProperty": true,
@@ -2046,11 +2046,11 @@
                           "$type": "FireEffect",
                           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_ShockWave_Electric",
                           "born": {
-                            "$type": "FNJGDOEMIIB",
-                            "FNMFBPGNEKD": "_Ability_BuoyantCombat_GatherLv3Pos",
-                            "GPPNNKAOHCG": ""
+                            "$type": "ConfigBornByGlobalValue",
+                            "positionKey": "_Ability_BuoyantCombat_GatherLv3Pos",
+                            "directionKey": ""
                           },
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "TriggerAttackEvent",
@@ -2059,18 +2059,18 @@
                               "$type": "ConfigAttackSphere",
                               "triggerType": "TriggerNoRepeat",
                               "born": {
-                                "$type": "FNJGDOEMIIB",
-                                "FNMFBPGNEKD": "_Ability_BuoyantCombat_GatherLv3Pos",
-                                "GPPNNKAOHCG": ""
+                                "$type": "ConfigBornByGlobalValue",
+                                "positionKey": "_Ability_BuoyantCombat_GatherLv3Pos",
+                                "directionKey": ""
                               },
-                              "BMCPFKAEOJB": 5.0
+                              "radius": 5.0
                             },
                             "attackInfo": {
                               "attackTag": "",
                               "attenuationTag": "",
                               "attenuationGroup": "default",
                               "attackProperty": {
-                                "MKLAMNDEDGB": 0.0,
+                                "damagePercentageRatio": 0.0,
                                 "elementType": "Electric",
                                 "bonusCriticalHurt": 50.0,
                                 "ignoreAttackerProperty": true,
@@ -2109,11 +2109,11 @@
                               "$type": "FireEffect",
                               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_ShockWave_Water",
                               "born": {
-                                "$type": "FNJGDOEMIIB",
-                                "FNMFBPGNEKD": "_Ability_BuoyantCombat_GatherLv3Pos",
-                                "GPPNNKAOHCG": ""
+                                "$type": "ConfigBornByGlobalValue",
+                                "positionKey": "_Ability_BuoyantCombat_GatherLv3Pos",
+                                "directionKey": ""
                               },
-                              "FGMDINMEPHL": -1.0
+                              "effectTempleteID": -1.0
                             },
                             {
                               "$type": "TriggerAttackEvent",
@@ -2122,18 +2122,18 @@
                                   "$type": "ConfigAttackSphere",
                                   "triggerType": "TriggerNoRepeat",
                                   "born": {
-                                    "$type": "FNJGDOEMIIB",
-                                    "FNMFBPGNEKD": "_Ability_BuoyantCombat_GatherLv3Pos",
-                                    "GPPNNKAOHCG": ""
+                                    "$type": "ConfigBornByGlobalValue",
+                                    "positionKey": "_Ability_BuoyantCombat_GatherLv3Pos",
+                                    "directionKey": ""
                                   },
-                                  "BMCPFKAEOJB": 5.0
+                                  "radius": 5.0
                                 },
                                 "attackInfo": {
                                   "attackTag": "",
                                   "attenuationTag": "",
                                   "attenuationGroup": "default",
                                   "attackProperty": {
-                                    "MKLAMNDEDGB": 0.0,
+                                    "damagePercentageRatio": 0.0,
                                     "elementType": "Water",
                                     "bonusCriticalHurt": 50.0,
                                     "ignoreAttackerProperty": true,
@@ -2160,11 +2160,11 @@
                               "$type": "FireEffect",
                               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_ShockWave_Ice",
                               "born": {
-                                "$type": "FNJGDOEMIIB",
-                                "FNMFBPGNEKD": "_Ability_BuoyantCombat_GatherLv3Pos",
-                                "GPPNNKAOHCG": ""
+                                "$type": "ConfigBornByGlobalValue",
+                                "positionKey": "_Ability_BuoyantCombat_GatherLv3Pos",
+                                "directionKey": ""
                               },
-                              "FGMDINMEPHL": -1.0
+                              "effectTempleteID": -1.0
                             },
                             {
                               "$type": "TriggerAttackEvent",
@@ -2173,18 +2173,18 @@
                                   "$type": "ConfigAttackSphere",
                                   "triggerType": "TriggerNoRepeat",
                                   "born": {
-                                    "$type": "FNJGDOEMIIB",
-                                    "FNMFBPGNEKD": "_Ability_BuoyantCombat_GatherLv3Pos",
-                                    "GPPNNKAOHCG": ""
+                                    "$type": "ConfigBornByGlobalValue",
+                                    "positionKey": "_Ability_BuoyantCombat_GatherLv3Pos",
+                                    "directionKey": ""
                                   },
-                                  "BMCPFKAEOJB": 5.0
+                                  "radius": 5.0
                                 },
                                 "attackInfo": {
                                   "attackTag": "",
                                   "attenuationTag": "",
                                   "attenuationGroup": "default",
                                   "attackProperty": {
-                                    "MKLAMNDEDGB": 0.0,
+                                    "damagePercentageRatio": 0.0,
                                     "elementType": "Ice",
                                     "bonusCriticalHurt": 50.0,
                                     "ignoreAttackerProperty": true,
@@ -2290,7 +2290,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "Value_BonusCritical",
               "predicates": [
                 {
@@ -2446,7 +2446,7 @@
                   "target": "Other",
                   "key": "_Ability_BuoyantCombat_CriticalLv3Pos",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -2461,11 +2461,11 @@
                   "target": "Other",
                   "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_01",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_Ability_BuoyantCombat_CriticalLv3Pos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_Ability_BuoyantCombat_CriticalLv3Pos",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
@@ -2475,18 +2475,18 @@
                       "$type": "ConfigAttackSphere",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "_Ability_BuoyantCombat_CriticalLv3Pos",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "_Ability_BuoyantCombat_CriticalLv3Pos",
+                        "directionKey": ""
                       },
-                      "BMCPFKAEOJB": 5.0
+                      "radius": 5.0
                     },
                     "attackInfo": {
                       "attackTag": "",
                       "attenuationTag": "",
                       "attenuationGroup": "default",
                       "attackProperty": {
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 0.0,
                         "ignoreAttackerProperty": true,
                         "enBreak": 0.0,
@@ -2706,7 +2706,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2718,14 +2718,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "strikeType": "Default",
@@ -3088,7 +3088,7 @@
                 "shapeName": "CircleR5",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -3134,7 +3134,7 @@
                 "shapeName": "CircleR5",
                 "centerBasedOn": "CurLocalAvatar",
                 "campTargetType": "Enemy",
-                "OGIOEHHBNMA": "CurLocalAvatar",
+                "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -3189,7 +3189,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
@@ -3201,14 +3201,14 @@
                       "born": {
                         "$type": "ConfigBornBySelf"
                       },
-                      "BMCPFKAEOJB": 0.5
+                      "radius": 0.5
                     },
                     "attackInfo": {
                       "attackTag": "",
                       "attenuationTag": "",
                       "attenuationGroup": "default",
                       "attackProperty": {
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Ice",
                         "bonusCriticalHurt": 50.0,
                         "ignoreAttackerProperty": true,
@@ -3237,7 +3237,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
@@ -3249,14 +3249,14 @@
                       "born": {
                         "$type": "ConfigBornBySelf"
                       },
-                      "BMCPFKAEOJB": 0.5
+                      "radius": 0.5
                     },
                     "attackInfo": {
                       "attackTag": "",
                       "attenuationTag": "",
                       "attenuationGroup": "default",
                       "attackProperty": {
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Electric",
                         "bonusCriticalHurt": 50.0,
                         "ignoreAttackerProperty": true,

@@ -340,7 +340,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hilistray_Water_RushAtk_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -511,7 +511,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hilistray_Water_SlimeAtk_SlimeBullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -533,7 +533,7 @@
                 "$type": "ConfigBornBySelf",
                 "IABNJPGBAOH": true
               },
-              "BMCPFKAEOJB": 1.350000023841858
+              "radius": 1.350000023841858
             },
             "attackInfo": {
               "attackTag": "",
@@ -541,7 +541,7 @@
               "attenuationGroup": "Hilistray_Water_SlimeAtk",
               "attackProperty": {
                 "damagePercentage": 0.800000011920929,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -572,7 +572,7 @@
             "BJCIHELGKLP": true,
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -608,8 +608,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02"]
               },
               "modifierName": "Hilistray_Water_SpecialAtk_HilistrayFreeze"
             }
@@ -627,8 +627,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02"]
               },
               "modifierName": "Hilistray_Water_SpecialAtk_HilistrayPetrifaction"
             }
@@ -799,7 +799,7 @@
           "$type": "TriggerThrowEquipPart",
           "equipPart": "equip01",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "HOPPHMEKHLG": {
               "$type": "HFKFLHCBMLB",
               "LLOEMEPIBII": "Horizontal",
@@ -895,7 +895,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hilistray_Water_SpecialAtk_SlimeBase",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -986,7 +986,7 @@
                       "$type": "NFGKOJBHMLL"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -1026,7 +1026,7 @@
                 "$type": "ConfigBornBySelf",
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -1083,7 +1083,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hilistray_Water_SpecialAtk_SlimeTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1223,7 +1223,7 @@
             "attachPointName": "SprayPoint",
             "ABIMPICHJNC": "Self"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1268,9 +1268,9 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -1278,7 +1278,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -1309,7 +1309,7 @@
             "DAPKLNIFPID": true,
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf",
@@ -1333,7 +1333,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hilistray_Water_SpecialAtk_Bubble_Missle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1385,7 +1385,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hilistray_Water_SpecialAtk_Bubble_Missle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1437,7 +1437,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Hilistray_Water_SpecialAtk_Bubble_Missle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1492,7 +1492,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "Predicated",
@@ -1527,7 +1527,7 @@
                     },
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1535,7 +1535,7 @@
                   "attenuationGroup": "Hilistray_Water_SpecialAtk_Bubble",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -1599,7 +1599,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Water_Bubble",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1611,7 +1611,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -1749,7 +1749,7 @@
                     "DAPKLNIFPID": true,
                     "BJCIHELGKLP": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerBullet",
@@ -1786,7 +1786,7 @@
                     "DAPKLNIFPID": true,
                     "BJCIHELGKLP": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }

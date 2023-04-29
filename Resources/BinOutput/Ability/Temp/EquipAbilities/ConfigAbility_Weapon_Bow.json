@@ -7,7 +7,7 @@
         {
           "$type": "ModifyDamageMixin",
           "ignoreEventInfo": true,
-          "MKLAMNDEDGB": "Rate",
+          "damagePercentageRatio": "Rate",
           "predicates": [
             {
               "$type": "ByEntityTypes",
@@ -43,7 +43,7 @@
         {
           "$type": "ModifyDamageMixin",
           "ignoreEventInfo": true,
-          "MKLAMNDEDGB": "Rate",
+          "damagePercentageRatio": "Rate",
           "predicates": [
             {
               "$type": "IPMDKMAHKDF",
@@ -90,7 +90,7 @@
                       "$type": "IOPNFLFHGID"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -186,7 +186,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": "AttackUpRatio"
+              "damagePercentageRatio": "AttackUpRatio"
             }
           ],
           "onRemoved": [
@@ -213,7 +213,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": ["AttackDownRatio", "Minus", "MUL"]
+              "damagePercentageRatio": ["AttackDownRatio", "Minus", "MUL"]
             }
           ]
         }
@@ -318,7 +318,7 @@
                       "z": 0.0
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "DamageByAttackValue",
@@ -329,7 +329,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": "bonusCriticalDamage",
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "bonusCriticalHurt": 100.0,
                       "strikeType": "Pierce",
                       "enBreak": 20.0,
@@ -411,7 +411,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByEntityTypes",
@@ -496,13 +496,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_ExtraElementBall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "GenerateElemBall",
               "configID": 2024,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -550,7 +550,7 @@
                 "Elemental_Art_Hold",
                 "Elemental_Art_Extra"
               ],
-              "MKLAMNDEDGB": "RiseElementalSkill"
+              "damagePercentageRatio": "RiseElementalSkill"
             }
           ]
         }
@@ -659,7 +659,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_ResetCD",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EquipAffixStart",
@@ -829,12 +829,12 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "RiseNormalAttack"
+              "damagePercentageRatio": "RiseNormalAttack"
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": ["FallExtraAttack", "Minus", "MUL"]
+              "damagePercentageRatio": ["FallExtraAttack", "Minus", "MUL"]
             }
           ]
         }
@@ -1021,7 +1021,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1038,7 +1038,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1055,7 +1055,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1072,7 +1072,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack4",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1123,12 +1123,12 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": ["FallNormalAttack", "Minus", "MUL"]
+              "damagePercentageRatio": ["FallNormalAttack", "Minus", "MUL"]
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "RiseExtraAttack"
+              "damagePercentageRatio": "RiseExtraAttack"
             }
           ]
         }
@@ -1229,11 +1229,11 @@
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Blackrock1_Bow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1249,11 +1249,11 @@
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Blackrock2_Bow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1269,11 +1269,11 @@
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Blackrock3_Bow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1359,7 +1359,7 @@
                       "$type": "CreateGadget",
                       "target": "Target",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -1444,17 +1444,17 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "WeaponSkill",
@@ -1462,7 +1462,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default",
                     "enBreak": 0.0
@@ -1487,7 +1487,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -1628,7 +1628,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": ["Rate", "Buff_Level", "MUL"]
+              "damagePercentageRatio": ["Rate", "Buff_Level", "MUL"]
             }
           ],
           "onAdded": [
@@ -1636,7 +1636,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Outlaw_Common_Buff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1799,13 +1799,13 @@
                       }
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "FLIPADNBJJF",
@@ -1818,7 +1818,7 @@
                           "$type": "IOPNFLFHGID"
                         }
                       },
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "WeaponSkill",
@@ -1826,7 +1826,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "AtkRate",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 100.0,
                         "strikeType": "Pierce",
                         "enBreak": 20.0,
@@ -1960,7 +1960,7 @@
                 "Elemental_Art_Hold",
                 "Elemental_Art_Extra"
               ],
-              "MKLAMNDEDGB": "Rate_1"
+              "damagePercentageRatio": "Rate_1"
             }
           ],
           "state": "AttackUp"
@@ -1981,7 +1981,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "Rate_2"
+              "damagePercentageRatio": "Rate_2"
             }
           ],
           "state": "AttackUp"
@@ -2029,7 +2029,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Bow_Fleurfair",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -2116,7 +2116,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": "DamageUp"
+              "damagePercentageRatio": "DamageUp"
             }
           ],
           "state": "AttackUp"
@@ -2237,13 +2237,13 @@
                           }
                         }
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "TriggerAttackEvent",
                       "attackEvent": {
                         "attackPattern": {
-                          "$type": "CHEAOJDOBEB",
+                          "$type": "ConfigAttackCircle",
                           "triggerType": "TriggerNoRepeat",
                           "born": {
                             "$type": "FLIPADNBJJF",
@@ -2256,7 +2256,7 @@
                               "$type": "IOPNFLFHGID"
                             }
                           },
-                          "BMCPFKAEOJB": 3.0
+                          "radius": 3.0
                         },
                         "attackInfo": {
                           "attackTag": "WeaponSkill",
@@ -2264,7 +2264,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": "Damage",
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "bonusCriticalHurt": 100.0,
                             "strikeType": "Pierce",
                             "enBreak": 20.0,
@@ -2339,7 +2339,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": "RiseAttackBase"
+              "damagePercentageRatio": "RiseAttackBase"
             }
           ]
         },
@@ -2404,7 +2404,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": "RiseAttackPerStage"
+              "damagePercentageRatio": "RiseAttackPerStage"
             }
           ]
         },
@@ -2423,7 +2423,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": ["RiseAttackPerStage", 2.0, "MUL"]
+              "damagePercentageRatio": ["RiseAttackPerStage", 2.0, "MUL"]
             }
           ]
         },
@@ -2442,7 +2442,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": ["RiseAttackPerStage", 3.0, "MUL"]
+              "damagePercentageRatio": ["RiseAttackPerStage", 3.0, "MUL"]
             }
           ]
         },
@@ -2461,7 +2461,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": ["RiseAttackPerStage", 4.0, "MUL"]
+              "damagePercentageRatio": ["RiseAttackPerStage", 4.0, "MUL"]
             }
           ]
         },
@@ -2480,7 +2480,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": ["RiseAttackPerStage", 5.0, "MUL"]
+              "damagePercentageRatio": ["RiseAttackPerStage", 5.0, "MUL"]
             }
           ]
         }
@@ -2651,7 +2651,7 @@
                   "$type": "FireEffect",
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Widsith_Bow_Burst",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "RemoveUniqueModifier",
@@ -2760,7 +2760,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_EnergyPoem_Stack1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2773,7 +2773,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_EnergyPoem_Stack2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2786,7 +2786,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_EnergyPoem_Stack3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2826,12 +2826,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Widsith_Common_TeamBuff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Widsith_Bow_TeamBuff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3158,7 +3158,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Kunwu_Stack_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3169,7 +3169,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Kunwu_Stack_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3180,7 +3180,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Kunwu_Stack_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3191,7 +3191,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Kunwu_Stack_04",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3202,7 +3202,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Kunwu_Stack_05",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3377,12 +3377,12 @@
             "NormalAttack_05",
             "NormalAttack_06"
           ],
-          "MKLAMNDEDGB": "NormalUp"
+          "damagePercentageRatio": "NormalUp"
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["ExtraAttack"],
-          "MKLAMNDEDGB": "ExtraUp"
+          "damagePercentageRatio": "ExtraUp"
         },
         {
           "$type": "AttachModifierToPredicateMixin",
@@ -3417,12 +3417,12 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": ["NormalUp", "Rate", "MUL"]
+              "damagePercentageRatio": ["NormalUp", "Rate", "MUL"]
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": ["ExtraUp", "Rate", "MUL"]
+              "damagePercentageRatio": ["ExtraUp", "Rate", "MUL"]
             }
           ]
         }
@@ -3619,7 +3619,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "Rate1"
+              "damagePercentageRatio": "Rate1"
             }
           ],
           "onAdded": [
@@ -3633,8 +3633,8 @@
             {
               "$type": "RemoveUniqueModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "modifierName": "UNIQUE_Weapon_Bow_Narukami_Buff1_Effect"
@@ -3652,8 +3652,8 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "modifierName": "UNIQUE_Weapon_Bow_Narukami_Buff1_Effect"
@@ -3663,8 +3663,8 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "modifierName": "UNIQUE_Weapon_Bow_Narukami_Buff1_Effect"
@@ -3680,7 +3680,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_NarukamiBuff_Bow_1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3699,19 +3699,19 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "Rate2"
+              "damagePercentageRatio": "Rate2"
             }
           ],
           "onAdded": [
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_NarukamiBuff_Bow_2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -3731,19 +3731,19 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "Rate3"
+              "damagePercentageRatio": "Rate3"
             }
           ],
           "onAdded": [
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_NarukamiBuff_Bow_3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -3787,7 +3787,7 @@
             "Elemental_Art_Extra",
             "Elemental_Burst"
           ],
-          "MKLAMNDEDGB": "Passive_Rate"
+          "damagePercentageRatio": "Passive_Rate"
         },
         {
           "$type": "AttachModifierToSelfGlobalValueMixin",
@@ -3822,8 +3822,8 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "modifierName": "UNIQUE_Weapon_Bow_Worldbane_Effect_Init"
@@ -3833,8 +3833,8 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "modifierName": "UNIQUE_Weapon_Bow_Worldbane_Effect_Init"
@@ -3850,7 +3850,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Worldbane",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4092,8 +4092,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "parameter": "Level",
@@ -4104,8 +4104,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "parameter": "Change",
@@ -4125,8 +4125,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "parameter": "Level",
@@ -4138,8 +4138,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "parameter": "Change",
@@ -4160,8 +4160,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "parameter": "Level",
@@ -4173,8 +4173,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "parameter": "Change",
@@ -4195,8 +4195,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "parameter": "Level",
@@ -4208,8 +4208,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "parameter": "Change",
@@ -4230,8 +4230,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "parameter": "Level",
@@ -4243,8 +4243,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "parameter": "Change",
@@ -4321,7 +4321,7 @@
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["Elemental_Burst"],
-          "MKLAMNDEDGB": "Bow_Maria_BuffValue"
+          "damagePercentageRatio": "Bow_Maria_BuffValue"
         }
       ],
       "abilitySpecials": {
@@ -4402,19 +4402,19 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Percentage"
+              "damagePercentageRatio": "Percentage"
             }
           ],
           "onAdded": [
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Kirin",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4470,7 +4470,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Buff1"
+              "damagePercentageRatio": "Buff1"
             }
           ],
           "state": "AttackUp",
@@ -4478,7 +4478,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_FallenSun1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4490,7 +4490,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Buff2"
+              "damagePercentageRatio": "Buff2"
             }
           ],
           "state": "AttackUp",
@@ -4498,7 +4498,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_FallenSun2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4510,7 +4510,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Buff3"
+              "damagePercentageRatio": "Buff3"
             }
           ],
           "state": "AttackUp",
@@ -4518,7 +4518,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_FallenSun3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4815,15 +4815,15 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_BOW_ARAKALARI_ATTACK_POS",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_BOW_ARAKALARI_ATTACK_POS",
+                    "directionKey": ""
                   },
                   "height": 1.5,
-                  "BMCPFKAEOJB": 1.600000023841858
+                  "radius": 1.600000023841858
                 },
                 "attackInfo": {
                   "attackTag": "WeaponSkill",
@@ -4831,7 +4831,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Rate",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 20.0
                   },
@@ -4850,11 +4850,11 @@
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Blast_R15",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_BOW_ARAKALARI_ATTACK_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_BOW_ARAKALARI_ATTACK_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -4955,15 +4955,15 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_BOW_ARAKALARI_ATTACK_POS",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_BOW_ARAKALARI_ATTACK_POS",
+                    "directionKey": ""
                   },
                   "height": 1.5,
-                  "BMCPFKAEOJB": 1.600000023841858
+                  "radius": 1.600000023841858
                 },
                 "attackInfo": {
                   "attackTag": "WeaponSkill",
@@ -4971,7 +4971,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Rate",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 20.0
                   },
@@ -4990,11 +4990,11 @@
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Blast_R15",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_BOW_ARAKALARI_ATTACK_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_BOW_ARAKALARI_ATTACK_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -5111,7 +5111,7 @@
             {
               "$type": "ModifyDamageCountMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": ["Ratio", "FIGHT_PROP_ELEMENT_MASTERY", "MUL"],
               "predicates": [
                 {
@@ -5146,12 +5146,12 @@
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Bow_Ayus",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5365,13 +5365,13 @@
                       }
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "FLIPADNBJJF",
@@ -5389,7 +5389,7 @@
                           }
                         }
                       },
-                      "BMCPFKAEOJB": 2.5
+                      "radius": 2.5
                     },
                     "attackInfo": {
                       "attackTag": "WeaponSkill",
@@ -5397,7 +5397,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "Rate",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 100.0,
                         "strikeType": "Default",
                         "enBreak": 20.0

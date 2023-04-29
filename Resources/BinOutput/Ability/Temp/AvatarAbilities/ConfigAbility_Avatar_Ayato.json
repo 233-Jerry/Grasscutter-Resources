@@ -211,7 +211,7 @@
                 "attenuationGroup": "Avatar_Pole_ExtraAttack",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 25.0,
                   "overrideByWeapon": true,
                   "strikeType": "Slash",
@@ -252,7 +252,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 0.800000011920929
+                  "radius": 0.800000011920929
                 },
                 "attackInfo": {
                   "attackTag": "ExtraAttack",
@@ -260,7 +260,7 @@
                   "attenuationGroup": "Avatar_Pole_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -355,7 +355,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalArt_HideSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ActCameraRadialBlur",
@@ -379,7 +379,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalArt_ShowSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerSetVisible",
@@ -724,14 +724,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalArt_Weapon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalArt_Weapon_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -743,7 +743,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_SpecialAttack_SheatheKeep",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -891,7 +891,7 @@
                   "targetPredicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "TalentParam_Ayato_Talent6"
+                      "talentParam": "TalentParam_Ayato_Talent6"
                     },
                     {
                       "$type": "ByTargetGlobalValue",
@@ -1094,7 +1094,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "TalentParam_Ayato_Talent6"
+              "talentParam": "TalentParam_Ayato_Talent6"
             }
           ],
           "ratio": 1.0,
@@ -1293,7 +1293,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalArt_AttackBuff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1347,7 +1347,7 @@
             {
               "$type": "ModifyDamageMixin",
               "animEventNames": ["SP_ATK01", "SP_ATK02", "SP_ATK03"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": [
                 "FIGHT_PROP_MAX_HP",
                 "PropToDamageExtraRatio",
@@ -1363,7 +1363,7 @@
             {
               "$type": "ModifyDamageMixin",
               "animEventNames": ["SP_ATK01", "SP_ATK02", "SP_ATK03"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": [
                 "FIGHT_PROP_MAX_HP",
                 "PropToDamageExtraRatio",
@@ -1381,7 +1381,7 @@
             {
               "$type": "ModifyDamageMixin",
               "animEventNames": ["SP_ATK01", "SP_ATK02", "SP_ATK03"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": [
                 "FIGHT_PROP_MAX_HP",
                 "PropToDamageExtraRatio",
@@ -1399,7 +1399,7 @@
             {
               "$type": "ModifyDamageMixin",
               "animEventNames": ["SP_ATK01", "SP_ATK02", "SP_ATK03"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": [
                 "FIGHT_PROP_MAX_HP",
                 "PropToDamageExtraRatio",
@@ -1417,7 +1417,7 @@
             {
               "$type": "ModifyDamageMixin",
               "animEventNames": ["SP_ATK01", "SP_ATK02", "SP_ATK03"],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "damageExtra": [
                 "FIGHT_PROP_MAX_HP",
                 "PropToDamageExtraRatio",
@@ -1481,7 +1481,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalArt_Gadget",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -1489,7 +1489,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "TalentParam_Ayato_PermanentSkill_1"
+              "talentParam": "TalentParam_Ayato_PermanentSkill_1"
             }
           ],
           "abilityName": "Avatar_Ayato_KendoPose_Buff",
@@ -1502,7 +1502,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalArt_Gadget_Break",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -1511,7 +1511,7 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1519,7 +1519,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ArtGadget_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1542,7 +1542,7 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "TalentParam_Ayato_PermanentSkill_1"
+              "talentParam": "TalentParam_Ayato_PermanentSkill_1"
             },
             {
               "$type": "ByTargetGlobalValue",
@@ -1564,7 +1564,7 @@
               "$type": "FireEffect",
               "target": "OriginOwner",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalArt_Constellation1_Avatar",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1624,7 +1624,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalBurst_WeaponDither",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1639,7 +1639,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalBurst_WeaponDither_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1652,7 +1652,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR3",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1699,7 +1699,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -1710,7 +1710,7 @@
                       }
                     },
                     "height": 2.0,
-                    "BMCPFKAEOJB": 1.0
+                    "radius": 1.0
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -1737,7 +1737,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalBurst_NoCamera",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -1852,7 +1852,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "TalentParam_Ayato_Talent4"
+                  "talentParam": "TalentParam_Ayato_Talent4"
                 }
               ],
               "abilityName": "Avatar_Ayato_Talent4"
@@ -2137,9 +2137,9 @@
                   "$type": "FireSubEmitterEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalBurst_Image_02",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Ayato_ElementalBurst_TriggerPos1",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Ayato_ElementalBurst_TriggerPos1",
+                    "directionKey": ""
                   }
                 }
               ],
@@ -2148,9 +2148,9 @@
                   "$type": "FireSubEmitterEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalBurst_Image_03",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Ayato_ElementalBurst_TriggerPos1",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Ayato_ElementalBurst_TriggerPos1",
+                    "directionKey": ""
                   }
                 }
               ]
@@ -2161,21 +2161,21 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "EDLHKEAJOOL": 0.6000000238418579,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -1.0,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "_ABILITY_Ayato_ElementalBurst_TriggerPos1",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Ayato_ElementalBurst_TriggerPos1",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2183,7 +2183,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -2222,9 +2222,9 @@
                   "$type": "FireSubEmitterEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalBurst_Image_02",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Ayato_ElementalBurst_TriggerPos2",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Ayato_ElementalBurst_TriggerPos2",
+                    "directionKey": ""
                   }
                 }
               ],
@@ -2233,9 +2233,9 @@
                   "$type": "FireSubEmitterEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalBurst_Image_03",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Ayato_ElementalBurst_TriggerPos2",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Ayato_ElementalBurst_TriggerPos2",
+                    "directionKey": ""
                   }
                 }
               ]
@@ -2246,21 +2246,21 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "EDLHKEAJOOL": 0.6000000238418579,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -1.0,
                       "z": 0.0
                     },
-                    "FNMFBPGNEKD": "_ABILITY_Ayato_ElementalBurst_TriggerPos2",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Ayato_ElementalBurst_TriggerPos2",
+                    "directionKey": ""
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2268,7 +2268,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -2308,14 +2308,14 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "NormalAttackUp"
+              "damagePercentageRatio": "NormalAttackUp"
             }
           ],
           "onAdded": [
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalBurst_Buff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -2366,7 +2366,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_ElementalBurst_Circle",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -2491,7 +2491,7 @@
             "SP_ATK04",
             "SP_ATK05"
           ],
-          "MKLAMNDEDGB": "DamageUp",
+          "damagePercentageRatio": "DamageUp",
           "predicates": [
             {
               "$type": "GMGEIHHLMCO",
@@ -2583,7 +2583,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_Constellation_6_Watch",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -2615,7 +2615,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Ayato_Constellation_6_WatchTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2659,73 +2659,73 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01"],
           "damagePercentage": "Attack01",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02"],
           "damagePercentage": "Attack02",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03"],
           "damagePercentage": "Attack03",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04"],
           "damagePercentage": "Attack04",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04_01"],
           "damagePercentage": "Attack04",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK05"],
           "damagePercentage": "Attack05",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["ExtraAttack"],
           "damagePercentage": "ExtraAttack",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["SP_ATK01"],
           "damagePercentage": "SPAttack01",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["SP_ATK02"],
           "damagePercentage": "SPAttack02",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["SP_ATK03"],
           "damagePercentage": "SPAttack03",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["SP_ATK04"],
           "damagePercentage": "SPAttack04",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["SP_ATK05"],
           "damagePercentage": "SPAttack05",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -2857,7 +2857,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Self_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2882,7 +2882,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2918,7 +2918,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -2926,7 +2926,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -3089,7 +3089,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3100,7 +3100,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3271,16 +3271,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3288,7 +3288,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3296,7 +3296,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -3334,15 +3334,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3350,7 +3350,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3358,7 +3358,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -3397,12 +3397,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3411,11 +3411,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

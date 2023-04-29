@@ -252,7 +252,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Hand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -265,13 +265,13 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_LycanMode_Flag",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -283,7 +283,7 @@
               },
               "height": 1.600000023841858,
               "BAPAHIOBNCL": 240.0,
-              "BMCPFKAEOJB": 2.4000000953674316
+              "radius": 2.4000000953674316
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -291,7 +291,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ClawMark_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 50.0,
@@ -326,12 +326,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_LycanMode_Flag",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -343,7 +343,7 @@
               },
               "height": 1.600000023841858,
               "BAPAHIOBNCL": 240.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -351,7 +351,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ClawMark_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 50.0,
@@ -455,7 +455,7 @@
                           "$type": "ByTargetGlobalValue",
                           "key": "_ABILITY_LycanMode_Flag",
                           "ratio": 1.0,
-                          "forceByCaster": true
+                          "setTarget": true
                         }
                       ]
                     }
@@ -468,7 +468,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Razor_ElectrifiedScar"
+                      "talentParam": "Razor_ElectrifiedScar"
                     }
                   ],
                   "modifierName": "UNIQUE_ElectrifiedScar_ArmorDown"
@@ -479,7 +479,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Razor_ElectrifiedScar"
+                      "talentParam": "Razor_ElectrifiedScar"
                     }
                   ],
                   "modifierName": "UNIQUE_ElectrifiedScar_ArmorDown"
@@ -508,7 +508,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_LycanMode_Flag",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "successActions": [
@@ -588,7 +588,7 @@
               "$type": "GenerateElemBall",
               "configID": 2020,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -614,7 +614,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Sign_1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -629,12 +629,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Sign_1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Sign_2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -649,17 +649,17 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Sign_1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Sign_2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Sign_3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -674,7 +674,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Mark_3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -775,7 +775,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Charge",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -854,7 +854,7 @@
                           "$type": "ByTargetGlobalValue",
                           "key": "_ABILITY_LycanMode_Flag",
                           "ratio": 1.0,
-                          "forceByCaster": true
+                          "setTarget": true
                         }
                       ]
                     }
@@ -875,7 +875,7 @@
               "$type": "GenerateElemBall",
               "configID": 2020,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -902,7 +902,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Charge_Disappear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -911,14 +911,14 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_LycanMode_Flag",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -926,7 +926,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ExplodeDamage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 50.0,
@@ -961,7 +961,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_LycanMode_Flag",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
@@ -969,7 +969,7 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -977,7 +977,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ExplodeDamage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 50.0,
@@ -1021,14 +1021,14 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_LycanMode_Flag",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ]
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Explode",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1037,7 +1037,7 @@
             "DAPKLNIFPID": true,
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1046,12 +1046,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_LycanMode_Flag",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Explode_Lycan",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1060,7 +1060,7 @@
             "DAPKLNIFPID": true,
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -1093,7 +1093,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Restore_1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1116,7 +1116,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Restore_2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1139,7 +1139,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Restore_3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1152,7 +1152,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_ClawMark_Count",
               "ratio": 1.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -1165,7 +1165,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_ClawMark_Count",
               "ratio": 2.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -1178,7 +1178,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_ClawMark_Count",
               "ratio": 3.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -1200,7 +1200,7 @@
             "LycanMode_LycanAttackFactor",
             "MUL"
           ],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
@@ -1210,7 +1210,7 @@
             "LycanMode_LycanAttackFactor",
             "MUL"
           ],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
@@ -1220,7 +1220,7 @@
             "LycanMode_LycanAttackFactor",
             "MUL"
           ],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
@@ -1230,7 +1230,7 @@
             "LycanMode_LycanAttackFactor",
             "MUL"
           ],
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -1248,7 +1248,7 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -1256,7 +1256,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "LycanMode_BlastDamage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "elementRank": 3.0,
                 "bonusCriticalHurt": 50.0,
@@ -1294,7 +1294,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ThunderFang_Blast",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -1305,7 +1305,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Razor_CombatReadiness"
+              "talentParam": "Razor_CombatReadiness"
             }
           ],
           "skillID": 10202,
@@ -1554,7 +1554,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_LycanMode_Flag",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ]
             }
@@ -1636,7 +1636,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ThunderFang_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1728,7 +1728,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_ABILITY_LycanMode_Flag",
                       "ratio": 1.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ]
                 }
@@ -1745,7 +1745,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_LycanMode_Lycan",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1989,8 +1989,8 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "sheathPoint"]
               },
               "modifierName": "UNIQUE_ChargedBlade_WeaponMaterial"
             },
@@ -2017,7 +2017,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Talent_ChargedBlade_IsCharged",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "LCCMCDGDKGI",
@@ -2055,7 +2055,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2065,7 +2065,7 @@
                       "z": 0.699999988079071
                     }
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "ChargedBlade",
@@ -2073,7 +2073,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ChargedBlade_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "enBreak": 69.0
@@ -2102,20 +2102,20 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_Talent_ChargedBlade_Thunderfall",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.699999988079071
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "sheathPoint"]
               },
               "modifierName": "ChargedBlade_WeaponMaterial_Remover"
             },
@@ -2141,7 +2141,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_Talent_ChargedBlade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2177,15 +2177,15 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "sheathPoint"]
               },
               "predicates": [
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Talent_ChargedBlade_IsCharged",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "UNIQUE_ChargedBlade_WeaponMaterial"
@@ -2354,7 +2354,7 @@
                 "NormalAttack_05",
                 "FallingAttack"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "OverPower_BonusCritical",
               "predicates": [
                 {
@@ -2439,37 +2439,37 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01"],
           "damagePercentage": "NormalAttack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02"],
           "damagePercentage": "NormalAttack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03"],
           "damagePercentage": "NormalAttack_03_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04"],
           "damagePercentage": "NormalAttack_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack1"],
           "damagePercentage": "ExtraAttack_Loop_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack2"],
           "damagePercentage": "ExtraAttack_End_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -2586,7 +2586,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Self_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2597,12 +2597,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Self",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2638,7 +2638,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -2646,7 +2646,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -2809,7 +2809,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2820,7 +2820,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2981,16 +2981,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -2998,7 +2998,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3006,7 +3006,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -3044,15 +3044,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3060,7 +3060,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3068,7 +3068,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -3107,12 +3107,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3121,11 +3121,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

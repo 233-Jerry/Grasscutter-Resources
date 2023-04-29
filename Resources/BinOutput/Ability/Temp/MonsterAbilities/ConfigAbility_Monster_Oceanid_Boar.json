@@ -86,7 +86,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_Boar_RushAtk",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -102,7 +102,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.75
+                  "radius": 1.75
                 },
                 "attackInfo": {
                   "attackTag": "Oceanid_Boar_RushAtk",
@@ -110,7 +110,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0
                   },
                   "hitPattern": {
@@ -162,7 +162,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.75
+                  "radius": 1.75
                 },
                 "attackInfo": {
                   "attackTag": "Oceanid_Boar_RushAtk",
@@ -170,7 +170,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0
                   },
                   "hitPattern": {
@@ -210,7 +210,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Water",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Blunt",
@@ -263,7 +263,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -271,7 +271,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.30000001192092896,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -313,7 +313,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_Boar_RushAtk",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -329,7 +329,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.75
+                  "radius": 1.75
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -337,7 +337,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0
                   },
                   "hitPattern": {
@@ -389,7 +389,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.75
+                  "radius": 1.75
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -397,7 +397,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0
                   },
                   "hitPattern": {
@@ -437,7 +437,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Water",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Blunt",
@@ -494,7 +494,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42005011,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.20000000298023224,
@@ -517,12 +517,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_Boar_WaterBall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_Boar_WaterBallTail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -562,7 +562,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 2.5
+              "radius": 2.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -570,7 +570,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -594,7 +594,7 @@
             "$type": "ConfigBornByCollisionPoint",
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -696,7 +696,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_Boar_Heal",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -707,7 +707,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_Boar_Heal",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -789,7 +789,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_Boar_CommonEffectLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -867,7 +867,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -918,7 +918,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

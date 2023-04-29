@@ -27,7 +27,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -62,7 +62,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -108,7 +108,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -198,7 +198,7 @@
                 "OBHNBNDMPFN": 1.0
               },
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
@@ -211,14 +211,14 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 2.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Wind",
                   "bonusCriticalHurt": 50.0
                 },
                 "hitPattern": {
                   "onHitEffectName": "default",
                   "hitLevel": "Heavy",
-                  "IPHCEFBMJAJ": 700.0,
+                  "hitImpulseX": 700.0,
                   "hitImpulseY": 0.0,
                   "hitImpulseType": "",
                   "hitHaltTimeScale": 0.05000000074505806
@@ -235,7 +235,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -276,7 +276,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -284,14 +284,14 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 4.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 100.0
                   },
                   "hitPattern": {
                     "onHitEffectName": "default",
                     "hitLevel": "Air",
-                    "IPHCEFBMJAJ": 700.0,
+                    "hitImpulseX": 700.0,
                     "hitImpulseY": 700.0,
                     "hitImpulseType": "",
                     "hitHaltTimeScale": 0.05000000074505806
@@ -309,7 +309,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -360,7 +360,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -411,7 +411,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -419,14 +419,14 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 4.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 100.0
                   },
                   "hitPattern": {
                     "onHitEffectName": "default",
                     "hitLevel": "Heavy",
-                    "IPHCEFBMJAJ": 0.0,
+                    "hitImpulseX": 0.0,
                     "hitImpulseY": 0.0,
                     "hitImpulseType": "",
                     "hitHaltTimeScale": 0.05000000074505806
@@ -448,7 +448,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -460,7 +460,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -496,7 +496,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -536,7 +536,7 @@
           "$type": "TriggerBullet",
           "bulletID": 40000118,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.30000001192092896,
@@ -575,7 +575,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

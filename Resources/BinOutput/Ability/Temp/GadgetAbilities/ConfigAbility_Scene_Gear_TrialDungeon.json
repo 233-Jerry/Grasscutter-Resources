@@ -282,7 +282,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "EffectPoint"
               },
-              "FGMDINMEPHL": 101.0
+              "effectTempleteID": 101.0
             }
           ]
         },
@@ -325,7 +325,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "EffectPoint"
               },
-              "FGMDINMEPHL": 101.0
+              "effectTempleteID": 101.0
             },
             {
               "$type": "ApplyModifier",
@@ -523,7 +523,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "EffectPoint"
               },
-              "FGMDINMEPHL": 104.0
+              "effectTempleteID": 104.0
             }
           ]
         },
@@ -566,7 +566,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "EffectPoint"
               },
-              "FGMDINMEPHL": 104.0
+              "effectTempleteID": 104.0
             },
             {
               "$type": "ApplyModifier",
@@ -742,7 +742,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "EffectPoint"
               },
-              "FGMDINMEPHL": 102.0
+              "effectTempleteID": 102.0
             }
           ]
         },
@@ -785,7 +785,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "EffectPoint"
               },
-              "FGMDINMEPHL": 102.0
+              "effectTempleteID": 102.0
             },
             {
               "$type": "ApplyModifier",
@@ -990,7 +990,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "EffectPoint"
               },
-              "FGMDINMEPHL": 105.0
+              "effectTempleteID": 105.0
             }
           ]
         },
@@ -1050,7 +1050,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "EffectPoint"
               },
-              "FGMDINMEPHL": 105.0
+              "effectTempleteID": 105.0
             },
             {
               "$type": "ApplyModifier",
@@ -1076,7 +1076,7 @@
                 "attachPointName": "EffectPoint",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DamageByAttackValue",
@@ -1086,7 +1086,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "elementRank": 1.5,
                   "bonusCriticalHurt": 50.0,
@@ -1173,7 +1173,7 @@
                 },
                 "attachPointName": "EffectPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1204,11 +1204,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos01",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos01",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1216,11 +1216,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_01",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos01",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos01",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1229,11 +1229,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ThunderPos01",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ThunderPos01",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "Thuner_Falling",
@@ -1241,7 +1241,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "ignoreAttackerProperty": true,
@@ -1274,11 +1274,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos02",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos02",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1286,11 +1286,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_01",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ThunderPos02",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ThunderPos02",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1299,11 +1299,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ThunderPos02",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ThunderPos02",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "Thuner_Falling",
@@ -1311,7 +1311,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "ignoreAttackerProperty": true,
@@ -1377,7 +1377,7 @@
               "target": "SelfAttackTarget",
               "key": "ThunderPos01",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 2.0,
@@ -1391,7 +1391,7 @@
               "target": "SelfAttackTarget",
               "key": "ThunderPos02",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 2.0,
@@ -1430,12 +1430,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TowerFire_01_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TowerFire_01_Bullet_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1455,7 +1455,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TowerFire_01_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -1466,7 +1466,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": "BombRadius"
+              "radius": "BombRadius"
             },
             "attackInfo": {
               "attackTag": "",
@@ -1474,7 +1474,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "elementRank": 600.0,
                 "bonusCriticalHurt": 50.0,
@@ -1521,14 +1521,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TowerWater_03_Bubble",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TowerWater_03_Bubble_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1561,7 +1561,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.0,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Water",
               "elementRank": 1.5,
               "bonusCriticalHurt": 50.0,
@@ -1602,7 +1602,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TowerWater_03_Bubble_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1623,12 +1623,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TrackingOrganBullet_01_IceBullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TowerIce_01_Bullet_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1651,7 +1651,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "DamageByAttackValue",
@@ -1662,7 +1662,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.0,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Ice",
               "bonusCriticalHurt": 50.0,
               "ignoreAttackerProperty": true,

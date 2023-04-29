@@ -200,17 +200,17 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Barbara_ExtraAttack_Pre",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Barbara_ExtraAttack_FX_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Barbara_ExtraAttack_FX_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -226,7 +226,7 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Barbara_ExtraAttack_Pre",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
@@ -234,17 +234,17 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Barbara_ExtraAttack_BS_HandR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Barbara_ExtraAttack_BS_Root_Pre",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -268,22 +268,22 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_ExtraAttack",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 1.0,
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "_ABILITY_Barbara_ExtraAttack_FX_Pos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Barbara_ExtraAttack_FX_Pos",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_ExtraAttack_BS_Root",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -299,7 +299,7 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_ExtraAttack",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -307,7 +307,7 @@
             },
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalPos",
@@ -348,7 +348,7 @@
                   "z": 5.0
                 }
               },
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "ExtraAttack",
@@ -356,7 +356,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Barbara_ExtraAttack",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default"
@@ -398,17 +398,17 @@
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Barbara_ExtraAttack_Damage_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Barbara_ExtraAttack_Damage_Pos",
+                "directionKey": ""
               },
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "ExtraAttack",
@@ -416,7 +416,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Barbara_ExtraAttack",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default"
@@ -474,7 +474,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_01",
@@ -482,7 +482,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Barbara_NormalAttack_01",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -520,14 +520,14 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_Attack_MagicHit_01",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
               "z": 5.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -557,7 +557,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_02",
@@ -565,7 +565,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Barbara_NormalAttack_02",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -603,14 +603,14 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_Attack_MagicHit_01",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
               "z": 5.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -640,7 +640,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_03",
@@ -648,7 +648,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Barbara_NormalAttack_03",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -685,14 +685,14 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_Attack_MagicHit_01",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
               "z": 5.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -711,7 +711,7 @@
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.800000011920929,
@@ -735,7 +735,7 @@
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.2000000476837158,
@@ -780,7 +780,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": "Radius"
+                  "radius": "Radius"
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_04",
@@ -788,7 +788,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Barbara_NormalAttack_04",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -820,7 +820,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_Attack_MagicHit_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -872,7 +872,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Barbara_ExpandShield"
+                  "talentParam": "Barbara_ExpandShield"
                 }
               ],
               "modifierName": "WetShiled_GetElementBall"
@@ -894,7 +894,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -904,7 +904,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -912,7 +912,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Art_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "enBreak": 40.0
@@ -1270,7 +1270,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Barbara_WetShield_HealTeammate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1311,7 +1311,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Barbara_Constellation_2"
+              "talentParam": "Barbara_Constellation_2"
             }
           ],
           "modifierName": "WetShiled_WaterAddHurtDelta_Handler"
@@ -1330,7 +1330,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "WetShiled_Stamina"
+              "talentParam": "WetShiled_Stamina"
             }
           ],
           "modifierName": "WetShiled_Stamina_Buff"
@@ -1342,7 +1342,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Barbara_Constellation_2"
+              "talentParam": "Barbara_Constellation_2"
             }
           ],
           "modifierName": "WetShiled_WaterAddHurtDelta_Handler"
@@ -1441,7 +1441,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1486,7 +1486,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Barbara_WetShield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1503,7 +1503,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_IsEnhancedShield",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "parameter": "GetElementBall",
@@ -1517,7 +1517,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_WetShield_BS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -1538,7 +1538,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_WetShield_AS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1557,7 +1557,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_WetShield_Kira",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1729,12 +1729,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Barbara_IdolHeal_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Barbara_IdolHeal_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1784,7 +1784,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Barbara_IdolHeal_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1804,7 +1804,7 @@
             {
               "$type": "IDHCAKGEMOF",
               "attackPattern": {
-                "$type": "CHEAOJDOBEB",
+                "$type": "ConfigAttackCircle",
                 "triggerType": "TriggerNoRepeat",
                 "born": {
                   "$type": "ConfigBornBySelf",
@@ -1816,7 +1816,7 @@
                 },
                 "height": 0.20000000298023224,
                 "BAPAHIOBNCL": 30.0,
-                "BMCPFKAEOJB": 1.399999976158142
+                "radius": 1.399999976158142
               }
             },
             {
@@ -1948,7 +1948,7 @@
           "target": "CurLocalAvatar",
           "RotationDampTime": true,
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_Heal_Spectator",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "isDynamicAbility": true
@@ -1976,7 +1976,7 @@
           "target": "CurLocalAvatar",
           "RotationDampTime": true,
           "healLimitedByCasterMaxHPRatio": "Eff_Barbara_Heal_Spectator_Light",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "isDynamicAbility": true
@@ -2230,7 +2230,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_BS_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2270,7 +2270,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -2278,7 +2278,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Default",
@@ -2572,7 +2572,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Self_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2610,16 +2610,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -2627,7 +2627,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -2635,7 +2635,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2672,15 +2672,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -2688,7 +2688,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -2696,7 +2696,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2734,12 +2734,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_01_Water",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2748,11 +2748,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_02_Water",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

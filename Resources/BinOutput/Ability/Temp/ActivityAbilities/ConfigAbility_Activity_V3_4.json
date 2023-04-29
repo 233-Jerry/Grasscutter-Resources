@@ -102,7 +102,7 @@
                 "shapeName": "CircleR6H6",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -144,7 +144,7 @@
                 "shapeName": "CircleR5H4",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -186,7 +186,7 @@
                 "shapeName": "CircleR6H6",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -228,7 +228,7 @@
                 "shapeName": "CircleR6H6",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -270,7 +270,7 @@
                 "shapeName": "CircleR6H6",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -312,7 +312,7 @@
                 "shapeName": "CircleR5H4",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -354,7 +354,7 @@
                 "shapeName": "CircleR5H4",
                 "centerBasedOn": "Vehicle",
                 "campTargetType": "AllExceptSelf",
-                "OGIOEHHBNMA": "Vehicle",
+                "campBasedOn": "Vehicle",
                 "OBHNBNDMPFN": 1.0
               },
               "targetPredicates": [
@@ -561,7 +561,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GlideChampCoin_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -599,7 +599,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GlideChampCoin_Hit_Super",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -678,7 +678,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_WoodenObject_Broken",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -692,7 +692,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_WoodenObject_Broken",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -715,7 +715,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPCoin_01_Large",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -734,7 +734,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GlideChampCoin_Hit_Super",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -812,7 +812,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RisingFence_02_Destroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -851,7 +851,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPNightlamp_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -875,7 +875,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPNightlamp_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValue",
@@ -918,7 +918,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPNightlamp_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -935,7 +935,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPNightlamp_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValue",
@@ -1011,7 +1011,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPNightlamp_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -1038,7 +1038,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPNightlamp_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -1053,7 +1053,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPFireworkslamp_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -1067,21 +1067,21 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.5,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "BoatRaceGear",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 9999999.0,
                     "attackType": "None",
@@ -1260,7 +1260,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fireworks_SeaLamp_Boat_Slime_Yellow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1272,7 +1272,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fireworks_SeaLamp_Boat_Fungus_Cyan",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1284,7 +1284,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fireworks_SeaLamp_Boat_Heart_Red",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1336,8 +1336,8 @@
           "onAdded": [
             {
               "$type": "DoBlinkByGlobalPos",
-              "FNMFBPGNEKD": "_Gadget_DropCoin_Pos",
-              "GPPNNKAOHCG": "",
+              "positionKey": "_Gadget_DropCoin_Pos",
+              "directionKey": "",
               "ICMPPAKCNHI": true
             }
           ]
@@ -1349,7 +1349,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GlideChampCoin_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -1419,7 +1419,7 @@
                 "$type": "ConfigBornBySelf",
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1430,14 +1430,14 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 7.0
+                  "radius": 7.0
                 },
                 "attackInfo": {
                   "attackTag": "BoatRaceGear",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 9999999.0,
                     "attackType": "None",
@@ -1497,7 +1497,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPAirdrop_Coin_01_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1528,7 +1528,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPAirdrop_BombBarrel_01_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1611,7 +1611,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BombBarrel_01_ExplodeOnWater",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireAISoundEvent"
@@ -1624,21 +1624,21 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "BoatRaceGear",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 9999999.0,
                     "attackType": "None",
@@ -1715,7 +1715,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1735,7 +1735,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPBall_02_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -1782,7 +1782,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPMaelstrom_01_Warning",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1799,7 +1799,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPMaelstrom_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1838,14 +1838,14 @@
                         },
                         "IABNJPGBAOH": true
                       },
-                      "BMCPFKAEOJB": 6.0
+                      "radius": 6.0
                     },
                     "attackInfo": {
                       "attackTag": "BoatRaceGear",
                       "attenuationTag": "",
                       "attenuationGroup": "default",
                       "attackProperty": {
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 0.0,
                         "enBreak": 0.0,
                         "attackType": "None",
@@ -1918,7 +1918,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ShipPVPMaelstrom_01_Disappear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1951,14 +1951,14 @@
                         },
                         "IABNJPGBAOH": true
                       },
-                      "BMCPFKAEOJB": 4.0
+                      "radius": 4.0
                     },
                     "attackInfo": {
                       "attackTag": "BoatRaceGear",
                       "attenuationTag": "",
                       "attenuationGroup": "default",
                       "attackProperty": {
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 0.0,
                         "enBreak": 0.0,
                         "attackType": "None",
@@ -2122,7 +2122,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "FirePoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2202,11 +2202,11 @@
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BounceBall_01_CharDisappear",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
-                        "FNMFBPGNEKD": "Activity_GadgetAB_EnterPoint",
-                        "GPPNNKAOHCG": ""
+                        "$type": "ConfigBornByGlobalValue",
+                        "positionKey": "Activity_GadgetAB_EnterPoint",
+                        "directionKey": ""
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "ClearGlobalPos",
@@ -2286,7 +2286,7 @@
               "logic": "Lesser",
               "compareType": "XYZ",
               "ratio": 5.0,
-              "FNMFBPGNEKD": "Activity_GadgetAB_GadgetPoint"
+              "positionKey": "Activity_GadgetAB_GadgetPoint"
             }
           ],
           "successActions": [
@@ -2306,7 +2306,7 @@
               "target": "Target",
               "key": "Activity_GadgetAB_EnterPoint",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             },
             {
@@ -2654,7 +2654,7 @@
                     {
                       "$type": "AttachEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BounceBall_01_CharBullet",
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     }
                   ]
                 }
@@ -2742,9 +2742,9 @@
             {
               "$type": "FixedAvatarFlashMove",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "Activity_AvatarAB_FixedPoint",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "Activity_AvatarAB_FixedPoint",
+                "directionKey": ""
               },
               "animatorStateIDs": ["ActivitySkill_CustomSkill02"]
             }
@@ -2771,14 +2771,14 @@
             {
               "$type": "FixedAvatarRushMove",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 20.0,
                   "z": 0.0
                 },
-                "FNMFBPGNEKD": "Activity_AvatarAB_FixedPoint",
-                "GPPNNKAOHCG": ""
+                "positionKey": "Activity_AvatarAB_FixedPoint",
+                "directionKey": ""
               },
               "timeRange": 1.0,
               "maxRange": 20.0,
@@ -2790,14 +2790,14 @@
             {
               "$type": "FixedAvatarFlashMove",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 20.0,
                   "z": 0.0
                 },
-                "FNMFBPGNEKD": "Activity_AvatarAB_FixedPoint",
-                "GPPNNKAOHCG": ""
+                "positionKey": "Activity_AvatarAB_FixedPoint",
+                "directionKey": ""
               },
               "animatorStateIDs": ["ActivitySkill_CustomSkill02"]
             },
@@ -2853,7 +2853,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BounceBall_01_CharAppearFireworks",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2949,7 +2949,7 @@
                     "attachPointName": "AttachPoint",
                     "ABIMPICHJNC": "Self"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -2981,7 +2981,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3008,7 +3008,7 @@
                     "attachPointName": "AttachPoint",
                     "ABIMPICHJNC": "Self"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "KillSelf",
@@ -3031,7 +3031,7 @@
                 "attachPointName": "AttachPoint",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -3042,7 +3042,7 @@
                 "attachPointName": "AttachPoint",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3079,7 +3079,7 @@
             "attachPointName": "AttachPoint",
             "ABIMPICHJNC": "Self"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3108,7 +3108,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_SumeruOpenWorldPlatform_01_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3121,7 +3121,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_SumeruOpenWorldPlatform_01_Appear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3177,7 +3177,7 @@
                     "IABNJPGBAOH": true,
                     "attachPointName": "RootNode"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ChangeGadgetState",
@@ -3213,7 +3213,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObject_ParkourSKill_Orb_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -3224,7 +3224,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObject_ParkourSKill_Orb_Diss",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -3371,7 +3371,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObject_ParkourSKill_Orb_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3384,12 +3384,12 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObject_ParkourSKill_Orb_Diss",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -3686,7 +3686,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -3744,7 +3744,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BounceBall_01_Fireworks",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

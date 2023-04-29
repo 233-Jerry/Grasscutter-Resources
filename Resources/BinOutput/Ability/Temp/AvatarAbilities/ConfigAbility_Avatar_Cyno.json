@@ -236,14 +236,14 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_ExtraAttack_Sprint",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.30000001192092896,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -255,14 +255,14 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_ExtraAttack",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.30000001192092896,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -375,10 +375,10 @@
                     "$type": "ConfigBornBySelf",
                     "HOPPHMEKHLG": {
                       "$type": "BIMJJILMODA",
-                      "GPPNNKAOHCG": "_Avatar_Cyno_Attack03_Hit"
+                      "directionKey": "_Avatar_Cyno_Attack03_Hit"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -426,7 +426,7 @@
                 "attenuationGroup": "Avatar_Pole_ExtraAttack",
                 "attackProperty": {
                   "damagePercentage": "ExtraAttack_Normal",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 25.0,
                   "overrideByWeapon": true,
                   "strikeType": "Spear",
@@ -467,7 +467,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 0.800000011920929
+                  "radius": 0.800000011920929
                 },
                 "attackInfo": {
                   "attackTag": "ExtraAttack",
@@ -475,7 +475,7 @@
                   "attenuationGroup": "Avatar_Pole_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Normal",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Spear",
@@ -583,7 +583,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Cyno_Constellation_1"
+                  "talentParam": "Avatar_Cyno_Constellation_1"
                 }
               ],
               "successActions": [
@@ -876,7 +876,7 @@
                 "attenuationGroup": "Cyno_ElementalArt_Bullet",
                 "attackProperty": {
                   "damagePercentage": "Elemental_Art_Bullet_Damage",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Slash",
@@ -909,7 +909,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -917,7 +917,7 @@
                   "attenuationGroup": "Cyno_ElementalArt_Bullet",
                   "attackProperty": {
                     "damagePercentage": "Elemental_Art_Bullet_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -965,7 +965,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Cyno_PermanentSkill_1"
+                  "talentParam": "Cyno_PermanentSkill_1"
                 }
               ],
               "modifierName": "Cyno_ElementalArt_Click_BurstMode_AddArtExtra"
@@ -976,7 +976,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Cyno_Constellation_6"
+                  "talentParam": "Avatar_Cyno_Constellation_6"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -1011,7 +1011,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Art_Extra"],
-              "MKLAMNDEDGB": "ElementalArt_BurstMode_MuyaRatio"
+              "damagePercentageRatio": "ElementalArt_BurstMode_MuyaRatio"
             }
           ]
         }
@@ -1205,7 +1205,7 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Cyno_PermanentSkill_1"
+              "talentParam": "Cyno_PermanentSkill_1"
             },
             {
               "$type": "ByTargetGlobalValue",
@@ -1225,13 +1225,13 @@
                   "z": 1.5
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1242,7 +1242,7 @@
                     }
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art_Extra",
@@ -1250,7 +1250,7 @@
                   "attenuationGroup": "Cyno_ElementalArt",
                   "attackProperty": {
                     "damagePercentage": "ElementalArt_BurstMode_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -1263,7 +1263,7 @@
                     "hitImpulseType": "LV5",
                     "overrideHitImpulse": {
                       "hitLevel": "Air",
-                      "IPHCEFBMJAJ": 0.0,
+                      "hitImpulseX": 0.0,
                       "hitImpulseY": 600.0
                     },
                     "hitHaltTime": 0.029999999329447746,
@@ -1296,13 +1296,13 @@
                   "z": 1.5
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1313,7 +1313,7 @@
                     }
                   },
                   "height": 3.5,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -1321,7 +1321,7 @@
                   "attenuationGroup": "Cyno_ElementalArt",
                   "attackProperty": {
                     "damagePercentage": "ElementalArt_BurstMode_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -1334,7 +1334,7 @@
                     "hitImpulseType": "LV5",
                     "overrideHitImpulse": {
                       "hitLevel": "Air",
-                      "IPHCEFBMJAJ": 0.0,
+                      "hitImpulseX": 0.0,
                       "hitImpulseY": 600.0
                     },
                     "hitHaltTime": 0.029999999329447746,
@@ -1367,7 +1367,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Cyno_PermanentSkill_1"
+              "talentParam": "Cyno_PermanentSkill_1"
             }
           ],
           "modifierName": "Avatar_Cyno_ElementalArt_Muya_Success_Handler"
@@ -1516,7 +1516,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -1527,7 +1527,7 @@
                       }
                     },
                     "height": 2.0,
-                    "BMCPFKAEOJB": 1.0
+                    "radius": 1.0
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -1718,12 +1718,12 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_ElementalBurst_RArm",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_ElementalBurst_Atmosphere",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetAnimatorTrigger",
@@ -1732,18 +1732,18 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_ElementalBurst_Jackal_Eye",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_ElementalBurst_Perform_AttachHand",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -1762,7 +1762,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -1770,7 +1770,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "enBreak": 400.0
               },
@@ -1779,7 +1779,7 @@
                 "hitImpulseType": "",
                 "overrideHitImpulse": {
                   "hitLevel": "Heavy",
-                  "IPHCEFBMJAJ": 600.0,
+                  "hitImpulseX": 600.0,
                   "hitImpulseY": 0.0
                 },
                 "retreatType": "ByHitDirection"
@@ -1794,11 +1794,11 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Cyno_Constellation_1"
+              "talentParam": "Avatar_Cyno_Constellation_1"
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Cyno_PermanentSkill_1"
+              "talentParam": "Cyno_PermanentSkill_1"
             }
           ],
           "successActions": [
@@ -1822,11 +1822,11 @@
           "targetPredicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Cyno_Constellation_6"
+              "talentParam": "Avatar_Cyno_Constellation_6"
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Cyno_PermanentSkill_1"
+              "talentParam": "Cyno_PermanentSkill_1"
             }
           ],
           "successActions": [
@@ -2133,12 +2133,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_ElementalBurst_Aura_BipHead",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_ElementalBurst_Aura_Root_FollowY",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2461,7 +2461,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Cyno_PermanentSkill_1"
+                  "talentParam": "Cyno_PermanentSkill_1"
                 }
               ],
               "successActions": [
@@ -2576,7 +2576,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_BurstMode_Quit",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -2693,7 +2693,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_BurstMode_Quit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -3138,7 +3138,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_ElementalArt_Blades",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3183,7 +3183,7 @@
             "attenuationGroup": "Cyno_ElementalArt_Blade",
             "attackProperty": {
               "damagePercentage": "Cyno_ElementalArt_Blade",
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Electric",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Slash",
@@ -3230,7 +3230,7 @@
             "attenuationGroup": "Cyno_ElementalArt_Blade",
             "attackProperty": {
               "damagePercentage": "Cyno_ElementalArt_Blade",
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Electric",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Slash",
@@ -3264,7 +3264,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_ElementalArt_Blades",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3309,7 +3309,7 @@
             "attenuationGroup": "Cyno_Constellation_6",
             "attackProperty": {
               "damagePercentage": "Cyno_ElementalArt_Blade",
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Electric",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Slash",
@@ -3356,7 +3356,7 @@
             "attenuationGroup": "Cyno_Constellation_6",
             "attackProperty": {
               "damagePercentage": "Cyno_ElementalArt_Blade",
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Electric",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Slash",
@@ -3484,7 +3484,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_BS_Normal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3530,7 +3530,7 @@
                           "z": 1.0
                         }
                       },
-                      "BMCPFKAEOJB": 1.0
+                      "radius": 1.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -3538,7 +3538,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Loop_BurstMode_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Electric",
                         "bonusCriticalHurt": 0.0,
                         "strikeType": "Slash",
@@ -3570,7 +3570,7 @@
                           "z": 1.0
                         }
                       },
-                      "BMCPFKAEOJB": 1.0
+                      "radius": 1.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -3578,7 +3578,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 0.0,
                         "overrideByWeapon": true,
                         "strikeType": "Slash",
@@ -3753,14 +3753,14 @@
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_FallAnthem_Self_01",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Loop_01_Normal",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -3783,14 +3783,14 @@
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_FallAnthem_Self_01",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Loop_02_Normal",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -3970,16 +3970,16 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_FallAnthem_Strike_01",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": -0.5,
@@ -3987,7 +3987,7 @@
                         }
                       },
                       "height": 2.0,
-                      "BMCPFKAEOJB": 4.0
+                      "radius": 4.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -3995,7 +3995,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Rank_1_BurstMode_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Electric",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Blunt",
@@ -4031,16 +4031,16 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_FallAnthem_Strike_02",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": -0.5,
@@ -4048,7 +4048,7 @@
                         }
                       },
                       "height": 2.0,
-                      "BMCPFKAEOJB": 6.0
+                      "radius": 6.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -4056,7 +4056,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Rank_2_BurstMode_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Electric",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Blunt",
@@ -4106,16 +4106,16 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Strike_01_Normal",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": -0.5,
@@ -4123,7 +4123,7 @@
                         }
                       },
                       "height": 2.0,
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -4131,7 +4131,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 25.0,
                         "overrideByWeapon": true,
                         "strikeType": "Blunt",
@@ -4167,16 +4167,16 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Pole_FallingAnthem_Strike_02_Normal",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": -0.5,
@@ -4184,7 +4184,7 @@
                         }
                       },
                       "height": 2.0,
-                      "BMCPFKAEOJB": 5.0
+                      "radius": 5.0
                     },
                     "attackInfo": {
                       "attackTag": "FallingAttack",
@@ -4192,7 +4192,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 25.0,
                         "overrideByWeapon": true,
                         "strikeType": "Blunt",
@@ -4438,7 +4438,7 @@
                 "attenuationGroup": "Avatar_Pole_ExtraAttack",
                 "attackProperty": {
                   "damagePercentage": "Cyno_BurstMode_ExtraAttack_Damage",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Spear",
@@ -4479,7 +4479,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 0.800000011920929
+                  "radius": 0.800000011920929
                 },
                 "attackInfo": {
                   "attackTag": "ExtraAttack",
@@ -4487,7 +4487,7 @@
                   "attenuationGroup": "Avatar_Pole_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": "Cyno_BurstMode_ExtraAttack_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Spear",
@@ -4528,42 +4528,42 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01"],
           "damagePercentage": "Attack_01_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02"],
           "damagePercentage": "Attack_02_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03A"],
           "damagePercentage": "Attack_03A_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03B"],
           "damagePercentage": "Attack_03B_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04"],
           "damagePercentage": "Attack_04_Normal",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01_BurstMode"],
           "damagePercentage": "Attack_01_BurstMode",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01_BurstMode"],
-          "MKLAMNDEDGB": 0.0,
+          "damagePercentageRatio": 0.0,
           "damageExtra": [
             "Cyno_PermanentSkill_2_Ratio_BurstModeNormalAttack",
             "FIGHT_PROP_ELEMENT_MASTERY",
@@ -4585,12 +4585,12 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02_BurstMode"],
           "damagePercentage": "Attack_02_BurstMode",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02_BurstMode"],
-          "MKLAMNDEDGB": 0.0,
+          "damagePercentageRatio": 0.0,
           "damageExtra": [
             "Cyno_PermanentSkill_2_Ratio_BurstModeNormalAttack",
             "FIGHT_PROP_ELEMENT_MASTERY",
@@ -4612,12 +4612,12 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03_BurstMode"],
           "damagePercentage": "Attack_03_BurstMode",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03_BurstMode"],
-          "MKLAMNDEDGB": 0.0,
+          "damagePercentageRatio": 0.0,
           "damageExtra": [
             "Cyno_PermanentSkill_2_Ratio_BurstModeNormalAttack",
             "FIGHT_PROP_ELEMENT_MASTERY",
@@ -4639,12 +4639,12 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04A_BurstMode"],
           "damagePercentage": "Attack_04A_BurstMode",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04A_BurstMode"],
-          "MKLAMNDEDGB": 0.0,
+          "damagePercentageRatio": 0.0,
           "damageExtra": [
             "Cyno_PermanentSkill_2_Ratio_BurstModeNormalAttack",
             "FIGHT_PROP_ELEMENT_MASTERY",
@@ -4666,12 +4666,12 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04B_BurstMode"],
           "damagePercentage": "Attack_04B_BurstMode",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04B_BurstMode"],
-          "MKLAMNDEDGB": 0.0,
+          "damagePercentageRatio": 0.0,
           "damageExtra": [
             "Cyno_PermanentSkill_2_Ratio_BurstModeNormalAttack",
             "FIGHT_PROP_ELEMENT_MASTERY",
@@ -4693,12 +4693,12 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK05_BurstMode"],
           "damagePercentage": "Attack_05_BurstMode",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK05_BurstMode"],
-          "MKLAMNDEDGB": 0.0,
+          "damagePercentageRatio": 0.0,
           "damageExtra": [
             "Cyno_PermanentSkill_2_Ratio_BurstModeNormalAttack",
             "FIGHT_PROP_ELEMENT_MASTERY",

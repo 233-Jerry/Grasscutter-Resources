@@ -29,8 +29,8 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "ratio": 0.0,
               "key": "ForlornVessel_Chargebow_WeaponTag",
@@ -78,14 +78,14 @@
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Brute_None_Shield_Defend",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 1.5,
                       "z": 1.2000000476837158
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "defendCountInterval": true
@@ -103,8 +103,8 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "ratio": 1.0,
               "key": "ForlornVessel_Chargebow_WeaponTag",
@@ -125,8 +125,8 @@
             {
               "$type": "SendEffectTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "canBeHandledOnRecover": true,
               "parameter": "ShieldDie",
@@ -326,7 +326,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Chargebow_Shield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -402,7 +402,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Chargebow_NormalAtk_Storage",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -518,8 +518,8 @@
             {
               "$type": "TriggerAbility",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "abilityName": "MonEquip_ForlornVessel_Chargebow_NormalAtk_EffectAdd"
             }
@@ -528,8 +528,8 @@
             {
               "$type": "TriggerAbility",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "abilityName": "MonEquip_ForlornVessel_Chargebow_NormalAtk_EffectRemove"
             }
@@ -540,8 +540,8 @@
         {
           "$type": "RemoveUniqueModifier",
           "otherTargets": {
-            "$type": "FHPHBMBDJAJ",
-            "KNBIINCIAMG": ["equip02"]
+            "$type": "SelectTargetsByEquipParts",
+            "equipPartNames": ["equip02"]
           },
           "modifierName": "UNIQUE_MonEquip_ForlornVessel_Chargebow_NormalAtk_Storage"
         }
@@ -556,12 +556,12 @@
         {
           "$type": "TriggerBullet",
           "otherTargets": {
-            "$type": "FHPHBMBDJAJ",
-            "KNBIINCIAMG": ["equip02"]
+            "$type": "SelectTargetsByEquipParts",
+            "equipPartNames": ["equip02"]
           },
           "bulletID": 42207021,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -613,7 +613,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 0.800000011920929
+                  "radius": 0.800000011920929
                 },
                 "attackInfo": {
                   "attackTag": "Monster_ForlornVessel_Attack",
@@ -621,7 +621,7 @@
                   "attenuationGroup": "Monster_ForlornVessel_Chargebow_NormalAtk",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -657,12 +657,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Chargebow_NormalAtk_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Chargebow_NormalAtk_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -715,7 +715,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.800000011920929
+              "radius": 0.800000011920929
             },
             "attackInfo": {
               "attackTag": "Monster_ForlornVessel_Attack",
@@ -723,7 +723,7 @@
               "attenuationGroup": "Monster_ForlornVessel_Chargebow_NormalAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -748,7 +748,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -821,7 +821,7 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -856,7 +856,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Chargebow_SpecialAtk_Launch",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAbility",
@@ -899,7 +899,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_ForlornVessel_Strong_Chargebow_SpecialAtk_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -929,7 +929,7 @@
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -942,7 +942,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -953,7 +953,7 @@
                     }
                   },
                   "height": 4.900000095367432,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "Monster_ForlornVessel_Attack",
@@ -961,7 +961,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -993,7 +993,7 @@
                 },
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -1156,8 +1156,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02"]
               },
               "modifierName": "WeaponElementFreeze"
             },
@@ -1178,8 +1178,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02"]
               },
               "modifierName": "WeaponElementPetrifaction"
             },

@@ -50,7 +50,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "Rate"
+              "damagePercentageRatio": "Rate"
             }
           ],
           "properties": {
@@ -79,7 +79,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByEntityTypes",
@@ -347,13 +347,13 @@
                       }
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "FLIPADNBJJF",
@@ -371,7 +371,7 @@
                           }
                         }
                       },
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "WeaponSkill",
@@ -379,7 +379,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "Rate",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 100.0,
                         "strikeType": "Default",
                         "enBreak": 50.0
@@ -610,13 +610,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_ExtraElementBall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "GenerateElemBall",
               "configID": 2024,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -661,7 +661,7 @@
         {
           "$type": "ModifyDamageMixin",
           "ignoreEventInfo": true,
-          "MKLAMNDEDGB": "Dmg_Rate",
+          "damagePercentageRatio": "Dmg_Rate",
           "predicates": [
             {
               "$type": "HHGDFHDCMJE",
@@ -762,14 +762,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Properties_Shield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Properties_Shield_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -814,7 +814,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -917,7 +917,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_ResetCD",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EquipAffixStart",
@@ -1179,7 +1179,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "ByEntityTypes",
@@ -1285,13 +1285,13 @@
                           "$type": "IOPNFLFHGID"
                         }
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "TriggerAttackEvent",
                       "attackEvent": {
                         "attackPattern": {
-                          "$type": "CHEAOJDOBEB",
+                          "$type": "ConfigAttackCircle",
                           "triggerType": "TriggerNoRepeat",
                           "born": {
                             "$type": "FLIPADNBJJF",
@@ -1304,7 +1304,7 @@
                               "$type": "IOPNFLFHGID"
                             }
                           },
-                          "BMCPFKAEOJB": 3.0
+                          "radius": 3.0
                         },
                         "attackInfo": {
                           "attackTag": "WeaponSkill",
@@ -1312,7 +1312,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": "D_Rate",
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "bonusCriticalHurt": 100.0,
                             "strikeType": "Default",
                             "enBreak": 100.0
@@ -1475,7 +1475,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1492,7 +1492,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1509,7 +1509,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1526,7 +1526,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack4",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1639,11 +1639,11 @@
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Blackrock1_Claymore",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1659,11 +1659,11 @@
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Blackrock2_Claymore",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1679,11 +1679,11 @@
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Blackrock3_Claymore",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1810,7 +1810,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -1838,7 +1838,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -1866,7 +1866,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -1894,7 +1894,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack4",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -1921,7 +1921,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack5",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -2189,9 +2189,9 @@
                 {
                   "$type": "CreateGadget",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_ABILITY_Weapon_Dragonfell_Pos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_ABILITY_Weapon_Dragonfell_Pos",
+                    "directionKey": ""
                   },
                   "gadgetID": 40020005,
                   "campID": 1001,
@@ -2223,7 +2223,7 @@
           "$type": "ModifyDamageMixin",
           "attackTags": ["WeaponSkill"],
           "damagePercentage": "RateToIce",
-          "MKLAMNDEDGB": 0.0,
+          "damagePercentageRatio": 0.0,
           "predicates": [
             {
               "$type": "ByEntityTypes",
@@ -2259,14 +2259,14 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Dragonfell_Gadget",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2274,7 +2274,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2285,7 +2285,7 @@
                     }
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "WeaponSkill",
@@ -2293,7 +2293,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Rate",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 20.0,
                     "attackType": "Range"
@@ -2303,7 +2303,7 @@
                     "hitImpulseType": "LV4",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 500.0,
+                      "hitImpulseX": 500.0,
                       "hitImpulseY": 0.0
                     },
                     "retreatType": "ByHitDirection",
@@ -2374,11 +2374,11 @@
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Dvalin_Claymore",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onAttackLanded": [
@@ -2519,7 +2519,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": "D_Rate",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "enBreak": 50.0
                 },
@@ -2559,7 +2559,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "D_Rate",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "enBreak": 50.0
                   },
@@ -2586,7 +2586,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Weapon_AttackWave",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2640,7 +2640,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Wolfmound_Head",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "RemoveUniqueModifier",
@@ -2877,7 +2877,7 @@
                   "$type": "FireEffect",
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Widsith_Bow_Burst",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "RemoveUniqueModifier",
@@ -2986,7 +2986,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_EnergyPoem_Stack1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2999,7 +2999,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_EnergyPoem_Stack2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3012,7 +3012,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_EnergyPoem_Stack3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3052,12 +3052,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Widsith_Common_TeamBuff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Widsith_Claymore_TeamBuff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3377,7 +3377,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Kunwu_Stack_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3388,7 +3388,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Kunwu_Stack_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3399,7 +3399,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Kunwu_Stack_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3410,7 +3410,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Kunwu_Stack_04",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3421,7 +3421,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Kunwu_Stack_05",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3590,7 +3590,7 @@
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["Elemental_Burst"],
-          "MKLAMNDEDGB": "Rate"
+          "damagePercentageRatio": "Rate"
         },
         {
           "$type": "AttachModifierToSelfGlobalValueMixin",
@@ -3660,13 +3660,13 @@
                           "$type": "IOPNFLFHGID"
                         }
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "TriggerAttackEvent",
                       "attackEvent": {
                         "attackPattern": {
-                          "$type": "CHEAOJDOBEB",
+                          "$type": "ConfigAttackCircle",
                           "triggerType": "TriggerNoRepeat",
                           "born": {
                             "$type": "FLIPADNBJJF",
@@ -3679,7 +3679,7 @@
                               "$type": "IOPNFLFHGID"
                             }
                           },
-                          "BMCPFKAEOJB": 3.0
+                          "radius": 3.0
                         },
                         "attackInfo": {
                           "attackTag": "WeaponSkill",
@@ -3687,7 +3687,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": "AOE_Rate",
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "bonusCriticalHurt": 100.0,
                             "strikeType": "Default",
                             "enBreak": 100.0
@@ -3792,7 +3792,7 @@
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["Elemental_Burst"],
-          "MKLAMNDEDGB": "Claymore_Maria_BuffValue"
+          "damagePercentageRatio": "Claymore_Maria_BuffValue"
         }
       ],
       "abilitySpecials": {
@@ -3825,7 +3825,7 @@
             "Elemental_Art_Hold",
             "Elemental_Art_Extra"
           ],
-          "MKLAMNDEDGB": "Rate"
+          "damagePercentageRatio": "Rate"
         }
       ],
       "abilitySpecials": {
@@ -3933,7 +3933,7 @@
             "NormalAttack_05",
             "NormalAttack_06"
           ],
-          "MKLAMNDEDGB": 0.0,
+          "damagePercentageRatio": 0.0,
           "damageExtra": ["DefToExtraRatio", "FIGHT_PROP_CUR_DEFENSE", "MUL"],
           "predicates": [
             {
@@ -3963,7 +3963,7 @@
             "NormalAttack_05",
             "NormalAttack_06"
           ],
-          "MKLAMNDEDGB": 0.0,
+          "damagePercentageRatio": 0.0,
           "damageExtra": "MaxExtraDamage",
           "predicates": [
             {
@@ -4180,7 +4180,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_ArakalariBuff_Ball_1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4207,7 +4207,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_ArakalariBuff_Ball_1_Absorb",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4222,7 +4222,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Weapon_ArakalariBuff_Ball_1_Dissipate",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onFieldEnter": [
@@ -4715,7 +4715,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack1_Deshret",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4728,7 +4728,7 @@
               "$type": "AttachEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Attack_Stack2_Deshret",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

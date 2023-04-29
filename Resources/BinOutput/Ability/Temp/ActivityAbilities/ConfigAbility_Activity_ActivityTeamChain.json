@@ -162,9 +162,9 @@
                   "target": "Other",
                   "healLimitedByCasterMaxHPRatio": "Eff_EnergyDisk_ElementalBurst_Wave_R40",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
@@ -177,14 +177,14 @@
                       "born": {
                         "$type": "FLIPADNBJJF"
                       },
-                      "BMCPFKAEOJB": 4.0
+                      "radius": 4.0
                     },
                     "attackInfo": {
                       "attackTag": "",
                       "attenuationTag": "",
                       "attenuationGroup": "default",
                       "attackProperty": {
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 0.0,
                         "ignoreAttackerProperty": true,
                         "enBreak": 25.0,
@@ -324,7 +324,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "DamageUpRatio"
+              "damagePercentageRatio": "DamageUpRatio"
             }
           ]
         },
@@ -426,7 +426,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "damagePercentageRatio",
+              "damagePercentageRatio": "damagePercentageRatio",
               "predicates": [
                 {
                   "$type": "KPIBLFBHELB",
@@ -463,7 +463,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "ElementalBurst_Rate"
+              "damagePercentageRatio": "ElementalBurst_Rate"
             }
           ],
           "properties": {
@@ -638,7 +638,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "NormalAttackRate"
+              "damagePercentageRatio": "NormalAttackRate"
             },
             {
               "$type": "ModifyDamageMixin",
@@ -647,7 +647,7 @@
                 "Elemental_Art_Hold",
                 "Elemental_Art_Extra"
               ],
-              "MKLAMNDEDGB": "ElementalArtRate"
+              "damagePercentageRatio": "ElementalArtRate"
             }
           ]
         }
@@ -678,7 +678,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["FallingAttack"],
-              "MKLAMNDEDGB": "FallingDamageUp"
+              "damagePercentageRatio": "FallingDamageUp"
             }
           ],
           "onAttackLanded": [
@@ -819,7 +819,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "DamageUpRatio"
+              "damagePercentageRatio": "DamageUpRatio"
             }
           ]
         }
@@ -859,7 +859,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "CriticalUpValue"
             }
           ],
@@ -901,7 +901,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "Rate"
+              "damagePercentageRatio": "Rate"
             }
           ]
         }
@@ -1015,7 +1015,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "Rate"
+              "damagePercentageRatio": "Rate"
             }
           ]
         }

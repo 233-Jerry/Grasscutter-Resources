@@ -175,12 +175,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_Blade_DisappearL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_Blade_DisappearR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -232,7 +232,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_DualBlade_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -251,7 +251,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_DualBlade_Weapon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -276,7 +276,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_Blade_Weapon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -523,7 +523,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_ThunderClap",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -538,7 +538,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_ThunderClap_Remove",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -617,7 +617,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_ThunderClap_Explosion",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "DamageByAttackValue",
@@ -627,7 +627,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 1.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 0.0,
                       "strikeType": "Default",
@@ -1024,12 +1024,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_ChangePosition",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_ChangePositionBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -1055,7 +1055,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_ChangePositionAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableHitBoxByName",
@@ -1283,7 +1283,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_Blade_Defend",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetPoseBool",
@@ -1295,7 +1295,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_Blade_Defend_Broken",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetPoseBool",
@@ -1313,7 +1313,7 @@
                   "$type": "IHINHODOMIN"
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1434,7 +1434,7 @@
                 }
               ],
               "toPos": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             }
           ]
@@ -1448,7 +1448,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_Blade_Recover",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -1456,7 +1456,7 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -1464,7 +1464,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 0.0,
                 "strikeType": "Blunt",
@@ -1548,12 +1548,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_RushMove",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_RushMoveBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -1579,7 +1579,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_RushMoveAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableHitBoxByName",
@@ -1655,12 +1655,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_RushMove",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_RushMoveBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -1686,7 +1686,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_RushMoveAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableHitBoxByName",
@@ -1830,17 +1830,17 @@
         {
           "$type": "TurnDirectionToPos",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_TARTAGLIA_EVILEYE_STRIKEATTACK_POS",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_TARTAGLIA_EVILEYE_STRIKEATTACK_POS",
+            "directionKey": ""
           }
         },
         {
           "$type": "FixedMonsterRushMove",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_TARTAGLIA_EVILEYE_STRIKEATTACK_POS",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_TARTAGLIA_EVILEYE_STRIKEATTACK_POS",
+            "directionKey": ""
           },
           "timeRange": 0.20000000298023224,
           "animatorStateIDs": ["StrikeAttack"],
@@ -1896,7 +1896,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_DualBlade_StrikeAttack",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1933,7 +1933,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.375,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Electric",
               "bonusCriticalHurt": 0.0,
               "strikeType": "Default",
@@ -1994,7 +1994,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2002,7 +2002,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 5000.0
@@ -2043,12 +2043,12 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "WeaponR"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_DualBlade_Hiraishin",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -2075,7 +2075,7 @@
               ],
               "key": "_MONSTER_TARTAGLIA_EVILEYE_HIRAISHIN_POS",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true
               },
               "setTarget": false
@@ -2119,12 +2119,12 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_DualBlade_HiraishinAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_MONSTER_TARTAGLIA_EVILEYE_HIRAISHIN_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_MONSTER_TARTAGLIA_EVILEYE_HIRAISHIN_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2135,7 +2135,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_DualBlade_HiraishinAlert_Follow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2156,7 +2156,7 @@
               "target": "Applier",
               "key": "_MONSTER_TARTAGLIA_EVILEYE_HIRAISHIN_POS",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true
               },
               "setTarget": false
@@ -2177,7 +2177,7 @@
           ],
           "key": "_MONSTER_TARTAGLIA_EVILEYE_HIRAISHIN_POS",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "DAPKLNIFPID": true
           },
           "setTarget": false
@@ -2185,9 +2185,9 @@
         {
           "$type": "TryFindBlinkPointByBorn",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_TARTAGLIA_EVILEYE_HIRAISHIN_POS",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_TARTAGLIA_EVILEYE_HIRAISHIN_POS",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 2.5
@@ -2202,7 +2202,7 @@
             "$type": "ConfigBornBySelf",
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2229,7 +2229,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Tartaglia_EvilEye_DualBlade_HiraishinAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2269,7 +2269,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 1.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Electric",
                       "bonusCriticalHurt": 0.0,
                       "strikeType": "Default",

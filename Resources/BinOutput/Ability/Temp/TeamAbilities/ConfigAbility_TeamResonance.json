@@ -90,7 +90,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "TeamResonance_Ice_Lv2_BonusCritical",
               "predicates": [
                 {
@@ -217,7 +217,7 @@
                   ],
                   "configID": 2020,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -319,7 +319,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "TeamResonance_Rock_Lv2_DamagePercentageRatio",
+              "damagePercentageRatio": "TeamResonance_Rock_Lv2_DamagePercentageRatio",
               "predicates": [
                 {
                   "$type": "HHGDFHDCMJE",
@@ -641,13 +641,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_ExtraElementBall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "GenerateElemBall",
               "configID": 2020,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -671,7 +671,7 @@
           "modifierMixins": [
             {
               "$type": "ModifyDamageMixin",
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": 0.10000000149011612,
               "predicates": [
                 {
@@ -715,7 +715,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.05000000074505806,
+              "damagePercentageRatio": 0.05000000074505806,
               "predicates": [
                 {
                   "$type": "HHGDFHDCMJE",

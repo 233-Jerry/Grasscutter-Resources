@@ -16,7 +16,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -26,7 +26,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -89,7 +89,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrappleHook_01_Appear",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -466,7 +466,7 @@
             {
               "$type": "ThrowGrapplingHookMixin",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Grapple_01_Line",
-              "FNMFBPGNEKD": "_GrapplingHook_TargetPos",
+              "positionKey": "_GrapplingHook_TargetPos",
               "AFCGIBECIMO": [
                 {
                   "$type": "SetGlobalValue",
@@ -551,7 +551,7 @@
                 }
               ],
               "toPos": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -559,10 +559,10 @@
                 },
                 "HOPPHMEKHLG": {
                   "$type": "BIMJJILMODA",
-                  "GPPNNKAOHCG": "_GrapplingHook_TargetDir"
+                  "directionKey": "_GrapplingHook_TargetDir"
                 },
-                "FNMFBPGNEKD": "_GrapplingHook_TargetPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_GrapplingHook_TargetPos",
+                "directionKey": ""
               },
               "MMINCHGDKOD": 15.0,
               "MLLLIOLDKMP": 10.0,
@@ -652,7 +652,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Grapple_01_MoveIn",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -661,11 +661,11 @@
                 "$type": "ConfigBornBySelf",
                 "HOPPHMEKHLG": {
                   "$type": "BIMJJILMODA",
-                  "GPPNNKAOHCG": "_GrapplingHook_TargetDir"
+                  "directionKey": "_GrapplingHook_TargetDir"
                 },
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveUniqueModifier",
@@ -690,7 +690,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Grapple_01_MoveOut",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -841,11 +841,11 @@
               "muteRemoteAction": true,
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GrappleHook_01_Active",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_GrapplingHook_TargetPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_GrapplingHook_TargetPos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -891,7 +891,7 @@
               "target": "Target",
               "key": "_GrapplingHook_TargetPos",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "setTarget": false
             },
@@ -971,7 +971,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -992,7 +992,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1017,7 +1017,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1079,7 +1079,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_MonsterPowerUp_Wave",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",

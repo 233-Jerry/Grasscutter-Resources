@@ -1239,22 +1239,22 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_WeaknessWingL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_WeaknessWingR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_WeaknessHead",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_WeaknessChest",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2161,7 +2161,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_Weak_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2437,17 +2437,17 @@
             "DAPKLNIFPID": true,
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_Launch_WingL",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_Launch_WingR",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2465,12 +2465,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_WingL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_WingR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2541,7 +2541,7 @@
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetPoseInt",
@@ -2613,12 +2613,12 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_Land_WingL",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_Land_WingR",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2659,7 +2659,7 @@
           "$type": "SetGlobalPos",
           "key": "InitialPos",
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           }
         },
         {
@@ -3336,7 +3336,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -3347,7 +3347,7 @@
                 }
               },
               "height": 4.5,
-              "BMCPFKAEOJB": 6.0
+              "radius": 6.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -3355,7 +3355,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 0.0,
                 "strikeType": "Blunt",
                 "enBreak": 10000.0,
@@ -3366,7 +3366,7 @@
                 "hitImpulseType": "LV4",
                 "overrideHitImpulse": {
                   "hitLevel": "Heavy",
-                  "IPHCEFBMJAJ": 900.0,
+                  "hitImpulseX": 900.0,
                   "hitImpulseY": 100.0
                 },
                 "canBeDefenceHalt": true,
@@ -3830,12 +3830,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_WingL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_WingR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -4099,7 +4099,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -4244,7 +4244,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ElementAtk_AS_Chest",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -4390,7 +4390,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4398,7 +4398,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
                 "enBreak": 40.0
@@ -4437,7 +4437,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4445,7 +4445,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -4485,7 +4485,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4493,7 +4493,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -4533,7 +4533,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4541,7 +4541,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -4581,7 +4581,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4589,7 +4589,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -4629,7 +4629,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4637,7 +4637,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -4677,7 +4677,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4685,7 +4685,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -4725,7 +4725,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4733,7 +4733,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -4773,7 +4773,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4781,7 +4781,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
                 "enBreak": 40.0
@@ -4820,7 +4820,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4828,7 +4828,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -4868,7 +4868,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4876,7 +4876,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -4916,7 +4916,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4924,7 +4924,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -4964,7 +4964,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -4972,7 +4972,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -5012,7 +5012,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -5020,7 +5020,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -5060,7 +5060,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -5068,7 +5068,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -5108,7 +5108,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 5.099999904632568
+              "radius": 5.099999904632568
             },
             "attackInfo": {
               "attackTag": "",
@@ -5116,7 +5116,7 @@
               "attenuationGroup": "Fafnir_ElementAtk",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -5165,7 +5165,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "WingL"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -5175,7 +5175,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "WingR"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -5254,7 +5254,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -5262,7 +5262,7 @@
               "attenuationGroup": "Fafnir_Air_WingAtk",
               "attackProperty": {
                 "damagePercentage": 0.6000000238418579,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
                 "enBreak": 50.0
@@ -5324,7 +5324,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicDrone_AimAtk_Alert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -5361,7 +5361,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "WingL"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -5371,7 +5371,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "WingR"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             }
           ]
@@ -5451,7 +5451,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.2999999523162842
+              "radius": 1.2999999523162842
             },
             "attackInfo": {
               "attackTag": "",
@@ -5459,7 +5459,7 @@
               "attenuationGroup": "Fafnir_Air_ChestAtk",
               "attackProperty": {
                 "damagePercentage": 0.800000011920929,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
                 "enBreak": 20.0
@@ -5498,7 +5498,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.2999999523162842
+              "radius": 1.2999999523162842
             },
             "attackInfo": {
               "attackTag": "",
@@ -5506,7 +5506,7 @@
               "attenuationGroup": "Fafnir_Air_ChestAtk",
               "attackProperty": {
                 "damagePercentage": 0.800000011920929,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
                 "enBreak": 20.0
@@ -5612,12 +5612,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ChargeAtk_WingL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ChargeAtk_WingR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5755,7 +5755,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ChargeAtk_Air_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5819,7 +5819,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -5827,7 +5827,7 @@
               "attenuationGroup": "Fafnir_Air_ChargeAtk",
               "attackProperty": {
                 "damagePercentage": 0.6000000238418579,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
                 "enBreak": 150.0
@@ -5837,7 +5837,7 @@
                 "hitImpulseType": "LV4",
                 "overrideHitImpulse": {
                   "hitLevel": "Heavy",
-                  "IPHCEFBMJAJ": 1200.0,
+                  "hitImpulseX": 1200.0,
                   "hitImpulseY": 300.0
                 },
                 "hitHaltTimeScale": 0.009999999776482582
@@ -6084,12 +6084,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ChargeAtk_WingL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ChargeAtk_WingR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -6214,7 +6214,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ChargeAtk_Ground_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6278,7 +6278,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -6286,7 +6286,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.75,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
                 "enBreak": 150.0
@@ -6296,7 +6296,7 @@
                 "hitImpulseType": "LV4",
                 "overrideHitImpulse": {
                   "hitLevel": "Heavy",
-                  "IPHCEFBMJAJ": 1200.0,
+                  "hitImpulseX": 1200.0,
                   "hitImpulseY": 300.0
                 },
                 "hitHaltTimeScale": 0.009999999776482582
@@ -6474,12 +6474,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ChargeAtk_WingL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Gargoyle_Fafnir_ChargeAtk_WingR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

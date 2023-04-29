@@ -146,7 +146,7 @@
             }
           ],
           "toPos": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -181,7 +181,7 @@
             }
           ],
           "toPos": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -240,7 +240,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ActCameraShake",
@@ -283,7 +283,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicInsecta_ChargeAtk",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -344,7 +344,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicInsecta_ChargeAtk_Beam",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -365,7 +365,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Apparatus_Enigma_PowerAtk",
@@ -373,7 +373,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.26600000262260437,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0
               },
               "hitPattern": {
@@ -392,7 +392,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -453,7 +453,7 @@
                     "$type": "ConfigBornByAttachPoint",
                     "attachPointName": "LeftHand"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
@@ -470,7 +470,7 @@
                     "$type": "ConfigBornByAttachPoint",
                     "attachPointName": "RightHand"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "defendCountInterval": true
@@ -480,7 +480,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicInsecta_Shield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -736,7 +736,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RightFrontStep"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -753,7 +753,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "LeftFrontStep"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -770,7 +770,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RightBackStep"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -787,7 +787,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "LeftBackStep"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

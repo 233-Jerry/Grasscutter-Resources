@@ -74,7 +74,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "gadgetID": 70690005
             },
@@ -168,7 +168,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "gadgetID": 70690005
             },
@@ -262,7 +262,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "gadgetID": 70690005
             },
@@ -356,7 +356,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "gadgetID": 70690005
             },
@@ -450,7 +450,7 @@
                 }
               ],
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "gadgetID": 70690005
             },
@@ -545,7 +545,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -556,7 +556,7 @@
                         }
                       },
                       "height": 20.0,
-                      "BMCPFKAEOJB": 3.0,
+                      "radius": 3.0,
                       "innerRadius": 2.200000047683716
                     },
                     "attackInfo": {
@@ -565,7 +565,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Wind",
                         "bonusCriticalHurt": 20.0,
                         "strikeType": "Pierce",
@@ -577,7 +577,7 @@
                         "hitImpulseType": "LV4",
                         "overrideHitImpulse": {
                           "hitLevel": "Heavy",
-                          "IPHCEFBMJAJ": 1000.0,
+                          "hitImpulseX": 1000.0,
                           "hitImpulseY": 0.0
                         },
                         "retreatType": "ByHitDirection",
@@ -649,7 +649,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_WindTube_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -751,7 +751,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -762,7 +762,7 @@
                         }
                       },
                       "height": 6.0,
-                      "BMCPFKAEOJB": 3.0,
+                      "radius": 3.0,
                       "innerRadius": 2.200000047683716
                     },
                     "attackInfo": {
@@ -771,7 +771,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Wind",
                         "bonusCriticalHurt": 20.0,
                         "strikeType": "Pierce",
@@ -783,7 +783,7 @@
                         "hitImpulseType": "LV4",
                         "overrideHitImpulse": {
                           "hitLevel": "Heavy",
-                          "IPHCEFBMJAJ": 1000.0,
+                          "hitImpulseX": 1000.0,
                           "hitImpulseY": 0.0
                         },
                         "retreatType": "ByHitDirection",
@@ -816,7 +816,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_WindTube_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -918,7 +918,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -929,7 +929,7 @@
                         }
                       },
                       "height": 3.5,
-                      "BMCPFKAEOJB": 3.0,
+                      "radius": 3.0,
                       "innerRadius": 2.200000047683716
                     },
                     "attackInfo": {
@@ -938,7 +938,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Wind",
                         "bonusCriticalHurt": 20.0,
                         "strikeType": "Pierce",
@@ -950,7 +950,7 @@
                         "hitImpulseType": "LV4",
                         "overrideHitImpulse": {
                           "hitLevel": "Heavy",
-                          "IPHCEFBMJAJ": 1000.0,
+                          "hitImpulseX": 1000.0,
                           "hitImpulseY": 0.0
                         },
                         "retreatType": "ByHitDirection",
@@ -983,7 +983,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_WindTube_03",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1085,7 +1085,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -1096,7 +1096,7 @@
                         }
                       },
                       "height": 3.5,
-                      "BMCPFKAEOJB": 3.0,
+                      "radius": 3.0,
                       "innerRadius": 2.200000047683716
                     },
                     "attackInfo": {
@@ -1105,7 +1105,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Wind",
                         "bonusCriticalHurt": 20.0,
                         "strikeType": "Pierce",
@@ -1117,7 +1117,7 @@
                         "hitImpulseType": "LV4",
                         "overrideHitImpulse": {
                           "hitLevel": "Heavy",
-                          "IPHCEFBMJAJ": 1000.0,
+                          "hitImpulseX": 1000.0,
                           "hitImpulseY": 0.0
                         },
                         "retreatType": "ByHitDirection",
@@ -1150,7 +1150,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_WindTube_03_Follow",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1213,7 +1213,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -1224,7 +1224,7 @@
                         }
                       },
                       "height": 20.0,
-                      "BMCPFKAEOJB": 5.0,
+                      "radius": 5.0,
                       "innerRadius": 4.0
                     },
                     "attackInfo": {
@@ -1233,7 +1233,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Wind",
                         "bonusCriticalHurt": 20.0,
                         "strikeType": "Pierce",
@@ -1245,7 +1245,7 @@
                         "hitImpulseType": "LV4",
                         "overrideHitImpulse": {
                           "hitLevel": "Heavy",
-                          "IPHCEFBMJAJ": 1000.0,
+                          "hitImpulseX": 1000.0,
                           "hitImpulseY": 0.0
                         },
                         "retreatType": "ByHitDirection",
@@ -1317,7 +1317,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_WindTube_04",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1368,7 +1368,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -1376,7 +1376,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 10.0,
                 "strikeType": "Pierce",
@@ -1461,7 +1461,7 @@
               "$type": "TriggerBullet",
               "bulletID": 70630001,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "HOPPHMEKHLG": {
                   "$type": "IOPNFLFHGID"
                 }
@@ -1473,7 +1473,7 @@
               "$type": "TriggerBullet",
               "bulletID": 70630001,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "HOPPHMEKHLG": {
                   "$type": "IOPNFLFHGID"
                 }
@@ -1549,7 +1549,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 40.0,
                   "damageExtra": 100.0
                 },
@@ -1557,7 +1557,7 @@
                   "onHitEffectName": " ",
                   "hitImpulseType": "LV0",
                   "overrideHitImpulse": {
-                    "IPHCEFBMJAJ": 0.0,
+                    "hitImpulseX": 0.0,
                     "hitImpulseY": 420.0
                   },
                   "hitHaltTimeScale": 0.009999999776482582
@@ -1578,7 +1578,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_DragonNest_Tornado_Bullet_SlowDown",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -1643,7 +1643,7 @@
               ],
               "targetType": "All",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "enviroWindStrength": 2.0,
               "enviroWindRadius": 50.0
@@ -1806,7 +1806,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR35H40",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "PLJPAAFMNAD": 2.0,
               "LNPFPGALPJH": 0.0,
@@ -1830,7 +1830,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "RectW5L5",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "PLJPAAFMNAD": 3.0,
               "LNPFPGALPJH": 0.0,
@@ -1848,7 +1848,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR20H20",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "PLJPAAFMNAD": -10.0,
               "LNPFPGALPJH": 0.0,
@@ -2087,7 +2087,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2145,7 +2145,7 @@
                       "target": "CurLocalAvatar",
                       "key": "PlayerPos",
                       "born": {
-                        "$type": "GJGFFJAGIDF"
+                        "$type": "ConfigBornByTarget"
                       },
                       "setTarget": false
                     },
@@ -2158,11 +2158,11 @@
                           "triggerType": "TriggerNoRepeat",
                           "LHECOGDLBCO": true,
                           "born": {
-                            "$type": "FNJGDOEMIIB",
-                            "FNMFBPGNEKD": "PlayerPos",
-                            "GPPNNKAOHCG": ""
+                            "$type": "ConfigBornByGlobalValue",
+                            "positionKey": "PlayerPos",
+                            "directionKey": ""
                           },
-                          "BMCPFKAEOJB": 1.0
+                          "radius": 1.0
                         },
                         "attackInfo": {
                           "attackTag": "",
@@ -2170,7 +2170,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": 0.5,
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Wind",
                             "bonusCriticalHurt": 100.0,
                             "strikeType": "Pierce",
@@ -2181,7 +2181,7 @@
                             "hitImpulseType": "LV4",
                             "overrideHitImpulse": {
                               "hitLevel": "Heavy",
-                              "IPHCEFBMJAJ": 2000.0,
+                              "hitImpulseX": 2000.0,
                               "hitImpulseY": 300.0
                             },
                             "hitHaltTimeScale": 0.05000000074505806
@@ -2214,7 +2214,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2332,7 +2332,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_SeedWind_Hint",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2369,7 +2369,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_WindFragment",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2407,7 +2407,7 @@
               "$type": "FireEffect",
               "target": "Target",
               "healLimitedByCasterMaxHPRatio": "Eff_Element_WindFragment_Absorb",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -2507,14 +2507,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed_Distroy",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2571,7 +2571,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Element_WindFragment_Absorb",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "Predicated",
@@ -2588,7 +2588,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dvalin_S01_WindSlime_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -2678,7 +2678,7 @@
                 },
                 "attachPointName": "bornPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2718,7 +2718,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed_Pre",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2860,7 +2860,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_WindSeed_Around_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2871,7 +2871,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_WindSeed_Around_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2882,7 +2882,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_WindSeed_Around_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2901,7 +2901,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed_Merge",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3100,7 +3100,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -3135,7 +3135,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed_Activating",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -3213,12 +3213,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed_Activated",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "PushPos",
               "posType": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             },
             {
@@ -3235,7 +3235,7 @@
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
@@ -3243,8 +3243,8 @@
                     "y": -15.0
                   }
                 },
-                "FNMFBPGNEKD": "CENTER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "CENTER_POS",
+                "directionKey": ""
               },
               "gadgetID": 70900321,
               "campTargetType": "All"
@@ -3259,7 +3259,7 @@
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
@@ -3267,8 +3267,8 @@
                     "y": -8.0
                   }
                 },
-                "FNMFBPGNEKD": "CENTER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "CENTER_POS",
+                "directionKey": ""
               },
               "gadgetID": 70900321,
               "campTargetType": "All"
@@ -3284,15 +3284,15 @@
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": -90.0
                   }
                 },
-                "FNMFBPGNEKD": "CENTER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "CENTER_POS",
+                "directionKey": ""
               },
               "gadgetID": 70900321,
               "campTargetType": "All"
@@ -3322,7 +3322,7 @@
             {
               "$type": "PushPos",
               "posType": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             },
             {
@@ -3366,7 +3366,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -3401,7 +3401,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed_Activating",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -3479,12 +3479,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_WindSeed_Activated",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "PushPos",
               "posType": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             },
             {
@@ -3501,7 +3501,7 @@
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
@@ -3509,8 +3509,8 @@
                     "y": -15.0
                   }
                 },
-                "FNMFBPGNEKD": "CENTER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "CENTER_POS",
+                "directionKey": ""
               },
               "gadgetID": 70900321,
               "campTargetType": "All"
@@ -3525,7 +3525,7 @@
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
@@ -3533,8 +3533,8 @@
                     "y": -8.0
                   }
                 },
-                "FNMFBPGNEKD": "CENTER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "CENTER_POS",
+                "directionKey": ""
               },
               "gadgetID": 70900321,
               "campTargetType": "All"
@@ -3550,15 +3550,15 @@
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": -90.0
                   }
                 },
-                "FNMFBPGNEKD": "CENTER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "CENTER_POS",
+                "directionKey": ""
               },
               "gadgetID": 70900321,
               "campTargetType": "All"
@@ -3588,7 +3588,7 @@
             {
               "$type": "PushPos",
               "posType": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             },
             {
@@ -3636,7 +3636,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR5",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "PLJPAAFMNAD": -30.0,
               "LNPFPGALPJH": 1.5,
@@ -3691,7 +3691,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GlideChampNegField_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3710,7 +3710,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR3",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "PLJPAAFMNAD": 10.0,
               "LNPFPGALPJH": 3.0,

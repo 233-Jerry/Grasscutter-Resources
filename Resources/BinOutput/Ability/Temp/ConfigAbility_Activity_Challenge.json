@@ -41,7 +41,7 @@
                   "$type": "CreateGadget",
                   "target": "CurLocalAvatar",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
                   "gadgetID": 44000007,
                   "campID": 1001,
@@ -115,9 +115,9 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_Stay",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -125,9 +125,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_01",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -139,14 +139,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "ignoreAttackerProperty": true,
                     "damageExtra": ["Damage", "DamageSystemValue", "MUL"]
@@ -196,7 +196,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["FallingAttack"],
-              "MKLAMNDEDGB": "Damage"
+              "damagePercentageRatio": "Damage"
             },
             {
               "$type": "AttachToStateIDMixin",
@@ -391,7 +391,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "Damage"
+              "damagePercentageRatio": "Damage"
             }
           ]
         }
@@ -436,17 +436,17 @@
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_01",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 1.0,
                       "z": 0.0
                     },
                     "DAPKLNIFPID": true,
-                    "FNMFBPGNEKD": "_ActivityAbility_Challenge_AreaAttackOnEnemyKilled_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ActivityAbility_Challenge_AreaAttackOnEnemyKilled_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAttackEvent",
@@ -456,24 +456,24 @@
                       "$type": "ConfigAttackSphere",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "offset": {
                           "x": 0.0,
                           "y": 1.0,
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "FNMFBPGNEKD": "_ActivityAbility_Challenge_AreaAttackOnEnemyKilled_POS",
-                        "GPPNNKAOHCG": ""
+                        "positionKey": "_ActivityAbility_Challenge_AreaAttackOnEnemyKilled_POS",
+                        "directionKey": ""
                       },
-                      "BMCPFKAEOJB": 4.0
+                      "radius": 4.0
                     },
                     "attackInfo": {
                       "attackTag": "",
                       "attenuationTag": "",
                       "attenuationGroup": "default",
                       "attackProperty": {
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 100.0,
                         "ignoreAttackerProperty": true,
                         "damageExtra": ["Damage", "DamageSystemValue", "MUL"]
@@ -719,7 +719,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["FallingAttack"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 "Value_Base",
                 "Value_Up",
                 "Value_CurCount",
@@ -884,7 +884,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ActivityAbility_Challenge_Frozen_DoAttack",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThan"
                 }
               ],
@@ -899,7 +899,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ActivityAbility_Challenge_Frozen_DoAttack",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThan"
                 }
               ],
@@ -915,26 +915,26 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "target": "Applier",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -1238,7 +1238,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "ActivityAbility_Challenge_LowHp_AreaAttack_DoAttack",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThan"
                 }
               ],
@@ -1252,7 +1252,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "ActivityAbility_Challenge_LowHp_AreaAttack_DoAttack",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThan"
                 }
               ],
@@ -1299,7 +1299,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1317,14 +1317,14 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -1470,17 +1470,17 @@
                           "RotationDampTime": true,
                           "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_01",
                           "born": {
-                            "$type": "FNJGDOEMIIB",
+                            "$type": "ConfigBornByGlobalValue",
                             "offset": {
                               "x": 0.0,
                               "y": 1.0,
                               "z": 0.0
                             },
                             "DAPKLNIFPID": true,
-                            "FNMFBPGNEKD": "_ActivityAbility_Challenge_ExtraAttackOnEnemyKilled_POS",
-                            "GPPNNKAOHCG": ""
+                            "positionKey": "_ActivityAbility_Challenge_ExtraAttackOnEnemyKilled_POS",
+                            "directionKey": ""
                           },
-                          "FGMDINMEPHL": -1.0
+                          "effectTempleteID": -1.0
                         },
                         {
                           "$type": "TriggerAttackEvent",
@@ -1491,24 +1491,24 @@
                               "$type": "ConfigAttackSphere",
                               "triggerType": "TriggerNoRepeat",
                               "born": {
-                                "$type": "FNJGDOEMIIB",
+                                "$type": "ConfigBornByGlobalValue",
                                 "offset": {
                                   "x": 0.0,
                                   "y": 1.0,
                                   "z": 0.0
                                 },
                                 "DAPKLNIFPID": true,
-                                "FNMFBPGNEKD": "_ActivityAbility_Challenge_ExtraAttackOnEnemyKilled_POS",
-                                "GPPNNKAOHCG": ""
+                                "positionKey": "_ActivityAbility_Challenge_ExtraAttackOnEnemyKilled_POS",
+                                "directionKey": ""
                               },
-                              "BMCPFKAEOJB": 5.0
+                              "radius": 5.0
                             },
                             "attackInfo": {
                               "attackTag": "",
                               "attenuationTag": "",
                               "attenuationGroup": "default",
                               "attackProperty": {
-                                "MKLAMNDEDGB": 0.0,
+                                "damagePercentageRatio": 0.0,
                                 "bonusCriticalHurt": 100.0,
                                 "ignoreAttackerProperty": true,
                                 "damageExtra": [
@@ -1650,7 +1650,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": ["Value_CurBuffCount", "Value_DamageUp", "MUL"],
+              "damagePercentageRatio": ["Value_CurBuffCount", "Value_DamageUp", "MUL"],
               "predicates": [
                 {
                   "$type": "ByEntityTypes",

@@ -549,9 +549,9 @@
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "Eldritch_SkillPosition_LeftFar",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "Eldritch_SkillPosition_LeftFar",
+                "directionKey": ""
               },
               "hitSceneTest": false,
               "limitY": 30.0
@@ -567,9 +567,9 @@
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "Eldritch_SkillPosition_RightFar",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "Eldritch_SkillPosition_RightFar",
+                "directionKey": ""
               },
               "hitSceneTest": false,
               "limitY": 30.0
@@ -584,9 +584,9 @@
             {
               "$type": "TurnDirectionToPos",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_Eldritch_Minor_CenterPosition",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_Eldritch_Minor_CenterPosition",
+                "directionKey": ""
               }
             }
           ]
@@ -694,9 +694,9 @@
                 {
                   "$type": "TryFindBlinkPointByBorn",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "Eldritch_SkillPosition_MidFar",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "Eldritch_SkillPosition_MidFar",
+                    "directionKey": ""
                   },
                   "hitSceneTest": false,
                   "limitY": 30.0
@@ -709,9 +709,9 @@
                 {
                   "$type": "TryFindBlinkPointByBorn",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_MONSTER_Eldritch_Minor_InitialPosition",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_MONSTER_Eldritch_Minor_InitialPosition",
+                    "directionKey": ""
                   },
                   "hitSceneTest": false,
                   "limitY": 30.0
@@ -726,7 +726,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_MovingAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetPoseBool",
@@ -807,9 +807,9 @@
             {
               "$type": "TurnDirectionToPos",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_Eldritch_Minor_CenterPosition",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_Eldritch_Minor_CenterPosition",
+                "directionKey": ""
               }
             },
             {
@@ -1274,7 +1274,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Standby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1302,7 +1302,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Moving",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1398,7 +1398,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_LimboTrigger",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorTrigger",
@@ -1770,7 +1770,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "SGV_Mini_Osial",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "luaCallType": "FromGroup",
@@ -3196,7 +3196,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_MovingAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetPoseBool",
@@ -3216,9 +3216,9 @@
             {
               "$type": "TurnDirectionToPos",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_Eldritch_Minor_CenterPosition",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_Eldritch_Minor_CenterPosition",
+                "directionKey": ""
               }
             },
             {
@@ -3253,7 +3253,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_DiveIn",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3277,9 +3277,9 @@
             {
               "$type": "TryFindBlinkPointByBorn",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_Eldritch_Minor_NewRoundPos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_Eldritch_Minor_NewRoundPos",
+                "directionKey": ""
               },
               "hitSceneTest": false,
               "limitY": 30.0
@@ -3289,9 +3289,9 @@
             {
               "$type": "TryFindBlinkPointByBorn",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_Eldritch_Minor_InitialPosition",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_Eldritch_Minor_InitialPosition",
+                "directionKey": ""
               },
               "hitSceneTest": false,
               "limitY": 30.0
@@ -3312,7 +3312,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_DiveOut",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetPoseBool",
@@ -3416,9 +3416,9 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "Eldritch_SkillPosition_MidFar",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "Eldritch_SkillPosition_MidFar",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 30.0
@@ -3438,9 +3438,9 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "Eldritch_SkillPosition_MidNear",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "Eldritch_SkillPosition_MidNear",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 30.0
@@ -3460,9 +3460,9 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "Eldritch_SkillPosition_LeftFar",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "Eldritch_SkillPosition_LeftFar",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 30.0
@@ -3482,9 +3482,9 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "Eldritch_SkillPosition_LeftNear",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "Eldritch_SkillPosition_LeftNear",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 30.0
@@ -3504,9 +3504,9 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "Eldritch_SkillPosition_RightFar",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "Eldritch_SkillPosition_RightFar",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 30.0
@@ -3526,9 +3526,9 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "Eldritch_SkillPosition_RightNear",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "Eldritch_SkillPosition_RightNear",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 30.0
@@ -3549,9 +3549,9 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "Eldritch_SkillPosition_WaterCombo01",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "Eldritch_SkillPosition_WaterCombo01",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 30.0
@@ -3572,9 +3572,9 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "Eldritch_SkillPosition_WaterCombo02",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "Eldritch_SkillPosition_WaterCombo02",
+            "directionKey": ""
           },
           "hitSceneTest": false,
           "limitY": 30.0
@@ -3585,9 +3585,9 @@
         {
           "$type": "TurnDirectionToPos",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_Eldritch_Minor_CenterPosition",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_Eldritch_Minor_CenterPosition",
+            "directionKey": ""
           }
         },
         {
@@ -3660,9 +3660,9 @@
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "Eldritch_SkillPosition_MidFar",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "Eldritch_SkillPosition_MidFar",
+                "directionKey": ""
               },
               "hitSceneTest": false,
               "limitY": 30.0
@@ -3677,9 +3677,9 @@
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "Eldritch_SkillPosition_LeftFar",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "Eldritch_SkillPosition_LeftFar",
+                "directionKey": ""
               },
               "hitSceneTest": false,
               "limitY": 30.0
@@ -3694,9 +3694,9 @@
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "Eldritch_SkillPosition_RightFar",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "Eldritch_SkillPosition_RightFar",
+                "directionKey": ""
               },
               "hitSceneTest": false,
               "limitY": 30.0
@@ -3707,9 +3707,9 @@
             {
               "$type": "TurnDirectionToPos",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_Eldritch_Minor_CenterPosition",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_Eldritch_Minor_CenterPosition",
+                "directionKey": ""
               }
             },
             {
@@ -3736,7 +3736,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Gnaw_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3747,7 +3747,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Gnaw_Alert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3795,7 +3795,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Gnaw",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3831,7 +3831,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.800000011920929,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Slash",
@@ -3881,7 +3881,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_WaterJet_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -3904,15 +3904,15 @@
             {
               "$type": "TurnDirectionToPos",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_Eldritch_Minor_CenterPosition",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_Eldritch_Minor_CenterPosition",
+                "directionKey": ""
               }
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_WaterJet_Alert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillGadget",
@@ -3931,7 +3931,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_WaterJet_Laser",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3967,7 +3967,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.699999988079071,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "enBreak": 200.0,
@@ -4099,7 +4099,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -4107,7 +4107,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.4000000059604645,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 50.0,
                 "enBreak": 20.0,
@@ -4182,20 +4182,20 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_WaterImpulse_Charge",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_WaterImpulse_Trigger",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4206,7 +4206,7 @@
                     }
                   },
                   "height": 5.0,
-                  "BMCPFKAEOJB": 7.0
+                  "radius": 7.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4214,7 +4214,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -4297,7 +4297,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4307,7 +4307,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 9.0
+                  "radius": 9.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4315,7 +4315,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -4359,7 +4359,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4369,7 +4369,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 7.0
+                  "radius": 7.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4377,7 +4377,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -4421,7 +4421,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4431,7 +4431,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 7.0
+                  "radius": 7.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4439,7 +4439,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -4483,7 +4483,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4493,7 +4493,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4501,7 +4501,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -4555,7 +4555,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_WaterBall_AimTarget",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4567,7 +4567,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_02_WaterLaser_LockTarget",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4887,14 +4887,14 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_WaterBall_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_WaterBall_BulletHit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -4905,7 +4905,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -4913,7 +4913,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.4000000059604645,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Default",
@@ -5015,9 +5015,9 @@
             {
               "$type": "TurnDirectionToPos",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_Eldritch_Minor_CenterPosition",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_Eldritch_Minor_CenterPosition",
+                "directionKey": ""
               }
             },
             {
@@ -5117,9 +5117,9 @@
             {
               "$type": "TryFindBlinkPointByBorn",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "Eldritch_SkillPosition_MidFar",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "Eldritch_SkillPosition_MidFar",
+                "directionKey": ""
               },
               "hitSceneTest": false,
               "limitY": 30.0
@@ -5159,7 +5159,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_MovingAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetPoseBool",
@@ -5179,9 +5179,9 @@
             {
               "$type": "TurnDirectionToPos",
               "toPos": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_Eldritch_Minor_CenterPosition",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_Eldritch_Minor_CenterPosition",
+                "directionKey": ""
               }
             },
             {
@@ -5459,7 +5459,7 @@
               ],
               "bulletID": 42608005,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 8.0,
                   "y": 30.0,
@@ -5487,14 +5487,14 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet_Alert",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 8.0,
                   "y": 0.0,
                   "z": 8.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5533,7 +5533,7 @@
               ],
               "bulletID": 42608005,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 30.0,
@@ -5573,14 +5573,14 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet_Alert",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 8.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5619,7 +5619,7 @@
               ],
               "bulletID": 42608005,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -8.0,
                   "y": 30.0,
@@ -5659,14 +5659,14 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet_Alert",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -8.0,
                   "y": 0.0,
                   "z": 8.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5705,7 +5705,7 @@
               ],
               "bulletID": 42608005,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 8.0,
                   "y": 30.0,
@@ -5745,14 +5745,14 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet_Alert",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 8.0,
                   "y": 0.0,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5791,7 +5791,7 @@
               ],
               "bulletID": 42608005,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 30.0,
@@ -5831,14 +5831,14 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet_Alert",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5877,7 +5877,7 @@
               ],
               "bulletID": 42608005,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -8.0,
                   "y": 30.0,
@@ -5917,14 +5917,14 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet_Alert",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -8.0,
                   "y": 0.0,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5963,7 +5963,7 @@
               ],
               "bulletID": 42608005,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 8.0,
                   "y": 30.0,
@@ -6003,14 +6003,14 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet_Alert",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 8.0,
                   "y": 0.0,
                   "z": -8.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6049,7 +6049,7 @@
               ],
               "bulletID": 42608005,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 30.0,
@@ -6089,14 +6089,14 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet_Alert",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": -8.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -6123,7 +6123,7 @@
               ],
               "bulletID": 42608005,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -8.0,
                   "y": 30.0,
@@ -6151,14 +6151,14 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet_Alert",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -8.0,
                   "y": 0.0,
                   "z": -8.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -6183,12 +6183,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -6203,7 +6203,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Eldritch_Minor_Alert_Bullet_Explode",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -6219,7 +6219,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 4.0
+              "radius": 4.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -6227,7 +6227,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.4000000059604645,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Default",

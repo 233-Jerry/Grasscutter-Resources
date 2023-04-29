@@ -278,7 +278,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_MaranaMissle_Bullet_Size4",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -341,7 +341,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_MaranaMissle_Bullet_Size4_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -352,14 +352,14 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 4.0
+              "radius": 4.0
             },
             "attackInfo": {
               "attackTag": "",
               "attenuationTag": "",
               "attenuationGroup": "default",
               "attackProperty": {
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "ignoreAttackerProperty": true,
                 "strikeType": "Pierce",
@@ -407,7 +407,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_Hint_Small",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ExecuteGadgetLua"
@@ -595,7 +595,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "AttachPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -605,7 +605,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "Point1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetEffectFollowPath",
@@ -709,7 +709,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "AttachPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -719,7 +719,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "Point1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetEffectFollowPath",
@@ -855,7 +855,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "AttachPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -865,7 +865,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "Point1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetEffectFollowPath",
@@ -881,7 +881,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "Point2"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetEffectFollowPath",
@@ -1017,7 +1017,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "AttachPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -1027,7 +1027,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "Point1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetEffectFollowPath",
@@ -1043,7 +1043,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "Point2"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetEffectFollowPath",
@@ -1222,7 +1222,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "AttachPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -1232,7 +1232,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "Point1"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetEffectFollowPath",
@@ -1248,7 +1248,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "Point2"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetEffectFollowPath",
@@ -1264,7 +1264,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "Point3"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetEffectFollowPath",
@@ -1386,7 +1386,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AncientTablets_Active_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1462,7 +1462,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AncientTablets_Active_01_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1582,7 +1582,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1662,7 +1662,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1677,7 +1677,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1766,7 +1766,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BrokeGrassTablet_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableHitBoxByName",
@@ -1893,7 +1893,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -1961,7 +1961,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"

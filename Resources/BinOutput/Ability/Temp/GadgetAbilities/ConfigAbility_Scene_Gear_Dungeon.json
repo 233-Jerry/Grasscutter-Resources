@@ -113,7 +113,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "ReceivePoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -254,7 +254,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "ReceivePoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -283,7 +283,7 @@
                 "attachPointName": "EffPoint01",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -325,7 +325,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "EffectNode"
           },
-          "FGMDINMEPHL": 100.0
+          "effectTempleteID": 100.0
         }
       ]
     }
@@ -400,7 +400,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "ReceivePoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -429,7 +429,7 @@
                 "attachPointName": "EffPoint02",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -471,7 +471,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "EffectNode"
           },
-          "FGMDINMEPHL": 101.0
+          "effectTempleteID": 101.0
         }
       ]
     }
@@ -546,7 +546,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "ReceivePoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -575,7 +575,7 @@
                 "attachPointName": "EffPoint03",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -617,7 +617,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "EffectNode"
           },
-          "FGMDINMEPHL": 102.0
+          "effectTempleteID": 102.0
         }
       ]
     }
@@ -634,7 +634,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tower_Ball_AttackUp_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -669,7 +669,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Tower_Ball_Active_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf",
@@ -690,7 +690,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tower_Ball_Heal_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -727,7 +727,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Tower_Ball_Active_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf",
@@ -748,7 +748,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tower_Ball_MoveSpeed_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -783,7 +783,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Tower_Ball_Active_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf",
@@ -834,7 +834,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fire_01_StageBasin_Large",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -846,7 +846,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fire_02_LargeFireBasket",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -864,7 +864,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fire_02_LargeFireBasket",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -881,7 +881,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fire_01_StageBasin_LargeHigh",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -930,7 +930,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fire_01_StageHangLamp",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -942,7 +942,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fire_02_SmallFireBasket",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -960,7 +960,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fire_02_SmallFireBasket",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -977,7 +977,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fire_01_StageHangLamp",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1011,7 +1011,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Fire_01_StageHangLamp",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1390,7 +1390,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1401,7 +1401,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_01_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1412,12 +1412,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_01_Finish",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_Success_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1428,7 +1428,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_01_Success",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1468,7 +1468,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeCure_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1479,7 +1479,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeCure_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1490,7 +1490,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeCure_01_Stay",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1501,12 +1501,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_Success_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeCure_01_Used",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1638,7 +1638,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_LostCityRunesParent_01_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1723,7 +1723,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": 101.0
+              "effectTempleteID": 101.0
             }
           ]
         },
@@ -1739,7 +1739,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": 101.0
+              "effectTempleteID": 101.0
             }
           ]
         },
@@ -1755,7 +1755,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": 101.0
+              "effectTempleteID": 101.0
             },
             {
               "$type": "ApplyModifier",
@@ -1828,7 +1828,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": 102.0
+              "effectTempleteID": 102.0
             }
           ]
         },
@@ -1844,7 +1844,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": 102.0
+              "effectTempleteID": 102.0
             }
           ]
         },
@@ -1860,7 +1860,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": 102.0
+              "effectTempleteID": 102.0
             },
             {
               "$type": "ApplyModifier",
@@ -1933,7 +1933,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": 103.0
+              "effectTempleteID": 103.0
             }
           ]
         },
@@ -1949,7 +1949,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": 103.0
+              "effectTempleteID": 103.0
             }
           ]
         },
@@ -1965,7 +1965,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": 103.0
+              "effectTempleteID": 103.0
             },
             {
               "$type": "ApplyModifier",

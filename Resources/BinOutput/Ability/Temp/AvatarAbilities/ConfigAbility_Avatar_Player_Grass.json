@@ -305,7 +305,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalArt_Impact_Sword",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -353,7 +353,7 @@
               "RotationDampTime": true,
               "configID": 2019,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -372,7 +372,7 @@
                   "RotationDampTime": true,
                   "configID": 2019,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -446,7 +446,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Grass_ElementArt_Energy_Recover_Talent_1"
+              "talentParam": "Player_Grass_ElementArt_Energy_Recover_Talent_1"
             }
           ],
           "modifierName": "Avatar_Player_Grass_Impact_Energy_Recover_Handler"
@@ -468,13 +468,13 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalArt_Impact",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -486,7 +486,7 @@
               },
               "height": 2.0,
               "BAPAHIOBNCL": 130.0,
-              "BMCPFKAEOJB": 6.5
+              "radius": 6.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -494,7 +494,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ElementArt_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -681,7 +681,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Sword",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -921,7 +921,7 @@
                   "target": "Target",
                   "key": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_FIXPOS",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.20000000298023224,
@@ -957,18 +957,18 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Attack",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 3.0,
-                "FNMFBPGNEKD": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Emission",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1028,7 +1028,7 @@
                   "target": "Target",
                   "key": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_FIXPOS",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.20000000298023224,
@@ -1064,18 +1064,18 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Attack",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 3.0,
-                "FNMFBPGNEKD": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Emission",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1107,13 +1107,13 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1124,7 +1124,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 6.5
+                  "radius": 6.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -1132,7 +1132,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Grass_Seed_Fire_Boom_Ratio",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -1210,7 +1210,7 @@
                   "target": "Target",
                   "key": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_FIXPOS",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.20000000298023224,
@@ -1244,13 +1244,13 @@
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Attack_Electric",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
+                    "directionKey": ""
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -1312,7 +1312,7 @@
                   "target": "Target",
                   "key": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_FIXPOS",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.20000000298023224,
@@ -1348,18 +1348,18 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Attack_Electric",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 3.0,
-                "FNMFBPGNEKD": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Emission",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1427,7 +1427,7 @@
                   "target": "Target",
                   "key": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_FIXPOS",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.20000000298023224,
@@ -1463,13 +1463,13 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Attack_Big",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 3.0,
-                "FNMFBPGNEKD": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1529,7 +1529,7 @@
                   "target": "Target",
                   "key": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_FIXPOS",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.20000000298023224,
@@ -1565,18 +1565,18 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Attack_Big",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 3.0,
-                "FNMFBPGNEKD": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Emission",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1594,10 +1594,10 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -1.0,
@@ -1605,11 +1605,11 @@
                     },
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
+                    "directionKey": ""
                   },
                   "height": 3.799999952316284,
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -1617,7 +1617,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Grass_Seed_Damage_Ratio",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1645,10 +1645,10 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": -1.0,
@@ -1656,11 +1656,11 @@
                     },
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 3.0,
-                    "FNMFBPGNEKD": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_PLAYER_GRASS_SEED_ATTACKER_POS",
+                    "directionKey": ""
                   },
                   "height": 3.799999952316284,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -1668,7 +1668,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Grass_Seed_Damage_Ratio",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1723,7 +1723,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_TurnFire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1746,7 +1746,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_TurnElectric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAudio",
@@ -1778,7 +1778,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_TurnWater",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAudio",
@@ -1800,7 +1800,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Range_Circle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -1810,7 +1810,7 @@
               "othereffectPatterns": [
                 "Eff_Player_Grass_ElementalBurst_Seed_Range_Circle_Disappear"
               ],
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1823,7 +1823,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Range_Circle_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1836,19 +1836,19 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Range_Circle_Big",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Dispear_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Range_Circle_Big_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1895,7 +1895,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Player_Grass_ElementalBurst_Seed_Ground_Impact",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onKill": [
@@ -2194,7 +2194,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Player_Grass_Seed_Aura_Extra_Talent_6"
+                  "talentParam": "Player_Grass_Seed_Aura_Extra_Talent_6"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -2211,7 +2211,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Player_Grass_Seed_Aura_Extra_Talent_6"
+                  "talentParam": "Player_Grass_Seed_Aura_Extra_Talent_6"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -2228,7 +2228,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Player_Grass_Seed_Aura_Extra_Talent_6"
+                  "talentParam": "Player_Grass_Seed_Aura_Extra_Talent_6"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -2245,7 +2245,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Player_Grass_Seed_Aura_Extra_Talent_6"
+                  "talentParam": "Player_Grass_Seed_Aura_Extra_Talent_6"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -2423,7 +2423,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Grass_Seed_Aura_Permanent_Skill_1"
+              "talentParam": "Player_Grass_Seed_Aura_Permanent_Skill_1"
             }
           ],
           "ratio": 1.0,
@@ -2437,7 +2437,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Grass_Seed_Aura_Permanent_Skill_1"
+              "talentParam": "Player_Grass_Seed_Aura_Permanent_Skill_1"
             }
           ],
           "modifierName": "Player_Grass_Seed_Aura_Handler"
@@ -2447,7 +2447,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Grass_Seed_Aura_Permanent_Skill_1"
+              "talentParam": "Player_Grass_Seed_Aura_Permanent_Skill_1"
             }
           ],
           "modifierName": "Player_Grass_Seed_Aura_Count_Handler"
@@ -2457,7 +2457,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Grass_Seed_Aura_Up_Talent_4"
+              "talentParam": "Player_Grass_Seed_Aura_Up_Talent_4"
             }
           ],
           "modifierName": "Player_Grass_Seed_Aura_Extra_Count_Handler"
@@ -2484,7 +2484,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Art"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 "Element_Mastery_Cache",
                 "Element_Mastery_Transform_To_ElementArt_Damage_Ratio",
                 "MUL"
@@ -2502,7 +2502,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 "Element_Mastery_Cache",
                 "Element_Mastery_Transform_To_ElementBurst_Damage_Ratio",
                 "MUL"

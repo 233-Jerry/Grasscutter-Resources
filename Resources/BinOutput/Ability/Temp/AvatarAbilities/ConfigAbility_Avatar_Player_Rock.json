@@ -289,7 +289,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -390,7 +390,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Hogyoku_Aim_Line",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -452,7 +452,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -483,7 +483,7 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Hogyoku_Bullet",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -492,14 +492,14 @@
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -544,7 +544,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -556,7 +556,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -564,7 +564,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Explode",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 50.0,
@@ -633,7 +633,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2023,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -651,7 +651,7 @@
                       "$type": "GenerateElemBall",
                       "configID": 2023,
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -713,7 +713,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Player_Rock_UnstablePrime"
+                  "talentParam": "Player_Rock_UnstablePrime"
                 }
               ],
               "modifierName": "Hogyoku_Barrier_Explode"
@@ -728,7 +728,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -740,7 +740,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 1.5,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -748,7 +748,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Explode",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -776,7 +776,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Hogyoku_Crystal_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -821,7 +821,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -833,7 +833,7 @@
                 "IABNJPGBAOH": true
               },
               "height": 1.5,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -841,7 +841,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage_Explode",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 25.0,
@@ -869,7 +869,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Hogyoku_Crystal_Explode",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -905,7 +905,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Hogyoku_Crystal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -921,13 +921,13 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Player_Rock_UnstablePrime"
+                      "talentParam": "Player_Rock_UnstablePrime"
                     }
                   ]
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Hogyoku_Crystal_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -940,7 +940,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Hogyoku_Crystal_Impact",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -996,7 +996,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1038,7 +1038,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR6",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1081,7 +1081,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1092,7 +1092,7 @@
                     }
                   },
                   "height": 1.5,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -1100,7 +1100,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AttackWaveDamage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 3.0,
                     "bonusCriticalHurt": 50.0,
@@ -1133,7 +1133,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_RockTide_Crest_Move",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1260,7 +1260,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Rock_StarDustReturn"
+              "talentParam": "Player_Rock_StarDustReturn"
             }
           ],
           "modifierName": "RockTide_AttackWave_StarDustReturn"
@@ -1273,7 +1273,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Player_Rock_StarDustReturn"
+                  "talentParam": "Player_Rock_StarDustReturn"
                 }
               ]
             }
@@ -1285,7 +1285,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Rock_GaeaAnthem"
+              "talentParam": "Player_Rock_GaeaAnthem"
             }
           ],
           "modifierName": "UNIQUE_RockTide_GaeaAnthem"
@@ -1298,7 +1298,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Player_Rock_GaeaAnthem"
+                  "talentParam": "Player_Rock_GaeaAnthem"
                 }
               ]
             }
@@ -1316,7 +1316,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 2.75,
               "y": 0.0,
@@ -1336,7 +1336,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -2.75,
               "y": 0.0,
@@ -1356,7 +1356,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 6.670000076293945,
               "y": 0.0,
@@ -1376,7 +1376,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -6.670000076293945,
               "y": 0.0,
@@ -1440,14 +1440,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_RockTide_RockWall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_RockTide_RockWall_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1470,7 +1470,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1478,7 +1478,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.10000000149011612,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -1505,7 +1505,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_RockTide_RockWall_Impact",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -1527,7 +1527,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Rock_Avalanche"
+              "talentParam": "Player_Rock_Avalanche"
             }
           ],
           "attackEvent": {
@@ -1542,7 +1542,7 @@
                   "z": 1.2000000476837158
                 }
               },
-              "BMCPFKAEOJB": 2.4000000953674316
+              "radius": 2.4000000953674316
             },
             "attackInfo": {
               "attackTag": "NormalAttack_05",
@@ -1550,7 +1550,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Avalanche_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Rock",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -1575,11 +1575,11 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Player_Rock_Avalanche"
+              "talentParam": "Player_Rock_Avalanche"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_RockBlade_Explode",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "isDynamicAbility": true

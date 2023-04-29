@@ -120,14 +120,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementMark_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementMark_Fire_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -148,7 +148,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.13300000131130219,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 25.0,
                   "enBreak": 0.0
@@ -276,14 +276,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementMark_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementMark_Water_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -304,7 +304,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.13300000131130219,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Water",
                   "bonusCriticalHurt": 25.0,
                   "enBreak": 0.0
@@ -432,14 +432,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementMark_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementMark_Ice_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -460,7 +460,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.13300000131130219,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Ice",
                   "bonusCriticalHurt": 25.0,
                   "enBreak": 0.0
@@ -588,14 +588,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementMark_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementMark_Electric_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -616,7 +616,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.13300000131130219,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 25.0,
                   "enBreak": 0.0
@@ -789,7 +789,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Switch_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -875,22 +875,22 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Foot_Fire_ForeL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Foot_Fire_ForeR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Foot_Fire_HindL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Foot_Fire_HindR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -929,7 +929,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Switch_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -1015,22 +1015,22 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Foot_Water_ForeL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Foot_Water_ForeR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Foot_Water_HindL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Foot_Water_HindR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1069,7 +1069,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Switch_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -1151,7 +1151,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Tail_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1223,7 +1223,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Switch_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -1305,7 +1305,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Tail_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1366,7 +1366,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Switch_Ice_Back",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1379,7 +1379,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Switch_Electric_Back",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "isDynamicAbility": true
@@ -1401,7 +1401,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Switch_Ice_Howl",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1414,7 +1414,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Switch_Electric_Howl",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ActCameraRadialBlur",
@@ -1477,7 +1477,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1498,7 +1498,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -1519,7 +1519,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ReTriggerAISkillInitialCD",
@@ -1601,7 +1601,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.6660000085830688,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Rock",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Blunt",
@@ -1630,7 +1630,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.4659999907016754,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Fire",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Blunt",
@@ -1659,7 +1659,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.4659999907016754,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Water",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Blunt",
@@ -2043,13 +2043,13 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf"
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 28.0
+              "radius": 28.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -2057,7 +2057,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 999999.0
@@ -2114,7 +2114,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2135,7 +2135,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -2156,7 +2156,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2234,7 +2234,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.5,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Rock",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Blunt",
@@ -2263,7 +2263,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.3330000042915344,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Fire",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Blunt",
@@ -2292,7 +2292,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.3330000042915344,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Water",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Blunt",
@@ -2315,13 +2315,13 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf"
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 25.0
+              "radius": 25.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -2329,7 +2329,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 100.0
@@ -2391,7 +2391,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Roar_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2402,7 +2402,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Roar_Fire_Mouth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2532,7 +2532,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Roar_Water",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2543,7 +2543,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Roar_Water_Mouth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2555,7 +2555,7 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -2569,8 +2569,8 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_DAHAKA_BORNANCHOR_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_DAHAKA_BORNANCHOR_",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42904033,
@@ -2605,7 +2605,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2644,7 +2644,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Roar_Fire_MeteorLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -2672,7 +2672,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Blunt",
@@ -2690,9 +2690,9 @@
               "target": "Owner",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Roar_Fire_MeteorAS",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -2722,7 +2722,7 @@
               "target": "Caster",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "gadgetID": 42904016,
               "campID": 4001,
@@ -2799,7 +2799,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42904030,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 30.0,
               "y": 0.0,
@@ -2813,8 +2813,8 @@
                 "z": 0.0
               }
             },
-            "FNMFBPGNEKD": "_DAHAKA_BORNANCHOR_",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_DAHAKA_BORNANCHOR_",
+            "directionKey": ""
           },
           "trackTarget": "Self"
         },
@@ -2822,7 +2822,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42904030,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": -30.0,
               "y": 0.0,
@@ -2836,8 +2836,8 @@
                 "z": 0.0
               }
             },
-            "FNMFBPGNEKD": "_DAHAKA_BORNANCHOR_",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_DAHAKA_BORNANCHOR_",
+            "directionKey": ""
           },
           "trackTarget": "Self"
         },
@@ -2845,7 +2845,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42904031,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2859,8 +2859,8 @@
                 "z": 0.0
               }
             },
-            "FNMFBPGNEKD": "_DAHAKA_BORNANCHOR_",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_DAHAKA_BORNANCHOR_",
+            "directionKey": ""
           },
           "trackTarget": "Self"
         },
@@ -2868,7 +2868,7 @@
           "$type": "TriggerBullet",
           "bulletID": 42904031,
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2882,8 +2882,8 @@
                 "z": 0.0
               }
             },
-            "FNMFBPGNEKD": "_DAHAKA_BORNANCHOR_",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_DAHAKA_BORNANCHOR_",
+            "directionKey": ""
           },
           "trackTarget": "Self"
         }
@@ -2938,14 +2938,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Roar_Water_WaterBall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_Roar_Water_WaterBall_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -2956,7 +2956,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2967,7 +2967,7 @@
                     }
                   },
                   "height": 2.5,
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "Dahaka_Hit_Water",
@@ -2975,7 +2975,7 @@
                   "attenuationGroup": "Monster_Dahaka_Breath",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -3025,12 +3025,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_Ice_Alert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -3117,7 +3117,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_IceballBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3144,7 +3144,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -3155,7 +3155,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_IceballAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -3184,7 +3184,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3199,7 +3199,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -3284,12 +3284,12 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_Icecone_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_Icecone_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -3304,7 +3304,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3315,7 +3315,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Dahaka_Hit_Ice",
@@ -3323,7 +3323,7 @@
               "attenuationGroup": "Monster_Dahaka_Breath",
               "attackProperty": {
                 "damagePercentage": 0.4659999907016754,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -3395,12 +3395,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_Electric_Alert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -3536,11 +3536,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_EffectElectricBallLoop",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElecBallPos1",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElecBallPos1",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3548,12 +3548,12 @@
               "$type": "TriggerBullet",
               "bulletID": 42904022,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "HFKFLHCBMLB"
                 },
-                "FNMFBPGNEKD": "ElecBallPos1",
-                "GPPNNKAOHCG": ""
+                "positionKey": "ElecBallPos1",
+                "directionKey": ""
               },
               "lifeByOwnerIsAlive": true
             }
@@ -3591,11 +3591,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_EffectElectricBallLoop",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElecBallPos2",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElecBallPos2",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3603,12 +3603,12 @@
               "$type": "TriggerBullet",
               "bulletID": 42904022,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "HFKFLHCBMLB"
                 },
-                "FNMFBPGNEKD": "ElecBallPos2",
-                "GPPNNKAOHCG": ""
+                "positionKey": "ElecBallPos2",
+                "directionKey": ""
               },
               "lifeByOwnerIsAlive": true
             }
@@ -3646,11 +3646,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_EffectElectricBallLoop",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElecBallPos3",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElecBallPos3",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3658,12 +3658,12 @@
               "$type": "TriggerBullet",
               "bulletID": 42904022,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "HFKFLHCBMLB"
                 },
-                "FNMFBPGNEKD": "ElecBallPos3",
-                "GPPNNKAOHCG": ""
+                "positionKey": "ElecBallPos3",
+                "directionKey": ""
               },
               "lifeByOwnerIsAlive": true
             }
@@ -3701,11 +3701,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_EffectElectricBallLoop",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElecBallPos4",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElecBallPos4",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3713,12 +3713,12 @@
               "$type": "TriggerBullet",
               "bulletID": 42904022,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "HFKFLHCBMLB"
                 },
-                "FNMFBPGNEKD": "ElecBallPos4",
-                "GPPNNKAOHCG": ""
+                "positionKey": "ElecBallPos4",
+                "directionKey": ""
               },
               "lifeByOwnerIsAlive": true
             }
@@ -3756,11 +3756,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_EffectElectricBallLoop",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElecBallPos5",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElecBallPos5",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3768,12 +3768,12 @@
               "$type": "TriggerBullet",
               "bulletID": 42904022,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "HFKFLHCBMLB"
                 },
-                "FNMFBPGNEKD": "ElecBallPos5",
-                "GPPNNKAOHCG": ""
+                "positionKey": "ElecBallPos5",
+                "directionKey": ""
               },
               "lifeByOwnerIsAlive": true
             }
@@ -3811,11 +3811,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_EffectElectricBallLoop",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "ElecBallPos6",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "ElecBallPos6",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3823,12 +3823,12 @@
               "$type": "TriggerBullet",
               "bulletID": 42904022,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "HFKFLHCBMLB"
                 },
-                "FNMFBPGNEKD": "ElecBallPos6",
-                "GPPNNKAOHCG": ""
+                "positionKey": "ElecBallPos6",
+                "directionKey": ""
               },
               "lifeByOwnerIsAlive": true
             }
@@ -3858,7 +3858,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_ElectricBallLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -3871,7 +3871,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Dahaka_Hit_Electric",
@@ -3879,7 +3879,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.4659999907016754,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Blunt",
@@ -3913,7 +3913,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "Dahaka_Hit_Electric",
@@ -3921,7 +3921,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.4659999907016754,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -3963,7 +3963,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementSpring_ElectricBallAS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4006,7 +4006,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_IceBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -4038,12 +4038,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_Ice",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_Ice_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -4447,7 +4447,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4599,7 +4599,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.3330000042915344,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Ice",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Blunt",
@@ -4622,7 +4622,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -4655,7 +4655,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_Ice_IceBlockLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -4717,7 +4717,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_ElectricBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -4755,12 +4755,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_Electric_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -5141,7 +5141,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -6984,7 +6984,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7176,15 +7176,15 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_ElectricNet",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_ELECTRICNET_POS1_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ELECTRICNET_POS1_",
+                "directionKey": ""
               }
             },
             {
@@ -7215,15 +7215,15 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_ElectricNet",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_ELECTRICNET_POS2_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ELECTRICNET_POS2_",
+                "directionKey": ""
               }
             }
           ]
@@ -7237,15 +7237,15 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_ElectricNet",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_ELECTRICNET_POS3_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ELECTRICNET_POS3_",
+                "directionKey": ""
               }
             }
           ]
@@ -7259,15 +7259,15 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_ElectricNet",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_ELECTRICNET_POS4_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ELECTRICNET_POS4_",
+                "directionKey": ""
               }
             }
           ]
@@ -7281,15 +7281,15 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_ElementBurst_ElectricNet",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_ELECTRICNET_POS5_",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ELECTRICNET_POS5_",
+                "directionKey": ""
               }
             }
           ]
@@ -7348,7 +7348,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Blunt",
@@ -7442,7 +7442,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -7455,7 +7455,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -7463,7 +7463,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.08299999684095383,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Blunt",
@@ -7594,7 +7594,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Dahaka_AirWall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },

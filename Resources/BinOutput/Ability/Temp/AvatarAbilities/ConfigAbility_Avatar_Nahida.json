@@ -259,7 +259,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ExtraAttack_HandR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -311,15 +311,15 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Nahida_ExtraAttack_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Nahida_ExtraAttack_Pos",
+                "directionKey": ""
               },
               "gadgetID": 41073001,
               "campID": 1001,
@@ -376,7 +376,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -415,7 +415,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ExtraAttack_Block",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -470,7 +470,7 @@
               }
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -507,7 +507,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_01_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -571,7 +571,7 @@
               }
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -608,7 +608,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_02_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -703,7 +703,7 @@
               }
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -740,7 +740,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_03_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -811,7 +811,7 @@
               }
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -848,7 +848,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "NormalAttack_04_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -902,7 +902,7 @@
               "target": "Target",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalArt_Ray_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "DamageByAttackValue",
@@ -923,7 +923,7 @@
                 "attenuationGroup": "Nahida_Chain_Normal",
                 "attackProperty": {
                   "damagePercentage": "Chain_Damage_PerAtk",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Grass",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Default",
@@ -1167,7 +1167,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "Caster",
-                  "GFIOLOJIDMG": "Nahida_Constellation_2"
+                  "talentParam": "Nahida_Constellation_2"
                 }
               ],
               "modifierName": "UNIQUE_Avatar_Nahida_Constellation_2_OnMonster"
@@ -1213,7 +1213,7 @@
             {
               "$type": "ModifyBeHitDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "predicates": [
                 {
                   "$type": "ByAny",
@@ -1302,7 +1302,7 @@
               "RotationDampTime": true,
               "configID": 2019,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1355,7 +1355,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalBurst_HairEmission_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1430,14 +1430,14 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalArt_Strike_Click",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "target": "Caster",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1448,7 +1448,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.599999904632568
+                  "radius": 4.599999904632568
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -1456,7 +1456,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Click_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1502,12 +1502,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalArt_HandL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalArt_Dust",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1666,7 +1666,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalArt_Ray_Tag",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1692,7 +1692,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": "Hold_Damage",
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Grass",
                   "bonusCriticalHurt": 25.0,
                   "strikeType": "Default",
@@ -2030,19 +2030,19 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalBurst_EyeL",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalBurst_EyeR",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalBurst_Camera_Transition",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2056,7 +2056,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -2067,7 +2067,7 @@
                       }
                     },
                     "height": 0.5,
-                    "BMCPFKAEOJB": 1.5
+                    "radius": 1.5
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -2090,19 +2090,19 @@
                   "$type": "FireEffect",
                   "muteRemoteAction": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalBurst_Camera_Palace",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalBurst_Camera_Cloak",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalBurst_Camera_Thirdparty",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -2189,7 +2189,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR3",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -2393,7 +2393,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Nahida_Constellation_1"
+                  "talentParam": "Nahida_Constellation_1"
                 }
               ],
               "successActions": [
@@ -2607,7 +2607,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalBurst_Hollow_Field",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2775,7 +2775,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Art"],
-              "MKLAMNDEDGB": "Hollow_AddChainDmg",
+              "damagePercentageRatio": "Hollow_AddChainDmg",
               "predicates": [
                 {
                   "$type": "DKBHGGBCOMO",
@@ -2864,7 +2864,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalBurst_HairEmission_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2879,7 +2879,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "Caster",
-                  "GFIOLOJIDMG": "Nahida_PermanentSkill_1"
+                  "talentParam": "Nahida_PermanentSkill_1"
                 }
               ],
               "modifierName": "UNIQUE_Nahida_ElementalBurst_Hollow_PermanentSkill_MasterUp"
@@ -3110,7 +3110,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_BS_Grass",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -3150,7 +3150,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3158,7 +3158,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Grass",
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Default",
@@ -3452,7 +3452,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Self_Grass",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3490,16 +3490,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3507,7 +3507,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3515,7 +3515,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -3552,15 +3552,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3568,7 +3568,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3576,7 +3576,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Grass",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -3614,12 +3614,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_01_Grass",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3628,11 +3628,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_02_Grass",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3744,7 +3744,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Art"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 "Chain_Damage_Up",
                 "PermanentSkill_2_EffMastery",
                 "MUL"
@@ -4039,7 +4039,7 @@
                   "target": "Target",
                   "RotationDampTime": true,
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_ElementalArt_Ray_Hit",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "DamageByAttackValue",
@@ -4060,7 +4060,7 @@
                     "attenuationGroup": "Nahida_Chain_Constellation",
                     "attackProperty": {
                       "damagePercentage": "Constellation_6_Dmg_PerAtk",
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Grass",
                       "bonusCriticalHurt": 25.0,
                       "strikeType": "Default",
@@ -4116,7 +4116,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_Constellation_6",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4177,7 +4177,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_Show01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4185,7 +4185,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Catalyst_Nahida_Show01_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

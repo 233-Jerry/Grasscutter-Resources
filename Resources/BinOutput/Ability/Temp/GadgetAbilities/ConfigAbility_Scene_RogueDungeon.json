@@ -24,7 +24,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BombBarrel_01_Explode",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "Predicated",
@@ -46,14 +46,14 @@
                           "triggerType": "TriggerNoRepeat",
                           "JGCLJPCGHMC": true,
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.5,
                               "z": 0.0
                             }
                           },
-                          "BMCPFKAEOJB": 6.0
+                          "radius": 6.0
                         },
                         "attackInfo": {
                           "attackTag": "Rogue_BombAttack",
@@ -61,7 +61,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": 1.0,
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Fire",
                             "bonusCriticalHurt": 50.0,
                             "strikeType": "Blunt",
@@ -103,14 +103,14 @@
                           "triggerType": "TriggerNoRepeat",
                           "JGCLJPCGHMC": true,
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.5,
                               "z": 0.0
                             }
                           },
-                          "BMCPFKAEOJB": 6.0
+                          "radius": 6.0
                         },
                         "attackInfo": {
                           "attackTag": "Rogue_BombAttack",
@@ -118,7 +118,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": 2.0,
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Fire",
                             "bonusCriticalHurt": 50.0,
                             "strikeType": "Blunt",
@@ -148,14 +148,14 @@
                           "triggerType": "TriggerNoRepeat",
                           "JGCLJPCGHMC": true,
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.5,
                               "z": 0.0
                             }
                           },
-                          "BMCPFKAEOJB": 6.0
+                          "radius": 6.0
                         },
                         "attackInfo": {
                           "attackTag": "Rogue_BombAttack",
@@ -163,7 +163,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": 1.0,
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Fire",
                             "bonusCriticalHurt": 50.0,
                             "strikeType": "Blunt",
@@ -205,14 +205,14 @@
                           "triggerType": "TriggerNoRepeat",
                           "JGCLJPCGHMC": true,
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.5,
                               "z": 0.0
                             }
                           },
-                          "BMCPFKAEOJB": 6.0
+                          "radius": 6.0
                         },
                         "attackInfo": {
                           "attackTag": "Rogue_BombAttack",
@@ -220,7 +220,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": 1.0,
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Fire",
                             "bonusCriticalHurt": 50.0,
                             "strikeType": "Blunt",
@@ -250,14 +250,14 @@
                           "triggerType": "TriggerNoRepeat",
                           "JGCLJPCGHMC": true,
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.5,
                               "z": 0.0
                             }
                           },
-                          "BMCPFKAEOJB": 6.0
+                          "radius": 6.0
                         },
                         "attackInfo": {
                           "attackTag": "Rogue_BombAttack",
@@ -265,7 +265,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": "SSR_MoreDamageRatio",
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Fire",
                             "bonusCriticalHurt": 50.0,
                             "strikeType": "Blunt",
@@ -307,7 +307,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BombBarrel_01_Explode",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "Predicated",
@@ -329,14 +329,14 @@
                           "triggerType": "TriggerNoRepeat",
                           "JGCLJPCGHMC": true,
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.5,
                               "z": 0.0
                             }
                           },
-                          "BMCPFKAEOJB": 6.0
+                          "radius": 6.0
                         },
                         "attackInfo": {
                           "attackTag": "Rogue_BombAttack",
@@ -344,7 +344,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": 1.0,
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Fire",
                             "bonusCriticalHurt": 50.0,
                             "strikeType": "Blunt",
@@ -374,14 +374,14 @@
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.5,
                           "z": 0.0
                         }
                       },
-                      "BMCPFKAEOJB": 6.0
+                      "radius": 6.0
                     },
                     "attackInfo": {
                       "attackTag": "Rogue_BombAttack",
@@ -389,7 +389,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 1.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Fire",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Blunt",
@@ -429,14 +429,14 @@
                           "triggerType": "TriggerNoRepeat",
                           "JGCLJPCGHMC": true,
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.5,
                               "z": 0.0
                             }
                           },
-                          "BMCPFKAEOJB": 6.0
+                          "radius": 6.0
                         },
                         "attackInfo": {
                           "attackTag": "Rogue_BombAttack",
@@ -444,7 +444,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": 1.0,
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Fire",
                             "bonusCriticalHurt": 50.0,
                             "strikeType": "Blunt",
@@ -474,14 +474,14 @@
                           "triggerType": "TriggerNoRepeat",
                           "JGCLJPCGHMC": true,
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.5,
                               "z": 0.0
                             }
                           },
-                          "BMCPFKAEOJB": 6.0
+                          "radius": 6.0
                         },
                         "attackInfo": {
                           "attackTag": "Rogue_BombAttack",
@@ -489,7 +489,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": "SSR_MoreDamageRatio",
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Fire",
                             "bonusCriticalHurt": 50.0,
                             "strikeType": "Blunt",
@@ -552,7 +552,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanBox_01_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -638,7 +638,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanBox_01_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -745,7 +745,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Byobu_01_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -831,7 +831,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Byobu_01_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -945,7 +945,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanJars_01_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -1031,7 +1031,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanJars_01_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -1138,7 +1138,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanJars_02_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -1224,7 +1224,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanJars_02_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -1331,7 +1331,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanJars_03_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -1417,7 +1417,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_HumanJars_03_Destroy",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ServerLuaCall",
@@ -1519,7 +1519,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Blunt",
                   "enBreak": 999.0
@@ -1550,7 +1550,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeTrap_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1602,7 +1602,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeTrap_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ServerLuaCall",
@@ -1648,7 +1648,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1687,7 +1687,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf",
@@ -1713,7 +1713,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1754,7 +1754,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf",
@@ -1780,7 +1780,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1819,7 +1819,7 @@
             "$type": "ConfigBornByAttachPoint",
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "KillSelf",
@@ -1874,7 +1874,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Water_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetSystemValueToOverrideMap",
@@ -1889,14 +1889,14 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.5,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 8.0
+                  "radius": 8.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1904,7 +1904,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -1946,14 +1946,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TowerWater_03_Bubble",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_TowerWater_03_Bubble_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1962,7 +1962,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Water",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -2019,12 +2019,12 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Water_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Water_Attack",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetSystemValueToOverrideMap",
@@ -2039,14 +2039,14 @@
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.5,
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "RogueCreatureWater_Die",
@@ -2054,7 +2054,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "ignoreAttackerProperty": true,
@@ -2199,7 +2199,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Ice_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerTaunt",
@@ -2260,14 +2260,14 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.5,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 8.0
+                  "radius": 8.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2275,7 +2275,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -2409,7 +2409,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Ice",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -2470,7 +2470,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Ice_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2508,7 +2508,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR8",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -2537,7 +2537,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Wind_Absorbe",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2580,7 +2580,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Wind_Absorbe",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -2667,7 +2667,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_Rise_Monster",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -2681,7 +2681,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Wind",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -2759,12 +2759,12 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Wind_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Wind_Die_Attack",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetSystemValueToOverrideMap",
@@ -2788,14 +2788,14 @@
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.5,
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "CreaturWind_WeightAttack",
@@ -2803,7 +2803,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "ignoreAttackerProperty": true,
@@ -2822,7 +2822,7 @@
                 "hitImpulseType": "LV1",
                 "overrideHitImpulse": {
                   "hitLevel": "Air",
-                  "IPHCEFBMJAJ": 0.0,
+                  "hitImpulseX": 0.0,
                   "hitImpulseY": 1500.0
                 },
                 "hitHaltTimeScale": 0.05000000074505806
@@ -2848,14 +2848,14 @@
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.5,
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "CreaturWind_WeightAttack",
@@ -2863,7 +2863,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "ignoreAttackerProperty": true,
@@ -2894,7 +2894,7 @@
                 "hitImpulseType": "LV1",
                 "overrideHitImpulse": {
                   "hitLevel": "Air",
-                  "IPHCEFBMJAJ": 0.0,
+                  "hitImpulseX": 0.0,
                   "hitImpulseY": 1500.0
                 },
                 "hitHaltTimeScale": 0.05000000074505806
@@ -3040,13 +3040,13 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "FLIPADNBJJF"
                       },
                       "height": 5.0,
-                      "BMCPFKAEOJB": 5.0
+                      "radius": 5.0
                     },
                     "attackInfo": {
                       "attackTag": "",
@@ -3054,7 +3054,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Fire",
                         "bonusCriticalHurt": 25.0,
                         "ignoreAttackerProperty": true,
@@ -3083,7 +3083,7 @@
                   "born": {
                     "$type": "FLIPADNBJJF"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -3097,7 +3097,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Field_Fire_Damage",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetSystemValueToOverrideMap",
@@ -3112,14 +3112,14 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.5,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 8.0
+                  "radius": 8.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3127,7 +3127,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -3146,7 +3146,7 @@
                     "hitImpulseType": "LV1",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 0.0,
+                      "hitImpulseX": 0.0,
                       "hitImpulseY": 800.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -3162,7 +3162,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Field_Fire",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValue",
@@ -3271,7 +3271,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Field_Fire_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onFieldEnter": [
@@ -3387,7 +3387,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Field_Electric_Damage",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetSystemValueToOverrideMap",
@@ -3402,14 +3402,14 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.5,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 8.0
+                  "radius": 8.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3417,7 +3417,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -3436,7 +3436,7 @@
                     "hitImpulseType": "LV1",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 0.0,
+                      "hitImpulseX": 0.0,
                       "hitImpulseY": 800.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -3502,7 +3502,7 @@
                   "born": {
                     "$type": "FLIPADNBJJF"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -3518,13 +3518,13 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "FLIPADNBJJF"
                       },
                       "height": 5.0,
-                      "BMCPFKAEOJB": 2.0
+                      "radius": 2.0
                     },
                     "attackInfo": {
                       "attackTag": "",
@@ -3532,7 +3532,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 1.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Electric",
                         "bonusCriticalHurt": 0.0,
                         "ignoreAttackerProperty": true,
@@ -3576,7 +3576,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Field_Electric",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValue",
@@ -3680,7 +3680,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Field_Electric_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onFieldEnter": [
@@ -3788,7 +3788,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["FallingAttack"],
-              "MKLAMNDEDGB": [
+              "damagePercentageRatio": [
                 "R_FallDwonDamage",
                 "R_FallDwonDamageStacking",
                 "MUL",
@@ -3841,7 +3841,7 @@
                         "$type": "FLIPADNBJJF",
                         "DAPKLNIFPID": true
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "ApplyModifier",
@@ -3857,13 +3857,13 @@
                       "$type": "TriggerAttackEvent",
                       "attackEvent": {
                         "attackPattern": {
-                          "$type": "CHEAOJDOBEB",
+                          "$type": "ConfigAttackCircle",
                           "triggerType": "TriggerNoRepeat",
                           "born": {
                             "$type": "FLIPADNBJJF"
                           },
                           "height": 5.0,
-                          "BMCPFKAEOJB": 5.0
+                          "radius": 5.0
                         },
                         "attackInfo": {
                           "attackTag": "",
@@ -3871,7 +3871,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": 0.0,
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Wind",
                             "bonusCriticalHurt": 50.0,
                             "ignoreAttackerProperty": true,
@@ -3908,7 +3908,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Field_Wind_Damage",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetSystemValueToOverrideMap",
@@ -3923,14 +3923,14 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.5,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 8.0
+                  "radius": 8.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3938,7 +3938,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -3957,7 +3957,7 @@
                     "hitImpulseType": "LV1",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 0.0,
+                      "hitImpulseX": 0.0,
                       "hitImpulseY": 800.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -4102,7 +4102,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Xiao_HowlingSoul_Jump",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4143,7 +4143,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Field_Wind",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValue",
@@ -4243,7 +4243,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Field_Wind_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -4335,7 +4335,7 @@
               "RotationDampTime": true,
               "configID": 2024,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -4392,7 +4392,7 @@
               "RotationDampTime": true,
               "configID": 2024,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -4423,7 +4423,7 @@
               "RotationDampTime": true,
               "configID": 2024,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -4448,7 +4448,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Buff_Electric_BoomAtk",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -4460,14 +4460,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 8.0
+                  "radius": 8.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -4516,7 +4516,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Buff_Electric_BoomAtk",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValueToOverrideMap",
@@ -4557,14 +4557,14 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "",
               "attenuationTag": "",
               "attenuationGroup": "default",
               "attackProperty": {
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "ignoreAttackerProperty": true,
@@ -4661,7 +4661,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee",
@@ -4681,7 +4681,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_01_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee"
@@ -4695,12 +4695,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_01_Finish",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_Success_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee"
@@ -4714,7 +4714,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_01_Success",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ChangeGadgetUIInteractHint",
@@ -4763,7 +4763,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeHardBattle_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee",
@@ -4783,7 +4783,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeHardBattle_01_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee"
@@ -4797,12 +4797,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_Success_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeHardBattle_01_Finish",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee"
@@ -4816,7 +4816,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeHardBattle_01_Success",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ChangeGadgetUIInteractHint",
@@ -4865,7 +4865,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeCure_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee"
@@ -4879,7 +4879,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeCure_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee",
@@ -4894,7 +4894,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeCure_01_Stay",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee",
@@ -4909,12 +4909,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_Success_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeCure_01_Used",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee"
@@ -4957,7 +4957,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeShop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee",
@@ -4972,7 +4972,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeShop_01_Stay",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee",
@@ -4996,12 +4996,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeShop_01_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeShop_01_Finish",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableGadgetIntee"
@@ -5044,7 +5044,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBossBattle_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5055,7 +5055,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBossBattle_01_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5066,7 +5066,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBossBattle_01_Success",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5077,12 +5077,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_Success_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBossBattle_01_Finish",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -5249,7 +5249,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeDefend_Charge",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ServerLuaCall",
@@ -5306,7 +5306,7 @@
               "$type": "FireEffect",
               "target": "CurLocalAvatar",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeDefend_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetSystemValueToOverrideMap",
@@ -5322,7 +5322,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 25.0,
                   "ignoreAttackerProperty": true,
                   "strikeType": "Default",
@@ -5385,12 +5385,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeDefend_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeDefend_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetSystemValueToOverrideMap",
@@ -5405,14 +5405,14 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.5,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5420,7 +5420,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "ignoreAttackerProperty": true,
                     "strikeType": "Default",
@@ -5440,7 +5440,7 @@
                     "hitImpulseType": "LV1",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 0.0,
+                      "hitImpulseX": 0.0,
                       "hitImpulseY": 800.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -5454,7 +5454,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeDefend_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetSystemValueToOverrideMap",
@@ -5469,14 +5469,14 @@
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.5,
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5484,7 +5484,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "ignoreAttackerProperty": true,
                     "strikeType": "Default",
@@ -5504,7 +5504,7 @@
                     "hitImpulseType": "LV1",
                     "overrideHitImpulse": {
                       "hitLevel": "Heavy",
-                      "IPHCEFBMJAJ": 0.0,
+                      "hitImpulseX": 0.0,
                       "hitImpulseY": 800.0
                     },
                     "hitHaltTimeScale": 0.05000000074505806
@@ -5549,7 +5549,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Item_SpecialTreasureBox_LockIdle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ServerLuaCall",
@@ -5566,7 +5566,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeDefend_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -5577,7 +5577,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeDefend_Destroy",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -5636,7 +5636,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -5659,7 +5659,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -5730,7 +5730,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "attachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -5744,7 +5744,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "attachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -5771,7 +5771,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ScenObj_ThunderArrow_01_Shoot",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -5786,7 +5786,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ScenObj_ThunderArrow_01_Shoot",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -5816,7 +5816,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_ScenObj_ThunderArrow_01_Arrow",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -5843,7 +5843,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ScenObj_ThunderArrow_01_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetSystemValueToOverrideMap",
@@ -5859,7 +5859,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 25.0,
                   "ignoreAttackerProperty": true,
@@ -5906,9 +5906,9 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_Stay",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -5916,9 +5916,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_01",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -5930,14 +5930,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementRank": 3.0,
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -5998,9 +5998,9 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_Stay",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -6008,9 +6008,9 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_01",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -6022,14 +6022,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementRank": 3.0,
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,

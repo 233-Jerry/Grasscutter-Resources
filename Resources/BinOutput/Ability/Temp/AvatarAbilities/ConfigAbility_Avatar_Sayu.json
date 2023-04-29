@@ -397,19 +397,19 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_HideSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_Roll",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_Roll_Fade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -419,7 +419,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -430,7 +430,7 @@
                 }
               },
               "height": 1.7999999523162842,
-              "BMCPFKAEOJB": 2.5
+              "radius": 2.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -438,7 +438,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Click_StrikeDamage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -473,7 +473,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_Strike",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -490,7 +490,7 @@
           "$type": "DamageByAttackValue",
           "target": "Target",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -503,7 +503,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": "Roll_Damage",
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Wind",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Default",
@@ -726,19 +726,19 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_Charge_Spark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_Roll",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_Roll_Fade",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -795,7 +795,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -806,7 +806,7 @@
                     }
                   },
                   "height": 2.5,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -814,7 +814,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Hold_StrikeDamage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -853,11 +853,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Sayu_ElementalArt_MixType",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_Hold_Strike",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Predicated",
@@ -866,7 +866,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Sayu_ElementalArt_MixType",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "successActions": [
@@ -874,7 +874,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -885,7 +885,7 @@
                         }
                       },
                       "height": 2.5,
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Art",
@@ -893,7 +893,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "Hold_Mix_StrikeDamage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Fire",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Default",
@@ -913,7 +913,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_Hold_Strike_Fire",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -924,7 +924,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Sayu_ElementalArt_MixType",
                   "ratio": 2.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "successActions": [
@@ -932,7 +932,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -943,7 +943,7 @@
                         }
                       },
                       "height": 2.5,
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Art",
@@ -951,7 +951,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "Hold_Mix_StrikeDamage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Water",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Default",
@@ -971,7 +971,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_Hold_Strike_Water",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -982,7 +982,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Sayu_ElementalArt_MixType",
                   "ratio": 3.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "successActions": [
@@ -990,7 +990,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -1001,7 +1001,7 @@
                         }
                       },
                       "height": 2.5,
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Art",
@@ -1009,7 +1009,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "Hold_Mix_StrikeDamage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Electric",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Default",
@@ -1029,7 +1029,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_Hold_Strike_Electric",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1040,7 +1040,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Sayu_ElementalArt_MixType",
                   "ratio": 4.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "successActions": [
@@ -1048,7 +1048,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -1059,7 +1059,7 @@
                         }
                       },
                       "height": 2.5,
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Art",
@@ -1067,7 +1067,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": "Hold_Mix_StrikeDamage",
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Ice",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Default",
@@ -1087,7 +1087,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalArt_Hold_Strike_Ice",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -1171,7 +1171,7 @@
           "$type": "DamageByAttackValue",
           "target": "Target",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -1184,7 +1184,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": "Roll_Damage",
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Wind",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Default",
@@ -1209,11 +1209,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Sayu_ElementalArt_MixType",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -1226,7 +1226,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": "MixRoll_Damage",
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Fire",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Default",
@@ -1250,11 +1250,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Sayu_ElementalArt_MixType",
               "ratio": 2.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -1267,7 +1267,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": "MixRoll_Damage",
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Water",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Default",
@@ -1291,11 +1291,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Sayu_ElementalArt_MixType",
               "ratio": 3.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -1308,7 +1308,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": "MixRoll_Damage",
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Electric",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Default",
@@ -1332,11 +1332,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Sayu_ElementalArt_MixType",
               "ratio": 4.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -1349,7 +1349,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": "MixRoll_Damage",
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Ice",
               "bonusCriticalHurt": 25.0,
               "strikeType": "Default",
@@ -1384,7 +1384,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Sayu_ElementalArt_MixType",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "elementBatchPredicateds": [
@@ -1534,7 +1534,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1545,7 +1545,7 @@
                     }
                   },
                   "height": 1.5,
-                  "BMCPFKAEOJB": 1.2000000476837158
+                  "radius": 1.2000000476837158
                 },
                 "attackInfo": {
                   "attackTag": "Sayu_ElementalArt_Mix_Detect",
@@ -1553,7 +1553,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "AntiFire",
                     "bonusCriticalHurt": 1.0,
                     "enBreak": 0.0
@@ -1627,7 +1627,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1635,7 +1635,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -1666,7 +1666,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1674,7 +1674,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1705,7 +1705,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1713,7 +1713,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1905,7 +1905,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalBurst_Spark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -1938,13 +1938,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_ElementalBurst_Strike",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1955,7 +1955,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.5
+                  "radius": 4.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -1963,7 +1963,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_Ratio",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -2201,7 +2201,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Sayu_Constellation_1"
+                  "talentParam": "Sayu_Constellation_1"
                 }
               ],
               "ratio": 2.0,
@@ -2336,12 +2336,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_Daruma_Born",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_Daruma_Field",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2368,7 +2368,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_Daruma_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -2386,7 +2386,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Sayu_PermanentSkill_2"
+                  "talentParam": "Sayu_PermanentSkill_2"
                 }
               ],
               "successActions": [
@@ -2434,12 +2434,12 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_Daruma_HealSingle",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_Daruma_HealZone",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -2451,7 +2451,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_Daruma_HealSingle",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -2468,7 +2468,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Sayu_PermanentSkill_2"
+                  "talentParam": "Sayu_PermanentSkill_2"
                 }
               ],
               "successActions": [
@@ -2477,7 +2477,7 @@
                   "target": "Caster",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -2488,7 +2488,7 @@
                         }
                       },
                       "height": 2.5,
-                      "BMCPFKAEOJB": 3.5
+                      "radius": 3.5
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Burst",
@@ -2500,7 +2500,7 @@
                           "Constellation_6_Damage",
                           "ADD"
                         ],
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Wind",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Default",
@@ -2519,7 +2519,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_Daruma_AttackZone",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -2538,7 +2538,7 @@
                           "z": 0.0
                         }
                       },
-                      "BMCPFKAEOJB": 1.0
+                      "radius": 1.0
                     },
                     "attackInfo": {
                       "attackTag": "Elemental_Burst",
@@ -2550,7 +2550,7 @@
                           "Constellation_6_Damage",
                           "ADD"
                         ],
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Wind",
                         "bonusCriticalHurt": 25.0,
                         "strikeType": "Default",
@@ -2569,7 +2569,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_Daruma_AttackSingle",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -2623,7 +2623,7 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Sayu_Constellation_6"
+                  "talentParam": "Sayu_Constellation_6"
                 }
               ],
               "successActions": [
@@ -2837,7 +2837,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Self_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2848,12 +2848,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Self",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2889,7 +2889,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -2897,7 +2897,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -3060,7 +3060,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3071,7 +3071,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3232,16 +3232,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3249,7 +3249,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3257,7 +3257,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -3295,15 +3295,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3311,7 +3311,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3319,7 +3319,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -3358,12 +3358,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3372,11 +3372,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3390,43 +3390,43 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01"],
           "damagePercentage": "NormalAttack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02"],
           "damagePercentage": "NormalAttack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03_1"],
           "damagePercentage": "NormalAttack_03_1_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03_2"],
           "damagePercentage": "NormalAttack_03_2_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04"],
           "damagePercentage": "NormalAttack_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack1"],
           "damagePercentage": "ExtraAttack_1_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack2"],
           "damagePercentage": "ExtraAttack_2_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -3602,7 +3602,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Art"],
-              "MKLAMNDEDGB": ["Buff_Level", "Rate", "MUL"]
+              "damagePercentageRatio": ["Buff_Level", "Rate", "MUL"]
             }
           ]
         }
@@ -3681,14 +3681,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_Show01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Loli_Claymore_Sayu_Show01_00",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

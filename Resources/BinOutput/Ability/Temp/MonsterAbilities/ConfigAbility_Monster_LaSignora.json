@@ -24,7 +24,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0625,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Ice",
                   "bonusCriticalHurt": 10.0
                 },
@@ -48,9 +48,9 @@
               "RotationDampTime": true,
               "canBeHandledOnRecover": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_LASIGNORA_CENTER_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_LASIGNORA_CENTER_POS",
+                "directionKey": ""
               }
             }
           ]
@@ -459,9 +459,9 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_MONSTER_LASIGNORA_CENTER_POS",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_MONSTER_LASIGNORA_CENTER_POS",
+            "directionKey": ""
           },
           "sightGroupWithOwner": true,
           "gadgetID": 42905013,
@@ -483,7 +483,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_MONSTERAFFIX_QUEST_ADJUST",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "modifierName": "UNIQUE_LaSignora_Climate_QuestAdjust"
@@ -1038,7 +1038,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_ShatteredHeart",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1059,7 +1059,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_ShatteredHeart_Clear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1107,7 +1107,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_ShatteredHeart_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddElementDurability",
@@ -1141,7 +1141,7 @@
                 "born": {
                   "$type": "ConfigBornBySelf"
                 },
-                "BMCPFKAEOJB": 12.5
+                "radius": 12.5
               }
             }
           ],
@@ -1155,7 +1155,7 @@
                 "born": {
                   "$type": "ConfigBornBySelf"
                 },
-                "BMCPFKAEOJB": 12.5
+                "radius": 12.5
               }
             }
           ]
@@ -1409,7 +1409,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_CounterStrike",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1439,7 +1439,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.25,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Ice",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Default",
@@ -1579,9 +1579,9 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_LASIGNORA_ROUND_POS_01",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_LASIGNORA_ROUND_POS_01",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42905018,
@@ -1593,9 +1593,9 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_LASIGNORA_ROUND_POS_02",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_LASIGNORA_ROUND_POS_02",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42905019,
@@ -1607,9 +1607,9 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_LASIGNORA_ROUND_POS_03",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_LASIGNORA_ROUND_POS_03",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42905020,
@@ -1621,9 +1621,9 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_LASIGNORA_ROUND_POS_04",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_LASIGNORA_ROUND_POS_04",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42905021,
@@ -1676,9 +1676,9 @@
                   "$type": "CreateGadget",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_MONSTER_LASIGNORA_ROUND_POS_04",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_MONSTER_LASIGNORA_ROUND_POS_04",
+                    "directionKey": ""
                   },
                   "sightGroupWithOwner": true,
                   "gadgetID": 42905021,
@@ -1715,9 +1715,9 @@
                   "$type": "CreateGadget",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_MONSTER_LASIGNORA_ROUND_POS_01",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_MONSTER_LASIGNORA_ROUND_POS_01",
+                    "directionKey": ""
                   },
                   "sightGroupWithOwner": true,
                   "gadgetID": 42905018,
@@ -1754,9 +1754,9 @@
                   "$type": "CreateGadget",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_MONSTER_LASIGNORA_ROUND_POS_02",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_MONSTER_LASIGNORA_ROUND_POS_02",
+                    "directionKey": ""
                   },
                   "sightGroupWithOwner": true,
                   "gadgetID": 42905019,
@@ -1793,9 +1793,9 @@
                   "$type": "CreateGadget",
                   "lifeByOwnerIsAlive": true,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_MONSTER_LASIGNORA_ROUND_POS_03",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_MONSTER_LASIGNORA_ROUND_POS_03",
+                    "directionKey": ""
                   },
                   "sightGroupWithOwner": true,
                   "gadgetID": 42905020,
@@ -1828,7 +1828,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_Shield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableHitBoxByName",
@@ -1892,7 +1892,7 @@
                 },
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2008,7 +2008,7 @@
               "$type": "TurnDirectionToPos",
               "target": "SelfAttackTarget",
               "toPos": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             },
             {
@@ -2081,7 +2081,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 2.5
+              "radius": 2.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -2089,7 +2089,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 5000.0
@@ -2108,7 +2108,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BlinkAS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2172,7 +2172,7 @@
               "$type": "TurnDirectionToPos",
               "target": "SelfAttackTarget",
               "toPos": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               }
             },
             {
@@ -2242,7 +2242,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 2.5
+              "radius": 2.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -2250,7 +2250,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 5000.0
@@ -2269,7 +2269,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BlinkAS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2367,7 +2367,7 @@
           "$type": "CreateGadget",
           "target": "SelfAttackTarget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 3.0,
               "y": 0.0,
@@ -2386,7 +2386,7 @@
           "$type": "CreateGadget",
           "target": "SelfAttackTarget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -1.5,
               "y": 0.0,
@@ -2405,7 +2405,7 @@
           "$type": "CreateGadget",
           "target": "SelfAttackTarget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -1.5,
               "y": 0.0,
@@ -2517,12 +2517,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FrostBlume_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FrostBlume_BulletTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2547,7 +2547,7 @@
             "DAPKLNIFPID": true,
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
@@ -2580,7 +2580,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FrostBlume_Hor_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2601,7 +2601,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "LaSignora_Climate_Cold_High",
@@ -2609,7 +2609,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.375,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 30.0,
                 "strikeType": "Default"
@@ -2637,12 +2637,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FrostBlume_Trace_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FrostBlume_Trace_BulletTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2664,7 +2664,7 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2694,7 +2694,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 0.5
+                  "radius": 0.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2702,7 +2702,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 5000.0
@@ -2721,7 +2721,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -2737,7 +2737,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 0.5
+                  "radius": 0.5
                 },
                 "attackInfo": {
                   "attackTag": "LaSignora_Climate_Cold_High",
@@ -2745,7 +2745,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.375,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 30.0,
                     "strikeType": "Default"
@@ -2779,14 +2779,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FrostBlume_Gadget",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FrostBlume_GadgetAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2797,7 +2797,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "LaSignora_Climate_Cold",
@@ -2805,7 +2805,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.375,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 30.0,
                     "strikeType": "Default",
@@ -2828,7 +2828,7 @@
                 "born": {
                   "$type": "ConfigBornBySelf"
                 },
-                "BMCPFKAEOJB": 2.0
+                "radius": 2.0
               }
             },
             {
@@ -2927,7 +2927,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_Single_BulletBS01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2938,7 +2938,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_Single_BulletBS02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2949,7 +2949,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_Single_BulletBS03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2960,7 +2960,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_Single_BulletBS04",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2971,7 +2971,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_Single_BulletBS05",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3275,12 +3275,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_Single_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_Single_BulletTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3302,7 +3302,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3313,7 +3313,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.30000001192092896
+              "radius": 0.30000001192092896
             },
             "attackInfo": {
               "attackTag": "LaSignora_Climate_Cold",
@@ -3321,7 +3321,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.25,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 20.0,
                 "strikeType": "Default"
@@ -3368,7 +3368,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.75,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Default",
@@ -3421,7 +3421,7 @@
           ],
           "bulletID": 42905015,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 3.677000045776367,
               "y": 6.5,
@@ -3451,9 +3451,9 @@
               "target": "Caster",
               "ownerIs": "Caster",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_LASIGNORA_CENTER_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_LASIGNORA_CENTER_POS",
+                "directionKey": ""
               },
               "gadgetID": 42905010,
               "campID": 4001
@@ -3497,7 +3497,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_BulletBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3537,12 +3537,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_BulletTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3577,13 +3577,13 @@
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByCollisionPoint",
@@ -3591,7 +3591,7 @@
                     "BJCIHELGKLP": true
                   },
                   "height": 1.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "LaSignora_Climate_Cold_High",
@@ -3599,7 +3599,7 @@
                   "attenuationGroup": "Monster_LaSignora_Attenuation_Impulse",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -3649,7 +3649,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 0.75
+                  "radius": 0.75
                 },
                 "attackInfo": {
                   "attackTag": "LaSignora_Climate_Cold_High",
@@ -3657,7 +3657,7 @@
                   "attenuationGroup": "Monster_LaSignora_Attenuation_Impulse",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -3690,19 +3690,19 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_Gadget",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_Area",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_BaneChisel_GadgetAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -3713,7 +3713,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 4.75
+                  "radius": 4.75
                 },
                 "attackInfo": {
                   "attackTag": "LaSignora_Climate_Cold_High",
@@ -3721,7 +3721,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.75,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -3745,7 +3745,7 @@
                 "born": {
                   "$type": "ConfigBornBySelf"
                 },
-                "BMCPFKAEOJB": 5.0
+                "radius": 5.0
               }
             }
           ]
@@ -3805,7 +3805,7 @@
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_Wrap_Follow",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -3838,7 +3838,7 @@
               "born": {
                 "$type": "HDCGDNFAKPL"
               },
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "effectTempleteID": true
             },
             {
@@ -3846,7 +3846,7 @@
               "target": "Applier",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "HDCGDNFAKPL",
@@ -3858,7 +3858,7 @@
                     "GMMDIJCKLKK": true
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "LaSignora_Climate_Cold_High",
@@ -3866,7 +3866,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -3890,7 +3890,7 @@
                 "born": {
                   "$type": "HDCGDNFAKPL"
                 },
-                "BMCPFKAEOJB": 2.5
+                "radius": 2.5
               }
             }
           ]
@@ -4008,7 +4008,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FlameDesire_Pickup",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachModifier",
@@ -4098,7 +4098,7 @@
                           "born": {
                             "$type": "FLIPADNBJJF"
                           },
-                          "BMCPFKAEOJB": 1.0
+                          "radius": 1.0
                         },
                         "attackInfo": {
                           "attackTag": "LaSignora_FlameDesire",
@@ -4106,7 +4106,7 @@
                           "attenuationGroup": "default",
                           "attackProperty": {
                             "damagePercentage": 0.0,
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "elementType": "Fire",
                             "bonusCriticalHurt": 200.0,
                             "strikeType": "Default",
@@ -4128,7 +4128,7 @@
                       "born": {
                         "$type": "FLIPADNBJJF"
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "SetGlobalValue",
@@ -4218,9 +4218,9 @@
             {
               "$type": "TryFindBlinkPointByBorn",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_MONSTER_LASIGNORA_CENTER_POS",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_MONSTER_LASIGNORA_CENTER_POS",
+                "directionKey": ""
               },
               "hitSceneTest": false,
               "limitY": 2.5
@@ -4239,7 +4239,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4247,7 +4247,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 5000.0
@@ -4371,7 +4371,7 @@
               "born": {
                 "$type": "FLIPADNBJJF"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -4399,7 +4399,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_Cocoon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -4411,7 +4411,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_CocoonLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -4610,7 +4610,7 @@
               "target": "SelfAttackTarget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 1.0,
@@ -4717,7 +4717,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FlameDesire_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -4739,14 +4739,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FlameDesire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FlameDesire_Disappear",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -4827,12 +4827,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FrostBlume_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FrostBlume_BulletTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4860,7 +4860,7 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "CreateGadget",
@@ -4900,14 +4900,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FrostBlume_Gadget",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_FrostBlume_GadgetAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -4918,7 +4918,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "LaSignora_Climate_Cold",
@@ -4926,7 +4926,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.375,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 30.0,
                     "strikeType": "Default",
@@ -4949,7 +4949,7 @@
                 "born": {
                   "$type": "ConfigBornBySelf"
                 },
-                "BMCPFKAEOJB": 2.0
+                "radius": 2.0
               }
             },
             {
@@ -5151,12 +5151,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_Cocoon_BaneChisel_Single_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_Cocoon_BaneChisel_Single_BulletTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -5178,7 +5178,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -5189,7 +5189,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.30000001192092896
+              "radius": 0.30000001192092896
             },
             "attackInfo": {
               "attackTag": "LaSignora_Climate_Cold",
@@ -5197,7 +5197,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.25,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "bonusCriticalHurt": 20.0,
                 "strikeType": "Default"

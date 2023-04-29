@@ -59,7 +59,7 @@
                 "ExtraAttack",
                 "FallingAttack"
               ],
-              "MKLAMNDEDGB": "AtkDamageUpRatio"
+              "damagePercentageRatio": "AtkDamageUpRatio"
             }
           ]
         }
@@ -156,7 +156,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "ElementalBurstDamageUpRate"
+              "damagePercentageRatio": "ElementalBurstDamageUpRate"
             }
           ]
         }
@@ -273,9 +273,9 @@
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_SwirlDoField_DoAttack_02",
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -288,14 +288,14 @@
                     "$type": "ConfigBornBySelf",
                     "IABNJPGBAOH": true
                   },
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 25.0,

@@ -180,7 +180,7 @@
                 },
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -330,7 +330,7 @@
                   "$type": "NFGKOJBHMLL"
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -348,7 +348,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_EnergyCore",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -359,7 +359,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_CoreStandbyFree",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "HideUIBillBoard",
@@ -386,7 +386,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_CoreStandby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -835,14 +835,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_EnergyCoreReborn",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_RebornBS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -854,7 +854,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Reborn",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -1009,7 +1009,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Reborn",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Predicated",
@@ -1103,7 +1103,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetPoseBool",
@@ -1531,7 +1531,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1544,7 +1544,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWindBS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AddGlobalValue",
@@ -1625,7 +1625,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWind_AS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -1655,7 +1655,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1695,7 +1695,7 @@
               "$type": "AttachEffect",
               "target": "Target",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_EnergyAbsorbAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -1733,7 +1733,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirFlow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2058,12 +2058,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirGunCore",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirGunCircle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2080,12 +2080,12 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirGunCore_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -2601,12 +2601,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirGunCore",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirGunCircle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2623,12 +2623,12 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Self"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirGunCore_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -3078,7 +3078,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirGunShield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3093,7 +3093,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -3117,7 +3117,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirGunLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -3130,7 +3130,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.25
+              "radius": 1.25
             },
             "attackInfo": {
               "attackTag": "",
@@ -3138,7 +3138,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.75,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -3169,7 +3169,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireHitEffect",
@@ -3230,7 +3230,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3241,7 +3241,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 10.0
+                  "radius": 10.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3249,7 +3249,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -3304,7 +3304,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 1.5,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Wind",
               "bonusCriticalHurt": 50.0,
               "strikeType": "Default",
@@ -3382,7 +3382,7 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -3404,7 +3404,7 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -3457,7 +3457,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_WindFallAlert",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3483,7 +3483,7 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3503,7 +3503,7 @@
               "gadgetID": 42004103,
               "campTargetType": "All",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true
               }
             }
@@ -3512,7 +3512,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirFlow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3538,7 +3538,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_WindFallLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -3547,9 +3547,9 @@
           "target": "Owner",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_WindFallHit",
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3560,7 +3560,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.5
+              "radius": 1.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -3568,7 +3568,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -3665,7 +3665,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3676,7 +3676,7 @@
                     }
                   },
                   "height": 2.25,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3684,7 +3684,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.10000000149011612,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -3766,7 +3766,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirBlade",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3780,7 +3780,7 @@
           "$type": "SetGlobalPos",
           "key": "InitialPos",
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           }
         }
       ],
@@ -3932,7 +3932,7 @@
           "$type": "SetGlobalPos",
           "key": "InitialPos",
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           }
         }
       ],
@@ -4221,12 +4221,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_TornadoBS_OnGround",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Tornado_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -4418,7 +4418,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4430,7 +4430,7 @@
                     "DAPKLNIFPID": true
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4438,7 +4438,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -4463,12 +4463,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_TornadoBS_OnGround",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Tornado_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -4660,7 +4660,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4672,7 +4672,7 @@
                     "DAPKLNIFPID": true
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -4680,7 +4680,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5010,7 +5010,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsMixed",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "elementBatchPredicateds": [
@@ -5165,7 +5165,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_TornadoWind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5216,7 +5216,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "AntiFire",
                     "bonusCriticalHurt": 0.0,
                     "enBreak": 0.0
@@ -5244,7 +5244,7 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -5268,7 +5268,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_TornadoWind_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -5299,7 +5299,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.75,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5330,7 +5330,7 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -5339,7 +5339,7 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -5385,7 +5385,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_TornadoFire_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -5416,7 +5416,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.75,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5447,7 +5447,7 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -5493,7 +5493,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_TornadoElectric_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -5524,7 +5524,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.75,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5555,7 +5555,7 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -5601,7 +5601,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_TornadoWater_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -5632,7 +5632,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.75,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5663,7 +5663,7 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -5709,7 +5709,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_TornadoIce_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -5740,7 +5740,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.75,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -5775,7 +5775,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_TornadoWind_BS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -5821,13 +5821,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsWind",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsMixed",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "lifeByOwnerIsAlive": true,
@@ -5850,13 +5850,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsFire",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsMixed",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "lifeByOwnerIsAlive": true,
@@ -5879,13 +5879,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsElectric",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsMixed",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "lifeByOwnerIsAlive": true,
@@ -5908,13 +5908,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsWater",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsMixed",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "lifeByOwnerIsAlive": true,
@@ -5937,13 +5937,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsIce",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsMixed",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "lifeByOwnerIsAlive": true,
@@ -5968,13 +5968,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsWind",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsMixed",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "lifeByOwnerIsAlive": true,
@@ -5997,13 +5997,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsFire",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsMixed",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "lifeByOwnerIsAlive": true,
@@ -6026,13 +6026,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsElectric",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsMixed",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "lifeByOwnerIsAlive": true,
@@ -6055,13 +6055,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsWater",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsMixed",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "lifeByOwnerIsAlive": true,
@@ -6084,13 +6084,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsIce",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Tornado_IsMixed",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "lifeByOwnerIsAlive": true,
@@ -6153,7 +6153,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -6166,7 +6166,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWindBS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -6205,7 +6205,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWind_AS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -6250,7 +6250,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallFire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -6263,7 +6263,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallFireBS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -6293,7 +6293,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallFire_AS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -6338,7 +6338,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallElectric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -6351,7 +6351,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallElectricBS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -6381,7 +6381,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallElectric_AS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -6426,7 +6426,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWater",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -6439,7 +6439,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWaterBS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -6469,7 +6469,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWater_AS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -6514,7 +6514,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallIce",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -6527,7 +6527,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallIceBS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -6557,7 +6557,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallIce_AS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -6719,7 +6719,7 @@
                           "$type": "ByTargetGlobalValue",
                           "key": "_TempCount",
                           "ratio": 0.0,
-                          "forceByCaster": true
+                          "setTarget": true
                         }
                       ],
                       "abilityName": "Effigy_TornadoEmitter_CreateElemBallBullet"
@@ -6763,7 +6763,7 @@
                           "$type": "ByTargetGlobalValue",
                           "key": "_TempCount",
                           "ratio": 0.0,
-                          "forceByCaster": true
+                          "setTarget": true
                         }
                       ],
                       "abilityName": "Effigy_TornadoEmitter_CreateElemBallBullet"
@@ -6809,7 +6809,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_TempCount",
                       "ratio": 0.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ],
                   "abilityName": "Effigy_TornadoEmitter_CreateElemBallBullet"
@@ -7031,7 +7031,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_EnergyAbsorb_CircleAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -7047,7 +7047,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -7058,7 +7058,7 @@
                     }
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -7066,7 +7066,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.10000000149011612,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -7090,7 +7090,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_EnergyAbsorbLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7343,18 +7343,18 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Tornado_IsWind",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Tornado_IsMixed",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "bulletID": 42004110,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -7374,18 +7374,18 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Tornado_IsFire",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Tornado_IsMixed",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "bulletID": 42004111,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -7405,18 +7405,18 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Tornado_IsElectric",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Tornado_IsMixed",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "bulletID": 42004112,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -7436,18 +7436,18 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Tornado_IsWater",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Tornado_IsMixed",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "bulletID": 42004113,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -7467,18 +7467,18 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Tornado_IsIce",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             },
             {
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Tornado_IsMixed",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "bulletID": 42004114,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -7540,7 +7540,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -7631,7 +7631,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallFire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -7680,7 +7680,7 @@
                   "target": "OriginOwner",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Elite_EnergyAbsorbBoomFire",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -7689,7 +7689,7 @@
                     "DAPKLNIFPID": true,
                     "BJCIHELGKLP": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "AddGlobalValue",
@@ -7796,7 +7796,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallElectric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -7845,7 +7845,7 @@
                   "target": "OriginOwner",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Elite_EnergyAbsorbBoomElectric",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -7854,7 +7854,7 @@
                     "DAPKLNIFPID": true,
                     "BJCIHELGKLP": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "AddGlobalValue",
@@ -7961,7 +7961,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWater",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -8010,7 +8010,7 @@
                   "target": "OriginOwner",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Elite_EnergyAbsorbBoomWater",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -8019,7 +8019,7 @@
                     "DAPKLNIFPID": true,
                     "BJCIHELGKLP": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "AddGlobalValue",
@@ -8126,7 +8126,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallIce",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -8175,7 +8175,7 @@
                   "target": "OriginOwner",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Elite_EnergyAbsorbBoomIce",
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -8184,7 +8184,7 @@
                     "DAPKLNIFPID": true,
                     "BJCIHELGKLP": true
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "AddGlobalValue",
@@ -8439,7 +8439,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Wind",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -8450,7 +8450,7 @@
                   "hitImpulseType": "",
                   "overrideHitImpulse": {
                     "hitLevel": "Air",
-                    "IPHCEFBMJAJ": 100.0,
+                    "hitImpulseX": 100.0,
                     "hitImpulseY": 600.0
                   },
                   "hitHaltTimeScale": 0.009999999776482582
@@ -8475,7 +8475,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_EnergyAbsorbAS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -8489,7 +8489,7 @@
             },
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -8534,7 +8534,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ElementBallCount",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "boolID": "EnergyAbsorbStop",
@@ -8711,7 +8711,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -8722,7 +8722,7 @@
                   "hitImpulseType": "",
                   "overrideHitImpulse": {
                     "hitLevel": "Air",
-                    "IPHCEFBMJAJ": 100.0,
+                    "hitImpulseX": 100.0,
                     "hitImpulseY": 600.0
                   },
                   "hitHaltTimeScale": 0.009999999776482582
@@ -8736,7 +8736,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_EnergyAbsorbAS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -8750,7 +8750,7 @@
             },
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -8784,7 +8784,7 @@
               "target": "Self",
               "key": "_ElementBallCount",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "boolID": "EnergyAbsorbStop",
@@ -8961,7 +8961,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -8972,7 +8972,7 @@
                   "hitImpulseType": "",
                   "overrideHitImpulse": {
                     "hitLevel": "Air",
-                    "IPHCEFBMJAJ": 100.0,
+                    "hitImpulseX": 100.0,
                     "hitImpulseY": 600.0
                   },
                   "hitHaltTimeScale": 0.009999999776482582
@@ -8986,7 +8986,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_EnergyAbsorbAS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -9000,7 +9000,7 @@
             },
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -9034,7 +9034,7 @@
               "target": "Self",
               "key": "_ElementBallCount",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "boolID": "EnergyAbsorbStop",
@@ -9211,7 +9211,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Water",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -9222,7 +9222,7 @@
                   "hitImpulseType": "",
                   "overrideHitImpulse": {
                     "hitLevel": "Air",
-                    "IPHCEFBMJAJ": 100.0,
+                    "hitImpulseX": 100.0,
                     "hitImpulseY": 600.0
                   },
                   "hitHaltTimeScale": 0.009999999776482582
@@ -9236,7 +9236,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_EnergyAbsorbAS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -9250,7 +9250,7 @@
             },
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -9284,7 +9284,7 @@
               "target": "Self",
               "key": "_ElementBallCount",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "boolID": "EnergyAbsorbStop",
@@ -9461,7 +9461,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 1.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Ice",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Blunt",
@@ -9472,7 +9472,7 @@
                   "hitImpulseType": "",
                   "overrideHitImpulse": {
                     "hitLevel": "Air",
-                    "IPHCEFBMJAJ": 100.0,
+                    "hitImpulseX": 100.0,
                     "hitImpulseY": 600.0
                   },
                   "hitHaltTimeScale": 0.009999999776482582
@@ -9486,7 +9486,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_EnergyAbsorbAS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachEffect",
@@ -9500,7 +9500,7 @@
             },
             "DAPKLNIFPID": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -9534,7 +9534,7 @@
               "target": "Self",
               "key": "_ElementBallCount",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "boolID": "EnergyAbsorbStop",
@@ -9560,7 +9560,7 @@
           "$type": "CreateGadget",
           "target": "SelfAttackTarget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "DAPKLNIFPID": true
           },
           "gadgetID": 42004123,
@@ -9675,7 +9675,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Venti_Rise_Monster",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "isLimitedProperties": true
@@ -9693,7 +9693,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -9712,7 +9712,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "DamageByAttackValue",
@@ -9728,7 +9728,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.75,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "elementType": "Wind",
               "bonusCriticalHurt": 50.0,
               "enBreak": 200.0
@@ -9738,7 +9738,7 @@
               "hitImpulseType": "",
               "overrideHitImpulse": {
                 "hitLevel": "Air",
-                "IPHCEFBMJAJ": 0.0,
+                "hitImpulseX": 0.0,
                 "hitImpulseY": 1350.0
               },
               "retreatType": "ByHitDirection"
@@ -9806,7 +9806,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 1.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Wind",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Blunt",
@@ -9817,7 +9817,7 @@
                         "hitImpulseType": "",
                         "overrideHitImpulse": {
                           "hitLevel": "Air",
-                          "IPHCEFBMJAJ": 360.0,
+                          "hitImpulseX": 360.0,
                           "hitImpulseY": 900.0
                         },
                         "hitHaltTimeScale": 0.009999999776482582
@@ -9864,7 +9864,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 1.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "elementType": "Wind",
                         "bonusCriticalHurt": 50.0,
                         "strikeType": "Blunt",
@@ -9875,7 +9875,7 @@
                         "hitImpulseType": "",
                         "overrideHitImpulse": {
                           "hitLevel": "Air",
-                          "IPHCEFBMJAJ": 360.0,
+                          "hitImpulseX": 360.0,
                           "hitImpulseY": 900.0
                         },
                         "hitHaltTimeScale": 0.009999999776482582
@@ -9927,7 +9927,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_MultiAtk2",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -10023,15 +10023,15 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "IGAGDFFFGAO": {
               "$type": "FHDJJGOONEI",
               "OKDPGGJGGCJ": 7.5,
               "CPOKKADJBFH": 12.5
             },
             "DAPKLNIFPID": true,
-            "FNMFBPGNEKD": "InitialPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "InitialPos",
+            "directionKey": ""
           },
           "gadgetID": 42004012,
           "campID": 4001
@@ -10072,7 +10072,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_RushMove",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -10343,7 +10343,7 @@
           ],
           "bulletID": 42004126,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -10371,7 +10371,7 @@
           ],
           "bulletID": 42004126,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 3.799999952316284,
               "y": 1.0,
@@ -10399,7 +10399,7 @@
           ],
           "bulletID": 42004126,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -3.799999952316284,
               "y": 1.0,
@@ -10435,7 +10435,7 @@
             },
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -10448,7 +10448,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -10456,7 +10456,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -10487,7 +10487,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirGunShield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -10502,7 +10502,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -10526,7 +10526,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirGunLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -10539,7 +10539,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.25
+              "radius": 1.25
             },
             "attackInfo": {
               "attackTag": "",
@@ -10547,7 +10547,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.75,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -10574,7 +10574,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireHitEffect",
@@ -10599,7 +10599,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirGunShield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -10614,7 +10614,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf"
@@ -10638,7 +10638,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Elite_AirGunAOE",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -10651,7 +10651,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 3.799999952316284
+              "radius": 3.799999952316284
             },
             "attackInfo": {
               "attackTag": "",
@@ -10659,7 +10659,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.75,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -10670,7 +10670,7 @@
                 "hitImpulseType": "LV3",
                 "overrideHitImpulse": {
                   "hitLevel": "Heavy",
-                  "IPHCEFBMJAJ": 400.0,
+                  "hitImpulseX": 400.0,
                   "hitImpulseY": 300.0
                 },
                 "hitHaltTimeScale": 0.009999999776482582
@@ -10692,7 +10692,7 @@
             },
             "BJCIHELGKLP": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireHitEffect",
@@ -10773,7 +10773,7 @@
               "target": "SelfAttackTarget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -10802,7 +10802,7 @@
               "target": "SelfAttackTarget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -10827,7 +10827,7 @@
               },
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -10856,7 +10856,7 @@
               "target": "SelfAttackTarget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -10881,7 +10881,7 @@
               },
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -10966,7 +10966,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_WindFallAlert",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -10979,7 +10979,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_WindFallLoop",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -10988,9 +10988,9 @@
           "target": "Owner",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_WindFallHit",
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -11001,7 +11001,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -11009,7 +11009,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -11082,7 +11082,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Elite_WindFallPile_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -11099,7 +11099,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Elite_WindFallPile",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -11180,7 +11180,7 @@
               "gadgetID": 42004103,
               "campTargetType": "All",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true
               }
             }
@@ -11189,12 +11189,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_AirFlow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_Elite_WindFallPile_Die",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -11239,7 +11239,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -11252,7 +11252,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWindBS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AddGlobalValue",
@@ -11298,7 +11298,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Wind_ElemBallWind_AS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveModifier",
@@ -11551,7 +11551,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -11571,7 +11571,7 @@
                 },
                 "attachPointName": "WingAttach"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -11686,7 +11686,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -11697,7 +11697,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 28.0
+              "radius": 28.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -11705,7 +11705,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -11742,7 +11742,7 @@
             "IABNJPGBAOH": true,
             "attachPointName": "WingAttach"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

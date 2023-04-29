@@ -150,7 +150,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Sword_Kaeya_ExtraAttack_SwordAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -210,7 +210,7 @@
               "$type": "GenerateElemBall",
               "configID": 2020,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -240,7 +240,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2020,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -268,8 +268,8 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "sheathPoint"]
               },
               "modifierName": "Fire_Enhancement_Weapon"
             }
@@ -289,7 +289,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Diluc_FireCross_Weapon_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -314,7 +314,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "TasteOfCold"
+              "talentParam": "TasteOfCold"
             }
           ]
         }
@@ -333,12 +333,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Kaeya_IceShield_Impact_SwordAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Kaeya_IceShield_Impact_SwordAS1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -400,7 +400,7 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "FrozenStar"
+                      "talentParam": "FrozenStar"
                     }
                   ],
                   "modifierName": "FrozenStar"
@@ -453,7 +453,7 @@
               "$type": "GenerateElemBall",
               "configID": 2022,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -475,7 +475,7 @@
               "$type": "GenerateElemBall",
               "configID": 2022,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -505,7 +505,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2022,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -530,7 +530,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_TestXXX_IceShield_Impact_Breath",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -558,7 +558,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 50.0,
@@ -569,7 +569,7 @@
               "hitPattern": {
                 "onHitEffectName": "default",
                 "hitLevel": "Heavy",
-                "IPHCEFBMJAJ": 800.0,
+                "hitImpulseX": 800.0,
                 "hitImpulseY": 0.0,
                 "hitImpulseType": "",
                 "hitHaltTimeScale": 0.019999999552965164

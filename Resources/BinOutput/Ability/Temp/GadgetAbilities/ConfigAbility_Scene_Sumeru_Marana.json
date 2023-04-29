@@ -98,7 +98,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_Idle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -140,7 +140,7 @@
                   "$type": "NFGKOJBHMLL"
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -156,7 +156,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_WeakLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -183,7 +183,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_WeakStart_Ground",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -194,7 +194,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_Struggle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -205,7 +205,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_StruggleEnd",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -222,7 +222,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_BubbleAtk_Bs",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -235,7 +235,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_BubbleAtk_As",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -247,7 +247,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_BubbleAtk_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAbility",
@@ -590,7 +590,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_WeakHit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1222,7 +1222,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_WaveAtk_FieldLoop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1234,7 +1234,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_WaveAtk_Loop",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1257,7 +1257,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_WaveAtk_FieldOnce",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1284,7 +1284,7 @@
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Hit_None_Default_Small",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.33000001311302185,
@@ -1294,7 +1294,7 @@
                   "$type": "NFGKOJBHMLL"
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1307,13 +1307,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 5.0,
-                  "BMCPFKAEOJB": 6.300000190734863,
+                  "radius": 6.300000190734863,
                   "innerRadius": 0.0
                 },
                 "attackInfo": {
@@ -1322,7 +1322,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.10000000149011612,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
                     "enBreak": 100.0
@@ -1348,13 +1348,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 5.0,
-                  "BMCPFKAEOJB": 13.5,
+                  "radius": 13.5,
                   "innerRadius": 6.300000190734863
                 },
                 "attackInfo": {
@@ -1363,7 +1363,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.10000000149011612,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
                     "enBreak": 100.0
@@ -1389,13 +1389,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 5.0,
-                  "BMCPFKAEOJB": 25.0,
+                  "radius": 25.0,
                   "innerRadius": 13.5
                 },
                 "attackInfo": {
@@ -1404,7 +1404,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.10000000149011612,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
                     "enBreak": 100.0
@@ -1489,7 +1489,7 @@
               "$type": "TriggerBullet",
               "bulletID": 72000022,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 20.0,
@@ -1503,8 +1503,8 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_Lock_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_Lock_Pos",
+                "directionKey": ""
               }
             }
           ]
@@ -1539,7 +1539,7 @@
               "$type": "TriggerBullet",
               "bulletID": 72000022,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 20.0,
@@ -1553,8 +1553,8 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_Lock_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_Lock_Pos",
+                "directionKey": ""
               }
             }
           ]
@@ -1589,7 +1589,7 @@
               "$type": "TriggerBullet",
               "bulletID": 72000022,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 20.0,
@@ -1603,8 +1603,8 @@
                     "z": 0.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_Lock_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_Lock_Pos",
+                "directionKey": ""
               }
             }
           ]
@@ -1634,7 +1634,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_BubbleAtk_Bullet_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -1658,7 +1658,7 @@
                 "BJCIHELGKLP": true,
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1721,7 +1721,7 @@
                 "BJCIHELGKLP": true,
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1732,7 +1732,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1740,7 +1740,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.30000001192092896,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Pierce",
                     "enBreak": 25.0,
@@ -1830,12 +1830,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_Bs",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_Bs_Body",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -2345,7 +2345,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2377,90 +2377,90 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandHit",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos1",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos1",
+                "directionKey": ""
               }
             },
             {
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandHit",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos2",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos2",
+                "directionKey": ""
               }
             },
             {
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandHit",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos3",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos3",
+                "directionKey": ""
               }
             },
             {
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandHit",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos4",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos4",
+                "directionKey": ""
               }
             },
             {
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandHit",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos5",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos5",
+                "directionKey": ""
               }
             },
             {
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandHit",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos6",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos6",
+                "directionKey": ""
               }
             },
             {
@@ -2497,7 +2497,7 @@
                     }
                   },
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   }
                 }
               ],
@@ -2519,7 +2519,7 @@
                   ],
                   "attacker": "Self",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
                   "attackInfo": {
                     "attackTag": "",
@@ -2527,7 +2527,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 1.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Pierce",
                       "enBreak": 200.0,
@@ -2557,7 +2557,7 @@
                     }
                   },
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   }
                 }
               ]
@@ -2573,21 +2573,21 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos1",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos1",
+                "directionKey": ""
               }
             },
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 5.0,
                 "HOPPHMEKHLG": {
@@ -2596,8 +2596,8 @@
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos1",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos1",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 72000023,
@@ -2614,21 +2614,21 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos2",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos2",
+                "directionKey": ""
               }
             },
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 5.0,
                 "HOPPHMEKHLG": {
@@ -2637,8 +2637,8 @@
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos2",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos2",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 72000023,
@@ -2655,21 +2655,21 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos3",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos3",
+                "directionKey": ""
               }
             },
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 5.0,
                 "HOPPHMEKHLG": {
@@ -2678,8 +2678,8 @@
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos3",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos3",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 72000023,
@@ -2696,21 +2696,21 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos4",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos4",
+                "directionKey": ""
               }
             },
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 5.0,
                 "HOPPHMEKHLG": {
@@ -2719,8 +2719,8 @@
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos4",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos4",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 72000023,
@@ -2737,21 +2737,21 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos5",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos5",
+                "directionKey": ""
               }
             },
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 5.0,
                 "HOPPHMEKHLG": {
@@ -2760,8 +2760,8 @@
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos5",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos5",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 72000023,
@@ -2778,21 +2778,21 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_DeathZero_LaserRain_LandAlert",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "HOPPHMEKHLG": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos6",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos6",
+                "directionKey": ""
               }
             },
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 5.0,
                 "HOPPHMEKHLG": {
@@ -2801,8 +2801,8 @@
                     "x": 1.0
                   }
                 },
-                "FNMFBPGNEKD": "_Marana_LaserAlert_Pos6",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_Marana_LaserAlert_Pos6",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 72000023,
@@ -2871,13 +2871,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 12.5,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2885,7 +2885,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.10000000149011612,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Pierce",
                     "enBreak": 25.0,
@@ -2916,13 +2916,13 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 12.5,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2930,7 +2930,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.10000000149011612,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Pierce",
                     "enBreak": 25.0,
@@ -3153,11 +3153,11 @@
               "$type": "CreateGadget",
               "lifeByOwnerIsAlive": true,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 5.0,
-                "FNMFBPGNEKD": "_SCENEOBJ_Island_Center",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_SCENEOBJ_Island_Center",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "gadgetID": 42608006,
@@ -3226,11 +3226,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_IceShieldActivated_01",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_SCENEOBJ_Island_Shield",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_SCENEOBJ_Island_Shield",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -3239,7 +3239,7 @@
                 "$type": "ConfigBornByAttachPoint",
                 "attachPointName": "LaserControl"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

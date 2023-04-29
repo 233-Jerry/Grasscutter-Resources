@@ -981,17 +981,17 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "BJCIHELGKLP": true,
-                    "FNMFBPGNEKD": "_REGISVINE_CHARGE_ANODE_01_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_REGISVINE_CHARGE_ANODE_01_POS",
+                    "directionKey": ""
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -999,7 +999,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1022,14 +1022,14 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
                   "z": 0.0
                 },
-                "FNMFBPGNEKD": "_REGISVINE_CHARGE_ANODE_01_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_REGISVINE_CHARGE_ANODE_01_POS",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "GKJDJDACPMC": true,
@@ -1094,17 +1094,17 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "DAPKLNIFPID": true,
                     "BJCIHELGKLP": true,
-                    "FNMFBPGNEKD": "_REGISVINE_CHARGE_CATHODE_01_POS",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_REGISVINE_CHARGE_CATHODE_01_POS",
+                    "directionKey": ""
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1112,7 +1112,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1135,14 +1135,14 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 1.0,
                   "z": 0.0
                 },
-                "FNMFBPGNEKD": "_REGISVINE_CHARGE_CATHODE_01_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_REGISVINE_CHARGE_CATHODE_01_POS",
+                "directionKey": ""
               },
               "sightGroupWithOwner": true,
               "GKJDJDACPMC": true,
@@ -2119,7 +2119,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Core_PowerOn_Anode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -2132,7 +2132,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Core_Normal_Anode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -2145,7 +2145,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Core_Normal_02_Anode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorInt",
@@ -2181,7 +2181,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Fruit_PowerOn_Cathode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -2194,7 +2194,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Fruit_Normal_Cathode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -2207,7 +2207,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Fruit_Normal_02_Cathode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorInt",
@@ -2746,12 +2746,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_BreathAttack03_Effect_Anode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_BreathAttack03_EffectBS_Anode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2875,7 +2875,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 10000.0
@@ -2926,7 +2926,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.25,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Pierce",
@@ -3082,15 +3082,15 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 0.5
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_REGISVINE_THUNDER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_REGISVINE_THUNDER_POS",
+                "directionKey": ""
               },
               "gadgetID": 42602037,
               "campID": 4001,
@@ -3113,15 +3113,15 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 2.0,
                   "CPOKKADJBFH": 5.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_REGISVINE_THUNDER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_REGISVINE_THUNDER_POS",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 42602037,
@@ -3145,15 +3145,15 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 2.0,
                   "CPOKKADJBFH": 5.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_REGISVINE_THUNDER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_REGISVINE_THUNDER_POS",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 42602037,
@@ -3171,15 +3171,15 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 2.0,
                   "CPOKKADJBFH": 5.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_REGISVINE_THUNDER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_REGISVINE_THUNDER_POS",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 42602037,
@@ -3203,15 +3203,15 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 2.0,
                   "CPOKKADJBFH": 5.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_REGISVINE_THUNDER_POS",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_REGISVINE_THUNDER_POS",
+                "directionKey": ""
               },
               "GKJDJDACPMC": true,
               "gadgetID": 42602037,
@@ -3227,12 +3227,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_ThunderAttack_Effect_R_Cathode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_ThunderAttack_Effect_L_Cathode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3298,7 +3298,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3310,7 +3310,7 @@
                     "DAPKLNIFPID": true
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3318,7 +3318,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.4000000059604645,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -3381,12 +3381,12 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3394,7 +3394,7 @@
                   "attenuationGroup": "Regisvine_Common",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -3431,7 +3431,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "BMCPFKAEOJB": 2.5
+              "radius": 2.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -3439,7 +3439,7 @@
               "attenuationGroup": "Regisvine_Common",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -3565,12 +3565,12 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
                   "height": 3.0,
-                  "BMCPFKAEOJB": 2.0
+                  "radius": 2.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -3578,7 +3578,7 @@
                   "attenuationGroup": "Regisvine_Common",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -3615,7 +3615,7 @@
               "born": {
                 "$type": "ConfigBornBySelf"
               },
-              "BMCPFKAEOJB": 2.5
+              "radius": 2.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -3623,7 +3623,7 @@
               "attenuationGroup": "Regisvine_Common",
               "attackProperty": {
                 "damagePercentage": 0.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -3816,12 +3816,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_ThunderAttack_Effect_R_Cathode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_ThunderAttack_Effect_L_Cathode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3942,7 +3942,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_RangeAttack_Bullet_Cathode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3966,7 +3966,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -3981,7 +3981,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -3989,7 +3989,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.4000000059604645,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -4046,7 +4046,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Charge_Cathode_Born",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4074,7 +4074,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4090,7 +4090,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4242,7 +4242,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -4255,7 +4255,7 @@
                       "$type": "NFGKOJBHMLL"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -4468,7 +4468,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Charge_Cathode_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4513,7 +4513,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Charge_Anode_Born",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4541,7 +4541,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4557,7 +4557,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4688,7 +4688,7 @@
                     },
                     "attachPointName": "RootNode"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -4701,7 +4701,7 @@
                       "$type": "NFGKOJBHMLL"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -4802,7 +4802,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4934,7 +4934,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Charge_Anode_Hit",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -4989,7 +4989,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -5017,7 +5017,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Applier"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5070,7 +5070,7 @@
             },
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -5141,7 +5141,7 @@
             },
             "attachPointName": "RootNode"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -5259,7 +5259,7 @@
                       "born": {
                         "$type": "ConfigBornByCollisionPoint"
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "RemoveUniqueModifier",
@@ -5302,7 +5302,7 @@
                       "born": {
                         "$type": "ConfigBornByCollisionPoint"
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "TriggerAbility",
@@ -5380,7 +5380,7 @@
                       "$type": "NFGKOJBHMLL"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -5430,7 +5430,7 @@
                   "born": {
                     "$type": "FLIPADNBJJF"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -5592,7 +5592,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Collapse_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -5604,7 +5604,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Collapse_Damage",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -5640,7 +5640,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 3.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Default",
@@ -5782,7 +5782,7 @@
                       "$type": "NFGKOJBHMLL"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -5823,12 +5823,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Die_01_Anode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Die_02_Anode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -5845,12 +5845,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Die_01_Cathode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Electric_Die_02_Cathode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

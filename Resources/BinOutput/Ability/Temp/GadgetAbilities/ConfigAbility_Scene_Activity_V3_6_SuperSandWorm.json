@@ -99,7 +99,7 @@
               "target": "SelfAttackTarget",
               "key": "_target_pos",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true,
                 "JCJGOCMLFIM": true,
                 "BJCIHELGKLP": true
@@ -111,7 +111,7 @@
               "target": "SelfAttackTarget",
               "key": "_target_dir",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "JCJGOCMLFIM": true,
                 "HOPPHMEKHLG": {
                   "$type": "HDLOKIPPKFH",
@@ -138,11 +138,11 @@
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Property_Prop_SandwormAttack_PreAttack_Activity",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "_target_pos",
-                    "GPPNNKAOHCG": "_target_dir"
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "_target_pos",
+                    "directionKey": "_target_dir"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "ApplyModifier",
@@ -173,21 +173,21 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "offset": {
                           "x": 0.0,
                           "y": -5.0,
                           "z": 0.0
                         },
-                        "FNMFBPGNEKD": "_target_pos",
-                        "GPPNNKAOHCG": "_target_dir"
+                        "positionKey": "_target_pos",
+                        "directionKey": "_target_dir"
                       },
                       "height": 9.0,
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "SandwormAttack",
@@ -195,7 +195,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 0.0,
                         "ignoreAttackerProperty": true,
                         "strikeType": "Blunt",
@@ -219,21 +219,21 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "CHEAOJDOBEB",
+                      "$type": "ConfigAttackCircle",
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
-                        "$type": "FNJGDOEMIIB",
+                        "$type": "ConfigBornByGlobalValue",
                         "offset": {
                           "x": 0.0,
                           "y": -5.0,
                           "z": 0.0
                         },
-                        "FNMFBPGNEKD": "_target_pos",
-                        "GPPNNKAOHCG": "_target_dir"
+                        "positionKey": "_target_pos",
+                        "directionKey": "_target_dir"
                       },
                       "height": 9.0,
-                      "BMCPFKAEOJB": 3.0
+                      "radius": 3.0
                     },
                     "attackInfo": {
                       "attackTag": "SandwormAttack",
@@ -241,7 +241,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 0.0,
                         "ignoreAttackerProperty": true,
                         "strikeType": "Blunt",
@@ -304,11 +304,11 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Prop_SandwormAttack_Attack",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_target_pos",
-                "GPPNNKAOHCG": "_target_dir"
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_target_pos",
+                "directionKey": "_target_dir"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -383,7 +383,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -395,7 +395,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -411,7 +411,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -471,7 +471,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -492,7 +492,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -513,7 +513,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -621,7 +621,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -642,7 +642,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -658,7 +658,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -732,7 +732,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -762,7 +762,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -779,7 +779,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "PaokouEffPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -812,7 +812,7 @@
                 "tag": "IS_DieSandworm_PartcontrolTarget"
               },
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_WormCannon_Laser",
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -851,7 +851,7 @@
                 "tag": "IS_DieSandworm_PartcontrolTarget"
               },
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_WormCannon_Hit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -868,7 +868,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "PaokouEffPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -959,7 +959,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -975,7 +975,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -1098,7 +1098,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -1108,7 +1108,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1128,7 +1128,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "AttachPoint"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1173,7 +1173,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "Point1"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -1183,7 +1183,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "Point2"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -1193,7 +1193,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "Point3"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
@@ -1203,7 +1203,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "Point4"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -1249,7 +1249,7 @@
                 "IABNJPGBAOH": true,
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1581,7 +1581,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "SandwormAttack",
@@ -1589,7 +1589,7 @@
               "attenuationGroup": "Sandworm_Stage02_FlyingAttackBullet",
               "attackProperty": {
                 "damagePercentage": 1.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
@@ -1732,7 +1732,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sandworm_01_ActivityGadget_ShootAttack_02_Alert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1793,7 +1793,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sandworm_01_ActivityGadget_ShootAttack_02_Alert",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1833,7 +1833,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sandworm_01_Stage02_DrillRushAttack_Bullet_Activity",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1865,7 +1865,7 @@
             "BJCIHELGKLP": true,
             "IABNJPGBAOH": true
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
@@ -1884,7 +1884,7 @@
                 "BJCIHELGKLP": true,
                 "IABNJPGBAOH": true
               },
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "SandwormAttack",
@@ -1892,7 +1892,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 2.5,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Wind",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Blunt",
@@ -1929,7 +1929,7 @@
               "$type": "FireSubEmitterEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sandworm_01_Stage02_Bullet_Alert_Activity",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               }
@@ -1960,17 +1960,17 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sandworm_01_Stage02_Bullet_Hit_Activity",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1983,7 +1983,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "SandwormAttack",
@@ -1991,7 +1991,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 1.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Wind",
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
@@ -2174,7 +2174,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0
               },
               "hitPattern": {
@@ -2286,7 +2286,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0
               },
               "hitPattern": {
@@ -2803,7 +2803,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Sandworm_01_Stage01_GroundCover",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

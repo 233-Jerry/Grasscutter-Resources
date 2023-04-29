@@ -18,7 +18,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -703,7 +703,7 @@
               "ABIMPICHJNC": "Self"
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -767,7 +767,7 @@
               "z": 1.399999976158142
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ActCameraShake",
@@ -795,7 +795,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -822,7 +822,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 3.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             }
           ],
@@ -849,7 +849,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -869,7 +869,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -883,7 +883,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -892,7 +892,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 3.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             }
           ],
@@ -906,7 +906,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -920,37 +920,37 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK01"],
           "damagePercentage": "NormalAttack_Range_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK02"],
           "damagePercentage": "NormalAttack_Range_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK03"],
           "damagePercentage": "NormalAttack_Range_03_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK04"],
           "damagePercentage": "NormalAttack_Range_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK05"],
           "damagePercentage": "NormalAttack_Range_05_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Arrow_ATK06"],
           "damagePercentage": "NormalAttack_Range_06_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -965,7 +965,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_Arrow_Fly_Big",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -999,17 +999,17 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WaterMagic_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_WaterMagic_Arrow_Fly_Particle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_WaterMagic_Arrow_Fly_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1026,7 +1026,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_Arrow_Fly_Big",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1071,7 +1071,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "DamageWithWater",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -1144,7 +1144,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "DamageWithoutWater",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 10.0,
@@ -1216,7 +1216,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "DamageWithoutWater",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 10.0,
@@ -1306,7 +1306,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_Arrow_Fly_Big",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1452,7 +1452,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 4.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -1465,7 +1465,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "WaterMagic_Arrow_Glow_WithoutWater_Once"
@@ -1480,12 +1480,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WaterMagic_Arrow_Glow_Once_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WaterMagic_Arrow_Glow_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1497,12 +1497,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WaterMagic_Arrow_Glow_Once_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_WaterMagic_Arrow_Glow_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1703,12 +1703,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_IsActivated",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "Caster",
-                  "GFIOLOJIDMG": "Avatar_Tartaglia_EddyBlade"
+                  "talentParam": "Avatar_Tartaglia_EddyBlade"
                 }
               ],
               "successActions": [
@@ -1752,7 +1752,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_IsActivated",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "successActions": [
@@ -1792,7 +1792,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_IsActivated",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "successActions": [
@@ -1845,7 +1845,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_WaterFlower",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -1868,7 +1868,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_WaterFlower_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -1880,11 +1880,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_IsActivated",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Tartaglia_Ripple"
+                  "talentParam": "Avatar_Tartaglia_Ripple"
                 }
               ],
               "modifierName": "WaterMagicArrow_AquaFlower_Range_Talent"
@@ -1897,11 +1897,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_IsActivated",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Tartaglia_Ripple"
+                  "talentParam": "Avatar_Tartaglia_Ripple"
                 }
               ],
               "modifierName": "WaterMagicArrow_AquaFlower_Melee_Talent"
@@ -1911,7 +1911,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_WaterFlower_Kill_Burst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1928,7 +1928,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_05",
@@ -1936,7 +1936,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AquaFlower_Kill_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Slash",
@@ -1960,7 +1960,7 @@
                 {
                   "$type": "HJIPPKGIPOC",
                   "target": "Caster",
-                  "GFIOLOJIDMG": "Avatar_Tartaglia_EndOfIris"
+                  "talentParam": "Avatar_Tartaglia_EndOfIris"
                 }
               ],
               "modifierName": "WaterMagicArrow_AquaFlower_EndOfIris_EnergyRegain"
@@ -1997,7 +1997,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_WaterFlower_Range_Burst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2016,7 +2016,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_03",
@@ -2024,7 +2024,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AquaFlower_Range_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -2088,7 +2088,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_03",
@@ -2096,7 +2096,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AquaFlower_Range_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -2124,7 +2124,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_WaterFlower_Range_Burst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2143,7 +2143,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_03",
@@ -2151,7 +2151,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AquaFlower_Range_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -2215,7 +2215,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_03",
@@ -2223,7 +2223,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AquaFlower_Range_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -2280,7 +2280,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_WaterFlower_Melee_Burst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2299,7 +2299,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -2307,7 +2307,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AquaFlower_Melee_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -2362,7 +2362,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_WaterFlower_Melee_Burst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -2381,7 +2381,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 3.0
+                  "radius": 3.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -2389,7 +2389,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AquaFlower_Melee_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Slash",
@@ -2458,7 +2458,7 @@
                     "attachPointName": "Fx_ChestNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2466,7 +2466,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AquaFlower_Reaper_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Default",
@@ -2489,7 +2489,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_AquariaBlade_Melee_Reaper",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2551,55 +2551,55 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Gandalfr_ATK01"],
           "damagePercentage": "Gandalfr_Attack_01_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Gandalfr_ATK02"],
           "damagePercentage": "Gandalfr_Attack_02_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Gandalfr_ATK03"],
           "damagePercentage": "Gandalfr_Attack_03_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Gandalfr_ATK04"],
           "damagePercentage": "Gandalfr_Attack_04_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Gandalfr_ATK05"],
           "damagePercentage": "Gandalfr_Attack_05_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Gandalfr_ATK06_1"],
           "damagePercentage": "Gandalfr_Attack_06_1_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Gandalfr_ATK06_2"],
           "damagePercentage": "Gandalfr_Attack_06_2_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Gandalfr_ExtraAttack_1"],
           "damagePercentage": "Gandalfr_ExtraAttack_1_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["Gandalfr_ExtraAttack_2"],
           "damagePercentage": "Gandalfr_ExtraAttack_2_DamagePercentage",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -2691,12 +2691,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_Gandalfr_End_Blast",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_Gandalfr_End_Blast_Head",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveUniqueModifier",
@@ -2754,14 +2754,14 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Cooldown_Count",
                   "ratio": 29.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "LessAndEqual"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_AquariaBlade_Ultimate_Used",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
@@ -2783,14 +2783,14 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Cooldown_Count",
                   "ratio": 29.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThan"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_AquariaBlade_Ultimate_Used",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
@@ -2921,7 +2921,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_Gandalfr_Start_Coruscate_Head",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2972,7 +2972,7 @@
             "attackPattern": {
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -2980,7 +2980,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Gandalfr_StartDamage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "elementRank": 3.0,
                 "bonusCriticalHurt": 50.0,
@@ -3010,12 +3010,12 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_Gandalfr_Start_Blast",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Male_Bow_Tartaglia_Gandalfr_Start_Blast_Head",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3098,9 +3098,9 @@
           "$type": "TriggerBullet",
           "bulletID": 41033009,
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "Gandalfr_Attack05Pos",
-            "GPPNNKAOHCG": "Gandalfr_Attack05Dir"
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "Gandalfr_Attack05Pos",
+            "directionKey": "Gandalfr_Attack05Dir"
           }
         }
       ]
@@ -3124,13 +3124,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Perform_Available_ForState",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Perform_Available_ForAnimate",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "skillID": 10332,
@@ -3143,13 +3143,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Perform_Available_ForState",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Perform_Available_ForAnimate",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "abilityName": "Avatar_Tartaglia_Gandalfr"
@@ -3164,14 +3164,14 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_ABILITY_Gandalfr_Perform_Available_ForState",
                       "ratio": 1.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     },
                     {
                       "$type": "ByTargetGlobalValue",
                       "key": "_ABILITY_Gandalfr_Perform_Available_ForAnimate",
                       "ratio": 1.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ]
@@ -3189,14 +3189,14 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_ABILITY_Gandalfr_Perform_Available_ForState",
                       "ratio": 1.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     },
                     {
                       "$type": "ByTargetGlobalValue",
                       "key": "_ABILITY_Gandalfr_Perform_Available_ForAnimate",
                       "ratio": 1.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ]
@@ -3234,13 +3234,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Perform_Available_ForState",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Perform_Available_ForAnimate",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "skillID": 10332,
@@ -3253,13 +3253,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Perform_Available_ForState",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Perform_Available_ForAnimate",
                   "ratio": 0.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "abilityName": "Avatar_Tartaglia_Gandalfr_Remover"
@@ -3274,14 +3274,14 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_ABILITY_Gandalfr_Perform_Available_ForState",
                       "ratio": 1.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     },
                     {
                       "$type": "ByTargetGlobalValue",
                       "key": "_ABILITY_Gandalfr_Perform_Available_ForAnimate",
                       "ratio": 1.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ]
@@ -3299,14 +3299,14 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_ABILITY_Gandalfr_Perform_Available_ForState",
                       "ratio": 1.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     },
                     {
                       "$type": "ByTargetGlobalValue",
                       "key": "_ABILITY_Gandalfr_Perform_Available_ForAnimate",
                       "ratio": 1.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "MoreThanAndEqual"
                     }
                   ]
@@ -3348,7 +3348,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -3359,7 +3359,7 @@
                 }
               },
               "height": 5.0,
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -3367,7 +3367,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "AquariaBlade_Melee_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Water",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Slash",
@@ -3394,7 +3394,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Avatar_Tartaglia_ThousandWithers"
+              "talentParam": "Avatar_Tartaglia_ThousandWithers"
             }
           ],
           "ratio": 1.0,
@@ -3444,7 +3444,7 @@
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -3468,7 +3468,7 @@
             }
           ],
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -3507,7 +3507,7 @@
               "target": "OriginOwner",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3518,7 +3518,7 @@
                     }
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -3526,7 +3526,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "AquariaBlade_Range_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Water",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Pierce",
@@ -3545,7 +3545,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_AquariaBlade_Range_Explosion",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3570,7 +3570,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_AquariaBlade_Range_Alert",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3774,12 +3774,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Single_Or_Dual",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_Gandalfr_Weapon_L_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -3788,12 +3788,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Single_Or_Dual",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_Gandalfr_Weapon_R_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -3802,11 +3802,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Single_Or_Dual",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_Gandalfr_Weapon_Dual_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -3825,12 +3825,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_Gandalfr_Weapon_L",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_Gandalfr_Weapon_R",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3841,12 +3841,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_Gandalfr_Weapon_SingleToDual",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_Gandalfr_Weapon_Dual",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3893,12 +3893,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Single_Or_Dual",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_Gandalfr_Weapon_L_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -3907,12 +3907,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Single_Or_Dual",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_Gandalfr_Weapon_R_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -3921,11 +3921,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_Gandalfr_Single_Or_Dual",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_Gandalfr_Weapon_Dual_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -4041,7 +4041,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR3",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -4123,7 +4123,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -4135,7 +4135,7 @@
                     },
                     "height": 0.4000000059604645,
                     "BAPAHIOBNCL": 30.0,
-                    "BMCPFKAEOJB": 1.399999976158142
+                    "radius": 1.399999976158142
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -4176,12 +4176,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_AquariaBlade_Range_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_AquariaBlade_Range_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4201,12 +4201,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_AquariaBlade_Range_Arrow_Thirdparty",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_AquariaBlade_Range_BS_Thirdparty",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4217,7 +4217,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_AquariaBlade_Range_BS_Shooting",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4228,7 +4228,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Tartaglia_AquariaBlade_Range_BS_Shooting_Thirdparty",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -4240,7 +4240,7 @@
             {
               "$type": "IDHCAKGEMOF",
               "attackPattern": {
-                "$type": "CHEAOJDOBEB",
+                "$type": "ConfigAttackCircle",
                 "triggerType": "TriggerNoRepeat",
                 "born": {
                   "$type": "ConfigBornBySelf",
@@ -4252,7 +4252,7 @@
                 },
                 "height": 0.4000000059604645,
                 "BAPAHIOBNCL": 30.0,
-                "BMCPFKAEOJB": 1.399999976158142
+                "radius": 1.399999976158142
               },
               "PHFBEPGCKAA": true
             },
@@ -4265,7 +4265,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Gandalfr_IsActivated",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "cameraMoveCfgPath": "Camera_Tartaglia_AquariaBlade_Melee"
@@ -4276,7 +4276,7 @@
             {
               "$type": "IDHCAKGEMOF",
               "attackPattern": {
-                "$type": "CHEAOJDOBEB",
+                "$type": "ConfigAttackCircle",
                 "triggerType": "TriggerNoRepeat",
                 "born": {
                   "$type": "ConfigBornBySelf",
@@ -4288,7 +4288,7 @@
                 },
                 "height": 0.4000000059604645,
                 "BAPAHIOBNCL": 30.0,
-                "BMCPFKAEOJB": 1.399999976158142
+                "radius": 1.399999976158142
               },
               "PHFBEPGCKAA": true
             },
@@ -4301,7 +4301,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Gandalfr_IsActivated",
               "ratio": 0.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "cameraMoveCfgPath": "Camera_Tartaglia_AquariaBlade_Range"
@@ -4603,7 +4603,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4614,7 +4614,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -4660,7 +4660,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -4668,7 +4668,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Pierce",
                     "enBreak": 10.0,
@@ -4818,11 +4818,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4983,16 +4983,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -5000,7 +5000,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -5008,7 +5008,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 50.0,
@@ -5030,15 +5030,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -5046,7 +5046,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -5054,7 +5054,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 100.0,
@@ -5076,12 +5076,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -5090,11 +5090,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

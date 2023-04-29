@@ -202,7 +202,7 @@
                   "range": 2
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -245,7 +245,7 @@
                   "attenuationGroup": "Yae_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -361,7 +361,7 @@
                   "attenuationGroup": "Yae_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -410,7 +410,7 @@
                   "attenuationGroup": "Yae_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -459,7 +459,7 @@
                   "attenuationGroup": "Yae_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -508,7 +508,7 @@
                   "attenuationGroup": "Yae_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -557,7 +557,7 @@
                   "attenuationGroup": "Yae_ExtraAttack",
                   "attackProperty": {
                     "damagePercentage": "ExtraAttack_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -603,7 +603,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_Attack_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -646,7 +646,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_Attack_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -689,7 +689,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_Attack_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -769,7 +769,7 @@
                   "range": 4
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -809,7 +809,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack01_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -896,7 +896,7 @@
                   "range": 4
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -936,7 +936,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack02_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1023,7 +1023,7 @@
                   "range": 4
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1063,7 +1063,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Attack03_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -1129,7 +1129,7 @@
                   "RotationDampTime": true,
                   "key": "Yae_ElementBall_Pos",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
                   "setTarget": false
                 },
@@ -1160,9 +1160,9 @@
                   "RotationDampTime": true,
                   "configID": 2020,
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "Yae_ElementBall_Pos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "Yae_ElementBall_Pos",
+                    "directionKey": ""
                   },
                   "value": 1.0,
                   "baseEnergy": 3.0
@@ -1261,12 +1261,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalArt_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalArt_HideSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerSetVisible"
@@ -1311,7 +1311,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalArt_ClickTrail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerSetVisible"
@@ -1386,7 +1386,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalArt_ShowSpark_Foxtail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1431,7 +1431,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalArt_ShowSpark_Click_Foxtail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1469,7 +1469,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalArt_ShowSpark_Foxtail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1482,7 +1482,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalArt_ShowSpark_Click_Foxtail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1602,7 +1602,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "EDLHKEAJOOL": 0.5,
               "born": {
@@ -1614,7 +1614,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 6.0
+              "radius": 6.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1622,7 +1622,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ElementalArt_Bullet_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1687,7 +1687,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "EDLHKEAJOOL": 0.5,
               "born": {
@@ -1699,7 +1699,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 6.0
+              "radius": 6.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1707,7 +1707,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ElementalArt_Bullet_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1766,7 +1766,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "EDLHKEAJOOL": 0.5,
               "born": {
@@ -1778,7 +1778,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 6.0
+              "radius": 6.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1786,7 +1786,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ElementalArt_Bullet_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1851,7 +1851,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "EDLHKEAJOOL": 0.5,
               "born": {
@@ -1863,7 +1863,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 6.0
+              "radius": 6.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1871,7 +1871,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ElementalArt_Bullet_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2080,7 +2080,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElemenalArt_FoxTower_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -2143,7 +2143,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElemenalArt_FoxTower_Dissipate",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "KillSelf",
@@ -2204,7 +2204,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElemenalArt_FoxTower",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -2242,7 +2242,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElemenalArt_FoxTower_Medium",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -2280,7 +2280,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElemenalArt_FoxTower_High",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -2318,7 +2318,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElemenalArt_FoxTower_Top",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -2392,7 +2392,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Ability_Yae_FoxTower_AttackeeCount",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThan"
                 }
               ],
@@ -2426,7 +2426,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Ability_Yae_FoxTower_AttackeeCount",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThan"
                 }
               ],
@@ -2447,12 +2447,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FOXTOWER_LEVEL",
                   "ratio": 2.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "LessAndEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElemenalArt_FoxTower_Charge",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -2461,12 +2461,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FOXTOWER_LEVEL",
                   "ratio": 3.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElemenalArt_FoxTower_Charge_High",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SendEffectTrigger",
@@ -2518,13 +2518,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FOXTOWER_LEVEL",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "Yae_ElemenalArt_FoxTower_ThunderFall_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "Yae_ElemenalArt_FoxTower_ThunderFall_Pos",
+                "directionKey": ""
               },
               "gadgetID": 41058011,
               "campID": 1001,
@@ -2537,13 +2537,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FOXTOWER_LEVEL",
                   "ratio": 2.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "Yae_ElemenalArt_FoxTower_ThunderFall_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "Yae_ElemenalArt_FoxTower_ThunderFall_Pos",
+                "directionKey": ""
               },
               "gadgetID": 41058012,
               "campID": 1001,
@@ -2556,13 +2556,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FOXTOWER_LEVEL",
                   "ratio": 3.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "Yae_ElemenalArt_FoxTower_ThunderFall_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "Yae_ElemenalArt_FoxTower_ThunderFall_Pos",
+                "directionKey": ""
               },
               "gadgetID": 41058013,
               "campID": 1001,
@@ -2575,13 +2575,13 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FOXTOWER_LEVEL",
                   "ratio": 4.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "Yae_ElemenalArt_FoxTower_ThunderFall_Pos",
-                "GPPNNKAOHCG": ""
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "Yae_ElemenalArt_FoxTower_ThunderFall_Pos",
+                "directionKey": ""
               },
               "gadgetID": 41058014,
               "campID": 1001,
@@ -2653,14 +2653,14 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
           "target": "CasterOriginOwner",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2671,7 +2671,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -2679,7 +2679,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FoxTower_Damage_Level_1",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2712,14 +2712,14 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
           "target": "CasterOriginOwner",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2730,7 +2730,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -2738,7 +2738,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FoxTower_Damage_Level_2",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2771,14 +2771,14 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
           "target": "CasterOriginOwner",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2789,7 +2789,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -2797,7 +2797,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FoxTower_Damage_Level_3",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2830,14 +2830,14 @@
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "TriggerAttackEvent",
           "target": "CasterOriginOwner",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2848,7 +2848,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 0.5
+              "radius": 0.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -2856,7 +2856,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FoxTower_Damage_Level_4",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -2933,7 +2933,7 @@
             {
               "$type": "IDHCAKGEMOF",
               "attackPattern": {
-                "$type": "CHEAOJDOBEB",
+                "$type": "ConfigAttackCircle",
                 "triggerType": "TriggerNoRepeat",
                 "born": {
                   "$type": "ConfigBornBySelf",
@@ -2944,7 +2944,7 @@
                   }
                 },
                 "height": 2.0,
-                "BMCPFKAEOJB": 1.399999976158142
+                "radius": 1.399999976158142
               },
               "PHFBEPGCKAA": true
             },
@@ -2980,7 +2980,7 @@
               "$type": "WindZoneMixin",
               "shapeName": "CircleR2",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -3042,7 +3042,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -3053,7 +3053,7 @@
                       }
                     },
                     "height": 2.0,
-                    "BMCPFKAEOJB": 1.399999976158142
+                    "radius": 1.399999976158142
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -3073,7 +3073,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalBurst_ThirdParty",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -3156,7 +3156,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElemenalBurst_GC_Mark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3172,7 +3172,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -3183,7 +3183,7 @@
                       }
                     },
                     "height": 2.0,
-                    "BMCPFKAEOJB": 1.399999976158142
+                    "radius": 1.399999976158142
                   },
                   "PHFBEPGCKAA": true
                 },
@@ -3227,7 +3227,7 @@
             {
               "$type": "IDHCAKGEMOF",
               "attackPattern": {
-                "$type": "CHEAOJDOBEB",
+                "$type": "ConfigAttackCircle",
                 "triggerType": "TriggerNoRepeat",
                 "born": {
                   "$type": "ConfigBornBySelf",
@@ -3238,7 +3238,7 @@
                   }
                 },
                 "height": 2.0,
-                "BMCPFKAEOJB": 1.399999976158142
+                "radius": 1.399999976158142
               },
               "PHFBEPGCKAA": true
             },
@@ -3256,7 +3256,7 @@
             {
               "$type": "IDHCAKGEMOF",
               "attackPattern": {
-                "$type": "CHEAOJDOBEB",
+                "$type": "ConfigAttackCircle",
                 "triggerType": "TriggerNoRepeat",
                 "born": {
                   "$type": "ConfigBornBySelf",
@@ -3267,7 +3267,7 @@
                   }
                 },
                 "height": 2.0,
-                "BMCPFKAEOJB": 1.399999976158142
+                "radius": 1.399999976158142
               },
               "PHFBEPGCKAA": true
             },
@@ -3278,7 +3278,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalBurst_LeftEye",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3286,7 +3286,7 @@
             {
               "$type": "IDHCAKGEMOF",
               "attackPattern": {
-                "$type": "CHEAOJDOBEB",
+                "$type": "ConfigAttackCircle",
                 "triggerType": "TriggerNoRepeat",
                 "born": {
                   "$type": "ConfigBornBySelf",
@@ -3297,7 +3297,7 @@
                   }
                 },
                 "height": 2.0,
-                "BMCPFKAEOJB": 1.399999976158142
+                "radius": 1.399999976158142
               },
               "PHFBEPGCKAA": true
             },
@@ -3308,7 +3308,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalBurst_RightEye",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3549,7 +3549,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Yae_PermanentSkill_1"
+              "talentParam": "Yae_PermanentSkill_1"
             }
           ],
           "modifierName": "Yae_ModifySKill_Handler"
@@ -3622,7 +3622,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalBurst_Thunderfall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3642,7 +3642,7 @@
               "target": "OriginOwner",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3653,7 +3653,7 @@
                     }
                   },
                   "height": 5.0,
-                  "BMCPFKAEOJB": 7.0
+                  "radius": 7.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -3661,7 +3661,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "TowerExplosion_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -3773,7 +3773,7 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalPos",
@@ -3791,19 +3791,19 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalBurst_Bloom",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "TowerExplosion_Damage_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "TowerExplosion_Damage_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "target": "OriginOwner",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3814,7 +3814,7 @@
                     }
                   },
                   "height": 5.0,
-                  "BMCPFKAEOJB": 7.0
+                  "radius": 7.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -3822,7 +3822,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "TowerExplosion_ExtraDamage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -3844,7 +3844,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Yae_Constellation_1"
+                  "talentParam": "Yae_Constellation_1"
                 }
               ],
               "ratio": "Constellation_1_ReviveElemEnergy"
@@ -3862,7 +3862,7 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalPos",
@@ -3880,19 +3880,19 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalBurst_Bloom",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "TowerExplosion_Damage_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "TowerExplosion_Damage_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "target": "OriginOwner",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3903,7 +3903,7 @@
                     }
                   },
                   "height": 5.0,
-                  "BMCPFKAEOJB": 7.0
+                  "radius": 7.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -3911,7 +3911,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "TowerExplosion_ExtraDamage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -3933,7 +3933,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Yae_Constellation_1"
+                  "talentParam": "Yae_Constellation_1"
                 }
               ],
               "ratio": "Constellation_1_ReviveElemEnergy"
@@ -3951,7 +3951,7 @@
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalPos",
@@ -3969,19 +3969,19 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_ElementalBurst_Bloom",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "TowerExplosion_Damage_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "TowerExplosion_Damage_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "target": "OriginOwner",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3992,7 +3992,7 @@
                     }
                   },
                   "height": 5.0,
-                  "BMCPFKAEOJB": 7.0
+                  "radius": 7.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -4000,7 +4000,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "TowerExplosion_ExtraDamage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -4022,7 +4022,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Yae_Constellation_1"
+                  "talentParam": "Yae_Constellation_1"
                 }
               ],
               "ratio": "Constellation_1_ReviveElemEnergy"
@@ -4239,7 +4239,7 @@
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["Elemental_Art"],
-          "MKLAMNDEDGB": [
+          "damagePercentageRatio": [
             "Yae_PermanentSkill_2_AttackUpRatio",
             "FIGHT_PROP_ELEMENT_MASTERY",
             "MUL"
@@ -4346,7 +4346,7 @@
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["Elemental_Art"],
-          "MKLAMNDEDGB": 0.0,
+          "damagePercentageRatio": 0.0,
           "damagePercentage": "DefenseIgnoreRatio"
         }
       ],
@@ -4377,7 +4377,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Catalyst_Yae_FallingAttack_Foxtail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4560,7 +4560,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_BS_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -4600,7 +4600,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -4608,7 +4608,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Default",
@@ -4902,7 +4902,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Self_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4940,16 +4940,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4957,7 +4957,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4965,7 +4965,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -5002,15 +5002,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -5018,7 +5018,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -5026,7 +5026,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -5064,12 +5064,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_01_Electric",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -5078,11 +5078,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_02_Electric",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

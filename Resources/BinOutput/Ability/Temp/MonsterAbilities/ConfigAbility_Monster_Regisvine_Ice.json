@@ -18,7 +18,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Ice_Standby_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -65,7 +65,7 @@
                       "$type": "NFGKOJBHMLL"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
@@ -75,7 +75,7 @@
                   "born": {
                     "$type": "FLIPADNBJJF"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -114,7 +114,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Ice_MissileAttack_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -354,7 +354,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Ice_BlizzardSpit_HitGround",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -404,7 +404,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Ice_BlizzardSpit_Reverse_HitGround",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "CreateGadget",
@@ -504,7 +504,7 @@
                   "attenuationGroup": "Skirmisher_Fat_SprayGun_Ice",
                   "attackProperty": {
                     "damagePercentage": 0.5,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -546,7 +546,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Ice_BlizzardSpit_Blizzard",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -647,7 +647,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -657,7 +657,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.199999809265137
+                  "radius": 5.199999809265137
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -665,7 +665,7 @@
                   "attenuationGroup": "Regisvine_Common",
                   "attackProperty": {
                     "damagePercentage": 0.30000001192092896,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "enBreak": 0.0
@@ -686,7 +686,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -696,7 +696,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 5.199999809265137
+                  "radius": 5.199999809265137
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -704,7 +704,7 @@
                   "attenuationGroup": "Regisvine_Common",
                   "attackProperty": {
                     "damagePercentage": 0.30000001192092896,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "enBreak": 0.0
@@ -796,14 +796,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Ice_BlizzardSpit_Activity_Storm",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Ice_BlizzardSpit_Activity_Storm_AS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -838,7 +838,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 1.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "elementType": "Ice",
                       "bonusCriticalHurt": 50.0,
                       "strikeType": "Blunt",
@@ -877,7 +877,7 @@
                     },
                     "attachPointName": "Neck"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }

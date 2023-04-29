@@ -18,7 +18,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Bow_Arrow",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -475,7 +475,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 4.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 }
               ],
@@ -488,7 +488,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Enchanted_Time",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "modifierName": "WindMagic_Arrow_Glow_WithoutWind_Once"
@@ -503,12 +503,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_FireArrow_Glow_Once_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_FireArrow_Glow_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -520,12 +520,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_FireArrow_Glow_Once_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_FireArrow_Glow_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -576,7 +576,7 @@
                 },
                 "attachPointName": "WeaponL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -629,7 +629,7 @@
                 },
                 "attachPointName": "WeaponL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -682,7 +682,7 @@
                 },
                 "attachPointName": "WeaponL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -735,7 +735,7 @@
                 },
                 "attachPointName": "WeaponL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -788,7 +788,7 @@
                 },
                 "attachPointName": "WeaponL"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -831,7 +831,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -853,7 +853,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 3.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             }
           ],
@@ -873,13 +873,13 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Ambor_Talent212_DoubleArrow"
+              "talentParam": "Ambor_Talent212_DoubleArrow"
             },
             {
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -907,13 +907,13 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Ambor_Talent212_DoubleArrow"
+              "talentParam": "Ambor_Talent212_DoubleArrow"
             },
             {
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 3.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             }
           ],
@@ -943,7 +943,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -957,7 +957,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -966,7 +966,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 3.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "LessAndEqual"
             }
           ],
@@ -980,7 +980,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ActCameraShake",
@@ -989,7 +989,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_Enchanted_Time",
               "ratio": 4.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -1023,19 +1023,19 @@
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_01"],
               "damagePercentage": "Ambor_ProudSkill31_P1_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_02"],
               "damagePercentage": "Ambor_ProudSkill31_P2_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_04"],
               "damagePercentage": "Ambor_ProudSkill31_P4_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             }
           ]
         }
@@ -1044,7 +1044,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Arrow_Fly_Small",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -1070,13 +1070,13 @@
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_03"],
               "damagePercentage": "Ambor_ProudSkill31_P3_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             },
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["NormalAttack_05"],
               "damagePercentage": "Ambor_ProudSkill31_P5_Damage_Percentage",
-              "MKLAMNDEDGB": 0.0
+              "damagePercentageRatio": 0.0
             }
           ]
         }
@@ -1085,7 +1085,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Arrow_Fly",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -1131,12 +1131,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_Arrow_Fire_Particle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_Arrow_Fire_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1207,7 +1207,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Ambor_DoubleArrow_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1244,7 +1244,7 @@
               "attenuationGroup": "Ambor",
               "attackProperty": {
                 "damagePercentage": "Ambor_ProudSkill31_P7_ChargeFireDamage_Percentage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Pierce",
@@ -1316,7 +1316,7 @@
               "attenuationGroup": "Ambor",
               "attackProperty": {
                 "damagePercentage": "Ambor_ProudSkill31_P6_ChargeNoFireDamage_Percentage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 10.0,
@@ -1354,7 +1354,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Ambor_Talent213_HitDummyBlowUpTrigger"
+              "talentParam": "Ambor_Talent213_HitDummyBlowUpTrigger"
             }
           ],
           "modifierName": "Ambor_Talent_213_HitDummyBlowUpTrigger"
@@ -1364,7 +1364,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Ambor_Talent_214_HitHead"
+              "talentParam": "Ambor_Talent_214_HitHead"
             }
           ],
           "modifierName": "Ambor_Talent_214_HitHead"
@@ -1389,7 +1389,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Arrow_Fly",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1475,7 +1475,7 @@
               "attenuationGroup": "Ambor",
               "attackProperty": {
                 "damagePercentage": "Ambor_ProudSkill31_P6_ChargeNoFireDamage_Percentage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 10.0,
@@ -1523,7 +1523,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Ambor_Talent_214_HitHead"
+              "talentParam": "Ambor_Talent_214_HitHead"
             }
           ],
           "modifierName": "Ambor_Talent_214_HitHead"
@@ -1549,12 +1549,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_Arrow_Fire_Particle",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_Arrow_Fire_Trail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1575,7 +1575,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Ambor_DoubleArrow_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1628,7 +1628,7 @@
                   "Ambor_Talent212_P1_Damage_Percentage",
                   "MUL"
                 ],
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Fire",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
@@ -1704,7 +1704,7 @@
                   "Ambor_Talent212_P1_Damage_Percentage",
                   "MUL"
                 ],
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 2.0,
@@ -1756,7 +1756,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Arrow_Fly",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1819,7 +1819,7 @@
                   "Ambor_ProudSkill31_P6_ChargeNoFireDamage_Percentage",
                   "MUL"
                 ],
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Pierce",
                 "enBreak": 2.0,
@@ -2010,7 +2010,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_Dummy_Line",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -2041,7 +2041,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SkillObj_Dummy_HoldupStandby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2053,7 +2053,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SkillObj_Dummy_HoldupStandby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2065,7 +2065,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SkillObj_Dummy_HoldupStandby",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2076,7 +2076,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Common_ShootArrow_Smoke",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2122,7 +2122,7 @@
           "$type": "TriggerBullet",
           "bulletID": 41021006,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.5,
@@ -2190,7 +2190,7 @@
           ],
           "bulletID": 41021052,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -2216,7 +2216,7 @@
           ],
           "bulletID": 41021053,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -2242,7 +2242,7 @@
           ],
           "bulletID": 41021054,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -2268,7 +2268,7 @@
           ],
           "bulletID": 41021055,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -2294,7 +2294,7 @@
           ],
           "bulletID": 41021056,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -2314,7 +2314,7 @@
           ],
           "bulletID": 41021057,
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 1.0,
@@ -2375,7 +2375,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Ambor_Dummy_ThrowGround",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2461,7 +2461,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_Dummy_Taunted",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -2523,7 +2523,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2687,7 +2687,7 @@
               "$type": "GenerateElemBall",
               "configID": 2017,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -2726,7 +2726,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -2734,7 +2734,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Ambor_ProudSkill32_P2_Damage_Percentage",
-                "MKLAMNDEDGB": "Ambor_Talent213_P1_Damage_Percentage",
+                "damagePercentageRatio": "Ambor_Talent213_P1_Damage_Percentage",
                 "elementType": "Fire",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 50.0,
@@ -2785,7 +2785,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2805,7 +2805,7 @@
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2823,21 +2823,21 @@
                   "predicates": [
                     {
                       "$type": "HJIPPKGIPOC",
-                      "GFIOLOJIDMG": "Ambor_Talent_215"
+                      "talentParam": "Ambor_Talent_215"
                     }
                   ]
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 5.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -2845,19 +2845,19 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Ambor_Talent_215"
+                  "talentParam": "Ambor_Talent_215"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle_Big",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 5.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2896,7 +2896,7 @@
           ],
           "key": "ArrowRainAlertPos",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2913,44 +2913,44 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Ambor_Talent_215"
+                  "talentParam": "Ambor_Talent_215"
                 }
               ]
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
               "z": 0.0
             },
-            "FNMFBPGNEKD": "ArrowRainAlertPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "ArrowRainAlertPos",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Ambor_Talent_215"
+              "talentParam": "Ambor_Talent_215"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Ambor_AlertCircle_Big",
           "born": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
               "z": 0.0
             },
-            "FNMFBPGNEKD": "ArrowRainAlertPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "ArrowRainAlertPos",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3030,9 +3030,9 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ArrowRainAlertPos",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ArrowRainAlertPos",
+            "directionKey": ""
           },
           "gadgetID": 41021001,
           "campID": 1001,
@@ -3051,9 +3051,9 @@
             }
           ],
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ArrowRainAlertPos",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ArrowRainAlertPos",
+            "directionKey": ""
           },
           "gadgetID": 41021001,
           "campID": 1001,
@@ -3065,7 +3065,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Ambor_Talent_216"
+              "talentParam": "Ambor_Talent_216"
             },
             {
               "$type": "HPJOHDHEPCG",
@@ -3081,7 +3081,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Ambor_Talent_216"
+              "talentParam": "Ambor_Talent_216"
             },
             {
               "$type": "HPJOHDHEPCG",
@@ -3097,7 +3097,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Ambor_Talent_216"
+              "talentParam": "Ambor_Talent_216"
             },
             {
               "$type": "HPJOHDHEPCG",
@@ -3113,7 +3113,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Ambor_Talent_216"
+              "talentParam": "Ambor_Talent_216"
             },
             {
               "$type": "HPJOHDHEPCG",
@@ -3149,7 +3149,7 @@
               "$type": "SetGlobalPos",
               "key": "ArrowRainPos",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": [
@@ -3163,8 +3163,8 @@
                     "MUL"
                   ]
                 },
-                "FNMFBPGNEKD": "ArrowRainAlertPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "ArrowRainAlertPos",
+                "directionKey": ""
               }
             },
             {
@@ -3174,11 +3174,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ArrowRainPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ArrowRainPos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": [
+                  "radius": [
                     "AttackRange",
                     "Ambor_Talent_215_P2_Range_Extra",
                     "MUL"
@@ -3194,7 +3194,7 @@
                       "OneHitDamgeRate",
                       "MUL"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "elementRank": 3.0,
                     "bonusCriticalHurt": 25.0,
@@ -3225,7 +3225,7 @@
               "$type": "SetGlobalPos",
               "key": "ArrowRainPos",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": [
@@ -3239,8 +3239,8 @@
                     "MUL"
                   ]
                 },
-                "FNMFBPGNEKD": "ArrowRainAlertPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "ArrowRainAlertPos",
+                "directionKey": ""
               }
             },
             {
@@ -3250,11 +3250,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ArrowRainPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ArrowRainPos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": [
+                  "radius": [
                     "AttackRange",
                     "Ambor_Talent_215_P2_Range_Extra",
                     "MUL"
@@ -3270,7 +3270,7 @@
                       "OneHitDamgeRate",
                       "MUL"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "elementRank": 3.0,
                     "bonusCriticalHurt": 25.0,
@@ -3301,7 +3301,7 @@
               "$type": "SetGlobalPos",
               "key": "ArrowRainPos",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 0.10000000149011612,
@@ -3311,8 +3311,8 @@
                     "MUL"
                   ]
                 },
-                "FNMFBPGNEKD": "ArrowRainAlertPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "ArrowRainAlertPos",
+                "directionKey": ""
               }
             },
             {
@@ -3322,11 +3322,11 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
-                    "FNMFBPGNEKD": "ArrowRainPos",
-                    "GPPNNKAOHCG": ""
+                    "$type": "ConfigBornByGlobalValue",
+                    "positionKey": "ArrowRainPos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": [
+                  "radius": [
                     "AttackRange",
                     "Ambor_Talent_215_P2_Range_Extra",
                     "MUL"
@@ -3342,7 +3342,7 @@
                       "OneHitDamgeRate",
                       "MUL"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "elementRank": 3.0,
                     "bonusCriticalHurt": 25.0,
@@ -3368,7 +3368,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Gril_Bow_Ambor_ElementalBurst_ArrowRain_Down",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3379,7 +3379,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Gril_Bow_Ambor_ElementalBurst_ArrowRain_HitWater",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -3396,7 +3396,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Ambor_ArrowRain_Down_Particle",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3476,9 +3476,9 @@
           "$type": "TriggerBullet",
           "bulletID": 40100006,
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ShootPosition",
-            "GPPNNKAOHCG": "ShootDirection"
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ShootPosition",
+            "directionKey": "ShootDirection"
           }
         },
         {
@@ -3493,7 +3493,7 @@
             },
             "attachPointName": "WeaponR"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3693,7 +3693,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3704,7 +3704,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -3750,7 +3750,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3758,7 +3758,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Pierce",
                     "enBreak": 10.0,
@@ -3908,11 +3908,11 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_ABILITY_FallingAnthem_UseCamera",
                   "ratio": 1.0,
-                  "forceByCaster": true
+                  "setTarget": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4073,16 +4073,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4090,7 +4090,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4098,7 +4098,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 50.0,
@@ -4120,15 +4120,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4136,7 +4136,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4144,7 +4144,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Pierce",
                 "enBreak": 100.0,
@@ -4166,12 +4166,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -4180,11 +4180,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Bow_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

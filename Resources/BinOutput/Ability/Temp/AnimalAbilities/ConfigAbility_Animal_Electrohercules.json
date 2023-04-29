@@ -604,7 +604,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Animal_Electrohercules_HeavyState_Break",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveUniqueModifier",
@@ -964,7 +964,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Animal_Electrohercules_HeavyState_Break",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveUniqueModifier",
@@ -1261,8 +1261,8 @@
             },
             {
               "$type": "DoBlinkByGlobalPos",
-              "FNMFBPGNEKD": "_ONIKABUTOBATTLE_ENEMY_EXTRASTATE_POS",
-              "GPPNNKAOHCG": "",
+              "positionKey": "_ONIKABUTOBATTLE_ENEMY_EXTRASTATE_POS",
+              "directionKey": "",
               "ICMPPAKCNHI": true
             }
           ],
@@ -1288,7 +1288,7 @@
           "$type": "SetGlobalPos",
           "key": "_ONIKABUTOBATTLE_ENEMY_EXTRASTATE_POS",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1301,9 +1301,9 @@
           "$type": "CreateGadget",
           "lifeByOwnerIsAlive": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_ONIKABUTOBATTLE_ENEMY_EXTRASTATE_POS",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_ONIKABUTOBATTLE_ENEMY_EXTRASTATE_POS",
+            "directionKey": ""
           },
           "gadgetID": 43805008,
           "campID": 4001
@@ -1346,7 +1346,7 @@
                   "target": "Self",
                   "logic": "Lesser",
                   "ratio": 2.0,
-                  "FNMFBPGNEKD": "_ONIKABUTOBATTLE_SCENEBORDER_R_POS"
+                  "positionKey": "_ONIKABUTOBATTLE_SCENEBORDER_R_POS"
                 }
               ],
               "successActions": [
@@ -1366,7 +1366,7 @@
                       "target": "Self",
                       "logic": "Lesser",
                       "ratio": 2.5,
-                      "FNMFBPGNEKD": "_ONIKABUTOBATTLE_SCENEBORDER_L_POS"
+                      "positionKey": "_ONIKABUTOBATTLE_SCENEBORDER_L_POS"
                     }
                   ],
                   "successActions": [
@@ -1396,7 +1396,7 @@
                   "target": "Self",
                   "logic": "Lesser",
                   "ratio": 3.0,
-                  "FNMFBPGNEKD": "_ONIKABUTOBATTLE_SCENEBORDER_R_POS"
+                  "positionKey": "_ONIKABUTOBATTLE_SCENEBORDER_R_POS"
                 }
               ],
               "successActions": [
@@ -1416,7 +1416,7 @@
                       "target": "Self",
                       "logic": "Lesser",
                       "ratio": 3.0,
-                      "FNMFBPGNEKD": "_ONIKABUTOBATTLE_SCENEBORDER_L_POS"
+                      "positionKey": "_ONIKABUTOBATTLE_SCENEBORDER_L_POS"
                     }
                   ],
                   "successActions": [
@@ -1443,7 +1443,7 @@
           "$type": "SetGlobalPos",
           "key": "_ONIKABUTOBATTLE_SCENEBORDER_L_POS",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1456,7 +1456,7 @@
           "$type": "SetGlobalPos",
           "key": "_ONIKABUTOBATTLE_SCENEBORDER_R_POS",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1470,9 +1470,9 @@
           "RotationDampTime": true,
           "canBeHandledOnRecover": true,
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "_ONIKABUTOBATTLE_SCENEBORDER_R_POS",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_ONIKABUTOBATTLE_SCENEBORDER_R_POS",
+            "directionKey": ""
           }
         },
         {
@@ -1794,7 +1794,7 @@
               "$type": "TriggerBullet",
               "bulletID": 43805001,
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "trackTarget": "Self"
             }
@@ -1820,7 +1820,7 @@
               "$type": "TriggerBullet",
               "bulletID": 43805002,
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "trackTarget": "Self"
             }
@@ -1891,7 +1891,7 @@
                     }
                   ],
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1955,7 +1955,7 @@
                     }
                   ],
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -2209,7 +2209,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Animal_Electrohercules_JumpForward_Charging",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorBool",
@@ -2386,7 +2386,7 @@
               "$type": "TriggerBullet",
               "bulletID": 43805009,
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "trackTarget": "Self"
             }
@@ -2445,7 +2445,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 0.0
+                  "radius": 0.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2453,7 +2453,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 0.0,
@@ -2508,7 +2508,7 @@
                     "attenuationGroup": "default",
                     "attackProperty": {
                       "damagePercentage": 0.0,
-                      "MKLAMNDEDGB": 0.0,
+                      "damagePercentageRatio": 0.0,
                       "bonusCriticalHurt": 100.0,
                       "strikeType": "Blunt",
                       "enBreak": 0.0,
@@ -2607,7 +2607,7 @@
                         "attenuationGroup": "default",
                         "attackProperty": {
                           "damagePercentage": 0.0,
-                          "MKLAMNDEDGB": 0.0,
+                          "damagePercentageRatio": 0.0,
                           "bonusCriticalHurt": 100.0,
                           "strikeType": "Blunt",
                           "enBreak": 0.0,
@@ -2641,7 +2641,7 @@
                         }
                       ],
                       "healLimitedByCasterMaxHPRatio": "Eff_Animal_Electrohercules_HeavyState_Break",
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "RemoveUniqueModifier",
@@ -2680,7 +2680,7 @@
               "born": {
                 "$type": "FLIPADNBJJF"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Predicated",
@@ -2749,7 +2749,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 0.0
+                  "radius": 0.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2757,7 +2757,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 0.0,
@@ -2790,7 +2790,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Blunt",
                   "enBreak": 0.0,
@@ -2888,7 +2888,7 @@
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Animal_Electrohercules_HeavyState_Break",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "RemoveUniqueModifier",
@@ -2925,7 +2925,7 @@
               "born": {
                 "$type": "FLIPADNBJJF"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Predicated",
@@ -2964,7 +2964,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.0,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "bonusCriticalHurt": 100.0,
               "strikeType": "Blunt",
               "enBreak": 0.0,
@@ -3001,7 +3001,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Animal_Electrohercules_HeavyState_Enter",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -3134,7 +3134,7 @@
               "$type": "TriggerBullet",
               "bulletID": 43805004,
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "trackTarget": "Self"
             },
@@ -3222,7 +3222,7 @@
                       ],
                       "elementType": "Electric",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -3261,7 +3261,7 @@
                       ],
                       "elementType": "Electric",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -3342,7 +3342,7 @@
                         }
                       ],
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -3374,7 +3374,7 @@
                         }
                       ],
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -3565,7 +3565,7 @@
               "$type": "TriggerBullet",
               "bulletID": 43805004,
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "trackTarget": "Self"
             },
@@ -3653,7 +3653,7 @@
                       ],
                       "elementType": "Electric",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -3692,7 +3692,7 @@
                       ],
                       "elementType": "Electric",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -3771,7 +3771,7 @@
                       ],
                       "elementType": "Electric",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -3825,7 +3825,7 @@
                           ],
                           "elementType": "Electric",
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.0,
@@ -3862,7 +3862,7 @@
                           ],
                           "elementType": "Electric",
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.0,
@@ -3923,7 +3923,7 @@
                         }
                       ],
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -3955,7 +3955,7 @@
                         }
                       ],
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -4150,7 +4150,7 @@
               "$type": "TriggerBullet",
               "bulletID": 43805007,
               "born": {
-                "$type": "GJGFFJAGIDF"
+                "$type": "ConfigBornByTarget"
               },
               "trackTarget": "Self"
             },
@@ -4238,7 +4238,7 @@
                       ],
                       "elementType": "Electric",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -4277,7 +4277,7 @@
                       ],
                       "elementType": "Electric",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -4356,7 +4356,7 @@
                       ],
                       "elementType": "Electric",
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -4410,7 +4410,7 @@
                           ],
                           "elementType": "Electric",
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.0,
@@ -4447,7 +4447,7 @@
                           ],
                           "elementType": "Electric",
                           "born": {
-                            "$type": "GJGFFJAGIDF",
+                            "$type": "ConfigBornByTarget",
                             "offset": {
                               "x": 0.0,
                               "y": 0.0,
@@ -4508,7 +4508,7 @@
                         }
                       ],
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -4540,7 +4540,7 @@
                         }
                       ],
                       "born": {
-                        "$type": "GJGFFJAGIDF",
+                        "$type": "ConfigBornByTarget",
                         "offset": {
                           "x": 0.0,
                           "y": 0.0,
@@ -5386,11 +5386,11 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Animal_Electrohercules_RangedAttack01_Alert",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAudio",
@@ -5427,17 +5427,17 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Animal_Electrohercules_RangedAttack01_Attack",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -5450,7 +5450,7 @@
                     "IABNJPGBAOH": true
                   },
                   "height": 2.0,
-                  "BMCPFKAEOJB": 0.44999998807907104
+                  "radius": 0.44999998807907104
                 },
                 "attackInfo": {
                   "attackTag": "Electrohercules_RangedAttack01",
@@ -5458,7 +5458,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 0.0,
@@ -5511,7 +5511,7 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onBeingHit": [
@@ -5559,7 +5559,7 @@
                       "attenuationGroup": "default",
                       "attackProperty": {
                         "damagePercentage": 0.0,
-                        "MKLAMNDEDGB": 0.0,
+                        "damagePercentageRatio": 0.0,
                         "bonusCriticalHurt": 100.0
                       },
                       "hitPattern": {
@@ -5736,7 +5736,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Animal_Electrohercules_ElectricBall_OnGround_Hit",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerAbility",
@@ -5747,7 +5747,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Animal_Electrohercules_ElectricBall_OnGround_Hit",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "Predicated",
@@ -5891,7 +5891,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Animal_Electrohercules_ElectricBall_Kicked_Bullet",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -5926,7 +5926,7 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -5941,7 +5941,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Blunt",
                   "enBreak": 0.0,
@@ -5993,7 +5993,7 @@
             "attenuationGroup": "default",
             "attackProperty": {
               "damagePercentage": 0.0,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "bonusCriticalHurt": 100.0,
               "strikeType": "Blunt",
               "enBreak": 0.0,
@@ -6026,7 +6026,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 0.0
+              "radius": 0.0
             },
             "attackInfo": {
               "attackTag": "",
@@ -6034,7 +6034,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.0,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Blunt",
                 "enBreak": 0.0,
@@ -6072,7 +6072,7 @@
           "born": {
             "$type": "FLIPADNBJJF"
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

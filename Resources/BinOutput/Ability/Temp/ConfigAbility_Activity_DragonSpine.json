@@ -16,7 +16,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "AttackRatio",
+              "damagePercentageRatio": "AttackRatio",
               "predicates": [
                 {
                   "$type": "NBDIKMNAEKJ",
@@ -99,7 +99,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "CriticalDelta",
               "predicates": [
                 {
@@ -144,7 +144,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["BloodSmash"],
-              "MKLAMNDEDGB": "Rate",
+              "damagePercentageRatio": "Rate",
               "predicates": [
                 {
                   "$type": "NBDIKMNAEKJ",
@@ -188,7 +188,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "JGEEKIDDFGM": "CriticalHurtDelta",
               "predicates": [
                 {

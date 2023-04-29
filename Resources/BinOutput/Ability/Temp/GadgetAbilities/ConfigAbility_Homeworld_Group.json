@@ -18,12 +18,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Thing_TimerEnd_01_Center",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Quest_SiteInteract_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -353,7 +353,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Homeworld_Scoringpedal_01",
-              "FGMDINMEPHL": 101.0
+              "effectTempleteID": 101.0
             },
             {
               "$type": "AttachEffect",
@@ -365,7 +365,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Homeworld_Scoringpedal_01",
-              "FGMDINMEPHL": 102.0
+              "effectTempleteID": 102.0
             },
             {
               "$type": "AttachEffect",
@@ -377,7 +377,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Homeworld_Scoringpedal_01",
-              "FGMDINMEPHL": 103.0
+              "effectTempleteID": 103.0
             },
             {
               "$type": "AttachEffect",
@@ -389,7 +389,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Homeworld_Scoringpedal_01",
-              "FGMDINMEPHL": 104.0
+              "effectTempleteID": 104.0
             }
           ]
         },
@@ -627,14 +627,14 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Ballon_Born",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onKill": [
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BalloonLow_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -678,7 +678,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Ballon_Born",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalValue",
@@ -692,7 +692,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_BalloonLow_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -709,7 +709,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Homeworld_WoodenStake_01_Rebirth",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

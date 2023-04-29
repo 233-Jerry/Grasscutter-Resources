@@ -178,7 +178,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "RogueV2_ExtraAttack_Ratio"
+              "damagePercentageRatio": "RogueV2_ExtraAttack_Ratio"
             },
             {
               "$type": "AttachToStateIDMixin",
@@ -475,7 +475,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_Roguelike_Gadget_Wind_Absorbe",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -564,7 +564,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_EnergyDisk_ElementalBurst_Wave_R40",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -575,14 +575,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Rock",
                     "bonusCriticalHurt": 25.0,
                     "ignoreAttackerProperty": true,
@@ -701,7 +701,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "OAKBBLBNNOF": "RogueV2_EnergyMax_Critical"
             }
           ]
@@ -837,25 +837,25 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
               "target": "CurLocalAvatar",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "height": 2.0,
-                  "BMCPFKAEOJB": 6.0
+                  "radius": 6.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "ignoreAttackerProperty": true,
                     "strikeType": "Default",
@@ -1016,7 +1016,7 @@
                 "NormalAttack_05",
                 "NormalAttack_06"
               ],
-              "MKLAMNDEDGB": "RogueV2_Blue_NormalAttackDamageUp"
+              "damagePercentageRatio": "RogueV2_Blue_NormalAttackDamageUp"
             }
           ],
           "state": "AttackUp"
@@ -1173,7 +1173,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1184,14 +1184,14 @@
                   "born": {
                     "$type": "ConfigBornBySelf"
                   },
-                  "BMCPFKAEOJB": 5.0
+                  "radius": 5.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "ignoreAttackerProperty": true,
                     "enBreak": 0.0,
@@ -1360,7 +1360,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["ExtraAttack"],
-              "MKLAMNDEDGB": "RogueV2_Blue_ExtraAttackDamageUp"
+              "damagePercentageRatio": "RogueV2_Blue_ExtraAttackDamageUp"
             }
           ],
           "state": "AttackUp"
@@ -1473,7 +1473,7 @@
               "RotationDampTime": true,
               "configID": 2024,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1491,7 +1491,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Weapon_ExtraElementBall",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1608,7 +1608,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["FallingAttack"],
-              "MKLAMNDEDGB": "RogueV2_Blue_FallingAttackDamageUp"
+              "damagePercentageRatio": "RogueV2_Blue_FallingAttackDamageUp"
             }
           ],
           "state": "AttackUp"
@@ -1781,7 +1781,7 @@
             {
               "$type": "ModifyDamageMixin",
               "attackTags": ["Elemental_Burst"],
-              "MKLAMNDEDGB": "RogueV2_Blue_AfterUseUltimateSkill_Ratio"
+              "damagePercentageRatio": "RogueV2_Blue_AfterUseUltimateSkill_Ratio"
             }
           ]
         }
@@ -2174,7 +2174,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "RogueV2_Blue_PickUpCrystal_HurtRatio"
+              "damagePercentageRatio": "RogueV2_Blue_PickUpCrystal_HurtRatio"
             }
           ],
           "isLimitedProperties": true
@@ -2238,9 +2238,9 @@
                       "target": "Caster",
                       "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_01",
                       "born": {
-                        "$type": "GJGFFJAGIDF"
+                        "$type": "ConfigBornByTarget"
                       },
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "TriggerAttackEvent",
@@ -2252,14 +2252,14 @@
                           "born": {
                             "$type": "ConfigBornBySelf"
                           },
-                          "BMCPFKAEOJB": 4.0
+                          "radius": 4.0
                         },
                         "attackInfo": {
                           "attackTag": "",
                           "attenuationTag": "",
                           "attenuationGroup": "default",
                           "attackProperty": {
-                            "MKLAMNDEDGB": 0.0,
+                            "damagePercentageRatio": 0.0,
                             "bonusCriticalHurt": 0.0,
                             "ignoreAttackerProperty": true,
                             "strikeType": "Default",
@@ -2387,7 +2387,7 @@
                 "Elemental_Art_Extra",
                 "Elemental_Art_Hold"
               ],
-              "MKLAMNDEDGB": "RogueV2_Blue_ArtDamageUp_Ratio"
+              "damagePercentageRatio": "RogueV2_Blue_ArtDamageUp_Ratio"
             }
           ]
         }
@@ -2555,7 +2555,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": 0.0,
+              "damagePercentageRatio": 0.0,
               "JGEEKIDDFGM": "RogueV2_Blue_LoseHp_CriticalHurtDelta"
             }
           ]
@@ -2595,7 +2595,7 @@
                 "NormalAttack_06",
                 "ExtraAttack"
               ],
-              "MKLAMNDEDGB": "RogueV2_Blue_ElementalDamageUp",
+              "damagePercentageRatio": "RogueV2_Blue_ElementalDamageUp",
               "predicates": [
                 {
                   "$type": "ByAny",
@@ -2858,7 +2858,7 @@
             {
               "$type": "ModifyDamageMixin",
               "ignoreEventInfo": true,
-              "MKLAMNDEDGB": "RogueV2_Blue_BigCDmgUp_Ratio"
+              "damagePercentageRatio": "RogueV2_Blue_BigCDmgUp_Ratio"
             }
           ]
         }

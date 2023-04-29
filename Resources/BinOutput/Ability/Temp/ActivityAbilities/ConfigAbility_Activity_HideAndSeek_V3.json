@@ -23,7 +23,7 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -255,7 +255,7 @@
                 },
                 "IABNJPGBAOH": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -832,7 +832,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_CatchAnimal_Charge_HideSeek",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -892,7 +892,7 @@
                     "attachPointName": "FocusAnchor",
                     "ABIMPICHJNC": "Self"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "TriggerBullet",
@@ -959,7 +959,7 @@
                     "attachPointName": "WeaponR",
                     "ABIMPICHJNC": "Self"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "Predicated",
@@ -1148,7 +1148,7 @@
                     "attachPointName": "WeaponR",
                     "ABIMPICHJNC": "Self"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "Predicated",
@@ -1274,7 +1274,7 @@
               "$type": "FireEffect",
               "RotationDampTime": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Detect_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1307,7 +1307,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_CatchAnimal_Bullet_HideSeek",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -1343,7 +1343,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireAISoundEvent"
@@ -1517,7 +1517,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Guide",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ServerLuaCall",
@@ -1643,7 +1643,7 @@
               "$type": "AttachEffect",
               "muteRemoteAction": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Invisibility",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1651,7 +1651,7 @@
               "$type": "FireEffect",
               "muteRemoteAction": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Invisibility_Quit",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1885,7 +1885,7 @@
               "$type": "FireEffect",
               "muteRemoteAction": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Invisibility_CountDown",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4594,14 +4594,14 @@
               "muteRemoteAction": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Activity_HideSeek_Disguise_Quit",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

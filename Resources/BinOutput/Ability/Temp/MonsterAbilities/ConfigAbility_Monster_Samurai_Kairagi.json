@@ -44,7 +44,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Mosnter_GeneralSkill_BreakeDefendShield",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -75,7 +75,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_WeaponFire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetPoseBool",
@@ -87,7 +87,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_WeaponFireOff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetPoseBool",
@@ -314,7 +314,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_RushAtk_Fire_Tail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -449,7 +449,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Mosnter_GeneralSkill_BreakeDefendShield",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -707,14 +707,14 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_WeaponThunder",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_WeaponThunderOff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -809,15 +809,15 @@
                 {
                   "$type": "FireEffect",
                   "otherTargets": {
-                    "$type": "FHPHBMBDJAJ",
-                    "KNBIINCIAMG": ["equip01"]
+                    "$type": "SelectTargetsByEquipParts",
+                    "equipPartNames": ["equip01"]
                   },
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Ronin_BlockHit",
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
                     "attachPointName": "BlockPoint"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "AddGlobalValue",
@@ -1223,7 +1223,7 @@
                     {
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Mosnter_GeneralSkill_BreakeDefendShield",
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "SetGlobalValue",
@@ -1273,7 +1273,7 @@
                     {
                       "$type": "FireEffect",
                       "healLimitedByCasterMaxHPRatio": "Eff_Mosnter_GeneralSkill_BreakeDefendShield",
-                      "FGMDINMEPHL": -1.0
+                      "effectTempleteID": -1.0
                     },
                     {
                       "$type": "SetGlobalValue",
@@ -1419,7 +1419,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Blunt",
                   "enBreak": 5000.0
@@ -1467,7 +1467,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.0,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Blunt",
                   "enBreak": 5000.0
@@ -1505,7 +1505,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_Block_AddElementBladeAttack_Thunder",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1733,7 +1733,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_BladeWind",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1764,7 +1764,7 @@
                   "born": {
                     "$type": "ConfigBornByCollisionPoint"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "BladeWind_CanBeBlockBack",
@@ -1772,7 +1772,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.20000000298023224,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Slash",
@@ -2200,14 +2200,14 @@
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_Weapon_Blade_Thunder",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_Weapon_Blade_Thunder_Ghost",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -2272,14 +2272,14 @@
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_Weapon_Blade_Fire",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "AttachEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_Weapon_Blade_Fire_Ghost",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -2436,7 +2436,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_RushAtk_Tail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -2501,7 +2501,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_RushAtk_Thunder_Tail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -2639,7 +2639,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_RushAtk_Fire_Tail",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerBullet",
@@ -2705,7 +2705,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.6660000085830688,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 100.0,
                   "strikeType": "Slash",
                   "enBreak": 100.0,
@@ -2747,7 +2747,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.6660000085830688,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Electric",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Slash",
@@ -2790,7 +2790,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.6660000085830688,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "elementType": "Fire",
                   "bonusCriticalHurt": 50.0,
                   "strikeType": "Slash",
@@ -2893,7 +2893,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_WeaponThunder",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -2907,7 +2907,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_WeaponThunderOff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -3030,7 +3030,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_WeaponFire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -3044,7 +3044,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_WeaponFireOff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -3279,7 +3279,7 @@
                   "z": 0.30000001192092896
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -3309,7 +3309,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.20000000298023224,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Fire",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -3377,7 +3377,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_Angry_Thunder",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "Predicated",
@@ -3504,7 +3504,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_Angry_Fire",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "HealHP",
@@ -3592,15 +3592,15 @@
                 {
                   "$type": "FireEffect",
                   "otherTargets": {
-                    "$type": "FHPHBMBDJAJ",
-                    "KNBIINCIAMG": ["equip01"]
+                    "$type": "SelectTargetsByEquipParts",
+                    "equipPartNames": ["equip01"]
                   },
                   "predicates": [
                     {
                       "$type": "ByTargetGlobalValue",
                       "key": "SAMURAI_KAIRAGI_BLOCK_STATE",
                       "ratio": 0.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "NoneOrEqual"
                     }
                   ],
@@ -3609,20 +3609,20 @@
                     "$type": "ConfigBornByAttachPoint",
                     "attachPointName": "BlockPoint"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "otherTargets": {
-                    "$type": "FHPHBMBDJAJ",
-                    "KNBIINCIAMG": ["equip01"]
+                    "$type": "SelectTargetsByEquipParts",
+                    "equipPartNames": ["equip01"]
                   },
                   "predicates": [
                     {
                       "$type": "ByTargetGlobalValue",
                       "key": "SAMURAI_KAIRAGI_BLOCK_STATE",
                       "ratio": 1.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_BlockHit_Thunder",
@@ -3630,20 +3630,20 @@
                     "$type": "ConfigBornByAttachPoint",
                     "attachPointName": "BlockPoint"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "otherTargets": {
-                    "$type": "FHPHBMBDJAJ",
-                    "KNBIINCIAMG": ["equip01"]
+                    "$type": "SelectTargetsByEquipParts",
+                    "equipPartNames": ["equip01"]
                   },
                   "predicates": [
                     {
                       "$type": "ByTargetGlobalValue",
                       "key": "SAMURAI_KAIRAGI_BLOCK_STATE",
                       "ratio": 2.0,
-                      "forceByCaster": true
+                      "setTarget": true
                     }
                   ],
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_BlockHit_Fire",
@@ -3651,7 +3651,7 @@
                     "$type": "ConfigBornByAttachPoint",
                     "attachPointName": "BlockPoint"
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -3695,7 +3695,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_SAMURAI_KAIRAKI_BLOCK_SUCCESS",
                       "ratio": 0.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "NoneOrEqual"
                     },
                     {
@@ -3727,7 +3727,7 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_SAMURAI_KAIRAKI_BLOCK_SUCCESS",
                       "ratio": 0.0,
-                      "forceByCaster": true,
+                      "setTarget": true,
                       "compareType": "NoneOrEqual"
                     },
                     {
@@ -4460,7 +4460,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_AffixHeal",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4576,7 +4576,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Kairagi_Angry_Thunder",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

@@ -170,17 +170,17 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_ElementalArt_ExtraAttack",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Eula_ElementalArt_ExtraAttack_Pos_1",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Eula_ElementalArt_ExtraAttack_Pos_1",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -192,17 +192,17 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
                       "z": 0.0
                     },
                     "DAPKLNIFPID": true,
-                    "FNMFBPGNEKD": "_ABILITY_Eula_ElementalArt_ExtraAttack_Pos_1",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Eula_ElementalArt_ExtraAttack_Pos_1",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.5
+                  "radius": 3.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -210,7 +210,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ElementalArt_Extra_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -252,7 +252,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -272,7 +272,7 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "BMCPFKAEOJB": 3.5
+                  "radius": 3.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -280,7 +280,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ElementalArt_Extra_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -387,17 +387,17 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_ElementalArt_ExtraAttack_1",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Eula_ElementalArt_ExtraAttack_Pos_2",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Eula_ElementalArt_ExtraAttack_Pos_2",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -409,17 +409,17 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
                       "z": 0.0
                     },
                     "DAPKLNIFPID": true,
-                    "FNMFBPGNEKD": "_ABILITY_Eula_ElementalArt_ExtraAttack_Pos_2",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Eula_ElementalArt_ExtraAttack_Pos_2",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 3.5
+                  "radius": 3.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -427,7 +427,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ElementalArt_Extra_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -469,7 +469,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [
@@ -489,7 +489,7 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "BMCPFKAEOJB": 3.5
+                  "radius": 3.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -497,7 +497,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "ElementalArt_Extra_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 25.0,
                     "strikeType": "Default",
@@ -590,17 +590,17 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_PermanentSkill_1_Attack",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Eula_PermanentSkill_1_Attack_Pos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Eula_PermanentSkill_1_Attack_Pos",
+                "directionKey": ""
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -610,17 +610,17 @@
                   "$type": "ConfigAttackSphere",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "FNJGDOEMIIB",
+                    "$type": "ConfigBornByGlobalValue",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
                       "z": 0.0
                     },
                     "DAPKLNIFPID": true,
-                    "FNMFBPGNEKD": "_ABILITY_Eula_PermanentSkill_1_Attack_Pos",
-                    "GPPNNKAOHCG": ""
+                    "positionKey": "_ABILITY_Eula_PermanentSkill_1_Attack_Pos",
+                    "directionKey": ""
                   },
-                  "BMCPFKAEOJB": 6.5
+                  "radius": 6.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -632,7 +632,7 @@
                       "PermanentSkill_1_Judgment_Ratio",
                       "MUL"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -677,7 +677,7 @@
                 },
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -695,7 +695,7 @@
                     },
                     "DAPKLNIFPID": true
                   },
-                  "BMCPFKAEOJB": 6.5
+                  "radius": 6.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -707,7 +707,7 @@
                       "PermanentSkill_1_Judgment_Ratio",
                       "MUL"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
@@ -785,7 +785,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Eula_PermanentSkill_1"
+              "talentParam": "Eula_PermanentSkill_1"
             }
           ],
           "modifierName": "Eula_PermanentSkill_1_Attack"
@@ -849,8 +849,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "modifierName": "UNIQUE_Eula_Talent_Weapon_Fx"
             }
@@ -859,8 +859,8 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip01", "equip02", "sheathPoint"]
               },
               "modifierName": "UNIQUE_Eula_Talent_Weapon_Fx"
             }
@@ -876,7 +876,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_Talent_Weapon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -913,7 +913,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Eula_Constellation_1"
+                  "talentParam": "Avatar_Eula_Constellation_1"
                 }
               ],
               "ratio": "PhysicalAddHurt_BaseDuration",
@@ -949,7 +949,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Eula_Constellation_1"
+                  "talentParam": "Avatar_Eula_Constellation_1"
                 }
               ],
               "modifierName": "UNIQUE_Eula_Talent_PhysicalAddHurt"
@@ -981,7 +981,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Avatar_Eula_Constellation_1"
+                  "talentParam": "Avatar_Eula_Constellation_1"
                 }
               ],
               "ratio": "PhysicalAddHurt_BaseDuration",
@@ -1016,7 +1016,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Eula_ElementalArt_Mark_Count",
               "ratio": 1.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -1030,7 +1030,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Eula_ElementalArt_Mark_Count",
               "ratio": 2.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "MoreThanAndEqual"
             }
           ],
@@ -1186,12 +1186,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_EelementalArt_Blast",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_CoolHeart_Head_1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1226,17 +1226,17 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_EelementalArt_Blast_2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_CoolHeart_Head_2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_ElementalArt_SnowDust_2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -1276,7 +1276,7 @@
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_CoolHeart_Head_2",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             }
@@ -1346,7 +1346,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Eula_ElementalArt_Mark_Count",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "triggerID": "Mark_End_1",
@@ -1360,7 +1360,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Eula_ElementalArt_Mark_Count",
               "ratio": 2.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "triggerID": "Mark_End_2",
@@ -1375,7 +1375,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Eula_ElementalArt_Mark_Count",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "triggerID": "Mark_1",
@@ -1388,11 +1388,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Eula_ElementalArt_Mark_Count",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_CoolHeart_Head_1",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetAnimatorTrigger",
@@ -1401,7 +1401,7 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Eula_ElementalArt_Mark_Count",
               "ratio": 2.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "triggerID": "Mark_2",
@@ -1414,11 +1414,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_Eula_ElementalArt_Mark_Count",
               "ratio": 2.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_CoolHeart_Head_2",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1483,7 +1483,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2022,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1499,7 +1499,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2022,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1531,7 +1531,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -1542,7 +1542,7 @@
                 }
               },
               "height": 1.7999999523162842,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1550,7 +1550,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ElementalArt_Click_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 25.0,
@@ -1638,7 +1638,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2022,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1654,7 +1654,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2022,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1686,7 +1686,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -1697,7 +1697,7 @@
                 }
               },
               "height": 1.7999999523162842,
-              "BMCPFKAEOJB": 5.5
+              "radius": 5.5
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1705,7 +1705,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "ElementalArt_Burst_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 25.0,
@@ -1775,7 +1775,7 @@
         {
           "$type": "ModifyDamageMixin",
           "ignoreEventInfo": true,
-          "MKLAMNDEDGB": "Eula_Constellation_4_DamagePercentage",
+          "damagePercentageRatio": "Eula_Constellation_4_DamagePercentage",
           "predicates": [
             {
               "$type": "GMGEIHHLMCO",
@@ -1792,7 +1792,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Eula_Constellation_4"
+              "talentParam": "Eula_Constellation_4"
             }
           ]
         }
@@ -1880,7 +1880,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Eula_Constellation_6_1"
+                  "talentParam": "Eula_Constellation_6_1"
                 }
               ],
               "chance": "Chance",
@@ -1907,7 +1907,7 @@
                 {
                   "$type": "IDHCAKGEMOF",
                   "attackPattern": {
-                    "$type": "CHEAOJDOBEB",
+                    "$type": "ConfigAttackCircle",
                     "triggerType": "TriggerNoRepeat",
                     "born": {
                       "$type": "ConfigBornBySelf",
@@ -1918,7 +1918,7 @@
                       }
                     },
                     "height": 0.20000000298023224,
-                    "BMCPFKAEOJB": 1.399999976158142
+                    "radius": 1.399999976158142
                   }
                 },
                 {
@@ -2011,7 +2011,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_EelementalBurst_Camera_DamoclesSword",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2042,7 +2042,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_EelementalBurst_Cast",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2072,7 +2072,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
@@ -2083,7 +2083,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 4.0
+                  "radius": 4.0
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -2091,7 +2091,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.0,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Blunt",
                     "enBreak": 400.0,
@@ -2129,7 +2129,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2145,7 +2145,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Eula_PermanentSkill_2"
+              "talentParam": "Eula_PermanentSkill_2"
             }
           ],
           "skillID": 10512,
@@ -2156,7 +2156,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Eula_PermanentSkill_2"
+              "talentParam": "Eula_PermanentSkill_2"
             }
           ],
           "abilityName": "Avatar_Eula_ElementalArt_SetMark"
@@ -2242,7 +2242,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "EDLHKEAJOOL": 0.5,
               "born": {
@@ -2254,7 +2254,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -2262,7 +2262,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Elemental_Burst_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Ice",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 50.0,
@@ -2275,7 +2275,7 @@
                 "hitImpulseType": "LV6",
                 "overrideHitImpulse": {
                   "hitLevel": "Air",
-                  "IPHCEFBMJAJ": 0.0,
+                  "hitImpulseX": 0.0,
                   "hitImpulseY": 800.0
                 },
                 "hitHaltTimeScale": 0.019999999552965164
@@ -2297,7 +2297,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_EelementalBurst_Impact",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -2367,12 +2367,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_EelementalBurst_DamoclesSword",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Eula_EelementalBurst_DamoclesSword_Explode",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2482,7 +2482,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 6.5
+                  "radius": 6.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -2496,7 +2496,7 @@
                       "MUL",
                       "ADD"
                     ],
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Blunt",
                     "enBreak": 400.0,
@@ -2792,7 +2792,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Eula_Constellation_6"
+              "talentParam": "Eula_Constellation_6"
             }
           ],
           "ratio": "Eula_Constellation_6_DamoclesSword_Ratio",
@@ -2822,43 +2822,43 @@
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_01"],
           "damagePercentage": "Attack01",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_02"],
           "damagePercentage": "Attack02",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_03"],
           "damagePercentage": "Attack03",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_04"],
           "damagePercentage": "Attack04",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_05"],
           "damagePercentage": "Attack05",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack1"],
           "damagePercentage": "ExtraAttack1",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack2"],
           "damagePercentage": "ExtraAttack2",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -2976,7 +2976,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Self_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2987,12 +2987,12 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Self",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3028,7 +3028,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3036,7 +3036,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -3199,7 +3199,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3210,7 +3210,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3371,16 +3371,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3388,7 +3388,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3396,7 +3396,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -3434,15 +3434,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3450,7 +3450,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3458,7 +3458,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -3497,12 +3497,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3511,11 +3511,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Claymore_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

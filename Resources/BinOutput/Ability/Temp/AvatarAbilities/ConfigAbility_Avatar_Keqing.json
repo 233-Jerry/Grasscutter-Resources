@@ -341,7 +341,7 @@
                 "attenuationGroup": "default",
                 "attackProperty": {
                   "damagePercentage": 0.7200000286102295,
-                  "MKLAMNDEDGB": 0.0,
+                  "damagePercentageRatio": 0.0,
                   "bonusCriticalHurt": 25.0,
                   "overrideByWeapon": true,
                   "strikeType": "Slash",
@@ -382,7 +382,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 0.800000011920929
+                  "radius": 0.800000011920929
                 },
                 "attackInfo": {
                   "attackTag": "NormalAttack_05",
@@ -390,7 +390,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.7200000286102295,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 25.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -620,7 +620,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_Charge_Aim",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -720,9 +720,9 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
-                "FNMFBPGNEKD": "_ABILITY_Keqing_AttackPos",
-                "GPPNNKAOHCG": "_ABILITY_Keqing_AttackDir"
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_ABILITY_Keqing_AttackPos",
+                "directionKey": "_ABILITY_Keqing_AttackDir"
               },
               "gadgetID": 41042004,
               "campID": 1001,
@@ -733,10 +733,10 @@
             {
               "$type": "CreateGadget",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
-                "FNMFBPGNEKD": "_ABILITY_Keqing_AttackPos",
-                "GPPNNKAOHCG": "_ABILITY_Keqing_AttackDir"
+                "positionKey": "_ABILITY_Keqing_AttackPos",
+                "directionKey": "_ABILITY_Keqing_AttackDir"
               },
               "gadgetID": 41042004,
               "campID": 1001,
@@ -854,31 +854,31 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Keqing_ElementalArt_BlinkAttack"
+                  "talentParam": "Keqing_ElementalArt_BlinkAttack"
                 }
               ],
               "successActions": [
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_HideSpark_Talent",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_ShowSpark_Talent",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_HideSpark",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_ShowSpark",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -938,31 +938,31 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Keqing_ElementalArt_BlinkAttack"
+                  "talentParam": "Keqing_ElementalArt_BlinkAttack"
                 }
               ],
               "successActions": [
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_HideSpark_Talent",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_ShowSpark_Talent",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_HideSpark",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_ShowSpark",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1026,31 +1026,31 @@
               "targetPredicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Keqing_ElementalArt_BlinkAttack"
+                  "talentParam": "Keqing_ElementalArt_BlinkAttack"
                 }
               ],
               "successActions": [
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_HideSpark_Talent",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_ShowSpark_Talent",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ],
               "failActions": [
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_HideSpark",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "FireEffect",
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_ShowSpark",
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 }
               ]
             },
@@ -1177,7 +1177,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_Break1_Buff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1220,14 +1220,14 @@
           "$type": "FixedAvatarRushMove",
           "target": "Target",
           "toPos": {
-            "$type": "FNJGDOEMIIB",
+            "$type": "ConfigBornByGlobalValue",
             "offset": {
               "x": 0.0,
               "y": 0.0,
               "z": 0.0
             },
-            "FNMFBPGNEKD": "_ABILITY_Keqing_AttackPos",
-            "GPPNNKAOHCG": ""
+            "positionKey": "_ABILITY_Keqing_AttackPos",
+            "directionKey": ""
           },
           "timeRange": 0.1599999964237213,
           "maxRange": 15.0,
@@ -1256,13 +1256,13 @@
         {
           "$type": "ApplyModifier",
           "otherTargets": {
-            "$type": "FHPHBMBDJAJ",
-            "KNBIINCIAMG": ["equip01", "equip02", "sheathPoint"]
+            "$type": "SelectTargetsByEquipParts",
+            "equipPartNames": ["equip01", "equip02", "sheathPoint"]
           },
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Keqing_ElementalArt_AttackElectric"
+              "talentParam": "Keqing_ElementalArt_AttackElectric"
             }
           ],
           "modifierName": "Keqing_ElementalArt_AttackElectric"
@@ -1293,7 +1293,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art_Hold",
@@ -1301,7 +1301,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1345,7 +1345,7 @@
                   "z": 1.5
                 }
               },
-              "BMCPFKAEOJB": 2.0
+              "radius": 2.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art_Hold",
@@ -1353,7 +1353,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1433,7 +1433,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2020,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1453,7 +1453,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2020,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1479,7 +1479,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
@@ -1491,7 +1491,7 @@
                 }
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1499,7 +1499,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 50.0,
                 "strikeType": "Slash",
@@ -1511,7 +1511,7 @@
                 "hitImpulseType": "LV7",
                 "overrideHitImpulse": {
                   "hitLevel": "Air",
-                  "IPHCEFBMJAJ": 0.0,
+                  "hitImpulseX": 0.0,
                   "hitImpulseY": 600.0
                 },
                 "retreatType": "ByHitDirection",
@@ -1546,7 +1546,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_Bullet",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1565,7 +1565,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 1.600000023841858
+              "radius": 1.600000023841858
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1573,7 +1573,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1704,7 +1704,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_Trap",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -1719,7 +1719,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_Trap_Die",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveUniqueModifier",
@@ -1764,7 +1764,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalArt_TrapBurst",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAttackEvent",
@@ -1780,7 +1780,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -1788,7 +1788,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage1",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Slash",
@@ -1822,7 +1822,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 2.5
+                  "radius": 2.5
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -1830,7 +1830,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage2",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Slash",
@@ -2116,7 +2116,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Keqing_ElementalBurst_Buff"
+                  "talentParam": "Keqing_ElementalBurst_Buff"
                 }
               ],
               "modifierName": "Keqing_ElementalBurst_Talent_Buff"
@@ -2135,7 +2135,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_Talent6_Buff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -2152,7 +2152,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalBurst_Field",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "Predicated",
@@ -2160,7 +2160,7 @@
             {
               "$type": "IDHCAKGEMOF",
               "attackPattern": {
-                "$type": "CHEAOJDOBEB",
+                "$type": "ConfigAttackCircle",
                 "triggerType": "TriggerNoRepeat",
                 "born": {
                   "$type": "ConfigBornBySelf",
@@ -2171,7 +2171,7 @@
                   }
                 },
                 "height": 0.20000000298023224,
-                "BMCPFKAEOJB": 1.0
+                "radius": 1.0
               }
             },
             {
@@ -2188,14 +2188,14 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalBurst_Weapon",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "failActions": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalBurst_Weapon_NoCamera",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -2247,17 +2247,17 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalBurst_Attack00",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalBurst_Attack01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalBurst_Attack02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ],
       "onAbilityStart": [
@@ -2276,14 +2276,14 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalBurst_Attack03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "failActions": [
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Keqing_ElementalBurst_Attack03_NoCamera",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2300,7 +2300,7 @@
           "target": "OriginOwner",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
@@ -2312,7 +2312,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -2320,7 +2320,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage_Last",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Slash",
@@ -2390,7 +2390,7 @@
           "target": "OriginOwner",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
@@ -2402,7 +2402,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -2410,7 +2410,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage_Start",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Slash",
@@ -2453,7 +2453,7 @@
           "target": "OriginOwner",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
@@ -2465,7 +2465,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -2473,7 +2473,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Slash",
@@ -2506,7 +2506,7 @@
           "target": "OriginOwner",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
@@ -2518,7 +2518,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -2526,7 +2526,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Slash",
@@ -2559,7 +2559,7 @@
           "target": "OriginOwner",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
@@ -2571,7 +2571,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -2579,7 +2579,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Slash",
@@ -2622,7 +2622,7 @@
           "target": "OriginOwner",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
@@ -2634,7 +2634,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -2642,7 +2642,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Slash",
@@ -2685,7 +2685,7 @@
           "target": "OriginOwner",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
@@ -2697,7 +2697,7 @@
                 }
               },
               "height": 4.0,
-              "BMCPFKAEOJB": 8.0
+              "radius": 8.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -2705,7 +2705,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Slash",
@@ -2744,49 +2744,49 @@
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK01"],
           "damagePercentage": "Attack_01",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK02"],
           "damagePercentage": "Attack_02",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK03"],
           "damagePercentage": "Attack_03",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04_1"],
           "damagePercentage": "Attack_04_01",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ATK04_2"],
           "damagePercentage": "Attack_04_02",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "attackTags": ["NormalAttack_05"],
           "damagePercentage": "Attack_05",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack_1"],
           "damagePercentage": "ExtraAttack1",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         },
         {
           "$type": "ModifyDamageMixin",
           "animEventNames": ["ExtraAttack_2"],
           "damagePercentage": "ExtraAttack2",
-          "MKLAMNDEDGB": 0.0
+          "damagePercentageRatio": 0.0
         }
       ],
       "abilitySpecials": {
@@ -2871,7 +2871,7 @@
               "$type": "GenerateElemBall",
               "configID": 2020,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -3139,7 +3139,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Self_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3164,7 +3164,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_BS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3200,7 +3200,7 @@
                       "z": 1.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3208,7 +3208,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 0.0,
                     "overrideByWeapon": true,
                     "strikeType": "Slash",
@@ -3371,7 +3371,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Loop_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3382,7 +3382,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Loop_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3553,16 +3553,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3570,7 +3570,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3578,7 +3578,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -3616,15 +3616,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -3632,7 +3632,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 5.0
+              "radius": 5.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -3640,7 +3640,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 25.0,
                 "overrideByWeapon": true,
                 "strikeType": "Blunt",
@@ -3679,12 +3679,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Strike_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3693,11 +3693,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Sword_FallAnthem_Strike_02",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

@@ -183,7 +183,7 @@
               "$type": "TriggerBullet",
               "bulletID": 40000174,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.5,
@@ -432,7 +432,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_MQ1002_XueyueBuff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1004,7 +1004,7 @@
               "dropType": "ForceDrop",
               "configID": 2024,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1023,7 +1023,7 @@
                   "dropType": "ForceDrop",
                   "configID": 2024,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1544,7 +1544,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_JumpUp_01_Buff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "EnableRocketJump",
@@ -1579,7 +1579,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Stages_Level_Common_Jumpplatform_01_Active",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2084,42 +2084,42 @@
                   {
                     "$type": "FireEffect",
                     "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ElectricFairy_Shield_Hit_Last",
-                    "FGMDINMEPHL": -1.0
+                    "effectTempleteID": -1.0
                   }
                 ],
                 [
                   {
                     "$type": "FireEffect",
                     "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ElectricFairy_Shield_Hit",
-                    "FGMDINMEPHL": -1.0
+                    "effectTempleteID": -1.0
                   }
                 ],
                 [
                   {
                     "$type": "FireEffect",
                     "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ElectricFairy_Shield_Hit",
-                    "FGMDINMEPHL": -1.0
+                    "effectTempleteID": -1.0
                   }
                 ],
                 [
                   {
                     "$type": "FireEffect",
                     "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ElectricFairy_Shield_Hit",
-                    "FGMDINMEPHL": -1.0
+                    "effectTempleteID": -1.0
                   }
                 ],
                 [
                   {
                     "$type": "FireEffect",
                     "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ElectricFairy_Shield_Hit",
-                    "FGMDINMEPHL": -1.0
+                    "effectTempleteID": -1.0
                   }
                 ],
                 [
                   {
                     "$type": "FireEffect",
                     "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ElectricFairy_Shield_Hit",
-                    "FGMDINMEPHL": -1.0
+                    "effectTempleteID": -1.0
                   }
                 ]
               ]
@@ -2180,7 +2180,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_ThunderSeed_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onThinkInterval": [

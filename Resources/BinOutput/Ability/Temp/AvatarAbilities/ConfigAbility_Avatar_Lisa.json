@@ -163,7 +163,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -175,7 +175,7 @@
               },
               "height": 5.0,
               "BAPAHIOBNCL": 40.0,
-              "BMCPFKAEOJB": 10.0,
+              "radius": 10.0,
               "MKOMGAACIPB": "Clockwise"
             },
             "attackInfo": {
@@ -184,7 +184,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Lisa_ExtraAttack_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 25.0,
@@ -239,7 +239,7 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Lisa_ExtraAttack_Lightning",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -248,7 +248,7 @@
                 "DAPKLNIFPID": true,
                 "BJCIHELGKLP": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -257,7 +257,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -285,7 +285,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Lisa_Attack_HideSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerSetVisible"
@@ -324,13 +324,13 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Lisa_Attack_ShowSpark",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "SetAnimatorTrigger",
               "otherTargets": {
-                "$type": "FHPHBMBDJAJ",
-                "KNBIINCIAMG": ["equip02"]
+                "$type": "SelectTargetsByEquipParts",
+                "equipPartNames": ["equip02"]
               },
               "triggerID": "Attack"
             }
@@ -421,7 +421,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_Area",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -533,7 +533,7 @@
                 "attachPointName": "WeaponR",
                 "ABIMPICHJNC": "Caster"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -547,7 +547,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAudio",
@@ -579,14 +579,14 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "enBreak": 60.0
                   },
@@ -616,7 +616,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Ani_Lisa_NormalAttack_Lightning_Right",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalPos",
@@ -641,16 +641,16 @@
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
-                "FNMFBPGNEKD": "_ABILITY_Lisa_NormalAttack_01",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Lisa_NormalAttack_01",
+                "directionKey": ""
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "NormalAttack_01",
@@ -658,7 +658,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage01",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -691,7 +691,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Magic_TriStars"
+              "talentParam": "Magic_TriStars"
             }
           ],
           "modifierName": "Lisa_Lightning_Attack01_Retreat"
@@ -707,7 +707,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Lisa_Bullet_Lightning",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -738,7 +738,7 @@
                 "attachPointName": "WeaponR",
                 "ABIMPICHJNC": "Caster"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -752,7 +752,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAudio",
@@ -784,14 +784,14 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "enBreak": 60.0
                   },
@@ -821,7 +821,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Ani_Lisa_NormalAttack_Lightning_Left",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalPos",
@@ -846,16 +846,16 @@
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
-                "FNMFBPGNEKD": "_ABILITY_Lisa_NormalAttack_02",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Lisa_NormalAttack_02",
+                "directionKey": ""
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "NormalAttack_02",
@@ -863,7 +863,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage02",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -906,7 +906,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Magic_TriStars"
+              "talentParam": "Magic_TriStars"
             }
           ],
           "modifierName": "Lisa_Lightning_Attack02_Retreat"
@@ -940,7 +940,7 @@
                 "attachPointName": "WeaponR",
                 "ABIMPICHJNC": "Caster"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -955,7 +955,7 @@
                 "attachPointName": "WeaponR",
                 "ABIMPICHJNC": "Caster"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -969,7 +969,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAudio",
@@ -1001,14 +1001,14 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "enBreak": 60.0
                   },
@@ -1038,7 +1038,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Ani_Lisa_NormalAttack_Lightning_Right",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalPos",
@@ -1068,16 +1068,16 @@
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
-                "FNMFBPGNEKD": "_ABILITY_Lisa_NormalAttack_03",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Lisa_NormalAttack_03",
+                "directionKey": ""
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "NormalAttack_03",
@@ -1085,7 +1085,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage03",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1123,7 +1123,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Magic_TriStars"
+              "talentParam": "Magic_TriStars"
             }
           ],
           "modifierName": "Lisa_Lightning_Attack03_Retreat"
@@ -1157,7 +1157,7 @@
                 "attachPointName": "WeaponR",
                 "ABIMPICHJNC": "Caster"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -1172,7 +1172,7 @@
                 "attachPointName": "WeaponR",
                 "ABIMPICHJNC": "Caster"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -1186,7 +1186,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "TriggerAudio",
@@ -1218,14 +1218,14 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "enBreak": 60.0
                   },
@@ -1255,7 +1255,7 @@
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Ani_Lisa_NormalAttack_Lightning_Left",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "SetGlobalPos",
@@ -1280,16 +1280,16 @@
               "$type": "ConfigAttackSphere",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
                   "z": 0.0
                 },
-                "FNMFBPGNEKD": "_ABILITY_Lisa_NormalAttack_04",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Lisa_NormalAttack_04",
+                "directionKey": ""
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "NormalAttack_04",
@@ -1297,7 +1297,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage04",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -1340,7 +1340,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Magic_TriStars"
+              "talentParam": "Magic_TriStars"
             }
           ],
           "modifierName": "Lisa_Lightning_Attack04_Retreat"
@@ -1356,7 +1356,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Hit_Lisa_NormalAttack_Burst_01",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1384,7 +1384,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Hit_Lisa_FlickerWave_Burst",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -1518,7 +1518,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2020,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -1537,7 +1537,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Ani_FlickerWave_Bul",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "ApplyModifier",
@@ -1559,7 +1559,7 @@
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
               },
-              "BMCPFKAEOJB": 1.0
+              "radius": 1.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Art",
@@ -1567,7 +1567,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 25.0,
@@ -1606,7 +1606,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_FlickerWave_Buff",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1618,7 +1618,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_FlickerWave_Buff_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -1728,7 +1728,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Lisa_StaticElec_Number1",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -1757,7 +1757,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Lisa_StaticElec_Number2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -1782,7 +1782,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Lisa_StaticElec_Number3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "RemoveModifier",
@@ -1814,7 +1814,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Lisa_ExtraAttack_StaticElecField"
+                  "talentParam": "Lisa_ExtraAttack_StaticElecField"
                 }
               ],
               "chance": "Lisa_Talent_ExtraAttack_StaticElecField_Chance",
@@ -1934,7 +1934,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Lisa_Super_FlickerWave2"
+                  "talentParam": "Lisa_Super_FlickerWave2"
                 }
               ]
             }
@@ -1951,7 +1951,7 @@
             },
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Lisa_Super_FlickerWave2"
+              "talentParam": "Lisa_Super_FlickerWave2"
             }
           ],
           "modifierName": "FlickerWave_Talent_Effect"
@@ -1967,13 +1967,13 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Lisa_Constellation_6"
+                  "talentParam": "Lisa_Constellation_6"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_LISA_CONSTELLATION_6_CD",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
@@ -2014,13 +2014,13 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Lisa_Constellation_6"
+                  "talentParam": "Lisa_Constellation_6"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_LISA_CONSTELLATION_6_CD",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
@@ -2034,18 +2034,18 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Lisa_Constellation_6"
+                  "talentParam": "Lisa_Constellation_6"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_LISA_CONSTELLATION_6_CD",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lisa_Constellation_6",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2055,13 +2055,13 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Lisa_Constellation_6"
+                  "talentParam": "Lisa_Constellation_6"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_LISA_CONSTELLATION_6_CD",
                   "ratio": 0.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "NoneOrEqual"
                 }
               ],
@@ -2143,7 +2143,7 @@
                   "target": "Target",
                   "key": "_ABILITY_Lisa_GenerateElemBall_CustomPos",
                   "born": {
-                    "$type": "GJGFFJAGIDF"
+                    "$type": "ConfigBornByTarget"
                   },
                   "setTarget": false
                 },
@@ -2165,12 +2165,12 @@
               "$type": "GenerateElemBall",
               "configID": 2020,
               "born": {
-                "$type": "FNJGDOEMIIB",
+                "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "JCJGOCMLFIM": true,
                 "HKNFOKFIKAG": 3.0,
-                "FNMFBPGNEKD": "_ABILITY_Lisa_GenerateElemBall_CustomPos",
-                "GPPNNKAOHCG": ""
+                "positionKey": "_ABILITY_Lisa_GenerateElemBall_CustomPos",
+                "directionKey": ""
               },
               "value": 1.0,
               "baseEnergy": 15.0
@@ -2208,7 +2208,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Lisa_ThunderFall_1_LHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2219,7 +2219,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Lisa_ThunderFall_3",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -2346,7 +2346,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_00",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -2419,7 +2419,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 0.20000000298023224
+                  "radius": 0.20000000298023224
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -2427,7 +2427,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_0",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 50.0,
@@ -2462,7 +2462,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 0.20000000298023224
+                  "radius": 0.20000000298023224
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -2470,7 +2470,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_1",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 50.0,
@@ -2505,7 +2505,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 0.20000000298023224
+                  "radius": 0.20000000298023224
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -2513,7 +2513,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_2",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 50.0,
@@ -2548,7 +2548,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 0.20000000298023224
+                  "radius": 0.20000000298023224
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Art",
@@ -2556,7 +2556,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage_3",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 50.0,
@@ -2581,7 +2581,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_01",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -2601,7 +2601,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_02",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -2621,7 +2621,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_03",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -2647,7 +2647,7 @@
                   "$type": "GenerateElemBall",
                   "configID": 2020,
                   "born": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -2785,7 +2785,7 @@
                 },
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Lisa_ThunderFall_Talent_ReviveElemEnergy"
+                  "talentParam": "Lisa_ThunderFall_Talent_ReviveElemEnergy"
                 },
                 {
                   "$type": "NBKDFLDAGEH",
@@ -2804,7 +2804,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Claymore_Razor_ClawMark_Restore_2",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onRemoved": [
@@ -2863,7 +2863,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Lisa_Constellation_2"
+              "talentParam": "Lisa_Constellation_2"
             }
           ],
           "modifierName": "UNIQUE_Lisa_Constellation_2_DefenceUp_Handler"
@@ -2876,7 +2876,7 @@
               "predicates": [
                 {
                   "$type": "HJIPPKGIPOC",
-                  "GFIOLOJIDMG": "Lisa_Constellation_2"
+                  "talentParam": "Lisa_Constellation_2"
                 }
               ]
             }
@@ -2963,7 +2963,7 @@
           "$type": "SetGlobalPos",
           "key": "ThunderFall_WithOutMonster_Pos_1",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2980,7 +2980,7 @@
           "$type": "SetGlobalPos",
           "key": "ThunderFall_WithOutMonster_Pos_2",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": -3.5,
               "y": 0.0,
@@ -2997,7 +2997,7 @@
           "$type": "SetGlobalPos",
           "key": "ThunderFall_WithOutMonster_Pos_3",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 3.5,
               "y": 0.0,
@@ -3021,11 +3021,11 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_00",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ThunderFall_WithOutMonster_Pos_1",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ThunderFall_WithOutMonster_Pos_1",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3038,11 +3038,11 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_00",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ThunderFall_WithOutMonster_Pos_2",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ThunderFall_WithOutMonster_Pos_2",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -3055,11 +3055,11 @@
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_ThunderFall_00",
           "born": {
-            "$type": "FNJGDOEMIIB",
-            "FNMFBPGNEKD": "ThunderFall_WithOutMonster_Pos_3",
-            "GPPNNKAOHCG": ""
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "ThunderFall_WithOutMonster_Pos_3",
+            "directionKey": ""
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3148,12 +3148,12 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_PierceLightning_LHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_PierceLightning_RHand",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -3177,7 +3177,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -3187,7 +3187,7 @@
                   "z": 0.0
                 }
               },
-              "BMCPFKAEOJB": 7.0
+              "radius": 7.0
             },
             "attackInfo": {
               "attackTag": "Elemental_Burst",
@@ -3195,7 +3195,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.10000000149011612,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "elementRank": 1.5,
                 "bonusCriticalHurt": 0.0,
@@ -3223,7 +3223,7 @@
         {
           "$type": "CreateGadget",
           "born": {
-            "$type": "GJGFFJAGIDF",
+            "$type": "ConfigBornByTarget",
             "offset": {
               "x": 0.0,
               "y": 2.0,
@@ -3273,7 +3273,7 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_Ball_Attack_COUNT",
                   "ratio": 1.0,
-                  "forceByCaster": true,
+                  "setTarget": true,
                   "compareType": "MoreThanAndEqual"
                 },
                 {
@@ -3307,7 +3307,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_PierceLightning_Ball_Attack",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -3372,7 +3372,7 @@
                     "attachPointName": "RootNode",
                     "ABIMPICHJNC": "Self"
                   },
-                  "BMCPFKAEOJB": 1.0
+                  "radius": 1.0
                 },
                 "attackInfo": {
                   "attackTag": "Elemental_Burst",
@@ -3380,7 +3380,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "elementRank": 1.5,
                     "bonusCriticalHurt": 25.0,
@@ -3442,7 +3442,7 @@
                 "attachPointName": "RootNode",
                 "ABIMPICHJNC": "Caster"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "FireEffect",
@@ -3456,7 +3456,7 @@
                 },
                 "attachPointName": "RootNode"
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "AddGlobalValue",
@@ -3561,7 +3561,7 @@
               "z": 0.0
             }
           },
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "AttachModifier",
@@ -3576,7 +3576,7 @@
           "predicates": [
             {
               "$type": "HJIPPKGIPOC",
-              "GFIOLOJIDMG": "Lisa_Constellation_5"
+              "talentParam": "Lisa_Constellation_5"
             }
           ],
           "modifierName": "PierceLightning_Hit_Pre"
@@ -3592,7 +3592,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lisa_PierceLightning_Ball",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3605,7 +3605,7 @@
         {
           "$type": "AttachEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_PierceLightning_Ball_Lightning_Trail",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }
@@ -3793,7 +3793,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_BS_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -3833,7 +3833,7 @@
                       "z": 0.0
                     }
                   },
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "FallingAttack",
@@ -3841,7 +3841,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": "FallingAnthem_Normal_Loop_Damage",
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Electric",
                     "bonusCriticalHurt": 0.0,
                     "strikeType": "Default",
@@ -4135,7 +4135,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Self_Electric",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         },
@@ -4173,16 +4173,16 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4190,7 +4190,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.0
+              "radius": 3.0
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4198,7 +4198,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_1_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -4235,15 +4235,15 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.5,
@@ -4251,7 +4251,7 @@
                 }
               },
               "height": 2.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "FallingAttack",
@@ -4259,7 +4259,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": "FallingAnthem_Normal_Rank_2_Damage",
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "elementType": "Electric",
                 "bonusCriticalHurt": 25.0,
                 "strikeType": "Default",
@@ -4297,12 +4297,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 0.0,
-              "forceByCaster": true,
+              "setTarget": true,
               "compareType": "NoneOrEqual"
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_01_Electric",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "FireEffect",
@@ -4311,11 +4311,11 @@
               "$type": "ByTargetGlobalValue",
               "key": "_ABILITY_FallingAnthem_UseCamera",
               "ratio": 1.0,
-              "forceByCaster": true
+              "setTarget": true
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Catalyst_FallAnthem_Strike_02_Electric",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         }
       ]
     }

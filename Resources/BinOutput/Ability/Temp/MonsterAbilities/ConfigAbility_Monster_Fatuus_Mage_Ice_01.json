@@ -296,10 +296,10 @@
                     "$type": "ConfigBornBySelf",
                     "HOPPHMEKHLG": {
                       "$type": "BIMJJILMODA",
-                      "GPPNNKAOHCG": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
+                      "directionKey": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SendEffectTrigger",
@@ -354,10 +354,10 @@
                     "$type": "ConfigBornBySelf",
                     "HOPPHMEKHLG": {
                       "$type": "BIMJJILMODA",
-                      "GPPNNKAOHCG": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
+                      "directionKey": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SendEffectTrigger",
@@ -410,7 +410,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Mage_Ice_ShieldAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -488,10 +488,10 @@
                     "$type": "ConfigBornBySelf",
                     "HOPPHMEKHLG": {
                       "$type": "BIMJJILMODA",
-                      "GPPNNKAOHCG": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
+                      "directionKey": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SendEffectTrigger",
@@ -546,10 +546,10 @@
                     "$type": "ConfigBornBySelf",
                     "HOPPHMEKHLG": {
                       "$type": "BIMJJILMODA",
-                      "GPPNNKAOHCG": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
+                      "directionKey": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SendEffectTrigger",
@@ -602,7 +602,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Mage_Ice_ShieldAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -680,10 +680,10 @@
                     "$type": "ConfigBornBySelf",
                     "HOPPHMEKHLG": {
                       "$type": "BIMJJILMODA",
-                      "GPPNNKAOHCG": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
+                      "directionKey": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SendEffectTrigger",
@@ -738,10 +738,10 @@
                     "$type": "ConfigBornBySelf",
                     "HOPPHMEKHLG": {
                       "$type": "BIMJJILMODA",
-                      "GPPNNKAOHCG": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
+                      "directionKey": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
                     }
                   },
-                  "FGMDINMEPHL": -1.0
+                  "effectTempleteID": -1.0
                 },
                 {
                   "$type": "SendEffectTrigger",
@@ -794,7 +794,7 @@
             {
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Mage_Ice_ShieldAS",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -825,7 +825,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Mage_Ice_CreateShield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -846,7 +846,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Mage_Ice_CreateShield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -867,7 +867,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Mage_Ice_CreateShield",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ],
           "onKill": [
@@ -1188,7 +1188,7 @@
             "configID": 26060301
           },
           "born": {
-            "$type": "GJGFFJAGIDF"
+            "$type": "ConfigBornByTarget"
           },
           "limitY": 1.0
         },
@@ -1653,7 +1653,7 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Mage_Ice_Latern",
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }
@@ -1795,7 +1795,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42304051,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1807,7 +1807,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42304051,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 3.0,
                   "y": 0.0,
@@ -1827,7 +1827,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42304051,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": -3.0,
                   "y": 0.0,
@@ -1847,7 +1847,7 @@
               "$type": "TriggerBullet",
               "bulletID": 42304051,
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -1896,7 +1896,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1915,7 +1915,7 @@
                     }
                   },
                   "height": 4.0,
-                  "BMCPFKAEOJB": 1.5
+                  "radius": 1.5
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -1923,7 +1923,7 @@
                   "attenuationGroup": "default",
                   "attackProperty": {
                     "damagePercentage": 0.75,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "elementType": "Ice",
                     "bonusCriticalHurt": 50.0,
                     "strikeType": "Pierce",
@@ -1944,10 +1944,10 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Mage_Ice_IceSpike",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "DAPKLNIFPID": true
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             }
           ]
         }

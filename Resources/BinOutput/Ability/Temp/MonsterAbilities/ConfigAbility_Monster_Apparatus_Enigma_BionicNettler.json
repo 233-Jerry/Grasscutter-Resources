@@ -150,13 +150,13 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "CHEAOJDOBEB",
+              "$type": "ConfigAttackCircle",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf"
               },
               "height": 3.0,
-              "BMCPFKAEOJB": 3.5
+              "radius": 3.5
             },
             "attackInfo": {
               "attackTag": "",
@@ -164,7 +164,7 @@
               "attenuationGroup": "default",
               "attackProperty": {
                 "damagePercentage": 0.3070000112056732,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0
               },
               "hitPattern": {
@@ -385,7 +385,7 @@
                   "$type": "FixedMonsterRushMove",
                   "target": "SelfAttackTarget",
                   "toPos": {
-                    "$type": "GJGFFJAGIDF",
+                    "$type": "ConfigBornByTarget",
                     "offset": {
                       "x": 0.0,
                       "y": 0.0,
@@ -453,14 +453,14 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicNettler_EnergyBall",
               "born": {
-                "$type": "GJGFFJAGIDF",
+                "$type": "ConfigBornByTarget",
                 "offset": {
                   "x": 0.0,
                   "y": -0.800000011920929,
                   "z": 0.0
                 }
               },
-              "FGMDINMEPHL": -1.0
+              "effectTempleteID": -1.0
             },
             {
               "$type": "ApplyModifier",
@@ -484,7 +484,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "CHEAOJDOBEB",
+                  "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -495,7 +495,7 @@
                     }
                   },
                   "height": 1.0,
-                  "BMCPFKAEOJB": 1.2000000476837158
+                  "radius": 1.2000000476837158
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -503,7 +503,7 @@
                   "attenuationGroup": "Monster_Konungmathr_Attenuation_1",
                   "attackProperty": {
                     "damagePercentage": 0.3840000033378601,
-                    "MKLAMNDEDGB": 0.0,
+                    "damagePercentageRatio": 0.0,
                     "bonusCriticalHurt": 100.0,
                     "strikeType": "Default"
                   },
@@ -566,7 +566,7 @@
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicNettler_EnergyBall_Line",
-              "FGMDINMEPHL": -1.0,
+              "effectTempleteID": -1.0,
               "KIGIKJMMKEJ": true
             },
             {
@@ -642,7 +642,7 @@
         {
           "$type": "FireEffect",
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Apparatus_Enigma_BionicNettler_EnergyBallAS",
-          "FGMDINMEPHL": -1.0
+          "effectTempleteID": -1.0
         },
         {
           "$type": "RemoveUniqueModifier",
@@ -721,7 +721,7 @@
               "attenuationGroup": "Monster_Konungmathr_Attenuation_1",
               "attackProperty": {
                 "damagePercentage": 0.3840000033378601,
-                "MKLAMNDEDGB": 0.0,
+                "damagePercentageRatio": 0.0,
                 "bonusCriticalHurt": 100.0,
                 "strikeType": "Default"
               },
