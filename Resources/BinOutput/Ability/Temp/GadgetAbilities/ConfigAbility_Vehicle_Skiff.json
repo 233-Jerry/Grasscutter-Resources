@@ -114,7 +114,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "MJLCPIAKNCP": "OnlyHitMassiveEntity",
                   "born": {
@@ -623,7 +623,7 @@
           "bulletID": 70350259,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "attachPointName": "CannonFire"
@@ -790,7 +790,7 @@
               "bulletID": 70350260,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "attachPointName": "CannonFire"
@@ -1065,9 +1065,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -1782,9 +1782,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -1828,9 +1828,9 @@
           "bulletID": 420000026,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0

@@ -1102,7 +1102,7 @@
               "target": "Target",
               "predicates": [
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 },
                 {
                   "$type": "ByEntityTypes",
@@ -1207,7 +1207,7 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "DBGHBLHJOCO"
+                      "$type": "ByHitCritical"
                     }
                   ]
                 }
@@ -1234,7 +1234,7 @@
                   "BOJCAKJDAKM": 0.0
                 },
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 }
               ],
               "successActions": [
@@ -2022,7 +2022,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByCollisionPoint",

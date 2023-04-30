@@ -330,7 +330,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -389,7 +389,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "born": {
                         "$type": "ConfigBornBySelf",
@@ -1207,9 +1207,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalArt_PhantomShield_L1",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 45.0,
                         "z": 0.0
@@ -1225,9 +1225,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalArt_PhantomShield_L1",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 60.0,
                         "z": 0.0
@@ -1332,9 +1332,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalArt_PhantomShield_L2",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 135.0,
                         "z": 0.0
@@ -1350,9 +1350,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalArt_PhantomShield_L2",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -1457,9 +1457,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalArt_PhantomShield_L3",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 225.0,
                         "z": 0.0
@@ -1475,9 +1475,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalArt_PhantomShield_L3",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 300.0,
                         "z": 0.0
@@ -1571,9 +1571,9 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Xingqiu_ElementalArt_PhantomShield_L4",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 315.0,
                     "z": 0.0
@@ -2001,9 +2001,9 @@
                       "y": -2.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "JADOBJDPOLJ",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -2664,9 +2664,9 @@
               "OKDPGGJGGCJ": 0.0,
               "CPOKKADJBFH": 0.5
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 12.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2693,9 +2693,9 @@
               "OKDPGGJGGCJ": 0.0,
               "CPOKKADJBFH": 0.5
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 12.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2748,9 +2748,9 @@
               "OKDPGGJGGCJ": 0.0,
               "CPOKKADJBFH": 0.5
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 15.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2777,9 +2777,9 @@
               "OKDPGGJGGCJ": 0.0,
               "CPOKKADJBFH": 0.5
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 15.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2806,9 +2806,9 @@
               "OKDPGGJGGCJ": 0.0,
               "CPOKKADJBFH": 0.5
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 15.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2856,9 +2856,9 @@
               "y": 2.5,
               "z": 1.5
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 30.0,
                 "y": -30.0,
                 "z": 0.0
@@ -2880,9 +2880,9 @@
               "y": 2.5,
               "z": 0.75
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 25.0,
                 "y": -17.0,
                 "z": 0.0
@@ -2904,9 +2904,9 @@
               "y": 2.5,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 20.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2928,9 +2928,9 @@
               "y": 2.5,
               "z": 0.75
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 25.0,
                 "y": 17.0,
                 "z": 0.0
@@ -2952,9 +2952,9 @@
               "y": 2.5,
               "z": 1.5
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 30.0,
                 "y": 30.0,
                 "z": 0.0

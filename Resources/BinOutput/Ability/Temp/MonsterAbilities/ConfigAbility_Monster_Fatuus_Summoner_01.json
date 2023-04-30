@@ -262,9 +262,9 @@
                         "y": 1.75,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "JADOBJDPOLJ",
-                        "NHGDOBINMBK": {
+                        "angleOffset": {
                           "x": 0.0,
                           "y": 0.0,
                           "z": 0.0
@@ -311,9 +311,9 @@
                         "y": 1.75,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "JADOBJDPOLJ",
-                        "NHGDOBINMBK": {
+                        "angleOffset": {
                           "x": 0.0,
                           "y": 135.0,
                           "z": 0.0
@@ -361,9 +361,9 @@
                         "y": 1.75,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "JADOBJDPOLJ",
-                        "NHGDOBINMBK": {
+                        "angleOffset": {
                           "x": 0.0,
                           "y": 225.0,
                           "z": 0.0
@@ -413,9 +413,9 @@
                         "y": 1.75,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "JADOBJDPOLJ",
-                        "NHGDOBINMBK": {
+                        "angleOffset": {
                           "x": 0.0,
                           "y": 0.0,
                           "z": 0.0
@@ -461,9 +461,9 @@
                         "y": 1.75,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "JADOBJDPOLJ",
-                        "NHGDOBINMBK": {
+                        "angleOffset": {
                           "x": 0.0,
                           "y": 135.0,
                           "z": 0.0
@@ -510,9 +510,9 @@
                         "y": 1.75,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "JADOBJDPOLJ",
-                        "NHGDOBINMBK": {
+                        "angleOffset": {
                           "x": 0.0,
                           "y": 225.0,
                           "z": 0.0
@@ -1622,7 +1622,7 @@
                       "key": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -1636,7 +1636,7 @@
                       "key": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -1649,8 +1649,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Summoner_ElectricShieldHitInvalid",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
                     }
                   },
@@ -1674,7 +1674,7 @@
                       "key": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -1688,7 +1688,7 @@
                       "key": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -1701,8 +1701,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Fatuus_Summoner_ElectricShieldHitValid",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_FATUUS_SUMMONER_ELEMENTSHIELD_HIT"
                     }
                   },

@@ -338,9 +338,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -362,9 +362,9 @@
                           "y": 0.0,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID",
-                          "NHGDOBINMBK": {
+                          "angleOffset": {
                             "x": 0.0,
                             "y": 0.0,
                             "z": 0.0
@@ -569,7 +569,7 @@
               "target": "Target",
               "predicates": [
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 },
                 {
                   "$type": "ByEntityTypes",
@@ -1078,7 +1078,7 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "DBGHBLHJOCO"
+                      "$type": "ByHitCritical"
                     }
                   ]
                 }
@@ -1105,7 +1105,7 @@
                   "BOJCAKJDAKM": 0.0
                 },
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 }
               ],
               "successActions": [
@@ -1281,7 +1281,7 @@
                           "y": 0.0,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID"
                         }
                       },
@@ -1300,7 +1300,7 @@
                               "y": 0.0,
                               "z": 0.0
                             },
-                            "HOPPHMEKHLG": {
+                            "direction": {
                               "$type": "IOPNFLFHGID"
                             }
                           },
@@ -2537,7 +2537,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByCollisionPoint",
@@ -3656,7 +3656,7 @@
                           "y": 0.20000000298023224,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID"
                         }
                       },
@@ -3675,7 +3675,7 @@
                               "y": 0.0,
                               "z": 0.0
                             },
-                            "HOPPHMEKHLG": {
+                            "direction": {
                               "$type": "IOPNFLFHGID"
                             }
                           },

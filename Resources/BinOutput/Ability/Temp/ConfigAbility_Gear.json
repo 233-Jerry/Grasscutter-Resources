@@ -899,7 +899,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByTarget",
@@ -951,7 +951,7 @@
           "RotationDampTime": true,
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornByTarget",
@@ -1526,7 +1526,7 @@
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_POI_Dq_MS_BaalEntrance_01",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": 0.0,

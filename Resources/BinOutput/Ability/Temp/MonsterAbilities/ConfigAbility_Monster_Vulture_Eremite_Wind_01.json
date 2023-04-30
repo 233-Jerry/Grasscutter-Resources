@@ -595,9 +595,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {}
+                      "angleOffset": {}
                     }
                   },
                   "height": 1.2000000476837158,
@@ -738,7 +738,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",

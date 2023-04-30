@@ -183,9 +183,9 @@
                       "y": 0.0,
                       "z": 1.5
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 30.0,
                         "z": 0.0
@@ -290,7 +290,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByCollisionPoint",
@@ -363,7 +363,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "LLOEMEPIBII": "Horizontal",
               "maxAngle": 15.0

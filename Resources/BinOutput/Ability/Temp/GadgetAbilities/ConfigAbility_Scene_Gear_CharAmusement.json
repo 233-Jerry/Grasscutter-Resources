@@ -3416,7 +3416,7 @@
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Bouncing_Ball_Warnig",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -3444,9 +3444,9 @@
           "key": "HitRotation",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IHINHODOMIN",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -3460,8 +3460,8 @@
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Bouncing_Ball_Bounce",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "directionKey": "HitRotation"
             }
           },
@@ -4060,7 +4060,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",

@@ -152,7 +152,7 @@
                       "key": "_ABILITY_ABYSS_Electric_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -166,7 +166,7 @@
                       "key": "_ABILITY_ABYSS_Electric_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -179,8 +179,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Abyss_Electric_ElementShield_Hit_Invalid",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_ABYSS_Electric_ELEMENTSHIELD_HIT"
                     }
                   },
@@ -210,7 +210,7 @@
                       "key": "_ABILITY_ABYSS_Electric_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -224,7 +224,7 @@
                       "key": "_ABILITY_ABYSS_Electric_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -237,8 +237,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Abyss_Electric_ElementShield_Hit",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_ABYSS_Electric_ELEMENTSHIELD_HIT"
                     }
                   },
@@ -743,9 +743,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "JADOBJDPOLJ",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 45.0,
                         "z": 0.0
@@ -774,9 +774,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "JADOBJDPOLJ",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -911,7 +911,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -987,7 +987,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "BarrageAttachPoint1",
                   "ABIMPICHJNC": "Self"
@@ -1005,7 +1005,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "BarrageAttachPoint2",
                   "ABIMPICHJNC": "Self"
@@ -1023,7 +1023,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "BarrageAttachPoint3",
                   "ABIMPICHJNC": "Self"
@@ -1041,7 +1041,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "BarrageAttachPoint4",
                   "ABIMPICHJNC": "Self"
@@ -1965,7 +1965,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "attachPointName": "ElectricBall"
@@ -1989,7 +1989,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "attachPointName": "ElectricBall"

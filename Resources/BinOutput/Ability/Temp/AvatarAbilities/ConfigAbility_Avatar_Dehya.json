@@ -685,9 +685,9 @@
               "y": 1.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 180.0
@@ -1745,7 +1745,7 @@
           "bulletID": 41079002,
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "IABNJPGBAOH": true
@@ -2916,7 +2916,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2992,7 +2992,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3863,7 +3863,7 @@
                   "compareType": "NoneOrEqual"
                 },
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 }
               ],
               "successActions": [

@@ -766,9 +766,9 @@
           "born": {
             "$type": "ConfigBornBySelf",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2333,7 +2333,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Mitakenarukami_Weak_Hit",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 },
                 "BJCIHELGKLP": true
@@ -4699,7 +4699,7 @@
           "bulletID": 42906101,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "JPOJHLOIKLG": 2.5,
               "MPNLAACKHNA": 2.5,
@@ -4738,7 +4738,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Mitakenarukami_MultiAtkF_Atk03_VajraChargeBS",
               "born": {
                 "$type": "ConfigBornByGlobalValue",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "z": 1.0
@@ -4756,7 +4756,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Mitakenarukami_MultiAtkF_Atk03_VajraChargeAS",
               "born": {
                 "$type": "ConfigBornByGlobalValue",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "z": 1.0
@@ -4829,8 +4829,8 @@
           "$type": "CreateGadget",
           "born": {
             "$type": "ConfigBornByGlobalValue",
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "directionKey": "_VAJRADIR_"
             },
             "positionKey": "_VAJRAPOS_",
@@ -4894,7 +4894,7 @@
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Mitakenarukami_MultiAtkF_Atk03_VajraBulletExplode",
           "born": {
             "$type": "ConfigBornByGlobalValue",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "AKNHOGLMAAH",
               "eularAngles": {
                 "z": 1.0
@@ -5030,9 +5030,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "JADOBJDPOLJ",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 60.0,
                         "z": 0.0
@@ -5295,9 +5295,9 @@
           "bulletID": 42906101,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -5339,9 +5339,9 @@
               "y": 0.0,
               "z": 3.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -5359,9 +5359,9 @@
               "y": 0.0,
               "z": 3.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 30.0,
                 "z": 0.0
@@ -5379,9 +5379,9 @@
               "y": 0.0,
               "z": 3.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -30.0,
                 "z": 0.0
@@ -5399,9 +5399,9 @@
               "y": 0.0,
               "z": 3.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 15.0,
                 "z": 0.0
@@ -5419,9 +5419,9 @@
               "y": 0.0,
               "z": 3.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -15.0,
                 "z": 0.0
@@ -5433,7 +5433,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornByTarget",
@@ -5498,9 +5498,9 @@
               "y": 1.25,
               "z": 5.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -5766,7 +5766,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -7470,7 +7470,7 @@
                   "y": 0.0,
                   "z": 1.75
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ"
                 }
               },
@@ -7488,7 +7488,7 @@
                   "z": 16.5
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 },
                 "positionKey": "_MONSTER_SHOUGUN_BORN_POS_",
@@ -7507,7 +7507,7 @@
                   "z": -16.5
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 },
                 "positionKey": "_MONSTER_SHOUGUN_BORN_POS_",
@@ -7526,7 +7526,7 @@
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 },
                 "positionKey": "_MONSTER_SHOUGUN_BORN_POS_",
@@ -7545,7 +7545,7 @@
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 },
                 "positionKey": "_MONSTER_SHOUGUN_BORN_POS_",
@@ -7829,7 +7829,7 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     }
                   },
@@ -7857,7 +7857,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_01_",
@@ -7876,7 +7876,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_02_",
@@ -7895,7 +7895,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_03_",
@@ -7914,7 +7914,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_04_",
@@ -7951,7 +7951,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_01_",
@@ -7970,7 +7970,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_02_",
@@ -7989,7 +7989,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_03_",
@@ -8008,7 +8008,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_04_",
@@ -8051,7 +8051,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_01_",
@@ -8070,7 +8070,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_02_",
@@ -8089,7 +8089,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_03_",
@@ -8108,7 +8108,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_04_",
@@ -8145,7 +8145,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_01_",
@@ -8164,7 +8164,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_02_",
@@ -8183,7 +8183,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_03_",
@@ -8202,7 +8202,7 @@
                           "z": 0.0
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "positionKey": "_SHOUGUN_TACHI_ECHO_POS_04_",
@@ -8349,7 +8349,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Tachi_EchoMist_EchoExplode",
               "born": {
                 "$type": "ConfigBornByGlobalValue",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ"
                 },
                 "positionKey": "_SHOUGUN_TACHI_ECHO_EXPLODEPOS_",
@@ -8365,7 +8365,7 @@
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByGlobalValue",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "JADOBJDPOLJ"
                     },
                     "positionKey": "_SHOUGUN_TACHI_ECHO_EXPLODEPOS_",
@@ -8578,9 +8578,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -8842,9 +8842,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -9250,7 +9250,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Pole_Defend_BeHit",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },
@@ -9963,7 +9963,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shougun_Mitakenarukami_Weak_Hit",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 },
                 "BJCIHELGKLP": true

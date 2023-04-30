@@ -373,8 +373,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Pole_Cyno_BurstMode_NormalAttack_03_Hit",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_Avatar_Cyno_Attack03_Hit"
                     }
                   },
@@ -1113,9 +1113,9 @@
                   "y": 0.30000001192092896,
                   "z": 0.30000001192092896
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 25.0,
                     "z": 0.0
@@ -1133,9 +1133,9 @@
                   "y": 0.30000001192092896,
                   "z": 0.30000001192092896
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -25.0,
                     "z": 0.0
@@ -1752,9 +1752,9 @@
                   "y": -2.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0

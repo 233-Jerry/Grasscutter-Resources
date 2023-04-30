@@ -2964,7 +2964,7 @@
               "born": {
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH"
                 }
               },
@@ -3018,7 +3018,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3636,7 +3636,7 @@
           "key": "_THUNDER_CRYSTAL_TARGET_DIR",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IHINHODOMIN"
             }
           },
@@ -3652,8 +3652,8 @@
               "y": 6.5,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "PPKEGDJIPMI": {
                 "x": 25.0,
                 "y": 0.0,
@@ -3673,8 +3673,8 @@
               "y": 6.5,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "PPKEGDJIPMI": {
                 "x": 25.0,
                 "y": 72.0,
@@ -3694,8 +3694,8 @@
               "y": 6.5,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "PPKEGDJIPMI": {
                 "x": 25.0,
                 "y": 144.0,
@@ -3715,8 +3715,8 @@
               "y": 6.5,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "PPKEGDJIPMI": {
                 "x": 25.0,
                 "y": 216.0,
@@ -3736,8 +3736,8 @@
               "y": 6.5,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "PPKEGDJIPMI": {
                 "x": 25.0,
                 "y": 288.0,
@@ -4498,7 +4498,7 @@
               "born": {
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },
@@ -4537,8 +4537,8 @@
               "born": {
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_MONSTER_RAIJIN_SUMMONTHUNDE_DIR"
                 }
               },
@@ -4575,7 +4575,7 @@
               "born": {
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },
@@ -4614,8 +4614,8 @@
               "born": {
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_MONSTER_RAIJIN_SUMMONTHUNDE_DIR"
                 }
               },
@@ -5050,9 +5050,9 @@
                   "y": 2.700000047683716,
                   "z": 2.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -5078,9 +5078,9 @@
                   "y": 2.200000047683716,
                   "z": 3.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -5106,9 +5106,9 @@
                   "y": 2.700000047683716,
                   "z": 2.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -5134,9 +5134,9 @@
                   "y": 3.200000047683716,
                   "z": 3.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -5159,9 +5159,9 @@
               "y": 3.200000047683716,
               "z": 1.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -5703,7 +5703,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -5753,7 +5753,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",

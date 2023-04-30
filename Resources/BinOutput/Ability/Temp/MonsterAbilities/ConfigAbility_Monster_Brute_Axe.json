@@ -600,9 +600,9 @@
               "y": 0.0,
               "z": 2.9000000953674316
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 12.0,
                 "z": 0.0
@@ -627,9 +627,9 @@
               "y": 0.0,
               "z": 2.9000000953674316
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -12.0,
                 "z": 0.0
@@ -667,9 +667,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 90.0,
                 "z": 0.0
@@ -687,9 +687,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -90.0,
                 "z": 0.0
@@ -715,9 +715,9 @@
               "y": 0.0,
               "z": 1.7999999523162842
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 45.0,
                 "z": 0.0
@@ -743,9 +743,9 @@
               "y": 0.0,
               "z": 1.7999999523162842
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -45.0,
                 "z": 0.0
@@ -770,9 +770,9 @@
               "y": 0.0,
               "z": 2.5999999046325684
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 30.0,
                 "z": 0.0
@@ -797,9 +797,9 @@
               "y": 0.0,
               "z": 1.5
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 60.0,
                 "z": 0.0
@@ -824,9 +824,9 @@
               "y": 0.0,
               "z": 2.5999999046325684
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -30.0,
                 "z": 0.0
@@ -851,9 +851,9 @@
               "y": 0.0,
               "z": 1.5
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -60.0,
                 "z": 0.0
@@ -878,7 +878,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByTarget",

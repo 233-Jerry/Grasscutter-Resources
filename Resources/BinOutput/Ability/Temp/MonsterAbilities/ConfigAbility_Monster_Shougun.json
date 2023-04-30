@@ -355,9 +355,9 @@
                   "key": "_MONSTER_SHOUGUN_BORN_POS_",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "JADOBJDPOLJ",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -883,9 +883,9 @@
           "key": "_MONSTER_SHOUGUN_BORN_POS_",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2265,7 +2265,7 @@
               "y": 1.0,
               "z": 2.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ"
             }
           }
@@ -3747,7 +3747,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4103,7 +4103,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4234,7 +4234,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "SwordArtAttachPoint1",
               "ABIMPICHJNC": "Self"
@@ -4262,7 +4262,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "SwordArtAttachPoint2",
               "ABIMPICHJNC": "Self"
@@ -4290,7 +4290,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "SwordArtAttachPoint3",
               "ABIMPICHJNC": "Self"
@@ -4318,7 +4318,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "SwordArtAttachPoint4",
               "ABIMPICHJNC": "Self"
@@ -4774,9 +4774,9 @@
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0

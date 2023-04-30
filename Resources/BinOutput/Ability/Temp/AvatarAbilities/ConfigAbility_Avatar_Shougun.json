@@ -1049,7 +1049,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Attack01",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID"
                 },
                 "attachPointName": "Fx_ChestNode",
@@ -1067,7 +1067,7 @@
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID"
                     },
                     "attachPointName": "Fx_ChestNode",
@@ -1125,7 +1125,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Pole_Shougun_Elf_Attack01",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID"
                 },
                 "attachPointName": "Fx_ChestNode",
@@ -1143,7 +1143,7 @@
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID"
                     },
                     "attachPointName": "Fx_ChestNode",
@@ -2310,9 +2310,9 @@
                       "y": -2.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "JADOBJDPOLJ",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -2487,7 +2487,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "EDLHKEAJOOL": 0.6000000238418579,
                   "born": {
@@ -2497,9 +2497,9 @@
                       "y": 2.200000047683716,
                       "z": -0.10000000149011612
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0

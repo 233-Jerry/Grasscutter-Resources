@@ -839,7 +839,7 @@
               "key": "_INU_ANIMAL_HAT_FLY_DIR",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },
@@ -850,8 +850,8 @@
               "bulletID": 42607003,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_INU_ANIMAL_HAT_FLY_DIR"
                 }
               }
@@ -3136,7 +3136,7 @@
                   "z": -2.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
                   "PPKEGDJIPMI": {
                     "x": 0.0,
@@ -3159,7 +3159,7 @@
                   "z": 2.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
                   "PPKEGDJIPMI": {
                     "x": 0.0,
@@ -3182,7 +3182,7 @@
                   "z": -2.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
                   "PPKEGDJIPMI": {
                     "x": 0.0,
@@ -3205,7 +3205,7 @@
                   "z": 2.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
                   "PPKEGDJIPMI": {
                     "x": 0.0,
@@ -4381,9 +4381,9 @@
               "y": 1.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -30.0,
                 "z": 0.0
@@ -4401,9 +4401,9 @@
               "y": 1.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 30.0,
                 "z": 0.0
@@ -4467,9 +4467,9 @@
               "y": 1.25,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -30.0,
                 "z": 0.0
@@ -4487,9 +4487,9 @@
               "y": 1.25,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 30.0,
                 "z": 0.0
@@ -4721,7 +4721,7 @@
               "key": "_INU_BOSS_BUFF_POS",
               "born": {
                 "$type": "ConfigBornByTarget",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "y": 45.0
@@ -5278,7 +5278,7 @@
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
                   "PPKEGDJIPMI": {
                     "x": 0.0,
@@ -5301,7 +5301,7 @@
                   "z": 0.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
                   "PPKEGDJIPMI": {
                     "x": 0.0,
@@ -6027,9 +6027,9 @@
               "y": 1.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 15.0,
                 "z": 0.0
@@ -6047,9 +6047,9 @@
               "y": 1.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -15.0,
                 "z": 0.0

@@ -2059,7 +2059,7 @@
           "bulletID": 42903202,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "LLOEMEPIBII": "Vertical",
               "maxAngle": 30.0
@@ -2691,7 +2691,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2743,7 +2743,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2804,9 +2804,9 @@
                   "y": 0.0,
                   "z": 0.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -45.0,
                     "z": 0.0
@@ -2849,7 +2849,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -3051,7 +3051,7 @@
           "born": {
             "$type": "MIAJPKDCOPA",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             },
             "actionPointType": "AureaePoint",
@@ -3113,7 +3113,7 @@
           "toPos": {
             "$type": "MIAJPKDCOPA",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             },
             "actionPointType": "AureaePoint",
@@ -3133,7 +3133,7 @@
           "born": {
             "$type": "MIAJPKDCOPA",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             },
             "actionPointType": "AureaePoint",
@@ -3402,7 +3402,7 @@
           "born": {
             "$type": "MIAJPKDCOPA",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "actionPointType": "AureaePoint",
@@ -3421,9 +3421,9 @@
           "born": {
             "$type": "MIAJPKDCOPA",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 90.0,
                 "z": 0.0
@@ -3445,9 +3445,9 @@
           "born": {
             "$type": "MIAJPKDCOPA",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 180.0,
                 "z": 0.0
@@ -3469,9 +3469,9 @@
           "born": {
             "$type": "MIAJPKDCOPA",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 270.0,
                 "z": 0.0
@@ -3736,7 +3736,7 @@
           "bulletID": 42903204,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "ExtraAttack01"
             },
@@ -3762,7 +3762,7 @@
           "bulletID": 42903204,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "ExtraAttack02"
             },
@@ -3932,7 +3932,7 @@
               "born": {
                 "$type": "MIAJPKDCOPA",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "actionPointType": "AureaePoint",

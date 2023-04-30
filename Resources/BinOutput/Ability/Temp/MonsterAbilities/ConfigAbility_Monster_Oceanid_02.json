@@ -445,7 +445,7 @@
               "born": {
                 "$type": "ConfigBornByAttachPoint",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "KAOJMJDCNNB"
                 },
                 "attachPointName": "RootNode"
@@ -1230,7 +1230,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "OnlyHitScene",
               "born": {
@@ -1470,7 +1470,7 @@
                   "key": "_OCEANID_BEINGHIT_DIR_",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     }
                   },
@@ -1484,7 +1484,7 @@
                   "key": "_OCEANID_BEINGHIT_DIR_",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     }
                   },
@@ -1497,8 +1497,8 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_02_BeHit",
               "born": {
                 "$type": "FLIPADNBJJF",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_OCEANID_BEINGHIT_DIR_"
                 }
               },
@@ -1543,7 +1543,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -3475,9 +3475,9 @@
               "key": "_MONSTER_OCEANID_02_PLATFORMDAMAGEDIR",
               "born": {
                 "$type": "ConfigBornByTarget",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 60.0,
                     "z": 0.0

@@ -557,8 +557,8 @@
                   "y": -0.5,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_GrapplingHook_TargetDir"
                 },
                 "positionKey": "_GrapplingHook_TargetPos",
@@ -659,8 +659,8 @@
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Grapple_01_Moving",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_GrapplingHook_TargetDir"
                 },
                 "IABNJPGBAOH": true
@@ -901,7 +901,7 @@
               "key": "_GrapplingHook_TargetDir",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 },
                 "IABNJPGBAOH": true

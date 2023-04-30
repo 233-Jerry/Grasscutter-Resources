@@ -422,7 +422,7 @@
               "target": "Target",
               "predicates": [
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 },
                 {
                   "$type": "ByEntityTypes",
@@ -981,7 +981,7 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "DBGHBLHJOCO"
+                      "$type": "ByHitCritical"
                     }
                   ]
                 }
@@ -1008,7 +1008,7 @@
                   "BOJCAKJDAKM": 0.0
                 },
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 }
               ],
               "successActions": [
@@ -1842,7 +1842,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "maxAngle": 360.0
             }
@@ -2195,7 +2195,7 @@
           "healLimitedByCasterMaxHPRatio": "Eff_Weapon_Blast_R30",
           "born": {
             "$type": "ConfigBornByCollisionPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             }
           },

@@ -733,9 +733,9 @@
               "y": 0.0,
               "z": 3.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -1998,9 +1998,9 @@
               "y": 0.0,
               "z": 7.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 15.0,
                 "z": 0.0
@@ -2018,9 +2018,9 @@
               "y": 0.0,
               "z": 7.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2038,9 +2038,9 @@
               "y": 0.0,
               "z": 7.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -15.0,
                 "z": 0.0
@@ -2189,9 +2189,9 @@
               "z": -10.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 1.5,
                 "z": 0.0
@@ -2215,9 +2215,9 @@
               "z": -10.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -1.5,
                 "z": 0.0
@@ -2249,9 +2249,9 @@
               "z": -2.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 1.5,
                 "z": 0.0
@@ -2275,9 +2275,9 @@
               "z": -2.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -1.5,
                 "z": 0.0
@@ -2309,9 +2309,9 @@
               "z": -2.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 1.5,
                 "z": 0.0
@@ -2335,9 +2335,9 @@
               "z": -2.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -1.5,
                 "z": 0.0
@@ -2399,7 +2399,7 @@
           "bulletID": 42602004,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "attachPointName": "LaserPartControlL"
@@ -2419,7 +2419,7 @@
           "bulletID": 42602004,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "attachPointName": "LaserPartControlR"
@@ -2730,7 +2730,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornByCollisionPoint",
@@ -2835,9 +2835,9 @@
               "bulletID": 42602008,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 30.0,
                     "y": 0.0,
                     "z": 0.0
@@ -2851,9 +2851,9 @@
               "bulletID": 42602008,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 20.0,
                     "y": -15.0,
                     "z": 0.0
@@ -2867,9 +2867,9 @@
               "bulletID": 42602008,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 10.0,
                     "y": -30.0,
                     "z": 0.0
@@ -2883,9 +2883,9 @@
               "bulletID": 42602008,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -45.0,
                     "z": 0.0
@@ -2958,9 +2958,9 @@
               "bulletID": 42602008,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 30.0,
                     "y": 0.0,
                     "z": 0.0
@@ -2974,9 +2974,9 @@
               "bulletID": 42602008,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 20.0,
                     "y": 15.0,
                     "z": 0.0
@@ -2990,9 +2990,9 @@
               "bulletID": 42602008,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 10.0,
                     "y": 30.0,
                     "z": 0.0
@@ -3006,9 +3006,9 @@
               "bulletID": 42602008,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 45.0,
                     "z": 0.0
@@ -4716,7 +4716,7 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Ice_Hit_Weakness",
                   "born": {
                     "$type": "FLIPADNBJJF",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "NFGKOJBHMLL"
                     }
                   },
@@ -5422,7 +5422,7 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Regisvine_Ice_Hit_Weakness",
                   "born": {
                     "$type": "FLIPADNBJJF",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "NFGKOJBHMLL"
                     }
                   },

@@ -390,9 +390,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Mimik_Ice_Fruit_Bullet",
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "DOCDLGLJKND",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -476,9 +476,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Mimik_Ice_Fruit_Bullet",
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "DOCDLGLJKND",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -562,9 +562,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Mimik_Ice_Fruit_Bullet",
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "DOCDLGLJKND",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -804,7 +804,7 @@
               "z": 1.5
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "BJCIHELGKLP": true
@@ -969,7 +969,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByGlobalValue",
@@ -1054,7 +1054,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByGlobalValue",
@@ -1139,7 +1139,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByGlobalValue",
@@ -1232,7 +1232,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByGlobalValue",
@@ -1317,7 +1317,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByGlobalValue",
@@ -1402,7 +1402,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByGlobalValue",

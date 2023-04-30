@@ -423,7 +423,7 @@
                   "y": 2.0,
                   "z": -5.199999809265137
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
                   "PPKEGDJIPMI": {
                     "x": -32.20000076293945,
@@ -3968,7 +3968,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Archdeacon_SwitchBall_EngeryBurst_Fire",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0,
@@ -4069,7 +4069,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Archdeacon_SwitchBall_EngeryBurst_Thunder",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0,
@@ -4170,7 +4170,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Archdeacon_SwitchBall_EngeryBurst_Ice",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0,
@@ -4271,7 +4271,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Archdeacon_SwitchBall_EngeryBurst_Water",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 1.0,
@@ -7235,7 +7235,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Archdeacon_OverChargeLoop_Fire",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "y": 1.0
@@ -7475,7 +7475,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Archdeacon_OverChargeLoop_Thunder",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "y": 1.0
@@ -7715,7 +7715,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Archdeacon_OverChargeLoop_Ice",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "y": 1.0
@@ -7955,7 +7955,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Invoker_Archdeacon_OverChargeLoop_Water",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "y": 1.0
@@ -8141,7 +8141,7 @@
               "bulletID": 42210026,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "IABNJPGBAOH": true
@@ -8727,7 +8727,7 @@
               "bulletID": 42210018,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "IABNJPGBAOH": true
@@ -9402,7 +9402,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "JGCLJPCGHMC": true,
               "born": {
@@ -10700,7 +10700,7 @@
               "bulletID": 42210032,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "IABNJPGBAOH": true,
@@ -10725,7 +10725,7 @@
               "bulletID": 42210032,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "IABNJPGBAOH": true,
@@ -10739,7 +10739,7 @@
               "bulletID": 42210032,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "IABNJPGBAOH": true,
@@ -10896,7 +10896,7 @@
           "bulletID": 42210033,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "IABNJPGBAOH": true,
@@ -10917,7 +10917,7 @@
           "bulletID": 42210033,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "IABNJPGBAOH": true,
@@ -11049,7 +11049,7 @@
               "y": 4.199999809265137,
               "z": 0.699999988079071
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -11081,7 +11081,7 @@
               "y": 4.199999809265137,
               "z": 0.699999988079071
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -11183,7 +11183,7 @@
               "y": 3.5,
               "z": 0.699999988079071
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "LLOEMEPIBII": "Vertical",
               "maxAngle": 45.0
@@ -11239,7 +11239,7 @@
               "y": 4.199999809265137,
               "z": 0.699999988079071
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -11271,7 +11271,7 @@
               "y": 4.199999809265137,
               "z": 0.699999988079071
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -11303,7 +11303,7 @@
               "y": 4.199999809265137,
               "z": 0.699999988079071
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -11509,7 +11509,7 @@
                   "y": 4.199999809265137,
                   "z": 0.699999988079071
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
                   "PPKEGDJIPMI": {
                     "x": 0.0,
@@ -11547,7 +11547,7 @@
                   "y": 4.199999809265137,
                   "z": 0.699999988079071
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
                   "PPKEGDJIPMI": {
                     "x": 0.0,
@@ -11585,7 +11585,7 @@
                   "y": 3.5,
                   "z": 0.699999988079071
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
                   "LLOEMEPIBII": "Vertical",
                   "maxAngle": 45.0
@@ -11729,7 +11729,7 @@
                   "y": 5.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "IABNJPGBAOH": true
@@ -11768,7 +11768,7 @@
                   "y": 2.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "IABNJPGBAOH": true
@@ -11807,7 +11807,7 @@
                   "y": 2.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "IABNJPGBAOH": true
@@ -11903,7 +11903,7 @@
               "y": 1.8700000047683716,
               "z": 1.0010000467300415
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": -2.9709999561309814,
@@ -11926,7 +11926,7 @@
               "y": 5.449999809265137,
               "z": 1.0789999961853027
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": -11.119999885559082,
@@ -11949,7 +11949,7 @@
               "y": 5.019999980926514,
               "z": 0.8999999761581421
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": -12.505000114440918,
@@ -11972,7 +11972,7 @@
               "y": 1.6390000581741333,
               "z": 0.906000018119812
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -11995,7 +11995,7 @@
               "y": 1.8700000047683716,
               "z": 1.0010000467300415
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": -2.9709999561309814,
@@ -12019,7 +12019,7 @@
               "y": 5.449999809265137,
               "z": 1.0789999961853027
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": -11.119999885559082,
@@ -12043,7 +12043,7 @@
               "y": 5.019999980926514,
               "z": 0.8999999761581421
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": -12.505000114440918,
@@ -12067,7 +12067,7 @@
               "y": 1.6390000581741333,
               "z": 0.906000018119812
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": 0.0,

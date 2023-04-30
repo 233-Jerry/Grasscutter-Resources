@@ -1547,7 +1547,7 @@
               "key": "_Activity_Exploration_Dir",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },
@@ -1589,8 +1589,8 @@
           ],
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "JPOJHLOIKLG": 15.0,
               "directionKey": "_Activity_Exploration_Dir"
             }
@@ -1619,8 +1619,8 @@
           ],
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "JPOJHLOIKLG": 30.0,
               "directionKey": "_Activity_Exploration_Dir"
             }
@@ -1649,8 +1649,8 @@
           ],
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "JPOJHLOIKLG": 45.0,
               "directionKey": "_Activity_Exploration_Dir"
             }
@@ -1673,8 +1673,8 @@
           ],
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "JPOJHLOIKLG": 60.0,
               "directionKey": "_Activity_Exploration_Dir"
             }
@@ -1697,8 +1697,8 @@
           ],
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "directionKey": "_Activity_Exploration_Dir"
             }
           },
@@ -1875,7 +1875,7 @@
           "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Ayesha_Survey",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "AKNHOGLMAAH"
             }
           },
@@ -2343,9 +2343,9 @@
                       "$type": "CreateGadget",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "AKLDHBPHNLK",
-                          "NHGDOBINMBK": {
+                          "angleOffset": {
                             "x": 0.0,
                             "y": ["SGV_Switch_Dir", 90.0, "MUL"],
                             "z": 0.0
@@ -2369,9 +2369,9 @@
                       "$type": "CreateGadget",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "AKLDHBPHNLK",
-                          "NHGDOBINMBK": {
+                          "angleOffset": {
                             "x": 0.0,
                             "y": ["SGV_Switch_Dir", 90.0, "MUL"],
                             "z": 0.0
@@ -2407,9 +2407,9 @@
                       "$type": "CreateGadget",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "AKLDHBPHNLK",
-                          "NHGDOBINMBK": {
+                          "angleOffset": {
                             "x": 0.0,
                             "y": ["SGV_Switch_Dir", 90.0, "MUL"],
                             "z": 0.0
@@ -2433,9 +2433,9 @@
                       "$type": "CreateGadget",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "AKLDHBPHNLK",
-                          "NHGDOBINMBK": {
+                          "angleOffset": {
                             "x": 0.0,
                             "y": ["SGV_Switch_Dir", 90.0, "MUL"],
                             "z": 0.0
@@ -2588,9 +2588,9 @@
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Blower_02",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKLDHBPHNLK",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": [
                       "SGV_Switch_Dir",
@@ -2617,9 +2617,9 @@
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Blower_02",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKLDHBPHNLK",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": [
                       "SGV_Switch_Dir",
@@ -4320,7 +4320,7 @@
                   "born": {
                     "$type": "ConfigBornBySelf",
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     }
                   },
@@ -5349,9 +5349,9 @@
                   "y": 0.0,
                   "z": 2.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKLDHBPHNLK",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 180.0,
                     "z": 0.0

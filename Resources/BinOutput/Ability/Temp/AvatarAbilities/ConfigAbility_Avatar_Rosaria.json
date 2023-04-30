@@ -600,7 +600,7 @@
                   "attackTags": ["Elemental_Art"]
                 },
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 }
               ],
               "successActions": [
@@ -679,7 +679,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -923,9 +923,9 @@
                   "y": 2.5,
                   "z": 1.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 60.0,
                     "y": 15.0,
                     "z": 0.0
@@ -1132,8 +1132,8 @@
             "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
             "HKNFOKFIKAG": 3.0,
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
               "directionKey": "_ABILITY_Rosaria_GadgetDir"
             },
             "positionKey": "_ABILITY_Rosaria_GadgetPos",
@@ -1453,7 +1453,7 @@
               "target": "Target",
               "targetPredicates": [
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 },
                 {
                   "$type": "ByEntityTypes",

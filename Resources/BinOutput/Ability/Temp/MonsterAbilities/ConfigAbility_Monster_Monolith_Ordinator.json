@@ -3324,7 +3324,7 @@
                 "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 7.0,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 0.10000000149011612,
@@ -3368,7 +3368,7 @@
                 },
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 7.0,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 0.10000000149011612,
@@ -3386,7 +3386,7 @@
                 "$type": "ConfigBornByGlobalValue",
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 7.0,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 0.10000000149011612,
@@ -4318,7 +4318,7 @@
           "bulletID": 42405014,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "attachPointName": "ShieldLAttach"
@@ -4330,7 +4330,7 @@
           "bulletID": 42405014,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "attachPointName": "ShieldRAttach"
@@ -4673,7 +4673,7 @@
               "doAfterDie": false,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -6231,7 +6231,7 @@
               "ownerIs": "OriginOwner",
               "born": {
                 "$type": "ConfigBornByGlobalValue",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 0.10000000149011612,
@@ -6649,7 +6649,7 @@
                       "y": 0.5,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB"
                     }
                   },
@@ -7365,7 +7365,7 @@
                     },
                     "DAPKLNIFPID": true,
                     "HKNFOKFIKAG": 7.0,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "JADOBJDPOLJ",
                       "PPKEGDJIPMI": {
                         "x": 0.0,
@@ -7566,7 +7566,7 @@
                 },
                 "DAPKLNIFPID": true,
                 "HKNFOKFIKAG": 7.0,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
                   "PPKEGDJIPMI": {
                     "x": 0.0,
@@ -8001,7 +8001,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",

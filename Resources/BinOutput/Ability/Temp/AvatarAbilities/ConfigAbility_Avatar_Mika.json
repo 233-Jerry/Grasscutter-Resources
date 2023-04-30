@@ -718,7 +718,7 @@
                   "compareType": "NoneOrEqual"
                 },
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -1608,7 +1608,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "EDLHKEAJOOL": 0.5,
               "born": {
@@ -1717,7 +1717,7 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB"
                     },
                     "IABNJPGBAOH": true
@@ -2176,9 +2176,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2212,9 +2212,9 @@
               "y": 0.30000001192092896,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2396,9 +2396,9 @@
                           "y": 3.5,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
-                          "$type": "BIMJJILMODA",
-                          "NHGDOBINMBK": {
+                        "direction": {
+                          "$type": "ConfigDirectionByGlobalValue",
+                          "angleOffset": {
                             "x": -45.0,
                             "y": 0.10000000149011612,
                             "z": 0.10000000149011612
@@ -2690,9 +2690,9 @@
                           "y": 3.5,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
-                          "$type": "BIMJJILMODA",
-                          "NHGDOBINMBK": {
+                        "direction": {
+                          "$type": "ConfigDirectionByGlobalValue",
+                          "angleOffset": {
                             "x": -45.0,
                             "y": 0.10000000149011612,
                             "z": 0.10000000149011612
@@ -2885,9 +2885,9 @@
                           "y": 3.5,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
-                          "$type": "BIMJJILMODA",
-                          "NHGDOBINMBK": {
+                        "direction": {
+                          "$type": "ConfigDirectionByGlobalValue",
+                          "angleOffset": {
                             "x": -45.0,
                             "y": 0.10000000149011612,
                             "z": 0.10000000149011612
@@ -3014,7 +3014,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -3195,7 +3195,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "MJLCPIAKNCP": "Both",
                   "born": {

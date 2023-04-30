@@ -350,7 +350,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -403,7 +403,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -456,7 +456,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -509,7 +509,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -737,7 +737,7 @@
                         "offset": {
                           "y": 1.2000000476837158
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "HFKFLHCBMLB",
                           "PGIBJONOAKP": true
                         },
@@ -756,7 +756,7 @@
                         "offset": {
                           "y": 1.2000000476837158
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "AKNHOGLMAAH",
                           "PGIBJONOAKP": true,
                           "eularAngles": {
@@ -783,7 +783,7 @@
                     "offset": {
                       "y": 1.2000000476837158
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "AKNHOGLMAAH",
                       "PGIBJONOAKP": true,
                       "eularAngles": {
@@ -1677,9 +1677,9 @@
                       "y": -1.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "JADOBJDPOLJ",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -1981,7 +1981,7 @@
                   "y": 0.0,
                   "z": 0.20000000298023224
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
                   "PPKEGDJIPMI": {
                     "x": -45.0,
@@ -2016,7 +2016,7 @@
                   "y": 0.0,
                   "z": 0.20000000298023224
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
                   "PPKEGDJIPMI": {
                     "x": -45.0,
@@ -2700,7 +2700,7 @@
                       "y": 0.800000011920929,
                       "z": -0.5
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
                       "PPKEGDJIPMI": {
                         "y": "RandomAngle"
@@ -2752,7 +2752,7 @@
                       "y": 0.800000011920929,
                       "z": -0.5
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
                       "PPKEGDJIPMI": {
                         "y": "RandomAngle"
@@ -2960,9 +2960,9 @@
                         "offset": {
                           "y": 1.2000000476837158
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID",
-                          "NHGDOBINMBK": {
+                          "angleOffset": {
                             "x": -90.0,
                             "y": 0.0
                           },
@@ -2983,9 +2983,9 @@
                         "offset": {
                           "y": 1.2000000476837158
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID",
-                          "NHGDOBINMBK": {
+                          "angleOffset": {
                             "x": -90.0,
                             "y": 0.0
                           },
@@ -3013,9 +3013,9 @@
                       "y": 1.2000000476837158,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": -90.0
                       },
                       "PGIBJONOAKP": true

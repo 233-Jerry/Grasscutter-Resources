@@ -506,7 +506,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
                   "LLOEMEPIBII": "Horizontal",
                   "maxAngle": 15.0
@@ -526,7 +526,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
                   "LLOEMEPIBII": "Horizontal",
                   "maxAngle": 15.0
@@ -651,7 +651,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
@@ -750,7 +750,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
@@ -827,7 +827,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
@@ -1077,7 +1077,7 @@
               "equipPart": "equip03",
               "born": {
                 "$type": "ConfigBornByTarget",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
                   "LLOEMEPIBII": "Horizontal",
                   "maxAngle": 30.0

@@ -383,7 +383,7 @@
                       "key": "_ABILITY_ABYSS_FIRE_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -397,7 +397,7 @@
                       "key": "_ABILITY_ABYSS_FIRE_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -410,8 +410,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Abyss_Fire_ElementShield_Hit_Invalid",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_ABYSS_FIRE_ELEMENTSHIELD_HIT"
                     }
                   },
@@ -441,7 +441,7 @@
                       "key": "_ABILITY_ABYSS_FIRE_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -455,7 +455,7 @@
                       "key": "_ABILITY_ABYSS_FIRE_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -468,8 +468,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Abyss_Fire_ElementShield_Hit",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_ABYSS_FIRE_ELEMENTSHIELD_HIT"
                     }
                   },
@@ -1151,7 +1151,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2214,7 +2214,7 @@
               "z": 1.5
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "BJCIHELGKLP": true
@@ -2458,7 +2458,7 @@
                   "z": -4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },
@@ -2475,7 +2475,7 @@
                   "z": 2.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },
@@ -2492,7 +2492,7 @@
                   "z": 2.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },
@@ -2556,7 +2556,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2566,7 +2566,7 @@
                   "z": -4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },
@@ -2611,7 +2611,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2621,7 +2621,7 @@
                   "z": 2.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },
@@ -2665,7 +2665,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2675,7 +2675,7 @@
                   "z": 2.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },

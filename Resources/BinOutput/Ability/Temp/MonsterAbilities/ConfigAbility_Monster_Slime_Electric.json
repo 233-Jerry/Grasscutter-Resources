@@ -370,7 +370,7 @@
                   "y": -0.15000000596046448,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID"
                 },
                 "attachPointName": "ElectrifiedBody"
@@ -946,7 +946,7 @@
                   "y": -0.30000001192092896,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID"
                 },
                 "attachPointName": "ElectrifiedBody"
@@ -1461,7 +1461,7 @@
                   "y": -0.30000001192092896,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID"
                 },
                 "attachPointName": "ElectrifiedBody"
@@ -1620,7 +1620,7 @@
                   "bulletID": 42001006,
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB"
                     },
                     "attachPointName": "RootNode"
@@ -1681,7 +1681,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Slime_Electric_Discharge",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID"
                 },
                 "attachPointName": "ElectrifiedBody"
@@ -1865,7 +1865,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -1874,7 +1874,7 @@
                   "y": 0.800000011920929,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 }
               },

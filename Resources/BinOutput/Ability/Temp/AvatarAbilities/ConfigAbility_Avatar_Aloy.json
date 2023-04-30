@@ -516,7 +516,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -542,7 +542,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -631,7 +631,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -694,7 +694,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -757,7 +757,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -820,7 +820,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -888,7 +888,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -1091,7 +1091,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -1180,7 +1180,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -1990,8 +1990,8 @@
                   "y": 1.0,
                   "z": 0.6000000238418579
                 },
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "LLOEMEPIBII": "Vertical",
                   "maxAngle": 45.0,
                   "directionKey": "_ABILITY_Aloy_ElementalArt_BulletDir"
@@ -2010,8 +2010,8 @@
                   "y": 1.0,
                   "z": 0.6000000238418579
                 },
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "LLOEMEPIBII": "Vertical",
                   "maxAngle": 45.0,
                   "directionKey": "_ABILITY_Aloy_ElementalArt_BulletDir"
@@ -2210,9 +2210,9 @@
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2232,9 +2232,9 @@
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.5,
                 "z": 0.0
@@ -2254,9 +2254,9 @@
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2276,9 +2276,9 @@
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2298,9 +2298,9 @@
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2320,9 +2320,9 @@
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2885,7 +2885,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -2938,7 +2938,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -3018,7 +3018,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -3071,7 +3071,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -3151,7 +3151,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -3204,7 +3204,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -3284,7 +3284,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -3337,7 +3337,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -3417,7 +3417,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -3470,7 +3470,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {

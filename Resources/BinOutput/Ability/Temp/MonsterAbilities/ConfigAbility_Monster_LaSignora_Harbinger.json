@@ -2103,7 +2103,7 @@
               "born": {
                 "$type": "MIAJPKDCOPA",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID"
                 },
                 "actionPointType": "AureaePoint",
@@ -2588,9 +2588,9 @@
           "$type": "CreateGadget",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -30.0,
                 "z": 0.0
@@ -2605,9 +2605,9 @@
           "$type": "CreateGadget",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2622,9 +2622,9 @@
           "$type": "CreateGadget",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 30.0,
                 "z": 0.0
@@ -2657,7 +2657,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2705,7 +2705,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2746,7 +2746,7 @@
               "$type": "CreateTile",
               "CJOEOFHOCOA": "LaSignora_Tile_Fire",
               "attackPattern": {
-                "$type": "NAMPOMPBMHC",
+                "$type": "ConfigAttackBox",
                 "triggerType": "TriggerNoRepeat",
                 "born": {
                   "$type": "ConfigBornBySelf",
@@ -2872,7 +2872,7 @@
               "y": 15.0,
               "z": -20.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IHINHODOMIN"
             }
           }
@@ -2993,7 +2993,7 @@
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 1.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "JPOJHLOIKLG": 30.0,
                   "MPNLAACKHNA": 15.0,
@@ -3012,7 +3012,7 @@
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 1.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "JPOJHLOIKLG": 30.0,
                   "MPNLAACKHNA": 15.0,
@@ -3033,7 +3033,7 @@
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 1.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "JPOJHLOIKLG": 30.0,
                   "MPNLAACKHNA": 15.0,
@@ -3052,7 +3052,7 @@
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 1.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "JPOJHLOIKLG": 30.0,
                   "MPNLAACKHNA": 15.0,
@@ -3094,7 +3094,7 @@
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 1.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "JPOJHLOIKLG": 30.0,
                   "MPNLAACKHNA": 15.0,
@@ -3113,7 +3113,7 @@
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 1.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "JPOJHLOIKLG": 30.0,
                   "MPNLAACKHNA": 15.0,
@@ -3134,7 +3134,7 @@
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 1.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "JPOJHLOIKLG": 30.0,
                   "MPNLAACKHNA": 15.0,
@@ -3153,7 +3153,7 @@
                   "OKDPGGJGGCJ": 0.0,
                   "CPOKKADJBFH": 1.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "JPOJHLOIKLG": 30.0,
                   "MPNLAACKHNA": 15.0,
@@ -3613,9 +3613,9 @@
               "born": {
                 "$type": "ConfigBornByAttachPoint",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -3632,9 +3632,9 @@
               "born": {
                 "$type": "ConfigBornByAttachPoint",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 90.0,
                     "z": 0.0
@@ -3651,9 +3651,9 @@
               "born": {
                 "$type": "ConfigBornByAttachPoint",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 180.0,
                     "z": 0.0
@@ -3670,9 +3670,9 @@
               "born": {
                 "$type": "ConfigBornByAttachPoint",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 270.0,
                     "z": 0.0
@@ -3825,7 +3825,7 @@
           "born": {
             "$type": "ConfigBornBySelfOwner",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IHINHODOMIN"
             },
             "BJCIHELGKLP": true

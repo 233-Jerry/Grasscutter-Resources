@@ -601,7 +601,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "FocusAnchor",
                   "ABIMPICHJNC": "Self"
@@ -644,7 +644,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "FocusAnchor",
                   "ABIMPICHJNC": "Self"
@@ -709,7 +709,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -803,7 +803,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -883,7 +883,7 @@
               "y": 0.9760000109672546,
               "z": 0.6949999928474426
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             }
           }
@@ -898,7 +898,7 @@
               "y": 0.9760000109672546,
               "z": 0.6949999928474426
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             }
           },
@@ -922,7 +922,7 @@
               "y": 0.906000018119812,
               "z": 0.4740000069141388
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             }
           }
@@ -937,7 +937,7 @@
               "y": 0.906000018119812,
               "z": 0.4740000069141388
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             }
           },
@@ -961,7 +961,7 @@
               "y": 1.1059999465942383,
               "z": 0.49300000071525574
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             }
           }
@@ -976,7 +976,7 @@
               "y": 1.1059999465942383,
               "z": 0.49300000071525574
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             }
           },
@@ -1000,7 +1000,7 @@
               "y": 0.9860000014305115,
               "z": 0.7160000205039978
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             }
           }
@@ -1015,7 +1015,7 @@
               "y": 0.9860000014305115,
               "z": 0.7160000205039978
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             }
           },
@@ -1039,7 +1039,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -1813,8 +1813,8 @@
               "bulletID": 41038009,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "ElementalArt_Charge_Dir"
                 },
                 "attachPointName": "FocusAnchor"

@@ -477,9 +477,9 @@
                   "z": -2.5
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 120.0,
                     "z": 0.0
@@ -501,9 +501,9 @@
                   "z": -2.5
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -120.0,
                     "z": 0.0
@@ -668,9 +668,9 @@
                   "z": -5.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 120.0,
                     "z": 0.0
@@ -692,9 +692,9 @@
                   "z": -5.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -120.0,
                     "z": 0.0
@@ -848,7 +848,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -858,7 +858,7 @@
                       "z": 3.0
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB"
                     },
                     "BJCIHELGKLP": true
@@ -899,7 +899,7 @@
                   "z": 3.5
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "BJCIHELGKLP": true
@@ -924,7 +924,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -934,7 +934,7 @@
                       "z": 7.5
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB"
                     },
                     "BJCIHELGKLP": true
@@ -975,7 +975,7 @@
                   "z": 8.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "BJCIHELGKLP": true
@@ -994,7 +994,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -1004,7 +1004,7 @@
                       "z": 7.5
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB"
                     },
                     "BJCIHELGKLP": true
@@ -1045,7 +1045,7 @@
                   "z": 8.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "BJCIHELGKLP": true
@@ -1144,7 +1144,7 @@
           "RotationDampTime": true,
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -1193,7 +1193,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",

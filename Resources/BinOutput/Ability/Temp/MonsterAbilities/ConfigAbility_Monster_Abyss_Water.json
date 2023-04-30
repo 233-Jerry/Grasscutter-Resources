@@ -195,7 +195,7 @@
                       "key": "_ABILITY_ABYSS_WATER_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -209,7 +209,7 @@
                       "key": "_ABILITY_ABYSS_WATER_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -222,8 +222,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Abyss_Water_ElementShield_Hit_Invalid",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_ABYSS_WATER_ELEMENTSHIELD_HIT"
                     }
                   },
@@ -253,7 +253,7 @@
                       "key": "_ABILITY_ABYSS_WATER_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -267,7 +267,7 @@
                       "key": "_ABILITY_ABYSS_WATER_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -280,8 +280,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Abyss_Water_ElementShield_Hit",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_ABYSS_WATER_ELEMENTSHIELD_HIT"
                     }
                   },
@@ -805,7 +805,7 @@
               "bulletID": 42201004,
               "born": {
                 "$type": "ConfigBornByGlobalValue",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": -90.0
@@ -839,7 +839,7 @@
               "bulletID": 42201005,
               "born": {
                 "$type": "ConfigBornByGlobalValue",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": -90.0
@@ -956,7 +956,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -1824,7 +1824,7 @@
               "y": 1.5,
               "z": 1.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             }
           }
@@ -2089,7 +2089,7 @@
               "y": 1.5,
               "z": 2.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             }
           }

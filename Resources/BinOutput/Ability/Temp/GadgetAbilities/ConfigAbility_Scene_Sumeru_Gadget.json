@@ -8236,9 +8236,9 @@
                   "key": "_ABILITY_DANDELION_HIT",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -8252,8 +8252,8 @@
                   "bulletID": 70220120,
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_DANDELION_HIT"
                     },
                     "attachPointName": "Flower"

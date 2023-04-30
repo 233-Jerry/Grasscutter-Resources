@@ -603,7 +603,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -643,7 +643,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -683,7 +683,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -723,7 +723,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -763,7 +763,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -803,7 +803,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -936,7 +936,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -974,7 +974,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -1006,7 +1006,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -1031,7 +1031,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -1090,7 +1090,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -1179,7 +1179,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -1291,7 +1291,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "MJLCPIAKNCP": "Both",
                       "born": {
@@ -1356,7 +1356,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "MJLCPIAKNCP": "Both",
                       "born": {
@@ -1976,7 +1976,7 @@
               "y": 0.0,
               "z": 3.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             }
           }
@@ -2012,7 +2012,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID"
                 }
               }
@@ -2161,7 +2161,7 @@
             "$type": "ConfigBornByGlobalValue",
             "DAPKLNIFPID": true,
             "HKNFOKFIKAG": 4.0,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             },
             "BJCIHELGKLP": true,
@@ -2624,7 +2624,7 @@
               "$type": "CreateGadget",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID"
                 }
               },
@@ -2681,9 +2681,9 @@
                       "y": -2.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "JADOBJDPOLJ",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -2975,7 +2975,7 @@
               "bulletID": 41037017,
               "born": {
                 "$type": "ConfigBornByGlobalValue",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH",
                   "eularAngles": {
                     "x": 90.0

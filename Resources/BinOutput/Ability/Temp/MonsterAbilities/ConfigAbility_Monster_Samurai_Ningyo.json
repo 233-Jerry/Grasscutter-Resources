@@ -711,7 +711,7 @@
                       "key": "_SAMURAI_NINGYO_MASK_BLOCK_DIR",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "IABNJPGBAOH": true
@@ -726,7 +726,7 @@
                       "key": "_SAMURAI_NINGYO_MASK_BLOCK_DIR",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "IABNJPGBAOH": true
@@ -744,8 +744,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Ningyo_Block_BladeMaster2",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_SAMURAI_NINGYO_MASK_BLOCK_DIR"
                     },
                     "IABNJPGBAOH": true
@@ -823,7 +823,7 @@
                       "key": "_SAMURAI_NINGYO_MASK_BLOCK_DIR",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "IABNJPGBAOH": true
@@ -838,7 +838,7 @@
                       "key": "_SAMURAI_NINGYO_MASK_BLOCK_DIR",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "IABNJPGBAOH": true
@@ -856,8 +856,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Ningyo_Block_BladeMaster2",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_SAMURAI_NINGYO_MASK_BLOCK_DIR"
                     },
                     "IABNJPGBAOH": true
@@ -914,7 +914,7 @@
               "y": 1.2000000476837158,
               "z": 1.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -943,7 +943,7 @@
               "y": 1.2000000476837158,
               "z": 1.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -992,7 +992,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
@@ -1068,7 +1068,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
@@ -2301,7 +2301,7 @@
                   "y": 0.0,
                   "z": 2.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 }
               },
@@ -2323,7 +2323,7 @@
                   "y": 0.0,
                   "z": 2.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 }
               },
@@ -2345,7 +2345,7 @@
                   "y": 0.0,
                   "z": 2.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 }
               },
@@ -2413,7 +2413,7 @@
                   "y": 0.0,
                   "z": 2.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 }
               },
@@ -2435,7 +2435,7 @@
                   "y": 0.0,
                   "z": 2.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 }
               },
@@ -2457,7 +2457,7 @@
                   "y": 0.0,
                   "z": 2.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 }
               },
@@ -2643,7 +2643,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf"
@@ -3156,7 +3156,7 @@
                       "key": "_SAMURAI_NINGYO_MASK_BLOCK_DIR",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -3170,7 +3170,7 @@
                       "key": "_SAMURAI_NINGYO_MASK_BLOCK_DIR",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -3208,8 +3208,8 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Samurai_Ningyo_Block",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_SAMURAI_NINGYO_MASK_BLOCK_DIR"
                 }
               },
@@ -3247,7 +3247,7 @@
               "y": 1.2000000476837158,
               "z": 1.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -3275,7 +3275,7 @@
               "y": 1.2000000476837158,
               "z": 1.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -3316,7 +3316,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
@@ -3379,7 +3379,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
@@ -4062,7 +4062,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4219,7 +4219,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4851,7 +4851,7 @@
               "y": 1.2000000476837158,
               "z": 1.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -4879,7 +4879,7 @@
               "y": 1.2000000476837158,
               "z": 1.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ",
               "PPKEGDJIPMI": {
                 "x": 0.0,
@@ -6211,7 +6211,7 @@
                   "y": 1.2000000476837158,
                   "z": 1.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
                   "PPKEGDJIPMI": {
                     "x": 0.0,
@@ -6509,7 +6509,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -6685,7 +6685,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -6874,7 +6874,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -7050,7 +7050,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -7239,7 +7239,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -7428,7 +7428,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",

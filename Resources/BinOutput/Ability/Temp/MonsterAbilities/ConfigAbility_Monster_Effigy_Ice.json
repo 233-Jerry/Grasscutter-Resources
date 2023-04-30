@@ -291,7 +291,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Ice_BeHit_Shield",
               "born": {
                 "$type": "FLIPADNBJJF",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "NFGKOJBHMLL"
                 },
                 "BJCIHELGKLP": true
@@ -398,7 +398,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Ice_BeHit_Core",
               "born": {
                 "$type": "FLIPADNBJJF",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "NFGKOJBHMLL"
                 }
               },
@@ -752,7 +752,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
@@ -966,7 +966,7 @@
                       "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Ice_BeHit_Shield",
                       "born": {
                         "$type": "FLIPADNBJJF",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "NFGKOJBHMLL"
                         },
                         "BJCIHELGKLP": true
@@ -2282,9 +2282,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": -60.0,
                     "y": 0.0,
                     "z": 0.0
@@ -2329,9 +2329,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": -45.0,
                     "y": -60.0,
                     "z": 0.0
@@ -2376,9 +2376,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -60.0,
                     "z": 0.0
@@ -2423,9 +2423,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 15.0,
                     "y": -60.0,
                     "z": 0.0
@@ -2466,9 +2466,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -2503,9 +2503,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 15.0,
                     "y": 60.0,
                     "z": 0.0
@@ -2540,9 +2540,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 60.0,
                     "z": 0.0
@@ -2577,9 +2577,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": -45.0,
                     "y": 60.0,
                     "z": 0.0
@@ -2839,7 +2839,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -2914,7 +2914,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -4240,7 +4240,7 @@
                   "y": 0.0,
                   "z": 1.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "IceBarrageMid",
                   "ABIMPICHJNC": "Self"
@@ -4266,7 +4266,7 @@
                   "y": 0.0,
                   "z": 1.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "IceBarrageMidL",
                   "ABIMPICHJNC": "Self"
@@ -4292,7 +4292,7 @@
                   "y": 0.0,
                   "z": 1.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "IceBarrageMidR",
                   "ABIMPICHJNC": "Self"
@@ -4318,7 +4318,7 @@
                   "y": 0.0,
                   "z": 1.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "IceBarrageL",
                   "ABIMPICHJNC": "Self"
@@ -4344,7 +4344,7 @@
                   "y": 0.0,
                   "z": 1.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "IceBarrageR",
                   "ABIMPICHJNC": "Self"
@@ -4384,7 +4384,7 @@
                   "y": 0.0,
                   "z": 1.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "JPOJHLOIKLG": 5.0,
                   "MPNLAACKHNA": 15.0,
@@ -4412,7 +4412,7 @@
                   "y": 0.0,
                   "z": 1.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "JPOJHLOIKLG": 5.0,
                   "MPNLAACKHNA": 15.0,
@@ -4440,7 +4440,7 @@
                   "y": 0.0,
                   "z": 1.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "JPOJHLOIKLG": 5.0,
                   "MPNLAACKHNA": 15.0,
@@ -4504,9 +4504,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 90.0,
                     "z": 0.0
@@ -4525,9 +4525,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 90.0,
                     "z": 0.0
@@ -4546,9 +4546,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -90.0,
                     "z": 0.0
@@ -4567,9 +4567,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -90.0,
                     "z": 0.0
@@ -4762,7 +4762,7 @@
                           "$type": "TriggerAttackEvent",
                           "attackEvent": {
                             "attackPattern": {
-                              "$type": "NAMPOMPBMHC",
+                              "$type": "ConfigAttackBox",
                               "triggerType": "TriggerNoRepeat",
                               "JGCLJPCGHMC": true,
                               "born": {
@@ -4838,7 +4838,7 @@
                                       "y": 0.25,
                                       "z": 0.0
                                     },
-                                    "HOPPHMEKHLG": {
+                                    "direction": {
                                       "$type": "HFKFLHCBMLB"
                                     }
                                   }
@@ -4855,7 +4855,7 @@
                                       "y": 0.25,
                                       "z": 0.0
                                     },
-                                    "HOPPHMEKHLG": {
+                                    "direction": {
                                       "$type": "HFKFLHCBMLB"
                                     }
                                   }
@@ -4874,7 +4874,7 @@
                                   "y": 0.25,
                                   "z": 0.0
                                 },
-                                "HOPPHMEKHLG": {
+                                "direction": {
                                   "$type": "HFKFLHCBMLB"
                                 }
                               }
@@ -4909,7 +4909,7 @@
                           "$type": "TriggerAttackEvent",
                           "attackEvent": {
                             "attackPattern": {
-                              "$type": "NAMPOMPBMHC",
+                              "$type": "ConfigAttackBox",
                               "triggerType": "TriggerNoRepeat",
                               "JGCLJPCGHMC": true,
                               "born": {
@@ -4994,8 +4994,8 @@
                                       "y": 0.25,
                                       "z": 0.0
                                     },
-                                    "HOPPHMEKHLG": {
-                                      "$type": "BIMJJILMODA",
+                                    "direction": {
+                                      "$type": "ConfigDirectionByGlobalValue",
                                       "directionKey": "_ABILITY_Effigy_Ice_Revive_IceBarrage_BulletOnGround_KickDir"
                                     }
                                   }
@@ -5012,8 +5012,8 @@
                                       "y": 0.25,
                                       "z": 0.0
                                     },
-                                    "HOPPHMEKHLG": {
-                                      "$type": "BIMJJILMODA",
+                                    "direction": {
+                                      "$type": "ConfigDirectionByGlobalValue",
                                       "directionKey": "_ABILITY_Effigy_Ice_Revive_IceBarrage_BulletOnGround_KickDir"
                                     }
                                   }
@@ -5032,8 +5032,8 @@
                                   "y": 0.25,
                                   "z": 0.0
                                 },
-                                "HOPPHMEKHLG": {
-                                  "$type": "BIMJJILMODA",
+                                "direction": {
+                                  "$type": "ConfigDirectionByGlobalValue",
                                   "directionKey": "_ABILITY_Effigy_Ice_Revive_IceBarrage_BulletOnGround_KickDir"
                                 }
                               }
@@ -5081,7 +5081,7 @@
                           "$type": "TriggerAttackEvent",
                           "attackEvent": {
                             "attackPattern": {
-                              "$type": "NAMPOMPBMHC",
+                              "$type": "ConfigAttackBox",
                               "triggerType": "TriggerNoRepeat",
                               "JGCLJPCGHMC": true,
                               "born": {
@@ -5157,7 +5157,7 @@
                                       "y": 0.25,
                                       "z": 0.0
                                     },
-                                    "HOPPHMEKHLG": {
+                                    "direction": {
                                       "$type": "HFKFLHCBMLB"
                                     }
                                   }
@@ -5174,7 +5174,7 @@
                                       "y": 0.25,
                                       "z": 0.0
                                     },
-                                    "HOPPHMEKHLG": {
+                                    "direction": {
                                       "$type": "HFKFLHCBMLB"
                                     }
                                   }
@@ -5193,7 +5193,7 @@
                                   "y": 0.25,
                                   "z": 0.0
                                 },
-                                "HOPPHMEKHLG": {
+                                "direction": {
                                   "$type": "HFKFLHCBMLB"
                                 }
                               }
@@ -5228,7 +5228,7 @@
                           "$type": "TriggerAttackEvent",
                           "attackEvent": {
                             "attackPattern": {
-                              "$type": "NAMPOMPBMHC",
+                              "$type": "ConfigAttackBox",
                               "triggerType": "TriggerNoRepeat",
                               "JGCLJPCGHMC": true,
                               "born": {
@@ -5313,8 +5313,8 @@
                                       "y": 0.25,
                                       "z": 0.0
                                     },
-                                    "HOPPHMEKHLG": {
-                                      "$type": "BIMJJILMODA",
+                                    "direction": {
+                                      "$type": "ConfigDirectionByGlobalValue",
                                       "directionKey": "_ABILITY_Effigy_Ice_Revive_IceBarrage_BulletOnGround_KickDir"
                                     }
                                   }
@@ -5331,8 +5331,8 @@
                                       "y": 0.25,
                                       "z": 0.0
                                     },
-                                    "HOPPHMEKHLG": {
-                                      "$type": "BIMJJILMODA",
+                                    "direction": {
+                                      "$type": "ConfigDirectionByGlobalValue",
                                       "directionKey": "_ABILITY_Effigy_Ice_Revive_IceBarrage_BulletOnGround_KickDir"
                                     }
                                   }
@@ -5351,8 +5351,8 @@
                                   "y": 0.25,
                                   "z": 0.0
                                 },
-                                "HOPPHMEKHLG": {
-                                  "$type": "BIMJJILMODA",
+                                "direction": {
+                                  "$type": "ConfigDirectionByGlobalValue",
                                   "directionKey": "_ABILITY_Effigy_Ice_Revive_IceBarrage_BulletOnGround_KickDir"
                                 }
                               }
@@ -5507,7 +5507,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
@@ -5604,7 +5604,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
@@ -6175,7 +6175,7 @@
               "key": "_ABILITY_Effigy_Ice_Revive_SkillDirection",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "ReviveSkillDirection",
                   "ABIMPICHJNC": "Self"
@@ -6204,7 +6204,7 @@
               "key": "_ABILITY_Effigy_Ice_Revive_SkillDirection",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "ReviveSkillDirection",
                   "ABIMPICHJNC": "Self"
@@ -6226,7 +6226,7 @@
               "key": "_ABILITY_Effigy_Ice_Revive_SkillDirection",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "ReviveSkillDirection",
                   "ABIMPICHJNC": "Self"
@@ -6248,7 +6248,7 @@
               "key": "_ABILITY_Effigy_Ice_Revive_SkillDirection",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "ReviveSkillDirection",
                   "ABIMPICHJNC": "Self"
@@ -6547,8 +6547,8 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Ice_Revive_NeedleAttack_Needle_Pattern01",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_ABILITY_Effigy_Ice_Revive_SkillDirection"
                 }
               },
@@ -6565,8 +6565,8 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Ice_Revive_NeedleAttack_Needle_Pattern02",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_ABILITY_Effigy_Ice_Revive_SkillDirection"
                 }
               },
@@ -6583,8 +6583,8 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Ice_Revive_NeedleAttack_Needle_Pattern03",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_ABILITY_Effigy_Ice_Revive_SkillDirection"
                 }
               },
@@ -6871,9 +6871,9 @@
               "born": {
                 "$type": "ConfigBornBySelf",
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
-                  "NHGDOBINMBK": {
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -6900,9 +6900,9 @@
               "bulletID": 42004408,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
-                  "NHGDOBINMBK": {
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 15.0,
                     "z": 0.0
@@ -6929,9 +6929,9 @@
               "bulletID": 42004408,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
-                  "NHGDOBINMBK": {
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -6958,9 +6958,9 @@
               "bulletID": 42004408,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
-                  "NHGDOBINMBK": {
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 45.0,
                     "z": 0.0
@@ -6987,9 +6987,9 @@
               "bulletID": 42004408,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
-                  "NHGDOBINMBK": {
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 60.0,
                     "z": 0.0
@@ -7016,9 +7016,9 @@
               "bulletID": 42004408,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
-                  "NHGDOBINMBK": {
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 75.0,
                     "z": 0.0
@@ -7045,9 +7045,9 @@
               "bulletID": 42004408,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
-                  "NHGDOBINMBK": {
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 90.0,
                     "z": 0.0
@@ -7089,9 +7089,9 @@
           "bulletID": 42004409,
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -45.0,
                 "z": 0.0
@@ -7104,9 +7104,9 @@
           "bulletID": 42004409,
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -7119,9 +7119,9 @@
           "bulletID": 42004409,
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 45.0,
                 "z": 0.0
@@ -7134,9 +7134,9 @@
           "bulletID": 42004409,
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 135.0,
                 "z": 0.0
@@ -7149,9 +7149,9 @@
           "bulletID": 42004409,
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 180.0,
                 "z": 0.0
@@ -7164,9 +7164,9 @@
           "bulletID": 42004409,
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 225.0,
                 "z": 0.0
@@ -7242,9 +7242,9 @@
           "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Ice_Revive_SpikeAttack_FanShaped_Attack",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
-              "$type": "BIMJJILMODA",
-              "NHGDOBINMBK": {
+            "direction": {
+              "$type": "ConfigDirectionByGlobalValue",
+              "angleOffset": {
                 "x": 0.0,
                 "y": 135.0,
                 "z": 0.0
@@ -7309,9 +7309,9 @@
               "bulletID": 42004401,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 45.0,
                     "y": 0.0,
                     "z": 0.0
@@ -7325,9 +7325,9 @@
               "bulletID": 42004401,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -7341,9 +7341,9 @@
               "bulletID": 42004401,
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": -45.0,
                     "y": 0.0,
                     "z": 0.0

@@ -450,7 +450,7 @@
                         "y": 2.0,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "IOPNFLFHGID",
                         "JPOJHLOIKLG": 90.0
                       }
@@ -468,7 +468,7 @@
                         "y": 2.0,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "IOPNFLFHGID",
                         "JPOJHLOIKLG": 90.0
                       }
@@ -486,7 +486,7 @@
                         "y": 2.0,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "IOPNFLFHGID",
                         "JPOJHLOIKLG": 90.0
                       }
@@ -504,7 +504,7 @@
                         "y": 2.0,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "IOPNFLFHGID",
                         "JPOJHLOIKLG": 90.0
                       }
@@ -522,7 +522,7 @@
                         "y": 2.0,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "IOPNFLFHGID",
                         "JPOJHLOIKLG": 90.0
                       }
@@ -540,7 +540,7 @@
                         "y": 2.0,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "IOPNFLFHGID",
                         "JPOJHLOIKLG": 90.0
                       }
@@ -558,7 +558,7 @@
                         "y": 2.0,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "IOPNFLFHGID",
                         "JPOJHLOIKLG": 90.0
                       }
@@ -576,7 +576,7 @@
                         "y": 2.0,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "IOPNFLFHGID",
                         "JPOJHLOIKLG": 90.0
                       }
@@ -594,7 +594,7 @@
                         "y": 2.0,
                         "z": 0.0
                       },
-                      "HOPPHMEKHLG": {
+                      "direction": {
                         "$type": "IOPNFLFHGID",
                         "JPOJHLOIKLG": 90.0
                       }
@@ -1077,9 +1077,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Mimik_Fel_Giant_AbsorbFruit_Trail",
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "DOCDLGLJKND",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -1237,9 +1237,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Mimik_Fel_Giant_AbsorbFruit_Trail",
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "DOCDLGLJKND",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -1397,9 +1397,9 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Mimik_Fel_Giant_AbsorbFruit_Trail",
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "DOCDLGLJKND",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -2031,7 +2031,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
@@ -2083,7 +2083,7 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "DOCDLGLJKND",
                       "PPKEGDJIPMI": {
                         "x": -90.0,
@@ -2197,7 +2197,7 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Mimik_Fel_Giant_Fruit_Broken_Hit_Ineffective",
                   "born": {
                     "$type": "FLIPADNBJJF",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "NFGKOJBHMLL"
                     },
                     "BJCIHELGKLP": true
@@ -2356,7 +2356,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
@@ -2408,7 +2408,7 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "DOCDLGLJKND",
                       "PPKEGDJIPMI": {
                         "x": -90.0,
@@ -2509,7 +2509,7 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Mimik_Fel_Giant_Fruit_Broken_Hit_Ineffective",
                   "born": {
                     "$type": "FLIPADNBJJF",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "NFGKOJBHMLL"
                     },
                     "BJCIHELGKLP": true
@@ -3126,7 +3126,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
@@ -3187,7 +3187,7 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
                       "PPKEGDJIPMI": {
                         "x": -90.0,
@@ -3285,7 +3285,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "JGCLJPCGHMC": true,
                   "born": {
@@ -3337,7 +3337,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
                   "PPKEGDJIPMI": {
                     "x": -90.0,
@@ -3430,7 +3430,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
@@ -3963,7 +3963,7 @@
               "y": 1.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
               "PPKEGDJIPMI": {
                 "x": -90.0,
@@ -4718,7 +4718,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "attachPointName": "BulletSource",
@@ -4837,7 +4837,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             },
             "attachPointName": "BulletSource",

@@ -832,7 +832,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "FocusAnchor",
                   "ABIMPICHJNC": "Self"
@@ -886,7 +886,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "FocusAnchor",
                   "ABIMPICHJNC": "Self"
@@ -912,7 +912,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "FocusAnchor",
                   "ABIMPICHJNC": "Self"
@@ -993,7 +993,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "FocusAnchor",
                   "ABIMPICHJNC": "Self"
@@ -1041,7 +1041,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "FocusAnchor",
                   "ABIMPICHJNC": "Self"
@@ -1116,7 +1116,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -1156,7 +1156,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -1196,7 +1196,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -1236,7 +1236,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -1276,7 +1276,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "FocusAnchor",
               "ABIMPICHJNC": "Self"
@@ -1416,7 +1416,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -1522,7 +1522,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -1629,7 +1629,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "LHECOGDLBCO": true,
@@ -1760,9 +1760,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "AKNHOGLMAAH",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": -75.0,
                 "y": -24.0,
                 "z": -24.0
@@ -1793,9 +1793,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "AKNHOGLMAAH",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": -75.0,
                 "y": -8.0,
                 "z": -8.0
@@ -1826,9 +1826,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "AKNHOGLMAAH",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": -75.0,
                 "y": 8.0,
                 "z": 8.0
@@ -1859,9 +1859,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "AKNHOGLMAAH",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": -75.0,
                 "y": 24.0,
                 "z": 24.0
@@ -1904,9 +1904,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "AKNHOGLMAAH",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": -75.0,
                 "y": 0.0,
                 "z": 0.0
@@ -2889,7 +2889,7 @@
           "born": {
             "$type": "ConfigBornBySelf",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             }
           },
@@ -2960,7 +2960,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Boy_Bow_Tighnari_ElementalArt_Circle",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HDLOKIPPKFH",
                   "range": 2
                 }
@@ -3050,7 +3050,7 @@
               "z": 2.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             },
             "BJCIHELGKLP": true
@@ -3069,7 +3069,7 @@
               "z": 2.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             },
             "BJCIHELGKLP": true
@@ -3088,7 +3088,7 @@
               "z": -2.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             },
             "BJCIHELGKLP": true
@@ -3107,7 +3107,7 @@
               "z": -2.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             },
             "BJCIHELGKLP": true
@@ -3677,9 +3677,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -3725,9 +3725,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -3773,9 +3773,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -3821,9 +3821,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -3869,9 +3869,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -3917,9 +3917,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -4040,9 +4040,9 @@
               "OKDPGGJGGCJ": 0.5,
               "CPOKKADJBFH": 1.5
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "AKNHOGLMAAH",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": -90.0,
                 "y": "YZRandom",
                 "z": "YZRandom"

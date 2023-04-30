@@ -295,7 +295,7 @@
               "key": "_ABILITY_Alhatham_ElementalArt_RushPos",
               "ONOPIOBGBEM": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "PGIBJONOAKP": true,
                   "attachPointName": "FocusAnchor",
@@ -1623,7 +1623,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",

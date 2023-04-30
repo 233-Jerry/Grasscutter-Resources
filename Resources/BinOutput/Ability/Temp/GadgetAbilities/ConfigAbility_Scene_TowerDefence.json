@@ -259,7 +259,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "attachPointName": "ShootPoint"
@@ -453,13 +453,13 @@
                       "$type": "TriggerAttackEvent",
                       "attackEvent": {
                         "attackPattern": {
-                          "$type": "NAMPOMPBMHC",
+                          "$type": "ConfigAttackBox",
                           "triggerType": "TriggerNoRepeat",
                           "born": {
                             "$type": "ConfigBornBySelf",
-                            "HOPPHMEKHLG": {
+                            "direction": {
                               "$type": "JADOBJDPOLJ",
-                              "NHGDOBINMBK": {
+                              "angleOffset": {
                                 "x": 0.0,
                                 "y": 0.0,
                                 "z": 0.0
@@ -504,13 +504,13 @@
                       "$type": "TriggerAttackEvent",
                       "attackEvent": {
                         "attackPattern": {
-                          "$type": "NAMPOMPBMHC",
+                          "$type": "ConfigAttackBox",
                           "triggerType": "TriggerNoRepeat",
                           "born": {
                             "$type": "ConfigBornBySelf",
-                            "HOPPHMEKHLG": {
+                            "direction": {
                               "$type": "JADOBJDPOLJ",
-                              "NHGDOBINMBK": {
+                              "angleOffset": {
                                 "x": 0.0,
                                 "y": 0.0,
                                 "z": 0.0
@@ -943,7 +943,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "attachPointName": "ShootPoint"
@@ -1016,9 +1016,9 @@
                   "bulletID": 70350128,
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -1156,7 +1156,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "attachPointName": "ShootPoint"
@@ -1719,7 +1719,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "attachPointName": "ShootPoint"
@@ -2523,13 +2523,13 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "JADOBJDPOLJ",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -4100,9 +4100,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -4154,9 +4154,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -4357,9 +4357,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -4385,9 +4385,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -4458,9 +4458,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -4492,9 +4492,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -4730,7 +4730,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
@@ -4932,7 +4932,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
@@ -5195,7 +5195,7 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB"
                     },
                     "attachPointName": "ShootPoint"
@@ -5244,7 +5244,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "attachPointName": "ShootPoint"
@@ -5417,7 +5417,7 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB"
                     },
                     "attachPointName": "ShootPoint"
@@ -5466,7 +5466,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HFKFLHCBMLB"
                 },
                 "attachPointName": "ShootPoint"

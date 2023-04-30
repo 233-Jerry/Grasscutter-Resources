@@ -86,7 +86,7 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Weapon_SpecialHit_Heavy",
                   "born": {
                     "$type": "FLIPADNBJJF",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID"
                     }
                   },
@@ -455,7 +455,7 @@
               "target": "Target",
               "predicates": [
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 },
                 {
                   "$type": "ByEntityTypes",
@@ -719,7 +719,7 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "DBGHBLHJOCO"
+                      "$type": "ByHitCritical"
                     }
                   ]
                 }
@@ -746,7 +746,7 @@
                   "BOJCAKJDAKM": 0.0
                 },
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 }
               ],
               "successActions": [
@@ -1790,9 +1790,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -1814,7 +1814,7 @@
                           "y": -0.5,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID"
                         }
                       },
@@ -2228,9 +2228,9 @@
                           "y": 0.0,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID",
-                          "NHGDOBINMBK": {
+                          "angleOffset": {
                             "x": 0.0,
                             "y": 0.0,
                             "z": 0.0
@@ -2252,7 +2252,7 @@
                               "y": -0.5,
                               "z": 0.0
                             },
-                            "HOPPHMEKHLG": {
+                            "direction": {
                               "$type": "IOPNFLFHGID"
                             }
                           },
@@ -5356,9 +5356,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -5380,9 +5380,9 @@
                           "y": -0.5,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID",
-                          "NHGDOBINMBK": {
+                          "angleOffset": {
                             "x": 0.0,
                             "y": 0.0,
                             "z": 0.0

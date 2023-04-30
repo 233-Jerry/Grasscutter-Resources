@@ -773,7 +773,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "NIJPDNKNHLJ": "IgnoreSceneProp",
                       "born": {
@@ -1521,7 +1521,7 @@
                   "$type": "TriggerAttackEvent",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "NIJPDNKNHLJ": "IgnoreSceneProp",
                       "born": {
@@ -4291,9 +4291,9 @@
                   "key": "_ABILITY_DANDELION_HIT",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -4307,8 +4307,8 @@
                   "bulletID": 70900390,
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_DANDELION_HIT"
                     },
                     "attachPointName": "Flower"
@@ -5648,7 +5648,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "MJLCPIAKNCP": "Both",
                   "born": {
@@ -5658,9 +5658,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -6252,7 +6252,7 @@
                   "y": 0.0,
                   "z": 0.10000000149011612
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "ShootPointTarget",
                   "ABIMPICHJNC": "Self"
@@ -8159,9 +8159,9 @@
                           "y": 0.5,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "AKLDHBPHNLK",
-                          "NHGDOBINMBK": {
+                          "angleOffset": {
                             "x": -90.0,
                             "y": 0.0,
                             "z": 0.0
@@ -8186,9 +8186,9 @@
                           "y": 0.5,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "AKLDHBPHNLK",
-                          "NHGDOBINMBK": {
+                          "angleOffset": {
                             "x": 0.0,
                             "y": 0.0,
                             "z": 0.0
@@ -9903,9 +9903,9 @@
           "key": "ElecSourceHitRotation",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IHINHODOMIN",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0

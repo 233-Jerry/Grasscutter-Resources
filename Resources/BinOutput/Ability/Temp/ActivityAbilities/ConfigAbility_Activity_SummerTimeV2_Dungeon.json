@@ -2230,7 +2230,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_SummerTimeV2_Dungeon_ShockWave_Expand_Electric_Once",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "HDLOKIPPKFH",
                   "range": 3
                 }
@@ -2488,9 +2488,9 @@
               "bulletID": 44000432,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 1.0,
                     "y": 0.0,
                     "z": 0.0
@@ -2525,7 +2525,7 @@
               "RotationDampTime": true,
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "MJLCPIAKNCP": "Both",
                   "born": {

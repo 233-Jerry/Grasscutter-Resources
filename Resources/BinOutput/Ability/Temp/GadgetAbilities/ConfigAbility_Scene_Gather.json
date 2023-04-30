@@ -1040,9 +1040,9 @@
                   "key": "_ABILITY_DANDELION_HIT",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -1059,9 +1059,9 @@
                   "key": "_ABILITY_DANDELION_HIT",
                   "born": {
                     "$type": "FLIPADNBJJF",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "NFGKOJBHMLL",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -1083,8 +1083,8 @@
               "bulletID": 70510010,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_ABILITY_DANDELION_HIT"
                 },
                 "attachPointName": "flyPoint1"
@@ -1101,8 +1101,8 @@
               "bulletID": 70510010,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_ABILITY_DANDELION_HIT"
                 },
                 "attachPointName": "flyPoint2"
@@ -1119,8 +1119,8 @@
               "bulletID": 70510010,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_ABILITY_DANDELION_HIT"
                 },
                 "attachPointName": "flyPoint3"

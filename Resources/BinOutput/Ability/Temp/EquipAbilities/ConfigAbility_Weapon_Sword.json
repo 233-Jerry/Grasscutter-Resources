@@ -383,7 +383,7 @@
               "target": "Target",
               "predicates": [
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 },
                 {
                   "$type": "ByEntityTypes",
@@ -1025,7 +1025,7 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "DBGHBLHJOCO"
+                      "$type": "ByHitCritical"
                     }
                   ]
                 }
@@ -1052,7 +1052,7 @@
                   "BOJCAKJDAKM": 0.0
                 },
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 }
               ],
               "successActions": [
@@ -1715,7 +1715,7 @@
                   "entityTypes": ["Monster"]
                 },
                 {
-                  "$type": "DBGHBLHJOCO"
+                  "$type": "ByHitCritical"
                 }
               ],
               "successActions": [
@@ -2397,7 +2397,7 @@
                       "y": 0.4000000059604645,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID"
                     }
                   },
@@ -2585,7 +2585,7 @@
                           "y": 0.0,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID"
                         }
                       },
@@ -5220,7 +5220,7 @@
                           "y": 0.0,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID"
                         }
                       },
@@ -5355,7 +5355,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByCollisionPoint",
@@ -5527,7 +5527,7 @@
                           "y": 0.0,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID"
                         }
                       },
@@ -5705,7 +5705,7 @@
                           "y": 0.0,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IOPNFLFHGID"
                         }
                       },

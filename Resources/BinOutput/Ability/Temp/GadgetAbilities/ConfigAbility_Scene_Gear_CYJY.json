@@ -89,7 +89,7 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
                       "PGIBJONOAKP": true
                     },
@@ -1329,7 +1329,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
                   "PGIBJONOAKP": true
                 },
@@ -1419,7 +1419,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
                   "PGIBJONOAKP": true
                 },
@@ -1461,7 +1461,7 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
                       "PGIBJONOAKP": true
                     },
@@ -1786,7 +1786,7 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
                       "PGIBJONOAKP": true
                     },
@@ -3489,9 +3489,9 @@
                   "key": "_ABILITY_LAUNCHER_HIT",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 180.0,
                         "y": 0.0,
                         "z": 0.0
@@ -3505,8 +3505,8 @@
                   "bulletID": 70290213,
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_LAUNCHER_HIT"
                     },
                     "attachPointName": "AttachPoint"
@@ -3562,7 +3562,7 @@
           "$type": "CreateGadget",
           "born": {
             "$type": "ConfigBornBySelf",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "AKNHOGLMAAH"
             }
           },
@@ -3866,7 +3866,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornByCollisionPoint"
@@ -4276,9 +4276,9 @@
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GeoSeedLauncher_01_Destroy",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -4349,9 +4349,9 @@
                   "key": "_ABILITY_LAUNCHER_HIT",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HDCKGANABOM",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -4366,8 +4366,8 @@
                   "bulletID": 70330146,
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_LAUNCHER_HIT"
                     },
                     "attachPointName": "AttachPoint"
@@ -4539,9 +4539,9 @@
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_GeoSeedLauncher_01_Destroy",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -4601,9 +4601,9 @@
                   "key": "_ABILITY_LAUNCHER_HIT",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HDCKGANABOM",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 180.0,
                         "z": 0.0
@@ -4618,9 +4618,9 @@
                   "bulletID": 70330146,
                   "born": {
                     "$type": "ConfigBornByAttachPoint",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "JADOBJDPOLJ",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": "Test01",
                         "y": "Test02",
                         "z": "Test03"
@@ -5537,7 +5537,7 @@
               "$type": "CreateGadget",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH"
                 }
               },
@@ -5710,7 +5710,7 @@
               ],
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKNHOGLMAAH"
                 }
               },
@@ -10170,7 +10170,7 @@
                   "y": 0.0,
                   "z": 0.10000000149011612
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "ShootPointTarget",
                   "ABIMPICHJNC": "Self"

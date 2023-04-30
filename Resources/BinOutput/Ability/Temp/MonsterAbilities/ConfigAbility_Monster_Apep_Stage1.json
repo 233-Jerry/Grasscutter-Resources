@@ -650,7 +650,7 @@
                       "z": [0.5, "Radius", "MUL"]
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     },
                     "BJCIHELGKLP": true
@@ -681,7 +681,7 @@
                           "z": "Radius"
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "BJCIHELGKLP": true
@@ -703,7 +703,7 @@
                           "z": [0.5, "Radius", "MUL"]
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "BJCIHELGKLP": true
@@ -727,7 +727,7 @@
                       "z": "Radius"
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     },
                     "BJCIHELGKLP": true
@@ -747,7 +747,7 @@
                       "z": [0.5, "Radius", "MUL"]
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     },
                     "BJCIHELGKLP": true
@@ -780,7 +780,7 @@
                       "z": [0.0, 0.5, "Radius", "MUL", "SUB"]
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     },
                     "BJCIHELGKLP": true
@@ -811,7 +811,7 @@
                           "z": [0.0, 1.0, "Radius", "MUL", "SUB"]
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "BJCIHELGKLP": true
@@ -839,7 +839,7 @@
                           "z": [0.0, 0.5, "Radius", "MUL", "SUB"]
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "BJCIHELGKLP": true
@@ -863,7 +863,7 @@
                       "z": [0.0, 1.0, "Radius", "MUL", "SUB"]
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     },
                     "BJCIHELGKLP": true
@@ -889,7 +889,7 @@
                       "z": [0.0, 0.5, "Radius", "MUL", "SUB"]
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     },
                     "BJCIHELGKLP": true
@@ -960,7 +960,7 @@
                       "z": [0.5, "Radius", "MUL"]
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     },
                     "BJCIHELGKLP": true
@@ -991,7 +991,7 @@
                           "z": "Radius"
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "BJCIHELGKLP": true
@@ -1013,7 +1013,7 @@
                           "z": [0.5, "Radius", "MUL"]
                         },
                         "DAPKLNIFPID": true,
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         },
                         "BJCIHELGKLP": true
@@ -1037,7 +1037,7 @@
                       "z": "Radius"
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     },
                     "BJCIHELGKLP": true
@@ -1057,7 +1057,7 @@
                       "z": [0.5, "Radius", "MUL"]
                     },
                     "DAPKLNIFPID": true,
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     },
                     "BJCIHELGKLP": true
@@ -1079,7 +1079,7 @@
                   "z": [0.0, 0.5, "Radius", "MUL", "SUB"]
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 },
                 "BJCIHELGKLP": true
@@ -1105,7 +1105,7 @@
                   "z": [0.0, 0.5, "Radius", "MUL", "SUB"]
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 },
                 "BJCIHELGKLP": true
@@ -1196,7 +1196,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -2234,9 +2234,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -2262,9 +2262,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0
@@ -2309,9 +2309,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -2337,9 +2337,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0
@@ -2389,9 +2389,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -2417,9 +2417,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0
@@ -2464,9 +2464,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -2492,9 +2492,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0
@@ -2561,9 +2561,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -2589,9 +2589,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0
@@ -2636,9 +2636,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -2664,9 +2664,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0
@@ -2716,9 +2716,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -2744,9 +2744,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0
@@ -2791,9 +2791,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -2819,9 +2819,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0
@@ -2892,9 +2892,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -2920,9 +2920,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0
@@ -2967,9 +2967,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -2995,9 +2995,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0
@@ -3047,9 +3047,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -3075,9 +3075,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0
@@ -3122,9 +3122,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 30.0,
                     "z": 0.0
@@ -3150,9 +3150,9 @@
                   "z": 4.0
                 },
                 "DAPKLNIFPID": true,
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -30.0,
                     "z": 0.0

@@ -292,7 +292,7 @@
               "y": 0.0,
               "z": 0.10000000149011612
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "JPOJHLOIKLG": 0.30000001192092896,
               "MPNLAACKHNA": 0.5,
@@ -318,9 +318,9 @@
               "y": 0.0,
               "z": 0.10000000149011612
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 0.0,
                 "z": 0.0
@@ -348,9 +348,9 @@
               "y": 0.0,
               "z": 0.10000000149011612
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 5.0,
                 "z": 0.0
@@ -378,9 +378,9 @@
               "y": 0.0,
               "z": 0.10000000149011612
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 10.0,
                 "z": 0.0
@@ -408,9 +408,9 @@
               "y": 0.0,
               "z": 0.10000000149011612
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -5.0,
                 "z": 0.0
@@ -438,9 +438,9 @@
               "y": 0.0,
               "z": 0.10000000149011612
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": -10.0,
                 "z": 0.0
@@ -612,7 +612,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -670,7 +670,7 @@
           ],
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "MJLCPIAKNCP": "Both",
               "born": {
@@ -1113,7 +1113,7 @@
           "equipPart": "equip03",
           "born": {
             "$type": "ConfigBornByTarget",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "LLOEMEPIBII": "Horizontal",
               "maxAngle": 30.0

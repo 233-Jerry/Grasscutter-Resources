@@ -181,7 +181,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "LHECOGDLBCO": true,
               "JGCLJPCGHMC": true,
@@ -238,7 +238,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "LHECOGDLBCO": true,
               "JGCLJPCGHMC": true,
@@ -1403,9 +1403,9 @@
               "y": 1.0,
               "z": 4.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 1.0,
                 "z": 0.0
@@ -1425,9 +1425,9 @@
               "y": 1.0,
               "z": -2.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 1.0,
                 "z": 0.0
@@ -1447,9 +1447,9 @@
               "y": 1.0,
               "z": -2.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": 0.0,
                 "y": 1.0,
                 "z": 0.0
@@ -1893,7 +1893,7 @@
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "AKNHOGLMAAH",
               "eularAngles": {
                 "x": 0.10000000149011612,

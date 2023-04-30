@@ -13,7 +13,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornByGlobalValue",
@@ -336,7 +336,7 @@
                       "key": "_MONSTER_SHAMAN_ROCK_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -350,7 +350,7 @@
                       "key": "_MONSTER_SHAMAN_ROCK_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -363,8 +363,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shaman_Rock_Pillar_BeHitFailed",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_MONSTER_SHAMAN_ROCK_ELEMENTSHIELD_HIT"
                     }
                   },
@@ -388,7 +388,7 @@
                       "key": "_MONSTER_SHAMAN_ROCK_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -402,7 +402,7 @@
                       "key": "_MONSTER_SHAMAN_ROCK_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -415,8 +415,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Shaman_Rock_Pillar_BeHitSuccess",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_MONSTER_SHAMAN_ROCK_ELEMENTSHIELD_HIT"
                     }
                   },

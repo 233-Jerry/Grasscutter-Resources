@@ -195,7 +195,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "born": {
                     "$type": "ConfigBornByCollisionPoint",
                     "offset": {
@@ -338,7 +338,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "LLOEMEPIBII": "Horizontal",
               "maxAngle": 15.0
@@ -379,7 +379,7 @@
           "bulletID": 42504003,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB",
               "LLOEMEPIBII": "Horizontal",
               "maxAngle": 15.0

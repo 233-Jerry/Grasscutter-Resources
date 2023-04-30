@@ -1633,8 +1633,8 @@
                   "y": -0.5,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_GrapplingHook_TargetDir"
                 },
                 "positionKey": "_GrapplingHook_TargetPos",
@@ -1735,8 +1735,8 @@
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Grapple_01_Moving",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_GrapplingHook_TargetDir"
                 }
               },
@@ -1975,7 +1975,7 @@
               "key": "_GrapplingHook_TargetDir",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 }
               },
@@ -2710,7 +2710,7 @@
                           "y": -1.0,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN",
                           "PPKEGDJIPMI": {
                             "x": -90.0,
@@ -2748,7 +2748,7 @@
                           "y": 1.5,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN",
                           "PPKEGDJIPMI": {
                             "x": -45.0,
@@ -3088,7 +3088,7 @@
                           "y": -1.0,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN",
                           "PPKEGDJIPMI": {
                             "x": -90.0,
@@ -3124,7 +3124,7 @@
                           "y": 1.5,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "HFKFLHCBMLB",
                           "PPKEGDJIPMI": {
                             "x": -45.0,

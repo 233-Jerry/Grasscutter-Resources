@@ -77,7 +77,7 @@
               "key": "Shoot_Dir",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKLDHBPHNLK",
                   "JPOJHLOIKLG": 30.0
                 },
@@ -156,7 +156,7 @@
               "key": "Shoot_Dir",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKLDHBPHNLK",
                   "JPOJHLOIKLG": 30.0
                 },
@@ -234,7 +234,7 @@
               "key": "Shoot_Dir",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "AKLDHBPHNLK",
                   "JPOJHLOIKLG": 20.0
                 },
@@ -1703,8 +1703,8 @@
               "bulletID": 70900245,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "Shoot_Dir"
                 },
                 "attachPointName": "ShootPoint"
@@ -1810,8 +1810,8 @@
               "bulletID": 70900256,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "Shoot_Dir"
                 },
                 "attachPointName": "ShootPoint"
@@ -1917,8 +1917,8 @@
               "bulletID": 70900257,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "Shoot_Dir"
                 },
                 "attachPointName": "ShootPoint"
@@ -2245,9 +2245,9 @@
               "healLimitedByCasterMaxHPRatio": "Eff_WhiteBox_Shadow_01",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -2291,9 +2291,9 @@
                   "bulletID": 70900247,
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "HFKFLHCBMLB",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0

@@ -353,7 +353,7 @@
                   "key": "_OCEANID_BEINGHIT_DIR_",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     }
                   },
@@ -367,7 +367,7 @@
                   "key": "_OCEANID_BEINGHIT_DIR_",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     }
                   },
@@ -380,8 +380,8 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_BeHit",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_OCEANID_BEINGHIT_DIR_"
                 },
                 "attachPointName": "RootNode",
@@ -882,9 +882,9 @@
                       "y": 0.0,
                       "z": 0.0
                     },
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IOPNFLFHGID",
-                      "NHGDOBINMBK": {
+                      "angleOffset": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
@@ -1229,7 +1229,7 @@
               "key": "_JUMPPOS_",
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "RootNode"
                 },
@@ -1437,9 +1437,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
-                  "NHGDOBINMBK": {
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -1537,9 +1537,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
-                  "NHGDOBINMBK": {
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0

@@ -275,7 +275,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Fire_BeHit_Shield",
               "born": {
                 "$type": "FLIPADNBJJF",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "NFGKOJBHMLL"
                 }
               },
@@ -381,7 +381,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Effigy_Fire_BeHit_Core",
               "born": {
                 "$type": "FLIPADNBJJF",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "NFGKOJBHMLL"
                 }
               },
@@ -4389,9 +4389,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": -60.0,
                     "y": 0.0,
                     "z": 0.0
@@ -4431,9 +4431,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": -45.0,
                     "y": -60.0,
                     "z": 0.0
@@ -4473,9 +4473,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": -60.0,
                     "z": 0.0
@@ -4515,9 +4515,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 15.0,
                     "y": -60.0,
                     "z": 0.0
@@ -4553,9 +4553,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
@@ -4585,9 +4585,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 15.0,
                     "y": 60.0,
                     "z": 0.0
@@ -4617,9 +4617,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 60.0,
                     "z": 0.0
@@ -4649,9 +4649,9 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": -45.0,
                     "y": 60.0,
                     "z": 0.0
@@ -5401,7 +5401,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -5486,7 +5486,7 @@
               "$type": "TriggerAttackEvent",
               "attackEvent": {
                 "attackPattern": {
-                  "$type": "NAMPOMPBMHC",
+                  "$type": "ConfigAttackBox",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
                     "$type": "ConfigBornBySelf",
@@ -6403,7 +6403,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "MultiFireBulletSource",
               "ABIMPICHJNC": "Self"
@@ -6429,7 +6429,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "MultiFireBulletSource",
               "ABIMPICHJNC": "Self"

@@ -364,7 +364,7 @@
                   "key": "_ABILITY_ThunderCounter_Shield_Hit",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     }
                   },
@@ -378,7 +378,7 @@
                   "key": "_ABILITY_ThunderCounter_Shield_Hit",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     }
                   },
@@ -391,8 +391,8 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Shield_Hited",
               "born": {
                 "$type": "ConfigBornByTarget",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_ABILITY_ThunderCounter_Shield_Hit"
                 }
               },
@@ -1333,7 +1333,7 @@
                   "y": 0.0,
                   "z": 0.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID"
                 },
                 "attachPointName": "RootNode"
@@ -1748,7 +1748,7 @@
                   "key": "_ABILITY_ThunderShield_Talent_Hit",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     }
                   },
@@ -1762,7 +1762,7 @@
                   "key": "_ABILITY_ThunderShield_Talent_Hit",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     }
                   },
@@ -1775,8 +1775,8 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Avatar_Lady_Claymore_Beidou_ThunderCounter_Shield_Hited",
               "born": {
                 "$type": "ConfigBornByTarget",
-                "HOPPHMEKHLG": {
-                  "$type": "BIMJJILMODA",
+                "direction": {
+                  "$type": "ConfigDirectionByGlobalValue",
                   "directionKey": "_ABILITY_ThunderShield_Talent_Hit"
                 }
               },

@@ -211,7 +211,7 @@
                       "key": "_ABILITY_ABYSS_ICE_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -225,7 +225,7 @@
                       "key": "_ABILITY_ABYSS_ICE_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -238,8 +238,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Abyss_Ice_ElementShield_Hit_Invalid",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_ABYSS_ICE_ELEMENTSHIELD_HIT"
                     }
                   },
@@ -269,7 +269,7 @@
                       "key": "_ABILITY_ABYSS_ICE_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -283,7 +283,7 @@
                       "key": "_ABILITY_ABYSS_ICE_ELEMENTSHIELD_HIT",
                       "born": {
                         "$type": "ConfigBornBySelf",
-                        "HOPPHMEKHLG": {
+                        "direction": {
                           "$type": "IHINHODOMIN"
                         }
                       },
@@ -296,8 +296,8 @@
                   "healLimitedByCasterMaxHPRatio": "Eff_Monster_Abyss_Ice_ElementShield_Hit",
                   "born": {
                     "$type": "ConfigBornByTarget",
-                    "HOPPHMEKHLG": {
-                      "$type": "BIMJJILMODA",
+                    "direction": {
+                      "$type": "ConfigDirectionByGlobalValue",
                       "directionKey": "_ABILITY_ABYSS_ICE_ELEMENTSHIELD_HIT"
                     }
                   },
@@ -829,9 +829,9 @@
                   "y": 1.2000000476837158,
                   "z": -3.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 90.0,
                     "z": 0.0
@@ -859,9 +859,9 @@
                   "y": 1.2000000476837158,
                   "z": 1.75
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 90.0,
                     "z": 0.0
@@ -889,9 +889,9 @@
                   "y": 1.2000000476837158,
                   "z": 1.75
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 90.0,
                     "z": 0.0
@@ -946,9 +946,9 @@
                   "y": 1.2000000476837158,
                   "z": 7.0
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 90.0,
                     "z": 0.0
@@ -976,9 +976,9 @@
                   "y": 1.2000000476837158,
                   "z": -3.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 90.0,
                     "z": 0.0
@@ -1006,9 +1006,9 @@
                   "y": 1.2000000476837158,
                   "z": -3.5
                 },
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": 0.0,
                     "y": 90.0,
                     "z": 0.0
@@ -1134,7 +1134,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -1978,7 +1978,7 @@
               "y": 1.5,
               "z": 1.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "HFKFLHCBMLB"
             }
           }
@@ -2238,7 +2238,7 @@
               "y": 4.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IHINHODOMIN"
             }
           }

@@ -715,7 +715,7 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             },
             "attachPointName": "PRIVATE_Weapon"
@@ -952,9 +952,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": -65.0,
                 "y": 45.0,
                 "z": 0.0
@@ -996,9 +996,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": -65.0,
                 "y": 0.0,
                 "z": 0.0
@@ -1034,9 +1034,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": -65.0,
                 "y": -45.0,
                 "z": 0.0
@@ -1739,7 +1739,7 @@
                   "key": "_ABILITY_ElementalBurst_Dir",
                   "born": {
                     "$type": "ConfigBornBySelf",
-                    "HOPPHMEKHLG": {
+                    "direction": {
                       "$type": "IHINHODOMIN"
                     }
                   },
@@ -1755,7 +1755,7 @@
                   "target": "Caster",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
@@ -1765,9 +1765,9 @@
                           "y": 0.5,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
-                          "$type": "BIMJJILMODA",
-                          "NHGDOBINMBK": {
+                        "direction": {
+                          "$type": "ConfigDirectionByGlobalValue",
+                          "angleOffset": {
                             "x": 0.0,
                             "y": 0.0,
                             "z": 0.0
@@ -1808,7 +1808,7 @@
                   "target": "Caster",
                   "attackEvent": {
                     "attackPattern": {
-                      "$type": "NAMPOMPBMHC",
+                      "$type": "ConfigAttackBox",
                       "triggerType": "TriggerNoRepeat",
                       "JGCLJPCGHMC": true,
                       "born": {
@@ -1818,9 +1818,9 @@
                           "y": 0.5,
                           "z": 0.0
                         },
-                        "HOPPHMEKHLG": {
-                          "$type": "BIMJJILMODA",
-                          "NHGDOBINMBK": {
+                        "direction": {
+                          "$type": "ConfigDirectionByGlobalValue",
+                          "angleOffset": {
                             "x": 0.0,
                             "y": 0.0,
                             "z": 0.0
@@ -1989,9 +1989,9 @@
               "bulletID": 41068005,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IOPNFLFHGID",
-                  "NHGDOBINMBK": {
+                  "angleOffset": {
                     "x": -65.0,
                     "y": -45.0,
                     "z": 0.0
@@ -3177,9 +3177,9 @@
               "y": 0.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+              "angleOffset": {
                 "x": -65.0,
                 "y": -45.0,
                 "z": 0.0

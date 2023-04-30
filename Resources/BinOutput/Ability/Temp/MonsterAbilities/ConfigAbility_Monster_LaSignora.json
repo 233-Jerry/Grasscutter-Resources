@@ -1887,7 +1887,7 @@
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_Shield_BeHit",
               "born": {
                 "$type": "ConfigBornBySelf",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "IHINHODOMIN"
                 },
                 "BJCIHELGKLP": true
@@ -2374,7 +2374,7 @@
               "z": 0.0
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             }
           },
@@ -2393,7 +2393,7 @@
               "z": 2.5980000495910645
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             }
           },
@@ -2412,7 +2412,7 @@
               "z": -2.5980000495910645
             },
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             }
           },
@@ -2439,7 +2439,7 @@
               "y": 1.2000000476837158,
               "z": 0.699999988079071
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IHINHODOMIN"
             }
           }
@@ -2496,7 +2496,7 @@
               "y": 0.800000011920929,
               "z": 1.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "JADOBJDPOLJ"
             },
             "BJCIHELGKLP": true
@@ -2989,7 +2989,7 @@
           "bulletID": 42905006,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "BaneChisel_03"
             },
@@ -3019,7 +3019,7 @@
           "bulletID": 42905006,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "BaneChisel_02"
             },
@@ -3049,7 +3049,7 @@
           "bulletID": 42905006,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "BaneChisel_04"
             },
@@ -3079,7 +3079,7 @@
           "bulletID": 42905006,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "BaneChisel_01"
             },
@@ -3109,7 +3109,7 @@
           "bulletID": 42905006,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "BaneChisel_05"
             },
@@ -3177,7 +3177,7 @@
           "bulletID": 42905006,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "BaneChisel_03"
             },
@@ -3196,7 +3196,7 @@
           "bulletID": 42905006,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "BaneChisel_02"
             },
@@ -3215,7 +3215,7 @@
           "bulletID": 42905006,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "BaneChisel_04"
             },
@@ -3234,7 +3234,7 @@
           "bulletID": 42905006,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "BaneChisel_01"
             },
@@ -3253,7 +3253,7 @@
           "bulletID": 42905006,
           "born": {
             "$type": "ConfigBornByAttachPoint",
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "DOCDLGLJKND",
               "attachPointName": "BaneChisel_05"
             },
@@ -3346,7 +3346,7 @@
           "$type": "TriggerAttackEvent",
           "attackEvent": {
             "attackPattern": {
-              "$type": "NAMPOMPBMHC",
+              "$type": "ConfigAttackBox",
               "triggerType": "TriggerNoRepeat",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -3386,7 +3386,7 @@
           "$type": "CreateTile",
           "CJOEOFHOCOA": "LaSignora_Tile_Ice",
           "attackPattern": {
-            "$type": "NAMPOMPBMHC",
+            "$type": "ConfigAttackBox",
             "triggerType": "TriggerNoRepeat",
             "born": {
               "$type": "ConfigBornBySelf",
@@ -3427,7 +3427,7 @@
               "y": 6.5,
               "z": 3.677000045776367
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IHINHODOMIN"
             }
           },
@@ -4807,7 +4807,7 @@
               "y": 15.0,
               "z": 0.0
             },
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IHINHODOMIN"
             }
           }
@@ -4855,7 +4855,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             },
             "BJCIHELGKLP": true
@@ -4870,7 +4870,7 @@
           "born": {
             "$type": "ConfigBornByCollisionPoint",
             "DAPKLNIFPID": true,
-            "HOPPHMEKHLG": {
+            "direction": {
               "$type": "IOPNFLFHGID"
             },
             "BJCIHELGKLP": true
@@ -5006,7 +5006,7 @@
               "bulletID": 42905107,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "BaneChisel_Cocoon_01"
                 },
@@ -5025,7 +5025,7 @@
               "bulletID": 42905107,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "BaneChisel_Cocoon_02"
                 },
@@ -5044,7 +5044,7 @@
               "bulletID": 42905107,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "BaneChisel_Cocoon_03"
                 },
@@ -5063,7 +5063,7 @@
               "bulletID": 42905107,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "BaneChisel_Cocoon_04"
                 },
@@ -5082,7 +5082,7 @@
               "bulletID": 42905107,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "BaneChisel_Cocoon_05"
                 },
@@ -5101,7 +5101,7 @@
               "bulletID": 42905107,
               "born": {
                 "$type": "ConfigBornByAttachPoint",
-                "HOPPHMEKHLG": {
+                "direction": {
                   "$type": "DOCDLGLJKND",
                   "attachPointName": "BaneChisel_Cocoon_06"
                 },
