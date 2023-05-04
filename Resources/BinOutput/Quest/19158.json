@@ -1,195 +1,70 @@
 {
   "id": 19158,
-  "ELEPLNPCHAA": 3015,
-  "series": 107401,
   "type": "LQ",
+  "series": 107401,
   "titleTextMapHash": 3709374343,
   "descTextMapHash": 2049534254,
   "luaPath": "Actor/Quest/LQ19158",
-  "suggestTrackMainQuestList": [19159, 19160],
-  "suggestTrackOutOfOrder": true,
+  "suggestTrackMainQuestList": [
+    19159,
+    19160
+  ],
   "chapterId": 107401,
   "subQuests": [
     {
-      "subId": 1915801,
       "mainId": 19158,
+      "subId": 1915801,
       "order": 1,
       "descTextMapHash": 3322055140,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [107401, 191580101]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["4019"],
+        "param": [
+          "4019"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 1915802,
       "mainId": 19158,
+      "subId": 1915802,
       "order": 2,
       "descTextMapHash": 3772869372,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [107401, 191580201]
-        },
-        {
-          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [107401, 191580202]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["12910"],
+        "param": [
+          "12910"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "finishParent": true,
-      "isRewind": true,
-      "finishExec": [
-        {
-          "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": ["133302746", "0"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 1915803,
       "mainId": 19158,
+      "subId": 1915803,
       "order": 3,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [1915803, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "failParentShow": "QUEST_HIDDEN",
-      "finishExec": [
-        {
-          "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
-          "param": ["3", "133302746"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
-    }
-  ],
-  "freeStyleDic": {
-    "12910": [1190]
-  },
-  "dialogList": [
-    {
-      "id": 191580297,
-      "talkRole": {
-        "type": "TALK_ROLE_PLAYER",
-        "id": ""
-      },
-      "talkContentTextMapHash": 2567047754,
-      "talkAssetPath": "",
-      "talkAssetPathAlter": "",
-      "talkAudioName": "",
-      "actionBefore": "",
-      "actionWhile": "",
-      "actionAfter": "",
-      "optionIcon": ""
-    },
-    {
-      "id": 191580298,
-      "talkRole": {
-        "type": "TALK_ROLE_PLAYER",
-        "id": ""
-      },
-      "talkContentTextMapHash": 3964599586,
-      "talkAssetPath": "",
-      "talkAssetPathAlter": "",
-      "talkAudioName": "",
-      "actionBefore": "",
-      "actionWhile": "",
-      "actionAfter": "",
-      "optionIcon": ""
-    },
-    {
-      "id": 191580299,
-      "talkRole": {
-        "type": "TALK_ROLE_PLAYER",
-        "id": ""
-      },
-      "talkContentTextMapHash": 2388606082,
-      "talkAssetPath": "",
-      "talkAssetPathAlter": "",
-      "talkAudioName": "",
-      "actionBefore": "",
-      "actionWhile": "",
-      "actionAfter": "",
-      "optionIcon": ""
-    },
-    {
-      "id": 191589901,
-      "talkRole": {
-        "type": "TALK_ROLE_NPC",
-        "id": "12910"
-      },
-      "talkContentTextMapHash": 3645813954,
-      "talkAssetPath": "",
-      "talkAssetPathAlter": "",
-      "talkAudioName": "",
-      "actionBefore": "",
-      "actionWhile": "",
-      "actionAfter": "",
-      "optionIcon": ""
-    },
-    {
-      "id": 191589902,
-      "talkRole": {
-        "type": "TALK_ROLE_NPC",
-        "id": "12910"
-      },
-      "talkContentTextMapHash": 3897766962,
-      "talkAssetPath": "",
-      "talkAssetPathAlter": "",
-      "talkAudioName": "",
-      "actionBefore": "",
-      "actionWhile": "",
-      "actionAfter": "",
-      "optionIcon": ""
-    },
-    {
-      "id": 191589903,
-      "talkRole": {
-        "type": "TALK_ROLE_NPC",
-        "id": "12910"
-      },
-      "talkContentTextMapHash": 604576674,
-      "talkAssetPath": "",
-      "talkAssetPathAlter": "",
-      "talkAudioName": "",
-      "actionBefore": "",
-      "actionWhile": "",
-      "actionAfter": "",
-      "optionIcon": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ]
 }

@@ -1,13 +1,15 @@
 {
   "id": 19112,
-  "ELEPLNPCHAA": 3008,
-  "series": 105001,
   "type": "LQ",
+  "series": 105001,
   "titleTextMapHash": 3993978479,
   "descTextMapHash": 4050960342,
   "luaPath": "Actor/Quest/LQ19112",
-  "suggestTrackMainQuestList": [19113, 19116, 19119],
-  "suggestTrackOutOfOrder": true,
+  "suggestTrackMainQuestList": [
+    19113,
+    19116,
+    19119
+  ],
   "chapterId": 105001,
   "subQuests": [
     {
@@ -15,35 +17,62 @@
       "mainId": 19112,
       "order": 1,
       "descTextMapHash": 3033621972,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [
+            105001,
+            1911201,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "finishCondComb": "LOGIC_OR",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [105001, 1911301]
+          "param": [
+            105001,
+            1911301
+          ]
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [105001, 1911601]
+          "param": [
+            105001,
+            1911601
+          ]
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [105001, 1911901]
+          "param": [
+            105001,
+            1911901
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["503"],
+        "param": [
+          "503"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "finishParent": true,
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [],
+      "exclusiveNpcPriority": 1100,
+      "exclusivePlaceList": [
+        1911101
+      ]
     }
   ]
 }

@@ -4,27 +4,23 @@
   "titleTextMapHash": 2592864831,
   "descTextMapHash": 4025570054,
   "luaPath": "",
-  "rewardIdList": [554022],
   "showType": "QUEST_HIDDEN",
+  "rewardIdList": [
+    554022
+  ],
   "subQuests": [
     {
-      "subId": 7394001,
       "mainId": 73940,
+      "subId": 7394001,
       "order": 1,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7394001, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "finishParent": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ]
 }

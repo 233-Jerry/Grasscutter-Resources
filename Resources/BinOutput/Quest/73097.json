@@ -1,65 +1,36 @@
 {
   "id": 73097,
   "type": "WQ",
-  "activeMode": "PLAY_MODE_ALL",
   "titleTextMapHash": 2395438479,
+  "descTextMapHash": 2892522006,
   "luaPath": "Actor/Quest/WQ73097",
   "showType": "QUEST_HIDDEN",
   "subQuests": [
     {
-      "subId": 7309701,
       "mainId": 73097,
+      "subId": 7309701,
       "order": 1,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "finishExec": [
-        {
-          "type": "QUEST_EXEC_MODIFY_ARANARA_COLLECTION_STATE",
-          "param": ["1", "8", "1"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7309702,
       "mainId": 73097,
+      "subId": 7309702,
       "order": 2,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133301172, 172002]
-        },
-        {
-          "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133301172, 172001]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "finishParent": true,
-      "isRewind": true,
-      "finishExec": [
-        {
-          "type": "QUEST_EXEC_MODIFY_ARANARA_COLLECTION_STATE",
-          "param": ["1", "8", "3"]
-        },
-        {
-          "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": ["133301172", "1"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ]
 }

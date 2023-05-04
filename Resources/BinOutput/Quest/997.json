@@ -2,6 +2,7 @@
   "id": 997,
   "type": "WQ",
   "titleTextMapHash": 3127375953,
+  "descTextMapHash": 3531642167,
   "luaPath": "Actor/Quest/SQ997",
   "subQuests": [
     {
@@ -9,43 +10,58 @@
       "mainId": 997,
       "order": 1,
       "descTextMapHash": 951560047,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            99902,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [99701, 0]
+          "param": [
+            99701,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
       "finishParent": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ],
   "talks": [
     {
       "id": 99702,
       "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["99701", "2"]
+          "param": [
+            "99701",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 9970201,
-      "npcId": [1587],
+      "npcId": [
+        1587
+      ],
       "performCfg": "",
       "questId": 997,
-      "assetIndex": 8489502081707627933,
       "prePerformCfg": "",
       "lowPriority": true
     }
-  ],
-  "BPKCHMHEIEE": [
-    4543246233805805157, 5909385756826696338, 3958618578976986035,
-    5575916732172504491
   ]
 }

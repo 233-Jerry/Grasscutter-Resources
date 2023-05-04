@@ -1,70 +1,50 @@
 {
   "id": 73091,
   "type": "WQ",
-  "activeMode": "PLAY_MODE_ALL",
   "titleTextMapHash": 3941393895,
+  "descTextMapHash": 4172190726,
   "luaPath": "Actor/Quest/WQ73091",
   "showType": "QUEST_HIDDEN",
   "subQuests": [
     {
-      "subId": 7309101,
       "mainId": 73091,
+      "subId": 7309101,
       "order": 1,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7309102,
       "mainId": 73091,
+      "subId": 7309102,
       "order": 3,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133301166, 166002]
-        },
-        {
-          "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133301166, 166001]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "finishParent": true,
-      "isRewind": true,
-      "finishExec": [
-        {
-          "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": ["133301166", "1"]
-        },
-        {
-          "type": "QUEST_EXEC_MODIFY_ARANARA_COLLECTION_STATE",
-          "param": ["1", "2", "3"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7309103,
       "mainId": 73091,
+      "subId": 7309103,
       "order": 2,
-      "descTextMapHash": 3257043748,
       "showType": "QUEST_HIDDEN",
+      "descTextMapHash": 3257043748,
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ]
 }

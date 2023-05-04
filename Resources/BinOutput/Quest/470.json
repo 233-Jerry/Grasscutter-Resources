@@ -4,8 +4,9 @@
   "titleTextMapHash": 323429985,
   "descTextMapHash": 1791754591,
   "luaPath": "Actor/Quest/IQ470",
-  "rewardIdList": [100470],
-  "showRedPoint": true,
+  "rewardIdList": [
+    100470
+  ],
   "subQuests": [
     {
       "subId": 47001,
@@ -13,18 +14,32 @@
       "order": 1,
       "descTextMapHash": 4108312351,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            35901,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TRIGGER_FIRE",
-          "param": [1106, 0]
+          "param": [
+            1106,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 47002,
@@ -32,43 +47,71 @@
       "order": 2,
       "descTextMapHash": 3120834359,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            47001,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [47001, 0]
+          "param": [
+            47001,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 47003,
       "mainId": 470,
       "order": 3,
       "descTextMapHash": 2654779743,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            47002,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [108002, 0]
+          "param": [
+            108002,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["1419"],
+        "param": [
+          "1419"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 47004,
@@ -76,57 +119,80 @@
       "order": 4,
       "descTextMapHash": 2379400023,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            47003,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [47002, 0]
+          "param": [
+            47002,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
       "finishParent": true,
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ],
   "talks": [
     {
       "id": 47001,
       "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["47002", "2"]
+          "param": [
+            "47002",
+            "2"
+          ]
         }
       ],
       "initDialog": 4700101,
-      "npcId": [1005],
+      "npcId": [
+        1005
+      ],
       "performCfg": "QuestDialogue/WQ/Mengde_470/Q47001",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 470,
-      "assetIndex": 14682099418127160580,
       "prePerformCfg": ""
     },
     {
       "id": 47002,
       "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["47004", "2"]
+          "param": [
+            "47004",
+            "2"
+          ]
         }
       ],
       "initDialog": 4700201,
-      "npcId": [1005],
+      "npcId": [
+        1005
+      ],
       "performCfg": "QuestDialogue/WQ/Mengde_470/Q47002",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 470,
-      "assetIndex": 18351890168784138733,
       "prePerformCfg": ""
     }
-  ],
-  "BPKCHMHEIEE": [14457059026087496718, 15593862223630541672]
+  ]
 }

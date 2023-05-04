@@ -2,6 +2,7 @@
   "id": 71028,
   "type": "WQ",
   "titleTextMapHash": 2583587175,
+  "descTextMapHash": 1548015982,
   "luaPath": "Actor/Quest/WQ71028",
   "chapterId": 10016,
   "subQuests": [
@@ -10,57 +11,89 @@
       "mainId": 71028,
       "order": 1,
       "descTextMapHash": 1687795868,
+      "acceptCondComb": "LOGIC_AND",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            99902,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7102801, 0]
+          "param": [
+            7102801,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["2039"],
+        "param": [
+          "2039"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "finishParent": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [],
+      "exclusiveNpcList": [
+        2039
+      ]
     }
   ],
   "talks": [
     {
       "id": 7102801,
       "beginWay": "TALK_BEGIN_MANUAL",
-      "activeMode": "PLAY_MODE_ALL",
       "beginCondComb": "LOGIC_AND",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7102502", "3"]
+          "param": [
+            "7102502",
+            "3"
+          ]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7102602", "3"]
+          "param": [
+            "7102602",
+            "3"
+          ]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7102702", "3"]
+          "param": [
+            "7102702",
+            "3"
+          ]
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7102801", "2"]
+          "param": [
+            "7102801",
+            "2"
+          ]
         }
       ],
       "priority": 10,
       "initDialog": 710280101,
-      "npcId": [2039],
+      "npcId": [
+        2039
+      ],
       "performCfg": "",
       "questId": 71028,
-      "assetIndex": 2868012761301032531,
       "prePerformCfg": ""
     }
   ]

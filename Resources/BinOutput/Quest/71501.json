@@ -1,87 +1,150 @@
 {
   "id": 71501,
   "type": "WQ",
-  "mainQuestTag": "MAINQUEST_TAG_ACTIVITY",
-  "activeMode": "PLAY_MODE_ALL",
   "titleTextMapHash": 1503959927,
   "descTextMapHash": 3448737662,
   "luaPath": "Actor/Quest/WQ71501",
-  "suggestTrackMainQuestList": [71506],
-  "showRedPoint": true,
-  "activityId": 5079,
+  "suggestTrackMainQuestList": [
+    71506
+  ],
   "subQuests": [
     {
       "subId": 7150101,
       "mainId": 71501,
       "order": 1,
       "descTextMapHash": 78370308,
-      "stepDescTextMapHash": 2158159725,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_ACTIVITY_COND",
+          "param": [
+            5079001,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7150101, 0]
+          "param": [
+            7150101,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["2078"],
+        "param": [
+          "2078"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [],
+      "exclusiveNpcList": [
+        2078
+      ],
+      "exclusiveNpcPriority": 1100
     },
     {
       "subId": 7150102,
       "mainId": 71501,
       "order": 2,
       "descTextMapHash": 1021999060,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            7150101,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7150102, 0]
+          "param": [
+            7150102,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["30181"],
+        "param": [
+          "30181"
+        ],
         "guideScene": 6,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
       },
       "finishParent": true,
       "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": ["166001687", "0"]
+          "param": [
+            "166001687",
+            "0"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "beginExec": [
+        {
+          "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
+          "param": [
+            "6",
+            "166001687"
+          ]
+        }
+      ],
+      "exclusiveNpcList": [
+        30181
+      ],
+      "exclusiveNpcPriority": 1100
     },
     {
       "subId": 7150103,
       "mainId": 71501,
       "order": 3,
       "descTextMapHash": 3379606260,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            99902,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
+          "param": [
+            0,
+            0
+          ],
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -94,39 +157,53 @@
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "finishParent": true,
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 7150104,
       "mainId": 71501,
       "order": 4,
       "descTextMapHash": 979887300,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            99902,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7150104, 0]
+          "param": [
+            7150104,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["30181"],
+        "param": [
+          "30181"
+        ],
         "guideScene": 6,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ],
   "talks": [
@@ -137,16 +214,20 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7150101", "2"]
+          "param": [
+            "7150101",
+            "2"
+          ]
         }
       ],
       "priority": 15,
       "initDialog": 715010101,
-      "npcId": [2078],
+      "npcId": [
+        2078
+      ],
       "performCfg": "QuestDialogue/WQ/TheChasmChallenge/Q7150101",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 71501,
-      "assetIndex": 17209516605400046977,
       "prePerformCfg": ""
     },
     {
@@ -156,16 +237,20 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7150102", "2"]
+          "param": [
+            "7150102",
+            "2"
+          ]
         }
       ],
       "priority": 15,
       "initDialog": 715010201,
-      "npcId": [30181],
+      "npcId": [
+        30181
+      ],
       "performCfg": "QuestDialogue/WQ/TheChasmChallenge/Q7150102",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 71501,
-      "assetIndex": 7751259613178650170,
       "prePerformCfg": ""
     }
   ]

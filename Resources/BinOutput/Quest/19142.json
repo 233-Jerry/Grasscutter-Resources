@@ -1,13 +1,14 @@
 {
   "id": 19142,
-  "ELEPLNPCHAA": 3013,
-  "series": 106501,
   "type": "LQ",
+  "series": 106501,
   "titleTextMapHash": 1827358983,
   "descTextMapHash": 2232979510,
   "luaPath": "Actor/Quest/LQ19142",
-  "suggestTrackMainQuestList": [19145, 19146],
-  "suggestTrackOutOfOrder": true,
+  "suggestTrackMainQuestList": [
+    19145,
+    19146
+  ],
   "chapterId": 106501,
   "subQuests": [
     {
@@ -15,36 +16,73 @@
       "mainId": 19142,
       "order": 1,
       "descTextMapHash": 978862020,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [
+            106501,
+            191410201,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "finishCondComb": "LOGIC_OR",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [106501, 191420101]
+          "param": [
+            106501,
+            191420101
+          ]
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [106501, 191420102]
+          "param": [
+            106501,
+            191420102
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["1034"],
+        "param": [
+          "1034"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
       },
       "finishParent": true,
       "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": ["133221078"]
+          "param": [
+            "133221078"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "beginExec": [
+        {
+          "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
+          "param": [
+            "3",
+            "133221078"
+          ]
+        }
+      ],
+      "exclusiveNpcList": [
+        1049,
+        1034
+      ],
+      "exclusiveNpcPriority": 1100,
+      "exclusivePlaceList": [
+        19014
+      ]
     }
   ]
 }

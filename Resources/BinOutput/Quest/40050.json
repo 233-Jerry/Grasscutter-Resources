@@ -1,270 +1,462 @@
 {
   "id": 40050,
-  "ELEPLNPCHAA": 4010,
-  "series": 10050,
   "type": "EQ",
+  "series": 10050,
   "titleTextMapHash": 1506191319,
   "descTextMapHash": 392356062,
   "luaPath": "Actor/Quest/EQ40050",
-  "suggestTrackMainQuestList": [40051],
-  "rewardIdList": [140050],
-  "forcePreloadLuaList": [4, 5],
-  "HBPBFHKEDLF": 4005006,
+  "suggestTrackMainQuestList": [
+    40051
+  ],
+  "rewardIdList": [
+    140050
+  ],
   "chapterId": 10050,
-  "activityId": 2011,
   "subQuests": [
     {
       "subId": 4005001,
       "mainId": 40050,
       "order": 11,
+      "descTextMapHash": 1874996260,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005009,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "finishCondComb": "LOGIC_AND",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [4005010, 3]
+          "param": [
+            4005010,
+            3
+          ]
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [4005011, 3]
+          "param": [
+            4005011,
+            3
+          ]
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [4005012, 3]
+          "param": [
+            4005012,
+            3
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
+        "param": [],
         "guideScene": 7
       },
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [
+        {
+          "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
+          "param": [
+            "7",
+            "177009002"
+          ]
+        }
+      ]
     },
     {
       "subId": 4005002,
       "mainId": 40050,
       "order": 12,
       "descTextMapHash": 1398123516,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005001,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
+          "param": [
+            0,
+            0
+          ],
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q4005001_operator", "25"],
+        "param": [
+          "Q4005001_operator",
+          "25"
+        ],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [
+        {
+          "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
+          "param": [
+            "7",
+            "177009002"
+          ]
+        }
+      ]
     },
     {
       "subId": 4005003,
       "mainId": 40050,
       "order": 13,
       "descTextMapHash": 3874052828,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005002,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
+          "param": [
+            0,
+            0
+          ],
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q4005001_tower", "0"],
+        "param": [
+          "Q4005001_tower",
+          "0"
+        ],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [
+        {
+          "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
+          "param": [
+            "7",
+            "177009002"
+          ]
+        }
+      ]
     },
     {
       "subId": 4005004,
       "mainId": 40050,
       "order": 2,
+      "descTextMapHash": 655797508,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005005,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
+          "param": [
+            0,
+            0
+          ],
           "count": 1
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [4005002, 3]
+          "param": [
+            4005002,
+            3
+          ]
         }
       ],
-      "guide": {},
-      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "guide": {
+        "param": []
       },
+      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 4005005,
       "mainId": 40050,
       "order": 1,
+      "descTextMapHash": 4136509900,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4004717,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "finishCondComb": "LOGIC_AND",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [4004814, 3]
+          "param": [
+            4004814,
+            3
+          ]
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [4004914, 3]
+          "param": [
+            4004914,
+            3
+          ]
         }
       ],
-      "guide": {},
-      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 4005006,
       "mainId": 40050,
       "order": 3,
       "descTextMapHash": 3981311220,
-      "stepDescTextMapHash": 3839240293,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005005,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [4005006, 0]
+          "param": [
+            4005006,
+            0
+          ]
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_UNLOCK_TRANS_POINT",
-          "param": [7, 17]
+          "param": [
+            7,
+            17
+          ]
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q4005006_guide", "30"],
+        "param": [
+          "Q4005006_guide",
+          "30"
+        ],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "failParentShow": "QUEST_HIDDEN",
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 4005007,
       "mainId": 40050,
       "order": 4,
       "descTextMapHash": 2955105612,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005006,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [4005007, 0]
+          "param": [
+            4005007,
+            0
+          ]
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_UNLOCK_TRANS_POINT",
-          "param": [7, 17]
+          "param": [
+            7,
+            17
+          ]
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q4005007_guide", "0"],
+        "param": [
+          "Q4005007_guide",
+          "0"
+        ],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "failParentShow": "QUEST_HIDDEN",
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 4005008,
       "mainId": 40050,
       "order": 6,
       "descTextMapHash": 2487299356,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005013,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [4005008, 0]
+          "param": [
+            4005008,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q4005008_guide", "30"],
+        "param": [
+          "Q4005008_guide",
+          "30"
+        ],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 4005009,
       "mainId": 40050,
       "order": 7,
       "descTextMapHash": 425726460,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005008,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [4005009, 0]
+          "param": [
+            4005009,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q4005009_guide", "0"],
+        "param": [
+          "Q4005009_guide",
+          "0"
+        ],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 4005010,
@@ -272,26 +464,42 @@
       "order": 8,
       "subIdSet": 1,
       "descTextMapHash": 4097916932,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005009,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
+          "param": [
+            0,
+            0
+          ],
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q4005010_guide"],
+        "param": [
+          "Q4005010_guide"
+        ],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 4005011,
@@ -299,26 +507,42 @@
       "order": 9,
       "subIdSet": 1,
       "descTextMapHash": 473776284,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005009,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
+          "param": [
+            0,
+            0
+          ],
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q4005011_guide"],
+        "param": [
+          "Q4005011_guide"
+        ],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 4005012,
@@ -326,104 +550,206 @@
       "order": 10,
       "subIdSet": 1,
       "descTextMapHash": 1252888948,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005009,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
+          "param": [
+            0,
+            0
+          ],
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q4005012_guide"],
+        "param": [
+          "Q4005012_guide"
+        ],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 4005013,
       "mainId": 40050,
       "order": 5,
       "descTextMapHash": 972289988,
+      "acceptCondComb": "LOGIC_A_AND_ETCOR",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005005,
+            3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005006,
+            4,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005007,
+            4,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005007,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [4005013, 0]
+          "param": [
+            4005013,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q4005001_tower", "50"],
+        "param": [
+          "Q4005001_tower",
+          "50"
+        ],
         "guideScene": 7,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 4005014,
       "mainId": 40050,
       "order": 14,
+      "descTextMapHash": 2491744740,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            4005005,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "finishCondComb": "LOGIC_OR",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
+          "param": [
+            0,
+            0
+          ],
           "count": 1
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [4005003, 3]
+          "param": [
+            4005003,
+            3
+          ]
         }
       ],
-      "guide": {},
-      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
+      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
       "finishParent": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": ["3370", "1"]
+          "param": [
+            "3370",
+            "1"
+          ]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": ["3373", "1"]
+          "param": [
+            "3373",
+            "1"
+          ]
         },
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": ["4004701", "3"]
+          "param": [
+            "4004701",
+            "3"
+          ]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": ["3375", "1"]
+          "param": [
+            "3375",
+            "1"
+          ]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": ["3475", "1"]
+          "param": [
+            "3475",
+            "1"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "beginExec": [
+        {
+          "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
+          "param": [
+            "7",
+            "177009002"
+          ]
+        }
+      ]
     }
-  ],
-  "BPKCHMHEIEE": [
-    6355654722763495566, 6091274443918266612, 3471329939823543833,
-    1358398887498156303, 2951764788163255878, 18346236195836563733
-  ],
-  "MLPLKFJDMIK": [10855667243264045935]
+  ]
 }

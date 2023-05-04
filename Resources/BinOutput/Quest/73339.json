@@ -1,32 +1,27 @@
 {
   "id": 73339,
   "type": "WQ",
-  "mainQuestTag": "MAINQUEST_TAG_RANK_ZERO_WQ",
-  "activeMode": "PLAY_MODE_ALL",
   "titleTextMapHash": 2645061439,
+  "descTextMapHash": 3949549190,
   "luaPath": "Actor/Quest/WQ73339",
-  "rewardIdList": [173339],
   "showType": "QUEST_HIDDEN",
+  "rewardIdList": [
+    173339
+  ],
   "subQuests": [
     {
-      "subId": 7333901,
       "mainId": 73339,
+      "subId": 7333901,
       "order": 1,
-      "descTextMapHash": 475201468,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [0, 0]
-        }
-      ],
+      "descTextMapHash": 475201468,
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "finishParent": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ]
 }

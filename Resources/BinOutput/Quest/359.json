@@ -1,6 +1,5 @@
 {
   "id": 359,
-  "ELEPLNPCHAA": 1001,
   "series": 1001,
   "titleTextMapHash": 370503217,
   "descTextMapHash": 2541774063,
@@ -13,33 +12,64 @@
       "order": 1,
       "descTextMapHash": 1736465287,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            35725,
+            3,
+            0
+          ]
+        }
+      ],
+      "finishCondComb": "LOGIC_OR",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [35901, 0]
+          "param": [
+            35901,
+            0
+          ]
         },
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [359011, 0]
+          "param": [
+            359011,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
       "finishParent": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": ["3", "0"]
+          "param": [
+            "3",
+            "0"
+          ]
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": ["1", "0"]
+          "param": [
+            "1",
+            "0"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "beginExec": [
+        {
+          "type": "QUEST_EXEC_SET_WEATHER_GADGET",
+          "param": [
+            "3",
+            "1"
+          ]
+        }
+      ]
     },
     {
       "subId": 35902,
@@ -47,18 +77,32 @@
       "order": 2,
       "descTextMapHash": 206764287,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            35802,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [359021, 0]
+          "param": [
+            359021,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 35903,
@@ -66,18 +110,32 @@
       "order": 3,
       "descTextMapHash": 4126557215,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            35802,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [359031, 0]
+          "param": [
+            359031,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 35904,
@@ -85,19 +143,32 @@
       "order": 4,
       "descTextMapHash": 969515567,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            35802,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [359041, 0]
+          "param": [
+            359041,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
-  ],
-  "BPKCHMHEIEE": [10841700135441927722]
+  ]
 }

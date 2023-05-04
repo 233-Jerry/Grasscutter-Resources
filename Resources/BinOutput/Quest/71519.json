@@ -1,32 +1,23 @@
 {
   "id": 71519,
   "type": "WQ",
-  "activeMode": "PLAY_MODE_ALL",
+  "titleTextMapHash": 2542473183,
   "descTextMapHash": 1721481534,
   "luaPath": "Actor/Quest/WQ71519",
   "showType": "QUEST_HIDDEN",
-  "activityId": 2019,
   "subQuests": [
     {
-      "subId": 7151901,
       "mainId": 71519,
+      "subId": 7151901,
       "order": 1,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [7151901, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
-  ],
-  "BPKCHMHEIEE": [8618648996813652395],
-  "MLPLKFJDMIK": [15127933422858312717]
+  ]
 }

@@ -1,101 +1,73 @@
 {
   "id": 21035,
   "type": "IQ",
-  "activeMode": "PLAY_MODE_ALL",
   "titleTextMapHash": 181844303,
   "descTextMapHash": 1852424094,
   "luaPath": "Actor/Quest/IQ21035",
-  "repeatable": true,
-  "taskID": 41360,
   "subQuests": [
     {
-      "subId": 2103501,
       "mainId": 21035,
+      "subId": 2103501,
       "order": 1,
       "descTextMapHash": 2306805820,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [2103501, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["2400"],
+        "param": [
+          "2400"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 2103502,
       "mainId": 21035,
+      "subId": 2103502,
       "order": 2,
       "descTextMapHash": 950960540,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
-          "count": 1
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": ["Q2103503", "30"],
+        "param": [
+          "Q2103503",
+          "30"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "finishExec": [
-        {
-          "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": ["133106034", "1"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 2103503,
       "mainId": 21035,
+      "subId": 2103503,
       "order": 3,
       "descTextMapHash": 2882307276,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [2103502, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["2400"],
+        "param": [
+          "2400"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "finishParent": true,
-      "isRewind": true,
-      "finishExec": [
-        {
-          "type": "QUEST_EXEC_NOTIFY_DAILY_TASK",
-          "param": ["41360"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ],
   "talks": [
@@ -106,18 +78,21 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["2103501", "2"]
+          "param": [
+            "2103501",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 210350101,
-      "npcId": [2400],
+      "npcId": [
+        2400
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 21035,
-      "assetIndex": 16591399544421581758,
-      "prePerformCfg": "",
-      "ONJHDOMNFOJ": [1160, 1120, 1050, 9000, 1150, 1130]
+      "prePerformCfg": ""
     },
     {
       "id": 2103502,
@@ -126,20 +101,21 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["2103503", "2"]
+          "param": [
+            "2103503",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 210350201,
-      "npcId": [2400],
+      "npcId": [
+        2400
+      ],
       "performCfg": "QuestDialogue/Q2103502",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 21035,
-      "assetIndex": 1290009897759825138,
-      "prePerformCfg": "",
-      "ONJHDOMNFOJ": [1160, 1030]
+      "prePerformCfg": ""
     }
-  ],
-  "BPKCHMHEIEE": [14426563994341999587, 8226311655779216643],
-  "MLPLKFJDMIK": [16941879030323550490]
+  ]
 }

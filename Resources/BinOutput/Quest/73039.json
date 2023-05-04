@@ -1,313 +1,236 @@
 {
   "id": 73039,
-  "series": 73032,
   "type": "WQ",
-  "activeMode": "PLAY_MODE_ALL",
+  "series": 73032,
   "titleTextMapHash": 778091839,
   "descTextMapHash": 3449150006,
   "luaPath": "Actor/Quest/WQ73039",
-  "rewardIdList": [173039],
+  "rewardIdList": [
+    173039
+  ],
   "chapterId": 10076,
   "subQuests": [
     {
-      "subId": 7303901,
       "mainId": 73039,
+      "subId": 7303901,
       "order": 1,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7303906, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
+      "mainId": 73039,
       "subId": 7303902,
-      "mainId": 73039,
       "order": 10,
-      "subIdSet": 1,
       "descTextMapHash": 2685660716,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7303903, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["20653"],
+        "param": [
+          "20653"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
+      "mainId": 73039,
       "subId": 7303903,
-      "mainId": 73039,
       "order": 40,
-      "subIdSet": 1,
       "descTextMapHash": 4239321364,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7303904, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["20652"],
+        "param": [
+          "20652"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
+      "mainId": 73039,
       "subId": 7303904,
-      "mainId": 73039,
       "order": 30,
-      "subIdSet": 1,
       "descTextMapHash": 3368147252,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7303908, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["20650"],
+        "param": [
+          "20650"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
+      "mainId": 73039,
       "subId": 7303905,
-      "mainId": 73039,
       "order": 20,
-      "subIdSet": 1,
       "descTextMapHash": 3081753044,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7303907, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["20651"],
+        "param": [
+          "20651"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7303906,
       "mainId": 73039,
+      "subId": 7303906,
       "order": 50,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7303910, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7303907,
       "mainId": 73039,
+      "subId": 7303907,
       "order": 60,
       "descTextMapHash": 3707042844,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_FINISH_ITEM_GIVING",
-          "param": [7303907, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["20649"],
+        "param": [
+          "20649"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
+      "mainId": 73039,
       "subId": 7303908,
-      "mainId": 73039,
       "order": 70,
-      "descTextMapHash": 1247350044,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7303912, 0]
-        }
-      ],
+      "descTextMapHash": 1247350044,
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "finishParent": true,
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7303909,
       "mainId": 73039,
+      "subId": 7303909,
       "order": 41,
       "descTextMapHash": 229340412,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_GADGET_STATE_CHANGE",
-          "param": [133301700, 700001]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["Q7303909_guide", "20"],
+        "param": [
+          "Q7303909_guide",
+          "20"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7303910,
       "mainId": 73039,
+      "subId": 7303910,
       "order": 42,
       "descTextMapHash": 2278103180,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7303905, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["20652"],
+        "param": [
+          "20652"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "finishExec": [
-        {
-          "type": "QUEST_EXEC_DEL_PACK_ITEM",
-          "param": ["101944", "1"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7303911,
       "mainId": 73039,
+      "subId": 7303911,
       "order": 31,
       "descTextMapHash": 4274887092,
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7303909, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": ["20812"],
+        "param": [
+          "20812"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7303912,
       "mainId": 73039,
+      "subId": 7303912,
       "order": 48,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [7303902, 3]
-        },
-        {
-          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [7303905, 3]
-        },
-        {
-          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [7303910, 3]
-        },
-        {
-          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [7303911, 3]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ],
   "talks": [
@@ -319,27 +242,42 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303901", "2"]
+          "param": [
+            "7303901",
+            "2"
+          ]
         },
         {
           "type": "QUEST_COND_QUEST_VAR_EQUAL",
-          "param": ["0", "0", "73039"]
+          "param": [
+            "0",
+            "0",
+            "73039"
+          ]
         }
       ],
       "priority": 5,
-      "nextTalks": [7303906, 7303913],
+      "nextTalks": [
+        7303906,
+        7303913
+      ],
       "initDialog": 730390101,
-      "npcId": [20649],
+      "npcId": [
+        20649
+      ],
       "performCfg": "QuestDialogue/WQ/Sumeru_73039/Q7303901",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 17573389032897599936,
       "prePerformCfg": "",
       "talkMarkType": "TALK_MARK_COMMON",
       "finishExec": [
         {
           "type": "TALK_EXEC_SET_QUEST_VAR",
-          "param": ["0", "1", "73039"]
+          "param": [
+            "0",
+            "1",
+            "73039"
+          ]
         }
       ]
     },
@@ -351,21 +289,32 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303901", "2"]
+          "param": [
+            "7303901",
+            "2"
+          ]
         },
         {
           "type": "QUEST_COND_QUEST_VAR_EQUAL",
-          "param": ["0", "1", "73039"]
+          "param": [
+            "0",
+            "1",
+            "73039"
+          ]
         }
       ],
       "priority": 5,
-      "nextTalks": [7303906, 7303913],
+      "nextTalks": [
+        7303906,
+        7303913
+      ],
       "initDialog": 730390201,
-      "npcId": [20649],
+      "npcId": [
+        20649
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 11010246981091006072,
       "prePerformCfg": "",
       "talkMarkType": "TALK_MARK_COMMON"
     },
@@ -376,16 +325,21 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303902", "2"]
+          "param": [
+            "7303902",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 730390301,
-      "npcId": [20653, 1005],
+      "npcId": [
+        20653,
+        1005
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 13110278114235362799,
       "prePerformCfg": ""
     },
     {
@@ -395,16 +349,21 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303903", "2"]
+          "param": [
+            "7303903",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 730390401,
-      "npcId": [20652, 1005],
+      "npcId": [
+        20652,
+        1005
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 569321799244911094,
       "prePerformCfg": ""
     },
     {
@@ -415,16 +374,21 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303910", "2"]
+          "param": [
+            "7303910",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 730390501,
-      "npcId": [1005, 20652],
+      "npcId": [
+        1005,
+        20652
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 12876665978847204539,
       "prePerformCfg": ""
     },
     {
@@ -434,16 +398,20 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303901", "2"]
+          "param": [
+            "7303901",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 730390601,
-      "npcId": [20649],
+      "npcId": [
+        20649
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 17557186391179138390,
       "prePerformCfg": ""
     },
     {
@@ -453,16 +421,21 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303905", "2"]
+          "param": [
+            "7303905",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 730390701,
-      "npcId": [20651, 1005],
+      "npcId": [
+        20651,
+        1005
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 1094831733179881122,
       "prePerformCfg": ""
     },
     {
@@ -472,16 +445,21 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303904", "2"]
+          "param": [
+            "7303904",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 730390801,
-      "npcId": [20650, 1005],
+      "npcId": [
+        20650,
+        1005
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 14984340175691011697,
       "prePerformCfg": ""
     },
     {
@@ -491,16 +469,20 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303911", "2"]
+          "param": [
+            "7303911",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 730390901,
-      "npcId": [20812],
+      "npcId": [
+        20812
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 774790817523571265,
       "prePerformCfg": ""
     },
     {
@@ -510,16 +492,20 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303906", "2"]
+          "param": [
+            "7303906",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 730391001,
-      "npcId": [1005],
+      "npcId": [
+        1005
+      ],
       "performCfg": "QuestDialogue/WQ/Sumeru_73039/Q7303910",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 7685286288706747784,
       "prePerformCfg": ""
     },
     {
@@ -530,20 +516,27 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303907", "2"]
+          "param": [
+            "7303907",
+            "2"
+          ]
         },
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
-          "param": ["7303907"]
+          "param": [
+            "7303907"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 730391101,
-      "npcId": [1005, 20649],
+      "npcId": [
+        1005,
+        20649
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 12924681869292677022,
       "prePerformCfg": ""
     },
     {
@@ -553,16 +546,25 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303908", "2"]
+          "param": [
+            "7303908",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 730391224,
-      "npcId": [1005, 20649, 20650, 20651, 20652, 20653],
+      "npcId": [
+        1005,
+        20649,
+        20650,
+        20651,
+        20652,
+        20653
+      ],
       "performCfg": "QuestDialogue/WQ/Sumeru_73039/Q7303912",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 6282535710885735144,
       "prePerformCfg": ""
     },
     {
@@ -572,18 +574,21 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7303901", "2"]
+          "param": [
+            "7303901",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 730391301,
-      "npcId": [20649],
+      "npcId": [
+        20649
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73039,
-      "assetIndex": 14127310982190697972,
       "prePerformCfg": ""
     }
-  ],
-  "BPKCHMHEIEE": [14457059026087496718]
+  ]
 }

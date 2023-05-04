@@ -4,7 +4,9 @@
   "titleTextMapHash": 4219098703,
   "descTextMapHash": 588893406,
   "luaPath": "Actor/Quest/WQ72213",
-  "rewardIdList": [172213],
+  "rewardIdList": [
+    172213
+  ],
   "subQuests": [
     {
       "subId": 7221301,
@@ -12,18 +14,47 @@
       "order": 1,
       "descTextMapHash": 1863982188,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_TIME_VAR_PASS_DAY",
+          "param": [
+            72212,
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7221301, 0]
+          "param": [
+            7221301,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [
+        {
+          "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
+          "param": [
+            "3",
+            "133217134,1"
+          ]
+        }
+      ],
+      "exclusiveNpcList": [
+        3189,
+        3182
+      ],
+      "exclusiveNpcPriority": 1100
     },
     {
       "subId": 7221302,
@@ -31,23 +62,44 @@
       "order": 2,
       "isMpBlock": true,
       "descTextMapHash": 2897007652,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            7221301,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7221303, 0]
+          "param": [
+            7221303,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["3182"],
+        "param": [
+          "3182"
+        ],
         "guideScene": 3
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [],
+      "exclusiveNpcList": [
+        3189,
+        3182
+      ],
+      "exclusiveNpcPriority": 1100
     },
     {
       "subId": 7221303,
@@ -55,23 +107,51 @@
       "order": 3,
       "isMpBlock": true,
       "descTextMapHash": 3176249196,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            7221302,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_ITEM_GIVING",
-          "param": [7221303, 0]
+          "param": [
+            7221303,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["3182"],
+        "param": [
+          "3182"
+        ],
         "guideScene": 3
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [
+        {
+          "type": "QUEST_EXEC_ACTIVE_ITEM_GIVING",
+          "param": [
+            "7221303"
+          ]
+        }
+      ],
+      "exclusiveNpcList": [
+        3189,
+        3182
+      ],
+      "exclusiveNpcPriority": 1100
     },
     {
       "subId": 7221304,
@@ -79,30 +159,52 @@
       "order": 5,
       "isMpBlock": true,
       "descTextMapHash": 1140713836,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            7221305,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7221306, 0]
+          "param": [
+            7221306,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["3189"],
+        "param": [
+          "3189"
+        ],
         "guideScene": 3
-      },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
       },
       "finishParent": true,
       "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_INIT_TIME_VAR",
-          "param": ["1"]
+          "param": [
+            "1"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "beginExec": [],
+      "exclusiveNpcList": [
+        3189,
+        3182
+      ],
+      "exclusiveNpcPriority": 1100
     },
     {
       "subId": 7221305,
@@ -110,139 +212,205 @@
       "order": 4,
       "isMpBlock": true,
       "descTextMapHash": 740367388,
+      "acceptCondComb": "LOGIC_AND",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            7221303,
+            3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "QUEST_COND_ITEM_GIVING_FINISHED",
+          "param": [
+            7221303,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7221305, 0]
+          "param": [
+            7221305,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["3182"],
+        "param": [
+          "3182"
+        ],
         "guideScene": 3
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [],
+      "exclusiveNpcList": [
+        3189,
+        3182
+      ],
+      "exclusiveNpcPriority": 1100
     }
   ],
   "talks": [
     {
       "id": 7221301,
       "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7221301", "2"]
+          "param": [
+            "7221301",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 722130101,
-      "npcId": [3189, 1005],
+      "npcId": [
+        3189,
+        1005
+      ],
       "performCfg": "QuestDialogue/WQ/Inazuma_72213/Q7221301",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72213,
-      "assetIndex": 18354979555488298099,
       "prePerformCfg": "",
       "talkMarkType": "TALK_MARK_COMMON"
     },
     {
       "id": 7221302,
       "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7221301", "3"]
+          "param": [
+            "7221301",
+            "3"
+          ]
         }
       ],
       "priority": 1,
       "initDialog": 722130201,
-      "npcId": [3189],
+      "npcId": [
+        3189
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72213,
-      "assetIndex": 6894610850934511864,
       "prePerformCfg": "",
       "questIdleTalk": true
     },
     {
       "id": 7221303,
       "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7221302", "2"]
+          "param": [
+            "7221302",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 722130301,
-      "npcId": [3182],
+      "npcId": [
+        3182
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72213,
-      "assetIndex": 16980460322692524476,
       "prePerformCfg": ""
     },
     {
       "id": 7221304,
       "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCondComb": "LOGIC_AND",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7221303", "2"]
+          "param": [
+            "7221303",
+            "2"
+          ]
         },
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
-          "param": ["7221303"]
+          "param": [
+            "7221303"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 722130401,
-      "npcId": [3182],
+      "npcId": [
+        3182
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72213,
-      "assetIndex": 14560413221655543528,
       "prePerformCfg": ""
     },
     {
       "id": 7221305,
       "beginWay": "TALK_BEGIN_AUTO",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7221305", "2"]
+          "param": [
+            "7221305",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 722130501,
-      "npcId": [3182],
+      "npcId": [
+        3182
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72213,
-      "assetIndex": 15668329550581531970,
       "prePerformCfg": ""
     },
     {
       "id": 7221306,
       "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7221304", "2"]
+          "param": [
+            "7221304",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 722130601,
-      "npcId": [3189, 1005],
+      "npcId": [
+        3189,
+        1005
+      ],
       "performCfg": "QuestDialogue/WQ/Inazuma_72213/Q7221306",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72213,
-      "assetIndex": 10296842673607732113,
       "prePerformCfg": ""
     }
   ]

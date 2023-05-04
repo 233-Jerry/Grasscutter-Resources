@@ -10,42 +10,61 @@
       "subId": 7266601,
       "mainId": 72666,
       "order": 1,
+      "descTextMapHash": 2749811932,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            99902,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7266601, 0]
+          "param": [
+            7266601,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
       "finishParent": true,
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ],
   "talks": [
     {
       "id": 7266601,
       "beginWay": "TALK_BEGIN_MANUAL",
-      "activeMode": "PLAY_MODE_ALL",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7266601", "2"]
+          "param": [
+            "7266601",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 726660101,
-      "npcId": [30066],
+      "npcId": [
+        30066
+      ],
       "performCfg": "",
       "questId": 72666,
-      "assetIndex": 17034843920437862693,
-      "prePerformCfg": "",
-      "ONJHDOMNFOJ": [1130]
+      "prePerformCfg": ""
     }
   ]
 }

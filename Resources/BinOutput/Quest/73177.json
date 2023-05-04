@@ -1,103 +1,76 @@
 {
   "id": 73177,
   "type": "WQ",
-  "activeMode": "PLAY_MODE_ALL",
   "titleTextMapHash": 3053402199,
+  "descTextMapHash": 1774602350,
   "luaPath": "Actor/Quest/WQ73177",
-  "rewardIdList": [210008],
   "showType": "QUEST_HIDDEN",
+  "rewardIdList": [
+    210008
+  ],
   "subQuests": [
     {
-      "subId": 7317701,
       "mainId": 73177,
+      "subId": 7317701,
       "order": 1,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [0, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7317702,
       "mainId": 73177,
+      "subId": 7317702,
       "order": 2,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
-          "count": 1
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7317703,
       "mainId": 73177,
+      "subId": 7317703,
       "order": 3,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7317701, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "finishParent": true,
-      "isRewind": true,
-      "finishExec": [
-        {
-          "type": "QUEST_EXEC_INC_QUEST_GLOBAL_VAR",
-          "param": ["73100", "1"]
-        },
-        {
-          "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": ["3", "133304269,3"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ],
   "talks": [
     {
       "id": 7317701,
       "beginWay": "TALK_BEGIN_MANUAL",
-      "activeMode": "PLAY_MODE_ALL",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7317702", "3"]
+          "param": [
+            "7317702",
+            "3"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 731770101,
-      "npcId": [20804],
+      "npcId": [
+        20804
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73177,
-      "assetIndex": 973809774459874869,
       "prePerformCfg": ""
     }
-  ],
-  "freeStyleDic": {
-    "20804": [1090, 1080]
-  }
+  ]
 }

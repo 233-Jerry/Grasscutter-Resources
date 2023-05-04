@@ -1,12 +1,17 @@
 {
   "id": 381,
-  "ELEPLNPCHAA": 1002,
   "series": 1002,
   "titleTextMapHash": 396979777,
   "descTextMapHash": 3173561207,
   "luaPath": "Actor/Quest/MQ381",
-  "suggestTrackMainQuestList": [380, 382, 383],
-  "rewardIdList": [100381],
+  "suggestTrackMainQuestList": [
+    380,
+    382,
+    383
+  ],
+  "rewardIdList": [
+    100381
+  ],
   "chapterId": 1002,
   "subQuests": [
     {
@@ -14,29 +19,45 @@
       "mainId": 381,
       "order": 1,
       "descTextMapHash": 3708220407,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            37904,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [38101, 0]
+          "param": [
+            38101,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": ["Q381DragonTill"],
+        "param": [
+          "Q381DragonTill"
+        ],
         "guideScene": 3
-      },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
       },
       "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_DEL_PACK_ITEM",
-          "param": ["100160", "1"]
+          "param": [
+            "100160",
+            "1"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 38102,
@@ -44,23 +65,37 @@
       "order": 2,
       "isMpBlock": true,
       "descTextMapHash": 1668763823,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            38101,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_DUNGEON",
-          "param": [10, 40]
+          "param": [
+            10,
+            40
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": ["Q381DragonTill"],
+        "param": [
+          "Q381DragonTill"
+        ],
         "guideScene": 3
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 38103,
@@ -68,36 +103,52 @@
       "order": 3,
       "isMpBlock": true,
       "descTextMapHash": 872511127,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            38102,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
+          "param": [
+            0,
+            0
+          ],
           "count": 1
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_FAIL_DUNGEON",
-          "param": [10, 0]
+          "param": [
+            10
+          ]
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": ["DUMMY_POS 1006001"],
+        "param": [
+          "DUMMY_POS 1006001"
+        ],
         "guideScene": 1006
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
+      "finishExec": [],
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": ["38101"]
+          "param": [
+            "38101"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "beginExec": []
     },
     {
       "subId": 38104,
@@ -105,35 +156,51 @@
       "order": 4,
       "isMpBlock": true,
       "descTextMapHash": 1579327743,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            38103,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [100160, 0]
+          "param": [
+            100160,
+            0
+          ]
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_FAIL_DUNGEON",
-          "param": [10, 0]
+          "param": [
+            10
+          ]
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": ["DUMMY_POS 1006002"],
+        "param": [
+          "DUMMY_POS 1006002"
+        ],
         "guideScene": 1006
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
+      "finishExec": [],
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": ["38101"]
+          "param": [
+            "38101"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "beginExec": []
     },
     {
       "subId": 38105,
@@ -142,56 +209,72 @@
       "isMpBlock": true,
       "descTextMapHash": 1671128983,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            38104,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [38105, 0]
+          "param": [
+            38105,
+            0
+          ]
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_FAIL_DUNGEON",
-          "param": [10, 0]
+          "param": [
+            10
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "guide": {
+        "param": []
       },
       "finishParent": true,
       "isRewind": true,
+      "finishExec": [],
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": ["38101"]
+          "param": [
+            "38101"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "beginExec": []
     }
   ],
   "talks": [
     {
       "id": 38105,
       "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["38105", "2"]
+          "param": [
+            "38105",
+            "2"
+          ]
         }
       ],
       "initDialog": 3800113,
-      "npcId": [1006],
+      "npcId": [
+        1006
+      ],
       "performCfg": "QuestDialogue/AQ/Mengde2_380/Q38001",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 381,
-      "assetIndex": 12466108296174345880,
       "prePerformCfg": ""
     }
-  ],
-  "BPKCHMHEIEE": [
-    2268650960672206304, 4543246233805805157, 14457059026087496718,
-    17028623682981322213
-  ],
-  "MLPLKFJDMIK": [17042234015582680799]
+  ]
 }

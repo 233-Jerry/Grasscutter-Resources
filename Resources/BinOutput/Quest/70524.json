@@ -1,31 +1,23 @@
 {
   "id": 70524,
   "type": "WQ",
-  "mainQuestTag": "MAINQUEST_TAG_GUIDE",
-  "activeMode": "PLAY_MODE_ALL",
+  "titleTextMapHash": 168041327,
+  "descTextMapHash": 2588117662,
   "luaPath": "Actor/Quest/WQ70524",
   "showType": "QUEST_HIDDEN",
   "subQuests": [
     {
-      "subId": 7052401,
       "mainId": 70524,
+      "subId": 7052401,
       "order": 1,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [7066518, 3]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "finishParent": true,
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ],
   "talks": [
@@ -36,23 +28,22 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7052401", "2"]
+          "param": [
+            "7052401",
+            "2"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 705240101,
-      "npcId": [10011, 1019],
+      "npcId": [
+        10011,
+        1019
+      ],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 70524,
-      "assetIndex": 8958236776688369154,
       "prePerformCfg": ""
     }
-  ],
-  "BPKCHMHEIEE": [16884370460767590672],
-  "MLPLKFJDMIK": [13145413501705122695],
-  "freeStyleDic": {
-    "1019": [0],
-    "10011": [0]
-  }
+  ]
 }

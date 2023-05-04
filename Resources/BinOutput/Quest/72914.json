@@ -4,31 +4,65 @@
   "titleTextMapHash": 1718208263,
   "descTextMapHash": 3855397630,
   "luaPath": "",
-  "rewardIdList": [553016],
   "showType": "QUEST_HIDDEN",
+  "rewardIdList": [
+    553016
+  ],
   "subQuests": [
     {
       "subId": 7291401,
       "mainId": 72914,
       "order": 1,
+      "descTextMapHash": 2921914052,
       "showType": "QUEST_HIDDEN",
+      "acceptCondComb": "LOGIC_OR",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_COMPLETE_TALK",
+          "param": [
+            7291401,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "QUEST_COND_COMPLETE_TALK",
+          "param": [
+            7291402,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "finishCondComb": "LOGIC_OR",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7291401, 0]
+          "param": [
+            7291401,
+            0
+          ]
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7291402, 0]
+          "param": [
+            7291402,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
       "finishParent": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ]
 }

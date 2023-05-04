@@ -1,6 +1,5 @@
 {
   "id": 10300,
-  "ELEPLNPCHAA": 8001,
   "type": "LQ",
   "titleTextMapHash": 155753841,
   "descTextMapHash": 1527451415,
@@ -12,12 +11,24 @@
       "order": 1,
       "descTextMapHash": 2721966990,
       "showType": "QUEST_HIDDEN",
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            99902,
+            3,
+            0
+          ]
+        }
+      ],
+      "finishCond": [],
+      "failCond": [],
+      "guide": {
+        "param": []
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 1030002,
@@ -25,18 +36,32 @@
       "order": 1,
       "descTextMapHash": 685786918,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            99902,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [1030002, 0]
+          "param": [
+            1030002,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ]
 }

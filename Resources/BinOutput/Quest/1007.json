@@ -1,6 +1,5 @@
 {
   "id": 1007,
-  "ELEPLNPCHAA": 1004,
   "titleTextMapHash": 357068217,
   "descTextMapHash": 61298735,
   "luaPath": "Actor/Quest/MQ1007",
@@ -12,23 +11,40 @@
       "order": 1,
       "descTextMapHash": 1428311174,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            100012,
+            3,
+            0
+          ]
+        }
+      ],
+      "finishCondComb": "LOGIC_OR",
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [100701, 0]
+          "param": [
+            100701,
+            0
+          ]
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [100702, 0]
+          "param": [
+            100702
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 100702,
@@ -36,25 +52,40 @@
       "order": 2,
       "descTextMapHash": 4113829358,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            100701,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [100702, 0]
+          "param": [
+            100702,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
       "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": ["100701"]
+          "param": [
+            "100701"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 100703,
@@ -62,55 +93,79 @@
       "order": 3,
       "descTextMapHash": 498328678,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            101801,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [100703, 0]
+          "param": [
+            100703,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
       "finishParent": true,
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ],
   "talks": [
     {
       "id": 100701,
       "beginWay": "TALK_BEGIN_AUTO",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["100701", "2"]
+          "param": [
+            "100701",
+            "2"
+          ]
         }
       ],
       "priority": 6,
       "initDialog": 10010111,
-      "npcId": [2003013],
+      "npcId": [
+        2003013
+      ],
       "performCfg": "",
       "questId": 1007,
-      "assetIndex": 4815238768536676376,
       "prePerformCfg": ""
     },
     {
       "id": 100702,
       "beginWay": "TALK_BEGIN_AUTO",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["100701", "2"]
+          "param": [
+            "100701",
+            "2"
+          ]
         }
       ],
       "priority": 6,
       "initDialog": 10010121,
-      "npcId": [2003014],
+      "npcId": [
+        2003014
+      ],
       "performCfg": "",
       "questId": 1007,
-      "assetIndex": 6137468174074068501,
       "prePerformCfg": ""
     }
   ]

@@ -1,7 +1,6 @@
 {
   "id": 72258,
   "type": "WQ",
-  "activeMode": "PLAY_MODE_ALL",
   "titleTextMapHash": 332789015,
   "descTextMapHash": 4039576118,
   "luaPath": "Actor/Quest/WQ72258",
@@ -11,27 +10,53 @@
       "subId": 7225801,
       "mainId": 72258,
       "order": 1,
+      "descTextMapHash": 3793874348,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            7224401,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_ITEM_GIVING",
-          "param": [7224407, 0]
+          "param": [
+            7224407,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
       "finishParent": true,
       "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": ["5", "155006046"]
+          "param": [
+            "5",
+            "155006046"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "beginExec": [
+        {
+          "type": "QUEST_EXEC_ACTIVE_ITEM_GIVING",
+          "param": [
+            "7224407"
+          ]
+        }
+      ]
     }
   ],
   "talks": [
@@ -43,19 +68,25 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["7225801", "2"]
+          "param": [
+            "7225801",
+            "2"
+          ]
         },
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
-          "param": ["7224407"]
+          "param": [
+            "7224407"
+          ]
         }
       ],
       "priority": 5,
       "initDialog": 722580101,
-      "npcId": [20503],
+      "npcId": [
+        20503
+      ],
       "performCfg": "",
       "questId": 72258,
-      "assetIndex": 8321464585774439555,
       "prePerformCfg": ""
     }
   ]

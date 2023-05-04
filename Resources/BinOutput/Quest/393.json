@@ -1,12 +1,15 @@
 {
   "id": 393,
-  "ELEPLNPCHAA": 1003,
   "series": 1003,
   "titleTextMapHash": 1520658585,
   "descTextMapHash": 3601198255,
   "luaPath": "Actor/Quest/MQ393",
-  "suggestTrackMainQuestList": [394],
-  "rewardIdList": [100393],
+  "suggestTrackMainQuestList": [
+    394
+  ],
+  "rewardIdList": [
+    100393
+  ],
   "chapterId": 1003,
   "subQuests": [
     {
@@ -14,49 +17,91 @@
       "mainId": 393,
       "order": 1,
       "descTextMapHash": 3474298871,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            39008,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [39301, 0]
+          "param": [
+            39301,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": ["3", "133007029"]
+          "param": [
+            "3",
+            "133007029"
+          ]
         }
       ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "failExec": [],
+      "beginExec": [],
+      "exclusiveNpcList": [
+        1001,
+        1009,
+        1006
+      ],
+      "exclusiveNpcPriority": 1000
     },
     {
       "subId": 39302,
       "mainId": 393,
       "order": 2,
       "descTextMapHash": 1199618135,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            39301,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TRIGGER_FIRE",
-          "param": [1092, 0]
+          "param": [
+            1092,
+            0
+          ]
         }
       ],
+      "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": ["Q389VentiPos2"],
+        "param": [
+          "Q389VentiPos2"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [],
+      "exclusiveNpcList": [
+        1001,
+        1009,
+        1006
+      ],
+      "exclusiveNpcPriority": 1000
     },
     {
       "subId": 39303,
@@ -64,40 +109,64 @@
       "order": 3,
       "descTextMapHash": 286588839,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            39302,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [39301, 0]
+          "param": [
+            39301,
+            0
+          ]
         }
       ],
-      "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
+      "failCond": [],
+      "guide": {
+        "param": []
       },
       "finishParent": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [],
+      "exclusiveNpcList": [
+        1001,
+        1009,
+        1006
+      ],
+      "exclusiveNpcPriority": 1000
     }
   ],
   "talks": [
     {
       "id": 39301,
       "beginWay": "TALK_BEGIN_MANUAL",
+      "activeMode": "PLAY_MODE_SINGLE",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": ["39303", "2"]
+          "param": [
+            "39303",
+            "2"
+          ]
         }
       ],
       "priority": 1,
       "initDialog": 3930101,
-      "npcId": [1001],
+      "npcId": [
+        1001
+      ],
       "performCfg": "QuestDialogue/AQ/Mengde3_393/Q39301",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 393,
-      "assetIndex": 10474072142498428257,
       "prePerformCfg": ""
     }
-  ],
-  "BPKCHMHEIEE": [3088369788188086520, 2268650960672206304, 4543246233805805157]
+  ]
 }

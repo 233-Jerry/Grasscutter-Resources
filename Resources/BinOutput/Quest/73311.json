@@ -1,32 +1,26 @@
 {
   "id": 73311,
   "type": "WQ",
-  "activeMode": "PLAY_MODE_ALL",
+  "titleTextMapHash": 2862761951,
   "descTextMapHash": 2284187982,
   "luaPath": "",
-  "rewardIdList": [173311],
   "showType": "QUEST_HIDDEN",
+  "rewardIdList": [
+    173311
+  ],
   "subQuests": [
     {
-      "subId": 7331101,
       "mainId": 73311,
+      "subId": 7331101,
       "order": 1,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [0, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "finishParent": true,
-      "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ]
 }

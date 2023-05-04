@@ -2,8 +2,11 @@
   "id": 71003,
   "type": "WQ",
   "titleTextMapHash": 1350306783,
+  "descTextMapHash": 246775270,
   "luaPath": "Actor/Quest/WQ71003",
-  "suggestTrackMainQuestList": [71024],
+  "suggestTrackMainQuestList": [
+    71024
+  ],
   "chapterId": 10015,
   "subQuests": [
     {
@@ -11,47 +14,81 @@
       "mainId": 71003,
       "order": 1,
       "descTextMapHash": 272065452,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            99902,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
+          "param": [
+            0,
+            0
+          ],
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
-        "param": ["Q133102091zhiyin", "45"],
+        "param": [
+          "Q133102091zhiyin",
+          "45"
+        ],
         "guideScene": 3,
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
       "subId": 7100302,
       "mainId": 71003,
       "order": 2,
       "descTextMapHash": 786036900,
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            99902,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [0, 0],
+          "param": [
+            0,
+            0
+          ],
           "count": 1
         }
       ],
+      "failCond": [],
       "guide": {
-        "param": ["Q133102091wanfa", "25"],
+        "param": [
+          "Q133102091wanfa",
+          "25"
+        ],
         "guideScene": 3,
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "finishParent": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ]
 }

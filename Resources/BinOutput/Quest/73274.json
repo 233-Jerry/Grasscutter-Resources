@@ -1,50 +1,41 @@
 {
   "id": 73274,
-  "series": 73223,
   "type": "WQ",
-  "activeMode": "PLAY_MODE_ALL",
+  "series": 73223,
   "titleTextMapHash": 3436785303,
+  "descTextMapHash": 1809297918,
   "luaPath": "Actor/Quest/WQ73274",
-  "rewardIdList": [173274],
   "showType": "QUEST_HIDDEN",
+  "rewardIdList": [
+    173274
+  ],
   "subQuests": [
     {
-      "subId": 7327401,
       "mainId": 73274,
+      "subId": 7327401,
       "order": 1,
-      "descTextMapHash": 1878034940,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7327503, 0]
-        }
-      ],
+      "descTextMapHash": 1878034940,
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "finishParent": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     },
     {
-      "subId": 7327402,
       "mainId": 73274,
+      "subId": 7327402,
       "order": 2,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
-        {
-          "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [7327503, 0]
-        }
-      ],
+      "acceptCond": [],
+      "finishCond": [],
+      "failCond": [],
       "guide": {},
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": []
     }
   ]
 }

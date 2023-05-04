@@ -4,8 +4,10 @@
   "titleTextMapHash": 332268625,
   "descTextMapHash": 213008543,
   "luaPath": "",
-  "rewardIdList": [100399],
   "showType": "QUEST_HIDDEN",
+  "rewardIdList": [
+    100399
+  ],
   "chapterId": 1003,
   "subQuests": [
     {
@@ -14,33 +16,49 @@
       "order": 1,
       "descTextMapHash": 3451845839,
       "showType": "QUEST_HIDDEN",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            39812,
+            3,
+            0
+          ]
+        }
+      ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [39811, 0]
+          "param": [
+            39811,
+            0
+          ]
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [398151, 0],
+          "param": [
+            398151
+          ],
           "count": 1
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": ["1483"],
+        "param": [
+          "1483"
+        ],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
-      "acceptCondComb": {
-        "ODAOGCJFIHC": ""
-      },
       "finishParent": true,
       "isRewind": true,
-      "versionBegin": "",
-      "versionEnd": ""
+      "finishExec": [],
+      "failExec": [],
+      "beginExec": [],
+      "exclusiveNpcPriority": 1000
     }
   ]
 }
