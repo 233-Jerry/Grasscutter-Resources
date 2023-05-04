@@ -21,7 +21,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -30,7 +31,8 @@
           "param": [
             103402,
             1908402
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -74,7 +76,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -120,7 +123,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -129,7 +133,8 @@
           "param": [
             103402,
             1908403
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -149,7 +154,8 @@
           "type": "QUEST_EXEC_ACTIVE_ITEM_GIVING",
           "param": [
             "1908406"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -175,7 +181,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -221,7 +228,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -230,7 +238,8 @@
           "param": [
             1908406,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -268,7 +277,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -277,7 +287,8 @@
           "param": [
             103402,
             1908404
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -298,7 +309,8 @@
           "param": [
             "133107953",
             "1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -323,7 +335,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -332,7 +345,8 @@
           "param": [
             1908407,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -378,7 +392,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
@@ -388,7 +403,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -397,7 +413,8 @@
           "param": [
             1908408,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -442,7 +459,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -451,7 +469,8 @@
           "param": [
             103402,
             1908406
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -496,7 +515,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -505,7 +525,8 @@
           "param": [
             1908410,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -527,13 +548,15 @@
           "param": [
             "3",
             "133107953"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
           "param": [
             "500"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -559,7 +582,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -568,7 +592,8 @@
           "param": [
             103402,
             1908405
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCondComb": "LOGIC_OR",
@@ -578,21 +603,24 @@
           "param": [
             1908411,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_TEAM_DEAD",
           "param": [
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ANY_MANUAL_TRANSPORT",
           "param": [
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ENTER_MY_HOME_WORLD",
@@ -618,25 +646,29 @@
           "type": "QUEST_EXEC_LOCK_AVATAR_TEAM",
           "param": [
             "10000034"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [
         {
           "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM",
-          "param": []
+          "param": [],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
           "param": [
             "500"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "1908410"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [
@@ -644,7 +676,8 @@
           "type": "QUEST_EXEC_GRANT_TRIAL_AVATAR",
           "param": [
             "500"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -671,7 +704,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -692,21 +726,24 @@
           "param": [
             1908412,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_TEAM_DEAD",
           "param": [
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ANY_MANUAL_TRANSPORT",
           "param": [
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ENTER_MY_HOME_WORLD",
@@ -730,31 +767,36 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM",
-          "param": []
+          "param": [],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
           "param": [
             "500"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [
         {
           "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM",
-          "param": []
+          "param": [],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
           "param": [
             "500"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "1908410"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [
@@ -763,7 +805,8 @@
           "param": [
             "3",
             "133107953"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -788,20 +831,23 @@
           "param": [
             "1908403",
             "3"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "1908405",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
           "param": [
             "1908406"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

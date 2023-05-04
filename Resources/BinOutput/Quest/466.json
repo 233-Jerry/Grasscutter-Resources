@@ -22,7 +22,8 @@
             46513,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -31,7 +32,8 @@
           "param": [
             1018,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -62,7 +64,8 @@
             46601,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -71,7 +74,8 @@
           "param": [
             46601,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -105,7 +109,8 @@
             46602,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -115,14 +120,16 @@
           "param": [
             3,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_TRIGGER_FIRE",
           "param": [
             1080,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -139,7 +146,8 @@
           "param": [
             "3",
             "133002233,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -165,7 +173,8 @@
             46603,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -175,6 +184,7 @@
             100052,
             0
           ],
+          "param_str": "",
           "count": 4
         }
       ],
@@ -204,7 +214,8 @@
             46621,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -213,7 +224,8 @@
           "param": [
             46609,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -233,7 +245,8 @@
           "param": [
             "100052",
             "4"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -257,7 +270,8 @@
             46622,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -267,6 +281,7 @@
             70300052,
             0
           ],
+          "param_str": "",
           "count": 1
         }
       ],
@@ -301,7 +316,8 @@
             46604,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -310,7 +326,8 @@
           "param": [
             46602,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -330,7 +347,8 @@
           "param": [
             "3",
             "133002035,2;133002227,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -340,7 +358,8 @@
           "param": [
             "3",
             "133002035,1;133002227,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -360,7 +379,8 @@
             46605,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -399,14 +419,16 @@
           "param": [
             "3",
             "133002035,1"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
           "param": [
             "3",
             "133002227,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [
@@ -414,14 +436,16 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46604"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
           "param": [
             "3",
             "133002035,1;133002227,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -442,7 +466,8 @@
             46606,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -451,7 +476,8 @@
           "param": [
             46603,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -485,7 +511,8 @@
             46607,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -494,7 +521,8 @@
           "param": [
             1009,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -513,14 +541,16 @@
           "type": "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
           "param": [
             "0"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
           "param": [
             "3",
             "133004118,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -542,7 +572,8 @@
             46608,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -561,13 +592,15 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46609
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ENTER_MY_WORLD",
           "param": [
             3
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -578,7 +611,8 @@
           "type": "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
           "param": [
             "1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [
@@ -586,7 +620,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -610,7 +645,8 @@
             46609,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -619,7 +655,8 @@
           "param": [
             46604,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCondComb": "LOGIC_OR",
@@ -628,13 +665,15 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46610
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ENTER_MY_WORLD",
           "param": [
             3
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -653,7 +692,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -685,7 +725,8 @@
             46610,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -694,7 +735,8 @@
           "param": [
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -702,7 +744,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46620
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -718,7 +761,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -750,7 +794,8 @@
             46620,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -760,6 +805,7 @@
             70300052,
             0
           ],
+          "param_str": "",
           "count": 1
         }
       ],
@@ -768,7 +814,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46611
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -786,7 +833,8 @@
           "param": [
             "100177",
             "1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [
@@ -794,7 +842,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -825,7 +874,8 @@
             99902,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -834,7 +884,8 @@
           "param": [
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -846,7 +897,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46610"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -866,7 +918,8 @@
             46611,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -875,7 +928,8 @@
           "param": [
             1009,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -883,7 +937,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46612
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -900,7 +955,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -931,7 +987,8 @@
             99902,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -940,7 +997,8 @@
           "param": [
             1171,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -953,7 +1011,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46625"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -974,7 +1033,8 @@
             46612,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -983,7 +1043,8 @@
           "param": [
             46605,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCondComb": "LOGIC_OR",
@@ -992,13 +1053,15 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46613
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ENTER_MY_WORLD",
           "param": [
             3
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -1017,7 +1080,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -1048,7 +1112,8 @@
             46613,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -1057,7 +1122,8 @@
           "param": [
             1081,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -1065,7 +1131,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46614
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -1083,7 +1150,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [
@@ -1092,7 +1160,8 @@
           "param": [
             "3",
             "133004118,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -1123,7 +1192,8 @@
             46614,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -1132,7 +1202,8 @@
           "param": [
             46623,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -1140,7 +1211,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46623
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -1156,14 +1228,16 @@
           "type": "QUEST_EXEC_GRANT_TRIAL_AVATAR",
           "param": [
             "4"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
           "param": [
             "3",
             "133004118,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [
@@ -1171,7 +1245,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -1202,7 +1277,8 @@
             46623,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -1221,7 +1297,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46615
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -1238,7 +1315,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -1273,7 +1351,8 @@
             46615,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -1282,7 +1361,8 @@
           "param": [
             46624,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -1290,7 +1370,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46624
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -1301,7 +1382,8 @@
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
           "param": [
             "4"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [
@@ -1309,13 +1391,15 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
           "param": [
             "4"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -1349,7 +1433,8 @@
             46624,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -1358,7 +1443,8 @@
           "param": [
             46606,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -1366,7 +1452,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46616
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -1385,7 +1472,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -1416,7 +1504,8 @@
             46616,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -1425,7 +1514,8 @@
           "param": [
             1009,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -1433,7 +1523,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46617
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -1450,7 +1541,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -1480,7 +1572,8 @@
             46617,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -1489,7 +1582,8 @@
           "param": [
             46607,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCondComb": "LOGIC_OR",
@@ -1498,13 +1592,15 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             46618
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ENTER_MY_WORLD",
           "param": [
             3
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -1523,14 +1619,16 @@
           "type": "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
           "param": [
             "0"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
           "param": [
             "20001",
             "1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [
@@ -1538,7 +1636,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "46608"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -1568,7 +1667,8 @@
           "param": [
             "46602",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -1591,7 +1691,8 @@
           "param": [
             "46605",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -1614,7 +1715,8 @@
           "param": [
             "46607",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -1637,7 +1739,8 @@
           "param": [
             "46610",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -1660,7 +1763,8 @@
           "param": [
             "46613",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -1683,7 +1787,8 @@
           "param": [
             "46616",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -1706,7 +1811,8 @@
           "param": [
             "46618",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -1730,14 +1836,16 @@
           "param": [
             "46621",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "46622",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 4,
@@ -1761,14 +1869,16 @@
           "param": [
             "46622",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_PACK_HAVE_ITEM",
           "param": [
             "100052",
             "4"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -1792,21 +1902,24 @@
           "param": [
             "46622",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "46604",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "46605",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 4,
@@ -1829,7 +1942,8 @@
           "param": [
             "46620",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 4,
@@ -1852,7 +1966,8 @@
           "param": [
             "46620",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 4,
@@ -1875,7 +1990,8 @@
           "param": [
             "46606",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 4,

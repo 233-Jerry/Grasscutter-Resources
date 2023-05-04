@@ -26,7 +26,8 @@
             12,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -34,7 +35,8 @@
             35802,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -43,7 +45,8 @@
           "param": [
             1100001,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -78,7 +81,8 @@
             1100001,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -87,7 +91,8 @@
           "param": [
             1100002,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -110,7 +115,8 @@
             1100001,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -119,7 +125,8 @@
           "param": [
             1100003,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -138,7 +145,8 @@
           "type": "QUEST_EXEC_REFRESH_GROUP_MONSTER",
           "param": [
             "133002125"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -148,7 +156,8 @@
           "param": [
             "3",
             "133002317,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -169,7 +178,8 @@
             1100003,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -179,6 +189,7 @@
             100061,
             0
           ],
+          "param_str": "",
           "count": 3
         }
       ],
@@ -195,7 +206,8 @@
           "param": [
             "3",
             "133002317,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -215,7 +227,8 @@
             1100004,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -224,7 +237,8 @@
           "param": [
             1100005,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -245,7 +259,8 @@
           "param": [
             "100061",
             "3"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -255,7 +270,8 @@
           "param": [
             "3",
             "133002317,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -276,7 +292,8 @@
           "param": [
             "1100003",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -299,7 +316,8 @@
           "param": [
             "1100004",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -323,14 +341,16 @@
           "param": [
             "1100005",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_PACK_HAVE_ITEM",
           "param": [
             "100061",
             "3"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -354,14 +374,16 @@
           "param": [
             "1100005",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_ITEM_NUM_LESS_THAN",
           "param": [
             "100061",
             "3"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

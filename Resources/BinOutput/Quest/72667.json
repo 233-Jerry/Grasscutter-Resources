@@ -24,7 +24,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -34,7 +35,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -43,7 +45,8 @@
           "param": [
             111027,
             1
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -69,7 +72,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_ITEM_NUM_LESS_THAN",
@@ -79,7 +83,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -88,7 +93,8 @@
           "param": [
             7266701,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -119,7 +125,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -129,6 +136,7 @@
             111027,
             0
           ],
+          "param_str": "",
           "count": 1
         }
       ],
@@ -142,7 +150,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "7266701"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -160,14 +169,16 @@
           "param": [
             "7266702",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_ITEM_NUM_LESS_THAN",
           "param": [
             "111027",
             "1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

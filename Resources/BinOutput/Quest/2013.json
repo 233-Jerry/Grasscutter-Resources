@@ -25,7 +25,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -34,7 +35,8 @@
           "param": [
             201301,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -73,7 +75,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -82,7 +85,8 @@
           "param": [
             201302,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -119,7 +123,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -128,7 +133,8 @@
           "param": [
             201303,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -165,7 +171,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -174,7 +181,8 @@
           "param": [
             201304,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -211,7 +219,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -251,7 +260,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -291,7 +301,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -300,7 +311,8 @@
           "param": [
             201307,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -330,7 +342,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "201306"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -354,7 +367,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -363,7 +377,8 @@
           "param": [
             201308,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -383,7 +398,8 @@
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133209037"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -392,7 +408,8 @@
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP_ONLY",
           "param": [
             "133209037"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -417,7 +434,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -438,7 +456,8 @@
           "param": [
             201309,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
@@ -471,7 +490,8 @@
           "param": [
             "3",
             "133209024"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -496,7 +516,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -505,7 +526,8 @@
           "param": [
             201310,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -525,14 +547,16 @@
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133209024"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
           "param": [
             "3",
             "133220200"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -558,7 +582,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -567,7 +592,8 @@
           "param": [
             201311,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -608,7 +634,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -617,7 +644,8 @@
           "param": [
             201312,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -631,13 +659,15 @@
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133209024"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "201308"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -661,7 +691,8 @@
           "param": [
             "201301",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -685,7 +716,8 @@
           "param": [
             "201302",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -709,7 +741,8 @@
           "param": [
             "201304",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -732,7 +765,8 @@
           "param": [
             "201307",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -757,7 +791,8 @@
           "param": [
             "201308",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -782,7 +817,8 @@
           "param": [
             "201310",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -805,7 +841,8 @@
           "param": [
             "201311",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -830,7 +867,8 @@
           "param": [
             "201303",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

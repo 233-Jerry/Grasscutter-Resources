@@ -18,7 +18,8 @@
             35724,
             4,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -27,7 +28,8 @@
           "param": [
             40702,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -54,7 +56,8 @@
             40701,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -64,14 +67,16 @@
           "param": [
             9,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
           "param": [
             40702,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -79,7 +84,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             40702
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -104,7 +110,8 @@
             40702,
             4,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -113,7 +120,8 @@
           "param": [
             40704,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -139,7 +147,8 @@
             40702,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -148,7 +157,8 @@
           "param": [
             40705,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -177,7 +187,8 @@
             40703,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -186,7 +197,8 @@
           "param": [
             40705,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -194,7 +206,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             40705
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -206,7 +219,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "40701"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": []

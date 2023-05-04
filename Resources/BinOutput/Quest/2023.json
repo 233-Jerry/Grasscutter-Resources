@@ -20,7 +20,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -29,7 +30,8 @@
           "param": [
             202301,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCondComb": "LOGIC_OR",
@@ -39,14 +41,16 @@
           "param": [
             201309,
             2
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
           "param": [
             7280704,
             3
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -73,7 +77,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -82,7 +87,8 @@
           "param": [
             202302,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -110,7 +116,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -120,14 +127,16 @@
           "param": [
             202303,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
           "param": [
             202304,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -140,7 +149,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "202301"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -161,7 +171,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -171,14 +182,16 @@
           "param": [
             201309,
             3
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
           "param": [
             201309,
             4
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -192,7 +205,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "202301"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -213,7 +227,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -249,14 +264,16 @@
           "param": [
             "202303",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_NOT_RECEIVE",
           "param": [
             "200305",
             "1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -279,14 +296,16 @@
           "param": [
             "202303",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_NOT_RECEIVE",
           "param": [
             "200305",
             "0"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

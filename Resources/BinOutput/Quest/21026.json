@@ -19,7 +19,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -28,7 +29,8 @@
           "param": [
             2102601,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -65,7 +67,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -75,7 +78,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -105,7 +109,8 @@
           "type": "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM",
           "param": [
             "101645"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -115,7 +120,8 @@
           "param": [
             "3",
             "133105069"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -138,7 +144,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -148,7 +155,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -157,7 +165,8 @@
           "param": [
             2102610,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -177,14 +186,16 @@
           "type": "QUEST_EXEC_NOTIFY_DAILY_TASK",
           "param": [
             "29600"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133105069",
             "0"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -194,7 +205,8 @@
           "param": [
             "3",
             "133105069,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -214,7 +226,8 @@
           "param": [
             "2102601",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -238,14 +251,16 @@
           "param": [
             "2102601",
             "3"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "2102602",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -270,14 +285,16 @@
           "param": [
             "2102602",
             "3"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "2102603",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -300,7 +317,8 @@
           "param": [
             "2102603",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

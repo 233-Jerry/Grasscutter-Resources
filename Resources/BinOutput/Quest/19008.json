@@ -26,7 +26,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
@@ -36,7 +37,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -46,6 +48,7 @@
             100552,
             0
           ],
+          "param_str": "",
           "count": 3
         }
       ],
@@ -67,7 +70,8 @@
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133004440"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -76,14 +80,16 @@
           "type": "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM",
           "param": [
             "100552"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
           "param": [
             "3",
             "133004440"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -105,7 +111,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -114,7 +121,8 @@
           "param": [
             101401,
             80101
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -134,7 +142,8 @@
           "type": "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM",
           "param": [
             "100552"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -160,7 +169,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -169,7 +179,8 @@
           "param": [
             1900803,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -208,7 +219,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -217,7 +229,8 @@
           "param": [
             101401,
             80201
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -255,7 +268,8 @@
           "param": [
             "1900801",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

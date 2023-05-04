@@ -26,7 +26,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -35,7 +36,8 @@
           "param": [
             105001,
             1911602
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -68,21 +70,24 @@
           "param": [
             "3",
             "133220008"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_DEL_PACK_ITEM",
           "param": [
             "101602",
             "1"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_DEL_PACK_ITEM",
           "param": [
             "101603",
             "1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -108,7 +113,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_AND",
@@ -162,7 +168,8 @@
           "param": [
             "3",
             "133220008,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -188,7 +195,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -198,14 +206,16 @@
           "param": [
             105001,
             1911701
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
           "param": [
             105001,
             1911801
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -236,7 +246,8 @@
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133220008"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -245,7 +256,8 @@
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP_ONLY",
           "param": [
             "133220008"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -273,7 +285,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -283,7 +296,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -292,7 +306,8 @@
           "param": [
             1911604,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -304,7 +319,8 @@
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133220008"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -331,7 +347,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -340,7 +357,8 @@
           "param": [
             1911605,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -352,7 +370,8 @@
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133220008"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -374,7 +393,8 @@
           "param": [
             "1911602",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

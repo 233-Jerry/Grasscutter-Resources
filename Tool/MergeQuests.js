@@ -44,18 +44,17 @@ function clean(condition) {
         type: condition._type ?? condition.type,
         param: condition._param ?? condition.param,
         param_str: condition._param_str ?? condition.param_str,
-        count: condition._count ?? condition.count
+        count: condition._count ?? condition["count"]
     };
 
     const object = {
-        type, param: !param ? [] : param
+        type,
+        param: !param ? [] : param
             .filter((param) =>
-                param !== null && param !== "")
+                param !== null && param !== ""),
+        param_str: param_str ?? ""
     };
 
-    // Check for a 'param_str' parameter.
-    if (param_str && param_str !== "")
-        object.param_str = param_str;
     // Check for a 'count' parameter.
     if (count) object.count = count;
 

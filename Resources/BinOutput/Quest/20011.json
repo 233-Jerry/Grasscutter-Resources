@@ -20,7 +20,8 @@
             20501,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -53,14 +54,16 @@
           "param": [
             "3",
             "133003483,2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
           "param": [
             "3",
             "133002242,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -81,7 +84,8 @@
             20501,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -89,7 +93,8 @@
             2001101,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -131,7 +136,8 @@
             20501,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -139,7 +145,8 @@
             2001101,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -184,7 +191,8 @@
             20501,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -192,7 +200,8 @@
             2001103,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -201,7 +210,8 @@
           "param": [
             2001103,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -221,14 +231,16 @@
           "type": "QUEST_EXEC_NOTIFY_DAILY_TASK",
           "param": [
             "20501"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
           "param": [
             "3",
             "133002242,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -248,7 +260,8 @@
           "param": [
             "2001102",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -270,14 +283,16 @@
           "param": [
             "2001102",
             "3"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "2001103",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -298,7 +313,8 @@
           "param": [
             "2001104",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

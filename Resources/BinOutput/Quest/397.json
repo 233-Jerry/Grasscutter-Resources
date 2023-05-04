@@ -24,7 +24,8 @@
             38406,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -33,7 +34,8 @@
           "param": [
             1123,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -67,7 +69,8 @@
             39701,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -76,7 +79,8 @@
           "param": [
             39702,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -112,7 +116,8 @@
             39702,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -152,7 +157,8 @@
             39705,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -161,7 +167,8 @@
           "param": [
             133002233,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCondComb": "LOGIC_OR",
@@ -170,13 +177,15 @@
           "type": "QUEST_CONTENT_TEAM_DEAD",
           "param": [
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             39703
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -194,14 +203,16 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "39703"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
           "param": [
             "3",
             "133002233,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [
@@ -210,7 +221,8 @@
           "param": [
             "3",
             "133002233,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -237,7 +249,8 @@
             39703,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -246,7 +259,8 @@
           "param": [
             39704,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -261,7 +275,8 @@
           "param": [
             "3",
             "133002233,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -288,7 +303,8 @@
           "param": [
             "39702",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 1,
@@ -311,7 +327,8 @@
           "param": [
             "39704",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 1,

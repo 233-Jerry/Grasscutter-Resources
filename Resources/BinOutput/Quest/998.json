@@ -17,7 +17,8 @@
             35724,
             4,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -26,7 +27,8 @@
           "param": [
             99801,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -50,7 +52,8 @@
             99801,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -59,7 +62,8 @@
           "param": [
             99802,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -67,7 +71,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             99802
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -89,7 +94,8 @@
             99802,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -98,7 +104,8 @@
           "param": [
             99802,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCondComb": "LOGIC_OR",
@@ -107,13 +114,15 @@
           "type": "QUEST_CONTENT_COMPLETE_TALK",
           "param": [
             99803
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
           "param": [
             100210
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -126,7 +135,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "99801"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": []
@@ -143,7 +153,8 @@
             99803,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -152,7 +163,8 @@
           "param": [
             99804,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -160,7 +172,8 @@
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
           "param": [
             99804
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -182,7 +195,8 @@
             99804,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -191,7 +205,8 @@
           "param": [
             99804,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -199,7 +214,8 @@
           "type": "QUEST_CONTENT_COMPLETE_TALK",
           "param": [
             99805
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -213,7 +229,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "99803"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": []
@@ -230,7 +247,8 @@
             99902,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -239,7 +257,8 @@
           "param": [
             99806,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -252,7 +271,8 @@
           "type": "QUEST_EXEC_SET_GAME_TIME",
           "param": [
             "6"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -274,7 +294,8 @@
             99806,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -283,7 +304,8 @@
           "param": [
             99807,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -296,7 +318,8 @@
           "type": "QUEST_EXEC_SET_GAME_TIME",
           "param": [
             "13"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -319,7 +342,8 @@
             99903,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -328,7 +352,8 @@
           "param": [
             99808,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -343,7 +368,8 @@
           "type": "QUEST_EXEC_ACTIVE_ITEM_GIVING",
           "param": [
             "4133701"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcPriority": 1100,
@@ -363,7 +389,8 @@
             99903,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -373,14 +400,16 @@
           "param": [
             99809,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_USE_WIDGET",
           "param": [
             220009,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -395,7 +424,8 @@
           "type": "QUEST_EXEC_DEACTIVE_ITEM_GIVING",
           "param": [
             "4133701"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -418,7 +448,8 @@
           "param": [
             "99801",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -441,7 +472,8 @@
           "param": [
             "99802",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -466,7 +498,8 @@
           "param": [
             "99806",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_VAR_EQUAL",
@@ -474,7 +507,8 @@
             "1",
             "5",
             "998"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -492,14 +526,16 @@
             "1",
             "0",
             "998"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "TALK_EXEC_SET_QUEST_GLOBAL_VAR",
           "param": [
             "1002",
             "0"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -514,7 +550,8 @@
           "param": [
             "99806",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_VAR_EQUAL",
@@ -522,7 +559,8 @@
             "1",
             "0",
             "998"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -540,14 +578,16 @@
             "1",
             "7",
             "998"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "TALK_EXEC_INC_QUEST_GLOBAL_VAR",
           "param": [
             "1002",
             "7"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -562,7 +602,8 @@
           "param": [
             "99806",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_VAR_EQUAL",
@@ -570,7 +611,8 @@
             "1",
             "7",
             "998"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -588,14 +630,16 @@
             "1",
             "2",
             "998"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "TALK_EXEC_DEC_QUEST_GLOBAL_VAR",
           "param": [
             "1002",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -609,7 +653,8 @@
           "param": [
             "99807",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -625,7 +670,8 @@
           "type": "TALK_EXEC_SET_GAME_TIME",
           "param": [
             "1"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -639,7 +685,8 @@
           "param": [
             "99808",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -656,7 +703,8 @@
           "param": [
             "1002",
             "18"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     }

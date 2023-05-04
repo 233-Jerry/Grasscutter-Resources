@@ -17,7 +17,8 @@
             99902,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -26,7 +27,8 @@
           "param": [
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -53,7 +55,8 @@
             99601,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -62,7 +65,8 @@
           "param": [
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -90,7 +94,8 @@
             99903,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -100,14 +105,16 @@
           "param": [
             99603,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_UNLOCK_TRANS_POINT",
           "param": [
             3,
             305
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -135,7 +142,8 @@
             99903,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -145,7 +153,8 @@
           "param": [
             99604,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
@@ -153,6 +162,7 @@
             108103,
             0
           ],
+          "param_str": "",
           "count": 1
         }
       ],
@@ -184,7 +194,8 @@
           "param": [
             "99602",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 3,
@@ -206,7 +217,8 @@
           "param": [
             "99601",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 3,

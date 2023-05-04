@@ -18,7 +18,8 @@
             100012,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -28,13 +29,15 @@
           "param": [
             100701,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
           "param": [
             100702
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -59,7 +62,8 @@
             100701,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -68,7 +72,8 @@
           "param": [
             100702,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -81,7 +86,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "100701"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -100,7 +106,8 @@
             101801,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -109,7 +116,8 @@
           "param": [
             100703,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -134,7 +142,8 @@
           "param": [
             "100701",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 6,
@@ -156,7 +165,8 @@
           "param": [
             "100701",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 6,

@@ -17,7 +17,8 @@
             26100,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -26,7 +27,8 @@
           "param": [
             2200001,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -62,7 +64,8 @@
             26100,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -70,7 +73,8 @@
             2200001,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -79,7 +83,8 @@
           "param": [
             2200002,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -116,7 +121,8 @@
             26100,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -124,7 +130,8 @@
             2200002,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -155,14 +162,16 @@
           "param": [
             "3",
             "133107005,1"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_ADD_QUEST_PROGRESS",
           "param": [
             "2200005",
             "1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -172,7 +181,8 @@
           "param": [
             "3",
             "133107005,2,3,4"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -195,7 +205,8 @@
             26100,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -203,7 +214,8 @@
             2200002,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -213,6 +225,7 @@
             2200005,
             0
           ],
+          "param_str": "",
           "count": 1
         }
       ],
@@ -238,7 +251,8 @@
             26100,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -246,7 +260,8 @@
             2200003,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -255,7 +270,8 @@
           "param": [
             2200003,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -275,7 +291,8 @@
           "type": "QUEST_EXEC_NOTIFY_DAILY_TASK",
           "param": [
             "26100"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -297,7 +314,8 @@
           "param": [
             "2200001",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 6,
@@ -318,7 +336,8 @@
           "param": [
             "2200002",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 6,
@@ -339,7 +358,8 @@
           "param": [
             "2200002",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 6,
@@ -361,7 +381,8 @@
           "param": [
             "2200004",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 6,
@@ -383,7 +404,8 @@
           "param": [
             "2200002",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 6,
@@ -409,7 +431,8 @@
           "param": [
             "2200003",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 6,

@@ -22,7 +22,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
@@ -32,7 +33,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -41,7 +43,8 @@
           "param": [
             102401,
             190540101
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -85,7 +88,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -94,7 +98,8 @@
           "param": [
             102401,
             190540201
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -141,7 +146,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -150,7 +156,8 @@
           "param": [
             102401,
             190540401
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -196,7 +203,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -205,7 +213,8 @@
           "param": [
             102401,
             190540501
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -227,20 +236,23 @@
           "type": "QUEST_EXEC_SET_GAME_TIME",
           "param": [
             "21"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
           "param": [
             "1"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
           "param": [
             "3",
             "133102174"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -275,7 +287,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -284,7 +297,8 @@
           "param": [
             1905406,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -306,19 +320,22 @@
           "type": "QUEST_EXEC_SET_GAME_TIME",
           "param": [
             "21"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
           "param": [
             "1"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP_ONLY",
           "param": [
             "133102174"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -354,7 +371,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -363,7 +381,8 @@
           "param": [
             102401,
             105
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -383,14 +402,16 @@
           "type": "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
           "param": [
             "0"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133102174",
             "1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -427,7 +448,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -436,7 +458,8 @@
           "param": [
             1905408,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -480,7 +503,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -489,7 +513,8 @@
           "param": [
             1905407,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -498,7 +523,8 @@
           "param": [
             1905409,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -511,19 +537,22 @@
           "type": "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
           "param": [
             "0"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "1905408"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133102174"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [],
@@ -553,7 +582,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -599,14 +629,16 @@
           "param": [
             "1905406",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "1905407",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -630,14 +662,16 @@
           "param": [
             "1905406",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "1905407",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -661,14 +695,16 @@
           "param": [
             "1905406",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "1905407",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -692,14 +728,16 @@
           "param": [
             "1905406",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "1905407",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -723,14 +761,16 @@
           "param": [
             "1905406",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "1905407",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -754,14 +794,16 @@
           "param": [
             "1905406",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "1905407",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -785,14 +827,16 @@
           "param": [
             "1905406",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "1905407",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

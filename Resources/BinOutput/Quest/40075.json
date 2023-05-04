@@ -27,7 +27,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -37,6 +38,7 @@
             101803,
             0
           ],
+          "param_str": "",
           "count": 1
         }
       ],
@@ -60,21 +62,24 @@
           "param": [
             "9",
             "199003028"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
           "param": [
             "9",
             "199003123,199003157"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_LOCK_POINT",
           "param": [
             "9",
             "29"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -92,7 +97,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -123,7 +129,8 @@
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "199003028"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -133,21 +140,24 @@
           "param": [
             "9",
             "199003123,199003157"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_UNLOCK_POINT",
           "param": [
             "9",
             "29"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
           "param": [
             "20134",
             "220134093"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -165,7 +175,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -199,7 +210,8 @@
           "param": [
             "20134",
             "220134093"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -217,7 +229,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -251,7 +264,8 @@
           "param": [
             "20134",
             "220134093"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -269,7 +283,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -301,7 +316,8 @@
           "param": [
             "20134",
             "220134022,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -311,7 +327,8 @@
           "param": [
             "20134",
             "220134022,3"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -330,7 +347,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -350,7 +368,8 @@
           "param": [
             20136,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -370,7 +389,8 @@
           "param": [
             "20136",
             "220136011"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [
@@ -378,17 +398,20 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "4007505"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
           "param": [
             "45"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM",
-          "param": []
+          "param": [],
+          "param_str": ""
         }
       ],
       "beginExec": [
@@ -396,21 +419,24 @@
           "type": "QUEST_EXEC_GRANT_TRIAL_AVATAR_BATCH_AND_LOCK_TEAM",
           "param": [
             "45"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
           "param": [
             "20136",
             "220136011"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
           "param": [
             "20136",
             "220136011,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "trialAvatarList": [
@@ -432,7 +458,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -452,7 +479,8 @@
           "param": [
             20136,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -471,24 +499,28 @@
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
           "param": [
             "45"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM",
-          "param": []
+          "param": [],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
           "param": [
             "20136",
             "220136011"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_CHANGE_SCENE_LEVEL_TAG",
           "param": [
             "22"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [
@@ -496,17 +528,20 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "4007505"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
           "param": [
             "45"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_UNLOCK_AVATAR_TEAM",
-          "param": []
+          "param": [],
+          "param_str": ""
         }
       ],
       "beginExec": [
@@ -515,7 +550,8 @@
           "param": [
             "20136",
             "220136011"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "trialAvatarList": [
@@ -536,7 +572,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -545,7 +582,8 @@
           "param": [
             4007508,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -586,7 +624,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -595,7 +634,8 @@
           "param": [
             1140,
             31
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [
@@ -604,7 +644,8 @@
           "param": [
             9,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -624,7 +665,8 @@
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "4007505"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": []
@@ -643,7 +685,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -652,7 +695,8 @@
           "param": [
             4007510,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -672,13 +716,15 @@
           "param": [
             "20136",
             "220136001,1"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_CHANGE_SCENE_LEVEL_TAG",
           "param": [
             "44"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -699,7 +745,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -708,7 +755,8 @@
           "param": [
             4007511,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -721,14 +769,16 @@
           "param": [
             "9",
             "199003123"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
           "param": [
             "9",
             "199003157"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -748,7 +798,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -757,7 +808,8 @@
           "param": [
             4007504,
             3
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -788,7 +840,8 @@
           "param": [
             "4007508",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

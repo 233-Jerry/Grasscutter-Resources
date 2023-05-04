@@ -24,7 +24,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -33,7 +34,8 @@
           "param": [
             7213301,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -59,7 +61,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -69,7 +72,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -78,7 +82,8 @@
           "param": [
             7213002,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -108,7 +113,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -117,7 +123,8 @@
           "param": [
             7213006,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -139,35 +146,40 @@
           "param": [
             "3",
             "133212034"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
           "param": [
             "3009",
             "0"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
           "param": [
             "3136",
             "0"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
           "param": [
             "3141",
             "0"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
           "param": [
             "3181",
             "0"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -176,7 +188,8 @@
           "type": "QUEST_EXEC_ACTIVE_ITEM_GIVING",
           "param": [
             "7213006"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -195,7 +208,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [],
@@ -211,7 +225,8 @@
           "param": [
             "3",
             "133212135"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -230,7 +245,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [],
@@ -246,7 +262,8 @@
           "param": [
             "3",
             "133212292"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -265,7 +282,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -274,7 +292,8 @@
           "param": [
             7213009,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -287,7 +306,8 @@
           "param": [
             "3",
             "133212034"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -304,7 +324,8 @@
           "param": [
             "7213004",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -326,7 +347,8 @@
           "param": [
             "7213005",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -348,7 +370,8 @@
           "param": [
             "99902",
             "3"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -370,14 +393,16 @@
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
           "param": [
             "7213006"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "7213006",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

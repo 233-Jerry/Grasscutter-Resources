@@ -17,7 +17,8 @@
             27000,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -26,7 +27,8 @@
           "param": [
             2200801,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -61,7 +63,8 @@
             27000,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -69,7 +72,8 @@
             2200801,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -78,7 +82,8 @@
           "param": [
             2200802,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -99,7 +104,8 @@
           "type": "QUEST_EXEC_ACTIVE_ITEM_GIVING",
           "param": [
             "2200802"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -120,7 +126,8 @@
             27000,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -128,7 +135,8 @@
             2200802,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -137,7 +145,8 @@
           "param": [
             2200804,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -157,7 +166,8 @@
           "type": "QUEST_EXEC_NOTIFY_DAILY_TASK",
           "param": [
             "27000"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -178,7 +188,8 @@
           "param": [
             "2200801",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -199,7 +210,8 @@
           "param": [
             "2200802",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -221,13 +233,15 @@
           "param": [
             "2200802",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
           "param": [
             "2200802"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -248,7 +262,8 @@
           "param": [
             "2200803",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,

@@ -23,7 +23,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -33,7 +34,8 @@
           "param": [
             4114501,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCondComb": "LOGIC_OR",
@@ -57,7 +59,8 @@
           "param": [
             "100651",
             "1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -83,7 +86,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -93,7 +97,8 @@
           "param": [
             4114502,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCondComb": "LOGIC_OR",
@@ -103,21 +108,24 @@
           "param": [
             4114502,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ITEM_LESS_THAN",
           "param": [
             100651,
             1
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ACTIVITY_TRIGGER_FAILED",
           "param": [
             5006,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "guide": {
@@ -136,13 +144,15 @@
           "param": [
             "100651",
             "1"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133108150"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [
@@ -151,19 +161,22 @@
           "param": [
             "100651",
             "1"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
           "param": [
             "4114501"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
           "param": [
             "133108150"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [
@@ -172,7 +185,8 @@
           "param": [
             "3",
             "133108150"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -195,7 +209,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCondComb": "LOGIC_OR",
@@ -205,7 +220,8 @@
           "param": [
             4114506,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -244,7 +260,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -253,7 +270,8 @@
           "param": [
             4114504,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -275,7 +293,8 @@
           "param": [
             "4114501",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 10,
@@ -298,7 +317,8 @@
           "param": [
             "4114501",
             "3"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 10,
@@ -323,7 +343,8 @@
           "param": [
             "4114501",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 90,
@@ -350,7 +371,8 @@
           "param": [
             "4114501",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 10,
@@ -373,7 +395,8 @@
           "param": [
             "4114501",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "initDialog": 411450501,
@@ -393,7 +416,8 @@
           "param": [
             "4114503",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "initDialog": 411450601,

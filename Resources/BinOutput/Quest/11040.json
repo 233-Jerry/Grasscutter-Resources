@@ -28,7 +28,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_PERSONAL_LINE_UNLOCK",
@@ -38,7 +39,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -47,7 +49,8 @@
           "param": [
             1104001,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -83,7 +86,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -92,7 +96,8 @@
           "param": [
             1104002,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -129,7 +134,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -138,7 +144,8 @@
           "param": [
             1104003,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -175,7 +182,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -184,7 +192,8 @@
           "param": [
             1104004,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -219,20 +228,23 @@
           "param": [
             "1104002",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "7066501"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_NOT_EQUAL",
           "param": [
             "7066501",
             "3"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "initDialog": 110400201,
@@ -248,7 +260,8 @@
           "type": "TALK_EXEC_SAVE_TALK_ID",
           "param": [
             "1104002"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     },
@@ -263,14 +276,16 @@
           "param": [
             "1104002",
             "3"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "1104003",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "initDialog": 110400301,
@@ -292,7 +307,8 @@
           "param": [
             "1104004",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "initDialog": 110400401,
@@ -315,14 +331,16 @@
           "param": [
             "1104002",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "7066501",
             "3"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "initDialog": 110400501,
@@ -338,7 +356,8 @@
           "type": "TALK_EXEC_SAVE_TALK_ID",
           "param": [
             "1104005"
-          ]
+          ],
+          "param_str": ""
         }
       ]
     }

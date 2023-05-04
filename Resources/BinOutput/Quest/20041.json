@@ -17,7 +17,8 @@
             21300,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -26,7 +27,8 @@
           "param": [
             2004101,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -48,7 +50,8 @@
           "param": [
             "3",
             "133003489,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -68,7 +71,8 @@
             21300,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -76,7 +80,8 @@
             2004101,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -109,7 +114,8 @@
           "param": [
             "3",
             "133003489,1"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "beginExec": [
@@ -118,7 +124,8 @@
           "param": [
             "3",
             "133003489,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "exclusiveNpcList": [
@@ -138,7 +145,8 @@
             21300,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -146,7 +154,8 @@
             2004102,
             3,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -155,7 +164,8 @@
           "param": [
             2004103,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -176,13 +186,15 @@
           "param": [
             "3",
             "133003489,1"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_NOTIFY_DAILY_TASK",
           "param": [
             "21300"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -202,7 +214,8 @@
           "param": [
             "2004101",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 6,
@@ -224,14 +237,16 @@
           "param": [
             "2004101",
             "3"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "2004102",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 6,
@@ -253,14 +268,16 @@
           "param": [
             "2004102",
             "3"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "2004103",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 6,

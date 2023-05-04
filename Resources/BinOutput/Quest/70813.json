@@ -23,7 +23,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_PLAYER_LEVEL_EQUAL_GREATER",
@@ -33,7 +34,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -43,7 +45,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
@@ -53,7 +56,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [],
@@ -89,7 +93,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -123,7 +128,8 @@
           "param": [
             "3",
             "133002391,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "sharedNpcList": [
@@ -145,7 +151,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -179,7 +186,8 @@
           "param": [
             "3",
             "133002392,2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "sharedNpcList": [
@@ -201,7 +209,8 @@
             0,
             0,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "finishCond": [
@@ -210,7 +219,8 @@
           "param": [
             7081305,
             0
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failCond": [],
@@ -231,20 +241,23 @@
           "param": [
             "3",
             "133002391,1"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
           "param": [
             "3",
             "133002392,1"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM",
           "param": [
             "100561"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "failExec": [],
@@ -267,14 +280,16 @@
           "param": [
             "7081302",
             "2"
-          ]
+          ],
+          "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "7081303",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
@@ -298,7 +313,8 @@
           "param": [
             "7081304",
             "2"
-          ]
+          ],
+          "param_str": ""
         }
       ],
       "priority": 5,
