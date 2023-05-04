@@ -40,9 +40,11 @@ const patches = {
  * @param condition The condition data.
  */
 function clean(condition) {
-    let { type, param } = {
+    let { type, param, param_str, count } = {
         type: condition._type ?? condition.type,
-        param: condition._param ?? condition.param
+        param: condition._param ?? condition.param,
+        param_str: condition._param_str ?? condition.param_str,
+        count: condition._count ?? condition.count
     };
 
     const object = {
@@ -51,8 +53,11 @@ function clean(condition) {
                 param !== null && param !== "")
     };
 
+    // Check for a 'param_str' parameter.
+    if (param_str && param_str !== "")
+        object.param_str = param_str;
     // Check for a 'count' parameter.
-    if (condition._count) object.count = condition._count;
+    if (count) object.count = count;
 
     return object;
 }
@@ -117,6 +122,7 @@ const talks_data = JSON.parse(talks);
 
 // Merge the data.
 const quests = [];
+const newQuests = [];
 for (const mainQuestData of mainQuest_data) {
     const mainQuestId = mainQuestData.id;
     console.log(`Scanning main quest ${mainQuestId}...`);
@@ -129,6 +135,8 @@ for (const mainQuestData of mainQuest_data) {
         isNewQuest = true;
         subQuests = latest_data.filter((quest) =>
             quest.mainId === mainQuestId);
+
+        newQuests.push(mainQuestId);
     }
 
     // Find all talks for the main quest.
@@ -320,3 +328,14 @@ for (const mainQuestData of mainQuest_data) {
 // Write the new quest data.
 fs.writeFileSync(fileOutput, JSON.stringify(
     quests, null, 2));
+
+console.log("=====================================");
+console.log(`There are ${quests.length} quests.`);
+console.log(`There are ${newQuests.length} new quests.`);
+
+for (let i = 0; i < newQuests.length; i += 9) {
+    const newQuestsSlice = newQuests.slice(i, i + 9);
+    console.log(`New quests: ${newQuestsSlice.join(", ")}`);
+}
+
+console.log("=====================================");
