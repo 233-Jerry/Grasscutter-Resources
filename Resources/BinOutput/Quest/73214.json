@@ -14,7 +14,15 @@
       "subId": 7321401,
       "order": 1,
       "showType": "QUEST_HIDDEN",
-      "acceptCond": [],
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_UNKNOWN",
+          "param": [
+            0,
+            0
+          ]
+        }
+      ],
       "finishCond": [],
       "failCond": [],
       "guide": {},

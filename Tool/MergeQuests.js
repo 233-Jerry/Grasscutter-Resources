@@ -170,12 +170,6 @@ for (const mainQuestData of mainQuest_data) {
             ...subQuestData
         };
 
-        // Check if the quest is new.
-        if (isNewQuest) {
-            // Add the unknown accept condition.
-            subQuestData.acceptCond.push(unknownCondition);
-        }
-
         // Validate conditions.
         const {
             /** @type any[] */ acceptCond,
@@ -220,6 +214,13 @@ for (const mainQuestData of mainQuest_data) {
             subQuest.failExec = failExec
                 .filter((cond) => cond._type != null)
                 .map(clean);
+        }
+
+        // Check if the quest is new.
+        if (isNewQuest) {
+            // Add the unknown accept condition.
+            subQuestData.acceptCond.push(unknownCondition);
+            subQuest.acceptCond.push(unknownCondition);
         }
 
         // Validate the quest guide.
