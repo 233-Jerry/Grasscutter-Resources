@@ -3,12 +3,12 @@
 
 - ExcelBinOutput - 3.6 Dimbreath
 - BinOutput - 3.6 Dimbreath
-- Scripts - 3.6 GIO & Dump manual by me & hiro *** for natural spawn and many other things ***
-- TextMap - 3.6 Dimbreath *** for language translations items,etc are used for gm-books ***
-- QuestEncryptionKeys - 3.5 GI-cutscenes *** Used for cutscenes that require a key ***
+- Scripts - 3.6 GIO & Dump Manual by Community ***for natural spawn and many other things***
+- TextMap - 3.6 Dimbreath ***for language translations items,etc are used for gm-books***
+- QuestEncryptionKeys - 3.6 GI-cutscenes ***Used for cutscenes that require a key***
 
 ## What is difference between GIO and GC?
-- GIO is a leaked full file from official server which was released last month (maybe 28/10/2022) which is available from 3.1-4.0 so it's possible that version 3.2+ some animations/characters are still in beta (aka beta old) so data won't be accurate anymore if it's already release because of the many revisions.
+- GIO is a leaked full file from official server which was released last month (maybe 28/10/2022) which is available from CBT1-4.0 so it's possible that version 3.3+ some animations/characters are still in beta (aka beta old) so data won't be accurate anymore if it's already release because of the many revisions.
 - GC is a Grasscutter that has been dump file by several GC Teams and several other people whose results are from current beta and includes latest released version, only the problem is that most of the data is still unk_name so it's hard to understand and sometimes it's still inaccurate because mix from previous version.
 
 ## Learn LUA
@@ -39,7 +39,8 @@
 - (LUA) Gadget (Control Stats Gadget)
 - (BIN) Config Monster (???)
 - (LUA) Scene/{sceneId}/scene_grid.json (???)
-- Folder Server, This is made by community/user. [source](https://github.com/Anime-Game-Servers/CustomGCResources/tree/patches)
+- Folder `ScriptSceneData` (???)
+- Folder `Server`, This is made by Community/User. [source](https://github.com/Anime-Game-Servers/CustomGCResources/)
 
 Because there are a lot of useless files, so I made a separate repo: [GIO](https://gitlab.com/YuukiPS/GIO-Resources) and Grasscutter Version are needed for Grasscutter only and [Anime Game](https://gitlab.com/YuukiPS/GS-Resources) is full version dump.
 
@@ -54,7 +55,7 @@ Because there are a lot of useless files, so I made a separate repo: [GIO](https
 - If `QuestEncryptionKeys.json` file is not found in your GC, please move `/Server/QuestEncryptionKeys.json` file to the root of the `Resources` folder. and you only need `Resources`, folder like `Tool` only tools to make it easier for me to manage this.
 
 ## Credits 
- - [Dimbreath](https://gitlab.com/Dimbreath/gamedata) (Everything except Script,BinOutput) <br/> 
+ - [Dimbreath](https://gitlab.com/Dimbreath/gamedata) (Everything except Script) <br/> 
  - [Crepe](https://git.crepe.moe/grasscutters/Grasscutter_Resources) (Everything) <br/>
  - [TomyJan](https://github.com/TomyJan/GCResource) <br/> 
  - [timing1337](https://github.com/timing1337/GenshinData) (3.1 BinOutput) <br/>
