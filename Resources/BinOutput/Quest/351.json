@@ -40,7 +40,15 @@
       "isRewind": true,
       "finishExec": [],
       "failExec": [],
-      "beginExec": []
+      "beginExec": [
+        {
+          "type": "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
+          "param": [
+            "1"
+          ],
+          "param_str": ""
+        }
+      ]
     },
     {
       "subId": 35100,

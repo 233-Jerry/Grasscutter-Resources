@@ -31,6 +31,14 @@ const patches = {
                 count: 1
             }
         ]
+    },
+    35104: {
+        beginExec: [
+            {
+                type: "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED",
+                param: ["1"], param_str: ""
+            }
+        ]
     }
 };
 
